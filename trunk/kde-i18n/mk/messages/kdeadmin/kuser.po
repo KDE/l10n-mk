@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kuser\n"
-"POT-Creation-Date: 2001-07-16 18:19+0200\n"
+"POT-Creation-Date: 2002-02-26 02:53+0100\n"
 "PO-Revision-Date: 2000-11-25 18:58+0100\n"
 "Last-Translator: Danko Ilik <danko@mindless.com>\n"
 "Language-Team: Macedonian\n"
@@ -39,11 +39,13 @@ msgid "&Delete..."
 msgstr "Избриши..."
 
 #: mainWidget.cpp:59
-msgid "&Set password..."
+#, fuzzy
+msgid "&Set Password..."
 msgstr "Постави шифра"
 
 #: editGroup.cpp:22
-msgid "Group properties"
+#, fuzzy
+msgid "Group Properties"
 msgstr "Поставки на групата"
 
 #: editGroup.cpp:30
@@ -106,45 +108,53 @@ msgstr ""
 "Ставката ќе биде отстранета на наредното "
 "зачувување."
 
-#: kgroup.cpp:274 kgroup.cpp:279 kuser.cpp:713 kuser.cpp:718 kuser.cpp:857
+#: kgroup.cpp:274 kgroup.cpp:279 kuser.cpp:724 kuser.cpp:729 kuser.cpp:868
 msgid "Error opening %1 for writing"
 msgstr "Грешка при отварање на %1 за пишување"
 
-#: kuser.cpp:808
+#: kuser.cpp:819
 msgid ""
 "Unable to process NIS passwd file without a minimum UID specified.\n"
 "Please update KUser Settings (Sources)"
 msgstr ""
 
-#: kuser.cpp:813
+#: kuser.cpp:824
 msgid ""
 "Specifying NIS minimum UID requires NIS file(s).\n"
 "Please update KUser Settings (Sources)"
 msgstr ""
 
-#: kuser.cpp:821
+#: kuser.cpp:832
 #, fuzzy
 msgid "Unable to build password database"
 msgstr "Неможам да ја изградам базата на шифри"
 
-#: kuser.cpp:827
+#: kuser.cpp:838
 #, fuzzy
 msgid "Unable to build password databases"
 msgstr "Неможам да ја изградам базата на шифри"
 
-#: kuser.cpp:867
+#: kuser.cpp:878
 #, c-format
 msgid "No shadow entry for %1."
 msgstr "Нема ставка за %1 во shadow шифрите."
 
-#: kuser.cpp:917
+#: kuser.cpp:928
 #, fuzzy
 msgid "You have more than 65534 users!?!? You have run out of uid space!"
 msgstr ""
 "Имате повеќе од 65534 корисници!?!? Немате "
 "повеќе uid простор!"
 
-#: kuser.cpp:955
+#: kuser.cpp:966
+#, fuzzy
+msgid ""
+"Cannot create home directory for %1: it is null or empty\n"
+msgstr ""
+"Неможам да создадам почетна папка\n"
+"Грешка: %1"
+
+#: kuser.cpp:971
 #, fuzzy
 msgid ""
 "Cannot create home directory %1\n"
@@ -153,38 +163,38 @@ msgstr ""
 "Неможам да создадам почетна папка\n"
 "Грешка: %1"
 
-#: kuser.cpp:961
-#, c-format
+#: kuser.cpp:977
+#, fuzzy
 msgid ""
-"Cannot change owner of home directory\n"
-"Error: %1"
+"Cannot change owner of home directory %1\n"
+"Error: %2"
 msgstr ""
 "Неможам да го променам сопственикот на "
 "почетната папка\n"
 "Грешка: %1"
 
-#: kuser.cpp:967
-#, c-format
+#: kuser.cpp:983
+#, fuzzy
 msgid ""
-"Cannot change permissions on home directory\n"
-"Error: %1"
+"Cannot change permissions on home directory %1\n"
+"Error: %2"
 msgstr ""
 "Неможам да ги променам одобрувањата на "
 "почетната папка\n"
 "Грешка: %1"
 
-#: kuser.cpp:1011
+#: kuser.cpp:1053
 msgid ""
 "Directory %1 already exists!\n"
 "Will make %2 owner and change permissions.\n"
 "Do you want to continue?"
 msgstr ""
 
-#: addUser.cpp:93 kuser.cpp:1012
+#: addUser.cpp:93 kuser.cpp:1054
 msgid "&Continue"
 msgstr ""
 
-#: kuser.cpp:1016 kuser.cpp:1047
+#: kuser.cpp:1057 kuser.cpp:1088
 #, fuzzy
 msgid ""
 "Cannot change owner of %1 directory\n"
@@ -194,7 +204,7 @@ msgstr ""
 "папката: %1\n"
 "Грешка: %2"
 
-#: kuser.cpp:1021 kuser.cpp:1052
+#: kuser.cpp:1062 kuser.cpp:1093
 #, fuzzy
 msgid ""
 "Cannot change permissions on %1 directory\n"
@@ -204,17 +214,17 @@ msgstr ""
 "папката: %1\n"
 "Грешка: %2"
 
-#: kuser.cpp:1027
+#: kuser.cpp:1068
 msgid ""
 "Directory %1 left 'as is'.\n"
 "Verify ownership and permissions for user %2 who may not be able to log in!"
 msgstr ""
 
-#: kuser.cpp:1033
+#: kuser.cpp:1074
 msgid "%1 exists and is not a directory. User %2 will not be able to log in!"
 msgstr ""
 
-#: kuser.cpp:1041
+#: kuser.cpp:1082
 #, fuzzy
 msgid ""
 "Cannot create %1 directory\n"
@@ -223,7 +233,7 @@ msgstr ""
 "Неможам да создадам почетна папка\n"
 "Грешка: %1"
 
-#: kuser.cpp:1058
+#: kuser.cpp:1099
 #, fuzzy
 msgid ""
 "stat call on %1 failed.\n"
@@ -233,11 +243,11 @@ msgstr ""
 "датотеката: %1\n"
 "Грешка: %2"
 
-#: kuser.cpp:1072
+#: kuser.cpp:1139
 msgid "Cannot create %1: %2"
 msgstr "Неможам да создадам %1: %2"
 
-#: kuser.cpp:1082
+#: kuser.cpp:1149
 msgid ""
 "Cannot change owner on mailbox: %1\n"
 "Error: %2"
@@ -246,7 +256,7 @@ msgstr ""
 "поштенското сандаче: %1\n"
 "Грешка: %2"
 
-#: kuser.cpp:1089
+#: kuser.cpp:1156
 msgid ""
 "Cannot change permissions on mailbox: %1\n"
 "Error: %2"
@@ -255,7 +265,7 @@ msgstr ""
 "поштенското сандаче: %1\n"
 "Грешка: %2"
 
-#: kuser.cpp:1127
+#: kuser.cpp:1194
 msgid ""
 "Cannot change owner of directory %1\n"
 "Error: %2"
@@ -264,7 +274,7 @@ msgstr ""
 "папката: %1\n"
 "Грешка: %2"
 
-#: kuser.cpp:1133
+#: kuser.cpp:1200
 msgid ""
 "Cannot change permissions on directory %1\n"
 "Error: %2"
@@ -273,7 +283,7 @@ msgstr ""
 "папката: %1\n"
 "Грешка: %2"
 
-#: kuser.cpp:1158
+#: kuser.cpp:1225
 msgid ""
 "Cannot change owner of file %1\n"
 "Error: %2"
@@ -282,7 +292,7 @@ msgstr ""
 "датотеката: %1\n"
 "Грешка: %2"
 
-#: kuser.cpp:1164
+#: kuser.cpp:1231
 msgid ""
 "Cannot change permissions on file %1\n"
 "Error: %2"
@@ -291,11 +301,17 @@ msgstr ""
 "датотеката: %1\n"
 "Грешка: %2"
 
-#: kuser.cpp:1178 kuser.cpp:1184
-msgid "Directory %1 does not exist"
+#: kuser.cpp:1245
+#, fuzzy
+msgid "Directory %1 does not exist, cannot copy skeleton for %2"
 msgstr "Папката %1 не постои"
 
-#: kuser.cpp:1210
+#: kuser.cpp:1251
+#, fuzzy
+msgid "Directory %1 does not exist, cannot copy skeleton"
+msgstr "Папката %1 не постои"
+
+#: kuser.cpp:1277
 msgid ""
 "Cannot remove home directory %1\n"
 "Error: %2"
@@ -303,12 +319,12 @@ msgstr ""
 "Неможам да ја избришам почетната папка %1\n"
 "Грешка: %2"
 
-#: kuser.cpp:1215
+#: kuser.cpp:1282
 #, fuzzy
 msgid "Removal of home directory %1 failed (uid = %2, gid = %3)"
 msgstr "Папката %1 веќе постои (uid = %2, gid = %3)"
 
-#: kuser.cpp:1219
+#: kuser.cpp:1286
 #, fuzzy
 msgid ""
 "stat call on file %1 failed\n"
@@ -318,7 +334,7 @@ msgstr ""
 "датотеката: %1\n"
 "Грешка: %2"
 
-#: kuser.cpp:1237
+#: kuser.cpp:1304
 msgid ""
 "Cannot remove crontab %1\n"
 "Error: %2"
@@ -326,7 +342,7 @@ msgstr ""
 "Неможам да ја избришам cron-табелата %1\n"
 "Грешка: %2"
 
-#: kuser.cpp:1251
+#: kuser.cpp:1318
 msgid ""
 "Cannot remove mailbox %1\n"
 "Error: %2"
@@ -335,7 +351,7 @@ msgstr ""
 "сандаче: %1\n"
 "Грешка: %2"
 
-#: kuser.cpp:1270
+#: kuser.cpp:1337
 msgid "Cannot fork()"
 msgstr "Неможам да извршам fork()"
 
@@ -363,26 +379,26 @@ msgstr ""
 "Имате повеќе од 65534 групи!?!? Немате повеќе "
 "gid простор!"
 
-#: main.cpp:21
+#: main.cpp:20
 #, fuzzy
 msgid "KDE User Editor"
 msgstr "KDE Pregled na korisnici"
 
-#: main.cpp:53
+#: main.cpp:52
 msgid "KUser"
 msgstr "KUser"
 
-#: main.cpp:56
+#: main.cpp:55
 msgid "kuser author"
 msgstr ""
 
-#: main.cpp:66
+#: main.cpp:65
 msgid "Only root is allowed to manage users."
 msgstr ""
 "Само root корисникот смее да ги менува "
 "информациите за корисниците"
 
-#: main.cpp:78
+#: main.cpp:77
 msgid "KDE User Manager"
 msgstr "KDE Informacii za korisnicite"
 
@@ -391,7 +407,7 @@ msgstr "KDE Informacii za korisnicite"
 msgid "Users"
 msgstr "Корисник"
 
-#: mainView.cpp:40 propdlg.cpp:377 propdlg.cpp:399
+#: mainView.cpp:40 propdlg.cpp:347 propdlg.cpp:369
 msgid "Groups"
 msgstr "Групи"
 
@@ -422,7 +438,8 @@ msgid "&Discard changes"
 msgstr "Занемари ги промените"
 
 #: mainView.cpp:306
-msgid "Edit defaults"
+#, fuzzy
+msgid "Edit Defaults"
 msgstr "Менувај ги вообичаените вредности"
 
 #: mainView.cpp:414
@@ -430,202 +447,198 @@ msgstr "Менувај ги вообичаените вредности"
 msgid "Do you really want to delete the group '%1'?"
 msgstr "Дали сакате да го избришете корисникот '%1'?"
 
-#: propdlg.cpp:65 propdlg.cpp:95 propdlg.cpp:120
+#: propdlg.cpp:63 propdlg.cpp:88
 #, fuzzy
 msgid "Never"
 msgstr "Ноември"
 
-#: propdlg.cpp:115
+#: propdlg.cpp:83
 msgid " days"
 msgstr ""
 
-#: propdlg.cpp:143
+#: propdlg.cpp:110
 #, fuzzy
 msgid "User Properties"
 msgstr "Поставки на корисникот"
 
-#: propdlg.cpp:168
+#: propdlg.cpp:138
 #, fuzzy
 msgid "User Info"
 msgstr "Информации за корисникот"
 
-#: propdlg.cpp:177
+#: propdlg.cpp:147
 #, fuzzy
 msgid "User Login:"
 msgstr "Кориснички login"
 
-#: propdlg.cpp:181
+#: propdlg.cpp:151
 #, fuzzy
 msgid "User Id:"
 msgstr "Корисничко id"
 
-#: propdlg.cpp:183
-msgid "Set password"
+#: propdlg.cpp:153
+#, fuzzy
+msgid "Set Password"
 msgstr "Постави шифра"
 
-#: propdlg.cpp:189
+#: propdlg.cpp:159
 #, fuzzy
 msgid "Full Name:"
 msgstr "Полно име"
 
-#: propdlg.cpp:194 userDefaultsPage.cpp:34
+#: propdlg.cpp:164 userDefaultsPage.cpp:34
 msgid "<Empty>"
 msgstr "<Празно>"
 
-#: propdlg.cpp:217
+#: propdlg.cpp:187
 #, fuzzy
 msgid "Login Shell:"
 msgstr "Школка за login"
 
-#: propdlg.cpp:222
+#: propdlg.cpp:192
 #, fuzzy
 msgid "Home Directory:"
 msgstr "Почетна папка"
 
-#: propdlg.cpp:230
+#: propdlg.cpp:200
 #, fuzzy
 msgid "Office:"
 msgstr "Работно место"
 
-#: propdlg.cpp:235
+#: propdlg.cpp:205
 #, fuzzy
 msgid "Office Phone:"
 msgstr "Телефон на работа"
 
-#: propdlg.cpp:240
+#: propdlg.cpp:210
 #, fuzzy
 msgid "Home Phone:"
 msgstr "Домашен телефон"
 
-#: propdlg.cpp:245
+#: propdlg.cpp:215
 #, fuzzy
 msgid "Office #1:"
 msgstr "Работно место 1"
 
-#: propdlg.cpp:250
+#: propdlg.cpp:220
 #, fuzzy
 msgid "Office #2:"
 msgstr "Работно место 2"
 
-#: propdlg.cpp:255
+#: propdlg.cpp:225
 #, fuzzy
 msgid "Address:"
 msgstr "Адреса"
 
-#: propdlg.cpp:263
+#: propdlg.cpp:233
 #, fuzzy
-msgid "Password Managment"
+msgid "Password Management"
 msgstr "Промената на шифра не е дозволена"
 
-#: propdlg.cpp:270
+#: propdlg.cpp:240
 #, fuzzy
 msgid "Last Password Change:"
 msgstr "Последна промена на шифрата"
 
-#: propdlg.cpp:275
+#: propdlg.cpp:245
 msgid "Password may not be changed before"
 msgstr ""
 
-#: propdlg.cpp:275 propdlg.cpp:276
+#: propdlg.cpp:245 propdlg.cpp:246
 #, fuzzy
 msgid "after last password change."
 msgstr "Последна промена на шифрата"
 
-#: propdlg.cpp:276
+#: propdlg.cpp:246
 #, fuzzy
 msgid "Password expires"
 msgstr "Шифрата не истекува"
 
-#: propdlg.cpp:277
+#: propdlg.cpp:247
 msgid "Issue expire warning"
 msgstr ""
 
-#: propdlg.cpp:277
+#: propdlg.cpp:247
 #, fuzzy
 msgid "before password expires."
 msgstr "Датум на истекување на шифрата"
 
-#: propdlg.cpp:278
+#: propdlg.cpp:248
 #, fuzzy
 msgid "Account will be disabled"
 msgstr "Сметката ќе остане вклучена"
 
-#: propdlg.cpp:278
+#: propdlg.cpp:248
 msgid "after expiration of password"
 msgstr ""
 
-#: propdlg.cpp:283
+#: propdlg.cpp:253
 #, fuzzy
 msgid "Account will expire on:"
 msgstr "Сметката не истекува"
 
-#: propdlg.cpp:290
+#: propdlg.cpp:260
 msgid "Quota"
 msgstr "Ограничување"
 
-#: propdlg.cpp:295
+#: propdlg.cpp:265
 msgid "Filesystem with quotas:"
 msgstr "Датотечен систем со ограничувања:"
 
-#: propdlg.cpp:317
+#: propdlg.cpp:287
 #, fuzzy
 msgid "Disk space soft quota:"
 msgstr "Меко ограничување на просторот на дискот"
 
-#: propdlg.cpp:323
+#: propdlg.cpp:293
 #, fuzzy
 msgid "Disk space hard quota:"
 msgstr "Тврдо ограничување на просторот на дискот"
 
-#: propdlg.cpp:327
+#: propdlg.cpp:297
 #, fuzzy
 msgid "Disk space in use:"
 msgstr "Употреба на просторот"
 
-#: propdlg.cpp:334 propdlg.cpp:369
+#: propdlg.cpp:304 propdlg.cpp:339
 msgid "Grace period:"
 msgstr ""
 
-#: propdlg.cpp:352
+#: propdlg.cpp:322
 #, fuzzy
 msgid "File number soft quota:"
 msgstr "Број на датотеки кај меко ограничување"
 
-#: propdlg.cpp:358
+#: propdlg.cpp:328
 #, fuzzy
 msgid "File number hard quota:"
 msgstr "Број на датотеки кај тврдо ограничување"
 
-#: propdlg.cpp:362
+#: propdlg.cpp:332
 msgid "Number of files in use:"
 msgstr ""
 
-#: propdlg.cpp:383
+#: propdlg.cpp:353
 #, fuzzy
 msgid "Primary Group:"
 msgstr "Примарна група"
 
-#: propdlg.cpp:388
+#: propdlg.cpp:358
 #, fuzzy
 msgid "Groups user '%1' belongs to:"
 msgstr "Групи на кои припаѓа"
 
-#: propdlg.cpp:406
+#: propdlg.cpp:376
 #, fuzzy
 msgid "Login class:"
 msgstr "Класа на login"
 
-#: propdlg.cpp:409
-#, fuzzy
-msgid "Password must be changed before:"
-msgstr "Промената на шифра не е дозволена"
-
-#: propdlg.cpp:411
+#: propdlg.cpp:378
 #, fuzzy
 msgid "Account will expire after:"
 msgstr "Сметката ќе остане вклучена"
 
-#: addUser.cpp:55 propdlg.cpp:727
+#: addUser.cpp:55 propdlg.cpp:683
 msgid "User with UID %1 already exists"
 msgstr "Веќе постои корисник со UID %1"
 
@@ -655,7 +668,8 @@ msgstr ""
 "пишување"
 
 #: usernamedlg.cpp:13
-msgid "Enter username"
+#, fuzzy
+msgid "Enter Username"
 msgstr "Внесете корисничко име"
 
 #: usernamedlg.cpp:21
@@ -670,20 +684,20 @@ msgstr "Веќе постои корисник со име %1."
 msgid "You have to enter a user name."
 msgstr "Треба да внесете корисничко име."
 
-#: pwddlg.cpp:19
+#: pwddlg.cpp:17
 #, fuzzy
 msgid "Enter Password"
 msgstr "Внесете шифра"
 
-#: pwddlg.cpp:25
+#: pwddlg.cpp:23
 msgid "Password"
 msgstr "Шифра"
 
-#: pwddlg.cpp:41
+#: pwddlg.cpp:39
 msgid "Retype password"
 msgstr "Повторно внесете ја шифрата"
 
-#: pwddlg.cpp:68
+#: pwddlg.cpp:66
 msgid ""
 "Passwords are not identical.\n"
 "Try again"
@@ -692,7 +706,8 @@ msgstr ""
 "Обидете се повторно"
 
 #: grpnamedlg.cpp:13
-msgid "Add group"
+#, fuzzy
+msgid "Add Group"
 msgstr "Додади група"
 
 #: grpnamedlg.cpp:21
@@ -796,34 +811,32 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+#~ msgid "Password must be changed before:"
+#~ msgstr "Промената на шифра не е дозволена"
+
+#, fuzzy
 #~ msgid "WHAT IS THIS: Home Directory"
 #~ msgstr "Почетна папка"
 
 #, fuzzy
 #~ msgid "WHAT IS THIS: Disk space soft quota"
-#~ msgstr ""
-#~ "Меко ограничување на просторот на дискот"
+#~ msgstr "Меко ограничување на просторот на дискот"
 
 #, fuzzy
 #~ msgid "WHAT IS THIS: Disk space hard quota"
-#~ msgstr ""
-#~ "Тврдо ограничување на просторот на дискот"
+#~ msgstr "Тврдо ограничување на просторот на дискот"
 
 #, fuzzy
 #~ msgid "WHAT IS THIS: Time limit allowed for soft quota"
-#~ msgstr ""
-#~ "Временско ограничување е дозволено за disk "
-#~ "со меко ограничување"
+#~ msgstr "Временско ограничување е дозволено за disk со меко ограничување"
 
 #, fuzzy
 #~ msgid "WHAT IS THIS: File number soft quota"
-#~ msgstr ""
-#~ "Број на датотеки кај меко ограничување"
+#~ msgstr "Број на датотеки кај меко ограничување"
 
 #, fuzzy
 #~ msgid "WHAT IS THIS: File number hard quota"
-#~ msgstr ""
-#~ "Број на датотеки кај тврдо ограничување"
+#~ msgstr "Број на датотеки кај тврдо ограничување"
 
 #, fuzzy
 #~ msgid "WHAT IS THIS: File number usage"
@@ -832,8 +845,8 @@ msgstr ""
 #, fuzzy
 #~ msgid "WHAT IS THIS: Time limit allowed for file number soft quota"
 #~ msgstr ""
-#~ "Временско ограничување е дозволено за "
-#~ "број на датотеки со меко ограничување"
+#~ "Временско ограничување е дозволено за број на датотеки со меко "
+#~ "ограничување"
 
 #, fuzzy
 #~ msgid "WHATSTHIS: Primary Group"
@@ -927,8 +940,7 @@ msgstr ""
 #~ msgid ""
 #~ "Date before which password cannot\n"
 #~ "be changed"
-#~ msgstr ""
-#~ "Датум до кој шифрата неможе да се промени"
+#~ msgstr "Датум до кој шифрата неможе да се промени"
 
 #~ msgid "Password will not expire"
 #~ msgstr "Шифрата нема да истече"
@@ -941,15 +953,13 @@ msgstr ""
 #~ "се промени"
 
 #~ msgid "No warning will be given"
-#~ msgstr ""
-#~ "Предупредувањата нема да се прикажуваат"
+#~ msgstr "Предупредувањата нема да се прикажуваат"
 
 #~ msgid ""
 #~ "Date after which warning about pending\n"
 #~ "password expiration will be given"
 #~ msgstr ""
-#~ "Датум по кој ќе се прикажуваат "
-#~ "предупредувања\n"
+#~ "Датум по кој ќе се прикажуваат предупредувања\n"
 #~ "за наближување на истекувањето на шифрата"
 
 #~ msgid ""
@@ -962,9 +972,7 @@ msgstr ""
 #~ msgid ""
 #~ "Date when account expires and will\n"
 #~ "be disabled"
-#~ msgstr ""
-#~ "Датум на кој сметката истекува и ќе биде "
-#~ "исклучена"
+#~ msgstr "Датум на кој сметката истекува и ќе биде исклучена"
 
 #~ msgid "Filesystem with quotas"
 #~ msgstr "Датотечен систем со ограничувања"
