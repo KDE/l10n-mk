@@ -1,2 +1,0 @@
-POFILES = AUTO
-KDE_LANG = mk
