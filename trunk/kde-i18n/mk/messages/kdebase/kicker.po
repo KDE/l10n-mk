@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kicker\n"
-"POT-Creation-Date: 2000-10-31 01:31+0100\n"
+"POT-Creation-Date: 2001-02-07 01:25+0100\n"
 "PO-Revision-Date: 2000-11-25 23:20+0100\n"
 "Last-Translator: Danko Ilik <danko@mindless.com>\n"
 "Language-Team: Macedonian\n"
@@ -18,42 +18,67 @@ msgstr ""
 msgid "Popup Launch Menu"
 msgstr "Појави мени за извршување"
 
-#: core/main.cpp:89
+#: core/main.cpp:150
 #, fuzzy
 msgid "KDE Panel"
 msgstr "KDE Панелот"
 
-#: core/main.cpp:91
+#: core/main.cpp:152
 msgid "The KDE desktop panel."
 msgstr "КДЕ панелот во работниот простор."
 
-#: core/panelbutton.cpp:201
+#: core/panel.cpp:73
+#, fuzzy
+msgid "Hide Panel"
+msgstr "Конфигурирње"
+
+#: core/panel.cpp:74
+#, fuzzy
+msgid "Show Panel"
+msgstr "KDE Панелот"
+
+#: core/panel.cpp:334
+msgid "Scroll Left"
+msgstr ""
+
+#: core/panel.cpp:335
+msgid "Scroll Right"
+msgstr ""
+
+#: core/panel.cpp:342
+msgid "Scroll Up"
+msgstr ""
+
+#: core/panel.cpp:343
+msgid "Scroll Down"
+msgstr ""
+
+#: core/panelbutton.cpp:237
 msgid "The file %1 doesn't exist"
 msgstr "Датотеката %1 не постои"
 
-#: core/panelbutton.cpp:219 core/panelbutton.cpp:280
+#: core/panelbutton.cpp:255 core/panelbutton.cpp:315
 #, c-format
 msgid "Browse: %1"
 msgstr "Разгледај: %1"
 
-#: core/panelbutton.cpp:337
+#: core/panelbutton.cpp:373 core/panelbutton.cpp:374
 msgid "Start Application"
 msgstr "Извршување на апликации"
 
-#: core/panelbutton.cpp:431
+#: core/panelbutton.cpp:468 core/panelbutton.cpp:469
 msgid "Show Desktop"
 msgstr "Покажи површина"
 
-#: core/panelbutton.cpp:615 core/panelbutton.cpp:641
+#: core/panelbutton.cpp:668 core/panelbutton.cpp:694
 msgid "Cannot execute non-KDE application!"
-msgstr ""
-"Не може да се изврши не-КДЕ апликацијата!"
+msgstr "Не може да се изврши не-КДЕ апликацијата!"
 
-#: core/panelbutton.cpp:616 core/panelbutton.cpp:642
+#: core/panelbutton.cpp:669 core/panelbutton.cpp:695
 msgid "Kicker Error!"
 msgstr "Грешка во Kicker!"
 
-#: core/panelbutton.cpp:667
+#: core/panelbutton.cpp:718 core/panelbutton.cpp:719
 msgid "Window List"
 msgstr "Листа прозори"
 
@@ -81,7 +106,7 @@ msgstr "Листа прозори"
 msgid "Desktop Access"
 msgstr "Пристап до површината"
 
-#: ui/addcontainer_mnu.cpp:50 ui/k_mnu.cpp:106
+#: ui/addcontainer_mnu.cpp:50 ui/k_mnu.cpp:111
 msgid "Quick Browser"
 msgstr "Брз разгледувач"
 
@@ -105,35 +130,39 @@ msgstr ""
 "Избраната датотека не е извршна.\n"
 "Дали сакате да изберете друга датотека?"
 
-#: ui/appletop_mnu.cpp:34 ui/extensionop_mnu.cpp:34 ui/k_mnu.cpp:134
+#: ui/appletop_mnu.cpp:46 ui/extensionop_mnu.cpp:34
 msgid "Panel Menu"
 msgstr "Панел-мени"
 
-#: ui/appletop_mnu.cpp:37 ui/extensionop_mnu.cpp:37
+#: ui/appletop_mnu.cpp:49 ui/extensionop_mnu.cpp:37
 msgid "&Move"
 msgstr "Премести"
 
-#: ui/appletop_mnu.cpp:49
+#: ui/appletop_mnu.cpp:58 ui/extensionop_mnu.cpp:46
+msgid "Report &Bug..."
+msgstr ""
+
+#: ui/appletop_mnu.cpp:68 ui/extensionop_mnu.cpp:56
 msgid "&About"
 msgstr "За"
 
-#: ui/browser_mnu.cpp:76
+#: ui/browser_mnu.cpp:70 ui/browser_mnu.cpp:79
+msgid "Failed to read directory."
+msgstr "Не може да се прочита таа папка."
+
+#: ui/browser_mnu.cpp:212
+msgid "More..."
+msgstr ""
+
+#: ui/browser_mnu.cpp:226
 #, fuzzy
 msgid "Open in File Manager"
 msgstr "Отвори менаџер на датотеки"
 
-#: ui/browser_mnu.cpp:78
+#: ui/browser_mnu.cpp:227
 #, fuzzy
 msgid "Open in Terminal"
 msgstr "Отвори терминал"
-
-#: ui/browser_mnu.cpp:90
-msgid "Failed to read directory."
-msgstr "Не може да се прочита таа папка."
-
-#: ui/browser_mnu.cpp:97
-msgid "Too many files to load."
-msgstr "Премногу датотеки за вчитување."
 
 #: ui/dirdrop_mnu.cpp:32
 msgid "Add as &file manager URL"
@@ -159,51 +188,72 @@ msgstr "Командни параметки:"
 msgid "Run in terminal."
 msgstr "Во терминал."
 
-#: ui/k_mnu.cpp:98
+#: ui/k_mnu.cpp:102
 msgid "Recent Documents"
 msgstr "Последни документи"
 
-#: ui/k_mnu.cpp:132
-msgid "Run..."
+#: ui/k_mnu.cpp:136
+#, fuzzy
+msgid "Run Command..."
 msgstr "Изврши..."
 
-#: ui/k_mnu.cpp:135
-msgid "About KDE..."
-msgstr "За КДЕ..."
+#: ui/k_mnu.cpp:141
+#, fuzzy
+msgid "Configure Panel"
+msgstr "Конфигурирње"
 
-#: ui/k_mnu.cpp:136
+#: ui/k_mnu.cpp:145
 msgid "Lock Screen"
 msgstr "Заклучи екран"
 
-#: ui/k_mnu.cpp:137
-msgid "Logout..."
+#: ui/k_mnu.cpp:146
+#, fuzzy
+msgid "Logout"
 msgstr "Одјавување..."
 
-#: ui/panelop_mnu.cpp:48
+#: ui/panelop_mnu.cpp:51
 msgid "Tiny"
 msgstr "Мал"
 
-#: ui/panelop_mnu.cpp:49
+#: ui/panelop_mnu.cpp:52
+msgid "Small"
+msgstr ""
+
+#: ui/panelop_mnu.cpp:53
 msgid "Normal"
 msgstr "Нормален"
 
-#: ui/panelop_mnu.cpp:50
+#: ui/panelop_mnu.cpp:54
 msgid "Large"
 msgstr "Голем"
 
-#: ui/panelop_mnu.cpp:61
+#: ui/panelop_mnu.cpp:65
 msgid "Size"
 msgstr "Големина"
 
-#: ui/panelop_mnu.cpp:62
+#: ui/panelop_mnu.cpp:66
 msgid "Settings..."
 msgstr "Поставки..."
 
-#: ui/panelop_mnu.cpp:63
+#: ui/panelop_mnu.cpp:67
 msgid "Menu Editor..."
 msgstr "Уредување на менијата..."
 
-#: ui/recent_mnu.cpp:56 ui/service_mnu.cpp:95
+#: ui/quickbrowser_mnu.cpp:42
+#, fuzzy
+msgid "&Home Directory"
+msgstr "Избери папка"
+
+#: ui/quickbrowser_mnu.cpp:44
+#, fuzzy
+msgid "&Root Directory"
+msgstr "Избери папка"
+
+#: ui/quickbrowser_mnu.cpp:46
+msgid "System &Configuration"
+msgstr ""
+
+#: ui/recent_mnu.cpp:56 ui/service_mnu.cpp:194
 msgid "No entries"
 msgstr "Без избор"
 
@@ -211,20 +261,21 @@ msgstr "Без избор"
 msgid "Clear History"
 msgstr "Заборави минато"
 
-#: ui/service_mnu.cpp:102
+#: ui/service_mnu.cpp:201
 msgid "Add this menu"
 msgstr ""
 
-#: ui/windowlist_mnu.cpp:79
-msgid "Unclutter Windows"
-msgstr "Распореди прозорци"
+#~ msgid "Too many files to load."
+#~ msgstr "Премногу датотеки за вчитување."
 
-#: ui/windowlist_mnu.cpp:81
-msgid "Cascade Windows"
-msgstr "Нареди прозорци"
+#~ msgid "Unclutter Windows"
+#~ msgstr "Распореди прозорци"
+
+#~ msgid "Cascade Windows"
+#~ msgstr "Нареди прозорци"
+
+#~ msgid "About KDE..."
+#~ msgstr "За КДЕ..."
 
 #~ msgid "Application"
 #~ msgstr "Апликација"
-
-#~ msgid "Configure"
-#~ msgstr "Конфигурирње"
