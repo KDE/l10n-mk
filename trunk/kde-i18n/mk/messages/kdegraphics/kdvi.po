@@ -5,13 +5,562 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdvi.po\n"
-"POT-Creation-Date: 2001-01-06 01:31+0100\n"
+"POT-Creation-Date: 2001-06-12 14:37+0200\n"
 "PO-Revision-Date: 2000-05-10 20:00+0100\n"
 "Last-Translator: Dragan Bocevski <d_bocevski@hotpop.com>\n"
 "Language-Team: Macedonian <mkdeteam@yahoo.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
+
+#: dvi_init.cpp:153
+msgid "DVI file doesn't start with preamble."
+msgstr ""
+
+#: dvi_init.cpp:155
+msgid "Wrong version of DVI output for this program."
+msgstr ""
+
+#: dvi_init.cpp:201
+#, fuzzy
+msgid "DVI file corrupted"
+msgstr "DVI датотека за отварање"
+
+#: dvi_init.cpp:210
+msgid "Wrong version of DVI output for this program"
+msgstr ""
+
+#: dvi_init.cpp:221
+msgid "Postamble doesn't begin with POST"
+msgstr ""
+
+#: dvi_init.cpp:224
+msgid "Postamble doesn't match preamble"
+msgstr ""
+
+#: dvi_init.cpp:234
+msgid "Non-fntdef command found in postamble"
+msgstr ""
+
+#: dvi_init.cpp:236
+msgid "Not all pixel files were found"
+msgstr ""
+
+#: dviwin.cpp:211 dviwin.cpp:300
+msgid "Another export command is currently running"
+msgstr ""
+
+#: dviwin.cpp:230
+msgid ""
+"KDVI could not locate the program 'dvipdfm' on your computer. That program "
+"is\n"
+"absolutely needed by the export function. You can, however, convert\n"
+"the DVI-file to PDF using the print function of KDVI, but that will often\n"
+"produce which print ok, but are of inferior quality if viewed in the \n"
+"Acrobat Reader. It may be wise to upgrade to a more recent version of your\n"
+"TeX distribution which includes the 'dvipdfm' program.\n"
+"\n"
+"Hint to the perplexed system administrator: KDVI uses the shell's PATH "
+"variable\n"
+"when looking for programs."
+msgstr ""
+
+#: dviwin.cpp:241 dviwin.cpp:310
+msgid "Export File As"
+msgstr ""
+
+#: dviwin.cpp:246 dviwin.cpp:315
+msgid ""
+"The file %1\n"
+"exists. Shall I overwrite that file?"
+msgstr ""
+
+#: dviwin.cpp:247 dviwin.cpp:316
+#, fuzzy
+msgid "Overwrite file"
+msgstr "Отвори датотека"
+
+#: dviwin.cpp:254
+msgid "Using dvipdfm to export the file to PDF"
+msgstr ""
+
+#: dviwin.cpp:256
+msgid ""
+"KDVI is currently using the external program 'dvipdfm' to convert your "
+"DVI-file to PDF. Sometimes that can take a while because dvipdfm needs to "
+"generate its own bitmap fonts Please be patient."
+msgstr ""
+
+#: dviwin.cpp:260
+msgid "Waiting for dvipdf to finish..."
+msgstr ""
+
+#: dviwin.cpp:263 dviwin.cpp:336
+msgid "Please be patient"
+msgstr ""
+
+#: dviwin.cpp:279
+msgid "Export: %1 to PDF"
+msgstr ""
+
+#: dviwin.cpp:327
+msgid "Using dvips to export the file to PostScript"
+msgstr ""
+
+#: dviwin.cpp:329
+msgid ""
+"KDVI is currently using the external program 'dvips' to convert your "
+"DVI-file to PostScript. Sometimes that can take a while because dvips needs "
+"to generate its own bitmap fonts Please be patient."
+msgstr ""
+
+#: dviwin.cpp:333
+msgid "Waiting for dvips to finish..."
+msgstr ""
+
+#: dviwin.cpp:353
+#, fuzzy
+msgid "Export: %1 to PostScript"
+msgstr "Покажи postscript"
+
+#: dviwin.cpp:406
+msgid ""
+"The external program used to export the DVI-file\n"
+"reported an error. You might wish to look at the\n"
+"document info dialog for a precise error report."
+msgstr ""
+
+#: dviwin.cpp:450
+msgid ""
+"The change in Metafont mode will be effective\n"
+"only after you start kdvi again!"
+msgstr ""
+"Промената на Метафонт модот ќе резултира\n"
+"откако повторно ќе го стартувате kdvi"
+
+#: dviwin.cpp:516 dviwin.cpp:611
+msgid ""
+"File corruption!\n"
+"\n"
+msgstr ""
+
+#: dviwin.cpp:518
+msgid ""
+"\n"
+"\n"
+"Most likely this means that the DVI file\n"
+"is broken, or that it is not a DVI file."
+msgstr ""
+
+#: dviwin.cpp:601
+msgid ""
+"File error!\n"
+"\n"
+msgstr ""
+
+#: dviwin.cpp:602
+msgid ""
+"The file does not exist\n"
+msgstr ""
+
+#: dviwin.cpp:613
+msgid ""
+"\n"
+"\n"
+"Most likely this means that the DVI file\n"
+msgstr ""
+
+#: dviwin.cpp:615
+msgid ""
+"\n"
+"is broken, or that it is not a DVI file."
+msgstr ""
+
+#: font.cpp:43
+msgid "Can't find font "
+msgstr ""
+
+#: font.cpp:56
+msgid "The GF format for font file %1 is no longer supported"
+msgstr ""
+
+#: font.cpp:62
+#, c-format
+msgid "Cannot recognize format for font file %1"
+msgstr ""
+
+#: font.cpp:147
+msgid "Character %1 not defined in font %2"
+msgstr ""
+
+#: font.cpp:157
+#, c-format
+msgid "Font file disappeared: %1"
+msgstr ""
+
+#: fontpool.cpp:36
+msgid "KDVI is currently generating bitmap fonts..."
+msgstr ""
+
+#: fontpool.cpp:37
+msgid "Aborts the font generation. Don't do this."
+msgstr ""
+
+#: fontpool.cpp:38
+msgid ""
+"KDVI is currently generating bitmap fonts which are needed to display your "
+"document. For this, KDVI uses a number of external programs, such as "
+"MetaFont. You can find the output of these programs later in the document "
+"info dialog."
+msgstr ""
+
+#: fontpool.cpp:41
+msgid "KDVI is generating fonts. Please wait."
+msgstr ""
+
+#: fontpool.cpp:130
+msgid "Could not allocate memory for a font structure!"
+msgstr ""
+
+#: fontpool.cpp:147
+msgid "The fontlist is currently empty."
+msgstr ""
+
+#: fontpool.cpp:157
+msgid "virtual"
+msgstr ""
+
+#: fontpool.cpp:159
+msgid "regular"
+msgstr ""
+
+#: fontpool.cpp:220
+msgid "Locating fonts..."
+msgstr ""
+
+#: fontpool.cpp:233
+msgid "Font Generation"
+msgstr ""
+
+#: fontpool.cpp:363
+msgid "Font not found - KDVI"
+msgstr ""
+
+#: fontpool.cpp:364
+msgid ""
+"There were problems running the kpsewhich program.\n"
+"KDVI will not work if TeX is not installed on your\n"
+"system or if the kpsewhich program cannot be found\n"
+"in the standard search path.\n"
+"\n"
+msgstr ""
+
+#: fontpool.cpp:368
+msgid ""
+"KDVI was not able to locate all the font files \n"
+"which are necessary to display the current DVI file. \n"
+"Some characters are therefore left blank, and your \n"
+"document might be unreadable."
+msgstr ""
+
+#: fontpool.cpp:372
+msgid ""
+"\n"
+"\n"
+"Experts will find helpful information in the 'MetaFont'-\n"
+"section of the document info dialog"
+msgstr ""
+
+#: fontpool.cpp:379
+msgid ""
+"\n"
+"Automatic font generation is switched off.\n"
+msgstr ""
+
+#: fontpool.cpp:487
+msgid "Currently generating %1 at %2 dpi"
+msgstr ""
+
+#: fontprogress.cpp:30
+msgid "Abort"
+msgstr ""
+
+#: fontprogress.cpp:34
+msgid "What's going on here?"
+msgstr ""
+
+#: fontprogress.cpp:48
+msgid "%v of %m"
+msgstr ""
+
+#: infodialog.cpp:22
+#, fuzzy
+msgid "DVI File"
+msgstr "DVI Прегледник"
+
+#: infodialog.cpp:25
+msgid "Information on the currently loaded DVI-file."
+msgstr ""
+
+#: infodialog.cpp:33
+msgid "Information on currently loaded fonts."
+msgstr ""
+
+#: infodialog.cpp:34
+msgid ""
+"This text field shows detailed information about the currently loaded fonts. "
+"This is useful for experts who want to locate problems in the setup of TeX "
+"or KDVI."
+msgstr ""
+
+#: infodialog.cpp:38
+msgid "External Programs"
+msgstr ""
+
+#: infodialog.cpp:41
+msgid "No output from any external program received."
+msgstr ""
+
+#: infodialog.cpp:42
+msgid "Output of external programs."
+msgstr ""
+
+#: infodialog.cpp:43
+msgid ""
+"KDVI uses external programs, such as MetaFont, dvipdfm or dvips. This text "
+"field shows the output of these programs. That is useful for experts who "
+"want to find problems in the setup of TeX or KDVI."
+msgstr ""
+
+#: infodialog.cpp:59
+msgid "There is no DVI file loaded at the moment."
+msgstr ""
+
+#: infodialog.cpp:77
+#, fuzzy
+msgid "Filename"
+msgstr "Име на датотека:"
+
+#: infodialog.cpp:78
+#, fuzzy
+msgid "File Size"
+msgstr "Име на датотека:"
+
+#: infodialog.cpp:80
+#, fuzzy
+msgid "#Pages"
+msgstr "Страни"
+
+#: infodialog.cpp:81
+msgid "Generator/Date"
+msgstr ""
+
+#: kdvi_multipage.cpp:81
+msgid "Document &Info"
+msgstr ""
+
+#: kdvi_multipage.cpp:82
+#, fuzzy
+msgid "PostScript"
+msgstr "Покажи postscript"
+
+#: kdvi_multipage.cpp:83
+msgid "PDF"
+msgstr ""
+
+#: kdvi_multipage.cpp:85
+msgid "&DVI Options"
+msgstr ""
+
+#: kdvi_multipage.cpp:86
+msgid "About the KDVI plugin..."
+msgstr ""
+
+#: kdvi_multipage.cpp:87
+msgid "Help on the KDVI plugin..."
+msgstr ""
+
+#: kdvi_multipage.cpp:88
+msgid "Report Bug in the KDVI plugin..."
+msgstr ""
+
+#: kdvi_multipage.cpp:114
+#, c-format
+msgid "Loading file %1"
+msgstr ""
+
+#: kdvi_multipage.cpp:144
+msgid "*.dvi *.DVI|TeX Device Independent files (*.dvi)"
+msgstr ""
+
+#: kdvi_multipage.cpp:241
+msgid "the KDVI plugin"
+msgstr ""
+
+#: kdvi_multipage.cpp:246
+msgid ""
+"A previewer for Device Independent files (DVI files) produced by the TeX "
+"typesetting system.<br>Based on kdvi 0.4.3 and on xdvik, version "
+"18f.<br><hr>For latest information, visit <a "
+"href=\"http://devel-home.kde.org/~kdvi\">KDVI's Homepage</a>."
+msgstr ""
+
+#: kdvi_multipage.cpp:252
+msgid "Authors"
+msgstr ""
+
+#: kdvi_multipage.cpp:253
+msgid ""
+"Stefan Kebekus<br><a "
+"href=\"http://btm8x5.mat.uni-bayreuth.de/~kebekus\">"
+"http://btm8x5.mat.uni-bayreuth.de/~kebekus</a><br><a "
+"href=\"mailto:kebekus@kde.org\">kebekus@kde.org</a><br>"
+"Current maintainer of kdvi. Major rewrite of version 0.4.3.Implementation of "
+"hyperlinks.<br><hr>Markku Hinhala<br>Author of kdvi 0.4.3<hr>Nicolai "
+"Langfeldt<br>Maintainer of xdvik<hr>Paul Vojta<br> Author of "
+"xdvi<br><hr>Many others. Really, lots of people who were involved in kdvi, "
+"xdvik and xdvi. I apologize to those who I did not mention here. Please send "
+"me an email if you think your name belongs here."
+msgstr ""
+
+#: kdvi_multipage.cpp:279
+msgid "KDVI"
+msgstr "KDVI"
+
+#: kdvi_multipage.cpp:379
+msgid ""
+"The list of pages you selected was empty.\n"
+"Maybe you made an error in selecting the pages, \n"
+"e.g. by giving in invalid range like '7-2'."
+msgstr ""
+
+#: optiondialog.cpp:44
+msgid "Preferences"
+msgstr "Особини"
+
+#: optiondialog.cpp:117
+msgid "Metafont mode:"
+msgstr "Metafont мод:"
+
+#: optiondialog.cpp:119
+msgid "LaserJet 4 is usually a good choice."
+msgstr ""
+
+#: optiondialog.cpp:120
+msgid ""
+"Chooses the type of bitmap fonts used for the display. As a general rule, "
+"the higher the dpi value, the better quality of the output. On the other "
+"hand, large dpi fonts use more resources and make KDVI slower. \n"
+"If you are low on hard disk space, or have a slow machine, you may want to "
+"choose the same setting that is also used by dvips. That way you avoid to "
+"generate several bitmap versions of the same font."
+msgstr ""
+
+#: optiondialog.cpp:127
+msgid "Generate missing fonts"
+msgstr "Генерирај фонтови кои недостасуваат"
+
+#: optiondialog.cpp:128 optiondialog.cpp:143 optiondialog.cpp:146
+msgid "If in doubt, switch on!"
+msgstr ""
+
+#: optiondialog.cpp:129
+msgid ""
+"Allows KDVI to use MetaFont to produce bitmap fonts. Unless you have a very "
+"specific reason, you probably want to switch this on."
+msgstr ""
+
+#: optiondialog.cpp:138
+msgid "Rendering"
+msgstr "Прикажување"
+
+#: optiondialog.cpp:142
+msgid "Show PostScript specials"
+msgstr "Покажи postscript специјални"
+
+#: optiondialog.cpp:144
+msgid ""
+"Some DVI files contain PostScript graphics. If switched on, KDVI will use "
+"the ghostview PostScript interpreter to display these. You probably want to "
+"switch this option on, unless you have a DVI-file whose PostScript part is "
+"broken, or too large for your machine."
+msgstr ""
+
+#: optiondialog.cpp:145
+msgid "Show Hyperlinks"
+msgstr ""
+
+#: optiondialog.cpp:147
+msgid ""
+"For your convenience, some DVI files contain hyperlinks which are "
+"corss-references or point to external documents. You probably want to switch "
+"this option on, unless you are annoyed by the blue underlines which KDVI "
+"uses to mark the hyperlinks."
+msgstr ""
+
+#: pk.cpp:202
+msgid "Unexpected %1 in PK file %2"
+msgstr ""
+
+#: pk.cpp:266
+msgid "The character %1 is too large in file %2"
+msgstr ""
+
+#: pk.cpp:366 pk.cpp:453
+msgid "Wrong number of bits stored:  char. %1, font %2"
+msgstr ""
+
+#: pk.cpp:368 pk.cpp:455
+msgid "Bad pk file (%1), too many bits"
+msgstr ""
+
+#: pk.cpp:471 vf.cpp:86
+msgid "Checksum mismatch"
+msgstr ""
+
+#: pk.cpp:472
+msgid "in font file "
+msgstr ""
+
+#: pk.cpp:477
+msgid "Font has non-square aspect ratio "
+msgstr ""
+
+#: pk.cpp:482
+msgid "Could not allocate memory for a glyph table."
+msgstr ""
+
+#: psgs.cpp:79
+msgid "Generating PostScript graphics..."
+msgstr ""
+
+#: rc.cpp:2
+msgid "Export as..."
+msgstr ""
+
+#: rc.cpp:3
+#, fuzzy
+msgid "Settings"
+msgstr "Поставки"
+
+#: special.cpp:96
+msgid "Malformed parameter in the epsf special command."
+msgstr ""
+
+#: special.cpp:222
+#, c-format
+msgid ""
+"File not found:\n"
+" %1"
+msgstr ""
+
+#: special.cpp:341
+msgid "The special command \""
+msgstr ""
+
+#: special.cpp:341
+msgid "\" is not implemented."
+msgstr ""
 
 #: _translatorinfo.cpp:1
 msgid ""
@@ -25,385 +574,135 @@ msgid ""
 "Your emails"
 msgstr ""
 
-#: dvi_init.cpp:298
-msgid "DVI file doesn't start with preamble."
-msgstr ""
-
-#: dvi_init.cpp:300
-msgid "Wrong version of DVI output for this program."
-msgstr ""
-
-#: dvi_init.cpp:341
-#, fuzzy
-msgid "DVI file corrupted"
-msgstr "DVI датотека за отварање"
-
-#: dvi_init.cpp:350
-msgid "Wrong version of DVI output for this program"
-msgstr ""
-
-#: dvi_init.cpp:367
-msgid "Postamble doesn't begin with POST"
-msgstr ""
-
-#: dvi_init.cpp:372
-msgid "Postamble doesn't match preamble"
-msgstr ""
-
-#: dvi_init.cpp:382
-msgid "Non-fntdef command found in postamble"
-msgstr ""
-
-#: dvi_init.cpp:384
-msgid "Not all pixel files were found"
-msgstr ""
-
-#: dviwin.cpp:180
-msgid ""
-"The change in Metafont mode will be effective\n"
-"only after you start kdvi again!"
-msgstr ""
-"Промената на Метафонт модот ќе резултира\n"
-"откако повторно ќе го стартувате kdvi"
-
-#: dviwin.cpp:235 dviwin.cpp:324
-msgid ""
-"File corruption!\n"
-"\n"
-msgstr ""
-
-#: dviwin.cpp:237
-msgid ""
-"\n"
-"\n"
-"Most likely this means that the DVI file\n"
-"is broken, or that it is not a DVI file."
-msgstr ""
-
-#: dviwin.cpp:314
-msgid ""
-"File error!\n"
-"\n"
-msgstr ""
-
-#: dviwin.cpp:315
-msgid ""
-"The file does not exist\n"
-msgstr ""
-
-#: dviwin.cpp:326
-msgid ""
-"\n"
-"\n"
-"Most likely this means that the DVI file\n"
-msgstr ""
-
-#: dviwin.cpp:328
-msgid ""
-"\n"
-"is broken, or that it is not a DVI file."
-msgstr ""
-
-#: font.cpp:45
-msgid "Can't find font "
-msgstr ""
-
-#: font.cpp:60
-msgid "The GF format for font file %1 is no longer supported"
-msgstr ""
-
-#: font.cpp:66
-#, c-format
-msgid "Cannot recognize format for font file %1"
-msgstr ""
-
-#: font.cpp:155
-msgid "Character %1 not defined in font %2"
-msgstr ""
-
-#: font.cpp:165
-#, c-format
-msgid "Font file disappeared: %1"
-msgstr ""
-
-#: kdvi_multipage.cpp:78
-msgid "&DVI Options"
-msgstr ""
-
-#: kdvi_multipage.cpp:82
-msgid "About the KDVI plugin..."
-msgstr ""
-
-#: kdvi_multipage.cpp:86
-msgid "Help on the KDVI plugin..."
-msgstr ""
-
-#: kdvi_multipage.cpp:90
-msgid "Report Bug in the KDVI plugin..."
-msgstr ""
-
-#: kdvi_multipage.cpp:137
-msgid "*.dvi|DVI files (*.dvi)"
-msgstr ""
-
-#: kdvi_multipage.cpp:227
-msgid "the KDVI plugin"
-msgstr ""
-
-#: kdvi_multipage.cpp:232
-msgid ""
-"A previewer for Device Independent files (DVI files) produced by the TeX type"
-"setting system.<br>Based on kdvi 0.4.3 and on xdvik, version 18f.<br><hr>For "
-"latest information, visit <a href=\"http://devel-home.kde.org/~kdvi\">KDVI's "
-"Homepage</a>."
-msgstr ""
-
-#: kdvi_multipage.cpp:238
-msgid "Authors"
-msgstr ""
-
-#: kdvi_multipage.cpp:239
-msgid ""
-"Markku Hinhala<br>Author of kdvi 0.4.3<hr>Stefan Kebekus<br><a href=\"http://"
-"btm8x5.mat.uni-bayreuth.de/~kebekus\">http://btm8x5.mat.uni-bayreuth.de/~kebe"
-"kus</a><br><a href=\"mailto:kebekus@kde.org\">kebekus@kde.org</a><br>Current "
-"maintainer of kdvi. Major rewrite of version 0.4.3.Implementation of hyperlin"
-"ks.<br><hr>Nicolai Langfeldt<br> Maintainer of xdvik<hr>Paul Vojta<br> Author"
-" of xdvi<br><hr>Many others. Really, lots of people who were involved in kdvi"
-", xdvik and xdvi. I apologize to those who I did not mention here. Please sen"
-"d me an email if you think your name belongs here."
-msgstr ""
-
-#: kdvi_multipage.cpp:264
-msgid "KDVI"
-msgstr "KDVI"
-
-#: optiondialog.cpp:41
-msgid "Preferences"
-msgstr "Особини"
-
-#: optiondialog.cpp:109
-msgid "Metafont mode:"
-msgstr "Metafont мод:"
-
-#: optiondialog.cpp:116
-msgid "Generate missing fonts"
-msgstr "Генерирај фонтови кои недостасуваат"
-
-#: optiondialog.cpp:125
-msgid "Rendering"
-msgstr "Прикажување"
-
-#: optiondialog.cpp:130
-msgid "Show PostScript specials"
-msgstr "Покажи postscript специјални"
-
-#: optiondialog.cpp:132
-msgid "Show Hyperlinks"
-msgstr ""
-
-#: pk.cpp:180
-msgid "Unexpected %1 in PK file %2"
-msgstr ""
-
-#: pk.cpp:244
-msgid "The character %1 is too large in file %2"
-msgstr ""
-
-#: pk.cpp:352
-msgid "Wrong number of bits stored:  char. %1, font %2"
-msgstr ""
-
-#: pk.cpp:354
-msgid "Bad pk file (%1), too many bits"
-msgstr ""
-
-#: pk.cpp:369 vf.cpp:85
-msgid "Checksum mismatch"
-msgstr ""
-
-#: pk.cpp:370
-msgid "in font file "
-msgstr ""
-
-#: pk.cpp:375
-msgid "Font has non-square aspect ratio "
-msgstr ""
-
-#: print.cpp:54
-msgid "Print "
-msgstr "Печати "
-
-#: print.cpp:113
-msgid "Invalid page range!"
-msgstr "Погрешен интервал на страни!"
-
-#: print.cpp:207 printSetup.cpp:71
-msgid "Default Printer"
-msgstr "Стандарден печатач"
-
-#: printData.cpp:32
-msgid "&File Name:"
-msgstr "Име на датотека:"
-
-#: printData.cpp:59
-msgid "&All"
-msgstr "Се"
-
-#: printData.cpp:66
-msgid "&Current"
-msgstr "Тековно"
-
-#: printData.cpp:72
-msgid "&Marked"
-msgstr "Обележано"
-
-#: printData.cpp:79
-msgid "&Range"
-msgstr "Интервал"
-
-#: printData.cpp:99
-msgid "Re&verse"
-msgstr "Преврти"
-
-#: printData.cpp:108
-msgid "1 page on sheet"
-msgstr "1 страна на лист"
-
-#: printData.cpp:109
-msgid "2 pages on sheet"
-msgstr "2 страни на лист"
-
-#: printData.cpp:110
-msgid "4 pages on sheet"
-msgstr "4 страни на лист"
-
-#: printData.cpp:116
-msgid "Fill rows"
-msgstr "Пополни редици"
-
-#: printData.cpp:117
-msgid "Fill columns"
-msgstr "Пополни колони"
-
-#: printData.cpp:129
-msgid "&Setup"
-msgstr "Подготви"
-
-#: printData.cpp:144
-msgid "Page order"
-msgstr "Редослед на страни"
-
-#: printData.cpp:152
-msgid "Pages"
-msgstr "Страни"
-
-#: printData.cpp:164
-msgid "Print to"
-msgstr "Печати до"
-
-#: printSetup.cpp:24
-msgid "Print Setup"
-msgstr "Подготви печатење"
-
-#: printSetupData.cpp:32
-msgid "Printers"
-msgstr "Печатачи"
-
-#: printSetupData.cpp:37
-msgid "Use ps&nup"
-msgstr "Користи psnup"
-
-#: printSetupData.cpp:43
-msgid "Use &mpage"
-msgstr "Користи mpage"
-
-#: printSetupData.cpp:63
-msgid "&Add"
-msgstr "Додади"
-
-#: printSetupData.cpp:91
-msgid "&Spooler command:"
-msgstr "Spooler команда:"
-
-#: printSetupData.cpp:99
-msgid "n-up"
-msgstr "n-горе"
-
-#: rc.cpp:1
-#, fuzzy
-msgid "Settings"
-msgstr "Поставки"
-
-#: special.cpp:94
-msgid "Malformed parameter in the epsf special command."
-msgstr ""
-
-#: special.cpp:198
-#, c-format
-msgid ""
-"File not found:\n"
-" %1"
-msgstr ""
-
-#: special.cpp:282
-msgid "The special command\""
-msgstr ""
-
-#: special.cpp:282
-msgid "\" is not implemented."
-msgstr ""
-
-#: util.cpp:75
+#: util.cpp:77
 msgid "Fatal Error! "
 msgstr ""
 
-#: util.cpp:78
+#: util.cpp:80
 msgid ""
 "Fatal Error!\n"
 "\n"
 msgstr ""
 
-#: util.cpp:80
+#: util.cpp:82
 msgid ""
 "\n"
 "\n"
-"This probably means that either you found bug in KDVI,\n"
+"This probably means that either you found a bug in KDVI,\n"
 "or that the DVI file, or auxiliary files (such as font files, \n"
 "or virtual font files) were really badly broken.\n"
 "KDVI will abort after this message. If you believe that you \n"
-"found a bug, or that KDVI should behave better in this situtation\n"
+"found a bug, or that KDVI should behave better in this situation\n"
 "please report the problem."
 msgstr ""
 
-#: util.cpp:103
+#: util.cpp:105
 msgid "Cannot allocate %1 bytes for %2."
 msgstr ""
 
-#: util.cpp:142
-msgid "Can't find an open pixel file to close."
-msgstr ""
-
-#: vf.cpp:86
+#: vf.cpp:87
 msgid " in font file "
 msgstr ""
 
-#: vf.cpp:114
+#: vf.cpp:101
+msgid "Could not allocate memory for a macro table."
+msgstr ""
+
+#: vf.cpp:118
 msgid "Virtual character "
 msgstr ""
 
-#: vf.cpp:114
+#: vf.cpp:118
 msgid " in font "
 msgstr ""
 
-#: vf.cpp:115
+#: vf.cpp:119
 msgid " ignored."
 msgstr ""
 
-#: vf.cpp:144
+#: vf.cpp:148
 #, c-format
 msgid "Wrong command byte found in VF macro list: %1"
 msgstr ""
+
+#~ msgid "Print "
+#~ msgstr "Печати "
+
+#~ msgid "Invalid page range!"
+#~ msgstr "Погрешен интервал на страни!"
+
+#~ msgid "Default Printer"
+#~ msgstr "Стандарден печатач"
+
+#~ msgid "&File Name:"
+#~ msgstr "Име на датотека:"
+
+#~ msgid "&All"
+#~ msgstr "Се"
+
+#~ msgid "&Current"
+#~ msgstr "Тековно"
+
+#~ msgid "&Marked"
+#~ msgstr "Обележано"
+
+#~ msgid "&Range"
+#~ msgstr "Интервал"
+
+#~ msgid "Re&verse"
+#~ msgstr "Преврти"
+
+#~ msgid "1 page on sheet"
+#~ msgstr "1 страна на лист"
+
+#~ msgid "2 pages on sheet"
+#~ msgstr "2 страни на лист"
+
+#~ msgid "4 pages on sheet"
+#~ msgstr "4 страни на лист"
+
+#~ msgid "Fill rows"
+#~ msgstr "Пополни редици"
+
+#~ msgid "Fill columns"
+#~ msgstr "Пополни колони"
+
+#~ msgid "&Setup"
+#~ msgstr "Подготви"
+
+#~ msgid "Page order"
+#~ msgstr "Редослед на страни"
+
+#~ msgid "Pages"
+#~ msgstr "Страни"
+
+#~ msgid "Print to"
+#~ msgstr "Печати до"
+
+#~ msgid "Print Setup"
+#~ msgstr "Подготви печатење"
+
+#~ msgid "Printers"
+#~ msgstr "Печатачи"
+
+#~ msgid "Use ps&nup"
+#~ msgstr "Користи psnup"
+
+#~ msgid "Use &mpage"
+#~ msgstr "Користи mpage"
+
+#~ msgid "&Add"
+#~ msgstr "Додади"
+
+#~ msgid "&Spooler command:"
+#~ msgstr "Spooler команда:"
+
+#~ msgid "n-up"
+#~ msgstr "n-горе"
+
+#, fuzzy
+#~ msgid "MetaFont"
+#~ msgstr "Metafont мод:"
 
 #~ msgid ""
 #~ "The change in font generation will be effective\n"
@@ -573,14 +872,8 @@ msgstr ""
 #~ msgid "Make PK-&fonts"
 #~ msgstr "Направи PK-фонтови"
 
-#~ msgid "Show PostSc&ript"
-#~ msgstr "Покажи postscript"
-
 #~ msgid "&Keys..."
 #~ msgstr "Копчиња..."
-
-#~ msgid "DVI Viewer"
-#~ msgstr "DVI Прегледник"
 
 #~ msgid ""
 #~ "\n"
@@ -647,9 +940,6 @@ msgstr ""
 
 #~ msgid "New window"
 #~ msgstr "Нов прозорец"
-
-#~ msgid "Open file"
-#~ msgstr "Отвори датотека"
 
 #~ msgid "Print dialog"
 #~ msgstr "Дијалог за печатење"
