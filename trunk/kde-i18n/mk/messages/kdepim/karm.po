@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: karm\n"
-"POT-Creation-Date: 2002-02-10 02:56+0100\n"
+"POT-Creation-Date: 2002-09-20 03:09+0200\n"
 "PO-Revision-Date: 2000-10-02 15:00+0100\n"
 "Last-Translator: Damjan Janevski <miopa@usa.net>\n"
 "Language-Team: Macedonian\n"
@@ -26,32 +26,34 @@ msgid ""
 msgstr ""
 
 #: adddlg.cpp:56
-msgid "Task name"
+#, fuzzy
+msgid "Task &name:"
 msgstr "Име на задача"
 
-#: adddlg.cpp:69
-msgid "Edit Absolute"
-msgstr ""
-
-#: adddlg.cpp:82
+#: adddlg.cpp:70
 #, fuzzy
-msgid "Total:"
+msgid "Edit &absolute"
+msgstr "Уреди задача"
+
+#: adddlg.cpp:83
+#, fuzzy
+msgid "&Total:"
 msgstr "Вкупно"
 
-#: adddlg.cpp:90
+#: adddlg.cpp:92
 #, fuzzy
-msgid "Session time:"
+msgid "&Session time:"
 msgstr "Ресетирај време на сесија"
 
-#: adddlg.cpp:99
-msgid "Edit Relative (Apply to both session and total)"
+#: adddlg.cpp:102
+msgid "Edit &relative (Apply to both session and total)"
 msgstr ""
 
-#: adddlg.cpp:145
+#: adddlg.cpp:148
 msgid "Enter the name of the task here. This name is for your eyes only."
 msgstr ""
 
-#: adddlg.cpp:146
+#: adddlg.cpp:149
 msgid ""
 "If you select this radio button, you specify that you want to enter the time "
 "as absolute values. For example: total for this task is 20 hours and 15 "
@@ -60,7 +62,7 @@ msgid ""
 "The time is specified for the session time and for the total time separately."
 msgstr ""
 
-#: adddlg.cpp:151
+#: adddlg.cpp:154
 msgid ""
 "If you select this radio button, you specify that you want to add or "
 "subtract time for the task. For example: I've worked 2 hours and 20 minutes "
@@ -70,15 +72,15 @@ msgid ""
 "total time."
 msgstr ""
 
-#: adddlg.cpp:157
+#: adddlg.cpp:160
 msgid "This is the overall time this task has been running."
 msgstr ""
 
-#: adddlg.cpp:158
+#: adddlg.cpp:161
 msgid "This is the time the task has been running this session."
 msgstr ""
 
-#: adddlg.cpp:159
+#: adddlg.cpp:162
 msgid "Specify how much time to add or subtract to the overall and session time"
 msgstr ""
 
@@ -116,37 +118,38 @@ msgid "Total Time"
 msgstr ""
 
 #: karm.cpp:169
+#, fuzzy
 msgid ""
 "There was an error trying to save your data file.\n"
-"Time accumulated this session will NOT be saved!\n"
+"Time accumulated during this session will not be saved!\n"
 msgstr ""
 "Имаше грешка при обидот за зачувување на "
 "вашата датотека со податоци.\n"
 "Времето акумулирано оваа сесија НЕМА да "
 "биде зачувано!\n"
 
-#: karm.cpp:278
+#: karm.cpp:286
 msgid "New Task"
 msgstr "Нова задача"
 
-#: karm.cpp:287 karm.cpp:329
+#: karm.cpp:295 karm.cpp:342
 msgid "Unnamed Task"
 msgstr ""
 
-#: karm.cpp:312
+#: karm.cpp:325
 #, fuzzy
 msgid "New Sub Task"
 msgstr "Нова задача"
 
-#: karm.cpp:323
+#: karm.cpp:336
 msgid "Edit Task"
 msgstr "Уреди задача"
 
-#: karm.cpp:366
+#: karm.cpp:379
 msgid "No task selected"
 msgstr ""
 
-#: karm.cpp:373
+#: karm.cpp:386
 #, fuzzy
 msgid ""
 "Are you sure you want to delete the task named\n"
@@ -155,11 +158,11 @@ msgstr ""
 "Сигурно ли сакате да ја избришете оваа "
 "задача?"
 
-#: karm.cpp:374 karm.cpp:380
+#: karm.cpp:387 karm.cpp:393
 msgid "Deleting Task"
 msgstr "Задачата се брише"
 
-#: karm.cpp:378
+#: karm.cpp:391
 #, fuzzy
 msgid ""
 "Are you sure you want to delete the task named\n"
@@ -185,36 +188,44 @@ msgstr ""
 msgid "Original Author"
 msgstr ""
 
-#: preferences.cpp:18
+#: preferences.cpp:19
 msgid "Preferences"
 msgstr "Параметри"
 
-#: preferences.cpp:25
+#: preferences.cpp:26
 msgid "Saving"
 msgstr ""
 
-#: preferences.cpp:28
-msgid "File to save time information to"
+#: preferences.cpp:29
+msgid "File to save time information to:"
 msgstr ""
 
-#: preferences.cpp:31
+#: preferences.cpp:32
 msgid "Automatically save tasks"
 msgstr ""
 
-#: preferences.cpp:36
-msgid "Minutes between each auto save"
+#: preferences.cpp:37
+msgid "Do time logging"
 msgstr ""
 
 #: preferences.cpp:43
+msgid "File to log the times to"
+msgstr ""
+
+#: preferences.cpp:49
+msgid "Minutes between each auto save:"
+msgstr ""
+
+#: preferences.cpp:56
 msgid "Idle Detection"
 msgstr ""
 
-#: preferences.cpp:45
+#: preferences.cpp:58
 msgid "Try to detect idleness"
 msgstr ""
 
-#: preferences.cpp:51
-msgid "Minutes before informing about idleness"
+#: preferences.cpp:64
+msgid "Minutes before informing about idleness:"
 msgstr ""
 
 #: print.cpp:45 print.cpp:81
@@ -243,45 +254,55 @@ msgstr "Часовник"
 msgid "Task"
 msgstr "Задача"
 
-#: top.cpp:48 top.cpp:114 top.cpp:131
+#: top.cpp:51 top.cpp:127 top.cpp:144
 #, c-format
 msgid "This session: %1"
 msgstr "Оваа сесија: %1"
 
-#: top.cpp:153
-msgid "&Reset Session Time"
+#: top.cpp:162
+#, fuzzy
+msgid "&Reset Session Times"
 msgstr "&Ресетирај време на сесија"
 
-#: top.cpp:159
+#: top.cpp:168
 msgid "S&top"
 msgstr "С&топ"
 
-#: top.cpp:164
-msgid "New Subtask"
+#: top.cpp:171
+msgid "New..."
+msgstr ""
+
+#: top.cpp:175
+#, fuzzy
+msgid "New Subtask..."
 msgstr "Нова подзадача"
 
-#: top.cpp:177
+#: top.cpp:182
+msgid "&Edit..."
+msgstr ""
+
+#: top.cpp:188
 msgid "Configure key bindings"
 msgstr ""
 
-#: top.cpp:178
+#: top.cpp:189
 msgid "This will let you configure keybindings which is specific to karm"
 msgstr ""
 
-#: top.cpp:180
+#: top.cpp:191
 #, fuzzy
 msgid "Reset session time"
 msgstr "&Ресетирај време на сесија"
 
-#: top.cpp:181
+#: top.cpp:192
 msgid "This will reset the session time for all tasks."
 msgstr ""
 
-#: top.cpp:183
+#: top.cpp:194
 msgid "Start timing for selected task"
 msgstr ""
 
-#: top.cpp:184
+#: top.cpp:195
 msgid ""
 "This will start timing for the selected task.\n"
 "It is even possible to time several tasks simultaneously.\n"
@@ -290,31 +311,31 @@ msgid ""
 "button on a given task. This will, however, stop timing of other tasks."
 msgstr ""
 
-#: top.cpp:189 top.cpp:190
+#: top.cpp:200 top.cpp:201
 msgid "Stop timing of the selected task"
 msgstr ""
 
-#: top.cpp:192
+#: top.cpp:203
 msgid "Create new top level task"
 msgstr ""
 
-#: top.cpp:193
+#: top.cpp:204
 msgid "This will create a new top level task."
 msgstr ""
 
-#: top.cpp:195
+#: top.cpp:206
 msgid "Delete selected task"
 msgstr ""
 
-#: top.cpp:196
+#: top.cpp:207
 msgid "This will delete the selected task and all its subtasks."
 msgstr ""
 
-#: top.cpp:198
+#: top.cpp:209
 msgid "Edit name or times for selected task"
 msgstr ""
 
-#: top.cpp:199
+#: top.cpp:210
 msgid ""
 "This will bring up a dialog box where you may edit the parameters for the "
 "selected task."
