@@ -5,71 +5,82 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2003-10-27 01:43+0100\n"
+"POT-Creation-Date: 2004-07-16 01:20+0200\n"
 "PO-Revision-Date: 2000-11-26 01:45+0100\n"
 "Last-Translator: Danko Ilik <danko@mindless.com>\n"
 "Language-Team: Macedonian\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 0.7\n"
 
-#: rc.cpp:1
-#, fuzzy
+#: rc.cpp:2
+#, fuzzy, no-c-format
 msgid "&Move"
 msgstr "Оди горе"
 
-#: rc.cpp:2
-msgid "The size of a case."
-msgstr ""
-
-#: rc.cpp:3
-msgid "The width of the playing field."
-msgstr ""
-
 #: rc.cpp:4
-msgid "The height of the playing field."
-msgstr ""
-
-#: rc.cpp:5
-msgid "The numer of mines in the playing field."
+#, no-c-format
+msgid "The size of a square."
 msgstr ""
 
 #: rc.cpp:6
-msgid "Whether the \"uncertain\" marker may be used."
-msgstr ""
-
-#: rc.cpp:7
-msgid "Whether the game can be played using the keyboard."
+#, no-c-format
+msgid "The width of the playing field."
 msgstr ""
 
 #: rc.cpp:8
-msgid "Whether the game is paused when the window loses focus."
-msgstr ""
-
-#: rc.cpp:9
-msgid "Whether to set flags and reveal cases in trivial situations."
+#, no-c-format
+msgid "The height of the playing field."
 msgstr ""
 
 #: rc.cpp:10
-msgid "The difficulty level."
-msgstr ""
-
-#: rc.cpp:11
-msgid "Mouse button actions"
+#, no-c-format
+msgid "The number of mines in the playing field."
 msgstr ""
 
 #: rc.cpp:12
-#, fuzzy
+#, no-c-format
+msgid "Whether the \"uncertain\" marker may be used."
+msgstr ""
+
+#: rc.cpp:14
+#, no-c-format
+msgid "Whether the game can be played using the keyboard."
+msgstr ""
+
+#: rc.cpp:16
+#, no-c-format
+msgid "Whether the game is paused when the window loses focus."
+msgstr ""
+
+#: rc.cpp:18
+#, no-c-format
+msgid "Whether to set flags and reveal squares in trivial situations."
+msgstr ""
+
+#: rc.cpp:20
+#, no-c-format
+msgid "The difficulty level."
+msgstr ""
+
+#: rc.cpp:22
+#, no-c-format
+msgid "Mouse button actions"
+msgstr ""
+
+#: rc.cpp:24
+#, fuzzy, no-c-format
 msgid "Color"
 msgstr "Поставки за играта"
 
-#: rc.cpp:13
-#, fuzzy
+#: rc.cpp:26
+#, fuzzy, no-c-format
 msgid "Mine Color"
 msgstr "Поставки за играта"
 
-#: rc.cpp:14
+#: rc.cpp:28
+#, no-c-format
 msgid "Whether the menubar is visible."
 msgstr ""
 
@@ -169,7 +180,7 @@ msgid "Enable keyboard"
 msgstr "Вклучи тастатура"
 
 #: dialogs.cpp:222
-msgid "Pause if windows lose focus"
+msgid "Pause if window loses focus"
 msgstr ""
 
 #: dialogs.cpp:225
@@ -178,7 +189,7 @@ msgid "\"Magic\" reveal"
 msgstr "Автоматско откривање"
 
 #: dialogs.cpp:226
-msgid "Set flags and reveal cases where they are trivial."
+msgid "Set flags and reveal squares where they are trivial."
 msgstr ""
 
 #: dialogs.cpp:233
@@ -203,16 +214,37 @@ msgstr ""
 msgid "Error color:"
 msgstr ""
 
-#: dialogs.cpp:277
-#, fuzzy
-msgid "Case size:"
-msgstr "Големина на полето"
-
-#: dialogs.cpp:293
+#: dialogs.cpp:286
 #, c-format
 msgid ""
 "_n: %n mine color:\n"
 "%n mines color:"
+msgstr ""
+
+#: field.cpp:39
+#, fuzzy
+msgid "Case revealed"
+msgstr "Автоматско откривање"
+
+#: field.cpp:40
+#, fuzzy
+msgid "Case autorevealed"
+msgstr "Автоматско откривање"
+
+#: field.cpp:41
+msgid "Flag set"
+msgstr ""
+
+#: field.cpp:42
+msgid "Flag unset"
+msgstr ""
+
+#: field.cpp:43
+msgid "Question mark set"
+msgstr ""
+
+#: field.cpp:44
+msgid "Question mark unset"
 msgstr ""
 
 #: highscores.cpp:45
@@ -224,191 +256,195 @@ msgstr ""
 msgid "anonymous"
 msgstr "Анонимен"
 
-#: main.cpp:48
+#: main.cpp:46
 #, fuzzy
 msgid "Move Up"
 msgstr "Оди горе"
 
-#: main.cpp:49
+#: main.cpp:47
 #, fuzzy
 msgid "Move Down"
 msgstr "Оди долу"
 
-#: main.cpp:50
+#: main.cpp:48
 #, fuzzy
 msgid "Move Right"
 msgstr "Оди десно"
 
-#: main.cpp:51
+#: main.cpp:49
 #, fuzzy
 msgid "Move Left"
 msgstr "Оди лево"
 
-#: main.cpp:52
+#: main.cpp:50
 #, fuzzy
 msgid "Move at Left Edge"
 msgstr "Оди лево"
 
-#: main.cpp:53
+#: main.cpp:51
 #, fuzzy
 msgid "Move at Right Edge"
 msgstr "Оди десно"
 
-#: main.cpp:54
+#: main.cpp:52
 #, fuzzy
 msgid "Move at Top Edge"
 msgstr "Оди лево"
 
-#: main.cpp:55
+#: main.cpp:53
 #, fuzzy
 msgid "Move at Bottom Edge"
 msgstr "Оди лево"
 
-#: main.cpp:56
+#: main.cpp:54
 #, fuzzy
 msgid "Reveal Mine"
 msgstr "Откри мина"
 
-#: main.cpp:57
+#: main.cpp:55
 #, fuzzy
 msgid "Mark Mine"
 msgstr "Обележи мина"
 
-#: main.cpp:58
+#: main.cpp:56
 #, fuzzy
 msgid "Automatic Reveal"
 msgstr "Автоматско откривање"
 
-#: main.cpp:110
+#: main.cpp:106
 msgid "Solving Rate..."
 msgstr ""
 
-#: main.cpp:114
+#: main.cpp:110
 msgid "View Log"
 msgstr ""
 
-#: main.cpp:117
+#: main.cpp:113
 msgid "Replay Log"
 msgstr ""
 
-#: main.cpp:120
+#: main.cpp:116
 msgid "Save Log..."
 msgstr ""
 
-#: main.cpp:123
+#: main.cpp:119
 msgid "Load Log..."
 msgstr ""
 
-#: main.cpp:187
+#: main.cpp:162
 msgid "Game"
 msgstr ""
 
-#: main.cpp:190
+#: main.cpp:165
 #, fuzzy
 msgid "Custom Game"
 msgstr "Опции за играта"
 
-#: main.cpp:216
+#: main.cpp:190
 msgid "Keyboard game"
 msgstr ""
 
-#: main.cpp:217
+#: main.cpp:191
 #, fuzzy
 msgid "General"
 msgstr "Автоматско откривање"
 
-#: main.cpp:239
+#: main.cpp:235
 #, fuzzy
-msgid "KMines is a classic mine sweeper game."
+msgid "KMines is a classic mine sweeper game"
 msgstr "KMines е класична игра на минско поле"
 
-#: main.cpp:245
+#: main.cpp:241
 msgid "KMines"
 msgstr "KMines"
 
-#: main.cpp:249
+#: main.cpp:245
 msgid "Smiley pixmaps"
 msgstr ""
 
-#: main.cpp:250
+#: main.cpp:246
 msgid "Solver/Adviser"
 msgstr ""
 
-#: main.cpp:251
+#: main.cpp:247
 #, fuzzy
 msgid "Magic reveal mode"
 msgstr "Автоматско откривање"
 
-#: status.cpp:69
+#: status.cpp:68
 msgid ""
 "<qt>Mines left."
 "<br/>It turns <font color=\"red\">red</font> when you have flagged more "
 "cases than present mines.</qt>"
 msgstr ""
 
-#: status.cpp:79
+#: status.cpp:78
 msgid "Press to start a new game"
 msgstr "Притиснете за нова игра"
 
-#: status.cpp:84
+#: status.cpp:83
 msgid ""
 "<qt>Time elapsed."
 "<br/>It turns <font color=\"blue\">blue</font> if it is a highscore and "
 "<font color=\"red\">red</font> if it is the best time.</qt>"
 msgstr ""
 
-#: status.cpp:104
+#: status.cpp:103
 #, fuzzy
 msgid "Mines field."
 msgstr "Минско поле"
 
-#: status.cpp:112
+#: status.cpp:111
 #, fuzzy
 msgid "Press to Resume"
 msgstr "Притиснете за да продолжите"
 
-#: status.cpp:202
+#: status.cpp:190
+msgid "Explosion!"
+msgstr ""
+
+#: status.cpp:203
 #, fuzzy
 msgid "Game won!"
 msgstr "Играта е паузирана"
 
-#: status.cpp:202
+#: status.cpp:203
 #, fuzzy
 msgid "Game lost!"
 msgstr "Статус"
 
-#: status.cpp:295
+#: status.cpp:297
 msgid ""
 "When the solver gives you advice, your score will not be added to the "
 "highscores."
 msgstr ""
 
-#: status.cpp:326
+#: status.cpp:327
 msgid "View Game Log"
 msgstr ""
 
-#: status.cpp:343
+#: status.cpp:344
 msgid "Overwrite"
 msgstr ""
 
-#: status.cpp:345
+#: status.cpp:346
 msgid "The file already exists. Overwrite?"
 msgstr ""
 
-#: status.cpp:346
+#: status.cpp:347
 msgid "File Exists"
 msgstr ""
 
-#: status.cpp:369
+#: status.cpp:370
 #, c-format
 msgid "Cannot read XML file on line %1"
 msgstr ""
 
-#: status.cpp:379
+#: status.cpp:380
 msgid "Cannot load file."
 msgstr ""
 
-#: status.cpp:384
+#: status.cpp:385
 msgid "Log file not recognized."
 msgstr ""
 
@@ -416,32 +452,36 @@ msgstr ""
 msgid "Compute Solving Rate"
 msgstr ""
 
-#: solver/solver.cpp:196
+#: solver/solver.cpp:197
 msgid "Start"
 msgstr ""
 
-#: solver/solver.cpp:199
+#: solver/solver.cpp:201
 #, fuzzy, c-format
 msgid "Width: %1"
 msgstr "Ширина"
 
-#: solver/solver.cpp:202
+#: solver/solver.cpp:204
 #, fuzzy, c-format
 msgid "Height: %1"
 msgstr "Висина"
 
-#: solver/solver.cpp:204
+#: solver/solver.cpp:206
 #, fuzzy
 msgid "Mines: %1 (%2%)"
 msgstr "Мини"
 
-#: solver/solver.cpp:216
+#: solver/solver.cpp:218
 msgid "Success rate:"
 msgstr ""
 
-#: solver/solver.cpp:243
+#: solver/solver.cpp:245
 msgid "Success rate: %1%"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Square size:"
+#~ msgstr "Големина на полето"
 
 #, fuzzy
 #~ msgid "Configure Highscores..."
