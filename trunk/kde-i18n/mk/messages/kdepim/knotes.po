@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: knotes\n"
-"POT-Creation-Date: 2004-12-11 01:22+0100\n"
+"POT-Creation-Date: 2005-02-03 01:23+0100\n"
 "PO-Revision-Date: 2000-11-24 17:54+0100\n"
 "Last-Translator: Danko Ilik <danko@mindless.com>\n"
 "Language-Team: Macedonian\n"
@@ -26,92 +26,121 @@ msgid ""
 "Your emails"
 msgstr ""
 
-#: knote.cpp:103
+#: knote.cpp:105
 msgid "New"
 msgstr ""
 
-#: knote.cpp:105
+#: knote.cpp:107
 #, fuzzy
 msgid "Rename..."
 msgstr "Преименувај"
 
-#: knote.cpp:107
+#: knote.cpp:109
+msgid "Lock"
+msgstr ""
+
+#: knote.cpp:111
 msgid "Hide"
 msgstr ""
 
-#: knote.cpp:112
+#: knote.cpp:116
 msgid "Insert Date"
 msgstr "Вметни датум"
 
-#: knote.cpp:114
+#: knote.cpp:118
+#, fuzzy
+msgid "Set Alarm..."
+msgstr "Боја на текст"
+
+#: knote.cpp:121
 #, fuzzy
 msgid "Send..."
 msgstr "Преименувај"
 
-#: knote.cpp:116
+#: knote.cpp:123
 #, fuzzy
 msgid "Mail..."
 msgstr "&Прати"
 
-#: knote.cpp:121
+#: knote.cpp:128
 msgid "Preferences..."
 msgstr "Параметри..."
 
-#: knote.cpp:124
+#: knote.cpp:131
 msgid "Keep Above Others"
 msgstr ""
 
-#: knote.cpp:128
+#: knote.cpp:135
 msgid "Keep Below Others"
 msgstr ""
 
-#: knote.cpp:132
+#: knote.cpp:139
 msgid "To Desktop"
 msgstr "На работна површина"
 
-#: knote.cpp:137
+#: knote.cpp:144
 msgid "Walk Through Notes"
 msgstr ""
 
-#: knote.cpp:322
+#: knote.cpp:333
 msgid "<qt>Do you really want to delete note <b>%1</b>?</qt>"
 msgstr ""
 
-#: knote.cpp:324
+#: knote.cpp:335
 msgid "Confirm Delete"
 msgstr ""
 
-#: knote.cpp:470
+#: knote.cpp:558
 #, fuzzy
 msgid "Please enter the new name:"
 msgstr "Внесете го новото име"
 
-#: knote.cpp:511
+#: knote.cpp:627
 #, fuzzy
 msgid "Send \"%1\""
 msgstr "Избриши забелешка"
 
-#: knote.cpp:520
+#: knote.cpp:636
 msgid "The host cannot be empty."
 msgstr ""
 
-#: knote.cpp:555
+#: knote.cpp:665
 msgid "Unable to start the mail process."
 msgstr ""
 
-#: knote.cpp:565
+#: knote.cpp:675
 #, c-format
 msgid "Print %1"
 msgstr ""
 
-#: knote.cpp:627
+#: knote.cpp:736
 msgid "Save note as plain text"
 msgstr ""
 
-#: knote.cpp:722
+#: knote.cpp:831
 #, fuzzy
 msgid "&All Desktops"
 msgstr "Сите работини површини"
+
+#: knotealarmdlg.cpp:52
+msgid "Scheduled Alarm"
+msgstr ""
+
+#: knotealarmdlg.cpp:56
+msgid "&No alarm"
+msgstr ""
+
+#: knotealarmdlg.cpp:60
+msgid "Alarm &at:"
+msgstr ""
+
+#: knotealarmdlg.cpp:67
+msgid "Alarm &in:"
+msgstr ""
+
+#: knotealarmdlg.cpp:70
+msgid "hours/minutes"
+msgstr ""
 
 #: knoteconfigdlg.cpp:56
 msgid "Display"
@@ -298,42 +327,50 @@ msgstr ""
 msgid "Hostname or IP address:"
 msgstr "Внесете го новото име"
 
-#: knotesapp.cpp:58
+#: knotesalarm.cpp:70
+msgid "The following notes triggered alarms:"
+msgstr ""
+
+#: knotesalarm.cpp:70
+msgid "Alarm"
+msgstr ""
+
+#: knotesapp.cpp:61
 msgid "Configure Shortcuts"
 msgstr ""
 
-#: knotesapp.cpp:67
+#: knotesapp.cpp:70
 #, fuzzy
 msgid "Note Actions"
 msgstr "Дејства"
 
-#: knotesapp.cpp:100
+#: knotesapp.cpp:103
 msgid "KNotes: Sticky notes for KDE"
 msgstr ""
 
-#: knotesapp.cpp:105 knotesapp.cpp:134
+#: knotesapp.cpp:108 knotesapp.cpp:145
 msgid "New Note"
 msgstr "Нова забелешка"
 
-#: knotesapp.cpp:107 knotesapp.cpp:137
+#: knotesapp.cpp:110 knotesapp.cpp:148
 msgid "New Note From Clipboard"
 msgstr ""
 
-#: knotesapp.cpp:109 knotesapp.cpp:143
+#: knotesapp.cpp:112 knotesapp.cpp:154
 #, fuzzy
 msgid "Show All Notes"
 msgstr "Notes"
 
-#: knotesapp.cpp:111 knotesapp.cpp:140
+#: knotesapp.cpp:114 knotesapp.cpp:151
 msgid "Hide All Notes"
 msgstr ""
 
-#: knotesapp.cpp:422
+#: knotesapp.cpp:476
 #, fuzzy
 msgid "Settings"
 msgstr "Поставки на дејства"
 
-#: knotesapp.cpp:559
+#: knotesapp.cpp:614
 #, fuzzy
 msgid "No Notes"
 msgstr "Notes"
@@ -344,7 +381,7 @@ msgid "Communication error: %1"
 msgstr ""
 
 #. i18n: file knotesappui.rc line 5
-#: main.cpp:95 rc.cpp:3
+#: main.cpp:95 rc.cpp:3 rc.cpp:6
 #, no-c-format
 msgid "KNotes"
 msgstr "KNotes"
@@ -378,14 +415,14 @@ msgstr ""
 msgid "Started KDE Resource Framework Integration"
 msgstr ""
 
-#. i18n: file knotesappui.rc line 28
-#: rc.cpp:9 rc.cpp:12
+#. i18n: file knotesappui.rc line 30
+#: rc.cpp:12 rc.cpp:15
 #, no-c-format
 msgid "Notes"
 msgstr "Notes"
 
-#. i18n: file knotesglobalconfig.kcfg line 18
-#: rc.cpp:15
+#. i18n: file knotesglobalconfig.kcfg line 26
+#: rc.cpp:18
 #, no-c-format
 msgid "The port KNotes will listen on and send notes to."
 msgstr ""

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kmix\n"
-"POT-Creation-Date: 2005-01-02 01:25+0100\n"
+"POT-Creation-Date: 2005-02-03 01:22+0100\n"
 "PO-Revision-Date: 2000-04-20 19:32+0100\n"
 "Last-Translator: Dragan Bocevski <d_bocevski@hotpop.com>\n"
 "Language-Team: Macedonian <mkdeteam@yahoo.com>\n"
@@ -34,8 +34,8 @@ msgstr "Мутирај"
 msgid "Hardware &Information"
 msgstr ""
 
-#: kmix.cpp:120
-msgid "Hide"
+#: kmix.cpp:120 kmixdockwidget.cpp:271
+msgid "Hide Mixer Window"
 msgstr ""
 
 #: kmix.cpp:151
@@ -48,7 +48,12 @@ msgstr "Тековен број на поставки"
 msgid "Current mixer"
 msgstr "Тековен број на поставки"
 
-#: kmix.cpp:533
+#: kmix.cpp:203
+#, fuzzy
+msgid "Select Channel"
+msgstr "Канали"
+
+#: kmix.cpp:540
 msgid "Mixer Hardware Information"
 msgstr ""
 
@@ -119,10 +124,6 @@ msgstr ""
 #, fuzzy
 msgid " (Muted)"
 msgstr "Мутирај"
-
-#: kmixdockwidget.cpp:271
-msgid "Hide Mixer Window"
-msgstr ""
 
 #: kmixdockwidget.cpp:275
 msgid "Show Mixer Window"
@@ -243,14 +244,22 @@ msgstr ""
 msgid "Mute and volume preview, other fixes"
 msgstr ""
 
+#: mdwenum.cpp:56 mdwslider.cpp:69 mdwswitch.cpp:57
+msgid "&Hide"
+msgstr ""
+
+#: mdwenum.cpp:57 mdwslider.cpp:79 mdwswitch.cpp:58
+msgid "C&onfigure Shortcuts..."
+msgstr ""
+
+#: mdwenum.cpp:63
+msgid "Next Value"
+msgstr ""
+
 #: mdwslider.cpp:67
 #, fuzzy
 msgid "&Split Channels"
 msgstr "Канали"
-
-#: mdwslider.cpp:69 mdwswitch.cpp:57
-msgid "&Hide"
-msgstr ""
 
 #: mdwslider.cpp:71
 #, fuzzy
@@ -261,10 +270,6 @@ msgstr "Мутирај"
 #, fuzzy
 msgid "Set &Record Source"
 msgstr "Извор на снимање"
-
-#: mdwslider.cpp:79 mdwswitch.cpp:58
-msgid "C&onfigure Shortcuts..."
-msgstr ""
 
 #: mdwslider.cpp:84
 msgid "Increase Volume"
@@ -283,6 +288,11 @@ msgstr ""
 msgid "Mute"
 msgstr "Мутирај"
 
+#: mdwslider.cpp:309
+#, fuzzy
+msgid "Record"
+msgstr "Снимање"
+
 #: mdwswitch.cpp:63
 msgid "Toggle Switch"
 msgstr ""
@@ -291,7 +301,7 @@ msgstr ""
 msgid "unknown"
 msgstr "непознато"
 
-#: mixer.cpp:366
+#: mixer.cpp:372
 #, fuzzy
 msgid ""
 "kmix:You do not have permission to access the mixer device.\n"
@@ -303,21 +313,21 @@ msgstr ""
 "оперативен систем за овозможување "
 "пристап."
 
-#: mixer.cpp:370
+#: mixer.cpp:376
 msgid "kmix: Could not write to mixer."
 msgstr "kmix: Не може да се пишува во миксерот."
 
-#: mixer.cpp:373
+#: mixer.cpp:379
 msgid "kmix: Could not read from mixer."
 msgstr "kmix: Не може да се чита од миксерот."
 
-#: mixer.cpp:376
+#: mixer.cpp:382
 msgid "kmix: Your mixer does not control any devices."
 msgstr ""
 "kmix: Вашиот миксер не контролира ниеден "
 "уред"
 
-#: mixer.cpp:379
+#: mixer.cpp:385
 msgid ""
 "kmix: Mixer does not support your platform. See mixer.cpp for porting hints "
 "(PORTING)."
@@ -326,11 +336,11 @@ msgstr ""
 "платформа. Погледнете го mixer.cpp за некои "
 "детали околу пренесувањето (PORTING)."
 
-#: mixer.cpp:382
+#: mixer.cpp:388
 msgid "kmix: Not enough memory."
 msgstr "kmix: Недоволно меморија"
 
-#: mixer.cpp:388
+#: mixer.cpp:394
 #, fuzzy
 msgid ""
 "kmix: Mixer cannot be found.\n"
@@ -342,7 +352,7 @@ msgstr ""
 "инсталирана\n"
 "и вчитан е драјверот за звук\n"
 
-#: mixer.cpp:393
+#: mixer.cpp:399
 msgid ""
 "kmix: Initial set is incompatible.\n"
 "Using a default set.\n"
@@ -351,14 +361,14 @@ msgstr ""
 "некомпатибилни.\n"
 "Се користат стандардните.\n"
 
-#: mixer.cpp:397
+#: mixer.cpp:403
 #, fuzzy
 msgid "kmix: Unknown error. Please report how you produced this error."
 msgstr ""
 "kmix: Непозната грешка. Ве молиме пријавете "
 "како ја создадовте."
 
-#: mixer_alsa9.cpp:609
+#: mixer_alsa9.cpp:707
 #, fuzzy
 msgid ""
 "You do not have permission to access the alsa mixer device.\n"
@@ -370,7 +380,7 @@ msgstr ""
 "оперативен систем за овозможување "
 "пристап."
 
-#: mixer_alsa9.cpp:613
+#: mixer_alsa9.cpp:711
 #, fuzzy
 msgid ""
 "Alsa mixer cannot be found.\n"
@@ -632,7 +642,7 @@ msgstr "Канали"
 msgid "Device Settings"
 msgstr "Поставки при стартирање"
 
-#: viewdockareapopup.cpp:121
+#: viewdockareapopup.cpp:124
 #, fuzzy
 msgid "Mixer"
 msgstr "Име на миксерот"
@@ -640,9 +650,6 @@ msgstr "Име на миксерот"
 #, fuzzy
 #~ msgid "Show &All"
 #~ msgstr "Покажи"
-
-#~ msgid "Recording"
-#~ msgstr "Снимање"
 
 #, fuzzy
 #~ msgid "&Show All"
