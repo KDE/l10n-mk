@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdat\n"
-"POT-Creation-Date: 2002-02-16 02:36+0100\n"
+"POT-Creation-Date: 2002-09-18 03:05+0200\n"
 "PO-Revision-Date: 2000-11-26 01:43+0100\n"
 "Last-Translator: Danko Ilik <danko@mindless.com>\n"
 "Language-Team: Macedonian\n"
@@ -77,12 +77,13 @@ msgstr "0"
 msgid "Backup log:"
 msgstr "Запис на резервната копија:"
 
-#: BackupDlg.cpp:135 IndexDlg.cpp:114 VerifyDlg.cpp:143
+#: BackupDlg.cpp:135 IndexDlg.cpp:114
 msgid "Save Log..."
 msgstr "Запис на зачувувањето..."
 
-#: BackupDlg.cpp:140 IndexDlg.cpp:119 VerifyDlg.cpp:148
-msgid "Abort"
+#: BackupDlg.cpp:140 VerifyDlg.cpp:148
+#, fuzzy
+msgid "&Abort"
 msgstr "Прекини"
 
 #: BackupDlg.cpp:276
@@ -119,7 +120,7 @@ msgstr "Датотеки >>"
 msgid "<< Files"
 msgstr "<< Dатотеки"
 
-#: BackupProfileWidget.cpp:40 KDat.cpp:162 KDat.cpp:487
+#: BackupProfileWidget.cpp:40 KDat.cpp:162 KDat.cpp:496
 msgid "Backup"
 msgstr "Сигурносна копија"
 
@@ -230,6 +231,10 @@ msgstr "Вкупно датотеки:"
 msgid "Index log:"
 msgstr "Запис на индекси:"
 
+#: IndexDlg.cpp:119
+msgid "Abort"
+msgstr "Прекини"
+
 #: IndexDlg.cpp:232
 msgid "Rewinding tape."
 msgstr "Премотувам касета."
@@ -272,11 +277,11 @@ msgstr "Архива %d"
 msgid "Reindexed Tape"
 msgstr "Реиндексирана касета"
 
-#: KDat.cpp:94 KDat.cpp:95 KDat.cpp:1234
+#: KDat.cpp:94 KDat.cpp:95 KDat.cpp:1243
 msgid "KDat: <no tape>"
 msgstr "KDat: <без касета>"
 
-#: KDat.cpp:99 KDat.cpp:135 KDat.cpp:246 KDat.cpp:1288
+#: KDat.cpp:99 KDat.cpp:135 KDat.cpp:255 KDat.cpp:1297
 msgid "Mount Tape"
 msgstr "Монтирај касета"
 
@@ -288,7 +293,7 @@ msgstr "Повторно создади го индексот на касета�
 msgid "Format Tape..."
 msgstr "Форматирај касета..."
 
-#: KDat.cpp:105 KDat.cpp:111 KDat.cpp:139 KDat.cpp:776 KDat.cpp:790
+#: KDat.cpp:105 KDat.cpp:111 KDat.cpp:139 KDat.cpp:785 KDat.cpp:799
 msgid "Delete Archive"
 msgstr "Избриши архива"
 
@@ -304,7 +309,7 @@ msgstr "Врати..."
 msgid "Backup..."
 msgstr "Сигурносна копија..."
 
-#: KDat.cpp:121 KDat.cpp:824
+#: KDat.cpp:121 KDat.cpp:833
 msgid "Delete Tape Index"
 msgstr "Избриши го индексот на касетата"
 
@@ -312,7 +317,7 @@ msgstr "Избриши го индексот на касетата"
 msgid "Create Backup Profile"
 msgstr "Создади профил на сигурносната копија"
 
-#: KDat.cpp:129 KDat.cpp:141
+#: KDat.cpp:129 KDat.cpp:141 KDat.cpp:955
 msgid "Delete Backup Profile"
 msgstr "Избриши сигурносна копија"
 
@@ -354,18 +359,18 @@ msgstr "Потврди"
 msgid "Ready."
 msgstr "Подготвено."
 
-#: KDat.cpp:243 KDat.cpp:1285
+#: KDat.cpp:252 KDat.cpp:1294
 msgid "Unmount Tape"
 msgstr "Одмонтирај касета"
 
-#: KDat.cpp:414
+#: KDat.cpp:423
 msgid ""
 "KDat will dump your files properly to tape, but may not be able\n"
 "to restore them. To restore your files by hand, you need to know\n"
 "the name of the *non-rewinding* version of your tape device %1.\n"
 msgstr ""
 
-#: KDat.cpp:418
+#: KDat.cpp:427
 msgid ""
 "For example, if your device is /dev/st0, the non-rewinding version\n"
 "is /dev/nst0. If your device name doesn't look like that, type\n"
@@ -379,20 +384,20 @@ msgid ""
 " - KDat Maintenance Team\n"
 msgstr ""
 
-#: KDat.cpp:444
+#: KDat.cpp:453
 #, c-format
 msgid "Archive created on %1"
 msgstr "Архива создадена на %1"
 
-#: KDat.cpp:462
+#: KDat.cpp:471
 msgid "Performing backup..."
 msgstr "Создавам сигурносна копија..."
 
-#: KDat.cpp:467 KDat.cpp:489
+#: KDat.cpp:476 KDat.cpp:498
 msgid "Backup canceled."
 msgstr "Копирањето е откажана."
 
-#: KDat.cpp:481
+#: KDat.cpp:490
 #, fuzzy
 msgid ""
 "WARNING: The estimated archive size is %1 KB but the tape has only %2 KB of "
@@ -405,11 +410,11 @@ msgstr ""
 "\n"
 "Да продолжам?"
 
-#: KDat.cpp:496 TapeDrive.cpp:525 TapeDrive.cpp:546
+#: KDat.cpp:505 TapeDrive.cpp:525 TapeDrive.cpp:546
 msgid "Rewinding tape..."
 msgstr "Премотувам касета..."
 
-#: KDat.cpp:499
+#: KDat.cpp:508
 #, fuzzy
 msgid ""
 "Cannot rewind tape.\n"
@@ -418,20 +423,20 @@ msgstr ""
 "Неможам да премотам касета. Копирањето е "
 "прекинато."
 
-#: KDat.cpp:500 KDat.cpp:511
+#: KDat.cpp:509 KDat.cpp:520
 #, fuzzy
 msgid "Backup Error"
 msgstr "Запис на резервната копија:"
 
-#: KDat.cpp:501 KDat.cpp:512 KDat.cpp:532
+#: KDat.cpp:510 KDat.cpp:521 KDat.cpp:541
 msgid "Backup aborted."
 msgstr "Копирањето е прекинато."
 
-#: KDat.cpp:507
+#: KDat.cpp:516
 msgid "Skipping to end of tape..."
 msgstr "Прескокнувам на крајот на касетата..."
 
-#: KDat.cpp:510
+#: KDat.cpp:519
 #, fuzzy
 msgid ""
 "Cannot get to end of tape.\n"
@@ -440,39 +445,39 @@ msgstr ""
 "Неможам да премотам касета. Копирањето е "
 "прекинато."
 
-#: KDat.cpp:516
+#: KDat.cpp:525
 msgid "Backup in progress..."
 msgstr "Копирањам..."
 
-#: KDat.cpp:530
+#: KDat.cpp:539
 msgid "Backup complete."
 msgstr "Копирањето е завршено"
 
-#: KDat.cpp:662
+#: KDat.cpp:671
 msgid "Restore in progress..."
 msgstr "Враќам..."
 
-#: KDat.cpp:664
+#: KDat.cpp:673
 msgid "Verify in progress..."
 msgstr "Потврдувам..."
 
-#: KDat.cpp:671
+#: KDat.cpp:680
 msgid "Restore complete."
 msgstr "Враќањето е завршено"
 
-#: KDat.cpp:673
+#: KDat.cpp:682
 msgid "Verify complete."
 msgstr "Потврдувањето е завршено"
 
-#: KDat.cpp:677
+#: KDat.cpp:686
 msgid "Restore aborted."
 msgstr "Враќањето е прекинато."
 
-#: KDat.cpp:679
+#: KDat.cpp:688
 msgid "Verify aborted."
 msgstr "Потврдувањето е прекинато."
 
-#: KDat.cpp:690 KDat.cpp:840
+#: KDat.cpp:699 KDat.cpp:849
 msgid ""
 "There appears to be no tape in the drive %1. Please\n"
 "check \"Edit->Preferences\" to make sure the\n"
@@ -481,44 +486,44 @@ msgid ""
 "until it stops and then try mounting it again."
 msgstr ""
 
-#: KDat.cpp:718
+#: KDat.cpp:727
 #, fuzzy
 msgid "The current tape index will be overwritten, continue?"
 msgstr ""
 "Постоечкиот индекс ќе биде изгубен, "
 "продолжи?"
 
-#: KDat.cpp:719
+#: KDat.cpp:728
 #, fuzzy
 msgid "Index Tape"
 msgstr "KDat: Индексирај касета"
 
-#: KDat.cpp:719
+#: KDat.cpp:728
 #, fuzzy
 msgid "Overwrite"
 msgstr "Да - Запиши врз"
 
-#: KDat.cpp:725 KDat.cpp:1230
+#: KDat.cpp:734 KDat.cpp:1239
 #, c-format
 msgid "KDat: %1"
 msgstr "KDat: %1"
 
-#: KDat.cpp:729
+#: KDat.cpp:738
 msgid "Index complete."
 msgstr "Индексирањето е завршено."
 
-#: KDat.cpp:731
+#: KDat.cpp:740
 msgid "Index aborted."
 msgstr "Индексирањето е прекинато."
 
-#: KDat.cpp:740
+#: KDat.cpp:749
 msgid ""
 "No archive is selected.\n"
 "In order to delete an archive, the archive to be deleted must be selected in "
 "the tree first."
 msgstr ""
 
-#: KDat.cpp:774
+#: KDat.cpp:783
 #, fuzzy
 msgid ""
 "An archive cannot be removed from the middle of the tape. If\n"
@@ -537,31 +542,26 @@ msgstr ""
 "\n"
 " Да ги избришам наведените архиви?"
 
-#: KDat.cpp:776
-#, fuzzy
-msgid "Delete All"
-msgstr "Избриши архива"
-
-#: KDat.cpp:779
+#: KDat.cpp:788
 msgid "Archives deleted."
 msgstr "Архивите се избришани."
 
-#: KDat.cpp:788
+#: KDat.cpp:797
 msgid "Really delete the archive '%1'?"
 msgstr "Да ја избришам архивата '%1'?"
 
-#: KDat.cpp:793
+#: KDat.cpp:802
 msgid "Archive deleted."
 msgstr "Архивата е избришана"
 
-#: KDat.cpp:806
+#: KDat.cpp:815
 msgid ""
 "No tape index is selected.\n"
 "In order to delete a tape index, the tape index to be deleted must be "
 "selected in the tree first."
 msgstr ""
 
-#: KDat.cpp:815
+#: KDat.cpp:824
 #, fuzzy
 msgid ""
 "Tape is still mounted. The index for a mounted tape cannot be deleted.\n"
@@ -573,15 +573,15 @@ msgstr ""
 "Одмонтирајте ја касетата и обидете се "
 "повторно."
 
-#: KDat.cpp:822
+#: KDat.cpp:831
 msgid "Really delete the index for '%1'?"
 msgstr "Да го избришам индексот за '%1'?"
 
-#: KDat.cpp:827
+#: KDat.cpp:836
 msgid "Tape index deleted."
 msgstr "Касетниот индекс е избришан"
 
-#: KDat.cpp:853
+#: KDat.cpp:862
 msgid ""
 "The tape in the drive is write protected.\n"
 "Please disable write protection and try again."
@@ -591,79 +591,74 @@ msgstr ""
 "Отстранете ја заштитата и обидете се "
 "повторно."
 
-#: KDat.cpp:858
+#: KDat.cpp:867
 msgid ""
 "All data currently on the tape will be lost.\n"
 "Are you sure you want to continue?"
 msgstr ""
 
-#: KDat.cpp:860
+#: KDat.cpp:869
 msgid "Format Tape"
 msgstr "Formatiraj kaseta"
 
-#: KDat.cpp:860
+#: KDat.cpp:869
 #, fuzzy
 msgid "Format"
 msgstr "Formatiraj kaseta"
 
-#: KDat.cpp:863
+#: KDat.cpp:872
 #, c-format
 msgid "Tape created on %1"
 msgstr "Касета креирана на %1"
 
-#: KDat.cpp:879
+#: KDat.cpp:888
 msgid "Formatting tape..."
 msgstr "Форматирам касета..."
 
-#: KDat.cpp:882
+#: KDat.cpp:891
 msgid "Format complete."
 msgstr "Форматирањето е завршено."
 
-#: KDat.cpp:896
+#: KDat.cpp:905
 #, fuzzy, c-format
 msgid "Backup Profile %1"
 msgstr "Профил на сигурносната копија %d"
 
-#: KDat.cpp:914
+#: KDat.cpp:923
 msgid "Archive"
 msgstr "Архива"
 
-#: KDat.cpp:935
+#: KDat.cpp:944
 msgid ""
 "In order to delete a backup profile, the backup profile to be deleted must "
 "be selected in the tree first."
 msgstr ""
 
-#: KDat.cpp:944
+#: KDat.cpp:953
 msgid "Really delete backup profile '%1'?"
 msgstr ""
 "Да го избришам профилот на сигурносната "
 "копија '%1'"
 
-#: KDat.cpp:946
-#, fuzzy
-msgid "Delete backup profile"
-msgstr "Избриши сигурносна копија"
-
-#: KDat.cpp:949
+#: KDat.cpp:958
 msgid "Backup profile deleted."
 msgstr ""
 "Профилот на сигурносната копија е "
 "избришан."
 
-#: KDat.cpp:987
+#: KDat.cpp:996
 msgid "Tape unmounted."
 msgstr "Касетата е одмонтирана."
 
-#: KDat.cpp:991
+#: KDat.cpp:1000
 msgid "Reading tape header..."
 msgstr "Читам заглавје на касета..."
 
-#: KDat.cpp:998
+#: KDat.cpp:1007
 msgid "This tape has not been formatted by KDat."
 msgstr "Оваа касета не е форматирана во KDat."
 
-#: KDat.cpp:1001
+#: KDat.cpp:1010
 msgid ""
 "This tape has not been formatted by KDat.\n"
 "\n"
@@ -672,21 +667,21 @@ msgstr ""
 "Оваа касета не е форматирана во KDat.\n"
 "Дали сакате да ја форматирате?"
 
-#: KDat.cpp:1013
+#: KDat.cpp:1022
 msgid "Tape mounted."
 msgstr "Касетата е монтирана."
 
-#: KDat.cpp:1100
+#: KDat.cpp:1109
 msgid "Estimating backup size: %1, %2"
 msgstr ""
 "Предвидена големина на сигурносната "
 "датотека: %1, %2"
 
-#: KDat.cpp:1235
+#: KDat.cpp:1244
 msgid "KDat: <no tape >"
 msgstr "KDat: <нема касета>"
 
-#: KDat.cpp:1325
+#: KDat.cpp:1334
 msgid ""
 "Click \"CANCEL\" to stop the backup process.\n"
 "For example, you may quickly see that the size of\n"
@@ -698,15 +693,15 @@ msgid ""
 "continuing the backup."
 msgstr ""
 
-#: KDat.cpp:1332
+#: KDat.cpp:1341
 #, fuzzy
 msgid "Stop estimating backup size"
 msgstr ""
 "Предвидена големина на сигурносната "
 "датотека: %1, %2"
 
-#: KDat.cpp:1345
-msgid "CANCEL"
+#: KDat.cpp:1363
+msgid "C&ontinue"
 msgstr ""
 
 #: LoggerWidget.cpp:63
@@ -764,7 +759,8 @@ msgid "..."
 msgstr "..."
 
 #: OptionsDlg.cpp:107
-msgid "Tape drive options"
+#, fuzzy
+msgid "Tape Drive Options"
 msgstr "Опции на касетниот уред"
 
 #: OptionsDlg.cpp:113
@@ -783,12 +779,12 @@ msgstr "Исфрли ја касетата на одмонтирање"
 msgid "Variable block size"
 msgstr "Променлива големина на блок"
 
-#: OptionsDlg.cpp:186
+#: OptionsDlg.cpp:183
 #, fuzzy
 msgid "Only local files are supported"
 msgstr "Поддржани се само локални датотеки"
 
-#: OptionsDlg.cpp:203
+#: OptionsDlg.cpp:200
 #, fuzzy
 msgid "Only local files are currently supported"
 msgstr "Поддржани се само локални датотеки"
@@ -1087,6 +1083,11 @@ msgstr "Враќањето е прекинато."
 msgid "Verify log:"
 msgstr "Потврди"
 
+#: VerifyDlg.cpp:143
+#, fuzzy
+msgid "&Save Log..."
+msgstr "Запис на зачувувањето..."
+
 #: VerifyDlg.cpp:343
 msgid ""
 "failed while reading tape data.\n"
@@ -1146,6 +1147,18 @@ msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Delete Backup Profile..."
+#~ msgstr "Избриши сигурносна копија"
+
+#, fuzzy
+#~ msgid "Delete backup profile"
+#~ msgstr "Избриши сигурносна копија"
+
+#, fuzzy
+#~ msgid "Delete All"
+#~ msgstr "Избриши архива"
 
 #~ msgid ""
 #~ "There is no tape in the tape drive.\n"
