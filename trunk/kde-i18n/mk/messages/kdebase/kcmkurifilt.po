@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkurifilt\n"
-"POT-Creation-Date: 2002-11-20 02:45+0100\n"
+"POT-Creation-Date: 2004-01-08 01:23+0100\n"
 "PO-Revision-Date: 2000-11-26 01:24+0100\n"
 "Last-Translator: Danko Ilik <danko@mindless.com>\n"
 "Language-Team: Macedonian\n"
@@ -14,15 +14,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 0.7\n"
 
-#: filteropts.cpp:48
-msgid "Under Construction..."
+#: filteropts.cpp:39
+#, fuzzy
+msgid "Under construction..."
 msgstr "Во развој..."
 
-#: main.cpp:59
+#: main.cpp:52
 msgid "&Filters"
 msgstr "Филтери"
 
-#: main.cpp:118
+#: main.cpp:111
 #, fuzzy
 msgid ""
 "<h1>Enhanced Browsing</h1> In this module you can configure some enhanced "
@@ -52,192 +53,268 @@ msgstr ""
 "внесете го вашето барање во КДЕ дијалогот "
 "за извршување наредба."
 
-#: plugins/ikws/ikwsopts.cpp:124
+#: rc.cpp:1
 #, fuzzy
-msgid "Enable &Web shortcuts"
+msgid "&Enable Web shortcuts"
 msgstr "URI кратенки:"
 
-#: plugins/ikws/ikwsopts.cpp:126
+#: rc.cpp:2
 msgid ""
-"If this box is checked, KDE will let you use the shortcuts defined below to "
-"quickly search the Internet. For example, typing the words "
-"<em>shortcut</em>:<em>KDE</em> will result in the word <em>KDE</em> being "
-"searched using the URI defined by the <em>shortcut</em>."
+"<qt>\n"
+"Enable shortcuts that allow you to quickly search for information on the "
+"web. For example, entering the shortcut <b>gg:KDE</b> will result in a "
+"search of the word <b>KDE</b> on the Google(TM) search engine.\n"
+"</qt>"
 msgstr ""
 
-#: plugins/ikws/ikwsopts.cpp:134
+#: rc.cpp:3
+msgid "&Keyword delimiter:"
+msgstr ""
+
+#: rc.cpp:4 rc.cpp:20
+msgid ""
+"Choose the delimiter that separates the keyword from the phrase or word to "
+"be searched."
+msgstr ""
+
+#: rc.cpp:5
+msgid "Default &search engine:"
+msgstr ""
+
+#: rc.cpp:6 rc.cpp:8
+msgid ""
+"<qt>\n"
+"Select the search engine to use for input boxes that provide automatic "
+"lookup services when you type in normal words and phrases instead of a URL. "
+"To disable this feature select <b>None</b> from the list.\n"
+"</qt>"
+msgstr ""
+
+#: rc.cpp:7
+msgid "None"
+msgstr ""
+
+#: rc.cpp:9
+#, fuzzy
+msgid "Chan&ge..."
+msgstr "Промени"
+
+#: rc.cpp:10
+#, fuzzy
+msgid "Modify a search provider."
+msgstr "Име на пребарувач:"
+
+#: rc.cpp:11
+msgid "De&lete"
+msgstr ""
+
+#: rc.cpp:12
+#, fuzzy
+msgid "Delete the selected search provider."
+msgstr ""
+"Притиснете тука за да додадете/промените "
+"пребарувач"
+
+#: rc.cpp:13
+msgid "&New..."
+msgstr ""
+
+#: rc.cpp:14
+#, fuzzy
+msgid "Add a search provider."
+msgstr ""
+"Притиснете тука за да додадете/промените "
+"пребарувач"
+
+#: rc.cpp:15
 msgid "Name"
 msgstr "Име"
 
-#: plugins/ikws/ikwsopts.cpp:135
+#: rc.cpp:16
 msgid "Shortcuts"
 msgstr "Кратенки"
 
-#: plugins/ikws/ikwsopts.cpp:137
+#: rc.cpp:17
 #, fuzzy
-msgid ""
-"This list contains the search providers that KDE knows about, and their "
-"associated pseudo-URI schemes, or shortcuts."
+msgid "List of search providers and their associated shortcuts."
 msgstr ""
 "Оваа листа ги содржи страниците за "
 "пребарување за кои КДЕ знае и ним "
 "асоцираните кратенки."
 
-#: plugins/ikws/ikwsopts.cpp:151
-#, fuzzy
-msgid "Add..."
-msgstr "Додај"
-
-#: plugins/ikws/ikwsopts.cpp:152
-#, fuzzy
-msgid "Click here to add a search provider."
-msgstr ""
-"Притиснете тука за да додадете/промените "
-"пребарувач"
-
-#: plugins/ikws/ikwsopts.cpp:155
-#, fuzzy
-msgid "Change..."
-msgstr "Промени"
-
-#: plugins/ikws/ikwsopts.cpp:156
-#, fuzzy
-msgid "Click here to change a search provider."
-msgstr ""
-"Притиснете тука за да додадете/промените "
-"пребарувач"
-
-#: plugins/ikws/ikwsopts.cpp:161
-#, fuzzy
-msgid "Click here to delete the currently selected search provider from the list."
-msgstr ""
-"Притиснете тука за да го отстраните "
-"обележаниот пребарувач од листата."
-
-#: plugins/ikws/ikwsopts.cpp:183
-#, fuzzy
-msgid ""
-"In this module, you can choose whether to use Internet Keywords or not. You "
-"can also configure various Internet search engines that KDE can use for "
-"keyword search. This allows you, for example, to enter a pseudo-URI like "
-"gg:smetana to search the Google search engine for web pages about the Czech "
-"composer Bedrich Smetana."
-msgstr ""
-"Во овој модул можете да конфигурирате "
-"повеќе Интернет пребарувачи што КДЕ ќе ги "
-"користи за барање на клучни зборови. Ова "
-"ви дозволува, на пример, внесете псевди URI "
-"како gg:Smetana со што на Google пребарувачот ќе "
-"барате веб страници за чешкиот "
-"композитор."
-
-#: plugins/ikws/ikwsopts.cpp:410
-msgid "Importing Search Providers is not implemented yet."
+#: rc.cpp:18
+msgid "Colon"
 msgstr ""
 
-#: plugins/ikws/ikwsopts.cpp:415
-msgid "Exporting Search Providers is not implemented yet."
+#: rc.cpp:19
+msgid "Space"
 msgstr ""
 
-#: plugins/ikws/kurisearchfilter.cpp:73
-msgid "&Keywords"
-msgstr "Клучни зборови"
-
-#: plugins/ikws/searchproviderdlg.cpp:46
-#, fuzzy
-msgid "Search &provider name:"
-msgstr "Име на пребарувач:"
-
-#: plugins/ikws/searchproviderdlg.cpp:50
+#: rc.cpp:21 rc.cpp:27
 #, fuzzy
 msgid "Enter the human readable name of the search provider here."
 msgstr ""
 "Внесете го неформалното име за "
 "пребарувачот."
 
-#: plugins/ikws/searchproviderdlg.cpp:54
+#: rc.cpp:22
+msgid "&Charset:"
+msgstr ""
+
+#: rc.cpp:23
+msgid "Select the character set that will be used to encode your search query"
+msgstr ""
+
+#: rc.cpp:24
 msgid "Search &URI:"
 msgstr "URI за барање:"
 
-#: plugins/ikws/searchproviderdlg.cpp:59
+#: rc.cpp:25 rc.cpp:31
 msgid ""
-"Enter the URI that is used to do a search on the search engine here.\n"
-"The whole text to be searched for can be specified as \\{@} or \\{0}.\n"
+"<qt>\n"
+"Enter the URI that is used to do a search on the search engine here."
+"<br/>The whole text to be searched for can be specified as \\{@} or "
+"\\{0}.<br/>\n"
 "Recommended is \\{@}, since it removes all query variables (name=value) from "
 "the resulting string whereas \\{0} will be substituted with the unmodified "
-"query string.\n"
+"query string."
+"<br/>"
 "You can use \\{1} ... \\{n} to specify certain words from the query and "
-"\\{name} to specify a value given by 'name=value' in the user query.\n"
-"In addition it is possible to specify multiple references (names, numbers "
-"and strings) at once (\\{name1,name2,...,\"string\"}).\n"
-"The first matching value (from the left) will be used as substitution value "
-"for the resulting URI.\n"
-"A quoted string can be used as default value if nothing matches from the "
-"left of the reference list."
+"\\{name} to specify a value given by 'name=value' in the user query."
+"<br/>In addition it is possible to specify multiple references (names, "
+"numbers and strings) at once (\\{name1,name2,...,\"string\"})."
+"<br/>The first matching value (from the left) will be used as substitution "
+"value for the resulting URI."
+"<br/>A quoted string can be used as default value if nothing matches from "
+"the left of the reference list.\n"
+"</qt>"
 msgstr ""
 
-#: plugins/ikws/searchproviderdlg.cpp:69
+#: rc.cpp:26
 #, fuzzy
-msgid "UR&I shortcuts:"
-msgstr "URI кратенки:"
+msgid "Search &provider name:"
+msgstr "Име на пребарувач:"
 
-#: plugins/ikws/searchproviderdlg.cpp:73
+#: rc.cpp:28 rc.cpp:30
 #, fuzzy
 msgid ""
+"<qt>\n"
 "The shortcuts entered here can be used as a pseudo-URI scheme in KDE. For "
-"example, the shortcut <em>av</em> can be used as in <em>av</em>:<em>my "
-"search</em>."
+"example, the shortcut <b>av</b> can be used as in <b>av</b>:<b>my "
+"search</b>\n"
+"</qt>"
 msgstr ""
 "Кратенките што тука се внесени може да се "
 "користа како псевно-URI шема во КДЕ. На "
 "пример, кратенката av може да се користи "
 "како во av:my search."
 
-#: plugins/ikws/searchproviderdlg.cpp:77
-msgid "&Charset:"
-msgstr ""
+#: rc.cpp:29
+#, fuzzy
+msgid "UR&I shortcuts:"
+msgstr "URI кратенки:"
 
-#: plugins/ikws/searchproviderdlg.cpp:81
+#: rc.cpp:32
 msgid "Select the character set that will be used to encode your search query."
 msgstr ""
 
-#: plugins/ikws/searchproviderdlg.cpp:96
+#: plugins/ikws/ikwsopts.cpp:92
+msgid ""
+"In this module you can configure the web shortcuts feature. Web shortcuts "
+"allow you to quickly search or lookup words on the Internet. For example, to "
+"search for information about the KDE project using the Google engine, you "
+"simply type <b>gg:KDE</b> or <b>google:KDE</b>."
+"<p>If you select a default search engine, normal words or phrases will be "
+"looked up at the specified search engine by simply typing them into "
+"applications, such as Konqueror, that have built-in support for such a "
+"feature."
+msgstr ""
+
+#: plugins/ikws/kurisearchfilter.cpp:77
+#, fuzzy
+msgid "Search F&ilters"
+msgstr "Филтери"
+
+#: plugins/ikws/searchproviderdlg.cpp:59
 #, fuzzy
 msgid "Modify Search Provider"
 msgstr "Име на пребарувач:"
 
-#: plugins/ikws/searchproviderdlg.cpp:106
+#: plugins/ikws/searchproviderdlg.cpp:69
 #, fuzzy
 msgid "New Search Provider"
 msgstr "Име на пребарувач:"
 
-#: plugins/ikws/searchproviderdlg.cpp:123
+#: plugins/ikws/searchproviderdlg.cpp:86
 #, fuzzy
 msgid ""
 "The URI does not contain a \\{...} placeholder for the user query.\n"
 "This means that the same page is always going to be visited, regardless of "
-"what the user types..."
+"what the user types."
 msgstr ""
 "URI не содржи \\1 за барањето.\n"
 "Ова значи дека секогаш ќе се посетува "
 "иста страница, \n"
 "без разлика на тоа што ќе биде внесено..."
 
-#: plugins/ikws/searchproviderdlg.cpp:126
+#: plugins/ikws/searchproviderdlg.cpp:89
 msgid "Keep It"
 msgstr "Задржи"
 
-#: plugins/shorturi/kshorturifilter.cpp:174
-msgid "<qt><b>%1</b> doesn't have a home directory!</qt>"
+#: plugins/shorturi/kshorturifilter.cpp:180
+#, fuzzy
+msgid "<qt><b>%1</b> doesn't have a home folder!</qt>"
 msgstr "<qt><b>%1</b> нема сопствена папка!</qt>"
 
-#: plugins/shorturi/kshorturifilter.cpp:175
+#: plugins/shorturi/kshorturifilter.cpp:181
 msgid "<qt>There is no user called <b>%1</b>.</qt>"
 msgstr "<qt>Не постои корисник што се вика <b>%1</b>.</qt>"
 
-#: plugins/shorturi/kshorturifilter.cpp:384
+#: plugins/shorturi/kshorturifilter.cpp:380
+msgid "<qt>The file or folder <b>%1</b> does not exist."
+msgstr ""
+
+#: plugins/shorturi/kshorturifilter.cpp:397
 msgid "&ShortURLs"
 msgstr "Кратки URLи"
+
+#, fuzzy
+#~ msgid "SearchProviderDlgUI"
+#~ msgstr "Име на пребарувач:"
+
+#, fuzzy
+#~ msgid "Click here to import a search provider from a file."
+#~ msgstr "Притиснете тука за да додадете/промените пребарувач"
+
+#, fuzzy
+#~ msgid "Click here to export a search provider to a file."
+#~ msgstr "Притиснете тука за да додадете/промените пребарувач"
+
+#, fuzzy
+#~ msgid "Add..."
+#~ msgstr "Додај"
+
+#, fuzzy
+#~ msgid ""
+#~ "Click here to delete the currently selected search provider from the list."
+#~ msgstr ""
+#~ "Притиснете тука за да го отстраните обележаниот пребарувач од листата."
+
+#, fuzzy
+#~ msgid ""
+#~ "In this module, you can choose whether to use Internet Keywords or not. "
+#~ "You can also configure various Internet search engines that KDE can use "
+#~ "for keyword search. This allows you, for example, to enter a pseudo-URI "
+#~ "like gg:smetana to search the Google search engine for web pages about "
+#~ "the Czech composer Bedrich Smetana."
+#~ msgstr ""
+#~ "Во овој модул можете да конфигурирате повеќе Интернет пребарувачи што КДЕ "
+#~ "ќе ги користи за барање на клучни зборови. Ова ви дозволува, на пример, "
+#~ "внесете псевди URI како gg:Smetana со што на Google пребарувачот ќе "
+#~ "барате веб страници за чешкиот композитор."
+
+#~ msgid "&Keywords"
+#~ msgstr "Клучни зборови"
 
 #, fuzzy
 #~ msgid "Enable Int&ernet keywords"
@@ -259,14 +336,6 @@ msgstr "Кратки URLи"
 #~ msgstr ""
 #~ "Внесете го URI што ќе се користи за да барате на пребарувачот. Текстот "
 #~ "што ќе се бара може да биде наведен како \\1"
-
-#, fuzzy
-#~ msgid "Click here to import a search provider from a file."
-#~ msgstr "Притиснете тука за да додадете/промените пребарувач"
-
-#, fuzzy
-#~ msgid "Click here to export a search provider to a file."
-#~ msgstr "Притиснете тука за да додадете/промените пребарувач"
 
 #~ msgid "Search &Fallback:"
 #~ msgstr "Крајно барање:"
