@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmaudiocd\n"
-"POT-Creation-Date: 2004-10-12 01:17+0200\n"
+"POT-Creation-Date: 2005-02-03 01:22+0100\n"
 "PO-Revision-Date: 2005-01-31 20:28+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -28,25 +28,41 @@ msgid ""
 "Your emails"
 msgstr "zoki@email.com,gjalevska@yahoo.com"
 
-#: kcmaudiocd.cpp:78
+#: kcmaudiocd.cpp:40
+msgid "Report errors found on the cd."
+msgstr ""
+
+#: kcmaudiocd.cpp:53
+msgid "%1 Encoder"
+msgstr ""
+
+#: kcmaudiocd.cpp:80
 msgid "kcmaudiocd"
 msgstr "kcmaudiocd"
 
-#: kcmaudiocd.cpp:78
-msgid "KDE Audio-CD Slave Control Module"
+#: kcmaudiocd.cpp:80
+#, fuzzy
+msgid "KDE Audio CD IO Slave"
 msgstr "Контролен модул на KDE за Аудио-CD Slave"
 
-#: kcmaudiocd.cpp:80
-msgid "(c) 2000 - 2001 Carsten Duvenhorst"
+#: kcmaudiocd.cpp:82
+#, fuzzy
+msgid "(c) 2000 - 2005 Audio CD developers"
 msgstr "(c) 2000 - 2001 Carsten Duvenhorst"
 
-#. i18n: file audiocdconfig.ui line 389
-#: kcmaudiocd.cpp:108 kcmaudiocd.cpp:169 rc.cpp:92 rc.cpp:95
-#, fuzzy
-msgid "Cool artist - example audio file.wav"
-msgstr "Шизик изведувач - пример за аудиодатотека file.wav"
+#: kcmaudiocd.cpp:84
+msgid "Current Maintainer"
+msgstr ""
 
-#: kcmaudiocd.cpp:210
+#. i18n: file audiocdconfig.ui line 459
+#: kcmaudiocd.cpp:111 kcmaudiocd.cpp:172 rc.cpp:112 rc.cpp:115
+#, fuzzy, no-c-format
+msgid "Cool artist - example audio file.wav"
+msgstr ""
+"Шизик изведувач - пример за аудиодатотека "
+"file.wav"
+
+#: kcmaudiocd.cpp:213
 msgid ""
 "<h1>Audio CDs</h1> The Audio CD IO-Slave enables you to easily create wav, "
 "MP3 or Ogg Vorbis files from your audio CD-ROMs or DVDs. The slave is "
@@ -55,13 +71,17 @@ msgid ""
 "Ogg Vorbis encoding are only available if KDE was built with a recent "
 "version of the LAME or Ogg Vorbis libraries."
 msgstr ""
-"<h1>Аудио CD</h1> IO-Slave на аудио CD ви овозможува лесно да креирате "
-"датотеки од тип wav, MP3 или Ogg Vorbis преку вашите аудио уреди CD-ROM или "
-"DVD. Slave се повикува со внесување на <i>„audiocd:/“</i> во лентата за "
-"локација воKonqueror. Во овој модул можете да го конфигурирате кодирањето и "
-"поставувањата на уредот. Забележете дека кодирањата од тип MP3 и Ogg Vorbis "
-"се можни само ако KDE е направен со најновата верзија на библиотеки на LAME "
-"или Ogg Vorbis."
+"<h1>Аудио CD</h1>"
+" IO-Slave на аудио CD ви овозможува лесно да "
+"креирате датотеки од тип wav, MP3 или Ogg Vorbis "
+"преку вашите аудио уреди CD-ROM или DVD. Slave се "
+"повикува со внесување на <i>„audiocd:/“</i> во "
+"лентата за локација воKonqueror. Во овој модул "
+"можете да го конфигурирате кодирањето и "
+"поставувањата на уредот. Забележете дека "
+"кодирањата од тип MP3 и Ogg Vorbis се можни само "
+"ако KDE е направен со најновата верзија на "
+"библиотеки на LAME или Ogg Vorbis."
 
 #. i18n: file audiocdconfig.ui line 50
 #: rc.cpp:3
@@ -88,8 +108,9 @@ msgid ""
 "Uncheck this if you want to specify a CD device different from the one "
 "autoprobed"
 msgstr ""
-"Исклучете го ова ако сакате да одредите CD-уред поинаков од оној што е "
-"автоматски пронајден"
+"Исклучете го ова ако сакате да одредите "
+"CD-уред поинаков од оној што е автоматски "
+"пронајден"
 
 #. i18n: file audiocdconfig.ui line 106
 #: rc.cpp:15
@@ -110,8 +131,10 @@ msgid ""
 "Specify a location for the drive you want to use. Normally, this is a file "
 "inside the /dev folder representing your CD or DVD drive."
 msgstr ""
-"Зададете локација за уредот што сакате да го користите. Вообичаено, ова е "
-"датотека во папката /dev која што го претставува вашиот CD или DVD уред."
+"Зададете локација за уредот што сакате да "
+"го користите. Вообичаено, ова е датотека "
+"во папката /dev која што го претставува "
+"вашиот CD или DVD уред."
 
 #. i18n: file audiocdconfig.ui line 135
 #: rc.cpp:24
@@ -133,10 +156,12 @@ msgid ""
 "which can be useful for reading damaged CDs. However, this feature can be "
 "problematic in some cases, so you can switch it off here."
 msgstr ""
-"Ако ја обележите оваа опција, slave нема да се обиде да користи поправање на "
-"грешките што може да биде корисно за читање на оштетени CD-а. Како и да е "
-"оваа особина може да биде проблематична во некои случаи, така што тука "
-"можете да ја исклучите."
+"Ако ја обележите оваа опција, slave нема да "
+"се обиде да користи поправање на грешките "
+"што може да биде корисно за читање на "
+"оштетени CD-а. Како и да е оваа особина може "
+"да биде проблематична во некои случаи, "
+"така што тука можете да ја исклучите."
 
 #. i18n: file audiocdconfig.ui line 166
 #: rc.cpp:33
@@ -180,91 +205,164 @@ msgstr "&Имиња"
 msgid "File Name (without extension)"
 msgstr "Име на датотека (без наставка)"
 
-#. i18n: file audiocdconfig.ui line 289
-#: rc.cpp:54
+#. i18n: file audiocdconfig.ui line 283
+#: rc.cpp:54 rc.cpp:124
 #, no-c-format
-msgid ""
-"The following macros will be expanded:\n"
-"%{title}  \t\tTrack Title\n"
-"%{number}\tTrack Number\n"
-"%{albumtitle}\tAlbum Title\n"
-"%{albumartist}\tAlbum Artist\n"
-"%{year}\t\tYear\n"
-"%{genre}\tGenre"
+msgid "The following macros will be expanded:"
 msgstr ""
-"Ќе бидат проширени следните макронаредби:\n"
-"%{title}  \t\tНаслов на песната\n"
-"%{number}\tБрој на песната\n"
-"%{albumtitle}\tНаслов на албумот\n"
-"%{albumartist}\tИзведувач на албумот\n"
-"%{year}\t\tГодина\n"
-"%{genre}\tЖанр"
 
-#. i18n: file audiocdconfig.ui line 304
+#. i18n: file audiocdconfig.ui line 299
+#: rc.cpp:57 rc.cpp:136
+#, fuzzy, no-c-format
+msgid "Genre"
+msgstr "&Општо"
+
+#. i18n: file audiocdconfig.ui line 307
+#: rc.cpp:60
+#, no-c-format
+msgid "Track Number"
+msgstr ""
+
+#. i18n: file audiocdconfig.ui line 315
 #: rc.cpp:63
 #, no-c-format
-msgid "Album Name"
+msgid "%{title}"
+msgstr ""
+
+#. i18n: file audiocdconfig.ui line 323
+#: rc.cpp:66 rc.cpp:127
+#, no-c-format
+msgid "Year"
+msgstr ""
+
+#. i18n: file audiocdconfig.ui line 331
+#: rc.cpp:69
+#, no-c-format
+msgid "Track Title"
+msgstr ""
+
+#. i18n: file audiocdconfig.ui line 339
+#: rc.cpp:72 rc.cpp:139
+#, no-c-format
+msgid "Album Artist"
+msgstr ""
+
+#. i18n: file audiocdconfig.ui line 347
+#: rc.cpp:75 rc.cpp:133
+#, no-c-format
+msgid "%{year}"
+msgstr ""
+
+#. i18n: file audiocdconfig.ui line 355
+#: rc.cpp:78 rc.cpp:148
+#, no-c-format
+msgid "%{albumtitle}"
+msgstr ""
+
+#. i18n: file audiocdconfig.ui line 363
+#: rc.cpp:81 rc.cpp:142
+#, fuzzy, no-c-format
+msgid "Album Title"
 msgstr "Име на албумот"
 
-#. i18n: file audiocdconfig.ui line 319
-#: rc.cpp:66
+#. i18n: file audiocdconfig.ui line 371
+#: rc.cpp:84 rc.cpp:145
 #, no-c-format
-msgid ""
-"The following macros will be expanded:\n"
-"%{albumtitle}\tAlbum Title\n"
-"%{albumartist}\tAlbum Artist\n"
-"%{year}\t\tYear\n"
-"%{genre}\tGenre"
+msgid "%{genre}"
 msgstr ""
-"Ќе бидат проширени следните макронаредби:\n"
-"%{albumtitle}\tНаслов на албумот\n"
-"%{albumartist}\tИзведувач на албумот\n"
-"%{year}\t\tГодина\n"
-"%{genre}\tЖанр"
 
-#. i18n: file audiocdconfig.ui line 334
-#: rc.cpp:73
+#. i18n: file audiocdconfig.ui line 379
+#: rc.cpp:87 rc.cpp:130
+#, no-c-format
+msgid "%{albumartist}"
+msgstr ""
+
+#. i18n: file audiocdconfig.ui line 387
+#: rc.cpp:90
+#, no-c-format
+msgid "%{number}"
+msgstr ""
+
+#. i18n: file audiocdconfig.ui line 404
+#: rc.cpp:93
 #, no-c-format
 msgid "Name Regular Expression Replacement"
 msgstr "Наведи замена за регуларниот израз"
 
-#. i18n: file audiocdconfig.ui line 345
-#: rc.cpp:76
+#. i18n: file audiocdconfig.ui line 415
+#: rc.cpp:96
 #, no-c-format
 msgid "Selection:"
 msgstr "Избор:"
 
-#. i18n: file audiocdconfig.ui line 354
-#: rc.cpp:79
+#. i18n: file audiocdconfig.ui line 424
+#: rc.cpp:99
 #, no-c-format
 msgid ""
 "Regular expression used on all file names. For example using selection \" \" "
 "and replace with \"_\" would replace all the spaces with underlines.\n"
 msgstr ""
-"Регуларен израз употребен на сите имиња на датотеки. На пример употреба на "
-"изборот „ “ и негова замена со „_“ ќе  ги замени сите празни места со долна "
-"црта.\n"
+"Регуларен израз употребен на сите имиња "
+"на датотеки. На пример употреба на "
+"изборот „ “ и негова замена со „_“ ќе  ги "
+"замени сите празни места со долна црта.\n"
 
-#. i18n: file audiocdconfig.ui line 365
-#: rc.cpp:83
+#. i18n: file audiocdconfig.ui line 435
+#: rc.cpp:103
 #, no-c-format
 msgid "Input:"
 msgstr "Влез:"
 
-#. i18n: file audiocdconfig.ui line 373
-#: rc.cpp:86
+#. i18n: file audiocdconfig.ui line 443
+#: rc.cpp:106
 #, no-c-format
 msgid "Output:"
 msgstr "Излез:"
 
-#. i18n: file audiocdconfig.ui line 381
-#: rc.cpp:89
+#. i18n: file audiocdconfig.ui line 451
+#: rc.cpp:109
 #, no-c-format
 msgid "Example"
 msgstr "Пример"
 
-#. i18n: file audiocdconfig.ui line 415
-#: rc.cpp:98
+#. i18n: file audiocdconfig.ui line 485
+#: rc.cpp:118
 #, no-c-format
 msgid "Replace with:"
 msgstr "Заменете со:"
+
+#. i18n: file audiocdconfig.ui line 526
+#: rc.cpp:121
+#, no-c-format
+msgid "Album Name"
+msgstr "Име на албумот"
+
+#~ msgid ""
+#~ "The following macros will be expanded:\n"
+#~ "%{title}  \t\tTrack Title\n"
+#~ "%{number}\tTrack Number\n"
+#~ "%{albumtitle}\tAlbum Title\n"
+#~ "%{albumartist}\tAlbum Artist\n"
+#~ "%{year}\t\tYear\n"
+#~ "%{genre}\tGenre"
+#~ msgstr ""
+#~ "Ќе бидат проширени следните макронаредби:\n"
+#~ "%{title}  \t\tНаслов на песната\n"
+#~ "%{number}\tБрој на песната\n"
+#~ "%{albumtitle}\tНаслов на албумот\n"
+#~ "%{albumartist}\tИзведувач на албумот\n"
+#~ "%{year}\t\tГодина\n"
+#~ "%{genre}\tЖанр"
+
+#~ msgid ""
+#~ "The following macros will be expanded:\n"
+#~ "%{albumtitle}\tAlbum Title\n"
+#~ "%{albumartist}\tAlbum Artist\n"
+#~ "%{year}\t\tYear\n"
+#~ "%{genre}\tGenre"
+#~ msgstr ""
+#~ "Ќе бидат проширени следните макронаредби:\n"
+#~ "%{albumtitle}\tНаслов на албумот\n"
+#~ "%{albumartist}\tИзведувач на албумот\n"
+#~ "%{year}\t\tГодина\n"
+#~ "%{genre}\tЖанр"
