@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ksysctrl\n"
-"POT-Creation-Date: 2000-09-20 01:28+0200\n"
+"POT-Creation-Date: 2001-01-15 01:27+0100\n"
 "PO-Revision-Date: 2000-11-26 01:43+0100\n"
 "Last-Translator: Danko Ilik <danko@mindless.com>\n"
 "Language-Team: Macedonian\n"
@@ -28,17 +28,17 @@ msgstr ""
 
 #: abouttab.cpp:38
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under"
+" the terms of the GNU General Public License as published by the Free Softwar"
+"e Foundation; either version 2 of the License, or (at your option) any later "
+"version.\n"
 msgstr ""
 "Оваа програма е бесплатен софтвер; можете "
 "да ја редистрибуирате и/или модифицирате "
 "во склад со условите на генералната јавна "
-"GNU лиценца како што е издадена од Free Softvare "
-"Foundation; или верзијата два од истата или "
-"било која нејзина идна верзија.\n"
+"GNU лиценца како што е издадена од Free Softvare Fou"
+"ndation; или верзијата два од истата или било "
+"која нејзина идна верзија.\n"
 
 #: abouttab.cpp:47
 msgid "The KDE System Control Tool"
@@ -72,7 +72,11 @@ msgstr "Контролери за приказ"
 msgid "Audio, video and game controllers"
 msgstr "Аудио, видео и контролери за игри"
 
-#: device.cpp:87 device.cpp:88 device.cpp:90 device.cpp:93
+#: device.cpp:87 pcidevice.cpp:94
+msgid "Memory"
+msgstr ""
+
+#: device.cpp:88 device.cpp:90 device.cpp:93
 msgid "System components"
 msgstr "Системски компоненти"
 
@@ -120,7 +124,11 @@ msgstr "Скенери"
 msgid "PC-Cards"
 msgstr "PC-картички"
 
-#: device.cpp:105
+#: device.cpp:104 scsidevice.cpp:49
+msgid "Processor"
+msgstr ""
+
+#: device.cpp:106
 msgid "Unknown device class"
 msgstr "Непознати уреди"
 
@@ -144,12 +152,12 @@ msgid ""
 "Do you really want the changes to take\n"
 "effect?"
 msgstr ""
-"Сакате да ги промените поставките на "
-"уредот\n"
-"што може да ја наруши стабилноста на "
-"вашиот систем\n"
-"Дали сте сигурни дека сакате да ги "
-"прифатите промените?"
+"Сакате да ги промените поставките на уред"
+"от\n"
+"што може да ја наруши стабилноста на вашио"
+"т систем\n"
+"Дали сте сигурни дека сакате да ги прифати"
+"те промените?"
 
 #: devmantab.cpp:148
 msgid "Change resource settings"
@@ -206,12 +214,14 @@ msgid "Unknown"
 msgstr ""
 
 #: generaltab.cpp:186
-msgid "System:\n"
+msgid ""
+"System:\n"
 msgstr ""
 
 #: geninfobox.cpp:38
+#, fuzzy
 msgid "Device type:"
-msgstr ""
+msgstr "Пат до уредот:"
 
 #: geninfobox.cpp:40
 msgid "Manufacturer:"
@@ -230,13 +240,15 @@ msgid "Floppy drive"
 msgstr ""
 
 #: idedrive.cpp:48 scsidevice.cpp:51
+#, fuzzy
 msgid "CD-ROM drive"
-msgstr ""
+msgstr "CD-ROM"
 
-#: idedrive.cpp:49 isapnpdevice.cpp:78 pccarddevice.cpp:65 pcidevice.cpp:131
-#: pcidevice.cpp:240 scsidevice.cpp:57
+#: idedrive.cpp:49 isapnpdevice.cpp:78 pccarddevice.cpp:65 pcidevice.cpp:137
+#: pcidevice.cpp:281 scsidevice.cpp:57
+#, fuzzy
 msgid "Unknown device"
-msgstr ""
+msgstr "Непознати уреди"
 
 #: interrupt.cpp:42
 #, fuzzy
@@ -244,44 +256,48 @@ msgid "interrupt"
 msgstr "Печатач"
 
 #: interrupt.cpp:47
+#, fuzzy
 msgid "Interrupt"
-msgstr ""
+msgstr "Печатач"
 
 #: ioaddress.cpp:43 ioaddress.cpp:47
 msgid "I/O area"
 msgstr ""
 
-#: isapnpdevice.cpp:75 pcidevice.cpp:76
+#: isapnpdevice.cpp:75 pcidevice.cpp:82
+#, fuzzy
 msgid "Network controller"
-msgstr ""
+msgstr "Мрежни контролери"
 
-#: isapnpdevice.cpp:76 pcidevice.cpp:83
+#: isapnpdevice.cpp:76 pcidevice.cpp:89
+#, fuzzy
 msgid "Multimedia audio controller"
-msgstr ""
+msgstr "Аудио, видео и контролери за игри"
 
-#: isapnpdevice.cpp:77 pcidevice.cpp:113
+#: isapnpdevice.cpp:77 pcidevice.cpp:119
+#, fuzzy
 msgid "Input device controller"
-msgstr ""
+msgstr "Контролери на влезни уреди"
 
-#: main.cpp:35
+#: main.cpp:42
+#, fuzzy
 msgid "KDE System Control Tool"
-msgstr ""
+msgstr "KDE алатка за системска контрола"
 
-#: main.cpp:45
+#: main.cpp:56
+#, fuzzy
 msgid "KSysControl"
-msgstr ""
+msgstr "SCSI контролери"
 
-#: mainwindow.cpp:32
+#: mainwindow.cpp:37
+#, fuzzy
 msgid "Properties of System"
-msgstr ""
+msgstr "Параметри"
 
-#: mainwindow.cpp:39 propdialog.cpp:37
-msgid "General"
-msgstr ""
-
-#: mainwindow.cpp:40
+#: mainwindow.cpp:48
+#, fuzzy
 msgid "Device Manager"
-msgstr ""
+msgstr "Пат до уредот:"
 
 #: memaddress.cpp:31
 msgid "memory area"
@@ -300,8 +316,9 @@ msgid "ECP printer connector"
 msgstr ""
 
 #: parport.cpp:45
+#, fuzzy
 msgid "Unknown printer connector"
-msgstr ""
+msgstr "Контролери за масовно складирање"
 
 #: pccarddevice.cpp:76
 msgid "Multifunction card"
@@ -316,8 +333,9 @@ msgid "Serial/Modem card"
 msgstr ""
 
 #: pccarddevice.cpp:79
+#, fuzzy
 msgid "Parallel card"
-msgstr ""
+msgstr "Контролери за масовно складирање"
 
 #: pccarddevice.cpp:80
 msgid "Fixed disk"
@@ -328,8 +346,9 @@ msgid "Video card"
 msgstr ""
 
 #: pccarddevice.cpp:82
+#, fuzzy
 msgid "Network adapter"
-msgstr ""
+msgstr "Мрежни контролери"
 
 #: pccarddevice.cpp:83
 msgid "AIMS card"
@@ -347,250 +366,252 @@ msgstr ""
 msgid "Empty socket"
 msgstr ""
 
-#: pcidevice.cpp:62
+#: pcidevice.cpp:68
 #, fuzzy
 msgid "Non-VGA unclassified device"
 msgstr "Некласифицирани уреди"
 
-#: pcidevice.cpp:63
+#: pcidevice.cpp:69
 #, fuzzy
 msgid "VGA compatible unclassified device"
 msgstr "Некласифицирани уреди"
 
-#: pcidevice.cpp:65
+#: pcidevice.cpp:71
 #, fuzzy
 msgid "SCSI storage controller"
 msgstr "Контролери за масовно складирање"
 
-#: pcidevice.cpp:66
+#: pcidevice.cpp:72
 msgid "IDE interface"
 msgstr ""
 
-#: pcidevice.cpp:67
+#: pcidevice.cpp:73
 #, fuzzy
 msgid "Floppy disk controller"
 msgstr "Контролери на влезни уреди"
 
-#: pcidevice.cpp:68
+#: pcidevice.cpp:74
 #, fuzzy
 msgid "IPI bus controller"
 msgstr "Контролери на сериска магистрала"
 
-#: pcidevice.cpp:69
+#: pcidevice.cpp:75
 #, fuzzy
 msgid "RAID bus controller"
 msgstr "Контролери на сериска магистрала"
 
-#: pcidevice.cpp:70
+#: pcidevice.cpp:76
 #, fuzzy
 msgid "Unknown mass storage controller"
 msgstr "Контролери за масовно складирање"
 
-#: pcidevice.cpp:72
+#: pcidevice.cpp:78
 #, fuzzy
 msgid "Ethernet controller"
 msgstr "Мрежни контролери"
 
-#: pcidevice.cpp:73
+#: pcidevice.cpp:79
 #, fuzzy
 msgid "Token ring network controller"
 msgstr "Мрежни контролери"
 
-#: pcidevice.cpp:74
+#: pcidevice.cpp:80
 #, fuzzy
 msgid "FDDI network controller"
 msgstr "Мрежни контролери"
 
-#: pcidevice.cpp:75
+#: pcidevice.cpp:81
 #, fuzzy
 msgid "ATM network controller"
 msgstr "Мрежни контролери"
 
-#: pcidevice.cpp:78
+#: pcidevice.cpp:84
 #, fuzzy
 msgid "VGA compatible controller"
 msgstr "Контролери за комуникација"
 
-#: pcidevice.cpp:79
+#: pcidevice.cpp:85
 #, fuzzy
 msgid "XGA compatible controller"
 msgstr "Контролери за комуникација"
 
-#: pcidevice.cpp:80
+#: pcidevice.cpp:86
 #, fuzzy
 msgid "Display controller"
 msgstr "Контролери за приказ"
 
-#: pcidevice.cpp:82
+#: pcidevice.cpp:88
 #, fuzzy
 msgid "Multimedia video controller"
 msgstr "Аудио, видео и контролери за игри"
 
-#: pcidevice.cpp:84
+#: pcidevice.cpp:90
 #, fuzzy
 msgid "Multimedia controller"
 msgstr "Контролери на влезни уреди"
 
-#: pcidevice.cpp:86
+#: pcidevice.cpp:92
 msgid "RAM memory"
 msgstr ""
 
-#: pcidevice.cpp:87
+#: pcidevice.cpp:93
 msgid "FLASH memory"
 msgstr ""
 
-#: pcidevice.cpp:88
-msgid "Memory"
-msgstr ""
-
-#: pcidevice.cpp:90
+#: pcidevice.cpp:96
 msgid "Host bridge"
 msgstr ""
 
-#: pcidevice.cpp:91
+#: pcidevice.cpp:97
 msgid "ISA bridge"
 msgstr ""
 
-#: pcidevice.cpp:92
+#: pcidevice.cpp:98
 msgid "EISA bridge"
 msgstr ""
 
-#: pcidevice.cpp:93
+#: pcidevice.cpp:99
 msgid "MicroChannel bridge"
 msgstr ""
 
-#: pcidevice.cpp:94
+#: pcidevice.cpp:100
 msgid "PCI bridge"
 msgstr ""
 
-#: pcidevice.cpp:95
+#: pcidevice.cpp:101
 msgid "PCMCIA bridge"
 msgstr ""
 
-#: pcidevice.cpp:96
+#: pcidevice.cpp:102
 msgid "NuBus bridge"
 msgstr ""
 
-#: pcidevice.cpp:97
+#: pcidevice.cpp:103
 msgid "CardBus bridge"
 msgstr ""
 
-#: pcidevice.cpp:98
+#: pcidevice.cpp:104
 msgid "Bridge"
 msgstr ""
 
-#: pcidevice.cpp:100
+#: pcidevice.cpp:106
 #, fuzzy
 msgid "Serial controller"
 msgstr "Контролери на сериска магистрала"
 
-#: pcidevice.cpp:101
+#: pcidevice.cpp:107
 #, fuzzy
 msgid "Parallel controller"
 msgstr "Контролери за масовно складирање"
 
-#: pcidevice.cpp:102
+#: pcidevice.cpp:108
 #, fuzzy
 msgid "Communication controller"
 msgstr "Контролери за комуникација"
 
-#: pcidevice.cpp:104
+#: pcidevice.cpp:110
 msgid "PIC"
 msgstr ""
 
-#: pcidevice.cpp:105
+#: pcidevice.cpp:111
 #, fuzzy
 msgid "DMA controller"
 msgstr "SCSI контролери"
 
-#: pcidevice.cpp:106
+#: pcidevice.cpp:112
 msgid "Timer"
 msgstr ""
 
-#: pcidevice.cpp:107
+#: pcidevice.cpp:113
 msgid "Real time clock"
 msgstr ""
 
-#: pcidevice.cpp:108
+#: pcidevice.cpp:114
 msgid "System peripheral"
 msgstr ""
 
-#: pcidevice.cpp:110
+#: pcidevice.cpp:116
 #, fuzzy
 msgid "Keyboard controller"
 msgstr "Мрежни контролери"
 
-#: pcidevice.cpp:111
+#: pcidevice.cpp:117
 msgid "Digitizer Pen"
 msgstr ""
 
-#: pcidevice.cpp:112
+#: pcidevice.cpp:118
 #, fuzzy
 msgid "Mouse controller"
 msgstr "Контролери за масовно складирање"
 
-#: pcidevice.cpp:115
+#: pcidevice.cpp:121
 #, fuzzy
 msgid "Generic Docking Station"
 msgstr "Пристанишни станици"
 
-#: pcidevice.cpp:116
+#: pcidevice.cpp:122
 #, fuzzy
 msgid "Docking Station"
 msgstr "Пристанишни станици"
 
-#: pcidevice.cpp:118
+#: pcidevice.cpp:124
 msgid "386"
 msgstr ""
 
-#: pcidevice.cpp:119
+#: pcidevice.cpp:125
 msgid "486"
 msgstr ""
 
-#: pcidevice.cpp:120
+#: pcidevice.cpp:126
 msgid "Pentium"
 msgstr ""
 
-#: pcidevice.cpp:121
+#: pcidevice.cpp:127
 msgid "Alpha"
 msgstr ""
 
-#: pcidevice.cpp:122
+#: pcidevice.cpp:128
 msgid "Power PC"
 msgstr ""
 
-#: pcidevice.cpp:123
+#: pcidevice.cpp:129
 msgid "Co-processor"
 msgstr ""
 
-#: pcidevice.cpp:125
+#: pcidevice.cpp:131
 msgid "FireWire (IEEE 1394)"
 msgstr ""
 
-#: pcidevice.cpp:126
+#: pcidevice.cpp:132
 msgid "ACCESS Bus"
 msgstr ""
 
-#: pcidevice.cpp:127
+#: pcidevice.cpp:133
 msgid "SSA"
 msgstr ""
 
-#: pcidevice.cpp:128
+#: pcidevice.cpp:134
 #, fuzzy
 msgid "USB Controller"
 msgstr "SCSI контролери"
 
-#: pcidevice.cpp:129
+#: pcidevice.cpp:135
 msgid "Fiber Channel"
 msgstr ""
 
 #: propdialog.cpp:31
+#, fuzzy
 msgid "Properties of "
+msgstr "Параметри"
+
+#: propdialog.cpp:37
+msgid "General"
 msgstr ""
 
 #: propdialog.cpp:38
+#, fuzzy
 msgid "Driver"
-msgstr ""
+msgstr "Надворешни мемории"
 
 #: propdialog.cpp:43
 msgid "Resources"
@@ -617,8 +638,9 @@ msgid "Change &setting..."
 msgstr ""
 
 #: proprestab.cpp:79
+#, fuzzy
 msgid "Device conflicts:"
-msgstr ""
+msgstr "Нема конфликти"
 
 #: proprestab.cpp:166
 msgid "Base configuration"
@@ -657,17 +679,14 @@ msgstr ""
 msgid "Sequential access device"
 msgstr ""
 
-#: scsidevice.cpp:49
-msgid "Processor"
-msgstr ""
-
 #: scsidevice.cpp:50
 msgid "WORM"
 msgstr ""
 
 #: scsidevice.cpp:52
+#, fuzzy
 msgid "Scanner"
-msgstr ""
+msgstr "Скенери"
 
 #: scsidevice.cpp:53
 msgid "Optical device"
@@ -678,8 +697,9 @@ msgid "Medium changer"
 msgstr ""
 
 #: scsidevice.cpp:55
+#, fuzzy
 msgid "Communication device"
-msgstr ""
+msgstr "Контролери за комуникација"
 
 #: scsidevice.cpp:56
 msgid "Enclosure"
@@ -710,16 +730,19 @@ msgid "SCSI bus rescan"
 msgstr ""
 
 #: serport.cpp:42
+#, fuzzy
 msgid "Unknown serial connector"
-msgstr ""
+msgstr "Контролери за масовно складирање"
 
 #: serport.cpp:44
+#, fuzzy
 msgid "Serial connector "
-msgstr ""
+msgstr "Контролери на сериска магистрала"
 
 #: stateinfobox.cpp:33
+#, fuzzy
 msgid "Device state"
-msgstr ""
+msgstr "Пат до уредот:"
 
 #: stateinfobox.cpp:39
 msgid "This device is operational."
@@ -739,6 +762,18 @@ msgstr ""
 
 #: vendorinfobox.cpp:48
 msgid "Date:"
+msgstr ""
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr ""
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
 msgstr ""
 
 #~ msgid "&Yes"

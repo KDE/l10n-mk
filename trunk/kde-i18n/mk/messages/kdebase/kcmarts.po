@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmarts\n"
-"POT-Creation-Date: 2000-11-28 12:20+0100\n"
+"POT-Creation-Date: 2001-01-22 01:20+0100\n"
 "PO-Revision-Date: 2000-11-09 18:00+0100\n"
 "Last-Translator: Danko Ilik <danko@mindless.com>\n"
 "Language-Team: Macedonian\n"
@@ -13,192 +13,278 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: arts.cpp:100
+#: arts.cpp:129
+msgid ""
+"Normally, the sound server defaults to using the device called <b>/dev/dsp</b"
+"> for sound output. That should work in most cases. An exception is for insta"
+"nce if you are using devfs, then you should use <b>/dev/sound/dsp</b> instead"
+". Other alternatives are things like <b>/dev/dsp0</b> or <b>/dev/dsp1</b> if "
+"you have a soundcard that supports multiple outputs, or you have multiple sou"
+"ndcards."
+msgstr ""
+
+#: arts.cpp:131
+msgid ""
+"Normally, the sound server defaults to using a sampling rate of 44100 Hz (CD "
+"quality), which is supported on almost any hardware. If you are using certain"
+" <b>Yamaha soundcards</b>, you might need to configure this to 48000 Hz here,"
+" if you are using <b>old SoundBlaster cards</b>, like SoundBlaster Pro, you m"
+"ight need to change this to 22050 Hz. All other values are possible, too, and"
+" may make sense in certain contexts (i.e. professional studio equipment)."
+msgstr ""
+
+#: arts.cpp:133
+msgid ""
+"This configuration module is intended to cover almost every aspect of the aRt"
+"s sound server that you can configure. However, there are some things which m"
+"ay not be available here, so you can add <b>command line options</b> here whi"
+"ch will directly be passed to <b>artsd</b>. The options will be appended, so "
+"they will in doubt override the choices made in the GUI. To see the possible "
+"choices, open a konsole window, and type <b>artsd -h</b>."
+msgstr ""
+
+#: arts.cpp:287
+msgid ""
+"There is an installation problem which doesn't allow starting the aRts server"
+" with realtime priority. \n"
+"The following problem occured:\n"
+msgstr ""
+"Постоја проблеми со инсталацијата што не "
+"дозволуваат работа на aRts звук-опслужувачо"
+"т со приоритет за реално време. \n"
+"Се појави следвниот проблем:\n"
+
+#: arts.cpp:295
+msgid ""
+"If you say 'no', your changes will get active the\n"
+"next time you log in.\n"
+"\n"
+"If you say 'yes', I will restart the sound server now.\n"
+"However, applications using sound right now might get\n"
+"confused or crash."
+msgstr ""
+
+#: arts.cpp:300
+msgid "Restart sound server now?"
+msgstr ""
+
+#: arts.cpp:353
+msgid ""
+"<h1>The aRts sound server</h1> Here you can configure aRts, KDE's sound serve"
+"r. This program not only allows you to hear your system sounds while simultan"
+"eously listening to some MP3 file or playing a game with a background music. "
+"It also allows you to apply different effects to your system sounds and provi"
+"des programmers with an easy way to achieve sound support."
+msgstr ""
+"<h1>aRts звук-опслужувачот</h1> Овде се конфигу"
+"рира aRts, звук-опслужувачот на КДЕ. Овој про"
+"грам не ви овозможува само да ги чуете сис"
+"темските звуци туку и истовремено слушање"
+" MP3 датотеки или заднинска музика во некој"
+"а игра. Исто така, овозможува примена на еф"
+"екти врз системските звуци и ги обезбедув"
+"а програмерите со едноставен начин за кор"
+"истење на звук."
+
+#: arts.cpp:381
+msgid "%1 milliseconds (%2 fragments with %3 bytes)"
+msgstr ""
+
+#: arts.cpp:388
+msgid "as large as possible"
+msgstr ""
+
+#: rc.cpp:1
+msgid "Form1"
+msgstr ""
+
+#: rc.cpp:2
+msgid "General"
+msgstr ""
+
+#: rc.cpp:3
 msgid "&Start aRts soundserver on KDE startup"
 msgstr ""
-"Вклучување на aRts звук-опслужувачот при "
-"подигање на КДЕ"
+"Вклучување на aRts звук-опслужувачот при по"
+"дигање на КДЕ"
 
-#: arts.cpp:104
+#: rc.cpp:4
 msgid ""
-"If this option is enabled, the arts soundserver will be started on KDE "
-"startup. Recommended if you want sound."
+"If this option is enabled, the arts soundserver will be started on KDE startu"
+"p. Recommended if you want sound."
 msgstr ""
 "Со оваа опција, arts звук-опслужувачот ќе се "
-"пушти при подигање на КДЕ, што е "
-"препорачливо ако сакате звук."
+"пушти при подигање на КДЕ, што е препорачл"
+"иво ако сакате звук."
 
-#: arts.cpp:112
-msgid "Enable &network transparency"
-msgstr "Овозможена мрежна транспарентност"
-
-#: arts.cpp:116
-msgid ""
-"This option allows sound requests coming in from over the network to be "
-"accepted, instead of just limiting the server to the local computer."
+#: rc.cpp:5
+msgid "&Test sound"
 msgstr ""
-"Оваа опција овозможува побарувањата за "
-"звук од преку мрежата да бидат прифатени, "
-"наместо ограничување на опслужувачот на "
-"локалниот компјутер."
 
-#: arts.cpp:119
+#: rc.cpp:6
 msgid "Exchange security and reference info over the &X11 server"
 msgstr ""
-"Размена на безбедносни и референтни "
-"информации преку X11-опслужувачот"
+"Размена на безбедносни и референтни инфор"
+"мации преку X11-опслужувачот"
 
-#: arts.cpp:123
+#: rc.cpp:7
 msgid ""
 "If you want network transparency or if you use the soundserver only when you "
 "use X11, enable this option."
 msgstr ""
-"Ако сакате мрежна транспарентност или "
-"ако го користите звук-опслужувачот само "
-"кога користите X11, овозможете ја оваа "
-"опција."
+"Ако сакате мрежна транспарентност или ако"
+" го користите звук-опслужувачот само кога "
+"користите X11, овозможете ја оваа опција."
 
-#: arts.cpp:126
+#: rc.cpp:8
 msgid "Run soundserver with &realtime priority"
 msgstr ""
 "Работа на звук-опслужувачот со приоритет "
 "за реално време"
 
-#: arts.cpp:130
+#: rc.cpp:9
 msgid ""
-"On systems which support realtime scheduling, if you have sufficient "
-"permissions, this option will enable a very high priority for processing "
-"sound requests."
+"On systems which support realtime scheduling, if you have sufficient permissi"
+"ons, this option will enable a very high priority for processing sound reques"
+"ts."
 msgstr ""
-"На системи што овозможуваат извршување "
-"во реално време, ако имате дозвола, оваа "
-"опција ќе овозможи многу висок приорите "
-"за обработка на барања за звук."
+"На системи што овозможуваат извршување во"
+" реално време, ако имате дозвола, оваа опци"
+"ја ќе овозможи многу висок приорите за обр"
+"аботка на барања за звук."
 
-#: arts.cpp:133
-msgid "Enable full &duplex operation"
-msgstr "Овозможи работа во full duplex режим"
+#: rc.cpp:10
+msgid "Enable &network transparency"
+msgstr "Овозможена мрежна транспарентност"
 
-#: arts.cpp:137
+#: rc.cpp:11
 msgid ""
-"This enables the soundserver to record and play sound at the same time. If "
-"you use applications like internet telephony, voice recognition or similar, "
-"you probably want this."
+"This option allows sound requests coming in from over the network to be accep"
+"ted, instead of just limiting the server to the local computer."
 msgstr ""
-"Ова овозможува звук-опслужувачот да "
-"снима и репродуција звук истовремено.  "
-"Ако користите апликации за Интернет "
-"телефонија, препознавање на говор или "
-"слично, ова веројатно ќе ви е потребно."
+"Оваа опција овозможува побарувањата за зв"
+"ук од преку мрежата да бидат прифатени, на"
+"место ограничување на опслужувачот на лок"
+"алниот компјутер."
 
-#: arts.cpp:139
-msgid "Response time"
-msgstr "Време за одговор"
-
-#: arts.cpp:140
-msgid ""
-"A small response time means: <ul><li>fast response<li>high CPU usage<li>more "
-"dropouts</ul><p>On the other hand, a large response time means:<ul><li>slow "
-"response<li>low CPU usage<li>less dropouts</ul>"
-msgstr ""
-"Мало време на одговор значи: <ul><li>брз "
-"одговор<li>голема употреба на "
-"процесорот<li>повеќе изостаноци</ul><p>Од "
-"друга страна, големо време на одговор "
-"значи:<ul><li>бавен одговор<li>мала употреба "
-"на процесорот<li>помалку изостаноци</ul>"
-
-#: arts.cpp:142
-msgid "&Fast (10ms)"
-msgstr "Брзо (10ms)"
-
-#: arts.cpp:143
-msgid "&Standard (50ms)"
-msgstr "Стандардно (50ms)"
-
-#: arts.cpp:144
-msgid "&Comfortable (250ms)"
-msgstr "Удобно (250ms)"
-
-#: arts.cpp:145
-msgid "&Don't care (large!)"
-msgstr "Неограничено (многу!)"
-
-#: arts.cpp:157
-msgid "&Use custom sound device:"
+#: rc.cpp:12
+msgid "Sound I/O"
 msgstr ""
 
-#: arts.cpp:165
+#: rc.cpp:13
 msgid "Use custom s&ampling rate:"
 msgstr ""
 
-#: arts.cpp:172
-msgid ""
-"Normally, the sound server defaults to using the device called "
-"<b>/dev/dsp</b> for sound output. That should work in most cases. An "
-"exception is for instance if you are using devfs, then you should use "
-"<b>/dev/sound/dsp</b> instead. Other alternatives are things like "
-"<b>/dev/dsp0</b> or <b>/dev/dsp1</b> if you have a soundcard that supports "
-"multiple outputs, or you have multiple soundcards."
+#: rc.cpp:14 rc.cpp:19
+msgid "Autodetect"
 msgstr ""
 
-#: arts.cpp:174
-msgid ""
-"Normally, the sound server defaults to using a sampling rate of 44100 Hz (CD "
-"quality), which is supported on almost any hardware. If you are using "
-"certain <b>Yamaha soundcards</b>, you might need to configure this to 48000 "
-"Hz here, if you are using <b>old SoundBlaster cards</b>, like SoundBlaster "
-"Pro, you might need to change this to 22050 Hz. All other values are "
-"possible, too, and may make sense in certain contexts (i.e. professional "
-"studio equipment)."
+#: rc.cpp:15
+msgid "16 bits (high)"
 msgstr ""
 
-#: arts.cpp:184
-msgid ""
-"<qt>The aRts soundserver cannot be initialized except at login time. If you "
-"modify any settings, you will have to restart your session in order for "
-"those changes to take effect.</qt>"
-msgstr ""
-"<qt>aRts звук-опслужувачот може да се пушти "
-"само при најавување на системот. Ако "
-"промените некои поставки, ќе треба да се "
-"одјавите и најавите за промените да имаат "
-"ефект.</qt>"
-
-#: arts.cpp:192
-msgid ""
-"<qt>If you are using a Yamaha soundcard, you might need to set the sampling "
-"rate to 48000 Hz.</qt>"
+#: rc.cpp:16
+msgid "8 bits (low)"
 msgstr ""
 
-#: arts.cpp:283
-msgid ""
-"There is an installation problem which doesn't allow starting the aRts "
-"server with realtime priority. \n"
-"The following problem occured:\n"
+#: rc.cpp:17
+msgid "Sound quality:"
 msgstr ""
-"Постоја проблеми со инсталацијата што не "
-"дозволуваат работа на aRts "
-"звук-опслужувачот со приоритет за реално "
-"време. \n"
-"Се појави следвниот проблем:\n"
 
-#: arts.cpp:306
-msgid ""
-"<h1>The aRts sound server</h1> Here you can configure aRts, KDE's sound "
-"server. This program not only allows you to hear your system sounds while "
-"simultaneously listening to some MP3 file or playing a game with a "
-"background music. It also allows you to apply different effects to your "
-"system sounds and provides programmers with an easy way to achieve sound "
-"support."
+#: rc.cpp:18
+msgid "Sound I/O method:"
 msgstr ""
-"<h1>aRts звук-опслужувачот</h1> Овде се "
-"конфигурира aRts, звук-опслужувачот на КДЕ. "
-"Овој програм не ви овозможува само да ги "
-"чуете системските звуци туку и "
-"истовремено слушање MP3 датотеки или "
-"заднинска музика во некоја игра. Исто "
-"така, овозможува примена на ефекти врз "
-"системските звуци и ги обезбедува "
-"програмерите со едноставен начин за "
-"користење на звук."
+
+#: rc.cpp:20
+msgid ""
+"If you are using a Yamaha soundcard, you might need to set the sampling rate "
+"to 48000 Hz."
+msgstr ""
+
+#: rc.cpp:21
+msgid " Audio buffer size (response time) "
+msgstr ""
+
+#: rc.cpp:22
+msgid ""
+"<ul>\n"
+"<li>low CPU usage</li>\n"
+"<li>slow response</li>\n"
+"<li>less dropouts</li>\n"
+"</ul>"
+msgstr ""
+
+#: rc.cpp:23
+msgid ""
+"<ul>\n"
+"<li>high CPU usage</li>\n"
+"<li>fast response</li>\n"
+"<li>more dropouts</li>\n"
+"</ul>"
+msgstr ""
+
+#: rc.cpp:24
+msgid "Latency: 150 milliseconds (7 fragments, 4096 bytes)"
+msgstr ""
+
+#: rc.cpp:25
+msgid "&Other custom options:"
+msgstr ""
+
+#: rc.cpp:26
+msgid "Enable full &duplex operation"
+msgstr "Овозможи работа во full duplex режим"
+
+#: rc.cpp:27
+msgid ""
+"This enables the soundserver to record and play sound at the same time. If yo"
+"u use applications like internet telephony, voice recognition or similar, you"
+" probably want this."
+msgstr ""
+"Ова овозможува звук-опслужувачот да снима"
+" и репродуција звук истовремено.  Ако кори"
+"стите апликации за Интернет телефонија, п"
+"репознавање на говор или слично, ова верој"
+"атно ќе ви е потребно."
+
+#: rc.cpp:28
+msgid "&Use custom sound device:"
+msgstr ""
+
+#~ msgid "Response time"
+#~ msgstr "Време за одговор"
+
+#~ msgid ""
+#~ "A small response time means: <ul><li>fast response<li>high CPU usage<li>more "
+#~ "dropouts</ul><p>On the other hand, a large response time means:<ul><li>slow "
+#~ "response<li>low CPU usage<li>less dropouts</ul>"
+#~ msgstr ""
+#~ "Мало време на одговор значи: <ul><li>брз "
+#~ "одговор<li>голема употреба на "
+#~ "процесорот<li>повеќе изостаноци</ul><p>Од "
+#~ "друга страна, големо време на одговор "
+#~ "значи:<ul><li>бавен одговор<li>мала употреба "
+#~ "на процесорот<li>помалку изостаноци</ul>"
+
+#~ msgid "&Fast (10ms)"
+#~ msgstr "Брзо (10ms)"
+
+#~ msgid "&Standard (50ms)"
+#~ msgstr "Стандардно (50ms)"
+
+#~ msgid "&Comfortable (250ms)"
+#~ msgstr "Удобно (250ms)"
+
+#~ msgid "&Don't care (large!)"
+#~ msgstr "Неограничено (многу!)"
+
+#~ msgid ""
+#~ "<qt>The aRts soundserver cannot be initialized except at login time. If you "
+#~ "modify any settings, you will have to restart your session in order for "
+#~ "those changes to take effect.</qt>"
+#~ msgstr ""
+#~ "<qt>aRts звук-опслужувачот може да се пушти "
+#~ "само при најавување на системот. Ако "
+#~ "промените некои поставки, ќе треба да се "
+#~ "одјавите и најавите за промените да имаат "
+#~ "ефект.</qt>"
