@@ -5,272 +5,573 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmdhcpd\n"
-"POT-Creation-Date: 2002-01-10 11:16+0100\n"
+"POT-Creation-Date: 2005-03-24 01:20+0100\n"
 "PO-Revision-Date: 2000-05-18 11:30+0100\n"
 "Last-Translator: Dragan Bocevski <d_bocevski@hotpop.com>\n"
 "Language-Team: Macedonian\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: dhcp.cpp:46
-msgid "Create"
-msgstr "Создади"
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr ""
 
-#: dhcp.cpp:61
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr ""
+
+#: confparser.cpp:66
+#, fuzzy
+msgid "Global Options"
+msgstr "Глобално"
+
+#: confparser.cpp:67
+msgid "Subnets"
+msgstr ""
+
+#: confparser.cpp:73 items.cpp:235 items.cpp:338
+msgid "Subnet "
+msgstr ""
+
+#: confparser.cpp:74 items.cpp:236
+msgid "Ranges"
+msgstr ""
+
+#: confparser.cpp:76 items.cpp:238
+msgid "Hosts"
+msgstr ""
+
+#: confparser.cpp:86 leaseparser.cpp:67
+msgid "Unable to read: "
+msgstr ""
+
+#: dhcpd_config.cpp:38
+msgid "No action available"
+msgstr ""
+
+#: items.cpp:128
+msgid ""
+"For any subnet on which addresses will be assigned dynamically,  there  must "
+"be at least one range statement."
+msgstr ""
+
+#: items.cpp:219
+msgid ""
+"Add a new subnet.\n"
+"The subnet statement is used to provide dhcpd with enough information to "
+"tell whether or not an IP address is on that subnet."
+msgstr ""
+
+#: items.cpp:248
+msgid "Add a new Host definition."
+msgstr ""
+
+#: items.cpp:272
+msgid "Edit a Host definition."
+msgstr ""
+
+#: items.cpp:316
+msgid ""
+"Edit an existing subnet.\n"
+"The subnet statement is used to provide dhcpd with enough information to "
+"tell whether or not an IP address is on that subnet."
+msgstr ""
+
+#: items.cpp:358
+msgid "Manage Options."
+msgstr ""
+
+#: items.cpp:516
+msgid "yes"
+msgstr ""
+
+#: items.cpp:516
+msgid "no"
+msgstr ""
+
+#: kcm_dhcpdconfig.cpp:52
+msgid "kcmdhcpdconfig"
+msgstr ""
+
+#: kcm_dhcpdconfig.cpp:52
+msgid "DHCPD Config"
+msgstr ""
+
+#: kcm_dhcpdconfig.cpp:53
+msgid "DHCP Server configuration utility"
+msgstr ""
+
+#: kcm_dhcpdconfig.cpp:54
+msgid "(c) 2003 Willy De la Court"
+msgstr ""
+
+#: kcm_dhcpdconfig.cpp:56
+msgid "Current maintainer"
+msgstr ""
+
+#: kcm_dhcpdconfig.cpp:57
+msgid "Original author"
+msgstr ""
+
+#: leaseparser.cpp:59
 msgid "Leases"
 msgstr ""
 
-#: dhcp.cpp:164 init.cpp:543
-msgid "Globals"
-msgstr "Глобално"
-
-#: dhcp.cpp:171 init.cpp:545
-msgid "Subnet"
-msgstr ""
-
-#: dhcp.cpp:178 init.cpp:547
-msgid "Group"
-msgstr "Група"
-
-#: scopeDialog.cpp:20
-msgid "IP Address Pool"
-msgstr "IP алатка за адреси"
-
-#: scopeDialog.cpp:24
-msgid "Default Lease Duration"
-msgstr ""
-
-#: scopeDialog.cpp:28
-msgid "Maximum Lease Duration"
-msgstr ""
-
-#: scopeDialog.cpp:44
-msgid "Advanced"
-msgstr "Напредно"
-
-#: scopeDialog.cpp:59
-msgid "Subnet:"
-msgstr ""
-
-#: scopeDialog.cpp:60
-msgid "Subnet Mask:"
-msgstr ""
-
-#: scopeDialog.cpp:61
-msgid "Routers:"
-msgstr "Рутери:"
-
-#: scopeDialog.cpp:62
-msgid "Broadcast:"
-msgstr "Пренос:"
-
-#: scopeDialog.cpp:63
-msgid "Domain Name:"
-msgstr "Име на доменот:"
-
-#: scopeDialog.cpp:64
-msgid "Name Servers:"
-msgstr "Name сервери"
-
-#: scopeDialog.cpp:65
-msgid "Wins Servers:"
-msgstr "Wins сервери:"
-
-#: scopeDialog.cpp:66
-msgid "Inclusion Range:"
-msgstr "Опсег на вклучување:"
-
-#: scopeDialog.cpp:67
-msgid "Start Address:"
-msgstr "Почетна адреса:"
-
-#: scopeDialog.cpp:68
-msgid "End Address:"
-msgstr "Крајна адреса:"
-
-#: scopeDialog.cpp:70
-msgid "Add ->"
-msgstr "Додади ->"
-
-#: scopeDialog.cpp:71
-msgid "<- Remove"
-msgstr "<- отсрани"
-
-#: scopeDialog.cpp:225
-msgid "Included Addresses:"
-msgstr "Вклучени адреси:"
-
-#: scopeDialog.cpp:232 scopeDialog.cpp:274
-msgid "Unlimited"
-msgstr "Неограничено"
-
-#: scopeDialog.cpp:233 scopeDialog.cpp:275
-msgid "Limited To:"
-msgstr "Ограничено на:"
-
-#: scopeDialog.cpp:255 scopeDialog.cpp:297
-msgid "Day(s)"
-msgstr "Денови"
-
-#: scopeDialog.cpp:256 scopeDialog.cpp:298
-msgid "Hour(s)"
-msgstr "Саати"
-
-#: scopeDialog.cpp:257 scopeDialog.cpp:299
-msgid "Minutes"
-msgstr "Минути"
-
-#: scopeDialog.cpp:327 scopeDialog.cpp:410 scopeDialog.cpp:530
-msgid "Scope Properties - "
-msgstr "Особини на досег - "
-
-#: leasesDialog.cpp:31
-msgid "Total addresses in Scope:"
-msgstr "Вкупно адреси на досег:"
-
-#: leasesDialog.cpp:35
-msgid "Active Leases:"
-msgstr ""
-
-#: leasesDialog.cpp:39
-#, fuzzy
-msgid "Available:"
-msgstr "Достапни:"
-
-#: leasesDialog.cpp:55
-msgid "IP:"
-msgstr "IP:"
-
-#: leasesDialog.cpp:59
+#. i18n: file addhost_ui.ui line 35
+#: rc.cpp:3 rc.cpp:30 rc.cpp:73 rc.cpp:109
+#, no-c-format
 msgid "Hostname:"
 msgstr "Име на компјутерот:"
 
-#: leasesDialog.cpp:63
-msgid "Starts:"
+#. i18n: file addhost_ui.ui line 64
+#: rc.cpp:6 rc.cpp:48 rc.cpp:115 rc.cpp:154 rc.cpp:181 rc.cpp:227 rc.cpp:239
+#, no-c-format
+msgid "Comment:"
+msgstr ""
+
+#. i18n: file addhost_ui.ui line 117
+#: rc.cpp:9 rc.cpp:39 rc.cpp:51 rc.cpp:190 rc.cpp:212
+#, no-c-format
+msgid "&New"
+msgstr ""
+
+#. i18n: file addserver_ui.ui line 43
+#: rc.cpp:12 rc.cpp:64
+#, fuzzy, no-c-format
+msgid "Name:"
+msgstr "Име"
+
+#. i18n: file addserver_ui.ui line 61
+#: rc.cpp:15 rc.cpp:55
+#, no-c-format
+msgid "File Locations"
+msgstr ""
+
+#. i18n: file addserver_ui.ui line 72
+#: rc.cpp:18 rc.cpp:58
+#, no-c-format
+msgid "Configuration:"
+msgstr ""
+
+#. i18n: file addserver_ui.ui line 83
+#: rc.cpp:21 rc.cpp:61
+#, no-c-format
+msgid "Leases:"
+msgstr ""
+
+#. i18n: file addserver_ui.ui line 122
+#: rc.cpp:24 rc.cpp:67
+#, fuzzy, no-c-format
+msgid "Remote"
+msgstr "<- отсрани"
+
+#. i18n: file addserver_ui.ui line 141
+#: rc.cpp:27 rc.cpp:70
+#, no-c-format
+msgid "Host Parameters"
+msgstr ""
+
+#. i18n: file addserver_ui.ui line 163
+#: rc.cpp:33 rc.cpp:76
+#, no-c-format
+msgid "SSH port:"
+msgstr ""
+
+#. i18n: file addserver_ui.ui line 174
+#: rc.cpp:36 rc.cpp:79
+#, fuzzy, no-c-format
+msgid "Username:"
+msgstr "Име на компјутерот:"
+
+#. i18n: file addsubnet_ui.ui line 35
+#: rc.cpp:42 rc.cpp:233
+#, no-c-format
+msgid "Netmask:"
+msgstr ""
+
+#. i18n: file addsubnet_ui.ui line 62
+#: rc.cpp:45 rc.cpp:236
+#, no-c-format
+msgid "Subnet:"
+msgstr ""
+
+#. i18n: file editserver_ui.ui line 261
+#: rc.cpp:82
+#, fuzzy, no-c-format
+msgid "Server Actions"
+msgstr "Name сервери"
+
+#. i18n: file editserver_ui.ui line 272
+#: rc.cpp:85
+#, no-c-format
+msgid "&Stop"
+msgstr ""
+
+#. i18n: file editserver_ui.ui line 280
+#: rc.cpp:88
+#, fuzzy, no-c-format
+msgid "S&tart"
 msgstr "Почнува:"
 
-#: leasesDialog.cpp:67
-msgid "Ends:"
-msgstr "Завршува:"
+#. i18n: file editserver_ui.ui line 288
+#: rc.cpp:91
+#, fuzzy, no-c-format
+msgid "R&estart"
+msgstr "Почнува:"
 
-#: leasesDialog.cpp:71
-msgid "Uid:"
-msgstr "Uid:"
+#. i18n: file editserver_ui.ui line 296
+#: rc.cpp:94
+#, no-c-format
+msgid "Re&load"
+msgstr ""
 
-#: leasesDialog.cpp:75
-msgid "Hardware:"
-msgstr "Хардвер:"
+#. i18n: file editserver_ui.ui line 349
+#: rc.cpp:97 rc.cpp:245
+#, no-c-format
+msgid "Show Errors"
+msgstr ""
 
-#: leasesDialog.cpp:79 leasesDialog.cpp:83 leasesDialog.cpp:87
-#: leasesDialog.cpp:91 leasesDialog.cpp:95 leasesDialog.cpp:99
-msgid "Empty"
-msgstr "Празно"
+#. i18n: file editserver_ui.ui line 357
+#: rc.cpp:100
+#, no-c-format
+msgid "Sho&w Log"
+msgstr ""
 
-#: leasesDialog.cpp:105
-msgid "IP number"
-msgstr "IP бројка"
+#. i18n: file leasesitem_ui.ui line 25
+#: rc.cpp:118
+#, fuzzy, no-c-format
+msgid "IP"
+msgstr "IP:"
 
-#: leasesDialog.cpp:106
+#. i18n: file leasesitem_ui.ui line 36
+#: rc.cpp:121
+#, no-c-format
 msgid "Name"
 msgstr "Име"
 
-#: leasesDialog.cpp:115
-msgid "Update"
-msgstr "Ажурирање"
-
-#: leasesDialog.cpp:120
-msgid "Exit"
-msgstr "Излез"
-
-#: advancedDialog.cpp:44
-msgid "Netbios DD server:"
-msgstr "Netbios DD сервер:"
-
-#: advancedDialog.cpp:45
-msgid "Netbios Node Type:"
-msgstr "Netbios тип на јазол:"
-
-#: advancedDialog.cpp:46
-msgid "Nis Domain:"
-msgstr "Nis домен:"
-
-#: advancedDialog.cpp:47
-msgid "Nis servers:"
-msgstr "Nis сервери:"
-
-#: advancedDialog.cpp:49
-msgid "X Window System Display Manager:"
-msgstr "X window System мена:"
-
-#: advancedDialog.cpp:50
-#, fuzzy
-msgid "X Window  System  Font servers:"
-msgstr "X window System мена:"
-
-#: advancedDialog.cpp:51
-#, fuzzy
-msgid "NTP servers:"
-msgstr "Nis сервери:"
-
-#: advancedDialog.cpp:52
-#, fuzzy
-msgid "Swap server:"
-msgstr "Nis сервери:"
-
-#: advancedDialog.cpp:53
-msgid "Resource Location servers:"
+#. i18n: file leasesitem_ui.ui line 47
+#: rc.cpp:124
+#, no-c-format
+msgid "Abandoned"
 msgstr ""
 
-#: advancedDialog.cpp:54
+#. i18n: file leasesitem_ui.ui line 79
+#: rc.cpp:127
+#, no-c-format
+msgid "IP:"
+msgstr "IP:"
+
+#. i18n: file leasesitem_ui.ui line 90
+#: rc.cpp:130
+#, fuzzy, no-c-format
+msgid "HostName:"
+msgstr "Име на компјутерот:"
+
+#. i18n: file leasesitem_ui.ui line 125
+#: rc.cpp:133
+#, no-c-format
+msgid "Lease start:"
+msgstr ""
+
+#. i18n: file leasesitem_ui.ui line 136
+#: rc.cpp:136
+#, no-c-format
+msgid "MAC:"
+msgstr ""
+
+#. i18n: file leasesitem_ui.ui line 155
+#: rc.cpp:139
+#, no-c-format
+msgid "Abandoned:"
+msgstr ""
+
+#. i18n: file leasesitem_ui.ui line 182
+#: rc.cpp:142
+#, no-c-format
+msgid "Lease end:"
+msgstr ""
+
+#. i18n: file msgdialog_ui.ui line 16
+#: rc.cpp:145
+#, no-c-format
+msgid "Log messages"
+msgstr ""
+
+#. i18n: file msgdialog_ui.ui line 66
+#: rc.cpp:148
+#, no-c-format
+msgid "C&lear"
+msgstr ""
+
+#. i18n: file oneitem_ui.ui line 54
+#: rc.cpp:157
+#, no-c-format
+msgid "Value:"
+msgstr ""
+
+#. i18n: file oneitem_ui.ui line 80
+#: rc.cpp:160 rc.cpp:166
+#, fuzzy, no-c-format
+msgid "Option:"
+msgstr "Глобално"
+
+#. i18n: file oneitem_ui.ui line 101
+#: rc.cpp:163 rc.cpp:169
+#, no-c-format
+msgid "textLabel2"
+msgstr ""
+
+#. i18n: file oneitemtime_ui.ui line 90
+#: rc.cpp:172
+#, no-c-format
+msgid "Day(s)"
+msgstr "Денови"
+
+#. i18n: file oneitemtime_ui.ui line 106
+#: rc.cpp:175
+#, no-c-format
+msgid "Hour(s)"
+msgstr "Саати"
+
+#. i18n: file oneitemtime_ui.ui line 122
+#: rc.cpp:178
+#, no-c-format
+msgid "Minutes"
+msgstr "Минути"
+
+#. i18n: file optionsitem_ui.ui line 33
+#: rc.cpp:184
+#, fuzzy, no-c-format
+msgid "Option"
+msgstr "Глобално"
+
+#. i18n: file optionsitem_ui.ui line 44
+#: rc.cpp:187
+#, no-c-format
+msgid "Value"
+msgstr ""
+
+#. i18n: file optionsitem_ui.ui line 89
+#: rc.cpp:193
+#, no-c-format
+msgid "D&elete"
+msgstr ""
+
+#. i18n: file optionsitem_ui.ui line 99
+#: rc.cpp:196
+#, fuzzy, no-c-format
+msgid "One Option"
+msgstr "Глобално"
+
+#. i18n: file rangeitem_ui.ui line 69
+#: rc.cpp:200 rc.cpp:209
+#, fuzzy, no-c-format
+msgid "IP to:"
+msgstr "IP:"
+
+#. i18n: file rangeitem_ui.ui line 82
+#: rc.cpp:203 rc.cpp:206
+#, fuzzy, no-c-format
+msgid "IP from:"
+msgstr "IP:"
+
+#. i18n: file rangesitem_ui.ui line 110
+#: rc.cpp:218
+#, no-c-format
+msgid "From"
+msgstr ""
+
+#. i18n: file rangesitem_ui.ui line 121
+#: rc.cpp:221
+#, no-c-format
+msgid "To"
+msgstr ""
+
+#. i18n: file rangesitem_ui.ui line 132
+#: rc.cpp:224 rc.cpp:230
+#, no-c-format
+msgid "Bootp"
+msgstr ""
+
+#. i18n: file syntaxerror_ui.ui line 69
+#: rc.cpp:251
+#, no-c-format
+msgid "Line"
+msgstr ""
+
+#. i18n: file syntaxerror_ui.ui line 80
+#: rc.cpp:254
+#, no-c-format
+msgid "Data"
+msgstr ""
+
+#: server.cpp:36
+msgid "Add a new DHCP server to manage"
+msgstr ""
+
+#: server.cpp:37
 #, fuzzy
-msgid "Imagen Impress servers:"
+msgid "Servers"
 msgstr "Name сервери"
 
-#: advancedDialog.cpp:55
+#: server.cpp:65
+msgid "Edit DHCP server configuration"
+msgstr ""
+
+#: server.cpp:157
+msgid ""
+"A number of errors (%1) were detected when loading the configuration file. "
+"Use the 'Show Errors' button to review."
+msgstr ""
+
+#: server.cpp:220
+msgid ""
+"Executing '%1'\n"
+"\n"
+msgstr ""
+
+#: server.cpp:224
+msgid ""
+"Execution of command '%1' failed.\n"
+" Return code is '%2'."
+msgstr ""
+
+#: server.cpp:226
+#, c-format
+msgid "Feature only implemented in KDE version %1."
+msgstr ""
+
 #, fuzzy
-msgid "Lpr Servers:"
-msgstr "Name сервери"
+#~ msgid "IP to"
+#~ msgstr "IP:"
 
-#: advancedDialog.cpp:56
 #, fuzzy
-msgid "Cookie servers:"
-msgstr "Nis сервери:"
+#~ msgid "IP from"
+#~ msgstr "IP:"
 
-#: advancedDialog.cpp:57
-msgid "MIT-LCS UDP Log Servers:"
-msgstr ""
+#~ msgid "Create"
+#~ msgstr "Создади"
 
-#: advancedDialog.cpp:58
+#~ msgid "Group"
+#~ msgstr "Група"
+
+#~ msgid "IP Address Pool"
+#~ msgstr "IP алатка за адреси"
+
+#~ msgid "Advanced"
+#~ msgstr "Напредно"
+
+#~ msgid "Routers:"
+#~ msgstr "Рутери:"
+
+#~ msgid "Broadcast:"
+#~ msgstr "Пренос:"
+
+#~ msgid "Domain Name:"
+#~ msgstr "Име на доменот:"
+
+#~ msgid "Name Servers:"
+#~ msgstr "Name сервери"
+
+#~ msgid "Wins Servers:"
+#~ msgstr "Wins сервери:"
+
+#~ msgid "Inclusion Range:"
+#~ msgstr "Опсег на вклучување:"
+
+#~ msgid "Start Address:"
+#~ msgstr "Почетна адреса:"
+
+#~ msgid "End Address:"
+#~ msgstr "Крајна адреса:"
+
+#~ msgid "Add ->"
+#~ msgstr "Додади ->"
+
+#~ msgid "Included Addresses:"
+#~ msgstr "Вклучени адреси:"
+
+#~ msgid "Unlimited"
+#~ msgstr "Неограничено"
+
+#~ msgid "Limited To:"
+#~ msgstr "Ограничено на:"
+
+#~ msgid "Scope Properties - "
+#~ msgstr "Особини на досег - "
+
+#~ msgid "Total addresses in Scope:"
+#~ msgstr "Вкупно адреси на досег:"
+
 #, fuzzy
-msgid "IEN 116 name servers:"
-msgstr "Name сервери"
+#~ msgid "Available:"
+#~ msgstr "Достапни:"
 
-#: advancedDialog.cpp:59
+#~ msgid "Ends:"
+#~ msgstr "Завршува:"
+
+#~ msgid "Uid:"
+#~ msgstr "Uid:"
+
+#~ msgid "Hardware:"
+#~ msgstr "Хардвер:"
+
+#~ msgid "Empty"
+#~ msgstr "Празно"
+
+#~ msgid "IP number"
+#~ msgstr "IP бројка"
+
+#~ msgid "Update"
+#~ msgstr "Ажурирање"
+
+#~ msgid "Exit"
+#~ msgstr "Излез"
+
+#~ msgid "Netbios DD server:"
+#~ msgstr "Netbios DD сервер:"
+
+#~ msgid "Netbios Node Type:"
+#~ msgstr "Netbios тип на јазол:"
+
+#~ msgid "Nis Domain:"
+#~ msgstr "Nis домен:"
+
+#~ msgid "Nis servers:"
+#~ msgstr "Nis сервери:"
+
+#~ msgid "X Window System Display Manager:"
+#~ msgstr "X window System мена:"
+
 #, fuzzy
-msgid "Time servers:"
-msgstr "Nis сервери:"
+#~ msgid "X Window  System  Font servers:"
+#~ msgstr "X window System мена:"
 
-#: advancedDialog.cpp:114
-msgid "None"
-msgstr ""
+#, fuzzy
+#~ msgid "NTP servers:"
+#~ msgstr "Nis сервери:"
 
-#: advancedDialog.cpp:115
-msgid "B-node (1)"
-msgstr ""
+#, fuzzy
+#~ msgid "Swap server:"
+#~ msgstr "Nis сервери:"
 
-#: advancedDialog.cpp:116
-msgid "P-node (2)"
-msgstr ""
+#, fuzzy
+#~ msgid "Imagen Impress servers:"
+#~ msgstr "Name сервери"
 
-#: advancedDialog.cpp:117
-msgid "M-node (4)"
-msgstr ""
+#, fuzzy
+#~ msgid "Cookie servers:"
+#~ msgstr "Nis сервери:"
 
-#: advancedDialog.cpp:118
-msgid "H-node (8)"
-msgstr ""
+#, fuzzy
+#~ msgid "IEN 116 name servers:"
+#~ msgstr "Name сервери"
 
-#: advancedDialog.cpp:192 advancedDialog.cpp:220
-msgid "Advanced Options - "
-msgstr ""
+#, fuzzy
+#~ msgid "Time servers:"
+#~ msgstr "Nis сервери:"
