@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcron\n"
-"POT-Creation-Date: 2002-01-21 03:06+0100\n"
+"POT-Creation-Date: 2002-09-16 03:06+0200\n"
 "PO-Revision-Date: 2000-04-20 17:47+0100\n"
 "Last-Translator: Dragan Sekulovski <d_sekulovski@yahoo.com>\n"
 "Language-Team: Macedonian <mkdeteam@yahoo.com>\n"
@@ -13,9 +13,21 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: ctcron.cpp:62
+#: ctcron.cpp:64
 msgid "(System Crontab)"
 msgstr "(Системска Cron-табела)"
+
+#: ctcron.cpp:74
+msgid "No password entry found for user '%1'"
+msgstr ""
+
+#: ctcron.cpp:91
+msgid "No password entry found for uid '%1'"
+msgstr ""
+
+#: ctcron.cpp:251
+msgid "An error occurred while updating crontab."
+msgstr ""
 
 #: ctmonth.cpp:34
 msgid "every month "
@@ -279,53 +291,54 @@ msgstr " и "
 msgid ", "
 msgstr ","
 
-#: ktapp.cpp:54 ktapp.cpp:453
+#: ktapp.cpp:50 ktapp.cpp:456
 msgid "Task Scheduler"
 msgstr "Распоредувач на задачи"
 
-#: ktapp.cpp:92
+#: ktapp.cpp:74
+msgid ""
+"The following error occurred while initializing KCron:\n"
+"\n"
+"%1\n"
+"\n"
+"KCron will now exit.\n"
+msgstr ""
+
+#: ktapp.cpp:98
 msgid ""
 "You can use this application to schedule programs to run in the background.\n"
 "To schedule a new task now, click on the Tasks folder and select Edit/New "
 "from the menu."
 msgstr ""
 
-#: ktapp.cpp:92
+#: ktapp.cpp:98
 #, fuzzy
 msgid "Welcome to the Task Scheduler"
 msgstr "Распоредувач на задачи"
 
-#: ktapp.cpp:137
-msgid "&Print"
-msgstr ""
-
-#: ktapp.cpp:143
-msgid "Cu&t"
-msgstr "Исечи"
-
-#: ktapp.cpp:147
+#: ktapp.cpp:159
 msgid "&New..."
 msgstr "Нов"
 
-#: ktapp.cpp:148
+#: ktapp.cpp:160
 msgid "M&odify..."
 msgstr "Промени"
 
-#: ktapp.cpp:151 kttask.cpp:104 ktvariable.cpp:73
+#: ktapp.cpp:163 kttask.cpp:104 ktvariable.cpp:73
 msgid "&Enabled"
 msgstr "Вклучено"
 
-#: ktapp.cpp:153
+#: ktapp.cpp:165
 msgid "&Run Now"
 msgstr "Изврши сега"
 
-#: ktapp.cpp:200 ktapp.cpp:337 ktapp.cpp:344 ktapp.cpp:363 ktapp.cpp:370
-#: ktapp.cpp:377 ktapp.cpp:384 ktapp.cpp:391 ktapp.cpp:398 ktapp.cpp:415
-#: ktapp.cpp:422 ktapp.cpp:434 ktapp.cpp:446
+#: ktapp.cpp:209 ktapp.cpp:336 ktapp.cpp:347 ktapp.cpp:366 ktapp.cpp:373
+#: ktapp.cpp:380 ktapp.cpp:387 ktapp.cpp:394 ktapp.cpp:401 ktapp.cpp:418
+#: ktapp.cpp:425 ktapp.cpp:437 ktapp.cpp:449
 msgid "Ready."
 msgstr "Подготвено"
 
-#: ktapp.cpp:301
+#: ktapp.cpp:295
 msgid ""
 "Scheduled tasks have been modified.\n"
 "Do you want to save changes?"
@@ -333,136 +346,109 @@ msgstr ""
 "Распоредените задачи се променети.\n"
 "Дали сакате да ги зачувате промените?"
 
-#: ktapp.cpp:335
+#: ktapp.cpp:334
 msgid "Saving..."
 msgstr "Зачувувам..."
 
-#: ktapp.cpp:342
+#: ktapp.cpp:345
 #, fuzzy
 msgid "Printing..."
 msgstr "Зачувувам..."
 
-#: ktapp.cpp:360
+#: ktapp.cpp:363
 msgid "Cutting to clipboard..."
 msgstr "Сечам..."
 
-#: ktapp.cpp:368
+#: ktapp.cpp:371
 msgid "Copying to clipboard..."
 msgstr "Копирам..."
 
-#: ktapp.cpp:375
+#: ktapp.cpp:378
 msgid "Pasting from clipboard..."
 msgstr "Внесувам..."
 
-#: ktapp.cpp:382
+#: ktapp.cpp:385
 msgid "Adding new entry..."
 msgstr "Додавам нова ставка..."
 
-#: ktapp.cpp:389
+#: ktapp.cpp:392
 msgid "Modifying entry..."
 msgstr "Менувам ставка..."
 
-#: ktapp.cpp:396
+#: ktapp.cpp:399
 msgid "Deleting entry..."
 msgstr "Бришам ставка..."
 
-#: ktapp.cpp:405
+#: ktapp.cpp:408
 msgid "Disabling entry..."
 msgstr "Исклучувам ставка..."
 
-#: ktapp.cpp:411
+#: ktapp.cpp:414
 msgid "Enabling entry..."
 msgstr "Вклучувам ставка..."
 
-#: ktapp.cpp:420
+#: ktapp.cpp:423
 msgid "Running command..."
 msgstr "Извршувам наредба..."
 
-#: ktapp.cpp:516
-msgid "Save tasks and variables."
-msgstr "Зачувај задачи и променливи."
-
-#: ktapp.cpp:519
-msgid "Print all or current crontab(s)."
-msgstr ""
-
-#: ktapp.cpp:522
-#, fuzzy, c-format
-msgid "Exit %1."
-msgstr "Излез"
-
-#: ktapp.cpp:526
-msgid "Cut the selected task or variable and put on the clipboard."
-msgstr "Исечи ја избраната задача или променлива."
-
-#: ktapp.cpp:529
-msgid "Copy the selected task or variable to the clipboard."
-msgstr ""
-"Копирај ја избраната задача или "
-"променлива."
-
-#: ktapp.cpp:532
-msgid "Paste task or variable from the clipboard."
-msgstr "Внеси ја избраната задача или променлива."
-
-#: ktapp.cpp:535
+#: ktapp.cpp:499
 msgid "Create a new task or variable."
 msgstr "Создади нова задача или променлива."
 
-#: ktapp.cpp:538
+#: ktapp.cpp:502
 msgid "Edit the selected task or variable."
 msgstr ""
 "Менувај ја избраната задача или "
 "променлива."
 
-#: ktapp.cpp:541
+#: ktapp.cpp:505
 msgid "Delete the selected task or variable."
 msgstr ""
 "Избриши ја избраната задача или "
 "променлива."
 
-#: ktapp.cpp:544
+#: ktapp.cpp:508
 msgid "Enable/disable the selected task or variable."
 msgstr ""
 "Вклучи/Исклучи ја избраната задача или "
 "променлива."
 
-#: ktapp.cpp:547
+#: ktapp.cpp:511
 msgid "Run the selected task now."
 msgstr "Изврши ја иѕбраната задача веднаш."
 
-#: ktapp.cpp:551
+#: ktapp.cpp:515
 #, fuzzy
 msgid "Enable/disable the tool bar."
 msgstr "Вклучи/Исклучи ги алатките."
 
-#: ktapp.cpp:554
+#: ktapp.cpp:518
 msgid "Enable/disable the status bar."
 msgstr "Вклучи/Исклучи ја статусната линија."
 
-#: ktview.cpp:82
+#: ktview.cpp:83
 msgid "Users/Tasks/Variables"
 msgstr "Корисници/Задачи/Променливи"
 
-#: ktview.cpp:84
+#: ktview.cpp:85
 msgid "Tasks/Variables"
 msgstr "Задачи/Променливи"
 
-#: ktview.cpp:86
+#: ktview.cpp:87
 msgid "Value"
 msgstr "Вредност"
 
-#: ktview.cpp:87
+#: ktview.cpp:88
 msgid "Description"
 msgstr "Опис"
 
-#: ktview.cpp:253
+#: ktview.cpp:254
 msgid ""
 "_: user on host\n"
 "%1 <%2> on %3"
 msgstr ""
 
-#: ktview.cpp:261
+#: ktview.cpp:262
 msgid "Scheduled Tasks"
 msgstr ""
 
@@ -560,11 +546,13 @@ msgid "Months"
 msgstr "Месеци"
 
 #: kttask.cpp:137
-msgid "Days of the Month"
+#, fuzzy
+msgid "Days of Month"
 msgstr "Денови од месецот"
 
 #: kttask.cpp:165
-msgid "Days of the Week"
+#, fuzzy
+msgid "Days of Week"
 msgstr "Денови од неделата"
 
 #: kttask.cpp:184
@@ -572,7 +560,8 @@ msgid "Daily"
 msgstr "Дневно"
 
 #: kttask.cpp:190
-msgid "Run Every Day"
+#, fuzzy
+msgid "Run every day"
 msgstr "Извршувај секој ден"
 
 #: kttask.cpp:195
@@ -591,48 +580,48 @@ msgstr ""
 msgid "Minutes"
 msgstr "Минути"
 
-#: kttask.cpp:402
+#: kttask.cpp:403
 msgid ""
 "Please enter the following to schedule the task:\n"
 msgstr ""
 "Внесете го следното за да распоредите "
 "задача:\n"
 
-#: kttask.cpp:408
+#: kttask.cpp:409
 msgid "the program to run"
 msgstr "програмот кој се извршува"
 
-#: kttask.cpp:420
+#: kttask.cpp:421
 msgid "the months"
 msgstr "месеците"
 
-#: kttask.cpp:441
+#: kttask.cpp:442
 msgid "either the days of the month or the days of the week"
 msgstr ""
 "деновите од месецот или деновите од "
 "неделата"
 
-#: kttask.cpp:457
+#: kttask.cpp:458
 msgid "the hours"
 msgstr "часовите"
 
-#: kttask.cpp:473
+#: kttask.cpp:474
 msgid "the minutes"
 msgstr "минутите"
 
-#: kttask.cpp:501
+#: kttask.cpp:502
 #, fuzzy
 msgid "Cannot locate program. Please re-enter."
 msgstr ""
 "Не можам да ја пронајдам датотеката. "
 "Внесете повторно"
 
-#: kttask.cpp:509
+#: kttask.cpp:510
 #, fuzzy
 msgid "Program is not an executable file. Please re-enter."
 msgstr "Датотеката не е извршна. Внесете повторно"
 
-#: kttask.cpp:577
+#: kttask.cpp:578
 #, fuzzy
 msgid "Only local or mounted files can be executed by crontab."
 msgstr "Поддржани се само локални датотеки"
@@ -680,30 +669,20 @@ msgstr ""
 
 #: ktprintopt.cpp:31
 #, fuzzy
-msgid "Print Cron&tab"
+msgid "Print cron&tab"
 msgstr "(Системска Cron-табела)"
 
 #: ktprintopt.cpp:34
-msgid "Print &All Users"
+msgid "Print &all users"
 msgstr ""
 
-#: main.cpp:26
+#: main.cpp:23
 msgid "KDE Task Scheduler"
 msgstr "KDE Распоредувач на задачи"
 
-#: main.cpp:28
+#: main.cpp:25
 msgid "KCron"
 msgstr "KCron"
-
-#: main.cpp:53
-msgid "KCron fatal error: Unable to read or write file."
-msgstr ""
-"KCron фатална грешка: Неможам да прочитам "
-"или запишам датотека."
-
-#: main.cpp:58
-msgid "KCron fatal error: Unknown."
-msgstr "KCron фатална грешка: Непозната."
 
 #: _translatorinfo.cpp:1
 msgid ""
@@ -716,6 +695,31 @@ msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr ""
+
+#~ msgid "KCron fatal error: Unable to read or write file."
+#~ msgstr "KCron фатална грешка: Неможам да прочитам или запишам датотека."
+
+#~ msgid "KCron fatal error: Unknown."
+#~ msgstr "KCron фатална грешка: Непозната."
+
+#~ msgid "Cu&t"
+#~ msgstr "Исечи"
+
+#~ msgid "Save tasks and variables."
+#~ msgstr "Зачувај задачи и променливи."
+
+#, fuzzy
+#~ msgid "Exit %1."
+#~ msgstr "Излез"
+
+#~ msgid "Cut the selected task or variable and put on the clipboard."
+#~ msgstr "Исечи ја избраната задача или променлива."
+
+#~ msgid "Copy the selected task or variable to the clipboard."
+#~ msgstr "Копирај ја избраната задача или променлива."
+
+#~ msgid "Paste task or variable from the clipboard."
+#~ msgstr "Внеси ја избраната задача или променлива."
 
 #~ msgid "Feb"
 #~ msgstr "Фев"
