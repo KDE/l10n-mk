@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcminfo\n"
-"POT-Creation-Date: 2002-03-19 12:37+0100\n"
+"POT-Creation-Date: 2002-10-31 02:57+0100\n"
 "PO-Revision-Date: 2000-11-11 21:41+0100\n"
 "Last-Translator: Danko Ilik <danko@mindless.com>\n"
 "Language-Team: Macedonian\n"
@@ -135,7 +135,7 @@ msgid "Unknown Order %1"
 msgstr "Непознат редослед %1"
 
 #: info.cpp:248 info_aix.cpp:299 info_hpux.cpp:372 info_hpux.cpp:662
-#: info_linux.cpp:179 info_netbsd.cpp:74 info_openbsd.cpp:71
+#: info_linux.cpp:219 info_netbsd.cpp:74 info_openbsd.cpp:71
 #: info_solaris.cpp:688
 msgid "Value"
 msgstr "Вредност"
@@ -214,7 +214,8 @@ msgid "Image Byte Order"
 msgstr "Image Byte Order"
 
 #: info.cpp:341
-msgid "Sorry, no information available about %1!"
+#, fuzzy
+msgid "No information available about %1!"
 msgstr "Жалам, нема достапна инфомација за %1!"
 
 #: info.cpp:374
@@ -239,7 +240,7 @@ msgstr ""
 "Оваа листа прикажува системски "
 "информации за избраната категорија."
 
-#: info.cpp:411 memory.cpp:257
+#: info.cpp:411 memory.cpp:248
 msgid "kcminfo"
 msgstr ""
 
@@ -247,7 +248,7 @@ msgstr ""
 msgid "KDE Panel System Information Control Module"
 msgstr ""
 
-#: info.cpp:414 memory.cpp:260
+#: info.cpp:414 memory.cpp:251
 msgid "(c) 1998 - 2002 Helge Deller"
 msgstr ""
 
@@ -267,33 +268,33 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: info_aix.cpp:445 info_hpux.cpp:441 info_hpux.cpp:567 info_linux.cpp:304
-#: info_linux.cpp:412 info_netbsd.cpp:284
+#: info_aix.cpp:445 info_hpux.cpp:441 info_hpux.cpp:567 info_linux.cpp:351
+#: info_linux.cpp:459 info_netbsd.cpp:284
 msgid "MB"
 msgstr "MB"
 
-#: info_aix.cpp:450 info_fbsd.cpp:185 info_hpux.cpp:572 info_linux.cpp:442
+#: info_aix.cpp:450 info_fbsd.cpp:264 info_hpux.cpp:572 info_linux.cpp:489
 #: info_netbsd.cpp:182 info_netbsd.cpp:285 info_openbsd.cpp:199
 #: info_openbsd.cpp:282 info_solaris.cpp:185
 msgid "Device"
 msgstr "Уред"
 
-#: info_aix.cpp:451 info_fbsd.cpp:186 info_hpux.cpp:573 info_linux.cpp:443
+#: info_aix.cpp:451 info_fbsd.cpp:265 info_hpux.cpp:573 info_linux.cpp:490
 #: info_netbsd.cpp:286 info_openbsd.cpp:283 info_solaris.cpp:186
 msgid "Mount Point"
 msgstr "Папка на монтирање"
 
-#: info_aix.cpp:452 info_fbsd.cpp:187 info_hpux.cpp:574 info_linux.cpp:444
+#: info_aix.cpp:452 info_fbsd.cpp:266 info_hpux.cpp:574 info_linux.cpp:491
 #: info_netbsd.cpp:287 info_openbsd.cpp:284 info_solaris.cpp:187
 msgid "FS Type"
 msgstr "Тип на FS"
 
-#: info_aix.cpp:453 info_hpux.cpp:575 info_linux.cpp:445 info_netbsd.cpp:288
+#: info_aix.cpp:453 info_hpux.cpp:575 info_linux.cpp:492 info_netbsd.cpp:288
 #: info_solaris.cpp:188
 msgid "Total Size"
 msgstr "Вкупна големина"
 
-#: info_aix.cpp:454 info_hpux.cpp:576 info_linux.cpp:446 info_netbsd.cpp:289
+#: info_aix.cpp:454 info_hpux.cpp:576 info_linux.cpp:493 info_netbsd.cpp:289
 #: info_solaris.cpp:191
 msgid "Free Size"
 msgstr "Слободни"
@@ -302,11 +303,11 @@ msgstr "Слободни"
 msgid "n/a"
 msgstr "n/a"
 
-#: info_fbsd.cpp:76
+#: info_fbsd.cpp:101
 msgid "CPU %1: %2, unknown speed"
 msgstr "CPU %1: %2, непозната брзина"
 
-#: info_fbsd.cpp:188 info_linux.cpp:447 info_netbsd.cpp:290
+#: info_fbsd.cpp:267 info_linux.cpp:494 info_netbsd.cpp:290
 #: info_openbsd.cpp:285 info_solaris.cpp:195
 msgid "Mount Options"
 msgstr "Опции за монтирање"
@@ -384,9 +385,8 @@ msgid "Size of one Page"
 msgstr "Големина на една страна"
 
 #: info_hpux.cpp:625
-msgid ""
-"Sorry, Audio-Support (Alib) was disabled during configuration and "
-"compile-time!"
+#, fuzzy
+msgid "Audio-Support (Alib) was disabled during configuration and compile-time!"
 msgstr ""
 "Жал ми е, но аудио поддршката со Alib е "
 "оневозможена при конфигурирањето и "
@@ -582,15 +582,16 @@ msgstr "Големина на Ev Buffer"
 msgid "Ext Number"
 msgstr "Ext број"
 
-#: info_linux.cpp:192 main.cpp:68
+#: info_linux.cpp:232 main.cpp:68
 msgid "DMA-Channel"
 msgstr "ДМА-канал"
 
-#: info_linux.cpp:193 info_linux.cpp:216
-msgid "used by"
+#: info_linux.cpp:233 info_linux.cpp:256
+#, fuzzy
+msgid "Used By"
 msgstr "користено од"
 
-#: info_linux.cpp:215
+#: info_linux.cpp:255
 msgid "I/O-Range"
 msgstr "В/И-ранг"
 
@@ -743,121 +744,157 @@ msgstr "Партиции"
 msgid "X-Server"
 msgstr "X-опслужувач"
 
-#: memory.cpp:88
+#: memory.cpp:84
+#, fuzzy
+msgid "%1 GB"
+msgstr "%1 МБ"
+
+#: memory.cpp:86
 msgid "%1 MB"
+msgstr "%1 МБ"
+
+#: memory.cpp:88
+#, fuzzy
+msgid "%1 KB"
 msgstr "%1 МБ"
 
 #: memory.cpp:105
 msgid "Not available."
 msgstr "Недостапно."
 
-#: memory.cpp:109
-msgid "Memory Information"
-msgstr "Информации за меморијата"
-
-#: memory.cpp:129
-msgid "Total physical memory"
+#: memory.cpp:120
+#, fuzzy
+msgid "Total physical memory:"
 msgstr "Вкупно физичка меморија"
 
-#: memory.cpp:132
-msgid "Free physical memory"
+#: memory.cpp:123
+#, fuzzy
+msgid "Free physical memory:"
 msgstr "Слободна физичка меморија"
 
-#: memory.cpp:137
-msgid "Shared memory"
+#: memory.cpp:128
+#, fuzzy
+msgid "Shared memory:"
 msgstr "Делена меморија"
 
-#: memory.cpp:140
-msgid "Buffer memory"
-msgstr "Бафер-меморија"
+#: memory.cpp:131
+msgid "Disk buffers:"
+msgstr ""
 
-#: memory.cpp:144
-msgid "Active memory"
+#: memory.cpp:135
+#, fuzzy
+msgid "Active memory:"
 msgstr "Активна меморија"
 
-#: memory.cpp:147
-msgid "Inactive memory"
+#: memory.cpp:138
+#, fuzzy
+msgid "Inactive memory:"
 msgstr "Неактивна меморија"
 
-#: memory.cpp:152
-#, fuzzy
-msgid "Cached memory"
-msgstr "Делена меморија"
+#: memory.cpp:143
+msgid "Disk cache:"
+msgstr ""
 
-#: memory.cpp:156
-msgid "Total swap memory"
+#: memory.cpp:147
+#, fuzzy
+msgid "Total swap memory:"
 msgstr "Вкупна меморија од страничење"
 
-#: memory.cpp:159
-msgid "Free swap memory"
+#: memory.cpp:150
+#, fuzzy
+msgid "Free swap memory:"
 msgstr "Слободна меморија од страничење"
 
-#: memory.cpp:197
-msgid "Total memory"
+#: memory.cpp:188
+#, fuzzy
+msgid "Total Memory"
 msgstr "Вкупна меморија"
 
-#: memory.cpp:200
-msgid "Physical memory"
+#: memory.cpp:191
+#, fuzzy
+msgid "Physical Memory"
 msgstr "Физичка меморија"
 
-#: memory.cpp:203
-msgid "Virtual memory"
-msgstr "Виртуелна меморија"
+#: memory.cpp:194
+msgid "Swap Space"
+msgstr ""
 
-#: memory.cpp:246
+#: memory.cpp:237
 msgid ""
 "<h1>Memory Information</h1> This display shows you the current memory usage "
 "of your system. The values are updated on a regular basis and give you an "
 "overview of the physical and virtual used memory."
 msgstr ""
 
-#: memory.cpp:258
+#: memory.cpp:249
 msgid "KDE Panel Memory Information Control Module"
 msgstr ""
 
-#: memory.cpp:338
+#: memory.cpp:329
 msgid "%1 free"
 msgstr ""
 
-#: memory.cpp:359
+#: memory.cpp:350
 msgid "%1 bytes ="
 msgstr "%1 бајти ="
 
-#: memory.cpp:390
-msgid "used+shared"
+#: memory.cpp:381
+msgid "Application Data"
 msgstr ""
 
-#: memory.cpp:392
+#: memory.cpp:383
+msgid "Disk Buffers"
+msgstr ""
+
+#: memory.cpp:385
+msgid "Disk Cache"
+msgstr ""
+
+#: memory.cpp:387
 #, fuzzy
-msgid "buffer mem"
-msgstr "Бафер-меморија"
+msgid "Free Physical Memory"
+msgstr "Слободна физичка меморија"
 
-#: memory.cpp:394
-msgid "cached ram"
-msgstr ""
-
-#: memory.cpp:396
-msgid "free ram"
-msgstr ""
-
-#: memory.cpp:407 memory.cpp:427
+#: memory.cpp:398 memory.cpp:418
 #, fuzzy
-msgid "used swap"
+msgid "Used Swap"
 msgstr "користено од"
 
-#: memory.cpp:409
+#: memory.cpp:400
 #, fuzzy
-msgid "free swap"
+msgid "Free Swap"
 msgstr "Слободна меморија од страничење"
 
-#: memory.cpp:425
+#: memory.cpp:416
 #, fuzzy
-msgid "used ram"
-msgstr "користено од"
+msgid "Used Physical Memory"
+msgstr "Физичка меморија"
 
-#: memory.cpp:429
-msgid "free ram+swap"
-msgstr ""
+#: memory.cpp:420
+#, fuzzy
+msgid "Total Free Memory"
+msgstr "Вкупна меморија"
+
+#~ msgid "Memory Information"
+#~ msgstr "Информации за меморијата"
+
+#~ msgid "Buffer memory"
+#~ msgstr "Бафер-меморија"
+
+#, fuzzy
+#~ msgid "Cached memory"
+#~ msgstr "Делена меморија"
+
+#~ msgid "Virtual memory"
+#~ msgstr "Виртуелна меморија"
+
+#, fuzzy
+#~ msgid "buffer mem"
+#~ msgstr "Бафер-меморија"
+
+#, fuzzy
+#~ msgid "used ram"
+#~ msgstr "користено од"
 
 #~ msgid "%1 used"
 #~ msgstr "%1 употребени"
