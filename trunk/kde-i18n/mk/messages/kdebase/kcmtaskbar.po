@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmtaskbar\n"
-"POT-Creation-Date: 2002-03-19 12:37+0100\n"
+"POT-Creation-Date: 2002-11-16 02:57+0100\n"
 "PO-Revision-Date: 2000-07-12 22:00+0100\n"
 "Last-Translator: Danko Ilik <danko@mindless.com>\n"
 "Language-Team: Macedonian\n"
@@ -53,11 +53,23 @@ msgstr ""
 msgid "Minimize Task"
 msgstr ""
 
-#: kcmtaskbar.cpp:124 kcmtaskbar.cpp:125 kcmtaskbar.cpp:126
+#: kcmtaskbar.cpp:87
+msgid "Never"
+msgstr ""
+
+#: kcmtaskbar.cpp:87
+msgid "When Taskbar Full"
+msgstr ""
+
+#: kcmtaskbar.cpp:88
+msgid "Always"
+msgstr ""
+
+#: kcmtaskbar.cpp:167 kcmtaskbar.cpp:168 kcmtaskbar.cpp:169
 msgid "Cycle Through Windows"
 msgstr ""
 
-#: kcmtaskbar.cpp:200
+#: kcmtaskbar.cpp:249
 #, fuzzy
 msgid ""
 "<h1>Taskbar</h1> You can configure the taskbar here. This includes options "
@@ -70,15 +82,15 @@ msgstr ""
 "can also configure whether or not the taskbar should show all windows at "
 "once or only those on the current desktop"
 
-#: kcmtaskbar.cpp:210
+#: kcmtaskbar.cpp:259
 msgid "kcmtaskbar"
 msgstr ""
 
-#: kcmtaskbar.cpp:210
+#: kcmtaskbar.cpp:259
 msgid "KDE Taskbar Control Module"
 msgstr ""
 
-#: kcmtaskbar.cpp:212
+#: kcmtaskbar.cpp:261
 msgid "(c) 2000 - 2001 Matthias Elter"
 msgstr ""
 
@@ -121,22 +133,10 @@ msgstr ""
 "моменталната работна површина."
 
 #: rc.cpp:7
-msgid "&Group similar tasks"
-msgstr ""
-
-#: rc.cpp:8
-msgid ""
-"Check this option if you want the taskbar to hold all running instances of "
-"one application in one taskbutton. Clicking on the button for some seconds "
-"will unfold a menu which shows all instances of the application. This is "
-"especially useful with the \"<strong>Show all windows</strong>\" option."
-msgstr ""
-
-#: rc.cpp:9
 msgid "Sort tasks by virtual &desktop"
 msgstr ""
 
-#: rc.cpp:10
+#: rc.cpp:8
 #, fuzzy
 msgid "Check this option if you want the taskbar to sort task buttons by deskop."
 msgstr ""
@@ -144,33 +144,58 @@ msgstr ""
 "линијата со задачи да биде вон панелот. "
 "Вообичаено, таа е вгнездена во него."
 
-#: rc.cpp:11
+#: rc.cpp:9
 msgid "Show application &icons"
 msgstr ""
 
-#: rc.cpp:12
+#: rc.cpp:10
 msgid "Check this option if you want to display the applications icon in the taskbar"
 msgstr ""
 
+#: rc.cpp:11
+#, fuzzy
+msgid "Show only iconified windows"
+msgstr "Покажи ги сите прозори"
+
+#: rc.cpp:12
+#, fuzzy
+msgid ""
+"Check this option if you want the taskbar to display only windows which are "
+"iconified. By default, the taskbar will show all windows."
+msgstr ""
+"Со оваа опција сите прозори кои што сте ги "
+"отвориле ќе бидат прикажани наеднаш. "
+"Вообичаено, на линијата со задачи се "
+"покажани само оние прозори што се на "
+"моменталната работна површина."
+
 #: rc.cpp:13
-msgid "Actions"
+msgid "Group similar tasks:"
 msgstr ""
 
 #: rc.cpp:14
-msgid "Middle Button:"
+msgid ""
+"Check this option if you want the taskbar to hold all running instances of "
+"one application in one taskbutton. Clicking on the button for some seconds "
+"will unfold a menu which shows all instances of the application. This is "
+"especially useful with the \"<strong>Show all windows</strong>\" option."
 msgstr ""
 
 #: rc.cpp:15
-msgid "Right Button:"
+msgid "Actions"
 msgstr ""
 
 #: rc.cpp:16
-msgid "Left Button:"
+msgid "Middle button:"
 msgstr ""
 
-#, fuzzy
-#~ msgid "&Show all windows"
-#~ msgstr "Покажи ги сите прозори"
+#: rc.cpp:17
+msgid "Right button:"
+msgstr ""
+
+#: rc.cpp:18
+msgid "Left button:"
+msgstr ""
 
 #~ msgid "Run &outside of panel"
 #~ msgstr "Изврши вон панелот"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdesktop\n"
-"POT-Creation-Date: 2002-03-19 12:37+0100\n"
+"POT-Creation-Date: 2002-11-16 02:58+0100\n"
 "PO-Revision-Date: 2000-11-17 20:35+0100\n"
 "Last-Translator: Danko Ilik <danko@mindless.com>\n"
 "Language-Team: Macedonian\n"
@@ -14,25 +14,37 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 0.7\n"
 
-#: lock/lockdlg.cc:107
-msgid "Failed"
-msgstr "Неуспех"
+#: lock/lockdlg.cc:71
+msgid ""
+"\n"
+"Start\n"
+"&New\n"
+"Session\n"
+msgstr ""
 
-#: lock/lockdlg.cc:191
+#: lock/lockdlg.cc:119
 msgid "Enter Password"
 msgstr "Внесете лозинка"
 
-#: lock/lockprocess.cc:856
+#: lock/lockdlg.cc:208 lock/lockdlg.cc:251
 msgid ""
-"<h1>Screen Locking Failed!</h1>Your screen was not locked because the "
-"<i>kcheckpass</i> program was not able to check your password. This is "
-"usually the result of kcheckpass not being installed correctly. If you "
-"installed KDE yourself, reinstall kcheckpass as root. If you are using a "
-"pre-compiled package, contact the packager."
+"Verification failed\n"
+"Kill kdesktop_lock"
 msgstr ""
 
-#: lock/lockprocess.cc:863
-msgid "Screen Locking Failed"
+#: lock/lockdlg.cc:256
+msgid "Failed"
+msgstr "Неуспех"
+
+#: lock/lockdlg.cc:297
+msgid ""
+"You have chosen to open another desktop session instead of resuming the "
+"current one."
+"<br>The current session will be hidden and a new login screen will be "
+"displayed."
+"<br>An F-key is assigned to each session; F%1 is usually assigned to the "
+"first session, F%2 to the second session and so on. You can switch between "
+"sessions by pressing CTRL, ALT and the appropriate F-key at the same time."
 msgstr ""
 
 #: lock/main.cc:31
@@ -47,25 +59,25 @@ msgstr ""
 msgid "Screen Locker for KDesktop"
 msgstr ""
 
-#: desktop.cc:615
-msgid "Set as primary background color"
+#: desktop.cc:622
+msgid "Set as Primary Background Color"
 msgstr ""
 
-#: desktop.cc:616
-msgid "Set as secondary background color"
+#: desktop.cc:623
+msgid "Set as Secondary Background Color"
 msgstr ""
 
-#: desktop.cc:632
+#: desktop.cc:639
 msgid "Set as &Wallpaper"
 msgstr ""
 
-#: desktop.cc:667
+#: desktop.cc:674
 #, fuzzy
 msgid ""
 "Could not logout properly.\n"
 "The session manager cannot be contacted. You can try to force a shutdown by "
-"pressing the CTRL, ALT and BACKSPACE keys at the same time. Note however "
-"that your current session will not be saved with a forced shutdown."
+"pressing Ctrl+Alt+Backspace. Note, however, that your current session will "
+"not be saved with a forced shutdown."
 msgstr ""
 "Неуспешно одјавување. Менаџерот на сесии "
 "не може да се\n"
@@ -77,129 +89,155 @@ msgstr ""
 "снимена со принудно\n"
 "исклучување."
 
-#: kdiconview.cc:208
+#: kdiconview.cc:268
 #, fuzzy
 msgid "&Rename"
 msgstr "Во реално време"
 
-#: kdiconview.cc:209
+#: kdiconview.cc:269
 msgid "&Move to Trash"
 msgstr "Премести во отпадоци"
 
-#: kdiconview.cc:212
+#: kdiconview.cc:272
 msgid "&Shred"
 msgstr "Снебиди"
 
-#: krootwm.cc:85 krootwm.cc:325
+#: krootwm.cc:90 krootwm.cc:404
 msgid "Bookmarks"
 msgstr "Обележувачи"
 
-#: krootwm.cc:104
-#, fuzzy
-msgid "Help on Desktop"
-msgstr "Помош за површината..."
-
-#: krootwm.cc:105
+#: krootwm.cc:112
 msgid "Run Command..."
 msgstr "Изврши наредба..."
 
-#: krootwm.cc:108
+#: krootwm.cc:116
 msgid "Configure Desktop..."
 msgstr "Поставки на површината..."
 
-#: krootwm.cc:110 krootwm.cc:259
+#: krootwm.cc:118 krootwm.cc:317
 msgid "Disable Desktop Menu"
 msgstr "Оневозможи мени на површината"
 
-#: krootwm.cc:114
+#: krootwm.cc:122
 msgid "Unclutter Windows"
 msgstr "Распореди прозорци"
 
-#: krootwm.cc:116
+#: krootwm.cc:124
 msgid "Cascade Windows"
 msgstr "Нареди прозорци"
 
-#: krootwm.cc:122
-msgid "By Name (Case Sensitive)"
+#: krootwm.cc:130
+msgid "By Name"
 msgstr ""
 
-#: krootwm.cc:124
-msgid "By Name (Case Insensitive)"
-msgstr ""
-
-#: krootwm.cc:126
+#: krootwm.cc:132
 msgid "By Size"
 msgstr ""
 
-#: krootwm.cc:128
+#: krootwm.cc:134
 msgid "By Type"
 msgstr ""
 
-#: krootwm.cc:131
+#: krootwm.cc:137
 msgid "Directories First"
 msgstr ""
 
-#: krootwm.cc:134
-msgid "Line up Icons"
+#: krootwm.cc:140
+#, fuzzy
+msgid "Line Up Horizontally"
 msgstr "Подреди икони"
 
-#: krootwm.cc:136
+#: krootwm.cc:143
+msgid "Line Up Vertically"
+msgstr ""
+
+#: krootwm.cc:146
+msgid "Align to Grid"
+msgstr ""
+
+#: krootwm.cc:149
 #, fuzzy
 msgid "Refresh Desktop"
 msgstr "Површина"
 
-#: kdesktopbindings.cpp:19 krootwm.cc:140
+#: kdesktopbindings.cpp:30 krootwm.cc:155
 msgid "Lock Screen"
 msgstr "Заклучи екран"
 
-#: kdesktopbindings.cpp:20 krootwm.cc:142
+#: krootwm.cc:164
 #, fuzzy
-msgid "Logout"
+msgid "Logout \"%1\"..."
 msgstr "Одјави се..."
 
-#: krootwm.cc:239 krootwm.cc:310
-msgid "Arrange Icons"
+#: krootwm.cc:175
+msgid "Start New Session"
+msgstr ""
+
+#: krootwm.cc:296 krootwm.cc:354
+#, fuzzy
+msgid "Sort Icons"
 msgstr "Преуреди икони"
 
-#: krootwm.cc:268
+#: krootwm.cc:297
+#, fuzzy
+msgid "Line Up Icons"
+msgstr "Подреди икони"
+
+#: krootwm.cc:324
 msgid "Enable Desktop Menu"
 msgstr "Овозможи мени на површината"
 
-#: krootwm.cc:323
-msgid "New"
-msgstr "Нов"
+#: krootwm.cc:361
+#, fuzzy
+msgid "Icons"
+msgstr "Преуреди икони"
 
-#: kdesktopbindings.cpp:14 krootwm.cc:326
-msgid "Desktop"
-msgstr "Површина"
-
-#: krootwm.cc:327
+#: krootwm.cc:367 krootwm.cc:406
 msgid "Windows"
 msgstr "Прозорци"
 
-#: main.cc:40
+#: krootwm.cc:402
+msgid "New"
+msgstr "Нов"
+
+#: kdesktopbindings.cpp:14 krootwm.cc:405
+msgid "Desktop"
+msgstr "Површина"
+
+#: krootwm.cc:631
+msgid ""
+"<p>You have chosen to open another desktop session."
+"<br>The current session will be hidden and a new login screen will be "
+"displayed."
+"<br>An F-key is assigned to each session; F%1 is usually assigned to the "
+"first session, F%2 to the second session and so on. You can switch between "
+"sessions by pressing CTRL, ALT and the appropriate F-key at the same "
+"time.</p>"
+msgstr ""
+
+#: main.cc:42
 msgid "The KDE Desktop."
 msgstr "КДЕ работната површина."
 
-#: main.cc:46
+#: main.cc:48
 msgid "Use this if the desktop window appears as a real window"
 msgstr ""
 "Користете го ова ако работната површина "
 "се прикажува како прозор"
 
-#: main.cc:47
+#: main.cc:49
 msgid "Use this to disable the Autostart folder"
 msgstr ""
 "Користете го ова за да го ја оневозможите "
 "Autostart папката"
 
-#: main.cc:48
+#: main.cc:50
 msgid "Wait for kded to finish building database"
 msgstr ""
 "Причекајте kded да доврши со градењето на "
 "базата"
 
-#: main.cc:130
+#: main.cc:132
 msgid "KDesktop"
 msgstr "K Работна површина"
 
@@ -215,50 +253,46 @@ msgid ""
 "Your emails"
 msgstr ""
 
-#: kdesktopbindings.cpp:16
-#, fuzzy
-msgid "Execute Command"
-msgstr "Извршување наредба"
+#: kdesktopbindings.cpp:20 minicli.cpp:58
+msgid "Run Command"
+msgstr "Изврши наредба"
 
-#: kdesktopbindings.cpp:17
+#: kdesktopbindings.cpp:24
 #, fuzzy
 msgid "Show Taskmanager"
 msgstr "Покажи менаџер на задачи"
 
-#: kdesktopbindings.cpp:18
+#: kdesktopbindings.cpp:25
 #, fuzzy
 msgid "Show Window List"
 msgstr "Прозорци"
 
-#: kdesktopbindings.cpp:21
+#: kdesktopbindings.cpp:36
+#, fuzzy
+msgid "Logout"
+msgstr "Одјави се..."
+
+#: kdesktopbindings.cpp:37
 msgid "Logout without Confirmation"
 msgstr ""
 
-#: kdesktopbindings.cpp:22
+#: kdesktopbindings.cpp:38
 msgid "Halt Computer"
 msgstr ""
 
-#: kdesktopbindings.cpp:23
+#: kdesktopbindings.cpp:39
 msgid "Halt without Confirmation"
 msgstr ""
 
-#: kdesktopbindings.cpp:24
+#: kdesktopbindings.cpp:40
 msgid "Reboot Computer"
 msgstr ""
 
-#: kdesktopbindings.cpp:25
+#: kdesktopbindings.cpp:41
 msgid "Reboot without Confirmation"
 msgstr ""
 
-#: kdmdesktop.cpp:18
-msgid "Fancy desktop background for kdm"
-msgstr "Заднина за површината за kdm"
-
-#: minicli.cpp:72
-msgid "Run Command"
-msgstr "Изврши наредба"
-
-#: minicli.cpp:82
+#: minicli.cpp:68
 #, fuzzy
 msgid ""
 "Enter the name of the application you want to run or the URL you want to "
@@ -269,48 +303,58 @@ msgstr ""
 "извршите или URL адресата што сакате да ја "
 "видите."
 
-#: minicli.cpp:89
+#: minicli.cpp:75
 msgid "Co&mmand:"
 msgstr "Наредба:"
 
-#: minicli.cpp:93
+#: minicli.cpp:79
 msgid ""
 "Enter the command you wish to execute or the address of the resource you "
 "want to open. This can be a remote URL like \"www.kde.org\" or a local one "
 "like \"~/.kderc\""
 msgstr ""
 
-#: minicli.cpp:114 minicli.cpp:398
+#: minicli.cpp:99 minicli.cpp:500
 msgid "&Options >>"
 msgstr "Опции >>"
 
-#: minicli.cpp:120
+#: minicli.cpp:107
 msgid "&Run"
 msgstr "Изврши"
 
-#: minicli.cpp:245
+#: minicli.cpp:277
 msgid "<qt>The user <b>%1</b> does not exist on this system.</qt>"
 msgstr ""
 "<qt>Корисникот <b>%1</b> не постои на овој "
 "систем.</qt>"
 
-#: minicli.cpp:256
+#: minicli.cpp:288
 msgid ""
 "You don't exist!\n"
 msgstr ""
 "Вие не постоите!\n"
 
-#: minicli.cpp:293
+#: minicli.cpp:331
 msgid "Incorrect password! Please try again."
 msgstr "Неточна лозинка! Пробајте повторно."
 
-#: minicli.cpp:344
+#: minicli.cpp:399
+#, fuzzy
+msgid ""
+"<center><b>%1</b></center>\n"
+"You do not have permission to execute this command!"
+msgstr ""
+"<qt>Не може да се изврши <b>%1</b>.\n"
+"Поправете ја командата или УРЛ-то и "
+"обидете се повторно.</qt>"
+
+#: minicli.cpp:416
 msgid ""
 "<center><b>%1</b></center>\n"
 "Could not run the specified command!"
 msgstr ""
 
-#: minicli.cpp:357
+#: minicli.cpp:430
 #, fuzzy
 msgid ""
 "<center><b>%1</b></center>\n"
@@ -320,19 +364,20 @@ msgstr ""
 "Поправете ја командата или УРЛ-то и "
 "обидете се повторно.</qt>"
 
-#: minicli.cpp:383
+#: minicli.cpp:485
 msgid "&Options <<"
 msgstr "Опции <<"
 
-#: minicli.cpp:463
-msgid "Advanced settings"
+#: minicli.cpp:584
+#, fuzzy
+msgid "Advanced Settings"
 msgstr "Напредни поставки"
 
-#: minicli.cpp:467
+#: minicli.cpp:588
 msgid "Run in &terminal"
 msgstr "Изврши во терминал"
 
-#: minicli.cpp:468
+#: minicli.cpp:589
 msgid ""
 "Check this option if the application you want to run is a text mode "
 "application. The application will then be run in a terminal emulator window."
@@ -342,11 +387,11 @@ msgstr ""
 "Тогаш таа ќе се пушти во прозор со "
 "емулација на терминал."
 
-#: minicli.cpp:474
+#: minicli.cpp:595
 msgid "Run as a different &user"
 msgstr "Изврши како друг корисник"
 
-#: minicli.cpp:475
+#: minicli.cpp:596
 #, fuzzy
 msgid ""
 "Check this option if you want to run the application with a different user "
@@ -363,23 +408,23 @@ msgstr ""
 "За ова ви е потребна лозинката на тој "
 "корисник."
 
-#: minicli.cpp:486
+#: minicli.cpp:607
 #, fuzzy
 msgid "User&name:"
 msgstr "кориснично име:"
 
-#: minicli.cpp:489
+#: minicli.cpp:610
 #, fuzzy
 msgid "Enter the user here who you want to run the application as."
 msgstr ""
 "Внесете го корисничкото име под кое "
 "сакате да ја извршите апликацијата."
 
-#: minicli.cpp:496
+#: minicli.cpp:617
 msgid "Run with a different &priority"
 msgstr "Изврши со друг приоритет"
 
-#: minicli.cpp:497
+#: minicli.cpp:618
 msgid ""
 "Check this option if you want to run the application with a different "
 "priority. A higher priority tells the operating system to give more "
@@ -391,12 +436,11 @@ msgstr ""
 "и додели повеќе работно време на вашата "
 "апликација."
 
-#: minicli.cpp:508
-#, fuzzy
-msgid "Pr&iority:"
-msgstr "приоритет:"
+#: minicli.cpp:629
+msgid "Low"
+msgstr ""
 
-#: minicli.cpp:512
+#: minicli.cpp:632
 msgid ""
 "The priority can be set here. From left to right, it goes from low to high. "
 "The center position is the default value. For priorities higher than the "
@@ -409,17 +453,17 @@ msgstr ""
 "вообичаениот, потребна ви е "
 "администраторска (root) лозинка."
 
-#: minicli.cpp:521
+#: minicli.cpp:640
 #, fuzzy
 msgid "High"
 msgstr "висок"
 
-#: minicli.cpp:528
+#: minicli.cpp:647
 #, fuzzy
 msgid "&Scheduler:"
 msgstr "распоредувач:"
 
-#: minicli.cpp:533
+#: minicli.cpp:652
 #, fuzzy
 msgid ""
 "Here you can select which scheduler to use for the application. The "
@@ -455,33 +499,33 @@ msgstr ""
 "ви е потребна администраторска (root) "
 "лозинка."
 
-#: minicli.cpp:556
+#: minicli.cpp:675
 #, fuzzy
 msgid "Pass&word:"
 msgstr "лозинка:"
 
-#: minicli.cpp:559
+#: minicli.cpp:678
 msgid "Enter the requested password here."
 msgstr "Тука се внесува бараната лозинка."
 
-#: minicli.cpp:582
+#: minicli.cpp:701
 msgid "Normal"
 msgstr "Нормален"
 
-#: minicli.cpp:583
+#: minicli.cpp:702
 msgid "Realtime"
 msgstr "Во реално време"
 
-#: minicli.cpp:609
+#: minicli.cpp:732
 msgid "none"
 msgstr "ништо"
 
-#: minicli.cpp:612
+#: minicli.cpp:736
 #, c-format
 msgid "Password required: %1"
 msgstr "Неопходна е лозинка: %1"
 
-#: minicli.cpp:663
+#: minicli.cpp:790
 #, fuzzy
 msgid ""
 "Running a realtime application can be very dangerous. If the application "
@@ -498,10 +542,25 @@ msgstr ""
 "Дали сте сигурни дека сакате да "
 "продолжите?"
 
-#: minicli.cpp:666
+#: minicli.cpp:793
 #, fuzzy
 msgid "Warning - Run Command"
 msgstr "Изврши наредба"
+
+#, fuzzy
+#~ msgid "Pr&iority:"
+#~ msgstr "приоритет:"
+
+#~ msgid "Fancy desktop background for kdm"
+#~ msgstr "Заднина за површината за kdm"
+
+#, fuzzy
+#~ msgid "Help on Desktop"
+#~ msgstr "Помош за површината..."
+
+#, fuzzy
+#~ msgid "Execute Command"
+#~ msgstr "Извршување наредба"
 
 #~ msgid "Danger, Will Robinson!"
 #~ msgstr "Опасност!"
