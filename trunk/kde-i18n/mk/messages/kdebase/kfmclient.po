@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kfmclient\n"
-"POT-Creation-Date: 2002-02-04 02:58+0100\n"
+"POT-Creation-Date: 2002-10-21 03:02+0200\n"
 "PO-Revision-Date: 2000-11-26 00:40+0100\n"
 "Last-Translator: Danko Ilik <danko@mindless.com>\n"
 "Language-Team: Macedonian\n"
@@ -14,25 +14,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 0.7\n"
 
-#: kfmclient.cc:49
+#: kfmclient.cc:50
 msgid "KDE tool for opening URLs from the command line"
 msgstr ""
 "КДЕ алатка за отворање УРЛ-а од "
 "командната линија"
 
-#: kfmclient.cc:55
+#: kfmclient.cc:56
 msgid "Show available commands."
 msgstr "Покажи достапни команди."
 
-#: kfmclient.cc:56
+#: kfmclient.cc:57
 msgid "Command (see --commands)."
 msgstr "Команда (видете --commands)."
 
-#: kfmclient.cc:57
+#: kfmclient.cc:58
 msgid "Arguments for command."
 msgstr "Аргименти за командата."
 
-#: kfmclient.cc:71
+#: kfmclient.cc:73
 msgid ""
 "\n"
 "Syntax:\n"
@@ -40,7 +40,7 @@ msgstr ""
 "\n"
 "Синтакса:\n"
 
-#: kfmclient.cc:72
+#: kfmclient.cc:74
 #, fuzzy
 msgid ""
 "  kfmclient openURL 'url' ['mimetype']\n"
@@ -60,16 +60,16 @@ msgstr ""
 "$HOME.\n"
 "\n"
 
-#: kfmclient.cc:77
+#: kfmclient.cc:79
 msgid ""
 "            # If 'mimetype' is specified, it will be used to determine the\n"
-"            #   component that konqueror should use. For instance, set it "
+"            #   component that Konqueror should use. For instance, set it "
 "to\n"
 "            #   text/html for a web page, to make it appear faster\n"
 "\n"
 msgstr ""
 
-#: kfmclient.cc:81
+#: kfmclient.cc:83
 #, fuzzy
 msgid ""
 "  kfmclient openProfile 'profile' ['url']\n"
@@ -86,7 +86,7 @@ msgstr ""
 "~/.kde/share/apps/konqueror/profiles.\n"
 "\n"
 
-#: kfmclient.cc:86
+#: kfmclient.cc:88
 msgid ""
 "  kfmclient openProperties 'url'\n"
 "            # Opens a properties menu\n"
@@ -96,7 +96,7 @@ msgstr ""
 "            # Отвора мени со поставки\n"
 "\n"
 
-#: kfmclient.cc:88
+#: kfmclient.cc:90
 msgid ""
 "  kfmclient exec ['url' ['binding']]\n"
 "            # Tries to execute 'url'. 'url' may be a usual\n"
@@ -111,7 +111,7 @@ msgstr ""
 "            #   'поврзување' и во тој случај ќе се "
 "користи вообичаеното\n"
 
-#: kfmclient.cc:92
+#: kfmclient.cc:94
 msgid ""
 "            #   is tried. Of course URL may be the URL of a\n"
 "            #   document, or it may be a *.desktop file.\n"
@@ -121,7 +121,7 @@ msgstr ""
 "            #   документ или може да биде *.desktop "
 "датотека.\n"
 
-#: kfmclient.cc:94
+#: kfmclient.cc:96
 msgid ""
 "            #   This way you could for example mount a device\n"
 "            #   by passing 'Mount default' as binding to \n"
@@ -135,7 +135,7 @@ msgstr ""
 "            #   'cdrom.desktop'\n"
 "\n"
 
-#: kfmclient.cc:97
+#: kfmclient.cc:99
 msgid ""
 "  kfmclient move 'src' 'dest'\n"
 "            # Moves the URL 'src' to 'dest'.\n"
@@ -146,7 +146,22 @@ msgstr ""
 "            #   'извор' може да биде и листа од URL "
 "адреси.\n"
 
-#: kfmclient.cc:102
+#: kfmclient.cc:104
+#, fuzzy
+msgid ""
+"  kfmclient download ['src']\n"
+"            # Copies the URL 'src' to a user specified location'.\n"
+"            #   'src' may be a list of URLs, if not present then\n"
+"            #   a URL will be requested.\n"
+"\n"
+msgstr ""
+"  kfmclient copy 'извор' 'цел'\n"
+"            # Го копира 'извор' во 'цел'.\n"
+"            #   'извор' може да биде и листа од URL "
+"адреси.\n"
+"\n"
+
+#: kfmclient.cc:108
 msgid ""
 "  kfmclient copy 'src' 'dest'\n"
 "            # Copies the URL 'src' to 'dest'.\n"
@@ -159,7 +174,7 @@ msgstr ""
 "адреси.\n"
 "\n"
 
-#: kfmclient.cc:105
+#: kfmclient.cc:111
 msgid ""
 "  kfmclient sortDesktop\n"
 "            # Rearranges all icons on the desktop.\n"
@@ -170,10 +185,11 @@ msgstr ""
 "работната површина.\n"
 "\n"
 
-#: kfmclient.cc:107
+#: kfmclient.cc:113
+#, fuzzy
 msgid ""
 "  kfmclient configure\n"
-"            # Re-read konqueror's configuration.\n"
+"            # Re-read Konqueror's configuration.\n"
 "\n"
 msgstr ""
 "  kfmclient configure\n"
@@ -181,7 +197,7 @@ msgstr ""
 "konqueror.\n"
 "\n"
 
-#: kfmclient.cc:109
+#: kfmclient.cc:115
 msgid ""
 "  kfmclient configureDesktop\n"
 "            # Re-read kdesktop's configuration.\n"
@@ -192,11 +208,12 @@ msgstr ""
 "kdesktop.\n"
 "\n"
 
-#: kfmclient.cc:112
+#: kfmclient.cc:118
+#, fuzzy
 msgid ""
 "*** Examples:\n"
 "  kfmclient exec file:/root/Desktop/cdrom.desktop \"Mount default\"\n"
-"             // Mounts the CDROM\n"
+"             // Mounts the CD-ROM\n"
 "\n"
 msgstr ""
 "*** Примери:\n"
@@ -204,7 +221,7 @@ msgstr ""
 "             // Го монтира цедеромот\n"
 "\n"
 
-#: kfmclient.cc:115
+#: kfmclient.cc:121
 msgid ""
 "  kfmclient exec file:/home/weis/data/test.html\n"
 "             // Opens the file with default binding\n"
@@ -215,7 +232,7 @@ msgstr ""
 "вообичаени поврзувања\n"
 "\n"
 
-#: kfmclient.cc:117
+#: kfmclient.cc:123
 msgid ""
 "  kfmclient exec file:/home/weis/data/test.html Netscape\n"
 "             // Opens the file with netscape\n"
@@ -225,7 +242,7 @@ msgstr ""
 "             // Ја отвора датотеката со netscape\n"
 "\n"
 
-#: kfmclient.cc:119
+#: kfmclient.cc:125
 msgid ""
 "  kfmclient exec ftp://localhost/\n"
 "             // Opens new window with URL\n"
@@ -235,7 +252,7 @@ msgstr ""
 "             // Отвора нов прозор со URL\n"
 "\n"
 
-#: kfmclient.cc:121
+#: kfmclient.cc:127
 msgid ""
 "  kfmclient exec file:/root/Desktop/emacs.desktop\n"
 "             // Starts emacs\n"
@@ -245,7 +262,7 @@ msgstr ""
 "             // Пушта emacs\n"
 "\n"
 
-#: kfmclient.cc:123
+#: kfmclient.cc:129
 msgid ""
 "  kfmclient exec file:/root/Desktop/cdrom.desktop\n"
 "             // Opens the CD-ROM's mount directory\n"
@@ -256,7 +273,7 @@ msgstr ""
 "монтиран цедеромот\n"
 "\n"
 
-#: kfmclient.cc:125
+#: kfmclient.cc:131
 msgid ""
 "  kfmclient exec .\n"
 "             // Opens the current directory. Very convenient.\n"
@@ -267,25 +284,29 @@ msgstr ""
 "згодно.\n"
 "\n"
 
-#: kfmclient.cc:237
+#: kfmclient.cc:242
 msgid ""
 "Profile %1 not found\n"
 msgstr ""
 "Профилот %1 не е најден\n"
 
-#: kfmclient.cc:268
+#: kfmclient.cc:273
 msgid ""
 "Syntax Error: Not enough arguments\n"
 msgstr ""
 "Синтаксна грешка: Премалки аргументи\n"
 
-#: kfmclient.cc:273
+#: kfmclient.cc:278
 msgid ""
 "Syntax Error: Too many arguments\n"
 msgstr ""
 "Синтаксна грешка: Премногу аргументи\n"
 
-#: kfmclient.cc:395
+#: kfmclient.cc:373
+msgid "Unable to download from an invalid URL."
+msgstr ""
+
+#: kfmclient.cc:431
 msgid ""
 "Syntax Error: Unknown command '%1'\n"
 msgstr ""
