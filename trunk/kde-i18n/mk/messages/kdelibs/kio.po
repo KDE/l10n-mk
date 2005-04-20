@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kio\n"
-"POT-Creation-Date: 2005-03-16 01:21+0100\n"
+"POT-Creation-Date: 2005-04-20 15:04+0200\n"
 "PO-Revision-Date: 2005-02-06 00:20+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -26,22 +26,26 @@ msgstr ""
 msgid "File '%1' is not readable"
 msgstr "Датотеката „%1“ не е читлива"
 
-#: kio/global.cpp:715 kio/job.cpp:1682 kio/job.cpp:3109 kio/job.cpp:3568
-#: kio/paste.cpp:60
+#: kio/global.cpp:715 kio/job.cpp:1695 kio/job.cpp:3123 kio/job.cpp:3582
+#: kio/paste.cpp:65
 msgid "File Already Exists"
 msgstr "Датотеката веќе постои"
 
-#: kio/global.cpp:725 kio/job.cpp:2826
+#: kio/global.cpp:725 kio/job.cpp:2840
 msgid "Folder Already Exists"
 msgstr "Папката веќе постои"
 
-#: kio/job.cpp:3109 kio/job.cpp:3568
+#: kio/job.cpp:3123 kio/job.cpp:3582
 msgid "Already Exists as Folder"
 msgstr "Веќе постои како папка"
 
 #: kio/kimageio.cpp:231
 msgid "All Pictures"
 msgstr "Сите слики"
+
+#: kio/pastedialog.cpp:49
+msgid "Data format:"
+msgstr ""
 
 #: kio/renamedlg.cpp:119
 msgid "&Rename"
@@ -119,7 +123,7 @@ msgstr "изменето на %1"
 msgid "The source file is '%1'"
 msgstr "Изворната датотека е „%1“"
 
-#: kio/kdirlister.cpp:1989 kio/krun.cpp:777 kio/paste.cpp:97
+#: kio/kdirlister.cpp:2177 kio/krun.cpp:777 kio/paste.cpp:210
 #: kio/renamedlg.cpp:431
 #, c-format
 msgid ""
@@ -129,15 +133,50 @@ msgstr ""
 "Неправилен URL\n"
 "%1"
 
-#: kio/paste.cpp:44
+#: kio/paste.cpp:49 kio/paste.cpp:115
 msgid "Filename for clipboard content:"
 msgstr ""
 "Датотека за содржина на таблата за "
 "исечоци:"
 
-#: kio/paste.cpp:107 kio/paste.cpp:147
+#: kio/paste.cpp:108
+#, fuzzy
+msgid "%1 (%2)"
+msgstr "%1 (порта %2)"
+
+#: kio/paste.cpp:123
+msgid ""
+"The clipboard has changed since you used 'paste': the chosen data format is "
+"no longer applicable. Please copy again what you wanted to paste."
+msgstr ""
+
+#: kio/paste.cpp:198 kio/paste.cpp:221 kio/paste.cpp:247
 msgid "The clipboard is empty"
 msgstr "Таблата со исечоци е празна"
+
+#: kio/paste.cpp:295
+#, fuzzy, c-format
+msgid ""
+"_n: &Paste file\n"
+"&Paste %n files"
+msgstr ""
+"1 датотека\n"
+"%n датотеки\n"
+"%n датотеки"
+
+#: kio/paste.cpp:297
+#, c-format
+msgid ""
+"_n: &Paste URL\n"
+"&Paste %n URLs"
+msgstr ""
+
+#: kio/paste.cpp:299
+#, fuzzy
+msgid "&Paste clipboard contents"
+msgstr ""
+"Датотека за содржина на таблата за "
+"исечоци:"
 
 #: kio/observer.cpp:338 misc/uiserver.cpp:1218
 msgid "The peer SSL certificate appears to be corrupt."
@@ -228,13 +267,13 @@ msgstr ""
 "Не можам да го најдам mime-типот\n"
 "%1"
 
-#: kio/kmimetype.cpp:789
+#: kio/kmimetype.cpp:797
 msgid "The desktop entry file %1 has no Type=... entry."
 msgstr ""
 "Датотеката %1 за елемент од раб. површина "
 "нема ставка Type=..."
 
-#: kio/kmimetype.cpp:810
+#: kio/kmimetype.cpp:818
 msgid ""
 "The desktop entry of type\n"
 "%1\n"
@@ -244,7 +283,7 @@ msgstr ""
 "%1\n"
 "е непознат."
 
-#: kio/kmimetype.cpp:824 kio/kmimetype.cpp:926 kio/kmimetype.cpp:1076
+#: kio/kmimetype.cpp:832 kio/kmimetype.cpp:934 kio/kmimetype.cpp:1084
 msgid ""
 "The desktop entry file\n"
 "%1\n"
@@ -254,7 +293,7 @@ msgstr ""
 "%1\n"
 "е од тип FSDevice но нема ставка Dev=..."
 
-#: kio/kmimetype.cpp:870
+#: kio/kmimetype.cpp:878
 msgid ""
 "The desktop entry file\n"
 "%1\n"
@@ -264,19 +303,19 @@ msgstr ""
 "%1\n"
 "е од тип Link но нема ставка Dev=..."
 
-#: kio/kmimetype.cpp:936
+#: kio/kmimetype.cpp:944
 msgid "Mount"
 msgstr "Монтирај"
 
-#: kio/kmimetype.cpp:947
+#: kio/kmimetype.cpp:955
 msgid "Eject"
 msgstr "Извади"
 
-#: kio/kmimetype.cpp:949
+#: kio/kmimetype.cpp:957
 msgid "Unmount"
 msgstr "Одмонтирај"
 
-#: kio/kmimetype.cpp:1034
+#: kio/kmimetype.cpp:1042
 msgid ""
 "The desktop entry file\n"
 "%1\n"
@@ -455,8 +494,7 @@ msgid "Progress Dialog"
 msgstr "Дијалог за прогрес"
 
 #: kio/defaultprogress.cpp:224
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
 "_n: %n folder\n"
 "%n folders"
@@ -466,8 +504,7 @@ msgstr ""
 "%n папки"
 
 #: kio/defaultprogress.cpp:225
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
 "_n: %n file\n"
 "%n files"
@@ -635,8 +672,7 @@ msgid "No Items"
 msgstr "Нема елементи"
 
 #: kio/global.cpp:139
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
 "_n: One Item\n"
 "%n Items"
@@ -650,8 +686,7 @@ msgid "No Files"
 msgstr "Нема датотеки"
 
 #: kio/global.cpp:141
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
 "_n: One File\n"
 "%n Files"
@@ -669,8 +704,7 @@ msgid "No Folders"
 msgstr "Нема папки"
 
 #: kio/global.cpp:148
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
 "_n: One Folder\n"
 "%n Folders"
@@ -2626,29 +2660,29 @@ msgstr " Во застој "
 msgid " %1/s "
 msgstr " %1/s "
 
-#: kio/passdlg.cpp:61
+#: kio/passdlg.cpp:57
 msgid "Password"
 msgstr "Лозинка"
 
-#: kio/passdlg.cpp:102
+#: kio/passdlg.cpp:98
 msgid "You need to supply a username and a password"
 msgstr "Треба да дадете корисничко име и лозинка"
 
 #. i18n: file ./kfile/kpropertiesdesktopadvbase.ui line 134
-#: kfile/kpropertiesdialog.cpp:3524 kio/passdlg.cpp:112 rc.cpp:108
+#: kfile/kpropertiesdialog.cpp:3524 kio/passdlg.cpp:108 rc.cpp:108
 #, no-c-format
 msgid "&Username:"
 msgstr "&Корисничко име:"
 
-#: kio/passdlg.cpp:129
+#: kio/passdlg.cpp:125
 msgid "&Password:"
 msgstr "&Лозинка:"
 
-#: kio/passdlg.cpp:151
+#: kio/passdlg.cpp:147
 msgid "&Keep password"
 msgstr "&Чувај лозинка"
 
-#: kio/passdlg.cpp:349 kpasswdserver/kpasswdserver.cpp:251
+#: kio/passdlg.cpp:345 kpasswdserver/kpasswdserver.cpp:251
 msgid "Authorization Dialog"
 msgstr "Дијалог за авторизација"
 
@@ -2713,41 +2747,41 @@ msgstr ""
 msgid "Could not find the program '%1'"
 msgstr "Не можам да ја најдам програмата „%1“"
 
-#: kio/kfileitem.cpp:649
+#: kio/kfileitem.cpp:654
 msgid "Symbolic Link"
 msgstr "Симболичка врска"
 
-#: kio/kfileitem.cpp:651
+#: kio/kfileitem.cpp:656
 msgid "%1 (Link)"
 msgstr "%1 (врска)"
 
 #: ../kioslave/http/kcookiejar/kcookiewin.cpp:270
-#: bookmarks/kbookmarkmenu.cc:791 kfile/kpropertiesdialog.cpp:3755
-#: kio/kfileitem.cpp:690
+#: bookmarks/kbookmarkmenu.cc:794 kfile/kpropertiesdialog.cpp:3755
+#: kio/kfileitem.cpp:695
 msgid "Name:"
 msgstr "Име:"
 
-#: kfile/kpropertiesdialog.cpp:894 kio/kfileitem.cpp:691
+#: kfile/kpropertiesdialog.cpp:894 kio/kfileitem.cpp:696
 msgid "Type:"
 msgstr "Тип:"
 
-#: kio/kfileitem.cpp:695
+#: kio/kfileitem.cpp:700
 msgid "Link to %1 (%2)"
 msgstr "Врска до %1 (%2)"
 
-#: kfile/kpropertiesdialog.cpp:940 kio/kfileitem.cpp:700
+#: kfile/kpropertiesdialog.cpp:940 kio/kfileitem.cpp:705
 msgid "Size:"
 msgstr "Големина:"
 
-#: kfile/kpropertiesdialog.cpp:1002 kio/kfileitem.cpp:705
+#: kfile/kpropertiesdialog.cpp:1002 kio/kfileitem.cpp:710
 msgid "Modified:"
 msgstr "Променето:"
 
-#: kio/kfileitem.cpp:708
+#: kio/kfileitem.cpp:713
 msgid "Owner:"
 msgstr "Сопственик:"
 
-#: kio/kfileitem.cpp:709
+#: kio/kfileitem.cpp:714
 msgid "Permissions:"
 msgstr "Дозволи:"
 
@@ -4049,7 +4083,7 @@ msgstr "Веќе постои датотека или папка со име %1.
 msgid "You do not have permission to create that folder."
 msgstr "Немате дозволи за создавање на таа папка."
 
-#: bookmarks/kbookmarkmenu.cc:797 kfile/kpropertiesdialog.cpp:932
+#: bookmarks/kbookmarkmenu.cc:800 kfile/kpropertiesdialog.cpp:932
 #: kfile/kurlrequesterdlg.cpp:47
 msgid "Location:"
 msgstr "Локација:"
@@ -4560,7 +4594,7 @@ msgstr "Избриши датотека"
 #: kfile/kdiroperator.cpp:478
 #, fuzzy, c-format
 msgid ""
-"_n: translators: not called for n == 1\n"
+"_n: Do you really want to delete this item?\n"
 "Do you really want to delete these %n items?"
 msgstr ""
 "Дали навистина сакате да ги избришете "
@@ -4770,8 +4804,7 @@ msgstr ""
 "%3, %4"
 
 #: kfile/kpropertiesdialog.cpp:1163 kfile/kpropertiesdialog.cpp:1179
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
 "_n: 1 file\n"
 "%n files"
@@ -4781,8 +4814,7 @@ msgstr ""
 "%n датотеки"
 
 #: kfile/kpropertiesdialog.cpp:1164 kfile/kpropertiesdialog.cpp:1180
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
 "_n: 1 sub-folder\n"
 "%n sub-folders"
@@ -5229,7 +5261,7 @@ msgstr "&Апликација"
 msgid "Add File Type for %1"
 msgstr "Додај тип на датотека за %1"
 
-#: bookmarks/kbookmarkmenu.cc:829 kfile/kpropertiesdialog.cpp:3044
+#: bookmarks/kbookmarkmenu.cc:832 kfile/kpropertiesdialog.cpp:3044
 msgid "&Add"
 msgstr "&Додај"
 
@@ -5441,35 +5473,35 @@ msgstr ""
 "додавате, уредувате или да отстранувате "
 "кратенки.</qt>"
 
-#: kfile/kurlbar.cpp:736
+#: kfile/kurlbar.cpp:730
 msgid "&Large Icons"
 msgstr "&Големи икони"
 
-#: kfile/kurlbar.cpp:736
+#: kfile/kurlbar.cpp:730
 msgid "&Small Icons"
 msgstr "&Мали икони"
 
-#: kfile/kurlbar.cpp:742
+#: kfile/kurlbar.cpp:736
 msgid "&Edit Entry..."
 msgstr "Ур&еди елемент..."
 
-#: kfile/kurlbar.cpp:746
+#: kfile/kurlbar.cpp:740
 msgid "&Add Entry..."
 msgstr "Дод&ај елемент..."
 
-#: kfile/kurlbar.cpp:750
+#: kfile/kurlbar.cpp:744
 msgid "&Remove Entry"
 msgstr "Отст&рани елемент"
 
-#: kfile/kurlbar.cpp:782
+#: kfile/kurlbar.cpp:776
 msgid "Enter a description"
 msgstr "Внесете опис"
 
-#: kfile/kurlbar.cpp:928
+#: kfile/kurlbar.cpp:922
 msgid "Edit Quick Access Entry"
 msgstr "Уредете елемент за Брзиот пристап"
 
-#: kfile/kurlbar.cpp:931
+#: kfile/kurlbar.cpp:925
 msgid ""
 "<qt><b>Please provide a description, URL and icon for this Quick Access "
 "entry.</b></br></qt>"
@@ -5477,7 +5509,7 @@ msgstr ""
 "<qt><b>Ве молиме обезбедете опис, URL и икона "
 "за овој елемент за Брз пристап.</b></br></qt>"
 
-#: kfile/kurlbar.cpp:938
+#: kfile/kurlbar.cpp:932
 msgid ""
 "<qt>This is the text that will appear in the Quick Access panel."
 "<p>The description should consist of one or two words that will help you "
@@ -5490,12 +5522,12 @@ msgstr ""
 "на што се однесува овој елемент.</qt>"
 
 #. i18n: file ./kfile/kpropertiesdesktopbase.ui line 125
-#: kfile/kurlbar.cpp:941 rc.cpp:249
+#: kfile/kurlbar.cpp:935 rc.cpp:249
 #, no-c-format
 msgid "&Description:"
 msgstr "&Опис:"
 
-#: kfile/kurlbar.cpp:948
+#: kfile/kurlbar.cpp:942
 msgid ""
 "<qt>This is the location associated with the entry. Any valid URL may be "
 "used. For "
@@ -5516,11 +5548,11 @@ msgstr ""
 "<p>Со кликање на копчето до текстуалното "
 "поле може да разгледате за соодветен URL.</qt>"
 
-#: kfile/kurlbar.cpp:952
+#: kfile/kurlbar.cpp:946
 msgid "&URL:"
 msgstr "&URL:"
 
-#: kfile/kurlbar.cpp:959
+#: kfile/kurlbar.cpp:953
 msgid ""
 "<qt>This is the icon that will appear in the Quick Access panel."
 "<p>Click on the button to select a different icon.</qt>"
@@ -5530,17 +5562,17 @@ msgstr ""
 "<p>Кликнете на копчето за да изберете "
 "друга икона.</qt>"
 
-#: kfile/kurlbar.cpp:961
+#: kfile/kurlbar.cpp:955
 msgid "Choose an &icon:"
 msgstr "Изберете &икона:"
 
-#: kfile/kurlbar.cpp:977
+#: kfile/kurlbar.cpp:971
 msgid "&Only show when using this application (%1)"
 msgstr ""
 "&Покажи само кога се користи апликацијава "
 "(%1)"
 
-#: kfile/kurlbar.cpp:980
+#: kfile/kurlbar.cpp:974
 msgid ""
 "<qt>Select this setting if you want this entry to show only when using the "
 "current application (%1)."
@@ -6327,11 +6359,11 @@ msgstr ""
 "опциите за DCOP, или за да ја стартувате "
 "апликацијата како друг корисник."
 
-#: ../kioslave/http/http.cc:4995 kpasswdserver/kpasswdserver.cpp:223
+#: ../kioslave/http/http.cc:4999 kpasswdserver/kpasswdserver.cpp:223
 msgid "  Do you want to retry?"
 msgstr "  Дали ќе се обидете повторно?"
 
-#: ../kioslave/http/http.cc:4996 kpasswdserver/kpasswdserver.cpp:225
+#: ../kioslave/http/http.cc:5000 kpasswdserver/kpasswdserver.cpp:225
 msgid "Authentication"
 msgstr "Проверка за автентичност"
 
@@ -6394,13 +6426,13 @@ msgstr "Избриши обележувач"
 msgid "Bookmark Properties"
 msgstr "Својства на обележувачот"
 
-#: bookmarks/kbookmarkmanager.cc:504 bookmarks/kbookmarkmenu.cc:340
+#: bookmarks/kbookmarkmanager.cc:504 bookmarks/kbookmarkmenu.cc:343
 msgid "Cannot add bookmark with empty URL."
 msgstr ""
 "Не можам да додадам обележувач со празен "
 "URL."
 
-#: bookmarks/kbookmarkmenu.cc:378
+#: bookmarks/kbookmarkmenu.cc:381
 msgid ""
 "Are you sure you wish to remove the bookmark folder\n"
 "\"%1\"?"
@@ -6409,7 +6441,7 @@ msgstr ""
 "отстраните оваа папка со обележувачи\n"
 "„%1“?"
 
-#: bookmarks/kbookmarkmenu.cc:379
+#: bookmarks/kbookmarkmenu.cc:382
 msgid ""
 "Are you sure you wish to remove the bookmark\n"
 "\"%1\"?"
@@ -6418,57 +6450,57 @@ msgstr ""
 "отстраните овој обележувач\n"
 "„%1“?"
 
-#: bookmarks/kbookmarkmenu.cc:380
+#: bookmarks/kbookmarkmenu.cc:383
 msgid "Bookmark Folder Deletion"
 msgstr "Бришење на папка со обележувачи"
 
-#: bookmarks/kbookmarkmenu.cc:381
+#: bookmarks/kbookmarkmenu.cc:384
 msgid "Bookmark Deletion"
 msgstr "Бришење на обележувач"
 
-#: bookmarks/kbookmarkmenu.cc:483
+#: bookmarks/kbookmarkmenu.cc:486
 msgid "Bookmark Tabs as Folder..."
 msgstr "Ливчето со обележувачи како папка..."
 
-#: bookmarks/kbookmarkmenu.cc:492
+#: bookmarks/kbookmarkmenu.cc:495
 msgid "Add a folder of bookmarks for all open tabs."
 msgstr ""
 "Додај папка или обележувачи за сите "
 "отворени ливчиња."
 
-#: bookmarks/kbookmarkmenu.cc:515
+#: bookmarks/kbookmarkmenu.cc:518
 msgid "Add a bookmark for the current document"
 msgstr "Додај обележувач за тековниот документ"
 
-#: bookmarks/kbookmarkmenu.cc:529
+#: bookmarks/kbookmarkmenu.cc:532
 msgid "Edit your bookmark collection in a separate window"
 msgstr ""
 "Уредете ја вашата колекција на "
 "обележувачи во посебен прозорец"
 
-#: bookmarks/kbookmarkmenu.cc:538
+#: bookmarks/kbookmarkmenu.cc:541
 msgid "&New Bookmark Folder..."
 msgstr "&Нова папка со обележувачи..."
 
-#: bookmarks/kbookmarkmenu.cc:550
+#: bookmarks/kbookmarkmenu.cc:553
 msgid "Create a new bookmark folder in this menu"
 msgstr ""
 "Создава нова папка со обележувачи во ова "
 "мени"
 
-#: bookmarks/kbookmarkmenu.cc:684
+#: bookmarks/kbookmarkmenu.cc:687
 msgid "Quick Actions"
 msgstr "Брзи дејства"
 
-#: bookmarks/kbookmarkmenu.cc:831
+#: bookmarks/kbookmarkmenu.cc:834
 msgid "&New Folder..."
 msgstr "&Нова папка..."
 
-#: bookmarks/kbookmarkmenu.cc:948
+#: bookmarks/kbookmarkmenu.cc:951
 msgid "Bookmark"
 msgstr "Обележувач"
 
-#: bookmarks/kbookmarkmenu.cc:1115
+#: bookmarks/kbookmarkmenu.cc:1118
 msgid "Netscape Bookmarks"
 msgstr "Обележувачи на Netscape"
 
@@ -6543,13 +6575,13 @@ msgstr ""
 "%2\n"
 "\n"
 
-#: ../kioslave/ftp/ftp.cc:595 ../kioslave/http/http.cc:5007
+#: ../kioslave/ftp/ftp.cc:595 ../kioslave/http/http.cc:5011
 msgid "You need to supply a username and a password to access this site."
 msgstr ""
 "Треба да ги наведете вашето име и лозинка "
 "за да пристапите на оваа локација."
 
-#: ../kioslave/ftp/ftp.cc:597 ../kioslave/http/http.cc:5015
+#: ../kioslave/ftp/ftp.cc:597 ../kioslave/http/http.cc:5019
 msgid "Site:"
 msgstr "Локација:"
 
@@ -6623,8 +6655,7 @@ msgid "Cookie Alert"
 msgstr "Известување за колаче"
 
 #: ../kioslave/http/kcookiejar/kcookiewin.cpp:112
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
 "_n: You received a cookie from\n"
 "You received %n cookies from"
@@ -6952,44 +6983,44 @@ msgstr "%1 (порта %2)"
 msgid "%1 contacted. Waiting for reply..."
 msgstr "Контакт со %1. Чекам одговор..."
 
-#: ../kioslave/http/http.cc:2917
+#: ../kioslave/http/http.cc:2918
 msgid "Server processing request, please wait..."
 msgstr ""
 "Серверот го обработува барањето, "
 "почекајте..."
 
-#: ../kioslave/http/http.cc:3760
+#: ../kioslave/http/http.cc:3762
 msgid "Requesting data to send"
 msgstr "Барам податоци за испраќање"
 
-#: ../kioslave/http/http.cc:3801
+#: ../kioslave/http/http.cc:3803
 #, c-format
 msgid "Sending data to %1"
 msgstr "Праќам податоци на %1"
 
-#: ../kioslave/http/http.cc:4210
+#: ../kioslave/http/http.cc:4212
 msgid "Retrieving %1 from %2..."
 msgstr "Преземам %1 од %2..."
 
-#: ../kioslave/http/http.cc:4217
+#: ../kioslave/http/http.cc:4221
 msgid "Retrieving from %1..."
 msgstr "Преземам од %1..."
 
-#: ../kioslave/http/http.cc:4987 ../kioslave/http/http.cc:5135
+#: ../kioslave/http/http.cc:4991 ../kioslave/http/http.cc:5139
 msgid "Authentication Failed."
 msgstr "Проверката за автентичност не успеа."
 
-#: ../kioslave/http/http.cc:4990 ../kioslave/http/http.cc:5138
+#: ../kioslave/http/http.cc:4994 ../kioslave/http/http.cc:5142
 msgid "Proxy Authentication Failed."
 msgstr ""
 "Проверката за автентичност на прокси не "
 "успеа."
 
-#: ../kioslave/http/http.cc:5016 ../kioslave/http/http.cc:5033
+#: ../kioslave/http/http.cc:5020 ../kioslave/http/http.cc:5037
 msgid "<b>%1</b> at <b>%2</b>"
 msgstr "<b>%1</b> на <b>%2</b>"
 
-#: ../kioslave/http/http.cc:5023
+#: ../kioslave/http/http.cc:5027
 msgid ""
 "You need to supply a username and a password for the proxy server listed "
 "below before you are allowed to access any sites."
@@ -6999,17 +7030,17 @@ msgstr ""
 "пред да ви биде дозволен пристап кон која "
 "било локација."
 
-#: ../kioslave/http/http.cc:5032
+#: ../kioslave/http/http.cc:5036
 msgid "Proxy:"
 msgstr "Прокси:"
 
-#: ../kioslave/http/http.cc:5054
+#: ../kioslave/http/http.cc:5058
 msgid "Authentication needed for %1 but authentication is disabled."
 msgstr ""
 "Потребна е проверка за автентичност за %1, "
 "но проверката е оневозможена."
 
-#: ../kioslave/http/http.cc:5674
+#: ../kioslave/http/http.cc:5678
 msgid "Unsupported method: authentication will fail. Please submit a bug report."
 msgstr ""
 "Неподдржан метод: проверката за "

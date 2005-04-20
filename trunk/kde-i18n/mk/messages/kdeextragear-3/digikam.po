@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
-"POT-Creation-Date: 2005-03-30 01:28+0200\n"
+"POT-Creation-Date: 2005-04-20 15:11+0200\n"
 "PO-Revision-Date: 2005-02-04 23:19+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -16,12 +16,14 @@ msgstr ""
 "X-Generator: KBabel 1.9.1\n"
 
 #: digikam/albumfiletip.cpp:300 digikam/imagepropertiesgeneral.cpp:61
-#: libs/thumbbar/thumbbar.cpp:501 utilities/cameragui/gpiteminfodlg.cpp:47
+#: libs/thumbbar/thumbbar.cpp:501 showfoto/imagepropertiesgeneral.cpp:63
+#: utilities/cameragui/gpiteminfodlg.cpp:47
 msgid "Name:"
 msgstr "Име:"
 
 #: digikam/albumfiletip.cpp:303 digikam/imagepropertiesgeneral.cpp:67
 #: imageplugins/imageeffect_bwsepia.cpp:70 libs/thumbbar/thumbbar.cpp:504
+#: showfoto/imagepropertiesgeneral.cpp:69
 msgid "Type:"
 msgstr "Тип:"
 
@@ -30,12 +32,14 @@ msgid "Modification Date:"
 msgstr "Датум на измена:"
 
 #: digikam/albumfiletip.cpp:312 digikam/imagepropertiesgeneral.cpp:93
-#: libs/thumbbar/thumbbar.cpp:516 utilities/cameragui/gpiteminfodlg.cpp:78
+#: libs/thumbbar/thumbbar.cpp:516 showfoto/imagepropertiesgeneral.cpp:95
+#: utilities/cameragui/gpiteminfodlg.cpp:78
 msgid "Size:"
 msgstr "Големина:"
 
 #: digikam/albumfiletip.cpp:313 digikam/imagepropertiesgeneral.cpp:211
-#: libs/thumbbar/thumbbar.cpp:517 utilities/cameragui/gpiteminfodlg.cpp:79
+#: libs/thumbbar/thumbbar.cpp:517 showfoto/imagepropertiesgeneral.cpp:176
+#: utilities/cameragui/gpiteminfodlg.cpp:79
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
@@ -64,13 +68,15 @@ msgstr ""
 msgid "x:%1"
 msgstr ""
 
-#: digikam/imagepropertieshistogram.cpp:153
+#: digikam/imagepropertieshistogram.cpp:164
 #: libs/widgets/histogramwidget.cpp:751
+#: showfoto/imagepropertieshistogram.cpp:165
 msgid "Mean:"
 msgstr "Средна:"
 
-#: digikam/imagepropertieshistogram.cpp:158
+#: digikam/imagepropertieshistogram.cpp:169
 #: libs/widgets/histogramwidget.cpp:755
+#: showfoto/imagepropertieshistogram.cpp:170
 msgid "Pixels:"
 msgstr "Пиксели:"
 
@@ -78,13 +84,15 @@ msgstr "Пиксели:"
 msgid "Std dev.:"
 msgstr ""
 
-#: digikam/imagepropertieshistogram.cpp:168
+#: digikam/imagepropertieshistogram.cpp:179
 #: libs/widgets/histogramwidget.cpp:763
+#: showfoto/imagepropertieshistogram.cpp:180
 msgid "Count:"
 msgstr "Број:"
 
-#: digikam/imagepropertieshistogram.cpp:173
+#: digikam/imagepropertieshistogram.cpp:184
 #: libs/widgets/histogramwidget.cpp:767
+#: showfoto/imagepropertieshistogram.cpp:185
 msgid "Median:"
 msgstr "Средна:"
 
@@ -158,18 +166,22 @@ msgid "(%1,%2)<br>RGB:%3,%4,%5"
 msgstr ""
 
 #: digikam/imagepropertiesgeneral.cpp:73
+#: showfoto/imagepropertiesgeneral.cpp:75
 msgid "Dimensions:"
 msgstr "Димензии:"
 
 #: digikam/imagepropertiesgeneral.cpp:87
+#: showfoto/imagepropertiesgeneral.cpp:89
 msgid "Modified:"
 msgstr "Изменета:"
 
 #: digikam/imagepropertiesgeneral.cpp:99
+#: showfoto/imagepropertiesgeneral.cpp:101
 msgid "Owner:"
 msgstr "Сопственик:"
 
 #: digikam/imagepropertiesgeneral.cpp:105
+#: showfoto/imagepropertiesgeneral.cpp:107
 msgid "Permissions:"
 msgstr "Дозволи:"
 
@@ -185,16 +197,19 @@ msgstr "Коментари:"
 msgid "Tags:"
 msgstr "Ознаки:"
 
-#: digikam/albumiconitem.cpp:294 digikam/imagepropertiesgeneral.cpp:205
+#: digikam/albumiconitem.cpp:311 digikam/imagepropertiesgeneral.cpp:205
+#: showfoto/imagepropertiesgeneral.cpp:170 showfoto/showfoto.cpp:1025
 #: utilities/imageeditor/imagewindow.cpp:740
 msgid "pixels"
 msgstr "пиксели"
 
 #: digikam/imagepropertiesgeneral.cpp:213
+#: showfoto/imagepropertiesgeneral.cpp:178
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: digikam/imagedescedit.cpp:409 digikam/imagepropertiesgeneral.cpp:254
+#: digikam/imagedescedit.cpp:416 digikam/imagepropertiesgeneral.cpp:254
+#: showfoto/imagepropertiesgeneral.cpp:190
 msgid "Thumbnail unavailable"
 msgstr "Сликичката e недостапна"
 
@@ -216,7 +231,7 @@ msgstr "Коментари/ознаки за фотографија"
 msgid "Comments"
 msgstr "Коментари"
 
-#: digikam/imagedescedit.cpp:113
+#: digikam/imagedescedit.cpp:113 digikam/imagedescedit.cpp:128
 msgid "Tags"
 msgstr "Ознаки"
 
@@ -226,61 +241,72 @@ msgstr ""
 "Автоматски сними ги коментарите и "
 "ознаките кога се преминува меѓу елементи"
 
-#: digikam/imagedescedit.cpp:439
+#: digikam/imagedescedit.cpp:446
 msgid "New Tag"
 msgstr "Нова ознака"
 
-#: digikam/imagedescedit.cpp:443
+#: digikam/imagedescedit.cpp:450
 msgid "Edit Tag Properties"
 msgstr "Уреди ги својствата на ознаката"
 
 #: digikam/albumfolderview.cpp:1225 digikam/digikamapp.cpp:340
-#: digikam/imagedescedit.cpp:445
+#: digikam/imagedescedit.cpp:452
 msgid "Delete Tag"
 msgstr "Избриши ознака"
 
-#: digikam/albumfolderview.cpp:995 digikam/imagedescedit.cpp:511
+#: digikam/albumfolderview.cpp:995 digikam/imagedescedit.cpp:518
 msgid "Delete '%1' tag?"
 msgstr "Да ја избришам ознаката „%1“?"
 
-#: digikam/imagepropertieshistogram.cpp:53
+#: digikam/imagepropertieshistogram.cpp:64
+#: showfoto/imagepropertieshistogram.cpp:65
 msgid "Channel:"
 msgstr "Канал:"
 
-#: digikam/imagepropertieshistogram.cpp:56 showfoto/showfoto.cpp:210
+#: digikam/imagepropertieshistogram.cpp:67
+#: showfoto/imagepropertieshistogram.cpp:68 showfoto/showfoto.cpp:304
 #: utilities/imageeditor/imagewindow.cpp:303
 msgid "Luminosity"
 msgstr "Осветленост"
 
-#: digikam/imagepropertieshistogram.cpp:57
-#: digikam/imagepropertieshistogram.cpp:85 imageplugins/imageeffect_rgb.cpp:80
-#: showfoto/showfoto.cpp:211 utilities/imageeditor/imagewindow.cpp:304
+#: digikam/imagepropertieshistogram.cpp:68
+#: digikam/imagepropertieshistogram.cpp:96 imageplugins/imageeffect_rgb.cpp:80
+#: showfoto/imagepropertieshistogram.cpp:69
+#: showfoto/imagepropertieshistogram.cpp:97 showfoto/showfoto.cpp:305
+#: utilities/imageeditor/imagewindow.cpp:304
 msgid "Red"
 msgstr "Црвена"
 
-#: digikam/imagepropertieshistogram.cpp:58
-#: digikam/imagepropertieshistogram.cpp:86 imageplugins/imageeffect_rgb.cpp:95
-#: showfoto/showfoto.cpp:212 utilities/imageeditor/imagewindow.cpp:305
+#: digikam/imagepropertieshistogram.cpp:69
+#: digikam/imagepropertieshistogram.cpp:97 imageplugins/imageeffect_rgb.cpp:95
+#: showfoto/imagepropertieshistogram.cpp:70
+#: showfoto/imagepropertieshistogram.cpp:98 showfoto/showfoto.cpp:306
+#: utilities/imageeditor/imagewindow.cpp:305
 msgid "Green"
 msgstr "Зелена"
 
-#: digikam/imagepropertieshistogram.cpp:59
-#: digikam/imagepropertieshistogram.cpp:87
-#: imageplugins/imageeffect_rgb.cpp:110 showfoto/showfoto.cpp:213
+#: digikam/imagepropertieshistogram.cpp:70
+#: digikam/imagepropertieshistogram.cpp:98
+#: imageplugins/imageeffect_rgb.cpp:110
+#: showfoto/imagepropertieshistogram.cpp:71
+#: showfoto/imagepropertieshistogram.cpp:99 showfoto/showfoto.cpp:307
 #: utilities/imageeditor/imagewindow.cpp:306
 msgid "Blue"
 msgstr "Сина"
 
-#: digikam/imagepropertieshistogram.cpp:60 showfoto/showfoto.cpp:214
+#: digikam/imagepropertieshistogram.cpp:71
+#: showfoto/imagepropertieshistogram.cpp:72 showfoto/showfoto.cpp:308
 #: utilities/imageeditor/imagewindow.cpp:307
 msgid "Alpha"
 msgstr "Алфа"
 
-#: digikam/imagepropertieshistogram.cpp:61
+#: digikam/imagepropertieshistogram.cpp:72
+#: showfoto/imagepropertieshistogram.cpp:73
 msgid "Colors"
 msgstr "Бои"
 
-#: digikam/imagepropertieshistogram.cpp:62
+#: digikam/imagepropertieshistogram.cpp:73
+#: showfoto/imagepropertieshistogram.cpp:74
 msgid ""
 "<p>Select here the histogram channel to display:"
 "<p><b>Luminosity</b>: drawing the image luminosity values."
@@ -310,19 +336,23 @@ msgstr ""
 "<p><b>Бои</b>: приказ на вредностите на сите "
 "канали во исто време."
 
-#: digikam/imagepropertieshistogram.cpp:72
+#: digikam/imagepropertieshistogram.cpp:83
+#: showfoto/imagepropertieshistogram.cpp:84
 msgid "Scale:"
 msgstr "Скала:"
 
-#: digikam/imagepropertieshistogram.cpp:75
+#: digikam/imagepropertieshistogram.cpp:86
+#: showfoto/imagepropertieshistogram.cpp:87
 msgid "Linear"
 msgstr "Линеарна"
 
-#: digikam/imagepropertieshistogram.cpp:76
+#: digikam/imagepropertieshistogram.cpp:87
+#: showfoto/imagepropertieshistogram.cpp:88
 msgid "Logarithmic"
 msgstr "Логаритамска"
 
-#: digikam/imagepropertieshistogram.cpp:77
+#: digikam/imagepropertieshistogram.cpp:88
+#: showfoto/imagepropertieshistogram.cpp:89
 msgid ""
 "<p>Select here the histogram scale."
 "<p>If the image maximal counts is small, you can use the linear "
@@ -340,11 +370,13 @@ msgstr ""
 "вредности (и мали и големи) ќе бидат "
 "прикажани на графиконот."
 
-#: digikam/imagepropertieshistogram.cpp:82
+#: digikam/imagepropertieshistogram.cpp:93
+#: showfoto/imagepropertieshistogram.cpp:94
 msgid "Colors:"
 msgstr "Бои:"
 
-#: digikam/imagepropertieshistogram.cpp:89
+#: digikam/imagepropertieshistogram.cpp:100
+#: showfoto/imagepropertieshistogram.cpp:101
 msgid ""
 "<p>Select here the main color displayed with Colors Channel "
 "mode:"
@@ -363,19 +395,23 @@ msgstr ""
 "<p><b>Сина</b>: приказ на синиот канал во "
 "преден план. <p>"
 
-#: digikam/imagepropertieshistogram.cpp:94
+#: digikam/imagepropertieshistogram.cpp:105
+#: showfoto/imagepropertieshistogram.cpp:106
 msgid "Rendering:"
 msgstr "Исцртување:"
 
-#: digikam/imagepropertieshistogram.cpp:97
+#: digikam/imagepropertieshistogram.cpp:108
+#: showfoto/imagepropertieshistogram.cpp:109
 msgid "Full Image"
 msgstr "Цела фотографија"
 
-#: digikam/imagepropertieshistogram.cpp:98
+#: digikam/imagepropertieshistogram.cpp:109
+#: showfoto/imagepropertieshistogram.cpp:110
 msgid "Selection"
 msgstr "Избор"
 
-#: digikam/imagepropertieshistogram.cpp:100
+#: digikam/imagepropertieshistogram.cpp:111
+#: showfoto/imagepropertieshistogram.cpp:112
 msgid ""
 "<p>Select here the histogram rendering method:"
 "<p><b>Full Image</b>: drawing histogram using the full "
@@ -389,33 +425,39 @@ msgstr ""
 "<p><b>Избор</b>: приказ на хистограмот за "
 "избраниот дел од фотографијата."
 
-#: digikam/imagepropertieshistogram.cpp:120
+#: digikam/imagepropertieshistogram.cpp:131
+#: showfoto/imagepropertieshistogram.cpp:132
 msgid "<p>This is the histogram drawing of the selected image channel"
 msgstr ""
 "<p>Ова е хистограмот за одбраниот канал на "
 "фотографијата"
 
-#: digikam/imagepropertieshistogram.cpp:132
+#: digikam/imagepropertieshistogram.cpp:143
+#: showfoto/imagepropertieshistogram.cpp:144
 msgid "Intensity range:"
 msgstr "Опсег на интензитет:"
 
-#: digikam/imagepropertieshistogram.cpp:136
+#: digikam/imagepropertieshistogram.cpp:147
+#: showfoto/imagepropertieshistogram.cpp:148
 msgid "<p>Select here the minimal intensity value of the histogram selection."
 msgstr ""
 "<p>Изберете ја минималната вредност за "
 "интензитет на изборот на хистограмот."
 
-#: digikam/imagepropertieshistogram.cpp:140
+#: digikam/imagepropertieshistogram.cpp:151
+#: showfoto/imagepropertieshistogram.cpp:152
 msgid "<p>Select here the maximal intensity value of the histogram selection."
 msgstr ""
 "<p>Изберете ја максималната вредност за "
 "интензитет на изборот на хистограмот."
 
-#: digikam/imagepropertieshistogram.cpp:148
+#: digikam/imagepropertieshistogram.cpp:159
+#: showfoto/imagepropertieshistogram.cpp:160
 msgid "Statistics"
 msgstr "Статистика"
 
-#: digikam/imagepropertieshistogram.cpp:149
+#: digikam/imagepropertieshistogram.cpp:160
+#: showfoto/imagepropertieshistogram.cpp:161
 msgid ""
 "<p>You can see here the statistic results calculated with the selected "
 "histogram part. These values are available for all channels."
@@ -425,11 +467,13 @@ msgstr ""
 "дел од хистограмот. Овие вредности се "
 "достапни за сите канали."
 
-#: digikam/imagepropertieshistogram.cpp:163
+#: digikam/imagepropertieshistogram.cpp:174
+#: showfoto/imagepropertieshistogram.cpp:175
 msgid "Standard deviation:"
 msgstr "Стандардна девијација:"
 
-#: digikam/imagepropertieshistogram.cpp:178
+#: digikam/imagepropertieshistogram.cpp:189
+#: showfoto/imagepropertieshistogram.cpp:190
 msgid "Percentile:"
 msgstr "Процентуално:"
 
@@ -593,17 +637,17 @@ msgstr "Постави како сликичка за албумот"
 #: digikam/albumfolderview.cpp:1621 digikam/albumfolderview.cpp:1656
 #: digikam/albumfolderview.cpp:1716 digikam/albumfolderview.cpp:1805
 #: digikam/albumfolderview.cpp:1831 digikam/albumfolderview.cpp:1859
-#: digikam/albumiconview.cpp:1328 digikam/albumiconview.cpp:1398
+#: digikam/albumiconview.cpp:1345 digikam/albumiconview.cpp:1415
 msgid "C&ancel"
 msgstr "О&ткажи"
 
 #: digikam/albumfolderview.cpp:1653 digikam/albumfolderview.cpp:1713
-#: digikam/albumfolderview.cpp:1857 digikam/albumiconview.cpp:1325
+#: digikam/albumfolderview.cpp:1857 digikam/albumiconview.cpp:1342
 msgid "&Move Here"
 msgstr "&Премести тука"
 
 #: digikam/albumfolderview.cpp:1654 digikam/albumfolderview.cpp:1714
-#: digikam/albumiconview.cpp:1326
+#: digikam/albumiconview.cpp:1343
 msgid "&Copy Here"
 msgstr "К&опирај тука"
 
@@ -754,7 +798,7 @@ msgstr ""
 
 #: digikam/main.cpp:91 digikam/main.cpp:96 digikam/main.cpp:101
 #: digikam/main.cpp:106 showfoto/main.cpp:58 showfoto/main.cpp:63
-#: showfoto/main.cpp:68
+#: showfoto/main.cpp:68 showfoto/main.cpp:73
 msgid "Developer"
 msgstr "Развивач"
 
@@ -856,7 +900,7 @@ msgstr ""
 "digiKam"
 
 #: digikam/album.cpp:333 digikam/albummanager.cpp:192
-#: digikam/kipiinterface.cpp:461 utilities/cameragui/dirselectdialog.cpp:86
+#: digikam/kipiinterface.cpp:484 utilities/cameragui/dirselectdialog.cpp:86
 msgid "My Albums"
 msgstr "Мои албуми"
 
@@ -1064,7 +1108,7 @@ msgid "Rename..."
 msgstr "Преименувај..."
 
 #: digikam/albumiconview.cpp:619 digikam/digikamapp.cpp:1002
-#: utilities/imageeditor/imagewindow.cpp:455
+#: showfoto/showfoto.cpp:455 utilities/imageeditor/imagewindow.cpp:455
 msgid "Move to Trash"
 msgstr "Премести во корпа"
 
@@ -1076,9 +1120,8 @@ msgstr "Преименувај елемент"
 msgid "Enter new name:"
 msgstr "Внесете ново име:"
 
-#: digikam/albumiconview.cpp:800
-#, c-format
-#, fuzzy
+#: digikam/albumiconview.cpp:817
+#, fuzzy, c-format
 msgid ""
 "_n: About to delete this image. Are you sure?\n"
 "About to delete these %n images. Are you sure?"
@@ -1090,7 +1133,7 @@ msgstr ""
 "Ќе ги избришам овие %n фотографии. Дали сте "
 "сигурни?"
 
-#: digikam/albumiconview.cpp:836
+#: digikam/albumiconview.cpp:853
 #, c-format
 msgid ""
 "Failed to delete files.\n"
@@ -1099,7 +1142,7 @@ msgstr ""
 "Не успеав да ги избришам датотеките.\n"
 "%1"
 
-#: digikam/albumiconview.cpp:1196 digikam/albumiconview.cpp:1200
+#: digikam/albumiconview.cpp:1213 digikam/albumiconview.cpp:1217
 msgid ""
 "_n: %1 %2 - 1 Item\n"
 "%1 %2 - %n Items"
@@ -1108,9 +1151,8 @@ msgstr ""
 "%1 %2 - %n ставки\n"
 "%1 %2 - %n ставки"
 
-#: digikam/albumiconview.cpp:1208 digikam/albumiconview.cpp:1213
-#, c-format
-#, fuzzy
+#: digikam/albumiconview.cpp:1225 digikam/albumiconview.cpp:1230
+#, fuzzy, c-format
 msgid ""
 "_n: 1 Item\n"
 "%n Items"
@@ -1119,53 +1161,51 @@ msgstr ""
 "%n ставки\n"
 "%n ставки"
 
-#: digikam/albumiconview.cpp:1350 utilities/cameragui/cameraui.cpp:123
+#: digikam/albumiconview.cpp:1367 utilities/cameragui/cameraui.cpp:123
 msgid "&Download"
 msgstr "Сн&ими"
 
-#: digikam/albumiconview.cpp:1395
+#: digikam/albumiconview.cpp:1412
 msgid "&Assign Tag '%1' to Selected Images"
 msgstr ""
 "&Додели ја ознаката „%1“ на избраните "
 "фотографии"
 
-#: digikam/albumiconview.cpp:1683
+#: digikam/albumiconview.cpp:1700
 #, c-format
 msgid "Failed to correct Exif orientation for file %1."
 msgstr ""
 "Не успеав да ја поправам ориентацијата Exif "
 "за датотеката %1."
 
-#: digikam/imageproperties.cpp:90
+#: digikam/imageproperties.cpp:97 showfoto/imageproperties.cpp:69
 msgid "&General"
 msgstr "Оп&што"
 
-#: digikam/imageproperties.cpp:91
+#: digikam/imageproperties.cpp:98 showfoto/imageproperties.cpp:70
 msgid "&EXIF"
 msgstr "&EXIF"
 
-#: digikam/imageproperties.cpp:92
+#: digikam/imageproperties.cpp:99 showfoto/imageproperties.cpp:71
+#: showfoto/showfoto.cpp:297 utilities/imageeditor/imagewindow.cpp:295
 msgid "&Histogram"
 msgstr "&Хистограм"
 
-#: digikam/imageproperties.cpp:177
+#: digikam/imageproperties.cpp:184 showfoto/imageproperties.cpp:105
 msgid "Properties for '%1'"
 msgstr "Својства за „%1“"
 
-#: digikam/kipiinterface.cpp:247
+#: digikam/kipiinterface.cpp:270 digikam/kipiinterface.cpp:286
 #, c-format
 msgid "Tag: %1"
 msgstr "Ознака: %1"
 
-#: digikam/kipiinterface.cpp:263
-msgid "Tag:"
-msgstr "Ознака:"
-
-#: digikam/kipiinterface.cpp:594
-msgid "Target URL is not valid."
+#: digikam/kipiinterface.cpp:617
+#, fuzzy
+msgid "Target URL %1 is not valid."
 msgstr "Целната адреса не е валидна."
 
-#: digikam/kipiinterface.cpp:602
+#: digikam/kipiinterface.cpp:625
 msgid "Target album is not in the albums library."
 msgstr ""
 "Целниот албум не е во библиотеката со "
@@ -1200,7 +1240,8 @@ msgid "&New Album..."
 msgstr "Нов а&лбум..."
 
 #: digikam/digikamapp.cpp:272
-msgid "This option create a new empty Album in the database."
+#, fuzzy
+msgid "This option creates a new empty Album in the database."
 msgstr ""
 "Оваа опција прави нов празен албум во "
 "базата на податоци."
@@ -1226,7 +1267,8 @@ msgid "Add Images..."
 msgstr "Додај фотографии..."
 
 #: digikam/digikamapp.cpp:305
-msgid "This option adding new images in the current Album."
+#, fuzzy
+msgid "This option adds new images to the current Album."
 msgstr ""
 "Оваа опција додава нови фотографии во "
 "тековниот албум."
@@ -1252,8 +1294,9 @@ msgid "New &Tag..."
 msgstr "Но&ва ознака..."
 
 #: digikam/digikamapp.cpp:357
+#, fuzzy
 msgid ""
-"This option allows you to open the Image Editor with the current selected "
+"This option allows you to open the Image Editor with the currently selected "
 "image."
 msgstr ""
 "Оваа опција Ви дозволува да го отворите "
@@ -1267,25 +1310,30 @@ msgstr ""
 "фотографијата..."
 
 #: digikam/digikamapp.cpp:367
+#, fuzzy
 msgid ""
-"This option allows you to edit the comments and tags of the current selected "
-"image."
+"This option allows you to edit the comments and tags of the currently "
+"selected image."
 msgstr ""
 "Оваа опција Ви овозможува да ги уредувате "
 "коментарите и ознаките на моментално "
 "одбраната фотографија."
 
 #: digikam/digikamapp.cpp:377
-msgid "This option allows you to rename the filename of the current selected image."
+#, fuzzy
+msgid ""
+"This option allows you to rename the filename of the currently selected "
+"image."
 msgstr ""
 "Оваа опција Ви дозволува да ја "
 "преименувата моментално одбраната "
 "фотографија."
 
 #: digikam/digikamapp.cpp:395
+#, fuzzy
 msgid ""
 "This option allows you to display the file properties, the meta-data and the "
-"histogram of the current selected image."
+"histogram of the currently selected image."
 msgstr ""
 "Оваа опција Ви дозволува да ги прикажете "
 "својствата на датотеката, "
@@ -1403,19 +1451,19 @@ msgstr ""
 "од Контролниот центар на KDE.\n"
 " Проверете ја вашата инсталација."
 
-#: digikam/digikamapp.cpp:793 utilities/imageeditor/imagewindow.cpp:1255
+#: digikam/digikamapp.cpp:793 showfoto/setup.cpp:44 showfoto/showfoto.cpp:1105
+#: utilities/imageeditor/imagewindow.cpp:1267
 msgid "General"
 msgstr "Општо"
 
-#: digikam/digikamapp.cpp:914 utilities/imageeditor/imagepluginloader.cpp:98
-#: utilities/imageeditor/imagepluginloader.cpp:149
+#: digikam/digikamapp.cpp:914 utilities/imageeditor/imagepluginloader.cpp:100
+#: utilities/imageeditor/imagepluginloader.cpp:153
 #, c-format
 msgid "Loading: %1"
 msgstr "Вчитување: %1"
 
 #: digikam/digikamapp.cpp:955
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
 "_n: 1 Kipi Plugin Loaded\n"
 "%n Kipi Plugins Loaded"
@@ -1428,11 +1476,11 @@ msgstr ""
 msgid "Add Camera..."
 msgstr "Додај апарат..."
 
-#: digikam/imagepropertiesexif.cpp:47
+#: digikam/imagepropertiesexif.cpp:47 showfoto/imagepropertiesexif.cpp:56
 msgid "Select level of detail:"
 msgstr "Изберете деталност:"
 
-#: digikam/imagepropertiesexif.cpp:52
+#: digikam/imagepropertiesexif.cpp:52 showfoto/imagepropertiesexif.cpp:61
 msgid ""
 "<p>Select here the Exif information level to display"
 "<p><b>Simple</b>: display general information about the photograph  "
@@ -1447,10 +1495,11 @@ msgstr ""
 "EXIF."
 
 #: digikam/imagepropertiesexif.cpp:60 digikam/imagepropertiesexif.cpp:115
+#: showfoto/imagepropertiesexif.cpp:69 showfoto/imagepropertiesexif.cpp:112
 msgid "Simple"
 msgstr "Едноставно"
 
-#: digikam/imagepropertiesexif.cpp:61
+#: digikam/imagepropertiesexif.cpp:61 showfoto/imagepropertiesexif.cpp:70
 msgid "Full"
 msgstr "Целоснo"
 
@@ -1533,13 +1582,38 @@ msgstr "Додај фотографии"
 msgid "&Add"
 msgstr "Дод&ај..."
 
+#: showfoto/setupplugins.cpp:56 utilities/setup/setupeditor.cpp:120
+msgid "Name"
+msgstr "Име"
+
+#: showfoto/setupplugins.cpp:58 utilities/setup/setupeditor.cpp:122
+msgid "Description"
+msgstr "Опис"
+
+#: showfoto/setupplugins.cpp:61 utilities/setup/setupeditor.cpp:125
+msgid ""
+"<p>You can set here the list of plugins which must be enabled/disabled for "
+"the future digiKam image editor instances."
+"<p>Note: the core image plugin cannot be disabled."
+msgstr ""
+"<p>Тука можете да ги вклучите или "
+"исклучите приклучоците кои ќе бидат "
+"достапни за уредувачот во следните сесии. "
+"<p>Забелешка: главниот приклучок не може "
+"да биде исклучен."
+
+#: showfoto/setupplugins.cpp:97 utilities/setup/setupeditor.cpp:160
+#, c-format
+msgid "Plugins found: %1"
+msgstr "Пронајдени приклучоци: %1"
+
 #: showfoto/main.cpp:40
 msgid "File(s) to open"
 msgstr "Датотеки за отворање"
 
 #: showfoto/main.cpp:46
 #, fuzzy
-msgid "digiKam Photo Viewer and editor"
+msgid "KDE Photo Viewer and editor"
 msgstr "digiKam - прегледувач на фотогафии"
 
 #: showfoto/main.cpp:49
@@ -1551,148 +1625,304 @@ msgstr "showFoto"
 msgid "(c) 2004-2005, digiKam developers team"
 msgstr "(c) 2005, развојниот тим на digiKam "
 
-#: showfoto/showfoto.cpp:180 utilities/imageeditor/imagewindow.cpp:284
+#: showfoto/setupeditor.cpp:54 utilities/setup/setupeditor.cpp:54
+msgid "Saving Images Options"
+msgstr "Снимање на опциите за фотографиите"
+
+#: showfoto/setupeditor.cpp:58 utilities/setup/setupeditor.cpp:59
+msgid "&JPEG quality:"
+msgstr "&Квалитет на JPEG:"
+
+#: showfoto/setupeditor.cpp:60 utilities/setup/setupeditor.cpp:61
+msgid ""
+"<p>The quality value for JPEG images:"
+"<p><b>1</b>: low quality (high compression and small file size)"
+"<p><b>50</b>: medium quality"
+"<p><b>75</b>: good quality (default)"
+"<p><b>100</b>: high quality (no compression and large file size)"
+"<p><b>Note: JPEG is not a lossless image compression format.</b>"
+msgstr ""
+"<p>"
+"Вредноста на квалитет кај датотеките од "
+"тип JPEG "
+"<p><b>1</b>: низок квалитет (висока компресија "
+"и мали датотеки)"
+"<p><b>50</b>: среден квалитет"
+"<p><b>75</b>: добар квалитет "
+"(стандардно)"
+"<p><b>100</b>: висок квалитет (без компресија и "
+"големи датотеки)"
+"<p><b>Забелешка: компресијата од тип JPEG има "
+"загуби во квалитетот.</b>"
+
+#: showfoto/setupeditor.cpp:69 utilities/setup/setupeditor.cpp:70
+msgid "&PNG compression:"
+msgstr "Kомпресија &PNG:"
+
+#: showfoto/setupeditor.cpp:71 utilities/setup/setupeditor.cpp:72
+msgid ""
+"<p>The compression value for PNG images:"
+"<p><b>1</b>"
+": low compression (large file size but short compression duration - "
+"default)"
+"<p><b>5</b>: medium compression"
+"<p><b>9</b>: high compression (small file size but long compression "
+"duration)<p><b>Note: PNG is always a lossless image compression format.</b>"
+msgstr ""
+"<p>Вредности за компресија кај датотеките "
+"од тип PNG:"
+"<p><b>1</b>: мала компресија (големи датотеки "
+"но кратко време на отпакување - "
+"стандардно)"
+"<p><b>5</b>: средна компресија"
+"<p><b>9</b>: голема компресија (мали датотеки "
+"но долго време на "
+"отпакување)"
+"<p><b>Забелешка: PNG е формат кој користи "
+"компресија без загуби</b>"
+
+#: showfoto/setupeditor.cpp:79 utilities/setup/setupeditor.cpp:80
+msgid "Compress TIFF files"
+msgstr "Компресирај датотеки TIFF"
+
+#: showfoto/setupeditor.cpp:82 utilities/setup/setupeditor.cpp:83
+msgid ""
+"<p>Toggle compression for TIFF images."
+"<p>"
+"If you enable this option, you can reduce the final file size of the TIFF "
+"image.</p>"
+"<p>A lossless compression format (Adobe Deflate) is used to save the file.<p>"
+msgstr ""
+"<p>Промена на компресија за TIFF "
+"фотографии."
+"<p> Ако ја овозможите оваа опција, може да "
+"ја намалите финалната големина на "
+"TIFF-фотографиите.</p> "
+"<p>За зачувување на датотеките се користи "
+"формат за компресија без загуби (Adobe Deflate)<p>"
+
+#: showfoto/setupeditor.cpp:92 utilities/setup/setupeditor.cpp:93
+msgid "Interface Options"
+msgstr "Опции за интерфејсот"
+
+#: showfoto/setupeditor.cpp:96 utilities/setup/setupeditor.cpp:98
+msgid "&Background color:"
+msgstr "Боја на &подлогата:"
+
+#: showfoto/setupeditor.cpp:100 utilities/setup/setupeditor.cpp:103
+msgid "<p>Select here the background color to use for image editor area."
+msgstr ""
+"<p>Одберете ја бојата на подлогата која ќе "
+"ја користите за уредувачот на фотографии."
+
+#: showfoto/setupeditor.cpp:104 utilities/setup/setupeditor.cpp:107
+msgid "H&ide toolbar in fullscreen mode"
+msgstr ""
+"Сокри&ј го алатникот во режим преку "
+"целиот екран"
+
+#: showfoto/setupeditor.cpp:105
+#, fuzzy
+msgid "H&ide thumbbar in fullscreen mode"
+msgstr ""
+"Сокри&ј го алатникот во режим преку "
+"целиот екран"
+
+#: showfoto/setupeditor.cpp:106 utilities/setup/setupmisc.cpp:39
+msgid "&Deleting items should move them to trash"
+msgstr ""
+"&Бришењето на елементи ги преместува во "
+"корпата"
+
+#: showfoto/setupeditor.cpp:107 utilities/setup/setupmisc.cpp:44
+msgid "&Show splash screen at startup"
+msgstr "Прика&жи поздравна слика на почетокот"
+
+#: showfoto/setup.cpp:44
+#, fuzzy
+msgid "General Settings"
+msgstr "Поставувања за ознаките"
+
+#: showfoto/setup.cpp:48
+#, fuzzy
+msgid "Image Plugins"
+msgstr "Листа на приклучоци за фотографиите"
+
+#: showfoto/setup.cpp:48 utilities/setup/setupeditor.cpp:114
+msgid "Image Plugins List"
+msgstr "Листа на приклучоци за фотографиите"
+
+#: showfoto/showfoto.cpp:208 utilities/imageeditor/imagewindow.cpp:199
+msgid "&First"
+msgstr "Пр&в"
+
+#: showfoto/showfoto.cpp:213 utilities/imageeditor/imagewindow.cpp:204
+msgid "&Last"
+msgstr "Последе&н"
+
+#: showfoto/showfoto.cpp:231 utilities/imageeditor/imagewindow.cpp:218
+msgid "Print Image..."
+msgstr "Печати фотографија..."
+
+#: showfoto/showfoto.cpp:241 showfoto/showfoto.cpp:460
+#: utilities/imageeditor/imagewindow.cpp:233
+#: utilities/imageeditor/imagewindow.cpp:460
+msgid "Delete File"
+msgstr "Избриши датотека"
+
+#: showfoto/showfoto.cpp:278 utilities/imageeditor/imagewindow.cpp:284
 msgid "Zoom &AutoFit"
 msgstr "Фокус со &автоприлагодување"
 
-#: showfoto/showfoto.cpp:191
+#: showfoto/showfoto.cpp:287
 msgid "Fullscreen"
 msgstr "Преку целиот екран"
 
-#: showfoto/showfoto.cpp:198
+#: showfoto/showfoto.cpp:293
 msgid "Hide thumbnails"
 msgstr "Сокриј ги сликичките"
 
-#: showfoto/showfoto.cpp:203 utilities/imageeditor/imagewindow.cpp:295
-#, fuzzy
-msgid "View &Histogram"
-msgstr "&Хистограм"
-
-#: showfoto/showfoto.cpp:209 utilities/imageeditor/imagewindow.cpp:302
+#: showfoto/showfoto.cpp:303 utilities/imageeditor/imagewindow.cpp:302
 msgid "Hide"
 msgstr ""
 
-#: showfoto/showfoto.cpp:219
-msgid "Rotate 90"
-msgstr "Сврти за 90"
+#: showfoto/showfoto.cpp:313 utilities/imageeditor/imagewindow.cpp:326
+msgid "&Rotate"
+msgstr "Ро&тирај"
 
-#: showfoto/showfoto.cpp:222
-msgid "Rotate 180"
-msgstr "Сврти за 180"
+#: showfoto/showfoto.cpp:318 utilities/imageeditor/imagewindow.cpp:331
+msgid "90 Degrees"
+msgstr "90 степени"
 
-#: showfoto/showfoto.cpp:225
-msgid "Rotate 270"
-msgstr "Сврти за 270"
+#: showfoto/showfoto.cpp:322 utilities/imageeditor/imagewindow.cpp:335
+msgid "180 Degrees"
+msgstr "180 степени"
 
-#: showfoto/showfoto.cpp:229
-msgid "Flip Horizontally"
-msgstr "Преврти хоризонтално"
+#: showfoto/showfoto.cpp:326 utilities/imageeditor/imagewindow.cpp:339
+msgid "270 Degrees"
+msgstr "270 степени"
 
-#: showfoto/showfoto.cpp:232
-msgid "Flip Vertically"
-msgstr "Преврти вертикално"
+#: showfoto/showfoto.cpp:336 utilities/imageeditor/imagewindow.cpp:349
+msgid "Flip"
+msgstr "Преврти"
 
-#: showfoto/showfoto.cpp:236
+#: showfoto/showfoto.cpp:342 utilities/imageeditor/imagewindow.cpp:355
+msgid "Horizontally"
+msgstr "хоризонтално"
+
+#: showfoto/showfoto.cpp:347 utilities/imageeditor/imagewindow.cpp:360
+msgid "Vertically"
+msgstr "вертикално"
+
+#: showfoto/showfoto.cpp:356 utilities/imageeditor/imagewindow.cpp:312
+msgid "&Resize..."
+msgstr "Смени &големина..."
+
+#: showfoto/showfoto.cpp:360
 msgid "Crop"
 msgstr "Исечок"
 
-#: showfoto/showfoto.cpp:244
+#: imageplugins/imageeffect_bcg.cpp:44 showfoto/showfoto.cpp:368
+msgid "Brightness/Contrast/Gamma"
+msgstr "Осветлување/Контраст/Гама"
+
+#: showfoto/showfoto.cpp:372
 msgid "Increase Gamma"
 msgstr "Зголеми гама"
 
-#: showfoto/showfoto.cpp:247
+#: showfoto/showfoto.cpp:375
 msgid "Decrease Gamma"
 msgstr "Намали гама"
 
-#: showfoto/showfoto.cpp:250
+#: showfoto/showfoto.cpp:378
 msgid "Increase Brightness"
 msgstr "Зголеми осветлување"
 
-#: showfoto/showfoto.cpp:253
+#: showfoto/showfoto.cpp:381
 msgid "Decrease Brightness"
 msgstr "Намали осветлување"
 
-#: showfoto/showfoto.cpp:256
+#: showfoto/showfoto.cpp:384
 msgid "Increase Contrast"
 msgstr "Зголеми контраст"
 
-#: showfoto/showfoto.cpp:259
+#: showfoto/showfoto.cpp:387
 msgid "Decrease Contrast"
 msgstr "Намали контраст"
 
-#: showfoto/showfoto.cpp:265 utilities/imageeditor/imagewindow.cpp:369
+#: showfoto/showfoto.cpp:400 utilities/imageeditor/imagewindow.cpp:369
 msgid "Image Plugins Handbooks"
 msgstr "Прирачници за приклучоците за фотографии"
 
-#: showfoto/showfoto.cpp:275 utilities/imageeditor/imagewindow.cpp:135
+#: showfoto/showfoto.cpp:416 utilities/imageeditor/imagewindow.cpp:135
 msgid "Exit Fullscreen"
 msgstr "Излез од цел екран"
 
-#: showfoto/showfoto.cpp:276 utilities/imageeditor/imagewindow.cpp:136
+#: showfoto/showfoto.cpp:417 utilities/imageeditor/imagewindow.cpp:136
 msgid "Exit out of the fullscreen mode"
 msgstr "Излегува од прегледот преку целиот екран"
 
-#: showfoto/showfoto.cpp:279 showfoto/showfoto.cpp:287
+#: showfoto/showfoto.cpp:420 showfoto/showfoto.cpp:428
 msgid "Next Image"
 msgstr "Следна фотографија"
 
-#: showfoto/showfoto.cpp:280 showfoto/showfoto.cpp:288
+#: showfoto/showfoto.cpp:421 showfoto/showfoto.cpp:429
 msgid "Load Next Image"
 msgstr "Вчитај следна фотографија"
 
-#: showfoto/showfoto.cpp:283 showfoto/showfoto.cpp:291
+#: showfoto/showfoto.cpp:424 showfoto/showfoto.cpp:432
 msgid "Previous Image"
 msgstr "Претходна фотографија"
 
-#: showfoto/showfoto.cpp:284 showfoto/showfoto.cpp:292
+#: showfoto/showfoto.cpp:425 showfoto/showfoto.cpp:433
 msgid "Load Previous Image"
 msgstr "Вчитај претходна фотографија"
 
-#: showfoto/showfoto.cpp:295
+#: showfoto/showfoto.cpp:436
 msgid "Zoom In"
 msgstr "Доближи го погледот"
 
-#: showfoto/showfoto.cpp:296
+#: showfoto/showfoto.cpp:437
 msgid "Zoom into Image"
 msgstr "Доближи го погледот"
 
-#: showfoto/showfoto.cpp:299
+#: showfoto/showfoto.cpp:440
 msgid "Zoom Out"
 msgstr "Оддалечи го погледот"
 
-#: showfoto/showfoto.cpp:300
+#: showfoto/showfoto.cpp:441
 msgid "Zoom out of Image"
 msgstr "Оддалечи го погледот од фотографијата"
 
-#: showfoto/showfoto.cpp:367
+#: showfoto/showfoto.cpp:544
 msgid "Open images"
 msgstr "Отвори фотографии"
 
-#: showfoto/showfoto.cpp:441 utilities/imageeditor/imagewindow.cpp:971
+#: showfoto/showfoto.cpp:649 utilities/imageeditor/imagewindow.cpp:976
 msgid "New Image File Name"
 msgstr "Ново име за фотографијава"
 
-#: showfoto/showfoto.cpp:454
+#: showfoto/showfoto.cpp:662
 msgid "Invalid target selected"
 msgstr "Избрана е невалидна цел"
 
-#: showfoto/showfoto.cpp:471 utilities/imageeditor/imagewindow.cpp:1008
+#: showfoto/showfoto.cpp:679 utilities/imageeditor/imagewindow.cpp:1020
 msgid "About to overwrite file %1. Are you sure you want to continue?"
 msgstr ""
 "Ќе ја пребришете датотеката %1. Дали сте "
 "сигурни дека сакате да продолжите?"
 
-#: showfoto/showfoto.cpp:483 showfoto/showfoto.cpp:587
+#: showfoto/showfoto.cpp:692 showfoto/showfoto.cpp:797
 msgid "Failed to save file '%1'"
 msgstr "Не успеав да ја зачувам датотеката „%1“"
 
-#: showfoto/showfoto.cpp:512 showfoto/showfoto.cpp:612
+#: showfoto/showfoto.cpp:721 showfoto/showfoto.cpp:822
 msgid "Failed to overwrite original file"
 msgstr ""
 "Не успеав да запишам врз оригиналната "
 "датотека"
 
-#: showfoto/showfoto.cpp:547
+#: showfoto/showfoto.cpp:756
 msgid ""
 "The image '%1' has been modified.\n"
 "Do you want to save it?"
@@ -1700,11 +1930,43 @@ msgstr ""
 "Фотографијата „%1“ е сменета.\n"
 "Дали сакате да ја зачувате?"
 
-#: showfoto/showfoto.cpp:579
+#: showfoto/showfoto.cpp:788
 msgid "No support for saving non-local files"
 msgstr ""
 "Нема поддршка за зачувување на не-локални "
 "датотеки"
+
+#: showfoto/showfoto.cpp:858 utilities/imageeditor/imagewindow.cpp:549
+msgid " (%2 of %3)"
+msgstr " (%2 од %3)"
+
+#: showfoto/showfoto.cpp:863
+#, c-format
+msgid "Showfoto - %1"
+msgstr ""
+
+#: showfoto/showfoto.cpp:1151 utilities/imageeditor/imagewindow.cpp:893
+#, c-format
+msgid "Print %1"
+msgstr "Печати %1"
+
+#: showfoto/showfoto.cpp:1159 utilities/imageeditor/imagewindow.cpp:901
+msgid "Failed to print file: '%1'"
+msgstr ""
+"Не успеав да ја испечатам датотеката\n"
+"„%1“"
+
+#: showfoto/showfoto.cpp:1190 utilities/imageeditor/imagewindow.cpp:724
+msgid "Zoom: "
+msgstr "Големина:"
+
+#: showfoto/showfoto.cpp:1251 utilities/imageeditor/imagewindow.cpp:817
+msgid ""
+"About to Delete File \"%1\"\n"
+"Are you sure?"
+msgstr ""
+"Ја бришете датотеката „%1“\n"
+"Дали сте сигурни?"
 
 #: _translatorinfo.cpp:1
 msgid ""
@@ -1817,7 +2079,7 @@ msgid "T&ag"
 msgstr "Озн&ака"
 
 #. i18n: file ./digikam/digikamui.rc line 39
-#: rc.cpp:15 rc.cpp:42 rc.cpp:81
+#: rc.cpp:15 rc.cpp:45 rc.cpp:87
 #, no-c-format
 msgid "&Image"
 msgstr "&Фотографија"
@@ -1834,26 +2096,26 @@ msgstr "Изб&ор"
 msgid "&Batch Processes"
 msgstr "Авто&матизирани процеси"
 
-#. i18n: file ./showfoto/showfotoui.rc line 25
-#: rc.cpp:45 rc.cpp:60 rc.cpp:84
+#. i18n: file ./showfoto/showfotoui.rc line 40
+#: rc.cpp:48 rc.cpp:66 rc.cpp:90
 #, no-c-format
 msgid "Fi&x"
 msgstr "Поп&равка"
 
-#. i18n: file ./showfoto/showfotoui.rc line 35
-#: rc.cpp:48 rc.cpp:66 rc.cpp:87
+#. i18n: file ./showfoto/showfotoui.rc line 45
+#: rc.cpp:51 rc.cpp:72 rc.cpp:93
 #, no-c-format
 msgid "&Transform"
 msgstr "Трансформира&ње"
 
 #. i18n: file ./imageplugins/digikamimageplugin_core_ui.rc line 9
-#: rc.cpp:63
+#: rc.cpp:69
 #, no-c-format
 msgid "&Colors"
 msgstr "Бо&и"
 
 #. i18n: file ./imageplugins/digikamimageplugin_core_ui.rc line 35
-#: rc.cpp:69
+#: rc.cpp:75
 #, no-c-format
 msgid "Fi&lters"
 msgstr "Филтр&и"
@@ -1871,9 +2133,10 @@ msgid "Red Eye Reduction..."
 msgstr "Намалување на ефектот црвено-око..."
 
 #: imageplugins/imageplugin_core.cpp:66
+#, fuzzy
 msgid ""
 "This filter can be used to correct red eyes in a photo. Select a region "
-"including the eyes to enable this action."
+"including the eyes to use this option."
 msgstr ""
 "Овој филтер може да се користи да се "
 "поправат црвените очи во една "
@@ -1893,7 +2156,7 @@ msgstr "Боја/Заситување/Светло..."
 msgid "Color Balance..."
 msgstr "Баланс на бои..."
 
-#: imageplugins/imageplugin_core.cpp:81 imageplugins/imageplugin_core.cpp:195
+#: imageplugins/imageplugin_core.cpp:81 imageplugins/imageplugin_core.cpp:212
 msgid "Stretch Contrast"
 msgstr "Растегни контраст"
 
@@ -1911,7 +2174,7 @@ msgstr ""
 "вредностите помеѓу нив ги поставува "
 "соодветно."
 
-#: imageplugins/imageplugin_core.cpp:90 imageplugins/imageplugin_core.cpp:213
+#: imageplugins/imageplugin_core.cpp:90 imageplugins/imageplugin_core.cpp:230
 msgid "Normalize"
 msgstr "Нормализирање"
 
@@ -1931,7 +2194,7 @@ msgstr ""
 "фотографиите кои се како избледени или "
 "затемнети."
 
-#: imageplugins/imageplugin_core.cpp:99 imageplugins/imageplugin_core.cpp:231
+#: imageplugins/imageplugin_core.cpp:99 imageplugins/imageplugin_core.cpp:248
 msgid "Equalize"
 msgstr "Изедначување"
 
@@ -1960,7 +2223,7 @@ msgstr ""
 "фотографијата или да даде многу лоши "
 "резултати."
 
-#: imageplugins/imageplugin_core.cpp:111 imageplugins/imageplugin_core.cpp:249
+#: imageplugins/imageplugin_core.cpp:111 imageplugins/imageplugin_core.cpp:266
 msgid "Auto Levels"
 msgstr "Автоматски нивоа"
 
@@ -1977,7 +2240,7 @@ msgstr ""
 "црвените, зелените и сините канали кон "
 "целосен опсег во хистограмот."
 
-#: imageplugins/imageplugin_core.cpp:119 imageplugins/imageplugin_core.cpp:267
+#: imageplugins/imageplugin_core.cpp:119 imageplugins/imageplugin_core.cpp:284
 msgid "Invert"
 msgstr "Обратно"
 
@@ -2019,10 +2282,6 @@ msgstr ""
 #, fuzzy
 msgid "Blur"
 msgstr "Сина"
-
-#: imageplugins/imageeffect_bcg.cpp:44
-msgid "Brightness/Contrast/Gamma"
-msgstr "Осветлување/Контраст/Гама"
 
 #: imageplugins/imageeffect_bcg.cpp:46 imageplugins/imageeffect_hsl.cpp:47
 #: imageplugins/imageeffect_ratiocrop.cpp:58
@@ -2236,7 +2495,7 @@ msgstr "X:"
 
 #: imageplugins/imageeffect_ratiocrop.cpp:133
 #: utilities/cameragui/gpiteminfodlg.cpp:87
-#: utilities/imageeditor/imageresizedlg.cpp:51
+#: utilities/imageeditor/imageresizedlg.cpp:56
 msgid "Width:"
 msgstr "Ширина:"
 
@@ -2252,7 +2511,7 @@ msgstr "Y:"
 
 #: imageplugins/imageeffect_ratiocrop.cpp:144
 #: utilities/cameragui/gpiteminfodlg.cpp:91
-#: utilities/imageeditor/imageresizedlg.cpp:57
+#: utilities/imageeditor/imageresizedlg.cpp:62
 msgid "Height:"
 msgstr "Висина:"
 
@@ -2318,14 +2577,14 @@ msgid ""
 "<p><b>Neutral</b>: simulate black and white neutral film "
 "exposure."
 "<p><b>Green Filter</b>: simulate black and white film exposure using green "
-"filter. This provide an universal asset for all scenics, especially suited "
+"filter. This provides an universal asset for all scenics, especially suited "
 "for portraits photographed against sky."
 "<p><b>Orange Filter</b>"
 ": simulate black and white film exposure using orange filter. This will "
 "enhances landscapes, marine scenes and aerial photography."
 "<p><b>Red Filter</b>: simulate black and white film exposure using red "
-"filter. Using this one for creates dramatic sky effects and simulates "
-"moonlight scenes in daytime."
+"filter. Using this one creates dramatic sky effects and simulates moonlight "
+"scenes in daytime."
 "<p><b>Yellow Filter</b>"
 ": simulate black and white film exposure using yellow filter. Most natural "
 "tonal correction and improves contrast. Ideal for landscapes."
@@ -2724,12 +2983,12 @@ msgid ""
 "<img src=\"crystalsvg/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"... that digiKam has multiple Plugins with extra features like <b>HTML "
+"... that digiKam has multiple plugins with extra features like <b>HTML "
 "export</b>, <b>Archive to CD</b>, <b>Slideshow</b>,... and that you are "
 "welcome to write your own plugins? You can find more information about this "
 "at <a "
-"href=\"http://extragear.kde.org/apps/kipi.php\">"
-"http://extragear.kde.org/apps/kipi.php</a>.\n"
+"href=\"http://extragear.kde.org/apps/kipi\">"
+"http://extragear.kde.org/apps/kipi</a>.\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -2857,7 +3116,7 @@ msgid ""
 "<td>\n"
 "<img src=\"crystalsvg/32x32/apps/digikam.png\"></td>\n"
 "<td>\n"
-"... that all the settings in a dialog box have <b>What's this?</b> "
+"... that most of the settings in a dialog box have <b>What's this?</b> "
 "information available, which can be reached via the right mouse button?\n"
 "</td>\n"
 "</tr>\n"
@@ -2989,7 +3248,7 @@ msgid ""
 "</td>\n"
 "<td>\n"
 "... that you could use &lt;Page Down&gt; and &lt;Page Up&gt; on your "
-"Keyboard to switch between the photos in the image editor?\n"
+"keyboard to switch between the photos in the image editor?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -3023,8 +3282,7 @@ msgstr ""
 "Kipi."
 
 #: utilities/setup/setupplugins.cpp:80
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
 "_n: 1 Kipi plugin found\n"
 "%n Kipi plugins found"
@@ -3119,16 +3377,6 @@ msgstr ""
 "во албумите (како CRW за апаратите Канон "
 "или NFF кај апаратите Никон)"
 
-#: utilities/setup/setupmisc.cpp:39
-msgid "&Deleting items should move them to trash"
-msgstr ""
-"&Бришењето на елементи ги преместува во "
-"корпата"
-
-#: utilities/setup/setupmisc.cpp:44
-msgid "&Show splash screen at startup"
-msgstr "Прика&жи поздравна слика на почетокот"
-
 #: utilities/setup/setupcollections.cpp:72
 #, fuzzy
 msgid ""
@@ -3153,131 +3401,6 @@ msgstr "Ново има на колекција"
 #: utilities/setup/setupcollections.cpp:160
 msgid "Enter new collection name:"
 msgstr "Внесете ново име на колекцијата:"
-
-#: utilities/setup/setupeditor.cpp:54
-msgid "Saving Images Options"
-msgstr "Снимање на опциите за фотографиите"
-
-#: utilities/setup/setupeditor.cpp:59
-msgid "&JPEG quality:"
-msgstr "&Квалитет на JPEG:"
-
-#: utilities/setup/setupeditor.cpp:61
-msgid ""
-"<p>The quality value for JPEG images:"
-"<p><b>1</b>: low quality (high compression and small file size)"
-"<p><b>50</b>: medium quality"
-"<p><b>75</b>: good quality (default)"
-"<p><b>100</b>: high quality (no compression and large file size)"
-"<p><b>Note: JPEG is not a lossless image compression format.</b>"
-msgstr ""
-"<p>"
-"Вредноста на квалитет кај датотеките од "
-"тип JPEG "
-"<p><b>1</b>: низок квалитет (висока компресија "
-"и мали датотеки)"
-"<p><b>50</b>: среден квалитет"
-"<p><b>75</b>: добар квалитет "
-"(стандардно)"
-"<p><b>100</b>: висок квалитет (без компресија и "
-"големи датотеки)"
-"<p><b>Забелешка: компресијата од тип JPEG има "
-"загуби во квалитетот.</b>"
-
-#: utilities/setup/setupeditor.cpp:70
-msgid "&PNG compression:"
-msgstr "Kомпресија &PNG:"
-
-#: utilities/setup/setupeditor.cpp:72
-msgid ""
-"<p>The compression value for PNG images:"
-"<p><b>1</b>"
-": low compression (large file size but short compression duration - "
-"default)"
-"<p><b>5</b>: medium compression"
-"<p><b>9</b>: high compression (small file size but long compression "
-"duration)<p><b>Note: PNG is always a lossless image compression format.</b>"
-msgstr ""
-"<p>Вредности за компресија кај датотеките "
-"од тип PNG:"
-"<p><b>1</b>: мала компресија (големи датотеки "
-"но кратко време на отпакување - "
-"стандардно)"
-"<p><b>5</b>: средна компресија"
-"<p><b>9</b>: голема компресија (мали датотеки "
-"но долго време на "
-"отпакување)"
-"<p><b>Забелешка: PNG е формат кој користи "
-"компресија без загуби</b>"
-
-#: utilities/setup/setupeditor.cpp:80
-msgid "Compress TIFF files"
-msgstr "Компресирај датотеки TIFF"
-
-#: utilities/setup/setupeditor.cpp:83
-msgid ""
-"<p>Toggle compression for TIFF images."
-"<p>"
-"If you enable this option, you can reduce the final file size of the TIFF "
-"image.</p>"
-"<p>A lossless compression format (Adobe Deflate) is used to save the file.<p>"
-msgstr ""
-"<p>Промена на компресија за TIFF "
-"фотографии."
-"<p> Ако ја овозможите оваа опција, може да "
-"ја намалите финалната големина на "
-"TIFF-фотографиите.</p> "
-"<p>За зачувување на датотеките се користи "
-"формат за компресија без загуби (Adobe Deflate)<p>"
-
-#: utilities/setup/setupeditor.cpp:93
-msgid "Interface Options"
-msgstr "Опции за интерфејсот"
-
-#: utilities/setup/setupeditor.cpp:98
-msgid "&Background color:"
-msgstr "Боја на &подлогата:"
-
-#: utilities/setup/setupeditor.cpp:103
-msgid "<p>Select here the background color to use for image editor area."
-msgstr ""
-"<p>Одберете ја бојата на подлогата која ќе "
-"ја користите за уредувачот на фотографии."
-
-#: utilities/setup/setupeditor.cpp:107
-msgid "H&ide toolbar in fullscreen mode"
-msgstr ""
-"Сокри&ј го алатникот во режим преку "
-"целиот екран"
-
-#: utilities/setup/setupeditor.cpp:114
-msgid "Image Plugins List"
-msgstr "Листа на приклучоци за фотографиите"
-
-#: utilities/setup/setupeditor.cpp:120
-msgid "Name"
-msgstr "Име"
-
-#: utilities/setup/setupeditor.cpp:122
-msgid "Description"
-msgstr "Опис"
-
-#: utilities/setup/setupeditor.cpp:125
-msgid ""
-"<p>You can set here the list of plugins which must be enabled/disabled for "
-"the future digiKam image editor instances."
-"<p>Note: the core image plugin cannot be disabled."
-msgstr ""
-"<p>Тука можете да ги вклучите или "
-"исклучите приклучоците кои ќе бидат "
-"достапни за уредувачот во следните сесии. "
-"<p>Забелешка: главниот приклучок не може "
-"да биде исклучен."
-
-#: utilities/setup/setupeditor.cpp:160
-#, c-format
-msgid "Plugins found: %1"
-msgstr "Пронајдени приклучоци: %1"
 
 #: utilities/setup/setupcamera.cpp:55
 msgid "Title"
@@ -3568,18 +3691,6 @@ msgstr "Непознато"
 msgid "&Next"
 msgstr "&Следно"
 
-#: utilities/imageeditor/imagewindow.cpp:199
-msgid "&First"
-msgstr "Пр&в"
-
-#: utilities/imageeditor/imagewindow.cpp:204
-msgid "&Last"
-msgstr "Последе&н"
-
-#: utilities/imageeditor/imagewindow.cpp:218
-msgid "Print Image..."
-msgstr "Печати фотографија..."
-
 #: utilities/imageeditor/imagewindow.cpp:228
 msgid ""
 "This option display the current image properties, meta-data, and histogram. "
@@ -3594,11 +3705,6 @@ msgstr ""
 "хистограмот за областа или за целата "
 "фотографија."
 
-#: utilities/imageeditor/imagewindow.cpp:233
-#: utilities/imageeditor/imagewindow.cpp:460
-msgid "Delete File"
-msgstr "Избриши датотека"
-
 #: utilities/imageeditor/imagewindow.cpp:274
 msgid "Zoom &In"
 msgstr "&Зголеми"
@@ -3606,10 +3712,6 @@ msgstr "&Зголеми"
 #: utilities/imageeditor/imagewindow.cpp:279
 msgid "Zoom &Out"
 msgstr "&Намали"
-
-#: utilities/imageeditor/imagewindow.cpp:312
-msgid "&Resize..."
-msgstr "Смени &големина..."
 
 #: utilities/imageeditor/imagewindow.cpp:316
 msgid "&Crop"
@@ -3625,56 +3727,12 @@ msgstr ""
 "останатиот дел. Одберете некоја област за "
 "да ја овозможите оваа алатка."
 
-#: utilities/imageeditor/imagewindow.cpp:326
-msgid "&Rotate"
-msgstr "Ро&тирај"
-
-#: utilities/imageeditor/imagewindow.cpp:331
-msgid "90 Degrees"
-msgstr "90 степени"
-
-#: utilities/imageeditor/imagewindow.cpp:335
-msgid "180 Degrees"
-msgstr "180 степени"
-
-#: utilities/imageeditor/imagewindow.cpp:339
-msgid "270 Degrees"
-msgstr "270 степени"
-
-#: utilities/imageeditor/imagewindow.cpp:349
-msgid "Flip"
-msgstr "Преврти"
-
-#: utilities/imageeditor/imagewindow.cpp:355
-msgid "Horizontally"
-msgstr "хоризонтално"
-
-#: utilities/imageeditor/imagewindow.cpp:360
-msgid "Vertically"
-msgstr "вертикално"
-
 #: utilities/imageeditor/imagewindow.cpp:412
 #, fuzzy
 msgid "digiKam Image Editor - Album \"%1\""
 msgstr "Уредувач на фотографии Digikam - Албум „%1“"
 
-#: utilities/imageeditor/imagewindow.cpp:549
-msgid " (%2 of %3)"
-msgstr " (%2 од %3)"
-
-#: utilities/imageeditor/imagewindow.cpp:724
-msgid "Zoom: "
-msgstr "Големина:"
-
-#: utilities/imageeditor/imagewindow.cpp:813
-msgid ""
-"About to Delete File \"%1\"\n"
-"Are you sure?"
-msgstr ""
-"Ја бришете датотеката „%1“\n"
-"Дали сте сигурни?"
-
-#: utilities/imageeditor/imagewindow.cpp:864
+#: utilities/imageeditor/imagewindow.cpp:868
 msgid ""
 "There is no image to show in the current album.\n"
 "The image editor will be closed."
@@ -3684,23 +3742,12 @@ msgstr ""
 "Уредувачот на фотографии ќе биде "
 "затворен."
 
-#: utilities/imageeditor/imagewindow.cpp:866
+#: utilities/imageeditor/imagewindow.cpp:870
 msgid "No Image in Current Album"
 msgstr "Нема фотографија во избраниот албум"
 
-#: utilities/imageeditor/imagewindow.cpp:889
-#, c-format
-msgid "Print %1"
-msgstr "Печати %1"
-
-#: utilities/imageeditor/imagewindow.cpp:897
-msgid "Failed to print file: '%1'"
-msgstr ""
-"Не успеав да ја испечатам датотеката\n"
-"„%1“"
-
-#: utilities/imageeditor/imagewindow.cpp:917
-#: utilities/imageeditor/imagewindow.cpp:1023
+#: utilities/imageeditor/imagewindow.cpp:921
+#: utilities/imageeditor/imagewindow.cpp:1035
 msgid ""
 "Failed to save file\n"
 "\"%1\" to album\n"
@@ -3710,7 +3757,11 @@ msgstr ""
 "„%1“ во албумот\n"
 "„%2“."
 
-#: utilities/imageeditor/imagewindow.cpp:987
+#: utilities/imageeditor/imagewindow.cpp:946
+msgid "Error Saving File"
+msgstr ""
+
+#: utilities/imageeditor/imagewindow.cpp:999
 msgid ""
 "Failed to save file\n"
 "\"%1\" to Album\n"
@@ -3720,7 +3771,7 @@ msgstr ""
 "„%1“ во албумот\n"
 "„%2“"
 
-#: utilities/imageeditor/imagewindow.cpp:1199
+#: utilities/imageeditor/imagewindow.cpp:1211
 msgid ""
 "The image \"%1\" has been modified.\n"
 "Do you want to save it?"
@@ -3805,15 +3856,15 @@ msgstr "&Висина:"
 msgid "Resize Image"
 msgstr "Промени големина на фотографија"
 
-#: utilities/imageeditor/imageresizedlg.cpp:63
+#: utilities/imageeditor/imageresizedlg.cpp:68
 msgid "Width (%):"
 msgstr "Ширина (%):"
 
-#: utilities/imageeditor/imageresizedlg.cpp:69
+#: utilities/imageeditor/imageresizedlg.cpp:74
 msgid "Height (%):"
 msgstr "Висина (%):"
 
-#: utilities/imageeditor/imageresizedlg.cpp:75
+#: utilities/imageeditor/imageresizedlg.cpp:80
 msgid "Maintain aspect ratio"
 msgstr "Задржи пропорции"
 
@@ -3821,9 +3872,8 @@ msgstr "Задржи пропорции"
 msgid "Calculating..."
 msgstr ""
 
-#: utilities/imageeditor/imagepluginloader.cpp:158
-#, c-format
-#, fuzzy
+#: utilities/imageeditor/imagepluginloader.cpp:162
+#, fuzzy, c-format
 msgid ""
 "_n: 1 Image Plugin Loaded\n"
 "%n Image Plugins Loaded"
@@ -4120,8 +4170,7 @@ msgstr ""
 "фотографиите од апаратот"
 
 #: utilities/cameragui/cameraui.cpp:524 utilities/cameragui/cameraui.cpp:566
-#, c-format
-#, fuzzy
+#, fuzzy, c-format
 msgid ""
 "_n: About to delete this image. Deleted files are unrecoverable. Are you "
 "sure?\n"
@@ -4155,6 +4204,28 @@ msgstr "Информации EXIF "
 #: utilities/cameragui/cameraiconview.cpp:204
 msgid "Download"
 msgstr "Сними"
+
+#~ msgid "Tag:"
+#~ msgstr "Ознака:"
+
+#, fuzzy
+#~ msgid "View &Histogram"
+#~ msgstr "&Хистограм"
+
+#~ msgid "Rotate 90"
+#~ msgstr "Сврти за 90"
+
+#~ msgid "Rotate 180"
+#~ msgstr "Сврти за 180"
+
+#~ msgid "Rotate 270"
+#~ msgstr "Сврти за 270"
+
+#~ msgid "Flip Horizontally"
+#~ msgstr "Преврти хоризонтално"
+
+#~ msgid "Flip Vertically"
+#~ msgstr "Преврти вертикално"
 
 #~ msgid "&Go"
 #~ msgstr "О&ди"
