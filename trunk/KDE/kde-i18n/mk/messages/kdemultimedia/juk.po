@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: juk\n"
-"POT-Creation-Date: 2005-03-18 01:24+0100\n"
+"POT-Creation-Date: 2005-05-08 01:24+0200\n"
 "PO-Revision-Date: 2005-02-22 22:49+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -270,7 +270,7 @@ msgstr "Обвивката е недостапна"
 msgid "Time"
 msgstr "Време"
 
-#: juk.cpp:122 systemtray.cpp:149
+#: juk.cpp:122 systemtray.cpp:177
 msgid "&Random Play"
 msgstr "&Пуштање по случаен редослед"
 
@@ -404,7 +404,7 @@ msgstr "Нанапред"
 msgid "Show / Hide"
 msgstr "Прикажи / Скриј"
 
-#: juk.cpp:238 playlistcollection.cpp:828
+#: juk.cpp:238 playlistcollection.cpp:846
 msgid "Play Next Album"
 msgstr "Пушти следен албум"
 
@@ -577,11 +577,11 @@ msgstr "Листи со нумери"
 msgid "Querying MusicBrainz server..."
 msgstr "Го барам серверот MusicBrainz..."
 
-#: musicbrainzquery.cpp:49
+#: musicbrainzquery.cpp:50
 msgid "No matches found."
 msgstr "Не се најдени совпаѓања."
 
-#: musicbrainzquery.cpp:61
+#: musicbrainzquery.cpp:64
 msgid "Error connecting to MusicBrainz server."
 msgstr "Грешка при поврзување со серверот MusicBrainz."
 
@@ -590,152 +590,164 @@ msgstr "Грешка при поврзување со серверот MusicBrai
 msgid "back to playlist"
 msgstr "Барај листа со нумери"
 
-#: nowplaying.cpp:254 nowplaying.cpp:269 playlistcollection.cpp:511
+#: nowplaying.cpp:254 nowplaying.cpp:269 playlistcollection.cpp:529
 msgid "History"
 msgstr "Историја"
 
-#: playermanager.cpp:218
+#: playermanager.cpp:232
 msgid "&Output To"
 msgstr "&Излез кон"
 
-#: playermanager.cpp:222 playermanager.cpp:516
+#: playermanager.cpp:236 playermanager.cpp:530
 msgid "aRts"
 msgstr "aRts"
 
-#: playermanager.cpp:225 playermanager.cpp:518
+#: playermanager.cpp:239 playermanager.cpp:532
 msgid "GStreamer"
 msgstr "GStreamer"
 
-#: playermanager.cpp:227 playermanager.cpp:520
+#: playermanager.cpp:241 playermanager.cpp:534
 msgid "aKode"
 msgstr "aKode"
 
-#: playlist.cpp:537
+#: playlist.cpp:538
 #, c-format
 msgid "Could not save to file %1."
 msgstr "Не можам да зачувам во датотеката %1."
 
-#: playlist.cpp:795
+#: playlist.cpp:796
 msgid "Are you sure you want to delete these covers?"
 msgstr ""
 "Дали сте сигурни дека сакате да ги "
 "бришете овие обвивки?"
 
-#: playlist.cpp:797
+#: playlist.cpp:798
 msgid "&Delete Covers"
 msgstr "&Избриши обвивки"
 
-#: playlist.cpp:813
+#: playlist.cpp:830
+msgid ""
+"None of the items you have selected can be assigned a cover.  A track must "
+"have both the Artist and Album tags set to be assigned a cover."
+msgstr ""
+
+#: playlist.cpp:841
 #, fuzzy
 msgid "Select Cover Image File"
 msgstr "Избери датотека со слика за обвивка - JuK"
 
-#: playlist.cpp:952
+#: playlist.cpp:980
 msgid "Could not delete these files"
 msgstr "Не можам да ги избришам овие датотеки"
 
-#: playlist.cpp:953
+#: playlist.cpp:981
 msgid "Could not move these files to the Trash"
 msgstr ""
 "Не можам да ги преместам овие датотеки во "
 "ѓубрето."
 
+#: playlist.cpp:1299
+msgid ""
+"The following songs were ignored because they don't have both their Artist "
+"and Album tags filled in."
+msgstr ""
+
 #. i18n: file trackpickerdialogbase.ui line 89
-#: playlist.cpp:1371 rc.cpp:259
+#: playlist.cpp:1418 rc.cpp:259
 #, no-c-format
 msgid "Track Name"
 msgstr "Име на песната"
 
 #. i18n: file exampleoptionsbase.ui line 93
-#: playlist.cpp:1372 rc.cpp:83 rc.cpp:262 tagrenameroptions.cpp:91
+#: playlist.cpp:1419 rc.cpp:83 rc.cpp:262 tagrenameroptions.cpp:91
 #, no-c-format
 msgid "Artist"
 msgstr "Изведувач"
 
 #. i18n: file exampleoptionsbase.ui line 109
-#: playlist.cpp:1373 rc.cpp:89 rc.cpp:265 tagrenameroptions.cpp:91
+#: playlist.cpp:1420 rc.cpp:89 rc.cpp:265 tagrenameroptions.cpp:91
 #, no-c-format
 msgid "Album"
 msgstr "Албум"
 
-#: playlist.cpp:1374
+#: playlist.cpp:1421
 msgid "Cover"
 msgstr "Обвивка"
 
 #. i18n: file trackpickerdialogbase.ui line 122
-#: playlist.cpp:1375 rc.cpp:268 tagrenameroptions.cpp:92
+#: playlist.cpp:1422 rc.cpp:268 tagrenameroptions.cpp:92
 #, no-c-format
 msgid "Track"
 msgstr "Песна"
 
 #. i18n: file exampleoptionsbase.ui line 179
-#: playlist.cpp:1376 rc.cpp:107 tagrenameroptions.cpp:92
+#: playlist.cpp:1423 rc.cpp:107 tagrenameroptions.cpp:92
 #, no-c-format
 msgid "Genre"
 msgstr "Жанр"
 
 #. i18n: file trackpickerdialogbase.ui line 133
-#: playlist.cpp:1377 rc.cpp:271 tagrenameroptions.cpp:92
+#: playlist.cpp:1424 rc.cpp:271 tagrenameroptions.cpp:92
 #, no-c-format
 msgid "Year"
 msgstr "Година"
 
-#: playlist.cpp:1378
+#: playlist.cpp:1425
 msgid "Length"
 msgstr "Должина"
 
-#: playlist.cpp:1379
+#: playlist.cpp:1426
 msgid "Bitrate"
 msgstr "Брзина на битови"
 
-#: playlist.cpp:1380
+#: playlist.cpp:1427
 msgid "Comment"
 msgstr "Коментар"
 
 #. i18n: file trackpickerdialogbase.ui line 32
-#: playlist.cpp:1381 rc.cpp:252
+#: playlist.cpp:1428 rc.cpp:252
 #, no-c-format
 msgid "File Name"
 msgstr "Име на датотеката"
 
-#: playlist.cpp:1382
+#: playlist.cpp:1429
 msgid "File Name (full path)"
 msgstr "Име на датотеката (целосна патека)"
 
-#: playlist.cpp:1402
+#: playlist.cpp:1449
 msgid "&Show Columns"
 msgstr "&Прикажи колони"
 
-#: playlist.cpp:1405
+#: playlist.cpp:1452
 msgid "Show"
 msgstr "Прикажи"
 
-#: playlist.cpp:1924
+#: playlist.cpp:1973
 msgid "Add to Play Queue"
 msgstr "Додај во редот за изведување"
 
-#: playlist.cpp:1952
+#: playlist.cpp:2001
 #, fuzzy
 msgid "Create Playlist From Selected Items..."
 msgstr ""
 "Креирај листа на нумери од избраните "
 "ставки"
 
-#: playlist.cpp:1974
+#: playlist.cpp:2023
 msgid "Edit '%1'"
 msgstr "Уреди ја „%1“"
 
-#: playlist.cpp:2085
+#: playlist.cpp:2134
 msgid "This will edit multiple files. Are you sure?"
 msgstr ""
 "Ова ќе уреди повеќе датотеки. Дали сте "
 "сигурни?"
 
-#: playlist.cpp:2140 playlistcollection.h:161
+#: playlist.cpp:2189 playlistcollection.h:162
 msgid "Create New Playlist"
 msgstr "Креирај нова листа со нумери"
 
-#: playlist.cpp:2153
+#: playlist.cpp:2202
 msgid ""
 "Manual column widths have been enabled.  You can switch back to automatic "
 "column sizes in the view menu."
@@ -745,7 +757,7 @@ msgstr ""
 "автоматска големина на колоните во "
 "менито за преглед."
 
-#: playlist.cpp:2156
+#: playlist.cpp:2205
 msgid "Manual Column Widths Enabled"
 msgstr ""
 "Вклучено рачно поставување на ширината "
@@ -755,7 +767,7 @@ msgstr ""
 msgid "View Modes"
 msgstr "Режими на поглед"
 
-#: playlistbox.cpp:198 playlistcollection.cpp:360
+#: playlistbox.cpp:198 playlistcollection.cpp:378
 msgid "Duplicate"
 msgstr "Дупликат"
 
@@ -785,142 +797,142 @@ msgstr "Да ги отстранам ставките?"
 msgid "Hid&e"
 msgstr "&Скриј"
 
-#: playlistbox.cpp:645 playlistcollection.cpp:836
+#: playlistbox.cpp:645 playlistcollection.cpp:854
 msgid "R&emove"
 msgstr "&Отстрани"
 
-#: playlistcollection.cpp:165
+#: playlistcollection.cpp:166
 msgid "Dynamic List"
 msgstr "Динамичка листа"
 
-#: playlistcollection.cpp:205
+#: playlistcollection.cpp:206
 msgid "Now Playing"
 msgstr "Сега свири"
 
-#: playlistcollection.cpp:286
+#: playlistcollection.cpp:304
 msgid "Do you want to add these items to the current list or to the collection list?"
 msgstr ""
 "Дали сакате да ги додадете овие ставки на "
 "тековната листа или на листата од "
 "колекцијата?"
 
-#: playlistcollection.cpp:288
+#: playlistcollection.cpp:306
 msgid "Current"
 msgstr "Тековна"
 
-#: playlistcollection.cpp:289
+#: playlistcollection.cpp:307
 msgid "Collection"
 msgstr "Колекција"
 
-#: playlistcollection.cpp:348
+#: playlistcollection.cpp:366
 msgid "Rename"
 msgstr "Преименувај"
 
-#: playlistcollection.cpp:455
+#: playlistcollection.cpp:473
 msgid "Search Playlist"
 msgstr "Барај листа со нумери"
 
-#: playlistcollection.cpp:472
+#: playlistcollection.cpp:490
 msgid "Create Folder Playlist"
 msgstr "Креирај папка за листи со нумери"
 
-#: playlistcollection.cpp:689
+#: playlistcollection.cpp:707
 msgid "Please enter a name for this playlist:"
 msgstr "Внесете име за оваа листа со нумери:"
 
-#: playlistcollection.cpp:802
+#: playlistcollection.cpp:820
 msgid "&New"
 msgstr "&Нова"
 
-#: playlistcollection.cpp:804
+#: playlistcollection.cpp:822
 msgid "&Empty Playlist..."
 msgstr "&Празна листа со нумери..."
 
-#: playlistcollection.cpp:806
+#: playlistcollection.cpp:824
 msgid "&Search Playlist..."
 msgstr "&Барај листа со нумери..."
 
-#: playlistcollection.cpp:808
+#: playlistcollection.cpp:826
 msgid "Playlist From &Folder..."
 msgstr "Листа со нумери од &папка..."
 
-#: playlistcollection.cpp:814
+#: playlistcollection.cpp:832
 msgid "&Guess Tag Information"
 msgstr "&Погоди инфо. за ознака"
 
-#: playlistcollection.cpp:817
+#: playlistcollection.cpp:835
 msgid "From &File Name"
 msgstr "Од &име на датотека"
 
-#: playlistcollection.cpp:819
+#: playlistcollection.cpp:837
 msgid "From &Internet"
 msgstr "Од &Интернет"
 
-#: playlistcollection.cpp:822
+#: playlistcollection.cpp:840
 msgid "Guess Tag Information From &File Name"
 msgstr "Погоди инфо. за ознака од &име на папка"
 
-#: playlistcollection.cpp:827
+#: playlistcollection.cpp:845
 msgid "Play First Track"
 msgstr "Свири прва песна"
 
-#: playlistcollection.cpp:831
+#: playlistcollection.cpp:849
 msgid "Add &Folder..."
 msgstr "Додај &папка..."
 
-#: playlistcollection.cpp:832
+#: playlistcollection.cpp:850
 msgid "&Rename..."
 msgstr "&Преименувај..."
 
-#: playlistcollection.cpp:833
+#: playlistcollection.cpp:851
 msgid "D&uplicate..."
 msgstr "Д&уплирај..."
 
-#: playlistcollection.cpp:838
+#: playlistcollection.cpp:856
 msgid "Edit Search..."
 msgstr "Уреди барање..."
 
-#: playlistcollection.cpp:841
+#: playlistcollection.cpp:859
 msgid "Refresh"
 msgstr "Освежи"
 
-#: playlistcollection.cpp:842
+#: playlistcollection.cpp:860
 msgid "&Rename File"
 msgstr "&Преименувај датотека"
 
-#: playlistcollection.cpp:844
+#: playlistcollection.cpp:862
 msgid "Cover Manager"
 msgstr "Уредувач на обвивки"
 
-#: playlistcollection.cpp:846
+#: playlistcollection.cpp:864
 msgid "&View Cover"
 msgstr "&Прикажи обвивка"
 
-#: playlistcollection.cpp:848
+#: playlistcollection.cpp:866
 msgid "Get Cover From &File..."
 msgstr "Земи обвивка од &датотека..."
 
-#: playlistcollection.cpp:850
+#: playlistcollection.cpp:868
 msgid "Get Cover From &Internet..."
 msgstr "Земи обвивка од &Интернет..."
 
-#: playlistcollection.cpp:852
+#: playlistcollection.cpp:870
 msgid "&Delete Cover"
 msgstr "&Избриши обвивка"
 
-#: playlistcollection.cpp:856
+#: playlistcollection.cpp:874
 msgid "Show &History"
 msgstr "Покажи &историја"
 
-#: playlistcollection.cpp:857
+#: playlistcollection.cpp:875
 msgid "Hide &History"
 msgstr "Скриј &историја"
 
-#: playlistcollection.cpp:860
+#: playlistcollection.cpp:878
 msgid "Show &Play Queue"
 msgstr "Покажи &редица на пуштање"
 
-#: playlistcollection.cpp:861
+#: playlistcollection.cpp:879
 msgid "Hide &Play Queue"
 msgstr "Скриј &редица на пуштање"
 
@@ -1509,7 +1521,7 @@ msgstr ""
 "%n елемента\n"
 "%n елементи"
 
-#: systemtray.cpp:130
+#: systemtray.cpp:158
 msgid "Redisplay Popup"
 msgstr "Покажи скок-порака повторно"
 
@@ -1640,7 +1652,7 @@ msgstr "Албуми"
 msgid "Genres"
 msgstr "Жанрови"
 
-#: playlistcollection.h:164
+#: playlistcollection.h:165
 msgid "Playlist"
 msgstr "Листа со нумери"
 
