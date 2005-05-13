@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kfloppy\n"
-"POT-Creation-Date: 2005-03-08 01:38+0100\n"
+"POT-Creation-Date: 2005-05-13 01:22+0200\n"
 "PO-Revision-Date: 2004-11-02 13:50+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -15,19 +15,19 @@ msgstr ""
 "mkdelist>\n"
 "X-Generator: KBabel 1.9\n"
 
-#: main.cpp:36
+#: main.cpp:34
 msgid "KDE Floppy Disk Utility"
 msgstr "Алатка за дискети во KDE"
 
-#: main.cpp:40
+#: main.cpp:38
 msgid "Default device"
 msgstr "Стандарден уред"
 
-#: main.cpp:47
+#: main.cpp:45
 msgid "KFloppy"
 msgstr "KFloppy"
 
-#: main.cpp:53
+#: main.cpp:51
 #, fuzzy
 msgid "KFloppy helps you format floppies with the filesystem of your choice."
 msgstr ""
@@ -37,41 +37,41 @@ msgstr ""
 "или LS120-дискети) со датотечен систем по "
 "ваш избор."
 
-#: main.cpp:56
+#: main.cpp:54
 #, fuzzy
 msgid "Author and former maintainer"
 msgstr "Автор, одржувач"
 
-#: main.cpp:57
+#: main.cpp:55
 msgid "User interface re-design"
 msgstr "Редизајн на корисничкиот интерфејс"
 
-#: main.cpp:58
+#: main.cpp:56
 msgid "Add BSD support"
 msgstr "Додадена поддршка за BSD"
 
-#: main.cpp:59
+#: main.cpp:57
 #, fuzzy
 msgid "Make KFloppy work again for KDE 3.4"
 msgstr "Направи KFloppy пак да работи за KDE 3.4"
 
-#: format.cpp:264
+#: format.cpp:269
 #, c-format
 msgid "Unexpected drive number %1."
 msgstr "Неочекуван број за уред %1."
 
-#: format.cpp:270
+#: format.cpp:275
 #, c-format
 msgid "Unexpected density number %1."
 msgstr "Неочекуван број за густина %1."
 
-#: format.cpp:285
+#: format.cpp:290
 msgid "Cannot find a device for drive %1 and density %2."
 msgstr ""
 "Не можам да најдам софтверски уред за "
 "уредот %1 и густината %2."
 
-#: format.cpp:304
+#: format.cpp:309
 msgid ""
 "Cannot access %1\n"
 "Make sure that the device exists and that you have write permission to it."
@@ -80,29 +80,34 @@ msgstr ""
 "Осигурете се дека уредот постои и дека "
 "имате дозволи за запишување на него."
 
-#: format.cpp:335
+#: format.cpp:340
 #, fuzzy
-msgid "%1 terminated with an error."
+msgid "The program %1 terminated with an error."
 msgstr "%1 прекина абнормално."
 
-#: format.cpp:341
-msgid "%1 terminated abnormally."
+#: format.cpp:346
+#, fuzzy
+msgid "The program %1 terminated abnormally."
 msgstr "%1 прекина абнормално."
 
-#: format.cpp:410
+#: format.cpp:409 format.cpp:598 format.cpp:699 format.cpp:775 format.cpp:871
+msgid "Internal error: device not correctly defined."
+msgstr ""
+
+#: format.cpp:416
 msgid "Cannot find fdformat."
 msgstr "Неможам да го најдам fdformat."
 
-#: format.cpp:442
+#: format.cpp:448
 msgid "Could not start fdformat."
 msgstr "Неможам да го стартувам fdformat."
 
-#: format.cpp:469
+#: format.cpp:475
 #, c-format
 msgid "Error formatting track %1."
 msgstr "Грешка при форматирање на патеката %1."
 
-#: format.cpp:477 format.cpp:520
+#: format.cpp:483 format.cpp:516
 msgid ""
 "Cannot access floppy or floppy drive.\n"
 "Please insert a floppy and make sure that you have selected a valid floppy "
@@ -113,122 +118,140 @@ msgstr ""
 "Внесете дискета и проверете дали сте "
 "избрале валиден дискетен уред."
 
-#: format.cpp:498
-#, fuzzy
-msgid "Low-level formatting error at track %1!"
+#: format.cpp:504
+#, fuzzy, c-format
+msgid "Low-level formatting error at track %1."
 msgstr "Грешка при форматирање на патеката %1."
 
-#: format.cpp:503
+#: format.cpp:509
 #, fuzzy, c-format
 msgid "Low-level formatting error: %1"
 msgstr "Грешка при форматирање на патеката %1."
 
-#: format.cpp:527
+#: format.cpp:523 format.cpp:655 format.cpp:818 format.cpp:911
+msgid ""
+"Device busy.\n"
+"Perhaps you need to unmount the floppy first."
+msgstr ""
+
+#: format.cpp:529
 #, c-format
 msgid "Low-level format error: %1"
 msgstr ""
 
-#: format.cpp:586
+#: format.cpp:605
 msgid "Cannot find a program to create FAT filesystems."
 msgstr ""
 "Не можам да пронајдам програма за "
 "создавање на датотечни системи FAT."
 
-#: format.cpp:617
+#: format.cpp:636
 msgid "Cannot start FAT format program."
 msgstr ""
 "Не можам да ја стартувам програмата за "
 "форматирање на FAT."
 
-#: format.cpp:661
+#: format.cpp:650 format.cpp:813 format.cpp:906
+msgid ""
+"Floppy is mounted.\n"
+"You need to unmount the floppy first."
+msgstr ""
+
+#: format.cpp:706
 msgid "Cannot find a program to create UFS filesystems."
 msgstr ""
 "Не можам да пронајдам програма за "
 "создавање на датотечни системи UFS."
 
-#: format.cpp:675
+#: format.cpp:720
 msgid "Cannot start UFS format program."
 msgstr ""
 "Не можам да ја стартувам програмата за "
 "форматирање на UFS."
 
-#: format.cpp:732
+#: format.cpp:782
 msgid "Cannot find a program to create ext2 filesystems."
 msgstr ""
 "Не можам да пронајдам програма за "
 "создавање на датотечни системи ext2."
 
-#: format.cpp:749
+#: format.cpp:799
 msgid "Cannot start ext2 format program."
 msgstr ""
 "Не можам да ја стартувам програмата за "
 "форматирање на ext2."
 
-#: format.cpp:807
+#: format.cpp:878
 #, fuzzy
 msgid "Cannot find a program to create Minix filesystems."
 msgstr ""
 "Не можам да пронајдам програма за "
 "создавање на датотечни системи ext2."
 
-#: format.cpp:824
+#: format.cpp:895
 #, fuzzy
 msgid "Cannot start Minix format program."
 msgstr ""
 "Не можам да ја стартувам програмата за "
 "форматирање на ext2."
 
-#: floppy.cpp:69
+#: floppy.cpp:68
 msgid "Floppy drive:"
 msgstr "Дискетен уред:"
 
-#: floppy.cpp:76 floppy.cpp:289
+#: floppy.cpp:81 floppy.cpp:321 floppy.cpp:632
 msgid "Primary"
 msgstr "Примарен"
 
-#: floppy.cpp:77 floppy.cpp:293
+#: floppy.cpp:82 floppy.cpp:325
 msgid "Secondary"
 msgstr "Секундарен"
 
-#: floppy.cpp:80
+#: floppy.cpp:85
 msgid "Size:"
 msgstr "Големина:"
 
-#: floppy.cpp:86
+#: floppy.cpp:92
 msgid "Auto-Detect"
 msgstr ""
 
-#: floppy.cpp:87 floppy.cpp:300
+#: floppy.cpp:94 floppy.cpp:332 floppy.cpp:633
 msgid "3.5\" 1.44MB"
 msgstr "3.5\" 1.44MB"
 
-#: floppy.cpp:88 floppy.cpp:304
+#: floppy.cpp:95 floppy.cpp:336
 msgid "3.5\" 720KB"
 msgstr "3.5\" 720KB"
 
-#: floppy.cpp:89 floppy.cpp:308
+#: floppy.cpp:96 floppy.cpp:340
 msgid "5.25\" 1.2MB"
 msgstr "5.25\" 1.2MB"
 
-#: floppy.cpp:90 floppy.cpp:312
+#: floppy.cpp:97 floppy.cpp:344
 msgid "5.25\" 360KB"
 msgstr "5.25\" 360KB"
 
-#: floppy.cpp:94
+#: floppy.cpp:101
 msgid "File system:"
 msgstr "Датотечен систем:"
 
-#: floppy.cpp:108 floppy.cpp:135 floppy.cpp:441
+#: floppy.cpp:115
+msgid ""
+"_: Linux\n"
+"KFloppy supports three file formats under Linux: MS-DOS, Ext2, and Minix"
+msgstr ""
+
+#: floppy.cpp:117 floppy.cpp:146 floppy.cpp:505 floppy.cpp:634
 msgid "DOS"
 msgstr "DOS"
 
-#: floppy.cpp:110
+#: floppy.cpp:119
 msgid ""
 "_: Linux\n"
 "Program mkdosfs found."
 msgstr "Програмата mkdosfs е пронајдена."
 
-#: floppy.cpp:113
+#: floppy.cpp:122
 msgid ""
 "_: Linux\n"
 "Program mkdosfs <b>not found</b>. MSDOS formatting <b>not available</b>."
@@ -236,17 +259,17 @@ msgstr ""
 "Програмата mkdosfs <b>не е пронајдена</b>. "
 "Форматирањето MSDOS <b>не е достапно</b>."
 
-#: floppy.cpp:117 floppy.cpp:455
+#: floppy.cpp:126 floppy.cpp:522
 msgid "ext2"
 msgstr "ext2"
 
-#: floppy.cpp:119
+#: floppy.cpp:128
 msgid ""
 "_: Linux\n"
 "Program mke2fs found."
 msgstr "Програмата mke2fs е пронајдена."
 
-#: floppy.cpp:122
+#: floppy.cpp:131
 msgid ""
 "_: Linux\n"
 "Program mke2fs <b>not found</b>. Ext2 formatting <b>not available</b>"
@@ -254,17 +277,17 @@ msgstr ""
 "Програмата mke2fs <b>не е пронајдена</b>. "
 "Форматирањето Ext2 <b>не е достапно</b>."
 
-#: floppy.cpp:126 floppy.cpp:491
+#: floppy.cpp:135 floppy.cpp:550
 msgid "Minix"
 msgstr "Minix"
 
-#: floppy.cpp:128
+#: floppy.cpp:137
 msgid ""
 "_: Linux\n"
 "Program mkfs.minix found."
 msgstr "Програмата mkfs.minix е пронајдена."
 
-#: floppy.cpp:131
+#: floppy.cpp:140
 msgid ""
 "_: Linux\n"
 "Program mkfs.minix <b>not found</b>. Minix formatting <b>not available</b>"
@@ -272,13 +295,19 @@ msgstr ""
 "Програмата mkfs.minix <b>не е пронајдена</b>. "
 "Форматирањето Minix <b>не е достапно</b>."
 
-#: floppy.cpp:137
+#: floppy.cpp:144
+msgid ""
+"_: BSD\n"
+"KFloppy supports two file formats under BSD: MS-DOS and UFS"
+msgstr ""
+
+#: floppy.cpp:148
 msgid ""
 "_: BSD\n"
 "Program newfs_msdos found."
 msgstr "Програмата newfs_msdos е пронајдена."
 
-#: floppy.cpp:140
+#: floppy.cpp:151
 msgid ""
 "_: BSD\n"
 "Program newfs_msdos <b>not found</b>. MSDOS formatting <b>not available</b>."
@@ -286,17 +315,17 @@ msgstr ""
 "Програмата newfs_msdos <b>не е пронајдена</b>. "
 "Форматирањето MSDOS <b>не е достапно</b>."
 
-#: floppy.cpp:144 floppy.cpp:474
+#: floppy.cpp:155 floppy.cpp:541
 msgid "UFS"
 msgstr "UFS"
 
-#: floppy.cpp:146
+#: floppy.cpp:157
 msgid ""
 "_: BSD\n"
 "Program newfs found."
 msgstr "Програмата newfs е пронајдена."
 
-#: floppy.cpp:149
+#: floppy.cpp:160
 msgid ""
 "_: BSD\n"
 "Program newfs <b>not found</b>. UFS formatting <b>not available</b>."
@@ -304,43 +333,83 @@ msgstr ""
 "Програмата newfs <b>не е пронајдена</b>. "
 "Форматирањето UFS <b>не е достапно</b>."
 
-#: floppy.cpp:162
+#: floppy.cpp:173
 msgid "Q&uick format"
 msgstr "Б&рзо форматирање"
 
-#: floppy.cpp:166
+#: floppy.cpp:176
+msgid ""
+"<qt>Quick format is only a high-level format: it creates only a file "
+"system.</qt>"
+msgstr ""
+
+#: floppy.cpp:180
 msgid "Fu&ll format"
 msgstr "Це&лосно форматирање"
 
-#: floppy.cpp:174
+#: floppy.cpp:183
+msgid ""
+"Full format is a low-level and high-level format. It erases everything on "
+"the disk."
+msgstr ""
+
+#: floppy.cpp:190
 msgid "Program fdformat found."
 msgstr "Програмата fdformat е пронајдена."
 
-#: floppy.cpp:179
+#: floppy.cpp:195
 msgid "Program fdformat <b>not found</b>. Full formatting <b>disabled</b>."
 msgstr ""
 "Програмата fdformat <b>не е пронајдена</b>. "
 "Форматирањето е целосно <b>оневозможено</b>."
 
-#: floppy.cpp:183
+#: floppy.cpp:199
 msgid "&Verify integrity"
 msgstr "&Верификувај интегритет"
 
-#: floppy.cpp:188
+#: floppy.cpp:203
+msgid ""
+"<qt>Check this if you want the floppy disk to be checked after formatting. "
+"Please note that the floppy will be checked twice if you have selected full "
+"formatting.</qt>"
+msgstr ""
+
+#: floppy.cpp:207
 msgid "Volume &label:"
 msgstr "И&ме на системот:"
 
-#: floppy.cpp:196
+#: floppy.cpp:211
+msgid ""
+"<qt>Check this if you want a volume label for your floppy. Please note that "
+"Minix does not support labels at all.</qt>"
+msgstr ""
+
+#: floppy.cpp:218 floppy.cpp:630
 msgid ""
 "_: Volume label, maximal 11 characters\n"
 "KDE Floppy"
 msgstr "KDE Floppy"
 
-#: floppy.cpp:205 floppy.cpp:384
+#: floppy.cpp:222
+msgid ""
+"<qt>This is for the volume label. Due to a limitation of MS-DOS the label "
+"can only be 11 characters long. Please note that Minix does not support "
+"labels, whatever you enter here.</qt>"
+msgstr ""
+
+#: floppy.cpp:231 floppy.cpp:415
 msgid "&Format"
 msgstr "&Форматирај"
 
-#: floppy.cpp:250
+#: floppy.cpp:238
+msgid "<qt>Click here to start formatting.</qt>"
+msgstr ""
+
+#: floppy.cpp:261
+msgid "<qt>This is the status window, where error messages are displayed.</qt>"
+msgstr ""
+
+#: floppy.cpp:280
 msgid ""
 "KFloppy cannot find any of the needed programs for creating file systems; "
 "please check your installation.<br><br>Log:"
@@ -350,11 +419,34 @@ msgstr ""
 "датотечни системи; проверете ја вашата "
 "инсталација.<br><br>Дневник:"
 
-#: floppy.cpp:282
+#: floppy.cpp:312
 msgid "KDE Floppy Formatter"
 msgstr "KDE Форматер на дискети"
 
-#: floppy.cpp:403
+#: floppy.cpp:436
+msgid ""
+"_: BSD\n"
+"Formatting with BSD on a user-given device is not possible."
+msgstr ""
+
+#: floppy.cpp:444
+#, fuzzy
+msgid ""
+"<qt>Formatting will erase all data on the device:"
+"<br/><b>%1</b>"
+"<br/>(Please check the correctness of the device name.)"
+"<br/>Are you sure you wish to proceed?</qt>"
+msgstr ""
+"Форматирањето ќе ги избрише сите "
+"податоци на дискетата.\n"
+"Дали сте сигурни дека сакате да "
+"продолжите?"
+
+#: floppy.cpp:447 floppy.cpp:462
+msgid "Proceed?"
+msgstr "Да продолжам?"
+
+#: floppy.cpp:461
 msgid ""
 "Formatting will erase all data on the disk.\n"
 "Are you sure you wish to proceed?"
@@ -363,22 +455,6 @@ msgstr ""
 "податоци на дискетата.\n"
 "Дали сте сигурни дека сакате да "
 "продолжите?"
-
-#: floppy.cpp:404
-msgid "Proceed?"
-msgstr "Да продолжам?"
-
-#: floppy.cpp:829
-msgid "KDE Floppy"
-msgstr "KDE Дискета"
-
-#: floppy.cpp:832
-msgid "HD"
-msgstr "HD"
-
-#: floppy.cpp:833
-msgid "Dos"
-msgstr "Dos"
 
 #: _translatorinfo.cpp:1
 msgid ""
@@ -391,6 +467,15 @@ msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr "vladoboss@mt.net.mk"
+
+#~ msgid "KDE Floppy"
+#~ msgstr "KDE Дискета"
+
+#~ msgid "HD"
+#~ msgstr "HD"
+
+#~ msgid "Dos"
+#~ msgstr "Dos"
 
 #~ msgid "KFloppy cannot find the support programs needed for sensible operation."
 #~ msgstr "KFloppy не може да ги пронајде програмите потребни за работа."
