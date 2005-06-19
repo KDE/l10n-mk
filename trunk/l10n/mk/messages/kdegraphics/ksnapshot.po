@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ksnapshot\n"
-"POT-Creation-Date: 2005-05-08 01:22+0200\n"
+"POT-Creation-Date: 2005-06-19 01:30+0200\n"
 "PO-Revision-Date: 2005-02-22 18:51+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -126,9 +126,15 @@ msgstr "Прозорецот под стрелката"
 msgid "Region"
 msgstr "Регион"
 
-#. i18n: file ksnapshotwidget.ui line 155
+#. i18n: file ksnapshotwidget.ui line 149
 #: rc.cpp:50
 #, no-c-format
+msgid "Section of Window"
+msgstr ""
+
+#. i18n: file ksnapshotwidget.ui line 161
+#: rc.cpp:53
+#, fuzzy, no-c-format
 msgid ""
 "<qt>Using this menu, you can select from the three following snapshot modes:\n"
 "<p>\n"
@@ -139,7 +145,10 @@ msgid ""
 "<br>\n"
 "<b>Region</b> - captures only the region of the desktop that you specify. When "
 "taking a new snapshot in this mode you will be able to select any area of the "
-"screen by clicking and dragging the mouse.</p></qt>"
+"screen by clicking and dragging the mouse.</p></qt>\n"
+"<b>Section of Window</b> - captures only a section of the window. When taking a "
+"new snapshot in this mode you will be able to select any child window by moving "
+"the mouse over it.</p></qt>"
 msgstr ""
 "<qt>Користејќи го ова мени може да изберете од трите режими на снимање "
 "прикажани надолу:\n"
@@ -154,26 +163,26 @@ msgstr ""
 "било која област од екранот само со притискање и повлекување со глувчето.</p>"
 "</qt>"
 
-#. i18n: file ksnapshotwidget.ui line 171
-#: rc.cpp:57
+#. i18n: file ksnapshotwidget.ui line 177
+#: rc.cpp:61
 #, no-c-format
 msgid "&New Snapshot"
 msgstr "&Нова снимка"
 
-#. i18n: file ksnapshotwidget.ui line 177
-#: rc.cpp:60
+#. i18n: file ksnapshotwidget.ui line 183
+#: rc.cpp:64
 #, no-c-format
 msgid "Click this button to take a new snapshot."
 msgstr "Притиснете на ова копче за да направите нова снимка."
 
-#. i18n: file ksnapshotwidget.ui line 202
-#: rc.cpp:63
+#. i18n: file ksnapshotwidget.ui line 208
+#: rc.cpp:67
 #, no-c-format
 msgid "&Save As..."
 msgstr "&Зачувај како..."
 
-#. i18n: file ksnapshotwidget.ui line 208
-#: rc.cpp:66
+#. i18n: file ksnapshotwidget.ui line 214
+#: rc.cpp:70
 #, no-c-format
 msgid ""
 "Click this button to save the current snapshot. To quickly save the snapshot "
@@ -186,7 +195,19 @@ msgstr ""
 "зачувување."
 
 #. i18n: file ksnapshotwidget.ui line 222
-#: rc.cpp:72
+#: rc.cpp:73
+#, no-c-format
+msgid "&Copy to Clipboard"
+msgstr ""
+
+#. i18n: file ksnapshotwidget.ui line 228
+#: rc.cpp:76
+#, fuzzy, no-c-format
+msgid "Click this button to copy the current snapshot to the clipboard."
+msgstr "Притиснете на ова копче за печатење на тековната снимка."
+
+#. i18n: file ksnapshotwidget.ui line 242
+#: rc.cpp:82
 #, no-c-format
 msgid "Click this button to print the current screenshot."
 msgstr "Притиснете на ова копче за печатење на тековната снимка."
@@ -203,15 +224,15 @@ msgid ""
 "Your emails"
 msgstr "decata@mt.net.mk"
 
-#: ksnapshot.cpp:109
+#: ksnapshot.cpp:102
 msgid "snapshot"
 msgstr "слика"
 
-#: ksnapshot.cpp:127
+#: ksnapshot.cpp:120
 msgid "Quick Save Snapshot &As..."
 msgstr "Брзо зачувај ја снимката &како..."
 
-#: ksnapshot.cpp:128
+#: ksnapshot.cpp:121
 msgid ""
 "Save the snapshot to the file specified by the user without showing the file "
 "dialog."
@@ -219,27 +240,27 @@ msgstr ""
 "Ја зачувува снимката во датотека одредена од корисникот без прикажување на "
 "дијалогот за датотеки."
 
-#: ksnapshot.cpp:132
+#: ksnapshot.cpp:125
 msgid "Save Snapshot &As..."
 msgstr "Зачувај снимка &како..."
 
-#: ksnapshot.cpp:133
+#: ksnapshot.cpp:126
 msgid "Save the snapshot to the file specified by the user."
 msgstr "Ја зачувува снимката во датотека одредена од корисникот."
 
-#: ksnapshot.cpp:171
+#: ksnapshot.cpp:164
 msgid "File Exists"
 msgstr "Датотеката постои"
 
-#: ksnapshot.cpp:172
+#: ksnapshot.cpp:165
 msgid "<qt>Do you really want to overwrite <b>%1</b>?</qt>"
 msgstr "<qt>Дали навистина сакате да ја запишете врз <b>%1</b>?</qt>"
 
-#: ksnapshot.cpp:207
+#: ksnapshot.cpp:200
 msgid "Unable to save image"
 msgstr "Не можам да ја зачувам сликата"
 
-#: ksnapshot.cpp:208
+#: ksnapshot.cpp:201
 #, c-format
 msgid ""
 "KSnapshot was unable to save the image to\n"
@@ -248,11 +269,11 @@ msgstr ""
 "KSnapshot не можеше да ја зачува сликата во\n"
 "%1."
 
-#: ksnapshot.cpp:291
+#: ksnapshot.cpp:284
 msgid "Print Screenshot"
 msgstr "Испечатете снимка"
 
-#: ksnapshot.cpp:430
+#: ksnapshot.cpp:437
 msgid "The screen has been successfully grabbed."
 msgstr "Екранот беше успешно снимен."
 
