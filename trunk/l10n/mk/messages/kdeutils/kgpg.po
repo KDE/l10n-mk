@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
-"POT-Creation-Date: 2005-04-12 18:17+0200\n"
+"POT-Creation-Date: 2005-07-24 01:36+0200\n"
 "PO-Revision-Date: 2005-02-01 20:10+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -123,6 +123,23 @@ msgstr "<p>Испуштениот текст е јавен клуч.<br>Дали
 msgid "No encrypted text found."
 msgstr "Не е пронајден криптиран текст."
 
+#: kgpg.cpp:579
+msgid ""
+"<qt>You did not set a path to your GnuPG config file."
+"<br>This may bring some surprising results in KGpg's execution."
+"<br>Would you like to start KGpg's Wizard to fix this problem ?</qt>"
+msgstr ""
+
+#: kgpg.cpp:579
+#, fuzzy
+msgid "Start Wizard"
+msgstr "Волшебник на KGpg"
+
+#: kgpg.cpp:579
+#, fuzzy
+msgid "Do Not Start"
+msgstr "НЕ верувам"
+
 #: kgpg.cpp:623
 msgid ""
 "<qt><b>The GnuPG configuration file was not found</b>"
@@ -132,6 +149,16 @@ msgstr ""
 "<qt><b>Конфигурациската датотека на GnuPG не беше пронајдена</b>"
 ". Осигурете се дека го имате инсталирано GnuPG. Дали да се обиде KGpg да "
 "создаде конфиг. датотека?</qt>"
+
+#: kgpg.cpp:623
+#, fuzzy
+msgid "Create Config"
+msgstr "Создавање"
+
+#: kgpg.cpp:623
+#, fuzzy
+msgid "Do Not Create"
+msgstr "Создај"
 
 #: kgpg.cpp:632
 msgid ""
@@ -280,6 +307,11 @@ msgid "<p>Do you want to import file <b>%1</b> into your key ring?</p>"
 msgstr ""
 "<p>Дали сакате да ја внесете датотеката <b>%1</b> во вашиот приврзок со "
 "клучеви?</p>"
+
+#: kgpginterface.cpp:823 kgpgview.cpp:242 listkeys.cpp:421
+#, fuzzy
+msgid "Do Not Import"
+msgstr "Внес на клуч"
 
 #: listkeys.cpp:518
 msgid "Key Management"
@@ -587,6 +619,11 @@ msgstr ""
 "биде компромитирана!\n"
 "Да продолжам со изнесување на клучот?"
 
+#: listkeys.cpp:1442
+#, fuzzy
+msgid "Do Not Export"
+msgstr "&Изнеси"
+
 #: listkeys.cpp:1452
 msgid "Export PRIVATE KEY As"
 msgstr "Изнесете ПРИВАТЕН КЛУЧ како"
@@ -640,6 +677,15 @@ msgstr ""
 "употреблив.\n"
 "\n"
 "Дали сакате да го регенерирате јавниот клуч?"
+
+#: listkeys.cpp:1615
+#, fuzzy
+msgid "Generate"
+msgstr "Генерирање на пар клучеви"
+
+#: listkeys.cpp:1615
+msgid "Do Not Generate"
+msgstr ""
 
 #: listkeys.cpp:1653
 msgid "<qt>Are you sure you want to delete group <b>%1</b> ?</qt>"
@@ -1772,6 +1818,14 @@ msgstr ""
 #: kgpginterface.cpp:1695
 msgid "This image is very large. Use it anyway?"
 msgstr "Оваа слика е преголема. Дали сепак ќе ја користите?"
+
+#: kgpginterface.cpp:1695
+msgid "Use Anyway"
+msgstr ""
+
+#: kgpginterface.cpp:1695
+msgid "Do Not Use"
+msgstr ""
 
 #: kgpginterface.cpp:1759
 msgid "Creation of the revocation certificate failed..."
@@ -3439,6 +3493,3 @@ msgstr "&Прекини"
 
 #~ msgid "Don't know"
 #~ msgstr "Не знам"
-
-#~ msgid "Do NOT trust"
-#~ msgstr "НЕ верувам"
