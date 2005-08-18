@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
-"POT-Creation-Date: 2005-08-10 10:23+0200\n"
+"POT-Creation-Date: 2005-08-18 04:36+0200\n"
 "PO-Revision-Date: 2005-05-18 14:31+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -331,7 +331,7 @@ msgid "Image Comments/Tags"
 msgstr "Коментари/ознаки за фотографија"
 
 #: digikam/imagedescedit.cpp:114
-msgid "Date and Time"
+msgid "Date && Time"
 msgstr ""
 
 #: digikam/imagedescedit.cpp:118
@@ -363,7 +363,10 @@ msgid "Edit Tag Properties..."
 msgstr "Уреди ги својствата на ознаката..."
 
 #: digikam/digikamapp.cpp:345 digikam/imagedescedit.cpp:493
-#: digikam/tagfilterview.cpp:458 digikam/tagfolderview.cpp:313
+#: digikam/imagedescedit.cpp:571 digikam/tagfilterview.cpp:458
+#: digikam/tagfilterview.cpp:581 digikam/tagfilterview.cpp:594
+#: digikam/tagfolderview.cpp:313 digikam/tagfolderview.cpp:480
+#: digikam/tagfolderview.cpp:493
 msgid "Delete Tag"
 msgstr "Избриши ознака"
 
@@ -379,8 +382,9 @@ msgid "Delete '%1' tag?"
 msgstr "Да ја избришам ознаката „%1“?"
 
 #: digikam/imagedescedit.cpp:726
-msgid "No recently assigned tags"
-msgstr ""
+#, fuzzy
+msgid "No Recently Assigned Tags"
+msgstr "Отстрани ознака"
 
 #: digikam/imagedescedit.cpp:848
 msgid "Found Tags"
@@ -633,7 +637,7 @@ msgstr ""
 "Рестартирајте го Digikam рачно."
 
 #: digikam/album.cpp:319 digikam/albumfolderview.cpp:187
-#: digikam/albummanager.cpp:299 digikam/kipiinterface.cpp:477
+#: digikam/albummanager.cpp:299 digikam/kipiinterface.cpp:491
 msgid "My Albums"
 msgstr "Мои албуми"
 
@@ -649,16 +653,16 @@ msgstr "Нов албум..."
 msgid "Edit Album Properties..."
 msgstr "Уреди ги својствата на албумот..."
 
-#: digikam/albumfolderview.cpp:503 digikam/digikamapp.cpp:1047
+#: digikam/albumfolderview.cpp:503 digikam/digikamapp.cpp:1049
 msgid "Move Album to Trash"
 msgstr "Премести го албумот во корпата"
 
-#: digikam/albumfolderview.cpp:508 digikam/digikamapp.cpp:295
-#: digikam/digikamapp.cpp:1054
+#: digikam/albumfolderview.cpp:508 digikam/albumfolderview.cpp:671
+#: digikam/digikamapp.cpp:295 digikam/digikamapp.cpp:1056
 msgid "Delete Album"
 msgstr "Избриши го албумот"
 
-#: digikam/albumfolderview.cpp:556 digikam/albumfolderview.cpp:1093
+#: digikam/albumfolderview.cpp:556 digikam/albumfolderview.cpp:1095
 msgid ""
 "The Albums Library has not been set correctly.\n"
 "Select \"Configure Digikam\" from the Settings menu and choose a folder to use "
@@ -699,14 +703,24 @@ msgstr "Премести го албумот во корпата"
 msgid "Delete album '%1' from disk?"
 msgstr "Да го избришам албумот „%1“ од дискот?"
 
-#: digikam/albumfolderview.cpp:855 digikam/albumfolderview.cpp:982
-#: digikam/albumfolderview.cpp:1055 digikam/albumiconview.cpp:915
+#: digikam/albumfolderview.cpp:671
+#, fuzzy
+msgid "Trash Album"
+msgstr "Албуми"
+
+#: digikam/albumfolderview.cpp:672 digikam/albumiconview.cpp:684
+#, fuzzy
+msgid "Trash"
+msgstr "Ознаки"
+
+#: digikam/albumfolderview.cpp:857 digikam/albumfolderview.cpp:984
+#: digikam/albumfolderview.cpp:1057 digikam/albumiconview.cpp:915
 #: digikam/tagfolderview.cpp:573
 msgid "&Move Here"
 msgstr "&Премести тука"
 
-#: digikam/albumfolderview.cpp:857 digikam/albumfolderview.cpp:951
-#: digikam/albumfolderview.cpp:985 digikam/albumfolderview.cpp:1058
+#: digikam/albumfolderview.cpp:859 digikam/albumfolderview.cpp:953
+#: digikam/albumfolderview.cpp:987 digikam/albumfolderview.cpp:1060
 #: digikam/albumiconview.cpp:918 digikam/albumiconview.cpp:955
 #: digikam/albumiconview.cpp:996 digikam/tagfilterview.cpp:296
 #: digikam/tagfolderview.cpp:575 digikam/tagfolderview.cpp:654
@@ -714,17 +728,17 @@ msgstr "&Премести тука"
 msgid "C&ancel"
 msgstr "О&ткажи"
 
-#: digikam/albumfolderview.cpp:949 digikam/albumiconview.cpp:432
+#: digikam/albumfolderview.cpp:951 digikam/albumiconview.cpp:432
 #: digikam/tagfolderview.cpp:652
 msgid "Set as Album Thumbnail"
 msgstr "Постави како сликичка за албумот"
 
-#: digikam/albumfolderview.cpp:983 digikam/albumfolderview.cpp:1056
+#: digikam/albumfolderview.cpp:985 digikam/albumfolderview.cpp:1058
 #: digikam/albumiconview.cpp:916
 msgid "&Copy Here"
 msgstr "К&опирај тука"
 
-#: digikam/albumfolderview.cpp:1194
+#: digikam/albumfolderview.cpp:1196
 msgid "Uncategorized Albums"
 msgstr "Некатегоризирани албуми"
 
@@ -878,7 +892,7 @@ msgid "My Tags"
 msgstr "Мои ознаки"
 
 #: digikam/tagfolderview.cpp:307
-msgid "Create Tag from AddressBook"
+msgid "Create Tag From AddressBook"
 msgstr ""
 
 #: digikam/tagfolderview.cpp:364
@@ -1208,7 +1222,7 @@ msgstr "Отстрани ознака"
 msgid "Rename..."
 msgstr "Преименувај..."
 
-#: digikam/albumiconview.cpp:498 digikam/digikamapp.cpp:1049
+#: digikam/albumiconview.cpp:498 digikam/digikamapp.cpp:1051
 #: showfoto/showfoto.cpp:469 utilities/imageeditor/imagewindow.cpp:462
 msgid "Move to Trash"
 msgstr "Премести во корпа"
@@ -1240,6 +1254,16 @@ msgstr ""
 "Ќе ја избришам оваа фотографија. Дали сте сигурни?\n"
 "Ќе ги избришам овие %n фотографии. Дали сте сигурни?\n"
 "Ќе ги избришам овие %n фотографии. Дали сте сигурни?"
+
+#: digikam/albumiconview.cpp:683
+#, fuzzy
+msgid "Trash Image"
+msgstr "Замати фотографија"
+
+#: digikam/albumiconview.cpp:683
+#, fuzzy
+msgid "Delete Image"
+msgstr "Избриши ознака"
 
 #: digikam/albumiconview.cpp:952
 msgid "&Assign Tag '%1' to Selected Images"
@@ -1282,16 +1306,16 @@ msgstr "&Хистограм"
 msgid "Properties for '%1'"
 msgstr "Својства за „%1“"
 
-#: digikam/kipiinterface.cpp:254 digikam/kipiinterface.cpp:270
+#: digikam/kipiinterface.cpp:268 digikam/kipiinterface.cpp:284
 #, c-format
 msgid "Tag: %1"
 msgstr "Ознака: %1"
 
-#: digikam/kipiinterface.cpp:612
+#: digikam/kipiinterface.cpp:626
 msgid "Target URL %1 is not valid."
 msgstr "Целната адреса %1 не е валидна."
 
-#: digikam/kipiinterface.cpp:620
+#: digikam/kipiinterface.cpp:634
 msgid "Target album is not in the albums library."
 msgstr "Целниот албум не е во библиотеката со албуми."
 
@@ -1300,7 +1324,7 @@ msgstr "Целниот албум не е во библиотеката со а�
 msgid "My Dates"
 msgstr "Според датумот"
 
-#: digikam/digikamapp.cpp:572 digikam/searchadvanceddialog.cpp:42
+#: digikam/searchadvanceddialog.cpp:42
 #, fuzzy
 msgid "Advanced Search"
 msgstr "Напре&дно %1"
@@ -1319,7 +1343,7 @@ msgstr ""
 msgid "Or"
 msgstr ""
 
-#: digikam/digikamview.cpp:543 digikam/searchadvanceddialog.cpp:81
+#: digikam/digikamview.cpp:546 digikam/searchadvanceddialog.cpp:81
 msgid "&Add"
 msgstr "Дод&ај"
 
@@ -1342,7 +1366,7 @@ msgid "&Ungroup"
 msgstr "&Исечи"
 
 #: digikam/searchadvanceddialog.cpp:111
-msgid "&Save Search As"
+msgid "&Save search as:"
 msgstr ""
 
 #: digikam/digikamapp.cpp:119
@@ -1548,9 +1572,15 @@ msgstr "Прирачник за приклучоците Kipi"
 msgid "Gamma Adjustment..."
 msgstr "Прилагодување на Гама ..."
 
-#: digikam/digikamapp.cpp:568 digikam/searchquickdialog.cpp:40
-msgid "Quick Search"
-msgstr ""
+#: digikam/digikamapp.cpp:568
+#, fuzzy
+msgid "Quick Search..."
+msgstr "У&реди..."
+
+#: digikam/digikamapp.cpp:572
+#, fuzzy
+msgid "Advanced Search..."
+msgstr "Напре&дно %1"
 
 #: digikam/digikamapp.cpp:724
 msgid ""
@@ -1565,13 +1595,13 @@ msgstr ""
 msgid "General"
 msgstr "Општо"
 
-#: digikam/digikamapp.cpp:961 utilities/imageeditor/imagepluginloader.cpp:98
+#: digikam/digikamapp.cpp:963 utilities/imageeditor/imagepluginloader.cpp:98
 #: utilities/imageeditor/imagepluginloader.cpp:149
 #, c-format
 msgid "Loading: %1"
 msgstr "Вчитување: %1"
 
-#: digikam/digikamapp.cpp:1002
+#: digikam/digikamapp.cpp:1004
 #, c-format
 msgid ""
 "_n: 1 Kipi Plugin Loaded\n"
@@ -1581,7 +1611,7 @@ msgstr ""
 "Вчитани се %n Kipi-приклучока\n"
 "Вчитани се %n Kipi-приклучоци"
 
-#: digikam/digikamapp.cpp:1018
+#: digikam/digikamapp.cpp:1020
 msgid "Add Camera..."
 msgstr "Додај апарат..."
 
@@ -1644,32 +1674,34 @@ msgid "Keyword"
 msgstr ""
 
 #: digikam/searchwidgets.cpp:77
-msgid "contains"
-msgstr ""
+#, fuzzy
+msgid "Contains"
+msgstr "Контраст:"
 
 #: digikam/searchwidgets.cpp:78
 #, fuzzy
-msgid "does not contain"
+msgid "Does Not Contain"
 msgstr "Името на ознака не може да соддржи „/“"
 
 #: digikam/searchwidgets.cpp:79 digikam/searchwidgets.cpp:81
 #: digikam/searchwidgets.cpp:83 digikam/searchwidgets.cpp:87
-msgid "equals"
-msgstr ""
+#, fuzzy
+msgid "Equals"
+msgstr "Изедначување"
 
 #: digikam/searchwidgets.cpp:80 digikam/searchwidgets.cpp:82
 #: digikam/searchwidgets.cpp:84
 #, fuzzy
-msgid "does not equal"
+msgid "Does Not Equal"
 msgstr "Датотеката не постои"
 
 #: digikam/searchwidgets.cpp:85
 #, fuzzy
-msgid "after"
+msgid "After"
 msgstr "Датум:"
 
 #: digikam/searchwidgets.cpp:86
-msgid "before"
+msgid "Before"
 msgstr ""
 
 #: digikam/searchwidgets.cpp:118 digikam/searchwidgets.cpp:401
@@ -1701,8 +1733,12 @@ msgstr "Едноставно"
 msgid "Full"
 msgstr "Целоснo"
 
+#: digikam/searchquickdialog.cpp:40
+msgid "Quick Search"
+msgstr ""
+
 #: digikam/searchquickdialog.cpp:57
-msgid "Save Search as:"
+msgid "Save search as:"
 msgstr ""
 
 #: digikam/digikamview.cpp:92 utilities/cameragui/albumselectdialog.cpp:69
@@ -1719,13 +1755,13 @@ msgstr "Датум:"
 msgid "Searches"
 msgstr ""
 
-#: digikam/digikamview.cpp:541
+#: digikam/digikamview.cpp:544
 msgid "Add Images"
 msgstr "Додај фотографии"
 
 #: digikam/tagspopupmenu.cpp:142 digikam/tagspopupmenu.cpp:259
 #, fuzzy
-msgid "Add new Tag..."
+msgid "Add New Tag..."
 msgstr "Нова ознака..."
 
 #: showfoto/setupplugins.cpp:56 utilities/setup/setupeditor.cpp:120
@@ -1907,13 +1943,14 @@ msgstr "Приклучоци за фотографиите"
 msgid "Image Plugins List"
 msgstr "Листа на приклучоци за фотографиите"
 
-#: showfoto/setup.cpp:53
-msgid "SlideShow"
-msgstr ""
+#: showfoto/setup.cpp:53 showfoto/showfoto.cpp:321
+#, fuzzy
+msgid "Slide Show"
+msgstr "Поставувања за советите"
 
 #: showfoto/setup.cpp:53
 #, fuzzy
-msgid "SlideShow Settings"
+msgid "Slide Show Settings"
 msgstr "Поставувања за советите"
 
 #: showfoto/showfoto.cpp:218 utilities/imageeditor/imagewindow.cpp:206
@@ -1949,10 +1986,6 @@ msgstr "Сокриј ги сликичките"
 #: showfoto/showfoto.cpp:313 utilities/imageeditor/imagewindow.cpp:309
 msgid "Hide"
 msgstr "Сокриј"
-
-#: showfoto/showfoto.cpp:321
-msgid "Slide Show..."
-msgstr ""
 
 #: showfoto/showfoto.cpp:327 utilities/imageeditor/imagewindow.cpp:333
 msgid "&Rotate"
@@ -2487,7 +2520,7 @@ msgstr "Прилагодување на Гама ..."
 
 #: imageplugins/imageeffect_ratiocrop.cpp:56
 #, fuzzy
-msgid "Aspect Ratio Crop and Composition Guide"
+msgid "Aspect Ratio Crop & Composition Guide"
 msgstr "Преглед за пропорционален исечок"
 
 #: imageplugins/imageeffect_ratiocrop.cpp:59
@@ -2517,7 +2550,7 @@ msgstr ""
 
 #: imageplugins/imageeffect_ratiocrop.cpp:89
 #, fuzzy
-msgid "Aspect Ratio:"
+msgid "Aspect ratio:"
 msgstr "Пропорција:"
 
 #: imageplugins/imageeffect_ratiocrop.cpp:91
@@ -2600,11 +2633,11 @@ msgid "<p>Set height position to center."
 msgstr "<p>Тука може да се постави висината за исечокот."
 
 #: imageplugins/imageeffect_ratiocrop.cpp:181
-msgid "Composition Guide:"
+msgid "Composition guide:"
 msgstr ""
 
 #: imageplugins/imageeffect_ratiocrop.cpp:183
-msgid "Rules Of Thirds"
+msgid "Rules of Thirds"
 msgstr ""
 
 #: imageplugins/imageeffect_ratiocrop.cpp:184
@@ -2626,7 +2659,7 @@ msgstr ""
 
 #: imageplugins/imageeffect_ratiocrop.cpp:191
 #, fuzzy
-msgid "Golden Sections"
+msgid "Golden sections"
 msgstr "Колекции"
 
 #: imageplugins/imageeffect_ratiocrop.cpp:192
@@ -2635,7 +2668,7 @@ msgstr ""
 
 #: imageplugins/imageeffect_ratiocrop.cpp:194
 #, fuzzy
-msgid "Golden Spiral Sections"
+msgid "Golden spiral sections"
 msgstr "Општи поставувања"
 
 #: imageplugins/imageeffect_ratiocrop.cpp:195
@@ -2644,7 +2677,7 @@ msgstr ""
 
 #: imageplugins/imageeffect_ratiocrop.cpp:197
 #, fuzzy
-msgid "Golden Spiral"
+msgid "Golden spiral"
 msgstr "Општо"
 
 #: imageplugins/imageeffect_ratiocrop.cpp:198
@@ -2652,8 +2685,9 @@ msgid "<p>Enable this option to show golden spiral guide."
 msgstr ""
 
 #: imageplugins/imageeffect_ratiocrop.cpp:200
-msgid "Golden Triangles"
-msgstr ""
+#, fuzzy
+msgid "Golden triangles"
+msgstr "Колекции"
 
 #: imageplugins/imageeffect_ratiocrop.cpp:201
 msgid "<p>Enable this option to show golden triangles."
@@ -2661,7 +2695,7 @@ msgstr ""
 
 #: imageplugins/imageeffect_ratiocrop.cpp:203
 #, fuzzy
-msgid "Flip Horizontally"
+msgid "Flip horizontally"
 msgstr "Преврти хоризонтално"
 
 #: imageplugins/imageeffect_ratiocrop.cpp:204
@@ -2670,7 +2704,7 @@ msgstr ""
 
 #: imageplugins/imageeffect_ratiocrop.cpp:206
 #, fuzzy
-msgid "Flip Vertically"
+msgid "Flip vertically"
 msgstr "Преврти вертикално"
 
 #: imageplugins/imageeffect_ratiocrop.cpp:207
@@ -2679,7 +2713,7 @@ msgstr ""
 
 #: imageplugins/imageeffect_ratiocrop.cpp:209
 #, fuzzy
-msgid "Color and Width:"
+msgid "Color and width:"
 msgstr "Бои:"
 
 #: imageplugins/imageeffect_ratiocrop.cpp:212
@@ -2823,7 +2857,7 @@ msgid "Black && White Platinum"
 msgstr "Црно-бело со платиниумски тон"
 
 #: imageplugins/imageeffect_sharpen.cpp:50
-msgid "Sharpening a Photograph"
+msgid "Sharpening Photograph"
 msgstr ""
 
 #: imageplugins/imageeffect_sharpen.cpp:75
@@ -3749,10 +3783,14 @@ msgstr ""
 msgid "Camera Mount Path"
 msgstr "Патека за монтирање на апаратот"
 
-#: utilities/imageeditor/undoaction.cpp:31
+#: utilities/cameragui/gpiteminfodlg.cpp:53
+#: utilities/cameragui/gpiteminfodlg.cpp:63
+#: utilities/cameragui/gpiteminfodlg.cpp:88
+#: utilities/cameragui/gpiteminfodlg.cpp:92
+#: utilities/cameragui/gpiteminfodlg.cpp:96
 #: utilities/imageeditor/undoaction.h:118
-msgid "unknown"
-msgstr "непознато"
+msgid "Unknown"
+msgstr "Непознато"
 
 #: utilities/imageeditor/imagewindow.cpp:201
 msgid "&Next"
@@ -3843,6 +3881,10 @@ msgid ""
 msgstr ""
 "Фотографијата „%1“ беше изменета.\n"
 "Дали сакате да ја зачувате?"
+
+#: utilities/imageeditor/undoaction.cpp:31
+msgid "unknown"
+msgstr "непознато"
 
 #: utilities/imageeditor/undoaction.cpp:50
 msgid "Rotate 90 Degrees"
@@ -3959,14 +4001,6 @@ msgstr "Својства на датотеката за апаратот"
 msgid "Folder:"
 msgstr "Папка:"
 
-#: utilities/cameragui/gpiteminfodlg.cpp:53
-#: utilities/cameragui/gpiteminfodlg.cpp:63
-#: utilities/cameragui/gpiteminfodlg.cpp:88
-#: utilities/cameragui/gpiteminfodlg.cpp:92
-#: utilities/cameragui/gpiteminfodlg.cpp:96
-msgid "Unknown"
-msgstr "Непознато"
-
 #: utilities/cameragui/gpiteminfodlg.cpp:59
 msgid "Read Permissions:"
 msgstr "Дозволи за читање:"
@@ -3996,7 +4030,7 @@ msgid "Change case to"
 msgstr ""
 
 #: utilities/cameragui/renamecustomizer.cpp:62
-msgid "Leave as is"
+msgid "Leave as Is"
 msgstr ""
 
 #: utilities/cameragui/renamecustomizer.cpp:63
@@ -4287,9 +4321,6 @@ msgstr "Сними"
 #, fuzzy
 #~ msgid "<p>You can see here the original clip image which will be used for the preview computation.<p>Click and drag the mouse cursor in the image to change the clip focus. <p>If <b>Separate View</b> option is enabled, the original image is on the left of the red dashed line, and target image on the right."
 #~ msgstr "<p>Тука можете да ја видите оригиналната сликичка која ќе се користи за пресметките за преглед. <p>Кликнете и влечете го покажувачот низ фотографијата за да го преместите погледот на сликичката."
-
-#~ msgid "Blur Image"
-#~ msgstr "Замати фотографија"
 
 #~ msgid "Blur"
 #~ msgstr "Заматеност"
