@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
-"POT-Creation-Date: 2005-12-21 08:37+0100\n"
+"POT-Creation-Date: 2005-12-22 08:45+0100\n"
 "PO-Revision-Date: 2005-05-18 14:31+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -104,6 +104,7 @@ msgid "Channel:"
 msgstr "Канал:"
 
 #: imageplugins/imageeffect_bcg.cpp:88 imageplugins/imageeffect_hsl.cpp:86
+#: imageplugins/imageeffect_iccproof.cpp:81
 #: libs/imageproperties/imagepropertieshistogramtab.cpp:75
 #: showfoto/showfoto.cpp:379 utilities/imageeditor/editor/imagewindow.cpp:336
 #: utilities/imageeditor/imagewindow.cpp:328
@@ -111,6 +112,7 @@ msgid "Luminosity"
 msgstr "Осветленост"
 
 #: imageplugins/imageeffect_bcg.cpp:89 imageplugins/imageeffect_hsl.cpp:87
+#: imageplugins/imageeffect_iccproof.cpp:82
 #: imageplugins/imageeffect_rgb.cpp:81
 #: libs/imageproperties/imagepropertieshistogramtab.cpp:76
 #: libs/imageproperties/imagepropertieshistogramtab.cpp:120
@@ -120,6 +122,7 @@ msgid "Red"
 msgstr "Црвена"
 
 #: imageplugins/imageeffect_bcg.cpp:90 imageplugins/imageeffect_hsl.cpp:88
+#: imageplugins/imageeffect_iccproof.cpp:83
 #: imageplugins/imageeffect_rgb.cpp:98
 #: libs/imageproperties/imagepropertieshistogramtab.cpp:77
 #: libs/imageproperties/imagepropertieshistogramtab.cpp:121
@@ -129,6 +132,7 @@ msgid "Green"
 msgstr "Зелена"
 
 #: imageplugins/imageeffect_bcg.cpp:91 imageplugins/imageeffect_hsl.cpp:89
+#: imageplugins/imageeffect_iccproof.cpp:84
 #: imageplugins/imageeffect_rgb.cpp:115
 #: libs/imageproperties/imagepropertieshistogramtab.cpp:78
 #: libs/imageproperties/imagepropertieshistogramtab.cpp:122
@@ -169,6 +173,7 @@ msgstr ""
 "<p><b>Бои</b>: приказ на вредностите на сите канали во исто време."
 
 #: imageplugins/imageeffect_bcg.cpp:102 imageplugins/imageeffect_hsl.cpp:100
+#: imageplugins/imageeffect_iccproof.cpp:95
 #: libs/imageproperties/imagepropertieshistogramtab.cpp:95
 #, fuzzy
 msgid ""
@@ -183,12 +188,14 @@ msgstr ""
 "сите вредности (и мали и големи) ќе бидат прикажани на графиконот."
 
 #: imageplugins/imageeffect_bcg.cpp:108 imageplugins/imageeffect_hsl.cpp:106
+#: imageplugins/imageeffect_iccproof.cpp:101
 #: libs/imageproperties/imagepropertieshistogramtab.cpp:102
 #, fuzzy
 msgid "<p>Linear"
 msgstr "Линеарна"
 
 #: imageplugins/imageeffect_bcg.cpp:116 imageplugins/imageeffect_hsl.cpp:114
+#: imageplugins/imageeffect_iccproof.cpp:109
 #: libs/imageproperties/imagepropertieshistogramtab.cpp:110
 #, fuzzy
 msgid "<p>Logarithmic"
@@ -2621,25 +2628,25 @@ msgstr "Трансформира&ње"
 msgid "&Colors"
 msgstr "Бо&и"
 
-#. i18n: file ./imageplugins/digikamimageplugin_core_ui.rc line 32
+#. i18n: file ./imageplugins/digikamimageplugin_core_ui.rc line 34
 #: rc.cpp:82
 #, no-c-format
 msgid "Fi&lters"
 msgstr "Филтр&и"
 
-#: imageplugins/imageplugin_core.cpp:59
+#: imageplugins/imageplugin_core.cpp:60
 msgid "Blur..."
 msgstr "Заматување..."
 
-#: imageplugins/imageplugin_core.cpp:63
+#: imageplugins/imageplugin_core.cpp:64
 msgid "Sharpen..."
 msgstr "Изострување..."
 
-#: imageplugins/imageplugin_core.cpp:67
+#: imageplugins/imageplugin_core.cpp:68
 msgid "Red Eye Reduction..."
 msgstr "Намалување на ефектот црвено-око..."
 
-#: imageplugins/imageplugin_core.cpp:70
+#: imageplugins/imageplugin_core.cpp:71
 msgid ""
 "This filter can be used to correct red eyes in a photo. Select a region "
 "including the eyes to use this option."
@@ -2647,31 +2654,36 @@ msgstr ""
 "Овој филтер може да се користи да се поправат црвените очи во една фотографија. "
 "Изберете регион кој ги вклучува црвените очи за да се овозможи ова дејство."
 
-#: imageplugins/imageplugin_core.cpp:73
+#: imageplugins/imageplugin_core.cpp:74
 msgid "Brightness/Contrast/Gamma..."
 msgstr "Осветлување/Контраст/Гама..."
 
-#: imageplugins/imageplugin_core.cpp:77
+#: imageplugins/imageplugin_core.cpp:78
 msgid "Hue/Saturation/Lightness..."
 msgstr "Боја/Заситување/Светло..."
 
-#: imageplugins/imageplugin_core.cpp:81
+#: imageplugins/imageplugin_core.cpp:82
 msgid "Color Balance..."
 msgstr "Баланс на бои..."
 
-#: imageplugins/imageplugin_core.cpp:85
+#: imageplugins/imageplugin_core.cpp:86
 msgid "Auto-Correction..."
 msgstr ""
 
-#: imageplugins/imageplugin_core.cpp:89 imageplugins/imageplugin_core.cpp:185
+#: imageplugins/imageplugin_core.cpp:90 imageplugins/imageplugin_core.cpp:190
 msgid "Invert"
 msgstr "Обратно"
 
-#: imageplugins/imageplugin_core.cpp:96
+#: imageplugins/imageplugin_core.cpp:94
+#, fuzzy
+msgid "Color Management..."
+msgstr "Баланс на бои..."
+
+#: imageplugins/imageplugin_core.cpp:100
 msgid "Black && White..."
 msgstr "Црно-бело..."
 
-#: imageplugins/imageplugin_core.cpp:103
+#: imageplugins/imageplugin_core.cpp:107
 msgid "Aspect Ratio Crop..."
 msgstr "Пропорционален исечок..."
 
@@ -2727,6 +2739,67 @@ msgid ""
 "fullest range, adjusting everything in between."
 msgstr ""
 
+#: imageplugins/imageeffect_iccproof.cpp:57
+#, fuzzy
+msgid "Color Management"
+msgstr "Баланс на боите"
+
+#: imageplugins/imageeffect_iccproof.cpp:70
+#, fuzzy
+msgid ""
+"<p>Here you can see the image preview after convert it with a color profile</p>"
+msgstr "<p>Тука можете да видите преглед на прилагодувањето за баланс на бои."
+
+#: imageplugins/imageeffect_iccproof.cpp:78
+#, fuzzy
+msgid "Channel: "
+msgstr "Канал:"
+
+#: imageplugins/imageeffect_bcg.cpp:92 imageplugins/imageeffect_hsl.cpp:90
+#: imageplugins/imageeffect_iccproof.cpp:85
+#, fuzzy
+msgid ""
+"<p>Select here the histogram channel to display:"
+"<p><b>Luminosity</b>: display the image's luminosity values."
+"<p><b>Red</b>: display the red image-channel values."
+"<p><b>Green</b>: display the green image-channel values."
+"<p><b>Blue</b>: display the blue image-channel values."
+"<p>"
+msgstr ""
+"<p>Одберете ја главната боја која се прикажува во каналите со бои: "
+"<p><b>Црвена</b>: приказ на црвениот канал во преден план. "
+"<p><b>Зелена</b>: приказ на зелениот канал во преден план. "
+"<p><b>Сина</b>: приказ на синиот канал во преден план. "
+"<p>"
+
+#: imageplugins/imageeffect_bcg.cpp:134 imageplugins/imageeffect_hsl.cpp:132
+#: imageplugins/imageeffect_iccproof.cpp:127
+msgid ""
+"<p>Here you can see the target preview image histogram drawing of the selected "
+"image channel. This one is re-computed at any settings changes."
+msgstr ""
+
+#: imageplugins/imageeffect_bcg.cpp:173
+#: imageplugins/imageeffect_iccproof.cpp:139
+msgid "Over exposure indicator"
+msgstr ""
+
+#: imageplugins/imageeffect_bcg.cpp:174
+#: imageplugins/imageeffect_iccproof.cpp:140
+msgid ""
+"<p>If you enable this option, over-exposed pixels from the target image preview "
+"will be over-colored. This will not have an effect on the final rendering."
+msgstr ""
+
+#: imageplugins/imageeffect_iccproof.cpp:153
+msgid "SoftProofing"
+msgstr ""
+
+#: imageplugins/imageeffect_iccproof.cpp:160
+#, fuzzy
+msgid "Transform"
+msgstr "Трансформира&ње"
+
 #: imageplugins/imageeffect_blur.cpp:46
 msgid "Apply Gaussian Blur on Photograph"
 msgstr ""
@@ -2756,28 +2829,6 @@ msgstr ""
 "<p>Тука може да го видите прегледот на прилагодувањата за "
 "Осветлување/Контраст/Гама."
 
-#: imageplugins/imageeffect_bcg.cpp:92 imageplugins/imageeffect_hsl.cpp:90
-#, fuzzy
-msgid ""
-"<p>Select here the histogram channel to display:"
-"<p><b>Luminosity</b>: display the image's luminosity values."
-"<p><b>Red</b>: display the red image-channel values."
-"<p><b>Green</b>: display the green image-channel values."
-"<p><b>Blue</b>: display the blue image-channel values."
-"<p>"
-msgstr ""
-"<p>Одберете ја главната боја која се прикажува во каналите со бои: "
-"<p><b>Црвена</b>: приказ на црвениот канал во преден план. "
-"<p><b>Зелена</b>: приказ на зелениот канал во преден план. "
-"<p><b>Сина</b>: приказ на синиот канал во преден план. "
-"<p>"
-
-#: imageplugins/imageeffect_bcg.cpp:134 imageplugins/imageeffect_hsl.cpp:132
-msgid ""
-"<p>Here you can see the target preview image histogram drawing of the selected "
-"image channel. This one is re-computed at any settings changes."
-msgstr ""
-
 #: imageplugins/imageeffect_bcg.cpp:146
 msgid "Brightness:"
 msgstr "Осветлување:"
@@ -2801,16 +2852,6 @@ msgstr "Гама:"
 #: imageplugins/imageeffect_bcg.cpp:169
 msgid "<p>Set here the gamma adjustment of the image."
 msgstr "<p>Тука може да се постави прилагодувањето на гама за фотографија."
-
-#: imageplugins/imageeffect_bcg.cpp:173
-msgid "Over exposure indicator"
-msgstr ""
-
-#: imageplugins/imageeffect_bcg.cpp:174
-msgid ""
-"<p>If you enable this option, over-exposed pixels from the target image preview "
-"will be over-colored. This will not have an effect on the final rendering."
-msgstr ""
 
 #: imageplugins/imageeffect_hsl.cpp:61
 msgid "Hue/Saturation/Lightness"
