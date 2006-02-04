@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
-"POT-Creation-Date: 2006-02-03 10:11+0100\n"
+"POT-Creation-Date: 2006-02-04 09:50+0100\n"
 "PO-Revision-Date: 2005-05-18 14:31+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -303,12 +303,12 @@ msgstr ""
 "избраниот дел од хистограмот. Овие вредности се достапни за сите канали."
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:264
-#: libs/widgets/histogramwidget.cpp:871
+#: libs/widgets/histogramwidget.cpp:880
 msgid "Mean:"
 msgstr "Средна:"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:269
-#: libs/widgets/histogramwidget.cpp:875
+#: libs/widgets/histogramwidget.cpp:884
 msgid "Pixels:"
 msgstr "Пиксели:"
 
@@ -317,12 +317,12 @@ msgid "Standard deviation:"
 msgstr "Стандардна девијација:"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:279
-#: libs/widgets/histogramwidget.cpp:883
+#: libs/widgets/histogramwidget.cpp:892
 msgid "Count:"
 msgstr "Број:"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:284
-#: libs/widgets/histogramwidget.cpp:887
+#: libs/widgets/histogramwidget.cpp:896
 msgid "Median:"
 msgstr "Средна:"
 
@@ -603,12 +603,12 @@ msgstr "Големина:"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: libs/widgets/histogramwidget.cpp:389
+#: libs/widgets/histogramwidget.cpp:391
 #, fuzzy
 msgid "Loading image..."
 msgstr "Праќам датотека %1..."
 
-#: libs/widgets/curveswidget.cpp:254 libs/widgets/histogramwidget.cpp:392
+#: libs/widgets/curveswidget.cpp:254 libs/widgets/histogramwidget.cpp:394
 msgid ""
 "Histogram\n"
 "calculation\n"
@@ -618,7 +618,7 @@ msgstr ""
 "за хистограмот\n"
 "во тек..."
 
-#: libs/widgets/curveswidget.cpp:268 libs/widgets/histogramwidget.cpp:406
+#: libs/widgets/curveswidget.cpp:268 libs/widgets/histogramwidget.cpp:408
 msgid ""
 "Histogram\n"
 "calculation\n"
@@ -628,16 +628,16 @@ msgstr ""
 "за хистограмот\n"
 "не успеаја..."
 
-#: libs/widgets/curveswidget.cpp:501 libs/widgets/histogramwidget.cpp:845
+#: libs/widgets/curveswidget.cpp:501 libs/widgets/histogramwidget.cpp:847
 #, c-format
 msgid "x:%1"
 msgstr "x:%1"
 
-#: libs/widgets/histogramwidget.cpp:879
+#: libs/widgets/histogramwidget.cpp:888
 msgid "Std dev.:"
 msgstr "Стд. дев.:"
 
-#: libs/widgets/histogramwidget.cpp:891
+#: libs/widgets/histogramwidget.cpp:900
 #, fuzzy
 msgid "Percent:"
 msgstr "Процентуално:"
@@ -739,45 +739,65 @@ msgstr ""
 msgid "Top left: (%1, %2)<br>Bottom right: (%3, %4)"
 msgstr "Долу десно: (%1, %2)"
 
-#: libs/widgets/imageguidewidget.cpp:215 libs/widgets/imageguidewidget.cpp:273
-#: libs/widgets/imageguidewidget.cpp:315
+#: libs/widgets/imageguidewidget.cpp:222 libs/widgets/imageguidewidget.cpp:299
+#: libs/widgets/imageguidewidget.cpp:358
 #: libs/widgets/imageregionwidget.cpp:257
 #: libs/widgets/imageregionwidget.cpp:293
 msgid "Original"
 msgstr ""
 
-#: libs/widgets/imageguidewidget.cpp:230 libs/widgets/imageguidewidget.cpp:264
-#: libs/widgets/imageguidewidget.cpp:306
+#: libs/widgets/imageguidewidget.cpp:238 libs/widgets/imageguidewidget.cpp:290
+#: libs/widgets/imageguidewidget.cpp:349
 #: libs/widgets/imageregionwidget.cpp:247
 #: libs/widgets/imageregionwidget.cpp:283
 #, fuzzy
 msgid "Target"
 msgstr "Озн&ака"
 
-#: libs/widgets/imagewidget.cpp:69
+#: libs/widgets/imagewidget.cpp:70
 #, fuzzy
 msgid "Preview Mode:"
 msgstr "Преглед"
 
-#: libs/widgets/imagewidget.cpp:87
+#: libs/widgets/imagewidget.cpp:90
 msgid "<p>If you enable this option, you will see the original image."
 msgstr ""
 
-#: libs/widgets/imagewidget.cpp:96
+#: libs/widgets/imagewidget.cpp:99
 msgid ""
-"<p>If you enable this option, the preview area will be separated vertically."
+"<p>If you enable this option, the preview area will be separated vertically. "
+"The original and target images are contiguous"
 msgstr ""
 
-#: libs/widgets/imagewidget.cpp:105
+#: libs/widgets/imagewidget.cpp:108
 msgid ""
-"<p>If you enable this option, the preview area will be separated horizontally."
+"<p>If you enable this option, the preview area will be separated horizontally. "
+"The original and target images are contiguous"
 msgstr ""
 
-#: libs/widgets/imagewidget.cpp:114
+#: libs/widgets/imagewidget.cpp:117
+msgid ""
+"<p>If you enable this option, the preview area will be separated vertically. "
+"The original and target images are duplicated"
+msgstr ""
+
+#: libs/widgets/imagewidget.cpp:126
+msgid ""
+"<p>If you enable this option, the preview area will be separated horizontally. "
+"The original and target images are duplicated"
+msgstr ""
+
+#: libs/widgets/imagewidget.cpp:135
 msgid "<p>If you enable this option, you will see the target image."
 msgstr ""
 
-#: libs/widgets/imagewidget.cpp:188
+#: libs/widgets/imagewidget.cpp:144
+msgid ""
+"<p>If you enable this option, you will see the target image when the mouse is "
+"over image area, else the original image."
+msgstr ""
+
+#: libs/widgets/imagewidget.cpp:235
 #, fuzzy
 msgid "(%1,%2) RGBA:%3,%4,%5,%6"
 msgstr "(%1,%2)<br>RGB:%3,%4,%5"
@@ -2612,7 +2632,7 @@ msgid ""
 msgstr ""
 
 #: imageplugins/imageeffect_iccproof.cpp:72
-#: utilities/imageeditor/tools/imageprint.cpp:94
+#: utilities/imageeditor/tools/imageprint.cpp:105
 #, fuzzy
 msgid "Color Management"
 msgstr "Баланс на боите"
@@ -4624,40 +4644,50 @@ msgstr ""
 msgid "Camera Mount Path"
 msgstr "Патека за монтирање на апаратот"
 
-#: utilities/imageeditor/tools/imageprint.cpp:76
+#: utilities/imageeditor/tools/imageprint.cpp:77
 msgid "Image Settings"
 msgstr "Поставувања за фотографија"
 
-#: utilities/imageeditor/tools/imageprint.cpp:82
+#: utilities/imageeditor/tools/imageprint.cpp:83
 msgid "Print fi&lename below image"
 msgstr "Печати го им&ето на датотеката под фотографијата"
 
-#: utilities/imageeditor/tools/imageprint.cpp:86
+#: utilities/imageeditor/tools/imageprint.cpp:87
 msgid "Print image in &black and white"
 msgstr "Печати ја фотографијата во &црно бело"
 
-#: utilities/imageeditor/tools/imageprint.cpp:90
+#: utilities/imageeditor/tools/imageprint.cpp:91
 msgid "&Auto-rotate page"
 msgstr ""
 
-#: utilities/imageeditor/tools/imageprint.cpp:98
+#: utilities/imageeditor/tools/imageprint.cpp:95
+#, fuzzy
+msgid "Color Management Settings"
+msgstr "Баланс на боите"
+
+#: utilities/imageeditor/tools/imageprint.cpp:109
+#, fuzzy
+msgid "Settings"
+msgstr "Поставувања за ознаките"
+
+#: utilities/imageeditor/tools/imageprint.cpp:115
 msgid "Scaling"
 msgstr "Промена на големина"
 
-#: utilities/imageeditor/tools/imageprint.cpp:102
+#: utilities/imageeditor/tools/imageprint.cpp:119
 msgid "Scale image to &fit"
 msgstr "Промени големина автоматски"
 
-#: utilities/imageeditor/tools/imageprint.cpp:105
+#: utilities/imageeditor/tools/imageprint.cpp:122
 msgid "Print e&xact size: "
 msgstr "Печати ја точ&ната големина:"
 
-#: utilities/imageeditor/tools/imageprint.cpp:125
-#: utilities/imageeditor/tools/imageprint.cpp:275
+#: utilities/imageeditor/tools/imageprint.cpp:142
+#: utilities/imageeditor/tools/imageprint.cpp:292
 msgid "Centimeters"
 msgstr "Сантиметри"
 
-#: utilities/imageeditor/tools/imageprint.cpp:126
+#: utilities/imageeditor/tools/imageprint.cpp:143
 msgid "Inches"
 msgstr "Инчи"
 
