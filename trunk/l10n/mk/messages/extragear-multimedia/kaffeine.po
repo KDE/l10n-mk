@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-11 10:42+0100\n"
+"POT-Creation-Date: 2006-02-15 10:44+0100\n"
 "PO-Revision-Date: 2005-08-08 17:42+0200\n"
 "Last-Translator: Игор Стаматовски <igor.stamatovski@gmail.com>\n"
 "Language-Team:  <en@li.org>\n"
@@ -39,11 +39,12 @@ msgstr "Канал "
 msgid "Begin"
 msgstr "Почни"
 
-#: input/dvb/kevents.cpp:80 input/dvb/krecord.cpp:48
+#: input/disc/disc.cpp:155 input/dvb/kevents.cpp:80 input/dvb/krecord.cpp:48
 msgid "Duration"
 msgstr "Траење"
 
-#: input/audiobrowser/playlist.cpp:341 input/dvb/kevents.cpp:81
+#: input/audiobrowser/playlist.cpp:339 input/disc/disc.cpp:154
+#: input/dvb/kevents.cpp:81
 msgid "Title"
 msgstr "Наслов"
 
@@ -204,7 +205,7 @@ msgstr "Име"
 msgid "Audio Channels"
 msgstr "Канал за аудио"
 
-#: input/dvb/dvbpanel.cpp:169 input/dvb/dvbpanel.cpp:272
+#: input/dvb/dvbpanel.cpp:169 input/dvb/dvbpanel.cpp:297
 #, fuzzy
 msgid "Instant Record"
 msgstr "Инстантен запис"
@@ -226,110 +227,118 @@ msgstr "Снимам"
 msgid "Broadcasting"
 msgstr "Радиодифузија "
 
-#: input/dvb/dvbpanel.cpp:267
+#: input/dvb/dvbpanel.cpp:245 kaffeine.cpp:179
+msgid "Digital TV"
+msgstr ""
+
+#: input/dvb/dvbpanel.cpp:256
+msgid "Live digital TV only works with the xine engine."
+msgstr ""
+
+#: input/dvb/dvbpanel.cpp:292
 #, fuzzy
 msgid "OSD Next Channel"
 msgstr "Следен канал"
 
-#: input/dvb/dvbpanel.cpp:268
+#: input/dvb/dvbpanel.cpp:293
 #, fuzzy
 msgid "OSD Previous Channel"
 msgstr "Претходен канал"
 
-#: input/dvb/dvbpanel.cpp:269
+#: input/dvb/dvbpanel.cpp:294
 msgid "OSD Zap"
 msgstr ""
 
-#: input/dvb/dvbpanel.cpp:270
+#: input/dvb/dvbpanel.cpp:295
 msgid "OSD Next Event"
 msgstr ""
 
-#: input/dvb/dvbpanel.cpp:271
+#: input/dvb/dvbpanel.cpp:296
 #, fuzzy
 msgid "OSD Previous Event"
 msgstr "Претходната Ставка/Поглавје"
 
-#: input/dvb/dvbpanel.cpp:273
+#: input/dvb/dvbpanel.cpp:298
 msgid "Show OSD"
 msgstr ""
 "Покажи го ПНЕ\n"
 "(Прикажи на екранот)"
 
-#: input/dvb/dvbpanel.cpp:274
+#: input/dvb/dvbpanel.cpp:299
 #, fuzzy
 msgid "EPG..."
 msgstr "ЕПГ .."
 
-#: input/dvb/dvbpanel.cpp:275
+#: input/dvb/dvbpanel.cpp:300
 #, fuzzy
 msgid "Timers..."
 msgstr "Тајмери ..."
 
-#: input/dvb/dvbpanel.cpp:276
+#: input/dvb/dvbpanel.cpp:301
 #, fuzzy
 msgid "Broadcasting..."
 msgstr "Радиодифузија ..."
 
-#: input/dvb/dvbpanel.cpp:277
+#: input/dvb/dvbpanel.cpp:302
 #, fuzzy
 msgid "Channels..."
 msgstr "Канали ..."
 
-#: input/dvb/dvbpanel.cpp:278
+#: input/dvb/dvbpanel.cpp:303
 #, fuzzy
 msgid "Configure DVB..."
 msgstr "Конфигурирај DVB ..."
 
-#: input/dvb/dvbconfig.cpp:315 input/dvb/dvbpanel.cpp:335
-#: input/dvb/dvbpanel.cpp:360 input/dvb/dvbpanel.cpp:408
-#: input/dvb/dvbpanel.cpp:791
+#: input/dvb/dvbconfig.cpp:315 input/dvb/dvbpanel.cpp:360
+#: input/dvb/dvbpanel.cpp:385 input/dvb/dvbpanel.cpp:433
+#: input/dvb/dvbpanel.cpp:816
 msgid "All"
 msgstr "Се"
 
 #. i18n: file ./input/dvb/scandialogui.ui line 272
-#: input/dvb/dvbconfig.cpp:317 input/dvb/dvbpanel.cpp:337
-#: input/dvb/dvbpanel.cpp:360 input/dvb/dvbpanel.cpp:796 rc.cpp:180
+#: input/dvb/dvbconfig.cpp:317 input/dvb/dvbpanel.cpp:362
+#: input/dvb/dvbpanel.cpp:385 input/dvb/dvbpanel.cpp:821 rc.cpp:180
 #, no-c-format
 msgid "TV"
 msgstr "ТВ"
 
 #. i18n: file ./input/dvb/scandialogui.ui line 256
-#: input/dvb/dvbconfig.cpp:319 input/dvb/dvbpanel.cpp:339
-#: input/dvb/dvbpanel.cpp:360 input/dvb/dvbpanel.cpp:794 rc.cpp:177
+#: input/dvb/dvbconfig.cpp:319 input/dvb/dvbpanel.cpp:364
+#: input/dvb/dvbpanel.cpp:385 input/dvb/dvbpanel.cpp:819 rc.cpp:177
 #, no-c-format
 msgid "Radio"
 msgstr "Радио"
 
-#: input/dvb/dvbpanel.cpp:356
+#: input/dvb/dvbpanel.cpp:381
 #, fuzzy
 msgid "New Category..."
 msgstr "Нова категорија ..."
 
-#: input/dvb/dvbpanel.cpp:359
+#: input/dvb/dvbpanel.cpp:384
 #, fuzzy
 msgid "Change Icon..."
 msgstr "Промени икона ..."
 
-#: input/dvb/dvbpanel.cpp:361
+#: input/dvb/dvbpanel.cpp:386
 #, fuzzy
 msgid "Delete Category..."
 msgstr "Избриши категорија..."
 
-#: input/dvb/dvbpanel.cpp:366
+#: input/dvb/dvbpanel.cpp:391
 #, fuzzy
 msgid "New Category"
 msgstr "Нова категорија"
 
-#: input/dvb/dvbpanel.cpp:366
+#: input/dvb/dvbpanel.cpp:391
 msgid "Enter a name for this category:"
 msgstr "Внесете има за оваа категорија:"
 
-#: input/dvb/dvbpanel.cpp:385
+#: input/dvb/dvbpanel.cpp:410
 #, fuzzy
 msgid "Do you really want to delete this category?"
 msgstr "Навистина сакате да ја избришете оваа категорија?"
 
-#: input/dvb/dvbpanel.cpp:845 input/dvb/dvbpanel.cpp:1367
+#: input/dvb/dvbpanel.cpp:870 input/dvb/dvbpanel.cpp:1392
 #, fuzzy
 msgid ""
 "<qt>Can't get DVB data from http://hftom.free.fr/kaxtv/dvbdata.tar.gz!"
@@ -350,50 +359,50 @@ msgstr ""
 "<br>"
 "<br>Да се обидам повторно?</qt>"
 
-#: input/dvb/dvbpanel.cpp:1028
+#: input/dvb/dvbpanel.cpp:1053
 msgid "Broadcasting failed."
 msgstr "Радиодифузија не беше успешна."
 
-#: input/dvb/dvbpanel.cpp:1032
+#: input/dvb/dvbpanel.cpp:1057
 msgid "Can't start broadcasting."
 msgstr "Не можам да почнам со радиодифузија."
 
-#: input/dvb/dvbpanel.cpp:1176
+#: input/dvb/dvbpanel.cpp:1201
 msgid "Timer successfully created and started."
 msgstr "Тајмерот е успешно креиран и стартуван."
 
-#: input/dvb/dvbpanel.cpp:1308
+#: input/dvb/dvbpanel.cpp:1333
 #, fuzzy
 msgid "You may want to define some channel first!"
 msgstr "Можеби на почетокот ќе сакате да дефинирате некои канали!"
 
-#: input/dvb/dvbpanel.cpp:1356
+#: input/dvb/dvbpanel.cpp:1381
 msgid "Timer successfully created."
 msgstr "Тајмерот е успешно креиран."
 
-#: input/dvb/dvbpanel.cpp:1683
+#: input/dvb/dvbpanel.cpp:1708
 msgid "Still recording."
 msgstr "Сеуште снимам."
 
-#: input/dvb/dvbpanel.cpp:1686
+#: input/dvb/dvbpanel.cpp:1711
 msgid "Still broadcasting."
 msgstr "Сеуште вршам радиодифузија."
 
-#: input/dvb/dvbpanel.cpp:1689
+#: input/dvb/dvbpanel.cpp:1714
 #, fuzzy
 msgid "Can't tune dvb!"
 msgstr "Не може да го нагодам dvb !"
 
-#: input/dvb/dvbpanel.cpp:1692
+#: input/dvb/dvbpanel.cpp:1717
 msgid "Can't set pid(s)"
 msgstr "Не можам да го сетирам pid-то"
 
-#: input/dvb/dvbpanel.cpp:2255
+#: input/dvb/dvbpanel.cpp:2280
 #, fuzzy
 msgid "Kaffeine is still recording. Do you really want to quit?"
 msgstr "Кафеине сеуште снима. Навистина сакате да го напуштите?"
 
-#: input/dvb/dvbpanel.cpp:2260
+#: input/dvb/dvbpanel.cpp:2285
 #, fuzzy
 msgid "Kaffeine has queued timers. Do you really want to quit?"
 msgstr ""
@@ -530,6 +539,7 @@ msgstr "DVB-Земјен"
 msgid "DVB-S"
 msgstr "DVB-Сателитски"
 
+#: input/disc/cddb.cpp:332 input/disc/disc.cpp:456 input/disc/disc.cpp:457
 #: input/dvb/dvbconfig.cpp:490
 msgid "Unknown"
 msgstr "Непознатo"
@@ -751,16 +761,134 @@ msgstr "Не можам да го отворам сокетот за DVB  пр�
 msgid "Can't init DVB broadcast socket."
 msgstr "Не можам да го иницијализирам DVB сокетот за пренесување"
 
-#: input/dvbclient/cdlisten.cpp:69
-msgid "Can't open info socket."
-msgstr "Не можам да го отворам инфо сокетот"
+#: input/disc/paranoia.cpp:259
+msgid "MB"
+msgstr ""
+
+#: input/disc/paranoia.cpp:260
+msgid "KB"
+msgstr ""
+
+#: input/disc/paranoia.cpp:261
+msgid "Bytes"
+msgstr ""
+
+#: input/disc/disc.cpp:87 input/disc/disc.cpp:325 kaffeine.cpp:173
+msgid "AudioCD - DVD - VCD"
+msgstr ""
+
+#: input/disc/disc.cpp:102 input/disc/disc.cpp:106 input/disc/disc.cpp:398
+#, fuzzy
+msgid "Audio CD"
+msgstr "Аудио :"
+
+#: input/disc/disc.cpp:108 input/disc/disc.cpp:112 input/disc/disc.cpp:500
+#, fuzzy
+msgid "DVD"
+msgstr "&DVB"
+
+#: input/disc/disc.cpp:114 input/disc/disc.cpp:118 input/disc/disc.cpp:520
+msgid "VCD"
+msgstr ""
+
+#: input/disc/disc.cpp:134
+#, fuzzy
+msgid "Artist:"
+msgstr "Изведувач"
+
+#: input/disc/disc.cpp:142
+#, fuzzy
+msgid "Album:"
+msgstr "Албум"
+
+#: input/audiobrowser/playlist.cpp:342 input/audiobrowser/urllistview.cpp:68
+#: input/audiobrowser/urllistview.cpp:193 input/disc/disc.cpp:153
+#: input/disc/disc.cpp:459 input/disc/disc.cpp:462
+#: player-parts/gstreamer-part/gstreamer_part.cpp:442
+#: player-parts/gstreamer-part/gstreamer_part.cpp:673
+#: player-parts/kaffeine-part/kaffeine_part.cpp:1125
+#: player-parts/kaffeine-part/kaffeine_part.cpp:1505
+#: player-parts/kaffeine-part/kaffeine_part.cpp:1580
+msgid "Track"
+msgstr "Нумера"
+
+#: input/disc/disc.cpp:171
+#, fuzzy
+msgid "Encode..."
+msgstr "Уреди ..."
+
+#: input/disc/disc.cpp:206
+#, fuzzy
+msgid "Play Audio CD"
+msgstr "Отвори Audio-CD"
+
+#: input/disc/disc.cpp:209
+#, fuzzy
+msgid "Play DVD"
+msgstr "Пушти"
+
+#: input/disc/disc.cpp:212
+#, fuzzy
+msgid "Play VCD"
+msgstr "Пушти"
+
+#: input/disc/disc.cpp:312
+msgid "Open &DVD"
+msgstr "Отвори &DVD"
+
+#: input/disc/disc.cpp:313
+msgid "Open &VCD"
+msgstr "Отвори &VCD"
+
+#: input/disc/disc.cpp:314
+msgid "Open &Audio-CD"
+msgstr "Отвори &Audio-CD"
+
+#: input/disc/disc.cpp:345
+msgid "You must select the tracks to rip."
+msgstr ""
+
+#: input/disc/disc.cpp:482
+msgid "No audio CD found."
+msgstr ""
+
+#: input/disc/cddb.cpp:328
+#, fuzzy
+msgid "No Title"
+msgstr "Наслов"
+
+#: input/disc/cddb.cpp:340
+#, fuzzy, c-format
+msgid "Track %1"
+msgstr "Нумера"
+
+#: input/disc/cddb.cpp:425
+msgid "Searching local cddb entry ..."
+msgstr ""
+
+#: input/disc/cddb.cpp:450
+msgid "Searching remote cddb entry ..."
+msgstr ""
+
+#: input/disc/cddb.cpp:474
+msgid "Found exact match cddb entry ..."
+msgstr ""
+
+#: input/disc/cddb.cpp:535
+msgid "Found close cddb entry ..."
+msgstr ""
 
 #: input/dvbclient/cddump.cpp:191 input/dvbclient/cddump.cpp:202
 #: input/dvbclient/cddump.cpp:209 input/dvbclient/cdlisten.cpp:69
-#: input/dvbclient/cdlisten.cpp:80 pref.cpp:107
+#: input/dvbclient/cdlisten.cpp:80 input/dvbclient/cdwidget.cpp:87
+#: pref.cpp:107
 #, fuzzy
 msgid "DVB Client"
 msgstr "DVB клиент"
+
+#: input/dvbclient/cdlisten.cpp:69
+msgid "Can't open info socket."
+msgstr "Не можам да го отворам инфо сокетот"
 
 #: input/dvbclient/cdlisten.cpp:80
 #, fuzzy
@@ -836,7 +964,7 @@ msgstr ""
 
 #: input/audiobrowser/urllistview.cpp:44
 #: player-parts/dummy-part/dummy_part.cpp:121
-#: player-parts/gstreamer-part/gstreamer_part.cpp:792
+#: player-parts/gstreamer-part/gstreamer_part.cpp:820
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1239
 msgid "Play"
 msgstr "Пушти"
@@ -867,47 +995,37 @@ msgstr "&Промени го насловот"
 msgid "&Info"
 msgstr "&Инфо"
 
-#: input/audiobrowser/playlist.cpp:345 input/audiobrowser/urllistview.cpp:61
+#: input/audiobrowser/playlist.cpp:343 input/audiobrowser/urllistview.cpp:61
 #: input/audiobrowser/urllistview.cpp:196
-#: player-parts/gstreamer-part/gstreamer_part.cpp:655
+#: player-parts/gstreamer-part/gstreamer_part.cpp:683
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1131
 msgid "Length"
 msgstr "Должина"
-
-#: input/audiobrowser/playlist.cpp:344 input/audiobrowser/urllistview.cpp:68
-#: input/audiobrowser/urllistview.cpp:193
-#: player-parts/gstreamer-part/gstreamer_part.cpp:414
-#: player-parts/gstreamer-part/gstreamer_part.cpp:645
-#: player-parts/kaffeine-part/kaffeine_part.cpp:1125
-#: player-parts/kaffeine-part/kaffeine_part.cpp:1505
-#: player-parts/kaffeine-part/kaffeine_part.cpp:1580
-msgid "Track"
-msgstr "Нумера"
 
 #: input/audiobrowser/urllistview.cpp:190
 msgid "URL"
 msgstr "URL"
 
-#: input/audiobrowser/playlist.cpp:342 input/audiobrowser/urllistview.cpp:191
-#: player-parts/gstreamer-part/gstreamer_part.cpp:641
+#: input/audiobrowser/playlist.cpp:340 input/audiobrowser/urllistview.cpp:191
+#: player-parts/gstreamer-part/gstreamer_part.cpp:669
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1121
 msgid "Artist"
 msgstr "Изведувач"
 
-#: input/audiobrowser/playlist.cpp:343 input/audiobrowser/urllistview.cpp:192
-#: player-parts/gstreamer-part/gstreamer_part.cpp:643
+#: input/audiobrowser/playlist.cpp:341 input/audiobrowser/urllistview.cpp:192
+#: player-parts/gstreamer-part/gstreamer_part.cpp:671
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1123
 msgid "Album"
 msgstr "Албум"
 
 #: input/audiobrowser/urllistview.cpp:194
-#: player-parts/gstreamer-part/gstreamer_part.cpp:647
+#: player-parts/gstreamer-part/gstreamer_part.cpp:675
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1127
 msgid "Year"
 msgstr "Година"
 
 #: input/audiobrowser/urllistview.cpp:195
-#: player-parts/gstreamer-part/gstreamer_part.cpp:649
+#: player-parts/gstreamer-part/gstreamer_part.cpp:677
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1129
 msgid "Genre"
 msgstr "Жанр"
@@ -920,7 +1038,7 @@ msgstr "Преводи"
 msgid "in use"
 msgstr "во употреба"
 
-#: input/audiobrowser/playlist.cpp:1208 input/audiobrowser/urllistview.cpp:231
+#: input/audiobrowser/playlist.cpp:1178 input/audiobrowser/urllistview.cpp:231
 msgid ""
 "*.smi *.srt *.sub *.txt *.ssa *.asc|Subtitle Files\n"
 "*.*|All Files"
@@ -928,29 +1046,29 @@ msgstr ""
 "*.smi *.srt *.sub *.txt *.ssa *.asc|Датотеки што содржат преводи\n"
 "*.*|Сите датотеки"
 
-#: input/audiobrowser/playlist.cpp:1208 input/audiobrowser/urllistview.cpp:232
+#: input/audiobrowser/playlist.cpp:1178 input/audiobrowser/urllistview.cpp:232
 #, fuzzy
 msgid "Select Subtitle File"
 msgstr "Одбери превод"
 
-#: input/audiobrowser/playlist.cpp:264
+#: input/audiobrowser/playlist.cpp:262
 msgid "Choose a Cover..."
 msgstr ""
 
-#: input/audiobrowser/playlist.cpp:265
+#: input/audiobrowser/playlist.cpp:263
 msgid "Gallery..."
 msgstr ""
 
-#: input/audiobrowser/playlist.cpp:377 input/audiobrowser/playlist.cpp:1984
+#: input/audiobrowser/playlist.cpp:375 input/audiobrowser/playlist.cpp:1941
 msgid "Filter"
 msgstr "Филтер"
 
-#: input/audiobrowser/playlist.cpp:385 input/audiobrowser/playlist.cpp:572
-#: input/audiobrowser/playlist.cpp:1689 inputmanager.cpp:137 kaffeine.cpp:167
+#: input/audiobrowser/playlist.cpp:383 input/audiobrowser/playlist.cpp:593
+#: input/audiobrowser/playlist.cpp:1659 inputmanager.cpp:187 kaffeine.cpp:168
 msgid "Playlist"
 msgstr "Листа"
 
-#: input/audiobrowser/playlist.cpp:393
+#: input/audiobrowser/playlist.cpp:391
 msgid ""
 "Select the active playlist. To change playlist name edit it and confirm with "
 "'Return'."
@@ -958,125 +1076,129 @@ msgstr ""
 "Избери ја активната листа. За да го промениш името на листата уреди го и "
 "потврди со притискање Ентер."
 
-#: input/audiobrowser/playlist.cpp:467
+#: input/audiobrowser/playlist.cpp:439
+msgid "Play Playlist"
+msgstr "Пушти Листа"
+
+#: input/audiobrowser/playlist.cpp:488
 msgid "&Repeat"
 msgstr "Повто&ри"
 
-#: input/audiobrowser/playlist.cpp:468
+#: input/audiobrowser/playlist.cpp:489
 msgid "Loop playlist"
 msgstr "Повторувајте ја листата"
 
-#: input/audiobrowser/playlist.cpp:469
+#: input/audiobrowser/playlist.cpp:490
 msgid "Sh&uffle"
 msgstr "Изме&шај"
 
-#: input/audiobrowser/playlist.cpp:470
+#: input/audiobrowser/playlist.cpp:491
 msgid "Play items in random order"
 msgstr "Пушти по случаен редослед"
 
-#: input/audiobrowser/playlist.cpp:471
+#: input/audiobrowser/playlist.cpp:492
 msgid "Ne&w Playlist"
 msgstr "Но&ва листа"
 
-#: input/audiobrowser/playlist.cpp:472
+#: input/audiobrowser/playlist.cpp:493
 #, fuzzy
 msgid "&Import Playlist..."
 msgstr "&Увези Листа"
 
-#: input/audiobrowser/playlist.cpp:473
+#: input/audiobrowser/playlist.cpp:494
 msgid "&Save Current Playlist As..."
 msgstr "&Зачувај ја тековната листа како..."
 
-#: input/audiobrowser/playlist.cpp:474
+#: input/audiobrowser/playlist.cpp:495
 msgid "Re&move Current Playlist"
 msgstr "Отст&рани ја тековната листа"
 
-#: input/audiobrowser/playlist.cpp:495 input/audiobrowser/playlist.cpp:507
-#: kaffeine.cpp:197
+#: input/audiobrowser/playlist.cpp:516 input/audiobrowser/playlist.cpp:528
+#: kaffeine.cpp:199
 msgid "Kaffeine Playlists"
 msgstr "Листа на Кафеин"
 
-#: input/audiobrowser/playlist.cpp:495 input/audiobrowser/playlist.cpp:510
-#: kaffeine.cpp:198
+#: input/audiobrowser/playlist.cpp:516 input/audiobrowser/playlist.cpp:531
+#: kaffeine.cpp:200
 msgid "All Files"
 msgstr "Сите датотеки"
 
-#: input/audiobrowser/playlist.cpp:495
+#: input/audiobrowser/playlist.cpp:516
 msgid "Open Playlist"
 msgstr "Отвори листа"
 
-#: input/audiobrowser/playlist.cpp:508 kaffeine.cpp:195
+#: input/audiobrowser/playlist.cpp:529 kaffeine.cpp:197
 msgid "M3U Playlists"
 msgstr "М3U листи"
 
-#: input/audiobrowser/playlist.cpp:509 kaffeine.cpp:196
+#: input/audiobrowser/playlist.cpp:530 kaffeine.cpp:198
 #, fuzzy
 msgid "PLS Playlists"
 msgstr "Пушти Листа"
 
-#: input/audiobrowser/playlist.cpp:510
+#: input/audiobrowser/playlist.cpp:531
 msgid "Save Playlist"
 msgstr "Зачувај листа"
 
-#: input/audiobrowser/playlist.cpp:575 input/audiobrowser/playlist.cpp:611
-#: kaffeine.cpp:1503
+#: input/audiobrowser/playlist.cpp:596 input/audiobrowser/playlist.cpp:629
+#: kaffeine.cpp:1482
 msgid "NEW"
 msgstr "НОВО"
 
-#: input/audiobrowser/playlist.cpp:925
+#: input/audiobrowser/playlist.cpp:950
 msgid "Importing media resources..."
 msgstr "Ги увезувам мултимедијалните ресурси..."
 
-#: input/audiobrowser/playlist.cpp:1196 input/audiobrowser/playlist.cpp:1204
-#: input/audiobrowser/playlist.cpp:1223
+#: input/audiobrowser/playlist.cpp:1166 input/audiobrowser/playlist.cpp:1174
+#: input/audiobrowser/playlist.cpp:1193
 msgid "(no subtitles)"
 msgstr "(нема превод)"
 
-#: input/audiobrowser/playlist.cpp:1197 input/audiobrowser/playlist.cpp:1204
-#: input/audiobrowser/playlist.cpp:1206 input/audiobrowser/playlist.cpp:1224
+#: input/audiobrowser/playlist.cpp:1167 input/audiobrowser/playlist.cpp:1174
+#: input/audiobrowser/playlist.cpp:1176 input/audiobrowser/playlist.cpp:1194
 msgid "Other subtitle..."
 msgstr "Друг превод..."
 
-#: input/audiobrowser/playlist.cpp:1512
+#: input/audiobrowser/playlist.cpp:1482
 msgid "Gallery"
 msgstr ""
 
-#: input/audiobrowser/playlist.cpp:1673
+#: input/audiobrowser/playlist.cpp:1643
 msgid "Queue: %1 Entries, Playtime: %2"
 msgstr "%1 ставки во редот, време на репродукција %2"
 
-#: input/audiobrowser/playlist.cpp:1680 kaffeine.cpp:140
+#: input/audiobrowser/playlist.cpp:1650 kaffeine.cpp:137
 msgid "Entries: %1, Playtime: %2"
 msgstr "Ставки: %1, Време на репродукција: %2"
 
-#: input/audiobrowser/playlist.cpp:1792
+#: input/audiobrowser/playlist.cpp:1749
 msgid "Remove '%1' from list and from disk?"
 msgstr "Отстрани %1 од листата и од дискот?"
 
-#: input/audiobrowser/playlist.cpp:1817
+#: input/audiobrowser/playlist.cpp:1774
 #, fuzzy
 msgid "Playlist Name Already Exists"
 msgstr "Оваа листа веќе постои  "
 
-#: input/audiobrowser/playlist.cpp:1818
+#: input/audiobrowser/playlist.cpp:1775
 msgid "Enter different playlist name:"
 msgstr "Внесете друго име за листата:"
 
-#: input/audiobrowser/playlist.cpp:2223
+#: input/audiobrowser/playlist.cpp:2180
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1284
 msgid "Select Subtitle"
 msgstr "Одбери превод"
 
-#: input/audiobrowser/playlist.cpp:2227
+#: input/audiobrowser/playlist.cpp:2184
 msgid "Media file:"
 msgstr "Мултимедијална датотека:"
 
-#: input/audiobrowser/playlist.cpp:2244
+#: input/audiobrowser/playlist.cpp:2201
 #, fuzzy
 msgid "Select Movie"
 msgstr "Одбери го филмот"
 
-#: input/audiobrowser/playlist.cpp:2248
+#: input/audiobrowser/playlist.cpp:2205
 msgid "Subtitle file:"
 msgstr "Датотека со преводи:"
 
@@ -1085,52 +1207,20 @@ msgstr "Датотека со преводи:"
 msgid "Play / Pause"
 msgstr "Пушти Листа"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:795
+#: player-parts/gstreamer-part/gstreamer_part.cpp:823
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1241 systemtray.cpp:56
 msgid "&Next"
 msgstr ""
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:808
+#: player-parts/gstreamer-part/gstreamer_part.cpp:836
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1261 systemtray.cpp:59
 msgid "&Mute"
 msgstr "&Занеми"
 
-#: kaffeine.cpp:225 main.cpp:73
+#: kaffeine.cpp:227 main.cpp:73
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1177 systemtray.cpp:74
 msgid "Kaffeine Player"
 msgstr "Прикажувач Кафеин"
-
-#: startwindow.cpp:61
-msgid "Play Playlist"
-msgstr "Пушти Листа"
-
-#: startwindow.cpp:63
-msgid "Open Files"
-msgstr "Отвори датотеки"
-
-#: kaffeine.cpp:1418 startwindow.cpp:65
-msgid "Open URL"
-msgstr "Отвори URL"
-
-#: startwindow.cpp:67
-msgid "Open Directory"
-msgstr "Отвори директориум"
-
-#: startwindow.cpp:69
-msgid "Open DVD"
-msgstr "Отвори DVD"
-
-#: startwindow.cpp:71
-msgid "Open VCD"
-msgstr "Отвори VCD"
-
-#: startwindow.cpp:73
-msgid "Open Audio-CD"
-msgstr "Отвори Audio-CD"
-
-#: startwindow.cpp:76
-msgid "DVB"
-msgstr "DVB"
 
 #: _translatorinfo.cpp:1
 msgid ""
@@ -1395,7 +1485,7 @@ msgid "Done"
 msgstr "Готово"
 
 #. i18n: file ./input/dvb/kaffeinedvb.rc line 4
-#: player-parts/gstreamer-part/gstreamer_part.cpp:812
+#: player-parts/gstreamer-part/gstreamer_part.cpp:840
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1270 rc.cpp:201
 #, no-c-format
 msgid "&DVB"
@@ -1521,92 +1611,98 @@ msgstr "Модулација :"
 msgid "Inversion:"
 msgstr "Инверзија :"
 
-#. i18n: file ./input/audiobrowser/kaffeineplaylist.rc line 4
+#. i18n: file ./input/disc/kaffeinedisc.rc line 12
 #: rc.cpp:285
+#, fuzzy, no-c-format
+msgid "CD Toolbar"
+msgstr "Алатник за канали"
+
+#. i18n: file ./input/audiobrowser/kaffeineplaylist.rc line 4
+#: rc.cpp:288
 #, no-c-format
 msgid "Play&list"
 msgstr "&Листа"
 
-#. i18n: file ./kaffeineui.rc line 15
-#: rc.cpp:291
+#. i18n: file ./kaffeineui.rc line 12
+#: rc.cpp:294
 #, no-c-format
 msgid "Quit Options"
 msgstr "Опции за напуштање"
 
-#. i18n: file ./kaffeineui.rc line 22
-#: rc.cpp:294 rc.cpp:312 rc.cpp:357 rc.cpp:375
+#. i18n: file ./kaffeineui.rc line 19
+#: rc.cpp:297 rc.cpp:315 rc.cpp:360 rc.cpp:378
 #, no-c-format
 msgid "&Player"
 msgstr "&Прикажувач"
 
-#. i18n: file ./kaffeineui.rc line 30
-#: rc.cpp:300
+#. i18n: file ./kaffeineui.rc line 27
+#: rc.cpp:303
 #, no-c-format
 msgid "Enable Auto &Resize"
 msgstr "Овозможи автоматско манипулирање со &Големината"
 
 #. i18n: file ./player-parts/kaffeine-part/kaffeine_part.rc line 5
-#: rc.cpp:309
+#: rc.cpp:312
 #, no-c-format
 msgid "&Network Broadcasting"
 msgstr "&Мрежен пренос"
 
 #. i18n: file ./player-parts/kaffeine-part/kaffeine_part.rc line 24
-#: rc.cpp:315 rc.cpp:348
+#: rc.cpp:318 rc.cpp:351
 #, no-c-format
 msgid "&Navigation"
 msgstr "&Навигација"
 
 #. i18n: file ./player-parts/kaffeine-part/kaffeine_part.rc line 33
-#: rc.cpp:318 rc.cpp:351
+#: rc.cpp:321 rc.cpp:354
 #, fuzzy, no-c-format
 msgid "&DVD"
 msgstr "&DVB"
 
 #. i18n: file ./player-parts/kaffeine-part/kaffeine_part.rc line 34
-#: rc.cpp:321 rc.cpp:354
+#: rc.cpp:324 rc.cpp:357
 #, no-c-format
 msgid "&DVD Menus"
 msgstr "&DVD менија"
 
 #. i18n: file ./player-parts/kaffeine-part/kaffeine_part.rc line 49
-#: player-parts/kaffeine-part/kaffeine_part.cpp:1291 rc.cpp:324
+#: player-parts/kaffeine-part/kaffeine_part.cpp:1291 rc.cpp:327
 #, no-c-format
 msgid "&Audio"
 msgstr "&Аудио"
 
 #. i18n: file ./player-parts/kaffeine-part/kaffeine_part.rc line 57
-#: rc.cpp:327
+#: rc.cpp:330
 #, no-c-format
 msgid "&Video"
 msgstr "&Видео"
 
 #. i18n: file ./player-parts/kaffeine-part/kaffeine_part.rc line 59
-#: rc.cpp:330 rc.cpp:360 rc.cpp:372
+#: rc.cpp:333 rc.cpp:363 rc.cpp:375
 #, no-c-format
 msgid "&Aspect Ratio"
 msgstr "Размер на &аспектот"
 
 #. i18n: file ./player-parts/kaffeine-part/kaffeine_part.rc line 89
-#: rc.cpp:336
+#: rc.cpp:339
 #, no-c-format
 msgid "Screenshot Toolbar"
 msgstr "Алатник за сликите од екранот"
 
 #. i18n: file ./player-parts/kaffeine-part/kaffeine_part.rc line 92
-#: rc.cpp:339 rc.cpp:363
+#: rc.cpp:342 rc.cpp:366
 #, no-c-format
 msgid "Controls Toolbar"
 msgstr "Алатник за контроли "
 
 #. i18n: file ./player-parts/kaffeine-part/kaffeine_part.rc line 101
-#: rc.cpp:342 rc.cpp:366
+#: rc.cpp:345 rc.cpp:369
 #, no-c-format
 msgid "Volume Toolbar"
 msgstr "Алатник за звукот"
 
 #. i18n: file ./player-parts/kaffeine-part/kaffeine_part.rc line 105
-#: rc.cpp:345 rc.cpp:369
+#: rc.cpp:348 rc.cpp:372
 #, no-c-format
 msgid "Position Toolbar"
 msgstr "Алатник за позиција"
@@ -1677,161 +1773,150 @@ msgstr ""
 msgid "Clear recent files list"
 msgstr "Исчисти ја листата на скоро употребувани датотеки"
 
-#: kaffeine.cpp:141
+#: kaffeine.cpp:138
 msgid "No player"
 msgstr "Нема прикажувач"
 
-#: kaffeine.cpp:163
+#: kaffeine.cpp:161
+#, fuzzy
+msgid "Start"
+msgstr "&Дел"
+
+#: kaffeine.cpp:164
 #, fuzzy
 msgid "Player Window"
 msgstr "Закачи го прозорецот за листата"
 
-#: kaffeine.cpp:177
-msgid "Digital TV"
-msgstr ""
-
-#: kaffeine.cpp:184
+#: kaffeine.cpp:186
 msgid "Supported Media Formats"
 msgstr "Поддржани формати на мултимедија"
 
-#: kaffeine.cpp:185
+#: kaffeine.cpp:187
 msgid "MPEG Audio Files"
 msgstr "MPEG датотеки за аудио"
 
-#: kaffeine.cpp:186
+#: kaffeine.cpp:188
 msgid "MPEG Video Files"
 msgstr "MPEG датотеки за видео"
 
-#: kaffeine.cpp:187
+#: kaffeine.cpp:189
 msgid "Ogg Vorbis Files"
 msgstr "Ogg Vorbis датотеки"
 
-#: kaffeine.cpp:188
+#: kaffeine.cpp:190
 msgid "AVI Files"
 msgstr "AVI датотеки"
 
-#: kaffeine.cpp:189
+#: kaffeine.cpp:191
 msgid "Quicktime Files"
 msgstr "Quicktime датотеки"
 
-#: kaffeine.cpp:190
+#: kaffeine.cpp:192
 msgid "Real Media Files"
 msgstr "Real Media датотеки"
 
-#: kaffeine.cpp:191
+#: kaffeine.cpp:193
 msgid "Matroska Files"
 msgstr "Matroska датотеки"
 
-#: kaffeine.cpp:192
+#: kaffeine.cpp:194
 msgid "FLAC Files"
 msgstr "FLAC датотеки"
 
-#: kaffeine.cpp:193
+#: kaffeine.cpp:195
 msgid "Windows Media Files"
 msgstr "Windows Media датотеки"
 
-#: kaffeine.cpp:194
+#: kaffeine.cpp:196
 msgid "WAV Files"
 msgstr "WAV датотеки"
 
-#: kaffeine.cpp:292
+#: kaffeine.cpp:280
 #, fuzzy
 msgid "No layer"
 msgstr "Нема прикажувач"
 
-#: kaffeine.cpp:306 kaffeine.cpp:329 kaffeine.cpp:405 kaffeine.cpp:450
+#: kaffeine.cpp:294 kaffeine.cpp:317 kaffeine.cpp:384 kaffeine.cpp:427
 msgid "Loading of player part '%1' failed."
 msgstr "Вчитувањето на делот %1 од прикажувачот не успеа."
 
-#: kaffeine.cpp:306
+#: kaffeine.cpp:294
 msgid "%1 not found in search path."
 msgstr "%1 не е пронајден на патеката по која се пребаруваше."
 
-#: kaffeine.cpp:657
+#: kaffeine.cpp:634
 #, fuzzy
 msgid "Open &URL..."
 msgstr "Отвори го  &URL-то"
 
-#: kaffeine.cpp:658
+#: kaffeine.cpp:635
 #, fuzzy
 msgid "Open D&irectory..."
 msgstr "Отвори д&иректориум"
 
-#: kaffeine.cpp:660
-msgid "Open &DVD"
-msgstr "Отвори &DVD"
-
-#: kaffeine.cpp:661
-msgid "Open &VCD"
-msgstr "Отвори &VCD"
-
-#: kaffeine.cpp:662
-msgid "Open &Audio-CD"
-msgstr "Отвори &Audio-CD"
-
-#: kaffeine.cpp:663
+#: kaffeine.cpp:637
 #, fuzzy
 msgid "Quit && Shutoff Monitor After This Track"
 msgstr "Напушти и исклучи го мониторот по оваа нумера"
 
-#: kaffeine.cpp:664
+#: kaffeine.cpp:638
 msgid "Quit After This Track"
 msgstr "Напушти по оваа нумера"
 
-#: kaffeine.cpp:665
+#: kaffeine.cpp:639
 msgid "Quit After Playlist"
 msgstr "Напушти по оваа листа"
 
-#: kaffeine.cpp:670
+#: kaffeine.cpp:644
 msgid "&Minimal Mode"
 msgstr "&Минимален мод"
 
-#: kaffeine.cpp:671
+#: kaffeine.cpp:645
 msgid "Toggle &Playlist/Player"
 msgstr "Чепни ја &листата/Прикажувачот"
 
-#: kaffeine.cpp:672
+#: kaffeine.cpp:646
 msgid "Preserve &Original Aspect"
 msgstr "Зачувај го &оригиналниот аспект"
 
-#: kaffeine.cpp:673
+#: kaffeine.cpp:647
 msgid "Alternate Layout"
 msgstr ""
 
-#: kaffeine.cpp:675
+#: kaffeine.cpp:649
 msgid "Original Size"
 msgstr "Оригинална големина"
 
-#: kaffeine.cpp:676
+#: kaffeine.cpp:650
 msgid "Double Size"
 msgstr "Двапапати во големина"
 
-#: kaffeine.cpp:677
+#: kaffeine.cpp:651
 msgid "Triple Size"
 msgstr "Трипати во големина"
 
-#: kaffeine.cpp:679
+#: kaffeine.cpp:653
 msgid "&Player Engine"
 msgstr "&Придвижувач на прикажувачот"
 
-#: kaffeine.cpp:818 kaffeine.cpp:939
+#: kaffeine.cpp:792 kaffeine.cpp:911
 #, fuzzy
 msgid "DVB client"
 msgstr "DVB клиент"
 
-#: kaffeine.cpp:970 kaffeine.cpp:972
+#: kaffeine.cpp:942 kaffeine.cpp:944
 msgid "Player"
 msgstr "Прикажувач"
 
-#: kaffeine.cpp:973
+#: kaffeine.cpp:945
 msgid "Main Window"
 msgstr "Главен прозорец"
 
-#: kaffeine.cpp:1035
+#: kaffeine.cpp:1007
 msgid "DPMS Xserver extension was not found."
 msgstr "DPMS екстензијата за Xserver-то не беше најдена."
 
-#: kaffeine.cpp:1042
+#: kaffeine.cpp:1014
 msgid ""
 "This will quit Kaffeine and shut off the monitor's power after the "
 "file/playlist has finished. Option \"dpms\" must be in  your X config file for "
@@ -1841,43 +1926,32 @@ msgstr ""
 "Опцијата \"dpms\" мора да се наоѓа во датотеката X config за мониторот да се "
 "исклучи."
 
-#: kaffeine.cpp:1117
+#: kaffeine.cpp:1089
 msgid "Open File(s)"
 msgstr "Отвори датотека"
 
-#: kaffeine.cpp:1418
+#: kaffeine.cpp:1390
+msgid "Open URL"
+msgstr "Отвори URL"
+
+#: kaffeine.cpp:1390
 msgid "Enter a URL:"
 msgstr "Внеси URL:"
 
-#: kaffeine.cpp:1436
+#: kaffeine.cpp:1408
 #, fuzzy
 msgid "Open Folder"
 msgstr "Отвори датотеки"
 
-#: kaffeine.cpp:1459
+#: kaffeine.cpp:1431
 msgid "No %1 in drive, or wrong path to device."
 msgstr "Нема %1 во драјвот, или погрешен пат до уредот."
 
-#: kaffeine.cpp:1460
+#: kaffeine.cpp:1432
 msgid "Please select correct drive:"
 msgstr "Те молам избери го точниот уред:"
 
-#: kaffeine.cpp:1530
-#, fuzzy
-msgid "This player doesn't support DVD playback."
-msgstr "Овој прикажувач не поддржува приказ на %1 ."
-
-#: kaffeine.cpp:1571
-#, fuzzy
-msgid "This player doesn't support VCD playback."
-msgstr "Овој прикажувач не поддржува приказ на %1 ."
-
-#: kaffeine.cpp:1613
-#, fuzzy
-msgid "This player doesn't support Audio CD playback."
-msgstr "Овој прикажувач не поддржува приказ на %1 ."
-
-#: kaffeine.cpp:1655
+#: kaffeine.cpp:1509
 msgid ""
 "Closing the main window will keep Kaffeine running in the system tray. Use Quit "
 "from the File menu to quit the application."
@@ -2107,7 +2181,7 @@ msgstr "Конфигурирај го плагинот за deinterlace на Т�
 msgid "Effect Plugins"
 msgstr "Плагин за ефекти"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:659
+#: player-parts/gstreamer-part/gstreamer_part.cpp:687
 #: player-parts/gstreamer-part/gstreamerconfig.cpp:47
 #: player-parts/kaffeine-part/filterdialog.cpp:44
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1136
@@ -2133,7 +2207,7 @@ msgstr "Додади филтер"
 msgid "Remove All Filters"
 msgstr "Отстрани ги сите филтри"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:663
+#: player-parts/gstreamer-part/gstreamer_part.cpp:691
 #: player-parts/gstreamer-part/gstreamerconfig.cpp:60
 #: player-parts/kaffeine-part/filterdialog.cpp:77
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1139
@@ -2258,7 +2332,7 @@ msgstr "Порака од xine:"
 msgid "Ready"
 msgstr "Подготвено."
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:541
+#: player-parts/gstreamer-part/gstreamer_part.cpp:569
 #: player-parts/kaffeine-part/kaffeine_part.cpp:999
 #: player-parts/kaffeine-part/kxinewidget.cpp:1444
 #: player-parts/kaffeine-part/kxinewidget.cpp:2024
@@ -2336,8 +2410,8 @@ msgstr ""
 "пр. Real Media) беше оневозможена за да се избегнат правни проблеми."
 
 #: player-parts/dummy-part/dummy_part.cpp:122
-#: player-parts/gstreamer-part/gstreamer_part.cpp:528
-#: player-parts/gstreamer-part/gstreamer_part.cpp:793
+#: player-parts/gstreamer-part/gstreamer_part.cpp:556
+#: player-parts/gstreamer-part/gstreamer_part.cpp:821
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1240
 #: player-parts/kaffeine-part/kxinewidget.cpp:2858
 msgid "Pause"
@@ -2394,7 +2468,7 @@ msgstr "Канал за аудио"
 msgid "Select audio channel"
 msgstr "Одбери канал за аудио"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:802
+#: player-parts/gstreamer-part/gstreamer_part.cpp:830
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1259
 msgid "Audio &Visualization"
 msgstr "Звук &визуелизација"
@@ -2417,22 +2491,22 @@ msgstr "&Deinterlace"
 msgid "Activate this for interlaced streams, some DVD's for example."
 msgstr "Активирај го за потоци кои се interlaced, како некои DVD-а на пример. "
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:809
+#: player-parts/gstreamer-part/gstreamer_part.cpp:837
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1267
 msgid "&Auto"
 msgstr "&Автоматски"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:810
+#: player-parts/gstreamer-part/gstreamer_part.cpp:838
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1268
 msgid "&4:3"
 msgstr "&4:3"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:811
+#: player-parts/gstreamer-part/gstreamer_part.cpp:839
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1269
 msgid "A&namorphic"
 msgstr "А&наморфно"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:813
+#: player-parts/gstreamer-part/gstreamer_part.cpp:841
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1271
 msgid "&Square"
 msgstr "&Квадрат"
@@ -2457,7 +2531,7 @@ msgstr ""
 msgid "Deinterlace &Quality"
 msgstr "&Квалитет на Deinterlace"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:814
+#: player-parts/gstreamer-part/gstreamer_part.cpp:842
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1280
 msgid "&Video Settings"
 msgstr "Подесувања за &Видео"
@@ -2505,7 +2579,7 @@ msgstr "Канали"
 msgid "Angles"
 msgstr "А&гол"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:815
+#: player-parts/gstreamer-part/gstreamer_part.cpp:843
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1302
 msgid "Track &Info"
 msgstr "&Информации за нумерата"
@@ -2518,16 +2592,16 @@ msgstr "&Плагини за ефекти"
 msgid "&xine Engine Parameters"
 msgstr "Параметри за придвижувачот на &xine"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:478
-#: player-parts/gstreamer-part/gstreamer_part.cpp:818
-#: player-parts/gstreamer-part/gstreamer_part.cpp:825
+#: player-parts/gstreamer-part/gstreamer_part.cpp:506
+#: player-parts/gstreamer-part/gstreamer_part.cpp:846
+#: player-parts/gstreamer-part/gstreamer_part.cpp:853
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1310
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1317
 #: player-parts/kaffeine-part/kxinewidget.cpp:2533
 msgid "Volume"
 msgstr "Звук"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:799
+#: player-parts/gstreamer-part/gstreamer_part.cpp:827
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1321
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1330
 #: player-parts/kaffeine-part/kxinewidget.cpp:3070
@@ -2543,7 +2617,7 @@ msgstr ""
 "Напред ПНЕ\n"
 "(Прикажи на екранот)"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:800
+#: player-parts/gstreamer-part/gstreamer_part.cpp:828
 #: player-parts/kaffeine-part/kaffeine_part.cpp:1339
 msgid "Playtime"
 msgstr "Време на приказ"
@@ -2557,28 +2631,28 @@ msgstr "Барам CDDB ставки ..."
 msgid "Video Settings"
 msgstr "Подесување за видео"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:497
+#: player-parts/gstreamer-part/gstreamer_part.cpp:525
 #: player-parts/gstreamer-part/videosettings.cpp:41
 #: player-parts/kaffeine-part/kxinewidget.cpp:3358
 #: player-parts/kaffeine-part/videosettings.cpp:49
 msgid "Hue"
 msgstr "Hue"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:491
+#: player-parts/gstreamer-part/gstreamer_part.cpp:519
 #: player-parts/gstreamer-part/videosettings.cpp:51
 #: player-parts/kaffeine-part/kxinewidget.cpp:3364
 #: player-parts/kaffeine-part/videosettings.cpp:59
 msgid "Saturation"
 msgstr "Заситување"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:503
+#: player-parts/gstreamer-part/gstreamer_part.cpp:531
 #: player-parts/gstreamer-part/videosettings.cpp:61
 #: player-parts/kaffeine-part/kxinewidget.cpp:3370
 #: player-parts/kaffeine-part/videosettings.cpp:69
 msgid "Contrast"
 msgstr "Контраст"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:509
+#: player-parts/gstreamer-part/gstreamer_part.cpp:537
 #: player-parts/gstreamer-part/videosettings.cpp:71
 #: player-parts/kaffeine-part/kxinewidget.cpp:3376
 #: player-parts/kaffeine-part/videosettings.cpp:79
@@ -2704,7 +2778,7 @@ msgstr ""
 msgid "Using Video Driver: "
 msgstr "Го користам драјверот за видео: "
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:837
+#: player-parts/gstreamer-part/gstreamer_part.cpp:865
 #: player-parts/kaffeine-part/kxinewidget.cpp:945
 msgid "Error: Can't init new Audio Driver %1 - using %2!"
 msgstr ""
@@ -2784,7 +2858,7 @@ msgstr "Не можам да создадам нов xine поток!"
 msgid "DVB: opening..."
 msgstr "DVB : отворам ..."
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:262
+#: player-parts/gstreamer-part/gstreamer_part.cpp:290
 #: player-parts/kaffeine-part/kxinewidget.cpp:1827
 msgid "Opening..."
 msgstr "Отворам..."
@@ -2817,8 +2891,8 @@ msgstr "Ресурсот не може да биде отворен"
 msgid "Generic error"
 msgstr "Општа грешка"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:517
-#: player-parts/gstreamer-part/gstreamer_part.cpp:519
+#: player-parts/gstreamer-part/gstreamer_part.cpp:545
+#: player-parts/gstreamer-part/gstreamer_part.cpp:547
 #: player-parts/kaffeine-part/kxinewidget.cpp:2569
 #: player-parts/kaffeine-part/kxinewidget.cpp:2574
 msgid "Mute"
@@ -2923,20 +2997,20 @@ msgstr "Инизијализацијата на GStreamer беше неуспе�
 msgid "GStreamerPart"
 msgstr "Дел GStreamer"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:651
+#: player-parts/gstreamer-part/gstreamer_part.cpp:679
 msgid "Comment"
 msgstr "Коментар"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:826
+#: player-parts/gstreamer-part/gstreamer_part.cpp:854
 msgid "&GStreamer Engine Parameters"
 msgstr "Параметри за придвижувачот на &GStreamer"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:854
-#: player-parts/gstreamer-part/gstreamer_part.cpp:893
+#: player-parts/gstreamer-part/gstreamer_part.cpp:882
+#: player-parts/gstreamer-part/gstreamer_part.cpp:921
 msgid "GStreamer could not be initialized!"
 msgstr "GStreamer не може да се иницијализира!"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:862
+#: player-parts/gstreamer-part/gstreamer_part.cpp:890
 msgid ""
 "Missing GStreamer-registry! Did you forget to run <b>gst-register</b> "
 "(as root) after installation?"
@@ -2944,23 +3018,23 @@ msgstr ""
 "Недостасува GStreamer-registry! Да не заборавивте да го извршите <b>"
 "gst-register</b> (како root) по инсталацијата?"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:902
+#: player-parts/gstreamer-part/gstreamer_part.cpp:930
 msgid "Can't init Audio Driver '%1' - trying another one..."
 msgstr ""
 "Неможам да го иницијализирам драјверот за аудио '%1' - се обидувам со друг "
 "драјвер..."
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:913
+#: player-parts/gstreamer-part/gstreamer_part.cpp:941
 msgid "No useable audio-driver found!"
 msgstr "Не беше пронајден употреблив драјвер за аудио!"
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:925
+#: player-parts/gstreamer-part/gstreamer_part.cpp:953
 msgid "Can't init Video Driver '%1' - trying another one..."
 msgstr ""
 "Неможам да го иницијализирам драјверот за видео '%1' - се обидувам со друг "
 "драјвер..."
 
-#: player-parts/gstreamer-part/gstreamer_part.cpp:933
+#: player-parts/gstreamer-part/gstreamer_part.cpp:961
 msgid "No useable video-driver found!"
 msgstr "Не беше пронајден употреблив драјвер за видео!"
 
@@ -3004,6 +3078,33 @@ msgstr "CD, VCD, DVD уред"
 msgid "DummyPart"
 msgstr "ГлупДел"
 
+#~ msgid "Open Files"
+#~ msgstr "Отвори датотеки"
+
+#~ msgid "Open Directory"
+#~ msgstr "Отвори директориум"
+
+#~ msgid "Open DVD"
+#~ msgstr "Отвори DVD"
+
+#~ msgid "Open VCD"
+#~ msgstr "Отвори VCD"
+
+#~ msgid "DVB"
+#~ msgstr "DVB"
+
+#, fuzzy
+#~ msgid "This player doesn't support DVD playback."
+#~ msgstr "Овој прикажувач не поддржува приказ на %1 ."
+
+#, fuzzy
+#~ msgid "This player doesn't support VCD playback."
+#~ msgstr "Овој прикажувач не поддржува приказ на %1 ."
+
+#, fuzzy
+#~ msgid "This player doesn't support Audio CD playback."
+#~ msgstr "Овој прикажувач не поддржува приказ на %1 ."
+
 #~ msgid "Create Go!-Tab"
 #~ msgstr "Направи Акција! - Таб"
 
@@ -3021,9 +3122,6 @@ msgstr "ГлупДел"
 
 #~ msgid "Playlist Toolbar"
 #~ msgstr "Алатник за листата "
-
-#~ msgid "Channels Toolbar"
-#~ msgstr "Алатник за канали"
 
 #~ msgid "Select Playlist"
 #~ msgstr "Избери листа"
