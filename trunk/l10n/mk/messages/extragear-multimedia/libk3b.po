@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: libk3b\n"
-"POT-Creation-Date: 2006-02-15 10:43+0100\n"
+"POT-Creation-Date: 2006-02-17 10:37+0100\n"
 "PO-Revision-Date: 2005-05-18 13:35+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -220,7 +220,7 @@ msgstr ""
 
 #: jobs/k3bcdda2wavreader.cpp:242 jobs/k3bdvdformattingjob.cpp:258
 #: projects/audiocd/k3baudionormalizejob.cpp:188
-#: projects/datacd/k3bisoimager.cpp:173
+#: projects/datacd/k3bisoimager.cpp:177
 #: projects/datadvd/k3bdvdbooktypejob.cpp:192 projects/k3bcdrdaowriter.cpp:780
 #: projects/k3bcdrecordwriter.cpp:753 projects/videocd/k3bvcdjob.cpp:353
 msgid "%1 returned an unknown error (code %2)."
@@ -228,7 +228,7 @@ msgstr ""
 
 #: jobs/k3bdvdformattingjob.cpp:261
 #: projects/audiocd/k3baudionormalizejob.cpp:191
-#: projects/datacd/k3bisoimager.cpp:176
+#: projects/datacd/k3bisoimager.cpp:180
 #: projects/datadvd/k3bdvdbooktypejob.cpp:195
 #: projects/videocd/k3bvcdjob.cpp:356
 msgid "Please send me an email with the last output."
@@ -236,7 +236,7 @@ msgstr ""
 
 #: jobs/k3bcdda2wavreader.cpp:248 jobs/k3bdvdformattingjob.cpp:267
 #: projects/audiocd/k3baudionormalizejob.cpp:201
-#: projects/datacd/k3bisoimager.cpp:184
+#: projects/datacd/k3bisoimager.cpp:188
 #: projects/datadvd/k3bdvdbooktypejob.cpp:201 projects/k3bcdrdaowriter.cpp:792
 #: projects/k3bcdrecordwriter.cpp:774 projects/videocd/k3bvcdjob.cpp:362
 msgid "%1 did not exit cleanly."
@@ -326,7 +326,7 @@ msgid "Using %1 %2 - Copyright (C) %3"
 msgstr ""
 
 #: jobs/k3bcdda2wavreader.cpp:137 jobs/k3bdvdformattingjob.cpp:511
-#: projects/datacd/k3bisoimager.cpp:287 projects/datacd/k3bisoimager.cpp:450
+#: projects/datacd/k3bisoimager.cpp:291 projects/datacd/k3bisoimager.cpp:455
 #: projects/datacd/k3bmsinfofetcher.cpp:124
 #: projects/datadvd/k3bdvdbooktypejob.cpp:342
 #: projects/datadvd/k3bgrowisofsimager.cpp:258
@@ -1910,70 +1910,74 @@ msgid ""
 "You may use convmv (http://j3e.de/linux/convmv/) to fix the filename encoding."
 msgstr ""
 
-#: projects/datacd/k3bisoimager.cpp:164
+#: projects/datacd/k3bmkisofshandler.cpp:107
+msgid "The boot image has an invalid size."
+msgstr ""
+
+#: projects/datacd/k3bisoimager.cpp:168
 msgid ""
 "Due to a bug in mkisofs <= 1.15a40, K3b is unable to handle filenames that "
 "contain more than one backslash:"
 msgstr ""
 
-#: projects/datacd/k3bisoimager.cpp:342
+#: projects/datacd/k3bisoimager.cpp:346
 msgid "Could not determine size of resulting image file."
 msgstr ""
 
-#: projects/audiocd/k3baudioimager.cpp:86 projects/datacd/k3bisoimager.cpp:417
+#: projects/audiocd/k3baudioimager.cpp:86 projects/datacd/k3bisoimager.cpp:422
 msgid "Could not open %1 for writing"
 msgstr ""
 
-#: projects/datacd/k3bisoimager.cpp:427
+#: projects/datacd/k3bisoimager.cpp:432
 msgid ""
 "Some filenames need to be shortened due to the %1 char restriction of the "
 "Joliet extensions. Continue anyway?"
 msgstr ""
 
-#: projects/datacd/k3bisoimager.cpp:503
+#: projects/datacd/k3bisoimager.cpp:508
 msgid "No volume id specified. Using default."
 msgstr ""
 
-#: projects/datacd/k3bisoimager.cpp:574
+#: projects/datacd/k3bisoimager.cpp:579
 msgid ""
 "Found files bigger than 2 GB. These files will only be fully accessible if "
 "mounted with UDF."
 msgstr ""
 
-#: projects/datacd/k3bisoimager.cpp:579
+#: projects/datacd/k3bisoimager.cpp:584
 msgid "Enabling UDF extension."
 msgstr ""
 
-#: projects/datacd/k3bisoimager.cpp:716
+#: projects/datacd/k3bisoimager.cpp:721
 msgid "Could not follow link %1 to non-existing file %2. Skipping..."
 msgstr ""
 
-#: projects/datacd/k3bisoimager.cpp:722
+#: projects/datacd/k3bisoimager.cpp:727
 msgid ""
 "Ignoring link %1 to folder %2. K3b is unable to follow links to folders."
 msgstr ""
 
-#: projects/datacd/k3bisoimager.cpp:732
+#: projects/datacd/k3bisoimager.cpp:737
 #, fuzzy
 msgid "Could not find file %1. Skipping..."
 msgstr "Не можам да ја пронајдам датотеката %1"
 
-#: projects/datacd/k3bisoimager.cpp:736
+#: projects/datacd/k3bisoimager.cpp:741
 #, fuzzy
 msgid "Could not read file %1. Skipping..."
 msgstr "Не можам да ја отворам датотеката %1"
 
-#: projects/datacd/k3bisoimager.cpp:784
+#: projects/datacd/k3bisoimager.cpp:789
 #, c-format
 msgid "Failed to backup boot image file %1"
 msgstr ""
 
-#: projects/datacd/k3bisoimager.cpp:951 projects/datacd/k3bisoimager.cpp:961
-#: projects/datacd/k3bisoimager.cpp:968 projects/datacd/k3bisoimager.cpp:974
+#: projects/datacd/k3bisoimager.cpp:956 projects/datacd/k3bisoimager.cpp:966
+#: projects/datacd/k3bisoimager.cpp:973 projects/datacd/k3bisoimager.cpp:979
 msgid "Could not write temporary file"
 msgstr ""
 
-#: projects/datacd/k3bisoimager.cpp:955
+#: projects/datacd/k3bisoimager.cpp:960
 msgid "No files to be written."
 msgstr ""
 
