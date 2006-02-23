@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: k3b\n"
-"POT-Creation-Date: 2006-02-22 11:22+0100\n"
+"POT-Creation-Date: 2006-02-23 10:44+0100\n"
 "PO-Revision-Date: 2005-05-18 13:40+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -2528,7 +2528,7 @@ msgid "Solution"
 msgstr "Решение"
 
 #: k3bsystemproblemdialog.cpp:177 k3bsystemproblemdialog.cpp:227
-#: k3bsystemproblemdialog.cpp:248 k3bsystemproblemdialog.cpp:276
+#: k3bsystemproblemdialog.cpp:248 k3bsystemproblemdialog.cpp:293
 msgid "Unable to find %1 executable"
 msgstr "Не можам да ја пронајдам извршната %1"
 
@@ -2541,8 +2541,8 @@ msgid "Install the cdrtools package which contains cdrecord."
 msgstr "Инсталирајте го пакетот cdrtools што го содржи cdrecord."
 
 #: k3bsystemproblemdialog.cpp:186 k3bsystemproblemdialog.cpp:258
-#: k3bsystemproblemdialog.cpp:266 k3bsystemproblemdialog.cpp:288
-#: k3bsystemproblemdialog.cpp:398
+#: k3bsystemproblemdialog.cpp:266 k3bsystemproblemdialog.cpp:274
+#: k3bsystemproblemdialog.cpp:305 k3bsystemproblemdialog.cpp:415
 msgid "Used %1 version %2 is outdated"
 msgstr ""
 
@@ -2569,11 +2569,12 @@ msgid ""
 msgstr ""
 
 #: k3bsystemproblemdialog.cpp:207 k3bsystemproblemdialog.cpp:220
-#: k3bsystemproblemdialog.cpp:240
+#: k3bsystemproblemdialog.cpp:240 k3bsystemproblemdialog.cpp:286
 msgid "Use K3bSetup to solve this problem."
 msgstr ""
 
 #: k3bsystemproblemdialog.cpp:212 k3bsystemproblemdialog.cpp:236
+#: k3bsystemproblemdialog.cpp:281
 msgid "%1 will be run without root privileges"
 msgstr "%1 ќе биде извршуван без привилегии на root"
 
@@ -2606,7 +2607,7 @@ msgid ""
 "to write dvds. Make sure to install at least version 5.10."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:252 k3bsystemproblemdialog.cpp:278
+#: k3bsystemproblemdialog.cpp:252 k3bsystemproblemdialog.cpp:295
 msgid "Install the dvd+rw-tools package."
 msgstr "Инсталирајте го пакетот dvd+rw-tools."
 
@@ -2616,7 +2617,8 @@ msgid ""
 "will not work and K3b will refuse to use them."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:261 k3bsystemproblemdialog.cpp:293
+#: k3bsystemproblemdialog.cpp:261 k3bsystemproblemdialog.cpp:269
+#: k3bsystemproblemdialog.cpp:276 k3bsystemproblemdialog.cpp:310
 #, c-format
 msgid "Install a more recent version of %1."
 msgstr "Инсталирајте понова верзија на %1."
@@ -2627,64 +2629,71 @@ msgid ""
 "5.12."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:269 k3bsystemproblemdialog.cpp:401
-msgid "Install a more recent version of growisofs."
-msgstr "Инсталирајте понова верзија на growisofs."
+#: k3bsystemproblemdialog.cpp:275
+msgid "It is highly recommended to use growisofs 6.0 or higher."
+msgstr ""
 
-#: k3bsystemproblemdialog.cpp:277
+#: k3bsystemproblemdialog.cpp:282
+msgid ""
+"It is highly recommended to configure growisofs to run with root privileges. "
+"Only then growisofs runs with high priority which increases the overall "
+"stability of the burning process."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:294
 msgid "K3b uses dvd+rw-format to format DVD-RWs and DVD+RWs."
 msgstr "K3b го користи dvd+rw-format за да форматира DVD-RW-а и DVD+RW-а."
 
-#: k3bsystemproblemdialog.cpp:291
+#: k3bsystemproblemdialog.cpp:308
 msgid ""
 "K3b needs at least mkisofs version 1.14. Older versions may introduce problems "
 "when creating data projects."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:318
+#: k3bsystemproblemdialog.cpp:335
 msgid "Writing device %1 - %2 is automounted."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:320
+#: k3bsystemproblemdialog.cpp:337
 msgid ""
 "Automounting can cause problems with CD/DVD writing, especially with rewritable "
 "media. Although it might all work just fine it is recommended to disable "
 "automounting completely for now."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:323
+#: k3bsystemproblemdialog.cpp:340
 msgid "Replace the automounting entries in /etc/fstab with old-fashioned ones."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:334
+#: k3bsystemproblemdialog.cpp:351
 msgid "No ATAPI writing support in kernel"
 msgstr "Во кернелот нема поддршка за запишување преку ATAPI"
 
-#: k3bsystemproblemdialog.cpp:335
+#: k3bsystemproblemdialog.cpp:352
 msgid ""
 "Your kernel does not support writing without SCSI emulation but there is at "
 "least one writer in your system not configured to use SCSI emulation."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:339
+#: k3bsystemproblemdialog.cpp:356
 msgid ""
 "The best and recommended solution is to enable ide-scsi (SCSI emulation) for "
 "all devices. This way you won't have any problems.Be aware that you may still "
 "enable DMA on ide-scsi emulated drives."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:356 k3bsystemproblemdialog.cpp:375
+#: k3bsystemproblemdialog.cpp:373 k3bsystemproblemdialog.cpp:392
 msgid "%1 %2 does not support ATAPI"
 msgstr "%1 %2 не поддржува ATAPI"
 
-#: k3bsystemproblemdialog.cpp:357 k3bsystemproblemdialog.cpp:377
+#: k3bsystemproblemdialog.cpp:374 k3bsystemproblemdialog.cpp:394
 msgid ""
 "The configured version of %1 does not support writing to ATAPI devices without "
 "SCSI emulation and there is at least one writer in your system not configured "
 "to use SCSI emulation."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:362
+#: k3bsystemproblemdialog.cpp:379
 #, c-format
 msgid ""
 "The best and recommended solution is to enable ide-scsi (SCSI emulation) for "
@@ -2692,14 +2701,14 @@ msgid ""
 "the default) a more recent version of %1."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:383
+#: k3bsystemproblemdialog.cpp:400
 msgid ""
 "Install cdrdao >= 1.1.8 which supports writing to ATAPI devices directly."
 msgstr ""
 "Инсталирајте го cdrdao >= 1.1.8 кое што поддржува директно запишување на "
 "ATAPI-уреди."
 
-#: k3bsystemproblemdialog.cpp:385
+#: k3bsystemproblemdialog.cpp:402
 #, c-format
 msgid ""
 "The best, and recommended, solution is to use ide-scsi (SCSI emulation) for all "
@@ -2707,59 +2716,63 @@ msgid ""
 "(or select as the default) a more recent version of %1."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:399
+#: k3bsystemproblemdialog.cpp:416
 msgid ""
 "K3b won't be able to write DVD-R Dual Layer media using a growisofs version "
 "older than 6.0."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:409
+#: k3bsystemproblemdialog.cpp:418
+msgid "Install a more recent version of growisofs."
+msgstr "Инсталирајте понова верзија на growisofs."
+
+#: k3bsystemproblemdialog.cpp:426
 #, c-format
 msgid "No write access to device %1"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:410
+#: k3bsystemproblemdialog.cpp:427
 msgid ""
 "K3b needs write access to all the devices to perform certain tasks. Without you "
 "might encounter problems with %1 - %2"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:412 k3bsystemproblemdialog.cpp:424
+#: k3bsystemproblemdialog.cpp:429 k3bsystemproblemdialog.cpp:441
 msgid ""
 "Make sure you have write access to %1. In case you are not using devfs or udev "
 "K3bSetup is able to do this for you."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:421
+#: k3bsystemproblemdialog.cpp:438
 #, c-format
 msgid "No write access to generic SCSI device %1"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:422
+#: k3bsystemproblemdialog.cpp:439
 msgid ""
 "Without write access to the generic device you might encounter problems with "
 "Audio CD ripping from %1 - %2"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:439
+#: k3bsystemproblemdialog.cpp:456
 #, fuzzy, c-format
 msgid "User parameters specified for external program %1"
 msgstr "Пребарувам за надворешни програми..."
 
-#: k3bsystemproblemdialog.cpp:440
+#: k3bsystemproblemdialog.cpp:457
 msgid ""
 "Sometimes it may be nessessary to specify user parameters in addition to the "
 "parameters generated by K3b. This is simply a warning to make sure that these "
 "parameters are really wanted and won't be pat of some bug report."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:443
+#: k3bsystemproblemdialog.cpp:460
 msgid ""
 "To remove the user parameters for the external program %1 open the K3b settings "
 "page 'Programs' and choose the tab 'User Parameters'."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:482
+#: k3bsystemproblemdialog.cpp:499
 msgid "Unable to start K3bSetup2."
 msgstr "Не можам да го стартувам K3bSetup2."
 
@@ -4229,8 +4242,8 @@ msgstr ""
 #: option/k3bburningoptiontab.cpp:216
 msgid ""
 "<p>K3b uses a software buffer during the burning process to avoid gaps in the "
-"data stream due to high system load. The default sizes used are 4 MB for CD and "
-"40 MB for DVD burning."
+"data stream due to high system load. The default sizes used are %1 MB for CD "
+"and %2 MB for DVD burning."
 "<p>If this option is checked the value specified will be used for both CD and "
 "DVD burning."
 msgstr ""
@@ -8832,29 +8845,34 @@ msgstr ""
 msgid "Variable Bitrate (%1)"
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoder.cpp:274
+#: ../plugins/encoder/external/k3bexternalencoder.cpp:299
 msgid "Invalid command: the command is empty."
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoder.cpp:319
+#: ../plugins/encoder/external/k3bexternalencoder.cpp:344
 #, c-format
 msgid "Command failed: %1"
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoder.cpp:591
+#: ../plugins/encoder/external/k3bexternalencoder.cpp:355
+#, fuzzy
+msgid "Could not find program '%1'"
+msgstr "Не можам да го најдам приклучокот „%1“ за аудио излез"
+
+#: ../plugins/encoder/external/k3bexternalencoder.cpp:617
 msgid "Please specify an extension."
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoder.cpp:595
+#: ../plugins/encoder/external/k3bexternalencoder.cpp:621
 msgid "Please specify a command."
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoder.cpp:599
+#: ../plugins/encoder/external/k3bexternalencoder.cpp:625
 #, c-format
 msgid "The command needs to contain the filename (%f)."
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoder.cpp:615
+#: ../plugins/encoder/external/k3bexternalencoder.cpp:641
 msgid "Please specify a unique name and extension."
 msgstr ""
 
