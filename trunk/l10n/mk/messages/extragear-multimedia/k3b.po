@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: k3b\n"
-"POT-Creation-Date: 2006-02-24 10:44+0100\n"
+"POT-Creation-Date: 2006-02-25 10:50+0100\n"
 "PO-Revision-Date: 2005-05-18 13:40+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -70,8 +70,8 @@ msgstr ""
 #: projects/k3bdataburndialog.cpp:200 projects/k3bmovixburndialog.cpp:251
 #: projects/k3bmovixdvdburndialog.cpp:210 projects/k3bvcdburndialog.cpp:585
 #: rip/k3baudioprojectconvertingdialog.cpp:168
-#: rip/k3baudiorippingdialog.cpp:249 rip/k3bdvdrippingprocess.cpp:413
-#: rip/k3bdvdrippingprocess.cpp:434 videoEncoding/k3bdivxview.cpp:132
+#: rip/k3baudiorippingdialog.cpp:249 rip/k3bdvdrippingprocess.cpp:412
+#: rip/k3bdvdrippingprocess.cpp:433 videoEncoding/k3bdivxview.cpp:132
 msgid "Overwrite"
 msgstr ""
 
@@ -243,7 +243,7 @@ msgstr ""
 msgid "Segments"
 msgstr ""
 
-#: k3bdirview.cpp:286 k3bdirview.cpp:287 k3bdiskinfoview.cpp:178
+#: k3bdirview.cpp:319 k3bdirview.cpp:320 k3bdiskinfoview.cpp:178
 #: k3bdiskinfoview.cpp:183 projects/k3bvcdburndialog.cpp:68
 #: rip/k3bvideocdrippingoptions.h:28 rip/k3bvideocdview.cpp:305
 msgid "Video CD"
@@ -389,66 +389,66 @@ msgstr ""
 msgid "Saved entry (%1) in category %2."
 msgstr ""
 
-#: k3bdiskinfoview.cpp:169 k3bmedium.cpp:234 k3bmedium.cpp:236
+#: k3bdiskinfoview.cpp:169 k3bmedium.cpp:238 k3bmedium.cpp:240
 #: rip/k3baudiocdview.cpp:582
 msgid "Audio CD"
 msgstr ""
 
-#: rip/k3bdvdrippingprocess.cpp:181
+#: rip/k3bdvdrippingprocess.cpp:180
 #, c-format
 msgid "Successfully ripped all video titles to %1."
 msgstr ""
 
-#: rip/k3bdvdrippingprocess.cpp:285
+#: rip/k3bdvdrippingprocess.cpp:284
 msgid "Mounting media"
 msgstr ""
 
-#: rip/k3bdvdrippingprocess.cpp:295
+#: rip/k3bdvdrippingprocess.cpp:294
 msgid "K3b could not mount <%1>. Please run K3bSetup."
 msgstr ""
 
-#: k3b.cpp:895 k3b.cpp:936 rip/k3bdvdrippingprocess.cpp:296
-#: rip/k3bdvdrippingprocess.cpp:331 rip/k3bdvdrippingprocess.cpp:349
+#: k3b.cpp:895 k3b.cpp:936 rip/k3bdvdrippingprocess.cpp:295
+#: rip/k3bdvdrippingprocess.cpp:330 rip/k3bdvdrippingprocess.cpp:348
 msgid "I/O Error"
 msgstr ""
 
-#: rip/k3bdvdrippingprocess.cpp:306
+#: rip/k3bdvdrippingprocess.cpp:305
 msgid "Mounting failed."
 msgstr ""
 
-#: rip/k3bdvdrippingprocess.cpp:311
+#: rip/k3bdvdrippingprocess.cpp:310
 msgid "Successfully mounted media. Starting DVD Ripping."
 msgstr ""
 
-#: rip/k3bdvdrippingprocess.cpp:317
+#: rip/k3bdvdrippingprocess.cpp:316
 msgid "Preprocessing Video DVD"
 msgstr ""
 
-#: rip/k3bdvdrippingprocess.cpp:330
+#: rip/k3bdvdrippingprocess.cpp:329
 msgid ""
 "K3b could not mount the DVD-device. Ensure that you have the rights to mount "
 "the DVD-drive and that it supports either iso9660 or udf filesystem."
 msgstr ""
 
-#: rip/k3bdvdrippingprocess.cpp:348
+#: rip/k3bdvdrippingprocess.cpp:347
 #, c-format
 msgid "K3b could not copy the ifo-files from %1."
 msgstr ""
 
-#: rip/k3bdvdripperwidget.cpp:271 rip/k3bdvdrippingprocess.cpp:413
-#: rip/k3bdvdrippingprocess.cpp:433 rip/k3bdvdrippingprocess.cpp:494
+#: rip/k3bdvdripperwidget.cpp:271 rip/k3bdvdrippingprocess.cpp:412
+#: rip/k3bdvdrippingprocess.cpp:432 rip/k3bdvdrippingprocess.cpp:493
 msgid "Ripping Error"
 msgstr ""
 
-#: rip/k3bdvdrippingprocess.cpp:413
+#: rip/k3bdvdrippingprocess.cpp:412
 msgid "%1 already exists."
 msgstr ""
 
-#: rip/k3bdvdrippingprocess.cpp:433
+#: rip/k3bdvdrippingprocess.cpp:432
 msgid "Log file already exists. Overwrite?"
 msgstr ""
 
-#: rip/k3bdvdrippingprocess.cpp:494
+#: rip/k3bdvdrippingprocess.cpp:493
 msgid "Unable to get data for audio normalizing. Use default of 1.0."
 msgstr ""
 
@@ -1892,22 +1892,45 @@ msgstr ""
 msgid "ISO9660 Filesystem Info"
 msgstr ""
 
-#: k3bdirview.cpp:141
+#: k3bdirview.cpp:142
 msgid ""
 "<p>Please wait while K3b is retrieving information about the media in <b>%1</b>"
 "."
 msgstr ""
 
-#: k3bdirview.cpp:285
+#: k3bdirview.cpp:281
+msgid ""
+"<p>You have selected the K3b Video DVD ripping tool."
+"<p>It is intended to <em>rip single titles</em> from a video DVD for further "
+"processing like compression. Menu structures are completely ignored."
+"<p>If you intend to copy the plain Video DVD vob files from the DVD (including "
+"decryption) for further processing with another application, please use the "
+"following link to access the Video DVD file structure: <a href=\"videodvd:/\">"
+"videodvd:/</a>"
+"<p>If you intend to make a copy of the entire Video DVD including all menus and "
+"extras it is recommended to use the K3b DVD Copy tool."
+msgstr ""
+
+#: k3bdirview.cpp:290
+#, fuzzy
+msgid "Video DVD ripping"
+msgstr "Рипување на видео CD"
+
+#: k3bdirview.cpp:292
+#, fuzzy
+msgid "Open DVD Copy Dialog"
+msgstr "Го отвора диалогот за копирање на DVD"
+
+#: k3bdirview.cpp:318
 msgid ""
 "Found %1. Do you want K3b to mount the data part or show all the tracks?"
 msgstr ""
 
-#: k3bdirview.cpp:288
+#: k3bdirview.cpp:321
 msgid "Mount CD"
 msgstr ""
 
-#: k3bdirview.cpp:289
+#: k3bdirview.cpp:322
 msgid "Show Video Tracks"
 msgstr ""
 
@@ -2916,54 +2939,54 @@ msgstr ""
 msgid "Could not open file %1"
 msgstr ""
 
-#: k3bmedium.cpp:214
+#: k3bmedium.cpp:218
 msgid "No medium information..."
 msgstr ""
 
-#: k3bmedium.cpp:218
+#: k3bmedium.cpp:222
 msgid "No medium"
 msgstr ""
 
-#: k3bmedium.cpp:222
+#: k3bmedium.cpp:226
 msgid "Empty %1 medium"
 msgstr ""
 
-#: k3bmedium.cpp:234
+#: k3bmedium.cpp:238
 msgid "Mixed CD"
 msgstr ""
 
-#: k3bmedium.cpp:238
+#: k3bmedium.cpp:242
 #, fuzzy
 msgid "%1 (mixed mode CD)"
 msgstr "Нов проект во режим на &Мешано CD"
 
-#: k3bmedium.cpp:244
+#: k3bmedium.cpp:248
 msgid "%1 (appendable data %2)"
 msgstr ""
 
-#: k3bmedium.cpp:246
+#: k3bmedium.cpp:250
 msgid "%1 (full data %2)"
 msgstr ""
 
-#: k3bmedium.cpp:250
+#: k3bmedium.cpp:254
 #, c-format
 msgid "Appendable data %1"
 msgstr ""
 
-#: k3bmedium.cpp:252
+#: k3bmedium.cpp:256
 #, c-format
 msgid "Full data %1"
 msgstr ""
 
-#: k3bmedium.cpp:259
+#: k3bmedium.cpp:263
 msgid "Appendable %1 medium"
 msgstr ""
 
-#: k3bmedium.cpp:261
+#: k3bmedium.cpp:265
 msgid "Full %1 medium"
 msgstr ""
 
-#: k3bmedium.cpp:278
+#: k3bmedium.cpp:282
 #, fuzzy
 msgid ""
 "_n: %1 in %n track\n"
@@ -2973,19 +2996,19 @@ msgstr ""
 "%n траки\n"
 "%n траки"
 
-#: k3bmedium.cpp:281
+#: k3bmedium.cpp:285
 #, c-format
 msgid ""
 "_n:  and %n session\n"
 " and %n sessions"
 msgstr ""
 
-#: k3bmedium.cpp:286
+#: k3bmedium.cpp:290
 #, c-format
 msgid "Free space: %1"
 msgstr ""
 
-#: k3bmedium.cpp:290
+#: k3bmedium.cpp:294
 #, c-format
 msgid "Capacity: %1"
 msgstr ""
