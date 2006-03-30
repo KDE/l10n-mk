@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
-"POT-Creation-Date: 2006-03-29 11:25+0200\n"
+"POT-Creation-Date: 2006-03-30 11:05+0200\n"
 "PO-Revision-Date: 2005-05-18 14:31+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -638,7 +638,7 @@ msgid "<p>Set here the width in pixels used to draw guides dashed-lines."
 msgstr "<p>Тука поставете го горниот лев раб на изборот за исечок."
 
 #: libs/dialogs/imagedlgbase.cpp:217 libs/dialogs/imageguidedlg.cpp:238
-#: libs/widgets/imageplugins/imagepannelwidget.cpp:286
+#: libs/widgets/imageplugins/imagepannelwidget.cpp:288
 #: utilities/imageeditor/tools/imageprint.cpp:112
 #, fuzzy
 msgid "Settings"
@@ -984,7 +984,7 @@ msgstr ""
 msgid "<p>If you enable this option, the preview area will not be separated."
 msgstr ""
 
-#: libs/widgets/imageplugins/imagepannelwidget.cpp:477
+#: libs/widgets/imageplugins/imagepannelwidget.cpp:480
 #, fuzzy
 msgid "Top left: (%1, %2)<br>Bottom right: (%3, %4)"
 msgstr "Долу десно: (%1, %2)"
@@ -1049,7 +1049,7 @@ msgid ""
 "over image area, else the original image."
 msgstr ""
 
-#: libs/widgets/imageplugins/imagewidget.cpp:262
+#: libs/widgets/imageplugins/imagewidget.cpp:264
 #, fuzzy
 msgid "<small>(%1,%2) RGBA:%3,%4,%5,%6</small>"
 msgstr "(%1,%2)<br>RGB:%3,%4,%5"
@@ -1831,8 +1831,8 @@ msgid "Remove Tag"
 msgstr "Отстрани ознака"
 
 #: digikam/albumiconview.cpp:553 imageplugins/imageeffect_ratiocrop.cpp:100
-#: imageplugins/imageeffect_ratiocrop.cpp:186
-#: imageplugins/imageeffect_ratiocrop.cpp:187
+#: imageplugins/imageeffect_ratiocrop.cpp:199
+#: imageplugins/imageeffect_ratiocrop.cpp:200
 msgid "None"
 msgstr "Нема"
 
@@ -3369,88 +3369,101 @@ msgstr "Колекции"
 
 #: imageplugins/imageeffect_ratiocrop.cpp:102
 msgid ""
-"<p>Select here your constrained aspect ratio for cropping. The Golden Ratio "
-"1:1.618. A composition following this rule is considered visually harmonious"
+"<p>Select here your constrained aspect ratio for cropping. Aspect Ratio Crop "
+"tool uses a relative ratio. That means it is the same if you use centimeters or "
+"inches and it doesn't specify the physical size."
+"<p>You can see below a correspondence list of traditional photographic paper "
+"sizes and aspect ratio crop:"
+"<p><b>2:3</b>: 10x15cm, 20x30cm, 30x45cm, 3.5x5\", 4x6\", 8x12\", 12x18\", "
+"16x24\", 20x30\""
+"<p><b>3:4</b>: 6x8cm, 15x20cm, 18x24cm, 30x40cm, 3.75x5\", 4.5x6\", 6x8\", "
+"7.5x10\", 9x12\""
+"<p><b>4:5</b>: 20x25cm, 40x50cm, 8x10\", 16x20\""
+"<p><b>5:7</b>: 15x21cm, 30x42cm, 5x7\""
+"<p><b>7:10</b>: 21x30cm, 42x60cm"
+"<p>The <b>Golden Ratio</b> is 1:1.618. A composition following this rule is "
+"considered visually harmonious but can be unadapted to print on standard "
+"photographic paper."
 msgstr ""
 
-#: imageplugins/imageeffect_ratiocrop.cpp:106
+#: imageplugins/imageeffect_ratiocrop.cpp:119
 msgid "Orientation:"
 msgstr "Ориентација:"
 
-#: imageplugins/imageeffect_ratiocrop.cpp:110
+#: imageplugins/imageeffect_ratiocrop.cpp:123
 msgid "<p>Select here constrained aspect ratio orientation."
 msgstr "<p>Изберете ја фиксната ориентација за пропорциите."
 
-#: imageplugins/imageeffect_ratiocrop.cpp:119
+#: imageplugins/imageeffect_ratiocrop.cpp:132
 msgid "Custom ratio:"
 msgstr "Сопствена пропорција:"
 
-#: imageplugins/imageeffect_ratiocrop.cpp:122
+#: imageplugins/imageeffect_ratiocrop.cpp:135
 msgid "<p>Set here the desired custom aspect numerator value."
 msgstr "<p>Поставете ја најголемата вредност за саканата пропорција."
 
-#: imageplugins/imageeffect_ratiocrop.cpp:126
+#: imageplugins/imageeffect_ratiocrop.cpp:139
 msgid "<p>Set here the desired custom aspect denominator value."
 msgstr "<p>Поставете ја најмалата вредност за саканата пропорција."
 
-#: imageplugins/imageeffect_ratiocrop.cpp:136
-#: imageplugins/imageeffect_ratiocrop.cpp:157
+#: imageplugins/imageeffect_ratiocrop.cpp:149
+#: imageplugins/imageeffect_ratiocrop.cpp:170
 msgid "<p>Set here the top left selection corner position for cropping."
 msgstr "<p>Тука поставете го горниот лев раб на изборот за исечок."
 
-#: imageplugins/imageeffect_ratiocrop.cpp:137
+#: imageplugins/imageeffect_ratiocrop.cpp:150
 msgid "X:"
 msgstr "X:"
 
-#: imageplugins/imageeffect_ratiocrop.cpp:140
+#: imageplugins/imageeffect_ratiocrop.cpp:153
 #: utilities/imageeditor/tools/imageresizedlg.cpp:91
 msgid "Width:"
 msgstr "Ширина:"
 
-#: imageplugins/imageeffect_ratiocrop.cpp:141
+#: imageplugins/imageeffect_ratiocrop.cpp:154
 msgid "<p>Set here the width selection for cropping."
 msgstr "<p>Тука може да се постави ширината за исечокот."
 
-#: imageplugins/imageeffect_ratiocrop.cpp:147
+#: imageplugins/imageeffect_ratiocrop.cpp:160
 #, fuzzy
 msgid "<p>Set width position to center."
 msgstr "<p>Тука може да се постави ширината за исечокот."
 
-#: imageplugins/imageeffect_ratiocrop.cpp:156
+#: imageplugins/imageeffect_ratiocrop.cpp:169
 msgid "Y:"
 msgstr "Y:"
 
-#: imageplugins/imageeffect_ratiocrop.cpp:160
+#: imageplugins/imageeffect_ratiocrop.cpp:173
 #: utilities/imageeditor/tools/imageresizedlg.cpp:97
 msgid "Height:"
 msgstr "Висина:"
 
-#: imageplugins/imageeffect_ratiocrop.cpp:161
+#: imageplugins/imageeffect_ratiocrop.cpp:174
 msgid "<p>Set here the height selection for cropping."
 msgstr "<p>Тука може да се постави висината за исечокот."
 
-#: imageplugins/imageeffect_ratiocrop.cpp:167
+#: imageplugins/imageeffect_ratiocrop.cpp:180
 #, fuzzy
 msgid "<p>Set height position to center."
 msgstr "<p>Тука може да се постави висината за исечокот."
 
-#: imageplugins/imageeffect_ratiocrop.cpp:181
+#: imageplugins/imageeffect_ratiocrop.cpp:194
 msgid "Composition guide:"
 msgstr ""
 
-#: imageplugins/imageeffect_ratiocrop.cpp:183
+#: imageplugins/imageeffect_ratiocrop.cpp:196
 msgid "Rules of Thirds"
 msgstr ""
 
-#: imageplugins/imageeffect_ratiocrop.cpp:184
+#: imageplugins/imageeffect_ratiocrop.cpp:197
 msgid "Harmonious Triangles"
 msgstr ""
 
-#: imageplugins/imageeffect_ratiocrop.cpp:185
+#: imageplugins/imageeffect_ratiocrop.cpp:198
 msgid "Golden Mean"
 msgstr ""
 
-#: imageplugins/imageeffect_ratiocrop.cpp:188
+#: imageplugins/imageeffect_ratiocrop.cpp:201
 #, fuzzy
 msgid ""
 "<p>With this option, you can display guide lines which help you to compose your "
@@ -3459,76 +3472,76 @@ msgstr ""
 "<p>Со оваа можност се прикажуваат линии (за правилото на третина) кое ви помага "
 "да ја компонирате вашата фотографија."
 
-#: imageplugins/imageeffect_ratiocrop.cpp:191
+#: imageplugins/imageeffect_ratiocrop.cpp:204
 #, fuzzy
 msgid "Golden sections"
 msgstr "Колекции"
 
-#: imageplugins/imageeffect_ratiocrop.cpp:192
+#: imageplugins/imageeffect_ratiocrop.cpp:205
 msgid "<p>Enable this option to show golden sections."
 msgstr ""
 
-#: imageplugins/imageeffect_ratiocrop.cpp:194
+#: imageplugins/imageeffect_ratiocrop.cpp:207
 #, fuzzy
 msgid "Golden spiral sections"
 msgstr "Општи поставувања"
 
-#: imageplugins/imageeffect_ratiocrop.cpp:195
+#: imageplugins/imageeffect_ratiocrop.cpp:208
 msgid "<p>Enable this option to show golden spiral sections."
 msgstr ""
 
-#: imageplugins/imageeffect_ratiocrop.cpp:197
+#: imageplugins/imageeffect_ratiocrop.cpp:210
 #, fuzzy
 msgid "Golden spiral"
 msgstr "Општо"
 
-#: imageplugins/imageeffect_ratiocrop.cpp:198
+#: imageplugins/imageeffect_ratiocrop.cpp:211
 msgid "<p>Enable this option to show golden spiral guide."
 msgstr ""
 
-#: imageplugins/imageeffect_ratiocrop.cpp:200
+#: imageplugins/imageeffect_ratiocrop.cpp:213
 #, fuzzy
 msgid "Golden triangles"
 msgstr "Колекции"
 
-#: imageplugins/imageeffect_ratiocrop.cpp:201
+#: imageplugins/imageeffect_ratiocrop.cpp:214
 msgid "<p>Enable this option to show golden triangles."
 msgstr ""
 
-#: imageplugins/imageeffect_ratiocrop.cpp:203
+#: imageplugins/imageeffect_ratiocrop.cpp:216
 #, fuzzy
 msgid "Flip horizontally"
 msgstr "Преврти хоризонтално"
 
-#: imageplugins/imageeffect_ratiocrop.cpp:204
+#: imageplugins/imageeffect_ratiocrop.cpp:217
 msgid "<p>Enable this option to flip horizontally guidelines."
 msgstr ""
 
-#: imageplugins/imageeffect_ratiocrop.cpp:206
+#: imageplugins/imageeffect_ratiocrop.cpp:219
 #, fuzzy
 msgid "Flip vertically"
 msgstr "Преврти вертикално"
 
-#: imageplugins/imageeffect_ratiocrop.cpp:207
+#: imageplugins/imageeffect_ratiocrop.cpp:220
 msgid "<p>Enable this option to flip vertically guidelines."
 msgstr ""
 
-#: imageplugins/imageeffect_ratiocrop.cpp:209
+#: imageplugins/imageeffect_ratiocrop.cpp:222
 #, fuzzy
 msgid "Color and width:"
 msgstr "Бои:"
 
-#: imageplugins/imageeffect_ratiocrop.cpp:212
+#: imageplugins/imageeffect_ratiocrop.cpp:225
 #, fuzzy
 msgid "<p>Set here the color used to draw composition guides."
 msgstr "<p>Тука поставете го горниот лев раб на изборот за исечок."
 
-#: imageplugins/imageeffect_ratiocrop.cpp:213
+#: imageplugins/imageeffect_ratiocrop.cpp:226
 #, fuzzy
 msgid "<p>Set here the width in pixels used to draw composition guides."
 msgstr "<p>Тука поставете го горниот лев раб на изборот за исечок."
 
-#: imageplugins/imageeffect_ratiocrop.cpp:668
+#: imageplugins/imageeffect_ratiocrop.cpp:685
 msgid "Aspect Ratio Crop"
 msgstr "Пропорционален исечок"
 
