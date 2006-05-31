@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: knetworkconf\n"
-"POT-Creation-Date: 2006-01-10 03:15+0100\n"
+"POT-Creation-Date: 2006-05-31 04:02+0200\n"
 "PO-Revision-Date: 2006-05-02 16:44+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -14,24 +14,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.10.2\n"
 
-#: kadddnsserverdlg.ui.h:40
-msgid "You have to type an alias first."
-msgstr "Мора прво да внесете алијас."
-
-#: kadddnsserverdlg.ui.h:40
-msgid "Invalid Text"
-msgstr "Невалиден текст"
-
-#: kadddevicecontainer.cpp:129 kadddnsserverdlg.ui.h:51
+#: kadddevicecontainer.cpp:129 kadddnsserverdlg.ui.h:42
 #: kaddknownhostdlg.ui.h:25
 msgid "The format of the specified IP address is not valid."
 msgstr "Форматот на зададената ИП-адреса е невалиден."
 
 #: kadddevicecontainer.cpp:129 kadddevicecontainer.cpp:132
 #: kadddevicecontainer.cpp:135 kadddevicecontainer.cpp:138
-#: kadddnsserverdlg.ui.h:51 kaddknownhostdlg.ui.h:25 knetworkconf.cpp:589
+#: kadddnsserverdlg.ui.h:42 kaddknownhostdlg.ui.h:25 knetworkconf.cpp:589
 msgid "Invalid IP Address"
 msgstr "Невалидна ИП-адреса"
+
+#: kadddnsserverdlg.ui.h:54
+msgid "You have to type an alias first."
+msgstr "Мора прво да внесете алијас."
+
+#: kadddnsserverdlg.ui.h:54
+msgid "Invalid Text"
+msgstr "Невалиден текст"
 
 #: _translatorinfo.cpp:1
 msgid ""
@@ -93,7 +93,7 @@ msgstr ""
 "Новата конфигурација не е зачувана.\n"
 "Дали сакате да ги примените измените пред да откажете?"
 
-#: knetworkconf.cpp:159
+#: knetworkconf.cpp:159 knetworkconf.cpp:830 knetworkconf.cpp:849
 msgid "New Configuration Not Saved"
 msgstr "Новата конфигурација не е зачувана"
 
@@ -150,33 +150,42 @@ msgstr ""
 msgid "Could Not Change Device State"
 msgstr "Не може да се смени состојбата на уредот"
 
+#: knetworkconf.cpp:829 knetworkconf.cpp:848
+#, fuzzy
+msgid ""
+"The new configuration has not been saved.\n"
+"Apply changes?"
+msgstr ""
+"Новата конфигурација не е зачувана.\n"
+"Дали сакате да ги примените измените пред да откажете?"
+
 #. i18n: file kaddknownhostdlg.ui line 16
-#: knetworkconf.cpp:846 rc.cpp:204
+#: knetworkconf.cpp:866 rc.cpp:204
 #, no-c-format
 msgid "Add New Static Host"
 msgstr "Додавање нов статички сервер"
 
-#: knetworkconf.cpp:879
+#: knetworkconf.cpp:899
 msgid "Edit Static Host"
 msgstr "Урадување статички сервер"
 
-#: knetworkconf.cpp:1014
+#: knetworkconf.cpp:1034
 msgid "Could not load the selected Network Profile."
 msgstr "Не можам да го вчитам избраниот мрежен профил."
 
-#: knetworkconf.cpp:1015
+#: knetworkconf.cpp:1035
 msgid "Error Reading Profile"
 msgstr "Грешка при читање на профилот"
 
-#: knetworkconf.cpp:1038
+#: knetworkconf.cpp:1058
 msgid "Create New Network Profile"
 msgstr "Креирање нов мрежен профил"
 
-#: knetworkconf.cpp:1039
+#: knetworkconf.cpp:1059
 msgid "Name of new profile:"
 msgstr "Име на новиот профил:"
 
-#: knetworkconf.cpp:1068
+#: knetworkconf.cpp:1088
 msgid "There is already another profile with that name."
 msgstr "Веќе постои профил со тоа име."
 
@@ -899,7 +908,7 @@ msgid "&Delete Selected"
 msgstr "&Избриши избран"
 
 #. i18n: file kreloadnetworkdlg.ui line 28
-#: knetworkconfigparser.cpp:284 rc.cpp:385
+#: knetworkconfigparser.cpp:303 rc.cpp:385
 #, no-c-format
 msgid "Reloading Network"
 msgstr "Превчитување на мрежата"
@@ -1004,7 +1013,7 @@ msgid "Could Not Find Network Configuration Backend Script"
 msgstr "Не можам да ја најдам заднинската скрипта за конфигурирање на мрежата"
 
 #: knetworkconfigparser.cpp:65 knetworkconfigparser.cpp:95
-#: knetworkconfigparser.cpp:301 knetworkconfigparser.cpp:999
+#: knetworkconfigparser.cpp:320 knetworkconfigparser.cpp:1016
 msgid ""
 "Could not execute backend script for the network configuration detection. "
 "Something is wrong with your installation."
@@ -1013,11 +1022,11 @@ msgstr ""
 "конфигурација. Нешто не е во ред со вашата инсталација."
 
 #: knetworkconfigparser.cpp:66 knetworkconfigparser.cpp:96
-#: knetworkconfigparser.cpp:302 knetworkconfigparser.cpp:1000
+#: knetworkconfigparser.cpp:321 knetworkconfigparser.cpp:1017
 msgid "Could Not Launch Network Configuration Backend Script"
 msgstr "Не можам да ја вклучам заднинската скрипта за мрежна конфигурација"
 
-#: knetworkconfigparser.cpp:113 knetworkconfigparser.cpp:820
+#: knetworkconfigparser.cpp:113 knetworkconfigparser.cpp:837
 msgid "Could not parse the XML output from the network configuration backend."
 msgstr ""
 "Не можам да го анализирам XML-излезот од заднинската мрежна конфигурација."
@@ -1034,23 +1043,23 @@ msgstr "Не можам да ја отворам датотеката /proc/net/
 msgid "Could Not Open File"
 msgstr "Не можам да ја отворам датотеката"
 
-#: knetworkconfigparser.cpp:285
+#: knetworkconfigparser.cpp:304
 msgid "%1Please wait while saving the network settings...%2"
 msgstr "%1Почекајте додека ги зачувувам мрежните поставувања...%2"
 
-#: knetworkconfigparser.cpp:739
+#: knetworkconfigparser.cpp:762
 msgid "Ethernet Network Device"
 msgstr "Жичен мрежен уред"
 
-#: knetworkconfigparser.cpp:741
+#: knetworkconfigparser.cpp:764
 msgid "Wireless Network Device"
 msgstr "Безжичен мрежен уред"
 
-#: knetworkconfigparser.cpp:821
+#: knetworkconfigparser.cpp:838
 msgid "Error Loading The Network Configuration"
 msgstr "Грешка при вчитување на мрежната конфигурација"
 
-#: knetworkconfigparser.cpp:1013
+#: knetworkconfigparser.cpp:1030
 msgid ""
 "Could not parse the list of supported platforms from the network configuration "
 "backend."
@@ -1058,7 +1067,7 @@ msgstr ""
 "Не можам да го анализирам списокот на поддржани платформи од заднинската мрежна "
 "конфигурација."
 
-#: knetworkconfigparser.cpp:1014
+#: knetworkconfigparser.cpp:1031
 msgid "Error Obtaining Supported Platforms List"
 msgstr "Грешка при земање на списокот за поддржани платформи"
 
