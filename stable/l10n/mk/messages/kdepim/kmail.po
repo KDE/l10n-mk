@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
-"POT-Creation-Date: 2006-06-17 04:06+0200\n"
+"POT-Creation-Date: 2006-06-18 04:03+0200\n"
 "PO-Revision-Date: 2006-05-07 17:41+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -514,7 +514,7 @@ msgid "<none>"
 msgstr "<нема>"
 
 #: accountdialog.cpp:1377 accountdialog.cpp:1384 kmfoldercachedimap.cpp:187
-#: kmfoldercachedimap.cpp:1755 kmfolderimap.cpp:188 kmfolderimap.cpp:880
+#: kmfoldercachedimap.cpp:1755 kmfolderimap.cpp:188 kmfolderimap.cpp:877
 #: kmkernel.cpp:1312 subscriptiondialog.cpp:166
 msgid "inbox"
 msgstr "вл. сандаче"
@@ -3580,7 +3580,7 @@ msgstr ""
 msgid "retrieving folders"
 msgstr "преземам папки"
 
-#: imapjob.cpp:155 kmfolderimap.cpp:476
+#: imapjob.cpp:155 kmfolderimap.cpp:474
 msgid "Uploading message data"
 msgstr ""
 
@@ -4098,15 +4098,16 @@ msgid ""
 msgstr ""
 "Не успеав да ја додадам пораката:\n"
 
-#: kmacctimap.cpp:291
-msgid "Checking account: "
+#: kmacctimap.cpp:290
+#, fuzzy, c-format
+msgid "Checking account: %1"
 msgstr "Ја проверувам скетката:"
 
-#: kmacctimap.cpp:389 kmfolderimap.cpp:831
+#: kmacctimap.cpp:388 kmfolderimap.cpp:828
 msgid " completed"
 msgstr " завршено"
 
-#: kmacctimap.cpp:598 kmheaders.cpp:1230
+#: kmacctimap.cpp:597 kmheaders.cpp:1230
 msgid "Unable to process messages: "
 msgstr "Не можам да ги обработам пораките: "
 
@@ -6146,48 +6147,59 @@ msgstr "<qt>Не можам да влезам во папката <b>%1</b>.</qt
 msgid "<qt>Folder <b>%1</b> is unreadable.</qt>"
 msgstr "<qt>Папката <b>%1</b> не е читлива.</qt>"
 
-#: kmfolderimap.cpp:249
+#: kmfolderimap.cpp:231
+#, fuzzy
+msgid "Removing folder"
+msgstr "Ја преименувам папката"
+
+#: kmfolderimap.cpp:232 searchjob.cpp:257
+#, c-format
+msgid "URL: %1"
+msgstr ""
+
+#: kmfolderimap.cpp:247
 msgid "Error while removing a folder."
 msgstr "Грешка при отстранувањето на папка."
 
-#: kmfolderimap.cpp:478
-msgid "Destination folder: "
+#: kmfolderimap.cpp:475
+#, fuzzy, c-format
+msgid "Destination folder: %1"
 msgstr "Одредишна папка: "
 
-#: kmfolderimap.cpp:1041
+#: kmfolderimap.cpp:1038
 msgid "checking"
 msgstr "проверувам"
 
-#: kmfolderimap.cpp:1090
+#: kmfolderimap.cpp:1087
 msgid "Error while querying the server status."
 msgstr "Грешка при прашувањето за статусот на серверот."
 
-#: kmfolderimap.cpp:1200
+#: kmfolderimap.cpp:1197
 msgid "Retrieving message status"
 msgstr "Преземам статус на порака"
 
-#: kmfolderimap.cpp:1215 kmfolderimap.cpp:1305
+#: kmfolderimap.cpp:1212 kmfolderimap.cpp:1302
 msgid "Retrieving messages"
 msgstr "Ги преземам пораките"
 
-#: kmfolderimap.cpp:1240
+#: kmfolderimap.cpp:1237
 #, c-format
 msgid "Error while listing the contents of the folder %1."
 msgstr "Грешка при листањето на содржината на папката %1."
 
-#: kmfolderimap.cpp:1597
+#: kmfolderimap.cpp:1594
 msgid "Error while retrieving messages."
 msgstr "Грешка при преземањето на пораките."
 
-#: kmfolderimap.cpp:1661
+#: kmfolderimap.cpp:1658
 msgid "Error while creating a folder."
 msgstr "Грешка при создавањето на папка."
 
-#: kmfolderimap.cpp:1985
+#: kmfolderimap.cpp:1982
 msgid "updating message counts"
 msgstr "го ажурирам бројот на пораки"
 
-#: kmfolderimap.cpp:2009
+#: kmfolderimap.cpp:2006
 msgid "Error while getting folder information."
 msgstr "Грешка при земањето на информации за папката."
 
@@ -11695,7 +11707,7 @@ msgstr ""
 msgid "Downloading emails from IMAP server"
 msgstr ""
 
-#: searchjob.cpp:339
+#: searchjob.cpp:338
 msgid "Error while searching."
 msgstr "Грешка при пребарувањето"
 
