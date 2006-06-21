@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
-"POT-Creation-Date: 2006-06-20 04:03+0200\n"
+"POT-Creation-Date: 2006-06-21 04:05+0200\n"
 "PO-Revision-Date: 2005-09-04 16:14+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -30,20 +30,20 @@ msgid ""
 "Your emails"
 msgstr "bobibobi@freemail.com.mk"
 
-#: alarmcalendar.cpp:108
+#: alarmcalendar.cpp:110
 msgid "%1: file name not permitted: %2"
 msgstr "%1: името на датотека не е дозволено: %2"
 
-#: alarmcalendar.cpp:129
+#: alarmcalendar.cpp:131
 msgid "%1, %2: file names must be different"
 msgstr "%1, %2: имињата на датотеките треба да се различни"
 
-#: alarmcalendar.cpp:136
+#: alarmcalendar.cpp:138
 #, c-format
 msgid "Invalid calendar file name: %1"
 msgstr "Невалидно име на календар: %1"
 
-#: alarmcalendar.cpp:317
+#: alarmcalendar.cpp:319
 #, c-format
 msgid ""
 "Cannot open calendar:\n"
@@ -52,7 +52,7 @@ msgstr ""
 "Не можам да го отворам календарот:\n"
 "%1"
 
-#: alarmcalendar.cpp:334
+#: alarmcalendar.cpp:336
 msgid ""
 "Error loading calendar:\n"
 "%1\n"
@@ -64,7 +64,7 @@ msgstr ""
 "\n"
 "Поправете ја или избришете ја датотеката."
 
-#: alarmcalendar.cpp:379
+#: alarmcalendar.cpp:381
 msgid ""
 "Failed to save calendar to\n"
 "'%1'"
@@ -72,13 +72,34 @@ msgstr ""
 "Не успеав да го зачувам календарот во\n"
 "„%1“"
 
-#: alarmcalendar.cpp:388
+#: alarmcalendar.cpp:390
 msgid ""
 "Cannot upload calendar to\n"
 "'%1'"
 msgstr ""
 "Не можам да го подигнам календарот на\n"
 "„%1“"
+
+#: alarmcalendar.cpp:444
+#, fuzzy
+msgid "Calendar Files"
+msgstr "URL на календарот"
+
+#: alarmcalendar.cpp:466 alarmcalendar.cpp:488
+#, fuzzy
+msgid "Could not load calendar '%1'."
+msgstr ""
+"Не можам да го подигнам календарот на\n"
+"„%1“"
+
+#: alarmcalendar.cpp:475
+#, fuzzy, c-format
+msgid ""
+"Cannot download calendar:\n"
+"%1"
+msgstr ""
+"Не можам да го отворам календарот:\n"
+"%1"
 
 #: alarmevent.cpp:1981
 msgid ""
@@ -1635,39 +1656,44 @@ msgstr "Потврда за напуштање од системската ле�
 
 #: mainwindow.cpp:321
 #, fuzzy
-msgid "Import &Birthdays..."
+msgid "Import &Alarms..."
 msgstr "Внеси vCard-картичка..."
 
 #: mainwindow.cpp:322
 #, fuzzy
+msgid "Import &Birthdays..."
+msgstr "Внеси vCard-картичка..."
+
+#: mainwindow.cpp:323
+#, fuzzy
 msgid "&Refresh Alarms"
 msgstr "&Освежи ја листата"
 
-#: mainwindow.cpp:550
+#: mainwindow.cpp:551
 #, fuzzy
 msgid "New Alarm"
 msgstr "Ново име"
 
-#: mainwindow.cpp:620 messagewin.cpp:1426
+#: mainwindow.cpp:621 messagewin.cpp:1426
 #, fuzzy
 msgid "Edit Alarm"
 msgstr "Уредете прилог"
 
-#: mainwindow.cpp:654
+#: mainwindow.cpp:655
 #, fuzzy
 msgid "Expired Alarm"
 msgstr "Истечено"
 
-#: mainwindow.cpp:654
+#: mainwindow.cpp:655
 msgid "read-only"
 msgstr "само за читање"
 
-#: mainwindow.cpp:655
+#: mainwindow.cpp:656
 #, fuzzy
 msgid "View Alarm"
 msgstr "Име на преглед:"
 
-#: mainwindow.cpp:672
+#: mainwindow.cpp:673
 #, fuzzy, c-format
 msgid ""
 "_n: Do you really want to delete the selected alarm?\n"
@@ -1677,7 +1703,7 @@ msgstr ""
 "Дали навистина сакате да ги избришете овие %n избрани датотеки?\n"
 "Дали навистина сакате да ги избришете овие %n избрани датотеки?"
 
-#: mainwindow.cpp:673
+#: mainwindow.cpp:674
 #, fuzzy
 msgid ""
 "_n: Delete Alarm\n"
@@ -1687,19 +1713,19 @@ msgstr ""
 "Избриши %n контакти\n"
 "Избриши %n контакти"
 
-#: mainwindow.cpp:943
+#: mainwindow.cpp:954
 #, fuzzy
 msgid ""
 "_: Undo [action]: message\n"
 "%1 %2: %3"
 msgstr "Ја испраќам пораката %1 од %2: %3"
 
-#: mainwindow.cpp:1303
+#: mainwindow.cpp:1314
 #, fuzzy
 msgid "Ena&ble"
 msgstr "Овозможи"
 
-#: mainwindow.cpp:1303
+#: mainwindow.cpp:1314
 #, fuzzy
 msgid "Disa&ble"
 msgstr "Оневозможи"
@@ -2461,7 +2487,7 @@ msgid ""
 "Daemon is monitoring alarms."
 msgstr ""
 
-#. i18n: file kalarmui.rc line 31
+#. i18n: file kalarmui.rc line 32
 #: rc.cpp:9 rc.cpp:21
 #, no-c-format
 msgid "&Actions"
