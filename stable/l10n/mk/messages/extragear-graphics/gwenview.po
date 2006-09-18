@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
-"POT-Creation-Date: 2006-05-16 04:04+0200\n"
+"POT-Creation-Date: 2006-09-18 02:45+0200\n"
 "PO-Revision-Date: 2006-05-03 15:23+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -14,35 +14,61 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.10.2\n"
 
-#: app/main.cpp:30
+#: app/dirviewcontroller.cpp:95 app/mainwindow.cpp:483
+msgid "New Folder..."
+msgstr "Нова папка..."
+
+#: app/dirviewcontroller.cpp:97
+msgid "Rename..."
+msgstr "Преименувај..."
+
+#. i18n: file ./app/configslideshowpage.ui line 43
+#: app/main.cpp:37 rc.cpp:172
+#, no-c-format
 msgid "Start in fullscreen mode"
 msgstr "Почнува во режим преку цел екран"
 
-#: app/main.cpp:31
+#: app/main.cpp:38
+msgid "Filter by file type"
+msgstr ""
+
+#: app/main.cpp:39
+msgid "Filter by file pattern (*.jpg, 01*...)"
+msgstr ""
+
+#: app/main.cpp:40
+msgid "Only show files newer or equal to <date>"
+msgstr ""
+
+#: app/main.cpp:41
+msgid "Only show files older or equal to <date>"
+msgstr ""
+
+#: app/main.cpp:42
 msgid "A starting file or folder"
 msgstr "Почетна датотека или папка"
 
-#: app/main.cpp:44
+#: app/main.cpp:108
 msgid "Gwenview"
 msgstr "Gwenview"
 
-#: app/main.cpp:45
+#: app/main.cpp:109
 msgid "An image viewer for KDE"
 msgstr "Прегледувач на слики за KDE"
 
-#: app/main.cpp:47
+#: app/main.cpp:111
 msgid "Main developer"
 msgstr "Главен развивач"
 
-#: app/main.cpp:48
+#: app/main.cpp:112
 msgid "Developer"
 msgstr "Развивач"
 
-#: app/main.cpp:50
+#: app/main.cpp:114
 msgid "Fast JPEG thumbnail generation (v0.13.0)"
 msgstr "Брза генерација на JPEG сликички (v0.13.0)"
 
-#: app/main.cpp:51
+#: app/main.cpp:115
 msgid ""
 "Address bar (v0.16.0)\n"
 "History support (v1.0.0)"
@@ -50,11 +76,11 @@ msgstr ""
 "Адресна лента (v0.16.0)\n"
 "Поддршка за историја (v1.0.0)"
 
-#: app/main.cpp:52
+#: app/main.cpp:116
 msgid "File operation patch (v0.9.2)"
 msgstr "Закрпа за работа со датотеки (v0.9.2)"
 
-#: app/main.cpp:53
+#: app/main.cpp:117
 msgid ""
 "Fixed crash when trying to generate a thumbnail for a broken JPEG file "
 "(v0.16.0)"
@@ -62,23 +88,23 @@ msgstr ""
 "Поправена бубачка при обид за генерирање сликичка од расипана JPEG-датотека "
 "(v0.16.0)"
 
-#: app/main.cpp:54
+#: app/main.cpp:118
 msgid "Fixed compilation on KDE 3.0 (v0.16.1)"
 msgstr "Поправено компилирањето за KDE 3.0 (v0.16.1)"
 
-#: app/main.cpp:55
+#: app/main.cpp:119
 msgid "First RPM spec file"
 msgstr "Прва RPM spec-датотека"
 
-#: app/main.cpp:56
+#: app/main.cpp:120
 msgid "Toolbar layout patch for RTL languages (v0.16.0)"
 msgstr "Закрпа за распоредот на алатниците за RTL-јазици (v0.16.0)"
 
-#: app/main.cpp:57
+#: app/main.cpp:121
 msgid "Printing support (v1.0.0)"
 msgstr "Поддршка за печатење (v1.0.0)"
 
-#: app/main.cpp:58
+#: app/main.cpp:122
 msgid ""
 "File info view (v1.0.0)\n"
 "Patch to toggle auto-zoom on click (v1.0.0)"
@@ -86,11 +112,11 @@ msgstr ""
 "Преглед за инфо. на датотеките (v1.0.0)\n"
 "Закрпа за менување на автом. зумирање на кликнување (v1.0.0)"
 
-#: app/main.cpp:59
+#: app/main.cpp:123
 msgid "Configurable mouse wheel behavior (v1.1.1)"
 msgstr "Конфигурабилно однесување на тркалцето на глушецот (v1.1.1)"
 
-#: app/main.cpp:60
+#: app/main.cpp:124
 msgid ""
 "Option to prevent Gwenview from automatically loading the first image of a "
 "folder (v0.15.0)"
@@ -98,7 +124,7 @@ msgstr ""
 "Опција да се оневозможи Gwenview автоматски да ја вчита првата слика од папка "
 "(v0.15.0)"
 
-#: app/main.cpp:61
+#: app/main.cpp:125
 msgid ""
 "Fixed thumbnail generation to share the thumbnail folder of Konqueror v3 "
 "(v0.15.0)"
@@ -106,134 +132,151 @@ msgstr ""
 "Поправено генерирањето на сликички за да се сподели папката со сликички на "
 "Konqueror v3 (v0.15.0)"
 
-#: app/main.cpp:62
+#: app/main.cpp:126
 msgid "Patch for mouse navigation (v0.7.0)"
 msgstr "Закрпа за навигација со глушецот (v0.7.0)"
 
-#: app/main.cpp:63
+#: app/main.cpp:127
 msgid "Integration in Konqueror folder context menu"
 msgstr "Интеграција во контекстното мени за папки на Konqueror"
 
+#: app/bookmarkdialog.cpp:69
+msgid "Add/Edit Bookmark Folder"
+msgstr "Додавање/уредување папка со обележувачи"
+
+#: app/bookmarkdialog.cpp:72
+msgid "Add/Edit Bookmark"
+msgstr "Додавање/уредување обележувач"
+
 #. i18n: file ./app/configimagelistpage.ui line 16
-#: app/configdialog.cpp:115 rc.cpp:107
+#: app/configdialog.cpp:124 rc.cpp:124
 #, no-c-format
 msgid "Configure Image List"
 msgstr "Конфигурација на листата со слики"
 
-#: app/configdialog.cpp:115
+#: app/configdialog.cpp:124
 msgid "Image List"
 msgstr "Листа со слики"
 
 #. i18n: file ./app/configimageviewpage.ui line 16
-#: app/configdialog.cpp:118 rc.cpp:61
+#: app/configdialog.cpp:128 rc.cpp:78
 #, no-c-format
 msgid "Configure Image View"
 msgstr "Конфигурација на прегледувањето слики"
 
-#: app/configdialog.cpp:118
+#: app/configdialog.cpp:128
 msgid "Image View"
 msgstr "Преглед на слики"
 
 #. i18n: file ./app/configfullscreenpage.ui line 16
-#: app/configdialog.cpp:121 rc.cpp:3
+#: app/configdialog.cpp:132 rc.cpp:16
 #, no-c-format
 msgid "Configure Full Screen Mode"
 msgstr "Конфигурација на режимот преку цел екран"
 
-#: app/configdialog.cpp:121
+#: app/configdialog.cpp:132
 msgid "Full Screen"
 msgstr "Цел екран"
 
 #. i18n: file ./app/configfileoperationspage.ui line 16
-#: app/configdialog.cpp:124 rc.cpp:166
+#: app/configdialog.cpp:136 rc.cpp:186
 #, no-c-format
 msgid "Configure File Operations"
 msgstr "Конфигурација на операциите со датотеки"
 
-#: app/configdialog.cpp:124
+#: app/configdialog.cpp:136
 msgid "File Operations"
 msgstr ""
 "Операции со\n"
 "датотеки"
 
-#: app/configdialog.cpp:129
+#: app/configdialog.cpp:140
+#, fuzzy
+msgid "SlideShow"
+msgstr "Слајд-шоу"
+
+#: app/configdialog.cpp:147
 msgid "Configure KIPI Plugins"
 msgstr "Конфигурација на KIPI-приклучоците"
 
-#: app/configdialog.cpp:129
+#: app/configdialog.cpp:147
 msgid "KIPI Plugins"
 msgstr ""
 "KIPI\n"
 "приклучоци"
 
 #. i18n: file ./app/configmiscpage.ui line 16
-#: app/configdialog.cpp:133 rc.cpp:42
+#: app/configdialog.cpp:154 rc.cpp:49
 #, no-c-format
 msgid "Miscellaneous Settings"
 msgstr "Разни поставувања"
 
-#: app/configdialog.cpp:133
+#: app/configdialog.cpp:154
 msgid "Misc"
 msgstr "Разно"
 
-#: app/configdialog.cpp:260
+#: app/configdialog.cpp:250
 #, c-format
 msgid "Cache size is %1"
 msgstr "Големината на кешот е %1"
 
-#: app/configdialog.cpp:268
+#: app/configdialog.cpp:257
+msgid "/path/to/some/image.jpg"
+msgstr ""
+
+#: app/configdialog.cpp:260
+#, fuzzy
+msgid "A comment"
+msgstr "(Без коментар)"
+
+#: app/configdialog.cpp:274
 msgid "Cache is already empty."
 msgstr "Кешот е веќе празен."
 
-#: app/configdialog.cpp:273
+#: app/configdialog.cpp:279
+#, fuzzy
 msgid ""
-"Are you sure you want to empty the thumbnail cache? This will remove the folder "
+"Are you sure you want to empty the thumbnail cache? This will delete the folder "
 "<b>%1</b>."
 msgstr ""
 "Дали навистина сакате да го испразните кешот со сликички? Ова ќе ја отстрани "
 "папката <b>%1</b>."
 
-#: app/configdialog.cpp:281 app/configdialog.cpp:291
+#: app/configdialog.cpp:289 app/configdialog.cpp:299
 msgid "Cache emptied."
 msgstr "Кешот е испразнет."
 
-#: app/branchpropertiesdialog.cpp:70
-msgid "Add/Edit Bookmark Folder"
-msgstr "Додавање/уредување папка со обележувачи"
+#: app/kipiinterface.cpp:165
+msgid "%1 (Selected Images)"
+msgstr "%1 (избрани слики)"
 
-#: app/branchpropertiesdialog.cpp:73
-msgid "Add/Edit Bookmark"
-msgstr "Додавање/уредување обележувач"
-
-#: app/branchpropertiesdialog.cpp:76
-msgid "Add/Edit Branch"
-msgstr "Додавање/уредување гранка"
-
-#: app/bookmarkviewcontroller.cpp:162
+#: app/bookmarkviewcontroller.cpp:209
 msgid ""
 "_: Add a bookmark (keep it short)\n"
 "Add"
 msgstr "Додај"
 
-#: app/bookmarkviewcontroller.cpp:165
+#: app/bookmarkviewcontroller.cpp:212
 msgid ""
 "_: Remove a bookmark (keep it short)\n"
 "Remove"
 msgstr "Отстрани"
 
-#: app/bookmarkviewcontroller.cpp:202
-msgid "Add a Bookmark..."
+#: app/bookmarkviewcontroller.cpp:296
+#, fuzzy
+msgid "Add Bookmark..."
 msgstr "Додај обележувач..."
 
-#: app/bookmarkviewcontroller.cpp:204
-msgid "Add a Bookmark Folder..."
+#: app/bookmarkviewcontroller.cpp:298
+#, fuzzy
+msgid "Add Bookmark Folder..."
 msgstr "Додај папка со обележувачи..."
 
-#: app/bookmarkviewcontroller.cpp:209
+#: app/bookmarkviewcontroller.cpp:303
 msgid "Edit..."
 msgstr "Уреди..."
 
-#: app/bookmarkviewcontroller.cpp:308
+#: app/bookmarkviewcontroller.cpp:394
 msgid ""
 "Are you sure you want to delete the bookmark folder <b>%1</b>?"
 "<br>This will delete the folder and all the bookmarks in it."
@@ -241,15 +284,15 @@ msgstr ""
 "Дали навистина сакате да ја избришете папката со обележувачи <b>%1</b>?"
 "<br>Ова ќе ја избрише папката и сите обележувачи што се наоѓаат во неа."
 
-#: app/bookmarkviewcontroller.cpp:310
+#: app/bookmarkviewcontroller.cpp:396
 msgid "Delete Bookmark &Folder"
 msgstr "Избриши &папка со обележувачи"
 
-#: app/bookmarkviewcontroller.cpp:312
+#: app/bookmarkviewcontroller.cpp:398
 msgid "Are you sure you want to delete the bookmark <b>%1</b>?"
 msgstr "Дали навистина сакате да го избришете обележувачот <b>%1</b>?"
 
-#: app/bookmarkviewcontroller.cpp:314
+#: app/bookmarkviewcontroller.cpp:400
 msgid "Delete &Bookmark"
 msgstr "Избриши &обележувач"
 
@@ -269,101 +312,42 @@ msgstr "Пишувајте тука за да додадете коментар 
 msgid "No comment available."
 msgstr "Нема достапен коментар."
 
-#: app/dirview.cpp:93 app/dirview.cpp:101 gvcore/fileviewstack.cpp:599
-msgid "New Folder..."
-msgstr "Нова папка..."
+#: app/mainwindow.cpp:478 gvcore/imageviewcontroller.cpp:491
+msgid "External Tools"
+msgstr "Надворешни алатки"
 
-#: app/dirview.cpp:95
-msgid "Rename..."
-msgstr "Преименувај..."
-
-#: app/dirview.cpp:104
-msgid "New Branch..."
-msgstr "Нова гранка..."
-
-#: app/dirview.cpp:105
-msgid "Delete Branch"
-msgstr "Избриши гранка"
-
-#: app/dirview.cpp:381
-msgid "Home Folder"
-msgstr "Домашна папка"
-
-#: app/dirview.cpp:382
-msgid "Root Folder"
-msgstr "Коренова папка"
-
-#: app/dirview.cpp:483 gvcore/fileviewstack.cpp:1217
-msgid "Creating Folder"
-msgstr "Креирање папка"
-
-#: app/dirview.cpp:484 gvcore/fileviewstack.cpp:1218
-msgid "Enter the name of the new folder:"
-msgstr "Внесете го името на новата папка:"
-
-#: app/dirview.cpp:513
-msgid "Renaming Folder"
-msgstr "Преименување папка"
-
-#: app/dirview.cpp:514
-msgid "Rename this folder to:"
-msgstr "Преименувајте ја папката во:"
-
-#: app/dirview.cpp:542
-msgid "Are you sure you want to delete the folder <b>%1</b>?"
-msgstr "Дали навистина сакате да ја избришете папката <b>%1</b>?"
-
-#: app/dirview.cpp:543
-msgid "Delete Folder"
-msgstr "Бришење папка"
-
-#: app/dirview.cpp:547 gvcore/fileopobject.cpp:225 gvcore/fileopobject.cpp:236
-msgid "Delete item(s)"
-msgstr "Избриши предмети"
-
-#: app/dirview.cpp:583
+#: app/mainwindow.cpp:758
 msgid ""
-"Do you really want to remove\n"
-" <b>'%1'</b>?"
+"You are about to revert the window setup to factory defaults, are you sure?"
 msgstr ""
-"Дали навистина сакате да го отстраните\n"
-" <b>„%1“</b>?"
 
-#: app/dirview.cpp:589
-msgid ""
-"You have removed all folders. The list will now rollback to the default."
+#: app/mainwindow.cpp:760 app/mainwindow.cpp:993
+msgid "Reset"
+msgstr "Ресетирај"
+
+#: app/mainwindow.cpp:796
+msgid "%1/%2 - "
 msgstr ""
-"Ги отстранивте сите папки. Листата сега ќе се врати на стандардните вредности."
 
-#: app/dirview.cpp:631
-msgid "An entry already exists with the title \"%1\"."
-msgstr "Веќе постои елемент со наслов „%1“."
-
-#: app/dirview.cpp:642
-msgid "An entry already exists with the URL \"%1\"."
-msgstr "Веќе постои елемент со URL „%1“."
-
-#: app/mainwindow.cpp:750
-msgid "No Images"
+#: app/mainwindow.cpp:798
+#, fuzzy
+msgid "No images"
 msgstr "Нема слики"
 
-#: app/mainwindow.cpp:752
-msgid "%1/%2 - %3 %4x%5 @ %6%"
-msgstr "%1/%2 - %3 %4x%5, на %6%"
-
-#: app/mainwindow.cpp:825
+#: app/mainwindow.cpp:877
 msgid "Image"
 msgstr "Слика"
 
-#: app/mainwindow.cpp:832
+#: app/mainwindow.cpp:884 app/mainwindow.cpp:889
 msgid "Folders"
 msgstr "Папки"
 
-#: app/mainwindow.cpp:854
-msgid "File Info"
-msgstr "Инфо. за датотеката"
+#: app/mainwindow.cpp:903
+#, fuzzy
+msgid "Image Comment"
+msgstr "Испечати го коментарот за сликата"
 
-#: app/mainwindow.cpp:880
+#: app/mainwindow.cpp:927
 msgid ""
 "<qt><b>Configuration update</b>"
 "<br>Due to some changes in the dock behavior, your old dock configuration has "
@@ -373,95 +357,98 @@ msgstr ""
 "<br>Поради некои промени во однесувањето на вкотвувањето, вашата стара "
 "конфигурација е отфрлена. Поставете го вкотвувањето повторно.</qt>"
 
-#: app/mainwindow.cpp:913
+#: app/mainwindow.cpp:955
 msgid "Browse"
 msgstr "Разгледај"
 
-#: app/mainwindow.cpp:922 gvcore/fileviewstack.cpp:605
-#: gvcore/imageview.cpp:1399
+#: app/mainwindow.cpp:958
+#, fuzzy
+msgid "View Image"
+msgstr "&Следна слика"
+
+#: app/mainwindow.cpp:966
 msgid "&Rename..."
 msgstr "П&реименувај..."
 
-#: app/mainwindow.cpp:923 gvcore/fileviewstack.cpp:611
-#: gvcore/imageview.cpp:1402
+#: app/mainwindow.cpp:967
 msgid "&Copy To..."
 msgstr "&Копирај во..."
 
-#: app/mainwindow.cpp:924 gvcore/fileviewstack.cpp:614
-#: gvcore/imageview.cpp:1405
+#: app/mainwindow.cpp:968
 msgid "&Move To..."
 msgstr "Пре&мести во..."
 
-#: app/mainwindow.cpp:930
+#: app/mainwindow.cpp:969
+#, fuzzy
+msgid "&Link To..."
+msgstr "Пре&мести во..."
+
+#: app/mainwindow.cpp:975
 msgid "Rotate &Left"
 msgstr "Ротирај &лево"
 
-#: app/mainwindow.cpp:931 gvdirpart/gvdirpart.cpp:128
-#: gvimagepart/gvimagepart.cpp:109
+#: app/mainwindow.cpp:976 gvdirpart/gvdirpart.cpp:91
+#: gvimagepart/gvimagepart.cpp:103
 msgid "Rotate &Right"
 msgstr "Ротирај &десно"
 
-#: app/mainwindow.cpp:932
+#: app/mainwindow.cpp:977
 msgid "&Mirror"
 msgstr "&Огледално"
 
-#: app/mainwindow.cpp:933
+#: app/mainwindow.cpp:978
 msgid "&Flip"
 msgstr "Пре&врти"
 
-#: app/mainwindow.cpp:940 gvdirpart/gvdirpart.cpp:143
-msgid "Slide Show..."
-msgstr "Слајд-шоу..."
+#: app/mainwindow.cpp:985
+msgid "Slide Show"
+msgstr "Слајд-шоу"
 
-#: app/mainwindow.cpp:943
+#: app/mainwindow.cpp:989
 msgid "Up"
 msgstr "Нагоре"
 
-#: app/mainwindow.cpp:944
+#: app/mainwindow.cpp:990
 msgid "Home"
 msgstr "Дома"
 
-#: app/mainwindow.cpp:947
-msgid "Reset"
-msgstr "Ресетирај"
-
-#: app/mainwindow.cpp:954 gvcore/externaltoolcontext.cpp:74
+#: app/mainwindow.cpp:1000 gvcore/externaltoolcontext.cpp:74
 msgid "Configure External Tools..."
 msgstr "Конфигурирај надворешни алатки..."
 
-#: app/mainwindow.cpp:1022
+#: app/mainwindow.cpp:1085
 #, c-format
 msgid "Hide %1"
 msgstr "Скриј %1"
 
-#: app/mainwindow.cpp:1024
+#: app/mainwindow.cpp:1087
 #, c-format
 msgid "Show %1"
 msgstr "Прикажи %1"
 
-#: app/mainwindow.cpp:1134
+#: app/mainwindow.cpp:1216
 msgid "Location Bar"
 msgstr "Локациска лента"
 
-#: app/mainwindow.cpp:1140
+#: app/mainwindow.cpp:1222
 msgid "Clear Location Bar"
 msgstr "Исчисти локациска лента"
 
-#: app/mainwindow.cpp:1148
+#: app/mainwindow.cpp:1227
 msgid "L&ocation:"
 msgstr "Лок&ација:"
 
-#: app/mainwindow.cpp:1149
-msgid "L&ocation: "
-msgstr "Лок&ација: "
-
-#: app/mainwindow.cpp:1154
+#: app/mainwindow.cpp:1232
 msgid "Go"
 msgstr "Оди"
 
-#: app/mainwindow.cpp:1240
+#: app/mainwindow.cpp:1310
 msgid "No Plugin"
 msgstr "Нема приклучок"
+
+#: app/mainwindow.cpp:1331
+msgid "No KIPI support"
+msgstr ""
 
 #: _translatorinfo.cpp:1
 msgid ""
@@ -475,310 +462,387 @@ msgid ""
 "Your emails"
 msgstr "shadowseed@gmail.com"
 
-#: gvdirpart/gvdirpart.cpp:145
+#: gvdirpart/gvdirpart.cpp:120
+msgid "Slide Show..."
+msgstr "Слајд-шоу..."
+
+#: gvdirpart/gvdirpart.cpp:121
 msgid "Stop Slide Show"
 msgstr "Стопирај слајд-шоу"
 
-#: gvdirpart/gvdirpart.cpp:172
+#: gvdirpart/gvdirpart.cpp:145
 msgid "GVDirPart"
 msgstr "GVDirPart"
 
-#: gvdirpart/gvdirpart.cpp:173
+#: gvdirpart/gvdirpart.cpp:146
 msgid "Image Browser"
 msgstr "Прелистувач на слики"
 
+#. i18n: file ./gvcore/printdialogpagebase.ui line 313
+#: gvcore/printdialog.cpp:47 gvcore/printdialog.cpp:58 rc.cpp:378
+#, no-c-format
+msgid "Millimeters"
+msgstr "милиметри"
+
+#. i18n: file ./gvcore/printdialogpagebase.ui line 318
+#: gvcore/printdialog.cpp:49 gvcore/printdialog.cpp:60 rc.cpp:381
+#, no-c-format
+msgid "Centimeters"
+msgstr "сантиметри"
+
+#. i18n: file ./gvcore/printdialogpagebase.ui line 323
+#: gvcore/printdialog.cpp:62 rc.cpp:384
+#, no-c-format
+msgid "Inches"
+msgstr "инчи"
+
 #. i18n: file ./gvcore/printdialogpagebase.ui line 59
-#: gvcore/printdialog.cpp:141 gvcore/printdialog.cpp:169 rc.cpp:298
+#: gvcore/printdialog.cpp:172 gvcore/printdialog.cpp:200 rc.cpp:335
 #, no-c-format
 msgid "Central-Left"
 msgstr "Централно лево"
 
 #. i18n: file ./gvcore/printdialogpagebase.ui line 69
-#: gvcore/printdialog.cpp:143 gvcore/printdialog.cpp:171 rc.cpp:304
+#: gvcore/printdialog.cpp:174 gvcore/printdialog.cpp:202 rc.cpp:341
 #, no-c-format
 msgid "Central-Right"
 msgstr "Централно десно"
 
 #. i18n: file ./gvcore/printdialogpagebase.ui line 44
-#: gvcore/printdialog.cpp:145 gvcore/printdialog.cpp:173 rc.cpp:289
+#: gvcore/printdialog.cpp:176 gvcore/printdialog.cpp:204 rc.cpp:326
 #, no-c-format
 msgid "Top-Left"
 msgstr "Горе лево"
 
 #. i18n: file ./gvcore/printdialogpagebase.ui line 54
-#: gvcore/printdialog.cpp:147 gvcore/printdialog.cpp:175 rc.cpp:295
+#: gvcore/printdialog.cpp:178 gvcore/printdialog.cpp:206 rc.cpp:332
 #, no-c-format
 msgid "Top-Right"
 msgstr "Горе десно"
 
 #. i18n: file ./gvcore/printdialogpagebase.ui line 74
-#: gvcore/printdialog.cpp:149 gvcore/printdialog.cpp:177 rc.cpp:307
+#: gvcore/printdialog.cpp:180 gvcore/printdialog.cpp:208 rc.cpp:344
 #, no-c-format
 msgid "Bottom-Left"
 msgstr "Долу лево"
 
 #. i18n: file ./gvcore/printdialogpagebase.ui line 84
-#: gvcore/printdialog.cpp:151 gvcore/printdialog.cpp:179 rc.cpp:313
+#: gvcore/printdialog.cpp:182 gvcore/printdialog.cpp:210 rc.cpp:350
 #, no-c-format
 msgid "Bottom-Right"
 msgstr "Долу десно"
 
 #. i18n: file ./gvcore/printdialogpagebase.ui line 49
-#: gvcore/printdialog.cpp:153 gvcore/printdialog.cpp:181 rc.cpp:292
+#: gvcore/printdialog.cpp:184 gvcore/printdialog.cpp:212 rc.cpp:329
 #, no-c-format
 msgid "Top-Central"
 msgstr "Горе во средина"
 
 #. i18n: file ./gvcore/printdialogpagebase.ui line 79
-#: gvcore/printdialog.cpp:155 gvcore/printdialog.cpp:183 rc.cpp:310
+#: gvcore/printdialog.cpp:186 gvcore/printdialog.cpp:214 rc.cpp:347
 #, no-c-format
 msgid "Bottom-Central"
 msgstr "Долу во средина"
 
 #. i18n: file ./gvcore/printdialogpagebase.ui line 64
-#: gvcore/printdialog.cpp:186 rc.cpp:301
+#: gvcore/printdialog.cpp:217 rc.cpp:338
 #, no-c-format
 msgid "Central"
 msgstr "Центар"
 
-#. i18n: file ./gvcore/printdialogpagebase.ui line 301
-#: gvcore/printdialog.cpp:193 gvcore/printdialog.cpp:204 rc.cpp:341
-#, no-c-format
-msgid "Millimeters"
-msgstr "милиметри"
+#: gvcore/deletedialog.cpp:44
+#, fuzzy
+msgid "About to delete selected files"
+msgstr "Дали навистина сакате да ги избришете овие датотеки?"
 
-#. i18n: file ./gvcore/printdialogpagebase.ui line 306
-#: gvcore/printdialog.cpp:195 gvcore/printdialog.cpp:206 rc.cpp:344
-#, no-c-format
-msgid "Centimeters"
-msgstr "сантиметри"
+#: gvcore/deletedialog.cpp:46
+msgid "&Send to Trash"
+msgstr ""
 
-#. i18n: file ./gvcore/printdialogpagebase.ui line 311
-#: gvcore/printdialog.cpp:208 rc.cpp:347
-#, no-c-format
-msgid "Inches"
-msgstr "инчи"
+#: gvcore/deletedialog.cpp:67
+#, c-format
+msgid ""
+"_n: <b>1</b> item selected.\n"
+"<b>%n</b> items selected."
+msgstr ""
 
-#: gvcore/documentanimatedloadedimpl.cpp:89
+#: gvcore/deletedialog.cpp:90
+msgid ""
+"_n: <qt>This item will be <b>permanently deleted</b> from your hard disk.</qt>\n"
+"<qt>These items will be <b>permanently deleted</b> from your hard disk.</qt>"
+msgstr ""
+
+#: gvcore/deletedialog.cpp:97
+msgid ""
+"_n: <qt>This item will be moved to the trash bin.</qt>\n"
+"<qt>These items will be moved to the trash bin.</qt>"
+msgstr ""
+
+#: gvcore/documentanimatedloadedimpl.cpp:91
 msgid "Sorry, cannot save animated images."
 msgstr "Жал ми е, не може да зачувувате анимирани слики."
 
 #. i18n: file ./gvcore/externaltooldialogbase.ui line 78
-#: gvcore/filedetailview.cpp:54 rc.cpp:203
+#: gvcore/filedetailview.cpp:80 rc.cpp:252 rc.cpp:391
 #, no-c-format
 msgid "Name"
 msgstr "Име"
 
-#: gvcore/filedetailview.cpp:55
+#: gvcore/filedetailview.cpp:81
 msgid "Size"
 msgstr "Големина"
 
-#: gvcore/filedetailview.cpp:56
+#: gvcore/filedetailview.cpp:82
 msgid "Date"
 msgstr "Датум"
 
-#: gvcore/filedetailview.cpp:57
+#: gvcore/filedetailview.cpp:83
 msgid "Permissions"
 msgstr "Дозволи"
 
-#: gvcore/filedetailview.cpp:58
+#: gvcore/filedetailview.cpp:84
 msgid "Owner"
 msgstr "Сопственик"
 
-#: gvcore/filedetailview.cpp:59
+#: gvcore/filedetailview.cpp:85
 msgid "Group"
 msgstr "Група"
 
-#: gvcore/documentloadedimpl.cpp:79
+#: gvcore/documentloadedimpl.cpp:82
 msgid "Gwenview cannot write files in this format."
 msgstr "Gwenview не може да ги запише датотеките во овој формат."
 
-#: gvcore/documentloadedimpl.cpp:105
+#: gvcore/documentloadedimpl.cpp:108
 msgid "This is a circular link."
 msgstr "Ова е кружна врска."
 
-#: gvcore/documentloadedimpl.cpp:115
+#: gvcore/documentloadedimpl.cpp:118
 msgid "This file is read-only."
 msgstr "Датотеката е само за читање."
 
-#: gvcore/documentloadedimpl.cpp:132
+#: gvcore/documentloadedimpl.cpp:135
 msgid "The %1 folder is read-only."
 msgstr "Папката %1 е само за читање."
 
-#: gvcore/documentloadedimpl.cpp:157
+#: gvcore/documentloadedimpl.cpp:153
+#, fuzzy, c-format
+msgid ""
+"Could not create a temporary file.\n"
+"Reason: %1."
+msgstr "Не можам да ја качам датотеката на %1."
+
+#: gvcore/documentloadedimpl.cpp:163
+#, c-format
+msgid ""
+"Saving image to a temporary file failed.\n"
+"Reason: %1."
+msgstr ""
+
+#: gvcore/documentloadedimpl.cpp:174
 #, c-format
 msgid "Could not write to %1."
 msgstr "Не можам да запишам на %1."
 
-#: gvcore/documentloadedimpl.cpp:161
+#: gvcore/documentloadedimpl.cpp:178
 #, c-format
 msgid "Could not upload the file to %1."
 msgstr "Не можам да ја качам датотеката на %1."
 
-#: gvcore/documentloadedimpl.cpp:174
+#: gvcore/documentloadedimpl.cpp:191
 msgid "An error happened while saving."
 msgstr "Се појави грешка за време на зачувувањето."
 
-#: gvcore/externaltooldialog.cpp:141
+#: gvcore/bcgdialog.cpp:46 gvcore/imageview.cpp:366
+msgid "Adjust Brightness/Contrast/Gamma"
+msgstr ""
+
+#: gvcore/externaltooldialog.cpp:139
 msgid "The tool name cannot be empty"
 msgstr "Името на алатката не може да биде празно"
 
-#: gvcore/externaltooldialog.cpp:149
+#: gvcore/externaltooldialog.cpp:147
 msgid "There is already a tool named \"%1\""
 msgstr "Веќе постои алатка со име „%1“"
 
-#: gvcore/externaltooldialog.cpp:327
+#: gvcore/externaltooldialog.cpp:325
 msgid "<Unnamed tool>"
 msgstr "<Неименувана алатка>"
 
-#: gvcore/fileopobject.cpp:101
+#: gvcore/fileopobject.cpp:111
 msgid "Copy File"
 msgstr "Копирај датотека"
 
-#: gvcore/fileopobject.cpp:104
-msgid "Select Folder Where the Files Will be Copied"
+#: gvcore/fileopobject.cpp:114
+#, fuzzy
+msgid "Select Folder Where Files Will be Copied"
 msgstr "Изберете папка каде што ќе бидат копирани датотеките"
 
-#: gvcore/fileopobject.cpp:133
+#: gvcore/fileopobject.cpp:143
+#, fuzzy
+msgid "Link File"
+msgstr "Преименување датотека"
+
+#: gvcore/fileopobject.cpp:146
+#, fuzzy
+msgid "Select Folder Where the Files Will be Linked"
+msgstr "Изберете папка каде што ќе бидат копирани датотеките"
+
+#: gvcore/fileopobject.cpp:172
 msgid "Move File"
 msgstr "Премести датотека"
 
-#: gvcore/fileopobject.cpp:136
-msgid "Select Folder Where the Files Will be Moved"
+#: gvcore/fileopobject.cpp:175
+#, fuzzy
+msgid "Select Folder Where Files Will be Moved"
 msgstr "Изберете папка каде што ќе бидат преместени датотеките"
 
-#: gvcore/fileopobject.cpp:171
-msgid "You cannot trash the trash bin."
-msgstr "Не може да ја избришете корпата за отпадоци."
+#: gvcore/fileopobject.cpp:193
+msgid "Creating Folder"
+msgstr "Креирање папка"
 
-#: gvcore/fileopobject.cpp:187
+#: gvcore/fileopobject.cpp:194
+msgid "Enter the name of the new folder:"
+msgstr "Внесете го името на новата папка:"
+
+#: gvcore/fileopobject.cpp:195
+#, fuzzy
+msgid "Create Folder"
+msgstr "Креирање папка"
+
+#: gvcore/fileopobject.cpp:258
 msgid "Do you really want to trash these files?"
 msgstr ""
 "Дали навистина сакате да ги фрлите овие датотеки во корпата за отпадоци?"
 
-#: gvcore/fileopobject.cpp:187
+#: gvcore/fileopobject.cpp:258
 msgid ""
 "_: Trash used as a verb\n"
 "Trash Files"
 msgstr "Фрли датотеки"
 
-#: gvcore/fileopobject.cpp:187 gvcore/fileopobject.cpp:191
+#: gvcore/fileopobject.cpp:258 gvcore/fileopobject.cpp:262
 msgid ""
 "_: Trash used as a verb\n"
 "&Trash"
 msgstr "&Фрли"
 
-#: gvcore/fileopobject.cpp:191
+#: gvcore/fileopobject.cpp:262
 msgid "<p>Do you really want to move <b>%1</b> to the trash?</p>"
 msgstr ""
 "<p>Дали навистина сакате да ја фрлите <b>%1</b> во корпата за отпадоци?</p>"
 
-#: gvcore/fileopobject.cpp:191
+#: gvcore/fileopobject.cpp:262
 msgid ""
 "_: Trash used as a verb\n"
 "Trash File"
 msgstr "Фрли датотека"
 
-#: gvcore/fileopobject.cpp:220
+#: gvcore/fileopobject.cpp:283
 msgid "Do you really want to delete these files?"
 msgstr "Дали навистина сакате да ги избришете овие датотеки?"
 
-#: gvcore/fileopobject.cpp:221
+#: gvcore/fileopobject.cpp:284
 msgid "Delete Files"
 msgstr "Избриши датотеки"
 
-#: gvcore/fileopobject.cpp:231
+#: gvcore/fileopobject.cpp:290
 msgid "<p>Do you really want to delete <b>%1</b>?</p>"
 msgstr "<p>Дали навистина сакате да ја избришете <b>%1</b>?</p>"
 
-#: gvcore/fileopobject.cpp:232
+#: gvcore/fileopobject.cpp:291
 msgid "Delete File"
 msgstr "Избриши датотека"
 
-#: gvcore/fileopobject.cpp:258
+#: gvcore/fileopobject.cpp:311
 msgid "Renaming File"
 msgstr "Преименување датотека"
 
-#: gvcore/fileopobject.cpp:259
+#: gvcore/fileopobject.cpp:312
 msgid "<p>Rename file <b>%1</b> to:</p>"
 msgstr "<p>Преименувај ја датотеката <b>%1</b> во:</p>"
 
-#: gvcore/fileoperation.cpp:88
+#: gvcore/fileopobject.cpp:313
+#, fuzzy
+msgid "&Rename"
+msgstr "П&реименувај..."
+
+#: gvcore/fileoperation.cpp:95
 msgid "&Move Here"
 msgstr "Пре&мести тука"
 
-#: gvcore/fileoperation.cpp:89
+#: gvcore/fileoperation.cpp:97
 msgid "&Copy Here"
 msgstr "&Копирај тука"
 
-#: gvcore/fileoperation.cpp:90
+#: gvcore/fileoperation.cpp:99
 msgid "&Link Here"
 msgstr "&Врска тука"
 
-#: gvcore/imageview.cpp:348
-msgid "&Auto Zoom"
-msgstr "&Автом. зумирање"
+#: gvcore/imageview.cpp:328
+#, fuzzy
+msgid "Fit to &Window"
+msgstr "&Прозорец"
 
-#: gvcore/imageview.cpp:359
+#: gvcore/imageview.cpp:331
+msgid "Fit to &Width"
+msgstr ""
+
+#: gvcore/imageview.cpp:334
+msgid "Fit to &Height"
+msgstr ""
+
+#: gvcore/imageview.cpp:345
 msgid "&Lock Zoom"
 msgstr "&Заклучи зумирање"
 
-#: gvcore/imageview.cpp:363
+#: gvcore/imageview.cpp:368
 msgid "Increase Gamma"
 msgstr "Зголеми гама"
 
-#: gvcore/imageview.cpp:365
+#: gvcore/imageview.cpp:370
 msgid "Decrease Gamma"
 msgstr "Намали гама"
 
-#: gvcore/imageview.cpp:367
+#: gvcore/imageview.cpp:372
 msgid "Increase Brightness"
 msgstr "Зголеми осветленост"
 
-#: gvcore/imageview.cpp:369
+#: gvcore/imageview.cpp:374
 msgid "Decrease Brightness"
 msgstr "Намали осветленост"
 
-#: gvcore/imageview.cpp:371
+#: gvcore/imageview.cpp:376
 msgid "Increase Contrast"
 msgstr "Зголеми контарст"
 
-#: gvcore/imageview.cpp:373
+#: gvcore/imageview.cpp:378
 msgid "Decrease Contrast"
 msgstr "Намали контраст"
 
-#: gvcore/imageview.cpp:376
-msgid "Toggle full screen bar"
-msgstr "Вклучи/исклучи преглед преку цел екран"
-
-#: gvcore/fileviewstack.cpp:591 gvcore/imageview.cpp:1392
-msgid "External Tools"
-msgstr "Надворешни алатки"
-
-#: gvcore/document.cpp:381
+#: gvcore/document.cpp:397
 msgid "The image will not fit on the page, what do you want to do?"
 msgstr "Сликата нема да ја собере на страницата. Што сакате да направите?"
 
-#: gvcore/document.cpp:383
+#: gvcore/document.cpp:399
 msgid "Shrink"
 msgstr "Смали"
 
-#: gvcore/document.cpp:464
+#: gvcore/document.cpp:480
 msgid ""
 "<qt>The image <b>%1</b> has been modified, do you want to save the changes?</qt>"
 msgstr ""
 "<qt>Сликата <b>%1</b> беше променета. Дали сакате да ги зачувате промените?</qt>"
 
-#: gvcore/document.cpp:567
+#: gvcore/document.cpp:550
 #, c-format
 msgid "Could not save the image to %1."
 msgstr "Не можам да ја зачувам сликата во %1."
 
-#: gvcore/captionformatter.cpp:45
+#: gvcore/captionformatter.cpp:33
 msgid "(No comment)"
 msgstr "(Без коментар)"
 
-#: gvcore/documentimpl.cpp:67
+#: gvcore/documentimpl.cpp:71
 msgid "No document to save"
 msgstr "Нема документ за зачувување"
 
@@ -786,15 +850,106 @@ msgstr "Нема документ за зачувување"
 msgid "Format:"
 msgstr "Формат:"
 
-#: gvcore/kipiinterface.cpp:157
-msgid "%1 (Selected Images)"
-msgstr "%1 (избрани слики)"
-
 #: gvcore/externaltoolcontext.cpp:70
 msgid "Other..."
 msgstr "Друго..."
 
-#: gvcore/imageviewtools.cpp:129
+#. i18n: file ./gvcore/externaltooldialogbase.ui line 283
+#: gvcore/fileviewcontroller.cpp:222 rc.cpp:290
+#, no-c-format
+msgid "All files"
+msgstr "Сите датотеки"
+
+#: gvcore/fileviewcontroller.cpp:223
+#, fuzzy
+msgid "Images only"
+msgstr "Слики"
+
+#: gvcore/fileviewcontroller.cpp:224
+msgid "Videos only"
+msgstr ""
+
+#: gvcore/fileviewcontroller.cpp:230
+msgid "More"
+msgstr ""
+
+#: gvcore/fileviewcontroller.cpp:277
+msgid "&First"
+msgstr "Пр&ва"
+
+#: gvcore/fileviewcontroller.cpp:281
+msgid "&Last"
+msgstr "Пос&ледна"
+
+#: gvcore/fileviewcontroller.cpp:289
+msgid "&Next"
+msgstr "След&на"
+
+#: gvcore/fileviewcontroller.cpp:293
+msgid "&Previous Folder"
+msgstr "П&ретходна папка"
+
+#: gvcore/fileviewcontroller.cpp:297
+msgid "&Next Folder"
+msgstr "След&на папка"
+
+#: gvcore/fileviewcontroller.cpp:301
+msgid "&First Sub Folder"
+msgstr "Прва по&тпапка"
+
+#: gvcore/fileviewcontroller.cpp:304
+msgid "Details"
+msgstr "Детали"
+
+#: gvcore/fileviewcontroller.cpp:306
+#, fuzzy
+msgid "Thumbnails with Info on Side"
+msgstr "Сликички со информација од страна"
+
+#: gvcore/fileviewcontroller.cpp:308
+#, fuzzy
+msgid "Thumbnails with Info on Bottom"
+msgstr "Сликички со информација на дното"
+
+#: gvcore/fileviewcontroller.cpp:321
+msgid "Thumbnail Size"
+msgstr "Големина на сликички"
+
+#: gvcore/fileviewcontroller.cpp:325
+msgid "Show &Hidden Files"
+msgstr "Прикажи &скриени датотеки"
+
+#: gvcore/fileviewcontroller.cpp:327
+msgid "Sort"
+msgstr "Подреди"
+
+#: gvcore/fileviewcontroller.cpp:329
+msgid "By Name"
+msgstr "Според име"
+
+#: gvcore/fileviewcontroller.cpp:329
+msgid "By Date"
+msgstr "Според датум"
+
+#: gvcore/fileviewcontroller.cpp:329
+msgid "By Size"
+msgstr "Според големина"
+
+#: gvcore/fileviewcontroller.cpp:333
+msgid "Descending"
+msgstr "Опаѓачки"
+
+#: gvcore/fileviewcontroller.cpp:418
+#, fuzzy
+msgid "Edit Thumbnail Details..."
+msgstr "Уреди детали на сликичките"
+
+#: gvcore/fileviewcontroller.cpp:750
+#, c-format
+msgid "Thumbnail size: %1x%2"
+msgstr "Големина на сликички: %1x%2"
+
+#: gvcore/imageviewtools.cpp:128
 msgid ""
 "Left click to zoom in, right click to zoom out. You can also use the mouse "
 "wheel."
@@ -802,7 +957,7 @@ msgstr ""
 "Лев клик за зголемување, десен клик за намалување. Исто така можете да го "
 "користите тркалцето на глушецот."
 
-#: gvcore/imageviewtools.cpp:208
+#: gvcore/imageviewtools.cpp:207
 msgid ""
 "Drag to move the image, middle-click to toggle auto-zoom. Hold the Control key "
 "to switch to the zoom tool."
@@ -810,159 +965,98 @@ msgstr ""
 "Влечете за да ја поместите сликата, среден клик за менување на автоматското "
 "зумирање. Задржете го копчето Control за префрлање на алатката за зумирање."
 
-#: gvcore/batchmanipulator.cpp:55
-msgid "Manipulating images..."
-msgstr "Манипулирам со сликите..."
-
-#: gvcore/fileviewstack.cpp:106
-msgid "&First"
-msgstr "Пр&ва"
-
-#: gvcore/fileviewstack.cpp:110
-msgid "&Last"
-msgstr "Пос&ледна"
-
-#: gvcore/fileviewstack.cpp:118
-msgid "&Next"
-msgstr "След&на"
-
-#: gvcore/fileviewstack.cpp:122
-msgid "&Previous Folder"
-msgstr "П&ретходна папка"
-
-#: gvcore/fileviewstack.cpp:126
-msgid "&Next Folder"
-msgstr "След&на папка"
-
-#: gvcore/fileviewstack.cpp:130
-msgid "&First Sub Folder"
-msgstr "Прва по&тпапка"
-
-#: gvcore/fileviewstack.cpp:133
-msgid "Details"
-msgstr "Детали"
-
-#: gvcore/fileviewstack.cpp:135
-msgid "Thumbnails with info on side"
-msgstr "Сликички со информација од страна"
-
-#: gvcore/fileviewstack.cpp:137
-msgid "Thumbnails with info on bottom"
-msgstr "Сликички со информација на дното"
-
-#: gvcore/fileviewstack.cpp:149
-msgid "Thumbnail Size"
-msgstr "Големина на сликички"
-
-#: gvcore/fileviewstack.cpp:153
-msgid "Show &Hidden Files"
-msgstr "Прикажи &скриени датотеки"
-
-#: gvcore/fileviewstack.cpp:155
-msgid "Sort"
-msgstr "Подреди"
-
-#: gvcore/fileviewstack.cpp:157
-msgid "By Name"
-msgstr "Според име"
-
-#: gvcore/fileviewstack.cpp:157
-msgid "By Date"
-msgstr "Според датум"
-
-#: gvcore/fileviewstack.cpp:157
-msgid "By Size"
-msgstr "Според големина"
-
-#: gvcore/fileviewstack.cpp:161
-msgid "Descending"
-msgstr "Опаѓачки"
-
-#: gvcore/fileviewstack.cpp:246
-msgid "Edit thumbnail details"
-msgstr "Уреди детали на сликичките"
-
-#: gvcore/fileviewstack.cpp:509
-#, c-format
-msgid "Thumbnail size: %1x%2"
-msgstr "Големина на сликички: %1x%2"
-
-#: gvcore/fileviewstack.cpp:596
-msgid "Parent Folder"
-msgstr "Родителска папка"
-
-#: gvcore/documentjpegloadedimpl.cpp:116
+#: gvcore/documentjpegloadedimpl.cpp:104
 msgid "Could not save this JPEG file."
 msgstr "Не можам да ја зачувам JPEG-датотеката."
 
-#: gvimagepart/gvimagepart.cpp:100
+#: gvimagepart/gvimagepart.cpp:94
 msgid "&Previous Image"
 msgstr "&Претходна слика"
 
-#: gvimagepart/gvimagepart.cpp:103
+#: gvimagepart/gvimagepart.cpp:97
 msgid "&Next Image"
 msgstr "&Следна слика"
 
-#: gvimagepart/gvimagepart.cpp:133
+#: gvimagepart/gvimagepart.cpp:125
 msgid "GVImagePart"
 msgstr "GVImagePart"
 
-#: gvimagepart/gvimagepart.cpp:134
+#: gvimagepart/gvimagepart.cpp:126
 msgid "Image Viewer"
 msgstr "Прегледувач на слики"
 
-#: gvimagepart/gvimagepart.cpp:174
+#: gvimagepart/gvimagepart.cpp:160
+msgid "Loading..."
+msgstr ""
+
+#: gvimagepart/gvimagepart.cpp:171
 msgid "Done."
 msgstr "Готово."
 
-#. i18n: file ./app/configfullscreenpage.ui line 27
+#. i18n: file ./app/bookmarkdialogbase.ui line 30
+#: rc.cpp:3
+#, no-c-format
+msgid "Add New Branch"
+msgstr "Додавање нова гранка"
+
+#. i18n: file ./app/bookmarkdialogbase.ui line 44
 #: rc.cpp:6
+#, no-c-format
+msgid "URL:"
+msgstr "URL:"
+
+#. i18n: file ./app/bookmarkdialogbase.ui line 62
+#: rc.cpp:9
+#, no-c-format
+msgid "Title:"
+msgstr "Наслов:"
+
+#. i18n: file ./app/bookmarkdialogbase.ui line 70
+#: rc.cpp:12
+#, no-c-format
+msgid "Icon:"
+msgstr "Икона:"
+
+#. i18n: file ./app/configfullscreenpage.ui line 30
+#: rc.cpp:19
 #, no-c-format
 msgid "Show busy mouse pointer when loading an image"
 msgstr "Прикажи зафатен покажувач при вчитување слика"
 
-#. i18n: file ./app/configfullscreenpage.ui line 55
-#: rc.cpp:9
+#. i18n: file ./app/configfullscreenpage.ui line 58
+#: rc.cpp:22
 #, no-c-format
 msgid "<b>On Screen Display</b>"
 msgstr "<b>Екрански приказ</b>"
 
-#. i18n: file ./app/configfullscreenpage.ui line 80
-#: rc.cpp:13 rc.cpp:88
-#, no-c-format
-msgid "None"
-msgstr "Нема"
-
-#. i18n: file ./app/configfullscreenpage.ui line 91
-#: rc.cpp:16
-#, no-c-format
-msgid "Path only"
-msgstr "Само патека"
-
-#. i18n: file ./app/configfullscreenpage.ui line 102
-#: rc.cpp:19
-#, no-c-format
-msgid "Comment only"
-msgstr "Само коментар"
-
-#. i18n: file ./app/configfullscreenpage.ui line 110
-#: rc.cpp:22
-#, no-c-format
-msgid "Path and comment"
-msgstr "Патека и коментар"
-
-#. i18n: file ./app/configfullscreenpage.ui line 129
-#: rc.cpp:25 rc.cpp:244
-#, no-c-format
-msgid "Custom:"
-msgstr "Сопствено:"
-
-#. i18n: file ./app/configfullscreenpage.ui line 158
-#: rc.cpp:28
+#. i18n: file ./app/configfullscreenpage.ui line 70
+#: rc.cpp:25
 #, no-c-format
 msgid ""
+"%f - %n/%N\n"
+"%c"
+msgstr ""
+
+#. i18n: file ./app/configfullscreenpage.ui line 84
+#: rc.cpp:29
+#, fuzzy, no-c-format
+msgid "Preview:"
+msgstr "Gwenview"
+
+#. i18n: file ./app/configfullscreenpage.ui line 99
+#: rc.cpp:32
+#, no-c-format
+msgid ""
+"file.jpg - 1024x768\n"
+"The file comment"
+msgstr ""
+
+#. i18n: file ./app/configfullscreenpage.ui line 117
+#: rc.cpp:36
+#, fuzzy, no-c-format
+msgid ""
 "<qt>\n"
-"You can use the following keywords in the Custom field:\n"
+"You can use the following keywords to format the On Screen Display:\n"
 "<ul>\n"
 "<li>%f: filename</li>\n"
 "<li>%p: filepath</li>\n"
@@ -970,7 +1064,6 @@ msgid ""
 "<li>%r: resolution</li>\n"
 "<li>%n: current image position</li>\n"
 "<li>%N: image count</li>\n"
-"<li>\\n: newline</li>\n"
 "</ul>\n"
 "</qt>"
 msgstr ""
@@ -987,104 +1080,104 @@ msgstr ""
 "</ul>\n"
 "</qt>"
 
-#. i18n: file ./app/configmiscpage.ui line 27
-#: rc.cpp:45
+#. i18n: file ./app/configmiscpage.ui line 30
+#: rc.cpp:52
 #, no-c-format
 msgid "What to do when leaving a modified image"
 msgstr "Што да правам кога се напушта изменета слика"
 
-#. i18n: file ./app/configmiscpage.ui line 49
-#: rc.cpp:49
+#. i18n: file ./app/configmiscpage.ui line 52
+#: rc.cpp:56
 #, no-c-format
 msgid "Ask"
 msgstr "Прашај"
 
-#. i18n: file ./app/configmiscpage.ui line 63
-#: rc.cpp:52
+#. i18n: file ./app/configmiscpage.ui line 66
+#: rc.cpp:59
 #, no-c-format
 msgid "Save silently"
 msgstr "Зачувај без прашање"
 
-#. i18n: file ./app/configmiscpage.ui line 74
-#: rc.cpp:55
+#. i18n: file ./app/configmiscpage.ui line 77
+#: rc.cpp:62
 #, no-c-format
 msgid "Discard changes"
 msgstr "Отфрли промени"
 
-#. i18n: file ./app/configmiscpage.ui line 104
-#: rc.cpp:58
+#. i18n: file ./app/configmiscpage.ui line 107
+#: rc.cpp:65
 #, no-c-format
 msgid "Automatically rotate images on load"
 msgstr "Автоматски ротирај ги сликите на вчитување"
 
-#. i18n: file ./app/configimageviewpage.ui line 27
-#: rc.cpp:64
+#. i18n: file ./app/configmiscpage.ui line 135
+#: rc.cpp:68
 #, no-c-format
-msgid "Enlarge small images when auto zoom is activated"
-msgstr "Зголеми ги малите слики кога е активирано автоматско зумирање"
+msgid "Which settings should be remembered next time you start Gwenview"
+msgstr ""
 
-#. i18n: file ./app/configimageviewpage.ui line 35
-#: rc.cpp:67
-#, no-c-format
-msgid "Show scroll bars"
-msgstr "Прикажи ленти за движење"
-
-#. i18n: file ./app/configimageviewpage.ui line 63
+#. i18n: file ./app/configmiscpage.ui line 168
 #: rc.cpp:71
 #, no-c-format
-msgid "Scroll current image"
-msgstr "Движи ја тековната слика"
+msgid "Last opened URL"
+msgstr ""
 
-#. i18n: file ./app/configimageviewpage.ui line 74
+#. i18n: file ./app/configmiscpage.ui line 176
 #: rc.cpp:74
 #, no-c-format
-msgid "Browse image list"
-msgstr "Разгледувај ја листата со слики"
+msgid "State of filter"
+msgstr ""
 
-#. i18n: file ./app/configimageviewpage.ui line 104
-#: rc.cpp:77
+#. i18n: file ./app/configimageviewpage.ui line 30
+#: rc.cpp:81
+#, fuzzy, no-c-format
+msgid "Enlarge small images when auto &zoom is activated"
+msgstr "Зголеми ги малите слики кога е активирано автоматско зумирање"
+
+#. i18n: file ./app/configimageviewpage.ui line 38
+#: rc.cpp:84
+#, no-c-format
+msgid "Background color:"
+msgstr "Боја на подлога:"
+
+#. i18n: file ./app/configimageviewpage.ui line 71
+#: rc.cpp:88
 #, no-c-format
 msgid "<b>Smoothing</b>"
 msgstr "<b>Измазнување</b>"
 
 #. i18n: file ./app/configimageviewpage.ui line 112
-#: rc.cpp:80
+#: rc.cpp:92
 #, no-c-format
-msgid "<b>Mouse Wheel Behavior over Image</b>"
-msgstr "<b>Однесување на тркалцето на глувчето кога се наоѓа над слика</b>"
+msgid "None"
+msgstr "Нема"
 
-#. i18n: file ./app/configimageviewpage.ui line 120
-#: rc.cpp:83
-#, no-c-format
-msgid "Background color:"
-msgstr "Боја на подлога:"
-
-#. i18n: file ./app/configimageviewpage.ui line 200
-#: rc.cpp:91
+#. i18n: file ./app/configimageviewpage.ui line 126
+#: rc.cpp:95
 #, no-c-format
 msgid "Fast"
 msgstr "Брзо"
 
-#. i18n: file ./app/configimageviewpage.ui line 211
-#: rc.cpp:94
+#. i18n: file ./app/configimageviewpage.ui line 137
+#: rc.cpp:98
 #, no-c-format
 msgid "Normal"
 msgstr "Нормално"
 
-#. i18n: file ./app/configimageviewpage.ui line 222
-#: rc.cpp:97
+#. i18n: file ./app/configimageviewpage.ui line 148
+#: rc.cpp:101
 #, no-c-format
 msgid "Best"
 msgstr "Најдобро"
 
-#. i18n: file ./app/configimageviewpage.ui line 277
-#: rc.cpp:100
+#. i18n: file ./app/configimageviewpage.ui line 203
+#: rc.cpp:104
 #, no-c-format
 msgid "Delayed smoothing"
 msgstr "Одложено измазнување"
 
-#. i18n: file ./app/configimageviewpage.ui line 292
-#: rc.cpp:103
+#. i18n: file ./app/configimageviewpage.ui line 218
+#: rc.cpp:107
 #, no-c-format
 msgid ""
 "Using this option, Gwenview will display the image as fast as possible, and "
@@ -1095,206 +1188,298 @@ msgstr ""
 "ја измазни по кратка пауза.\n"
 "Користете ја оваа опција ако вашиот компјутер не е многу брз."
 
-#. i18n: file ./app/configimagelistpage.ui line 27
-#: rc.cpp:110
+#. i18n: file ./app/configimageviewpage.ui line 273
+#: rc.cpp:112
+#, no-c-format
+msgid "Scroll current image"
+msgstr "Движи ја тековната слика"
+
+#. i18n: file ./app/configimageviewpage.ui line 284
+#: rc.cpp:115
+#, no-c-format
+msgid "Browse image list"
+msgstr "Разгледувај ја листата со слики"
+
+#. i18n: file ./app/configimageviewpage.ui line 297
+#: rc.cpp:118
+#, no-c-format
+msgid "<b>Mouse Wheel Behavior over Image</b>"
+msgstr "<b>Однесување на тркалцето на глувчето кога се наоѓа над слика</b>"
+
+#. i18n: file ./app/configimageviewpage.ui line 305
+#: rc.cpp:121
+#, no-c-format
+msgid "Show scroll bars"
+msgstr "Прикажи ленти за движење"
+
+#. i18n: file ./app/configimagelistpage.ui line 30
+#: rc.cpp:127
 #, no-c-format
 msgid "Show folders and archives"
 msgstr "Прикажи папки и архиви"
 
-#. i18n: file ./app/configimagelistpage.ui line 49
-#: rc.cpp:113
-#, no-c-format
-msgid "Filename color of current image:"
-msgstr "Боја на името на датотеката од тековната слика:"
-
-#. i18n: file ./app/configimagelistpage.ui line 116
-#: rc.cpp:117
+#. i18n: file ./app/configimagelistpage.ui line 63
+#: rc.cpp:130
 #, no-c-format
 msgid "<b>Thumbnail View</b>"
 msgstr "<b>Преглед со сликички</b>"
 
-#. i18n: file ./app/configimagelistpage.ui line 146
-#: rc.cpp:120
+#. i18n: file ./app/configimagelistpage.ui line 93
+#: rc.cpp:133
 #, no-c-format
 msgid "Margin between thumbnails:"
 msgstr "Маргина меѓу сликичките:"
 
-#. i18n: file ./app/configimagelistpage.ui line 201
-#: rc.cpp:123 rc.cpp:253
+#. i18n: file ./app/configimagelistpage.ui line 148
+#: rc.cpp:136 rc.cpp:302
 #, no-c-format
 msgid "Information to display in the thumbnail text:"
 msgstr "Информација за прикажување во текстот на сликичката:"
 
-#. i18n: file ./app/configimagelistpage.ui line 234
-#: rc.cpp:126 rc.cpp:256
+#. i18n: file ./app/configimagelistpage.ui line 181
+#: rc.cpp:139 rc.cpp:305
 #, no-c-format
 msgid "File name"
 msgstr "Име на датотеката"
 
-#. i18n: file ./app/configimagelistpage.ui line 242
-#: rc.cpp:129 rc.cpp:259
+#. i18n: file ./app/configimagelistpage.ui line 189
+#: rc.cpp:142 rc.cpp:308
 #, no-c-format
 msgid "Image size"
 msgstr "Големина на сликата"
 
-#. i18n: file ./app/configimagelistpage.ui line 250
-#: rc.cpp:132 rc.cpp:262
+#. i18n: file ./app/configimagelistpage.ui line 197
+#: rc.cpp:145 rc.cpp:311
 #, no-c-format
 msgid "File size"
 msgstr "Големина на датотеката"
 
-#. i18n: file ./app/configimagelistpage.ui line 258
-#: rc.cpp:135 rc.cpp:265
+#. i18n: file ./app/configimagelistpage.ui line 205
+#: rc.cpp:148 rc.cpp:314
 #, no-c-format
 msgid "File date"
 msgstr "Датум на датотеката"
 
-#. i18n: file ./app/configimagelistpage.ui line 293
-#: rc.cpp:138
+#. i18n: file ./app/configimagelistpage.ui line 240
+#: rc.cpp:151
 #, no-c-format
 msgid "<b>Thumbnail Cache</b>"
 msgstr "<b>Кеш за сликички</b>"
 
-#. i18n: file ./app/configimagelistpage.ui line 301
-#: rc.cpp:141
+#. i18n: file ./app/configimagelistpage.ui line 248
+#: rc.cpp:154
 #, no-c-format
 msgid "Store thumbnails in cache"
 msgstr "Зачувувај ги сликичките во кеш"
 
-#. i18n: file ./app/configimagelistpage.ui line 309
-#: rc.cpp:144
+#. i18n: file ./app/configimagelistpage.ui line 256
+#: rc.cpp:157
 #, no-c-format
 msgid "Automatically empty thumbnail cache on exit"
 msgstr "Автоматски празни го кешот на излез"
 
-#. i18n: file ./app/configimagelistpage.ui line 331
-#: rc.cpp:147
+#. i18n: file ./app/configimagelistpage.ui line 278
+#: rc.cpp:160
 #, no-c-format
 msgid "Calculate Cache Size"
 msgstr "Пресметај големина на кешот"
 
-#. i18n: file ./app/configimagelistpage.ui line 339
-#: rc.cpp:150
+#. i18n: file ./app/configimagelistpage.ui line 286
+#: rc.cpp:163
 #, no-c-format
 msgid "Empty Cache"
 msgstr "Испразни го кешот"
 
-#. i18n: file ./app/branchpropertiesdialogbase.ui line 30
-#: rc.cpp:153
+#. i18n: file ./app/configslideshowpage.ui line 27
+#: rc.cpp:166
 #, no-c-format
-msgid "Add New Branch"
-msgstr "Додавање нова гранка"
+msgid "Loop"
+msgstr "Повторувај"
 
-#. i18n: file ./app/branchpropertiesdialogbase.ui line 44
-#: rc.cpp:156
-#, no-c-format
-msgid "URL:"
-msgstr "URL:"
-
-#. i18n: file ./app/branchpropertiesdialogbase.ui line 62
-#: rc.cpp:159
-#, no-c-format
-msgid "Title:"
-msgstr "Наслов:"
-
-#. i18n: file ./app/branchpropertiesdialogbase.ui line 70
-#: rc.cpp:162
-#, no-c-format
-msgid "Icon:"
-msgstr "Икона:"
-
-#. i18n: file ./app/configfileoperationspage.ui line 27
+#. i18n: file ./app/configslideshowpage.ui line 35
 #: rc.cpp:169
+#, no-c-format
+msgid "Show images in random order"
+msgstr "Прикажувај ги сликите по случаен редослед"
+
+#. i18n: file ./app/configslideshowpage.ui line 54
+#: rc.cpp:175
+#, fuzzy, no-c-format
+msgid "Stop on the last image of the folder"
+msgstr "Внесете го името на новата папка:"
+
+#. i18n: file ./app/configslideshowpage.ui line 59
+#: rc.cpp:178
+#, no-c-format
+msgid ""
+"By default, if you start the slideshow from the middle of a folder, the "
+"slideshow will show all images after the start image, then all images before "
+"the start image.\n"
+"\n"
+"When this option is enabled, the slideshow will stop on the last image of the "
+"folder."
+msgstr ""
+
+#. i18n: file ./app/configslideshowpage.ui line 75
+#: rc.cpp:183
+#, no-c-format
+msgid "Delay between images (in seconds):"
+msgstr "Пауза меѓу сликите (во секунди):"
+
+#. i18n: file ./app/configfileoperationspage.ui line 30
+#: rc.cpp:189
 #, no-c-format
 msgid "<b>Moving & Copying Files</b>"
 msgstr "<b>Преместување и копирање датотеки</b>"
 
-#. i18n: file ./app/configfileoperationspage.ui line 35
-#: rc.cpp:172
+#. i18n: file ./app/configfileoperationspage.ui line 38
+#: rc.cpp:192
 #, no-c-format
 msgid "Show copy dialog"
 msgstr "Прикажи го дијалогот за копирање"
 
-#. i18n: file ./app/configfileoperationspage.ui line 43
-#: rc.cpp:175
+#. i18n: file ./app/configfileoperationspage.ui line 46
+#: rc.cpp:195
 #, no-c-format
 msgid "Show move dialog"
 msgstr "Прикажи го дијалогот за преместување"
 
-#. i18n: file ./app/configfileoperationspage.ui line 65
-#: rc.cpp:178
+#. i18n: file ./app/configfileoperationspage.ui line 68
+#: rc.cpp:198
 #, no-c-format
 msgid "Default destination folder:"
 msgstr "Стандардна одредишна папка:"
 
-#. i18n: file ./app/configfileoperationspage.ui line 105
-#: rc.cpp:181
+#. i18n: file ./app/configfileoperationspage.ui line 108
+#: rc.cpp:201
 #, no-c-format
 msgid "<b>Deleting Files</b>"
 msgstr "<b>Бришење датотеки</b>"
 
-#. i18n: file ./app/configfileoperationspage.ui line 113
-#: rc.cpp:184
+#. i18n: file ./app/configfileoperationspage.ui line 116
+#: rc.cpp:204
 #, no-c-format
 msgid "Ask for confirmation"
 msgstr "Прашај за потврда"
 
-#. i18n: file ./app/configfileoperationspage.ui line 141
-#: rc.cpp:188
+#. i18n: file ./app/configfileoperationspage.ui line 144
+#: rc.cpp:208
 #, no-c-format
 msgid "Move deleted files to the trash"
 msgstr "Премести избришани датотеки во корпата"
 
-#. i18n: file ./app/configfileoperationspage.ui line 152
-#: rc.cpp:191
+#. i18n: file ./app/configfileoperationspage.ui line 155
+#: rc.cpp:211
 #, no-c-format
 msgid "Really delete files (dangerous)"
 msgstr "Навистина избриши ги датотеките (опасно)"
 
+#. i18n: file ./gvcore/deletedialogbase.ui line 43
+#: rc.cpp:214
+#, no-c-format
+msgid "Icon Placeholder, not in GUI"
+msgstr ""
+
+#. i18n: file ./gvcore/deletedialogbase.ui line 57
+#: rc.cpp:217
+#, no-c-format
+msgid "Deletion method placeholder, not in GUI"
+msgstr ""
+
+#. i18n: file ./gvcore/deletedialogbase.ui line 81
+#: rc.cpp:220
+#, no-c-format
+msgid "Placeholder for number of files, not in GUI"
+msgstr ""
+
+#. i18n: file ./gvcore/deletedialogbase.ui line 92
+#: rc.cpp:223
+#, no-c-format
+msgid "&Delete items instead of moving them to the trash"
+msgstr ""
+
+#. i18n: file ./gvcore/deletedialogbase.ui line 95
+#: rc.cpp:226
+#, no-c-format
+msgid ""
+"If checked, items will be permanently removed instead of being placed in the "
+"trash bin"
+msgstr ""
+
+#. i18n: file ./gvcore/deletedialogbase.ui line 100
+#: rc.cpp:229
+#, no-c-format
+msgid ""
+"<qt>"
+"<p>If this box is checked, items will be <b>permanently removed</b> "
+"instead of being placed in the trash bin.</p>\n"
+"\n"
+"<p><em>Use this option with caution</em>: Most filesystems are unable to "
+"reliably undelete deleted files.</p></qt>"
+msgstr ""
+
+#. i18n: file ./gvcore/bcgdialogbase.ui line 27
+#: rc.cpp:234
+#, no-c-format
+msgid "&Contrast:"
+msgstr ""
+
+#. i18n: file ./gvcore/bcgdialogbase.ui line 38
+#: rc.cpp:237
+#, no-c-format
+msgid "&Gamma:"
+msgstr ""
+
+#. i18n: file ./gvcore/bcgdialogbase.ui line 124
+#: rc.cpp:240
+#, fuzzy, no-c-format
+msgid "&Brightness:"
+msgstr "Намали осветленост"
+
 #. i18n: file ./gvcore/externaltooldialogbase.ui line 30
-#: rc.cpp:194
+#: rc.cpp:243
 #, no-c-format
 msgid "Configure External Tools"
 msgstr "Конфигурација на надворешни алатки"
 
 #. i18n: file ./gvcore/externaltooldialogbase.ui line 72
-#: rc.cpp:200
+#: rc.cpp:249
 #, no-c-format
 msgid "&Add"
 msgstr "&Додај"
 
 #. i18n: file ./gvcore/externaltooldialogbase.ui line 107
-#: rc.cpp:206
+#: rc.cpp:255
 #, no-c-format
 msgid "Get more tools"
 msgstr "Земи уште алатки"
 
 #. i18n: file ./gvcore/externaltooldialogbase.ui line 110
-#: rc.cpp:209
+#: rc.cpp:258
 #, no-c-format
 msgid "http://gwenview.sourceforge.net/tools"
 msgstr "http://gwenview.sourceforge.net/tools"
 
 #. i18n: file ./gvcore/externaltooldialogbase.ui line 151
-#: rc.cpp:212
+#: rc.cpp:261
 #, no-c-format
 msgid "File Associations"
 msgstr "Асоцијација на датотеки"
 
 #. i18n: file ./gvcore/externaltooldialogbase.ui line 183
-#: rc.cpp:216
+#: rc.cpp:265
 #, no-c-format
 msgid "Name:"
 msgstr "Име:"
 
 #. i18n: file ./gvcore/externaltooldialogbase.ui line 202
-#: rc.cpp:223
+#: rc.cpp:272
 #, no-c-format
 msgid "Command:"
 msgstr "Наредба:"
 
 #. i18n: file ./gvcore/externaltooldialogbase.ui line 231
-#: rc.cpp:226
+#: rc.cpp:275
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -1321,182 +1506,278 @@ msgstr ""
 "</qt>"
 
 #. i18n: file ./gvcore/externaltooldialogbase.ui line 269
-#: rc.cpp:238
+#: rc.cpp:287
 #, no-c-format
 msgid "All images"
 msgstr "Сите слики"
 
-#. i18n: file ./gvcore/externaltooldialogbase.ui line 283
-#: rc.cpp:241
+#. i18n: file ./gvcore/externaltooldialogbase.ui line 294
+#: rc.cpp:293
 #, no-c-format
-msgid "All files"
-msgstr "Сите датотеки"
+msgid "Custom:"
+msgstr "Сопствено:"
 
 #. i18n: file ./gvcore/externaltooldialogbase.ui line 317
-#: rc.cpp:247
+#: rc.cpp:296
 #, no-c-format
 msgid "Mime Type"
 msgstr "Mime-типови"
 
 #. i18n: file ./gvcore/thumbnaildetailsdialogbase.ui line 16
-#: rc.cpp:250
+#: rc.cpp:299
 #, no-c-format
 msgid "Thumbnail Details"
 msgstr "Детали за сликичките"
 
 #. i18n: file ./gvcore/thumbnaildetailsdialogbase.ui line 111
-#: rc.cpp:268
+#: rc.cpp:317
 #, no-c-format
 msgid "<i>For more options, use the \"Configure Gwenview\" dialog</i>"
 msgstr ""
 "<i>За повеќе опции, користете го дијалогот „Конфигурирај го Gwenview“</i>"
 
-#. i18n: file ./gvcore/slideshowdialogbase.ui line 16
-#: rc.cpp:271
-#, no-c-format
-msgid "Slide Show"
-msgstr "Слајд-шоу"
-
-#. i18n: file ./gvcore/slideshowdialogbase.ui line 69
-#: rc.cpp:274
-#, no-c-format
-msgid "Delay between images (in seconds):"
-msgstr "Пауза меѓу сликите (во секунди):"
-
-#. i18n: file ./gvcore/slideshowdialogbase.ui line 97
-#: rc.cpp:277
-#, no-c-format
-msgid "Loop"
-msgstr "Повторувај"
-
-#. i18n: file ./gvcore/slideshowdialogbase.ui line 105
-#: rc.cpp:280
-#, no-c-format
-msgid "Show images in random order"
-msgstr "Прикажувај ги сликите по случаен редослед"
-
 #. i18n: file ./gvcore/printdialogpagebase.ui line 16
-#: rc.cpp:283
+#: rc.cpp:320
 #, no-c-format
 msgid "Image Settings"
 msgstr "Поставувања за слика"
 
 #. i18n: file ./gvcore/printdialogpagebase.ui line 38
-#: rc.cpp:286
+#: rc.cpp:323
 #, no-c-format
 msgid "Image position:"
 msgstr "Позиција на слика:"
 
 #. i18n: file ./gvcore/printdialogpagebase.ui line 115
-#: rc.cpp:316
+#: rc.cpp:353
 #, no-c-format
 msgid "Print fi&lename below image"
 msgstr "Испечати го &името на датотеката под сликата"
 
 #. i18n: file ./gvcore/printdialogpagebase.ui line 126
-#: rc.cpp:319
+#: rc.cpp:356
 #, no-c-format
 msgid "Print image comment"
 msgstr "Испечати го коментарот за сликата"
 
 #. i18n: file ./gvcore/printdialogpagebase.ui line 137
-#: rc.cpp:323
+#: rc.cpp:360
 #, no-c-format
 msgid "Scaling"
 msgstr "Промена на големина"
 
 #. i18n: file ./gvcore/printdialogpagebase.ui line 148
-#: rc.cpp:326
+#: rc.cpp:363
 #, no-c-format
 msgid "&No scaling"
 msgstr "&Нема промена"
 
 #. i18n: file ./gvcore/printdialogpagebase.ui line 162
-#: rc.cpp:329
+#: rc.cpp:366
 #, no-c-format
 msgid "&Fit image to page"
 msgstr "Пр&илагоди ја сликата на станицата"
 
 #. i18n: file ./gvcore/printdialogpagebase.ui line 204
-#: rc.cpp:332
+#: rc.cpp:369
 #, no-c-format
 msgid "Enlarge smaller images"
 msgstr "Зголеми ги помалите слики"
 
 #. i18n: file ./gvcore/printdialogpagebase.ui line 231
-#: rc.cpp:335
+#: rc.cpp:372
 #, no-c-format
 msgid "&Scale to:"
 msgstr "&Промени големина на:"
 
-#. i18n: file ./gvcore/printdialogpagebase.ui line 281
-#: rc.cpp:338
+#. i18n: file ./gvcore/printdialogpagebase.ui line 287
+#: rc.cpp:375
 #, no-c-format
 msgid "x"
 msgstr "x"
 
-#. i18n: file ./gvcore/printdialogpagebase.ui line 329
-#: rc.cpp:350
+#. i18n: file ./gvcore/printdialogpagebase.ui line 341
+#: rc.cpp:387
 #, no-c-format
 msgid "Keep ratio"
 msgstr "Задржи однос"
 
-#. i18n: file ./app/gwenviewui.rc line 33
-#: rc.cpp:356 rc.cpp:401 rc.cpp:413
+#. i18n: file ./gvcore/filterbar.ui line 54
+#: rc.cpp:394
+#, no-c-format
+msgid "Filter files with wildcards, like *.png"
+msgstr ""
+
+#. i18n: file ./gvcore/filterbar.ui line 103
+#: rc.cpp:398
+#, fuzzy, no-c-format
+msgid "From:"
+msgstr "Формат:"
+
+#. i18n: file ./gvcore/filterbar.ui line 115
+#: rc.cpp:401
+#, no-c-format
+msgid ""
+"Only show files newer than or\n"
+"equal to this date"
+msgstr ""
+
+#. i18n: file ./gvcore/filterbar.ui line 164
+#: rc.cpp:406
+#, no-c-format
+msgid "To:"
+msgstr ""
+
+#. i18n: file ./gvcore/filterbar.ui line 175
+#: rc.cpp:409
+#, no-c-format
+msgid "Only show files older than or equal to this date"
+msgstr ""
+
+#. i18n: file ./gvcore/filterbar.ui line 200
+#: rc.cpp:412
+#, fuzzy, no-c-format
+msgid "&Filter"
+msgstr "Датум на датотеката"
+
+#. i18n: file ./app/gwenviewui.rc line 35
+#: rc.cpp:418 rc.cpp:463 rc.cpp:475
 #, no-c-format
 msgid "&Colors"
 msgstr "&Бои"
 
-#. i18n: file ./app/gwenviewui.rc line 50
-#: rc.cpp:359
+#. i18n: file ./app/gwenviewui.rc line 53
+#: rc.cpp:421
 #, no-c-format
 msgid "&Go"
 msgstr "&Оди"
 
-#. i18n: file ./app/gwenviewui.rc line 70
-#: rc.cpp:362
+#. i18n: file ./app/gwenviewui.rc line 73
+#: rc.cpp:424
 #, no-c-format
 msgid "&Plugins"
 msgstr "&Приклучоци"
 
-#. i18n: file ./app/gwenviewui.rc line 72
-#: rc.cpp:365
+#. i18n: file ./app/gwenviewui.rc line 75
+#: rc.cpp:427
 #, no-c-format
 msgid "Images"
 msgstr "Слики"
 
-#. i18n: file ./app/gwenviewui.rc line 76
-#: rc.cpp:368
+#. i18n: file ./app/gwenviewui.rc line 79
+#: rc.cpp:430
 #, no-c-format
 msgid "Effects"
 msgstr "Ефекти"
 
-#. i18n: file ./app/gwenviewui.rc line 80
-#: rc.cpp:371
+#. i18n: file ./app/gwenviewui.rc line 83
+#: rc.cpp:433
 #, no-c-format
 msgid "Tools"
 msgstr "Алатки"
 
-#. i18n: file ./app/gwenviewui.rc line 84
-#: rc.cpp:374
+#. i18n: file ./app/gwenviewui.rc line 87
+#: rc.cpp:436
 #, no-c-format
 msgid "Batch Processing"
 msgstr "Групно процесирање"
 
-#. i18n: file ./app/gwenviewui.rc line 96
-#: rc.cpp:383
+#. i18n: file ./app/gwenviewui.rc line 99
+#: rc.cpp:445
 #, no-c-format
 msgid "Collections"
 msgstr "Колекции"
 
-#. i18n: file ./app/gwenviewui.rc line 101
-#: rc.cpp:386
+#. i18n: file ./app/gwenviewui.rc line 104
+#: rc.cpp:448
 #, no-c-format
 msgid "&Window"
 msgstr "&Прозорец"
 
-#. i18n: file ./app/gwenviewui.rc line 131
-#: rc.cpp:392
+#. i18n: file ./app/gwenviewui.rc line 120
+#: rc.cpp:454
 #, no-c-format
 msgid "Location Toolbar"
 msgstr "Алатник за локација"
+
+#~ msgid "Add/Edit Branch"
+#~ msgstr "Додавање/уредување гранка"
+
+#~ msgid "New Branch..."
+#~ msgstr "Нова гранка..."
+
+#~ msgid "Delete Branch"
+#~ msgstr "Избриши гранка"
+
+#~ msgid "Home Folder"
+#~ msgstr "Домашна папка"
+
+#~ msgid "Root Folder"
+#~ msgstr "Коренова папка"
+
+#~ msgid "Renaming Folder"
+#~ msgstr "Преименување папка"
+
+#~ msgid "Rename this folder to:"
+#~ msgstr "Преименувајте ја папката во:"
+
+#~ msgid "Are you sure you want to delete the folder <b>%1</b>?"
+#~ msgstr "Дали навистина сакате да ја избришете папката <b>%1</b>?"
+
+#~ msgid "Delete Folder"
+#~ msgstr "Бришење папка"
+
+#~ msgid "Delete item(s)"
+#~ msgstr "Избриши предмети"
+
+#~ msgid ""
+#~ "Do you really want to remove\n"
+#~ " <b>'%1'</b>?"
+#~ msgstr ""
+#~ "Дали навистина сакате да го отстраните\n"
+#~ " <b>„%1“</b>?"
+
+#~ msgid "You have removed all folders. The list will now rollback to the default."
+#~ msgstr "Ги отстранивте сите папки. Листата сега ќе се врати на стандардните вредности."
+
+#~ msgid "An entry already exists with the title \"%1\"."
+#~ msgstr "Веќе постои елемент со наслов „%1“."
+
+#~ msgid "An entry already exists with the URL \"%1\"."
+#~ msgstr "Веќе постои елемент со URL „%1“."
+
+#~ msgid "%1/%2 - %3 %4x%5 @ %6%"
+#~ msgstr "%1/%2 - %3 %4x%5, на %6%"
+
+#~ msgid "File Info"
+#~ msgstr "Инфо. за датотеката"
+
+#~ msgid "L&ocation: "
+#~ msgstr "Лок&ација: "
+
+#~ msgid "You cannot trash the trash bin."
+#~ msgstr "Не може да ја избришете корпата за отпадоци."
+
+#~ msgid "&Auto Zoom"
+#~ msgstr "&Автом. зумирање"
+
+#~ msgid "Toggle full screen bar"
+#~ msgstr "Вклучи/исклучи преглед преку цел екран"
+
+#~ msgid "Manipulating images..."
+#~ msgstr "Манипулирам со сликите..."
+
+#~ msgid "Parent Folder"
+#~ msgstr "Родителска папка"
+
+#~ msgid "Path only"
+#~ msgstr "Само патека"
+
+#~ msgid "Comment only"
+#~ msgstr "Само коментар"
+
+#~ msgid "Path and comment"
+#~ msgstr "Патека и коментар"
+
+#~ msgid "Filename color of current image:"
+#~ msgstr "Боја на името на датотеката од тековната слика:"
