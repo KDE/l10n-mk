@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: k3b\n"
-"POT-Creation-Date: 2006-10-23 08:42+0200\n"
+"POT-Creation-Date: 2006-10-28 09:55+0200\n"
 "PO-Revision-Date: 2005-05-18 13:40+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -252,7 +252,7 @@ msgstr ""
 msgid "Segments"
 msgstr ""
 
-#: k3bdirview.cpp:245 k3bdirview.cpp:246 k3bmedium.cpp:238
+#: k3bdirview.cpp:247 k3bdirview.cpp:248 k3bmedium.cpp:238
 #: projects/k3bvcdburndialog.cpp:68 rip/k3bvideocdrippingoptions.h:28
 #: rip/k3bvideocdview.cpp:305
 msgid "Video CD"
@@ -405,7 +405,7 @@ msgstr ""
 msgid "Saved entry (%1) in category %2."
 msgstr ""
 
-#: k3bdirview.cpp:262 k3bdirview.cpp:263 k3bmedium.cpp:222 k3bmedium.cpp:225
+#: k3bdirview.cpp:260 k3bdirview.cpp:261 k3bmedium.cpp:222 k3bmedium.cpp:225
 #: rip/k3baudiocdview.cpp:587
 msgid "Audio CD"
 msgstr ""
@@ -1812,43 +1812,35 @@ msgstr ""
 msgid "no info"
 msgstr ""
 
-#: k3bappdevicemanager.cpp:41
+#: k3bappdevicemanager.cpp:45
 msgid "Media &Info"
 msgstr ""
 
-#: k3bappdevicemanager.cpp:43
+#: k3bappdevicemanager.cpp:47
 msgid "&Unmount"
 msgstr ""
 
-#: k3bappdevicemanager.cpp:45
+#: k3bappdevicemanager.cpp:49
 msgid "&Mount"
 msgstr ""
 
-#: k3bappdevicemanager.cpp:47
+#: k3bappdevicemanager.cpp:51
 msgid "&Eject"
 msgstr ""
 
-#: k3bappdevicemanager.cpp:49
+#: k3bappdevicemanager.cpp:53
 msgid "L&oad"
 msgstr ""
 
-#: k3bappdevicemanager.cpp:51
-msgid "Un&lock"
-msgstr ""
-
-#: k3bappdevicemanager.cpp:53
-msgid "Loc&k"
-msgstr ""
-
-#: k3bappdevicemanager.cpp:55
+#: k3bappdevicemanager.cpp:59
 msgid "Set Read Speed..."
 msgstr ""
 
-#: k3bappdevicemanager.cpp:235
+#: k3bappdevicemanager.cpp:202
 msgid "CD Read Speed"
 msgstr ""
 
-#: k3bappdevicemanager.cpp:236
+#: k3bappdevicemanager.cpp:203
 msgid ""
 "<p>Please enter the preferred read speed for <b>%1</b>"
 ". This speed will be used for the currently mounted medium."
@@ -1858,7 +1850,7 @@ msgid ""
 "speed again when copying CDs or DVDs."
 msgstr ""
 
-#: k3bappdevicemanager.cpp:254
+#: k3bappdevicemanager.cpp:221
 msgid "Setting the read speed failed."
 msgstr ""
 
@@ -2094,7 +2086,7 @@ msgstr ""
 msgid "ISO9660 Filesystem Info"
 msgstr ""
 
-#: k3bdirview.cpp:198
+#: k3bdirview.cpp:201
 msgid ""
 "<p>You have selected the K3b Video DVD ripping tool."
 "<p>It is intended to <em>rip single titles</em> from a video DVD into a "
@@ -2107,38 +2099,57 @@ msgid ""
 "extras it is recommended to use the K3b DVD Copy tool."
 msgstr ""
 
-#: k3bdirview.cpp:207
+#: k3bdirview.cpp:210
 #, fuzzy
 msgid "Video DVD ripping"
 msgstr "Рипување на видео CD"
 
-#: k3bdirview.cpp:209
+#: k3bdirview.cpp:212
 #, fuzzy
 msgid "Open DVD Copy Dialog"
 msgstr "Го отвора диалогот за копирање на DVD"
 
-#: k3bdirview.cpp:238
+#: k3bdirview.cpp:241
 msgid ""
 "K3b uses vcdxrip from the vcdimager package to rip Video CDs. Please make sure "
 "it is installed."
 msgstr ""
 
-#: k3bdirview.cpp:244 k3bdirview.cpp:261
+#: k3bdirview.cpp:246 k3bdirview.cpp:259
 msgid ""
 "Found %1. Do you want K3b to mount the data part or show all the tracks?"
 msgstr ""
 
-#: k3bdirview.cpp:247 k3bdirview.cpp:264
+#: k3bdirview.cpp:249 k3bdirview.cpp:262
 msgid "Mount CD"
 msgstr ""
 
-#: k3bdirview.cpp:248
+#: k3bdirview.cpp:250
 msgid "Show Video Tracks"
 msgstr ""
 
-#: k3bdirview.cpp:265
+#: k3bdirview.cpp:263
 msgid "Show Audio Tracks"
 msgstr ""
+
+#: k3bdirview.cpp:297
+msgid "<p>K3b was unable to mount medium <b>%1</b> in device <em>%2 - %3</em>"
+msgstr ""
+
+#: k3bdirview.cpp:301
+#, fuzzy
+msgid "Mount Failed"
+msgstr "Пресметката не успеа"
+
+#: k3bdirview.cpp:313
+msgid ""
+"<p>K3b was unable to unmount medium <b>%1</b> in device <em>%2 - %3</em>"
+msgstr ""
+
+#: k3bdirview.cpp:317
+#, fuzzy
+msgid "Unmount Failed"
+msgstr "Пресметката не успеа"
 
 #: k3bdiroperator.cpp:48
 msgid "K3b Bookmarks"
@@ -3471,28 +3482,30 @@ msgstr "Не можам да го најдам приклучокот „%1“ �
 msgid "Initialization Problem"
 msgstr ""
 
-#: k3blsofwrapperdialog.cpp:42
+#: k3blsofwrapperdialog.cpp:44
 msgid "Device in use"
 msgstr ""
 
-#: k3blsofwrapperdialog.cpp:49
+#: k3blsofwrapperdialog.cpp:51
 #, fuzzy
 msgid "Quit the other applications"
 msgstr "Ја напушта апликацијата"
 
-#: k3blsofwrapperdialog.cpp:50
+#: k3blsofwrapperdialog.cpp:52
 #, fuzzy
 msgid "Check again"
 msgstr "Трака"
 
-#: k3blsofwrapperdialog.cpp:71
+#: k3blsofwrapperdialog.cpp:73
 msgid ""
 "<p>Device <b>'%1'</b> is already in use by other applications (<em>%2</em>) "
 "<p>It is highly recommended to quit those before continuing. Otherwise K3b "
 "might not be able to fully access the device."
+"<p><em>Hint: Sometimes shutting down an application does not happen instantly. "
+"In that case you might have to use the '%3' button."
 msgstr ""
 
-#: k3blsofwrapperdialog.cpp:95
+#: k3blsofwrapperdialog.cpp:101
 #, fuzzy
 msgid "<p>Do you really want K3b to kill the following processes: <em>"
 msgstr "Дали навистина сакате да го исчистите тековниот проект?"
@@ -8589,15 +8602,15 @@ msgstr ""
 msgid "Parent Directory"
 msgstr ""
 
-#: k3bfiletreeview.cpp:430
+#: k3bfiletreeview.cpp:375
 msgid "Directories"
 msgstr ""
 
-#: k3bfiletreeview.cpp:495
+#: k3bfiletreeview.cpp:440
 msgid "Root"
 msgstr ""
 
-#: k3bfiletreeview.cpp:496
+#: k3bfiletreeview.cpp:441
 msgid "Home"
 msgstr ""
 
