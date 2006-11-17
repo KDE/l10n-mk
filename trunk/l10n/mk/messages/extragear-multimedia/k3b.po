@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: k3b\n"
-"POT-Creation-Date: 2006-11-14 08:52+0100\n"
+"POT-Creation-Date: 2006-11-17 08:41+0100\n"
 "PO-Revision-Date: 2005-05-18 13:40+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -51,7 +51,7 @@ msgstr "Големина на датотеката"
 #: projects/k3baudioburndialog.cpp:82 projects/k3bdatapropertiesdialog.cpp:177
 #: projects/k3bprojectburndialog.cpp:271 projects/k3bvcdburndialog.cpp:446
 #: projects/k3bvcdburndialog.cpp:476 projects/k3bvcdtrackdialog.cpp:452
-#: rc.cpp:890 rc.cpp:1317 rip/k3baudioprojectconvertingdialog.cpp:112
+#: rc.cpp:806 rc.cpp:1233 rip/k3baudioprojectconvertingdialog.cpp:112
 #: rip/k3baudiorippingdialog.cpp:137 rip/k3bvideocdrippingdialog.cpp:107
 #, no-c-format
 msgid "Settings"
@@ -230,7 +230,7 @@ msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 85
 #: projects/k3bdatafileview.cpp:69 projects/k3bmovixlistview.cpp:174
-#: rc.cpp:863 rip/k3baudiocdlistview.cpp:39 rip/k3bvideocdview.cpp:163
+#: rc.cpp:779 rip/k3baudiocdlistview.cpp:39 rip/k3bvideocdview.cpp:163
 #, no-c-format
 msgid "Size"
 msgstr ""
@@ -736,7 +736,7 @@ msgstr ""
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 262
 #: k3bdiskinfoview.cpp:210 projects/k3baudiotrackview.cpp:136
 #: projects/k3bdatafileview.cpp:68 projects/k3bmovixlistview.cpp:173
-#: projects/k3bvcdburndialog.cpp:437 projects/k3bvcdlistview.cpp:83 rc.cpp:481
+#: projects/k3bvcdburndialog.cpp:437 projects/k3bvcdlistview.cpp:83 rc.cpp:397
 #: rip/k3baudiorippingdialog.cpp:129
 #, no-c-format
 msgid "Type"
@@ -746,7 +746,7 @@ msgstr ""
 #: misc/k3bcdimagewritingdialog.cpp:306 misc/k3bcdimagewritingdialog.cpp:767
 #: option/k3boptiondialog.cpp:131 projects/k3baudioburndialog.cpp:104
 #: projects/k3bdatapropertiesdialog.cpp:178 projects/k3bvcdburndialog.cpp:429
-#: rc.cpp:514 rc.cpp:1344 rip/k3baudiorippingdialog.cpp:153
+#: rc.cpp:430 rc.cpp:1260 rip/k3baudiorippingdialog.cpp:153
 #, no-c-format
 msgid "Advanced"
 msgstr ""
@@ -1471,7 +1471,7 @@ msgid "DVD Reader Device"
 msgstr "Уред - DVD читач"
 
 #. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 28
-#: misc/k3bdvdcopydialog.cpp:155 rc.cpp:1426
+#: misc/k3bdvdcopydialog.cpp:155 rc.cpp:1342
 #, no-c-format
 msgid "General"
 msgstr ""
@@ -3100,18 +3100,18 @@ msgid ""
 "page 'Programs' and choose the tab 'User Parameters'."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:495
+#: k3bsystemproblemdialog.cpp:496
 msgid "Mp3 Audio Decoder plugin not found."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:496
+#: k3bsystemproblemdialog.cpp:497
 msgid ""
 "K3b could not load or find the Mp3 decoder plugin. This means that you will not "
 "be able to create Audio CDs from Mp3 files. Many Linux distributions do not "
 "include Mp3 support for legal reasons."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:499
+#: k3bsystemproblemdialog.cpp:500
 msgid ""
 "To enable Mp3 support, please install the MAD Mp3 decoding library as well as "
 "the K3b MAD Mp3 decoder plugin (the latter may already be installed but not "
@@ -3119,11 +3119,11 @@ msgid ""
 "Mp3 support via an online update tool (i.e. SuSE's YOU)."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:515
+#: k3bsystemproblemdialog.cpp:516
 msgid "System locale charset is ANSI_X3.4-1968"
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:516
+#: k3bsystemproblemdialog.cpp:517
 msgid ""
 "Your system's locale charset (i.e. the charset used to encode filenames) is set "
 "to ANSI_X3.4-1968. It is highly unlikely that this has been done intentionally. "
@@ -3131,22 +3131,22 @@ msgid ""
 "problems when creating data projects."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:520
+#: k3bsystemproblemdialog.cpp:521
 msgid ""
 "To properly set the locale charset make sure the LC_* environment variables are "
 "set. Normally the distribution setup tools take care of this."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:550
+#: k3bsystemproblemdialog.cpp:551
 msgid "No problems found in system configuration."
 msgstr ""
 
-#: k3bsystemproblemdialog.cpp:550
+#: k3bsystemproblemdialog.cpp:551
 #, fuzzy
 msgid "System Problems"
 msgstr "Додај с&истемски датотеки"
 
-#: k3bsystemproblemdialog.cpp:565
+#: k3bsystemproblemdialog.cpp:566
 msgid "Unable to start K3bSetup2."
 msgstr "Не можам да го стартувам K3bSetup2."
 
@@ -3547,13 +3547,77 @@ msgstr ""
 msgid "<p>Do you really want K3b to kill the following processes: <em>"
 msgstr "Дали навистина сакате да го исчистите тековниот проект?"
 
-#: k3bstatusbarmanager.cpp:49
+#: k3bstatusbarmanager.cpp:58
 msgid "Temp:"
 msgstr "Привр.:"
 
-#: k3bstatusbarmanager.cpp:96
+#: k3bstatusbarmanager.cpp:110
 msgid "No info"
 msgstr "Нема инфо"
+
+#: k3bstatusbarmanager.cpp:166
+#, fuzzy
+msgid ""
+"_n: 1 file in %1\n"
+"%n files in %1"
+msgstr ""
+"%n трака\n"
+"%n траки\n"
+"%n траки"
+
+#: k3bstatusbarmanager.cpp:167
+#, fuzzy, c-format
+msgid ""
+"_n: 1 folder\n"
+"%n folders"
+msgstr ""
+"1 проблем\n"
+"%n проблема\n"
+"%n проблеми"
+
+#: k3bstatusbarmanager.cpp:177
+#, fuzzy, c-format
+msgid ""
+"_n: Audio CD (1 track)\n"
+"Audio CD (%n tracks)"
+msgstr ""
+"%n трака\n"
+"%n траки\n"
+"%n траки"
+
+#: k3bstatusbarmanager.cpp:183
+#, fuzzy
+msgid "Data CD (%1)"
+msgstr "ПодаточноCD%1"
+
+#: k3bstatusbarmanager.cpp:190
+msgid ""
+"_n: Mixed CD (1 track and %1)\n"
+"Mixed CD (%n tracks and %1)"
+msgstr ""
+
+#: k3bstatusbarmanager.cpp:197
+#, fuzzy
+msgid "Video CD (%1)"
+msgstr "ВидеоCD%1"
+
+#: k3bstatusbarmanager.cpp:203
+msgid "eMovix CD (%1)"
+msgstr ""
+
+#: k3bstatusbarmanager.cpp:209
+msgid "eMovix DVD (%1)"
+msgstr ""
+
+#: k3bstatusbarmanager.cpp:215
+#, fuzzy
+msgid "Data DVD (%1)"
+msgstr "ПодаточноDVD%1"
+
+#: k3bstatusbarmanager.cpp:221
+#, fuzzy
+msgid "Video DVD (%1)"
+msgstr "ВидеоDVD%1"
 
 #: option/k3bcddbemptydbtab.cpp:39
 msgid "All"
@@ -3561,7 +3625,7 @@ msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 153
 #: ../plugins/decoder/mp3/k3bmaddecoder.cpp:435
-#: option/k3bcddbemptydbtab.cpp:40 projects/k3bbootimageview.cpp:61 rc.cpp:884
+#: option/k3bcddbemptydbtab.cpp:40 projects/k3bbootimageview.cpp:61 rc.cpp:800
 #, no-c-format
 msgid "None"
 msgstr ""
@@ -3637,7 +3701,7 @@ msgstr ""
 
 #. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 54
 #: option/k3bpluginoptiontab.cpp:65 projects/k3bdatafileview.cpp:67
-#: projects/k3bmovixlistview.cpp:172 rc.cpp:1408
+#: projects/k3bmovixlistview.cpp:172 rc.cpp:1324
 #, no-c-format
 msgid "Name"
 msgstr ""
@@ -3949,46 +4013,54 @@ msgid "Burning"
 msgstr "Уред за снимање"
 
 #: option/k3bburningoptiontab.cpp:69
-msgid "Allow &overburning (not supported by cdrecord <= 1.10)"
+msgid "Allow overburning (&not supported by cdrecord <= 1.10)"
 msgstr ""
 
 #: option/k3bburningoptiontab.cpp:70
+msgid "Force unsafe operations"
+msgstr ""
+
+#: option/k3bburningoptiontab.cpp:71
 msgid "&Manual writing buffer size"
 msgstr ""
 
-#: option/k3bburningoptiontab.cpp:72
+#: option/k3bburningoptiontab.cpp:73
 msgid "MB"
 msgstr ""
 
-#: option/k3bburningoptiontab.cpp:73
+#: option/k3bburningoptiontab.cpp:74
 msgid "Manual writing application &selection"
 msgstr ""
 
-#: option/k3bburningoptiontab.cpp:82
+#: option/k3bburningoptiontab.cpp:84
 msgid "Do not &eject medium after write process"
 msgstr ""
 
-#: option/k3bburningoptiontab.cpp:83
+#: option/k3bburningoptiontab.cpp:85
 msgid "Automatically erase CD-RWs and DVD-RWs"
 msgstr ""
 
-#: option/k3bburningoptiontab.cpp:100
+#: option/k3bburningoptiontab.cpp:102
 msgid "Allow burning more than the official media capacity"
 msgstr ""
 
-#: option/k3bburningoptiontab.cpp:101
+#: option/k3bburningoptiontab.cpp:103
 msgid "Allow to choose between cdrecord and cdrdao"
 msgstr ""
 
-#: option/k3bburningoptiontab.cpp:102
+#: option/k3bburningoptiontab.cpp:104
 msgid "Automatically erase CD-RWs and DVD-RWs without asking"
 msgstr ""
 
-#: option/k3bburningoptiontab.cpp:103
+#: option/k3bburningoptiontab.cpp:105
 msgid "Do not eject the burn medium after a completed burn process"
 msgstr ""
 
-#: option/k3bburningoptiontab.cpp:105
+#: option/k3bburningoptiontab.cpp:106
+msgid "Force K3b to continue some operations otherwise deemed as unsafe"
+msgstr ""
+
+#: option/k3bburningoptiontab.cpp:108
 msgid ""
 "<p>If this option is checked K3b gives the possibility to choose between "
 "cdrecord and cdrdao when writing a cd."
@@ -3996,7 +4068,7 @@ msgid ""
 "<p><b>Be aware that K3b does not support both programs in all project types.</b>"
 msgstr ""
 
-#: option/k3bburningoptiontab.cpp:113
+#: option/k3bburningoptiontab.cpp:116
 msgid ""
 "<p>Each medium has an official maximum capacity which is stored in a read-only "
 "area of the medium and is guaranteed by the vendor. However, this official "
@@ -4010,13 +4082,13 @@ msgid ""
 "simulated burn."
 msgstr ""
 
-#: option/k3bburningoptiontab.cpp:124
+#: option/k3bburningoptiontab.cpp:127
 msgid ""
 "<p>If this option is checked K3b will automatically erase CD-RWs and format "
 "DVD-RWs if one is found instead of an empty media before writing."
 msgstr ""
 
-#: option/k3bburningoptiontab.cpp:128
+#: option/k3bburningoptiontab.cpp:131
 msgid ""
 "<p>K3b uses a software buffer during the burning process to avoid gaps in the "
 "data stream due to high system load. The default sizes used are %1 MB for CD "
@@ -4025,7 +4097,7 @@ msgid ""
 "DVD burning."
 msgstr ""
 
-#: option/k3bburningoptiontab.cpp:134
+#: option/k3bburningoptiontab.cpp:137
 msgid ""
 "<p>If this option is checked K3b will not eject the medium once the burn "
 "process finishes. This can be helpful in case one leaves the computer after "
@@ -4035,6 +4107,15 @@ msgid ""
 "medium."
 msgstr ""
 
+#: option/k3bburningoptiontab.cpp:143
+msgid ""
+"<p>If this option is checked K3b will continue in some situations which would "
+"otherwise be deemed as unsafe."
+"<p>This setting for example disables the check for medium speed verification. "
+"Thus, one can force K3b to burn a high speed medium on a low speed writer."
+"<p><b>Caution:</b> Enabling this option may result in damaged media."
+msgstr ""
+
 #. i18n: file ./rip/base_k3baudiorippingoptionwidget.ui line 25
 #: rc.cpp:3 rc.cpp:156
 #, no-c-format
@@ -4042,8 +4123,8 @@ msgid "Filetype"
 msgstr ""
 
 #. i18n: file ./rip/base_k3baudiorippingoptionwidget.ui line 49
-#: rc.cpp:6 rc.cpp:639 rc.cpp:648 rc.cpp:663 rc.cpp:675 rc.cpp:684 rc.cpp:1103
-#: rc.cpp:1109 rc.cpp:1115 rc.cpp:1147 rc.cpp:1153
+#: rc.cpp:6 rc.cpp:555 rc.cpp:564 rc.cpp:579 rc.cpp:591 rc.cpp:600 rc.cpp:1019
+#: rc.cpp:1025 rc.cpp:1031 rc.cpp:1063 rc.cpp:1069
 #, no-c-format
 msgid "..."
 msgstr ""
@@ -4161,7 +4242,7 @@ msgid "Space needed:"
 msgstr ""
 
 #. i18n: file ./rip/base_k3bcddbpatternwidget.ui line 16
-#: rc.cpp:75 rc.cpp:356
+#: rc.cpp:75
 #, no-c-format
 msgid "Ripping Pattern"
 msgstr ""
@@ -4173,7 +4254,7 @@ msgid "Replace all blan&ks with:"
 msgstr ""
 
 #. i18n: file ./rip/base_k3bcddbpatternwidget.ui line 52
-#: rc.cpp:81 rc.cpp:183 rc.cpp:416 rc.cpp:419 rc.cpp:1008
+#: rc.cpp:81 rc.cpp:183 rc.cpp:924
 #, no-c-format
 msgid "_"
 msgstr ""
@@ -4191,13 +4272,13 @@ msgid "Ripped files pattern:"
 msgstr ""
 
 #. i18n: file ./rip/base_k3bcddbpatternwidget.ui line 105
-#: rc.cpp:90 rc.cpp:398 rc.cpp:410
+#: rc.cpp:90
 #, no-c-format
 msgid "Insert your custom pattern here"
 msgstr ""
 
 #. i18n: file ./rip/base_k3bcddbpatternwidget.ui line 138
-#: rc.cpp:93 rc.cpp:177 rc.cpp:413
+#: rc.cpp:93 rc.cpp:177
 #, no-c-format
 msgid "See special strings"
 msgstr ""
@@ -4209,7 +4290,7 @@ msgid "About conditional inclusion"
 msgstr ""
 
 #. i18n: file ./rip/videodvd/base_k3bvideodvdrippingwidget.ui line 17
-#: rc.cpp:99 rc.cpp:690
+#: rc.cpp:99 rc.cpp:606
 #, no-c-format
 msgid "Form1"
 msgstr ""
@@ -4240,7 +4321,7 @@ msgid "Video Size:"
 msgstr "Големина на датотеката"
 
 #. i18n: file ./rip/videodvd/base_k3bvideodvdrippingwidget.ui line 105
-#: rc.cpp:114 rc.cpp:938
+#: rc.cpp:114 rc.cpp:854
 #, no-c-format
 msgid "&Custom..."
 msgstr ""
@@ -4252,7 +4333,7 @@ msgid "Video Bitrate:"
 msgstr "Именување на датотеката"
 
 #. i18n: file ./rip/videodvd/base_k3bvideodvdrippingwidget.ui line 142
-#: rc.cpp:120 rc.cpp:153 rc.cpp:1290
+#: rc.cpp:120 rc.cpp:153 rc.cpp:1206
 #, no-c-format
 msgid " kbps"
 msgstr ""
@@ -4624,328 +4705,196 @@ msgid ""
 "structure.</p>"
 msgstr ""
 
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 41
-#: rc.cpp:359
-#, no-c-format
-msgid ""
-"<p>Here you can setup the audio CD ripping pattern which states how your ripped "
-"tracks will be saved. The basic system allows setting of a standard pattern. If "
-"you want to have full control over the pattern please use the advanced pattern "
-"system."
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 48
-#: rc.cpp:362
-#, no-c-format
-msgid "Basic Pattern System"
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 73
-#: rc.cpp:365
-#, no-c-format
-msgid ""
-"You are free to add any text in the fields of the filename pattern. This text "
-"will be added between the selected entries."
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 84
-#: rc.cpp:368 rc.cpp:386
-#, no-c-format
-msgid "Directory Pattern"
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 101
-#: rc.cpp:371
-#, no-c-format
-msgid "Second directory:"
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 119
-#: rc.cpp:374
-#, no-c-format
-msgid "First directory:"
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 137
-#: rc.cpp:377 rc.cpp:401
-#, no-c-format
-msgid "Filename Pattern"
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 200
-#: rc.cpp:380
-#, no-c-format
-msgid "Advanced Custom Pattern System"
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 219
-#: rc.cpp:383
-#, no-c-format
-msgid ""
-"You can use one of the predefined ones, or define your own. You are free to add "
-"any text you want along with some special strings that will be replaced by the "
-"values gained from CDDB."
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 245
-#: rc.cpp:389
-#, no-c-format
-msgid "%r/%m"
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 250
-#: rc.cpp:392
-#, no-c-format
-msgid "%g/%r - %m"
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 255
-#: rc.cpp:395
-#, no-c-format
-msgid "music/ripped-tracks"
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 298
-#: rc.cpp:404
-#, no-c-format
-msgid "%a - %t"
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 303
-#: rc.cpp:407
-#, no-c-format
-msgid "Track %n - %t (%a)"
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 430
-#: rc.cpp:422
-#, no-c-format
-msgid "Replace all blanks in filename with:"
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 438
-#: rc.cpp:425
-#, no-c-format
-msgid "Replace all blanks in directory with:"
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 456
-#: rc.cpp:428
-#, no-c-format
-msgid "Example"
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 515
-#: rc.cpp:431
-#, no-c-format
-msgid "xxx"
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 521
-#: rc.cpp:434
-#, no-c-format
-msgid "This is how the ripped audio tracks will be saved"
-msgstr ""
-
-#. i18n: file ./option/base_k3bpatternoptiontab.ui line 524
-#: rc.cpp:437
-#, no-c-format
-msgid ""
-"<p>This is an example for the directory and file naming when ripping audio "
-"tracks from a CD. The names used have nothing to do with your environment. They "
-"are set by the author."
-msgstr ""
-
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 17
-#: rc.cpp:440
+#: rc.cpp:356
 #, no-c-format
 msgid "CDDB Options"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 46
-#: rc.cpp:443
+#: rc.cpp:359
 #, no-c-format
 msgid "Local"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 57
-#: rc.cpp:446
+#: rc.cpp:362
 #, no-c-format
 msgid "Use local CDDB directory"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 68
-#: rc.cpp:449
+#: rc.cpp:365
 #, no-c-format
 msgid "Save entries in local directory (the first directory in the list)"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 102
-#: rc.cpp:452
+#: rc.cpp:368
 #, no-c-format
 msgid "Directory:"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 108
 #: projects/k3bdatadirtreeview.cpp:79 projects/k3bdatapropertiesdialog.cpp:108
-#: projects/k3bdataviewitem.cpp:166 rc.cpp:455
+#: projects/k3bdataviewitem.cpp:166 rc.cpp:371
 #, no-c-format
 msgid "Directory"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 135
-#: rc.cpp:459
+#: rc.cpp:375
 #, no-c-format
 msgid "Move directory down"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 149
-#: rc.cpp:463
+#: rc.cpp:379
 #, no-c-format
 msgid "Add directory"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 171
-#: rc.cpp:468
+#: rc.cpp:384
 #, no-c-format
 msgid "Remove directory"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 185
-#: rc.cpp:472
+#: rc.cpp:388
 #, no-c-format
 msgid "Move directory up"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 214
-#: rc.cpp:475
+#: rc.cpp:391
 #, no-c-format
 msgid "Remote"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 251
-#: rc.cpp:478
+#: rc.cpp:394
 #, no-c-format
 msgid "Server:"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 273
-#: rc.cpp:484
+#: rc.cpp:400
 #, no-c-format
 msgid "Server"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 284
-#: rc.cpp:487
+#: rc.cpp:403
 #, no-c-format
 msgid "Port"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 328
-#: rc.cpp:492
+#: rc.cpp:408
 #, no-c-format
 msgid "Port "
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 342
-#: rc.cpp:496
+#: rc.cpp:412
 #, no-c-format
 msgid "Add server"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 356
-#: rc.cpp:500
+#: rc.cpp:416
 #, no-c-format
 msgid "Remove server"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 370
-#: rc.cpp:504
+#: rc.cpp:420
 #, no-c-format
 msgid "Move server up"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 384
-#: rc.cpp:508
+#: rc.cpp:424
 #, no-c-format
 msgid "Move server down"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 411
-#: rc.cpp:511
+#: rc.cpp:427
 #, no-c-format
 msgid "Enable remote CDDB queries"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 440
-#: rc.cpp:517
+#: rc.cpp:433
 #, no-c-format
 msgid "CGI Path"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 460
-#: rc.cpp:520
+#: rc.cpp:436
 #, no-c-format
 msgid "~/cddb/cddb.cgi"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 471
-#: rc.cpp:523
+#: rc.cpp:439
 #, no-c-format
 msgid "Path:"
 msgstr ""
 
 #. i18n: file ./option/base_k3bcddboptiontab.ui line 479
-#: rc.cpp:526
+#: rc.cpp:442
 #, no-c-format
 msgid "Manual CGI path"
 msgstr ""
 
 #. i18n: file ./option/base_k3bdivxoptiontab.ui line 60
-#: rc.cpp:529 rc.cpp:1272
+#: rc.cpp:445 rc.cpp:1188
 #, no-c-format
 msgid "Quality"
 msgstr ""
 
 #. i18n: file ./option/base_k3bdivxoptiontab.ui line 79
-#: rc.cpp:532
+#: rc.cpp:448
 #, no-c-format
 msgid "Video quality:"
 msgstr ""
 
 #. i18n: file ./option/base_k3bdivxoptiontab.ui line 104
-#: rc.cpp:535
+#: rc.cpp:451
 #, no-c-format
 msgid " bits/pixel"
 msgstr ""
 
 #. i18n: file ./option/base_k3bdivxoptiontab.ui line 110
-#: rc.cpp:539
+#: rc.cpp:455
 #, no-c-format
 msgid ""
 "The video quality is a identifier how many kbits used for a pixel to encode."
 msgstr ""
 
 #. i18n: file ./option/base_k3bdivxoptiontab.ui line 149
-#: rc.cpp:542
+#: rc.cpp:458
 #, no-c-format
 msgid " pixel"
 msgstr ""
 
 #. i18n: file ./option/base_k3bdivxoptiontab.ui line 165
-#: rc.cpp:545
+#: rc.cpp:461
 #, no-c-format
 msgid "AVI size:"
 msgstr ""
 
 #. i18n: file ./option/base_k3bdivxoptiontab.ui line 190
-#: rc.cpp:548
+#: rc.cpp:464
 #, no-c-format
 msgid " MByte"
 msgstr ""
 
 #. i18n: file ./option/base_k3bdivxoptiontab.ui line 236
-#: rc.cpp:553 rc.cpp:562 rc.cpp:571
+#: rc.cpp:469 rc.cpp:478 rc.cpp:487
 #, no-c-format
 msgid ""
 "K3b automatically calculate the bitrate or the width to get the video quality "
@@ -4955,91 +4904,91 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./option/base_k3bdivxoptiontab.ui line 251
-#: rc.cpp:556
+#: rc.cpp:472
 #, no-c-format
 msgid "AVI size"
 msgstr ""
 
 #. i18n: file ./option/base_k3bdivxoptiontab.ui line 301
-#: rc.cpp:568
+#: rc.cpp:484
 #, no-c-format
 msgid "Video quality based on a fixed: "
 msgstr ""
 
 #. i18n: file ./option/base_k3bdivxoptiontab.ui line 320
-#: rc.cpp:574
+#: rc.cpp:490
 #, no-c-format
 msgid "Width:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiotrackwidget.ui line 17
-#: rc.cpp:577
+#: rc.cpp:493
 #, no-c-format
 msgid "K3bAudioTrackWidget"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiotrackwidget.ui line 35
-#: rc.cpp:580
+#: rc.cpp:496
 #, fuzzy, no-c-format
 msgid "C&D-Text"
 msgstr "Наслов (CD-текст)"
 
 #. i18n: file ./projects/base_k3baudiotrackwidget.ui line 59
-#: rc.cpp:583 rc.cpp:654
+#: rc.cpp:499 rc.cpp:570
 #, no-c-format
 msgid "So&ngwriter:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiotrackwidget.ui line 99
-#: rc.cpp:586 rc.cpp:669
+#: rc.cpp:502 rc.cpp:585
 #, no-c-format
 msgid "&Arranger:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiotrackwidget.ui line 110
-#: rc.cpp:589 rc.cpp:657
+#: rc.cpp:505 rc.cpp:573
 #, no-c-format
 msgid "&Composer:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiotrackwidget.ui line 121
-#: rc.cpp:592
+#: rc.cpp:508
 #, no-c-format
 msgid "&Message:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiotrackwidget.ui line 137
-#: rc.cpp:595 rc.cpp:672
+#: rc.cpp:511 rc.cpp:588
 #, no-c-format
 msgid "&Performer:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiotrackwidget.ui line 148
-#: rc.cpp:598
+#: rc.cpp:514
 #, no-c-format
 msgid "&ISRC:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiotrackwidget.ui line 159
-#: rc.cpp:601 rc.cpp:681 rc.cpp:1159
+#: rc.cpp:517 rc.cpp:597 rc.cpp:1075
 #, no-c-format
 msgid "&Title:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiotrackwidget.ui line 212
-#: rc.cpp:607
+#: rc.cpp:523
 #, no-c-format
 msgid "Preemph&asis"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiotrackwidget.ui line 215
-#: rc.cpp:610
+#: rc.cpp:526
 #, no-c-format
 msgid "Alt+A"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiotrackwidget.ui line 218
-#: rc.cpp:613
+#: rc.cpp:529
 #, no-c-format
 msgid ""
 "<p>Preemphasis is mainly used in audio processing. Higher frequencies in audio "
@@ -5050,31 +4999,31 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiotrackwidget.ui line 226
-#: rc.cpp:616
+#: rc.cpp:532
 #, no-c-format
 msgid "&Copy permitted"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiotrackwidget.ui line 229
-#: rc.cpp:619
+#: rc.cpp:535
 #, no-c-format
 msgid "Alt+C"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiotrackwidget.ui line 245
-#: rc.cpp:622
+#: rc.cpp:538
 #, no-c-format
 msgid "Post-Gap:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiotrackwidget.ui line 253
-#: rc.cpp:625
+#: rc.cpp:541
 #, no-c-format
 msgid "Set the length of the track's post-gap"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiotrackwidget.ui line 261
-#: rc.cpp:628
+#: rc.cpp:544
 #, no-c-format
 msgid ""
 "<p>On an audio CD each track (except for the last) can have a post-gap.\n"
@@ -5091,74 +5040,74 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiocdtextallfieldswidget.ui line 28
-#: rc.cpp:636
+#: rc.cpp:552
 #, no-c-format
 msgid "Messa&ge:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiocdtextallfieldswidget.ui line 55
-#: rc.cpp:642 rc.cpp:651 rc.cpp:666 rc.cpp:678 rc.cpp:687 rc.cpp:1150
-#: rc.cpp:1156
+#: rc.cpp:558 rc.cpp:567 rc.cpp:582 rc.cpp:594 rc.cpp:603 rc.cpp:1066
+#: rc.cpp:1072
 #, no-c-format
 msgid "Copy to all tracks"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiocdtextallfieldswidget.ui line 65
-#: rc.cpp:645
+#: rc.cpp:561
 #, no-c-format
 msgid "&UPC EAN:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiocdtextallfieldswidget.ui line 124
-#: rc.cpp:660
+#: rc.cpp:576
 #, no-c-format
 msgid "&Disk id:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 34
-#: rc.cpp:693
+#: rc.cpp:609
 #, no-c-format
 msgid "Playback Settings"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 45
-#: rc.cpp:696
+#: rc.cpp:612
 #, no-c-format
 msgid "MPlayer subtitle fontset:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 53
-#: rc.cpp:699
+#: rc.cpp:615
 #, no-c-format
 msgid "Select the font to be used to render subtitles"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 61
-#: rc.cpp:702
+#: rc.cpp:618
 #, no-c-format
 msgid "Unwanted MPlayer options:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 80
-#: rc.cpp:706
+#: rc.cpp:622
 #, no-c-format
 msgid "Pla&y files randomly"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 83
-#: rc.cpp:709
+#: rc.cpp:625
 #, no-c-format
 msgid "Alt+Y"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 86
-#: rc.cpp:712
+#: rc.cpp:628
 #, no-c-format
 msgid "The files are played in random order"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 89
-#: rc.cpp:715
+#: rc.cpp:631
 #, no-c-format
 msgid ""
 "<p>If this option is checked the order in which the files are played is "
@@ -5166,25 +5115,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 97
-#: rc.cpp:718
+#: rc.cpp:634
 #, no-c-format
 msgid "&Do not use DMA"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 100
-#: rc.cpp:721
+#: rc.cpp:637
 #, no-c-format
 msgid "Alt+D"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 103
-#: rc.cpp:724
+#: rc.cpp:640
 #, no-c-format
 msgid "Do not use DMA for media access"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 106
-#: rc.cpp:727
+#: rc.cpp:643
 #, no-c-format
 msgid ""
 "<p>If this option is checked the resulting eMovix CD/DVD will not use DMA for "
@@ -5193,13 +5142,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 116
-#: rc.cpp:730
+#: rc.cpp:646
 #, no-c-format
 msgid "MPlayer options you want to be sure MPlayer will not use"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 121
-#: rc.cpp:733
+#: rc.cpp:649
 #, no-c-format
 msgid ""
 "<p>Here one can specify MPlayer options that should never be used.\n"
@@ -5208,13 +5157,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 129
-#: rc.cpp:738
+#: rc.cpp:654
 #, no-c-format
 msgid "Additional MPlayer options"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 134
-#: rc.cpp:741
+#: rc.cpp:657
 #, no-c-format
 msgid ""
 "<p>MPlayer options that should be used in any case.\n"
@@ -5223,49 +5172,49 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 142
-#: rc.cpp:746
+#: rc.cpp:662
 #, no-c-format
 msgid "Additional MPlayer options:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 150
-#: rc.cpp:749
+#: rc.cpp:665
 #, no-c-format
 msgid "Loop playlist:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 158
-#: projects/k3bvcdtrackdialog.cpp:476 rc.cpp:752
+#: projects/k3bvcdtrackdialog.cpp:476 rc.cpp:668
 #, no-c-format
 msgid " time(s)"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 161
-#: rc.cpp:755
+#: rc.cpp:671
 #, no-c-format
 msgid "infinity"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 167
-#: rc.cpp:758
+#: rc.cpp:674
 #, no-c-format
 msgid "How many times should the playlist be looped"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 175
-#: rc.cpp:761
+#: rc.cpp:677
 #, no-c-format
 msgid "Audio Player Background:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 183
-#: rc.cpp:764
+#: rc.cpp:680
 #, no-c-format
 msgid "Background video to show during audio playback"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 188
-#: rc.cpp:767
+#: rc.cpp:683
 #, no-c-format
 msgid ""
 "<p><b>Audio Player Background</b>\n"
@@ -5279,43 +5228,43 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 198
-#: rc.cpp:772
+#: rc.cpp:688
 #, no-c-format
 msgid "Startup Behavior"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 209
-#: rc.cpp:775
+#: rc.cpp:691
 #, no-c-format
 msgid "Keyboard Layout:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 217
-#: rc.cpp:778
+#: rc.cpp:694
 #, no-c-format
 msgid "eMovix boot messages language:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 225
-#: rc.cpp:781
+#: rc.cpp:697
 #, no-c-format
 msgid "Select the language of the eMovix help screens"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 233
-#: rc.cpp:784
+#: rc.cpp:700
 #, no-c-format
 msgid "Default boot label:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 241
-#: rc.cpp:787
+#: rc.cpp:703
 #, no-c-format
 msgid "Select the default Linux kernal configuration"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 251
-#: rc.cpp:790
+#: rc.cpp:706
 #, no-c-format
 msgid ""
 "<p><b>eMovix Boot Labels</b>\n"
@@ -5339,13 +5288,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 259
-#: rc.cpp:800
+#: rc.cpp:716
 #, no-c-format
 msgid "Select the layout of the keyboard"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 262
-#: rc.cpp:803
+#: rc.cpp:719
 #, no-c-format
 msgid ""
 "<p>The keyboard layout selected here will be used for the eMovix commands like "
@@ -5353,31 +5302,31 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 280
-#: rc.cpp:806
+#: rc.cpp:722
 #, no-c-format
 msgid "Behavior After Playing"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 291
-#: rc.cpp:809
+#: rc.cpp:725
 #, no-c-format
 msgid "E&ject disk"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 294
-#: rc.cpp:812
+#: rc.cpp:728
 #, no-c-format
 msgid "Alt+J"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 297
-#: rc.cpp:815
+#: rc.cpp:731
 #, no-c-format
 msgid "Eject the disk after playing has finished"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 300
-#: rc.cpp:818
+#: rc.cpp:734
 #, no-c-format
 msgid ""
 "<p>If this option is checked the disk will be ejected after MPlayer has "
@@ -5385,25 +5334,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 308
-#: rc.cpp:821
+#: rc.cpp:737
 #, no-c-format
 msgid "Sh&utdown"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 311
-#: rc.cpp:824
+#: rc.cpp:740
 #, no-c-format
 msgid "Alt+U"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 314
-#: rc.cpp:827
+#: rc.cpp:743
 #, no-c-format
 msgid "Shutdown after playing has finished"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 317
-#: rc.cpp:830
+#: rc.cpp:746
 #, no-c-format
 msgid ""
 "<p>If this option is checked the PC will be shut down after MPlayer has "
@@ -5411,25 +5360,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 325
-#: rc.cpp:833
+#: rc.cpp:749
 #, no-c-format
 msgid "Re&boot"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 328
-#: rc.cpp:836
+#: rc.cpp:752
 #, no-c-format
 msgid "Alt+B"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 331
-#: rc.cpp:839
+#: rc.cpp:755
 #, no-c-format
 msgid "Reboot after playing has finished"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bmovixoptionswidget.ui line 334
-#: rc.cpp:842
+#: rc.cpp:758
 #, no-c-format
 msgid ""
 "<p>If this option is checked the PC will be rebooted after MPlayer has finished "
@@ -5437,194 +5386,194 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 44
-#: rc.cpp:845
+#: rc.cpp:761
 #, no-c-format
 msgid "Boot images:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 52
-#: rc.cpp:848
+#: rc.cpp:764
 #, no-c-format
 msgid "&New..."
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 55
-#: rc.cpp:851
+#: rc.cpp:767
 #, no-c-format
 msgid "Add new boot image"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 66
-#: rc.cpp:857
+#: rc.cpp:773
 #, no-c-format
 msgid "Remove selected boot image"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 74
-#: rc.cpp:860 rc.cpp:869
+#: rc.cpp:776 rc.cpp:785
 #, no-c-format
 msgid "Emulation Type"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 96
 #: projects/k3bdatafileview.cpp:70 projects/k3bmovixlistview.cpp:175
-#: rc.cpp:866
+#: rc.cpp:782
 #, no-c-format
 msgid "Local Path"
 msgstr "Локална патека"
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 131
-#: rc.cpp:872
+#: rc.cpp:788
 #, no-c-format
 msgid "Flopp&y"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 134
-#: rc.cpp:875
+#: rc.cpp:791
 #, no-c-format
 msgid "Emulate a 1440/2880 kb floppy"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 142
-#: projects/k3bbootimageview.cpp:59 rc.cpp:878
+#: projects/k3bbootimageview.cpp:59 rc.cpp:794
 #, no-c-format
 msgid "Harddisk"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 145
-#: rc.cpp:881
+#: rc.cpp:797
 #, no-c-format
 msgid "Emulate a harddisk"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 156
-#: rc.cpp:887
+#: rc.cpp:803
 #, no-c-format
 msgid "No emulation at all"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 185
-#: rc.cpp:893
+#: rc.cpp:809
 #, no-c-format
 msgid "No boot image"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 188
-#: rc.cpp:896
+#: rc.cpp:812
 #, no-c-format
 msgid "Do not boot from the emulated floppy/harddisk"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 196
-#: rc.cpp:899
+#: rc.cpp:815
 #, no-c-format
 msgid "Boot-info-table"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 215
-#: rc.cpp:902 rc.cpp:905
+#: rc.cpp:818 rc.cpp:821
 #, no-c-format
 msgid "0"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 237
-#: rc.cpp:908
+#: rc.cpp:824
 #, no-c-format
 msgid "Boot load segment:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 248
-#: rc.cpp:911
+#: rc.cpp:827
 #, no-c-format
 msgid "Boot load size:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 268
-#: rc.cpp:914
+#: rc.cpp:830
 #, no-c-format
 msgid "Show Advanced Op&tions"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 303
-#: rc.cpp:917
+#: rc.cpp:833
 #, no-c-format
 msgid "Boot catalog:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bbootimageview.ui line 311
-#: rc.cpp:920
+#: rc.cpp:836
 #, no-c-format
 msgid "boot/boot.catalog"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdataimagesettings.ui line 17
-#: rc.cpp:923
+#: rc.cpp:839
 #, no-c-format
 msgid "Data Image Settings"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdataimagesettings.ui line 31
-#: rc.cpp:926
+#: rc.cpp:842
 #, no-c-format
 msgid "Volume Name"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdataimagesettings.ui line 50
-#: rc.cpp:929
+#: rc.cpp:845
 #, no-c-format
 msgid "&More fields..."
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdataimagesettings.ui line 60
-#: rc.cpp:932
+#: rc.cpp:848
 #, fuzzy, no-c-format
 msgid "File System"
 msgstr "Големина на датотеката"
 
 #. i18n: file ./projects/base_k3bdataimagesettings.ui line 85
-#: rc.cpp:935
+#: rc.cpp:851
 #, fuzzy, no-c-format
 msgid "File system presets"
 msgstr "Големина на датотеката"
 
 #. i18n: file ./projects/base_k3bdataimagesettings.ui line 111
-#: rc.cpp:941
+#: rc.cpp:857
 #, no-c-format
 msgid "Symbolic Links"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdataimagesettings.ui line 120
-#: rc.cpp:944 rc.cpp:980
+#: rc.cpp:860 rc.cpp:896
 #, no-c-format
 msgid "No Change"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdataimagesettings.ui line 125
-#: rc.cpp:947
+#: rc.cpp:863
 #, no-c-format
 msgid "Discard broken symlinks"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdataimagesettings.ui line 130
-#: rc.cpp:950
+#: rc.cpp:866
 #, no-c-format
 msgid "Discard all symlinks"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdataimagesettings.ui line 135
-#: rc.cpp:953
+#: rc.cpp:869
 #, no-c-format
 msgid "Follow symlinks"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdataimagesettings.ui line 150
-#: rc.cpp:956
+#: rc.cpp:872
 #, fuzzy, no-c-format
 msgid "Symbolic link handling in the project"
 msgstr "&Додај на проект"
 
 #. i18n: file ./projects/base_k3bdataimagesettings.ui line 168
-#: rc.cpp:959
+#: rc.cpp:875
 #, no-c-format
 msgid ""
 "<p>K3b can create ISO9660 filesystems that contain symlinks if the Rock Ridge "
@@ -5660,31 +5609,31 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdataimagesettings.ui line 178
-#: rc.cpp:977
+#: rc.cpp:893
 #, no-c-format
 msgid "White space handling"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdataimagesettings.ui line 192
-#: rc.cpp:983
+#: rc.cpp:899
 #, no-c-format
 msgid "Strip"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdataimagesettings.ui line 197
-#: rc.cpp:986
+#: rc.cpp:902
 #, no-c-format
 msgid "Extended Strip"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdataimagesettings.ui line 217
-#: rc.cpp:992
+#: rc.cpp:908
 #, no-c-format
 msgid "Handling of spaces in filenames"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdataimagesettings.ui line 230
-#: rc.cpp:995
+#: rc.cpp:911
 #, no-c-format
 msgid ""
 "<p><b>No Change</b>"
@@ -5710,49 +5659,49 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdataimagesettings.ui line 252
-#: rc.cpp:1011
+#: rc.cpp:927
 #, no-c-format
 msgid "The string to replace spaces with"
 msgstr ""
 
 #. i18n: file ./projects/base_k3badvanceddataimagesettings.ui line 17
-#: rc.cpp:1014
+#: rc.cpp:930
 #, no-c-format
 msgid "Custom Data Filesystems"
 msgstr ""
 
 #. i18n: file ./projects/base_k3badvanceddataimagesettings.ui line 34
-#: rc.cpp:1017
+#: rc.cpp:933
 #, no-c-format
 msgid "File System Settings"
 msgstr ""
 
 #. i18n: file ./projects/base_k3badvanceddataimagesettings.ui line 43
-#: rc.cpp:1020
+#: rc.cpp:936
 #, no-c-format
 msgid "ISO9660 Filesystem"
 msgstr ""
 
 #. i18n: file ./projects/base_k3badvanceddataimagesettings.ui line 66
-#: rc.cpp:1023
+#: rc.cpp:939
 #, no-c-format
 msgid "File Systems"
 msgstr ""
 
 #. i18n: file ./projects/base_k3badvanceddataimagesettings.ui line 77
-#: rc.cpp:1026
+#: rc.cpp:942
 #, no-c-format
 msgid "&Generate Rock Ridge extensions"
 msgstr ""
 
 #. i18n: file ./projects/base_k3badvanceddataimagesettings.ui line 83
-#: rc.cpp:1029
+#: rc.cpp:945
 #, no-c-format
 msgid "Add Rock Ridge extensions to the file system"
 msgstr ""
 
 #. i18n: file ./projects/base_k3badvanceddataimagesettings.ui line 89
-#: rc.cpp:1032
+#: rc.cpp:948
 #, no-c-format
 msgid ""
 "<p>If this option is checked, K3b will generate the System Use Sharing Protocol "
@@ -5767,19 +5716,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/base_k3badvanceddataimagesettings.ui line 97
-#: rc.cpp:1038
+#: rc.cpp:954
 #, no-c-format
 msgid "Generate &Joliet extensions"
 msgstr ""
 
 #. i18n: file ./projects/base_k3badvanceddataimagesettings.ui line 100
-#: rc.cpp:1041
+#: rc.cpp:957
 #, no-c-format
 msgid "Add Joliet extensions to the file system"
 msgstr ""
 
 #. i18n: file ./projects/base_k3badvanceddataimagesettings.ui line 107
-#: rc.cpp:1044
+#: rc.cpp:960
 #, no-c-format
 msgid ""
 "<p>If this option is checked, K3b will add additional Joliet extensions to the "
@@ -5798,19 +5747,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/base_k3badvanceddataimagesettings.ui line 115
-#: rc.cpp:1051
+#: rc.cpp:967
 #, fuzzy, no-c-format
 msgid "Generate &UDF structures"
 msgstr "Екстрактирај ја XML структурата"
 
 #. i18n: file ./projects/base_k3badvanceddataimagesettings.ui line 118
-#: rc.cpp:1054
+#: rc.cpp:970
 #, no-c-format
 msgid "Add UDF structures to the file system"
 msgstr ""
 
 #. i18n: file ./projects/base_k3badvanceddataimagesettings.ui line 122
-#: rc.cpp:1057
+#: rc.cpp:973
 #, no-c-format
 msgid ""
 "<p>If this option is checked K3b will create UDF filesystem structures in "
@@ -5820,25 +5769,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/base_k3badvanceddataimagesettings.ui line 132
-#: rc.cpp:1061
+#: rc.cpp:977
 #, no-c-format
 msgid "Other Settings"
 msgstr ""
 
 #. i18n: file ./projects/base_k3badvanceddataimagesettings.ui line 151
-#: rc.cpp:1064
+#: rc.cpp:980
 #, no-c-format
 msgid "F&orce input charset:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3badvanceddataimagesettings.ui line 172
-#: rc.cpp:1067
+#: rc.cpp:983
 #, no-c-format
 msgid "Preserve file permissions (bac&kup)"
 msgstr ""
 
 #. i18n: file ./projects/base_k3badvanceddataimagesettings.ui line 176
-#: rc.cpp:1070
+#: rc.cpp:986
 #, no-c-format
 msgid ""
 "<p>If this option is checked, all files in the resulting file system will have "
@@ -5852,109 +5801,109 @@ msgstr ""
 
 #. i18n: file ./projects/base_k3bdatavolumedescwidget.ui line 17
 #: projects/k3bdataimagesettingswidget.cpp:150
-#: projects/k3bvcdburndialog.cpp:575 rc.cpp:1074
+#: projects/k3bvcdburndialog.cpp:575 rc.cpp:990
 #, no-c-format
 msgid "Volume Descriptor"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdatavolumedescwidget.ui line 50
-#: rc.cpp:1077
+#: rc.cpp:993
 #, no-c-format
 msgid "V&olume set name:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdatavolumedescwidget.ui line 61
-#: projects/k3bvcdburndialog.cpp:500 rc.cpp:1080
+#: projects/k3bvcdburndialog.cpp:500 rc.cpp:996
 #, no-c-format
 msgid "&Volume name:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdatavolumedescwidget.ui line 88
-#: rc.cpp:1083
+#: rc.cpp:999
 #, no-c-format
 msgid "P&reparer:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdatavolumedescwidget.ui line 99
-#: rc.cpp:1086
+#: rc.cpp:1002
 #, no-c-format
 msgid "P&ublisher:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdatavolumedescwidget.ui line 110
-#: rc.cpp:1089
+#: rc.cpp:1005
 #, no-c-format
 msgid "Volu&me set size:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdatavolumedescwidget.ui line 143
-#: projects/k3bvcdburndialog.cpp:503 rc.cpp:1093
+#: projects/k3bvcdburndialog.cpp:503 rc.cpp:1009
 #, no-c-format
 msgid "Volume set &number:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdatavolumedescwidget.ui line 176
-#: rc.cpp:1097
+#: rc.cpp:1013
 #, no-c-format
 msgid "S&ystem:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdatavolumedescwidget.ui line 195
-#: rc.cpp:1100
+#: rc.cpp:1016
 #, no-c-format
 msgid "&Application:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdatavolumedescwidget.ui line 264
-#: rc.cpp:1106
+#: rc.cpp:1022
 #, no-c-format
 msgid "Select a bibliographic file from the project"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdatavolumedescwidget.ui line 293
-#: rc.cpp:1112
+#: rc.cpp:1028
 #, fuzzy, no-c-format
 msgid "Select an abstract file from the project"
 msgstr "Користете „повлечи-и-пушти“ за да додадете датотеки на проектот."
 
 #. i18n: file ./projects/base_k3bdatavolumedescwidget.ui line 322
-#: rc.cpp:1118
+#: rc.cpp:1034
 #, fuzzy, no-c-format
 msgid "Select a copyright file from the project"
 msgstr "Користете „повлечи-и-пушти“ за да додадете датотеки на проектот."
 
 #. i18n: file ./projects/base_k3bdatavolumedescwidget.ui line 332
-#: rc.cpp:1121
+#: rc.cpp:1037
 #, no-c-format
 msgid "Abstract file:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3bdatavolumedescwidget.ui line 340
-#: rc.cpp:1124
+#: rc.cpp:1040
 #, fuzzy, no-c-format
 msgid "Copyright file:"
 msgstr "Ја затворам датотеката..."
 
 #. i18n: file ./projects/base_k3bdatavolumedescwidget.ui line 348
-#: rc.cpp:1127
+#: rc.cpp:1043
 #, no-c-format
 msgid "Bibliographic file:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiocdtextwidget.ui line 18
-#: rc.cpp:1130
+#: rc.cpp:1046
 #, no-c-format
 msgid "K3bAudioCDTextWidget"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiocdtextwidget.ui line 29
-#: rc.cpp:1133
+#: rc.cpp:1049
 #, no-c-format
 msgid "Write CD-Text"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiocdtextwidget.ui line 45
-#: rc.cpp:1137
+#: rc.cpp:1053
 #, no-c-format
 msgid ""
 "<p><b>CD-Text</b>\n"
@@ -5969,37 +5918,37 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiocdtextwidget.ui line 73
-#: rc.cpp:1144
+#: rc.cpp:1060
 #, no-c-format
 msgid "Perf&ormer:"
 msgstr ""
 
 #. i18n: file ./projects/base_k3baudiocdtextwidget.ui line 174
-#: rc.cpp:1162
+#: rc.cpp:1078
 #, no-c-format
 msgid "More Fiel&ds..."
 msgstr ""
 
 #. i18n: file ../plugins/encoder/ogg/base_k3boggvorbisencodersettingswidget.ui line 28
-#: rc.cpp:1165
+#: rc.cpp:1081
 #, fuzzy, no-c-format
 msgid "File Quality"
 msgstr "Именување на датотеката"
 
 #. i18n: file ../plugins/encoder/ogg/base_k3boggvorbisencodersettingswidget.ui line 47
-#: rc.cpp:1168
+#: rc.cpp:1084
 #, no-c-format
 msgid "&Quality level:"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/ogg/base_k3boggvorbisencodersettingswidget.ui line 53
-#: rc.cpp:1171
+#: rc.cpp:1087
 #, no-c-format
 msgid "Controls the quality of the encoded files"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/ogg/base_k3boggvorbisencodersettingswidget.ui line 56
-#: rc.cpp:1174
+#: rc.cpp:1090
 #, no-c-format
 msgid ""
 "<p>Vorbis' audio quality is not best measured in kilobits per second, but on a "
@@ -6013,115 +5962,115 @@ msgid ""
 msgstr ""
 
 #. i18n: file ../plugins/encoder/ogg/base_k3boggvorbisencodersettingswidget.ui line 69
-#: rc.cpp:1177 rc.cpp:1326
+#: rc.cpp:1093 rc.cpp:1242
 #, no-c-format
 msgid "textLabel1"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/ogg/base_k3boggvorbisencodersettingswidget.ui line 149
-#: rc.cpp:1180 rc.cpp:1329 rc.cpp:1364
+#: rc.cpp:1096 rc.cpp:1245 rc.cpp:1280
 #, no-c-format
 msgid "high quality"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/ogg/base_k3boggvorbisencodersettingswidget.ui line 165
-#: rc.cpp:1183 rc.cpp:1332
+#: rc.cpp:1099 rc.cpp:1248
 #, fuzzy, no-c-format
 msgid "small file"
 msgstr "Дат. со слика:"
 
 #. i18n: file ../plugins/encoder/ogg/base_k3boggvorbisencodersettingswidget.ui line 194
-#: rc.cpp:1186
+#: rc.cpp:1102
 #, no-c-format
 msgid "M&anual settings:"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/ogg/base_k3boggvorbisencodersettingswidget.ui line 247
-#: rc.cpp:1189
+#: rc.cpp:1105
 #, no-c-format
 msgid "&Upper bitrate:"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/ogg/base_k3boggvorbisencodersettingswidget.ui line 255
-#: rc.cpp:1192
+#: rc.cpp:1108
 #, no-c-format
 msgid "Lower &bitrate:"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/ogg/base_k3boggvorbisencodersettingswidget.ui line 303
-#: rc.cpp:1195 rc.cpp:1198 rc.cpp:1201
+#: rc.cpp:1111 rc.cpp:1114 rc.cpp:1117
 #, no-c-format
 msgid "kbps"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/ogg/base_k3boggvorbisencodersettingswidget.ui line 335
-#: rc.cpp:1204
+#: rc.cpp:1120
 #, no-c-format
 msgid "&Nominal bitrate:"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 28
-#: rc.cpp:1207
+#: rc.cpp:1123
 #, no-c-format
 msgid "Manual settings (used for all file types)"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 69
-#: rc.cpp:1210
+#: rc.cpp:1126
 #, no-c-format
 msgid "Sample rate:"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 75
-#: rc.cpp:1213
+#: rc.cpp:1129
 #, no-c-format
 msgid "Signed Linear"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 80
-#: rc.cpp:1216
+#: rc.cpp:1132
 #, no-c-format
 msgid "Unsigned Linear"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 85
-#: rc.cpp:1219
+#: rc.cpp:1135
 #, no-c-format
 msgid "u-law (logarithmic)"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 90
-#: rc.cpp:1222
+#: rc.cpp:1138
 #, no-c-format
 msgid "A-law (logarithmic)"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 95
-#: rc.cpp:1225
+#: rc.cpp:1141
 #, no-c-format
 msgid "ADPCM"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 100
-#: rc.cpp:1228
+#: rc.cpp:1144
 #, no-c-format
 msgid "IMA_ADPCM"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 105
-#: rc.cpp:1231
+#: rc.cpp:1147
 #, no-c-format
 msgid "GSM"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 110
-#: rc.cpp:1234
+#: rc.cpp:1150
 #, no-c-format
 msgid "Floating-Point"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 121
-#: rc.cpp:1237
+#: rc.cpp:1153
 #, no-c-format
 msgid ""
 "<p>The sample data encoding is signed linear (2's complement), unsigned linear, "
@@ -6149,130 +6098,130 @@ msgid ""
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 132
-#: rc.cpp:1241
+#: rc.cpp:1157
 #, no-c-format
 msgid "14400"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 143
-#: rc.cpp:1245
+#: rc.cpp:1161
 #, fuzzy, no-c-format
 msgid "Data size:"
 msgstr "Податочен режим:"
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 151
-#: rc.cpp:1248
+#: rc.cpp:1164
 #, fuzzy, no-c-format
 msgid "Data encoding:"
 msgstr "Податочен режим:"
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 159
-#: rc.cpp:1251
+#: rc.cpp:1167
 #, no-c-format
 msgid "Channels:"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 165
-#: rc.cpp:1254
+#: rc.cpp:1170
 #, no-c-format
 msgid "1 (mono)"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 170
-#: rc.cpp:1257
+#: rc.cpp:1173
 #, no-c-format
 msgid "2 (stereo)"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 175
-#: rc.cpp:1260
+#: rc.cpp:1176
 #, no-c-format
 msgid "4 (quad sound)"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 188
-#: rc.cpp:1263
+#: rc.cpp:1179
 #, no-c-format
 msgid "Bytes"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 193
-#: rc.cpp:1266
+#: rc.cpp:1182
 #, no-c-format
 msgid "16-bit Words"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui line 198
-#: rc.cpp:1269
+#: rc.cpp:1185
 #, no-c-format
 msgid "32-bit Words"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3bmanualbitratesettingswidget.ui line 38
-#: rc.cpp:1275
+#: rc.cpp:1191
 #, no-c-format
 msgid "Constant Bitrate"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3bmanualbitratesettingswidget.ui line 81
-#: rc.cpp:1278
+#: rc.cpp:1194
 #, no-c-format
 msgid "Variable Bitrate"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3bmanualbitratesettingswidget.ui line 142
-#: rc.cpp:1281
+#: rc.cpp:1197
 #, no-c-format
 msgid "Maximum bitrate:"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3bmanualbitratesettingswidget.ui line 150
-#: rc.cpp:1284
+#: rc.cpp:1200
 #, no-c-format
 msgid "Minimum bitrate:"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3bmanualbitratesettingswidget.ui line 166
-#: rc.cpp:1287
+#: rc.cpp:1203
 #, no-c-format
 msgid "Average bitrate:"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3bmanualbitratesettingswidget.ui line 198
-#: rc.cpp:1293
+#: rc.cpp:1209
 #, no-c-format
 msgid "Channel Mode"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3bmanualbitratesettingswidget.ui line 207
 #: ../plugins/decoder/mp3/k3bmaddecoder.cpp:407
-#: ../plugins/encoder/lame/k3blameencoder.cpp:119 rc.cpp:1296
+#: ../plugins/encoder/lame/k3blameencoder.cpp:119 rc.cpp:1212
 #, no-c-format
 msgid "Stereo"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3bmanualbitratesettingswidget.ui line 212
 #: ../plugins/decoder/mp3/k3bmaddecoder.cpp:405
-#: ../plugins/encoder/lame/k3blameencoder.cpp:120 rc.cpp:1299
+#: ../plugins/encoder/lame/k3blameencoder.cpp:120 rc.cpp:1215
 #, no-c-format
 msgid "Joint Stereo"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3bmanualbitratesettingswidget.ui line 217
 #: ../plugins/decoder/mp3/k3bmaddecoder.cpp:401
-#: ../plugins/encoder/lame/k3blameencoder.cpp:121 rc.cpp:1302
+#: ../plugins/encoder/lame/k3blameencoder.cpp:121 rc.cpp:1218
 #, no-c-format
 msgid "Mono"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3bmanualbitratesettingswidget.ui line 224
-#: rc.cpp:1305
+#: rc.cpp:1221
 #, no-c-format
 msgid "Select the channel mode."
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3bmanualbitratesettingswidget.ui line 233
-#: rc.cpp:1308
+#: rc.cpp:1224
 #, no-c-format
 msgid ""
 "<p>Select the channel mode of the resulting Mp3 file:\n"
@@ -6298,49 +6247,49 @@ msgid ""
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 43
-#: rc.cpp:1320
+#: rc.cpp:1236
 #, no-c-format
 msgid "Quality Settings"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 62
-#: rc.cpp:1323
+#: rc.cpp:1239
 #, no-c-format
 msgid "Preset:"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 214
-#: rc.cpp:1335
+#: rc.cpp:1251
 #, no-c-format
 msgid "Manual settings:"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 230
-#: rc.cpp:1338
+#: rc.cpp:1254
 #, no-c-format
 msgid "textLabel2"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 277
-#: rc.cpp:1341
+#: rc.cpp:1257
 #, no-c-format
 msgid "Change Settings..."
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 302
-#: rc.cpp:1347
+#: rc.cpp:1263
 #, no-c-format
 msgid "Encoder Quality"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 316
-#: rc.cpp:1350
+#: rc.cpp:1266
 #, no-c-format
 msgid "Choose the noise shaping & psycho acoustic algorithm."
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 324
-#: rc.cpp:1353
+#: rc.cpp:1269
 #, no-c-format
 msgid ""
 "<p>Bitrate is of course the main influence on quality. The higher the bitrate, "
@@ -6356,49 +6305,49 @@ msgid ""
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 348
-#: rc.cpp:1361
+#: rc.cpp:1277
 #, no-c-format
 msgid "fast encoding"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 395
-#: rc.cpp:1370
+#: rc.cpp:1286
 #, no-c-format
 msgid "Mark copyrighted"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 398
-#: rc.cpp:1373
+#: rc.cpp:1289
 #, no-c-format
 msgid "Mark the encoded file as being copyrighted."
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 406
-#: rc.cpp:1376
+#: rc.cpp:1292
 #, no-c-format
 msgid "Mark as original"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 409
-#: rc.cpp:1379
+#: rc.cpp:1295
 #, no-c-format
 msgid "Mark the encoded file as being a copy."
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 417
-#: rc.cpp:1382
+#: rc.cpp:1298
 #, no-c-format
 msgid "Strict ISO compliance"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 420
-#: rc.cpp:1385
+#: rc.cpp:1301
 #, no-c-format
 msgid "Enforce strict ISO compliance"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 424
-#: rc.cpp:1388
+#: rc.cpp:1304
 #, no-c-format
 msgid ""
 "<p>If this option is checked LAME will enforce the 7680 bit limitation on total "
@@ -6410,19 +6359,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 432
-#: rc.cpp:1392
+#: rc.cpp:1308
 #, fuzzy, no-c-format
 msgid "Error protection"
 msgstr "Авто-детекција"
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 435
-#: rc.cpp:1395
+#: rc.cpp:1311
 #, no-c-format
 msgid "Turn on CRC error protection."
 msgstr ""
 
 #. i18n: file ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui line 438
-#: rc.cpp:1398
+#: rc.cpp:1314
 #, no-c-format
 msgid ""
 "<p>If this option is checked a cyclic redundancy check (CRC) code will be added "
@@ -6432,7 +6381,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 29
-#: rc.cpp:1401
+#: rc.cpp:1317
 #, no-c-format
 msgid ""
 "<p>This dialog can be used to setup external command line applications as audio "
@@ -6444,49 +6393,49 @@ msgid ""
 msgstr ""
 
 #. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 45
-#: rc.cpp:1405
+#: rc.cpp:1321
 #, no-c-format
 msgid "Configured Encoders"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 65
-#: rc.cpp:1411
+#: rc.cpp:1327
 #, no-c-format
 msgid "Extension"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 76
-#: rc.cpp:1414 rc.cpp:1435
+#: rc.cpp:1330 rc.cpp:1351
 #, no-c-format
 msgid "Command"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 127
-#: rc.cpp:1420
+#: rc.cpp:1336
 #, no-c-format
 msgid "Edit..."
 msgstr ""
 
 #. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 135
-#: rc.cpp:1423
+#: rc.cpp:1339
 #, fuzzy, no-c-format
 msgid "Add..."
 msgstr "&Додај датотеки..."
 
 #. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 49
-#: rc.cpp:1429
+#: rc.cpp:1345
 #, no-c-format
 msgid "Name:"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 57
-#: rc.cpp:1432
+#: rc.cpp:1348
 #, no-c-format
 msgid "Filename extension:"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 90
-#: rc.cpp:1438
+#: rc.cpp:1354
 #, no-c-format
 msgid ""
 "<p><b>Command</b>"
@@ -6520,19 +6469,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 124
-#: rc.cpp:1456
+#: rc.cpp:1372
 #, no-c-format
 msgid "Swap &Byte Order"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 127
-#: rc.cpp:1459
+#: rc.cpp:1375
 #, no-c-format
 msgid "Swap the byte order of the input data"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 131
-#: rc.cpp:1462
+#: rc.cpp:1378
 #, no-c-format
 msgid ""
 "<p> If this option is checked K3b will swap the byte order of the input data. "
@@ -6542,19 +6491,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 139
-#: rc.cpp:1466
+#: rc.cpp:1382
 #, no-c-format
 msgid "Write W&ave Header"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 142
-#: rc.cpp:1469
+#: rc.cpp:1385
 #, no-c-format
 msgid "Create a wave header for the input data"
 msgstr ""
 
 #. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 145
-#: rc.cpp:1472
+#: rc.cpp:1388
 #, no-c-format
 msgid ""
 "<p>If this option is checked K3b will write a wave header. This is useful in "
@@ -8843,42 +8792,42 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: k3bprojectmanager.cpp:197
+#: k3bprojectmanager.cpp:201
 #, c-format
 msgid "AudioCD%1"
 msgstr "АудиоCD%1"
 
-#: k3bprojectmanager.cpp:203
+#: k3bprojectmanager.cpp:207
 #, c-format
 msgid "DataCD%1"
 msgstr "ПодаточноCD%1"
 
-#: k3bprojectmanager.cpp:209
+#: k3bprojectmanager.cpp:213
 #, c-format
 msgid "MixedCD%1"
 msgstr ""
 
-#: k3bprojectmanager.cpp:215
+#: k3bprojectmanager.cpp:219
 #, c-format
 msgid "VideoCD%1"
 msgstr "ВидеоCD%1"
 
-#: k3bprojectmanager.cpp:221
+#: k3bprojectmanager.cpp:225
 #, c-format
 msgid "eMovixCD%1"
 msgstr ""
 
-#: k3bprojectmanager.cpp:227
+#: k3bprojectmanager.cpp:231
 #, c-format
 msgid "eMovixDVD%1"
 msgstr ""
 
-#: k3bprojectmanager.cpp:233
+#: k3bprojectmanager.cpp:237
 #, c-format
 msgid "DataDVD%1"
 msgstr "ПодаточноDVD%1"
 
-#: k3bprojectmanager.cpp:239
+#: k3bprojectmanager.cpp:243
 #, c-format
 msgid "VideoDVD%1"
 msgstr "ВидеоDVD%1"
