@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digikamimageplugin_adjustcurves\n"
-"POT-Creation-Date: 2005-12-20 03:17+0100\n"
+"POT-Creation-Date: 2006-12-21 02:47+0100\n"
 "PO-Revision-Date: 2006-04-30 05:57+0200\n"
 "Last-Translator: Cvetan Stefanovski <cvetan5@gmail.com>\n"
 "Language-Team: Macedonian <mkde-l10n@list.sourceforge.net>\n"
@@ -25,43 +25,50 @@ msgid ""
 "Your emails"
 msgstr "cvetan5@gmail.com"
 
-#: adjustcurves.cpp:78 adjustcurves.cpp:87
+#: adjustcurves.cpp:91 imageplugin_adjustcurves.cpp:63
 msgid "Adjust Color Curves"
 msgstr "Прилагодување на бојата на кривите"
 
-#: adjustcurves.cpp:89
+#: adjustcurves.cpp:93
 msgid "An image-histogram-curves adjustment plugin for digiKam."
 msgstr "Приклучок за подесување на хистограм на криви за digiKam."
 
-#: adjustcurves.cpp:95
+#: adjustcurves.cpp:99
 msgid "Author and maintainer"
 msgstr "Автор и одржувач"
 
-#: adjustcurves.cpp:105
+#: adjustcurves.cpp:107
+msgid ""
+"<p>You can see here the image's curve-adjustments preview. You can pick color "
+"on image to see the color level corresponding on histogram."
+msgstr ""
+
+#: adjustcurves.cpp:117
 msgid "Channel:"
 msgstr "Канал:"
 
-#: adjustcurves.cpp:108 adjustcurves.cpp:113
+#: adjustcurves.cpp:120 adjustcurves.cpp:125
 msgid "Luminosity"
 msgstr "Осветленост"
 
-#: adjustcurves.cpp:109
+#: adjustcurves.cpp:121
 msgid "Red"
 msgstr "Црвена"
 
-#: adjustcurves.cpp:110
+#: adjustcurves.cpp:122
 msgid "Green"
 msgstr "Зелена"
 
-#: adjustcurves.cpp:111
+#: adjustcurves.cpp:123
 msgid "Blue"
 msgstr "Сина"
 
-#: adjustcurves.cpp:112
+#: adjustcurves.cpp:124
 msgid "Alpha"
 msgstr "Алфа"
 
-#: adjustcurves.cpp:114
+#: adjustcurves.cpp:126
+#, fuzzy
 msgid ""
 "<p>Select here the histogram channel to display:"
 "<p><b>Luminosity</b>: display the image's luminosity values."
@@ -70,7 +77,7 @@ msgid ""
 "<p><b>Blue</b>: display the blue image-channel values."
 "<p><b>Alpha</b>: display the alpha image-channel values. This channel "
 "corresponds to the transparency value and is supported by some image formats, "
-"such as PNG or GIF."
+"such as PNG or TIF."
 msgstr ""
 "<p>Тука изберете го хистограмскиот канал за приказ на:"
 "<p><b>Осветленост</b>: прикажи ги вредностите на осветленоста на сликата."
@@ -81,7 +88,7 @@ msgstr ""
 "одговара на вредноста на проѕирност, и е подржана од некои стандарди какви што "
 "се PNG или GIF."
 
-#: adjustcurves.cpp:127
+#: adjustcurves.cpp:136
 msgid ""
 "<p>Select here the histogram scale."
 "<p>If the image's maximal counts are small, you can use the linear scale."
@@ -95,49 +102,49 @@ msgstr ""
 "е голем, ако е искористен, сите вредности (големи и мали) ќе бидат видливи на "
 "графикот."
 
-#: adjustcurves.cpp:133
+#: adjustcurves.cpp:142
 msgid "<p>Linear"
 msgstr "<p>Линеарен"
 
-#: adjustcurves.cpp:141
+#: adjustcurves.cpp:150
 msgid "<p>Logarithmic"
 msgstr "<p>Логаритамски"
 
-#: adjustcurves.cpp:156
-msgid "Type:"
-msgstr "Тип:"
-
-#: adjustcurves.cpp:159 adjustcurves.cpp:161
-msgid "Smooth"
-msgstr "Мазно"
-
-#: adjustcurves.cpp:160
-msgid "Free"
-msgstr "Слободно"
-
-#: adjustcurves.cpp:162
+#: adjustcurves.cpp:173
 msgid ""
-"<p>Select here the curve type to draw for the current channel."
-"<p><b>Smooth</b>: this mode constrains the curve type to a smooth line with "
-"tension."
-"<p><b>Free</b>: with this mode, you can draw your curve free-hand with the "
-"mouse."
+"<p>Here you can see the target preview image histogram drawing of the selected "
+"image channel. This one is re-computed at any curves settings changes."
 msgstr ""
-"<p>Изберете го тука типот на кривата за цртање на моменталниот канал."
-"<p><b>Мазно</b>: овој режим го ограничува типот на кривата на мазна линија со "
-"тензија."
-"<p><b>Слободно</b>: со овој режим, можете да ја нацртате кривата со слободна "
-"рака, движејќи го глувчето."
 
-#: adjustcurves.cpp:177
-msgid "<p>This is the curve drawing of the selected image histogram channel"
+#: adjustcurves.cpp:188
+#, fuzzy
+msgid ""
+"<p>This is the curve drawing of the selected channel from original image"
 msgstr "<p>Ова е цртежот од криви на избраниот хисториграмски канал"
 
-#: adjustcurves.cpp:195
+#: adjustcurves.cpp:205
+msgid "Curve free mode"
+msgstr ""
+
+#: adjustcurves.cpp:206
+msgid "<p>With this button, you can draw your curve free-hand with the mouse."
+msgstr ""
+
+#: adjustcurves.cpp:214
+msgid "Curve smooth mode"
+msgstr ""
+
+#: adjustcurves.cpp:215
+msgid ""
+"<p>With this button, you constrains the curve type to a smooth line with "
+"tension."
+msgstr ""
+
+#: adjustcurves.cpp:230
 msgid "All channels shadow tone color picker"
 msgstr ""
 
-#: adjustcurves.cpp:196
+#: adjustcurves.cpp:231
 #, fuzzy
 msgid ""
 "<p>With this button, you can pick the color from original image used to set <b>"
@@ -148,41 +155,48 @@ msgstr ""
 "Shadow Tone</b> ги мазни точките на кривите на каналите на црвена, зелена, сина "
 "и на освлетленост."
 
-#: adjustcurves.cpp:205
+#: adjustcurves.cpp:240
 msgid "All channels middle tone color picker"
 msgstr ""
 
-#: adjustcurves.cpp:206
+#: adjustcurves.cpp:241
 msgid ""
 "<p>With this button, you can pick the color from original image used to set <b>"
 "Middle Tone</b> smooth curves point on Red, Green, Blue, and Luminosity "
 "channels."
 msgstr ""
 
-#: adjustcurves.cpp:215
+#: adjustcurves.cpp:250
 msgid "All channels highlight tone color picker"
 msgstr ""
 
-#: adjustcurves.cpp:216
+#: adjustcurves.cpp:251
 msgid ""
 "<p>With this button, you can pick the color from original image used to set <b>"
 "Highlight Tone</b> smooth curves point on Red, Green, Blue, and Luminosity "
 "channels."
 msgstr ""
 
-#: adjustcurves.cpp:221
+#: adjustcurves.cpp:258
 msgid "&Reset"
 msgstr "&Исчисти"
 
-#: adjustcurves.cpp:222
-msgid "<p>Reset curves' values from the current selected channel."
+#: adjustcurves.cpp:260
+msgid "Reset current channel curves' values."
+msgstr ""
+
+#: adjustcurves.cpp:261
+#, fuzzy
+msgid ""
+"<p>If you press this button, all curves' values from the current selected "
+"channel will be reset to the default values."
 msgstr "<p>Ги чисти вредносите на кривата од моменталниот избран канал."
 
-#: adjustcurves.cpp:233
+#: adjustcurves.cpp:275
 msgid "Over exposure indicator"
 msgstr "Индикатор на преизложеност"
 
-#: adjustcurves.cpp:234
+#: adjustcurves.cpp:276
 msgid ""
 "<p>If you enable this option, over-exposed pixels from the target image preview "
 "will be over-colored. This will not have an effect on the final rendering."
@@ -191,41 +205,23 @@ msgstr ""
 "планираната слика, ќе бидат пребоени. Ова нема да има ефект на крајното "
 "исцртување."
 
-#: adjustcurves.cpp:245
-#, fuzzy
-msgid ""
-"<p>You can see here the original image. You can pick a color on the image using "
-"the color picker tools to select shadow, middle, and highlight tones to adjust "
-"the curves' points in the Red, Green, Blue, and Luminosity Channels."
-msgstr ""
-"<p>Тука можете да ја видите оригиналната слика. Можете да изберете боја на "
-"сликата користејќи ја пипетата за боја за избирање на "
-
-#: adjustcurves.cpp:251
-msgid "<p>You can see here the image's curve-adjustments preview."
-msgstr "<p>Тука го гледате приказот на регулирањето на кривите во сликата."
-
-#: adjustcurves.cpp:359
-msgid "Position: x:%1  y:%2"
-msgstr "Позиција: x:%1  y:%2"
-
-#: adjustcurves.cpp:404
+#: adjustcurves.cpp:465
 msgid "Adjust Curve"
 msgstr "Регулирање на кривата"
 
-#: adjustcurves.cpp:497
+#: adjustcurves.cpp:567
 msgid "Select Gimp Curves File to Load"
 msgstr "Одберете датотека на GIMP криви за вчитување"
 
-#: adjustcurves.cpp:503
+#: adjustcurves.cpp:573
 msgid "Cannot load from the Gimp curves text file."
 msgstr "Не може да се вчита од текстуална датотека на GIMP криви."
 
-#: adjustcurves.cpp:519
+#: adjustcurves.cpp:589
 msgid "Gimp Curves File to Save"
 msgstr "Датотека на GIMP криви за зачувување"
 
-#: adjustcurves.cpp:525
+#: adjustcurves.cpp:595
 msgid "Cannot save to the Gimp curves text file."
 msgstr ""
 
@@ -244,3 +240,25 @@ msgstr "Поправ&и"
 #, no-c-format
 msgid "&Colors"
 msgstr "&Бои"
+
+#~ msgid "Type:"
+#~ msgstr "Тип:"
+
+#~ msgid "Smooth"
+#~ msgstr "Мазно"
+
+#~ msgid "Free"
+#~ msgstr "Слободно"
+
+#~ msgid "<p>Select here the curve type to draw for the current channel.<p><b>Smooth</b>: this mode constrains the curve type to a smooth line with tension.<p><b>Free</b>: with this mode, you can draw your curve free-hand with the mouse."
+#~ msgstr "<p>Изберете го тука типот на кривата за цртање на моменталниот канал.<p><b>Мазно</b>: овој режим го ограничува типот на кривата на мазна линија со тензија.<p><b>Слободно</b>: со овој режим, можете да ја нацртате кривата со слободна рака, движејќи го глувчето."
+
+#, fuzzy
+#~ msgid "<p>You can see here the original image. You can pick a color on the image using the color picker tools to select shadow, middle, and highlight tones to adjust the curves' points in the Red, Green, Blue, and Luminosity Channels."
+#~ msgstr "<p>Тука можете да ја видите оригиналната слика. Можете да изберете боја на сликата користејќи ја пипетата за боја за избирање на "
+
+#~ msgid "<p>You can see here the image's curve-adjustments preview."
+#~ msgstr "<p>Тука го гледате приказот на регулирањето на кривите во сликата."
+
+#~ msgid "Position: x:%1  y:%2"
+#~ msgstr "Позиција: x:%1  y:%2"
