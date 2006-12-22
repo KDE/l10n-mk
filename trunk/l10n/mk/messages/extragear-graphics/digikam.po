@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
-"POT-Creation-Date: 2006-12-21 09:46+0100\n"
+"POT-Creation-Date: 2006-12-22 09:05+0100\n"
 "PO-Revision-Date: 2005-05-18 14:31+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -396,8 +396,7 @@ msgstr "&Премести тука"
 
 #: digikam/albumfolderview.cpp:902 digikam/albumfolderview.cpp:998
 #: digikam/albumfolderview.cpp:1034 digikam/albumfolderview.cpp:1116
-#: digikam/albumiconview.cpp:1116 digikam/albumiconview.cpp:1156
-#: digikam/albumiconview.cpp:1198 digikam/tagfilterview.cpp:338
+#: digikam/albumiconview.cpp:1116 digikam/tagfilterview.cpp:338
 #: digikam/tagfolderview.cpp:671 digikam/tagfolderview.cpp:752
 #: digikam/tagfolderview.cpp:782 libs/imageproperties/talbumlistview.cpp:240
 #: libs/imageproperties/talbumlistview.cpp:321
@@ -1808,16 +1807,81 @@ msgstr "Забава"
 msgid "Todo"
 msgstr "Да се направи"
 
-#: digikam/albumwidgetstack.cpp:89
-#, fuzzy
-msgid "Back to Album"
-msgstr "Избери албум"
+#: digikam/main.cpp:72 digikam/welcomepageview.cpp:66
+msgid "digiKam"
+msgstr "digiKam"
 
-#: digikam/albumiconview.cpp:512 digikam/albumwidgetstack.cpp:90
-#: digikam/digikamapp.cpp:544
+#: digikam/main.cpp:66 digikam/welcomepageview.cpp:68
+msgid "A Photo-Management Application for KDE"
+msgstr "Апликација на KDE за манипулација со фотографии"
+
+#: digikam/welcomepageview.cpp:96
+msgid ""
+"_: %1: digiKam version; %2: help:// URL; %3: homepage URL; %4: prior KMail "
+"version; %5: prior KDE version; %6: generated list of new features; %7: "
+"First-time user text (only shown on first start); %8: generated list of "
+"important changes; --- end of comment ---\n"
+"<h2 style='margin-top: 0px;'>Welcome to digiKam %1</h2>"
+"<p>digiKam is a photo-management program for the K Desktop Environment. It is "
+"designed to organize your digital photograhs on your computer.</p>\n"
+"<ul>"
+"<li>digiKam has many powerful features which are described in the <a "
+"href=\"%2\">documentation</a></li>\n"
+"<li>The <a href=\"%3\">digiKam homepage</A> offers information about new "
+"versions of digiKam</li></ul>\n"
+"%8\n"
+"<p>Some of the new features in this release of digiKam include (compared to "
+"digiKam %4):</p>\n"
+"<ul>\n"
+"%5</ul>\n"
+"%6\n"
+"<p>We hope that you will enjoy digiKam.</p>\n"
+"<p>Thank you,</p>\n"
+"<p style='margin-bottom: 0px'>&nbsp; &nbsp; The digiKam Team</p>"
+msgstr ""
+
+#: digikam/welcomepageview.cpp:118
 #, fuzzy
-msgid "Edit..."
-msgstr "У&реди..."
+msgid "16 bits/color/pixels image support"
+msgstr "Бои:"
+
+#: digikam/welcomepageview.cpp:119
+#, fuzzy
+msgid "Full color management support"
+msgstr "Баланс на боите"
+
+#: digikam/welcomepageview.cpp:120
+msgid "Makernote and IPTC metadata support"
+msgstr ""
+
+#: digikam/welcomepageview.cpp:121
+msgid "Geolocalization of photograph"
+msgstr ""
+
+#: digikam/welcomepageview.cpp:122
+msgid "Sidebar used everywhere"
+msgstr ""
+
+#: digikam/welcomepageview.cpp:123
+msgid "Advanced RAW pictures decoding settings"
+msgstr ""
+
+#: digikam/welcomepageview.cpp:124
+msgid "Fast preview of RAW pictures"
+msgstr ""
+
+#: digikam/welcomepageview.cpp:125
+msgid "Metadata support for RAW pictures"
+msgstr ""
+
+#: digikam/welcomepageview.cpp:126
+msgid "New advanced options to download pictures from camera"
+msgstr ""
+
+#: digikam/welcomepageview.cpp:130
+msgid ""
+"<li>%1</li>\n"
+msgstr ""
 
 #: digikam/imagepreviewwidget.cpp:175
 #, fuzzy
@@ -1962,18 +2026,10 @@ msgstr "Автоматски пронајди и отвори апарат"
 msgid "Open camera dialog at <path>"
 msgstr ""
 
-#: digikam/main.cpp:66 digikam/welcomepage.cpp:68
-msgid "A Photo-Management Application for KDE"
-msgstr "Апликација на KDE за манипулација со фотографии"
-
 #: digikam/main.cpp:68
 #, c-format
 msgid "Using Kipi library version %1"
 msgstr "Користи верзија %1 на библиотеката Kipi"
-
-#: digikam/main.cpp:72 digikam/welcomepage.cpp:66
-msgid "digiKam"
-msgstr "digiKam"
 
 #: digikam/main.cpp:76
 #, fuzzy
@@ -2296,6 +2352,12 @@ msgstr "Заситување:"
 msgid "View..."
 msgstr "Преглед/уредување..."
 
+#: digikam/albumiconview.cpp:512 digikam/digikamapp.cpp:544
+#: digikam/imagepreviewview.cpp:71
+#, fuzzy
+msgid "Edit..."
+msgstr "У&реди..."
+
 #: digikam/albumiconview.cpp:513
 msgid "Open With"
 msgstr "Отвори со"
@@ -2332,16 +2394,37 @@ msgstr "Внесете ново име:"
 msgid "Album \"%1\""
 msgstr "Албуми"
 
-#: digikam/albumiconview.cpp:1153
-msgid "&Assign Tag '%1' to Selected Images"
-msgstr "&Додели ја ознаката „%1“ на избраните фотографии"
-
-#: digikam/albumiconview.cpp:1196
+#: digikam/albumiconview.cpp:1165
 #, fuzzy
-msgid "&Assign Tags to Selected Images"
+msgid "Assign '%1' to &All Items"
+msgstr "Додели ја ознаката „%1“ на ставените елементи"
+
+#: digikam/albumiconview.cpp:1169
+#, fuzzy
+msgid "Assign '%1' to &Selected Items"
 msgstr "&Додели ја ознаката „%1“ на избраните фотографии"
 
-#: digikam/albumiconview.cpp:1369
+#: digikam/albumiconview.cpp:1173
+#, fuzzy
+msgid "Assign '%1' to &Dropped Item"
+msgstr "Додели ја ознаката „%1“ на ставените елементи"
+
+#: digikam/albumiconview.cpp:1247
+#, fuzzy
+msgid "Assign Tags to &All Items"
+msgstr "&Додели ја ознаката „%1“ на избраните фотографии"
+
+#: digikam/albumiconview.cpp:1250
+#, fuzzy
+msgid "Assign Tags to &Selected Items"
+msgstr "&Додели ја ознаката „%1“ на избраните фотографии"
+
+#: digikam/albumiconview.cpp:1253
+#, fuzzy
+msgid "Assign Tags to &Dropped Item"
+msgstr "Додели ја ознаката „%1“ на ставените елементи"
+
+#: digikam/albumiconview.cpp:1459
 #, c-format
 msgid "Failed to correct Exif orientation for file %1."
 msgstr "Не успеав да ја поправам ориентацијата Exif за датотеката %1."
@@ -2383,6 +2466,11 @@ msgstr "Целната адреса %1 не е валидна."
 #: digikam/kipiinterface.cpp:674
 msgid "Target album is not in the albums library."
 msgstr "Целниот албум не е во библиотеката со албуми."
+
+#: digikam/imagepreviewview.cpp:70 digikam/mediaplayerview.cpp:74
+#, fuzzy
+msgid "Back to Album"
+msgstr "Избери албум"
 
 #: digikam/datefolderview.cpp:119
 #, fuzzy
@@ -3008,7 +3096,7 @@ msgstr "Датум:"
 msgid "Searches"
 msgstr ""
 
-#: digikam/digikamview.cpp:773
+#: digikam/digikamview.cpp:776
 #, fuzzy
 msgid "Select Image to Add"
 msgstr "Избриши ознака"
@@ -3017,74 +3105,6 @@ msgstr "Избриши ознака"
 #, fuzzy
 msgid "Add New Tag..."
 msgstr "Нова ознака..."
-
-#: digikam/welcomepage.cpp:96
-msgid ""
-"_: %1: digiKam version; %2: help:// URL; %3: homepage URL; %4: prior KMail "
-"version; %5: prior KDE version; %6: generated list of new features; %7: "
-"First-time user text (only shown on first start); %8: generated list of "
-"important changes; --- end of comment ---\n"
-"<h2 style='margin-top: 0px;'>Welcome to digiKam %1</h2>"
-"<p>digiKam is a photo-management program for the K Desktop Environment. It is "
-"designed to organize your digital photograhs on your computer.</p>\n"
-"<ul>"
-"<li>digiKam has many powerful features which are described in the <a "
-"href=\"%2\">documentation</a></li>\n"
-"<li>The <a href=\"%3\">digiKam homepage</A> offers information about new "
-"versions of digiKam</li></ul>\n"
-"%8\n"
-"<p>Some of the new features in this release of digiKam include (compared to "
-"digiKam %4):</p>\n"
-"<ul>\n"
-"%5</ul>\n"
-"%6\n"
-"<p>We hope that you will enjoy digiKam.</p>\n"
-"<p>Thank you,</p>\n"
-"<p style='margin-bottom: 0px'>&nbsp; &nbsp; The digiKam Team</p>"
-msgstr ""
-
-#: digikam/welcomepage.cpp:118
-#, fuzzy
-msgid "16 bits/color/pixels image support"
-msgstr "Бои:"
-
-#: digikam/welcomepage.cpp:119
-#, fuzzy
-msgid "Full color management support"
-msgstr "Баланс на боите"
-
-#: digikam/welcomepage.cpp:120
-msgid "Makernote and IPTC metadata support"
-msgstr ""
-
-#: digikam/welcomepage.cpp:121
-msgid "Geolocalization of photograph"
-msgstr ""
-
-#: digikam/welcomepage.cpp:122
-msgid "Sidebar used everywhere"
-msgstr ""
-
-#: digikam/welcomepage.cpp:123
-msgid "Advanced RAW pictures decoding settings"
-msgstr ""
-
-#: digikam/welcomepage.cpp:124
-msgid "Fast preview of RAW pictures"
-msgstr ""
-
-#: digikam/welcomepage.cpp:125
-msgid "Metadata support for RAW pictures"
-msgstr ""
-
-#: digikam/welcomepage.cpp:126
-msgid "New advanced options to download pictures from camera"
-msgstr ""
-
-#: digikam/welcomepage.cpp:130
-msgid ""
-"<li>%1</li>\n"
-msgstr ""
 
 #: showfoto/setup/setupeditor.cpp:84 utilities/setup/setupeditor.cpp:76
 msgid "Interface Options"
