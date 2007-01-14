@@ -1,12 +1,12 @@
 # translation of pwmanager.po to Macedonian
 #
 # Aleksandar Ruzin <ruzin@lugola.net>, 2006.
-# Bozidar Proevski <bobibobi@freemail.com.mk>, 2006.
+# Bozidar Proevski <bobibobi@freemail.com.mk>, 2006, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: pwmanager\n"
 "POT-Creation-Date: 2006-03-13 04:02+0100\n"
-"PO-Revision-Date: 2006-07-15 21:54+0200\n"
+"PO-Revision-Date: 2007-01-10 22:18+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -89,14 +89,12 @@ msgid "&Erase SmartCard..."
 msgstr "&Избриши ја паметната картичка..."
 
 #: pwmanager/pwm.cpp:264
-#, fuzzy
 msgid "E&xport SmartKey To KeyFile..."
-msgstr "Изнеси го паметниот клуч во &датотека..."
+msgstr "Изнеси паметен клуч во &датотека со клучеви..."
 
 #: pwmanager/pwm.cpp:267
-#, fuzzy
 msgid "I&mport SmartKey From KeyFile..."
-msgstr "В&неси паметен клуч од датотека..."
+msgstr "В&неси паметен клуч од датотека со клучеви..."
 
 #. i18n: file ./pwmanager/masterkey/newmasterkeywnd.ui line 149
 #: pwmanager/pwm.cpp:269 rc.cpp:100
@@ -182,8 +180,7 @@ msgstr "Записот веќе постои"
 msgid ""
 "The maximum possible number of entries has been reached: you cannot add more "
 "entries."
-msgstr ""
-"Достигнат е максималниот можен број записи. Не може да додавате повеќе записи."
+msgstr "Достигнат е максималниот можен број записи. Не може да додавате повеќе записи."
 
 #: pwmanager/pwm.cpp:546
 msgid "Maximum Number of Entries"
@@ -420,13 +417,14 @@ msgid "Open Error"
 msgstr "Грешка при отворањето."
 
 #: pwmanager/csv.cpp:48
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "_n: Maximum file size is 1 Byte.\n"
 "Maximum file size is %n Bytes."
 msgstr ""
 "Максимална големина на датотеката е 1 бајт.\n"
-"Максимална големина на датотеката е %n бајтови."
+"Максимална големина на датотеката е %n бајти.\n"
+"Максимална големина на датотеката е %n бајти."
 
 #: pwmanager/csv.cpp:50
 msgid "File too Big"
@@ -490,13 +488,13 @@ msgid ""
 "It is impossible to generate a sane password with the selected charset(s).\n"
 "Please select more charsets."
 msgstr ""
-"Одбрано е неточно множество на знаци.\n"
-"Со избраното множество на знаци невозможно е генеирање на разумна лозинка.\n"
-"Ве молам изберете повеќе множества на знаци."
+"Одбрано е неточно множество знаци.\n"
+"Со избраното множество знаци невозможно е генеирање на разумна лозинка.\n"
+"Ве молам изберете повеќе множества знаци."
 
 #: pwmanager/pwgenwndimpl.cpp:99
 msgid "Incorrect Charset Selection"
-msgstr "Избрано е неточно множество на знаци."
+msgstr "Избрано е неточно множество знаци."
 
 #: pwmanager/pwgenwndimpl.cpp:146
 msgid ""
@@ -523,8 +521,8 @@ msgid ""
 "This is your new Password.\n"
 "Click on OK to copy it to the clipboard."
 msgstr ""
-"Ова е вашата нова лозинка.\n"
-"Кликнете на Во ред за да ја копирате на таблата со исечоци."
+"Ова е Вашата нова лозинка.\n"
+"Кликнете „Во ред“ за да ја копирате на таблата со исечоци."
 
 #: pwmanager/pwminit.cpp:406
 msgid ""
@@ -539,7 +537,7 @@ msgid ""
 "No tray Icon available. Commandline option \"--mintray\" is replaced by "
 "\"--minimized\"."
 msgstr ""
-"Иконата на фиоката не е достапна. Опцијата \"--mintray\" во командната линија е "
+"Иконата на сис. лента не е достапна. Опцијата \"--mintray\" во командната линија е "
 "заменета со \"--minimized\"."
 
 #: pwmanager/pwmprint.cpp:46
@@ -728,7 +726,7 @@ msgstr "Изврши \"Launcher\" и копирај ја лозинката."
 
 #: pwmanager/pwmtray.cpp:221
 msgid "&Open Main Manager Window"
-msgstr "&отвори го главниот менаџерски прозорец."
+msgstr "&Отвори го главниот прозорец на менаџерот"
 
 #: pwmanager/pwmtray.cpp:227
 msgid "&Close This Document"
@@ -744,7 +742,7 @@ msgstr "&Отвори датотека..."
 
 #: pwmanager/pwmtray.cpp:408
 msgid "&Remove From Tray"
-msgstr "Отст&рани од фиока."
+msgstr "Отст&рани од сис. лента."
 
 #: pwmanager/main.cpp:39
 msgid "The convenient way of managing passwords"
@@ -756,7 +754,7 @@ msgstr "Прозорците се минимизирани."
 
 #: pwmanager/main.cpp:44
 msgid "Windows minimized to tray"
-msgstr "Прозорците се минимизирани во фиока."
+msgstr "Прозорците се минимизирани во сис. лента."
 
 #: pwmanager/main.cpp:45
 msgid "Open all \"files\" deeplocked"
@@ -779,8 +777,8 @@ msgid ""
 msgstr ""
 "Оригинална имплементација на \n"
 "\"categories\" и на дрвото за лозинки \n"
-"во системсата фиока. Оригиналните имплементации на \n"
-"бојни видливи подобувања."
+"во сис. лента. Оригиналните имплементации на \n"
+"бројни видливи подобувања."
 
 #: pwmanager/main.cpp:91
 msgid "Former Gentoo ebuild maintainer."
@@ -932,8 +930,7 @@ msgstr "PwManager: Пристапување кон паметната карта
 
 #: pwmanager/masterkey/smartkey/smartkey_backend.cpp:132
 msgid "Please insert the SmartCard into your SmartCard Terminal."
-msgstr ""
-"Ве молам внесете ја паметната карта во вашиот терминал за паметна карта."
+msgstr "Ве молам внесете ја паметната карта во вашиот терминал за паметна карта."
 
 #: pwmanager/masterkey/smartkey/smartkey_backend.cpp:139
 msgid ""
@@ -1354,11 +1351,11 @@ msgstr ""
 
 #: pwmanager/pwmdocui.cpp:238
 msgid "No SmartCard Support"
-msgstr "Нема поддршка за паметна карта."
+msgstr "Нема поддршка за паметна картичка."
 
 #: pwmanager/pwmdocui.cpp:257
 msgid "<LOCKED>"
-msgstr "<LOCKED>"
+msgstr "<ЗАКЛУЧЕНО>"
 
 #: pwmanager/pwmdocui.cpp:262
 msgid "DEEP-LOCKED"
@@ -1402,11 +1399,11 @@ msgstr "Автоматско стартовање"
 
 #: pwmanager/configuration.cpp:246
 msgid "Show icon in system-tray"
-msgstr "Прикажи ја иконата во системската - фиока"
+msgstr "Прикажи ја иконата во сис. лента"
 
 #: pwmanager/configuration.cpp:248
 msgid "Auto-minimize to tray on startup"
-msgstr "Автоматско - спуштање во фиока на почеток на вклучување"
+msgstr "Автоматско спуштање во сис. лента на вклучување"
 
 #: pwmanager/configuration.cpp:251
 msgid "Open document with passwords unlocked"
@@ -1422,7 +1419,7 @@ msgstr "Автоматско заклучување на новите запис
 
 #: pwmanager/configuration.cpp:263
 msgid "Do not minimize windows into tray. (Close the window)"
-msgstr "Не ги минимизирај прозорците во фиоката. (затвори ги прозорците)"
+msgstr "Не ги минимизирај прозорците во сис. лента. (затвори ги прозорците)"
 
 #: pwmanager/configuration.cpp:267
 msgid "Allow execution of external programs"
@@ -1841,37 +1838,37 @@ msgstr "Должина на лозинката"
 #: rc.cpp:136
 #, no-c-format
 msgid "Make pronounceable password"
-msgstr "Направа да лозинката биде изговорлива"
+msgstr "Направи изговорлива лозинка"
 
 #. i18n: file ./pwmanager/pwgenwnd.ui line 149
 #: rc.cpp:139
 #, no-c-format
 msgid "Character Set"
-msgstr "Множество на знаци"
+msgstr "Множество знаци"
 
 #. i18n: file ./pwmanager/pwgenwnd.ui line 168
 #: rc.cpp:142
 #, no-c-format
 msgid "Lowercase:"
-msgstr "Мали букви"
+msgstr "Мали букви:"
 
 #. i18n: file ./pwmanager/pwgenwnd.ui line 196
 #: rc.cpp:145
 #, no-c-format
 msgid "abc"
-msgstr "абв"
+msgstr "abc"
 
 #. i18n: file ./pwmanager/pwgenwnd.ui line 214
 #: rc.cpp:148
 #, no-c-format
 msgid "Uppercase:"
-msgstr "Глоеми букви:"
+msgstr "Големи букви:"
 
 #. i18n: file ./pwmanager/pwgenwnd.ui line 242
 #: rc.cpp:151
 #, no-c-format
 msgid "ABC"
-msgstr "АБВ"
+msgstr "ABC"
 
 #. i18n: file ./pwmanager/pwgenwnd.ui line 260
 #: rc.cpp:154
@@ -1889,7 +1886,7 @@ msgstr "123"
 #: rc.cpp:160
 #, no-c-format
 msgid "Special characters:"
-msgstr "Специјални знаци"
+msgstr "Специјални знаци:"
 
 #. i18n: file ./pwmanager/pwgenwnd.ui line 331
 #: rc.cpp:163
@@ -1901,7 +1898,7 @@ msgstr "!\"$%&/()=?,.-;:_+"
 #: rc.cpp:166
 #, no-c-format
 msgid "Spaces (blank characters)"
-msgstr "Растиојанија (празни знаци) "
+msgstr "Растојанија (празни знаци)"
 
 #. i18n: file ./pwmanager/pwgenwnd.ui line 357
 #: rc.cpp:169
@@ -1913,7 +1910,7 @@ msgstr "Кориснички дефинирани:"
 #: rc.cpp:172
 #, no-c-format
 msgid "Enable character set filtering"
-msgstr "Активирај филтрирање на множестото на знаци"
+msgstr "Активирај филтрирање на множеството знаци"
 
 #. i18n: file ./pwmanager/pwgenwnd.ui line 431
 #: rc.cpp:175
@@ -1935,7 +1932,7 @@ msgid ""
 "\"stdout\", here to generate your password. \"makepasswd\" is for example such "
 "a program. Just enter the shell command-line below."
 msgstr ""
-"Можете да користите било која пограма до командната линија која генерира "
+"Може да користите било која пограма до командната линија која генерира "
 "лозинка во \"stdout\" . \"makepasswd\" е на пример таков програм. Само внеси ја "
 "во школката-командна линија подолу."
 
@@ -1943,13 +1940,13 @@ msgstr ""
 #: rc.cpp:184
 #, no-c-format
 msgid "Shell command:"
-msgstr "Школка команда:"
+msgstr "Наредба за школка:"
 
 #. i18n: file ./pwmanager/pwgenwnd.ui line 534
 #: rc.cpp:187
 #, no-c-format
 msgid "&Generate Now"
-msgstr "&Генеирај сега"
+msgstr "&Генерирај сега"
 
 #. i18n: file ./pwmanager/findwnd.ui line 37
 #: rc.cpp:196
@@ -2088,3 +2085,4 @@ msgstr "Вредност на запис"
 #, no-c-format
 msgid "Add..."
 msgstr "Додади..."
+
