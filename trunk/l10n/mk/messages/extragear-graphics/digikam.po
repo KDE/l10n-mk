@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
-"POT-Creation-Date: 2007-02-06 08:08+0100\n"
+"POT-Creation-Date: 2007-02-07 09:09+0100\n"
 "PO-Revision-Date: 2005-05-18 14:31+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -471,7 +471,7 @@ msgstr "Додели ознака"
 
 #: libs/imageproperties/imagepropertiessidebar.cpp:66
 #: libs/imageproperties/imagepropertiessidebarcamgui.cpp:100
-#: utilities/setup/setup.cpp:142
+#: utilities/setup/setup.cpp:148
 msgid "Metadata"
 msgstr ""
 
@@ -674,8 +674,8 @@ msgstr "Избор"
 msgid "<p>This is the histogram drawing of the selected image channel"
 msgstr "<p>Ова е хистограмот за одбраниот канал на фотографијата"
 
+#: libs/dcraw/dcrawsettingswidget.cpp:259
 #: libs/imageproperties/imagepropertiescolorstab.cpp:258
-#: utilities/setup/dcrawsettingswidget.cpp:251
 msgid "Range:"
 msgstr ""
 
@@ -933,6 +933,207 @@ msgid ""
 "to view or edit any images in Raw file formats. Please check %6 installation on "
 "your computer."
 "<p>Note: at least, dcraw version %7 is required by %8</p></qt>"
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:110
+#, fuzzy
+msgid "16 bits color depth"
+msgstr "Бои:"
+
+#: libs/dcraw/dcrawsettingswidget.cpp:111
+msgid ""
+"<p>If enabled, all RAW files will be decoded to 16-bit color depth using a "
+"linear gamma curve. To prevent black picture rendering in the editor, it is "
+"recommended to use Color Management in this mode."
+"<p>If disabled, all RAW files will be decoded to 8-bit color depth with a "
+"BT.709 gamma curve and a 99th-percentile white point. This mode is faster than "
+"16-bit decoding."
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:120
+#, fuzzy, c-format
+msgid "dcraw version %1"
+msgstr "Kipi верзија: %1"
+
+#: libs/dcraw/dcrawsettingswidget.cpp:123
+msgid "Visit dcraw project website"
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:126
+msgid "Interpolate RGB as four colors"
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:127
+msgid ""
+"<p><b>Interpolate RGB as four colors</b>"
+"<p>The default is to assume that all green pixels are the same. If even-row "
+"green pixels are more sensitive to ultraviolet light than odd-row this "
+"difference causes a mesh pattern in the output; using this option solves this "
+"problem with minimal loss of detail."
+"<p>To resume, this option blurs the image a little, but it eliminates false 2x2 "
+"mesh patterns with VNG quality method or mazes with AHD quality method."
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:141
+#, fuzzy
+msgid "Use camera white balance"
+msgstr "Користи ги имињата од апаратот"
+
+#: libs/dcraw/dcrawsettingswidget.cpp:142
+msgid ""
+"<p><b>Use camera white balance</b>"
+"<p>Use the camera's custom white-balance settings. The default is to use fixed "
+"daylight values, calculated from sample images. If this can't be found, reverts "
+"to the default."
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:151
+#, fuzzy
+msgid "Automatic color balance"
+msgstr "Баланс на боите"
+
+#: libs/dcraw/dcrawsettingswidget.cpp:152
+msgid ""
+"<p><b>Automatic color balance</b>"
+"<p>The default is to use a fixed color balance based on a white card "
+"photographed in sunlight."
+"<p>"
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:160
+msgid "Use Super-CCD secondary sensors"
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:161
+msgid ""
+"<p><b>Use Super CCD secondary sensors</b>"
+"<p>For Fuji Super CCD SR cameras, use the secondary sensors, in effect "
+"underexposing the image by four stops to reveal detail in the highlights. For "
+"all other camera types this option is ignored."
+"<p>"
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:171
+#, fuzzy
+msgid "Highlights:"
+msgstr "Висина:"
+
+#: libs/dcraw/dcrawsettingswidget.cpp:173
+msgid "Solid white"
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:174
+#, fuzzy
+msgid "Unclip"
+msgstr "Преврти"
+
+#: libs/dcraw/dcrawsettingswidget.cpp:175
+msgid "Reconstruct"
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:176
+msgid ""
+"<p><b>Highlights</b>"
+"<p>Select here the highlight clipping method:"
+"<p><b>Solid white</b>: Clip all highlights to solid white"
+"<p><b>Unclip</b>: Leave highlights unclipped in various shades of pink"
+"<p><b>Reconstruct</b>: Reconstruct highlights using a level value."
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:186
+msgid "Level:"
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:189
+msgid ""
+"<p><b>Level</b>"
+"<p>Specify the reconstruct highlights level of output image. Low values favor "
+"whites and high values favor colors."
+msgstr ""
+
+#: imageplugins/imageeffect_bcg.cpp:147 libs/dcraw/dcrawsettingswidget.cpp:197
+msgid "Brightness:"
+msgstr "Осветлување:"
+
+#: libs/dcraw/dcrawsettingswidget.cpp:201
+msgid ""
+"<p><b>Brightness</b>"
+"<p>Specify the brightness level of ouput image.The default value is 1.0."
+"<p>"
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:209
+#, fuzzy
+msgid "Quality:"
+msgstr "&Квалитет на JPEG:"
+
+#: libs/dcraw/dcrawsettingswidget.cpp:211
+msgid "Bilinear interpolation"
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:212
+msgid "VNG interpolation"
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:213
+msgid "AHD interpolation"
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:214
+msgid ""
+"<p><b>Quality</b>"
+"<p>Select here the demosaicing RAW images decoding interpolation method. A "
+"demosaicing algorithm is a digital image process used to interpolate a complete "
+"image from the partial raw data received from the color-filtered image sensor "
+"internal to many digital cameras in form of a matrix of colored pixels. Also "
+"known as CFA interpolation or color reconstruction, another common spelling is "
+"demosaicking. There are 3 methods to demosaic RAW images:"
+"<p><b>Bilinear</b>: use high-speed but low-quality bilinear interpolation "
+"(default - for a slow computer). In this method, the red value of a non-red "
+"pixel is computed as the average of the adjacent red pixels, and similar for "
+"blue and green."
+"<p><b>VNG</b>: use Variable Number of Gradients interpolation. This method "
+"computes gradients near the pixel of interest and uses the lower gradients "
+"(representing smoother and more similar parts of the image) to make an "
+"estimate."
+"<p><b>AHD</b>: use Adaptive Homogeneity-Directed interpolation. This method "
+"selects the direction of interpolation so as to maximize a homogeneity metric, "
+"thus typically minimizing color artifacts."
+"<p>"
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:237
+msgid "Enable noise reduction"
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:238
+msgid ""
+"<p><b>Enable Noise Reduction</b>"
+"<p>Toggle bilateral filter to smooth noise while preserving edges. This option "
+"can be use to reduce low noise. The pictures edges are preserved because it is "
+"applied in CIELab color space instead of RGB."
+"<p>"
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:248
+#, fuzzy
+msgid "Domain:"
+msgstr "Вчитување: %1"
+
+#: libs/dcraw/dcrawsettingswidget.cpp:249
+msgid ""
+"<p><b>Domain</b>"
+"<p>Set here the noise reduction Sigma Domain in units of pixels. The default "
+"value is 2.0."
+"<p>"
+msgstr ""
+
+#: libs/dcraw/dcrawsettingswidget.cpp:260
+msgid ""
+"<p><b>Range</b>"
+"<p>Set here the noise reduction Sigma Range in units of CIELab colorspace. The "
+"default value is 4.0."
+"<p>"
 msgstr ""
 
 #: digikam/albumfiletip.cpp:341 libs/thumbbar/thumbbar.cpp:764
@@ -1911,11 +2112,11 @@ msgstr "Забава"
 msgid "Todo"
 msgstr "Да се направи"
 
-#: digikam/main.cpp:94 digikam/welcomepageview.cpp:66
+#: digikam/main.cpp:100 digikam/welcomepageview.cpp:66
 msgid "digiKam"
 msgstr "digiKam"
 
-#: digikam/main.cpp:91 digikam/welcomepageview.cpp:68
+#: digikam/main.cpp:97 digikam/welcomepageview.cpp:68
 msgid "A Photo-Management Application for KDE"
 msgstr "Апликација на KDE за манипулација со фотографии"
 
@@ -2118,114 +2319,119 @@ msgstr ""
 msgid "No Date"
 msgstr "Според датумот"
 
-#: digikam/main.cpp:72
+#: digikam/main.cpp:76
 msgid "Automatically detect and open camera"
 msgstr "Автоматски пронајди и отвори апарат"
 
-#: digikam/main.cpp:73
+#: digikam/main.cpp:77
 msgid "Open camera dialog at <path>"
 msgstr ""
 
-#: digikam/main.cpp:85
+#: digikam/main.cpp:89
 #, c-format
 msgid "Using Kipi library version %1"
 msgstr "Користи верзија %1 на библиотеката Kipi"
 
-#: digikam/main.cpp:87
+#: digikam/main.cpp:91
+#, fuzzy, c-format
+msgid "Using KExiv2 library version %1"
+msgstr "Користи верзија %1 на библиотеката Kipi"
+
+#: digikam/main.cpp:93
 #, fuzzy, c-format
 msgid "Using Exiv2 library version %1"
 msgstr "Користи верзија %1 на библиотеката Kipi"
 
-#: digikam/main.cpp:89
+#: digikam/main.cpp:95
 #, fuzzy, c-format
 msgid "Using Gphoto2 library version %1"
 msgstr "Користи верзија %1 на библиотеката Kipi"
 
-#: digikam/main.cpp:98
+#: digikam/main.cpp:104
 #, fuzzy
 msgid "(c) 2002-2007, digiKam developers team"
 msgstr "(c) 2004-2005, развојниот тим на digiKam "
 
-#: digikam/main.cpp:105 showfoto/main.cpp:61
+#: digikam/main.cpp:111 showfoto/main.cpp:61
 msgid "Main developer and coordinator"
 msgstr ""
 
-#: digikam/main.cpp:110 digikam/main.cpp:115 digikam/main.cpp:120
-#: digikam/main.cpp:125 digikam/main.cpp:130 digikam/main.cpp:135
-#: digikam/main.cpp:140 digikam/main.cpp:145 showfoto/main.cpp:66
+#: digikam/main.cpp:116 digikam/main.cpp:121 digikam/main.cpp:126
+#: digikam/main.cpp:131 digikam/main.cpp:136 digikam/main.cpp:141
+#: digikam/main.cpp:146 digikam/main.cpp:151 showfoto/main.cpp:66
 #: showfoto/main.cpp:71 showfoto/main.cpp:76 showfoto/main.cpp:81
 #: showfoto/main.cpp:86 showfoto/main.cpp:91
 msgid "Developer"
 msgstr "Развивач"
 
-#: digikam/main.cpp:150
+#: digikam/main.cpp:156
 msgid "Danish translations"
 msgstr "Дански превод"
 
-#: digikam/main.cpp:155
+#: digikam/main.cpp:161
 msgid "Italian translations"
 msgstr "Италијански превод"
 
-#: digikam/main.cpp:160
+#: digikam/main.cpp:166
 msgid "German translations"
 msgstr "Германски превод"
 
-#: digikam/main.cpp:165
+#: digikam/main.cpp:171
 msgid "German translations and beta tester"
 msgstr "Германски превод и бета тестер"
 
-#: digikam/main.cpp:170
+#: digikam/main.cpp:176
 msgid "Spanish translations"
 msgstr "Шпански превод"
 
-#: digikam/main.cpp:175
+#: digikam/main.cpp:181
 msgid "Czech translations"
 msgstr "Чешки превод"
 
-#: digikam/main.cpp:180
+#: digikam/main.cpp:186
 msgid "Hungarian translations"
 msgstr "Унгарски превод"
 
-#: digikam/main.cpp:185
+#: digikam/main.cpp:191
 msgid "Dutch translations"
 msgstr "Холандски превод"
 
-#: digikam/main.cpp:190
+#: digikam/main.cpp:196
 msgid "Polish translations"
 msgstr "Полски превод"
 
-#: digikam/main.cpp:195
+#: digikam/main.cpp:201
 msgid "Bug reports and patches"
 msgstr "Извештаи за бубачки и закрпи"
 
-#: digikam/main.cpp:200
+#: digikam/main.cpp:206
 msgid "Beta tester"
 msgstr "Бета тестер"
 
-#: digikam/main.cpp:205
+#: digikam/main.cpp:211
 msgid "Plugin contributor and beta tester"
 msgstr "Развивач на приклучоци и бета тестер"
 
-#: digikam/main.cpp:210
+#: digikam/main.cpp:216
 msgid "Feedback and patches. Handbook writer"
 msgstr "Повратни информации и закрпи. Автор на прирачникот"
 
-#: digikam/main.cpp:215
+#: digikam/main.cpp:221
 #, fuzzy
 msgid "digiKam website banner and application icons"
 msgstr "Банерот за веблокацијата на digiKam и иконите во програмата"
 
-#: digikam/main.cpp:220
+#: digikam/main.cpp:226
 msgid "Various usability fixes and general application polishing"
 msgstr ""
 "Разни поправки за користење и општо поправање на степенот на употребливост на "
 "програмата"
 
-#: digikam/main.cpp:225
+#: digikam/main.cpp:231
 msgid "digiKam website, Feedback"
 msgstr "Веблокацијата на digiKam, повратни информации"
 
-#: digikam/main.cpp:230
+#: digikam/main.cpp:236
 #, fuzzy
 msgid "Bug reports, feedback and icons"
 msgstr "Извештаи за бубачки и закрпи"
@@ -3035,7 +3241,7 @@ msgstr "Пронајдени приклучоци: %1"
 msgid "No Media Devices Found"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1465 showfoto/setup/setup.cpp:85
+#: digikam/digikamapp.cpp:1465 showfoto/setup/setup.cpp:91
 #: utilities/imageeditor/editor/editorwindow.cpp:540
 msgid "General"
 msgstr "Општо"
@@ -3218,7 +3424,7 @@ msgid ""
 "<p>Enter the name used to save the current search in the \"My Searches\" view"
 msgstr ""
 
-#: digikam/digikamview.cpp:153 utilities/setup/setup.cpp:134
+#: digikam/digikamview.cpp:153 utilities/setup/setup.cpp:140
 msgid "Albums"
 msgstr "Албуми"
 
@@ -3330,49 +3536,58 @@ msgid "Set orientation tag to normal after rotate/flip"
 msgstr ""
 "Постави ја ознаката за ориентација од &EXIF на нормална по ротација/превртување"
 
-#: imageplugins/imageeffect_iccproof.cpp:188 showfoto/setup/setup.cpp:85
+#: imageplugins/imageeffect_iccproof.cpp:188 showfoto/setup/setup.cpp:91
 msgid "General Settings"
 msgstr "Општи поставувања"
 
-#: showfoto/setup/setup.cpp:89 utilities/setup/setup.cpp:162
-#, fuzzy
-msgid "IO files"
-msgstr "Фотографии"
+#: showfoto/setup/setup.cpp:95 utilities/setup/setup.cpp:168
+msgid "RAW decoding"
+msgstr ""
 
-#: showfoto/setup/setup.cpp:89
+#: showfoto/setup/setup.cpp:95 utilities/setup/setup.cpp:168
 #, fuzzy
-msgid "IO Image Files Settings"
+msgid "RAW Files Decoding Settings"
+msgstr "Опции за преименување"
+
+#: showfoto/setup/setup.cpp:99
+msgid "ICC Profiles"
+msgstr ""
+
+#: showfoto/setup/setup.cpp:99
+#, fuzzy
+msgid "Color Management Profiles"
+msgstr "Баланс на боите"
+
+#: showfoto/setup/setup.cpp:103 utilities/setup/setup.cpp:176
+#, fuzzy
+msgid "Save Images"
+msgstr "Изостри фотографија"
+
+#: showfoto/setup/setup.cpp:103 utilities/setup/setup.cpp:176
+#, fuzzy
+msgid "Image Editor Save Images Files Settings"
 msgstr "Поставувања за фотографија"
 
-#: showfoto/setup/setup.cpp:93 utilities/setup/setup.cpp:166
+#: showfoto/setup/setup.cpp:107 utilities/setup/setup.cpp:180
 msgid "Image Plugins"
 msgstr "Приклучоци за фотографиите"
 
-#: showfoto/setup/setup.cpp:93
+#: showfoto/setup/setup.cpp:107
 #, fuzzy
 msgid "Image Plugins Settings"
 msgstr "Листа на приклучоци за фотографиите"
 
-#: showfoto/setup/setup.cpp:97
+#: showfoto/setup/setup.cpp:111
 #: utilities/imageeditor/editor/editorwindow.cpp:324
-#: utilities/setup/setup.cpp:170
+#: utilities/setup/setup.cpp:184
 #, fuzzy
 msgid "Slide Show"
 msgstr "Поставувања за советите"
 
-#: showfoto/setup/setup.cpp:97
+#: showfoto/setup/setup.cpp:111
 #, fuzzy
 msgid "Slide Show Settings"
 msgstr "Поставувања за советите"
-
-#: showfoto/setup/setup.cpp:101
-msgid "ICC Profiles"
-msgstr ""
-
-#: showfoto/setup/setup.cpp:101
-#, fuzzy
-msgid "Color Management Profiles"
-msgstr "Баланс на боите"
 
 #: showfoto/main.cpp:43
 msgid "File(s) to open"
@@ -3906,7 +4121,7 @@ msgstr ""
 "фотографијата, така што најниската и највисоката вредност ги поставува да бидат "
 "минимални/максимални, а вредностите помеѓу нив ги поставува соодветно."
 
-#: imageplugins/imageeffect_iccproof.cpp:91 utilities/setup/setup.cpp:174
+#: imageplugins/imageeffect_iccproof.cpp:91 utilities/setup/setup.cpp:172
 #, fuzzy
 msgid "Color Management"
 msgstr "Баланс на боите"
@@ -4275,11 +4490,6 @@ msgid ""
 msgstr ""
 "<p>Тука може да го видите прегледот на прилагодувањата за "
 "Осветлување/Контраст/Гама."
-
-#: imageplugins/imageeffect_bcg.cpp:147
-#: utilities/setup/dcrawsettingswidget.cpp:189
-msgid "Brightness:"
-msgstr "Осветлување:"
 
 #: imageplugins/imageeffect_bcg.cpp:151
 msgid "<p>Set here the brightness adjustment of the image."
@@ -5525,16 +5735,16 @@ msgid ""
 "href='http://www.iptc.org/IIM'>www.iptc.org</a>.</p>"
 msgstr ""
 
-#: utilities/setup/setupplugins.cpp:73
-#, c-format
-msgid "Kipi version: %1"
-msgstr "Kipi верзија: %1"
+#: utilities/setup/setupplugins.cpp:74
+#, fuzzy, c-format
+msgid "Kipi library version: %1"
+msgstr "Користи верзија %1 на библиотеката Kipi"
 
-#: utilities/setup/setupplugins.cpp:81
+#: utilities/setup/setupplugins.cpp:82
 msgid "<p>A list of available Kipi plugins appears below."
 msgstr "<p>Долу е листата на достапни приклучоци Kipi."
 
-#: utilities/setup/setupplugins.cpp:95
+#: utilities/setup/setupplugins.cpp:96
 #, c-format
 msgid ""
 "_n: 1 Kipi plugin found\n"
@@ -5820,103 +6030,98 @@ msgstr "Апаратот „%1“ (%2) е веќе во листата."
 msgid "Found camera '%1' (%2) and added it to the list."
 msgstr "Пронајдов апарат „%1“ (%2) и го додадов во листата."
 
-#: utilities/setup/setup.cpp:134
+#: utilities/setup/setup.cpp:140
 #, fuzzy
 msgid "Album Settings"
 msgstr "Поставувања за ознаките"
 
-#: utilities/setup/setup.cpp:138
+#: utilities/setup/setup.cpp:144
 msgid "Tool Tip"
 msgstr ""
 
-#: utilities/setup/setup.cpp:138
+#: utilities/setup/setup.cpp:144
 #, fuzzy
 msgid "Album Items Tool Tip Settings"
 msgstr "Поставувања за ознаките"
 
-#: utilities/setup/setup.cpp:142
+#: utilities/setup/setup.cpp:148
 #, fuzzy
 msgid "Embedded Image Information Management"
 msgstr "Вградени информации за фотографијата"
 
-#: utilities/setup/setup.cpp:146
+#: utilities/setup/setup.cpp:152
 msgid "Identity"
 msgstr ""
 
-#: utilities/setup/setup.cpp:146
+#: utilities/setup/setup.cpp:152
 msgid "Default IPTC identity information"
 msgstr ""
 
-#: utilities/setup/setup.cpp:150
+#: utilities/setup/setup.cpp:156
 msgid "Collections"
 msgstr "Колекции"
 
-#: utilities/setup/setup.cpp:150
+#: utilities/setup/setup.cpp:156
 msgid "Album Collections"
 msgstr "Колекции на албуми"
 
-#: utilities/setup/setup.cpp:154
+#: utilities/setup/setup.cpp:160
 msgid "Mime Types"
 msgstr "Mime-типови"
 
-#: utilities/setup/setup.cpp:154
+#: utilities/setup/setup.cpp:160
 #, fuzzy
 msgid "File (MIME) Types Settings"
 msgstr "Типови на датотеки (MIME)"
 
-#: utilities/setup/setup.cpp:158
+#: utilities/setup/setup.cpp:164
 msgid "Image Editor"
 msgstr "Уредувач на фотографии"
 
-#: utilities/setup/setup.cpp:158
+#: utilities/setup/setup.cpp:164
 #, fuzzy
 msgid "Image Editor General Settings"
 msgstr "Поставувања за фотографија"
 
-#: utilities/setup/setup.cpp:162
-#, fuzzy
-msgid "Image Editor IO Images Files Settings"
-msgstr "Поставувања за фотографија"
-
-#: utilities/setup/setup.cpp:166
-#, fuzzy
-msgid "Image Editor Plug-in Settings"
-msgstr "Приклучоци за фотографиите"
-
-#: utilities/setup/setup.cpp:170
-#, fuzzy
-msgid "Image Editor Slide Show Settings"
-msgstr "Поставувања за фотографија"
-
-#: utilities/setup/setup.cpp:174
+#: utilities/setup/setup.cpp:172
 #, fuzzy
 msgid "Image Editor Color Management"
 msgstr "Приклучоци за фотографиите"
 
-#: utilities/setup/setup.cpp:178
+#: utilities/setup/setup.cpp:180
+#, fuzzy
+msgid "Image Editor Plug-in Settings"
+msgstr "Приклучоци за фотографиите"
+
+#: utilities/setup/setup.cpp:184
+#, fuzzy
+msgid "Image Editor Slide Show Settings"
+msgstr "Поставувања за фотографија"
+
+#: utilities/setup/setup.cpp:188
 msgid "Kipi Plugins"
 msgstr "Приклучоци Kipi"
 
-#: utilities/setup/setup.cpp:178
+#: utilities/setup/setup.cpp:188
 #, fuzzy
 msgid "Main Interface Plug-in Settings"
 msgstr "Опции за интерфејсот"
 
-#: utilities/setup/setup.cpp:182
+#: utilities/setup/setup.cpp:192
 msgid "Cameras"
 msgstr "Апарати"
 
-#: utilities/setup/setup.cpp:182
+#: utilities/setup/setup.cpp:192
 #, fuzzy
 msgid "Camera Settings"
 msgstr "Општи поставувања"
 
-#: utilities/setup/setup.cpp:186
+#: utilities/setup/setup.cpp:196
 #, fuzzy
 msgid "Miscellaneous Settings"
 msgstr "Општи поставувања"
 
-#: utilities/setup/setup.cpp:232
+#: utilities/setup/setup.cpp:243
 msgid ""
 "The Exif auto-rotate thumbnails option has been changed.\n"
 "Do you want to rebuild all albums items thumbnails now?\n"
@@ -5925,16 +6130,12 @@ msgid ""
 "\"Tools\" menu."
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:91
-msgid "Saving Images Options"
-msgstr "Снимање на опциите за фотографиите"
-
-#: utilities/setup/setupiofiles.cpp:97
+#: utilities/setup/setupiofiles.cpp:93
 #, fuzzy
-msgid "JPEG/JPEG2000 quality:"
+msgid "JPEG quality:"
 msgstr "&Квалитет на JPEG:"
 
-#: utilities/setup/setupiofiles.cpp:99
+#: utilities/setup/setupiofiles.cpp:95
 msgid ""
 "<p>The quality value for JPEG images:"
 "<p><b>1</b>: low quality (high compression and small file size)"
@@ -5950,12 +6151,12 @@ msgstr ""
 "<p><b>100</b>: висок квалитет (без компресија и големи датотеки)"
 "<p><b>Забелешка: компресијата од тип JPEG има загуби во квалитетот.</b>"
 
-#: utilities/setup/setupiofiles.cpp:113
+#: utilities/setup/setupiofiles.cpp:114
 #, fuzzy
 msgid "PNG compression:"
 msgstr "Kомпресија &PNG:"
 
-#: utilities/setup/setupiofiles.cpp:115
+#: utilities/setup/setupiofiles.cpp:116
 msgid ""
 "<p>The compression value for PNG images:"
 "<p><b>1</b>: low compression (large file size but short compression duration - "
@@ -5971,11 +6172,11 @@ msgstr ""
 "<p><b>9</b>: голема компресија (мали датотеки но долго време на отпакување)"
 "<p><b>Забелешка: PNG е формат кој користи компресија без загуби</b>"
 
-#: utilities/setup/setupiofiles.cpp:126
+#: utilities/setup/setupiofiles.cpp:132
 msgid "Compress TIFF files"
 msgstr "Компресирај датотеки TIFF"
 
-#: utilities/setup/setupiofiles.cpp:129
+#: utilities/setup/setupiofiles.cpp:134
 #, fuzzy
 msgid ""
 "<p>Toggle compression for TIFF images."
@@ -5990,6 +6191,48 @@ msgstr ""
 "<p>За зачувување на датотеките се користи формат за компресија без загуби "
 "(Adobe Deflate)"
 "<p>"
+
+#: utilities/setup/setupiofiles.cpp:146
+msgid "LossLess JPEG 2000 files"
+msgstr ""
+
+#: utilities/setup/setupiofiles.cpp:148
+#, fuzzy
+msgid ""
+"<p>Toggle lossless compression for JPEG 2000 images."
+"<p>If you enable this option, you will use a lossless method to compress JPEG "
+"2000 pictures."
+"<p>"
+msgstr ""
+"<p>Промена на компресија за TIFF фотографии."
+"<p> Ако ја овозможите оваа опција, може да ја намалите финалната големина на "
+"TIFF-фотографиите.</p> "
+"<p>За зачувување на датотеките се користи формат за компресија без загуби "
+"(Adobe Deflate)"
+"<p>"
+
+#: utilities/setup/setupiofiles.cpp:155
+#, fuzzy
+msgid "JPEG 2000 quality:"
+msgstr "&Квалитет на JPEG:"
+
+#: utilities/setup/setupiofiles.cpp:157
+#, fuzzy
+msgid ""
+"<p>The quality value for JPEG 2000 images:"
+"<p><b>1</b>: low quality (high compression and small file size)"
+"<p><b>50</b>: medium quality"
+"<p><b>75</b>: good quality (default)"
+"<p><b>100</b>: high quality (no compression and large file size)"
+"<p><b>Note: JPEG 2000 is not a lossless image compression format when you use "
+"this setting.</b>"
+msgstr ""
+"<p>Вредноста на квалитет кај датотеките од тип JPEG "
+"<p><b>1</b>: низок квалитет (висока компресија и мали датотеки)"
+"<p><b>50</b>: среден квалитет"
+"<p><b>75</b>: добар квалитет (стандардно)"
+"<p><b>100</b>: висок квалитет (без компресија и големи датотеки)"
+"<p><b>Забелешка: компресијата од тип JPEG има загуби во квалитетот.</b>"
 
 #: utilities/setup/setupgeneral.cpp:102
 msgid "Album &Library Path"
@@ -6113,198 +6356,6 @@ msgstr ""
 msgid "Sorry; cannot use home directory as albums library."
 msgstr ""
 "Жалам, не може да се користи домашната папка како библиотека на албуми."
-
-#: utilities/setup/dcrawsettingswidget.cpp:100
-msgid "RAW Decoding Settings (dcraw %1)"
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:108
-#, fuzzy
-msgid "16 bits color depth"
-msgstr "Бои:"
-
-#: utilities/setup/dcrawsettingswidget.cpp:109
-msgid ""
-"<p>If enabled, all RAW files will be decoded to 16-bit color depth using a "
-"linear gamma curve. To prevent black picture rendering in the editor, it is "
-"recommended to use Color Management in this mode."
-"<p>If disabled, all RAW files will be decoded to 8-bit color depth with a "
-"BT.709 gamma curve and a 99th-percentile white point. This mode is faster than "
-"16-bit decoding."
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:118
-msgid "Interpolate RGB as four colors"
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:119
-msgid ""
-"<p><b>Interpolate RGB as four colors</b>"
-"<p>The default is to assume that all green pixels are the same. If even-row "
-"green pixels are more sensitive to ultraviolet light than odd-row this "
-"difference causes a mesh pattern in the output; using this option solves this "
-"problem with minimal loss of detail."
-"<p>To resume, this option blurs the image a little, but it eliminates false 2x2 "
-"mesh patterns with VNG quality method or mazes with AHD quality method."
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:133
-#, fuzzy
-msgid "Use camera white balance"
-msgstr "Користи ги имињата од апаратот"
-
-#: utilities/setup/dcrawsettingswidget.cpp:134
-msgid ""
-"<p><b>Use camera white balance</b>"
-"<p>Use the camera's custom white-balance settings. The default is to use fixed "
-"daylight values, calculated from sample images. If this can't be found, reverts "
-"to the default."
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:143
-#, fuzzy
-msgid "Automatic color balance"
-msgstr "Баланс на боите"
-
-#: utilities/setup/dcrawsettingswidget.cpp:144
-msgid ""
-"<p><b>Automatic color balance</b>"
-"<p>The default is to use a fixed color balance based on a white card "
-"photographed in sunlight."
-"<p>"
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:152
-msgid "Use Super-CCD secondary sensors"
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:153
-msgid ""
-"<p><b>Use Super CCD secondary sensors</b>"
-"<p>For Fuji Super CCD SR cameras, use the secondary sensors, in effect "
-"underexposing the image by four stops to reveal detail in the highlights. For "
-"all other camera types this option is ignored."
-"<p>"
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:163
-#, fuzzy
-msgid "Highlights:"
-msgstr "Висина:"
-
-#: utilities/setup/dcrawsettingswidget.cpp:165
-msgid "Solid white"
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:166
-#, fuzzy
-msgid "Unclip"
-msgstr "Преврти"
-
-#: utilities/setup/dcrawsettingswidget.cpp:167
-msgid "Reconstruct"
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:168
-msgid ""
-"<p><b>Highlights</b>"
-"<p>Select here the highlight clipping method:"
-"<p><b>Solid white</b>: Clip all highlights to solid white"
-"<p><b>Unclip</b>: Leave highlights unclipped in various shades of pink"
-"<p><b>Reconstruct</b>: Reconstruct highlights using a level value."
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:178
-msgid "Level:"
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:181
-msgid ""
-"<p><b>Level</b>"
-"<p>Specify the reconstruct highlights level of output image. Low values favor "
-"whites and high values favor colors."
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:193
-msgid ""
-"<p><b>Brightness</b>"
-"<p>Specify the brightness level of ouput image.The default value is 1.0."
-"<p>"
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:201
-#, fuzzy
-msgid "Quality:"
-msgstr "&Квалитет на JPEG:"
-
-#: utilities/setup/dcrawsettingswidget.cpp:203
-msgid "Bilinear interpolation"
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:204
-msgid "VNG interpolation"
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:205
-msgid "AHD interpolation"
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:206
-msgid ""
-"<p><b>Quality</b>"
-"<p>Select here the demosaicing RAW images decoding interpolation method. A "
-"demosaicing algorithm is a digital image process used to interpolate a complete "
-"image from the partial raw data received from the color-filtered image sensor "
-"internal to many digital cameras in form of a matrix of colored pixels. Also "
-"known as CFA interpolation or color reconstruction, another common spelling is "
-"demosaicking. There are 3 methods to demosaic RAW images:"
-"<p><b>Bilinear</b>: use high-speed but low-quality bilinear interpolation "
-"(default - for a slow computer). In this method, the red value of a non-red "
-"pixel is computed as the average of the adjacent red pixels, and similar for "
-"blue and green."
-"<p><b>VNG</b>: use Variable Number of Gradients interpolation. This method "
-"computes gradients near the pixel of interest and uses the lower gradients "
-"(representing smoother and more similar parts of the image) to make an "
-"estimate."
-"<p><b>AHD</b>: use Adaptive Homogeneity-Directed interpolation. This method "
-"selects the direction of interpolation so as to maximize a homogeneity metric, "
-"thus typically minimizing color artifacts."
-"<p>"
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:229
-msgid "Enable noise reduction"
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:230
-msgid ""
-"<p><b>Enable Noise Reduction</b>"
-"<p>Toggle bilateral filter to smooth noise while preserving edges. This option "
-"can be use to reduce low noise. The pictures edges are preserved because it is "
-"applied in CIELab color space instead of RGB."
-"<p>"
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:240
-#, fuzzy
-msgid "Domain:"
-msgstr "Вчитување: %1"
-
-#: utilities/setup/dcrawsettingswidget.cpp:241
-msgid ""
-"<p><b>Domain</b>"
-"<p>Set here the noise reduction Sigma Domain in units of pixels. The default "
-"value is 2.0."
-"<p>"
-msgstr ""
-
-#: utilities/setup/dcrawsettingswidget.cpp:252
-msgid ""
-"<p><b>Range</b>"
-"<p>Set here the noise reduction Sigma Range in units of CIELab colorspace. The "
-"default value is 4.0."
-"<p>"
-msgstr ""
 
 #: utilities/setup/setupimgplugins.cpp:79
 #, fuzzy
@@ -7246,7 +7297,7 @@ msgstr ""
 msgid "Zoom: "
 msgstr "Големина:"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1042
+#: utilities/imageeditor/editor/editorwindow.cpp:1051
 msgid ""
 "The image '%1' has been modified.\n"
 "Do you want to save it?"
@@ -7254,27 +7305,27 @@ msgstr ""
 "Фотографијата „%1“ е сменета.\n"
 "Дали сакате да ја зачувате?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1099
+#: utilities/imageeditor/editor/editorwindow.cpp:1108
 msgid "Please wait while the image is being saved..."
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1174
+#: utilities/imageeditor/editor/editorwindow.cpp:1183
 #, fuzzy
 msgid "Loading: "
 msgstr "Вчитување: %1"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1192
+#: utilities/imageeditor/editor/editorwindow.cpp:1201
 #, fuzzy
 msgid "Failed to load image \"%1\""
 msgstr "Не успеав да ја избришам датотеката %1."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1223
+#: utilities/imageeditor/editor/editorwindow.cpp:1232
 #, fuzzy
 msgid "Saving: "
 msgstr "Вчитување: %1"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1237
-#: utilities/imageeditor/editor/editorwindow.cpp:1278
+#: utilities/imageeditor/editor/editorwindow.cpp:1246
+#: utilities/imageeditor/editor/editorwindow.cpp:1287
 #, fuzzy
 msgid ""
 "Failed to save file\n"
@@ -7286,15 +7337,15 @@ msgstr ""
 "„%1“ во албумот\n"
 "„%2“"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1382
+#: utilities/imageeditor/editor/editorwindow.cpp:1391
 msgid "New Image File Name"
 msgstr "Ново име за фотографијава"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1428
+#: utilities/imageeditor/editor/editorwindow.cpp:1437
 msgid "Target image file format \"%1\" unsupported."
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1438
+#: utilities/imageeditor/editor/editorwindow.cpp:1447
 #, fuzzy
 msgid ""
 "Failed to save file\n"
@@ -7305,23 +7356,23 @@ msgstr ""
 "„%1“ во албумот\n"
 "„%2“"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1465
+#: utilities/imageeditor/editor/editorwindow.cpp:1474
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1469
-#: utilities/imageeditor/editor/editorwindow.cpp:1515
+#: utilities/imageeditor/editor/editorwindow.cpp:1478
+#: utilities/imageeditor/editor/editorwindow.cpp:1524
 #, fuzzy
 msgid "Overwrite File?"
 msgstr "Избриши датотека"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1470
-#: utilities/imageeditor/editor/editorwindow.cpp:1516
+#: utilities/imageeditor/editor/editorwindow.cpp:1479
+#: utilities/imageeditor/editor/editorwindow.cpp:1525
 msgid "Overwrite"
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1510
+#: utilities/imageeditor/editor/editorwindow.cpp:1519
 #, fuzzy
 msgid ""
 "You do not have write permissions for the file named \"%1\". Are you sure you "
@@ -7329,37 +7380,37 @@ msgid ""
 msgstr ""
 "Ќе ја пребришете датотеката %1. Дали сте сигурни дека сакате да продолжите?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1544
+#: utilities/imageeditor/editor/editorwindow.cpp:1553
 msgid "Failed to overwrite original file"
 msgstr "Не успеав да запишам врз оригиналната датотека"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1545
+#: utilities/imageeditor/editor/editorwindow.cpp:1554
 msgid "Error Saving File"
 msgstr "Грешка при зачувувањето на датотеката"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1586
+#: utilities/imageeditor/editor/editorwindow.cpp:1595
 #, fuzzy
 msgid "Color Managed View is enabled"
 msgstr "Баланс на боите"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1587
+#: utilities/imageeditor/editor/editorwindow.cpp:1596
 #, fuzzy
 msgid "Color Managed View is disabled"
 msgstr "Баланс на боите"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1603
+#: utilities/imageeditor/editor/editorwindow.cpp:1612
 msgid "Under-Exposure indicator is enabled"
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1604
+#: utilities/imageeditor/editor/editorwindow.cpp:1613
 msgid "Under-Exposure indicator is disabled"
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1620
+#: utilities/imageeditor/editor/editorwindow.cpp:1629
 msgid "Over-Exposure indicator is enabled"
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1621
+#: utilities/imageeditor/editor/editorwindow.cpp:1630
 msgid "Over-Exposure indicator is disabled"
 msgstr ""
 
@@ -8135,6 +8186,17 @@ msgid "&Upload into camera"
 msgstr "Вчитувам апарати"
 
 #, fuzzy
+#~ msgid "IO files"
+#~ msgstr "Фотографии"
+
+#, fuzzy
+#~ msgid "IO Image Files Settings"
+#~ msgstr "Поставувања за фотографија"
+
+#~ msgid "Saving Images Options"
+#~ msgstr "Снимање на опциите за фотографиите"
+
+#, fuzzy
 #~ msgid "<qt><b>%1</b> pictures selected</qt>"
 #~ msgstr "Избрана е невалидна цел"
 
@@ -8216,10 +8278,6 @@ msgstr "Вчитувам апарати"
 #, fuzzy
 #~ msgid "<p>Set this option to picture tags."
 #~ msgstr "<p>Тука може да се постави ширината за исечокот."
-
-#, fuzzy
-#~ msgid "RAW Image Decoding Options"
-#~ msgstr "Опции за преименување"
 
 #, fuzzy
 #~ msgid "Camera color balance"
@@ -8700,9 +8758,6 @@ msgstr "Вчитувам апарати"
 
 #~ msgid "Blur"
 #~ msgstr "Заматеност"
-
-#~ msgid "Sharpen Image"
-#~ msgstr "Изостри фотографија"
 
 #~ msgid "Image Preview Selection"
 #~ msgstr "Преглед на фотографија"
