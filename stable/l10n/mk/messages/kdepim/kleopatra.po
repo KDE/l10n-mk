@@ -1,17 +1,18 @@
 # translation of kleopatra.po to Macedonian
 #
 # Jovan Naumovski <jovan@lugola.net>, 2006.
+# Bozidar Proevski <bobibobi@freemail.com.mk>, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "POT-Creation-Date: 2006-05-18 04:06+0200\n"
-"PO-Revision-Date: 2006-04-29 00:08+0200\n"
-"Last-Translator: Jovan Naumovski <jovan@lugola.net>\n"
+"PO-Revision-Date: 2007-02-17 12:30+0100\n"
+"Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.1\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: conf/appearanceconfigwidget.cpp:72
 msgid "<unnamed>"
@@ -27,8 +28,7 @@ msgstr "&Максимален број на предмети вратени од
 
 #: conf/dirservconfigpage.cpp:175
 msgid "Automatically add &new servers discovered in CRL distribution points"
-msgstr ""
-"Автоматски додавај &нови сервери откриени во CLR точките за дистрибуција"
+msgstr "Автоматски додавај &нови сервери откриени во точките за дистрибуција на CLR"
 
 #: conf/dirservconfigpage.cpp:286
 msgid "Backend error: gpgconf does not seem to know the entry for %1/%2/%3"
@@ -36,7 +36,7 @@ msgstr "Грешка во задниот крај: gpgconf не го знае з
 
 #: conf/dirservconfigpage.cpp:290
 msgid "Backend error: gpgconf has wrong type for %1/%2/%3: %4 %5"
-msgstr "Грешка во задниот крај: gpgconf има грешен тип за %1/%2/%3: %4 %5"
+msgstr "Грешка во задниот крај: gpgconf има погрешен тип за %1/%2/%3: %4 %5"
 
 #: _translatorinfo.cpp:1
 msgid ""
@@ -52,7 +52,7 @@ msgstr "jovan@lugola.net"
 
 #: aboutdata.cpp:42
 msgid "KDE Key Manager"
-msgstr "KDE менаџер за клучеви"
+msgstr "Менаџер за клучеви во KDE"
 
 #: aboutdata.cpp:52
 msgid "Current Maintainer"
@@ -60,7 +60,7 @@ msgstr "Тековен одржувач"
 
 #: aboutdata.cpp:53
 msgid "Former Maintainer"
-msgstr "Поранешен Одржувач"
+msgstr "Поранешен одржувач"
 
 #: aboutdata.cpp:54 aboutdata.cpp:55
 msgid "Original Author"
@@ -68,7 +68,7 @@ msgstr "Оригинален автор"
 
 #: aboutdata.cpp:61
 msgid "Backend configuration framework, KIO integration"
-msgstr "Структура на задниот крај, KIO интеграција"
+msgstr "Структура на задниот крај, интеграција со KIO"
 
 #: aboutdata.cpp:64
 msgid "Key-state dependant colors and fonts in the key list"
@@ -199,32 +199,27 @@ msgid "Additional Information for Key"
 msgstr "Додатни информации за клучот"
 
 #: certificatewizardimpl.cpp:91
-#, fuzzy
 msgid ""
 "_: Format string for the labels in the \"Your Personal Data\" page - required "
 "field\n"
 "*%1 (%2):"
-msgstr ""
-"_: Форматирај ја низата за ознака во  страната за\"Твоите лични податоци\" - "
-"потребното поле*%1 (%2):"
+msgstr "*%1 (%2):"
 
 #: certificatewizardimpl.cpp:94
-#, fuzzy
 msgid ""
 "_: Format string for the labels in the \"Your Personal Data\" page\n"
 "%1 (%2):"
-msgstr ""
-"_: Форматирај ја низата за натписот во страната за \"Твоите лични податоци\"%1 "
-"(%2):"
+msgstr "%1 (%2):"
 
 #: certificatewizardimpl.cpp:141
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "_n: %n bit\n"
 "%n bits"
 msgstr ""
-"_n:%n бит\n"
-"%n битови"
+"1 бит\n"
+"%n бита\n"
+"%n бита"
 
 #: certificatewizardimpl.cpp:257
 #, c-format
@@ -261,10 +256,8 @@ msgid "DCOP Communication Error, unable to send certificate using KMail."
 msgstr "DCOP Communication Error, unable to send certificate using KMail."
 
 #: certificatewizardimpl.cpp:483 certmanager.cpp:1239
-msgid ""
-"A file named \"%1\" already exists. Are you sure you want to overwrite it?"
-msgstr ""
-"Датотеката со име \"%1\" веќе постои. Дали сакате да запишете над него?"
+msgid "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
+msgstr "Датотеката со име \"%1\" веќе постои. Дали сакате да запишете над него?"
 
 #: certificatewizardimpl.cpp:485 certmanager.cpp:1241
 msgid "Overwrite File?"
@@ -383,13 +376,14 @@ msgid "Done."
 msgstr "Готово."
 
 #: certmanager.cpp:479
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "_n: %n Key.\n"
 "%n Keys."
 msgstr ""
-"%n Копче \n"
-"%n Копчиња."
+"%n копче.\n"
+"%n копчиња.\n"
+"%n копчиња."
 
 #: certmanager.cpp:514
 msgid "Refreshing keys..."
@@ -641,25 +635,27 @@ msgid "Deleting CA Certificates"
 msgstr "Бришење на CA-сертификати"
 
 #: certmanager.cpp:1076
-#, fuzzy
 msgid ""
 "_n: Do you really want to delete this certificate and the %1 certificates it "
 "certified?\n"
 "Do you really want to delete these %n certificates and the %1 certificates they "
 "certified?"
 msgstr ""
-"_n: Дали навистина сакате да го избришете овој сертификат и %1 сертификатите "
+"Дали навистина сакате да го избришете овој сертификат и %1-те сертификати "
 "кои тој ги сертифицира?\n"
-"Дали навистина сакате да ги избришете овие %n сертификати и %1 сертификатите "
+"Дали навистина сакате да ги избришете овие %n сертификати и %1-те сертификати"
+"кои тие ги сертифицираат?\n"
+"Дали навистина сакате да ги избришете овие %n сертификати и %1-те сертификати"
 "кои тие ги сертифицираат?"
 
 #: certmanager.cpp:1079
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "_n: Do you really want to delete this certificate?\n"
 "Do you really want to delete these %n certificates?"
 msgstr ""
-"_n:  Дали навистина сакате да го избришете овој сертификат\n"
+"Дали навистина сакате да го избришете овој сертификат\n"
+"Дали навистина сакате да ги избришете овие %n сертификати?\n"
 "Дали навистина сакате да ги избришете овие %n сертификати?"
 
 #: certmanager.cpp:1082
@@ -759,8 +755,7 @@ msgid "PKCS#12 Key Bundle (*.p12)"
 msgstr "PKCS#12 Збирка на клучеви (*.p12)"
 
 #: certmanager.cpp:1383
-msgid ""
-"Could not start GnuPG LogViewer (kwatchgnupg). Please check your installation!"
+msgid "Could not start GnuPG LogViewer (kwatchgnupg). Please check your installation!"
 msgstr ""
 "Не можам да го подигнам GnuPG прегледувачот на дневници (kwatchgnupg). "
 "Проверете ја Вашата инсталација!"
@@ -775,8 +770,7 @@ msgstr "Исфрлок на CRL-кешот:"
 
 #: crlview.cpp:111
 msgid "Unable to start gpgsm process. Please check your installation."
-msgstr ""
-"Не можам да го стартувам gpgsm-процесот. Проверете ја вашата инсталација."
+msgstr "Не можам да го стартувам gpgsm-процесот. Проверете ја вашата инсталација."
 
 #: crlview.cpp:134
 msgid "The GpgSM process ended prematurely because of an unexpected error."
@@ -1131,3 +1125,4 @@ msgstr "Прецртано"
 #, no-c-format
 msgid "Default Appearance"
 msgstr "Стандарден изглед"
+
