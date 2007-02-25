@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "POT-Creation-Date: 2006-10-10 02:32+0200\n"
-"PO-Revision-Date: 2006-07-28 20:49+0200\n"
+"PO-Revision-Date: 2007-02-23 23:03+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -36,15 +36,15 @@ msgstr "&Пронајди"
 
 #: kfinddlg.cpp:33
 msgid "Find Files/Folders"
-msgstr "Пронајди датотеки/папки"
+msgstr "Наоѓање датотеки и папки"
 
 #: kfinddlg.cpp:54
 msgid "AMiddleLengthText..."
-msgstr "Текст со средна големина..."
+msgstr "Текст_со_средна_големина..."
 
 #: kfinddlg.cpp:55 kfinddlg.cpp:177
 msgid "Ready."
-msgstr "Спремен."
+msgstr "Подготвен."
 
 #: kfinddlg.cpp:112 kfinddlg.cpp:217
 #, c-format
@@ -52,9 +52,9 @@ msgid ""
 "_n: one file found\n"
 "%n files found"
 msgstr ""
-"најдена е една датотека\n"
-"најдени се %n датотеки\n"
-"најдени се %n датотеки"
+"Пронајдена е една датотека\n"
+"Пронајдени се %n датотеки\n"
+"Пронајдени се %n датотеки"
 
 #: kfinddlg.cpp:152
 msgid "Searching..."
@@ -70,7 +70,7 @@ msgstr "Грешка."
 
 #: kfinddlg.cpp:183
 msgid "Please specify an absolute path in the \"Look in\" box."
-msgstr "Ве молиме зададете апсолутна патека во полето „Барај во“."
+msgstr "Молам зададете апсолутна патека во полето „Барај во“."
 
 #: kfinddlg.cpp:188
 msgid "Could not find the specified folder."
@@ -78,16 +78,17 @@ msgstr "Не можам да ја пронајдам наведената пап
 
 #: kfindpart.cpp:81
 msgid "Find Component"
-msgstr "Пронајди компонента"
+msgstr "Компонента за пребарување"
 
 #: kftabdlg.cpp:64
 msgid "&Named:"
-msgstr "Именува&на:"
+msgstr "&Име:"
 
 #: kftabdlg.cpp:65
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr ""
-"Може да користите џокер знаци за совпаѓања и „;“ за одделување на повеќе имиња"
+"Тука може да користите џокер знаци за совпаѓања и\n"
+"знакот “;“ за одделување на повеќе имиња"
 
 #: kftabdlg.cpp:68
 msgid "Look &in:"
@@ -95,11 +96,11 @@ msgstr "&Барај во:"
 
 #: kftabdlg.cpp:69
 msgid "Include &subfolders"
-msgstr "В&клучи подпапки"
+msgstr "В&клучи потпапки"
 
 #: kftabdlg.cpp:70
 msgid "Case s&ensitive search"
-msgstr "Барање ос&етливо на големина на букви"
+msgstr "Разликување гол&емина на букви"
 
 #: kftabdlg.cpp:71
 msgid "&Browse..."
@@ -111,48 +112,37 @@ msgstr "&Користи индекс на датотеки"
 
 #: kftabdlg.cpp:90
 msgid ""
-"<qt>Enter the filename you are looking for. "
-"<br>Alternatives may be separated by a semicolon \";\"."
-"<br>"
-"<br>The filename may contain the following special characters:"
-"<ul>"
-"<li><b>?</b> matches any single character</li>"
-"<li><b>*</b> matches zero or more of any characters</li>"
-"<li><b>[...]</b> matches any of the characters in braces</li></ul>"
-"<br>Example searches:"
-"<ul>"
-"<li><b>*.kwd;*.txt</b> finds all files ending with .kwd or .txt</li>"
-"<li><b>go[dt]</b> finds god and got</li>"
-"<li><b>Hel?o</b> finds all files that start with \"Hel\" and end with \"o\", "
-"having one character in between</li>"
-"<li><b>My Document.kwd</b> finds a file of exactly that name</li></ul></qt>"
+"<qt>Enter the filename you are looking for. <br>Alternatives may be "
+"separated by a semicolon \";\".<br><br>The filename may contain the "
+"following special characters:<ul><li><b>?</b> matches any single character</"
+"li><li><b>*</b> matches zero or more of any characters</li><li><b>[...]</b> "
+"matches any of the characters in braces</li></ul><br>Example searches:"
+"<ul><li><b>*.kwd;*.txt</b> finds all files ending with .kwd or .txt</"
+"li><li><b>go[dt]</b> finds god and got</li><li><b>Hel?o</b> finds all files "
+"that start with \"Hel\" and end with \"o\", having one character in between</"
+"li><li><b>My Document.kwd</b> finds a file of exactly that name</li></ul></"
+"qt>"
 msgstr ""
-"<qt>Внесете го името на датотеката која ја барате. "
-"<br>Повеќе имиња можат да бидат разделени со точказапирка „;“."
-"<br>"
-"<br>Името може да ги содржи следниве специјални знаци:"
-"<ul>"
-"<li><b>?</b> се совпаѓа со секој еден знак</li>"
-"<li><b>*</b> се совпаѓа со нула или повеќе знаци</li>"
-"<li><b>[...]</b> се совпаѓа со било кој од знаците во заградите</li></ul>"
-"<br>Примери за пребарување:"
-"<ul>"
-"<li><b>*.kwd;*.txt</b> ги наоѓа сите датотеки кои завршуваат со .kwd или "
-".txt</li>"
-"<li><b>go[dt]</b> наоѓа god и got</li>"
-"<li><b>Hel?o</b> ги наоѓа сите датотеки кои почнуваат со „Hel“ и завршуваат со "
-"„o“, а имаат еден знак помеѓу</li>"
-"<li><b>My Document.kwd</b> наоѓа датотека со токму тоа име</li></ul></qt>"
+"<qt>Внесете го името на датотеката што ја барате. <br>Повеќе имиња можат да "
+"бидат разделени со знакот „;“.<br><br>Името може да ги содржи следниве "
+"специјални знаци:<ul><li><b>?</b> се совпаѓа со секој еден знак</"
+"li><li><b>*</b> се совпаѓа со нула или повеќе знаци</li><li><b>[...]</b> се "
+"совпаѓа со кој било од знаците во заградите</li></ul><br>Примери за "
+"пребарување:<ul><li><b>*.kwd;*.txt</b> ги наоѓа сите датотеки што завршуваат "
+"со .kwd или .txt</li><li><b>go[dt]</b> наоѓа god и got</li><li><b>Hel?o</b> "
+"ги наоѓа сите датотеки кои почнуваат со „Hel“ и завршуваат со „o“, а имаат "
+"еден знак помеѓу</li><li><b>My Document.kwd</b> наоѓа датотека со токму тоа "
+"име</li></ul></qt>"
 
 #: kftabdlg.cpp:111
 msgid ""
-"<qt>This lets you use the files' index created by the <i>slocate</i> "
-"package to speed-up the search; remember to update the index from time to time "
+"<qt>This lets you use the files' index created by the <i>slocate</i> package "
+"to speed-up the search; remember to update the index from time to time "
 "(using <i>updatedb</i>).</qt>"
 msgstr ""
-"<qt>Со ова може да го користите индексот на датотеки создаден од пакетот <i>"
-"slocate</i> за да го забрзате пребарувањето; не заборавајте да го ажурирате "
-"индексот од време на време (со наредбата <i>updatedb</i>).</qt>"
+"<qt>Со ова може да го користите индексот на датотеки создаден од пакетот "
+"<i>slocate</i> за да го забрзате пребарувањето. Не заборавајте да го "
+"ажурирате индексот од време на време (со наредбата <i>updatedb</i>).</qt>"
 
 #: kftabdlg.cpp:147
 msgid "Find all files created or &modified:"
@@ -160,11 +150,11 @@ msgstr "Пронајди ги сите датотеки создадени ил�
 
 #: kftabdlg.cpp:149
 msgid "&between"
-msgstr "п&омеѓу"
+msgstr "&меѓу"
 
 #: kftabdlg.cpp:150
 msgid "&during the previous"
-msgstr "за време на претхо&дните"
+msgstr "за време на\nпретхо&дните"
 
 #: kftabdlg.cpp:151
 msgid "and"
@@ -172,35 +162,35 @@ msgstr "и"
 
 #: kftabdlg.cpp:153
 msgid "minute(s)"
-msgstr "минута/и"
+msgstr "минути"
 
 #: kftabdlg.cpp:154
 msgid "hour(s)"
-msgstr "час(ови)"
+msgstr "часови"
 
 #: kftabdlg.cpp:155
 msgid "day(s)"
-msgstr "ден(ови)"
+msgstr "денови"
 
 #: kftabdlg.cpp:156
 msgid "month(s)"
-msgstr "месец(и)"
+msgstr "месеци"
 
 #: kftabdlg.cpp:157
 msgid "year(s)"
-msgstr "година/и"
+msgstr "години"
 
 #: kftabdlg.cpp:168
 msgid "File &size is:"
-msgstr "&Големината на датотеката е:"
+msgstr "&Големината е:"
 
 #: kftabdlg.cpp:174
 msgid "Files owned by &user:"
-msgstr "Датотеки во сопс&твеност на корисникот:"
+msgstr "Во сопс&твеност\nна корисникот:"
 
 #: kftabdlg.cpp:176
 msgid "Owned by &group:"
-msgstr "Во сопственост на &групата:"
+msgstr "во сопственост\nна &групата:"
 
 #: kftabdlg.cpp:178
 msgid "(none)"
@@ -208,15 +198,15 @@ msgstr "(нема)"
 
 #: kftabdlg.cpp:179
 msgid "At Least"
-msgstr "Најмалку"
+msgstr "најмалку"
 
 #: kftabdlg.cpp:180
 msgid "At Most"
-msgstr "Најмогу"
+msgstr "најмогу"
 
 #: kftabdlg.cpp:181
 msgid "Equal To"
-msgstr "Еднаква на"
+msgstr "еднаква на"
 
 #: kftabdlg.cpp:183
 msgid "Bytes"
@@ -224,15 +214,15 @@ msgstr "бајти"
 
 #: kftabdlg.cpp:184
 msgid "KB"
-msgstr "KB"
+msgstr "килобајти"
 
 #: kftabdlg.cpp:185
 msgid "MB"
-msgstr "MB"
+msgstr "мегабајти"
 
 #: kftabdlg.cpp:186
 msgid "GB"
-msgstr "GB"
+msgstr "гигабајти"
 
 #: kftabdlg.cpp:249
 msgid "File &type:"
@@ -240,7 +230,7 @@ msgstr "&Тип на датотека:"
 
 #: kftabdlg.cpp:251
 msgid "C&ontaining text:"
-msgstr "Што го с&одржи текстот:"
+msgstr "Го с&одржи текстот:"
 
 #: kftabdlg.cpp:256
 msgid ""
@@ -249,16 +239,17 @@ msgid ""
 "documentation for a list of supported file types.</qt>"
 msgstr ""
 "<qt>Ако е зададено, ќе бидат пронајдени само датотеките што го содржат овој "
-"текст. Забележете дека се поддржани сите типови на датотеки од горната листа. "
-"Погледнете ја документацијата за листа на поддржани типови на датотеки.</qt>"
+"текст. Забележете дека не се поддржани сите типови датотеки од горната "
+"листа. Погледнете ја документацијата за листата на поддржани типови "
+"датотеки.</qt>"
 
 #: kftabdlg.cpp:264
 msgid "Case s&ensitive"
-msgstr "Ос&етливо на големина на букви"
+msgstr "Разликување гол&емина\nна букви"
 
 #: kftabdlg.cpp:265
 msgid "Include &binary files"
-msgstr "В&клучи бинарни датотеки"
+msgstr "В&клучи бинарни\nдатотеки"
 
 #: kftabdlg.cpp:266
 msgid "Regular e&xpression"
@@ -269,8 +260,9 @@ msgid ""
 "<qt>This lets you search in any type of file, even those that usually do not "
 "contain text (for example program files and images).</qt>"
 msgstr ""
-"<qt>Ова ви овозможува да пребарувате во било кој тип на датотека, дури и оние "
-"кои обично не содржат текст (на пример програмски датотеки и слики).</qt>"
+"<qt>Ова ви овозможува да пребарувате во било кој тип датотека, дури и "
+"оние што обично не содржат текст (на пример програмски датотеки и слики).</"
+"qt>"
 
 #: kftabdlg.cpp:277
 msgid "&Edit..."
@@ -282,7 +274,7 @@ msgstr "&за:"
 
 #: kftabdlg.cpp:283
 msgid "Search &metainfo sections:"
-msgstr "Пребарај ги деловите со &метаинформации:"
+msgstr "Пребарај ги деловите\nсо &метаинформации:"
 
 #: kftabdlg.cpp:286
 msgid "All Files & Folders"
@@ -306,7 +298,7 @@ msgstr "Извршни датотеки"
 
 #: kftabdlg.cpp:292
 msgid "SUID Executable Files"
-msgstr "SUID Извршни датотеки"
+msgstr "Извршни датотеки со SUID"
 
 #: kftabdlg.cpp:293
 msgid "All Images"
@@ -314,7 +306,7 @@ msgstr "Сите слики"
 
 #: kftabdlg.cpp:294
 msgid "All Video"
-msgstr "Сите видео датотеки"
+msgstr "Сите видеодатотеки"
 
 #: kftabdlg.cpp:295
 msgid "All Sounds"
@@ -322,7 +314,7 @@ msgstr "Сите звучни датотеки"
 
 #: kftabdlg.cpp:343
 msgid "Name/&Location"
-msgstr "Име/&Локација"
+msgstr "Име и &локација"
 
 #: kftabdlg.cpp:344
 msgid "C&ontents"
@@ -334,39 +326,29 @@ msgstr "&Својства"
 
 #: kftabdlg.cpp:350
 msgid ""
-"<qt>Search within files' specific comments/metainfo"
-"<br>These are some examples:"
-"<br>"
-"<ul>"
-"<li><b>Audio files (mp3...)</b> Search in id3 tag for a title, an album</li>"
-"<li><b>Images (png...)</b> Search images with a special resolution, "
-"comment...</li></ul></qt>"
+"<qt>Search within files' specific comments/metainfo<br>These are some "
+"examples:<br><ul><li><b>Audio files (mp3...)</b> Search in id3 tag for a "
+"title, an album</li><li><b>Images (png...)</b> Search images with a special "
+"resolution, comment...</li></ul></qt>"
 msgstr ""
-"<qt>Пребарува низ специфичните коментари или метаинформации од датотеките"
-"<br>Овие се неколку примери:"
-"<br>"
-"<ul>"
-"<li><b>Аудио датотеки (mp3...)</b>  Бара во id3 тагови за наслов, албум</li>"
-"<li><b>Слики (png...)</b> Бара слики со специјална резолуција, коментар...</li>"
-"</ul></qt>"
+"<qt>Пребарува низ специфичните коментари или метаинформации од "
+"датотеките<br>Еве неколку примери:<br><ul><li><b>Аудио датотеки (mp3...)"
+"</b>  Бара во id3-ознаки за наслов, албум</li><li><b>Слики (png...)</b> Бара "
+"слики со специјална резолуција, коментар...</li></ul></qt>"
 
 #: kftabdlg.cpp:358
 msgid ""
-"<qt>If specified, search only in this field"
-"<br>"
-"<ul>"
-"<li><b>Audio files (mp3...)</b> This can be Title, Album...</li>"
-"<li><b>Images (png...)</b> Search only in Resolution, Bitdepth...</li></ul></qt>"
+"<qt>If specified, search only in this field<br><ul><li><b>Audio files "
+"(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
+"Search only in Resolution, Bitdepth...</li></ul></qt>"
 msgstr ""
-"<qt>Ако е наведено, пребарува само во ова поле:"
-"<br>"
-"<ul>"
-"<li><b>Аудио датотеки (mp3...)</b> Ова може да биде наслов, албум...</li>"
-"<li><b>Слики (png...)</b> Пребарува по резолуција, Bitdepth...</li></ul></qt>"
+"<qt>Ако е наведено, пребарува само во ова поле:<br><ul><li><b>Аудио датотеки "
+"(mp3...)</b> Ова може да биде наслов, албум...</li><li><b>Слики (png...)</b> "
+"Пребарува по резолуција, Bitdepth...</li></ul></qt>"
 
 #: kftabdlg.cpp:552
 msgid "Unable to search within a period which is less than a minute."
-msgstr "Не можам да пребарувам во период кој е помал од минута."
+msgstr "Не можам да пребарувам во период кој е помал од една минута."
 
 #: kftabdlg.cpp:563
 msgid "The date is not valid."
@@ -378,11 +360,11 @@ msgstr "Невалиден опсег на датуми."
 
 #: kftabdlg.cpp:567
 msgid "Unable to search dates in the future."
-msgstr "Не можам да пребарувам со дати од иднината."
+msgstr "Не можам да пребарувам датуми од иднината."
 
 #: kftabdlg.cpp:628
 msgid "Size is too big. Set maximum size value?"
-msgstr "Големината е преголема. Да поставам макс. вредност за големината?"
+msgstr "Вредноста за големина е преголема. Да поставам максимална вредност за големината?"
 
 #: kftabdlg.cpp:628
 msgid "Set"
@@ -414,7 +396,7 @@ msgstr "Име"
 
 #: kfwin.cpp:116
 msgid "In Subfolder"
-msgstr "Во подпапка"
+msgstr "Во потпапка"
 
 #: kfwin.cpp:117
 msgid "Size"
@@ -430,11 +412,11 @@ msgstr "Дозволи"
 
 #: kfwin.cpp:124
 msgid "First Matching Line"
-msgstr "Првата линија која се совпаѓа"
+msgstr "Првата линија што се совпаѓа"
 
 #: kfwin.cpp:194
 msgid "Save Results As"
-msgstr "Зачувај го резултатот како"
+msgstr "Зачувување на резултатот како"
 
 #: kfwin.cpp:219
 msgid "Unable to save results."
@@ -442,13 +424,11 @@ msgstr "Не може да се снимат резултатите."
 
 #: kfwin.cpp:230 kfwin.cpp:231 kfwin.cpp:232
 msgid "KFind Results File"
-msgstr "KFind датотека со резултати"
+msgstr "Датотека со резултати од KFind"
 
 #: kfwin.cpp:259
-msgid ""
-"Results were saved to file\n"
-msgstr ""
-"Резултатите беа снимени во датотеката\n"
+msgid "Results were saved to file\n"
+msgstr "Резултатите беа снимени во датотеката\n"
 
 #: kfwin.cpp:289
 #, c-format
@@ -480,11 +460,11 @@ msgstr "Избрани датотеки"
 
 #: kquery.cpp:478
 msgid "Error while using locate"
-msgstr "Грешка при користење на locate"
+msgstr "Грешка при користењето на locate"
 
 #: main.cpp:14
 msgid "KDE file find utility"
-msgstr "KDE алатка за барање датотеки"
+msgstr "Алатка на KDE за барање датотеки"
 
 #: main.cpp:18
 msgid "Path(s) to search"
@@ -496,11 +476,11 @@ msgstr "KFind"
 
 #: main.cpp:27
 msgid "(c) 1998-2003, The KDE Developers"
-msgstr "(c) 1998-2003, Развивачите на KDE"
+msgstr "(c) 1998-2003, развивачите на KDE"
 
 #: main.cpp:29
 msgid "Current Maintainer"
-msgstr "Моментален одржувач"
+msgstr "Тековен одржувач"
 
 #: main.cpp:30
 msgid "Developer"
@@ -508,8 +488,8 @@ msgstr "Програмер"
 
 #: main.cpp:31
 msgid "UI Design & more search options"
-msgstr "UI дизајн и повеќе опции за пребарување"
+msgstr "Дизајн на корисничкиот интерфејс и повеќе опции за пребарување"
 
 #: main.cpp:41
 msgid "UI Design"
-msgstr "UI дизајн"
+msgstr "Дизајн на корисничкиот интерфејс"
