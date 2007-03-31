@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kig\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-03-31 05:36+0200\n"
+"POT-Creation-Date: 2007-03-31 21:46+0200\n"
 "PO-Revision-Date: 2007-02-26 21:38+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -18,6 +18,39 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : 2;\n"
 
 #: tips.cpp:3
+msgid ""
+"<p>You can control a kig construction by means of a \"pykig\" \n"
+"python script, that can be executed with the command \n"
+"<code>pykig.py</code>.  Here is a nice example \n"
+"(<code>hexagons.kpy</code>) you can try:\n"
+"<code><pre>\n"
+"kigdocument.hideobjects()\n"
+"def hexagons (c, v, n):\n"
+"  hexagon = PolygonBCV (c, v, 6)\n"
+"  if n &lt;= 0:\n"
+"    hexagon.show()\n"
+"    for i in range(6): \n"
+"      PolygonSide (hexagon, i, True)\n"
+"    return\n"
+"  cnew = MidPoints (c, v)\n"
+"  hexagons (cnew, v, n-1)\n"
+"  for k in [2,4]:\n"
+"    v1 = PolygonVertex (hexagon, k)\n"
+"    cnew = MidPoints (c, v1)\n"
+"    hexagons (cnew, v1, n-1)\n"
+"hexagons (Point(0,0), Point(1,0), 5)\n"
+"</pre></code>\n"
+msgstr ""
+
+#: tips.cpp:28
+msgid ""
+"<p>You can repeat the latest construction simply by pressing the key\n"
+"'Z'; this cames very handy if you need to construct a sequence\n"
+"of objects with the same construction, especially if there is\n"
+"no shortcut for that construction.</p>\n"
+msgstr ""
+
+#: tips.cpp:36
 msgid ""
 "<p>One of the most powerful tools in Kig are the menus that you can\n"
 "enter by right-clicking on an object, or on some empty space in the\n"
@@ -30,7 +63,7 @@ msgstr ""
 "промените нивните бои, да додавате стилови на линиите и многу други "
 "интересни работи.</p>\n"
 
-#: tips.cpp:11
+#: tips.cpp:44
 msgid ""
 "<p>You can construct new points without using the menu or the toolbar, "
 "simply\n"
@@ -42,7 +75,7 @@ msgstr ""
 "со кликање некаде на Kig-документот со <em>средното копче на\n"
 "глушецот</em>.</p>\n"
 
-#: tips.cpp:18
+#: tips.cpp:51
 msgid ""
 "<p>Kig can open several file formats: its files (<code>.kig</code> files),\n"
 "<em>KGeo</em> files, <em>KSeg</em> files, and, partially, <em>Dr. Geo</em>\n"
@@ -54,7 +87,7 @@ msgstr ""
 "em>\n"
 "и <em>Cabri&#8482;</em> датотеките.</p>\n"
 
-#: tips.cpp:25
+#: tips.cpp:58
 #, fuzzy
 msgid ""
 "<p>Kig has more than 20 objects and 10 transformations with more than 80 \n"
@@ -66,7 +99,7 @@ msgstr ""
 "во Вашите документи: отворете го менито <em>Објекти</em> за да ги видите "
 "сите.</p>\n"
 
-#: tips.cpp:32
+#: tips.cpp:65
 msgid ""
 "<p>You can use the selected objects to start the construction of an object\n"
 "which requires the selected objects as arguments. For example, if you have "
@@ -81,7 +114,7 @@ msgstr ""
 "избрани точки, може да изберете <em>Започни->Круг од три точки</em> од \n"
 "скок-менито за започнување на конструкција на круг низ три точки.</p>\n"
 
-#: tips.cpp:40
+#: tips.cpp:73
 msgid ""
 "<p>Kig can extends its object set using external macros. You can find some\n"
 "interesting macro on Kig website:\n"
@@ -91,7 +124,7 @@ msgstr ""
 "Може да пронајдете интересни макроа на веб-страницата на Kig:\n"
 "<a href=\"http://edu.kde.org/kig\">http://edu.kde.org/kig</a>.</p>\n"
 
-#: tips.cpp:47
+#: tips.cpp:80
 msgid ""
 "<p>If you have more than one object under the mouse, and you want to select "
 "any\n"
@@ -439,18 +472,14 @@ msgstr "Тука може да промените името, описот и и
 
 #. i18n: tag string
 #. i18n: file modes/edittypewidget.ui line 79
-#. i18n: tag string
-#. i18n: file modes/macrowizardbase.ui line 138
-#: rc.cpp:218 rc.cpp:278
+#: rc.cpp:218
 #, no-c-format
 msgid "Name:"
 msgstr "Име:"
 
 #. i18n: tag string
 #. i18n: file modes/edittypewidget.ui line 99
-#. i18n: tag string
-#. i18n: file modes/macrowizardbase.ui line 170
-#: rc.cpp:222 rc.cpp:282
+#: rc.cpp:222
 #, no-c-format
 msgid "Description:"
 msgstr "Опис:"
@@ -498,71 +527,22 @@ msgid "Last step"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file modes/macrowizardbase.ui line 24
-#: rc.cpp:250
-#, no-c-format
-msgid "Define New Macro"
-msgstr "Дефинирање ново макро"
-
-#. i18n: tag string
-#. i18n: file modes/macrowizardbase.ui line 31
-#: rc.cpp:254
-#, no-c-format
-msgid "Given Objects"
-msgstr "Дадени предмети"
-
-#. i18n: tag string
-#. i18n: file modes/macrowizardbase.ui line 56
-#: rc.cpp:258
-#, no-c-format
-msgid "Select the \"given\" objects for your new macro and press \"Next\"."
-msgstr "Изберете ги „дадените“ предмети за новото макро и притиснете „Следно“."
-
-#. i18n: tag string
-#. i18n: file modes/macrowizardbase.ui line 72
-#: rc.cpp:262
-#, no-c-format
-msgid "Final Object"
-msgstr "Конечен предмет"
-
-#. i18n: tag string
-#. i18n: file modes/macrowizardbase.ui line 89
-#: rc.cpp:266
-#, no-c-format
-msgid "Select the final object(s) for your new macro."
-msgstr "Изберете ги конечните објекти за новото макро."
-
-#. i18n: tag string
-#. i18n: file modes/macrowizardbase.ui line 99
-#: rc.cpp:270 modes/label.cc:169 modes/typesdialog.cpp:278
-#, no-c-format
-msgid "Name"
-msgstr "Име"
-
-#. i18n: tag string
-#. i18n: file modes/macrowizardbase.ui line 116
-#: rc.cpp:274
-#, no-c-format
-msgid "Enter a name and description for your new type."
-msgstr "Внесете име и опис за новиот тип"
-
-#. i18n: tag string
 #. i18n: file modes/textlabelwizardbase.ui line 16
-#: rc.cpp:286
+#: rc.cpp:250
 #, no-c-format
 msgid "Construct Label"
 msgstr "Натпис за конструирање"
 
 #. i18n: tag string
 #. i18n: file modes/textlabelwizardbase.ui line 23
-#: rc.cpp:290
+#: rc.cpp:254
 #, no-c-format
 msgid "Enter Label Text"
 msgstr "Внесување текст за натписот"
 
 #. i18n: tag string
 #. i18n: file modes/textlabelwizardbase.ui line 35
-#: rc.cpp:294
+#: rc.cpp:258
 #, no-c-format
 msgid ""
 "Enter the text for your label here and press \"Next\".\n"
@@ -575,21 +555,21 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file modes/textlabelwizardbase.ui line 54
-#: rc.cpp:299
+#: rc.cpp:263
 #, no-c-format
 msgid "Show text in a frame"
 msgstr "Прикажи го текстот во рамка"
 
 #. i18n: tag string
 #. i18n: file modes/textlabelwizardbase.ui line 64
-#: rc.cpp:303 scripting/newscriptwizard.cc:66
+#: rc.cpp:267 scripting/newscriptwizard.cc:67
 #, no-c-format
 msgid "Select Arguments"
 msgstr "Избор на аргументи"
 
 #. i18n: tag string
 #. i18n: file modes/textlabelwizardbase.ui line 75
-#: rc.cpp:307
+#: rc.cpp:271
 #, fuzzy, no-c-format
 msgid ""
 "Now select the argument(s) you need.  For every argument, click on it, "
@@ -602,14 +582,14 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file modes/typeswidget.ui line 33
-#: rc.cpp:311
+#: rc.cpp:275
 #, no-c-format
 msgid "Select types here..."
 msgstr "Изберете типови тука..."
 
 #. i18n: tag string
 #. i18n: file modes/typeswidget.ui line 36
-#: rc.cpp:315
+#: rc.cpp:279
 #, no-c-format
 msgid ""
 "This is a list of the current macro types... You can select, edit, delete, "
@@ -620,197 +600,197 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file modes/typeswidget.ui line 68
-#: rc.cpp:319
+#: rc.cpp:283
 #, no-c-format
 msgid "Edit the selected type."
 msgstr "Уредете ги избраните типови."
 
 #. i18n: tag string
 #. i18n: file modes/typeswidget.ui line 71
-#: rc.cpp:323 modes/typesdialog.cpp:328
+#: rc.cpp:287 modes/typesdialog.cpp:328
 #, no-c-format
 msgid "&Edit..."
 msgstr "&Уреди..."
 
 #. i18n: tag string
 #. i18n: file modes/typeswidget.ui line 78
-#: rc.cpp:327
+#: rc.cpp:291
 #, no-c-format
 msgid "Delete all the selected types in the list."
 msgstr "Ги брише сите избрани типови во листата."
 
 #. i18n: tag string
 #. i18n: file modes/typeswidget.ui line 81
-#: rc.cpp:331 modes/popup.cc:374 modes/typesdialog.cpp:329
+#: rc.cpp:295 modes/popup.cc:374 modes/typesdialog.cpp:329
 #, fuzzy, no-c-format
 msgid "&Delete"
 msgstr "&Избриши предмети"
 
 #. i18n: tag string
 #. i18n: file modes/typeswidget.ui line 111
-#: rc.cpp:335
+#: rc.cpp:299
 #, no-c-format
 msgid "Export all the selected types to a file."
 msgstr "Ги изнесува сите избрани типови во датотека."
 
 #. i18n: tag string
 #. i18n: file modes/typeswidget.ui line 114
-#: rc.cpp:339 modes/typesdialog.cpp:331
+#: rc.cpp:303 modes/typesdialog.cpp:331
 #, no-c-format
 msgid "E&xport..."
 msgstr "Из&неси..."
 
 #. i18n: tag string
 #. i18n: file modes/typeswidget.ui line 121
-#: rc.cpp:343
+#: rc.cpp:307
 #, no-c-format
 msgid "Import macros that are contained in one or more files."
 msgstr "Ги внесува макроата што се содржани во една или повеќе датотеки."
 
 #. i18n: tag string
 #. i18n: file modes/typeswidget.ui line 124
-#: rc.cpp:347
+#: rc.cpp:311
 #, fuzzy, no-c-format
 msgid "&Import..."
 msgstr "Внеси..."
 
-#: rc.cpp:348
+#: rc.cpp:312
 msgid "Circle by Center && Line"
 msgstr "Круг од центар и линија"
 
-#: rc.cpp:349
+#: rc.cpp:313
 msgid "A circle constructed by its center and tangent to a given line"
 msgstr "Круг конструиран од неговиот центар и тангента од дадена линија"
 
-#: rc.cpp:350
+#: rc.cpp:314
 msgid "Construct a circle tangent to this line"
 msgstr "Конструирај тангента на круг на оваа линија"
 
-#: rc.cpp:351 rc.cpp:356 objects/circle_type.cc:32
+#: rc.cpp:315 rc.cpp:320 objects/circle_type.cc:32
 msgid "Construct a circle with this center"
 msgstr "Конструирај круг со овој центар"
 
-#: rc.cpp:352
+#: rc.cpp:316
 msgid "Select the line that the new circle should be tangent to..."
 msgstr "Изберете ја линијата со која новиот круг ќе биде тангентиран..."
 
-#: rc.cpp:353 rc.cpp:358 objects/circle_type.cc:37 objects/circle_type.cc:192
+#: rc.cpp:317 rc.cpp:322 objects/circle_type.cc:37 objects/circle_type.cc:192
 msgid "Select the center of the new circle..."
 msgstr "Изберете го центарот на новиот круг..."
 
-#: rc.cpp:354
+#: rc.cpp:318
 msgid "Circle by Point && Segment (as the Diameter)"
 msgstr "Круг од точка и сегмент (како дијаметар)"
 
-#: rc.cpp:355
+#: rc.cpp:319
 msgid ""
 "A circle defined by its center and the length of a segment as the diameter"
 msgstr ""
 "Круг дефиниран од неговиот центар и должината на сегментот како дијаметар"
 
-#: rc.cpp:357
+#: rc.cpp:321
 msgid ""
 "Construct a circle with the diameter given by the length of this segment"
 msgstr "Конструирај круг со дијаметарот зададен со должината на овој сегмент"
 
-#: rc.cpp:359
+#: rc.cpp:323
 msgid "Select the segment whose length gives the diameter of the new circle..."
 msgstr ""
 "Изберете го сегментот чија должина го дава дијаметарот на новиот круг..."
 
-#: rc.cpp:360
+#: rc.cpp:324
 msgid "Equilateral Triangle"
 msgstr "Рамностран триаголник"
 
-#: rc.cpp:361
+#: rc.cpp:325
 msgid "Equilateral triangle with given two vertices"
 msgstr "Рамностран триаголник зададен со две темиња"
 
-#: rc.cpp:362
+#: rc.cpp:326
 #, fuzzy
 msgid "Evolute"
 msgstr "Еволуирај"
 
-#: rc.cpp:363
+#: rc.cpp:327
 #, fuzzy
 msgid "Evolute of a curve"
 msgstr "Еволуирај ја кривава"
 
-#: rc.cpp:364
+#: rc.cpp:328
 #, fuzzy
 msgid "Evolute of this curve"
 msgstr "Еволуирај ја кривава"
 
-#: rc.cpp:365 rc.cpp:370 objects/centerofcurvature_type.cc:35
+#: rc.cpp:329 rc.cpp:334 objects/centerofcurvature_type.cc:35
 #: objects/tangent_type.cc:36
 msgid "Select the curve..."
 msgstr "Изберете ја кривата..."
 
-#: rc.cpp:366
+#: rc.cpp:330
 msgid "Osculating Circle"
 msgstr "Оскулирачка кружница"
 
-#: rc.cpp:367
+#: rc.cpp:331
 msgid "Osculating circle of a curve at a point"
 msgstr "Оскулирачка кружница во оваа точка"
 
-#: rc.cpp:368
+#: rc.cpp:332
 msgid "Osculating circle of this curve"
 msgstr "Оскулирачка кружница на оваа крива"
 
-#: rc.cpp:369
+#: rc.cpp:333
 msgid "Osculating circle at this point"
 msgstr "Оскулирачка кружница во оваа точка"
 
-#: rc.cpp:371
+#: rc.cpp:335
 msgid "Select the point..."
 msgstr "Изберете ја точката..."
 
-#: rc.cpp:372
+#: rc.cpp:336
 msgid "Segment Axis"
 msgstr "Оски на сегмент"
 
-#: rc.cpp:373
+#: rc.cpp:337
 msgid "The perpendicular line through a given segment's mid point."
 msgstr "Нормалната права низ дадена средна точка на сегмент."
 
-#: rc.cpp:374
+#: rc.cpp:338
 msgid "Construct the axis of this segment"
 msgstr "Конструирај ја оската на овој сегмент"
 
-#: rc.cpp:375
+#: rc.cpp:339
 msgid "Select the segment of which you want to draw the axis..."
 msgstr "Изберете го сегментот од кој сакате да ги нацртате оските..."
 
-#: rc.cpp:376
+#: rc.cpp:340
 msgid "Square"
 msgstr "Квадрат"
 
-#: rc.cpp:377
+#: rc.cpp:341
 msgid "Square with two given adjacent vertices"
 msgstr "Квадрат зададен со две спротивни темиња"
 
-#: rc.cpp:378
+#: rc.cpp:342
 msgid "Vector Difference"
 msgstr "Векторска разлика"
 
-#: rc.cpp:379
+#: rc.cpp:343
 msgid "Construct the vector difference of two vectors."
 msgstr "Конструирај разлика на вектори од два вектори."
 
-#: rc.cpp:380
+#: rc.cpp:344
 msgid "Construct the vector difference of this vector and another one."
 msgstr "Конструирај разлика на вектори од овој вектор и уште еден."
 
-#: rc.cpp:381
+#: rc.cpp:345
 msgid "Construct the vector difference of the other vector and this one."
 msgstr "Конструирај разлика на вектори од другиот вектор и овој."
 
-#: rc.cpp:382
+#: rc.cpp:346
 msgid "Construct the vector difference starting at this point."
 msgstr "Конструирај ја разликата започнувајќи од оваа точка."
 
-#: rc.cpp:383
+#: rc.cpp:347
 msgid ""
 "Select the first of the two vectors of which you want to construct the "
 "difference..."
@@ -818,7 +798,7 @@ msgstr ""
 "Изберете го првиот од двата вектори од кои сакате да ја конструирате "
 "разликата..."
 
-#: rc.cpp:384
+#: rc.cpp:348
 msgid ""
 "Select the other of the two vectors of which you want to construct the "
 "difference..."
@@ -826,7 +806,7 @@ msgstr ""
 "Изберете го другиот од двата вектори од кои сакате да ја конструирате "
 "разликата..."
 
-#: rc.cpp:385
+#: rc.cpp:349
 msgid "Select the point to construct the difference vector in..."
 msgstr "Изберете ја точката во која ќе се конструира разликата на вектори..."
 
@@ -2282,6 +2262,10 @@ msgstr ""
 msgid "Start of the construction"
 msgstr "Откажи ја конструкцијата"
 
+#: modes/label.cc:169 modes/macrowizard.cc:129 modes/typesdialog.cpp:278
+msgid "Name"
+msgstr "Име"
+
 #: modes/label.cc:199 modes/popup.cc:522 modes/popup.cc:554
 msgid "<unnamed object>"
 msgstr "<unnamed object>"
@@ -2324,7 +2308,7 @@ msgstr "Внесување текст за натписот"
 msgid "Select the position for the new numeric value..."
 msgstr "Изберете крајна точка на новиот лак..."
 
-#: modes/macro.cc:106
+#: modes/macro.cc:91
 msgid ""
 "One of the result objects you selected cannot be calculated from the given "
 "objects. Kig cannot calculate this macro because of this. Please press Back, "
@@ -2334,7 +2318,7 @@ msgstr ""
 "пресметани од дадените предмети. Kig не може да го пресмета ова макро поради "
 "тоа. Изберете Назад и конструирајте ги предметите во правилен ред..."
 
-#: modes/macro.cc:116
+#: modes/macro.cc:101
 msgid ""
 "One of the given objects is not used in the calculation of the resultant "
 "objects.  This probably means you are expecting Kig to do something "
@@ -2343,6 +2327,42 @@ msgstr ""
 "Еден од дадените објекти не е искористен во пресметувањето на резултантните "
 "предмети.  Ова најверојатно значи дека очекувате Kig да направи нешто "
 "невозможно.  Проверете го макрото и обидете се повторно."
+
+#: modes/macrowizard.cc:49
+msgid "Given Objects"
+msgstr "Дадени предмети"
+
+#: modes/macrowizard.cc:56
+msgid "Select the \"given\" objects for your new macro and press \"Next\"."
+msgstr "Изберете ги „дадените“ предмети за новото макро и притиснете „Следно“."
+
+#: modes/macrowizard.cc:89
+msgid "Final Object"
+msgstr "Конечен предмет"
+
+#: modes/macrowizard.cc:96
+msgid "Select the final object(s) for your new macro."
+msgstr "Изберете ги конечните објекти за новото макро."
+
+#: modes/macrowizard.cc:130
+msgid "Enter a name and description for your new type."
+msgstr "Внесете име и опис за новиот тип"
+
+#: modes/macrowizard.cc:138
+#, fuzzy
+#| msgid "Name:"
+msgid "&Name:"
+msgstr "Име:"
+
+#: modes/macrowizard.cc:145
+#, fuzzy
+#| msgid "Description:"
+msgid "&Description:"
+msgstr "Опис:"
+
+#: modes/macrowizard.cc:161
+msgid "Define New Macro"
+msgstr "Дефинирање ново макро"
 
 #: modes/moving.cc:157
 #, qt-format
@@ -4788,7 +4808,7 @@ msgstr "Изберете ја точката во која се конструи
 msgid "New Script"
 msgstr "Нова скрипта"
 
-#: scripting/newscriptwizard.cc:72
+#: scripting/newscriptwizard.cc:73
 msgid ""
 "Select the argument objects ( if any )\n"
 "in the Kig window and press \"Next\"."
@@ -4796,7 +4816,7 @@ msgstr ""
 "Изберете ги објектите со аргументи ( ако ги има )\n"
 "во прозорецот на Kig и притиснете „Следно“."
 
-#: scripting/newscriptwizard.cc:78
+#: scripting/newscriptwizard.cc:79
 msgid "Enter Code"
 msgstr "Внесување код"
 
