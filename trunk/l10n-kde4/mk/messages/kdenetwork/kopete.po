@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-04-22 05:50+0200\n"
+"POT-Creation-Date: 2007-04-23 05:42+0200\n"
 "PO-Revision-Date: 2007-02-26 22:33+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -218,7 +218,6 @@ msgstr "Без мрежа"
 
 #: libkopete/kopeteonlinestatus.cpp:127
 #: plugins/translator/translatorlanguages.cpp:33
-#: plugins/cryptography/kgpgselkey.cpp:99
 #: protocols/oscar/aim/aimstatusmanager.cpp:33
 #: protocols/oscar/icq/icqstatusmanager.cpp:36
 #: protocols/oscar/icq/icqprotocol.cpp:450
@@ -1674,8 +1673,8 @@ msgid "Missing Protocol"
 msgstr "Недостасува протокол"
 
 #: kopete/addaccountwizard/addaccountwizard.cpp:70 rc.cpp:122 rc.cpp:4820
-#: rc.cpp:4887 plugins/cryptography/kgpgselkey.cpp:63
-#: plugins/cryptography/popuppublic.cpp:139
+#: rc.cpp:4887 plugins/cryptography/popuppublic.cpp:139
+#: plugins/cryptography/selectkeydialog.cpp:59
 msgid "Name"
 msgstr "Име"
 
@@ -8883,69 +8882,6 @@ msgstr "Изберете го јавниот клуч на контактот"
 msgid "Select public key for %1"
 msgstr "Изберете јавен клуч за %1"
 
-#: plugins/cryptography/kgpgselkey.cpp:50
-msgid "Private Key List"
-msgstr "Листа на приватни клучеви"
-
-#: plugins/cryptography/kgpgselkey.cpp:67
-msgid "Choose secret key:"
-msgstr "Изберете таен клуч:"
-
-#: plugins/cryptography/kgpgselkey.cpp:75
-msgid "Local signature (cannot be exported)"
-msgstr "Локален потпис (не може да се изнесе)"
-
-#: plugins/cryptography/kgpgselkey.cpp:94
-#: plugins/cryptography/popuppublic.cpp:417
-#, fuzzy
-msgid "Unlimited"
-msgstr "Неограничено"
-
-#: plugins/cryptography/kgpgselkey.cpp:102
-msgid "Invalid"
-msgstr "Невалидно"
-
-#: plugins/cryptography/kgpgselkey.cpp:105
-msgid "Disabled"
-msgstr "Оневозможено"
-
-#: plugins/cryptography/kgpgselkey.cpp:108
-msgid "Revoked"
-msgstr "Отповикано"
-
-#: plugins/cryptography/kgpgselkey.cpp:111
-msgid "Expired"
-msgstr "Истечено"
-
-#: plugins/cryptography/kgpgselkey.cpp:114
-msgid "Undefined"
-msgstr "Недефинирано"
-
-#: plugins/cryptography/kgpgselkey.cpp:117
-msgid "None"
-msgstr "Нема"
-
-#: plugins/cryptography/kgpgselkey.cpp:120
-msgid "Marginal"
-msgstr "Маргинално"
-
-#: plugins/cryptography/kgpgselkey.cpp:123
-msgid "Full"
-msgstr "Целосно"
-
-#: plugins/cryptography/kgpgselkey.cpp:126
-msgid "Ultimate"
-msgstr "Крајно"
-
-#: plugins/cryptography/kgpgselkey.cpp:129
-msgid "?"
-msgstr "?"
-
-#: plugins/cryptography/kgpgselkey.cpp:159
-#, qt-format
-msgid "ID: %1, trust: %2, expiration: %3"
-msgstr "Ид.: %1, доверба: %2, истекува: %3"
-
 #: plugins/cryptography/popuppublic.cpp:101
 msgid "Select Public Key"
 msgstr "Изберете јавен клуч"
@@ -9047,6 +8983,11 @@ msgid ""
 "to give a password to encrypt/decrypt the file"
 msgstr ""
 
+#: plugins/cryptography/popuppublic.cpp:417
+#, fuzzy
+msgid "Unlimited"
+msgstr "Неограничено"
+
 #: plugins/cryptography/cryptographyplugin.cpp:55
 msgid "Cryptography"
 msgstr "Криптографија"
@@ -9096,6 +9037,30 @@ msgid_plural "Missing public keys"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+
+#: plugins/cryptography/selectkeydialog.cpp:50
+msgid "Private Key List"
+msgstr "Листа на приватни клучеви"
+
+#: plugins/cryptography/selectkeydialog.cpp:63
+msgid "Choose secret key:"
+msgstr "Изберете таен клуч:"
+
+#: plugins/cryptography/selectkeydialog.cpp:71
+msgid "Local signature (cannot be exported)"
+msgstr "Локален потпис (не може да се изнесе)"
+
+#: plugins/cryptography/selectkeydialog.cpp:103
+#, fuzzy
+msgctxt "adj"
+msgid "Unlimited"
+msgstr "Неограничено"
+
+#: plugins/cryptography/selectkeydialog.cpp:106
+#, fuzzy, qt-format
+#| msgid "ID: %1, trust: %2, expiration: %3"
+msgid "ID: %1, expiration: %2"
+msgstr "Ид.: %1, доверба: %2, истекува: %3"
 
 #: plugins/history/historydialog.cpp:101 plugins/history/historydialog.cpp:572
 #, qt-format
@@ -14811,6 +14776,36 @@ msgid ""
 "Please enter an Auto-Reply message that will be shown to users who message "
 "you while Away or Busy"
 msgstr ""
+
+#~ msgid "Invalid"
+#~ msgstr "Невалидно"
+
+#~ msgid "Disabled"
+#~ msgstr "Оневозможено"
+
+#~ msgid "Revoked"
+#~ msgstr "Отповикано"
+
+#~ msgid "Expired"
+#~ msgstr "Истечено"
+
+#~ msgid "Undefined"
+#~ msgstr "Недефинирано"
+
+#~ msgid "None"
+#~ msgstr "Нема"
+
+#~ msgid "Marginal"
+#~ msgstr "Маргинално"
+
+#~ msgid "Full"
+#~ msgstr "Целосно"
+
+#~ msgid "Ultimate"
+#~ msgstr "Крајно"
+
+#~ msgid "?"
+#~ msgstr "?"
 
 #~ msgid "Contact ID:"
 #~ msgstr "Ид. на контакт:"
