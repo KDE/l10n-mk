@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-05-17 05:52+0200\n"
+"POT-Creation-Date: 2007-05-18 05:53+0200\n"
 "PO-Revision-Date: 2007-02-28 14:08+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -103,7 +103,9 @@ msgid "KDE Email Client"
 msgstr "Клиентот на KDE за електронска пошта"
 
 #: aboutdata.cpp:216
-msgid "(c) 1997-2005, The KMail developers"
+#, fuzzy
+#| msgid "(c) 1997-2005, The KMail developers"
+msgid "(c) 1997-2007, The KMail developers"
 msgstr "(c) 1997-2005, развивачите на КПошта"
 
 #: accountdialog.cpp:310
@@ -840,7 +842,7 @@ msgstr "<b>Обработка на правилата за филтрирање:
 msgid "<b>Filter rules have matched.</b>"
 msgstr "<b>Правилата за филтрирање се совпаднаа.</b>"
 
-#: actionscheduler.cpp:626 kmfilter.cpp:128
+#: actionscheduler.cpp:626 kmfilter.cpp:129
 #, qt-format
 msgid "<b>Applying filter action:</b> %1"
 msgstr "<b>Го применувам дејството за филтрирање:</b> %1"
@@ -877,80 +879,88 @@ msgstr "Преглед на измените што ќе ги направи в�
 msgid "Virus handling"
 msgstr "Ракување со вируси"
 
-#: antispamwizard.cpp:290 antispamwizard.cpp:292 antispamwizard.cpp:588
+#: antispamwizard.cpp:290 antispamwizard.cpp:292 antispamwizard.cpp:590
 msgid "Spam Handling"
 msgstr ""
 
-#: antispamwizard.cpp:331 antispamwizard.cpp:333 antispamwizard.cpp:601
+#: antispamwizard.cpp:331 antispamwizard.cpp:333 antispamwizard.cpp:603
 msgid "Semi spam (unsure) handling"
 msgstr ""
 
-#: antispamwizard.cpp:393 antispamwizard.cpp:395 antispamwizard.cpp:609
+#: antispamwizard.cpp:393 antispamwizard.cpp:395 antispamwizard.cpp:611
 msgid "Classify as Spam"
 msgstr ""
 
-#: antispamwizard.cpp:435 antispamwizard.cpp:437 antispamwizard.cpp:611
+#: antispamwizard.cpp:404 kmsearchpattern.h:245
+msgid "Spam"
+msgstr ""
+
+#: antispamwizard.cpp:436 antispamwizard.cpp:438 antispamwizard.cpp:613
 msgid "Classify as NOT Spam"
 msgstr ""
 
-#: antispamwizard.cpp:509
+#: antispamwizard.cpp:447 kmsearchpattern.h:246
+msgid "Ham"
+msgstr ""
+
+#: antispamwizard.cpp:511
 #, qt-format
 msgid "Scanning for %1..."
 msgstr "Скенирам за %1..."
 
-#: antispamwizard.cpp:540
+#: antispamwizard.cpp:542
 msgid "Scanning for anti-spam tools finished."
 msgstr ""
 
-#: antispamwizard.cpp:541
+#: antispamwizard.cpp:543
 msgid "Scanning for anti-virus tools finished."
 msgstr "Скенирањето за антивирусни алатки е завршено."
 
-#: antispamwizard.cpp:544
+#: antispamwizard.cpp:546
 msgid ""
 "<p>Sorry, no spam detection tools have been found. Install your spam "
 "detection software and re-run this wizard.</p>"
 msgstr ""
 
-#: antispamwizard.cpp:547
+#: antispamwizard.cpp:549
 msgid "Scanning complete. No anti-virus tools found."
 msgstr "Скенирањето е завршено. Не се пронајдени антивирусни алатки."
 
-#: antispamwizard.cpp:571
+#: antispamwizard.cpp:573
 msgid "<p>Messages classified as spam are marked as read."
 msgstr ""
 
-#: antispamwizard.cpp:573
+#: antispamwizard.cpp:575
 msgid "<p>Messages classified as spam are not marked as read."
 msgstr ""
 
-#: antispamwizard.cpp:576
+#: antispamwizard.cpp:578
 msgid "<br>Spam messages are moved into the folder named <i>"
 msgstr ""
 
-#: antispamwizard.cpp:579
+#: antispamwizard.cpp:581
 msgid "<br>Spam messages are not moved into a certain folder.</p>"
 msgstr ""
 
-#: antispamwizard.cpp:603
+#: antispamwizard.cpp:605
 msgid "<p>The folder for messages classified as unsure (probably spam) is <i>"
 msgstr ""
 
-#: antispamwizard.cpp:616
+#: antispamwizard.cpp:618
 msgid "<p>The wizard will create the following filters:<ul>"
 msgstr "<p>Волшебникот ќе ги создаде следните филтри:<ul>"
 
-#: antispamwizard.cpp:619
+#: antispamwizard.cpp:621
 msgid "<p>The wizard will replace the following filters:<ul>"
 msgstr "<p>Волшебникот ќе ги замени следните филтри:<ul>"
 
-#: antispamwizard.cpp:882
+#: antispamwizard.cpp:884
 msgid ""
 "The wizard will search for any tools to do spam detection\n"
 "and setup KMail to work with them."
 msgstr ""
 
-#: antispamwizard.cpp:886
+#: antispamwizard.cpp:888
 msgid ""
 "<p>Here you can get some assistance in setting up KMail's filter rules to "
 "use some commonly-known anti-virus tools.</p><p>The wizard can detect those "
@@ -975,46 +985,46 @@ msgstr ""
 "време. Ако сакате да се вратите на поранешното однесување можеби ќе сакате "
 "да ги избришете правилата за филтрирање."
 
-#: antispamwizard.cpp:939
+#: antispamwizard.cpp:941
 msgid ""
 "<p>Please select the tools to be used for the spam detection and go to the "
 "next page.</p>"
 msgstr ""
 
-#: antispamwizard.cpp:968
+#: antispamwizard.cpp:970
 msgid "&Mark detected spam messages as read"
 msgstr ""
 
-#: antispamwizard.cpp:970
+#: antispamwizard.cpp:972
 msgid "Mark messages which have been classified as spam as read."
 msgstr ""
 
-#: antispamwizard.cpp:973
+#: antispamwizard.cpp:975
 msgid "Move &known spam to:"
 msgstr ""
 
-#: antispamwizard.cpp:975
+#: antispamwizard.cpp:977
 msgid ""
 "The default folder for spam messages is the trash folder, but you may change "
 "that in the folder view below."
 msgstr ""
 
-#: antispamwizard.cpp:990
+#: antispamwizard.cpp:992
 msgid "Move &probable spam to:"
 msgstr ""
 
-#: antispamwizard.cpp:992
+#: antispamwizard.cpp:994
 msgid ""
 "The default folder is the inbox folder, but you may change that in the "
 "folder view below.<p>Not all tools support a classification as unsure. If "
 "you haven't selected a capable tool, you can't select a folder as well."
 msgstr ""
 
-#: antispamwizard.cpp:1095
+#: antispamwizard.cpp:1097
 msgid "Check messages using the anti-virus tools"
 msgstr "Провери ги пораките со антивирусните алатки"
 
-#: antispamwizard.cpp:1097
+#: antispamwizard.cpp:1099
 msgid ""
 "Let the anti-virus tools check your messages. The wizard will create "
 "appropriate filters. The messages are usually marked by the tools so that "
@@ -1026,11 +1036,11 @@ msgstr ""
 "филтрите што следат да можат да дејствуваат и на пр. да ги преместат "
 "пораките со вируси во специјална папка."
 
-#: antispamwizard.cpp:1103
+#: antispamwizard.cpp:1105
 msgid "Move detected viral messages to the selected folder"
 msgstr "Премести ги детектираните пораки со вируси во избраната папка"
 
-#: antispamwizard.cpp:1105
+#: antispamwizard.cpp:1107
 msgid ""
 "A filter to detect messages classified as virus-infected and to move those "
 "messages into a predefined folder is created. The default folder is the "
@@ -1040,11 +1050,11 @@ msgstr ""
 "инфицирани со вирус и преместување на истите во одредена папка. Стандардната "
 "папка е корпата но тоа можете да го измените во прегледот со папки."
 
-#: antispamwizard.cpp:1111
+#: antispamwizard.cpp:1113
 msgid "Additionally, mark detected viral messages as read"
 msgstr "Додатно, означи ги пораките со вируси како прочитани"
 
-#: antispamwizard.cpp:1114
+#: antispamwizard.cpp:1116
 msgid ""
 "Mark messages which have been classified as virus-infected as read, as well "
 "as moving them to the selected folder."
@@ -5609,21 +5619,21 @@ msgstr "Нема грешки во правописот."
 msgid "Select Sound File"
 msgstr "Изберете звучна датотека"
 
-#: kmfilter.cpp:139
+#: kmfilter.cpp:140
 msgid "A critical error occurred. Processing stops here."
 msgstr "Се случи критична грешка. Обработката завршува."
 
-#: kmfilter.cpp:147
+#: kmfilter.cpp:148
 msgid "A problem was found while applying this action."
 msgstr "Се појави проблем при применувањето на дејствово."
 
-#: kmfilter.cpp:279
+#: kmfilter.cpp:281
 #, qt-format
 msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
 msgstr ""
 "<qt>Премногу дејства за филтрирање во правилото за филтрирање <b>%1</b>.</qt>"
 
-#: kmfilter.cpp:304
+#: kmfilter.cpp:306
 #, qt-format
 msgid ""
 "<qt>Unknown filter action <b>%1</b><br>in filter rule <b>%2</b>.<br>Ignoring "
@@ -13559,14 +13569,6 @@ msgstr "Следена"
 #: kmsearchpattern.h:244
 msgid "Ignored"
 msgstr "Игнорирана"
-
-#: kmsearchpattern.h:245
-msgid "Spam"
-msgstr ""
-
-#: kmsearchpattern.h:246
-msgid "Ham"
-msgstr ""
 
 #: kmsearchpattern.h:247
 msgid "To Do"
