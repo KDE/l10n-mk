@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-05-28 05:51+0200\n"
+"POT-Creation-Date: 2007-05-29 05:53+0200\n"
 "PO-Revision-Date: 2007-02-28 14:08+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1225,7 +1225,7 @@ msgstr "Додај..."
 msgid "Modify..."
 msgstr "Измени..."
 
-#: configuredialog.cpp:559 folderdiaacltab.cpp:636 kmcomposewin.cpp:3103
+#: configuredialog.cpp:559 folderdialogacltab.cpp:631 kmcomposewin.cpp:3103
 #, fuzzy
 msgid "Remove"
 msgstr "&Отстрани"
@@ -1972,7 +1972,7 @@ msgstr "Вредност"
 msgid "Ne&w"
 msgstr "Но&во"
 
-#: configuredialog.cpp:3104 kmfolderdia.cpp:301 kmmsgpartdlg.cpp:120
+#: configuredialog.cpp:3104 kmfolderdialog.cpp:299 kmmsgpartdlg.cpp:120
 #: newfolderdialog.cpp:91
 msgid "&Name:"
 msgstr "&Име:"
@@ -2362,16 +2362,16 @@ msgstr "Испразни ја локалната &корпа на излегув
 msgid "Quota units: "
 msgstr "Индикатор за &цитат:"
 
-#: configuredialog.cpp:4446 folderdiaquotatab_p.cpp:96 quotajobs.h:80
+#: configuredialog.cpp:4446 folderdialogquotatab_p.cpp:96 quotajobs.h:80
 msgid "KB"
 msgstr ""
 
-#: configuredialog.cpp:4447 folderdiaquotatab_p.cpp:101 quotajobs.h:85
+#: configuredialog.cpp:4447 folderdialogquotatab_p.cpp:101 quotajobs.h:85
 #, fuzzy
 msgid "MB"
 msgstr " MB"
 
-#: configuredialog.cpp:4448 folderdiaquotatab_p.cpp:106 quotajobs.h:90
+#: configuredialog.cpp:4448 folderdialogquotatab_p.cpp:106 quotajobs.h:90
 msgid "GB"
 msgstr ""
 
@@ -2921,36 +2921,36 @@ msgstr ""
 msgid "KMail Error"
 msgstr "Грешка во КПошта"
 
-#: folderdiaacltab.cpp:85
+#: folderdialogacltab.cpp:80
 msgctxt "Permissions"
 msgid "None"
 msgstr "Нема"
 
-#: folderdiaacltab.cpp:86
+#: folderdialogacltab.cpp:81
 msgctxt "Permissions"
 msgid "Read"
 msgstr "Читање"
 
-#: folderdiaacltab.cpp:87
+#: folderdialogacltab.cpp:82
 msgctxt "Permissions"
 msgid "Append"
 msgstr "Додавање"
 
-#: folderdiaacltab.cpp:88
+#: folderdialogacltab.cpp:83
 msgctxt "Permissions"
 msgid "Write"
 msgstr "Запишување"
 
-#: folderdiaacltab.cpp:89
+#: folderdialogacltab.cpp:84
 msgctxt "Permissions"
 msgid "All"
 msgstr "Сите"
 
-#: folderdiaacltab.cpp:105
+#: folderdialogacltab.cpp:100
 msgid "&User identifier:"
 msgstr "&Идентификатор на корисник:"
 
-#: folderdiaacltab.cpp:111
+#: folderdialogacltab.cpp:106
 msgid ""
 "The User Identifier is the login of the user on the IMAP server. This can be "
 "a simple user name or the full email address of the user; the login for your "
@@ -2961,65 +2961,65 @@ msgstr ""
 "корисникот. Најавата за вашата сопствена сметка на серверот ќе ви укаже која "
 "од двете форми е потребна."
 
-#: folderdiaacltab.cpp:116 folderdiaacltab.cpp:346
+#: folderdialogacltab.cpp:111 folderdialogacltab.cpp:341
 msgid "Permissions"
 msgstr "Дозволи"
 
-#: folderdiaacltab.cpp:251
+#: folderdialogacltab.cpp:246
 msgid "Custom Permissions"
 msgstr "Сопствени дозволи"
 
-#: folderdiaacltab.cpp:253
+#: folderdialogacltab.cpp:248
 #, qt-format
 msgid "Custom Permissions (%1)"
 msgstr "Сопствени дозволи (%1)"
 
-#: folderdiaacltab.cpp:345
+#: folderdialogacltab.cpp:340
 msgid "User Id"
 msgstr "Ид. на корисник"
 
-#: folderdiaacltab.cpp:357
+#: folderdialogacltab.cpp:352
 msgid "Add Entry..."
 msgstr "Додај елемент..."
 
-#: folderdiaacltab.cpp:358
+#: folderdialogacltab.cpp:353
 msgid "Modify Entry..."
 msgstr "Измени елемент..."
 
-#: folderdiaacltab.cpp:359
+#: folderdialogacltab.cpp:354
 msgid "Remove Entry"
 msgstr "Отстрани елемент"
 
-#: folderdiaacltab.cpp:431
+#: folderdialogacltab.cpp:426
 msgid "Error retrieving user permissions."
 msgstr "Грешка при преземањето на корисничките дозволи."
 
-#: folderdiaacltab.cpp:436
+#: folderdialogacltab.cpp:431
 msgid "Information not retrieved from server yet, please use \"Check Mail\"."
 msgstr ""
 "Информацијата сѐ уште не е преземена од серверот. Ве молам користете "
 "„Провери пошта“."
 
-#: folderdiaacltab.cpp:451 folderdiaquotatab.cpp:115
+#: folderdialogacltab.cpp:446 folderdialogquotatab.cpp:115
 msgid "Error: no IMAP account defined for this folder"
 msgstr "Грешка: за оваа папка не е дефинирана IMAP-сметка"
 
-#: folderdiaacltab.cpp:457 folderdiaquotatab.cpp:121
+#: folderdialogacltab.cpp:452 folderdialogquotatab.cpp:121
 #, qt-format
 msgid "Connecting to server %1, please wait..."
 msgstr "Се поврзувам со серверот %1, почекајте..."
 
-#: folderdiaacltab.cpp:475 folderdiaquotatab.cpp:140
+#: folderdialogacltab.cpp:470 folderdialogquotatab.cpp:140
 #: kmfoldercachedimap.cpp:773
 #, qt-format
 msgid "Error connecting to server %1"
 msgstr "Грешка при поврзувањето со серверот %1"
 
-#: folderdiaacltab.cpp:495 folderdiaacltab.cpp:522
+#: folderdialogacltab.cpp:490 folderdialogacltab.cpp:517
 msgid "This IMAP server does not have support for access control lists (ACL)"
 msgstr "Овој IMAP-сервер нема поддршка за листи за контрола на пристап (ACL)"
 
-#: folderdiaacltab.cpp:524
+#: folderdialogacltab.cpp:519
 #, qt-format
 msgid ""
 "Error retrieving access control list (ACL) from server\n"
@@ -3028,15 +3028,15 @@ msgstr ""
 "Грешка при преземањето на листата за контрола на пристап (ACL) од серверот\n"
 "%1"
 
-#: folderdiaacltab.cpp:569
+#: folderdialogacltab.cpp:564
 msgid "Modify Permissions"
 msgstr "Изменете дозволи"
 
-#: folderdiaacltab.cpp:603
+#: folderdialogacltab.cpp:598
 msgid "Add Permissions"
 msgstr "Додајте дозволи"
 
-#: folderdiaacltab.cpp:636
+#: folderdialogacltab.cpp:631
 msgid ""
 "Do you really want to remove your own permissions for this folder? You will "
 "not be able to access it afterwards."
@@ -3044,11 +3044,11 @@ msgstr ""
 "Дали навистина сакате да ги отстраните вашите сопствени дозволи за оваа "
 "папка? После ова нема да можете да ѝ пристапите."
 
-#: folderdiaquotatab.cpp:164 folderdiaquotatab.cpp:178
+#: folderdialogquotatab.cpp:164 folderdialogquotatab.cpp:178
 msgid "This account does not have support for quota information."
 msgstr ""
 
-#: folderdiaquotatab.cpp:166
+#: folderdialogquotatab.cpp:166
 #, fuzzy, qt-format
 msgid ""
 "Error retrieving quota information from server\n"
@@ -3057,19 +3057,19 @@ msgstr ""
 "Грешка при преземањето на листата за контрола на пристап (ACL) од серверот\n"
 "%1"
 
-#: folderdiaquotatab.cpp:185
+#: folderdialogquotatab.cpp:185
 msgid "No quota is set for this folder."
 msgstr ""
 
-#: folderdiaquotatab_p.cpp:66
+#: folderdialogquotatab_p.cpp:66
 msgid "Root:"
 msgstr ""
 
-#: folderdiaquotatab_p.cpp:68
+#: folderdialogquotatab_p.cpp:68
 msgid "Usage:"
 msgstr ""
 
-#: folderdiaquotatab_p.cpp:87 quotajobs.h:70
+#: folderdialogquotatab_p.cpp:87 quotajobs.h:70
 #, qt-format
 msgid "%1 of %2 %3 used"
 msgstr ""
@@ -3492,12 +3492,12 @@ msgstr "&Корпа за отпадоци:"
 msgid "Special &transport:"
 msgstr "Специјален &транспорт:"
 
-#: identitydialog.cpp:422 kmfolderdia.cpp:760
+#: identitydialog.cpp:422 kmfolderdialog.cpp:758
 #, fuzzy
 msgid "&Use custom message templates"
 msgstr "&Користи сопствена наставка за ид. на порака"
 
-#: identitydialog.cpp:428 kmfolderdia.cpp:768
+#: identitydialog.cpp:428 kmfolderdialog.cpp:766
 #, fuzzy
 msgid "&Copy Global Templates"
 msgstr "За&мени"
@@ -4401,27 +4401,27 @@ msgstr "Непо&врзан IMAP"
 msgid "&Maildir mailbox"
 msgstr "Пошт. сандаче &Maildir"
 
-#: kmailicalifaceimpl.cpp:90 kmfolderdia.cpp:488 newfolderdialog.cpp:153
+#: kmailicalifaceimpl.cpp:90 kmfolderdialog.cpp:486 newfolderdialog.cpp:153
 msgid "Mail"
 msgstr "Пошта"
 
-#: kmailicalifaceimpl.cpp:91 kmfolderdia.cpp:489 newfolderdialog.cpp:154
+#: kmailicalifaceimpl.cpp:91 kmfolderdialog.cpp:487 newfolderdialog.cpp:154
 msgid "Calendar"
 msgstr "Календар"
 
-#: kmailicalifaceimpl.cpp:92 kmfolderdia.cpp:490 newfolderdialog.cpp:155
+#: kmailicalifaceimpl.cpp:92 kmfolderdialog.cpp:488 newfolderdialog.cpp:155
 msgid "Contacts"
 msgstr "Контакти"
 
-#: kmailicalifaceimpl.cpp:93 kmfolderdia.cpp:491 newfolderdialog.cpp:156
+#: kmailicalifaceimpl.cpp:93 kmfolderdialog.cpp:489 newfolderdialog.cpp:156
 msgid "Notes"
 msgstr "Забелешки"
 
-#: kmailicalifaceimpl.cpp:94 kmfolderdia.cpp:492 newfolderdialog.cpp:157
+#: kmailicalifaceimpl.cpp:94 kmfolderdialog.cpp:490 newfolderdialog.cpp:157
 msgid "Tasks"
 msgstr "Задачи"
 
-#: kmailicalifaceimpl.cpp:95 kmfolderdia.cpp:493 newfolderdialog.cpp:158
+#: kmailicalifaceimpl.cpp:95 kmfolderdialog.cpp:491 newfolderdialog.cpp:158
 msgid "Journal"
 msgstr "Дневник"
 
@@ -5339,8 +5339,9 @@ msgstr "КПошта не можеше да ја декомпресира дат
 msgid "Save Attachment As"
 msgstr "Зачувајте прилог како"
 
-#: kmcomposewin.cpp:3768 kmfilterdlg.cpp:722 kmfolderdia.cpp:307
-#: kmfolderdia.cpp:675 kmfoldertree.cpp:1600 managesievescriptsdialog.cpp:292
+#: kmcomposewin.cpp:3768 kmfilterdlg.cpp:722 kmfolderdialog.cpp:305
+#: kmfolderdialog.cpp:673 kmfoldertree.cpp:1600
+#: managesievescriptsdialog.cpp:292
 msgid "unnamed"
 msgstr "неименувано"
 
@@ -6343,44 +6344,44 @@ msgstr ""
 msgid "Error while setting annotation: "
 msgstr ""
 
-#: kmfolderdia.cpp:86
+#: kmfolderdialog.cpp:84
 msgid "Permissions (ACL)"
 msgstr "Дозволи (ACL)"
 
-#: kmfolderdia.cpp:130
+#: kmfolderdialog.cpp:128
 msgid "General"
 msgstr "Општо"
 
-#: kmfolderdia.cpp:137
+#: kmfolderdialog.cpp:135
 msgid "Templates"
 msgstr ""
 
-#: kmfolderdia.cpp:148
+#: kmfolderdialog.cpp:146
 msgid "Access Control"
 msgstr "Контрола на пристап"
 
-#: kmfolderdia.cpp:157
+#: kmfolderdialog.cpp:155
 #, fuzzy
 msgid "Quota"
 msgstr "Вкупно"
 
-#: kmfolderdia.cpp:334
+#: kmfolderdialog.cpp:332
 msgid "Use custom &icons"
 msgstr "Користи сопствени &икони"
 
-#: kmfolderdia.cpp:339
+#: kmfolderdialog.cpp:337
 msgid "&Normal:"
 msgstr "Н&ормална:"
 
-#: kmfolderdia.cpp:354
+#: kmfolderdialog.cpp:352
 msgid "&Unread:"
 msgstr "Не&прочитана:"
 
-#: kmfolderdia.cpp:392
+#: kmfolderdialog.cpp:390
 msgid "Act on new/unread mail in this folder"
 msgstr "Дејствувај на нова/непрочитана пошта во папкава"
 
-#: kmfolderdia.cpp:394
+#: kmfolderdialog.cpp:392
 msgid ""
 "<qt><p>If this option is enabled then you will be notified about new/unread "
 "mail in this folder. Moreover, going to the next/previous folder with unread "
@@ -6391,15 +6392,15 @@ msgid ""
 "spam folder.</p></qt>"
 msgstr ""
 
-#: kmfolderdia.cpp:411
+#: kmfolderdialog.cpp:409
 msgid "Include this folder in mail checks"
 msgstr "Вклучи ја папкава во проверките за пошта"
 
-#: kmfolderdia.cpp:423
+#: kmfolderdialog.cpp:421
 msgid "Keep replies in this folder"
 msgstr "Задржи ги одговорите во папкава"
 
-#: kmfolderdia.cpp:425
+#: kmfolderdialog.cpp:423
 msgid ""
 "Check this option if you want replies you write to mails in this folder to "
 "be put in this same folder after sending, instead of in the configured sent-"
@@ -6409,35 +6410,36 @@ msgstr ""
 "оваа папка да бидат оставени во истата по испраќањето, наместо да бидат "
 "ставени во стандардната папка со испратена пошта."
 
-#: kmfolderdia.cpp:442
+#: kmfolderdialog.cpp:440
 msgid "Show Sender/Receiver Column in List of Messages"
 msgstr "Ги покажува колоните за примач/испраќач во листата со пораки"
 
-#: kmfolderdia.cpp:444
+#: kmfolderdialog.cpp:442
 msgid "Sho&w column:"
 msgstr "Покажи &колона:"
 
-#: kmfolderdia.cpp:450
+#: kmfolderdialog.cpp:448
 #, fuzzy
 msgid "Default"
 msgstr "Како почетен"
 
-#: kmfolderdia.cpp:451 kmheaders.cpp:209 kmheaders.cpp:275 kmheaders.cpp:391
-#: kmheaders.cpp:560 kmheaders.cpp:777 kmpopfiltercnfrmdlg.cpp:52
+#: kmfolderdialog.cpp:449 kmheaders.cpp:209 kmheaders.cpp:275
+#: kmheaders.cpp:391 kmheaders.cpp:560 kmheaders.cpp:777
+#: kmpopfiltercnfrmdlg.cpp:52
 msgid "Sender"
 msgstr "Испраќач"
 
-#: kmfolderdia.cpp:452 kmheaders.cpp:165 kmheaders.cpp:212 kmheaders.cpp:272
-#: kmheaders.cpp:277 kmheaders.cpp:393 kmheaders.cpp:562 kmheaders.cpp:779
-#: kmpopfiltercnfrmdlg.cpp:53
+#: kmfolderdialog.cpp:450 kmheaders.cpp:165 kmheaders.cpp:212
+#: kmheaders.cpp:272 kmheaders.cpp:277 kmheaders.cpp:393 kmheaders.cpp:562
+#: kmheaders.cpp:779 kmpopfiltercnfrmdlg.cpp:53
 msgid "Receiver"
 msgstr "Примач"
 
-#: kmfolderdia.cpp:463
+#: kmfolderdialog.cpp:461
 msgid "&Sender identity:"
 msgstr "Идентитет на и&спраќачот:"
 
-#: kmfolderdia.cpp:469
+#: kmfolderdialog.cpp:467
 msgid ""
 "Select the sender identity to be used when writing new mail or replying to "
 "mail in this folder. This means that if you are in one of your work folders, "
@@ -6446,27 +6448,27 @@ msgid ""
 "main configuration dialog. (Settings -> Configure KMail)"
 msgstr ""
 
-#: kmfolderdia.cpp:482
+#: kmfolderdialog.cpp:480
 msgid "&Folder contents:"
 msgstr "Содржина на &папка:"
 
-#: kmfolderdia.cpp:514
+#: kmfolderdialog.cpp:512
 msgid "Generate free/&busy and activate alarms for:"
 msgstr ""
 
-#: kmfolderdia.cpp:520
+#: kmfolderdialog.cpp:518
 msgid "Nobody"
 msgstr ""
 
-#: kmfolderdia.cpp:521
+#: kmfolderdialog.cpp:519
 msgid "Admins of This Folder"
 msgstr ""
 
-#: kmfolderdia.cpp:522
+#: kmfolderdialog.cpp:520
 msgid "All Readers of This Folder"
 msgstr ""
 
-#: kmfolderdia.cpp:524
+#: kmfolderdialog.cpp:522
 msgid ""
 "This setting defines which users sharing this folder should get \"busy\" "
 "periods in their freebusy lists and should see the alarms for the events or "
@@ -6482,16 +6484,16 @@ msgid ""
 "it is not known who will go to those events."
 msgstr ""
 
-#: kmfolderdia.cpp:542
+#: kmfolderdialog.cpp:540
 msgid ""
 "This setting allows you to disable alarms for folders shared by others. "
 msgstr ""
 
-#: kmfolderdia.cpp:546
+#: kmfolderdialog.cpp:544
 msgid "Block free/&busy and alarms locally"
 msgstr ""
 
-#: kmfolderdia.cpp:628
+#: kmfolderdialog.cpp:626
 msgid ""
 "You have configured this folder to contain groupware information and the "
 "general configuration option to hide groupware folders is set. That means "
