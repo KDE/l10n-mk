@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krandr\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-05-31 05:57+0200\n"
+"POT-Creation-Date: 2007-06-01 05:51+0200\n"
 "PO-Revision-Date: 2007-02-28 13:25+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : 2;\n"
 
-#: krandrmodule.cpp:69
+#: krandrmodule.cpp:51
 #, fuzzy
 msgid ""
 "Your X server does not support resizing and rotating the display. Please "
@@ -29,124 +29,54 @@ msgstr ""
 "екстензијата Resize And Rotate (RANDR) верзија 1.1 или поголема за да ја "
 "користите оваа можност.</qt>"
 
-#: krandrmodule.cpp:84
-msgid "Settings for screen:"
-msgstr "Поставувања за екранот:"
+#: krandrtray.cpp:53
+msgid "Screen resize & rotate"
+msgstr "Менување големина и ротација на екранот"
 
-#: krandrmodule.cpp:90 krandrtray.cpp:85
+#: krandrtray.cpp:72
+msgid "Required X Extension Not Available"
+msgstr "Потребната X екстензија не е достапна"
+
+#: krandrtray.cpp:83 legacyrandrconfig.cpp:36
 #, qt-format
 msgid "Screen %1"
 msgstr "Екран %1"
 
-#: krandrmodule.cpp:95
-msgid ""
-"The screen whose settings you would like to change can be selected using "
-"this drop-down list."
-msgstr ""
-"Екранот, чии што поставувања сакате да ги измените, може да го изберете со "
-"оваа паѓачка листа."
-
-#: krandrmodule.cpp:106
-msgid "Screen size:"
-msgstr "Големина на екран:"
-
-#: krandrmodule.cpp:110
-msgid ""
-"The size, otherwise known as the resolution, of your screen can be selected "
-"from this drop-down list."
-msgstr ""
-"Големината на вашиот екран, попозната како резолуција, може да биде избрана "
-"од оваа паѓачка листа."
-
-#: krandrmodule.cpp:118
-msgid "Refresh rate:"
-msgstr "Брзина на освежување:"
-
-#: krandrmodule.cpp:122
-msgid ""
-"The refresh rate of your screen can be selected from this drop-down list."
-msgstr ""
-"Од оваа паѓачка листа може да се избере брзината на освежување на вашиот "
-"екран."
-
-#: krandrmodule.cpp:126
-msgid "Orientation (degrees counterclockwise)"
-msgstr "Ориентација (степени обратно од стрелката на часовникот)"
-
-#: krandrmodule.cpp:129
-msgid ""
-"The options in this section allow you to change the rotation of your screen."
-msgstr ""
-"Опциите во овој дел ви овозможуваат да ја смените ротацијата на вашиот екран."
-
-#: krandrmodule.cpp:131
-msgid "Apply settings on KDE startup"
-msgstr "Примени поставувања на стартувањето на KDE"
-
-#: krandrmodule.cpp:133
-msgid ""
-"If this option is enabled the size and orientation settings will be used "
-"when KDE starts."
-msgstr ""
-"Ако е избрана оваа опција ќе бидат користени поставувањата за големина и "
-"ориентација кога ќе стартува KDE."
-
-#: krandrmodule.cpp:140
-msgid "Allow tray application to change startup settings"
-msgstr ""
-"Дозволи на апликацијата од сис. лента да ги измени стартните поставувања"
-
-#: krandrmodule.cpp:142
-msgid ""
-"If this option is enabled, options set by the system tray applet will be "
-"saved and loaded when KDE starts instead of being temporary."
-msgstr ""
-"Ако е избрана оваа опција, опциите поставени од аплетот во системската лента "
-"ќе бидат зачувани и вчитани при стартот на KDE, наместо да бидат привремени."
-
-#: krandrmodule.cpp:190 krandrtray.cpp:188
-#, qt-format
-msgid "%1 x %2"
-msgstr "%1 x %2"
-
-#: krandrtray.cpp:51
-msgid "Screen resize & rotate"
-msgstr "Менување големина и ротација на екранот"
-
-#: krandrtray.cpp:70
-msgid "Required X Extension Not Available"
-msgstr "Потребната X екстензија не е достапна"
-
-#: krandrtray.cpp:98
+#: krandrtray.cpp:100
 msgid "Configure Display..."
 msgstr "Конфигурирај екран..."
 
-#: krandrtray.cpp:130
+#: krandrtray.cpp:132
 msgid "Screen configuration has changed"
 msgstr "Конфигурацијата на екранот е сменета"
 
-#: krandrtray.cpp:148
+#: krandrtray.cpp:154
 msgid "Outputs"
 msgstr ""
 
-#: krandrtray.cpp:164
+#: krandrtray.cpp:163 krandrtray.cpp:210
 msgid "Screen Size"
 msgstr "Големина на екранот"
 
-#: krandrtray.cpp:202
+#: krandrtray.cpp:178 krandrtray.cpp:250
 #, fuzzy
 msgid "Orientation"
 msgstr "Непозната ориентација"
 
-#: krandrtray.cpp:221
+#: krandrtray.cpp:235 legacyrandrconfig.cpp:125
+#, qt-format
+msgid "%1 x %2"
+msgstr "%1 x %2"
+
+#: krandrtray.cpp:271
 msgid "Refresh Rate"
 msgstr "Брзина на освежување"
 
-#: krandrtray.cpp:324
+#: krandrtray.cpp:383
 msgid "Configure Display"
 msgstr "Конфигурирај екран"
 
-#: ktimerdialog.cpp:170
+#: ktimerdialog.cpp:167
 #, qt-format
 msgid "1 second remaining:"
 msgid_plural "%1 seconds remaining:"
@@ -301,12 +231,140 @@ msgstr "непозната ориентација"
 msgid "X Resize and Rotate extension version %1.%2"
 msgstr "Аплет од сис. лента за менување на големина и ориентација"
 
-#: rc.cpp:1
+#. i18n: tag string
+#. i18n: file legacyrandrconfigbase.ui line 13
+#: rc.cpp:3
+#, fuzzy
+#| msgid "Screen resize & rotate"
+msgid "Screen Resize and Rotate Settings"
+msgstr "Менување големина и ротација на екранот"
+
+#. i18n: tag string
+#. i18n: file legacyrandrconfigbase.ui line 16
+#: rc.cpp:6
+msgid ""
+"If this option is enabled, options set by the system tray applet will be "
+"saved and loaded when KDE starts instead of being temporary."
+msgstr ""
+"Ако е избрана оваа опција, опциите поставени од аплетот во системската лента "
+"ќе бидат зачувани и вчитани при стартот на KDE, наместо да бидат привремени."
+
+#. i18n: tag string
+#. i18n: file legacyrandrconfigbase.ui line 24
+#: rc.cpp:9
+#, fuzzy
+#| msgid "Settings for screen:"
+msgid "Settings for Screen:"
+msgstr "Поставувања за екранот:"
+
+#. i18n: tag string
+#. i18n: file legacyrandrconfigbase.ui line 34
+#: rc.cpp:12
+msgid ""
+"The screen whose settings you would like to change can be selected using "
+"this drop-down list."
+msgstr ""
+"Екранот, чии што поставувања сакате да ги измените, може да го изберете со "
+"оваа паѓачка листа."
+
+#. i18n: tag string
+#. i18n: file legacyrandrconfigbase.ui line 45
+#: rc.cpp:15
+#, fuzzy
+#| msgid "Screen Size"
+msgid "Screen SIze:"
+msgstr "Големина на екранот"
+
+#. i18n: tag string
+#. i18n: file legacyrandrconfigbase.ui line 55
+#: rc.cpp:18
+msgid ""
+"The size, otherwise known as the resolution, of your screen can be selected "
+"from this drop-down list."
+msgstr ""
+"Големината на вашиот екран, попозната како резолуција, може да биде избрана "
+"од оваа паѓачка листа."
+
+#. i18n: tag string
+#. i18n: file legacyrandrconfigbase.ui line 66
+#: rc.cpp:21
+#, fuzzy
+#| msgid "Refresh Rate"
+msgid "Refresh Rate:"
+msgstr "Брзина на освежување"
+
+#. i18n: tag string
+#. i18n: file legacyrandrconfigbase.ui line 73
+#: rc.cpp:24
+msgid ""
+"The refresh rate of your screen can be selected from this drop-down list."
+msgstr ""
+"Од оваа паѓачка листа може да се избере брзината на освежување на вашиот "
+"екран."
+
+#. i18n: tag string
+#. i18n: file legacyrandrconfigbase.ui line 88
+#: rc.cpp:27
+msgid ""
+"The options in this section allow you to change the rotation of your screen."
+msgstr ""
+"Опциите во овој дел ви овозможуваат да ја смените ротацијата на вашиот екран."
+
+#. i18n: tag string
+#. i18n: file legacyrandrconfigbase.ui line 91
+#: rc.cpp:30
+msgid "Orientation (degrees counterclockwise)"
+msgstr "Ориентација (степени обратно од стрелката на часовникот)"
+
+#. i18n: tag string
+#. i18n: file legacyrandrconfigbase.ui line 98
+#: rc.cpp:33
+msgid ""
+"If this option is enabled the size and orientation settings will be used "
+"when KDE starts."
+msgstr ""
+"Ако е избрана оваа опција ќе бидат користени поставувањата за големина и "
+"ориентација кога ќе стартува KDE."
+
+#. i18n: tag string
+#. i18n: file legacyrandrconfigbase.ui line 101
+#: rc.cpp:36
+msgid "Apply settings on KDE startup"
+msgstr "Примени поставувања на стартувањето на KDE"
+
+#. i18n: tag string
+#. i18n: file legacyrandrconfigbase.ui line 108
+#: rc.cpp:39
+msgid "Allow tray application to change startup settings"
+msgstr ""
+"Дозволи на апликацијата од сис. лента да ги измени стартните поставувања"
+
+#. i18n: tag string
+#. i18n: file randrconfigbase.ui line 13
+#: rc.cpp:42
+#, fuzzy
+#| msgid "Screen resize & rotate"
+msgid "Screen Resize and Rotate Configuration"
+msgstr "Менување големина и ротација на екранот"
+
+#. i18n: tag string
+#. i18n: file randrconfigbase.ui line 19
+#: rc.cpp:45
+msgid "Nothing to change here yet"
+msgstr ""
+
+#: rc.cpp:46
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Божидар Проевски"
 
-#: rc.cpp:2
+#: rc.cpp:47
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "bobibobi@freemail.com.mk"
+
+#~ msgid "Screen size:"
+#~ msgstr "Големина на екран:"
+
+#~ msgid "Refresh rate:"
+#~ msgstr "Брзина на освежување:"
