@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksystraycmd\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-04-03 05:45+0200\n"
+"POT-Creation-Date: 2007-07-03 05:05+0200\n"
 "PO-Revision-Date: 2006-04-23 11:01+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -29,7 +29,7 @@ msgstr "Нема прозорец што одговара на шемата „%
 msgid "KSysTrayCmd: K3ShellProcess cannot find a shell."
 msgstr "KSysTrayCmd: KShellProcess не може да најде школка."
 
-#: ksystraycmd.cpp:242 main.cpp:52
+#: ksystraycmd.cpp:242 main.cpp:26
 msgid "KSysTrayCmd"
 msgstr "KSysTrayCmd"
 
@@ -49,11 +49,23 @@ msgstr "&Откотви"
 msgid "&Quit"
 msgstr ""
 
-#: main.cpp:26
+#: main.cpp:28
+msgid "Allows any application to be kept in the system tray"
+msgstr "Дозволува било која апликација да се чува во системската лента"
+
+#: main.cpp:30
+msgid "(C) 2001-2002 Richard Moore (rich@kde.org)"
+msgstr ""
+
+#: main.cpp:31
+msgid "Richard Moore"
+msgstr ""
+
+#: main.cpp:36
 msgid "Command to execute"
 msgstr "Команда за извршување"
 
-#: main.cpp:28
+#: main.cpp:38
 msgid ""
 "A regular expression matching the window title\n"
 "If you do not specify one, then the very first window\n"
@@ -63,7 +75,7 @@ msgstr ""
 "Ако не назначите ништо, тогаш првиот прозорец кој ќе се појави\n"
 "ќе биде земен. Ова не се препорачува."
 
-#: main.cpp:31
+#: main.cpp:41
 msgid ""
 "The window id of the target window\n"
 "Specifies the id of the window to use. If the id starts with 0x\n"
@@ -73,11 +85,11 @@ msgstr ""
 "Го означува ид. на прозорецот што треба да се користи. Ако ид. почнува со 0x "
 "се претпоставува дека е хексадецимална вредност."
 
-#: main.cpp:34
+#: main.cpp:44
 msgid "Hide the window to the tray on startup"
 msgstr "Го сокрива прозорецот во системската лента на стартување"
 
-#: main.cpp:35
+#: main.cpp:45
 msgid ""
 "Wait until we are told to show the window before\n"
 "executing the command"
@@ -85,11 +97,11 @@ msgstr ""
 "Чекаме додека ни кажат да го прикажеме прозорецот\n"
 "пред да ја извршиме командата"
 
-#: main.cpp:37
+#: main.cpp:47
 msgid "Sets the initial tooltip for the tray icon"
 msgstr "Ги поставува иницијалните информации за иконата на сис. лента"
 
-#: main.cpp:38
+#: main.cpp:48
 msgid ""
 "Keep the tray icon even if the client exits. This option\n"
 "has no effect unless startonshow is specified."
@@ -98,7 +110,7 @@ msgstr ""
 "опција\n"
 "има ефект само ако е избран startonshow."
 
-#: main.cpp:40
+#: main.cpp:50
 #, fuzzy
 msgid ""
 "Do not use window's icon in systray, but ksystraycmd one's\n"
@@ -108,11 +120,11 @@ msgstr ""
 "прозорецот\n"
 "(треба да се користи со --icon за да се наведе иконата на ksystraycmd)"
 
-#: main.cpp:42
+#: main.cpp:52
 msgid "Try to keep the window above other windows"
 msgstr "Се обидува да го задржи прозорецот над другите прозорци"
 
-#: main.cpp:43
+#: main.cpp:53
 msgid ""
 "Quit the client when we are told to hide the window.\n"
 "This has no effect unless startonshow is specified and implies keeprunning."
@@ -120,11 +132,7 @@ msgstr ""
 "Го гасиме клиентот кога ќе ни кажат да го скриеме прозорецот.\n"
 "Ова има ефект само ако е назначен startonshow и подразбира keeprunning."
 
-#: main.cpp:54
-msgid "Allows any application to be kept in the system tray"
-msgstr "Дозволува било која апликација да се чува во системската лента"
-
-#: main.cpp:96
+#: main.cpp:93
 msgid "No command or window specified"
 msgstr "Не е назначена команда или прозорец"
 

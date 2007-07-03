@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-06-21 05:12+0200\n"
+"POT-Creation-Date: 2007-07-03 05:07+0200\n"
 "PO-Revision-Date: 2007-02-28 14:12+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1376,10 +1376,10 @@ msgstr "%1, %2 и %3 се взаемно несоодветни"
 msgid "%1: Event %2 not found, or not editable"
 msgstr "%1: Настанот %2 не е пронајден или не може да се уредува"
 
-#: kalarmapp.cpp:386 kalarmapp.cpp:388 kalarmapp.cpp:398 kalarmapp.cpp:489
-#: kalarmapp.cpp:491 kalarmapp.cpp:500 kalarmapp.cpp:571 kalarmapp.cpp:573
-#: kalarmapp.cpp:575 kalarmapp.cpp:591 kalarmapp.cpp:601 kalarmapp.cpp:604
-#: kalarmapp.cpp:606
+#: kalarmapp.cpp:386 kalarmapp.cpp:388 kalarmapp.cpp:398 kalarmapp.cpp:487
+#: kalarmapp.cpp:489 kalarmapp.cpp:498 kalarmapp.cpp:569 kalarmapp.cpp:571
+#: kalarmapp.cpp:573 kalarmapp.cpp:589 kalarmapp.cpp:599 kalarmapp.cpp:602
+#: kalarmapp.cpp:604
 #, qt-format
 msgid "%1 incompatible with %2"
 msgstr "%1 е несоодветен со %2"
@@ -1395,49 +1395,49 @@ msgid "%1: invalid email address"
 msgstr "%1: невалидна е-пошт. адреса"
 
 #: kalarmapp.cpp:438 kalarmapp.cpp:440 kalarmapp.cpp:442 kalarmapp.cpp:444
-#: kalarmapp.cpp:509 kalarmapp.cpp:559 kalarmapp.cpp:561 kalarmapp.cpp:636
+#: kalarmapp.cpp:507 kalarmapp.cpp:557 kalarmapp.cpp:559 kalarmapp.cpp:634
 #, qt-format
 msgid "%1 requires %2"
 msgstr "%1 побарува %2"
 
-#: kalarmapp.cpp:462 kalarmapp.cpp:473 kalarmapp.cpp:480 kalarmapp.cpp:506
-#: kalarmapp.cpp:520 kalarmapp.cpp:536 kalarmapp.cpp:582 kalarmapp.cpp:624
-#: kalarmapp.cpp:633
+#: kalarmapp.cpp:461 kalarmapp.cpp:471 kalarmapp.cpp:478 kalarmapp.cpp:504
+#: kalarmapp.cpp:518 kalarmapp.cpp:534 kalarmapp.cpp:580 kalarmapp.cpp:622
+#: kalarmapp.cpp:631
 #, qt-format
 msgid "Invalid %1 parameter"
 msgstr "Невалиден параметар %1"
 
-#: kalarmapp.cpp:522 kalarmapp.cpp:538 kalarmapp.cpp:616
+#: kalarmapp.cpp:520 kalarmapp.cpp:536 kalarmapp.cpp:614
 #, qt-format
 msgid "Invalid %1 parameter for date-only alarm"
 msgstr "Невалиден параметар %1 за аларм што е само за датум"
 
-#: kalarmapp.cpp:526
+#: kalarmapp.cpp:524
 #, qt-format
 msgid "%1 earlier than %2"
 msgstr "%1 е порано од %2"
 
-#: kalarmapp.cpp:545
+#: kalarmapp.cpp:543
 #, qt-format
 msgid "Invalid %1 and %2 parameters: repetition is longer than %3 interval"
 msgstr "Невалидни параметри %1 и %2: повторувањето е подолго од интервалот %3"
 
-#: kalarmapp.cpp:587
+#: kalarmapp.cpp:585
 #, qt-format
 msgid "%1 requires %2 or %3"
 msgstr "%1 ги побарува %2 или %3"
 
-#: kalarmapp.cpp:593
+#: kalarmapp.cpp:591
 #, qt-format
 msgid "%1 requires speech synthesis to be configured using KTTSD"
 msgstr ""
 
-#: kalarmapp.cpp:721
+#: kalarmapp.cpp:719
 #, qt-format
 msgid ": option(s) only valid with a message/%1/%2"
 msgstr ": опциите се валидни само со пораката/%1/%2"
 
-#: kalarmapp.cpp:741
+#: kalarmapp.cpp:739
 msgid ""
 "\n"
 "Use --help to get a list of available command line options.\n"
@@ -1445,7 +1445,7 @@ msgstr ""
 "\n"
 "Користете --help за да добиете листа на опции за командната линија.\n"
 
-#: kalarmapp.cpp:813
+#: kalarmapp.cpp:811
 msgid ""
 "Quitting will disable alarms\n"
 "(once any alarm message windows are closed)."
@@ -1453,15 +1453,15 @@ msgstr ""
 "Напуштањето ќе ги оневозможи алармите\n"
 "(откако ќе се затворат сите прозорци со пораки од аларми)."
 
-#: kalarmapp.cpp:1766
+#: kalarmapp.cpp:1764
 msgid "Error creating temporary script file"
 msgstr "Грешка при создавањето на привремена скриптна датотека"
 
-#: kalarmapp.cpp:1856 specialactions.cpp:151
+#: kalarmapp.cpp:1854 specialactions.cpp:151
 msgid "Pre-alarm action:"
 msgstr "Дејство пред алармот:"
 
-#: kalarmapp.cpp:1858 specialactions.cpp:164
+#: kalarmapp.cpp:1856 specialactions.cpp:164
 msgid "Post-alarm action:"
 msgstr "Дејство по алармот:"
 
@@ -1585,161 +1585,169 @@ msgid ""
 msgstr ""
 
 #: main.cpp:37
-msgid "Prompt for confirmation when alarm is acknowledged"
-msgstr ""
+msgid "KAlarm"
+msgstr "КАларм"
 
-#: main.cpp:39
-msgid "Attach file to email (repeat as needed)"
+#: main.cpp:38
+msgid "Personal alarm message, command and email scheduler for KDE"
 msgstr ""
 
 #: main.cpp:40
-msgid "Auto-close alarm window after --late-cancel period"
+msgid "Copyright 2001-2007, David Jarvie"
 msgstr ""
 
-#: main.cpp:41
-msgid "Blind copy email to self"
+#: main.cpp:41 kalarmd/admain.cpp:40
+msgid "David Jarvie"
 msgstr ""
 
-#: main.cpp:43
-msgid "Beep when message is displayed"
-msgstr ""
-
-#: main.cpp:46
-msgid "Message background color (name or hex 0xRRGGBB)"
-msgstr "Боја на подлога за пораката (име или хексадекадно 0xRRGGBB)"
-
-#: main.cpp:49
-msgid "Message foreground color (name or hex 0xRRGGBB)"
+#: main.cpp:48
+msgid "Prompt for confirmation when alarm is acknowledged"
 msgstr ""
 
 #: main.cpp:50
-msgid "Cancel alarm with the specified event ID"
+msgid "Attach file to email (repeat as needed)"
+msgstr ""
+
+#: main.cpp:51
+msgid "Auto-close alarm window after --late-cancel period"
 msgstr ""
 
 #: main.cpp:52
-msgid "Disable the alarm"
-msgstr "Го оневозможува алармот"
-
-#: main.cpp:54
-msgid "Execute a shell command line"
+msgid "Blind copy email to self"
 msgstr ""
 
-#: main.cpp:55
-msgid "Display the alarm edit dialog to edit the specified alarm"
+#: main.cpp:54
+msgid "Beep when message is displayed"
 msgstr ""
 
 #: main.cpp:57
-msgid "Display the alarm edit dialog to edit a new alarm"
-msgstr ""
-
-#: main.cpp:58
-msgid "Display the alarm edit dialog, preset with a template"
-msgstr ""
+msgid "Message background color (name or hex 0xRRGGBB)"
+msgstr "Боја на подлога за пораката (име или хексадекадно 0xRRGGBB)"
 
 #: main.cpp:60
-msgid "File to display"
-msgstr "Датотека за прикажување"
+msgid "Message foreground color (name or hex 0xRRGGBB)"
+msgstr ""
 
-#: main.cpp:62
-msgid "KMail identity to use as sender of email"
+#: main.cpp:61
+msgid "Cancel alarm with the specified event ID"
 msgstr ""
 
 #: main.cpp:63
-msgid "Trigger or cancel alarm with the specified event ID"
-msgstr ""
+msgid "Disable the alarm"
+msgstr "Го оневозможува алармот"
 
 #: main.cpp:65
-msgid "Interval between alarm repetitions"
+msgid "Execute a shell command line"
 msgstr ""
 
-#: main.cpp:67
-msgid "Show alarm as an event in KOrganizer"
+#: main.cpp:66
+msgid "Display the alarm edit dialog to edit the specified alarm"
+msgstr ""
+
+#: main.cpp:68
+msgid "Display the alarm edit dialog to edit a new alarm"
 msgstr ""
 
 #: main.cpp:69
-msgid "Cancel alarm if more than 'period' late when triggered"
+msgid "Display the alarm edit dialog, preset with a template"
 msgstr ""
 
 #: main.cpp:71
-msgid "Repeat alarm at every login"
-msgstr ""
+msgid "File to display"
+msgstr "Датотека за прикажување"
 
 #: main.cpp:73
-msgid "Send an email to the given address (repeat as needed)"
+msgid "KMail identity to use as sender of email"
 msgstr ""
 
-#: main.cpp:75
-msgid "Audio file to play once"
+#: main.cpp:74
+msgid "Trigger or cancel alarm with the specified event ID"
 msgstr ""
 
-#: main.cpp:77
-msgid "Audio file to play repeatedly"
+#: main.cpp:76
+msgid "Interval between alarm repetitions"
 msgstr ""
 
 #: main.cpp:78
-msgid "Specify alarm recurrence using iCalendar syntax"
+msgid "Show alarm as an event in KOrganizer"
 msgstr ""
 
 #: main.cpp:80
-msgid "Display reminder in advance of alarm"
+msgid "Cancel alarm if more than 'period' late when triggered"
 msgstr ""
 
-#: main.cpp:81
-msgid "Display reminder once, before first alarm recurrence"
-msgstr ""
-
-#: main.cpp:83
-msgid "Number of times to repeat alarm (including initial occasion)"
+#: main.cpp:82
+msgid "Repeat alarm at every login"
 msgstr ""
 
 #: main.cpp:84
-msgid "Reset the alarm scheduling daemon"
+msgid "Send an email to the given address (repeat as needed)"
 msgstr ""
 
 #: main.cpp:86
-msgid "Speak the message when it is displayed"
+msgid "Audio file to play once"
 msgstr ""
 
-#: main.cpp:87
-msgid "Stop the alarm scheduling daemon"
+#: main.cpp:88
+msgid "Audio file to play repeatedly"
 msgstr ""
 
 #: main.cpp:89
-msgid "Email subject line"
+msgid "Specify alarm recurrence using iCalendar syntax"
 msgstr ""
 
 #: main.cpp:91
+msgid "Display reminder in advance of alarm"
+msgstr ""
+
+#: main.cpp:92
+msgid "Display reminder once, before first alarm recurrence"
+msgstr ""
+
+#: main.cpp:94
+msgid "Number of times to repeat alarm (including initial occasion)"
+msgstr ""
+
+#: main.cpp:95
+msgid "Reset the alarm scheduling daemon"
+msgstr ""
+
+#: main.cpp:97
+msgid "Speak the message when it is displayed"
+msgstr ""
+
+#: main.cpp:98
+msgid "Stop the alarm scheduling daemon"
+msgstr ""
+
+#: main.cpp:100
+msgid "Email subject line"
+msgstr ""
+
+#: main.cpp:102
 msgid ""
 "Trigger alarm at time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
 msgstr ""
 
-#: main.cpp:92
+#: main.cpp:103
 msgid "Display system tray icon"
 msgstr "Ја прикажува иконата во системската лента"
 
-#: main.cpp:93
+#: main.cpp:104
 msgid "Trigger alarm with the specified event ID"
 msgstr ""
 
-#: main.cpp:95
+#: main.cpp:106
 msgid "Repeat until time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
 msgstr ""
 
-#: main.cpp:97
+#: main.cpp:108
 msgid "Volume to play audio file"
 msgstr ""
 
-#: main.cpp:98
+#: main.cpp:109
 msgid "Message text to display"
 msgstr "Текст што ќе се прикаже во пораката"
-
-#: main.cpp:105
-msgid "KAlarm"
-msgstr "КАларм"
-
-#: main.cpp:106
-msgid "Personal alarm message, command and email scheduler for KDE"
-msgstr ""
 
 #: mainwindow.cpp:105
 msgid "Show &Alarm Times"
@@ -4724,28 +4732,43 @@ msgstr ""
 "менувате времето во поголеми чекори (6 часа / 5 минути)."
 
 #: kalarmd/admain.cpp:36
-msgid "kalarmd is being autostarted"
-msgstr ""
-
-#: kalarmd/admain.cpp:42
 msgid "KAlarm Daemon"
 msgstr "Даемон за КАларм"
 
-#: kalarmd/admain.cpp:43
+#: kalarmd/admain.cpp:37
 msgid "KAlarm Alarm Daemon"
 msgstr "Даемон за аларми на КАларм"
 
-#: kalarmd/admain.cpp:46
+#: kalarmd/admain.cpp:38
+msgid ""
+"Copyright 1997-1999 Preston Brown\n"
+"Copyright 2000-2001 Cornelius Schumacher\n"
+"Copyright 2001,2004-2007 David Jarvie"
+msgstr ""
+
+#: kalarmd/admain.cpp:40
 msgid "Maintainer"
 msgstr "Одржувач"
 
-#: kalarmd/admain.cpp:47
+#: kalarmd/admain.cpp:41
+msgid "Cornelius Schumacher"
+msgstr ""
+
+#: kalarmd/admain.cpp:41
 msgid "Author"
 msgstr "Автор"
 
-#: kalarmd/admain.cpp:48
+#: kalarmd/admain.cpp:42
+msgid "Preston Brown"
+msgstr ""
+
+#: kalarmd/admain.cpp:42
 msgid "Original Author"
 msgstr "Оригинален автор"
+
+#: kalarmd/admain.cpp:47
+msgid "kalarmd is being autostarted"
+msgstr ""
 
 #~ msgid "Custom..."
 #~ msgstr "Сопствено..."
