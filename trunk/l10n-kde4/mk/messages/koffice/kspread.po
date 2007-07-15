@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kspread\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-14 05:36+0200\n"
+"POT-Creation-Date: 2007-07-15 05:35+0200\n"
 "PO-Revision-Date: 2000-06-08 07:00+0100\n"
 "Last-Translator: Dimitar Indovski <dime@gord.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -2830,10 +2830,11 @@ msgstr "Создади котва"
 msgid "Header1"
 msgstr ""
 
-#: StyleManager.cpp:382 dialogs/StylesDialog.cpp:117
-#: dialogs/StylesDialog.cpp:161 dialogs/StylesDialog.cpp:204
-#: dialogs/StylesDialog.cpp:220 dialogs/StylesDialog.cpp:263
-#: dialogs/StylesDialog.cpp:285 dialogs/StylesDialog.cpp:308 ui/View.cpp:541
+#: StyleManager.cpp:382 dialogs/StyleManagerDialog.cpp:100
+#: dialogs/StyleManagerDialog.cpp:144 dialogs/StyleManagerDialog.cpp:182
+#: dialogs/StyleManagerDialog.cpp:196 dialogs/StyleManagerDialog.cpp:239
+#: dialogs/StyleManagerDialog.cpp:259 dialogs/StyleManagerDialog.cpp:280
+#: ui/View.cpp:541
 #, fuzzy
 msgid "Default"
 msgstr "Резултат Y"
@@ -4585,6 +4586,17 @@ msgstr ""
 msgid "Merging of columns or rows is not supported."
 msgstr ""
 
+#: commands/NamedAreaCommand.cpp:33 commands/NamedAreaCommand.cpp:49
+#: dialogs/AddNamedAreaDialog.cpp:49
+#, fuzzy
+msgid "Add Named Area"
+msgstr "Екстра"
+
+#: commands/NamedAreaCommand.cpp:51 dialogs/NamedAreaDialog.cpp:191
+#, fuzzy
+msgid "Remove Named Area"
+msgstr "Одстрани келија"
+
 #: commands/RowColumnManipulators.cpp:42 dialogs/Resize2Dialog.cpp:124
 #, fuzzy
 msgid "Resize Column"
@@ -4718,30 +4730,28 @@ msgstr ""
 msgid "Non-empty"
 msgstr "Папка"
 
-#: dialogs/AngleDialog.cpp:62
-#, fuzzy
-msgid "Angle:"
-msgstr "Агол (рад)"
-
-#: dialogs/AreaDialog.cpp:46
-#, fuzzy
-msgid "Area Name"
-msgstr "Име на Табела"
-
-#: dialogs/AreaDialog.cpp:60
+#: dialogs/AddNamedAreaDialog.cpp:58
 #, fuzzy
 msgid "Enter the area name:"
 msgstr "Инт"
 
-#: dialogs/AreaDialog.cpp:95 ui/View.cpp:6591
-#, fuzzy
-msgid "This name is already used."
-msgstr "Датотеката веќе постои"
+#: dialogs/AddNamedAreaDialog.cpp:91
+#, qt-format
+msgid ""
+"The named area '%1' already exists.\n"
+"Do you want to replace it?"
+msgstr ""
 
-#: dialogs/AreaDialog.cpp:99
+#: dialogs/AddNamedAreaDialog.cpp:93 dialogs/AddNamedAreaDialog.cpp:99
+#: dialogs/NamedAreaDialog.cpp:309
 #, fuzzy
-msgid "Area text is empty."
-msgstr "??Околински Тескт?? е празен!"
+msgid "Replace Named Area"
+msgstr "Одстрани келија"
+
+#: dialogs/AngleDialog.cpp:62
+#, fuzzy
+msgid "Angle:"
+msgstr "Агол (рад)"
 
 #: dialogs/CSVDialog.cpp:73 dialogs/CSVDialog.cpp:170
 #, fuzzy
@@ -4946,7 +4956,7 @@ msgid "&Add"
 msgstr ""
 
 #: dialogs/ConsolidateDialog.cpp:125 dialogs/ListDialog.cpp:76
-#: dialogs/NamedAreaDialog.cpp:68
+#: dialogs/NamedAreaDialog.cpp:70
 #, fuzzy
 msgid "&Remove"
 msgstr "Одстрани колона"
@@ -5481,7 +5491,7 @@ msgstr "Одстрани редица"
 msgid "Remove columns"
 msgstr "Одстрани колона"
 
-#: dialogs/LayoutDialog.cpp:173
+#: dialogs/LayoutDialog.cpp:173 dialogs/StyleManagerDialog.cpp:60
 #, fuzzy
 msgid "Style"
 msgstr "Стил:"
@@ -5931,78 +5941,61 @@ msgstr ""
 "Келијата не е празна.\n"
 "Дали сакате да продолжите?"
 
-#: dialogs/NamedAreaDialog.cpp:67
+#: dialogs/NamedAreaDialog.cpp:69
 #, fuzzy
 msgid "&Select"
 msgstr "Избери"
 
-#: dialogs/NamedAreaDialog.cpp:69
+#: dialogs/NamedAreaDialog.cpp:71
 #, fuzzy
 msgid "&Edit..."
 msgstr "Подреди"
 
-#: dialogs/NamedAreaDialog.cpp:70 dialogs/StylesDialog.cpp:80
+#: dialogs/NamedAreaDialog.cpp:72 dialogs/StyleManagerDialog.cpp:48
 msgid "&New..."
 msgstr ""
 
-#: dialogs/NamedAreaDialog.cpp:71
+#: dialogs/NamedAreaDialog.cpp:73
 #, fuzzy
 msgid "Named Areas"
 msgstr "Одстрани келија"
 
-#: dialogs/NamedAreaDialog.cpp:87 dialogs/NamedAreaDialog.cpp:115
+#: dialogs/NamedAreaDialog.cpp:89 dialogs/NamedAreaDialog.cpp:117
 #, fuzzy, qt-format
 msgid "Area: %1"
 msgstr "Податок X"
 
-#: dialogs/NamedAreaDialog.cpp:150
+#: dialogs/NamedAreaDialog.cpp:152
 #, fuzzy
 msgid "New Named Area"
 msgstr "Одстрани келија"
 
-#: dialogs/NamedAreaDialog.cpp:176
+#: dialogs/NamedAreaDialog.cpp:178
 #, fuzzy
 msgid "Edit Named Area"
 msgstr "Екстра"
 
-#: dialogs/NamedAreaDialog.cpp:188
+#: dialogs/NamedAreaDialog.cpp:190
 #, fuzzy
 msgid "Do you really want to remove this named area?"
 msgstr ""
 "Дали навистина сакате да ја избришете скриптата\n"
 "%1"
 
-#: dialogs/NamedAreaDialog.cpp:189
-#, fuzzy
-msgid "Remove Named Area"
-msgstr "Одстрани келија"
-
-#: dialogs/NamedAreaDialog.cpp:233
+#: dialogs/NamedAreaDialog.cpp:239
 #, fuzzy
 msgid "Cells:"
 msgstr "Келија"
 
-#: dialogs/NamedAreaDialog.cpp:240
+#: dialogs/NamedAreaDialog.cpp:246
 #, fuzzy
 msgid "Sheet:"
 msgstr "Избери"
 
-#: dialogs/NamedAreaDialog.cpp:247
+#: dialogs/NamedAreaDialog.cpp:253
 #, fuzzy
 msgid "Area name:"
 msgstr "Име на Табела"
-
-#: dialogs/NamedAreaDialog.cpp:304
-#, fuzzy
-msgid "Do you really want to replace this named area?"
-msgstr ""
-"Дали навистина сакате да ја избришете скриптата\n"
-"%1"
-
-#: dialogs/NamedAreaDialog.cpp:305
-#, fuzzy
-msgid "Replace Named Area"
-msgstr "Одстрани келија"
 
 #: dialogs/PaperLayoutDialog.cpp:83
 msgid "&Apply to all sheets"
@@ -6702,46 +6695,36 @@ msgstr ""
 msgid "Special Paste"
 msgstr "Специјално Вметни"
 
-#: dialogs/StylesDialog.cpp:49 dialogs/StylesDialog.cpp:56
-#, fuzzy
-msgid "Styles"
-msgstr "Стил:"
-
-#: dialogs/StylesDialog.cpp:58
-#, fuzzy
-msgid "All Styles"
-msgstr "Стил:"
-
-#: dialogs/StylesDialog.cpp:59
-#, fuzzy
-msgid "Applied Styles"
-msgstr "Стил:"
-
-#: dialogs/StylesDialog.cpp:60
-#, fuzzy
-msgid "Custom Styles"
-msgstr "Подреди"
-
-#: dialogs/StylesDialog.cpp:61
-#, fuzzy
-msgid "Hierarchical"
-msgstr "Финансиски"
-
-#: dialogs/StylesDialog.cpp:78 ui/View.cpp:1189
-msgid "Style Manager"
-msgstr ""
-
-#: dialogs/StylesDialog.cpp:81
+#: dialogs/StyleManagerDialog.cpp:49
 #, fuzzy
 msgid "&Modify..."
 msgstr "Уреди Келија"
 
-#: dialogs/StylesDialog.cpp:82
+#: dialogs/StyleManagerDialog.cpp:50
 #, fuzzy
 msgid "&Delete..."
 msgstr "Серии..."
 
-#: dialogs/StylesDialog.cpp:229 dialogs/StylesDialog.cpp:233
+#: dialogs/StyleManagerDialog.cpp:52 ui/View.cpp:1189
+msgid "Style Manager"
+msgstr ""
+
+#: dialogs/StyleManagerDialog.cpp:64
+#, fuzzy
+msgid "All Styles"
+msgstr "Стил:"
+
+#: dialogs/StyleManagerDialog.cpp:65
+#, fuzzy
+msgid "Custom Styles"
+msgstr "Подреди"
+
+#: dialogs/StyleManagerDialog.cpp:66
+#, fuzzy
+msgid "Hierarchical"
+msgstr "Финансиски"
+
+#: dialogs/StyleManagerDialog.cpp:205 dialogs/StyleManagerDialog.cpp:209
 #, fuzzy, qt-format
 msgid "style%1"
 msgstr "Стил:"
@@ -7172,12 +7155,12 @@ msgstr "Вметни колона"
 msgid "Cell Tool"
 msgstr "Келијата е"
 
-#: ui/Editors.cpp:1715
+#: ui/Editors.cpp:1710
 #, fuzzy
 msgid "Select Single Cell"
 msgstr "Преизбери"
 
-#: ui/Editors.cpp:1719
+#: ui/Editors.cpp:1714
 #, fuzzy
 msgid "Select Multiple Cells"
 msgstr "Стил на Табела..."
@@ -8520,6 +8503,11 @@ msgstr "Смени Име на Табела"
 msgid "Sheet name cannot be empty."
 msgstr "Името на табела не смее да биде празно."
 
+#: ui/View.cpp:6591
+#, fuzzy
+msgid "This name is already used."
+msgstr "Датотеката веќе постои"
+
 #: ui/View.cpp:6835
 #, fuzzy
 msgid "Sum: "
@@ -8549,6 +8537,28 @@ msgstr "Колона "
 #, fuzzy
 msgid "CountA: "
 msgstr "Колона "
+
+#, fuzzy
+#~ msgid "Area Name"
+#~ msgstr "Име на Табела"
+
+#, fuzzy
+#~ msgid "Area text is empty."
+#~ msgstr "??Околински Тескт?? е празен!"
+
+#, fuzzy
+#~ msgid "Do you really want to replace this named area?"
+#~ msgstr ""
+#~ "Дали навистина сакате да ја избришете скриптата\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgid "Styles"
+#~ msgstr "Стил:"
+
+#, fuzzy
+#~ msgid "Applied Styles"
+#~ msgstr "Стил:"
 
 #, fuzzy
 #~ msgid "Show Page Borders"
