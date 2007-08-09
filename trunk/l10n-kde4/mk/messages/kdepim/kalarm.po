@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-06 05:39+0200\n"
+"POT-Creation-Date: 2007-08-09 05:29+0200\n"
 "PO-Revision-Date: 2007-02-28 14:12+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -341,12 +341,14 @@ msgstr ""
 "Внесете го бројот на денови пред секој роденден за прикажување на потсетник. "
 "Ова е дополнително од алармот што се прикажува на роденденот."
 
-#: birthdaydlg.cpp:188 editdlg.cpp:138
+#: birthdaydlg.cpp:188 editdlg.cpp:137
 msgid "Special Actions..."
 msgstr "Специјални дејства..."
 
-#: birthdaydlg.cpp:204 editdlg.cpp:408
-msgid "Simple Repetition"
+#: birthdaydlg.cpp:204 recurrenceedit.cpp:349
+#, fuzzy
+#| msgid "Simple Repetition"
+msgid "Sub-Repetition"
 msgstr "Едноставно повторување"
 
 #: birthdaydlg.cpp:207
@@ -357,7 +359,7 @@ msgstr "Поставува додатно повторување на аларм
 msgid "Error reading address book"
 msgstr "Грешка при читањето на адресарот"
 
-#: birthdaymodel.cpp:113 eventlistmodel.cpp:289
+#: birthdaymodel.cpp:113 eventlistmodel.cpp:315
 msgid "Name"
 msgstr "Име"
 
@@ -460,106 +462,106 @@ msgid "Cannot defer reminder past the main alarm time (%1)"
 msgstr ""
 "Не можам да го одложам потсетувањето времето на главниот аларм (тековно %1)"
 
-#: editdlg.cpp:106
+#: editdlg.cpp:105
 msgid "Choose Text or Image File to Display"
 msgstr "Избирање текст или слика за приказ"
 
-#: editdlg.cpp:123
+#: editdlg.cpp:122
 msgid "Choose Log File"
 msgstr "Избирање дневник"
 
-#: editdlg.cpp:137
+#: editdlg.cpp:136
 msgid "Confirm acknowledgment"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kalarmconfig.kcfg line 270
-#: editdlg.cpp:139 rc.cpp:235
+#: editdlg.cpp:138 rc.cpp:235
 msgid "Show in KOrganizer"
 msgstr "Прикажи во КОрганизатор"
 
-#: editdlg.cpp:140
+#: editdlg.cpp:139
 msgid "Enter a script"
 msgstr "Внесете скрипта"
 
-#: editdlg.cpp:141
+#: editdlg.cpp:140
 msgid "Enter a scri&pt"
 msgstr "Внесете скри&пта"
 
 #. i18n: tag label
 #. i18n: file kalarmconfig.kcfg line 312
-#: editdlg.cpp:142 rc.cpp:286
+#: editdlg.cpp:141 rc.cpp:286
 msgid "Execute in terminal window"
 msgstr "Изврши во терминалски прозорец"
 
-#: editdlg.cpp:143
+#: editdlg.cpp:142
 msgid "Execute in terminal &window"
 msgstr "Изврши во &терминалски прозорец"
 
-#: editdlg.cpp:144
+#: editdlg.cpp:143
 msgid "Exec&ute in terminal window"
 msgstr "Изврш&и во терминалски прозорец"
 
-#: editdlg.cpp:145
+#: editdlg.cpp:144
 msgid "Lo&g to file"
 msgstr "&Запиши во датотека"
 
 #. i18n: tag label
 #. i18n: file kalarmconfig.kcfg line 321
-#: editdlg.cpp:146 rc.cpp:295
+#: editdlg.cpp:145 rc.cpp:295
 msgid "Copy email to self"
 msgstr ""
 
-#: editdlg.cpp:147
+#: editdlg.cpp:146
 msgid "Copy &email to self"
 msgstr ""
 
-#: editdlg.cpp:148
+#: editdlg.cpp:147
 msgid "Copy email to &self"
 msgstr ""
 
-#: editdlg.cpp:149
+#: editdlg.cpp:148
 msgctxt "'From' email address"
 msgid "From:"
 msgstr "Од:"
 
-#: editdlg.cpp:150
+#: editdlg.cpp:149
 msgctxt "'From' email address"
 msgid "&From:"
 msgstr "&Од:"
 
-#: editdlg.cpp:151 messagewin.cpp:494
+#: editdlg.cpp:150 messagewin.cpp:494
 msgctxt "Email addressee"
 msgid "To:"
 msgstr "До:"
 
-#: editdlg.cpp:152 messagewin.cpp:501
+#: editdlg.cpp:151 messagewin.cpp:501
 msgctxt "Email subject"
 msgid "Subject:"
 msgstr "Тема:"
 
-#: editdlg.cpp:153
+#: editdlg.cpp:152
 msgctxt "Email subject"
 msgid "Sub&ject:"
 msgstr "Те&ма:"
 
-#: editdlg.cpp:188
+#: editdlg.cpp:187
 msgid "Load Template..."
 msgstr "Вчитај образец..."
 
-#: editdlg.cpp:216
+#: editdlg.cpp:215
 msgid "Template name:"
 msgstr "Име на образец:"
 
-#: editdlg.cpp:221
+#: editdlg.cpp:220
 msgid "Enter the name of the alarm template"
 msgstr "Внесете го името на образецот за аларм"
 
-#: editdlg.cpp:229
+#: editdlg.cpp:228
 msgid "&Alarm"
 msgstr "&Аларм"
 
-#: editdlg.cpp:240
+#: editdlg.cpp:239
 msgid "&Recurrence"
 msgstr "Повтор&ување"
 
@@ -621,7 +623,7 @@ msgstr "П&ромени..."
 msgid "Change the alarm's deferred time, or cancel the deferral"
 msgstr "Го менува одложеното време на алармот или го откажува одложувањето"
 
-#: editdlg.cpp:324 editdlg.cpp:386 eventlistmodel.cpp:277
+#: editdlg.cpp:324 editdlg.cpp:386 eventlistmodel.cpp:303
 msgid "Time"
 msgstr "Време"
 
@@ -653,7 +655,7 @@ msgstr "Внесете го времето за почеток на аларми
 msgid "An&y time"
 msgstr "Кое било &време"
 
-#: editdlg.cpp:360 recurrenceedit.cpp:265
+#: editdlg.cpp:360 recurrenceedit.cpp:266
 msgid "Any time"
 msgstr "Кое било време"
 
@@ -668,195 +670,191 @@ msgid ""
 "from when the alarm is created."
 msgstr ""
 
-#: editdlg.cpp:399
+#: editdlg.cpp:395
 msgid "Recurrence:"
 msgstr "Повторување:"
 
-#: editdlg.cpp:402
+#: editdlg.cpp:398
 msgid ""
 "How often the alarm recurs.\n"
 "The times shown are those configured in the Recurrence tab and in the Simple "
 "Repetition dialog."
 msgstr ""
 
-#: editdlg.cpp:412
-msgid "Set up a simple, or additional, alarm repetition"
-msgstr "Поставува едноставно или дополнително повторување на аларм"
-
-#: editdlg.cpp:416
+#: editdlg.cpp:403
 msgid ""
 "Enter how long in advance of the main alarm to display a reminder alarm."
 msgstr ""
 "Внесете колку долго пред главниот аларм да биде прикажан аларм за "
 "потсетување."
 
-#: editdlg.cpp:417
+#: editdlg.cpp:404
 msgid "Rem&inder:"
 msgstr "&Потсетник:"
 
-#: editdlg.cpp:418
+#: editdlg.cpp:405
 msgid ""
 "Check to additionally display a reminder in advance of the main alarm time"
 "(s)."
 msgstr ""
 
-#: editdlg.cpp:442
+#: editdlg.cpp:429
 msgid "Check to copy the alarm into KOrganizer's calendar"
 msgstr "Обележете за алармот да се копира во календарот на КОрганизатор"
 
-#: editdlg.cpp:446
+#: editdlg.cpp:433
 msgid "Schedule the alarm at the specified time."
 msgstr "Го закажува алармот во зададеното време."
 
-#: editdlg.cpp:481
+#: editdlg.cpp:468
 msgid "Enter the text of the alarm message. It may be multi-line."
 msgstr ""
 "Внесете го текстот на пораката на алармот. Може да биде и на повеќе линии."
 
-#: editdlg.cpp:490
+#: editdlg.cpp:477
 msgid "Enter the name or URL of a text or image file to display."
 msgstr ""
 
-#: editdlg.cpp:496 editdlg.cpp:600 sounddlg.cpp:97
+#: editdlg.cpp:483 editdlg.cpp:587 sounddlg.cpp:97
 msgid "Choose a file"
 msgstr "Изберете датотека"
 
-#: editdlg.cpp:497
+#: editdlg.cpp:484
 msgid "Select a text or image file to display."
 msgstr "Избира текст или слика за прикажување."
 
-#: editdlg.cpp:556
+#: editdlg.cpp:543
 msgid "Check to enter the contents of a script instead of a shell command line"
 msgstr ""
 
-#: editdlg.cpp:560
+#: editdlg.cpp:547
 msgid "Enter a shell command to execute."
 msgstr "Внесете скриптна наредба од школка за извршување."
 
-#: editdlg.cpp:564
+#: editdlg.cpp:551
 msgid "Enter the contents of a script to execute"
 msgstr "Внесете ја содржината на скриптата за извршување"
 
-#: editdlg.cpp:569
+#: editdlg.cpp:556
 msgid "Command Output"
 msgstr "Излез на наредбата"
 
-#: editdlg.cpp:579
+#: editdlg.cpp:566
 msgid "Check to execute the command in a terminal window"
 msgstr "Означете за извршување на наредбата во терминал."
 
-#: editdlg.cpp:593
+#: editdlg.cpp:580
 msgid "Enter the name or path of the log file."
 msgstr "Внесете го името или патеката на датотеката за евиденција."
 
-#: editdlg.cpp:601
+#: editdlg.cpp:588
 msgid "Select a log file."
 msgstr "Изберете датотека за евиденција."
 
-#: editdlg.cpp:606
+#: editdlg.cpp:593
 msgid ""
 "Check to log the command output to a local file. The output will be appended "
 "to any existing contents of the file."
 msgstr ""
 
-#: editdlg.cpp:612
+#: editdlg.cpp:599
 msgid "Discard"
 msgstr ""
 
-#: editdlg.cpp:614
+#: editdlg.cpp:601
 msgid "Check to discard command output."
 msgstr ""
 
-#: editdlg.cpp:650
+#: editdlg.cpp:637
 msgid ""
 "Your email identity, used to identify you as the sender when sending email "
 "alarms."
 msgstr ""
 
-#: editdlg.cpp:661
+#: editdlg.cpp:648
 msgid ""
 "Enter the addresses of the email recipients. Separate multiple addresses by "
 "commas or semicolons."
 msgstr ""
 
-#: editdlg.cpp:669
+#: editdlg.cpp:656
 msgid "Open address book"
 msgstr "Отвора адресар"
 
-#: editdlg.cpp:670
+#: editdlg.cpp:657
 msgid "Select email addresses from your address book."
 msgstr "Изберете е-поштенски адреси од адресарот."
 
-#: editdlg.cpp:681
+#: editdlg.cpp:668
 msgid "Enter the email subject."
 msgstr "Внесете ја темата на е-поштата."
 
-#: editdlg.cpp:686
+#: editdlg.cpp:673
 msgid "Enter the email message."
 msgstr ""
 
-#: editdlg.cpp:693
+#: editdlg.cpp:680
 msgid "Attachment&s:"
 msgstr "П&рилози:"
 
-#: editdlg.cpp:706
+#: editdlg.cpp:693
 msgid "Files to send as attachments to the email."
 msgstr "Датотеки што ќе се испратат како прилози на е-пошт. порака"
 
-#: editdlg.cpp:710 resourceselector.cpp:96
+#: editdlg.cpp:697 resourceselector.cpp:97
 msgid "Add..."
 msgstr "Додај..."
 
-#: editdlg.cpp:712
+#: editdlg.cpp:699
 msgid "Add an attachment to the email."
 msgstr "Додава прилог на пораката."
 
-#: editdlg.cpp:715
+#: editdlg.cpp:702
 msgid "Remo&ve"
 msgstr "&Отстрани"
 
-#: editdlg.cpp:717
+#: editdlg.cpp:704
 msgid "Remove the highlighted attachment from the email."
 msgstr "Го отстранува обележаниот прилог од пораката."
 
-#: editdlg.cpp:723
+#: editdlg.cpp:710
 msgid "If checked, the email will be blind copied to you."
 msgstr ""
 
-#: editdlg.cpp:1054 fontcolour.cpp:89
+#: editdlg.cpp:1039 fontcolour.cpp:89
 msgid "&Background color:"
 msgstr "Боја на &подлога:"
 
-#: editdlg.cpp:1059
+#: editdlg.cpp:1044
 msgid "Message color"
 msgstr "Боја на порака"
 
-#: editdlg.cpp:1062
+#: editdlg.cpp:1047
 msgid "Choose the background color for the alarm message."
 msgstr "Изберете боја на подлога за пораката на алармот."
 
-#: editdlg.cpp:1072
+#: editdlg.cpp:1057
 #, fuzzy
 msgid "Check to be prompted for confirmation when you acknowledge the alarm."
 msgstr "Означете за да бидете прашани за потврда кога ќе го добиете алармот."
 
-#: editdlg.cpp:1458
+#: editdlg.cpp:1436
 msgid "You must enter a name for the alarm template"
 msgstr "Мора да внесете име за образецот за аларм"
 
-#: editdlg.cpp:1462
+#: editdlg.cpp:1440
 msgid "Template name is already in use"
 msgstr "Името за образецот веќе се користи"
 
-#: editdlg.cpp:1506
+#: editdlg.cpp:1484
 msgid "Recurrence has already expired"
 msgstr "Повторувањето е веќе изминато"
 
-#: editdlg.cpp:1511
+#: editdlg.cpp:1489
 msgid "The alarm will never occur during working hours"
 msgstr ""
 
-#: editdlg.cpp:1542
+#: editdlg.cpp:1518
 #, qt-format
 msgid ""
 "Reminder period must be less than the recurrence interval, unless '%1' is "
@@ -865,43 +863,43 @@ msgstr ""
 "Периодот на потсетникот мора да е помал од интервалот на повторувањето, "
 "освен ако е „%1“ означено."
 
-#: editdlg.cpp:1565
+#: editdlg.cpp:1532
 #, fuzzy
 msgid ""
-"Simple alarm repetition duration must be less than the recurrence interval "
-"minus any reminder period"
+"The duration of a repetition within the recurrence must be less than the "
+"recurrence interval minus any reminder period"
 msgstr ""
 "Траењето на едноставното повторување на алармот мора да е помало од "
 "интервалот на повторување минус кој било период на потсетникот"
 
-#: editdlg.cpp:1574
+#: editdlg.cpp:1539
 #, fuzzy
 msgid ""
-"Simple alarm repetition period must be in units of days or weeks for a date-"
-"only alarm"
+"For a repetition within the recurrence, its period must be in units of days "
+"or weeks for a date-only alarm"
 msgstr ""
 "Периодот на едноставното повторување на алармот мора да е во единици денови "
 "или недели за аларм само за датум"
 
-#: editdlg.cpp:1603
+#: editdlg.cpp:1567
 #, fuzzy
 msgid "You must select a resource to save the alarm in"
 msgstr "Изберете образец врз кој ќе се базира новиот аларм."
 
-#: editdlg.cpp:1623
+#: editdlg.cpp:1587
 msgid "Do you really want to send the email now to the specified recipient(s)?"
 msgstr ""
 "Дали навистина сакате сега да ја испратите пораката до зададените примачи?"
 
-#: editdlg.cpp:1624
+#: editdlg.cpp:1588
 msgid "Confirm Email"
 msgstr "Потврдување на е-пошта"
 
-#: editdlg.cpp:1624
+#: editdlg.cpp:1588
 msgid "&Send"
 msgstr "И&спрати"
 
-#: editdlg.cpp:1635
+#: editdlg.cpp:1599
 #, qt-format
 msgid ""
 "Command executed:\n"
@@ -910,7 +908,7 @@ msgstr ""
 "Наредбата е извршена:\n"
 "%1"
 
-#: editdlg.cpp:1642
+#: editdlg.cpp:1606
 #, qt-format
 msgid ""
 "\n"
@@ -919,7 +917,7 @@ msgstr ""
 "\n"
 "Bcc: %1"
 
-#: editdlg.cpp:1643
+#: editdlg.cpp:1607
 #, qt-format
 msgid ""
 "Email sent to:\n"
@@ -928,18 +926,18 @@ msgstr ""
 "Пораката е испратена до:\n"
 "%1%2"
 
-#: editdlg.cpp:1701 messagewin.cpp:1495
+#: editdlg.cpp:1666 messagewin.cpp:1495
 msgid "Defer Alarm"
 msgstr "Одложување аларм"
 
-#: editdlg.cpp:1864
+#: editdlg.cpp:1822
 msgid ""
 "Log file must be the name or path of a local file, with write permission."
 msgstr ""
 "Датотеката за евиденција мора да биде име или патека на локална датотека со "
 "дозвола за запишување."
 
-#: editdlg.cpp:1890
+#: editdlg.cpp:1848
 #, qt-format
 msgid ""
 "Invalid email address:\n"
@@ -948,11 +946,11 @@ msgstr ""
 "Невалидна е-пошт. адреса:\n"
 "%1"
 
-#: editdlg.cpp:1897
+#: editdlg.cpp:1855
 msgid "No email address specified"
 msgstr "Не е зададена е-пошт. адреса"
 
-#: editdlg.cpp:1914
+#: editdlg.cpp:1872
 #, qt-format
 msgid ""
 "Invalid email attachment:\n"
@@ -961,31 +959,31 @@ msgstr ""
 "Невалиден прилог на е-пошта:\n"
 "%1"
 
-#: editdlg.cpp:1942
+#: editdlg.cpp:1900
 msgid "Display the alarm message now"
 msgstr "Ја прикажува пораката на алармот сега"
 
-#: editdlg.cpp:1958
+#: editdlg.cpp:1916
 msgid "Display the file now"
 msgstr "Ја прикажува датотеката сега"
 
-#: editdlg.cpp:1970
+#: editdlg.cpp:1928
 msgid "Execute the specified command now"
 msgstr "Ја извршува зададената наредба сега"
 
-#: editdlg.cpp:1981
+#: editdlg.cpp:1939
 msgid "Send the email to the specified addressees now"
 msgstr "Ја испраќа е-поштата до назначената адреса сега"
 
-#: editdlg.cpp:2073
+#: editdlg.cpp:2031
 msgid "Choose File to Attach"
 msgstr "Избирање датотека за приложување"
 
-#: editdlg.cpp:2180
+#: editdlg.cpp:2138
 msgid "Please select a file to display"
 msgstr "Изберете датотека за прикажување"
 
-#: editdlg.cpp:2182
+#: editdlg.cpp:2140
 #, qt-format
 msgid ""
 "%1\n"
@@ -994,7 +992,7 @@ msgstr ""
 "%1\n"
 "не е најдена"
 
-#: editdlg.cpp:2183
+#: editdlg.cpp:2141
 #, qt-format
 msgid ""
 "%1\n"
@@ -1003,7 +1001,7 @@ msgstr ""
 "%1\n"
 "е папка"
 
-#: editdlg.cpp:2184
+#: editdlg.cpp:2142
 #, qt-format
 msgid ""
 "%1\n"
@@ -1012,7 +1010,7 @@ msgstr ""
 "%1\n"
 "не е читлива"
 
-#: editdlg.cpp:2185
+#: editdlg.cpp:2143
 #, qt-format
 msgid ""
 "%1\n"
@@ -1021,61 +1019,61 @@ msgstr ""
 "Изгледа дека %1\n"
 "не е текст или слика"
 
-#: eventlistmodel.cpp:279
+#: eventlistmodel.cpp:305
 msgid "Time To"
 msgstr "Време до"
 
-#: eventlistmodel.cpp:281 sounddlg.cpp:53
+#: eventlistmodel.cpp:307 sounddlg.cpp:53
 msgid "Repeat"
 msgstr "Повторување"
 
-#: eventlistmodel.cpp:287
+#: eventlistmodel.cpp:313
 msgid "Message, File or Command"
 msgstr "Порака, датотека или наредба"
 
-#: eventlistmodel.cpp:520 eventlistmodel.cpp:557
+#: eventlistmodel.cpp:579 eventlistmodel.cpp:616
 msgid "Never"
 msgstr ""
 
-#: eventlistmodel.cpp:563
+#: eventlistmodel.cpp:622
 #, no-c-format, qt-format
 msgctxt "n days"
 msgid " %1d "
 msgstr " %1д "
 
-#: eventlistmodel.cpp:572
+#: eventlistmodel.cpp:631
 #, qt-format
 msgctxt "hours:minutes"
 msgid " %1:%2 "
 msgstr " %1:%2 "
 
-#: eventlistmodel.cpp:575
+#: eventlistmodel.cpp:634
 #, qt-format
 msgctxt "days hours:minutes"
 msgid " %1d %2:%3 "
 msgstr " %1д %2:%3 "
 
-#: eventlistmodel.cpp:651
+#: eventlistmodel.cpp:710
 msgid "Next scheduled date and time of the alarm"
 msgstr "Нареден закажан датум и време на алармот"
 
-#: eventlistmodel.cpp:653
+#: eventlistmodel.cpp:712
 msgid "How long until the next scheduled trigger of the alarm"
 msgstr "Преостанато време до наредниот закажан аларм"
 
-#: eventlistmodel.cpp:655
+#: eventlistmodel.cpp:714
 msgid "How often the alarm recurs"
 msgstr "Колку често се повторува алармот"
 
-#: eventlistmodel.cpp:657
+#: eventlistmodel.cpp:716
 msgid "Background color of alarm message"
 msgstr "Боја на подлога за пораката од алармот"
 
-#: eventlistmodel.cpp:659
+#: eventlistmodel.cpp:718
 msgid "Alarm type (message, file, command or email)"
 msgstr "Тип на аларм (порака, датотека, наредба или е-пошта)"
 
-#: eventlistmodel.cpp:661
+#: eventlistmodel.cpp:720
 msgid ""
 "Alarm message text, URL of text file to display, command to execute, or "
 "email subject line"
@@ -1083,11 +1081,11 @@ msgstr ""
 "Текст на пораката од алармот, URL на текстуалната датотека, наредба што "
 "треба да биде извршена или тема за е-пошт. порака"
 
-#: eventlistmodel.cpp:663
+#: eventlistmodel.cpp:722
 msgid "Name of the alarm template"
 msgstr "Име на образецот за аларм"
 
-#: eventlistmodel.cpp:665
+#: eventlistmodel.cpp:724
 msgid "List of scheduled alarms"
 msgstr "Листа на закажани аларми"
 
@@ -1827,7 +1825,7 @@ msgstr "Креирај о&бразец..."
 msgid "&Copy..."
 msgstr "&Копирај..."
 
-#: mainwindow.cpp:408 messagewin.cpp:571 resourceselector.cpp:288
+#: mainwindow.cpp:408 messagewin.cpp:571 resourceselector.cpp:295
 #: templatedlg.cpp:92
 msgid "&Edit..."
 msgstr "&Уреди..."
@@ -2371,7 +2369,7 @@ msgid ""
 "resource."
 msgstr ""
 
-#: prefdlg.cpp:725 resourceselector.cpp:75
+#: prefdlg.cpp:725 resourceselector.cpp:76
 #, fuzzy
 msgid "Archived Alarms"
 msgstr "Активирај КАларм"
@@ -3449,7 +3447,7 @@ msgstr "Стандардното поставување за „%1“ во ди�
 
 #. i18n: tag label
 #. i18n: file kalarmconfig.kcfg line 329
-#: rc.cpp:307 recurrenceedit.cpp:67
+#: rc.cpp:307 recurrenceedit.cpp:68
 msgid "No recurrence"
 msgstr "Без повторување"
 
@@ -3601,144 +3599,144 @@ msgstr ""
 "bobibobi@freemail.com.mk,pavle_no1@yahoo.com,viktor@lugola.net,ruzin@lugola."
 "net"
 
-#: recurrenceedit.cpp:68
+#: recurrenceedit.cpp:69
 msgid "No Recurrence"
 msgstr "Без повторување"
 
-#: recurrenceedit.cpp:69
+#: recurrenceedit.cpp:70
 msgid "At Login"
 msgstr "При најава"
 
-#: recurrenceedit.cpp:70
+#: recurrenceedit.cpp:71
 msgid "At &login"
 msgstr "При &најава"
 
-#: recurrenceedit.cpp:71
+#: recurrenceedit.cpp:72
 msgid "Hourly/Minutely"
 msgstr ""
 
-#: recurrenceedit.cpp:72
+#: recurrenceedit.cpp:73
 msgid "Ho&urly/Minutely"
 msgstr ""
 
-#: recurrenceedit.cpp:73
+#: recurrenceedit.cpp:74
 msgid "Daily"
 msgstr "Дневно"
 
-#: recurrenceedit.cpp:74
+#: recurrenceedit.cpp:75
 msgid "&Daily"
 msgstr "&Дневно"
 
-#: recurrenceedit.cpp:75
+#: recurrenceedit.cpp:76
 msgid "Weekly"
 msgstr "Неделно"
 
-#: recurrenceedit.cpp:76
+#: recurrenceedit.cpp:77
 msgid "&Weekly"
 msgstr "&Неделно"
 
-#: recurrenceedit.cpp:77
+#: recurrenceedit.cpp:78
 msgid "Monthly"
 msgstr "Месечно"
 
-#: recurrenceedit.cpp:78
+#: recurrenceedit.cpp:79
 msgid "&Monthly"
 msgstr "&Месечно"
 
-#: recurrenceedit.cpp:79
+#: recurrenceedit.cpp:80
 msgid "Yearly"
 msgstr "Годишно"
 
-#: recurrenceedit.cpp:80
+#: recurrenceedit.cpp:81
 msgid "&Yearly"
 msgstr "&Годишно"
 
-#: recurrenceedit.cpp:106
+#: recurrenceedit.cpp:107
 msgid "Recurrence Rule"
 msgstr "Правило за повторување"
 
-#: recurrenceedit.cpp:122
+#: recurrenceedit.cpp:123
 msgid "Do not repeat the alarm"
 msgstr "Не го повторува алармот"
 
-#: recurrenceedit.cpp:129
+#: recurrenceedit.cpp:130
 msgid ""
 "Trigger the alarm at the specified date/time and at every login until then.\n"
 "Note that it will also be triggered any time the alarm daemon is restarted."
 msgstr ""
 
-#: recurrenceedit.cpp:137
+#: recurrenceedit.cpp:138
 msgid "Repeat the alarm at hourly/minutely intervals"
 msgstr "Го повторува алармот во интервали од часови/минути"
 
-#: recurrenceedit.cpp:144
+#: recurrenceedit.cpp:145
 msgid "Repeat the alarm at daily intervals"
 msgstr "Го повторува алармот во интервали од денови"
 
-#: recurrenceedit.cpp:151
+#: recurrenceedit.cpp:152
 msgid "Repeat the alarm at weekly intervals"
 msgstr "Го повторува алармот во интервали од седмици"
 
-#: recurrenceedit.cpp:158
+#: recurrenceedit.cpp:159
 msgid "Repeat the alarm at monthly intervals"
 msgstr "Го повторува алармот во интервали од месеци"
 
-#: recurrenceedit.cpp:165
+#: recurrenceedit.cpp:166
 msgid "Repeat the alarm at annual intervals"
 msgstr "Го повторува алармот во интервали од години"
 
-#: recurrenceedit.cpp:206
+#: recurrenceedit.cpp:207
 #, fuzzy
 msgid "Recurrence End"
 msgstr "Крај на повторувањето"
 
-#: recurrenceedit.cpp:214
+#: recurrenceedit.cpp:215
 msgid "No &end"
 msgstr "Н&ема крај"
 
-#: recurrenceedit.cpp:217
+#: recurrenceedit.cpp:218
 msgid "Repeat the alarm indefinitely"
 msgstr "Го повторува алармот постојано"
 
-#: recurrenceedit.cpp:225
+#: recurrenceedit.cpp:226
 msgid "End a&fter:"
 msgstr "Кр&ај по:"
 
-#: recurrenceedit.cpp:227
+#: recurrenceedit.cpp:228
 msgid "Repeat the alarm for the number of times specified"
 msgstr "Го повторува алармот колку што е зададено"
 
-#: recurrenceedit.cpp:235
+#: recurrenceedit.cpp:236
 msgid "Enter the total number of times to trigger the alarm"
 msgstr "Внесете го тука вкупниот број пати за активирање на алармот"
 
-#: recurrenceedit.cpp:237
+#: recurrenceedit.cpp:238
 msgid "occurrence(s)"
 msgstr "појавувања"
 
-#: recurrenceedit.cpp:249
+#: recurrenceedit.cpp:250
 #, fuzzy
 msgid "End &by:"
 msgstr "&Крај на:"
 
-#: recurrenceedit.cpp:251
+#: recurrenceedit.cpp:252
 msgid "Repeat the alarm until the date/time specified"
 msgstr "Го повторува алармот сѐ до зададениот датум/време"
 
-#: recurrenceedit.cpp:256
+#: recurrenceedit.cpp:257
 msgid "This uses the same time zone as the start time."
 msgstr ""
 
-#: recurrenceedit.cpp:257
+#: recurrenceedit.cpp:258
 #, fuzzy
 msgid "Enter the last date to repeat the alarm."
 msgstr "Внесете го последниот датум за повторување на алармот"
 
-#: recurrenceedit.cpp:263
+#: recurrenceedit.cpp:264
 msgid "Enter the last time to repeat the alarm."
 msgstr "Внесете го последното време за повторување на алармот"
 
-#: recurrenceedit.cpp:269
+#: recurrenceedit.cpp:270
 msgid ""
 "Stop repeating the alarm after your first login on or after the specified "
 "end date"
@@ -3746,304 +3744,310 @@ msgstr ""
 "Престанува да го повторува алармот по Вашето прво најавување или по "
 "зададениот краен датум"
 
-#: recurrenceedit.cpp:285
+#: recurrenceedit.cpp:286
 msgid "E&xceptions"
 msgstr "И&склучоци"
 
-#: recurrenceedit.cpp:298
+#: recurrenceedit.cpp:299
 msgid "The list of exceptions, i.e. dates/times excluded from the recurrence"
 msgstr ""
 "Листата на исклучоци, т.е. датуми и времиња што се исклучени од повторувањето"
 
-#: recurrenceedit.cpp:315
+#: recurrenceedit.cpp:316
 msgid ""
 "Enter a date to insert in the exceptions list. Use in conjunction with the "
 "Add or Change button below."
 msgstr ""
 
-#: recurrenceedit.cpp:322
+#: recurrenceedit.cpp:323
 #, fuzzy
 msgid "Add"
 msgstr "Додај..."
 
-#: recurrenceedit.cpp:325
+#: recurrenceedit.cpp:326
 msgid "Add the date entered above to the exceptions list"
 msgstr "Го додава погоре внесениот датум на листата со исклучоци"
 
-#: recurrenceedit.cpp:328
+#: recurrenceedit.cpp:329
 #, fuzzy
 msgid "Change"
 msgstr "П&ромени..."
 
-#: recurrenceedit.cpp:331
+#: recurrenceedit.cpp:332
 msgid ""
 "Replace the currently highlighted item in the exceptions list with the date "
 "entered above"
 msgstr ""
 
-#: recurrenceedit.cpp:334
+#: recurrenceedit.cpp:335
 #, fuzzy
 msgid "Delete"
 msgstr "Бришење %1 аларм"
 
-#: recurrenceedit.cpp:337
+#: recurrenceedit.cpp:338
 msgid "Remove the currently highlighted item from the exceptions list"
 msgstr "Го отстранува избраниот елемент од листата на исклучоци"
 
-#: recurrenceedit.cpp:341
+#: recurrenceedit.cpp:342
 msgid "Only during working hours"
 msgstr ""
 
-#: recurrenceedit.cpp:344
+#: recurrenceedit.cpp:345
 msgid ""
 "Only execute the alarm during working hours.\n"
 "You can specify working hours in the Preferences dialog."
 msgstr ""
 
-#: recurrenceedit.cpp:372
+#: recurrenceedit.cpp:354
+msgid ""
+"Set up a repetition within the recurrence, to trigger the alarm multiple "
+"times each time the recurrence is due."
+msgstr ""
+
+#: recurrenceedit.cpp:382
 msgid "End date is earlier than start date"
 msgstr "Крајниот датум е пред почетниот"
 
-#: recurrenceedit.cpp:373
+#: recurrenceedit.cpp:383
 msgid "End date/time is earlier than start date/time"
 msgstr "Крајниот датум и време се пред почетниот датум и време"
 
-#: recurrenceedit.cpp:593
+#: recurrenceedit.cpp:655
 msgctxt "Date cannot be earlier than start date"
 msgid "start date"
 msgstr ""
 
-#: recurrenceedit.cpp:988
+#: recurrenceedit.cpp:1064
 msgid "Recur e&very"
 msgstr "Повтору&вај секои"
 
-#: recurrenceedit.cpp:1056
+#: recurrenceedit.cpp:1132
 msgid "hours:minutes"
 msgstr "часови:минути"
 
-#: recurrenceedit.cpp:1057
+#: recurrenceedit.cpp:1133
 msgid "Enter the number of hours and minutes between repetitions of the alarm"
 msgstr "Внесете го бројот на часови и минути меѓу повторувањата на алармот"
 
-#: recurrenceedit.cpp:1077
+#: recurrenceedit.cpp:1153
 msgctxt "On: Tuesday"
 msgid "O&n:"
 msgstr "&Во:"
 
-#: recurrenceedit.cpp:1157
+#: recurrenceedit.cpp:1233
 msgid "No day selected"
 msgstr "Не е избран ден"
 
-#: recurrenceedit.cpp:1186
+#: recurrenceedit.cpp:1262
 msgid "day(s)"
 msgstr "денови"
 
-#: recurrenceedit.cpp:1187
+#: recurrenceedit.cpp:1263
 msgid "Enter the number of days between repetitions of the alarm"
 msgstr "Внесете го бројот на денови меѓу повторувањата на алармот"
 
-#: recurrenceedit.cpp:1188
+#: recurrenceedit.cpp:1264
 msgid "Select the days of the week on which the alarm is allowed to occur"
 msgstr ""
 "Изберете ги деновите од седмицата на кои е дозволено повторувањето на алармот"
 
-#: recurrenceedit.cpp:1199
+#: recurrenceedit.cpp:1275
 msgid "week(s)"
 msgstr "седмици"
 
-#: recurrenceedit.cpp:1200
+#: recurrenceedit.cpp:1276
 msgid "Enter the number of weeks between repetitions of the alarm"
 msgstr "Внесете го бројот на седмици меѓу повторувањата на алармот"
 
-#: recurrenceedit.cpp:1201
+#: recurrenceedit.cpp:1277
 msgid "Select the days of the week on which to repeat the alarm"
 msgstr "Изберете ги деновите од седмицата на кои се повторува алармот"
 
-#: recurrenceedit.cpp:1224
+#: recurrenceedit.cpp:1300
 msgctxt "On day number in the month"
 msgid "O&n day"
 msgstr "&На ден"
 
-#: recurrenceedit.cpp:1228
+#: recurrenceedit.cpp:1304
 msgid "Repeat the alarm on the selected day of the month"
 msgstr "Го повторува алармот на избраниот ден од месецот"
 
-#: recurrenceedit.cpp:1235
+#: recurrenceedit.cpp:1311
 msgctxt "Last day of month"
 msgid "Last"
 msgstr "последниот"
 
-#: recurrenceedit.cpp:1238
+#: recurrenceedit.cpp:1314
 msgid "Select the day of the month on which to repeat the alarm"
 msgstr "Изберете го денот од месецот на кој да се повтори алармот"
 
-#: recurrenceedit.cpp:1251
+#: recurrenceedit.cpp:1327
 msgctxt "On the 1st Tuesday"
 msgid "On t&he"
 msgstr "Н&а"
 
-#: recurrenceedit.cpp:1255
+#: recurrenceedit.cpp:1331
 msgid ""
 "Repeat the alarm on one day of the week, in the selected week of the month"
 msgstr ""
 "Го повторува алармот еден ден од седмицата , во избраната седмица од месецот"
 
-#: recurrenceedit.cpp:1259
+#: recurrenceedit.cpp:1335
 msgid "1st"
 msgstr "1"
 
-#: recurrenceedit.cpp:1260
+#: recurrenceedit.cpp:1336
 msgid "2nd"
 msgstr "2"
 
-#: recurrenceedit.cpp:1261
+#: recurrenceedit.cpp:1337
 msgid "3rd"
 msgstr "3"
 
-#: recurrenceedit.cpp:1262
+#: recurrenceedit.cpp:1338
 msgid "4th"
 msgstr "4"
 
-#: recurrenceedit.cpp:1263
+#: recurrenceedit.cpp:1339
 msgid "5th"
 msgstr "5"
 
-#: recurrenceedit.cpp:1264
+#: recurrenceedit.cpp:1340
 msgctxt "Last Monday in March"
 msgid "Last"
 msgstr "последниот"
 
-#: recurrenceedit.cpp:1265
+#: recurrenceedit.cpp:1341
 msgid "2nd Last"
 msgstr "претпоследен"
 
-#: recurrenceedit.cpp:1266
+#: recurrenceedit.cpp:1342
 msgid "3rd Last"
 msgstr ""
 
-#: recurrenceedit.cpp:1267
+#: recurrenceedit.cpp:1343
 msgid "4th Last"
 msgstr ""
 
-#: recurrenceedit.cpp:1268
+#: recurrenceedit.cpp:1344
 msgid "5th Last"
 msgstr ""
 
-#: recurrenceedit.cpp:1271
+#: recurrenceedit.cpp:1347
 msgctxt "Every (Monday...) in month"
 msgid "Every"
 msgstr "секој"
 
-#: recurrenceedit.cpp:1274
+#: recurrenceedit.cpp:1350
 msgid "Select the week of the month in which to repeat the alarm"
 msgstr "Изберете ја седмицата од месецот во која ќе се повторува алармот"
 
-#: recurrenceedit.cpp:1288
+#: recurrenceedit.cpp:1364
 msgid "Select the day of the week on which to repeat the alarm"
 msgstr "Изберете го денот од седмицата во кој ќе се повторува алармот"
 
-#: recurrenceedit.cpp:1409
+#: recurrenceedit.cpp:1485
 msgid "month(s)"
 msgstr "месеци"
 
-#: recurrenceedit.cpp:1410
+#: recurrenceedit.cpp:1486
 msgid "Enter the number of months between repetitions of the alarm"
 msgstr "Внесете го бројот на месеци меѓу повторувањата на алармот"
 
-#: recurrenceedit.cpp:1421
+#: recurrenceedit.cpp:1497
 msgid "year(s)"
 msgstr "години"
 
-#: recurrenceedit.cpp:1422
+#: recurrenceedit.cpp:1498
 msgid "Enter the number of years between repetitions of the alarm"
 msgstr "Внесете го бројот на години меѓу повторувањата на алармот"
 
-#: recurrenceedit.cpp:1429
+#: recurrenceedit.cpp:1505
 msgctxt "first week of January"
 msgid "of:"
 msgstr "од:"
 
-#: recurrenceedit.cpp:1440
+#: recurrenceedit.cpp:1516
 msgid "January"
 msgstr ""
 
-#: recurrenceedit.cpp:1441
+#: recurrenceedit.cpp:1517
 #, fuzzy
 msgid "February"
 msgstr "2&8 февруари"
 
-#: recurrenceedit.cpp:1442
+#: recurrenceedit.cpp:1518
 #, fuzzy
 msgid "March"
 msgstr "&1 март"
 
-#: recurrenceedit.cpp:1443
+#: recurrenceedit.cpp:1519
 msgid "April"
 msgstr ""
 
-#: recurrenceedit.cpp:1444
+#: recurrenceedit.cpp:1520
 msgid "May"
 msgstr ""
 
-#: recurrenceedit.cpp:1445
+#: recurrenceedit.cpp:1521
 msgid "June"
 msgstr ""
 
-#: recurrenceedit.cpp:1446
+#: recurrenceedit.cpp:1522
 msgid "July"
 msgstr ""
 
-#: recurrenceedit.cpp:1447
+#: recurrenceedit.cpp:1523
 msgid "August"
 msgstr ""
 
-#: recurrenceedit.cpp:1448
+#: recurrenceedit.cpp:1524
 msgid "September"
 msgstr ""
 
-#: recurrenceedit.cpp:1449
+#: recurrenceedit.cpp:1525
 #, fuzzy
 msgid "October"
 msgstr "Друга:"
 
-#: recurrenceedit.cpp:1450
+#: recurrenceedit.cpp:1526
 msgid "November"
 msgstr ""
 
-#: recurrenceedit.cpp:1451
+#: recurrenceedit.cpp:1527
 msgid "December"
 msgstr ""
 
-#: recurrenceedit.cpp:1460
+#: recurrenceedit.cpp:1536
 msgid "Select the months of the year in which to repeat the alarm"
 msgstr "Изберете ги месеците го годината во кои ќе се повторува алармот"
 
-#: recurrenceedit.cpp:1469
+#: recurrenceedit.cpp:1545
 msgid "February 2&9th alarm in non-leap years:"
 msgstr ""
 
-#: recurrenceedit.cpp:1473
+#: recurrenceedit.cpp:1549
 msgctxt "No date"
 msgid "None"
 msgstr "Нема"
 
-#: recurrenceedit.cpp:1474
+#: recurrenceedit.cpp:1550
 msgctxt "1st March (short form)"
 msgid "1 Mar"
 msgstr "1 март"
 
-#: recurrenceedit.cpp:1475
+#: recurrenceedit.cpp:1551
 msgctxt "28th February (short form)"
 msgid "28 Feb"
 msgstr "28 фев"
 
-#: recurrenceedit.cpp:1480
+#: recurrenceedit.cpp:1556
 msgid ""
 "Select which date, if any, the February 29th alarm should trigger in non-"
 "leap years"
 msgstr ""
 
-#: recurrenceedit.cpp:1564
+#: recurrenceedit.cpp:1640
 msgid "No month selected"
 msgstr "Нема избран месец"
 
@@ -4059,18 +4063,13 @@ msgstr "однапред"
 msgid "Display the reminder only before the first time the alarm is scheduled"
 msgstr ""
 
-#: repetition.cpp:88
-msgid "Alarm Repetition"
+#: repetition.cpp:85
+#, fuzzy
+#| msgid "Alarm Repetition"
+msgid "Alarm Sub-Repetition"
 msgstr "Повторување на аларм"
 
-#: repetition.cpp:173
-msgid ""
-"Use this dialog either:\n"
-"- instead of the Recurrence tab, or\n"
-"- after using the Recurrence tab, to set up a repetition within a repetition."
-msgstr ""
-
-#: repetition.cpp:193
+#: repetition.cpp:161
 #, fuzzy
 #| msgctxt "Repeat every 10 minutes"
 #| msgid "&Repeat every"
@@ -4078,49 +4077,49 @@ msgctxt "Repeat every 10 minutes"
 msgid "Repeat every"
 msgstr "Повто&ри на секои"
 
-#: repetition.cpp:194
+#: repetition.cpp:162
 msgid ""
 "Check to repeat the alarm each time it recurs. Instead of the alarm "
 "triggering once at each recurrence, this option makes the alarm trigger "
 "multiple times at each recurrence."
 msgstr ""
 
-#: repetition.cpp:197
+#: repetition.cpp:165
 msgid "Enter the time between repetitions of the alarm"
 msgstr "Внесете го времето меѓу повторувањата на алармот"
 
-#: repetition.cpp:215
+#: repetition.cpp:183
 #, fuzzy
 #| msgid "&Number of repetitions:"
 msgid "Number of repetitions:"
 msgstr "Број на п&овторувања:"
 
-#: repetition.cpp:217
+#: repetition.cpp:185
 msgid ""
 "Check to specify the number of times the alarm should repeat after each "
 "recurrence"
 msgstr ""
 
-#: repetition.cpp:225
+#: repetition.cpp:193
 msgid ""
 "Enter the number of times to trigger the alarm after its initial occurrence"
 msgstr ""
 
-#: repetition.cpp:233
+#: repetition.cpp:201
 #, fuzzy
 #| msgid "&Duration:"
 msgid "Duration:"
 msgstr "&Траење:"
 
-#: repetition.cpp:235
+#: repetition.cpp:203
 msgid "Check to specify how long the alarm is to be repeated"
 msgstr ""
 
-#: repetition.cpp:241
+#: repetition.cpp:209
 msgid "Enter the length of time to repeat the alarm"
 msgstr "Внесете колку долго да се повторува алармот"
 
-#: resourceconfigdialog.cpp:47 resourceselector.cpp:154
+#: resourceconfigdialog.cpp:47 resourceselector.cpp:155
 #, fuzzy
 msgid "Resource Configuration"
 msgstr "Конфигурација на аларм"
@@ -4135,7 +4134,7 @@ msgstr "Поставувања за приказот"
 msgid "Name:"
 msgstr "Име"
 
-#: resourceconfigdialog.cpp:67 resourcemodelview.cpp:111
+#: resourceconfigdialog.cpp:67 resourcemodelview.cpp:115
 #, fuzzy
 msgid "Read-only"
 msgstr "само за читање"
@@ -4149,126 +4148,126 @@ msgstr "Поставувања за приказот"
 msgid "Please enter a resource name."
 msgstr ""
 
-#: resourcemodelview.cpp:109
+#: resourcemodelview.cpp:113
 #, fuzzy
 msgid "Disabled"
 msgstr "О&невозможи"
 
-#: resourcemodelview.cpp:370
+#: resourcemodelview.cpp:381
 msgid "You cannot disable your default active alarm resource."
 msgstr ""
 
-#: resourcemodelview.cpp:379
+#: resourcemodelview.cpp:390
 msgid ""
 "You cannot disable your default archived alarm resource while expired alarms "
 "are configured to be kept."
 msgstr ""
 
-#: resourcemodelview.cpp:384
+#: resourcemodelview.cpp:395
 #, fuzzy
 msgid "Do you really want to disable your default resource?"
 msgstr "Дали навистина сакате да го избришете овој %1 избран аларм?"
 
-#: resourceselector.cpp:69
+#: resourceselector.cpp:70
 #, fuzzy
 msgid "Resources"
 msgstr "Повтор&ување"
 
-#: resourceselector.cpp:74
+#: resourceselector.cpp:75
 #, fuzzy
 msgid "Active Alarms"
 msgstr "Активирај КАларм"
 
-#: resourceselector.cpp:76 templatedlg.cpp:64
+#: resourceselector.cpp:77 templatedlg.cpp:64
 msgid "Alarm Templates"
 msgstr "Обрасци за аларми"
 
-#: resourceselector.cpp:78
+#: resourceselector.cpp:79
 msgid "Choose which type of data to show alarm resources for"
 msgstr ""
 
-#: resourceselector.cpp:90
+#: resourceselector.cpp:91
 msgid ""
 "List of available resources of the selected type. The checked state shows "
 "whether a resource is enabled (checked) or disabled (unchecked). The default "
 "resource is shown in bold."
 msgstr ""
 
-#: resourceselector.cpp:97
+#: resourceselector.cpp:98
 #, fuzzy
 msgid "Edit..."
 msgstr "&Уреди..."
 
-#: resourceselector.cpp:98
+#: resourceselector.cpp:99
 #, fuzzy
 msgid "Remove"
 msgstr "&Отстрани"
 
-#: resourceselector.cpp:104
+#: resourceselector.cpp:105
 #, fuzzy
 msgid "Edit the highlighted resource"
 msgstr "Го уредува тековниот избран образец за аларм"
 
-#: resourceselector.cpp:105
+#: resourceselector.cpp:106
 msgid ""
 "Remove the highlighted resource from the list.\n"
 "The resource itself is left intact, and may subsequently be reinstated in "
 "the list if desired."
 msgstr ""
 
-#: resourceselector.cpp:129
+#: resourceselector.cpp:130
 msgid "Add a new active alarm resource"
 msgstr ""
 
-#: resourceselector.cpp:133
+#: resourceselector.cpp:134
 msgid "Add a new archived alarm resource"
 msgstr ""
 
-#: resourceselector.cpp:137
+#: resourceselector.cpp:138
 #, fuzzy
 msgid "Add a new alarm template resource"
 msgstr "Креира нов образец за аларм"
 
-#: resourceselector.cpp:155
+#: resourceselector.cpp:156
 msgid "Select storage type of new resource:"
 msgstr ""
 
-#: resourceselector.cpp:162
+#: resourceselector.cpp:163
 #, qt-format
 msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
 msgstr ""
 
-#: resourceselector.cpp:165
+#: resourceselector.cpp:166
 #, fuzzy, qt-format
 msgid "%1 resource"
 msgstr "%1 побарува %2"
 
-#: resourceselector.cpp:204
+#: resourceselector.cpp:205
 msgid "You cannot make your default active alarm resource read-only."
 msgstr ""
 
-#: resourceselector.cpp:211
+#: resourceselector.cpp:212
 msgid ""
 "You cannot make your default archived alarm resource read-only while expired "
 "alarms are configured to be kept."
 msgstr ""
 
-#: resourceselector.cpp:215
+#: resourceselector.cpp:216
 #, fuzzy
 msgid "Do you really want to make your default resource read-only?"
 msgstr "Дали навистина сакате да го избришете овој %1 избран аларм?"
 
-#: resourceselector.cpp:238
+#: resourceselector.cpp:239
 msgid "You cannot remove your default active alarm resource."
 msgstr ""
 
-#: resourceselector.cpp:245
+#: resourceselector.cpp:246
 msgid ""
 "You cannot remove your default archived alarm resource while expired alarms "
 "are configured to be kept."
 msgstr ""
 
-#: resourceselector.cpp:250
+#: resourceselector.cpp:251
 #, fuzzy, qt-format
 msgid ""
 "<qt>Do you really want to remove your default resource (<b>%1</b>) from the "
@@ -4276,52 +4275,62 @@ msgid ""
 msgstr ""
 "Дали навистина сакате да го избришете овој %1 избран образец за аларми?"
 
-#: resourceselector.cpp:251
+#: resourceselector.cpp:252
 #, fuzzy, qt-format
 msgid ""
 "<qt>Do you really want to remove the resource <b>%1</b> from the list?</qt>"
 msgstr ""
 "Дали навистина сакате да го избришете овој %1 избран образец за аларми?"
 
-#: resourceselector.cpp:279
+#: resourceselector.cpp:280
 msgid "Re&load"
 msgstr ""
 
-#: resourceselector.cpp:282
+#: resourceselector.cpp:283
 #, fuzzy
 msgid "&Save"
 msgstr "И&спрати"
 
-#: resourceselector.cpp:285
+#: resourceselector.cpp:286
 #, fuzzy
 msgid "Show &Details"
 msgstr "Прикажи време на &аларми"
 
-#: resourceselector.cpp:291
+#: resourceselector.cpp:289
+#, fuzzy
+#| msgid "Font & Color"
+msgid "Set &Color"
+msgstr "Фонт и боја"
+
+#: resourceselector.cpp:292
+msgid "Clear C&olor"
+msgstr ""
+
+#: resourceselector.cpp:298
 #, fuzzy
 msgid "&Remove"
 msgstr "&Отстрани"
 
-#: resourceselector.cpp:297
+#: resourceselector.cpp:304
 #, fuzzy
 msgid "&Add..."
 msgstr "Додај..."
 
-#: resourceselector.cpp:300
+#: resourceselector.cpp:307
 #, fuzzy
 msgid "Im&port..."
 msgstr "Внеси &аларми..."
 
-#: resourceselector.cpp:350
+#: resourceselector.cpp:360
 #, fuzzy
 msgid "Use as &Default for Active Alarms"
 msgstr "Користи &стандарден фонт"
 
-#: resourceselector.cpp:351
+#: resourceselector.cpp:361
 msgid "Use as &Default for Archived Alarms"
 msgstr ""
 
-#: resourceselector.cpp:352
+#: resourceselector.cpp:362
 #, fuzzy
 msgid "Use as &Default for Alarm Templates"
 msgstr "Бришење образец за аларми"
@@ -4773,6 +4782,9 @@ msgstr "Оригинален автор"
 #: kalarmd/admain.cpp:47
 msgid "kalarmd is being autostarted"
 msgstr ""
+
+#~ msgid "Set up a simple, or additional, alarm repetition"
+#~ msgstr "Поставува едноставно или дополнително повторување на аларм"
 
 #~ msgid "Custom..."
 #~ msgstr "Сопствено..."
