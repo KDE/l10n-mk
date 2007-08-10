@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fsview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-03 05:07+0200\n"
+"POT-Creation-Date: 2007-08-10 05:32+0200\n"
 "PO-Revision-Date: 2007-02-26 20:58+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -17,21 +17,86 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : 2;\n"
 
-#: main.cpp:21 fsview_part.cpp:90
-msgid "FSView"
-msgstr "FSView"
+#: fsview.cpp:52 fsview.cpp:392
+msgid "Name"
+msgstr "Име"
 
-#: main.cpp:22
-msgid "Filesystem Viewer"
-msgstr "Прикажувач на датотечен систем"
+#: fsview.cpp:53
+msgid "Size"
+msgstr "Големина"
 
-#: main.cpp:24
-msgid "(c) 2002, Josef Weidendorfer"
-msgstr "(c) 2002, Josef Weidendorfer"
+#: fsview.cpp:54
+msgid "File Count"
+msgstr "Број на датотеки"
 
-#: main.cpp:28
-msgid "View filesystem starting from this folder"
-msgstr "Го прикажува датотечниот систем почнувајќи од оваа папка"
+#: fsview.cpp:55
+msgid "Directory Count"
+msgstr "Број на папки"
+
+#: fsview.cpp:56
+msgid "Last Modified"
+msgstr "Последна промена"
+
+#: fsview.cpp:57 fsview.cpp:393
+msgid "Owner"
+msgstr "Сопственик"
+
+#: fsview.cpp:58 fsview.cpp:394
+msgid "Group"
+msgstr "Група"
+
+#: fsview.cpp:59 fsview.cpp:395
+msgid "Mime Type"
+msgstr "Mime-тип"
+
+#: fsview.cpp:283
+msgid "Go To"
+msgstr "Оди до"
+
+#: fsview.cpp:285
+msgid "Go Up"
+msgstr "Оди нагоре"
+
+#: fsview.cpp:287
+msgid "Stop Refresh"
+msgstr "Прекини освежување"
+
+#: fsview.cpp:289
+msgid "Refresh"
+msgstr "Освежи"
+
+#: fsview.cpp:292
+#, qt-format
+msgid "Refresh '%1'"
+msgstr "Освежи „%1“"
+
+#: fsview.cpp:295 fsview_part.cpp:125
+msgid "Stop at Depth"
+msgstr "Запри на длабочина"
+
+#: fsview.cpp:297 fsview_part.cpp:122
+msgid "Stop at Area"
+msgstr "Запри на област"
+
+#: fsview.cpp:299
+msgid "Stop at Name"
+msgstr "Застани на име"
+
+#: fsview.cpp:305 fsview_part.cpp:132
+msgid "Color Mode"
+msgstr "Режим на бои"
+
+#: fsview.cpp:308 fsview_part.cpp:128
+msgid "Visualization"
+msgstr "Визуелизација"
+
+#: fsview.cpp:390
+msgid "None"
+msgstr "Нема"
+
+#: fsview.cpp:391
+msgid "Depth"
+msgstr "Длабочина"
 
 #: fsview_part.cpp:76
 #, qt-format
@@ -48,6 +113,10 @@ msgid_plural "%1 folders"
 msgstr[0] "%1 папка"
 msgstr[1] "%1 папки"
 msgstr[2] "%1 папки"
+
+#: fsview_part.cpp:90 main.cpp:21
+msgid "FSView"
+msgstr "FSView"
 
 #: fsview_part.cpp:91
 msgid "Filesystem Utilization Viewer"
@@ -72,22 +141,6 @@ msgstr ""
 "повеќе детали околу користењето и достапните опции погледнете во помошта во "
 "менито „Помош/Прирачник за FSView“.</p>"
 
-#: fsview_part.cpp:122 fsview.cpp:297
-msgid "Stop at Area"
-msgstr "Запри на област"
-
-#: fsview_part.cpp:125 fsview.cpp:295
-msgid "Stop at Depth"
-msgstr "Запри на длабочина"
-
-#: fsview_part.cpp:128 fsview.cpp:308
-msgid "Visualization"
-msgstr "Визуелизација"
-
-#: fsview_part.cpp:132 fsview.cpp:305
-msgid "Color Mode"
-msgstr "Режим на бои"
-
 #: fsview_part.cpp:138
 msgid "&FSView Manual"
 msgstr "Пр&ирачник за FSView"
@@ -110,6 +163,18 @@ msgstr ""
 "FSView намерно не поддржува автоматско ажурирање кога се прават промени "
 "однадвор на датотеките и папките што се моментално прикажани во FSView.\n"
 "За детали, проверете во “Помош/Прирачник за FSView“."
+
+#: main.cpp:22
+msgid "Filesystem Viewer"
+msgstr "Прикажувач на датотечен систем"
+
+#: main.cpp:24
+msgid "(c) 2002, Josef Weidendorfer"
+msgstr "(c) 2002, Josef Weidendorfer"
+
+#: main.cpp:28
+msgid "View filesystem starting from this folder"
+msgstr "Го прикажува датотечниот систем почнувајќи од оваа папка"
 
 #. i18n: tag Text
 #. i18n: file fsview_part.rc line 4
@@ -287,68 +352,3 @@ msgstr "Намали (до %1)"
 #, qt-format
 msgid "Increment (to %1)"
 msgstr "Зголеми (до %1)"
-
-#: fsview.cpp:52 fsview.cpp:392
-msgid "Name"
-msgstr "Име"
-
-#: fsview.cpp:53
-msgid "Size"
-msgstr "Големина"
-
-#: fsview.cpp:54
-msgid "File Count"
-msgstr "Број на датотеки"
-
-#: fsview.cpp:55
-msgid "Directory Count"
-msgstr "Број на папки"
-
-#: fsview.cpp:56
-msgid "Last Modified"
-msgstr "Последна промена"
-
-#: fsview.cpp:57 fsview.cpp:393
-msgid "Owner"
-msgstr "Сопственик"
-
-#: fsview.cpp:58 fsview.cpp:394
-msgid "Group"
-msgstr "Група"
-
-#: fsview.cpp:59 fsview.cpp:395
-msgid "Mime Type"
-msgstr "Mime-тип"
-
-#: fsview.cpp:283
-msgid "Go To"
-msgstr "Оди до"
-
-#: fsview.cpp:285
-msgid "Go Up"
-msgstr "Оди нагоре"
-
-#: fsview.cpp:287
-msgid "Stop Refresh"
-msgstr "Прекини освежување"
-
-#: fsview.cpp:289
-msgid "Refresh"
-msgstr "Освежи"
-
-#: fsview.cpp:292
-#, qt-format
-msgid "Refresh '%1'"
-msgstr "Освежи „%1“"
-
-#: fsview.cpp:299
-msgid "Stop at Name"
-msgstr "Застани на име"
-
-#: fsview.cpp:390
-msgid "None"
-msgstr "Нема"
-
-#: fsview.cpp:391
-msgid "Depth"
-msgstr "Длабочина"
