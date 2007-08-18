@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-11 05:33+0200\n"
+"POT-Creation-Date: 2007-08-18 05:32+0200\n"
 "PO-Revision-Date: 2007-02-28 14:24+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -49,7 +49,7 @@ msgstr "&Копирај во"
 #: koeventpopupmenu.cpp:69 koeditorrecurrence.cpp:617 kotodoview.cpp:519
 #: calendarview.cpp:846 actionmanager.cpp:314 actionmanager.cpp:470
 #: actionmanager.cpp:1490 actionmanager.cpp:1518 rc.cpp:6 rc.cpp:2245
-#: koeditorattachments.cpp:426 journalview.cpp:192
+#: koeditorattachments.cpp:426 journalview.cpp:190
 #, fuzzy
 msgid "&Delete"
 msgstr "Избриши %1"
@@ -296,7 +296,7 @@ msgstr "Притиснете го ова копче за да го отстра�
 msgid "New Filter %1"
 msgstr "Нов филтер %1"
 
-#: filtereditdialog.cpp:215 koeventeditor.cpp:366 kotodoeditor.cpp:339
+#: filtereditdialog.cpp:215 koeventeditor.cpp:368 kotodoeditor.cpp:340
 msgid "This item will be permanently deleted."
 msgstr "Оваа ставка ќе биде трајно избришана."
 
@@ -308,8 +308,8 @@ msgstr "Потврда за бришење"
 #. i18n: file template_management_dialog_base.ui line 41
 #. i18n: tag string
 #. i18n: file ./template_management_dialog_base.ui line 41
-#: filtereditdialog.cpp:215 kojournaleditor.cpp:198 rc.cpp:960 rc.cpp:1654
-#: koeventeditor.cpp:367
+#: filtereditdialog.cpp:215 kojournaleditor.cpp:200 rc.cpp:960 rc.cpp:1654
+#: koeventeditor.cpp:369
 #, fuzzy
 msgid "Delete"
 msgstr "Избриши %1"
@@ -485,7 +485,7 @@ msgstr "Поставува колку често треба да се повто
 msgid "&Recur every"
 msgstr "Се повто&рува секои"
 
-#: koeditorrecurrence.cpp:168 koeditorgeneral.cpp:229
+#: koeditorrecurrence.cpp:168 koeditorgeneral.cpp:237
 #: korgac/alarmdialog.cpp:94
 msgid "day(s)"
 msgstr "дена"
@@ -1683,7 +1683,7 @@ msgstr "Сопственик:"
 msgid "Sets the Title of this event or to-do."
 msgstr "Го поставува насловот на овој настан или задача."
 
-#: koeditorgeneral.cpp:103 koeditorgeneraljournal.cpp:68
+#: koeditorgeneral.cpp:103 koeditorgeneraljournal.cpp:71
 msgid "T&itle:"
 msgstr "Н&аслов:"
 
@@ -1702,7 +1702,7 @@ msgstr ""
 "Ви дозволува да ги изберете категориите на кои што припаѓа овој настан или "
 "задача."
 
-#: koeditorgeneral.cpp:138 koeditorgeneraljournal.cpp:156
+#: koeditorgeneral.cpp:138 koeditorgeneraljournal.cpp:140
 msgid "Select Cate&gories..."
 msgstr "Избери кате&гории..."
 
@@ -1718,45 +1718,50 @@ msgid ""
 "events or to-dos marked as private or confidential may be visible to others."
 msgstr ""
 
-#: koeditorgeneral.cpp:177
+#: koeditorgeneral.cpp:185
+#, fuzzy
+#| msgid ""
+#| "Sets the description for this event or to-do. This will be displayed in a "
+#| "reminder if one is set, as well as in a tooltip when you hover over the "
+#| "event."
 msgid ""
-"Sets the description for this event or to-do. This will be displayed in a "
-"reminder if one is set, as well as in a tooltip when you hover over the "
-"event."
+"Sets the description for this event, to-do or journal. This will be "
+"displayed in a reminder if one is set, as well as in a tooltip when you "
+"hover over the event."
 msgstr ""
 "Го поставува описот за овој настан или задача. Ова ќе биде прикажано во "
 "потсетник (ако е истиот поставен) како и во балонче кога ќе застанете над "
 "настанот."
 
-#: koeditorgeneral.cpp:211
+#: koeditorgeneral.cpp:219
 msgid "&Reminder:"
 msgstr "&Потсетник:"
 
-#: koeditorgeneral.cpp:213
+#: koeditorgeneral.cpp:221
 msgid "Activates a reminder for this event or to-do."
 msgstr "Активира потсетник за овој настан или задача."
 
-#: koeditorgeneral.cpp:216
+#: koeditorgeneral.cpp:224
 msgid "Sets how long before the event occurs the reminder will be triggered."
 msgstr "Поставува колку време пред настанот да се активира потсетникот."
 
-#: koeditorgeneral.cpp:227 korgac/alarmdialog.cpp:92
+#: koeditorgeneral.cpp:235 korgac/alarmdialog.cpp:92
 msgid "minute(s)"
 msgstr "минути"
 
-#: koeditorgeneral.cpp:228 korgac/alarmdialog.cpp:93
+#: koeditorgeneral.cpp:236 korgac/alarmdialog.cpp:93
 msgid "hour(s)"
 msgstr "часови"
 
-#: koeditorgeneral.cpp:238
+#: koeditorgeneral.cpp:246
 msgid "Advanced"
 msgstr "Напредно"
 
-#: koeditorgeneral.cpp:291
+#: koeditorgeneral.cpp:299
 msgid "Owner: "
 msgstr "Сопственик:"
 
-#: koeditorgeneral.cpp:323
+#: koeditorgeneral.cpp:331
 #, fuzzy, qt-format
 msgid "1 reminder configured"
 msgid_plural "%1 reminders configured"
@@ -1764,7 +1769,7 @@ msgstr[0] "Конфигуриран е еден напреден потсетн�
 msgstr[1] "Конфигуриран е еден напреден потсетник"
 msgstr[2] "Конфигуриран е еден напреден потсетник"
 
-#: koeditorgeneral.cpp:350
+#: koeditorgeneral.cpp:358
 #, fuzzy
 msgid "1 advanced reminder configured"
 msgstr "Конфигуриран е %1 потсетник"
@@ -2394,8 +2399,8 @@ msgid "The item \"%1\" will be permanently deleted."
 msgstr "Ставката „%1“ ќе биде избришана трајно."
 
 #: calendarview.cpp:845 calendarview.cpp:2021 calendarview.cpp:2084
-#: calendarview.cpp:2095 kojournaleditor.cpp:198 koeditorattachments.cpp:695
-#: koeventeditor.cpp:367 kotodoeditor.cpp:340
+#: calendarview.cpp:2095 kojournaleditor.cpp:200 koeditorattachments.cpp:695
+#: koeventeditor.cpp:369 kotodoeditor.cpp:341
 msgid "KOrganizer Confirmation"
 msgstr "Потврда на КОрганизатор"
 
@@ -2815,11 +2820,11 @@ msgstr "Локација на информацијата „слободно/з�
 msgid "Edit Journal Entry"
 msgstr ""
 
-#: kojournaleditor.cpp:197
+#: kojournaleditor.cpp:199
 msgid "This journal entry will be permanently deleted."
 msgstr ""
 
-#: kojournaleditor.cpp:213
+#: kojournaleditor.cpp:215
 msgid "Template does not contain a valid journal."
 msgstr ""
 
@@ -5401,7 +5406,7 @@ msgstr "&Изнеси"
 #. i18n: file ./korganizer_part.rc line 32
 #. i18n: tag text
 #. i18n: file ./korganizerui.rc line 26
-#: rc.cpp:792 rc.cpp:840 rc.cpp:1672 rc.cpp:1720 journalview.cpp:182
+#: rc.cpp:792 rc.cpp:840 rc.cpp:1672 rc.cpp:1720 journalview.cpp:180
 #, fuzzy
 msgid "&Edit"
 msgstr "&Уреди..."
@@ -7156,7 +7161,7 @@ msgstr "Уредете настан"
 msgid "New Event"
 msgstr "Нов настан"
 
-#: koeventeditor.cpp:375
+#: koeventeditor.cpp:377
 #, fuzzy
 msgid "Template does not contain a valid event."
 msgstr "Шаблонот не содржи валиден настан."
@@ -7169,7 +7174,7 @@ msgstr ""
 msgid "New To-do"
 msgstr ""
 
-#: kotodoeditor.cpp:355
+#: kotodoeditor.cpp:356
 msgid "Template does not contain a valid to-do."
 msgstr ""
 
@@ -7422,29 +7427,29 @@ msgstr ""
 msgid "The archive file name is not valid.\n"
 msgstr ""
 
-#: journalview.cpp:185
+#: journalview.cpp:183
 msgid "Edit this journal entry"
 msgstr ""
 
-#: journalview.cpp:186
+#: journalview.cpp:184
 msgid "Opens an editor dialog for this journal entry"
 msgstr ""
 
-#: journalview.cpp:196 journalview.cpp:197
+#: journalview.cpp:194 journalview.cpp:195
 msgid "Delete this journal entry"
 msgstr ""
 
-#: journalview.cpp:203
+#: journalview.cpp:201
 #, fuzzy
 msgid "&Print"
 msgstr "Испечати &ден"
 
-#: journalview.cpp:207
+#: journalview.cpp:205
 #, fuzzy
 msgid "Print this journal entry"
 msgstr "ставка од дневник"
 
-#: journalview.cpp:208
+#: journalview.cpp:206
 #, fuzzy
 msgid "Opens a print dialog for this journal entry"
 msgstr "ставка од дневник"
@@ -7455,19 +7460,19 @@ msgctxt "'Month day' for month view cells"
 msgid "%1 %2"
 msgstr "%2 %1"
 
-#: koeditorgeneraljournal.cpp:67
+#: koeditorgeneraljournal.cpp:70
 msgid "Sets the title of this journal."
 msgstr ""
 
-#: koeditorgeneraljournal.cpp:87
+#: koeditorgeneraljournal.cpp:90
 msgid "&Date:"
 msgstr "&Датум:"
 
-#: koeditorgeneraljournal.cpp:96
+#: koeditorgeneraljournal.cpp:99
 msgid "&Time: "
 msgstr "&Време:"
 
-#: koeditorgeneraljournal.cpp:152
+#: koeditorgeneraljournal.cpp:136
 #, fuzzy
 #| msgid ""
 #| "Allows you to select the categories that this event or to-do belongs to."
@@ -7476,7 +7481,7 @@ msgstr ""
 "Ви дозволува да ги изберете категориите на кои што припаѓа овој настан или "
 "задача."
 
-#: koeditorgeneraljournal.cpp:249
+#: koeditorgeneraljournal.cpp:228
 #, qt-format
 msgid "Please specify a valid date, for example '%1'."
 msgstr "Наведете валиден датум, на пример „%1“."
