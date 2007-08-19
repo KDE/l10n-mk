@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-18 05:31+0200\n"
+"POT-Creation-Date: 2007-08-19 05:34+0200\n"
 "PO-Revision-Date: 2007-02-26 22:26+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -69,11 +69,19 @@ msgstr "Тајната фраза за клучот е изменета"
 msgid "Could not change passphrase"
 msgstr "Не може да се смени истекувањето"
 
+#: keylistview.cpp:103
+msgid " [local]"
+msgstr " [локално]"
+
+#: keylistview.cpp:106
+msgid " [Revocation signature]"
+msgstr " [Потпис за отповикување]"
+
 #. i18n: tag string
 #. i18n: file groupedit.ui line 61
 #. i18n: tag string
 #. i18n: file groupedit.ui line 148
-#: keylistview.cpp:223 rc.cpp:282 rc.cpp:294 selectpublickeydialog.cpp:154
+#: keylistview.cpp:260 rc.cpp:282 rc.cpp:294 selectpublickeydialog.cpp:153
 #: selectsecretkey.cpp:37
 msgid "Name"
 msgstr "Име"
@@ -84,24 +92,24 @@ msgstr "Име"
 #. i18n: file groupedit.ui line 153
 #. i18n: tag string
 #. i18n: file keyexport.ui line 34
-#: keylistview.cpp:224 rc.cpp:285 rc.cpp:297 rc.cpp:303
-#: selectpublickeydialog.cpp:155 selectsecretkey.cpp:38
+#: keylistview.cpp:261 rc.cpp:285 rc.cpp:297 rc.cpp:303
+#: selectpublickeydialog.cpp:154 selectsecretkey.cpp:38
 msgid "Email"
 msgstr "Е-пошта"
 
-#: keylistview.cpp:225 keysmanager.cpp:298
+#: keylistview.cpp:262 keysmanager.cpp:298
 msgid "Trust"
 msgstr "Доверба"
 
-#: keylistview.cpp:226 keysmanager.cpp:307
+#: keylistview.cpp:263 keysmanager.cpp:307 selectsecretkey.cpp:39
 msgid "Expiration"
 msgstr "Истекување"
 
-#: keylistview.cpp:227 keysmanager.cpp:301
+#: keylistview.cpp:264 keysmanager.cpp:301
 msgid "Size"
 msgstr "Големина"
 
-#: keylistview.cpp:228 keysmanager.cpp:304
+#: keylistview.cpp:265 keysmanager.cpp:304
 msgid "Creation"
 msgstr "Создавање"
 
@@ -109,11 +117,11 @@ msgstr "Создавање"
 #. i18n: file groupedit.ui line 71
 #. i18n: tag string
 #. i18n: file groupedit.ui line 158
-#: keylistview.cpp:229 rc.cpp:288 rc.cpp:300
+#: keylistview.cpp:266 rc.cpp:288 rc.cpp:300
 msgid "Id"
 msgstr "Ид."
 
-#: keylistview.cpp:338
+#: keylistview.cpp:375
 #, qt-format
 msgid "<p>Do you want to import file <b>%1</b> into your key ring?</p>"
 msgstr ""
@@ -122,48 +130,40 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 32
-#: keylistview.cpp:338 kgpginterface.cpp:3014 rc.cpp:398
+#: keylistview.cpp:375 kgpginterface.cpp:3015 rc.cpp:398
 #, fuzzy
 msgid "Import"
 msgstr "&Внеси"
 
-#: keylistview.cpp:338 kgpginterface.cpp:3014
+#: keylistview.cpp:375 kgpginterface.cpp:3015
 msgid "Do Not Import"
 msgstr "Не внесувај"
 
-#: keylistview.cpp:360 keylistview.cpp:416 keylistview.cpp:531
-#: keylistview.cpp:597 keysmanager.cpp:574 keysmanager.cpp:1215
-#: keysmanager.cpp:1701 keysmanager.cpp:1768 keysmanager.cpp:2300
+#: keylistview.cpp:397 keylistview.cpp:453 keylistview.cpp:568
+#: keylistview.cpp:634 keysmanager.cpp:574 keysmanager.cpp:1215
+#: keysmanager.cpp:1713 keysmanager.cpp:1780 keysmanager.cpp:2312
 #, qt-format
 msgid "%1 Keys, %2 Groups"
 msgstr "%1 клучеви, %2 групи"
 
-#: keylistview.cpp:361 keylistview.cpp:387 keylistview.cpp:417
-#: keylistview.cpp:532 keylistview.cpp:598 keysmanager.cpp:536
+#: keylistview.cpp:398 keylistview.cpp:424 keylistview.cpp:454
+#: keylistview.cpp:569 keylistview.cpp:635 keysmanager.cpp:536
 msgid "Ready"
 msgstr "Подготвен"
 
-#: keylistview.cpp:366
+#: keylistview.cpp:403
 msgid "Loading Keys..."
 msgstr "Вчитувам клучеви..."
 
-#: keylistview.cpp:685
+#: keylistview.cpp:722
 #, qt-format
 msgid "%1 subkey"
 msgstr "Подклуч %1"
 
-#: keylistview.cpp:714 keysmanager.cpp:916 keysmanager.cpp:1169
-#: keysmanager.cpp:1353 keysmanager.cpp:1635
+#: keylistview.cpp:751 keysmanager.cpp:916 keysmanager.cpp:1169
+#: keysmanager.cpp:1355 keysmanager.cpp:1638
 msgid "Photo id"
 msgstr "Фото ид."
-
-#: keylistview.cpp:750
-msgid " [local]"
-msgstr " [локално]"
-
-#: keylistview.cpp:754
-msgid " [Revocation signature]"
-msgstr " [Потпис за отповикување]"
 
 #: keyservers.cpp:47
 msgid "Key Server"
@@ -181,7 +181,7 @@ msgstr "&Прекини"
 msgid "You must enter a search string."
 msgstr "Мора да внесете низа за пребарување."
 
-#: keyservers.cpp:269 kgpginterface.cpp:2426
+#: keyservers.cpp:269 kgpginterface.cpp:2427
 #, qt-format
 msgid "<qt>%1 key processed.<br></qt>"
 msgid_plural "<qt>%1 keys processed.<br></qt>"
@@ -189,7 +189,7 @@ msgstr[0] "<qt>Обработен е %1 клуч.<br></qt>"
 msgstr[1] "<qt>Обработени се %1 клучеви.<br></qt>"
 msgstr[2] "<qt>Обработени се %1 клучеви.<br></qt>"
 
-#: keyservers.cpp:271 kgpginterface.cpp:2435
+#: keyservers.cpp:271 kgpginterface.cpp:2436
 #, qt-format
 msgid "<qt>One key unchanged.<br></qt>"
 msgid_plural "<qt>%1 keys unchanged.<br></qt>"
@@ -197,7 +197,7 @@ msgstr[0] "<qt>%1 клуч не е изменет.<br></qt>"
 msgstr[1] "<qt>%1 клучеви не се изменети.<br></qt>"
 msgstr[2] "<qt>%1 клучеви не се изменети.<br></qt>"
 
-#: keyservers.cpp:273 kgpginterface.cpp:2441
+#: keyservers.cpp:273 kgpginterface.cpp:2442
 #, qt-format
 msgid "<qt>One signature imported.<br></qt>"
 msgid_plural "<qt>%1 signatures imported.<br></qt>"
@@ -205,7 +205,7 @@ msgstr[0] "<qt>%1 потпис е внесен.<br></qt>"
 msgstr[1] "<qt>%1 потписи се внесени.<br></qt>"
 msgstr[2] "<qt>%1 потписи се внесени.<br></qt>"
 
-#: keyservers.cpp:275 kgpginterface.cpp:2429
+#: keyservers.cpp:275 kgpginterface.cpp:2430
 #, qt-format
 msgid "<qt>One key without ID.<br></qt>"
 msgid_plural "<qt>%1 keys without ID.<br></qt>"
@@ -213,7 +213,7 @@ msgstr[0] "<qt>%1 клуч без ид.<br></qt>"
 msgstr[1] "<qt>%1 клучеви без ид.<br></qt>"
 msgstr[2] "<qt>%1 клучеви без ид.<br></qt>"
 
-#: keyservers.cpp:277 kgpginterface.cpp:2433
+#: keyservers.cpp:277 kgpginterface.cpp:2434
 #, qt-format
 msgid "<qt>One RSA key imported.<br></qt>"
 msgid_plural "<qt>%1 RSA keys imported.<br></qt>"
@@ -221,7 +221,7 @@ msgstr[0] "<qt>Внесен е %1 RSA-клуч.<br></qt>"
 msgstr[1] "<qt>Внесени се %1 RSA-клучеви.<br></qt>"
 msgstr[2] "<qt>Внесени се %1 RSA-клучеви.<br></qt>"
 
-#: keyservers.cpp:279 kgpginterface.cpp:2437
+#: keyservers.cpp:279 kgpginterface.cpp:2438
 #, qt-format
 msgid "<qt>One user ID imported.<br></qt>"
 msgid_plural "<qt>%1 user IDs imported.<br></qt>"
@@ -229,7 +229,7 @@ msgstr[0] "<qt>Внесен е %1 кориснички ид.<br></qt>"
 msgstr[1] "<qt>Внесени се %1 кориснички ид.<br></qt>"
 msgstr[2] "<qt>Внесени се %1 кориснички ид.<br></qt>"
 
-#: keyservers.cpp:281 kgpginterface.cpp:2439
+#: keyservers.cpp:281 kgpginterface.cpp:2440
 #, qt-format
 msgid "<qt>One subkey imported.<br></qt>"
 msgid_plural "<qt>%1 subkeys imported.<br></qt>"
@@ -237,7 +237,7 @@ msgstr[0] "<qt>Внесен е %1 подклуч<br></qt>"
 msgstr[1] "<qt>Внесени се %1 подклучеви.<br></qt>"
 msgstr[2] "<qt>Внесени се %1 подклучеви.<br></qt>"
 
-#: keyservers.cpp:283 kgpginterface.cpp:2443
+#: keyservers.cpp:283 kgpginterface.cpp:2444
 #, qt-format
 msgid "<qt>One revocation certificate imported.<br></qt>"
 msgid_plural "<qt>%1 revocation certificates imported.<br></qt>"
@@ -245,7 +245,7 @@ msgstr[0] "<qt>Внесен е %1 сертификат за отповикува
 msgstr[1] "<qt>Внесени се %1 сертификати за отповикување.<br></qt>"
 msgstr[2] "<qt>Внесени се %1 сертификати за отповикување.<br></qt>"
 
-#: keyservers.cpp:285 kgpginterface.cpp:2446
+#: keyservers.cpp:285 kgpginterface.cpp:2447
 #, qt-format
 msgid "<qt>One secret key processed.<br></qt>"
 msgid_plural "<qt>%1 secret keys processed.<br></qt>"
@@ -253,7 +253,7 @@ msgstr[0] "<qt>Обработен е %1 таен клуч.<br></qt>"
 msgstr[1] "<qt>Обработени се %1 тајни клучеви.<br></qt>"
 msgstr[2] "<qt>Обработени се %1 тајни клучеви.<br></qt>"
 
-#: keyservers.cpp:287 kgpginterface.cpp:2450
+#: keyservers.cpp:287 kgpginterface.cpp:2451
 #, qt-format
 msgid "<qt><b>One secret key imported.</b><br></qt>"
 msgid_plural "<qt><b>%1 secret keys imported.</b><br></qt>"
@@ -261,7 +261,7 @@ msgstr[0] "<qt><b>Внесен е %1 таен клуч.</b><br></qt>"
 msgstr[1] "<qt><b>Внесени се %1 тајни клучеви.</b><br></qt>"
 msgstr[2] "<qt><b>Внесени се %1 тајни клучеви.</b><br></qt>"
 
-#: keyservers.cpp:289 kgpginterface.cpp:2452
+#: keyservers.cpp:289 kgpginterface.cpp:2453
 #, qt-format
 msgid "<qt>One secret key unchanged.<br></qt>"
 msgid_plural "<qt>%1 secret keys unchanged.<br></qt>"
@@ -269,7 +269,7 @@ msgstr[0] "<qt>%1 таен клуч не е изменет.<br></qt>"
 msgstr[1] "<qt>%1 тајни клучеви не се изменети.<br></qt>"
 msgstr[2] "<qt>%1 тајни клучеви не се изменети.<br></qt>"
 
-#: keyservers.cpp:291 kgpginterface.cpp:2454
+#: keyservers.cpp:291 kgpginterface.cpp:2455
 #, qt-format
 msgid "<qt>One secret key not imported.<br></qt>"
 msgid_plural "<qt>%1 secret keys not imported.<br></qt>"
@@ -277,7 +277,7 @@ msgstr[0] "<qt>%1 таен клуч не е внесен.<br></qt>"
 msgstr[1] "<qt>%1 тајни клучеви не се внесени.<br></qt>"
 msgstr[2] "<qt>%1 тајни клучеви не се внесени.<br></qt>"
 
-#: keyservers.cpp:293 kgpginterface.cpp:2431
+#: keyservers.cpp:293 kgpginterface.cpp:2432
 #, qt-format
 msgid "<qt><b>One key imported:</b><br></qt>"
 msgid_plural "<qt><b>%1 keys imported:</b><br></qt>"
@@ -285,7 +285,7 @@ msgstr[0] "<qt><b>Внесен е %1 клуч:</b><br></qt>"
 msgstr[1] "<qt><b>Внесени се %1 клучеви:</b><br></qt>"
 msgstr[2] "<qt><b>Внесени се %1 клучеви:</b><br></qt>"
 
-#: keyservers.cpp:296 kgpginterface.cpp:2462
+#: keyservers.cpp:296 kgpginterface.cpp:2463
 msgid ""
 "No key imported... \n"
 "Check detailed log for more infos"
@@ -336,7 +336,7 @@ msgstr "Види го упатството за GnuPG"
 msgid "&Open Editor"
 msgstr "&Отвори уредувач"
 
-#: keysmanager.cpp:166 selectpublickeydialog.cpp:225
+#: keysmanager.cpp:166 selectpublickeydialog.cpp:224
 msgid "&Go to Default Key"
 msgstr "&Оди на основниот клуч"
 
@@ -623,23 +623,26 @@ msgstr "Потпис за отповикување"
 msgid "Orphaned Secret Key"
 msgstr "Напуштен таен клуч"
 
-#: keysmanager.cpp:1265
-msgid "Sorry, this key is not valid for encryption or not trusted."
+#: keysmanager.cpp:1267
+#, fuzzy, qt-format
+#| msgid "Sorry, this key is not valid for encryption or not trusted."
+msgid ""
+"<qt>Sorry, the key <b>%1</b> is not valid for encryption or not trusted.</qt>"
 msgstr "За жал овој клуч не е валиден за крипција или не е доверлив."
 
-#: keysmanager.cpp:1341
+#: keysmanager.cpp:1343
 msgid "Revoked"
 msgstr "Отповикан"
 
-#: keysmanager.cpp:1395
+#: keysmanager.cpp:1397
 msgid "Create Revocation Certificate"
 msgstr "Создај сертификат за отповикување"
 
-#: keysmanager.cpp:1401
+#: keysmanager.cpp:1403
 msgid "ID: "
 msgstr "Ид.:"
 
-#: keysmanager.cpp:1447
+#: keysmanager.cpp:1449
 msgid ""
 "Secret keys SHOULD NOT be saved in an unsafe place.\n"
 "If someone else can access this file, encryption with this key will be "
@@ -651,28 +654,28 @@ msgstr ""
 "биде компромитирана!\n"
 "Да продолжам со изнесување на клучот?"
 
-#: keysmanager.cpp:1449 keysmanager.cpp:1684 keysmanager.cpp:2165
-#: keysmanager.cpp:2235 kgpg.cpp:648 kgpgeditor.cpp:308 kgpgeditor.cpp:318
+#: keysmanager.cpp:1451 keysmanager.cpp:1696 keysmanager.cpp:2177
+#: keysmanager.cpp:2247 kgpg.cpp:648 kgpgeditor.cpp:308 kgpgeditor.cpp:318
 #: kgpglibrary.cpp:210
 msgid "Warning"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 167
-#: keysmanager.cpp:1449 rc.cpp:428
+#: keysmanager.cpp:1451 rc.cpp:428
 #, fuzzy
 msgid "Export"
 msgstr "&Изнеси"
 
-#: keysmanager.cpp:1449
+#: keysmanager.cpp:1451
 msgid "Do Not Export"
 msgstr "Не изнесувај"
 
-#: keysmanager.cpp:1460
+#: keysmanager.cpp:1462
 msgid "Export PRIVATE KEY As"
 msgstr "Изнесете ПРИВАТЕН КЛУЧ како"
 
-#: keysmanager.cpp:1473
+#: keysmanager.cpp:1475
 #, qt-format
 msgid ""
 "Your PRIVATE key \"%1\" was successfully exported.\n"
@@ -681,7 +684,7 @@ msgstr ""
 "Вашиот ПРИВАТЕН КЛУЧ „%1“ беше успешно изнесен.\n"
 "НЕ го оставајте на несигурно место."
 
-#: keysmanager.cpp:1475
+#: keysmanager.cpp:1477
 msgid ""
 "Your secret key could not be exported.\n"
 "Check the key."
@@ -689,20 +692,20 @@ msgstr ""
 "Вашиот таен клуч не можеше да се изнесе.\n"
 "Проверете го клучот."
 
-#: keysmanager.cpp:1515
+#: keysmanager.cpp:1517
 msgid "Public Key Export"
 msgstr "Изнесување на јавен клуч"
 
-#: keysmanager.cpp:1532 kgpgeditor.cpp:377
+#: keysmanager.cpp:1534 kgpgeditor.cpp:377
 msgid "Save File"
 msgstr "Зачувајте датотека"
 
-#: keysmanager.cpp:1577
+#: keysmanager.cpp:1579
 #, qt-format
 msgid "Your public key \"%1\" was successfully exported\n"
 msgstr "Вашиот јавен клуч „%1“ беше успешно изнесен\n"
 
-#: keysmanager.cpp:1579
+#: keysmanager.cpp:1581
 msgid ""
 "Your public key could not be exported\n"
 "Check the key."
@@ -710,7 +713,7 @@ msgstr ""
 "Вашиот јавен клуч не можеше да се изнесе.\n"
 "Проверете го клучот."
 
-#: keysmanager.cpp:1645
+#: keysmanager.cpp:1657
 msgid ""
 "This key is an orphaned secret key (secret key without public key.) It is "
 "currently not usable.\n"
@@ -722,26 +725,26 @@ msgstr ""
 "\n"
 "Дали сакате да го регенерирате јавниот клуч?"
 
-#: keysmanager.cpp:1646
+#: keysmanager.cpp:1658
 msgid "Generate"
 msgstr "Генерирај"
 
-#: keysmanager.cpp:1646
+#: keysmanager.cpp:1658
 msgid "Do Not Generate"
 msgstr "Не генерирај"
 
-#: keysmanager.cpp:1684
+#: keysmanager.cpp:1696
 #, qt-format
 msgid "<qt>Are you sure you want to delete group <b>%1</b> ?</qt>"
 msgstr ""
 "<qt>Дали сте сигурни дека сакате да ја избришете групата <b>%1</b> ?</qt>"
 
-#: keysmanager.cpp:1684 keysmanager.cpp:2166
+#: keysmanager.cpp:1696 keysmanager.cpp:2178
 #, fuzzy
 msgid "Delete"
 msgstr "&Избриши ги клучевите"
 
-#: keysmanager.cpp:1745
+#: keysmanager.cpp:1757
 msgid ""
 "<qt>You cannot create a group containing signatures, subkeys or other groups."
 "</qt>"
@@ -749,15 +752,15 @@ msgstr ""
 "<qt>Не може да создадете група која содржи потписи, подклучеви или други "
 "групи.</qt>"
 
-#: keysmanager.cpp:1749
+#: keysmanager.cpp:1761
 msgid "Create New Group"
 msgstr "Создајте нова група"
 
-#: keysmanager.cpp:1749
+#: keysmanager.cpp:1761
 msgid "Enter new group name:"
 msgstr "Внесете го името на новата група:"
 
-#: keysmanager.cpp:1755
+#: keysmanager.cpp:1767
 msgid ""
 "Following keys are not valid or not trusted and will not be added to the "
 "group:"
@@ -765,7 +768,7 @@ msgstr ""
 "Следните клучеви не се валидни или не се доверливи и тие нема да бидат "
 "додадени во групата:"
 
-#: keysmanager.cpp:1771
+#: keysmanager.cpp:1783
 #, qt-format
 msgid ""
 "<qt>No valid or trusted key was selected. The group <b>%1</b> will not be "
@@ -774,7 +777,7 @@ msgstr ""
 "<qt>Не е избран валиден или доверлив клуч. Групата <b>%1</b> нема да биде "
 "создадена.</qt>"
 
-#: keysmanager.cpp:1801
+#: keysmanager.cpp:1813
 msgid ""
 "Following keys are in the group but are not valid or not in your keyring. "
 "They will be removed from the group."
@@ -782,15 +785,15 @@ msgstr ""
 "Следните клучеви се во групата но не се валидни или не се во вашиот приврзок "
 "со клучеви. Тие ќе бидат отстранети од групата."
 
-#: keysmanager.cpp:1811
+#: keysmanager.cpp:1823
 msgid "Group Properties"
 msgstr "Својства на групата"
 
-#: keysmanager.cpp:1881
+#: keysmanager.cpp:1893
 msgid "You can only sign primary keys. Please check your selection."
 msgstr "Може да потпишете само примарни клучеви. Проверете го вашиот избор."
 
-#: keysmanager.cpp:1896
+#: keysmanager.cpp:1908
 #, qt-format
 msgid ""
 "<qt>You are about to sign key:<br><br>%1<br>ID: %2<br>Fingerprint: <br><b>%"
@@ -803,7 +806,7 @@ msgstr ""
 "јавите на сопственикот на клучот или ќе се сретнете за да се осигурате дека "
 "некој не се обидува да ја пресретне вашата меѓусебна комуникација.</qt>"
 
-#: keysmanager.cpp:1913
+#: keysmanager.cpp:1925
 #, fuzzy
 #| msgid ""
 #| "<qt>You are about to sign the following keys in one pass.<br><b>If you "
@@ -818,37 +821,37 @@ msgstr ""
 "внимателно сите отпечатоци, сигурноста на вашата комуникација може да биде "
 "компромитирана!</b></qt>"
 
-#: keysmanager.cpp:1957 keysmanager.cpp:1960
+#: keysmanager.cpp:1969 keysmanager.cpp:1972
 msgid " ("
 msgstr " ("
 
-#: keysmanager.cpp:1957 keysmanager.cpp:1960
+#: keysmanager.cpp:1969 keysmanager.cpp:1972
 msgid ")"
 msgstr ")"
 
-#: keysmanager.cpp:1957
+#: keysmanager.cpp:1969
 #, qt-format
 msgid "<qt>Bad passphrase, key <b>%1</b> not signed.</qt>"
 msgstr "<qt>Лоша тајна фраза, клучот <b>%1</b> не е потпишан.</qt>"
 
-#: keysmanager.cpp:1960
+#: keysmanager.cpp:1972
 #, fuzzy, qt-format
 msgid "<qt>The key <b>%1</b> is already signed.</qt>"
 msgstr "<qt>Лоша тајна фраза, клучот <b>%1</b> не е потпишан.</qt>"
 
-#: keysmanager.cpp:1989
+#: keysmanager.cpp:2001
 msgid "All signatures for this key are already in your keyring"
 msgstr "Сите потписи за овој клуч се веќе во вашиот приврзок со клучеви"
 
-#: keysmanager.cpp:2065
+#: keysmanager.cpp:2077
 msgid "Edit key manually to delete this signature."
 msgstr "Уредете го клучот рачно за да го избришете потписот."
 
-#: keysmanager.cpp:2084
+#: keysmanager.cpp:2096
 msgid "Edit key manually to delete a self-signature."
 msgstr "Уредете го клучот рачно за да избришете авто-потпис."
 
-#: keysmanager.cpp:2088
+#: keysmanager.cpp:2100
 #, qt-format
 msgid ""
 "<qt>Are you sure you want to delete signature<br><b>%1</b> from key:<br><b>%"
@@ -857,16 +860,16 @@ msgstr ""
 "<qt>Дали сте сигурни дека сакате да го избришете потписот<br><b>%1</b> од "
 "клучот:<br><b>%2</b>?</qt>"
 
-#: keysmanager.cpp:2110
+#: keysmanager.cpp:2122
 msgid "Requested operation was unsuccessful, please edit the key manually."
 msgstr "Бараната операција беше неуспешна, уредете го клучот рачно."
 
-#: keysmanager.cpp:2143
+#: keysmanager.cpp:2155
 #, qt-format
 msgid "<qt>Cannot open file <b>%1</b> for printing...</qt>"
 msgstr "<qt>Не можам да ја отворам датотеката <b>%1</b> за печатење...</qt>"
 
-#: keysmanager.cpp:2164
+#: keysmanager.cpp:2176
 #, qt-format
 msgid ""
 "<p>Delete <b>SECRET KEY</b> pair <b>%1</b>?</p>Deleting this key pair means "
@@ -876,7 +879,7 @@ msgstr ""
 "значи дека никогаш повеќе нема да можете да декриптирате датотеки криптирани "
 "со овој клуч."
 
-#: keysmanager.cpp:2227
+#: keysmanager.cpp:2239
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>The following are secret key pairs:<br><b>%1</b>They will not be "
@@ -888,7 +891,7 @@ msgstr ""
 "<qt>Следниве се парови тајни клучеви:<br><b>%1</b>Тие нема да бидат "
 "избришани.<br></qt>"
 
-#: keysmanager.cpp:2235
+#: keysmanager.cpp:2247
 #, qt-format
 msgid "<qt><b>Delete the following public key?</b></qt>"
 msgid_plural "<qt><b>Delete the following %1 public keys?</b></qt>"
@@ -896,15 +899,15 @@ msgstr[0] "<qt><b>Го бришете следниов %1 јавен клуч?</
 msgstr[1] "<qt><b>Ги бришете следниве %1 јавни клучеви?</b></qt>"
 msgstr[2] "<qt><b>Ги бришете следниве %1 јавни клучеви?</b></qt>"
 
-#: keysmanager.cpp:2306
+#: keysmanager.cpp:2318
 msgid "Key Import"
 msgstr "Внес на клуч"
 
-#: keysmanager.cpp:2313
+#: keysmanager.cpp:2325
 msgid "Open File"
 msgstr "Отворете датотека"
 
-#: keysmanager.cpp:2320
+#: keysmanager.cpp:2332
 msgid "Importing..."
 msgstr "Внесувам..."
 
@@ -1241,25 +1244,25 @@ msgstr " или "
 msgid "Enter passphrase (symmetrical encryption)"
 msgstr "Внесете тајна фраза (симетрично криптирање)"
 
-#: kgpginterface.cpp:1164 kgpginterface.cpp:1319 kgpginterface.cpp:1918
-#: kgpginterface.cpp:2804 kgpginterface.cpp:2921
+#: kgpginterface.cpp:1164 kgpginterface.cpp:1319 kgpginterface.cpp:1919
+#: kgpginterface.cpp:2805 kgpginterface.cpp:2922
 msgid "[No user id found]"
 msgstr "[Не е најден кориснични ид.]"
 
-#: kgpginterface.cpp:1168 kgpginterface.cpp:2809
+#: kgpginterface.cpp:1168 kgpginterface.cpp:2810
 msgid "<b>No user id found</b>. Trying all secret keys.<br>"
 msgstr "<b>Не е најден кориснични ид.</b>. Ги пробувам сите тајни клучеви.<br>"
 
 #: kgpginterface.cpp:1170 kgpginterface.cpp:1323 kgpginterface.cpp:1667
-#: kgpginterface.cpp:1809 kgpginterface.cpp:1925 kgpginterface.cpp:2205
-#: kgpginterface.cpp:2295 kgpginterface.cpp:2548 kgpginterface.cpp:2811
+#: kgpginterface.cpp:1810 kgpginterface.cpp:1926 kgpginterface.cpp:2206
+#: kgpginterface.cpp:2296 kgpginterface.cpp:2549 kgpginterface.cpp:2812
 #, qt-format
 msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
 msgstr "<b>Лоша тајна фраза</b>. Ви преостануваат уште %1 обиди.<br>"
 
 #: kgpginterface.cpp:1171 kgpginterface.cpp:1324 kgpginterface.cpp:1668
-#: kgpginterface.cpp:1810 kgpginterface.cpp:2206 kgpginterface.cpp:2296
-#: kgpginterface.cpp:2549 kgpginterface.cpp:2812 kgpginterface.cpp:2926
+#: kgpginterface.cpp:1811 kgpginterface.cpp:2207 kgpginterface.cpp:2297
+#: kgpginterface.cpp:2550 kgpginterface.cpp:2813 kgpginterface.cpp:2927
 #, qt-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "Внесете ја тајната фраза за <b>%1</b>"
@@ -1268,7 +1271,7 @@ msgstr "Внесете ја тајната фраза за <b>%1</b>"
 msgid "Bad MDC detected. The encrypted text has been manipulated."
 msgstr "Откриен е лош MDC. Имало манипулација со криптираниот текст."
 
-#: kgpginterface.cpp:1425 kgpginterface.cpp:2984
+#: kgpginterface.cpp:1425 kgpginterface.cpp:2985
 #, qt-format
 msgid "<qt>Good signature from:<br><b>%1</b><br>Key ID: %2</qt>"
 msgstr "<qt>Добар потпис од:<br><b>%1</b><br>Ид. на клуч: %2</qt>"
@@ -1282,16 +1285,16 @@ msgstr ""
 "<qt><b>Лош потпис</b> од:<br>%1<br>Ид. на клуч: %2<br><br><b>Текстот е "
 "расипан.</b></qt>"
 
-#: kgpginterface.cpp:1440 kgpginterface.cpp:1462 kgpginterface.cpp:2981
-#: kgpginterface.cpp:3008
+#: kgpginterface.cpp:1440 kgpginterface.cpp:1462 kgpginterface.cpp:2982
+#: kgpginterface.cpp:3009
 msgid "No signature found."
 msgstr "Не е пронајден потпис."
 
-#: kgpginterface.cpp:1443 kgpginterface.cpp:2996
+#: kgpginterface.cpp:1443 kgpginterface.cpp:2997
 msgid "The signature is valid, but the key is untrusted"
 msgstr "Потписот е валиден но клучот не е доверлив"
 
-#: kgpginterface.cpp:1446 kgpginterface.cpp:2999
+#: kgpginterface.cpp:1446 kgpginterface.cpp:3000
 msgid "The signature is valid, and the key is ultimately trusted"
 msgstr "Потписот е валиден и клучот е крајно доверлив"
 
@@ -1308,7 +1311,7 @@ msgstr ""
 "<qt>Потпишувањето на клучот <b>%1</b> со клучот <b>%2</b> не успеа.<br>Дали "
 "сакате да се обидете да го потпишете клучот во конзолен режим?</qt>"
 
-#: kgpginterface.cpp:1853
+#: kgpginterface.cpp:1854
 msgid ""
 "<qt><b>Changing expiration failed.</b><br>Do you want to try changing the "
 "key expiration in console mode?</qt>"
@@ -1316,12 +1319,12 @@ msgstr ""
 "<qt><b>Менувањето на истекувањето не успеа.</b><br>Дали сакате да се обидете "
 "да го смените истекувањето на клучот во конзолен режим?</qt>"
 
-#: kgpginterface.cpp:1926
+#: kgpginterface.cpp:1927
 #, fuzzy, qt-format
 msgid "Enter old passphrase for <b>%1</b>"
 msgstr "Внесете ја тајната фраза за <b>%1</b>"
 
-#: kgpginterface.cpp:1939
+#: kgpginterface.cpp:1940
 #, fuzzy, qt-format
 msgid ""
 "<qt>Enter new passphrase for <b>%1</b><br>If you forget this passphrase all "
@@ -1330,19 +1333,19 @@ msgstr ""
 "<qt>Внесете нова тајна фраза за <b>%1</b><br>Ако ја заборавите оваа тајна "
 "фраза сите ваши криптирани датотеки и пораки ќе бидат загубени!<br></qt>"
 
-#: kgpginterface.cpp:2191
+#: kgpginterface.cpp:2192
 msgid "This image is very large. Use it anyway?"
 msgstr "Оваа слика е преголема. Дали сепак ќе ја користите?"
 
-#: kgpginterface.cpp:2191
+#: kgpginterface.cpp:2192
 msgid "Use Anyway"
 msgstr "Сепак користи"
 
-#: kgpginterface.cpp:2191
+#: kgpginterface.cpp:2192
 msgid "Do Not Use"
 msgstr "Не користи"
 
-#: kgpginterface.cpp:2457
+#: kgpginterface.cpp:2458
 msgid ""
 "<qt><br><b>You have imported a secret key.</b> <br>Please note that imported "
 "secret keys are not trusted by default.<br>To fully use this secret key for "
@@ -1355,7 +1358,7 @@ msgstr ""
 "клучот (кликнете двапати на него) и да ја поставите неговата доверливост на "
 "Целосно или Крајно.</qt>"
 
-#: kgpginterface.cpp:2700
+#: kgpginterface.cpp:2701
 #, qt-format
 msgid ""
 "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
@@ -1364,21 +1367,21 @@ msgstr ""
 "<b>Внесете тајна фраза за %1</b>:<br>Тајната фраза би требало да вклучува не-"
 "алфанумерички знаци и случајни секвенци"
 
-#: kgpginterface.cpp:2895
+#: kgpginterface.cpp:2896
 #, qt-format
 msgid "The signature file %1 was successfully created."
 msgstr "Датотеката со потпис %1 беше успешно создадена."
 
-#: kgpginterface.cpp:2898
+#: kgpginterface.cpp:2899
 msgid "Bad passphrase, signature was not created."
 msgstr "Лоша тајна фраза, потписот не беше создаден."
 
-#: kgpginterface.cpp:2925
+#: kgpginterface.cpp:2926
 #, qt-format
 msgid "<b>Bad passphrase</b>. you have %1 tries left.<br>"
 msgstr "<b>Лоша тајна фраза</b>. Ви преостануваат уште %1 обиди.<br>"
 
-#: kgpginterface.cpp:2987
+#: kgpginterface.cpp:2988
 #, fuzzy, qt-format
 msgid ""
 "<qt><b>BAD signature</b> from:<br> %1<br>Key id: %2<br><br><b>The file is "
@@ -1387,7 +1390,7 @@ msgstr ""
 "<qt><b>ЛОШ потпис</b> од:<br> %1<br>Ид. на клуч: %2<br><br><b>Датотеката е "
 "расипана!</b></qt>"
 
-#: kgpginterface.cpp:3014 kgpgview.cpp:306
+#: kgpginterface.cpp:3015 kgpgview.cpp:306
 #, qt-format
 msgid ""
 "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -1396,7 +1399,7 @@ msgstr ""
 "<qt><b>Недостасува потпис:</b><br>Ид. на клуч: %1<br><br>Дали сакате да го "
 "внесете овој клуч од сервер за клучеви?</qt>"
 
-#: kgpginterface.cpp:3025
+#: kgpginterface.cpp:3026
 msgid ""
 "This key has more than one user ID.\n"
 "Edit the key manually to delete signature."
@@ -1404,11 +1407,11 @@ msgstr ""
 "Овој клуч има повеќе од еден кориснички ид.\n"
 "Уредете го рачно клучот за да го избришете потписот."
 
-#: kgpginterface.cpp:3116
+#: kgpginterface.cpp:3117
 msgid "Creation of the revocation certificate failed..."
 msgstr "Создавањето на сертификатот за отповикување не успеа..."
 
-#: kgpginterface.cpp:3151
+#: kgpginterface.cpp:3152
 #, qt-format
 msgid "<qt>Enter passphrase for <b>%1</b>:</qt>"
 msgstr "<qt>Внесете ја тајната фраза за <b>%1</b>:</qt>"
@@ -1448,7 +1451,7 @@ msgstr "Коментар (изборен):"
 
 #. i18n: tag string
 #. i18n: file keyproperties.ui line 152
-#: kgpgkeygenerate.cpp:63 rc.cpp:342 selectsecretkey.cpp:110
+#: kgpgkeygenerate.cpp:63 rc.cpp:342
 msgid "Expiration:"
 msgstr "Истекување:"
 
@@ -1920,7 +1923,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 42
-#: rc.cpp:30 selectpublickeydialog.cpp:165
+#: rc.cpp:30 selectpublickeydialog.cpp:164
 msgid "ASCII armored encryption"
 msgstr "Криптирање оклопено со ASCII"
 
@@ -1960,7 +1963,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 64
-#: rc.cpp:44 selectpublickeydialog.cpp:175
+#: rc.cpp:44 selectpublickeydialog.cpp:174
 msgid "Hide user id"
 msgstr "Скриј го ид. на корисникот"
 
@@ -1986,7 +1989,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 75
-#: rc.cpp:51 selectpublickeydialog.cpp:187
+#: rc.cpp:51 selectpublickeydialog.cpp:186
 msgid "Shred source file"
 msgstr "Уништи ја изворната датотека"
 
@@ -2088,7 +2091,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 172
-#: rc.cpp:79 selectpublickeydialog.cpp:169
+#: rc.cpp:79 selectpublickeydialog.cpp:168
 msgid "Allow encryption with untrusted keys"
 msgstr "Дозволи криптирање со недоверливи клучеви"
 
@@ -3442,23 +3445,23 @@ msgstr ""
 msgid "Select Public Key for %1"
 msgstr "Изберете јавен клуч за %1"
 
-#: selectpublickeydialog.cpp:144
+#: selectpublickeydialog.cpp:143
 #, fuzzy
 msgid "&Search: "
 msgstr "Барање:"
 
-#: selectpublickeydialog.cpp:156 selectsecretkey.cpp:39
+#: selectpublickeydialog.cpp:155 selectsecretkey.cpp:40
 msgid "ID"
 msgstr "Ид."
 
-#: selectpublickeydialog.cpp:158
+#: selectpublickeydialog.cpp:157
 msgid ""
 "<b>Public keys list</b>: select the key that will be used for encryption."
 msgstr ""
 "<b>Листа на јавни клучеви</b>: изберете го клучот што ќе се користи за "
 "крипција."
 
-#: selectpublickeydialog.cpp:167
+#: selectpublickeydialog.cpp:166
 msgid ""
 "<b>ASCII encryption</b>: makes it possible to open the encrypted file/"
 "message in a text editor"
@@ -3466,7 +3469,7 @@ msgstr ""
 "<b>Крипција со ASCII</b>: прави криптираната датотека/порака да може да биде "
 "отворена во уредувач за текст"
 
-#: selectpublickeydialog.cpp:171
+#: selectpublickeydialog.cpp:170
 msgid ""
 "<b>Allow encryption with untrusted keys</b>: when you import a public key, "
 "it is usually marked as untrusted and you cannot use it unless you sign it "
@@ -3478,7 +3481,7 @@ msgstr ""
 "не го потпишете за да го направите „доверлив“. Обележувањето на ова поле "
 "овозможува да користите било кој клуч, дури и ако не е потпишан."
 
-#: selectpublickeydialog.cpp:177
+#: selectpublickeydialog.cpp:176
 msgid ""
 "<b>Hide user ID</b>: Do not put the keyid into encrypted packets. This "
 "option hides the receiver of the message and is a countermeasure against "
@@ -3490,7 +3493,7 @@ msgstr ""
 "анализата на пакетите. Може да го успори процесот на декрипција бидејќи се "
 "проверуваат сите можни тајни клучеви."
 
-#: selectpublickeydialog.cpp:188
+#: selectpublickeydialog.cpp:187
 msgid ""
 "<b>Shred source file</b>: permanently remove source file. No recovery will "
 "be possible"
@@ -3498,7 +3501,7 @@ msgstr ""
 "<b>Уништи ја изворната датотека</b>: трајно ја брише изворната датотека. "
 "Враќањето назад не е можно"
 
-#: selectpublickeydialog.cpp:192
+#: selectpublickeydialog.cpp:191
 msgid ""
 "<qt><b>Shred source file:</b><br /><p>Checking this option will shred "
 "(overwrite several times before erasing) the files you have encrypted. This "
@@ -3517,17 +3520,17 @@ msgstr ""
 "претходно сте ја отвориле во некој уредувач или сте се обиделе да ја "
 "испечатите. Ова функционира само за датотеки (не за папки).</p></qt>"
 
-#: selectpublickeydialog.cpp:194
+#: selectpublickeydialog.cpp:193
 #, fuzzy, qt-format
 msgid "<a href=\"whatsthis:%1\">Read this before using shredding</a>"
 msgstr ""
 "<a href=\"whatsthis:%1\">Прочитајте го ова пред да користите уништување</a>"
 
-#: selectpublickeydialog.cpp:199
+#: selectpublickeydialog.cpp:198
 msgid "Symmetrical encryption"
 msgstr "Симетрично криптирање"
 
-#: selectpublickeydialog.cpp:200
+#: selectpublickeydialog.cpp:199
 msgid ""
 "<b>Symmetrical encryption</b>: encryption does not use keys. You just need "
 "to give a password to encrypt/decrypt the file"
@@ -3535,11 +3538,11 @@ msgstr ""
 "<b>Симетрично криптирање</b>: криптирањето не користи клучеви. Треба само да "
 "дадете лозинка за да ја криптирате/декриптирате датотеката"
 
-#: selectpublickeydialog.cpp:214
+#: selectpublickeydialog.cpp:213
 msgid "Custom option:"
 msgstr "Сопствени опции:"
 
-#: selectpublickeydialog.cpp:218
+#: selectpublickeydialog.cpp:217
 msgid ""
 "<b>Custom option</b>: for experienced users only, allows you to enter a gpg "
 "command line option, like: '--armor'"
