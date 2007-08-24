@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-23 05:40+0200\n"
+"POT-Creation-Date: 2007-08-24 05:35+0200\n"
 "PO-Revision-Date: 2007-02-26 22:30+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -172,7 +172,7 @@ msgstr "Не се избрани датотеки"
 msgid "Start / Resume"
 msgstr ""
 
-#: mainwindow.cpp:195 core/transfergrouphandler.cpp:320
+#: mainwindow.cpp:195 core/transfergrouphandler.cpp:321
 #, fuzzy
 msgid "Stop"
 msgstr "Запрено"
@@ -192,7 +192,19 @@ msgstr "bobibobi@freemail.com.mk"
 msgid "Copy URL to Clipboard"
 msgstr "&Копирај URL на табла со исечоци"
 
-#: mainwindow.cpp:250
+#. i18n: tag string
+#. i18n: file conf/dlgappearance.ui line 37
+#: mainwindow.cpp:219 mainwindow.cpp:288 rc.cpp:27
+#, fuzzy
+msgid "Show drop target"
+msgstr "Прикажи цел за испуштање"
+
+#: mainwindow.cpp:220 mainwindow.cpp:289
+#, fuzzy
+msgid "Hide drop target"
+msgstr "Скриј цел за &испуштање"
+
+#: mainwindow.cpp:259
 #, fuzzy
 #| msgid ""
 #| "This is the first time that you have run KGet.\n"
@@ -204,29 +216,29 @@ msgstr ""
 "Ова е прв пат како го вклучувате KGet.\n"
 "Дали сакате да го користите KGet како менаџер на симнувања за Konqueror?"
 
-#: mainwindow.cpp:252
+#: mainwindow.cpp:261
 #, fuzzy
 msgid "Konqueror Integration"
 msgstr "Интеграција со Konqueror"
 
-#: mainwindow.cpp:252
+#: mainwindow.cpp:261
 msgid "Enable"
 msgstr "Користи"
 
-#: mainwindow.cpp:253
+#: mainwindow.cpp:262
 msgid "Do Not Enable"
 msgstr "Не користи"
 
-#: mainwindow.cpp:284
+#: mainwindow.cpp:303
 msgid "All Openable Files"
 msgstr ""
 
-#: mainwindow.cpp:285
+#: mainwindow.cpp:304
 #, fuzzy
 msgid "Open File"
 msgstr "Отвори &датотека"
 
-#: mainwindow.cpp:301
+#: mainwindow.cpp:320
 #, fuzzy
 #| msgid ""
 #| "Some transfers are still running.\n"
@@ -238,38 +250,38 @@ msgstr ""
 "Некои преноси сѐ уште се извршуваат.\n"
 "Дали навистина сакате да го затворите KGet?"
 
-#: mainwindow.cpp:303
+#: mainwindow.cpp:322
 msgid "Confirm Quit"
 msgstr ""
 
-#: mainwindow.cpp:336
+#: mainwindow.cpp:355
 #, fuzzy
 msgid "KGet Transfer List"
 msgstr "Отворам пренос:"
 
-#: mainwindow.cpp:338
+#: mainwindow.cpp:357
 #, fuzzy
 msgid "Export Transfers"
 msgstr "&Изнеси ја листата за пренос..."
 
-#: mainwindow.cpp:361 conf/transfersgroupwidget.cpp:70
+#: mainwindow.cpp:380 conf/transfersgroupwidget.cpp:70
 #, fuzzy
 msgid "Enter Group Name"
 msgstr "Божидар Проевски"
 
-#: mainwindow.cpp:362 conf/transfersgroupwidget.cpp:71
+#: mainwindow.cpp:381 conf/transfersgroupwidget.cpp:71
 #, fuzzy
 msgid "Group name:"
 msgstr "Божидар Проевски"
 
-#: mainwindow.cpp:540
+#: mainwindow.cpp:559
 msgid ""
 "KGet has been temporarily disabled as download manager for Konqueror. If you "
 "want to disable it forever, go to Settings->Advanced and disable \"Use as "
 "download manager for Konqueror\"."
 msgstr ""
 
-#: mainwindow.cpp:543
+#: mainwindow.cpp:562
 #, fuzzy
 msgid "Konqueror Integration disabled"
 msgstr "Интеграција со Konqueror"
@@ -327,13 +339,6 @@ msgstr ""
 #| msgid "Drop target"
 msgid "Drop Target"
 msgstr "Цел за испуштање"
-
-#. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 37
-#: rc.cpp:27
-#, fuzzy
-msgid "Show drop target"
-msgstr "Прикажи цел за испуштање"
 
 #. i18n: tag string
 #. i18n: file conf/dlgappearance.ui line 44
@@ -563,7 +568,6 @@ msgid "Folder and extension can not be empty."
 msgstr ""
 
 #: conf/dlgdirectories.cpp:120 core/kget.cpp:416 core/kget.cpp:636
-#: core/kget.cpp:663
 msgid "Error"
 msgstr ""
 
@@ -624,6 +628,7 @@ msgid ""
 msgstr ""
 
 #: conf/transfersgroupwidget.cpp:99 core/kget.cpp:481
+#: core/transfergrouphandler.cpp:186
 #, fuzzy
 msgid "My Downloads"
 msgstr "Симнувањето е продолжено"
@@ -699,16 +704,7 @@ msgstr ""
 msgid "Download URL again?"
 msgstr "Симни повторно"
 
-#: core/kget.cpp:662
-#, qt-format
-msgid ""
-"Already saving URL\n"
-"%1"
-msgstr ""
-"Веќе го зачувувам URL\n"
-"%1"
-
-#: core/kget.cpp:681
+#: core/kget.cpp:678
 #, qt-format
 msgid ""
 "Destination file \n"
@@ -721,14 +717,14 @@ msgstr ""
 "веќе постои.\n"
 "Дали сакате да запишете врз неа?"
 
-#: core/kget.cpp:809
+#: core/kget.cpp:806
 #, qt-format
 msgid ""
 "<p>KLibLoader could not load the plugin:<br/><i>%1</i></p><p>Error message:"
 "<br/><i>%2</i></p>"
 msgstr ""
 
-#: core/kget.cpp:834
+#: core/kget.cpp:831
 #, qt-format
 msgid ""
 "Not deleting\n"
@@ -739,11 +735,11 @@ msgstr ""
 "%1\n"
 "бидејќи е именик."
 
-#: core/kget.cpp:836 core/kget.cpp:847
+#: core/kget.cpp:833 core/kget.cpp:844
 msgid "Not Deleted"
 msgstr "Не е избришан"
 
-#: core/kget.cpp:845
+#: core/kget.cpp:842
 #, qt-format
 msgid ""
 "Not deleting\n"
@@ -785,7 +781,7 @@ msgstr "Во застој"
 msgid "%1/s"
 msgstr "%1/s"
 
-#: core/transfergrouphandler.cpp:314
+#: core/transfergrouphandler.cpp:315
 #, fuzzy
 msgid "Start"
 msgstr "Ре&стартирај"
@@ -891,6 +887,13 @@ msgstr "Симнувањето е продолжено"
 #, fuzzy
 msgid "Transfer details:"
 msgstr " Преноси: %1 "
+
+#~ msgid ""
+#~ "Already saving URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Веќе го зачувувам URL\n"
+#~ "%1"
 
 #~ msgid "Default folder:"
 #~ msgstr "Почетна папка:"
