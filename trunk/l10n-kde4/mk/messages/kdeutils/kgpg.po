@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-01 05:36+0200\n"
+"POT-Creation-Date: 2007-09-02 05:41+0200\n"
 "PO-Revision-Date: 2007-02-26 22:26+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -140,7 +140,7 @@ msgstr "Не внесувај"
 
 #: keylistview.cpp:386 keylistview.cpp:442 keylistview.cpp:557
 #: keylistview.cpp:624 keysmanager.cpp:577 keysmanager.cpp:1232
-#: keysmanager.cpp:1753 keysmanager.cpp:1833 keysmanager.cpp:2407
+#: keysmanager.cpp:1753 keysmanager.cpp:1833 keysmanager.cpp:2399
 #, qt-format
 msgid "%1 Keys, %2 Groups"
 msgstr "%1 клучеви, %2 групи"
@@ -332,7 +332,7 @@ msgstr "Внеси клуч од сервер на клучеви"
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 141
-#: keyservers.cpp:391 kgpgview.cpp:393 rc.cpp:425
+#: keyservers.cpp:391 kgpgview.cpp:392 rc.cpp:425
 msgid "&Import"
 msgstr "&Внеси"
 
@@ -385,7 +385,7 @@ msgstr "Види го упатството за GnuPG"
 msgid "&Open Editor"
 msgstr "&Отвори уредувач"
 
-#: keysmanager.cpp:167 selectpublickeydialog.cpp:224
+#: keysmanager.cpp:167 selectpublickeydialog.cpp:230
 msgid "&Go to Default Key"
 msgstr "&Оди на основниот клуч"
 
@@ -720,7 +720,7 @@ msgstr ""
 "Да продолжам со изнесување на клучот?"
 
 #: keysmanager.cpp:1488 keysmanager.cpp:1736 keysmanager.cpp:2268
-#: keysmanager.cpp:2342 kgpg.cpp:648 kgpgeditor.cpp:314 kgpgeditor.cpp:324
+#: keysmanager.cpp:2336 kgpg.cpp:648 kgpgeditor.cpp:314 kgpgeditor.cpp:324
 #: kgpglibrary.cpp:210
 msgid "Warning"
 msgstr ""
@@ -956,7 +956,18 @@ msgstr ""
 "значи дека никогаш повеќе нема да можете да декриптирате датотеки криптирани "
 "со овој клуч."
 
-#: keysmanager.cpp:2334
+#: keysmanager.cpp:2292
+#, qt-format
+msgid "Can not delete key <b>%1</b> while it is edited in terminal."
+msgstr ""
+
+#: keysmanager.cpp:2292
+#, fuzzy
+#| msgid "&Delete Keys"
+msgid "Delete key"
+msgstr "&Избриши ги клучевите"
+
+#: keysmanager.cpp:2328
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>The following are secret key pairs:<br><b>%1</b>They will not be "
@@ -968,7 +979,7 @@ msgstr ""
 "<qt>Следниве се парови тајни клучеви:<br><b>%1</b>Тие нема да бидат "
 "избришани.<br></qt>"
 
-#: keysmanager.cpp:2342
+#: keysmanager.cpp:2336
 #, qt-format
 msgid "<qt><b>Delete the following public key?</b></qt>"
 msgid_plural "<qt><b>Delete the following %1 public keys?</b></qt>"
@@ -976,15 +987,15 @@ msgstr[0] "<qt><b>Го бришете следниов %1 јавен клуч?</
 msgstr[1] "<qt><b>Ги бришете следниве %1 јавни клучеви?</b></qt>"
 msgstr[2] "<qt><b>Ги бришете следниве %1 јавни клучеви?</b></qt>"
 
-#: keysmanager.cpp:2413
+#: keysmanager.cpp:2405
 msgid "Key Import"
 msgstr "Внес на клуч"
 
-#: keysmanager.cpp:2420
+#: keysmanager.cpp:2412
 msgid "Open File"
 msgstr "Отворете датотека"
 
-#: keysmanager.cpp:2427
+#: keysmanager.cpp:2419
 msgid "Importing..."
 msgstr "Внесувам..."
 
@@ -1521,7 +1532,7 @@ msgstr ""
 "<qt><b>ЛОШ потпис</b> од:<br> %1<br>Ид. на клуч: %2<br><br><b>Датотеката е "
 "расипана!</b></qt>"
 
-#: kgpginterface.cpp:2944 kgpgview.cpp:400
+#: kgpginterface.cpp:2944 kgpgview.cpp:399
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -1687,7 +1698,7 @@ msgstr ""
 "<p>Датотеката <b>%1</b>е приватен блок-клуч. Користете го менаџерот на "
 "клучеви во KGpg за да го внесете.</p>"
 
-#: kgpglibrary.cpp:231 kgpgview.cpp:314 kgpgview.cpp:355
+#: kgpglibrary.cpp:231 kgpgview.cpp:313 kgpgview.cpp:354
 msgid "Decryption failed."
 msgstr "Декрипцијата не успеа."
 
@@ -1883,11 +1894,11 @@ msgstr ""
 msgid "Could not download file."
 msgstr "Не може да се симне датотеката."
 
-#: kgpgview.cpp:228
+#: kgpgview.cpp:227
 msgid "Unable to read file."
 msgstr "Не може да се прочита датотеката."
 
-#: kgpgview.cpp:269
+#: kgpgview.cpp:268
 #, fuzzy
 msgid ""
 "<qt>This file is a <b>public</b> key.\n"
@@ -1896,7 +1907,7 @@ msgstr ""
 "Датотекава е приватен клуч.\n"
 "Користете го менаџментот со клучеви на kgpg за да го внесете."
 
-#: kgpgview.cpp:275
+#: kgpgview.cpp:274
 #, fuzzy
 #| msgid ""
 #| "This file is a private key.\n"
@@ -1908,41 +1919,41 @@ msgstr ""
 "Датотекава е приватен клуч.\n"
 "Користете го менаџментот со клучеви на kgpg за да го внесете."
 
-#: kgpgview.cpp:326
+#: kgpgview.cpp:325
 msgid "Encryption failed."
 msgstr "Криптирањето не успеа."
 
-#: kgpgview.cpp:363
+#: kgpgview.cpp:362
 msgid "Signing not possible: bad passphrase or missing key"
 msgstr "Потпишувањето не е можно: лоша тајна фраза или недостига клуч"
 
-#: kgpgview.cpp:394
+#: kgpgview.cpp:393
 #, fuzzy
 msgid "Import key in your list"
 msgstr "Внеси во приврзокот со клучеви"
 
-#: kgpgview.cpp:397
+#: kgpgview.cpp:396
 #, fuzzy
 msgid "Do &Not Import"
 msgstr "Не внесувај"
 
-#: kgpgview.cpp:398
+#: kgpgview.cpp:397
 msgid "Will not import this key in your list"
 msgstr ""
 
-#: kgpgview.cpp:400
+#: kgpgview.cpp:399
 msgid "Missing Key"
 msgstr "Недостасува клуч"
 
-#: kgpgview.cpp:425
+#: kgpgview.cpp:424
 msgid "S&ign/Verify"
 msgstr "Потп&иши/верификувај"
 
-#: kgpgview.cpp:426
+#: kgpgview.cpp:425
 msgid "En&crypt"
 msgstr "&Криптирај"
 
-#: kgpgview.cpp:427
+#: kgpgview.cpp:426
 msgid "&Decrypt"
 msgstr "&Декриптирај"
 
@@ -2089,7 +2100,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 42
-#: rc.cpp:30 selectpublickeydialog.cpp:164
+#: rc.cpp:30 selectpublickeydialog.cpp:169
 msgid "ASCII armored encryption"
 msgstr "Криптирање оклопено со ASCII"
 
@@ -2129,7 +2140,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 64
-#: rc.cpp:44 selectpublickeydialog.cpp:174
+#: rc.cpp:44 selectpublickeydialog.cpp:180
 msgid "Hide user id"
 msgstr "Скриј го ид. на корисникот"
 
@@ -2155,7 +2166,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 75
-#: rc.cpp:51 selectpublickeydialog.cpp:186
+#: rc.cpp:51 selectpublickeydialog.cpp:192
 msgid "Shred source file"
 msgstr "Уништи ја изворната датотека"
 
@@ -2257,7 +2268,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 172
-#: rc.cpp:79 selectpublickeydialog.cpp:168
+#: rc.cpp:79 selectpublickeydialog.cpp:174
 msgid "Allow encryption with untrusted keys"
 msgstr "Дозволи криптирање со недоверливи клучеви"
 
@@ -3635,7 +3646,7 @@ msgstr ""
 "<b>Листа на јавни клучеви</b>: изберете го клучот што ќе се користи за "
 "крипција."
 
-#: selectpublickeydialog.cpp:166
+#: selectpublickeydialog.cpp:171
 msgid ""
 "<b>ASCII encryption</b>: makes it possible to open the encrypted file/"
 "message in a text editor"
@@ -3643,7 +3654,7 @@ msgstr ""
 "<b>Крипција со ASCII</b>: прави криптираната датотека/порака да може да биде "
 "отворена во уредувач за текст"
 
-#: selectpublickeydialog.cpp:170
+#: selectpublickeydialog.cpp:176
 msgid ""
 "<b>Allow encryption with untrusted keys</b>: when you import a public key, "
 "it is usually marked as untrusted and you cannot use it unless you sign it "
@@ -3655,7 +3666,7 @@ msgstr ""
 "не го потпишете за да го направите „доверлив“. Обележувањето на ова поле "
 "овозможува да користите било кој клуч, дури и ако не е потпишан."
 
-#: selectpublickeydialog.cpp:176
+#: selectpublickeydialog.cpp:182
 msgid ""
 "<b>Hide user ID</b>: Do not put the keyid into encrypted packets. This "
 "option hides the receiver of the message and is a countermeasure against "
@@ -3667,7 +3678,7 @@ msgstr ""
 "анализата на пакетите. Може да го успори процесот на декрипција бидејќи се "
 "проверуваат сите можни тајни клучеви."
 
-#: selectpublickeydialog.cpp:187
+#: selectpublickeydialog.cpp:193
 msgid ""
 "<b>Shred source file</b>: permanently remove source file. No recovery will "
 "be possible"
@@ -3675,7 +3686,7 @@ msgstr ""
 "<b>Уништи ја изворната датотека</b>: трајно ја брише изворната датотека. "
 "Враќањето назад не е можно"
 
-#: selectpublickeydialog.cpp:191
+#: selectpublickeydialog.cpp:197
 msgid ""
 "<qt><b>Shred source file:</b><br /><p>Checking this option will shred "
 "(overwrite several times before erasing) the files you have encrypted. This "
@@ -3694,17 +3705,17 @@ msgstr ""
 "претходно сте ја отвориле во некој уредувач или сте се обиделе да ја "
 "испечатите. Ова функционира само за датотеки (не за папки).</p></qt>"
 
-#: selectpublickeydialog.cpp:193
+#: selectpublickeydialog.cpp:199
 #, fuzzy, qt-format
 msgid "<a href=\"whatsthis:%1\">Read this before using shredding</a>"
 msgstr ""
 "<a href=\"whatsthis:%1\">Прочитајте го ова пред да користите уништување</a>"
 
-#: selectpublickeydialog.cpp:198
+#: selectpublickeydialog.cpp:204
 msgid "Symmetrical encryption"
 msgstr "Симетрично криптирање"
 
-#: selectpublickeydialog.cpp:199
+#: selectpublickeydialog.cpp:205
 msgid ""
 "<b>Symmetrical encryption</b>: encryption does not use keys. You just need "
 "to give a password to encrypt/decrypt the file"
@@ -3712,11 +3723,11 @@ msgstr ""
 "<b>Симетрично криптирање</b>: криптирањето не користи клучеви. Треба само да "
 "дадете лозинка за да ја криптирате/декриптирате датотеката"
 
-#: selectpublickeydialog.cpp:213
+#: selectpublickeydialog.cpp:219
 msgid "Custom option:"
 msgstr "Сопствени опции:"
 
-#: selectpublickeydialog.cpp:217
+#: selectpublickeydialog.cpp:223
 msgid ""
 "<b>Custom option</b>: for experienced users only, allows you to enter a gpg "
 "command line option, like: '--armor'"
