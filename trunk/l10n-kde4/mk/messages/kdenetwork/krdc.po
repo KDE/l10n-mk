@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krdc\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-02 05:41+0200\n"
+"POT-Creation-Date: 2007-09-03 05:36+0200\n"
 "PO-Revision-Date: 2006-04-26 15:02+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -940,11 +940,21 @@ msgstr ""
 msgid "Server not found."
 msgstr ""
 
-#: vnc/vncclientthread.cpp:128
+#: vnc/vncclientthread.cpp:129
 #, fuzzy
 #| msgid "Authentication failed. Connection aborted."
-msgid "VNC authentication faile because of too many tries."
+msgid "VNC authentication failed because of too many authentication tries."
 msgstr "Проверката за автентичност не успеа. Поврзувањето е прекинато."
+
+#: vnc/vncclientthread.cpp:132 vnc/vncclientthread.cpp:162
+#, fuzzy
+#| msgid "Authentication Failure"
+msgid "VNC authentication failed."
+msgstr "Неуспешна проверка за автентичност"
+
+#: vnc/vncclientthread.cpp:135
+msgid "VNC server closed connection."
+msgstr ""
 
 #: vnc/vncview.cpp:172
 msgid "VNC failure"
@@ -1302,9 +1312,6 @@ msgstr ""
 #~ msgid "Connection failed. No server running at the given address and port."
 #~ msgstr ""
 #~ "Поврзувањето не успеа. На дадената адреса и порта не се извршува сервер."
-
-#~ msgid "Authentication Failure"
-#~ msgstr "Неуспешна проверка за автентичност"
 
 #~ msgid "Unknown error."
 #~ msgstr "Непозната грешка."
