@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kvoctrain\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-08 05:35+0200\n"
+"POT-Creation-Date: 2007-09-10 05:35+0200\n"
 "PO-Revision-Date: 2007-02-26 21:36+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -129,7 +129,7 @@ msgstr "Бришам опис на времето"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 72
-#: kvttablemodel.cpp:186 rc.cpp:1185 kvtlessonmodel.cpp:127
+#: kvttablemodel.cpp:186 rc.cpp:1182 kvtlessonmodel.cpp:127
 msgid "Lesson"
 msgstr "Лекција"
 
@@ -292,16 +292,6 @@ msgstr "Опис на групата"
 msgid "Enter profile description:"
 msgstr "Внесете опис на типот:"
 
-#: common-dialogs/languageoptions.cpp:376
-#: language-dialogs/editlanguagedialogpage.cpp:82
-msgid "No icon"
-msgstr ""
-
-#: common-dialogs/languageoptions.cpp:388
-#: language-dialogs/editlanguagedialogpage.cpp:92
-msgid "without name"
-msgstr "без име"
-
 #: common-dialogs/generaloptions.cpp:61
 msgid ";"
 msgstr ""
@@ -423,8 +413,10 @@ msgid "Vocabulary Trainer"
 msgstr "Вежбање на речник"
 
 #: main.cpp:39
-msgid "KVocTrain"
-msgstr "KVocTrain"
+#, fuzzy
+#| msgid "Malay"
+msgid "Parley"
+msgstr "Малајски"
 
 #: main.cpp:43
 #, fuzzy
@@ -553,18 +545,26 @@ msgid "Rewriting the kvtml library for KDE4"
 msgstr ""
 
 #: main.cpp:93
+msgid "Ramona Knapp"
+msgstr ""
+
+#: main.cpp:94
+msgid "Suggested Parley as new name"
+msgstr ""
+
+#: main.cpp:96
 msgid "KDE Team"
 msgstr "KDE тим"
 
-#: main.cpp:94
+#: main.cpp:97
 msgid "Many small enhancements"
 msgstr "Многу мали подобрувања"
 
-#: main.cpp:99
+#: main.cpp:102
 msgid "+[file]"
 msgstr "+[датотека]"
 
-#: main.cpp:99
+#: main.cpp:102
 #, fuzzy
 msgid "Document file to open"
 msgstr "Датотека на документ за отворање."
@@ -596,15 +596,23 @@ msgctxt "Edit language properties"
 msgid "Properties for %1"
 msgstr "Уреди својства за оригиналот"
 
+#: language-dialogs/editlanguagedialogpage.cpp:82
+msgid "No icon"
+msgstr ""
+
+#: language-dialogs/editlanguagedialogpage.cpp:92
+msgid "without name"
+msgstr "без име"
+
 #. i18n: tag text
-#. i18n: file kvoctrainui.rc line 24
+#. i18n: file parleyui.rc line 24
 #: rc.cpp:3
 #, fuzzy
 msgid "&Language"
 msgstr "Ја&зик"
 
 #. i18n: tag text
-#. i18n: file kvoctrainui.rc line 31
+#. i18n: file parleyui.rc line 31
 #: rc.cpp:6
 #, fuzzy
 #| msgid "&Lesson:"
@@ -612,7 +620,7 @@ msgid "&Lesson"
 msgstr "&Лекција:"
 
 #. i18n: tag text
-#. i18n: file kvoctrainui.rc line 42
+#. i18n: file parleyui.rc line 42
 #: rc.cpp:9
 #, fuzzy
 #| msgid "&Articles"
@@ -620,7 +628,7 @@ msgid "&Practice"
 msgstr "&Членови"
 
 #. i18n: tag text
-#. i18n: file kvoctrainui.rc line 56
+#. i18n: file parleyui.rc line 60
 #: rc.cpp:12
 msgid "Main Toolbar"
 msgstr ""
@@ -703,12 +711,12 @@ msgstr "vladoboss@mt.net.mk"
 #. i18n: file ./statistics-dialogs/GenStatPageForm.ui line 22
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 14
-#: rc.cpp:17 rc.cpp:32 rc.cpp:92 rc.cpp:150 rc.cpp:648 rc.cpp:669 rc.cpp:693
-#: rc.cpp:729 rc.cpp:762 rc.cpp:771 rc.cpp:813 rc.cpp:882 rc.cpp:885
-#: rc.cpp:888 rc.cpp:933 rc.cpp:936 rc.cpp:939 rc.cpp:942 rc.cpp:945
-#: rc.cpp:948 rc.cpp:951 rc.cpp:954 rc.cpp:957 rc.cpp:960 rc.cpp:966
-#: rc.cpp:1065 rc.cpp:1071 rc.cpp:1077 rc.cpp:1083 rc.cpp:1089 rc.cpp:1122
-#: rc.cpp:1125 rc.cpp:1155 rc.cpp:1173
+#: rc.cpp:17 rc.cpp:32 rc.cpp:92 rc.cpp:150 rc.cpp:606 rc.cpp:627 rc.cpp:651
+#: rc.cpp:687 rc.cpp:720 rc.cpp:729 rc.cpp:771 rc.cpp:879 rc.cpp:882
+#: rc.cpp:885 rc.cpp:930 rc.cpp:933 rc.cpp:936 rc.cpp:939 rc.cpp:942
+#: rc.cpp:945 rc.cpp:948 rc.cpp:951 rc.cpp:954 rc.cpp:957 rc.cpp:963
+#: rc.cpp:1062 rc.cpp:1068 rc.cpp:1074 rc.cpp:1080 rc.cpp:1086 rc.cpp:1119
+#: rc.cpp:1122 rc.cpp:1152 rc.cpp:1170
 msgid "-"
 msgstr "-"
 
@@ -761,7 +769,9 @@ msgstr "Код на јазикот (ISO 639):"
 
 #. i18n: tag string
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 137
-#: rc.cpp:41
+#. i18n: tag string
+#. i18n: file ./query-dialogs/startpracticewidget.ui line 56
+#: rc.cpp:41 rc.cpp:852
 msgid "Articles"
 msgstr "Членови"
 
@@ -769,7 +779,7 @@ msgstr "Членови"
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 161
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 160
-#: rc.cpp:44 rc.cpp:786
+#: rc.cpp:44 rc.cpp:744
 msgid "&Male:"
 msgstr "&Машки:"
 
@@ -777,7 +787,7 @@ msgstr "&Машки:"
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 171
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 273
-#: rc.cpp:47 rc.cpp:798
+#: rc.cpp:47 rc.cpp:756
 msgid "&Female:"
 msgstr "&Женски:"
 
@@ -791,7 +801,7 @@ msgstr "Свршено"
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 270
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 263
-#: rc.cpp:53 rc.cpp:795
+#: rc.cpp:53 rc.cpp:753
 msgid "&Neutral:"
 msgstr "&Неутрално:"
 
@@ -811,7 +821,7 @@ msgstr "Конјугација"
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 320
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 150
-#: rc.cpp:62 rc.cpp:783
+#: rc.cpp:62 rc.cpp:741
 msgid "&1. Person:"
 msgstr "&1. Личност:"
 
@@ -819,7 +829,7 @@ msgstr "&1. Личност:"
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 330
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 293
-#: rc.cpp:65 rc.cpp:801
+#: rc.cpp:65 rc.cpp:759
 msgid "&2. Person:"
 msgstr "&2. Личност:"
 
@@ -833,7 +843,7 @@ msgstr "3. Личност:"
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 383
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 110
-#: rc.cpp:71 rc.cpp:777
+#: rc.cpp:71 rc.cpp:735
 msgid "C&ommon"
 msgstr "Ч&есто"
 
@@ -859,7 +869,7 @@ msgstr "Не&утрално:"
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 420
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 303
-#: rc.cpp:83 rc.cpp:804
+#: rc.cpp:83 rc.cpp:762
 msgid "Plural"
 msgstr "Множина"
 
@@ -867,7 +877,7 @@ msgstr "Множина"
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 433
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 137
-#: rc.cpp:86 rc.cpp:780
+#: rc.cpp:86 rc.cpp:738
 msgid "&Common"
 msgstr "&Често"
 
@@ -875,7 +885,7 @@ msgstr "&Често"
 #. i18n: file ./docprop-dialogs/LangPropPageForm.ui line 440
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 170
-#: rc.cpp:89 rc.cpp:789
+#: rc.cpp:89 rc.cpp:747
 msgid "Singular"
 msgstr "Еднина"
 
@@ -907,7 +917,7 @@ msgstr "&Автори:"
 #. i18n: file ./docprop-dialogs/TitlePageForm.ui line 97
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/AuxInfoEntryPageForm.ui line 166
-#: rc.cpp:107 rc.cpp:663
+#: rc.cpp:107 rc.cpp:621
 #, fuzzy
 #| msgid "&Common"
 msgid "&Comment:"
@@ -1024,7 +1034,7 @@ msgid "&Clean Up"
 msgstr "Ис&чисти"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 46
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 70
 #: rc.cpp:165
 msgid ""
 "Specify which font to use for displaying pronunciations using phonetic "
@@ -1032,214 +1042,214 @@ msgid ""
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 53
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 77
 #: rc.cpp:168
 #, fuzzy
 msgid "&IPA font:"
 msgstr "IPA фонт:"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 63
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 87
 #: rc.cpp:171
 #, fuzzy
 msgid "&Table font:"
 msgstr "Фонт на табела:"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 73
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 97
 #: rc.cpp:174
 msgid "Specify which font to use for editing of the main table."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 90
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 112
 #: rc.cpp:177
 msgid "Grade Colors"
 msgstr "Степен на бои"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 110
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 142
 #: rc.cpp:180
 msgid "&N"
 msgstr "&N"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 125
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 155
 #: rc.cpp:183
 #, fuzzy
 msgid "Color for the grade 1"
 msgstr "Не можам да прочитам "
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 128
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 158
 #: rc.cpp:186
 msgid "Click here to change the color for grade 1."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 131
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 161
 #: rc.cpp:189
 msgid "&1"
 msgstr "&1"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 134
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 164
 #: rc.cpp:192
 msgid "Alt+1"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 149
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 177
 #: rc.cpp:195
 #, fuzzy
 msgid "Color for the grade 2"
 msgstr "Не можам да прочитам "
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 152
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 180
 #: rc.cpp:198
 msgid "Click here to change the color for grade 2."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 155
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 183
 #: rc.cpp:201
 msgid "&2"
 msgstr "&2"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 158
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 186
 #: rc.cpp:204
 msgid "Alt+2"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 173
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 199
 #: rc.cpp:207
 #, fuzzy
 msgid "Color for the grade 3"
 msgstr "Не можам да прочитам "
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 176
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 202
 #: rc.cpp:210
 msgid "Click here to change the color for grade 3."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 179
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 205
 #: rc.cpp:213
 msgid "&3"
 msgstr "&3"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 182
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 208
 #: rc.cpp:216
 msgid "Alt+3"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 197
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 221
 #: rc.cpp:219
 #, fuzzy
 msgid "Color for the grade 4"
 msgstr "Не можам да прочитам "
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 200
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 224
 #: rc.cpp:222
 msgid "Click here to change the color for grade 4."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 203
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 227
 #: rc.cpp:225
 msgid "&4"
 msgstr "&4"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 206
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 230
 #: rc.cpp:228
 msgid "Alt+4"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 221
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 243
 #: rc.cpp:231
 #, fuzzy
 msgid "Color for the grade 5"
 msgstr "Не можам да прочитам "
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 224
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 246
 #: rc.cpp:234
 msgid "Click here to change the color for grade 5."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 227
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 249
 #: rc.cpp:237
 msgid "&5"
 msgstr "&5"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 230
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 252
 #: rc.cpp:240
 msgid "Alt+5"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 245
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 265
 #: rc.cpp:243
 #, fuzzy
 msgid "Color for the grade 6"
 msgstr "Не можам да прочитам "
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 248
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 268
 #: rc.cpp:246
 msgid "Click here to change the color for grade 6."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 251
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 271
 #: rc.cpp:249
 msgid "&6"
 msgstr "&6"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 254
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 274
 #: rc.cpp:252
 msgid "Alt+6"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 269
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 287
 #: rc.cpp:255
 #, fuzzy
 msgid "Color for the grade 7"
 msgstr "Не можам да прочитам "
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 272
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 290
 #: rc.cpp:258
 msgid "Click here to change the color for grade 7."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 275
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 293
 #: rc.cpp:261
 msgid "&7"
 msgstr "&7"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 278
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 296
 #: rc.cpp:264
 msgid "Alt+7"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 293
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 309
 #. i18n: tag string
 #. i18n: file ./common-dialogs/blockoptionsbase.ui line 125
 #: rc.cpp:267 rc.cpp:528
@@ -1247,7 +1257,7 @@ msgid "Level &7:"
 msgstr "Ниво &7:"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 311
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 325
 #. i18n: tag string
 #. i18n: file ./common-dialogs/blockoptionsbase.ui line 54
 #: rc.cpp:270 rc.cpp:516
@@ -1255,7 +1265,7 @@ msgid "Level &6:"
 msgstr "Ниво &6:"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 329
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 341
 #. i18n: tag string
 #. i18n: file ./common-dialogs/blockoptionsbase.ui line 44
 #: rc.cpp:273 rc.cpp:513
@@ -1263,7 +1273,7 @@ msgid "Level &5:"
 msgstr "Ниво &5:"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 347
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 357
 #. i18n: tag string
 #. i18n: file ./common-dialogs/blockoptionsbase.ui line 115
 #: rc.cpp:276 rc.cpp:525
@@ -1271,46 +1281,46 @@ msgid "Level &4:"
 msgstr "Ниво &4:"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 365
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 373
 #. i18n: tag string
 #. i18n: file ./common-dialogs/blockoptionsbase.ui line 191
 #. i18n: tag string
 #. i18n: file ./query-dialogs/AdjQueryDlgForm.ui line 61
-#: rc.cpp:279 rc.cpp:534 rc.cpp:999
+#: rc.cpp:279 rc.cpp:534 rc.cpp:996
 msgid "Level &3:"
 msgstr "Ниво &3:"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 383
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 389
 #. i18n: tag string
 #. i18n: file ./common-dialogs/blockoptionsbase.ui line 31
 #. i18n: tag string
 #. i18n: file ./query-dialogs/AdjQueryDlgForm.ui line 71
-#: rc.cpp:282 rc.cpp:510 rc.cpp:1002
+#: rc.cpp:282 rc.cpp:510 rc.cpp:999
 msgid "Level &2:"
 msgstr "Ниво &2:"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 401
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 405
 #. i18n: tag string
 #. i18n: file ./common-dialogs/blockoptionsbase.ui line 147
 #. i18n: tag string
 #. i18n: file ./query-dialogs/AdjQueryDlgForm.ui line 51
-#: rc.cpp:285 rc.cpp:531 rc.cpp:996
+#: rc.cpp:285 rc.cpp:531 rc.cpp:993
 msgid "Level &1:"
 msgstr "Ниво &1:"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 419
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 421
 #: rc.cpp:288
 #, fuzzy
 msgid "Not &queried:"
 msgstr "&Не е барано:"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 429
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 431
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 432
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 434
 #: rc.cpp:291 rc.cpp:294
 msgid ""
 "If it is unchecked, you will just have black on white for the grades; if it "
@@ -1318,70 +1328,70 @@ msgid ""
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 435
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 437
 #: rc.cpp:297
 msgid "&Use colors"
 msgstr "&Користи бои"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 445
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 447
 #: rc.cpp:300
 msgid "Column Resizing"
 msgstr "Сменувам големина на колона"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 470
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 484
 #: rc.cpp:303
 msgid "There is no resizing of the columns"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 473
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 487
 #: rc.cpp:306
 msgid "When checked, the columns are not resized"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 476
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 490
 #: rc.cpp:309
 msgid "&Fixed"
 msgstr "&Фиксен"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 483
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 497
 #: rc.cpp:312
 msgid "The columns resize using the same factor that the window is resized to."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 486
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 500
 #: rc.cpp:315
 msgid "If this is checked, the columns resize by the same amount as the window"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 489
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 503
 #: rc.cpp:318
 msgid "P&ercentage"
 msgstr "Про&центи"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 496
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 510
 #: rc.cpp:321
-msgid "KVocTrain determines the resizing of the columns"
+msgid "Automatically resize the columns"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 499
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 513
 #: rc.cpp:324
 msgid ""
-"KVocTrain makes each column the same width except the leftmost with the "
-"lesson names, which is half the size of the others. The second column, which "
+"Parley makes each column the same width except the leftmost with the lesson "
+"names, which is half the size of the others. The second column, which "
 "contains the picture that describes the state of the row, has a fixed width."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/viewoptionsbase.ui line 502
+#. i18n: file ./common-dialogs/viewoptionsbase.ui line 516
 #: rc.cpp:327
 msgid "A&utomatic"
 msgstr "А&втоматски"
@@ -1466,15 +1476,13 @@ msgstr "При&кажи преостанато време"
 #. i18n: tag string
 #. i18n: file ./common-dialogs/queryoptionsbase.ui line 183
 #: rc.cpp:366
-msgid "Set the maximum time allowed per query."
+msgid "Set the maximum time allowed per answer."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./common-dialogs/queryoptionsbase.ui line 186
 #: rc.cpp:369
-msgid ""
-"You may set a time limit KVocTrain grants you to remember the correct "
-"answer. Set here the maximum time you want to allow per query."
+msgid "Set here the maximum time you want to allow per answer."
 msgstr ""
 
 #. i18n: tag string
@@ -1786,92 +1794,8 @@ msgid "Bl&ocking"
 msgstr "Б&локирање"
 
 #. i18n: tag string
-#. i18n: file ./common-dialogs/languageoptionsbase.ui line 34
-#: rc.cpp:537
-msgid "Available Languages"
-msgstr "Достапни јазици"
-
-#. i18n: tag string
-#. i18n: file ./common-dialogs/languageoptionsbase.ui line 58
-#: rc.cpp:540
-msgid "Select a language or use the Add New Language Code to add one."
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./common-dialogs/languageoptionsbase.ui line 61
-#: rc.cpp:543
-msgid ""
-"You can select a language with the drop down box or use the Add New Language "
-"Code dialog below to add one."
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./common-dialogs/languageoptionsbase.ui line 68
-#: rc.cpp:546
-msgid "Select a language or use the Add New Language or Identifier to add one."
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./common-dialogs/languageoptionsbase.ui line 71
-#: rc.cpp:549
-msgid ""
-"You can select a language with the drop down box or use the Add New Language "
-"or Identifier functions below to add one."
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./common-dialogs/languageoptionsbase.ui line 84
-#. i18n: tag string
-#. i18n: file ./common-dialogs/languageoptionsbase.ui line 119
-#: rc.cpp:552 rc.cpp:570
-msgid "You can assign a language to each column"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./common-dialogs/languageoptionsbase.ui line 87
-#. i18n: tag string
-#. i18n: file ./common-dialogs/languageoptionsbase.ui line 122
-#: rc.cpp:555 rc.cpp:573
-msgid ""
-"Each column can be assigned a language. This is internally done with the "
-"usual international language codes."
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./common-dialogs/languageoptionsbase.ui line 90
-#: rc.cpp:558
-msgid "Language c&ode:"
-msgstr "&Код на јазикот:"
-
-#. i18n: tag string
-#. i18n: file ./common-dialogs/languageoptionsbase.ui line 100
-#: rc.cpp:561
-msgid "Set a picture for the language"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./common-dialogs/languageoptionsbase.ui line 103
-#: rc.cpp:564
-msgid "Choose a picture to represent the language above."
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./common-dialogs/languageoptionsbase.ui line 106
-#: rc.cpp:567
-msgid "&Picture:"
-msgstr "&Слика:"
-
-#. i18n: tag string
-#. i18n: file ./common-dialogs/languageoptionsbase.ui line 125
-#. i18n: tag string
-#. i18n: file ./language-dialogs/languagepage.ui line 52
-#: rc.cpp:576 rc.cpp:645
-msgid "Keyboard layout:"
-msgstr ""
-
-#. i18n: tag string
 #. i18n: file ./common-dialogs/generaloptionsbase.ui line 51
-#: rc.cpp:579
+#: rc.cpp:537
 msgid "Open/Save"
 msgstr ""
 
@@ -1879,7 +1803,7 @@ msgstr ""
 #. i18n: file ./common-dialogs/generaloptionsbase.ui line 75
 #. i18n: tag string
 #. i18n: file ./common-dialogs/generaloptionsbase.ui line 117
-#: rc.cpp:582 rc.cpp:591
+#: rc.cpp:540 rc.cpp:549
 msgid "Allow automatic saving of your work"
 msgstr ""
 
@@ -1887,34 +1811,34 @@ msgstr ""
 #. i18n: file ./common-dialogs/generaloptionsbase.ui line 78
 #. i18n: tag string
 #. i18n: file ./common-dialogs/generaloptionsbase.ui line 120
-#: rc.cpp:585 rc.cpp:594
+#: rc.cpp:543 rc.cpp:552
 msgid "Your work will be automatically saved if you check this option"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./common-dialogs/generaloptionsbase.ui line 81
-#: rc.cpp:588
+#: rc.cpp:546
 #, fuzzy
 msgid "&Save vocabularies automatically on close and quit"
 msgstr "&Зачувај ги опциите автоматски "
 
 #. i18n: tag string
 #. i18n: file ./common-dialogs/generaloptionsbase.ui line 123
-#: rc.cpp:597
+#: rc.cpp:555
 #, fuzzy
 msgid "&Create a backup every"
 msgstr "Креирај случајно &барање"
 
 #. i18n: tag string
 #. i18n: file ./common-dialogs/generaloptionsbase.ui line 130
-#: rc.cpp:600
+#: rc.cpp:558
 #, fuzzy
 msgid "Sep&arator:"
 msgstr "Раз&делувач:"
 
 #. i18n: tag string
 #. i18n: file ./common-dialogs/generaloptionsbase.ui line 146
-#: rc.cpp:603
+#: rc.cpp:561
 msgid ""
 "Choose which separator you want to use to separate your data when importing "
 "and exporting text."
@@ -1922,7 +1846,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./common-dialogs/generaloptionsbase.ui line 149
-#: rc.cpp:606
+#: rc.cpp:564
 msgid ""
 "Choose the separator to use to divide the parts of an expression when "
 "importing or exporting data as text."
@@ -1930,26 +1854,26 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./common-dialogs/generaloptionsbase.ui line 159
-#: rc.cpp:609
+#: rc.cpp:567
 msgid "minutes"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./common-dialogs/generaloptionsbase.ui line 172
-#: rc.cpp:612
+#: rc.cpp:570
 #, fuzzy
 msgid "Editing"
 msgstr "&Истекување"
 
 #. i18n: tag string
 #. i18n: file ./common-dialogs/generaloptionsbase.ui line 196
-#: rc.cpp:615
+#: rc.cpp:573
 msgid "Your changes will be applied automatically."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./common-dialogs/generaloptionsbase.ui line 199
-#: rc.cpp:618
+#: rc.cpp:576
 msgid ""
 "If checked, you will not be asked if you really want this change; it will be "
 "applied automatically."
@@ -1957,20 +1881,20 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./common-dialogs/generaloptionsbase.ui line 202
-#: rc.cpp:621
+#: rc.cpp:579
 #, fuzzy
 msgid "Appl&y changes without asking"
 msgstr "Примени ги промените бе&з прашање"
 
 #. i18n: tag string
 #. i18n: file ./common-dialogs/generaloptionsbase.ui line 209
-#: rc.cpp:624
+#: rc.cpp:582
 msgid "If checked, the entry dialog will popup repeatedly"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./common-dialogs/generaloptionsbase.ui line 212
-#: rc.cpp:627
+#: rc.cpp:585
 msgid ""
 "If this feature is activated, you will repeatedly be prompted with the entry "
 "dialog. After entering the first original you have to enter the "
@@ -1980,7 +1904,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./common-dialogs/generaloptionsbase.ui line 215
-#: rc.cpp:630
+#: rc.cpp:588
 msgid "Smart a&ppending"
 msgstr "Паметно при&појување"
 
@@ -1992,20 +1916,22 @@ msgstr "Паметно при&појување"
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 13
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/wizardfinalpage.ui line 13
-#: rc.cpp:633 rc.cpp:834 rc.cpp:846 rc.cpp:867
+#. i18n: tag string
+#. i18n: file ./query-dialogs/startpracticewidget.ui line 13
+#: rc.cpp:591 rc.cpp:792 rc.cpp:804 rc.cpp:825 rc.cpp:834
 msgid "Form"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./language-dialogs/languagepage.ui line 19
-#: rc.cpp:636
+#: rc.cpp:594
 #, fuzzy
 msgid "Language:"
 msgstr "Ја&зик"
 
 #. i18n: tag string
 #. i18n: file ./language-dialogs/languagepage.ui line 29
-#: rc.cpp:639
+#: rc.cpp:597
 #, fuzzy
 #| msgid "N&ame:"
 msgid "Name:"
@@ -2013,91 +1939,97 @@ msgstr "&Име:"
 
 #. i18n: tag string
 #. i18n: file ./language-dialogs/languagepage.ui line 42
-#: rc.cpp:642
+#: rc.cpp:600
 msgid "Flag:"
 msgstr ""
 
 #. i18n: tag string
+#. i18n: file ./language-dialogs/languagepage.ui line 52
+#: rc.cpp:603
+msgid "Keyboard layout:"
+msgstr ""
+
+#. i18n: tag string
 #. i18n: file ./entry-dialogs/AuxInfoEntryPageForm.ui line 55
-#: rc.cpp:651
+#: rc.cpp:609
 msgid "Additional Properties"
 msgstr "Дополнителни својства"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/AuxInfoEntryPageForm.ui line 136
-#: rc.cpp:654
+#: rc.cpp:612
 msgid "S&ynonyms:"
 msgstr "С&иноними:"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/AuxInfoEntryPageForm.ui line 146
-#: rc.cpp:657
+#: rc.cpp:615
 msgid "Ant&onyms:"
 msgstr "А&нтоними:"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/AuxInfoEntryPageForm.ui line 156
-#: rc.cpp:660
+#: rc.cpp:618
 msgid "E&xample:"
 msgstr "П&ример:"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/AuxInfoEntryPageForm.ui line 176
-#: rc.cpp:666
+#: rc.cpp:624
 msgid "&Paraphrase:"
 msgstr "Пара&фраза:"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 56
-#: rc.cpp:672
+#: rc.cpp:630
 msgid "Comparison of Adjectives"
 msgstr "Споредба на придавки"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 96
-#: rc.cpp:675
+#: rc.cpp:633
 msgid "The superlative (fastest)"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 99
-#: rc.cpp:678
+#: rc.cpp:636
 msgid "&3. Superlative:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 125
-#: rc.cpp:681
+#: rc.cpp:639
 msgid "The comparative is used to compare nouns or verbs (faster)"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 128
-#: rc.cpp:684
+#: rc.cpp:642
 msgid "&2. Comparative:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 144
-#: rc.cpp:687
+#: rc.cpp:645
 msgid "The base for of the adjectiv or adverb (fast)"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/AdjEntryPageForm.ui line 147
-#: rc.cpp:690
+#: rc.cpp:648
 msgid "&1. Absolute:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 45
-#: rc.cpp:696
+#: rc.cpp:654
 msgid "Properties From Original"
 msgstr "Својства од оригиналот"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 93
-#: rc.cpp:699
+#: rc.cpp:657
 msgid "&Grade:"
 msgstr "&Степен:"
 
@@ -2105,94 +2037,94 @@ msgstr "&Степен:"
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 115
 #. i18n: tag string
 #. i18n: file ./query-dialogs/RandomQueryDlgForm.ui line 142
-#: rc.cpp:702 rc.cpp:897
+#: rc.cpp:660 rc.cpp:894
 msgid "&False friend:"
 msgstr "Ла&жен пријател:"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 127
-#: rc.cpp:705
+#: rc.cpp:663
 #, fuzzy
 msgid "Query Counts"
 msgstr "Бројачи на пребарувања"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 159
-#: rc.cpp:708
+#: rc.cpp:666
 msgid "&Wrong:"
 msgstr "&Погрешно:"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 169
-#: rc.cpp:711
+#: rc.cpp:669
 #, fuzzy
 msgid "Tot&al:"
 msgstr "&Машки:"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 182
-#: rc.cpp:714
+#: rc.cpp:672
 msgid "Last Query &Date"
 msgstr "&Дата на последно пребарување"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 194
-#: rc.cpp:717
+#: rc.cpp:675
 msgid "&Never"
 msgstr "&Никогаш"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 201
-#: rc.cpp:720
+#: rc.cpp:678
 msgid "T&oday"
 msgstr "&Денес"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 216
-#: rc.cpp:723
+#: rc.cpp:681
 msgid "The date this expression was last queried"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/FromToEntryPageForm.ui line 219
-#: rc.cpp:726
+#: rc.cpp:684
 #, fuzzy
 msgid "Not Queried Yet"
 msgstr "Не е барано"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 59
-#: rc.cpp:732
+#: rc.cpp:690
 msgid "Common Properties"
 msgstr "Чести својства"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 91
-#: rc.cpp:735
+#: rc.cpp:693
 msgid "&Pronunciation:"
 msgstr "Из&говарање:"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 101
-#: rc.cpp:738
+#: rc.cpp:696
 msgid "&Lesson:"
 msgstr "&Лекција:"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 129
-#: rc.cpp:741
+#: rc.cpp:699
 msgid "Invokes dialog page with characters from phonetic alphabet"
 msgstr "Ја повикува страницата на дијалогот за знаци од фонетската азбука"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 142
-#: rc.cpp:744
+#: rc.cpp:702
 msgid "&Expression:"
 msgstr "&Израз:"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 152
-#: rc.cpp:747
+#: rc.cpp:705
 #, fuzzy
 #| msgid "Author:"
 msgid "Audio:"
@@ -2200,7 +2132,7 @@ msgstr "Автор:"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 159
-#: rc.cpp:750
+#: rc.cpp:708
 #, fuzzy
 #| msgid "Malay"
 msgid "Play"
@@ -2208,61 +2140,61 @@ msgstr "Малајски"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 177
-#: rc.cpp:753
+#: rc.cpp:711
 msgid "T&ype"
 msgstr "Ти&п"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 244
-#: rc.cpp:756
+#: rc.cpp:714
 msgid "&Subtype:"
 msgstr "По&дтип:"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 282
-#: rc.cpp:759
+#: rc.cpp:717
 msgid "Invokes input dialog for word types"
 msgstr "Го повикува влезниот дијалог за типови на зборови"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 405
-#: rc.cpp:765
+#: rc.cpp:723
 msgid "Invokes input dialog for usage labels"
 msgstr "Го повикува влезниот дијалог за називите за користење"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/CommonEntryPageForm.ui line 431
-#: rc.cpp:768
+#: rc.cpp:726
 msgid "Acti&ve"
 msgstr "А&ктивен"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 56
-#: rc.cpp:774
+#: rc.cpp:732
 msgid "Conjugation of Verbs"
 msgstr "Конјугација на глаголи"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 197
-#: rc.cpp:792
+#: rc.cpp:750
 msgid "&3. Person:"
 msgstr "&3. Личност:"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 338
-#: rc.cpp:807
+#: rc.cpp:765
 msgid "&Tense:"
 msgstr "&Време:"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/TenseEntryPageForm.ui line 354
-#: rc.cpp:810
+#: rc.cpp:768
 msgid "Ne&xt"
 msgstr "&Следен"
 
 #. i18n: tag string
 #. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 47
-#: rc.cpp:816
+#: rc.cpp:774
 msgid "Suggestions for Multiple Choice"
 msgstr "Предлози за повеќекратен избор"
 
@@ -2270,7 +2202,7 @@ msgstr "Предлози за повеќекратен избор"
 #. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 67
 #. i18n: tag string
 #. i18n: file ./query-dialogs/MCQueryDlgForm.ui line 138
-#: rc.cpp:819 rc.cpp:1092
+#: rc.cpp:777 rc.cpp:1089
 msgid "&1:"
 msgstr "&1:"
 
@@ -2278,7 +2210,7 @@ msgstr "&1:"
 #. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 85
 #. i18n: tag string
 #. i18n: file ./query-dialogs/MCQueryDlgForm.ui line 116
-#: rc.cpp:822 rc.cpp:1086
+#: rc.cpp:780 rc.cpp:1083
 msgid "&2:"
 msgstr "&2:"
 
@@ -2286,7 +2218,7 @@ msgstr "&2:"
 #. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 103
 #. i18n: tag string
 #. i18n: file ./query-dialogs/MCQueryDlgForm.ui line 94
-#: rc.cpp:825 rc.cpp:1080
+#: rc.cpp:783 rc.cpp:1077
 msgid "&3:"
 msgstr "&3:"
 
@@ -2294,7 +2226,7 @@ msgstr "&3:"
 #. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 181
 #. i18n: tag string
 #. i18n: file ./query-dialogs/MCQueryDlgForm.ui line 72
-#: rc.cpp:828 rc.cpp:1074
+#: rc.cpp:786 rc.cpp:1071
 msgid "&4:"
 msgstr "&4:"
 
@@ -2302,13 +2234,13 @@ msgstr "&4:"
 #. i18n: file ./entry-dialogs/MCEntryPageForm.ui line 199
 #. i18n: tag string
 #. i18n: file ./query-dialogs/MCQueryDlgForm.ui line 50
-#: rc.cpp:831 rc.cpp:1068
+#: rc.cpp:789 rc.cpp:1065
 msgid "&5:"
 msgstr "&5:"
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/identifierlanguagepage.ui line 19
-#: rc.cpp:837
+#: rc.cpp:795
 #, fuzzy
 #| msgid "&Append Language"
 msgid "Please select a language:"
@@ -2318,7 +2250,7 @@ msgstr "&Додај јазик"
 #. i18n: file ./newdocument-wizard/identifierlanguagepage.ui line 29
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/GenStatPageForm.ui line 41
-#: rc.cpp:840 rc.cpp:1161
+#: rc.cpp:798 rc.cpp:1158
 msgid "Title:"
 msgstr "Наслов:"
 
@@ -2326,7 +2258,7 @@ msgstr "Наслов:"
 #. i18n: file ./newdocument-wizard/identifierlanguagepage.ui line 39
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 82
-#: rc.cpp:843 rc.cpp:864
+#: rc.cpp:801 rc.cpp:822
 msgid ""
 "This does not have to be a language. Anything goes: Definition, Chinese "
 "simplified or anything else you want to learn."
@@ -2334,32 +2266,32 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 19
-#: rc.cpp:849
+#: rc.cpp:807
 msgid "So far your document contains:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 29
-#: rc.cpp:852
+#: rc.cpp:810
 msgid "To change the first selection go back one page."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 55
-#: rc.cpp:855
+#: rc.cpp:813
 msgid "Please select a second language (can be the same as before):"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 65
-#: rc.cpp:858
+#: rc.cpp:816
 #, fuzzy
 msgid "The language of the second column of vocabulary."
 msgstr "Додава нов елемент во речникот"
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/secondidentifierlanguagepage.ui line 72
-#: rc.cpp:861
+#: rc.cpp:819
 #, fuzzy
 #| msgid "&Append Language"
 msgid "Second title:"
@@ -2367,39 +2299,115 @@ msgstr "&Додај јазик"
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/wizardfinalpage.ui line 19
-#: rc.cpp:870
-msgid "Enjoy learning with KVocTrain."
+#: rc.cpp:828
+msgid "Enjoy learning with Parley."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./newdocument-wizard/wizardfinalpage.ui line 42
-#: rc.cpp:873
+#: rc.cpp:831
+msgid "The Parley Team"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./query-dialogs/startpracticewidget.ui line 19
+#: rc.cpp:837
+msgid "Type of Test"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./query-dialogs/startpracticewidget.ui line 25
+#: rc.cpp:840
+msgid "Written"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./query-dialogs/startpracticewidget.ui line 35
+#: rc.cpp:843
 #, fuzzy
-#| msgid "KVocTrain"
-msgid "The KVocTrain team"
-msgstr "KVocTrain"
+#| msgid "Conjugation"
+msgid "Conjugations"
+msgstr "Конјугација"
+
+#. i18n: tag string
+#. i18n: file ./query-dialogs/startpracticewidget.ui line 42
+#: rc.cpp:846
+#, fuzzy
+#| msgid "S&ynonyms"
+msgid "Synonym"
+msgstr "&Синоними"
+
+#. i18n: tag string
+#. i18n: file ./query-dialogs/startpracticewidget.ui line 49
+#: rc.cpp:849 entry-dialogs/EntryDlg.cpp:67 query-dialogs/MCQueryDlg.cpp:45
+msgid "Multiple Choice"
+msgstr "Повеќекратен избор"
+
+#. i18n: tag string
+#. i18n: file ./query-dialogs/startpracticewidget.ui line 63
+#: rc.cpp:855
+#, fuzzy
+#| msgid "A&ntonyms"
+msgid "Antonym"
+msgstr "&Антоними"
+
+#. i18n: tag string
+#. i18n: file ./query-dialogs/startpracticewidget.ui line 70
+#: rc.cpp:858
+#, fuzzy
+#| msgid "&Comparison Forms"
+msgid "Comparison Forms"
+msgstr "Форми за &споредба"
+
+#. i18n: tag string
+#. i18n: file ./query-dialogs/startpracticewidget.ui line 77
+#: rc.cpp:861 query-dialogs/SimpleQueryDlg.cpp:118
+msgid "Paraphrase"
+msgstr "Парафраза"
+
+#. i18n: tag string
+#. i18n: file ./query-dialogs/startpracticewidget.ui line 84
+#: rc.cpp:864
+#, fuzzy
+#| msgid "E&xamples"
+msgid "Examples"
+msgstr "П&римери"
+
+#. i18n: tag string
+#. i18n: file ./query-dialogs/startpracticewidget.ui line 96
+#: rc.cpp:867
+#, fuzzy
+msgid "From:"
+msgstr "од %1"
+
+#. i18n: tag string
+#. i18n: file ./query-dialogs/startpracticewidget.ui line 103
+#: rc.cpp:870
+#, fuzzy
+msgid "To:"
+msgstr "&Машки:"
 
 #. i18n: tag string
 #. i18n: file ./query-dialogs/RandomQueryDlgForm.ui line 52
-#: rc.cpp:876
+#: rc.cpp:873
 msgid "Enter the correct translation:"
 msgstr "Внеси го точниот превод:"
 
 #. i18n: tag string
 #. i18n: file ./query-dialogs/RandomQueryDlgForm.ui line 65
-#: rc.cpp:879
+#: rc.cpp:876
 msgid "Original Expression"
 msgstr "Оригинал израз"
 
 #. i18n: tag string
 #. i18n: file ./query-dialogs/RandomQueryDlgForm.ui line 128
-#: rc.cpp:891
+#: rc.cpp:888
 msgid "&Remark:"
 msgstr "&Напомена:"
 
 #. i18n: tag string
 #. i18n: file ./query-dialogs/RandomQueryDlgForm.ui line 135
-#: rc.cpp:894
+#: rc.cpp:891
 msgid "T&ype:"
 msgstr "Т&ип:"
 
@@ -2415,7 +2423,7 @@ msgstr "Т&ип:"
 #. i18n: file ./query-dialogs/MCQueryDlgForm.ui line 223
 #. i18n: tag string
 #. i18n: file ./query-dialogs/SimpleQueryDlgForm.ui line 315
-#: rc.cpp:900 rc.cpp:972 rc.cpp:1005 rc.cpp:1050 rc.cpp:1104 rc.cpp:1152
+#: rc.cpp:897 rc.cpp:969 rc.cpp:1002 rc.cpp:1047 rc.cpp:1101 rc.cpp:1149
 msgid "&Verify"
 msgstr "&Провери"
 
@@ -2423,7 +2431,7 @@ msgstr "&Провери"
 #. i18n: file ./query-dialogs/RandomQueryDlgForm.ui line 281
 #. i18n: tag string
 #. i18n: file ./query-dialogs/SimpleQueryDlgForm.ui line 300
-#: rc.cpp:903 rc.cpp:1149
+#: rc.cpp:900 rc.cpp:1146
 msgid "Show &More"
 msgstr "Прикажи пове&ќе"
 
@@ -2439,7 +2447,7 @@ msgstr "Прикажи пове&ќе"
 #. i18n: file ./query-dialogs/MCQueryDlgForm.ui line 187
 #. i18n: tag string
 #. i18n: file ./query-dialogs/SimpleQueryDlgForm.ui line 285
-#: rc.cpp:906 rc.cpp:975 rc.cpp:1011 rc.cpp:1056 rc.cpp:1098 rc.cpp:1146
+#: rc.cpp:903 rc.cpp:972 rc.cpp:1008 rc.cpp:1053 rc.cpp:1095 rc.cpp:1143
 msgid "Show &All"
 msgstr "Покажи ги &сите"
 
@@ -2453,7 +2461,7 @@ msgstr "Покажи ги &сите"
 #. i18n: file ./query-dialogs/ArtQueryDlgForm.ui line 236
 #. i18n: tag string
 #. i18n: file ./query-dialogs/MCQueryDlgForm.ui line 172
-#: rc.cpp:909 rc.cpp:978 rc.cpp:1014 rc.cpp:1059 rc.cpp:1095
+#: rc.cpp:906 rc.cpp:975 rc.cpp:1011 rc.cpp:1056 rc.cpp:1092
 #, fuzzy
 msgid "&Do Not Know"
 msgstr "&Не го знам"
@@ -2470,7 +2478,7 @@ msgstr "&Не го знам"
 #. i18n: file ./query-dialogs/MCQueryDlgForm.ui line 202
 #. i18n: tag string
 #. i18n: file ./query-dialogs/SimpleQueryDlgForm.ui line 255
-#: rc.cpp:912 rc.cpp:969 rc.cpp:1008 rc.cpp:1053 rc.cpp:1101 rc.cpp:1140
+#: rc.cpp:909 rc.cpp:966 rc.cpp:1005 rc.cpp:1050 rc.cpp:1098 rc.cpp:1137
 msgid "I &Know It"
 msgstr "Го &знам"
 
@@ -2486,7 +2494,7 @@ msgstr "Го &знам"
 #. i18n: file ./query-dialogs/MCQueryDlgForm.ui line 240
 #. i18n: tag string
 #. i18n: file ./query-dialogs/SimpleQueryDlgForm.ui line 157
-#: rc.cpp:915 rc.cpp:981 rc.cpp:1017 rc.cpp:1038 rc.cpp:1107 rc.cpp:1128
+#: rc.cpp:912 rc.cpp:978 rc.cpp:1014 rc.cpp:1035 rc.cpp:1104 rc.cpp:1125
 msgid "Progress"
 msgstr "Напредок"
 
@@ -2502,7 +2510,7 @@ msgstr "Напредок"
 #. i18n: file ./query-dialogs/MCQueryDlgForm.ui line 289
 #. i18n: tag string
 #. i18n: file ./query-dialogs/SimpleQueryDlgForm.ui line 207
-#: rc.cpp:918 rc.cpp:987 rc.cpp:1023 rc.cpp:1044 rc.cpp:1113 rc.cpp:1134
+#: rc.cpp:915 rc.cpp:984 rc.cpp:1020 rc.cpp:1041 rc.cpp:1110 rc.cpp:1131
 msgid "Time:"
 msgstr "Време:"
 
@@ -2518,7 +2526,7 @@ msgstr "Време:"
 #. i18n: file ./query-dialogs/MCQueryDlgForm.ui line 274
 #. i18n: tag string
 #. i18n: file ./query-dialogs/SimpleQueryDlgForm.ui line 192
-#: rc.cpp:921 rc.cpp:984 rc.cpp:1020 rc.cpp:1041 rc.cpp:1110 rc.cpp:1131
+#: rc.cpp:918 rc.cpp:981 rc.cpp:1017 rc.cpp:1038 rc.cpp:1107 rc.cpp:1128
 msgid "Count:"
 msgstr "Број:"
 
@@ -2534,132 +2542,132 @@ msgstr "Број:"
 #. i18n: file ./query-dialogs/MCQueryDlgForm.ui line 299
 #. i18n: tag string
 #. i18n: file ./query-dialogs/SimpleQueryDlgForm.ui line 217
-#: rc.cpp:924 rc.cpp:990 rc.cpp:1026 rc.cpp:1047 rc.cpp:1116 rc.cpp:1137
+#: rc.cpp:921 rc.cpp:987 rc.cpp:1023 rc.cpp:1044 rc.cpp:1113 rc.cpp:1134
 msgid "Cycle:"
 msgstr "Циклус:"
 
 #. i18n: tag string
 #. i18n: file ./query-dialogs/VerbQueryDlgForm.ui line 63
-#: rc.cpp:927
+#: rc.cpp:924
 msgid "Enter the correct conjugation forms."
 msgstr "Внесете ги точните форми на конјугација."
 
 #. i18n: tag string
 #. i18n: file ./query-dialogs/VerbQueryDlgForm.ui line 87
-#: rc.cpp:930
+#: rc.cpp:927
 #, qt-format
 msgid "Current tense is %1."
 msgstr "Тековното време е %1."
 
 #. i18n: tag string
 #. i18n: file ./query-dialogs/VerbQueryDlgForm.ui line 312
-#: rc.cpp:963
+#: rc.cpp:960
 msgid "Base form:"
 msgstr "Основна форма:"
 
 #. i18n: tag string
 #. i18n: file ./query-dialogs/AdjQueryDlgForm.ui line 44
-#: rc.cpp:993
+#: rc.cpp:990
 msgid "Fill in the missing comparison expressions:"
 msgstr "Пополни ги споредбените изрази кои недостасуваат:"
 
 #. i18n: tag string
 #. i18n: file ./query-dialogs/ArtQueryDlgForm.ui line 43
-#: rc.cpp:1029
+#: rc.cpp:1026
 msgid "&male"
 msgstr "&машки"
 
 #. i18n: tag string
 #. i18n: file ./query-dialogs/ArtQueryDlgForm.ui line 50
-#: rc.cpp:1032
+#: rc.cpp:1029
 msgid "&female"
 msgstr "&женски"
 
 #. i18n: tag string
 #. i18n: file ./query-dialogs/ArtQueryDlgForm.ui line 57
-#: rc.cpp:1035
+#: rc.cpp:1032
 msgid "&neutral"
 msgstr "&неутрален"
 
 #. i18n: tag string
 #. i18n: file ./query-dialogs/ArtQueryDlgForm.ui line 297
-#: rc.cpp:1062
+#: rc.cpp:1059
 msgid "Select the correct article for this noun:"
 msgstr "Избери го точниот член од оваа именка:"
 
 #. i18n: tag string
 #. i18n: file ./query-dialogs/MCQueryDlgForm.ui line 373
-#: rc.cpp:1119
+#: rc.cpp:1116
 msgid "Select the correct translation:"
 msgstr "Избери го точниот превод:"
 
 #. i18n: tag string
 #. i18n: file ./query-dialogs/SimpleQueryDlgForm.ui line 270
-#: rc.cpp:1143
+#: rc.cpp:1140
 #, fuzzy
 msgid "Do &Not Know"
 msgstr "&Не го знам"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/GenStatPageForm.ui line 34
-#: rc.cpp:1158
+#: rc.cpp:1155
 msgid "Filename:"
 msgstr "Име на датотека:"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/GenStatPageForm.ui line 48
-#: rc.cpp:1164
+#: rc.cpp:1161
 msgid "Entries:"
 msgstr "Ставки:"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/GenStatPageForm.ui line 55
-#: rc.cpp:1167
+#: rc.cpp:1164
 msgid "Author:"
 msgstr "Автор:"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/GenStatPageForm.ui line 62
-#: rc.cpp:1170
+#: rc.cpp:1167
 msgid "Lessons:"
 msgstr "Лекции:"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 57
-#: rc.cpp:1176
+#: rc.cpp:1173
 msgid "Grade FROM"
 msgstr "Степен ОД"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 62
-#: rc.cpp:1179
+#: rc.cpp:1176
 msgid "Grade TO"
 msgstr "Степен ЗА"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 67
-#: rc.cpp:1182
+#: rc.cpp:1179
 msgid "Entries"
 msgstr "Елементи"
 
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 77
-#: rc.cpp:1188
+#: rc.cpp:1185
 #, fuzzy
 msgid "Reset"
 msgstr "&Ресетирај"
 
-#: kvoctrain.cpp:267
+#: kvoctrain.cpp:268
 #, fuzzy
 msgid "Do you really want to delete the selected entry?"
 msgstr "Дали навистина сакате да го избришете избраниот елемент?\n"
 
-#: kvoctrain.cpp:274
+#: kvoctrain.cpp:275
 #, fuzzy
 msgid "Do you really want to delete the selected entries?"
 msgstr "Дали навистина сакате да го избришете избраниот елемент?\n"
 
-#: kvoctrain.cpp:402
+#: kvoctrain.cpp:403
 #, fuzzy, qt-format
 msgid "1 entry with the same content was found and removed."
 msgid_plural "%1 entries with the same content were found and removed."
@@ -2667,139 +2675,44 @@ msgstr[0] "%1 елемент со иста содржина беше најде�
 msgstr[1] "%1 елементи со иста содржина беа најдени и отстранети."
 msgstr[2] "%1 елементи со иста содржина беа најдени и отстранети."
 
-#: kvoctrain.cpp:405
+#: kvoctrain.cpp:406
 #, fuzzy
 msgid "Remove Duplicates"
 msgstr "&Отстрани јазик"
 
-#: kvoctrain.cpp:483 kvoctrain.cpp:501
-msgid "Create Written Test"
-msgstr ""
-
-#: kvoctrain.cpp:485 kvoctrain.cpp:494
-#, fuzzy, qt-format
-msgid "From %1"
-msgstr "од %1"
-
-#: kvoctrain.cpp:486
-#, fuzzy, qt-format
-#| msgid "Creates and starts query from %1 to %2"
-msgid "Creates and starts test from %1 to %2"
-msgstr "Создава и отпочнува пребарување од %1 во %2"
-
-#: kvoctrain.cpp:492 kvoctrain.cpp:507
-#, fuzzy
-#| msgid "Create &Multiple Choice"
-msgid "Create &Multiple Choice Test"
-msgstr "Креирај пове&ќекратен избор"
-
-#: kvoctrain.cpp:495
-#, qt-format
-msgid "Creates and starts multiple choice from %1 to %2"
-msgstr "Создава и отпочнува повеќекратен избор од %1 во %2"
-
-#: kvoctrain.cpp:502
-#, fuzzy, qt-format
-#| msgid "Creates and starts query from %1 to %2"
-msgid "Creates and starts practice from %1 to %2"
-msgstr "Создава и отпочнува пребарување од %1 во %2"
-
-#: kvoctrain.cpp:508
-#, fuzzy, qt-format
-#| msgid "Creates and starts multiple choice from %1 to %2"
-msgid "Creates and starts multiple choice test from %1 to %2"
-msgstr "Создава и отпочнува повеќекратен избор од %1 во %2"
-
-#: kvoctrain.cpp:517
-msgid "&Verbs"
-msgstr "&Глаголи"
-
-#: kvoctrain.cpp:518
-msgid "Starts training with verbs"
-msgstr "Отпочнува вежбање со глаголи"
-
-#: kvoctrain.cpp:523
-msgid "&Articles"
-msgstr "&Членови"
-
-#: kvoctrain.cpp:524
-msgid "Starts training with articles"
-msgstr "Отпочнува вежбање со членови"
-
-#: kvoctrain.cpp:529
-#, fuzzy
-msgid "&Comparisons"
-msgstr "С&поредба"
-
-#: kvoctrain.cpp:530
-msgid "Starts training with adjectives"
-msgstr "Отпочнува вежбање со придавки"
-
-#: kvoctrain.cpp:537
-msgid "S&ynonyms"
-msgstr "&Синоними"
-
-#: kvoctrain.cpp:538
-msgid "Starts training with synonyms"
-msgstr "Отпочнува вежбање со синоними"
-
-#: kvoctrain.cpp:543
-msgid "A&ntonyms"
-msgstr "&Антоними"
-
-#: kvoctrain.cpp:544
-msgid "Starts training with antonyms"
-msgstr "Отпочнува вежбање со антоними"
-
-#: kvoctrain.cpp:549
-msgid "E&xamples"
-msgstr "П&римери"
-
-#: kvoctrain.cpp:550
-msgid "Starts training with examples"
-msgstr "Отпочнува вежбање со примери"
-
-#: kvoctrain.cpp:555
-msgid "&Paraphrase"
-msgstr "&Парафрази"
-
-#: kvoctrain.cpp:556
-msgid "Starts training with paraphrases"
-msgstr "Отпочнува вежбање со парафрази"
-
-#: kvoctrain.cpp:582
+#: kvoctrain.cpp:452
 msgid "Printing..."
 msgstr ""
 
-#: kvoctrain.cpp:587
+#: kvoctrain.cpp:457
 msgid "Ready"
 msgstr ""
 
-#: kvoctrain.cpp:593
+#: kvoctrain.cpp:467
 msgid "Copying selection to clipboard..."
 msgstr "Го копирам избраното во табла со исечоци..."
 
-#: kvoctrain.cpp:626
+#: kvoctrain.cpp:500
 msgid "Inserting clipboard contents..."
 msgstr "Ја вметнувам содржината на таблата со исечоци..."
 
-#: kvoctrain.cpp:684
+#: kvoctrain.cpp:558
 #, qt-format
 msgid "Comment: %1"
 msgstr ""
 
-#: kvoctrain.cpp:686
+#: kvoctrain.cpp:560
 #, fuzzy, qt-format
 #| msgid "&Pronunciation:"
 msgid "Pronunciation: %1"
 msgstr "Из&говарање:"
 
-#: kvoctrain.cpp:690
+#: kvoctrain.cpp:564
 #, qt-format
 msgid " (%1)"
 msgstr ""
 
-#: kvoctrain.cpp:693
+#: kvoctrain.cpp:567
 #, fuzzy, qt-format
 #| msgid "T&ype:"
 msgid "Type: %1"
@@ -2992,10 +2905,6 @@ msgstr "&Дополнително"
 msgid "Additional properties"
 msgstr "Дополнителни својства"
 
-#: entry-dialogs/EntryDlg.cpp:67 query-dialogs/MCQueryDlg.cpp:45
-msgid "Multiple Choice"
-msgstr "Повеќекратен избор"
-
 #: entry-dialogs/EntryDlg.cpp:68
 #, fuzzy
 #| msgid "Creates and starts multiple choice to %1"
@@ -3117,7 +3026,7 @@ msgstr "Сврзник"
 msgid ""
 "This wizard will get you started setting up your new document.\n"
 "\n"
-"With KVocTrain you can practice anything that comes in pairs. For example "
+"With Parley you can practice anything that comes in pairs. For example "
 "foreign languages and their translation to your language.\n"
 "\n"
 "To get started it is necessary to set up what you would like to practice.\n"
@@ -3148,7 +3057,7 @@ msgstr ""
 
 #: newdocument-wizard/kvtnewdocumentwizard.cpp:52
 #, fuzzy
-msgid "Create a new KVocTrain document"
+msgid "Create a New Parley Document"
 msgstr "Креира нов документ"
 
 #: newdocument-wizard/secondidentifierlanguagepage.cpp:46
@@ -3173,308 +3082,312 @@ msgctxt "state of a row"
 msgid "Inactive"
 msgstr "Неактивен"
 
-#: kva_init.cpp:132
+#: kva_init.cpp:131
 #, fuzzy
 msgid "Creates a new blank vocabulary document"
 msgstr "Креира нов документ"
 
-#: kva_init.cpp:137
+#: kva_init.cpp:136
 #, fuzzy
 msgid "Opens an existing vocabulary document"
 msgstr "Отвора постоечки документ"
 
-#: kva_init.cpp:143
+#: kva_init.cpp:142
 #, fuzzy
 msgid "Open &Example..."
 msgstr "&Отвори пример..."
 
-#: kva_init.cpp:145
+#: kva_init.cpp:144
 #, fuzzy
 msgid "Open an example vocabulary document"
 msgstr "Отвори датотека на речник"
 
-#: kva_init.cpp:149
+#: kva_init.cpp:148
 #, fuzzy
 msgid "Vocabularies..."
 msgstr "Спојување на датотека за речник"
 
-#: kva_init.cpp:151
+#: kva_init.cpp:150
 #, fuzzy
 msgid "Downloads new vocabularies"
 msgstr "Спојување на датотека за речник"
 
-#: kva_init.cpp:158
+#: kva_init.cpp:157
 msgid "&Merge..."
 msgstr "&Спои..."
 
-#: kva_init.cpp:160
+#: kva_init.cpp:159
 #, fuzzy
 msgid "Merge an existing vocabulary document with the current one"
 msgstr "Го спојува постоечкиот документ со тековниот речник"
 
-#: kva_init.cpp:166
+#: kva_init.cpp:165
 #, fuzzy
 msgid "Save the active vocabulary document"
 msgstr "Го зачувува тековниот документ"
 
-#: kva_init.cpp:171
+#: kva_init.cpp:170
 msgid "Save the active vocabulary document with a different name"
 msgstr ""
 
-#: kva_init.cpp:176
+#: kva_init.cpp:175
 #, fuzzy
 msgid "Print the active vocabulary document"
 msgstr "Го зачувува тековниот документ"
 
-#: kva_init.cpp:181
+#: kva_init.cpp:180
 #, fuzzy
 msgid "&Properties..."
 msgstr "&Својства на документот"
 
-#: kva_init.cpp:184
+#: kva_init.cpp:183
 #, fuzzy
 #| msgid "Document Properties"
 msgid "Edit document properties"
 msgstr "Својства на документот"
 
-#: kva_init.cpp:190
+#: kva_init.cpp:189
 #, fuzzy
 msgid "Quit KVocTrain"
 msgstr "KVocTrain"
 
-#: kva_init.cpp:197
+#: kva_init.cpp:196
 msgid "Copy"
 msgstr ""
 
-#: kva_init.cpp:202
+#: kva_init.cpp:201
 #, fuzzy
 msgid "Paste"
 msgstr "Фраза"
 
-#: kva_init.cpp:207
+#: kva_init.cpp:206
 #, fuzzy
 msgid "Select all rows"
 msgstr "Ги избира сите елементи"
 
-#: kva_init.cpp:212
+#: kva_init.cpp:211
 #, fuzzy
 msgid "Deselect all rows"
 msgstr "Ги одизбира сите елементи"
 
-#: kva_init.cpp:218
+#: kva_init.cpp:217
 #, fuzzy
 #| msgid "&Append New Entry"
 msgid "&Add New Entry"
 msgstr "Дод&ај нов запис"
 
-#: kva_init.cpp:221
+#: kva_init.cpp:220
 #, fuzzy
 msgid "Append a new row to the vocabulary"
 msgstr "Додава нов елемент во речникот"
 
-#: kva_init.cpp:227
+#: kva_init.cpp:226
 #, fuzzy
 msgid "&Delete Entry"
 msgstr "Дод&ај нов запис"
 
-#: kva_init.cpp:230
+#: kva_init.cpp:229
 msgid "Delete the selected rows"
 msgstr ""
 
-#: kva_init.cpp:236
+#: kva_init.cpp:235
 #, fuzzy
 msgid "&Edit Entry..."
 msgstr "&Уреди израз..."
 
-#: kva_init.cpp:239
+#: kva_init.cpp:238
 msgid "Edit the entries in the selected rows"
 msgstr ""
 
-#: kva_init.cpp:245
+#: kva_init.cpp:244
 msgid "Save E&ntries in Current Test as..."
 msgstr ""
 
-#: kva_init.cpp:247
+#: kva_init.cpp:246
 #, fuzzy
 msgid "Save the entries in the current test as a new vocabulary"
 msgstr "Ги отстранува елементите со иста содржина од речникот"
 
-#: kva_init.cpp:254
+#: kva_init.cpp:253
 #, fuzzy
 msgid "New Lesson"
 msgstr "Создава лекции"
 
-#: kva_init.cpp:256
+#: kva_init.cpp:255
 #, fuzzy
 msgid "Add a new lesson to your document"
 msgstr "Креира нов документ"
 
-#: kva_init.cpp:262
+#: kva_init.cpp:261
 #, fuzzy
 msgid "Rename Lesson"
 msgstr "Создава лекции"
 
-#: kva_init.cpp:264
+#: kva_init.cpp:263
 #, fuzzy
 msgid "Rename the selected lesson"
 msgstr "Дали навистина сакате да го избришете избраниот јазик?"
 
-#: kva_init.cpp:270
+#: kva_init.cpp:269
 #, fuzzy
 msgid "Delete Lesson"
 msgstr "Бришам лекција"
 
-#: kva_init.cpp:272
+#: kva_init.cpp:271
 #, fuzzy
 msgid "Delete the selected lesson."
 msgstr "Дали навистина сакате да го избришете избраниот јазик?"
 
-#: kva_init.cpp:278
+#: kva_init.cpp:277
 #, fuzzy
 msgid "Select All Lessons"
 msgstr "Ги одизбира сите елементи"
 
-#: kva_init.cpp:280
+#: kva_init.cpp:279
 #, fuzzy
 msgid "Select all lessons for the test."
 msgstr "Ги одизбира сите елементи"
 
-#: kva_init.cpp:286
+#: kva_init.cpp:285
 #, fuzzy
 msgid "Deselect All Lessons"
 msgstr "Ги одизбира сите елементи"
 
-#: kva_init.cpp:288
+#: kva_init.cpp:287
 msgid "Remove all lessons from the test."
 msgstr ""
 
-#: kva_init.cpp:294
+#: kva_init.cpp:293
 msgid "Split Lesson into Smaller Lessons"
 msgstr ""
 
-#: kva_init.cpp:296
+#: kva_init.cpp:295
 msgid "Make multiple smaller lessons out of one big lesson."
 msgstr ""
 
-#: kva_init.cpp:305
+#: kva_init.cpp:304
 #, fuzzy
 msgid "&Statistics..."
 msgstr "Прикажи с&татистика"
 
-#: kva_init.cpp:307
+#: kva_init.cpp:306
 #, fuzzy
 msgid "Show and reset statistics for the current vocabulary"
 msgstr "Го спојува постоечкиот документ со тековниот речник"
 
-#: kva_init.cpp:313
+#: kva_init.cpp:312
 msgid "Remove &Duplicates"
 msgstr ""
 
-#: kva_init.cpp:315
+#: kva_init.cpp:314
 #, fuzzy
 msgid "Remove duplicate entries from the vocabulary"
 msgstr "Ги отстранува елементите со иста содржина од речникот"
 
-#: kva_init.cpp:322
+#: kva_init.cpp:321
 #, fuzzy
 msgid "&Edit Languages"
 msgstr "Ја&зик"
 
-#: kva_init.cpp:327
+#: kva_init.cpp:326
 #, fuzzy
 msgid "&Grammar Properties..."
 msgstr "&Својства на документот"
 
-#: kva_init.cpp:328
+#: kva_init.cpp:327
 #, fuzzy
 msgid "Edit language properties (types, tenses and usages)."
 msgstr "Ги уредува својствата на јазикот во тековниот документ"
 
-#: kva_init.cpp:335
+#: kva_init.cpp:334
 msgid "Articles and Personal Pronouns..."
 msgstr ""
 
-#: kva_init.cpp:337
+#: kva_init.cpp:336
 #, fuzzy
 msgid "Edit language properties in current document"
 msgstr "Ги уредува својствата на јазикот во тековниот документ"
 
-#: kva_init.cpp:342
+#: kva_init.cpp:341
 #, fuzzy
 msgid "Show Se&arch"
 msgstr "Мудро пребарување"
 
-#: kva_init.cpp:344
+#: kva_init.cpp:343
 msgid "Toggle display of the search bar"
 msgstr ""
 
-#: kva_init.cpp:349
+#: kva_init.cpp:348
 #, fuzzy
 msgid "Show Lesson Column"
 msgstr "Опис на лекцијата"
 
 #: kva_init.cpp:357
-msgid "Resume Written Test"
-msgstr ""
-
-#: kva_init.cpp:360
 #, fuzzy
-#| msgid "Resumes random query with existing selection"
-msgid "Resumes written test with existing selection"
-msgstr "Го продолжува случајното пребарување со постоечкиот избор"
+#| msgid "Starting special query..."
+msgid "Start Practice..."
+msgstr "Отпочнувам со специјално пребарување..."
+
+#: kva_init.cpp:358
+#, fuzzy
+#| msgid "Starting Query"
+msgid "Set up and start a test"
+msgstr "Отпочнувам со пребарување"
 
 #: kva_init.cpp:365
-msgid "Resume &Multiple Choice"
-msgstr "Продолжи по&веќекратен избор"
+#, fuzzy
+#| msgid "Article"
+msgid "Resume Practice..."
+msgstr "Член"
 
-#: kva_init.cpp:368
-msgid "Resumes multiple choice with existing selection"
-msgstr "Го продолжува повеќекратниот избор со постоечкиот избор"
+#: kva_init.cpp:366
+msgid "Start a test with the last settings"
+msgstr ""
 
-#: kva_init.cpp:375
+#: kva_init.cpp:376
 #, fuzzy
 msgid "Show the configuration dialog"
 msgstr "Го прикажува дијалогот за општите опции"
 
-#: kva_init.cpp:385
+#: kva_init.cpp:386
 msgid "Toggle display of the toolbars"
 msgstr ""
 
-#: kva_init.cpp:394
+#: kva_init.cpp:393
 msgid "Restore Native Order"
 msgstr ""
 
-#: kva_init.cpp:477
+#: kva_init.cpp:476
 msgid ""
 "Right click to add, delete, or rename lessons. \n"
 "With the checkboxes you can select which lessons you want to practice. \n"
 "Only checked lessons [x] will be asked in the tests!"
 msgstr ""
 
-#: kva_init.cpp:483
+#: kva_init.cpp:482
 #, fuzzy
 msgid "Edit current lesson"
 msgstr "Избери ја тековната лекција"
 
-#: kva_init.cpp:484
+#: kva_init.cpp:483
 #, fuzzy
 msgid "Edit lessons in test"
 msgstr "Уреди имиња на лекции"
 
-#: kva_init.cpp:485
+#: kva_init.cpp:484
 #, fuzzy
 msgid "Edit all lessons"
 msgstr "&Лекции"
 
-#: kva_init.cpp:486
+#: kva_init.cpp:485
 msgid "Select which lessons should be displayed for editing to the right."
 msgstr ""
 
-#: kva_init.cpp:543
+#: kva_init.cpp:542
 msgid "Enter search terms here"
 msgstr ""
 
-#: kva_init.cpp:545
+#: kva_init.cpp:544
 msgid ""
 "Enter space-seperated search terms to find words.\n"
 "\n"
@@ -3483,7 +3396,7 @@ msgid ""
 "Enter type:verb to search for verbs."
 msgstr ""
 
-#: kva_init.cpp:547
+#: kva_init.cpp:546
 #, fuzzy
 msgid "S&earch:"
 msgstr "&Напомена:"
@@ -3510,6 +3423,23 @@ msgid ""
 "randomized.\n"
 "How many entries in each lesson do you want?"
 msgstr ""
+
+#: query-dialogs/startpracticedialog.cpp:24
+#, fuzzy
+#| msgid "Article"
+msgid "Start Practice"
+msgstr "Член"
+
+#: query-dialogs/startpracticedialog.cpp:30
+#, fuzzy
+msgid "Test"
+msgstr "&Ресетирај"
+
+#: query-dialogs/startpracticedialog.cpp:31
+#, fuzzy
+#| msgid "Tense Description"
+msgid "Test options"
+msgstr "Опис на времето"
 
 #: query-dialogs/kvtquery.cpp:131
 msgid "Worse Than"
@@ -3720,10 +3650,6 @@ msgstr "Внесете го антонимот:"
 msgid "Antonym Training"
 msgstr "Вежби за антоними"
 
-#: query-dialogs/SimpleQueryDlg.cpp:118
-msgid "Paraphrase"
-msgstr "Парафраза"
-
 #: query-dialogs/SimpleQueryDlg.cpp:119
 msgid "Enter the word:"
 msgstr "Внесете го зборот:"
@@ -3773,6 +3699,91 @@ msgid ""
 "14</td></tr><tr><td>%15</td><td>%16</td></tr></table></html>"
 msgstr ""
 
+#~ msgid "KVocTrain"
+#~ msgstr "KVocTrain"
+
+#~ msgid "Available Languages"
+#~ msgstr "Достапни јазици"
+
+#~ msgid "Language c&ode:"
+#~ msgstr "&Код на јазикот:"
+
+#~ msgid "&Picture:"
+#~ msgstr "&Слика:"
+
+#, fuzzy
+#~| msgid "KVocTrain"
+#~ msgid "The KVocTrain team"
+#~ msgstr "KVocTrain"
+
+#, fuzzy
+#~| msgid "Creates and starts query from %1 to %2"
+#~ msgid "Creates and starts test from %1 to %2"
+#~ msgstr "Создава и отпочнува пребарување од %1 во %2"
+
+#, fuzzy
+#~| msgid "Create &Multiple Choice"
+#~ msgid "Create &Multiple Choice Test"
+#~ msgstr "Креирај пове&ќекратен избор"
+
+#~ msgid "Creates and starts multiple choice from %1 to %2"
+#~ msgstr "Создава и отпочнува повеќекратен избор од %1 во %2"
+
+#, fuzzy
+#~| msgid "Creates and starts query from %1 to %2"
+#~ msgid "Creates and starts practice from %1 to %2"
+#~ msgstr "Создава и отпочнува пребарување од %1 во %2"
+
+#, fuzzy
+#~| msgid "Creates and starts multiple choice from %1 to %2"
+#~ msgid "Creates and starts multiple choice test from %1 to %2"
+#~ msgstr "Создава и отпочнува повеќекратен избор од %1 во %2"
+
+#~ msgid "&Verbs"
+#~ msgstr "&Глаголи"
+
+#~ msgid "Starts training with verbs"
+#~ msgstr "Отпочнува вежбање со глаголи"
+
+#~ msgid "&Articles"
+#~ msgstr "&Членови"
+
+#~ msgid "Starts training with articles"
+#~ msgstr "Отпочнува вежбање со членови"
+
+#, fuzzy
+#~ msgid "&Comparisons"
+#~ msgstr "С&поредба"
+
+#~ msgid "Starts training with adjectives"
+#~ msgstr "Отпочнува вежбање со придавки"
+
+#~ msgid "Starts training with synonyms"
+#~ msgstr "Отпочнува вежбање со синоними"
+
+#~ msgid "Starts training with antonyms"
+#~ msgstr "Отпочнува вежбање со антоними"
+
+#~ msgid "Starts training with examples"
+#~ msgstr "Отпочнува вежбање со примери"
+
+#~ msgid "&Paraphrase"
+#~ msgstr "&Парафрази"
+
+#~ msgid "Starts training with paraphrases"
+#~ msgstr "Отпочнува вежбање со парафрази"
+
+#, fuzzy
+#~| msgid "Resumes random query with existing selection"
+#~ msgid "Resumes written test with existing selection"
+#~ msgstr "Го продолжува случајното пребарување со постоечкиот избор"
+
+#~ msgid "Resume &Multiple Choice"
+#~ msgstr "Продолжи по&веќекратен избор"
+
+#~ msgid "Resumes multiple choice with existing selection"
+#~ msgstr "Го продолжува повеќекратниот избор со постоечкиот избор"
+
 #, fuzzy
 #~| msgid "&Append Language"
 #~ msgid "Please enter a name:"
@@ -3794,11 +3805,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Language->Edit Languages"
 #~ msgstr "Ја&зик"
-
-#, fuzzy
-#~| msgid "Starting Query"
-#~ msgid "Start a Test"
-#~ msgstr "Отпочнувам со пребарување"
 
 #~ msgid "Edit Properties for Original"
 #~ msgstr "Уреди својства за оригиналот"
@@ -5053,9 +5059,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "&Sort alphabetically"
 #~ msgstr "Ги подредува колоните по азбучен ред горе/долу"
-
-#~ msgid "&Comparison Forms"
-#~ msgstr "Форми за &споредба"
 
 #~ msgid "Reset &Grades"
 #~ msgstr "Ресетирај &оценки"
