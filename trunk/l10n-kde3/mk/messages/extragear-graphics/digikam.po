@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
-"POT-Creation-Date: 2007-09-11 08:57+0200\n"
+"POT-Creation-Date: 2007-09-13 08:27+0200\n"
 "PO-Revision-Date: 2005-05-18 14:31+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -106,12 +106,12 @@ msgstr "&Квалитет на JPEG:"
 #: libs/dimg/loaders/jpegsettings.cpp:84
 #, fuzzy
 msgid ""
-"<p>The quality value for JPEG images:"
+"<p>The JPEG image quality:"
 "<p><b>1</b>: low quality (high compression and small file size)"
 "<p><b>50</b>: medium quality"
 "<p><b>75</b>: good quality (default)"
 "<p><b>100</b>: high quality (no compression and large file size)"
-"<p><b>Note: JPEG use a lossy compression image algorithm.</b>"
+"<p><b>Note: JPEG always uses lossy compression.</b>"
 msgstr ""
 "<p>Вредноста на квалитет кај датотеките од тип JPEG "
 "<p><b>1</b>: низок квалитет (висока компресија и мали датотеки)"
@@ -159,14 +159,16 @@ msgstr "Висина:"
 
 #: libs/dimg/loaders/jpegsettings.cpp:109
 msgid ""
-"<p>The level of chroma subsampling for JPEG images:"
-"<p><b>None</b>: use 4:4:4 ratio. It does not have any chroma subsampling at "
-"all. This preserves borders and contrasting colors, but compression is less"
-"<p><b>Medium</b>: use 4:2:2 ratio. Medium compression; reduces the bandwidth "
-"for the picture by one-third with little to no visual difference"
-"<p><b>High</b>: use 4:1:1 ratio. Important compression; suits images with weak "
-"borders but tends to denature colors"
-"<p><b>Note: JPEG use a lossy compression image algorithm.</b>"
+"<p>JPEG Chroma subsampling level \n"
+"(color is saved with less resolution than luminance):"
+"<p><b>None</b>=best: uses 4:4:4 ratio. Does not employ chroma subsampling at "
+"all. This preserves edges and contrasting colors, whilst adding no additional "
+"compression"
+"<p><b>Medium</b>: uses 4:2:2 ratio. Medium compression: reduces the color "
+"resolution by one-third with little to no visual difference"
+"<p><b>High</b>: use 4:1:1 ratio. High compression: suits images with soft edges "
+"but tends to alter colors"
+"<p><b>Note: JPEG always uses lossy compression.</b>"
 msgstr ""
 
 #: libs/imageproperties/imagepropertiessidebardb.cpp:92
@@ -1833,7 +1835,7 @@ msgstr ""
 
 #: libs/widgets/common/filesaveoptionsbox.cpp:94
 #, fuzzy
-msgid "None options available"
+msgid "No options available"
 msgstr "Поврзувањето не успеа"
 
 #: libs/widgets/common/statuszoombar.cpp:80
@@ -2238,7 +2240,7 @@ msgstr "Премести го албумот во корпата"
 msgid "Delete Album"
 msgstr "Избриши го албумот"
 
-#: digikam/albumfolderview.cpp:593 digikam/albumfolderview.cpp:1210
+#: digikam/albumfolderview.cpp:593
 #, fuzzy
 msgid ""
 "The album library has not been set correctly.\n"
@@ -2285,7 +2287,23 @@ msgstr "Вчитувам апарати"
 msgid "Download && Delete from camera"
 msgstr "Сними ги избраните"
 
-#: digikam/albumfolderview.cpp:1308
+#: digikam/albumfolderview.cpp:1210
+#, fuzzy
+msgid ""
+"The album library has not been set correctly.\n"
+"Select \"Configure digiKam\" from the Settings menu and choose a folder to use "
+"for the album library."
+msgstr ""
+"Библиотеката на албуми не е правилно поставена.\n"
+"Одберете „Конфигурирај Digikam“ од менито Поставувања и одберете папка која ќе "
+"се користи за албумите."
+
+#: digikam/albumfolderview.cpp:1233
+#, fuzzy
+msgid "Select folders to import"
+msgstr "Датотеки за отворање"
+
+#: digikam/albumfolderview.cpp:1309
 msgid "Uncategorized Albums"
 msgstr "Некатегоризирани албуми"
 
@@ -3172,14 +3190,14 @@ msgid "<p>You can edit the search rules by adding/removing criteria."
 msgstr ""
 
 #: digikam/searchadvanceddialog.cpp:140 digikam/searchwidgets.cpp:138
-#: digikam/searchwidgets.cpp:252 digikam/searchwidgets.cpp:438
-#: digikam/searchwidgets.cpp:548
+#: digikam/searchwidgets.cpp:257 digikam/searchwidgets.cpp:447
+#: digikam/searchwidgets.cpp:557
 msgid "As well as"
 msgstr ""
 
 #: digikam/searchadvanceddialog.cpp:141 digikam/searchwidgets.cpp:138
-#: digikam/searchwidgets.cpp:247 digikam/searchwidgets.cpp:438
-#: digikam/searchwidgets.cpp:548
+#: digikam/searchwidgets.cpp:252 digikam/searchwidgets.cpp:447
+#: digikam/searchwidgets.cpp:557
 msgid "Or"
 msgstr ""
 
@@ -3348,8 +3366,9 @@ msgid "Adds new items to the current Album."
 msgstr "Оваа опција додава нови фотографии во тековниот албум."
 
 #: digikam/digikamapp.cpp:553
-msgid "Import Folders..."
-msgstr "Внеси папки..."
+#, fuzzy
+msgid "Add Folders..."
+msgstr "Додај апарат..."
 
 #: digikam/digikamapp.cpp:568
 #, fuzzy
@@ -11905,6 +11924,9 @@ msgstr "Поставувања за советите"
 #, fuzzy
 msgid "Click To Exit..."
 msgstr "Црно-бело..."
+
+#~ msgid "Import Folders..."
+#~ msgstr "Внеси папки..."
 
 #, fuzzy
 #~ msgid "Remove item"
