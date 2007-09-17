@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-14 05:37+0200\n"
+"POT-Creation-Date: 2007-09-17 05:34+0200\n"
 "PO-Revision-Date: 2007-02-26 21:35+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -663,21 +663,30 @@ msgstr ""
 msgid "Unknown"
 msgstr "Непознат Тип"
 
-#: fitsimage.cpp:137 fitsimage.cpp:145 fitsimage.cpp:153
+#: fitsimage.cpp:129
+#, fuzzy
+msgid "Loading FITS"
+msgstr "Вчитувам KStars..."
+
+#: fitsimage.cpp:129
+msgid "Please hold while loading FITS file..."
+msgstr ""
+
+#: fitsimage.cpp:141 fitsimage.cpp:152 fitsimage.cpp:160
 #, qt-format
 msgid "FITS file open error: %1"
 msgstr ""
 
-#: fitsimage.cpp:137 fitsimage.cpp:145 fitsimage.cpp:153 fitsimage.cpp:324
-#: fitsimage.cpp:332 fitsimage.cpp:339
+#: fitsimage.cpp:141 fitsimage.cpp:152 fitsimage.cpp:160 fitsimage.cpp:346
+#: fitsimage.cpp:354 fitsimage.cpp:361
 msgid "FITS Open"
 msgstr ""
 
-#: fitsimage.cpp:324 fitsimage.cpp:332
+#: fitsimage.cpp:346 fitsimage.cpp:354
 msgid "Unable to calculate FITS Min/Max values."
 msgstr ""
 
-#: fitsimage.cpp:339
+#: fitsimage.cpp:361
 msgid "FITS image is saturated and cannot be displayed."
 msgstr ""
 
@@ -1270,7 +1279,7 @@ msgstr "Нема време на заоѓање: циркумполарно"
 msgid "No set time: Never rises"
 msgstr "Нема време на заоѓање: никогаш не изгрева"
 
-#: kstars.cpp:152 kstarsactions.cpp:687 skymap.cpp:298
+#: kstars.cpp:152 kstarsactions.cpp:689 skymap.cpp:298
 #, fuzzy
 msgid "Stop &Tracking"
 msgstr "Стопирај &Часовник"
@@ -21107,7 +21116,11 @@ msgstr ""
 msgid "Running script: %1"
 msgstr ""
 
-#: kstarsactions.cpp:610
+#: kstarsactions.cpp:603
+msgid "Script finished."
+msgstr ""
+
+#: kstarsactions.cpp:612
 #, fuzzy
 msgid ""
 "You can save printer ink by using the \"Star Chart\" color scheme, which "
@@ -21119,48 +21132,48 @@ msgstr ""
 "Star Chart колор шемата за печатење? (Вашите тековни подесувања на боите ќе "
 "бидат повратени кога печатењето ќе заврши)"
 
-#: kstarsactions.cpp:615
+#: kstarsactions.cpp:617
 msgid "Switch to Star Chart Colors?"
 msgstr "Да се префрлам на Star Chart боите?"
 
-#: kstarsactions.cpp:616
+#: kstarsactions.cpp:618
 #, fuzzy
 msgid "Switch Color Scheme"
 msgstr "Нова шема на бои"
 
-#: kstarsactions.cpp:616
+#: kstarsactions.cpp:618
 msgid "Do Not Switch"
 msgstr ""
 
-#: kstarsactions.cpp:671 kstarsinit.cpp:160
+#: kstarsactions.cpp:673 kstarsinit.cpp:160
 msgid "Engage &Tracking"
 msgstr ""
 
-#: kstarsactions.cpp:790
+#: kstarsactions.cpp:792
 msgctxt "The user should enter an angle for the field-of-view of the display"
 msgid "Enter Desired Field-of-View Angle"
 msgstr ""
 
-#: kstarsactions.cpp:790
+#: kstarsactions.cpp:792
 msgid "Enter a field-of-view angle in degrees: "
 msgstr ""
 
-#: kstarsactions.cpp:853
+#: kstarsactions.cpp:855
 #, qt-format
 msgid "Projection system: %1"
 msgstr ""
 
-#: kstarsactions.cpp:895
+#: kstarsactions.cpp:897
 #, fuzzy
 msgid "Could not open fov.dat for writing."
 msgstr "Неможам да ја отворам даподаточната датотека по избор: "
 
-#: kstarsactions.cpp:926 kstarsinit.cpp:526
+#: kstarsactions.cpp:928 kstarsinit.cpp:526
 #, fuzzy, qt-format
 msgid "Could not open file: %1"
 msgstr "Не можам да ја отворам датотеката"
 
-#: kstarsactions.cpp:931 kstarsinit.cpp:531
+#: kstarsactions.cpp:933 kstarsinit.cpp:531
 msgid "Edit FOV Symbols..."
 msgstr ""
 
@@ -22924,13 +22937,13 @@ msgstr "Пресметај"
 #. i18n: tag string
 #. i18n: file fitsheaderdialog.ui line 77
 #. i18n: tag string
-#. i18n: file fitshistogramui.ui line 343
+#. i18n: file fitshistogramui.ui line 349
 #. i18n: tag string
 #. i18n: file imgsequencedlg.ui line 87
 #. i18n: tag string
 #. i18n: file fitsheaderdialog.ui line 77
 #. i18n: tag string
-#. i18n: file fitshistogramui.ui line 343
+#. i18n: file fitshistogramui.ui line 349
 #. i18n: tag string
 #. i18n: file imgsequencedlg.ui line 87
 #: rc.cpp:324 rc.cpp:360 rc.cpp:444 rc.cpp:2989 rc.cpp:3025 rc.cpp:3094
@@ -22978,25 +22991,25 @@ msgid "Max."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file fitshistogramui.ui line 254
+#. i18n: file fitshistogramui.ui line 257
 #: rc.cpp:348 rc.cpp:3013
 msgid "Intensity:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file fitshistogramui.ui line 271
+#. i18n: file fitshistogramui.ui line 277
 #: rc.cpp:351 rc.cpp:3016
 msgid "Frequency:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file fitshistogramui.ui line 278
+#. i18n: file fitshistogramui.ui line 284
 #: rc.cpp:354 rc.cpp:3019
 msgid "Min."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file fitshistogramui.ui line 330
+#. i18n: file fitshistogramui.ui line 336
 #: rc.cpp:357 rc.cpp:3022
 msgid "&Apply"
 msgstr ""
@@ -33700,10 +33713,6 @@ msgstr "Заоѓа во: %1"
 #, fuzzy
 #~ msgid "Cannot open file for reading"
 #~ msgstr "Неможам да ја отворам даподаточната датотека по избор: "
-
-#, fuzzy
-#~ msgid "Loading FITS..."
-#~ msgstr "Вчитувам KStars..."
 
 #, fuzzy
 #~ msgid "Image Loading Process..."
