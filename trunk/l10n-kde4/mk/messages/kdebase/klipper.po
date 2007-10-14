@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klipper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-11 05:40+0200\n"
+"POT-Creation-Date: 2007-10-14 05:38+0200\n"
 "PO-Revision-Date: 2007-01-14 00:35+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -18,37 +18,56 @@ msgstr ""
 "X-Generator: KBabel 1.11.2\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : 2;\n"
 
-#: configdialog.cpp:50
+#: configdialog.cpp:56
 #, fuzzy
-msgid "Configure"
-msgstr "&Конфигурирај го Klipper..."
-
-#: configdialog.cpp:60
-msgid "&General"
+#| msgid "&General"
+msgctxt "General Config"
+msgid "General"
 msgstr "&Општо"
 
-#: configdialog.cpp:64
-msgid "Ac&tions"
+#: configdialog.cpp:56
+#, fuzzy
+#| msgid "&General"
+msgid "General Config"
+msgstr "&Општо"
+
+#: configdialog.cpp:60
+#, fuzzy
+#| msgid "Ac&tions"
+msgctxt "Actions Config"
+msgid "Actions"
 msgstr "Ак&ции"
 
-#: configdialog.cpp:68
+#: configdialog.cpp:60
 #, fuzzy
-msgid "&Shortcuts"
+#| msgid "Ac&tions"
+msgid "Actions Config"
+msgstr "Ак&ции"
+
+#: configdialog.cpp:64
+#, fuzzy
+msgctxt "Shortcuts Config"
+msgid "Shortcuts"
 msgstr "&Глобални кратенки"
 
-#: configdialog.cpp:109
+#: configdialog.cpp:64
+#, fuzzy
+msgid "Shortcuts Config"
+msgstr "&Глобални кратенки"
+
+#: configdialog.cpp:104
 msgid "&Popup menu at mouse-cursor position"
 msgstr "&Прикажи мени кај позицијата на глушецот"
 
-#: configdialog.cpp:111
+#: configdialog.cpp:106
 msgid "Save clipboard contents on e&xit"
 msgstr "Сними ја на и&злез содржината на таблата"
 
-#: configdialog.cpp:113
+#: configdialog.cpp:108
 msgid "Remove whitespace when executing actions"
 msgstr "Отстрани празни места при извршување на акции"
 
-#: configdialog.cpp:115
+#: configdialog.cpp:110
 msgid ""
 "Sometimes, the selected text has some whitespace at the end, which, if "
 "loaded as URL in a browser would cause an error. Enabling this option "
@@ -61,15 +80,15 @@ msgstr ""
 "крајот од избраниот текст (оригиналната содржина на таблата со исечоци нема "
 "да биде изменета)."
 
-#: configdialog.cpp:117
+#: configdialog.cpp:112
 msgid "&Replay actions on an item selected from history"
 msgstr "Повто&ри ги акциите на елемент избран од историјата"
 
-#: configdialog.cpp:120
+#: configdialog.cpp:115
 msgid "Pre&vent empty clipboard"
 msgstr "Спречи пр&азна табла со исечоци"
 
-#: configdialog.cpp:122
+#: configdialog.cpp:117
 msgid ""
 "Selecting this option has the effect, that the clipboard can never be "
 "emptied. E.g. when an application exits, the clipboard would usually be "
@@ -79,11 +98,11 @@ msgstr ""
 "биде испразнета. Пр. кога некоја апликација излегува, таблата вообичаено се "
 "празни."
 
-#: configdialog.cpp:127
+#: configdialog.cpp:122
 msgid "&Ignore selection"
 msgstr "&Игнорирај избор"
 
-#: configdialog.cpp:129
+#: configdialog.cpp:124
 msgid ""
 "This option prevents the selection being recorded in the clipboard history. "
 "Only explicit clipboard changes are recorded."
@@ -91,11 +110,11 @@ msgstr ""
 "Оваа опција овозможува изборот да не биде запишан во историјата на таблата "
 "со исечоци. Се запишуваат само експлицитни промени на таблата."
 
-#: configdialog.cpp:133
+#: configdialog.cpp:128
 msgid "Clipboard/Selection Behavior"
 msgstr "Однесување на табла/избор"
 
-#: configdialog.cpp:137
+#: configdialog.cpp:132
 #, fuzzy
 #| msgid ""
 #| "<qt>There are two different clipboard buffers available:"
@@ -120,11 +139,11 @@ msgstr ""
 "изборот е со кликање на средното копче од глушецот.<br><br>Може да ги "
 "конфигурирате односите помеѓу Табла и Избор.</qt>"
 
-#: configdialog.cpp:148
+#: configdialog.cpp:143
 msgid "Sy&nchronize contents of the clipboard and the selection"
 msgstr "Си&нхронизирај ја содржината на таблата и изборот"
 
-#: configdialog.cpp:151
+#: configdialog.cpp:146
 msgid ""
 "Selecting this option synchronizes these two buffers, so they work the same "
 "way as in KDE 1.x and 2.x."
@@ -132,11 +151,11 @@ msgstr ""
 "Со избирање на оваа опција двата бафери се синхронизираат и работат на ист "
 "начин како во KDE 1.x и 2.x."
 
-#: configdialog.cpp:155
+#: configdialog.cpp:150
 msgid "Separate clipboard and selection"
 msgstr "Оддели ги таблата и изборот"
 
-#: configdialog.cpp:157
+#: configdialog.cpp:152
 msgid ""
 "Using this option will only set the selection when highlighting something "
 "and the clipboard when choosing e.g. \"Copy\" in a menubar."
@@ -144,55 +163,55 @@ msgstr ""
 "Со оваа опција изборот ќе настанува со избирање текст, а таблата со исечоци "
 "ќе се полни на пр. со избирање на „Копирај“ од некое мени."
 
-#: configdialog.cpp:164
+#: configdialog.cpp:159
 msgid "Tim&eout for action popups:"
 msgstr "Ист&ек на време за покренување на акции:"
 
-#: configdialog.cpp:166
+#: configdialog.cpp:161
 msgid " sec"
 msgstr " сек"
 
-#: configdialog.cpp:167
+#: configdialog.cpp:162
 msgid "A value of 0 disables the timeout"
 msgstr "Вредноста 0 го оневозможува истекот на време"
 
-#: configdialog.cpp:170
+#: configdialog.cpp:165
 msgid "C&lipboard history size:"
 msgstr "Големина на историја на таб&лата:"
 
-#: configdialog.cpp:192
+#: configdialog.cpp:187
 msgid " entry"
 msgid_plural " entries"
 msgstr[0] " ставка"
 msgstr[1] " ставки"
 msgstr[2] " ставки"
 
-#: configdialog.cpp:240
+#: configdialog.cpp:232
 msgid "Action &list (right click to add/remove commands):"
 msgstr "&Листа со акции (десен клик за да додадете или отстраните команди):"
 
-#: configdialog.cpp:244
+#: configdialog.cpp:236
 msgid "Regular Expression (see http://doc.trolltech.com/qregexp.html#details)"
 msgstr ""
 "Регуларен израз (видете на http://doc.trolltech.com/qregexp.html#details)"
 
-#: configdialog.cpp:245
+#: configdialog.cpp:237
 msgid "Description"
 msgstr "Опис"
 
-#: configdialog.cpp:297
+#: configdialog.cpp:289
 msgid "&Use graphical editor for editing regular expressions"
 msgstr "Ко&ристи графички уредувач за промена на регуларните изрази"
 
-#: configdialog.cpp:306
+#: configdialog.cpp:298
 msgid "&Add Action"
 msgstr "Дод&ај акција"
 
-#: configdialog.cpp:309
+#: configdialog.cpp:301
 msgid "&Delete Action"
 msgstr "О&тстрани акција"
 
-#: configdialog.cpp:312
+#: configdialog.cpp:304
 #, c-format
 msgid ""
 "Click on a highlighted item's column to change it. \"%s\" in a command will "
@@ -201,43 +220,43 @@ msgstr ""
 "Кликнете на колоната на обележаното за да ја промените. „%s“ во командата ќе "
 "биде заменето со содржината на таблата со исечоци."
 
-#: configdialog.cpp:319
+#: configdialog.cpp:311
 msgid "Advanced..."
 msgstr "Напредно..."
 
-#: configdialog.cpp:343
+#: configdialog.cpp:335
 msgid "Add Command"
 msgstr "Додај команда"
 
-#: configdialog.cpp:344
+#: configdialog.cpp:336
 msgid "Remove Command"
 msgstr "Отстрани команда"
 
-#: configdialog.cpp:354
+#: configdialog.cpp:346
 msgid "Click here to set the command to be executed"
 msgstr "Кликнете тука за да ја поставите командата што ќе се извршува"
 
-#: configdialog.cpp:355
+#: configdialog.cpp:347
 msgid "<new command>"
 msgstr "<нова команда>"
 
-#: configdialog.cpp:377
+#: configdialog.cpp:369
 msgid "Click here to set the regexp"
 msgstr "Кликнете тука за да го внесете регуларниот израз"
 
-#: configdialog.cpp:378
+#: configdialog.cpp:370
 msgid "<new action>"
 msgstr "<нова акција>"
 
-#: configdialog.cpp:419
+#: configdialog.cpp:411
 msgid "Advanced Settings"
 msgstr "Напредни поставувања"
 
-#: configdialog.cpp:441
+#: configdialog.cpp:431
 msgid "D&isable Actions for Windows of Type WM_CLASS"
 msgstr "Оневозмож&и акции за прозорци од типот WM_CLASS"
 
-#: configdialog.cpp:444
+#: configdialog.cpp:434
 #, fuzzy
 #| msgid ""
 #| "<qt>This lets you specify windows in which Klipper should not invoke "
@@ -258,19 +277,19 @@ msgstr ""
 "на прозорецот кој сакате да го испитате. Првата низа после знакот за еднакво "
 "е таа која треба да ја внесете тука.</qt>"
 
-#: klipper.cpp:163
+#: klipper.cpp:142
 msgid "C&lear Clipboard History"
 msgstr "Исчисти ја историјата на таб&лата"
 
-#: klipper.cpp:169
+#: klipper.cpp:148
 msgid "&Configure Klipper..."
 msgstr "&Конфигурирај го Klipper..."
 
-#: klipper.cpp:174
+#: klipper.cpp:153
 msgid "&Quit"
 msgstr ""
 
-#: klipper.cpp:493
+#: klipper.cpp:470
 msgid ""
 "You can enable URL actions later by right-clicking on the Klipper icon and "
 "selecting 'Enable Actions'"
@@ -278,7 +297,7 @@ msgstr ""
 "Акциите за URL може да ги овозможите подоцна со десен клик на иконата на "
 "Klipper и со избирање „Овозможи акции“"
 
-#: klipper.cpp:562
+#: klipper.cpp:539
 msgid ""
 "Should Klipper start automatically\n"
 "when you login?"
@@ -286,78 +305,78 @@ msgstr ""
 "Треба ли Klipper да се стартува автоматски\n"
 "кога ќе се најавите?"
 
-#: klipper.cpp:562
+#: klipper.cpp:539
 msgid "Automatically Start Klipper?"
 msgstr "Автоматско стартување на Klipper?"
 
-#: klipper.cpp:562
+#: klipper.cpp:539
 msgid "Start"
 msgstr "Стартувај"
 
-#: klipper.cpp:562
+#: klipper.cpp:539
 msgid "Do Not Start"
 msgstr "Не стартувај"
 
-#: klipper.cpp:615
+#: klipper.cpp:592
 msgid "Enable &Actions"
 msgstr "Овозможи &акции"
 
-#: klipper.cpp:619
+#: klipper.cpp:596
 msgid "&Actions Enabled"
 msgstr "&Акциите се овозможени"
 
-#: klipper.cpp:1061
+#: klipper.cpp:1038
 msgid "KDE cut & paste history utility"
 msgstr "KDE алатка за историја на Исечи и Вметни"
 
-#: klipper.cpp:1065
+#: klipper.cpp:1042
 msgid "Klipper"
 msgstr "Klipper"
 
-#: klipper.cpp:1067
+#: klipper.cpp:1044
 msgid ""
 "(c) 1998, Andrew Stanley-Jones\n"
 "1998-2002, Carsten Pfeiffer\n"
 "2001, Patrick Dubroy"
 msgstr ""
 
-#: klipper.cpp:1071
+#: klipper.cpp:1048
 msgid "Carsten Pfeiffer"
 msgstr ""
 
-#: klipper.cpp:1072
+#: klipper.cpp:1049
 msgid "Author"
 msgstr "Автор"
 
-#: klipper.cpp:1075
+#: klipper.cpp:1052
 msgid "Andrew Stanley-Jones"
 msgstr ""
 
-#: klipper.cpp:1076
+#: klipper.cpp:1053
 msgid "Original Author"
 msgstr "Оригинален автор"
 
-#: klipper.cpp:1079
+#: klipper.cpp:1056
 msgid "Patrick Dubroy"
 msgstr ""
 
-#: klipper.cpp:1080
+#: klipper.cpp:1057
 msgid "Contributor"
 msgstr "Придонесувач"
 
-#: klipper.cpp:1083
+#: klipper.cpp:1060
 msgid "Luboš Luňák"
 msgstr ""
 
-#: klipper.cpp:1084
+#: klipper.cpp:1061
 msgid "Bugfixes and optimizations"
 msgstr "Поправки на бубачки и оптимизации"
 
-#: klipper.cpp:1087
+#: klipper.cpp:1064
 msgid "Esben Mose Hansen"
 msgstr ""
 
-#: klipper.cpp:1088
+#: klipper.cpp:1065
 msgid "Maintainer"
 msgstr "Одржувач"
 
@@ -377,15 +396,15 @@ msgstr "Рачно активирај акција од тековната та�
 msgid "Enable/Disable Clipboard Actions"
 msgstr "Овозможи/оневозможи акции на таблата"
 
-#: klipperpopup.cpp:97
+#: klipperpopup.cpp:88
 msgid "<empty clipboard>"
 msgstr "<таблата е празна>"
 
-#: klipperpopup.cpp:98
+#: klipperpopup.cpp:89
 msgid "<no matches>"
 msgstr "<нема совпаѓања>"
 
-#: klipperpopup.cpp:145
+#: klipperpopup.cpp:134
 msgid "Klipper - Clipboard Tool"
 msgstr "Klipper - алатка за табла со исечоци"
 
@@ -426,3 +445,7 @@ msgstr ""
 #: urlgrabber.cpp:264
 msgid "Edit Contents"
 msgstr "Уреди содржина"
+
+#, fuzzy
+#~ msgid "Configure"
+#~ msgstr "&Конфигурирај го Klipper..."
