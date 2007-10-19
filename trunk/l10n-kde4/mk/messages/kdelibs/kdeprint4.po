@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeprint4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-11 05:39+0200\n"
+"POT-Creation-Date: 2007-10-19 05:38+0200\n"
 "PO-Revision-Date: 2006-04-25 00:44+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1978,22 +1978,33 @@ msgstr "<b>Опис</b>: %1<br>"
 msgid "<b>Model</b>: %1<br />"
 msgstr "<b>Модел</b>: %1<br>"
 
-#: cups/kmwippprinter.cpp:180 kmprinter.cpp:135
+#: cups/kmwippprinter.cpp:180
+#, fuzzy
+#| msgid "Idle"
+msgctxt "@item:intext Printer state"
 msgid "Idle"
 msgstr "Мирува"
 
-#: cups/kmwippprinter.cpp:181 kmprinter.cpp:137
+#: cups/kmwippprinter.cpp:181
+#, fuzzy
+#| msgid "Stopped"
+msgctxt "@item:intext Printer state"
 msgid "Stopped"
 msgstr "Запрен"
 
-#: cups/kmwippprinter.cpp:182 kmjob.cpp:110 kmprinter.cpp:136
+#: cups/kmwippprinter.cpp:182
+#, fuzzy
+#| msgid "Processing..."
+msgctxt "@item:intext Printer state"
 msgid "Processing..."
 msgstr "Обработува..."
 
-#: cups/kmwippprinter.cpp:183 kmjob.cpp:131 kmprinter.cpp:138
-msgctxt "Unknown State"
+#: cups/kmwippprinter.cpp:183
+#, fuzzy
+#| msgid "Unknown"
+msgctxt "@item:intext Printer state"
 msgid "Unknown"
-msgstr "Непозната"
+msgstr "Непознато"
 
 #: cups/kmwippprinter.cpp:185
 #, fuzzy, kde-format
@@ -2515,6 +2526,10 @@ msgstr "Систем за печатење"
 msgid "Authentication failed (user name=%1)"
 msgstr "Проверката за автентичност не успеа (корисничко име=%1)"
 
+#: kmjob.cpp:110 kmprinter.cpp:136
+msgid "Processing..."
+msgstr "Обработува..."
+
 #: kmjob.cpp:113
 msgid "Queued"
 msgstr "Во редица"
@@ -2538,6 +2553,11 @@ msgstr "Прекинато"
 #: kmjob.cpp:128
 msgid "Completed"
 msgstr "Завршено"
+
+#: kmjob.cpp:131 kmprinter.cpp:138
+msgctxt "Unknown State"
+msgid "Unknown"
+msgstr "Непозната"
 
 #: tests/main.cpp:18
 msgid "helpviewer"
@@ -5354,6 +5374,14 @@ msgstr "Нема избрана опција"
 #, kde-format
 msgid "Configuration of %1"
 msgstr "Конфигурација на %1"
+
+#: kmprinter.cpp:135
+msgid "Idle"
+msgstr "Мирува"
+
+#: kmprinter.cpp:137
+msgid "Stopped"
+msgstr "Запрен"
 
 #: kmprinter.cpp:140
 msgid "(rejecting jobs)"
