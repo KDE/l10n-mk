@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-22 05:41+0200\n"
+"POT-Creation-Date: 2007-10-23 05:42+0200\n"
 "PO-Revision-Date: 2007-02-26 21:35+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -66,7 +66,8 @@ msgstr "Планети"
 msgid "Position Angle"
 msgstr "ништо"
 
-#: addcatdialog.cpp:64 addcatdialog.cpp:176
+#: addcatdialog.cpp:64 addcatdialog.cpp:176 widgets/draglistbox.cpp:60
+#: widgets/draglistbox.cpp:69
 msgid "Ignore"
 msgstr ""
 
@@ -116,7 +117,7 @@ msgstr ""
 msgid "Help on custom catalog file format"
 msgstr "Неможам да ја отворам даподаточната датотека по избор: "
 
-#: addcatdialog.cpp:146
+#: addcatdialog.cpp:146 skycomponents/customcatalogcomponent.cpp:290
 #, fuzzy
 msgid "Custom"
 msgstr "Азимут:"
@@ -131,13 +132,13 @@ msgstr ""
 msgid "Catalog Preview"
 msgstr "Ѕвезден каталог"
 
-#: addcatdialog.cpp:213 fitsviewer.cpp:288 imageviewer.cpp:222
+#: addcatdialog.cpp:213 fitsviewer.cpp:292 imageviewer.cpp:222
 #: kstarsactions.cpp:504 tools/scriptbuilder.cpp:972
 #, kde-format
 msgid "A file named \"%1\" already exists. Overwrite it?"
 msgstr ""
 
-#: addcatdialog.cpp:215 fitsviewer.cpp:290 imageviewer.cpp:224
+#: addcatdialog.cpp:215 fitsviewer.cpp:294 imageviewer.cpp:224
 #: kstarsactions.cpp:506 tools/scriptbuilder.cpp:974
 msgid "Overwrite File?"
 msgstr ""
@@ -169,7 +170,7 @@ msgstr ""
 "Ова URL не е валидно. Дали сакате да го отворам прозорецот на\n"
 "пребарувачот кај машината за пребарување на Google?"
 
-#: addlinkdialog.cpp:53 fitsviewer.cpp:318 streamwg.cpp:203
+#: addlinkdialog.cpp:53 fitsviewer.cpp:322 streamwg.cpp:203
 #: tools/scriptbuilder.cpp:938 tools/scriptbuilder.cpp:1011
 msgid "Invalid URL"
 msgstr "Невалидно URL"
@@ -245,17 +246,17 @@ msgctxt "refers to the band of stars in the sky due to the Galactic plane"
 msgid "Milky Way"
 msgstr "Млечен пат"
 
-#: colorscheme.cpp:77
+#: colorscheme.cpp:77 skycomponents/equator.cpp:32
 msgid "Equator"
 msgstr "Екватор"
 
 #. i18n: tag string
 #. i18n: file opsguides.ui line 209
-#: colorscheme.cpp:80 rc.cpp:2196 rc.cpp:3859
+#: colorscheme.cpp:80 rc.cpp:2196 rc.cpp:3859 skycomponents/ecliptic.cpp:32
 msgid "Ecliptic"
 msgstr "Еклиптичен"
 
-#: colorscheme.cpp:83
+#: colorscheme.cpp:83 skycomponents/horizoncomponent.cpp:87
 msgid "Horizon"
 msgstr "Хоризонт"
 
@@ -263,7 +264,7 @@ msgstr "Хоризонт"
 msgid "Compass Labels"
 msgstr "Ознаки на компас"
 
-#: colorscheme.cpp:89
+#: colorscheme.cpp:89 skycomponents/coordinategrid.cpp:32
 msgid "Coordinate Grid"
 msgstr "Координатна решетка"
 
@@ -368,7 +369,8 @@ msgstr "Општо"
 #: kstarsdata.cpp:78 kstarsinit.cpp:649 starobject.cpp:355 starobject.cpp:374
 #: starobject.cpp:379 starobject.cpp:382 tools/observinglist.cpp:190
 #: tools/observinglist.cpp:235 tools/observinglist.cpp:268
-#: tools/wutdialog.cpp:256
+#: tools/wutdialog.cpp:256 skycomponents/starcomponent.cpp:461
+#: skycomponents/starcomponent.cpp:475
 msgid "star"
 msgstr "ѕвезда"
 
@@ -422,6 +424,7 @@ msgid "%1 AU"
 msgstr ""
 
 #: detaildialog.cpp:187 detaildialog.cpp:239 detaildialog.cpp:242
+#: widgets/fovwidget.cpp:47
 #, kde-format
 msgctxt "angular size in arcminutes"
 msgid "%1 arcmin"
@@ -657,105 +660,105 @@ msgstr ""
 msgid "Square Root Scale"
 msgstr ""
 
-#: fitshistogram.cpp:362
+#: fitshistogram.cpp:362 skycomponents/constellationboundary.cpp:66
 #, fuzzy
 msgid "Unknown"
 msgstr "Непознат Тип"
 
-#: fitsimage.cpp:129
+#: fitsimage.cpp:133
 #, fuzzy
 msgid "Loading FITS"
 msgstr "Вчитувам KStars..."
 
-#: fitsimage.cpp:129
+#: fitsimage.cpp:133
 msgid "Please hold while loading FITS file..."
 msgstr ""
 
-#: fitsimage.cpp:141 fitsimage.cpp:152 fitsimage.cpp:160
+#: fitsimage.cpp:145 fitsimage.cpp:156 fitsimage.cpp:164
 #, kde-format
 msgid "FITS file open error: %1"
 msgstr ""
 
-#: fitsimage.cpp:141 fitsimage.cpp:152 fitsimage.cpp:160 fitsimage.cpp:346
-#: fitsimage.cpp:354 fitsimage.cpp:361
+#: fitsimage.cpp:145 fitsimage.cpp:156 fitsimage.cpp:164 fitsimage.cpp:350
+#: fitsimage.cpp:358 fitsimage.cpp:365
 msgid "FITS Open"
 msgstr ""
 
-#: fitsimage.cpp:346 fitsimage.cpp:354
+#: fitsimage.cpp:350 fitsimage.cpp:358
 msgid "Unable to calculate FITS Min/Max values."
 msgstr ""
 
-#: fitsimage.cpp:361
+#: fitsimage.cpp:365
 msgid "FITS image is saturated and cannot be displayed."
 msgstr ""
 
-#: fitsviewer.cpp:94
+#: fitsviewer.cpp:98
 #, fuzzy
 msgid "Welcome to KStars FITS Viewer"
 msgstr "Добредојдовте во KStars "
 
 #. i18n: tag string
 #. i18n: file fitshistogramui.ui line 31
-#: fitsviewer.cpp:111 fitsviewer.cpp:119 rc.cpp:327 rc.cpp:2989
+#: fitsviewer.cpp:115 fitsviewer.cpp:123 rc.cpp:327 rc.cpp:2989
 msgid "Histogram"
 msgstr ""
 
-#: fitsviewer.cpp:133 kstarsinit.cpp:176
+#: fitsviewer.cpp:137 kstarsinit.cpp:176
 #, fuzzy
 msgid "&Default Zoom"
 msgstr "&Предефинирано"
 
 #. i18n: tag string
 #. i18n: file statform.ui line 13
-#: fitsviewer.cpp:138 rc.cpp:2445 rc.cpp:4108
+#: fitsviewer.cpp:142 rc.cpp:2445 rc.cpp:4108
 #, fuzzy
 msgid "Statistics"
 msgstr "Ѕвезди"
 
 #. i18n: tag string
 #. i18n: file fitsheaderdialog.ui line 13
-#: fitsviewer.cpp:142 fitsviewer.cpp:394 rc.cpp:312 rc.cpp:2974
+#: fitsviewer.cpp:146 fitsviewer.cpp:398 rc.cpp:312 rc.cpp:2974
 msgid "FITS Header"
 msgstr ""
 
-#: fitsviewer.cpp:181 fitsviewer.cpp:203 fitsviewer.cpp:228
+#: fitsviewer.cpp:185 fitsviewer.cpp:207 fitsviewer.cpp:232
 msgid "Save Changes to FITS?"
 msgstr ""
 
-#: fitsviewer.cpp:182 fitsviewer.cpp:204 fitsviewer.cpp:229
+#: fitsviewer.cpp:186 fitsviewer.cpp:208 fitsviewer.cpp:233
 msgid ""
 "The current FITS file has unsaved changes.  Would you like to save before "
 "closing it?"
 msgstr ""
 
-#: fitsviewer.cpp:291
+#: fitsviewer.cpp:295
 msgid "&Overwrite"
 msgstr ""
 
-#: fitsviewer.cpp:303
+#: fitsviewer.cpp:307
 #, kde-format
 msgid "FITS file save error: %1"
 msgstr ""
 
-#: fitsviewer.cpp:304
+#: fitsviewer.cpp:308
 msgid "FITS Save"
 msgstr ""
 
-#: fitsviewer.cpp:309
+#: fitsviewer.cpp:313
 msgid "File saved."
 msgstr ""
 
-#: fitsviewer.cpp:317 streamwg.cpp:202 tools/scriptbuilder.cpp:937
+#: fitsviewer.cpp:321 streamwg.cpp:202 tools/scriptbuilder.cpp:937
 #: tools/scriptbuilder.cpp:1010
 #, fuzzy, kde-format
 msgid "Invalid URL: %1"
 msgstr "Невалидно URL"
 
-#: fitsviewer.cpp:361
+#: fitsviewer.cpp:365
 msgid " [modified]"
 msgstr ""
 
-#: fitsviewer.cpp:394
+#: fitsviewer.cpp:398
 #, kde-format
 msgid "FITS record error: %1"
 msgstr ""
@@ -28081,7 +28084,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file opsadvanced.ui line 339
-#: rc.cpp:1920 rc.cpp:3583
+#: rc.cpp:1920 rc.cpp:3583 skycomponents/milkyway.cpp:39
 msgid "Milky Way"
 msgstr "Млечен Пат"
 
@@ -28741,6 +28744,7 @@ msgstr ""
 #. i18n: file tools/modcalcplanets.ui line 477
 #: rc.cpp:2229 rc.cpp:3892 rc.cpp:5433 rc.cpp:5517
 #: tools/modcalcplanets.cpp:123 tools/modcalcplanets.cpp:344
+#: skycomponents/solarsystemcomposite.cpp:57
 msgid "Saturn"
 msgstr "Сатурн"
 
@@ -28785,6 +28789,7 @@ msgstr ""
 #. i18n: file tools/modcalcplanets.ui line 467
 #: rc.cpp:2247 rc.cpp:3910 rc.cpp:5427 rc.cpp:5511
 #: tools/modcalcplanets.cpp:111 tools/modcalcplanets.cpp:344
+#: skycomponents/solarsystemcomposite.cpp:52
 msgid "Mars"
 msgstr "Марс"
 
@@ -28882,6 +28887,7 @@ msgstr ""
 #. i18n: file tools/modcalcplanets.ui line 457
 #: rc.cpp:2292 rc.cpp:3955 rc.cpp:5421 rc.cpp:5505
 #: tools/modcalcplanets.cpp:102 tools/modcalcplanets.cpp:343
+#: skycomponents/solarsystemcomposite.cpp:51
 msgid "Venus"
 msgstr "Венера"
 
@@ -28924,6 +28930,7 @@ msgstr ""
 #. i18n: file tools/modcalcplanets.ui line 472
 #: rc.cpp:2310 rc.cpp:3973 rc.cpp:5430 rc.cpp:5514
 #: tools/modcalcplanets.cpp:117 tools/modcalcplanets.cpp:344
+#: skycomponents/solarsystemcomposite.cpp:53
 msgid "Jupiter"
 msgstr "Јупитер"
 
@@ -28965,7 +28972,7 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file tools/modcalcplanets.ui line 452
 #: rc.cpp:2328 rc.cpp:3991 rc.cpp:5418 rc.cpp:5502 tools/modcalcplanets.cpp:96
-#: tools/modcalcplanets.cpp:343
+#: tools/modcalcplanets.cpp:343 skycomponents/solarsystemcomposite.cpp:50
 msgid "Mercury"
 msgstr "Меркур"
 
@@ -28990,6 +28997,7 @@ msgstr ""
 #. i18n: file tools/modcalcplanets.ui line 487
 #: rc.cpp:2337 rc.cpp:4000 rc.cpp:5439 rc.cpp:5523
 #: tools/modcalcplanets.cpp:135 tools/modcalcplanets.cpp:345
+#: skycomponents/solarsystemcomposite.cpp:59
 msgid "Neptune"
 msgstr "Нептун"
 
@@ -29014,6 +29022,7 @@ msgstr ""
 #. i18n: file tools/modcalcplanets.ui line 482
 #: rc.cpp:2346 rc.cpp:4009 rc.cpp:5436 rc.cpp:5520
 #: tools/modcalcplanets.cpp:129 tools/modcalcplanets.cpp:345
+#: skycomponents/solarsystemcomposite.cpp:58
 msgid "Uranus"
 msgstr "Уран"
 
@@ -30348,7 +30357,8 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file tools/lcgenerator.ui line 233
-#: rc.cpp:4694
+#: rc.cpp:4694 widgets/timespinbox.cpp:145 widgets/timespinbox.cpp:148
+#: widgets/timespinbox.cpp:149 widgets/timespinbox.cpp:150
 msgid "days"
 msgstr "денови"
 
@@ -31310,6 +31320,7 @@ msgstr "Сончев систем"
 #. i18n: file tools/modcalcplanets.ui line 462
 #: rc.cpp:5424 rc.cpp:5508 tools/modcalcplanets.cpp:91
 #: tools/modcalcplanets.cpp:343 tools/modcalcplanets.cpp:465
+#: skycomponents/solarsystemcomposite.cpp:44
 msgid "Earth"
 msgstr "Земја"
 
@@ -35152,6 +35163,494 @@ msgstr "Транзитира во: %1"
 msgid "Sets at: %1"
 msgstr "Заоѓа во: %1"
 
+#: skycomponents/asteroidscomponent.cpp:62
+#, fuzzy
+#| msgid "Loading Constellations"
+msgid "Loading asteroids"
+msgstr "Вчитувам соѕвездија"
+
+#: skycomponents/cometscomponent.cpp:47
+#, fuzzy
+msgid "Loading comets"
+msgstr "Најди објект"
+
+#: skycomponents/constellationboundarylines.cpp:45
+#, fuzzy
+msgid "Constellation Boundaries"
+msgstr "Имиња на соѕвездија"
+
+#: skycomponents/constellationboundarylines.cpp:90
+#, fuzzy
+msgid "Loading Consellation Boundaries"
+msgstr "Вчитувам имиња на соѕвездија"
+
+#: skycomponents/constellationlines.cpp:39
+#, fuzzy
+#| msgid "Constellation lines"
+msgid "Constellation Lines"
+msgstr "Линии на соѕвездија"
+
+#: skycomponents/constellationlines.cpp:106
+#, fuzzy, kde-format
+msgid "No star named %1 found."
+msgstr "Не е најден објект со име %1."
+
+#: skycomponents/constellationnamescomponent.cpp:51
+#, fuzzy
+#| msgid "Loading Constellation Names"
+msgid "Loading constellation names"
+msgstr "Вчитувам имиња на соѕвездија"
+
+#: skycomponents/customcatalogcomponent.cpp:47
+#, fuzzy, kde-format
+msgid "Loading custom catalog: %1"
+msgstr "Додај каталог по избор..."
+
+#: skycomponents/customcatalogcomponent.cpp:97
+#, kde-format
+msgid "Line %1 does not contain %2 fields.  Skipping it."
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:104
+#, fuzzy
+msgid ""
+"Some lines in the custom catalog could not be parsed; see error messages "
+"below."
+msgstr ""
+"Некои линии неможат да се разделат во одреденото поле, видете ги пораките за "
+"грешки подоле."
+
+#: skycomponents/customcatalogcomponent.cpp:105
+msgid "To reject the file, press Cancel. "
+msgstr "За да се отфрли датотеката, притисни Откажи. "
+
+#: skycomponents/customcatalogcomponent.cpp:106
+msgid "To accept the file (ignoring unparsed lines), press Accept."
+msgstr ""
+"За да се прифати датотеката (игнорирајќи ги нераделените линии), притисни "
+"Прифати."
+
+#: skycomponents/customcatalogcomponent.cpp:108
+#, fuzzy
+msgid "Some Lines in File Were Invalid"
+msgstr "Некои линии во датотеката беа невалидни"
+
+#: skycomponents/customcatalogcomponent.cpp:108
+msgid "Accept"
+msgstr "Прифати"
+
+#: skycomponents/customcatalogcomponent.cpp:115
+msgid ""
+"No lines could be parsed from the specified file, see error messages below."
+msgstr ""
+"Ниедна линија не можеше да се раздели од одредената датотека, види ги "
+"пораките за грешки подоле."
+
+#: skycomponents/customcatalogcomponent.cpp:117
+msgid "No Valid Data Found in File"
+msgstr "Не е нејден валиден податок во датотеката"
+
+#: skycomponents/customcatalogcomponent.cpp:125
+#: skycomponents/customcatalogcomponent.cpp:128
+#, fuzzy, kde-format
+msgid "Could not open custom data file: %1"
+msgstr "Неможам да ја отворам даподаточната датотека по избор: "
+
+#: skycomponents/customcatalogcomponent.cpp:126
+#, fuzzy
+msgid "Error opening file"
+msgstr "Грешка при бришење на датотеката"
+
+#: skycomponents/customcatalogcomponent.cpp:197
+#: skycomponents/customcatalogcomponent.cpp:206
+#: skycomponents/customcatalogcomponent.cpp:215
+#: skycomponents/customcatalogcomponent.cpp:225
+#: skycomponents/customcatalogcomponent.cpp:231
+#: skycomponents/customcatalogcomponent.cpp:260
+#: skycomponents/customcatalogcomponent.cpp:265
+#: skycomponents/customcatalogcomponent.cpp:276
+#: skycomponents/customcatalogcomponent.cpp:282
+#: skycomponents/customcatalogcomponent.cpp:288
+#: skycomponents/customcatalogcomponent.cpp:293
+#: skycomponents/customcatalogcomponent.cpp:298
+#: skycomponents/customcatalogcomponent.cpp:303
+msgid "Parsing header: "
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:198
+#, kde-format
+msgid "Extra Name field in header: %1.  Will be ignored"
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:207
+#, kde-format
+msgid "Extra Prefix field in header: %1.  Will be ignored"
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:216
+#, kde-format
+msgid "Extra Color field in header: %1.  Will be ignored"
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:226
+#, kde-format
+msgid "Could not convert Epoch to float: %1.  Using 2000. instead"
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:232
+#, kde-format
+msgid "Extra Epoch field in header: %1.  Will be ignored"
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:261
+#, kde-format
+msgid "Duplicate data field descriptor \"%1\" will be ignored"
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:266
+#, kde-format
+msgid "Invalid data field descriptor \"%1\" will be ignored"
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:277
+msgid "No valid column descriptors found.  Exiting"
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:283
+msgid "No data lines found after header.  Exiting."
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:289
+#, fuzzy
+msgid "No Catalog Name specified; setting to \"Custom\""
+msgstr "Неможам да расчленам"
+
+#: skycomponents/customcatalogcomponent.cpp:294
+#, fuzzy
+msgid "No Catalog Prefix specified; setting to \"CC\""
+msgstr "Неможам да расчленам"
+
+#: skycomponents/customcatalogcomponent.cpp:299
+#, fuzzy
+msgid "No Catalog Color specified; setting to Red"
+msgstr "Неможам да расчленам"
+
+#: skycomponents/customcatalogcomponent.cpp:304
+#, fuzzy
+msgid "No Catalog Epoch specified; assuming 2000."
+msgstr "Неможам да расчленам"
+
+#: skycomponents/customcatalogcomponent.cpp:333
+#, kde-format
+msgid "Line %1, field %2: Unable to parse RA value: %3"
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:342
+#, kde-format
+msgid "Line %1, field %2: Unable to parse Dec value: %3"
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:354
+#, kde-format
+msgid "Line %1, field %2: Invalid object type: %3"
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:356
+msgid "Must be one of 0, 1, 3, 4, 5, 6, 7, 8."
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:361
+#, kde-format
+msgid "Line %1, field %2: Unable to parse Object type: %3"
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:372
+#, kde-format
+msgid "Line %1, field %2: Unable to parse Magnitude: %3"
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:383
+#, kde-format
+msgid "Line %1, field %2: Unable to parse Major Axis: %3"
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:394
+#, kde-format
+msgid "Line %1, field %2: Unable to parse Minor Axis: %3"
+msgstr ""
+
+#: skycomponents/customcatalogcomponent.cpp:405
+#, kde-format
+msgid "Line %1, field %2: Unable to parse Position Angle: %3"
+msgstr ""
+
+#: skycomponents/deepskycomponent.cpp:68
+#, fuzzy
+msgid "Loading NGC/IC objects"
+msgstr "Најди објект"
+
+#: skycomponents/deepskycomponent.cpp:171
+msgid "Unnamed Object"
+msgstr "Неименуван објект"
+
+#: skycomponents/horizoncomponent.cpp:45
+#, fuzzy
+#| msgid "Creating Moon"
+msgid "Creating horizon"
+msgstr "Создавам Месечина"
+
+#: skycomponents/horizoncomponent.cpp:381
+msgctxt "Northeast"
+msgid "NE"
+msgstr "СИ"
+
+#: skycomponents/horizoncomponent.cpp:382
+msgctxt "East"
+msgid "E"
+msgstr "И"
+
+#: skycomponents/horizoncomponent.cpp:383
+msgctxt "Southeast"
+msgid "SE"
+msgstr "ЈИ"
+
+#: skycomponents/horizoncomponent.cpp:384
+msgctxt "South"
+msgid "S"
+msgstr "Ј"
+
+#: skycomponents/horizoncomponent.cpp:385
+msgctxt "Southwest"
+msgid "SW"
+msgstr "ЈЗ"
+
+#: skycomponents/horizoncomponent.cpp:386
+msgctxt "West"
+msgid "W"
+msgstr "З"
+
+#: skycomponents/horizoncomponent.cpp:387
+msgctxt "Northwest"
+msgid "NW"
+msgstr "СЗ"
+
+#: skycomponents/horizoncomponent.cpp:388
+msgctxt "North"
+msgid "N"
+msgstr "С"
+
+#: skycomponents/linelistindex.cpp:366
+#, fuzzy, kde-format
+msgid "Loading %1"
+msgstr "Вчитувам KStars..."
+
+#: skycomponents/milkyway.cpp:60
+msgid "Loading Milky Way"
+msgstr "Вчитувам Млечен Пат"
+
+#: skycomponents/satellitecomposite.cpp:44
+#, fuzzy
+#| msgid "Creating Planets"
+msgid "Creating Earth satellites"
+msgstr "Создавам планети"
+
+#: skycomponents/skymapcomposite.cpp:410
+#, fuzzy, kde-format
+msgid "Could not find custom catalog component named %1."
+msgstr "Неможам да ја отворам даподаточната датотека по избор: "
+
+#: skycomponents/solarsystemcomposite.cpp:84
+#, fuzzy
+msgid "Loading solar system"
+msgstr "Сончев систем"
+
+#: skycomponents/starcomponent.cpp:73 skycomponents/starcomponent.cpp:358
+#, fuzzy
+msgid "Loading stars"
+msgstr "Најди објект"
+
+#: skycomponents/starcomponent.cpp:110
+msgid "Please wait while re-indexing stars ..."
+msgstr ""
+
+#: skycomponents/starcomponent.cpp:163
+msgid "Please wait while loading faint stars ..."
+msgstr ""
+
+#: widgets/dmsbox.cpp:97
+#, fuzzy
+#| msgctxt "City name (optional, probably does not need a translation)"
+#| msgid "Evergreen"
+msgid "degrees"
+msgstr "Евергрин"
+
+#: widgets/dmsbox.cpp:97
+#, fuzzy
+#| msgctxt "City name (optional, probably does not need a translation)"
+#| msgid "Tours"
+msgid "hours"
+msgstr "Tours"
+
+#: widgets/dmsbox.cpp:98
+#, fuzzy
+#| msgctxt "City name (optional, probably does not need a translation)"
+#| msgid "Haines"
+msgid "arcminutes"
+msgstr "Haines"
+
+#: widgets/dmsbox.cpp:98
+#, fuzzy
+#| msgctxt "minutes"
+#| msgid "mins"
+msgid "minutes"
+msgstr "минути"
+
+#: widgets/dmsbox.cpp:99
+#, fuzzy
+#| msgctxt "City name (optional, probably does not need a translation)"
+#| msgid "Parsons"
+msgid "arcseconds"
+msgstr "Parsons"
+
+#: widgets/dmsbox.cpp:99
+#, fuzzy
+#| msgctxt "seconds"
+#| msgid "secs"
+msgid "seconds"
+msgstr "секунди"
+
+#: widgets/dmsbox.cpp:101
+#, kde-format
+msgid "Angle value in %1."
+msgstr ""
+
+#: widgets/dmsbox.cpp:105
+#, kde-format
+msgid ""
+"This box displays an angle in %1. The three numbers displayed are the "
+"angle's %1, %2, and %3."
+msgstr ""
+
+#: widgets/dmsbox.cpp:109
+#, kde-format
+msgid ""
+"  You may enter a simple integer, or a floating-point value, or space- or "
+"colon-delimited values specifying %1, %2 and %3"
+msgstr ""
+
+#: widgets/dmsbox.cpp:113
+#, kde-format
+msgid ""
+"Enter an angle value in %1.  The angle can be expressed as a simple integer "
+"(\"12\"), or floating-point (\"12.33\") value, or as space- or colon-"
+"delimited values specifying %1, %2 and %3 (\"12:20\", \"12:20:00\", \"12 20"
+"\", \"12 20 00.0\", etc.)."
+msgstr ""
+
+#: widgets/timespinbox.cpp:123 widgets/timespinbox.cpp:124
+#: widgets/timespinbox.cpp:125 widgets/timespinbox.cpp:126
+#: widgets/timespinbox.cpp:128 widgets/timespinbox.cpp:129
+#: widgets/timespinbox.cpp:130 widgets/timespinbox.cpp:131
+#: widgets/timespinbox.cpp:132
+msgctxt "seconds"
+msgid "secs"
+msgstr "секунди"
+
+#: widgets/timespinbox.cpp:127
+msgctxt "second"
+msgid "sec"
+msgstr "сек"
+
+#: widgets/timespinbox.cpp:133
+msgctxt "minute"
+msgid "min"
+msgstr "мин"
+
+#: widgets/timespinbox.cpp:134 widgets/timespinbox.cpp:135
+#: widgets/timespinbox.cpp:136 widgets/timespinbox.cpp:137
+#: widgets/timespinbox.cpp:138
+msgctxt "minutes"
+msgid "mins"
+msgstr "минути"
+
+#: widgets/timespinbox.cpp:139
+#, fuzzy
+#| msgctxt "City name (optional, probably does not need a translation)"
+#| msgid "Tours"
+msgid "hour"
+msgstr "Tours"
+
+#: widgets/timespinbox.cpp:140 widgets/timespinbox.cpp:141
+#: widgets/timespinbox.cpp:142 widgets/timespinbox.cpp:143
+msgctxt "hours"
+msgid "hrs"
+msgstr "часови"
+
+#: widgets/timespinbox.cpp:147
+msgid "day"
+msgstr "ден"
+
+#: widgets/timespinbox.cpp:151
+msgid "week"
+msgstr "недела"
+
+#: widgets/timespinbox.cpp:152 widgets/timespinbox.cpp:153
+msgctxt "weeks"
+msgid "wks"
+msgstr "недели"
+
+#: widgets/timespinbox.cpp:154
+msgid "month"
+msgstr "месец"
+
+#: widgets/timespinbox.cpp:155 widgets/timespinbox.cpp:156
+#: widgets/timespinbox.cpp:157 widgets/timespinbox.cpp:158
+#: widgets/timespinbox.cpp:159
+msgctxt "months"
+msgid "mths"
+msgstr "месеци"
+
+#: widgets/timespinbox.cpp:160
+msgid "year"
+msgstr "година"
+
+#: widgets/timespinbox.cpp:161 widgets/timespinbox.cpp:162
+#: widgets/timespinbox.cpp:163 widgets/timespinbox.cpp:164
+#: widgets/timespinbox.cpp:165 widgets/timespinbox.cpp:166
+#: widgets/timespinbox.cpp:167
+msgctxt "years"
+msgid "yrs"
+msgstr "години"
+
+#: widgets/timespinbox.cpp:218
+msgid "Reporting new timestep value: "
+msgstr "Известувам за нова вредност на временски напредок:"
+
+#: widgets/timestepbox.cpp:33
+#, fuzzy
+msgid "Adjust time step"
+msgstr "Дотерај временско напредување"
+
+#: widgets/timestepbox.cpp:34
+#, fuzzy
+msgid "Adjust time step units"
+msgstr "Дотерај единици за временско напредување"
+
+#: widgets/timestepbox.cpp:36
+msgid ""
+"Set the timescale for the simulation clock.  A setting of \"1 sec\" means "
+"the clock advances in real-time, keeping up perfectly with your CPU clock.  "
+"Higher values make the simulation clock run faster, lower values make it run "
+"slower.  Negative values make it run backwards.\n"
+"\n"
+"There are two pairs of up/down buttons.  The left pair will cycle through "
+"all available timesteps in sequence.  Since there are a large number of "
+"timesteps, the right pair is provided to skip to the next higher/lower unit "
+"of time.  For example, if the timescale is currently \"1 min\", the right up "
+"button will make it \"1 hour\", and the right down button will make it \"1 "
+"sec\""
+msgstr ""
+
 #~ msgid "Toggle Solar System"
 #~ msgstr "Вклучи/Исклучи Соларен Систем"
 
@@ -35334,10 +35833,6 @@ msgstr "Заоѓа во: %1"
 #~ msgstr "Време на транзит: 00:00"
 
 #, fuzzy
-#~ msgid "No star named %1 found."
-#~ msgstr "Не е најден објект со име %1."
-
-#, fuzzy
 #~ msgid "Bad Constellation Boundary data."
 #~ msgstr "Имиња на соѕвездија"
 
@@ -35349,80 +35844,9 @@ msgstr "Заоѓа во: %1"
 #~ msgid "Loading NGC/IC Data (%1%)"
 #~ msgstr "Вчитувам NGC/IC податоци"
 
-#~ msgid "Unnamed Object"
-#~ msgstr "Неименуван објект"
-
-#, fuzzy
-#~ msgid ""
-#~ "Some lines in the custom catalog could not be parsed; see error messages "
-#~ "below."
-#~ msgstr ""
-#~ "Некои линии неможат да се разделат во одреденото поле, видете ги пораките "
-#~ "за грешки подоле."
-
-#~ msgid "To reject the file, press Cancel. "
-#~ msgstr "За да се отфрли датотеката, притисни Откажи. "
-
-#~ msgid "To accept the file (ignoring unparsed lines), press Accept."
-#~ msgstr ""
-#~ "За да се прифати датотеката (игнорирајќи ги нераделените линии), притисни "
-#~ "Прифати."
-
-#, fuzzy
-#~ msgid "Some Lines in File Were Invalid"
-#~ msgstr "Некои линии во датотеката беа невалидни"
-
-#~ msgid "Accept"
-#~ msgstr "Прифати"
-
-#~ msgid ""
-#~ "No lines could be parsed from the specified file, see error messages "
-#~ "below."
-#~ msgstr ""
-#~ "Ниедна линија не можеше да се раздели од одредената датотека, види ги "
-#~ "пораките за грешки подоле."
-
-#~ msgid "No Valid Data Found in File"
-#~ msgstr "Не е нејден валиден податок во датотеката"
-
-#, fuzzy
-#~ msgid "Could not open custom data file: %1"
-#~ msgstr "Неможам да ја отворам даподаточната датотека по избор: "
-
-#, fuzzy
-#~ msgid "Error opening file"
-#~ msgstr "Грешка при бришење на датотеката"
-
-#, fuzzy
-#~ msgid "No Catalog Epoch specified; assuming 2000."
-#~ msgstr "Неможам да расчленам"
-
-#, fuzzy
-#~ msgid "Loading Custom catalogs"
-#~ msgstr "Додај каталог по избор..."
-
-#~ msgid "Loading Constellations"
-#~ msgstr "Вчитувам соѕвездија"
-
-#~ msgid "Loading Constellation Names"
-#~ msgstr "Вчитувам имиња на соѕвездија"
-
-#, fuzzy
-#~ msgid "Loading Constellation Boundaries"
-#~ msgstr "Вчитувам имиња на соѕвездија"
-
-#~ msgid "Loading Milky Way"
-#~ msgstr "Вчитувам Млечен Пат"
-
-#~ msgid "Creating Planets"
-#~ msgstr "Создавам планети"
-
 #, fuzzy
 #~ msgid "Creating Asteroids and Comets"
 #~ msgstr "Создавам планети"
-
-#~ msgid "Creating Moon"
-#~ msgstr "Создавам Месечина"
 
 #, fuzzy
 #~ msgid "Find object"
@@ -35655,93 +36079,6 @@ msgstr "Заоѓа во: %1"
 #, fuzzy
 #~ msgid "Enter Name for Script"
 #~ msgstr "Внеси име за овој каталог:"
-
-#~ msgctxt "North"
-#~ msgid "N"
-#~ msgstr "С"
-
-#~ msgctxt "Northeast"
-#~ msgid "NE"
-#~ msgstr "СИ"
-
-#~ msgctxt "East"
-#~ msgid "E"
-#~ msgstr "И"
-
-#~ msgctxt "Southeast"
-#~ msgid "SE"
-#~ msgstr "ЈИ"
-
-#~ msgctxt "South"
-#~ msgid "S"
-#~ msgstr "Ј"
-
-#~ msgctxt "Southwest"
-#~ msgid "SW"
-#~ msgstr "ЈЗ"
-
-#~ msgctxt "West"
-#~ msgid "W"
-#~ msgstr "З"
-
-#~ msgctxt "Northwest"
-#~ msgid "NW"
-#~ msgstr "СЗ"
-
-#~ msgctxt "seconds"
-#~ msgid "secs"
-#~ msgstr "секунди"
-
-#~ msgctxt "second"
-#~ msgid "sec"
-#~ msgstr "сек"
-
-#~ msgctxt "minute"
-#~ msgid "min"
-#~ msgstr "мин"
-
-#~ msgctxt "minutes"
-#~ msgid "mins"
-#~ msgstr "минути"
-
-#~ msgctxt "hours"
-#~ msgid "hrs"
-#~ msgstr "часови"
-
-#~ msgid "day"
-#~ msgstr "ден"
-
-#~ msgid "week"
-#~ msgstr "недела"
-
-#~ msgctxt "weeks"
-#~ msgid "wks"
-#~ msgstr "недели"
-
-#~ msgid "month"
-#~ msgstr "месец"
-
-#~ msgctxt "months"
-#~ msgid "mths"
-#~ msgstr "месеци"
-
-#~ msgid "year"
-#~ msgstr "година"
-
-#~ msgctxt "years"
-#~ msgid "yrs"
-#~ msgstr "години"
-
-#~ msgid "Reporting new timestep value: "
-#~ msgstr "Известувам за нова вредност на временски напредок:"
-
-#, fuzzy
-#~ msgid "Adjust time step"
-#~ msgstr "Дотерај временско напредување"
-
-#, fuzzy
-#~ msgid "Adjust time step units"
-#~ msgstr "Дотерај единици за временско напредување"
 
 #~ msgid "Day Duration"
 #~ msgstr "Траење на денот"
