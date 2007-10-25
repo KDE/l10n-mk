@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-24 06:11+0200\n"
+"POT-Creation-Date: 2007-10-25 06:18+0200\n"
 "PO-Revision-Date: 2007-02-17 11:32+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -640,13 +640,13 @@ msgstr "Менаџ&ирај..."
 msgid "&Quick Open"
 msgstr "Брзо о&творање"
 
-#: app/katemainwindow.cpp:422 app/katedocmanager.cpp:437
+#: app/katemainwindow.cpp:422 app/katedocmanager.cpp:445
 msgid "New file opened while trying to close Kate, closing aborted."
 msgstr ""
 "Отворена е нова датотека за време на затворањето на Kate, затворањето е "
 "прекинато."
 
-#: app/katemainwindow.cpp:423 app/katedocmanager.cpp:438
+#: app/katemainwindow.cpp:423 app/katedocmanager.cpp:446
 msgid "Closing Aborted"
 msgstr "Затворањето е прекинато"
 
@@ -925,20 +925,20 @@ msgstr "Листа со документи"
 msgid "Document List Settings"
 msgstr "Поставувања за листата со документи"
 
-#: app/kateconfigdialog.cpp:242
+#: app/kateconfigdialog.cpp:243
 msgid "Plugins"
 msgstr "Приклучоци"
 
-#: app/kateconfigdialog.cpp:243
+#: app/kateconfigdialog.cpp:244
 msgid "Plugin Manager"
 msgstr "Менаџер на приклучоци"
 
-#: app/kateconfigdialog.cpp:257
+#: app/kateconfigdialog.cpp:258
 #, fuzzy
 msgid "Editor Component"
 msgstr "Изберете компонента за уредување"
 
-#: app/kateconfigdialog.cpp:259
+#: app/kateconfigdialog.cpp:260
 #, fuzzy
 msgid "Editor Component Options"
 msgstr "Изберете компонента за уредување"
@@ -1201,19 +1201,19 @@ msgstr "Ја чита содржината на stdin"
 msgid "Document to open"
 msgstr "Документ за отвoрање"
 
-#: app/katedocmanager.cpp:291
+#: app/katedocmanager.cpp:299
 #, kde-format
 msgid ""
 "The supposedly temporary file %1 has been modified. Do you want to delete it "
 "anyway?"
 msgstr ""
 
-#: app/katedocmanager.cpp:293
+#: app/katedocmanager.cpp:301
 #, fuzzy
 msgid "Delete File?"
 msgstr "Избришано"
 
-#: app/katedocmanager.cpp:402
+#: app/katedocmanager.cpp:410
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The document '%1' has been modified, but not saved.<p>Do you want to "
@@ -1225,24 +1225,24 @@ msgstr ""
 "<p>Документот „%1“ беше изменет, но не и зачуван.<p>Дали сакате да ги "
 "зачувате вашите промени или ќе ги отфрлите?"
 
-#: app/katedocmanager.cpp:404
+#: app/katedocmanager.cpp:412
 msgid "Close Document"
 msgstr "Затворате документ"
 
-#: app/katedocmanager.cpp:411
+#: app/katedocmanager.cpp:419
 #, fuzzy
 msgid "Save As"
 msgstr "З&ачувај како..."
 
-#: app/katedocmanager.cpp:482
+#: app/katedocmanager.cpp:490
 msgid "Starting Up"
 msgstr "Стартување"
 
-#: app/katedocmanager.cpp:483
+#: app/katedocmanager.cpp:491
 msgid "Reopening files from the last session..."
 msgstr "Ги отворам датотеките од последната сесија..."
 
-#: app/katedocmanager.cpp:684
+#: app/katedocmanager.cpp:692
 msgid "Errors/Warnings while opening documents"
 msgstr ""
 
@@ -1359,25 +1359,68 @@ msgstr ""
 msgid "Session Renaming"
 msgstr "Име на сесија:"
 
-#: app/katefilelist.cpp:38
+#: app/katefilelist.cpp:51
 msgid "Sort &By"
 msgstr "Подреди с&поред"
 
-#: app/katefilelist.cpp:42
+#: app/katefilelist.cpp:55 app/katefilelist.cpp:179
 msgid "Opening Order"
 msgstr "Редослед на отворање"
 
-#: app/katefilelist.cpp:42
+#: app/katefilelist.cpp:55 app/katefilelist.cpp:180
 msgid "Document Name"
 msgstr "Име на документ"
 
-#: app/katefilelist.cpp:42
+#: app/katefilelist.cpp:55
 msgid "URL"
 msgstr "URL"
 
-#: app/katefilelist.cpp:42
+#: app/katefilelist.cpp:55 app/katefilelist.cpp:182
 msgid "Custom"
 msgstr ""
+
+#: app/katefilelist.cpp:153
+msgid "Background Shading"
+msgstr "Засенчување на подлогата"
+
+#: app/katefilelist.cpp:162
+msgid "&Viewed documents' shade:"
+msgstr "Засенчу&вање на прегледуван документ:"
+
+#: app/katefilelist.cpp:167
+msgid "&Modified documents' shade:"
+msgstr "Засенчување на &модифициран документ:"
+
+#: app/katefilelist.cpp:174
+msgid "&Sort by:"
+msgstr "Подреди с&поред:"
+
+#: app/katefilelist.cpp:181
+msgid "Url"
+msgstr ""
+
+#: app/katefilelist.cpp:187
+msgid ""
+"When background shading is enabled, documents that have been viewed or "
+"edited within the current session will have a shaded background. The most "
+"recent documents have the strongest shade."
+msgstr ""
+"Кога е овозможено засенчувањето на подлогата, документите што биле "
+"прегледувани или уредувани неодамна ќе имаат засенчена подлога. Последните "
+"посетени документи ќе бидат најзасенчени."
+
+#: app/katefilelist.cpp:191
+msgid "Set the color for shading viewed documents."
+msgstr "Ја поставува бојата за засенчување на прегледуваните документи."
+
+#: app/katefilelist.cpp:193
+msgid ""
+"Set the color for modified documents. This color is blended into the color "
+"for viewed files. The most recently edited documents get most of this color."
+msgstr ""
+"Ја поставува бојата за неодамна уредуваните документи. Оваа боја е измешана "
+"со бојата на прегледаните датотеки. Последните посетени документи ќе бидат "
+"најобоени."
 
 #: app/kateviewmanager.cpp:117
 msgid "Split Ve&rtical"
@@ -2457,41 +2500,8 @@ msgstr "Сесии"
 #~ "<b>Оваа датотека беше изменета (избришана) на дискот од друга програма.</"
 #~ "b><br />"
 
-#~ msgid "Background Shading"
-#~ msgstr "Засенчување на подлогата"
-
 #~ msgid "&Enable background shading"
 #~ msgstr "Овозможи зас&енчување на подлогата"
-
-#~ msgid "&Viewed documents' shade:"
-#~ msgstr "Засенчу&вање на прегледуван документ:"
-
-#~ msgid "&Modified documents' shade:"
-#~ msgstr "Засенчување на &модифициран документ:"
-
-#~ msgid "&Sort by:"
-#~ msgstr "Подреди с&поред:"
-
-#~ msgid ""
-#~ "When background shading is enabled, documents that have been viewed or "
-#~ "edited within the current session will have a shaded background. The most "
-#~ "recent documents have the strongest shade."
-#~ msgstr ""
-#~ "Кога е овозможено засенчувањето на подлогата, документите што биле "
-#~ "прегледувани или уредувани неодамна ќе имаат засенчена подлога. "
-#~ "Последните посетени документи ќе бидат најзасенчени."
-
-#~ msgid "Set the color for shading viewed documents."
-#~ msgstr "Ја поставува бојата за засенчување на прегледуваните документи."
-
-#~ msgid ""
-#~ "Set the color for modified documents. This color is blended into the "
-#~ "color for viewed files. The most recently edited documents get most of "
-#~ "this color."
-#~ msgstr ""
-#~ "Ја поставува бојата за неодамна уредуваните документи. Оваа боја е "
-#~ "измешана со бојата на прегледаните датотеки. Последните посетени "
-#~ "документи ќе бидат најобоени."
 
 #~ msgid "Set the sorting method for the documents."
 #~ msgstr "Постави го методот за подредување на документите."
