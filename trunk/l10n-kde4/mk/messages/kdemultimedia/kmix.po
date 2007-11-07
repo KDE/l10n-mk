@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmix\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-06 05:57+0100\n"
+"POT-Creation-Date: 2007-11-07 05:57+0100\n"
 "PO-Revision-Date: 2006-07-28 21:00+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -57,7 +57,7 @@ msgstr ""
 msgid "Hardware &Information"
 msgstr "&Информации за хардверот"
 
-#: kmix.cpp:114 kmixdockwidget.cpp:391
+#: kmix.cpp:114 kmixdockwidget.cpp:382
 msgid "Hide Mixer Window"
 msgstr "Скриј ја миксетата"
 
@@ -67,7 +67,18 @@ msgstr "Скриј ја миксетата"
 msgid "Configure &Channels"
 msgstr "&Канали"
 
-#: kmix.cpp:564
+#: kmix.cpp:395
+#, kde-format
+msgid ""
+"The soundcard containing the master device was unplugged. Changing to "
+"control %1 on card %2"
+msgstr ""
+
+#: kmix.cpp:404
+msgid "The last soundcard was unplugged."
+msgstr ""
+
+#: kmix.cpp:599
 msgid "Mixer Hardware Information"
 msgstr "Инфо. за хардверот на миксетата"
 
@@ -139,28 +150,28 @@ msgstr "Ги зачувува тековните гласности како с�
 msgid "Restore default volumes"
 msgstr "Ги враќа стандардните гласности"
 
-#: kmixdockwidget.cpp:75
+#: kmixdockwidget.cpp:76
 msgid "M&ute"
 msgstr "Зан&еми"
 
-#: kmixdockwidget.cpp:84
+#: kmixdockwidget.cpp:85
 msgid "Select Master Channel..."
 msgstr "Изберете главен канал..."
 
-#: kmixdockwidget.cpp:177
+#: kmixdockwidget.cpp:168
 msgid "Mixer cannot be found"
 msgstr "Миксетата не е пронајдена"
 
-#: kmixdockwidget.cpp:197
+#: kmixdockwidget.cpp:188
 #, kde-format
 msgid "Volume at %1%"
 msgstr "Гласност %1%"
 
-#: kmixdockwidget.cpp:199
+#: kmixdockwidget.cpp:190
 msgid " (Muted)"
 msgstr " (занемено)"
 
-#: kmixdockwidget.cpp:395
+#: kmixdockwidget.cpp:386
 msgid "Show Mixer Window"
 msgstr "Прикажи ја миксетата"
 
@@ -603,11 +614,11 @@ msgstr ""
 "Побарајте од вашиот системски администратор да го поправи /dev/audioctl за "
 "да имате пристап."
 
-#: mixertoolbox.cpp:220
+#: mixertoolbox.cpp:181
 msgid "Sound drivers supported:"
 msgstr "Поддржани управувачи на звук:"
 
-#: mixertoolbox.cpp:221
+#: mixertoolbox.cpp:182
 msgid "Sound drivers used:"
 msgstr "Управувачи на звук што се користат:"
 
