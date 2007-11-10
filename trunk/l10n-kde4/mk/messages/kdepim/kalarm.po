@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-09 06:05+0100\n"
+"POT-Creation-Date: 2007-11-10 05:58+0100\n"
 "PO-Revision-Date: 2007-02-28 14:12+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -4640,7 +4640,21 @@ msgctxt "@info"
 msgid "Alarm daemon not found."
 msgstr "Даемонот за аларм не е пронајден."
 
-#: daemon.cpp:248
+#: daemon.cpp:252
+#, fuzzy, kde-format
+#| msgid ""
+#| "Cannot enable alarms:\n"
+#| "Failed to start Alarm Daemon (%1)"
+msgctxt "@info"
+msgid ""
+"Cannot enable alarms.<br />Installation or configuration error: "
+"<application>Alarm Daemon</application> (<command>%1</command>) version is "
+"incompatible."
+msgstr ""
+"Алармите не можат да бидат овозможени:\n"
+"Не успеав да го стартувам Даемонот за аларм (%1)"
+
+#: daemon.cpp:267
 #, fuzzy, kde-format
 #| msgid ""
 #| "Alarms will be disabled if you stop KAlarm.\n"
@@ -4655,7 +4669,7 @@ msgstr ""
 "(Грешка при инсталација или конфигурација: %1 не може да ја најде извршната "
 "дат. %2.)"
 
-#: daemon.cpp:263
+#: daemon.cpp:280
 #, fuzzy, kde-format
 #| msgid ""
 #| "Cannot enable alarms:\n"
@@ -4663,12 +4677,13 @@ msgstr ""
 msgctxt "@info"
 msgid ""
 "Cannot enable alarms:<br />Failed to register with <application>Alarm "
-"Daemon</application> (<command>%1</command>)"
+"Daemon</application> (<command>%1</command>)(Possible installation or "
+"configuration error)"
 msgstr ""
 "Алармите не можат да бидат овозможени:\n"
 "Не успеав да се регистрирам со Даемонот за аларм (%1)"
 
-#: daemon.cpp:313
+#: daemon.cpp:346
 #, fuzzy, kde-format
 #| msgid ""
 #| "Cannot enable alarms:\n"
@@ -4681,7 +4696,7 @@ msgstr ""
 "Алармите не можат да бидат овозможени:\n"
 "Не успеав да го стартувам Даемонот за аларм (%1)"
 
-#: daemon.cpp:809
+#: daemon.cpp:842
 #, fuzzy
 #| msgid "Enable &Alarms"
 msgctxt "@action"
