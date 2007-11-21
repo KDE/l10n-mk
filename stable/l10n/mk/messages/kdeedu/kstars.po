@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
-"POT-Creation-Date: 2007-08-28 01:15+0200\n"
+"POT-Creation-Date: 2007-11-21 01:17+0100\n"
 "PO-Revision-Date: 2007-02-26 21:35+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -136,7 +136,7 @@ msgstr ""
 msgid "Help on custom catalog file format"
 msgstr "Помош за форматот на датотеката на сопствениот каталог"
 
-#: addcatdialog.cpp:145 customcatalog.cpp:22 kstarsdata.cpp:1493
+#: addcatdialog.cpp:145 customcatalog.cpp:22 kstarsdata.cpp:1498
 #, fuzzy
 msgid "Custom"
 msgstr "Сопствен"
@@ -401,8 +401,9 @@ msgstr "Општо"
 
 #: detaildialog.cpp:137 kspopupmenu.cpp:55 kspopupmenu.cpp:237
 #: kstarsdata.cpp:128 kstarsinit.cpp:526 kstarsinit.cpp:542
-#: skymapdraw.cpp:1226 starobject.cpp:243 tools/observinglist.cpp:186
-#: tools/observinglist.cpp:232 tools/observinglist.cpp:271
+#: skymapdraw.cpp:1226 skymapdraw.cpp:1394 starobject.cpp:243
+#: tools/observinglist.cpp:186 tools/observinglist.cpp:232
+#: tools/observinglist.cpp:271
 msgid "star"
 msgstr "ѕвезда"
 
@@ -1012,25 +1013,20 @@ msgstr ""
 msgid "Invalid range for element %1. Valid range is from %2 to %3"
 msgstr "Неважечки опсег за елементот %1. Важечки опсег е од %2 до %3"
 
-#: indiproperty.cpp:220 kspopupmenu.cpp:213
-#, fuzzy
-msgid "Center && Track Crosshair"
-msgstr "Центрирај и барај"
-
-#: indiproperty.cpp:344
+#: indiproperty.cpp:347
 msgid "Cannot open file %1 for reading"
 msgstr "Не можам да ја отворам датотеката %1 за читање"
 
-#: indiproperty.cpp:354
+#: indiproperty.cpp:357
 #, c-format
 msgid "Not enough memory to load %1"
 msgstr "Нема доволно меморија да се вчита %1"
 
-#: indiproperty.cpp:366
+#: indiproperty.cpp:369
 msgid "Not enough memory to convert file %1 to base64"
 msgstr "Нема доволно меморија за конверзија на датотека %1 во base64"
 
-#: indiproperty.cpp:899
+#: indiproperty.cpp:902
 msgid "Upload"
 msgstr "Качи"
 
@@ -1261,6 +1257,11 @@ msgstr "Спектрален тип: %1"
 #, no-c-format
 msgid "Add Link..."
 msgstr "Додај врска..."
+
+#: kspopupmenu.cpp:213
+#, fuzzy
+msgid "Center && Track Crosshair"
+msgstr "Центрирај и барај"
 
 #: kspopupmenu.cpp:269
 msgid "Rise time: 00:00"
@@ -22279,7 +22280,7 @@ msgstr "Не можам да ја избришам датотеката: %1"
 msgid "Download Error"
 msgstr "Грешка при симнување"
 
-#: kstarsactions.cpp:531 kstarsdata.cpp:2328 tools/observinglist.cpp:530
+#: kstarsactions.cpp:531 kstarsdata.cpp:2334 tools/observinglist.cpp:530
 #, fuzzy, c-format
 msgid "Could not open file %1"
 msgstr "Не можам да ја отворам датотеката"
@@ -22410,12 +22411,12 @@ msgstr ""
 msgid "Bad Constellation Boundary data."
 msgstr "Имиња на соѕвездија"
 
-#: kstarsdata.cpp:587 kstarsdata.cpp:1837
+#: kstarsdata.cpp:587 kstarsdata.cpp:1842
 #, fuzzy
 msgid "Loading Star Data (%1%)"
 msgstr "Вчитувам податоци за ѕвездата"
 
-#: kstarsdata.cpp:791 kstarsdata.cpp:1848
+#: kstarsdata.cpp:791 kstarsdata.cpp:1853
 #, fuzzy
 msgid "Loading NGC/IC Data (%1%)"
 msgstr "Вчитувам NGC/IC податоци"
@@ -22434,16 +22435,16 @@ msgid ""
 "links is not possible"
 msgstr ""
 
-#: kstarsdata.cpp:1140
+#: kstarsdata.cpp:1145
 #, c-format
 msgid "Error adding catalog: %1"
 msgstr "Грешка при додавање на каталог: %1"
 
-#: kstarsdata.cpp:1218
+#: kstarsdata.cpp:1223
 msgid "Line %1 does not contain %2 fields.  Skipping it."
 msgstr "Линија %1 не содржи %2 полиња.  Ја прескокнувам."
 
-#: kstarsdata.cpp:1225
+#: kstarsdata.cpp:1230
 #, fuzzy
 msgid ""
 "Some lines in the custom catalog could not be parsed; see error messages below."
@@ -22451,149 +22452,149 @@ msgstr ""
 "Некои линии неможат да се разделат во одреденото поле, видете ги пораките за "
 "грешки подоле."
 
-#: kstarsdata.cpp:1226
+#: kstarsdata.cpp:1231
 msgid "To reject the file, press Cancel. "
 msgstr "За да се отфрли датотеката, притисни Откажи. "
 
-#: kstarsdata.cpp:1227
+#: kstarsdata.cpp:1232
 msgid "To accept the file (ignoring unparsed lines), press Accept."
 msgstr ""
 "За да се прифати датотеката (игнорирајќи ги нераделените линии), притисни "
 "Прифати."
 
-#: kstarsdata.cpp:1229
+#: kstarsdata.cpp:1234
 #, fuzzy
 msgid "Some Lines in File Were Invalid"
 msgstr "Некои линии во датотеката беа невалидни"
 
-#: kstarsdata.cpp:1229
+#: kstarsdata.cpp:1234
 msgid "Accept"
 msgstr "Прифати"
 
-#: kstarsdata.cpp:1235
+#: kstarsdata.cpp:1240
 msgid ""
 "No lines could be parsed from the specified file, see error messages below."
 msgstr ""
 "Ниедна линија не можеше да се раздели од одредената датотека, види ги пораките "
 "за грешки подоле."
 
-#: kstarsdata.cpp:1237
+#: kstarsdata.cpp:1242
 msgid "No Valid Data Found in File"
 msgstr "Не е нејден валиден податок во датотеката"
 
-#: kstarsdata.cpp:1244 kstarsdata.cpp:1247
+#: kstarsdata.cpp:1249 kstarsdata.cpp:1252
 #, fuzzy, c-format
 msgid "Could not open custom data file: %1"
 msgstr "Неможам да ја отворам даподаточната датотека по избор: "
 
-#: kstarsdata.cpp:1245
+#: kstarsdata.cpp:1250
 #, fuzzy
 msgid "Error opening file"
 msgstr "Грешка при бришење на датотеката"
 
-#: kstarsdata.cpp:1277
+#: kstarsdata.cpp:1282
 msgid "Line %1, field %2: Unable to parse RA value: %3"
 msgstr ""
 
-#: kstarsdata.cpp:1286
+#: kstarsdata.cpp:1291
 msgid "Line %1, field %2: Unable to parse Dec value: %3"
 msgstr ""
 
-#: kstarsdata.cpp:1298
+#: kstarsdata.cpp:1303
 msgid "Line %1, field %2: Invalid object type: %3"
 msgstr "Линија %1, поле %2: Невалиден тип на објект: %3"
 
-#: kstarsdata.cpp:1300
+#: kstarsdata.cpp:1305
 msgid "Must be one of 0, 1, 3, 4, 5, 6, 7, 8."
 msgstr "Мора да е еден од 0, 1, 3, 4, 5, 6, 7, 8."
 
-#: kstarsdata.cpp:1305
+#: kstarsdata.cpp:1310
 msgid "Line %1, field %2: Unable to parse Object type: %3"
 msgstr "Линија %1, поле %2: Не можам да анализирам тип на објект: %3"
 
-#: kstarsdata.cpp:1316
+#: kstarsdata.cpp:1321
 msgid "Line %1, field %2: Unable to parse Magnitude: %3"
 msgstr "Линија %1, поле %2: Не можам да анализирам магнитуда: %3"
 
-#: kstarsdata.cpp:1327
+#: kstarsdata.cpp:1332
 msgid "Line %1, field %2: Unable to parse Major Axis: %3"
 msgstr "Линија %1, поле %2: Не можам да анализирам главна оска: %3"
 
-#: kstarsdata.cpp:1338
+#: kstarsdata.cpp:1343
 msgid "Line %1, field %2: Unable to parse Minor Axis: %3"
 msgstr "Линија %1, поле %2: Не можам да анализирам споредна оска: %3"
 
-#: kstarsdata.cpp:1349
+#: kstarsdata.cpp:1354
 msgid "Line %1, field %2: Unable to parse Position Angle: %3"
 msgstr "Линија %1, поле %2: Не можам да анализирам агол на позиција: %3"
 
-#: kstarsdata.cpp:1397 kstarsdata.cpp:1406 kstarsdata.cpp:1415
-#: kstarsdata.cpp:1425 kstarsdata.cpp:1431 kstarsdata.cpp:1463
-#: kstarsdata.cpp:1468 kstarsdata.cpp:1479 kstarsdata.cpp:1485
-#: kstarsdata.cpp:1491 kstarsdata.cpp:1496 kstarsdata.cpp:1501
-#: kstarsdata.cpp:1506
+#: kstarsdata.cpp:1402 kstarsdata.cpp:1411 kstarsdata.cpp:1420
+#: kstarsdata.cpp:1430 kstarsdata.cpp:1436 kstarsdata.cpp:1468
+#: kstarsdata.cpp:1473 kstarsdata.cpp:1484 kstarsdata.cpp:1490
+#: kstarsdata.cpp:1496 kstarsdata.cpp:1501 kstarsdata.cpp:1506
+#: kstarsdata.cpp:1511
 msgid "Parsing header: "
 msgstr "Анализирам заглавие: "
 
-#: kstarsdata.cpp:1398
+#: kstarsdata.cpp:1403
 msgid "Extra Name field in header: %1.  Will be ignored"
 msgstr "Вишок поле за име во заглавието: %1.  Ќе биде игнорирано"
 
-#: kstarsdata.cpp:1407
+#: kstarsdata.cpp:1412
 msgid "Extra Prefix field in header: %1.  Will be ignored"
 msgstr "Вишок поле за префикс во заглавието: %1.  Ќе биде игнорирано"
 
-#: kstarsdata.cpp:1416
+#: kstarsdata.cpp:1421
 msgid "Extra Color field in header: %1.  Will be ignored"
 msgstr "Вишок поле за боја во заглавието: %1.  Ќе биде игнорирано"
 
-#: kstarsdata.cpp:1426
+#: kstarsdata.cpp:1431
 msgid "Could not convert Epoch to float: %1.  Using 2000. instead"
 msgstr ""
 
-#: kstarsdata.cpp:1432
+#: kstarsdata.cpp:1437
 msgid "Extra Epoch field in header: %1.  Will be ignored"
 msgstr ""
 
-#: kstarsdata.cpp:1464
+#: kstarsdata.cpp:1469
 msgid "Duplicate data field descriptor \"%1\" will be ignored"
 msgstr ""
 
-#: kstarsdata.cpp:1469
+#: kstarsdata.cpp:1474
 msgid "Invalid data field descriptor \"%1\" will be ignored"
 msgstr ""
 
-#: kstarsdata.cpp:1480
+#: kstarsdata.cpp:1485
 msgid "No valid column descriptors found.  Exiting"
 msgstr ""
 
-#: kstarsdata.cpp:1486
+#: kstarsdata.cpp:1491
 msgid "No data lines found after header.  Exiting."
 msgstr "Не се пронајдени податочни линии после заглавието.  Излегувам."
 
-#: kstarsdata.cpp:1492
+#: kstarsdata.cpp:1497
 msgid "No Catalog Name specified; setting to \"Custom\""
 msgstr ""
 
-#: kstarsdata.cpp:1497
+#: kstarsdata.cpp:1502
 msgid "No Catalog Prefix specified; setting to \"CC\""
 msgstr ""
 
-#: kstarsdata.cpp:1502
+#: kstarsdata.cpp:1507
 msgid "No Catalog Color specified; setting to Red"
 msgstr ""
 
-#: kstarsdata.cpp:1507
+#: kstarsdata.cpp:1512
 #, fuzzy
 msgid "No Catalog Epoch specified; assuming 2000."
 msgstr "Неможам да расчленам"
 
-#: kstarsdata.cpp:1538
+#: kstarsdata.cpp:1543
 msgid "Cities.dat: Ran out of fields.  Line was:"
 msgstr "Cities.dat: Нема повеќе полиња.  Линијата беше:"
 
-#: kstarsdata.cpp:1556 kstarsdata.cpp:1562 kstarsdata.cpp:1568
-#: kstarsdata.cpp:1581 kstarsdata.cpp:1587 kstarsdata.cpp:1593
+#: kstarsdata.cpp:1561 kstarsdata.cpp:1567 kstarsdata.cpp:1573
+#: kstarsdata.cpp:1586 kstarsdata.cpp:1592 kstarsdata.cpp:1598
 msgid ""
 "\n"
 "Cities.dat: Bad integer.  Line was:\n"
@@ -22601,7 +22602,7 @@ msgstr ""
 "\n"
 "Cities.dat: Неправилен цел број.  Линијата беше:\n"
 
-#: kstarsdata.cpp:1575
+#: kstarsdata.cpp:1580
 msgid ""
 "\n"
 "Cities.dat: Invalid latitude sign.  Line was:\n"
@@ -22609,7 +22610,7 @@ msgstr ""
 "\n"
 "Cities.dat: Невалиден знак за географска ширина. Линијата беше:\n"
 
-#: kstarsdata.cpp:1600
+#: kstarsdata.cpp:1605
 msgid ""
 "\n"
 "Cities.dat: Invalid longitude sign.  Line was:\n"
@@ -22617,7 +22618,7 @@ msgstr ""
 "\n"
 "Cities.dat: Невалиден знак за географска должина.  Линијата беше:\n"
 
-#: kstarsdata.cpp:1618
+#: kstarsdata.cpp:1623
 msgid ""
 "\n"
 "Cities.dat: Bad time zone.  Line was:\n"
@@ -22625,7 +22626,7 @@ msgstr ""
 "\n"
 "Cities.dat: Погрешна временска зона. Линијата беше:\n"
 
-#: kstarsdata.cpp:1769
+#: kstarsdata.cpp:1774
 #, fuzzy
 msgid ""
 "The file %1 could not be found. KStars cannot run properly without this file. "
@@ -22638,16 +22639,16 @@ msgstr ""
 "Ставете ја на една од следниве локации, и потоа обидете се повторно:\n"
 "\n"
 
-#: kstarsdata.cpp:1775
+#: kstarsdata.cpp:1780
 msgid "Otherwise, press Cancel to shutdown."
 msgstr "Инаку, притиснете Откажи за спуштање."
 
-#: kstarsdata.cpp:1776
+#: kstarsdata.cpp:1781
 #, c-format
 msgid "Critical File Not Found: %1"
 msgstr "Критична датотека не е најдена: %1"
 
-#: kstarsdata.cpp:1778
+#: kstarsdata.cpp:1783
 #, fuzzy
 msgid ""
 "The file %1 could not be found. KStars can still run without this file. "
@@ -22662,77 +22663,77 @@ msgstr ""
 "да ја сместите датотеката на едно од следниве места:\n"
 "\n"
 
-#: kstarsdata.cpp:1784
+#: kstarsdata.cpp:1789
 msgid "Otherwise, press Cancel to continue loading without this file."
 msgstr ""
 "Инаку, притиснете Откажи за да продолжи со вчитување без оваа датотека."
 
-#: kstarsdata.cpp:1785
+#: kstarsdata.cpp:1790
 #, c-format
 msgid "Non-Critical File Not Found: %1"
 msgstr "Не-Критичната датотека не е најдена: %1"
 
-#: kstarsdata.cpp:1788
+#: kstarsdata.cpp:1793
 msgid "Retry"
 msgstr "Обиди се повторно"
 
-#: kstarsdata.cpp:1811
+#: kstarsdata.cpp:1816
 #, fuzzy
 msgid "Reading Time Zone Rules"
 msgstr "Правила за зимско и летно сметање на времето"
 
-#: kstarsdata.cpp:1827
+#: kstarsdata.cpp:1832
 msgid "Loading City Data"
 msgstr "Вчитувам податоци за градот"
 
-#: kstarsdata.cpp:1852
+#: kstarsdata.cpp:1857
 #, fuzzy
 msgid "Loading Custom catalogs"
 msgstr "Додај каталог по избор..."
 
-#: kstarsdata.cpp:1860
+#: kstarsdata.cpp:1865
 msgid "Loading Constellations"
 msgstr "Вчитувам соѕвездија"
 
-#: kstarsdata.cpp:1867
+#: kstarsdata.cpp:1872
 msgid "Loading Constellation Names"
 msgstr "Вчитувам имиња на соѕвездија"
 
-#: kstarsdata.cpp:1874
+#: kstarsdata.cpp:1879
 #, fuzzy
 msgid "Loading Constellation Boundaries"
 msgstr "Вчитувам имиња на соѕвездија"
 
-#: kstarsdata.cpp:1881
+#: kstarsdata.cpp:1886
 msgid "Loading Milky Way"
 msgstr "Вчитувам Млечен Пат"
 
-#: kstarsdata.cpp:1888
+#: kstarsdata.cpp:1893
 msgid "Creating Planets"
 msgstr "Создавам планети"
 
-#: kstarsdata.cpp:1897
+#: kstarsdata.cpp:1902
 #, fuzzy
 msgid "Creating Asteroids and Comets"
 msgstr "Создавам планети"
 
-#: kstarsdata.cpp:1907
+#: kstarsdata.cpp:1912
 msgid "Creating Moon"
 msgstr "Создавам Месечина"
 
-#: kstarsdata.cpp:1915
+#: kstarsdata.cpp:1920
 msgid "Loading Image URLs"
 msgstr "Вчитувам URL-а за сликата"
 
-#: kstarsdata.cpp:1929
+#: kstarsdata.cpp:1934
 msgid "Loading Information URLs"
 msgstr "Вчитувам Информациони URL-ови"
 
-#: kstarsdata.cpp:2427
+#: kstarsdata.cpp:2433
 msgid "Could not set time: %1 / %2 / %3 ; %4:%5:%6"
 msgstr ""
 
-#: kstarsdata.cpp:2542
+#: kstarsdata.cpp:2548
 msgid "Could not set location named %1, %2, %3"
 msgstr ""
 
