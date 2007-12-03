@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-02 06:09+0100\n"
+"POT-Creation-Date: 2007-12-03 06:07+0100\n"
 "PO-Revision-Date: 2007-02-28 14:24+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -2251,7 +2251,7 @@ msgstr "Не можам да ја запишам архивата во крај�
 msgid "Priority"
 msgstr "Приоритет"
 
-#: kotodoview.cpp:133 printing/calprintdefaultplugins.cpp:1149
+#: kotodoview.cpp:133
 msgid "Complete"
 msgstr "Завршен"
 
@@ -5206,7 +5206,7 @@ msgid ""
 "With this setting you can configure whether the domain part of the free/busy "
 "url has to match the domain part of the user id you are looking for. For "
 "example if this option is 'true' then looking for the free/busy data of "
-"joe@mydomain.com on the server www.yourdomain.com won't work."
+"joe@mydomain.com on the server www.yourdomain.com will fail."
 msgstr ""
 
 #. i18n: tag label
@@ -7320,10 +7320,16 @@ msgid "Percent Complete"
 msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1065
+#, fuzzy
+#| msgid "Ascending"
+msgctxt "@option sort in increasing order"
 msgid "Ascending"
 msgstr "Растечки"
 
 #: printing/calprintdefaultplugins.cpp:1066
+#, fuzzy
+#| msgid "Descending"
+msgctxt "@option sort in descreasing order"
 msgid "Descending"
 msgstr "Опаѓачки"
 
@@ -7331,9 +7337,19 @@ msgstr "Опаѓачки"
 msgid "To-do list"
 msgstr ""
 
+#: printing/calprintdefaultplugins.cpp:1149
+#, fuzzy
+#| msgid "Complete"
+msgctxt "@label to-do percentage complete"
+msgid "Complete"
+msgstr "Завршен"
+
 #: printing/calprintdefaultplugins.cpp:1157
+#, fuzzy
+#| msgid "&Due:"
+msgctxt "@label to-do due date"
 msgid "Due"
-msgstr ""
+msgstr "&Краен рок:"
 
 #: printing/calprintpluginbase.cpp:125
 msgid "This printing style does not have any configuration options."
@@ -7379,8 +7395,8 @@ msgid "%1 %2 - %3 %4"
 msgstr "%2 %1 - %4 %3"
 
 #: printing/cellitem.cpp:37
-msgid "<undefined>"
-msgstr "<недефинирано>"
+msgid "<placeholder>undefined</placeholder>"
+msgstr ""
 
 #: printing/calprintdefaultplugins.h:47
 #, fuzzy
@@ -8672,6 +8688,9 @@ msgstr ""
 #: koagenda.cpp:1145
 msgid "Unable to add the future items to the calendar. No change will be done."
 msgstr ""
+
+#~ msgid "<undefined>"
+#~ msgstr "<недефинирано>"
 
 #~ msgid "Owner:"
 #~ msgstr "Сопственик:"
