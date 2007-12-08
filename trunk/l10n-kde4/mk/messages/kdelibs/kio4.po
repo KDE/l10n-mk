@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-07 06:02+0100\n"
+"POT-Creation-Date: 2007-12-08 05:56+0100\n"
 "PO-Revision-Date: 2007-11-28 17:37+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -151,7 +151,7 @@ msgid "The clipboard is empty"
 msgstr "Таблата со исечоци е празна"
 
 #: kio/paste.cpp:203 kio/renamedialog.cpp:392 kio/kdirlister.cpp:295
-#: kio/krun.cpp:831
+#: kio/krun.cpp:835
 #, kde-format
 msgid ""
 "Malformed URL\n"
@@ -2353,11 +2353,16 @@ msgstr "Не сте авторизирани да ја извршите оваа
 msgid "Launching %1"
 msgstr "Пуштање на %1"
 
-#: kio/krun.cpp:701
+#: kio/krun.cpp:638
+#, kde-format
+msgid "Error processing Exec field in %1"
+msgstr ""
+
+#: kio/krun.cpp:705
 msgid "You are not authorized to execute this service."
 msgstr "Не сте авторизирани да го извршите овој сервис."
 
-#: kio/krun.cpp:867
+#: kio/krun.cpp:871
 #, kde-format
 msgid ""
 "<qt>Unable to run the command specified. The file or folder <b>%1</b> does "
@@ -2366,7 +2371,7 @@ msgstr ""
 "<qt>Не може да се изврши дадената команда. Датотеката или папката <b>%1</b> "
 "не постои.</qt>"
 
-#: kio/krun.cpp:1463
+#: kio/krun.cpp:1467
 #, kde-format
 msgid "Could not find the program '%1'"
 msgstr "Не можам да ја најдам програмата „%1“"
@@ -4629,7 +4634,7 @@ msgstr "Отвори ја папката во уредувачот за обел
 msgid "Delete Folder"
 msgstr "Избриши папка"
 
-#: bookmarks/kbookmarkmenu.cc:263 ../kfile/kdiroperator.cpp:1569
+#: bookmarks/kbookmarkmenu.cc:263 ../kfile/kdiroperator.cpp:1567
 msgid "Properties"
 msgstr "Својства"
 
@@ -4752,8 +4757,8 @@ msgid "Select Folder"
 msgstr "Изберете папка"
 
 #: bookmarks/kbookmarkdialog.cc:128 ../kfile/kdirselectdialog.cpp:114
-#: ../kfile/kdirselectdialog.cpp:118 ../kfile/kdiroperator.cpp:629
-#: ../kfile/kdiroperator.cpp:637
+#: ../kfile/kdirselectdialog.cpp:118 ../kfile/kdiroperator.cpp:627
+#: ../kfile/kdiroperator.cpp:635
 msgid "New Folder"
 msgstr "Нова папка"
 
@@ -5632,7 +5637,7 @@ msgstr "Се случи грешка при пристапувањето на �
 msgid "Custom Path"
 msgstr "Сопствена патека"
 
-#: ../kfile/kdirselectdialog.cpp:119 ../kfile/kdiroperator.cpp:638
+#: ../kfile/kdirselectdialog.cpp:119 ../kfile/kdiroperator.cpp:636
 #, kde-format
 msgid ""
 "Create new folder in:\n"
@@ -5641,17 +5646,17 @@ msgstr ""
 "Создај нова папка во:\n"
 "%1"
 
-#: ../kfile/kdirselectdialog.cpp:142 ../kfile/kdiroperator.cpp:664
+#: ../kfile/kdirselectdialog.cpp:142 ../kfile/kdiroperator.cpp:662
 #, kde-format
 msgid "A file or folder named %1 already exists."
 msgstr "Веќе постои датотека или папка со име %1."
 
-#: ../kfile/kdirselectdialog.cpp:146 ../kfile/kdiroperator.cpp:667
+#: ../kfile/kdirselectdialog.cpp:146 ../kfile/kdiroperator.cpp:665
 msgid "You do not have permission to create that folder."
 msgstr "Немате дозволи за создавање на таа папка."
 
 #: ../kfile/kdirselectdialog.cpp:224 ../kfile/kdirselectdialog.cpp:260
-#: ../kfile/kdiroperator.cpp:1498
+#: ../kfile/kdiroperator.cpp:1496
 msgid "New Folder..."
 msgstr "Нова папка..."
 
@@ -5714,15 +5719,15 @@ msgstr ""
 "кога се користи активната апликација (%1).<br /><br />Ако ова не е избрано, "
 "елементот ќе биде достапен за сите апликации.</qt>"
 
-#: ../kfile/kdiroperator.cpp:682
+#: ../kfile/kdiroperator.cpp:680
 msgid "You did not select a file to delete."
 msgstr "Не избравте датотека за бришење."
 
-#: ../kfile/kdiroperator.cpp:683
+#: ../kfile/kdiroperator.cpp:681
 msgid "Nothing to Delete"
 msgstr "Нема ништо за бришење"
 
-#: ../kfile/kdiroperator.cpp:704
+#: ../kfile/kdiroperator.cpp:702
 #, kde-format
 msgid ""
 "<qt>Do you really want to delete\n"
@@ -5731,11 +5736,11 @@ msgstr ""
 "<qt>Дали навистина сакате да го избришете\n"
 "<b>„%1“</b>?</qt>"
 
-#: ../kfile/kdiroperator.cpp:706
+#: ../kfile/kdiroperator.cpp:704
 msgid "Delete File"
 msgstr "Бришење датотека"
 
-#: ../kfile/kdiroperator.cpp:711
+#: ../kfile/kdiroperator.cpp:709
 #, kde-format
 msgid "Do you really want to delete this item?"
 msgid_plural "Do you really want to delete these %1 items?"
@@ -5743,19 +5748,19 @@ msgstr[0] "Дали навистина сакате да го избришете
 msgstr[1] "Дали навистина сакате да ги избришете овие %1 елементи?"
 msgstr[2] "Дали навистина сакате да ги избришете овие %1 елементи?"
 
-#: ../kfile/kdiroperator.cpp:713
+#: ../kfile/kdiroperator.cpp:711
 msgid "Delete Files"
 msgstr "Бришење датотеки"
 
-#: ../kfile/kdiroperator.cpp:744
+#: ../kfile/kdiroperator.cpp:742
 msgid "You did not select a file to trash."
 msgstr "Не избравте датотека за во корпа."
 
-#: ../kfile/kdiroperator.cpp:745
+#: ../kfile/kdiroperator.cpp:743
 msgid "Nothing to Trash"
 msgstr "Нема ништо за во корпа"
 
-#: ../kfile/kdiroperator.cpp:762
+#: ../kfile/kdiroperator.cpp:760
 #, kde-format
 msgid ""
 "<qt>Do you really want to trash\n"
@@ -5764,16 +5769,16 @@ msgstr ""
 "<qt>Дали навистина сакате да го фрлите\n"
 "<b>„%1“</b> во корпата?</qt>"
 
-#: ../kfile/kdiroperator.cpp:764
+#: ../kfile/kdiroperator.cpp:762
 msgid "Trash File"
 msgstr "Фрли ја датотеката"
 
-#: ../kfile/kdiroperator.cpp:765 ../kfile/kdiroperator.cpp:772
+#: ../kfile/kdiroperator.cpp:763 ../kfile/kdiroperator.cpp:770
 msgctxt "to trash"
 msgid "&Trash"
 msgstr "Фрли ја датотеката"
 
-#: ../kfile/kdiroperator.cpp:769
+#: ../kfile/kdiroperator.cpp:767
 #, kde-format
 msgid "translators: not called for n == 1"
 msgid_plural "Do you really want to trash these %1 items?"
@@ -5781,79 +5786,79 @@ msgstr[0] "Дали навистина сакате да го фрлите ов�
 msgstr[1] "Дали навистина сакате да ги фрлите овие %1 елементи?"
 msgstr[2] "Дали навистина сакате да ги фрлите овие %1 елементи?"
 
-#: ../kfile/kdiroperator.cpp:771
+#: ../kfile/kdiroperator.cpp:769
 msgid "Trash Files"
 msgstr "Фрли ги датотеките"
 
-#: ../kfile/kdiroperator.cpp:894 ../kfile/kdiroperator.cpp:1007
+#: ../kfile/kdiroperator.cpp:892 ../kfile/kdiroperator.cpp:1005
 msgid "The specified folder does not exist or was not readable."
 msgstr "Зададената папка не постои или не може да се прочита."
 
-#: ../kfile/kdiroperator.cpp:1481
+#: ../kfile/kdiroperator.cpp:1479
 msgid "Menu"
 msgstr "Мени"
 
-#: ../kfile/kdiroperator.cpp:1485
+#: ../kfile/kdiroperator.cpp:1483
 msgid "Parent Folder"
 msgstr "Родителска папка"
 
-#: ../kfile/kdiroperator.cpp:1492
+#: ../kfile/kdiroperator.cpp:1490
 msgid "Home Folder"
 msgstr "Домашна папка"
 
-#: ../kfile/kdiroperator.cpp:1495
+#: ../kfile/kdiroperator.cpp:1493
 msgid "Reload"
 msgstr "Превчитај"
 
-#: ../kfile/kdiroperator.cpp:1503
+#: ../kfile/kdiroperator.cpp:1501
 msgid "Move to Trash"
 msgstr "Премести во корпа"
 
-#: ../kfile/kdiroperator.cpp:1509
+#: ../kfile/kdiroperator.cpp:1507
 msgid "Delete"
 msgstr "Избриши"
 
-#: ../kfile/kdiroperator.cpp:1516
+#: ../kfile/kdiroperator.cpp:1514
 msgid "Sorting"
 msgstr "Подредување"
 
-#: ../kfile/kdiroperator.cpp:1519
+#: ../kfile/kdiroperator.cpp:1517
 msgid "By Name"
 msgstr "Според името"
 
-#: ../kfile/kdiroperator.cpp:1523
+#: ../kfile/kdiroperator.cpp:1521
 msgid "By Size"
 msgstr "Според големината"
 
-#: ../kfile/kdiroperator.cpp:1527
+#: ../kfile/kdiroperator.cpp:1525
 msgid "By Date"
 msgstr "Според датумот"
 
-#: ../kfile/kdiroperator.cpp:1531
+#: ../kfile/kdiroperator.cpp:1529
 msgid "By Type"
 msgstr "Според тип"
 
-#: ../kfile/kdiroperator.cpp:1535
+#: ../kfile/kdiroperator.cpp:1533
 msgid "Descending"
 msgstr "Опаѓачки"
 
-#: ../kfile/kdiroperator.cpp:1545
+#: ../kfile/kdiroperator.cpp:1543
 msgid "Short View"
 msgstr "Краток преглед"
 
-#: ../kfile/kdiroperator.cpp:1550
+#: ../kfile/kdiroperator.cpp:1548
 msgid "Detailed View"
 msgstr "Детален преглед"
 
-#: ../kfile/kdiroperator.cpp:1559
+#: ../kfile/kdiroperator.cpp:1557
 msgid "Show Hidden Files"
 msgstr "Покажи скриени датотеки"
 
-#: ../kfile/kdiroperator.cpp:1563
+#: ../kfile/kdiroperator.cpp:1561
 msgid "Show Preview"
 msgstr "Покажи преглед"
 
-#: ../kfile/kdiroperator.cpp:1575
+#: ../kfile/kdiroperator.cpp:1573
 msgid "&View"
 msgstr "Пр&еглед"
 
