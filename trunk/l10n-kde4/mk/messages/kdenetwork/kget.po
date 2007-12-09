@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-08 05:58+0100\n"
+"POT-Creation-Date: 2007-12-09 05:59+0100\n"
 "PO-Revision-Date: 2007-02-26 22:30+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -19,9 +19,536 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: main.cpp:115 mainwindow.cpp:72
+#: conf/transfersgroupwidget.cpp:87 core/transfergrouphandler.cpp:187
+#: core/kget.cpp:514
+#, fuzzy
+msgid "My Downloads"
+msgstr "Симнувањето е продолжено"
+
+#: conf/transfersgroupwidget.cpp:89
+msgid "You can not delete this group!"
+msgstr ""
+
+#: conf/transfersgroupwidget.cpp:94
+#, fuzzy, kde-format
+msgid ""
+"Are you sure that you want to remove\n"
+"the group named %1?"
+msgstr "Дали навистина сакате да ги отстраните овие преноси?"
+
+#. i18n: tag string
+#. i18n: file conf/dlgdirectories.ui line 122
+#: conf/transfersgroupwidget.cpp:106 rc.cpp:65
+msgid "Add"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file conf/dlgdirectories.ui line 142
+#: conf/transfersgroupwidget.cpp:108 rc.cpp:71
+#, fuzzy
+#| msgid "Not Deleted"
+msgid "Delete"
+msgstr "Не е избришан"
+
+#: conf/transfersgroupwidget.cpp:111
+#, fuzzy
+msgid "Rename"
+msgstr "Почетна папка"
+
+#: conf/preferencesdialog.cpp:47
+msgid "Appearance"
+msgstr ""
+
+#: conf/preferencesdialog.cpp:47
+msgid "Change appearance settings"
+msgstr ""
+
+#: conf/preferencesdialog.cpp:48
+msgid "Groups"
+msgstr ""
+
+#: conf/preferencesdialog.cpp:48
+msgid "Manage the groups"
+msgstr ""
+
+#: conf/preferencesdialog.cpp:49
+msgid "Folders"
+msgstr "Папки"
+
+#: conf/preferencesdialog.cpp:49
+#, fuzzy
+msgid "Default Download Folders"
+msgstr "Почетна папка"
+
+#: conf/preferencesdialog.cpp:50
+msgid "Network"
+msgstr ""
+
+#: conf/preferencesdialog.cpp:50
+#, fuzzy
+msgid "Network and Downloads"
+msgstr "Означи парцијални симнувања"
+
+#: conf/preferencesdialog.cpp:51
+msgid "Advanced"
+msgstr "Напредно"
+
+#: conf/preferencesdialog.cpp:51
+msgid "Advanced Options"
+msgstr "Напредни опции"
+
+#: conf/preferencesdialog.cpp:52
+msgid "Plugins"
+msgstr ""
+
+#: conf/preferencesdialog.cpp:52
+msgid "Transfer Plugin Options"
+msgstr ""
+
+#: conf/dlgdirectories.cpp:140
+msgid "Folder and extension can not be empty."
+msgstr ""
+
+#: conf/dlgdirectories.cpp:140 core/kget.cpp:441 core/kget.cpp:671
+msgid "Error"
+msgstr ""
+
+#: core/transfertreemodel.cpp:295
+msgid "Name"
+msgstr "Име"
+
+#: core/transfertreemodel.cpp:297
+msgid "Status"
+msgstr ""
+
+#: core/transfertreemodel.cpp:299
+msgid "Size"
+msgstr ""
+
+#: core/transfertreemodel.cpp:301
+#, fuzzy
+msgid "Progress"
+msgstr "Дијалог за напредување"
+
+#: core/transfertreemodel.cpp:303
+msgid "Speed"
+msgstr "Брзина"
+
+#: core/transferhandler.cpp:124 ui/transfersviewdelegate.cpp:326
+msgctxt "not available"
+msgid "n/a"
+msgstr ""
+
+#: core/transferhandler.cpp:132 core/transfergrouphandler.cpp:121
+#: ui/transferdetails.cpp:97
+msgid "Stalled"
+msgstr "Во застој"
+
+#: core/transferhandler.cpp:137 core/transfergrouphandler.cpp:126
+#: ui/transferdetails.cpp:102
+#, kde-format
+msgid "%1/s"
+msgstr "%1/s"
+
+#: core/transfergrouphandler.cpp:107
+#, kde-format
+msgid "1 Item"
+msgid_plural "%1 Items"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: core/transfergrouphandler.cpp:316
+#, fuzzy
+msgid "Start"
+msgstr "Ре&стартирај"
+
+#: core/transfergrouphandler.cpp:322 mainwindow.cpp:197
+#, fuzzy
+msgid "Stop"
+msgstr "Запрено"
+
+#: core/kget.h:55 ui/droptarget.cpp:92
+#, fuzzy
+#| msgid "KGet"
+msgid "Quit KGet"
+msgstr "KGet"
+
+#: core/kget.h:56
+#, fuzzy
+#| msgid "All the downloads are finished."
+msgid "KGet quits now because all downloads have been completed."
+msgstr "Сите симнувања завршија."
+
+#: core/transfer.cpp:38 core/transfer.cpp:61 core/transfer.cpp:123
+#: transfer-plugins/kio/transferKio.cpp:51
+#: transfer-plugins/metalink/metalink.cpp:53
+#: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:60
+msgid "Stopped"
+msgstr "Запрено"
+
+#: core/transfer.cpp:54
+msgid "Delayed"
+msgstr "Одложено"
+
+#: core/transfer.cpp:119 transfer-plugins/kio/transferKio.cpp:112
+#: transfer-plugins/metalink/metalink.cpp:113
+#: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:199
+msgid "Finished"
+msgstr "Завршено"
+
+#: core/kget.cpp:178
+#, fuzzy
+#| msgid "Open Transfer"
+msgid "Rename transfer"
+msgstr "Отворам пренос"
+
+#: core/kget.cpp:413
+#, fuzzy, kde-format
+msgid ""
+"The file %1 already exists.\n"
+"Overwrite?"
+msgstr ""
+"Одредишната датотека \n"
+"%1\n"
+"веќе постои.\n"
+"Дали сакате да запишете врз неа?"
+
+#: core/kget.cpp:414
+msgid "Overwrite existing file?"
+msgstr ""
+
+#: core/kget.cpp:440
+#, kde-format
+msgid "Unable to save to: %1"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ui/newtransferwidget.ui line 24
+#: core/kget.cpp:608 ui/newtransferdialog.cpp:33 rc.cpp:162
+#, fuzzy
+msgid "New Download"
+msgstr "Симни повторно"
+
+#: core/kget.cpp:608
+msgid "Enter URL:"
+msgstr ""
+
+#: core/kget.cpp:670
+#, kde-format
+msgid ""
+"Malformed URL:\n"
+"%1"
+msgstr ""
+"Неправилен URL:\n"
+"%1"
+
+#: core/kget.cpp:682
+#, fuzzy, kde-format
+msgid ""
+"URL already saved:\n"
+"%1\n"
+"Download again?"
+msgstr ""
+"URL е веќе зачуван\n"
+"%1\n"
+"Да го симнам повторно?"
+
+#: core/kget.cpp:683
+#, fuzzy
+msgid "Download URL again?"
+msgstr "Симни повторно"
+
+#: core/kget.cpp:708
+msgid "Directory is not writable"
+msgstr ""
+
+#: core/kget.cpp:717
+#, kde-format
+msgid ""
+"Destination file \n"
+"%1\n"
+"already exists.\n"
+"Do you want to overwrite it?"
+msgstr ""
+"Одредишната датотека \n"
+"%1\n"
+"веќе постои.\n"
+"Дали сакате да запишете врз неа?"
+
+#: core/kget.cpp:841
+#, kde-format
+msgid "<html><p>KLibLoader could not load the plugin:<br/><i>%1</i></p></html>"
+msgstr ""
+
+#: core/kget.cpp:867
+#, kde-format
+msgid ""
+"Not deleting\n"
+"%1\n"
+"as it is a directory."
+msgstr ""
+"Не го бришам\n"
+"%1\n"
+"бидејќи е именик."
+
+#: core/kget.cpp:869 core/kget.cpp:880
+msgid "Not Deleted"
+msgstr "Не е избришан"
+
+#: core/kget.cpp:878
+#, kde-format
+msgid ""
+"Not deleting\n"
+"%1\n"
+"as it is not a local file."
+msgstr ""
+"Не го бришам\n"
+"%1\n"
+"бидејќи не е локална датотека."
+
+#: transfer-plugins/kio/transferKio.cpp:35
+#: transfer-plugins/metalink/metalink.cpp:37
+#: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:42
+#, fuzzy
+#| msgid "Connection"
+msgid "Connecting.."
+msgstr "Поврзување"
+
+#: transfer-plugins/kio/transferKio.cpp:121
+#: transfer-plugins/metalink/metalink.cpp:122
+#: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:209
+msgid "Aborted"
+msgstr ""
+
+#: transfer-plugins/kio/transferKio.cpp:149
+#: transfer-plugins/kio/transferKio.cpp:163
+#: transfer-plugins/kio/transferKio.cpp:179
+#: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:239
+#: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:256
+#: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:273
+#, fuzzy
+msgid "Downloading.."
+msgstr "Симнувањето е продолжено"
+
+#: transfer-plugins/multisegmentkio/dlgmultisegkio.cpp:22
+msgid "Insert Engine"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file transfer-plugins/multisegmentkio/dlgengineediting.ui line 16
+#: transfer-plugins/multisegmentkio/dlgmultisegkio.cpp:27 rc.cpp:156
+msgid "Engine name:"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file transfer-plugins/multisegmentkio/dlgengineediting.ui line 26
+#: transfer-plugins/multisegmentkio/dlgmultisegkio.cpp:28 rc.cpp:159
+msgid "Url:"
+msgstr ""
+
+#: ui/transfersviewdelegate.cpp:460
+#, fuzzy
+msgid "Transfer details"
+msgstr " Преноси: %1 "
+
+#. i18n: tag string
+#. i18n: file ui/transferdetailsfrm.ui line 71
+#: ui/transferdetails.cpp:36 rc.cpp:180
+msgid "Source:"
+msgstr "Извор:"
+
+#. i18n: tag string
+#. i18n: file ui/transferdetailsfrm.ui line 64
+#: ui/transferdetails.cpp:37 rc.cpp:177
+msgid "Saving to:"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ui/transferdetailsfrm.ui line 143
+#: ui/transferdetails.cpp:38 rc.cpp:186
+msgid "Status:"
+msgstr ""
+
+#: ui/transferdetails.cpp:74 ui/transferdetails.cpp:81
+#, fuzzy
+msgid " of "
+msgstr "%1 од %2"
+
+#: ui/droptarget.cpp:84
+#, fuzzy
+msgid "Hide Drop Target"
+msgstr "Скриј цел за &испуштање"
+
+#: ui/droptarget.cpp:85
+msgid "Sticky"
+msgstr "Лепливо"
+
+#: ui/droptarget.cpp:277
+#, fuzzy
+msgid "Show Main Window"
+msgstr "Прикажи го главниот прозорец на стартување"
+
+#: ui/droptarget.cpp:278
+#, fuzzy
+msgid "Hide Main Window"
+msgstr "Скриј прозорец со записи"
+
+#. i18n: tag string
+#. i18n: file conf/dlgappearance.ui line 39
+#: ui/droptarget.cpp:355 rc.cpp:105
+#, fuzzy
+#| msgid "Drop target"
+msgid "Drop Target"
+msgstr "Цел за испуштање"
+
+#: ui/droptarget.cpp:356
+msgid "You can drag download links into the drop target."
+msgstr ""
+
+#: ui/droptarget.cpp:401
+msgid ""
+"Drop target has been hidden. If you want to show it again, go to Settings-"
+">Configure KGet->Look & Feel."
+msgstr ""
+
+#: ui/droptarget.cpp:403
+#, fuzzy
+msgid "Hiding drop target"
+msgstr "Скриј цел за &испуштање"
+
+#: ui/viewscontainer.cpp:44
+#, fuzzy, kde-format
+#| msgid "Default folder:"
+msgid "Details for: %1"
+msgstr "Почетна папка:"
+
+#: ui/viewscontainer.cpp:49
+#, fuzzy
+msgid "All downloads"
+msgstr "Означи парцијални симнувања"
+
+#: ui/viewscontainer.cpp:54
+#, fuzzy
+msgid "Finished downloads"
+msgstr "Завршено"
+
+#: ui/viewscontainer.cpp:83
+#, fuzzy
+msgid "Transfers:"
+msgstr "&Пренос"
+
+#: ui/viewscontainer.cpp:186
+#, fuzzy
+msgid "Downloads"
+msgstr "Симнувањето е продолжено"
+
+#: ui/viewscontainer.cpp:199
+#, fuzzy
+msgid "Transfer details:"
+msgstr " Преноси: %1 "
+
+#: extensions/konqueror/kget_linkview.h:85
+msgid "All"
+msgstr ""
+
+#: extensions/konqueror/kget_linkview.h:86
+msgid "Videos"
+msgstr ""
+
+#: extensions/konqueror/kget_linkview.h:87
+msgid "Audio"
+msgstr ""
+
+#: extensions/konqueror/kget_linkview.h:88
+msgid "Archives"
+msgstr ""
+
+#: extensions/konqueror/kget_plug_in.cpp:42
+#, fuzzy
+msgid "Download Manager"
+msgstr "Менаџер за симнувања"
+
+#: extensions/konqueror/kget_plug_in.cpp:49 mainwindow.cpp:221
+#, fuzzy
+#| msgid "Show Drop &Target"
+msgid "Show Drop Target"
+msgstr "Прикажи цел за &испуштање"
+
+#: extensions/konqueror/kget_plug_in.cpp:56
+msgid "List All Links"
+msgstr "Прикажи ги сите врски"
+
+#: extensions/konqueror/kget_plug_in.cpp:136
+msgid "There are no links in the active frame of the current HTML page."
+msgstr "Нема врски во активната рамка на моменталната HTML-страница."
+
+#: extensions/konqueror/kget_plug_in.cpp:137
+msgid "No Links"
+msgstr "Нема врски"
+
+#: extensions/konqueror/kget_linkview.cpp:43 main.cpp:115 mainwindow.cpp:72
 msgid "KGet"
 msgstr "KGet"
+
+#: extensions/konqueror/kget_linkview.cpp:65
+msgid "Filter files here..."
+msgstr ""
+
+#: extensions/konqueror/kget_linkview.cpp:76
+msgid "Show:"
+msgstr ""
+
+#: extensions/konqueror/kget_linkview.cpp:95
+#: extensions/konqueror/kget_linkview.cpp:252
+msgid "Select all"
+msgstr ""
+
+#: extensions/konqueror/kget_linkview.cpp:96
+msgid "Show web content"
+msgstr ""
+
+#: extensions/konqueror/kget_linkview.cpp:97
+#, fuzzy
+#| msgid "Download finished"
+msgid "Download checked"
+msgstr "Симнувањето е завршено"
+
+#: extensions/konqueror/kget_linkview.cpp:99
+msgid "Cancel"
+msgstr ""
+
+#: extensions/konqueror/kget_linkview.cpp:135
+msgid "Auxiliar header"
+msgstr ""
+
+#: extensions/konqueror/kget_linkview.cpp:136
+#, fuzzy
+#| msgid "Local File Name"
+msgid "File Name"
+msgstr "Име на локална датотека"
+
+#: extensions/konqueror/kget_linkview.cpp:137
+msgid "Description"
+msgstr "Опис"
+
+#: extensions/konqueror/kget_linkview.cpp:138
+#, fuzzy
+msgid "File Type"
+msgstr "Тип на датотека"
+
+#: extensions/konqueror/kget_linkview.cpp:139
+msgid "Location (URL)"
+msgstr "Локација (URL)"
+
+#: extensions/konqueror/kget_linkview.cpp:200
+#, kde-format
+msgid "Links in: %1 - KGet"
+msgstr "Врски во: %1 - KGet"
+
+#: extensions/konqueror/kget_linkview.cpp:252
+msgid "Select all filtered"
+msgstr ""
 
 #: main.cpp:116
 msgid "An advanced download manager for KDE"
@@ -181,11 +708,6 @@ msgstr "Не се избрани датотеки"
 msgid "Start / Resume"
 msgstr ""
 
-#: mainwindow.cpp:197 core/transfergrouphandler.cpp:322
-#, fuzzy
-msgid "Stop"
-msgstr "Запрено"
-
 #: mainwindow.cpp:206
 #, fuzzy
 msgid "Open Destination"
@@ -200,12 +722,6 @@ msgstr "bobibobi@freemail.com.mk"
 #, fuzzy
 msgid "Copy URL to Clipboard"
 msgstr "&Копирај URL на табла со исечоци"
-
-#: mainwindow.cpp:221
-#, fuzzy
-#| msgid "Show Drop &Target"
-msgid "Show Drop Target"
-msgstr "Прикажи цел за &испуштање"
 
 #: mainwindow.cpp:260
 #, fuzzy
@@ -302,100 +818,99 @@ msgid "Your emails"
 msgstr "bobibobi@freemail.com.mk"
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 16
+#. i18n: file conf/dlgnetwork.ui line 19
 #: rc.cpp:5
-msgid "Disable confirmation dialogs (less verbosity)"
+msgid "Start downloading files immediately after startup"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 23
+#. i18n: file conf/dlgnetwork.ui line 26
 #: rc.cpp:8
-#, fuzzy
-msgid "Enable system tray icon"
-msgstr "Користи анимација"
+msgid "Limit maximum downloads per group"
+msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 30
+#. i18n: file conf/dlgnetwork.ui line 38
 #: rc.cpp:11
-#, fuzzy
-#| msgid "All the downloads are finished."
-msgid "Quit when all downloads have been finished"
-msgstr "Сите симнувања завршија."
+msgid "Downloads from the same server:"
+msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 37
+#. i18n: file conf/dlgnetwork.ui line 45
 #: rc.cpp:14
 #, fuzzy
-msgid "Integration"
-msgstr "Интеграција со Konqueror"
+msgid "Downloads number:"
+msgstr "Менаџер за симнувања"
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 43
+#. i18n: file conf/dlgnetwork.ui line 82
 #: rc.cpp:17
 #, fuzzy
-msgid "Use as download manager for Konqueror"
-msgstr "Користи го KGet како менаџер на симнувања за Konqueror"
+#| msgid "Speed"
+msgid "Speed limit"
+msgstr "Брзина"
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 50
+#. i18n: file conf/dlgnetwork.ui line 91
 #: rc.cpp:20
 #, fuzzy
-msgid "Monitor clipboard for files to download"
-msgstr "Не избравте ниту една датотека за симнување."
+msgid "Per Transfer:"
+msgstr "&Пренос"
 
 #. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 16
+#. i18n: file conf/dlgnetwork.ui line 114
 #: rc.cpp:23
 #, fuzzy
-msgid "Startup"
-msgstr "Ре&стартирај"
+#| msgid "0 B/s"
+msgid "kBi/s"
+msgstr "0 B/s"
 
 #. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 22
+#. i18n: file conf/dlgnetwork.ui line 133
 #: rc.cpp:26
-msgid "Show main window at startup"
-msgstr "Прикажи го главниот прозорец на стартување"
+#, fuzzy
+msgid "Reconnect on error or broken connection"
+msgstr "На прекинато поврзување"
 
 #. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 29
+#. i18n: file conf/dlgnetwork.ui line 142
 #: rc.cpp:29
-msgid "Show splashscreen"
+#, fuzzy
+msgid "Retry after:"
+msgstr "Повторно поврзи се по:"
+
+#. i18n: tag string
+#. i18n: file conf/dlgnetwork.ui line 149
+#: rc.cpp:32
+msgid "Number of retries:"
+msgstr "Број на обиди:"
+
+#. i18n: tag string
+#. i18n: file conf/dlgnetwork.ui line 179
+#: rc.cpp:35
+msgid "sec"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 39
-#: rc.cpp:32 ui/droptarget.cpp:355
-#, fuzzy
-#| msgid "Drop target"
-msgid "Drop Target"
-msgstr "Цел за испуштање"
-
-#. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 45
-#: rc.cpp:35
-#, fuzzy
-msgid "Show drop target"
-msgstr "Прикажи цел за испуштање"
-
-#. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 52
+#. i18n: file conf/dlgnetwork.ui line 195
 #: rc.cpp:38
 #, fuzzy
-msgid "Enable animations"
-msgstr "Користи анимација"
+msgid "After Completing Downloads"
+msgstr "Автоматски спушти го компјутерот по завршување на симнувањата"
 
 #. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 62
+#. i18n: file conf/dlgnetwork.ui line 201
 #: rc.cpp:41
 #, fuzzy
-msgid "Transfer List"
-msgstr "Отворам пренос:"
+msgid "Auto shutdown"
+msgstr "Автоспушти е вклучено."
 
 #. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 68
+#. i18n: file conf/dlgnetwork.ui line 208
 #: rc.cpp:44
-msgid "Expandable transfer details instead of separate tabs"
-msgstr ""
+#, fuzzy
+msgid "Auto disconnect"
+msgstr "Автоисклучи е вклучено."
 
 #. i18n: tag string
 #. i18n: file conf/dlgdirectories.ui line 16
@@ -434,24 +949,10 @@ msgid "Default Folder"
 msgstr "Почетна папка"
 
 #. i18n: tag string
-#. i18n: file conf/dlgdirectories.ui line 122
-#: rc.cpp:65 conf/transfersgroupwidget.cpp:106
-msgid "Add"
-msgstr ""
-
-#. i18n: tag string
 #. i18n: file conf/dlgdirectories.ui line 132
 #: rc.cpp:68
 msgid "Edit"
 msgstr ""
-
-#. i18n: tag string
-#. i18n: file conf/dlgdirectories.ui line 142
-#: rc.cpp:71 conf/transfersgroupwidget.cpp:108
-#, fuzzy
-#| msgid "Not Deleted"
-msgid "Delete"
-msgstr "Не е избришан"
 
 #. i18n: tag string
 #. i18n: file conf/dlgdirectories.ui line 152
@@ -462,543 +963,256 @@ msgid ""
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 19
+#. i18n: file conf/dlgadvanced.ui line 16
 #: rc.cpp:78
-msgid "Start downloading files immediately after startup"
+msgid "Disable confirmation dialogs (less verbosity)"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 26
+#. i18n: file conf/dlgadvanced.ui line 23
 #: rc.cpp:81
-msgid "Limit maximum downloads per group"
-msgstr ""
+#, fuzzy
+msgid "Enable system tray icon"
+msgstr "Користи анимација"
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 38
+#. i18n: file conf/dlgadvanced.ui line 30
 #: rc.cpp:84
-msgid "Downloads from the same server:"
-msgstr ""
+#, fuzzy
+#| msgid "All the downloads are finished."
+msgid "Quit when all downloads have been finished"
+msgstr "Сите симнувања завршија."
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 45
+#. i18n: file conf/dlgadvanced.ui line 37
 #: rc.cpp:87
 #, fuzzy
-msgid "Downloads number:"
-msgstr "Менаџер за симнувања"
+msgid "Integration"
+msgstr "Интеграција со Konqueror"
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 82
+#. i18n: file conf/dlgadvanced.ui line 43
 #: rc.cpp:90
 #, fuzzy
-#| msgid "Speed"
-msgid "Speed limit"
-msgstr "Брзина"
+msgid "Use as download manager for Konqueror"
+msgstr "Користи го KGet како менаџер на симнувања за Konqueror"
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 91
+#. i18n: file conf/dlgadvanced.ui line 50
 #: rc.cpp:93
 #, fuzzy
-msgid "Per Transfer:"
-msgstr "&Пренос"
+msgid "Monitor clipboard for files to download"
+msgstr "Не избравте ниту една датотека за симнување."
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 114
+#. i18n: file conf/dlgappearance.ui line 16
 #: rc.cpp:96
 #, fuzzy
-#| msgid "0 B/s"
-msgid "kBi/s"
-msgstr "0 B/s"
+msgid "Startup"
+msgstr "Ре&стартирај"
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 133
+#. i18n: file conf/dlgappearance.ui line 22
 #: rc.cpp:99
-#, fuzzy
-msgid "Reconnect on error or broken connection"
-msgstr "На прекинато поврзување"
+msgid "Show main window at startup"
+msgstr "Прикажи го главниот прозорец на стартување"
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 142
+#. i18n: file conf/dlgappearance.ui line 29
 #: rc.cpp:102
-#, fuzzy
-msgid "Retry after:"
-msgstr "Повторно поврзи се по:"
-
-#. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 149
-#: rc.cpp:105
-msgid "Number of retries:"
-msgstr "Број на обиди:"
-
-#. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 179
-#: rc.cpp:108
-msgid "sec"
+msgid "Show splashscreen"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 195
+#. i18n: file conf/dlgappearance.ui line 45
+#: rc.cpp:108
+#, fuzzy
+msgid "Show drop target"
+msgstr "Прикажи цел за испуштање"
+
+#. i18n: tag string
+#. i18n: file conf/dlgappearance.ui line 52
 #: rc.cpp:111
 #, fuzzy
-msgid "After Completing Downloads"
-msgstr "Автоматски спушти го компјутерот по завршување на симнувањата"
+msgid "Enable animations"
+msgstr "Користи анимација"
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 201
+#. i18n: file conf/dlgappearance.ui line 62
 #: rc.cpp:114
 #, fuzzy
-msgid "Auto shutdown"
-msgstr "Автоспушти е вклучено."
+msgid "Transfer List"
+msgstr "Отворам пренос:"
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 208
+#. i18n: file conf/dlgappearance.ui line 68
 #: rc.cpp:117
-#, fuzzy
-msgid "Auto disconnect"
-msgstr "Автоисклучи е вклучено."
+msgid "Expandable transfer details instead of separate tabs"
+msgstr ""
 
 #. i18n: tag string
-#. i18n: file ui/newtransferwidget.ui line 24
-#: rc.cpp:120 core/kget.cpp:608 ui/newtransferdialog.cpp:33
-#, fuzzy
-msgid "New Download"
-msgstr "Симни повторно"
+#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 40
+#: rc.cpp:120
+msgid "Search Engines"
+msgstr ""
 
+#. i18n: tag string
+#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 81
+#: rc.cpp:123
+msgid "New Engine..."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 88
+#: rc.cpp:126
+#, fuzzy
+msgid "Remove"
+msgstr "&Продолжи"
+
+#. i18n: tag string
+#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 114
+#: rc.cpp:129
+msgid "Engine name"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 119
 #. i18n: tag string
 #. i18n: file ui/newtransferwidget.ui line 39
-#: rc.cpp:123
+#: rc.cpp:132 rc.cpp:165
 msgid "Url"
 msgstr ""
 
 #. i18n: tag string
+#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 130
+#: rc.cpp:135
+msgid "Use search engines"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 137
+#: rc.cpp:138
+msgid "Threads"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 178
+#: rc.cpp:141
+msgid "Save data every:"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 198
+#. i18n: tag string
+#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 308
+#: rc.cpp:144 rc.cpp:153
+#, fuzzy
+#| msgid "0 B/s"
+msgid "kBi"
+msgstr "0 B/s"
+
+#. i18n: tag string
+#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 236
+#: rc.cpp:147
+#, fuzzy
+#| msgid "Number of retries:"
+msgid "Number of threads:"
+msgstr "Број на обиди:"
+
+#. i18n: tag string
+#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 288
+#: rc.cpp:150
+msgid "Minimal segment size:"
+msgstr ""
+
+#. i18n: tag string
 #. i18n: file ui/newtransferwidget.ui line 49
-#: rc.cpp:126
+#: rc.cpp:168
 #, fuzzy
 msgid "Download Folder"
 msgstr "Почетна папка"
 
 #. i18n: tag string
 #. i18n: file ui/newtransferwidget.ui line 59
-#: rc.cpp:129
+#: rc.cpp:171
 #, fuzzy
 msgid "Transfer Group"
 msgstr "&Пренос"
 
 #. i18n: tag string
 #. i18n: file ui/newtransferwidget.ui line 89
-#: rc.cpp:132
+#: rc.cpp:174
 #, fuzzy
 #| msgid "Default folder:"
 msgid "Set as default folder"
 msgstr "Почетна папка:"
 
 #. i18n: tag string
-#. i18n: file ui/transferdetailsfrm.ui line 64
-#: rc.cpp:135 ui/transferdetails.cpp:37
-msgid "Saving to:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ui/transferdetailsfrm.ui line 71
-#: rc.cpp:138 ui/transferdetails.cpp:36
-msgid "Source:"
-msgstr "Извор:"
-
-#. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 123
-#: rc.cpp:141
+#: rc.cpp:183
 msgid "<done> MiB of <todo> MiB"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ui/transferdetailsfrm.ui line 143
-#: rc.cpp:144 ui/transferdetails.cpp:38
-msgid "Status:"
-msgstr ""
-
-#. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 150
-#: rc.cpp:147
+#: rc.cpp:189
 msgid "<icon>"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 157
-#: rc.cpp:150
+#: rc.cpp:192
 msgid "<status>"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 183
-#: rc.cpp:153
+#: rc.cpp:195
 #, fuzzy
 msgid "<speed>"
 msgstr "Брзина"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 4
-#: rc.cpp:156
+#: rc.cpp:198
 #, fuzzy
 msgid "&File"
 msgstr "Отвори &датотека"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 12
-#: rc.cpp:159
+#: rc.cpp:201
 #, fuzzy
 msgid "&Downloads"
 msgstr "Симнувањето е продолжено"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 21
-#: rc.cpp:162
+#: rc.cpp:204
 msgid "&Settings"
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 33
-#: rc.cpp:165
+#: rc.cpp:207
 msgid "&Help"
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 36
-#: rc.cpp:168
+#: rc.cpp:210
 msgid "Main Toolbar"
 msgstr ""
 
-#: conf/dlgdirectories.cpp:140
-msgid "Folder and extension can not be empty."
+#. i18n: tag Text
+#. i18n: file extensions/konqueror/kget_plug_in.rc line 4
+#: rc.cpp:213
+msgid "&Tools"
 msgstr ""
-
-#: conf/dlgdirectories.cpp:140 core/kget.cpp:441 core/kget.cpp:671
-msgid "Error"
-msgstr ""
-
-#: conf/preferencesdialog.cpp:47
-msgid "Appearance"
-msgstr ""
-
-#: conf/preferencesdialog.cpp:47
-msgid "Change appearance settings"
-msgstr ""
-
-#: conf/preferencesdialog.cpp:48
-msgid "Groups"
-msgstr ""
-
-#: conf/preferencesdialog.cpp:48
-msgid "Manage the groups"
-msgstr ""
-
-#: conf/preferencesdialog.cpp:49
-msgid "Folders"
-msgstr "Папки"
-
-#: conf/preferencesdialog.cpp:49
-#, fuzzy
-msgid "Default Download Folders"
-msgstr "Почетна папка"
-
-#: conf/preferencesdialog.cpp:50
-msgid "Network"
-msgstr ""
-
-#: conf/preferencesdialog.cpp:50
-#, fuzzy
-msgid "Network and Downloads"
-msgstr "Означи парцијални симнувања"
-
-#: conf/preferencesdialog.cpp:51
-msgid "Advanced"
-msgstr "Напредно"
-
-#: conf/preferencesdialog.cpp:51
-msgid "Advanced Options"
-msgstr "Напредни опции"
-
-#: conf/preferencesdialog.cpp:52
-msgid "Plugins"
-msgstr ""
-
-#: conf/preferencesdialog.cpp:52
-msgid "Transfer Plugin Options"
-msgstr ""
-
-#: conf/transfersgroupwidget.cpp:87 core/kget.cpp:514
-#: core/transfergrouphandler.cpp:187
-#, fuzzy
-msgid "My Downloads"
-msgstr "Симнувањето е продолжено"
-
-#: conf/transfersgroupwidget.cpp:89
-msgid "You can not delete this group!"
-msgstr ""
-
-#: conf/transfersgroupwidget.cpp:94
-#, fuzzy, kde-format
-msgid ""
-"Are you sure that you want to remove\n"
-"the group named %1?"
-msgstr "Дали навистина сакате да ги отстраните овие преноси?"
-
-#: conf/transfersgroupwidget.cpp:111
-#, fuzzy
-msgid "Rename"
-msgstr "Почетна папка"
-
-#: core/kget.cpp:178
-#, fuzzy
-#| msgid "Open Transfer"
-msgid "Rename transfer"
-msgstr "Отворам пренос"
-
-#: core/kget.cpp:413
-#, fuzzy, kde-format
-msgid ""
-"The file %1 already exists.\n"
-"Overwrite?"
-msgstr ""
-"Одредишната датотека \n"
-"%1\n"
-"веќе постои.\n"
-"Дали сакате да запишете врз неа?"
-
-#: core/kget.cpp:414
-msgid "Overwrite existing file?"
-msgstr ""
-
-#: core/kget.cpp:440
-#, kde-format
-msgid "Unable to save to: %1"
-msgstr ""
-
-#: core/kget.cpp:608
-msgid "Enter URL:"
-msgstr ""
-
-#: core/kget.cpp:670
-#, kde-format
-msgid ""
-"Malformed URL:\n"
-"%1"
-msgstr ""
-"Неправилен URL:\n"
-"%1"
-
-#: core/kget.cpp:682
-#, fuzzy, kde-format
-msgid ""
-"URL already saved:\n"
-"%1\n"
-"Download again?"
-msgstr ""
-"URL е веќе зачуван\n"
-"%1\n"
-"Да го симнам повторно?"
-
-#: core/kget.cpp:683
-#, fuzzy
-msgid "Download URL again?"
-msgstr "Симни повторно"
-
-#: core/kget.cpp:708
-msgid "Directory is not writable"
-msgstr ""
-
-#: core/kget.cpp:717
-#, kde-format
-msgid ""
-"Destination file \n"
-"%1\n"
-"already exists.\n"
-"Do you want to overwrite it?"
-msgstr ""
-"Одредишната датотека \n"
-"%1\n"
-"веќе постои.\n"
-"Дали сакате да запишете врз неа?"
-
-#: core/kget.cpp:841
-#, kde-format
-msgid "<html><p>KLibLoader could not load the plugin:<br/><i>%1</i></p></html>"
-msgstr ""
-
-#: core/kget.cpp:867
-#, kde-format
-msgid ""
-"Not deleting\n"
-"%1\n"
-"as it is a directory."
-msgstr ""
-"Не го бришам\n"
-"%1\n"
-"бидејќи е именик."
-
-#: core/kget.cpp:869 core/kget.cpp:880
-msgid "Not Deleted"
-msgstr "Не е избришан"
-
-#: core/kget.cpp:878
-#, kde-format
-msgid ""
-"Not deleting\n"
-"%1\n"
-"as it is not a local file."
-msgstr ""
-"Не го бришам\n"
-"%1\n"
-"бидејќи не е локална датотека."
-
-#: core/transfer.cpp:38 core/transfer.cpp:61 core/transfer.cpp:123
-msgid "Stopped"
-msgstr "Запрено"
-
-#: core/transfer.cpp:54
-msgid "Delayed"
-msgstr "Одложено"
-
-#: core/transfer.cpp:119
-msgid "Finished"
-msgstr "Завршено"
-
-#: core/transfergrouphandler.cpp:107
-#, kde-format
-msgid "1 Item"
-msgid_plural "%1 Items"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: core/transfergrouphandler.cpp:121 core/transferhandler.cpp:132
-#: ui/transferdetails.cpp:97
-msgid "Stalled"
-msgstr "Во застој"
-
-#: core/transfergrouphandler.cpp:126 core/transferhandler.cpp:137
-#: ui/transferdetails.cpp:102
-#, kde-format
-msgid "%1/s"
-msgstr "%1/s"
-
-#: core/transfergrouphandler.cpp:316
-#, fuzzy
-msgid "Start"
-msgstr "Ре&стартирај"
-
-#: core/transferhandler.cpp:124 ui/transfersviewdelegate.cpp:326
-msgctxt "not available"
-msgid "n/a"
-msgstr ""
-
-#: core/transfertreemodel.cpp:295
-msgid "Name"
-msgstr "Име"
-
-#: core/transfertreemodel.cpp:297
-msgid "Status"
-msgstr ""
-
-#: core/transfertreemodel.cpp:299
-msgid "Size"
-msgstr ""
-
-#: core/transfertreemodel.cpp:301
-#, fuzzy
-msgid "Progress"
-msgstr "Дијалог за напредување"
-
-#: core/transfertreemodel.cpp:303
-msgid "Speed"
-msgstr "Брзина"
-
-#: ui/droptarget.cpp:84
-#, fuzzy
-msgid "Hide Drop Target"
-msgstr "Скриј цел за &испуштање"
-
-#: ui/droptarget.cpp:85
-msgid "Sticky"
-msgstr "Лепливо"
-
-#: ui/droptarget.cpp:92
-#, fuzzy
-#| msgid "KGet"
-msgid "Quit KGet"
-msgstr "KGet"
-
-#: ui/droptarget.cpp:277
-#, fuzzy
-msgid "Show Main Window"
-msgstr "Прикажи го главниот прозорец на стартување"
-
-#: ui/droptarget.cpp:278
-#, fuzzy
-msgid "Hide Main Window"
-msgstr "Скриј прозорец со записи"
-
-#: ui/droptarget.cpp:356
-msgid "You can drag download links into the drop target."
-msgstr ""
-
-#: ui/droptarget.cpp:401
-msgid ""
-"Drop target has been hidden. If you want to show it again, go to Settings-"
-">Configure KGet->Look & Feel."
-msgstr ""
-
-#: ui/droptarget.cpp:403
-#, fuzzy
-msgid "Hiding drop target"
-msgstr "Скриј цел за &испуштање"
-
-#: ui/transferdetails.cpp:74 ui/transferdetails.cpp:81
-#, fuzzy
-msgid " of "
-msgstr "%1 од %2"
-
-#: ui/transfersviewdelegate.cpp:460
-#, fuzzy
-msgid "Transfer details"
-msgstr " Преноси: %1 "
-
-#: ui/viewscontainer.cpp:44
-#, fuzzy, kde-format
-#| msgid "Default folder:"
-msgid "Details for: %1"
-msgstr "Почетна папка:"
-
-#: ui/viewscontainer.cpp:49
-#, fuzzy
-msgid "All downloads"
-msgstr "Означи парцијални симнувања"
-
-#: ui/viewscontainer.cpp:54
-#, fuzzy
-msgid "Finished downloads"
-msgstr "Завршено"
-
-#: ui/viewscontainer.cpp:83
-#, fuzzy
-msgid "Transfers:"
-msgstr "&Пренос"
-
-#: ui/viewscontainer.cpp:186
-#, fuzzy
-msgid "Downloads"
-msgstr "Симнувањето е продолжено"
-
-#: ui/viewscontainer.cpp:199
-#, fuzzy
-msgid "Transfer details:"
-msgstr " Преноси: %1 "
 
 #, fuzzy
 #~ msgid "Form"
 #~ msgstr "или"
-
-#, fuzzy
-#~ msgid "Remove"
-#~ msgstr "&Продолжи"
 
 #, fuzzy
 #~ msgid "Hide drop target"
@@ -1029,10 +1243,6 @@ msgstr " Преноси: %1 "
 #, fuzzy
 #~ msgid "DlgAdvanced"
 #~ msgstr "Напредно"
-
-#, fuzzy
-#~ msgid "File"
-#~ msgstr "Тип на датотека"
 
 #, fuzzy
 #~ msgid "Delete Group."
@@ -1083,9 +1293,6 @@ msgstr " Преноси: %1 "
 
 #~ msgid "Not resumed"
 #~ msgstr "Не е продолжено"
-
-#~ msgid "Connection"
-#~ msgstr "Поврзување"
 
 #~ msgid "Automation"
 #~ msgstr "Автоматизација"
@@ -1751,9 +1958,6 @@ msgstr " Преноси: %1 "
 #~ msgid "Delaying"
 #~ msgstr "Одложувам"
 
-#~ msgid "Download finished"
-#~ msgstr "Симнувањето е завршено"
-
 #~ msgctxt "OK as in 'finished'"
 #~ msgid "OK"
 #~ msgstr "Во ред"
@@ -1776,9 +1980,6 @@ msgstr " Преноси: %1 "
 #~ msgid "S"
 #~ msgstr "S"
 
-#~ msgid "Local File Name"
-#~ msgstr "Име на локална датотека"
-
 #~ msgid "Count"
 #~ msgstr "Број"
 
@@ -1796,24 +1997,6 @@ msgstr " Преноси: %1 "
 
 #~ msgid "Download Selected Files"
 #~ msgstr "Симни ги избраните датотеки"
-
-#~ msgid "Description"
-#~ msgstr "Опис"
-
-#~ msgid "Location (URL)"
-#~ msgstr "Локација (URL)"
-
-#~ msgid "Links in: %1 - KGet"
-#~ msgstr "Врски во: %1 - KGet"
-
-#~ msgid "List All Links"
-#~ msgstr "Прикажи ги сите врски"
-
-#~ msgid "There are no links in the active frame of the current HTML page."
-#~ msgstr "Нема врски во активната рамка на моменталната HTML-страница."
-
-#~ msgid "No Links"
-#~ msgstr "Нема врски"
 
 #~ msgid "File Already exists"
 #~ msgstr "Датотеката веќе постои"
