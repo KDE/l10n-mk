@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kickoff\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-19 06:21+0100\n"
+"POT-Creation-Date: 2007-12-21 06:14+0100\n"
 "PO-Revision-Date: 2007-11-27 11:02+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -18,33 +18,64 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: main.cpp:32
-msgid "Kickoff"
+#: ui/contextmenufactory.cpp:70
+msgid "Advanced"
+msgstr "Напредно"
+
+#: ui/contextmenufactory.cpp:112
+msgid "Remove from Favorites"
 msgstr ""
 
-#: main.cpp:33
-msgid "Application Launcher"
-msgstr "Извршувач на апликации"
+#: ui/contextmenufactory.cpp:115
+msgid "Add to Favorites"
+msgstr ""
 
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Божидар Проевски"
+#: ui/contextmenufactory.cpp:123
+msgid "Add to Desktop"
+msgstr "Додај на раб. површина"
 
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "bobibobi@freemail.com.mk"
+#: ui/contextmenufactory.cpp:129
+msgid "Add to Panel"
+msgstr "Додај на панелот"
 
-#: core/applicationmodel.cpp:306
-msgid "Known Applications"
-msgstr "Познати апликации"
+#: ui/launcher.cpp:134
+msgid "Leave"
+msgstr ""
 
-#: core/favoritesmodel.cpp:25 ui/launcher.cpp:144
+#: ui/launcher.cpp:144 core/favoritesmodel.cpp:25
+#: simpleapplet/simpleapplet.cpp:131
 msgid "Favorites"
 msgstr "Омилени"
 
+#: ui/launcher.cpp:160 core/recentlyusedmodel.cpp:105 core/systemmodel.cpp:91
+#: core/searchmodel.cpp:131
+msgid "Applications"
+msgstr "Апликации"
+
+#: ui/launcher.cpp:171
+msgid "Recently Used"
+msgstr "Неодамна користени"
+
+#: ui/launcher.cpp:173
+msgid "Clear Recent Applications"
+msgstr ""
+
+#: ui/launcher.cpp:174
+msgid "Clear Recent Documents"
+msgstr ""
+
+#: ui/launcher.cpp:190
+#, fuzzy
+#| msgid "My Computer"
+msgid "Computer"
+msgstr "Мојот компјутерот"
+
+#: ui/searchbar.cpp:64
+msgid "Search:"
+msgstr "Барање:"
+
 #: core/leavemodel.cpp:46 core/leavemodel.cpp:56
+#: simpleapplet/simpleapplet.cpp:140 simpleapplet/simpleapplet.cpp:210
 msgid "Logout"
 msgstr "Одјавa"
 
@@ -52,7 +83,8 @@ msgstr "Одјавa"
 msgid "End session"
 msgstr "Крај на сесија"
 
-#: core/leavemodel.cpp:51
+#: core/leavemodel.cpp:51 simpleapplet/simpleapplet.cpp:137
+#: simpleapplet/simpleapplet.cpp:206
 msgid "Lock"
 msgstr "Заклучи"
 
@@ -98,6 +130,10 @@ msgstr "Сесија"
 msgid "System"
 msgstr "Систем"
 
+#: core/applicationmodel.cpp:306
+msgid "Known Applications"
+msgstr "Познати апликации"
+
 #: core/models.cpp:113
 msgid "Home Folder"
 msgstr "Домашна папка"
@@ -109,20 +145,6 @@ msgstr "Мрежни папки"
 #: core/recentlyusedmodel.cpp:96 core/searchmodel.cpp:213
 msgid "Documents"
 msgstr "Документи"
-
-#: core/recentlyusedmodel.cpp:105 core/searchmodel.cpp:131
-#: core/systemmodel.cpp:91 ui/launcher.cpp:160
-msgid "Applications"
-msgstr "Апликации"
-
-#: core/searchmodel.cpp:196
-msgid "Web Searches"
-msgstr "Веб-пребарувања"
-
-#: core/searchmodel.cpp:203
-#, kde-format
-msgid "Search web for '%1'"
-msgstr ""
 
 #: core/systemmodel.cpp:92
 msgid "Places"
@@ -136,51 +158,53 @@ msgstr "Подвижен носач"
 msgid "Storage"
 msgstr ""
 
-#: ui/contextmenufactory.cpp:70
-msgid "Advanced"
-msgstr "Напредно"
+#: core/searchmodel.cpp:196
+msgid "Web Searches"
+msgstr "Веб-пребарувања"
 
-#: ui/contextmenufactory.cpp:112
-msgid "Remove from Favorites"
+#: core/searchmodel.cpp:203
+#, kde-format
+msgid "Search web for '%1'"
 msgstr ""
 
-#: ui/contextmenufactory.cpp:115
-msgid "Add to Favorites"
+#: main.cpp:32
+msgid "Kickoff"
 msgstr ""
 
-#: ui/contextmenufactory.cpp:123
-msgid "Add to Desktop"
-msgstr "Додај на раб. површина"
+#: main.cpp:33
+msgid "Application Launcher"
+msgstr "Извршувач на апликации"
 
-#: ui/contextmenufactory.cpp:129
-msgid "Add to Panel"
-msgstr "Додај на панелот"
-
-#: ui/launcher.cpp:134
-msgid "Leave"
+#: applet/applet.cpp:105
+msgctxt "@title:window"
+msgid "Configure Launcher"
 msgstr ""
 
-#: ui/launcher.cpp:171
-msgid "Recently Used"
-msgstr "Неодамна користени"
-
-#: ui/launcher.cpp:173
-msgid "Clear Recent Applications"
+#: applet/applet.cpp:115
+msgid "Number of visible items:"
 msgstr ""
 
-#: ui/launcher.cpp:174
-msgid "Clear Recent Documents"
-msgstr ""
-
-#: ui/launcher.cpp:190
+#: applet/applet.cpp:121
 #, fuzzy
-#| msgid "My Computer"
-msgid "Computer"
-msgstr "Мојот компјутерот"
+#| msgid "Switch User"
+msgid "Switch tabs on hover"
+msgstr "Смени корисник"
 
-#: ui/searchbar.cpp:64
-msgid "Search:"
-msgstr "Барање:"
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Божидар Проевски"
 
-#~ msgid "Switch User"
-#~ msgstr "Смени корисник"
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "bobibobi@freemail.com.mk"
+
+#: simpleapplet/simpleapplet.cpp:123
+msgctxt "@title:window"
+msgid "Configure Menu"
+msgstr ""
+
+#: simpleapplet/simpleapplet.cpp:134 simpleapplet/simpleapplet.cpp:202
+msgid "Switch User"
+msgstr "Смени корисник"
