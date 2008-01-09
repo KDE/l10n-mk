@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio_smtp\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-28 06:13+0100\n"
+"POT-Creation-Date: 2008-01-09 07:18+0100\n"
 "PO-Revision-Date: 2004-10-30 21:24+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -72,18 +72,33 @@ msgstr "Поддршката за проверка за автентичност
 msgid "No authentication details supplied."
 msgstr "Нема зададени детали за проверката за автентичност."
 
-#: command.cpp:365
-#, kde-format
-msgid ""
-"Your SMTP server does not support %1.\n"
-"Choose a different authentication method.\n"
-"%2"
+#: command.cpp:364
+#, fuzzy
+#| msgid ""
+#| "Your SMTP server does not support %1.\n"
+#| "Choose a different authentication method.\n"
+#| "%2"
+msgid "Choose a different authentication method."
 msgstr ""
 "Вашиот SMTP не поддржува %1.\n"
 "Изберете друг метод за проверка за автентичност.\n"
 "%2"
 
-#: command.cpp:369
+#: command.cpp:366
+#, fuzzy, kde-format
+msgid "Your SMTP server does not support %1."
+msgstr ""
+"Вашиот SMTP-сервер не поддржува проверка за автентичност.\n"
+" %2"
+
+#: command.cpp:367
+#, fuzzy
+msgid "Your SMTP server does not support (unspecified method)."
+msgstr ""
+"Вашиот SMTP-сервер не поддржува проверка за автентичност.\n"
+" %2"
+
+#: command.cpp:372
 #, fuzzy, kde-format
 msgid ""
 "Your SMTP server does not support authentication.\n"
@@ -92,7 +107,7 @@ msgstr ""
 "Вашиот SMTP-сервер не поддржува проверка за автентичност.\n"
 " %2"
 
-#: command.cpp:373
+#: command.cpp:376
 #, kde-format
 msgid ""
 "Authentication failed.\n"
@@ -103,11 +118,11 @@ msgstr ""
 "Најверојатно лозинката е погрешна.\n"
 "%1"
 
-#: command.cpp:511
+#: command.cpp:514
 msgid "Could not read data from application."
 msgstr "Не може да се прочитаат податоци од апликацијата. "
 
-#: command.cpp:528
+#: command.cpp:531
 #, kde-format
 msgid ""
 "The message content was not accepted.\n"
