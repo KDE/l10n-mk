@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-13 10:06+0100\n"
+"POT-Creation-Date: 2008-01-14 09:41+0100\n"
 "PO-Revision-Date: 2000-10-02 22:00+0100\n"
 "Last-Translator: Damjan Janevski <miopa@usa.net>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -179,6 +179,13 @@ msgstr "Недостасува филтер за увоз"
 #, fuzzy
 msgid "&New View"
 msgstr "Отстрани приказ"
+
+#: main/KoExistingDocumentPane.cpp:49 main/KoMainWindow.cpp:1227
+#: main/KoOpenPane.cpp:346 main/KoOpenPane.cpp:350
+#: guiutils/KoTemplateChooseDia.cpp:197
+#, fuzzy
+msgid "Open Document"
+msgstr "&Отвори документ"
 
 #: main/KoDocumentInfoDlg.cpp:72 main/KoMainWindow.cpp:277
 msgid "Document Information"
@@ -676,7 +683,7 @@ msgstr ""
 msgid "a drawing"
 msgstr ""
 
-#: main/KoDocument.cpp:2805
+#: main/KoDocument.cpp:2806
 #, fuzzy
 msgid "Embedding Object"
 msgstr "Не може да се вчита слика."
@@ -946,11 +953,6 @@ msgstr ""
 msgid "Warning"
 msgstr ""
 
-#: main/KoMainWindow.cpp:1227 guiutils/KoTemplateChooseDia.cpp:197
-#, fuzzy
-msgid "Open Document"
-msgstr "&Отвори документ"
-
 #: main/KoMainWindow.cpp:1229
 #, fuzzy
 msgid "Import Document"
@@ -986,17 +988,12 @@ msgid ""
 "Do you want to continue?"
 msgstr ""
 
-#: main/KoOpenPane.cpp:117
-#, fuzzy
-msgid "Open Existing Document..."
-msgstr "&Отвори постоечки документ"
-
-#: main/KoOpenPane.cpp:178
+#: main/KoOpenPane.cpp:165
 #, fuzzy
 msgid "Recent Documents"
 msgstr "&Отвори постоечки документ"
 
-#: main/KoOpenPane.cpp:258
+#: main/KoOpenPane.cpp:255
 #, fuzzy
 msgid "Custom Document"
 msgstr "&Отвори документ"
@@ -1693,7 +1690,7 @@ msgstr ""
 
 #. i18n: tag Text
 #. i18n: file ./main/koffice_shell.rc line 54
-#: rc.cpp:12 guiutils/KoInsertLink.cpp:66
+#: rc.cpp:12
 #, fuzzy
 msgid "File"
 msgstr "Полно име :"
@@ -1705,13 +1702,13 @@ msgid "DetailsPaneBase"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./main/koDetailsPaneBase.ui line 138
+#. i18n: file ./main/koDetailsPaneBase.ui line 102
 #: rc.cpp:18
 msgid "Always use this template at application start up"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./main/koDetailsPaneBase.ui line 141
+#. i18n: file ./main/koDetailsPaneBase.ui line 105
 #: rc.cpp:21
 msgid "Always use this template"
 msgstr ""
@@ -2421,9 +2418,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoGeneralPropertyUi.ui line 56
-#. i18n: tag string
-#. i18n: file ./guiutils/KoShapeGeometry.ui line 29
-#: rc.cpp:379 rc.cpp:421
+#: rc.cpp:379
 msgid "Position"
 msgstr ""
 
@@ -2461,133 +2456,99 @@ msgid "Save palette"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./guiutils/KoShapeGeometry.ui line 22
-#: rc.cpp:418
-msgid "Protect size and position"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./guiutils/KoShapeGeometry.ui line 54
-#: rc.cpp:424 guiutils/KoPageLayoutDia.cpp:323
-#: guiutils/KoPageLayoutDia.cpp:351
-msgid "Left:"
-msgstr "Лево:"
-
-#. i18n: tag string
-#. i18n: file ./guiutils/KoShapeGeometry.ui line 64
-#: rc.cpp:427
-#, fuzzy
-msgid "Width:"
-msgstr "Ширина:"
-
-#. i18n: tag string
-#. i18n: file ./guiutils/KoShapeGeometry.ui line 74
-#: rc.cpp:430
-#, fuzzy
-msgid "Top:"
-msgstr "Горе:"
-
-#. i18n: tag string
-#. i18n: file ./guiutils/KoShapeGeometry.ui line 84
-#: rc.cpp:433
-#, fuzzy
-msgid "Height:"
-msgstr "Висина:"
-
-#. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 51
-#: rc.cpp:436
+#: rc.cpp:418
 #, fuzzy
 msgid "Data"
 msgstr "Избери..."
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 74
-#: rc.cpp:439
+#: rc.cpp:421
 #, fuzzy
 msgid "E&ncoding:"
 msgstr "Насловна линија:"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 118
-#: rc.cpp:442
+#: rc.cpp:424
 msgid "First row contains headers"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 131
-#: rc.cpp:445
+#: rc.cpp:427
 msgid "First column contains headers"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 155
-#: rc.cpp:448
+#: rc.cpp:430
 #, fuzzy
 msgid "Format"
 msgstr "Формат на страна"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 167
-#: rc.cpp:451
+#: rc.cpp:433
 msgid "Delimiter"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 173
-#: rc.cpp:454
+#: rc.cpp:436
 #, fuzzy
 msgid "Comma"
 msgstr "Фирма :"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 183
-#: rc.cpp:457
+#: rc.cpp:439
 msgid "Semicolon"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 190
-#: rc.cpp:460
+#: rc.cpp:442
 #, fuzzy
 msgid "Other"
 msgstr "Коментар"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 197
-#: rc.cpp:463
+#: rc.cpp:445
 #, fuzzy
 msgid "Tabulator"
 msgstr "Табулатор &лево"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 204
-#: rc.cpp:466
+#: rc.cpp:448
 #, fuzzy
 msgid "Space"
 msgstr "&Додади група..."
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 249
-#: rc.cpp:469
+#: rc.cpp:451
 msgid "Text&quote:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 266
-#: rc.cpp:472
+#: rc.cpp:454
 msgid "\""
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 271
-#: rc.cpp:475
+#: rc.cpp:457
 msgid "'"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 276
-#: rc.cpp:478 guiutils/KoCsvImportDialog.cpp:220
+#: rc.cpp:460 guiutils/KoCsvImportDialog.cpp:220
 #: guiutils/KoCsvImportDialog.cpp:585 guiutils/KoCsvImportDialog.cpp:690
 #: guiutils/Kolinestyleaction.cpp:75
 msgid "None"
@@ -2595,51 +2556,51 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 300
-#: rc.cpp:481
+#: rc.cpp:463
 msgid "Decimal symbol:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 329
-#: rc.cpp:484
+#: rc.cpp:466
 msgid "Thousands separator:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 374
-#: rc.cpp:487
+#: rc.cpp:469
 msgid "Ignore duplicate delimiters"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 381
-#: rc.cpp:490
+#: rc.cpp:472
 #, fuzzy
 msgid "&Format:"
 msgstr "Формат на страна"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 395
-#: rc.cpp:493
+#: rc.cpp:475
 msgid "Ranges"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 401
-#: rc.cpp:496
+#: rc.cpp:478
 msgid "Update"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 468
-#: rc.cpp:499
+#: rc.cpp:481
 #, fuzzy
 msgid "Import columns:"
 msgstr "&Отвори документ"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 487
-#: rc.cpp:502
+#: rc.cpp:484
 #, fuzzy
 msgid "Import lines:"
 msgstr "Наслов :"
@@ -2648,93 +2609,74 @@ msgstr "Наслов :"
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 497
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 520
-#: rc.cpp:505 rc.cpp:508
+#: rc.cpp:487 rc.cpp:490
 msgid "to"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 25
-#: rc.cpp:511
+#: rc.cpp:493
 msgid "Footnote/ Endnote"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 37
-#: rc.cpp:514
+#: rc.cpp:496
 #, fuzzy
 msgid "Spacing between footnote and body:"
 msgstr "Растојание меѓу подножје и тело ( %1 ):"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 47
-#: rc.cpp:517
+#: rc.cpp:499
 #, fuzzy
 msgid "Footer"
 msgstr "Подножје"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 59
-#: rc.cpp:520
+#: rc.cpp:502
 msgid "Different footer for even and odd pages"
 msgstr "Различно подножје за парни и непарни страни"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 66
-#: rc.cpp:523
+#: rc.cpp:505
 msgid "Different footer for the first page"
 msgstr "Различно подножје за првата страна"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 73
-#: rc.cpp:526
+#: rc.cpp:508
 #, fuzzy
 msgid "Spacing between footer and body:"
 msgstr "Растојание меѓу подножје и тело ( %1 ):"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 83
-#: rc.cpp:529
+#: rc.cpp:511
 #, fuzzy
 msgid "Header"
 msgstr "Заглавје"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 95
-#: rc.cpp:532
+#: rc.cpp:514
 #, fuzzy
 msgid "Spacing between header and body:"
 msgstr "Растојание меѓу заглавје и тело ( %1 ):"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 102
-#: rc.cpp:535
+#: rc.cpp:517
 msgid "Different header for even and odd pages"
 msgstr "Различно заглавје за парни и непарни страни"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 109
-#: rc.cpp:538
+#: rc.cpp:520
 msgid "Different header for the first page"
 msgstr "Различно заглавје за првата страна"
-
-#: guiutils/Kolinewidthaction.cpp:102
-#, fuzzy
-msgid "&Custom..."
-msgstr "По Избор"
-
-#: guiutils/Kolinewidthaction.cpp:167
-#, fuzzy
-msgid "Custom Line Width"
-msgstr "По Избор"
-
-#: guiutils/Kolinewidthaction.cpp:175
-#, fuzzy
-msgid "Line width:"
-msgstr "Ширина:"
-
-#: guiutils/KoPictureFilePreview.cpp:116
-msgid "*.svg *.wmf *.qpic|Clipart (*.svg *.wmf *.qpic)"
-msgstr ""
 
 #: guiutils/KoDocumentSectionToolTip.cpp:51
 msgid "Yes"
@@ -2838,6 +2780,10 @@ msgstr "Заглавје и подножје"
 #, fuzzy
 msgid "Head Line"
 msgstr "Насловна линија:"
+
+#: guiutils/KoPageLayoutDia.cpp:323 guiutils/KoPageLayoutDia.cpp:351
+msgid "Left:"
+msgstr "Лево:"
 
 #: guiutils/KoPageLayoutDia.cpp:330 guiutils/KoPageLayoutDia.cpp:358
 msgid "Mid:"
@@ -2946,10 +2892,6 @@ msgid "&Position:"
 msgstr ""
 "\n"
 "Ориентација:"
-
-#: guiutils/KoShapeGeometry.cpp:28
-msgid "Geometry"
-msgstr ""
 
 #: guiutils/KoTemplateChooseDia.cpp:290
 #, fuzzy
@@ -3092,58 +3034,6 @@ msgstr ""
 #, fuzzy
 msgid "Add / Remove Colors..."
 msgstr "Отстрани табулатор"
-
-#: guiutils/KoInsertLink.cpp:48
-msgid "Insert Link"
-msgstr ""
-
-#: guiutils/KoInsertLink.cpp:54
-#, fuzzy
-msgid "Internet"
-msgstr "Внесете име"
-
-#: guiutils/KoInsertLink.cpp:60
-msgid "Mail & News"
-msgstr ""
-
-#: guiutils/KoInsertLink.cpp:74
-msgid "Bookmark"
-msgstr ""
-
-#: guiutils/KoInsertLink.cpp:221 guiutils/KoInsertLink.cpp:295
-#: guiutils/KoInsertLink.cpp:378 guiutils/KoInsertLink.cpp:449
-msgid "Text to display:"
-msgstr ""
-
-#: guiutils/KoInsertLink.cpp:229
-#, fuzzy
-msgid "Internet address:"
-msgstr "Внесете име"
-
-#: guiutils/KoInsertLink.cpp:303
-msgid "Bookmark name:"
-msgstr ""
-
-#: guiutils/KoInsertLink.cpp:386
-msgid "Target:"
-msgstr ""
-
-#: guiutils/KoInsertLink.cpp:456
-#, fuzzy
-msgid "Recent file:"
-msgstr "Отстрани шаблон"
-
-#: guiutils/KoInsertLink.cpp:474
-#, fuzzy
-msgid "No Entries"
-msgstr "Избери..."
-
-#: guiutils/KoInsertLink.cpp:487
-#, fuzzy
-msgid "File location:"
-msgstr ""
-"\n"
-"Ориентација:"
 
 #: guiutils/KoResourceItemChooser.cpp:99
 #, fuzzy
@@ -3350,22 +3240,6 @@ msgstr ""
 #: guiutils/KoZoomMode.cpp:29
 msgid "Actual Pixels"
 msgstr ""
-
-#: guiutils/KoTabChooser.cpp:160
-msgid "Tabulator &Left"
-msgstr "Табулатор &лево"
-
-#: guiutils/KoTabChooser.cpp:161
-msgid "Tabulator &Center"
-msgstr "Табулатор на &средина"
-
-#: guiutils/KoTabChooser.cpp:162
-msgid "Tabulator &Right"
-msgstr "Табулатор &десно"
-
-#: guiutils/KoTabChooser.cpp:163
-msgid "Tabulator &Decimal Point"
-msgstr "Децимална &точка на табулатор"
 
 #: guiutils/KoEditColorSetDialog.cpp:144
 msgid "Add Color To Palette"
@@ -3735,6 +3609,68 @@ msgstr ""
 #, fuzzy
 msgid "Reparent shapes"
 msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Open Existing Document..."
+#~ msgstr "&Отвори постоечки документ"
+
+#, fuzzy
+#~ msgid "Width:"
+#~ msgstr "Ширина:"
+
+#, fuzzy
+#~ msgid "Top:"
+#~ msgstr "Горе:"
+
+#, fuzzy
+#~ msgid "Height:"
+#~ msgstr "Висина:"
+
+#, fuzzy
+#~ msgid "&Custom..."
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgid "Custom Line Width"
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgid "Line width:"
+#~ msgstr "Ширина:"
+
+#, fuzzy
+#~ msgid "Internet"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgid "Internet address:"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgid "Recent file:"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "No Entries"
+#~ msgstr "Избери..."
+
+#, fuzzy
+#~ msgid "File location:"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#~ msgid "Tabulator &Left"
+#~ msgstr "Табулатор &лево"
+
+#~ msgid "Tabulator &Center"
+#~ msgstr "Табулатор на &средина"
+
+#~ msgid "Tabulator &Right"
+#~ msgstr "Табулатор &десно"
+
+#~ msgid "Tabulator &Decimal Point"
+#~ msgstr "Децимална &точка на табулатор"
 
 #, fuzzy
 #~ msgid "&Raise"
