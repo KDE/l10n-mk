@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwordquiz\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-03 08:55+0100\n"
+"POT-Creation-Date: 2008-02-04 11:33+0100\n"
 "PO-Revision-Date: 2006-10-15 23:35+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -32,7 +32,7 @@ msgstr "Кратенка"
 msgid "Character"
 msgstr "Знак"
 
-#: prefcharacter.cpp:55 kwordquiz.cpp:403
+#: prefcharacter.cpp:55
 #, fuzzy, kde-format
 msgid "Special Character %1"
 msgstr "Специјален знак 1"
@@ -49,7 +49,7 @@ msgstr "Вашиот одговор е точен!"
 msgid "Your answer was incorrect."
 msgstr "Вашиот одговор е неточен."
 
-#: dlglanguage.cpp:28 kwqcommands.cpp:445
+#: dlglanguage.cpp:28
 msgid "Column Titles"
 msgstr "Наслов на колона"
 
@@ -75,6 +75,7 @@ msgstr ""
 #: kwordquizprefs.cpp:45
 #, fuzzy
 #| msgid "Editor Settings"
+msgctxt "@title:group general settings"
 msgid "General Settings"
 msgstr "Поставувања за уредувач"
 
@@ -86,6 +87,9 @@ msgid "Editor"
 msgstr "Уредувач"
 
 #: kwordquizprefs.cpp:48
+#, fuzzy
+#| msgid "Editor Settings"
+msgctxt "@title:group editor settings"
 msgid "Editor Settings"
 msgstr "Поставувања за уредувач"
 
@@ -97,6 +101,9 @@ msgid "Quiz"
 msgstr "Квиз"
 
 #: kwordquizprefs.cpp:51
+#, fuzzy
+#| msgid "Quiz Settings"
+msgctxt "@title:group quiz settings"
 msgid "Quiz Settings"
 msgstr "Поставувања за квизот"
 
@@ -114,6 +121,9 @@ msgstr ""
 "Изглед"
 
 #: kwordquizprefs.cpp:54
+#, fuzzy
+#| msgid "Flashcard Appearance Settings"
+msgctxt "@title:group flash appearance settings"
 msgid "Flashcard Appearance Settings"
 msgstr "Подесувања за изглед на флеш-картица"
 
@@ -130,9 +140,10 @@ msgstr ""
 "Специјални\n"
 "Знаци"
 
-#. i18n: tag text
-#. i18n: file kwordquizui.rc line 96
-#: kwordquizprefs.cpp:58 rc.cpp:267
+#: kwordquizprefs.cpp:58
+#, fuzzy
+#| msgid "Special Characters"
+msgctxt "@title:group special character settings"
 msgid "Special Characters"
 msgstr "Специјални знаци"
 
@@ -916,6 +927,12 @@ msgstr "Оди до"
 msgid "Quiz"
 msgstr "Квиз"
 
+#. i18n: tag text
+#. i18n: file kwordquizui.rc line 96
+#: rc.cpp:267
+msgid "Special Characters"
+msgstr "Специјални знаци"
+
 #. i18n: tag string
 #. i18n: file multipleviewbase.ui line 90
 #. i18n: tag string
@@ -1681,7 +1698,7 @@ msgstr "Изберете да го испечатите речникот как�
 
 #. i18n: tag string
 #. i18n: file prefgeneralbase.ui line 56
-#: rc.cpp:639 kwordquiz.cpp:290
+#: rc.cpp:639
 msgid "&Editor"
 msgstr "&Уредувач"
 
@@ -2000,13 +2017,13 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "tome@lugola.net, idisaster@gmail.com, shadowseed@gmail.com"
 
-#: kwqcommands.h:91
+#: kwqcommands.h:94
 #, fuzzy
 #| msgid "Front"
 msgid "Font"
 msgstr "Предно"
 
-#: kwqcommands.h:109
+#: kwqcommands.h:112
 #, fuzzy
 #| msgid "&Undo Entry"
 msgid "Entry"
@@ -2169,6 +2186,13 @@ msgstr "Го менува режимот користен во квиз сеси
 msgid "Selects this mode"
 msgstr "Го избира овој режим"
 
+#: kwordquiz.cpp:290
+#, fuzzy
+#| msgid "&Editor"
+msgctxt "@item:inlistbox activate vocabulary editor"
+msgid "&Editor"
+msgstr "&Уредувач"
+
 #: kwordquiz.cpp:292
 msgid "Activates the vocabulary editor"
 msgstr "Го активира уредувачот за речник"
@@ -2277,6 +2301,11 @@ msgstr "Го конфигурира звукот и другите извест�
 msgid "Specifies preferences for the vocabulary editor and quiz sessions"
 msgstr "Ги наведува параметрите за едиторот на речникот и квиз сесиите"
 
+#: kwordquiz.cpp:403
+#, fuzzy, kde-format
+msgid "Special Character <numid>%1</numid>"
+msgstr "Специјален знак 1"
+
 #: kwordquiz.cpp:417
 msgid "Toggles display of the toolbars"
 msgstr "Го менува прикажувањето на алатниците"
@@ -2294,12 +2323,14 @@ msgid "Enter search terms here"
 msgstr ""
 
 #: kwordquiz.cpp:476
+msgctxt "@label:textbox search"
 msgid "S&earch:"
 msgstr ""
 
 #: kwordquiz.cpp:506
 #, fuzzy
 #| msgid "Editor"
+msgctxt "@item:inlistbox vocabulary editor"
 msgid "Editor"
 msgstr "Уредувач"
 
@@ -2325,6 +2356,9 @@ msgstr "Отворам датотека..."
 #: kwordquiz.cpp:1008 kwordquiz.cpp:1024 kwordquiz.cpp:1031 kwordquiz.cpp:1038
 #: kwordquiz.cpp:1047 kwordquiz.cpp:1055 kwordquiz.cpp:1069 kwordquiz.cpp:1077
 #: kwordquiz.cpp:1084 kwordquiz.cpp:1091 kwordquiz.cpp:1098
+#, fuzzy
+#| msgid "Ready"
+msgctxt "@info:status ready"
 msgid "Ready"
 msgstr "Спремно"
 
@@ -2572,56 +2606,77 @@ msgstr "Прашање"
 #: kwqcommands.cpp:81
 #, fuzzy
 #| msgid "&Undo Clear"
+msgctxt "@item:inmenu undo clear"
 msgid "Clear"
 msgstr "&Отповикај исчисти"
 
 #: kwqcommands.cpp:100
+msgctxt "@item:inmenu undo cut"
 msgid "Cut"
 msgstr ""
 
 #: kwqcommands.cpp:113
 #, fuzzy
 #| msgid "&Undo Paste"
+msgctxt "@item:inmenu undo paste"
 msgid "Paste"
 msgstr "&Отповикај вметни"
 
 #: kwqcommands.cpp:206
+#, fuzzy
+#| msgid "Sort"
+msgctxt "@item:inmenu undo sort"
 msgid "Sort"
 msgstr "Подреди"
 
 #: kwqcommands.cpp:233
 #, fuzzy
 #| msgid "Sh&uffle"
+msgctxt "@item:inmenu undo shuffle"
 msgid "Shuffle"
 msgstr "&Мешај"
 
 #: kwqcommands.cpp:253
 #, fuzzy
 #| msgid "&Insert Row"
+msgctxt "@item:inmenu undo insert"
 msgid "Insert"
 msgstr "&Вметни ред"
 
 #: kwqcommands.cpp:285
 #, fuzzy
 #| msgid "&Delete Row"
+msgctxt "@item:inmenu undo delete"
 msgid "Delete"
 msgstr "&Избриши ред"
 
 #: kwqcommands.cpp:334
 #, fuzzy
 #| msgid "&Unmark Blanks"
+msgctxt "@item:inmenu undo unmark blank"
 msgid "Unmark Blank"
 msgstr "&Одозначи празни"
 
 #: kwqcommands.cpp:356
+msgctxt "@item:inmenu undo formatting"
 msgid "Formatting"
 msgstr ""
+
+#: kwqcommands.cpp:445
+#, fuzzy
+#| msgid "Column Titles"
+msgctxt "@item:inmenu undo column titles"
+msgid "Column Titles"
+msgstr "Наслов на колона"
 
 #: dlgspecchar.cpp:28
 msgid "Select Character"
 msgstr "Изберете знак"
 
 #: dlgspecchar.cpp:36
+#, fuzzy
+#| msgid "&Select"
+msgctxt "@action:button select"
 msgid "&Select"
 msgstr "&Избери"
 
