@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-21 14:35+0100\n"
+"POT-Creation-Date: 2008-02-22 12:33+0100\n"
 "PO-Revision-Date: 2007-12-01 22:11+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -5640,88 +5640,7 @@ msgstr "Изберете регион од сликата"
 msgid "Please click and drag on the image to select the region of interest:"
 msgstr "Кликнете и повлечете на сликата за да изберете регион од интерес:"
 
-#: kdeui/dialogs/kshortcutsdialog.cpp:374
-msgid "Default:"
-msgstr "Стандардно:"
-
-#: kdeui/dialogs/kshortcutsdialog.cpp:377 kdeui/widgets/klineedit.cpp:1080
-msgid "None"
-msgstr "Нема"
-
-#: kdeui/dialogs/kshortcutsdialog.cpp:380
-msgid "Custom:"
-msgstr "Сопствено:"
-
-#: kdeui/dialogs/kshortcutsdialog.cpp:480
-msgid "Shortcuts"
-msgstr "Кратенки"
-
-#: kdeui/dialogs/kshortcutsdialog.cpp:746
-#: kdeui/dialogs/kshortcutsdialog.cpp:775
-#: kdeui/dialogs/kshortcutsdialog.cpp:791
-#: kdeui/widgets/kkeysequencewidget.cpp:124
-msgid "Key Conflict"
-msgstr "Конфликт на копчиња"
-
-#: kdeui/dialogs/kshortcutsdialog.cpp:747
-#: kdeui/widgets/kkeysequencewidget.cpp:125
-#, kde-format
-msgid ""
-"The '%1' key combination has already been allocated to the \"%2\" action.\n"
-"Do you want to reassign it from that action to the current one?"
-msgstr ""
-"Комбинацијата на копчиња „%1“ е веќе поврзана со акцијата „%2“ .\n"
-"Дали сакате да ја преповрзете од таа акција на тековната?"
-
-#: kdeui/dialogs/kshortcutsdialog.cpp:751
-#: kdeui/dialogs/kshortcutsdialog.cpp:780
-#: kdeui/dialogs/kshortcutsdialog.cpp:796 kdeui/shortcuts/kglobalaccel.cpp:317
-#: kdeui/widgets/kkeysequencewidget.cpp:128
-msgid "Reassign"
-msgstr "Преповрзи"
-
-#: kdeui/dialogs/kshortcutsdialog.cpp:763
-msgid "Conflict with Standard Application Shortcut"
-msgstr "Конфликт со стандардна кратенка на апликација"
-
-#: kdeui/dialogs/kshortcutsdialog.cpp:764
-#, kde-format
-msgid ""
-"The '%1' key combination has already been allocated to the standard action "
-"\"%2\" that many applications use.\n"
-"You cannot use it for global shortcuts for this reason."
-msgstr ""
-"Комбинацијата на копчиња „%1“ е веќе поврзана со стандардното дејство “%2“ "
-"што го користат многу апликации.\n"
-"Поради оваа причина не може да ја користите за глобални кратенки."
-
-#: kdeui/dialogs/kshortcutsdialog.cpp:776
-#, kde-format
-msgid ""
-"The '%1' shape gesture has already been allocated to the \"%2\" action.\n"
-"Do you want to reassign it from that action to the current one?"
-msgstr ""
-
-#: kdeui/dialogs/kshortcutsdialog.cpp:792
-#, kde-format
-msgid ""
-"The '%1' rocker gesture has already been allocated to the \"%2\" action.\n"
-"Do you want to reassign it from that action to the current one?"
-msgstr ""
-
-#: kdeui/dialogs/kshortcutsdialog.cpp:873
-#, kde-format
-msgctxt "@item:intable Action name in shortcuts configuration"
-msgid "%1"
-msgstr "%1"
-
-#: kdeui/dialogs/kshortcutsdialog.cpp:896
-#, kde-format
-msgctxt "@info:tooltip Action tooltip in shortcuts configuration"
-msgid "%1"
-msgstr "%1"
-
-#: kdeui/dialogs/kshortcutsdialog.cpp:1119
+#: kdeui/dialogs/kshortcutsdialog.cpp:58
 msgid "Configure Shortcuts"
 msgstr "Конфигурирање кратенки"
 
@@ -5813,6 +5732,18 @@ msgstr "За %1"
 #: kdeui/dialogs/kconfigdialog.cpp:69 kutils/kcmultidialog.cpp:105
 msgid "Configure"
 msgstr "Конфигурација"
+
+#: kdeui/dialogs/kshortcutseditoritem.cpp:57
+#, kde-format
+msgctxt "@item:intable Action name in shortcuts configuration"
+msgid "%1"
+msgstr "%1"
+
+#: kdeui/dialogs/kshortcutseditoritem.cpp:80
+#, kde-format
+msgctxt "@info:tooltip Action tooltip in shortcuts configuration"
+msgid "%1"
+msgstr "%1"
 
 #: kdeui/dialogs/kdialog.cpp:227
 msgid "&Try"
@@ -5918,6 +5849,63 @@ msgstr "%1"
 #| msgid "Change &Icon..."
 msgid "Change Icon"
 msgstr "Измени &икона..."
+
+#: kdeui/dialogs/kshortcutseditor.cpp:82
+msgid "Shortcuts"
+msgstr "Кратенки"
+
+#: kdeui/dialogs/kshortcutseditor.cpp:410
+#: kdeui/dialogs/kshortcutseditor.cpp:439
+#: kdeui/dialogs/kshortcutseditor.cpp:455
+#: kdeui/widgets/kkeysequencewidget.cpp:124
+msgid "Key Conflict"
+msgstr "Конфликт на копчиња"
+
+#: kdeui/dialogs/kshortcutseditor.cpp:411
+#: kdeui/widgets/kkeysequencewidget.cpp:125
+#, kde-format
+msgid ""
+"The '%1' key combination has already been allocated to the \"%2\" action.\n"
+"Do you want to reassign it from that action to the current one?"
+msgstr ""
+"Комбинацијата на копчиња „%1“ е веќе поврзана со акцијата „%2“ .\n"
+"Дали сакате да ја преповрзете од таа акција на тековната?"
+
+#: kdeui/dialogs/kshortcutseditor.cpp:415
+#: kdeui/dialogs/kshortcutseditor.cpp:444
+#: kdeui/dialogs/kshortcutseditor.cpp:460 kdeui/shortcuts/kglobalaccel.cpp:317
+#: kdeui/widgets/kkeysequencewidget.cpp:128
+msgid "Reassign"
+msgstr "Преповрзи"
+
+#: kdeui/dialogs/kshortcutseditor.cpp:427
+msgid "Conflict with Standard Application Shortcut"
+msgstr "Конфликт со стандардна кратенка на апликација"
+
+#: kdeui/dialogs/kshortcutseditor.cpp:428
+#, kde-format
+msgid ""
+"The '%1' key combination has already been allocated to the standard action "
+"\"%2\" that many applications use.\n"
+"You cannot use it for global shortcuts for this reason."
+msgstr ""
+"Комбинацијата на копчиња „%1“ е веќе поврзана со стандардното дејство “%2“ "
+"што го користат многу апликации.\n"
+"Поради оваа причина не може да ја користите за глобални кратенки."
+
+#: kdeui/dialogs/kshortcutseditor.cpp:440
+#, kde-format
+msgid ""
+"The '%1' shape gesture has already been allocated to the \"%2\" action.\n"
+"Do you want to reassign it from that action to the current one?"
+msgstr ""
+
+#: kdeui/dialogs/kshortcutseditor.cpp:456
+#, kde-format
+msgid ""
+"The '%1' rocker gesture has already been allocated to the \"%2\" action.\n"
+"Do you want to reassign it from that action to the current one?"
+msgstr ""
 
 #: kdeui/dialogs/kaboutapplicationdialog.cpp:64
 msgid ""
@@ -6192,6 +6180,18 @@ msgstr ""
 #: kdeui/dialogs/kbugreport.cpp:470
 msgid "Close Message"
 msgstr "Затвори порака"
+
+#: kdeui/dialogs/kshortcuteditwidget.cpp:55
+msgid "Default:"
+msgstr "Стандардно:"
+
+#: kdeui/dialogs/kshortcuteditwidget.cpp:58 kdeui/widgets/klineedit.cpp:1080
+msgid "None"
+msgstr "Нема"
+
+#: kdeui/dialogs/kshortcuteditwidget.cpp:61
+msgid "Custom:"
+msgstr "Сопствено:"
 
 #: kdeui/dialogs/kaboutkdedialog_p.cpp:42
 msgid "About KDE"
