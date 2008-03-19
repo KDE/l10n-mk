@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-03-18 13:19+0100\n"
+"POT-Creation-Date: 2008-03-19 11:17+0100\n"
 "PO-Revision-Date: 2007-11-30 23:34+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -130,6 +130,9 @@ msgid "Empty Trash"
 msgstr "Испразни ја корпата"
 
 #: dolphincontextmenu.cpp:133
+#, fuzzy
+#| msgid "Trash"
+msgctxt "@label"
 msgid "Trash"
 msgstr "Корпа"
 
@@ -212,6 +215,7 @@ msgid "Custom Font"
 msgstr ""
 
 #: dolphinfontrequester.cpp:43
+msgctxt "@action:button Choose font"
 msgid "Choose..."
 msgstr ""
 
@@ -246,7 +250,10 @@ msgid "Created folder."
 msgstr "Папката е креирана."
 
 #: dolphinmainwindow.cpp:717
-msgctxt "@title:menu"
+#, fuzzy
+#| msgctxt "@title:menu"
+#| msgid "Create New"
+msgctxt "@title:menu Create new folder, file, link, etc."
 msgid "Create New"
 msgstr "Креирај ново"
 
@@ -321,7 +328,10 @@ msgid "Folders"
 msgstr "Папки"
 
 #: dolphinmainwindow.cpp:870 dolphinmainwindow.cpp:878
-msgctxt "@title:window"
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Terminal"
+msgctxt "@title:window Shell terminal"
 msgid "Terminal"
 msgstr "Терминал"
 
@@ -382,7 +392,7 @@ msgstr ""
 
 #: dolphinmodel.cpp:221
 #, c-format
-msgctxt "Prints out the week day name: %A"
+msgctxt "@title:group The week day name: %A"
 msgid "%A"
 msgstr ""
 
@@ -407,31 +417,50 @@ msgid "Earlier this Month"
 msgstr ""
 
 #: dolphinmodel.cpp:240
+#, fuzzy
+#| msgctxt ""
+#| "Prints out the month and year: %B is full month name in current locale, "
+#| "and %Y is full year number"
+#| msgid "%B, %Y"
 msgctxt ""
-"Prints out the month and year: %B is full month name in current locale, and %"
-"Y is full year number"
+"@title:group The month and year: %B is full month name in current locale, "
+"and %Y is full year number"
 msgid "%B, %Y"
 msgstr "%B %Y"
 
 #: dolphinmodel.cpp:254 dolphinmodel.cpp:266 dolphinmodel.cpp:278
+#, fuzzy
+#| msgid "Read, "
+msgctxt "@item:intext Access permission, concatenated"
 msgid "Read, "
 msgstr "Читање. "
 
 #: dolphinmodel.cpp:257 dolphinmodel.cpp:269 dolphinmodel.cpp:281
+#, fuzzy
+#| msgid "Write, "
+msgctxt "@item:intext Access permission, concatenated"
 msgid "Write, "
 msgstr "Запишување. "
 
 #: dolphinmodel.cpp:260 dolphinmodel.cpp:272 dolphinmodel.cpp:284
+#, fuzzy
+#| msgid "Execute, "
+msgctxt "@item:intext Access permission, concatenated"
 msgid "Execute, "
 msgstr "Извршување. "
 
 #: dolphinmodel.cpp:262 dolphinmodel.cpp:274 dolphinmodel.cpp:286
+#, fuzzy
+#| msgid "Forbidden"
+msgctxt "@item:intext Access permission, concatenated"
 msgid "Forbidden"
 msgstr "Забрането"
 
 #: dolphinmodel.cpp:288
-#, kde-format
-msgctxt "This shows files and folders permissions: user, group and others"
+#, fuzzy, kde-format
+#| msgctxt "This shows files and folders permissions: user, group and others"
+#| msgid "(User: %1) (Group: %2) (Others: %3)"
+msgctxt "@title:group Files and folders by permissions"
 msgid "(User: %1) (Group: %2) (Others: %3)"
 msgstr "(Корисник: %1) (Група: %2) (Останати: %3)"
 
@@ -509,8 +538,11 @@ msgctxt "@title:group"
 msgid "View Modes"
 msgstr "Режими на преглед"
 
-#: dolphinsettingsdialog.cpp:60 metatextlabel.cpp:30
-msgctxt "@title:group"
+#: dolphinsettingsdialog.cpp:60
+#, fuzzy
+#| msgctxt "@title:group"
+#| msgid "General"
+msgctxt "@title:group General settings"
 msgid "General"
 msgstr "Општо"
 
@@ -557,7 +589,7 @@ msgstr "Вметни %1 датотека"
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Paste"
-msgctxt "@label"
+msgctxt "@action:button"
 msgid "Paste"
 msgstr "Вметни"
 
@@ -565,7 +597,7 @@ msgstr "Вметни"
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Cancel"
-msgctxt "@label"
+msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Откажи"
 
@@ -605,6 +637,9 @@ msgid "Paste"
 msgstr "Вметни"
 
 #: dolphinviewactionhandler.cpp:71
+#, fuzzy
+#| msgid "Create Folder..."
+msgctxt "@action"
 msgid "Create Folder..."
 msgstr "Креирај папка..."
 
@@ -777,7 +812,7 @@ msgid "Show 'Delete' command in context menu"
 msgstr "Прикажи ја наредбата „Избриши“ во контекстното мени"
 
 #: generalsettingspage.cpp:65
-msgctxt "option:check"
+msgctxt "@option:check"
 msgid "Browse through archives"
 msgstr ""
 
@@ -807,11 +842,14 @@ msgid "Maximum file size:"
 msgstr "Мак. големина на датотеки:"
 
 #: generalviewsettingspage.cpp:85
+#, fuzzy
+#| msgid "Use thumbnails embedded in files"
+msgctxt "@option:check"
 msgid "Use thumbnails embedded in files"
 msgstr "Користи ги сликичките вградени во датотеките"
 
 #: generalviewsettingspage.cpp:91
-msgctxt "option:check"
+msgctxt "@option:check"
 msgid "Show selection toggle"
 msgstr ""
 
@@ -1039,6 +1077,14 @@ msgctxt "@label:textbox"
 msgid "Tags:"
 msgstr ""
 
+#: metatextlabel.cpp:30
+#, fuzzy
+#| msgctxt "@title:group"
+#| msgid "General"
+msgctxt "@title:group General metadata"
+msgid "General"
+msgstr "Општо"
+
 #. i18n: tag label
 #. i18n: file dolphin_columnmodesettings.kcfg line 9
 #. i18n: tag label
@@ -1103,7 +1149,10 @@ msgstr "Големина на фонт"
 #. i18n: tag label
 #. i18n: file ./dolphin_columnmodesettings.kcfg line 21
 #: rc.cpp:12 rc.cpp:33 rc.cpp:126 rc.cpp:230 rc.cpp:281 rc.cpp:314
-msgctxt "@label"
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "Italic"
+msgctxt "@label Font style"
 msgid "Italic"
 msgstr "Курзив"
 
@@ -1608,6 +1657,7 @@ msgid "Show filter bar"
 msgstr "Прикажи лента со филтри"
 
 #: startupsettingspage.cpp:111
+msgctxt "@info"
 msgid "The location for the home folder is invalid and will not get applied."
 msgstr ""
 
@@ -1617,8 +1667,10 @@ msgid "Close"
 msgstr "Затвори"
 
 #: statusbarspaceinfo.cpp:75
-#, kde-format
-msgctxt "@info:status"
+#, fuzzy, kde-format
+#| msgctxt "@info:status"
+#| msgid "%1 free"
+msgctxt "@info:status Free disk space"
 msgid "%1 free"
 msgstr "%1 се слободни"
 
@@ -1696,12 +1748,18 @@ msgid "Sorting:"
 msgstr "Подредување:"
 
 #: viewpropertiesdialog.cpp:104
-msgctxt "@item:inlistbox"
+#, fuzzy
+#| msgctxt "@item:inlistbox"
+#| msgid "Ascending"
+msgctxt "@item:inlistbox Sort"
 msgid "Ascending"
 msgstr "Растечки"
 
 #: viewpropertiesdialog.cpp:105
-msgctxt "@item:inlistbox"
+#, fuzzy
+#| msgctxt "@action:inmenu Sort"
+#| msgid "Descending"
+msgctxt "@item:inlistbox Sort"
 msgid "Descending"
 msgstr "Опаѓачки"
 
@@ -1823,7 +1881,10 @@ msgid "Folders: %1"
 msgstr "Папки: %1"
 
 #: viewsettingspage.cpp:53
-msgctxt "@title:tab"
+#, fuzzy
+#| msgctxt "@title:group"
+#| msgid "General"
+msgctxt "@title:tab General settings"
 msgid "General"
 msgstr "Општо"
 
@@ -1841,6 +1902,21 @@ msgstr "Детали"
 msgctxt "@title:tab"
 msgid "Column"
 msgstr "Колона"
+
+#, fuzzy
+#~| msgctxt "@action:inmenu"
+#~| msgid "Cancel"
+#~ msgctxt "@label"
+#~ msgid "Cancel"
+#~ msgstr "Откажи"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Descending"
+#~ msgstr "Опаѓачки"
+
+#~ msgctxt "@title:tab"
+#~ msgid "General"
+#~ msgstr "Општо"
 
 #~ msgctxt "@label"
 #~ msgid "Bold"
