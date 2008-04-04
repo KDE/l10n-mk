@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-02 16:27+0200\n"
+"POT-Creation-Date: 2008-04-04 16:38+0200\n"
 "PO-Revision-Date: 2006-09-30 17:38+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -231,7 +231,7 @@ msgstr "Пренос на активност"
 msgid "Activity"
 msgstr "Активност"
 
-#: worktoolbar.cpp:320 dialogs/statedialog.cpp:101
+#: worktoolbar.cpp:320
 msgid "State"
 msgstr "Состојба"
 
@@ -416,7 +416,7 @@ msgid ""
 msgstr ""
 
 #: dialogs/activitydialog.cpp:35 dialogs/activitydialog.cpp:133
-#: dialogs/statedialog.cpp:38 dialogs/statedialog.cpp:110
+#: dialogs/statedialog.cpp:39 dialogs/statedialog.cpp:114
 #: dialogs/umlviewdialog.cpp:43 dialogs/objectnodedialog.cpp:36
 #: dialogs/objectnodedialog.cpp:131 dialogs/classpropdlg.cpp:117
 #: dialogs/parmpropdlg.cpp:64 dialogs/assocgenpage.cpp:61
@@ -433,22 +433,17 @@ msgstr "Иницијална активност"
 msgid "End activity"
 msgstr "Крајна активност"
 
-#. i18n: tag string
-#. i18n: file codegenerators/cppcodegenerationformbase.ui line 81
-#. i18n: tag string
-#. i18n: file dialogs/codegenerationoptionsbase.ui line 38
-#: dialogs/activitydialog.cpp:128 dialogs/statedialog.cpp:105
-#: dialogs/umlviewdialog.cpp:85 dialogs/objectnodedialog.cpp:126
-#: dialogs/umlforeignkeyconstraintdialog.cpp:179
-#: dialogs/umlforeignkeyconstraintdialog.cpp:184 dialogs/assocpropdlg.cpp:101
-#: rc.cpp:310 rc.cpp:625
+#: dialogs/activitydialog.cpp:128
+#, fuzzy
+#| msgid "General"
+msgctxt "general properties page"
 msgid "General"
 msgstr "Општо"
 
-#: dialogs/activitydialog.cpp:129 dialogs/statedialog.cpp:106
-#: dialogs/objectnodedialog.cpp:127 dialogs/umloperationdialog.cpp:77
+#: dialogs/activitydialog.cpp:129 dialogs/statedialog.cpp:110
+#: dialogs/objectnodedialog.cpp:127 dialogs/umloperationdialog.cpp:80
 #: dialogs/umlattributedialog.cpp:69 dialogs/umlentityattributedialog.cpp:72
-#: dialogs/umltemplatedialog.cpp:60
+#: dialogs/umltemplatedialog.cpp:63
 msgid "General Properties"
 msgstr "Општи својства"
 
@@ -501,10 +496,10 @@ msgstr "Името на параметарот не е единствено"
 #. i18n: file dialogs/diagrampropertiespage.ui line 433
 #. i18n: tag string
 #. i18n: file dialogs/umlrolepropertiesbase.ui line 94
-#: dialogs/activitydialog.cpp:187 dialogs/statedialog.cpp:125
+#: dialogs/activitydialog.cpp:187 dialogs/statedialog.cpp:129
 #: dialogs/objectnodedialog.cpp:179 dialogs/classifierlistpage.cpp:171
 #: dialogs/parmpropdlg.cpp:109 dialogs/classgenpage.cpp:219
-#: dialogs/classgenpage.cpp:318 dialogs/classgenpage.cpp:381
+#: dialogs/classgenpage.cpp:319 dialogs/classgenpage.cpp:383
 #: dialogs/assocrolepage.cpp:79 dialogs/assocrolepage.cpp:80
 #: dialogs/notedialog.cpp:40 dialogs/assocgenpage.cpp:62 rc.cpp:298 rc.cpp:487
 #: rc.cpp:550 rc.cpp:607 rc.cpp:837 rc.cpp:908
@@ -515,24 +510,25 @@ msgstr "Документација"
 #. i18n: file umbrello.kcfg line 126
 #. i18n: tag label
 #. i18n: file umbrello.kcfg line 209
-#: dialogs/activitydialog.cpp:207 dialogs/statedialog.cpp:147
+#: dialogs/activitydialog.cpp:207 dialogs/statedialog.cpp:151
 #: dialogs/umlviewdialog.cpp:138 dialogs/objectnodedialog.cpp:199
-#: dialogs/classpropdlg.cpp:339 dialogs/assocpropdlg.cpp:130
+#: dialogs/classpropdlg.cpp:339 dialogs/assocpropdlg.cpp:129
 #: dialogs/settingsdlg.cpp:354 rc.cpp:62 rc.cpp:107
 #, fuzzy
 msgid "Font"
 msgstr "Фонт:"
 
-#: dialogs/activitydialog.cpp:208 dialogs/statedialog.cpp:148
+#: dialogs/activitydialog.cpp:208 dialogs/statedialog.cpp:152
 #: dialogs/umlviewdialog.cpp:139 dialogs/objectnodedialog.cpp:200
-#: dialogs/classpropdlg.cpp:340 dialogs/assocpropdlg.cpp:131
+#: dialogs/classpropdlg.cpp:340 dialogs/assocpropdlg.cpp:130
 #: dialogs/settingsdlg.cpp:355
 msgid "Font Settings"
 msgstr "Поставувања за фонт"
 
-#: dialogs/activitydialog.cpp:234 dialogs/statedialog.cpp:158
-#: dialogs/umlviewdialog.cpp:125 dialogs/objectnodedialog.cpp:221
-#: dialogs/umlwidgetcolorpage.cpp:56 listpopupmenu.cpp:876
+#: dialogs/activitydialog.cpp:234
+#, fuzzy
+#| msgid "Color"
+msgctxt "widget color page"
 msgid "Color"
 msgstr "Боја"
 
@@ -574,8 +570,8 @@ msgstr "&Генерирај слично име"
 msgid "&Do Not Generate File"
 msgstr "Не генерирај &датотека"
 
-#: dialogs/activitypage.cpp:42 dialogs/statedialog.cpp:170
-#: dialogs/statedialog.cpp:171
+#: dialogs/activitypage.cpp:42 dialogs/statedialog.cpp:174
+#: dialogs/statedialog.cpp:175
 msgid "Activities"
 msgstr "Активности"
 
@@ -719,40 +715,84 @@ msgstr ""
 msgid "Check Constraint..."
 msgstr "Н&ов атрибут..."
 
-#: dialogs/statedialog.cpp:101
+#: dialogs/statedialog.cpp:103
+#, fuzzy
+#| msgid "Initial state"
+msgctxt "initial state in statechart"
 msgid "Initial state"
 msgstr "Иницијална состојба"
 
-#: dialogs/statedialog.cpp:101
+#: dialogs/statedialog.cpp:104
+#, fuzzy
+#| msgid "State"
+msgctxt "state in statechart"
+msgid "State"
+msgstr "Состојба"
+
+#: dialogs/statedialog.cpp:105
+#, fuzzy
+#| msgid "End state"
+msgctxt "end state in statechart"
 msgid "End state"
 msgstr "Крајна состојба"
 
-#: dialogs/statedialog.cpp:117
+#: dialogs/statedialog.cpp:109
+#, fuzzy
+#| msgid "General"
+msgctxt "general page"
+msgid "General"
+msgstr "Општо"
+
+#: dialogs/statedialog.cpp:121
 msgid "State type:"
 msgstr "Тип на состојба:"
 
-#: dialogs/statedialog.cpp:122
+#: dialogs/statedialog.cpp:126
 msgid "State name:"
 msgstr "Име на состојба:"
 
-#: dialogs/statedialog.cpp:159
+#: dialogs/statedialog.cpp:162
+#, fuzzy
+#| msgid "Color"
+msgctxt "color page"
+msgid "Color"
+msgstr "Боја"
+
+#: dialogs/statedialog.cpp:163
 msgid "Widget Color"
 msgstr "Боја на графичка контрола"
 
+#: dialogs/umlviewdialog.cpp:85 dialogs/settingsdlg.cpp:120
+#, fuzzy
+#| msgid "General"
+msgctxt "general settings page"
+msgid "General"
+msgstr "Општо"
+
 #: dialogs/umlviewdialog.cpp:86 dialogs/classpropdlg.cpp:223
 #: dialogs/classpropdlg.cpp:252 dialogs/classpropdlg.cpp:324
-#: dialogs/umlforeignkeyconstraintdialog.cpp:180 dialogs/assocpropdlg.cpp:102
+#: dialogs/umlforeignkeyconstraintdialog.cpp:180 dialogs/assocpropdlg.cpp:101
 #: dialogs/settingsdlg.cpp:121
 msgid "General Settings"
 msgstr "Општи поставувања"
 
 #: dialogs/umlviewdialog.cpp:112
+#, fuzzy
+#| msgid "Display"
+msgctxt "classes display options page"
 msgid "Display"
 msgstr "Приказ"
 
 #: dialogs/umlviewdialog.cpp:113
 msgid "Classes Display Options"
 msgstr "Опции за приказ на класите"
+
+#: dialogs/umlviewdialog.cpp:125
+#, fuzzy
+#| msgid "Color"
+msgctxt "diagram colors page"
+msgid "Color"
+msgstr "Боја"
 
 #: dialogs/umlviewdialog.cpp:126
 msgid "Diagram Colors"
@@ -820,6 +860,16 @@ msgstr "Податочен тип"
 msgid "ObjectFlow"
 msgstr "Објект"
 
+#. i18n: tag string
+#. i18n: file codegenerators/cppcodegenerationformbase.ui line 81
+#. i18n: tag string
+#. i18n: file dialogs/codegenerationoptionsbase.ui line 38
+#: dialogs/objectnodedialog.cpp:126
+#: dialogs/umlforeignkeyconstraintdialog.cpp:179
+#: dialogs/umlforeignkeyconstraintdialog.cpp:184 rc.cpp:310 rc.cpp:625
+msgid "General"
+msgstr "Општо"
+
 #: dialogs/objectnodedialog.cpp:139
 #, fuzzy
 #| msgid "Node name:"
@@ -853,6 +903,11 @@ msgstr "Податочен тип"
 #| msgid "Object"
 msgid "&Object Flow"
 msgstr "Објект"
+
+#: dialogs/objectnodedialog.cpp:221 dialogs/umlwidgetcolorpage.cpp:56
+#: listpopupmenu.cpp:876
+msgid "Color"
+msgstr "Боја"
 
 #: dialogs/classifierlistpage.cpp:85 dialogs/classpropdlg.cpp:252
 #: refactoring/refactoringassistant.cpp:489 listpopupmenu.cpp:815
@@ -929,7 +984,7 @@ msgstr ""
 msgid "Move selected item to the bottom"
 msgstr "Ја копира избраната секција на таблата со исечоци"
 
-#: dialogs/classifierlistpage.cpp:163 dialogs/umloperationdialog.cpp:156
+#: dialogs/classifierlistpage.cpp:163 dialogs/umloperationdialog.cpp:159
 #: dialogs/umlforeignkeyconstraintdialog.cpp:292
 #: dialogs/umluniqueconstraintdialog.cpp:110 umldoc.cpp:1093 uml.cpp:377
 #: umlview.cpp:2966
@@ -937,7 +992,7 @@ msgstr "Ја копира избраната секција на таблата 
 msgid "&Delete"
 msgstr "&Стандардно"
 
-#: dialogs/classifierlistpage.cpp:165 dialogs/umloperationdialog.cpp:158
+#: dialogs/classifierlistpage.cpp:165 dialogs/umloperationdialog.cpp:161
 #: uml.cpp:392
 msgid "&Properties"
 msgstr "&Својства"
@@ -1055,74 +1110,85 @@ msgstr "Општо"
 msgid "Operation Properties"
 msgstr "Својства на операцијата"
 
-#: dialogs/umloperationdialog.cpp:87 dialogs/parmpropdlg.cpp:79
-#: dialogs/umltemplatedialog.cpp:73
+#: dialogs/umloperationdialog.cpp:90
+#, fuzzy
+#| msgid "&Name:"
+msgctxt "operation name"
 msgid "&Name:"
 msgstr "&Име:"
 
-#: dialogs/umloperationdialog.cpp:90 dialogs/parmpropdlg.cpp:71
+#: dialogs/umloperationdialog.cpp:93 dialogs/parmpropdlg.cpp:71
 #: dialogs/umlattributedialog.cpp:74 dialogs/umlentityattributedialog.cpp:77
-#: dialogs/umltemplatedialog.cpp:65
+#: dialogs/umltemplatedialog.cpp:68
 msgid "&Type:"
 msgstr "&Тип:"
 
-#: dialogs/umloperationdialog.cpp:97 dialogs/parmpropdlg.cpp:86
-#: dialogs/umlattributedialog.cpp:90 dialogs/classgenpage.cpp:359
+#: dialogs/umloperationdialog.cpp:100 dialogs/parmpropdlg.cpp:86
+#: dialogs/umlattributedialog.cpp:90 dialogs/classgenpage.cpp:361
 #: dialogs/umlentityattributedialog.cpp:93
 msgid "Stereotype name:"
 msgstr "Име на стереотипот:"
 
-#: dialogs/umloperationdialog.cpp:102
+#: dialogs/umloperationdialog.cpp:105
 msgid "&Abstract operation"
 msgstr "&Апстрактна операција"
 
-#: dialogs/umloperationdialog.cpp:105 dialogs/umlattributedialog.cpp:93
+#: dialogs/umloperationdialog.cpp:108 dialogs/umlattributedialog.cpp:93
 msgid "Classifier &scope (\"static\")"
 msgstr "Опсег на кла&сификатор („static“)"
 
-#: dialogs/umloperationdialog.cpp:108
+#: dialogs/umloperationdialog.cpp:111
 msgid "&Query (\"const\")"
 msgstr "&Прашање („const“)"
 
-#: dialogs/umloperationdialog.cpp:114 dialogs/umlattributedialog.cpp:99
+#: dialogs/umloperationdialog.cpp:117 dialogs/umlattributedialog.cpp:99
 #: dialogs/classgenpage.cpp:196 dialogs/settingsdlg.cpp:247
 #: listpopupmenu.cpp:822
 msgid "Visibility"
 msgstr "Видливост"
 
-#: dialogs/umloperationdialog.cpp:119 dialogs/classgenpage.cpp:201
+#: dialogs/umloperationdialog.cpp:122 dialogs/classgenpage.cpp:201
+#, fuzzy
+#| msgid "P&ublic"
+msgctxt "public visibility"
 msgid "P&ublic"
 msgstr "&Јавен"
 
-#: dialogs/umloperationdialog.cpp:122 dialogs/classgenpage.cpp:204
+#: dialogs/umloperationdialog.cpp:125 dialogs/classgenpage.cpp:204
+#, fuzzy
+#| msgid "P&rivate"
+msgctxt "private visibility"
 msgid "P&rivate"
 msgstr "П&риватен"
 
-#: dialogs/umloperationdialog.cpp:125
+#: dialogs/umloperationdialog.cpp:128
+#, fuzzy
+#| msgid "Prot&ected"
+msgctxt "protected visibility"
 msgid "Prot&ected"
 msgstr "Заштит&ен"
 
-#: dialogs/umloperationdialog.cpp:128 dialogs/umlattributedialog.cpp:112
+#: dialogs/umloperationdialog.cpp:131 dialogs/umlattributedialog.cpp:112
 msgid "I&mplementation"
 msgstr "И&мплементација"
 
-#: dialogs/umloperationdialog.cpp:133
+#: dialogs/umloperationdialog.cpp:136
 msgid "Parameters"
 msgstr "Параметри"
 
-#: dialogs/umloperationdialog.cpp:154
+#: dialogs/umloperationdialog.cpp:157
 msgid "Ne&w Parameter..."
 msgstr "Нов парам&етар..."
 
-#: dialogs/umloperationdialog.cpp:345 dialogs/umloperationdialog.cpp:398
+#: dialogs/umloperationdialog.cpp:349 dialogs/umloperationdialog.cpp:404
 msgid "You have entered an invalid parameter name."
 msgstr "Внесовте погрешно име за параметарот."
 
-#: dialogs/umloperationdialog.cpp:346 dialogs/umloperationdialog.cpp:399
+#: dialogs/umloperationdialog.cpp:350 dialogs/umloperationdialog.cpp:405
 msgid "Parameter Name Invalid"
 msgstr "Невалидно име на параметар"
 
-#: dialogs/umloperationdialog.cpp:361
+#: dialogs/umloperationdialog.cpp:365
 msgid ""
 "The parameter name you have chosen\n"
 "is already being used in this operation."
@@ -1130,31 +1196,31 @@ msgstr ""
 "Името на параметарот што го избравте\n"
 "веќе се користи од оваа операција."
 
-#: dialogs/umloperationdialog.cpp:362 dialogs/umloperationdialog.cpp:429
+#: dialogs/umloperationdialog.cpp:366 dialogs/umloperationdialog.cpp:435
 msgid "Parameter Name Not Unique"
 msgstr "Името на параметарот не е единствено"
 
-#: dialogs/umloperationdialog.cpp:428
+#: dialogs/umloperationdialog.cpp:434
 msgid ""
 "The parameter name you have chosen is already being used in this operation."
 msgstr ""
 "Името на параметарот што го избравте веќе се користи од оваа операција."
 
-#: dialogs/umloperationdialog.cpp:478
+#: dialogs/umloperationdialog.cpp:485
 msgid "You have entered an invalid operation name."
 msgstr "Внесовте невалидно име за операцијата."
 
-#: dialogs/umloperationdialog.cpp:479 dialogs/umloperationdialog.cpp:491
+#: dialogs/umloperationdialog.cpp:486 dialogs/umloperationdialog.cpp:498
 #: refactoring/refactoringassistant.cpp:659
 msgid "Operation Name Invalid"
 msgstr "Невалидно име на операција"
 
-#: dialogs/umloperationdialog.cpp:488 refactoring/refactoringassistant.cpp:656
+#: dialogs/umloperationdialog.cpp:495 refactoring/refactoringassistant.cpp:656
 #, fuzzy, kde-format
 msgid "An operation with that signature already exists in %1.\n"
 msgstr "Операција со тој потпис веќе постои во %1.\n"
 
-#: dialogs/umloperationdialog.cpp:490 refactoring/refactoringassistant.cpp:658
+#: dialogs/umloperationdialog.cpp:497 refactoring/refactoringassistant.cpp:658
 msgid "Choose a different name or parameter list."
 msgstr "Изберете друго име или листа на параметри."
 
@@ -1177,6 +1243,13 @@ msgstr "Операции на класа"
 #: dialogs/parmpropdlg.cpp:40
 msgid "Parameter Properties"
 msgstr "Својства на параметарот"
+
+#: dialogs/parmpropdlg.cpp:79
+#, fuzzy
+#| msgid "&Name:"
+msgctxt "property name"
+msgid "&Name:"
+msgstr "&Име:"
 
 #: dialogs/parmpropdlg.cpp:83 dialogs/umlattributedialog.cpp:86
 msgid "&Initial value:"
@@ -1331,98 +1404,107 @@ msgstr "Името на атрибутот што го избравте веќе
 msgid "Attribute Name Not Unique"
 msgstr "Името на атрибутот не е единствено"
 
-#: dialogs/classgenpage.cpp:62
+#: dialogs/classgenpage.cpp:63
 msgid "Class &name:"
 msgstr "Име &на класата:"
 
-#: dialogs/classgenpage.cpp:64
+#: dialogs/classgenpage.cpp:65
 msgid "Actor &name:"
 msgstr "Име &на актерот:"
 
-#: dialogs/classgenpage.cpp:66
+#: dialogs/classgenpage.cpp:67
 msgid "Package &name:"
 msgstr "Име &на пакетот:"
 
-#: dialogs/classgenpage.cpp:68
+#: dialogs/classgenpage.cpp:69
 msgid "Use case &name:"
 msgstr "Име &на сценариото на употреба:"
 
-#: dialogs/classgenpage.cpp:70
+#: dialogs/classgenpage.cpp:71
 msgid "Interface &name:"
 msgstr "Име &на интерфејсот:"
 
-#: dialogs/classgenpage.cpp:72
+#: dialogs/classgenpage.cpp:73
 msgid "Component &name:"
 msgstr "Име &на компонента:"
 
-#: dialogs/classgenpage.cpp:74
+#: dialogs/classgenpage.cpp:75
 #, fuzzy
 #| msgid "Node name:"
 msgid "Node &name:"
 msgstr "Име на јазол:"
 
-#: dialogs/classgenpage.cpp:76
+#: dialogs/classgenpage.cpp:77
 msgid "Artifact &name:"
 msgstr "Име &на артифакт:"
 
-#: dialogs/classgenpage.cpp:78
+#: dialogs/classgenpage.cpp:79
 msgid "Enum &name:"
 msgstr "Име &на енумератор:"
 
-#: dialogs/classgenpage.cpp:80
+#: dialogs/classgenpage.cpp:81
 msgid "Datatype &name:"
 msgstr "Име &на типот на податоци:"
 
-#: dialogs/classgenpage.cpp:82
+#: dialogs/classgenpage.cpp:83
 msgid "Entity &name:"
 msgstr "Име &на ентитет:"
 
-#: dialogs/classgenpage.cpp:107 dialogs/umltemplatedialog.cpp:77
+#: dialogs/classgenpage.cpp:108 dialogs/umltemplatedialog.cpp:80
 msgid "&Stereotype name:"
 msgstr "Име на &стереотип:"
 
-#: dialogs/classgenpage.cpp:121
+#: dialogs/classgenpage.cpp:122
 #, fuzzy
 #| msgid "Package &name:"
 msgid "Package name:"
 msgstr "Име &на пакетот:"
 
-#: dialogs/classgenpage.cpp:145
+#: dialogs/classgenpage.cpp:146
 msgid "A&bstract class"
 msgstr "А&пстрактна класа"
 
-#: dialogs/classgenpage.cpp:147
+#: dialogs/classgenpage.cpp:148
 msgid "A&bstract use case"
 msgstr "А&пстрактно сценарио за употреба"
 
-#: dialogs/classgenpage.cpp:155
+#: dialogs/classgenpage.cpp:156
+#, fuzzy
+#| msgid "&Executable"
+msgctxt "component is executable"
 msgid "&Executable"
 msgstr "&Извршно"
 
-#: dialogs/classgenpage.cpp:162
+#: dialogs/classgenpage.cpp:163
 msgid "Draw As"
 msgstr "Нацртај како"
 
-#: dialogs/classgenpage.cpp:167 dialogs/umlwidgetcolorpage.cpp:68
+#: dialogs/classgenpage.cpp:168
+#, fuzzy
+#| msgid "&Default"
+msgctxt "draw as default"
 msgid "&Default"
 msgstr "&Стандардно"
 
 #. i18n: tag text
 #. i18n: file umbrelloui.rc line 4
-#: dialogs/classgenpage.cpp:170 rc.cpp:233 rc.cpp:265
+#: dialogs/classgenpage.cpp:171 rc.cpp:233 rc.cpp:265
 #, fuzzy
 msgid "&File"
 msgstr "Филтер"
 
-#: dialogs/classgenpage.cpp:173
+#: dialogs/classgenpage.cpp:174
 msgid "&Library"
 msgstr "Биб&иотека"
 
-#: dialogs/classgenpage.cpp:176
+#: dialogs/classgenpage.cpp:177
 msgid "&Table"
 msgstr "&Табела"
 
 #: dialogs/classgenpage.cpp:207
+#, fuzzy
+#| msgid "Pro&tected"
+msgctxt "protected visibility"
 msgid "Pro&tected"
 msgstr "Заш&титен"
 
@@ -1430,36 +1512,36 @@ msgstr "Заш&титен"
 msgid "Imple&mentation"
 msgstr "И&мплементација"
 
-#: dialogs/classgenpage.cpp:281
+#: dialogs/classgenpage.cpp:282
 msgid "Class name:"
 msgstr "Име на класа:"
 
-#: dialogs/classgenpage.cpp:289 dialogs/classgenpage.cpp:369
+#: dialogs/classgenpage.cpp:290 dialogs/classgenpage.cpp:371
 msgid "Instance name:"
 msgstr "Име на инстанца:"
 
-#: dialogs/classgenpage.cpp:297
+#: dialogs/classgenpage.cpp:298
 msgid "Draw as actor"
 msgstr "Нацртај како актер"
 
-#: dialogs/classgenpage.cpp:302
+#: dialogs/classgenpage.cpp:303
 msgid "Multiple instance"
 msgstr "Повеќекратна инстанца"
 
-#: dialogs/classgenpage.cpp:309
+#: dialogs/classgenpage.cpp:310
 msgid "Show destruction"
 msgstr "Прикажи уништување"
 
-#: dialogs/classgenpage.cpp:347
+#: dialogs/classgenpage.cpp:349
 msgid "Component name:"
 msgstr "Име на компонента:"
 
-#: dialogs/classgenpage.cpp:349
+#: dialogs/classgenpage.cpp:351
 msgid "Node name:"
 msgstr "Име на јазол:"
 
-#: dialogs/classgenpage.cpp:433 dialogs/classgenpage.cpp:480
-#: dialogs/classgenpage.cpp:491
+#: dialogs/classgenpage.cpp:438 dialogs/classgenpage.cpp:485
+#: dialogs/classgenpage.cpp:496
 msgid ""
 "The name you have chosen\n"
 "is already being used.\n"
@@ -1469,8 +1551,8 @@ msgstr ""
 "веќе се користи\n"
 "Името беше ресетирано."
 
-#: dialogs/classgenpage.cpp:434 dialogs/classgenpage.cpp:481
-#: dialogs/classgenpage.cpp:492
+#: dialogs/classgenpage.cpp:439 dialogs/classgenpage.cpp:486
+#: dialogs/classgenpage.cpp:497
 msgid "Name is Not Unique"
 msgstr "Името не е единствено"
 
@@ -1567,6 +1649,9 @@ msgid "&Type of diagram"
 msgstr "&Тип на дијаграм"
 
 #: dialogs/diagramprintpage.cpp:67
+#, fuzzy
+#| msgid "Selection"
+msgctxt "diagram selection for printing"
 msgid "Selection"
 msgstr "Избор"
 
@@ -1712,6 +1797,10 @@ msgstr "Само за додавање"
 msgid "&Line:"
 msgstr "&Линија:"
 
+#: dialogs/umlwidgetcolorpage.cpp:68
+msgid "&Default"
+msgstr "&Стандардно"
+
 #: dialogs/umlwidgetcolorpage.cpp:71
 msgid "&Fill:"
 msgstr "&Исполни:"
@@ -1728,15 +1817,22 @@ msgstr "&Користи исполнување"
 msgid "Template Properties"
 msgstr "Својства на шаблонот"
 
-#: dialogs/umltemplatedialog.cpp:139
+#: dialogs/umltemplatedialog.cpp:76
+#, fuzzy
+#| msgid "&Name:"
+msgctxt "template name"
+msgid "&Name:"
+msgstr "&Име:"
+
+#: dialogs/umltemplatedialog.cpp:143
 msgid "You have entered an invalid template name."
 msgstr "Внесовте невалидно име за шаблон."
 
-#: dialogs/umltemplatedialog.cpp:140
+#: dialogs/umltemplatedialog.cpp:144
 msgid "Template Name Invalid"
 msgstr "Невалидно име за шаблон"
 
-#: dialogs/umltemplatedialog.cpp:149
+#: dialogs/umltemplatedialog.cpp:153
 msgid ""
 "The template parameter name you have chosen is already being used in this "
 "operation."
@@ -1744,7 +1840,7 @@ msgstr ""
 "Името за параметарот за шаблонот што го внесовте веќе се користи во оваа "
 "операција."
 
-#: dialogs/umltemplatedialog.cpp:150
+#: dialogs/umltemplatedialog.cpp:154
 msgid "Template Name Not Unique"
 msgstr "Името на шаблонот не е единствено"
 
@@ -1818,19 +1914,26 @@ msgstr "Документација за белешката"
 msgid "Contained Items"
 msgstr "Содржани елементи"
 
-#: dialogs/assocpropdlg.cpp:44
+#: dialogs/assocpropdlg.cpp:43
 msgid "Association Properties"
 msgstr "Својства на асоцијацијата"
 
-#: dialogs/assocpropdlg.cpp:112
+#: dialogs/assocpropdlg.cpp:100
+#, fuzzy
+#| msgid "General"
+msgctxt "general settings"
+msgid "General"
+msgstr "Општо"
+
+#: dialogs/assocpropdlg.cpp:111
 msgid "Roles"
 msgstr "Улоги"
 
-#: dialogs/assocpropdlg.cpp:113
+#: dialogs/assocpropdlg.cpp:112
 msgid "Role Settings"
 msgstr "Својства за улога"
 
-#: dialogs/assocpropdlg.cpp:137
+#: dialogs/assocpropdlg.cpp:136
 msgid "Association font"
 msgstr "Фонт за асоцијација"
 
@@ -1880,13 +1983,6 @@ msgstr "С&тандардна дебелина"
 #: dialogs/settingsdlg.cpp:106
 msgid "&Use fill color"
 msgstr "Користи боја на исполн&ување"
-
-#: dialogs/settingsdlg.cpp:120
-#, fuzzy
-#| msgid "General"
-msgctxt "general settings page"
-msgid "General"
-msgstr "Општо"
 
 #: dialogs/settingsdlg.cpp:126
 msgctxt "miscellaneous group box"
