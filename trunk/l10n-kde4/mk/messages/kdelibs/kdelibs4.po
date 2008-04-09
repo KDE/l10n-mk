@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-06 19:51+0200\n"
+"POT-Creation-Date: 2008-04-08 21:19+0200\n"
 "PO-Revision-Date: 2007-12-01 22:11+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -208,7 +208,7 @@ msgstr "Зачувај ја лозинката"
 
 #. i18n: tag string
 #. i18n: file ./kdeui/sonnet/configui.ui line 28
-#: rc.cpp:80 kdeui/findreplace/kfinddialog.cpp:126 kfile/kfilewidget.cpp:347
+#: rc.cpp:80 kdeui/findreplace/kfinddialog.cpp:126 kfile/kfilewidget.cpp:373
 msgid "Options"
 msgstr "Опции"
 
@@ -692,13 +692,13 @@ msgstr "Главен алатник"
 
 #. i18n: tag string
 #. i18n: file ./kdeui/widgets/kshortcutwidget.ui line 22
-#: rc.cpp:261 kdeui/dialogs/kshortcutseditor.cpp:603
+#: rc.cpp:261 kdeui/dialogs/kshortcutseditor.cpp:606
 msgid "Main:"
 msgstr "Главен:"
 
 #. i18n: tag string
 #. i18n: file ./kdeui/widgets/kshortcutwidget.ui line 52
-#: rc.cpp:264 kdeui/dialogs/kshortcutseditor.cpp:604
+#: rc.cpp:264 kdeui/dialogs/kshortcutseditor.cpp:607
 msgid "Alternate:"
 msgstr "Алтернативно:"
 
@@ -1533,7 +1533,7 @@ msgstr "ГлавенПрозорец"
 
 #. i18n: tag string
 #. i18n: file ./kjsembed/examples/kjsconsole/jsconsole.ui line 109
-#: rc.cpp:671 kparts/browserrun.cpp:295
+#: rc.cpp:671 kparts/browserrun.cpp:302
 msgid "Execute"
 msgstr "Изврши"
 
@@ -1970,7 +1970,7 @@ msgstr "Превчитај"
 msgid "Do Not Reload"
 msgstr "Не вчитувај повторно"
 
-#: kded/kbuildsycoca.cpp:870
+#: kded/kbuildsycoca.cpp:873
 msgid "Configuration information reloaded successfully."
 msgstr "Информацијата за конфигурацијата е успешно превчитана."
 
@@ -3205,7 +3205,7 @@ msgstr "Библиотеката %1 нема соодветна работилн
 msgid "The plugin '%1' uses an incompatible KDE library (%2)."
 msgstr "Приклучокот „%1“ користи некомпатибилна KDE-библиотека. (%2)"
 
-#: kdecore/config/kconfig.cpp:659
+#: kdecore/config/kconfig.cpp:661
 msgid "Please contact your system administrator."
 msgstr "Контактирајте со вашиот систем-администратор."
 
@@ -3553,7 +3553,7 @@ msgstr "KDE-апликација"
 msgid "Qt"
 msgstr "Qt"
 
-#: kdecore/kernel/kcmdlineargs.cpp:489 khtml/khtml_part.cpp:4807
+#: kdecore/kernel/kcmdlineargs.cpp:489 khtml/khtml_part.cpp:4813
 msgid "KDE"
 msgstr "KDE"
 
@@ -4828,7 +4828,7 @@ msgid "Name"
 msgstr "Име"
 
 #: knewstuff/knewstuff2/ui/kdxstranslation.cpp:49
-#: kdeui/dialogs/kshortcutseditor.cpp:628
+#: kdeui/dialogs/kshortcutseditor.cpp:631
 msgid "Description"
 msgstr "Опис"
 
@@ -6004,13 +6004,13 @@ msgid "Change Icon"
 msgstr "Измени &икона..."
 
 #: kdeui/dialogs/kshortcutseditor.cpp:104
-#: kdeui/dialogs/kshortcutseditor.cpp:624
+#: kdeui/dialogs/kshortcutseditor.cpp:627
 msgid "Shortcuts"
 msgstr "Кратенки"
 
 #: kdeui/dialogs/kshortcutseditor.cpp:490
-#: kdeui/dialogs/kshortcutseditor.cpp:519
-#: kdeui/dialogs/kshortcutseditor.cpp:535
+#: kdeui/dialogs/kshortcutseditor.cpp:522
+#: kdeui/dialogs/kshortcutseditor.cpp:538
 #: kdeui/widgets/kkeysequencewidget.cpp:124
 msgid "Key Conflict"
 msgstr "Конфликт на копчиња"
@@ -6026,8 +6026,9 @@ msgstr ""
 "Дали сакате да ја преповрзете од таа акција на тековната?"
 
 #: kdeui/dialogs/kshortcutseditor.cpp:495
-#: kdeui/dialogs/kshortcutseditor.cpp:524
-#: kdeui/dialogs/kshortcutseditor.cpp:540 kdeui/shortcuts/kglobalaccel.cpp:375
+#: kdeui/dialogs/kshortcutseditor.cpp:513
+#: kdeui/dialogs/kshortcutseditor.cpp:527
+#: kdeui/dialogs/kshortcutseditor.cpp:543 kdeui/shortcuts/kglobalaccel.cpp:375
 #: kdeui/widgets/kkeysequencewidget.cpp:128
 msgid "Reassign"
 msgstr "Преповрзи"
@@ -6037,44 +6038,48 @@ msgid "Conflict with Standard Application Shortcut"
 msgstr "Конфликт со стандардна кратенка на апликација"
 
 #: kdeui/dialogs/kshortcutseditor.cpp:508
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "The '%1' key combination has already been allocated to the standard "
+#| "action \"%2\" that many applications use.\n"
+#| "You cannot use it for global shortcuts for this reason."
 msgid ""
-"The '%1' key combination has already been allocated to the standard action "
-"\"%2\" that many applications use.\n"
-"You cannot use it for global shortcuts for this reason."
+"The '%1' key combination is also being used for the standard action \"%2\" "
+"that some applications use.\n"
+"Do you really want to use it as a global shortcut, too?"
 msgstr ""
 "Комбинацијата на копчиња „%1“ е веќе поврзана со стандардното дејство “%2“ "
 "што го користат многу апликации.\n"
 "Поради оваа причина не може да ја користите за глобални кратенки."
 
-#: kdeui/dialogs/kshortcutseditor.cpp:520
+#: kdeui/dialogs/kshortcutseditor.cpp:523
 #, kde-format
 msgid ""
 "The '%1' shape gesture has already been allocated to the \"%2\" action.\n"
 "Do you want to reassign it from that action to the current one?"
 msgstr ""
 
-#: kdeui/dialogs/kshortcutseditor.cpp:536
+#: kdeui/dialogs/kshortcutseditor.cpp:539
 #, kde-format
 msgid ""
 "The '%1' rocker gesture has already been allocated to the \"%2\" action.\n"
 "Do you want to reassign it from that action to the current one?"
 msgstr ""
 
-#: kdeui/dialogs/kshortcutseditor.cpp:585
+#: kdeui/dialogs/kshortcutseditor.cpp:588
 #, fuzzy, kde-format
 #| msgid "Shortcuts"
 msgctxt "header for an applications shortcut list"
 msgid "Shortcuts for %1"
 msgstr "Кратенки"
 
-#: kdeui/dialogs/kshortcutseditor.cpp:605
+#: kdeui/dialogs/kshortcutseditor.cpp:608
 #, fuzzy
 #| msgid "Global"
 msgid "Global:"
 msgstr "Глобална"
 
-#: kdeui/dialogs/kshortcutseditor.cpp:620
+#: kdeui/dialogs/kshortcutseditor.cpp:623
 #, fuzzy
 #| msgid "Action"
 msgid "Action Name"
@@ -8905,7 +8910,7 @@ msgstr "Покажи ги &сите елементи"
 msgid "&Remove '%1'"
 msgstr "&Отстрани „%1“"
 
-#: kfile/kfilefiltercombo.cpp:36 kfile/kfilewidget.cpp:1438
+#: kfile/kfilefiltercombo.cpp:36 kfile/kfilewidget.cpp:1475
 msgid "*|All Files"
 msgstr "*|Сите датотеки"
 
@@ -8913,19 +8918,19 @@ msgstr "*|Сите датотеки"
 msgid "All Supported Files"
 msgstr "Сите поддржани датотеки"
 
-#: kfile/kfilewidget.cpp:205
+#: kfile/kfilewidget.cpp:207
 msgid ""
 "<qt>While typing in the text area, you may be presented with possible "
 "matches. This feature can be controlled by clicking with the right mouse "
 "button and selecting a preferred mode from the <b>Text Completion</b> menu."
 msgstr ""
 
-#: kfile/kfilewidget.cpp:247
+#: kfile/kfilewidget.cpp:273
 #, kde-format
 msgid "Drive: %1"
 msgstr "Уред: %1"
 
-#: kfile/kfilewidget.cpp:319
+#: kfile/kfilewidget.cpp:345
 #, kde-format
 msgid ""
 "<qt>Click this button to enter the parent folder.<br /><br />For instance, "
@@ -8936,36 +8941,36 @@ msgstr ""
 "пример, ако е активната локација file:/home/%1, кликањето на ова копче ќе ве "
 "одведе на file:/home.</qt>"
 
-#: kfile/kfilewidget.cpp:324
+#: kfile/kfilewidget.cpp:350
 msgid "Click this button to move backwards one step in the browsing history."
 msgstr ""
 "Кликнете на ова копче за да се придвижите еден чекор назад во историјата на "
 "прелистувањето."
 
-#: kfile/kfilewidget.cpp:326
+#: kfile/kfilewidget.cpp:352
 msgid "Click this button to move forward one step in the browsing history."
 msgstr ""
 "Кликнете на ова копче за да се придвижите еден чекор напред во историјата на "
 "прелистувањето."
 
-#: kfile/kfilewidget.cpp:329
+#: kfile/kfilewidget.cpp:355
 msgid "Click this button to reload the contents of the current location."
 msgstr ""
 "Кликнете на ова копче за да ја превчитате содржината на тековната локација."
 
-#: kfile/kfilewidget.cpp:332
+#: kfile/kfilewidget.cpp:358
 msgid "Click this button to create a new folder."
 msgstr "Кликнете на ова копче за да креирате нова папка."
 
-#: kfile/kfilewidget.cpp:335
+#: kfile/kfilewidget.cpp:361
 msgid "Show Places Navigation Panel"
 msgstr "Прикажи панел за навигација „Места“"
 
-#: kfile/kfilewidget.cpp:342
+#: kfile/kfilewidget.cpp:368
 msgid "Show Bookmarks"
 msgstr "Прикажи обележувачи"
 
-#: kfile/kfilewidget.cpp:349
+#: kfile/kfilewidget.cpp:375
 msgid ""
 "<qt>This is the preferences menu for the file dialog. Various options can be "
 "accessed from this menu including: <ul><li>how files are sorted in the list</"
@@ -8974,11 +8979,11 @@ msgid ""
 "li><li>separating folders from files</li></ul></qt>"
 msgstr ""
 
-#: kfile/kfilewidget.cpp:393 kfile/kfileplaceeditdialog.cpp:116
+#: kfile/kfilewidget.cpp:419 kfile/kfileplaceeditdialog.cpp:116
 msgid "&Location:"
 msgstr "&Локација:"
 
-#: kfile/kfilewidget.cpp:416
+#: kfile/kfilewidget.cpp:442
 msgid ""
 "<qt>This is the filter to apply to the file list. File names that do not "
 "match the filter will not be shown.<p>You may select from one of the preset "
@@ -8991,21 +8996,21 @@ msgstr ""
 "сопствен филтер во текстуалното поле.</p><p>Дозволени се џокер-знаци како * "
 "и ?.</p></qt>"
 
-#: kfile/kfilewidget.cpp:422
+#: kfile/kfilewidget.cpp:448
 msgid "&Filter:"
 msgstr "&Филтер:"
 
-#: kfile/kfilewidget.cpp:637 kfile/kfilewidget.cpp:680
-#: kfile/kfilewidget.cpp:1371
+#: kfile/kfilewidget.cpp:665 kfile/kfilewidget.cpp:707
+#: kfile/kfilewidget.cpp:1408
 msgid "You can only select local files."
 msgstr "Може да избирате само локални датотеки."
 
-#: kfile/kfilewidget.cpp:638 kfile/kfilewidget.cpp:681
-#: kfile/kfilewidget.cpp:1372
+#: kfile/kfilewidget.cpp:666 kfile/kfilewidget.cpp:708
+#: kfile/kfilewidget.cpp:1409
 msgid "Remote Files Not Accepted"
 msgstr "Далечински датотеки не се прифаќаат"
 
-#: kfile/kfilewidget.cpp:672
+#: kfile/kfilewidget.cpp:699
 #, kde-format
 msgid ""
 "%1\n"
@@ -9014,15 +9019,15 @@ msgstr ""
 "%1\n"
 "не изгледа како валиден URL.\n"
 
-#: kfile/kfilewidget.cpp:672
+#: kfile/kfilewidget.cpp:699
 msgid "Invalid URL"
 msgstr "Невалиден URL"
 
-#: kfile/kfilewidget.cpp:1005
+#: kfile/kfilewidget.cpp:1043
 msgid "This is the name to save the file as."
 msgstr "Ова е името под кое ќе се зачува датотеката."
 
-#: kfile/kfilewidget.cpp:1010
+#: kfile/kfilewidget.cpp:1048
 msgid ""
 "This is the list of files to open. More than one file can be specified by "
 "listing several files, separated by spaces."
@@ -9030,11 +9035,11 @@ msgstr ""
 "Ова е листа на датотеки за отворање. Може да се наведе повеќе од една "
 "датотека со наведување на повеќе датотеки, одделени со празни места."
 
-#: kfile/kfilewidget.cpp:1017
+#: kfile/kfilewidget.cpp:1055
 msgid "This is the name of the file to open."
 msgstr "Ова е името на датотеката за отворање."
 
-#: kfile/kfilewidget.cpp:1303
+#: kfile/kfilewidget.cpp:1340
 msgid ""
 "The chosen filenames do not\n"
 "appear to be valid."
@@ -9042,11 +9047,11 @@ msgstr ""
 "Избраните имиња на датотеки\n"
 "изгледаат како да се невалидни."
 
-#: kfile/kfilewidget.cpp:1305
+#: kfile/kfilewidget.cpp:1342
 msgid "Invalid Filenames"
 msgstr "Невалидни имиња на датотеки"
 
-#: kfile/kfilewidget.cpp:1334
+#: kfile/kfilewidget.cpp:1371
 #, kde-format
 msgid ""
 "The requested filenames\n"
@@ -9059,37 +9064,37 @@ msgstr ""
 "изгледаат како да се невалидни.\n"
 "Осигурете се дека е во наводници секое име на датотека."
 
-#: kfile/kfilewidget.cpp:1338
+#: kfile/kfilewidget.cpp:1375
 msgid "Filename Error"
 msgstr "Грешка во името на датотеката"
 
-#: kfile/kfilewidget.cpp:1435
+#: kfile/kfilewidget.cpp:1472
 msgid "*|All Folders"
 msgstr "*|Сите папки"
 
-#: kfile/kfilewidget.cpp:1574 kparts/browserrun.cpp:376
+#: kfile/kfilewidget.cpp:1611 kparts/browserrun.cpp:383
 msgid "&Open"
 msgstr "&Отвори"
 
-#: kfile/kfilewidget.cpp:1717
+#: kfile/kfilewidget.cpp:1754
 #, kde-format
 msgid "Automatically select filename e&xtension (%1)"
 msgstr "Автоматски избор на &наставката на името (%1)"
 
-#: kfile/kfilewidget.cpp:1718
+#: kfile/kfilewidget.cpp:1755
 #, kde-format
 msgid "the extension <b>%1</b>"
 msgstr "наставката <b>%1</b>"
 
-#: kfile/kfilewidget.cpp:1726
+#: kfile/kfilewidget.cpp:1763
 msgid "Automatically select filename e&xtension"
 msgstr "Автоматски избор на &наставката на името"
 
-#: kfile/kfilewidget.cpp:1727
+#: kfile/kfilewidget.cpp:1764
 msgid "a suitable extension"
 msgstr "соодветна наставка"
 
-#: kfile/kfilewidget.cpp:1737
+#: kfile/kfilewidget.cpp:1774
 #, kde-format
 msgid ""
 "This option enables some convenient features for saving files with "
@@ -9105,11 +9110,11 @@ msgid ""
 "enabled as it makes your files more manageable."
 msgstr ""
 
-#: kfile/kfilewidget.cpp:2013
+#: kfile/kfilewidget.cpp:2050
 msgid "Bookmarks"
 msgstr "Обележувачи"
 
-#: kfile/kfilewidget.cpp:2017
+#: kfile/kfilewidget.cpp:2054
 msgid ""
 "<qt>This button allows you to bookmark specific locations. Click on this "
 "button to open the bookmark menu where you may add, edit or select a "
@@ -9461,8 +9466,8 @@ msgstr "Testkhtml"
 msgid "a basic web browser using the KHTML library"
 msgstr "основен веб-прелистувач што ја користи библиотеката KHTML"
 
-#: khtml/khtml_run.cpp:90 khtml/khtml_part.cpp:3809 khtml/khtml_part.cpp:4025
-#: khtml/khtml_part.cpp:4399 kparts/browserrun.cpp:436
+#: khtml/khtml_run.cpp:97 khtml/khtml_part.cpp:3809 khtml/khtml_part.cpp:4025
+#: khtml/khtml_part.cpp:4408 kparts/browserrun.cpp:443
 msgid "Save As"
 msgstr "Зачувај како"
 
@@ -9726,12 +9731,12 @@ msgstr "Да запишам врз датотеката? "
 msgid "Overwrite"
 msgstr "Пребриши"
 
-#: khtml/khtml_ext.cpp:971 kparts/browserrun.cpp:407
+#: khtml/khtml_ext.cpp:971 kparts/browserrun.cpp:414
 #, kde-format
 msgid "The Download Manager (%1) could not be found in your $PATH "
 msgstr "Менаџерот за симнувања (%1) не можеше да се најде во Вашиот $PATH "
 
-#: khtml/khtml_ext.cpp:972 kparts/browserrun.cpp:408
+#: khtml/khtml_ext.cpp:972 kparts/browserrun.cpp:415
 msgid ""
 "Try to reinstall it  \n"
 "\n"
@@ -10107,7 +10112,7 @@ msgstr "&Најди во рамка..."
 msgid "&Find..."
 msgstr "&Најди..."
 
-#: khtml/khtml_part.cpp:4698
+#: khtml/khtml_part.cpp:4704
 msgid ""
 "Warning:  This is a secure form but it is attempting to send your data back "
 "unencrypted.\n"
@@ -10119,16 +10124,16 @@ msgstr ""
 "Трето лице може да ги пресретне и да ги види овие информации.\n"
 "Дали сте сигурни дека сакате да продолжите?"
 
-#: khtml/khtml_part.cpp:4701 khtml/khtml_part.cpp:4710
-#: khtml/khtml_part.cpp:4734
+#: khtml/khtml_part.cpp:4707 khtml/khtml_part.cpp:4716
+#: khtml/khtml_part.cpp:4740
 msgid "Network Transmission"
 msgstr "Мрежен пренос"
 
-#: khtml/khtml_part.cpp:4701 khtml/khtml_part.cpp:4711
+#: khtml/khtml_part.cpp:4707 khtml/khtml_part.cpp:4717
 msgid "&Send Unencrypted"
 msgstr "&Прати некриптирано"
 
-#: khtml/khtml_part.cpp:4708
+#: khtml/khtml_part.cpp:4714
 msgid ""
 "Warning: Your data is about to be transmitted across the network "
 "unencrypted.\n"
@@ -10137,7 +10142,7 @@ msgstr ""
 "Внимание: Вашите податоци ќе се пратат преку мрежа некриптирани.\n"
 "Дали сте сигурни дека сакате да продолжите?"
 
-#: khtml/khtml_part.cpp:4732
+#: khtml/khtml_part.cpp:4738
 msgid ""
 "This site is attempting to submit form data via email.\n"
 "Do you want to continue?"
@@ -10145,11 +10150,11 @@ msgstr ""
 "Оваа страница се обидува да поднесе податоци од формуларот преку е-пошта.\n"
 "Дали сакате да продолжите?"
 
-#: khtml/khtml_part.cpp:4735
+#: khtml/khtml_part.cpp:4741
 msgid "&Send Email"
 msgstr "&Испрати е-пошта"
 
-#: khtml/khtml_part.cpp:4757
+#: khtml/khtml_part.cpp:4763
 #, kde-format
 msgid ""
 "<qt>The form will be submitted to <br /><b>%1</b><br />on your local "
@@ -10158,12 +10163,12 @@ msgstr ""
 "<qt>Формуларот ќе биде испратен до <br /><b>%1</b><br />на Вашиот локален "
 "датотечен систем.<br />Дали сакате да го испратите?</qt>"
 
-#: khtml/khtml_part.cpp:4758 khtml/khtmlview.cpp:2873 khtml/khtmlview.cpp:2915
+#: khtml/khtml_part.cpp:4764 khtml/khtmlview.cpp:2873 khtml/khtmlview.cpp:2915
 #: khtml/html/html_formimpl.cpp:1587 khtml/html/html_formimpl.cpp:2195
 msgid "Submit"
 msgstr "Испрати"
 
-#: khtml/khtml_part.cpp:4807
+#: khtml/khtml_part.cpp:4813
 msgid ""
 "This site attempted to attach a file from your computer in the form "
 "submission. The attachment was removed for your protection."
@@ -10171,50 +10176,50 @@ msgstr ""
 "Оваа страница се обиде да прикачи датотека од Вашиот компјутер при "
 "поднесување на формуларот. Приклучокот е отстранет за Ваша заштита."
 
-#: khtml/khtml_part.cpp:5812
+#: khtml/khtml_part.cpp:5818
 #, kde-format
 msgid "(%1/s)"
 msgstr "(%1/s)"
 
-#: khtml/khtml_part.cpp:6859
+#: khtml/khtml_part.cpp:6865
 msgid "Security Warning"
 msgstr "Безбедносно предупредување"
 
-#: khtml/khtml_part.cpp:6865
+#: khtml/khtml_part.cpp:6871
 #, kde-format
 msgid "<qt>Access by untrusted page to<br /><b>%1</b><br /> denied.</qt>"
 msgstr ""
 "<qt>Пристапот од недоверливата страница до<br /><b>%1</b><br /> е одбиен.</"
 "qt>"
 
-#: khtml/khtml_part.cpp:6866 khtml/java/kjavaappletserver.cpp:791
+#: khtml/khtml_part.cpp:6872 khtml/java/kjavaappletserver.cpp:791
 msgid "Security Alert"
 msgstr "Безбедносен аларм"
 
-#: khtml/khtml_part.cpp:7213
+#: khtml/khtml_part.cpp:7219
 #, kde-format
 msgid "The wallet '%1' is open and being used for form data and passwords."
 msgstr ""
 "Паричникот „%1“ е отворен и се користи за податоци од форми и за лозинки."
 
-#: khtml/khtml_part.cpp:7270
+#: khtml/khtml_part.cpp:7276
 msgid "&Close Wallet"
 msgstr "&Затвори паричник"
 
-#: khtml/khtml_part.cpp:7313
+#: khtml/khtml_part.cpp:7319
 msgid "JavaScript &Debugger"
 msgstr "&Чистач на JavaScript "
 
-#: khtml/khtml_part.cpp:7346
+#: khtml/khtml_part.cpp:7352
 msgid "This page was prevented from opening a new window via JavaScript."
 msgstr ""
 "оваа страница беше оневозможена да отвори нов прозорец преку JavaScript."
 
-#: khtml/khtml_part.cpp:7352
+#: khtml/khtml_part.cpp:7358
 msgid "Popup Window Blocked"
 msgstr "Скок-прозорецот е блокиран"
 
-#: khtml/khtml_part.cpp:7352
+#: khtml/khtml_part.cpp:7358
 msgid ""
 "This page has attempted to open a popup window but was blocked.\n"
 "You can click on this icon in the status bar to control this behavior\n"
@@ -10224,7 +10229,7 @@ msgstr ""
 "Може да кликнете на оваа икона во статусната лента за да го\n"
 "контролирате ова однесување или да го отворите скок-прозорецот."
 
-#: khtml/khtml_part.cpp:7365
+#: khtml/khtml_part.cpp:7371
 #, kde-format
 msgid "&Show Blocked Popup Window"
 msgid_plural "&Show %1 Blocked Popup Windows"
@@ -10232,11 +10237,11 @@ msgstr[0] "При&кажи %1 блокиран скок-прозорец"
 msgstr[1] "При&кажи %1 блокирани скок-прозорци"
 msgstr[2] "При&кажи %1 блокирани скок-прозорци"
 
-#: khtml/khtml_part.cpp:7366
+#: khtml/khtml_part.cpp:7372
 msgid "Show Blocked Window Passive Popup &Notification"
 msgstr "Прикажи пасивно скок-&известување за блокиран прозорец"
 
-#: khtml/khtml_part.cpp:7368
+#: khtml/khtml_part.cpp:7374
 msgid "&Configure JavaScript New Window Policies..."
 msgstr "&Конфигурирај политики за нов прозорец од JavaScript..."
 
@@ -10312,7 +10317,7 @@ msgstr "Најден е текстот: „%1“."
 msgid "Text not found: \"%1\"."
 msgstr "Не е најден текстот: „%1“."
 
-#: khtml/khtmlview.cpp:1944
+#: khtml/khtmlview.cpp:1942
 msgid "Access Keys activated"
 msgstr "Тастерите за пристап се активирани"
 
@@ -11168,16 +11173,16 @@ msgstr ""
 msgid "Close Document"
 msgstr "Затвори документ"
 
-#: kparts/browserrun.cpp:294
+#: kparts/browserrun.cpp:301
 #, kde-format
 msgid "Do you really want to execute '%1'?"
 msgstr "Дали навистина сакате да го извршите „%1“?"
 
-#: kparts/browserrun.cpp:295
+#: kparts/browserrun.cpp:302
 msgid "Execute File?"
 msgstr "Изврши датотека?"
 
-#: kparts/browserrun.cpp:313
+#: kparts/browserrun.cpp:320
 #, kde-format
 msgid ""
 "Open '%2'?\n"
@@ -11186,7 +11191,7 @@ msgstr ""
 "Отвори „%2“?\n"
 "Тип: %1"
 
-#: kparts/browserrun.cpp:315
+#: kparts/browserrun.cpp:322
 #, kde-format
 msgid ""
 "Open '%3'?\n"
@@ -11197,12 +11202,12 @@ msgstr ""
 "Име: %2\n"
 "Тип: %1"
 
-#: kparts/browserrun.cpp:330
+#: kparts/browserrun.cpp:337
 #, kde-format
 msgid "&Open with '%1'"
 msgstr "&Отвори со „%1“"
 
-#: kparts/browserrun.cpp:331
+#: kparts/browserrun.cpp:338
 msgid "&Open With..."
 msgstr "&Отвори со..."
 
