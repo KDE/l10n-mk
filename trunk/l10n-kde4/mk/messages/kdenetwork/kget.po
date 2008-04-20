@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-18 11:59+0200\n"
+"POT-Creation-Date: 2008-04-19 21:57+0200\n"
 "PO-Revision-Date: 2007-02-26 22:30+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -287,6 +287,16 @@ msgstr "Одложено"
 msgctxt "transfer state: finished"
 msgid "Finished"
 msgstr "Завршено"
+
+#: core/linkimporter.cpp:63
+#, fuzzy, kde-format
+#| msgid ""
+#| "Error while writing file:\n"
+#| "%1"
+msgid "Erro trying to get %1"
+msgstr ""
+"Грешка при запишување на датотеката:\n"
+"%1"
 
 #: core/kget.cpp:181
 #, fuzzy
@@ -1587,12 +1597,12 @@ msgctxt "fix position for droptarget"
 msgid "Sticky"
 msgstr "Лепливо"
 
-#: ui/droptarget.cpp:221 mainwindow.cpp:777
+#: ui/droptarget.cpp:221 mainwindow.cpp:806
 #, fuzzy
 msgid "&Download"
 msgstr "Симнувањето е продолжено"
 
-#: ui/droptarget.cpp:222 mainwindow.cpp:778
+#: ui/droptarget.cpp:222 mainwindow.cpp:807
 #, fuzzy
 msgid "&Load transferlist"
 msgstr "Отворам пренос:"
@@ -1661,74 +1671,44 @@ msgstr "Симнувањето е продолжено"
 msgid "Transfer details:"
 msgstr " Преноси: %1 "
 
-#: extensions/konqueror/kget_linkview.h:85
+#: ui/linkview/kget_linkview.h:100
 msgctxt "filter: show all file types"
 msgid "All"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.h:86
+#: ui/linkview/kget_linkview.h:101
 msgid "Videos"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.h:87
+#: ui/linkview/kget_linkview.h:102
 msgid "Audio"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.h:88
+#: ui/linkview/kget_linkview.h:103
 msgid "Archives"
 msgstr ""
 
-#: extensions/konqueror/kget_plug_in.cpp:44
-#, fuzzy
-msgid "Download Manager"
-msgstr "Менаџер за симнувања"
-
-#: extensions/konqueror/kget_plug_in.cpp:51 mainwindow.cpp:256
-#, fuzzy
-#| msgid "Show Drop &Target"
-msgid "Show Drop Target"
-msgstr "Прикажи цел за &испуштање"
-
-#: extensions/konqueror/kget_plug_in.cpp:58
-msgid "List All Links"
-msgstr "Прикажи ги сите врски"
-
-#: extensions/konqueror/kget_plug_in.cpp:63
-#, fuzzy
-#| msgid "List All Links"
-msgid "List Selected Links"
-msgstr "Прикажи ги сите врски"
-
-#: extensions/konqueror/kget_plug_in.cpp:198
-msgid "There are no links in the active frame of the current HTML page."
-msgstr "Нема врски во активната рамка на моменталната HTML-страница."
-
-#: extensions/konqueror/kget_plug_in.cpp:199
-msgid "No Links"
-msgstr "Нема врски"
-
-#: extensions/konqueror/kget_linkview.cpp:40 main.cpp:113 mainwindow.cpp:83
+#: ui/linkview/kget_linkview.cpp:48 main.cpp:113 mainwindow.cpp:84
 msgid "KGet"
 msgstr "KGet"
 
-#: extensions/konqueror/kget_linkview.cpp:62
+#: ui/linkview/kget_linkview.cpp:70
 msgid "Filter files here..."
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:73
+#: ui/linkview/kget_linkview.cpp:81
 msgid "Show:"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:90
-#: extensions/konqueror/kget_linkview.cpp:247
+#: ui/linkview/kget_linkview.cpp:113 ui/linkview/kget_linkview.cpp:282
 msgid "Select all"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:91
+#: ui/linkview/kget_linkview.cpp:114
 msgid "Show web content"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:92
+#: ui/linkview/kget_linkview.cpp:115
 #, fuzzy
 #| msgid "Download finished"
 msgid "Download checked"
@@ -1736,42 +1716,71 @@ msgstr "Симнувањето е завршено"
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/scandlg.ui line 183
-#: extensions/konqueror/kget_linkview.cpp:94 rc.cpp:207
+#: ui/linkview/kget_linkview.cpp:117 rc.cpp:207
 msgid "Cancel"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:130
+#: ui/linkview/kget_linkview.cpp:158
 msgid "Auxiliar header"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:131
+#: ui/linkview/kget_linkview.cpp:159
 #, fuzzy
 #| msgid "Local File Name"
 msgid "File Name"
 msgstr "Име на локална датотека"
 
-#: extensions/konqueror/kget_linkview.cpp:132
+#: ui/linkview/kget_linkview.cpp:160
 msgid "Description"
 msgstr "Опис"
 
-#: extensions/konqueror/kget_linkview.cpp:133
+#: ui/linkview/kget_linkview.cpp:161
 #, fuzzy
 msgctxt "list header: type of file"
 msgid "File Type"
 msgstr "Тип на датотека"
 
-#: extensions/konqueror/kget_linkview.cpp:134
+#: ui/linkview/kget_linkview.cpp:162
 msgid "Location (URL)"
 msgstr "Локација (URL)"
 
-#: extensions/konqueror/kget_linkview.cpp:195
+#: ui/linkview/kget_linkview.cpp:216
 #, kde-format
 msgid "Links in: %1 - KGet"
 msgstr "Врски во: %1 - KGet"
 
-#: extensions/konqueror/kget_linkview.cpp:247
+#: ui/linkview/kget_linkview.cpp:282
 msgid "Select all filtered"
 msgstr ""
+
+#: extensions/konqueror/kget_plug_in.cpp:43
+#, fuzzy
+msgid "Download Manager"
+msgstr "Менаџер за симнувања"
+
+#: extensions/konqueror/kget_plug_in.cpp:50 mainwindow.cpp:257
+#, fuzzy
+#| msgid "Show Drop &Target"
+msgid "Show Drop Target"
+msgstr "Прикажи цел за &испуштање"
+
+#: extensions/konqueror/kget_plug_in.cpp:57
+msgid "List All Links"
+msgstr "Прикажи ги сите врски"
+
+#: extensions/konqueror/kget_plug_in.cpp:62
+#, fuzzy
+#| msgid "List All Links"
+msgid "List Selected Links"
+msgstr "Прикажи ги сите врски"
+
+#: extensions/konqueror/kget_plug_in.cpp:197
+msgid "There are no links in the active frame of the current HTML page."
+msgstr "Нема врски во активната рамка на моменталната HTML-страница."
+
+#: extensions/konqueror/kget_plug_in.cpp:198
+msgid "No Links"
+msgstr "Нема врски"
 
 #: main.cpp:114
 msgid "An advanced download manager for KDE"
@@ -1877,40 +1886,40 @@ msgstr "Старувај го KGet со цел за испуштање"
 msgid "URL(s) to download"
 msgstr "URL(а) за симнување"
 
-#: mainwindow.cpp:117
+#: mainwindow.cpp:118
 msgid "&New Download..."
 msgstr ""
 
-#: mainwindow.cpp:123
+#: mainwindow.cpp:124
 #, fuzzy
 #| msgid "&Import Transfer List..."
 msgid "&Import Transfers..."
 msgstr "&Внеси листа за пренос..."
 
-#: mainwindow.cpp:129
+#: mainwindow.cpp:130
 #, fuzzy
 msgid "&Export Transfers List..."
 msgstr "&Изнеси ја листата за пренос..."
 
-#: mainwindow.cpp:135
+#: mainwindow.cpp:136
 msgid "Delete Group"
 msgstr ""
 
-#: mainwindow.cpp:140
+#: mainwindow.cpp:141
 #, fuzzy
 msgid "Rename Group"
 msgstr "Почетна папка"
 
-#: mainwindow.cpp:145
+#: mainwindow.cpp:146
 msgid "Set Icon"
 msgstr ""
 
-#: mainwindow.cpp:150
+#: mainwindow.cpp:151
 #, fuzzy
 msgid "Auto-Paste Mode"
 msgstr "Режим автовмет&ни"
 
-#: mainwindow.cpp:153
+#: mainwindow.cpp:154
 #, fuzzy
 msgid ""
 "<b>Auto paste</b> button toggles the auto-paste mode on and off.\n"
@@ -1923,91 +1932,97 @@ msgstr ""
 "Кога е поставен, KGet периодично ќе ја скенира таблата со исечоци\n"
 "за URL и ќе ги вметнува автоматски."
 
-#: mainwindow.cpp:159
+#: mainwindow.cpp:160
 #, fuzzy
 msgid "Use KGet as Konqueror Download Manager"
 msgstr "Оневозможи го &KGet како менаџер на симнувања за Konqueror"
 
-#: mainwindow.cpp:182
+#: mainwindow.cpp:183
 #, fuzzy
 msgctxt "delete selected transfer item"
 msgid "Delete Selected"
 msgstr "Не се избрани датотеки"
 
-#: mainwindow.cpp:188
+#: mainwindow.cpp:189
 msgctxt "delete all finished transfers"
 msgid "Delete all finished"
 msgstr ""
 
-#: mainwindow.cpp:193
+#: mainwindow.cpp:194
 #, fuzzy
 #| msgid "Download finished"
 msgctxt "redownload selected transfer item"
 msgid "Redownload Selected"
 msgstr "Симнувањето е завршено"
 
-#: mainwindow.cpp:198
+#: mainwindow.cpp:199
 msgid "Start / Resume All"
 msgstr ""
 
-#: mainwindow.cpp:204
+#: mainwindow.cpp:205
 #, fuzzy
 msgid "Start / Resume Selected"
 msgstr "Не се избрани датотеки"
 
-#: mainwindow.cpp:209
+#: mainwindow.cpp:210
 msgid "Stop All"
 msgstr ""
 
-#: mainwindow.cpp:215
+#: mainwindow.cpp:216
 #, fuzzy
 msgid "Stop Selected"
 msgstr "Не се избрани датотеки"
 
-#: mainwindow.cpp:219
+#: mainwindow.cpp:220
 msgid "Start / Resume"
 msgstr ""
 
-#: mainwindow.cpp:227
+#: mainwindow.cpp:228
 #, fuzzy
 msgid "Stop"
 msgstr "Запрено"
 
-#: mainwindow.cpp:236
+#: mainwindow.cpp:237
 #, fuzzy
 msgid "Open Destination"
 msgstr "Отвори &одредиште"
 
-#: mainwindow.cpp:241 mainwindow.cpp:372
+#: mainwindow.cpp:242 mainwindow.cpp:379
 #, fuzzy
 msgid "Open File"
 msgstr "Отвори &датотека"
 
-#: mainwindow.cpp:246
+#: mainwindow.cpp:247
 #, fuzzy
 msgid "Show Details"
 msgstr "bobibobi@freemail.com.mk"
 
-#: mainwindow.cpp:251
+#: mainwindow.cpp:252
 #, fuzzy
 msgid "Copy URL to Clipboard"
 msgstr "&Копирај URL на табла со исечоци"
 
-#: mainwindow.cpp:262
+#: mainwindow.cpp:263
 #, fuzzy
 msgid "&Transfer History"
 msgstr "Отворам пренос:"
 
-#: mainwindow.cpp:268
+#: mainwindow.cpp:269
 msgid "&Group Settings"
 msgstr ""
 
-#: mainwindow.cpp:274
+#: mainwindow.cpp:275
 #, fuzzy
 msgid "&Transfer Settings"
 msgstr " Преноси: %1 "
 
-#: mainwindow.cpp:313
+#: mainwindow.cpp:281
+#, fuzzy
+#| msgid "List All Links"
+msgid "&List Links"
+msgstr "Прикажи ги сите врски"
+
+#: mainwindow.cpp:320
 #, fuzzy
 #| msgid ""
 #| "This is the first time that you have run KGet.\n"
@@ -2019,24 +2034,24 @@ msgstr ""
 "Ова е прв пат како го вклучувате KGet.\n"
 "Дали сакате да го користите KGet како менаџер на симнувања за Konqueror?"
 
-#: mainwindow.cpp:315
+#: mainwindow.cpp:322
 #, fuzzy
 msgid "Konqueror Integration"
 msgstr "Интеграција со Konqueror"
 
-#: mainwindow.cpp:315
+#: mainwindow.cpp:322
 msgid "Enable"
 msgstr "Користи"
 
-#: mainwindow.cpp:316
+#: mainwindow.cpp:323
 msgid "Do Not Enable"
 msgstr "Не користи"
 
-#: mainwindow.cpp:371
+#: mainwindow.cpp:378
 msgid "All Openable Files"
 msgstr ""
 
-#: mainwindow.cpp:388
+#: mainwindow.cpp:395
 #, fuzzy
 #| msgid ""
 #| "Some transfers are still running.\n"
@@ -2048,38 +2063,38 @@ msgstr ""
 "Некои преноси сѐ уште се извршуваат.\n"
 "Дали навистина сакате да го затворите KGet?"
 
-#: mainwindow.cpp:390
+#: mainwindow.cpp:397
 msgid "Confirm Quit"
 msgstr ""
 
-#: mainwindow.cpp:423
+#: mainwindow.cpp:430
 #, fuzzy
 msgid "KGet Transfer List"
 msgstr "Отворам пренос:"
 
-#: mainwindow.cpp:425
+#: mainwindow.cpp:432
 #, fuzzy
 msgid "Export Transfers"
 msgstr "&Изнеси ја листата за пренос..."
 
-#: mainwindow.cpp:448
+#: mainwindow.cpp:455
 #, fuzzy
 msgid "Enter Group Name"
 msgstr "Божидар Проевски"
 
-#: mainwindow.cpp:449
+#: mainwindow.cpp:456
 #, fuzzy
 msgid "Group name:"
 msgstr "Божидар Проевски"
 
-#: mainwindow.cpp:689
+#: mainwindow.cpp:696
 msgid ""
 "KGet has been temporarily disabled as download manager for Konqueror. If you "
 "want to disable it forever, go to Settings->Advanced and disable \"Use as "
 "download manager for Konqueror\"."
 msgstr ""
 
-#: mainwindow.cpp:692
+#: mainwindow.cpp:699
 #, fuzzy
 msgid "Konqueror Integration disabled"
 msgstr "Интеграција со Konqueror"
@@ -2959,26 +2974,26 @@ msgid "&File"
 msgstr "Отвори &датотека"
 
 #. i18n: tag text
-#. i18n: file ui/kgetui.rc line 14
+#. i18n: file ui/kgetui.rc line 15
 #: rc.cpp:479
 #, fuzzy
 msgid "&Downloads"
 msgstr "Симнувањето е продолжено"
 
 #. i18n: tag text
-#. i18n: file ui/kgetui.rc line 24
+#. i18n: file ui/kgetui.rc line 25
 #: rc.cpp:482
 msgid "&Settings"
 msgstr ""
 
 #. i18n: tag text
-#. i18n: file ui/kgetui.rc line 36
+#. i18n: file ui/kgetui.rc line 37
 #: rc.cpp:485
 msgid "&Help"
 msgstr ""
 
 #. i18n: tag text
-#. i18n: file ui/kgetui.rc line 39
+#. i18n: file ui/kgetui.rc line 40
 #: rc.cpp:488
 msgid "Main Toolbar"
 msgstr ""
