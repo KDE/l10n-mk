@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-03 10:41+0200\n"
+"POT-Creation-Date: 2008-05-06 23:02+0200\n"
 "PO-Revision-Date: 2007-02-28 14:29+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -152,7 +152,7 @@ msgstr ""
 msgid "Show user and password information"
 msgstr ""
 
-#: kleo/cryptobackendfactory.cpp:175
+#: kleo/cryptobackendfactory.cpp:173
 #, kde-format
 msgid "While scanning for %1 support in backend %2:"
 msgstr "При скенирањето за %1 поддршка во задниот крај %2:"
@@ -719,7 +719,7 @@ msgstr "никогаш"
 
 #: ui/keyselectiondialog.cpp:247 ui/keyselectiondialog.cpp:249
 #: ui/keyselectiondialog.cpp:256 ui/keyselectiondialog.cpp:258
-#: ui/keyselectiondialog.cpp:259 backends/qgpgme/qgpgmebackend.cpp:86
+#: ui/keyselectiondialog.cpp:259 backends/qgpgme/qgpgmebackend.cpp:82
 msgid "unknown"
 msgstr "непознато"
 
@@ -827,6 +827,101 @@ msgstr "Резултат од листањето на клучеви"
 msgid "Recheck Key"
 msgstr "Повторно провери го клучот"
 
+#: ui/messagebox.cpp:55
+msgid "&Save to Disk..."
+msgstr ""
+
+#: ui/messagebox.cpp:59
+msgid "&Copy to Clipboard"
+msgstr ""
+
+#: ui/messagebox.cpp:59
+msgid "Copy Audit Log to Clipboard"
+msgstr ""
+
+#: ui/messagebox.cpp:63
+msgid "&Show Audit Log"
+msgstr ""
+
+#: ui/messagebox.cpp:73
+msgid "View GnuPG Audit Log"
+msgstr ""
+
+#: ui/messagebox.cpp:98
+msgid "Choose File to Save GnuPG Audit Log to"
+msgstr ""
+
+#: ui/messagebox.cpp:112
+#, kde-format
+msgid "Couldn't save to file \"%1\": %2"
+msgstr ""
+
+#: ui/messagebox.cpp:114
+msgid "File Save Error"
+msgstr ""
+
+#: ui/messagebox.cpp:135
+msgid "Your system does not have support for GnuPG Audit Logs"
+msgstr ""
+
+#: ui/messagebox.cpp:136
+msgid "System Error"
+msgstr ""
+
+#: ui/messagebox.cpp:142
+msgid "No GnuPG Audit Log available for this operation."
+msgstr ""
+
+#: ui/messagebox.cpp:143
+msgid "No GnuPG Audit Log"
+msgstr ""
+
+#: ui/messagebox.cpp:160 ui/messagebox.cpp:165
+msgid "GnuPG Audit Log Viewer"
+msgstr ""
+
+#: ui/messagebox.cpp:170
+#, kde-format
+msgid "Signing failed: %1"
+msgstr "Потпишувањето не успеа: %1"
+
+#: ui/messagebox.cpp:171
+msgid "Signing successful"
+msgstr ""
+
+#: ui/messagebox.cpp:180 backends/chiasmus/chiasmusjob.cpp:206
+#, kde-format
+msgid "Encryption failed: %1"
+msgstr "Криптирањето не успеа:%1"
+
+#: ui/messagebox.cpp:181
+#, fuzzy
+#| msgid "Encryption keys:"
+msgid "Encryption successful"
+msgstr "Клучеви за криптирање:"
+
+#: ui/messagebox.cpp:198
+#, fuzzy
+#| msgid "Scan Results"
+msgid "Signing Result"
+msgstr "Резултати од скенирањето"
+
+#: ui/messagebox.cpp:208
+msgid "Signing Error"
+msgstr ""
+
+#: ui/messagebox.cpp:218 ui/messagebox.cpp:238
+#, fuzzy
+#| msgid "Encryption keys:"
+msgid "Encryption Result"
+msgstr "Клучеви за криптирање:"
+
+#: ui/messagebox.cpp:228 ui/messagebox.cpp:248
+#, fuzzy
+#| msgid "Encryption keys:"
+msgid "Encryption Error"
+msgstr "Клучеви за криптирање:"
+
 #: ui/progressdialog.cpp:87
 #, kde-format
 msgid "%1: %2"
@@ -848,7 +943,7 @@ msgstr "Chiasmus алатка од командната линија"
 #: backends/chiasmus/chiasmusbackend.cpp:434
 #: backends/chiasmus/chiasmusbackend.cpp:440
 #: backends/chiasmus/chiasmusbackend.cpp:469
-#: backends/qgpgme/qgpgmebackend.cpp:311
+#: backends/qgpgme/qgpgmebackend.cpp:307
 #, kde-format
 msgid "Unsupported protocol \"%1\""
 msgstr "Неподдржан протокол \"%1\""
@@ -861,13 +956,6 @@ msgstr "Датотеката \"%1\" не постои или не може да 
 #: backends/chiasmus/chiasmusjob.cpp:164
 msgid "Output from chiasmus"
 msgstr "Излез од chiasmus"
-
-#: backends/chiasmus/chiasmusjob.cpp:206
-#: backends/qgpgme/qgpgmeencryptjob.cpp:151
-#: backends/qgpgme/qgpgmesignencryptjob.cpp:177
-#, kde-format
-msgid "Encryption failed: %1"
-msgstr "Криптирањето не успеа:%1"
 
 #: backends/chiasmus/chiasmusjob.cpp:207
 #, kde-format
@@ -898,27 +986,27 @@ msgstr "Библиотеката не го содржи симболот \"Chias
 msgid "Scanning directory %1..."
 msgstr "Скенирам директориум %1..."
 
-#: backends/qgpgme/qgpgmebackend.cpp:265
+#: backends/qgpgme/qgpgmebackend.cpp:261
 msgid "GpgME"
 msgstr "GpgME"
 
-#: backends/qgpgme/qgpgmebackend.cpp:285
+#: backends/qgpgme/qgpgmebackend.cpp:281
 #, kde-format
 msgid "GPGME was compiled without support for %1."
 msgstr "GPGME се искомпајлира без поддршка за %1."
 
-#: backends/qgpgme/qgpgmebackend.cpp:287
+#: backends/qgpgme/qgpgmebackend.cpp:283
 #, kde-format
 msgid "Engine %1 is not installed properly."
 msgstr "Машината %1 не е инсталирана правилно"
 
-#: backends/qgpgme/qgpgmebackend.cpp:289
+#: backends/qgpgme/qgpgmebackend.cpp:285
 #, kde-format
 msgid "Engine %1 version %2 installed, but at least version %3 is required."
 msgstr ""
 "Машината %1 верзија %2 е инсталирана, но барем верзијата %3 е потребна."
 
-#: backends/qgpgme/qgpgmebackend.cpp:293
+#: backends/qgpgme/qgpgmebackend.cpp:289
 #, kde-format
 msgid "Unknown problem with engine for protocol %1."
 msgstr "Непознат проблем со моторот за протоколот %1."
@@ -966,7 +1054,7 @@ msgstr ""
 msgid "Can't start combined decrypt/verify operation"
 msgstr ""
 
-#: backends/qgpgme/qgpgmeencryptjob.cpp:110
+#: backends/qgpgme/qgpgmeencryptjob.cpp:111
 msgid "Can't start encrypt job"
 msgstr ""
 
@@ -1058,17 +1146,11 @@ msgstr ""
 "Подигам gpg-agent (треба да размислите за стартување на глобална инстанца во "
 "спротивно)..."
 
-#: backends/qgpgme/qgpgmesignencryptjob.cpp:122
+#: backends/qgpgme/qgpgmesignencryptjob.cpp:123
 msgid "Can't start combined sign-encrypt job"
 msgstr ""
 
-#: backends/qgpgme/qgpgmesignencryptjob.cpp:176
-#: backends/qgpgme/qgpgmesignjob.cpp:161
-#, kde-format
-msgid "Signing failed: %1"
-msgstr "Потпишувањето не успеа: %1"
-
-#: backends/qgpgme/qgpgmesignjob.cpp:118
+#: backends/qgpgme/qgpgmesignjob.cpp:119
 msgid "Can't start sign job"
 msgstr ""
 
