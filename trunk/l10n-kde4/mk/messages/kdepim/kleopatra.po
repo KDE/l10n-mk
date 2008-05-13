@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-11 10:13+0200\n"
+"POT-Creation-Date: 2008-05-13 19:40+0200\n"
 "PO-Revision-Date: 2007-02-28 14:28+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1531,6 +1531,7 @@ msgstr ""
 #: main.cpp:133
 #, fuzzy
 #| msgid "Select CRL File"
+msgctxt "didn't pass"
 msgid "Self-Check Failed"
 msgstr "Одбери CRL-датотека"
 
@@ -4652,9 +4653,10 @@ msgstr "Конфигурација на боја & фонт"
 msgid "The process terminated prematurely"
 msgstr ""
 
-#: selftest/gpgconfcheck.cpp:77 selftest/gpgconfcheck.cpp:90
+#: selftest/gpgconfcheck.cpp:77
 #, fuzzy
 #| msgid "Failed."
+msgctxt "self-test didn't pass"
 msgid "Failed"
 msgstr "Неуспешно."
 
@@ -4676,21 +4678,32 @@ msgid ""
 "You might want to execute \"gpgconf --check-config\" on the command line."
 msgstr ""
 
-#: selftest/gpgconfcheck.cpp:92
-#, kde-format
+#: selftest/gpgconfcheck.cpp:90
+#, fuzzy
+#| msgid "Failed."
+msgctxt "self-check didn't pass"
+msgid "Failed"
+msgstr "Неуспешно."
+
+#: selftest/gpgconfcheck.cpp:93
+#, fuzzy, kde-format
+#| msgid "Color & Font Configuration"
+msgctxt "Self-test didn't pass"
 msgid ""
 "The GnuPG configuration self-check failed.\n"
 "\n"
 "Error code: %1\n"
 "Diagnostics:"
-msgstr ""
+msgstr "Конфигурација на боја & фонт"
 
-#: selftest/gpgconfcheck.cpp:96
-#, kde-format
+#: selftest/gpgconfcheck.cpp:98
+#, fuzzy, kde-format
+#| msgid "Color & Font Configuration"
+msgctxt "self-check didn't pass"
 msgid ""
 "The GnuPG configuration self-check failed with error code %1.\n"
 "No output was received."
-msgstr ""
+msgstr "Конфигурација на боја & фонт"
 
 #: selftest/registrycheck.cpp:60
 msgctxt "@title"
@@ -5196,11 +5209,6 @@ msgstr "GpgSM-процесот заврши прерано поради неоч
 #~ msgstr ""
 #~ "<qt>Crypto-приклучокот не може да започне.<br>Менаџерот за сертификати ќе "
 #~ "прекине.</qt>"
-
-#, fuzzy
-#~| msgid "Color & Font Configuration"
-#~ msgid "The GnuPG configuration self-check succeeded."
-#~ msgstr "Конфигурација на боја & фонт"
 
 #, fuzzy
 #~| msgid "Configure &GpgME Backend"
