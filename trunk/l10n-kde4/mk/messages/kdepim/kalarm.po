@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-11 10:13+0200\n"
+"POT-Creation-Date: 2008-05-18 07:31+0200\n"
 "PO-Revision-Date: 2007-02-28 14:12+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -57,7 +57,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Failed to execute command (shell access not authorized):"
 msgctxt "@info"
-msgid "Failed to execute command (shell access not authorized):"
+msgid "Failed to execute command (shell access not authorized)"
 msgstr ""
 "Не успеав да ја извршам наредбата (нема авторизиран пристап кон школката):"
 
@@ -65,15 +65,26 @@ msgstr ""
 #, fuzzy
 #| msgid "Failed to execute command:"
 msgctxt "@info"
-msgid "Failed to execute command:"
+msgid "Failed to execute command"
 msgstr "Не успеав да ја извршам наредбата:"
 
 #: lib/shellprocess.cpp:163
 #, fuzzy
 #| msgid "Command execution error:"
 msgctxt "@info"
-msgid "Command execution error:"
+msgid "Command execution error"
 msgstr "Грешка во извршувањето на наредбата:"
+
+#: lib/shellprocess.cpp:166
+#, fuzzy, kde-format
+#| msgid ""
+#| "Command executed:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Command exit code: %1"
+msgstr ""
+"Наредбата е извршена:\n"
+"%1"
 
 #: lib/timespinbox.cpp:77
 #, fuzzy
@@ -235,21 +246,21 @@ msgstr ""
 "Напуштањето ќе ги оневозможи алармите\n"
 "(откако ќе се затворат сите прозорци со пораки од аларми)."
 
-#: kalarmapp.cpp:1862
+#: kalarmapp.cpp:1866
 #, fuzzy
 #| msgid "Error creating temporary script file"
 msgctxt "@info"
 msgid "Error creating temporary script file"
 msgstr "Грешка при создавањето на привремена скриптна датотека"
 
-#: kalarmapp.cpp:1926
+#: kalarmapp.cpp:1944
 #, fuzzy
 #| msgid "Pre-alarm action:"
 msgctxt "@info"
 msgid "Pre-alarm action:"
 msgstr "Дејство пред алармот:"
 
-#: kalarmapp.cpp:1931
+#: kalarmapp.cpp:1949
 #, fuzzy
 #| msgid "Post-alarm action:"
 msgctxt "@info"
@@ -2286,27 +2297,27 @@ msgctxt "@info:whatsthis"
 msgid "Specify actions to execute before and after the alarm is displayed."
 msgstr "Изберете дејства за извршување пред и по прикажувањето на алармот."
 
-#: specialactions.cpp:100
+#: specialactions.cpp:103
 #, fuzzy
 #| msgid "Special Alarm Actions"
 msgctxt "@title:window"
 msgid "Special Alarm Actions"
 msgstr "Специјални дејства за аларми"
 
-#: specialactions.cpp:158
+#: specialactions.cpp:161
 #, fuzzy
 msgctxt "@title:group"
 msgid "Pre-Alarm Action"
 msgstr "Дејство пред алармот:"
 
-#: specialactions.cpp:168 specialactions.cpp:194
+#: specialactions.cpp:171 specialactions.cpp:197
 #, fuzzy
 #| msgid "Co&mmand"
 msgctxt "@label:textbox"
 msgid "Command:"
 msgstr "На&редба"
 
-#: specialactions.cpp:173
+#: specialactions.cpp:176
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>Enter a shell command to execute before the alarm is displayed.</"
@@ -2316,25 +2327,25 @@ msgid ""
 "para>"
 msgstr ""
 
-#: specialactions.cpp:179
+#: specialactions.cpp:182
 msgctxt "@option:check"
 msgid "Cancel alarm on error"
 msgstr ""
 
-#: specialactions.cpp:180
+#: specialactions.cpp:183
 msgctxt "@info:whatsthis"
 msgid ""
 "Cancel the alarm if the pre-alarm command fails, i.e. do not display the "
 "alarm or execute any post-alarm action command."
 msgstr ""
 
-#: specialactions.cpp:184
+#: specialactions.cpp:187
 #, fuzzy
 msgctxt "@title:group"
 msgid "Post-Alarm Action"
 msgstr "Дејство по алармот:"
 
-#: specialactions.cpp:198
+#: specialactions.cpp:201
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>Enter a shell command to execute after the alarm window is closed.</"
@@ -6362,7 +6373,7 @@ msgctxt "@info"
 msgid "Error reading address book"
 msgstr "Грешка при читањето на адресарот"
 
-#: alarmevent.cpp:2858
+#: alarmevent.cpp:2856
 #, fuzzy
 #| msgctxt "Brief form of 'At Login'"
 #| msgid "Login"
@@ -6370,14 +6381,14 @@ msgctxt "@info/plain Brief form of 'At Login'"
 msgid "Login"
 msgstr "Најава"
 
-#: alarmevent.cpp:2858
+#: alarmevent.cpp:2856
 #, fuzzy
 #| msgid "At login"
 msgctxt "@info/plain"
 msgid "At login"
 msgstr "При најава"
 
-#: alarmevent.cpp:2866 alarmevent.cpp:2904
+#: alarmevent.cpp:2864 alarmevent.cpp:2902
 #, fuzzy, kde-format
 #| msgid "1 Minute"
 #| msgid_plural "%1 Minutes"
@@ -6388,7 +6399,7 @@ msgstr[0] "%1 минута"
 msgstr[1] "%1 минути"
 msgstr[2] "%1 минути"
 
-#: alarmevent.cpp:2868 alarmevent.cpp:2906
+#: alarmevent.cpp:2866 alarmevent.cpp:2904
 #, fuzzy, kde-format
 #| msgid "1 Hour"
 #| msgid_plural "%1 Hours"
@@ -6399,7 +6410,7 @@ msgstr[0] "%1 час"
 msgstr[1] "%1 часа"
 msgstr[2] "%1 часа"
 
-#: alarmevent.cpp:2872 alarmevent.cpp:2908
+#: alarmevent.cpp:2870 alarmevent.cpp:2906
 #, fuzzy, kde-format
 #| msgctxt "Undo-action: message"
 #| msgid "%1: %2"
@@ -6407,7 +6418,7 @@ msgctxt "@info/plain Hours and minutes"
 msgid "%1h %2m"
 msgstr "%1: %2"
 
-#: alarmevent.cpp:2875 alarmevent.cpp:2912
+#: alarmevent.cpp:2873 alarmevent.cpp:2910
 #, fuzzy, kde-format
 #| msgid "1 Day"
 #| msgid_plural "%1 Days"
@@ -6418,7 +6429,7 @@ msgstr[0] "%1 ден"
 msgstr[1] "%1 дена"
 msgstr[2] "%1 дена"
 
-#: alarmevent.cpp:2877 alarmevent.cpp:2913
+#: alarmevent.cpp:2875 alarmevent.cpp:2911
 #, fuzzy, kde-format
 #| msgid "1 Week"
 #| msgid_plural "%1 Weeks"
@@ -6429,7 +6440,7 @@ msgstr[0] "%1 седмица"
 msgstr[1] "%1 седмици"
 msgstr[2] "%1 седмици"
 
-#: alarmevent.cpp:2879
+#: alarmevent.cpp:2877
 #, fuzzy, kde-format
 #| msgid "1 Month"
 #| msgid_plural "%1 Months"
@@ -6440,7 +6451,7 @@ msgstr[0] "%1 месец"
 msgstr[1] "%1 месеци"
 msgstr[2] "%1 месеци"
 
-#: alarmevent.cpp:2881
+#: alarmevent.cpp:2879
 #, fuzzy, kde-format
 #| msgid "1 Year"
 #| msgid_plural "%1 Years"
@@ -6451,14 +6462,14 @@ msgstr[0] "%1 година"
 msgstr[1] "%1 години"
 msgstr[2] "%1 години"
 
-#: alarmevent.cpp:2887
+#: alarmevent.cpp:2885
 #, fuzzy
 #| msgid "None"
 msgctxt "@info/plain No recurrence"
 msgid "None"
 msgstr "Нема"
 
-#: alarmevent.cpp:2915
+#: alarmevent.cpp:2913
 #, fuzzy
 #| msgid "None"
 msgctxt "@info/plain No repetition"
