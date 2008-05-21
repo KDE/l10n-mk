@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-20 07:35+0200\n"
+"POT-Creation-Date: 2008-05-21 08:59+0200\n"
 "PO-Revision-Date: 2007-12-01 22:11+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -95,7 +95,7 @@ msgstr "Внесете тука термин за пребарување"
 #: rc.cpp:23
 #, fuzzy
 #| msgid "Collaboration"
-msgid "Colaborate"
+msgid "Collaborate"
 msgstr "Колаборација"
 
 #. i18n: tag label
@@ -273,9 +273,10 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kdeui/dialogs/kcupsoptionspageswidget.ui line 95
-#. i18n: tag string
-#. i18n: file ./threadweaver/Examples/Jobs/JobsBase.ui line 80
-#: rc.cpp:95 rc.cpp:936
+#: rc.cpp:95
+#, fuzzy
+#| msgid "Start"
+msgctxt "Banner page at start"
 msgid "Start"
 msgstr "Старт"
 
@@ -285,6 +286,7 @@ msgstr "Старт"
 #, fuzzy
 #| msgctxt "keyboard-key-name"
 #| msgid "End"
+msgctxt "Banner page at end"
 msgid "End"
 msgstr "End"
 
@@ -1792,8 +1794,7 @@ msgstr "Чекор до следната линија..."
 #. i18n: file ./threadweaver/Examples/Jobs/JobsBase.ui line 90
 #: rc.cpp:788 rc.cpp:939 kdeui/util/kstandardguiitem.cpp:265
 #: kdeui/util/kkeyserver_x11.cpp:109 kdeui/findreplace/kreplace.cpp:353
-#: khtml/ecma/kjs_debugwin.cpp:482 khtml/ecma/debugger/debugwindow.cpp:186
-#: kross/ui/view.cpp:309
+#: khtml/ecma/kjs_debugwin.cpp:482 kross/ui/view.cpp:309
 msgid "Stop"
 msgstr "Стоп"
 
@@ -1882,6 +1883,12 @@ msgstr "Евидентирај активност на нишки"
 #: rc.cpp:933
 msgid "Displays Thread Activity"
 msgstr "Прикажува активност на нишки"
+
+#. i18n: tag string
+#. i18n: file ./threadweaver/Examples/Jobs/JobsBase.ui line 80
+#: rc.cpp:936
+msgid "Start"
+msgstr "Старт"
 
 #. i18n: tag string
 #. i18n: file ./threadweaver/Examples/Jobs/JobsBase.ui line 185
@@ -6120,9 +6127,9 @@ msgid "Top to Bottom, Right to Left"
 msgstr ""
 
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:191
-#: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:212
-#: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:235
-#: kdeui/dialogs/kshortcuteditwidget.cpp:58
+#, fuzzy
+#| msgid "None"
+msgctxt "No border line"
 msgid "None"
 msgstr "Нема"
 
@@ -6147,22 +6154,35 @@ msgstr ""
 msgid "Double Thick Line"
 msgstr "Лиценцата Q Public License"
 
+#: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:212
+#: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:235
+#, fuzzy
+#| msgid "None"
+msgctxt "Banner page"
+msgid "None"
+msgstr "Нема"
+
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:213
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:236
 #, fuzzy
 #| msgid "Start"
+msgctxt "Banner page"
 msgid "Standard"
 msgstr "Старт"
 
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:214
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:237
+#, fuzzy
+#| msgid "Class"
+msgctxt "Banner page"
 msgid "Unclassified"
-msgstr ""
+msgstr "Класа"
 
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:215
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:238
 #, fuzzy
 #| msgid "Critical"
+msgctxt "Banner page"
 msgid "Confidential"
 msgstr "Критичен"
 
@@ -6170,6 +6190,7 @@ msgstr "Критичен"
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:239
 #, fuzzy
 #| msgid "Class"
+msgctxt "Banner page"
 msgid "Classified"
 msgstr "Класа"
 
@@ -6177,13 +6198,17 @@ msgstr "Класа"
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:240
 #, fuzzy
 #| msgid "Security Alert"
+msgctxt "Banner page"
 msgid "Secret"
 msgstr "Безбедносен аларм"
 
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:218
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:241
+#, fuzzy
+#| msgid "Security Alert"
+msgctxt "Banner page"
 msgid "Top Secret"
-msgstr ""
+msgstr "Безбедносен аларм"
 
 #. i18n: Filter for the Yes-button text in standard message dialogs,
 #. after the message caption/text have been translated.
@@ -6804,6 +6829,10 @@ msgstr "Затвори порака"
 #: kdeui/dialogs/kshortcuteditwidget.cpp:55
 msgid "Default:"
 msgstr "Стандардно:"
+
+#: kdeui/dialogs/kshortcuteditwidget.cpp:58
+msgid "None"
+msgstr "Нема"
 
 #: kdeui/dialogs/kshortcuteditwidget.cpp:61
 msgid "Custom:"
@@ -10997,7 +11026,7 @@ msgid "Available Tests: %1 (ignored: %2)"
 msgstr "Достапни тестови: %1 (игнорирани: %2)"
 
 #: khtml/test_regression_gui_window.cpp:563 khtml/ecma/kjs_debugwin.cpp:481
-#: khtml/ecma/debugger/debugwindow.cpp:178
+#: khtml/ecma/debugger/debugwindow.cpp:176
 msgid "Continue"
 msgstr "Продолжи"
 
@@ -11118,7 +11147,7 @@ msgstr "&Продолжи"
 msgid "St&op"
 msgstr "&Стоп"
 
-#: khtml/ecma/kjs_debugwin.cpp:476 khtml/ecma/debugger/debugwindow.cpp:185
+#: khtml/ecma/kjs_debugwin.cpp:476 khtml/ecma/debugger/debugwindow.cpp:170
 msgid "&Break at Next Statement"
 msgstr "&Запри на следната наредба"
 
@@ -11127,7 +11156,7 @@ msgctxt "Next breakpoint"
 msgid "Next"
 msgstr "Следна"
 
-#: khtml/ecma/kjs_debugwin.cpp:848 khtml/ecma/debugger/debugwindow.cpp:594
+#: khtml/ecma/kjs_debugwin.cpp:848 khtml/ecma/debugger/debugwindow.cpp:580
 #, kde-format
 msgid "Parse error at %1 line %2"
 msgstr "Грешка при анализа на %1 линија %2"
@@ -11143,7 +11172,7 @@ msgstr ""
 "\n"
 "%1"
 
-#: khtml/ecma/kjs_debugwin.cpp:870 khtml/ecma/debugger/debugwindow.cpp:631
+#: khtml/ecma/kjs_debugwin.cpp:870 khtml/ecma/debugger/debugwindow.cpp:617
 #, kde-format
 msgid ""
 "An error occurred while attempting to run a script on this page.\n"
@@ -11263,16 +11292,21 @@ msgstr ""
 "формуларот?</qt>"
 
 #: khtml/ecma/debugger/debugdocument.cpp:210
-#: khtml/ecma/debugger/debugwindow.cpp:128
+#, fuzzy
+#| msgid ""
+#| "A KDE text-editor component could not be found;\n"
+#| "please check your KDE installation."
 msgid ""
-"A KDE text-editor component could not be found;\n"
+"Unable to find the Kate editor component;\n"
 "please check your KDE installation."
 msgstr ""
 "Не е најдена компонента од KDE за уредување на текст.\n"
 "Проверете ја вашата инсталација на KDE."
 
 #: khtml/ecma/debugger/debugdocument.cpp:327
-msgid "Breakpoints"
+#, fuzzy
+#| msgid "Breakpoints"
+msgid "Breakpoint"
 msgstr "Точки на прекин"
 
 #: khtml/ecma/debugger/scriptsdock.cpp:39
@@ -11287,36 +11321,46 @@ msgstr "Локални променливи"
 msgid "Reference"
 msgstr "Референца"
 
-#: khtml/ecma/debugger/debugwindow.cpp:180
-#: khtml/ecma/debugger/debugwindow.cpp:181
-msgid "Continue script execution"
-msgstr "Продолжи извршување на скриптата"
+#: khtml/ecma/debugger/debugwindow.cpp:171
+#, fuzzy
+#| msgid "&Break at Next Statement"
+msgid "Break at Next"
+msgstr "&Запри на следната наредба"
 
-#: khtml/ecma/debugger/debugwindow.cpp:192
-#: khtml/ecma/debugger/debugwindow.cpp:194
-#: khtml/ecma/debugger/debugwindow.cpp:195
+#: khtml/ecma/debugger/debugwindow.cpp:183
+msgid "Step Over"
+msgstr "Чекор преку"
+
+#: khtml/ecma/debugger/debugwindow.cpp:190
 msgid "Step Into"
 msgstr "Чекор во"
 
-#: khtml/ecma/debugger/debugwindow.cpp:199
-#: khtml/ecma/debugger/debugwindow.cpp:201
-#: khtml/ecma/debugger/debugwindow.cpp:202
+#: khtml/ecma/debugger/debugwindow.cpp:197
 msgid "Step Out"
 msgstr "Чекор надвор"
 
 #: khtml/ecma/debugger/debugwindow.cpp:206
-#: khtml/ecma/debugger/debugwindow.cpp:208
-#: khtml/ecma/debugger/debugwindow.cpp:209
-msgid "Step Over"
-msgstr "Чекор преку"
+msgid "&Debug"
+msgstr ""
 
-#: khtml/ecma/debugger/debugwindow.cpp:249
+#: khtml/ecma/debugger/debugwindow.cpp:235
 msgid "Close source"
 msgstr "Затвори извор"
 
-#: khtml/ecma/debugger/debugwindow.cpp:255
+#: khtml/ecma/debugger/debugwindow.cpp:241
 msgid "Ready"
 msgstr "Подготвен"
+
+#: khtml/ecma/debugger/debugwindow.cpp:796
+msgid ""
+"Don't know where to evaluate the expression. Please pause a script or open a "
+"source file."
+msgstr ""
+
+#: khtml/ecma/debugger/debugwindow.cpp:832
+#, kde-format
+msgid "Evaluation threw an exception %1"
+msgstr ""
 
 #: khtml/ecma/debugger/consoledock.cpp:231
 msgid "Console"
@@ -12077,7 +12121,7 @@ msgstr[2] ""
 msgid "Search Plugins"
 msgstr "Колони за пребарување"
 
-#: kutils/kpluginselector.cpp:723
+#: kutils/kpluginselector.cpp:728
 #, fuzzy, kde-format
 #| msgid "Name:"
 msgid ""
@@ -12085,7 +12129,7 @@ msgid ""
 "%1"
 msgstr "Име:"
 
-#: kutils/kpluginselector.cpp:726
+#: kutils/kpluginselector.cpp:731
 #, fuzzy, kde-format
 #| msgid "Comment:"
 msgid ""
@@ -12095,7 +12139,7 @@ msgid ""
 "%1"
 msgstr "Коментар:"
 
-#: kutils/kpluginselector.cpp:730
+#: kutils/kpluginselector.cpp:735
 #, fuzzy, kde-format
 #| msgid ""
 #| "Author:\n"
@@ -12109,7 +12153,7 @@ msgstr ""
 "Автор:\n"
 "\t%1"
 
-#: kutils/kpluginselector.cpp:734
+#: kutils/kpluginselector.cpp:739
 #, fuzzy, kde-format
 #| msgid "E-Mail:"
 msgid ""
@@ -12119,7 +12163,7 @@ msgid ""
 "%1"
 msgstr "Е-пошта:"
 
-#: kutils/kpluginselector.cpp:738
+#: kutils/kpluginselector.cpp:743
 #, fuzzy, kde-format
 #| msgid "Website:"
 msgid ""
@@ -12129,7 +12173,7 @@ msgid ""
 "%1"
 msgstr "Веб-страница:"
 
-#: kutils/kpluginselector.cpp:742
+#: kutils/kpluginselector.cpp:747
 #, fuzzy, kde-format
 #| msgid ""
 #| "Version:\n"
@@ -12143,7 +12187,7 @@ msgstr ""
 "Верзија:\n"
 "\t%1"
 
-#: kutils/kpluginselector.cpp:746
+#: kutils/kpluginselector.cpp:751
 #, fuzzy, kde-format
 #| msgid ""
 #| "License:\n"
@@ -12157,7 +12201,7 @@ msgstr ""
 "Лиценца:\n"
 "\t%1"
 
-#: kutils/kpluginselector.cpp:749
+#: kutils/kpluginselector.cpp:754
 #, fuzzy, kde-format
 #| msgid "About %1 plugin"
 msgid "About Plugin \"%1\""
@@ -13174,6 +13218,9 @@ msgstr ""
 #| msgid "No such interpreter \"%1\""
 msgid "No such function \"%1\""
 msgstr "Нема таков интерпретер „%1“"
+
+#~ msgid "Continue script execution"
+#~ msgstr "Продолжи извршување на скриптата"
 
 #, fuzzy
 #~| msgid "None"
