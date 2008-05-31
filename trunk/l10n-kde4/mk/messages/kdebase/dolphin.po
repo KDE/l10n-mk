@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-21 09:00+0200\n"
+"POT-Creation-Date: 2008-05-31 05:42+0200\n"
 "PO-Revision-Date: 2007-11-30 23:34+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -19,122 +19,441 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: additionalinfodialog.cpp:38
-msgctxt "@title:window"
-msgid "Additional Information"
-msgstr "Дополнителна информација"
+#: filterbar.cpp:43
+msgctxt "@label:textbox"
+msgid "Filter:"
+msgstr "Филтер:"
 
-#: additionalinfodialog.cpp:44
-msgctxt "@option:check Additional Information"
-msgid "Size"
-msgstr "Големина"
+#: filterbar.cpp:55
+msgctxt "@info:tooltip"
+msgid "Hide Filter Bar"
+msgstr "Скриј лента со филтри"
 
-#: additionalinfodialog.cpp:45
-msgctxt "@option:check Additional Information"
-msgid "Date"
-msgstr "Датум"
-
-#: additionalinfodialog.cpp:46
-msgctxt "@option:check Additional Information"
-msgid "Permissions"
-msgstr "Дозволи"
-
-#: additionalinfodialog.cpp:47
-msgctxt "@option:check Additional Information"
-msgid "Owner"
-msgstr "Сопственик"
-
-#: additionalinfodialog.cpp:48
-msgctxt "@option:check Additional Information"
-msgid "Group"
-msgstr "Група"
-
-#: additionalinfodialog.cpp:49
-msgctxt "@option:check Additional Information"
-msgid "Type"
-msgstr "Тип"
-
-#: columnviewsettingspage.cpp:54
-msgctxt "@title:group"
-msgid "Column Width"
-msgstr "Ширина на колона"
-
-#: columnviewsettingspage.cpp:57
-msgctxt "@item:inrange Column Width"
-msgid "Small"
-msgstr "Мала"
-
-#: columnviewsettingspage.cpp:63
-msgctxt "@item:inrange Column Width"
-msgid "Large"
-msgstr "Голема"
-
-#: columnviewsettingspage.cpp:72 detailsviewsettingspage.cpp:54
-#: iconsizedialog.cpp:61
-msgctxt "@title:group"
-msgid "Icon Size"
-msgstr "Големина на икони"
-
-#: columnviewsettingspage.cpp:75 detailsviewsettingspage.cpp:57
-msgctxt "@option:radio Icon Size"
-msgid "Small"
-msgstr "Мали"
-
-#: columnviewsettingspage.cpp:76 detailsviewsettingspage.cpp:58
-msgctxt "@option:radio Icon Size"
-msgid "Medium"
-msgstr "Средни"
-
-#: columnviewsettingspage.cpp:77 detailsviewsettingspage.cpp:59
-msgctxt "@option:radio Icon Size"
-msgid "Large"
-msgstr "Големи"
-
-#: columnviewsettingspage.cpp:93 detailsviewsettingspage.cpp:75
-#: iconsviewsettingspage.cpp:67
-msgctxt "@title:group"
-msgid "Text"
-msgstr "Текст"
-
-#: columnviewsettingspage.cpp:96 detailsviewsettingspage.cpp:78
-#: iconsviewsettingspage.cpp:70
-msgctxt "@label:listbox"
-msgid "Font:"
-msgstr "Фонт:"
-
-#: commenteditwidget.cpp:129
-msgctxt "@action:button"
-msgid "Save"
+#: dolphinfontrequester.cpp:40
+msgctxt "@item:inlistbox Font"
+msgid "System Font"
 msgstr ""
 
-#: commenteditwidget.cpp:130
+#: dolphinfontrequester.cpp:41
+msgctxt "@item:inlistbox Font"
+msgid "Custom Font"
+msgstr ""
+
+#: dolphinfontrequester.cpp:45
+msgctxt "@action:button Choose font"
+msgid "Choose..."
+msgstr ""
+
+#: dolphindetailsview.cpp:499
+msgctxt "@title:menu"
+msgid "Columns"
+msgstr "Колони"
+
+#: dolphinview.cpp:911
 #, fuzzy
 #| msgctxt "@action:inmenu"
-#| msgid "Cancel"
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "Откажи"
+#| msgid "Paste One File"
+#| msgid_plural "Paste %1 Files"
+msgctxt "@action:inmenu"
+msgid "Paste One Folder"
+msgstr "Вметни %1 датотека"
 
-#: commentwidget.cpp:55
+#: dolphinview.cpp:912
 #, fuzzy
-#| msgctxt "@info:tooltip"
-#| msgid "Click to add comment..."
-msgctxt "@label"
-msgid "Add comment..."
-msgstr "Кликнете за да додадете коментар..."
+#| msgctxt "@action:inmenu"
+#| msgid "Paste One File"
+#| msgid_plural "Paste %1 Files"
+msgctxt "@action:inmenu"
+msgid "Paste One File"
+msgstr "Вметни %1 датотека"
 
-#: commentwidget.cpp:58
-#, fuzzy
-#| msgctxt "@info:tooltip"
-#| msgid "Click to add comment..."
-msgctxt "@label"
-msgid "Change comment..."
-msgstr "Кликнете за да додадете коментар..."
+#: dolphinview.cpp:915
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu"
+#| msgid "Paste One File"
+#| msgid_plural "Paste %1 Files"
+msgctxt "@action:inmenu"
+msgid "Paste One Item"
+msgid_plural "Paste %1 Items"
+msgstr[0] "Вметни %1 датотека"
+msgstr[1] "Вметни %1 датотеки"
+msgstr[2] "Вметни %1 датотеки"
 
-#: detailsviewsettingspage.cpp:87
-msgctxt "@option:check"
-msgid "Expandable Folders"
+#: dolphinview.cpp:919 treeviewcontextmenu.cpp:64
+msgctxt "@action:inmenu"
+msgid "Paste"
+msgstr "Вметни"
+
+#: dolphinview.cpp:961
+msgctxt "@info:status"
+msgid "Delete operation completed."
+msgstr "Бришењето е завршено."
+
+#: dolphinview.cpp:987
+msgctxt "@info:status"
+msgid "The location is empty."
+msgstr "Локацијата е празна."
+
+#: dolphinview.cpp:989
+#, kde-format
+msgctxt "@info:status"
+msgid "The location '%1' is invalid."
+msgstr "Локацијата „%1“ не е валидна."
+
+#: generalsettingspage.cpp:54
+msgctxt "@title:group"
+msgid "Ask For Confirmation When"
+msgstr "Прашај за потврда при"
+
+#: generalsettingspage.cpp:56
+msgctxt "@option:check Ask for Confirmation When"
+msgid "Moving files or folders to trash"
+msgstr "преместување датотеки или папки во корпата"
+
+#: generalsettingspage.cpp:59
+msgctxt "@option:check Ask for Confirmation When"
+msgid "Deleting files or folders"
+msgstr "бришење датотеки или папки во корпата"
+
+#: generalsettingspage.cpp:66
+msgctxt "@title:group"
+msgid "Context Menu"
 msgstr ""
+
+#: generalsettingspage.cpp:69
+#, fuzzy
+#| msgctxt "@option:check"
+#| msgid "Show 'Delete' command in context menu"
+msgctxt "@option:check"
+msgid "Show 'Delete' command"
+msgstr "Прикажи ја наредбата „Избриши“ во контекстното мени"
+
+#: generalsettingspage.cpp:72
+msgctxt "@option:check"
+msgid "Show 'Copy To' and 'Move To' commands"
+msgstr ""
+
+#: generalsettingspage.cpp:79
+msgctxt "@option:check"
+msgid "Browse through archives"
+msgstr ""
+
+#: generalsettingspage.cpp:82
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Rename Item"
+msgctxt "@option:check"
+msgid "Rename inline"
+msgstr "Преименување елемент"
+
+#: statusbarspaceinfo.cpp:77
+#, fuzzy, kde-format
+#| msgctxt "@info:status"
+#| msgid "%1 free"
+msgctxt "@info:status Free disk space"
+msgid "%1 free"
+msgstr "%1 се слободни"
+
+#: statusbarspaceinfo.cpp:90 statusbarspaceinfo.cpp:100
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "Font size"
+msgctxt "@info:status"
+msgid "Unknown size"
+msgstr "Големина на фонт"
+
+#: statusbarspaceinfo.cpp:135
+msgctxt "@info:status"
+msgid "Getting size..."
+msgstr "Преземам големина..."
+
+#: treeviewcontextmenu.cpp:58
+msgctxt "@action:inmenu"
+msgid "Cut"
+msgstr "Исечи"
+
+#: treeviewcontextmenu.cpp:61
+msgctxt "@action:inmenu"
+msgid "Copy"
+msgstr "Копирај"
+
+#: treeviewcontextmenu.cpp:76
+msgctxt "@action:inmenu"
+msgid "Rename..."
+msgstr "Преименувај..."
+
+#: treeviewcontextmenu.cpp:86
+msgctxt "@action:inmenu"
+msgid "Move To Trash"
+msgstr "Премести во корпа"
+
+#: treeviewcontextmenu.cpp:94
+msgctxt "@action:inmenu"
+msgid "Delete"
+msgstr "Избриши"
+
+#: treeviewcontextmenu.cpp:102 dolphincontextmenu.cpp:279
+msgctxt "@action:inmenu"
+msgid "Properties"
+msgstr "Својства"
+
+#: treeviewcontextmenu.cpp:109
+#, fuzzy
+#| msgctxt "@action:inmenu View"
+#| msgid "Show Hidden Files"
+msgctxt "@action:inmenu"
+msgid "Show Hidden Files"
+msgstr "Прикажи скриени датотеки"
+
+#: dolphinviewcontainer.cpp:209
+msgctxt "@info:progress"
+msgid "Loading folder..."
+msgstr "Вчитувам папка..."
+
+#: dolphinviewcontainer.cpp:302
+#, kde-format
+msgctxt "@info:status"
+msgid "1 Folder selected"
+msgid_plural "%1 Folders selected"
+msgstr[0] "Избрана е %1 папка."
+msgstr[1] "Избрани се %1 папки."
+msgstr[2] "Избрани се %1 папки."
+
+#: dolphinviewcontainer.cpp:310
+#, kde-format
+msgctxt "@info:status"
+msgid "1 File selected (%2)"
+msgid_plural "%1 Files selected (%2)"
+msgstr[0] "Избрана е %1 датотека (%2)"
+msgstr[1] "Избрани се %1 датотеки (%2)"
+msgstr[2] "Избрани се %1 датотеки (%2)"
+
+#: infosidebarpage.cpp:214
+#, kde-format
+msgctxt "@info"
+msgid "%1 item selected"
+msgid_plural "%1 items selected"
+msgstr[0] "Избран е %1 елемент"
+msgstr[1] "Избрани се %1 елементи"
+msgstr[2] "Избрани се %1 елементи"
+
+#: infosidebarpage.cpp:309 infosidebarpage.cpp:312
+msgctxt "@label"
+msgid "Type:"
+msgstr "Тип:"
+
+#: infosidebarpage.cpp:309
+msgctxt "@label"
+msgid "Folder"
+msgstr "Папка"
+
+#: infosidebarpage.cpp:310 infosidebarpage.cpp:315
+msgctxt "@label"
+msgid "Modified:"
+msgstr "Променето:"
+
+#: infosidebarpage.cpp:314
+msgctxt "@label"
+msgid "Size:"
+msgstr "Големина:"
+
+#: infosidebarpage.cpp:363
+msgctxt "@label"
+msgid "Total size:"
+msgstr "Вкупна големина:"
+
+#: viewpropsprogressinfo.cpp:49
+msgctxt "@title:window"
+msgid "Applying View Properties"
+msgstr "Применување својства за преглед"
+
+#: viewpropsprogressinfo.cpp:62 viewpropsprogressinfo.cpp:109
+#, kde-format
+msgctxt "@info:progress"
+msgid "Counting folders: %1"
+msgstr "Пребројувам папки: %1"
+
+#: viewpropsprogressinfo.cpp:125
+#, kde-format
+msgctxt "@info:progress"
+msgid "Folders: %1"
+msgstr "Папки: %1"
+
+#: generalviewsettingspage.cpp:61
+msgctxt "@title:group"
+msgid "View Properties"
+msgstr "Својства на приказот"
+
+#: generalviewsettingspage.cpp:63
+msgctxt "@option:radio"
+msgid "Remember view properties for each folder"
+msgstr "Запомни ги својствата на приказот за секоја папка"
+
+#: generalviewsettingspage.cpp:66
+msgctxt "@option:radio"
+msgid "Use common view properties for all folders"
+msgstr "Користи општи својства на приказот за сите папки"
+
+#: generalviewsettingspage.cpp:74
+msgctxt "@title:group"
+msgid "File Previews"
+msgstr "Прегледи на датотеки"
+
+#: generalviewsettingspage.cpp:79
+msgctxt "@label:slider"
+msgid "Maximum file size:"
+msgstr "Мак. големина на датотеки:"
+
+#: generalviewsettingspage.cpp:94
+#, fuzzy
+#| msgid "Use thumbnails embedded in files"
+msgctxt "@option:check"
+msgid "Use thumbnails embedded in files"
+msgstr "Користи ги сликичките вградени во датотеките"
+
+#: generalviewsettingspage.cpp:101
+msgctxt "@option:check"
+msgid "Show selection toggle"
+msgstr ""
+
+#: generalviewsettingspage.cpp:104
+msgctxt "@option:check"
+msgid "Show tooltips"
+msgstr ""
+
+#: nepomukmassupdatejob.cpp:74
+msgctxt "@info:progress"
+msgid "Changing annotations"
+msgstr ""
+
+#: renamedialog.cpp:41
+msgctxt "@title:window"
+msgid "Rename Item"
+msgstr "Преименување елемент"
+
+#: renamedialog.cpp:42
+msgctxt "@title:window"
+msgid "Rename Items"
+msgstr "Преименување елементи"
+
+#: renamedialog.cpp:46
+msgctxt "@action:button"
+msgid "Rename"
+msgstr "Преименувај"
+
+#: renamedialog.cpp:57
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Rename the item <filename>%1</filename> to:"
+msgstr "Преименувајте го елементот <filename>%1</filename> во:"
+
+#: renamedialog.cpp:60
+msgctxt "@info:status"
+msgid "New name #"
+msgstr "Ново име #"
+
+#: renamedialog.cpp:62
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Rename the %1 selected item to:"
+msgid_plural "Rename the %1 selected items to:"
+msgstr[0] "Преименувај го овој %1 избран елемент во:"
+msgstr[1] "Преименувај ги овие %1 избрани елементи во:"
+msgstr[2] "Преименувај ги овие %1 избрани елементи во:"
+
+#: renamedialog.cpp:104
+msgctxt "@info"
+msgid "(# will be replaced by ascending numbers)"
+msgstr "(# ќе биде заменето со растечки бројки)"
+
+#: renamedialog.cpp:118
+msgctxt "@info:status"
+msgid ""
+"The new name is empty. A name with at least one character must be entered."
+msgstr "Новото име е празно. Мора да биде внесено име со најмалку еден знак."
+
+#: renamedialog.cpp:121
+#, fuzzy
+#| msgctxt "@info:status"
+#| msgid "The name must contain exactly one # character."
+msgctxt "@info:status"
+msgid "The name must contain at least one # character."
+msgstr "Името мора да содржи точно еден знак „#“."
+
+#: main.cpp:34
+msgctxt "@title"
+msgid "Dolphin"
+msgstr ""
+
+#: main.cpp:36
+msgctxt "@title"
+msgid "File Manager"
+msgstr "Менаџер на датотеки"
+
+#: main.cpp:38
+msgctxt "@info:credit"
+msgid "(C) 2006, 2007 Peter Penz"
+msgstr "(C) 2006, 2007 Peter Penz"
+
+#: main.cpp:40
+msgctxt "@info:credit"
+msgid "Peter Penz"
+msgstr "Peter Penz"
+
+#: main.cpp:41
+msgctxt "@info:credit"
+msgid "Maintainer and developer"
+msgstr "Одржувач и развивач"
+
+#: main.cpp:43
+msgctxt "@info:credit"
+msgid "David Faure"
+msgstr "David Faure"
+
+#: main.cpp:44 main.cpp:47 main.cpp:50 main.cpp:53 main.cpp:56 main.cpp:59
+msgctxt "@info:credit"
+msgid "Developer"
+msgstr "Развивач"
+
+#: main.cpp:46
+msgctxt "@info:credit"
+msgid "Aaron J. Seigo"
+msgstr "Aaron J. Seigo"
+
+#: main.cpp:49
+msgctxt "@info:credit"
+msgid "Rafael Fernández López"
+msgstr "Rafael Fernández López"
+
+#: main.cpp:52
+msgctxt "@info:credit"
+msgid "Kevin Ottens"
+msgstr "Kevin Ottens"
+
+#: main.cpp:55
+msgctxt "@info:credit"
+msgid "Holger Freyther"
+msgstr "Holger Freyther"
+
+#: main.cpp:58
+msgctxt "@info:credit"
+msgid "Max Blazejak"
+msgstr "Max Blazejak"
+
+#: main.cpp:61
+msgctxt "@info:credit"
+msgid "Michael Austin"
+msgstr "Michael Austin"
+
+#: main.cpp:62
+msgctxt "@info:credit"
+msgid "Documentation"
+msgstr "Документација"
+
+#: main.cpp:69
+msgctxt "@info:shell"
+msgid "Document to open"
+msgstr "Документ за отвoрање"
 
 #: dolphincontextmenu.cpp:112
 msgctxt "@action:inmenu"
@@ -188,11 +507,6 @@ msgctxt "@title:menu"
 msgid "View Mode"
 msgstr "Режим на преглед"
 
-#: dolphincontextmenu.cpp:279 treeviewcontextmenu.cpp:102
-msgctxt "@action:inmenu"
-msgid "Properties"
-msgstr "Својства"
-
 #: dolphincontextmenu.cpp:362
 msgctxt "@title:menu"
 msgid "Open With"
@@ -216,211 +530,6 @@ msgstr "Отвори со..."
 msgctxt "@action:inmenu"
 msgid "Paste Into Folder"
 msgstr "Вметни %1 датотека"
-
-#: dolphindetailsview.cpp:491
-msgctxt "@title:menu"
-msgid "Columns"
-msgstr "Колони"
-
-#: dolphindropcontroller.cpp:79
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "&Move Here\t<shortcut>%1</shortcut>"
-msgstr "Пре&мести тука\t<shortcut>%1</shortcut>"
-
-#: dolphindropcontroller.cpp:85
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "&Copy Here\t<shortcut>%1</shortcut>"
-msgstr "&Копирај тука\t<shortcut>%1</shortcut>"
-
-#: dolphindropcontroller.cpp:91
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "&Link Here\t<shortcut>%1</shortcut>"
-msgstr "&Врска тука\t<shortcut>%1</shortcut>"
-
-#: dolphindropcontroller.cpp:94
-msgctxt "@action:inmenu"
-msgid "Cancel"
-msgstr "Откажи"
-
-#: dolphinfontrequester.cpp:40
-msgctxt "@item:inlistbox Font"
-msgid "System Font"
-msgstr ""
-
-#: dolphinfontrequester.cpp:41
-msgctxt "@item:inlistbox Font"
-msgid "Custom Font"
-msgstr ""
-
-#: dolphinfontrequester.cpp:45
-msgctxt "@action:button Choose font"
-msgid "Choose..."
-msgstr ""
-
-#: dolphinmainwindow.cpp:393
-msgctxt "@info:status"
-msgid "Copy operation completed."
-msgstr "Копирањето е завршено."
-
-#: dolphinmainwindow.cpp:397
-msgctxt "@info:status"
-msgid "Move operation completed."
-msgstr "Преместувањето е завршено."
-
-#: dolphinmainwindow.cpp:401
-msgctxt "@info:status"
-msgid "Link operation completed."
-msgstr "Правењето врска е завршено."
-
-#: dolphinmainwindow.cpp:405
-msgctxt "@info:status"
-msgid "Move to trash operation completed."
-msgstr "Преместувањето во корпата е завршено."
-
-#: dolphinmainwindow.cpp:409
-msgctxt "@info:status"
-msgid "Renaming operation completed."
-msgstr "Преименувањето е завршено."
-
-#: dolphinmainwindow.cpp:414
-msgctxt "@info:status"
-msgid "Created folder."
-msgstr "Папката е креирана."
-
-#: dolphinmainwindow.cpp:737
-msgctxt "@action:inmenu"
-msgid "New Tab"
-msgstr ""
-
-#: dolphinmainwindow.cpp:740
-msgctxt "@action:inmenu"
-msgid "Close Other Tabs"
-msgstr ""
-
-#: dolphinmainwindow.cpp:742
-#, fuzzy
-#| msgctxt "@action:intoolbar Close right view"
-#| msgid "Close"
-msgctxt "@action:inmenu"
-msgid "Close Tab"
-msgstr "Затвори"
-
-#: dolphinmainwindow.cpp:898
-#, fuzzy
-#| msgctxt "@title:menu"
-#| msgid "Create New"
-msgctxt "@title:menu Create new folder, file, link, etc."
-msgid "Create New"
-msgstr "Креирај ново"
-
-#: dolphinmainwindow.cpp:905
-msgctxt "@action:inmenu File"
-msgid "New &Window"
-msgstr "Нов &прозорец"
-
-#: dolphinmainwindow.cpp:911
-msgctxt "@action:inmenu File"
-msgid "New Tab"
-msgstr ""
-
-#: dolphinmainwindow.cpp:915
-#, fuzzy
-#| msgctxt "@action:intoolbar Close right view"
-#| msgid "Close"
-msgctxt "@action:inmenu File"
-msgid "Close Tab"
-msgstr "Затвори"
-
-#: dolphinmainwindow.cpp:921
-msgctxt "@action:inmenu File"
-msgid "Properties"
-msgstr "Својства"
-
-#: dolphinmainwindow.cpp:942
-msgctxt "@action:inmenu Edit"
-msgid "Select All"
-msgstr "Избери ги сите"
-
-#: dolphinmainwindow.cpp:947
-msgctxt "@action:inmenu Edit"
-msgid "Invert Selection"
-msgstr "Инверзија на изборот"
-
-#: dolphinmainwindow.cpp:960
-msgctxt "@action:inmenu View"
-msgid "Reload"
-msgstr "Превчитај"
-
-#: dolphinmainwindow.cpp:966
-msgctxt "@action:inmenu View"
-msgid "Stop"
-msgstr "Стоп"
-
-#: dolphinmainwindow.cpp:972
-msgctxt "@action:inmenu Navigation Bar"
-msgid "Show Full Location"
-msgstr "Прикажи целосна локација"
-
-#: dolphinmainwindow.cpp:977
-msgctxt "@action:inmenu Navigation Bar"
-msgid "Edit Location"
-msgstr "Уреди локација"
-
-#: dolphinmainwindow.cpp:993
-msgctxt "@action:inmenu Tools"
-msgid "Find File..."
-msgstr "Пронајди датотеки..."
-
-#: dolphinmainwindow.cpp:999
-msgctxt "@action:inmenu Tools"
-msgid "Show Filter Bar"
-msgstr "Прикажи лента со филтри"
-
-#: dolphinmainwindow.cpp:1004
-msgctxt "@action:inmenu Tools"
-msgid "Compare Files"
-msgstr "Спореди датотеки"
-
-#: dolphinmainwindow.cpp:1017 dolphinmainwindow.cpp:1023
-msgctxt "@title:window"
-msgid "Information"
-msgstr "Информација"
-
-#: dolphinmainwindow.cpp:1036 dolphinmainwindow.cpp:1042
-msgctxt "@title:window"
-msgid "Folders"
-msgstr "Папки"
-
-#: dolphinmainwindow.cpp:1058 dolphinmainwindow.cpp:1066
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Terminal"
-msgctxt "@title:window Shell terminal"
-msgid "Terminal"
-msgstr "Терминал"
-
-#: dolphinmainwindow.cpp:1083 dolphinmainwindow.cpp:1092
-msgctxt "@title:window"
-msgid "Places"
-msgstr "Места"
-
-#: dolphinmainwindow.cpp:1177
-msgctxt "@action:intoolbar Close right view"
-msgid "Close"
-msgstr "Затвори"
-
-#: dolphinmainwindow.cpp:1180
-msgctxt "@action:intoolbar Close left view"
-msgid "Close"
-msgstr "Затвори"
-
-#: dolphinmainwindow.cpp:1184
-msgctxt "@action:intoolbar Split view"
-msgid "Split"
-msgstr "Раздели"
 
 #: dolphinmodel.cpp:51
 msgctxt "@title:group Name"
@@ -536,418 +645,76 @@ msgctxt "@title:group Tags"
 msgid "Not yet tagged"
 msgstr ""
 
-#: dolphinpart.cpp:133
-msgctxt "@action:inmenu Edit"
-msgid "&Edit File Type..."
-msgstr ""
-
-#: dolphinpart.cpp:137
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Properties"
-msgctxt "@action:inmenu Edit"
-msgid "Properties"
-msgstr "Својства"
-
-#: dolphinpart.cpp:150
-msgctxt "@action:inmenu Go"
-msgid "App&lications"
-msgstr ""
-
-#: dolphinpart.cpp:153
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Folders"
-msgctxt "@action:inmenu Go"
-msgid "&Network Folders"
-msgstr "Папки"
-
-#: dolphinpart.cpp:156
-#, fuzzy
-#| msgctxt "@title:group"
-#| msgid "Startup Settings"
-msgctxt "@action:inmenu Go"
-msgid "Sett&ings"
-msgstr "Поставувања при стартување"
-
-#: dolphinpart.cpp:159
-#, fuzzy
-#| msgid "Trash"
-msgctxt "@action:inmenu Go"
-msgid "Trash"
-msgstr "Корпа"
-
-#: dolphinpart.cpp:162
-msgctxt "@action:inmenu Go"
-msgid "Autostart"
-msgstr ""
-
-#: dolphinpart.cpp:215
-msgctxt "@title"
-msgid "Dolphin Part"
-msgstr ""
-
-#: dolphinsettingsdialog.cpp:42
-msgctxt "@title:window"
-msgid "Dolphin Preferences"
-msgstr "Параметри за Dolphin"
-
-#: dolphinsettingsdialog.cpp:49
-#, fuzzy
-#| msgctxt "@title:group"
-#| msgid "Startup Settings"
+#: columnviewsettingspage.cpp:54
 msgctxt "@title:group"
-msgid "Startup"
-msgstr "Поставувања при стартување"
+msgid "Column Width"
+msgstr "Ширина на колона"
 
-#: dolphinsettingsdialog.cpp:55
-msgctxt "@title:group"
-msgid "View Modes"
-msgstr "Режими на преглед"
-
-#: dolphinsettingsdialog.cpp:61
-#, fuzzy
-#| msgctxt "@title:group"
-#| msgid "General"
-msgctxt "@title:group General settings"
-msgid "General"
-msgstr "Општо"
-
-#: dolphinsettingsdialog.cpp:84
-msgctxt "@info"
-msgid "All settings will be reset to default values. Do you want to continue?"
-msgstr ""
-"Сите поставувања ќе бидат вратени на нивните стандардни вредности. Дали "
-"сакате да продолжите?"
-
-#: dolphinview.cpp:916
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Paste One File"
-#| msgid_plural "Paste %1 Files"
-msgctxt "@action:inmenu"
-msgid "Paste One Folder"
-msgstr "Вметни %1 датотека"
-
-#: dolphinview.cpp:917
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Paste One File"
-#| msgid_plural "Paste %1 Files"
-msgctxt "@action:inmenu"
-msgid "Paste One File"
-msgstr "Вметни %1 датотека"
-
-#: dolphinview.cpp:920
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Paste One File"
-#| msgid_plural "Paste %1 Files"
-msgctxt "@action:inmenu"
-msgid "Paste One Item"
-msgid_plural "Paste %1 Items"
-msgstr[0] "Вметни %1 датотека"
-msgstr[1] "Вметни %1 датотеки"
-msgstr[2] "Вметни %1 датотеки"
-
-#: dolphinview.cpp:924 treeviewcontextmenu.cpp:64
-msgctxt "@action:inmenu"
-msgid "Paste"
-msgstr "Вметни"
-
-#: dolphinview.cpp:966
-msgctxt "@info:status"
-msgid "Delete operation completed."
-msgstr "Бришењето е завршено."
-
-#: dolphinview.cpp:977
-msgctxt "@info:status"
-msgid "The location is empty."
-msgstr "Локацијата е празна."
-
-#: dolphinview.cpp:979
-#, kde-format
-msgctxt "@info:status"
-msgid "The location '%1' is invalid."
-msgstr "Локацијата „%1“ не е валидна."
-
-#: dolphinviewactionhandler.cpp:72
-#, fuzzy
-#| msgid "Create Folder..."
-msgctxt "@action"
-msgid "Create Folder..."
-msgstr "Креирај папка..."
-
-#: dolphinviewactionhandler.cpp:79
-msgctxt "@action:inmenu File"
-msgid "Rename..."
-msgstr "Преименувај..."
-
-#: dolphinviewactionhandler.cpp:84
-msgctxt "@action:inmenu File"
-msgid "Move to Trash"
-msgstr "Премести во корпата"
-
-#: dolphinviewactionhandler.cpp:92
-msgctxt "@action:inmenu File"
-msgid "Delete"
-msgstr "Избриши"
-
-#: dolphinviewactionhandler.cpp:113
-msgctxt "@action:intoolbar"
-msgid "Preview"
-msgstr "Преглед"
-
-#: dolphinviewactionhandler.cpp:118
-msgctxt "@action:inmenu Sort"
-msgid "Descending"
-msgstr "Опаѓачки"
-
-#: dolphinviewactionhandler.cpp:128
-msgctxt "@action:inmenu View"
-msgid "Show in Groups"
-msgstr "Прикажи во групи"
-
-#: dolphinviewactionhandler.cpp:132
-msgctxt "@action:inmenu View"
-msgid "Show Hidden Files"
-msgstr "Прикажи скриени датотеки"
-
-#: dolphinviewactionhandler.cpp:137
-msgctxt "@action:inmenu View"
-msgid "Adjust View Properties..."
-msgstr "Приспособи својства на приказ..."
-
-#: dolphinviewactionhandler.cpp:147
-msgctxt "@action:inmenu Additional information"
-msgid "Size"
-msgstr "Големина"
-
-#: dolphinviewactionhandler.cpp:152
-msgctxt "@action:inmenu Additional information"
-msgid "Date"
-msgstr "Датум"
-
-#: dolphinviewactionhandler.cpp:157
-msgctxt "@action:inmenu Additional information"
-msgid "Permissions"
-msgstr "Дозволи"
-
-#: dolphinviewactionhandler.cpp:162
-msgctxt "@action:inmenu Additional information"
-msgid "Owner"
-msgstr "Сопственик"
-
-#: dolphinviewactionhandler.cpp:167
-msgctxt "@action:inmenu Additional information"
-msgid "Group"
-msgstr "Група"
-
-#: dolphinviewactionhandler.cpp:172
-msgctxt "@action:inmenu Additional information"
-msgid "Type"
-msgstr "Тип"
-
-#: dolphinviewactionhandler.cpp:187
-msgctxt "@action:inmenu Sort By"
-msgid "Name"
-msgstr "Име"
-
-#: dolphinviewactionhandler.cpp:192
-msgctxt "@action:inmenu Sort By"
-msgid "Size"
-msgstr "Големина"
-
-#: dolphinviewactionhandler.cpp:197
-msgctxt "@action:inmenu Sort By"
-msgid "Date"
-msgstr "Датум"
-
-#: dolphinviewactionhandler.cpp:202
-msgctxt "@action:inmenu Sort By"
-msgid "Permissions"
-msgstr "Дозволи"
-
-#: dolphinviewactionhandler.cpp:207
-msgctxt "@action:inmenu Sort By"
-msgid "Owner"
-msgstr "Сопственик"
-
-#: dolphinviewactionhandler.cpp:212
-msgctxt "@action:inmenu Sort By"
-msgid "Group"
-msgstr "Група"
-
-#: dolphinviewactionhandler.cpp:217
-msgctxt "@action:inmenu Sort By"
-msgid "Type"
-msgstr "Тип"
-
-#: dolphinviewactionhandler.cpp:404
-msgctxt "@action:inmenu View Mode"
-msgid "Icons"
-msgstr "Икони"
-
-#: dolphinviewactionhandler.cpp:414
-msgctxt "@action:inmenu View Mode"
-msgid "Details"
-msgstr "Детали"
-
-#: dolphinviewactionhandler.cpp:424
-msgctxt "@action:inmenu View Mode"
-msgid "Columns"
-msgstr "Колони"
-
-#: dolphinviewcontainer.cpp:215
-msgctxt "@info:progress"
-msgid "Loading folder..."
-msgstr "Вчитувам папка..."
-
-#: dolphinviewcontainer.cpp:309
-#, kde-format
-msgctxt "@info:status"
-msgid "1 Folder selected"
-msgid_plural "%1 Folders selected"
-msgstr[0] "Избрана е %1 папка."
-msgstr[1] "Избрани се %1 папки."
-msgstr[2] "Избрани се %1 папки."
-
-#: dolphinviewcontainer.cpp:317
-#, kde-format
-msgctxt "@info:status"
-msgid "1 File selected (%2)"
-msgid_plural "%1 Files selected (%2)"
-msgstr[0] "Избрана е %1 датотека (%2)"
-msgstr[1] "Избрани се %1 датотеки (%2)"
-msgstr[2] "Избрани се %1 датотеки (%2)"
-
-#: filterbar.cpp:43
-msgctxt "@label:textbox"
-msgid "Filter:"
-msgstr "Филтер:"
-
-#: filterbar.cpp:55
-msgctxt "@info:tooltip"
-msgid "Hide Filter Bar"
-msgstr "Скриј лента со филтри"
-
-#: generalsettingspage.cpp:54
-msgctxt "@title:group"
-msgid "Ask For Confirmation When"
-msgstr "Прашај за потврда при"
-
-#: generalsettingspage.cpp:56
-msgctxt "@option:check Ask for Confirmation When"
-msgid "Moving files or folders to trash"
-msgstr "преместување датотеки или папки во корпата"
-
-#: generalsettingspage.cpp:59
-msgctxt "@option:check Ask for Confirmation When"
-msgid "Deleting files or folders"
-msgstr "бришење датотеки или папки во корпата"
-
-#: generalsettingspage.cpp:66
-msgctxt "@title:group"
-msgid "Context Menu"
-msgstr ""
-
-#: generalsettingspage.cpp:69
-#, fuzzy
-#| msgctxt "@option:check"
-#| msgid "Show 'Delete' command in context menu"
-msgctxt "@option:check"
-msgid "Show 'Delete' command"
-msgstr "Прикажи ја наредбата „Избриши“ во контекстното мени"
-
-#: generalsettingspage.cpp:72
-msgctxt "@option:check"
-msgid "Show 'Copy To' and 'Move To' commands"
-msgstr ""
-
-#: generalsettingspage.cpp:79
-msgctxt "@option:check"
-msgid "Browse through archives"
-msgstr ""
-
-#: generalsettingspage.cpp:82
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Rename Item"
-msgctxt "@option:check"
-msgid "Rename inline"
-msgstr "Преименување елемент"
-
-#: generalviewsettingspage.cpp:61
-msgctxt "@title:group"
-msgid "View Properties"
-msgstr "Својства на приказот"
-
-#: generalviewsettingspage.cpp:63
-msgctxt "@option:radio"
-msgid "Remember view properties for each folder"
-msgstr "Запомни ги својствата на приказот за секоја папка"
-
-#: generalviewsettingspage.cpp:66
-msgctxt "@option:radio"
-msgid "Use common view properties for all folders"
-msgstr "Користи општи својства на приказот за сите папки"
-
-#: generalviewsettingspage.cpp:74
-msgctxt "@title:group"
-msgid "File Previews"
-msgstr "Прегледи на датотеки"
-
-#: generalviewsettingspage.cpp:79
-msgctxt "@label:slider"
-msgid "Maximum file size:"
-msgstr "Мак. големина на датотеки:"
-
-#: generalviewsettingspage.cpp:94
-#, fuzzy
-#| msgid "Use thumbnails embedded in files"
-msgctxt "@option:check"
-msgid "Use thumbnails embedded in files"
-msgstr "Користи ги сликичките вградени во датотеките"
-
-#: generalviewsettingspage.cpp:101
-msgctxt "@option:check"
-msgid "Show selection toggle"
-msgstr ""
-
-#: generalviewsettingspage.cpp:104
-msgctxt "@option:check"
-msgid "Show tooltips"
-msgstr ""
-
-#: iconsizedialog.cpp:53
-msgctxt "@title:window"
-msgid "Change Icon & Preview Size"
-msgstr "Менување големина на икони и прегледи"
-
-#: iconsizedialog.cpp:67
-msgctxt "@item:inrange Icon Size"
-msgid "Small"
-msgstr "Мали"
-
-#: iconsizedialog.cpp:76
-msgctxt "@item:inrange Icon Size"
-msgid "Large"
-msgstr "Големи"
-
-#: iconsizedialog.cpp:91
-msgctxt "@title:group"
-msgid "Preview Size"
-msgstr "Големина на преглед"
-
-#: iconsizedialog.cpp:95
-msgctxt "@item:inrange Preview Size"
+#: columnviewsettingspage.cpp:57
+msgctxt "@item:inrange Column Width"
 msgid "Small"
 msgstr "Мала"
 
-#: iconsizedialog.cpp:104
-msgctxt "@item:inrange Preview Size"
+#: columnviewsettingspage.cpp:63
+msgctxt "@item:inrange Column Width"
 msgid "Large"
 msgstr "Голема"
+
+#: columnviewsettingspage.cpp:72 iconsizedialog.cpp:61
+#: detailsviewsettingspage.cpp:54
+msgctxt "@title:group"
+msgid "Icon Size"
+msgstr "Големина на икони"
+
+#: columnviewsettingspage.cpp:75 detailsviewsettingspage.cpp:57
+msgctxt "@option:radio Icon Size"
+msgid "Small"
+msgstr "Мали"
+
+#: columnviewsettingspage.cpp:76 detailsviewsettingspage.cpp:58
+msgctxt "@option:radio Icon Size"
+msgid "Medium"
+msgstr "Средни"
+
+#: columnviewsettingspage.cpp:77 detailsviewsettingspage.cpp:59
+msgctxt "@option:radio Icon Size"
+msgid "Large"
+msgstr "Големи"
+
+#: columnviewsettingspage.cpp:93 iconsviewsettingspage.cpp:67
+#: detailsviewsettingspage.cpp:75
+msgctxt "@title:group"
+msgid "Text"
+msgstr "Текст"
+
+#: columnviewsettingspage.cpp:96 iconsviewsettingspage.cpp:70
+#: detailsviewsettingspage.cpp:78
+msgctxt "@label:listbox"
+msgid "Font:"
+msgstr "Фонт:"
+
+#: viewsettingspage.cpp:53 kcmdolphin.cpp:57
+#, fuzzy
+#| msgctxt "@title:group"
+#| msgid "General"
+msgctxt "@title:tab General settings"
+msgid "General"
+msgstr "Општо"
+
+#: viewsettingspage.cpp:58 kcmdolphin.cpp:62
+msgctxt "@title:tab"
+msgid "Icons"
+msgstr "Икони"
+
+#: viewsettingspage.cpp:63 kcmdolphin.cpp:67
+msgctxt "@title:tab"
+msgid "Details"
+msgstr "Детали"
+
+#: viewsettingspage.cpp:68 kcmdolphin.cpp:72
+msgctxt "@title:tab"
+msgid "Column"
+msgstr "Колона"
 
 #: iconsviewsettingspage.cpp:61
 msgctxt "@action:button"
@@ -1019,141 +786,183 @@ msgctxt "@item:inlistbox Grid spacing"
 msgid "Large"
 msgstr "Голем"
 
-#: infosidebarpage.cpp:211
-#, kde-format
-msgctxt "@info"
-msgid "%1 item selected"
-msgid_plural "%1 items selected"
-msgstr[0] "Избран е %1 елемент"
-msgstr[1] "Избрани се %1 елементи"
-msgstr[2] "Избрани се %1 елементи"
+#: dolphinsettingsdialog.cpp:42
+msgctxt "@title:window"
+msgid "Dolphin Preferences"
+msgstr "Параметри за Dolphin"
 
-#: infosidebarpage.cpp:306 infosidebarpage.cpp:309
-msgctxt "@label"
-msgid "Type:"
-msgstr "Тип:"
+#: dolphinsettingsdialog.cpp:49
+#, fuzzy
+#| msgctxt "@title:group"
+#| msgid "Startup Settings"
+msgctxt "@title:group"
+msgid "Startup"
+msgstr "Поставувања при стартување"
 
-#: infosidebarpage.cpp:306
-msgctxt "@label"
-msgid "Folder"
-msgstr "Папка"
+#: dolphinsettingsdialog.cpp:55
+msgctxt "@title:group"
+msgid "View Modes"
+msgstr "Режими на преглед"
 
-#: infosidebarpage.cpp:307 infosidebarpage.cpp:312
-msgctxt "@label"
-msgid "Modified:"
-msgstr "Променето:"
-
-#: infosidebarpage.cpp:311
-msgctxt "@label"
-msgid "Size:"
-msgstr "Големина:"
-
-#: infosidebarpage.cpp:358
-msgctxt "@label"
-msgid "Total size:"
-msgstr "Вкупна големина:"
-
-#: kcmdolphin.cpp:57 viewsettingspage.cpp:53
+#: dolphinsettingsdialog.cpp:61
 #, fuzzy
 #| msgctxt "@title:group"
 #| msgid "General"
-msgctxt "@title:tab General settings"
+msgctxt "@title:group General settings"
 msgid "General"
 msgstr "Општо"
 
-#: kcmdolphin.cpp:62 viewsettingspage.cpp:58
-msgctxt "@title:tab"
-msgid "Icons"
-msgstr "Икони"
+#: dolphinsettingsdialog.cpp:84
+msgctxt "@info"
+msgid "All settings will be reset to default values. Do you want to continue?"
+msgstr ""
+"Сите поставувања ќе бидат вратени на нивните стандардни вредности. Дали "
+"сакате да продолжите?"
 
-#: kcmdolphin.cpp:67 viewsettingspage.cpp:63
-msgctxt "@title:tab"
-msgid "Details"
-msgstr "Детали"
+#: commentwidget.cpp:55
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Click to add comment..."
+msgctxt "@label"
+msgid "Add comment..."
+msgstr "Кликнете за да додадете коментар..."
 
-#: kcmdolphin.cpp:72 viewsettingspage.cpp:68
-msgctxt "@title:tab"
-msgid "Column"
-msgstr "Колона"
+#: commentwidget.cpp:58
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Click to add comment..."
+msgctxt "@label"
+msgid "Change comment..."
+msgstr "Кликнете за да додадете коментар..."
 
-#: main.cpp:34
-msgctxt "@title"
-msgid "Dolphin"
+#: startupsettingspage.cpp:57
+msgctxt "@title:group"
+msgid "Home Folder"
+msgstr "Домашна папка"
+
+#: startupsettingspage.cpp:62
+msgctxt "@label:textbox"
+msgid "Location:"
+msgstr "Локација:"
+
+#: startupsettingspage.cpp:73
+msgctxt "@action:button"
+msgid "Use Current Location"
+msgstr "Користи тековна локација"
+
+#: startupsettingspage.cpp:76
+msgctxt "@action:button"
+msgid "Use Default Location"
+msgstr "Користи стандардна локација"
+
+#: startupsettingspage.cpp:85
+msgctxt "@option:check Startup Settings"
+msgid "Split view mode"
 msgstr ""
 
-#: main.cpp:36
+#: startupsettingspage.cpp:86
+msgctxt "@option:check Startup Settings"
+msgid "Editable location bar"
+msgstr ""
+
+#: startupsettingspage.cpp:87
+msgctxt "@option:check Startup Settings"
+msgid "Show filter bar"
+msgstr "Прикажи лента со филтри"
+
+#: startupsettingspage.cpp:119
+msgctxt "@info"
+msgid "The location for the home folder is invalid and will not be applied."
+msgstr ""
+
+#: tagcloud/newtagdialog.cpp:31
+#, fuzzy
+#| msgctxt "@title:menu"
+#| msgid "Create New"
+msgctxt "@title:window"
+msgid "Create new Tag"
+msgstr "Креирај ново"
+
+#: tagcloud/newtagdialog.cpp:56
+#, fuzzy
+#| msgctxt "@title:menu"
+#| msgid "Create New"
+msgctxt "@title:window"
+msgid "Create New Tag"
+msgstr "Креирај ново"
+
+#: tagcloud/newtagdialog.cpp:57
+msgctxt "@title:window subtitle to previous message"
+msgid "with optional icon and description"
+msgstr ""
+
+#: tagcloud/resourcetaggingwidget.cpp:108
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Click to add comment..."
+msgctxt "@label"
+msgid "Change tags..."
+msgstr "Кликнете за да додадете коментар..."
+
+#: tagcloud/tagcloud.cpp:134
+msgctxt "@label"
+msgid "New Tag..."
+msgstr ""
+
+#: tagcloud/tagcloud.cpp:739
+msgctxt "@label Indicator when no tags defined"
+msgid "No Tags"
+msgstr ""
+
+#: dolphinpart.cpp:135
+msgctxt "@action:inmenu Edit"
+msgid "&Edit File Type..."
+msgstr ""
+
+#: dolphinpart.cpp:139
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Properties"
+msgctxt "@action:inmenu Edit"
+msgid "Properties"
+msgstr "Својства"
+
+#: dolphinpart.cpp:152
+msgctxt "@action:inmenu Go"
+msgid "App&lications"
+msgstr ""
+
+#: dolphinpart.cpp:155
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Folders"
+msgctxt "@action:inmenu Go"
+msgid "&Network Folders"
+msgstr "Папки"
+
+#: dolphinpart.cpp:158
+#, fuzzy
+#| msgctxt "@title:group"
+#| msgid "Startup Settings"
+msgctxt "@action:inmenu Go"
+msgid "Sett&ings"
+msgstr "Поставувања при стартување"
+
+#: dolphinpart.cpp:161
+#, fuzzy
+#| msgid "Trash"
+msgctxt "@action:inmenu Go"
+msgid "Trash"
+msgstr "Корпа"
+
+#: dolphinpart.cpp:164
+msgctxt "@action:inmenu Go"
+msgid "Autostart"
+msgstr ""
+
+#: dolphinpart.cpp:217
 msgctxt "@title"
-msgid "File Manager"
-msgstr "Менаџер на датотеки"
-
-#: main.cpp:38
-msgctxt "@info:credit"
-msgid "(C) 2006, 2007 Peter Penz"
-msgstr "(C) 2006, 2007 Peter Penz"
-
-#: main.cpp:40
-msgctxt "@info:credit"
-msgid "Peter Penz"
-msgstr "Peter Penz"
-
-#: main.cpp:41
-msgctxt "@info:credit"
-msgid "Maintainer and developer"
-msgstr "Одржувач и развивач"
-
-#: main.cpp:43
-msgctxt "@info:credit"
-msgid "David Faure"
-msgstr "David Faure"
-
-#: main.cpp:44 main.cpp:47 main.cpp:50 main.cpp:53 main.cpp:56 main.cpp:59
-msgctxt "@info:credit"
-msgid "Developer"
-msgstr "Развивач"
-
-#: main.cpp:46
-msgctxt "@info:credit"
-msgid "Aaron J. Seigo"
-msgstr "Aaron J. Seigo"
-
-#: main.cpp:49
-msgctxt "@info:credit"
-msgid "Rafael Fernández López"
-msgstr "Rafael Fernández López"
-
-#: main.cpp:52
-msgctxt "@info:credit"
-msgid "Kevin Ottens"
-msgstr "Kevin Ottens"
-
-#: main.cpp:55
-msgctxt "@info:credit"
-msgid "Holger Freyther"
-msgstr "Holger Freyther"
-
-#: main.cpp:58
-msgctxt "@info:credit"
-msgid "Max Blazejak"
-msgstr "Max Blazejak"
-
-#: main.cpp:61
-msgctxt "@info:credit"
-msgid "Michael Austin"
-msgstr "Michael Austin"
-
-#: main.cpp:62
-msgctxt "@info:credit"
-msgid "Documentation"
-msgstr "Документација"
-
-#: main.cpp:69
-msgctxt "@info:shell"
-msgid "Document to open"
-msgstr "Документ за отвoрање"
-
-#: nepomukmassupdatejob.cpp:74
-msgctxt "@info:progress"
-msgid "Changing annotations"
+msgid "Dolphin Part"
 msgstr ""
 
 #. i18n: tag label
@@ -1716,59 +1525,172 @@ msgctxt "@label"
 msgid "Detailed Description (optional):"
 msgstr ""
 
-#: renamedialog.cpp:41
-msgctxt "@title:window"
-msgid "Rename Item"
-msgstr "Преименување елемент"
-
-#: renamedialog.cpp:42
-msgctxt "@title:window"
-msgid "Rename Items"
-msgstr "Преименување елементи"
-
-#: renamedialog.cpp:46
-msgctxt "@action:button"
-msgid "Rename"
-msgstr "Преименувај"
-
-#: renamedialog.cpp:57
-#, kde-format
-msgctxt "@label:textbox"
-msgid "Rename the item <filename>%1</filename> to:"
-msgstr "Преименувајте го елементот <filename>%1</filename> во:"
-
-#: renamedialog.cpp:60
+#: dolphinmainwindow.cpp:393
 msgctxt "@info:status"
-msgid "New name #"
-msgstr "Ново име #"
+msgid "Copy operation completed."
+msgstr "Копирањето е завршено."
 
-#: renamedialog.cpp:62
-#, kde-format
-msgctxt "@label:textbox"
-msgid "Rename the %1 selected item to:"
-msgid_plural "Rename the %1 selected items to:"
-msgstr[0] "Преименувај го овој %1 избран елемент во:"
-msgstr[1] "Преименувај ги овие %1 избрани елементи во:"
-msgstr[2] "Преименувај ги овие %1 избрани елементи во:"
-
-#: renamedialog.cpp:104
-msgctxt "@info"
-msgid "(# will be replaced by ascending numbers)"
-msgstr "(# ќе биде заменето со растечки бројки)"
-
-#: renamedialog.cpp:118
+#: dolphinmainwindow.cpp:397
 msgctxt "@info:status"
-msgid ""
-"The new name is empty. A name with at least one character must be entered."
-msgstr "Новото име е празно. Мора да биде внесено име со најмалку еден знак."
+msgid "Move operation completed."
+msgstr "Преместувањето е завршено."
 
-#: renamedialog.cpp:121
+#: dolphinmainwindow.cpp:401
+msgctxt "@info:status"
+msgid "Link operation completed."
+msgstr "Правењето врска е завршено."
+
+#: dolphinmainwindow.cpp:405
+msgctxt "@info:status"
+msgid "Move to trash operation completed."
+msgstr "Преместувањето во корпата е завршено."
+
+#: dolphinmainwindow.cpp:409
+msgctxt "@info:status"
+msgid "Renaming operation completed."
+msgstr "Преименувањето е завршено."
+
+#: dolphinmainwindow.cpp:414
+msgctxt "@info:status"
+msgid "Created folder."
+msgstr "Папката е креирана."
+
+#: dolphinmainwindow.cpp:737
+msgctxt "@action:inmenu"
+msgid "New Tab"
+msgstr ""
+
+#: dolphinmainwindow.cpp:740
+msgctxt "@action:inmenu"
+msgid "Close Other Tabs"
+msgstr ""
+
+#: dolphinmainwindow.cpp:742
 #, fuzzy
-#| msgctxt "@info:status"
-#| msgid "The name must contain exactly one # character."
-msgctxt "@info:status"
-msgid "The name must contain at least one # character."
-msgstr "Името мора да содржи точно еден знак „#“."
+#| msgctxt "@action:intoolbar Close right view"
+#| msgid "Close"
+msgctxt "@action:inmenu"
+msgid "Close Tab"
+msgstr "Затвори"
+
+#: dolphinmainwindow.cpp:898
+#, fuzzy
+#| msgctxt "@title:menu"
+#| msgid "Create New"
+msgctxt "@title:menu Create new folder, file, link, etc."
+msgid "Create New"
+msgstr "Креирај ново"
+
+#: dolphinmainwindow.cpp:905
+msgctxt "@action:inmenu File"
+msgid "New &Window"
+msgstr "Нов &прозорец"
+
+#: dolphinmainwindow.cpp:911
+msgctxt "@action:inmenu File"
+msgid "New Tab"
+msgstr ""
+
+#: dolphinmainwindow.cpp:915
+#, fuzzy
+#| msgctxt "@action:intoolbar Close right view"
+#| msgid "Close"
+msgctxt "@action:inmenu File"
+msgid "Close Tab"
+msgstr "Затвори"
+
+#: dolphinmainwindow.cpp:921
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "Својства"
+
+#: dolphinmainwindow.cpp:942
+msgctxt "@action:inmenu Edit"
+msgid "Select All"
+msgstr "Избери ги сите"
+
+#: dolphinmainwindow.cpp:947
+msgctxt "@action:inmenu Edit"
+msgid "Invert Selection"
+msgstr "Инверзија на изборот"
+
+#: dolphinmainwindow.cpp:960
+msgctxt "@action:inmenu View"
+msgid "Reload"
+msgstr "Превчитај"
+
+#: dolphinmainwindow.cpp:966
+msgctxt "@action:inmenu View"
+msgid "Stop"
+msgstr "Стоп"
+
+#: dolphinmainwindow.cpp:972
+msgctxt "@action:inmenu Navigation Bar"
+msgid "Show Full Location"
+msgstr "Прикажи целосна локација"
+
+#: dolphinmainwindow.cpp:977
+msgctxt "@action:inmenu Navigation Bar"
+msgid "Edit Location"
+msgstr "Уреди локација"
+
+#: dolphinmainwindow.cpp:993
+msgctxt "@action:inmenu Tools"
+msgid "Find File..."
+msgstr "Пронајди датотеки..."
+
+#: dolphinmainwindow.cpp:999
+msgctxt "@action:inmenu Tools"
+msgid "Show Filter Bar"
+msgstr "Прикажи лента со филтри"
+
+#: dolphinmainwindow.cpp:1004
+msgctxt "@action:inmenu Tools"
+msgid "Compare Files"
+msgstr "Спореди датотеки"
+
+#: dolphinmainwindow.cpp:1017 dolphinmainwindow.cpp:1023
+msgctxt "@title:window"
+msgid "Information"
+msgstr "Информација"
+
+#: dolphinmainwindow.cpp:1036 dolphinmainwindow.cpp:1042
+msgctxt "@title:window"
+msgid "Folders"
+msgstr "Папки"
+
+#: dolphinmainwindow.cpp:1058 dolphinmainwindow.cpp:1066
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Terminal"
+msgctxt "@title:window Shell terminal"
+msgid "Terminal"
+msgstr "Терминал"
+
+#: dolphinmainwindow.cpp:1083 dolphinmainwindow.cpp:1092
+msgctxt "@title:window"
+msgid "Places"
+msgstr "Места"
+
+#: dolphinmainwindow.cpp:1177
+msgctxt "@action:intoolbar Close right view"
+msgid "Close"
+msgstr "Затвори"
+
+#: dolphinmainwindow.cpp:1180
+msgctxt "@action:intoolbar Close left view"
+msgid "Close"
+msgstr "Затвори"
+
+#: dolphinmainwindow.cpp:1184
+msgctxt "@action:intoolbar Split view"
+msgid "Split"
+msgstr "Раздели"
+
+#: statusbarmessagelabel.cpp:54
+msgctxt "@action:button"
+msgid "Close"
+msgstr "Затвори"
 
 #: selectiontoggle.cpp:109
 #, fuzzy
@@ -1785,105 +1707,6 @@ msgstr "Избриши"
 msgctxt "@info:tooltip"
 msgid "Select Item"
 msgstr "Избери ги сите"
-
-#: startupsettingspage.cpp:57
-msgctxt "@title:group"
-msgid "Home Folder"
-msgstr "Домашна папка"
-
-#: startupsettingspage.cpp:62
-msgctxt "@label:textbox"
-msgid "Location:"
-msgstr "Локација:"
-
-#: startupsettingspage.cpp:73
-msgctxt "@action:button"
-msgid "Use Current Location"
-msgstr "Користи тековна локација"
-
-#: startupsettingspage.cpp:76
-msgctxt "@action:button"
-msgid "Use Default Location"
-msgstr "Користи стандардна локација"
-
-#: startupsettingspage.cpp:85
-msgctxt "@option:check Startup Settings"
-msgid "Split view mode"
-msgstr ""
-
-#: startupsettingspage.cpp:86
-msgctxt "@option:check Startup Settings"
-msgid "Editable location bar"
-msgstr ""
-
-#: startupsettingspage.cpp:87
-msgctxt "@option:check Startup Settings"
-msgid "Show filter bar"
-msgstr "Прикажи лента со филтри"
-
-#: startupsettingspage.cpp:119
-msgctxt "@info"
-msgid "The location for the home folder is invalid and will not be applied."
-msgstr ""
-
-#: statusbarmessagelabel.cpp:54
-msgctxt "@action:button"
-msgid "Close"
-msgstr "Затвори"
-
-#: statusbarspaceinfo.cpp:77
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "%1 free"
-msgctxt "@info:status Free disk space"
-msgid "%1 free"
-msgstr "%1 се слободни"
-
-#: statusbarspaceinfo.cpp:90 statusbarspaceinfo.cpp:100
-#, fuzzy
-#| msgctxt "@label"
-#| msgid "Font size"
-msgctxt "@info:status"
-msgid "Unknown size"
-msgstr "Големина на фонт"
-
-#: statusbarspaceinfo.cpp:135
-msgctxt "@info:status"
-msgid "Getting size..."
-msgstr "Преземам големина..."
-
-#: treeviewcontextmenu.cpp:58
-msgctxt "@action:inmenu"
-msgid "Cut"
-msgstr "Исечи"
-
-#: treeviewcontextmenu.cpp:61
-msgctxt "@action:inmenu"
-msgid "Copy"
-msgstr "Копирај"
-
-#: treeviewcontextmenu.cpp:76
-msgctxt "@action:inmenu"
-msgid "Rename..."
-msgstr "Преименувај..."
-
-#: treeviewcontextmenu.cpp:86
-msgctxt "@action:inmenu"
-msgid "Move To Trash"
-msgstr "Премести во корпа"
-
-#: treeviewcontextmenu.cpp:94
-msgctxt "@action:inmenu"
-msgid "Delete"
-msgstr "Избриши"
-
-#: treeviewcontextmenu.cpp:109
-#, fuzzy
-#| msgctxt "@action:inmenu View"
-#| msgid "Show Hidden Files"
-msgctxt "@action:inmenu"
-msgid "Show Hidden Files"
-msgstr "Прикажи скриени датотеки"
 
 #: viewpropertiesdialog.cpp:76
 msgctxt "@title:window"
@@ -2036,22 +1859,238 @@ msgstr ""
 "Ќе бидат изменети својствата за преглед на сите папки. Дали сакате да "
 "продолжите?"
 
-#: viewpropsprogressinfo.cpp:49
+#: iconsizedialog.cpp:53
 msgctxt "@title:window"
-msgid "Applying View Properties"
-msgstr "Применување својства за преглед"
+msgid "Change Icon & Preview Size"
+msgstr "Менување големина на икони и прегледи"
 
-#: viewpropsprogressinfo.cpp:62 viewpropsprogressinfo.cpp:109
-#, kde-format
-msgctxt "@info:progress"
-msgid "Counting folders: %1"
-msgstr "Пребројувам папки: %1"
+#: iconsizedialog.cpp:67
+msgctxt "@item:inrange Icon Size"
+msgid "Small"
+msgstr "Мали"
 
-#: viewpropsprogressinfo.cpp:125
+#: iconsizedialog.cpp:76
+msgctxt "@item:inrange Icon Size"
+msgid "Large"
+msgstr "Големи"
+
+#: iconsizedialog.cpp:91
+msgctxt "@title:group"
+msgid "Preview Size"
+msgstr "Големина на преглед"
+
+#: iconsizedialog.cpp:95
+msgctxt "@item:inrange Preview Size"
+msgid "Small"
+msgstr "Мала"
+
+#: iconsizedialog.cpp:104
+msgctxt "@item:inrange Preview Size"
+msgid "Large"
+msgstr "Голема"
+
+#: dolphindropcontroller.cpp:79
 #, kde-format
-msgctxt "@info:progress"
-msgid "Folders: %1"
-msgstr "Папки: %1"
+msgctxt "@action:inmenu"
+msgid "&Move Here\t<shortcut>%1</shortcut>"
+msgstr "Пре&мести тука\t<shortcut>%1</shortcut>"
+
+#: dolphindropcontroller.cpp:85
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "&Copy Here\t<shortcut>%1</shortcut>"
+msgstr "&Копирај тука\t<shortcut>%1</shortcut>"
+
+#: dolphindropcontroller.cpp:91
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "&Link Here\t<shortcut>%1</shortcut>"
+msgstr "&Врска тука\t<shortcut>%1</shortcut>"
+
+#: dolphindropcontroller.cpp:94
+msgctxt "@action:inmenu"
+msgid "Cancel"
+msgstr "Откажи"
+
+#: dolphinviewactionhandler.cpp:72
+#, fuzzy
+#| msgid "Create Folder..."
+msgctxt "@action"
+msgid "Create Folder..."
+msgstr "Креирај папка..."
+
+#: dolphinviewactionhandler.cpp:79
+msgctxt "@action:inmenu File"
+msgid "Rename..."
+msgstr "Преименувај..."
+
+#: dolphinviewactionhandler.cpp:84
+msgctxt "@action:inmenu File"
+msgid "Move to Trash"
+msgstr "Премести во корпата"
+
+#: dolphinviewactionhandler.cpp:92
+msgctxt "@action:inmenu File"
+msgid "Delete"
+msgstr "Избриши"
+
+#: dolphinviewactionhandler.cpp:113
+msgctxt "@action:intoolbar"
+msgid "Preview"
+msgstr "Преглед"
+
+#: dolphinviewactionhandler.cpp:118
+msgctxt "@action:inmenu Sort"
+msgid "Descending"
+msgstr "Опаѓачки"
+
+#: dolphinviewactionhandler.cpp:128
+msgctxt "@action:inmenu View"
+msgid "Show in Groups"
+msgstr "Прикажи во групи"
+
+#: dolphinviewactionhandler.cpp:132
+msgctxt "@action:inmenu View"
+msgid "Show Hidden Files"
+msgstr "Прикажи скриени датотеки"
+
+#: dolphinviewactionhandler.cpp:137
+msgctxt "@action:inmenu View"
+msgid "Adjust View Properties..."
+msgstr "Приспособи својства на приказ..."
+
+#: dolphinviewactionhandler.cpp:147
+msgctxt "@action:inmenu Additional information"
+msgid "Size"
+msgstr "Големина"
+
+#: dolphinviewactionhandler.cpp:152
+msgctxt "@action:inmenu Additional information"
+msgid "Date"
+msgstr "Датум"
+
+#: dolphinviewactionhandler.cpp:157
+msgctxt "@action:inmenu Additional information"
+msgid "Permissions"
+msgstr "Дозволи"
+
+#: dolphinviewactionhandler.cpp:162
+msgctxt "@action:inmenu Additional information"
+msgid "Owner"
+msgstr "Сопственик"
+
+#: dolphinviewactionhandler.cpp:167
+msgctxt "@action:inmenu Additional information"
+msgid "Group"
+msgstr "Група"
+
+#: dolphinviewactionhandler.cpp:172
+msgctxt "@action:inmenu Additional information"
+msgid "Type"
+msgstr "Тип"
+
+#: dolphinviewactionhandler.cpp:187
+msgctxt "@action:inmenu Sort By"
+msgid "Name"
+msgstr "Име"
+
+#: dolphinviewactionhandler.cpp:192
+msgctxt "@action:inmenu Sort By"
+msgid "Size"
+msgstr "Големина"
+
+#: dolphinviewactionhandler.cpp:197
+msgctxt "@action:inmenu Sort By"
+msgid "Date"
+msgstr "Датум"
+
+#: dolphinviewactionhandler.cpp:202
+msgctxt "@action:inmenu Sort By"
+msgid "Permissions"
+msgstr "Дозволи"
+
+#: dolphinviewactionhandler.cpp:207
+msgctxt "@action:inmenu Sort By"
+msgid "Owner"
+msgstr "Сопственик"
+
+#: dolphinviewactionhandler.cpp:212
+msgctxt "@action:inmenu Sort By"
+msgid "Group"
+msgstr "Група"
+
+#: dolphinviewactionhandler.cpp:217
+msgctxt "@action:inmenu Sort By"
+msgid "Type"
+msgstr "Тип"
+
+#: dolphinviewactionhandler.cpp:404
+msgctxt "@action:inmenu View Mode"
+msgid "Icons"
+msgstr "Икони"
+
+#: dolphinviewactionhandler.cpp:414
+msgctxt "@action:inmenu View Mode"
+msgid "Details"
+msgstr "Детали"
+
+#: dolphinviewactionhandler.cpp:424
+msgctxt "@action:inmenu View Mode"
+msgid "Columns"
+msgstr "Колони"
+
+#: commenteditwidget.cpp:129
+msgctxt "@action:button"
+msgid "Save"
+msgstr ""
+
+#: commenteditwidget.cpp:130
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Cancel"
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "Откажи"
+
+#: detailsviewsettingspage.cpp:87
+msgctxt "@option:check"
+msgid "Expandable Folders"
+msgstr ""
+
+#: additionalinfodialog.cpp:38
+msgctxt "@title:window"
+msgid "Additional Information"
+msgstr "Дополнителна информација"
+
+#: additionalinfodialog.cpp:44
+msgctxt "@option:check Additional Information"
+msgid "Size"
+msgstr "Големина"
+
+#: additionalinfodialog.cpp:45
+msgctxt "@option:check Additional Information"
+msgid "Date"
+msgstr "Датум"
+
+#: additionalinfodialog.cpp:46
+msgctxt "@option:check Additional Information"
+msgid "Permissions"
+msgstr "Дозволи"
+
+#: additionalinfodialog.cpp:47
+msgctxt "@option:check Additional Information"
+msgid "Owner"
+msgstr "Сопственик"
+
+#: additionalinfodialog.cpp:48
+msgctxt "@option:check Additional Information"
+msgid "Group"
+msgstr "Група"
+
+#: additionalinfodialog.cpp:49
+msgctxt "@option:check Additional Information"
+msgid "Type"
+msgstr "Тип"
 
 #, fuzzy
 #~| msgctxt "@action:inmenu"
