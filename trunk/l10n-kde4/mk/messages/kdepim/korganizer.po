@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-06-11 10:05+0200\n"
+"POT-Creation-Date: 2008-06-18 10:46+0200\n"
 "PO-Revision-Date: 2007-02-28 14:24+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1609,18 +1609,41 @@ msgstr "Тест на временски зони на КОрганизатор"
 msgid "KOrgPlugins"
 msgstr "KOrgPlugins"
 
-#: views/monthview/monthscene.cpp:186 navigatorbar.cpp:152
-#: printing/calprintdefaultplugins.cpp:963 komonthview.cpp:1064
+#: views/monthview/monthscene.cpp:186 views/oldmonthview/komonthview.cpp:1064
+#: navigatorbar.cpp:152 printing/calprintdefaultplugins.cpp:963
 #, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: views/monthview/monthscene.cpp:304 komonthview.cpp:249
+#: views/monthview/monthscene.cpp:304 views/oldmonthview/komonthview.cpp:249
 #, kde-format
 msgctxt "'Month day' for month view cells"
 msgid "%1 %2"
 msgstr "%2 %1"
+
+#: views/oldmonthview/komonthview.cpp:747
+msgid "Go back one month"
+msgstr ""
+
+#: views/oldmonthview/komonthview.cpp:754
+msgid "Go back one week"
+msgstr ""
+
+#: views/oldmonthview/komonthview.cpp:761
+msgid "Go forward one week"
+msgstr ""
+
+#: views/oldmonthview/komonthview.cpp:768
+msgid "Go forward one month"
+msgstr ""
+
+#: views/oldmonthview/komonthview.cpp:1116 kodaymatrix.cpp:240
+#: kocorehelper.cpp:44
+#, fuzzy
+msgctxt "delimiter for joining holiday names"
+msgid ","
+msgstr " "
 
 #: views/todoview/kotodoview.cpp:116
 msgid "Click to add a new to-do"
@@ -2967,12 +2990,6 @@ msgstr "(празно име)"
 msgid "(EmptyEmail)"
 msgstr "(празна е.-адреса)"
 
-#: kodaymatrix.cpp:240 kocorehelper.cpp:44 komonthview.cpp:1116
-#, fuzzy
-msgctxt "delimiter for joining holiday names"
-msgid ","
-msgstr " "
-
 #: kodaymatrix.cpp:483
 #, fuzzy
 msgid "&Move"
@@ -4061,11 +4078,9 @@ msgstr "Што е след&но"
 msgid "&Day"
 msgstr "&Ден"
 
-#: actionmanager.cpp:365
-#, fuzzy
-#| msgid "Month View"
-msgid "&New Month View"
-msgstr "Месечен преглед"
+#: actionmanager.cpp:365 actionmanager.cpp:380
+msgid "&Month"
+msgstr "&Месец"
 
 #: actionmanager.cpp:370
 msgid "W&ork Week"
@@ -4074,10 +4089,6 @@ msgstr "Раб&отна недела"
 #: actionmanager.cpp:375
 msgid "&Week"
 msgstr "&Недела"
-
-#: actionmanager.cpp:380
-msgid "&Month"
-msgstr "&Месец"
 
 #: actionmanager.cpp:385
 #, fuzzy
@@ -9346,22 +9357,6 @@ msgstr "ставка од дневник"
 msgid "Opens a print dialog for this journal entry"
 msgstr "ставка од дневник"
 
-#: komonthview.cpp:747
-msgid "Go back one month"
-msgstr ""
-
-#: komonthview.cpp:754
-msgid "Go back one week"
-msgstr ""
-
-#: komonthview.cpp:761
-msgid "Go forward one week"
-msgstr ""
-
-#: komonthview.cpp:768
-msgid "Go forward one month"
-msgstr ""
-
 #: koeditorgeneraljournal.cpp:69
 msgid "Sets the title of this journal."
 msgstr ""
@@ -10279,6 +10274,11 @@ msgstr ""
 #: koagenda.cpp:1149
 msgid "Unable to add the future items to the calendar. No change will be done."
 msgstr ""
+
+#, fuzzy
+#~| msgid "Month View"
+#~ msgid "&New Month View"
+#~ msgstr "Месечен преглед"
 
 #, fuzzy
 #~| msgid "1 day"
