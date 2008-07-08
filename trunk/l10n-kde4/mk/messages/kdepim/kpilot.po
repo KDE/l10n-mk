@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpilot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-06-27 14:20+0200\n"
+"POT-Creation-Date: 2008-07-08 14:27+0200\n"
 "PO-Revision-Date: 2007-02-28 14:25+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -50,21 +50,21 @@ msgstr "<b><em>Забелешка:</em></b><br>"
 msgid "Note:\n"
 msgstr "Забелешка:\n"
 
-#: lib/kpilotdevicelinkPrivate.h:309
+#: lib/kpilotdevicelinkPrivate.h:284
 msgid " The port does not exist."
 msgstr " Портата не постои."
 
-#: lib/kpilotdevicelinkPrivate.h:312
+#: lib/kpilotdevicelinkPrivate.h:287
 #, fuzzy
 #| msgid " These is no such device."
 msgid " There is no such device."
 msgstr " Нема таков уред."
 
-#: lib/kpilotdevicelinkPrivate.h:315
+#: lib/kpilotdevicelinkPrivate.h:290
 msgid " You do not have permission to open the Pilot device."
 msgstr " Немате дозволи да го отворите Pilot-уредот."
 
-#: lib/kpilotdevicelinkPrivate.h:319
+#: lib/kpilotdevicelinkPrivate.h:294
 msgid " Check Pilot path and permissions."
 msgstr " Проверете ги патеката и дозволите за Pilot."
 
@@ -176,83 +176,83 @@ msgstr "Прашање"
 msgid "&Do not ask again"
 msgstr "&Не прашувај повторно"
 
-#: lib/kpilotdevicelink.cc:185
+#: lib/kpilotdevicelink.cc:230
 #, kde-format
 msgid "Could not open device: %1 (will retry)"
 msgstr "Не можам да го отворам уредот: %1 (ќе се обидам повторно)"
 
-#: lib/kpilotdevicelink.cc:222
+#: lib/kpilotdevicelink.cc:267
 #, kde-format
 msgid "Trying to open device %1..."
 msgstr "Се обидувам да го отворам уредот %1..."
 
-#: lib/kpilotdevicelink.cc:276
+#: lib/kpilotdevicelink.cc:317
 msgid "Already listening on that device"
 msgstr "Веќе слушам на тој уред"
 
-#: lib/kpilotdevicelink.cc:296
+#: lib/kpilotdevicelink.cc:337
 #, fuzzy, kde-format
 #| msgid "Cannot create socket for communicating with the Pilot"
 msgid "Cannot create socket for communicating with the Pilot (%1)"
 msgstr "Не можам да создадам приклучник за комуникација со Pilot"
 
-#: lib/kpilotdevicelink.cc:323
+#: lib/kpilotdevicelink.cc:364
 #, fuzzy, kde-format
 #| msgid "Cannot open Pilot port \"%1\". "
 msgid "Cannot open Pilot port: [%1]."
 msgstr "Не можам да ја отворам портата „%1“ на Pilot. "
 
-#: lib/kpilotdevicelink.cc:410
+#: lib/kpilotdevicelink.cc:451
 #, kde-format
 msgid "Cannot listen on Pilot socket (%1)"
 msgstr "Не можам да слушам на Pilot-приклучникот (%1)"
 
-#: lib/kpilotdevicelink.cc:430 lib/kpilotdevicelink.cc:445
+#: lib/kpilotdevicelink.cc:471 lib/kpilotdevicelink.cc:486
 #, kde-format
 msgid "Cannot accept Pilot (%1)"
 msgstr "Не можам да прифатам Pilot (%1)"
 
-#: lib/kpilotdevicelink.cc:445
+#: lib/kpilotdevicelink.cc:486
 msgid "already connected"
 msgstr "веќе е поврзан"
 
-#: lib/kpilotdevicelink.cc:459
+#: lib/kpilotdevicelink.cc:500
 msgid "Unable to read system information from Pilot"
 msgstr "Не можам да ги прочитам системските информации од Pilot"
 
-#: lib/kpilotdevicelink.cc:496
+#: lib/kpilotdevicelink.cc:537
 #, fuzzy
 msgid "Checking last PC..."
 msgstr "Го проверувам последното PC..."
 
-#: lib/kpilotdevicelink.cc:505
+#: lib/kpilotdevicelink.cc:546
 msgid ""
 "Could not read user information from the Pilot. Perhaps you have a password "
 "set on the device?"
 msgstr ""
 
-#: lib/kpilotdevicelink.cc:693
+#: lib/kpilotdevicelink.cc:708
 msgid "The Pilot device is not configured yet."
 msgstr "Pilot-уредот не е конфигуриран."
 
-#: lib/kpilotdevicelink.cc:734
+#: lib/kpilotdevicelink.cc:749
 #, kde-format
 msgid "Pilot device %1 is not read-write."
 msgstr "Во Pilot-уредот %1 не може да се чита/запишува."
 
-#: lib/kpilotdevicelink.cc:742
+#: lib/kpilotdevicelink.cc:757
 #, kde-format
 msgid ""
 "Pilot device %1 does not exist. Probably it is a USB device and will appear "
 "during a HotSync."
 msgstr ""
 
-#: lib/kpilotdevicelink.cc:790 lib/kpilotdevicelink.cc:798
+#: lib/kpilotdevicelink.cc:805 lib/kpilotdevicelink.cc:813
 #, kde-format
 msgid "<qt>Cannot install the file &quot;%1&quot;.</qt>"
 msgstr "<qt>Не можам да ја инсталирам датотеката „%1“.</qt>"
 
-#: lib/kpilotdevicelink.cc:869
+#: lib/kpilotdevicelink.cc:884
 msgid "End of HotSync\n"
 msgstr ""
 
@@ -960,11 +960,15 @@ msgstr "Индекс на запис:"
 msgid "Password invalid!"
 msgstr "Има лозинка"
 
-#: conduits/keyringconduit/keyringconduit.cc:115
+#: conduits/keyringconduit/keyringconduit.cc:107
+msgid "Error. Couldn't open wallet!"
+msgstr ""
+
+#: conduits/keyringconduit/keyringconduit.cc:121
 msgid "Password invalid! Update your password in the settings dialog."
 msgstr ""
 
-#: conduits/keyringconduit/keyringconduit.cc:173
+#: conduits/keyringconduit/keyringconduit.cc:179
 msgid "Enter your Keyring password"
 msgstr ""
 
