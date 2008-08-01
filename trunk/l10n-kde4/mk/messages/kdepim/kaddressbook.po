@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-07-31 08:23+0200\n"
+"POT-Creation-Date: 2008-08-01 08:31+0200\n"
 "PO-Revision-Date: 2007-02-28 13:59+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1027,114 +1027,58 @@ msgstr "Уредете ко контактот „%1“"
 msgid "Contact Editor"
 msgstr "Уредувач на контакти"
 
-#: addresseeeditorwidget.cpp:165
-msgid "Edit Name..."
-msgstr "Уреди име..."
-
-#: addresseeeditorwidget.cpp:166
-msgid "Edit the contact's name"
-msgstr "Го уредува името на контактот"
-
-#: addresseeeditorwidget.cpp:184
+#: addresseeeditorwidget.cpp:171
 #, kde-format
 msgctxt "<roleLabel>:"
 msgid "%1:"
 msgstr "%1:"
 
-#: addresseeeditorwidget.cpp:193
+#: addresseeeditorwidget.cpp:176
 #, kde-format
 msgctxt "<organizationLabel>:"
 msgid "%1:"
 msgstr "%1:"
 
-#: addresseeeditorwidget.cpp:202 nameeditdialog.cpp:105
-msgid "Formatted name:"
-msgstr "Форматирано име:"
-
-#: addresseeeditorwidget.cpp:261
+#: addresseeeditorwidget.cpp:208
 #, kde-format
 msgctxt "<urlLabel>:"
 msgid "%1:"
 msgstr "%1:"
 
-#: addresseeeditorwidget.cpp:270
-msgid "Blog feed:"
-msgstr "Блог:"
-
-#: addresseeeditorwidget.cpp:292 kabcore.cpp:1302
-msgid "Select Categories..."
-msgstr "Избери категории..."
-
-#: addresseeeditorwidget.cpp:308
+#: addresseeeditorwidget.cpp:231
 msgid "&General"
 msgstr "&Општо"
 
-#: addresseeeditorwidget.cpp:332
-msgid "Department:"
-msgstr "Оддел:"
-
-#: addresseeeditorwidget.cpp:340
-msgid "Office:"
-msgstr "Канцеларија:"
-
-#: addresseeeditorwidget.cpp:348
-msgid "Profession:"
-msgstr "Професија:"
-
-#: addresseeeditorwidget.cpp:356
-msgid "Manager's name:"
-msgstr "Име на менаџер:"
-
-#: addresseeeditorwidget.cpp:364
-msgid "Assistant's name:"
-msgstr "Име на асистент:"
-
-#: addresseeeditorwidget.cpp:372
+#: addresseeeditorwidget.cpp:256
 #, kde-format
 msgctxt "<titleLabel>:"
 msgid "%1:"
 msgstr "%1:"
 
-#: addresseeeditorwidget.cpp:391
-msgid "Nickname:"
-msgstr "Прекар:"
-
-#: addresseeeditorwidget.cpp:399
+#: addresseeeditorwidget.cpp:267
 #, fuzzy
 #| msgid "Partner's name:"
 msgctxt "Wife/Husband/..."
 msgid "Partner's name:"
 msgstr "Име на партнер:"
 
-#: addresseeeditorwidget.cpp:407
-msgid "Birthdate:"
-msgstr "Роденден:"
-
-#: addresseeeditorwidget.cpp:417
-msgid "Anniversary:"
-msgstr "Годишнина:"
-
-#: addresseeeditorwidget.cpp:432
-msgid "Note:"
-msgstr "Белешка:"
-
-#: addresseeeditorwidget.cpp:445
+#: addresseeeditorwidget.cpp:284
 msgid "&Details"
 msgstr "&Детали"
 
-#: addresseeeditorwidget.cpp:458
+#: addresseeeditorwidget.cpp:297
 msgid "Misc"
 msgstr "Разно"
 
-#: addresseeeditorwidget.cpp:837
+#: addresseeeditorwidget.cpp:676
 msgid "You must specify a valid date"
 msgstr "Мора да наведете валиден датум"
 
-#: addresseeeditorwidget.cpp:857
+#: addresseeeditorwidget.cpp:696
 msgid "You have to enter a valid birthdate."
 msgstr "Мора да внесете валиден роденден."
 
-#: addresseeeditorwidget.cpp:863
+#: addresseeeditorwidget.cpp:702
 msgid "You have to enter a valid anniversary."
 msgstr "Мора да внесете валидна годишнина."
 
@@ -1154,7 +1098,9 @@ msgstr "Тип на преглед"
 msgid "Add Field"
 msgstr "Додадете поле"
 
-#: customfieldswidget.cpp:64
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 93
+#: customfieldswidget.cpp:64 rc.cpp:24
 msgid "Title:"
 msgstr "Наслов:"
 
@@ -1715,7 +1661,7 @@ msgstr "&Нов контакт..."
 #. i18n: file kaddressbook_part.rc line 5
 #. i18n: tag text
 #. i18n: file kaddressbookui.rc line 5
-#: kabcore.cpp:1198 rc.cpp:6 rc.cpp:33
+#: kabcore.cpp:1198 rc.cpp:96 rc.cpp:123
 #, fuzzy
 #| msgid "New..."
 msgid "New"
@@ -1924,6 +1870,12 @@ msgstr ""
 "во другите апликации на KDE, за да не морате вашите лични податоци  да ги "
 "внесувате повеќе пати."
 
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 179
+#: kabcore.cpp:1302 rc.cpp:78
+msgid "Select Categories..."
+msgstr "Избери категории..."
+
 #: kabcore.cpp:1304
 msgid "Set the categories for all selected contacts."
 msgstr "Ги поставува категориите за сите избрани контакти."
@@ -2013,8 +1965,10 @@ msgstr "Наслов"
 msgid "Full Name"
 msgstr "Целосно име"
 
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 156
 #: ldapsearchdialog.cpp:86 ldapsearchdialog.cpp:180 ldapsearchdialog.cpp:304
-#: ldapsearchdialog.cpp:471
+#: ldapsearchdialog.cpp:471 rc.cpp:75
 msgid "Email"
 msgstr "Е-пошта"
 
@@ -2059,7 +2013,7 @@ msgstr "Град"
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 144
 #: ldapsearchdialog.cpp:96 ldapsearchdialog.cpp:186 nameeditdialog.cpp:314
-#: rc.cpp:194
+#: rc.cpp:284
 msgid "Organization"
 msgstr "Организација"
 
@@ -2101,7 +2055,9 @@ msgctxt "In LDAP attribute"
 msgid "in"
 msgstr "во"
 
-#: ldapsearchdialog.cpp:303 ldapsearchdialog.cpp:466
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 85
+#: ldapsearchdialog.cpp:303 ldapsearchdialog.cpp:466 rc.cpp:69
 msgid "Name"
 msgstr "Име"
 
@@ -2226,6 +2182,12 @@ msgstr ""
 "Веќе дефинираните почесни наставки може да се прошират во дијалогот за "
 "конфигурација."
 
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 69
+#: nameeditdialog.cpp:105 rc.cpp:66
+msgid "Formatted name:"
+msgstr "Форматирано име:"
+
 #: nameeditdialog.cpp:117
 msgid "Parse name automatically"
 msgstr "Анализирај го името автоматски"
@@ -2306,11 +2268,166 @@ msgstr "Ова е претпочитаниот телефонски број"
 msgid "Types"
 msgstr "Типови"
 
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 13
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 13
+#: rc.cpp:3 rc.cpp:51
+msgid "Form"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 21
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 109
+#: rc.cpp:6 rc.cpp:27
+#, fuzzy
+#| msgid "Text"
+msgid "TextLabel"
+msgstr "Текст"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 28
+#: rc.cpp:9
+msgid "Department:"
+msgstr "Оддел:"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 41
+#: rc.cpp:12
+msgid "Manager's name:"
+msgstr "Име на менаџер:"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 54
+#: rc.cpp:15
+msgid "Office:"
+msgstr "Канцеларија:"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 67
+#: rc.cpp:18
+msgid "Assistant's name:"
+msgstr "Име на асистент:"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 80
+#: rc.cpp:21
+msgid "Profession:"
+msgstr "Професија:"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 116
+#: rc.cpp:30
+msgid "Nickname:"
+msgstr "Прекар:"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 129
+#: rc.cpp:33
+#, fuzzy
+msgid "Birthday:"
+msgstr "Роденден:"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 140
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 172
+#: rc.cpp:36 rc.cpp:45
+msgid "2008-07-31"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 148
+#: rc.cpp:39
+#, fuzzy
+#| msgid "Partner's name:"
+msgid "Partners name:"
+msgstr "Име на партнер:"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 161
+#: rc.cpp:42
+msgid "Anniversary:"
+msgstr "Годишнина:"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 183
+#: rc.cpp:48
+msgid "Note:"
+msgstr "Белешка:"
+
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 27
+#: rc.cpp:54
+msgid "Edit the contact's name"
+msgstr "Го уредува името на контактот"
+
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 30
+#: rc.cpp:57
+msgid "Edit Name..."
+msgstr "Уреди име..."
+
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 43
+#: rc.cpp:60
+#, fuzzy
+msgid "&Role:"
+msgstr "Отст&рани"
+
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 56
+#: rc.cpp:63
+#, fuzzy
+#| msgid "Organization"
+msgid "&Organization"
+msgstr "Организација"
+
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 117
+#. i18n: tag label
+#. i18n: file common/kaddressbook.kcfg line 18
+#: rc.cpp:72 rc.cpp:306
+msgid "Phone"
+msgstr "Телефон"
+
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 208
+#: rc.cpp:81
+#, fuzzy
+#| msgctxt "Instant messaging"
+#| msgid "Address"
+msgid "Address"
+msgstr "Адреса"
+
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 217
+#: rc.cpp:84
+#, fuzzy
+#| msgid "Web page:"
+msgid "Home&page:"
+msgstr "Веб-страница:"
+
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 230
+#: rc.cpp:87
+#, fuzzy
+#| msgid "Blog feed:"
+msgid "&Blog feed:"
+msgstr "Блог:"
+
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 251
+#: rc.cpp:90
+msgid "INet"
+msgstr ""
+
 #. i18n: tag text
 #. i18n: file kaddressbook_part.rc line 4
 #. i18n: tag text
 #. i18n: file kaddressbookui.rc line 4
-#: rc.cpp:3 rc.cpp:30
+#: rc.cpp:93 rc.cpp:120
 #, fuzzy
 msgid "&File"
 msgstr "Филтер:"
@@ -2319,7 +2436,7 @@ msgstr "Филтер:"
 #. i18n: file kaddressbook_part.rc line 11
 #. i18n: tag text
 #. i18n: file kaddressbookui.rc line 11
-#: rc.cpp:9 rc.cpp:36
+#: rc.cpp:99 rc.cpp:126
 msgid "&Import"
 msgstr "Внес&и"
 
@@ -2327,7 +2444,7 @@ msgstr "Внес&и"
 #. i18n: file kaddressbook_part.rc line 13
 #. i18n: tag text
 #. i18n: file kaddressbookui.rc line 13
-#: rc.cpp:12 rc.cpp:39
+#: rc.cpp:102 rc.cpp:129
 msgid "&Export"
 msgstr "Изн&еси"
 
@@ -2335,7 +2452,7 @@ msgstr "Изн&еси"
 #. i18n: file kaddressbook_part.rc line 24
 #. i18n: tag text
 #. i18n: file kaddressbookui.rc line 24
-#: rc.cpp:15 rc.cpp:42
+#: rc.cpp:105 rc.cpp:132
 #, fuzzy
 msgid "&Edit"
 msgstr "Ур&еди..."
@@ -2344,14 +2461,14 @@ msgstr "Ур&еди..."
 #. i18n: file kaddressbook_part.rc line 43
 #. i18n: tag text
 #. i18n: file kaddressbookui.rc line 43
-#: rc.cpp:18 rc.cpp:45
+#: rc.cpp:108 rc.cpp:135
 #, fuzzy
 msgid "&View"
 msgstr "Додадете преглед"
 
 #. i18n: tag text
 #. i18n: file kaddressbook_part.rc line 54
-#: rc.cpp:21
+#: rc.cpp:111
 msgid "Tools"
 msgstr "Алатки"
 
@@ -2359,7 +2476,7 @@ msgstr "Алатки"
 #. i18n: file kaddressbook_part.rc line 58
 #. i18n: tag text
 #. i18n: file kaddressbookui.rc line 58
-#: rc.cpp:24 rc.cpp:51
+#: rc.cpp:114 rc.cpp:141
 #, fuzzy
 msgid "&Settings"
 msgstr "Поставувања за фонтови"
@@ -2368,59 +2485,59 @@ msgstr "Поставувања за фонтови"
 #. i18n: file kaddressbook_part.rc line 90
 #. i18n: tag text
 #. i18n: file kaddressbookui.rc line 93
-#: rc.cpp:27 rc.cpp:54
+#: rc.cpp:117 rc.cpp:144
 #, fuzzy
 msgid "Main Toolbar"
 msgstr "Алатник за контакти"
 
 #. i18n: tag text
 #. i18n: file kaddressbookui.rc line 54
-#: rc.cpp:48
+#: rc.cpp:138
 #, fuzzy
 msgid "&Tools"
 msgstr "Алатки"
 
-#: rc.cpp:55
+#: rc.cpp:145
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Божидар Проевски"
 
-#: rc.cpp:56
+#: rc.cpp:146
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "bobibobi@freemail.com.mk"
 
 #. i18n: tag string
 #. i18n: file editors/imaddressbase.ui line 24
-#: rc.cpp:59 editors/imeditorwidget.cpp:362
+#: rc.cpp:149 editors/imeditorwidget.cpp:362
 msgctxt "Instant messaging"
 msgid "Edit Address"
 msgstr "Уредување адреса"
 
 #. i18n: tag string
 #. i18n: file editors/imaddressbase.ui line 33
-#: rc.cpp:62
+#: rc.cpp:152
 msgctxt "Instant messaging"
 msgid "&Protocol:"
 msgstr "&Протокол:"
 
 #. i18n: tag string
 #. i18n: file editors/imaddressbase.ui line 49
-#: rc.cpp:65
+#: rc.cpp:155
 msgctxt "Instant messaging"
 msgid "&Address:"
 msgstr "&Адреса:"
 
 #. i18n: tag string
 #. i18n: file editors/imaddressbase.ui line 62
-#: rc.cpp:68
+#: rc.cpp:158
 msgctxt "Instant messaging"
 msgid "&Network:"
 msgstr "&Мрежа:"
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 24
-#: rc.cpp:71
+#: rc.cpp:161
 #, fuzzy
 msgctxt "Instant messaging"
 msgid "IM Addresses"
@@ -2428,14 +2545,14 @@ msgstr "ИМ-адреси"
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 46
-#: rc.cpp:74
+#: rc.cpp:164
 msgctxt "Instant messaging"
 msgid "&Set Standard"
 msgstr "По&стави како стандардна"
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 49
-#: rc.cpp:77
+#: rc.cpp:167
 #, fuzzy
 msgctxt "Instant messaging"
 msgid ""
@@ -2447,7 +2564,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 52
-#: rc.cpp:80
+#: rc.cpp:170
 #, fuzzy
 msgctxt "Instant messaging"
 msgid ""
@@ -2462,42 +2579,42 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 59
-#: rc.cpp:83
+#: rc.cpp:173
 msgctxt "Instant messaging"
 msgid "&Remove"
 msgstr "Отст&рани"
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 66
-#: rc.cpp:86
+#: rc.cpp:176
 msgctxt "Instant messaging"
 msgid "&Edit..."
 msgstr "Ур&еди..."
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 73
-#: rc.cpp:89
+#: rc.cpp:179
 msgctxt "Instant messaging"
 msgid "&Add..."
 msgstr "Дод&ај..."
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 104
-#: rc.cpp:92
+#: rc.cpp:182
 msgctxt "Instant messaging"
 msgid "Protocol"
 msgstr "Протокол"
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 115
-#: rc.cpp:95
+#: rc.cpp:185
 msgctxt "Instant messaging"
 msgid "Address"
 msgstr "Адреса"
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 137
-#: rc.cpp:98
+#: rc.cpp:188
 #, fuzzy
 msgctxt "Instant messaging"
 msgid ""
@@ -2509,31 +2626,31 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 16
-#: rc.cpp:101
+#: rc.cpp:191
 msgid "Appearance Page"
 msgstr "Страница за изглед"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 53
-#: rc.cpp:104 printing/detailledstyle.cpp:87
+#: rc.cpp:194 printing/detailledstyle.cpp:87
 msgid "Detailed Print Style - Appearance"
 msgstr "Детален стил на печатење - Изглед"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 74
-#: rc.cpp:107
+#: rc.cpp:197
 msgid "Font Settings"
 msgstr "Поставувања за фонтови"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 86
-#: rc.cpp:110
+#: rc.cpp:200
 msgid "Use standard KDE fonts"
 msgstr "Користи ги стандардните фонтови на KDE"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 108
-#: rc.cpp:113
+#: rc.cpp:203
 msgid "Details font:"
 msgstr "Фонт за детали:"
 
@@ -2547,74 +2664,74 @@ msgstr "Фонт за детали:"
 #. i18n: file printing/ds_appearance.ui line 226
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 236
-#: rc.cpp:116 rc.cpp:122 rc.cpp:128 rc.cpp:134 rc.cpp:137
+#: rc.cpp:206 rc.cpp:212 rc.cpp:218 rc.cpp:224 rc.cpp:227
 msgid "Size:"
 msgstr "Големина"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 128
-#: rc.cpp:119
+#: rc.cpp:209
 msgid "Body font:"
 msgstr "Фонт за тело:"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 148
-#: rc.cpp:125
+#: rc.cpp:215
 msgid "Fixed font:"
 msgstr "Фиксен фонт:"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 201
-#: rc.cpp:131
+#: rc.cpp:221
 msgid "Contact header font:"
 msgstr "Фонт за заглавие на контакт:"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 249
-#: rc.cpp:140
+#: rc.cpp:230
 msgid "Headlines:"
 msgstr "Наслови:"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 279
-#: rc.cpp:143
+#: rc.cpp:233
 msgid "Contact Headers"
 msgstr "Заглавија на контакт"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 291
-#: rc.cpp:146
+#: rc.cpp:236
 msgid "Use colored contact headers"
 msgstr "Користи заглавија за контакти во боја"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 327
-#: rc.cpp:149
+#: rc.cpp:239
 msgid "Headline background color:"
 msgstr "Боја на подлога за заглавието:"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 337
-#: rc.cpp:152
+#: rc.cpp:242
 msgid "Headline text color:"
 msgstr "Боја на текст за заглавието:"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 16
-#: rc.cpp:155
+#: rc.cpp:245
 #, fuzzy
 msgid "Appearance"
 msgstr "Страница за изглед"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 28
-#: rc.cpp:158
+#: rc.cpp:248
 msgid "Miscellaneous"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 56
-#: rc.cpp:161
+#: rc.cpp:251
 msgid ""
 "If this box is checked, at least one page will be printed for every letter "
 "group, regardless of whether entries exist for this letter group. This is "
@@ -2624,13 +2741,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 59
-#: rc.cpp:164
+#: rc.cpp:254
 msgid "Always print pages for all tabs"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 69
-#: rc.cpp:167
+#: rc.cpp:257
 msgid ""
 "This is the minimum number of empty fields that have to be printed in "
 "addition to real entries; if this number is not reached on the first page, "
@@ -2639,7 +2756,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 76
-#: rc.cpp:170
+#: rc.cpp:260
 msgid ""
 "If you often add contacts to your printout manually before entering them "
 "into the KDE addressbook, you should set this option to a value greater than "
@@ -2650,14 +2767,14 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 79
-#: rc.cpp:173
+#: rc.cpp:263
 #, fuzzy
 msgid "Min. number of empty fields:"
 msgstr "Прикажи празни &полиња"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 86
-#: rc.cpp:176
+#: rc.cpp:266
 msgid ""
 "If this option is turned on, behind the contacts on a page the remaining "
 "space will be filled with empty fields so you can add contacts manually later"
@@ -2665,53 +2782,53 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 89
-#: rc.cpp:179
+#: rc.cpp:269
 msgid "Fill pages with empty address fields"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 102
-#: rc.cpp:182
+#: rc.cpp:272
 msgid "Print Contact's Information"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 114
-#: rc.cpp:185
+#: rc.cpp:275
 #, fuzzy
 msgid "Phone numbers"
 msgstr "Уредете телефонски број"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 124
-#: rc.cpp:188
+#: rc.cpp:278
 #, fuzzy
 msgid "Email addresses"
 msgstr "Е-пошт. адреси:"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 134
-#: rc.cpp:191
+#: rc.cpp:281
 #, fuzzy
 msgid "Street addresses"
 msgstr "Испечати ги адресите"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 151
-#: rc.cpp:197
+#: rc.cpp:287
 #, fuzzy
 msgid "Birthday"
 msgstr "Роденден:"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 185
-#: rc.cpp:200
+#: rc.cpp:290
 msgid "Letter Groups"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 197
-#: rc.cpp:203
+#: rc.cpp:293
 msgid ""
 "Here you can group letters together as they are grouped in your time "
 "planner. Press 'group letter' to combine the selected letter with the letter "
@@ -2721,43 +2838,37 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 216
-#: rc.cpp:206
+#: rc.cpp:296
 msgid "Group Letter"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 223
-#: rc.cpp:209
+#: rc.cpp:299
 msgid "Ungroup Letter"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file common/kaddressbook.kcfg line 10
-#: rc.cpp:212
+#: rc.cpp:302
 msgid "Automatic name parsing for new addressees"
 msgstr "Автоматска анализа на име за нови адреси"
 
 #. i18n: tag label
-#. i18n: file common/kaddressbook.kcfg line 18
-#: rc.cpp:216
-msgid "Phone"
-msgstr "Телефон"
-
-#. i18n: tag label
 #. i18n: file common/kaddressbook.kcfg line 22
-#: rc.cpp:220
+#: rc.cpp:310
 msgid "Fax"
 msgstr "Факс"
 
 #. i18n: tag label
 #. i18n: file common/kaddressbook.kcfg line 27
-#: rc.cpp:224
+#: rc.cpp:314
 msgid "SMS"
 msgstr "СМС"
 
 #. i18n: tag whatsthis
 #. i18n: file common/kaddressbook.kcfg line 28
-#: rc.cpp:227
+#: rc.cpp:317
 msgid "The script used to send a GSM SMS text message to the mobile phone"
 msgstr ""
 "Скриптата што се користи за испраќање на ГСМ СМС-текстуална порака на "
@@ -2765,13 +2876,13 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file common/kaddressbook.kcfg line 34
-#: rc.cpp:230
+#: rc.cpp:320
 msgid "Honor KDE single click"
 msgstr "Почитувај го единечниот клик на KDE"
 
 #. i18n: tag whatsthis
 #. i18n: file common/kaddressbook.kcfg line 59
-#: rc.cpp:234
+#: rc.cpp:324
 msgid ""
 "If true, the contact list will be placed above the extensions on the left "
 "(distribution list editor etc.) instead of in the middle of the main window"
@@ -4269,6 +4380,9 @@ msgstr "Други полиња"
 #: xxport/vcard_xxport.cpp:500
 msgid "Encryption keys"
 msgstr "Клучеви за криптирање"
+
+#~ msgid "Birthdate:"
+#~ msgstr "Роденден:"
 
 #~ msgid "Picture"
 #~ msgstr "Слика"
