@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-03 08:18+0200\n"
+"POT-Creation-Date: 2008-08-04 08:27+0200\n"
 "PO-Revision-Date: 2008-07-09 22:23+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -21,12 +21,12 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: WorkSheet.cc:93 KSysGuardApplet.cc:306
+#: WorkSheet.cc:93
 #, kde-format
 msgid "Cannot open the file %1."
 msgstr "Не можам да ја отворам датотеката %1."
 
-#: WorkSheet.cc:101 KSysGuardApplet.cc:315
+#: WorkSheet.cc:101
 #, kde-format
 msgid "The file %1 does not contain valid XML."
 msgstr "Датотеката %1 не содржи валиден XML."
@@ -45,7 +45,7 @@ msgstr ""
 msgid "The file %1 has an invalid worksheet size."
 msgstr "Датотеката %1 има невалидна големина на работниот лист."
 
-#: WorkSheet.cc:234 KSysGuardApplet.cc:459
+#: WorkSheet.cc:234
 #, kde-format
 msgid "Cannot save file %1"
 msgstr "Не можам да ја снимам датотеката %1"
@@ -54,7 +54,7 @@ msgstr "Не можам да ја снимам датотеката %1"
 msgid "The clipboard does not contain a valid display description."
 msgstr "Таблата за исечоци не содржи валиден опис за приказ."
 
-#: WorkSheet.cc:331 KSysGuardApplet.cc:200
+#: WorkSheet.cc:331
 msgid "Select Display Type"
 msgstr "Изберете тип на приказ"
 
@@ -74,17 +74,16 @@ msgstr "&График со линии"
 msgid "Log to a &file"
 msgstr "&Евидентирај во датотека"
 
-#: WorkSheet.cc:505 KSysGuardApplet.cc:241
+#: WorkSheet.cc:505
 msgid "Do you really want to delete the display?"
 msgstr "Дали навистина сакате да го избришете приказот?"
 
-#: WorkSheet.cc:506 KSysGuardApplet.cc:241
+#: WorkSheet.cc:506
 msgid "Delete Display"
 msgstr "Бришење приказ"
 
 #: WorkSheet.cc:525 WorkSheet.cc:528 WorkSheet.cc:530 WorkSheet.cc:532
-#: WorkSheet.cc:534 WorkSheet.cc:536 WorkSheet.cc:540 KSysGuardApplet.cc:377
-#: KSysGuardApplet.cc:379 KSysGuardApplet.cc:381
+#: WorkSheet.cc:534 WorkSheet.cc:536 WorkSheet.cc:540
 msgid "Dummy"
 msgstr ""
 
@@ -635,51 +634,60 @@ msgstr ""
 msgid "e.g. ssh -l root remote.host.org ksysguardd"
 msgstr "пр. ssh -l root remote.host.org ksysguardd"
 
-#: Workspace.cc:46
+#: Workspace.cc:47
+#, fuzzy
+#| msgid ""
+#| "This is your work space. It holds your worksheets. You need to create a "
+#| "new worksheet (Menu File->New) before you can drag sensors here."
 msgid ""
-"This is your work space. It holds your worksheets. You need to create a new "
-"worksheet (Menu File->New) before you can drag sensors here."
+"This is your work space. It holds your tabs. You need to create a new tab "
+"(Menu File->New) before you can drag sensors here."
 msgstr ""
 "Ова е вашиот работен простор. Тој ги содржи вашите работни листови. Потребно "
 "е да креирате нов работен лист (мени Датотека->Нова) пред да може тука да "
 "ставите сензори."
 
-#: Workspace.cc:106
+#: Workspace.cc:107
 #, kde-format
 msgid "Sheet %1"
 msgstr "Лист %1"
 
-#: Workspace.cc:161
-#, kde-format
+#: Workspace.cc:162
+#, fuzzy, kde-format
+#| msgid ""
+#| "The worksheet '%1' contains unsaved data.\n"
+#| "Do you want to save the worksheet?"
 msgid ""
-"The worksheet '%1' contains unsaved data.\n"
-"Do you want to save the worksheet?"
+"The tab '%1' contains unsaved data.\n"
+"Do you want to save the tab?"
 msgstr ""
 "Работниот лист „%1“ содржи неснимени податоци.\n"
 "Дали сакате да го снимите?"
 
-#: Workspace.cc:176
+#: Workspace.cc:177
 #, fuzzy
 #| msgid "*.sgrd|Sensor Files"
 msgid "*.sgrd|Sensor Files (*.sgrd)"
 msgstr "*.sgrd|Датотеки со сензори"
 
-#: Workspace.cc:176
-#, fuzzy
-#| msgid "Select Worksheet to Import"
-msgid "Select Worksheet to Open"
-msgstr "Изберете работен лист за вчитување"
+#: Workspace.cc:177
+msgid "Select Tab file to Import"
+msgstr ""
 
-#: Workspace.cc:204 Workspace.cc:225
-msgid "You do not have a worksheet that could be saved."
+#: Workspace.cc:205 Workspace.cc:226
+#, fuzzy
+#| msgid "You do not have a worksheet that could be saved."
+msgid "You do not have a tab that could be saved."
 msgstr "Немате работен лист што може да биде снимен."
 
-#: Workspace.cc:232
-msgid "Export Work Sheet"
-msgstr "Изнесување работен лист"
+#: Workspace.cc:233
+msgid "Export Tab"
+msgstr ""
 
-#: Workspace.cc:250
-msgid "There are no worksheets that could be deleted."
+#: Workspace.cc:251
+#, fuzzy
+#| msgid "There are no worksheets that could be deleted."
+msgid "There are no tabs that could be deleted."
 msgstr "Нема работни листови кои можат да бидат избришани."
 
 #: KSGAppletSettings.cc:34
@@ -1341,8 +1349,10 @@ msgid "Network History"
 msgstr "Мрежа"
 
 #: WorkSheetSettings.cc:40
-msgid "Worksheet Properties"
-msgstr "Својства на работниот лист"
+#, fuzzy
+#| msgid "Properties"
+msgid "Tab Properties"
+msgstr "Својства"
 
 #: WorkSheetSettings.cc:62
 msgid "Properties"
@@ -1367,39 +1377,6 @@ msgstr "Внесете го бројот на колони што треба д�
 #: WorkSheetSettings.cc:102
 msgid "Enter the title of the worksheet here."
 msgstr "Внесете го тука насловот на работниот лист."
-
-#: KSysGuardApplet.cc:201
-msgid "&Signal Plotter"
-msgstr "Цртач на &сигнали"
-
-#: KSysGuardApplet.cc:202
-msgid "&Multimeter"
-msgstr "&Мултиметар"
-
-#: KSysGuardApplet.cc:203
-msgid "&Dancing Bars"
-msgstr "Танцувачки лен&ти"
-
-#: KSysGuardApplet.cc:223 KSysGuardApplet.cc:383
-msgid ""
-"The KSysGuard applet does not support displaying of this type of sensor. "
-"Please choose another sensor."
-msgstr ""
-"Аплетот KSysGuard не поддржува прикажување на овој тип на сензор. Ве молам "
-"изберете друг сензор."
-
-#: KSysGuardApplet.cc:322
-#, kde-format
-msgid ""
-"The file %1 does not contain a valid applet definition, which must have a "
-"document type 'KSysGuardApplet'."
-msgstr ""
-"Датотеката %1 не содржи валидна дефиниција за аплет којшто мора да биде "
-"документ од тип „KSysGuardApplet“."
-
-#: KSysGuardApplet.cc:478
-msgid "Drag sensors from the KDE System Guard into this cell."
-msgstr "Довлечете сензори од KDE Заштитникот на системот во оваа ќелија."
 
 #: SensorBrowser.cc:116
 msgid "Sensor Browser"
@@ -1426,123 +1403,125 @@ msgstr ""
 "сензори можат да прикажат вредности од повеќе сензори. Само одвлечете други "
 "сензори на приказот за да додадете нови сензори."
 
-#: ksysguard.cc:74
+#: ksysguard.cc:73
 msgid "KDE System Monitor"
 msgstr "Системски монитор на KDE"
 
-#: ksysguard.cc:151 ksysguard.cc:542
+#: ksysguard.cc:150 ksysguard.cc:541
 msgid "System Monitor"
 msgstr "Системски монитор"
 
+#: ksysguard.cc:151
+msgid "&New Tab..."
+msgstr ""
+
 #: ksysguard.cc:152
-msgid "&New Worksheet..."
-msgstr "&Нов работен лист..."
+msgid "Import Tab Fr&om File..."
+msgstr ""
 
 #: ksysguard.cc:153
-#, fuzzy
-#| msgid "&New Worksheet..."
-msgid "Open Worksheet..."
-msgstr "&Нов работен лист..."
+msgid "Save Tab &As..."
+msgstr ""
 
 #: ksysguard.cc:154
-msgid "&Export Worksheet..."
-msgstr "Изн&еси работен лист..."
+msgid "&Close Tab"
+msgstr ""
 
 #: ksysguard.cc:155
-msgid "&Remove Worksheet"
-msgstr "Отст&рани работен лист"
+#, fuzzy
+#| msgid "Monitor remote machine..."
+msgid "Monitor &Remote Machine..."
+msgstr "Следење оддалечена машина..."
 
 #: ksysguard.cc:156
-msgid "Monitor remote machine..."
-msgstr "Следење оддалечена машина..."
+#, fuzzy
+#| msgid "&New Worksheet..."
+msgid "&Download New Tabs..."
+msgstr "&Нов работен лист..."
 
 #: ksysguard.cc:157
 #, fuzzy
-#| msgid "&New Worksheet..."
-msgid "Download new worksheets..."
-msgstr "&Нов работен лист..."
+#| msgid "&Properties"
+msgid "Tab &Properties"
+msgstr "&Својства"
 
-#: ksysguard.cc:158
-msgid "&Worksheet Properties"
-msgstr "С&војства на работниот лист"
-
-#: ksysguard.cc:450
+#: ksysguard.cc:449
 #, kde-format
 msgid " %1 processes "
 msgstr " %1 процеси "
 
-#: ksysguard.cc:456
+#: ksysguard.cc:455
 #, kde-format
 msgid " CPU: %1% "
 msgstr " Процесор: %1%"
 
-#: ksysguard.cc:470
+#: ksysguard.cc:469
 #, kde-format
 msgid " Memory: %1 / %2 "
 msgstr " Меморија %1 / %2 "
 
-#: ksysguard.cc:497
+#: ksysguard.cc:496
 msgid " No swap space available "
 msgstr " Нема достапен простор за размена "
 
-#: ksysguard.cc:499
+#: ksysguard.cc:498
 #, kde-format
 msgid " Swap: %1 / %2 "
 msgstr " Размена: %1 / %2 "
 
-#: ksysguard.cc:544
+#: ksysguard.cc:543
 msgid "(c) 1996-2008 The KDE System Monitor Developers"
 msgstr "(c) 1996-2008 развивачите на Системскиот монитор на KDE"
 
-#: ksysguard.cc:545
+#: ksysguard.cc:544
 msgid "John Tapsell"
 msgstr "John Tapsell"
 
-#: ksysguard.cc:545
+#: ksysguard.cc:544
 msgid "Current Maintainer"
 msgstr "Тековен одржувач"
 
-#: ksysguard.cc:546
+#: ksysguard.cc:545
 msgid "Chris Schlaeger"
 msgstr "Chris Schlaeger"
 
-#: ksysguard.cc:546
+#: ksysguard.cc:545
 msgid "Previous Maintainer"
 msgstr "Претходен одржувач"
 
-#: ksysguard.cc:547
+#: ksysguard.cc:546
 msgid "Greg Martyn"
 msgstr "Greg Martyn"
 
-#: ksysguard.cc:548
+#: ksysguard.cc:547
 msgid "Tobias Koenig"
 msgstr "Tobias Koenig"
 
-#: ksysguard.cc:549
+#: ksysguard.cc:548
 msgid "Nicolas Leclercq"
 msgstr "Nicolas Leclercq"
 
-#: ksysguard.cc:550
+#: ksysguard.cc:549
 msgid "Alex Sanda"
 msgstr "Alex Sanda"
 
-#: ksysguard.cc:551
+#: ksysguard.cc:550
 msgid "Bernd Johannes Wuebben"
 msgstr "Bernd Johannes Wuebben"
 
-#: ksysguard.cc:552
+#: ksysguard.cc:551
 msgid "Ralf Mueller"
 msgstr "Ralf Mueller"
 
-#: ksysguard.cc:553
+#: ksysguard.cc:552
 msgid "Hamish Rodda"
 msgstr "Hamish Rodda"
 
-#: ksysguard.cc:554
+#: ksysguard.cc:553
 msgid "Torsten Kasch"
 msgstr "Torsten Kasch"
 
-#: ksysguard.cc:554
+#: ksysguard.cc:553
 msgid ""
 "Solaris Support\n"
 "Parts derived (by permission) from the sunos5\n"
@@ -1552,9 +1531,63 @@ msgstr ""
 "Делови се изведени (со дозвола) од модулот sunos5\n"
 "на алатката „top“ на William LeFebvre."
 
-#: ksysguard.cc:563
+#: ksysguard.cc:562
 msgid "Optional worksheet files to load"
 msgstr "Изборни работни датотеки за вчитување"
+
+#, fuzzy
+#~| msgid "Select Worksheet to Import"
+#~ msgid "Select Worksheet to Open"
+#~ msgstr "Изберете работен лист за вчитување"
+
+#~ msgid "Export Work Sheet"
+#~ msgstr "Изнесување работен лист"
+
+#~ msgid "Worksheet Properties"
+#~ msgstr "Својства на работниот лист"
+
+#~ msgid "&Signal Plotter"
+#~ msgstr "Цртач на &сигнали"
+
+#~ msgid "&Multimeter"
+#~ msgstr "&Мултиметар"
+
+#~ msgid "&Dancing Bars"
+#~ msgstr "Танцувачки лен&ти"
+
+#~ msgid ""
+#~ "The KSysGuard applet does not support displaying of this type of sensor. "
+#~ "Please choose another sensor."
+#~ msgstr ""
+#~ "Аплетот KSysGuard не поддржува прикажување на овој тип на сензор. Ве "
+#~ "молам изберете друг сензор."
+
+#~ msgid ""
+#~ "The file %1 does not contain a valid applet definition, which must have a "
+#~ "document type 'KSysGuardApplet'."
+#~ msgstr ""
+#~ "Датотеката %1 не содржи валидна дефиниција за аплет којшто мора да биде "
+#~ "документ од тип „KSysGuardApplet“."
+
+#~ msgid "Drag sensors from the KDE System Guard into this cell."
+#~ msgstr "Довлечете сензори од KDE Заштитникот на системот во оваа ќелија."
+
+#~ msgid "&New Worksheet..."
+#~ msgstr "&Нов работен лист..."
+
+#, fuzzy
+#~| msgid "&New Worksheet..."
+#~ msgid "Open Worksheet..."
+#~ msgstr "&Нов работен лист..."
+
+#~ msgid "&Export Worksheet..."
+#~ msgstr "Изн&еси работен лист..."
+
+#~ msgid "&Remove Worksheet"
+#~ msgstr "Отст&рани работен лист"
+
+#~ msgid "&Worksheet Properties"
+#~ msgstr "С&војства на работниот лист"
 
 #~ msgid "Import Worksheet..."
 #~ msgstr "Внеси работен лист..."
