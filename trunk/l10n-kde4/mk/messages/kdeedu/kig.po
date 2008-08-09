@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kig\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-06 09:02+0200\n"
+"POT-Creation-Date: 2008-08-09 09:55+0200\n"
 "PO-Revision-Date: 2007-02-26 21:38+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -148,6 +148,15 @@ msgstr ""
 "<em>Shift</em> за да добиете листа на предмети под покажувачот на глушецот "
 "од која\n"
 "тогаш ќе можете да одберете предмет.</p>\n"
+
+#: tips.cpp:88
+msgid ""
+"<p>When you construct a locus, you can click on it with the <em>right</em> "
+"mouse\n"
+"botton and select <em>cartesian equation</em> to see its cartesian "
+"equation, \n"
+"whenever it is an algebraic curve of low degree.</p>\n"
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -2658,6 +2667,7 @@ msgid "Expanded Cartesian Equation"
 msgstr "Проширена декартова равенка"
 
 #: objects/circle_imp.cc:151 objects/conic_imp.cc:88 objects/cubic_imp.cc:293
+#: objects/locus_imp.cc:108
 msgid "Cartesian Equation"
 msgstr "Декартова равенка"
 
@@ -3429,42 +3439,46 @@ msgstr "Конструирај полуправа низ овој вектор"
 msgid "Select a vector in the direction of the new half-line..."
 msgstr "Изберете вектор во иста насока со новата полуправа..."
 
-#: objects/locus_imp.cc:357
+#: objects/locus_imp.cc:379
 msgid "locus"
 msgstr "Локус"
 
-#: objects/locus_imp.cc:358
+#: objects/locus_imp.cc:380
 msgid "Select this locus"
 msgstr "Одбери го овој локус"
 
-#: objects/locus_imp.cc:359
+#: objects/locus_imp.cc:381
 #, kde-format
 msgid "Select locus %1"
 msgstr "Одбери локус %1"
 
-#: objects/locus_imp.cc:360
+#: objects/locus_imp.cc:382
 msgid "Remove a Locus"
 msgstr "Отстрани локус"
 
-#: objects/locus_imp.cc:361
+#: objects/locus_imp.cc:383
 msgid "Add a Locus"
 msgstr "Додај локус"
 
-#: objects/locus_imp.cc:362
+#: objects/locus_imp.cc:384
 msgid "Move a Locus"
 msgstr "Помести локус"
 
-#: objects/locus_imp.cc:363
+#: objects/locus_imp.cc:385
 msgid "Attach to this locus"
 msgstr "Прикачи на локус"
 
-#: objects/locus_imp.cc:364
+#: objects/locus_imp.cc:386
 msgid "Show a Locus"
 msgstr "Прикажи локус"
 
-#: objects/locus_imp.cc:365
+#: objects/locus_imp.cc:387
 msgid "Hide a Locus"
 msgstr "Скриј локус"
+
+#: objects/locus_imp.cc:570
+msgid "Possibly trascendental curve"
+msgstr ""
 
 #: objects/object_imp.cc:54
 msgid "Object Type"
