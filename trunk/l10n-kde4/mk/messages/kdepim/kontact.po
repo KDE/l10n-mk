@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kontact\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-04 09:45+0200\n"
+"POT-Creation-Date: 2008-09-06 10:28+0200\n"
 "PO-Revision-Date: 2007-02-28 14:13+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -228,7 +228,7 @@ msgstr ""
 
 #. i18n: file: plugins/planner/planner.ui:61
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:102 plugins/planner/kcmplanner.cpp:231
+#: rc.cpp:102 plugins/planner/kcmplanner.cpp:162
 #, fuzzy
 #| msgid "Show all to-dos"
 msgid "Show To-dos"
@@ -323,7 +323,7 @@ msgstr "Дијалог за конфигурација на прегледот �
 
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:21
 #. i18n: ectx: property (title), widget (QGroupBox, mDaysButtonGroup)
-#: rc.cpp:156
+#: rc.cpp:156 plugins/planner/kcmplanner.cpp:134
 #, fuzzy
 msgid "Show Upcoming Events Starting"
 msgstr "Специјални датуми"
@@ -923,21 +923,21 @@ msgstr "Прочитај забелешка: „%1“"
 msgid "Upcoming Events"
 msgstr ""
 
-#: plugins/korganizer/apptsummarywidget.cpp:192
+#: plugins/korganizer/apptsummarywidget.cpp:205
 #, fuzzy
 #| msgid "Today"
 msgctxt "@label the appointment is today"
 msgid "Today"
 msgstr "Денес"
 
-#: plugins/korganizer/apptsummarywidget.cpp:196
+#: plugins/korganizer/apptsummarywidget.cpp:209
 #, fuzzy
 #| msgid "Tomorrow"
 msgctxt "@label the appointment is tomorrow"
 msgid "Tomorrow"
 msgstr "Утре"
 
-#: plugins/korganizer/apptsummarywidget.cpp:223
+#: plugins/korganizer/apptsummarywidget.cpp:238
 #: plugins/korganizer/todosummarywidget.cpp:224
 #: plugins/specialdates/sdsummarywidget.cpp:489
 #, kde-format
@@ -947,19 +947,19 @@ msgstr[0] "за %1 ден"
 msgstr[1] "за %1 дена"
 msgstr[2] "за %1 дена"
 
-#: plugins/korganizer/apptsummarywidget.cpp:225
+#: plugins/korganizer/apptsummarywidget.cpp:240
 #: plugins/specialdates/sdsummarywidget.cpp:487
 msgid "now"
 msgstr "сега"
 
-#: plugins/korganizer/apptsummarywidget.cpp:269
-#: plugins/planner/planner.cpp:497
+#: plugins/korganizer/apptsummarywidget.cpp:284
+#: plugins/planner/planner.cpp:471
 #, kde-format
 msgctxt "Time from - to"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: plugins/korganizer/apptsummarywidget.cpp:284
+#: plugins/korganizer/apptsummarywidget.cpp:299
 #, fuzzy, kde-format
 msgid "No upcoming events starting within the next day"
 msgid_plural "No upcoming events starting within the next %1 days"
@@ -967,27 +967,27 @@ msgstr[0] "Нема закажани состаноци во текот на с�
 msgstr[1] "Нема закажани состаноци во текот на следните %1 дена"
 msgstr[2] "Нема закажани состаноци во текот на следните %1 дена"
 
-#: plugins/korganizer/apptsummarywidget.cpp:317
-#: plugins/planner/planner.cpp:606
+#: plugins/korganizer/apptsummarywidget.cpp:332
+#: plugins/planner/planner.cpp:579
 msgid "&Edit Appointment..."
 msgstr "Ур&еди закажан состанок..."
 
-#: plugins/korganizer/apptsummarywidget.cpp:318
-#: plugins/planner/planner.cpp:607
+#: plugins/korganizer/apptsummarywidget.cpp:333
+#: plugins/planner/planner.cpp:580
 msgid "&Delete Appointment"
 msgstr "&Избриши закажан состанок"
 
-#: plugins/korganizer/apptsummarywidget.cpp:335
+#: plugins/korganizer/apptsummarywidget.cpp:350
 #, fuzzy, kde-format
 msgid "Edit Event: \"%1\""
 msgstr "Уреди закажан состанок: „%1“"
 
-#: plugins/korganizer/apptsummarywidget.cpp:378
+#: plugins/korganizer/apptsummarywidget.cpp:393
 #: plugins/specialdates/sdsummarywidget.cpp:300
 msgid "BIRTHDAY"
 msgstr "РОДЕНДЕН"
 
-#: plugins/korganizer/apptsummarywidget.cpp:382
+#: plugins/korganizer/apptsummarywidget.cpp:397
 #: plugins/specialdates/sdsummarywidget.cpp:316
 msgid "ANNIVERSARY"
 msgstr "ГОДИШНИНА"
@@ -1001,7 +1001,7 @@ msgid "Synchronize Journal"
 msgstr ""
 
 #: plugins/korganizer/kcmapptsummary.cpp:83
-#: plugins/korganizer/kcmtodosummary.cpp:87 plugins/planner/kcmplanner.cpp:105
+#: plugins/korganizer/kcmtodosummary.cpp:87 plugins/planner/kcmplanner.cpp:149
 #: plugins/specialdates/kcmsdsummary.cpp:106
 msgid " day"
 msgid_plural " days"
@@ -1092,23 +1092,23 @@ msgstr[1] "Нема специјални датуми во текот на на�
 msgstr[2] "Нема специјални датуми во текот на наредните %1 дена"
 
 #: plugins/korganizer/todosummarywidget.cpp:325
-#: plugins/planner/planner.cpp:669
+#: plugins/planner/planner.cpp:642
 #, fuzzy
 msgid "&Edit To-do..."
 msgstr "&Уреди задача..."
 
 #: plugins/korganizer/todosummarywidget.cpp:326
-#: plugins/planner/planner.cpp:670
+#: plugins/planner/planner.cpp:643
 msgid "&Delete To-do"
 msgstr ""
 
 #: plugins/korganizer/todosummarywidget.cpp:331
-#: plugins/planner/planner.cpp:676
+#: plugins/planner/planner.cpp:649
 msgid "&Mark To-do Completed"
 msgstr ""
 
 #: plugins/korganizer/todosummarywidget.cpp:351
-#: plugins/planner/planner.cpp:769
+#: plugins/planner/planner.cpp:742
 #, kde-format
 msgid "Edit To-do: \"%1\""
 msgstr "Уредете ја задачата: „%1“"
@@ -1262,124 +1262,68 @@ msgstr ""
 msgid "Oral Timocin"
 msgstr ""
 
-#: plugins/planner/kcmplanner.cpp:154
+#: plugins/planner/kcmplanner.cpp:119
 #, fuzzy
-#| msgid "Active Calendar"
-msgid "Calendar"
-msgstr "Активен календар"
+#| msgid "Show all to-dos"
+msgid "Show recurrences"
+msgstr "Прикажи ги сите задачи"
 
-#: plugins/planner/kcmplanner.cpp:155
+#: plugins/planner/kcmplanner.cpp:120
 #, fuzzy
-msgid "To-dos"
+#| msgid "Show all to-dos"
+msgid "Show reminders"
+msgstr "Прикажи ги сите задачи"
+
+#: plugins/planner/kcmplanner.cpp:121
+#, fuzzy
+msgid "Underline Links"
 msgstr "Задачи"
 
-#: plugins/planner/kcmplanner.cpp:156
+#: plugins/planner/kcmplanner.cpp:137
 #, fuzzy
-#| msgid "Special Dates Summary"
-msgid "Special Dates"
-msgstr "Преглед на специјални датуми"
+#| msgid "Today"
+msgid "Today only"
+msgstr "Денес"
 
-#: plugins/planner/kcmplanner.cpp:169
-msgid "Days to show Selection"
+#: plugins/planner/kcmplanner.cpp:166
+msgid "Overdue (not completetd and beyond due-date)"
 msgstr ""
+
+#: plugins/planner/kcmplanner.cpp:168
+#, fuzzy
+#| msgid "starts today"
+msgid "To-dos starting today"
+msgstr "почнува денес"
+
+#: plugins/planner/kcmplanner.cpp:170
+#, fuzzy
+#| msgid "No to-dos pending"
+msgid "To-dos ending today"
+msgstr "Нема недовршени задачи"
 
 #: plugins/planner/kcmplanner.cpp:172
-msgid "One day"
-msgstr "Еден ден"
-
-#: plugins/planner/kcmplanner.cpp:173
-msgid "Five days"
-msgstr "Пет дена"
-
-#: plugins/planner/kcmplanner.cpp:174
-msgid "One week"
-msgstr "Една недела"
-
-#: plugins/planner/kcmplanner.cpp:175
-msgid "One month"
-msgstr "Еден месец"
-
-#: plugins/planner/kcmplanner.cpp:206
-msgid "Show event recurrence"
+msgid "In-progress(started but not completetd)"
 msgstr ""
-
-#: plugins/planner/kcmplanner.cpp:207
-msgid "Show events with reminder"
-msgstr ""
-
-#: plugins/planner/kcmplanner.cpp:208
-msgid "underline Event label"
-msgstr ""
-
-#: plugins/planner/kcmplanner.cpp:235
-msgid "Show all to-dos"
-msgstr "Прикажи ги сите задачи"
-
-#: plugins/planner/kcmplanner.cpp:237
-#, fuzzy
-msgid "Overdue to-dos"
-msgstr "Задачи"
-
-#: plugins/planner/kcmplanner.cpp:239
-#, fuzzy
-msgid "Starting to-dos"
-msgstr "Задачи"
-
-#: plugins/planner/kcmplanner.cpp:241
-#, fuzzy
-msgid "Ending to-dos"
-msgstr "Задачи"
-
-#: plugins/planner/kcmplanner.cpp:243
-#, fuzzy
-msgid "To-dos in progress"
-msgstr "во тек"
-
-#: plugins/planner/kcmplanner.cpp:245
-#, fuzzy
-msgid "Completed to-dos"
-msgstr "Задачи"
-
-#: plugins/planner/kcmplanner.cpp:251
-msgid "Priority limit:"
-msgstr ""
-
-#: plugins/planner/kcmplanner.cpp:275
-#, fuzzy
-#| msgid "Show all to-dos"
-msgid "Show todo recurrence"
-msgstr "Прикажи ги сите задачи"
-
-#: plugins/planner/kcmplanner.cpp:276
-#, fuzzy
-#| msgid "Show all to-dos"
-msgid "Show todo reminder"
-msgstr "Прикажи ги сите задачи"
-
-#: plugins/planner/kcmplanner.cpp:277
-#, fuzzy
-msgid "Underline Todo"
-msgstr "Задачи"
 
 #: plugins/planner/planner.cpp:70
 msgid "Planner"
 msgstr ""
 
-#: plugins/planner/planner.cpp:155
+#: plugins/planner/planner.cpp:150
 #, fuzzy
 #| msgid "Today"
 msgctxt "today"
 msgid "Today"
 msgstr "Денес"
 
-#: plugins/planner/planner.cpp:159
+#: plugins/planner/planner.cpp:154
 #, fuzzy
 #| msgid "Tomorrow"
 msgctxt "tomorrow"
 msgid "Tomorrow"
 msgstr "Утре"
 
-#: plugins/planner/planner.cpp:198
+#: plugins/planner/planner.cpp:193
 #, fuzzy, kde-format
 msgid "No appointments pending within the next day"
 msgid_plural "No appointments pending within the next %1 days"
@@ -1387,87 +1331,87 @@ msgstr[0] "Нема закажани состаноци во текот на с�
 msgstr[1] "Нема закажани состаноци во текот на следните %1 дена"
 msgstr[2] "Нема закажани состаноци во текот на следните %1 дена"
 
-#: plugins/planner/planner.cpp:308 plugins/planner/planner.cpp:332
-#: plugins/planner/planner.cpp:347 plugins/planner/planner.cpp:641
+#: plugins/planner/planner.cpp:282 plugins/planner/planner.cpp:306
+#: plugins/planner/planner.cpp:321 plugins/planner/planner.cpp:614
 #, fuzzy
 #| msgid "overdue"
 msgctxt "to-do is overdue"
 msgid "overdue"
 msgstr "поминат рок"
 
-#: plugins/planner/planner.cpp:624
+#: plugins/planner/planner.cpp:597
 #, fuzzy, kde-format
 #| msgid "&Edit Appointment..."
 msgid "Edit Appointment: \"%1\""
 msgstr "Ур&еди закажан состанок..."
 
-#: plugins/planner/planner.cpp:648
+#: plugins/planner/planner.cpp:621
 #, fuzzy
 msgctxt "work on to-do is in progress"
 msgid "in progress"
 msgstr "во тек"
 
-#: plugins/planner/planner.cpp:653
+#: plugins/planner/planner.cpp:626
 #, fuzzy
 #| msgid "starts today"
 msgctxt "to-do starts today"
 msgid "starts today"
 msgstr "почнува денес"
 
-#: plugins/planner/planner.cpp:658
+#: plugins/planner/planner.cpp:631
 #, fuzzy
 #| msgid "ends today"
 msgctxt "to-do ends today"
 msgid "ends today"
 msgstr "завршува денес"
 
-#: plugins/planner/planner.cpp:661
+#: plugins/planner/planner.cpp:634
 #, fuzzy
 msgctxt "to-do is completed"
 msgid "completed"
 msgstr "Задачи"
 
-#: plugins/planner/planner.cpp:721
+#: plugins/planner/planner.cpp:694
 msgid "0%"
 msgstr ""
 
-#: plugins/planner/planner.cpp:722
+#: plugins/planner/planner.cpp:695
 msgid "10%"
 msgstr ""
 
-#: plugins/planner/planner.cpp:723
+#: plugins/planner/planner.cpp:696
 msgid "20%"
 msgstr ""
 
-#: plugins/planner/planner.cpp:724
+#: plugins/planner/planner.cpp:697
 msgid "30%"
 msgstr ""
 
-#: plugins/planner/planner.cpp:725
+#: plugins/planner/planner.cpp:698
 msgid "40%"
 msgstr ""
 
-#: plugins/planner/planner.cpp:726
+#: plugins/planner/planner.cpp:699
 msgid "50%"
 msgstr ""
 
-#: plugins/planner/planner.cpp:727
+#: plugins/planner/planner.cpp:700
 msgid "60%"
 msgstr ""
 
-#: plugins/planner/planner.cpp:728
+#: plugins/planner/planner.cpp:701
 msgid "70%"
 msgstr ""
 
-#: plugins/planner/planner.cpp:729
+#: plugins/planner/planner.cpp:702
 msgid "80%"
 msgstr ""
 
-#: plugins/planner/planner.cpp:730
+#: plugins/planner/planner.cpp:703
 msgid "90%"
 msgstr ""
 
-#: plugins/planner/planner.cpp:731
+#: plugins/planner/planner.cpp:704
 msgid "100%"
 msgstr ""
 
@@ -1697,6 +1641,55 @@ msgid "Unknown"
 msgstr "Непознат"
 
 #, fuzzy
+#~| msgid "Active Calendar"
+#~ msgid "Calendar"
+#~ msgstr "Активен календар"
+
+#, fuzzy
+#~ msgid "To-dos"
+#~ msgstr "Задачи"
+
+#, fuzzy
+#~| msgid "Special Dates Summary"
+#~ msgid "Special Dates"
+#~ msgstr "Преглед на специјални датуми"
+
+#~ msgid "One day"
+#~ msgstr "Еден ден"
+
+#~ msgid "Five days"
+#~ msgstr "Пет дена"
+
+#~ msgid "One week"
+#~ msgstr "Една недела"
+
+#~ msgid "One month"
+#~ msgstr "Еден месец"
+
+#~ msgid "Show all to-dos"
+#~ msgstr "Прикажи ги сите задачи"
+
+#, fuzzy
+#~ msgid "Overdue to-dos"
+#~ msgstr "Задачи"
+
+#, fuzzy
+#~ msgid "Starting to-dos"
+#~ msgstr "Задачи"
+
+#, fuzzy
+#~ msgid "Ending to-dos"
+#~ msgstr "Задачи"
+
+#, fuzzy
+#~ msgid "To-dos in progress"
+#~ msgstr "во тек"
+
+#, fuzzy
+#~ msgid "Completed to-dos"
+#~ msgstr "Задачи"
+
+#, fuzzy
 #~ msgid "Schedule Configuration Dialog"
 #~ msgstr "Дијалог за конфигурација на распореди"
 
@@ -1775,9 +1768,6 @@ msgstr "Непознат"
 
 #~ msgid "Show today's to-dos only"
 #~ msgstr "Прикажи ги само денешните задачи"
-
-#~ msgid "No to-dos pending"
-#~ msgstr "Нема недовршени задачи"
 
 #~ msgid "KPilot Information"
 #~ msgstr "Информации за КПилот"
