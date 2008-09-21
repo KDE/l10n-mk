@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-18 09:52+0200\n"
+"POT-Creation-Date: 2008-09-21 09:47+0200\n"
 "PO-Revision-Date: 2008-07-08 11:35+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -127,7 +127,7 @@ msgstr "Копче на глушецот:"
 msgid "Application"
 msgstr "Акции"
 
-#. i18n: file: kcm_hotkeys/ui/menuentry_action_widget.ui:28
+#. i18n: file: kcm_hotkeys/ui/menuentry_action_widget.ui:32
 #. i18n: ectx: property (text), widget (KPushButton, applicationButton)
 #: rc.cpp:44
 #, fuzzy
@@ -137,7 +137,7 @@ msgstr "Избриши акција"
 
 #. i18n: file: kcm_hotkeys/ui/command_url_action_widget.ui:16
 #. i18n: ectx: property (text), widget (QLabel, commandLabel)
-#: rc.cpp:47 kcm_hotkeys/hotkeys_tree_view.cpp:54
+#: rc.cpp:47 kcm_hotkeys/hotkeys_tree_view.cpp:110
 #, fuzzy
 #| msgid "Command/URL: "
 msgid "Command/URL"
@@ -163,40 +163,42 @@ msgstr ""
 msgid "&Enabled"
 msgstr "&Оневозможено"
 
-#: kcm_hotkeys/hotkeys_tree_view.cpp:38
+#: kcm_hotkeys/hotkeys_tree_view.cpp:40
 #, fuzzy
 #| msgid "&Reset"
 msgid "Test"
 msgstr "&Од почеток"
 
-#: kcm_hotkeys/hotkeys_tree_view.cpp:45
-msgid "Delete"
-msgstr "Избриши"
-
-#: kcm_hotkeys/hotkeys_tree_view.cpp:51
-#, fuzzy
-#| msgid "Keyboard Shortcut"
-msgid "New Global Shortcut"
-msgstr "Кратенка на тастатура"
-
-#: kcm_hotkeys/hotkeys_tree_view.cpp:58
-msgid "Dbus Command"
-msgstr ""
-
-#: kcm_hotkeys/hotkeys_tree_view.cpp:62
-#, fuzzy
-#| msgid "K-Menu Entry..."
-msgid "K-Menu Entry"
-msgstr "Ставка во K-Менито..."
-
-#: kcm_hotkeys/hotkeys_tree_view.cpp:66 kcm_hotkeys/hotkeys_tree_view.cpp:94
-#: kcm_hotkeys/hotkeys_model.cpp:60
+#: kcm_hotkeys/hotkeys_tree_view.cpp:59 kcm_hotkeys/hotkeys_tree_view.cpp:75
+#: kcm_hotkeys/hotkeys_tree_view.cpp:145 kcm_hotkeys/hotkeys_model.cpp:90
 #, fuzzy
 #| msgid "New &Group"
 msgid "New Group"
 msgstr "Нова &група"
 
-#: kcm_hotkeys/hotkeys_tree_view.cpp:94 kcm_hotkeys/hotkeys_model.cpp:60
+#: kcm_hotkeys/hotkeys_tree_view.cpp:69
+msgid "Delete"
+msgstr "Избриши"
+
+#: kcm_hotkeys/hotkeys_tree_view.cpp:91
+#, fuzzy
+#| msgid "Keyboard Shortcut"
+msgid "New Global Shortcut"
+msgstr "Кратенка на тастатура"
+
+#: kcm_hotkeys/hotkeys_tree_view.cpp:117
+#, fuzzy
+#| msgid "D-Bus Call..."
+msgid "D-Bus Command"
+msgstr "D-Bus повик..."
+
+#: kcm_hotkeys/hotkeys_tree_view.cpp:124
+#, fuzzy
+#| msgid "K-Menu Entry..."
+msgid "K-Menu Entry"
+msgstr "Ставка во K-Менито..."
+
+#: kcm_hotkeys/hotkeys_tree_view.cpp:145 kcm_hotkeys/hotkeys_model.cpp:90
 #, fuzzy
 #| msgid "Comment:"
 msgid "Comment"
@@ -259,17 +261,17 @@ msgid ""
 "i>"
 msgstr ""
 
-#: kcm_hotkeys/hotkeys_model.cpp:223
+#: kcm_hotkeys/hotkeys_model.cpp:332
 msgid "Name"
 msgstr ""
 
-#: kcm_hotkeys/hotkeys_model.cpp:226
+#: kcm_hotkeys/hotkeys_model.cpp:335
 #, fuzzy
 #| msgid "&Disabled"
 msgid "Enabled"
 msgstr "&Оневозможено"
 
-#: kcm_hotkeys/hotkeys_model.cpp:229
+#: kcm_hotkeys/hotkeys_model.cpp:338
 msgid "Type"
 msgstr ""
 
@@ -293,7 +295,7 @@ msgstr "Алатка за ажурирање на KHotKeys"
 msgid "Id of the script to add to %1"
 msgstr "Ид. на скриптата што ќе се додаде на khotkeysrc."
 
-#: libkhotkeysprivate/triggers/shortcut_trigger.cpp:133
+#: libkhotkeysprivate/triggers/shortcut_trigger.cpp:135
 msgid "Shortcut trigger: "
 msgstr "Активатор за кратенка: "
 
@@ -354,7 +356,7 @@ msgstr "Активирај прозорец: "
 msgid "Keyboard input: "
 msgstr "Внес од тастатура: "
 
-#: libkhotkeysprivate/settings.cpp:190
+#: libkhotkeysprivate/settings.cpp:264
 msgid ""
 "This \"actions\" file has already been imported before. Are you sure you "
 "want to import it again?"
@@ -362,7 +364,7 @@ msgstr ""
 "Оваа датотека \"actions\" веќе е внесена претходно. Дали сте сигурни дека "
 "сакате повторно да ја внесете?"
 
-#: libkhotkeysprivate/settings.cpp:201
+#: libkhotkeysprivate/settings.cpp:275
 msgid ""
 "This \"actions\" file has no ImportId field and therefore it cannot be "
 "determined whether or not it has been imported already. Are you sure you "
@@ -371,11 +373,11 @@ msgstr ""
 "Оваа датотека \"actions\" нема поле ImportId и поради тоа не може да биде "
 "одредено дали не е веќе внесена. Дали сте сигурни дека сакате  да ја внесете?"
 
-#: libkhotkeysprivate/settings.cpp:371
+#: libkhotkeysprivate/settings.cpp:444
 msgid "These entries were created using Menu Editor."
 msgstr "Овие ставки беа создадени со Уредувачот на мени."
 
-#: libkhotkeysprivate/windows.cpp:361
+#: libkhotkeysprivate/windows.cpp:360
 msgid "Window simple: "
 msgstr "Обичен прозорец: "
 
@@ -776,9 +778,6 @@ msgstr "Ставки во Уредувачот на мени"
 
 #~ msgid "Command/URL..."
 #~ msgstr "Команда/URL..."
-
-#~ msgid "D-Bus Call..."
-#~ msgstr "D-Bus повик..."
 
 #~ msgid "Keyboard Input..."
 #~ msgstr "Внес од тастатура..."
