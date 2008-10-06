@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-21 09:49+0200\n"
+"POT-Creation-Date: 2008-10-06 09:45+0200\n"
 "PO-Revision-Date: 2007-02-26 22:26+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -40,7 +40,7 @@ msgctxt "Key has unlimited lifetime"
 msgid "Unlimited"
 msgstr "Неограничено"
 
-#: keyinfodialog.cpp:235 keyinfodialog.cpp:598
+#: keyinfodialog.cpp:235 keyinfodialog.cpp:584
 #, fuzzy
 #| msgid "Key Properties"
 msgid "Key properties"
@@ -132,35 +132,35 @@ msgstr "Смени тајна фраза..."
 msgid "Fingerprint"
 msgstr "Отпечаток:"
 
-#: keyinfodialog.cpp:428
+#: keyinfodialog.cpp:414
 #, fuzzy
 #| msgid "none"
 msgctxt "no email address"
 msgid "none"
 msgstr "ниедно"
 
-#: keyinfodialog.cpp:453
+#: keyinfodialog.cpp:439
 #, fuzzy
 #| msgid "none"
 msgctxt "no key comment"
 msgid "none"
 msgstr "ниедно"
 
-#: keyinfodialog.cpp:560
+#: keyinfodialog.cpp:546
 msgid "Passphrase for the key was changed"
 msgstr "Тајната фраза за клучот е изменета"
 
-#: keyinfodialog.cpp:562
+#: keyinfodialog.cpp:548
 #, fuzzy
 msgid "Bad old passphrase, the passphrase for the key was not changed"
 msgstr "Тајната фраза за клучот е изменета"
 
-#: keyinfodialog.cpp:562
+#: keyinfodialog.cpp:548
 #, fuzzy
 msgid "Could not change passphrase"
 msgstr "Не може да се смени истекувањето"
 
-#: keyinfodialog.cpp:598
+#: keyinfodialog.cpp:584
 msgid "Changing key properties failed."
 msgstr ""
 
@@ -1977,7 +1977,7 @@ msgstr "Потпиши датотека"
 msgid "Enter passphrase (symmetrical encryption)"
 msgstr "Внесете тајна фраза (симетрично криптирање)"
 
-#: kgpgtextinterface.cpp:104 model/kgpgitemnode.cpp:578
+#: kgpgtextinterface.cpp:104 model/kgpgitemnode.cpp:592
 msgid "[No user id found]"
 msgstr "[Не е најден кориснични ид.]"
 
@@ -4122,8 +4122,14 @@ msgctxt "Name of uid (comment)"
 msgid "%1 (%2)"
 msgstr ""
 
-#: model/kgpgitemnode.cpp:318 model/kgpgitemnode.cpp:363
-#: model/kgpgitemnode.cpp:434 model/kgpgitemnode.cpp:466
+#: model/kgpgitemnode.cpp:228
+#, kde-format
+msgctxt "size of signing key / size of encryption key"
+msgid "%1 / %2"
+msgstr ""
+
+#: model/kgpgitemnode.cpp:320 model/kgpgitemnode.cpp:377
+#: model/kgpgitemnode.cpp:448 model/kgpgitemnode.cpp:480
 #, fuzzy, kde-format
 #| msgid "Signature"
 msgid "1 signature"
@@ -4132,16 +4138,16 @@ msgstr[0] "Потпис"
 msgstr[1] "Потпис"
 msgstr[2] "Потпис"
 
-#: model/kgpgitemnode.cpp:422
+#: model/kgpgitemnode.cpp:436
 #, kde-format
 msgid "%1 subkey"
 msgstr "Подклуч %1"
 
-#: model/kgpgitemnode.cpp:448
+#: model/kgpgitemnode.cpp:462
 msgid "Photo id"
 msgstr "Фото ид."
 
-#: model/kgpgitemnode.cpp:499
+#: model/kgpgitemnode.cpp:513
 #, fuzzy, kde-format
 #| msgid "%1 subkey"
 msgid "1 key"
