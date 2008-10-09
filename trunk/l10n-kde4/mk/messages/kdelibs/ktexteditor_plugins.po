@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktexteditor_plugins\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-25 09:05+0200\n"
+"POT-Creation-Date: 2008-10-09 09:42+0200\n"
 "PO-Revision-Date: 2007-11-13 15:34+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -17,25 +17,35 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: wordcompletion/docwordcompletion.cpp:307
+#: wordcompletion/docwordcompletion.cpp:308
 msgid "Pop Up Completion List"
 msgstr "Скок-листа за довршување"
 
-#: wordcompletion/docwordcompletion.cpp:311
+#: wordcompletion/docwordcompletion.cpp:312
 msgid "Automatic Completion Popup"
 msgstr "Скок за автоматско довршување"
 
-#: wordcompletion/docwordcompletion.cpp:318
+#: wordcompletion/docwordcompletion.cpp:319
 msgid "Shell Completion"
 msgstr "Довршување на школка"
 
-#: wordcompletion/docwordcompletion.cpp:324
+#: wordcompletion/docwordcompletion.cpp:325
 msgid "Reuse Word Above"
 msgstr "Искористи го повторно зборот над"
 
-#: wordcompletion/docwordcompletion.cpp:329
+#: wordcompletion/docwordcompletion.cpp:330
 msgid "Reuse Word Below"
 msgstr "Искористи го повторно зборот под"
+
+#: wordcompletion/docwordcompletion.cpp:675
+#, fuzzy
+#| msgid "Shell Completion"
+msgid "WordCompletion"
+msgstr "Довршување на школка"
+
+#: wordcompletion/docwordcompletion.cpp:675
+msgid "Complete words"
+msgstr ""
 
 #: wordcompletion/docwordcompletion_config.cpp:44
 msgid "Automatically &show completion list"
@@ -74,19 +84,25 @@ msgstr ""
 "Дефинирајте ја должината што треба да ја има зборот пред да се покаже "
 "листата со довршувања."
 
-#: insertfile/insertfileplugin.cpp:87
+#: insertfile/insertfileplugin.cpp:42
+#, fuzzy
+#| msgid "Insert File..."
+msgid "Insert File"
+msgstr "Вметни датотека..."
+
+#: insertfile/insertfileplugin.cpp:88
 msgid "Insert File..."
 msgstr "Вметни датотека..."
 
-#: insertfile/insertfileplugin.cpp:99
+#: insertfile/insertfileplugin.cpp:100
 msgid "Choose File to Insert"
 msgstr "Изберете датотека за вметнување"
 
-#: insertfile/insertfileplugin.cpp:100
+#: insertfile/insertfileplugin.cpp:101
 msgid "&Insert"
 msgstr "Вметн&и"
 
-#: insertfile/insertfileplugin.cpp:129
+#: insertfile/insertfileplugin.cpp:130
 msgid ""
 "Failed to load file:\n"
 "\n"
@@ -94,12 +110,12 @@ msgstr ""
 "Не може да се вчита датотеката:\n"
 "\n"
 
-#: insertfile/insertfileplugin.cpp:129 insertfile/insertfileplugin.cpp:150
-#: insertfile/insertfileplugin.cpp:172
+#: insertfile/insertfileplugin.cpp:130 insertfile/insertfileplugin.cpp:151
+#: insertfile/insertfileplugin.cpp:173
 msgid "Insert File Error"
 msgstr "Грешка при вметнување на датотека"
 
-#: insertfile/insertfileplugin.cpp:143
+#: insertfile/insertfileplugin.cpp:144
 #, kde-format
 msgid ""
 "<p>The file <strong>%1</strong> does not exist or is not readable, aborting."
@@ -107,26 +123,38 @@ msgid ""
 msgstr ""
 "<p>Датотеката <strong>%1</strong> не постои или не е читлива, прекинувам.</p>"
 
-#: insertfile/insertfileplugin.cpp:147
+#: insertfile/insertfileplugin.cpp:148
 #, kde-format
 msgid "<p>Unable to open file <strong>%1</strong>, aborting.</p>"
 msgstr ""
 "<p>Не можам да ја отворам датотеката <strong>%1</strong>, прекинувам.</p>"
 
-#: insertfile/insertfileplugin.cpp:170
+#: insertfile/insertfileplugin.cpp:171
 #, kde-format
 msgid "<p>File <strong>%1</strong> had no contents.</p>"
 msgstr "<p>Датотеката <strong>%1</strong> немаше содржина.</p>"
 
-#: kdatatool/kate_kdatatool.cpp:77
+#: kdatatool/kate_kdatatool.cpp:38
+#, fuzzy
+#| msgid "Data Tools"
+msgid "DataTool"
+msgstr "Алатки за податоци"
+
+#: kdatatool/kate_kdatatool.cpp:38
+#, fuzzy
+#| msgid "Data Tools"
+msgid "Data tool"
+msgstr "Алатки за податоци"
+
+#: kdatatool/kate_kdatatool.cpp:78
 msgid "Data Tools"
 msgstr "Алатки за податоци"
 
-#: kdatatool/kate_kdatatool.cpp:149 kdatatool/kate_kdatatool.cpp:172
+#: kdatatool/kate_kdatatool.cpp:150 kdatatool/kate_kdatatool.cpp:173
 msgid "(not available)"
 msgstr "(не се достапни)"
 
-#: kdatatool/kate_kdatatool.cpp:181
+#: kdatatool/kate_kdatatool.cpp:182
 msgid ""
 "Data tools are only available when text is selected, or when the right mouse "
 "button is clicked over a word. If no data tools are offered even when text "
@@ -137,6 +165,24 @@ msgstr ""
 "копче од глушецот е кликнато над зборот. Ако не се понудени алатки дури и "
 "кога е избран текст, треба да ги инсталирате. Некои алатки се дел од пакетот "
 "KOfiice."
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: pythonencoding/python_encoding.cpp:35
+msgid "PythonEncoding"
+msgstr ""
+
+#: pythonencoding/python_encoding.cpp:35
+msgid "Python Encoding check"
+msgstr ""
 
 #: timedate/timedate.cpp:55 timedate/timedate_config.cpp:70
 #, fuzzy
