@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akregator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-20 10:11+0200\n"
+"POT-Creation-Date: 2008-10-27 10:20+0100\n"
 "PO-Revision-Date: 2007-12-16 12:57+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -20,7 +20,6 @@ msgstr ""
 "2;\n"
 
 #: src/old/feedlistview.cpp:280 src/akregator_part.cpp:308
-#: src/subscriptionlistmodel.cpp:218
 #: plugins/onlinesync/ui/configurationwidget.cpp:45
 msgid "Feeds"
 msgstr "Доводи"
@@ -48,13 +47,13 @@ msgstr "Вчитувањето е откажано"
 msgid "Loading completed"
 msgstr "Вчитувањето е комплетирано"
 
-#: src/articlelistview.cpp:181 src/subscriptionlistview.cpp:180
+#: src/articlelistview.cpp:182 src/subscriptionlistview.cpp:180
 #, fuzzy
 #| msgid "Comments"
 msgid "Columns"
 msgstr "Коментари"
 
-#: src/articlelistview.cpp:288
+#: src/articlelistview.cpp:301
 msgid ""
 "<h2>Article list</h2>Here you can browse articles from the currently "
 "selected feed. You can also manage articles, as marking them as persistent "
@@ -68,7 +67,7 @@ msgstr ""
 "на глувчето. За да ја видете веб страната на написот може да го отворите "
 "написот внатрешно во ливче или на надворешен прозорец од прелистувачот."
 
-#: src/articlelistview.cpp:354
+#: src/articlelistview.cpp:367
 msgid ""
 "<div align=center><h3>No matches</h3>Filter does not match any articles, "
 "please change your criteria and try again.</div>"
@@ -76,7 +75,7 @@ msgstr ""
 "<div align=center><h3>Нема пронајдени</h3>Филтерот не се совпаѓа со ниеден "
 "запис, променете критериум и обидете се повторно.</div>"
 
-#: src/articlelistview.cpp:365
+#: src/articlelistview.cpp:378
 msgid ""
 "<div align=center><h3>No feed selected</h3>This area is article list. Select "
 "a feed from the feed list and you will see its articles here.</div>"
@@ -93,22 +92,23 @@ msgstr "Додај папка"
 msgid "Folder name:"
 msgstr "Име на папка:"
 
-#: src/pageviewer.cpp:101 src/actionmanagerimpl.cpp:539
+#: src/pageviewer.cpp:101 src/actionmanagerimpl.cpp:543
 msgctxt "Go back in browser history"
 msgid "Back"
 msgstr ""
 
-#: src/pageviewer.cpp:109 src/actionmanagerimpl.cpp:532
+#: src/pageviewer.cpp:109 src/actionmanagerimpl.cpp:536
 msgctxt "Go forward in browser history"
 msgid "Forward"
 msgstr ""
 
-#: src/pageviewer.cpp:116 src/actionmanagerimpl.cpp:548
+#: src/pageviewer.cpp:116 src/actionmanagerimpl.cpp:552
 #, fuzzy
+msgctxt "Reload current page"
 msgid "Reload"
 msgstr "&Прочитај"
 
-#: src/pageviewer.cpp:119 src/actionmanagerimpl.cpp:553
+#: src/pageviewer.cpp:119 src/actionmanagerimpl.cpp:557
 msgid "Stop"
 msgstr ""
 
@@ -182,26 +182,44 @@ msgstr ""
 "за грешка:<br/><i>%2</i></p>"
 
 #: src/pluginmanager.cpp:171
+#, fuzzy
+#| msgid "Name"
+msgctxt "Name of the plugin"
 msgid "Name"
 msgstr "Име"
 
 #: src/pluginmanager.cpp:172
+#, fuzzy
+#| msgid "Library"
+msgctxt "Library name"
 msgid "Library"
 msgstr "Библиотека"
 
 #: src/pluginmanager.cpp:173
+#, fuzzy
+#| msgid "Authors"
+msgctxt "Plugin authors"
 msgid "Authors"
 msgstr "Автори"
 
 #: src/pluginmanager.cpp:174
+#, fuzzy
+#| msgid "Email"
+msgctxt "Plugin authors' emaila addresses"
 msgid "Email"
 msgstr "Е-пошта"
 
 #: src/pluginmanager.cpp:175
+#, fuzzy
+#| msgid "Version"
+msgctxt "Plugin version"
 msgid "Version"
 msgstr "Верзија"
 
 #: src/pluginmanager.cpp:176
+#, fuzzy
+#| msgid "Framework Version"
+msgctxt "Framework version plugin requires"
 msgid "Framework Version"
 msgstr "Верзија на фрејмворк"
 
@@ -209,54 +227,54 @@ msgstr "Верзија на фрејмворк"
 msgid "Plugin Information"
 msgstr "Информации за приклучок"
 
-#: src/mainwidget.cpp:173
+#: src/mainwidget.cpp:174
 msgid "You can view multiple articles in several open tabs."
 msgstr "Можете да прегледувате повеќе написи во различни ливчиња"
 
-#: src/mainwidget.cpp:177
+#: src/mainwidget.cpp:178
 msgid "Articles list."
 msgstr "Листа на написи."
 
-#: src/mainwidget.cpp:238
+#: src/mainwidget.cpp:239
 msgid "Browsing area."
 msgstr "Област на разгледување"
 
-#: src/mainwidget.cpp:242 src/mainwidget.cpp:641
+#: src/mainwidget.cpp:243 src/mainwidget.cpp:647
 msgid "Articles"
 msgstr "Написи"
 
-#: src/mainwidget.cpp:259
+#: src/mainwidget.cpp:260
 msgid "About"
 msgstr ""
 
-#: src/mainwidget.cpp:398 src/main.cpp:67
+#: src/mainwidget.cpp:404 src/main.cpp:67
 msgid "Imported Folder"
 msgstr "Вметнати папки"
 
-#: src/mainwidget.cpp:401
+#: src/mainwidget.cpp:407
 msgid "Add Imported Folder"
 msgstr "Додај вметната папка"
 
-#: src/mainwidget.cpp:402
+#: src/mainwidget.cpp:408
 msgid "Imported folder name:"
 msgstr "Вметнато име на папка:"
 
-#: src/mainwidget.cpp:803
+#: src/mainwidget.cpp:817
 msgid "Fetching Feeds..."
 msgstr "доводи..."
 
-#: src/mainwidget.cpp:1002
+#: src/mainwidget.cpp:1016
 #, kde-format
 msgid "<qt>Are you sure you want to delete article <b>%1</b>?</qt>"
 msgstr ""
 "<qt>Дали сте сигурни деа сакате да го избришете записот <b>%1</b>?</qt>"
 
-#: src/mainwidget.cpp:1005
+#: src/mainwidget.cpp:1019
 #, fuzzy, kde-format
 msgid "<qt>Are you sure you want to delete the %1 selected articles?</qt>"
 msgstr "<qt>Дали сте сигурни дека сакате да го избришете овој довод?</qt>"
 
-#: src/mainwidget.cpp:1009
+#: src/mainwidget.cpp:1023
 msgid "Delete Article"
 msgstr "Избришани написи4"
 
@@ -369,11 +387,22 @@ msgstr "Пронајдов довод, симнувам..."
 msgid "Close the current tab"
 msgstr "Затвори го тековното ливче"
 
-#: src/articleformatter.cpp:86 src/articleformatter.cpp:128
+#: src/articleformatter.cpp:57
+#, kde-format
+msgid "(%1, %2)"
+msgstr ""
+
+#: src/articleformatter.cpp:62
+#, fuzzy, kde-format
+#| msgid "<b>Homepage:</b> <a href=\"%1\">%2</a>"
+msgid "<a href=\"%1\">%2</a> %3"
+msgstr "<b>Домашна страна:</b> <a href=\"%1\">%2</a>"
+
+#: src/articleformatter.cpp:108 src/articleformatter.cpp:150
 msgid " (no unread articles)"
 msgstr " (no unread articles)"
 
-#: src/articleformatter.cpp:88 src/articleformatter.cpp:130
+#: src/articleformatter.cpp:110 src/articleformatter.cpp:152
 #, kde-format
 msgid " (1 unread article)"
 msgid_plural " (%1 unread articles)"
@@ -381,35 +410,42 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/articleformatter.cpp:106
+#: src/articleformatter.cpp:128
 #, fuzzy, kde-format
 #| msgid "<b>Description:</b> %1<br><br>"
 msgid "<b>Description:</b> %1<br /><br />"
 msgstr "<b>Опис:</b> %1<br><br>"
 
-#: src/articleformatter.cpp:113
+#: src/articleformatter.cpp:135
 #, kde-format
 msgid "<b>Homepage:</b> <a href=\"%1\">%2</a>"
 msgstr "<b>Домашна страна:</b> <a href=\"%1\">%2</a>"
 
-#: src/articleformatter.cpp:165 src/articleformatter.cpp:166
-#: src/articleformatter.cpp:355 src/articleformatter.cpp:356
-#: src/articlemodel.cpp:110
+#: src/articleformatter.cpp:188 src/articleformatter.cpp:189
+#: src/articleformatter.cpp:381 src/articleformatter.cpp:382
 msgid "Date"
 msgstr "Датум"
 
-#: src/articleformatter.cpp:173 src/articleformatter.cpp:174
-#: src/articleformatter.cpp:364 src/articleformatter.cpp:365
-#: src/articlemodel.cpp:112
+#: src/articleformatter.cpp:196 src/articleformatter.cpp:197
+#: src/articleformatter.cpp:390 src/articleformatter.cpp:391
 #, fuzzy
 msgid "Author"
 msgstr "Автори"
 
-#: src/articleformatter.cpp:204 src/articleformatter.cpp:396
+#: src/articleformatter.cpp:204 src/articleformatter.cpp:205
+#: src/articleformatter.cpp:398 src/articleformatter.cpp:399
+msgid "Enclosure"
+msgstr ""
+
+#: src/articleformatter.cpp:236 src/articleformatter.cpp:430
 msgid "Comments"
 msgstr "Коментари"
 
-#: src/articleformatter.cpp:224 src/articleformatter.cpp:416
+#: src/articleformatter.cpp:245 src/articleformatter.cpp:440
+msgid "Enclosure:"
+msgstr ""
+
+#: src/articleformatter.cpp:259 src/articleformatter.cpp:454
 msgid "Complete Story"
 msgstr "Комплетна приказна"
 
@@ -605,13 +641,25 @@ msgstr "Не можам да ја вметнам датотеката: %1 (не�
 msgid "Could not fetch feed: %1"
 msgstr ""
 
-#: src/subscriptionlistmodel.cpp:220 src/searchbar.cpp:98
+#: src/subscriptionlistmodel.cpp:218
+#, fuzzy
+#| msgid "Feeds"
+msgctxt "Feedlist's column header"
+msgid "Feeds"
+msgstr "Доводи"
+
+#: src/subscriptionlistmodel.cpp:220
+#, fuzzy
+#| msgid "Unread"
+msgctxt "Feedlist's column header"
 msgid "Unread"
 msgstr "Непрочитани"
 
 #: src/subscriptionlistmodel.cpp:222
+#, fuzzy
+msgctxt "Feedlist's column header"
 msgid "Total"
-msgstr ""
+msgstr "&Запис"
 
 #: src/aboutdata.cpp:35
 #, fuzzy
@@ -747,7 +795,7 @@ msgstr ""
 msgid "Cannot move folder %1 to its own subfolder %2"
 msgstr ""
 
-#: src/actionmanagerimpl.cpp:76 src/actionmanagerimpl.cpp:260
+#: src/actionmanagerimpl.cpp:76 src/actionmanagerimpl.cpp:264
 msgid "&Fetch Feed"
 msgstr "Прев&земи довод"
 
@@ -759,7 +807,7 @@ msgstr "Из&бриши довод"
 msgid "&Edit Feed..."
 msgstr "Про&мени довод..."
 
-#: src/actionmanagerimpl.cpp:79 src/actionmanagerimpl.cpp:279
+#: src/actionmanagerimpl.cpp:79 src/actionmanagerimpl.cpp:283
 msgid "&Mark Feed as Read"
 msgstr "&Маркирај го доводот како прочитан"
 
@@ -809,33 +857,33 @@ msgstr "Н&ова папка"
 msgid "&View Mode"
 msgstr "&Режим на преглед"
 
-#: src/actionmanagerimpl.cpp:235
+#: src/actionmanagerimpl.cpp:236
 msgid "&Normal View"
 msgstr "&Нормален преглед"
 
-#: src/actionmanagerimpl.cpp:243
+#: src/actionmanagerimpl.cpp:245
 msgid "&Widescreen View"
 msgstr "Пр&иказ на широк екран"
 
-#: src/actionmanagerimpl.cpp:251
+#: src/actionmanagerimpl.cpp:254
 msgid "C&ombined View"
 msgstr "К&омбиниран приказ"
 
-#: src/actionmanagerimpl.cpp:266
+#: src/actionmanagerimpl.cpp:270
 msgid "Fe&tch All Feeds"
 msgstr "Пр&еземи ги сите доводи"
 
-#: src/actionmanagerimpl.cpp:272
+#: src/actionmanagerimpl.cpp:276
 msgid "&Abort Fetches"
 msgstr "Отк&ажи преземање"
 
-#: src/actionmanagerimpl.cpp:285
+#: src/actionmanagerimpl.cpp:289
 msgid "Ma&rk All Feeds as Read"
 msgstr "Марки&рај ги сите доводи како прочитани"
 
 #. i18n: file: interfaces/akregator.kcfg:9
 #. i18n: ectx: label, entry, group (View)
-#: src/actionmanagerimpl.cpp:291 rc.cpp:149
+#: src/actionmanagerimpl.cpp:295 rc.cpp:149
 msgid "Show Quick Filter"
 msgstr "Прикажи брз филтер"
 
@@ -843,7 +891,7 @@ msgstr "Прикажи брз филтер"
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LMBBehaviour)
 #. i18n: file: configuration/settings_browser.ui:125
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MMBBehaviour)
-#: src/actionmanagerimpl.cpp:297 rc.cpp:433 rc.cpp:448
+#: src/actionmanagerimpl.cpp:301 rc.cpp:433 rc.cpp:448
 msgid "Open in Tab"
 msgstr "Отвори во ливче"
 
@@ -851,149 +899,155 @@ msgstr "Отвори во ливче"
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LMBBehaviour)
 #. i18n: file: configuration/settings_browser.ui:135
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MMBBehaviour)
-#: src/actionmanagerimpl.cpp:303 rc.cpp:439 rc.cpp:454
+#: src/actionmanagerimpl.cpp:307 rc.cpp:439 rc.cpp:454
 msgid "Open in External Browser"
 msgstr "Отвори во надворешен прелистувач"
 
-#: src/actionmanagerimpl.cpp:308 src/actionmanagerimpl.cpp:515
+#: src/actionmanagerimpl.cpp:312 src/actionmanagerimpl.cpp:519
 msgid "Copy Link Address"
 msgstr "Копирај ја адресата на врската"
 
-#: src/actionmanagerimpl.cpp:312
+#: src/actionmanagerimpl.cpp:316
 msgid "Pre&vious Unread Article"
 msgstr "Прет&ходен непрочитан запис"
 
-#: src/actionmanagerimpl.cpp:317
+#: src/actionmanagerimpl.cpp:321
 msgid "Ne&xt Unread Article"
 msgstr "Наре&ден непрочитан запис"
 
-#: src/actionmanagerimpl.cpp:323
+#: src/actionmanagerimpl.cpp:327
 #, fuzzy
 msgid "&Delete"
 msgstr "&Избриши ознака"
 
-#: src/actionmanagerimpl.cpp:328
+#: src/actionmanagerimpl.cpp:332
 msgid "&Mark As"
 msgstr "&Маркирај како"
 
-#: src/actionmanagerimpl.cpp:342
+#: src/actionmanagerimpl.cpp:346
 msgctxt "as in: mark as read"
 msgid "&Read"
 msgstr "&Прочитај"
 
-#: src/actionmanagerimpl.cpp:344
+#: src/actionmanagerimpl.cpp:348
 msgid "Mark selected article as read"
 msgstr "Селектираниот запис маркирај го како прочитани"
 
-#: src/actionmanagerimpl.cpp:350
+#: src/actionmanagerimpl.cpp:354
+#, fuzzy
+#| msgid "&New"
+msgctxt "as in: mark as new"
 msgid "&New"
 msgstr "&Нов"
 
-#: src/actionmanagerimpl.cpp:353
+#: src/actionmanagerimpl.cpp:357
 msgid "Mark selected article as new"
 msgstr "Селектираниот написи маркирај го како нов"
 
-#: src/actionmanagerimpl.cpp:359
+#: src/actionmanagerimpl.cpp:363
+#, fuzzy
+#| msgid "&Unread"
+msgctxt "as in: mark as unread"
 msgid "&Unread"
 msgstr "Не п&рочитани"
 
-#: src/actionmanagerimpl.cpp:361
+#: src/actionmanagerimpl.cpp:365
 msgid "Mark selected article as unread"
 msgstr "Означи го избраниот запис како непрочитан"
 
-#: src/actionmanagerimpl.cpp:367
+#: src/actionmanagerimpl.cpp:371
 msgid "&Mark as Important"
 msgstr "&Означи како важно"
 
-#: src/actionmanagerimpl.cpp:370
+#: src/actionmanagerimpl.cpp:374
 msgid "Remove &Important Mark"
 msgstr "Отстран&и ознака за важно"
 
-#: src/actionmanagerimpl.cpp:374
+#: src/actionmanagerimpl.cpp:378
 msgid "Move Node Up"
 msgstr "Помести јазол нагоре"
 
-#: src/actionmanagerimpl.cpp:379
+#: src/actionmanagerimpl.cpp:383
 msgid "Move Node Down"
 msgstr "Помести јазол надолу"
 
-#: src/actionmanagerimpl.cpp:383 src/actionmanagerimpl.cpp:384
+#: src/actionmanagerimpl.cpp:387 src/actionmanagerimpl.cpp:388
 msgid "Move Node Left"
 msgstr "Помести јазол налево"
 
-#: src/actionmanagerimpl.cpp:389
+#: src/actionmanagerimpl.cpp:393
 msgid "Move Node Right"
 msgstr "Помеси јазол надесно"
 
-#: src/actionmanagerimpl.cpp:395
+#: src/actionmanagerimpl.cpp:399
 msgid "Send &Link Address..."
 msgstr "Испрати &врска од адресата..."
 
-#: src/actionmanagerimpl.cpp:400
+#: src/actionmanagerimpl.cpp:404
 msgid "Send &File..."
 msgstr "Испрати &датотека..."
 
-#: src/actionmanagerimpl.cpp:420
+#: src/actionmanagerimpl.cpp:424
 msgid "&Previous Article"
 msgstr "&Претходен запис"
 
-#: src/actionmanagerimpl.cpp:424
+#: src/actionmanagerimpl.cpp:428
 msgid "&Next Article"
 msgstr "&Нареден запис"
 
-#: src/actionmanagerimpl.cpp:439
+#: src/actionmanagerimpl.cpp:443
 msgid "&Previous Feed"
 msgstr "&Претходен довод"
 
-#: src/actionmanagerimpl.cpp:444
+#: src/actionmanagerimpl.cpp:448
 msgid "&Next Feed"
 msgstr "&Нареден довод"
 
-#: src/actionmanagerimpl.cpp:449
+#: src/actionmanagerimpl.cpp:453
 msgid "N&ext Unread Feed"
 msgstr "Нар&еден непрочитан довод"
 
-#: src/actionmanagerimpl.cpp:454
+#: src/actionmanagerimpl.cpp:458
 msgid "Prev&ious Unread Feed"
 msgstr "Претходен непроч&итан довод"
 
-#: src/actionmanagerimpl.cpp:459
+#: src/actionmanagerimpl.cpp:463
 msgid "Go to Top of Tree"
 msgstr "Оди на врвот на стеблото"
 
-#: src/actionmanagerimpl.cpp:464
+#: src/actionmanagerimpl.cpp:468
 msgid "Go to Bottom of Tree"
 msgstr "Оди на крајот од стеблото"
 
-#: src/actionmanagerimpl.cpp:469
+#: src/actionmanagerimpl.cpp:473
 msgid "Go Left in Tree"
 msgstr "Оди налево во дрвото"
 
-#: src/actionmanagerimpl.cpp:474
+#: src/actionmanagerimpl.cpp:478
 msgid "Go Right in Tree"
 msgstr "Оди надесно во дрвото"
 
-#: src/actionmanagerimpl.cpp:479
+#: src/actionmanagerimpl.cpp:483
 msgid "Go Up in Tree"
 msgstr "Оди нагоре во дрвото"
 
-#: src/actionmanagerimpl.cpp:484
+#: src/actionmanagerimpl.cpp:488
 msgid "Go Down in Tree"
 msgstr "Оди долу во дрвото"
 
-#: src/actionmanagerimpl.cpp:499
+#: src/actionmanagerimpl.cpp:503
 msgid "Select Next Tab"
 msgstr "Селектирај наредно ливче"
 
-#: src/actionmanagerimpl.cpp:504
+#: src/actionmanagerimpl.cpp:508
 msgid "Select Previous Tab"
 msgstr "Селектирај претходно ливче"
 
-#: src/actionmanagerimpl.cpp:510
+#: src/actionmanagerimpl.cpp:514
 msgid "Detach Tab"
 msgstr "Презакачи ливче"
 
-#: src/actionmanagerimpl.cpp:520
+#: src/actionmanagerimpl.cpp:524
 msgid "&Close Tab"
 msgstr "&Затвори ливче"
 
@@ -1030,26 +1084,46 @@ msgstr "Архива"
 
 #: src/articlemodel.cpp:106
 #, fuzzy
+msgctxt "Articlelist's column header"
 msgid "Title"
 msgstr "&Запис"
 
 #: src/articlemodel.cpp:108
+#, fuzzy
+#| msgid "Feed"
+msgctxt "Articlelist's column header"
 msgid "Feed"
 msgstr "Довод"
 
-#. i18n: file: plugins/onlinesync/ui/configurationwidget.ui:41
-#. i18n: ectx: property (text), widget (QTreeWidget, list_readerList)
-#: src/articlemodel.cpp:114 rc.cpp:521
+#: src/articlemodel.cpp:110
+#, fuzzy
+#| msgid "Date"
+msgctxt "Articlelist's column header"
+msgid "Date"
+msgstr "Датум"
+
+#: src/articlemodel.cpp:112
+#, fuzzy
+msgctxt "Articlelist's column header"
+msgid "Author"
+msgstr "Автори"
+
+#: src/articlemodel.cpp:114
+msgctxt "Articlelist's column header"
 msgid "Description"
 msgstr ""
 
 #: src/articlemodel.cpp:116
 #, fuzzy
 #| msgid "Comments"
+msgctxt "Articlelist's column header"
 msgid "Content"
 msgstr "Коментари"
 
 #: src/searchbar.cpp:77
+#, fuzzy
+#| msgid "S&earch:"
+msgctxt "Title of article searchbar"
 msgid "S&earch:"
 msgstr "Пр&ебарај:"
 
@@ -1061,11 +1135,24 @@ msgstr "Состојба:"
 msgid "All Articles"
 msgstr "Сите написи"
 
+#: src/searchbar.cpp:98
+#, fuzzy
+#| msgid "Unread"
+msgctxt "Unread articles filter"
+msgid "Unread"
+msgstr "Непрочитани"
+
 #: src/searchbar.cpp:99
+#, fuzzy
+#| msgid "New"
+msgctxt "New articles filter"
 msgid "New"
 msgstr "Нови"
 
 #: src/searchbar.cpp:100
+#, fuzzy
+#| msgid "Important"
+msgctxt "Important articles filter"
 msgid "Important"
 msgstr "Важни"
 
@@ -2141,6 +2228,12 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QTreeWidget, list_readerList)
 #: rc.cpp:518
 msgid "Type"
+msgstr ""
+
+#. i18n: file: plugins/onlinesync/ui/configurationwidget.ui:41
+#. i18n: ectx: property (text), widget (QTreeWidget, list_readerList)
+#: rc.cpp:521
+msgid "Description"
 msgstr ""
 
 #. i18n: file: plugins/onlinesync/ui/configurationwidget.ui:51
