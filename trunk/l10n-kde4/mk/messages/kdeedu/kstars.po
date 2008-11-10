@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-06 09:47+0100\n"
+"POT-Creation-Date: 2008-11-10 10:14+0100\n"
 "PO-Revision-Date: 2007-02-26 21:35+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -342,8 +342,8 @@ msgstr ""
 "Локалната датотека на шемата на бои не може да се отвори.\n"
 "Шемата не може да се запише."
 
-#: colorscheme.cpp:288 colorscheme.cpp:306 indidriver.cpp:501
-#: indidriver.cpp:942 kstarsactions.cpp:590 locationdialog.cpp:246
+#: colorscheme.cpp:288 colorscheme.cpp:306 indidriver.cpp:446
+#: indidriver.cpp:918 kstarsactions.cpp:590 locationdialog.cpp:246
 #: opscolors.cpp:199 skymap.cpp:1675 tools/modcalcaltaz.cpp:268
 #: tools/modcalcangdist.cpp:143 tools/modcalcapcoord.cpp:166
 #: tools/modcalcdaylength.cpp:253 tools/modcalceclipticcoords.cpp:204
@@ -528,7 +528,7 @@ msgstr "URL:"
 msgid "Are you sure you want to remove the %1 link?"
 msgstr "Дали сте сигурни дека сакате да се отстрани врската %1?"
 
-#: detaildialog.cpp:632 indidriver.cpp:916 telescopeprop.cpp:243
+#: detaildialog.cpp:632 indidriver.cpp:892 telescopeprop.cpp:243
 msgid "Delete Confirmation"
 msgstr "Избриши ја потврдата"
 
@@ -907,63 +907,60 @@ msgstr "Зачувувањето на сликата %1 не успеа!"
 
 #. i18n: file: devmanager.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, devManager)
-#: indidriver.cpp:91 rc.cpp:234 rc.cpp:3019
+#: indidriver.cpp:90 rc.cpp:234 rc.cpp:3019
 msgid "Device Manager"
 msgstr ""
 
-#: indidriver.cpp:291 indidriver.cpp:443
+#: indidriver.cpp:290
 #, fuzzy
 msgid "Cannot start INDI server: port error."
 msgstr "Не можам да стартувам INDI сервер : грешка на портата."
 
-#: indidriver.cpp:500
+#: indidriver.cpp:445
 msgid ""
 "unable to write to file 'drivers.xml'\n"
 "Any changes to INDI device drivers will not be saved."
 msgstr ""
 
-#: indidriver.cpp:633
-#, fuzzy
+#: indidriver.cpp:582
+#, kde-format
 msgid ""
-"Unable to find device driver file 'drivers.xml'. Please locate the file and "
-"place it in one of the following locations:\n"
-"\n"
-" \t$(KDEDIR)/share/apps/kstars/ \n"
-"\t~/.kde/share/apps/kstars/"
+"Unable to find INDI Drivers directory: %1\n"
+"Please make sure to set the correct path in KStars configuration"
 msgstr ""
-"Не можам да ја пронајдам датотеката за управувачот на уредот „drivers.xml“. "
-"Најдете ја датотеката и ставете ја на една од следниве локации:\n"
-"\n"
-"\t$(KDEDIR)/share/apps/kstars/%1\n"
-"\t~/.kde/share/apps/kstars/%1"
 
-#: indidriver.cpp:814
+#: indidriver.cpp:604
+#, fuzzy, kde-format
+msgid "Failed to open INDI Driver file: %1"
+msgstr "Не можам да ја отворам датотеката"
+
+#: indidriver.cpp:790
 msgid "Add Host"
 msgstr "Додај компјутер"
 
-#: indidriver.cpp:830
+#: indidriver.cpp:806
 msgid "Error: the port number is invalid."
 msgstr "Грешка: бројот на портата е невалиден."
 
-#: indidriver.cpp:840
+#: indidriver.cpp:816
 #, kde-format
 msgid "Host: %1 Port: %2 already exists."
 msgstr "Компјутер: %1 Порта: %2 веќе постои."
 
-#: indidriver.cpp:865
+#: indidriver.cpp:841
 msgid "Modify Host"
 msgstr "Промени компјутер"
 
-#: indidriver.cpp:912
+#: indidriver.cpp:888
 msgid "You need to disconnect the client before removing it."
 msgstr "Треба да го исклучите клиентот пред да го отстраните."
 
-#: indidriver.cpp:916
+#: indidriver.cpp:892
 #, kde-format
 msgid "Are you sure you want to remove the %1 client?"
 msgstr "Дали сте сигурни дека сакате да го отстраните клиентот %1?"
 
-#: indidriver.cpp:941
+#: indidriver.cpp:917
 msgid ""
 "unable to write to file 'indihosts.xml'\n"
 "Any changes to INDI hosts configurations will not be saved."
@@ -35921,6 +35918,20 @@ msgid ""
 "button will make it \"1 hour\", and the right down button will make it \"1 "
 "sec\""
 msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "Unable to find device driver file 'drivers.xml'. Please locate the file "
+#~ "and place it in one of the following locations:\n"
+#~ "\n"
+#~ " \t$(KDEDIR)/share/apps/kstars/ \n"
+#~ "\t~/.kde/share/apps/kstars/"
+#~ msgstr ""
+#~ "Не можам да ја пронајдам датотеката за управувачот на уредот „drivers."
+#~ "xml“. Најдете ја датотеката и ставете ја на една од следниве локации:\n"
+#~ "\n"
+#~ "\t$(KDEDIR)/share/apps/kstars/%1\n"
+#~ "\t~/.kde/share/apps/kstars/%1"
 
 #~ msgid "Start"
 #~ msgstr "Започни"
