@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
-"POT-Creation-Date: 2008-12-14 09:12+0100\n"
+"POT-Creation-Date: 2008-12-15 09:25+0100\n"
 "PO-Revision-Date: 2005-05-18 14:31+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1146,7 +1146,7 @@ msgstr ""
 "Дали сте сигурни?"
 
 #: libs/dialogs/rawcameradlg.cpp:77
-msgid "List of supported RAW camera"
+msgid "List of supported RAW cameras"
 msgstr ""
 
 #: libs/dialogs/rawcameradlg.cpp:107
@@ -1877,12 +1877,12 @@ msgstr "Изострување..."
 msgid "No options available"
 msgstr "Поврзувањето не успеа"
 
-#: libs/widgets/common/statuszoombar.cpp:113
+#: digikam/digikamapp.cpp:919 libs/widgets/common/statuszoombar.cpp:113
 #: utilities/imageeditor/editor/editorwindow.cpp:550
 msgid "Zoom Out"
 msgstr "Оддалечи го погледот"
 
-#: libs/widgets/common/statuszoombar.cpp:130
+#: digikam/digikamapp.cpp:911 libs/widgets/common/statuszoombar.cpp:130
 #: utilities/imageeditor/editor/editorwindow.cpp:545
 #, fuzzy
 msgid "Zoom In"
@@ -3570,8 +3570,9 @@ msgid "Refresh all album contents"
 msgstr "Оваа опција прави нов празен албум во базата на податоци."
 
 #: digikam/digikamapp.cpp:641
-msgid "Synchronize images with database"
-msgstr ""
+#, fuzzy
+msgid "Synchronize Images with Database"
+msgstr "Се поврзувам со апаратот..."
 
 #: digikam/digikamapp.cpp:648
 msgid ""
@@ -3666,7 +3667,7 @@ msgid "Flipped Horizontally"
 msgstr "Превртено хоризонтално"
 
 #: digikam/digikamapp.cpp:798
-msgid "Rotated upside down"
+msgid "Rotated Upside Down"
 msgstr ""
 
 #: digikam/digikamapp.cpp:804
@@ -3675,22 +3676,22 @@ msgstr "Превртено вертикално"
 
 #: digikam/digikamapp.cpp:810
 #, fuzzy
-msgid "Rotated right / Horiz. Flipped"
+msgid "Rotated Right / Horiz. Flipped"
 msgstr "Свртено за 90 степени / превртено хоризонтално "
 
 #: digikam/digikamapp.cpp:816
 #, fuzzy
-msgid "Rotated right"
+msgid "Rotated Right"
 msgstr "Ро&тирај"
 
 #: digikam/digikamapp.cpp:822
 #, fuzzy
-msgid "Rotated right / Vert. Flipped"
+msgid "Rotated Right / Vert. Flipped"
 msgstr "Свртено за 90 степени / превртено вертикално"
 
 #: digikam/digikamapp.cpp:828
 #, fuzzy
-msgid "Rotated left"
+msgid "Rotated Left"
 msgstr "Ро&тирај"
 
 #: digikam/digikamapp.cpp:887
@@ -3698,25 +3699,11 @@ msgstr "Ро&тирај"
 msgid "Select None"
 msgstr "Избери ништо"
 
-#: digikam/digikamapp.cpp:911 imageplugins/superimpose/superimposetool.cpp:103
-#: utilities/lighttable/lighttablepreview.cpp:378
-#: utilities/lighttable/lighttablewindow.cpp:537
-#, fuzzy
-msgid "Zoom in"
-msgstr "Доближи го погледот"
-
-#: digikam/digikamapp.cpp:919 imageplugins/superimpose/superimposetool.cpp:109
-#: utilities/lighttable/lighttablepreview.cpp:379
-#: utilities/lighttable/lighttablewindow.cpp:542
-#, fuzzy
-msgid "Zoom out"
-msgstr "Оддалечи го погледот"
-
 #: digikam/digikamapp.cpp:927
 #: utilities/imageeditor/editor/editorwindow.cpp:359
 #: utilities/lighttable/lighttablewindow.cpp:410
-#, fuzzy
-msgid "Zoom to 1:1"
+#, fuzzy, c-format
+msgid "Zoom to 100%"
 msgstr "Оддалечи го погледот"
 
 #: digikam/digikamapp.cpp:935
@@ -3744,8 +3731,8 @@ msgstr ""
 #: utilities/imageeditor/editor/editorwindow.cpp:410
 #: utilities/lighttable/lighttablewindow.cpp:426
 #, fuzzy
-msgid "Slide"
-msgstr "Празници"
+msgid "Slideshow"
+msgstr "Поставувања за советите"
 
 #: digikam/digikamapp.cpp:958
 msgid "All"
@@ -3757,13 +3744,13 @@ msgid "Selection"
 msgstr "Избор"
 
 #: digikam/digikamapp.cpp:970
-msgid "With all sub-albums"
+msgid "With All Sub-Albums"
 msgstr ""
 
 #: digikam/digikamapp.cpp:982
 #: utilities/imageeditor/editor/editorwindow.cpp:502
 #: utilities/lighttable/lighttablewindow.cpp:460
-msgid "RAW camera supported"
+msgid "Supported RAW Cameras"
 msgstr ""
 
 #: digikam/digikamapp.cpp:990
@@ -3844,7 +3831,7 @@ msgstr "Под&реди фотографии"
 
 #: digikam/digikamapp.cpp:1060
 #, fuzzy
-msgid "Rebuild all Thumbnails..."
+msgid "Rebuild All Thumbnails..."
 msgstr "Сокриј ги сликичките"
 
 #: digikam/digikamapp.cpp:1064
@@ -7208,6 +7195,20 @@ msgstr ""
 #: imageplugins/superimpose/superimposetool.cpp:91
 msgid "<p>This is the preview of the template superimposed onto the image."
 msgstr ""
+
+#: imageplugins/superimpose/superimposetool.cpp:103
+#: utilities/lighttable/lighttablepreview.cpp:378
+#: utilities/lighttable/lighttablewindow.cpp:537
+#, fuzzy
+msgid "Zoom in"
+msgstr "Доближи го погледот"
+
+#: imageplugins/superimpose/superimposetool.cpp:109
+#: utilities/lighttable/lighttablepreview.cpp:379
+#: utilities/lighttable/lighttablewindow.cpp:542
+#, fuzzy
+msgid "Zoom out"
+msgstr "Оддалечи го погледот"
 
 #: imageplugins/superimpose/superimposetool.cpp:140
 msgid "Root Directory..."
@@ -12190,12 +12191,12 @@ msgstr "Избери нов&и елементи"
 
 #: utilities/cameragui/cameraui.cpp:415
 #, fuzzy
-msgid "Increase thumbnail size"
+msgid "Increase Thumbnail Size"
 msgstr "Зголеми ги сликичкате"
 
 #: utilities/cameragui/cameraui.cpp:416
 #, fuzzy
-msgid "Decrease thumbnail size"
+msgid "Decrease Thumbnail Size"
 msgstr "Намали ги сликичките"
 
 #: utilities/cameragui/cameraui.cpp:418
@@ -12399,6 +12400,18 @@ msgstr "Поставувања за советите"
 #, fuzzy
 msgid "Click To Exit..."
 msgstr "Црно-бело..."
+
+#, fuzzy
+#~ msgid "Rotated right"
+#~ msgstr "Ро&тирај"
+
+#, fuzzy
+#~ msgid "Rotated left"
+#~ msgstr "Ро&тирај"
+
+#, fuzzy
+#~ msgid "Slide"
+#~ msgstr "Празници"
 
 #, fuzzy
 #~ msgid "Image files"
