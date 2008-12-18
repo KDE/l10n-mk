@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-17 10:45+0100\n"
+"POT-Creation-Date: 2008-12-18 10:01+0100\n"
 "PO-Revision-Date: 2007-02-28 13:59+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -45,7 +45,7 @@ msgstr "Работи на дадената датотека"
 msgid "Import the given vCard"
 msgstr "Ја внесува дадената vCard-картичка"
 
-#: typecombo.h:109
+#: typecombo.h:111
 #, kde-format
 msgctxt "label (number)"
 msgid "%1 (%2)"
@@ -1045,9 +1045,9 @@ msgctxt "<urlLabel>:"
 msgid "%1:"
 msgstr "%1:"
 
-#: addresseeeditorwidget.cpp:230
-msgid "&General"
-msgstr "&Општо"
+#: addresseeeditorwidget.cpp:230 views/configurecardviewdialog.cpp:202
+msgid "General"
+msgstr "Општо"
 
 #: addresseeeditorwidget.cpp:255
 #, kde-format
@@ -1063,7 +1063,9 @@ msgid "Partner's name:"
 msgstr "Име на партнер:"
 
 #: addresseeeditorwidget.cpp:283
-msgid "&Details"
+#, fuzzy
+#| msgid "&Details"
+msgid "Details"
 msgstr "&Детали"
 
 #: addresseeeditorwidget.cpp:296
@@ -1370,7 +1372,7 @@ msgstr "исток"
 msgid "West"
 msgstr "запад"
 
-#: geowidget.cpp:462 xxport/csvimportdialog.cpp:70
+#: geowidget.cpp:462 xxport/csvimportdialog.cpp:69
 msgid "Undefined"
 msgstr "Недефинирано"
 
@@ -3014,7 +3016,7 @@ msgid "Do Not Import"
 msgstr "Не внесувај"
 
 #: viewmanager.cpp:579 views/configuretableviewdialog.cpp:120
-#: xxport/csvimportdialog.cpp:436
+#: xxport/csvimportdialog.cpp:435
 msgid "None"
 msgstr "Нема"
 
@@ -3104,35 +3106,35 @@ msgstr "<qt>Нема достапен приклучок за изнесувањ
 msgid "Unable to export contacts."
 msgstr "Не можам да ги изнесам контактите."
 
-#: xxportselectdialog.cpp:52
+#: xxportselectdialog.cpp:51
 msgid "Choose Which Contacts to Export"
 msgstr "Изберете кои контакти да се изнесат"
 
-#: xxportselectdialog.cpp:82 printing/stylepage.cpp:46
+#: xxportselectdialog.cpp:81 printing/stylepage.cpp:46
 msgid "Ascending"
 msgstr "Растечки"
 
-#: xxportselectdialog.cpp:83 printing/stylepage.cpp:47
+#: xxportselectdialog.cpp:82 printing/stylepage.cpp:47
 msgid "Descending"
 msgstr "Опаѓачки"
 
-#: xxportselectdialog.cpp:177
+#: xxportselectdialog.cpp:176
 msgid "Which contacts do you want to export?"
 msgstr "Кои контакти сакате да ги изнесете?"
 
-#: xxportselectdialog.cpp:180
+#: xxportselectdialog.cpp:179
 msgid "Selection"
 msgstr "Избор"
 
-#: xxportselectdialog.cpp:187 printing/selectionpage.cpp:65
+#: xxportselectdialog.cpp:186 printing/selectionpage.cpp:65
 msgid "&All contacts"
 msgstr "&Сите контакти"
 
-#: xxportselectdialog.cpp:189
+#: xxportselectdialog.cpp:188
 msgid "Export the entire address book"
 msgstr "Го изнесува целиот адресар"
 
-#: xxportselectdialog.cpp:191
+#: xxportselectdialog.cpp:190
 #, kde-format
 msgid "&Selected contact"
 msgid_plural "&Selected contacts (%1 selected)"
@@ -3140,7 +3142,7 @@ msgstr[0] "&Избраниот %1 контакт"
 msgstr[1] "&Избраните контакти (избрани се %1)"
 msgstr[2] "&Избраните контакти (избрани се %1)"
 
-#: xxportselectdialog.cpp:192
+#: xxportselectdialog.cpp:191
 msgid ""
 "Only export contacts selected in KAddressBook.\n"
 "This option is disabled if no contacts are selected."
@@ -3148,11 +3150,11 @@ msgstr ""
 "Ги изнесува само избраните контакти во КАдресар.\n"
 "Оваа опција е оневозможена ако нема избрани контакти."
 
-#: xxportselectdialog.cpp:196 printing/selectionpage.cpp:75
+#: xxportselectdialog.cpp:195 printing/selectionpage.cpp:75
 msgid "Contacts matching &filter"
 msgstr "Контакти што одговараат на &филтер"
 
-#: xxportselectdialog.cpp:197
+#: xxportselectdialog.cpp:196
 msgid ""
 "Only export contacts matching the selected filter.\n"
 "This option is disabled if you have not defined any filters"
@@ -3160,11 +3162,11 @@ msgstr ""
 "Ги изнесува само контактите што одговараат на избраниот филтер.\n"
 "Опцијата е оневозможена ако немате дефинирано филтри"
 
-#: xxportselectdialog.cpp:201 printing/selectionpage.cpp:80
+#: xxportselectdialog.cpp:200 printing/selectionpage.cpp:80
 msgid "Category &members"
 msgstr "Членови на &категорија"
 
-#: xxportselectdialog.cpp:202
+#: xxportselectdialog.cpp:201
 msgid ""
 "Only export contacts who are members of a category that is checked on the "
 "list to the left.\n"
@@ -3174,23 +3176,23 @@ msgstr ""
 "на листата налево.\n"
 "Опцијата е оневозможена ако немате дефинирано категории."
 
-#: xxportselectdialog.cpp:208
+#: xxportselectdialog.cpp:207
 msgid "Select a filter to decide which contacts to export."
 msgstr "Избира филтер за изнесување на контакти."
 
-#: xxportselectdialog.cpp:214 printing/selectionpage.cpp:93
+#: xxportselectdialog.cpp:213 printing/selectionpage.cpp:93
 msgid "Check the categories whose members you want to print."
 msgstr "Изберете ги категориите чии што членови сакате да ги испечатите."
 
-#: xxportselectdialog.cpp:222 printing/stylepage.cpp:126
+#: xxportselectdialog.cpp:221 printing/stylepage.cpp:126
 msgid "Sorting"
 msgstr "Подредување"
 
-#: xxportselectdialog.cpp:228 printing/stylepage.cpp:133
+#: xxportselectdialog.cpp:227 printing/stylepage.cpp:133
 msgid "Criterion:"
 msgstr "Критериум:"
 
-#: xxportselectdialog.cpp:234 printing/stylepage.cpp:139
+#: xxportselectdialog.cpp:233 printing/stylepage.cpp:139
 msgid "Order:"
 msgstr "Редослед:"
 
@@ -3578,10 +3580,6 @@ msgstr "Боја за означување"
 msgid "Highlighted Text Color"
 msgstr "Боја на означен текст"
 
-#: views/configurecardviewdialog.cpp:202
-msgid "General"
-msgstr "Општо"
-
 #: views/configurecardviewdialog.cpp:204
 msgid "Draw &separators"
 msgstr "И&сцртај раздвојувачи"
@@ -3630,7 +3628,9 @@ msgid "Sets the width of column separators"
 msgstr "Ја поставува ширината на раздвојувачите на колони"
 
 #: views/configurecardviewdialog.cpp:245
-msgid "&Layout"
+#, fuzzy
+#| msgid "&Layout"
+msgid "Layout"
 msgstr "Р&аспоред"
 
 #: views/configurecardviewdialog.cpp:251
@@ -3638,7 +3638,9 @@ msgid "&Enable custom colors"
 msgstr "Овозможи сопствени &бои"
 
 #: views/configurecardviewdialog.cpp:254
-msgid "&Colors"
+#, fuzzy
+#| msgid "&Colors"
+msgid "Colors"
 msgstr "&Бои"
 
 #: views/configurecardviewdialog.cpp:257
@@ -3683,8 +3685,10 @@ msgstr ""
 "со задебелен стил за заглавието и нормален стил за податоците."
 
 #: views/configurecardviewdialog.cpp:305
-msgid "&Fonts"
-msgstr ""
+#, fuzzy
+#| msgid "Contains"
+msgid "Fonts"
+msgstr "содржи"
 
 #: views/configurecardviewdialog.cpp:312
 msgid "Show &empty fields"
@@ -3695,7 +3699,9 @@ msgid "Show field &labels"
 msgstr "Прикажи натписи на по&лињата"
 
 #: views/configurecardviewdialog.cpp:317
-msgid "Be&havior"
+#, fuzzy
+#| msgid "Be&havior"
+msgid "Behavior"
 msgstr "Од&несување"
 
 #: views/configuretableviewdialog.cpp:113
@@ -3792,55 +3798,55 @@ msgstr "<qt>Не можам да ја отворам датотеката <b>%1<
 msgid "The contacts have been exported successfully."
 msgstr "Контактите беа успешно изнесени."
 
-#: xxport/csvimportdialog.cpp:64
+#: xxport/csvimportdialog.cpp:63
 msgid "CSV Import Dialog"
 msgstr "Дијалог за внес на CSV"
 
-#: xxport/csvimportdialog.cpp:175
+#: xxport/csvimportdialog.cpp:174
 msgid "Importing contacts"
 msgstr "Внесувам контакти"
 
-#: xxport/csvimportdialog.cpp:382
+#: xxport/csvimportdialog.cpp:381
 msgid "File to import:"
 msgstr "Датотека за внесување:"
 
-#: xxport/csvimportdialog.cpp:392
+#: xxport/csvimportdialog.cpp:391
 msgid "Delimiter"
 msgstr "Разграничувач"
 
-#: xxport/csvimportdialog.cpp:403
+#: xxport/csvimportdialog.cpp:402
 msgid "Comma"
 msgstr "Запирка"
 
-#: xxport/csvimportdialog.cpp:408
+#: xxport/csvimportdialog.cpp:407
 msgid "Semicolon"
 msgstr "Точказапирка"
 
-#: xxport/csvimportdialog.cpp:412
+#: xxport/csvimportdialog.cpp:411
 msgid "Tabulator"
 msgstr "Табулатор"
 
-#: xxport/csvimportdialog.cpp:416
+#: xxport/csvimportdialog.cpp:415
 msgid "Space"
 msgstr "Празно место"
 
-#: xxport/csvimportdialog.cpp:420
+#: xxport/csvimportdialog.cpp:419
 msgid "Other"
 msgstr "Друго"
 
-#: xxport/csvimportdialog.cpp:429
+#: xxport/csvimportdialog.cpp:428
 msgid "1"
 msgstr "1"
 
-#: xxport/csvimportdialog.cpp:434
+#: xxport/csvimportdialog.cpp:433
 msgid "\""
 msgstr "\""
 
-#: xxport/csvimportdialog.cpp:435
+#: xxport/csvimportdialog.cpp:434
 msgid "'"
 msgstr "'"
 
-#: xxport/csvimportdialog.cpp:441
+#: xxport/csvimportdialog.cpp:440
 msgid ""
 "<ul><li>y: year with 2 digits</li><li>Y: year with 4 digits</li><li>m: month "
 "with 1 or 2 digits</li><li>M: month with 2 digits</li><li>d: day with 1 or 2 "
@@ -3850,72 +3856,72 @@ msgstr ""
 "месецот со 1 или 2 цифри</li><li>M: месецот со 2 цифри</li><li>d: денот со 1 "
 "или 2 цифри</li><li>D: денот со 2 цифри</li></ul>"
 
-#: xxport/csvimportdialog.cpp:449
+#: xxport/csvimportdialog.cpp:448
 msgid "Start at line:"
 msgstr "Започни од линија:"
 
-#: xxport/csvimportdialog.cpp:452
+#: xxport/csvimportdialog.cpp:451
 msgid "Textquote:"
 msgstr "Цитат на текст:"
 
-#: xxport/csvimportdialog.cpp:455
+#: xxport/csvimportdialog.cpp:454
 msgid "Date format:"
 msgstr "Формат на датум:"
 
-#: xxport/csvimportdialog.cpp:459
+#: xxport/csvimportdialog.cpp:458
 msgid "Ignore duplicate delimiters"
 msgstr "Игнорирај дупли разграничувачи"
 
-#: xxport/csvimportdialog.cpp:470
+#: xxport/csvimportdialog.cpp:469
 msgid "Apply Template..."
 msgstr "Примени образец..."
 
-#: xxport/csvimportdialog.cpp:471
+#: xxport/csvimportdialog.cpp:470
 msgid "Save Template..."
 msgstr "Зачувај образец..."
 
-#: xxport/csvimportdialog.cpp:686
+#: xxport/csvimportdialog.cpp:685
 #, kde-format
 msgid "Local (%1)"
 msgstr "Локално (%1)"
 
-#: xxport/csvimportdialog.cpp:687
+#: xxport/csvimportdialog.cpp:686
 msgid "[guess]"
 msgstr "[претпоставка]"
 
-#: xxport/csvimportdialog.cpp:688
+#: xxport/csvimportdialog.cpp:687
 msgid "Latin1"
 msgstr "Latin1"
 
-#: xxport/csvimportdialog.cpp:689
+#: xxport/csvimportdialog.cpp:688
 msgid "Unicode"
 msgstr "Уникод"
 
-#: xxport/csvimportdialog.cpp:690
+#: xxport/csvimportdialog.cpp:689
 msgid "Microsoft Unicode"
 msgstr "Мајкрософт Уникод"
 
-#: xxport/csvimportdialog.cpp:813
+#: xxport/csvimportdialog.cpp:812
 msgid "You have to assign at least one column."
 msgstr "Треба да одберете барем една колона."
 
-#: xxport/csvimportdialog.cpp:841
+#: xxport/csvimportdialog.cpp:840
 msgid "Template Selection"
 msgstr "Избор на образци"
 
-#: xxport/csvimportdialog.cpp:842
+#: xxport/csvimportdialog.cpp:841
 msgid "Please select a template, that matches the CSV file:"
 msgstr "Изберете образец што одговара на CSV-датотеката:"
 
-#: xxport/csvimportdialog.cpp:889
+#: xxport/csvimportdialog.cpp:888
 msgid "Template Name"
 msgstr "Име на образец"
 
-#: xxport/csvimportdialog.cpp:889
+#: xxport/csvimportdialog.cpp:888
 msgid "Please enter a name for the template:"
 msgstr "Внесете име за образецот:"
 
-#: xxport/csvimportdialog.cpp:965
+#: xxport/csvimportdialog.cpp:964
 msgid "Cannot open input file."
 msgstr "Не можам да ја отворам влезната датотека."
 
@@ -4378,6 +4384,9 @@ msgstr "Други полиња"
 #: xxport/vcard_xxport.cpp:501
 msgid "Encryption keys"
 msgstr "Клучеви за криптирање"
+
+#~ msgid "&General"
+#~ msgstr "&Општо"
 
 #, fuzzy
 #~| msgid "Text"
