@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmlirc\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-07 11:26+0100\n"
+"POT-Creation-Date: 2009-01-09 10:52+0100\n"
 "PO-Revision-Date: 2006-05-08 10:34+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: addaction.cpp:236
+#: addaction.cpp:240
 #, kde-format
 msgid ""
 "You did not select a mode of that remote control. Please use %1, or revert "
@@ -25,18 +25,18 @@ msgstr ""
 "Не избравте режим за тој далечински управувач. Ве молиме користете %1, или "
 "вратете се назад за да изберете друг режим."
 
-#: addaction.cpp:238
+#: addaction.cpp:242
 msgid "Incorrect Remote Control Detected"
 msgstr "Откриен е неправилен далечински управувач"
 
-#: addaction.cpp:459
+#: addaction.cpp:463
 #, fuzzy
 #| msgid "anonymous"
 msgctxt "Unknown parameter name in function"
 msgid "&lt;anonymous&gt;"
 msgstr "анонимен"
 
-#: editaction.cpp:188 editaction.cpp:219 kcmlirc.cpp:183
+#: editaction.cpp:167 editaction.cpp:198 kcmlirc.cpp:183
 msgid "[Exit current mode]"
 msgstr "[Излез од тековниот режим]"
 
@@ -131,77 +131,77 @@ msgstr "Изберете профил за додавање"
 msgid "Auto-Populate"
 msgstr "Автопополни..."
 
-#: kcmlirc.cpp:460
+#: kcmlirc.cpp:466
 #, kde-format
 msgid "Are you sure you want to remove %1 and all its actions?"
 msgstr "Дали сте сигурни дека сакате да го отстраните %1 и сите негови акции?"
 
-#: kcmlirc.cpp:462
+#: kcmlirc.cpp:468
 msgid "Erase Actions?"
 msgstr "Избриши акции?"
 
-#: kcmlirc.cpp:491
+#: kcmlirc.cpp:497
 msgid ""
 "You may only drag the selected items onto a mode of the same remote control"
 msgstr ""
 "Избраните елементи може да ги одвлечете само на режим од истиот далечински "
 "управувач"
 
-#: kcmlirc.cpp:492
+#: kcmlirc.cpp:498
 msgid "You May Not Drag Here"
 msgstr "Тука не може да влечете"
 
-#: kcmlirc.cpp:523
+#: kcmlirc.cpp:529
 msgid "Actions <i>always</i> available"
 msgstr "Акциите се <i>секогаш</i> достапни"
 
-#: kcmlirc.cpp:524
+#: kcmlirc.cpp:530
 #, kde-format
 msgid "Actions available only in mode <b>%1</b>"
 msgstr "Акциите се достапни само во режимот <b>%1</b>"
 
-#: kcmlirc.cpp:668 kcmlirc.cpp:711 kcmlirc.cpp:724
+#: kcmlirc.cpp:674 kcmlirc.cpp:717 kcmlirc.cpp:730
 msgid "Applications"
 msgstr "Апликации"
 
-#: kcmlirc.cpp:682 kcmlirc.cpp:717 kcmlirc.cpp:743
+#: kcmlirc.cpp:688 kcmlirc.cpp:723 kcmlirc.cpp:749
 msgid "Remote Controls"
 msgstr "Далечински управувачи"
 
-#: kcmlirc.cpp:708 kcmlirc.cpp:741 kcmlirc.cpp:761
+#: kcmlirc.cpp:714 kcmlirc.cpp:747 kcmlirc.cpp:767
 #, kde-format
 msgid "Information on <b>%1</b>:"
 msgstr "Информации за <b>%1</b>:"
 
-#: kcmlirc.cpp:713
+#: kcmlirc.cpp:719
 msgid "Number of Applications"
 msgstr "Број на апликации"
 
-#: kcmlirc.cpp:719
+#: kcmlirc.cpp:725
 msgid "Number of Remote Controls"
 msgstr "Број на далечински управувачи"
 
-#: kcmlirc.cpp:728 kcmlirc.cpp:748
+#: kcmlirc.cpp:734 kcmlirc.cpp:754
 msgid "Extension Name"
 msgstr "Име на екстензија"
 
-#: kcmlirc.cpp:731 kcmlirc.cpp:751
+#: kcmlirc.cpp:737 kcmlirc.cpp:757
 msgid "Extension Author"
 msgstr "Автор на екстензија"
 
-#: kcmlirc.cpp:734
+#: kcmlirc.cpp:740
 msgid "Application Identifier"
 msgstr "Идентификатор на апликација"
 
-#: kcmlirc.cpp:737
+#: kcmlirc.cpp:743
 msgid "Number of Actions"
 msgstr "Број на акции"
 
-#: kcmlirc.cpp:754
+#: kcmlirc.cpp:760
 msgid "Remote Control Identifier"
 msgstr "Идентификатор на далечински управувач"
 
-#: kcmlirc.cpp:757
+#: kcmlirc.cpp:763
 msgid "Number of Buttons"
 msgstr "Број на копчиња"
 
@@ -456,7 +456,7 @@ msgid "&Application:"
 msgstr "&Апликација:"
 
 #. i18n: file: editactionbase.ui:77
-#. i18n: ectx: property (text), widget (QRadioButton, theNotJustStart)
+#. i18n: ectx: property (text), widget (QRadioButton, thePerformFunction)
 #: rc.cpp:114
 msgid "&Perform function:"
 msgstr "&Изврши функција:"
@@ -508,7 +508,7 @@ msgid "Change &mode to:"
 msgstr "Смени режи&м во:"
 
 #. i18n: file: editactionbase.ui:396
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#. i18n: ectx: property (text), widget (QLabel, optionsDBusAppLabel)
 #: rc.cpp:141
 #, fuzzy
 #| msgid "<b>DCOP/Application Action Options</b>"
@@ -528,7 +528,7 @@ msgid "&Start program/service if not already running"
 msgstr "&Стартувај програма/сервис ако веќе не работи"
 
 #. i18n: file: editactionbase.ui:446
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#. i18n: ectx: property (text), widget (QLabel, theMCOLabel)
 #: rc.cpp:150
 msgid "<b>Mode Change Options</b>"
 msgstr "<b>Опции за смена на режим</b>"
