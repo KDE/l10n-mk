@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krunner\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-23 10:13+0100\n"
+"POT-Creation-Date: 2009-01-28 09:13+0100\n"
 "PO-Revision-Date: 2008-07-10 11:46+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -18,17 +18,17 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: interfaces/default/interface.cpp:76 interfaces/default/interface.cpp:77
+#: interfaces/default/interface.cpp:77 interfaces/default/interface.cpp:78
 #: interfaces/quicksand/qs_dialog.cpp:50 interfaces/quicksand/qs_dialog.cpp:51
 msgid "Settings"
 msgstr "Поставувања"
 
-#: interfaces/default/interface.cpp:96 interfaces/default/interface.cpp:97
-#: krunnerapp.cpp:202 krunnerapp.cpp:203
+#: interfaces/default/interface.cpp:97 interfaces/default/interface.cpp:98
+#: krunnerapp.cpp:204 krunnerapp.cpp:205
 msgid "Show System Activity"
 msgstr "Прикажи активност на системот"
 
-#: interfaces/default/interface.cpp:456
+#: interfaces/default/interface.cpp:458
 #, kde-format
 msgid "%1: %2"
 msgstr ""
@@ -92,86 +92,92 @@ msgstr[1] "<qt><nobr>Ќе бидете автоматски одјавени з�
 msgstr[2] "<qt><nobr>Ќе бидете автоматски одјавени за %1 секунди</nobr></qt>"
 
 #: lock/main.cc:61
-msgid "KRunner Locker"
-msgstr "Заклучувач на KRunner"
+msgid "KDE Screen Locker"
+msgstr ""
 
-#: lock/main.cc:61
-msgid "Session Locker for KRunner"
+#: lock/main.cc:62
+#, fuzzy
+#| msgid "Session Locker for KRunner"
+msgid "Session Locker for KDE Workspace"
 msgstr "Заклучувач на сесијата за KRunner"
 
-#: lock/main.cc:64
+#: lock/main.cc:65
 msgid "Force session locking"
 msgstr "Форсирај заклучување на сесијата"
 
-#: lock/main.cc:65
+#: lock/main.cc:66
 msgid "Only start screen saver"
 msgstr "Стартувај само чувар на екранот"
 
-#: lock/main.cc:66
+#: lock/main.cc:67
 msgid "Only use the blank screen saver"
 msgstr "Користи го само празниот чувар на екранот"
 
-#: lock/main.cc:67
+#: lock/main.cc:68
 msgid "start with plasma unlocked for configuring"
 msgstr ""
 
-#: lock/lockprocess.cc:796
+#: lock/lockprocess.cc:795
 msgid "Will not lock the session, as unlocking would be impossible:\n"
 msgstr ""
 "Нема да ја заклучам сесијата, бидејќи заклучувањето би било невозможно:\n"
 
-#: lock/lockprocess.cc:800
+#: lock/lockprocess.cc:799
 msgid "Cannot start <i>kcheckpass</i>."
 msgstr "Не можам да го стартувам <i>kcheckpass</i>."
 
-#: lock/lockprocess.cc:801
+#: lock/lockprocess.cc:800
 msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not setuid root."
 msgstr "<i>kcheckpass</i> не може да работи. Можеби не е setuid root."
 
-#: lock/lockprocess.cc:863
+#: lock/lockprocess.cc:862
 msgid "No appropriate greeter plugin configured."
 msgstr "Нема конфигурирано соодветен поздравен приклучок."
 
-#: lock/lockdlg.cc:98
+#: lock/lockdlg.cc:97
 msgid "<nobr><b>The session is locked</b></nobr><br />"
 msgstr "<nobr><b>Сесијата е заклучена</b></nobr><br />"
 
-#: lock/lockdlg.cc:99
+#: lock/lockdlg.cc:98
 #, kde-format
 msgid "<nobr><b>The session was locked by %1</b></nobr><br />"
 msgstr "<nobr><b>Сесијата е заклучена од %1</b></nobr><br />"
 
-#: lock/lockdlg.cc:112
+#: lock/lockdlg.cc:111
 msgid "Unl&ock"
 msgstr "От&клучи"
 
-#: lock/lockdlg.cc:114
+#: lock/lockdlg.cc:113
 msgid "Sw&itch User..."
 msgstr "Смен&и корисник..."
 
-#: lock/lockdlg.cc:182
+#: lock/lockdlg.cc:181
 msgid "<b>Unlocking failed</b>"
 msgstr "<b>Отклучувањето не успеа</b>"
 
-#: lock/lockdlg.cc:190
+#: lock/lockdlg.cc:189
 msgid "<b>Warning: Caps Lock on</b>"
 msgstr "<b>Внимание: Caps Lock е вклучен</b>"
 
-#: lock/lockdlg.cc:422
-#, kde-format
+#: lock/lockdlg.cc:421
+#, fuzzy, kde-format
+#| msgid ""
+#| "Cannot unlock the session because the authentication system failed to "
+#| "work;\n"
+#| "you must kill krunner_lock (pid %1) manually."
 msgid ""
 "Cannot unlock the session because the authentication system failed to work;\n"
-"you must kill krunner_lock (pid %1) manually."
+"you must kill kscreenlocker (pid %1) manually."
 msgstr ""
 "Не може да се отклучи сесијата бидејќи системот за проверка за автентичност "
 "откажа да работи.\n"
 "Ќе мора рачно да го прекинете kdesktop_lock (pid %1)."
 
-#: lock/lockdlg.cc:511
+#: lock/lockdlg.cc:510
 msgid "&Start New Session"
 msgstr "Започни нова &сесија"
 
-#: lock/lockdlg.cc:519
+#: lock/lockdlg.cc:518
 #, kde-format
 msgid ""
 "You have chosen to open another desktop session instead of resuming the "
@@ -193,28 +199,28 @@ msgstr ""
 "панелот на KDE и менијата од работната површина имаат дејства за менување на "
 "сесиите."
 
-#: lock/lockdlg.cc:532
+#: lock/lockdlg.cc:531
 msgid "&Do not ask again"
 msgstr "&Не прашувај повторно"
 
-#: lock/lockdlg.cc:588
+#: lock/lockdlg.cc:587
 msgid "Session"
 msgstr "Сесија"
 
-#: lock/lockdlg.cc:588
+#: lock/lockdlg.cc:587
 msgid "Location"
 msgstr "Локација"
 
-#: lock/lockdlg.cc:616
+#: lock/lockdlg.cc:615
 msgctxt "session"
 msgid "&Activate"
 msgstr "&Активирај"
 
-#: lock/lockdlg.cc:625
+#: lock/lockdlg.cc:624
 msgid "Start &New Session"
 msgstr "Започни нова &сесија"
 
-#: krunnerdialog.cpp:57 krunnerapp.cpp:191 krunnerapp.cpp:192
+#: krunnerdialog.cpp:57 krunnerapp.cpp:193 krunnerapp.cpp:194
 msgid "Run Command"
 msgstr "Изврши команда"
 
@@ -276,39 +282,39 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "bobibobi@freemail.com.mk"
 
-#: krunnerapp.cpp:196 krunnerapp.cpp:197
+#: krunnerapp.cpp:198 krunnerapp.cpp:199
 msgid "Run Command on clipboard contents"
 msgstr "Изврши наредба врз содржината на таблата за исечоци"
 
-#: krunnerapp.cpp:214 krunnerapp.cpp:215
+#: krunnerapp.cpp:216 krunnerapp.cpp:217
 msgid "Switch User"
 msgstr "Смени корисник"
 
-#: krunnerapp.cpp:221 krunnerapp.cpp:222
+#: krunnerapp.cpp:223 krunnerapp.cpp:224
 msgid "Lock Session"
 msgstr "Заклучи ја сесијата"
 
-#: krunnerapp.cpp:229 krunnerapp.cpp:230
+#: krunnerapp.cpp:231 krunnerapp.cpp:232
 msgid "Log Out"
 msgstr "Одјави се"
 
-#: krunnerapp.cpp:234 krunnerapp.cpp:235
+#: krunnerapp.cpp:236 krunnerapp.cpp:237
 msgid "Log Out Without Confirmation"
 msgstr "Одјави се без потврда"
 
-#: krunnerapp.cpp:239 krunnerapp.cpp:240
+#: krunnerapp.cpp:241 krunnerapp.cpp:242
 msgid "Halt Without Confirmation"
 msgstr "Исклучи без потврда"
 
-#: krunnerapp.cpp:244 krunnerapp.cpp:245
+#: krunnerapp.cpp:246 krunnerapp.cpp:247
 msgid "Reboot Without Confirmation"
 msgstr "Рестартирај без потврда"
 
-#: krunnerapp.cpp:296
+#: krunnerapp.cpp:298
 msgid "System Activity"
 msgstr "Активност на системот"
 
-#: krunnerapp.cpp:405
+#: krunnerapp.cpp:407
 msgid ""
 "Could not log out properly.\n"
 "The session manager cannot be contacted. You can try to force a shutdown by "
@@ -319,6 +325,9 @@ msgstr ""
 "Не можеше да се контактира со менаџерот на сесии. Може да се обидете да "
 "присилите исклучување со притискање на Ctrl+Alt+Backspace. Забележете дека "
 "вашата тековна сесија нема да биде снимена при присилно исклучување."
+
+#~ msgid "KRunner Locker"
+#~ msgstr "Заклучувач на KRunner"
 
 #, fuzzy
 #~| msgid "KRunner Settings"
