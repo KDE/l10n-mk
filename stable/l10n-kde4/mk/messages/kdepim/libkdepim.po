@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-27 08:27+0100\n"
+"POT-Creation-Date: 2009-01-29 07:22+0100\n"
 "PO-Revision-Date: 2007-02-28 14:09+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: addresseelineedit.cpp:815
+#: addresseelineedit.cpp:861
 msgid "Configure Completion Order..."
 msgstr "Конфигурирај редослес за довршување..."
 
@@ -52,7 +52,8 @@ msgstr "Прикажи сопствени полиња"
 msgid "SMS"
 msgstr "СМС"
 
-#: addresseeview.cpp:243
+#: addresseeview.cpp:243 ldapsearchdialog.cpp:83 ldapsearchdialog.cpp:158
+#: ldapsearchdialog.cpp:298 ldapsearchdialog.cpp:371
 msgid "Email"
 msgstr "Е-пошта"
 
@@ -68,7 +69,7 @@ msgstr ""
 msgid "Notes"
 msgstr "Белешки"
 
-#: addresseeview.cpp:332
+#: addresseeview.cpp:332 ldapsearchdialog.cpp:95 ldapsearchdialog.cpp:311
 msgid "Department"
 msgstr "Оддел"
 
@@ -95,7 +96,7 @@ msgstr "Име на партнер"
 msgid "Office"
 msgstr "Канцеларија"
 
-#: addresseeview.cpp:338
+#: addresseeview.cpp:338 addresseeview.cpp:378
 msgid "IM Address"
 msgstr "Адреса за инстант-пораки"
 
@@ -103,13 +104,13 @@ msgstr "Адреса за инстант-пораки"
 msgid "Anniversary"
 msgstr "Годишнина"
 
-#: addresseeview.cpp:456
+#: addresseeview.cpp:466
 #, fuzzy, kde-format
 #| msgid "Address book:"
 msgid "<p><b>Address book</b>: %1</p>"
 msgstr "Адресар:"
 
-#: addresseeview.cpp:566 addresseeview.cpp:581 addresseeview.cpp:617
+#: addresseeview.cpp:576 addresseeview.cpp:591 addresseeview.cpp:627
 msgid ""
 "There is no application set which could be executed. Please go to the "
 "settings dialog and configure one."
@@ -117,71 +118,71 @@ msgstr ""
 "Нема множ. апликации што може да се изврши. Одете до дијалогот за "
 "конфигурација и конфигурирајте ја."
 
-#: addresseeview.cpp:671
+#: addresseeview.cpp:681
 #, kde-format
 msgid "Send mail to '%1'"
 msgstr "Испрати пошта на „%1“"
 
-#: addresseeview.cpp:676
+#: addresseeview.cpp:686
 #, kde-format
 msgid "Call number %1"
 msgstr "Повикај го бројот %1"
 
-#: addresseeview.cpp:681
+#: addresseeview.cpp:691
 #, kde-format
 msgid "Send fax to %1"
 msgstr "Испрати факс на %1"
 
-#: addresseeview.cpp:683
+#: addresseeview.cpp:693
 msgid "Show address on map"
 msgstr "Прикажи ја адресата на мапата"
 
-#: addresseeview.cpp:686
+#: addresseeview.cpp:696
 #, kde-format
 msgid "Send SMS to %1"
 msgstr "Испрати СМС на %1"
 
-#: addresseeview.cpp:689
+#: addresseeview.cpp:699
 #, kde-format
 msgid "Open URL %1"
 msgstr "Отвори го URL %1"
 
-#: addresseeview.cpp:691
+#: addresseeview.cpp:701
 #, kde-format
 msgid "Chat with %1"
 msgstr "Муабети со %1"
 
-#: addressesdialog.cpp:112 addressesdialog.cpp:120
+#: addressesdialog.cpp:119 addressesdialog.cpp:127
 msgid "<group>"
 msgstr "<група>"
 
 #. i18n: file: addresspicker.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, AddressPickerUI)
-#: addressesdialog.cpp:206 rc.cpp:3
+#: addressesdialog.cpp:213 rc.cpp:3
 msgid "Address Selection"
 msgstr "Избор на адреса"
 
-#: addressesdialog.cpp:232 addressesdialog.cpp:691
+#: addressesdialog.cpp:239 addressesdialog.cpp:702
 msgid "To"
 msgstr "До"
 
-#: addressesdialog.cpp:243 addressesdialog.cpp:713
+#: addressesdialog.cpp:250 addressesdialog.cpp:724
 msgid "CC"
 msgstr "CC"
 
-#: addressesdialog.cpp:254 addressesdialog.cpp:735
+#: addressesdialog.cpp:261 addressesdialog.cpp:746
 msgid "BCC"
 msgstr "BCC"
 
-#: addressesdialog.cpp:313 recentaddresses.cpp:175
+#: addressesdialog.cpp:320 recentaddresses.cpp:175
 msgid "Recent Addresses"
 msgstr "Скорешни адреси"
 
-#: addressesdialog.cpp:437
+#: addressesdialog.cpp:446
 msgid "Other Addresses"
 msgstr "Други адреси"
 
-#: addressesdialog.cpp:845
+#: addressesdialog.cpp:856
 msgid ""
 "There are no addresses in your list. First add some addresses from your "
 "address book, then try again."
@@ -189,15 +190,15 @@ msgstr ""
 "Во вашата листа нема адреси. Прво додајте некои адреси од Вашиот адресар и "
 "потоа обидете се повторно."
 
-#: addressesdialog.cpp:852
+#: addressesdialog.cpp:863
 msgid "New Distribution List"
 msgstr "Нова листа за дистрибуција"
 
-#: addressesdialog.cpp:853
+#: addressesdialog.cpp:864
 msgid "Please enter name:"
 msgstr "Внесете име:"
 
-#: addressesdialog.cpp:866
+#: addressesdialog.cpp:877
 #, kde-format
 msgid ""
 "<qt>Distribution list with the given name <b>%1</b> already exists. Please "
@@ -206,7 +207,7 @@ msgstr ""
 "<qt>Листата за дистрибуција со името <b>%1</b> веќе постои. Изберете "
 "различно име.</qt>"
 
-#: addressesdialog.cpp:1000
+#: addressesdialog.cpp:1035
 msgid "Distribution Lists"
 msgstr "Листи за дистрибуција"
 
@@ -329,7 +330,7 @@ msgstr ""
 msgid "Duration"
 msgstr ""
 
-#: calendardiffalgo.cpp:136
+#: calendardiffalgo.cpp:136 ldapsearchdialog.cpp:98 ldapsearchdialog.cpp:312
 msgid "Description"
 msgstr "Опис"
 
@@ -421,15 +422,21 @@ msgstr ""
 msgid "Completed"
 msgstr ""
 
-#. i18n: file: categoryeditdialog_base.ui:16
+#. i18n: file: categoryeditdialog_base.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, CategoryEditDialog_base)
-#: categoryeditdialog.cpp:45 rc.cpp:42
+#: categoryeditdialog.cpp:40 rc.cpp:45
 msgid "Edit Categories"
 msgstr "Уредување категории"
 
+#: categoryeditdialog.cpp:123 categoryeditdialog.cpp:141
+#, fuzzy
+#| msgid "Category"
+msgid "New category"
+msgstr "Категорија"
+
 #. i18n: file: categoryselectdialog_base.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, CategorySelectDialog_base)
-#: categoryselectdialog.cpp:159 rc.cpp:57
+#: categoryselectdialog.cpp:158 rc.cpp:90
 msgid "Select Categories"
 msgstr "Избирање категории"
 
@@ -446,6 +453,42 @@ msgstr "Уредување редослед на довршување"
 #, kde-format
 msgid "Showing URL %1"
 msgstr "Прикажувам URL %1"
+
+#: foldertreewidget.cpp:352
+#, fuzzy
+#| msgid "Local Event"
+msgid "Local"
+msgstr "Локален настан"
+
+#: foldertreewidget.cpp:355
+msgid "IMAP"
+msgstr ""
+
+#: foldertreewidget.cpp:358
+msgid "Cached IMAP"
+msgstr ""
+
+#: foldertreewidget.cpp:361
+#, fuzzy
+#| msgid "Notes"
+msgid "News"
+msgstr "Белешки"
+
+#: foldertreewidget.cpp:364 ldapsearchdialog.cpp:166 ldapsearchdialog.cpp:433
+#, fuzzy
+#| msgid "Search:"
+msgid "Search"
+msgstr "Пребарајте:"
+
+#: foldertreewidget.cpp:367
+#, fuzzy
+#| msgid "Notes"
+msgid "None"
+msgstr "Белешки"
+
+#: foldertreewidget.cpp:373
+msgid "Unknown"
+msgstr ""
 
 #: kaccount.cpp:77
 msgctxt "@item IMAP account"
@@ -489,7 +532,7 @@ msgctxt "@item unknown mail account"
 msgid "Unknown"
 msgstr ""
 
-#: kaddrbookexternal.cpp:100
+#: kaddrbookexternal.cpp:96
 #, kde-format
 msgid ""
 "<qt>The email address <b>%1</b> was added to your addressbook; you can add "
@@ -498,12 +541,12 @@ msgstr ""
 "<qt>Е-поштенската адреса <b>%1</b> беше додадена во Вашиот адресар. Може да "
 "додадете повеќе информација на овој запис со отворање на адресарот.</qt>"
 
-#: kaddrbookexternal.cpp:107
+#: kaddrbookexternal.cpp:103
 #, kde-format
 msgid "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
 msgstr "<qt>Е-поштенската адреса <b>%1</b> е веќе во Вашиот адресар.</qt>"
 
-#: kaddrbookexternal.cpp:139
+#: kaddrbookexternal.cpp:135
 msgid ""
 "The VCard was added to your addressbook; you can add more information to "
 "this entry by opening the addressbook."
@@ -511,87 +554,87 @@ msgstr ""
 "VCard-картичката беше додадена во Вашиот адресар. Можете да додадете повеќе "
 "информација на овој запис со отворање на адресарот."
 
-#: kaddrbookexternal.cpp:146
+#: kaddrbookexternal.cpp:142
 msgid ""
 "The VCard's primary email address is already in your addressbook; however, "
 "you may save the VCard into a file and import it into the addressbook "
 "manually."
 msgstr ""
 
-#: kcmdesignerfields.cpp:84 kcmdesignerfields.cpp:85 kcmdesignerfields.cpp:90
+#: kcmdesignerfields.cpp:81 kcmdesignerfields.cpp:82 kcmdesignerfields.cpp:87
 msgid "Text"
 msgstr "Текст"
 
-#: kcmdesignerfields.cpp:86
+#: kcmdesignerfields.cpp:83
 msgid "Numeric Value"
 msgstr "Нумеричка вредност"
 
-#: kcmdesignerfields.cpp:87
+#: kcmdesignerfields.cpp:84
 msgid "Boolean"
 msgstr "Логичка"
 
-#: kcmdesignerfields.cpp:88
+#: kcmdesignerfields.cpp:85
 msgid "Selection"
 msgstr "Избор"
 
-#: kcmdesignerfields.cpp:89 kcmdesignerfields.cpp:91
+#: kcmdesignerfields.cpp:86 kcmdesignerfields.cpp:88
 msgid "Date & Time"
 msgstr "Датум и време"
 
-#: kcmdesignerfields.cpp:92
+#: kcmdesignerfields.cpp:89
 msgid "Date"
 msgstr "Датум"
 
-#: kcmdesignerfields.cpp:145
+#: kcmdesignerfields.cpp:144
 msgid "KCMDesignerfields"
 msgstr "KCMDesignerfields"
 
-#: kcmdesignerfields.cpp:146
+#: kcmdesignerfields.cpp:145
 msgid "Qt Designer Fields Dialog"
 msgstr ""
 
-#: kcmdesignerfields.cpp:148
+#: kcmdesignerfields.cpp:147
 msgid "(c), 2004 Tobias Koenig"
 msgstr "(c), 2004 Tobias Koenig"
 
-#: kcmdesignerfields.cpp:150
+#: kcmdesignerfields.cpp:149
 #, fuzzy
 #| msgid "(c), 2004 Tobias Koenig"
 msgid "Tobias Koenig"
 msgstr "(c), 2004 Tobias Koenig"
 
-#: kcmdesignerfields.cpp:151
+#: kcmdesignerfields.cpp:150
 msgid "Cornelius Schumacher"
 msgstr ""
 
-#: kcmdesignerfields.cpp:189
+#: kcmdesignerfields.cpp:188
 #, kde-format
 msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
 msgstr "<qt>Дали навистина сакате да го избришете „<b>%1</b>“?</qt>"
 
-#: kcmdesignerfields.cpp:198
+#: kcmdesignerfields.cpp:197
 msgid "*.ui|Designer Files"
 msgstr "*.ui|Designer-датотеки"
 
-#: kcmdesignerfields.cpp:199
+#: kcmdesignerfields.cpp:198
 msgid "Import Page"
 msgstr "Внесување страница"
 
-#: kcmdesignerfields.cpp:295
+#: kcmdesignerfields.cpp:294
 msgid ""
 "<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
 "installed. You will only be able to import existing designer files.</qt>"
 msgstr ""
 
-#: kcmdesignerfields.cpp:306
+#: kcmdesignerfields.cpp:305
 msgid "Available Pages"
 msgstr "Достапни страници"
 
-#: kcmdesignerfields.cpp:313
+#: kcmdesignerfields.cpp:312
 msgid "Preview of Selected Page"
 msgstr "Преглед на избраната страница"
 
-#: kcmdesignerfields.cpp:328
+#: kcmdesignerfields.cpp:327
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><p>This section allows you to add your own GUI  Elements "
@@ -639,36 +682,36 @@ msgstr ""
 "смените името на апликацијата за уредување, поставете го името на контролата "
 "во Qt-дизајнер.</p></qt>"
 
-#: kcmdesignerfields.cpp:350
+#: kcmdesignerfields.cpp:349
 #, kde-format
 msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
 msgstr "<a href=\"whatsthis:%1\">Како функционира ова?</a>"
 
-#: kcmdesignerfields.cpp:362
+#: kcmdesignerfields.cpp:361
 msgid "Delete Page"
 msgstr "Избриши страница"
 
-#: kcmdesignerfields.cpp:365
+#: kcmdesignerfields.cpp:364
 msgid "Import Page..."
 msgstr "Внеси страница..."
 
-#: kcmdesignerfields.cpp:367
+#: kcmdesignerfields.cpp:366
 msgid "Edit with Qt Designer..."
 msgstr "Уреди со Qt-Дизајнер..."
 
-#: kcmdesignerfields.cpp:386
+#: kcmdesignerfields.cpp:385
 msgid "Key:"
 msgstr "Клуч:"
 
-#: kcmdesignerfields.cpp:388
+#: kcmdesignerfields.cpp:387
 msgid "Type:"
 msgstr "Тип:"
 
-#: kcmdesignerfields.cpp:390
+#: kcmdesignerfields.cpp:389
 msgid "Classname:"
 msgstr "Име на класа:"
 
-#: kcmdesignerfields.cpp:392
+#: kcmdesignerfields.cpp:391
 msgid "Description:"
 msgstr "Опис:"
 
@@ -825,102 +868,6 @@ msgctxt "@option do not specify a date"
 msgid "No Date"
 msgstr "Нема датум"
 
-#: kimportdialog.cpp:77
-msgid "Plain"
-msgstr "Обичен"
-
-#: kimportdialog.cpp:79
-msgid "Unquoted"
-msgstr "Без наводници"
-
-#: kimportdialog.cpp:81
-msgid "Bracketed"
-msgstr "Со загради"
-
-#: kimportdialog.cpp:83
-msgid "Undefined"
-msgstr "Недефиниран"
-
-#: kimportdialog.cpp:153
-msgid "Import Text File"
-msgstr "Внес на текстуална датотека"
-
-#: kimportdialog.cpp:165
-msgid "File to import:"
-msgstr "Датотека за внесување:"
-
-#: kimportdialog.cpp:181
-msgid "Separator:"
-msgstr "Раздвојувач:"
-
-#: kimportdialog.cpp:185
-msgid "Tab"
-msgstr "Табулатор"
-
-#: kimportdialog.cpp:186
-msgid "Space"
-msgstr "Празно место"
-
-#: kimportdialog.cpp:196
-msgid "Import starts at row:"
-msgstr "Внесот започнува од редица:"
-
-#: kimportdialog.cpp:211
-msgid "Header"
-msgstr "Заглавие"
-
-#: kimportdialog.cpp:220
-msgid "Assign to Selected Column"
-msgstr "Додели на избраната колона"
-
-#: kimportdialog.cpp:224
-msgid "Remove Assignment From Selected Column"
-msgstr "Отстрани доделување од избраната колона"
-
-#: kimportdialog.cpp:228
-msgid "Assign with Template..."
-msgstr ""
-
-#: kimportdialog.cpp:232
-msgid "Save Current Template"
-msgstr ""
-
-#: kimportdialog.cpp:325
-msgid "Loading Progress"
-msgstr "Прогрес на вчитувањето"
-
-#: kimportdialog.cpp:326
-msgid "Please wait while the file is loaded."
-msgstr "Почекајте додека се вчита датотеката"
-
-#: kimportdialog.cpp:601
-#, fuzzy
-#| msgid "Selection"
-msgid "Template Selection"
-msgstr "Избор"
-
-#: kimportdialog.cpp:602
-msgid "Please select a template, that matches the CSV file:"
-msgstr ""
-
-#: kimportdialog.cpp:660
-msgid "Importing Progress"
-msgstr "Прогрес на внесувањето"
-
-#: kimportdialog.cpp:661
-msgid "Please wait while the data is imported."
-msgstr "Почекајте додека се внесат податоците"
-
-#: kimportdialog.cpp:749
-msgid "Template Name"
-msgstr ""
-
-#: kimportdialog.cpp:749
-#, fuzzy
-#| msgid "Please enter name:"
-msgid "Please enter a name for the template:"
-msgstr "Внесете име:"
-
 #: kincidencechooser.cpp:58
 msgid "Conflict Detected"
 msgstr ""
@@ -1048,71 +995,57 @@ msgstr ""
 msgid "New (remote) entry"
 msgstr ""
 
-#: kmeditor.cpp:500
+#: kmeditor.cpp:529
 msgid "&Insert"
 msgstr ""
 
-#: kmeditor.cpp:501
+#: kmeditor.cpp:530
 #, fuzzy
 #| msgid "Save to File"
 msgid "Insert File"
 msgstr "Зачувај во датотека"
 
-#: kmeditor.cpp:589
-#, fuzzy
-#| msgid "Selection"
-msgid "Suggestions"
-msgstr "Избор"
-
-#: kmeditor.cpp:591
-msgid "Ignore"
-msgstr ""
-
-#: kmeditor.cpp:592
-msgid "Add to Dictionary"
-msgstr ""
-
-#: kmeditor.cpp:729
+#: kmeditor.cpp:658
 msgid ""
 "The external editor is still running.\n"
 "Abort the external editor or leave it open?"
 msgstr ""
 
-#: kmeditor.cpp:731
+#: kmeditor.cpp:660
 #, fuzzy
 #| msgid "Rule Editor"
 msgid "External Editor"
 msgstr "Уредувач на правила"
 
-#: kmeditor.cpp:732
+#: kmeditor.cpp:661
 #, fuzzy
 #| msgid "Rule Editor"
 msgid "Abort Editor"
 msgstr "Уредувач на правила"
 
-#: kmeditor.cpp:733
+#: kmeditor.cpp:662
 msgid "Leave Editor Open"
 msgstr ""
 
-#: kprefsdialog.cpp:232
+#: kprefsdialog.cpp:244
 msgid "Choose..."
 msgstr "Избери..."
 
-#: kprefsdialog.cpp:724
+#: kprefsdialog.cpp:765
 msgid "Preferences"
 msgstr ""
 
-#: kprefsdialog.cpp:832
+#: kprefsdialog.cpp:873
 msgid ""
 "You are about to set all preferences to default values. All custom "
 "modifications will be lost."
 msgstr ""
 
-#: kprefsdialog.cpp:834
+#: kprefsdialog.cpp:875
 msgid "Setting Default Preferences"
 msgstr ""
 
-#: kprefsdialog.cpp:835
+#: kprefsdialog.cpp:876
 msgid "Reset to Defaults"
 msgstr ""
 
@@ -1217,97 +1150,97 @@ msgstr ""
 msgid "Edit..."
 msgstr "Уреди..."
 
-#: kscoringeditor.cpp:247
+#: kscoringeditor.cpp:245
 msgid "Select an action."
 msgstr ""
 
-#: kscoringeditor.cpp:448
+#: kscoringeditor.cpp:444
 msgid "Properties"
 msgstr ""
 
-#: kscoringeditor.cpp:459
+#: kscoringeditor.cpp:455
 #, fuzzy
 #| msgid "&Name:"
 msgctxt "@label rule name"
 msgid "&Name:"
 msgstr "&Име:"
 
-#: kscoringeditor.cpp:467
+#: kscoringeditor.cpp:463
 msgid "&Groups:"
 msgstr "&Групи:"
 
-#: kscoringeditor.cpp:472
+#: kscoringeditor.cpp:468
 msgid "A&dd Group"
 msgstr "&Додај група"
 
-#: kscoringeditor.cpp:483
+#: kscoringeditor.cpp:479
 msgid "&Expire rule automatically"
 msgstr ""
 
-#: kscoringeditor.cpp:491
+#: kscoringeditor.cpp:487
 msgid "&Rule is valid for:"
 msgstr "П&равилото е валидно за:"
 
-#: kscoringeditor.cpp:502
+#: kscoringeditor.cpp:498
 msgid "Conditions"
 msgstr "Услови"
 
-#: kscoringeditor.cpp:512
+#: kscoringeditor.cpp:508
 msgid "Match a&ll conditions"
 msgstr ""
 
-#: kscoringeditor.cpp:515
+#: kscoringeditor.cpp:511
 msgid "Matc&h any condition"
 msgstr ""
 
-#: kscoringeditor.cpp:525
+#: kscoringeditor.cpp:521
 msgid "Actions"
 msgstr "Дејства"
 
-#: kscoringeditor.cpp:650
+#: kscoringeditor.cpp:646
 msgid " day"
 msgid_plural " days"
 msgstr[0] " ден"
 msgstr[1] " дена"
 msgstr[2] " дена"
 
-#: kscoringeditor.cpp:685
+#: kscoringeditor.cpp:681
 msgid "Move rule up"
 msgstr "Го преместува превилото нагоре"
 
-#: kscoringeditor.cpp:690
+#: kscoringeditor.cpp:686
 msgid "Move rule down"
 msgstr "Го преместува превилото надолу"
 
-#: kscoringeditor.cpp:702
+#: kscoringeditor.cpp:698
 msgid "New rule"
 msgstr "Ново правило"
 
-#: kscoringeditor.cpp:709
+#: kscoringeditor.cpp:705
 msgid "Edit rule"
 msgstr "Уредува правило"
 
-#: kscoringeditor.cpp:715
+#: kscoringeditor.cpp:711
 msgid "Remove rule"
 msgstr "Отстранува правило"
 
-#: kscoringeditor.cpp:720
+#: kscoringeditor.cpp:716
 msgid "Copy rule"
 msgstr "Копира правило"
 
-#: kscoringeditor.cpp:731 kscoringeditor.cpp:736 kscoringeditor.cpp:777
+#: kscoringeditor.cpp:727 kscoringeditor.cpp:732 kscoringeditor.cpp:773
 msgid "<placeholder>all groups</placeholder>"
 msgstr ""
 
-#: kscoringeditor.cpp:737
+#: kscoringeditor.cpp:733
 msgid "Sho&w only rules for group:"
 msgstr ""
 
-#: kscoringeditor.cpp:955
+#: kscoringeditor.cpp:951
 msgid "Rule Editor"
 msgstr "Уредувач на правила"
 
-#: kscoringeditor.cpp:1067
+#: kscoringeditor.cpp:1063
 msgid "Edit Rule"
 msgstr "Уредување правило"
 
@@ -1381,7 +1314,7 @@ msgstr[0] "%2: (%1 се совпаѓа)"
 msgstr[1] "%2: (%1 се совпаѓаат)"
 msgstr[2] "%2: (%1 се совпаѓаат)"
 
-#: ktimezonecombobox.cpp:50 ktimezonecombobox.cpp:98
+#: ktimezonecombobox.cpp:66 ktimezonecombobox.cpp:111
 #, fuzzy
 #| msgid "Location"
 msgid "Floating"
@@ -1396,6 +1329,152 @@ msgstr "Повеќе"
 msgctxt "fewer widgets"
 msgid "Fewer"
 msgstr "Помалку"
+
+#: ldapsearchdialog.cpp:81 ldapsearchdialog.cpp:314
+msgid "Title"
+msgstr ""
+
+#: ldapsearchdialog.cpp:82 ldapsearchdialog.cpp:297
+#, fuzzy
+#| msgid "Name"
+msgid "Full Name"
+msgstr "Име"
+
+#: ldapsearchdialog.cpp:84 ldapsearchdialog.cpp:159 ldapsearchdialog.cpp:299
+#: ldapsearchdialog.cpp:373
+#, fuzzy
+#| msgid "Hide Telephone Numbers"
+msgid "Home Number"
+msgstr "Скриј тел. броеви"
+
+#: ldapsearchdialog.cpp:85 ldapsearchdialog.cpp:160 ldapsearchdialog.cpp:300
+#: ldapsearchdialog.cpp:375
+#, fuzzy
+#| msgid "Hide Telephone Numbers"
+msgid "Work Number"
+msgstr "Скриј тел. броеви"
+
+#: ldapsearchdialog.cpp:86 ldapsearchdialog.cpp:301
+#, fuzzy
+#| msgid "Hide Telephone Numbers"
+msgid "Mobile Number"
+msgstr "Скриј тел. броеви"
+
+#: ldapsearchdialog.cpp:87 ldapsearchdialog.cpp:302
+#, fuzzy
+#| msgid "Hide Telephone Numbers"
+msgid "Fax Number"
+msgstr "Скриј тел. броеви"
+
+#: ldapsearchdialog.cpp:88
+msgid "Pager"
+msgstr ""
+
+#: ldapsearchdialog.cpp:89 ldapsearchdialog.cpp:305
+msgid "Street"
+msgstr ""
+
+#: ldapsearchdialog.cpp:90 ldapsearchdialog.cpp:306
+#, fuzzy
+#| msgid "Status"
+msgid "State"
+msgstr "Статус"
+
+#: ldapsearchdialog.cpp:91 ldapsearchdialog.cpp:307
+msgid "Country"
+msgstr ""
+
+#: ldapsearchdialog.cpp:92 ldapsearchdialog.cpp:310
+msgid "City"
+msgstr ""
+
+#: ldapsearchdialog.cpp:93 ldapsearchdialog.cpp:304
+#, fuzzy
+#| msgid "Organizer"
+msgid "Organization"
+msgstr "Организатор"
+
+#: ldapsearchdialog.cpp:94 ldapsearchdialog.cpp:303
+msgid "Company"
+msgstr ""
+
+#: ldapsearchdialog.cpp:96 ldapsearchdialog.cpp:308
+msgid "Zip Code"
+msgstr ""
+
+#: ldapsearchdialog.cpp:97 ldapsearchdialog.cpp:309
+#, fuzzy
+#| msgid "Show Postal Addresses"
+msgid "Postal Address"
+msgstr "Прикажи поштенска адреса"
+
+#: ldapsearchdialog.cpp:99 ldapsearchdialog.cpp:313
+msgid "User ID"
+msgstr ""
+
+#: ldapsearchdialog.cpp:126 ldapsearchdialog.cpp:140
+msgid "Search for Addresses in Directory"
+msgstr ""
+
+#: ldapsearchdialog.cpp:146
+#, fuzzy
+#| msgid "Search:"
+msgid "Search for:"
+msgstr "Пребарајте:"
+
+#: ldapsearchdialog.cpp:153
+msgid "in"
+msgstr ""
+
+#. i18n: file: addresspicker.ui:41
+#. i18n: ectx: property (text), widget (K3ListView, mAvailableView)
+#. i18n: file: addresspicker.ui:265
+#. i18n: ectx: property (text), widget (K3ListView, mSelectedView)
+#: ldapsearchdialog.cpp:157 ldapsearchdialog.cpp:366 rc.cpp:6 rc.cpp:33
+msgid "Name"
+msgstr "Име"
+
+#: ldapsearchdialog.cpp:164 ldapsearchdialog.cpp:392
+msgid "Stop"
+msgstr ""
+
+#: ldapsearchdialog.cpp:175
+msgid "Recursive search"
+msgstr ""
+
+#: ldapsearchdialog.cpp:180
+#, fuzzy
+#| msgid "Conditions"
+msgid "Contains"
+msgstr "Услови"
+
+#: ldapsearchdialog.cpp:181
+msgid "Starts With"
+msgstr ""
+
+#: ldapsearchdialog.cpp:194
+#, fuzzy
+#| msgid "Selection"
+msgid "Unselect All"
+msgstr "Избор"
+
+#: ldapsearchdialog.cpp:195
+#, fuzzy
+#| msgid "Selection"
+msgid "Select All"
+msgstr "Избор"
+
+#: ldapsearchdialog.cpp:196
+#, fuzzy
+#| msgid "Address Selection"
+msgid "Add Selected"
+msgstr "Избор на адреса"
+
+#: ldapsearchdialog.cpp:237
+msgid ""
+"You must select a LDAP server before searching.\n"
+"You can do this from the menu Settings/Configure KAddressBook."
+msgstr ""
 
 #: maillistdrag.cpp:249
 msgid "Retrieving and storing messages..."
@@ -1417,19 +1496,11 @@ msgstr "Ја откажува операцијата."
 msgid "Aborting..."
 msgstr "Прекинувам..."
 
-#. i18n: file: addresspicker.ui:41
-#. i18n: ectx: property (text), widget (K3ListView, mAvailableView)
-#. i18n: file: addresspicker.ui:275
-#. i18n: ectx: property (text), widget (K3ListView, mSelectedView)
-#: rc.cpp:6 rc.cpp:36
-msgid "Name"
-msgstr "Име"
-
 #. i18n: file: addresspicker.ui:52
 #. i18n: ectx: property (text), widget (K3ListView, mAvailableView)
-#. i18n: file: addresspicker.ui:286
+#. i18n: file: addresspicker.ui:276
 #. i18n: ectx: property (text), widget (K3ListView, mSelectedView)
-#: rc.cpp:9 rc.cpp:39
+#: rc.cpp:9 rc.cpp:36
 msgid "Email Address"
 msgstr "Е-пошт. адреса"
 
@@ -1457,82 +1528,156 @@ msgstr "&BCC >>"
 msgid "<< &Remove"
 msgstr "<< &Отстрани"
 
-#. i18n: file: addresspicker.ui:164
-#. i18n: ectx: property (text), widget (QPushButton, mSaveAs)
-#: rc.cpp:24
-msgid "Save as &Distribution List..."
-msgstr "Зачувај како листа за &дистрибуција..."
-
-#. i18n: file: addresspicker.ui:177
+#. i18n: file: addresspicker.ui:167
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:27
+#: rc.cpp:24
 msgid "&Selected Addresses"
 msgstr "Избрани адре&си"
 
-#. i18n: file: addresspicker.ui:202
+#. i18n: file: addresspicker.ui:192
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:30
+#: rc.cpp:27
 msgid "&Address Book"
 msgstr "&Адресар"
 
-#. i18n: file: addresspicker.ui:226
+#. i18n: file: addresspicker.ui:216
 #. i18n: ectx: property (text), widget (QLabel, TextLabel2)
-#: rc.cpp:33
+#: rc.cpp:30
 msgid "&Filter on:"
 msgstr "&Филтер за:"
 
-#. i18n: file: categoryeditdialog_base.ui:39
+#. i18n: file: addresspicker.ui:293
+#. i18n: ectx: property (text), widget (QPushButton, mSaveAs)
+#: rc.cpp:39
+msgid "Save as &Distribution List..."
+msgstr "Зачувај како листа за &дистрибуција..."
+
+#. i18n: file: addresspicker.ui:300
+#. i18n: ectx: property (text), widget (QPushButton, mLdapSearch)
+#: rc.cpp:42
+msgid "&Search Directory Service"
+msgstr ""
+
+#. i18n: file: categoryeditdialog_base.ui:25
+#. i18n: ectx: property (toolTip), widget (KLineEdit, mEdit)
+#: rc.cpp:48
+#, fuzzy
+#| msgid "Category"
+msgid "New category entry"
+msgstr "Категорија"
+
+#. i18n: file: categoryeditdialog_base.ui:28
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, mEdit)
+#: rc.cpp:51
+msgid "Type in any text you want to use as a new category or sub-category."
+msgstr ""
+
+#. i18n: file: categoryeditdialog_base.ui:43
+#. i18n: ectx: property (toolTip), widget (KPushButton, mButtonAdd)
+#: rc.cpp:54
+msgid "Add the entry to the category list"
+msgstr ""
+
+#. i18n: file: categoryeditdialog_base.ui:46
+#. i18n: ectx: property (whatsThis), widget (KPushButton, mButtonAdd)
+#: rc.cpp:57
+msgid "Click this button to insert the entry into the category list."
+msgstr ""
+
+#. i18n: file: categoryeditdialog_base.ui:49
 #. i18n: ectx: property (text), widget (KPushButton, mButtonAdd)
-#: rc.cpp:45
+#: rc.cpp:60
 msgid "A&dd"
 msgstr "&Додај"
 
-#. i18n: file: categoryeditdialog_base.ui:46
+#. i18n: file: categoryeditdialog_base.ui:56
+#. i18n: ectx: property (toolTip), widget (KPushButton, mButtonAddSubcategory)
+#: rc.cpp:63
+msgid "Add the entry as a subcategory of the selected category"
+msgstr ""
+
+#. i18n: file: categoryeditdialog_base.ui:62
+#. i18n: ectx: property (whatsThis), widget (KPushButton, mButtonAddSubcategory)
+#: rc.cpp:66
+msgid ""
+"Click this button to insert the entry as a subcategory of the currently "
+"selected category."
+msgstr ""
+
+#. i18n: file: categoryeditdialog_base.ui:65
 #. i18n: ectx: property (text), widget (KPushButton, mButtonAddSubcategory)
-#: rc.cpp:48
+#: rc.cpp:69
 #, fuzzy
 msgid "Add &Subcategory"
 msgstr "Нова категорија"
 
-#. i18n: file: categoryeditdialog_base.ui:53
+#. i18n: file: categoryeditdialog_base.ui:72
+#. i18n: ectx: property (toolTip), widget (KPushButton, mButtonRemove)
+#: rc.cpp:72
+msgid "Remove the selected category"
+msgstr ""
+
+#. i18n: file: categoryeditdialog_base.ui:78
+#. i18n: ectx: property (whatsThis), widget (KPushButton, mButtonRemove)
+#: rc.cpp:75
+msgid ""
+"Click this button to remove the selected category from the category list."
+msgstr ""
+
+#. i18n: file: categoryeditdialog_base.ui:81
 #. i18n: ectx: property (text), widget (KPushButton, mButtonRemove)
-#: rc.cpp:51
+#: rc.cpp:78
 #, fuzzy
 msgid "&Remove"
 msgstr "<< &Отстрани"
 
-#. i18n: file: categoryeditdialog_base.ui:94
-#. i18n: ectx: property (text), widget (KPIM::AutoCheckTreeWidget, mCategories)
-#: rc.cpp:54
+#. i18n: file: categoryeditdialog_base.ui:106
+#. i18n: ectx: property (toolTip), widget (KPIM::AutoCheckTreeWidget, mCategories)
+#: rc.cpp:81
 #, fuzzy
-#| msgid "Text"
-msgid "Test"
-msgstr "Текст"
+#| msgid "Categories"
+msgid "Category list"
+msgstr "Категории"
+
+#. i18n: file: categoryeditdialog_base.ui:109
+#. i18n: ectx: property (whatsThis), widget (KPIM::AutoCheckTreeWidget, mCategories)
+#: rc.cpp:84
+msgid ""
+"This is a list of all the categories available. You can create as many sub-"
+"categories as you want here."
+msgstr ""
+
+#. i18n: file: categoryeditdialog_base.ui:128
+#. i18n: ectx: property (text), widget (KPIM::AutoCheckTreeWidget, mCategories)
+#: rc.cpp:87
+#, fuzzy
+msgid "Default category"
+msgstr "%1 (стандарден)"
 
 #. i18n: file: categoryselectdialog_base.ui:32
 #. i18n: ectx: property (text), widget (KPIM::AutoCheckTreeWidget, mCategories)
-#: rc.cpp:60
+#: rc.cpp:93
 msgid "Category"
 msgstr "Категорија"
 
 #. i18n: file: categoryselectdialog_base.ui:64
 #. i18n: ectx: property (text), widget (KPushButton, mButtonClear)
-#: rc.cpp:63
+#: rc.cpp:96
 msgid "&Clear Selection"
 msgstr ""
 
 #. i18n: file: categoryselectdialog_base.ui:71
 #. i18n: ectx: property (text), widget (KPushButton, mButtonEdit)
-#: rc.cpp:66
+#: rc.cpp:99
 msgid "&Edit Categories..."
 msgstr "Ур&еди категории..."
 
-#: rc.cpp:67
+#: rc.cpp:100
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Божидар Проевски"
 
-#: rc.cpp:68
+#: rc.cpp:101
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "bobibobi@freemail.com.mk"
@@ -1577,88 +1722,80 @@ msgstr "Го сокрива дијалогот за детален прогре�
 msgid "Show detailed progress window"
 msgstr "Го прикажува дијалогот за детален прогрес"
 
-#: treewidget.cpp:157
+#: treewidget.cpp:210
 msgid "View Columns"
 msgstr ""
 
-#, fuzzy
-#~| msgid "Category"
-#~ msgid "New category"
-#~ msgstr "Категорија"
+#~ msgid "Plain"
+#~ msgstr "Обичен"
 
-#, fuzzy
-#~| msgid "Local Event"
-#~ msgid "Local"
-#~ msgstr "Локален настан"
+#~ msgid "Unquoted"
+#~ msgstr "Без наводници"
 
-#, fuzzy
-#~| msgid "Notes"
-#~ msgid "News"
-#~ msgstr "Белешки"
+#~ msgid "Bracketed"
+#~ msgstr "Со загради"
 
-#, fuzzy
-#~| msgid "Search:"
-#~ msgid "Search"
-#~ msgstr "Пребарајте:"
+#~ msgid "Undefined"
+#~ msgstr "Недефиниран"
 
-#, fuzzy
-#~| msgid "Notes"
-#~ msgid "None"
-#~ msgstr "Белешки"
+#~ msgid "Import Text File"
+#~ msgstr "Внес на текстуална датотека"
 
-#, fuzzy
-#~| msgid "Name"
-#~ msgid "Full Name"
-#~ msgstr "Име"
+#~ msgid "File to import:"
+#~ msgstr "Датотека за внесување:"
 
-#, fuzzy
-#~| msgid "Hide Telephone Numbers"
-#~ msgid "Home Number"
-#~ msgstr "Скриј тел. броеви"
+#~ msgid "Separator:"
+#~ msgstr "Раздвојувач:"
 
-#, fuzzy
-#~| msgid "Status"
-#~ msgid "State"
-#~ msgstr "Статус"
+#~ msgid "Tab"
+#~ msgstr "Табулатор"
 
-#, fuzzy
-#~| msgid "Organizer"
-#~ msgid "Organization"
-#~ msgstr "Организатор"
+#~ msgid "Space"
+#~ msgstr "Празно место"
 
-#, fuzzy
-#~| msgid "Show Postal Addresses"
-#~ msgid "Postal Address"
-#~ msgstr "Прикажи поштенска адреса"
+#~ msgid "Import starts at row:"
+#~ msgstr "Внесот започнува од редица:"
 
-#, fuzzy
-#~| msgid "Search:"
-#~ msgid "Search for:"
-#~ msgstr "Пребарајте:"
+#~ msgid "Header"
+#~ msgstr "Заглавие"
 
-#, fuzzy
-#~| msgid "Conditions"
-#~ msgid "Contains"
-#~ msgstr "Услови"
+#~ msgid "Assign to Selected Column"
+#~ msgstr "Додели на избраната колона"
+
+#~ msgid "Remove Assignment From Selected Column"
+#~ msgstr "Отстрани доделување од избраната колона"
+
+#~ msgid "Loading Progress"
+#~ msgstr "Прогрес на вчитувањето"
+
+#~ msgid "Please wait while the file is loaded."
+#~ msgstr "Почекајте додека се вчита датотеката"
 
 #, fuzzy
 #~| msgid "Selection"
-#~ msgid "Select All"
+#~ msgid "Template Selection"
+#~ msgstr "Избор"
+
+#~ msgid "Importing Progress"
+#~ msgstr "Прогрес на внесувањето"
+
+#~ msgid "Please wait while the data is imported."
+#~ msgstr "Почекајте додека се внесат податоците"
+
+#, fuzzy
+#~| msgid "Please enter name:"
+#~ msgid "Please enter a name for the template:"
+#~ msgstr "Внесете име:"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgid "Suggestions"
 #~ msgstr "Избор"
 
 #, fuzzy
-#~| msgid "Address Selection"
-#~ msgid "Add Selected"
-#~ msgstr "Избор на адреса"
-
-#, fuzzy
-#~| msgid "Categories"
-#~ msgid "Category list"
-#~ msgstr "Категории"
-
-#, fuzzy
-#~ msgid "Default category"
-#~ msgstr "%1 (стандарден)"
+#~| msgid "Text"
+#~ msgid "Test"
+#~ msgstr "Текст"
 
 #~ msgid "Hide Birthday"
 #~ msgstr "Скриј роденден"

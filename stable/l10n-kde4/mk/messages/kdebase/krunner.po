@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krunner\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-27 08:23+0100\n"
+"POT-Creation-Date: 2009-01-29 07:19+0100\n"
 "PO-Revision-Date: 2008-07-10 11:46+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -17,6 +17,54 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
+
+#: interfaces/default/interface.cpp:76 interfaces/default/interface.cpp:77
+#: interfaces/quicksand/qs_dialog.cpp:50 interfaces/quicksand/qs_dialog.cpp:51
+msgid "Settings"
+msgstr "Поставувања"
+
+#: interfaces/default/interface.cpp:96 interfaces/default/interface.cpp:97
+#: krunnerapp.cpp:202 krunnerapp.cpp:203
+msgid "Show System Activity"
+msgstr "Прикажи активност на системот"
+
+#: interfaces/default/interface.cpp:456
+#, kde-format
+msgid "%1: %2"
+msgstr ""
+
+#: interfaces/quicksand/qs_dialog.cpp:80
+#, fuzzy
+#| msgid "Location"
+msgid "Actions"
+msgstr "Локација"
+
+#: interfaces/quicksand/qs_dialog.cpp:81
+#, fuzzy
+#| msgid "Location"
+msgid "actions"
+msgstr "Локација"
+
+#: interfaces/quicksand/qs_matchview.cpp:122
+msgid "items"
+msgstr ""
+
+#: interfaces/quicksand/qs_matchview.cpp:176
+msgid "Type to search."
+msgstr ""
+
+#: interfaces/quicksand/qs_matchview.cpp:251
+#, kde-format
+msgid "%1 %2"
+msgstr ""
+
+#: interfaces/quicksand/qs_matchview.cpp:334
+msgid "Loading..."
+msgstr ""
+
+#: interfaces/quicksand/qs_matchview.cpp:418
+msgid "No results found."
+msgstr ""
 
 #: lock/autologout.cc:44
 msgid "<qt><nobr><b>Automatic Log Out</b></nobr></qt>"
@@ -63,49 +111,53 @@ msgstr "Стартувај само чувар на екранот"
 msgid "Only use the blank screen saver"
 msgstr "Користи го само празниот чувар на екранот"
 
-#: lock/lockprocess.cc:764
+#: lock/main.cc:67
+msgid "start with plasma unlocked for configuring"
+msgstr ""
+
+#: lock/lockprocess.cc:796
 msgid "Will not lock the session, as unlocking would be impossible:\n"
 msgstr ""
 "Нема да ја заклучам сесијата, бидејќи заклучувањето би било невозможно:\n"
 
-#: lock/lockprocess.cc:768
+#: lock/lockprocess.cc:800
 msgid "Cannot start <i>kcheckpass</i>."
 msgstr "Не можам да го стартувам <i>kcheckpass</i>."
 
-#: lock/lockprocess.cc:769
+#: lock/lockprocess.cc:801
 msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not setuid root."
 msgstr "<i>kcheckpass</i> не може да работи. Можеби не е setuid root."
 
-#: lock/lockprocess.cc:812
+#: lock/lockprocess.cc:863
 msgid "No appropriate greeter plugin configured."
 msgstr "Нема конфигурирано соодветен поздравен приклучок."
 
-#: lock/lockdlg.cc:96
+#: lock/lockdlg.cc:98
 msgid "<nobr><b>The session is locked</b></nobr><br />"
 msgstr "<nobr><b>Сесијата е заклучена</b></nobr><br />"
 
-#: lock/lockdlg.cc:97
+#: lock/lockdlg.cc:99
 #, kde-format
 msgid "<nobr><b>The session was locked by %1</b></nobr><br />"
 msgstr "<nobr><b>Сесијата е заклучена од %1</b></nobr><br />"
 
-#: lock/lockdlg.cc:108
+#: lock/lockdlg.cc:112
 msgid "Unl&ock"
 msgstr "От&клучи"
 
-#: lock/lockdlg.cc:110
+#: lock/lockdlg.cc:114
 msgid "Sw&itch User..."
 msgstr "Смен&и корисник..."
 
-#: lock/lockdlg.cc:178
+#: lock/lockdlg.cc:182
 msgid "<b>Unlocking failed</b>"
 msgstr "<b>Отклучувањето не успеа</b>"
 
-#: lock/lockdlg.cc:186
+#: lock/lockdlg.cc:190
 msgid "<b>Warning: Caps Lock on</b>"
 msgstr "<b>Внимание: Caps Lock е вклучен</b>"
 
-#: lock/lockdlg.cc:418
+#: lock/lockdlg.cc:422
 #, kde-format
 msgid ""
 "Cannot unlock the session because the authentication system failed to work;\n"
@@ -115,11 +167,11 @@ msgstr ""
 "откажа да работи.\n"
 "Ќе мора рачно да го прекинете kdesktop_lock (pid %1)."
 
-#: lock/lockdlg.cc:507
+#: lock/lockdlg.cc:511
 msgid "&Start New Session"
 msgstr "Започни нова &сесија"
 
-#: lock/lockdlg.cc:515
+#: lock/lockdlg.cc:519
 #, kde-format
 msgid ""
 "You have chosen to open another desktop session instead of resuming the "
@@ -141,187 +193,122 @@ msgstr ""
 "панелот на KDE и менијата од работната површина имаат дејства за менување на "
 "сесиите."
 
-#: lock/lockdlg.cc:528
+#: lock/lockdlg.cc:532
 msgid "&Do not ask again"
 msgstr "&Не прашувај повторно"
 
-#: lock/lockdlg.cc:584
+#: lock/lockdlg.cc:588
 msgid "Session"
 msgstr "Сесија"
 
-#: lock/lockdlg.cc:584
+#: lock/lockdlg.cc:588
 msgid "Location"
 msgstr "Локација"
 
-#: lock/lockdlg.cc:612
+#: lock/lockdlg.cc:616
 msgctxt "session"
 msgid "&Activate"
 msgstr "&Активирај"
 
-#: lock/lockdlg.cc:621
+#: lock/lockdlg.cc:625
 msgid "Start &New Session"
 msgstr "Започни нова &сесија"
 
-#: main.cpp:33
-msgid "KDE run command interface"
-msgstr "Интерфејс на KDE за извршување наредби"
-
-#: main.cpp:39
-msgid "Run Command Interface"
-msgstr "Интерфејс за извршување наредби"
-
-#: main.cpp:41
-msgid "(c) 2006, Aaron Seigo"
-msgstr "(c) 2006, Aaron Seigo"
-
-#: main.cpp:42
-msgid "Aaron J. Seigo"
-msgstr "Aaron J. Seigo"
-
-#: main.cpp:43
-msgid "Author and maintainer"
-msgstr "Автор и одржувач"
-
-#: interface.cpp:70 krunnerapp.cpp:143 krunnerapp.cpp:144
+#: krunnerdialog.cpp:57 krunnerapp.cpp:191 krunnerapp.cpp:192
 msgid "Run Command"
 msgstr "Изврши команда"
 
-#: interface.cpp:84 interface.cpp:85
-msgid "Settings"
-msgstr "Поставувања"
+#: main.cpp:37
+msgid "KDE run command interface"
+msgstr "Интерфејс на KDE за извршување наредби"
 
-#: interface.cpp:104 interface.cpp:105 krunnerapp.cpp:154 krunnerapp.cpp:155
-msgid "Show System Activity"
-msgstr "Прикажи активност на системот"
+#: main.cpp:43
+msgid "Run Command Interface"
+msgstr "Интерфејс за извршување наредби"
 
-#: interface.cpp:112
-msgid "Launch"
-msgstr "Извршувам"
+#: main.cpp:45
+msgid "(c) 2006, Aaron Seigo"
+msgstr "(c) 2006, Aaron Seigo"
 
-#: interface.cpp:113
-msgid "Click to execute the selected item above"
-msgstr "Кликнете тука за да го извршите горенаведеното дејство"
+#: main.cpp:46
+msgid "Aaron J. Seigo"
+msgstr "Aaron J. Seigo"
 
-#: interface.cpp:114
-msgid "Show Options"
-msgstr "Прикажување опции"
+#: main.cpp:47
+msgid "Author and maintainer"
+msgstr "Автор и одржувач"
 
-#: configdialog.cpp:44
+#: configdialog.cpp:53
+msgid "Plugins"
+msgstr ""
+
+#: configdialog.cpp:60
+msgid "Command oriented"
+msgstr ""
+
+#: configdialog.cpp:61
+msgid "Task oriented"
+msgstr ""
+
+#: configdialog.cpp:75
+msgid "Preview"
+msgstr ""
+
+#: configdialog.cpp:83
+msgid "User Interface"
+msgstr ""
+
+#: configdialog.cpp:86
 msgid "KRunner Settings"
 msgstr "Поставувања за KRunner"
 
-#: configdialog.cpp:51
-msgid "Runners"
-msgstr "Извршувачи"
-
-#. i18n: file: krunner.kcfg:16
-#. i18n: ectx: label, entry, group (TaskDialog)
-#: rc.cpp:11
-msgid "Completion mode used for the query text."
-msgstr "Режим на довршување што се користи за текстот за пребарувањето."
-
-#. i18n: file: krunner.kcfg:21
-#. i18n: ectx: label, entry (PastQueries), group (TaskDialog)
-#: rc.cpp:14
-msgid "History if past queries successfully completed"
-msgstr "Историја ако претходните пребарувања успешно завршиле"
-
-#. i18n: file: krunner.kcfg:27
-#. i18n: ectx: label, entry (KeepTaskDialogAbove), group (TaskDialog)
-#: rc.cpp:18
-msgid "Whether to keep the tasks dialog above other windows when shown."
+#: configdialog.cpp:93
+msgid "Available Features"
 msgstr ""
-"Дали да се чува дијалогот за задачи над другите прозорци кога е прикажан."
 
-#. i18n: file: kscreensaversettings.kcfg:11
-#. i18n: ectx: label, entry (ScreenSaverEnabled), group (ScreenSaver)
-#: rc.cpp:22
-msgid "Enable screen saver"
-msgstr "Овозможи екрански чувар"
-
-#. i18n: file: kscreensaversettings.kcfg:12
-#. i18n: ectx: whatsthis, entry (ScreenSaverEnabled), group (ScreenSaver)
-#: rc.cpp:25
-msgid "Enables the screen saver."
-msgstr "Го овозможува екранскиот чувар."
-
-#. i18n: file: kscreensaversettings.kcfg:16
-#. i18n: ectx: label, entry, group (ScreenSaver)
-#: rc.cpp:28
-msgid "Screen saver timeout"
-msgstr "Истек на време за екранскиот чувар"
-
-#. i18n: file: kscreensaversettings.kcfg:17
-#. i18n: ectx: whatsthis, entry, group (ScreenSaver)
-#: rc.cpp:31
-msgid "Sets the seconds after which the screen saver is started."
-msgstr "Го определува времето во секунди по кое се стартува екранскио чувар."
-
-#. i18n: file: kscreensaversettings.kcfg:21
-#. i18n: ectx: label, entry (SuspendWhenInvisible), group (ScreenSaver)
-#: rc.cpp:34
-msgid "Suspend screen saver when DPMS kicks in"
-msgstr "Го суспендира екранскиот чувар кога се вклучува DPMS"
-
-#. i18n: file: kscreensaversettings.kcfg:24
-#. i18n: ectx: whatsthis, entry (SuspendWhenInvisible), group (ScreenSaver)
-#: rc.cpp:37
-msgid ""
-"Usually the screen saver is suspended when display power saving kicks in,\n"
-"       as nothing can be seen on the screen anyway, obviously. However, some "
-"screen savers\n"
-"       actually perform useful computations, so it is not desirable to "
-"suspend them."
-msgstr ""
-"Вообичаено чуварот на екранот е суспендиран кога се вклучува зачувувањето "
-"енергија за мониторот,\n"
-"       бидејќи и онака не може ништо да се гледа на екранот. Но, некои "
-"чувари на екранот\n"
-"       извршуваат корисни пресметувања, па не е пожелно да се суспендираат."
-
-#: rc.cpp:64
+#: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Божидар Проевски"
 
-#: rc.cpp:65
+#: rc.cpp:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "bobibobi@freemail.com.mk"
 
-#: krunnerapp.cpp:148 krunnerapp.cpp:149
+#: krunnerapp.cpp:196 krunnerapp.cpp:197
 msgid "Run Command on clipboard contents"
 msgstr "Изврши наредба врз содржината на таблата за исечоци"
 
-#: krunnerapp.cpp:166 krunnerapp.cpp:167
+#: krunnerapp.cpp:214 krunnerapp.cpp:215
 msgid "Switch User"
 msgstr "Смени корисник"
 
-#: krunnerapp.cpp:172 krunnerapp.cpp:173
+#: krunnerapp.cpp:221 krunnerapp.cpp:222
 msgid "Lock Session"
 msgstr "Заклучи ја сесијата"
 
-#: krunnerapp.cpp:179 krunnerapp.cpp:180
+#: krunnerapp.cpp:229 krunnerapp.cpp:230
 msgid "Log Out"
 msgstr "Одјави се"
 
-#: krunnerapp.cpp:184 krunnerapp.cpp:185
+#: krunnerapp.cpp:234 krunnerapp.cpp:235
 msgid "Log Out Without Confirmation"
 msgstr "Одјави се без потврда"
 
-#: krunnerapp.cpp:189 krunnerapp.cpp:190
+#: krunnerapp.cpp:239 krunnerapp.cpp:240
 msgid "Halt Without Confirmation"
 msgstr "Исклучи без потврда"
 
-#: krunnerapp.cpp:194 krunnerapp.cpp:195
+#: krunnerapp.cpp:244 krunnerapp.cpp:245
 msgid "Reboot Without Confirmation"
 msgstr "Рестартирај без потврда"
 
-#: krunnerapp.cpp:243
+#: krunnerapp.cpp:296
 msgid "System Activity"
 msgstr "Активност на системот"
 
-#: krunnerapp.cpp:322
+#: krunnerapp.cpp:405
 msgid ""
 "Could not log out properly.\n"
 "The session manager cannot be contacted. You can try to force a shutdown by "
@@ -333,15 +320,58 @@ msgstr ""
 "присилите исклучување со притискање на Ctrl+Alt+Backspace. Забележете дека "
 "вашата тековна сесија нема да биде снимена при присилно исклучување."
 
-#, fuzzy
-#~| msgid "Location"
-#~ msgid "Actions"
-#~ msgstr "Локација"
+#~ msgid "Launch"
+#~ msgstr "Извршувам"
 
-#, fuzzy
-#~| msgid "Location"
-#~ msgid "actions"
-#~ msgstr "Локација"
+#~ msgid "Click to execute the selected item above"
+#~ msgstr "Кликнете тука за да го извршите горенаведеното дејство"
+
+#~ msgid "Show Options"
+#~ msgstr "Прикажување опции"
+
+#~ msgid "Runners"
+#~ msgstr "Извршувачи"
+
+#~ msgid "Completion mode used for the query text."
+#~ msgstr "Режим на довршување што се користи за текстот за пребарувањето."
+
+#~ msgid "History if past queries successfully completed"
+#~ msgstr "Историја ако претходните пребарувања успешно завршиле"
+
+#~ msgid "Whether to keep the tasks dialog above other windows when shown."
+#~ msgstr ""
+#~ "Дали да се чува дијалогот за задачи над другите прозорци кога е прикажан."
+
+#~ msgid "Enable screen saver"
+#~ msgstr "Овозможи екрански чувар"
+
+#~ msgid "Enables the screen saver."
+#~ msgstr "Го овозможува екранскиот чувар."
+
+#~ msgid "Screen saver timeout"
+#~ msgstr "Истек на време за екранскиот чувар"
+
+#~ msgid "Sets the seconds after which the screen saver is started."
+#~ msgstr ""
+#~ "Го определува времето во секунди по кое се стартува екранскио чувар."
+
+#~ msgid "Suspend screen saver when DPMS kicks in"
+#~ msgstr "Го суспендира екранскиот чувар кога се вклучува DPMS"
+
+#~ msgid ""
+#~ "Usually the screen saver is suspended when display power saving kicks "
+#~ "in,\n"
+#~ "       as nothing can be seen on the screen anyway, obviously. However, "
+#~ "some screen savers\n"
+#~ "       actually perform useful computations, so it is not desirable to "
+#~ "suspend them."
+#~ msgstr ""
+#~ "Вообичаено чуварот на екранот е суспендиран кога се вклучува зачувувањето "
+#~ "енергија за мониторот,\n"
+#~ "       бидејќи и онака не може ништо да се гледа на екранот. Но, некои "
+#~ "чувари на екранот\n"
+#~ "       извршуваат корисни пресметувања, па не е пожелно да се "
+#~ "суспендираат."
 
 #, fuzzy
 #~| msgid "KRunner Settings"

@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-27 08:22+0100\n"
+"POT-Creation-Date: 2009-01-29 07:19+0100\n"
 "PO-Revision-Date: 2008-07-07 22:25+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -43,12 +43,14 @@ msgstr "Преместувам"
 #: kio/job.cpp:136 kio/job.cpp:143 kio/job.cpp:168 kio/fileundomanager.cpp:120
 #, fuzzy
 #| msgid "Source"
+msgctxt "The source of a file operation"
 msgid "Source"
 msgstr "Извор"
 
 #: kio/job.cpp:137 kio/job.cpp:144 kio/fileundomanager.cpp:121
 #, fuzzy
 #| msgid "Destination"
+msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Одредиште"
 
@@ -76,11 +78,9 @@ msgid "File"
 msgstr "Датотека"
 
 #: kio/job.cpp:161
-#, fuzzy
-#| msgid "Sorting"
 msgctxt "@title job"
-msgid "Stating"
-msgstr "Подредување"
+msgid "Examining"
+msgstr ""
 
 #: kio/job.cpp:167
 msgctxt "@title job"
@@ -105,20 +105,20 @@ msgctxt "@title job"
 msgid "Unmounting"
 msgstr "Одмонтирам"
 
-#: kio/job.cpp:1965 kio/paste.cpp:63 kio/copyjob.cpp:1185 kio/copyjob.cpp:1715
-#: kio/global.cpp:653
+#: kio/job.cpp:1995 kio/paste.cpp:63 kio/copyjob.cpp:1187 kio/copyjob.cpp:1722
+#: kio/global.cpp:665
 msgid "File Already Exists"
 msgstr "Датотеката веќе постои"
 
-#: kio/kimageio.cpp:44
+#: kio/kimageio.cpp:43
 msgid "All Pictures"
 msgstr "Сите слики"
 
-#: kio/slavebase.h:255 kio/slavebase.h:275
+#: kio/slavebase.h:266 kio/slavebase.h:286
 msgid "&Yes"
 msgstr "&Да"
 
-#: kio/slavebase.h:256 kio/slavebase.h:276
+#: kio/slavebase.h:267 kio/slavebase.h:287
 msgid "&No"
 msgstr "&Не"
 
@@ -126,11 +126,11 @@ msgstr "&Не"
 msgid "Data format:"
 msgstr "Формат на податоци:"
 
-#: kio/slaveinterface.cpp:481
+#: kio/slaveinterface.cpp:460
 msgid "The peer SSL certificate chain appears to be corrupt."
 msgstr "Изгледа дека е расипан SSL-сертификатот отспротива."
 
-#: kio/slaveinterface.cpp:483 kio/tcpslavebase.cpp:644
+#: kio/slaveinterface.cpp:462 kio/tcpslavebase.cpp:688
 msgid "SSL"
 msgstr "SSL"
 
@@ -156,8 +156,8 @@ msgstr ""
 msgid "The clipboard is empty"
 msgstr "Таблата со исечоци е празна"
 
-#: kio/paste.cpp:203 kio/renamedialog.cpp:395 kio/kdirlister.cpp:319
-#: kio/krun.cpp:823
+#: kio/paste.cpp:203 kio/renamedialog.cpp:403 kio/kdirlister.cpp:313
+#: kio/krun.cpp:825
 #, kde-format
 msgid ""
 "Malformed URL\n"
@@ -190,7 +190,7 @@ msgstr "&Вметни од таблата со исечоци"
 msgid "Authorization Dialog"
 msgstr "Дијалог за авторизација"
 
-#: kio/kfileitemdelegate.cpp:219
+#: kio/kfileitemdelegate.cpp:221
 #, kde-format
 msgctxt "Items in a folder"
 msgid "1 item"
@@ -199,7 +199,7 @@ msgstr[0] "%1 елемент"
 msgstr[1] "%1 елементи"
 msgstr[2] "%1 елементи"
 
-#: kio/kfileitemdelegate.cpp:275 kio/kfileitemdelegate.cpp:279
+#: kio/kfileitemdelegate.cpp:277 kio/kfileitemdelegate.cpp:281
 msgctxt "@info mimetype"
 msgid "Unknown"
 msgstr "Непознат"
@@ -216,29 +216,82 @@ msgstr "Предложи &ново име"
 msgid "&Skip"
 msgstr "Пре&скокни"
 
-#: kio/renamedialog.cpp:113
+#: kio/renamedialog.cpp:111
+msgid "Do not copy or move this folder, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:112
+msgid "Do not copy or move this file, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:115
 msgid "&Auto Skip"
 msgstr "&Автопрескокнување"
 
-#: kio/renamedialog.cpp:118
-msgid "&Overwrite"
-msgstr "П&ребриши"
+#: kio/renamedialog.cpp:116
+msgid ""
+"Do not copy or move any folder that already exists in the destination "
+"folder.\n"
+"You will be prompted again in case of a conflict with an existing file "
+"though."
+msgstr ""
+
+#: kio/renamedialog.cpp:117
+msgid ""
+"Do not copy or move any file that already exists in the destination folder.\n"
+"You will be prompted again in case of a conflict with an existing directory "
+"though."
+msgstr ""
 
 #: kio/renamedialog.cpp:122
 #, fuzzy
+#| msgid "Write"
+msgctxt "Write files into an existing folder"
+msgid "&Write Into"
+msgstr "Запишување"
+
+#: kio/renamedialog.cpp:122
+msgid "&Overwrite"
+msgstr "П&ребриши"
+
+#: kio/renamedialog.cpp:124
+msgid ""
+"Files and folders will be copied into the existing directory, alongside its "
+"existing contents.\n"
+"You will be prompted again in case of a conflict with an existing file in "
+"the directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:128
+#, fuzzy
 #| msgid "O&verwrite All"
-msgid "O&verwrite All"
+msgctxt "Write files into any existing directory"
+msgid "&Write Into All"
 msgstr "Пре&бриши ги сите"
 
 #: kio/renamedialog.cpp:128
+#, fuzzy
+#| msgid "O&verwrite All"
+msgid "&Overwrite All"
+msgstr "Пре&бриши ги сите"
+
+#: kio/renamedialog.cpp:130
+msgid ""
+"Files and folders will be copied into any existing directory, alongside its "
+"existing contents.\n"
+"You will be prompted again in case of a conflict with an existing file in a "
+"directory, but not in case of another existing directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:136
 msgid "&Resume"
 msgstr "П&родолжи"
 
-#: kio/renamedialog.cpp:133
+#: kio/renamedialog.cpp:141
 msgid "R&esume All"
 msgstr "Продолжи со сит&е"
 
-#: kio/renamedialog.cpp:145
+#: kio/renamedialog.cpp:153
 #, kde-format
 msgid ""
 "This action would overwrite '%1' with itself.\n"
@@ -247,41 +300,41 @@ msgstr ""
 "Со ова дејство, „%1“ ќе се пребрише со себеси.\n"
 "Ве молиме внесете ново име на датотека:"
 
-#: kio/renamedialog.cpp:147
+#: kio/renamedialog.cpp:155
 msgid "C&ontinue"
 msgstr "Пр&одолжи"
 
-#: kio/renamedialog.cpp:194 kio/renamedialog.cpp:272
+#: kio/renamedialog.cpp:202 kio/renamedialog.cpp:280
 #, kde-format
 msgid "An older item named '%1' already exists."
 msgstr "Веќе постои постара ставка со име „%1“."
 
-#: kio/renamedialog.cpp:196 kio/renamedialog.cpp:274
+#: kio/renamedialog.cpp:204 kio/renamedialog.cpp:282
 #, kde-format
 msgid "A similar file named '%1' already exists."
 msgstr "Веќе постои слична датотека со име „%1“."
 
-#: kio/renamedialog.cpp:198 kio/renamedialog.cpp:276
+#: kio/renamedialog.cpp:206 kio/renamedialog.cpp:284
 #, kde-format
 msgid "A newer item named '%1' already exists."
 msgstr "Веќе постои понова ставка со име „%1“."
 
-#: kio/renamedialog.cpp:210 kio/renamedialog.cpp:245
+#: kio/renamedialog.cpp:218 kio/renamedialog.cpp:253
 #, kde-format
 msgid "size %1"
 msgstr "големина %1 "
 
-#: kio/renamedialog.cpp:218 kio/renamedialog.cpp:252
+#: kio/renamedialog.cpp:226 kio/renamedialog.cpp:260
 #, kde-format
 msgid "created on %1"
 msgstr "создадено на %1"
 
-#: kio/renamedialog.cpp:225 kio/renamedialog.cpp:259
+#: kio/renamedialog.cpp:233 kio/renamedialog.cpp:267
 #, kde-format
 msgid "modified on %1"
 msgstr "изменето на %1"
 
-#: kio/renamedialog.cpp:234
+#: kio/renamedialog.cpp:242
 #, kde-format
 msgid "The source file is '%1'"
 msgstr "Изворната датотека е „%1“"
@@ -311,7 +364,7 @@ msgstr "Ажурирам системска конфигурација"
 msgid "Updating system configuration."
 msgstr "Ажурирам системска конфигурација."
 
-#: kio/kdirlister.cpp:329
+#: kio/kdirlister.cpp:323
 #, kde-format
 msgid ""
 "URL cannot be listed\n"
@@ -320,7 +373,7 @@ msgstr ""
 "URL не може да биде прикажано\n"
 "%1"
 
-#: kio/tcpslavebase.cpp:258
+#: kio/tcpslavebase.cpp:265
 msgid ""
 "You are about to leave secure mode. Transmissions will no longer be "
 "encrypted.\n"
@@ -331,21 +384,21 @@ msgstr ""
 "Ова значи дека некој трет може да ги види вашите податоци додека се "
 "пренесуваат."
 
-#: kio/tcpslavebase.cpp:264 kio/tcpslavebase.cpp:476
+#: kio/tcpslavebase.cpp:271 kio/tcpslavebase.cpp:520
 msgid "Security Information"
 msgstr "Информации за безбедноста"
 
-#: kio/tcpslavebase.cpp:265
+#: kio/tcpslavebase.cpp:272
 msgid "C&ontinue Loading"
 msgstr "Пр&одолжи со вчитување"
 
-#: kio/tcpslavebase.cpp:319
+#: kio/tcpslavebase.cpp:336
 #, kde-format
 msgctxt "%1 is a host name"
 msgid "%1: SSL negotiation failed"
 msgstr "%1: Проверката за автентичност не успеа."
 
-#: kio/tcpslavebase.cpp:470
+#: kio/tcpslavebase.cpp:514
 msgid ""
 "You are about to enter secure mode. All transmissions will be encrypted "
 "unless otherwise noted.\n"
@@ -357,32 +410,32 @@ msgstr ""
 "Тоа значи дека никој трет не ќе може лесно да ги гледа вашите податоци при "
 "преносот."
 
-#: kio/tcpslavebase.cpp:477
+#: kio/tcpslavebase.cpp:521
 msgid "Display SSL &Information"
 msgstr "Прикажи &информации за SSL"
 
-#: kio/tcpslavebase.cpp:478
+#: kio/tcpslavebase.cpp:522
 msgid "C&onnect"
 msgstr "П&оврзи"
 
-#: kio/tcpslavebase.cpp:615
+#: kio/tcpslavebase.cpp:659
 msgid "Enter the certificate password:"
 msgstr "Внесете ја лозинката за сертификатот:"
 
-#: kio/tcpslavebase.cpp:616
+#: kio/tcpslavebase.cpp:660
 msgid "SSL Certificate Password"
 msgstr "Лозинка за SSL-сертификат"
 
-#: kio/tcpslavebase.cpp:629
+#: kio/tcpslavebase.cpp:673
 msgid "Unable to open the certificate. Try a new password?"
 msgstr "Не можам да го отворам сертификатот. Ќе се обидете со нова лозинка?"
 
-#: kio/tcpslavebase.cpp:642
+#: kio/tcpslavebase.cpp:686
 msgid "The procedure to set the client certificate for the session failed."
 msgstr ""
 "Процедурата за да се постави сертификатот на клиентот за сесијата, не успеа."
 
-#: kio/tcpslavebase.cpp:672
+#: kio/tcpslavebase.cpp:744
 #, kde-format
 msgid ""
 "The server failed the authenticity check (%1).\n"
@@ -391,35 +444,35 @@ msgstr ""
 "Серверот не помина на тестот за автентичност (%1).\n"
 "\n"
 
-#: kio/tcpslavebase.cpp:721 kio/tcpslavebase.cpp:738 kio/tcpslavebase.cpp:840
-#: kio/tcpslavebase.cpp:852
+#: kio/tcpslavebase.cpp:790 kio/tcpslavebase.cpp:807 kio/tcpslavebase.cpp:909
+#: kio/tcpslavebase.cpp:921
 msgid "Server Authentication"
 msgstr "Проверка за автентичност на сервер"
 
-#: kio/tcpslavebase.cpp:722
+#: kio/tcpslavebase.cpp:791
 msgid "&Details"
 msgstr "&Детали"
 
-#: kio/tcpslavebase.cpp:722
+#: kio/tcpslavebase.cpp:791
 msgid "Co&ntinue"
 msgstr "Про&должи"
 
-#: kio/tcpslavebase.cpp:735
+#: kio/tcpslavebase.cpp:804
 msgid ""
 "Would you like to accept this certificate forever without being prompted?"
 msgstr ""
 "Дали би сакале да го прифатите овој сертификат засекогаш без да бидете "
 "прашувани?"
 
-#: kio/tcpslavebase.cpp:739
+#: kio/tcpslavebase.cpp:808
 msgid "&Forever"
 msgstr "За&секогаш"
 
-#: kio/tcpslavebase.cpp:740
+#: kio/tcpslavebase.cpp:809
 msgid "&Current Sessions Only"
 msgstr "Само за &активните сесии"
 
-#: kio/tcpslavebase.cpp:839
+#: kio/tcpslavebase.cpp:908
 msgid ""
 "You have indicated that you wish to accept this certificate, but it is not "
 "issued to the server who is presenting it. Do you wish to continue loading?"
@@ -427,7 +480,7 @@ msgstr ""
 "Назначивте дека сакате да го прифатите овој сертификат, но тој не е издаден "
 "на серверот што го презентира. Дали сакате да продолжите со вчитување?"
 
-#: kio/tcpslavebase.cpp:851
+#: kio/tcpslavebase.cpp:920
 msgid ""
 "SSL certificate is being rejected as requested. You can disable this in the "
 "KDE Control Center."
@@ -435,7 +488,7 @@ msgstr ""
 "SSL-сертификатот е одбиен според барањето. Ова може да го оневозможите во "
 "Контролниот центар на KDE."
 
-#: kio/jobuidelegate.cpp:130 ../kfile/kdiroperator.cpp:724
+#: kio/jobuidelegate.cpp:130 ../kfile/kdiroperator.cpp:816
 #, kde-format
 msgid "Do you really want to delete this item?"
 msgid_plural "Do you really want to delete these %1 items?"
@@ -443,7 +496,7 @@ msgstr[0] "Дали навистина сакате да го избришете
 msgstr[1] "Дали навистина сакате да ги избришете овие %1 елементи?"
 msgstr[2] "Дали навистина сакате да ги избришете овие %1 елементи?"
 
-#: kio/jobuidelegate.cpp:132 ../kfile/kdiroperator.cpp:726
+#: kio/jobuidelegate.cpp:132 ../kfile/kdiroperator.cpp:818
 msgid "Delete Files"
 msgstr "Бришење датотеки"
 
@@ -455,7 +508,7 @@ msgstr[0] "Дали навистина сакате да го преместит
 msgstr[1] "Дали навистина сакате да ги преместите овие %1 елементи во корпата?"
 msgstr[2] "Дали навистина сакате да ги преместите овие %1 елементи во корпата?"
 
-#: kio/jobuidelegate.cpp:144 ../kfile/kdiroperator.cpp:1587
+#: kio/jobuidelegate.cpp:144 ../kfile/kdiroperator.cpp:1847
 msgid "Move to Trash"
 msgstr "Преместување во корпа"
 
@@ -476,11 +529,11 @@ msgstr "Прескокни"
 msgid "AutoSkip"
 msgstr "Автом. прескокнување"
 
-#: kio/copyjob.cpp:902 kio/global.cpp:663
+#: kio/copyjob.cpp:905 kio/global.cpp:675
 msgid "Folder Already Exists"
 msgstr "Папката веќе постои"
 
-#: kio/copyjob.cpp:1185 kio/copyjob.cpp:1715
+#: kio/copyjob.cpp:1187 kio/copyjob.cpp:1722
 msgid "Already Exists as Folder"
 msgstr "Веќе постои како папка"
 
@@ -492,7 +545,7 @@ msgstr "Преземи слика"
 msgid "OCR Image"
 msgstr "OCR на слика"
 
-#: kio/global.cpp:93
+#: kio/global.cpp:90
 #, kde-format
 msgid "1 day %2"
 msgid_plural "%1 days %2"
@@ -500,81 +553,87 @@ msgstr[0] "%1 ден %2"
 msgstr[1] "%1 дена %2"
 msgstr[2] "%1 дена %2"
 
-#: kio/global.cpp:123
+#: kio/global.cpp:121
 #, fuzzy
 #| msgid "No Items"
-msgid "No Items"
+msgid "0 Items"
 msgstr "Нема елементи"
 
-#: kio/global.cpp:123
-#, kde-format
-msgid "One Item"
-msgid_plural "%1 Items"
-msgstr[0] "%1 елемент"
-msgstr[1] "%1 елементи"
-msgstr[2] "%1 елементи"
+#: kio/global.cpp:125
+#, fuzzy, kde-format
+#| msgid "No Folders"
+msgid "1 Folder"
+msgid_plural "%1 Folders"
+msgstr[0] "Нема папки"
+msgstr[1] "Нема папки"
+msgstr[2] "Нема папки"
 
-#: kio/global.cpp:124
-msgid "No Files"
-msgstr "Нема датотеки"
-
-#: kio/global.cpp:124
-#, kde-format
-msgid "One File"
+#: kio/global.cpp:126
+#, fuzzy, kde-format
+#| msgid "1 file"
+#| msgid_plural "%1 files"
+msgid "1 File"
 msgid_plural "%1 Files"
 msgstr[0] "%1 датотека"
 msgstr[1] "%1 датотеки"
 msgstr[2] "%1 датотеки"
 
-#: kio/global.cpp:125
-#, fuzzy
-#| msgid "New Folder"
-msgid "No Folders"
-msgstr "Нова папка"
-
-#: kio/global.cpp:125
-#, kde-format
-msgid "One Folder"
-msgid_plural "%1 Folders"
-msgstr[0] "%1 папка"
-msgstr[1] "%1 папки"
-msgstr[2] "%1 папки"
-
-#: kio/global.cpp:127
-#, kde-format
-msgid "(%1 Total)"
-msgstr "(вкупно %1)"
-
-#: kio/global.cpp:128
-#, kde-format
-msgctxt "Items (Folders, Files), Size"
-msgid "%1 (%2, %3), %4"
-msgstr "%1 (%2, %3), %4"
+#: kio/global.cpp:129
+#, fuzzy, kde-format
+#| msgctxt "Items (Folders, Files)"
+#| msgid "%1 (%2, %3)"
+msgctxt "folders, files (size)"
+msgid "%1, %2 (%3)"
+msgstr "%1 (%2, %3)"
 
 #: kio/global.cpp:130
 #, fuzzy, kde-format
-#| msgctxt "Items (Folders, Files), Size"
-#| msgid "%1 (%2, %3), %4"
-msgctxt "Items (Folders, Files)"
-msgid "%1 (%2, %3)"
-msgstr "%1 (%2, %3), %4"
+#| msgid "%1 (%2)"
+msgctxt "folders, files"
+msgid "%1, %2"
+msgstr "%1 (%2)"
 
-#: kio/global.cpp:158
+#: kio/global.cpp:132
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgctxt "files (size)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: kio/global.cpp:138
+#, fuzzy, kde-format
+#| msgctxt "Items in a folder"
+#| msgid "1 item"
+#| msgid_plural "%1 items"
+msgid "1 Item"
+msgid_plural "%1 Items"
+msgstr[0] "%1 елемент"
+msgstr[1] "%1 елементи"
+msgstr[2] "%1 елементи"
+
+#: kio/global.cpp:139
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgctxt "items: folders, files (size)"
+msgid "%1: %2"
+msgstr "%1 (%2)"
+
+#: kio/global.cpp:170
 #, kde-format
 msgid "Could not read %1."
 msgstr "Не може да се прочита %1."
 
-#: kio/global.cpp:161
+#: kio/global.cpp:173
 #, kde-format
 msgid "Could not write to %1."
 msgstr "Не може да се запише во %1."
 
-#: kio/global.cpp:164
+#: kio/global.cpp:176
 #, kde-format
 msgid "Could not start process %1."
 msgstr "Не може да се пушти процесот %1."
 
-#: kio/global.cpp:167
+#: kio/global.cpp:179
 #, kde-format
 msgid ""
 "Internal Error\n"
@@ -585,61 +644,61 @@ msgstr ""
 "Ве молиме пратете известување за бубачки на http://bugs.kde.org\n"
 "%1"
 
-#: kio/global.cpp:170
+#: kio/global.cpp:182
 #, kde-format
 msgid "Malformed URL %1."
 msgstr "Неправилен URL %1."
 
-#: kio/global.cpp:173
+#: kio/global.cpp:185
 #, kde-format
 msgid "The protocol %1 is not supported."
 msgstr "Не е поддржан протоколот %1."
 
-#: kio/global.cpp:176
+#: kio/global.cpp:188
 #, kde-format
 msgid "The protocol %1 is only a filter protocol."
 msgstr "Протоколот %1 е само протокол за филтрирање."
 
-#: kio/global.cpp:183
+#: kio/global.cpp:195
 #, kde-format
 msgid "%1 is a folder, but a file was expected."
 msgstr "%1 е папка, а се очекуваше датотека."
 
-#: kio/global.cpp:186
+#: kio/global.cpp:198
 #, kde-format
 msgid "%1 is a file, but a folder was expected."
 msgstr "%1 е датотека, а се очекуваше папка."
 
-#: kio/global.cpp:189
+#: kio/global.cpp:201
 #, kde-format
 msgid "The file or folder %1 does not exist."
 msgstr "Датотеката или папката %1 не постои."
 
-#: kio/global.cpp:192
+#: kio/global.cpp:204
 #, kde-format
 msgid "A file named %1 already exists."
 msgstr "Веќе постои датотека со име %1."
 
-#: kio/global.cpp:195
+#: kio/global.cpp:207
 #, kde-format
 msgid "A folder named %1 already exists."
 msgstr "Веќе постои папка со име %1."
 
-#: kio/global.cpp:198
+#: kio/global.cpp:210
 msgid "No hostname specified."
 msgstr "Не е наведено име на компјутерот."
 
-#: kio/global.cpp:198
+#: kio/global.cpp:210
 #, kde-format
 msgid "Unknown host %1"
 msgstr "Непознат компјутер %1"
 
-#: kio/global.cpp:201
+#: kio/global.cpp:213
 #, kde-format
 msgid "Access denied to %1."
 msgstr "Пристапот до %1 е одбиен."
 
-#: kio/global.cpp:204
+#: kio/global.cpp:216
 #, kde-format
 msgid ""
 "Access denied.\n"
@@ -648,47 +707,47 @@ msgstr ""
 "Пристапот е одбиен.\n"
 "Не може да се запише во %1."
 
-#: kio/global.cpp:207
+#: kio/global.cpp:219
 #, kde-format
 msgid "Could not enter folder %1."
 msgstr "Не може да се влезе во папката %1."
 
-#: kio/global.cpp:210
+#: kio/global.cpp:222
 #, kde-format
 msgid "The protocol %1 does not implement a folder service."
 msgstr "Протоколот %1 не применува сервис за папки."
 
-#: kio/global.cpp:213
+#: kio/global.cpp:225
 #, kde-format
 msgid "Found a cyclic link in %1."
 msgstr "Најдена е циклична врска во %1."
 
-#: kio/global.cpp:219
+#: kio/global.cpp:231
 #, kde-format
 msgid "Found a cyclic link while copying %1."
 msgstr "Најдена е циклична врска при копирање на %1."
 
-#: kio/global.cpp:222
+#: kio/global.cpp:234
 #, kde-format
 msgid "Could not create socket for accessing %1."
 msgstr "Не може да се создаде приклучник за пристап до %1."
 
-#: kio/global.cpp:225
+#: kio/global.cpp:237
 #, kde-format
 msgid "Could not connect to host %1."
 msgstr "Не можам да се поврзам со компјутерот %1."
 
-#: kio/global.cpp:228
+#: kio/global.cpp:240
 #, kde-format
 msgid "Connection to host %1 is broken."
 msgstr "Врската до компјутерот %1 е прекината."
 
-#: kio/global.cpp:231
+#: kio/global.cpp:243
 #, kde-format
 msgid "The protocol %1 is not a filter protocol."
 msgstr "Протоколот %1 не е филтер-протокол."
 
-#: kio/global.cpp:234
+#: kio/global.cpp:246
 #, kde-format
 msgid ""
 "Could not mount device.\n"
@@ -699,7 +758,7 @@ msgstr ""
 "Пријавената грешка е:\n"
 "%1"
 
-#: kio/global.cpp:237
+#: kio/global.cpp:249
 #, kde-format
 msgid ""
 "Could not unmount device.\n"
@@ -710,82 +769,82 @@ msgstr ""
 "Пријавената грешка е:\n"
 "%1"
 
-#: kio/global.cpp:240
+#: kio/global.cpp:252
 #, kde-format
 msgid "Could not read file %1."
 msgstr "Не може да се прочита датотеката %1."
 
-#: kio/global.cpp:243
+#: kio/global.cpp:255
 #, kde-format
 msgid "Could not write to file %1."
 msgstr "Не може да се запише во датотеката %1."
 
-#: kio/global.cpp:246
+#: kio/global.cpp:258
 #, kde-format
 msgid "Could not bind %1."
 msgstr "Не може да се врзе %1."
 
-#: kio/global.cpp:249
+#: kio/global.cpp:261
 #, kde-format
 msgid "Could not listen %1."
 msgstr "Не може да се слуша на %1."
 
-#: kio/global.cpp:252
+#: kio/global.cpp:264
 #, kde-format
 msgid "Could not accept %1."
 msgstr "Не може да се прифати %1."
 
-#: kio/global.cpp:258
+#: kio/global.cpp:270
 #, kde-format
 msgid "Could not access %1."
 msgstr "Не може да се пристапи на %1."
 
-#: kio/global.cpp:261
+#: kio/global.cpp:273
 #, kde-format
 msgid "Could not terminate listing %1."
 msgstr "Не може да се прекине листањето на %1."
 
-#: kio/global.cpp:264
+#: kio/global.cpp:276
 #, kde-format
 msgid "Could not make folder %1."
 msgstr "Не може да се создаде папката %1."
 
-#: kio/global.cpp:267
+#: kio/global.cpp:279
 #, kde-format
 msgid "Could not remove folder %1."
 msgstr "Не може да се отстрани папката %1."
 
-#: kio/global.cpp:270
+#: kio/global.cpp:282
 #, kde-format
 msgid "Could not resume file %1."
 msgstr "Не може да се продолжи со датотеката %1."
 
-#: kio/global.cpp:273
+#: kio/global.cpp:285
 #, kde-format
 msgid "Could not rename file %1."
 msgstr "Не може да се преименува датотеката %1."
 
-#: kio/global.cpp:276
+#: kio/global.cpp:288
 #, kde-format
 msgid "Could not change permissions for %1."
 msgstr "Не можат да се сменат дозволите за %1."
 
-#: kio/global.cpp:279
+#: kio/global.cpp:291
 #, kde-format
 msgid "Could not change ownership for %1."
 msgstr "Не може да се смени сопственикот на %1."
 
-#: kio/global.cpp:282
+#: kio/global.cpp:294
 #, kde-format
 msgid "Could not delete file %1."
 msgstr "Не може да се избрише датотеката %1."
 
-#: kio/global.cpp:285
+#: kio/global.cpp:297
 #, kde-format
 msgid "The process for the %1 protocol died unexpectedly."
 msgstr "Процесот за протоколот %1 неочекувано падна."
 
-#: kio/global.cpp:288
+#: kio/global.cpp:300
 #, kde-format
 msgid ""
 "Error. Out of memory.\n"
@@ -794,7 +853,7 @@ msgstr ""
 "Грешка. Нема повеќе меморија.\n"
 "%1"
 
-#: kio/global.cpp:291
+#: kio/global.cpp:303
 #, kde-format
 msgid ""
 "Unknown proxy host\n"
@@ -803,13 +862,13 @@ msgstr ""
 "Непознат прокси-компјутер\n"
 "%1"
 
-#: kio/global.cpp:294
+#: kio/global.cpp:306
 #, kde-format
 msgid "Authorization failed, %1 authentication not supported"
 msgstr ""
 "Авторизацијата е неуспешна, не е поддржана проверката за автентичност %1 "
 
-#: kio/global.cpp:297
+#: kio/global.cpp:309
 #, kde-format
 msgid ""
 "User canceled action\n"
@@ -818,7 +877,7 @@ msgstr ""
 "Дејство откажано од корисникот\n"
 "%1"
 
-#: kio/global.cpp:300
+#: kio/global.cpp:312
 #, kde-format
 msgid ""
 "Internal error in server\n"
@@ -827,7 +886,7 @@ msgstr ""
 "Внатрешна грешка на серверот\n"
 "%1"
 
-#: kio/global.cpp:303
+#: kio/global.cpp:315
 #, kde-format
 msgid ""
 "Timeout on server\n"
@@ -836,7 +895,7 @@ msgstr ""
 "Истече времето на серверот\n"
 "%1"
 
-#: kio/global.cpp:306
+#: kio/global.cpp:318
 #, kde-format
 msgid ""
 "Unknown error\n"
@@ -845,7 +904,7 @@ msgstr ""
 "Непозната грешка\n"
 "%1"
 
-#: kio/global.cpp:309
+#: kio/global.cpp:321
 #, kde-format
 msgid ""
 "Unknown interrupt\n"
@@ -854,7 +913,7 @@ msgstr ""
 "Непознат прекин\n"
 "%1"
 
-#: kio/global.cpp:320
+#: kio/global.cpp:332
 #, kde-format
 msgid ""
 "Could not delete original file %1.\n"
@@ -863,7 +922,7 @@ msgstr ""
 "Не може да се избрише оригиналната датотека %1.\n"
 "Проверете ги дозволите."
 
-#: kio/global.cpp:323
+#: kio/global.cpp:335
 #, kde-format
 msgid ""
 "Could not delete partial file %1.\n"
@@ -872,7 +931,7 @@ msgstr ""
 "Не може да се избрише парцијалната датотека %1.\n"
 "Проверете ги дозволите."
 
-#: kio/global.cpp:326
+#: kio/global.cpp:338
 #, kde-format
 msgid ""
 "Could not rename original file %1.\n"
@@ -881,7 +940,7 @@ msgstr ""
 "Не може да се преименува оригиналната датотека %1.\n"
 "Проверете ги дозволите."
 
-#: kio/global.cpp:329
+#: kio/global.cpp:341
 #, kde-format
 msgid ""
 "Could not rename partial file %1.\n"
@@ -890,7 +949,7 @@ msgstr ""
 "Не може да се преименува парцијалната датотека %1.\n"
 "Проверете ги дозволите."
 
-#: kio/global.cpp:332
+#: kio/global.cpp:344
 #, kde-format
 msgid ""
 "Could not create symlink %1.\n"
@@ -899,7 +958,7 @@ msgstr ""
 "Не може да се создаде симболичка врска %1.\n"
 "Проверете ги дозволите."
 
-#: kio/global.cpp:338
+#: kio/global.cpp:350
 #, kde-format
 msgid ""
 "Could not write file %1.\n"
@@ -908,7 +967,7 @@ msgstr ""
 "Не може да се запише датотеката %1.\n"
 "Дискот е полн."
 
-#: kio/global.cpp:341
+#: kio/global.cpp:353
 #, kde-format
 msgid ""
 "The source and destination are the same file.\n"
@@ -917,16 +976,16 @@ msgstr ""
 "Изворот и одредиштето се иста датотека.\n"
 "%1"
 
-#: kio/global.cpp:347
+#: kio/global.cpp:359
 #, kde-format
 msgid "%1 is required by the server, but is not available."
 msgstr "%1 е побаран од серверот, но не е достапен."
 
-#: kio/global.cpp:350
+#: kio/global.cpp:362
 msgid "Access to restricted port in POST denied."
 msgstr "Пристапот до забранетата порта во POST е одбиен."
 
-#: kio/global.cpp:353
+#: kio/global.cpp:365
 #, kde-format
 msgid ""
 "Unknown error code %1\n"
@@ -937,157 +996,157 @@ msgstr ""
 "%2\n"
 "Ве молиме да пратите известување за бубачка на http://bugs.kde.org"
 
-#: kio/global.cpp:363
+#: kio/global.cpp:375
 #, kde-format
 msgid "Opening connections is not supported with the protocol %1."
 msgstr "Отворањето на врски не е поддржано со протоколот %1."
 
-#: kio/global.cpp:365
+#: kio/global.cpp:377
 #, kde-format
 msgid "Closing connections is not supported with the protocol %1."
 msgstr "Затворањето на врски не е поддржано со протоколот %1."
 
-#: kio/global.cpp:367
+#: kio/global.cpp:379
 #, kde-format
 msgid "Accessing files is not supported with the protocol %1."
 msgstr "Пристапувањето на датотеки не е поддржано со протоколот %1."
 
-#: kio/global.cpp:369
+#: kio/global.cpp:381
 #, kde-format
 msgid "Writing to %1 is not supported."
 msgstr "Запишувањето во %1 не е поддржано."
 
-#: kio/global.cpp:371
+#: kio/global.cpp:383
 #, kde-format
 msgid "There are no special actions available for protocol %1."
 msgstr "Нема специјални дејства достапни за протоколот %1."
 
-#: kio/global.cpp:373
+#: kio/global.cpp:385
 #, kde-format
 msgid "Listing folders is not supported for protocol %1."
 msgstr "Прелистувањето папки не е поддржано за протоколот %1."
 
-#: kio/global.cpp:375
+#: kio/global.cpp:387
 #, kde-format
 msgid "Retrieving data from %1 is not supported."
 msgstr "Преземањето податоци од %1 не е поддржано."
 
-#: kio/global.cpp:377
+#: kio/global.cpp:389
 #, kde-format
 msgid "Retrieving mime type information from %1 is not supported."
 msgstr "Преземањето информација за mime-тип од %1 не е поддржано."
 
-#: kio/global.cpp:379
+#: kio/global.cpp:391
 #, kde-format
 msgid "Renaming or moving files within %1 is not supported."
 msgstr ""
 "Преименувањето или преместувањето на датотеки во рамките на %1 не се "
 "поддржани."
 
-#: kio/global.cpp:381
+#: kio/global.cpp:393
 #, kde-format
 msgid "Creating symlinks is not supported with protocol %1."
 msgstr "Создавањето симболички врски не е поддржано со протоколот %1."
 
-#: kio/global.cpp:383
+#: kio/global.cpp:395
 #, kde-format
 msgid "Copying files within %1 is not supported."
 msgstr "Копирањето датотеки во рамките на %1 не е поддржано."
 
-#: kio/global.cpp:385
+#: kio/global.cpp:397
 #, kde-format
 msgid "Deleting files from %1 is not supported."
 msgstr "Бришењето датотеки од %1 не е поддржано."
 
-#: kio/global.cpp:387
+#: kio/global.cpp:399
 #, kde-format
 msgid "Creating folders is not supported with protocol %1."
 msgstr "Создавањето папки не е поддржано со протоколот %1."
 
-#: kio/global.cpp:389
+#: kio/global.cpp:401
 #, kde-format
 msgid "Changing the attributes of files is not supported with protocol %1."
 msgstr ""
 "Менувањето на атрибутите на датотеките не е поддржано со протоколот %1."
 
-#: kio/global.cpp:391
+#: kio/global.cpp:403
 #, kde-format
 msgid "Changing the ownership of files is not supported with protocol %1."
 msgstr "Менувањето сопственик на датотеките не е поддржано со протоколот %1."
 
-#: kio/global.cpp:393
+#: kio/global.cpp:405
 #, kde-format
 msgid "Using sub-URLs with %1 is not supported."
 msgstr "Користењето на sub-URL со %1 не е поддржано."
 
-#: kio/global.cpp:395
+#: kio/global.cpp:407
 #, kde-format
 msgid "Multiple get is not supported with protocol %1."
 msgstr "Повеќекратен get не е поддржан со протоколот %1."
 
-#: kio/global.cpp:397
+#: kio/global.cpp:409
 #, kde-format
 msgid "Opening files is not supported with protocol %1."
 msgstr "Отворањето датотеки не е поддржано со протоколот %1."
 
-#: kio/global.cpp:399
+#: kio/global.cpp:411
 #, kde-format
 msgid "Protocol %1 does not support action %2."
 msgstr "Протоколот %1 не го поддржува дејството %2."
 
-#: kio/global.cpp:419
+#: kio/global.cpp:431
 msgctxt "@info url"
 msgid "(unknown)"
 msgstr "(непознато)"
 
-#: kio/global.cpp:427
+#: kio/global.cpp:439
 #, kde-format
 msgctxt "@info %1 error name, %2 description"
 msgid "<qt><p><b>%1</b></p><p>%2</p></qt>"
 msgstr "<qt><p><b>%1</b></p><p>%2</p></qt>"
 
-#: kio/global.cpp:431
+#: kio/global.cpp:443
 msgid "<b>Technical reason</b>: "
 msgstr "<b>Техничка причина</b>: "
 
-#: kio/global.cpp:433
+#: kio/global.cpp:445
 msgid "<b>Details of the request</b>:"
 msgstr "<b>Детали за барањето</b>:"
 
-#: kio/global.cpp:434
+#: kio/global.cpp:446
 #, kde-format
 msgid "<li>URL: %1</li>"
 msgstr "<li>URL: %1</li>"
 
-#: kio/global.cpp:436
+#: kio/global.cpp:448
 #, kde-format
 msgid "<li>Protocol: %1</li>"
 msgstr "<li>Протокол: %1</li>"
 
-#: kio/global.cpp:438
+#: kio/global.cpp:450
 #, kde-format
 msgid "<li>Date and time: %1</li>"
 msgstr "<li>Датум и време: %1</li>"
 
-#: kio/global.cpp:439
+#: kio/global.cpp:451
 #, kde-format
 msgid "<li>Additional information: %1</li>"
 msgstr "<li>Дополнителни информации: %1</li>"
 
-#: kio/global.cpp:442
+#: kio/global.cpp:454
 msgid "<b>Possible causes</b>:"
 msgstr "<b>Можни причини</b>:"
 
-#: kio/global.cpp:447
+#: kio/global.cpp:459
 msgid "<b>Possible solutions</b>:"
 msgstr "<b>Можни решенија</b>:"
 
-#: kio/global.cpp:480
+#: kio/global.cpp:492
 msgctxt "@info protocol"
 msgid "(unknown)"
 msgstr "(непознато)"
 
-#: kio/global.cpp:490
+#: kio/global.cpp:502
 msgid ""
 "Contact your appropriate computer support system, whether the system "
 "administrator, or technical support group for further assistance."
@@ -1096,15 +1155,15 @@ msgstr ""
 "систем-администраторот или со групата за техничка поддршка, за понатамошна "
 "помош."
 
-#: kio/global.cpp:493
+#: kio/global.cpp:505
 msgid "Contact the administrator of the server for further assistance."
 msgstr "Контактирајте со администраторот на серверот за понатамошна помош."
 
-#: kio/global.cpp:496
+#: kio/global.cpp:508
 msgid "Check your access permissions on this resource."
 msgstr "Проверете ги вашите дозволи за пристап на овој ресурс."
 
-#: kio/global.cpp:497
+#: kio/global.cpp:509
 msgid ""
 "Your access permissions may be inadequate to perform the requested operation "
 "on this resource."
@@ -1112,14 +1171,14 @@ msgstr ""
 "Вашите дозволи за пристап се можеби несоодветни за да се изврши бараната "
 "операција на овој ресурс."
 
-#: kio/global.cpp:499
+#: kio/global.cpp:511
 msgid ""
 "The file may be in use (and thus locked) by another user or application."
 msgstr ""
 "Датотеката може да е во употреба (и поради тоа заклучена) од некој друг "
 "корисник или апликација."
 
-#: kio/global.cpp:501
+#: kio/global.cpp:513
 msgid ""
 "Check to make sure that no other application or user is using the file or "
 "has locked the file."
@@ -1127,15 +1186,15 @@ msgstr ""
 "Проверете за да се осигурате дека друга апликација или друг корисник не ја "
 "користат или не ја заклучиле датотеката."
 
-#: kio/global.cpp:503
+#: kio/global.cpp:515
 msgid "Although unlikely, a hardware error may have occurred."
 msgstr "Иако е малку веројатно, можно е да се случила хардверска грешка."
 
-#: kio/global.cpp:505
+#: kio/global.cpp:517
 msgid "You may have encountered a bug in the program."
 msgstr "Можеби сте наишле на бубачка во програмата."
 
-#: kio/global.cpp:506
+#: kio/global.cpp:518
 msgid ""
 "This is most likely to be caused by a bug in the program. Please consider "
 "submitting a full bug report as detailed below."
@@ -1143,7 +1202,7 @@ msgstr ""
 "Ова е најверојатно предизвикано од бубачка во програмата. Размислете околу "
 "испраќање на целосен извештај за бубачка како што е дадено подолу."
 
-#: kio/global.cpp:508
+#: kio/global.cpp:520
 msgid ""
 "Update your software to the latest version. Your distribution should provide "
 "tools to update your software."
@@ -1151,7 +1210,7 @@ msgstr ""
 "Ажурирајте го вашиот софтвер до последната верзија. Вашата дистрибуција би "
 "требало да обезбеди алатки за ажурирање на вашиот софтвер."
 
-#: kio/global.cpp:510
+#: kio/global.cpp:522
 msgid ""
 "When all else fails, please consider helping the KDE team or the third party "
 "maintainer of this software by submitting a high quality bug report. If the "
@@ -1170,11 +1229,11 @@ msgstr ""
 "Ако не е, забележете ги деталите дадени погоре и внесете ги во вашиот "
 "извештај за бубачки, заедно со сите детали за кои мислите дека ќе помогнат."
 
-#: kio/global.cpp:518
+#: kio/global.cpp:530
 msgid "There may have been a problem with your network connection."
 msgstr "Можно е да има проблем со вашата мрежна врска."
 
-#: kio/global.cpp:521
+#: kio/global.cpp:533
 msgid ""
 "There may have been a problem with your network configuration. If you have "
 "been accessing the Internet with no problems recently, this is unlikely."
@@ -1182,7 +1241,7 @@ msgstr ""
 "Можно е да има проблем со вашата мрежна конфигурација. Ако сте пристапувале "
 "скоро на Интернет без проблеми, ова е малку веројатно."
 
-#: kio/global.cpp:524
+#: kio/global.cpp:536
 msgid ""
 "There may have been a problem at some point along the network path between "
 "the server and this computer."
@@ -1190,41 +1249,41 @@ msgstr ""
 "Можно е да имало проблем на некоја точка по мрежната патека меѓу серверот и "
 "овој компјутер."
 
-#: kio/global.cpp:526
+#: kio/global.cpp:538
 msgid "Try again, either now or at a later time."
 msgstr "Обидете се повторно, сега или малку подоцна."
 
-#: kio/global.cpp:527
+#: kio/global.cpp:539
 msgid "A protocol error or incompatibility may have occurred."
 msgstr "Можно е да се случила грешка во протоколот или несоодветност."
 
-#: kio/global.cpp:528
+#: kio/global.cpp:540
 msgid "Ensure that the resource exists, and try again."
 msgstr "Осигурете се дека постои ресурсот и обидете се повторно."
 
-#: kio/global.cpp:529
+#: kio/global.cpp:541
 msgid "The specified resource may not exist."
 msgstr "Можно е да не постои зададениот ресурс."
 
-#: kio/global.cpp:530
+#: kio/global.cpp:542
 msgid "You may have incorrectly typed the location."
 msgstr "Можно е да сте ја искуцале локацијата погрешно."
 
-#: kio/global.cpp:531
+#: kio/global.cpp:543
 msgid "Double-check that you have entered the correct location and try again."
 msgstr ""
 "Проверете двапати дека сте ја внеле правилната локација и обидете се "
 "повторно."
 
-#: kio/global.cpp:533
+#: kio/global.cpp:545
 msgid "Check your network connection status."
 msgstr "Проверете го статусот на вашата мрежна врска."
 
-#: kio/global.cpp:537
+#: kio/global.cpp:549
 msgid "Cannot Open Resource For Reading"
 msgstr "Не можам да го отворам ресурсот за читање"
 
-#: kio/global.cpp:538
+#: kio/global.cpp:550
 #, kde-format
 msgid ""
 "This means that the contents of the requested file or folder <strong>%1</"
@@ -1233,17 +1292,17 @@ msgstr ""
 "Ова значи дека содржината на бараната датотека или папка <strong>%1</strong> "
 "не можеше да се преземе, бидејќи не можеше да се добие пристап за читање."
 
-#: kio/global.cpp:541
+#: kio/global.cpp:553
 msgid "You may not have permissions to read the file or open the folder."
 msgstr ""
 "Можно е да немате дозволи да ја прочитате датотеката или да ја отворите "
 "папката."
 
-#: kio/global.cpp:547
+#: kio/global.cpp:559
 msgid "Cannot Open Resource For Writing"
 msgstr "Не можам да го отворам ресурсот за запишување"
 
-#: kio/global.cpp:548
+#: kio/global.cpp:560
 #, kde-format
 msgid ""
 "This means that the file, <strong>%1</strong>, could not be written to as "
@@ -1253,16 +1312,16 @@ msgstr ""
 "според барањето, бидејќи не можеше да се добие пристап со дозвола за "
 "запишување."
 
-#: kio/global.cpp:556
+#: kio/global.cpp:568
 #, kde-format
 msgid "Cannot Initiate the %1 Protocol"
 msgstr "Не можам да го иницирам протоколот %1"
 
-#: kio/global.cpp:557
+#: kio/global.cpp:569
 msgid "Unable to Launch Process"
 msgstr "Не можам да пуштам процес"
 
-#: kio/global.cpp:558
+#: kio/global.cpp:570
 #, kde-format
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
@@ -1272,7 +1331,7 @@ msgstr ""
 "Програмата на вашиот компјутер која обезбедува пристап до протоколот <strong>"
 "%1</strong> не можеше да се изврши. Ова е обично поради технички причини."
 
-#: kio/global.cpp:561
+#: kio/global.cpp:573
 msgid ""
 "The program which provides compatibility with this protocol may not have "
 "been updated with your last update of KDE. This can cause the program to be "
@@ -1283,11 +1342,11 @@ msgstr ""
 "програмата да биде несоодветна со тековната верзија и поради тоа да не може "
 "да се стартува."
 
-#: kio/global.cpp:569
+#: kio/global.cpp:581
 msgid "Internal Error"
 msgstr "Внатрешна грешка"
 
-#: kio/global.cpp:570
+#: kio/global.cpp:582
 #, kde-format
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
@@ -1296,11 +1355,11 @@ msgstr ""
 "Програмата на вашиот компјутер, која обезбедува пристап до протоколот "
 "<strong>%1</strong>, јави внатрешна грешка."
 
-#: kio/global.cpp:578
+#: kio/global.cpp:590
 msgid "Improperly Formatted URL"
 msgstr "Неправилно форматиран URL"
 
-#: kio/global.cpp:579
+#: kio/global.cpp:591
 msgid ""
 "The <strong>U</strong>niform <strong>R</strong>esource <strong>L</"
 "strong>ocator (URL) that you entered was not properly formatted. The format "
@@ -1313,12 +1372,12 @@ msgstr ""
 "форматот на URL е следниот:<blockquote><strong>protocol://user:password@www."
 "example.org:port/folder/filename.extension?query=value</strong></blockquote>"
 
-#: kio/global.cpp:588
+#: kio/global.cpp:600
 #, kde-format
 msgid "Unsupported Protocol %1"
 msgstr "Неподдржан протокол %1"
 
-#: kio/global.cpp:589
+#: kio/global.cpp:601
 #, kde-format
 msgid ""
 "The protocol <strong>%1</strong> is not supported by the KDE programs "
@@ -1327,11 +1386,11 @@ msgstr ""
 "Протоколот <strong>%1</strong> не е поддржан од програмите на KDE моментално "
 "инсталирани на овој компјутер."
 
-#: kio/global.cpp:592
+#: kio/global.cpp:604
 msgid "The requested protocol may not be supported."
 msgstr "Бараниот протокол може да не е поддржан."
 
-#: kio/global.cpp:593
+#: kio/global.cpp:605
 #, kde-format
 msgid ""
 "The versions of the %1 protocol supported by this computer and the server "
@@ -1340,7 +1399,7 @@ msgstr ""
 "Можно е да се несоодветни верзиите на протоколот %1 поддржани од овој "
 "компјутер и од серверот."
 
-#: kio/global.cpp:595
+#: kio/global.cpp:607
 msgid ""
 "You may perform a search on the Internet for a KDE program (called a "
 "kioslave or ioslave) which supports this protocol. Places to search include "
@@ -1352,15 +1411,15 @@ msgstr ""
 "да пребарувате ги вклучуваат и <a href=\"http://kde-apps.org/\">http://kde-"
 "apps.org/</a> и <a href=\"http://freshmeat.net/\">http://freshmeat.net/</a>."
 
-#: kio/global.cpp:604
+#: kio/global.cpp:616
 msgid "URL Does Not Refer to a Resource."
 msgstr "URL не се однесува на ресурс."
 
-#: kio/global.cpp:605
+#: kio/global.cpp:617
 msgid "Protocol is a Filter Protocol"
 msgstr "Протоколот е филтер-протокол"
 
-#: kio/global.cpp:606
+#: kio/global.cpp:618
 msgid ""
 "The <strong>U</strong>niform <strong>R</strong>esource <strong>L</"
 "strong>ocator (URL) that you entered did not refer to a specific resource."
@@ -1368,7 +1427,7 @@ msgstr ""
 "<strong>У</strong>ниформниот <strong>Р</strong>есурсен <strong>Л</"
 "strong>окатор (URL), којшто го внесовте, не се однесуваше на одреден ресурс."
 
-#: kio/global.cpp:609
+#: kio/global.cpp:621
 msgid ""
 "KDE is able to communicate through a protocol within a protocol; the "
 "protocol specified is only for use in such situations, however this is not "
@@ -1380,12 +1439,12 @@ msgstr ""
 "ситуација не е таква. Ова е редок случај, и веројатно значи дека има "
 "програмска грешка."
 
-#: kio/global.cpp:617
+#: kio/global.cpp:629
 #, kde-format
 msgid "Unsupported Action: %1"
 msgstr "Неподдржано дејство: %1"
 
-#: kio/global.cpp:618
+#: kio/global.cpp:630
 #, kde-format
 msgid ""
 "The requested action is not supported by the KDE program which is "
@@ -1394,7 +1453,7 @@ msgstr ""
 "Бараното дејство не е поддржано од програмата од KDE, која го имплементира "
 "протоколот <strong>%1</strong>."
 
-#: kio/global.cpp:621
+#: kio/global.cpp:633
 msgid ""
 "This error is very much dependent on the KDE program. The additional "
 "information should give you more information than is available to the KDE "
@@ -1404,15 +1463,15 @@ msgstr ""
 "би требало да ве информира повеќе отколку што е достапно во влезно/излезната "
 "архитектура на KDE."
 
-#: kio/global.cpp:624
+#: kio/global.cpp:636
 msgid "Attempt to find another way to accomplish the same outcome."
 msgstr "Обид да се пронајде друг начин да се постигне истата цел."
 
-#: kio/global.cpp:629
+#: kio/global.cpp:641
 msgid "File Expected"
 msgstr "Се очекуваше датотека."
 
-#: kio/global.cpp:630
+#: kio/global.cpp:642
 #, kde-format
 msgid ""
 "The request expected a file, however the folder <strong>%1</strong> was "
@@ -1421,15 +1480,15 @@ msgstr ""
 "Барањето очекуваше датотека, но наместо тоа беше пронајдена папката <strong>%"
 "1</strong>."
 
-#: kio/global.cpp:632
+#: kio/global.cpp:644
 msgid "This may be an error on the server side."
 msgstr "Ова може да е грешка на страната на серверот."
 
-#: kio/global.cpp:637
+#: kio/global.cpp:649
 msgid "Folder Expected"
 msgstr "Се очекуваше папка."
 
-#: kio/global.cpp:638
+#: kio/global.cpp:650
 #, kde-format
 msgid ""
 "The request expected a folder, however the file <strong>%1</strong> was "
@@ -1438,16 +1497,16 @@ msgstr ""
 "Барањето очекуваше папка, но наместо тоа беше пронајдена датотеката <strong>%"
 "1</strong>."
 
-#: kio/global.cpp:645
+#: kio/global.cpp:657
 msgid "File or Folder Does Not Exist"
 msgstr "Датотеката или папката не постои"
 
-#: kio/global.cpp:646
+#: kio/global.cpp:658
 #, kde-format
 msgid "The specified file or folder <strong>%1</strong> does not exist."
 msgstr "Зададената датотека или папка <strong>%1</strong> не постои."
 
-#: kio/global.cpp:654
+#: kio/global.cpp:666
 msgid ""
 "The requested file could not be created because a file with the same name "
 "already exists."
@@ -1455,46 +1514,46 @@ msgstr ""
 "Бараната датотека не можеше да се создаде бидејќи веќе постои датотека со "
 "исто име."
 
-#: kio/global.cpp:656
+#: kio/global.cpp:668
 msgid "Try moving the current file out of the way first, and then try again."
 msgstr ""
 "Обидете се да ја тргнете настрана тековната датотека и потоа обидете се "
 "повторно."
 
-#: kio/global.cpp:658
+#: kio/global.cpp:670
 msgid "Delete the current file and try again."
 msgstr "Избришете ја тековната датотека и обидете се повторно."
 
-#: kio/global.cpp:659
+#: kio/global.cpp:671
 msgid "Choose an alternate filename for the new file."
 msgstr "Изберете алтернативно име за новата датотека."
 
-#: kio/global.cpp:664
+#: kio/global.cpp:676
 msgid ""
 "The requested folder could not be created because a folder with the same "
 "name already exists."
 msgstr ""
 "Бараната папка не можеше да се создаде бидејќи веќе постои папка со исто име."
 
-#: kio/global.cpp:666
+#: kio/global.cpp:678
 msgid "Try moving the current folder out of the way first, and then try again."
 msgstr ""
 "Обидете се да ја тргнете настрана тековната папка и потоа обидете се "
 "повторно."
 
-#: kio/global.cpp:668
+#: kio/global.cpp:680
 msgid "Delete the current folder and try again."
 msgstr "Избришете ја тековната папка и обидете се повторно."
 
-#: kio/global.cpp:669
+#: kio/global.cpp:681
 msgid "Choose an alternate name for the new folder."
 msgstr "Изберете алтернативно име за новата папка."
 
-#: kio/global.cpp:673
+#: kio/global.cpp:685
 msgid "Unknown Host"
 msgstr "Непознат компјутер"
 
-#: kio/global.cpp:674
+#: kio/global.cpp:686
 #, kde-format
 msgid ""
 "An unknown host error indicates that the server with the requested name, "
@@ -1503,33 +1562,33 @@ msgstr ""
 "Грешката „непознат компјутер“ покажува дека серверот со бараното име <strong>"
 "%1</strong> не можеше да биде пронајден на Интернет."
 
-#: kio/global.cpp:677
+#: kio/global.cpp:689
 #, kde-format
 msgid ""
 "The name that you typed, %1, may not exist: it may be incorrectly typed."
 msgstr ""
 "Името кое го искуцавте, %1, може да не постои: може да е неправилно искуцано."
 
-#: kio/global.cpp:684
+#: kio/global.cpp:696
 msgid "Access Denied"
 msgstr "Пристапот е одбиен"
 
-#: kio/global.cpp:685
+#: kio/global.cpp:697
 #, kde-format
 msgid "Access was denied to the specified resource, <strong>%1</strong>."
 msgstr "Пристапот до зададениот ресурс <strong>%1</strong> е одбиен."
 
-#: kio/global.cpp:687 kio/global.cpp:903
+#: kio/global.cpp:699 kio/global.cpp:915
 msgid "You may have supplied incorrect authentication details or none at all."
 msgstr ""
 "Можеби дадовте погрешни детали за проверката за автентичност или пак никакви."
 
-#: kio/global.cpp:689 kio/global.cpp:905
+#: kio/global.cpp:701 kio/global.cpp:917
 msgid "Your account may not have permission to access the specified resource."
 msgstr ""
 "Можеби со Вашата сметка немате дозволи за пристап до зададениот ресурс."
 
-#: kio/global.cpp:691 kio/global.cpp:907 kio/global.cpp:919
+#: kio/global.cpp:703 kio/global.cpp:919 kio/global.cpp:931
 msgid ""
 "Retry the request and ensure your authentication details are entered "
 "correctly."
@@ -1537,11 +1596,11 @@ msgstr ""
 "Повторете го барањето и осигурете се дека вашите детали за проверка за "
 "автентичност се правилно внесени."
 
-#: kio/global.cpp:697
+#: kio/global.cpp:709
 msgid "Write Access Denied"
 msgstr "Пристапот за запис е одбиен"
 
-#: kio/global.cpp:698
+#: kio/global.cpp:710
 #, kde-format
 msgid ""
 "This means that an attempt to write to the file <strong>%1</strong> was "
@@ -1550,11 +1609,11 @@ msgstr ""
 "Ова значи дека беше одбиен обидот да се запише во датотеката <strong>%1</"
 "strong>."
 
-#: kio/global.cpp:705
+#: kio/global.cpp:717
 msgid "Unable to Enter Folder"
 msgstr "Не можам да влезам во папката"
 
-#: kio/global.cpp:706
+#: kio/global.cpp:718
 #, kde-format
 msgid ""
 "This means that an attempt to enter (in other words, to open) the requested "
@@ -1563,16 +1622,16 @@ msgstr ""
 "Ова значи дека обидот да се влезе во (т.е. да се отвори) папката <strong>%1</"
 "strong> беше одбиен."
 
-#: kio/global.cpp:714
+#: kio/global.cpp:726
 msgid "Folder Listing Unavailable"
 msgstr "Не е достапна листа на папката"
 
-#: kio/global.cpp:715
+#: kio/global.cpp:727
 #, kde-format
 msgid "Protocol %1 is not a Filesystem"
 msgstr "Протоколот %1 не е датотечен систем"
 
-#: kio/global.cpp:716
+#: kio/global.cpp:728
 msgid ""
 "This means that a request was made which requires determining the contents "
 "of the folder, and the KDE program supporting this protocol is unable to do "
@@ -1582,11 +1641,11 @@ msgstr ""
 "папката, а програмата од KDE, која го поддржува овој протокол, не може да го "
 "направи тоа."
 
-#: kio/global.cpp:724
+#: kio/global.cpp:736
 msgid "Cyclic Link Detected"
 msgstr "Откриена е циклична врска"
 
-#: kio/global.cpp:725
+#: kio/global.cpp:737
 msgid ""
 "UNIX environments are commonly able to link a file or folder to a separate "
 "name and/or location. KDE detected a link or series of links that results in "
@@ -1598,7 +1657,7 @@ msgstr ""
 "бесконечна јамка - т.е. датотеката била (можеби по некој кружен пат) "
 "поврзана самата со себеси."
 
-#: kio/global.cpp:729 kio/global.cpp:751
+#: kio/global.cpp:741 kio/global.cpp:763
 msgid ""
 "Delete one part of the loop in order that it does not cause an infinite "
 "loop, and try again."
@@ -1606,23 +1665,23 @@ msgstr ""
 "Избришете еден дел од јамката за да не се создава бесконечна јамка и обидете "
 "се повторно."
 
-#: kio/global.cpp:738
+#: kio/global.cpp:750
 msgid "Request Aborted By User"
 msgstr "Барањето е прекинато од корисникот"
 
-#: kio/global.cpp:739 kio/global.cpp:1040
+#: kio/global.cpp:751 kio/global.cpp:1052
 msgid "The request was not completed because it was aborted."
 msgstr "Барањето не беше довршено бидејќи беше прекинато."
 
-#: kio/global.cpp:741 kio/global.cpp:935 kio/global.cpp:1042
+#: kio/global.cpp:753 kio/global.cpp:947 kio/global.cpp:1054
 msgid "Retry the request."
 msgstr "Повторете го барањето."
 
-#: kio/global.cpp:745
+#: kio/global.cpp:757
 msgid "Cyclic Link Detected During Copy"
 msgstr "Откриена е циклична врска при копирањето"
 
-#: kio/global.cpp:746
+#: kio/global.cpp:758
 msgid ""
 "UNIX environments are commonly able to link a file or folder to a separate "
 "name and/or location. During the requested copy operation, KDE detected a "
@@ -1634,15 +1693,15 @@ msgstr ""
 "серија од врски што резултираат во бесконечна јамка - т.е. датотеката била "
 "(можеби по некој кружен пат) поврзана самата со себеси."
 
-#: kio/global.cpp:756
+#: kio/global.cpp:768
 msgid "Could Not Create Network Connection"
 msgstr "Не можев да создадам мрежна врска"
 
-#: kio/global.cpp:757
+#: kio/global.cpp:769
 msgid "Could Not Create Socket"
 msgstr "Не можев да создадам Socket"
 
-#: kio/global.cpp:758
+#: kio/global.cpp:770
 msgid ""
 "This is a fairly technical error in which a required device for network "
 "communications (a socket) could not be created."
@@ -1650,7 +1709,7 @@ msgstr ""
 "Ова е техничка грешка во која не можеше да се создаде потребниот уред за "
 "мрежна комуникација (socket)."
 
-#: kio/global.cpp:760 kio/global.cpp:873 kio/global.cpp:884 kio/global.cpp:893
+#: kio/global.cpp:772 kio/global.cpp:885 kio/global.cpp:896 kio/global.cpp:905
 msgid ""
 "The network connection may be incorrectly configured, or the network "
 "interface may not be enabled."
@@ -1658,11 +1717,11 @@ msgstr ""
 "Можно е мрежната врска да не е правилно конфигурирана или да не е овозможен "
 "мрежниот интерфејс."
 
-#: kio/global.cpp:766
+#: kio/global.cpp:778
 msgid "Connection to Server Refused"
 msgstr "Одбиено е поврзувањето со серверот"
 
-#: kio/global.cpp:767
+#: kio/global.cpp:779
 #, kde-format
 msgid ""
 "The server <strong>%1</strong> refused to allow this computer to make a "
@@ -1671,7 +1730,7 @@ msgstr ""
 "Серверот <strong>%1</strong> одби да му дозволи на овој компјутер да се "
 "поврзе."
 
-#: kio/global.cpp:769
+#: kio/global.cpp:781
 msgid ""
 "The server, while currently connected to the Internet, may not be configured "
 "to allow requests."
@@ -1679,7 +1738,7 @@ msgstr ""
 "Серверот, иако е моментално поврзан на Интернет, може да не е конфигуриран "
 "да дозволува барања."
 
-#: kio/global.cpp:771
+#: kio/global.cpp:783
 #, kde-format
 msgid ""
 "The server, while currently connected to the Internet, may not be running "
@@ -1688,7 +1747,7 @@ msgstr ""
 "Серверот, иако е моментално поврзан на Интернет, може да го нема активирано "
 "бараниот сервис (%1)."
 
-#: kio/global.cpp:773
+#: kio/global.cpp:785
 msgid ""
 "A network firewall (a device which restricts Internet requests), either "
 "protecting your network or the network of the server, may have intervened, "
@@ -1698,11 +1757,11 @@ msgstr ""
 "на Интернет), кој ја заштитува вашата мрежа или мрежата на серверот, притоа "
 "спречувајќи го ова барање."
 
-#: kio/global.cpp:780
+#: kio/global.cpp:792
 msgid "Connection to Server Closed Unexpectedly"
 msgstr "Врската со серверот неочекувано беше затворена"
 
-#: kio/global.cpp:781
+#: kio/global.cpp:793
 #, kde-format
 msgid ""
 "Although a connection was established to <strong>%1</strong>, the connection "
@@ -1711,7 +1770,7 @@ msgstr ""
 "Иако беше воспоставена врска до <strong>%1</strong>, врската беше затворена "
 "во неочекуван момент од комуникацијата."
 
-#: kio/global.cpp:784
+#: kio/global.cpp:796
 msgid ""
 "A protocol error may have occurred, causing the server to close the "
 "connection as a response to the error."
@@ -1719,16 +1778,16 @@ msgstr ""
 "Можно е да се случила грешка во протоколот, поради што серверот ја затворил "
 "врската како одговор на грешката."
 
-#: kio/global.cpp:790
+#: kio/global.cpp:802
 msgid "URL Resource Invalid"
 msgstr "Невалиден URL-ресурс"
 
-#: kio/global.cpp:791
+#: kio/global.cpp:803
 #, kde-format
 msgid "Protocol %1 is not a Filter Protocol"
 msgstr "Протоколот %1 не е филтер-протокол"
 
-#: kio/global.cpp:792
+#: kio/global.cpp:804
 #, kde-format
 msgid ""
 "The <strong>U</strong>niform <strong>R</strong>esource <strong>L</"
@@ -1739,7 +1798,7 @@ msgstr ""
 "strong>окатор (URL) што го внесовте не укажува на валиден механизам за "
 "пристапување на дадениот ресурс <strong>%1%2</strong>."
 
-#: kio/global.cpp:797
+#: kio/global.cpp:809
 msgid ""
 "KDE is able to communicate through a protocol within a protocol. This "
 "request specified a protocol be used as such, however this protocol is not "
@@ -1751,15 +1810,15 @@ msgstr ""
 "е способен за такво дејство. Ова е редок случај, и веројатно значи дека има "
 "програмска грешка."
 
-#: kio/global.cpp:805
+#: kio/global.cpp:817
 msgid "Unable to Initialize Input/Output Device"
 msgstr "Не можам да го иницијализирам влезно/излезниот уред"
 
-#: kio/global.cpp:806
+#: kio/global.cpp:818
 msgid "Could Not Mount Device"
 msgstr "Не можам да го монтирам уредот"
 
-#: kio/global.cpp:807
+#: kio/global.cpp:819
 #, kde-format
 msgid ""
 "The requested device could not be initialized (\"mounted\"). The reported "
@@ -1768,7 +1827,7 @@ msgstr ""
 "Бараниот уред не можеше да биде иницијализиран („монтиран“). Пријавената "
 "грешка беше:  <strong>%1</strong>"
 
-#: kio/global.cpp:810
+#: kio/global.cpp:822
 msgid ""
 "The device may not be ready, for example there may be no media in a "
 "removable media device (i.e. no CD-ROM in a CD drive), or in the case of a "
@@ -1778,7 +1837,7 @@ msgstr ""
 "подвижни носачи (пр. нема CD-ROM во CD-уредот), или во случајот на периферен/"
 "преносен уред, уредот може да не е правилно поврзан."
 
-#: kio/global.cpp:814
+#: kio/global.cpp:826
 msgid ""
 "You may not have permissions to initialize (\"mount\") the device. On UNIX "
 "systems, often system administrator privileges are required to initialize a "
@@ -1788,7 +1847,7 @@ msgstr ""
 "системите UNIX, често се потребни администраторски дозволи за да се "
 "иницијализира уред."
 
-#: kio/global.cpp:818
+#: kio/global.cpp:830
 msgid ""
 "Check that the device is ready; removable drives must contain media, and "
 "portable devices must be connected and powered on.; and try again."
@@ -1797,15 +1856,15 @@ msgstr ""
 "содржат носач, а преносните уреди мора да бидат поврзани и вклучени. Потоа "
 "обидете се повторно."
 
-#: kio/global.cpp:824
+#: kio/global.cpp:836
 msgid "Unable to Uninitialize Input/Output Device"
 msgstr "Не можам да го деиницијализирам влезно/излезниот уред"
 
-#: kio/global.cpp:825
+#: kio/global.cpp:837
 msgid "Could Not Unmount Device"
 msgstr "Не можам да го одмонтирам уредот"
 
-#: kio/global.cpp:826
+#: kio/global.cpp:838
 #, kde-format
 msgid ""
 "The requested device could not be uninitialized (\"unmounted\"). The "
@@ -1814,7 +1873,7 @@ msgstr ""
 "Бараниот уред не може да се деиницијализира („одмонтира“). Пријавената "
 "грешка беше : <strong>%1</strong>"
 
-#: kio/global.cpp:829
+#: kio/global.cpp:841
 msgid ""
 "The device may be busy, that is, still in use by another application or "
 "user. Even such things as having an open browser window on a location on "
@@ -1824,7 +1883,7 @@ msgstr ""
 "апликација или корисник. Дури и отворен прозорец на прелистувач, кој се "
 "наоѓа на локација на уредот, може да го зафати уредот."
 
-#: kio/global.cpp:833
+#: kio/global.cpp:845
 msgid ""
 "You may not have permissions to uninitialize (\"unmount\") the device. On "
 "UNIX systems, system administrator privileges are often required to "
@@ -1834,17 +1893,17 @@ msgstr ""
 "На системите UNIX, често се потребни администраторски дозволи за да се "
 "деиницијализира уред."
 
-#: kio/global.cpp:837
+#: kio/global.cpp:849
 msgid "Check that no applications are accessing the device, and try again."
 msgstr ""
 "Проверете дека ниту една апликација не пристапува на уредот и обидете се "
 "повторно."
 
-#: kio/global.cpp:842
+#: kio/global.cpp:854
 msgid "Cannot Read From Resource"
 msgstr "Не можам да прочитам од ресурсот"
 
-#: kio/global.cpp:843
+#: kio/global.cpp:855
 #, kde-format
 msgid ""
 "This means that although the resource, <strong>%1</strong>, was able to be "
@@ -1853,15 +1912,15 @@ msgstr ""
 "Ова значи дека иако ресурсот <strong>%1</strong> можеше да се отвори, се "
 "случи грешка за време на читањето на содржината на ресурсот."
 
-#: kio/global.cpp:846
+#: kio/global.cpp:858
 msgid "You may not have permissions to read from the resource."
 msgstr "Можеби немате дозволи за читање од ресурсот."
 
-#: kio/global.cpp:855
+#: kio/global.cpp:867
 msgid "Cannot Write to Resource"
 msgstr "Не можам да запишам во ресурсот"
 
-#: kio/global.cpp:856
+#: kio/global.cpp:868
 #, kde-format
 msgid ""
 "This means that although the resource, <strong>%1</strong>, was able to be "
@@ -1870,19 +1929,19 @@ msgstr ""
 "Ова значи дека иако можеше да се отвори ресурсот <strong>%1</strong>, се "
 "случи грешка за време на запишувањето на содржината во ресурсот."
 
-#: kio/global.cpp:859
+#: kio/global.cpp:871
 msgid "You may not have permissions to write to the resource."
 msgstr "Можеби немате дозволи за запишување во ресурсот."
 
-#: kio/global.cpp:868 kio/global.cpp:879
+#: kio/global.cpp:880 kio/global.cpp:891
 msgid "Could Not Listen for Network Connections"
 msgstr "Не можам да слушам за мрежни поврзувања"
 
-#: kio/global.cpp:869
+#: kio/global.cpp:881
 msgid "Could Not Bind"
 msgstr "Не можам да се врзам"
 
-#: kio/global.cpp:870 kio/global.cpp:881
+#: kio/global.cpp:882 kio/global.cpp:893
 msgid ""
 "This is a fairly technical error in which a required device for network "
 "communications (a socket) could not be established to listen for incoming "
@@ -1892,15 +1951,15 @@ msgstr ""
 "мрежна комуникација (socket) за да може тој да слуша за доаѓачки мрежни "
 "поврзувања."
 
-#: kio/global.cpp:880
+#: kio/global.cpp:892
 msgid "Could Not Listen"
 msgstr "Не можам да слушам"
 
-#: kio/global.cpp:890
+#: kio/global.cpp:902
 msgid "Could Not Accept Network Connection"
 msgstr "Не можам да прифаќам мрежни поврзувања"
 
-#: kio/global.cpp:891
+#: kio/global.cpp:903
 msgid ""
 "This is a fairly technical error in which an error occurred while attempting "
 "to accept an incoming network connection."
@@ -1908,29 +1967,29 @@ msgstr ""
 "Ова е техничка грешка која се случи при обидот да се прифати доаѓачко мрежно "
 "поврзување."
 
-#: kio/global.cpp:895
+#: kio/global.cpp:907
 msgid "You may not have permissions to accept the connection."
 msgstr "Можно е да немате дозволи за прифаќање на поврзувањето."
 
-#: kio/global.cpp:900
+#: kio/global.cpp:912
 #, kde-format
 msgid "Could Not Login: %1"
 msgstr "Не можам да се пријавам: %1"
 
-#: kio/global.cpp:901
+#: kio/global.cpp:913
 msgid ""
 "An attempt to login to perform the requested operation was unsuccessful."
 msgstr "Обидот за најава за да се изврши бараната операција не беше успешен."
 
-#: kio/global.cpp:912
+#: kio/global.cpp:924
 msgid "Could Not Determine Resource Status"
 msgstr "Не може да се определи статусот на ресурсот"
 
-#: kio/global.cpp:913
+#: kio/global.cpp:925
 msgid "Could Not Stat Resource"
 msgstr "Не може да се земе статус за ресурсот"
 
-#: kio/global.cpp:914
+#: kio/global.cpp:926
 #, kde-format
 msgid ""
 "An attempt to determine information about the status of the resource <strong>"
@@ -1939,57 +1998,57 @@ msgstr ""
 "Обидот да се добијат информации за статусот на ресурсот <strong>%1</strong>, "
 "како што е името на ресурсот, типот, големината, итн., беше неуспешен."
 
-#: kio/global.cpp:917
+#: kio/global.cpp:929
 msgid "The specified resource may not have existed or may not be accessible."
 msgstr "Можно е зададениот ресурс да не постоел или да не е достапен."
 
-#: kio/global.cpp:925
+#: kio/global.cpp:937
 msgid "Could Not Cancel Listing"
 msgstr "Не може да се откаже листањето"
 
-#: kio/global.cpp:926
+#: kio/global.cpp:938
 msgid "FIXME: Document this"
 msgstr "ПОПРАВИМЕ: Документација за ова"
 
-#: kio/global.cpp:930
+#: kio/global.cpp:942
 msgid "Could Not Create Folder"
 msgstr "Не можам да создадам папка"
 
-#: kio/global.cpp:931
+#: kio/global.cpp:943
 msgid "An attempt to create the requested folder failed."
 msgstr "Обидот за создавање на бараната папка не успеа."
 
-#: kio/global.cpp:932
+#: kio/global.cpp:944
 msgid "The location where the folder was to be created may not exist."
 msgstr ""
 "Можно е да не постои локацијата каде што требало да се создаде папката."
 
-#: kio/global.cpp:939
+#: kio/global.cpp:951
 msgid "Could Not Remove Folder"
 msgstr "Не можам да отстранам папка"
 
-#: kio/global.cpp:940
+#: kio/global.cpp:952
 #, kde-format
 msgid "An attempt to remove the specified folder, <strong>%1</strong>, failed."
 msgstr "Обидот да се отстрани зададената папка <strong>%1</strong> не успеа."
 
-#: kio/global.cpp:942
+#: kio/global.cpp:954
 msgid "The specified folder may not exist."
 msgstr "Можно е да не постои зададената папка."
 
-#: kio/global.cpp:943
+#: kio/global.cpp:955
 msgid "The specified folder may not be empty."
 msgstr "Можно е да не е празна зададената папка."
 
-#: kio/global.cpp:946
+#: kio/global.cpp:958
 msgid "Ensure that the folder exists and is empty, and try again."
 msgstr "Осигурете се дека постои папката, празна e и обидете се повторно."
 
-#: kio/global.cpp:951
+#: kio/global.cpp:963
 msgid "Could Not Resume File Transfer"
 msgstr "Не можам да продолжам со преносот на датотека"
 
-#: kio/global.cpp:952
+#: kio/global.cpp:964
 #, kde-format
 msgid ""
 "The specified request asked that the transfer of file <strong>%1</strong> be "
@@ -1998,29 +2057,29 @@ msgstr ""
 "Беше побарано преносот на датотеката <strong>%1</strong> да биде продолжен "
 "од некоја точка на преносот. Ова не беше можно."
 
-#: kio/global.cpp:955
+#: kio/global.cpp:967
 msgid "The protocol, or the server, may not support file resuming."
 msgstr "Можно е протоколот или серверот да не поддржува продолжување."
 
-#: kio/global.cpp:957
+#: kio/global.cpp:969
 msgid "Retry the request without attempting to resume transfer."
 msgstr "Повторете го барањето без да се обидувате да го продолжите преносот."
 
-#: kio/global.cpp:962
+#: kio/global.cpp:974
 msgid "Could Not Rename Resource"
 msgstr "Не може да се преименува ресурсот"
 
-#: kio/global.cpp:963
+#: kio/global.cpp:975
 #, kde-format
 msgid "An attempt to rename the specified resource <strong>%1</strong> failed."
 msgstr ""
 "Обидот да се преименува зададениот ресурс <strong>%1</strong> беше неуспешен."
 
-#: kio/global.cpp:971
+#: kio/global.cpp:983
 msgid "Could Not Alter Permissions of Resource"
 msgstr "Не можам да ги изменам дозволите на ресурсот"
 
-#: kio/global.cpp:972
+#: kio/global.cpp:984
 #, kde-format
 msgid ""
 "An attempt to alter the permissions on the specified resource <strong>%1</"
@@ -2029,11 +2088,11 @@ msgstr ""
 "Обидот да се изменат дозволите на ресурсот <strong>%1</strong> беше "
 "неуспешен."
 
-#: kio/global.cpp:979
+#: kio/global.cpp:991
 msgid "Could Not Change Ownership of Resource"
 msgstr "Не може да биде изменет сопственикот на ресурсот"
 
-#: kio/global.cpp:980
+#: kio/global.cpp:992
 #, kde-format
 msgid ""
 "An attempt to change the ownership of the specified resource <strong>%1</"
@@ -2042,21 +2101,21 @@ msgstr ""
 "Обидот да се измени сопстеникот на ресурсот <strong>%1</strong> беше "
 "неуспешен."
 
-#: kio/global.cpp:987
+#: kio/global.cpp:999
 msgid "Could Not Delete Resource"
 msgstr "Не можам да го избришам ресурсот"
 
-#: kio/global.cpp:988
+#: kio/global.cpp:1000
 #, kde-format
 msgid "An attempt to delete the specified resource <strong>%1</strong> failed."
 msgstr ""
 "Обидот да се избрише зададениот ресурс <strong>%1</strong> беше неуспешен."
 
-#: kio/global.cpp:995
+#: kio/global.cpp:1007
 msgid "Unexpected Program Termination"
 msgstr "Неочекувано прекинување на програмата"
 
-#: kio/global.cpp:996
+#: kio/global.cpp:1008
 #, kde-format
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
@@ -2065,11 +2124,11 @@ msgstr ""
 "Програмата на вашиот компјутер која обезбедува пристап до протоколот <strong>"
 "%1</strong> неочекувано се прекина."
 
-#: kio/global.cpp:1004
+#: kio/global.cpp:1016
 msgid "Out of Memory"
 msgstr "Нема меморија"
 
-#: kio/global.cpp:1005
+#: kio/global.cpp:1017
 #, kde-format
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
@@ -2078,11 +2137,11 @@ msgstr ""
 "Програмата на вашиот компјутер која обезбедува пристап до протоколот <strong>"
 "%1</strong> не можеше да ја добие потребната меморија за да продолжи."
 
-#: kio/global.cpp:1013
+#: kio/global.cpp:1025
 msgid "Unknown Proxy Host"
 msgstr "Непознат прокси-компјутер"
 
-#: kio/global.cpp:1014
+#: kio/global.cpp:1026
 #, kde-format
 msgid ""
 "While retrieving information about the specified proxy host, <strong>%1</"
@@ -2093,7 +2152,7 @@ msgstr ""
 "strong>, се појави грешка „Непознат сервер“. Оваа грешка укажува на тоа дека "
 "бараното име не можеше да биде пронајдено на Интернет."
 
-#: kio/global.cpp:1018
+#: kio/global.cpp:1030
 msgid ""
 "There may have been a problem with your network configuration, specifically "
 "your proxy's hostname. If you have been accessing the Internet with no "
@@ -2103,17 +2162,17 @@ msgstr ""
 "на вашиот прокси-сервер. Ако сте пристапувале скоро на Интернет без "
 "проблеми, ова е малку веројатно."
 
-#: kio/global.cpp:1022
+#: kio/global.cpp:1034
 msgid "Double-check your proxy settings and try again."
 msgstr ""
 "Проверете ги двапати вашите поставувања за прокси и обидете се повторно."
 
-#: kio/global.cpp:1027
+#: kio/global.cpp:1039
 #, kde-format
 msgid "Authentication Failed: Method %1 Not Supported"
 msgstr "Проверката за автентичност не успеа: методот %1 не е поддржан"
 
-#: kio/global.cpp:1029
+#: kio/global.cpp:1041
 #, kde-format
 msgid ""
 "Although you may have supplied the correct authentication details, the "
@@ -2124,7 +2183,7 @@ msgstr ""
 "истата не успеа бидејќи методот што го користи серверот не е поддржан од "
 "програмата од KDE, која го имплементира протоколот %1."
 
-#: kio/global.cpp:1033
+#: kio/global.cpp:1045
 msgid ""
 "Please file a bug at <a href=\"http://bugs.kde.org/\">http://bugs.kde.org/</"
 "a> to inform the KDE team of the unsupported authentication method."
@@ -2133,15 +2192,15 @@ msgstr ""
 "\">http://bugs.kde.org/</a> за да го информирате тимот на KDE за "
 "неподдржаниот метод за проверка за автентичност."
 
-#: kio/global.cpp:1039
+#: kio/global.cpp:1051
 msgid "Request Aborted"
 msgstr "Барањето е прекинато"
 
-#: kio/global.cpp:1046
+#: kio/global.cpp:1058
 msgid "Internal Error in Server"
 msgstr "Внатрешна грешка на серверот"
 
-#: kio/global.cpp:1047
+#: kio/global.cpp:1059
 #, kde-format
 msgid ""
 "The program on the server which provides access to the <strong>%1</strong> "
@@ -2150,7 +2209,7 @@ msgstr ""
 "Програмата на серверот која обезбедува пристап до протоколот <strong>%1</"
 "strong> пријави внатрешна грешка: %2."
 
-#: kio/global.cpp:1050
+#: kio/global.cpp:1062
 msgid ""
 "This is most likely to be caused by a bug in the server program. Please "
 "consider submitting a full bug report as detailed below."
@@ -2158,12 +2217,12 @@ msgstr ""
 "Ова најверојатно е предизвикано од бубачка во серверската програма. Ве "
 "молиме да поднесете целосен извештај за бубачки како што е кажано подолу."
 
-#: kio/global.cpp:1053
+#: kio/global.cpp:1065
 msgid "Contact the administrator of the server to advise them of the problem."
 msgstr ""
 "Контактирајте со администраторот на серверот за да укажете на проблемот."
 
-#: kio/global.cpp:1055
+#: kio/global.cpp:1067
 msgid ""
 "If you know who the authors of the server software are, submit the bug "
 "report directly to them."
@@ -2171,11 +2230,11 @@ msgstr ""
 "Ако знаете кои се авторите на серверската програма, поднесете им го "
 "извештајот за бубачки директно на нив."
 
-#: kio/global.cpp:1060
+#: kio/global.cpp:1072
 msgid "Timeout Error"
 msgstr "Грешка истек на време"
 
-#: kio/global.cpp:1061
+#: kio/global.cpp:1073
 #, kde-format
 msgid ""
 "Although contact was made with the server, a response was not received "
@@ -2193,16 +2252,16 @@ msgstr ""
 "вредности за истек на време во Контролниот центар на KDE, со избирање на "
 "Мрежа -> Параметри."
 
-#: kio/global.cpp:1072
+#: kio/global.cpp:1084
 msgid "The server was too busy responding to other requests to respond."
 msgstr ""
 "Серверот беше премногу зафатен со одговарање на други барања за да одговори."
 
-#: kio/global.cpp:1078
+#: kio/global.cpp:1090
 msgid "Unknown Error"
 msgstr "Непозната грешка"
 
-#: kio/global.cpp:1079
+#: kio/global.cpp:1091
 #, kde-format
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
@@ -2211,11 +2270,11 @@ msgstr ""
 "Програмата на вашиот компјутер која обезбедува пристап до протоколот  "
 "<strong>%1</strong> пријави непозната грешка: %2."
 
-#: kio/global.cpp:1087
+#: kio/global.cpp:1099
 msgid "Unknown Interruption"
 msgstr "Непознато прекинување"
 
-#: kio/global.cpp:1088
+#: kio/global.cpp:1100
 #, kde-format
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
@@ -2224,11 +2283,11 @@ msgstr ""
 "Програмата на вашиот компјутер која обезбедува пристап до протоколот  "
 "<strong>%1</strong> пријави прекинување од непознат тип: %2."
 
-#: kio/global.cpp:1096
+#: kio/global.cpp:1108
 msgid "Could Not Delete Original File"
 msgstr "Не можам да ја избришам оригиналната датотека"
 
-#: kio/global.cpp:1097
+#: kio/global.cpp:1109
 #, kde-format
 msgid ""
 "The requested operation required the deleting of the original file, most "
@@ -2239,11 +2298,11 @@ msgstr ""
 "на крајот на операцијата преместување. Оригиналната датотека <strong>%1</"
 "strong> не можеше да биде избришана."
 
-#: kio/global.cpp:1106
+#: kio/global.cpp:1118
 msgid "Could Not Delete Temporary File"
 msgstr "Не можам да ја избришам привремената датотека"
 
-#: kio/global.cpp:1107
+#: kio/global.cpp:1119
 #, kde-format
 msgid ""
 "The requested operation required the creation of a temporary file in which "
@@ -2254,11 +2313,11 @@ msgstr ""
 "снимала новата датотека додека таа се симнува. Оваа привремена датотека "
 "<strong>%1</strong> не можеше да биде избришана."
 
-#: kio/global.cpp:1116
+#: kio/global.cpp:1128
 msgid "Could Not Rename Original File"
 msgstr "Не можам да ја преименувам оригиналната датотека"
 
-#: kio/global.cpp:1117
+#: kio/global.cpp:1129
 #, kde-format
 msgid ""
 "The requested operation required the renaming of the original file <strong>%"
@@ -2267,11 +2326,11 @@ msgstr ""
 "Бараната операција наложуваше преименување на оригиналната датотека  <strong>"
 "%1</strong>, но таа не можеше да биде преименувана."
 
-#: kio/global.cpp:1125
+#: kio/global.cpp:1137
 msgid "Could Not Rename Temporary File"
 msgstr "Не можам да ја преименувам привремената датотека"
 
-#: kio/global.cpp:1126
+#: kio/global.cpp:1138
 #, kde-format
 msgid ""
 "The requested operation required the creation of a temporary file <strong>%"
@@ -2280,28 +2339,28 @@ msgstr ""
 "Бараната операција наложуваше создавање на привремената датотека <strong>%1</"
 "strong>, но таа не можеше да биде создадена."
 
-#: kio/global.cpp:1134
+#: kio/global.cpp:1146
 msgid "Could Not Create Link"
 msgstr "Не можам да создадам врска"
 
-#: kio/global.cpp:1135
+#: kio/global.cpp:1147
 msgid "Could Not Create Symbolic Link"
 msgstr "Не можам да создадам симболичка врска"
 
-#: kio/global.cpp:1136
+#: kio/global.cpp:1148
 #, kde-format
 msgid "The requested symbolic link %1 could not be created."
 msgstr "Бараната симболичка врска %1 не можеше да биде создадена."
 
-#: kio/global.cpp:1143
+#: kio/global.cpp:1155
 msgid "No Content"
 msgstr "Нема содржина"
 
-#: kio/global.cpp:1148
+#: kio/global.cpp:1160
 msgid "Disk Full"
 msgstr "Дискот е полн"
 
-#: kio/global.cpp:1149
+#: kio/global.cpp:1161
 #, kde-format
 msgid ""
 "The requested file <strong>%1</strong> could not be written to as there is "
@@ -2310,7 +2369,7 @@ msgstr ""
 "Бараната датотека <strong>%1</strong> не можеше да биде запишана затоа што "
 "нема доволно место на дискот."
 
-#: kio/global.cpp:1151
+#: kio/global.cpp:1163
 msgid ""
 "Free up enough disk space by 1) deleting unwanted and temporary files; 2) "
 "archiving files to removable media storage such as CD-Recordable discs; or "
@@ -2321,11 +2380,11 @@ msgstr ""
 "подвижни носачи како што се дискови CD-Recordable; или 3) ќе набавите повеќе "
 "капацитет."
 
-#: kio/global.cpp:1158
+#: kio/global.cpp:1170
 msgid "Source and Destination Files Identical"
 msgstr "Изворните и одредишните датотеки се идентични"
 
-#: kio/global.cpp:1159
+#: kio/global.cpp:1171
 msgid ""
 "The operation could not be completed because the source and destination "
 "files are the same file."
@@ -2333,11 +2392,11 @@ msgstr ""
 "Операцијата не можеше да се доврши бидејќи изворните и одредишните датотеки "
 "се една иста датотека."
 
-#: kio/global.cpp:1161
+#: kio/global.cpp:1173
 msgid "Choose a different filename for the destination file."
 msgstr "Изберете друго име за одредишната датотека."
 
-#: kio/global.cpp:1172
+#: kio/global.cpp:1184
 msgid "Undocumented Error"
 msgstr "Недокументирана грешка"
 
@@ -2346,7 +2405,7 @@ msgstr "Недокументирана грешка"
 msgid "Default"
 msgstr "Стандардно"
 
-#: kio/krun.cpp:111
+#: kio/krun.cpp:112
 #, kde-format
 msgid ""
 "<qt>Unable to enter <b>%1</b>.\n"
@@ -2355,7 +2414,7 @@ msgstr ""
 "<qt>Не можам да влезам во <b>%1</b>.\n"
 "Немате права на пристап за оваа локација.</qt>"
 
-#: kio/krun.cpp:148
+#: kio/krun.cpp:149
 #, kde-format
 msgid ""
 "<qt>The file <b>%1</b> is an executable program. For safety it will not be "
@@ -2364,39 +2423,39 @@ msgstr ""
 "<qt>Датотеката <b>%1</b> е извршна програма. Поради безбедност таа нема да "
 "биде извршена.</qt>"
 
-#: kio/krun.cpp:155
+#: kio/krun.cpp:156
 #, kde-format
 msgid "<qt>You do not have permission to run <b>%1</b>.</qt>"
 msgstr "<qt>Немате дозвола да ја извршите <b>%1</b>.</qt>"
 
-#: kio/krun.cpp:181
+#: kio/krun.cpp:182
 msgid "You are not authorized to select an application to open this file."
 msgstr ""
 "Не сте авторизирани да изберете апликација за да ја отворите оваа датотека."
 
-#: kio/krun.cpp:193
+#: kio/krun.cpp:194
 msgid "Open with:"
 msgstr "Отворете со:"
 
-#: kio/krun.cpp:498
+#: kio/krun.cpp:499
 msgid "You are not authorized to execute this file."
 msgstr "Не сте авторизирани да ја извршите оваа датотека."
 
-#: kio/krun.cpp:518
+#: kio/krun.cpp:520
 #, kde-format
 msgid "Launching %1"
 msgstr "Пуштање на %1"
 
-#: kio/krun.cpp:624
+#: kio/krun.cpp:626
 #, kde-format
 msgid "Error processing Exec field in %1"
 msgstr ""
 
-#: kio/krun.cpp:691
+#: kio/krun.cpp:693
 msgid "You are not authorized to execute this service."
 msgstr "Не сте авторизирани да го извршите овој сервис."
 
-#: kio/krun.cpp:859
+#: kio/krun.cpp:861
 #, kde-format
 msgid ""
 "<qt>Unable to run the command specified. The file or folder <b>%1</b> does "
@@ -2405,7 +2464,7 @@ msgstr ""
 "<qt>Не може да се изврши дадената команда. Датотеката или папката <b>%1</b> "
 "не постои.</qt>"
 
-#: kio/krun.cpp:1468
+#: kio/krun.cpp:1478
 #, kde-format
 msgid "Could not find the program '%1'"
 msgstr "Не можам да ја најдам програмата „%1“"
@@ -2415,7 +2474,7 @@ msgstr "Не можам да ја најдам програмата „%1“"
 msgid "The desktop entry file %1 has no Type=... entry."
 msgstr "Датотеката %1 за елемент од раб. површина нема ставка Type=..."
 
-#: kio/kdesktopfileactions.cpp:65
+#: kio/kdesktopfileactions.cpp:66
 #, kde-format
 msgid ""
 "The desktop entry of type\n"
@@ -2426,8 +2485,8 @@ msgstr ""
 "%1\n"
 "е непознат."
 
-#: kio/kdesktopfileactions.cpp:79 kio/kdesktopfileactions.cpp:157
-#: kio/kdesktopfileactions.cpp:257
+#: kio/kdesktopfileactions.cpp:80 kio/kdesktopfileactions.cpp:158
+#: kio/kdesktopfileactions.cpp:258
 #, kde-format
 msgid ""
 "The desktop entry file\n"
@@ -2438,7 +2497,7 @@ msgstr ""
 "%1\n"
 "е од тип FSDevice но нема ставка Dev=..."
 
-#: kio/kdesktopfileactions.cpp:123
+#: kio/kdesktopfileactions.cpp:124
 #, kde-format
 msgid ""
 "The desktop entry file\n"
@@ -2449,59 +2508,59 @@ msgstr ""
 "%1\n"
 "е од тип Link но нема ставка Dev=..."
 
-#: kio/kdesktopfileactions.cpp:163
+#: kio/kdesktopfileactions.cpp:164
 msgid "Mount"
 msgstr "Монтирај"
 
-#: kio/kdesktopfileactions.cpp:172
+#: kio/kdesktopfileactions.cpp:173
 msgid "Eject"
 msgstr "Извади"
 
-#: kio/kdesktopfileactions.cpp:174
+#: kio/kdesktopfileactions.cpp:175
 msgid "Unmount"
 msgstr "Одмонтирај"
 
-#: kio/kfileitem.cpp:955
+#: kio/kfileitem.cpp:988
 #, kde-format
 msgid "(Symbolic Link to %1)"
 msgstr "(Симболичка врска до %1)"
 
-#: kio/kfileitem.cpp:957
+#: kio/kfileitem.cpp:990
 #, kde-format
 msgid "(%1, Link to %2)"
 msgstr "(%1, Врска до %2)"
 
-#: kio/kfileitem.cpp:961
+#: kio/kfileitem.cpp:994
 #, kde-format
 msgid " (Points to %1)"
 msgstr " (Покажува на %1)"
 
-#: kio/kfileitem.cpp:988 ../kioslave/http/kcookiejar/kcookiewin.cpp:215
+#: kio/kfileitem.cpp:1022 ../kioslave/http/kcookiejar/kcookiewin.cpp:215
 msgid "Name:"
 msgstr "Име:"
 
-#: kio/kfileitem.cpp:989 kfile/kpropertiesdialog.cpp:952
+#: kio/kfileitem.cpp:1023 kfile/kpropertiesdialog.cpp:953
 msgid "Type:"
 msgstr "Тип:"
 
-#: kio/kfileitem.cpp:993
+#: kio/kfileitem.cpp:1027
 #, kde-format
 msgid "Link to %1 (%2)"
 msgstr "Врска до %1 (%2)"
 
-#: kio/kfileitem.cpp:998 kfile/kpropertiesdialog.cpp:1000
+#: kio/kfileitem.cpp:1032 kfile/kpropertiesdialog.cpp:1007
 msgid "Size:"
 msgstr "Големина:"
 
-#: kio/kfileitem.cpp:1003 kfile/kpropertiesdialog.cpp:1062
+#: kio/kfileitem.cpp:1036 kfile/kpropertiesdialog.cpp:1069
 msgid "Modified:"
 msgstr "Променето:"
 
-#: kio/kfileitem.cpp:1006
+#: kio/kfileitem.cpp:1039
 msgid "Owner:"
 msgstr "Сопственик:"
 
-#: kio/kfileitem.cpp:1007
+#: kio/kfileitem.cpp:1040
 msgid "Permissions:"
 msgstr "Дозволи:"
 
@@ -2522,35 +2581,35 @@ msgstr "Преместување"
 msgid "Deleting"
 msgstr "Бришење"
 
-#: kio/fileundomanager.cpp:277
+#: kio/fileundomanager.cpp:279
 msgid "Und&o"
 msgstr "&Отповикај"
 
-#: kio/fileundomanager.cpp:281
+#: kio/fileundomanager.cpp:283
 msgid "Und&o: Copy"
 msgstr "&Отповикај: копирање"
 
-#: kio/fileundomanager.cpp:283
+#: kio/fileundomanager.cpp:285
 msgid "Und&o: Link"
 msgstr "&Отповикај: поврзување"
 
-#: kio/fileundomanager.cpp:285
+#: kio/fileundomanager.cpp:287
 msgid "Und&o: Move"
 msgstr "&Отповикај: преместување"
 
-#: kio/fileundomanager.cpp:287
+#: kio/fileundomanager.cpp:289
 msgid "Und&o: Rename"
 msgstr "&Отповикај: преименување"
 
-#: kio/fileundomanager.cpp:289
+#: kio/fileundomanager.cpp:291
 msgid "Und&o: Trash"
 msgstr "&Отповикај: фрлање"
 
-#: kio/fileundomanager.cpp:291
+#: kio/fileundomanager.cpp:293
 msgid "Und&o: Create Folder"
 msgstr "&Отповикај: креирање папка"
 
-#: kio/fileundomanager.cpp:757
+#: kio/fileundomanager.cpp:759
 #, kde-format
 msgid ""
 "The file %1 was copied from %2, but since then it has apparently been "
@@ -2559,7 +2618,7 @@ msgid ""
 "Are you sure you want to delete %4?"
 msgstr ""
 
-#: kio/fileundomanager.cpp:760
+#: kio/fileundomanager.cpp:762
 msgid "Undo File Copy Confirmation"
 msgstr ""
 
@@ -2573,12 +2632,12 @@ msgstr "Непознат протокол „%1“."
 msgid "Can not find io-slave for protocol '%1'."
 msgstr "Не можам да најдам io-slave за протоколот „%1“."
 
-#: kio/slave.cpp:435
+#: kio/slave.cpp:436
 #, kde-format
 msgid "Cannot talk to klauncher: %1"
 msgstr "Не можам да комуницирам со klauncher: %1"
 
-#: kio/slave.cpp:443
+#: kio/slave.cpp:444
 #, kde-format
 msgid ""
 "Unable to create io-slave:\n"
@@ -2614,37 +2673,37 @@ msgstr ""
 msgid "Unable to create io-slave: %1"
 msgstr "Не можe да се создаде io-slave: %1"
 
-#: kio/kdirmodel.cpp:786
+#: kio/kdirmodel.cpp:897
 msgctxt "@title:column"
 msgid "Name"
 msgstr "Име"
 
-#: kio/kdirmodel.cpp:788
+#: kio/kdirmodel.cpp:899
 msgctxt "@title:column"
 msgid "Size"
 msgstr "Големина"
 
-#: kio/kdirmodel.cpp:790
+#: kio/kdirmodel.cpp:901
 msgctxt "@title:column"
 msgid "Date"
 msgstr "Датум"
 
-#: kio/kdirmodel.cpp:792
+#: kio/kdirmodel.cpp:903
 msgctxt "@title:column"
 msgid "Permissions"
 msgstr "Дозволи"
 
-#: kio/kdirmodel.cpp:794
+#: kio/kdirmodel.cpp:905
 msgctxt "@title:column"
 msgid "Owner"
 msgstr "Сопственик"
 
-#: kio/kdirmodel.cpp:796
+#: kio/kdirmodel.cpp:907
 msgctxt "@title:column"
 msgid "Group"
 msgstr "Група"
 
-#: kio/kdirmodel.cpp:798
+#: kio/kdirmodel.cpp:909
 msgctxt "@title:column"
 msgid "Type"
 msgstr "Тип"
@@ -2653,83 +2712,56 @@ msgstr "Тип"
 msgid "Certificate password"
 msgstr "Лозинка за сертификатот."
 
-#: kssl/ksslinfodialog.cpp:73 kssl/ksslkeygen.cpp:128
+#: kssl/ksslinfodialog.cpp:74 kssl/ksslkeygen.cpp:125
 msgid "KDE SSL Information"
 msgstr "Информации за SSL во KDE "
 
-#: kssl/ksslinfodialog.cpp:80
+#: kssl/ksslinfodialog.cpp:81
 #, fuzzy
 #| msgid "Subject line"
 msgid "Subject"
 msgstr "Тема"
 
-#: kssl/ksslinfodialog.cpp:81
+#: kssl/ksslinfodialog.cpp:82
 msgid "Issuer"
 msgstr "Издавач"
 
-#: kssl/ksslinfodialog.cpp:91 kssl/ksslinfodialog.cpp:136
+#: kssl/ksslinfodialog.cpp:92 kssl/ksslinfodialog.cpp:137
 msgid "Current connection is secured with SSL."
 msgstr "Тековното поврзување е обезбедено со SSL."
 
-#: kssl/ksslinfodialog.cpp:94 kssl/ksslinfodialog.cpp:149
+#: kssl/ksslinfodialog.cpp:95 kssl/ksslinfodialog.cpp:150
 msgid "Current connection is not secured with SSL."
 msgstr "Тековното поврзување не е обезбедено со SSL."
 
-#: kssl/ksslinfodialog.cpp:98
+#: kssl/ksslinfodialog.cpp:99
 msgid "SSL support is not available in this build of KDE."
 msgstr "Поддршката за SSL не е достапна во оваа верзија на KDE."
 
-#: kssl/ksslinfodialog.cpp:139
+#: kssl/ksslinfodialog.cpp:140
 msgid ""
 "The main part of this document is secured with SSL, but some parts are not."
 msgstr ""
 "Главниот дел на овој документ е обезбеден со SSL, но некои делови не се."
 
-#: kssl/ksslinfodialog.cpp:145
+#: kssl/ksslinfodialog.cpp:146
 msgid "Some of this document is secured with SSL, but the main part is not."
 msgstr "Делови од овој документ се обезбедени со SSL, но главниот дел не е."
 
-#: kssl/ksslinfodialog.cpp:205
+#: kssl/ksslinfodialog.cpp:193
 #, kde-format
 msgid "%1, using %2 bits of a %3 bit key"
 msgstr "%1, %2 бита се користат од %3-битната шифра"
 
-#. i18n: file: kssl/certificateparty.ui:43
-#. i18n: ectx: property (text), widget (QLabel, organizationTag)
-#: kssl/ksslinfodialog.cpp:328 rc.cpp:66
-msgid "Organization:"
-msgstr "Организација:"
+#: kssl/ksslinfodialog.cpp:212
+msgid "NO, there were errors:"
+msgstr ""
 
-#. i18n: file: kssl/certificateparty.ui:70
-#. i18n: ectx: property (text), widget (QLabel, organizationalUnitTag)
-#: kssl/ksslinfodialog.cpp:335 rc.cpp:72
-msgid "Organizational unit:"
-msgstr "Единица од организацијата:"
-
-#: kssl/ksslinfodialog.cpp:342
-msgid "Locality:"
-msgstr "Локалитет:"
-
-#: kssl/ksslinfodialog.cpp:349
-msgctxt "Federal State"
-msgid "State:"
-msgstr "Држава:"
-
-#. i18n: file: kssl/certificateparty.ui:97
-#. i18n: ectx: property (text), widget (QLabel, countryTag)
-#: kssl/ksslinfodialog.cpp:356 rc.cpp:78
-msgid "Country:"
-msgstr "Земја:"
-
-#. i18n: file: kssl/certificateparty.ui:16
-#. i18n: ectx: property (text), widget (QLabel, commonNameTag)
-#: kssl/ksslinfodialog.cpp:363 rc.cpp:60
-msgid "Common name:"
-msgstr "Општо име:"
-
-#: kssl/ksslinfodialog.cpp:370
-msgid "Email:"
-msgstr "Е-пошта:"
+#: kssl/ksslinfodialog.cpp:219
+#, fuzzy
+#| msgid "&Yes"
+msgid "Yes"
+msgstr "&Да"
 
 #: kssl/ksslcertificate.cpp:204
 msgid "Signature Algorithm: "
@@ -3023,55 +3055,55 @@ msgstr "Сертификатот не е валиден."
 msgid "GMT"
 msgstr "GMT"
 
-#: kssl/ksslkeygen.cpp:86
+#: kssl/ksslkeygen.cpp:83
 msgid "KDE Certificate Request"
 msgstr "Барање за сертификат во KDE "
 
-#: kssl/ksslkeygen.cpp:93
+#: kssl/ksslkeygen.cpp:90
 msgid "KDE Certificate Request - Password"
 msgstr "Барање за сертификат во KDE - лозинка"
 
-#: kssl/ksslkeygen.cpp:128
+#: kssl/ksslkeygen.cpp:125
 msgid "Unsupported key size."
 msgstr "Неподдржана големина на клуч."
 
-#: kssl/ksslkeygen.cpp:134
+#: kssl/ksslkeygen.cpp:131
 msgid "KDE"
 msgstr "KDE"
 
-#: kssl/ksslkeygen.cpp:135
+#: kssl/ksslkeygen.cpp:132
 msgid "Please wait while the encryption keys are generated..."
 msgstr "Почекајте додека се генерираат клучевите за криптирање..."
 
-#: kssl/ksslkeygen.cpp:148
+#: kssl/ksslkeygen.cpp:145
 msgid "Do you wish to store the passphrase in your wallet file?"
 msgstr "Дали сакате да ја зачувате тајната фраза во вашиот паричник?"
 
-#: kssl/ksslkeygen.cpp:148
+#: kssl/ksslkeygen.cpp:145
 msgid "Store"
 msgstr "Зачувај"
 
-#: kssl/ksslkeygen.cpp:148
+#: kssl/ksslkeygen.cpp:145
 msgid "Do Not Store"
 msgstr "Не зачувувај"
 
-#: kssl/ksslkeygen.cpp:264
+#: kssl/ksslkeygen.cpp:261
 msgid "2048 (High Grade)"
 msgstr "2048 (Висока класа)"
 
-#: kssl/ksslkeygen.cpp:265
+#: kssl/ksslkeygen.cpp:262
 msgid "1024 (Medium Grade)"
 msgstr "1024 (Средна класа)"
 
-#: kssl/ksslkeygen.cpp:266
+#: kssl/ksslkeygen.cpp:263
 msgid "768  (Low Grade)"
 msgstr "768  (Ниска класа)"
 
-#: kssl/ksslkeygen.cpp:267
+#: kssl/ksslkeygen.cpp:264
 msgid "512  (Low Grade)"
 msgstr "512  (Ниска класа)"
 
-#: kssl/ksslkeygen.cpp:269
+#: kssl/ksslkeygen.cpp:266
 msgid "No SSL support."
 msgstr "Нема поддршка за SSL."
 
@@ -3138,156 +3170,6 @@ msgstr "Не може да се симне скриптата за конфиг�
 #: misc/kpac/discovery.cpp:117
 msgid "Could not find a usable proxy configuration script"
 msgstr "Не може да се најде употреблива скрипта за конфигурација на проксито"
-
-#: misc/kwalletd/main.cpp:38 misc/kwalletd/main.cpp:39
-#: misc/kwalletd/kwalletd.cpp:308 misc/kwalletd/kwalletd.cpp:396
-#: misc/kwalletd/kwalletd.cpp:432 misc/kwalletd/kwalletd.cpp:602
-#: misc/kwalletd/kwalletd.cpp:614 misc/kwalletd/kwalletd.cpp:623
-#: misc/kwalletd/kwalletd.cpp:628 misc/kwalletd/kwalletd.cpp:1135
-msgid "KDE Wallet Service"
-msgstr "Сервис за паричници во KDE "
-
-#: misc/kwalletd/main.cpp:40
-msgid "(C) 2002-2008 George Staikos, Michael Leupold, Thiago Maceira"
-msgstr "(C) 2002-2008 George Staikos, Michael Leupold, Thiago Maceira"
-
-#: misc/kwalletd/kwalletd.cpp:389
-#, kde-format
-msgid ""
-"<qt>KDE has requested to open the wallet '<b>%1</b>'. Please enter the "
-"password for this wallet below.</qt>"
-msgstr ""
-"<qt>KDE побара да се отвори паричникот „<b>%1</b>“. Ве молиме внесете ја "
-"подолу лозинката за овој паричник.</qt>"
-
-#: misc/kwalletd/kwalletd.cpp:391
-#, kde-format
-msgid ""
-"<qt>The application '<b>%1</b>' has requested to open the wallet '<b>%2</"
-"b>'. Please enter the password for this wallet below.</qt>"
-msgstr ""
-"<qt>Апликацијата „<b>%1</b>“ побара да се отвори паричникот „<b>%2</b>“. Ве "
-"молиме внесете ја подолу лозинката за овој паричник.</qt>"
-
-#: misc/kwalletd/kwalletd.cpp:395 ../kfile/kfilewidget.cpp:1751
-msgid "&Open"
-msgstr "&Отвори"
-
-#: misc/kwalletd/kwalletd.cpp:403 misc/kwalletd/kwalletd.cpp:440
-#, kde-format
-msgid ""
-"<qt>Error opening the wallet '<b>%1</b>'. Please try again.<br />(Error code "
-"%2: %3)</qt>"
-msgstr ""
-"<qt>Грешка при отворањето на паричникот „<b>%1</b>“. Обидете се повторно."
-"<br />(Код на грешка %2: %3)</qt>"
-
-#: misc/kwalletd/kwalletd.cpp:420
-msgid ""
-"KDE has requested to open the wallet. This is used to store sensitive data "
-"in a secure fashion. Please enter a password to use with this wallet or "
-"click cancel to deny the application's request."
-msgstr ""
-"KDE побара да се отвори паричникот. Ова се користи за да се чуваат "
-"чувствителни податоци на сигурен начин. Ве молиме внесете лозинка која ќе се "
-"користи со овој паричник или кликнете на Откажи за да го откажете барањето "
-"на апликацијата."
-
-#: misc/kwalletd/kwalletd.cpp:422
-#, kde-format
-msgid ""
-"<qt>The application '<b>%1</b>' has requested to open the KDE wallet. This "
-"is used to store sensitive data in a secure fashion. Please enter a password "
-"to use with this wallet or click cancel to deny the application's request.</"
-"qt>"
-msgstr ""
-"<qt>Апликацијата „<b>%1</b>“ побара да се отвори паричникот од KDE. Ова се "
-"користи за да се чуваат чувствителни податоци на безбеден начин. Ве молиме "
-"внесете лозинка која ќе се користи со овој паричник или кликнете на Откажи "
-"за да го забраните барањето на апликацијата.</qt>"
-
-#: misc/kwalletd/kwalletd.cpp:426
-#, kde-format
-msgid ""
-"<qt>KDE has requested to create a new wallet named '<b>%1</b>'. Please "
-"choose a password for this wallet, or cancel to deny the application's "
-"request.</qt>"
-msgstr ""
-"<qt>KDE побара да создаде нов паричник именуван „<b>%1</b>“. Ве молиме "
-"изберете лозинка за овој паричник или откажете за да го забраните барањето "
-"на апликацијата.</qt>"
-
-#: misc/kwalletd/kwalletd.cpp:428
-#, kde-format
-msgid ""
-"<qt>The application '<b>%1</b>' has requested to create a new wallet named "
-"'<b>%2</b>'. Please choose a password for this wallet, or cancel to deny the "
-"application's request.</qt>"
-msgstr ""
-"<qt>Апликацијата „<b>%1</b>“ побара да создаде нов паричник именуван „<b>%2</"
-"b>“. Ве молиме изберете лозинка за овој паричник или откажете за да го "
-"забраните барањето на апликацијата.</qt>"
-
-#: misc/kwalletd/kwalletd.cpp:433
-msgid "C&reate"
-msgstr "&Креирај"
-
-#: misc/kwalletd/kwalletd.cpp:513
-#, kde-format
-msgid "<qt>KDE has requested access to the open wallet '<b>%1</b>'.</qt>"
-msgstr "<qt>KDE побара пристап до отворениот паричник „<b>%1</b>“.</qt>"
-
-#: misc/kwalletd/kwalletd.cpp:515
-#, kde-format
-msgid ""
-"<qt>The application '<b>%1</b>' has requested access to the open wallet '<b>%"
-"2</b>'.</qt>"
-msgstr ""
-"<qt>Апликацијата „<b>%1</b>“ побара пристап до отворениот паричник „<b>%2</"
-"b>“.</qt>"
-
-#: misc/kwalletd/kwalletd.cpp:602
-msgid ""
-"Unable to open wallet. The wallet must be opened in order to change the "
-"password."
-msgstr ""
-"Не можам да го отворам паричникот. Паричникот мора да биде отворен за да се "
-"смени лозинката."
-
-#: misc/kwalletd/kwalletd.cpp:613
-#, kde-format
-msgid "<qt>Please choose a new password for the wallet '<b>%1</b>'.</qt>"
-msgstr "<qt>Ве молиме изберете нова лозинка за паричникот „<b>%1</b>“.</qt>"
-
-#: misc/kwalletd/kwalletd.cpp:623
-msgid "Error re-encrypting the wallet. Password was not changed."
-msgstr "Грешка при повторната крипција на паричникот. Лозинката не е сменета."
-
-#: misc/kwalletd/kwalletd.cpp:628
-msgid "Error reopening the wallet. Data may be lost."
-msgstr ""
-"Грешка при повторното отворање на паричникот. Можно е да се загубени "
-"податоци."
-
-#: misc/kwalletd/kwalletd.cpp:1135
-msgid ""
-"There have been repeated failed attempts to gain access to a wallet. An "
-"application may be misbehaving."
-msgstr ""
-"Имаше повеќе неуспешни обиди да се пристапи до паричникот. Можно е некоја "
-"апликација да не се однесува коректно."
-
-#: misc/kwalletd/kwalletwizard.cpp:139
-msgid "<qt>Password is empty.  <b>(WARNING: Insecure)</b></qt>"
-msgstr "<qt>Лозинката е празна.  <b>(ПРЕДУПРЕДУВАЊЕ: Не е сигурно)</b></qt>"
-
-#: misc/kwalletd/kwalletwizard.cpp:141
-msgid "Passwords match."
-msgstr "Лозинките се совпаѓаат."
-
-#: misc/kwalletd/kwalletwizard.cpp:144
-msgid "Passwords do not match."
-msgstr "Лозинките не се совпаѓаат."
 
 #: misc/ktelnetservice.cpp:39
 msgid "telnet service"
@@ -3359,17 +3241,17 @@ msgstr "KMailService"
 msgid "Mail service"
 msgstr "Поштенски сервис"
 
-#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:992
+#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:993
 msgid "Location:"
 msgstr "Локација:"
 
-#: kfile/kurlrequesterdialog.cpp:131 kfile/kicondialog.cpp:573
+#: kfile/kurlrequesterdialog.cpp:131 kfile/kicondialog.cpp:675
 #: kfile/kencodingfiledialog.cpp:107 kfile/kencodingfiledialog.cpp:125
 #: kfile/kencodingfiledialog.cpp:140 kfile/kencodingfiledialog.cpp:158
-#: kfile/kfiledialog.cpp:399 kfile/kfiledialog.cpp:408
-#: kfile/kfiledialog.cpp:430 kfile/kfiledialog.cpp:446
-#: kfile/kfiledialog.cpp:454 kfile/kfiledialog.cpp:473
-#: kfile/kfiledialog.cpp:494 kfile/kfiledialog.cpp:542
+#: kfile/kfiledialog.cpp:420 kfile/kfiledialog.cpp:429
+#: kfile/kfiledialog.cpp:451 kfile/kfiledialog.cpp:467
+#: kfile/kfiledialog.cpp:475 kfile/kfiledialog.cpp:494
+#: kfile/kfiledialog.cpp:515 kfile/kfiledialog.cpp:570
 msgid "Open"
 msgstr "Отворање"
 
@@ -3377,85 +3259,85 @@ msgstr "Отворање"
 msgid "P&review"
 msgstr "П&реглед"
 
-#: kfile/kicondialog.cpp:262 kfile/kicondialog.cpp:274
+#: kfile/kicondialog.cpp:329 kfile/kicondialog.cpp:341
 msgid "Select Icon"
 msgstr "Изберете икона"
 
-#: kfile/kicondialog.cpp:295
+#: kfile/kicondialog.cpp:362
 msgid "Icon Source"
 msgstr "Извор на икони"
 
-#: kfile/kicondialog.cpp:305
+#: kfile/kicondialog.cpp:372
 msgid "S&ystem icons:"
 msgstr "&Системски икони:"
 
-#: kfile/kicondialog.cpp:311
+#: kfile/kicondialog.cpp:378
 msgid "O&ther icons:"
 msgstr "Д&руги икони:"
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:204
 #. i18n: ectx: property (text), widget (QPushButton, browseButton)
-#: kfile/kicondialog.cpp:314 rc.cpp:292
+#: kfile/kicondialog.cpp:381 rc.cpp:244
 msgid "&Browse..."
 msgstr "&Разгледај..."
 
-#: kfile/kicondialog.cpp:326
+#: kfile/kicondialog.cpp:393
 msgid "&Search:"
 msgstr "&Барај:"
 
-#: kfile/kicondialog.cpp:333
+#: kfile/kicondialog.cpp:400
 msgid "Search interactively for icon names (e.g. folder)."
 msgstr "Бара интерактивно за имиња на икони (пр. папка)."
 
-#: kfile/kicondialog.cpp:354
+#: kfile/kicondialog.cpp:421
 msgid "Actions"
 msgstr "Дејства"
 
-#: kfile/kicondialog.cpp:355
+#: kfile/kicondialog.cpp:422
 msgid "Animations"
 msgstr "Анимации"
 
-#: kfile/kicondialog.cpp:356
+#: kfile/kicondialog.cpp:423
 msgid "Applications"
 msgstr "Апликации"
 
-#: kfile/kicondialog.cpp:357
+#: kfile/kicondialog.cpp:424
 msgid "Categories"
 msgstr "Категории"
 
-#: kfile/kicondialog.cpp:358
+#: kfile/kicondialog.cpp:425
 msgid "Devices"
 msgstr "Уреди"
 
-#: kfile/kicondialog.cpp:359
+#: kfile/kicondialog.cpp:426
 msgid "Emblems"
 msgstr "Амблеми"
 
-#: kfile/kicondialog.cpp:360
+#: kfile/kicondialog.cpp:427
 msgid "Emotes"
 msgstr "Емотикони"
 
-#: kfile/kicondialog.cpp:361
+#: kfile/kicondialog.cpp:428
 msgid "Filesystems"
 msgstr "Датотечни системи"
 
-#: kfile/kicondialog.cpp:362
+#: kfile/kicondialog.cpp:429
 msgid "International"
 msgstr "Меѓународни"
 
-#: kfile/kicondialog.cpp:363
+#: kfile/kicondialog.cpp:430
 msgid "Mimetypes"
 msgstr "MIME-типови"
 
-#: kfile/kicondialog.cpp:364
+#: kfile/kicondialog.cpp:431 ../kfile/kfilewidget.cpp:1216
 msgid "Places"
 msgstr "Места"
 
-#: kfile/kicondialog.cpp:365
+#: kfile/kicondialog.cpp:432
 msgid "Status"
 msgstr "Статус"
 
-#: kfile/kicondialog.cpp:571
+#: kfile/kicondialog.cpp:673
 msgid "*.png *.xpm *.svg *.svgz|Icon Files (*.png *.xpm *.svg *.svgz)"
 msgstr "*.png *.xpm *.svg *.svgz|датотеки со икони (*.png *.xpm *.svg *.svgz)"
 
@@ -3472,7 +3354,7 @@ msgid "Owning Group"
 msgstr "Сопственичка група"
 
 #: kfile/kacleditwidget.cpp:63 kfile/kacleditwidget.cpp:469
-#: kfile/kpropertiesdialog.cpp:1973
+#: kfile/kpropertiesdialog.cpp:1981
 msgid "Others"
 msgstr "Останати"
 
@@ -3488,7 +3370,7 @@ msgstr "Именуван корисник"
 msgid "Named Group"
 msgstr "Именувана група"
 
-#: kfile/kacleditwidget.cpp:100
+#: kfile/kacleditwidget.cpp:100 ../kfile/kfileplacesview.cpp:587
 msgid "Add Entry..."
 msgstr "Додај елемент..."
 
@@ -3564,16 +3446,16 @@ msgid "Encoding:"
 msgstr "Кодирање:"
 
 #: kfile/kencodingfiledialog.cpp:179 kfile/kencodingfiledialog.cpp:204
-#: kfile/kfiledialog.cpp:607 kfile/kfiledialog.cpp:629
-#: kfile/kfiledialog.cpp:662 kfile/kfiledialog.cpp:687
+#: kfile/kfiledialog.cpp:634 kfile/kfiledialog.cpp:656
+#: kfile/kfiledialog.cpp:689 kfile/kfiledialog.cpp:714
 msgid "Save As"
 msgstr "Зачувување како"
 
-#: kfile/kfiledialog.cpp:115
+#: kfile/kfiledialog.cpp:132
 msgid "*|All files"
 msgstr "*|Сите датотеки"
 
-#: kfile/kurlrequester.cpp:234
+#: kfile/kurlrequester.cpp:238
 msgid "Open file dialog"
 msgstr "Дијалог за отворање на датотека"
 
@@ -3581,7 +3463,7 @@ msgstr "Дијалог за отворање на датотека"
 msgid "Device name"
 msgstr "Име на уред"
 
-#: kfile/kopenwithdialog.cpp:266
+#: kfile/kopenwithdialog.cpp:267
 msgid "Known Applications"
 msgstr "Познати апликации"
 
@@ -3670,14 +3552,14 @@ msgstr "&Не затворај кога ќе заврши командата"
 msgid "&Remember application association for this type of file"
 msgstr "&Запомни го поврзувањето на апликацијата со овој тип на датотека"
 
-#: kfile/kopenwithdialog.cpp:802
+#: kfile/kopenwithdialog.cpp:799
 #, kde-format
 msgid ""
 "Could not extract executable name from '%1', please type a valid program "
 "name."
 msgstr ""
 
-#: kfile/kopenwithdialog.cpp:846
+#: kfile/kopenwithdialog.cpp:845
 #, kde-format
 msgid "'%1' not found, please type a valid program name."
 msgstr ""
@@ -3686,14 +3568,14 @@ msgstr ""
 msgid "&Meta Info"
 msgstr "&Метаподатоци"
 
-#: kfile/kpropertiesdialog.cpp:210 kfile/kpropertiesdialog.cpp:225
-#: kfile/kpropertiesdialog.cpp:237 kfile/kpropertiesdialog.cpp:252
-#: kfile/kpropertiesdialog.cpp:268
+#: kfile/kpropertiesdialog.cpp:211 kfile/kpropertiesdialog.cpp:226
+#: kfile/kpropertiesdialog.cpp:238 kfile/kpropertiesdialog.cpp:253
+#: kfile/kpropertiesdialog.cpp:269
 #, kde-format
 msgid "Properties for %1"
 msgstr "Својства за %1"
 
-#: kfile/kpropertiesdialog.cpp:235
+#: kfile/kpropertiesdialog.cpp:236
 #, kde-format
 msgid "Properties for 1 item"
 msgid_plural "Properties for %1 Selected Items"
@@ -3701,63 +3583,68 @@ msgstr[0] "Својства за %1 избран елемент"
 msgstr[1] "Својства за %1 избрани елементи"
 msgstr[2] "Својства за %1 избрани елементи"
 
-#: kfile/kpropertiesdialog.cpp:768
+#: kfile/kpropertiesdialog.cpp:769
 #, fuzzy
 #| msgid "&General"
+msgctxt "@title:tab File properties"
 msgid "&General"
 msgstr "&Општо"
 
-#: kfile/kpropertiesdialog.cpp:968
+#: kfile/kpropertiesdialog.cpp:969
 msgid "Create new file type"
 msgstr "Создај нов тип на папка"
 
-#: kfile/kpropertiesdialog.cpp:970
+#: kfile/kpropertiesdialog.cpp:971
 msgid "Edit file type"
 msgstr "Уреди тип на датотека"
 
-#: kfile/kpropertiesdialog.cpp:983
+#: kfile/kpropertiesdialog.cpp:984
 msgid "Contents:"
 msgstr "Содржина:"
 
-#: kfile/kpropertiesdialog.cpp:1020
+#: kfile/kpropertiesdialog.cpp:1027
 msgid "Calculate"
 msgstr "Пресметај"
 
-#: kfile/kpropertiesdialog.cpp:1021
+#: kfile/kpropertiesdialog.cpp:1028
 msgid "Stop"
 msgstr "Запри"
 
-#: kfile/kpropertiesdialog.cpp:1031 kfile/kpropertiesdialog.cpp:1222
+#: kfile/kpropertiesdialog.cpp:1038 kfile/kpropertiesdialog.cpp:1232
 msgid "Refresh"
 msgstr "Освежи"
 
-#: kfile/kpropertiesdialog.cpp:1039
+#: kfile/kpropertiesdialog.cpp:1046
 msgid "Points to:"
 msgstr "Покажува на:"
 
-#: kfile/kpropertiesdialog.cpp:1052
+#: kfile/kpropertiesdialog.cpp:1059
 msgid "Created:"
 msgstr "Создадено:"
 
-#: kfile/kpropertiesdialog.cpp:1072
+#: kfile/kpropertiesdialog.cpp:1079
 msgid "Accessed:"
 msgstr "Пристапено:"
 
-#: kfile/kpropertiesdialog.cpp:1090
+#: kfile/kpropertiesdialog.cpp:1100
 msgid "Mounted on:"
 msgstr "Монтирано на:"
 
-#: kfile/kpropertiesdialog.cpp:1098 kfile/kpropertiesdialog.cpp:2754
-msgid "Free disk space:"
-msgstr "Слободен простор на дискот:"
+#: kfile/kpropertiesdialog.cpp:1108 kfile/kpropertiesdialog.cpp:2767
+#, fuzzy
+#| msgid "Device name"
+msgid "Device usage:"
+msgstr "Име на уред"
 
-#: kfile/kpropertiesdialog.cpp:1186 kfile/kpropertiesdialog.cpp:2899
-#, kde-format
+#: kfile/kpropertiesdialog.cpp:1194
+#, fuzzy, kde-format
+#| msgctxt "Available space out of total partition size (percent used)"
+#| msgid "%1 out of %2 (%3% used)"
 msgctxt "Available space out of total partition size (percent used)"
-msgid "%1 out of %2 (%3% used)"
+msgid "%1 free of %2 (%3% used)"
 msgstr "%1 од %2 (искористени се %3%)"
 
-#: kfile/kpropertiesdialog.cpp:1201 kfile/kpropertiesdialog.cpp:1217
+#: kfile/kpropertiesdialog.cpp:1211 kfile/kpropertiesdialog.cpp:1227
 #, kde-format
 msgid "1 file"
 msgid_plural "%1 files"
@@ -3765,7 +3652,7 @@ msgstr[0] "%1 датотека"
 msgstr[1] "%1 датотеки"
 msgstr[2] "%1 датотеки"
 
-#: kfile/kpropertiesdialog.cpp:1202 kfile/kpropertiesdialog.cpp:1218
+#: kfile/kpropertiesdialog.cpp:1212 kfile/kpropertiesdialog.cpp:1228
 #, kde-format
 msgid "1 sub-folder"
 msgid_plural "%1 sub-folders"
@@ -3773,7 +3660,7 @@ msgstr[0] "%1 потпапка"
 msgstr[1] "%1 потпапки"
 msgstr[2] "%1 потпапки"
 
-#: kfile/kpropertiesdialog.cpp:1198
+#: kfile/kpropertiesdialog.cpp:1208
 #, kde-format
 msgid ""
 "Calculating... %1 (%2)\n"
@@ -3782,21 +3669,21 @@ msgstr ""
 "Пресметувам... %1 (%2)\n"
 "%3, %4"
 
-#: kfile/kpropertiesdialog.cpp:1231
+#: kfile/kpropertiesdialog.cpp:1241
 msgid "Calculating..."
 msgstr "Пресметувам..."
 
-#: kfile/kpropertiesdialog.cpp:1266
+#: kfile/kpropertiesdialog.cpp:1274
 #, kde-format
 msgid "At least %1"
 msgstr "Најмалку %1"
 
-#: kfile/kpropertiesdialog.cpp:1303
+#: kfile/kpropertiesdialog.cpp:1311
 msgid "The new file name is empty."
 msgstr "Новото име на датотеката е празно."
 
-#: kfile/kpropertiesdialog.cpp:1436 kfile/kpropertiesdialog.cpp:2631
-#: kfile/kpropertiesdialog.cpp:2939 kfile/kpropertiesdialog.cpp:3193
+#: kfile/kpropertiesdialog.cpp:1444 kfile/kpropertiesdialog.cpp:2644
+#: kfile/kpropertiesdialog.cpp:2949 kfile/kpropertiesdialog.cpp:3203
 #, kde-format
 msgid ""
 "<qt>Could not save properties. You do not have sufficient access to write to "
@@ -3805,75 +3692,75 @@ msgstr ""
 "<qt>Не можеа да се снимат својствата. Немате доволен пристап за да запишете "
 "во <b>%1</b>.</qt>"
 
-#: kfile/kpropertiesdialog.cpp:1519 kfile/kpropertiesdialog.cpp:1523
-#: kfile/kpropertiesdialog.cpp:1528
+#: kfile/kpropertiesdialog.cpp:1527 kfile/kpropertiesdialog.cpp:1531
+#: kfile/kpropertiesdialog.cpp:1536
 msgid "Forbidden"
 msgstr "Забрането"
 
-#: kfile/kpropertiesdialog.cpp:1520
+#: kfile/kpropertiesdialog.cpp:1528
 msgid "Can Read"
 msgstr "Може да чита"
 
-#: kfile/kpropertiesdialog.cpp:1521
+#: kfile/kpropertiesdialog.cpp:1529
 msgid "Can Read & Write"
 msgstr "Може да чита и запишува"
 
-#: kfile/kpropertiesdialog.cpp:1524
+#: kfile/kpropertiesdialog.cpp:1532
 msgid "Can View Content"
 msgstr "Може да гледа содржина"
 
-#: kfile/kpropertiesdialog.cpp:1525
+#: kfile/kpropertiesdialog.cpp:1533
 msgid "Can View & Modify Content"
 msgstr "Може да гледа и менува содржина"
 
-#: kfile/kpropertiesdialog.cpp:1529
+#: kfile/kpropertiesdialog.cpp:1537
 msgid "Can View Content & Read"
 msgstr "Може да гледа содржина и чита"
 
-#: kfile/kpropertiesdialog.cpp:1530
+#: kfile/kpropertiesdialog.cpp:1538
 msgid "Can View/Read & Modify/Write"
 msgstr "Може да гледа/чита и менува/запишува"
 
-#: kfile/kpropertiesdialog.cpp:1626
+#: kfile/kpropertiesdialog.cpp:1634
 msgid "&Permissions"
 msgstr "&Дозволи"
 
-#: kfile/kpropertiesdialog.cpp:1639 kfile/kpropertiesdialog.cpp:1896
+#: kfile/kpropertiesdialog.cpp:1647 kfile/kpropertiesdialog.cpp:1904
 msgid "Access Permissions"
 msgstr "Дозволи за пристап"
 
-#: kfile/kpropertiesdialog.cpp:1649
+#: kfile/kpropertiesdialog.cpp:1657
 msgid "This file is a link and does not have permissions."
 msgid_plural "All files are links and do not have permissions."
 msgstr[0] "Оваа датотека е врска и нема дозволи."
 msgstr[1] "Сите датотеки се врски и немаат дозволи."
 msgstr[2] "Сите датотеки се врски и немаат дозволи."
 
-#: kfile/kpropertiesdialog.cpp:1653
+#: kfile/kpropertiesdialog.cpp:1661
 msgid "Only the owner can change permissions."
 msgstr "Само сопственикот може да ги смени дозволите."
 
-#: kfile/kpropertiesdialog.cpp:1656
+#: kfile/kpropertiesdialog.cpp:1664
 msgid "O&wner:"
 msgstr "&Сопственик:"
 
-#: kfile/kpropertiesdialog.cpp:1662
+#: kfile/kpropertiesdialog.cpp:1670
 msgid "Specifies the actions that the owner is allowed to do."
 msgstr "Ги одредува дејствата кои му се дозволени на сопственикот."
 
-#: kfile/kpropertiesdialog.cpp:1664
+#: kfile/kpropertiesdialog.cpp:1672
 msgid "Gro&up:"
 msgstr "&Група:"
 
-#: kfile/kpropertiesdialog.cpp:1670
+#: kfile/kpropertiesdialog.cpp:1678
 msgid "Specifies the actions that the members of the group are allowed to do."
 msgstr "Ги одредува дејствата кои им се дозволени на членовите на групата."
 
-#: kfile/kpropertiesdialog.cpp:1672
+#: kfile/kpropertiesdialog.cpp:1680
 msgid "O&thers:"
 msgstr "&Останати:"
 
-#: kfile/kpropertiesdialog.cpp:1678
+#: kfile/kpropertiesdialog.cpp:1686
 msgid ""
 "Specifies the actions that all users, who are neither owner nor in the "
 "group, are allowed to do."
@@ -3881,17 +3768,17 @@ msgstr ""
 "Ги одредува дејствата кои им се дозволени на сите корисници, кои не се "
 "сопственици или во групата."
 
-#: kfile/kpropertiesdialog.cpp:1683
+#: kfile/kpropertiesdialog.cpp:1691
 msgid "Only own&er can rename and delete folder content"
 msgstr ""
 "Само сопств&еникот може да преименува или\n"
 "да избрише содржина од папката"
 
-#: kfile/kpropertiesdialog.cpp:1684
+#: kfile/kpropertiesdialog.cpp:1692
 msgid "Is &executable"
 msgstr "&Извршна"
 
-#: kfile/kpropertiesdialog.cpp:1688
+#: kfile/kpropertiesdialog.cpp:1696
 msgid ""
 "Enable this option to allow only the folder's owner to delete or rename the "
 "contained files and folders. Other users can only add new files, which "
@@ -3902,7 +3789,7 @@ msgstr ""
 "можат само да додаваат нови датотеки, за што им е потребна дозвола за "
 "„менување содржина“."
 
-#: kfile/kpropertiesdialog.cpp:1692
+#: kfile/kpropertiesdialog.cpp:1700
 msgid ""
 "Enable this option to mark the file as executable. This only makes sense for "
 "programs and scripts. It is required when you want to execute them."
@@ -3911,35 +3798,35 @@ msgstr ""
 "има смисла само за програми и скрипти. Опцијата е задолжителна ако сакате да "
 "ги извршувате."
 
-#: kfile/kpropertiesdialog.cpp:1699
+#: kfile/kpropertiesdialog.cpp:1707
 msgid "A&dvanced Permissions"
 msgstr "Напре&дни дозволи"
 
-#: kfile/kpropertiesdialog.cpp:1708
+#: kfile/kpropertiesdialog.cpp:1716
 msgid "Ownership"
 msgstr "Сопственост"
 
-#: kfile/kpropertiesdialog.cpp:1717
+#: kfile/kpropertiesdialog.cpp:1725
 msgid "User:"
 msgstr "Корисник:"
 
-#: kfile/kpropertiesdialog.cpp:1803
+#: kfile/kpropertiesdialog.cpp:1811
 msgid "Group:"
 msgstr "Група:"
 
-#: kfile/kpropertiesdialog.cpp:1846
+#: kfile/kpropertiesdialog.cpp:1854
 msgid "Apply changes to all subfolders and their contents"
 msgstr "Примени ги измените на сите потпапки и нивните содржини"
 
-#: kfile/kpropertiesdialog.cpp:1886
+#: kfile/kpropertiesdialog.cpp:1894
 msgid "Advanced Permissions"
 msgstr "Напредни дозволи"
 
-#: kfile/kpropertiesdialog.cpp:1906
+#: kfile/kpropertiesdialog.cpp:1914
 msgid "Class"
 msgstr "Класа"
 
-#: kfile/kpropertiesdialog.cpp:1911
+#: kfile/kpropertiesdialog.cpp:1919
 msgid ""
 "Show\n"
 "Entries"
@@ -3947,19 +3834,19 @@ msgstr ""
 "Покажи\n"
 "елементи"
 
-#: kfile/kpropertiesdialog.cpp:1913
+#: kfile/kpropertiesdialog.cpp:1921
 msgid "Read"
 msgstr "Читање"
 
-#: kfile/kpropertiesdialog.cpp:1918
+#: kfile/kpropertiesdialog.cpp:1926
 msgid "This flag allows viewing the content of the folder."
 msgstr "Оваа ознака дозволува преглед на содржината на папката."
 
-#: kfile/kpropertiesdialog.cpp:1920
+#: kfile/kpropertiesdialog.cpp:1928
 msgid "The Read flag allows viewing the content of the file."
 msgstr "Ознаката Читање дозволува преглед на содржината на датотеката."
 
-#: kfile/kpropertiesdialog.cpp:1924
+#: kfile/kpropertiesdialog.cpp:1932
 msgid ""
 "Write\n"
 "Entries"
@@ -3967,11 +3854,11 @@ msgstr ""
 "Запиши\n"
 "елементи"
 
-#: kfile/kpropertiesdialog.cpp:1926
+#: kfile/kpropertiesdialog.cpp:1934
 msgid "Write"
 msgstr "Запишување"
 
-#: kfile/kpropertiesdialog.cpp:1931
+#: kfile/kpropertiesdialog.cpp:1939
 msgid ""
 "This flag allows adding, renaming and deleting of files. Note that deleting "
 "and renaming can be limited using the Sticky flag."
@@ -3980,34 +3867,34 @@ msgstr ""
 "Забележете дека бришењето и преименувањето може да биде ограничено со "
 "користење на ознаката Лепливо."
 
-#: kfile/kpropertiesdialog.cpp:1934
+#: kfile/kpropertiesdialog.cpp:1942
 msgid "The Write flag allows modifying the content of the file."
 msgstr "Ознаката Запишување дозволува менување на содржината на датотеката."
 
-#: kfile/kpropertiesdialog.cpp:1939
+#: kfile/kpropertiesdialog.cpp:1947
 msgctxt "Enter folder"
 msgid "Enter"
 msgstr "Влез"
 
-#: kfile/kpropertiesdialog.cpp:1940
+#: kfile/kpropertiesdialog.cpp:1948
 msgid "Enable this flag to allow entering the folder."
 msgstr "Овозможете ја оваа ознака за да дозволите влез во папката."
 
-#: kfile/kpropertiesdialog.cpp:1943
+#: kfile/kpropertiesdialog.cpp:1951
 msgid "Exec"
 msgstr "Извршна"
 
-#: kfile/kpropertiesdialog.cpp:1944
+#: kfile/kpropertiesdialog.cpp:1952
 msgid "Enable this flag to allow executing the file as a program."
 msgstr ""
 "Овозможете ја оваа ознака за да дозволите извршување на датотеката како "
 "програма."
 
-#: kfile/kpropertiesdialog.cpp:1954
+#: kfile/kpropertiesdialog.cpp:1962
 msgid "Special"
 msgstr "Специјален"
 
-#: kfile/kpropertiesdialog.cpp:1958
+#: kfile/kpropertiesdialog.cpp:1966
 msgid ""
 "Special flag. Valid for the whole folder, the exact meaning of the flag can "
 "be seen in the right hand column."
@@ -4015,7 +3902,7 @@ msgstr ""
 "Специјална ознака. Важи за целата папка, а конкретното значење на ознаката "
 "може да се види во десната колона."
 
-#: kfile/kpropertiesdialog.cpp:1961
+#: kfile/kpropertiesdialog.cpp:1969
 msgid ""
 "Special flag. The exact meaning of the flag can be seen in the right hand "
 "column."
@@ -4023,19 +3910,19 @@ msgstr ""
 "Специјална ознака. Конкретното значење на ознаката може да се види во "
 "десната колона."
 
-#: kfile/kpropertiesdialog.cpp:1965
+#: kfile/kpropertiesdialog.cpp:1973
 msgid "User"
 msgstr "Корисник"
 
-#: kfile/kpropertiesdialog.cpp:1969
+#: kfile/kpropertiesdialog.cpp:1977
 msgid "Group"
 msgstr "Група"
 
-#: kfile/kpropertiesdialog.cpp:1977
+#: kfile/kpropertiesdialog.cpp:1985
 msgid "Set UID"
 msgstr "Постави UID"
 
-#: kfile/kpropertiesdialog.cpp:1981
+#: kfile/kpropertiesdialog.cpp:1989
 msgid ""
 "If this flag is set, the owner of this folder will be the owner of all new "
 "files."
@@ -4043,7 +3930,7 @@ msgstr ""
 "Ако е обележана оваа ознака, сопственикот на оваа папка ќе биде сопственик "
 "на сите нови датотеки."
 
-#: kfile/kpropertiesdialog.cpp:1984
+#: kfile/kpropertiesdialog.cpp:1992
 msgid ""
 "If this file is an executable and the flag is set, it will be executed with "
 "the permissions of the owner."
@@ -4051,18 +3938,18 @@ msgstr ""
 "Ако e оваа датотека извршна и е поставена оваа ознака, таа ќе биде извршена "
 "со дозволите на сопственикот."
 
-#: kfile/kpropertiesdialog.cpp:1988
+#: kfile/kpropertiesdialog.cpp:1996
 msgid "Set GID"
 msgstr "Постави GID"
 
-#: kfile/kpropertiesdialog.cpp:1992
+#: kfile/kpropertiesdialog.cpp:2000
 msgid ""
 "If this flag is set, the group of this folder will be set for all new files."
 msgstr ""
 "Ако е обележана оваа ознака, групата на оваа папка ќе биде поставена на сите "
 "нови датотеки."
 
-#: kfile/kpropertiesdialog.cpp:1995
+#: kfile/kpropertiesdialog.cpp:2003
 msgid ""
 "If this file is an executable and the flag is set, it will be executed with "
 "the permissions of the group."
@@ -4070,12 +3957,12 @@ msgstr ""
 "Ако e оваа датотека извршна и е поставена оваа ознака, таа ќе биде извршена "
 "со дозволите на групата."
 
-#: kfile/kpropertiesdialog.cpp:1999
+#: kfile/kpropertiesdialog.cpp:2007
 msgctxt "File permission"
 msgid "Sticky"
 msgstr "Лепливо"
 
-#: kfile/kpropertiesdialog.cpp:2003
+#: kfile/kpropertiesdialog.cpp:2011
 msgid ""
 "If the Sticky flag is set on a folder, only the owner and root can delete or "
 "rename files. Otherwise everybody with write permissions can do this."
@@ -4084,7 +3971,7 @@ msgstr ""
 "или root можат да бришат и да преименуваат датотеки. Инаку секој со дозволи "
 "за запишување може да го прави тоа."
 
-#: kfile/kpropertiesdialog.cpp:2007
+#: kfile/kpropertiesdialog.cpp:2015
 msgid ""
 "The Sticky flag on a file is ignored on Linux, but may be used on some "
 "systems"
@@ -4092,90 +3979,96 @@ msgstr ""
 "Ознаката Лепливо, поставена на датотека, не се користи на Линукс, но може да "
 "се користи на некои системи."
 
-#: kfile/kpropertiesdialog.cpp:2181
+#: kfile/kpropertiesdialog.cpp:2192
 msgid "Link"
 msgstr "Врска"
 
-#: kfile/kpropertiesdialog.cpp:2197
+#: kfile/kpropertiesdialog.cpp:2209
 msgid "Varying (No Change)"
 msgstr "Варира (без промени)"
 
-#: kfile/kpropertiesdialog.cpp:2295
+#: kfile/kpropertiesdialog.cpp:2308
 msgid "This file uses advanced permissions"
 msgid_plural "These files use advanced permissions."
 msgstr[0] "Оваа датотека користи напредни дозволи."
 msgstr[1] "Овие датотеки користат напредни дозволи."
 msgstr[2] "Овие датотеки користат напредни дозволи."
 
-#: kfile/kpropertiesdialog.cpp:2316
+#: kfile/kpropertiesdialog.cpp:2329
 msgid "This folder uses advanced permissions."
 msgid_plural "These folders use advanced permissions."
 msgstr[0] "Оваа папка користи напредни дозволи."
 msgstr[1] "Овие папки користат напредни дозволи."
 msgstr[2] "Овие папки користат напредни дозволи."
 
-#: kfile/kpropertiesdialog.cpp:2332
+#: kfile/kpropertiesdialog.cpp:2345
 msgid "These files use advanced permissions."
 msgstr "Овие датотеки користат напредни дозволи."
 
-#: kfile/kpropertiesdialog.cpp:2550
+#: kfile/kpropertiesdialog.cpp:2563
 msgid "U&RL"
 msgstr "U&RL"
 
-#: kfile/kpropertiesdialog.cpp:2558
+#: kfile/kpropertiesdialog.cpp:2571
 msgid "URL:"
 msgstr "URL:"
 
-#: kfile/kpropertiesdialog.cpp:2686
+#: kfile/kpropertiesdialog.cpp:2699
 msgid "De&vice"
 msgstr "&Уред"
 
-#: kfile/kpropertiesdialog.cpp:2718
+#: kfile/kpropertiesdialog.cpp:2731
 msgid "Device (/dev/fd0):"
 msgstr "Уред (/dev/fd0):"
 
-#: kfile/kpropertiesdialog.cpp:2719
+#: kfile/kpropertiesdialog.cpp:2732
 msgid "Device:"
 msgstr "Уред:"
 
-#: kfile/kpropertiesdialog.cpp:2732
+#: kfile/kpropertiesdialog.cpp:2745
 msgid "Read only"
 msgstr "Само за читање"
 
-#: kfile/kpropertiesdialog.cpp:2736
+#: kfile/kpropertiesdialog.cpp:2749
 msgid "File system:"
 msgstr "Датотечен систем:"
 
-#: kfile/kpropertiesdialog.cpp:2744
+#: kfile/kpropertiesdialog.cpp:2757
 msgid "Mount point (/mnt/floppy):"
 msgstr "Точка на монтирање (/mnt/floppy):"
 
-#: kfile/kpropertiesdialog.cpp:2745
+#: kfile/kpropertiesdialog.cpp:2758
 msgid "Mount point:"
 msgstr "Точка на монтирање:"
 
-#: kfile/kpropertiesdialog.cpp:2778
+#: kfile/kpropertiesdialog.cpp:2791
 msgid "Unmounted Icon"
 msgstr "Икона за одмонтирано"
 
-#: kfile/kpropertiesdialog.cpp:2996
+#: kfile/kpropertiesdialog.cpp:2909
+#, kde-format
+msgctxt "Available space out of total partition size (percent used)"
+msgid "%1 out of %2 (%3% used)"
+msgstr "%1 од %2 (искористени се %3%)"
+
+#: kfile/kpropertiesdialog.cpp:3006
 msgid "&Application"
 msgstr "&Апликација"
 
-#: kfile/kpropertiesdialog.cpp:3124
+#: kfile/kpropertiesdialog.cpp:3134
 #, kde-format
 msgid "Add File Type for %1"
 msgstr "Додај тип на датотека за %1"
 
-#: kfile/kpropertiesdialog.cpp:3125
+#: kfile/kpropertiesdialog.cpp:3135
 msgid "Select one or more file types to add:"
 msgstr "Изберете еден или повеќе типови датотеки за додавање:"
 
-#: kfile/kpropertiesdialog.cpp:3267
+#: kfile/kpropertiesdialog.cpp:3277
 msgid "Only executables on local file systems are supported."
 msgstr "Поддржани се само извршни на локалните датотечни системи."
 
-#: kfile/kpropertiesdialog.cpp:3281
+#: kfile/kpropertiesdialog.cpp:3291
 #, kde-format
 msgid "Advanced Options for %1"
 msgstr "Напредни опции за %1"
@@ -4300,58 +4193,59 @@ msgstr ""
 #: rc.cpp:18
 #, fuzzy
 #| msgid "Address:"
+msgctxt "Web page address"
 msgid "Address:"
 msgstr "Адреса:"
 
-#. i18n: file: kssl/sslinfo.ui:44
+#. i18n: file: kssl/sslinfo.ui:47
 #. i18n: ectx: property (text), widget (QLabel, ipTag)
 #: rc.cpp:22
 msgid "IP Address:"
 msgstr "IP-адреса:"
 
-#. i18n: file: kssl/sslinfo.ui:58
+#. i18n: file: kssl/sslinfo.ui:64
 #. i18n: ectx: property (text), widget (QLabel, encryptionTag)
 #: rc.cpp:26
 msgid "Encryption:"
 msgstr "Криптирање:"
 
-#. i18n: file: kssl/sslinfo.ui:72
+#. i18n: file: kssl/sslinfo.ui:81
 #. i18n: ectx: property (text), widget (QLabel, detailsTag)
 #: rc.cpp:30
 msgid "Details:"
 msgstr "Детали:"
 
-#. i18n: file: kssl/sslinfo.ui:86
+#. i18n: file: kssl/sslinfo.ui:98
 #. i18n: ectx: property (text), widget (QLabel, sslVersionTag)
 #: rc.cpp:34
 msgid "SSL Version:"
 msgstr "Верзија на SSL:"
 
-#. i18n: file: kssl/sslinfo.ui:100
+#. i18n: file: kssl/sslinfo.ui:115
 #. i18n: ectx: property (text), widget (QLabel, certSelectorTag)
 #: rc.cpp:38
 msgid "Certificate Chain"
 msgstr ""
 
-#. i18n: file: kssl/sslinfo.ui:126
+#. i18n: file: kssl/sslinfo.ui:144
 #. i18n: ectx: property (text), widget (QLabel, trustedTag)
 #: rc.cpp:41
 msgid "Trusted:"
 msgstr "Доверливо:"
 
-#. i18n: file: kssl/sslinfo.ui:140
+#. i18n: file: kssl/sslinfo.ui:161
 #. i18n: ectx: property (text), widget (QLabel, validityPeriodTag)
 #: rc.cpp:45
 msgid "Validity period:"
 msgstr "Период на валидност:"
 
-#. i18n: file: kssl/sslinfo.ui:154
+#. i18n: file: kssl/sslinfo.ui:178
 #. i18n: ectx: property (text), widget (QLabel, serialTag)
 #: rc.cpp:49
 msgid "Serial Number:"
 msgstr "Сериски број:"
 
-#. i18n: file: kssl/sslinfo.ui:168
+#. i18n: file: kssl/sslinfo.ui:195
 #. i18n: ectx: property (text), widget (QLabel, digestTag)
 #: rc.cpp:53
 msgid "MD5 Digest:"
@@ -4369,31 +4263,55 @@ msgstr ""
 "волшебник е наменет да ве води низ процедурата. Може да се откажете во секое "
 "време и тоа ќе ја прекине трансакцијата."
 
-#. i18n: file: kssl/certificateparty.ui:23
+#. i18n: file: kssl/certificateparty.ui:27
+#. i18n: ectx: property (text), widget (QLabel, commonNameTag)
+#: rc.cpp:60
+msgid "Common name:"
+msgstr "Општо име:"
+
+#. i18n: file: kssl/certificateparty.ui:37
 #. i18n: ectx: property (text), widget (QLabel, commonName)
 #: rc.cpp:63
 msgid "Acme Co."
 msgstr ""
 
-#. i18n: file: kssl/certificateparty.ui:50
+#. i18n: file: kssl/certificateparty.ui:44
+#. i18n: ectx: property (text), widget (QLabel, organizationTag)
+#: rc.cpp:66
+msgid "Organization:"
+msgstr "Организација:"
+
+#. i18n: file: kssl/certificateparty.ui:54
 #. i18n: ectx: property (text), widget (QLabel, organization)
 #: rc.cpp:69
 msgid "Acme Sundry Products Company"
 msgstr ""
 
-#. i18n: file: kssl/certificateparty.ui:77
+#. i18n: file: kssl/certificateparty.ui:61
+#. i18n: ectx: property (text), widget (QLabel, organizationalUnitTag)
+#: rc.cpp:72
+msgid "Organizational unit:"
+msgstr "Единица од организацијата:"
+
+#. i18n: file: kssl/certificateparty.ui:71
 #. i18n: ectx: property (text), widget (QLabel, organizationalUnit)
 #: rc.cpp:75
 msgid "Fraud Department"
 msgstr ""
 
-#. i18n: file: kssl/certificateparty.ui:104
+#. i18n: file: kssl/certificateparty.ui:78
+#. i18n: ectx: property (text), widget (QLabel, countryTag)
+#: rc.cpp:78
+msgid "Country:"
+msgstr "Земја:"
+
+#. i18n: file: kssl/certificateparty.ui:88
 #. i18n: ectx: property (text), widget (QLabel, country)
 #: rc.cpp:81
 msgid "Canada"
 msgstr "Канада"
 
-#. i18n: file: kssl/certificateparty.ui:124
+#. i18n: file: kssl/certificateparty.ui:95
 #. i18n: ectx: property (text), widget (QLabel, stateTag)
 #: rc.cpp:84
 #, fuzzy
@@ -4402,171 +4320,27 @@ msgstr "Канада"
 msgid "State:"
 msgstr "Држава:"
 
-#. i18n: file: kssl/certificateparty.ui:131
+#. i18n: file: kssl/certificateparty.ui:105
 #. i18n: ectx: property (text), widget (QLabel, state)
 #: rc.cpp:87
 msgid "Quebec"
 msgstr "Квебек"
 
-#. i18n: file: kssl/certificateparty.ui:151
+#. i18n: file: kssl/certificateparty.ui:112
 #. i18n: ectx: property (text), widget (QLabel, cityTag)
 #: rc.cpp:90
 msgid "City:"
 msgstr "Град:"
 
-#. i18n: file: kssl/certificateparty.ui:158
+#. i18n: file: kssl/certificateparty.ui:122
 #. i18n: ectx: property (text), widget (QLabel, city)
 #: rc.cpp:93
 msgid "Lakeridge Meadows"
 msgstr ""
 
-#. i18n: file: misc/kwalletd/kwalletwizardpageintro.ui:27
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:96
-msgid "<u>KWallet</u> - The KDE Wallet System"
-msgstr "<u>KWallet</u> - системот Паричник во KDE"
-
-#. i18n: file: misc/kwalletd/kwalletwizardpageintro.ui:46
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:99
-msgid ""
-"Welcome to KWallet, the KDE Wallet System.  KWallet allows you to store your "
-"passwords and other personal information on disk in an encrypted file, "
-"preventing others from viewing the information.  This wizard will tell you "
-"about KWallet and help you configure it for the first time."
-msgstr ""
-"Добредојдовте во KWallet, системот Паричник во KDE. KWallet ви овозможува да "
-"ги чувате вашите лозинки и останатите лични информации на диск, во "
-"криптирана датотека, спречувајќи ги другите да ги гледаат истите. Овој "
-"волшебник ќе ве воведе во KWallet и ќе ви помогне да го конфигурирате по прв "
-"пат."
-
-#. i18n: file: misc/kwalletd/kwalletwizardpageintro.ui:83
-#. i18n: ectx: property (text), widget (QRadioButton, _basic)
-#: rc.cpp:102
-msgid "&Basic setup (recommended)"
-msgstr "&Основен начин (препорачано)"
-
-#. i18n: file: misc/kwalletd/kwalletwizardpageintro.ui:93
-#. i18n: ectx: property (text), widget (QRadioButton, _advanced)
-#: rc.cpp:105
-msgid "&Advanced setup"
-msgstr "&Напреден начин"
-
-#. i18n: file: misc/kwalletd/kwalletwizardpagepassword.ui:16
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:108
-msgid ""
-"Various applications may attempt to use the KDE wallet to store passwords or "
-"other information such as web form data and cookies.  If you would like "
-"these applications to use the wallet, you must enable it now and choose a "
-"password.  The password you choose <i>cannot</i> be recovered if it is lost, "
-"and will allow anyone who knows it to obtain all the information contained "
-"in the wallet."
-msgstr ""
-"Разни апликации може да се обидат да го користат паричникот на KDE за да "
-"зачуваат лозинки или други информации како што се податоци од вебформуларите "
-"и од колачињата. Ако сакате да имаат пристап тие апликации до паричникот, "
-"тоа мора да го овозможите сега и да изберете лозинка. Лозинката што ќе ја "
-"изберете <i>не може</i> да се врати ако е изгубена и таа ќе му дозволи на "
-"секој што ја знае да ги добие сите информации содржани во паричникот."
-
-#. i18n: file: misc/kwalletd/kwalletwizardpagepassword.ui:29
-#. i18n: ectx: property (text), widget (QCheckBox, _useWallet)
-#: rc.cpp:111
-msgid "Yes, I wish to use the KDE wallet to store my personal information."
-msgstr ""
-"Да, сакам да го користам паричникот на KDE за да ги чувам моите лични "
-"информации."
-
-#. i18n: file: misc/kwalletd/kwalletwizardpagepassword.ui:88
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
-#: rc.cpp:114
-msgid "Enter a new password:"
-msgstr "Внесете нова лозинка:"
-
-#. i18n: file: misc/kwalletd/kwalletwizardpagepassword.ui:104
-#. i18n: ectx: property (text), widget (QLabel, textLabel2_3)
-#: rc.cpp:117
-msgid "Verify password:"
-msgstr "Потврдете ја лозинката:"
-
-#. i18n: file: misc/kwalletd/kwalletwizardpageexplanation.ui:16
-#. i18n: ectx: property (text), widget (QLabel, textLabel2_3)
-#: rc.cpp:120
-msgid ""
-"The KDE Wallet system stores your data in a <i>wallet</i> file on your local "
-"hard disk.  The data is only written in encrypted form, presently using the "
-"blowfish algorithm with your password as the key.  When a wallet is opened, "
-"the wallet manager application will launch and display an icon in the system "
-"tray.  You can use this application to manage your wallets.  It even permits "
-"you to drag wallets and wallet contents, allowing you to easily copy a "
-"wallet to a remote system."
-msgstr ""
-"Системот Паричник во KDE ги чува вашите податоци во датотека <i>паричник</i> "
-"на вашиот локален тврд диск. Податоците се само запишани во криптирана "
-"форма, моментално со алгоритмот blowfish, со вашата лозинка како клуч. Кога "
-"ќе се отвори паричник, се отвора апликацијата менаџер на паричникот и "
-"прикажува икона во системската лента. Оваа апликација може да ја користите "
-"за да управувате со вашите паричници. Таа дури дозволува да влечете "
-"паричници, како и нивната содржина, така што лесно може да пренесете "
-"паричник на оддалечен систем."
-
-#. i18n: file: misc/kwalletd/kwalletwizardpageoptions.ui:16
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
-#: rc.cpp:123
-msgid ""
-"The KDE Wallet system allows you to control the level of security of your "
-"personal data.  Some of these settings do impact usability.  While the "
-"default settings are generally acceptable for most users, you may wish to "
-"change some of them.  You may further tune these settings from the KWallet "
-"control module."
-msgstr ""
-"Системот Паричник во KDE ви дозволува да го контролирате нивото на "
-"безбедност на вашите лични податоци. Некои од овие поставувања имаат "
-"влијание врз употребливоста. Додека почетните поставувања се општоприфатливи "
-"за повеќето корисници, можеби ќе сакате да смените некои од нив. Овие "
-"поставувања може понатаму да ги менувате од контролниот модул на KWallet."
-
-#. i18n: file: misc/kwalletd/kwalletwizardpageoptions.ui:48
-#. i18n: ectx: property (text), widget (QCheckBox, _closeIdle)
-#: rc.cpp:126
-msgid "Automatically close idle wallets"
-msgstr "Затвори ги некористените паричници автоматски"
-
-#. i18n: file: misc/kwalletd/kwalletwizardpageoptions.ui:55
-#. i18n: ectx: property (text), widget (QCheckBox, _networkWallet)
-#: rc.cpp:129
-msgid "Store network passwords and local passwords in separate wallet files"
-msgstr "Чувај ги мрежните и локалните лозинки во посебни паричници"
-
-#. i18n: file: misc/kwalletd/kbetterthankdialogbase.ui:52
-#. i18n: ectx: property (text), widget (QPushButton, _allowOnce)
-#: rc.cpp:132
-msgid "Allow &Once"
-msgstr "Дозволи &еднаш"
-
-#. i18n: file: misc/kwalletd/kbetterthankdialogbase.ui:62
-#. i18n: ectx: property (text), widget (QPushButton, _allowAlways)
-#: rc.cpp:135
-msgid "Allow &Always"
-msgstr "Дозволи &секогаш"
-
-#. i18n: file: misc/kwalletd/kbetterthankdialogbase.ui:69
-#. i18n: ectx: property (text), widget (QPushButton, _deny)
-#: rc.cpp:138
-msgid "&Deny"
-msgstr "&Одбиј"
-
-#. i18n: file: misc/kwalletd/kbetterthankdialogbase.ui:76
-#. i18n: ectx: property (text), widget (QPushButton, _denyForever)
-#: rc.cpp:141
-msgid "Deny &Forever"
-msgstr "Одбиј за&секогаш"
-
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:22
 #. i18n: ectx: property (title), widget (QGroupBox, buttonGroup2)
-#: rc.cpp:144
+#: rc.cpp:96
 #, fuzzy
 #| msgid "Terminal"
 msgctxt ""
@@ -4577,7 +4351,7 @@ msgstr "Терминал"
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:50
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, terminalCheck)
-#: rc.cpp:147
+#: rc.cpp:99
 msgid ""
 "Check this option if the application you want to run is a text mode "
 "application or if you want the information that is provided by the terminal "
@@ -4589,19 +4363,19 @@ msgstr ""
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:53
 #. i18n: ectx: property (text), widget (QCheckBox, terminalCheck)
-#: rc.cpp:150
+#: rc.cpp:102
 msgid "&Run in terminal"
 msgstr "&Пушти во терминал"
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:60
 #. i18n: ectx: property (text), widget (QLabel, terminalEditLabel)
-#: rc.cpp:153
+#: rc.cpp:105
 msgid "&Terminal options:"
 msgstr "Опции за &терминалот:"
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:70
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, terminalCloseCheck)
-#: rc.cpp:156
+#: rc.cpp:108
 msgid ""
 "Check this option if the text mode application offers relevant information "
 "on exit. Keeping the terminal emulator open allows you to retrieve this "
@@ -4613,13 +4387,13 @@ msgstr ""
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:73
 #. i18n: ectx: property (text), widget (QCheckBox, terminalCloseCheck)
-#: rc.cpp:159
+#: rc.cpp:111
 msgid "Do not &close when command exits"
 msgstr "Не &затворај кога ќе заврши командата"
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:86
 #. i18n: ectx: property (title), widget (QGroupBox, buttonGroup2_2)
-#: rc.cpp:162
+#: rc.cpp:114
 #, fuzzy
 #| msgid "User"
 msgctxt ""
@@ -4630,7 +4404,7 @@ msgstr "Корисник"
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:98
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, suidCheck)
-#: rc.cpp:165
+#: rc.cpp:117
 msgid ""
 "Check this option if you want to run this application with a different user "
 "id. Every process has a different user id associated with it. This id code "
@@ -4644,33 +4418,33 @@ msgstr ""
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:101
 #. i18n: ectx: property (text), widget (QCheckBox, suidCheck)
-#: rc.cpp:168
+#: rc.cpp:120
 msgid "Ru&n as a different user"
 msgstr "Изврши како друг корис&ник"
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:124
 #. i18n: ectx: property (whatsThis), widget (QLabel, suidEditLabel)
-#: rc.cpp:171
+#: rc.cpp:123
 msgid "Enter the user name you want to run the application as."
 msgstr ""
 "Внесете го корисникот под чиешто име сакате да ја извршите апликацијата."
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:127
 #. i18n: ectx: property (text), widget (QLabel, suidEditLabel)
-#: rc.cpp:174
+#: rc.cpp:126
 msgid "&Username:"
 msgstr "&Корисничко име:"
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:137
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, suidEdit)
-#: rc.cpp:177
+#: rc.cpp:129
 msgid "Enter the user name you want to run the application as here."
 msgstr ""
 "Внесете го тука корисникот под чиешто име сакате да ја извршите апликацијата."
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:147
 #. i18n: ectx: property (title), widget (QGroupBox, buttonGroup4)
-#: rc.cpp:180
+#: rc.cpp:132
 #, fuzzy
 #| msgid "Startup"
 msgctxt ""
@@ -4681,7 +4455,7 @@ msgstr "Почеток"
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:159
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, startupInfoCheck)
-#: rc.cpp:183
+#: rc.cpp:135
 msgid ""
 "Check this option if you want to make clear that your application has "
 "started. This visual feedback may appear as a busy cursor or in the taskbar."
@@ -4692,13 +4466,13 @@ msgstr ""
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:162
 #. i18n: ectx: property (text), widget (QCheckBox, startupInfoCheck)
-#: rc.cpp:186
+#: rc.cpp:138
 msgid "Enable &launch feedback"
 msgstr "Овозможи &повратна инфо. за старт"
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:169
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, systrayCheck)
-#: rc.cpp:189
+#: rc.cpp:141
 msgid ""
 "Check this option if you want to have a system tray handle for your "
 "application."
@@ -4708,37 +4482,37 @@ msgstr ""
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:172
 #. i18n: ectx: property (text), widget (QCheckBox, systrayCheck)
-#: rc.cpp:192
+#: rc.cpp:144
 msgid "&Place in system tray"
 msgstr "&Постави во системска лента"
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:179
 #. i18n: ectx: property (text), widget (QLabel, textLabel12)
-#: rc.cpp:195
+#: rc.cpp:147
 msgid "&DBUS registration:"
 msgstr "Регистрација со &DBUS:"
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:190
 #. i18n: ectx: property (text), item, widget (KComboBox, dbusCombo)
-#: rc.cpp:198
+#: rc.cpp:150
 msgid "None"
 msgstr "Нема"
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:195
 #. i18n: ectx: property (text), item, widget (KComboBox, dbusCombo)
-#: rc.cpp:201
+#: rc.cpp:153
 msgid "Multiple Instances"
 msgstr "Повеќе инстанци"
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:200
 #. i18n: ectx: property (text), item, widget (KComboBox, dbusCombo)
-#: rc.cpp:204
+#: rc.cpp:156
 msgid "Single Instance"
 msgstr "Единствена инстанција"
 
 #. i18n: file: kfile/kpropertiesdesktopadvbase.ui:205
 #. i18n: ectx: property (text), item, widget (KComboBox, dbusCombo)
-#: rc.cpp:207
+#: rc.cpp:159
 msgid "Run Until Finished"
 msgstr "Работи додека не заврши"
 
@@ -4746,7 +4520,7 @@ msgstr "Работи додека не заврши"
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel7)
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:73
 #. i18n: ectx: property (whatsThis), widget (QTreeWidget, filetypeList)
-#: rc.cpp:210 rc.cpp:218
+#: rc.cpp:162 rc.cpp:170
 msgid ""
 "<qt><p>This list should show the types of file that your application can "
 "handle. This list is organized by <u>mimetypes</u>.</p>\n"
@@ -4781,19 +4555,19 @@ msgstr ""
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:55
 #. i18n: ectx: property (text), widget (QLabel, textLabel7)
-#: rc.cpp:215
+#: rc.cpp:167
 msgid "&Supported file types:"
 msgstr "&Поддржани типови датотеки:"
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:86
 #. i18n: ectx: property (text), widget (QTreeWidget, filetypeList)
-#: rc.cpp:223
+#: rc.cpp:175
 msgid "Mimetype"
 msgstr "MIME-тип"
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:91
 #. i18n: ectx: property (text), widget (QTreeWidget, filetypeList)
-#: rc.cpp:226
+#: rc.cpp:178
 msgid "Description"
 msgstr "Опис"
 
@@ -4801,7 +4575,7 @@ msgstr "Опис"
 #. i18n: ectx: property (whatsThis), widget (QLabel, nameLabel)
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:112
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, nameEdit)
-#: rc.cpp:229 rc.cpp:235
+#: rc.cpp:181 rc.cpp:187
 msgid ""
 "Type the name you want to give to this application here. This application "
 "will appear under this name in the applications menu and in the panel."
@@ -4811,7 +4585,7 @@ msgstr ""
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:102
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: rc.cpp:232
+#: rc.cpp:184 ../kfile/kfilewidget.cpp:512
 msgid "&Name:"
 msgstr "&Име:"
 
@@ -4819,7 +4593,7 @@ msgstr "&Име:"
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel2)
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:132
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, genNameEdit)
-#: rc.cpp:238 rc.cpp:244
+#: rc.cpp:190 rc.cpp:196
 msgid ""
 "Type the description of this application, based on its use, here. Examples: "
 "a dial up application (KPPP) would be \"Dial up tool\"."
@@ -4830,7 +4604,7 @@ msgstr ""
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:122
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:241 ../kfile/kfileplaceeditdialog.cpp:102
+#: rc.cpp:193 ../kfile/kfileplaceeditdialog.cpp:102
 msgid "&Description:"
 msgstr "&Опис:"
 
@@ -4838,14 +4612,14 @@ msgstr "&Опис:"
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel3)
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:152
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, commentEdit)
-#: rc.cpp:247 rc.cpp:253
+#: rc.cpp:199 rc.cpp:205
 msgid "Type any comment you think is useful here."
 msgstr ""
 "Искуцајте тука каков било коментар за кој мислите дека ќе биде корисен."
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:142
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:250
+#: rc.cpp:202
 msgid "Comm&ent:"
 msgstr "Ком&ентар:"
 
@@ -4853,7 +4627,7 @@ msgstr "Ком&ентар:"
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel4)
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:194
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, commandEdit)
-#: rc.cpp:257 rc.cpp:275
+#: rc.cpp:209 rc.cpp:227
 #, no-c-format
 msgid ""
 "Type the command to start this application here.\n"
@@ -4888,13 +4662,13 @@ msgstr ""
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:173
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: rc.cpp:271
+#: rc.cpp:223
 msgid "Co&mmand:"
 msgstr "Ко&манда:"
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:201
 #. i18n: ectx: property (whatsThis), widget (QPushButton, browseButton)
-#: rc.cpp:289
+#: rc.cpp:241
 msgid ""
 "Click here to browse your file system in order to find the desired "
 "executable."
@@ -4906,19 +4680,19 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel5)
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:224
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, pathEdit)
-#: rc.cpp:295 rc.cpp:301
+#: rc.cpp:247 rc.cpp:253
 msgid "Sets the working directory for your application."
 msgstr "Го поставува работниот именик за вашата апликација."
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:214
 #. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: rc.cpp:298
+#: rc.cpp:250
 msgid "&Work path:"
 msgstr "Ра&ботна патека:"
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:231
 #. i18n: ectx: property (whatsThis), widget (QPushButton, addFiletypeButton)
-#: rc.cpp:304
+#: rc.cpp:256
 msgid ""
 "Click on this button if you want to add a type of file (mimetype) that your "
 "application can handle."
@@ -4928,13 +4702,13 @@ msgstr ""
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:234
 #. i18n: ectx: property (text), widget (QPushButton, addFiletypeButton)
-#: rc.cpp:307
+#: rc.cpp:259
 msgid "Add..."
 msgstr "Додај..."
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:257
 #. i18n: ectx: property (whatsThis), widget (QPushButton, delFiletypeButton)
-#: rc.cpp:310
+#: rc.cpp:262
 msgid ""
 "If you want to remove a type of file (mimetype) that your application cannot "
 "handle, select the mimetype in the list above and click on this button."
@@ -4945,13 +4719,13 @@ msgstr ""
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:260
 #. i18n: ectx: property (text), widget (QPushButton, delFiletypeButton)
-#: rc.cpp:313
+#: rc.cpp:265
 msgid "Remove"
 msgstr "Отстрани"
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:283
 #. i18n: ectx: property (whatsThis), widget (QPushButton, advancedButton)
-#: rc.cpp:316
+#: rc.cpp:268
 msgid ""
 "Click here to modify the way this application will run, launch feedback, "
 "DBUS options or to run it as a different user."
@@ -4962,7 +4736,7 @@ msgstr ""
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:286
 #. i18n: ectx: property (text), widget (QPushButton, advancedButton)
-#: rc.cpp:319
+#: rc.cpp:271
 msgid "Ad&vanced Options"
 msgstr "На&предни опции"
 
@@ -4990,57 +4764,57 @@ msgstr "Отвори во нов прозорец"
 msgid "Open in New Tab"
 msgstr "Отвори во ново ливче"
 
-#: bookmarks/kbookmarkimporter_ns.cc:114 bookmarks/kbookmarkimporter_ns.cc:118
+#: bookmarks/kbookmarkimporter_ns.cc:115 bookmarks/kbookmarkimporter_ns.cc:119
 msgid "*.html|HTML Files (*.html)"
 msgstr "*.html|Датотеки HTML (*.html)"
 
-#: bookmarks/kbookmarkimporter_ns.cc:154
+#: bookmarks/kbookmarkimporter_ns.cc:162
 msgid "<!-- This file was generated by Konqueror -->"
 msgstr "<!-- Оваа датотека беше генерирана од Konqueror -->"
 
-#: bookmarks/kbookmarkimporter_ns.cc:157 bookmarks/kbookmarkimporter_ns.cc:158
-#: bookmarks/kbookmarkdialog.cc:325 ../kfile/kfilewidget.cpp:2219
+#: bookmarks/kbookmarkimporter_ns.cc:165 bookmarks/kbookmarkimporter_ns.cc:166
+#: bookmarks/kbookmarkdialog.cc:344 ../kfile/kfilewidget.cpp:2415
 msgid "Bookmarks"
 msgstr "Обележувачи"
 
-#: bookmarks/kbookmarkimporter_opera.cc:113
-#: bookmarks/kbookmarkimporter_opera.cc:117
+#: bookmarks/kbookmarkimporter_opera.cc:121
+#: bookmarks/kbookmarkimporter_opera.cc:125
 msgid "*.adr|Opera Bookmark Files (*.adr)"
 msgstr "*.adr|Датотеки со обележувачи на Opera (*.adr)"
 
-#: bookmarks/kbookmarkmenu.cc:248
+#: bookmarks/kbookmarkmenu.cc:267
 msgid "Add Bookmark Here"
 msgstr "Додај обележувач тука"
 
-#: bookmarks/kbookmarkmenu.cc:253
+#: bookmarks/kbookmarkmenu.cc:272
 msgid "Open Folder in Bookmark Editor"
 msgstr "Отвори ја папката во уредувачот за обележувачи"
 
-#: bookmarks/kbookmarkmenu.cc:256
+#: bookmarks/kbookmarkmenu.cc:275
 msgid "Delete Folder"
 msgstr "Избриши папка"
 
-#: bookmarks/kbookmarkmenu.cc:262 ../kfile/kdiroperator.cpp:1653
+#: bookmarks/kbookmarkmenu.cc:281 ../kfile/kdiroperator.cpp:1947
 msgid "Properties"
 msgstr "Својства"
 
-#: bookmarks/kbookmarkmenu.cc:267
+#: bookmarks/kbookmarkmenu.cc:286
 msgid "Copy Link Address"
 msgstr "Копирај ја адресата на врската"
 
-#: bookmarks/kbookmarkmenu.cc:270
+#: bookmarks/kbookmarkmenu.cc:289
 msgid "Delete Bookmark"
 msgstr "Избриши обележувач"
 
-#: bookmarks/kbookmarkmenu.cc:276 bookmarks/kbookmarkmenu.cc:433
+#: bookmarks/kbookmarkmenu.cc:295 bookmarks/kbookmarkmenu.cc:454
 msgid "Open Folder in Tabs"
 msgstr "Отвори папка во ливчиња"
 
-#: bookmarks/kbookmarkmenu.cc:301
+#: bookmarks/kbookmarkmenu.cc:320
 msgid "Cannot add bookmark with empty URL."
 msgstr "Не можам да додадам обележувач со празен URL."
 
-#: bookmarks/kbookmarkmenu.cc:333
+#: bookmarks/kbookmarkmenu.cc:352
 #, kde-format
 msgid ""
 "Are you sure you wish to remove the bookmark folder\n"
@@ -5049,7 +4823,7 @@ msgstr ""
 "Дали сте сигурни дека сакате да ја отстраните оваа папка со обележувачи\n"
 "„%1“?"
 
-#: bookmarks/kbookmarkmenu.cc:334
+#: bookmarks/kbookmarkmenu.cc:353
 #, kde-format
 msgid ""
 "Are you sure you wish to remove the bookmark\n"
@@ -5058,43 +4832,39 @@ msgstr ""
 "Дали сте сигурни дека сакате да го отстраните овој обележувач\n"
 "„%1“?"
 
-#: bookmarks/kbookmarkmenu.cc:335
+#: bookmarks/kbookmarkmenu.cc:354
 msgid "Bookmark Folder Deletion"
 msgstr "Бришење на папка со обележувачи"
 
-#: bookmarks/kbookmarkmenu.cc:336
+#: bookmarks/kbookmarkmenu.cc:355
 msgid "Bookmark Deletion"
 msgstr "Бришење на обележувач"
 
-#: bookmarks/kbookmarkmenu.cc:438
+#: bookmarks/kbookmarkmenu.cc:458
 msgid "Open all bookmarks in this folder as a new tab."
 msgstr "Ги отвора сите обележувачи од оваа папка како ново ливче."
 
-#: bookmarks/kbookmarkmenu.cc:450
+#: bookmarks/kbookmarkmenu.cc:471
 msgid "Bookmark Tabs as Folder..."
 msgstr "Ливчињата во папка со обележувачи..."
 
-#: bookmarks/kbookmarkmenu.cc:455
+#: bookmarks/kbookmarkmenu.cc:475
 msgid "Add a folder of bookmarks for all open tabs."
 msgstr "Додава папка со обележувачи од сите отворени ливчиња."
 
-#: bookmarks/kbookmarkmenu.cc:467
+#: bookmarks/kbookmarkmenu.cc:488
 msgid "Add Bookmark"
 msgstr "Додај обележувач"
 
-#: bookmarks/kbookmarkmenu.cc:473
-msgid "Add a bookmark for the current document"
-msgstr "Додај обележувач за тековниот документ"
-
-#: bookmarks/kbookmarkmenu.cc:488
+#: bookmarks/kbookmarkmenu.cc:509
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Уредете ја вашата колекција на обележувачи во посебен прозорец"
 
-#: bookmarks/kbookmarkmenu.cc:497
+#: bookmarks/kbookmarkmenu.cc:518
 msgid "New Bookmark Folder..."
 msgstr "Нова папка со обележувачи..."
 
-#: bookmarks/kbookmarkmenu.cc:500
+#: bookmarks/kbookmarkmenu.cc:520
 msgid "Create a new bookmark folder in this menu"
 msgstr "Создава нова папка со обележувачи во ова мени"
 
@@ -5102,7 +4872,7 @@ msgstr "Создава нова папка со обележувачи во ов
 msgid "--- separator ---"
 msgstr "--- раздвојувач ---"
 
-#: bookmarks/kbookmarkmanager.cc:411
+#: bookmarks/kbookmarkmanager.cc:412
 #, kde-format
 msgid ""
 "Unable to save bookmarks in %1. Reported error was: %2. This error message "
@@ -5113,84 +4883,84 @@ msgstr ""
 "Оваа порака за грешка ќе се појави само еднаш. Причината за грешката треба "
 "да се отстрани што побрзо и најверојатно причината е полн тврд диск."
 
-#: bookmarks/kbookmarkdialog.cc:22
+#: bookmarks/kbookmarkdialog.cc:41
 msgctxt "@action:button"
 msgid "Update"
 msgstr "Ажурирај"
 
-#: bookmarks/kbookmarkdialog.cc:23
+#: bookmarks/kbookmarkdialog.cc:42
 msgctxt "@title:window"
 msgid "Bookmark Properties"
 msgstr "Својства на обележувачот"
 
-#: bookmarks/kbookmarkdialog.cc:48 bookmarks/kbookmarkdialog.cc:77
+#: bookmarks/kbookmarkdialog.cc:67 bookmarks/kbookmarkdialog.cc:96
 msgctxt "@action:button"
 msgid "Add"
 msgstr "Додај"
 
-#: bookmarks/kbookmarkdialog.cc:49
+#: bookmarks/kbookmarkdialog.cc:68
 msgctxt "@title:window"
 msgid "Add Bookmark"
 msgstr "Додај обележувач"
 
-#: bookmarks/kbookmarkdialog.cc:50 bookmarks/kbookmarkdialog.cc:79
-#: bookmarks/kbookmarkdialog.cc:103
+#: bookmarks/kbookmarkdialog.cc:69 bookmarks/kbookmarkdialog.cc:98
+#: bookmarks/kbookmarkdialog.cc:122
 msgctxt "@action:button"
 msgid "&New Folder..."
 msgstr "&Нова папка..."
 
-#: bookmarks/kbookmarkdialog.cc:78
+#: bookmarks/kbookmarkdialog.cc:97
 msgctxt "@title:window"
 msgid "Add Bookmarks"
 msgstr "Додавање обележувачи"
 
-#: bookmarks/kbookmarkdialog.cc:104 ../kfile/kdirselectdialog.cpp:225
+#: bookmarks/kbookmarkdialog.cc:123 ../kfile/kdirselectdialog.cpp:226
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Избор на папка"
 
-#: bookmarks/kbookmarkdialog.cc:129 ../kfile/kdirselectdialog.cpp:119
+#: bookmarks/kbookmarkdialog.cc:148 ../kfile/kdirselectdialog.cpp:120
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Нова папка"
 
-#: bookmarks/kbookmarkdialog.cc:255
+#: bookmarks/kbookmarkdialog.cc:274
 msgctxt "@label:textbox"
 msgid "Name:"
 msgstr "Име:"
 
-#: bookmarks/kbookmarkdialog.cc:259
+#: bookmarks/kbookmarkdialog.cc:278
 msgctxt "@label:textbox"
 msgid "Location:"
 msgstr "Локација:"
 
-#: bookmarks/kbookmarkdialog.cc:289
+#: bookmarks/kbookmarkdialog.cc:308
 msgctxt "@title:window"
 msgid "Create New Bookmark Folder"
 msgstr "Креирање нова папка со обележувачи"
 
-#: bookmarks/kbookmarkdialog.cc:290
+#: bookmarks/kbookmarkdialog.cc:309
 #, kde-format
 msgctxt "@title:window"
 msgid "Create New Bookmark Folder in %1"
 msgstr "Креирање нова папка со обележувачи во %1"
 
-#: bookmarks/kbookmarkdialog.cc:293
+#: bookmarks/kbookmarkdialog.cc:312
 msgctxt "@label:textbox"
 msgid "New folder:"
 msgstr "Нова папка:"
 
-#: ../kioslave/ftp/ftp.cpp:320
+#: ../kioslave/ftp/ftp.cpp:324
 #, kde-format
 msgid "Opening connection to host %1"
 msgstr "Отворам поврзување со компјутерот %1"
 
-#: ../kioslave/ftp/ftp.cpp:338
+#: ../kioslave/ftp/ftp.cpp:342
 #, kde-format
 msgid "Connected to host %1"
 msgstr "Поврзан на компјутерот %1"
 
-#: ../kioslave/ftp/ftp.cpp:377
+#: ../kioslave/ftp/ftp.cpp:381
 #, kde-format
 msgid ""
 "%1.\n"
@@ -5201,11 +4971,11 @@ msgstr ""
 "\n"
 "Причина: %2"
 
-#: ../kioslave/ftp/ftp.cpp:406
+#: ../kioslave/ftp/ftp.cpp:410
 msgid "Sending login information"
 msgstr "Праќање информации за најавување"
 
-#: ../kioslave/ftp/ftp.cpp:454
+#: ../kioslave/ftp/ftp.cpp:458
 #, kde-format
 msgid ""
 "Message sent:\n"
@@ -5222,45 +4992,35 @@ msgstr ""
 "%2\n"
 "\n"
 
-#: ../kioslave/ftp/ftp.cpp:462 ../kioslave/http/http.cpp:5047
+#: ../kioslave/ftp/ftp.cpp:466 ../kioslave/http/http.cpp:4803
 msgid "You need to supply a username and a password to access this site."
 msgstr ""
 "Треба да ги наведете вашето име и лозинка за да пристапите на оваа локација."
 
-#: ../kioslave/ftp/ftp.cpp:464 ../kioslave/http/http.cpp:5055
+#: ../kioslave/ftp/ftp.cpp:468 ../kioslave/http/http.cpp:4810
 msgid "Site:"
 msgstr "Локација:"
 
-#: ../kioslave/ftp/ftp.cpp:465
+#: ../kioslave/ftp/ftp.cpp:469
 #, kde-format
 msgid "<b>%1</b>"
 msgstr "<b>%1</b>"
 
-#: ../kioslave/ftp/ftp.cpp:528
+#: ../kioslave/ftp/ftp.cpp:532
 msgid "Login OK"
 msgstr "Најавата е во ред"
 
-#: ../kioslave/ftp/ftp.cpp:557
+#: ../kioslave/ftp/ftp.cpp:561
 #, kde-format
 msgid "Could not login to %1."
 msgstr "Не можам да се најавам на %1."
 
-#: ../kioslave/file/file.cpp:206
+#: ../kioslave/file/file_unix.cpp:204
 #, kde-format
-msgid "Setting ACL for %1"
-msgstr "Поставувам ACL за %1"
+msgid "Cannot copy file from %1 to %2. (Errno: %3)"
+msgstr "Не можам да ја копирам датотеката од %1 во %2. (грешка бр. %3)"
 
-#: ../kioslave/file/file.cpp:235
-#, kde-format
-msgid "Could not get user id for given user name %1"
-msgstr "Не можам да го пронајдам ид. на корисник за корисникот %1"
-
-#: ../kioslave/file/file.cpp:248
-#, kde-format
-msgid "Could not get group id for given group name %1"
-msgstr "Не можам да го пронајдам ид. на група за групата %1"
-
-#: ../kioslave/file/file.cpp:791 ../kioslave/file/file.cpp:1026
+#: ../kioslave/file/file_unix.cpp:273 ../kioslave/file/file.cpp:726
 #, kde-format
 msgid ""
 "Could not change permissions for\n"
@@ -5269,101 +5029,117 @@ msgstr ""
 "Не можат да се променат дозволите за\n"
 "%1"
 
-#: ../kioslave/file/file.cpp:957
-#, kde-format
-msgid "Cannot copy file from %1 to %2. (Errno: %3)"
-msgstr "Не можам да ја копирам датотеката од %1 во %2. (грешка бр. %3)"
-
-#: ../kioslave/file/file.cpp:1374
+#: ../kioslave/file/file_unix.cpp:326
 #, kde-format
 msgid "No media in device for %1"
 msgstr "Нема носач во уредот за %1"
 
-#: ../kioslave/file/file.cpp:1524
+#: ../kioslave/file/file_unix.cpp:539
+#, kde-format
+msgid "Could not get user id for given user name %1"
+msgstr "Не можам да го пронајдам ид. на корисник за корисникот %1"
+
+#: ../kioslave/file/file_unix.cpp:552
+#, kde-format
+msgid "Could not get group id for given group name %1"
+msgstr "Не можам да го пронајдам ид. на група за групата %1"
+
+#: ../kioslave/file/file.cpp:205
+#, kde-format
+msgid "Setting ACL for %1"
+msgstr "Поставувам ACL за %1"
+
+#: ../kioslave/file/file.cpp:976
 msgid "No Media inserted or Media not recognized."
 msgstr "Нема внесен медиум или медиумот не е препознаен."
 
-#: ../kioslave/file/file.cpp:1534 ../kioslave/file/file.cpp:1735
+#: ../kioslave/file/file.cpp:986 ../kioslave/file/file.cpp:1187
 msgid "\"vold\" is not running."
 msgstr "„vold“ не работи."
 
-#: ../kioslave/file/file.cpp:1569
+#: ../kioslave/file/file.cpp:1021
 msgid "Could not find program \"mount\""
 msgstr "Не можам да ја најдам програмата „mount“"
 
-#: ../kioslave/file/file.cpp:1748
+#: ../kioslave/file/file.cpp:1200
 msgid "Could not find program \"umount\""
 msgstr "Не можам да ја најдам програмата „umount“"
 
-#: ../kioslave/file/file.cpp:1836
+#: ../kioslave/file/file.cpp:1288
 #, kde-format
 msgid "Could not read %1"
 msgstr "Не може да се прочита %1"
 
-#: ../kioslave/http/http.cpp:464
+#: ../kioslave/http/http.cpp:509
 msgid "No host specified."
 msgstr "Не е наведен компјутер."
 
-#: ../kioslave/http/http.cpp:1484
+#: ../kioslave/http/http.cpp:1360
+#, fuzzy
+#| msgid "The specified resource may not exist."
+msgid "The resource cannot be deleted."
+msgstr "Можно е да не постои зададениот ресурс."
+
+#: ../kioslave/http/http.cpp:1481
 msgid "Otherwise, the request would have succeeded."
 msgstr "Инаку, барањето ќе успееше."
 
-#: ../kioslave/http/http.cpp:1488
+#: ../kioslave/http/http.cpp:1485
 msgctxt "request type"
 msgid "retrieve property values"
 msgstr "преземи ги вредностите на својството"
 
-#: ../kioslave/http/http.cpp:1491
+#: ../kioslave/http/http.cpp:1488
 msgctxt "request type"
 msgid "set property values"
 msgstr "постави ги вредностите на својството"
 
-#: ../kioslave/http/http.cpp:1494
+#: ../kioslave/http/http.cpp:1491
 msgctxt "request type"
 msgid "create the requested folder"
 msgstr "креирај ја бараната папка"
 
-#: ../kioslave/http/http.cpp:1497
+#: ../kioslave/http/http.cpp:1494
 msgctxt "request type"
 msgid "copy the specified file or folder"
 msgstr "копирај ја зададената датотека или папка"
 
-#: ../kioslave/http/http.cpp:1500
+#: ../kioslave/http/http.cpp:1497
 msgctxt "request type"
 msgid "move the specified file or folder"
 msgstr "премести ја зададената датотека или папка"
 
-#: ../kioslave/http/http.cpp:1503
+#: ../kioslave/http/http.cpp:1500
 msgctxt "request type"
 msgid "search in the specified folder"
 msgstr "пребарувај во зададената папка"
 
-#: ../kioslave/http/http.cpp:1506
+#: ../kioslave/http/http.cpp:1503
 msgctxt "request type"
 msgid "lock the specified file or folder"
 msgstr "заклучи ја зададената датотека или папка"
 
-#: ../kioslave/http/http.cpp:1509
+#: ../kioslave/http/http.cpp:1506
 msgctxt "request type"
 msgid "unlock the specified file or folder"
 msgstr "отклучи ја зададената датотека или папка"
 
-#: ../kioslave/http/http.cpp:1512
+#: ../kioslave/http/http.cpp:1509
 msgctxt "request type"
 msgid "delete the specified file or folder"
 msgstr "избриши ја зададената датотека или папка"
 
-#: ../kioslave/http/http.cpp:1515
+#: ../kioslave/http/http.cpp:1512
 msgctxt "request type"
 msgid "query the server's capabilities"
 msgstr "прашај за способностите на серверот"
 
-#: ../kioslave/http/http.cpp:1518
+#: ../kioslave/http/http.cpp:1515
 msgctxt "request type"
 msgid "retrieve the contents of the specified file or folder"
 msgstr "преземи ја содржината на зададената датотека или папка"
 
-#: ../kioslave/http/http.cpp:1530
+#: ../kioslave/http/http.cpp:1527
 #, fuzzy, kde-format
 #| msgctxt "%1: response code, %2: request type"
 #| msgid "An unexpected error (%1) occurred while attempting to %2."
@@ -5371,11 +5147,11 @@ msgctxt "%1: code, %2: request type"
 msgid "An unexpected error (%1) occurred while attempting to %2."
 msgstr "Се случи неочекувана грешка (%1) при обидот за %2."
 
-#: ../kioslave/http/http.cpp:1538
+#: ../kioslave/http/http.cpp:1535
 msgid "The server does not support the WebDAV protocol."
 msgstr "Серверот не го поддржува протоколот WebDAV."
 
-#: ../kioslave/http/http.cpp:1580
+#: ../kioslave/http/http.cpp:1577
 #, kde-format
 msgctxt "%1: request type, %2: url"
 msgid ""
@@ -5384,17 +5160,17 @@ msgid ""
 msgstr ""
 "Се случи грешка при обидот за %1, %2. Подолу следи преглед на причините."
 
-#: ../kioslave/http/http.cpp:1594 ../kioslave/http/http.cpp:1697
+#: ../kioslave/http/http.cpp:1591 ../kioslave/http/http.cpp:1696
 #, kde-format
 msgctxt "%1: request type"
 msgid "Access was denied while attempting to %1."
 msgstr "Пристапот беше одбиен при обидот за %1."
 
-#: ../kioslave/http/http.cpp:1601
+#: ../kioslave/http/http.cpp:1598
 msgid "The specified folder already exists."
 msgstr "Наведената папка веќе постои."
 
-#: ../kioslave/http/http.cpp:1607 ../kioslave/http/http.cpp:1702
+#: ../kioslave/http/http.cpp:1604 ../kioslave/http/http.cpp:1701
 msgid ""
 "A resource cannot be created at the destination until one or more "
 "intermediate collections (folders) have been created."
@@ -5402,7 +5178,7 @@ msgstr ""
 "Не може да биде создаден ресурс на одредиштето сѐ додека не се создадени "
 "една или повеќе привремени колекции (папки)."
 
-#: ../kioslave/http/http.cpp:1616
+#: ../kioslave/http/http.cpp:1613
 #, kde-format
 msgid ""
 "The server was unable to maintain the liveness of the properties listed in "
@@ -5413,26 +5189,26 @@ msgstr ""
 "propertybehavior или се обидовте да пребришете датотека, притоа барајќи да "
 "не се пребришуваат датотеки. %1"
 
-#: ../kioslave/http/http.cpp:1626
+#: ../kioslave/http/http.cpp:1623
 #, kde-format
 msgid "The requested lock could not be granted. %1"
 msgstr "Бараното заклучување не беше дозволено. %1"
 
-#: ../kioslave/http/http.cpp:1632
+#: ../kioslave/http/http.cpp:1629
 msgid "The server does not support the request type of the body."
 msgstr "Серверот не го поддржува типот на барање од телото."
 
-#: ../kioslave/http/http.cpp:1637 ../kioslave/http/http.cpp:1709
+#: ../kioslave/http/http.cpp:1634 ../kioslave/http/http.cpp:1708
 #, kde-format
 msgctxt "%1: request type"
 msgid "Unable to %1 because the resource is locked."
 msgstr "Не е можно %1 бидејќи ресурсот е заклучен."
 
-#: ../kioslave/http/http.cpp:1641
+#: ../kioslave/http/http.cpp:1638
 msgid "This action was prevented by another error."
 msgstr "Ова дејство беше спречено од друга грешка."
 
-#: ../kioslave/http/http.cpp:1648 ../kioslave/http/http.cpp:1714
+#: ../kioslave/http/http.cpp:1645 ../kioslave/http/http.cpp:1713
 #, kde-format
 msgctxt "%1: request type"
 msgid ""
@@ -5442,7 +5218,7 @@ msgstr ""
 "Не е можно %1 бидејќи одредишниот сервер одбива да ја прифати датотеката или "
 "папката."
 
-#: ../kioslave/http/http.cpp:1655 ../kioslave/http/http.cpp:1720
+#: ../kioslave/http/http.cpp:1652 ../kioslave/http/http.cpp:1719
 msgid ""
 "The destination resource does not have sufficient space to record the state "
 "of the resource after the execution of this method."
@@ -5450,72 +5226,61 @@ msgstr ""
 "Одредишниот ресурс нема доволно место за да ја запише состојбата на ресурсот "
 "по извршувањето на овој метод."
 
-#: ../kioslave/http/http.cpp:1677
+#: ../kioslave/http/http.cpp:1674
 #, kde-format
 msgctxt "request type"
 msgid "upload %1"
 msgstr "качи %1"
 
-#: ../kioslave/http/http.cpp:1686
+#: ../kioslave/http/http.cpp:1685
 #, kde-format
 msgctxt "%1: response code, %2: request type"
 msgid "An unexpected error (%1) occurred while attempting to %2."
 msgstr "Се случи неочекувана грешка (%1) при обидот за %2."
 
-#: ../kioslave/http/http.cpp:2528
+#: ../kioslave/http/http.cpp:2426
 #, kde-format
 msgid "%1 contacted. Waiting for reply..."
 msgstr "Контакт со %1. Чекам одговор..."
 
-#: ../kioslave/http/http.cpp:2918
+#: ../kioslave/http/http.cpp:2804
 msgid "Server processing request, please wait..."
 msgstr "Серверот го обработува барањето, почекајте..."
 
-#: ../kioslave/http/http.cpp:3776
+#: ../kioslave/http/http.cpp:3325
+msgid "Authentication Failed."
+msgstr "Проверката за автентичност не успеа."
+
+#: ../kioslave/http/http.cpp:3326 ../kioslave/http/http.cpp:4878
+msgid "Proxy Authentication Failed."
+msgstr "Проверката за автентичност на прокси не успеа."
+
+#: ../kioslave/http/http.cpp:3698
 msgid "Requesting data to send"
 msgstr "Барам податоци за испраќање"
 
-#: ../kioslave/http/http.cpp:3813
+#: ../kioslave/http/http.cpp:3730
 #, kde-format
 msgid "Sending data to %1"
 msgstr "Праќам податоци на %1"
 
-#: ../kioslave/http/http.cpp:4222
+#: ../kioslave/http/http.cpp:4137
 #, kde-format
 msgid "Retrieving %1 from %2..."
 msgstr "Преземам %1 од %2..."
 
-#: ../kioslave/http/http.cpp:4231
+#: ../kioslave/http/http.cpp:4143
 #, kde-format
 msgid "Retrieving from %1..."
 msgstr "Преземам од %1..."
 
-#: ../kioslave/http/http.cpp:5027 ../kioslave/http/http.cpp:5173
-msgid "Authentication Failed."
-msgstr "Проверката за автентичност не успеа."
-
-#: ../kioslave/http/http.cpp:5030 ../kioslave/http/http.cpp:5176
-#: ../kioslave/http/http.cpp:5990
-msgid "Proxy Authentication Failed."
-msgstr "Проверката за автентичност на прокси не успеа."
-
-#: ../kioslave/http/http.cpp:5035
-#, fuzzy
-#| msgid "  Do you want to retry?"
-msgid "  Do you want to retry?"
-msgstr "  Дали ќе се обидете повторно?"
-
-#: ../kioslave/http/http.cpp:5036
-msgid "Authentication"
-msgstr "Проверка за автентичност"
-
-#: ../kioslave/http/http.cpp:5056 ../kioslave/http/http.cpp:5073
-#: ../kioslave/http/http.cpp:5989
+#: ../kioslave/http/http.cpp:4811 ../kioslave/http/http.cpp:4827
+#: ../kioslave/http/http.cpp:4877
 #, kde-format
 msgid "<b>%1</b> at <b>%2</b>"
 msgstr "<b>%1</b> на <b>%2</b>"
 
-#: ../kioslave/http/http.cpp:5063 ../kioslave/http/http.cpp:5984
+#: ../kioslave/http/http.cpp:4818 ../kioslave/http/http.cpp:4872
 msgid ""
 "You need to supply a username and a password for the proxy server listed "
 "below before you are allowed to access any sites."
@@ -5523,22 +5288,9 @@ msgstr ""
 "Треба да наведете корисничко име и лозинка за долунаведениот прокси-сервер "
 "пред да ви биде дозволен пристап кон која било локација."
 
-#: ../kioslave/http/http.cpp:5072 ../kioslave/http/http.cpp:5988
+#: ../kioslave/http/http.cpp:4826 ../kioslave/http/http.cpp:4876
 msgid "Proxy:"
 msgstr "Прокси:"
-
-#: ../kioslave/http/http.cpp:5093
-#, kde-format
-msgid "Authentication needed for %1 but authentication is disabled."
-msgstr ""
-"Потребна е проверка за автентичност за %1, но проверката е оневозможена."
-
-#: ../kioslave/http/http.cpp:5708
-msgid ""
-"Unsupported method: authentication will fail. Please submit a bug report."
-msgstr ""
-"Неподдржан метод: проверката за автентичност нема да успее. Ве молиме "
-"приложете извештај за бубачка."
 
 #: ../kioslave/http/http_cache_cleaner.cpp:199
 #: ../kioslave/http/http_cache_cleaner.cpp:200
@@ -5725,43 +5477,49 @@ msgstr "kio_metainfo"
 msgid "No metainfo for %1"
 msgstr "Нема метаподатоци за %1"
 
-#: ../kfile/kfileplacesview.cpp:422
+#: ../kfile/kfileplacesview.cpp:558
 msgctxt "@action:inmenu"
 msgid "Empty Trash"
 msgstr "Испразни ја корпата"
 
-#: ../kfile/kfileplacesview.cpp:428
+#: ../kfile/kfileplacesview.cpp:564
 #, kde-format
 msgid "&Edit '%1'..."
 msgstr "&Уреди „%1“..."
 
-#: ../kfile/kfileplacesview.cpp:431
+#: ../kfile/kfileplacesview.cpp:583
 #, kde-format
 msgid "&Hide '%1'"
 msgstr "С&криј „%1“"
 
-#: ../kfile/kfileplacesview.cpp:438
+#: ../kfile/kfileplacesview.cpp:592
 msgid "&Show All Entries"
 msgstr "Пр&икажи ги сите елементи"
 
-#: ../kfile/kfileplacesview.cpp:448
+#: ../kfile/kfileplacesview.cpp:601
 #, kde-format
 msgid "&Remove '%1'"
 msgstr "Отст&рани „%1“"
 
-#: ../kfile/kfileplacesview.cpp:464
+#: ../kfile/kfileplacesview.cpp:610
 msgctxt "@info"
 msgid "Do you really want to empty the Trash? All items will be deleted."
 msgstr ""
 "Дали навистина сакате да ја испразните корпата? Ќе бидат избришани сите "
 "елементи."
 
-#: ../kfile/kfileplacesview.cpp:468
+#: ../kfile/kfileplacesview.cpp:614
 msgctxt "@action:button"
 msgid "Empty Trash"
 msgstr "Испразни корпа"
 
-#: ../kfile/kfilefiltercombo.cpp:36 ../kfile/kfilewidget.cpp:1616
+#: ../kfile/kfileplacesview.cpp:664
+#, fuzzy
+#| msgid "Description"
+msgid "Enter a description"
+msgstr "Опис"
+
+#: ../kfile/kfilefiltercombo.cpp:36 ../kfile/kfilewidget.cpp:1724
 msgid "*|All Files"
 msgstr "*|Сите датотеки"
 
@@ -5769,7 +5527,7 @@ msgstr "*|Сите датотеки"
 msgid "All Supported Files"
 msgstr "Сите поддржани датотеки"
 
-#: ../kfile/kfilewidget.cpp:228
+#: ../kfile/kfilewidget.cpp:284
 #, fuzzy
 #| msgid ""
 #| "<qt>While typing in the text area, you may be presented with possible "
@@ -5779,19 +5537,20 @@ msgstr "Сите поддржани датотеки"
 msgid ""
 "<qt>While typing in the text area, you may be presented with possible "
 "matches. This feature can be controlled by clicking with the right mouse "
-"button and selecting a preferred mode from the <b>Text Completion</b> menu."
+"button and selecting a preferred mode from the <b>Text Completion</b> menu.</"
+"qt>"
 msgstr ""
 "<p>Додека пишувате во текстуалното поле, може да ви бидат прикажани можните "
 "совпаѓања. Оваа можност се контролира со кликање со десното копче од "
 "глушецот и избирање на претпочитан режим од менито <b>Довршување на текст</"
 "b>."
 
-#: ../kfile/kfilewidget.cpp:295
+#: ../kfile/kfilewidget.cpp:348
 #, kde-format
 msgid "Drive: %1"
 msgstr "Уред: %1"
 
-#: ../kfile/kfilewidget.cpp:367
+#: ../kfile/kfilewidget.cpp:402
 #, kde-format
 msgid ""
 "<qt>Click this button to enter the parent folder.<br /><br />For instance, "
@@ -5802,40 +5561,40 @@ msgstr ""
 "пример, ако е активната локација file:/home/%1, кликањето на ова копче ќе ве "
 "одведе на file:/home.</qt>"
 
-#: ../kfile/kfilewidget.cpp:372
+#: ../kfile/kfilewidget.cpp:406
 msgid "Click this button to move backwards one step in the browsing history."
 msgstr ""
 "Кликнете на ова копче за да се придвижите еден чекор назад во историјата на "
 "прелистувањето."
 
-#: ../kfile/kfilewidget.cpp:374
+#: ../kfile/kfilewidget.cpp:407
 msgid "Click this button to move forward one step in the browsing history."
 msgstr ""
 "Кликнете на ова копче за да се придвижите еден чекор напред во историјата на "
 "прелистувањето."
 
-#: ../kfile/kfilewidget.cpp:377
+#: ../kfile/kfilewidget.cpp:409
 msgid "Click this button to reload the contents of the current location."
 msgstr ""
 "Кликнете на ова копче за да ја превчитате содржината на тековната локација."
 
-#: ../kfile/kfilewidget.cpp:380
+#: ../kfile/kfilewidget.cpp:411
 msgid "Click this button to create a new folder."
 msgstr "Кликнете на ова копче за да создадете нова папка."
 
-#: ../kfile/kfilewidget.cpp:383
+#: ../kfile/kfilewidget.cpp:417
 msgid "Show Places Navigation Panel"
 msgstr "Прикажи панел со навигација за места"
 
-#: ../kfile/kfilewidget.cpp:390
+#: ../kfile/kfilewidget.cpp:424
 msgid "Show Bookmarks"
 msgstr "Прикажи обележувачи"
 
-#: ../kfile/kfilewidget.cpp:395
+#: ../kfile/kfilewidget.cpp:429
 msgid "Options"
 msgstr "Опции"
 
-#: ../kfile/kfilewidget.cpp:397
+#: ../kfile/kfilewidget.cpp:431
 msgid ""
 "<qt>This is the preferences menu for the file dialog. Various options can be "
 "accessed from this menu including: <ul><li>how files are sorted in the list</"
@@ -5850,11 +5609,15 @@ msgstr ""
 "li><li>прегледи на датотеки</li><li>одделување на папките од датотеките</"
 "li></ul></qt>"
 
-#: ../kfile/kfilewidget.cpp:441 ../kfile/kfileplaceeditdialog.cpp:116
-msgid "&Location:"
-msgstr "&Локација:"
+#: ../kfile/kfilewidget.cpp:468
+msgid "Zoom out"
+msgstr ""
 
 #: ../kfile/kfilewidget.cpp:470
+msgid "Zoom in"
+msgstr ""
+
+#: ../kfile/kfilewidget.cpp:536
 msgid ""
 "<qt>This is the filter to apply to the file list. File names that do not "
 "match the filter will not be shown.<p>You may select from one of the preset "
@@ -5867,38 +5630,70 @@ msgstr ""
 "директно во текстуалното поле.</p><p>Дозволени се џокер-знаци како што се * "
 "и ?.</p></qt>"
 
-#: ../kfile/kfilewidget.cpp:476
+#: ../kfile/kfilewidget.cpp:542
 msgid "&Filter:"
 msgstr "&Филтер:"
 
-#: ../kfile/kfilewidget.cpp:695 ../kfile/kfilewidget.cpp:737
-#: ../kfile/kfilewidget.cpp:1553
-msgid "You can only select local files."
+#: ../kfile/kfilewidget.cpp:744
+#, fuzzy
+#| msgid "You can only select local files."
+msgid "You can only select one file"
 msgstr "Може да избирате само локални датотеки."
 
-#: ../kfile/kfilewidget.cpp:696 ../kfile/kfilewidget.cpp:738
-#: ../kfile/kfilewidget.cpp:1554
-msgid "Remote Files Not Accepted"
+#: ../kfile/kfilewidget.cpp:745
+msgid "More than one file provided"
+msgstr ""
+
+#: ../kfile/kfilewidget.cpp:867
+#, fuzzy
+#| msgid "You can only select local files."
+msgid "You can only select local files"
+msgstr "Може да избирате само локални датотеки."
+
+#: ../kfile/kfilewidget.cpp:868
+#, fuzzy
+#| msgid "Remote Files Not Accepted"
+msgid "Remote files not accepted"
 msgstr "Далечински датотеки не се прифаќаат"
 
-#: ../kfile/kfilewidget.cpp:728
-#, kde-format
+#: ../kfile/kfilewidget.cpp:910
 msgid ""
-"%1\n"
-"does not appear to be a valid URL.\n"
+"More than one folder has been selected and this dialog does not accept "
+"folders, so it is not possible to decide in which one enter. Please select "
+"only one folder to list it"
 msgstr ""
-"%1\n"
-"не изгледа како валиден URL.\n"
 
-#: ../kfile/kfilewidget.cpp:728
-msgid "Invalid URL"
-msgstr "Невалиден URL"
+#: ../kfile/kfilewidget.cpp:910
+msgid "More than one folder provided"
+msgstr ""
 
-#: ../kfile/kfilewidget.cpp:1163
+#: ../kfile/kfilewidget.cpp:918
+msgid ""
+"At least one folder and one file has been selected. Selected files will be "
+"ignored and the selected folder will be listed"
+msgstr ""
+
+#: ../kfile/kfilewidget.cpp:918
+#, fuzzy
+#| msgid "%1 is a file, but a folder was expected."
+msgid "Files and folders selected"
+msgstr "%1 е датотека, а се очекуваше папка."
+
+#: ../kfile/kfilewidget.cpp:933
+#, fuzzy, kde-format
+#| msgid "The requested lock could not be granted. %1"
+msgid "The file %1 could not be found"
+msgstr "Бараното заклучување не беше дозволено. %1"
+
+#: ../kfile/kfilewidget.cpp:933
+msgid "Cannot open file"
+msgstr ""
+
+#: ../kfile/kfilewidget.cpp:1190
 msgid "This is the name to save the file as."
 msgstr "Ова е името под кое ќе се зачува датотеката."
 
-#: ../kfile/kfilewidget.cpp:1168
+#: ../kfile/kfilewidget.cpp:1195
 msgid ""
 "This is the list of files to open. More than one file can be specified by "
 "listing several files, separated by spaces."
@@ -5906,11 +5701,22 @@ msgstr ""
 "Ова е листа на датотеки за отворање. Може да се наведе повеќе од една "
 "датотека со наведување на повеќе датотеки, одделени со празни места."
 
-#: ../kfile/kfilewidget.cpp:1175
+#: ../kfile/kfilewidget.cpp:1202
 msgid "This is the name of the file to open."
 msgstr "Ова е името на датотеката за отворање."
 
-#: ../kfile/kfilewidget.cpp:1485
+#: ../kfile/kfilewidget.cpp:1402
+#, kde-format
+msgid "The file \"%1\" already exists. Do you wish to overwrite it?"
+msgstr ""
+
+#: ../kfile/kfilewidget.cpp:1403
+#, fuzzy
+#| msgid "O&verwrite All"
+msgid "Overwrite File?"
+msgstr "Пре&бриши ги сите"
+
+#: ../kfile/kfilewidget.cpp:1533
 msgid ""
 "The chosen filenames do not\n"
 "appear to be valid."
@@ -5918,50 +5724,55 @@ msgstr ""
 "Избраните имиња на датотеки\n"
 "изгледаат како да се невалидни."
 
-#: ../kfile/kfilewidget.cpp:1487
+#: ../kfile/kfilewidget.cpp:1535
 msgid "Invalid Filenames"
 msgstr "Невалидни имиња на датотеки"
 
-#: ../kfile/kfilewidget.cpp:1516
-#, kde-format
-msgid ""
-"The requested filenames\n"
-"%1\n"
-"do not appear to be valid;\n"
-"make sure every filename is enclosed in double quotes."
-msgstr ""
-"Избраните имиња на датотеки\n"
-"%1\n"
-"изгледаат како да се невалидни.\n"
-"Осигурете се дека е во наводници секое име на датотека."
+#: ../kfile/kfilewidget.cpp:1615
+msgid "You can only select local files."
+msgstr "Може да избирате само локални датотеки."
 
-#: ../kfile/kfilewidget.cpp:1520
-msgid "Filename Error"
-msgstr "Грешка во името на датотеката"
+#: ../kfile/kfilewidget.cpp:1616
+msgid "Remote Files Not Accepted"
+msgstr "Далечински датотеки не се прифаќаат"
 
-#: ../kfile/kfilewidget.cpp:1613
+#: ../kfile/kfilewidget.cpp:1721
 msgid "*|All Folders"
 msgstr "*|Сите папки"
 
-#: ../kfile/kfilewidget.cpp:1900
+#: ../kfile/kfilewidget.cpp:1888
+msgid "&Open"
+msgstr "&Отвори"
+
+#: ../kfile/kfilewidget.cpp:1969
+#, kde-format
+msgid "Icon size: %1 pixels (standard size)"
+msgstr ""
+
+#: ../kfile/kfilewidget.cpp:1972
+#, kde-format
+msgid "Icon size: %1 pixels"
+msgstr ""
+
+#: ../kfile/kfilewidget.cpp:2107
 #, kde-format
 msgid "Automatically select filename e&xtension (%1)"
 msgstr "Автоматски избор на &наставката на името (%1)"
 
-#: ../kfile/kfilewidget.cpp:1901
+#: ../kfile/kfilewidget.cpp:2108
 #, kde-format
 msgid "the extension <b>%1</b>"
 msgstr "наставката <b>%1</b>"
 
-#: ../kfile/kfilewidget.cpp:1909
+#: ../kfile/kfilewidget.cpp:2116
 msgid "Automatically select filename e&xtension"
 msgstr "Автоматски избор на &наставката на името"
 
-#: ../kfile/kfilewidget.cpp:1910
+#: ../kfile/kfilewidget.cpp:2117
 msgid "a suitable extension"
 msgstr "соодветна наставка"
 
-#: ../kfile/kfilewidget.cpp:1920
+#: ../kfile/kfilewidget.cpp:2127
 #, kde-format
 msgid ""
 "This option enables some convenient features for saving files with "
@@ -5989,7 +5800,7 @@ msgstr ""
 "сигурни, оставете ја оваа опција активна бидејќи така може полесно да "
 "управувате со вашите датотеки."
 
-#: ../kfile/kfilewidget.cpp:2223
+#: ../kfile/kfilewidget.cpp:2419
 msgid ""
 "<qt>This button allows you to bookmark specific locations. Click on this "
 "button to open the bookmark menu where you may add, edit or select a "
@@ -6019,41 +5830,54 @@ msgstr "Корен"
 msgid "Trash"
 msgstr "Корпа"
 
-#: ../kfile/kfileplacesmodel.cpp:687
-#, kde-format
-msgid "&Eject '%1'"
-msgstr "&Извади „%1“"
+#: ../kfile/kfileplacesmodel.cpp:692
+#, fuzzy, kde-format
+#| msgid "&Remove '%1'"
+msgid "&Release '%1'"
+msgstr "Отст&рани „%1“"
 
-#: ../kfile/kfileplacesmodel.cpp:689
+#: ../kfile/kfileplacesmodel.cpp:694
 #, kde-format
 msgid "&Safely Remove '%1'"
 msgstr "&Безбедно извади „%1“"
 
-#: ../kfile/kfileplacesmodel.cpp:691
+#: ../kfile/kfileplacesmodel.cpp:697
 #, kde-format
 msgid "&Unmount '%1'"
 msgstr "&Одмонтирај „%1“"
 
-#: ../kfile/kfileplacesmodel.cpp:752
+#: ../kfile/kfileplacesmodel.cpp:718
+#, kde-format
+msgid "&Eject '%1'"
+msgstr "&Извади „%1“"
+
+#: ../kfile/kfileplacesmodel.cpp:751
+#, kde-format
+msgid "The device '%1' is not a disc and can't be ejected."
+msgstr ""
+
+#: ../kfile/kfileplacesmodel.cpp:787
 #, kde-format
 msgid "An error occurred while accessing '%1', the system responded: %2"
 msgstr "Се случи грешка при пристапувањето на „%1“, системот одговори: %2"
 
-#: ../kfile/kfileplacesmodel.cpp:756
+#: ../kfile/kfileplacesmodel.cpp:791
 #, kde-format
 msgid "An error occurred while accessing '%1'"
 msgstr "Се случи грешка при пристапувањето на „%1“"
 
-#: ../kfile/kurlnavigator.cpp:645
+#: ../kfile/kurlnavigator.cpp:582
 msgid "Custom Path"
 msgstr "Сопствена патека"
 
-#: ../kfile/kdirselectdialog.cpp:115 ../kfile/kdiroperator.cpp:642
-#: ../kfile/kdiroperator.cpp:650
+#: ../kfile/kdirselectdialog.cpp:116
+#, fuzzy
+#| msgid "New Folder"
+msgctxt "folder name"
 msgid "New Folder"
 msgstr "Нова папка"
 
-#: ../kfile/kdirselectdialog.cpp:120
+#: ../kfile/kdirselectdialog.cpp:121
 #, kde-format
 msgctxt "@label:textbox"
 msgid ""
@@ -6063,26 +5887,26 @@ msgstr ""
 "Креирање нова папка во:\n"
 "%1"
 
-#: ../kfile/kdirselectdialog.cpp:143 ../kfile/kdiroperator.cpp:677
+#: ../kfile/kdirselectdialog.cpp:144 ../kfile/kdiroperator.cpp:769
 #, kde-format
 msgid "A file or folder named %1 already exists."
 msgstr "Веќе постои датотека или папка со име %1."
 
-#: ../kfile/kdirselectdialog.cpp:147 ../kfile/kdiroperator.cpp:680
+#: ../kfile/kdirselectdialog.cpp:148 ../kfile/kdiroperator.cpp:772
 msgid "You do not have permission to create that folder."
 msgstr "Немате дозволи за создавање на таа папка."
 
-#: ../kfile/kdirselectdialog.cpp:227
+#: ../kfile/kdirselectdialog.cpp:228
 msgctxt "@action:button"
 msgid "New Folder..."
 msgstr "Нова папка..."
 
-#: ../kfile/kdirselectdialog.cpp:265
+#: ../kfile/kdirselectdialog.cpp:268
 msgctxt "@action:inmenu"
 msgid "New Folder..."
 msgstr "Нова папка..."
 
-#: ../kfile/kdirselectdialog.cpp:272
+#: ../kfile/kdirselectdialog.cpp:275
 msgctxt "@option:check"
 msgid "Show Hidden Folders"
 msgstr "Покажи скриени папки"
@@ -6114,6 +5938,10 @@ msgstr ""
 "kde.org/pub/kde/stable<br /><br />Со кликање на копчето до текстуалното поле "
 "може да разгледате за соодветен URL.</qt>"
 
+#: ../kfile/kfileplaceeditdialog.cpp:116
+msgid "&Location:"
+msgstr "&Локација:"
+
 #: ../kfile/kfileplaceeditdialog.cpp:125
 msgid ""
 "<qt>This is the icon that will appear in the Places panel.<br /><br />Click "
@@ -6142,11 +5970,15 @@ msgstr ""
 "кога се користи активната апликација (%1).<br /><br />Ако ова не е избрано, "
 "елементот ќе биде достапен за сите апликации.</qt>"
 
-#: ../kfile/kfiletreeview.cpp:184
+#: ../kfile/kfiletreeview.cpp:185
 msgid "Show Hidden Folders"
 msgstr "Покажи скриени папки"
 
-#: ../kfile/kdiroperator.cpp:651
+#: ../kfile/kdiroperator.cpp:734 ../kfile/kdiroperator.cpp:742
+msgid "New Folder"
+msgstr "Нова папка"
+
+#: ../kfile/kdiroperator.cpp:743
 #, kde-format
 msgid ""
 "Create new folder in:\n"
@@ -6155,15 +5987,15 @@ msgstr ""
 "Создај нова папка во:\n"
 "%1"
 
-#: ../kfile/kdiroperator.cpp:695
+#: ../kfile/kdiroperator.cpp:787
 msgid "You did not select a file to delete."
 msgstr "Не избравте датотека за бришење."
 
-#: ../kfile/kdiroperator.cpp:696
+#: ../kfile/kdiroperator.cpp:788
 msgid "Nothing to Delete"
 msgstr "Нема ништо за бришење"
 
-#: ../kfile/kdiroperator.cpp:717
+#: ../kfile/kdiroperator.cpp:809
 #, kde-format
 msgid ""
 "<qt>Do you really want to delete\n"
@@ -6172,19 +6004,19 @@ msgstr ""
 "<qt>Дали навистина сакате да го избришете\n"
 "<b>„%1“</b>?</qt>"
 
-#: ../kfile/kdiroperator.cpp:719
+#: ../kfile/kdiroperator.cpp:811
 msgid "Delete File"
 msgstr "Бришење датотека"
 
-#: ../kfile/kdiroperator.cpp:757
+#: ../kfile/kdiroperator.cpp:849
 msgid "You did not select a file to trash."
 msgstr "Не избравте датотека за во корпа."
 
-#: ../kfile/kdiroperator.cpp:758
+#: ../kfile/kdiroperator.cpp:850
 msgid "Nothing to Trash"
 msgstr "Нема ништо за во корпа"
 
-#: ../kfile/kdiroperator.cpp:775
+#: ../kfile/kdiroperator.cpp:867
 #, kde-format
 msgid ""
 "<qt>Do you really want to trash\n"
@@ -6193,16 +6025,16 @@ msgstr ""
 "<qt>Дали навистина сакате да го фрлите\n"
 "<b>„%1“</b> во корпата?</qt>"
 
-#: ../kfile/kdiroperator.cpp:777
+#: ../kfile/kdiroperator.cpp:869
 msgid "Trash File"
 msgstr "Фрли ја датотеката"
 
-#: ../kfile/kdiroperator.cpp:778 ../kfile/kdiroperator.cpp:785
+#: ../kfile/kdiroperator.cpp:870 ../kfile/kdiroperator.cpp:877
 msgctxt "to trash"
 msgid "&Trash"
 msgstr "Фрли ја датотеката"
 
-#: ../kfile/kdiroperator.cpp:782
+#: ../kfile/kdiroperator.cpp:874
 #, kde-format
 msgid "translators: not called for n == 1"
 msgid_plural "Do you really want to trash these %1 items?"
@@ -6210,79 +6042,109 @@ msgstr[0] "Дали навистина сакате да го фрлите ов�
 msgstr[1] "Дали навистина сакате да ги фрлите овие %1 елементи?"
 msgstr[2] "Дали навистина сакате да ги фрлите овие %1 елементи?"
 
-#: ../kfile/kdiroperator.cpp:784
+#: ../kfile/kdiroperator.cpp:876
 msgid "Trash Files"
 msgstr "Фрли ги датотеките"
 
-#: ../kfile/kdiroperator.cpp:913 ../kfile/kdiroperator.cpp:1032
+#: ../kfile/kdiroperator.cpp:1068 ../kfile/kdiroperator.cpp:1187
 msgid "The specified folder does not exist or was not readable."
 msgstr "Зададената папка не постои или не може да се прочита."
 
-#: ../kfile/kdiroperator.cpp:1565
+#: ../kfile/kdiroperator.cpp:1825
 msgid "Menu"
 msgstr "Мени"
 
-#: ../kfile/kdiroperator.cpp:1569
+#: ../kfile/kdiroperator.cpp:1829
 msgid "Parent Folder"
 msgstr "Родителска папка"
 
-#: ../kfile/kdiroperator.cpp:1576
+#: ../kfile/kdiroperator.cpp:1836
 msgid "Home Folder"
 msgstr "Домашна папка"
 
-#: ../kfile/kdiroperator.cpp:1579
+#: ../kfile/kdiroperator.cpp:1839
 msgid "Reload"
 msgstr "Превчитај"
 
-#: ../kfile/kdiroperator.cpp:1582
+#: ../kfile/kdiroperator.cpp:1842
 msgid "New Folder..."
 msgstr "Нова папка..."
 
-#: ../kfile/kdiroperator.cpp:1593
+#: ../kfile/kdiroperator.cpp:1853
 msgid "Delete"
 msgstr "Избриши"
 
-#: ../kfile/kdiroperator.cpp:1600
+#: ../kfile/kdiroperator.cpp:1860
 msgid "Sorting"
 msgstr "Подредување"
 
-#: ../kfile/kdiroperator.cpp:1603
+#: ../kfile/kdiroperator.cpp:1863
 msgid "By Name"
 msgstr "Според името"
 
-#: ../kfile/kdiroperator.cpp:1607
+#: ../kfile/kdiroperator.cpp:1867
 msgid "By Size"
 msgstr "Според големината"
 
-#: ../kfile/kdiroperator.cpp:1611
+#: ../kfile/kdiroperator.cpp:1871
 msgid "By Date"
 msgstr "Според датумот"
 
-#: ../kfile/kdiroperator.cpp:1615
+#: ../kfile/kdiroperator.cpp:1875
 msgid "By Type"
 msgstr "Според тип"
 
-#: ../kfile/kdiroperator.cpp:1619
+#: ../kfile/kdiroperator.cpp:1879
 msgid "Descending"
 msgstr "Опаѓачки"
 
-#: ../kfile/kdiroperator.cpp:1629
+#: ../kfile/kdiroperator.cpp:1889
+msgid "Icon Position"
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:1892
+msgid "Next to File Name"
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:1896
+msgid "Above File Name"
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:1907
 msgid "Short View"
 msgstr "Краток преглед"
 
-#: ../kfile/kdiroperator.cpp:1634
+#: ../kfile/kdiroperator.cpp:1912
 msgid "Detailed View"
 msgstr "Детален преглед"
 
-#: ../kfile/kdiroperator.cpp:1643
+#: ../kfile/kdiroperator.cpp:1917
+#, fuzzy
+#| msgid "Detailed View"
+msgid "Tree View"
+msgstr "Детален преглед"
+
+#: ../kfile/kdiroperator.cpp:1922
+#, fuzzy
+#| msgid "Detailed View"
+msgid "Detailed Tree View"
+msgstr "Детален преглед"
+
+#: ../kfile/kdiroperator.cpp:1933
 msgid "Show Hidden Files"
 msgstr "Покажи скриени датотеки"
 
-#: ../kfile/kdiroperator.cpp:1647
+#: ../kfile/kdiroperator.cpp:1937
+#, fuzzy
+#| msgid "Show Preview"
+msgid "Show Aside Preview"
+msgstr "Покажи преглед"
+
+#: ../kfile/kdiroperator.cpp:1943
 msgid "Show Preview"
 msgstr "Покажи преглед"
 
-#: ../kfile/kdiroperator.cpp:1660
+#: ../kfile/kdiroperator.cpp:1954
 msgid "&View"
 msgstr "Пр&еглед"
 
@@ -6310,152 +6172,325 @@ msgstr "Уреди"
 msgid "Navigate"
 msgstr "Навигирај"
 
-#, fuzzy
-#~| msgid "Write"
-#~ msgctxt "Write files into an existing folder"
-#~ msgid "&Write Into"
-#~ msgstr "Запишување"
+#: ../kfile/kurlbutton.cpp:119
+msgid "Show Full Path"
+msgstr ""
 
 #, fuzzy
-#~| msgid "O&verwrite All"
-#~ msgctxt "Write files into any existing directory"
-#~ msgid "&Write Into All"
-#~ msgstr "Пре&бриши ги сите"
+#~| msgid "Sorting"
+#~ msgctxt "@title job"
+#~ msgid "Stating"
+#~ msgstr "Подредување"
 
-#, fuzzy
-#~| msgid "No Folders"
-#~ msgid "1 Folder"
-#~ msgid_plural "%1 Folders"
-#~ msgstr[0] "Нема папки"
-#~ msgstr[1] "Нема папки"
-#~ msgstr[2] "Нема папки"
+#~ msgid "One Item"
+#~ msgid_plural "%1 Items"
+#~ msgstr[0] "%1 елемент"
+#~ msgstr[1] "%1 елементи"
+#~ msgstr[2] "%1 елементи"
 
-#, fuzzy
-#~| msgid "1 file"
-#~| msgid_plural "%1 files"
-#~ msgid "1 File"
+#~ msgid "No Files"
+#~ msgstr "Нема датотеки"
+
+#~ msgid "One File"
 #~ msgid_plural "%1 Files"
 #~ msgstr[0] "%1 датотека"
 #~ msgstr[1] "%1 датотеки"
 #~ msgstr[2] "%1 датотеки"
 
 #, fuzzy
-#~| msgctxt "Items (Folders, Files)"
-#~| msgid "%1 (%2, %3)"
-#~ msgctxt "folders, files (size)"
-#~ msgid "%1, %2 (%3)"
-#~ msgstr "%1 (%2, %3)"
-
-#, fuzzy
-#~| msgid "%1 (%2)"
-#~ msgctxt "folders, files"
-#~ msgid "%1, %2"
-#~ msgstr "%1 (%2)"
-
-#, fuzzy
-#~| msgid "%1 (%2)"
-#~ msgctxt "files (size)"
-#~ msgid "%1 (%2)"
-#~ msgstr "%1 (%2)"
-
-#, fuzzy
-#~| msgctxt "Items in a folder"
-#~| msgid "1 item"
-#~| msgid_plural "%1 items"
-#~ msgid "1 Item"
-#~ msgid_plural "%1 Items"
-#~ msgstr[0] "%1 елемент"
-#~ msgstr[1] "%1 елементи"
-#~ msgstr[2] "%1 елементи"
-
-#, fuzzy
-#~| msgid "%1 (%2)"
-#~ msgctxt "items: folders, files (size)"
-#~ msgid "%1: %2"
-#~ msgstr "%1 (%2)"
-
-#, fuzzy
-#~| msgid "&Yes"
-#~ msgid "Yes"
-#~ msgstr "&Да"
-
-#, fuzzy
-#~| msgid "Device name"
-#~ msgid "Device usage:"
-#~ msgstr "Име на уред"
-
-#, fuzzy
-#~| msgctxt "Available space out of total partition size (percent used)"
-#~| msgid "%1 out of %2 (%3% used)"
-#~ msgctxt "Available space out of total partition size (percent used)"
-#~ msgid "%1 free of %2 (%3% used)"
-#~ msgstr "%1 од %2 (искористени се %3%)"
-
-#, fuzzy
-#~| msgid "The specified resource may not exist."
-#~ msgid "The resource cannot be deleted."
-#~ msgstr "Можно е да не постои зададениот ресурс."
-
-#, fuzzy
-#~| msgid "Description"
-#~ msgid "Enter a description"
-#~ msgstr "Опис"
-
-#, fuzzy
-#~| msgid "You can only select local files."
-#~ msgid "You can only select one file"
-#~ msgstr "Може да избирате само локални датотеки."
-
-#, fuzzy
-#~| msgid "You can only select local files."
-#~ msgid "You can only select local files"
-#~ msgstr "Може да избирате само локални датотеки."
-
-#, fuzzy
-#~| msgid "Remote Files Not Accepted"
-#~ msgid "Remote files not accepted"
-#~ msgstr "Далечински датотеки не се прифаќаат"
-
-#, fuzzy
-#~| msgid "%1 is a file, but a folder was expected."
-#~ msgid "Files and folders selected"
-#~ msgstr "%1 е датотека, а се очекуваше папка."
-
-#, fuzzy
-#~| msgid "The requested lock could not be granted. %1"
-#~ msgid "The file %1 could not be found"
-#~ msgstr "Бараното заклучување не беше дозволено. %1"
-
-#, fuzzy
-#~| msgid "O&verwrite All"
-#~ msgid "Overwrite File?"
-#~ msgstr "Пре&бриши ги сите"
-
-#, fuzzy
-#~| msgid "&Remove '%1'"
-#~ msgid "&Release '%1'"
-#~ msgstr "Отст&рани „%1“"
-
-#, fuzzy
 #~| msgid "New Folder"
-#~ msgctxt "folder name"
-#~ msgid "New Folder"
+#~ msgid "No Folders"
 #~ msgstr "Нова папка"
 
-#, fuzzy
-#~| msgid "Detailed View"
-#~ msgid "Tree View"
-#~ msgstr "Детален преглед"
+#~ msgid "One Folder"
+#~ msgid_plural "%1 Folders"
+#~ msgstr[0] "%1 папка"
+#~ msgstr[1] "%1 папки"
+#~ msgstr[2] "%1 папки"
+
+#~ msgid "(%1 Total)"
+#~ msgstr "(вкупно %1)"
+
+#~ msgctxt "Items (Folders, Files), Size"
+#~ msgid "%1 (%2, %3), %4"
+#~ msgstr "%1 (%2, %3), %4"
 
 #, fuzzy
-#~| msgid "Detailed View"
-#~ msgid "Detailed Tree View"
-#~ msgstr "Детален преглед"
+#~| msgctxt "Items (Folders, Files), Size"
+#~| msgid "%1 (%2, %3), %4"
+#~ msgctxt "Items (Folders, Files)"
+#~ msgid "%1 (%2, %3)"
+#~ msgstr "%1 (%2, %3), %4"
+
+#~ msgid "Locality:"
+#~ msgstr "Локалитет:"
+
+#~ msgctxt "Federal State"
+#~ msgid "State:"
+#~ msgstr "Држава:"
+
+#~ msgid "Email:"
+#~ msgstr "Е-пошта:"
+
+#~ msgid "KDE Wallet Service"
+#~ msgstr "Сервис за паричници во KDE "
+
+#~ msgid "(C) 2002-2008 George Staikos, Michael Leupold, Thiago Maceira"
+#~ msgstr "(C) 2002-2008 George Staikos, Michael Leupold, Thiago Maceira"
+
+#~ msgid ""
+#~ "<qt>KDE has requested to open the wallet '<b>%1</b>'. Please enter the "
+#~ "password for this wallet below.</qt>"
+#~ msgstr ""
+#~ "<qt>KDE побара да се отвори паричникот „<b>%1</b>“. Ве молиме внесете ја "
+#~ "подолу лозинката за овој паричник.</qt>"
+
+#~ msgid ""
+#~ "<qt>The application '<b>%1</b>' has requested to open the wallet '<b>%2</"
+#~ "b>'. Please enter the password for this wallet below.</qt>"
+#~ msgstr ""
+#~ "<qt>Апликацијата „<b>%1</b>“ побара да се отвори паричникот „<b>%2</b>“. "
+#~ "Ве молиме внесете ја подолу лозинката за овој паричник.</qt>"
+
+#~ msgid ""
+#~ "<qt>Error opening the wallet '<b>%1</b>'. Please try again.<br />(Error "
+#~ "code %2: %3)</qt>"
+#~ msgstr ""
+#~ "<qt>Грешка при отворањето на паричникот „<b>%1</b>“. Обидете се повторно."
+#~ "<br />(Код на грешка %2: %3)</qt>"
+
+#~ msgid ""
+#~ "KDE has requested to open the wallet. This is used to store sensitive "
+#~ "data in a secure fashion. Please enter a password to use with this wallet "
+#~ "or click cancel to deny the application's request."
+#~ msgstr ""
+#~ "KDE побара да се отвори паричникот. Ова се користи за да се чуваат "
+#~ "чувствителни податоци на сигурен начин. Ве молиме внесете лозинка која ќе "
+#~ "се користи со овој паричник или кликнете на Откажи за да го откажете "
+#~ "барањето на апликацијата."
+
+#~ msgid ""
+#~ "<qt>The application '<b>%1</b>' has requested to open the KDE wallet. "
+#~ "This is used to store sensitive data in a secure fashion. Please enter a "
+#~ "password to use with this wallet or click cancel to deny the "
+#~ "application's request.</qt>"
+#~ msgstr ""
+#~ "<qt>Апликацијата „<b>%1</b>“ побара да се отвори паричникот од KDE. Ова "
+#~ "се користи за да се чуваат чувствителни податоци на безбеден начин. Ве "
+#~ "молиме внесете лозинка која ќе се користи со овој паричник или кликнете "
+#~ "на Откажи за да го забраните барањето на апликацијата.</qt>"
+
+#~ msgid ""
+#~ "<qt>KDE has requested to create a new wallet named '<b>%1</b>'. Please "
+#~ "choose a password for this wallet, or cancel to deny the application's "
+#~ "request.</qt>"
+#~ msgstr ""
+#~ "<qt>KDE побара да создаде нов паричник именуван „<b>%1</b>“. Ве молиме "
+#~ "изберете лозинка за овој паричник или откажете за да го забраните "
+#~ "барањето на апликацијата.</qt>"
+
+#~ msgid ""
+#~ "<qt>The application '<b>%1</b>' has requested to create a new wallet "
+#~ "named '<b>%2</b>'. Please choose a password for this wallet, or cancel to "
+#~ "deny the application's request.</qt>"
+#~ msgstr ""
+#~ "<qt>Апликацијата „<b>%1</b>“ побара да создаде нов паричник именуван „<b>%"
+#~ "2</b>“. Ве молиме изберете лозинка за овој паричник или откажете за да го "
+#~ "забраните барањето на апликацијата.</qt>"
+
+#~ msgid "C&reate"
+#~ msgstr "&Креирај"
+
+#~ msgid "<qt>KDE has requested access to the open wallet '<b>%1</b>'.</qt>"
+#~ msgstr "<qt>KDE побара пристап до отворениот паричник „<b>%1</b>“.</qt>"
+
+#~ msgid ""
+#~ "<qt>The application '<b>%1</b>' has requested access to the open wallet "
+#~ "'<b>%2</b>'.</qt>"
+#~ msgstr ""
+#~ "<qt>Апликацијата „<b>%1</b>“ побара пристап до отворениот паричник „<b>%"
+#~ "2</b>“.</qt>"
+
+#~ msgid ""
+#~ "Unable to open wallet. The wallet must be opened in order to change the "
+#~ "password."
+#~ msgstr ""
+#~ "Не можам да го отворам паричникот. Паричникот мора да биде отворен за да "
+#~ "се смени лозинката."
+
+#~ msgid "<qt>Please choose a new password for the wallet '<b>%1</b>'.</qt>"
+#~ msgstr "<qt>Ве молиме изберете нова лозинка за паричникот „<b>%1</b>“.</qt>"
+
+#~ msgid "Error re-encrypting the wallet. Password was not changed."
+#~ msgstr ""
+#~ "Грешка при повторната крипција на паричникот. Лозинката не е сменета."
+
+#~ msgid "Error reopening the wallet. Data may be lost."
+#~ msgstr ""
+#~ "Грешка при повторното отворање на паричникот. Можно е да се загубени "
+#~ "податоци."
+
+#~ msgid ""
+#~ "There have been repeated failed attempts to gain access to a wallet. An "
+#~ "application may be misbehaving."
+#~ msgstr ""
+#~ "Имаше повеќе неуспешни обиди да се пристапи до паричникот. Можно е некоја "
+#~ "апликација да не се однесува коректно."
+
+#~ msgid "<qt>Password is empty.  <b>(WARNING: Insecure)</b></qt>"
+#~ msgstr "<qt>Лозинката е празна.  <b>(ПРЕДУПРЕДУВАЊЕ: Не е сигурно)</b></qt>"
+
+#~ msgid "Passwords match."
+#~ msgstr "Лозинките се совпаѓаат."
+
+#~ msgid "Passwords do not match."
+#~ msgstr "Лозинките не се совпаѓаат."
+
+#~ msgid "Free disk space:"
+#~ msgstr "Слободен простор на дискот:"
+
+#~ msgid "<u>KWallet</u> - The KDE Wallet System"
+#~ msgstr "<u>KWallet</u> - системот Паричник во KDE"
+
+#~ msgid ""
+#~ "Welcome to KWallet, the KDE Wallet System.  KWallet allows you to store "
+#~ "your passwords and other personal information on disk in an encrypted "
+#~ "file, preventing others from viewing the information.  This wizard will "
+#~ "tell you about KWallet and help you configure it for the first time."
+#~ msgstr ""
+#~ "Добредојдовте во KWallet, системот Паричник во KDE. KWallet ви овозможува "
+#~ "да ги чувате вашите лозинки и останатите лични информации на диск, во "
+#~ "криптирана датотека, спречувајќи ги другите да ги гледаат истите. Овој "
+#~ "волшебник ќе ве воведе во KWallet и ќе ви помогне да го конфигурирате по "
+#~ "прв пат."
+
+#~ msgid "&Basic setup (recommended)"
+#~ msgstr "&Основен начин (препорачано)"
+
+#~ msgid "&Advanced setup"
+#~ msgstr "&Напреден начин"
+
+#~ msgid ""
+#~ "Various applications may attempt to use the KDE wallet to store passwords "
+#~ "or other information such as web form data and cookies.  If you would "
+#~ "like these applications to use the wallet, you must enable it now and "
+#~ "choose a password.  The password you choose <i>cannot</i> be recovered if "
+#~ "it is lost, and will allow anyone who knows it to obtain all the "
+#~ "information contained in the wallet."
+#~ msgstr ""
+#~ "Разни апликации може да се обидат да го користат паричникот на KDE за да "
+#~ "зачуваат лозинки или други информации како што се податоци од "
+#~ "вебформуларите и од колачињата. Ако сакате да имаат пристап тие апликации "
+#~ "до паричникот, тоа мора да го овозможите сега и да изберете лозинка. "
+#~ "Лозинката што ќе ја изберете <i>не може</i> да се врати ако е изгубена и "
+#~ "таа ќе му дозволи на секој што ја знае да ги добие сите информации "
+#~ "содржани во паричникот."
+
+#~ msgid "Yes, I wish to use the KDE wallet to store my personal information."
+#~ msgstr ""
+#~ "Да, сакам да го користам паричникот на KDE за да ги чувам моите лични "
+#~ "информации."
+
+#~ msgid "Enter a new password:"
+#~ msgstr "Внесете нова лозинка:"
+
+#~ msgid "Verify password:"
+#~ msgstr "Потврдете ја лозинката:"
+
+#~ msgid ""
+#~ "The KDE Wallet system stores your data in a <i>wallet</i> file on your "
+#~ "local hard disk.  The data is only written in encrypted form, presently "
+#~ "using the blowfish algorithm with your password as the key.  When a "
+#~ "wallet is opened, the wallet manager application will launch and display "
+#~ "an icon in the system tray.  You can use this application to manage your "
+#~ "wallets.  It even permits you to drag wallets and wallet contents, "
+#~ "allowing you to easily copy a wallet to a remote system."
+#~ msgstr ""
+#~ "Системот Паричник во KDE ги чува вашите податоци во датотека <i>паричник</"
+#~ "i> на вашиот локален тврд диск. Податоците се само запишани во криптирана "
+#~ "форма, моментално со алгоритмот blowfish, со вашата лозинка како клуч. "
+#~ "Кога ќе се отвори паричник, се отвора апликацијата менаџер на паричникот "
+#~ "и прикажува икона во системската лента. Оваа апликација може да ја "
+#~ "користите за да управувате со вашите паричници. Таа дури дозволува да "
+#~ "влечете паричници, како и нивната содржина, така што лесно може да "
+#~ "пренесете паричник на оддалечен систем."
+
+#~ msgid ""
+#~ "The KDE Wallet system allows you to control the level of security of your "
+#~ "personal data.  Some of these settings do impact usability.  While the "
+#~ "default settings are generally acceptable for most users, you may wish to "
+#~ "change some of them.  You may further tune these settings from the "
+#~ "KWallet control module."
+#~ msgstr ""
+#~ "Системот Паричник во KDE ви дозволува да го контролирате нивото на "
+#~ "безбедност на вашите лични податоци. Некои од овие поставувања имаат "
+#~ "влијание врз употребливоста. Додека почетните поставувања се "
+#~ "општоприфатливи за повеќето корисници, можеби ќе сакате да смените некои "
+#~ "од нив. Овие поставувања може понатаму да ги менувате од контролниот "
+#~ "модул на KWallet."
+
+#~ msgid "Automatically close idle wallets"
+#~ msgstr "Затвори ги некористените паричници автоматски"
+
+#~ msgid "Store network passwords and local passwords in separate wallet files"
+#~ msgstr "Чувај ги мрежните и локалните лозинки во посебни паричници"
+
+#~ msgid "Allow &Once"
+#~ msgstr "Дозволи &еднаш"
+
+#~ msgid "Allow &Always"
+#~ msgstr "Дозволи &секогаш"
+
+#~ msgid "&Deny"
+#~ msgstr "&Одбиј"
+
+#~ msgid "Deny &Forever"
+#~ msgstr "Одбиј за&секогаш"
+
+#~ msgid "Add a bookmark for the current document"
+#~ msgstr "Додај обележувач за тековниот документ"
 
 #, fuzzy
-#~| msgid "Show Preview"
-#~ msgid "Show Aside Preview"
-#~ msgstr "Покажи преглед"
+#~| msgid "  Do you want to retry?"
+#~ msgid "  Do you want to retry?"
+#~ msgstr "  Дали ќе се обидете повторно?"
+
+#~ msgid "Authentication"
+#~ msgstr "Проверка за автентичност"
+
+#~ msgid "Authentication needed for %1 but authentication is disabled."
+#~ msgstr ""
+#~ "Потребна е проверка за автентичност за %1, но проверката е оневозможена."
+
+#~ msgid ""
+#~ "Unsupported method: authentication will fail. Please submit a bug report."
+#~ msgstr ""
+#~ "Неподдржан метод: проверката за автентичност нема да успее. Ве молиме "
+#~ "приложете извештај за бубачка."
+
+#~ msgid ""
+#~ "%1\n"
+#~ "does not appear to be a valid URL.\n"
+#~ msgstr ""
+#~ "%1\n"
+#~ "не изгледа како валиден URL.\n"
+
+#~ msgid "Invalid URL"
+#~ msgstr "Невалиден URL"
+
+#~ msgid ""
+#~ "The requested filenames\n"
+#~ "%1\n"
+#~ "do not appear to be valid;\n"
+#~ "make sure every filename is enclosed in double quotes."
+#~ msgstr ""
+#~ "Избраните имиња на датотеки\n"
+#~ "%1\n"
+#~ "изгледаат како да се невалидни.\n"
+#~ "Осигурете се дека е во наводници секое име на датотека."
+
+#~ msgid "Filename Error"
+#~ msgstr "Грешка во името на датотеката"
 
 #, fuzzy
 #~| msgid "Icon Source"
