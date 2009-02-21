@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwalletd\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-18 08:59+0100\n"
+"POT-Creation-Date: 2009-02-21 10:18+0100\n"
 "PO-Revision-Date: 2008-12-23 21:55+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -18,9 +18,9 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: main.cpp:38 main.cpp:39 kwalletd.cpp:356 kwalletd.cpp:445 kwalletd.cpp:506
-#: kwalletd.cpp:581 kwalletd.cpp:672 kwalletd.cpp:684 kwalletd.cpp:693
-#: kwalletd.cpp:698 kwalletd.cpp:1208
+#: main.cpp:38 main.cpp:39 kwalletd.cpp:356 kwalletd.cpp:445 kwalletd.cpp:508
+#: kwalletd.cpp:583 kwalletd.cpp:674 kwalletd.cpp:686 kwalletd.cpp:695
+#: kwalletd.cpp:700 kwalletd.cpp:1210
 msgid "KDE Wallet Service"
 msgstr "Сервис за паричници во KDE"
 
@@ -76,7 +76,12 @@ msgstr ""
 msgid "&Open"
 msgstr "&Отвори"
 
-#: kwalletd.cpp:455
+#: kwalletd.cpp:454
+msgctxt "Text of a button to ignore the open-wallet notification"
+msgid "Ignore"
+msgstr ""
+
+#: kwalletd.cpp:456
 #, fuzzy, kde-format
 #| msgid "<qt>KDE has requested access to the open wallet '<b>%1</b>'.</qt>"
 msgid "<b>KDE</b> has requested to open a wallet (%1)."
@@ -99,14 +104,14 @@ msgstr ""
 "<qt>Апликацијата „<b>%1</b>“ побара пристап до отворениот паричник „<b>%2</"
 "b>“.</qt>"
 
-#: kwalletd.cpp:465
+#: kwalletd.cpp:464
 #, kde-format
 msgctxt ""
-"Text of a button for switching to the application requesting a password."
+"Text of a button for switching to the application requesting a password"
 msgid "Switch to %1"
 msgstr ""
 
-#: kwalletd.cpp:477 kwalletd.cpp:515
+#: kwalletd.cpp:479 kwalletd.cpp:517
 #, kde-format
 msgid ""
 "<qt>Error opening the wallet '<b>%1</b>'. Please try again.<br />(Error code "
@@ -115,7 +120,7 @@ msgstr ""
 "<qt>Грешка при отворањето на паричникот „<b>%1</b>“. Обидете се повторно."
 "<br />(Код на грешка %2: %3)</qt>"
 
-#: kwalletd.cpp:494
+#: kwalletd.cpp:496
 msgid ""
 "KDE has requested to open the wallet. This is used to store sensitive data "
 "in a secure fashion. Please enter a password to use with this wallet or "
@@ -126,7 +131,7 @@ msgstr ""
 "користи со овој паричник или кликнете на Откажи за да го откажете барањето "
 "на апликацијата."
 
-#: kwalletd.cpp:496
+#: kwalletd.cpp:498
 #, kde-format
 msgid ""
 "<qt>The application '<b>%1</b>' has requested to open the KDE wallet. This "
@@ -139,7 +144,7 @@ msgstr ""
 "лозинка што ќе се користи со овој паричник или кликнете на „Откажи“ за да го "
 "забраните барањето на апликацијата.</qt>"
 
-#: kwalletd.cpp:500
+#: kwalletd.cpp:502
 #, kde-format
 msgid ""
 "<qt>KDE has requested to create a new wallet named '<b>%1</b>'. Please "
@@ -150,7 +155,7 @@ msgstr ""
 "лозинка за овој паричник или откажете за да го забраните барањето на "
 "апликацијата.</qt>"
 
-#: kwalletd.cpp:502
+#: kwalletd.cpp:504
 #, kde-format
 msgid ""
 "<qt>The application '<b>%1</b>' has requested to create a new wallet named "
@@ -161,16 +166,16 @@ msgstr ""
 "b>“. Изберете лозинка за овој паричник или откажете за да го забраните "
 "барањето на апликацијата.</qt>"
 
-#: kwalletd.cpp:507
+#: kwalletd.cpp:509
 msgid "C&reate"
 msgstr "&Создај"
 
-#: kwalletd.cpp:583
+#: kwalletd.cpp:585
 #, kde-format
 msgid "<qt>KDE has requested access to the open wallet '<b>%1</b>'.</qt>"
 msgstr "<qt>KDE побара пристап до отворениот паричник „<b>%1</b>“.</qt>"
 
-#: kwalletd.cpp:585
+#: kwalletd.cpp:587
 #, kde-format
 msgid ""
 "<qt>The application '<b>%1</b>' has requested access to the open wallet '<b>%"
@@ -179,7 +184,7 @@ msgstr ""
 "<qt>Апликацијата „<b>%1</b>“ побара пристап до отворениот паричник „<b>%2</"
 "b>“.</qt>"
 
-#: kwalletd.cpp:672
+#: kwalletd.cpp:674
 msgid ""
 "Unable to open wallet. The wallet must be opened in order to change the "
 "password."
@@ -187,23 +192,23 @@ msgstr ""
 "Не можам да го отворам паричникот. Паричникот мора да биде отворен за да се "
 "смени лозинката."
 
-#: kwalletd.cpp:683
+#: kwalletd.cpp:685
 #, kde-format
 msgid "<qt>Please choose a new password for the wallet '<b>%1</b>'.</qt>"
 msgstr "<qt>Изберете нова лозинка за паричникот „<b>%1</b>“.</qt>"
 
-#: kwalletd.cpp:693
+#: kwalletd.cpp:695
 msgid "Error re-encrypting the wallet. Password was not changed."
 msgstr ""
 "Грешка при повторното криптирање на паричникот. Лозинката не беше сменета."
 
-#: kwalletd.cpp:698
+#: kwalletd.cpp:700
 msgid "Error reopening the wallet. Data may be lost."
 msgstr ""
 "Грешка при повторното отворање на паричникот. Можно е да се загубени "
 "податоци."
 
-#: kwalletd.cpp:1208
+#: kwalletd.cpp:1210
 msgid ""
 "There have been repeated failed attempts to gain access to a wallet. An "
 "application may be misbehaving."
