@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kurifilter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-06 11:06+0100\n"
+"POT-Creation-Date: 2009-02-24 10:59+0100\n"
 "PO-Revision-Date: 2007-11-27 00:22+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -19,7 +19,19 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: ikwsopts.cpp:96
+#: ikwsopts.cpp:45
+msgid "Name"
+msgstr "Име"
+
+#: ikwsopts.cpp:46
+msgid "Shortcuts"
+msgstr "Кратенки"
+
+#: ikwsopts.cpp:175
+msgid "None"
+msgstr "Нема"
+
+#: ikwsopts.cpp:234
 msgid ""
 "<p>In this module you can configure the web shortcuts feature. Web shortcuts "
 "allow you to quickly search or lookup words on the Internet. For example, to "
@@ -42,7 +54,7 @@ msgstr ""
 msgid "Search F&ilters"
 msgstr "&Филтри за пребарување"
 
-#. i18n: file: ikwsopts_ui.ui:18
+#. i18n: file: ikwsopts_ui.ui:19
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEnableShortcuts)
 #: rc.cpp:3
 #, fuzzy
@@ -66,79 +78,53 @@ msgstr ""
 "Google(TM).\n"
 "</qt>"
 
-#. i18n: file: ikwsopts_ui.ui:21
+#. i18n: file: ikwsopts_ui.ui:22
 #. i18n: ectx: property (text), widget (QCheckBox, cbEnableShortcuts)
 #: rc.cpp:8
 msgid "&Enable Web shortcuts"
 msgstr "Овозможи &Веб кратенки"
 
-#. i18n: file: ikwsopts_ui.ui:30
-#. i18n: ectx: property (whatsThis), widget (QTreeWidget, lvSearchProviders)
-#: rc.cpp:11
-#, fuzzy
-#| msgid ""
-#| "List of search providers, their associated shortcuts and whether they "
-#| "shall be listed in menus."
-msgid ""
-"List of search providers, their associated shortcuts and whether they should "
-"be listed in menus."
-msgstr ""
-"Листа на сервисите за пребарување, кратенките поврзани со нив и дали тие ќе "
-"бидаат прикажани во менијата."
-
-#. i18n: file: ikwsopts_ui.ui:37
-#. i18n: ectx: property (text), widget (QTreeWidget, lvSearchProviders)
-#: rc.cpp:14
-msgid "Name"
-msgstr "Име"
-
-#. i18n: file: ikwsopts_ui.ui:42
-#. i18n: ectx: property (text), widget (QTreeWidget, lvSearchProviders)
-#: rc.cpp:17
-msgid "Shortcuts"
-msgstr "Кратенки"
-
-#. i18n: file: ikwsopts_ui.ui:52
+#. i18n: file: ikwsopts_ui.ui:65
 #. i18n: ectx: property (whatsThis), widget (QPushButton, pbNew)
-#: rc.cpp:20
+#: rc.cpp:11
 msgid "Add a search provider."
 msgstr "Додава сервис за пребарување."
 
-#. i18n: file: ikwsopts_ui.ui:55
+#. i18n: file: ikwsopts_ui.ui:68
 #. i18n: ectx: property (text), widget (QPushButton, pbNew)
-#: rc.cpp:23
+#: rc.cpp:14
 msgid "&New..."
 msgstr "&Новa..."
 
-#. i18n: file: ikwsopts_ui.ui:65
+#. i18n: file: ikwsopts_ui.ui:78
 #. i18n: ectx: property (whatsThis), widget (QPushButton, pbChange)
-#: rc.cpp:26
+#: rc.cpp:17
 msgid "Modify a search provider."
 msgstr "Го менува сервисот за пребарување."
 
-#. i18n: file: ikwsopts_ui.ui:68
+#. i18n: file: ikwsopts_ui.ui:81
 #. i18n: ectx: property (text), widget (QPushButton, pbChange)
-#: rc.cpp:29
+#: rc.cpp:20
 msgid "Chan&ge..."
 msgstr "Пром&ени..."
 
-#. i18n: file: ikwsopts_ui.ui:78
+#. i18n: file: ikwsopts_ui.ui:91
 #. i18n: ectx: property (whatsThis), widget (QPushButton, pbDelete)
-#: rc.cpp:32
+#: rc.cpp:23
 msgid "Delete the selected search provider."
 msgstr "Го брише избраниот сервис за пребарување."
 
-#. i18n: file: ikwsopts_ui.ui:81
+#. i18n: file: ikwsopts_ui.ui:94
 #. i18n: ectx: property (text), widget (QPushButton, pbDelete)
-#: rc.cpp:35
+#: rc.cpp:26
 msgid "De&lete"
 msgstr "И&збриши"
 
-#. i18n: file: ikwsopts_ui.ui:121
+#. i18n: file: ikwsopts_ui.ui:134
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbDefaultEngine)
-#. i18n: file: ikwsopts_ui.ui:151
+#. i18n: file: ikwsopts_ui.ui:164
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbDefaultEngine)
-#: rc.cpp:38 rc.cpp:46
+#: rc.cpp:29 rc.cpp:37
 msgid ""
 "<qt>\n"
 "Select the search engine to use for input boxes that provide automatic "
@@ -153,23 +139,17 @@ msgstr ""
 "од листата.\n"
 "</qt>"
 
-#. i18n: file: ikwsopts_ui.ui:124
+#. i18n: file: ikwsopts_ui.ui:137
 #. i18n: ectx: property (text), widget (QLabel, lbDefaultEngine)
-#: rc.cpp:43
+#: rc.cpp:34
 msgid "Default &search engine:"
 msgstr "Почетна &машина за пребарување:"
 
-#. i18n: file: ikwsopts_ui.ui:158
-#. i18n: ectx: property (text), item, widget (KComboBox, cmbDefaultEngine)
-#: rc.cpp:51
-msgid "None"
-msgstr "Нема"
-
-#. i18n: file: ikwsopts_ui.ui:172
+#. i18n: file: ikwsopts_ui.ui:180
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbDelimiter)
-#. i18n: file: ikwsopts_ui.ui:194
+#. i18n: file: ikwsopts_ui.ui:202
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbDelimiter)
-#: rc.cpp:54 rc.cpp:60
+#: rc.cpp:42 rc.cpp:48
 msgid ""
 "Choose the delimiter that separates the keyword from the phrase or word to "
 "be searched."
@@ -177,21 +157,21 @@ msgstr ""
 "Изберете го знакот кој го одвојува клучниот збор од фразата или зборот што "
 "треба да се пребарува."
 
-#. i18n: file: ikwsopts_ui.ui:175
+#. i18n: file: ikwsopts_ui.ui:183
 #. i18n: ectx: property (text), widget (QLabel, lbDelimiter)
-#: rc.cpp:57
+#: rc.cpp:45
 msgid "&Keyword delimiter:"
 msgstr "&Разграничувач на клучни зборови:"
 
-#. i18n: file: ikwsopts_ui.ui:198
+#. i18n: file: ikwsopts_ui.ui:206
 #. i18n: ectx: property (text), item, widget (KComboBox, cmbDelimiter)
-#: rc.cpp:63
+#: rc.cpp:51
 msgid "Colon"
 msgstr "Две точки"
 
-#. i18n: file: ikwsopts_ui.ui:203
+#. i18n: file: ikwsopts_ui.ui:211
 #. i18n: ectx: property (text), item, widget (KComboBox, cmbDelimiter)
-#: rc.cpp:66
+#: rc.cpp:54
 msgid "Space"
 msgstr "празно место"
 
@@ -201,7 +181,7 @@ msgstr "празно место"
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, leName)
 #. i18n: file: searchproviderdlg_ui.ui:64
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbName)
-#: rc.cpp:69 rc.cpp:72 rc.cpp:90
+#: rc.cpp:57 rc.cpp:60 rc.cpp:78
 #, fuzzy
 #| msgid "Enter the human readable name of the search provider here."
 msgid "Enter the human-readable name of the search provider here."
@@ -209,7 +189,7 @@ msgstr "Внесете го тука читливото име на сервис
 
 #. i18n: file: searchproviderdlg_ui.ui:29
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbCharset)
-#: rc.cpp:75
+#: rc.cpp:63
 msgid "Select the character set that will be used to encode your search query"
 msgstr ""
 "Изберете го множеството знаци кое ќе се користи за да се кодира вашето "
@@ -217,7 +197,7 @@ msgstr ""
 
 #. i18n: file: searchproviderdlg_ui.ui:32
 #. i18n: ectx: property (text), widget (QLabel, lbCharset)
-#: rc.cpp:78
+#: rc.cpp:66
 msgid "&Charset:"
 msgstr "&Множ. знаци:"
 
@@ -227,7 +207,7 @@ msgstr "&Множ. знаци:"
 #. i18n: ectx: property (toolTip), widget (KLineEdit, leQuery)
 #. i18n: file: searchproviderdlg_ui.ui:124
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, leQuery)
-#: rc.cpp:81 rc.cpp:114 rc.cpp:120
+#: rc.cpp:69 rc.cpp:102 rc.cpp:108
 #, fuzzy
 #| msgid ""
 #| "<qt>\n"
@@ -278,13 +258,13 @@ msgstr ""
 
 #. i18n: file: searchproviderdlg_ui.ui:51
 #. i18n: ectx: property (text), widget (QLabel, lbQuery)
-#: rc.cpp:87
+#: rc.cpp:75
 msgid "Search &URI:"
 msgstr "&URI за барање:"
 
 #. i18n: file: searchproviderdlg_ui.ui:67
 #. i18n: ectx: property (text), widget (QLabel, lbName)
-#: rc.cpp:93
+#: rc.cpp:81
 msgid "Search &provider name:"
 msgstr "Име на сервис за &пребарување:"
 
@@ -294,7 +274,7 @@ msgstr "Име на сервис за &пребарување:"
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, leShortcut)
 #. i18n: file: searchproviderdlg_ui.ui:99
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbShortcut)
-#: rc.cpp:96 rc.cpp:101 rc.cpp:106
+#: rc.cpp:84 rc.cpp:89 rc.cpp:94
 msgid ""
 "<qt>\n"
 "The shortcuts entered here can be used as a pseudo-URI scheme in KDE. For "
@@ -310,13 +290,13 @@ msgstr ""
 
 #. i18n: file: searchproviderdlg_ui.ui:102
 #. i18n: ectx: property (text), widget (QLabel, lbShortcut)
-#: rc.cpp:111
+#: rc.cpp:99
 msgid "UR&I shortcuts:"
 msgstr "UR&I кратенки:"
 
 #. i18n: file: searchproviderdlg_ui.ui:134
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cbCharset)
-#: rc.cpp:126
+#: rc.cpp:114
 msgid "Select the character set that will be used to encode your search query."
 msgstr ""
 "Изберете го множеството знаци кое ќе се користи за да се кодира вашето "
@@ -347,3 +327,14 @@ msgstr ""
 #: searchproviderdlg.cpp:84
 msgid "Keep It"
 msgstr "Задржи го"
+
+#, fuzzy
+#~| msgid ""
+#~| "List of search providers, their associated shortcuts and whether they "
+#~| "shall be listed in menus."
+#~ msgid ""
+#~ "List of search providers, their associated shortcuts and whether they "
+#~ "should be listed in menus."
+#~ msgstr ""
+#~ "Листа на сервисите за пребарување, кратенките поврзани со нив и дали тие "
+#~ "ќе бидаат прикажани во менијата."
