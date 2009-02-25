@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-23 09:46+0100\n"
+"POT-Creation-Date: 2009-02-25 11:42+0100\n"
 "PO-Revision-Date: 2007-02-26 22:26+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -312,7 +312,7 @@ msgstr[0] "<qt><b>Внесен е %1 клуч:</b><br></qt>"
 msgstr[1] "<qt><b>Внесени се %1 клучеви:</b><br></qt>"
 msgstr[2] "<qt><b>Внесени се %1 клучеви:</b><br></qt>"
 
-#: keyservers.cpp:192 kgpginterface.cpp:1246
+#: keyservers.cpp:192 kgpginterface.cpp:1247
 msgid ""
 "No key imported... \n"
 "Check detailed log for more infos"
@@ -347,14 +347,16 @@ msgstr "Пронајдени се %1 клучеви што се совпаѓаа
 msgid "You must choose a key."
 msgstr "Мора да изберете клуч."
 
-#: keyservers.cpp:508
+#: keyservers.cpp:509
 #, kde-format
-msgid "ID %1, %2 bit %3 key, created %4 revoked"
+msgctxt "example: ID abc123xy, 1024-bit RSA key, created Jan 12 2009, revoked"
+msgid "ID %1, %2-bit %3 key, created %4, revoked"
 msgstr ""
 
-#: keyservers.cpp:514
+#: keyservers.cpp:516
 #, kde-format
-msgid "ID %1, %2 bit %3 key, created %4"
+msgctxt "example: ID abc123xy, 1024-bit RSA key, created Jan 12 2009"
+msgid "ID %1, %2-bit %3 key, created %4"
 msgstr ""
 
 #: keysmanager.cpp:107
@@ -820,7 +822,7 @@ msgstr "Изнесете ПРИВАТЕН КЛУЧ како"
 #| "Your PRIVATE key \"%1\" was successfully exported.\n"
 #| "DO NOT leave it in an insecure place."
 msgid ""
-"<qt>Your <b>private</b> key \"%1\" was successfully exported to<br/>%2 .<br/"
+"<qt>Your <b>private</b> key \"%1\" was successfully exported to<br/>%2.<br/"
 "><b>Do not</b> leave it in an insecure place.</qt>"
 msgstr ""
 "Вашиот ПРИВАТЕН КЛУЧ „%1“ беше успешно изнесен.\n"
@@ -1212,12 +1214,12 @@ msgstr ""
 
 #. i18n: file: keyserver.ui:32
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: keytreeview.cpp:148 kgpgtextinterface.cpp:625 rc.cpp:292
+#: keytreeview.cpp:148 kgpgtextinterface.cpp:626 rc.cpp:292
 #, fuzzy
 msgid "Import"
 msgstr "&Внеси"
 
-#: keytreeview.cpp:149 kgpgtextinterface.cpp:625
+#: keytreeview.cpp:149 kgpgtextinterface.cpp:626
 msgid "Do Not Import"
 msgstr "Не внесувај"
 
@@ -1579,15 +1581,18 @@ msgstr " или "
 #: kgpginterface.cpp:1010 kgpgtextinterface.cpp:114
 #, fuzzy, kde-format
 #| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
-msgid "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
-msgstr "<b>Лоша тајна фраза</b>. Ви преостануваат уште %1 обиди.<br>"
+msgid "<p><b>Bad passphrase</b>. You have 1 try left.</p>"
+msgid_plural "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
+msgstr[0] "<b>Лоша тајна фраза</b>. Ви преостануваат уште %1 обиди.<br>"
+msgstr[1] "<b>Лоша тајна фраза</b>. Ви преостануваат уште %1 обиди.<br>"
+msgstr[2] "<b>Лоша тајна фраза</b>. Ви преостануваат уште %1 обиди.<br>"
 
-#: kgpginterface.cpp:1011 kgpgtextinterface.cpp:118
+#: kgpginterface.cpp:1012 kgpgtextinterface.cpp:119
 #, kde-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "Внесете ја тајната фраза за <b>%1</b>"
 
-#: kgpginterface.cpp:1052
+#: kgpginterface.cpp:1053
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Signing key <b>%1</b> with key <b>%2</b> failed.<br>Do you want to "
@@ -1599,7 +1604,7 @@ msgstr ""
 "<qt>Потпишувањето на клучот <b>%1</b> со клучот <b>%2</b> не успеа.<br>Дали "
 "сакате да се обидете да го потпишете клучот во конзолен режим?</qt>"
 
-#: kgpginterface.cpp:1205
+#: kgpginterface.cpp:1206
 #, fuzzy, kde-format
 #| msgid "<qt>%1 key processed.<br></qt>"
 #| msgid_plural "<qt>%1 keys processed.<br></qt>"
@@ -1609,7 +1614,7 @@ msgstr[0] "<qt>Обработен е %1 клуч.<br></qt>"
 msgstr[1] "<qt>Обработени се %1 клучеви.<br></qt>"
 msgstr[2] "<qt>Обработени се %1 клучеви.<br></qt>"
 
-#: kgpginterface.cpp:1208
+#: kgpginterface.cpp:1209
 #, fuzzy, kde-format
 #| msgid "<qt>One key without ID.<br></qt>"
 #| msgid_plural "<qt>%1 keys without ID.<br></qt>"
@@ -1619,7 +1624,7 @@ msgstr[0] "<qt>%1 клуч без ид.<br></qt>"
 msgstr[1] "<qt>%1 клучеви без ид.<br></qt>"
 msgstr[2] "<qt>%1 клучеви без ид.<br></qt>"
 
-#: kgpginterface.cpp:1210
+#: kgpginterface.cpp:1211
 #, fuzzy, kde-format
 #| msgid "<qt><b>One key imported:</b><br></qt>"
 #| msgid_plural "<qt><b>%1 keys imported:</b><br></qt>"
@@ -1629,7 +1634,7 @@ msgstr[0] "<qt><b>Внесен е %1 клуч:</b><br></qt>"
 msgstr[1] "<qt><b>Внесени се %1 клучеви:</b><br></qt>"
 msgstr[2] "<qt><b>Внесени се %1 клучеви:</b><br></qt>"
 
-#: kgpginterface.cpp:1212
+#: kgpginterface.cpp:1213
 #, fuzzy, kde-format
 #| msgid "<qt>One RSA key imported.<br></qt>"
 #| msgid_plural "<qt>%1 RSA keys imported.<br></qt>"
@@ -1639,7 +1644,7 @@ msgstr[0] "<qt>Внесен е %1 RSA-клуч.<br></qt>"
 msgstr[1] "<qt>Внесени се %1 RSA-клучеви.<br></qt>"
 msgstr[2] "<qt>Внесени се %1 RSA-клучеви.<br></qt>"
 
-#: kgpginterface.cpp:1214
+#: kgpginterface.cpp:1215
 #, fuzzy, kde-format
 #| msgid "<qt>One key unchanged.<br></qt>"
 #| msgid_plural "<qt>%1 keys unchanged.<br></qt>"
@@ -1649,7 +1654,7 @@ msgstr[0] "<qt>%1 клуч не е изменет.<br></qt>"
 msgstr[1] "<qt>%1 клучеви не се изменети.<br></qt>"
 msgstr[2] "<qt>%1 клучеви не се изменети.<br></qt>"
 
-#: kgpginterface.cpp:1216
+#: kgpginterface.cpp:1217
 #, fuzzy, kde-format
 #| msgid "<qt>One user ID imported.<br></qt>"
 #| msgid_plural "<qt>%1 user IDs imported.<br></qt>"
@@ -1659,7 +1664,7 @@ msgstr[0] "<qt>Внесен е %1 кориснички ид.<br></qt>"
 msgstr[1] "<qt>Внесени се %1 кориснички ид.<br></qt>"
 msgstr[2] "<qt>Внесени се %1 кориснички ид.<br></qt>"
 
-#: kgpginterface.cpp:1218
+#: kgpginterface.cpp:1219
 #, fuzzy, kde-format
 #| msgid "<qt>One subkey imported.<br></qt>"
 #| msgid_plural "<qt>%1 subkeys imported.<br></qt>"
@@ -1669,7 +1674,7 @@ msgstr[0] "<qt>Внесен е %1 подклуч<br></qt>"
 msgstr[1] "<qt>Внесени се %1 подклучеви.<br></qt>"
 msgstr[2] "<qt>Внесени се %1 подклучеви.<br></qt>"
 
-#: kgpginterface.cpp:1220
+#: kgpginterface.cpp:1221
 #, fuzzy, kde-format
 #| msgid "<qt>One signature imported.<br></qt>"
 #| msgid_plural "<qt>%1 signatures imported.<br></qt>"
@@ -1679,7 +1684,7 @@ msgstr[0] "<qt>%1 потпис е внесен.<br></qt>"
 msgstr[1] "<qt>%1 потписи се внесени.<br></qt>"
 msgstr[2] "<qt>%1 потписи се внесени.<br></qt>"
 
-#: kgpginterface.cpp:1223
+#: kgpginterface.cpp:1224
 #, fuzzy, kde-format
 #| msgid "<qt>One revocation certificate imported.<br></qt>"
 #| msgid_plural "<qt>%1 revocation certificates imported.<br></qt>"
@@ -1689,7 +1694,7 @@ msgstr[0] "<qt>Внесен е %1 сертификат за отповикува
 msgstr[1] "<qt>Внесени се %1 сертификати за отповикување.<br></qt>"
 msgstr[2] "<qt>Внесени се %1 сертификати за отповикување.<br></qt>"
 
-#: kgpginterface.cpp:1229
+#: kgpginterface.cpp:1230
 #, fuzzy, kde-format
 #| msgid "<qt>One secret key processed.<br></qt>"
 #| msgid_plural "<qt>%1 secret keys processed.<br></qt>"
@@ -1699,7 +1704,7 @@ msgstr[0] "<qt>Обработен е %1 таен клуч.<br></qt>"
 msgstr[1] "<qt>Обработени се %1 тајни клучеви.<br></qt>"
 msgstr[2] "<qt>Обработени се %1 тајни клучеви.<br></qt>"
 
-#: kgpginterface.cpp:1233
+#: kgpginterface.cpp:1234
 #, fuzzy, kde-format
 #| msgid "<qt><b>One secret key imported.</b><br></qt>"
 #| msgid_plural "<qt><b>%1 secret keys imported.</b><br></qt>"
@@ -1709,7 +1714,7 @@ msgstr[0] "<qt><b>Внесен е %1 таен клуч.</b><br></qt>"
 msgstr[1] "<qt><b>Внесени се %1 тајни клучеви.</b><br></qt>"
 msgstr[2] "<qt><b>Внесени се %1 тајни клучеви.</b><br></qt>"
 
-#: kgpginterface.cpp:1235
+#: kgpginterface.cpp:1236
 #, fuzzy, kde-format
 #| msgid "<qt>One secret key unchanged.<br></qt>"
 #| msgid_plural "<qt>%1 secret keys unchanged.<br></qt>"
@@ -1719,7 +1724,7 @@ msgstr[0] "<qt>%1 таен клуч не е изменет.<br></qt>"
 msgstr[1] "<qt>%1 тајни клучеви не се изменети.<br></qt>"
 msgstr[2] "<qt>%1 тајни клучеви не се изменети.<br></qt>"
 
-#: kgpginterface.cpp:1237
+#: kgpginterface.cpp:1238
 #, fuzzy, kde-format
 #| msgid "<qt>One secret key not imported.<br></qt>"
 #| msgid_plural "<qt>%1 secret keys not imported.<br></qt>"
@@ -1729,7 +1734,7 @@ msgstr[0] "<qt>%1 таен клуч не е внесен.<br></qt>"
 msgstr[1] "<qt>%1 тајни клучеви не се внесени.<br></qt>"
 msgstr[2] "<qt>%1 тајни клучеви не се внесени.<br></qt>"
 
-#: kgpginterface.cpp:1240
+#: kgpginterface.cpp:1241
 #, fuzzy
 #| msgid ""
 #| "<qt><br><b>You have imported a secret key.</b> <br>Please note that "
@@ -1748,11 +1753,11 @@ msgstr ""
 "клучот (кликнете двапати на него) и да ја поставите неговата доверливост на "
 "Целосно или Крајно.</qt>"
 
-#: kgpginterface.cpp:1491
+#: kgpginterface.cpp:1492
 msgid "Creation of the revocation certificate failed..."
 msgstr "Создавањето на сертификатот за отповикување не успеа..."
 
-#: kgpginterface.cpp:1522
+#: kgpginterface.cpp:1523
 #, fuzzy, kde-format
 #| msgid "<qt>%1 Enter passphrase for <b>%2</b>:</qt>"
 msgid "<qt>Enter passphrase for <b>%1</b>:</qt>"
@@ -1842,13 +1847,17 @@ msgstr ""
 msgid "&Algorithm:"
 msgstr "Алгоритам:"
 
-#: kgpgkeygenerate.cpp:99
+#: kgpgkeygenerate.cpp:99 core/convert.cpp:39
 #, fuzzy
 #| msgid "ElGamal"
+msgctxt "Encryption algorithm"
 msgid "DSA & ElGamal"
 msgstr "ElGamal"
 
-#: kgpgkeygenerate.cpp:100
+#: kgpgkeygenerate.cpp:100 core/convert.cpp:36
+#, fuzzy
+#| msgid "RSA"
+msgctxt "Encryption algorithm"
 msgid "RSA"
 msgstr "RSA"
 
@@ -2048,28 +2057,28 @@ msgstr "[Не е најден кориснични ид.]"
 msgid "<p><b>No user id found</b>. Trying all secret keys.</p>"
 msgstr "<b>Не е најден кориснични ид.</b>. Ги пробувам сите тајни клучеви.<br>"
 
-#: kgpgtextinterface.cpp:116
+#: kgpgtextinterface.cpp:117
 #, fuzzy
 #| msgid "Bad passphrase"
 msgid "Enter passphrase"
 msgstr "Лоша тајна фраза"
 
-#: kgpgtextinterface.cpp:308
+#: kgpgtextinterface.cpp:309
 msgid "Bad MDC detected. The encrypted text has been manipulated."
 msgstr "Откриен е лош MDC. Имало манипулација со криптираниот текст."
 
-#: kgpgtextinterface.cpp:399 kgpgtextinterface.cpp:592
-#: kgpgtextinterface.cpp:619
+#: kgpgtextinterface.cpp:400 kgpgtextinterface.cpp:593
+#: kgpgtextinterface.cpp:620
 msgid "No signature found."
 msgstr "Не е пронајден потпис."
 
-#: kgpgtextinterface.cpp:595
+#: kgpgtextinterface.cpp:596
 #, fuzzy, kde-format
 #| msgid "<qt>Good signature from:<br><b>%1</b><br>Key ID: %2</qt>"
 msgid "<qt>Good signature from:<br /><b>%1</b><br />Key ID: %2<br /></qt>"
 msgstr "<qt>Добар потпис од:<br><b>%1</b><br>Ид. на клуч: %2</qt>"
 
-#: kgpgtextinterface.cpp:600
+#: kgpgtextinterface.cpp:601
 #, fuzzy, kde-format
 msgid ""
 "<qt><b>BAD signature</b> from:<br /> %1<br />Key id: %2<br /><br /><b>The "
@@ -2078,20 +2087,20 @@ msgstr ""
 "<qt><b>ЛОШ потпис</b> од:<br> %1<br>Ид. на клуч: %2<br><br><b>Датотеката е "
 "расипана!</b></qt>"
 
-#: kgpgtextinterface.cpp:607
+#: kgpgtextinterface.cpp:608
 #, fuzzy
 #| msgid "The signature is valid, but the key is untrusted"
 msgid "<qt>The signature is valid, but the key is untrusted<br /></qt>"
 msgstr "Потписот е валиден но клучот не е доверлив"
 
-#: kgpgtextinterface.cpp:609
+#: kgpgtextinterface.cpp:610
 #, fuzzy
 #| msgid "The signature is valid, and the key is ultimately trusted"
 msgid ""
 "<qt>The signature is valid, and the key is ultimately trusted<br /></qt>"
 msgstr "Потписот е валиден и клучот е крајно доверлив"
 
-#: kgpgtextinterface.cpp:624 editor/kgpgview.cpp:397
+#: kgpgtextinterface.cpp:625 editor/kgpgview.cpp:397
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -3873,13 +3882,6 @@ msgid ""
 "work.</p>\n"
 msgstr ""
 
-#: core/convert.cpp:36
-#, fuzzy
-#| msgid "RSA"
-msgctxt "Encryption algorithm"
-msgid "RSA"
-msgstr "RSA"
-
 #: core/convert.cpp:37
 #, fuzzy
 #| msgid "DSA"
@@ -3892,13 +3894,6 @@ msgstr "DSA"
 #| msgid "ElGamal"
 msgctxt "Encryption algorithm"
 msgid "ElGamal"
-msgstr "ElGamal"
-
-#: core/convert.cpp:39
-#, fuzzy
-#| msgid "ElGamal"
-msgctxt "Encryption algorithm"
-msgid "DSA - ElGamal"
 msgstr "ElGamal"
 
 #: core/convert.cpp:41
@@ -4264,6 +4259,15 @@ msgid_plural "%1 keys"
 msgstr[0] "Подклуч %1"
 msgstr[1] "Подклуч %1"
 msgstr[2] "Подклуч %1"
+
+#~ msgid "RSA"
+#~ msgstr "RSA"
+
+#, fuzzy
+#~| msgid "ElGamal"
+#~ msgctxt "Encryption algorithm"
+#~ msgid "DSA - ElGamal"
+#~ msgstr "ElGamal"
 
 #~ msgid "Filter Search"
 #~ msgstr "Филтер за барањето"
