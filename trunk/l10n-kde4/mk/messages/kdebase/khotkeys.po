@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-27 10:50+0100\n"
+"POT-Creation-Date: 2009-03-01 10:33+0100\n"
 "PO-Revision-Date: 2008-12-23 21:24+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -81,7 +81,7 @@ msgstr "Обичен прозорец: "
 #. i18n: ectx: property (title), widget (QGroupBox, window_group)
 #. i18n: file: kcm_hotkeys/actions/keyboard_input_action_widget.ui:22
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:23 rc.cpp:182
+#: rc.cpp:23 rc.cpp:188
 msgid "Window"
 msgstr ""
 
@@ -93,7 +93,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, edit_button)
 #. i18n: file: kcm_hotkeys/kcm_hotkeys.ui:29
 #. i18n: ectx: property (text), widget (QPushButton, menu_button)
-#: rc.cpp:26 rc.cpp:203
+#: rc.cpp:26 rc.cpp:209
 msgid "Edit"
 msgstr ""
 
@@ -111,7 +111,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, comment_label)
 #. i18n: file: kcm_hotkeys/hotkeys_widget_base.ui:23
 #. i18n: ectx: attribute (title), widget (QWidget, comment_tab)
-#: rc.cpp:32 rc.cpp:209 kcm_hotkeys/hotkeys_context_menu.cpp:244
+#: rc.cpp:32 rc.cpp:215 kcm_hotkeys/hotkeys_context_menu.cpp:244
 #: kcm_hotkeys/hotkeys_context_menu.cpp:272
 #: kcm_hotkeys/hotkeys_context_menu.cpp:300 kcm_hotkeys/hotkeys_model.cpp:91
 msgid "Comment"
@@ -370,51 +370,63 @@ msgstr "Го стартува даемонот khotkeys при најавува�
 msgid "Gestures"
 msgstr ""
 
-#. i18n: file: kcm_hotkeys/global_settings_widget.ui:60
-#. i18n: ectx: property (text), widget (QCheckBox, gestures_enabled)
+#. i18n: file: kcm_hotkeys/global_settings_widget.ui:63
+#. i18n: ectx: property (text), widget (QLabel, gestures_timeout_label)
 #: rc.cpp:161
-msgid "Enable Gestures"
+msgid "Timeout"
+msgstr ""
+
+#. i18n: file: kcm_hotkeys/global_settings_widget.ui:76
+#. i18n: ectx: property (suffix), widget (QSpinBox, gestures_timeout)
+#: rc.cpp:164
+msgid "ms"
+msgstr ""
+
+#. i18n: file: kcm_hotkeys/global_settings_widget.ui:105
+#. i18n: ectx: property (text), widget (QLabel, gestures_button_label)
+#: rc.cpp:167
+msgid "Mouse Button"
 msgstr ""
 
 #. i18n: file: kcm_hotkeys/actions/dbus_action_widget.ui:18
 #. i18n: ectx: property (text), widget (QLabel, applicationLabel)
-#: rc.cpp:164
+#: rc.cpp:170
 msgid "Remote Application:"
 msgstr "Оддалечена апликација:"
 
 #. i18n: file: kcm_hotkeys/actions/dbus_action_widget.ui:31
 #. i18n: ectx: property (text), widget (QLabel, objectLabel)
-#: rc.cpp:167
+#: rc.cpp:173
 msgid "Remote Object:"
 msgstr "Оддалечен објект:"
 
 #. i18n: file: kcm_hotkeys/actions/dbus_action_widget.ui:44
 #. i18n: ectx: property (text), widget (QLabel, functionLabel)
-#: rc.cpp:170
+#: rc.cpp:176
 msgid "Function:"
 msgstr "Функција:"
 
 #. i18n: file: kcm_hotkeys/actions/dbus_action_widget.ui:57
 #. i18n: ectx: property (text), widget (QLabel, argumentsLabel)
-#: rc.cpp:173
+#: rc.cpp:179
 msgid "Arguments:"
 msgstr "Аргументи:"
 
 #. i18n: file: kcm_hotkeys/actions/dbus_action_widget.ui:84
 #. i18n: ectx: property (text), widget (QPushButton, execButton)
-#: rc.cpp:176
+#: rc.cpp:182
 msgid "Call"
 msgstr "Повик"
 
 #. i18n: file: kcm_hotkeys/actions/dbus_action_widget.ui:91
 #. i18n: ectx: property (text), widget (QPushButton, launchButton)
-#: rc.cpp:179
+#: rc.cpp:185
 msgid "Launch  D-Bus Browser"
 msgstr "Изврши D-Bus прелистувач"
 
 #. i18n: file: kcm_hotkeys/actions/keyboard_input_action_widget.ui:36
 #. i18n: ectx: property (text), widget (QRadioButton, active_radio)
-#: rc.cpp:185
+#: rc.cpp:191
 #, fuzzy
 #| msgid "Active window: "
 msgid "Active Window"
@@ -422,13 +434,13 @@ msgstr "Активен прозорец: "
 
 #. i18n: file: kcm_hotkeys/actions/keyboard_input_action_widget.ui:43
 #. i18n: ectx: property (text), widget (QRadioButton, specific_radio)
-#: rc.cpp:188
+#: rc.cpp:194
 msgid "Specific Window"
 msgstr ""
 
 #. i18n: file: kcm_hotkeys/actions/keyboard_input_action_widget.ui:50
 #. i18n: ectx: property (text), widget (QRadioButton, action_radio)
-#: rc.cpp:191
+#: rc.cpp:197
 #, fuzzy
 #| msgid "Active window: "
 msgid "Action Window"
@@ -436,25 +448,25 @@ msgstr "Активен прозорец: "
 
 #. i18n: file: kcm_hotkeys/actions/menuentry_action_widget.ui:19
 #. i18n: ectx: property (text), widget (QLabel, applicationLabel)
-#: rc.cpp:194
+#: rc.cpp:200
 msgid "Application"
 msgstr "Апликација"
 
 #. i18n: file: kcm_hotkeys/actions/menuentry_action_widget.ui:33
 #. i18n: ectx: property (text), widget (KPushButton, applicationButton)
-#: rc.cpp:197
+#: rc.cpp:203
 msgid "Select Application ..."
 msgstr "Избирање апликација..."
 
 #. i18n: file: kcm_hotkeys/actions/command_url_action_widget.ui:19
 #. i18n: ectx: property (text), widget (QLabel, commandLabel)
-#: rc.cpp:200
+#: rc.cpp:206
 msgid "Command/URL:"
 msgstr "Наредба/адреса:"
 
 #. i18n: file: kcm_hotkeys/kcm_hotkeys.ui:36
 #. i18n: ectx: property (text), widget (QPushButton, settings_button)
-#: rc.cpp:206
+#: rc.cpp:212
 msgid "Settings"
 msgstr ""
 
@@ -590,11 +602,11 @@ msgstr "Модул за конфигурација на KDE Hotkeys"
 msgid "Copyright 2008 (c) Michael Jansen"
 msgstr "Авторски права 2008 (c) Michael Jansen"
 
-#: kcm_hotkeys/kcm_hotkeys.cpp:108
+#: kcm_hotkeys/kcm_hotkeys.cpp:108 update/update.cpp:41
 msgid "Michael Jansen"
 msgstr "Michael Jansen"
 
-#: kcm_hotkeys/kcm_hotkeys.cpp:109
+#: kcm_hotkeys/kcm_hotkeys.cpp:109 update/update.cpp:41
 msgid "Maintainer"
 msgstr "Одржувач"
 
@@ -642,15 +654,17 @@ msgstr "Активатор"
 msgid "Action"
 msgstr "Дејство"
 
-#: update/update.cpp:31
-msgid "KHotKeys Update"
+#: update/update.cpp:36 update/update.cpp:38
+#, fuzzy
+#| msgid "KHotKeys Update"
+msgid "KHotKeys Update Helper"
 msgstr "Ажурирање на KHotKeys"
 
-#: update/update.cpp:32
-msgid "KHotKeys update utility"
-msgstr "Алатка за ажурирање на KHotKeys"
+#: update/update.cpp:40
+msgid "(C) 2003-2009 Lubos Lunak"
+msgstr ""
 
-#: update/update.cpp:35
+#: update/update.cpp:46
 #, kde-format
 msgid "Id of the script to add to %1"
 msgstr "Ид. на скриптата што ќе се додаде на %1"
@@ -718,7 +732,7 @@ msgstr "Активирај прозорец: "
 msgid "Keyboard input: "
 msgstr "Внес од тастатура: "
 
-#: libkhotkeysprivate/settings.cpp:272
+#: libkhotkeysprivate/settings.cpp:279
 msgid ""
 "This \"actions\" file has already been imported before. Are you sure you "
 "want to import it again?"
@@ -726,7 +740,7 @@ msgstr ""
 "Оваа датотека \"actions\" веќе е внесена претходно. Дали сте сигурни дека "
 "сакате повторно да ја внесете?"
 
-#: libkhotkeysprivate/settings.cpp:283
+#: libkhotkeysprivate/settings.cpp:293
 msgid ""
 "This \"actions\" file has no ImportId field and therefore it cannot be "
 "determined whether or not it has been imported already. Are you sure you "
@@ -735,13 +749,16 @@ msgstr ""
 "Оваа датотека \"actions\" нема поле ImportId и поради тоа не може да биде "
 "одредено дали не е веќе внесена. Дали сте сигурни дека сакате  да ја внесете?"
 
-#: libkhotkeysprivate/settings.cpp:452
+#: libkhotkeysprivate/settings.cpp:482
 msgid "These entries were created using Menu Editor."
 msgstr "Овие ставки беа создадени со Уредувачот на мени."
 
 #: libkhotkeysprivate/khotkeysglobal.h:40
 msgid "Menu Editor entries"
 msgstr "Ставки во Уредувачот на мени"
+
+#~ msgid "KHotKeys update utility"
+#~ msgstr "Алатка за ажурирање на KHotKeys"
 
 #~ msgid "KHotKeys Daemon"
 #~ msgstr "Даемон KHotKeys"
