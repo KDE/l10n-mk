@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpilot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-01 10:37+0100\n"
+"POT-Creation-Date: 2009-03-03 10:24+0100\n"
 "PO-Revision-Date: 2007-02-28 14:25+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -532,24 +532,34 @@ msgid "Start: %1. End: %2. "
 msgstr ""
 
 #: conduits/base/cudcounter.cc:80
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "changed"
 msgctxt "Created record count"
-msgid "%1 new record(s). "
-msgstr ""
+msgid "1 new record. "
+msgid_plural "%1 new records. "
+msgstr[0] "сменета"
+msgstr[1] "сменета"
+msgstr[2] "сменета"
 
 #: conduits/base/cudcounter.cc:81
 #, fuzzy, kde-format
 #| msgid "changed"
 msgctxt "Updated record count"
-msgid "%1 changed record(s). "
-msgstr "сменета"
+msgid "1 changed record. "
+msgid_plural "%1 changed records. "
+msgstr[0] "сменета"
+msgstr[1] "сменета"
+msgstr[2] "сменета"
 
 #: conduits/base/cudcounter.cc:82
 #, fuzzy, kde-format
 #| msgid "deleted"
 msgctxt "Deleted record count"
-msgid "%1 deleted record(s). "
-msgstr "избришана"
+msgid "1 deleted record. "
+msgid_plural "%1 deleted records. "
+msgstr[0] "избришана"
+msgstr[1] "избришана"
+msgstr[2] "избришана"
 
 #: conduits/base/cudcounter.cc:84
 #, fuzzy
@@ -581,7 +591,7 @@ msgstr "Не можам да ги отворам базите со календ�
 #, fuzzy
 #| msgid "Unable to open the %1 database on the handheld."
 msgid ""
-"Failed to open the pc database and the handheld database, no data to sync."
+"Failed to open the PC database and the handheld database, no data to sync."
 msgstr "Не можам да ја отворам датотеката %1 на рачниот уред."
 
 #: conduits/base/recordconduit.cc:205
@@ -619,9 +629,9 @@ msgstr ""
 msgid "handheld"
 msgstr "Рачен уред"
 
-#: conduits/base/recordconduit.cc:318
-msgid "pc"
-msgstr ""
+#: conduits/base/recordconduit.cc:318 conduits/base/recordconduit.cc:982
+msgid "PC"
+msgstr "PC"
 
 #: conduits/base/recordconduit.cc:485
 msgid "Doing first sync. This may take a while."
@@ -672,10 +682,6 @@ msgstr "Конфликтни записи"
 #: conduits/base/recordconduit.cc:982
 msgid "Handheld"
 msgstr "Рачен уред"
-
-#: conduits/base/recordconduit.cc:982
-msgid "PC"
-msgstr "PC"
 
 #: conduits/null/null-factory.cc:69 conduits/null/null-conduit.cc:60
 #, fuzzy
@@ -1076,21 +1082,21 @@ msgid "Keyring Conduit"
 msgstr "Индекс на запис:"
 
 #: conduits/keyringconduit/keyringconduit.cc:73
-msgid "Error. Triple DES not supported! Unable to continue."
+msgid "Error: Triple DES not supported. Unable to continue."
 msgstr ""
 
 #: conduits/keyringconduit/keyringconduit.cc:101
 #, fuzzy
 #| msgid "Password set"
-msgid "Password invalid!"
+msgid "Password invalid."
 msgstr "Има лозинка"
 
 #: conduits/keyringconduit/keyringconduit.cc:114
-msgid "Error. Could not open wallet!"
+msgid "Error: Could not open wallet."
 msgstr ""
 
 #: conduits/keyringconduit/keyringconduit.cc:128
-msgid "Password invalid! Update your password in the settings dialog."
+msgid "Password invalid. Update your password in the settings dialog."
 msgstr ""
 
 #: conduits/keyringconduit/keyringconduit.cc:185
@@ -1118,7 +1124,7 @@ msgstr "Контакт"
 #: conduits/contacts/contactsconfig.cc:74
 #, fuzzy
 #| msgid "&Standard addressbook"
-msgid "Select Addresbook: "
+msgid "Select Addressbook: "
 msgstr "&Стандарден адресар"
 
 #: conduits/timeconduit/time-conduit.cc:52
