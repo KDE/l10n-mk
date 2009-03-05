@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-23 05:38+0100\n"
+"POT-Creation-Date: 2009-03-05 06:20+0100\n"
 "PO-Revision-Date: 2007-02-26 22:26+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1580,16 +1580,19 @@ msgstr ""
 "GnuPG (http://gnupg.org)."
 
 #: kgpginterface.cpp:458 kgpgtextinterface.cpp:108
+#: transactions/kgpgtransaction.cpp:149
 msgid " or "
 msgstr " или "
 
 #: kgpginterface.cpp:1010 kgpgtextinterface.cpp:114
+#: transactions/kgpgchangeexpire.cpp:71
 #, fuzzy, kde-format
 #| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
 msgid "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
 msgstr "<b>Лоша тајна фраза</b>. Ви преостануваат уште %1 обиди.<br>"
 
 #: kgpginterface.cpp:1011 kgpgtextinterface.cpp:118
+#: transactions/kgpgchangeexpire.cpp:72 transactions/kgpgtransaction.cpp:177
 #, kde-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "Внесете ја тајната фраза за <b>%1</b>"
@@ -2045,6 +2048,7 @@ msgid "Enter passphrase (symmetrical encryption)"
 msgstr "Внесете тајна фраза (симетрично криптирање)"
 
 #: kgpgtextinterface.cpp:106 model/kgpgitemnode.cpp:836
+#: transactions/kgpgtransaction.cpp:170
 msgid "[No user id found]"
 msgstr "[Не е најден кориснични ид.]"
 
@@ -4269,6 +4273,81 @@ msgstr[0] "Подклуч %1"
 msgstr[1] "Подклуч %1"
 msgstr[2] "Подклуч %1"
 
+#: transactions/kgpgaddphoto.cpp:52
+msgid "This image is very large. Use it anyway?"
+msgstr "Оваа слика е преголема. Дали сепак ќе ја користите?"
+
+#: transactions/kgpgaddphoto.cpp:52
+msgid "Use Anyway"
+msgstr "Сепак користи"
+
+#: transactions/kgpgaddphoto.cpp:52
+msgid "Do Not Use"
+msgstr "Не користи"
+
+#: transactions/kgpgchangeexpire.cpp:98
+#, fuzzy
+#| msgid ""
+#| "<qt><b>Changing expiration failed.</b><br>Do you want to try changing the "
+#| "key expiration in console mode?</qt>"
+msgid ""
+"<qt><b>Changing expiration failed.</b><br />Do you want to try changing the "
+"key expiration in console mode?</qt>"
+msgstr ""
+"<qt><b>Менувањето на истекувањето не успеа.</b><br>Дали сакате да се обидете "
+"да го смените истекувањето на клучот во конзолен режим?</qt>"
+
+#: transactions/kgpgchangeexpire.cpp:101
+msgid "work in progress..."
+msgstr ""
+
+#: transactions/kgpgchangepass.cpp:64
+#, fuzzy, kde-format
+msgid "Enter old passphrase for <b>%1</b>"
+msgstr "Внесете ја тајната фраза за <b>%1</b>"
+
+#: transactions/kgpgchangepass.cpp:67
+#, fuzzy, kde-format
+msgid ""
+"<qt>Enter new passphrase for <b>%1</b><br />If you forget this passphrase "
+"all your encrypted files and messages will be inaccessible!</qt>"
+msgstr ""
+"<qt>Внесете нова тајна фраза за <b>%1</b><br>Ако ја заборавите оваа тајна "
+"фраза сите ваши криптирани датотеки и пораки ќе бидат загубени!<br></qt>"
+
+#: transactions/kgpggeneratekey.cpp:113
+#, fuzzy, kde-format
+#| msgid ""
+#| "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
+#| "alphanumeric characters and random sequences"
+msgid ""
+"<p><b>Enter passphrase for %1 &lt;%2&gt;</b>:<br />Passphrase should include "
+"non alphanumeric characters and random sequences</p>"
+msgstr ""
+"<b>Внесете тајна фраза за %1</b>:<br>Тајната фраза би требало да вклучува не-"
+"алфанумерички знаци и случајни секвенци"
+
+#: transactions/kgpggeneratekey.cpp:115
+#, fuzzy, kde-format
+#| msgid ""
+#| "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
+#| "alphanumeric characters and random sequences"
+msgid ""
+"<p><b>Enter passphrase for %1</b>:<br />Passphrase should include non "
+"alphanumeric characters and random sequences</p>"
+msgstr ""
+"<b>Внесете тајна фраза за %1</b>:<br>Тајната фраза би требало да вклучува не-"
+"алфанумерички знаци и случајни секвенци"
+
+#: transactions/kgpgtransaction.cpp:175
+#, fuzzy, kde-format
+#| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
+msgid "<p><b>Bad passphrase</b>. You have 1 try left.</p>"
+msgid_plural "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
+msgstr[0] "<b>Лоша тајна фраза</b>. Ви преостануваат уште %1 обиди.<br>"
+msgstr[1] "<b>Лоша тајна фраза</b>. Ви преостануваат уште %1 обиди.<br>"
+msgstr[2] "<b>Лоша тајна фраза</b>. Ви преостануваат уште %1 обиди.<br>"
+
 #~ msgid "Could not change expiration"
 #~ msgstr "Не може да се смени истекувањето"
 
@@ -4310,49 +4389,6 @@ msgstr[2] "Подклуч %1"
 
 #~ msgid "Step Three: Select your Default Private Key"
 #~ msgstr "Чекор три: Изберете го вашиот основен приватен клуч"
-
-#, fuzzy
-#~| msgid ""
-#~| "<qt><b>Changing expiration failed.</b><br>Do you want to try changing "
-#~| "the key expiration in console mode?</qt>"
-#~ msgid ""
-#~ "<qt><b>Changing expiration failed.</b><br />Do you want to try changing "
-#~ "the key expiration in console mode?</qt>"
-#~ msgstr ""
-#~ "<qt><b>Менувањето на истекувањето не успеа.</b><br>Дали сакате да се "
-#~ "обидете да го смените истекувањето на клучот во конзолен режим?</qt>"
-
-#, fuzzy
-#~ msgid "Enter old passphrase for <b>%1</b>"
-#~ msgstr "Внесете ја тајната фраза за <b>%1</b>"
-
-#, fuzzy
-#~ msgid ""
-#~ "<qt>Enter new passphrase for <b>%1</b><br />If you forget this passphrase "
-#~ "all your encrypted files and messages will be inaccessible<br /></qt>"
-#~ msgstr ""
-#~ "<qt>Внесете нова тајна фраза за <b>%1</b><br>Ако ја заборавите оваа тајна "
-#~ "фраза сите ваши криптирани датотеки и пораки ќе бидат загубени!<br></qt>"
-
-#~ msgid "This image is very large. Use it anyway?"
-#~ msgstr "Оваа слика е преголема. Дали сепак ќе ја користите?"
-
-#~ msgid "Use Anyway"
-#~ msgstr "Сепак користи"
-
-#~ msgid "Do Not Use"
-#~ msgstr "Не користи"
-
-#, fuzzy
-#~| msgid ""
-#~| "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
-#~| "alphanumeric characters and random sequences"
-#~ msgid ""
-#~ "<p><b>Enter passphrase for %1</b>:<br />Passphrase should include non "
-#~ "alphanumeric characters and random sequences</p>"
-#~ msgstr ""
-#~ "<b>Внесете тајна фраза за %1</b>:<br>Тајната фраза би требало да вклучува "
-#~ "не-алфанумерички знаци и случајни секвенци"
 
 #, fuzzy
 #~| msgid ""
