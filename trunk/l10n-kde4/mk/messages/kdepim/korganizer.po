@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-13 10:22+0100\n"
+"POT-Creation-Date: 2009-03-14 10:51+0100\n"
 "PO-Revision-Date: 2007-02-28 14:24+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1830,18 +1830,18 @@ msgstr "%1 - %2"
 msgid "- %1"
 msgstr "- %1"
 
-#: views/agendaview/koagendaview.cpp:557
+#: views/agendaview/koagendaview.cpp:524
 #, kde-format
 msgctxt "short_weekday date (e.g. Mon 13)"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: views/agendaview/koagendaview.cpp:726
+#: views/agendaview/koagendaview.cpp:693
 #: views/multiagendaview/multiagendaview.cpp:56
 msgid "All Day"
 msgstr "Цел ден"
 
-#: views/agendaview/koagendaview.cpp:1489
+#: views/agendaview/koagendaview.cpp:1458
 msgid "Unable to modify this to-do, because it cannot be locked."
 msgstr "Не можам да ја изменам оваа задача бидејќи не може да се заклучи."
 
@@ -3109,7 +3109,7 @@ msgctxt "@info:tooltip"
 msgid "Set an advanced alarm"
 msgstr ""
 
-#: koeditorgeneral.cpp:413
+#: koeditorgeneral.cpp:415
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "1 reminder configured"
@@ -3118,19 +3118,19 @@ msgstr[0] "Конфигуриран е еден напреден потсетн�
 msgstr[1] "Конфигуриран е еден напреден потсетник"
 msgstr[2] "Конфигуриран е еден напреден потсетник"
 
-#: koeditorgeneral.cpp:440
+#: koeditorgeneral.cpp:442
 #, fuzzy
 msgctxt "@label"
 msgid "1 advanced reminder configured"
 msgstr "Конфигуриран е %1 потсетник"
 
-#: koeditorgeneral.cpp:585
+#: koeditorgeneral.cpp:587
 #, fuzzy
 msgctxt "@label"
 msgid "No attendees"
 msgstr "Присут&ни"
 
-#: koeditorgeneral.cpp:588
+#: koeditorgeneral.cpp:590
 #, fuzzy, kde-format
 #| msgid "1 Attendee:"
 #| msgid_plural "%1 Attendees:"
@@ -3141,7 +3141,7 @@ msgstr[0] "%1 присутен:"
 msgstr[1] "%1 присутни:"
 msgstr[2] "%1 присутни:"
 
-#: koeditorgeneral.cpp:599
+#: koeditorgeneral.cpp:601
 #, fuzzy
 #| msgid "Please specify a valid due time."
 msgctxt "@info"
@@ -3667,7 +3667,7 @@ msgid "The item \"%1\" will be permanently deleted."
 msgstr "Ставката „%1“ ќе биде избришана трајно."
 
 #: calendarview.cpp:823 calendarview.cpp:1267 calendarview.cpp:1279
-#: calendarview.cpp:2138 calendarview.cpp:2201 calendarview.cpp:2212
+#: calendarview.cpp:2138 calendarview.cpp:2201 calendarview.cpp:2232
 msgid "KOrganizer Confirmation"
 msgstr "Потврда на КОрганизатор"
 
@@ -3888,70 +3888,78 @@ msgid ""
 "to delete it and all its recurrences?"
 msgstr ""
 
-#: calendarview.cpp:2207
+#: calendarview.cpp:2209
+#, fuzzy
+#| msgid "Delete &Future"
+msgid "Also Delete &Future"
+msgstr "Избриши ги &идните"
+
+#: calendarview.cpp:2213
 #, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates. Do you want to delete "
-"only the current one on %2, only all future recurrences, or all its "
-"recurrences?"
+"only the current one on %2, also future occurrences, or all its occurrences?"
 msgstr ""
 
-#: calendarview.cpp:2213
+#: calendarview.cpp:2220
+#, kde-format
+msgid ""
+"The calendar item \"%1\" recurs over multiple dates. Do you want to delete "
+"only the current one on %2 or all its occurrences?"
+msgstr ""
+
+#: calendarview.cpp:2233
 msgid "Delete C&urrent"
 msgstr "Избриши ја &тековната"
 
-#: calendarview.cpp:2214
-msgid "Delete &Future"
-msgstr "Избриши ги &идните"
-
-#: calendarview.cpp:2215
+#: calendarview.cpp:2235
 msgid "Delete &All"
 msgstr "Избриши ги &сите"
 
-#: calendarview.cpp:2301
+#: calendarview.cpp:2322
 msgid "Delete all completed to-dos?"
 msgstr "Ги бришете сите довршени задачи?"
 
-#: calendarview.cpp:2302
+#: calendarview.cpp:2323
 msgid "Purge To-dos"
 msgstr "Избриши задачи"
 
-#: calendarview.cpp:2303
+#: calendarview.cpp:2324
 msgid "Purge"
 msgstr "Избриши"
 
-#: calendarview.cpp:2307
+#: calendarview.cpp:2328
 msgid "Purging completed to-dos"
 msgstr "Ги бришам довршените задачи"
 
-#: calendarview.cpp:2324
+#: calendarview.cpp:2345
 msgid "Unable to purge to-dos with uncompleted children."
 msgstr "Не можам да ги избришам задачите со недовршени подзадачи."
 
-#: calendarview.cpp:2325
+#: calendarview.cpp:2346
 msgid "Delete To-do"
 msgstr "Избриши задача"
 
-#: calendarview.cpp:2334
+#: calendarview.cpp:2355
 #, fuzzy
 msgid "Unable to edit item: it is locked by another process."
 msgstr "Не можам да напуштам. Зачувувањето е сѐ уште во тек."
 
-#: calendarview.cpp:2367
+#: calendarview.cpp:2388
 #, fuzzy, kde-format
 msgid "Unable to copy the item to %1."
 msgstr "Не можам да ја објавам ставката „%1“"
 
-#: calendarview.cpp:2368
+#: calendarview.cpp:2389
 msgid "Copying Failed"
 msgstr "Копирањето не успеа"
 
-#: calendarview.cpp:2412
+#: calendarview.cpp:2433
 #, fuzzy, kde-format
 msgid "Unable to move the item to  %1."
 msgstr "Не можам да ја објавам ставката „%1“"
 
-#: calendarview.cpp:2413
+#: calendarview.cpp:2434
 msgid "Moving Failed"
 msgstr "Преместувањето не успеа"
 
