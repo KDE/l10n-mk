@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-23 06:10+0100\n"
+"POT-Creation-Date: 2009-03-24 06:20+0100\n"
 "PO-Revision-Date: 2009-01-08 12:59+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -3318,6 +3318,14 @@ msgstr "Контактирајте со вашиот систем-админис
 msgid "Configuration file \"%1\" not writable.\n"
 msgstr "Во датотеката со конфигурација „%1“ не може да се запише.\n"
 
+#: kdecore/network/klocalsocket_win.cpp:31
+#: kdecore/network/klocalsocket_win.cpp:36
+#, fuzzy
+#| msgctxt "Socket error code NotSupported"
+#| msgid "operation is not supported"
+msgid "Operation not supported"
+msgstr "операцијата не е поддржана"
+
 #: kdecore/network/k3socketaddress.cpp:623
 #, kde-format
 msgctxt "1: the unknown socket address family number"
@@ -3451,6 +3459,83 @@ msgstr "Не е поддржан „ai_socktype“"
 #: kdecore/network/netsupp.cpp:902
 msgid "system error"
 msgstr "системска грешка"
+
+#: kdecore/network/klocalsocket_unix.cpp:178
+#: kdecore/network/klocalsocket_unix.cpp:246
+msgid "Specified socket path is invalid"
+msgstr ""
+
+#: kdecore/network/klocalsocket_unix.cpp:187
+#: kdecore/network/klocalsocket_unix.cpp:234
+#: kdecore/network/klocalsocket_unix.cpp:255
+#, fuzzy
+#| msgctxt "Socket error code NotSupported"
+#| msgid "operation is not supported"
+msgid "The socket operation is not supported"
+msgstr "операцијата не е поддржана"
+
+#: kdecore/network/klocalsocket_unix.cpp:200
+#, fuzzy
+#| msgctxt "Socket error code ConnectionRefused"
+#| msgid "connection actively refused"
+msgid "Connection refused"
+msgstr "поврзувањето е активно одбиено"
+
+#: kdecore/network/klocalsocket_unix.cpp:205
+#: kdecore/network/klocalsocket_unix.cpp:268
+msgid "Permission denied"
+msgstr ""
+
+#: kdecore/network/klocalsocket_unix.cpp:209
+#, fuzzy
+#| msgctxt "Socket error code ConnectionTimedOut"
+#| msgid "connection timed out"
+msgid "Connection timed out"
+msgstr "поврзувањето го пречекори времето"
+
+#: kdecore/network/klocalsocket_unix.cpp:213
+#: kdecore/network/klocalsocket_unix.cpp:293 nepomuk/core/resource.cpp:425
+msgid "Unknown error"
+msgstr "Непозната грешка"
+
+#: kdecore/network/klocalsocket_unix.cpp:221
+#: kdecore/network/klocalsocket_unix.cpp:301
+msgid "Could not set non-blocking mode"
+msgstr ""
+
+#: kdecore/network/klocalsocket_unix.cpp:272
+#, fuzzy
+#| msgctxt "Socket error code AddressInUse"
+#| msgid "address already in use"
+msgid "Address is already in use"
+msgstr "адресата веќе се користи"
+
+#: kdecore/network/klocalsocket_unix.cpp:277
+msgid "Path cannot be used"
+msgstr ""
+
+#: kdecore/network/klocalsocket_unix.cpp:281
+#, fuzzy
+#| msgid "No such interpreter \"%1\""
+msgid "No such file or directory"
+msgstr "Нема таков интерпретер „%1“"
+
+#: kdecore/network/klocalsocket_unix.cpp:285
+#, fuzzy
+#| msgid "Path to the autostart directory"
+msgid "Not a directory"
+msgstr "Патека до папката за автом. стартување"
+
+#: kdecore/network/klocalsocket_unix.cpp:289
+msgid "Read-only filesystem"
+msgstr ""
+
+#: kdecore/network/klocalsocket_unix.cpp:354
+#: kdecore/network/klocalsocket_unix.cpp:386
+#, fuzzy
+#| msgid "Unknown error"
+msgid "Unknown socket error"
+msgstr "Непозната грешка"
 
 #: kdecore/network/k3resolver.cpp:546
 msgid "requested family not supported for this host name"
@@ -11625,10 +11710,6 @@ msgstr "Грешка во комуникацијата"
 #: nepomuk/core/resource.cpp:423
 msgid "Invalid type in Database"
 msgstr "Невалиден тип во базата"
-
-#: nepomuk/core/resource.cpp:425
-msgid "Unknown error"
-msgstr "Непозната грешка"
 
 #: nepomuk/core/ui/kmetadatatagwidget.cpp:214
 msgid "Create New Tag..."
