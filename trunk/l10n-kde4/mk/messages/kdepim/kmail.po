@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-01 11:20+0200\n"
+"POT-Creation-Date: 2009-04-02 11:29+0200\n"
 "PO-Revision-Date: 2007-02-28 14:08+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1378,7 +1378,7 @@ msgstr "Нов или изменет: %1 (достапен е таен клуч)
 msgid "New or changed: %1"
 msgstr "Нов или изменет: %1"
 
-#: objecttreeparser.cpp:1716 kmcommands.cpp:3071 kmcomposewin.cpp:4258
+#: objecttreeparser.cpp:1716 kmcommands.cpp:3071 kmcomposewin.cpp:4273
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
@@ -1387,18 +1387,18 @@ msgstr ""
 #: objecttreeparser.cpp:1722 messagecomposer.cpp:591 messagecomposer.cpp:599
 #: messagecomposer.cpp:613 kmcommands.cpp:3073 kmcommands.cpp:3078
 #: kmcommands.cpp:3087 kmcommands.cpp:3096 kmcommands.cpp:3114
-#: kmcommands.cpp:3125 kmcommands.cpp:3165 kmcomposewin.cpp:4260
-#: kmcomposewin.cpp:4265 kmcomposewin.cpp:4274
+#: kmcommands.cpp:3125 kmcommands.cpp:3165 kmcomposewin.cpp:4275
+#: kmcomposewin.cpp:4280 kmcomposewin.cpp:4289
 msgid "Chiasmus Backend Error"
 msgstr ""
 
-#: objecttreeparser.cpp:1728 kmcommands.cpp:3084 kmcomposewin.cpp:4271
+#: objecttreeparser.cpp:1728 kmcommands.cpp:3084 kmcomposewin.cpp:4286
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
 msgstr ""
 
-#: objecttreeparser.cpp:1736 kmcommands.cpp:3093 kmcomposewin.cpp:4280
+#: objecttreeparser.cpp:1736 kmcommands.cpp:3093 kmcomposewin.cpp:4295
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
@@ -9586,12 +9586,12 @@ msgid ""
 "all available addresses."
 msgstr ""
 
-#: redirectdialog.cpp:85 kmcomposewin.cpp:3755
+#: redirectdialog.cpp:85 kmcomposewin.cpp:3770
 msgid "&Send Now"
 msgstr "И&спрати сега"
 
 #: redirectdialog.cpp:86 kmcomposewin.cpp:1005 kmcomposewin.cpp:1014
-#: kmcomposewin.cpp:3756
+#: kmcomposewin.cpp:3771
 msgid "Send &Later"
 msgstr "Испрати по&доцна"
 
@@ -10439,8 +10439,10 @@ msgstr "Име на &сметка:"
 #. i18n: file: ui/popsettings.ui:67
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:216 rc.cpp:517
-msgid "Ho&st:"
-msgstr "&Сервер:"
+#, fuzzy
+#| msgid "Incoming server:"
+msgid "Incoming mail &server:"
+msgstr "Сервер за влез:"
 
 #. i18n: file: ui/imapsettings.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_7)
@@ -15080,12 +15082,12 @@ msgstr "Конфигурирај КПошта..."
 msgid " Spellcheck: %1 "
 msgstr "Проверувач на правопис"
 
-#: kmcomposewin.cpp:1343 kmcomposewin.cpp:4199
+#: kmcomposewin.cpp:1343 kmcomposewin.cpp:4214
 #, kde-format
 msgid " Column: %1 "
 msgstr " Колона: %1 "
 
-#: kmcomposewin.cpp:1345 kmcomposewin.cpp:4197
+#: kmcomposewin.cpp:1345 kmcomposewin.cpp:4212
 #, fuzzy, kde-format
 #| msgid " Line: %1 "
 msgctxt "Shows the linenumber of the cursor position."
@@ -15140,7 +15142,7 @@ msgstr ""
 msgid "File Attachment Reminder"
 msgstr "Потсетување за прилог"
 
-#: kmcomposewin.cpp:1959 kmcomposewin.cpp:3776
+#: kmcomposewin.cpp:1959 kmcomposewin.cpp:3791
 msgid "&Send as Is"
 msgstr "И&спрати како што е"
 
@@ -15385,88 +15387,92 @@ msgstr ""
 "Сопствената папка за нацрти за идентитетот „%1“ не постои (повеќе). Поради "
 "тоа ќе се користи стандардната папка за нацрти."
 
-#: kmcomposewin.cpp:3753
+#: kmcomposewin.cpp:3698 kmsender.cpp:131
+msgid "Please create an account for sending and try again."
+msgstr "Ве молам создајте сметка за испраќање и обидете се повторно."
+
+#: kmcomposewin.cpp:3768
 msgid "About to send email..."
 msgstr "Ја испраќам пораката..."
 
-#: kmcomposewin.cpp:3754
+#: kmcomposewin.cpp:3769
 msgid "Send Confirmation"
 msgstr "Потврда за испраќање"
 
-#: kmcomposewin.cpp:3774
+#: kmcomposewin.cpp:3789
 #, kde-format
 msgid ""
 "You are trying to send the mail to more than %1 recipients. Send message "
 "anyway?"
 msgstr ""
 
-#: kmcomposewin.cpp:3775
+#: kmcomposewin.cpp:3790
 #, fuzzy
 #| msgid "1 recipient"
 #| msgid_plural "%1 recipients"
 msgid "Too many receipients"
 msgstr "%1 примач"
 
-#: kmcomposewin.cpp:3777
+#: kmcomposewin.cpp:3792
 #, fuzzy
 #| msgid "Additional Recipients"
 msgid "&Edit Recipients"
 msgstr "Додатни приматели"
 
-#: kmcomposewin.cpp:3907
+#: kmcomposewin.cpp:3922
 #, fuzzy
 msgid "Spellcheck: on"
 msgstr "Проверувач на правопис"
 
-#: kmcomposewin.cpp:3909
+#: kmcomposewin.cpp:3924
 #, fuzzy
 msgid "Spellcheck: off"
 msgstr "Проверувач на правопис"
 
-#: kmcomposewin.cpp:4245
+#: kmcomposewin.cpp:4260
 msgid ""
 "Please configure a Crypto Backend to use for Chiasmus encryption first.\n"
 "You can do this in the Crypto Backends tab of the configure dialog's "
 "Security page."
 msgstr ""
 
-#: kmcomposewin.cpp:4249
+#: kmcomposewin.cpp:4264
 msgid ""
 "It looks as though libkleopatra was compiled without Chiasmus support. You "
 "might want to recompile libkleopatra with --enable-chiasmus."
 msgstr ""
 
-#: kmcomposewin.cpp:4252
+#: kmcomposewin.cpp:4267
 msgid "No Chiasmus Backend Configured"
 msgstr ""
 
-#: kmcomposewin.cpp:4283
+#: kmcomposewin.cpp:4298
 msgid "No Chiasmus Keys Found"
 msgstr ""
 
-#: kmcomposewin.cpp:4287
+#: kmcomposewin.cpp:4302
 msgid "Chiasmus Encryption Key Selection"
 msgstr ""
 
-#: kmcomposewin.cpp:4369
+#: kmcomposewin.cpp:4384
 #, fuzzy
 #| msgid "Message was signed by %1."
 msgid "Message will be signed"
 msgstr "Пораката е потпишана од %1."
 
-#: kmcomposewin.cpp:4370
+#: kmcomposewin.cpp:4385
 #, fuzzy
 #| msgid "Message List - Date Field"
 msgid "Message will not be signed"
 msgstr "Листа со пораки - поле за датум"
 
-#: kmcomposewin.cpp:4372
+#: kmcomposewin.cpp:4387
 #, fuzzy
 #| msgid "OpenPGP Message - Encrypted"
 msgid "Message will be encrypted"
 msgstr "OpenPGP-порака - криптирана"
 
-#: kmcomposewin.cpp:4373
+#: kmcomposewin.cpp:4388
 #, fuzzy
 #| msgid "OpenPGP Message - Encrypted"
 msgid "Message will not be encrypted"
@@ -16418,10 +16424,6 @@ msgctxt "Message->Forward->"
 msgid "&Redirect..."
 msgstr "П&ренасочи..."
 
-#: kmsender.cpp:131
-msgid "Please create an account for sending and try again."
-msgstr "Ве молам создајте сметка за испраќање и обидете се повторно."
-
 #: kmsender.cpp:193
 msgid "Cannot add message to outbox folder"
 msgstr "Не можам да додадам порака во излезното сандаче"
@@ -17291,6 +17293,9 @@ msgstr "Запишувате врз датотека?"
 #: kmfawidgets.cpp:119
 msgid "Select Sound File"
 msgstr "Изберете звучна датотека"
+
+#~ msgid "Ho&st:"
+#~ msgstr "&Сервер:"
 
 #, fuzzy
 #~| msgid "&Inline..."
