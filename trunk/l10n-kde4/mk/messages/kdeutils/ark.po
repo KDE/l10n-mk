@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-05 11:22+0200\n"
+"POT-Creation-Date: 2009-05-06 12:10+0200\n"
 "PO-Revision-Date: 2006-05-08 10:32+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -19,6 +19,12 @@ msgstr ""
 "X-Generator: KBabel 1.10.2\n"
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
+
+#: app/extractHereDndPlugin.cpp:47 kerfuffle/extractiondialog.cpp:121
+#, fuzzy
+#| msgid "Extract"
+msgid "Extract here"
+msgstr "Отпакување"
 
 #: app/main.cpp:38
 msgid "Ark"
@@ -211,7 +217,7 @@ msgstr "Отвори „архива“"
 #: kerfuffle/adddialog.cpp:54
 #, fuzzy
 #| msgid "Simple Compressed Archive"
-msgid "Compress to archive"
+msgid "Compress to Archive"
 msgstr "Едноставна компресирана архива"
 
 #: kerfuffle/addtoarchive.cpp:91
@@ -311,29 +317,29 @@ msgstr "Архивата веќе постои. Дали сакате да за�
 msgid "Folder exists"
 msgstr "Архивата веќе постои"
 
-#: kerfuffle/extractiondialog.cpp:121
-#, fuzzy
-#| msgid "Extract"
-msgid "Extract here"
-msgstr "Отпакување"
-
-#: kerfuffle/extractiondialog.cpp:121 part/part.cpp:321
+#: kerfuffle/extractiondialog.cpp:121 part/part.cpp:321 part/part.cpp:747
 msgid "Cancel"
 msgstr ""
 
-#: kerfuffle/jobs.cpp:138
+#: kerfuffle/jobs.cpp:110
+#, fuzzy
+#| msgid "An error occurred while opening the archive %1."
+msgid "Sorry, an error occured while performing the operation."
+msgstr "Се случи грешка при отворањето на архивата %1."
+
+#: kerfuffle/jobs.cpp:141
 #, fuzzy
 #| msgid "Creating archive..."
 msgid "Loading archive..."
 msgstr "Создавам архива..."
 
-#: kerfuffle/jobs.cpp:186
+#: kerfuffle/jobs.cpp:189
 #, fuzzy
 #| msgid "Extract all files"
 msgid "Extracting all files"
 msgstr "Ги распакувам сите датотеки"
 
-#: kerfuffle/jobs.cpp:190
+#: kerfuffle/jobs.cpp:193
 #, fuzzy, kde-format
 #| msgid "Extract all files"
 msgid "Extracting one file"
@@ -342,7 +348,7 @@ msgstr[0] "Ги распакувам сите датотеки"
 msgstr[1] "Ги распакувам сите датотеки"
 msgstr[2] "Ги распакувам сите датотеки"
 
-#: kerfuffle/jobs.cpp:225
+#: kerfuffle/jobs.cpp:228
 #, fuzzy, kde-format
 #| msgid "Adding files..."
 msgid "Adding a file"
@@ -351,7 +357,7 @@ msgstr[0] "Додавам датотеки..."
 msgstr[1] "Додавам датотеки..."
 msgstr[2] "Додавам датотеки..."
 
-#: kerfuffle/jobs.cpp:246
+#: kerfuffle/jobs.cpp:249
 #, fuzzy, kde-format
 #| msgid "An error occurred while adding the files to the archive."
 msgid "Deleting a file from the archive"
@@ -534,8 +540,10 @@ msgid "Click to preview the selected file"
 msgstr ""
 
 #: part/part.cpp:198
-msgid "E&xtract..."
-msgstr "О&тпакувај..."
+#, fuzzy
+#| msgid "Extract"
+msgid "E&xtract"
+msgstr "Отпакување"
 
 #: part/part.cpp:200
 msgid ""
@@ -583,7 +591,7 @@ msgstr "папка за отворање"
 #: part/part.cpp:248
 #, fuzzy
 #| msgid "E&xtract..."
-msgid "Quick extract to..."
+msgid "Quick Extract To..."
 msgstr "О&тпакувај..."
 
 #: part/part.cpp:311
@@ -601,13 +609,13 @@ msgstr "Архивата веќе постои. Дали сакате да за�
 #: part/part.cpp:321
 #, fuzzy
 #| msgid "Archive Already Exists"
-msgid "File exists"
+msgid "File Exists"
 msgstr "Архивата веќе постои"
 
 #: part/part.cpp:321
 #, fuzzy
 #| msgid "Open with:"
-msgid "Open file"
+msgid "Open File"
 msgstr "Отвори со:"
 
 #: part/part.cpp:330
@@ -618,11 +626,11 @@ msgstr ""
 #: part/part.cpp:330 part/part.cpp:374 part/part.cpp:415
 #, fuzzy
 #| msgid "Open 'archive'"
-msgid "Error opening archive"
+msgid "Error Opening Archive"
 msgstr "Отвори „архива“"
 
 #: part/part.cpp:360
-msgid "Unable to determine archive type"
+msgid "Unable to Determine Archive Type"
 msgstr ""
 
 #: part/part.cpp:361
@@ -661,6 +669,16 @@ msgstr "Сите датотеки"
 #| msgid "Add Folde&r..."
 msgid "Add Folder"
 msgstr "Додај &папка..."
+
+#: part/part.cpp:747
+msgid "Deleting these files is not undoable. Are you sure you want to do this?"
+msgstr ""
+
+#: part/part.cpp:747
+#, fuzzy
+#| msgid "Selected files only"
+msgid "Delete files"
+msgstr "Само избраните датотеки"
 
 #: plugins/7zipplugin/7zipplugin.cpp:60
 msgid "Unable to find 7zr, 7za or 7z"
@@ -1062,6 +1080,9 @@ msgstr "Сите датотеки"
 msgid "Open destination folder after extraction"
 msgstr "Отвори ја одредишната папка по отпакувањето"
 
+#~ msgid "E&xtract..."
+#~ msgstr "О&тпакувај..."
+
 #, fuzzy
 #~| msgid "An error occurred while adding the files to the archive."
 #~ msgid "Couldn't open the file '%1', libarchive can't handle it."
@@ -1222,9 +1243,6 @@ msgstr "Отвори ја одредишната папка по отпакув�
 
 #~ msgid "Saving..."
 #~ msgstr "Зачувувам..."
-
-#~ msgid "An error occurred while opening the archive %1."
-#~ msgstr "Се случи грешка при отворањето на архивата %1."
 
 #~ msgid ""
 #~ "The following files will not be extracted\n"
