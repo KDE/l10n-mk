@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop_kdepim\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-27 00:17+0000\n"
+"POT-Creation-Date: 2009-05-10 23:18+0000\n"
 "PO-Revision-Date: 2007-02-27 17:59+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -450,10 +450,6 @@ msgstr "Name=КАларм"
 msgid "GenericName=Personal Alarm Scheduler"
 msgstr "GenericName=Закажување лични аларми"
 
-#: kalarm/kalarm.tray.desktop:22
-msgid "Comment=Personal Alarm Scheduler: start as system tray icon"
-msgstr "Comment=Закажување лични аларми: стартувај во сис. лента"
-
 #: kalarm/kalarmd/kalarmd.autostart.desktop:3 kalarm/kalarmd/kalarmd.desktop:3
 msgid "Name=KAlarm Daemon"
 msgstr "Name=Даемон за КАларм"
@@ -461,6 +457,10 @@ msgstr "Name=Даемон за КАларм"
 #: kalarm/kalarmd/kalarmd.autostart.desktop:53
 msgid "Comment=KAlarm alarm daemon autostart at login"
 msgstr "Comment=Даемон за аларми од КАларм - автом. старт при најава"
+
+#: kalarm/kalarm.tray.desktop:22
+msgid "Comment=Personal Alarm Scheduler: start as system tray icon"
+msgstr "Comment=Закажување лични аларми: стартувај во сис. лента"
 
 #: kandy/src/kandy.desktop:2
 msgid "Name=Kandy"
@@ -515,14 +515,6 @@ msgstr "Comment=Приклучок за KitchenSync"
 #, fuzzy
 msgid "GenericName=Synchronization"
 msgstr "Name=Синхронизација"
-
-#: kmail/KMail.desktop:2 kmail/kmail_view.desktop:2
-msgid "Name=KMail"
-msgstr "Name=КПошта"
-
-#: kmail/KMail.desktop:17
-msgid "GenericName=Mail Client"
-msgstr "GenericName=Клиент за електронска пошта"
 
 #: kmail/application_octetstream.desktop:2
 #: plugins/kmail/bodypartformatter/text_calendar.desktop:2
@@ -620,6 +612,14 @@ msgstr "Comment=Поставувања за безбедност и приват
 #: kmail/kmail_config_security.desktop:123
 msgid "Keywords=kmail,security"
 msgstr "Keywords=kmail,security,кпошта,безбедност"
+
+#: kmail/KMail.desktop:2 kmail/kmail_view.desktop:2
+msgid "Name=KMail"
+msgstr "Name=КПошта"
+
+#: kmail/KMail.desktop:17
+msgid "GenericName=Mail Client"
+msgstr "GenericName=Клиент за електронска пошта"
 
 #: kmail/profiles/profile-default-rc.desktop:2
 msgid "Name=Default"
@@ -735,14 +735,6 @@ msgstr "Comment=Менаџер на мобилни уреди во KDE"
 msgid "Name=KDE Mobile Device Lowlevel Hardware Driver"
 msgstr ""
 
-#: knode/KNode.desktop:7
-msgid "Name=KNode"
-msgstr ""
-
-#: knode/KNode.desktop:16
-msgid "GenericName=News Reader"
-msgstr "GenericName=Читач на вести"
-
 #: knode/knode_config_accounts.desktop:71
 msgid "Comment=Setup for Newsgroup and Mail Servers"
 msgstr "Comment=Поставување за сервери за групи вести и за е-пошта"
@@ -779,6 +771,14 @@ msgstr ""
 msgid "Name=Reading News"
 msgstr "Name=Читање вести"
 
+#: knode/KNode.desktop:7
+msgid "Name=KNode"
+msgstr ""
+
+#: knode/KNode.desktop:16
+msgid "GenericName=News Reader"
+msgstr "GenericName=Читач на вести"
+
 #: knotes/knotes.desktop:8
 msgid "GenericName=Popup Notes"
 msgstr "GenericName=Скок-белешки"
@@ -804,18 +804,18 @@ msgstr "Name=КонзоленКалендар"
 msgid "Name=Kontact Plugin"
 msgstr "Name=Приклучок за Контакт"
 
-#: kontact/plugins/akregator/akregatorplugin.desktop:16
-#, fuzzy
-msgid "Comment=Feed Reader Component (Akregator Plugin)"
+#: kontact/plugins/akregator/akregatorplugin3.2.desktop:15
+msgid "Comment=Akregator Plugin"
 msgstr "Comment=Приклучок за Akregator"
 
-#: kontact/plugins/akregator/akregatorplugin.desktop:40
 #: kontact/plugins/akregator/akregatorplugin3.2.desktop:65
+#: kontact/plugins/akregator/akregatorplugin.desktop:40
 msgid "Name=Feeds"
 msgstr ""
 
-#: kontact/plugins/akregator/akregatorplugin3.2.desktop:15
-msgid "Comment=Akregator Plugin"
+#: kontact/plugins/akregator/akregatorplugin.desktop:16
+#, fuzzy
+msgid "Comment=Feed Reader Component (Akregator Plugin)"
 msgstr "Comment=Приклучок за Akregator"
 
 #: kontact/plugins/kaddressbook/kaddressbookplugin.desktop:18
@@ -1019,10 +1019,18 @@ msgstr "Comment=Приклучок на Контакт за време"
 msgid "Name=Weather Service"
 msgstr "Name=Временска прогноза"
 
-#: kontact/src/Kontact.desktop:2 kontact/src/kontactconfig.desktop:15
-#: kontact/src/kontactdcop.desktop:2
+#: kontact/src/kontactconfig.desktop:15 kontact/src/kontactdcop.desktop:2
+#: kontact/src/Kontact.desktop:2
 msgid "Name=Kontact"
 msgstr "Name=Контакт"
+
+#: kontact/src/kontactconfig.desktop:23
+msgid "Comment=KDE Kontact"
+msgstr "Comment=KDE Контакт"
+
+#: kontact/src/kontactconfig.desktop:39
+msgid "Keywords=kontact"
+msgstr "Keywords=kontact,контакт"
 
 #: kontact/src/Kontact.desktop:13
 msgid "GenericName=Personal Information Manager"
@@ -1085,14 +1093,6 @@ msgstr "Comment=Информации за времето"
 msgid "Comment=News Ticker Component"
 msgstr ""
 
-#: kontact/src/kontactconfig.desktop:23
-msgid "Comment=KDE Kontact"
-msgstr "Comment=KDE Контакт"
-
-#: kontact/src/kontactconfig.desktop:39
-msgid "Keywords=kontact"
-msgstr "Keywords=kontact,контакт"
-
 #: korganizer/dcopcalendar.desktop:4
 msgid "Comment=Organizer with a DCOP interface"
 msgstr "Comment=Организатор со DCOP-интерфејс"
@@ -1117,18 +1117,6 @@ msgstr "Name=Клиент за потсетување во КОрганизат�
 #: korganizer/korgac/korgac.desktop:51
 msgid "GenericName=KOrganizer Reminder Daemon Client"
 msgstr ""
-
-#: korganizer/korganizer.desktop:3
-msgid "Comment=Calendar and Scheduling Program"
-msgstr "Comment=Програма за календари и закажувања"
-
-#: korganizer/korganizer.desktop:74
-msgid "Name=KOrganizer"
-msgstr "Name=КОрганизатор"
-
-#: korganizer/korganizer.desktop:88
-msgid "GenericName=Personal Organizer"
-msgstr "GenericName=Личен организатор"
 
 #: korganizer/korganizer_configcolors.desktop:14
 msgid "Name=Colors"
@@ -1249,6 +1237,18 @@ msgstr "Comment=Конфигурација на приказот"
 #: korganizer/korganizer_configviews.desktop:124
 msgid "Keywords=korganizer,view"
 msgstr "Keywords=korganizer,view,корганизатор,приказ"
+
+#: korganizer/korganizer.desktop:3
+msgid "Comment=Calendar and Scheduling Program"
+msgstr "Comment=Програма за календари и закажувања"
+
+#: korganizer/korganizer.desktop:74
+msgid "Name=KOrganizer"
+msgstr "Name=КОрганизатор"
+
+#: korganizer/korganizer.desktop:88
+msgid "GenericName=Personal Organizer"
+msgstr "GenericName=Личен организатор"
 
 #: korganizer/plugins/datenums/datenums.desktop:3
 msgid "Name=Date Numbers Plugin for Calendars"
@@ -1469,13 +1469,9 @@ msgid ""
 msgstr ""
 "Comment=Овој канал ги синхронизира рачниот уред и датумите од KОрганизатор."
 
-#: kpilot/kpilot/kpilot.desktop:3
-msgid "Name=KPilot"
-msgstr "Name=КПилот"
-
-#: kpilot/kpilot/kpilot.desktop:16
-msgid "GenericName=PalmPilot Tool"
-msgstr "GenericName=Алатка за PalmPilot"
+#: kpilot/kpilot/kpilotconduit.desktop:4
+msgid "Comment=KPilot Conduit"
+msgstr "Comment=Канал за КПилот"
 
 #: kpilot/kpilot/kpilot_config.desktop:13
 msgid "Name=KPilot Configuration"
@@ -1489,13 +1485,17 @@ msgstr "Comment=Главна конфигурација"
 msgid "Keywords=kpilot,main"
 msgstr "Keywords=kpilot,main.кпилот,главно"
 
-#: kpilot/kpilot/kpilotconduit.desktop:4
-msgid "Comment=KPilot Conduit"
-msgstr "Comment=Канал за КПилот"
-
 #: kpilot/kpilot/kpilotdaemon.desktop:3
 msgid "Name=KPilotDaemon"
 msgstr ""
+
+#: kpilot/kpilot/kpilot.desktop:3
+msgid "Name=KPilot"
+msgstr "Name=КПилот"
+
+#: kpilot/kpilot/kpilot.desktop:16
+msgid "GenericName=PalmPilot Tool"
+msgstr "GenericName=Алатка за PalmPilot"
 
 #: kresources/birthdays/kabc.desktop:2
 msgid "Name=Birthdays From KAddressBook"
@@ -1511,13 +1511,13 @@ msgstr ""
 msgid "Name=eGroupware Server (via XML-RPC)"
 msgstr ""
 
-#: kresources/exchange/exchange.desktop:7
-msgid "Name=Exchange 2000 Server"
-msgstr "Name=Exchange 2000-сервер"
-
 #: kresources/exchange/exchange_deprecated.desktop:3
 msgid "Name=Exchange 2000 Server (deprecated)"
 msgstr "Name=Exchange 2000-сервер (застарено)"
+
+#: kresources/exchange/exchange.desktop:7
+msgid "Name=Exchange 2000 Server"
+msgstr "Name=Exchange 2000-сервер"
 
 #: kresources/featureplan/kcal_resourcefeatureplan.desktop:2
 msgid "Name=XML Feature Plan"
