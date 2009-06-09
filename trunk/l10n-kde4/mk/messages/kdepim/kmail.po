@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-06-05 11:27+0200\n"
+"POT-Creation-Date: 2009-06-08 20:34+0200\n"
 "PO-Revision-Date: 2007-02-28 14:08+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -2556,7 +2556,7 @@ msgstr "Пребарувам во %1 (порака %2)"
 msgid "&Copy To"
 msgstr "&Копирај во"
 
-#: searchwindow.cpp:855 kmmainwidget.cpp:3973 messagelistview/widget.cpp:635
+#: searchwindow.cpp:855 kmmainwidget.cpp:3973 messagelistview/widget.cpp:636
 msgid "&Move To"
 msgstr "Пре&мести во"
 
@@ -2958,7 +2958,7 @@ msgstr "Тип"
 msgid "Encoding"
 msgstr "Кодирање"
 
-#: kmmimeparttree.cpp:66 messagelistview/core/view.cpp:2073
+#: kmmimeparttree.cpp:66 messagelistview/core/view.cpp:2240
 msgid "Size"
 msgstr "Големина"
 
@@ -3941,7 +3941,7 @@ msgstr "Примен&и ги сите филтри"
 #. i18n: ectx: Menu (apply_filter_actions)
 #. i18n: file: kmmainwin.rc:146
 #. i18n: ectx: Menu (apply_filter_actions)
-#: kmmainwidget.cpp:3987 rc.cpp:41 rc.cpp:107 rc.cpp:1305 rc.cpp:1347
+#: kmmainwidget.cpp:3987 rc.cpp:41 rc.cpp:107 rc.cpp:1311 rc.cpp:1353
 msgid "A&pply Filter"
 msgstr "&Примени филтер"
 
@@ -4216,13 +4216,15 @@ msgstr "&Испраќање"
 msgid "Outgoing accounts (add at least one):"
 msgstr "Излезни сметки (додајте барем една):"
 
-#: configuredialog.cpp:647
+#. i18n: file: ui/miscpagegroupwaretab.ui:241
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: configuredialog.cpp:647 rc.cpp:1169
 msgid "Common Options"
 msgstr "Општи опции"
 
 #. i18n: file: kmail.kcfg.cmake:378
 #. i18n: ectx: label, entry (ConfirmBeforeSend), group (Composer)
-#: configuredialog.cpp:657 rc.cpp:1584
+#: configuredialog.cpp:657 rc.cpp:1590
 msgid "Confirm &before send"
 msgstr "Потврди пред &испраќање"
 
@@ -4723,7 +4725,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:541
 #. i18n: ectx: label, entry (ShowEmoticons), group (Reader)
-#: configuredialog.cpp:1970 rc.cpp:1643
+#: configuredialog.cpp:1970 rc.cpp:1649
 msgid "Replace smileys by emoticons"
 msgstr ""
 
@@ -4733,7 +4735,7 @@ msgstr "Користи помал фонт за цитираниот текст"
 
 #. i18n: file: kmail.kcfg.cmake:546
 #. i18n: ectx: label, entry (ShowExpandQuotesMark), group (Reader)
-#: configuredialog.cpp:1978 rc.cpp:1649
+#: configuredialog.cpp:1978 rc.cpp:1655
 msgid "Show expand/collapse quote marks"
 msgstr ""
 
@@ -4751,7 +4753,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:105
 #. i18n: ectx: label, entry (SystemTrayEnabled), group (General)
-#: configuredialog.cpp:2207 rc.cpp:1435
+#: configuredialog.cpp:2207 rc.cpp:1441
 msgid "Enable system tray icon"
 msgstr "Овозможи икона во сис. лента"
 
@@ -4895,7 +4897,7 @@ msgstr "Без автом. зачувување"
 #. i18n: ectx: property (suffix), widget (KIntNumInput, intervalSpin)
 #. i18n: file: ui/maildirsettings.ui:83
 #. i18n: ectx: property (suffix), widget (KIntNumInput, intervalSpin)
-#: configuredialog.cpp:2916 rc.cpp:276 rc.cpp:615 rc.cpp:1065 rc.cpp:1190
+#: configuredialog.cpp:2916 rc.cpp:276 rc.cpp:615 rc.cpp:1065 rc.cpp:1196
 msgid " min"
 msgstr " мин"
 
@@ -5043,7 +5045,7 @@ msgstr "&Вредност:"
 
 #. i18n: file: kmail.kcfg.cmake:355
 #. i18n: ectx: label, entry (OutlookCompatibleAttachments), group (Composer)
-#: configuredialog.cpp:3605 rc.cpp:1578
+#: configuredialog.cpp:3605 rc.cpp:1584
 msgid "Outlook-compatible attachment naming"
 msgstr "Именување на прилози соодветно на Outlook"
 
@@ -5143,7 +5145,7 @@ msgstr "(Тековно поставување на системот: %1)"
 msgid "Groupware"
 msgstr ""
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:109
+#. i18n: file: ui/miscpagegroupwaretab.ui:110
 #. i18n: ectx: property (toolTip), widget (QLabel, mFolderComboLabel)
 #: configuredialog.cpp:4574 rc.cpp:1119
 msgid "Set the parent of the resource folders"
@@ -5838,55 +5840,55 @@ msgstr "Копирај во папката"
 msgid "Forward To"
 msgstr "Препрати на"
 
-#: kmfilteraction.cpp:1523
+#: kmfilteraction.cpp:1524
 #, fuzzy
 #| msgid "Please wait while the message is transferred"
 #| msgid_plural "Please wait while the %1 messages are transferred"
 msgid "The addressee to whom the message will be forwarded."
 msgstr "Почекајте додека се пренесува %1 порака"
 
-#: kmfilteraction.cpp:1524
+#: kmfilteraction.cpp:1525
 msgid "The filter will forward the message to the addressee entered here."
 msgstr ""
 
-#: kmfilteraction.cpp:1530
+#: kmfilteraction.cpp:1531
 #, fuzzy
 #| msgid "Delete T&hread"
 msgid "Default Template"
 msgstr "Избриши ја &нишката"
 
-#: kmfilteraction.cpp:1539
+#: kmfilteraction.cpp:1540
 #, fuzzy
 msgid "The template used when forwarding"
 msgstr "Листа со пораки - нови пораки"
 
-#: kmfilteraction.cpp:1540
+#: kmfilteraction.cpp:1541
 msgid "Set the forwarding template that will be used with this filter."
 msgstr ""
 
-#: kmfilteraction.cpp:1625
+#: kmfilteraction.cpp:1626
 #, fuzzy, kde-format
 msgid "Forward to %1 with default template"
 msgstr "За&мени"
 
-#: kmfilteraction.cpp:1627
+#: kmfilteraction.cpp:1628
 #, fuzzy, kde-format
 msgid "Forward to %1 with template %2"
 msgstr "За&мени"
 
-#: kmfilteraction.cpp:1648
+#: kmfilteraction.cpp:1649
 msgid "Redirect To"
 msgstr "Пренасочи на"
 
-#: kmfilteraction.cpp:1688
+#: kmfilteraction.cpp:1689
 msgid "Execute Command"
 msgstr "Изврши ја командата"
 
-#: kmfilteraction.cpp:1803
+#: kmfilteraction.cpp:1804
 msgid "Pipe Through"
 msgstr "Проследи преку"
 
-#: kmfilteraction.cpp:1927
+#: kmfilteraction.cpp:1928
 msgid "Play Sound"
 msgstr "Пушти звук"
 
@@ -6542,15 +6544,15 @@ msgstr "Оди на"
 msgid "Do Not Go To"
 msgstr "Не оди на"
 
-#: folderview.cpp:2277 messagelistview/widget.cpp:851
+#: folderview.cpp:2277 messagelistview/widget.cpp:852
 msgid "&Move Here"
 msgstr "Пре&мести тука"
 
-#: folderview.cpp:2280 messagelistview/widget.cpp:852
+#: folderview.cpp:2280 messagelistview/widget.cpp:853
 msgid "&Copy Here"
 msgstr "&Копирај тука"
 
-#: folderview.cpp:2282 messagelistview/widget.cpp:854
+#: folderview.cpp:2282 messagelistview/widget.cpp:855
 msgid "C&ancel"
 msgstr "Отк&ажи"
 
@@ -6728,20 +6730,20 @@ msgstr ""
 
 #. i18n: file: ui/miscpagemaintab.ui:221
 #. i18n: ectx: property (text), item, widget (KComboBox, mQuotaCmbBox)
-#: quotajobs.h:90 rc.cpp:1269
+#: quotajobs.h:90 rc.cpp:1275
 msgid "KB"
 msgstr ""
 
 #. i18n: file: ui/miscpagemaintab.ui:226
 #. i18n: ectx: property (text), item, widget (KComboBox, mQuotaCmbBox)
-#: quotajobs.h:95 rc.cpp:1272
+#: quotajobs.h:95 rc.cpp:1278
 #, fuzzy
 msgid "MB"
 msgstr " MB"
 
 #. i18n: file: ui/miscpagemaintab.ui:231
 #. i18n: ectx: property (text), item, widget (KComboBox, mQuotaCmbBox)
-#: quotajobs.h:100 rc.cpp:1275
+#: quotajobs.h:100 rc.cpp:1281
 msgid "GB"
 msgstr ""
 
@@ -7484,7 +7486,7 @@ msgctxt "File size in bytes"
 msgid "%1 B"
 msgstr ""
 
-#: kmfolderdialog.cpp:1065
+#: kmfolderdialog.cpp:1065 kmailicalifaceimpl.cpp:730
 #, fuzzy, kde-format
 #| msgid "Mail"
 msgid "%1 (%2)"
@@ -8313,7 +8315,7 @@ msgstr ""
 msgid "A fancy multiline and multi item theme with a clickable status column"
 msgstr ""
 
-#: messagelistview/core/manager.cpp:826 messagelistview/core/view.cpp:2060
+#: messagelistview/core/manager.cpp:826 messagelistview/core/view.cpp:2227
 msgid "Status"
 msgstr "Статус"
 
@@ -8417,7 +8419,7 @@ msgstr "Примач"
 msgid "Sender"
 msgstr "Испраќач"
 
-#: messagelistview/core/model.cpp:3776
+#: messagelistview/core/model.cpp:3782
 #, fuzzy, kde-format
 #| msgid "Threaded Message List Options"
 msgid "Processed 1 Message of %2"
@@ -8426,7 +8428,7 @@ msgstr[0] "Опции за листата со пораки во нишки"
 msgstr[1] "Опции за листата со пораки во нишки"
 msgstr[2] "Опции за листата со пораки во нишки"
 
-#: messagelistview/core/model.cpp:3779 messagelistview/core/model.cpp:3782
+#: messagelistview/core/model.cpp:3785 messagelistview/core/model.cpp:3788
 #, fuzzy, kde-format
 #| msgid "Threaded Message List Options"
 msgid "Threaded 1 Message of %2"
@@ -8435,7 +8437,7 @@ msgstr[0] "Опции за листата со пораки во нишки"
 msgstr[1] "Опции за листата со пораки во нишки"
 msgstr[2] "Опции за листата со пораки во нишки"
 
-#: messagelistview/core/model.cpp:3785
+#: messagelistview/core/model.cpp:3791
 #, fuzzy, kde-format
 #| msgid "&Reading"
 msgid "Grouped 1 Thread of %2"
@@ -8444,7 +8446,7 @@ msgstr[0] "&Читање"
 msgstr[1] "&Читање"
 msgstr[2] "&Читање"
 
-#: messagelistview/core/model.cpp:3788
+#: messagelistview/core/model.cpp:3794
 #, kde-format
 msgid "Updated 1 Group of %2"
 msgid_plural "Updated %1 Groups of %2"
@@ -8452,7 +8454,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: messagelistview/core/model.cpp:3869
+#: messagelistview/core/model.cpp:3875
 #, fuzzy
 #| msgctxt "Permissions"
 #| msgid "Read"
@@ -9304,25 +9306,25 @@ msgstr ""
 msgid "Show Default Columns"
 msgstr "Покажи &секогаш"
 
-#: messagelistview/core/view.cpp:2012 kmsearchpatternedit.cpp:66
+#: messagelistview/core/view.cpp:2179 kmsearchpatternedit.cpp:66
 #, fuzzy
 #| msgid "&From"
 msgid "From"
 msgstr "&Од"
 
-#: messagelistview/core/view.cpp:2025
+#: messagelistview/core/view.cpp:2192
 #, fuzzy
 #| msgid "To"
 msgctxt "Receiver of the emial"
 msgid "To"
 msgstr "До"
 
-#: messagelistview/core/view.cpp:2038 messagelistview/core/view.cpp:2373
+#: messagelistview/core/view.cpp:2205 messagelistview/core/view.cpp:2540
 #: templatesinsertcommand.cpp:66 templatesinsertcommand.cpp:190
 msgid "Date"
 msgstr "Датум"
 
-#: messagelistview/core/view.cpp:2092
+#: messagelistview/core/view.cpp:2259
 #, kde-format
 msgid "<b>%1</b> reply"
 msgid_plural "<b>%1</b> replies"
@@ -9330,7 +9332,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: messagelistview/core/view.cpp:2096
+#: messagelistview/core/view.cpp:2263
 #, kde-format
 msgid "<b>%1</b> message in subtree (<b>%2</b> new + <b>%3</b> unread)"
 msgid_plural "<b>%1</b> messages in subtree (<b>%2</b> new + <b>%3</b> unread)"
@@ -9338,33 +9340,33 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: messagelistview/core/view.cpp:2142
+#: messagelistview/core/view.cpp:2309
 #, kde-format
 msgctxt ""
 "@info:tooltip Formats to something like 'Threads started on 2008-12-21'"
 msgid "Threads started on %1"
 msgstr ""
 
-#: messagelistview/core/view.cpp:2148
+#: messagelistview/core/view.cpp:2315
 #, kde-format
 msgctxt "@info:tooltip Formats to something like 'Threads started Yesterday'"
 msgid "Threads started %1"
 msgstr ""
 
-#: messagelistview/core/view.cpp:2153
+#: messagelistview/core/view.cpp:2320
 #, fuzzy, kde-format
 #| msgid "&Threaded message list"
 msgid "Threads with messages dated %1"
 msgstr "Листа со пораки во &нишки"
 
-#: messagelistview/core/view.cpp:2165
+#: messagelistview/core/view.cpp:2332
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgctxt "@info:tooltip Formats to something like 'Messages sent on 2008-12-21'"
 msgid "Messages sent on %1"
 msgstr "Пораката е потпишана од %1."
 
-#: messagelistview/core/view.cpp:2171
+#: messagelistview/core/view.cpp:2338
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgctxt ""
@@ -9372,87 +9374,87 @@ msgctxt ""
 msgid "Messages received on %1"
 msgstr "Пораката е потпишана од %1."
 
-#: messagelistview/core/view.cpp:2178
+#: messagelistview/core/view.cpp:2345
 #, fuzzy, kde-format
 msgctxt "@info:tooltip Formats to something like 'Messages sent Yesterday'"
 msgid "Messages sent %1"
 msgstr "Листа со пораки"
 
-#: messagelistview/core/view.cpp:2184
+#: messagelistview/core/view.cpp:2351
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgctxt "@info:tooltip Formats to something like 'Messages received Yesterday'"
 msgid "Messages received %1"
 msgstr "Пораката е потпишана од %1."
 
-#: messagelistview/core/view.cpp:2196
+#: messagelistview/core/view.cpp:2363
 #, kde-format
 msgid "Threads started within %1"
 msgstr ""
 
-#: messagelistview/core/view.cpp:2199
+#: messagelistview/core/view.cpp:2366
 #, kde-format
 msgid "Threads containing messages with dates within %1"
 msgstr ""
 
-#: messagelistview/core/view.cpp:2207
+#: messagelistview/core/view.cpp:2374
 #, fuzzy, kde-format
 #| msgid "Message was signed with key %1."
 msgid "Messages sent within %1"
 msgstr "Пораката е потпишана со клучот %1."
 
-#: messagelistview/core/view.cpp:2209
+#: messagelistview/core/view.cpp:2376
 #, fuzzy, kde-format
 #| msgid "Message was signed with key %1."
 msgid "Messages received within %1"
 msgstr "Пораката е потпишана со клучот %1."
 
-#: messagelistview/core/view.cpp:2219
+#: messagelistview/core/view.cpp:2386
 #, kde-format
 msgid "Threads started by %1"
 msgstr ""
 
-#: messagelistview/core/view.cpp:2222
+#: messagelistview/core/view.cpp:2389
 #, kde-format
 msgid "Threads with most recent message by %1"
 msgstr ""
 
-#: messagelistview/core/view.cpp:2232 messagelistview/core/view.cpp:2258
+#: messagelistview/core/view.cpp:2399 messagelistview/core/view.cpp:2425
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgid "Messages sent to %1"
 msgstr "Пораката е потпишана од %1."
 
-#: messagelistview/core/view.cpp:2234
+#: messagelistview/core/view.cpp:2401
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgid "Messages sent by %1"
 msgstr "Пораката е потпишана од %1."
 
-#: messagelistview/core/view.cpp:2236
+#: messagelistview/core/view.cpp:2403
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgid "Messages received from %1"
 msgstr "Пораката е потпишана од %1."
 
-#: messagelistview/core/view.cpp:2246
+#: messagelistview/core/view.cpp:2413
 #, fuzzy, kde-format
 #| msgid "Threads default to o&pen"
 msgid "Threads directed to %1"
 msgstr "Нишките се стандардно &отворени"
 
-#: messagelistview/core/view.cpp:2249
+#: messagelistview/core/view.cpp:2416
 #, kde-format
 msgid "Threads with most recent message directed to %1"
 msgstr ""
 
-#: messagelistview/core/view.cpp:2260
+#: messagelistview/core/view.cpp:2427
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgid "Messages received by %1"
 msgstr "Пораката е потпишана од %1."
 
-#: messagelistview/core/view.cpp:2289
+#: messagelistview/core/view.cpp:2456
 #, fuzzy, kde-format
 #| msgid "<b>Bad</b> signature"
 msgid "<b>%1</b> thread"
@@ -9461,7 +9463,7 @@ msgstr[0] "<b>Лош</b> потпис"
 msgstr[1] "<b>Лош</b> потпис"
 msgstr[2] "<b>Лош</b> потпис"
 
-#: messagelistview/core/view.cpp:2294
+#: messagelistview/core/view.cpp:2461
 #, kde-format
 msgid "<b>%1</b> message (<b>%2</b> new + <b>%3</b> unread)"
 msgid_plural "<b>%1</b> messages (<b>%2</b> new + <b>%3</b> unread)"
@@ -9469,11 +9471,11 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: messagelistview/core/view.cpp:2375
+#: messagelistview/core/view.cpp:2542
 msgid "Date (Order of Arrival)"
 msgstr "Датум (Редослед на пристигање)"
 
-#: messagelistview/core/view.cpp:2386
+#: messagelistview/core/view.cpp:2553
 #, fuzzy, kde-format
 #| msgid "1 unsent"
 #| msgid_plural "%1 unsent"
@@ -9484,11 +9486,11 @@ msgstr[0] "%1 неиспратена"
 msgstr[1] "%1 неиспратени"
 msgstr[2] "%1 неиспратени"
 
-#: messagelistview/core/view.cpp:2386
+#: messagelistview/core/view.cpp:2553
 msgid "0 unsent"
 msgstr "0 неиспратени"
 
-#: messagelistview/core/view.cpp:2388
+#: messagelistview/core/view.cpp:2555
 #, fuzzy, kde-format
 #| msgid "1 unread"
 #| msgid_plural "%1 unread"
@@ -9499,14 +9501,14 @@ msgstr[0] "%1 непрочитана"
 msgstr[1] "%1 непрочитани"
 msgstr[2] "%1 непрочитани"
 
-#: messagelistview/core/view.cpp:2389
+#: messagelistview/core/view.cpp:2556
 #, fuzzy
 #| msgid "0 unread"
 msgctxt "No unread messages"
 msgid "0 unread"
 msgstr "0 непрочитани"
 
-#: messagelistview/core/view.cpp:2391
+#: messagelistview/core/view.cpp:2558
 #, fuzzy, kde-format
 #| msgid "1 message, %2."
 #| msgid_plural "%1 messages, %2."
@@ -9517,24 +9519,24 @@ msgstr[0] "%1 порака, %2."
 msgstr[1] "%1 пораки, %2."
 msgstr[2] "%1 пораки, %2."
 
-#: messagelistview/core/view.cpp:2392
+#: messagelistview/core/view.cpp:2559
 #, fuzzy
 #| msgid "0 messages"
 msgctxt "No unread messages"
 msgid "0 messages"
 msgstr "0 пораки"
 
-#: messagelistview/core/view.cpp:2394
+#: messagelistview/core/view.cpp:2561
 #, kde-format
 msgctxt "%1 = n messages, m unread."
 msgid "%1 Folder is read-only."
 msgstr "%1, папката е само за читање."
 
-#: messagelistview/widget.cpp:692
+#: messagelistview/widget.cpp:693
 msgid "Expand All Groups"
 msgstr ""
 
-#: messagelistview/widget.cpp:698
+#: messagelistview/widget.cpp:699
 msgid "Collapse All Groups"
 msgstr ""
 
@@ -9603,19 +9605,19 @@ msgstr "Избриши ја &нишката"
 msgid "Default Sort Order"
 msgstr "Бришење на папка"
 
-#: messagelistview/pane.cpp:208 messagelistview/pane.cpp:397
+#: messagelistview/pane.cpp:224 messagelistview/pane.cpp:422
 #, fuzzy
 #| msgid "Empty"
 msgctxt "@title:tab Empty messagelist"
 msgid "Empty"
 msgstr "Празно"
 
-#: messagelistview/pane.cpp:280
+#: messagelistview/pane.cpp:305
 msgctxt "@action:inmenu"
 msgid "Close Tab"
 msgstr ""
 
-#: messagelistview/pane.cpp:289
+#: messagelistview/pane.cpp:314
 msgctxt "@action:inmenu"
 msgid "Close All Other Tabs"
 msgstr ""
@@ -10121,21 +10123,21 @@ msgstr ""
 
 #. i18n: file: customtemplates_kfg.kcfg:12
 #. i18n: ectx: label, entry (Content), group (CTemplates #$(name))
-#: rc.cpp:3 rc.cpp:1386
+#: rc.cpp:3 rc.cpp:1392
 #, fuzzy
 msgid "Template content"
 msgstr "Содржина на &папка:"
 
 #. i18n: file: customtemplates_kfg.kcfg:17
 #. i18n: ectx: label, entry (Shortcut), group (CTemplates #$(name))
-#: rc.cpp:7 rc.cpp:1390
+#: rc.cpp:7 rc.cpp:1396
 #, fuzzy
 msgid "Template shortcut"
 msgstr "За&мени"
 
 #. i18n: file: customtemplates_kfg.kcfg:22
 #. i18n: ectx: label, entry (Type), group (CTemplates #$(name))
-#: rc.cpp:11 rc.cpp:1394
+#: rc.cpp:11 rc.cpp:1400
 #, fuzzy
 msgid "Template type"
 msgstr "За&мени"
@@ -10152,14 +10154,14 @@ msgstr "За&мени"
 #. i18n: ectx: Menu (file)
 #. i18n: file: kmreadermainwin.rc:5
 #. i18n: ectx: Menu (file)
-#: rc.cpp:14 rc.cpp:80 rc.cpp:122 rc.cpp:1278 rc.cpp:1320 rc.cpp:1739
+#: rc.cpp:14 rc.cpp:80 rc.cpp:122 rc.cpp:1284 rc.cpp:1326 rc.cpp:1745
 #, fuzzy
 msgid "&File"
 msgstr "датотека"
 
 #. i18n: file: kmail_part.rc:10
 #. i18n: ectx: Menu (file_new)
-#: rc.cpp:17 rc.cpp:1281
+#: rc.cpp:17 rc.cpp:1287
 #, fuzzy
 #| msgid "New"
 msgctxt "@title:menu for new-message and new-from-template"
@@ -10178,7 +10180,7 @@ msgstr "Нов"
 #. i18n: ectx: Menu (edit)
 #. i18n: file: kmcomposerui.rc:23
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:20 rc.cpp:59 rc.cpp:86 rc.cpp:1284 rc.cpp:1326 rc.cpp:1365
+#: rc.cpp:20 rc.cpp:59 rc.cpp:86 rc.cpp:1290 rc.cpp:1332 rc.cpp:1371
 #, fuzzy
 msgid "&Edit"
 msgstr "Излези"
@@ -10199,8 +10201,8 @@ msgstr "Излези"
 #. i18n: ectx: Menu (view)
 #. i18n: file: kmreadermainwin.rc:15
 #. i18n: ectx: Menu (view)
-#: rc.cpp:23 rc.cpp:65 rc.cpp:89 rc.cpp:125 rc.cpp:1287 rc.cpp:1329
-#: rc.cpp:1371 rc.cpp:1742
+#: rc.cpp:23 rc.cpp:65 rc.cpp:89 rc.cpp:125 rc.cpp:1293 rc.cpp:1335
+#: rc.cpp:1377 rc.cpp:1748
 #, fuzzy
 msgid "&View"
 msgstr "Прегледај"
@@ -10213,7 +10215,7 @@ msgstr "Прегледај"
 #. i18n: ectx: Menu (go)
 #. i18n: file: kmmainwin.rc:81
 #. i18n: ectx: Menu (go)
-#: rc.cpp:26 rc.cpp:92 rc.cpp:1290 rc.cpp:1332
+#: rc.cpp:26 rc.cpp:92 rc.cpp:1296 rc.cpp:1338
 msgid "&Go"
 msgstr "&Оди"
 
@@ -10225,7 +10227,7 @@ msgstr "&Оди"
 #. i18n: ectx: Menu (folder)
 #. i18n: file: kmmainwin.rc:93
 #. i18n: ectx: Menu (folder)
-#: rc.cpp:29 rc.cpp:95 rc.cpp:1293 rc.cpp:1335
+#: rc.cpp:29 rc.cpp:95 rc.cpp:1299 rc.cpp:1341
 msgid "F&older"
 msgstr "Пап&ка"
 
@@ -10245,8 +10247,8 @@ msgstr "Пап&ка"
 #. i18n: ectx: Menu (file)
 #. i18n: file: kmreadermainwin.rc:25
 #. i18n: ectx: Menu (message)
-#: rc.cpp:32 rc.cpp:56 rc.cpp:98 rc.cpp:128 rc.cpp:1296 rc.cpp:1338
-#: rc.cpp:1362 rc.cpp:1745
+#: rc.cpp:32 rc.cpp:56 rc.cpp:98 rc.cpp:128 rc.cpp:1302 rc.cpp:1344
+#: rc.cpp:1368 rc.cpp:1751
 msgid "&Message"
 msgstr "&Порака"
 
@@ -10262,7 +10264,7 @@ msgstr "&Порака"
 #. i18n: ectx: Menu (reply_special)
 #. i18n: file: kmreadermainwin.rc:32
 #. i18n: ectx: Menu (reply_special)
-#: rc.cpp:35 rc.cpp:101 rc.cpp:131 rc.cpp:1299 rc.cpp:1341 rc.cpp:1748
+#: rc.cpp:35 rc.cpp:101 rc.cpp:131 rc.cpp:1305 rc.cpp:1347 rc.cpp:1754
 msgid "Reply Special"
 msgstr "Одговори специјално"
 
@@ -10278,7 +10280,7 @@ msgstr "Одговори специјално"
 #. i18n: ectx: Menu (menubar_message_forward)
 #. i18n: file: kmreadermainwin.rc:41
 #. i18n: ectx: Menu (menubar_message_forward)
-#: rc.cpp:38 rc.cpp:104 rc.cpp:134 rc.cpp:1302 rc.cpp:1344 rc.cpp:1751
+#: rc.cpp:38 rc.cpp:104 rc.cpp:134 rc.cpp:1308 rc.cpp:1350 rc.cpp:1757
 msgid "&Forward"
 msgstr "&Препрати"
 
@@ -10290,7 +10292,7 @@ msgstr "&Препрати"
 #. i18n: ectx: Menu (tools)
 #. i18n: file: kmmainwin.rc:154
 #. i18n: ectx: Menu (tools)
-#: rc.cpp:44 rc.cpp:110 rc.cpp:1308 rc.cpp:1350
+#: rc.cpp:44 rc.cpp:110 rc.cpp:1314 rc.cpp:1356
 #, fuzzy
 msgid "&Tools"
 msgstr "&До"
@@ -10311,8 +10313,8 @@ msgstr "&До"
 #. i18n: ectx: Menu (settings)
 #. i18n: file: kmreadermainwin.rc:59
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:47 rc.cpp:71 rc.cpp:113 rc.cpp:137 rc.cpp:1311 rc.cpp:1353
-#: rc.cpp:1377 rc.cpp:1754
+#: rc.cpp:47 rc.cpp:71 rc.cpp:113 rc.cpp:137 rc.cpp:1317 rc.cpp:1359
+#: rc.cpp:1383 rc.cpp:1760
 #, fuzzy
 msgid "&Settings"
 msgstr "&Испраќање"
@@ -10325,7 +10327,7 @@ msgstr "&Испраќање"
 #. i18n: ectx: Menu (help)
 #. i18n: file: kmmainwin.rc:184
 #. i18n: ectx: Menu (help)
-#: rc.cpp:50 rc.cpp:116 rc.cpp:1314 rc.cpp:1356
+#: rc.cpp:50 rc.cpp:116 rc.cpp:1320 rc.cpp:1362
 #, fuzzy
 msgid "&Help"
 msgstr "&Бипни"
@@ -10346,34 +10348,34 @@ msgstr "&Бипни"
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: kmreadermainwin.rc:68
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:53 rc.cpp:74 rc.cpp:119 rc.cpp:140 rc.cpp:1317 rc.cpp:1359
-#: rc.cpp:1380 rc.cpp:1757
+#: rc.cpp:53 rc.cpp:74 rc.cpp:119 rc.cpp:140 rc.cpp:1323 rc.cpp:1365
+#: rc.cpp:1386 rc.cpp:1763
 #, fuzzy
 msgid "Main Toolbar"
 msgstr "Алатник за HTML"
 
 #. i18n: file: kmcomposerui.rc:32
 #. i18n: ectx: Menu (options)
-#: rc.cpp:62 rc.cpp:1368
+#: rc.cpp:62 rc.cpp:1374
 #, fuzzy
 msgid "&Options"
 msgstr "Општи опции"
 
 #. i18n: file: kmcomposerui.rc:66
 #. i18n: ectx: Menu (attach)
-#: rc.cpp:68 rc.cpp:1374 kmcomposewin.cpp:2271
+#: rc.cpp:68 rc.cpp:1380 kmcomposewin.cpp:2271
 msgid "&Attach"
 msgstr "&Приложи"
 
 #. i18n: file: kmcomposerui.rc:104
 #. i18n: ectx: ToolBar (htmlToolBar)
-#: rc.cpp:77 rc.cpp:1383
+#: rc.cpp:77 rc.cpp:1389
 msgid "HTML Toolbar"
 msgstr "Алатник за HTML"
 
 #. i18n: file: kmmainwin.rc:10
 #. i18n: ectx: Menu (file_new)
-#: rc.cpp:83 rc.cpp:1323
+#: rc.cpp:83 rc.cpp:1329
 #, fuzzy
 #| msgid "New"
 msgctxt "@title:menu New message, folder or new window."
@@ -10541,7 +10543,7 @@ msgstr "Општо"
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: file: ui/maildirsettings.ui:29
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:202 rc.cpp:545 rc.cpp:1029 rc.cpp:1172
+#: rc.cpp:202 rc.cpp:545 rc.cpp:1029 rc.cpp:1178
 msgid "Account &name:"
 msgstr "Име на &сметка:"
 
@@ -10735,7 +10737,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, intervalCheck)
 #. i18n: file: ui/maildirsettings.ui:66
 #. i18n: ectx: property (text), widget (QCheckBox, intervalCheck)
-#: rc.cpp:270 rc.cpp:609 rc.cpp:1059 rc.cpp:1184
+#: rc.cpp:270 rc.cpp:609 rc.cpp:1059 rc.cpp:1190
 msgid "Enable &interval mail checking"
 msgstr "Овозможи проверка на пошта на &интервали"
 
@@ -10745,7 +10747,7 @@ msgstr "Овозможи проверка на пошта на &интервал
 #. i18n: ectx: property (text), widget (QLabel, intervalLabel)
 #. i18n: file: ui/maildirsettings.ui:73
 #. i18n: ectx: property (text), widget (QLabel, intervalLabel)
-#: rc.cpp:273 rc.cpp:1062 rc.cpp:1187
+#: rc.cpp:273 rc.cpp:1062 rc.cpp:1193
 msgid "Check inter&val:"
 msgstr "Интер&вал за проверување:"
 
@@ -12250,7 +12252,7 @@ msgstr "&Локација на датотеката:"
 #. i18n: ectx: property (text), widget (QPushButton, choose)
 #. i18n: file: ui/maildirsettings.ui:52
 #. i18n: ectx: property (text), widget (QPushButton, choose)
-#: rc.cpp:1035 rc.cpp:1178
+#: rc.cpp:1035 rc.cpp:1184
 msgid "Choo&se..."
 msgstr "И&збери..."
 
@@ -12300,7 +12302,7 @@ msgstr "Вклучи при р&ачни проверки на пошта"
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: file: ui/maildirsettings.ui:90
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:1068 rc.cpp:1193
+#: rc.cpp:1068 rc.cpp:1199
 #, fuzzy
 #| msgid "&Destination folder:"
 msgid "Destination folder:"
@@ -12314,46 +12316,46 @@ msgstr "О&дредишна папка:"
 msgid "&Pre-command"
 msgstr "&Пред-команда:"
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:18
+#. i18n: file: ui/miscpagegroupwaretab.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: rc.cpp:1074
 msgid "IMAP Resource Folder Options"
 msgstr ""
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:24
+#. i18n: file: ui/miscpagegroupwaretab.ui:25
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mEnableImapResCB)
 #: rc.cpp:1077
 msgid "This enables the IMAP storage for the Kontact applications"
 msgstr ""
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:27
+#. i18n: file: ui/miscpagegroupwaretab.ui:28
 #. i18n: ectx: property (text), widget (QCheckBox, mEnableImapResCB)
 #: rc.cpp:1080
 msgid "&Enable IMAP resource functionality"
 msgstr ""
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:39
+#. i18n: file: ui/miscpagegroupwaretab.ui:40
 #. i18n: ectx: property (toolTip), widget (QLabel, storageFormatLA)
-#. i18n: file: ui/miscpagegroupwaretab.ui:52
+#. i18n: file: ui/miscpagegroupwaretab.ui:53
 #. i18n: ectx: property (toolTip), widget (KComboBox, mStorageFormatCombo)
 #: rc.cpp:1083 rc.cpp:1089
 msgid ""
 "Choose the format to use to store the contents of the groupware folders."
 msgstr ""
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:42
+#. i18n: file: ui/miscpagegroupwaretab.ui:43
 #. i18n: ectx: property (text), widget (QLabel, storageFormatLA)
 #: rc.cpp:1086
 msgid "&Format used for the groupware folders:"
 msgstr ""
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:56
+#. i18n: file: ui/miscpagegroupwaretab.ui:57
 #. i18n: ectx: property (text), item, widget (KComboBox, mStorageFormatCombo)
 #: rc.cpp:1092
 msgid "Deprecated Kolab1 (iCal/vCard)"
 msgstr ""
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:61
+#. i18n: file: ui/miscpagegroupwaretab.ui:62
 #. i18n: ectx: property (text), item, widget (KComboBox, mStorageFormatCombo)
 #: rc.cpp:1095
 #, fuzzy
@@ -12361,21 +12363,21 @@ msgstr ""
 msgid "Kolab2 (XML)"
 msgstr "Kolab (XML)"
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:69
+#. i18n: file: ui/miscpagegroupwaretab.ui:70
 #. i18n: ectx: property (toolTip), widget (QLabel, label_2)
-#. i18n: file: ui/miscpagegroupwaretab.ui:82
+#. i18n: file: ui/miscpagegroupwaretab.ui:83
 #. i18n: ectx: property (toolTip), widget (KComboBox, mLanguageCombo)
 #: rc.cpp:1098 rc.cpp:1104
 msgid "Set the language of the folder names"
 msgstr ""
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:72
+#. i18n: file: ui/miscpagegroupwaretab.ui:73
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:1101
 msgid "&Language of the groupware folders:"
 msgstr ""
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:86
+#. i18n: file: ui/miscpagegroupwaretab.ui:87
 #. i18n: ectx: property (text), item, widget (KComboBox, mLanguageCombo)
 #: rc.cpp:1107
 #, fuzzy
@@ -12383,7 +12385,7 @@ msgstr ""
 msgid "English"
 msgstr "Англиски"
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:91
+#. i18n: file: ui/miscpagegroupwaretab.ui:92
 #. i18n: ectx: property (text), item, widget (KComboBox, mLanguageCombo)
 #: rc.cpp:1110
 #, fuzzy
@@ -12391,7 +12393,7 @@ msgstr "Англиски"
 msgid "German"
 msgstr "Германски"
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:96
+#. i18n: file: ui/miscpagegroupwaretab.ui:97
 #. i18n: ectx: property (text), item, widget (KComboBox, mLanguageCombo)
 #: rc.cpp:1113
 #, fuzzy
@@ -12399,7 +12401,7 @@ msgstr "Германски"
 msgid "French"
 msgstr "Француски"
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:101
+#. i18n: file: ui/miscpagegroupwaretab.ui:102
 #. i18n: ectx: property (text), item, widget (KComboBox, mLanguageCombo)
 #: rc.cpp:1116
 #, fuzzy
@@ -12407,55 +12409,55 @@ msgstr "Француски"
 msgid "Dutch"
 msgstr "Холандски"
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:119
-#. i18n: ectx: property (toolTip), widget (QCheckBox, mOnlyShowGroupwareFolders)
-#: rc.cpp:1122
-msgid ""
-"When this is checked, you will not see normal mail folders in the folder "
-"tree for the account configured for groupware."
-msgstr ""
-
-#. i18n: file: ui/miscpagegroupwaretab.ui:122
-#. i18n: ectx: property (text), widget (QCheckBox, mOnlyShowGroupwareFolders)
-#: rc.cpp:1125
-msgid "&Only show groupware folders for this account"
-msgstr ""
-
-#. i18n: file: ui/miscpagegroupwaretab.ui:129
-#. i18n: ectx: property (toolTip), widget (QCheckBox, mSyncImmediately)
-#: rc.cpp:1128
-msgid ""
-"Synchronize groupware changes in disconnected IMAP folders immediately when "
-"being online."
-msgstr ""
-
-#. i18n: file: ui/miscpagegroupwaretab.ui:132
-#. i18n: ectx: property (text), widget (QCheckBox, mSyncImmediately)
-#: rc.cpp:1131
-msgid "&Synchronize groupware changes immediately"
-msgstr ""
-
-#. i18n: file: ui/miscpagegroupwaretab.ui:146
+#. i18n: file: ui/miscpagegroupwaretab.ui:147
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mHideGroupwareFolders)
-#: rc.cpp:1134
+#: rc.cpp:1122
 msgid ""
 "When this is checked, you will not see the IMAP resource folders in the "
 "folder tree."
 msgstr ""
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:149
+#. i18n: file: ui/miscpagegroupwaretab.ui:150
 #. i18n: ectx: property (text), widget (QCheckBox, mHideGroupwareFolders)
-#: rc.cpp:1137
+#: rc.cpp:1125
 msgid "&Hide groupware folders"
 msgstr ""
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:191
+#. i18n: file: ui/miscpagegroupwaretab.ui:157
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mOnlyShowGroupwareFolders)
+#: rc.cpp:1128
+msgid ""
+"When this is checked, you will not see normal mail folders in the folder "
+"tree for the account configured for groupware."
+msgstr ""
+
+#. i18n: file: ui/miscpagegroupwaretab.ui:160
+#. i18n: ectx: property (text), widget (QCheckBox, mOnlyShowGroupwareFolders)
+#: rc.cpp:1131
+msgid "&Only show groupware folders for this account"
+msgstr ""
+
+#. i18n: file: ui/miscpagegroupwaretab.ui:167
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mSyncImmediately)
+#: rc.cpp:1134
+msgid ""
+"Synchronize groupware changes in disconnected IMAP folders immediately when "
+"being online."
+msgstr ""
+
+#. i18n: file: ui/miscpagegroupwaretab.ui:170
+#. i18n: ectx: property (text), widget (QCheckBox, mSyncImmediately)
+#: rc.cpp:1137
+msgid "&Synchronize groupware changes immediately"
+msgstr ""
+
+#. i18n: file: ui/miscpagegroupwaretab.ui:185
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: rc.cpp:1140
 msgid "Groupware Compatibility && Legacy Options"
 msgstr ""
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:197
+#. i18n: file: ui/miscpagegroupwaretab.ui:191
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mLegacyMangleFromTo)
 #: rc.cpp:1143
 #, fuzzy
@@ -12466,13 +12468,13 @@ msgstr ""
 "Изберете ја оваа опција за Outlook(tm) да може да ги разбира имињата на "
 "прилозите што содржат не-англиски знаци."
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:200
+#. i18n: file: ui/miscpagegroupwaretab.ui:194
 #. i18n: ectx: property (text), widget (QCheckBox, mLegacyMangleFromTo)
 #: rc.cpp:1146
 msgid "&Mangle From:/To: headers in replies to invitations"
 msgstr ""
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:207
+#. i18n: file: ui/miscpagegroupwaretab.ui:201
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mLegacyBodyInvites)
 #: rc.cpp:1149
 #, fuzzy
@@ -12483,13 +12485,13 @@ msgstr ""
 "Изберете ја оваа опција за Outlook(tm) да може да ги разбира имињата на "
 "прилозите што содржат не-англиски знаци."
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:210
+#. i18n: file: ui/miscpagegroupwaretab.ui:204
 #. i18n: ectx: property (text), widget (QCheckBox, mLegacyBodyInvites)
 #: rc.cpp:1152
 msgid "Send &invitations in the mail body"
 msgstr ""
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:219
+#. i18n: file: ui/miscpagegroupwaretab.ui:213
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExchangeCompatibleInvitations)
 #: rc.cpp:1155
 msgid ""
@@ -12500,13 +12502,13 @@ msgid ""
 "Exchange understands."
 msgstr ""
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:222
+#. i18n: file: ui/miscpagegroupwaretab.ui:216
 #. i18n: ectx: property (text), widget (QCheckBox, mExchangeCompatibleInvitations)
 #: rc.cpp:1160
 msgid "Exchange-compatible invitation &naming"
 msgstr ""
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:229
+#. i18n: file: ui/miscpagegroupwaretab.ui:223
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mAutomaticSending)
 #: rc.cpp:1163
 msgid ""
@@ -12514,21 +12516,29 @@ msgid ""
 "mails are sent automatically."
 msgstr ""
 
-#. i18n: file: ui/miscpagegroupwaretab.ui:232
+#. i18n: file: ui/miscpagegroupwaretab.ui:226
 #. i18n: ectx: property (text), widget (QCheckBox, mAutomaticSending)
 #: rc.cpp:1166
 msgid "&Automatic invitation sending"
 msgstr ""
 
+#. i18n: file: ui/miscpagegroupwaretab.ui:247
+#. i18n: ectx: property (text), widget (QCheckBox, mDeleteInvitations)
+#. i18n: file: kmail.kcfg.cmake:193
+#. i18n: ectx: label, entry (DeleteInvitationEmailsAfterSendingReply), group (Groupware)
+#: rc.cpp:1172 rc.cpp:1495
+msgid "Delete invitation emails after the reply to them has been sent"
+msgstr ""
+
 #. i18n: file: ui/maildirsettings.ui:22
 #. i18n: ectx: property (text), widget (QLabel, titleLabel)
-#: rc.cpp:1169
+#: rc.cpp:1175
 msgid "Account Type: Maildir Account"
 msgstr "Тип на сметка: Maildir-сметка"
 
 #. i18n: file: ui/maildirsettings.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:1175
+#: rc.cpp:1181
 #, fuzzy
 #| msgid "Folder &location:"
 msgid "Folder location:"
@@ -12536,19 +12546,19 @@ msgstr "&Локација на папката:"
 
 #. i18n: file: ui/maildirsettings.ui:59
 #. i18n: ectx: property (text), widget (QCheckBox, includeInCheck)
-#: rc.cpp:1181
+#: rc.cpp:1187
 msgid "Include in &manual mail check"
 msgstr "Вклучи при р&ачни проверки на пошта"
 
 #. i18n: file: ui/maildirsettings.ui:97
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:1196
+#: rc.cpp:1202
 msgid "&Pre-command:"
 msgstr "&Пред-команда:"
 
 #. i18n: file: ui/miscpagemaintab.ui:18
 #. i18n: ectx: property (text), widget (QCheckBox, mEmptyFolderConfirmCheck)
-#: rc.cpp:1199
+#: rc.cpp:1205
 #, fuzzy
 #| msgctxt "Corresponds to Folder->Move All Messages to Trash"
 #| msgid "Ask for co&nfirmation before moving all messages to trash"
@@ -12558,13 +12568,13 @@ msgstr "Не прашувај за потврда пред &преместува
 
 #. i18n: file: ui/miscpagemaintab.ui:25
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeImportantFromExpiry)
-#: rc.cpp:1202
+#: rc.cpp:1208
 msgid "E&xclude important messages from expiry"
 msgstr ""
 
 #. i18n: file: ui/miscpagemaintab.ui:38
 #. i18n: ectx: property (text), widget (QLabel, mLoopLabel)
-#: rc.cpp:1205
+#: rc.cpp:1211
 #, fuzzy
 #| msgctxt ""
 #| "to be continued with \"do not loop\", \"loop in current folder\", and "
@@ -12578,7 +12588,7 @@ msgstr "При обид за пронаоѓање на непрочитани п
 
 #. i18n: file: ui/miscpagemaintab.ui:59
 #. i18n: ectx: property (whatsThis), widget (KComboBox, mLoopOnGotoUnread)
-#: rc.cpp:1208
+#: rc.cpp:1214
 #, fuzzy
 #| msgctxt "what's this help"
 #| msgid ""
@@ -12620,7 +12630,7 @@ msgstr ""
 
 #. i18n: file: ui/miscpagemaintab.ui:63
 #. i18n: ectx: property (text), item, widget (KComboBox, mLoopOnGotoUnread)
-#: rc.cpp:1216
+#: rc.cpp:1222
 #, fuzzy
 #| msgctxt "continuation of \"When trying to find unread messages:\""
 #| msgid "Do not Loop"
@@ -12629,7 +12639,7 @@ msgstr "не врти во јамка"
 
 #. i18n: file: ui/miscpagemaintab.ui:68
 #. i18n: ectx: property (text), item, widget (KComboBox, mLoopOnGotoUnread)
-#: rc.cpp:1219
+#: rc.cpp:1225
 #, fuzzy
 #| msgctxt "continuation of \"When trying to find unread messages:\""
 #| msgid "Loop in Current Folder"
@@ -12638,7 +12648,7 @@ msgstr "врти во тековната папка"
 
 #. i18n: file: ui/miscpagemaintab.ui:73
 #. i18n: ectx: property (text), item, widget (KComboBox, mLoopOnGotoUnread)
-#: rc.cpp:1222
+#: rc.cpp:1228
 #, fuzzy
 #| msgctxt "continuation of \"When trying to find unread messages:\""
 #| msgid "Loop in All Folders"
@@ -12647,7 +12657,7 @@ msgstr "врти во сите папки"
 
 #. i18n: file: ui/miscpagemaintab.ui:87
 #. i18n: ectx: property (text), widget (QLabel, mEnterFolderLabel)
-#: rc.cpp:1225
+#: rc.cpp:1231
 #, fuzzy
 #| msgctxt ""
 #| "to be continued with \"jump to first new message\", \"jump to first "
@@ -12661,7 +12671,7 @@ msgstr "При влегување во папка:"
 
 #. i18n: file: ui/miscpagemaintab.ui:98
 #. i18n: ectx: property (text), item, widget (KComboBox, mActionEnterFolder)
-#: rc.cpp:1228
+#: rc.cpp:1234
 #, fuzzy
 #| msgctxt "continuation of \"When entering a folder:\""
 #| msgid "Jump to First New Message"
@@ -12670,7 +12680,7 @@ msgstr "скокни на првата нова порака"
 
 #. i18n: file: ui/miscpagemaintab.ui:103
 #. i18n: ectx: property (text), item, widget (KComboBox, mActionEnterFolder)
-#: rc.cpp:1231
+#: rc.cpp:1237
 #, fuzzy
 #| msgctxt "continuation of \"When entering a folder:\""
 #| msgid "Jump to First Unread or New Message"
@@ -12679,7 +12689,7 @@ msgstr "скокни на првата непрочитана или нова п
 
 #. i18n: file: ui/miscpagemaintab.ui:108
 #. i18n: ectx: property (text), item, widget (KComboBox, mActionEnterFolder)
-#: rc.cpp:1234
+#: rc.cpp:1240
 #, fuzzy
 #| msgctxt "continuation of \"When entering a folder:\""
 #| msgid "Jump to Last Selected Message"
@@ -12688,19 +12698,19 @@ msgstr "скокни на последната избрана порака"
 
 #. i18n: file: ui/miscpagemaintab.ui:122
 #. i18n: ectx: property (text), widget (QCheckBox, mDelayedMarkAsRead)
-#: rc.cpp:1237
+#: rc.cpp:1243
 msgid "Mar&k selected message as read after"
 msgstr "Обележи ги избраните пора&ки како прочитани по"
 
 #. i18n: file: ui/miscpagemaintab.ui:132
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, mDelayedMarkTime)
-#: rc.cpp:1240
+#: rc.cpp:1246
 msgid " sec"
 msgstr " сек"
 
 #. i18n: file: ui/miscpagemaintab.ui:142
 #. i18n: ectx: property (text), widget (QCheckBox, mShowPopupAfterDnD)
-#: rc.cpp:1243
+#: rc.cpp:1249
 #, fuzzy
 #| msgid "Ask for action after &dragging messages to another folder"
 msgid "&Ask for action after dragging messages to another folder"
@@ -12708,14 +12718,14 @@ msgstr "Прашај за дејство по влечењето на порак
 
 #. i18n: file: ui/miscpagemaintab.ui:155
 #. i18n: ectx: property (text), widget (QLabel, mMailBoxLabel)
-#: rc.cpp:1246
+#: rc.cpp:1252
 msgctxt "to be continued with \"flat files\" and \"directories\", resp."
 msgid "By default, &message folders on disk are:"
 msgstr "Стандардно, &папките на дискот за пораки се:"
 
 #. i18n: file: ui/miscpagemaintab.ui:167
 #. i18n: ectx: property (whatsThis), widget (KComboBox, mMailboxPrefCombo)
-#: rc.cpp:1249
+#: rc.cpp:1255
 #, fuzzy
 #| msgctxt "what's this help"
 #| msgid ""
@@ -12752,7 +12762,7 @@ msgstr ""
 
 #. i18n: file: ui/miscpagemaintab.ui:171
 #. i18n: ectx: property (text), item, widget (KComboBox, mMailboxPrefCombo)
-#: rc.cpp:1254
+#: rc.cpp:1260
 #, fuzzy
 #| msgctxt "continuation of \"By default, &message folders on disk are\""
 #| msgid "Flat Files (\"mbox\" format)"
@@ -12761,7 +12771,7 @@ msgstr "датотеки (формат „mbox“)"
 
 #. i18n: file: ui/miscpagemaintab.ui:176
 #. i18n: ectx: property (text), item, widget (KComboBox, mMailboxPrefCombo)
-#: rc.cpp:1257
+#: rc.cpp:1263
 #, fuzzy
 #| msgctxt "continuation of \"By default, &message folders on disk are\""
 #| msgid "Directories (\"maildir\" format)"
@@ -12770,7 +12780,7 @@ msgstr "именици (формат „maildir“)"
 
 #. i18n: file: ui/miscpagemaintab.ui:190
 #. i18n: ectx: property (text), widget (QLabel, mStartUpFolderLabel)
-#: rc.cpp:1260
+#: rc.cpp:1266
 #, fuzzy
 #| msgid "Open this folder on startup:"
 msgid "Open this folder on &startup:"
@@ -12778,20 +12788,20 @@ msgstr "Отвори ја оваа папка на старт:"
 
 #. i18n: file: ui/miscpagemaintab.ui:197
 #. i18n: ectx: property (text), widget (QCheckBox, mEmptyTrashCheck)
-#: rc.cpp:1263
+#: rc.cpp:1269
 msgid "Empty local &trash folder on program exit"
 msgstr "Испразни ја локалната &корпа на излегување на програмата"
 
 #. i18n: file: ui/miscpagemaintab.ui:210
 #. i18n: ectx: property (text), widget (QLabel, mQuotaLabel)
-#: rc.cpp:1266
+#: rc.cpp:1272
 #, fuzzy
 msgid "&Quota units:"
 msgstr "Индикатор за &цитат:"
 
 #. i18n: file: kmail.kcfg.cmake:57
 #. i18n: ectx: whatsthis, entry (ExcludeImportantMailFromExpiry), group (Behaviour)
-#: rc.cpp:1408
+#: rc.cpp:1414
 msgid ""
 "This prevents the automatic expiry of old messages in a folder from deleting "
 "(or moving to an archive folder) the messages that are marked 'Important' or "
@@ -12800,7 +12810,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:62
 #. i18n: ectx: label, entry (SendOnCheck), group (Behaviour)
-#: rc.cpp:1411
+#: rc.cpp:1417
 #, fuzzy
 #| msgid "Include in manual mail chec&k"
 msgid "Send queued mail on mail check"
@@ -12808,7 +12818,7 @@ msgstr "Вклучи при р&ачни проверки на пошта"
 
 #. i18n: file: kmail.kcfg.cmake:63
 #. i18n: ectx: whatsthis, entry (SendOnCheck), group (Behaviour)
-#: rc.cpp:1414
+#: rc.cpp:1420
 msgid ""
 "<qt><p>Select whether you want KMail to send all messages in the outbox on "
 "manual or all mail checks, or whether you do not want messages to be sent "
@@ -12817,7 +12827,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:73
 #. i18n: ectx: label, entry (AutoLostFoundMove), group (Behaviour)
-#: rc.cpp:1417
+#: rc.cpp:1423
 msgid ""
 "Automatically move non-synced mails from folders with insufficient access "
 "rights"
@@ -12825,7 +12835,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:74
 #. i18n: ectx: whatsthis, entry (AutoLostFoundMove), group (Behaviour)
-#: rc.cpp:1420
+#: rc.cpp:1426
 msgid ""
 "If there are new messages in a folder, which have not been uploaded to the "
 "server yet, but you do not have sufficient access rights on the folder now "
@@ -12835,13 +12845,13 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:79
 #. i18n: ectx: label, entry (AllowLocalFlags), group (Behaviour)
-#: rc.cpp:1423
+#: rc.cpp:1429
 msgid "Allow local flags in read-only folders"
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:87
 #. i18n: ectx: whatsthis, entry (MinimumCheckInterval), group (ConfigurationDialogRestrictions)
-#: rc.cpp:1426
+#: rc.cpp:1432
 msgid ""
 "This setting allows administrators to set a minimum delay between two mail "
 "checks. The user will not be able to choose a value smaller than the value "
@@ -12850,13 +12860,13 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:93
 #. i18n: ectx: whatsthis, entry (LastSelectedFolder), group (FolderSelectionDialog)
-#: rc.cpp:1429
+#: rc.cpp:1435
 msgid "The most recently selected folder in the folder selection dialog."
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:101
 #. i18n: ectx: label, entry (disregardUmask), group (General)
-#: rc.cpp:1432
+#: rc.cpp:1438
 msgid ""
 "Disregard the users umask setting and use \"read-write for the user only\" "
 "instead"
@@ -12864,7 +12874,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:109
 #. i18n: ectx: label, entry (SystemTrayPolicy), group (General)
-#: rc.cpp:1438
+#: rc.cpp:1444
 #, fuzzy
 #| msgid "Enable system tray icon"
 msgid "Policy for showing the system tray icon"
@@ -12872,7 +12882,7 @@ msgstr "Овозможи икона во сис. лента"
 
 #. i18n: file: kmail.kcfg.cmake:117
 #. i18n: ectx: label, entry (CloseDespiteSystemTray), group (General)
-#: rc.cpp:1441
+#: rc.cpp:1447
 msgid ""
 "Close the application when the main window is closed, even if there is a "
 "system tray icon active."
@@ -12880,7 +12890,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:121
 #. i18n: ectx: label, entry (VerboseNewMailNotification), group (General)
-#: rc.cpp:1444
+#: rc.cpp:1450
 #, fuzzy
 #| msgid "Deta&iled new mail notification"
 msgid "Verbose new mail notification"
@@ -12888,7 +12898,7 @@ msgstr "Детално &известување за нова пошта"
 
 #. i18n: file: kmail.kcfg.cmake:122
 #. i18n: ectx: whatsthis, entry (VerboseNewMailNotification), group (General)
-#: rc.cpp:1447
+#: rc.cpp:1453
 msgid ""
 "If this option is enabled then for each folder the number of newly arrived "
 "messages is shown in the new mail notification; otherwise, you will only get "
@@ -12897,7 +12907,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:126
 #. i18n: ectx: label, entry (ExternalEditor), group (General)
-#: rc.cpp:1450
+#: rc.cpp:1456
 #, fuzzy
 #| msgid "S&pecify file:"
 msgid "Specify e&ditor:"
@@ -12905,13 +12915,13 @@ msgstr "Наведете &датотека:"
 
 #. i18n: file: kmail.kcfg.cmake:130
 #. i18n: ectx: label, entry (UseExternalEditor), group (General)
-#: rc.cpp:1453
+#: rc.cpp:1459
 msgid "Use e&xternal editor instead of composer"
 msgstr "Користи надворешен &уредувач наместо составувачот"
 
 #. i18n: file: kmail.kcfg.cmake:145
 #. i18n: ectx: label, entry (CloseToQuotaThreshold), group (General)
-#: rc.cpp:1456
+#: rc.cpp:1462
 msgid ""
 "The threshold for when to warn the user that a folder is nearing its quota "
 "limit."
@@ -12919,19 +12929,19 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:163
 #. i18n: ectx: label, entry (GroupwareEnabled), group (Groupware)
-#: rc.cpp:1461
+#: rc.cpp:1467
 msgid "Enable groupware functionality"
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:169
 #. i18n: ectx: label, entry (LegacyMangleFromToHeaders), group (Groupware)
-#: rc.cpp:1465
+#: rc.cpp:1471
 msgid "Mangle From:/To: headers in replies to replies"
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:170
 #. i18n: ectx: whatsthis, entry (LegacyMangleFromToHeaders), group (Groupware)
-#: rc.cpp:1468
+#: rc.cpp:1474
 msgid ""
 "Microsoft Outlook has a number of shortcomings in its implementation of the "
 "iCalendar standard; this option works around one of them. If you have "
@@ -12941,13 +12951,13 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:175
 #. i18n: ectx: label, entry (LegacyBodyInvites), group (Groupware)
-#: rc.cpp:1471
+#: rc.cpp:1477
 msgid "Send groupware invitations in the mail body"
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:176
 #. i18n: ectx: whatsthis, entry (LegacyBodyInvites), group (Groupware)
-#: rc.cpp:1474
+#: rc.cpp:1480
 msgid ""
 "Microsoft Outlook has a number of shortcomings in its implementation of the "
 "iCalendar standard; this option works around one of them. If you have "
@@ -12957,7 +12967,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:181
 #. i18n: ectx: label, entry (ExchangeCompatibleInvitations), group (Groupware)
-#: rc.cpp:1477
+#: rc.cpp:1483
 #, fuzzy
 #| msgid "Outlook-compatible attachment naming"
 msgid "Exchange-compatible invitation naming"
@@ -12965,7 +12975,7 @@ msgstr "Именување на прилози соодветно на Outlook"
 
 #. i18n: file: kmail.kcfg.cmake:182
 #. i18n: ectx: whatsthis, entry (ExchangeCompatibleInvitations), group (Groupware)
-#: rc.cpp:1480
+#: rc.cpp:1486
 msgid ""
 "Microsoft Outlook, when used in combination with a Microsoft Exchange "
 "server, has a problem understanding standards-compliant groupware email. "
@@ -12975,7 +12985,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:187
 #. i18n: ectx: label, entry (AutomaticSending), group (Groupware)
-#: rc.cpp:1483
+#: rc.cpp:1489
 #, fuzzy
 #| msgid "Outlook-compatible attachment naming"
 msgid "Automatic invitation sending"
@@ -12983,7 +12993,7 @@ msgstr "Именување на прилози соодветно на Outlook"
 
 #. i18n: file: kmail.kcfg.cmake:188
 #. i18n: ectx: whatsthis, entry (AutomaticSending), group (Groupware)
-#: rc.cpp:1486
+#: rc.cpp:1492
 msgid ""
 "When this is checked, you will not see the mail composer window. Instead, "
 "all invitation mails are sent automatically. If you want to see the mail "
@@ -12992,15 +13002,9 @@ msgid ""
 "modifying it by hand."
 msgstr ""
 
-#. i18n: file: kmail.kcfg.cmake:193
-#. i18n: ectx: label, entry (DeleteInvitationEmailsAfterSendingReply), group (Groupware)
-#: rc.cpp:1489
-msgid "Delete invitation emails after the reply to them has been sent"
-msgstr ""
-
 #. i18n: file: kmail.kcfg.cmake:194
 #. i18n: ectx: whatsthis, entry (DeleteInvitationEmailsAfterSendingReply), group (Groupware)
-#: rc.cpp:1492
+#: rc.cpp:1498
 msgid ""
 "When this is checked, received invitation emails that have been replied to "
 "will be moved to the Trash folder, once the reply has been successfully sent."
@@ -13008,7 +13012,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:213
 #. i18n: ectx: whatsthis, entry (TheIMAPResourceEnabled), group (IMAP Resource)
-#: rc.cpp:1497
+#: rc.cpp:1503
 msgid ""
 "<p>Enabling this makes it possible to store the entries from the Kontact "
 "applications (KOrganizer, KAddressBook, and KNotes.)</p><p>If you want to "
@@ -13018,7 +13022,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:218
 #. i18n: ectx: whatsthis, entry (HideGroupwareFolders), group (IMAP Resource)
-#: rc.cpp:1500
+#: rc.cpp:1506
 msgid ""
 "<p>Usually you will not have any reason to see the folders that hold the "
 "IMAP resources. But if you need to see them, you can set that here.</p>"
@@ -13026,7 +13030,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:224
 #. i18n: ectx: whatsthis, entry (ShowOnlyGroupwareFoldersForGroupwareAccount), group (IMAP Resource)
-#: rc.cpp:1503
+#: rc.cpp:1509
 msgid ""
 "<p>If the account used for storing groupware information is not used to "
 "manage normal mail, set this option to make KMail only show groupware "
@@ -13036,7 +13040,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:228
 #. i18n: ectx: whatsthis, entry (TheIMAPResourceStorageFormat), group (IMAP Resource)
-#: rc.cpp:1506
+#: rc.cpp:1512
 msgid ""
 "<p>Choose the storage format of the groupware folders. <ul><li>The default "
 "format is to use the ical (for calendar folders) and vcard (for address book "
@@ -13048,7 +13052,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:237
 #. i18n: ectx: whatsthis, entry (TheIMAPResourceFolderParent), group (IMAP Resource)
-#: rc.cpp:1509
+#: rc.cpp:1515
 msgid ""
 "<p>This chooses the parent of the IMAP resource folders.</p><p>By default, "
 "the Kolab server sets the IMAP inbox to be the parent.</p>"
@@ -13056,13 +13060,13 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:242
 #. i18n: ectx: whatsthis, entry (TheIMAPResourceAccount), group (IMAP Resource)
-#: rc.cpp:1512
+#: rc.cpp:1518
 msgid "<p>This is the ID of the account holding the IMAP resource folders.</p>"
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:247
 #. i18n: ectx: whatsthis, entry (TheIMAPResourceFolderLanguage), group (IMAP Resource)
-#: rc.cpp:1515
+#: rc.cpp:1521
 msgid ""
 "<p>If you want to set the folder names of the IMAP storage to your local "
 "language, you can choose between these available languages.</p><p> Please "
@@ -13073,26 +13077,26 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:253
 #. i18n: ectx: label, entry (FilterOnlyDIMAPInbox), group (IMAP Resource)
-#: rc.cpp:1518
+#: rc.cpp:1524
 msgid "Only filter mails received in disconnected IMAP inbox."
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:257
 #. i18n: ectx: label, entry (FilterGroupwareFolders), group (IMAP Resource)
-#: rc.cpp:1521
+#: rc.cpp:1527
 msgid "Also filter new mails received in groupware folders."
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:262
 #. i18n: ectx: label, entry (ImmediatlySyncDIMAPOnGroupwareChanges), group (IMAP Resource)
-#: rc.cpp:1524
+#: rc.cpp:1530
 msgid ""
 "Synchronize groupware changes in DIMAP folders immediately when being online."
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:271
 #. i18n: ectx: whatsthis, entry (PreviousNewFeaturesMD5), group (Internal)
-#: rc.cpp:1527
+#: rc.cpp:1533
 msgid ""
 "This value is used to decide whether the KMail Introduction should be "
 "displayed."
@@ -13100,13 +13104,13 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:278
 #. i18n: ectx: label, entry (MaxConnectionsPerHost), group (Network)
-#: rc.cpp:1530
+#: rc.cpp:1536
 msgid "Maximal number of connections per host"
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:279
 #. i18n: ectx: whatsthis, entry (MaxConnectionsPerHost), group (Network)
-#: rc.cpp:1533
+#: rc.cpp:1539
 msgid ""
 "This can be used to restrict the number of connections per host while "
 "checking for new mail. By default the number of connections is unlimited (0)."
@@ -13114,7 +13118,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:287
 #. i18n: ectx: label, entry (EnableFolderQuickSearch), group (UserInterface)
-#: rc.cpp:1536
+#: rc.cpp:1542
 #, fuzzy
 #| msgid "Show Quick Search"
 msgid "Show folder quick search line edit"
@@ -13122,19 +13126,19 @@ msgstr "Покажи го брзото пребарување"
 
 #. i18n: file: kmail.kcfg.cmake:291
 #. i18n: ectx: label, entry (HideLocalInbox), group (UserInterface)
-#: rc.cpp:1539
+#: rc.cpp:1545
 msgid "Hide local inbox if unused"
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:299
 #. i18n: ectx: label, entry (ForwardingInlineByDefault), group (Composer)
-#: rc.cpp:1542
+#: rc.cpp:1548
 msgid "Forward Inline As Default."
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:302
 #. i18n: ectx: label, entry (ForceReplyCharset), group (Composer)
-#: rc.cpp:1545
+#: rc.cpp:1551
 #, fuzzy
 #| msgid "&Keep original charset when replying or forwarding (if possible)"
 msgid "Keep original charset when replying or forwarding if possible"
@@ -13144,7 +13148,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:306
 #. i18n: ectx: label, entry (AutoTextSignature), group (Composer)
-#: rc.cpp:1548
+#: rc.cpp:1554
 #, fuzzy
 #| msgid "Automatically import keys and certificates"
 msgid "A&utomatically insert signature"
@@ -13152,7 +13156,7 @@ msgstr "Автоматски внеси ги клучевите и сертиф�
 
 #. i18n: file: kmail.kcfg.cmake:311
 #. i18n: ectx: whatsthis, entry (StickyIdentity), group (Composer)
-#: rc.cpp:1551
+#: rc.cpp:1557
 msgid ""
 "Remember this identity, so that it will be used in future composer windows "
 "as well.\n"
@@ -13161,7 +13165,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:315
 #. i18n: ectx: whatsthis, entry (StickyFcc), group (Composer)
-#: rc.cpp:1555
+#: rc.cpp:1561
 msgid ""
 "Remember this folder for sent items, so that it will be used in future "
 "composer windows as well."
@@ -13169,7 +13173,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:319
 #. i18n: ectx: whatsthis, entry (StickyTransport), group (Composer)
-#: rc.cpp:1558
+#: rc.cpp:1564
 msgid ""
 "Remember this mail transport, so that it will be used in future composer "
 "windows as well."
@@ -13177,7 +13181,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:323
 #. i18n: ectx: label, entry (WordWrap), group (Composer)
-#: rc.cpp:1561
+#: rc.cpp:1567
 #, fuzzy
 #| msgid "Sho&w column:"
 msgid "Word &wrap at column:"
@@ -13185,13 +13189,13 @@ msgstr "Покажи &колона:"
 
 #. i18n: file: kmail.kcfg.cmake:327
 #. i18n: ectx: label, entry (UseFixedFont), group (Composer)
-#: rc.cpp:1564 kmreaderwin.cpp:720 kmcomposewin.cpp:1124
+#: rc.cpp:1570 kmreaderwin.cpp:720 kmcomposewin.cpp:1124
 msgid "Use Fi&xed Font"
 msgstr "Користи фи&ксен фонт"
 
 #. i18n: file: kmail.kcfg.cmake:337
 #. i18n: ectx: label, entry (TooManyRecipients), group (Composer)
-#: rc.cpp:1568
+#: rc.cpp:1574
 msgid "Warn if the number of recipients is larger than"
 msgstr ""
 
@@ -13199,7 +13203,7 @@ msgstr ""
 #. i18n: ectx: whatsthis, entry (TooManyRecipients), group (Composer)
 #. i18n: file: kmail.kcfg.cmake:346
 #. i18n: ectx: whatsthis, entry (RecipientThreshold), group (Composer)
-#: rc.cpp:1571 rc.cpp:1575
+#: rc.cpp:1577 rc.cpp:1581
 msgid ""
 "If the number of recipients is larger than this value, KMail will warn and "
 "ask for a confirmation before sending the mail. The warning can be turned "
@@ -13208,7 +13212,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:356
 #. i18n: ectx: whatsthis, entry (OutlookCompatibleAttachments), group (Composer)
-#: rc.cpp:1581
+#: rc.cpp:1587
 #, fuzzy
 msgid ""
 "Turn this option on to make Outlook &#8482; understand attachment names "
@@ -13219,13 +13223,13 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:382
 #. i18n: ectx: label, entry (RequestMDN), group (Composer)
-#: rc.cpp:1587
+#: rc.cpp:1593
 msgid "Automatically request &message disposition notifications"
 msgstr "Авто&матски барај известувања за статусот на пораките"
 
 #. i18n: file: kmail.kcfg.cmake:383
 #. i18n: ectx: whatsthis, entry (RequestMDN), group (Composer)
-#: rc.cpp:1590
+#: rc.cpp:1596
 msgid ""
 "<qt><p>Enable this option if you want KMail to request Message Disposition "
 "Notifications (MDNs) for each of your outgoing messages.</p><p>This option "
@@ -13242,13 +13246,13 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:387
 #. i18n: ectx: label, entry (ShowRecentAddressesInComposer), group (Composer)
-#: rc.cpp:1593
+#: rc.cpp:1599
 msgid "Use recent addresses for autocompletion"
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:388
 #. i18n: ectx: whatsthis, entry (ShowRecentAddressesInComposer), group (Composer)
-#: rc.cpp:1596
+#: rc.cpp:1602
 msgid ""
 "Disable this option if you do not want recently used addresses to appear in "
 "the autocompletion list in the composer's address fields."
@@ -13256,7 +13260,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:415
 #. i18n: ectx: label, entry (AutosaveInterval), group (Composer)
-#: rc.cpp:1599
+#: rc.cpp:1605
 #, fuzzy
 #| msgid "Check inter&val:"
 msgid "Autosave interval:"
@@ -13264,7 +13268,7 @@ msgstr "Интер&вал за проверување:"
 
 #. i18n: file: kmail.kcfg.cmake:416
 #. i18n: ectx: whatsthis, entry (AutosaveInterval), group (Composer)
-#: rc.cpp:1602
+#: rc.cpp:1608
 msgid ""
 "A backup copy of the text in the composer window can be created regularly. "
 "The interval used to create the backups is set here. You can disable "
@@ -13273,7 +13277,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:420
 #. i18n: ectx: label, entry (PrependSignature), group (Composer)
-#: rc.cpp:1605
+#: rc.cpp:1611
 #, fuzzy
 #| msgid "Use smaller font for quoted text"
 msgid "Insert signature above quoted text"
@@ -13281,7 +13285,7 @@ msgstr "Користи помал фонт за цитираниот текст"
 
 #. i18n: file: kmail.kcfg.cmake:424
 #. i18n: ectx: label, entry (DashDashSignature), group (Composer)
-#: rc.cpp:1608
+#: rc.cpp:1614
 #, fuzzy
 #| msgid "Append S&ignature"
 msgid "Prepend separator to signature"
@@ -13289,31 +13293,31 @@ msgstr "Додај потп&ис"
 
 #. i18n: file: kmail.kcfg.cmake:431
 #. i18n: ectx: label, entry (ReplaceReplyPrefix), group (Composer)
-#: rc.cpp:1611
+#: rc.cpp:1617
 msgid "Replace recognized prefi&x with \"Re:\""
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:438
 #. i18n: ectx: label, entry (ReplaceForwardPrefix), group (Composer)
-#: rc.cpp:1614
+#: rc.cpp:1620
 msgid "Replace recognized prefix with \"&Fwd:\""
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:442
 #. i18n: ectx: label, entry (SmartQuote), group (Composer)
-#: rc.cpp:1617
+#: rc.cpp:1623
 msgid "Use smart &quoting"
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:454
 #. i18n: ectx: label, entry (MaximumRecipients), group (Composer)
-#: rc.cpp:1620
+#: rc.cpp:1626
 msgid "Maximum number of recipient editor lines."
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:460
 #. i18n: ectx: label, entry (MimetypesToStripWhenInlineForwarding), group (Composer)
-#: rc.cpp:1623
+#: rc.cpp:1629
 msgid ""
 "List of message part types to strip off mails that are being forwarded "
 "inline."
@@ -13321,13 +13325,13 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:464
 #. i18n: ectx: label, entry (ShowSnippetManager), group (Composer)
-#: rc.cpp:1626
+#: rc.cpp:1632
 msgid "Show the Text Snippet Management and Insertion Panel in the composer."
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:470
 #. i18n: ectx: label, entry (MaximumAttachmentSize), group (Composer)
-#: rc.cpp:1629
+#: rc.cpp:1635
 msgid ""
 "The maximum size in MB that email attachments are allowed to have (-1 for no "
 "limit)."
@@ -13335,7 +13339,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:475
 #. i18n: ectx: label, entry (ShowGnuPGAuditLogAfterSuccessfulSignEncrypt), group (Composer)
-#: rc.cpp:1632
+#: rc.cpp:1638
 msgid ""
 "Show the GnuPG Audit Log even after crypto operations that completed "
 "successfully."
@@ -13343,7 +13347,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:530
 #. i18n: ectx: whatsthis, entry (FallbackCharacterEncoding), group (Reader)
-#: rc.cpp:1636
+#: rc.cpp:1642
 msgid ""
 "Some emails, especially those generated automatically, do not specify the "
 "character encoding which needs to be used to properly display them. In such "
@@ -13354,7 +13358,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:536
 #. i18n: ectx: whatsthis, entry (OverrideCharacterEncoding), group (Reader)
-#: rc.cpp:1640
+#: rc.cpp:1646
 msgid ""
 "Changing this from its default 'Auto' will force the use of the specified "
 "encoding for all emails, regardless of what they specify themselves."
@@ -13362,7 +13366,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:542
 #. i18n: ectx: whatsthis, entry (ShowEmoticons), group (Reader)
-#: rc.cpp:1646
+#: rc.cpp:1652
 msgid ""
 "Enable this if you want smileys like :-) appearing in the message text to be "
 "replaced by emoticons (small pictures)."
@@ -13370,7 +13374,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:547
 #. i18n: ectx: whatsthis, entry (ShowExpandQuotesMark), group (Reader)
-#: rc.cpp:1652
+#: rc.cpp:1658
 msgid ""
 "Enable this option to show different levels of quoted text. Disable to hide "
 "the levels of quoted text."
@@ -13378,13 +13382,13 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:550
 #. i18n: ectx: label, entry (CollapseQuoteLevelSpin), group (Reader)
-#: rc.cpp:1655
+#: rc.cpp:1661
 msgid "Automatic collapse level:"
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:558
 #. i18n: ectx: label, entry (ShrinkQuotes), group (Reader)
-#: rc.cpp:1658
+#: rc.cpp:1664
 #, fuzzy
 #| msgid "Use smaller font for quoted text"
 msgid "Reduce font size for quoted text"
@@ -13392,20 +13396,20 @@ msgstr "Користи помал фонт за цитираниот текст"
 
 #. i18n: file: kmail.kcfg.cmake:559
 #. i18n: ectx: whatsthis, entry (ShrinkQuotes), group (Reader)
-#: rc.cpp:1661
+#: rc.cpp:1667
 msgid "Enable this option to show quoted text with a smaller font."
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:570
 #. i18n: ectx: label, entry (ShowUserAgent), group (Reader)
-#: rc.cpp:1664
+#: rc.cpp:1670
 #, fuzzy
 msgid "Show user agent in fancy headers"
 msgstr "Покажува стандардна листа на заглавија на пораките"
 
 #. i18n: file: kmail.kcfg.cmake:571
 #. i18n: ectx: whatsthis, entry (ShowUserAgent), group (Reader)
-#: rc.cpp:1667
+#: rc.cpp:1673
 msgid ""
 "Enable this option to get the User-Agent and X-Mailer header lines displayed "
 "when using fancy headers."
@@ -13413,31 +13417,31 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:576
 #. i18n: ectx: label, entry (AllowAttachmentDeletion), group (Reader)
-#: rc.cpp:1670
+#: rc.cpp:1676
 msgid "Allow to delete attachments of existing mails."
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:580
 #. i18n: ectx: label, entry (AllowAttachmentEditing), group (Reader)
-#: rc.cpp:1673
+#: rc.cpp:1679
 msgid "Allow to edit attachments of existing mails."
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:585
 #. i18n: ectx: label, entry (AlwaysDecrypt), group (Reader)
-#: rc.cpp:1676
+#: rc.cpp:1682
 msgid "Always decrypt messages when viewing or ask before decrypting"
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:599
 #. i18n: ectx: label, entry (SendMDNsWithEmptySender), group (MDN)
-#: rc.cpp:1680
+#: rc.cpp:1686
 msgid "Send Message Disposition Notifications with an empty sender."
 msgstr "Испрати известување за статусот на пораката со празен испраќач."
 
 #. i18n: file: kmail.kcfg.cmake:600
 #. i18n: ectx: whatsthis, entry (SendMDNsWithEmptySender), group (MDN)
-#: rc.cpp:1683
+#: rc.cpp:1689
 msgid ""
 "Send Message Disposition Notifications with an empty sender string. Some "
 "servers might be configure to reject such messages, so if you are "
@@ -13449,60 +13453,60 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:606
 #. i18n: ectx: label, entry (PhrasesConverted), group (GlobalTemplates)
-#: rc.cpp:1686
+#: rc.cpp:1692
 msgid "Phrases has been converted to templates"
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:607
 #. i18n: ectx: whatsthis, entry (PhrasesConverted), group (GlobalTemplates)
-#: rc.cpp:1689
+#: rc.cpp:1695
 msgid "Old phrases have been converted to templates"
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:611
 #. i18n: ectx: label, entry (TemplateNewMessage), group (GlobalTemplates)
-#: rc.cpp:1692
+#: rc.cpp:1698
 #, fuzzy
 msgid "Message template for new message"
 msgstr "Листа со пораки - нови пораки"
 
 #. i18n: file: kmail.kcfg.cmake:616
 #. i18n: ectx: label, entry (TemplateReply), group (GlobalTemplates)
-#: rc.cpp:1696
+#: rc.cpp:1702
 #, fuzzy
 msgid "Message template for reply"
 msgstr "Листа со пораки - нови пораки"
 
 #. i18n: file: kmail.kcfg.cmake:621
 #. i18n: ectx: label, entry (TemplateReplyAll), group (GlobalTemplates)
-#: rc.cpp:1700
+#: rc.cpp:1706
 #, fuzzy
 msgid "Message template for reply to all"
 msgstr "Листа со пораки - нови пораки"
 
 #. i18n: file: kmail.kcfg.cmake:626
 #. i18n: ectx: label, entry (TemplateForward), group (GlobalTemplates)
-#: rc.cpp:1704
+#: rc.cpp:1710
 #, fuzzy
 msgid "Message template for forward"
 msgstr "Листа со пораки - нови пораки"
 
 #. i18n: file: kmail.kcfg.cmake:631
 #. i18n: ectx: label, entry (QuoteString), group (GlobalTemplates)
-#: rc.cpp:1708
+#: rc.cpp:1714
 #, fuzzy
 msgid "Quote characters"
 msgstr "Додај знаци за &цитат"
 
 #. i18n: file: kmail.kcfg.cmake:640
 #. i18n: ectx: label, entry (AllowOutOfOfficeSettings), group (OutOfOffice)
-#: rc.cpp:1712
+#: rc.cpp:1718
 msgid "Allow out-of-office settings to to be changeable by the user."
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:644
 #. i18n: ectx: label, entry (AllowOutOfOfficeUploadButNoSettings), group (OutOfOffice)
-#: rc.cpp:1715
+#: rc.cpp:1721
 msgid ""
 "Allow users to upload out-of-office sieve scripts, but prevent them from "
 "changing any settings, such as the domain to react to or the spam reaction "
@@ -13511,19 +13515,19 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:648
 #. i18n: ectx: label, entry (OutOfOfficeDomain), group (OutOfOffice)
-#: rc.cpp:1718
+#: rc.cpp:1724
 msgid "Send out-of-office replies to mails coming from this domain only."
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:652
 #. i18n: ectx: label, entry (OutOfOfficeReactToSpam), group (OutOfOffice)
-#: rc.cpp:1721
+#: rc.cpp:1727
 msgid "Allow out-of-office replies to be sent to messages marked as SPAM."
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:656
 #. i18n: ectx: label, entry (CheckOutOfOfficeOnStartup), group (OutOfOffice)
-#: rc.cpp:1724
+#: rc.cpp:1730
 msgid ""
 "Check if there is still an active out-of-office reply configured when "
 "starting KMail."
@@ -13531,7 +13535,7 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:676
 #. i18n: ectx: label, entry (DisplayMessageToolTips), group (MessageListView)
-#: rc.cpp:1727
+#: rc.cpp:1733
 #, fuzzy
 #| msgid "Choose display style of message headers"
 msgid "Display tooltips for messages and group headers"
@@ -13539,7 +13543,7 @@ msgstr "Изберете стил на прикажување на заглав�
 
 #. i18n: file: kmail.kcfg.cmake:677
 #. i18n: ectx: whatsthis, entry (DisplayMessageToolTips), group (MessageListView)
-#: rc.cpp:1730
+#: rc.cpp:1736
 msgid ""
 "Enable this option to display tooltips when hovering over an item in the "
 "message list."
@@ -13547,13 +13551,13 @@ msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:681
 #. i18n: ectx: label, entry (HideTabBarWithSingleTab), group (MessageListView)
-#: rc.cpp:1733
+#: rc.cpp:1739
 msgid "Hide tab bar when only one tab is open"
 msgstr ""
 
 #. i18n: file: kmail.kcfg.cmake:682
 #. i18n: ectx: whatsthis, entry (HideTabBarWithSingleTab), group (MessageListView)
-#: rc.cpp:1736
+#: rc.cpp:1742
 msgid ""
 "With this option enabled the tab bar will be displayed only when there are "
 "two or more tabs. With this option disabled the tab bar will be always "
@@ -17019,36 +17023,36 @@ msgstr "Изнесувањето на клучот не успеа"
 msgid "%1's %2"
 msgstr "%1 %2"
 
-#: kmailicalifaceimpl.cpp:730
-#, fuzzy, kde-format
-#| msgid "Mail"
-msgid "My %1 (%2)"
-msgstr "Пошта"
-
 #: kmailicalifaceimpl.cpp:733
+#, kde-format
+msgid "%1"
+msgstr ""
+
+#: kmailicalifaceimpl.cpp:735
 #, fuzzy, kde-format
 #| msgid "Mail"
+msgctxt "eg. My Calendar or My Inbox"
 msgid "My %1"
 msgstr "Пошта"
 
-#: kmailicalifaceimpl.cpp:1789
+#: kmailicalifaceimpl.cpp:1790
 #, kde-format
 msgid ""
 "KMail will now create the required groupware folders as subfolders of %1; if "
 "you do not want this, cancel and the IMAP resource will be disabled"
 msgstr ""
 
-#: kmailicalifaceimpl.cpp:1799
+#: kmailicalifaceimpl.cpp:1800
 #, fuzzy, kde-format
 msgid "%1: no folder found, will create it"
 msgstr "%1: папката не е пронајдена. Ќе ја креирам."
 
-#: kmailicalifaceimpl.cpp:1801
+#: kmailicalifaceimpl.cpp:1802
 #, kde-format
 msgid "%1: found folder %2, will set it as main groupware folder"
 msgstr ""
 
-#: kmailicalifaceimpl.cpp:1807
+#: kmailicalifaceimpl.cpp:1808
 #, kde-format
 msgid ""
 "<qt>KMail found the following groupware folders in %1 and needs to perform "
@@ -17056,28 +17060,28 @@ msgid ""
 "IMAP resource will be disabled</qt>"
 msgstr ""
 
-#: kmailicalifaceimpl.cpp:1816
+#: kmailicalifaceimpl.cpp:1817
 msgid "Standard Groupware Folders"
 msgstr ""
 
-#: kmailicalifaceimpl.cpp:2042
+#: kmailicalifaceimpl.cpp:2043
 #, fuzzy
 #| msgid "Delete Folder"
 msgid "Default folder"
 msgstr "Бришење на папка"
 
-#: kmailicalifaceimpl.cpp:2044
+#: kmailicalifaceimpl.cpp:2045
 #, kde-format
 msgctxt "%1 is one of the messages with context 'type of folder content'"
 msgid "There are multiple %1 default folders, please choose one:"
 msgstr ""
 
-#: kmailicalifaceimpl.cpp:2070
+#: kmailicalifaceimpl.cpp:2071
 #, kde-format
 msgid "You do not have read/write permission to your %1 folder."
 msgstr "Немате дозволи за читање/запишување за вашата папка %1."
 
-#: kmailicalifaceimpl.cpp:2128
+#: kmailicalifaceimpl.cpp:2129
 #, fuzzy
 #| msgid "You do not have read/write permission to your %1 folder."
 msgid "You do not have read/write permission to your folder."
@@ -17690,6 +17694,11 @@ msgstr "Отвори во адресарот"
 #: kmfawidgets.cpp:123
 msgid "Select Sound File"
 msgstr "Изберете звучна датотека"
+
+#, fuzzy
+#~| msgid "Mail"
+#~ msgid "My %1 (%2)"
+#~ msgstr "Пошта"
 
 #, fuzzy
 #~| msgid "Folder Properties"
