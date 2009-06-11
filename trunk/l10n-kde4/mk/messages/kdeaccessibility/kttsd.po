@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kttsd\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-25 11:42+0200\n"
+"POT-Creation-Date: 2009-06-11 11:21+0200\n"
 "PO-Revision-Date: 2007-02-26 20:53+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1084,11 +1084,14 @@ msgstr "&Јазикот е:"
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:186
 #. i18n: ectx: property (whatsThis), widget (QLabel, appIdLabel)
+#. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:96
+#. i18n: ectx: property (whatsThis), widget (QLabel, appIdLabel)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:99
 #. i18n: ectx: property (whatsThis), widget (QLabel, appIdLabel)
-#: rc.cpp:396 rc.cpp:576
+#: rc.cpp:396 rc.cpp:474 rc.cpp:576
+#, fuzzy
 msgid ""
-"Enter a DCOP Application ID.  This filter will only apply to text jobs "
+"Enter a D-Bus Application ID.  This filter will only apply to text jobs "
 "queued by that application.  You may enter more than one ID separated by "
 "commas.  If blank, this filter applies to text jobs queued by all "
 "applications.  Tip: Use kdcop from the command line to get the Application "
@@ -1144,11 +1147,14 @@ msgstr ""
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:242
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, appIdLineEdit)
+#. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:152
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, appIdLineEdit)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:152
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, appIdLineEdit)
-#: rc.cpp:411 rc.cpp:591
+#: rc.cpp:411 rc.cpp:489 rc.cpp:591
+#, fuzzy
 msgid ""
-"<qt>Enter a DCOP Application ID.  This filter will only apply to text jobs "
+"<qt>Enter a D-Bus Application ID.  This filter will only apply to text jobs "
 "queued by that application.  You may enter more than one ID separated by "
 "commas.  Use <b>knotify</b> to match all messages sent as KDE "
 "notifications.  If blank, this filter applies to text jobs queued by all "
@@ -1276,47 +1282,6 @@ msgstr "Внесете име за овој филтер по ваша желб�
 #: rc.cpp:471
 msgid "Lan&guage is:"
 msgstr "Ја&зикот е:"
-
-#. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:96
-#. i18n: ectx: property (whatsThis), widget (QLabel, appIdLabel)
-#: rc.cpp:474
-#, fuzzy
-msgid ""
-"Enter a D-Bus Application ID.  This filter will only apply to text jobs "
-"queued by that application.  You may enter more than one ID separated by "
-"commas.  If blank, this filter applies to text jobs queued by all "
-"applications.  Tip: Use kdcop from the command line to get the Application "
-"IDs of running applications.  Example: \"konversation, kvirc,ksirc,kopete\""
-msgstr ""
-"Внесете DCOP И.Д. на апликација.  Овој филтер ќе се однесува на сите "
-"текстуални задачи ставени во редица од таа апликација.  Може да внесете "
-"повеќе од еден И.Д. притоа одделувајќи ги со запирки. Доколку празно, овој "
-"филтер се однесува на сите текстуални задачи ставени во редица од таа "
-"апликација.  Совет: Користете kdcop од командната линија за да го добиете "
-"апликациското И.Д. на тековните апликации.  Пример: \"konversation, kvirc, "
-"ksirc, kopete\""
-
-#. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:152
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, appIdLineEdit)
-#: rc.cpp:489
-#, fuzzy
-msgid ""
-"<qt>Enter a D-Bus Application ID.  This filter will only apply to text jobs "
-"queued by that application.  You may enter more than one ID separated by "
-"commas.  Use <b>knotify</b> to match all messages sent as KDE "
-"notifications.  If blank, this filter applies to text jobs queued by all "
-"applications.  Tip: Use kdcop from the command line to get the Application "
-"IDs of running applications.  Example: \"konversation, kvirc,ksirc,kopete\"</"
-"qt>"
-msgstr ""
-"<qt>Внесете DCOP апликациски И.Д.  Овој филтер ќе се однесува само на "
-"текстуални задачи ставени во редица од таа апликација.  Може да внесете "
-"повеќе од еден И.Д. притоа одделувајќи ги со запирки  Користете <b>knotify</"
-"b> за да се совпаднат сите пораки испратени како KDE известувања. Доколку "
-"празно, овој филтер се однесува на текстуални задачи ставени во редица од "
-"сите апликации.    Совет: Користете kdcop од командната линија за да го "
-"добиете апликациското И.Д. на тековните апликации.  Пример: \"konversation, "
-"kvirc, ksirc, kopete\"</qt>"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:180
 #. i18n: ectx: property (whatsThis), widget (KPushButton, loadButton)
@@ -3603,6 +3568,40 @@ msgstr "Се обидувам да го откријам полот - Hadifix п
 #, kde-format
 msgid "The file %1 does not seem to be a voice file."
 msgstr "Датотеката %1 не е гласовна датотека."
+
+#~ msgid ""
+#~ "Enter a DCOP Application ID.  This filter will only apply to text jobs "
+#~ "queued by that application.  You may enter more than one ID separated by "
+#~ "commas.  If blank, this filter applies to text jobs queued by all "
+#~ "applications.  Tip: Use kdcop from the command line to get the "
+#~ "Application IDs of running applications.  Example: \"konversation, kvirc,"
+#~ "ksirc,kopete\""
+#~ msgstr ""
+#~ "Внесете DCOP И.Д. на апликација.  Овој филтер ќе се однесува на сите "
+#~ "текстуални задачи ставени во редица од таа апликација.  Може да внесете "
+#~ "повеќе од еден И.Д. притоа одделувајќи ги со запирки. Доколку празно, "
+#~ "овој филтер се однесува на сите текстуални задачи ставени во редица од "
+#~ "таа апликација.  Совет: Користете kdcop од командната линија за да го "
+#~ "добиете апликациското И.Д. на тековните апликации.  Пример: "
+#~ "\"konversation, kvirc, ksirc, kopete\""
+
+#~ msgid ""
+#~ "<qt>Enter a DCOP Application ID.  This filter will only apply to text "
+#~ "jobs queued by that application.  You may enter more than one ID "
+#~ "separated by commas.  Use <b>knotify</b> to match all messages sent as "
+#~ "KDE notifications.  If blank, this filter applies to text jobs queued by "
+#~ "all applications.  Tip: Use kdcop from the command line to get the "
+#~ "Application IDs of running applications.  Example: \"konversation, kvirc,"
+#~ "ksirc,kopete\"</qt>"
+#~ msgstr ""
+#~ "<qt>Внесете DCOP апликациски И.Д.  Овој филтер ќе се однесува само на "
+#~ "текстуални задачи ставени во редица од таа апликација.  Може да внесете "
+#~ "повеќе од еден И.Д. притоа одделувајќи ги со запирки  Користете "
+#~ "<b>knotify</b> за да се совпаднат сите пораки испратени како KDE "
+#~ "известувања. Доколку празно, овој филтер се однесува на текстуални задачи "
+#~ "ставени во редица од сите апликации.    Совет: Користете kdcop од "
+#~ "командната линија за да го добиете апликациското И.Д. на тековните "
+#~ "апликации.  Пример: \"konversation, kvirc, ksirc, kopete\"</qt>"
 
 #~ msgid "Speak Text"
 #~ msgstr "Изговори текст"
