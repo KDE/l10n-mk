@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-06 11:42+0200\n"
+"POT-Creation-Date: 2009-07-08 12:42+0200\n"
 "PO-Revision-Date: 2007-02-26 22:33+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -301,7 +301,7 @@ msgid "File transfer %1 cancelled."
 msgstr "Преноси на датотеки"
 
 #: libkopete/kopetetransfermanager.cpp:469 protocols/qq/qqcontact.cpp:418
-#: protocols/wlm/wlmcontact.cpp:141 protocols/gadu/gaducontact.cpp:100
+#: protocols/wlm/wlmcontact.cpp:163 protocols/gadu/gaducontact.cpp:100
 #: protocols/oscar/oscarcontact.cpp:356
 #: protocols/jabber/jabbercontact.cpp:1077
 #: protocols/jabber/jabbergroupmembercontact.cpp:159
@@ -18078,7 +18078,7 @@ msgid "MSN Plugin"
 msgstr ""
 
 #: protocols/wlm/ui/wlmeditaccountwidget.cpp:213
-#: protocols/wlm/wlmcontact.cpp:340
+#: protocols/wlm/wlmcontact.cpp:364
 #, fuzzy
 msgid "WLM Plugin"
 msgstr "Приклучок за историја"
@@ -18089,7 +18089,12 @@ msgstr "Приклучок за историја"
 msgid "Block Contact"
 msgstr "&Блокирај контакт"
 
-#: protocols/wlm/wlmcontact.cpp:339
+#: protocols/wlm/wlmcontact.cpp:64
+#, fuzzy
+msgid "Update Photo"
+msgstr "Џабер-идентитет:"
+
+#: protocols/wlm/wlmcontact.cpp:363
 #, fuzzy
 #| msgid ""
 #| "<qt>Are you sure you want to remove the contact <b>%1</b> from your "
@@ -18101,9 +18106,20 @@ msgstr ""
 "<qt>Дали навистина сакате да го отстраните контактот <b>%1</b> од вашата "
 "листа со контакти?</qt>"
 
-#: protocols/wlm/wlmcontact.cpp:381 protocols/groupwise/gwcontact.cpp:239
-#, kde-format
-msgid "%1|Blocked"
+#: protocols/wlm/wlmcontact.cpp:406
+#, fuzzy
+#| msgid "The contact XXX added you in his contactlist"
+msgid "This contact does not have you in his/her list"
+msgstr "Контактот XXX ве додаде во неговата листа на контакти"
+
+#: protocols/wlm/wlmcontact.cpp:413
+#, fuzzy
+#| msgid "User is Not Reachable"
+msgid "This contact is blocked"
+msgstr "Корисникот не е достапен"
+
+#: protocols/wlm/wlmcontact.cpp:415
+msgid "This contact does not have you in his/her list and is blocked"
 msgstr ""
 
 #: protocols/wlm/wlmchatsessioninkaction.cpp:62
@@ -23515,6 +23531,11 @@ msgstr "Бевте исклучени од ИРЦ-серверот."
 msgid "Unrecognized error code: %1"
 msgstr ""
 
+#: protocols/groupwise/gwcontact.cpp:239
+#, kde-format
+msgid "%1|Blocked"
+msgstr ""
+
 #: protocols/groupwise/gwprotocol.cpp:54
 #, fuzzy
 msgid "A&vailable"
@@ -24686,10 +24707,6 @@ msgstr ""
 
 #~ msgid "Symmetrical encryption"
 #~ msgstr "Симетрично криптирање"
-
-#, fuzzy
-#~ msgid "Jabber Photo"
-#~ msgstr "Џабер-идентитет:"
 
 #~ msgctxt "The account name is prepended here"
 #~ msgid "%1 contact information"
