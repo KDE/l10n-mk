@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-16 11:37+0200\n"
+"POT-Creation-Date: 2009-07-31 06:20+0200\n"
 "PO-Revision-Date: 2009-01-08 13:02+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -25,7 +25,7 @@ msgctxt "Key filter without user-assigned name"
 msgid "<unnamed>"
 msgstr "<неименувано>"
 
-#: conf/appearanceconfigwidget.cpp:278
+#: conf/appearanceconfigwidget.cpp:277
 msgid "This parameter has been locked down by the system administrator."
 msgstr ""
 
@@ -1303,7 +1303,8 @@ msgstr ""
 msgid "Could not write to clipboard"
 msgstr "Не можам да создадам сертификат: %1"
 
-#: utils/output.cpp:370 systrayicon.cpp:215
+#: utils/output.cpp:370 commands/importcertificatefromclipboardcommand.cpp:122
+#: systrayicon.cpp:198
 msgid "Clipboard"
 msgstr ""
 
@@ -2428,6 +2429,8 @@ msgstr ""
 
 #: commands/importcertificatefromfilecommand.cpp:139
 #: commands/importcertificatefromfilecommand.cpp:144
+#: commands/importcertificatefromclipboardcommand.cpp:116
+#: commands/importcertificatefromclipboardcommand.cpp:120
 #: commands/importcertificatescommand.cpp:337
 #: commands/importcertificatescommand.cpp:343
 #: commands/importcertificatescommand.cpp:406
@@ -2726,6 +2729,49 @@ msgstr ""
 msgid "CRL cache cleared successfully."
 msgstr "CRL-кешот се исчисти успешно"
 
+#: commands/learncardkeyscommand.cpp:72
+msgid "Error Learning SmartCard"
+msgstr ""
+
+#: commands/learncardkeyscommand.cpp:76
+msgid "Finished Learning SmartCard"
+msgstr ""
+
+#: commands/learncardkeyscommand.cpp:81
+#, fuzzy, kde-format
+#| msgid ""
+#| "The DirMngr process that tried to clear the CRL cache ended prematurely "
+#| "because of an unexpected error."
+msgctxt "@info"
+msgid ""
+"<para>The GPG or GpgSM process that tried to learn the smart card ended "
+"prematurely because of an unexpected error.</para><para>Please check the "
+"output of <icode>%1</icode> for details.</para>"
+msgstr ""
+"DirMngr-процесот кој се обиде да го исчисти CRL-кешот заврши прерано поради "
+"неочекувана грешка."
+
+#: commands/learncardkeyscommand.cpp:88
+#, fuzzy, kde-format
+#| msgid ""
+#| "An error occurred when trying to clear the CRL cache. The output from "
+#| "DirMngr was:\n"
+#| "%1"
+msgctxt "@info"
+msgid ""
+"<para>An error occurred while trying to learn the smart card's keys.</para> "
+"<para>The output from <command>%1</command> was: <message>%2</message></para>"
+msgstr ""
+"Се случи грешка при обидот да се исчисти CRL-кешот. Излезот од DirMngr "
+"беше:\n"
+"%1"
+
+#: commands/learncardkeyscommand.cpp:94
+#, fuzzy
+#| msgid "Secret keys imported:"
+msgid "Smart card keys successfully learned."
+msgstr "Внесени тајни клучеви:"
+
 #: commands/adduseridcommand.cpp:212
 #, fuzzy, kde-format
 #| msgid ""
@@ -2873,6 +2919,16 @@ msgstr "Внесени тајни клучеви:"
 #: commands/encryptclipboardcommand.cpp:160
 msgid "Encrypt Clipboard Error"
 msgstr ""
+
+#: commands/importcertificatefromclipboardcommand.cpp:115
+msgid "Clipboard contents do not look like a certificate."
+msgstr ""
+
+#: commands/importcertificatefromclipboardcommand.cpp:120
+#, fuzzy
+#| msgid "Could not generate certificate: %1"
+msgid "Could not determine certificate type of clipboard contents."
+msgstr "Не можам да создадам сертификат: %1"
 
 #: commands/importcertificatescommand.cpp:212
 #, fuzzy, kde-format
@@ -3888,11 +3944,11 @@ msgstr ""
 
 #. i18n: file: kleopatra.rc:34
 #. i18n: ectx: Menu (certMenu)
-#. i18n: file: kleopatra.rc:98
+#. i18n: file: kleopatra.rc:97
 #. i18n: ectx: Menu (listview_popup)
 #. i18n: file: kleopatra.rc:34
 #. i18n: ectx: Menu (certMenu)
-#. i18n: file: kleopatra.rc:98
+#. i18n: file: kleopatra.rc:97
 #. i18n: ectx: Menu (listview_popup)
 #: rc.cpp:9 rc.cpp:30 rc.cpp:535 rc.cpp:556
 msgid "&Certificates"
@@ -3932,7 +3988,7 @@ msgstr ""
 msgid "Main Toolbar"
 msgstr "Лента со алатки за барање"
 
-#. i18n: file: kleopatra.rc:93
+#. i18n: file: kleopatra.rc:92
 #. i18n: ectx: ToolBar (searchToolBar)
 #: rc.cpp:27 rc.cpp:553
 msgid "Search Toolbar"
@@ -5504,67 +5560,69 @@ msgstr "Употреба на сертификат"
 msgid "Create Encryption Certificate With Same Parameters"
 msgstr "Употреба на сертификат"
 
-#: systrayicon.cpp:86
-msgid "Learn Keys"
-msgstr ""
-
-#: systrayicon.cpp:211
+#: systrayicon.cpp:194
 #, fuzzy
 #| msgid "Certificate Manager Error"
 msgid "&Open Certificate Manager..."
 msgstr "Грешка во менаџерот за сертификати"
 
-#: systrayicon.cpp:212
+#: systrayicon.cpp:195
 #, fuzzy, kde-format
 #| msgid "Configure &GpgME Backend"
 msgid "&Configure %1..."
 msgstr "Конфигурирај го &GpgME задниот крај"
 
-#: systrayicon.cpp:213
+#: systrayicon.cpp:196
 #, kde-format
 msgid "&About %1..."
 msgstr ""
 
-#: systrayicon.cpp:214
+#: systrayicon.cpp:197
 #, fuzzy
 #| msgid "Kleopatra"
 msgid "&Shutdown Kleopatra"
 msgstr "Kleopatra"
 
-#: systrayicon.cpp:216
+#: systrayicon.cpp:199
+#, fuzzy
+#| msgid "Certificate Import Failed"
+msgid "Certificate Import"
+msgstr "Внесувањето на сертификатот не успеа"
+
+#: systrayicon.cpp:200
 #, fuzzy
 #| msgid "For &encrypting only"
 msgid "Encrypt..."
 msgstr "Само &за криптографирање"
 
-#: systrayicon.cpp:217
+#: systrayicon.cpp:201
 msgid "S/MIME-Sign..."
 msgstr ""
 
-#: systrayicon.cpp:218
+#: systrayicon.cpp:202
 msgid "OpenPGP-Sign..."
 msgstr ""
 
-#: systrayicon.cpp:219 mainwindow.cpp:632
+#: systrayicon.cpp:203 mainwindow.cpp:632
 #, fuzzy
 #| msgid "Deleting keys..."
 msgid "Decrypt/Verify..."
 msgstr "Бришам клучеви..."
 
-#: systrayicon.cpp:220
+#: systrayicon.cpp:204
 msgid "SmartCard"
 msgstr ""
 
-#: systrayicon.cpp:221
+#: systrayicon.cpp:205
 #, fuzzy
 #| msgid "Set F&ont..."
 msgid "Set Initial PIN..."
 msgstr "Постави Ф&онт..."
 
-#: systrayicon.cpp:222
+#: systrayicon.cpp:206
 #, fuzzy
 #| msgid "Save Certificate"
-msgid "Learn Card Certificates..."
+msgid "Learn Card Certificates"
 msgstr "Зачувај сертификат"
 
 #: selftest/gpgagentcheck.cpp:64
