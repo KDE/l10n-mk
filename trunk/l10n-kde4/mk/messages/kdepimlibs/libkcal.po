@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkcal\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-21 06:02+0200\n"
+"POT-Creation-Date: 2009-08-26 06:11+0200\n"
 "PO-Revision-Date: 2007-02-28 14:26+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -456,30 +456,35 @@ msgstr "Категории"
 
 #: incidenceformatter.cpp:182
 #, fuzzy
-msgid "Organizer"
+msgid "Organizer:"
 msgstr "Организатор"
 
 #: incidenceformatter.cpp:189
-msgid "Attendees"
+#, fuzzy
+#| msgid "Attendees"
+msgid "Attendees:"
 msgstr "Присутни"
 
-#: incidenceformatter.cpp:196 incidenceformatter.cpp:1497
+#: incidenceformatter.cpp:196 incidenceformatter.cpp:1507
 #, kde-format
 msgid " (delegated by %1)"
 msgstr ""
 
-#: incidenceformatter.cpp:199 incidenceformatter.cpp:1500
+#: incidenceformatter.cpp:199 incidenceformatter.cpp:1510
 #, kde-format
 msgid " (delegated to %1)"
 msgstr ""
 
-#: incidenceformatter.cpp:327
-msgid "Location"
-msgstr "Локација"
+#: incidenceformatter.cpp:327 resourcelocalconfig.cpp:67
+#: resourcelocaldirconfig.cpp:61
+msgid "Location:"
+msgstr "Локација:"
 
 #: incidenceformatter.cpp:335 incidenceformatter.cpp:350
-#: incidenceformatter.cpp:357
-msgid "Time"
+#: incidenceformatter.cpp:357 incidenceformatter.cpp:991
+#, fuzzy
+#| msgid "Time"
+msgid "Time:"
 msgstr "Време"
 
 #: incidenceformatter.cpp:337 incidenceformatter.cpp:352
@@ -490,8 +495,9 @@ msgid "%1 - %2"
 msgstr "%1 - %2"
 
 #: incidenceformatter.cpp:342 incidenceformatter.cpp:370
-msgid "Date"
-msgstr "Датум"
+#: incidenceformatter.cpp:988 incidenceformatter.cpp:1125
+msgid "Date:"
+msgstr "Датум:"
 
 #: incidenceformatter.cpp:344 incidenceformatter.cpp:372
 #, kde-format
@@ -577,7 +583,7 @@ msgstr ""
 msgid "Journal for %1"
 msgstr "Дневник за %1"
 
-#: incidenceformatter.cpp:521 incidenceformatter.cpp:2228
+#: incidenceformatter.cpp:521 incidenceformatter.cpp:2241
 #, kde-format
 msgid "Free/Busy information for %1"
 msgstr "Информација „зафатен/слободен“ за %1"
@@ -703,16 +709,6 @@ msgstr "Што:"
 #: incidenceformatter.cpp:984 incidenceformatter.cpp:1079
 msgid "Where:"
 msgstr "Каде:"
-
-#: incidenceformatter.cpp:988 incidenceformatter.cpp:1125
-msgid "Date:"
-msgstr "Датум:"
-
-#: incidenceformatter.cpp:991
-#, fuzzy
-#| msgid "Time"
-msgid "Time:"
-msgstr "Време"
 
 #: incidenceformatter.cpp:997
 msgctxt "starting date"
@@ -932,186 +928,214 @@ msgstr "Испраќачот сѐ уште ја разгледува покан�
 msgid "Unknown response to this invitation"
 msgstr "Непознат одговор на поканата за состанок"
 
-#: incidenceformatter.cpp:1303 incidenceformatter.cpp:1378
-#: incidenceformatter.cpp:1439
+#: incidenceformatter.cpp:1303 incidenceformatter.cpp:1379
+#: incidenceformatter.cpp:1441
 #, fuzzy
 msgid "Sender makes this counter proposal"
 msgstr "Испраќачот го има овој контрапредлог"
 
-#: incidenceformatter.cpp:1305 incidenceformatter.cpp:1380
-#: incidenceformatter.cpp:1441
+#: incidenceformatter.cpp:1305 incidenceformatter.cpp:1381
+#: incidenceformatter.cpp:1443
 msgid "Sender declines the counter proposal"
 msgstr ""
 
-#: incidenceformatter.cpp:1307 incidenceformatter.cpp:1382
-#: incidenceformatter.cpp:1443
-#, kde-format
-msgid "Error: iMIP message with unknown method: '%1'"
+#: incidenceformatter.cpp:1307
+#, fuzzy
+#| msgid "Error: iMIP message with unknown method: '%1'"
+msgid "Error: Event iTIP message with unknown method"
 msgstr "Грешка: iMIP-порака со непознат метод: „%1“"
 
-#: incidenceformatter.cpp:1320
+#: incidenceformatter.cpp:1321
 #, fuzzy
 #| msgid "This task has been published"
 msgid "This to-do has been published"
 msgstr "Оваа задача беше објавена"
 
-#: incidenceformatter.cpp:1323
+#: incidenceformatter.cpp:1324
 #, fuzzy
 msgid "This to-do has been updated"
 msgstr "Оваа задача беше објавена"
 
-#: incidenceformatter.cpp:1325
+#: incidenceformatter.cpp:1326
 #, fuzzy
 #| msgid "You have been assigned this task"
 msgid "You have been assigned this to-do"
 msgstr "Доделена ви е оваа задача"
 
-#: incidenceformatter.cpp:1328
+#: incidenceformatter.cpp:1329
 #, fuzzy
 #| msgid "This task was refreshed"
 msgid "This to-do was refreshed"
 msgstr "Оваа задача беше освежена"
 
-#: incidenceformatter.cpp:1330
+#: incidenceformatter.cpp:1331
 #, fuzzy
 #| msgid "This task was canceled"
 msgid "This to-do was canceled"
 msgstr "Оваа задача беше откажана"
 
-#: incidenceformatter.cpp:1332
+#: incidenceformatter.cpp:1333
 #, fuzzy
 #| msgid "Addition to the task"
 msgid "Addition to the to-do"
 msgstr "Дополнување на задачата"
 
-#: incidenceformatter.cpp:1348
+#: incidenceformatter.cpp:1349
 msgid "Sender indicates this to-do assignment still needs some action"
 msgstr ""
 
-#: incidenceformatter.cpp:1350
+#: incidenceformatter.cpp:1351
 #, fuzzy
 #| msgid "Sender accepts this task"
 msgid "Sender accepts this to-do"
 msgstr "Испраќачот ја прифаќа оваа задача"
 
-#: incidenceformatter.cpp:1352
+#: incidenceformatter.cpp:1353
 #, fuzzy
 #| msgid "Sender tentatively accepts this task"
 msgid "Sender tentatively accepts this to-do"
 msgstr "Испраќачот ја прифаќа со резерва оваа задача"
 
-#: incidenceformatter.cpp:1354
+#: incidenceformatter.cpp:1355
 #, fuzzy
 #| msgid "Sender declines this task"
 msgid "Sender declines this to-do"
 msgstr "Испраќачот ја одбива оваа задача"
 
-#: incidenceformatter.cpp:1363
+#: incidenceformatter.cpp:1364
 #, fuzzy, kde-format
 #| msgid "Sender declines this meeting invitation"
 msgid "Sender has delegated this request for the to-do to %1"
 msgstr "Испраќачот ја одбива оваа покана за состанок"
 
-#: incidenceformatter.cpp:1365
+#: incidenceformatter.cpp:1366
 #, fuzzy
 #| msgid "Sender declines this meeting invitation"
 msgid "Sender has delegated this request for the to-do "
 msgstr "Испраќачот ја одбива оваа покана за состанок"
 
-#: incidenceformatter.cpp:1369
+#: incidenceformatter.cpp:1370
 #, fuzzy
 #| msgid "This meeting invitation is now completed"
 msgid "The request for this to-do is now completed"
 msgstr "Оваа покана за состанок е комплетирана"
 
-#: incidenceformatter.cpp:1371 incidenceformatter.cpp:1432
+#: incidenceformatter.cpp:1372 incidenceformatter.cpp:1434
 msgid "Sender is still processing the invitation"
 msgstr "Испраќачот сѐ уште ја разгледува поканата"
 
-#: incidenceformatter.cpp:1373
+#: incidenceformatter.cpp:1374
 #, fuzzy
 #| msgid "Unknown response to this task"
 msgid "Unknown response to this to-do"
 msgstr "Непознат одговор на оваа задача"
 
-#: incidenceformatter.cpp:1396
+#: incidenceformatter.cpp:1383
+#, fuzzy
+#| msgid "Error: iMIP message with unknown method: '%1'"
+msgid "Error: To-do iTIP message with unknown method"
+msgstr "Грешка: iMIP-порака со непознат метод: „%1“"
+
+#: incidenceformatter.cpp:1398
 msgid "This journal has been published"
 msgstr "Овој дневник е објавен"
 
-#: incidenceformatter.cpp:1398
+#: incidenceformatter.cpp:1400
 msgid "You have been assigned this journal"
 msgstr ""
 
-#: incidenceformatter.cpp:1400
+#: incidenceformatter.cpp:1402
 msgid "This journal was refreshed"
 msgstr "Овој дневник беше освежен"
 
-#: incidenceformatter.cpp:1402
+#: incidenceformatter.cpp:1404
 msgid "This journal was canceled"
 msgstr "Овој дневник беше откажан"
 
-#: incidenceformatter.cpp:1404
+#: incidenceformatter.cpp:1406
 msgid "Addition to the journal"
 msgstr "Дополнување на дневникот"
 
-#: incidenceformatter.cpp:1420
+#: incidenceformatter.cpp:1422
 msgid "Sender indicates this journal assignment still needs some action"
 msgstr ""
 
-#: incidenceformatter.cpp:1422
+#: incidenceformatter.cpp:1424
 msgid "Sender accepts this journal"
 msgstr "Испраќачот го прифаќа овој дневник"
 
-#: incidenceformatter.cpp:1424
+#: incidenceformatter.cpp:1426
 msgid "Sender tentatively accepts this journal"
 msgstr "Испраќачот го прифаќа со резерва овој дневник"
 
-#: incidenceformatter.cpp:1426
+#: incidenceformatter.cpp:1428
 msgid "Sender declines this journal"
 msgstr "Испраќачот го одбива овој дневник"
 
-#: incidenceformatter.cpp:1428
+#: incidenceformatter.cpp:1430
 msgid "Sender has delegated this request for the journal"
 msgstr ""
 
-#: incidenceformatter.cpp:1430
+#: incidenceformatter.cpp:1432
 msgid "The request for this journal is now completed"
 msgstr ""
 
-#: incidenceformatter.cpp:1434
+#: incidenceformatter.cpp:1436
 msgid "Unknown response to this journal"
 msgstr "Непознат одговор на овој дневникја"
 
-#: incidenceformatter.cpp:1456
+#: incidenceformatter.cpp:1445
+#, fuzzy
+#| msgid "Error: iMIP message with unknown method: '%1'"
+msgid "Error: Journal iTIP message with unknown method"
+msgstr "Грешка: iMIP-порака со непознат метод: „%1“"
+
+#: incidenceformatter.cpp:1459
 msgid "This free/busy list has been published"
 msgstr "Оваа листа за „слободен/зафатен“ беше објавена"
 
-#: incidenceformatter.cpp:1458
+#: incidenceformatter.cpp:1461
 msgid "The free/busy list has been requested"
 msgstr "Оваа листа за „слободен/зафатен“ беше побарана"
 
-#: incidenceformatter.cpp:1460
+#: incidenceformatter.cpp:1463
 msgid "This free/busy list was refreshed"
 msgstr "Оваа листа за „слободен/зафатен“ беше освежена"
 
-#: incidenceformatter.cpp:1462
+#: incidenceformatter.cpp:1465
 msgid "This free/busy list was canceled"
 msgstr "Оваа листа за „слободен/зафатен“ беше откажана"
 
-#: incidenceformatter.cpp:1464
+#: incidenceformatter.cpp:1467
 msgid "Addition to the free/busy list"
 msgstr "Дополнување на листата за „слободен/зафатен“"
 
-#: incidenceformatter.cpp:1467
-#, fuzzy, kde-format
-msgid "Error: Free/Busy iMIP message with unknown method: '%1'"
+#: incidenceformatter.cpp:1469
+#, fuzzy
+#| msgid "Title of the free/busy list"
+msgid "Reply to the free/busy list"
+msgstr "Наслов на листата „слободен/зафатен“"
+
+#: incidenceformatter.cpp:1471
+#, fuzzy
+msgid "Send makes this counter proposal"
+msgstr "Испраќачот го има овој контрапредлог"
+
+#: incidenceformatter.cpp:1473
+#, fuzzy
+msgid "Sender decliness the counter proposal"
+msgstr "Испраќачот го има овој контрапредлог"
+
+#: incidenceformatter.cpp:1475
+#, fuzzy
+msgid "Error: Free/Busy iTIP message with unknown method"
 msgstr "Грешка: iMIP-порака со непознат метод: „%1“"
 
-#: incidenceformatter.cpp:1479
+#: incidenceformatter.cpp:1489
 msgid "Invitation List"
 msgstr ""
 
-#: incidenceformatter.cpp:1511
+#: incidenceformatter.cpp:1521
 #, fuzzy
 #| msgctxt "no recurrence"
 #| msgid "None"
@@ -1119,96 +1143,96 @@ msgctxt "no attendees"
 msgid "None"
 msgstr "нема"
 
-#: incidenceformatter.cpp:1526
+#: incidenceformatter.cpp:1536
 msgid "Attached Documents:"
 msgstr ""
 
-#: incidenceformatter.cpp:1693
+#: incidenceformatter.cpp:1703
 #, fuzzy, kde-format
 #| msgid "This meeting has been canceled"
 msgid "The invitation starting time has been changed from %1 to %2"
 msgstr "Овој состанок е откажан"
 
-#: incidenceformatter.cpp:1698
+#: incidenceformatter.cpp:1708
 #, fuzzy, kde-format
 #| msgid "This meeting has been canceled"
 msgid "The invitation ending time has been changed from %1 to %2"
 msgstr "Овој состанок е откажан"
 
-#: incidenceformatter.cpp:1710
+#: incidenceformatter.cpp:1720
 #, kde-format
 msgid "The summary has been changed to: \"%1\""
 msgstr ""
 
-#: incidenceformatter.cpp:1715
+#: incidenceformatter.cpp:1725
 #, fuzzy, kde-format
 #| msgid "This meeting has been canceled"
 msgid "The location has been changed to: \"%1\""
 msgstr "Овој состанок е откажан"
 
-#: incidenceformatter.cpp:1720
+#: incidenceformatter.cpp:1730
 #, fuzzy, kde-format
 #| msgid "This meeting has been canceled"
 msgid "The description has been changed to: \"%1\""
 msgstr "Овој состанок е откажан"
 
-#: incidenceformatter.cpp:1730
+#: incidenceformatter.cpp:1740
 #, kde-format
 msgid "Attendee %1 has been added"
 msgstr ""
 
-#: incidenceformatter.cpp:1733
+#: incidenceformatter.cpp:1743
 #, kde-format
 msgid "The status of attendee %1 has been changed to: %2"
 msgstr ""
 
-#: incidenceformatter.cpp:1743
+#: incidenceformatter.cpp:1753
 #, kde-format
 msgid "Attendee %1 has been removed"
 msgstr ""
 
-#: incidenceformatter.cpp:1857
+#: incidenceformatter.cpp:1867
 msgid ""
 "<p align=\"left\">The following changes have been made by the organizer:</p>"
 msgstr ""
 
-#: incidenceformatter.cpp:1885
+#: incidenceformatter.cpp:1895
 #, kde-format
 msgid "Your response has already been recorded [%1]"
 msgstr ""
 
-#: incidenceformatter.cpp:1889
+#: incidenceformatter.cpp:1899
 #, fuzzy
 #| msgid "This invitation was refreshed"
 msgid "This invitation was declined"
 msgstr "Оваа покана беше освежена"
 
-#: incidenceformatter.cpp:1891
+#: incidenceformatter.cpp:1901
 #, fuzzy
 #| msgid "This invitation was refreshed"
 msgid "This invitation was accepted"
 msgstr "Оваа покана беше освежена"
 
-#: incidenceformatter.cpp:1913
+#: incidenceformatter.cpp:1923
 #, fuzzy
 #| msgid "Unknown response to this task"
 msgid "[Record invitation into my to-do list]"
 msgstr "Непознат одговор на оваа задача"
 
-#: incidenceformatter.cpp:1915
+#: incidenceformatter.cpp:1925
 #, fuzzy
 #| msgid "[Remove this from my calendar]"
 msgid "[Record invitation into my calendar]"
 msgstr "[Отстрани го ова од мојот календар]"
 
-#: incidenceformatter.cpp:1925
+#: incidenceformatter.cpp:1935
 #, fuzzy
 #| msgid "[Accept]"
 msgctxt "accept invitation"
 msgid "Accept"
 msgstr "[Прифати]"
 
-#: incidenceformatter.cpp:1932
+#: incidenceformatter.cpp:1942
 #, fuzzy
 #| msgctxt "Accept conditionally"
 #| msgid "[Accept cond.]"
@@ -1216,85 +1240,85 @@ msgctxt "Accept invitation conditionally"
 msgid "Accept cond."
 msgstr "[Прифати условно]"
 
-#: incidenceformatter.cpp:1941
+#: incidenceformatter.cpp:1951
 #, fuzzy
 msgctxt "invitation counter proposal"
 msgid "Counter proposal"
 msgstr "Одбиено"
 
-#: incidenceformatter.cpp:1950
+#: incidenceformatter.cpp:1960
 #, fuzzy
 #| msgid "Declined"
 msgctxt "decline invitation"
 msgid "Decline"
 msgstr "Одбиено"
 
-#: incidenceformatter.cpp:1959
+#: incidenceformatter.cpp:1969
 #, fuzzy
 #| msgid "[Decline]"
 msgctxt "delegate inviation to another"
 msgid "Delegate"
 msgstr "[Одбиј]"
 
-#: incidenceformatter.cpp:1966
+#: incidenceformatter.cpp:1976
 msgctxt "forward request to another"
 msgid "Forward"
 msgstr ""
 
-#: incidenceformatter.cpp:1974
+#: incidenceformatter.cpp:1984
 #, fuzzy
 #| msgid "[Check my calendar...]"
 msgctxt "look for scheduling conflicts"
 msgid "Check my calendar"
 msgstr "[провери го мојот календар...]"
 
-#: incidenceformatter.cpp:1987
+#: incidenceformatter.cpp:1997
 #, fuzzy
 #| msgid "[Remove this from my calendar]"
 msgid "Remove invitation from my to-do list"
 msgstr "[Отстрани го ова од мојот календар]"
 
-#: incidenceformatter.cpp:1990
+#: incidenceformatter.cpp:2000
 #, fuzzy
 #| msgid "[Remove this from my calendar]"
 msgid "Remove invitation from my calendar"
 msgstr "[Отстрани го ова од мојот календар]"
 
-#: incidenceformatter.cpp:2008
+#: incidenceformatter.cpp:2018
 msgid "The response has already been recorded"
 msgstr ""
 
-#: incidenceformatter.cpp:2013
+#: incidenceformatter.cpp:2023
 #, fuzzy
 #| msgid "Unknown response to this task"
 msgid "[Record response into my to-do list]"
 msgstr "Непознат одговор на оваа задача"
 
-#: incidenceformatter.cpp:2015
+#: incidenceformatter.cpp:2025
 #, fuzzy
 #| msgid "[Remove this from my calendar]"
 msgid "[Record response into my calendar]"
 msgstr "[Отстрани го ова од мојот календар]"
 
-#: incidenceformatter.cpp:2025
+#: incidenceformatter.cpp:2035
 #, fuzzy
 #| msgid "[Accept]"
 msgid "Accept"
 msgstr "[Прифати]"
 
-#: incidenceformatter.cpp:2029
+#: incidenceformatter.cpp:2039
 #, fuzzy
 #| msgid "Declined"
 msgid "Decline"
 msgstr "Одбиено"
 
-#: incidenceformatter.cpp:2033
+#: incidenceformatter.cpp:2043
 #, fuzzy
 #| msgid "[Check my calendar...]"
 msgid "Check my calendar"
 msgstr "[провери го мојот календар...]"
 
-#: incidenceformatter.cpp:2124
+#: incidenceformatter.cpp:2134
 #, fuzzy, kde-format
 #| msgctxt "Event start"
 #| msgid "<i>From:</i>&nbsp;%1"
@@ -1302,7 +1326,7 @@ msgctxt "Event start"
 msgid "<i>From:</i> %1"
 msgstr "<i>Од:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:2127
+#: incidenceformatter.cpp:2137
 #, fuzzy, kde-format
 #| msgctxt "Event end"
 #| msgid "<i>To:</i>&nbsp;%1"
@@ -1310,13 +1334,13 @@ msgctxt "Event end"
 msgid "<i>To:</i> %1"
 msgstr "<i>До:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:2132 incidenceformatter.cpp:2188
+#: incidenceformatter.cpp:2142 incidenceformatter.cpp:2201
 #, fuzzy, kde-format
 #| msgid "<i>Date:</i>&nbsp;%1"
 msgid "<i>Date:</i> %1"
 msgstr "<i>Датум:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:2140
+#: incidenceformatter.cpp:2152
 #, fuzzy, kde-format
 #| msgctxt "time for event, &nbsp; to prevent ugly line breaks"
 #| msgid "<i>Time:</i>&nbsp;%1"
@@ -1324,7 +1348,7 @@ msgctxt "time for event"
 msgid "<i>Time:</i> %1"
 msgstr "<i>Време:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:2145
+#: incidenceformatter.cpp:2157
 #, fuzzy, kde-format
 #| msgctxt "time for event, &nbsp; to prevent ugly line breaks"
 #| msgid "<i>Time:</i>&nbsp;%1"
@@ -1332,163 +1356,163 @@ msgctxt "time range for event"
 msgid "<i>Time:</i> %1 - %2"
 msgstr "<i>Време:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:2162
+#: incidenceformatter.cpp:2175
 #, fuzzy, kde-format
 #| msgid "<i>Start:</i>&nbsp;%1"
 msgid "<i>Start:</i> %1"
 msgstr "<i>Почеток:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:2166
+#: incidenceformatter.cpp:2179
 #, fuzzy, kde-format
 #| msgid "<i>Due:</i>&nbsp;%1"
 msgid "<i>Due:</i> %1"
 msgstr "<i>Краен рок:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:2173
+#: incidenceformatter.cpp:2186
 #, fuzzy, kde-format
 #| msgid "<i>Completed:</i>&nbsp;%1"
 msgid "<i>Completed:</i> %1"
 msgstr "<i>Завршено:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:2176
+#: incidenceformatter.cpp:2189
 #, fuzzy, kde-format
 #| msgid "%1 % completed"
 msgctxt "percent complete"
 msgid "%1 % completed"
 msgstr "%1% се завршени"
 
-#: incidenceformatter.cpp:2199 incidenceformatter.cpp:2202
+#: incidenceformatter.cpp:2212 incidenceformatter.cpp:2215
 #, fuzzy, kde-format
 #| msgid "<i>Period start:</i>&nbsp;%1"
 msgid "<i>Period start:</i> %1"
 msgstr "<i>Почеток на период:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:2249
+#: incidenceformatter.cpp:2262
 #, fuzzy, kde-format
 #| msgid "<i>Location:</i>&nbsp;%1"
 msgid "<i>Location:</i> %1"
 msgstr "<i>Локација:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:2262
+#: incidenceformatter.cpp:2275
 #, fuzzy
 #| msgid "<i>Description:</i><br>"
 msgid "<i>Description:</i>"
 msgstr "<i>Опис:</i><br>"
 
-#: incidenceformatter.cpp:2295
+#: incidenceformatter.cpp:2308
 #, kde-format
 msgid "Summary: %1\n"
 msgstr "Преглед: %1\n"
 
-#: incidenceformatter.cpp:2298
+#: incidenceformatter.cpp:2311
 #, kde-format
 msgid "Organizer: %1\n"
 msgstr "Организатор: %1\n"
 
-#: incidenceformatter.cpp:2301
+#: incidenceformatter.cpp:2314
 #, kde-format
 msgid "Location: %1\n"
 msgstr "Локација: %1\n"
 
-#: incidenceformatter.cpp:2332
+#: incidenceformatter.cpp:2345
 msgid "This is a Free Busy Object"
 msgstr ""
 
-#: incidenceformatter.cpp:2343
+#: incidenceformatter.cpp:2356
 msgctxt "no recurrence"
 msgid "None"
 msgstr "нема"
 
-#: incidenceformatter.cpp:2344
+#: incidenceformatter.cpp:2357
 #, fuzzy
 msgctxt "event recurs by minutes"
 msgid "Minutely"
 msgstr "Минута"
 
-#: incidenceformatter.cpp:2345
+#: incidenceformatter.cpp:2358
 #, fuzzy
 msgctxt "event recurs by hours"
 msgid "Hourly"
 msgstr "Час"
 
-#: incidenceformatter.cpp:2346
+#: incidenceformatter.cpp:2359
 #, fuzzy
 #| msgid "Daily"
 msgctxt "event recurs by days"
 msgid "Daily"
 msgstr "Дневно"
 
-#: incidenceformatter.cpp:2347
+#: incidenceformatter.cpp:2360
 #, fuzzy
 #| msgid "Weekly"
 msgctxt "event recurs by weeks"
 msgid "Weekly"
 msgstr "Неделно"
 
-#: incidenceformatter.cpp:2348
+#: incidenceformatter.cpp:2361
 #, fuzzy
 #| msgid "Monthly Same Position"
 msgctxt "event recurs same position (e.g. first monday) each month"
 msgid "Monthly Same Position"
 msgstr "Месечно на истата позиција"
 
-#: incidenceformatter.cpp:2349
+#: incidenceformatter.cpp:2362
 #, fuzzy
 #| msgid "Monthly Same Day"
 msgctxt "event recurs same day each month"
 msgid "Monthly Same Day"
 msgstr "Месечно во истиот ден"
 
-#: incidenceformatter.cpp:2350
+#: incidenceformatter.cpp:2363
 msgctxt "event recurs same month each year"
 msgid "Yearly Same Month"
 msgstr ""
 
-#: incidenceformatter.cpp:2351
+#: incidenceformatter.cpp:2364
 #, fuzzy
 #| msgid "Monthly Same Day"
 msgctxt "event recurs same day each year"
 msgid "Yearly Same Day"
 msgstr "Месечно во истиот ден"
 
-#: incidenceformatter.cpp:2352
+#: incidenceformatter.cpp:2365
 #, fuzzy
 #| msgid "Monthly Same Position"
 msgctxt "event recurs same position (e.g. first monday) each year"
 msgid "Yearly Same Position"
 msgstr "Месечно на истата позиција"
 
-#: incidenceformatter.cpp:2356 incidenceformatter.cpp:2407
+#: incidenceformatter.cpp:2369 incidenceformatter.cpp:2420
 #, kde-format
 msgid "Start Date: %1\n"
 msgstr "Почетен датум: %1\n"
 
-#: incidenceformatter.cpp:2359 incidenceformatter.cpp:2410
+#: incidenceformatter.cpp:2372 incidenceformatter.cpp:2423
 #, kde-format
 msgid "Start Time: %1\n"
 msgstr "Почетно време: %1\n"
 
-#: incidenceformatter.cpp:2363
+#: incidenceformatter.cpp:2376
 #, kde-format
 msgid "End Date: %1\n"
 msgstr "Завршен датум: %1\n"
 
-#: incidenceformatter.cpp:2367
+#: incidenceformatter.cpp:2380
 #, kde-format
 msgid "End Time: %1\n"
 msgstr "Завршно време : %1\n"
 
-#: incidenceformatter.cpp:2373
+#: incidenceformatter.cpp:2386
 #, kde-format
 msgid "Recurs: %1\n"
 msgstr "Се повторува: %1\n"
 
-#: incidenceformatter.cpp:2374
+#: incidenceformatter.cpp:2387
 #, kde-format
 msgid "Frequency: %1\n"
 msgstr "Фреквенција: %1\n"
 
-#: incidenceformatter.cpp:2377
+#: incidenceformatter.cpp:2390
 #, kde-format
 msgid "Repeats once"
 msgid_plural "Repeats %1 times"
@@ -1496,16 +1520,16 @@ msgstr[0] "Се повторува %1 пат"
 msgstr[1] "Се повторува %1 пати"
 msgstr[2] "Се повторува %1 пати"
 
-#: incidenceformatter.cpp:2388
+#: incidenceformatter.cpp:2401
 #, kde-format
 msgid "Repeat until: %1\n"
 msgstr "Се повторува со: %1\n"
 
-#: incidenceformatter.cpp:2390
+#: incidenceformatter.cpp:2403
 msgid "Repeats forever\n"
 msgstr "Се повторува бесконечно\n"
 
-#: incidenceformatter.cpp:2397 incidenceformatter.cpp:2424
+#: incidenceformatter.cpp:2410 incidenceformatter.cpp:2437
 #, kde-format
 msgid ""
 "Details:\n"
@@ -1514,27 +1538,27 @@ msgstr ""
 "Детали:\n"
 "%1\n"
 
-#: incidenceformatter.cpp:2415
+#: incidenceformatter.cpp:2428
 #, kde-format
 msgid "Due Date: %1\n"
 msgstr "Краен рок: %1\n"
 
-#: incidenceformatter.cpp:2418
+#: incidenceformatter.cpp:2431
 #, kde-format
 msgid "Due Time: %1\n"
 msgstr "Крајно време : %1\n"
 
-#: incidenceformatter.cpp:2432
+#: incidenceformatter.cpp:2445
 #, kde-format
 msgid "Date: %1\n"
 msgstr "Датум: %1\n"
 
-#: incidenceformatter.cpp:2435
+#: incidenceformatter.cpp:2448
 #, kde-format
 msgid "Time: %1\n"
 msgstr "Време : %1\n"
 
-#: incidenceformatter.cpp:2439
+#: incidenceformatter.cpp:2452
 #, kde-format
 msgid ""
 "Text of the journal:\n"
@@ -1543,267 +1567,267 @@ msgstr ""
 "Текст на дневникот:\n"
 "%1\n"
 
-#: incidenceformatter.cpp:2480 incidenceformatter.cpp:2553
+#: incidenceformatter.cpp:2493 incidenceformatter.cpp:2566
 msgid "No recurrence"
 msgstr ""
 
-#: incidenceformatter.cpp:2483
+#: incidenceformatter.cpp:2496
 msgid "31st Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2484
+#: incidenceformatter.cpp:2497
 msgid "30th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2485
+#: incidenceformatter.cpp:2498
 msgid "29th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2486
+#: incidenceformatter.cpp:2499
 msgid "28th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2487
+#: incidenceformatter.cpp:2500
 msgid "27th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2488
+#: incidenceformatter.cpp:2501
 msgid "26th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2489
+#: incidenceformatter.cpp:2502
 msgid "25th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2490
+#: incidenceformatter.cpp:2503
 msgid "24th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2491
+#: incidenceformatter.cpp:2504
 msgid "23rd Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2492
+#: incidenceformatter.cpp:2505
 msgid "22nd Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2493
+#: incidenceformatter.cpp:2506
 msgid "21st Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2494
+#: incidenceformatter.cpp:2507
 msgid "20th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2495
+#: incidenceformatter.cpp:2508
 msgid "19th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2496
+#: incidenceformatter.cpp:2509
 msgid "18th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2497
+#: incidenceformatter.cpp:2510
 msgid "17th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2498
+#: incidenceformatter.cpp:2511
 msgid "16th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2499
+#: incidenceformatter.cpp:2512
 msgid "15th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2500
+#: incidenceformatter.cpp:2513
 msgid "14th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2501
+#: incidenceformatter.cpp:2514
 msgid "13th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2502
+#: incidenceformatter.cpp:2515
 msgid "12th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2503
+#: incidenceformatter.cpp:2516
 msgid "11th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2504
+#: incidenceformatter.cpp:2517
 msgid "10th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2505
+#: incidenceformatter.cpp:2518
 msgid "9th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2506
+#: incidenceformatter.cpp:2519
 msgid "8th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2507
+#: incidenceformatter.cpp:2520
 msgid "7th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2508
+#: incidenceformatter.cpp:2521
 msgid "6th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2509
+#: incidenceformatter.cpp:2522
 msgid "5th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2510
+#: incidenceformatter.cpp:2523
 msgid "4th Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2511
+#: incidenceformatter.cpp:2524
 msgid "3rd Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2512
+#: incidenceformatter.cpp:2525
 msgid "2nd Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2513
+#: incidenceformatter.cpp:2526
 msgctxt "last day of the month"
 msgid "Last"
 msgstr ""
 
-#: incidenceformatter.cpp:2514
+#: incidenceformatter.cpp:2527
 #, fuzzy
 #| msgid "Unknown"
 msgctxt "unknown day of the month"
 msgid "unknown"
 msgstr "Непознат"
 
-#: incidenceformatter.cpp:2515
+#: incidenceformatter.cpp:2528
 msgid "1st"
 msgstr ""
 
-#: incidenceformatter.cpp:2516
+#: incidenceformatter.cpp:2529
 msgid "2nd"
 msgstr ""
 
-#: incidenceformatter.cpp:2517
+#: incidenceformatter.cpp:2530
 msgid "3rd"
 msgstr ""
 
-#: incidenceformatter.cpp:2518
+#: incidenceformatter.cpp:2531
 msgid "4th"
 msgstr ""
 
-#: incidenceformatter.cpp:2519
+#: incidenceformatter.cpp:2532
 msgid "5th"
 msgstr ""
 
-#: incidenceformatter.cpp:2520
+#: incidenceformatter.cpp:2533
 msgid "6th"
 msgstr ""
 
-#: incidenceformatter.cpp:2521
+#: incidenceformatter.cpp:2534
 msgid "7th"
 msgstr ""
 
-#: incidenceformatter.cpp:2522
+#: incidenceformatter.cpp:2535
 msgid "8th"
 msgstr ""
 
-#: incidenceformatter.cpp:2523
+#: incidenceformatter.cpp:2536
 msgid "9th"
 msgstr ""
 
-#: incidenceformatter.cpp:2524
+#: incidenceformatter.cpp:2537
 msgid "10th"
 msgstr ""
 
-#: incidenceformatter.cpp:2525
+#: incidenceformatter.cpp:2538
 msgid "11th"
 msgstr ""
 
-#: incidenceformatter.cpp:2526
+#: incidenceformatter.cpp:2539
 msgid "12th"
 msgstr ""
 
-#: incidenceformatter.cpp:2527
+#: incidenceformatter.cpp:2540
 msgid "13th"
 msgstr ""
 
-#: incidenceformatter.cpp:2528
+#: incidenceformatter.cpp:2541
 msgid "14th"
 msgstr ""
 
-#: incidenceformatter.cpp:2529
+#: incidenceformatter.cpp:2542
 msgid "15th"
 msgstr ""
 
-#: incidenceformatter.cpp:2530
+#: incidenceformatter.cpp:2543
 msgid "16th"
 msgstr ""
 
-#: incidenceformatter.cpp:2531
+#: incidenceformatter.cpp:2544
 msgid "17th"
 msgstr ""
 
-#: incidenceformatter.cpp:2532
+#: incidenceformatter.cpp:2545
 msgid "18th"
 msgstr ""
 
-#: incidenceformatter.cpp:2533
+#: incidenceformatter.cpp:2546
 msgid "19th"
 msgstr ""
 
-#: incidenceformatter.cpp:2534
+#: incidenceformatter.cpp:2547
 msgid "20th"
 msgstr ""
 
-#: incidenceformatter.cpp:2535
+#: incidenceformatter.cpp:2548
 msgid "21st"
 msgstr ""
 
-#: incidenceformatter.cpp:2536
+#: incidenceformatter.cpp:2549
 msgid "22nd"
 msgstr ""
 
-#: incidenceformatter.cpp:2537
+#: incidenceformatter.cpp:2550
 msgid "23rd"
 msgstr ""
 
-#: incidenceformatter.cpp:2538
+#: incidenceformatter.cpp:2551
 msgid "24th"
 msgstr ""
 
-#: incidenceformatter.cpp:2539
+#: incidenceformatter.cpp:2552
 msgid "25th"
 msgstr ""
 
-#: incidenceformatter.cpp:2540
+#: incidenceformatter.cpp:2553
 msgid "26th"
 msgstr ""
 
-#: incidenceformatter.cpp:2541
+#: incidenceformatter.cpp:2554
 msgid "27th"
 msgstr ""
 
-#: incidenceformatter.cpp:2542
+#: incidenceformatter.cpp:2555
 msgid "28th"
 msgstr ""
 
-#: incidenceformatter.cpp:2543
+#: incidenceformatter.cpp:2556
 msgid "29th"
 msgstr ""
 
-#: incidenceformatter.cpp:2544
+#: incidenceformatter.cpp:2557
 msgid "30th"
 msgstr ""
 
-#: incidenceformatter.cpp:2545
+#: incidenceformatter.cpp:2558
 msgid "31st"
 msgstr ""
 
-#: incidenceformatter.cpp:2556
+#: incidenceformatter.cpp:2569
 #, fuzzy, kde-format
 #| msgid "Repeat until: %1\n"
 msgid "Recurs every minute until %2"
@@ -1812,17 +1836,17 @@ msgstr[0] "Се повторува со: %1\n"
 msgstr[1] "Се повторува со: %1\n"
 msgstr[2] "Се повторува со: %1\n"
 
-#: incidenceformatter.cpp:2561 incidenceformatter.cpp:2575
-#: incidenceformatter.cpp:2588 incidenceformatter.cpp:2617
-#: incidenceformatter.cpp:2641 incidenceformatter.cpp:2665
-#: incidenceformatter.cpp:2690 incidenceformatter.cpp:2731
-#: incidenceformatter.cpp:2757
+#: incidenceformatter.cpp:2574 incidenceformatter.cpp:2588
+#: incidenceformatter.cpp:2601 incidenceformatter.cpp:2630
+#: incidenceformatter.cpp:2654 incidenceformatter.cpp:2678
+#: incidenceformatter.cpp:2703 incidenceformatter.cpp:2744
+#: incidenceformatter.cpp:2770
 #, kde-format
 msgctxt "number of occurrences"
 msgid " (<numid>%1</numid> occurrences)"
 msgstr ""
 
-#: incidenceformatter.cpp:2566
+#: incidenceformatter.cpp:2579
 #, kde-format
 msgid "Recurs every minute"
 msgid_plural "Recurs every %1 minutes"
@@ -1830,7 +1854,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: incidenceformatter.cpp:2570
+#: incidenceformatter.cpp:2583
 #, fuzzy, kde-format
 #| msgid "Repeat until: %1\n"
 msgid "Recurs hourly until %2"
@@ -1839,7 +1863,7 @@ msgstr[0] "Се повторува со: %1\n"
 msgstr[1] "Се повторува со: %1\n"
 msgstr[2] "Се повторува со: %1\n"
 
-#: incidenceformatter.cpp:2580
+#: incidenceformatter.cpp:2593
 #, kde-format
 msgid "Recurs hourly"
 msgid_plural "Recurs every %1 hours"
@@ -1847,7 +1871,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: incidenceformatter.cpp:2583
+#: incidenceformatter.cpp:2596
 #, fuzzy, kde-format
 #| msgid "Repeat until: %1\n"
 msgid "Recurs daily until %2"
@@ -1856,7 +1880,7 @@ msgstr[0] "Се повторува со: %1\n"
 msgstr[1] "Се повторува со: %1\n"
 msgstr[2] "Се повторува со: %1\n"
 
-#: incidenceformatter.cpp:2593
+#: incidenceformatter.cpp:2606
 #, fuzzy, kde-format
 #| msgid "Recurs: %1\n"
 msgid "Recurs daily"
@@ -1865,17 +1889,17 @@ msgstr[0] "Се повторува: %1\n"
 msgstr[1] "Се повторува: %1\n"
 msgstr[2] "Се повторува: %1\n"
 
-#: incidenceformatter.cpp:2600
+#: incidenceformatter.cpp:2613
 msgctxt "separator for list of days"
 msgid ", "
 msgstr ""
 
-#: incidenceformatter.cpp:2608
+#: incidenceformatter.cpp:2621
 msgctxt "Recurs weekly on no days"
 msgid "no days"
 msgstr ""
 
-#: incidenceformatter.cpp:2612
+#: incidenceformatter.cpp:2625
 #, fuzzy, kde-format
 #| msgid "Repeat until: %1\n"
 msgctxt "Recurs weekly on [list of days] until end-date"
@@ -1885,7 +1909,7 @@ msgstr[0] "Се повторува со: %1\n"
 msgstr[1] "Се повторува со: %1\n"
 msgstr[2] "Се повторува со: %1\n"
 
-#: incidenceformatter.cpp:2623
+#: incidenceformatter.cpp:2636
 #, fuzzy, kde-format
 #| msgid "Repeat until: %1\n"
 msgctxt "Recurs weekly on [list of days]"
@@ -1895,7 +1919,7 @@ msgstr[0] "Се повторува со: %1\n"
 msgstr[1] "Се повторува со: %1\n"
 msgstr[2] "Се повторува со: %1\n"
 
-#: incidenceformatter.cpp:2633
+#: incidenceformatter.cpp:2646
 #, fuzzy, kde-format
 #| msgid "Repeat until: %1\n"
 msgctxt "Recurs every N months on the [2nd|3rd|...] weekdayname until end-date"
@@ -1905,7 +1929,7 @@ msgstr[0] "Се повторува со: %1\n"
 msgstr[1] "Се повторува со: %1\n"
 msgstr[2] "Се повторува со: %1\n"
 
-#: incidenceformatter.cpp:2647
+#: incidenceformatter.cpp:2660
 #, fuzzy, kde-format
 #| msgid "Repeat until: %1\n"
 msgctxt "Recurs every N months on the [2nd|3rd|...] weekdayname"
@@ -1915,7 +1939,7 @@ msgstr[0] "Се повторува со: %1\n"
 msgstr[1] "Се повторува со: %1\n"
 msgstr[2] "Се повторува со: %1\n"
 
-#: incidenceformatter.cpp:2658
+#: incidenceformatter.cpp:2671
 #, fuzzy, kde-format
 #| msgid "Repeat until: %1\n"
 msgctxt "Recurs monthly on the [1st|2nd|...] day until end-date"
@@ -1925,7 +1949,7 @@ msgstr[0] "Се повторува со: %1\n"
 msgstr[1] "Се повторува со: %1\n"
 msgstr[2] "Се повторува со: %1\n"
 
-#: incidenceformatter.cpp:2671
+#: incidenceformatter.cpp:2684
 #, fuzzy, kde-format
 #| msgid "Repeat until: %1\n"
 msgctxt "Recurs monthly on the [1st|2nd|...] day"
@@ -1935,7 +1959,7 @@ msgstr[0] "Се повторува со: %1\n"
 msgstr[1] "Се повторува со: %1\n"
 msgstr[2] "Се повторува со: %1\n"
 
-#: incidenceformatter.cpp:2682
+#: incidenceformatter.cpp:2695
 #, fuzzy, kde-format
 #| msgid "Repeat until: %1\n"
 msgctxt "Recurs Every N years on month-name [1st|2nd|...] until end-date"
@@ -1945,7 +1969,7 @@ msgstr[0] "Се повторува со: %1\n"
 msgstr[1] "Се повторува со: %1\n"
 msgstr[2] "Се повторува со: %1\n"
 
-#: incidenceformatter.cpp:2698
+#: incidenceformatter.cpp:2711
 #, fuzzy, kde-format
 #| msgid "Repeat until: %1\n"
 msgctxt "Recurs Every N years on month-name [1st|2nd|...]"
@@ -1955,14 +1979,14 @@ msgstr[0] "Се повторува со: %1\n"
 msgstr[1] "Се повторува со: %1\n"
 msgstr[2] "Се повторува со: %1\n"
 
-#: incidenceformatter.cpp:2707 incidenceformatter.cpp:2713
+#: incidenceformatter.cpp:2720 incidenceformatter.cpp:2726
 #, fuzzy, kde-format
 #| msgid "Repeat until: %1\n"
 msgctxt "Recurs Every year on month-name [1st|2nd|...]"
 msgid "Recurs yearly on %1 %2"
 msgstr "Се повторува со: %1\n"
 
-#: incidenceformatter.cpp:2723
+#: incidenceformatter.cpp:2736
 #, fuzzy, kde-format
 #| msgid "Repeat until: %1\n"
 msgctxt "Recurs every N years on day N until end-date"
@@ -1973,7 +1997,7 @@ msgstr[0] "Се повторува со: %1\n"
 msgstr[1] "Се повторува со: %1\n"
 msgstr[2] "Се повторува со: %1\n"
 
-#: incidenceformatter.cpp:2737
+#: incidenceformatter.cpp:2750
 #, fuzzy, kde-format
 #| msgid "Repeat until: %1\n"
 msgctxt "Recurs every N YEAR[S] on day N"
@@ -1983,7 +2007,7 @@ msgstr[0] "Се повторува со: %1\n"
 msgstr[1] "Се повторува со: %1\n"
 msgstr[2] "Се повторува со: %1\n"
 
-#: incidenceformatter.cpp:2747
+#: incidenceformatter.cpp:2760
 #, kde-format
 msgctxt ""
 "Every N years on the [2nd|3rd|...] weekdayname of monthname until end-date"
@@ -1993,7 +2017,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: incidenceformatter.cpp:2764
+#: incidenceformatter.cpp:2777
 #, kde-format
 msgctxt "Every N years on the [2nd|3rd|...] weekdayname of monthname"
 msgid "Every year on the %2 %3 of %4"
@@ -2002,7 +2026,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: incidenceformatter.cpp:2772
+#: incidenceformatter.cpp:2785
 msgid "Incidence recurs"
 msgstr ""
 
@@ -2387,10 +2411,6 @@ msgstr "Грешка при вчитувањето на %1.\n"
 msgid "Error while saving %1.\n"
 msgstr "Грешка при зачувувањето на %1.\n"
 
-#: resourcelocalconfig.cpp:67 resourcelocaldirconfig.cpp:61
-msgid "Location:"
-msgstr "Локација:"
-
 #: resourcelocalconfig.cpp:69
 msgid "*.ics *.vcs|Calendar Files"
 msgstr ""
@@ -2584,6 +2604,15 @@ msgstr "Прифатено"
 msgctxt "@info"
 msgid "The organizer rejected your attendance at this meeting."
 msgstr ""
+
+#~ msgid "Location"
+#~ msgstr "Локација"
+
+#~ msgid "Time"
+#~ msgstr "Време"
+
+#~ msgid "Date"
+#~ msgstr "Датум"
 
 #, fuzzy
 #~| msgid "Sender declines this meeting invitation"
