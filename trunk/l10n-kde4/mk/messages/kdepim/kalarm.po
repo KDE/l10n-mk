@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-20 06:14+0200\n"
+"POT-Creation-Date: 2009-08-29 07:25+0200\n"
 "PO-Revision-Date: 2007-02-28 14:12+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -5796,6 +5796,32 @@ msgstr ""
 "bobibobi@freemail.com.mk,pavle_no1@yahoo.com,viktor@lugola.net,ruzin@lugola."
 "net"
 
+#. i18n: file: akonadi/kalarmresource.kcfg:9
+#. i18n: ectx: label, entry (Path), group (General)
+#: rc.cpp:733
+#, fuzzy
+#| msgid "URL of calendar file"
+msgid "Path to KAlarm calendar file."
+msgstr "URL на календарот"
+
+#. i18n: file: akonadi/kalarmresource.kcfg:13
+#. i18n: ectx: label, entry (ReadOnly), group (General)
+#: rc.cpp:736
+msgid "Do not change the actual backend data."
+msgstr ""
+
+#. i18n: file: akonadi/kalarmresource.kcfg:17
+#. i18n: ectx: label, entry (AutosaveInterval), group (General)
+#: rc.cpp:739
+msgid "Autosave interval time (in minutes)."
+msgstr ""
+
+#. i18n: file: akonadi/kalarmresource.kcfg:21
+#. i18n: ectx: label, entry (MonitorFile), group (General)
+#: rc.cpp:742
+msgid "Monitor file for changes."
+msgstr ""
+
 #: messagewin.cpp:353
 #, fuzzy
 #| msgid "Reminder"
@@ -6022,19 +6048,19 @@ msgstr[0] "за %1 час и %2 минути"
 msgstr[1] "за %1 часа и %2 минути"
 msgstr[2] "за %1 часа и %2 минути"
 
-#: messagewin.cpp:1203 messagewin.cpp:1213
+#: messagewin.cpp:1202 messagewin.cpp:1212
 #, fuzzy
 #| msgid "Unable to speak message"
 msgctxt "@info"
 msgid "Unable to speak message"
 msgstr "Не можам да ја изговорам пораката"
 
-#: messagewin.cpp:1213
+#: messagewin.cpp:1212
 msgctxt "@info"
 msgid "D-Bus call say() failed"
 msgstr ""
 
-#: messagewin.cpp:1310
+#: messagewin.cpp:1309
 #, fuzzy, kde-format
 #| msgid ""
 #| "Cannot open audio file:\n"
@@ -6045,7 +6071,7 @@ msgstr ""
 "Не можам да ја отворам аудиодатотеката:\n"
 "%1"
 
-#: messagewin.cpp:1384
+#: messagewin.cpp:1383
 #, fuzzy, kde-format
 #| msgid ""
 #| "Error attaching file:\n"
@@ -6056,32 +6082,32 @@ msgstr ""
 "Грешка при приложувањето на датотеката:\n"
 "%1"
 
-#: messagewin.cpp:1700
+#: messagewin.cpp:1699
 #, fuzzy
 msgctxt "@info"
 msgid "Do you really want to acknowledge this alarm?"
 msgstr "Дали навистина сакате да го прифатите алармот?"
 
-#: messagewin.cpp:1701
+#: messagewin.cpp:1700
 #, fuzzy
 msgctxt "@action:button"
 msgid "Acknowledge Alarm"
 msgstr "Прифаќање аларм"
 
-#: messagewin.cpp:1701
+#: messagewin.cpp:1700
 #, fuzzy
 msgctxt "@action:button"
 msgid "Acknowledge"
 msgstr "Приф&ати"
 
-#: messagewin.cpp:1748
+#: messagewin.cpp:1747
 #, fuzzy
 #| msgid "Unable to locate this email in KMail"
 msgctxt "@info"
 msgid "Unable to locate this email in <application>KMail</application>"
 msgstr "Не можам да ја пронајдам е-пошт порака во КПошта."
 
-#: messagewin.cpp:1878
+#: messagewin.cpp:1877
 msgctxt "@info"
 msgid "<para>Cannot defer alarm:</para><para>Alarm not found.</para>"
 msgstr ""
@@ -6266,6 +6292,28 @@ msgstr "Звучна датотека"
 msgctxt "@title:window"
 msgid "Choose Sound File"
 msgstr "Избирање звучна датотека"
+
+#: akonadi/kalarmresource.cpp:43
+#, fuzzy
+#| msgid "Calendar Files"
+msgctxt "Filedialog filter for *.ics *.ical"
+msgid "KAlarm Calendar File"
+msgstr "Датотеки со календари"
+
+#: akonadi/kalarmresource.cpp:63
+#, kde-format
+msgid "Event with uid '%1' not found!"
+msgstr ""
+
+#: akonadi/kalarmresource.cpp:69 akonadi/kalarmresource.cpp:77
+#, kde-format
+msgid "Event with uid '%1' contains no usable alarms!"
+msgstr ""
+
+#: akonadi/kalarmresource.cpp:113
+#, kde-format
+msgid "Item ID %1 differs from payload ID %2."
+msgstr ""
 
 #: resources/resourcelocal.cpp:266
 #, fuzzy
@@ -8057,9 +8105,6 @@ msgstr[2] "Бришење обрасци за аларми"
 
 #~ msgid "%1 requires %2, %3 or %4"
 #~ msgstr "%1 ги побарува %2, %3 или %4"
-
-#~ msgid "URL of calendar file"
-#~ msgstr "URL на календарот"
 
 #~ msgid "Expired Alarm"
 #~ msgstr "Истечен аларм"
