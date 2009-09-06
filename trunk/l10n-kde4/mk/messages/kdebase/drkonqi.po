@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: drkonqi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-02 07:22+0200\n"
+"POT-Creation-Date: 2009-09-06 06:15+0200\n"
 "PO-Revision-Date: 2009-06-30 10:05+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -105,7 +105,7 @@ msgstr ""
 "откривање грешки што недостасуваат) може да продолжите."
 
 #: aboutbugreportingdialog.cpp:80 aboutbugreportingdialog.cpp:174
-#: drkonqibugreport.cpp:63
+#: reportassistantdialog.cpp:63
 msgctxt "@title"
 msgid "What do you know about the crash?"
 msgstr "Што знаете за падот?"
@@ -220,7 +220,7 @@ msgstr ""
 "назад и да ги смените информациите и да ги инсталирате пакетите за помош при "
 "откривање грешки."
 
-#: aboutbugreportingdialog.cpp:122 drkonqibugreport.cpp:94
+#: aboutbugreportingdialog.cpp:122 reportassistantdialog.cpp:94
 msgctxt "@title"
 msgid "KDE Bug Tracking System Login"
 msgstr "Најава на системот за следење грешки на KDE"
@@ -358,7 +358,7 @@ msgctxt "@info/rich"
 msgid "<note>You should write in English.</note>"
 msgstr "<note>Би требало да пишувате на англиски.</note>"
 
-#: aboutbugreportingdialog.cpp:178 drkonqibugreport.cpp:133
+#: aboutbugreportingdialog.cpp:178 reportassistantdialog.cpp:133
 msgctxt "@title"
 msgid "Send Crash Report"
 msgstr "Испраќање извештај за грешка"
@@ -384,6 +384,175 @@ msgstr ""
 "Ако не успее процесот, може да кликнете на <interface>Повтори</interface> за "
 "да се обидете повторно да го испратите извештајот за грешка."
 
+#: backtracewidget.cpp:61
+msgctxt "@action:button"
+msgid "&Reload"
+msgstr ""
+
+#: backtracewidget.cpp:62
+msgctxt "@info:tooltip"
+msgid ""
+"Use this button to reload the crash information (backtrace). This is useful "
+"when you have installed the proper debug symbol packages and you want to "
+"obtain a better backtrace."
+msgstr ""
+"Со ова копче може повторно да ја вчитате информацијата за падот (трагата). "
+"Ова е корисно ако сте ги инсталирале соодветните пакети за откривање грешки "
+"и сакате да добиете подобра трага."
+
+#: backtracewidget.cpp:69
+msgctxt "@action:button"
+msgid "&Install Debug Symbols"
+msgstr ""
+
+#: backtracewidget.cpp:70
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Use this button to stop the current search."
+msgctxt "@info:tooltip"
+msgid "Use this button to install the missing debug symbols packages."
+msgstr "Со ова копче се запира тековното пребарување."
+
+#: backtracewidget.cpp:76
+msgctxt "@info:tooltip"
+msgid ""
+"Use this button to copy the crash information (backtrace) to the clipboard."
+msgstr ""
+"Со ова копче може да ја копирате информацијата за падот (трагата) на таблата "
+"со исечоци."
+
+#: backtracewidget.cpp:83
+msgctxt "@info:tooltip"
+msgid ""
+"Use this button to save the crash information (backtrace) to a file. This is "
+"useful if you want to take a look at it or to report the bug later."
+msgstr ""
+"Со ова копче може да ја зачувате информацијата за падот (трагата) во "
+"датотека. Ова е корисно ако сакате да ја погледнете информацијата или да "
+"известите за грешката подоцна."
+
+#: backtracewidget.cpp:98 reportassistantpages_bugzilla.cpp:610
+msgctxt "@info:status"
+msgid "Loading..."
+msgstr "Вчитувам..."
+
+#: backtracewidget.cpp:102
+msgctxt "@info:status"
+msgid "Loading crash information... (this may take some time)"
+msgstr "Вчитувам информација за падот... (ова може да потрае)"
+
+#: backtracewidget.cpp:147
+msgctxt "@info"
+msgid ""
+"Another debugger is currently debugging the same application. The crash "
+"information could not be fetched."
+msgstr ""
+
+#: backtracewidget.cpp:151
+msgctxt "@info:status"
+msgid "The crash information could not be fetched."
+msgstr "Не можеше да биде преземена информацијата за падот."
+
+#: backtracewidget.cpp:153
+msgctxt "@info/rich"
+msgid ""
+"Another debugging process is attached to the crashed application. Therefore, "
+"the DrKonqi debugger cannot fetch the backtrace. Please close the other "
+"debugger and click <interface>Reload Crash Information</interface>."
+msgstr ""
+
+#: backtracewidget.cpp:175
+msgctxt "@info"
+msgid "This crash information is useful"
+msgstr "Оваа информација за пад е корисна"
+
+#: backtracewidget.cpp:178
+msgctxt "@info"
+msgid "This crash information may be useful"
+msgstr "Оваа информација за пад може да е корисна"
+
+#: backtracewidget.cpp:181
+msgctxt "@info"
+msgid "This crash information is probably not useful"
+msgstr "Оваа информација за пад веројатно не е корисна"
+
+#: backtracewidget.cpp:184
+msgctxt "@info"
+msgid "This crash information is not useful"
+msgstr "Оваа информација за пад не е корисна"
+
+#: backtracewidget.cpp:188
+msgctxt "@info"
+msgid ""
+"The rating of this crash information is invalid. This is a bug in drkonqi "
+"itself."
+msgstr ""
+"Рангирањето на информацијата за падот не е валидно. Ова е грешка во drkonqi."
+
+#: backtracewidget.cpp:196
+#, fuzzy, kde-format
+#| msgctxt "@info/rich"
+#| msgid ""
+#| "Please read <link url='%1'>How to create useful crash reports</link> to "
+#| "learn how to get a useful backtrace. After you install the needed "
+#| "packages, click the <interface>Reload Crash Information</interface> "
+#| "button."
+msgctxt "@info/rich"
+msgid ""
+"You can click the <interface>Install Debug Symbols</interface> button in "
+"order to automatically install the missing debugging information packages. "
+"If this method does not work: please read <link url='%1'>How to create "
+"useful crash reports</link> to learn how to get a useful backtrace; install "
+"the needed packages and click the <interface>Reload Crash Information</"
+"interface> button."
+msgstr ""
+"Прочитајте го <link url='%1'>Како да креирате употребливи извештаи за "
+"грешки</link> за да научите како да добиете корисна трага. Откако ќе ги "
+"инсталирате потребните пакети, кликнете на копчето <interface>Превчитај инфо "
+"за падот</interface>."
+
+#: backtracewidget.cpp:215
+msgctxt "@info:status"
+msgid "The debugger has quit unexpectedly."
+msgstr ""
+
+#: backtracewidget.cpp:218 backtracewidget.cpp:231
+msgctxt "@info:status"
+msgid "The crash information could not be generated."
+msgstr "Не можеше да биде генерирана информација за падот."
+
+#: backtracewidget.cpp:221
+msgctxt "@info/rich"
+msgid ""
+"You could try to regenerate the backtrace by clicking the <interface>Reload "
+"Crash Information</interface> button."
+msgstr ""
+"Може да се обидете повторно да ја генерирате трагата со кликање на копчето "
+"<interface>Превчитај инфо за падот</interface>."
+
+#: backtracewidget.cpp:227
+msgctxt "@info:status"
+msgid "The debugger application is missing or could not be launched."
+msgstr ""
+
+#: backtracewidget.cpp:233
+#, kde-format
+msgctxt "@info/rich"
+msgid ""
+"You need to install the debugger package (%1) and click the "
+"<interface>Reload Crash Information</interface> button."
+msgstr ""
+"Треба да го инсталирате пакетот за откривање грешки (%1) и да кликнете на "
+"копчето <interface>Превчитај инфо за падот</interface>."
+
+#: backtracewidget.cpp:287
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Use this button to stop the current search."
+msgctxt "@title:window"
+msgid "Error during the installation of debug symbols"
+msgstr "Со ова копче се запира тековното пребарување."
+
 #: bugzillalib.cpp:117
 msgctxt "@info"
 msgid "Unknown response from the server"
@@ -403,30 +572,6 @@ msgstr "Невалидна листа на грешки: расипани под
 msgctxt "@info"
 msgid "Unknown error"
 msgstr "Непозната грешка"
-
-#: bzlibtest.cpp:129
-msgid "BugzillaLib Test (DrKonqi2)"
-msgstr ""
-
-#: bzlibtest.cpp:130
-msgid "Test application for bugtracker manager lib"
-msgstr ""
-
-#: bzlibtest.cpp:131
-#, fuzzy
-#| msgid "(C) 2000-2009, The DrKonqi Authors"
-msgid "(c) 2009, DrKonqi2 Developers"
-msgstr "(C) 2000-2009, авторите на DrKonqi"
-
-#: bzlibtest.cpp:135
-msgctxt "@info:shell"
-msgid "bugstest.kde.org username"
-msgstr ""
-
-#: bzlibtest.cpp:136
-msgctxt "@info:shell"
-msgid "bugstest.kde.org password"
-msgstr ""
 
 #: debugpackageinstaller.cpp:51
 #, kde-format
@@ -471,720 +616,6 @@ msgctxt "@info:status"
 msgid "Unhandled error. The debug symbols packages could not be installed."
 msgstr ""
 
-#: drkonqiassistantpages_base.cpp:83
-msgctxt "@info"
-msgid ""
-"This crash information is not useful enough, do you want to try to improve "
-"it? You will need to install some debugging packages."
-msgstr ""
-"Информацијата за падот не е доволно употреблива, дали сакате да ја "
-"подобрите? Можеби ќе треба да инсталирате некои пакети за откривање грешки."
-
-#: drkonqiassistantpages_base.cpp:86
-msgctxt "@title:window"
-msgid "Crash Information is not useful enough"
-msgstr "Информацијата за падот не е доволно употреблива"
-
-#: drkonqiassistantpages_base.cpp:139 drkonqiassistantpages_bugzilla.cpp:916
-msgctxt "@action:button"
-msgid "Sho&w Contents of the Report"
-msgstr "Прикаж&и содржина на извештајот"
-
-#: drkonqiassistantpages_base.cpp:141 drkonqiassistantpages_bugzilla.cpp:918
-msgctxt "@info:tooltip"
-msgid ""
-"Use this button to show the generated report information about this crash."
-msgstr ""
-"Користете го ова копче за да го прикажете генерираниот извештај за овој пад."
-
-#: drkonqiassistantpages_base.cpp:171 drkonqiassistantpages_base.cpp:342
-#: drkonqiassistantpages_bugzilla.cpp:988
-#, kde-format
-msgctxt "@info/plain"
-msgid "Report to %1"
-msgstr "Извештај до %1"
-
-#: drkonqiassistantpages_base.cpp:202
-msgctxt "@info"
-msgid "The automatically generated crash information is useful."
-msgstr "Автоматски генерираната информација за падот е употреблива."
-
-#: drkonqiassistantpages_base.cpp:207
-msgctxt "@info"
-msgid ""
-"The automatically generated crash information lacks some details but may be "
-"still be useful."
-msgstr ""
-"Автоматски генерираната информација за падот нема доволно детали, но сѐ уште "
-"може да биде корисна."
-
-#: drkonqiassistantpages_base.cpp:214
-msgctxt "@info"
-msgid ""
-"The automatically generated crash information lacks important details and it "
-"is probably not helpful."
-msgstr ""
-"На автоматски генерираната информација за падот ѝ недостасуваат важни детали "
-"и веројатни не е многу корисна."
-
-#: drkonqiassistantpages_base.cpp:223
-#, fuzzy
-#| msgctxt "@info:status"
-#| msgid "The crash information could not be generated."
-msgctxt "@info"
-msgid "The crash information was not generated because it was not needed."
-msgstr "Не можеше да биде генерирана информација за падот."
-
-#: drkonqiassistantpages_base.cpp:227
-msgctxt "@info"
-msgid ""
-"The automatically generated crash information does not contain enough "
-"information to be helpful."
-msgstr ""
-"Автоматски генерираната информација за падот не содржи доволно информации за "
-"да биде употреблива."
-
-#: drkonqiassistantpages_base.cpp:230
-msgctxt "@info"
-msgid ""
-"<note>You can improve it by installing debugging packages and reloading the "
-"crash on the Crash Information page. You can get help with the Bug Reporting "
-"Guide by clicking on the <interface>Help</interface> button.</note>"
-msgstr ""
-"<note>Може да ја подобрите со инсталирање пакети за откривање грешки и "
-"повторно вчитување на падот во страницата со информации за падот. За ова "
-"може да добиете помош од Водичот за известување грешки, со кликање на "
-"копчето <interface>Помош</interface>.</note>"
-
-#: drkonqiassistantpages_base.cpp:245
-msgctxt "@info"
-msgid ""
-"You can provide crash details, and the developers can contact you if "
-"required."
-msgstr ""
-"Може да напишете детали за падот и развивачите може да контактираат со вас "
-"ако е потребно."
-
-#: drkonqiassistantpages_base.cpp:249
-msgctxt "@info"
-msgid ""
-"You can provide crash details, but do not want developers to contact you for "
-"more information if required."
-msgstr ""
-"Може да напишете детали за падот, но не сакате развивачите да контактираат "
-"со вас ако се потребни повеќе информации."
-
-#: drkonqiassistantpages_base.cpp:255
-msgctxt "@info"
-msgid ""
-"You are not sure what you were doing when the application crashed, but the "
-"developers can contact you for more information if required."
-msgstr ""
-"Не сте сигурни што сте правеле кога паднала апликацијата, но развивачите "
-"може да контактираат со вас за повеќе информации, ако е потребно."
-
-#: drkonqiassistantpages_base.cpp:259
-msgctxt "@info"
-msgid ""
-"You are not sure what you were doing when the application crashed, and do "
-"not want the developers to contact you for more information if required."
-msgstr ""
-"Не сте сигурни што сте правеле кога паднала апликацијата и не сакате "
-"развивачите да контактираат со вас за повеќе информации, ако е потребно."
-
-#: drkonqiassistantpages_base.cpp:270
-msgctxt "@info"
-msgid "This report is considered helpful."
-msgstr "Овој извештај се смета за употреблив."
-
-#: drkonqiassistantpages_base.cpp:275
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This application's bugs are reported to the KDE bug tracking system: click "
-"<interface>Next</interface> to start the reporting process. You can manually "
-"report at <link>%1</link>"
-msgstr ""
-"Грешките во оваа апликација се известуваат во системот за следење грешки на "
-"KDE: кликнете на <interface>Следно</interface> за да го стартувате процесот "
-"на известување. Може и рачно да известите на <link>%1</link>"
-
-#: drkonqiassistantpages_base.cpp:286
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This application is not supported in the KDE bug tracking system. Click "
-"<interface>Finish</interface> to report this bug to the application "
-"maintainer. Also, you can manually report at <link>%1</link>."
-msgstr ""
-"Апликацијата не е поддржана од системот за следење грешки на KDE. Кликнете "
-"на <interface>Заврши</interface> за да го известите одржувачот на "
-"апликацијата за оваа грешка. Исто така, може рачно да известите на <link>%1</"
-"link>."
-
-#: drkonqiassistantpages_base.cpp:302
-msgctxt "@info"
-msgid ""
-"This report does not contain enough information for the developers, so the "
-"automated bug reporting process is not enabled for this crash."
-msgstr ""
-"Овој извештај не содржи доволно информации за развивачите и поради тоа "
-"автоматизираниот процес за известување грешки не е овозможен за овој пад."
-
-#: drkonqiassistantpages_base.cpp:305
-msgctxt "@info"
-msgid "If you wish, you can go back and change your answers. "
-msgstr "Ако сакате, може да се вратите и да ги измените Вашите одговори. "
-
-#: drkonqiassistantpages_base.cpp:309
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This application is supported in the KDE bug tracking system. You can "
-"manually report this bug at <link>%1</link>. Click <interface>Finish</"
-"interface> to close the assistant."
-msgstr ""
-"Оваа апликација е поддржана од системот за следење грешки од KDE. Може рачно "
-"да известите за оваа грешка на <link>%1</link>. Кликнете на "
-"<interface>Заврши</interface> за да го затворите асистентот."
-
-#: drkonqiassistantpages_base.cpp:316
-#, kde-format
-msgctxt "@info"
-msgid ""
-"This application is not supported in the KDE bug tracking system. You can "
-"manually report this bug to its maintainer at <link>%1</link>. Click "
-"<interface>Finish</interface> to close the assistant."
-msgstr ""
-"Апликацијата не е поддржана од системот за следење грешки на KDE. Може рачно "
-"да го известите одржувачот на апликацијата за оваа грешка на <link>%1</"
-"link>. Кликнете на <interface>Заврши</interface> за да го затворите "
-"асистентот."
-
-#: drkonqiassistantpages_base.cpp:368
-msgctxt "@title:window"
-msgid "Contents of the Report"
-msgstr "Содржина на извештајот"
-
-#: drkonqiassistantpages_base.cpp:373
-msgctxt "@action:button"
-msgid "&Save to File..."
-msgstr "&Зачувај во датотека..."
-
-#: drkonqiassistantpages_base.cpp:375
-msgctxt "@info:tooltip"
-msgid ""
-"Use this button to save the generated crash report information to a file. "
-"You can use this option to report the bug later."
-msgstr ""
-"Користете го ова копче за да го зачувате генерираниот извештај за грешка во "
-"датотека. Со оваа опција извештајот може да го испратоте подоцна."
-
-#: drkonqiassistantpages_bugzilla.cpp:58
-#, kde-format
-msgctxt "@info:status '1' is replaced with \"bugs.kde.org\""
-msgid "You need to login with your %1 account in order to proceed."
-msgstr "Треба да се најавите со вашата сметка на %1 за да продолжите."
-
-#: drkonqiassistantpages_bugzilla.cpp:61
-msgctxt "@action:button"
-msgid "Login"
-msgstr "Најави се"
-
-#: drkonqiassistantpages_bugzilla.cpp:63
-msgctxt "@info:tooltip"
-msgid ""
-"Use this button to login to the KDE bug tracking system using the provided "
-"username and password."
-msgstr ""
-"Со ова копче може да се најавите на системот за следење грешки на KDE со "
-"зададените корисничко име и лозинка."
-
-#: drkonqiassistantpages_bugzilla.cpp:72
-#, kde-format
-msgctxt "@info/rich"
-msgid ""
-"<note>You need a user account on the <link url='%1'>KDE bug tracking system</"
-"link> in order to file a bug report, because we may need to contact you "
-"later for requesting further information. If you do not have one, you can "
-"freely <link url='%2'>create one here</link>.</note>"
-msgstr ""
-"<note>Ви треба корисничка сметка на <link url='%1'>системот за следење "
-"грешки на KDE</link> за да го внесете извештајот за грешка, бидејќи можеби "
-"подоцна ќе треба да контактираме со вас за повеќе информации. Ако немате "
-"сметка, може слободно да ја <link url='%2'>креирате тука</link>.</note>"
-
-#: drkonqiassistantpages_bugzilla.cpp:89
-#, kde-format
-msgctxt "@info:status"
-msgid "Error when trying to login: <message>%1.</message>"
-msgstr "Грешка при обид за најава: <message>%1.</message>"
-
-#: drkonqiassistantpages_bugzilla.cpp:114
-#, kde-format
-msgctxt "@info:status the user is logged at the bugtracker site as USERNAME"
-msgid "Logged in at the KDE bug tracking system (%1) as: %2."
-msgstr "Најавено на системот за следење грешки на KDE (%1) како: %2."
-
-#: drkonqiassistantpages_bugzilla.cpp:229
-#, kde-format
-msgctxt "@info:status '1' is a url, '2' the username"
-msgid "Performing login at %1 as %2..."
-msgstr "Се најавувам на %1 како %2..."
-
-#: drkonqiassistantpages_bugzilla.cpp:253
-msgctxt "@info:status"
-msgid "Invalid username or password"
-msgstr "Невалидно корисничко име или лозинка"
-
-#: drkonqiassistantpages_bugzilla.cpp:301
-msgctxt "@action:button"
-msgid "Search for more reports"
-msgstr "Барај за повеќе извештаи"
-
-#: drkonqiassistantpages_bugzilla.cpp:303
-msgctxt "@info:tooltip"
-msgid ""
-"Use this button to search for more similar bug reports on an earlier date."
-msgstr ""
-"Со ова копче може да пребарувате за други слични извештаи за грешки внесени "
-"порано."
-
-#: drkonqiassistantpages_bugzilla.cpp:309
-msgctxt "@action:button"
-msgid "Retry search"
-msgstr "Повтори пребарување"
-
-#: drkonqiassistantpages_bugzilla.cpp:311
-msgctxt "@info:tooltip"
-msgid "Use this button to retry the search that previously failed."
-msgstr ""
-"Со ова копче може да го повторите пребарувањето што претходно не успеало."
-
-#: drkonqiassistantpages_bugzilla.cpp:315
-msgctxt "@action:button"
-msgid "Open selected report"
-msgstr "Отвори избран извештај"
-
-#: drkonqiassistantpages_bugzilla.cpp:317
-msgctxt "@info:tooltip"
-msgid "Use this button to view the information of the selected bug report."
-msgstr ""
-"Со ова копче може да ја видите информацијата за избраниот извештај за грешка."
-
-#: drkonqiassistantpages_bugzilla.cpp:321
-msgctxt "@action:button"
-msgid "Stop searching"
-msgstr "Прекини пребарување"
-
-#: drkonqiassistantpages_bugzilla.cpp:323
-msgctxt "@info:tooltip"
-msgid "Use this button to stop the current search."
-msgstr "Со ова копче се запира тековното пребарување."
-
-#: drkonqiassistantpages_bugzilla.cpp:378
-msgctxt "@info:status"
-msgid "Error fetching the bug report list"
-msgstr "Грешка при преземањето на листата со извештаи за грешки"
-
-#: drkonqiassistantpages_bugzilla.cpp:380
-#, kde-format
-msgctxt "@info/rich"
-msgid ""
-"Error fetching the bug report list<nl/><message>%1.</message><nl/>Please "
-"wait some time and try again."
-msgstr ""
-"Грешка при преземањето на листата со извештаи за грешки<nl/><message>%1.</"
-"message><nl/>Почекајте некое време и обидете се повторно."
-
-#: drkonqiassistantpages_bugzilla.cpp:462
-msgctxt "@info:status"
-msgid "Search stopped."
-msgstr "Пребарувањето е запрено."
-
-#: drkonqiassistantpages_bugzilla.cpp:464
-#, kde-format
-msgctxt "@info:status"
-msgid "Search stopped. Showing results from %1 to %2"
-msgstr "Пребарувањето е запрено. Прикажувам резултати од %1 до %2"
-
-#: drkonqiassistantpages_bugzilla.cpp:478
-#, kde-format
-msgctxt "@info:status"
-msgid "Searching for duplicates (from %1 to %2)..."
-msgstr "Пребарувам за дупликати (од %1 до %2)..."
-
-#: drkonqiassistantpages_bugzilla.cpp:517
-#, kde-format
-msgctxt "@info:status"
-msgid "Showing results from %1 to %2"
-msgstr "Прикажувам резултати од %1 до %2"
-
-#: drkonqiassistantpages_bugzilla.cpp:544
-msgctxt "@info:status"
-msgid "Search Finished. No reports found."
-msgstr "Пребарувањето заврши. Не беа пронајдени извештаи."
-
-#: drkonqiassistantpages_bugzilla.cpp:568
-msgctxt "@title:window"
-msgid "Bug Description"
-msgstr "Опис на грешка"
-
-#: drkonqiassistantpages_bugzilla.cpp:575
-msgctxt "@action:button"
-msgid "My crash may be a duplicate of this report"
-msgstr "Мојот пад може да е дупликат на овој извештај"
-
-#: drkonqiassistantpages_bugzilla.cpp:576
-msgctxt "@info:tooltip"
-msgid ""
-"Use this button to mark your crash as related to the currently shown bug "
-"report. This will help the KDE developers to determine whether they are "
-"duplicates or not."
-msgstr ""
-"Со ова копче може да го означите Вашиот извештај како поврзан со тековно "
-"покажаниот извештај за грешка. Ова ќе им помогне на развивачите на KDE да "
-"определат дали се извештаите исти или не."
-
-#: drkonqiassistantpages_bugzilla.cpp:610 getbacktracewidget.cpp:99
-msgctxt "@info:status"
-msgid "Loading..."
-msgstr "Вчитувам..."
-
-#: drkonqiassistantpages_bugzilla.cpp:613
-#, kde-format
-msgctxt "@info"
-msgid "<link url='%1'>Bug report page at the KDE bug tracking system</link>"
-msgstr ""
-"<link url='%1'>Страница со извештај за грешка во системот за следење грешки "
-"на KDE</link>"
-
-#: drkonqiassistantpages_bugzilla.cpp:617
-#, kde-format
-msgctxt "@info:status"
-msgid "Loading information about bug <numid>%1</numid> from %2...."
-msgstr "Вчитувам информации за грешката <numid>%1</numid> од %2...."
-
-#: drkonqiassistantpages_bugzilla.cpp:645
-msgctxt "@info bug status"
-msgid "Open"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:652
-msgctxt "@info bug resolution"
-msgid "Fixed"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:654
-msgctxt "@info bug resolution"
-msgid "Non-reproducible"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:656
-msgctxt "@info bug resolution"
-msgid "Already reported"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:658
-#, fuzzy
-#| msgctxt "@info"
-#| msgid "Invalid report data"
-msgctxt "@info bug resolution"
-msgid "Not a valid report/crash"
-msgstr "Невалидни податоци од извештајот"
-
-#: drkonqiassistantpages_bugzilla.cpp:661
-msgctxt "@info bug resolution"
-msgid "Not a KDE bug"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:666
-#, kde-format
-msgctxt "@info bug status, %1 is the resolutin"
-msgid "Closed (%1)"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:669
-msgctxt "@info bug status"
-msgid "Temporary closed because the lack of information"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:676
-#, fuzzy, kde-format
-#| msgid "<strong>Product:</strong> %1/%2<br />"
-msgid "<strong>Product:</strong> %1 (%2)<br />"
-msgstr "<strong>Продукт:</strong> %1/%2<br />"
-
-#: drkonqiassistantpages_bugzilla.cpp:678
-#, fuzzy, kde-format
-#| msgid "<strong>Status:</strong> %1<br />"
-msgid "<strong>Title:</strong> %1<br />"
-msgstr "<strong>Статус:</strong> %1<br />"
-
-#: drkonqiassistantpages_bugzilla.cpp:680
-#, kde-format
-msgid "<strong>Status:</strong> %1<br />"
-msgstr "<strong>Статус:</strong> %1<br />"
-
-#: drkonqiassistantpages_bugzilla.cpp:681
-#, kde-format
-msgid "<strong>Full Description:</strong><br />%1"
-msgstr "<strong>Целосен опис:</strong><br />%1"
-
-#: drkonqiassistantpages_bugzilla.cpp:685
-#, fuzzy, kde-format
-#| msgid "<strong>Comments:</strong> %1"
-msgid "<br /><br /><strong>Comments:</strong> %1"
-msgstr "<strong>Коментари:</strong> %1"
-
-#: drkonqiassistantpages_bugzilla.cpp:693
-#, kde-format
-msgctxt "@info:status"
-msgid "Showing report <numid>%1</numid>"
-msgstr "Прикажувам извештај <numid>%1</numid>"
-
-#: drkonqiassistantpages_bugzilla.cpp:696
-msgctxt "@info"
-msgid "Invalid report data"
-msgstr "Невалидни податоци од извештајот"
-
-#: drkonqiassistantpages_bugzilla.cpp:710
-#, kde-format
-msgctxt "@info/rich"
-msgid ""
-"Error fetching the bug report<nl/><message>%1.</message><nl/>Please wait "
-"some time and try again."
-msgstr ""
-"Грешка при преземањето на извештајот за грешка<nl/><message>%1.</message><nl/"
-">Почекајте некое време и обидете се повторно."
-
-#: drkonqiassistantpages_bugzilla.cpp:714
-msgctxt "@info"
-msgid "Error fetching the bug report"
-msgstr "Грешка при преземање извештај за грешка"
-
-#: drkonqiassistantpages_bugzilla.cpp:715
-msgctxt "@info:status"
-msgid "Error fetching the bug report"
-msgstr "Грешка при преземање извештај за грешка"
-
-#: drkonqiassistantpages_bugzilla.cpp:745
-msgctxt "KDE distribution method"
-msgid "Unspecified"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:747
-msgctxt "KDE distribution method"
-msgid "Debian stable"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:749
-msgctxt "KDE distribution method"
-msgid "Debian testing"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:751
-msgctxt "KDE distribution method"
-msgid "Debian unstable"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:753
-msgctxt "KDE distribution method"
-msgid "Exherbo"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:755
-msgctxt "KDE distribution method"
-msgid "Gentoo"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:757
-msgctxt "KDE distribution method"
-msgid "Mandriva"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:759
-msgctxt "KDE distribution method"
-msgid "Slackware"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:761
-msgctxt "KDE distribution method"
-msgid "SuSE/OpenSUSE"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:763
-msgctxt "KDE distribution method"
-msgid "RedHat"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:765
-msgctxt "KDE distribution method"
-msgid "Fedora"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:767
-msgctxt "KDE distribution method"
-msgid "Kubuntu/Ubuntu (and derivates)"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:769
-msgctxt "KDE distribution method"
-msgid "Pardus"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:771
-msgctxt "KDE distribution method"
-msgid "Archlinux"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:773
-msgctxt "KDE distribution method"
-msgid "FreeBSD (Ports)"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:775
-msgctxt "KDE distribution method"
-msgid "NetBSD (pkgsrc)"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:777
-msgctxt "KDE distribution method"
-msgid "OpenBSD"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:779
-msgctxt "KDE distribution method"
-msgid "Mac OS X"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:781
-msgctxt "KDE distribution method"
-msgid "Solaris"
-msgstr ""
-
-#: drkonqiassistantpages_bugzilla.cpp:826
-msgctxt "@info"
-msgid "The title does not provide enough information."
-msgstr "Насловот не дава доволно информација."
-
-#: drkonqiassistantpages_bugzilla.cpp:828
-msgctxt "@info"
-msgid ""
-"The description about the crash details does not provide enough information."
-msgstr "Описот за деталите на падот не дава доволно информација."
-
-#: drkonqiassistantpages_bugzilla.cpp:831
-msgctxt "@info"
-msgid ""
-"Both the title and the description about the crash details do not provide "
-"enough information."
-msgstr ""
-"И насловот и описот на деталите за падот не даваат доволно информација."
-
-#: drkonqiassistantpages_bugzilla.cpp:835
-msgctxt "@info"
-msgid "Can you tell us more?"
-msgstr "Може ли да ни кажете повеќе?"
-
-#: drkonqiassistantpages_bugzilla.cpp:839
-msgctxt "@title:window"
-msgid "We need more information"
-msgstr "Ни треба повеќе информација"
-
-#: drkonqiassistantpages_bugzilla.cpp:892
-msgctxt "@info question"
-msgid "Are you ready to submit this report?"
-msgstr "Дали сте подготвени да го предадете извештајот?"
-
-#: drkonqiassistantpages_bugzilla.cpp:893
-msgctxt "@title:window"
-msgid "Are you sure?"
-msgstr "Дали сте сигурни?"
-
-#: drkonqiassistantpages_bugzilla.cpp:910
-msgctxt "@action:button"
-msgid "Retry..."
-msgstr "Повторно..."
-
-#: drkonqiassistantpages_bugzilla.cpp:912
-msgctxt "@info:tooltip"
-msgid "Use this button to retry sending the crash report if it failed before."
-msgstr ""
-"Со ова копче може повторно да го испратите извештајот ако претходно "
-"испраќањето не успеало."
-
-#: drkonqiassistantpages_bugzilla.cpp:939
-msgctxt "@info:status"
-msgid "Sending crash report... (please wait)"
-msgstr "Испраќам извештај за пад... (почекајте)"
-
-#: drkonqiassistantpages_bugzilla.cpp:956
-#, fuzzy, kde-format
-#| msgctxt "@info/rich"
-#| msgid ""
-#| "Crash report sent.<nl/>Bug Number :: <numid>%1</numid><nl/>URL :: <link>%"
-#| "2</link><nl/>Thanks for contributing to KDE. You can now close this "
-#| "window."
-msgctxt "@info/rich"
-msgid ""
-"Crash report sent.<nl/>URL: <link>%1</link><nl/>Thanks for contributing to "
-"KDE. You can now close this window."
-msgstr ""
-"Извештајот е испратен.<nl/>Бр. на грешка :: <numid>%1</numid><nl/>Адреса :: "
-"<link>%2</link><nl/>Благодариме што придонесовте на KDE. Сега може да го "
-"затворите прозорецов."
-
-#: drkonqiassistantpages_bugzilla.cpp:966
-#, kde-format
-msgctxt "@info:status"
-msgid "Error sending the crash report:  <message>%1.</message>"
-msgstr "Грешка при испраќање извештај за пад:  <message>%1.</message>"
-
-#: drkonqibugreport.cpp:49
-msgctxt "@title:window"
-msgid "Crash Reporting Assistant"
-msgstr "Асистент за известување за падови"
-
-#: drkonqibugreport.cpp:73
-msgctxt "@title"
-msgid "Crash Information (Backtrace)"
-msgstr "Информација за пад (трага)"
-
-#: drkonqibugreport.cpp:83
-msgctxt "@title"
-msgid "Crash Analysis Results"
-msgstr "Резултати од анализата на падот"
-
-#: drkonqibugreport.cpp:105
-msgctxt "@title"
-msgid "Bug Report Possible Duplicates List"
-msgstr "Листа на можни дупликати на извештајот за грешка"
-
-#: drkonqibugreport.cpp:115
-msgctxt "@title"
-msgid "Details of the Bug Report"
-msgstr "Детали за извештајот за грешка"
-
-#: drkonqibugreport.cpp:124
-msgctxt "@title"
-msgid "Preview Report"
-msgstr ""
-
-#: drkonqibugreport.cpp:299
-msgctxt "@info"
-msgid ""
-"Do you really want to close the bug assistant without submitting the bug "
-"report?"
-msgstr ""
-"Дали навистина сакате да го затворите асистентот за грешки без да го "
-"испратите извештајот?"
-
-#: drkonqibugreport.cpp:301
-msgctxt "@title:window"
-msgid "Close Crash Reporting Assistant"
-msgstr "Затворање асистент за известување грешки"
-
 #: drkonqi.cpp:187
 #, kde-format
 msgctxt "@info"
@@ -1208,17 +639,17 @@ msgid "Cannot open file <filename>%1</filename> for writing."
 msgstr ""
 "Не можам да ја отворам датотеката <filename>%1</filename> за запишување."
 
-#: drkonqidialog.cpp:62
+#: drkonqidialog.cpp:63
 msgctxt "@title:tab general information"
 msgid "&General"
 msgstr "&Општо"
 
-#: drkonqidialog.cpp:66
+#: drkonqidialog.cpp:67
 msgctxt "@title:tab"
 msgid "&Developer Information"
 msgstr "Инфор&мации за развивачот"
 
-#: drkonqidialog.cpp:95
+#: drkonqidialog.cpp:96
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1227,7 +658,7 @@ msgstr ""
 "<para>Се извинуваме, <application>%1</application> се затвори неочекувано.</"
 "para>"
 
-#: drkonqidialog.cpp:102
+#: drkonqidialog.cpp:103
 msgctxt "@info"
 msgid ""
 "<para>You can help us improve KDE by reporting this error.<nl /><link "
@@ -1240,19 +671,19 @@ msgstr ""
 "грешки.</link></para><para><note>Слободно може да го затворите дијалогов ако "
 "не сакате да известите за грешката.</note></para>"
 
-#: drkonqidialog.cpp:108
+#: drkonqidialog.cpp:109
 msgctxt "@info"
 msgid ""
 "<para>You can't report this error because the application does not provide a "
 "bug reporting address</para>"
 msgstr ""
 
-#: drkonqidialog.cpp:138
+#: drkonqidialog.cpp:139
 msgctxt "@label"
 msgid "Details:"
 msgstr "Детали:"
 
-#: drkonqidialog.cpp:140
+#: drkonqidialog.cpp:141
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1262,212 +693,48 @@ msgstr ""
 "<para>Извршна: <application>%1</application> PID: <numid>%2</numid> Сигнал: %"
 "3 (%4)</para>"
 
-#: drkonqidialog.cpp:160
+#: drkonqidialog.cpp:161
 msgctxt "@action:button"
 msgid "Report Bug"
 msgstr "Извести за грешката"
 
-#: drkonqidialog.cpp:163
+#: drkonqidialog.cpp:164
 msgctxt "@info:tooltip"
 msgid "Starts the bug report assistant."
 msgstr "Го стартува асистентот за известување грешки."
 
-#: drkonqidialog.cpp:170
+#: drkonqidialog.cpp:171
 msgctxt ""
 "@action:button this is the debug menu button label which contains the "
 "debugging applications"
 msgid "Debug"
 msgstr ""
 
-#: drkonqidialog.cpp:171
+#: drkonqidialog.cpp:172
 msgctxt "@info:tooltip"
 msgid "Starts a program to debug the crashed application."
 msgstr "Стартува програма за откривање грешки во паднатата апликација."
 
-#: drkonqidialog.cpp:180 drkonqidialog.cpp:249
+#: drkonqidialog.cpp:181 drkonqidialog.cpp:250
 #, kde-format
 msgctxt "@action:inmenu 1 is the debugger name"
 msgid "Debug in <application>%1</application>"
 msgstr ""
 
-#: drkonqidialog.cpp:197
+#: drkonqidialog.cpp:198
 msgctxt "@action:button"
 msgid "Restart Application"
 msgstr "Рестартирај апликација"
 
-#: drkonqidialog.cpp:199
+#: drkonqidialog.cpp:200
 msgctxt "@info:tooltip"
 msgid "Use this button to restart the crashed application."
 msgstr "Со ова копче се рестартира паднатата апликација."
 
-#: drkonqidialog.cpp:205
+#: drkonqidialog.cpp:206
 msgctxt "@info:tooltip"
 msgid "Close this dialog (you will lose the crash information.)"
 msgstr "Го затвора дијалогот (ќе ги загубите информациите за падот.)"
-
-#: getbacktracewidget.cpp:60
-msgctxt "@action:button"
-msgid "&Reload"
-msgstr ""
-
-#: getbacktracewidget.cpp:61
-msgctxt "@info:tooltip"
-msgid ""
-"Use this button to reload the crash information (backtrace). This is useful "
-"when you have installed the proper debug symbol packages and you want to "
-"obtain a better backtrace."
-msgstr ""
-"Со ова копче може повторно да ја вчитате информацијата за падот (трагата). "
-"Ова е корисно ако сте ги инсталирале соодветните пакети за откривање грешки "
-"и сакате да добиете подобра трага."
-
-#: getbacktracewidget.cpp:68
-msgctxt "@action:button"
-msgid "&Install Debug Symbols"
-msgstr ""
-
-#: getbacktracewidget.cpp:69
-#, fuzzy
-#| msgctxt "@info:tooltip"
-#| msgid "Use this button to stop the current search."
-msgctxt "@info:tooltip"
-msgid "Use this button to install the missing debug symbols packages."
-msgstr "Со ова копче се запира тековното пребарување."
-
-#: getbacktracewidget.cpp:75
-msgctxt "@info:tooltip"
-msgid ""
-"Use this button to copy the crash information (backtrace) to the clipboard."
-msgstr ""
-"Со ова копче може да ја копирате информацијата за падот (трагата) на таблата "
-"со исечоци."
-
-#: getbacktracewidget.cpp:82
-msgctxt "@info:tooltip"
-msgid ""
-"Use this button to save the crash information (backtrace) to a file. This is "
-"useful if you want to take a look at it or to report the bug later."
-msgstr ""
-"Со ова копче може да ја зачувате информацијата за падот (трагата) во "
-"датотека. Ова е корисно ако сакате да ја погледнете информацијата или да "
-"известите за грешката подоцна."
-
-#: getbacktracewidget.cpp:103
-msgctxt "@info:status"
-msgid "Loading crash information... (this may take some time)"
-msgstr "Вчитувам информација за падот... (ова може да потрае)"
-
-#: getbacktracewidget.cpp:148
-msgctxt "@info"
-msgid ""
-"Another debugger is currently debugging the same application. The crash "
-"information could not be fetched."
-msgstr ""
-
-#: getbacktracewidget.cpp:152
-msgctxt "@info:status"
-msgid "The crash information could not be fetched."
-msgstr "Не можеше да биде преземена информацијата за падот."
-
-#: getbacktracewidget.cpp:154
-msgctxt "@info/rich"
-msgid ""
-"Another debugging process is attached to the crashed application. Therefore, "
-"the DrKonqi debugger cannot fetch the backtrace. Please close the other "
-"debugger and click <interface>Reload Crash Information</interface>."
-msgstr ""
-
-#: getbacktracewidget.cpp:176
-msgctxt "@info"
-msgid "This crash information is useful"
-msgstr "Оваа информација за пад е корисна"
-
-#: getbacktracewidget.cpp:179
-msgctxt "@info"
-msgid "This crash information may be useful"
-msgstr "Оваа информација за пад може да е корисна"
-
-#: getbacktracewidget.cpp:182
-msgctxt "@info"
-msgid "This crash information is probably not useful"
-msgstr "Оваа информација за пад веројатно не е корисна"
-
-#: getbacktracewidget.cpp:185
-msgctxt "@info"
-msgid "This crash information is not useful"
-msgstr "Оваа информација за пад не е корисна"
-
-#: getbacktracewidget.cpp:189
-msgctxt "@info"
-msgid ""
-"The rating of this crash information is invalid. This is a bug in drkonqi "
-"itself."
-msgstr ""
-"Рангирањето на информацијата за падот не е валидно. Ова е грешка во drkonqi."
-
-#: getbacktracewidget.cpp:197
-#, fuzzy, kde-format
-#| msgctxt "@info/rich"
-#| msgid ""
-#| "Please read <link url='%1'>How to create useful crash reports</link> to "
-#| "learn how to get a useful backtrace. After you install the needed "
-#| "packages, click the <interface>Reload Crash Information</interface> "
-#| "button."
-msgctxt "@info/rich"
-msgid ""
-"You can click the <interface>Install Debug Symbols</interface> button in "
-"order to automatically install the missing debugging information packages. "
-"If this method does not work: please read <link url='%1'>How to create "
-"useful crash reports</link> to learn how to get a useful backtrace; install "
-"the needed packages and click the <interface>Reload Crash Information</"
-"interface> button."
-msgstr ""
-"Прочитајте го <link url='%1'>Како да креирате употребливи извештаи за "
-"грешки</link> за да научите како да добиете корисна трага. Откако ќе ги "
-"инсталирате потребните пакети, кликнете на копчето <interface>Превчитај инфо "
-"за падот</interface>."
-
-#: getbacktracewidget.cpp:216
-msgctxt "@info:status"
-msgid "The debugger has quit unexpectedly."
-msgstr ""
-
-#: getbacktracewidget.cpp:219 getbacktracewidget.cpp:232
-msgctxt "@info:status"
-msgid "The crash information could not be generated."
-msgstr "Не можеше да биде генерирана информација за падот."
-
-#: getbacktracewidget.cpp:222
-msgctxt "@info/rich"
-msgid ""
-"You could try to regenerate the backtrace by clicking the <interface>Reload "
-"Crash Information</interface> button."
-msgstr ""
-"Може да се обидете повторно да ја генерирате трагата со кликање на копчето "
-"<interface>Превчитај инфо за падот</interface>."
-
-#: getbacktracewidget.cpp:228
-msgctxt "@info:status"
-msgid "The debugger application is missing or could not be launched."
-msgstr ""
-
-#: getbacktracewidget.cpp:234
-#, kde-format
-msgctxt "@info/rich"
-msgid ""
-"You need to install the debugger package (%1) and click the "
-"<interface>Reload Crash Information</interface> button."
-msgstr ""
-"Треба да го инсталирате пакетот за откривање грешки (%1) и да кликнете на "
-"копчето <interface>Превчитај инфо за падот</interface>."
-
-#: getbacktracewidget.cpp:288
-#, fuzzy
-#| msgctxt "@info:tooltip"
-#| msgid "Use this button to stop the current search."
-msgctxt "@title:window"
-msgid "Error during the installation of debug symbols"
-msgstr "Со ова копче се запира тековното пребарување."
 
 #: krashconf.cpp:74
 msgctxt "@info unknown application"
@@ -1775,6 +1042,715 @@ msgstr "Рестартирај ја апликацијата по кликање
 msgid "Restart the application when clicking the Finish button"
 msgstr "Рестартирај ја апликацијата по кликање на копчето „Заврши“"
 
+#: reportassistantdialog.cpp:49
+msgctxt "@title:window"
+msgid "Crash Reporting Assistant"
+msgstr "Асистент за известување за падови"
+
+#: reportassistantdialog.cpp:73
+msgctxt "@title"
+msgid "Crash Information (Backtrace)"
+msgstr "Информација за пад (трага)"
+
+#: reportassistantdialog.cpp:83
+msgctxt "@title"
+msgid "Crash Analysis Results"
+msgstr "Резултати од анализата на падот"
+
+#: reportassistantdialog.cpp:105
+msgctxt "@title"
+msgid "Bug Report Possible Duplicates List"
+msgstr "Листа на можни дупликати на извештајот за грешка"
+
+#: reportassistantdialog.cpp:115
+msgctxt "@title"
+msgid "Details of the Bug Report"
+msgstr "Детали за извештајот за грешка"
+
+#: reportassistantdialog.cpp:124
+msgctxt "@title"
+msgid "Preview Report"
+msgstr ""
+
+#: reportassistantdialog.cpp:299
+msgctxt "@info"
+msgid ""
+"Do you really want to close the bug assistant without submitting the bug "
+"report?"
+msgstr ""
+"Дали навистина сакате да го затворите асистентот за грешки без да го "
+"испратите извештајот?"
+
+#: reportassistantdialog.cpp:301
+msgctxt "@title:window"
+msgid "Close Crash Reporting Assistant"
+msgstr "Затворање асистент за известување грешки"
+
+#: reportassistantpages_base.cpp:84
+msgctxt "@info"
+msgid ""
+"This crash information is not useful enough, do you want to try to improve "
+"it? You will need to install some debugging packages."
+msgstr ""
+"Информацијата за падот не е доволно употреблива, дали сакате да ја "
+"подобрите? Можеби ќе треба да инсталирате некои пакети за откривање грешки."
+
+#: reportassistantpages_base.cpp:87
+msgctxt "@title:window"
+msgid "Crash Information is not useful enough"
+msgstr "Информацијата за падот не е доволно употреблива"
+
+#: reportassistantpages_base.cpp:140 reportassistantpages_bugzilla.cpp:916
+msgctxt "@action:button"
+msgid "Sho&w Contents of the Report"
+msgstr "Прикаж&и содржина на извештајот"
+
+#: reportassistantpages_base.cpp:142 reportassistantpages_bugzilla.cpp:918
+msgctxt "@info:tooltip"
+msgid ""
+"Use this button to show the generated report information about this crash."
+msgstr ""
+"Користете го ова копче за да го прикажете генерираниот извештај за овој пад."
+
+#: reportassistantpages_base.cpp:172 reportassistantpages_base.cpp:343
+#: reportassistantpages_bugzilla.cpp:988
+#, kde-format
+msgctxt "@info/plain"
+msgid "Report to %1"
+msgstr "Извештај до %1"
+
+#: reportassistantpages_base.cpp:203
+msgctxt "@info"
+msgid "The automatically generated crash information is useful."
+msgstr "Автоматски генерираната информација за падот е употреблива."
+
+#: reportassistantpages_base.cpp:208
+msgctxt "@info"
+msgid ""
+"The automatically generated crash information lacks some details but may be "
+"still be useful."
+msgstr ""
+"Автоматски генерираната информација за падот нема доволно детали, но сѐ уште "
+"може да биде корисна."
+
+#: reportassistantpages_base.cpp:215
+msgctxt "@info"
+msgid ""
+"The automatically generated crash information lacks important details and it "
+"is probably not helpful."
+msgstr ""
+"На автоматски генерираната информација за падот ѝ недостасуваат важни детали "
+"и веројатни не е многу корисна."
+
+#: reportassistantpages_base.cpp:224
+#, fuzzy
+#| msgctxt "@info:status"
+#| msgid "The crash information could not be generated."
+msgctxt "@info"
+msgid "The crash information was not generated because it was not needed."
+msgstr "Не можеше да биде генерирана информација за падот."
+
+#: reportassistantpages_base.cpp:228
+msgctxt "@info"
+msgid ""
+"The automatically generated crash information does not contain enough "
+"information to be helpful."
+msgstr ""
+"Автоматски генерираната информација за падот не содржи доволно информации за "
+"да биде употреблива."
+
+#: reportassistantpages_base.cpp:231
+msgctxt "@info"
+msgid ""
+"<note>You can improve it by installing debugging packages and reloading the "
+"crash on the Crash Information page. You can get help with the Bug Reporting "
+"Guide by clicking on the <interface>Help</interface> button.</note>"
+msgstr ""
+"<note>Може да ја подобрите со инсталирање пакети за откривање грешки и "
+"повторно вчитување на падот во страницата со информации за падот. За ова "
+"може да добиете помош од Водичот за известување грешки, со кликање на "
+"копчето <interface>Помош</interface>.</note>"
+
+#: reportassistantpages_base.cpp:246
+msgctxt "@info"
+msgid ""
+"You can provide crash details, and the developers can contact you if "
+"required."
+msgstr ""
+"Може да напишете детали за падот и развивачите може да контактираат со вас "
+"ако е потребно."
+
+#: reportassistantpages_base.cpp:250
+msgctxt "@info"
+msgid ""
+"You can provide crash details, but do not want developers to contact you for "
+"more information if required."
+msgstr ""
+"Може да напишете детали за падот, но не сакате развивачите да контактираат "
+"со вас ако се потребни повеќе информации."
+
+#: reportassistantpages_base.cpp:256
+msgctxt "@info"
+msgid ""
+"You are not sure what you were doing when the application crashed, but the "
+"developers can contact you for more information if required."
+msgstr ""
+"Не сте сигурни што сте правеле кога паднала апликацијата, но развивачите "
+"може да контактираат со вас за повеќе информации, ако е потребно."
+
+#: reportassistantpages_base.cpp:260
+msgctxt "@info"
+msgid ""
+"You are not sure what you were doing when the application crashed, and do "
+"not want the developers to contact you for more information if required."
+msgstr ""
+"Не сте сигурни што сте правеле кога паднала апликацијата и не сакате "
+"развивачите да контактираат со вас за повеќе информации, ако е потребно."
+
+#: reportassistantpages_base.cpp:271
+msgctxt "@info"
+msgid "This report is considered helpful."
+msgstr "Овој извештај се смета за употреблив."
+
+#: reportassistantpages_base.cpp:276
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This application's bugs are reported to the KDE bug tracking system: click "
+"<interface>Next</interface> to start the reporting process. You can manually "
+"report at <link>%1</link>"
+msgstr ""
+"Грешките во оваа апликација се известуваат во системот за следење грешки на "
+"KDE: кликнете на <interface>Следно</interface> за да го стартувате процесот "
+"на известување. Може и рачно да известите на <link>%1</link>"
+
+#: reportassistantpages_base.cpp:287
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This application is not supported in the KDE bug tracking system. Click "
+"<interface>Finish</interface> to report this bug to the application "
+"maintainer. Also, you can manually report at <link>%1</link>."
+msgstr ""
+"Апликацијата не е поддржана од системот за следење грешки на KDE. Кликнете "
+"на <interface>Заврши</interface> за да го известите одржувачот на "
+"апликацијата за оваа грешка. Исто така, може рачно да известите на <link>%1</"
+"link>."
+
+#: reportassistantpages_base.cpp:303
+msgctxt "@info"
+msgid ""
+"This report does not contain enough information for the developers, so the "
+"automated bug reporting process is not enabled for this crash."
+msgstr ""
+"Овој извештај не содржи доволно информации за развивачите и поради тоа "
+"автоматизираниот процес за известување грешки не е овозможен за овој пад."
+
+#: reportassistantpages_base.cpp:306
+msgctxt "@info"
+msgid "If you wish, you can go back and change your answers. "
+msgstr "Ако сакате, може да се вратите и да ги измените Вашите одговори. "
+
+#: reportassistantpages_base.cpp:310
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This application is supported in the KDE bug tracking system. You can "
+"manually report this bug at <link>%1</link>. Click <interface>Finish</"
+"interface> to close the assistant."
+msgstr ""
+"Оваа апликација е поддржана од системот за следење грешки од KDE. Може рачно "
+"да известите за оваа грешка на <link>%1</link>. Кликнете на "
+"<interface>Заврши</interface> за да го затворите асистентот."
+
+#: reportassistantpages_base.cpp:317
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This application is not supported in the KDE bug tracking system. You can "
+"manually report this bug to its maintainer at <link>%1</link>. Click "
+"<interface>Finish</interface> to close the assistant."
+msgstr ""
+"Апликацијата не е поддржана од системот за следење грешки на KDE. Може рачно "
+"да го известите одржувачот на апликацијата за оваа грешка на <link>%1</"
+"link>. Кликнете на <interface>Заврши</interface> за да го затворите "
+"асистентот."
+
+#: reportassistantpages_base.cpp:369
+msgctxt "@title:window"
+msgid "Contents of the Report"
+msgstr "Содржина на извештајот"
+
+#: reportassistantpages_base.cpp:374
+msgctxt "@action:button"
+msgid "&Save to File..."
+msgstr "&Зачувај во датотека..."
+
+#: reportassistantpages_base.cpp:376
+msgctxt "@info:tooltip"
+msgid ""
+"Use this button to save the generated crash report information to a file. "
+"You can use this option to report the bug later."
+msgstr ""
+"Користете го ова копче за да го зачувате генерираниот извештај за грешка во "
+"датотека. Со оваа опција извештајот може да го испратоте подоцна."
+
+#: reportassistantpages_bugzilla.cpp:58
+#, kde-format
+msgctxt "@info:status '1' is replaced with \"bugs.kde.org\""
+msgid "You need to login with your %1 account in order to proceed."
+msgstr "Треба да се најавите со вашата сметка на %1 за да продолжите."
+
+#: reportassistantpages_bugzilla.cpp:61
+msgctxt "@action:button"
+msgid "Login"
+msgstr "Најави се"
+
+#: reportassistantpages_bugzilla.cpp:63
+msgctxt "@info:tooltip"
+msgid ""
+"Use this button to login to the KDE bug tracking system using the provided "
+"username and password."
+msgstr ""
+"Со ова копче може да се најавите на системот за следење грешки на KDE со "
+"зададените корисничко име и лозинка."
+
+#: reportassistantpages_bugzilla.cpp:72
+#, kde-format
+msgctxt "@info/rich"
+msgid ""
+"<note>You need a user account on the <link url='%1'>KDE bug tracking system</"
+"link> in order to file a bug report, because we may need to contact you "
+"later for requesting further information. If you do not have one, you can "
+"freely <link url='%2'>create one here</link>.</note>"
+msgstr ""
+"<note>Ви треба корисничка сметка на <link url='%1'>системот за следење "
+"грешки на KDE</link> за да го внесете извештајот за грешка, бидејќи можеби "
+"подоцна ќе треба да контактираме со вас за повеќе информации. Ако немате "
+"сметка, може слободно да ја <link url='%2'>креирате тука</link>.</note>"
+
+#: reportassistantpages_bugzilla.cpp:89
+#, kde-format
+msgctxt "@info:status"
+msgid "Error when trying to login: <message>%1.</message>"
+msgstr "Грешка при обид за најава: <message>%1.</message>"
+
+#: reportassistantpages_bugzilla.cpp:114
+#, kde-format
+msgctxt "@info:status the user is logged at the bugtracker site as USERNAME"
+msgid "Logged in at the KDE bug tracking system (%1) as: %2."
+msgstr "Најавено на системот за следење грешки на KDE (%1) како: %2."
+
+#: reportassistantpages_bugzilla.cpp:229
+#, kde-format
+msgctxt "@info:status '1' is a url, '2' the username"
+msgid "Performing login at %1 as %2..."
+msgstr "Се најавувам на %1 како %2..."
+
+#: reportassistantpages_bugzilla.cpp:253
+msgctxt "@info:status"
+msgid "Invalid username or password"
+msgstr "Невалидно корисничко име или лозинка"
+
+#: reportassistantpages_bugzilla.cpp:301
+msgctxt "@action:button"
+msgid "Search for more reports"
+msgstr "Барај за повеќе извештаи"
+
+#: reportassistantpages_bugzilla.cpp:303
+msgctxt "@info:tooltip"
+msgid ""
+"Use this button to search for more similar bug reports on an earlier date."
+msgstr ""
+"Со ова копче може да пребарувате за други слични извештаи за грешки внесени "
+"порано."
+
+#: reportassistantpages_bugzilla.cpp:309
+msgctxt "@action:button"
+msgid "Retry search"
+msgstr "Повтори пребарување"
+
+#: reportassistantpages_bugzilla.cpp:311
+msgctxt "@info:tooltip"
+msgid "Use this button to retry the search that previously failed."
+msgstr ""
+"Со ова копче може да го повторите пребарувањето што претходно не успеало."
+
+#: reportassistantpages_bugzilla.cpp:315
+msgctxt "@action:button"
+msgid "Open selected report"
+msgstr "Отвори избран извештај"
+
+#: reportassistantpages_bugzilla.cpp:317
+msgctxt "@info:tooltip"
+msgid "Use this button to view the information of the selected bug report."
+msgstr ""
+"Со ова копче може да ја видите информацијата за избраниот извештај за грешка."
+
+#: reportassistantpages_bugzilla.cpp:321
+msgctxt "@action:button"
+msgid "Stop searching"
+msgstr "Прекини пребарување"
+
+#: reportassistantpages_bugzilla.cpp:323
+msgctxt "@info:tooltip"
+msgid "Use this button to stop the current search."
+msgstr "Со ова копче се запира тековното пребарување."
+
+#: reportassistantpages_bugzilla.cpp:378
+msgctxt "@info:status"
+msgid "Error fetching the bug report list"
+msgstr "Грешка при преземањето на листата со извештаи за грешки"
+
+#: reportassistantpages_bugzilla.cpp:380
+#, kde-format
+msgctxt "@info/rich"
+msgid ""
+"Error fetching the bug report list<nl/><message>%1.</message><nl/>Please "
+"wait some time and try again."
+msgstr ""
+"Грешка при преземањето на листата со извештаи за грешки<nl/><message>%1.</"
+"message><nl/>Почекајте некое време и обидете се повторно."
+
+#: reportassistantpages_bugzilla.cpp:462
+msgctxt "@info:status"
+msgid "Search stopped."
+msgstr "Пребарувањето е запрено."
+
+#: reportassistantpages_bugzilla.cpp:464
+#, kde-format
+msgctxt "@info:status"
+msgid "Search stopped. Showing results from %1 to %2"
+msgstr "Пребарувањето е запрено. Прикажувам резултати од %1 до %2"
+
+#: reportassistantpages_bugzilla.cpp:478
+#, kde-format
+msgctxt "@info:status"
+msgid "Searching for duplicates (from %1 to %2)..."
+msgstr "Пребарувам за дупликати (од %1 до %2)..."
+
+#: reportassistantpages_bugzilla.cpp:517
+#, kde-format
+msgctxt "@info:status"
+msgid "Showing results from %1 to %2"
+msgstr "Прикажувам резултати од %1 до %2"
+
+#: reportassistantpages_bugzilla.cpp:544
+msgctxt "@info:status"
+msgid "Search Finished. No reports found."
+msgstr "Пребарувањето заврши. Не беа пронајдени извештаи."
+
+#: reportassistantpages_bugzilla.cpp:568
+msgctxt "@title:window"
+msgid "Bug Description"
+msgstr "Опис на грешка"
+
+#: reportassistantpages_bugzilla.cpp:575
+msgctxt "@action:button"
+msgid "My crash may be a duplicate of this report"
+msgstr "Мојот пад може да е дупликат на овој извештај"
+
+#: reportassistantpages_bugzilla.cpp:576
+msgctxt "@info:tooltip"
+msgid ""
+"Use this button to mark your crash as related to the currently shown bug "
+"report. This will help the KDE developers to determine whether they are "
+"duplicates or not."
+msgstr ""
+"Со ова копче може да го означите Вашиот извештај како поврзан со тековно "
+"покажаниот извештај за грешка. Ова ќе им помогне на развивачите на KDE да "
+"определат дали се извештаите исти или не."
+
+#: reportassistantpages_bugzilla.cpp:613
+#, kde-format
+msgctxt "@info"
+msgid "<link url='%1'>Bug report page at the KDE bug tracking system</link>"
+msgstr ""
+"<link url='%1'>Страница со извештај за грешка во системот за следење грешки "
+"на KDE</link>"
+
+#: reportassistantpages_bugzilla.cpp:617
+#, kde-format
+msgctxt "@info:status"
+msgid "Loading information about bug <numid>%1</numid> from %2...."
+msgstr "Вчитувам информации за грешката <numid>%1</numid> од %2...."
+
+#: reportassistantpages_bugzilla.cpp:645
+msgctxt "@info bug status"
+msgid "Open"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:652
+msgctxt "@info bug resolution"
+msgid "Fixed"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:654
+msgctxt "@info bug resolution"
+msgid "Non-reproducible"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:656
+msgctxt "@info bug resolution"
+msgid "Already reported"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:658
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "Invalid report data"
+msgctxt "@info bug resolution"
+msgid "Not a valid report/crash"
+msgstr "Невалидни податоци од извештајот"
+
+#: reportassistantpages_bugzilla.cpp:661
+msgctxt "@info bug resolution"
+msgid "Not a KDE bug"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:666
+#, kde-format
+msgctxt "@info bug status, %1 is the resolutin"
+msgid "Closed (%1)"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:669
+msgctxt "@info bug status"
+msgid "Temporary closed because the lack of information"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:676
+#, fuzzy, kde-format
+#| msgid "<strong>Product:</strong> %1/%2<br />"
+msgid "<strong>Product:</strong> %1 (%2)<br />"
+msgstr "<strong>Продукт:</strong> %1/%2<br />"
+
+#: reportassistantpages_bugzilla.cpp:678
+#, fuzzy, kde-format
+#| msgid "<strong>Status:</strong> %1<br />"
+msgid "<strong>Title:</strong> %1<br />"
+msgstr "<strong>Статус:</strong> %1<br />"
+
+#: reportassistantpages_bugzilla.cpp:680
+#, kde-format
+msgid "<strong>Status:</strong> %1<br />"
+msgstr "<strong>Статус:</strong> %1<br />"
+
+#: reportassistantpages_bugzilla.cpp:681
+#, kde-format
+msgid "<strong>Full Description:</strong><br />%1"
+msgstr "<strong>Целосен опис:</strong><br />%1"
+
+#: reportassistantpages_bugzilla.cpp:685
+#, fuzzy, kde-format
+#| msgid "<strong>Comments:</strong> %1"
+msgid "<br /><br /><strong>Comments:</strong> %1"
+msgstr "<strong>Коментари:</strong> %1"
+
+#: reportassistantpages_bugzilla.cpp:693
+#, kde-format
+msgctxt "@info:status"
+msgid "Showing report <numid>%1</numid>"
+msgstr "Прикажувам извештај <numid>%1</numid>"
+
+#: reportassistantpages_bugzilla.cpp:696
+msgctxt "@info"
+msgid "Invalid report data"
+msgstr "Невалидни податоци од извештајот"
+
+#: reportassistantpages_bugzilla.cpp:710
+#, kde-format
+msgctxt "@info/rich"
+msgid ""
+"Error fetching the bug report<nl/><message>%1.</message><nl/>Please wait "
+"some time and try again."
+msgstr ""
+"Грешка при преземањето на извештајот за грешка<nl/><message>%1.</message><nl/"
+">Почекајте некое време и обидете се повторно."
+
+#: reportassistantpages_bugzilla.cpp:714
+msgctxt "@info"
+msgid "Error fetching the bug report"
+msgstr "Грешка при преземање извештај за грешка"
+
+#: reportassistantpages_bugzilla.cpp:715
+msgctxt "@info:status"
+msgid "Error fetching the bug report"
+msgstr "Грешка при преземање извештај за грешка"
+
+#: reportassistantpages_bugzilla.cpp:745
+msgctxt "KDE distribution method"
+msgid "Unspecified"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:747
+msgctxt "KDE distribution method"
+msgid "Debian stable"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:749
+msgctxt "KDE distribution method"
+msgid "Debian testing"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:751
+msgctxt "KDE distribution method"
+msgid "Debian unstable"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:753
+msgctxt "KDE distribution method"
+msgid "Exherbo"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:755
+msgctxt "KDE distribution method"
+msgid "Gentoo"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:757
+msgctxt "KDE distribution method"
+msgid "Mandriva"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:759
+msgctxt "KDE distribution method"
+msgid "Slackware"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:761
+msgctxt "KDE distribution method"
+msgid "SuSE/OpenSUSE"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:763
+msgctxt "KDE distribution method"
+msgid "RedHat"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:765
+msgctxt "KDE distribution method"
+msgid "Fedora"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:767
+msgctxt "KDE distribution method"
+msgid "Kubuntu/Ubuntu (and derivates)"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:769
+msgctxt "KDE distribution method"
+msgid "Pardus"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:771
+msgctxt "KDE distribution method"
+msgid "Archlinux"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:773
+msgctxt "KDE distribution method"
+msgid "FreeBSD (Ports)"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:775
+msgctxt "KDE distribution method"
+msgid "NetBSD (pkgsrc)"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:777
+msgctxt "KDE distribution method"
+msgid "OpenBSD"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:779
+msgctxt "KDE distribution method"
+msgid "Mac OS X"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:781
+msgctxt "KDE distribution method"
+msgid "Solaris"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:826
+msgctxt "@info"
+msgid "The title does not provide enough information."
+msgstr "Насловот не дава доволно информација."
+
+#: reportassistantpages_bugzilla.cpp:828
+msgctxt "@info"
+msgid ""
+"The description about the crash details does not provide enough information."
+msgstr "Описот за деталите на падот не дава доволно информација."
+
+#: reportassistantpages_bugzilla.cpp:831
+msgctxt "@info"
+msgid ""
+"Both the title and the description about the crash details do not provide "
+"enough information."
+msgstr ""
+"И насловот и описот на деталите за падот не даваат доволно информација."
+
+#: reportassistantpages_bugzilla.cpp:835
+msgctxt "@info"
+msgid "Can you tell us more?"
+msgstr "Може ли да ни кажете повеќе?"
+
+#: reportassistantpages_bugzilla.cpp:839
+msgctxt "@title:window"
+msgid "We need more information"
+msgstr "Ни треба повеќе информација"
+
+#: reportassistantpages_bugzilla.cpp:892
+msgctxt "@info question"
+msgid "Are you ready to submit this report?"
+msgstr "Дали сте подготвени да го предадете извештајот?"
+
+#: reportassistantpages_bugzilla.cpp:893
+msgctxt "@title:window"
+msgid "Are you sure?"
+msgstr "Дали сте сигурни?"
+
+#: reportassistantpages_bugzilla.cpp:910
+msgctxt "@action:button"
+msgid "Retry..."
+msgstr "Повторно..."
+
+#: reportassistantpages_bugzilla.cpp:912
+msgctxt "@info:tooltip"
+msgid "Use this button to retry sending the crash report if it failed before."
+msgstr ""
+"Со ова копче може повторно да го испратите извештајот ако претходно "
+"испраќањето не успеало."
+
+#: reportassistantpages_bugzilla.cpp:939
+msgctxt "@info:status"
+msgid "Sending crash report... (please wait)"
+msgstr "Испраќам извештај за пад... (почекајте)"
+
+#: reportassistantpages_bugzilla.cpp:956
+#, fuzzy, kde-format
+#| msgctxt "@info/rich"
+#| msgid ""
+#| "Crash report sent.<nl/>Bug Number :: <numid>%1</numid><nl/>URL :: <link>%"
+#| "2</link><nl/>Thanks for contributing to KDE. You can now close this "
+#| "window."
+msgctxt "@info/rich"
+msgid ""
+"Crash report sent.<nl/>URL: <link>%1</link><nl/>Thanks for contributing to "
+"KDE. You can now close this window."
+msgstr ""
+"Извештајот е испратен.<nl/>Бр. на грешка :: <numid>%1</numid><nl/>Адреса :: "
+"<link>%2</link><nl/>Благодариме што придонесовте на KDE. Сега може да го "
+"затворите прозорецов."
+
+#: reportassistantpages_bugzilla.cpp:966
+#, kde-format
+msgctxt "@info:status"
+msgid "Error sending the crash report:  <message>%1.</message>"
+msgstr "Грешка при испраќање извештај за пад:  <message>%1.</message>"
+
 #: reportinfo.cpp:226
 msgctxt "@info/plain"
 msgid ""
@@ -1783,6 +1759,11 @@ msgid ""
 msgstr ""
 "<placeholder>Кажете ни детално, што правевте кога падна апликацијата.</"
 "placeholder>"
+
+#, fuzzy
+#~| msgid "(C) 2000-2009, The DrKonqi Authors"
+#~ msgid "(c) 2009, DrKonqi2 Developers"
+#~ msgstr "(C) 2000-2009, авторите на DrKonqi"
 
 #~ msgid "<strong>Bug ID:</strong> %1<br />"
 #~ msgstr "<strong>Ид. на грешка:</strong> %1<br />"
