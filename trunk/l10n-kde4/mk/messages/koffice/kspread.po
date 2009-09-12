@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kspread\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-11 06:56+0200\n"
+"POT-Creation-Date: 2009-09-12 06:34+0200\n"
 "PO-Revision-Date: 2000-06-08 07:00+0100\n"
 "Last-Translator: Dimitar Indovski <dime@gord.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -2699,6 +2699,7 @@ msgstr "Години"
 #. i18n: file: kspread.rc:38
 #. i18n: ectx: Menu (Delete)
 #: rc.cpp:22 commands/DeleteCommand.cpp:34 commands/Undo.cpp:1375
+#: part/View.cpp:514
 #, fuzzy
 msgid "Delete"
 msgstr "Избриши Редица"
@@ -2904,14 +2905,14 @@ msgstr "Преглед"
 
 #. i18n: file: dialogs/DataFormatWidget.ui:66
 #. i18n: ectx: property (text), widget (QRadioButton, radioButton_8)
-#: rc.cpp:118 ui/CellToolBase_p.cpp:823
+#: rc.cpp:118 ui/CellToolBase_p.cpp:826
 #, fuzzy
 msgid "Time Format"
 msgstr "Формат на Броеви"
 
 #. i18n: file: dialogs/DataFormatWidget.ui:73
 #. i18n: ectx: property (text), widget (QRadioButton, radioButton_7)
-#: rc.cpp:121 ui/CellToolBase_p.cpp:828
+#: rc.cpp:121 ui/CellToolBase_p.cpp:831
 #, fuzzy
 msgid "Date Format"
 msgstr "Формат"
@@ -8985,7 +8986,7 @@ msgstr ""
 
 #. i18n: file: functions/financial.xml:889
 #. i18n: file: functions/financial.xml:932
-#: xml_doc.cpp:1809 xml_doc.cpp:1832 part/View.cpp:407
+#: xml_doc.cpp:1809 xml_doc.cpp:1832 part/View.cpp:411
 #, fuzzy
 msgid "Last"
 msgstr "Разно"
@@ -16555,7 +16556,7 @@ msgid "Remove Comment"
 msgstr "Одстрани колона"
 
 #: commands/CommentCommand.cpp:66 dialogs/CommentDialog.cpp:82
-#: part/View.cpp:1846
+#: part/View.cpp:1863
 #, fuzzy
 msgid "Add Comment"
 msgstr "Централно"
@@ -16688,7 +16689,7 @@ msgstr "Прилагоди Редица"
 
 #: commands/RowColumnManipulators.cpp:646
 #: commands/RowColumnManipulators.cpp:659 commands/Undo.cpp:285
-#: ui/CellToolBase.cpp:449 ui/CellToolBase_p.cpp:1293
+#: ui/CellToolBase.cpp:449 ui/CellToolBase_p.cpp:1296
 #, fuzzy
 msgid "Insert Columns"
 msgstr "Вметни Колона"
@@ -16701,7 +16702,7 @@ msgstr "Одстрани Колона"
 
 #: commands/RowColumnManipulators.cpp:713
 #: commands/RowColumnManipulators.cpp:726 commands/Undo.cpp:399
-#: ui/CellToolBase.cpp:487 ui/CellToolBase_p.cpp:1305
+#: ui/CellToolBase.cpp:487 ui/CellToolBase_p.cpp:1308
 #, fuzzy
 msgid "Insert Rows"
 msgstr "Вметни Редица"
@@ -16712,7 +16713,7 @@ msgstr "Вметни Редица"
 msgid "Remove Rows"
 msgstr "Одстрани Редица"
 
-#: commands/SheetCommands.cpp:38 part/View.cpp:2116
+#: commands/SheetCommands.cpp:38 part/View.cpp:2133
 #, fuzzy
 msgid "Rename Sheet"
 msgstr "Одстрани Табела"
@@ -16722,7 +16723,7 @@ msgstr "Одстрани Табела"
 msgid "Hide Sheet %1"
 msgstr "Скриј Табела"
 
-#: commands/SheetCommands.cpp:60 part/View.cpp:322
+#: commands/SheetCommands.cpp:60 part/View.cpp:326
 #, fuzzy
 msgid "Hide Sheet"
 msgstr "Скриј Табела"
@@ -16743,13 +16744,13 @@ msgstr "Колона"
 msgid "Add Sheet"
 msgstr "Скриј Табела"
 
-#: commands/SheetCommands.cpp:142 part/View.cpp:301
+#: commands/SheetCommands.cpp:142 part/View.cpp:305
 #, fuzzy
 msgid "Duplicate Sheet"
 msgstr "Преизбери"
 
-#: commands/SheetCommands.cpp:183 part/View.cpp:307 part/View.cpp:2079
-#: part/View.cpp:2083 part/View.cpp:2402
+#: commands/SheetCommands.cpp:183 part/View.cpp:311 part/View.cpp:2096
+#: part/View.cpp:2100 part/View.cpp:2419
 #, fuzzy
 msgid "Remove Sheet"
 msgstr "Одстрани келија"
@@ -17056,31 +17057,31 @@ msgid "&Function:"
 msgstr "Функција"
 
 #: dialogs/ConsolidateDialog.cpp:89 dialogs/SubtotalDialog.cpp:286
-#: part/View.cpp:467 part/dialogs/PreferenceDialog.cpp:333
+#: part/View.cpp:471 part/dialogs/PreferenceDialog.cpp:333
 #, fuzzy
 msgid "Sum"
 msgstr "сума"
 
 #: dialogs/ConsolidateDialog.cpp:90 dialogs/SubtotalDialog.cpp:278
-#: part/View.cpp:488 part/dialogs/PreferenceDialog.cpp:336
+#: part/View.cpp:492 part/dialogs/PreferenceDialog.cpp:336
 #, fuzzy
 msgid "Average"
 msgstr "средина"
 
 #: dialogs/ConsolidateDialog.cpp:91 dialogs/SubtotalDialog.cpp:279
-#: part/View.cpp:495 part/dialogs/PreferenceDialog.cpp:337
+#: part/View.cpp:499 part/dialogs/PreferenceDialog.cpp:337
 #, fuzzy
 msgid "Count"
 msgstr "Колона"
 
 #: dialogs/ConsolidateDialog.cpp:92 dialogs/SubtotalDialog.cpp:281
-#: part/View.cpp:481 part/dialogs/PreferenceDialog.cpp:335
+#: part/View.cpp:485 part/dialogs/PreferenceDialog.cpp:335
 #, fuzzy
 msgid "Max"
 msgstr "Мај"
 
 #: dialogs/ConsolidateDialog.cpp:93 dialogs/SubtotalDialog.cpp:282
-#: part/View.cpp:474 part/dialogs/PreferenceDialog.cpp:334
+#: part/View.cpp:478 part/dialogs/PreferenceDialog.cpp:334
 #, fuzzy
 msgid "Min"
 msgstr "инт"
@@ -17437,7 +17438,7 @@ msgstr ""
 #: dialogs/DatabaseDialog.cpp:783 dialogs/DatabaseDialog.cpp:784
 #: dialogs/SortDialog.cpp:146 dialogs/SortDialog.cpp:165
 #: dialogs/SortDialog.cpp:471 dialogs/SortDialog.cpp:473
-#: dialogs/SortDialog.cpp:483 dialogs/SortDialog.cpp:485 part/View.cpp:460
+#: dialogs/SortDialog.cpp:483 dialogs/SortDialog.cpp:485 part/View.cpp:464
 #: part/dialogs/PreferenceDialog.cpp:331 part/dialogs/PreferenceDialog.cpp:339
 #: part/dialogs/PreferenceDialog.cpp:474 ui/CellToolBase.cpp:324
 #, fuzzy
@@ -18092,8 +18093,8 @@ msgstr "Број на неуспеси"
 msgid "No Entries"
 msgstr ""
 
-#: dialogs/LinkDialog.cpp:154 part/View.cpp:376 part/View.cpp:1075
-#: part/View.cpp:1640
+#: dialogs/LinkDialog.cpp:154 part/View.cpp:380 part/View.cpp:1086
+#: part/View.cpp:1657
 msgid "Cell"
 msgstr "Келија"
 
@@ -18514,7 +18515,7 @@ msgstr ""
 msgid "Column '%1' "
 msgstr "Колона "
 
-#: dialogs/SubtotalDialog.cpp:280 part/View.cpp:502
+#: dialogs/SubtotalDialog.cpp:280 part/View.cpp:506
 #: part/dialogs/PreferenceDialog.cpp:338
 #, fuzzy
 msgid "CountA"
@@ -19041,377 +19042,377 @@ msgstr ""
 msgid "Nothing to print for sheet(s) %1."
 msgstr "Почетна вредност"
 
-#: part/View.cpp:290 part/dialogs/SheetPropertiesDialog.cpp:35
+#: part/View.cpp:294 part/dialogs/SheetPropertiesDialog.cpp:35
 msgid "Sheet Properties"
 msgstr ""
 
-#: part/View.cpp:293
+#: part/View.cpp:297
 msgid "Modify current sheet's properties"
 msgstr ""
 
-#: part/View.cpp:295 part/View.cpp:306 part/dialogs/PageLayoutDialog.cpp:152
+#: part/View.cpp:299 part/View.cpp:310 part/dialogs/PageLayoutDialog.cpp:152
 #, fuzzy
 msgid "Sheet"
 msgstr "Избери"
 
-#: part/View.cpp:296 part/View.cpp:2397
+#: part/View.cpp:300 part/View.cpp:2414
 #, fuzzy
 msgid "Insert Sheet"
 msgstr "Вметни табела"
 
-#: part/View.cpp:297
+#: part/View.cpp:301
 #, fuzzy
 msgid "Insert a new sheet"
 msgstr "Вметни Табела"
 
-#: part/View.cpp:302
+#: part/View.cpp:306
 #, fuzzy
 msgid "Duplicate the selected sheet"
 msgstr "Одстрани колона"
 
-#: part/View.cpp:308 part/View.cpp:2398 part/View.cpp:2403
+#: part/View.cpp:312 part/View.cpp:2415 part/View.cpp:2420
 #, fuzzy
 msgid "Remove the active sheet"
 msgstr "Одстрани колона"
 
-#: part/View.cpp:312
+#: part/View.cpp:316
 #, fuzzy
 msgid "Rename Sheet..."
 msgstr "Преименувај табела..."
 
-#: part/View.cpp:315
+#: part/View.cpp:319
 #, fuzzy
 msgid "Rename the active sheet"
 msgstr "Одстрани колона"
 
-#: part/View.cpp:317
+#: part/View.cpp:321
 #, fuzzy
 msgid "Show Sheet..."
 msgstr "Колона"
 
-#: part/View.cpp:320
+#: part/View.cpp:324
 #, fuzzy
 msgid "Show a hidden sheet"
 msgstr "Колона"
 
-#: part/View.cpp:325
+#: part/View.cpp:329
 #, fuzzy
 msgid "Hide the active sheet"
 msgstr "Одстрани колона"
 
-#: part/View.cpp:327
+#: part/View.cpp:331
 #, fuzzy
 msgid "Page Layout..."
 msgstr "??Paper Layout??..."
 
-#: part/View.cpp:330
+#: part/View.cpp:334
 msgid "Specify the layout of the spreadsheet for a printout"
 msgstr ""
 
-#: part/View.cpp:332 part/View.cpp:2036
+#: part/View.cpp:336 part/View.cpp:2053
 msgid "Reset Print Range"
 msgstr ""
 
-#: part/View.cpp:335
+#: part/View.cpp:339
 #, fuzzy
 msgid "Reset the print range in the current sheet"
 msgstr "Одстрани колона"
 
-#: part/View.cpp:337
+#: part/View.cpp:341
 #, fuzzy
 msgid "Page Borders"
 msgstr "Прикажи граници на страница"
 
-#: part/View.cpp:338
+#: part/View.cpp:342
 msgid "Show on the spreadsheet where the page borders will be"
 msgstr ""
 
-#: part/View.cpp:342
+#: part/View.cpp:346
 msgid "Recalculate Sheet"
 msgstr ""
 
-#: part/View.cpp:344 part/View.cpp:352
+#: part/View.cpp:348 part/View.cpp:356
 #, fuzzy
 msgid "Recalculate"
 msgstr "Прецизност"
 
-#: part/View.cpp:348
+#: part/View.cpp:352
 msgid "Recalculate the value of every cell in the current worksheet"
 msgstr ""
 
-#: part/View.cpp:350
+#: part/View.cpp:354
 #, fuzzy
 msgid "Recalculate Document"
 msgstr "Прецизност"
 
-#: part/View.cpp:356
+#: part/View.cpp:360
 msgid "Recalculate the value of every cell in all worksheets"
 msgstr ""
 
-#: part/View.cpp:358
+#: part/View.cpp:362
 #, fuzzy
 msgid "Protect &Sheet..."
 msgstr "Вметни табела"
 
-#: part/View.cpp:360
+#: part/View.cpp:364
 msgid "Protect the sheet from being modified"
 msgstr ""
 
-#: part/View.cpp:364
+#: part/View.cpp:368
 #, fuzzy
 msgid "Protect &Document..."
 msgstr "Прецизност"
 
-#: part/View.cpp:366
+#: part/View.cpp:370
 msgid "Protect the document from being modified"
 msgstr ""
 
-#: part/View.cpp:371
+#: part/View.cpp:375
 msgid "&Create Template From Document..."
 msgstr ""
 
-#: part/View.cpp:375
+#: part/View.cpp:379
 #, fuzzy
 msgid "Anchor"
 msgstr "обичен"
 
-#: part/View.cpp:377 part/View.cpp:1075
+#: part/View.cpp:381 part/View.cpp:1086
 #, fuzzy
 msgid "Page"
 msgstr "Преименувај"
 
-#: part/View.cpp:379
+#: part/View.cpp:383
 msgid "Switch shape anchoring"
 msgstr ""
 
-#: part/View.cpp:386
+#: part/View.cpp:390
 #, fuzzy
 msgid "Next Sheet"
 msgstr "Вметни табела"
 
-#: part/View.cpp:387
+#: part/View.cpp:391
 #, fuzzy
 #| msgid "Text"
 msgid "Next"
 msgstr "Текст"
 
-#: part/View.cpp:388
+#: part/View.cpp:392
 #, fuzzy
 msgid "Move to the next sheet"
 msgstr "Помести кон лево"
 
-#: part/View.cpp:393
+#: part/View.cpp:397
 #, fuzzy
 msgid "Previous Sheet"
 msgstr "Одстрани табела"
 
-#: part/View.cpp:394
+#: part/View.cpp:398
 #, fuzzy
 msgid "Previous"
 msgstr "Одстрани табела"
 
-#: part/View.cpp:395
+#: part/View.cpp:399
 #, fuzzy
 msgid "Move to the previous sheet"
 msgstr "Помести кон лево"
 
-#: part/View.cpp:400
+#: part/View.cpp:404
 #, fuzzy
 msgid "First Sheet"
 msgstr "Вметни табела"
 
-#: part/View.cpp:401
+#: part/View.cpp:405
 #, fuzzy
 msgid "First"
 msgstr "Вметни табела"
 
-#: part/View.cpp:402
+#: part/View.cpp:406
 #, fuzzy
 msgid "Move to the first sheet"
 msgstr "Помести кон лево"
 
-#: part/View.cpp:406
+#: part/View.cpp:410
 #, fuzzy
 msgid "Last Sheet"
 msgstr "Вметни табела"
 
-#: part/View.cpp:408
+#: part/View.cpp:412
 #, fuzzy
 msgid "Move to the last sheet"
 msgstr "Помести кон лево"
 
-#: part/View.cpp:414
+#: part/View.cpp:418
 #, fuzzy
 msgid "Column Header"
 msgstr "Колона "
 
-#: part/View.cpp:415
+#: part/View.cpp:419
 #, fuzzy
 msgid "Show the column header"
 msgstr "Колона"
 
-#: part/View.cpp:420
+#: part/View.cpp:424
 #, fuzzy
 msgid "Row Header"
 msgstr "Создади котва"
 
-#: part/View.cpp:421
+#: part/View.cpp:425
 #, fuzzy
 msgid "Show the row header"
 msgstr "Колона"
 
-#: part/View.cpp:426
+#: part/View.cpp:430
 #, fuzzy
 msgid "Horizontal Scrollbar"
 msgstr "Формула"
 
-#: part/View.cpp:427
+#: part/View.cpp:431
 #, fuzzy
 msgid "Show the horizontal scrollbar"
 msgstr "Формула"
 
-#: part/View.cpp:432
+#: part/View.cpp:436
 #, fuzzy
 msgid "Vertical Scrollbar"
 msgstr "Формула"
 
-#: part/View.cpp:433
+#: part/View.cpp:437
 #, fuzzy
 msgid "Show the vertical scrollbar"
 msgstr "Формула"
 
-#: part/View.cpp:438
+#: part/View.cpp:442
 #, fuzzy
 msgid "Status Bar"
 msgstr "Прикажи Табела"
 
-#: part/View.cpp:439
+#: part/View.cpp:443
 #, fuzzy
 msgid "Show the status bar"
 msgstr "Прикажи Табела"
 
-#: part/View.cpp:444
+#: part/View.cpp:448
 #, fuzzy
 msgid "Tab Bar"
 msgstr "Прикажи Табела"
 
-#: part/View.cpp:445
+#: part/View.cpp:449
 #, fuzzy
 msgid "Show the tab bar"
 msgstr "Прикажи Табела"
 
-#: part/View.cpp:451
+#: part/View.cpp:455
 msgid "Set various KSpread options"
 msgstr ""
 
-#: part/View.cpp:464
+#: part/View.cpp:468
 #, fuzzy
 msgid "No calculation"
 msgstr "Се пресметува"
 
-#: part/View.cpp:471
+#: part/View.cpp:475
 #, fuzzy
 msgid "Calculate using sum"
 msgstr "Се пресметува"
 
-#: part/View.cpp:478
+#: part/View.cpp:482
 #, fuzzy
 msgid "Calculate using minimum"
 msgstr "Се пресметува"
 
-#: part/View.cpp:485
+#: part/View.cpp:489
 #, fuzzy
 msgid "Calculate using maximum"
 msgstr "Се пресметува"
 
-#: part/View.cpp:492
+#: part/View.cpp:496
 #, fuzzy
 msgid "Calculate using average"
 msgstr "Се пресметува"
 
-#: part/View.cpp:499
+#: part/View.cpp:503
 #, fuzzy
 msgid "Calculate using the count"
 msgstr "Се пресметува"
 
-#: part/View.cpp:506
+#: part/View.cpp:510
 #, fuzzy
 msgid "Calculate using the countA"
 msgstr "Се пресметува"
 
-#: part/View.cpp:741 part/dialogs/PreferenceDialog.cpp:377
+#: part/View.cpp:752 part/dialogs/PreferenceDialog.cpp:377
 #, fuzzy
 msgid "Tools"
 msgstr "До"
 
-#: part/View.cpp:1224 ui/CellToolBase.cpp:1724
+#: part/View.cpp:1241 ui/CellToolBase.cpp:1724
 #, fuzzy
 msgid "Change Text Color"
 msgstr "Смени Име на Табела"
 
-#: part/View.cpp:1234 ui/CellToolBase.cpp:2011
+#: part/View.cpp:1251 ui/CellToolBase.cpp:2011
 #, fuzzy
 msgid "Change Background Color"
 msgstr "Боја на Позадина"
 
-#: part/View.cpp:1258 part/View.cpp:1268 part/View.cpp:1281 part/View.cpp:1296
-#: part/View.cpp:1306 part/View.cpp:1319 ui/CellToolBase.cpp:1794
+#: part/View.cpp:1275 part/View.cpp:1285 part/View.cpp:1298 part/View.cpp:1313
+#: part/View.cpp:1323 part/View.cpp:1336 ui/CellToolBase.cpp:1794
 #: ui/CellToolBase.cpp:1807 ui/CellToolBase.cpp:1820 ui/CellToolBase.cpp:1830
 #: ui/CellToolBase.cpp:1840 ui/CellToolBase.cpp:1855 ui/CellToolBase.cpp:1870
-#: ui/CellToolBase_p.cpp:838
+#: ui/CellToolBase_p.cpp:841
 #, fuzzy
 msgid "Change Border"
 msgstr "Боја на Граница"
 
-#: part/View.cpp:1555 part/View.cpp:1576 part/View.cpp:2110
+#: part/View.cpp:1572 part/View.cpp:1593 part/View.cpp:2127
 #, fuzzy
 msgid "You cannot change a protected sheet."
 msgstr "Не смеете да ја избришете единствената табела на мапата."
 
-#: part/View.cpp:1598
+#: part/View.cpp:1615
 #, fuzzy
 msgid "You cannot hide the last visible sheet."
 msgstr "Не смеете да ја скриете последната видлива табела."
 
-#: part/View.cpp:1652 part/View.cpp:1709
+#: part/View.cpp:1669 part/View.cpp:1726
 msgid "Enter a password."
 msgstr ""
 
-#: part/View.cpp:1653
+#: part/View.cpp:1670
 #, fuzzy
 msgid "Protect Document"
 msgstr "Прецизност"
 
-#: part/View.cpp:1671 part/View.cpp:1728
+#: part/View.cpp:1688 part/View.cpp:1745
 #, fuzzy
 msgid "Enter the password."
 msgstr "Инт"
 
-#: part/View.cpp:1672
+#: part/View.cpp:1689
 #, fuzzy
 msgid "Unprotect Document"
 msgstr "Прецизност"
 
-#: part/View.cpp:1687 part/View.cpp:1746
+#: part/View.cpp:1704 part/View.cpp:1763
 msgid "Password is incorrect."
 msgstr ""
 
-#: part/View.cpp:1710
+#: part/View.cpp:1727
 #, fuzzy
 msgid "Protect Sheet"
 msgstr "Преизбери"
 
-#: part/View.cpp:1729
+#: part/View.cpp:1746
 #, fuzzy
 msgid "Unprotect Sheet"
 msgstr "Преизбери"
 
-#: part/View.cpp:2079
+#: part/View.cpp:2096
 #, fuzzy
 msgid "You cannot delete the only sheet."
 msgstr "Не смеете да ја избришете единствената табела на мапата."
 
-#: part/View.cpp:2082
+#: part/View.cpp:2099
 #, fuzzy
 msgid ""
 "You are about to remove the active sheet.\n"
@@ -19420,57 +19421,57 @@ msgstr ""
 "Ќе ја одстраните активната табела.\n"
 "Дали сакате да продолжите?"
 
-#: part/View.cpp:2083
+#: part/View.cpp:2100
 #, fuzzy
 msgid "&Delete"
 msgstr "Избриши Редица"
 
-#: part/View.cpp:2116 ui/CellToolBase.cpp:1571
+#: part/View.cpp:2133 ui/CellToolBase.cpp:1571
 #, fuzzy
 msgid "Enter name:"
 msgstr "Инт"
 
-#: part/View.cpp:2122
+#: part/View.cpp:2139
 #, fuzzy
 msgid "Sheet name cannot be empty."
 msgstr "Името на табела не смее да биде празно."
 
-#: part/View.cpp:2122 part/View.cpp:2131
+#: part/View.cpp:2139 part/View.cpp:2148
 #, fuzzy
 msgid "Change Sheet Name"
 msgstr "Смени Име на Табела"
 
-#: part/View.cpp:2131
+#: part/View.cpp:2148
 #, fuzzy
 msgid "This name is already used."
 msgstr "Датотеката веќе постои"
 
-#: part/View.cpp:2287
+#: part/View.cpp:2304
 #, fuzzy
 msgid "Sum: "
 msgstr "Ноември"
 
-#: part/View.cpp:2290
+#: part/View.cpp:2307
 #, fuzzy
 msgid "Average: "
 msgstr "средина"
 
-#: part/View.cpp:2293
+#: part/View.cpp:2310
 #, fuzzy
 msgid "Min: "
 msgstr "Папка"
 
-#: part/View.cpp:2296
+#: part/View.cpp:2313
 #, fuzzy
 msgid "Max: "
 msgstr "Податок X"
 
-#: part/View.cpp:2299
+#: part/View.cpp:2316
 #, fuzzy
 msgid "Count: "
 msgstr "Колона "
 
-#: part/View.cpp:2302
+#: part/View.cpp:2319
 #, fuzzy
 msgid "CountA: "
 msgstr "Колона "
@@ -20046,12 +20047,12 @@ msgstr "Прилагоди редица и колона"
 msgid "Adjusts row/column size so that the contents will fit"
 msgstr ""
 
-#: ui/CellToolBase.cpp:526 ui/CellToolBase.cpp:532 ui/CellToolBase_p.cpp:1285
+#: ui/CellToolBase.cpp:526 ui/CellToolBase.cpp:532 ui/CellToolBase_p.cpp:1288
 #, fuzzy
 msgid "Cells..."
 msgstr "Келија"
 
-#: ui/CellToolBase.cpp:527 ui/CellToolBase_p.cpp:1281
+#: ui/CellToolBase.cpp:527 ui/CellToolBase_p.cpp:1284
 #, fuzzy
 msgid "Insert Cells..."
 msgstr "Вметни Келија"
@@ -20532,7 +20533,7 @@ msgstr ""
 msgid "First letter uppercase"
 msgstr "Вметни табела"
 
-#: ui/CellToolBase.cpp:2330 ui/CellToolBase_p.cpp:465
+#: ui/CellToolBase.cpp:2330 ui/CellToolBase_p.cpp:468
 #, fuzzy
 msgid "Clear Text"
 msgstr "Смени Име на Табела"
@@ -20558,45 +20559,45 @@ msgstr ""
 msgid "Replace"
 msgstr "Замени текст"
 
-#: ui/CellToolBase_p.cpp:806
+#: ui/CellToolBase_p.cpp:809
 #, fuzzy
 msgid "Number Format"
 msgstr "Број на обиди"
 
-#: ui/CellToolBase_p.cpp:812
+#: ui/CellToolBase_p.cpp:815
 #, fuzzy
 msgid "Currency Format"
 msgstr "Моментално"
 
-#: ui/CellToolBase_p.cpp:818
+#: ui/CellToolBase_p.cpp:821
 #, fuzzy
 msgid "Percentage Format"
 msgstr "Формат на Процент"
 
-#: ui/CellToolBase_p.cpp:833
+#: ui/CellToolBase_p.cpp:836
 #, fuzzy
 msgid "Scientific Format"
 msgstr "Формат на Процент"
 
-#: ui/CellToolBase_p.cpp:1289
+#: ui/CellToolBase_p.cpp:1292
 msgid "Adjust Column"
 msgstr "Прилагоди Колона"
 
-#: ui/CellToolBase_p.cpp:1297
+#: ui/CellToolBase_p.cpp:1300
 #, fuzzy
 msgid "Delete Columns"
 msgstr "Избриши Колона"
 
-#: ui/CellToolBase_p.cpp:1301
+#: ui/CellToolBase_p.cpp:1304
 msgid "Adjust Row"
 msgstr "Прилагоди Редица"
 
-#: ui/CellToolBase_p.cpp:1309
+#: ui/CellToolBase_p.cpp:1312
 #, fuzzy
 msgid "Delete Rows"
 msgstr "Избриши Редица"
 
-#: ui/CellToolBase_p.cpp:1313
+#: ui/CellToolBase_p.cpp:1316
 #, fuzzy
 msgid "Selection List..."
 msgstr "Избери Фонт"
