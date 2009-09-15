@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-12 06:24+0200\n"
+"POT-Creation-Date: 2009-09-15 06:15+0200\n"
 "PO-Revision-Date: 2007-02-28 13:59+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -63,8 +63,10 @@ msgid "All Contacts"
 msgstr "&Сите контакти"
 
 #: mainwidget.cpp:266
-msgid "Print a special number of contacts."
-msgstr "Печати специјален број на контакти."
+#, fuzzy
+#| msgid "Set the categories for all selected contacts."
+msgid "Print the complete address book or a selected number of contacts."
+msgstr "Ги поставува категориите за сите избрани контакти."
 
 #: mainwidget.cpp:269
 #, fuzzy
@@ -77,123 +79,189 @@ msgstr "Рекурзивно пребарување"
 msgid "Select All"
 msgstr "Одизбери ги сите"
 
-#: mainwidget.cpp:278
+#: mainwidget.cpp:275
+#, fuzzy
+#| msgid "Selects all visible contacts from current view."
+msgid "Select all contacts in the current address book view."
+msgstr "Ги избира сите видливи контакти од тековниот преглед."
+
+#: mainwidget.cpp:279
 #, fuzzy
 #| msgid "Address Books"
 msgid "Show Address Books View"
 msgstr "Адресари"
 
-#: mainwidget.cpp:279
+#: mainwidget.cpp:280
 #, fuzzy
 #| msgid "Toggle whether the details page shall be visible."
 msgid "Toggle whether the address books view shall be visible."
 msgstr "Сменува дали ќе биде видлива страницата со детали."
 
-#: mainwidget.cpp:280
+#: mainwidget.cpp:281
 #, fuzzy
 #| msgid "Edit Address Book Filter"
 msgid "Hide Address Books View"
 msgstr "Уредете филтер за адресар"
 
-#: mainwidget.cpp:285
+#: mainwidget.cpp:286
 #, fuzzy
 #| msgid "New Contact"
 #| msgid_plural "New %1 Contacts"
 msgid "Show Contacts View"
 msgstr "%1 нов контакт"
 
-#: mainwidget.cpp:286
+#: mainwidget.cpp:287
 #, fuzzy
 #| msgid "Toggle whether the details page shall be visible."
 msgid "Toggle whether the contacts view shall be visible."
 msgstr "Сменува дали ќе биде видлива страницата со детали."
 
-#: mainwidget.cpp:287
+#: mainwidget.cpp:288
 #, fuzzy
 #| msgid "Edit Contact Name"
 msgid "Hide Contacts View"
 msgstr "Уредете име на контакт"
 
-#: mainwidget.cpp:292
+#: mainwidget.cpp:293
 #, fuzzy
 #| msgid "Show Details"
 msgid "Show Details View"
 msgstr "Прикажи детали"
 
-#: mainwidget.cpp:293
+#: mainwidget.cpp:294
 #, fuzzy
 #| msgid "Toggle whether the details page shall be visible."
 msgid "Toggle whether the details view shall be visible."
 msgstr "Сменува дали ќе биде видлива страницата со детали."
 
-#: mainwidget.cpp:294
+#: mainwidget.cpp:295
 #, fuzzy
 #| msgid "Hide Details"
 msgid "Hide Details View"
 msgstr "Скриј детали"
 
-#: mainwidget.cpp:299
+#: mainwidget.cpp:300
 msgid "Show Simple View"
 msgstr ""
 
-#: mainwidget.cpp:304
+#: mainwidget.cpp:301
+#, fuzzy
+#| msgid "Please select type of the new address book:"
+msgid "Show a simple mode of the address book view."
+msgstr "Изберете го типот на новиот адресар:"
+
+#: mainwidget.cpp:306
 msgid "Import vCard..."
 msgstr "Внеси vCard-картичка..."
 
-#: mainwidget.cpp:308
+#: mainwidget.cpp:307
+#, fuzzy
+#| msgid "Import Contacts?"
+msgid "Import contacts from a vCard file."
+msgstr "Внесувате контакти?"
+
+#: mainwidget.cpp:311
 #, fuzzy
 #| msgid "Import CSV List..."
 msgid "Import CSV file..."
 msgstr "Внеси CSV-листа..."
 
 #: mainwidget.cpp:312
+msgid "Import contacts from a file in comma separated value format."
+msgstr ""
+
+#: mainwidget.cpp:316
 #, fuzzy
 #| msgid "Import LDIF Addressbook..."
 msgid "Import LDIF file..."
 msgstr "Внеси LDIF-адресар..."
 
-#: mainwidget.cpp:316
+#: mainwidget.cpp:317
+#, fuzzy
+#| msgid "Import Contacts?"
+msgid "Import contacts from a LDIF file."
+msgstr "Внесувате контакти?"
+
+#: mainwidget.cpp:321
 #, fuzzy
 #| msgid "Import From Mobile Phone..."
 msgid "Import from LDAP server..."
 msgstr "Внеси од мобилен телефон..."
 
-#: mainwidget.cpp:320
+#: mainwidget.cpp:322
+#, fuzzy
+#| msgid "Import Contacts?"
+msgid "Import contacts from a LDAP server."
+msgstr "Внесувате контакти?"
+
+#: mainwidget.cpp:326
 #, fuzzy
 #| msgid "Import All..."
 msgid "Import GMX file..."
 msgstr "Внеси ги сите..."
 
-#: mainwidget.cpp:326
+#: mainwidget.cpp:327
+#, fuzzy
+msgid "Import contacts from a GMX address book file."
+msgstr "%1-адресар"
+
+#: mainwidget.cpp:333
 msgid "Export vCard 3.0..."
 msgstr "Изнеси vCard-картичка 3.0..."
 
-#: mainwidget.cpp:330
+#: mainwidget.cpp:334
+#, fuzzy
+#| msgid "Export vCard 3.0..."
+msgid "Export contacts to a vCard 3.0 file."
+msgstr "Изнеси vCard-картичка 3.0..."
+
+#: mainwidget.cpp:338
 msgid "Export vCard 2.1..."
 msgstr "Изнеси vCard-картичка 2.1..."
 
-#: mainwidget.cpp:334
+#: mainwidget.cpp:339
+#, fuzzy
+#| msgid "Export vCard 2.1..."
+msgid "Export contacts to a vCard 2.1 file."
+msgstr "Изнеси vCard-картичка 2.1..."
+
+#: mainwidget.cpp:343
 #, fuzzy
 #| msgid "Export CSV List..."
 msgid "Export CSV file..."
 msgstr "Изнеси CSV-листа..."
 
-#: mainwidget.cpp:338
+#: mainwidget.cpp:344
+msgid "Export contacts to a file in comma separated value format."
+msgstr ""
+
+#: mainwidget.cpp:348
 #, fuzzy
 #| msgid "Export LDIF Addressbook..."
 msgid "Export LDIF file..."
 msgstr "Изнеси LDIF-адресар..."
 
-#: mainwidget.cpp:342
+#: mainwidget.cpp:349
+#, fuzzy
+#| msgid "Export LDIF Addressbook..."
+msgid "Export contacts to a LDIF file."
+msgstr "Изнеси LDIF-адресар..."
+
+#: mainwidget.cpp:353
 #, fuzzy
 msgid "Export GMX file..."
 msgstr "Изнеси LDIF-адресар..."
 
-#: mainwidget.cpp:350
+#: mainwidget.cpp:354
+#, fuzzy
+msgid "Export contacts to a GMX address book file."
+msgstr "%1-адресар"
+
+#: mainwidget.cpp:361
 msgid "Address Book"
 msgstr "Адресар"
 
-#: mainwidget.cpp:355
+#: mainwidget.cpp:366
 #, fuzzy
 #| msgid "Edit Contact"
 msgid "Print Contacts"
@@ -206,6 +274,11 @@ msgid "Add Address Book Folder..."
 msgstr "Додајте адресар"
 
 #: standardcontactactionmanager.cpp:52
+msgid ""
+"Add a new address book folder to the currently selected address book folder."
+msgstr ""
+
+#: standardcontactactionmanager.cpp:53
 #, fuzzy, kde-format
 #| msgid "Edit Address Book Filter"
 msgid "Copy Address Book Folder"
@@ -214,23 +287,42 @@ msgstr[0] "Уредете филтер за адресар"
 msgstr[1] "Уредете филтер за адресар"
 msgstr[2] "Уредете филтер за адресар"
 
-#: standardcontactactionmanager.cpp:53
+#: standardcontactactionmanager.cpp:54
+msgid "Copy the selected address book folders to the clipboard."
+msgstr ""
+
+#: standardcontactactionmanager.cpp:55
 #, fuzzy
 #| msgid "Edit Address Book Filter"
 msgid "Delete Address Book Folder"
 msgstr "Уредете филтер за адресар"
 
-#: standardcontactactionmanager.cpp:54
+#: standardcontactactionmanager.cpp:56
+#, fuzzy
+#| msgid "Please select type of the new address book:"
+msgid "Delete the selected address book folders from the address book."
+msgstr "Изберете го типот на новиот адресар:"
+
+#: standardcontactactionmanager.cpp:57
 #, fuzzy
 #| msgid "Iceland"
 msgid "Reload"
 msgstr "Исланд"
 
-#: standardcontactactionmanager.cpp:55
+#: standardcontactactionmanager.cpp:58
+msgid "Reloads the contacts from Akonadi and updates the address book view."
+msgstr ""
+
+#: standardcontactactionmanager.cpp:59
 msgid "Properties..."
 msgstr ""
 
-#: standardcontactactionmanager.cpp:56 standardcontactactionmanager.cpp:76
+#: standardcontactactionmanager.cpp:60
+msgid ""
+"Open a dialog to edit the properties of the selected address book folder."
+msgstr ""
+
+#: standardcontactactionmanager.cpp:61 standardcontactactionmanager.cpp:83
 #, fuzzy, kde-format
 #| msgid "Cut Contact"
 #| msgid_plural "Cut %1 Contacts"
@@ -240,7 +332,17 @@ msgstr[0] "Исечи %1 контакт"
 msgstr[1] "Исечи %1 контакти"
 msgstr[2] "Исечи %1 контакти"
 
-#: standardcontactactionmanager.cpp:57 standardcontactactionmanager.cpp:78
+#: standardcontactactionmanager.cpp:62
+#, fuzzy
+#| msgid ""
+#| "Copy the currently selected contact(s) to system clipboard in vCard "
+#| "format."
+msgid "Copy the selected contacts to the clipboard."
+msgstr ""
+"Ги копира тековно избраните контакти на системската табла со исечоци во "
+"форматот vCard."
+
+#: standardcontactactionmanager.cpp:63 standardcontactactionmanager.cpp:85
 #, kde-format
 msgid "Delete Contact"
 msgid_plural "Delete %1 Contacts"
@@ -248,13 +350,19 @@ msgstr[0] "Избриши %1 контакт"
 msgstr[1] "Избриши %1 контакти"
 msgstr[2] "Избриши %1 контакти"
 
-#: standardcontactactionmanager.cpp:80 standardcontactactionmanager.cpp:267
+#: standardcontactactionmanager.cpp:64
+#, fuzzy
+#| msgid "Please select type of the new address book:"
+msgid "Delete the selected contacts from the address book."
+msgstr "Изберете го типот на новиот адресар:"
+
+#: standardcontactactionmanager.cpp:87 standardcontactactionmanager.cpp:274
 #, fuzzy
 #| msgid "&Edit Contact..."
 msgid "Edit Contact..."
 msgstr "Ур&еди контакт..."
 
-#: standardcontactactionmanager.cpp:83
+#: standardcontactactionmanager.cpp:90
 #, kde-format
 msgid "Copy Group"
 msgid_plural "Copy %1 Groups"
@@ -262,7 +370,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: standardcontactactionmanager.cpp:85
+#: standardcontactactionmanager.cpp:92
 #, fuzzy, kde-format
 msgid "Delete Group"
 msgid_plural "Delete %1 Groups"
@@ -270,47 +378,47 @@ msgstr[0] "Избриши преглед"
 msgstr[1] "Избриши преглед"
 msgstr[2] "Избриши преглед"
 
-#: standardcontactactionmanager.cpp:87
+#: standardcontactactionmanager.cpp:94
 #, fuzzy
 #| msgid "Edit..."
 msgid "Edit Group..."
 msgstr "Уреди..."
 
-#: standardcontactactionmanager.cpp:148
+#: standardcontactactionmanager.cpp:155
 msgid "Add Address Book"
 msgstr "Додајте адресар"
 
-#: standardcontactactionmanager.cpp:168
+#: standardcontactactionmanager.cpp:175
 #, fuzzy, kde-format
 #| msgid "Add Address Book"
 msgid "Could not add address book: %1"
 msgstr "Додајте адресар"
 
-#: standardcontactactionmanager.cpp:169
+#: standardcontactactionmanager.cpp:176
 #, fuzzy
 #| msgid "Add Address Book"
 msgid "Adding Address Book failed"
 msgstr "Додајте адресар"
 
-#: standardcontactactionmanager.cpp:189
+#: standardcontactactionmanager.cpp:196
 #, fuzzy, kde-format
 #| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
 msgid "Do you really want to delete address book '%1'?"
 msgstr "<qt>Дали навистина сакате да го отстраните адресарот <b>%1</b>?</qt>"
 
-#: standardcontactactionmanager.cpp:192
+#: standardcontactactionmanager.cpp:199
 #, fuzzy
 #| msgid "Address Book"
 msgid "Delete Address Book?"
 msgstr "Адресар"
 
-#: standardcontactactionmanager.cpp:249
+#: standardcontactactionmanager.cpp:256
 #, fuzzy
 #| msgid "&New Contact..."
 msgid "New &Contact..."
 msgstr "&Нов контакт..."
 
-#: standardcontactactionmanager.cpp:251
+#: standardcontactactionmanager.cpp:258
 #, fuzzy
 #| msgid ""
 #| "Create a new contact<p>You will be presented with a dialog where you can "
@@ -322,13 +430,13 @@ msgstr ""
 "Создава нов контакт<p>Ќе ви биде презентиран дијалог каде што можете да ги "
 "додадете сите податоци за личност, вклучително адреси и тел. броеви."
 
-#: standardcontactactionmanager.cpp:258
+#: standardcontactactionmanager.cpp:265
 #, fuzzy
 #| msgid "New..."
 msgid "New &Group..."
 msgstr "Нова..."
 
-#: standardcontactactionmanager.cpp:260
+#: standardcontactactionmanager.cpp:267
 #, fuzzy
 #| msgid ""
 #| "Edit the contact filters<p>You will be presented with a dialog, where you "
@@ -340,17 +448,47 @@ msgstr ""
 "Уредување на филтрите за контакти<p>Ќе ви биде презентиран дијалог каде што "
 "можете да додавате, отстранувате или уредувате филтри."
 
-#: standardcontactactionmanager.cpp:276
+#: standardcontactactionmanager.cpp:275
+#, fuzzy
+#| msgid ""
+#| "Edit a contact<p>You will be presented with a dialog where you can change "
+#| "all data about a person, including addresses and phone numbers."
+msgid ""
+"Edit the selected contact<p>You will be presented with a dialog where you "
+"can edit all data about a person, including addresses and phone numbers.</p>"
+msgstr ""
+"Уредување на контакт<p>Ќе ви биде презентиран дијалог каде што можете да ги "
+"измените сите податоци за личност, вклучително адреси и тел. броеви."
+
+#: standardcontactactionmanager.cpp:284
 #, fuzzy
 #| msgid "Add Address Book"
 msgid "Add &Address Book..."
 msgstr "Додајте адресар"
 
-#: standardcontactactionmanager.cpp:284
+#: standardcontactactionmanager.cpp:285
+#, fuzzy
+#| msgid ""
+#| "Store a contact in a different Addressbook<p>You will be presented with a "
+#| "dialog where you can select a new storage place for this contact."
+msgid ""
+"Add a new address book<p>You will be presented with a dialog where you can "
+"select the type of the address book that shall be added.</p>"
+msgstr ""
+"Го зачувува контактот во друг адресар<p>Ќе ви биде презентиран дијалог каде "
+"што може да изберете ново место за чување на овој контакт."
+
+#: standardcontactactionmanager.cpp:293
 #, fuzzy
 #| msgid "Address Book"
 msgid "&Delete Address Book"
 msgstr "Адресар"
+
+#: standardcontactactionmanager.cpp:294
+msgid ""
+"Delete the selected address book<p>The currently selected address book and "
+"all contained contacts and contact groups will be deleted.</p>"
+msgstr ""
 
 #: quicksearchwidget.cpp:38
 #, fuzzy
@@ -1533,6 +1671,9 @@ msgstr "Текст"
 msgid "%1 out of %2"
 msgstr "%1 на %2"
 
+#~ msgid "Print a special number of contacts."
+#~ msgstr "Печати специјален број на контакти."
+
 #~ msgid "Choose Which Contacts to Print"
 #~ msgstr "Изберете ги контактите за печатење"
 
@@ -2410,26 +2551,8 @@ msgstr "%1 на %2"
 #~ msgid "Edit"
 #~ msgstr "Ур&еди..."
 
-#, fuzzy
-#~| msgid ""
-#~| "Edit a contact<p>You will be presented with a dialog where you can "
-#~| "change all data about a person, including addresses and phone numbers."
-#~ msgid ""
-#~ "Edit a contact<p>You will be presented with a dialog where you can change "
-#~ "all data about a person, including addresses and phone numbers.</p>"
-#~ msgstr ""
-#~ "Уредување на контакт<p>Ќе ви биде презентиран дијалог каде што можете да "
-#~ "ги измените сите податоци за личност, вклучително адреси и тел. броеви."
-
 #~ msgid "&Merge Contacts"
 #~ msgstr "&Спои контакти"
-
-#~ msgid ""
-#~ "Copy the currently selected contact(s) to system clipboard in vCard "
-#~ "format."
-#~ msgstr ""
-#~ "Ги копира тековно избраните контакти на системската табла со исечоци во "
-#~ "форматот vCard."
 
 #~ msgid ""
 #~ "Cuts the currently selected contact(s) to system clipboard in vCard "
@@ -2443,25 +2566,11 @@ msgstr "%1 на %2"
 #~ "Ги вметнува претходно исечените или копираните контакти од таблата со "
 #~ "исечоци."
 
-#~ msgid "Selects all visible contacts from current view."
-#~ msgstr "Ги избира сите видливи контакти од тековниот преглед."
-
 #~ msgid "&Delete Contact"
 #~ msgstr "&Избриши контакт"
 
 #~ msgid "Delete all selected contacts."
 #~ msgstr "Ги брише сите избрани контакти."
-
-#, fuzzy
-#~| msgid ""
-#~| "Store a contact in a different Addressbook<p>You will be presented with "
-#~| "a dialog where you can select a new storage place for this contact."
-#~ msgid ""
-#~ "Store a contact in a different address book<p>You will be presented with "
-#~ "a dialog where you can select a new storage place for this contact.</p>"
-#~ msgstr ""
-#~ "Го зачувува контактот во друг адресар<p>Ќе ви биде презентиран дијалог "
-#~ "каде што може да изберете ново место за чување на овој контакт."
 
 #, fuzzy
 #~| msgid "St&ore Contact In..."
@@ -2527,9 +2636,6 @@ msgstr "%1 на %2"
 
 #~ msgid "Select Categories..."
 #~ msgstr "Избери категории..."
-
-#~ msgid "Set the categories for all selected contacts."
-#~ msgstr "Ги поставува категориите за сите избрани контакти."
 
 #~ msgid "Clear Search Bar"
 #~ msgstr "Исчисти го полето за пребарување"
@@ -3134,9 +3240,6 @@ msgstr "%1 на %2"
 #~| msgid "New Distribution List"
 #~ msgid "New Distribution List..."
 #~ msgstr "Нова листа за дистрибуција"
-
-#~ msgid "Please select type of the new address book:"
-#~ msgstr "Изберете го типот на новиот адресар:"
 
 #~ msgid "<qt>Unable to create an address book of type <b>%1</b>.</qt>"
 #~ msgstr "<qt>Не можам да создадам адресар од типот <b>%1</b>.</qt>"
