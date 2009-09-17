@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-16 07:09+0200\n"
+"POT-Creation-Date: 2009-09-17 06:25+0200\n"
 "PO-Revision-Date: 2009-06-21 09:24+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -102,7 +102,7 @@ msgstr "%1@%2 (делена работна површина)"
 msgid "Address already in use"
 msgstr "Адресата веќе се користи"
 
-#: krfbserver.cpp:299
+#: krfbserver.cpp:302
 msgid ""
 "Your X11 Server does not support the required XTest extension version 2.2. "
 "Sharing your desktop is not possible."
@@ -110,7 +110,7 @@ msgstr ""
 "Вашиот X11-сервер не ја подржува бараната екстензија XTest верзија 2.2. "
 "Делењето на вашата работна површина не е можно."
 
-#: krfbserver.cpp:300
+#: krfbserver.cpp:303
 msgid "Desktop Sharing Error"
 msgstr "Грешка на Делење на површина"
 
@@ -118,7 +118,7 @@ msgstr "Грешка на Делење на површина"
 msgid "VNC-compatible server to share KDE desktops"
 msgstr "Сервер за делење на работни површини во KDE, компатибилен со VNC "
 
-#: main.cpp:46 trayicon.cpp:77 trayicon.cpp:92
+#: main.cpp:46
 msgid "Desktop Sharing"
 msgstr "Делење на површина"
 
@@ -360,25 +360,27 @@ msgstr ""
 "Ако е вашиот компјутер заштитен со огнен ѕид, може да има\n"
 "различна адреса или да биде непристапен за други компјутери."
 
-#. i18n: file: configsecurity.ui:16
+#. i18n: file: configsecurity.ui:17
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowUninvitedConnections)
 #: rc.cpp:3
 msgid "Allow uninvited connections"
 msgstr "Дозволи непоканети поврзувања"
 
-#. i18n: file: configsecurity.ui:23
+#. i18n: file: configsecurity.ui:24
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowDesktopControl)
 #: rc.cpp:6
 msgid "Allow remote connections to control your desktop"
 msgstr "Дозволи оддалечените поврзувања да ја контролираат работната површина"
 
-#. i18n: file: configsecurity.ui:36
+#. i18n: file: configsecurity.ui:37
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_askOnConnect)
 #: rc.cpp:9
-msgid "Ask before accepting an uninvited connection"
+#, fuzzy
+#| msgid "Ask before accepting an uninvited connection"
+msgid "Ask before accepting connections"
 msgstr "Прашај пред да прифатиш непокането поврзување"
 
-#. i18n: file: configsecurity.ui:49
+#. i18n: file: configsecurity.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:12
 msgid "Uninvited connections password:"
@@ -718,21 +720,23 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "bobibobi@freemail.com.mk"
 
-#: trayicon.cpp:38 trayicon.cpp:90
+#: trayicon.cpp:39 trayicon.cpp:91
 msgid "Desktop Sharing - disconnected"
 msgstr "Делење на површина - одврзано"
 
-#: trayicon.cpp:47
+#: trayicon.cpp:48
 msgid "Enable Remote Control"
 msgstr "Овозможи далечинска контрола"
 
-#: trayicon.cpp:48
+#: trayicon.cpp:49
 msgid "Disable Remote Control"
 msgstr "Оневозможи далечинска контрола"
 
-#: trayicon.cpp:78
-msgid "The remote user has been authenticated and is now connected."
-msgstr "Оддалечениот корисник е верификуван и сега е поврзан."
+#: trayicon.cpp:79
+#, fuzzy, kde-format
+#| msgid "The remote user has closed the connection."
+msgid "The remote user %1 is now connected."
+msgstr "Оддалечениот корисник го затвори поврзувањето."
 
 #: trayicon.cpp:81
 #, kde-format
@@ -742,3 +746,6 @@ msgstr "Делење на површина - поврзан со %1"
 #: trayicon.cpp:93
 msgid "The remote user has closed the connection."
 msgstr "Оддалечениот корисник го затвори поврзувањето."
+
+#~ msgid "The remote user has been authenticated and is now connected."
+#~ msgstr "Оддалечениот корисник е верификуван и сега е поврзан."
