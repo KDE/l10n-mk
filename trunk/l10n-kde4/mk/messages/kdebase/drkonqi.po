@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: drkonqi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-24 06:15+0200\n"
+"POT-Creation-Date: 2009-09-28 06:14+0200\n"
 "PO-Revision-Date: 2009-06-30 10:05+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -640,17 +640,17 @@ msgid "Cannot open file <filename>%1</filename> for writing."
 msgstr ""
 "Не можам да ја отворам датотеката <filename>%1</filename> за запишување."
 
-#: drkonqidialog.cpp:62
+#: drkonqidialog.cpp:63
 msgctxt "@title:tab general information"
 msgid "&General"
 msgstr "&Општо"
 
-#: drkonqidialog.cpp:66
+#: drkonqidialog.cpp:67
 msgctxt "@title:tab"
 msgid "&Developer Information"
 msgstr "Инфор&мации за развивачот"
 
-#: drkonqidialog.cpp:95
+#: drkonqidialog.cpp:98
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -659,7 +659,16 @@ msgstr ""
 "<para>Се извинуваме, <application>%1</application> се затвори неочекувано.</"
 "para>"
 
-#: drkonqidialog.cpp:101
+#: drkonqidialog.cpp:104
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>The reporting assistant is disabled because the crash handler dialog "
+"was started in safe mode.<nl />You can manually report this bug to %1 "
+"(including the backtrace from the Developer Information tab)</para>"
+msgstr ""
+
+#: drkonqidialog.cpp:110
 msgctxt "@info"
 msgid ""
 "<para>You can help us improve KDE by reporting this error.<nl /><link "
@@ -672,19 +681,19 @@ msgstr ""
 "грешки.</link></para><para><note>Слободно може да го затворите дијалогов ако "
 "не сакате да известите за грешката.</note></para>"
 
-#: drkonqidialog.cpp:107
+#: drkonqidialog.cpp:117
 msgctxt "@info"
 msgid ""
 "<para>You can't report this error because the application does not provide a "
 "bug reporting address</para>"
 msgstr ""
 
-#: drkonqidialog.cpp:137
+#: drkonqidialog.cpp:127
 msgctxt "@label"
 msgid "Details:"
 msgstr "Детали:"
 
-#: drkonqidialog.cpp:139
+#: drkonqidialog.cpp:129
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -694,44 +703,44 @@ msgstr ""
 "<para>Извршна: <application>%1</application> PID: <numid>%2</numid> Сигнал: %"
 "3 (%4)</para>"
 
-#: drkonqidialog.cpp:160
+#: drkonqidialog.cpp:144
 msgctxt "@action:button"
 msgid "Report Bug"
 msgstr "Извести за грешката"
 
-#: drkonqidialog.cpp:163
+#: drkonqidialog.cpp:147
 msgctxt "@info:tooltip"
 msgid "Starts the bug report assistant."
 msgstr "Го стартува асистентот за известување грешки."
 
-#: drkonqidialog.cpp:171
+#: drkonqidialog.cpp:156
 msgctxt ""
 "@action:button this is the debug menu button label which contains the "
 "debugging applications"
 msgid "Debug"
 msgstr ""
 
-#: drkonqidialog.cpp:172
+#: drkonqidialog.cpp:157
 msgctxt "@info:tooltip"
 msgid "Starts a program to debug the crashed application."
 msgstr "Стартува програма за откривање грешки во паднатата апликација."
 
-#: drkonqidialog.cpp:191
+#: drkonqidialog.cpp:176
 msgctxt "@action:button"
 msgid "Restart Application"
 msgstr "Рестартирај апликација"
 
-#: drkonqidialog.cpp:193
+#: drkonqidialog.cpp:178
 msgctxt "@info:tooltip"
 msgid "Use this button to restart the crashed application."
 msgstr "Со ова копче се рестартира паднатата апликација."
 
-#: drkonqidialog.cpp:200
+#: drkonqidialog.cpp:185
 msgctxt "@info:tooltip"
 msgid "Close this dialog (you will lose the crash information.)"
 msgstr "Го затвора дијалогот (ќе ги загубите информациите за падот.)"
 
-#: drkonqidialog.cpp:211
+#: drkonqidialog.cpp:196
 #, kde-format
 msgctxt "@action:inmenu 1 is the debugger name"
 msgid "Debug in <application>%1</application>"
@@ -1022,6 +1031,12 @@ msgstr "Рестартирај ја апликацијата по кликање
 msgid "Restart the application when clicking the Finish button"
 msgstr "Рестартирај ја апликацијата по кликање на копчето „Заврши“"
 
+#. i18n: file: ui/maindialog.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, MainWidget)
+#: rc.cpp:75
+msgid "Form"
+msgstr ""
+
 #: reportassistantdialog.cpp:47
 msgctxt "@title:window"
 msgid "Crash Reporting Assistant"
@@ -1092,8 +1107,7 @@ msgid ""
 msgstr ""
 "Користете го ова копче за да го прикажете генерираниот извештај за овој пад."
 
-#: reportassistantpages_base.cpp:171 reportassistantpages_base.cpp:340
-#: reportassistantpages_bugzilla.cpp:547
+#: reportassistantpages_base.cpp:171
 #, kde-format
 msgctxt "@info/plain"
 msgid "Report to %1"
@@ -1256,17 +1270,25 @@ msgstr ""
 "link>. Кликнете на <interface>Заврши</interface> за да го затворите "
 "асистентот."
 
-#: reportassistantpages_base.cpp:366
+#: reportassistantpages_base.cpp:334
+#, fuzzy, kde-format
+#| msgctxt "@info/plain"
+#| msgid "Report to %1"
+msgctxt "@info/plain report to url/mail address"
+msgid "Report to %1"
+msgstr "Извештај до %1"
+
+#: reportassistantpages_base.cpp:361
 msgctxt "@title:window"
 msgid "Contents of the Report"
 msgstr "Содржина на извештајот"
 
-#: reportassistantpages_base.cpp:371
+#: reportassistantpages_base.cpp:366
 msgctxt "@action:button"
 msgid "&Save to File..."
 msgstr "&Зачувај во датотека..."
 
-#: reportassistantpages_base.cpp:373
+#: reportassistantpages_base.cpp:368
 msgctxt "@info:tooltip"
 msgid ""
 "Use this button to save the generated crash report information to a file. "
@@ -1507,6 +1529,14 @@ msgstr ""
 msgctxt "@info:status"
 msgid "Error sending the crash report:  <message>%1.</message>"
 msgstr "Грешка при испраќање извештај за пад:  <message>%1.</message>"
+
+#: reportassistantpages_bugzilla.cpp:547
+#, fuzzy, kde-format
+#| msgctxt "@info/plain"
+#| msgid "Report to %1"
+msgctxt "@info/plain report to KDE bugtracker addres"
+msgid "Report to %1"
+msgstr "Извештај до %1"
 
 #: reportassistantpages_bugzilla_duplicates.cpp:62
 msgctxt "@item:intable custom bug report number"
