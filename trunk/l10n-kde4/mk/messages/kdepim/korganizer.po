@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-29 06:12+0200\n"
+"POT-Creation-Date: 2009-10-11 06:22+0200\n"
 "PO-Revision-Date: 2007-02-28 14:24+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1807,12 +1807,16 @@ msgstr "Завршно време"
 msgid "Categories"
 msgstr "Категории"
 
-#: views/listview/kolistview.cpp:387
+#: views/listview/kolistview.cpp:387 views/monthview/monthitem.cpp:293
+#: views/agendaview/koagendaitem.cpp:83
 #, fuzzy, kde-format
 #| msgctxt "short_weekday date (e.g. Mon 13)"
 #| msgid "%1 %2"
-msgid "%1 (%2  years)"
-msgstr "%1 %2"
+msgid "%2 (1 year)"
+msgid_plural "%2 (%1 years)"
+msgstr[0] "%1 %2"
+msgstr[1] "%1 %2"
+msgstr[2] "%1 %2"
 
 #: views/monthview/monthview.cpp:66
 msgid "Go back one month"
@@ -1847,13 +1851,6 @@ msgstr "%1 %2"
 msgctxt "'Month day' for month view cells"
 msgid "%1 %2"
 msgstr "%2 %1"
-
-#: views/monthview/monthitem.cpp:293 views/agendaview/koagendaitem.cpp:83
-#, fuzzy, kde-format
-#| msgctxt "short_weekday date (e.g. Mon 13)"
-#| msgid "%1 %2"
-msgid "%1 (%2 years)"
-msgstr "%1 %2"
 
 #: views/monthview/monthitem.cpp:454 views/agendaview/koagenda.cpp:1044
 msgid ""
@@ -2324,7 +2321,7 @@ msgstr "Не испраќај"
 #| msgid ""
 #| "You have no ical file in your home directory.\n"
 #| "Import cannot proceed.\n"
-msgid "No calendars found. We can not add event."
+msgid "No calendars found, event cannot be added."
 msgstr ""
 "Немате ical-датотека во вашиот домашен именик.\n"
 "Внесувањето не може да продолжи.\n"
@@ -5142,7 +5139,7 @@ msgstr ""
 #: actionmanager.cpp:1137
 #, fuzzy, kde-format
 #| msgid "<qt>Do you really want to delete the resource <b>%1</b>?</qt>"
-msgid "Do you want to overwrite file \"%1\""
+msgid "Do you want to overwrite file \"%1\"?"
 msgstr "<qt>Дали навистина сакате да го избришете ресурсот <b>%1</b>?</qt>"
 
 #: actionmanager.cpp:1170
@@ -5903,10 +5900,11 @@ msgstr ""
 #. i18n: file: koeditoralarms_base.ui:539
 #. i18n: ectx: property (whatsThis), widget (KTextEdit, mEmailText)
 #: rc.cpp:236 rc.cpp:3287
+#, fuzzy
 msgid ""
-"Enter any text you desire for the email message that will be sent when the "
-"alarm triggers."
-msgstr ""
+"Enter the text you would like to be in the email message sent when the "
+"reminder triggers."
+msgstr "Прикажи секунди на линијата со моментално време"
 
 #. i18n: file: koeditoralarms_base.ui:546
 #. i18n: ectx: property (toolTip), widget (KPIM::AddresseeLineEdit, mEmailAddress)
@@ -5922,8 +5920,8 @@ msgstr "Притиснете го ова копче за да дефинират
 #, fuzzy
 #| msgid "Press this button to define a new filter."
 msgid ""
-"Enter a list comma-sepatered addresses where an email will be sent when the "
-"reminder triggers"
+"Enter a list of comma-separated addresses to which an email should be sent "
+"when the reminder triggers."
 msgstr "Притиснете го ова копче за да дефинирате нов филтер."
 
 #. i18n: file: koeditoralarms_base.ui:556
@@ -8509,7 +8507,7 @@ msgstr ""
 #: rc.cpp:1402 rc.cpp:1732
 msgid ""
 "Check this box if you want to include Events that occur within the date "
-"range specified.  Events that don't fall completely within the date range "
+"range specified.  Events that do not fall completely within the date range "
 "will be excluded from the search results."
 msgstr ""
 
@@ -12261,6 +12259,12 @@ msgstr ""
 #: plugins/printing/whatsnext/whatsnextprint.h:42
 msgid "Prints a list of all upcoming events and todos."
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "short_weekday date (e.g. Mon 13)"
+#~| msgid "%1 %2"
+#~ msgid "%1 (%2  years)"
+#~ msgstr "%1 %2"
 
 #~ msgid "Zoom In"
 #~ msgstr "Зголеми"
