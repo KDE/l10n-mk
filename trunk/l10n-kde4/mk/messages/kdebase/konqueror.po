@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-17 06:44+0200\n"
+"POT-Creation-Date: 2009-10-20 06:07+0200\n"
 "PO-Revision-Date: 2009-06-21 21:23+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1307,11 +1307,18 @@ msgstr ""
 msgid "Location to open"
 msgstr "Локација за отворање"
 
-#: sidebar/trees/konqsidebar_tree.cpp:138
+#: sidebar/test/modulemanagertest.cpp:87
+#: sidebar/test/modulemanagertest.cpp:114
+#, fuzzy
+#| msgid "Web SideBar Plugin"
+msgid "SideBar Test Plugin"
+msgstr "Приклучок за странична веб-лента"
+
+#: sidebar/trees/konqsidebar_tree.cpp:161
 msgid "Select Type"
 msgstr "Изберете тип"
 
-#: sidebar/trees/konqsidebar_tree.cpp:139
+#: sidebar/trees/konqsidebar_tree.cpp:162
 msgid "Select type:"
 msgstr "Изберете тип:"
 
@@ -1358,7 +1365,7 @@ msgid "&Create New Folder"
 msgstr "&Создај нова папка"
 
 #: sidebar/trees/bookmark_module/bookmark_module.cpp:77
-#: sidebar/trees/konq_sidebartree.cpp:932
+#: sidebar/trees/konq_sidebartree.cpp:905
 msgid "Delete Folder"
 msgstr "Бришење папка"
 
@@ -1367,17 +1374,17 @@ msgid "Delete Bookmark"
 msgstr "Бришење обележувач"
 
 #: sidebar/trees/bookmark_module/bookmark_module.cpp:85
-#: sidebar/trees/konq_sidebartree.cpp:941
+#: sidebar/trees/konq_sidebartree.cpp:914
 msgid "Properties"
 msgstr "Својства"
 
 #: sidebar/trees/bookmark_module/bookmark_module.cpp:89
-#: sidebar/trees/konq_sidebartree.cpp:944
+#: sidebar/trees/konq_sidebartree.cpp:917
 msgid "Open in New Window"
 msgstr "Отвори во нов прозорец"
 
 #: sidebar/trees/bookmark_module/bookmark_module.cpp:93
-#: sidebar/trees/konq_sidebartree.cpp:947
+#: sidebar/trees/konq_sidebartree.cpp:920
 msgid "Open in New Tab"
 msgstr "Отвори во ново ливче"
 
@@ -1386,7 +1393,7 @@ msgid "Open Folder in Tabs"
 msgstr "Отвори папка во ливчиња"
 
 #: sidebar/trees/bookmark_module/bookmark_module.cpp:101
-#: sidebar/trees/konq_sidebartree.cpp:950
+#: sidebar/trees/konq_sidebartree.cpp:923
 msgid "Copy Link Address"
 msgstr "Копирај адреса на врска"
 
@@ -1436,27 +1443,27 @@ msgstr "Локација:"
 msgid "Add Bookmark"
 msgstr "Додај обележувач"
 
-#: sidebar/trees/konq_sidebartree.cpp:929
+#: sidebar/trees/konq_sidebartree.cpp:902
 msgid "&Create New Folder..."
 msgstr "&Создај нова папка..."
 
-#: sidebar/trees/konq_sidebartree.cpp:935
+#: sidebar/trees/konq_sidebartree.cpp:908
 msgid "Rename"
 msgstr "Преименувај"
 
-#: sidebar/trees/konq_sidebartree.cpp:938
+#: sidebar/trees/konq_sidebartree.cpp:911
 msgid "Delete Link"
 msgstr "Бришење врска"
 
-#: sidebar/trees/konq_sidebartree.cpp:989
+#: sidebar/trees/konq_sidebartree.cpp:962
 msgid "New Folder"
 msgstr "Нова папка"
 
-#: sidebar/trees/konq_sidebartree.cpp:993
+#: sidebar/trees/konq_sidebartree.cpp:966
 msgid "Create New Folder"
 msgstr "Создај нова папка"
 
-#: sidebar/trees/konq_sidebartree.cpp:994
+#: sidebar/trees/konq_sidebartree.cpp:967
 msgid "Enter folder name:"
 msgstr "Внесете име на папка:"
 
@@ -1464,11 +1471,39 @@ msgstr "Внесете име на папка:"
 msgid "Extended Sidebar"
 msgstr "Проширена странична лента"
 
-#: sidebar/sidebar_widget.cpp:99
+#: sidebar/sidebar_widget.cpp:84
 msgid "Rollback to System Default"
 msgstr "Врати на системските стд. вредности"
 
-#: sidebar/sidebar_widget.cpp:105
+#: sidebar/sidebar_widget.cpp:171
+msgid "Configure Navigation Panel"
+msgstr "Конфигурирај го панелот за навигација"
+
+#: sidebar/sidebar_widget.cpp:173
+msgid "Add New"
+msgstr "Додај нов"
+
+#: sidebar/sidebar_widget.cpp:177
+msgid "Multiple Views"
+msgstr "Многукратни погледи"
+
+#: sidebar/sidebar_widget.cpp:179 sidebar/sidebar_widget.cpp:276
+msgid "Show Tabs Left"
+msgstr "Прикажи ги ливчињата лево"
+
+#: sidebar/sidebar_widget.cpp:180
+msgid "Show Configuration Button"
+msgstr "Прикажи го копчето за конфигурација"
+
+#: sidebar/sidebar_widget.cpp:183
+msgid "Close Navigation Panel"
+msgstr "Затвори го панелот за навигација"
+
+#: sidebar/sidebar_widget.cpp:211
+msgid "This entry already exists."
+msgstr "Оваа ставка веќе постои."
+
+#: sidebar/sidebar_widget.cpp:234
 msgid ""
 "<qt>This removes all your entries from the sidebar and adds the system "
 "default ones.<br /><b>This procedure is irreversible</b><br />Do you want to "
@@ -1478,65 +1513,28 @@ msgstr ""
 "системските стандардни.<br /><b>Оваа процедура е неповратна</b><br />Дали "
 "сакате да продолжите?</qt>"
 
-#: sidebar/sidebar_widget.cpp:234
-msgid "Configure Navigation Panel"
-msgstr "Конфигурирај го панелот за навигација"
-
-#: sidebar/sidebar_widget.cpp:236
-msgid "Add New"
-msgstr "Додај нов"
-
-#: sidebar/sidebar_widget.cpp:238
-msgid "Multiple Views"
-msgstr "Многукратни погледи"
-
-#: sidebar/sidebar_widget.cpp:240 sidebar/sidebar_widget.cpp:353
-msgid "Show Tabs Left"
-msgstr "Прикажи ги ливчињата лево"
-
-#: sidebar/sidebar_widget.cpp:241
-msgid "Show Configuration Button"
-msgstr "Прикажи го копчето за конфигурација"
-
-#: sidebar/sidebar_widget.cpp:244
-msgid "Close Navigation Panel"
-msgstr "Затвори го панелот за навигација"
-
-#: sidebar/sidebar_widget.cpp:287
-msgid "This entry already exists."
-msgstr "Оваа ставка веќе постои."
-
-#: sidebar/sidebar_widget.cpp:301 sidebar/web_module/web_module.cpp:217
-msgid "Web SideBar Plugin"
-msgstr "Приклучок за странична веб-лента"
-
-#: sidebar/sidebar_widget.cpp:353
+#: sidebar/sidebar_widget.cpp:276
 msgid "Show Tabs Right"
 msgstr "Прикажи ги ливчињата оддесно"
 
-#: sidebar/sidebar_widget.cpp:424
+#: sidebar/sidebar_widget.cpp:286
 msgid "Set Name"
 msgstr "Постави име"
 
-#: sidebar/sidebar_widget.cpp:424
+#: sidebar/sidebar_widget.cpp:286
 msgid "Enter the name:"
 msgstr "Внесете го името:"
 
-#: sidebar/sidebar_widget.cpp:442
+#: sidebar/sidebar_widget.cpp:301
 msgid "Enter a URL:"
 msgstr "Внесете URL:"
 
-#: sidebar/sidebar_widget.cpp:450
-#, kde-format
-msgid "<qt><b>%1</b> does not exist</qt>"
-msgstr "<qt><b>%1</b> не постои</qt>"
-
-#: sidebar/sidebar_widget.cpp:481
+#: sidebar/sidebar_widget.cpp:324
 #, kde-format
 msgid "<qt>Do you really want to remove the <b>%1</b> tab?</qt>"
 msgstr "<qt>Дали навистина сакате да го отстраните ливчето <b>„%1“</b>?</qt>"
 
-#: sidebar/sidebar_widget.cpp:529
+#: sidebar/sidebar_widget.cpp:370
 msgid ""
 "You have hidden the navigation panel configuration button. To make it "
 "visible again, click the right mouse button on any of the navigation panel "
@@ -1547,37 +1545,41 @@ msgstr ""
 "било копче од панелот за навигација и изберете „Прикажи копче за "
 "конфигурација“."
 
-#: sidebar/sidebar_widget.cpp:598
+#: sidebar/sidebar_widget.cpp:438
 msgid "Configure Sidebar"
 msgstr "Конфигурирај странична лента"
 
-#: sidebar/sidebar_widget.cpp:715
+#: sidebar/sidebar_widget.cpp:551
 msgid "Set Name..."
 msgstr "Постави име..."
 
-#: sidebar/sidebar_widget.cpp:716
+#: sidebar/sidebar_widget.cpp:552
 msgid "Set URL..."
 msgstr "Постави URL..."
 
-#: sidebar/sidebar_widget.cpp:717
+#: sidebar/sidebar_widget.cpp:553
 msgid "Set Icon..."
 msgstr "Постави икона..."
 
-#: sidebar/sidebar_widget.cpp:719
+#: sidebar/sidebar_widget.cpp:555
 msgid "Remove"
 msgstr "Отстрани"
 
-#: sidebar/web_module/web_module.cpp:90
+#: sidebar/web_module/web_module.cpp:86
 msgid "Set Refresh Timeout (0 disables)"
 msgstr "Постави истекување на времето на освежување (0 оневозможува)"
 
-#: sidebar/web_module/web_module.cpp:98
+#: sidebar/web_module/web_module.cpp:94
 msgid " min"
 msgstr " мин"
 
-#: sidebar/web_module/web_module.cpp:100
+#: sidebar/web_module/web_module.cpp:96
 msgid " sec"
 msgstr " сек"
+
+#: sidebar/web_module/web_module.cpp:210
+msgid "Web SideBar Plugin"
+msgstr "Приклучок за странична веб-лента"
 
 #: sidebar/web_module/web_module.h:52
 msgid "&Open Link"
@@ -2477,6 +2479,9 @@ msgid ""
 msgstr ""
 "Ако е активирано, при отворање сесија од дијалогот за сесии, ливчињата ќе "
 "бидат отворени во тековниот прозорец."
+
+#~ msgid "<qt><b>%1</b> does not exist</qt>"
+#~ msgstr "<qt><b>%1</b> не постои</qt>"
 
 #~ msgid "Minutes"
 #~ msgstr "Минути"
