@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-11 06:17+0200\n"
+"POT-Creation-Date: 2009-12-20 06:12+0100\n"
 "PO-Revision-Date: 2009-06-22 12:14+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -223,10 +223,238 @@ msgstr "Пронајди ги сите датотеки создадени ил�
 msgid "&between"
 msgstr "&меѓу"
 
-#: kftabdlg.cpp:175 kftabdlg.cpp:868
+#: kftabdlg.cpp:176
+msgid "and"
+msgstr "и"
+
+#: kftabdlg.cpp:197
+msgid "File &size is:"
+msgstr "&Големината е:"
+
+#: kftabdlg.cpp:210
+msgid "Files owned by &user:"
+msgstr ""
+"Во сопс&твеност\n"
+"на корисникот:"
+
+#: kftabdlg.cpp:215
+msgid "Owned by &group:"
+msgstr ""
+"во сопственост\n"
+"на &групата:"
+
+#: kftabdlg.cpp:218
+msgctxt "file size isn't considered in the search"
+msgid "(none)"
+msgstr "(нема)"
+
+#: kftabdlg.cpp:219
+msgid "At Least"
+msgstr "најмалку"
+
+#: kftabdlg.cpp:220
+msgid "At Most"
+msgstr "најмогу"
+
+#: kftabdlg.cpp:221
+msgid "Equal To"
+msgstr "еднаква на"
+
+#: kftabdlg.cpp:223 kftabdlg.cpp:889
+#, fuzzy
+#| msgid "Bytes"
+msgid "Byte"
+msgid_plural "Bytes"
+msgstr[0] "бајти"
+msgstr[1] "бајти"
+msgstr[2] "бајти"
+
+#: kftabdlg.cpp:224
+msgid "KiB"
+msgstr "KiB"
+
+#: kftabdlg.cpp:225
+msgid "MiB"
+msgstr "MiB"
+
+#: kftabdlg.cpp:226
+msgid "GiB"
+msgstr "GiB"
+
+#: kftabdlg.cpp:293
+msgctxt "label for the file type combobox"
+msgid "File &type:"
+msgstr "&Тип на датотека:"
+
+#: kftabdlg.cpp:298
+msgid "C&ontaining text:"
+msgstr "Го с&одржи текстот:"
+
+#: kftabdlg.cpp:304
+msgid ""
+"<qt>If specified, only files that contain this text are found. Note that not "
+"all file types from the list above are supported. Please refer to the "
+"documentation for a list of supported file types.</qt>"
+msgstr ""
+"<qt>Ако е зададено, ќе бидат пронајдени само датотеките што го содржат овој "
+"текст. Забележете дека не се поддржани сите типови датотеки од горната "
+"листа. Погледнете ја документацијата за листата на поддржани типови датотеки."
+"</qt>"
+
+#: kftabdlg.cpp:312
+msgid "Case s&ensitive"
+msgstr ""
+"Разликување гол&емина\n"
+"на букви"
+
+#: kftabdlg.cpp:313
+msgid "Include &binary files"
+msgstr ""
+"В&клучи бинарни\n"
+"датотеки"
+
+#: kftabdlg.cpp:314
+msgid "Regular e&xpression"
+msgstr "Регу&ларен израз"
+
+#: kftabdlg.cpp:317
+msgid ""
+"<qt>This lets you search in any type of file, even those that usually do not "
+"contain text (for example program files and images).</qt>"
+msgstr ""
+"<qt>Ова ви овозможува да пребарувате во било кој тип датотека, дури и оние "
+"што обично не содржат текст (на пример програмски датотеки и слики).</qt>"
+
+#: kftabdlg.cpp:325
+msgid "&Edit..."
+msgstr "&Уреди..."
+
+#: kftabdlg.cpp:331
+msgid "fo&r:"
+msgstr "&за:"
+
+#: kftabdlg.cpp:333
+msgid "Search &metainfo sections:"
+msgstr ""
+"Пребарај ги деловите\n"
+"со &метаинформации:"
+
+#: kftabdlg.cpp:337
+msgid "All Files & Folders"
+msgstr "Сите датотеки и папки"
+
+#: kftabdlg.cpp:338
+msgid "Files"
+msgstr "Датотеки"
+
+#: kftabdlg.cpp:339
+msgid "Folders"
+msgstr "Папки"
+
+#: kftabdlg.cpp:340
+msgid "Symbolic Links"
+msgstr "Симболички врски"
+
+#: kftabdlg.cpp:341
+msgid "Special Files (Sockets, Device Files, ...)"
+msgstr "Специјални датотеки (Sockets, уреди, ...)"
+
+#: kftabdlg.cpp:342
+msgid "Executable Files"
+msgstr "Извршни датотеки"
+
+#: kftabdlg.cpp:343
+msgid "SUID Executable Files"
+msgstr "Извршни датотеки со SUID"
+
+#: kftabdlg.cpp:344
+msgid "All Images"
+msgstr "Сите слики"
+
+#: kftabdlg.cpp:345
+msgid "All Video"
+msgstr "Сите видеодатотеки"
+
+#: kftabdlg.cpp:346
+msgid "All Sounds"
+msgstr "Сите звучни датотеки"
+
+#: kftabdlg.cpp:397
+msgid "Name/&Location"
+msgstr "Име и &локација"
+
+#: kftabdlg.cpp:398
+msgctxt "tab name: search by contents"
+msgid "C&ontents"
+msgstr "С&одржина"
+
+#: kftabdlg.cpp:399
+msgid "&Properties"
+msgstr "&Својства"
+
+#: kftabdlg.cpp:404
+msgid ""
+"<qt>Search within files' specific comments/metainfo<br />These are some "
+"examples:<br /><ul><li><b>Audio files (mp3...)</b> Search in id3 tag for a "
+"title, an album</li><li><b>Images (png...)</b> Search images with a special "
+"resolution, comment...</li></ul></qt>"
+msgstr ""
+"<qt>Пребарува низ специфичните коментари или метаинформации од "
+"датотеките<br />Еве неколку примери:<br /><ul><li><b>Аудиодатотеки (mp3...)</"
+"b> Бара во id3-ознаки за наслов, албум</li><li><b>Слики (png...)</b> Бара "
+"слики со специјална резолуција, коментар...</li></ul></qt>"
+
+#: kftabdlg.cpp:412
+msgid ""
+"<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
+"(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
+"Search only in Resolution, Bitdepth...</li></ul></qt>"
+msgstr ""
+"<qt>Ако е наведено, пребарува само во ова поле:<br /"
+"><ul><li><b>Аудиодатотеки (mp3...)</b> Ова може да биде наслов, албум...</"
+"li><li><b>Слики (png...)</b> Пребарува само во резолуција, длабочина на "
+"бои...</li></ul></qt>"
+
+#: kftabdlg.cpp:605
+msgid "Unable to search within a period which is less than a minute."
+msgstr "Не можам да пребарувам во период кој е помал од една минута."
+
+#: kftabdlg.cpp:616
+msgid "The date is not valid."
+msgstr "Датумот не е валиден."
+
+#: kftabdlg.cpp:618
+msgid "Invalid date range."
+msgstr "Невалиден опсег на датуми."
+
+#: kftabdlg.cpp:620
+msgid "Unable to search dates in the future."
+msgstr "Не можам да пребарувам датуми од иднината."
+
+#: kftabdlg.cpp:682
+msgid "Size is too big. Set maximum size value?"
+msgstr ""
+"Вредноста за големина е преголема. Да поставам максимална вредност за "
+"големината?"
+
+#: kftabdlg.cpp:682
+msgid "Error"
+msgstr "Грешка"
+
+#: kftabdlg.cpp:682
+msgid "Set"
+msgstr "Постави"
+
+#: kftabdlg.cpp:682
+msgid "Do Not Set"
+msgstr "Не поставувај"
+
+#: kftabdlg.cpp:879
 #, fuzzy
 #| msgid "&during the previous"
-msgctxt "&during the previous day(s)"
+msgctxt ""
+"during the previous minute(s)/hour(s)/...; dynamic context 'type': 'i' "
+"minutes, 'h' hours, 'd' days, 'm' months, 'y' years"
 msgid "&during the previous"
 msgid_plural "&during the previous"
 msgstr[0] ""
@@ -239,11 +467,7 @@ msgstr[2] ""
 "за време на\n"
 "претхо&дните"
 
-#: kftabdlg.cpp:176
-msgid "and"
-msgstr "и"
-
-#: kftabdlg.cpp:180 kftabdlg.cpp:869
+#: kftabdlg.cpp:880
 #, fuzzy
 #| msgid "minute(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -253,7 +477,7 @@ msgstr[0] "минути"
 msgstr[1] "минути"
 msgstr[2] "минути"
 
-#: kftabdlg.cpp:181 kftabdlg.cpp:870
+#: kftabdlg.cpp:881
 #, fuzzy
 #| msgid "hour(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -263,7 +487,7 @@ msgstr[0] "часови"
 msgstr[1] "часови"
 msgstr[2] "часови"
 
-#: kftabdlg.cpp:182 kftabdlg.cpp:871
+#: kftabdlg.cpp:882
 #, fuzzy
 #| msgctxt "use date ranges to search files by modified time"
 #| msgid "day(s)"
@@ -274,7 +498,7 @@ msgstr[0] "дена"
 msgstr[1] "дена"
 msgstr[2] "дена"
 
-#: kftabdlg.cpp:183 kftabdlg.cpp:872
+#: kftabdlg.cpp:883
 #, fuzzy
 #| msgid "month(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -284,7 +508,7 @@ msgstr[0] "месеци"
 msgstr[1] "месеци"
 msgstr[2] "месеци"
 
-#: kftabdlg.cpp:184 kftabdlg.cpp:873
+#: kftabdlg.cpp:884
 #, fuzzy
 #| msgid "year(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -293,228 +517,6 @@ msgid_plural "years"
 msgstr[0] "години"
 msgstr[1] "години"
 msgstr[2] "години"
-
-#: kftabdlg.cpp:200
-msgid "File &size is:"
-msgstr "&Големината е:"
-
-#: kftabdlg.cpp:213
-msgid "Files owned by &user:"
-msgstr ""
-"Во сопс&твеност\n"
-"на корисникот:"
-
-#: kftabdlg.cpp:218
-msgid "Owned by &group:"
-msgstr ""
-"во сопственост\n"
-"на &групата:"
-
-#: kftabdlg.cpp:221
-msgctxt "file size isn't considered in the search"
-msgid "(none)"
-msgstr "(нема)"
-
-#: kftabdlg.cpp:222
-msgid "At Least"
-msgstr "најмалку"
-
-#: kftabdlg.cpp:223
-msgid "At Most"
-msgstr "најмогу"
-
-#: kftabdlg.cpp:224
-msgid "Equal To"
-msgstr "еднаква на"
-
-#: kftabdlg.cpp:226 kftabdlg.cpp:878
-#, fuzzy
-#| msgid "Bytes"
-msgid "Byte"
-msgid_plural "Bytes"
-msgstr[0] "бајти"
-msgstr[1] "бајти"
-msgstr[2] "бајти"
-
-#: kftabdlg.cpp:227
-msgid "KiB"
-msgstr "KiB"
-
-#: kftabdlg.cpp:228
-msgid "MiB"
-msgstr "MiB"
-
-#: kftabdlg.cpp:229
-msgid "GiB"
-msgstr "GiB"
-
-#: kftabdlg.cpp:295
-msgctxt "label for the file type combobox"
-msgid "File &type:"
-msgstr "&Тип на датотека:"
-
-#: kftabdlg.cpp:300
-msgid "C&ontaining text:"
-msgstr "Го с&одржи текстот:"
-
-#: kftabdlg.cpp:306
-msgid ""
-"<qt>If specified, only files that contain this text are found. Note that not "
-"all file types from the list above are supported. Please refer to the "
-"documentation for a list of supported file types.</qt>"
-msgstr ""
-"<qt>Ако е зададено, ќе бидат пронајдени само датотеките што го содржат овој "
-"текст. Забележете дека не се поддржани сите типови датотеки од горната "
-"листа. Погледнете ја документацијата за листата на поддржани типови датотеки."
-"</qt>"
-
-#: kftabdlg.cpp:314
-msgid "Case s&ensitive"
-msgstr ""
-"Разликување гол&емина\n"
-"на букви"
-
-#: kftabdlg.cpp:315
-msgid "Include &binary files"
-msgstr ""
-"В&клучи бинарни\n"
-"датотеки"
-
-#: kftabdlg.cpp:316
-msgid "Regular e&xpression"
-msgstr "Регу&ларен израз"
-
-#: kftabdlg.cpp:319
-msgid ""
-"<qt>This lets you search in any type of file, even those that usually do not "
-"contain text (for example program files and images).</qt>"
-msgstr ""
-"<qt>Ова ви овозможува да пребарувате во било кој тип датотека, дури и оние "
-"што обично не содржат текст (на пример програмски датотеки и слики).</qt>"
-
-#: kftabdlg.cpp:327
-msgid "&Edit..."
-msgstr "&Уреди..."
-
-#: kftabdlg.cpp:333
-msgid "fo&r:"
-msgstr "&за:"
-
-#: kftabdlg.cpp:335
-msgid "Search &metainfo sections:"
-msgstr ""
-"Пребарај ги деловите\n"
-"со &метаинформации:"
-
-#: kftabdlg.cpp:339
-msgid "All Files & Folders"
-msgstr "Сите датотеки и папки"
-
-#: kftabdlg.cpp:340
-msgid "Files"
-msgstr "Датотеки"
-
-#: kftabdlg.cpp:341
-msgid "Folders"
-msgstr "Папки"
-
-#: kftabdlg.cpp:342
-msgid "Symbolic Links"
-msgstr "Симболички врски"
-
-#: kftabdlg.cpp:343
-msgid "Special Files (Sockets, Device Files, ...)"
-msgstr "Специјални датотеки (Sockets, уреди, ...)"
-
-#: kftabdlg.cpp:344
-msgid "Executable Files"
-msgstr "Извршни датотеки"
-
-#: kftabdlg.cpp:345
-msgid "SUID Executable Files"
-msgstr "Извршни датотеки со SUID"
-
-#: kftabdlg.cpp:346
-msgid "All Images"
-msgstr "Сите слики"
-
-#: kftabdlg.cpp:347
-msgid "All Video"
-msgstr "Сите видеодатотеки"
-
-#: kftabdlg.cpp:348
-msgid "All Sounds"
-msgstr "Сите звучни датотеки"
-
-#: kftabdlg.cpp:399
-msgid "Name/&Location"
-msgstr "Име и &локација"
-
-#: kftabdlg.cpp:400
-msgctxt "tab name: search by contents"
-msgid "C&ontents"
-msgstr "С&одржина"
-
-#: kftabdlg.cpp:401
-msgid "&Properties"
-msgstr "&Својства"
-
-#: kftabdlg.cpp:406
-msgid ""
-"<qt>Search within files' specific comments/metainfo<br />These are some "
-"examples:<br /><ul><li><b>Audio files (mp3...)</b> Search in id3 tag for a "
-"title, an album</li><li><b>Images (png...)</b> Search images with a special "
-"resolution, comment...</li></ul></qt>"
-msgstr ""
-"<qt>Пребарува низ специфичните коментари или метаинформации од "
-"датотеките<br />Еве неколку примери:<br /><ul><li><b>Аудиодатотеки (mp3...)</"
-"b> Бара во id3-ознаки за наслов, албум</li><li><b>Слики (png...)</b> Бара "
-"слики со специјална резолуција, коментар...</li></ul></qt>"
-
-#: kftabdlg.cpp:414
-msgid ""
-"<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
-"(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
-"Search only in Resolution, Bitdepth...</li></ul></qt>"
-msgstr ""
-"<qt>Ако е наведено, пребарува само во ова поле:<br /"
-"><ul><li><b>Аудиодатотеки (mp3...)</b> Ова може да биде наслов, албум...</"
-"li><li><b>Слики (png...)</b> Пребарува само во резолуција, длабочина на "
-"бои...</li></ul></qt>"
-
-#: kftabdlg.cpp:607
-msgid "Unable to search within a period which is less than a minute."
-msgstr "Не можам да пребарувам во период кој е помал од една минута."
-
-#: kftabdlg.cpp:618
-msgid "The date is not valid."
-msgstr "Датумот не е валиден."
-
-#: kftabdlg.cpp:620
-msgid "Invalid date range."
-msgstr "Невалиден опсег на датуми."
-
-#: kftabdlg.cpp:622
-msgid "Unable to search dates in the future."
-msgstr "Не можам да пребарувам датуми од иднината."
-
-#: kftabdlg.cpp:684
-msgid "Size is too big. Set maximum size value?"
-msgstr ""
-"Вредноста за големина е преголема. Да поставам максимална вредност за "
-"големината?"
-
-#: kftabdlg.cpp:684
-msgid "Error"
-msgstr "Грешка"
-
-#: kftabdlg.cpp:684
-msgid "Set"
-msgstr "Постави"
-
-#: kftabdlg.cpp:684
-msgid "Do Not Set"
-msgstr "Не поставувај"
 
 #: kquery.cpp:552
 msgid "Error while using locate"
