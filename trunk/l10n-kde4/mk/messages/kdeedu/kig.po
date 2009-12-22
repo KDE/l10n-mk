@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kig\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-17 06:10+0100\n"
+"POT-Creation-Date: 2009-12-22 06:11+0100\n"
 "PO-Revision-Date: 2007-02-26 21:38+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1615,12 +1615,14 @@ msgid "A polygon that corresponds to the convex hull of another polygon"
 msgstr "Полигон кој одговара со конвексниот врв на друг"
 
 #: misc/builtin_stuff.cc:536
-msgid "Bézier Quadric by its Control Points"
-msgstr ""
+#, fuzzy
+#| msgid "Cubic Curve by Nine Points"
+msgid "Bézier Quadratic by its Control Points"
+msgstr "Парабола низ девет точки"
 
 #: misc/builtin_stuff.cc:537
 #, fuzzy
-msgid "Construct a Bézier quadric given its three control points."
+msgid "Construct a Bézier quadratic given its three control points."
 msgstr "Конструирај лак низ три точки."
 
 #: misc/builtin_stuff.cc:544
@@ -1634,13 +1636,15 @@ msgid "Construct a Bézier cubic given its four control points."
 msgstr "Конструирај асимптота низ оваа точка"
 
 #: misc/builtin_stuff.cc:556
-msgid "Rational Bézier Quadric by its Control Points"
-msgstr ""
+#, fuzzy
+#| msgid "Cubic Curve by Nine Points"
+msgid "Rational Bézier Quadratic by its Control Points"
+msgstr "Парабола низ девет точки"
 
 #: misc/builtin_stuff.cc:557
 #, fuzzy
 #| msgid "Construct a triangle given its three vertices."
-msgid "Construct a Rational Bézier quadric given its three control points."
+msgid "Construct a Rational Bézier quadratic given its three control points."
 msgstr "Конструирај тријаголник зададен од неговите три темиња."
 
 #: misc/builtin_stuff.cc:564
@@ -2064,13 +2068,13 @@ msgid ""
 msgstr ""
 "...со ова теме (кликнете на првото теме за да се заврши конструкцијата)"
 
-#: misc/special_constructors.cc:1227
+#: misc/special_constructors.cc:1227 objects/bezier_type.cc:40
 #, fuzzy
 #| msgid "Construct a circle with this center"
 msgid "Construct a Bézier curve with this control point"
 msgstr "Конструирај круг со овој центар"
 
-#: misc/special_constructors.cc:1234
+#: misc/special_constructors.cc:1234 objects/bezier_type.cc:41
 #, fuzzy
 #| msgid "Select a point to be a vertex of the new triangle..."
 msgid "Select a point to be a control point of the new Bézier curve..."
@@ -2103,7 +2107,7 @@ msgid ""
 msgstr ""
 "...со ова теме (кликнете на првото теме за да се заврши конструкцијата)"
 
-#: misc/special_constructors.cc:1345
+#: misc/special_constructors.cc:1345 objects/bezier_type.cc:358
 #, fuzzy
 #| msgid "Construct a circle with this center"
 msgid "Construct a rational Bézier curve with this control point"
@@ -2942,55 +2946,57 @@ msgid "Hide a Bézier Curve"
 msgstr "Скриј крива"
 
 #: objects/bezier_imp.cc:240
-msgid "Bézier Quadric"
-msgstr ""
+#, fuzzy
+#| msgid "Add a Quadrilateral"
+msgid "Bézier Quadratic"
+msgstr "Додај четиристран"
 
 #: objects/bezier_imp.cc:241
 #, fuzzy
 #| msgid "Select this arc"
-msgid "Select this Bézier Quadric"
+msgid "Select this Bézier Quadratic"
 msgstr "Одбери го овој лак"
 
 #: objects/bezier_imp.cc:242
 #, fuzzy, kde-format
 #| msgid "Select arc %1"
-msgid "Select Bézier Quadric %1"
+msgid "Select Bézier Quadratic %1"
 msgstr "Одбери лак %1"
 
 #: objects/bezier_imp.cc:243
 #, fuzzy
 #| msgid "Remove a Quadrilateral"
-msgid "Remove a Bézier Quadric"
+msgid "Remove a Bézier Quadratic"
 msgstr "Отстрани четиристран"
 
 #: objects/bezier_imp.cc:244
 #, fuzzy
 #| msgid "Add a Quadrilateral"
-msgid "Add a Bézier Quadric"
+msgid "Add a Bézier Quadratic"
 msgstr "Додај четиристран"
 
 #: objects/bezier_imp.cc:245
 #, fuzzy
 #| msgid "Move a Quadrilateral"
-msgid "Move a Bézier Quadric"
+msgid "Move a Bézier Quadratic"
 msgstr "Помести четиристран"
 
 #: objects/bezier_imp.cc:246
 #, fuzzy
 #| msgid "Attach to this arc"
-msgid "Attach to this Bézier Quadric"
+msgid "Attach to this Bézier Quadratic"
 msgstr "Прикачи на овој лак"
 
 #: objects/bezier_imp.cc:247
 #, fuzzy
 #| msgid "Show a Quadrilateral"
-msgid "Show a Bézier Quadric"
+msgid "Show a Bézier Quadratic"
 msgstr "Прикажи четиристран"
 
 #: objects/bezier_imp.cc:248
 #, fuzzy
 #| msgid "Hide a Quadrilateral"
-msgid "Hide a Bézier Quadric"
+msgid "Hide a Bézier Quadratic"
 msgstr "Скриј го четиристраниот"
 
 #: objects/bezier_imp.cc:258
@@ -3098,43 +3104,54 @@ msgid "Hide a Rational Bézier Curve"
 msgstr "Скриј полигон"
 
 #: objects/bezier_imp.cc:538
-msgid "Rational Bézier Quadric"
-msgstr ""
+#, fuzzy
+msgid "Rational Bézier Quadratic"
+msgstr "Избери конус %1"
 
 #: objects/bezier_imp.cc:539
 #, fuzzy
-msgid "Select this Rational Bézier Quadric"
+msgid "Select this Rational Bézier Quadratic"
 msgstr "Одбери го овој конус"
 
 #: objects/bezier_imp.cc:540
 #, fuzzy, kde-format
-msgid "Select Rational Bézier Quadric %1"
+msgid "Select Rational Bézier Quadratic %1"
 msgstr "Избери конус %1"
 
 #: objects/bezier_imp.cc:541
-msgid "Remove a Rational Bézier Quadric"
-msgstr ""
+#, fuzzy
+#| msgid "Remove a Polygon"
+msgid "Remove a Rational Bézier Quadratic"
+msgstr "Отстрани полигон"
 
 #: objects/bezier_imp.cc:542
-msgid "Add a Rational Bézier Quadric"
-msgstr ""
+#, fuzzy
+#| msgid "Add a Polygon"
+msgid "Add a Rational Bézier Quadratic"
+msgstr "Додај полигон"
 
 #: objects/bezier_imp.cc:543
-msgid "Move a Rational Bézier Quadric"
-msgstr ""
+#, fuzzy
+#| msgid "Move a Polygon"
+msgid "Move a Rational Bézier Quadratic"
+msgstr "Помести полигон"
 
 #: objects/bezier_imp.cc:544
 #, fuzzy
-msgid "Attach to this Rational Bézier Quadric"
+msgid "Attach to this Rational Bézier Quadratic"
 msgstr "Прикачи на овој конус"
 
 #: objects/bezier_imp.cc:545
-msgid "Show a Rational Bézier Quadric"
-msgstr ""
+#, fuzzy
+#| msgid "Show a Polygon"
+msgid "Show a Rational Bézier Quadratic"
+msgstr "Прикажи полигон"
 
 #: objects/bezier_imp.cc:546
-msgid "Hide a Rational Bézier Quadric"
-msgstr ""
+#, fuzzy
+#| msgid "Hide a Polygon"
+msgid "Hide a Rational Bézier Quadratic"
+msgstr "Скриј полигон"
 
 #: objects/bezier_imp.cc:556
 msgid "Rational Bézier Cubic"
@@ -3178,18 +3195,6 @@ msgstr ""
 msgid "Hide a Rational Bézier Cubic"
 msgstr ""
 
-#: objects/bezier_type.cc:40
-#, fuzzy
-#| msgid "Construct an arc with this center"
-msgid "Construct a quadric with this control point"
-msgstr "Конструирај лак со овој центар"
-
-#: objects/bezier_type.cc:41
-#, fuzzy
-#| msgid "Select a point to be a vertex of the new triangle..."
-msgid "Select a point to be a control point of the new quadric..."
-msgstr "Изберете точка која што ќе биде теме на триаголникот"
-
 #: objects/bezier_type.cc:140
 #, fuzzy
 #| msgid "Construct a circle with this center"
@@ -3202,12 +3207,6 @@ msgstr "Конструирај круг со овој центар"
 msgid "Select a point to be a control point of the new cubic..."
 msgstr "Изберете точка која што ќе биде теме на триаголникот"
 
-#: objects/bezier_type.cc:358
-#, fuzzy
-#| msgid "Construct an arc with this center"
-msgid "Construct a rational quadric with this control point"
-msgstr "Конструирај лак со овој центар"
-
 #: objects/bezier_type.cc:359
 #, fuzzy
 #| msgid ""
@@ -3215,7 +3214,7 @@ msgstr "Конструирај лак со овој центар"
 #| "radical line..."
 msgid ""
 "Select three points and three numeric values as weights to construct "
-"rational quadric..."
+"rational Bézier curve..."
 msgstr ""
 "Изберете го првиот од двата конуси од кои што сакате да ја конструирате "
 "радијалната права..."
@@ -6166,6 +6165,32 @@ msgstr ""
 #: modes/typesdialog.cpp:496
 msgid "More Than One Type Selected"
 msgstr "Повеќе од еден тип е одберен"
+
+#, fuzzy
+#~| msgid "Construct an arc with this center"
+#~ msgid "Construct a quadric with this control point"
+#~ msgstr "Конструирај лак со овој центар"
+
+#, fuzzy
+#~| msgid "Select a point to be a vertex of the new triangle..."
+#~ msgid "Select a point to be a control point of the new quadric..."
+#~ msgstr "Изберете точка која што ќе биде теме на триаголникот"
+
+#, fuzzy
+#~| msgid "Construct an arc with this center"
+#~ msgid "Construct a rational quadric with this control point"
+#~ msgstr "Конструирај лак со овој центар"
+
+#, fuzzy
+#~| msgid ""
+#~| "Select the first of the two conics of which you want to construct the "
+#~| "radical line..."
+#~ msgid ""
+#~ "Select three points and three numeric values as weights to construct "
+#~ "rational quadric..."
+#~ msgstr ""
+#~ "Изберете го првиот од двата конуси од кои што сакате да ја конструирате "
+#~ "радијалната права..."
 
 #, fuzzy
 #~| msgid "Hide a Curve"
