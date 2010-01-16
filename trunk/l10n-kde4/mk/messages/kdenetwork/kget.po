@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-12 06:51+0100\n"
+"POT-Creation-Date: 2010-01-16 06:01+0100\n"
 "PO-Revision-Date: 2007-02-26 22:30+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -327,19 +327,12 @@ msgid ""
 "settings or restart KGet and retry downloading."
 msgstr ""
 
-#: core/transfer.cpp:30
+#: core/transfer.cpp:37
 #, fuzzy
 msgid "Downloading...."
 msgstr "Симнувањето е продолжено"
 
-#: core/transfer.cpp:30
-#, fuzzy
-#| msgid "Delayed"
-msgctxt "transfer state: delayed"
-msgid "Delayed"
-msgstr "Одложено"
-
-#: core/transfer.cpp:30 core/transfer.cpp:231 core/transfer.cpp:256
+#: core/transfer.cpp:244 core/transfer.cpp:269
 #: transfer-plugins/mms/mmsTransfer.cpp:52
 #: transfer-plugins/mmsclient/mmsTransfer.cpp:48
 #: transfer-plugins/bittorrent/bttransfer.cpp:326
@@ -349,25 +342,6 @@ msgstr "Одложено"
 msgctxt "transfer state: stopped"
 msgid "Stopped"
 msgstr "Запрено"
-
-#: core/transfer.cpp:30
-msgctxt "transfer state: aborted"
-msgid "Aborted"
-msgstr ""
-
-#: core/transfer.cpp:30 transfer-plugins/bittorrent/bttransfer.cpp:240
-#: transfer-plugins/bittorrent/bttransfer.cpp:322
-#, fuzzy
-#| msgid "Finished"
-msgctxt "transfer state: finished"
-msgid "Finished"
-msgstr "Завршено"
-
-#: core/transfer.cpp:30 transfer-plugins/bittorrent/bttransfer.cpp:179
-#, fuzzy
-msgctxt "changing the destination of the file"
-msgid "Changing destination"
-msgstr "Отвори &одредиште"
 
 #: core/kgetglobaljob.cpp:56
 #, fuzzy, kde-format
@@ -1214,12 +1188,26 @@ msgstr "Отвори &датотека"
 msgid "Downloading Torrent File...."
 msgstr "Симнувањето е продолжено"
 
+#: transfer-plugins/bittorrent/bttransfer.cpp:179
+#, fuzzy
+msgctxt "changing the destination of the file"
+msgid "Changing destination"
+msgstr "Отвори &одредиште"
+
 #: transfer-plugins/bittorrent/bttransfer.cpp:196
 #: transfer-plugins/bittorrent/bttransfer.cpp:301
 #, fuzzy
 msgctxt "transfer state: downloading"
 msgid "Downloading...."
 msgstr "Симнувањето е продолжено"
+
+#: transfer-plugins/bittorrent/bttransfer.cpp:240
+#: transfer-plugins/bittorrent/bttransfer.cpp:322
+#, fuzzy
+#| msgid "Finished"
+msgctxt "transfer state: finished"
+msgid "Finished"
+msgstr "Завршено"
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:274
 msgid "Cannot add a tracker to a private torrent."
@@ -5020,6 +5008,12 @@ msgstr ""
 #: rc.cpp:1001
 msgid "List of whether the script is enabled"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Delayed"
+#~ msgctxt "transfer state: delayed"
+#~ msgid "Delayed"
+#~ msgstr "Одложено"
 
 #, fuzzy
 #~| msgid "Number of retries:"
