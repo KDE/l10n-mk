@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaudiocreator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-26 06:20+0100\n"
+"POT-Creation-Date: 2010-01-27 07:04+0100\n"
 "PO-Revision-Date: 2006-09-30 15:27+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -55,7 +55,7 @@ msgstr "Песна"
 msgid "unknown"
 msgstr ""
 
-#: encodefileimp.cpp:415 tracksimp.cpp:521
+#: encodefileimp.cpp:415 tracksimp.cpp:530
 #, kde-format
 msgid ""
 "%1 Job(s) have been started.  You can watch their progress in the jobs "
@@ -64,7 +64,7 @@ msgstr ""
 "Започнати се %1 задачи.  Може да го надгледувате нивниот напредок во "
 "секцијата за задачи."
 
-#: encodefileimp.cpp:417 tracksimp.cpp:523
+#: encodefileimp.cpp:417 tracksimp.cpp:532
 msgid "Jobs have started"
 msgstr "Задачите се започнати"
 
@@ -74,11 +74,11 @@ msgstr "Задачите се започнати"
 msgid "File"
 msgstr "Наслов"
 
-#: encodefilemodel.cpp:29 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
+#: encodefilemodel.cpp:29 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:601
 msgid "Title"
 msgstr "Наслов"
 
-#: encodefilemodel.cpp:29 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
+#: encodefilemodel.cpp:29 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:601
 #, fuzzy
 #| msgid "Artist:"
 msgid "Artist"
@@ -91,7 +91,7 @@ msgctxt "@title:column"
 msgid "Album"
 msgstr "Албум"
 
-#: encodefilemodel.cpp:30 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
+#: encodefilemodel.cpp:30 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:601
 #, fuzzy
 #| msgid "Comment:"
 msgid "Comment"
@@ -103,7 +103,7 @@ msgstr "Коментар:"
 msgid "Genre"
 msgstr "Жанр:"
 
-#: encodefilemodel.cpp:31 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
+#: encodefilemodel.cpp:31 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:601
 msgid "Track"
 msgstr "Песна"
 
@@ -171,7 +171,7 @@ msgstr ""
 msgid "Configure Encoder"
 msgstr "Конфигурирај го кодерот"
 
-#: encoderconfigimp.cpp:384 kaudiocreator.cpp:399
+#: encoderconfigimp.cpp:384 kaudiocreator.cpp:406
 msgid "Encoder Configuration"
 msgstr "Конфигурација на кодерот"
 
@@ -359,97 +359,111 @@ msgstr "Пре&барај на CDDA"
 msgid "Searching"
 msgstr ""
 
-#: kaudiocreator.cpp:203 kaudiocreator.cpp:241
+#: kaudiocreator.cpp:206 kaudiocreator.cpp:244
 msgid "WAV"
 msgstr ""
 
-#: kaudiocreator.cpp:211
+#: kaudiocreator.cpp:214
 msgid "Ogg Default"
 msgstr ""
 
-#: kaudiocreator.cpp:219
+#: kaudiocreator.cpp:222
 msgid "MP3 Lame Standard"
 msgstr ""
 
-#: kaudiocreator.cpp:227
+#: kaudiocreator.cpp:230
 #, fuzzy
 #| msgid "FLAC"
 msgid "FLAC Best"
 msgstr "FLAC"
 
-#: kaudiocreator.cpp:289
-msgid "CD Inserted"
+#: kaudiocreator.cpp:293
+#, fuzzy
+#| msgid "CD Inserted"
+msgid "Audio CD inserted"
 msgstr "Вметнато е CD"
 
-#: kaudiocreator.cpp:291
+#: kaudiocreator.cpp:295
+msgid "Disc inserted - No Audio"
+msgstr ""
+
+#: kaudiocreator.cpp:297
 msgid "No Audio CD detected"
 msgstr "Нема детектирано аудио CD"
 
-#: kaudiocreator.cpp:298
+#: kaudiocreator.cpp:305
 #, fuzzy, kde-format
 #| msgid "Delete encoder?"
 msgid "Default encoder: %1"
 msgstr "Го бришете кодерот?"
 
-#: kaudiocreator.cpp:303
-msgid "Idle."
+#: kaudiocreator.cpp:310
+#, fuzzy
+#| msgid "Idle."
+msgid "Idle"
 msgstr "Неактивно."
 
-#: kaudiocreator.cpp:312
+#: kaudiocreator.cpp:319
 #, fuzzy, kde-format
 msgid "Ripping (%1 active, %2 queued)"
 msgstr "Рипувам (%1 активни, %2 во редица)"
 
-#: kaudiocreator.cpp:316
+#: kaudiocreator.cpp:323
 #, kde-format
 msgid "Encoding (%1 active, %2 queued)"
 msgstr "Кодирам (%1 активни, %2 во редица)"
 
-#: kaudiocreator.cpp:334
+#: kaudiocreator.cpp:333
+#, fuzzy
+#| msgid "&Jobs"
+msgid "Jobs:"
+msgstr "&Задачи"
+
+#: kaudiocreator.cpp:341
 msgid "There are unfinished jobs in the queue. Would you like to quit anyway?"
 msgstr "Има недовршени задачи во редицата. Дали сепак сакате да откажете?"
 
-#: kaudiocreator.cpp:334
+#: kaudiocreator.cpp:341
 msgid "Unfinished Jobs in Queue"
 msgstr "Недовршени задачи во редицата"
 
 #. i18n: file: general.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, General)
-#: kaudiocreator.cpp:376 rc.cpp:212
+#: kaudiocreator.cpp:383 rc.cpp:212
 msgid "General"
 msgstr "Општо"
 
-#: kaudiocreator.cpp:377
+#: kaudiocreator.cpp:384
 msgid "General Configuration"
 msgstr "Општа конфигурација"
 
-#: kaudiocreator.cpp:379
+#: kaudiocreator.cpp:386
 msgid "CD"
 msgstr "CD"
 
-#: kaudiocreator.cpp:380
+#: kaudiocreator.cpp:387
 msgid "CD Configuration"
 msgstr "Конфигурација на CD"
 
-#: kaudiocreator.cpp:390
+#: kaudiocreator.cpp:397
 msgid "CDDB"
 msgstr "CDDB"
 
-#: kaudiocreator.cpp:390
+#: kaudiocreator.cpp:397
 msgid "CDDB Configuration"
 msgstr "Конфигурација на CDDB"
 
-#: kaudiocreator.cpp:396
+#: kaudiocreator.cpp:403
 #, fuzzy
 msgid "Ripper"
 msgstr "Рипер"
 
-#: kaudiocreator.cpp:396
+#: kaudiocreator.cpp:403
 #, fuzzy
 msgid "Ripper Configuration"
 msgstr "Конфигурација на рипер"
 
-#: kaudiocreator.cpp:399
+#: kaudiocreator.cpp:406
 msgid "Encoder"
 msgstr "Кодер"
 
@@ -1515,14 +1529,14 @@ msgstr "Рипува: %1 - %2"
 msgid "Track %1.wav"
 msgstr "Песна"
 
-#: tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
+#: tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:601
 #, fuzzy
 #| msgid "Rip"
 msgctxt "@title:column"
 msgid "Rip"
 msgstr "Рипувај"
 
-#: tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
+#: tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:601
 msgid "Length"
 msgstr "Должина"
 
@@ -1544,53 +1558,53 @@ msgstr "Непознат изведувач - Непознат албум"
 msgid "Unknown Album"
 msgstr "Непознат изведувач - Непознат албум"
 
-#: tracksimp.cpp:268
+#: tracksimp.cpp:277
 msgid "Please insert a disk."
 msgstr "Вметнете диск."
 
-#: tracksimp.cpp:269 tracksimp.cpp:295
+#: tracksimp.cpp:278 tracksimp.cpp:304
 msgid "CDDB Failed"
 msgstr "CDDB не успеа"
 
-#: tracksimp.cpp:295
+#: tracksimp.cpp:304
 msgid "Unable to retrieve CDDB information."
 msgstr "Не е возможно да се преземе информација од CDDB."
 
-#: tracksimp.cpp:316
+#: tracksimp.cpp:325
 msgid "Select CDDB entry"
 msgstr "Избирање CDDB-запис"
 
-#: tracksimp.cpp:317
+#: tracksimp.cpp:326
 msgid "Select a CDDB entry:"
 msgstr "Изберете CDDB-запис:"
 
-#: tracksimp.cpp:407
+#: tracksimp.cpp:416
 msgid "CD Editor"
 msgstr "CD-уредувач"
 
-#: tracksimp.cpp:466
+#: tracksimp.cpp:475
 #, fuzzy
 msgid "No tracks have been selected.  Would you like to rip the entire CD?"
 msgstr "Нема избрани песни.  Дали сакате да го рипувате целото CD?"
 
-#: tracksimp.cpp:467
+#: tracksimp.cpp:476
 msgid "No Tracks Selected"
 msgstr "Не се избрани песни"
 
-#: tracksimp.cpp:467
+#: tracksimp.cpp:476
 #, fuzzy
 msgid "Rip CD"
 msgstr "Рипувај CD"
 
-#: tracksimp.cpp:476
+#: tracksimp.cpp:485
 msgid "Could not find audiocd:/ protocol. Please install the audiocd ioslave"
 msgstr ""
 
-#: tracksimp.cpp:477
+#: tracksimp.cpp:486
 msgid "Protocol Not Found"
 msgstr ""
 
-#: tracksimp.cpp:492
+#: tracksimp.cpp:501
 #, fuzzy, kde-format
 msgid ""
 "Part of the album is not set: %1.\n"
@@ -1602,19 +1616,19 @@ msgstr ""
 "информации“.)\n"
 " Дали сепак сакате да ги рипувате избраните песни?"
 
-#: tracksimp.cpp:492
+#: tracksimp.cpp:501
 msgid "Album Information Incomplete"
 msgstr "Информациите за албумот се нецелосни"
 
-#: tracksimp.cpp:492
+#: tracksimp.cpp:501
 msgid "Rip"
 msgstr "Рипувај"
 
-#: tracksimp.cpp:647
+#: tracksimp.cpp:656
 msgid " - "
 msgstr " - "
 
-#: tracksimp.cpp:649
+#: tracksimp.cpp:658
 msgid "No disc"
 msgstr "Нема диск"
 
