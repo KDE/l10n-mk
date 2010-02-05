@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-28 06:25+0100\n"
+"POT-Creation-Date: 2010-02-05 02:33+0100\n"
 "PO-Revision-Date: 2007-02-26 22:26+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -245,7 +245,7 @@ msgstr "&Внеси"
 msgid "Connecting to the server..."
 msgstr "Се поврзувам со серверот..."
 
-#: keyservers.cpp:293
+#: keyservers.cpp:294
 #, fuzzy, kde-format
 #| msgid "Found %1 matching keys"
 msgid "Found 1 matching key"
@@ -254,7 +254,7 @@ msgstr[0] "Пронајдени се %1 клучеви што се совпаѓ�
 msgstr[1] "Пронајдени се %1 клучеви што се совпаѓаат"
 msgstr[2] "Пронајдени се %1 клучеви што се совпаѓаат"
 
-#: keyservers.cpp:343
+#: keyservers.cpp:344
 msgid "You must choose a key."
 msgstr "Мора да изберете клуч."
 
@@ -570,7 +570,8 @@ msgstr "Додај нов кориснички ид."
 msgid ""
 "The image must be a JPEG file. Remember that the image is stored within your "
 "public key, so if you use a very large picture, your key will become very "
-"large as well. An image size of around 240x288 is a good size to use."
+"large as well. The size should not exceed 6 KiB. An image size of around "
+"240x288 is a good size to use."
 msgstr ""
 "Сликата мора да биде датотека од тип JPEG. Имајте предвид дека сликата се "
 "чува заедно со вашиот јавен клуч. Ако употребите многу голема слика, и "
@@ -1154,33 +1155,33 @@ msgstr ""
 "Не е внесен клуч... \n"
 "Проверете го дневникот со детали за повеќе информации"
 
-#: keysmanager.cpp:2598
+#: keysmanager.cpp:2590
 msgid "KGpg - encryption tool"
 msgstr "KGpg - Алатка за криптирање"
 
-#: keysmanager.cpp:2619
+#: keysmanager.cpp:2611
 #, fuzzy
 #| msgid "Key Manager"
 msgid "Ke&y Manager"
 msgstr "Менаџер на клучеви"
 
-#: keysmanager.cpp:2623
+#: keysmanager.cpp:2615
 msgid "&Encrypt Clipboard"
 msgstr "&Криптирај ја таблата со исечоци"
 
-#: keysmanager.cpp:2626
+#: keysmanager.cpp:2618
 msgid "&Decrypt Clipboard"
 msgstr "&Декриптирај ја таблата со исечоци"
 
-#: keysmanager.cpp:2629
+#: keysmanager.cpp:2621
 msgid "&Sign/Verify Clipboard"
 msgstr "&Потпиши/верификувај ја таблата со исечоци"
 
-#: keysmanager.cpp:2661 keysmanager.cpp:2720 keysmanager.cpp:2738
+#: keysmanager.cpp:2653 keysmanager.cpp:2712 keysmanager.cpp:2730
 msgid "Clipboard is empty."
 msgstr "Таблата со исечоци е празна."
 
-#: keysmanager.cpp:2710
+#: keysmanager.cpp:2702
 #, fuzzy
 #| msgid "The signature file %1 was successfully created."
 msgid "Text successfully encrypted."
@@ -1195,12 +1196,12 @@ msgstr ""
 
 #. i18n: file: keyserver.ui:32
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: keytreeview.cpp:168 kgpgtextinterface.cpp:628 rc.cpp:298
+#: keytreeview.cpp:168 kgpgtextinterface.cpp:627 rc.cpp:298
 #, fuzzy
 msgid "Import"
 msgstr "&Внеси"
 
-#: keytreeview.cpp:169 kgpgtextinterface.cpp:628
+#: keytreeview.cpp:169 kgpgtextinterface.cpp:627
 msgid "Do Not Import"
 msgstr "Не внесувај"
 
@@ -1282,7 +1283,7 @@ msgstr "Bzip2"
 msgid "Tar"
 msgstr ""
 
-#: kgpgexternalactions.cpp:156 kgpgexternalactions.cpp:340 kgpglibrary.cpp:112
+#: kgpgexternalactions.cpp:156 kgpgexternalactions.cpp:339 kgpglibrary.cpp:112
 #: editor/kgpgeditor.cpp:525
 msgid "File Already Exists"
 msgstr "Датотеката веќе постои"
@@ -1291,7 +1292,7 @@ msgstr "Датотеката веќе постои"
 msgid "Processing folder compression and encryption"
 msgstr "Обработка на компресијата на папката и крипција"
 
-#: kgpgexternalactions.cpp:169 kgpglibrary.cpp:191
+#: kgpgexternalactions.cpp:169 kgpglibrary.cpp:185
 msgid "Please wait..."
 msgstr "Почекајте..."
 
@@ -1299,7 +1300,7 @@ msgstr "Почекајте..."
 msgid "Unable to create temporary file"
 msgstr "Не можам да ја создадам привремената датотека"
 
-#: kgpgexternalactions.cpp:370
+#: kgpgexternalactions.cpp:372
 #, fuzzy
 #| msgid "Decryption failed."
 msgid "Decryption of this file failed:"
@@ -1308,12 +1309,12 @@ msgstr[0] "Декрипцијата не успеа."
 msgstr[1] "Декрипцијата не успеа."
 msgstr[2] "Декрипцијата не успеа."
 
-#: kgpgexternalactions.cpp:372 editor/kgpgtextedit.cpp:302
+#: kgpgexternalactions.cpp:374 editor/kgpgtextedit.cpp:302
 #: editor/kgpgtextedit.cpp:341
 msgid "Decryption failed."
 msgstr "Декрипцијата не успеа."
 
-#: kgpgexternalactions.cpp:401
+#: kgpgexternalactions.cpp:403
 #, fuzzy
 #| msgid ""
 #| "<qt>You have not set a path to your GnuPG config file.<br>This may cause "
@@ -1329,11 +1330,11 @@ msgstr ""
 "<br>Дали сакате да го стартувате Волшебникот на KGpg за да го поправите "
 "проблемот?</qt>"
 
-#: kgpgexternalactions.cpp:402
+#: kgpgexternalactions.cpp:404
 msgid "Start Assistant"
 msgstr ""
 
-#: kgpgexternalactions.cpp:402
+#: kgpgexternalactions.cpp:404
 msgid "Do Not Start"
 msgstr "Не стартувај"
 
@@ -1496,19 +1497,19 @@ msgstr ""
 "GnuPG (http://gnupg.org)."
 
 #: kgpginterface.cpp:415 kgpgtextinterface.cpp:108
-#: transactions/kgpgtransaction.cpp:184
+#: transactions/kgpgtransaction.cpp:182
 msgid " or "
 msgstr " или "
 
-#: kgpginterface.cpp:607
+#: kgpginterface.cpp:612
 msgid "An error occurred while scanning your keyring"
 msgstr ""
 
-#: kgpginterface.cpp:862
+#: kgpginterface.cpp:880
 msgid "Creation of the revocation certificate failed..."
 msgstr "Создавањето на сертификатот за отповикување не успеа..."
 
-#: kgpginterface.cpp:893
+#: kgpginterface.cpp:912
 #, fuzzy, kde-format
 #| msgid "<qt>%1 Enter passphrase for <b>%2</b>:</qt>"
 msgid "<qt>Enter passphrase for <b>%1</b>:</qt>"
@@ -1650,12 +1651,12 @@ msgstr[2] "<b>Криптирам </b>%2"
 msgid "<p><b>Process halted</b>.<br />Not all files were encrypted.</p>"
 msgstr "<b>Процесот е запрен</b>.<br>Не беа уништени сите датотеки."
 
-#: kgpglibrary.cpp:188
+#: kgpglibrary.cpp:182
 #, kde-format
 msgid "Decrypting %1"
 msgstr "Декриптирам %1"
 
-#: kgpglibrary.cpp:191
+#: kgpglibrary.cpp:185
 msgid "Processing decryption"
 msgstr "Обработувам декриптирање"
 
@@ -1788,7 +1789,7 @@ msgid "Enter passphrase (symmetrical encryption)"
 msgstr "Внесете тајна фраза (симетрично криптирање)"
 
 #: kgpgtextinterface.cpp:106 core/KGpgRefNode.cpp:126
-#: transactions/kgpgtransaction.cpp:260
+#: transactions/kgpgtransaction.cpp:258
 msgid "[No user id found]"
 msgstr "[Не е најден кориснични ид.]"
 
@@ -1798,7 +1799,7 @@ msgstr "[Не е најден кориснични ид.]"
 msgid "<p><b>No user id found</b>. Trying all secret keys.</p>"
 msgstr "<b>Не е најден кориснични ид.</b>. Ги пробувам сите тајни клучеви.<br>"
 
-#: kgpgtextinterface.cpp:114 transactions/kgpgtransaction.cpp:265
+#: kgpgtextinterface.cpp:114 transactions/kgpgtransaction.cpp:263
 #, fuzzy, kde-format
 #| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
 msgid "<p><b>Bad passphrase</b>. You have 1 try left.</p>"
@@ -1813,7 +1814,7 @@ msgstr[2] "<b>Лоша тајна фраза</b>. Ви преостануваа�
 msgid "Enter passphrase"
 msgstr "Лоша тајна фраза"
 
-#: kgpgtextinterface.cpp:119 transactions/kgpgtransaction.cpp:267
+#: kgpgtextinterface.cpp:119 transactions/kgpgtransaction.cpp:265
 #, kde-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "Внесете ја тајната фраза за <b>%1</b>"
@@ -1822,18 +1823,18 @@ msgstr "Внесете ја тајната фраза за <b>%1</b>"
 msgid "Bad MDC detected. The encrypted text has been manipulated."
 msgstr "Откриен е лош MDC. Имало манипулација со криптираниот текст."
 
-#: kgpgtextinterface.cpp:400 kgpgtextinterface.cpp:594
-#: kgpgtextinterface.cpp:622
+#: kgpgtextinterface.cpp:400 kgpgtextinterface.cpp:593
+#: kgpgtextinterface.cpp:621
 msgid "No signature found."
 msgstr "Не е пронајден потпис."
 
-#: kgpgtextinterface.cpp:597
+#: kgpgtextinterface.cpp:596
 #, fuzzy, kde-format
 #| msgid "<qt>Good signature from:<br><b>%1</b><br>Key ID: %2</qt>"
 msgid "<qt>Good signature from:<br /><b>%1</b><br />Key ID: %2<br /></qt>"
 msgstr "<qt>Добар потпис од:<br><b>%1</b><br>Ид. на клуч: %2</qt>"
 
-#: kgpgtextinterface.cpp:602
+#: kgpgtextinterface.cpp:601
 #, fuzzy, kde-format
 msgid ""
 "<qt><b>BAD signature</b> from:<br /> %1<br />Key id: %2<br /><br /><b>The "
@@ -1842,20 +1843,20 @@ msgstr ""
 "<qt><b>ЛОШ потпис</b> од:<br> %1<br>Ид. на клуч: %2<br><br><b>Датотеката е "
 "расипана!</b></qt>"
 
-#: kgpgtextinterface.cpp:609
+#: kgpgtextinterface.cpp:608
 #, fuzzy
 #| msgid "The signature is valid, but the key is untrusted"
 msgid "<qt>The signature is valid, but the key is untrusted<br /></qt>"
 msgstr "Потписот е валиден но клучот не е доверлив"
 
-#: kgpgtextinterface.cpp:611
+#: kgpgtextinterface.cpp:610
 #, fuzzy
 #| msgid "The signature is valid, and the key is ultimately trusted"
 msgid ""
 "<qt>The signature is valid, and the key is ultimately trusted<br /></qt>"
 msgstr "Потписот е валиден и клучот е крајно доверлив"
 
-#: kgpgtextinterface.cpp:627 editor/kgpgtextedit.cpp:384
+#: kgpgtextinterface.cpp:626 editor/kgpgtextedit.cpp:384
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -3812,7 +3813,7 @@ msgctxt "size of signing key / size of encryption key"
 msgid "%1 / %2"
 msgstr ""
 
-#: core/KGpgKeyNode.cpp:187 core/KGpgSignableNode.cpp:48
+#: core/KGpgKeyNode.cpp:197 core/KGpgSignableNode.cpp:48
 #, fuzzy, kde-format
 #| msgid "Signature"
 msgid "1 signature"
@@ -3833,7 +3834,7 @@ msgstr ""
 msgid "%1 [local signature]"
 msgstr " [Потпис за отповикување]"
 
-#: core/KGpgSubkeyNode.cpp:74
+#: core/KGpgSubkeyNode.cpp:86
 #, kde-format
 msgid "%1 subkey"
 msgstr "Подклуч %1"
@@ -3843,7 +3844,7 @@ msgid "Photo id"
 msgstr "Фото ид."
 
 #: editor/kgpgeditor.cpp:89 editor/kgpgeditor.cpp:246
-#: editor/kgpgeditor.cpp:723 editor/kgpgeditor.cpp:752
+#: editor/kgpgeditor.cpp:729 editor/kgpgeditor.cpp:758
 #, fuzzy
 msgid "Untitled"
 msgstr "неименувано"
@@ -3921,8 +3922,8 @@ msgid "Overwrite existing file %1?"
 msgstr "Запишувате врз постоечката датотека %1?"
 
 #: editor/kgpgeditor.cpp:473 editor/kgpgeditor.cpp:481
-#: editor/kgpgeditor.cpp:619 editor/kgpgeditor.cpp:660
-#: editor/kgpgeditor.cpp:693
+#: editor/kgpgeditor.cpp:625 editor/kgpgeditor.cpp:666
+#: editor/kgpgeditor.cpp:699
 msgid "*|All Files"
 msgstr "*|Сите датотеки"
 
@@ -3938,11 +3939,11 @@ msgstr "Отворете датотека за декодирање"
 msgid "Decrypt File To"
 msgstr "Декриптирајте датотека во"
 
-#: editor/kgpgeditor.cpp:619
+#: editor/kgpgeditor.cpp:625
 msgid "Open File to Sign"
 msgstr "Отворете датотека за потпишување"
 
-#: editor/kgpgeditor.cpp:660 editor/kgpgeditor.cpp:693
+#: editor/kgpgeditor.cpp:666 editor/kgpgeditor.cpp:699
 msgid "Open File to Verify"
 msgstr "Отворете датотека за верификација"
 
@@ -4421,7 +4422,7 @@ msgstr "Сервер за клучеви:"
 msgid "<b>Connecting to the server...</b>"
 msgstr "<b>Се поврзувам со серверот...</b>"
 
-#: transactions/kgpgtransaction.cpp:128
+#: transactions/kgpgtransaction.cpp:126
 #, fuzzy
 #| msgid "Change Passphrase..."
 msgid "Requesting Passphrase"
