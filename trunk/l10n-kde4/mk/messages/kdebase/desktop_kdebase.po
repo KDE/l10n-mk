@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop_kdebase\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-21 06:07+0000\n"
+"POT-Creation-Date: 2010-02-23 06:25+0000\n"
 "PO-Revision-Date: 2010-01-28 23:19+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -2297,8 +2297,8 @@ msgstr "Konqueror се предвчитува за време на подига�
 
 #: apps/konqueror/preloader/konqy_preloader.desktop:3
 msgctxt "Name"
-msgid "KDED Konqueror Preloader Module"
-msgstr "Модул на KDED за предвчитување на Konqueror"
+msgid "Browser Preloader"
+msgstr ""
 
 #: apps/konqueror/preloader/konqy_preloader.desktop:87
 msgctxt "Comment"
@@ -2939,15 +2939,15 @@ msgid "Bookmark Toolbar"
 msgstr "Алатник за обележувачи"
 
 #: apps/lib/konq/favicons/favicons.desktop:3
+#: workspace/plasma/generic/dataengines/favicons/plasma-dataengine-favicons.desktop:3
 msgctxt "Name"
-msgid "KDED Favicon Module"
-msgstr "KDED Favicon Модул"
+msgid "Favicons"
+msgstr "Омилени икони"
 
 #: apps/lib/konq/favicons/favicons.desktop:91
-#: runtime/platforms/win/kwinstartmenu/winstartmenu.desktop:76
 msgctxt "Comment"
-msgid "Shortcut icon support"
-msgstr "Поддршка за икони за кратенки"
+msgid "Stores website icons"
+msgstr ""
 
 #: apps/lib/konq/konqdndpopupmenuplugin.desktop:4
 msgctxt "Comment"
@@ -3634,9 +3634,17 @@ msgid "Configure the CGI KIO slave"
 msgstr "Конфигурација на CGI KIO служителот"
 
 #: runtime/kioslave/desktop/desktopnotifier.desktop:3
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "Network Watcher"
 msgctxt "Name"
-msgid "KDED Desktop Folder Notifier"
-msgstr "KDED Известувач за Desktop-датотеки"
+msgid "Directory Watcher"
+msgstr "Анализатор на мрежи"
+
+#: runtime/kioslave/desktop/desktopnotifier.desktop:84
+msgctxt "Comment"
+msgid "Monitors directories for changes"
+msgstr ""
 
 #: runtime/kioslave/desktop/directory.trash:3
 #: runtime/kioslave/trash/kcmtrash.desktop:1
@@ -3685,7 +3693,12 @@ msgstr ""
 
 #: runtime/kioslave/remote/kdedmodule/remotedirnotify.desktop:3
 msgctxt "Name"
-msgid "KDED Remote Base URL Notifier"
+msgid "Remote URL Change Notifier"
+msgstr ""
+
+#: runtime/kioslave/remote/kdedmodule/remotedirnotify.desktop:80
+msgctxt "Comment"
+msgid "Provides change notification to the remote:/ ioslave"
 msgstr ""
 
 #: runtime/kioslave/sftp/sftp.protocol:15
@@ -3984,13 +3997,19 @@ msgid "KDE Notification Daemon"
 msgstr "KDE даемон за известувања"
 
 #: runtime/kpasswdserver/kpasswdserver.desktop:3
+#, fuzzy
+#| msgctxt "Comment"
+#| msgid "Password caching support"
 msgctxt "Name"
-msgid "KDED Password Module"
-msgstr "KDED модул за лозинки"
+msgid "Password Caching"
+msgstr "Поддршка за кеширање на лозинки"
 
 #: runtime/kpasswdserver/kpasswdserver.desktop:82
+#, fuzzy
+#| msgctxt "Comment"
+#| msgid "Password caching support"
 msgctxt "Comment"
-msgid "Password caching support"
+msgid "Temporary password caching"
 msgstr "Поддршка за кеширање на лозинки"
 
 #: runtime/kstyles/highcontrast/highcontrast.themerc:2
@@ -4220,14 +4239,17 @@ msgid "Web widget style"
 msgstr "Стил на графички контроли за веб"
 
 #: runtime/ktimezoned/ktimezoned.desktop:10
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "KDE Time Zone Daemon"
 msgctxt "Name"
-msgid "KDE Time Zone Daemon"
+msgid "Time Zone"
 msgstr "KDE даемон за временски зони"
 
 #: runtime/ktimezoned/ktimezoned.desktop:90
 msgctxt "Comment"
-msgid "Time zone daemon for KDE"
-msgstr "Даемон на KDE за временски зони"
+msgid "Holds the configured time zone for the desktop"
+msgstr ""
 
 #: runtime/kuiserver/kuiserver.desktop:3
 msgctxt "Name"
@@ -8038,13 +8060,16 @@ msgid "Xine Backend Configuration"
 msgstr "Конфигурација на задниот крај на Xine"
 
 #: runtime/phonon/kded-module/phononserver.desktop:8
+#, fuzzy
+#| msgctxt "GenericName"
+#| msgid "Sound Processor"
 msgctxt "Name"
-msgid "Sound Policy Server"
-msgstr ""
+msgid "Sound Policy"
+msgstr "Процесор на звук"
 
 #: runtime/phonon/kded-module/phononserver.desktop:78
 msgctxt "Comment"
-msgid "A server to centralize decisions and data of applications using Phonon"
+msgid "Provides sound system policy to applications"
 msgstr ""
 
 #: runtime/phonon/platform_kde/phononbackend.desktop:4
@@ -8118,6 +8143,11 @@ msgctxt "Name"
 msgid "KDED Windows Start Menu Module"
 msgstr ""
 
+#: runtime/platforms/win/kwinstartmenu/winstartmenu.desktop:76
+msgctxt "Comment"
+msgid "Shortcut icon support"
+msgstr "Поддршка за икони за кратенки"
+
 #: runtime/renamedlgplugins/audio/renaudiodlg.desktop:3
 msgctxt "Name"
 msgid "Audio Preview"
@@ -8129,14 +8159,20 @@ msgid "Image Displayer"
 msgstr "Прикажувач на слики"
 
 #: runtime/solidautoeject/solidautoeject.desktop:7
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "Driver"
 msgctxt "Name"
-msgid "Solid Auto-eject service"
-msgstr ""
+msgid "Drive Ejector"
+msgstr "Управувач"
 
 #: runtime/solidautoeject/solidautoeject.desktop:62
+#, fuzzy
+#| msgctxt "Comment"
+#| msgid ""
+#| "Allows to automatically release drives when their eject button is pushed"
 msgctxt "Comment"
-msgid ""
-"Allows to automatically release drives when their eject button is pushed"
+msgid "Automatically releases drives when their eject button is pushed"
 msgstr ""
 "Овозможува автоматско ослободување на уредите кога е притиснато нивното "
 "копче за вадење"
@@ -8157,18 +8193,24 @@ msgid "Removable Device Automounter"
 msgstr "Автом. монтирање на подвижните уреди"
 
 #: runtime/solid-device-automounter/kded/device_automounter.desktop:55
+#, fuzzy
+#| msgctxt "Comment"
+#| msgid "Automatically mounts devices when they are plugged in, or at login"
 msgctxt "Comment"
-msgid "Automatically mounts devices when they are plugged in, or at login"
+msgid "Automatically mounts devices as needed"
 msgstr "Автоматски ги монтира уредите кога ќе бидат вклучени, или при најава"
 
 #: runtime/soliduiserver/soliduiserver.desktop:8
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "Hardware"
 msgctxt "Name"
-msgid "Solid User Interface Server"
-msgstr ""
+msgid "Hardware Detection"
+msgstr "Хардвер"
 
 #: runtime/soliduiserver/soliduiserver.desktop:82
 msgctxt "Comment"
-msgid "A User Interface server for Solid, the hardware detection system"
+msgid "Provides a user interface for hardware events"
 msgstr ""
 
 #: workspace/kcontrol/access/kaccess.desktop:3
@@ -8630,8 +8672,13 @@ msgstr ""
 
 #: workspace/kcontrol/randr/module/randrmonitor.desktop:2
 msgctxt "Name"
-msgid "Detecting RANDR (monitor) changes"
-msgstr "Детекција на RANDR промени (на мониторот)"
+msgid "Display Management change monitor"
+msgstr ""
+
+#: workspace/kcontrol/randr/module/randrmonitor.desktop:47
+msgctxt "Comment"
+msgid "Is this required when kephal has its own kded module?"
+msgstr ""
 
 #: workspace/kcontrol/randr/randr.desktop:14
 msgctxt "Name"
@@ -9243,14 +9290,16 @@ msgid "Oxygen Theme"
 msgstr "Темата Оксиген"
 
 #: workspace/khotkeys/app/khotkeys.desktop:3
+#: workspace/khotkeys/kcm_hotkeys/khotkeys.desktop:12
+#: workspace/khotkeys/kcm_hotkeys/settings-input-actions.desktop:8
 msgctxt "Name"
-msgid "KHotKeys"
-msgstr "KDE брзи копчиња"
+msgid "Input Actions"
+msgstr "Влезни дејства"
 
 #: workspace/khotkeys/app/khotkeys.desktop:88
 msgctxt "Comment"
-msgid "KHotKeys daemon. No daemon, no hotkeys."
-msgstr "Даемон KHotKeys. Без него, нема функционалност на брзи копчиња."
+msgid "Input Actions service performing configured actions on key presses"
+msgstr ""
 
 #: workspace/khotkeys/data/defaults.khotkeys:5
 #: workspace/khotkeys/data/defaults.khotkeys:141
@@ -9689,12 +9738,6 @@ msgstr ""
 msgctxt "Name"
 msgid "PrintScreen"
 msgstr "Печатење на екранот"
-
-#: workspace/khotkeys/kcm_hotkeys/khotkeys.desktop:12
-#: workspace/khotkeys/kcm_hotkeys/settings-input-actions.desktop:8
-msgctxt "Name"
-msgid "Input Actions"
-msgstr "Влезни дејства"
 
 #: workspace/khotkeys/kcm_hotkeys/khotkeys.desktop:95
 msgctxt "Comment"
@@ -11278,7 +11321,6 @@ msgid "Some effects are not supported by backend or hardware."
 msgstr "Некои ефекти не се поддржани од задниот крај или од хардверот."
 
 #: workspace/kwrited/kwrited-autostart.desktop:2
-#: workspace/kwrited/kwrited.desktop:2
 msgctxt "Name"
 msgid "KDE Write Daemon"
 msgstr "KDE Write даемон"
@@ -11288,6 +11330,14 @@ msgstr "KDE Write даемон"
 msgctxt "Comment"
 msgid "Watch for messages from local users sent with write(1) or wall(1)"
 msgstr "Следи за пораки од локалните корисници пратени со write(1) или wall(1)"
+
+#: workspace/kwrited/kwrited.desktop:2
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "KDE Write Daemon"
+msgctxt "Name"
+msgid "Write Daemon"
+msgstr "KDE Write даемон"
 
 #: workspace/kwrited/kwrited.notifyrc:3
 msgctxt "Comment"
@@ -11305,9 +11355,17 @@ msgid "The daemon received a new message sent with wall(1) or write(1)"
 msgstr "Даемонот прими нова порака испратена со „wall“(1) или „write“(1)"
 
 #: workspace/libs/kephal/kded_kephal/kephal.desktop:10
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "File Management"
 msgctxt "Name"
-msgid "KDED-module for screen-management"
-msgstr "KDED-модул за менаџмент на екран"
+msgid "Display Management"
+msgstr "Менаџмент на датотеки"
+
+#: workspace/libs/kephal/kded_kephal/kephal.desktop:75
+msgctxt "Comment"
+msgid "Manages displays and video outputs"
+msgstr ""
 
 #: workspace/libs/ksysguard/processcore/actions.actions:2
 msgctxt "Name"
@@ -11733,14 +11791,12 @@ msgstr "Пристап до скриените апликации што се н
 
 #: workspace/plasma/generic/applets/systemtray/statusnotifierwatcher/statusnotifierwatcher.desktop:3
 msgctxt "Name"
-msgid "KDED Status Notifier watcher"
+msgid "Status Notifier Manager"
 msgstr ""
 
 #: workspace/plasma/generic/applets/systemtray/statusnotifierwatcher/statusnotifierwatcher.desktop:51
 msgctxt "Comment"
-msgid ""
-"Keep track of applications that want to use the D-Bus based status notifier "
-"protocol."
+msgid "Manages services that provide status notifier user interfaces"
 msgstr ""
 
 #: workspace/plasma/generic/applets/webbrowser/plasma-applet-webbrowser.desktop:3
@@ -11872,11 +11928,6 @@ msgstr "Изврши наредби"
 msgctxt "Comment"
 msgid "Run Executable Data Engine"
 msgstr ""
-
-#: workspace/plasma/generic/dataengines/favicons/plasma-dataengine-favicons.desktop:3
-msgctxt "Name"
-msgid "Favicons"
-msgstr "Омилени икони"
 
 #: workspace/plasma/generic/dataengines/favicons/plasma-dataengine-favicons.desktop:73
 msgctxt "Comment"
@@ -12172,7 +12223,6 @@ msgid "Basic Power Management Operations"
 msgstr "Основни операции за менаџмент на енергија"
 
 #: workspace/plasma/generic/runners/powerdevil/plasma-runner-powerdevil.desktop:70
-#: workspace/powerdevil/daemon/powerdevil.desktop:11
 msgctxt "Name"
 msgid "PowerDevil"
 msgstr ""
@@ -12554,16 +12604,17 @@ msgctxt "Comment"
 msgid "Set up policies for applications using PolicyKit"
 msgstr ""
 
-#: workspace/powerdevil/daemon/powerdevil.desktop:80
-msgctxt "Comment"
-msgid "A Laptop Power Management Daemon"
-msgstr "Даемон за менаџмент на енергија за лаптопи"
-
+#: workspace/powerdevil/daemon/powerdevil.desktop:11
 #: workspace/powerdevil/kcmodule/powerdevilconfig.desktop:13
 #: workspace/powerdevil/powerdevil.notifyrc:2
 msgctxt "Name"
 msgid "Power Management"
 msgstr "Менаџмент на енергија"
+
+#: workspace/powerdevil/daemon/powerdevil.desktop:80
+msgctxt "Comment"
+msgid "Battery, Display and CPU power management and notification"
+msgstr ""
 
 #: workspace/powerdevil/kcmodule/powerdevilconfig.desktop:85
 msgctxt "Comment"
@@ -12745,8 +12796,11 @@ msgid "Linux Infrared Remote Control"
 msgstr "Инфрацрвена далечинска контрола за Линукс"
 
 #: workspace/solid/networking/kded/networkstatus.desktop:2
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "Network Status Daemon"
 msgctxt "Name"
-msgid "Network Status Daemon"
+msgid "Network Status"
 msgstr "Даемон за статус на мрежа"
 
 #: workspace/solid/networking/kded/networkstatus.desktop:75
@@ -13301,6 +13355,46 @@ msgstr ""
 msgctxt "Name"
 msgid "The Rings of Saturn"
 msgstr "Прстените на Сатурн"
+
+#~ msgctxt "Name"
+#~ msgid "KDED Konqueror Preloader Module"
+#~ msgstr "Модул на KDED за предвчитување на Konqueror"
+
+#~ msgctxt "Name"
+#~ msgid "KDED Favicon Module"
+#~ msgstr "KDED Favicon Модул"
+
+#~ msgctxt "Name"
+#~ msgid "KDED Desktop Folder Notifier"
+#~ msgstr "KDED Известувач за Desktop-датотеки"
+
+#~ msgctxt "Name"
+#~ msgid "KDED Password Module"
+#~ msgstr "KDED модул за лозинки"
+
+#~ msgctxt "Comment"
+#~ msgid "Time zone daemon for KDE"
+#~ msgstr "Даемон на KDE за временски зони"
+
+#~ msgctxt "Name"
+#~ msgid "Detecting RANDR (monitor) changes"
+#~ msgstr "Детекција на RANDR промени (на мониторот)"
+
+#~ msgctxt "Name"
+#~ msgid "KHotKeys"
+#~ msgstr "KDE брзи копчиња"
+
+#~ msgctxt "Comment"
+#~ msgid "KHotKeys daemon. No daemon, no hotkeys."
+#~ msgstr "Даемон KHotKeys. Без него, нема функционалност на брзи копчиња."
+
+#~ msgctxt "Name"
+#~ msgid "KDED-module for screen-management"
+#~ msgstr "KDED-модул за менаџмент на екран"
+
+#~ msgctxt "Comment"
+#~ msgid "A Laptop Power Management Daemon"
+#~ msgstr "Даемон за менаџмент на енергија за лаптопи"
 
 #~ msgctxt "Name"
 #~ msgid "Sound"
