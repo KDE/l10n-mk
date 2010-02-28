@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_systemtray\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-25 01:24+0100\n"
+"POT-Creation-Date: 2010-02-26 20:28+0100\n"
 "PO-Revision-Date: 2010-02-01 00:16+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -18,18 +18,72 @@ msgstr ""
 "2;\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ui/taskarea.cpp:395
-msgid "Hide icons"
-msgstr "Скриј икони"
+#: statusnotifierwatcher/statusnotifierwatcher.cpp:36
+msgid "statusnotifierwatcher"
+msgstr ""
 
-#: ui/taskarea.cpp:397
-msgid "Show hidden icons"
-msgstr "Прикажи скриени икони"
-
-#: ui/notificationwidget.cpp:166
+#: core/extendertask.cpp:162
 #, kde-format
-msgid "Notification from %1"
-msgstr "Известување од %1"
+msgid "%1 Recently Completed Job:"
+msgid_plural "%1 Recently Completed Jobs:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/extendertask.cpp:195
+#, kde-format
+msgid "%1 running job"
+msgid_plural "%1 running jobs"
+msgstr[0] "%1 задача се извршува"
+msgstr[1] "%1 задачи се извршуваат"
+msgstr[2] "%1 задачи се извршуваат"
+
+#: core/extendertask.cpp:202
+#, kde-format
+msgid "%1 suspended job"
+msgid_plural "%1 suspended jobs"
+msgstr[0] "%1 суспендирана задача"
+msgstr[1] "%1 суспендирани задачи"
+msgstr[2] "%1 суспендирани задачи"
+
+#: core/extendertask.cpp:209
+#, kde-format
+msgid "%1 notification"
+msgid_plural "%1 notifications"
+msgstr[0] "%1 известување"
+msgstr[1] "%1 известувања"
+msgstr[2] "%1 известувања"
+
+#: core/extendertask.cpp:214
+msgid "No active jobs or notifications"
+msgstr "Нема активни задачи или известувања"
+
+#: core/extendertask.cpp:217
+msgid "Notifications and jobs"
+msgstr "Известувања и задачи"
+
+#: core/extendertask.cpp:270
+msgid "Show or hide notifications and jobs"
+msgstr "Прикажи или скриј известувања и задачи"
+
+#: core/job.cpp:180
+#, kde-format
+msgid "%1 file, to: %2"
+msgid_plural "%1 files, to: %2"
+msgstr[0] "%1 датотека, во: %2"
+msgstr[1] "%1 датотеки, во: %2"
+msgstr[2] "%1 датотеки, во: %2"
+
+#: core/manager.cpp:227
+#, kde-format
+msgid "1 running job (%2 remaining)"
+msgid_plural "%1 running jobs (%2 remaining)"
+msgstr[0] "%1 задача се извршува (преостануваат %2)"
+msgstr[1] "%1 задачи се извршува (преостануваат %2)"
+msgstr[2] "%1 задачи се извршува (преостануваат %2)"
+
+#: core/manager.cpp:232
+msgid "no running jobs"
+msgstr "нема задачи што се извршуваат"
 
 #: ui/jobwidget.cpp:99 ui/jobwidget.cpp:381
 msgid "More"
@@ -147,72 +201,18 @@ msgstr "%1 [Завршено]"
 msgid "Recently Completed Jobs"
 msgstr "Неодамнешни завршени задачи"
 
-#: core/job.cpp:180
+#: ui/notificationwidget.cpp:166
 #, kde-format
-msgid "%1 file, to: %2"
-msgid_plural "%1 files, to: %2"
-msgstr[0] "%1 датотека, во: %2"
-msgstr[1] "%1 датотеки, во: %2"
-msgstr[2] "%1 датотеки, во: %2"
+msgid "Notification from %1"
+msgstr "Известување од %1"
 
-#: core/manager.cpp:227
-#, kde-format
-msgid "1 running job (%2 remaining)"
-msgid_plural "%1 running jobs (%2 remaining)"
-msgstr[0] "%1 задача се извршува (преостануваат %2)"
-msgstr[1] "%1 задачи се извршува (преостануваат %2)"
-msgstr[2] "%1 задачи се извршува (преостануваат %2)"
+#: ui/taskarea.cpp:395
+msgid "Hide icons"
+msgstr "Скриј икони"
 
-#: core/manager.cpp:232
-msgid "no running jobs"
-msgstr "нема задачи што се извршуваат"
-
-#: core/extendertask.cpp:162
-#, kde-format
-msgid "%1 Recently Completed Job:"
-msgid_plural "%1 Recently Completed Jobs:"
-msgstr[0] ""
-msgstr[1] ""
-
-#: core/extendertask.cpp:195
-#, kde-format
-msgid "%1 running job"
-msgid_plural "%1 running jobs"
-msgstr[0] "%1 задача се извршува"
-msgstr[1] "%1 задачи се извршуваат"
-msgstr[2] "%1 задачи се извршуваат"
-
-#: core/extendertask.cpp:202
-#, kde-format
-msgid "%1 suspended job"
-msgid_plural "%1 suspended jobs"
-msgstr[0] "%1 суспендирана задача"
-msgstr[1] "%1 суспендирани задачи"
-msgstr[2] "%1 суспендирани задачи"
-
-#: core/extendertask.cpp:209
-#, kde-format
-msgid "%1 notification"
-msgid_plural "%1 notifications"
-msgstr[0] "%1 известување"
-msgstr[1] "%1 известувања"
-msgstr[2] "%1 известувања"
-
-#: core/extendertask.cpp:214
-msgid "No active jobs or notifications"
-msgstr "Нема активни задачи или известувања"
-
-#: core/extendertask.cpp:217
-msgid "Notifications and jobs"
-msgstr "Известувања и задачи"
-
-#: core/extendertask.cpp:270
-msgid "Show or hide notifications and jobs"
-msgstr "Прикажи или скриј известувања и задачи"
-
-#: statusnotifierwatcher/statusnotifierwatcher.cpp:36
-msgid "statusnotifierwatcher"
-msgstr ""
+#: ui/taskarea.cpp:397
+msgid "Show hidden icons"
+msgstr "Прикажи скриени икони"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"

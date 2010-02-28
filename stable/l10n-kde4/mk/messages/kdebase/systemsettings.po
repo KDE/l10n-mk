@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: systemsettings\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-08 06:12+0100\n"
+"POT-Creation-Date: 2010-02-26 20:28+0100\n"
 "PO-Revision-Date: 2010-02-01 00:06+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -23,6 +23,14 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
+#: app/ToolTips/tooltipmanager.cpp:209
+#, kde-format
+msgid "<i>Contains 1 item</i>"
+msgid_plural "<i>Contains %1 items</i>"
+msgstr[0] "<i>Содржи %1 елемент</i>"
+msgstr[1] "<i>Содржи %1 елементи</i>"
+msgstr[2] "<i>Содржи %1 елементи</i>"
+
 #: app/main.cpp:35 classic/CategoryList.cpp:38
 msgid "System Settings"
 msgstr "Системски поставувања"
@@ -31,11 +39,11 @@ msgstr "Системски поставувања"
 msgid "Central configuration center for KDE."
 msgstr ""
 
-#: app/main.cpp:36 icons/IconMode.cpp:66 classic/ClassicMode.cpp:69
+#: app/main.cpp:36 classic/ClassicMode.cpp:69 icons/IconMode.cpp:66
 msgid "(c) 2009, Ben Cooksley"
 msgstr "(c) 2009, Ben Cooksley"
 
-#: app/main.cpp:37 icons/IconMode.cpp:67 classic/ClassicMode.cpp:70
+#: app/main.cpp:37 classic/ClassicMode.cpp:70 icons/IconMode.cpp:67
 msgid "Ben Cooksley"
 msgstr "Ben Cooksley"
 
@@ -43,11 +51,11 @@ msgstr "Ben Cooksley"
 msgid "Maintainer"
 msgstr "Одржувач"
 
-#: app/main.cpp:38 icons/IconMode.cpp:68 classic/ClassicMode.cpp:71
+#: app/main.cpp:38 classic/ClassicMode.cpp:71 icons/IconMode.cpp:68
 msgid "Mathias Soeken"
 msgstr "Mathias Soeken"
 
-#: app/main.cpp:38 icons/IconMode.cpp:68 classic/ClassicMode.cpp:71
+#: app/main.cpp:38 classic/ClassicMode.cpp:71 icons/IconMode.cpp:68
 msgid "Developer"
 msgstr "Развивач"
 
@@ -58,14 +66,6 @@ msgstr "Will Stephenson"
 #: app/main.cpp:39
 msgid "Internal module representation, internal module model"
 msgstr ""
-
-#: app/ToolTips/tooltipmanager.cpp:209
-#, kde-format
-msgid "<i>Contains 1 item</i>"
-msgid_plural "<i>Contains %1 items</i>"
-msgstr[0] "<i>Содржи %1 елемент</i>"
-msgstr[1] "<i>Содржи %1 елементи</i>"
-msgstr[2] "<i>Содржи %1 елементи</i>"
 
 #: app/SettingsBase.cpp:57
 msgctxt "Search through a list of control modules"
@@ -114,14 +114,26 @@ msgstr ""
 msgid "About %1"
 msgstr "За %1"
 
-#: core/ExternalAppModule.cpp:31
-#, kde-format
-msgid "%1 is an external application and has been automatically launched"
-msgstr "%1 е надворешна апликација и беше автоматски стартувана"
+#: classic/ClassicMode.cpp:67 classic/ClassicMode.cpp:237
+msgid "Tree View"
+msgstr "Приказ со стебло"
 
-#: core/ExternalAppModule.cpp:32
-#, kde-format
-msgid "Relaunch %1"
+#: classic/ClassicMode.cpp:68
+msgid "Provides a classic tree-based view of control modules."
+msgstr ""
+
+#: classic/ClassicMode.cpp:70 icons/IconMode.cpp:67
+msgid "Author"
+msgstr "Автор"
+
+#: classic/CategoryList.cpp:39
+msgid "Configure your system"
+msgstr "Конфигурирање на Вашиот систем"
+
+#: classic/CategoryList.cpp:40
+msgid ""
+"Welcome to \"System Settings\", a central place to configure your computer "
+"system."
 msgstr ""
 
 #: core/ModuleView.cpp:81
@@ -140,6 +152,16 @@ msgstr ""
 msgid "Apply Settings"
 msgstr "Примени поставувања"
 
+#: core/ExternalAppModule.cpp:31
+#, kde-format
+msgid "%1 is an external application and has been automatically launched"
+msgstr "%1 е надворешна апликација и беше автоматски стартувана"
+
+#: core/ExternalAppModule.cpp:32
+#, kde-format
+msgid "Relaunch %1"
+msgstr ""
+
 #: icons/IconMode.cpp:64
 msgid "Icon View"
 msgstr "Приказ со икони"
@@ -147,10 +169,6 @@ msgstr "Приказ со икони"
 #: icons/IconMode.cpp:65
 msgid "Provides a categorized icons view of control modules."
 msgstr ""
-
-#: icons/IconMode.cpp:67 classic/ClassicMode.cpp:70
-msgid "Author"
-msgstr "Автор"
 
 #: icons/IconMode.cpp:72
 msgid "Overview"
@@ -183,50 +201,32 @@ msgstr ""
 msgid "Show detailed tooltips"
 msgstr "Прикажи детални совети"
 
+#. i18n: file: app/systemsettingsui.rc:16
+#. i18n: ectx: ToolBar (mainToolBar)
+#: rc.cpp:11
+msgid "About System Settings"
+msgstr "За „Системски поставувања“"
+
 #. i18n: file: app/systemsettings.kcfg:9
 #. i18n: ectx: label, entry (ShowToolTips), group (Main)
-#: rc.cpp:11
+#: rc.cpp:14
 msgid "Determines whether detailed tooltips should be used"
 msgstr ""
 
 #. i18n: file: app/systemsettings.kcfg:13
 #. i18n: ectx: label, entry (ActiveView), group (Main)
-#: rc.cpp:14
+#: rc.cpp:17
 msgid "Internal name for the view used"
 msgstr ""
 
-#. i18n: file: app/systemsettingsui.rc:16
-#. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:17
-msgid "About System Settings"
-msgstr "За „Системски поставувања“"
-
-#. i18n: file: core/externalModule.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, ExternalModule)
-#: rc.cpp:20
-msgid "Dialog"
-msgstr "Дијалог"
-
 #. i18n: file: classic/configClassic.ui:17
 #. i18n: ectx: property (text), widget (QCheckBox, CbExpand)
-#: rc.cpp:23
+#: rc.cpp:20
 msgid "Expand the first level automatically"
 msgstr ""
 
-#: classic/ClassicMode.cpp:67 classic/ClassicMode.cpp:237
-msgid "Tree View"
-msgstr "Приказ со стебло"
-
-#: classic/ClassicMode.cpp:68
-msgid "Provides a classic tree-based view of control modules."
-msgstr ""
-
-#: classic/CategoryList.cpp:39
-msgid "Configure your system"
-msgstr "Конфигурирање на Вашиот систем"
-
-#: classic/CategoryList.cpp:40
-msgid ""
-"Welcome to \"System Settings\", a central place to configure your computer "
-"system."
-msgstr ""
+#. i18n: file: core/externalModule.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, ExternalModule)
+#: rc.cpp:23
+msgid "Dialog"
+msgstr "Дијалог"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwordquiz\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-14 06:06+0100\n"
+"POT-Creation-Date: 2010-02-26 20:29+0100\n"
 "PO-Revision-Date: 2006-10-15 23:35+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -19,37 +19,6 @@ msgstr ""
 "X-Generator: KBabel 1.11.2\n"
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
-
-#: prefcharacter.cpp:44
-msgid "Action"
-msgstr "Дејство"
-
-#: prefcharacter.cpp:45
-msgid "Shortcut"
-msgstr "Кратенка"
-
-#: prefcharacter.cpp:46
-msgid "Character"
-msgstr "Знак"
-
-#: prefcharacter.cpp:55
-#, fuzzy, kde-format
-msgid "Special Character %1"
-msgstr "Специјален знак 1"
-
-#: flashview.cpp:75 qaview.cpp:141 multipleview.cpp:112
-msgid "Your answer was correct!"
-msgstr "Вашиот одговор е точен!"
-
-#: flashview.cpp:80 qaview.cpp:151 multipleview.cpp:121
-msgid "Your answer was incorrect."
-msgstr "Вашиот одговор е неточен."
-
-#: dlglanguage.cpp:31
-#, fuzzy
-#| msgid "Quiz Settings"
-msgid "Column Settings"
-msgstr "Поставувања за квизот"
 
 #: kwqtableview.cpp:153
 msgid "Name:_____________________________ Date:__________"
@@ -64,6 +33,92 @@ msgstr "Резултат"
 #: kwqtableview.cpp:598
 msgid "There is an error with the Fill-in-the-blank brackets"
 msgstr "Има грешка со  заградите пополни-ги празнините"
+
+#: flashview.cpp:75 multipleview.cpp:112 qaview.cpp:141
+msgid "Your answer was correct!"
+msgstr "Вашиот одговор е точен!"
+
+#: flashview.cpp:80 multipleview.cpp:121 qaview.cpp:151
+msgid "Your answer was incorrect."
+msgstr "Вашиот одговор е неточен."
+
+#: prefcardappearance.cpp:80
+msgctxt "Back of the flashcard"
+msgid "Back"
+msgstr "Назад"
+
+#: prefcardappearance.cpp:81
+msgid "Answer"
+msgstr "Одговор"
+
+#: prefcardappearance.cpp:94
+msgid "Front"
+msgstr "Предно"
+
+#: prefcardappearance.cpp:95
+msgid "Question"
+msgstr "Прашање"
+
+#: kwqcommands.cpp:83
+#, fuzzy
+#| msgid "&Undo Clear"
+msgctxt "@item:inmenu undo clear"
+msgid "Clear"
+msgstr "&Отповикај исчисти"
+
+#: kwqcommands.cpp:102
+msgctxt "@item:inmenu undo cut"
+msgid "Cut"
+msgstr ""
+
+#: kwqcommands.cpp:115
+#, fuzzy
+#| msgid "&Undo Paste"
+msgctxt "@item:inmenu undo paste"
+msgid "Paste"
+msgstr "&Отповикај вметни"
+
+#: kwqcommands.cpp:212
+#, fuzzy
+#| msgid "Sort"
+msgctxt "@item:inmenu undo sort"
+msgid "Sort"
+msgstr "Подреди"
+
+#: kwqcommands.cpp:239
+#, fuzzy
+#| msgid "Sh&uffle"
+msgctxt "@item:inmenu undo shuffle"
+msgid "Shuffle"
+msgstr "&Мешај"
+
+#: kwqcommands.cpp:259
+#, fuzzy
+#| msgid "&Insert Row"
+msgctxt "@item:inmenu undo insert"
+msgid "Insert"
+msgstr "&Вметни ред"
+
+#: kwqcommands.cpp:291
+#, fuzzy
+#| msgid "&Delete Row"
+msgctxt "@item:inmenu undo delete"
+msgid "Delete"
+msgstr "&Избриши ред"
+
+#: kwqcommands.cpp:340
+#, fuzzy
+#| msgid "&Unmark Blanks"
+msgctxt "@item:inmenu undo unmark blank"
+msgid "Unmark Blank"
+msgstr "&Одозначи празни"
+
+#: kwqcommands.cpp:362
+#, fuzzy
+#| msgid "Quiz Settings"
+msgctxt "@item:inmenu undo column titles"
+msgid "Column Settings"
+msgstr "Поставувања за квизот"
 
 #: kwordquizprefs.cpp:36
 msgctxt "@title:group general settings"
@@ -153,7 +208,7 @@ msgstr "Специјални знаци"
 #. i18n: ectx: property (text), widget (QLabel, lblCorrectHeader)
 #. i18n: file: qaviewbase.ui:518
 #. i18n: ectx: property (text), widget (QLabel, lblCorrectHeader)
-#: qaview.cpp:149 rc.cpp:357 rc.cpp:759 multipleview.cpp:119
+#: multipleview.cpp:119 qaview.cpp:149 rc.cpp:357 rc.cpp:759
 msgid "Correct Answer"
 msgstr "Точен одговор"
 
@@ -165,7 +220,7 @@ msgstr "Точен одговор"
 #. i18n: ectx: property (text), widget (QLabel, lblPreviousQuestionHeader)
 #. i18n: file: qaviewbase.ui:294
 #. i18n: ectx: property (text), widget (QLabel, lblPreviousQuestionHeader)
-#: qaview.cpp:154 rc.cpp:315 rc.cpp:714 multipleview.cpp:124
+#: multipleview.cpp:124 qaview.cpp:154 rc.cpp:315 rc.cpp:714
 msgid "Previous Question"
 msgstr "Претходно прашање"
 
@@ -177,13 +232,606 @@ msgstr "Претходно прашање"
 #. i18n: ectx: property (text), widget (QLabel, lblYourAnswerHeader)
 #. i18n: file: qaviewbase.ui:395
 #. i18n: ectx: property (text), widget (QLabel, lblYourAnswerHeader)
-#: qaview.cpp:159 rc.cpp:339 rc.cpp:735 multipleview.cpp:128
+#: multipleview.cpp:128 qaview.cpp:159 rc.cpp:339 rc.cpp:735
 msgid "Your Answer"
 msgstr "Вашиот одговор"
 
-#: qaview.cpp:174 multipleview.cpp:146
+#: multipleview.cpp:146 qaview.cpp:174
 msgid "Summary"
 msgstr "Збир"
+
+#: kwqcommands.h:104
+#, fuzzy
+#| msgid "Front"
+msgid "Font"
+msgstr "Предно"
+
+#: kwqcommands.h:122
+#, fuzzy
+#| msgid "&Undo Entry"
+msgid "Entry"
+msgstr "&Отповикај запис"
+
+#: kwordquiz.cpp:115
+msgid "Creates a new blank vocabulary document"
+msgstr "Креира нов празен речник"
+
+#: kwordquiz.cpp:120
+msgid "Opens an existing vocabulary document"
+msgstr "Отвора постоечки речник"
+
+#: kwordquiz.cpp:126
+#, fuzzy
+#| msgid "Downloads new vocabularies"
+msgid "Download New Vocabularies..."
+msgstr "Симнува нови речници"
+
+#: kwordquiz.cpp:128
+msgid "Downloads new vocabularies"
+msgstr "Симнува нови речници"
+
+#: kwordquiz.cpp:133
+msgid "Saves the active vocabulary document"
+msgstr "Зачувува активен речник"
+
+#: kwordquiz.cpp:138
+msgid "Saves the active vocabulary document with a different name"
+msgstr "Зачувува активен речник со друго име"
+
+#: kwordquiz.cpp:143
+msgid "Closes the active vocabulary document"
+msgstr "Затвора активен речник"
+
+#: kwordquiz.cpp:147
+msgid "Prints the active vocabulary document"
+msgstr "Печати активен речник"
+
+#: kwordquiz.cpp:152
+msgid "Quits KWordQuiz"
+msgstr "Напушти KWordQuiz"
+
+#: kwordquiz.cpp:164
+msgid "Cuts the text from the selected cells and places it on the clipboard"
+msgstr ""
+"Го сече текстот од селектираната келија и го сместува во таблата со исечоци"
+
+#: kwordquiz.cpp:169
+msgid "Copies the text from the selected cells and places it on the clipboard"
+msgstr ""
+"Го копира текстот од селектираната келија и го сместува во таблата со исечоци"
+
+#: kwordquiz.cpp:174
+msgid ""
+"Pastes previously cut or copied text from the clipboard into the selected "
+"cells"
+msgstr ""
+"Го вметнува предходно исечениот или копираниот текст од табелта за исечоци "
+"во селектираните келии"
+
+#: kwordquiz.cpp:179
+msgid "Clears the content of the selected cells"
+msgstr "Ја чисти содржината на одбраните келии"
+
+#: kwordquiz.cpp:185
+msgid "&Insert Row"
+msgstr "&Вметни ред"
+
+#: kwordquiz.cpp:187
+msgid "Inserts a new row above the current row"
+msgstr "Внесува нов ред над тековниот ред"
+
+#: kwordquiz.cpp:194
+msgid "&Delete Row"
+msgstr "&Избриши ред"
+
+#: kwordquiz.cpp:196
+msgid "Deletes the selected row(s)"
+msgstr "Го/и брише избраниот ред/ови"
+
+#: kwordquiz.cpp:203
+msgid "&Mark as Blank"
+msgstr "Означува &како празно"
+
+#: kwordquiz.cpp:205
+msgid "Marks the current or selected word as a blank for Fill-in-the-blank"
+msgstr ""
+"Го означува тековниот или избраниот збор како празно за пополнување-во-празно"
+
+#: kwordquiz.cpp:212
+msgid "&Unmark Blanks"
+msgstr "&Одозначи празни"
+
+#: kwordquiz.cpp:213
+msgid "Removes blanks from the current or selected word"
+msgstr "Отстранува празни од тековниот или избраниот збор"
+
+#: kwordquiz.cpp:220
+#, fuzzy
+#| msgid "&Column Titles..."
+msgid "&Column Settings..."
+msgstr "Наслов на &колони..."
+
+#: kwordquiz.cpp:222
+#, fuzzy
+#| msgid "Defines the column titles for the active vocabulary"
+msgid "Defines the column settings for the active vocabulary"
+msgstr "Ги дефинира насловите на колоните за активниот речник"
+
+#: kwordquiz.cpp:229
+msgid "&Font..."
+msgstr "&Фонт..."
+
+#: kwordquiz.cpp:230
+msgid "Defines the font used by the editor"
+msgstr "Го дефинира фонтот користен од уредувачот"
+
+#: kwordquiz.cpp:237
+#, fuzzy
+#| msgid "&Row height:"
+msgid "&Adjust Row Heights"
+msgstr "&Висина на ред:"
+
+#: kwordquiz.cpp:238
+msgid "Automatically adjusts the height of selected rows"
+msgstr ""
+
+#: kwordquiz.cpp:245
+msgid "Sh&uffle"
+msgstr "&Мешај"
+
+#: kwordquiz.cpp:246
+msgid "Shuffles the entries of the active vocabulary"
+msgstr "Ги меша елементите од активниот речник"
+
+#: kwordquiz.cpp:252
+msgid "&Keyboard Layout"
+msgstr ""
+
+#: kwordquiz.cpp:253
+#, fuzzy
+#| msgid "Changing the keyboard layout..."
+msgid "Shows available keyboard layouts"
+msgstr "Го менувам распоредот на тастатурата..."
+
+#: kwordquiz.cpp:264
+msgid "Change Mode"
+msgstr "Смени режим"
+
+#: kwordquiz.cpp:265
+#, fuzzy
+#| msgid "&Mode"
+msgid "Mode"
+msgstr "Р&ежим"
+
+#: kwordquiz.cpp:266
+msgid "Changes the mode used in quiz sessions"
+msgstr "Го менува режимот користен во квиз сесиите"
+
+#: kwordquiz.cpp:281
+msgid "Selects this mode"
+msgstr "Го избира овој режим"
+
+#: kwordquiz.cpp:290
+#, fuzzy
+#| msgid "&Editor"
+msgctxt "@item:inlistbox activate vocabulary editor"
+msgid "&Editor"
+msgstr "&Уредувач"
+
+#: kwordquiz.cpp:292
+msgid "Activates the vocabulary editor"
+msgstr "Го активира уредувачот за речник"
+
+#: kwordquiz.cpp:299
+msgid "&Flashcard"
+msgstr "&Флеш-картичка"
+
+#: kwordquiz.cpp:301
+msgid "Starts a flashcard session using the active vocabulary"
+msgstr "Стартува флеш-картичка сесија користејќи го активниот речник"
+
+#: kwordquiz.cpp:308
+msgid "&Multiple Choice"
+msgstr "&Повеќекратен избор"
+
+#: kwordquiz.cpp:310
+msgid "Starts a multiple choice session using the active vocabulary"
+msgstr "Стартува сесија со повеќекратни избори користејќи го активниот речник"
+
+#: kwordquiz.cpp:317
+#, fuzzy
+msgid "&Question and Answer"
+msgstr "Прашање и одговор"
+
+#: kwordquiz.cpp:318
+msgid "Q&&A"
+msgstr ""
+
+#: kwordquiz.cpp:320
+msgid "Starts a question and answer session using the active vocabulary"
+msgstr "Стартува прашање и одговор сесија користејќи го активниот речник"
+
+#: kwordquiz.cpp:327
+msgid "&Check"
+msgstr "&Провери"
+
+#: kwordquiz.cpp:329
+msgid "Checks your answer to this question"
+msgstr "Го проверува вашиот одговор на ова прашање"
+
+#: kwordquiz.cpp:334
+msgid "Choose Option &1"
+msgstr ""
+
+#: kwordquiz.cpp:338
+msgid "Choose Option &2"
+msgstr ""
+
+#: kwordquiz.cpp:342
+msgid "Choose Option &3"
+msgstr ""
+
+#: kwordquiz.cpp:347
+msgid "I &Know"
+msgstr "&Знам"
+
+#: kwordquiz.cpp:349
+msgid "Counts this card as correct and shows the next card"
+msgstr "Ја брои оваа карта како точна и ја прикажува следната карта"
+
+#: kwordquiz.cpp:355
+msgid "I &Do Not Know"
+msgstr "&Не знам"
+
+#: kwordquiz.cpp:357
+msgid "Counts this card as incorrect and shows the next card"
+msgstr "Ја брои оваа карта како неточна и ја прикажува следната карта"
+
+#: kwordquiz.cpp:363
+msgid "&Hint"
+msgstr "&Совет"
+
+#: kwordquiz.cpp:365
+msgid "Gets the next correct letter of the answer"
+msgstr "Ја зема следната точна буква од одговорот"
+
+#: kwordquiz.cpp:371
+msgid "&Restart"
+msgstr "&Рестарт"
+
+#: kwordquiz.cpp:373
+msgid "Restarts the quiz session from the beginning"
+msgstr "Ја рестастира квиз сесијата од почеток"
+
+#: kwordquiz.cpp:379
+msgid "Repeat &Errors"
+msgstr "Повтори &Грешки"
+
+#: kwordquiz.cpp:381
+msgid "Repeats all incorrectly answered questions"
+msgstr "Ги повторува сите неточно одговорени прашања"
+
+#: kwordquiz.cpp:387
+msgid "Export Errors &As..."
+msgstr ""
+
+#: kwordquiz.cpp:388
+#, fuzzy
+#| msgid "Creates a new blank vocabulary document"
+msgid "Exports all errors as a new vocabulary document"
+msgstr "Креира нов празен речник"
+
+#: kwordquiz.cpp:394
+msgid "Show Se&arch"
+msgstr ""
+
+#: kwordquiz.cpp:396
+#, fuzzy
+#| msgid "Toggles display of the toolbars"
+msgid "Toggle display of the search bar"
+msgstr "Го менува прикажувањето на алатниците"
+
+#: kwordquiz.cpp:401
+msgid "Configures sound and other notifications for certain events"
+msgstr "Го конфигурира звукот и другите известувања за одредени настани"
+
+#: kwordquiz.cpp:406
+msgid "Specifies preferences for the vocabulary editor and quiz sessions"
+msgstr "Ги наведува параметрите за едиторот на речникот и квиз сесиите"
+
+#: kwordquiz.cpp:415
+#, fuzzy, kde-format
+msgid "Special Character <numid>%1</numid>"
+msgstr "Специјален знак 1"
+
+#: kwordquiz.cpp:429
+msgid "Toggles display of the toolbars"
+msgstr "Го менува прикажувањето на алатниците"
+
+#. i18n: file: columndialogbase.ui:45
+#. i18n: ectx: property (title), widget (QGroupBox, column1GroupBox)
+#: kwordquiz.cpp:448 rc.cpp:3
+msgid "Column 1"
+msgstr "Колона 1"
+
+#. i18n: file: columndialogbase.ui:214
+#. i18n: ectx: property (title), widget (QGroupBox, column2GroupBox)
+#: kwordquiz.cpp:451 rc.cpp:39
+msgid "Column 2"
+msgstr "Колона 2"
+
+#: kwordquiz.cpp:483
+msgid "Enter search terms here"
+msgstr ""
+
+#: kwordquiz.cpp:505
+#, fuzzy
+#| msgid "Editor"
+msgctxt "@item:inlistbox vocabulary editor"
+msgid "Editor"
+msgstr "Уредувач"
+
+#. i18n: file: prefquizbase.ui:192
+#. i18n: ectx: property (title), widget (QGroupBox, KeepDiscard)
+#: kwordquiz.cpp:510 rc.cpp:618
+msgid "Flashcard"
+msgstr "Флеш-картичка"
+
+#: kwordquiz.cpp:514
+#, fuzzy
+msgid ""
+"Multiple\n"
+"Choice"
+msgstr "Повеќекратен избор"
+
+#: kwordquiz.cpp:518
+msgid "Q&A"
+msgstr ""
+
+#: kwordquiz.cpp:584 kwordquiz.cpp:740 kwordquiz.cpp:787
+msgid "Opening file..."
+msgstr "Отворам датотека..."
+
+#: kwordquiz.cpp:616 kwordquiz.cpp:735 kwordquiz.cpp:782 kwordquiz.cpp:790
+#: kwordquiz.cpp:830 kwordquiz.cpp:840 kwordquiz.cpp:901 kwordquiz.cpp:908
+#: kwordquiz.cpp:935 kwordquiz.cpp:942 kwordquiz.cpp:949 kwordquiz.cpp:956
+#: kwordquiz.cpp:963 kwordquiz.cpp:970 kwordquiz.cpp:977 kwordquiz.cpp:984
+#: kwordquiz.cpp:997 kwordquiz.cpp:1013 kwordquiz.cpp:1022 kwordquiz.cpp:1030
+#: kwordquiz.cpp:1044 kwordquiz.cpp:1052 kwordquiz.cpp:1059 kwordquiz.cpp:1066
+#: kwordquiz.cpp:1073
+#, fuzzy
+#| msgid "Ready"
+msgctxt "@info:status ready"
+msgid "Ready"
+msgstr "Спремно"
+
+#: kwordquiz.cpp:637 kwordquiz.cpp:694 kwordquiz.cpp:818 kwqtablemodel.cpp:216
+msgid "Untitled"
+msgstr ""
+
+#: kwordquiz.cpp:686
+#, fuzzy
+msgid ""
+"The current document has been modified.\n"
+"Do you want to save it?"
+msgstr ""
+"Тековнaтa датотека беше променетa.\n"
+"Дали сакате да ja снимите?"
+
+#: kwordquiz.cpp:730
+msgid "Opening a new document window..."
+msgstr "Отворам нов прозорец..."
+
+#: kwordquiz.cpp:742
+msgid "&Merge selected files with the current document"
+msgstr ""
+
+#: kwordquiz.cpp:750
+msgid "Open Vocabulary Document"
+msgstr "Отвори речник"
+
+#: kwordquiz.cpp:817
+msgid "Saving file..."
+msgstr "Ја зачувувам датотеката..."
+
+#: kwordquiz.cpp:836
+msgid "Saving file with a new filename..."
+msgstr "Ја зачувувам датотеката со ново име..."
+
+#: kwordquiz.cpp:851
+msgid "Save Vocabulary Document As"
+msgstr "Зачувај го речникот како"
+
+#: kwordquiz.cpp:884
+msgid "Closing file..."
+msgstr "Затворам датотека..."
+
+#: kwordquiz.cpp:906
+msgid "Printing..."
+msgstr "Печатам..."
+
+#: kwordquiz.cpp:913
+#, fuzzy
+#| msgid "Exiting..."
+msgctxt "@info:status quitting"
+msgid "Quitting..."
+msgstr "Излегувам..."
+
+#: kwordquiz.cpp:933
+msgid "Cutting selection..."
+msgstr "Го сечам изборот..."
+
+#: kwordquiz.cpp:940
+msgid "Copying selection to clipboard..."
+msgstr "Го копирам изборот во таблата со исечоци..."
+
+#: kwordquiz.cpp:947
+msgid "Inserting clipboard contents..."
+msgstr "Внесувам содржината од таблата со исечоци..."
+
+#: kwordquiz.cpp:954
+msgid "Clearing the selected cells..."
+msgstr "Ги чистам избраните келии..."
+
+#: kwordquiz.cpp:961
+msgid "Inserting rows..."
+msgstr "Внесувам редови..."
+
+#: kwordquiz.cpp:968
+msgid "Deleting selected rows..."
+msgstr "Ги бришам избраните редови..."
+
+#: kwordquiz.cpp:975
+msgid "Marking selected text as a blank..."
+msgstr "Го означувам избраниот текст како празно..."
+
+#: kwordquiz.cpp:982
+msgid "Removing blank markings..."
+msgstr "Ги отстранувам празните означувачи"
+
+#: kwordquiz.cpp:989
+msgid "Setting the column titles of the vocabulary..."
+msgstr "Ги поставувам имињата на колоните од речникот..."
+
+#: kwordquiz.cpp:1002
+msgid "Setting the font of the vocabulary..."
+msgstr "Го поставувам фонтот на речникот..."
+
+#: kwordquiz.cpp:1019
+#, fuzzy
+#| msgid "Inserting rows..."
+msgid "Adjusting row heights..."
+msgstr "Внесувам редови..."
+
+#: kwordquiz.cpp:1028
+msgid "Randomizing the vocabulary..."
+msgstr ""
+
+#: kwordquiz.cpp:1036
+msgid "Updating mode..."
+msgstr "Режим на ажурирање..."
+
+#: kwordquiz.cpp:1050
+msgid "Starting editor session..."
+msgstr "Ја стартувам едиторот сесијата..."
+
+#: kwordquiz.cpp:1057
+msgid "Starting flashcard session..."
+msgstr "Ја стартуван флеш-картичка сесијата"
+
+#: kwordquiz.cpp:1064
+msgid "Starting multiple choice session..."
+msgstr "Ја стартувам сесијата повеќекратен избор "
+
+#: kwordquiz.cpp:1071
+msgid "Starting question & answer session..."
+msgstr "Ја стартувам прашање и одговор сесијата..."
+
+#: kwordquiz.cpp:1221
+#, fuzzy, kde-format
+#| msgid "&Insert Row"
+msgid "Insert %1"
+msgstr "&Вметни ред"
+
+#: kwordquiz.cpp:1222
+#, kde-format
+msgid "Inserts the character %1"
+msgstr "Го внесува знакот %1"
+
+#: kwordquiz.cpp:1273
+msgid "This will restart your quiz. Do you wish to continue?"
+msgstr "Со ова ќе го рестартирате квизот. Дали сакате да продолжите?"
+
+#: kwordquiz.cpp:1289
+#, kde-format
+msgid "&1 %1 -> %2 In Order"
+msgstr "&1 %1 -> %2 По редослед"
+
+#: kwordquiz.cpp:1290
+#, kde-format
+msgid "&2 %1 -> %2 In Order"
+msgstr "&2 %1 -> %2 По редослед"
+
+#: kwordquiz.cpp:1291
+#, kde-format
+msgid "&3 %1 -> %2 Randomly"
+msgstr "&3 %1 -> %2 Случајно"
+
+#: kwordquiz.cpp:1292
+#, kde-format
+msgid "&4 %1 -> %2 Randomly"
+msgstr "&4 %1 -> %2 Случајно"
+
+#: kwordquiz.cpp:1293
+#, fuzzy, kde-format
+#| msgid "&5 %1 <-> %2 Randomly"
+msgid "&5 %1 &lt;-&gt; %2 Randomly"
+msgstr "&5 %1 <-> %2 Случајно"
+
+#: kwordquiz.cpp:1300 kwordquiz.cpp:1303
+#, kde-format
+msgid "%1 -> %2 In Order"
+msgstr "%1 -> %2 По редослед"
+
+#: kwordquiz.cpp:1306 kwordquiz.cpp:1309
+#, kde-format
+msgid "%1 -> %2 Randomly"
+msgstr "%1 -> %2 Случајно"
+
+#: kwordquiz.cpp:1312
+#, fuzzy, kde-format
+#| msgid "%1 -> %2 Randomly"
+msgid "%1 &lt;-&gt; %2 Randomly"
+msgstr "%1 -> %2 Случајно"
+
+#: prefcharacter.cpp:44
+msgid "Action"
+msgstr "Дејство"
+
+#: prefcharacter.cpp:45
+msgid "Shortcut"
+msgstr "Кратенка"
+
+#: prefcharacter.cpp:46
+msgid "Character"
+msgstr "Знак"
+
+#: prefcharacter.cpp:55
+#, fuzzy, kde-format
+msgid "Special Character %1"
+msgstr "Специјален знак 1"
+
+#: wqprintdialogpage.cpp:30
+msgid "Vocabulary Options"
+msgstr "Опции за речникот"
+
+#: wqprintdialogpage.cpp:38
+msgid "Select Type of Printout"
+msgstr "Изберете тип на отпечатокот"
+
+#: wqprintdialogpage.cpp:45
+msgid "Vocabulary &list"
+msgstr "Речник &листа"
+
+#: wqprintdialogpage.cpp:46
+msgid "Select to print the vocabulary as displayed in the editor"
+msgstr "Изберете да го испечатите речникот како што е прикажан во уредувачот"
+
+#: wqprintdialogpage.cpp:50
+msgid "Vocabulary e&xam"
+msgstr "Речник &испит"
+
+#: wqprintdialogpage.cpp:51
+msgid "Select to print the vocabulary as a vocabulary exam"
+msgstr "Изберете да го испечатите речникот како испит заречник"
+
+#: wqprintdialogpage.cpp:55
+msgid "&Flashcards"
+msgstr "&Флеш-картички"
+
+#: wqprintdialogpage.cpp:56
+msgid "Select to print flashcards"
+msgstr "Изберете за да ги испечатите флеш-картичките"
 
 #: main.cpp:29
 msgid "A powerful flashcard and vocabulary learning program"
@@ -239,15 +887,32 @@ msgstr ""
 msgid "File to open"
 msgstr "Датотека за отварање"
 
-#: kwqtablemodel.cpp:216 kwordquiz.cpp:637 kwordquiz.cpp:694 kwordquiz.cpp:818
-msgid "Untitled"
-msgstr ""
+#: dlglanguage.cpp:31
+#, fuzzy
+#| msgid "Quiz Settings"
+msgid "Column Settings"
+msgstr "Поставувања за квизот"
 
-#. i18n: file: columndialogbase.ui:45
-#. i18n: ectx: property (title), widget (QGroupBox, column1GroupBox)
-#: rc.cpp:3 kwordquiz.cpp:448
-msgid "Column 1"
-msgstr "Колона 1"
+#: dlgspecchar.cpp:24
+#, fuzzy
+#| msgid "Select Character"
+msgctxt "@title:window select character dialog"
+msgid "Select Character"
+msgstr "Изберете знак"
+
+#: dlgspecchar.cpp:31
+#, fuzzy
+#| msgid "&Select"
+msgctxt "@action:button select"
+msgid "&Select"
+msgstr "&Избери"
+
+#: dlgspecchar.cpp:32
+#, fuzzy
+#| msgid "Select this character"
+msgctxt "@info:tooltip select this character"
+msgid "Select this character"
+msgstr "Избери го овој знак"
 
 #. i18n: file: columndialogbase.ui:72
 #. i18n: ectx: property (toolTip), widget (QLabel, column1Picture)
@@ -330,12 +995,6 @@ msgstr "Ширина на селектираната колона"
 #| msgid "Enter the width (in pixels) for the selected column(s)"
 msgid "Enter the width (in pixels) for the left column"
 msgstr "Внесете ја ширината (во пиксели) за избраните колони"
-
-#. i18n: file: columndialogbase.ui:214
-#. i18n: ectx: property (title), widget (QGroupBox, column2GroupBox)
-#: rc.cpp:39 kwordquiz.cpp:451
-msgid "Column 2"
-msgstr "Колона 2"
 
 #. i18n: file: columndialogbase.ui:265
 #. i18n: ectx: property (text), widget (QLabel, column2TitleLabel)
@@ -1624,12 +2283,6 @@ msgstr "Автоматск&и провери ја селекцијата"
 msgid "Specify behavior of a flashcard session"
 msgstr "Наведи однесување на сесија за флеш-картичката"
 
-#. i18n: file: prefquizbase.ui:192
-#. i18n: ectx: property (title), widget (QGroupBox, KeepDiscard)
-#: rc.cpp:618 kwordquiz.cpp:510
-msgid "Flashcard"
-msgstr "Флеш-картичка"
-
 #. i18n: file: prefquizbase.ui:238
 #. i18n: ectx: property (whatsThis), widget (QLabel, lblSeconds)
 #: rc.cpp:621
@@ -1775,659 +2428,6 @@ msgstr "Бошевски Томе, Ивица Јовановиќ, Наум Ко�
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "tome@lugola.net, idisaster@gmail.com, shadowseed@gmail.com"
-
-#: kwqcommands.h:104
-#, fuzzy
-#| msgid "Front"
-msgid "Font"
-msgstr "Предно"
-
-#: kwqcommands.h:122
-#, fuzzy
-#| msgid "&Undo Entry"
-msgid "Entry"
-msgstr "&Отповикај запис"
-
-#: kwordquiz.cpp:115
-msgid "Creates a new blank vocabulary document"
-msgstr "Креира нов празен речник"
-
-#: kwordquiz.cpp:120
-msgid "Opens an existing vocabulary document"
-msgstr "Отвора постоечки речник"
-
-#: kwordquiz.cpp:126
-#, fuzzy
-#| msgid "Downloads new vocabularies"
-msgid "Download New Vocabularies..."
-msgstr "Симнува нови речници"
-
-#: kwordquiz.cpp:128
-msgid "Downloads new vocabularies"
-msgstr "Симнува нови речници"
-
-#: kwordquiz.cpp:133
-msgid "Saves the active vocabulary document"
-msgstr "Зачувува активен речник"
-
-#: kwordquiz.cpp:138
-msgid "Saves the active vocabulary document with a different name"
-msgstr "Зачувува активен речник со друго име"
-
-#: kwordquiz.cpp:143
-msgid "Closes the active vocabulary document"
-msgstr "Затвора активен речник"
-
-#: kwordquiz.cpp:147
-msgid "Prints the active vocabulary document"
-msgstr "Печати активен речник"
-
-#: kwordquiz.cpp:152
-msgid "Quits KWordQuiz"
-msgstr "Напушти KWordQuiz"
-
-#: kwordquiz.cpp:164
-msgid "Cuts the text from the selected cells and places it on the clipboard"
-msgstr ""
-"Го сече текстот од селектираната келија и го сместува во таблата со исечоци"
-
-#: kwordquiz.cpp:169
-msgid "Copies the text from the selected cells and places it on the clipboard"
-msgstr ""
-"Го копира текстот од селектираната келија и го сместува во таблата со исечоци"
-
-#: kwordquiz.cpp:174
-msgid ""
-"Pastes previously cut or copied text from the clipboard into the selected "
-"cells"
-msgstr ""
-"Го вметнува предходно исечениот или копираниот текст од табелта за исечоци "
-"во селектираните келии"
-
-#: kwordquiz.cpp:179
-msgid "Clears the content of the selected cells"
-msgstr "Ја чисти содржината на одбраните келии"
-
-#: kwordquiz.cpp:185
-msgid "&Insert Row"
-msgstr "&Вметни ред"
-
-#: kwordquiz.cpp:187
-msgid "Inserts a new row above the current row"
-msgstr "Внесува нов ред над тековниот ред"
-
-#: kwordquiz.cpp:194
-msgid "&Delete Row"
-msgstr "&Избриши ред"
-
-#: kwordquiz.cpp:196
-msgid "Deletes the selected row(s)"
-msgstr "Го/и брише избраниот ред/ови"
-
-#: kwordquiz.cpp:203
-msgid "&Mark as Blank"
-msgstr "Означува &како празно"
-
-#: kwordquiz.cpp:205
-msgid "Marks the current or selected word as a blank for Fill-in-the-blank"
-msgstr ""
-"Го означува тековниот или избраниот збор како празно за пополнување-во-празно"
-
-#: kwordquiz.cpp:212
-msgid "&Unmark Blanks"
-msgstr "&Одозначи празни"
-
-#: kwordquiz.cpp:213
-msgid "Removes blanks from the current or selected word"
-msgstr "Отстранува празни од тековниот или избраниот збор"
-
-#: kwordquiz.cpp:220
-#, fuzzy
-#| msgid "&Column Titles..."
-msgid "&Column Settings..."
-msgstr "Наслов на &колони..."
-
-#: kwordquiz.cpp:222
-#, fuzzy
-#| msgid "Defines the column titles for the active vocabulary"
-msgid "Defines the column settings for the active vocabulary"
-msgstr "Ги дефинира насловите на колоните за активниот речник"
-
-#: kwordquiz.cpp:229
-msgid "&Font..."
-msgstr "&Фонт..."
-
-#: kwordquiz.cpp:230
-msgid "Defines the font used by the editor"
-msgstr "Го дефинира фонтот користен од уредувачот"
-
-#: kwordquiz.cpp:237
-#, fuzzy
-#| msgid "&Row height:"
-msgid "&Adjust Row Heights"
-msgstr "&Висина на ред:"
-
-#: kwordquiz.cpp:238
-msgid "Automatically adjusts the height of selected rows"
-msgstr ""
-
-#: kwordquiz.cpp:245
-msgid "Sh&uffle"
-msgstr "&Мешај"
-
-#: kwordquiz.cpp:246
-msgid "Shuffles the entries of the active vocabulary"
-msgstr "Ги меша елементите од активниот речник"
-
-#: kwordquiz.cpp:252
-msgid "&Keyboard Layout"
-msgstr ""
-
-#: kwordquiz.cpp:253
-#, fuzzy
-#| msgid "Changing the keyboard layout..."
-msgid "Shows available keyboard layouts"
-msgstr "Го менувам распоредот на тастатурата..."
-
-#: kwordquiz.cpp:264
-msgid "Change Mode"
-msgstr "Смени режим"
-
-#: kwordquiz.cpp:265
-#, fuzzy
-#| msgid "&Mode"
-msgid "Mode"
-msgstr "Р&ежим"
-
-#: kwordquiz.cpp:266
-msgid "Changes the mode used in quiz sessions"
-msgstr "Го менува режимот користен во квиз сесиите"
-
-#: kwordquiz.cpp:281
-msgid "Selects this mode"
-msgstr "Го избира овој режим"
-
-#: kwordquiz.cpp:290
-#, fuzzy
-#| msgid "&Editor"
-msgctxt "@item:inlistbox activate vocabulary editor"
-msgid "&Editor"
-msgstr "&Уредувач"
-
-#: kwordquiz.cpp:292
-msgid "Activates the vocabulary editor"
-msgstr "Го активира уредувачот за речник"
-
-#: kwordquiz.cpp:299
-msgid "&Flashcard"
-msgstr "&Флеш-картичка"
-
-#: kwordquiz.cpp:301
-msgid "Starts a flashcard session using the active vocabulary"
-msgstr "Стартува флеш-картичка сесија користејќи го активниот речник"
-
-#: kwordquiz.cpp:308
-msgid "&Multiple Choice"
-msgstr "&Повеќекратен избор"
-
-#: kwordquiz.cpp:310
-msgid "Starts a multiple choice session using the active vocabulary"
-msgstr "Стартува сесија со повеќекратни избори користејќи го активниот речник"
-
-#: kwordquiz.cpp:317
-#, fuzzy
-msgid "&Question and Answer"
-msgstr "Прашање и одговор"
-
-#: kwordquiz.cpp:318
-msgid "Q&&A"
-msgstr ""
-
-#: kwordquiz.cpp:320
-msgid "Starts a question and answer session using the active vocabulary"
-msgstr "Стартува прашање и одговор сесија користејќи го активниот речник"
-
-#: kwordquiz.cpp:327
-msgid "&Check"
-msgstr "&Провери"
-
-#: kwordquiz.cpp:329
-msgid "Checks your answer to this question"
-msgstr "Го проверува вашиот одговор на ова прашање"
-
-#: kwordquiz.cpp:334
-msgid "Choose Option &1"
-msgstr ""
-
-#: kwordquiz.cpp:338
-msgid "Choose Option &2"
-msgstr ""
-
-#: kwordquiz.cpp:342
-msgid "Choose Option &3"
-msgstr ""
-
-#: kwordquiz.cpp:347
-msgid "I &Know"
-msgstr "&Знам"
-
-#: kwordquiz.cpp:349
-msgid "Counts this card as correct and shows the next card"
-msgstr "Ја брои оваа карта како точна и ја прикажува следната карта"
-
-#: kwordquiz.cpp:355
-msgid "I &Do Not Know"
-msgstr "&Не знам"
-
-#: kwordquiz.cpp:357
-msgid "Counts this card as incorrect and shows the next card"
-msgstr "Ја брои оваа карта како неточна и ја прикажува следната карта"
-
-#: kwordquiz.cpp:363
-msgid "&Hint"
-msgstr "&Совет"
-
-#: kwordquiz.cpp:365
-msgid "Gets the next correct letter of the answer"
-msgstr "Ја зема следната точна буква од одговорот"
-
-#: kwordquiz.cpp:371
-msgid "&Restart"
-msgstr "&Рестарт"
-
-#: kwordquiz.cpp:373
-msgid "Restarts the quiz session from the beginning"
-msgstr "Ја рестастира квиз сесијата од почеток"
-
-#: kwordquiz.cpp:379
-msgid "Repeat &Errors"
-msgstr "Повтори &Грешки"
-
-#: kwordquiz.cpp:381
-msgid "Repeats all incorrectly answered questions"
-msgstr "Ги повторува сите неточно одговорени прашања"
-
-#: kwordquiz.cpp:387
-msgid "Export Errors &As..."
-msgstr ""
-
-#: kwordquiz.cpp:388
-#, fuzzy
-#| msgid "Creates a new blank vocabulary document"
-msgid "Exports all errors as a new vocabulary document"
-msgstr "Креира нов празен речник"
-
-#: kwordquiz.cpp:394
-msgid "Show Se&arch"
-msgstr ""
-
-#: kwordquiz.cpp:396
-#, fuzzy
-#| msgid "Toggles display of the toolbars"
-msgid "Toggle display of the search bar"
-msgstr "Го менува прикажувањето на алатниците"
-
-#: kwordquiz.cpp:401
-msgid "Configures sound and other notifications for certain events"
-msgstr "Го конфигурира звукот и другите известувања за одредени настани"
-
-#: kwordquiz.cpp:406
-msgid "Specifies preferences for the vocabulary editor and quiz sessions"
-msgstr "Ги наведува параметрите за едиторот на речникот и квиз сесиите"
-
-#: kwordquiz.cpp:415
-#, fuzzy, kde-format
-msgid "Special Character <numid>%1</numid>"
-msgstr "Специјален знак 1"
-
-#: kwordquiz.cpp:429
-msgid "Toggles display of the toolbars"
-msgstr "Го менува прикажувањето на алатниците"
-
-#: kwordquiz.cpp:483
-msgid "Enter search terms here"
-msgstr ""
-
-#: kwordquiz.cpp:505
-#, fuzzy
-#| msgid "Editor"
-msgctxt "@item:inlistbox vocabulary editor"
-msgid "Editor"
-msgstr "Уредувач"
-
-#: kwordquiz.cpp:514
-#, fuzzy
-msgid ""
-"Multiple\n"
-"Choice"
-msgstr "Повеќекратен избор"
-
-#: kwordquiz.cpp:518
-msgid "Q&A"
-msgstr ""
-
-#: kwordquiz.cpp:584 kwordquiz.cpp:740 kwordquiz.cpp:787
-msgid "Opening file..."
-msgstr "Отворам датотека..."
-
-#: kwordquiz.cpp:616 kwordquiz.cpp:735 kwordquiz.cpp:782 kwordquiz.cpp:790
-#: kwordquiz.cpp:830 kwordquiz.cpp:840 kwordquiz.cpp:901 kwordquiz.cpp:908
-#: kwordquiz.cpp:935 kwordquiz.cpp:942 kwordquiz.cpp:949 kwordquiz.cpp:956
-#: kwordquiz.cpp:963 kwordquiz.cpp:970 kwordquiz.cpp:977 kwordquiz.cpp:984
-#: kwordquiz.cpp:997 kwordquiz.cpp:1013 kwordquiz.cpp:1022 kwordquiz.cpp:1030
-#: kwordquiz.cpp:1044 kwordquiz.cpp:1052 kwordquiz.cpp:1059 kwordquiz.cpp:1066
-#: kwordquiz.cpp:1073
-#, fuzzy
-#| msgid "Ready"
-msgctxt "@info:status ready"
-msgid "Ready"
-msgstr "Спремно"
-
-#: kwordquiz.cpp:686
-#, fuzzy
-msgid ""
-"The current document has been modified.\n"
-"Do you want to save it?"
-msgstr ""
-"Тековнaтa датотека беше променетa.\n"
-"Дали сакате да ja снимите?"
-
-#: kwordquiz.cpp:730
-msgid "Opening a new document window..."
-msgstr "Отворам нов прозорец..."
-
-#: kwordquiz.cpp:742
-msgid "&Merge selected files with the current document"
-msgstr ""
-
-#: kwordquiz.cpp:750
-msgid "Open Vocabulary Document"
-msgstr "Отвори речник"
-
-#: kwordquiz.cpp:817
-msgid "Saving file..."
-msgstr "Ја зачувувам датотеката..."
-
-#: kwordquiz.cpp:836
-msgid "Saving file with a new filename..."
-msgstr "Ја зачувувам датотеката со ново име..."
-
-#: kwordquiz.cpp:851
-msgid "Save Vocabulary Document As"
-msgstr "Зачувај го речникот како"
-
-#: kwordquiz.cpp:884
-msgid "Closing file..."
-msgstr "Затворам датотека..."
-
-#: kwordquiz.cpp:906
-msgid "Printing..."
-msgstr "Печатам..."
-
-#: kwordquiz.cpp:913
-#, fuzzy
-#| msgid "Exiting..."
-msgctxt "@info:status quitting"
-msgid "Quitting..."
-msgstr "Излегувам..."
-
-#: kwordquiz.cpp:933
-msgid "Cutting selection..."
-msgstr "Го сечам изборот..."
-
-#: kwordquiz.cpp:940
-msgid "Copying selection to clipboard..."
-msgstr "Го копирам изборот во таблата со исечоци..."
-
-#: kwordquiz.cpp:947
-msgid "Inserting clipboard contents..."
-msgstr "Внесувам содржината од таблата со исечоци..."
-
-#: kwordquiz.cpp:954
-msgid "Clearing the selected cells..."
-msgstr "Ги чистам избраните келии..."
-
-#: kwordquiz.cpp:961
-msgid "Inserting rows..."
-msgstr "Внесувам редови..."
-
-#: kwordquiz.cpp:968
-msgid "Deleting selected rows..."
-msgstr "Ги бришам избраните редови..."
-
-#: kwordquiz.cpp:975
-msgid "Marking selected text as a blank..."
-msgstr "Го означувам избраниот текст како празно..."
-
-#: kwordquiz.cpp:982
-msgid "Removing blank markings..."
-msgstr "Ги отстранувам празните означувачи"
-
-#: kwordquiz.cpp:989
-msgid "Setting the column titles of the vocabulary..."
-msgstr "Ги поставувам имињата на колоните од речникот..."
-
-#: kwordquiz.cpp:1002
-msgid "Setting the font of the vocabulary..."
-msgstr "Го поставувам фонтот на речникот..."
-
-#: kwordquiz.cpp:1019
-#, fuzzy
-#| msgid "Inserting rows..."
-msgid "Adjusting row heights..."
-msgstr "Внесувам редови..."
-
-#: kwordquiz.cpp:1028
-msgid "Randomizing the vocabulary..."
-msgstr ""
-
-#: kwordquiz.cpp:1036
-msgid "Updating mode..."
-msgstr "Режим на ажурирање..."
-
-#: kwordquiz.cpp:1050
-msgid "Starting editor session..."
-msgstr "Ја стартувам едиторот сесијата..."
-
-#: kwordquiz.cpp:1057
-msgid "Starting flashcard session..."
-msgstr "Ја стартуван флеш-картичка сесијата"
-
-#: kwordquiz.cpp:1064
-msgid "Starting multiple choice session..."
-msgstr "Ја стартувам сесијата повеќекратен избор "
-
-#: kwordquiz.cpp:1071
-msgid "Starting question & answer session..."
-msgstr "Ја стартувам прашање и одговор сесијата..."
-
-#: kwordquiz.cpp:1221
-#, fuzzy, kde-format
-#| msgid "&Insert Row"
-msgid "Insert %1"
-msgstr "&Вметни ред"
-
-#: kwordquiz.cpp:1222
-#, kde-format
-msgid "Inserts the character %1"
-msgstr "Го внесува знакот %1"
-
-#: kwordquiz.cpp:1273
-msgid "This will restart your quiz. Do you wish to continue?"
-msgstr "Со ова ќе го рестартирате квизот. Дали сакате да продолжите?"
-
-#: kwordquiz.cpp:1289
-#, kde-format
-msgid "&1 %1 -> %2 In Order"
-msgstr "&1 %1 -> %2 По редослед"
-
-#: kwordquiz.cpp:1290
-#, kde-format
-msgid "&2 %1 -> %2 In Order"
-msgstr "&2 %1 -> %2 По редослед"
-
-#: kwordquiz.cpp:1291
-#, kde-format
-msgid "&3 %1 -> %2 Randomly"
-msgstr "&3 %1 -> %2 Случајно"
-
-#: kwordquiz.cpp:1292
-#, kde-format
-msgid "&4 %1 -> %2 Randomly"
-msgstr "&4 %1 -> %2 Случајно"
-
-#: kwordquiz.cpp:1293
-#, fuzzy, kde-format
-#| msgid "&5 %1 <-> %2 Randomly"
-msgid "&5 %1 &lt;-&gt; %2 Randomly"
-msgstr "&5 %1 <-> %2 Случајно"
-
-#: kwordquiz.cpp:1300 kwordquiz.cpp:1303
-#, kde-format
-msgid "%1 -> %2 In Order"
-msgstr "%1 -> %2 По редослед"
-
-#: kwordquiz.cpp:1306 kwordquiz.cpp:1309
-#, kde-format
-msgid "%1 -> %2 Randomly"
-msgstr "%1 -> %2 Случајно"
-
-#: kwordquiz.cpp:1312
-#, fuzzy, kde-format
-#| msgid "%1 -> %2 Randomly"
-msgid "%1 &lt;-&gt; %2 Randomly"
-msgstr "%1 -> %2 Случајно"
-
-#: wqprintdialogpage.cpp:30
-msgid "Vocabulary Options"
-msgstr "Опции за речникот"
-
-#: wqprintdialogpage.cpp:38
-msgid "Select Type of Printout"
-msgstr "Изберете тип на отпечатокот"
-
-#: wqprintdialogpage.cpp:45
-msgid "Vocabulary &list"
-msgstr "Речник &листа"
-
-#: wqprintdialogpage.cpp:46
-msgid "Select to print the vocabulary as displayed in the editor"
-msgstr "Изберете да го испечатите речникот како што е прикажан во уредувачот"
-
-#: wqprintdialogpage.cpp:50
-msgid "Vocabulary e&xam"
-msgstr "Речник &испит"
-
-#: wqprintdialogpage.cpp:51
-msgid "Select to print the vocabulary as a vocabulary exam"
-msgstr "Изберете да го испечатите речникот како испит заречник"
-
-#: wqprintdialogpage.cpp:55
-msgid "&Flashcards"
-msgstr "&Флеш-картички"
-
-#: wqprintdialogpage.cpp:56
-msgid "Select to print flashcards"
-msgstr "Изберете за да ги испечатите флеш-картичките"
-
-#: prefcardappearance.cpp:80
-msgctxt "Back of the flashcard"
-msgid "Back"
-msgstr "Назад"
-
-#: prefcardappearance.cpp:81
-msgid "Answer"
-msgstr "Одговор"
-
-#: prefcardappearance.cpp:94
-msgid "Front"
-msgstr "Предно"
-
-#: prefcardappearance.cpp:95
-msgid "Question"
-msgstr "Прашање"
-
-#: kwqcommands.cpp:83
-#, fuzzy
-#| msgid "&Undo Clear"
-msgctxt "@item:inmenu undo clear"
-msgid "Clear"
-msgstr "&Отповикај исчисти"
-
-#: kwqcommands.cpp:102
-msgctxt "@item:inmenu undo cut"
-msgid "Cut"
-msgstr ""
-
-#: kwqcommands.cpp:115
-#, fuzzy
-#| msgid "&Undo Paste"
-msgctxt "@item:inmenu undo paste"
-msgid "Paste"
-msgstr "&Отповикај вметни"
-
-#: kwqcommands.cpp:212
-#, fuzzy
-#| msgid "Sort"
-msgctxt "@item:inmenu undo sort"
-msgid "Sort"
-msgstr "Подреди"
-
-#: kwqcommands.cpp:239
-#, fuzzy
-#| msgid "Sh&uffle"
-msgctxt "@item:inmenu undo shuffle"
-msgid "Shuffle"
-msgstr "&Мешај"
-
-#: kwqcommands.cpp:259
-#, fuzzy
-#| msgid "&Insert Row"
-msgctxt "@item:inmenu undo insert"
-msgid "Insert"
-msgstr "&Вметни ред"
-
-#: kwqcommands.cpp:291
-#, fuzzy
-#| msgid "&Delete Row"
-msgctxt "@item:inmenu undo delete"
-msgid "Delete"
-msgstr "&Избриши ред"
-
-#: kwqcommands.cpp:340
-#, fuzzy
-#| msgid "&Unmark Blanks"
-msgctxt "@item:inmenu undo unmark blank"
-msgid "Unmark Blank"
-msgstr "&Одозначи празни"
-
-#: kwqcommands.cpp:362
-#, fuzzy
-#| msgid "Quiz Settings"
-msgctxt "@item:inmenu undo column titles"
-msgid "Column Settings"
-msgstr "Поставувања за квизот"
-
-#: dlgspecchar.cpp:24
-#, fuzzy
-#| msgid "Select Character"
-msgctxt "@title:window select character dialog"
-msgid "Select Character"
-msgstr "Изберете знак"
-
-#: dlgspecchar.cpp:31
-#, fuzzy
-#| msgid "&Select"
-msgctxt "@action:button select"
-msgid "&Select"
-msgstr "&Избери"
-
-#: dlgspecchar.cpp:32
-#, fuzzy
-#| msgid "Select this character"
-msgctxt "@info:tooltip select this character"
-msgid "Select this character"
-msgstr "Избери го овој знак"
 
 #~ msgid "The flashcard"
 #~ msgstr "Флеш-картичката"
