@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krunner\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-14 06:34+0100\n"
+"POT-Creation-Date: 2010-03-04 04:11+0100\n"
 "PO-Revision-Date: 2010-01-29 23:02+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -18,29 +18,10 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: interfaces/default/interface.cpp:80 interfaces/default/interface.cpp:81
 #: interfaces/quicksand/qs_dialog.cpp:53 interfaces/quicksand/qs_dialog.cpp:54
+#: interfaces/default/interface.cpp:80 interfaces/default/interface.cpp:81
 msgid "Settings"
 msgstr "Поставувања"
-
-#: interfaces/default/interface.cpp:115
-msgid "Help"
-msgstr "Помош"
-
-#: interfaces/default/interface.cpp:116
-msgid "Information on using this application"
-msgstr "Информација за користење на апликацијата"
-
-#: interfaces/default/interface.cpp:255
-#, kde-format
-msgctxt "tooltip, shortcut"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: interfaces/default/interface.cpp:440
-#, kde-format
-msgid "(From %1, %2)"
-msgstr "(Од %1, %2)"
 
 #: interfaces/quicksand/qs_dialog.cpp:86
 msgid "Actions"
@@ -79,6 +60,107 @@ msgstr "Нема пронајдени резултати."
 msgctxt "%1 current item number, %2 total number of items"
 msgid "%1 of %2"
 msgstr "%1 од %2"
+
+#: interfaces/default/interface.cpp:114
+msgid "Help"
+msgstr "Помош"
+
+#: interfaces/default/interface.cpp:115
+msgid "Information on using this application"
+msgstr "Информација за користење на апликацијата"
+
+#: interfaces/default/interface.cpp:263
+#, kde-format
+msgctxt "tooltip, shortcut"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: interfaces/default/interface.cpp:440
+#, kde-format
+msgid "(From %1, %2)"
+msgstr "(Од %1, %2)"
+
+#: lock/lockdlg.cc:100
+msgid "<nobr><b>The session is locked</b></nobr><br />"
+msgstr "<nobr><b>Сесијата е заклучена</b></nobr><br />"
+
+#: lock/lockdlg.cc:101
+#, kde-format
+msgid "<nobr><b>The session was locked by %1</b></nobr><br />"
+msgstr "<nobr><b>Сесијата е заклучена од %1</b></nobr><br />"
+
+#: lock/lockdlg.cc:114
+msgid "Unl&ock"
+msgstr "От&клучи"
+
+#: lock/lockdlg.cc:116
+msgid "Sw&itch User..."
+msgstr "Смен&и корисник..."
+
+#: lock/lockdlg.cc:184
+msgid "<b>Unlocking failed</b>"
+msgstr "<b>Отклучувањето не успеа</b>"
+
+#: lock/lockdlg.cc:192
+msgid "<b>Warning: Caps Lock on</b>"
+msgstr "<b>Внимание: Caps Lock е вклучен</b>"
+
+#: lock/lockdlg.cc:429
+#, kde-format
+msgid ""
+"Cannot unlock the session because the authentication system failed to work;\n"
+"you must kill kscreenlocker (pid %1) manually."
+msgstr ""
+"Не можам да ја отклучам сесијата бидејќи системот за проверка за "
+"автентичност откажа да работи.\n"
+"Ќе мора рачно да го прекинете kscreenlocker (pid %1)."
+
+#: lock/lockdlg.cc:518
+msgid "&Start New Session"
+msgstr "Започни нова &сесија"
+
+#: lock/lockdlg.cc:526
+#, kde-format
+msgid ""
+"You have chosen to open another desktop session instead of resuming the "
+"current one.\n"
+"The current session will be hidden and a new login screen will be "
+"displayed.\n"
+"An F-key is assigned to each session; F%1 is usually assigned to the first "
+"session, F%2 to the second session and so on. You can switch between "
+"sessions by pressing Ctrl, Alt and the appropriate F-key at the same time. "
+"Additionally, the KDE Panel and Desktop menus have actions for switching "
+"between sessions."
+msgstr ""
+"Избравте да отворите друга работна сесија наместо да продолжите во "
+"активната.\n"
+"Тековната сесија ќе биде скриена и ќе биде прикажан нов екран за најава.\n"
+"На секоја сесија ѝ е доделено F-копче; F%1 е вообичаено доделено на првата "
+"сесија, F%2 на втората сесија итн. Може да ги менувате сесиите со "
+"истовремено притискање на CTRL, ALT и соодветното F-копче. Исто така, "
+"панелот на KDE и менијата од работната површина имаат дејства за менување на "
+"сесиите."
+
+#: lock/lockdlg.cc:539
+msgid "&Do not ask again"
+msgstr "&Не прашувај повторно"
+
+#: lock/lockdlg.cc:595
+msgid "Session"
+msgstr "Сесија"
+
+#: lock/lockdlg.cc:595
+msgid "Location"
+msgstr "Локација"
+
+#: lock/lockdlg.cc:623
+msgctxt "session"
+msgid "&Activate"
+msgstr "&Активирај"
+
+#: lock/lockdlg.cc:632
+msgid "Start &New Session"
+msgstr "Започни нова &сесија"
 
 #: lock/autologout.cc:38
 msgid "<qt><nobr><b>Automatic Log Out</b></nobr></qt>"
@@ -146,92 +228,6 @@ msgstr "<i>kcheckpass</i> не може да работи. Можеби не е 
 msgid "No appropriate greeter plugin configured."
 msgstr "Нема конфигурирано соодветен поздравен приклучок."
 
-#: lock/lockdlg.cc:100
-msgid "<nobr><b>The session is locked</b></nobr><br />"
-msgstr "<nobr><b>Сесијата е заклучена</b></nobr><br />"
-
-#: lock/lockdlg.cc:101
-#, kde-format
-msgid "<nobr><b>The session was locked by %1</b></nobr><br />"
-msgstr "<nobr><b>Сесијата е заклучена од %1</b></nobr><br />"
-
-#: lock/lockdlg.cc:114
-msgid "Unl&ock"
-msgstr "От&клучи"
-
-#: lock/lockdlg.cc:116
-msgid "Sw&itch User..."
-msgstr "Смен&и корисник..."
-
-#: lock/lockdlg.cc:184
-msgid "<b>Unlocking failed</b>"
-msgstr "<b>Отклучувањето не успеа</b>"
-
-#: lock/lockdlg.cc:192
-msgid "<b>Warning: Caps Lock on</b>"
-msgstr "<b>Внимание: Caps Lock е вклучен</b>"
-
-#: lock/lockdlg.cc:429
-#, kde-format
-msgid ""
-"Cannot unlock the session because the authentication system failed to work;\n"
-"you must kill kscreenlocker (pid %1) manually."
-msgstr ""
-"Не можам да ја отклучам сесијата бидејќи системот за проверка за "
-"автентичност откажа да работи.\n"
-"Ќе мора рачно да го прекинете kscreenlocker (pid %1)."
-
-#: lock/lockdlg.cc:521
-msgid "&Start New Session"
-msgstr "Започни нова &сесија"
-
-#: lock/lockdlg.cc:529
-#, kde-format
-msgid ""
-"You have chosen to open another desktop session instead of resuming the "
-"current one.\n"
-"The current session will be hidden and a new login screen will be "
-"displayed.\n"
-"An F-key is assigned to each session; F%1 is usually assigned to the first "
-"session, F%2 to the second session and so on. You can switch between "
-"sessions by pressing Ctrl, Alt and the appropriate F-key at the same time. "
-"Additionally, the KDE Panel and Desktop menus have actions for switching "
-"between sessions."
-msgstr ""
-"Избравте да отворите друга работна сесија наместо да продолжите во "
-"активната.\n"
-"Тековната сесија ќе биде скриена и ќе биде прикажан нов екран за најава.\n"
-"На секоја сесија ѝ е доделено F-копче; F%1 е вообичаено доделено на првата "
-"сесија, F%2 на втората сесија итн. Може да ги менувате сесиите со "
-"истовремено притискање на CTRL, ALT и соодветното F-копче. Исто така, "
-"панелот на KDE и менијата од работната површина имаат дејства за менување на "
-"сесиите."
-
-#: lock/lockdlg.cc:542
-msgid "&Do not ask again"
-msgstr "&Не прашувај повторно"
-
-#: lock/lockdlg.cc:598
-msgid "Session"
-msgstr "Сесија"
-
-#: lock/lockdlg.cc:598
-msgid "Location"
-msgstr "Локација"
-
-#: lock/lockdlg.cc:626
-msgctxt "session"
-msgid "&Activate"
-msgstr "&Активирај"
-
-#: lock/lockdlg.cc:635
-msgid "Start &New Session"
-msgstr "Започни нова &сесија"
-
-#: ksystemactivitydialog.cpp:39
-msgid "System Activity"
-msgstr "Активност на системот"
-
 #: krunnerdialog.cpp:67 krunnerapp.cpp:124
 msgid "Run Command"
 msgstr "Изврши команда"
@@ -256,17 +252,71 @@ msgstr "Aaron J. Seigo"
 msgid "Author and maintainer"
 msgstr "Автор и одржувач"
 
-#: configdialog.cpp:50
+#: krunnerapp.cpp:129
+msgid "Run Command on clipboard contents"
+msgstr "Изврши наредба врз содржината на таблата за исечоци"
+
+#: krunnerapp.cpp:135
+msgid "Show System Activity"
+msgstr "Прикажи активност на системот"
+
+#: krunnerapp.cpp:148
+msgid "Switch User"
+msgstr "Смени корисник"
+
+#: krunnerapp.cpp:158
+msgid "Lock Session"
+msgstr "Заклучи ја сесијата"
+
+#: krunnerapp.cpp:166
+msgid "Log Out"
+msgstr "Одјави се"
+
+#: krunnerapp.cpp:171
+msgid "Log Out Without Confirmation"
+msgstr "Одјави се без потврда"
+
+#: krunnerapp.cpp:176
+msgid "Halt Without Confirmation"
+msgstr "Исклучи без потврда"
+
+#: krunnerapp.cpp:181
+msgid "Reboot Without Confirmation"
+msgstr "Рестартирај без потврда"
+
+#: krunnerapp.cpp:219
+#, kde-format
+msgctxt "Run krunner restricting the search only to runner %1"
+msgid "Run Command (runner \"%1\" only)"
+msgstr "Изврши наредба (само за runner „%1“)"
+
+#: krunnerapp.cpp:397
+msgid ""
+"Could not log out properly.\n"
+"The session manager cannot be contacted. You can try to force a shutdown by "
+"pressing Ctrl+Alt+Backspace; note, however, that your current session will "
+"not be saved with a forced shutdown."
+msgstr ""
+"Не може да се одјавите правилно.\n"
+"Не можеше да се контактира со менаџерот на сесии. Може да се обидете да "
+"присилите исклучување со притискање на Ctrl+Alt+Backspace. Забележете дека "
+"вашата тековна сесија нема да биде снимена при присилно исклучување."
+
+#: configdialog.cpp:52
 msgid "Plugins"
 msgstr "Приклучоци"
 
-#: configdialog.cpp:74
+#: configdialog.cpp:76
 msgid "User Interface"
 msgstr "Кориснички интерфејс"
 
-#: configdialog.cpp:80
+#: configdialog.cpp:82
 msgid "Available Features"
 msgstr "Достапни можности"
+
+#: ksystemactivitydialog.cpp:39
+msgid "System Activity"
+msgstr "Активност на системот"
 
 #. i18n: file: interfaceOptions.ui:17
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -400,53 +450,3 @@ msgstr ""
 "       бидејќи и онака не може ништо да се гледа на екранот. Но, некои "
 "чувари на екранот\n"
 "       извршуваат корисни пресметувања, па не е пожелно да се суспендираат."
-
-#: krunnerapp.cpp:129
-msgid "Run Command on clipboard contents"
-msgstr "Изврши наредба врз содржината на таблата за исечоци"
-
-#: krunnerapp.cpp:135
-msgid "Show System Activity"
-msgstr "Прикажи активност на системот"
-
-#: krunnerapp.cpp:148
-msgid "Switch User"
-msgstr "Смени корисник"
-
-#: krunnerapp.cpp:158
-msgid "Lock Session"
-msgstr "Заклучи ја сесијата"
-
-#: krunnerapp.cpp:166
-msgid "Log Out"
-msgstr "Одјави се"
-
-#: krunnerapp.cpp:171
-msgid "Log Out Without Confirmation"
-msgstr "Одјави се без потврда"
-
-#: krunnerapp.cpp:176
-msgid "Halt Without Confirmation"
-msgstr "Исклучи без потврда"
-
-#: krunnerapp.cpp:181
-msgid "Reboot Without Confirmation"
-msgstr "Рестартирај без потврда"
-
-#: krunnerapp.cpp:219
-#, kde-format
-msgctxt "Run krunner restricting the search only to runner %1"
-msgid "Run Command (runner \"%1\" only)"
-msgstr "Изврши наредба (само за runner „%1“)"
-
-#: krunnerapp.cpp:397
-msgid ""
-"Could not log out properly.\n"
-"The session manager cannot be contacted. You can try to force a shutdown by "
-"pressing Ctrl+Alt+Backspace; note, however, that your current session will "
-"not be saved with a forced shutdown."
-msgstr ""
-"Не може да се одјавите правилно.\n"
-"Не можеше да се контактира со менаџерот на сесии. Може да се обидете да "
-"присилите исклучување со притискање на Ctrl+Alt+Backspace. Забележете дека "
-"вашата тековна сесија нема да биде снимена при присилно исклучување."
