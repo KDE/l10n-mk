@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-03-14 04:22+0100\n"
+"POT-Creation-Date: 2010-03-15 04:25+0100\n"
 "PO-Revision-Date: 2010-01-30 09:45+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -20,79 +20,920 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: infocenter.cpp:28
-#, fuzzy
-#| msgid "KDE Info Center"
-msgctxt "Main window title"
-msgid "KInfocenter"
-msgstr "KDE Инфоцентар"
+#: base/info_aix.cpp:54
+msgid "Name"
+msgstr "Име"
 
-#: infocenter.cpp:95
-#, fuzzy
-#| msgid "About Current Module"
-msgctxt "Information about current module located in about menu"
-msgid "About Current Information Module"
-msgstr "За моменталниот модул"
+#: base/info_aix.cpp:55
+msgid "Status"
+msgstr "Статус"
 
-#: infocenter.cpp:113
-msgctxt "Help button"
-msgid "Help"
+#: base/info_aix.cpp:56
+msgid "Location"
+msgstr "Локација"
+
+#: base/info_aix.cpp:57 base/info_fbsd.cpp:305
+msgid "Description"
+msgstr "Опис"
+
+#: base/info_aix.cpp:177 base/info_hpux.cpp:163 base/info_hpux.cpp:438
+#: base/info_linux.cpp:113 base/info_netbsd.cpp:53 base/info_openbsd.cpp:49
+#: base/os_base.h:203
+#, fuzzy
+#| msgid "Device Information"
+msgid "Information"
+msgstr "Информации за уредот"
+
+#: base/info_aix.cpp:178 base/info_hpux.cpp:164 base/info_hpux.cpp:439
+#: base/info_linux.cpp:113 base/info_netbsd.cpp:53 base/info_openbsd.cpp:49
+#: base/info_solaris.cpp:697 base/os_base.h:203
+msgid "Value"
+msgstr "Вредност"
+
+#: base/info_aix.cpp:307
+msgctxt "Mebibyte"
+msgid "MiB "
+msgstr "MiB "
+
+#: base/info_aix.cpp:312 base/info_fbsd.cpp:277 base/info_fbsd.cpp:305
+#: base/info_hpux.cpp:361 base/info_linux.cpp:476 base/info_netbsd.cpp:161
+#: base/info_netbsd.cpp:273 base/info_openbsd.cpp:172
+#: base/info_openbsd.cpp:267 base/info_solaris.cpp:174
+msgid "Device"
+msgstr "Уред"
+
+#: base/info_aix.cpp:313 base/info_fbsd.cpp:277 base/info_hpux.cpp:362
+#: base/info_linux.cpp:476 base/info_netbsd.cpp:273 base/info_openbsd.cpp:267
+#: base/info_solaris.cpp:174
+msgid "Mount Point"
+msgstr "Точка на монтирање"
+
+#: base/info_aix.cpp:314 base/info_fbsd.cpp:277 base/info_hpux.cpp:363
+#: base/info_linux.cpp:476 base/info_netbsd.cpp:273 base/info_openbsd.cpp:267
+#: base/info_solaris.cpp:174
+msgid "FS Type"
+msgstr "Тип на датотечен систем"
+
+#: base/info_aix.cpp:315 base/info_hpux.cpp:364 base/info_linux.cpp:476
+#: base/info_netbsd.cpp:273 base/info_solaris.cpp:174
+msgid "Total Size"
+msgstr "Вкупна големина"
+
+#: base/info_aix.cpp:316 base/info_hpux.cpp:365 base/info_linux.cpp:476
+#: base/info_netbsd.cpp:273 base/info_solaris.cpp:174
+msgid "Free Size"
+msgstr "Слободен простор"
+
+#: base/info_aix.cpp:334 base/info_aix.cpp:340 base/info_hpux.cpp:383
+#: base/info_hpux.cpp:389
+msgid "n/a"
+msgstr "нема"
+
+#: base/info_fbsd.cpp:81
+#, kde-format
+msgid "CPU %1: %2, %3 MHz"
+msgstr "Процесор %1: %2, %3 MHz"
+
+#: base/info_fbsd.cpp:83
+#, kde-format
+msgid "CPU %1: %2, unknown speed"
+msgstr "Процесор %1: %2, непозната брзина"
+
+#: base/info_fbsd.cpp:145
+msgid ""
+"Your sound system could not be queried.  /dev/sndstat does not exist or is "
+"not readable."
+msgstr ""
+"Вашиот звучен систем не можеше да биде проверен.  /dev/sndstat не постои или "
+"не може да биде прочитан."
+
+#: base/info_fbsd.cpp:173
+msgid ""
+"SCSI subsystem could not be queried: /sbin/camcontrol could not be found"
+msgstr ""
+"SCSI-потсистемот не можеше да биде проверен: /sbin/camcontrol не беше "
+"пронајдена"
+
+#: base/info_fbsd.cpp:178
+msgid ""
+"SCSI subsystem could not be queried: /sbin/camcontrol could not be executed"
+msgstr ""
+"SCSI-потсистемот не можеше да биде проверен: /sbin/camcontrol не можеше да "
+"биде извршена"
+
+#: base/info_fbsd.cpp:226
+msgid ""
+"Could not find any programs with which to query your system's PCI information"
+msgstr ""
+"Не можев да најдам ниту една програма со која да ја проверам информацијата "
+"за PCI на Вашиот систем"
+
+#: base/info_fbsd.cpp:243
+#, kde-format
+msgid "PCI subsystem could not be queried: %1 could not be executed"
+msgstr ""
+"PCI-потсистемот не можеше да биде проверен: %1 не можеше да биде извршена"
+
+#: base/info_fbsd.cpp:255
+msgid "The PCI subsystem could not be queried, this may need root privileges."
+msgstr ""
+"PCI-потсистемот не можеше да биде проверен, за ова можеби ќе требаат "
+"привилегии за root."
+
+#: base/info_fbsd.cpp:270
+msgid "Could not check file system info: "
+msgstr "Не можев да ги проверам информациите за дат. систем: "
+
+#: base/info_fbsd.cpp:277 base/info_linux.cpp:476 base/info_openbsd.cpp:267
+#: base/info_solaris.cpp:174
+msgid "Mount Options"
+msgstr "Опции за монтирање"
+
+#: base/info_hpux.cpp:129
+msgid "PA-RISC Processor"
+msgstr "Процесор PA-RISC"
+
+#: base/info_hpux.cpp:131
+msgid "PA-RISC Revision"
+msgstr "Ревизија на PA-RISC"
+
+#: base/info_hpux.cpp:168
+msgid "Machine"
+msgstr "Машина"
+
+#: base/info_hpux.cpp:175
+msgid "Model"
+msgstr "Модел"
+
+#: base/info_hpux.cpp:182
+msgid "Machine Identification Number"
+msgstr "Број за идент. на машина"
+
+#: base/info_hpux.cpp:183 base/info_solaris.cpp:619
+msgid "(none)"
+msgstr "(нема)"
+
+#: base/info_hpux.cpp:188
+msgid "Number of Active Processors"
+msgstr "Број на активни процесори"
+
+#: base/info_hpux.cpp:192
+msgid "CPU Clock"
+msgstr "Такт на процесорот"
+
+#: base/info_hpux.cpp:193 base/info_solaris.cpp:69
+msgid "MHz"
+msgstr "MHz"
+
+#: base/info_hpux.cpp:226
+msgid "(unknown)"
+msgstr "(непознато)"
+
+#: base/info_hpux.cpp:230
+msgid "CPU Architecture"
+msgstr "Архитектура на процесорот"
+
+#: base/info_hpux.cpp:236
+msgid "enabled"
+msgstr "овозможено"
+
+#: base/info_hpux.cpp:236
+msgid "disabled"
+msgstr "оневозможено"
+
+#: base/info_hpux.cpp:238
+msgid "Numerical Coprocessor (FPU)"
+msgstr "Нумерички копроцесор (FPU)"
+
+#: base/info_hpux.cpp:242 base/info_linux.cpp:334 base/info_linux.cpp:445
+msgctxt "Mebibyte"
+msgid "MiB"
+msgstr "MiB"
+
+#: base/info_hpux.cpp:243
+msgid "Total Physical Memory"
+msgstr "Вкупна физичка меморија"
+
+#: base/info_hpux.cpp:245
+msgid " Bytes"
+msgstr " Бајти"
+
+#: base/info_hpux.cpp:246
+msgid "Size of One Page"
+msgstr "Големина на една страница"
+
+#: base/info_hpux.cpp:356
+msgid "MB"
+msgstr "MB"
+
+#: base/info_hpux.cpp:441
+msgid "Audio Name"
+msgstr "Име на аудио"
+
+#: base/info_hpux.cpp:442
+msgid "Vendor"
+msgstr "Производител"
+
+#: base/info_hpux.cpp:443
+msgid "Alib Version"
+msgstr "Верзија на Alib"
+
+#: base/info_hpux.cpp:447
+msgid "Protocol Revision"
+msgstr "Ревизија на протокол"
+
+#: base/info_hpux.cpp:451
+msgid "Vendor Number"
+msgstr "Број на производител"
+
+#: base/info_hpux.cpp:454
+msgid "Release"
+msgstr "Издание"
+
+#: base/info_hpux.cpp:457
+msgid "Byte Order"
+msgstr "Редослед на бајти"
+
+#: base/info_hpux.cpp:458
+msgid "ALSBFirst (LSB)"
+msgstr "ALSBFirst (LSB)"
+
+#: base/info_hpux.cpp:459
+msgid "AMSBFirst (MSB)"
+msgstr "AMSBFirst (MSB)"
+
+#: base/info_hpux.cpp:460
+msgid "Invalid Byteorder."
+msgstr "Невалиден редослед на бајти."
+
+#: base/info_hpux.cpp:462
+msgid "Bit Order"
+msgstr "Редослед на битови"
+
+#: base/info_hpux.cpp:464
+msgid "ALeastSignificant (LSB)"
+msgstr "ALeastSignificant (LSB)"
+
+#: base/info_hpux.cpp:466
+msgid "AMostSignificant (MSB)"
+msgstr "AMostSignificant (MSB)"
+
+#: base/info_hpux.cpp:466
+msgid "Invalid Bitorder."
+msgstr "Невалиден редослед на битови."
+
+#: base/info_hpux.cpp:468
+msgid "Data Formats"
+msgstr "Формати на податоци"
+
+#: base/info_hpux.cpp:475
+msgid "Sampling Rates"
+msgstr "Брзини на одбирање"
+
+#: base/info_hpux.cpp:481
+msgid "Input Sources"
+msgstr "Влезни извори"
+
+#: base/info_hpux.cpp:483
+msgid "Mono-Microphone"
+msgstr "Микрофон моно"
+
+#: base/info_hpux.cpp:485
+msgid "Mono-Auxiliary"
+msgstr "Надворешно моно"
+
+#: base/info_hpux.cpp:487
+msgid "Left-Microphone"
+msgstr "Микрофон лево"
+
+#: base/info_hpux.cpp:489
+msgid "Right-Microphone"
+msgstr "Микрофон десно"
+
+#: base/info_hpux.cpp:491
+msgid "Left-Auxiliary"
+msgstr "Надворешно лево"
+
+#: base/info_hpux.cpp:493
+msgid "Right-Auxiliary"
+msgstr "Надворешно десно"
+
+#: base/info_hpux.cpp:496
+msgid "Input Channels"
+msgstr "Влезни канали"
+
+#: base/info_hpux.cpp:498 base/info_hpux.cpp:522
+msgid "Mono-Channel"
+msgstr "Моно канал"
+
+#: base/info_hpux.cpp:500 base/info_hpux.cpp:524
+msgid "Left-Channel"
+msgstr "Лев канал"
+
+#: base/info_hpux.cpp:502 base/info_hpux.cpp:526
+msgid "Right-Channel"
+msgstr "Десен канал"
+
+#: base/info_hpux.cpp:505
+msgid "Output Destinations"
+msgstr "Излезни одредишта"
+
+#: base/info_hpux.cpp:507
+msgid "Mono-InternalSpeaker"
+msgstr "Моно внатрешен звучник"
+
+#: base/info_hpux.cpp:509
+msgid "Mono-Jack"
+msgstr "Моно џек"
+
+#: base/info_hpux.cpp:511
+msgid "Left-InternalSpeaker"
+msgstr "Лев внатрешен звучник"
+
+#: base/info_hpux.cpp:513
+msgid "Right-InternalSpeaker"
+msgstr "Десен внатрешен звучник"
+
+#: base/info_hpux.cpp:515
+msgid "Left-Jack"
+msgstr "Лев џек"
+
+#: base/info_hpux.cpp:517
+msgid "Right-Jack"
+msgstr "Десен џек"
+
+#: base/info_hpux.cpp:520
+msgid "Output Channels"
+msgstr "Излезни канали"
+
+#: base/info_hpux.cpp:529
+msgid "Gain"
+msgstr "Засилување"
+
+#: base/info_hpux.cpp:530
+msgid "Input Gain Limits"
+msgstr "Граници на влезно засилување"
+
+#: base/info_hpux.cpp:532
+msgid "Output Gain Limits"
+msgstr "Граници на излезно засилување"
+
+#: base/info_hpux.cpp:535
+msgid "Monitor Gain Limits"
+msgstr "Следи ги границите на засилувањето"
+
+#: base/info_hpux.cpp:538
+msgid "Gain Restricted"
+msgstr "Ограничено засилување"
+
+#: base/info_hpux.cpp:542
+msgid "Lock"
+msgstr "Брава"
+
+#: base/info_hpux.cpp:544
+msgid "Queue Length"
+msgstr "Должина на редица"
+
+#: base/info_hpux.cpp:546
+msgid "Block Size"
+msgstr "Големина на блок"
+
+#: base/info_hpux.cpp:548
+msgid "Stream Port (decimal)"
+msgstr "Порта за поток (децимално)"
+
+#: base/info_linux.cpp:130
+msgid "DMA-Channel"
+msgstr "DMA-канал"
+
+#: base/info_linux.cpp:130 base/info_linux.cpp:181
+msgid "Used By"
+msgstr "Се користи од"
+
+#: base/info_linux.cpp:181
+msgid "I/O-Range"
+msgstr "В/И опсег"
+
+#: base/info_linux.cpp:206
+msgid "Devices"
+msgstr "Уреди"
+
+#: base/info_linux.cpp:206
+msgid "Major Number"
+msgstr "Главен број"
+
+#: base/info_linux.cpp:206
+msgid "Minor Number"
+msgstr "Спореден број"
+
+#: base/info_linux.cpp:220
+msgid "Character Devices"
+msgstr "Знаковни уреди"
+
+#: base/info_linux.cpp:227
+msgid "Block Devices"
+msgstr "Блоковски уреди"
+
+#: base/info_linux.cpp:262
+msgid "Miscellaneous Devices"
+msgstr "Разни уреди"
+
+#: base/info_netbsd.cpp:161 base/info_openbsd.cpp:172
+msgid "IRQ"
+msgstr "IRQ"
+
+#: base/info_netbsd.cpp:179 base/info_openbsd.cpp:185
+msgid "No PCI devices found."
+msgstr "Не се пронајдени PCI-уреди."
+
+#: base/info_netbsd.cpp:188 base/info_openbsd.cpp:194
+msgid "No I/O port devices found."
+msgstr "Не се пронајдени уреди со В/И порти."
+
+#: base/info_netbsd.cpp:199 base/info_openbsd.cpp:203
+msgid "No audio devices found."
+msgstr "Не се пронајдени аудиоуреди."
+
+#: base/info_netbsd.cpp:237 base/info_openbsd.cpp:247
+msgid "No SCSI devices found."
+msgstr "Не се пронајдени SCSI-уреди."
+
+#: base/info_netbsd.cpp:273
+msgid "Total Nodes"
+msgstr "Вкупно јазли"
+
+#: base/info_netbsd.cpp:273
+msgid "Free Nodes"
+msgstr "Слободни јазли"
+
+#: base/info_netbsd.cpp:273
+msgid "Flags"
+msgstr "Знаменца"
+
+#: base/info_openbsd.cpp:261
+msgid "Unable to run /sbin/mount."
+msgstr "Не може да се изврши /sbin/mount."
+
+#: base/info_osx.cpp:121
+msgid "Device Name"
+msgstr "Име на уред"
+
+#: base/info_osx.cpp:131
+msgid "Manufacturer"
+msgstr "Производител"
+
+#: base/info_solaris.cpp:69
+msgid "Instance"
+msgstr "Инстанција"
+
+#: base/info_solaris.cpp:69
+msgid "CPU Type"
+msgstr "Тип на процесор"
+
+#: base/info_solaris.cpp:69
+msgid "FPU Type"
+msgstr "Тип на копроцесор (FPU)"
+
+#: base/info_solaris.cpp:69
+msgid "State"
+msgstr "Состојба"
+
+#: base/info_solaris.cpp:174
+msgid "Mount Time"
+msgstr "Време на монтирање"
+
+#: base/info_solaris.cpp:444
+msgid "character special"
+msgstr "специјален знак"
+
+#: base/info_solaris.cpp:446
+msgid "block special"
+msgstr "специјален блок"
+
+#: base/info_solaris.cpp:449
+msgctxt "Can be either character special or block special"
+msgid "Special type:"
+msgstr "Специјален тип:"
+
+#: base/info_solaris.cpp:462
+msgid "Nodetype:"
+msgstr "Тип на јазол:"
+
+#: base/info_solaris.cpp:469
+msgid "Major/Minor:"
+msgstr "Главен/спореден:"
+
+#: base/info_solaris.cpp:540
+msgid "(no value)"
+msgstr "(без вредност)"
+
+#: base/info_solaris.cpp:605
+msgid "Driver Name:"
+msgstr "Име на управувач:"
+
+#: base/info_solaris.cpp:607
+msgid "(driver not attached)"
+msgstr "(управувачот не е прикачен)"
+
+#: base/info_solaris.cpp:614
+msgid "Binding Name:"
+msgstr "Име на врзување:"
+
+#: base/info_solaris.cpp:629
+msgid "Compatible Names:"
+msgstr "Соодветни имиња:"
+
+#: base/info_solaris.cpp:633
+msgid "Physical Path:"
+msgstr "Физичка патека:"
+
+#: base/info_solaris.cpp:643
+msgid "Properties"
+msgstr "Својства"
+
+#: base/info_solaris.cpp:657
+msgid "Type:"
+msgstr "Тип:"
+
+#: base/info_solaris.cpp:661
+msgid "Value:"
+msgstr "Вредност:"
+
+#: base/info_solaris.cpp:672
+msgid "Minor Nodes"
+msgstr "Споредни јазли"
+
+#: base/info_solaris.cpp:697
+msgid "Device Information"
+msgstr "Информации за уредот"
+
+#: base/os_base.h:36
+msgid "LSBFirst"
+msgstr "Од најмалку важниот бит"
+
+#: base/os_base.h:38
+msgid "MSBFirst"
+msgstr "Од најважниот бит"
+
+#: base/os_base.h:40
+#, kde-format
+msgid "Unknown Order %1"
+msgstr "Непознат редослед %1"
+
+#: base/os_base.h:44
+#, kde-format
+msgid "1 Bit"
+msgid_plural "%1 Bits"
+msgstr[0] "%1 бит"
+msgstr[1] "%1 бита"
+msgstr[2] "%1 бита"
+
+#: base/os_base.h:50
+msgctxt "singular form: '1 Byte' (yes, it is '1', not '%1'!)"
+msgid "1 Byte"
+msgstr "1 Бајт"
+
+#: base/os_base.h:52
+#, kde-format
+msgctxt "plural form: '%1 Bytes'"
+msgid "%1 Bytes"
+msgstr "%1 Бајти"
+
+#: base/os_base.h:90
+#, kde-format
+msgid "Screen # %1"
+msgstr "Екран бр. %1"
+
+#: base/os_base.h:92
+msgid "(Default Screen)"
+msgstr "(Стандарден екран)"
+
+#: base/os_base.h:101
+msgid "Dimensions"
+msgstr "Димензии"
+
+#: base/os_base.h:101
+#, kde-format
+msgid "%1 x %2 Pixels (%3 x %4 mm)"
+msgstr "%1 x %2 пиксели (%3 x %4 mm)"
+
+#: base/os_base.h:105
+msgid "Resolution"
+msgstr "Резолуција"
+
+#: base/os_base.h:105
+#, kde-format
+msgid "%1 x %2 dpi"
+msgstr "%1 x %2 dpi"
+
+#: base/os_base.h:122
+#, kde-format
+msgid "Depths (%1)"
+msgstr "Длабочина (%1)"
+
+#: base/os_base.h:128
+msgid "Root Window ID"
+msgstr "Ид. на коренов прозорец"
+
+#: base/os_base.h:132
+msgid "Depth of Root Window"
+msgstr "Длабочина на коренов прозорец"
+
+#: base/os_base.h:132
+#, kde-format
+msgid "%1 plane"
+msgid_plural "%1 planes"
+msgstr[0] "%1 рамнина"
+msgstr[1] "%1 рамнина"
+msgstr[2] "%1 рамнина"
+
+#: base/os_base.h:136
+msgid "Number of Colormaps"
+msgstr "Број на мапи со бои"
+
+#: base/os_base.h:136
+#, kde-format
+msgid "minimum %1, maximum %2"
+msgstr "минимум %1, максимум %2"
+
+#: base/os_base.h:140
+msgid "Default Colormap"
+msgstr "Стандардна мапа на бои"
+
+#: base/os_base.h:144
+msgid "Default Number of Colormap Cells"
+msgstr "Стандарден број на ќелии од мапата на бои"
+
+#: base/os_base.h:148
+msgid "Preallocated Pixels"
+msgstr "Претходно алоцирани пиксели"
+
+#: base/os_base.h:148
+#, kde-format
+msgid "Black %1, White %2"
+msgstr "Црно %1, бело %2"
+
+#: base/os_base.h:151
+msgid "Yes"
+msgstr "Да"
+
+#: base/os_base.h:152
+msgid "No"
+msgstr "Не"
+
+#: base/os_base.h:155
+msgid "Options"
+msgstr "Опции"
+
+#: base/os_base.h:155
+msgid "When mapped"
+msgstr "Кога е мапирано"
+
+#: base/os_base.h:155
+#, kde-format
+msgid "backing-store: %1, save-unders: %2"
 msgstr ""
 
-#: infocenter.cpp:120
-msgctxt "export button"
-msgid "Export"
+#: base/os_base.h:161
+msgid "Largest Cursor"
+msgstr "Најголемиот покажувач"
+
+#: base/os_base.h:163
+msgid "unlimited"
+msgstr "неограничено"
+
+#: base/os_base.h:169
+msgid "Current Input Event Mask"
 msgstr ""
 
-#: main.cpp:34
+#: base/os_base.h:175
+#, kde-format
+msgid "Event = %1"
+msgstr "Настан = %1"
+
+#: base/os_base.h:208
+msgid "Server Information"
+msgstr "Информации за серверот"
+
+#: base/os_base.h:214
+msgid "Name of the Display"
+msgstr "Име на приказот"
+
+#: base/os_base.h:218
+msgid "Vendor String"
+msgstr "Производител"
+
+#: base/os_base.h:222
+msgid "Vendor Release Number"
+msgstr "Број на издание"
+
+#: base/os_base.h:226
+msgid "Version Number"
+msgstr "Број на верзијата"
+
+#: base/os_base.h:230
+msgid "Available Screens"
+msgstr "Достапни екрани"
+
+#: base/os_base.h:240
+msgid "Supported Extensions"
+msgstr "Поддржани екстензии"
+
+#: base/os_base.h:255
+msgid "Supported Pixmap Formats"
+msgstr "Поддржани формати на пикселмапи"
+
+#: base/os_base.h:262
+#, kde-format
+msgid "Pixmap Format #%1"
+msgstr "Формат на пикселмапа бр. %1"
+
+#: base/os_base.h:262
+#, kde-format
+msgid "%1 BPP, Depth: %2, Scanline padding: %3"
+msgstr ""
+
+#: base/os_base.h:274
+msgid "Maximum Request Size"
+msgstr ""
+
+#: base/os_base.h:278
+msgid "Motion Buffer Size"
+msgstr ""
+
+#: base/os_base.h:282
+msgid "Bitmap"
+msgstr "Битмапа"
+
+#: base/os_base.h:286
+msgid "Unit"
+msgstr "Единица"
+
+#: base/os_base.h:290
+msgid "Order"
+msgstr "Редослед"
+
+#: base/os_base.h:294
+msgid "Padding"
+msgstr "Дополнување"
+
+#: base/os_base.h:298
+msgid "Image Byte Order"
+msgstr "Редослед на бајти во сликата"
+
+#: base/os_current.h:49 base/os_current.h:64 base/os_current.h:95
+#: base/os_current.h:109 base/os_current.h:123 base/os_current.h:137
+#: base/os_current.h:152 base/os_current.h:166 base/os_current.h:180
+msgid "This system may not be completely supported yet."
+msgstr "Овој систем може сѐ уште да не е целосно поддржан."
+
+#: aboutwidget.cpp:38 main.cpp:91
 msgid "KDE Info Center"
 msgstr "KDE Инфоцентар"
 
-#: main.cpp:35
+#: aboutwidget.cpp:40
+msgid "Get system and desktop environment information"
+msgstr "Зема информација за системот и работната околина"
+
+#: aboutwidget.cpp:42
+msgid ""
+"Welcome to the \"KDE Info Center\", a central place to find information "
+"about your computer system."
+msgstr ""
+"Добредојдовте во „Инфоцентарот на KDE“, централно место за да најдете "
+"информации за вашиот компјутерски систем."
+
+#: aboutwidget.cpp:46
+msgid ""
+"Click on the \"Help\" tab on the left to view help for the active control "
+"module. Use the \"Search\" tab if you are unsure where to look for a "
+"particular configuration option."
+msgstr ""
+"Кликнете на ливчето „Помош“ на левата страна за да добиете помош за "
+"активниот контролен модул. Користете го ливчето „Пребарај“ ако не сте "
+"сигурни каде да побарате за некоја одредена опција за конфигурирање."
+
+#: aboutwidget.cpp:52
+msgid "KDE version:"
+msgstr "KDE верзија:"
+
+#: aboutwidget.cpp:53
+msgid "User:"
+msgstr "Корисник:"
+
+#: aboutwidget.cpp:54
+msgid "Hostname:"
+msgstr "Име на компјутер:"
+
+#: aboutwidget.cpp:55
+msgid "System:"
+msgstr "Систем:"
+
+#: aboutwidget.cpp:56
+msgid "Release:"
+msgstr "Верзија:"
+
+#: aboutwidget.cpp:57
+msgid "Machine:"
+msgstr "Машина:"
+
+#: dockcontainer.cpp:70
+#, kde-format
+msgid "<p>Click here to consult the full <a href=\"%1\">Manual</a>.</p>"
+msgstr ""
+"<p>Кликнете тука за да проверите во целото <a href=\"%1\">упатство</a>.</p>"
+
+#: dockcontainer.cpp:75
+msgid ""
+"<h1>KDE Info Center</h1>There is no quick help available for the active info "
+"module.<br /><br />Click <a href = \"kinfocenter/index.html\">here</a> to "
+"read the general Info Center manual."
+msgstr ""
+"<h1>Инфоцентар на KDE</h1>Не постои брза помош за активниот инфомодул.<br /"
+"><br />Кликнете <a href = \"kinfocenter/index.html\">тука</a> за да го "
+"прочитате општото упатство за Инфоцентарот."
+
+#: dockcontainer.cpp:92
+msgid "<big><b>Loading...</b></big>"
+msgstr "<big><b>Вчитувам...</b></big>"
+
+#: dockcontainer.cpp:148
+msgid ""
+"There are unsaved changes in the active module.\n"
+"Do you want to apply the changes before running the new module or discard "
+"the changes?"
+msgstr ""
+"Менувањата во активниот модул не се зачувани.\n"
+"Дали сакате да ги примените менувањата пред да го стартувате новиот модул, "
+"или да ги отфрлите?"
+
+#: dockcontainer.cpp:150
+msgid ""
+"There are unsaved changes in the active module.\n"
+"Do you want to apply the changes before exiting the System Settings or "
+"discard the changes?"
+msgstr ""
+"Измените во активниот модул не се зачувани.\n"
+"Дали сакате да ги примените измените пред да излезете од „Системски "
+"поставувања“, или да ги отфрлите?"
+
+#: dockcontainer.cpp:152
+msgid "Unsaved Changes"
+msgstr "Незачувани измени"
+
+#: indexwidget.cpp:45
+msgid "Filter:"
+msgstr "Филтер:"
+
+#: main.cpp:92
 msgid "The KDE Info Center"
 msgstr "Инфоцентарот на KDE"
 
-#: main.cpp:36
+#: main.cpp:93
 #, fuzzy
 #| msgid "(c) 1998-2004, The KDE Control Center Developers"
-msgid "(c) 2009-2010, The KDE SC KInfocenter Development Team"
+msgid "(c) 1998-2004, The KDE Control Center Developers"
 msgstr "(c) 1998-2002, Развивачите на Контролниот центар на KDE"
 
-#: main.cpp:41
-msgid "David Hubner"
-msgstr ""
+#: main.cpp:98
+msgid "Nicolas Ternisien"
+msgstr "Nicolas Ternisien"
 
-#: main.cpp:41
+#: main.cpp:98
 msgid "Current Maintainer"
 msgstr "Моментален одржувач"
 
-#: main.cpp:42
+#: main.cpp:99
 msgid "Helge Deller"
 msgstr "Helge Deller"
 
-#: main.cpp:42
+#: main.cpp:99
 msgid "Previous Maintainer"
 msgstr "Претходен одржувач"
 
-#: main.cpp:43
+#: main.cpp:100
 msgid "Matthias Hoelzer-Kluepfel"
 msgstr "Matthias Hoelzer-Kluepfel"
 
-#: main.cpp:44
+#: main.cpp:101
 msgid "Matthias Elter"
 msgstr "Matthias Elter"
 
-#: main.cpp:45
+#: main.cpp:102
 msgid "Matthias Ettrich"
 msgstr "Matthias Ettrich"
 
-#: main.cpp:46
+#: main.cpp:103
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
 
-#: main.cpp:47
-msgid "Nicolas Ternisien"
-msgstr "Nicolas Ternisien"
+#: moduletreeview.cpp:43 toplevel.cpp:221
+msgid "General Information"
+msgstr "Општи информации"
+
+#: proxywidget.cpp:51
+msgid "The currently loaded configuration module."
+msgstr "Моментално вчитаниот конфигурационен модул."
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -104,643 +945,35 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "bobibobi@freemail.com.mk"
 
-#: sidepanel.cpp:27
+#: toplevel.cpp:119 toplevel.cpp:150 toplevel.cpp:217
 #, fuzzy
-#| msgid "Information"
-msgctxt "List header topic"
-msgid "Information Modules"
-msgstr "Информација"
-
-#~ msgid "Name"
-#~ msgstr "Име"
-
-#~ msgid "Status"
-#~ msgstr "Статус"
-
-#~ msgid "Location"
-#~ msgstr "Локација"
-
-#~ msgid "Description"
-#~ msgstr "Опис"
-
-#~ msgid "Value"
-#~ msgstr "Вредност"
-
-#~ msgctxt "Mebibyte"
-#~ msgid "MiB "
-#~ msgstr "MiB "
-
-#~ msgid "Device"
-#~ msgstr "Уред"
-
-#~ msgid "Mount Point"
-#~ msgstr "Точка на монтирање"
-
-#~ msgid "FS Type"
-#~ msgstr "Тип на датотечен систем"
-
-#~ msgid "Total Size"
-#~ msgstr "Вкупна големина"
-
-#~ msgid "Free Size"
-#~ msgstr "Слободен простор"
-
-#~ msgid "n/a"
-#~ msgstr "нема"
-
-#~ msgid "CPU %1: %2, %3 MHz"
-#~ msgstr "Процесор %1: %2, %3 MHz"
-
-#~ msgid "CPU %1: %2, unknown speed"
-#~ msgstr "Процесор %1: %2, непозната брзина"
-
-#~ msgid ""
-#~ "Your sound system could not be queried.  /dev/sndstat does not exist or "
-#~ "is not readable."
-#~ msgstr ""
-#~ "Вашиот звучен систем не можеше да биде проверен.  /dev/sndstat не постои "
-#~ "или не може да биде прочитан."
-
-#~ msgid ""
-#~ "SCSI subsystem could not be queried: /sbin/camcontrol could not be found"
-#~ msgstr ""
-#~ "SCSI-потсистемот не можеше да биде проверен: /sbin/camcontrol не беше "
-#~ "пронајдена"
-
-#~ msgid ""
-#~ "SCSI subsystem could not be queried: /sbin/camcontrol could not be "
-#~ "executed"
-#~ msgstr ""
-#~ "SCSI-потсистемот не можеше да биде проверен: /sbin/camcontrol не можеше "
-#~ "да биде извршена"
-
-#~ msgid ""
-#~ "Could not find any programs with which to query your system's PCI "
-#~ "information"
-#~ msgstr ""
-#~ "Не можев да најдам ниту една програма со која да ја проверам "
-#~ "информацијата за PCI на Вашиот систем"
-
-#~ msgid "PCI subsystem could not be queried: %1 could not be executed"
-#~ msgstr ""
-#~ "PCI-потсистемот не можеше да биде проверен: %1 не можеше да биде извршена"
-
-#~ msgid ""
-#~ "The PCI subsystem could not be queried, this may need root privileges."
-#~ msgstr ""
-#~ "PCI-потсистемот не можеше да биде проверен, за ова можеби ќе требаат "
-#~ "привилегии за root."
-
-#~ msgid "Could not check file system info: "
-#~ msgstr "Не можев да ги проверам информациите за дат. систем: "
-
-#~ msgid "Mount Options"
-#~ msgstr "Опции за монтирање"
-
-#~ msgid "PA-RISC Processor"
-#~ msgstr "Процесор PA-RISC"
-
-#~ msgid "PA-RISC Revision"
-#~ msgstr "Ревизија на PA-RISC"
-
-#~ msgid "Machine"
-#~ msgstr "Машина"
-
-#~ msgid "Model"
-#~ msgstr "Модел"
-
-#~ msgid "Machine Identification Number"
-#~ msgstr "Број за идент. на машина"
-
-#~ msgid "(none)"
-#~ msgstr "(нема)"
-
-#~ msgid "Number of Active Processors"
-#~ msgstr "Број на активни процесори"
-
-#~ msgid "CPU Clock"
-#~ msgstr "Такт на процесорот"
-
-#~ msgid "MHz"
-#~ msgstr "MHz"
-
-#~ msgid "(unknown)"
-#~ msgstr "(непознато)"
-
-#~ msgid "CPU Architecture"
-#~ msgstr "Архитектура на процесорот"
-
-#~ msgid "enabled"
-#~ msgstr "овозможено"
-
-#~ msgid "disabled"
-#~ msgstr "оневозможено"
-
-#~ msgid "Numerical Coprocessor (FPU)"
-#~ msgstr "Нумерички копроцесор (FPU)"
-
-#~ msgctxt "Mebibyte"
-#~ msgid "MiB"
-#~ msgstr "MiB"
-
-#~ msgid "Total Physical Memory"
-#~ msgstr "Вкупна физичка меморија"
-
-#~ msgid " Bytes"
-#~ msgstr " Бајти"
-
-#~ msgid "Size of One Page"
-#~ msgstr "Големина на една страница"
-
-#~ msgid "MB"
-#~ msgstr "MB"
-
-#~ msgid "Audio Name"
-#~ msgstr "Име на аудио"
-
-#~ msgid "Vendor"
-#~ msgstr "Производител"
-
-#~ msgid "Alib Version"
-#~ msgstr "Верзија на Alib"
-
-#~ msgid "Protocol Revision"
-#~ msgstr "Ревизија на протокол"
-
-#~ msgid "Vendor Number"
-#~ msgstr "Број на производител"
-
-#~ msgid "Release"
-#~ msgstr "Издание"
-
-#~ msgid "Byte Order"
-#~ msgstr "Редослед на бајти"
-
-#~ msgid "ALSBFirst (LSB)"
-#~ msgstr "ALSBFirst (LSB)"
-
-#~ msgid "AMSBFirst (MSB)"
-#~ msgstr "AMSBFirst (MSB)"
-
-#~ msgid "Invalid Byteorder."
-#~ msgstr "Невалиден редослед на бајти."
-
-#~ msgid "Bit Order"
-#~ msgstr "Редослед на битови"
-
-#~ msgid "ALeastSignificant (LSB)"
-#~ msgstr "ALeastSignificant (LSB)"
-
-#~ msgid "AMostSignificant (MSB)"
-#~ msgstr "AMostSignificant (MSB)"
-
-#~ msgid "Invalid Bitorder."
-#~ msgstr "Невалиден редослед на битови."
-
-#~ msgid "Data Formats"
-#~ msgstr "Формати на податоци"
-
-#~ msgid "Sampling Rates"
-#~ msgstr "Брзини на одбирање"
-
-#~ msgid "Input Sources"
-#~ msgstr "Влезни извори"
-
-#~ msgid "Mono-Microphone"
-#~ msgstr "Микрофон моно"
-
-#~ msgid "Mono-Auxiliary"
-#~ msgstr "Надворешно моно"
-
-#~ msgid "Left-Microphone"
-#~ msgstr "Микрофон лево"
-
-#~ msgid "Right-Microphone"
-#~ msgstr "Микрофон десно"
-
-#~ msgid "Left-Auxiliary"
-#~ msgstr "Надворешно лево"
-
-#~ msgid "Right-Auxiliary"
-#~ msgstr "Надворешно десно"
-
-#~ msgid "Input Channels"
-#~ msgstr "Влезни канали"
-
-#~ msgid "Mono-Channel"
-#~ msgstr "Моно канал"
-
-#~ msgid "Left-Channel"
-#~ msgstr "Лев канал"
-
-#~ msgid "Right-Channel"
-#~ msgstr "Десен канал"
-
-#~ msgid "Output Destinations"
-#~ msgstr "Излезни одредишта"
-
-#~ msgid "Mono-InternalSpeaker"
-#~ msgstr "Моно внатрешен звучник"
-
-#~ msgid "Mono-Jack"
-#~ msgstr "Моно џек"
-
-#~ msgid "Left-InternalSpeaker"
-#~ msgstr "Лев внатрешен звучник"
-
-#~ msgid "Right-InternalSpeaker"
-#~ msgstr "Десен внатрешен звучник"
-
-#~ msgid "Left-Jack"
-#~ msgstr "Лев џек"
-
-#~ msgid "Right-Jack"
-#~ msgstr "Десен џек"
-
-#~ msgid "Output Channels"
-#~ msgstr "Излезни канали"
-
-#~ msgid "Gain"
-#~ msgstr "Засилување"
-
-#~ msgid "Input Gain Limits"
-#~ msgstr "Граници на влезно засилување"
-
-#~ msgid "Output Gain Limits"
-#~ msgstr "Граници на излезно засилување"
-
-#~ msgid "Monitor Gain Limits"
-#~ msgstr "Следи ги границите на засилувањето"
-
-#~ msgid "Gain Restricted"
-#~ msgstr "Ограничено засилување"
-
-#~ msgid "Lock"
-#~ msgstr "Брава"
-
-#~ msgid "Queue Length"
-#~ msgstr "Должина на редица"
-
-#~ msgid "Block Size"
-#~ msgstr "Големина на блок"
-
-#~ msgid "Stream Port (decimal)"
-#~ msgstr "Порта за поток (децимално)"
-
-#~ msgid "DMA-Channel"
-#~ msgstr "DMA-канал"
-
-#~ msgid "Used By"
-#~ msgstr "Се користи од"
-
-#~ msgid "I/O-Range"
-#~ msgstr "В/И опсег"
-
-#~ msgid "Devices"
-#~ msgstr "Уреди"
-
-#~ msgid "Major Number"
-#~ msgstr "Главен број"
-
-#~ msgid "Minor Number"
-#~ msgstr "Спореден број"
-
-#~ msgid "Character Devices"
-#~ msgstr "Знаковни уреди"
-
-#~ msgid "Block Devices"
-#~ msgstr "Блоковски уреди"
-
-#~ msgid "Miscellaneous Devices"
-#~ msgstr "Разни уреди"
-
-#~ msgid "IRQ"
-#~ msgstr "IRQ"
-
-#~ msgid "No PCI devices found."
-#~ msgstr "Не се пронајдени PCI-уреди."
-
-#~ msgid "No I/O port devices found."
-#~ msgstr "Не се пронајдени уреди со В/И порти."
-
-#~ msgid "No audio devices found."
-#~ msgstr "Не се пронајдени аудиоуреди."
-
-#~ msgid "No SCSI devices found."
-#~ msgstr "Не се пронајдени SCSI-уреди."
-
-#~ msgid "Total Nodes"
-#~ msgstr "Вкупно јазли"
-
-#~ msgid "Free Nodes"
-#~ msgstr "Слободни јазли"
-
-#~ msgid "Flags"
-#~ msgstr "Знаменца"
-
-#~ msgid "Unable to run /sbin/mount."
-#~ msgstr "Не може да се изврши /sbin/mount."
-
-#~ msgid "Device Name"
-#~ msgstr "Име на уред"
-
-#~ msgid "Manufacturer"
-#~ msgstr "Производител"
-
-#~ msgid "Instance"
-#~ msgstr "Инстанција"
-
-#~ msgid "CPU Type"
-#~ msgstr "Тип на процесор"
-
-#~ msgid "FPU Type"
-#~ msgstr "Тип на копроцесор (FPU)"
-
-#~ msgid "State"
-#~ msgstr "Состојба"
-
-#~ msgid "Mount Time"
-#~ msgstr "Време на монтирање"
-
-#~ msgid "character special"
-#~ msgstr "специјален знак"
-
-#~ msgid "block special"
-#~ msgstr "специјален блок"
-
-#~ msgctxt "Can be either character special or block special"
-#~ msgid "Special type:"
-#~ msgstr "Специјален тип:"
-
-#~ msgid "Nodetype:"
-#~ msgstr "Тип на јазол:"
-
-#~ msgid "Major/Minor:"
-#~ msgstr "Главен/спореден:"
-
-#~ msgid "(no value)"
-#~ msgstr "(без вредност)"
-
-#~ msgid "Driver Name:"
-#~ msgstr "Име на управувач:"
-
-#~ msgid "(driver not attached)"
-#~ msgstr "(управувачот не е прикачен)"
-
-#~ msgid "Binding Name:"
-#~ msgstr "Име на врзување:"
-
-#~ msgid "Compatible Names:"
-#~ msgstr "Соодветни имиња:"
-
-#~ msgid "Physical Path:"
-#~ msgstr "Физичка патека:"
-
-#~ msgid "Properties"
-#~ msgstr "Својства"
-
-#~ msgid "Type:"
-#~ msgstr "Тип:"
-
-#~ msgid "Value:"
-#~ msgstr "Вредност:"
-
-#~ msgid "Minor Nodes"
-#~ msgstr "Споредни јазли"
-
-#~ msgid "Device Information"
-#~ msgstr "Информации за уредот"
-
-#~ msgid "LSBFirst"
-#~ msgstr "Од најмалку важниот бит"
-
-#~ msgid "MSBFirst"
-#~ msgstr "Од најважниот бит"
-
-#~ msgid "Unknown Order %1"
-#~ msgstr "Непознат редослед %1"
-
-#~ msgid "1 Bit"
-#~ msgid_plural "%1 Bits"
-#~ msgstr[0] "%1 бит"
-#~ msgstr[1] "%1 бита"
-#~ msgstr[2] "%1 бита"
-
-#~ msgctxt "singular form: '1 Byte' (yes, it is '1', not '%1'!)"
-#~ msgid "1 Byte"
-#~ msgstr "1 Бајт"
-
-#~ msgctxt "plural form: '%1 Bytes'"
-#~ msgid "%1 Bytes"
-#~ msgstr "%1 Бајти"
-
-#~ msgid "Screen # %1"
-#~ msgstr "Екран бр. %1"
-
-#~ msgid "(Default Screen)"
-#~ msgstr "(Стандарден екран)"
-
-#~ msgid "Dimensions"
-#~ msgstr "Димензии"
-
-#~ msgid "%1 x %2 Pixels (%3 x %4 mm)"
-#~ msgstr "%1 x %2 пиксели (%3 x %4 mm)"
-
-#~ msgid "Resolution"
-#~ msgstr "Резолуција"
-
-#~ msgid "%1 x %2 dpi"
-#~ msgstr "%1 x %2 dpi"
-
-#~ msgid "Depths (%1)"
-#~ msgstr "Длабочина (%1)"
-
-#~ msgid "Root Window ID"
-#~ msgstr "Ид. на коренов прозорец"
-
-#~ msgid "Depth of Root Window"
-#~ msgstr "Длабочина на коренов прозорец"
-
-#~ msgid "%1 plane"
-#~ msgid_plural "%1 planes"
-#~ msgstr[0] "%1 рамнина"
-#~ msgstr[1] "%1 рамнина"
-#~ msgstr[2] "%1 рамнина"
-
-#~ msgid "Number of Colormaps"
-#~ msgstr "Број на мапи со бои"
-
-#~ msgid "minimum %1, maximum %2"
-#~ msgstr "минимум %1, максимум %2"
-
-#~ msgid "Default Colormap"
-#~ msgstr "Стандардна мапа на бои"
-
-#~ msgid "Default Number of Colormap Cells"
-#~ msgstr "Стандарден број на ќелии од мапата на бои"
-
-#~ msgid "Preallocated Pixels"
-#~ msgstr "Претходно алоцирани пиксели"
-
-#~ msgid "Black %1, White %2"
-#~ msgstr "Црно %1, бело %2"
-
-#~ msgid "Yes"
-#~ msgstr "Да"
-
-#~ msgid "No"
-#~ msgstr "Не"
-
-#~ msgid "Options"
-#~ msgstr "Опции"
-
-#~ msgid "When mapped"
-#~ msgstr "Кога е мапирано"
-
-#~ msgid "Largest Cursor"
-#~ msgstr "Најголемиот покажувач"
-
-#~ msgid "unlimited"
-#~ msgstr "неограничено"
-
-#~ msgid "Event = %1"
-#~ msgstr "Настан = %1"
-
-#~ msgid "Server Information"
-#~ msgstr "Информации за серверот"
-
-#~ msgid "Name of the Display"
-#~ msgstr "Име на приказот"
-
-#~ msgid "Vendor String"
-#~ msgstr "Производител"
-
-#~ msgid "Vendor Release Number"
-#~ msgstr "Број на издание"
-
-#~ msgid "Version Number"
-#~ msgstr "Број на верзијата"
-
-#~ msgid "Available Screens"
-#~ msgstr "Достапни екрани"
-
-#~ msgid "Supported Extensions"
-#~ msgstr "Поддржани екстензии"
-
-#~ msgid "Supported Pixmap Formats"
-#~ msgstr "Поддржани формати на пикселмапи"
-
-#~ msgid "Pixmap Format #%1"
-#~ msgstr "Формат на пикселмапа бр. %1"
-
-#~ msgid "Bitmap"
-#~ msgstr "Битмапа"
-
-#~ msgid "Unit"
-#~ msgstr "Единица"
-
-#~ msgid "Order"
-#~ msgstr "Редослед"
-
-#~ msgid "Padding"
-#~ msgstr "Дополнување"
-
-#~ msgid "Image Byte Order"
-#~ msgstr "Редослед на бајти во сликата"
-
-#~ msgid "This system may not be completely supported yet."
-#~ msgstr "Овој систем може сѐ уште да не е целосно поддржан."
-
-#~ msgid "Get system and desktop environment information"
-#~ msgstr "Зема информација за системот и работната околина"
-
-#~ msgid ""
-#~ "Welcome to the \"KDE Info Center\", a central place to find information "
-#~ "about your computer system."
-#~ msgstr ""
-#~ "Добредојдовте во „Инфоцентарот на KDE“, централно место за да најдете "
-#~ "информации за вашиот компјутерски систем."
-
-#~ msgid ""
-#~ "Click on the \"Help\" tab on the left to view help for the active control "
-#~ "module. Use the \"Search\" tab if you are unsure where to look for a "
-#~ "particular configuration option."
-#~ msgstr ""
-#~ "Кликнете на ливчето „Помош“ на левата страна за да добиете помош за "
-#~ "активниот контролен модул. Користете го ливчето „Пребарај“ ако не сте "
-#~ "сигурни каде да побарате за некоја одредена опција за конфигурирање."
-
-#~ msgid "KDE version:"
-#~ msgstr "KDE верзија:"
-
-#~ msgid "User:"
-#~ msgstr "Корисник:"
-
-#~ msgid "Hostname:"
-#~ msgstr "Име на компјутер:"
-
-#~ msgid "System:"
-#~ msgstr "Систем:"
-
-#~ msgid "Release:"
-#~ msgstr "Верзија:"
-
-#~ msgid "Machine:"
-#~ msgstr "Машина:"
-
-#~ msgid "<p>Click here to consult the full <a href=\"%1\">Manual</a>.</p>"
-#~ msgstr ""
-#~ "<p>Кликнете тука за да проверите во целото <a href=\"%1\">упатство</a>.</"
-#~ "p>"
-
-#~ msgid ""
-#~ "<h1>KDE Info Center</h1>There is no quick help available for the active "
-#~ "info module.<br /><br />Click <a href = \"kinfocenter/index.html\">here</"
-#~ "a> to read the general Info Center manual."
-#~ msgstr ""
-#~ "<h1>Инфоцентар на KDE</h1>Не постои брза помош за активниот инфомодул."
-#~ "<br /><br />Кликнете <a href = \"kinfocenter/index.html\">тука</a> за да "
-#~ "го прочитате општото упатство за Инфоцентарот."
-
-#~ msgid "<big><b>Loading...</b></big>"
-#~ msgstr "<big><b>Вчитувам...</b></big>"
-
-#~ msgid ""
-#~ "There are unsaved changes in the active module.\n"
-#~ "Do you want to apply the changes before running the new module or discard "
-#~ "the changes?"
-#~ msgstr ""
-#~ "Менувањата во активниот модул не се зачувани.\n"
-#~ "Дали сакате да ги примените менувањата пред да го стартувате новиот "
-#~ "модул, или да ги отфрлите?"
-
-#~ msgid ""
-#~ "There are unsaved changes in the active module.\n"
-#~ "Do you want to apply the changes before exiting the System Settings or "
-#~ "discard the changes?"
-#~ msgstr ""
-#~ "Измените во активниот модул не се зачувани.\n"
-#~ "Дали сакате да ги примените измените пред да излезете од „Системски "
-#~ "поставувања“, или да ги отфрлите?"
-
-#~ msgid "Unsaved Changes"
-#~ msgstr "Незачувани измени"
-
-#~ msgid "Filter:"
-#~ msgstr "Филтер:"
-
-#~ msgid "General Information"
-#~ msgstr "Општи информации"
-
-#~ msgid "The currently loaded configuration module."
-#~ msgstr "Моментално вчитаниот конфигурационен модул."
-
-#~ msgid "&Report Bug..."
-#~ msgstr "И&звести за бубачка..."
-
-#~ msgctxt "Help menu->about <modulename>"
-#~ msgid "About %1"
-#~ msgstr "За %1"
-
-#~ msgid "Report Bug on Module %1..."
-#~ msgstr "Извести за бубачка во модулот %1..."
+#| msgid "About Current Module"
+msgid "About Current Module"
+msgstr "За моменталниот модул"
+
+#: toplevel.cpp:126 toplevel.cpp:158 toplevel.cpp:223
+msgid "&Report Bug..."
+msgstr "И&звести за бубачка..."
+
+#: toplevel.cpp:146
+#, kde-format
+msgctxt "Help menu->about <modulename>"
+msgid "About %1"
+msgstr "За %1"
+
+#: toplevel.cpp:160
+#, kde-format
+msgid "Report Bug on Module %1..."
+msgstr "Извести за бубачка во модулот %1..."
+
+#, fuzzy
+#~| msgid "KDE Info Center"
+#~ msgctxt "Main window title"
+#~ msgid "KInfocenter"
+#~ msgstr "KDE Инфоцентар"
+
+#, fuzzy
+#~| msgid "Information"
+#~ msgctxt "List header topic"
+#~ msgid "Information Modules"
+#~ msgstr "Информација"
