@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmix\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-03-10 04:51+0100\n"
+"POT-Creation-Date: 2010-04-05 04:41+0200\n"
 "PO-Revision-Date: 2009-01-01 22:57+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -58,35 +58,35 @@ msgstr "Достапни миксети:"
 msgid "Visible channels"
 msgstr ""
 
-#: kmix.cpp:123
+#: kmix.cpp:124
 msgid "Hardware &Information"
 msgstr "&Информации за хардверот"
 
-#: kmix.cpp:126 kmixdockwidget.cpp:382
+#: kmix.cpp:127 kmixdockwidget.cpp:382
 msgid "Hide Mixer Window"
 msgstr "Скриј ја миксетата"
 
-#: kmix.cpp:130
+#: kmix.cpp:131
 msgid "Configure &Channels..."
 msgstr "Конфигурирај &канали..."
 
-#: kmix.cpp:133 kmixdockwidget.cpp:103
+#: kmix.cpp:134 kmixdockwidget.cpp:103
 msgid "Select Master Channel..."
 msgstr "Изберете главен канал..."
 
-#: kmix.cpp:145 mdwslider.cpp:110
+#: kmix.cpp:146 mdwslider.cpp:118
 msgid "Increase Volume"
 msgstr "Зголеми гласност"
 
-#: kmix.cpp:150 mdwslider.cpp:121
+#: kmix.cpp:151 mdwslider.cpp:129
 msgid "Decrease Volume"
 msgstr "Намали гласност"
 
-#: kmix.cpp:155
+#: kmix.cpp:156
 msgid "Mute"
 msgstr "Занеми"
 
-#: kmix.cpp:502
+#: kmix.cpp:555
 #, fuzzy, kde-format
 #| msgid ""
 #| "The soundcard containing the master device was unplugged. Changing to "
@@ -98,11 +98,11 @@ msgstr ""
 "Звучната картичка со главниот уред беше исклучена. Менувам на контролата „%"
 "1“ на картичката „%2“"
 
-#: kmix.cpp:511
+#: kmix.cpp:564
 msgid "The last soundcard was unplugged."
 msgstr "Последната звучна картичка беше исклучена."
 
-#: kmix.cpp:780
+#: kmix.cpp:833
 msgid "Mixer Hardware Information"
 msgstr "Инфо. за хардверот на миксетата"
 
@@ -296,59 +296,77 @@ msgstr "Nadeem Hasan"
 msgid "Mute and volume preview, other fixes"
 msgstr "Преглед на занеменост и гласност, други поправки"
 
-#: main.cpp:58
+#: main.cpp:54
+msgid "Colin Guthrie"
+msgstr ""
+
+#: main.cpp:54
+msgid "PulseAudio support"
+msgstr ""
+
+#: main.cpp:59
 msgid ""
 "Inhibits the unhiding of the KMix main window, if KMix is already running."
 msgstr ""
 
-#: mdwenum.cpp:60 mdwslider.cpp:79 mdwswitch.cpp:58
+#: mdwenum.cpp:60 mdwslider.cpp:82 mdwswitch.cpp:58
 msgid "&Hide"
 msgstr "&Скриј"
 
-#: mdwenum.cpp:63 mdwslider.cpp:95 mdwswitch.cpp:61
+#: mdwenum.cpp:63 mdwslider.cpp:103 mdwswitch.cpp:61
 msgid "C&onfigure Shortcuts..."
 msgstr "К&онфигурирај кратенки..."
 
-#: mdwslider.cpp:76
+#: mdwslider.cpp:79
 msgid "&Split Channels"
 msgstr "&Раздели ги каналите"
 
-#: mdwslider.cpp:84
+#: mdwslider.cpp:87
 msgid "&Muted"
 msgstr "&Занеми"
 
-#: mdwslider.cpp:90
+#: mdwslider.cpp:93
 msgid "Set &Record Source"
 msgstr "Постави го изворот на &снимање"
 
-#: mdwslider.cpp:132
+#: mdwslider.cpp:98
+#, fuzzy
+#| msgid "M&ute"
+msgid "Mo&ve"
+msgstr "Зан&еми"
+
+#: mdwslider.cpp:140
 msgid "Toggle Mute"
 msgstr "Промени гласност"
 
-#: mdwslider.cpp:320 mdwslider.cpp:385 mdwslider.cpp:480
+#: mdwslider.cpp:328 mdwslider.cpp:393 mdwslider.cpp:488
 msgid "capture"
 msgstr ""
 
-#: mdwslider.cpp:324 mdwslider.cpp:390
+#: mdwslider.cpp:332 mdwslider.cpp:398
 #, kde-format
 msgid "Capture/Uncapture %1"
 msgstr ""
 
-#: mdwslider.cpp:347 mdwslider.cpp:443
+#: mdwslider.cpp:355 mdwslider.cpp:451
 #, kde-format
 msgid "Mute/Unmute %1"
 msgstr "Исклучи/пушти %1"
 
-#: mdwslider.cpp:526
+#: mdwslider.cpp:534
 #, kde-format
 msgid "%1 (capture)"
+msgstr ""
+
+#: mdwslider.cpp:1065
+msgid "Automatic According to Category"
 msgstr ""
 
 #: mdwswitch.cpp:68
 msgid "Toggle Switch"
 msgstr "Промени го прекинувачот"
 
-#: mixdevice.cpp:42 mixer_oss.cpp:67 mixer_oss.cpp:68
+#: mixdevice.cpp:104 mixer_oss.cpp:67 mixer_oss.cpp:68
 msgid "unknown"
 msgstr "непознато"
 
@@ -370,7 +388,7 @@ msgstr ""
 "Проверете дали е инсталирана звучната картичка\n"
 "и дали е вчитан управувачот за неа.\n"
 
-#: mixer_backend.cpp:186
+#: mixer_backend.cpp:197
 msgid ""
 "kmix:You do not have permission to access the mixer device.\n"
 "Please check your operating systems manual to allow the access."
@@ -378,15 +396,15 @@ msgstr ""
 "kmix:Немате дозвола за пристап до уредот за миксетата.\n"
 "Проверете го упатството на вашиот оперативен систем за да овозможите пристап."
 
-#: mixer_backend.cpp:190
+#: mixer_backend.cpp:201
 msgid "kmix: Could not write to mixer."
 msgstr "kmix: Не можам да запишам во миксетата."
 
-#: mixer_backend.cpp:193
+#: mixer_backend.cpp:204
 msgid "kmix: Could not read from mixer."
 msgstr "kmix: Не можам да прочитам од миксетата."
 
-#: mixer_backend.cpp:196
+#: mixer_backend.cpp:207
 msgid ""
 "kmix: Mixer cannot be found.\n"
 "Please check that the soundcard is installed and that\n"
@@ -396,7 +414,7 @@ msgstr ""
 "Проверете дали е инсталирана звучната картичка\n"
 "и дали е вчитан управувачот за неа.\n"
 
-#: mixer_backend.cpp:201
+#: mixer_backend.cpp:212
 msgid "kmix: Unknown error. Please report how you produced this error."
 msgstr "kmix: Непозната грешка. Пријавете како дојдовте до оваа грешка."
 
@@ -587,6 +605,30 @@ msgstr ""
 "управувачот.\n"
 "Користете „soundon“ кога користите комерцијален OSS."
 
+#: mixer_pulse.cpp:316 mixer_pulse.cpp:373
+msgid "Unknown Application"
+msgstr ""
+
+#: mixer_pulse.cpp:416
+msgid "Event Sounds"
+msgstr ""
+
+#: mixer_pulse.cpp:939
+msgid "Playback Devices"
+msgstr ""
+
+#: mixer_pulse.cpp:945
+msgid "Capture Devices"
+msgstr ""
+
+#: mixer_pulse.cpp:951
+msgid "Playback Streams"
+msgstr ""
+
+#: mixer_pulse.cpp:959
+msgid "Capture Streams"
+msgstr ""
+
 #: mixer_sun.cpp:67
 msgid "Master Volume"
 msgstr "Главна гласност"
@@ -620,11 +662,11 @@ msgstr ""
 "Побарајте од вашиот системски администратор да го поправи /dev/audioctl за "
 "да имате пристап."
 
-#: mixertoolbox.cpp:200
+#: mixertoolbox.cpp:203
 msgid "Sound drivers supported:"
 msgstr "Поддржани управувачи на звук:"
 
-#: mixertoolbox.cpp:201
+#: mixertoolbox.cpp:204
 msgid "Sound drivers used:"
 msgstr "Управувачи на звук што се користат:"
 
@@ -704,15 +746,15 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "vladoboss@mt.net.mk,gjalevska@yahoo.com"
 
-#: viewbase.cpp:76
+#: viewbase.cpp:77
 msgid "&Channels"
 msgstr "&Канали"
 
-#: viewbase.cpp:182
+#: viewbase.cpp:184
 msgid "Device Settings"
 msgstr "Поставувања на уредот"
 
-#: viewdockareapopup.cpp:115
+#: viewdockareapopup.cpp:133
 msgid "Mixer"
 msgstr "Миксета"
 
