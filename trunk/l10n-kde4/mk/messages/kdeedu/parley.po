@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kvoctrain\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-19 04:48+0200\n"
+"POT-Creation-Date: 2010-04-20 05:11+0200\n"
 "PO-Revision-Date: 2007-02-26 21:36+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -146,7 +146,7 @@ msgstr ""
 
 #. i18n: file: src/configure-practice/thresholdoptions.ui:160
 #. i18n: ectx: property (text), widget (QTreeWidget, PracticeWordTypesTreeWidget)
-#: src/editor/editor.cpp:164 rc.cpp:987
+#: src/editor/editor.cpp:164 rc.cpp:1005
 #, fuzzy
 #| msgid "Word t&ype:"
 msgid "Word Types"
@@ -166,7 +166,7 @@ msgstr "Форми за &споредба"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
 #. i18n: file: src/statistics/statisticsmainwindow.ui:66
 #. i18n: ectx: property (text), widget (QRadioButton, multipleChoice)
-#: src/editor/editor.cpp:229 rc.cpp:1104 rc.cpp:1147
+#: src/editor/editor.cpp:229 rc.cpp:1122 rc.cpp:1165
 msgid "Multiple Choice"
 msgstr "Повеќекратен избор"
 
@@ -285,7 +285,7 @@ msgstr "&Истекување"
 #. i18n: ectx: Menu (learning)
 #. i18n: file: src/practice/practicesummaryui.rc:11
 #. i18n: ectx: Menu (learning)
-#: src/welcomescreen/buttondelegate.cpp:45 rc.cpp:272 rc.cpp:1174 rc.cpp:1259
+#: src/welcomescreen/buttondelegate.cpp:45 rc.cpp:272 rc.cpp:1192 rc.cpp:1277
 #, fuzzy
 #| msgid "&Articles"
 msgid "&Practice"
@@ -384,21 +384,27 @@ msgstr ""
 
 #: src/settings/parleyprefs.cpp:38
 #, fuzzy
+#| msgid "Time:"
+msgid "Theme"
+msgstr "Време:"
+
+#: src/settings/parleyprefs.cpp:41
+#, fuzzy
 #| msgid "General"
 msgctxt "title:window general settings"
 msgid "General"
 msgstr "Општо"
 
-#: src/settings/parleyprefs.cpp:38
+#: src/settings/parleyprefs.cpp:41
 #, fuzzy
 msgid "General Settings"
 msgstr "Општи опции"
 
-#: src/settings/parleyprefs.cpp:41
+#: src/settings/parleyprefs.cpp:44
 msgid "View"
 msgstr ""
 
-#: src/settings/parleyprefs.cpp:41
+#: src/settings/parleyprefs.cpp:44
 #, fuzzy
 msgid "View Settings"
 msgstr "Опции за преглед"
@@ -974,7 +980,7 @@ msgstr ""
 msgid "Illogical Values"
 msgstr "Бесмислени вредности"
 
-#: src/configure-practice/configurepracticedialog.cpp:32
+#: src/configure-practice/configurepracticedialog.cpp:31
 #, fuzzy
 #| msgctxt "NAME OF TRANSLATORS"
 #| msgid "Your names"
@@ -982,38 +988,38 @@ msgctxt "@title:window"
 msgid "Configure Practice"
 msgstr "Владимир Стефанов"
 
-#: src/configure-practice/configurepracticedialog.cpp:37
+#: src/configure-practice/configurepracticedialog.cpp:36
 #, fuzzy
 msgctxt ""
 "@title:group vocabulary can be set to be blocked for a certain amount of time"
 msgid "Blocking"
 msgstr "Б&локирање"
 
-#: src/configure-practice/configurepracticedialog.cpp:37
+#: src/configure-practice/configurepracticedialog.cpp:36
 #, fuzzy
 msgid "Blocking Settings"
 msgstr "&Блокирање"
 
-#: src/configure-practice/configurepracticedialog.cpp:40
+#: src/configure-practice/configurepracticedialog.cpp:39
 #, fuzzy
 msgctxt ""
 "@title:group ignore vocabulary based on some properties like word type"
 msgid "Thresholds"
 msgstr "П&рагови"
 
-#: src/configure-practice/configurepracticedialog.cpp:40
+#: src/configure-practice/configurepracticedialog.cpp:39
 #, fuzzy
 msgid "Threshold Settings"
 msgstr "П&рагови"
 
-#: src/configure-practice/configurepracticedialog.cpp:43
+#: src/configure-practice/configurepracticedialog.cpp:42
 msgctxt ""
 "@title:group Configure advanced settings for practicing vocabulary, short "
 "title in config dialog."
 msgid "Advanced"
 msgstr ""
 
-#: src/configure-practice/configurepracticedialog.cpp:43
+#: src/configure-practice/configurepracticedialog.cpp:42
 #, fuzzy
 msgctxt "Configure advanced settings for practicing vocabulary."
 msgid "Advanced Practice Settings"
@@ -1302,14 +1308,14 @@ msgctxt "caption for an overview of the grades for a document"
 msgid "Statistics for \"%1\""
 msgstr "Прикажи с&татистика"
 
-#: src/statistics/statisticsmainwindow.cpp:89 src/parleyactions.cpp:140
+#: src/statistics/statisticsmainwindow.cpp:92 src/parleyactions.cpp:140
 #, fuzzy
 #| msgid "Starting special query..."
 msgid "Start Practice..."
 msgstr "Отпочнувам со специјално пребарување..."
 
-#: src/statistics/statisticsmainwindow.cpp:157
-#: src/statistics/statisticsmainwindow.cpp:168
+#: src/statistics/statisticsmainwindow.cpp:160
+#: src/statistics/statisticsmainwindow.cpp:171
 #, kde-format
 msgctxt "pair of two languages that the user chooses to practice"
 msgid "%1 to %2"
@@ -1326,7 +1332,7 @@ msgstr "С&тепен:"
 #. i18n: ectx: attribute (title), widget (QWidget, tab_4)
 #. i18n: file: src/configure-practice/conjugationoptionswidget.ui:38
 #. i18n: ectx: property (text), widget (QTreeWidget, tenseSelectionTreeWidget)
-#: src/statistics/conjugationoptions.cpp:40 rc.cpp:897 rc.cpp:1113
+#: src/statistics/conjugationoptions.cpp:40 rc.cpp:897 rc.cpp:1131
 #, fuzzy
 #| msgid "Te&nses"
 msgid "Tenses"
@@ -1350,25 +1356,19 @@ msgstr ""
 msgid "Start Practice"
 msgstr "Отпочнувам со специјално пребарување..."
 
-#: src/practice/writtenbackendmode.cpp:71
-#, fuzzy
-#| msgid "Your answer was wrong. %1% done."
-msgid "Your answer was right on the first attempt."
-msgstr "Вашиот одговор беше погрешен. %1% завршено."
-
-#: src/practice/writtenbackendmode.cpp:79
+#: src/practice/writtenbackendmode.cpp:75
 #, fuzzy
 #| msgid "Your answer was wrong. %1% done."
 msgid "Your answer was an already entered synonym."
 msgstr "Вашиот одговор беше погрешен. %1% завршено."
 
-#: src/practice/writtenbackendmode.cpp:81
+#: src/practice/writtenbackendmode.cpp:77
 #, fuzzy
 #| msgid "Your answer was wrong. %1% done."
 msgid "Your answer was a synonym."
 msgstr "Вашиот одговор беше погрешен. %1% завршено."
 
-#: src/practice/writtenbackendmode.cpp:93
+#: src/practice/writtenbackendmode.cpp:89
 #, fuzzy
 #| msgid "Your answer was wrong. %1% done."
 msgid ""
@@ -1376,29 +1376,41 @@ msgid ""
 "wrong."
 msgstr "Вашиот одговор беше погрешен. %1% завршено."
 
-#: src/practice/writtenbackendmode.cpp:102
-#: src/practice/writtenbackendmode.cpp:123
+#: src/practice/writtenbackendmode.cpp:95
+#, fuzzy
+#| msgid "Your answer was wrong. %1% done."
+msgid "Your answer was right on the first attempt, but accents were wrong."
+msgstr "Вашиот одговор беше погрешен. %1% завршено."
+
+#: src/practice/writtenbackendmode.cpp:101
+#, fuzzy
+#| msgid "Your answer was wrong. %1% done."
+msgid "Your answer was right on the first attempt."
+msgstr "Вашиот одговор беше погрешен. %1% завршено."
+
+#: src/practice/writtenbackendmode.cpp:110
+#: src/practice/writtenbackendmode.cpp:130
 #, fuzzy
 #| msgid "Your answer was wrong. %1% done."
 msgid "Your answer was wrong. Please try again."
 msgstr "Вашиот одговор беше погрешен. %1% завршено."
 
-#: src/practice/writtenbackendmode.cpp:110
+#: src/practice/writtenbackendmode.cpp:117
 msgid "Your answer was right... but not on the first try."
 msgstr ""
 
-#: src/practice/writtenbackendmode.cpp:117
+#: src/practice/writtenbackendmode.cpp:124
 #, fuzzy
 #| msgid "Your answer was wrong. %1% done."
 msgid "You did not answer correctly."
 msgstr "Вашиот одговор беше погрешен. %1% завршено."
 
-#: src/practice/writtenbackendmode.cpp:142
-#: src/practice/multiplechoicebackendmode.cpp:111
+#: src/practice/writtenbackendmode.cpp:148
+#: src/practice/multiplechoicebackendmode.cpp:110
 msgid "You revealed the answer by using too many hints."
 msgstr ""
 
-#: src/practice/writtenbackendmode.cpp:152
+#: src/practice/writtenbackendmode.cpp:158
 #, kde-format
 msgid "The solution starts with: %1"
 msgstr ""
@@ -1441,13 +1453,13 @@ msgstr "&Членови"
 msgid "Stop practicing"
 msgstr "&Членови"
 
-#: src/practice/guifrontend.cpp:121
+#: src/practice/guifrontend.cpp:125
 #, fuzzy, kde-format
 msgctxt "Display of the current lesson during practice"
 msgid "Lesson: %1"
 msgstr "Создава лекции"
 
-#: src/practice/guifrontend.cpp:176
+#: src/practice/guifrontend.cpp:187
 #, kde-format
 msgid ""
 "You answered %1 of a total of %2 words.\n"
@@ -1488,7 +1500,7 @@ msgstr ""
 msgid "Not answered during this practice: %1 of %2 (%3 %)"
 msgstr ""
 
-#: src/practice/writtenpracticewidget.cpp:115
+#: src/practice/writtenpracticewidget.cpp:109
 #, fuzzy
 #| msgid "S&ynonyms"
 msgid "Synonym: "
@@ -1619,9 +1631,9 @@ msgstr ""
 msgid "Automatic Translation"
 msgstr "&Превод"
 
-#. i18n: file: src/settings/parley.kcfg:46
+#. i18n: file: src/settings/parley.kcfg:50
 #. i18n: ectx: label, entry (AutomaticTranslation), group (General)
-#: src/parleyactions.cpp:134 rc.cpp:521
+#: src/parleyactions.cpp:134 rc.cpp:524
 msgid "Enable automatic translation of the lesson entries."
 msgstr ""
 
@@ -1775,7 +1787,7 @@ msgstr "Отвори датотека на речник"
 #. i18n: ectx: property (text), widget (QRadioButton, flashCardRadio)
 #. i18n: file: src/statistics/statisticsmainwindow.ui:39
 #. i18n: ectx: property (text), widget (QRadioButton, flashCard)
-#: rc.cpp:32 rc.cpp:1141
+#: rc.cpp:32 rc.cpp:1159
 msgid "Flash Cards"
 msgstr ""
 
@@ -2180,7 +2192,7 @@ msgstr "&Тип на збор:"
 #. i18n: ectx: Menu (file)
 #. i18n: file: src/practice/practiceui.rc:7
 #. i18n: ectx: Menu (file)
-#: rc.cpp:260 rc.cpp:1171 rc.cpp:1256 rc.cpp:1265
+#: rc.cpp:260 rc.cpp:1189 rc.cpp:1274 rc.cpp:1283
 #, fuzzy
 #| msgid "&Fixed"
 msgid "&File"
@@ -2299,7 +2311,7 @@ msgstr "&Користи бои"
 #. i18n: ectx: property (text), widget (QLabel, l_lev7)
 #. i18n: file: src/configure-practice/blockoptions.ui:128
 #. i18n: ectx: property (text), widget (QLabel, l_lev7)
-#: rc.cpp:323 rc.cpp:951
+#: rc.cpp:323 rc.cpp:969
 msgid "Level &7:"
 msgstr "Ниво &7:"
 
@@ -2332,7 +2344,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, l_lev6)
 #. i18n: file: src/configure-practice/blockoptions.ui:63
 #. i18n: ectx: property (text), widget (QLabel, l_lev6)
-#: rc.cpp:338 rc.cpp:939
+#: rc.cpp:338 rc.cpp:957
 msgid "Level &6:"
 msgstr "Ниво &6:"
 
@@ -2365,7 +2377,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, l_lev5)
 #. i18n: file: src/configure-practice/blockoptions.ui:53
 #. i18n: ectx: property (text), widget (QLabel, l_lev5)
-#: rc.cpp:353 rc.cpp:936
+#: rc.cpp:353 rc.cpp:954
 msgid "Level &5:"
 msgstr "Ниво &5:"
 
@@ -2398,7 +2410,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, l_lev4)
 #. i18n: file: src/configure-practice/blockoptions.ui:118
 #. i18n: ectx: property (text), widget (QLabel, l_lev4)
-#: rc.cpp:368 rc.cpp:948
+#: rc.cpp:368 rc.cpp:966
 msgid "Level &4:"
 msgstr "Ниво &4:"
 
@@ -2431,7 +2443,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, l_lev3)
 #. i18n: file: src/configure-practice/blockoptions.ui:192
 #. i18n: ectx: property (text), widget (QLabel, l_lev3)
-#: rc.cpp:383 rc.cpp:957
+#: rc.cpp:383 rc.cpp:975
 msgid "Level &3:"
 msgstr "Ниво &3:"
 
@@ -2464,7 +2476,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, l_lev2)
 #. i18n: file: src/configure-practice/blockoptions.ui:40
 #. i18n: ectx: property (text), widget (QLabel, l_lev2)
-#: rc.cpp:398 rc.cpp:933
+#: rc.cpp:398 rc.cpp:951
 msgid "Level &2:"
 msgstr "Ниво &2:"
 
@@ -2497,7 +2509,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, l_lev1)
 #. i18n: file: src/configure-practice/blockoptions.ui:150
 #. i18n: ectx: property (text), widget (QLabel, l_lev1)
-#: rc.cpp:413 rc.cpp:954
+#: rc.cpp:413 rc.cpp:972
 msgid "Level &1:"
 msgstr "Ниво &1:"
 
@@ -2668,75 +2680,74 @@ msgid "&Clean Up"
 msgstr "Ис&чисти"
 
 #. i18n: file: src/settings/parley.kcfg:11
-#. i18n: ectx: label, entry (NumPreSetting), group (General)
+#. i18n: ectx: label, entry (Theme), group (General)
 #: rc.cpp:497
+msgid "Theme to use for practice and welcome screen"
+msgstr ""
+
+#. i18n: file: src/settings/parley.kcfg:15
+#. i18n: ectx: label, entry (NumPreSetting), group (General)
+#: rc.cpp:500
 #, fuzzy
 msgid "Number of stored setting profiles"
 msgstr "Внеси број на елементи во лекција:"
 
-#. i18n: file: src/settings/parley.kcfg:15
+#. i18n: file: src/settings/parley.kcfg:19
 #. i18n: ectx: label, entry (SmartAppend), group (General)
-#: rc.cpp:500
+#: rc.cpp:503
 msgid ""
 "If true, when using the entry dialog, new rows will be appended as needed"
 msgstr ""
 
-#. i18n: file: src/settings/parley.kcfg:19
+#. i18n: file: src/settings/parley.kcfg:23
 #. i18n: ectx: label, entry (Separator), group (General)
-#: rc.cpp:503
+#: rc.cpp:506
 msgid "This sets the separator used when copying/pasting text, default is Tab"
 msgstr ""
 
-#. i18n: file: src/settings/parley.kcfg:23
+#. i18n: file: src/settings/parley.kcfg:27
 #. i18n: ectx: label, entry (EntriesPerLesson), group (General)
-#: rc.cpp:506
+#: rc.cpp:509
 #, fuzzy
 msgid "The number of entries per lesson"
 msgstr "Внеси број на елементи во лекција:"
 
-#. i18n: file: src/settings/parley.kcfg:27
+#. i18n: file: src/settings/parley.kcfg:31
 #. i18n: ectx: label, entry (AutoOpenLast), group (General)
-#: rc.cpp:509
+#: rc.cpp:512
 msgid "If true, on each application start the last opened file will be loaded"
 msgstr ""
 
-#. i18n: file: src/settings/parley.kcfg:31
+#. i18n: file: src/settings/parley.kcfg:35
 #. i18n: ectx: label, entry (AutoSave), group (General)
-#: rc.cpp:512
+#: rc.cpp:515
 #, fuzzy
 msgid "If true, vocabularies are automatically saved on close and exit"
 msgstr "&Зачувај ги опциите автоматски "
 
-#. i18n: file: src/settings/parley.kcfg:38
+#. i18n: file: src/settings/parley.kcfg:42
 #. i18n: ectx: label, entry (AutoBackup), group (General)
-#: rc.cpp:515
+#: rc.cpp:518
 msgid "If true, a backup is saved every BackupTime minutes"
 msgstr ""
 
-#. i18n: file: src/settings/parley.kcfg:42
+#. i18n: file: src/settings/parley.kcfg:46
 #. i18n: ectx: label, entry (BackupTime), group (General)
-#: rc.cpp:518
+#: rc.cpp:521
 msgid "Time interval between two automatic backups"
 msgstr ""
 
-#. i18n: file: src/settings/parley.kcfg:53
+#. i18n: file: src/settings/parley.kcfg:57
 #. i18n: ectx: label, entry (FlashcardsFrontImage), group (PracticeOptions)
-#: rc.cpp:524
+#: rc.cpp:527
 msgid "Show images on the front of the flashcard."
 msgstr ""
 
-#. i18n: file: src/settings/parley.kcfg:57
+#. i18n: file: src/settings/parley.kcfg:61
 #. i18n: ectx: label, entry (FlashcardsBackImage), group (PracticeOptions)
-#: rc.cpp:527
+#: rc.cpp:530
 msgid "Show images on the back of the flashcard."
 msgstr ""
-
-#. i18n: file: src/settings/parley.kcfg:61
-#. i18n: ectx: label, entry (Theme), group (PracticeOptions)
-#: rc.cpp:530
-#, fuzzy
-msgid "Practice theme to use"
-msgstr "Опции за преглед"
 
 #. i18n: file: src/settings/parley.kcfg:65
 #. i18n: ectx: label, entry (Block), group (PracticeOptions)
@@ -3478,39 +3489,79 @@ msgstr ""
 msgid "Keyboard layout for this locale"
 msgstr ""
 
+#. i18n: file: src/settings/kgametheme/kgamethemeselector.ui:40
+#. i18n: ectx: property (text), widget (QPushButton, getNewButton)
+#: rc.cpp:933
+msgid "&Get New Themes..."
+msgstr ""
+
+#. i18n: file: src/settings/kgametheme/kgamethemeselector.ui:55
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:936
+msgid "Preview"
+msgstr ""
+
+#. i18n: file: src/settings/kgametheme/kgamethemeselector.ui:97
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:939
+msgid "Theme Details"
+msgstr ""
+
+#. i18n: file: src/settings/kgametheme/kgamethemeselector.ui:131
+#. i18n: ectx: property (text), widget (QLabel, labelContact)
+#: rc.cpp:942
+#, fuzzy
+#| msgid "Count:"
+msgid "Contact:"
+msgstr "Број:"
+
+#. i18n: file: src/settings/kgametheme/kgamethemeselector.ui:166
+#. i18n: ectx: property (text), widget (QLabel, labelDescription)
+#: rc.cpp:945
+#, fuzzy
+#| msgid "Type Description"
+msgid "Description:"
+msgstr "Опис на типот"
+
+#. i18n: file: src/settings/kgametheme/kgamethemeselector.ui:201
+#. i18n: ectx: property (text), widget (QLabel, labelAuthor)
+#: rc.cpp:948
+msgid "Author:"
+msgstr "Автор:"
+
 #. i18n: file: src/configure-practice/blockoptions.ui:79
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_Expire)
-#: rc.cpp:942
+#: rc.cpp:960
 msgid "E&xpiring"
 msgstr "&Истекување"
 
 #. i18n: file: src/configure-practice/blockoptions.ui:95
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_Block)
-#: rc.cpp:945
+#: rc.cpp:963
 msgid "Bl&ocking"
 msgstr "Б&локирање"
 
 #. i18n: file: src/configure-practice/blockoptions.ui:218
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:960
+#: rc.cpp:978
 msgid "Do not practice vocabulary that has been asked within:"
 msgstr ""
 
 #. i18n: file: src/configure-practice/blockoptions.ui:228
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:963
+#: rc.cpp:981
 msgid "Vocabulary drops one grade after this much time:"
 msgstr ""
 
 #. i18n: file: src/configure-practice/thresholdoptions.ui:16
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:966
+#: rc.cpp:984
 msgid "Only practice vocabulary that fulfills the following conditions:"
 msgstr ""
 
 #. i18n: file: src/configure-practice/thresholdoptions.ui:25
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:969
+#: rc.cpp:987
 #, fuzzy
 #| msgid "Articles"
 msgid "At least"
@@ -3518,13 +3569,13 @@ msgstr "Членови"
 
 #. i18n: file: src/configure-practice/thresholdoptions.ui:32
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:972
+#: rc.cpp:990
 msgid "At most"
 msgstr ""
 
 #. i18n: file: src/configure-practice/thresholdoptions.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:975
+#: rc.cpp:993
 #, fuzzy
 #| msgid "G&rade:"
 msgid "Grade"
@@ -3532,7 +3583,7 @@ msgstr "С&тепен:"
 
 #. i18n: file: src/configure-practice/thresholdoptions.ui:52
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:978
+#: rc.cpp:996
 #, fuzzy
 #| msgid "Article"
 msgid "Times practiced"
@@ -3540,13 +3591,13 @@ msgstr "Член"
 
 #. i18n: file: src/configure-practice/thresholdoptions.ui:79
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:981
+#: rc.cpp:999
 msgid "Answered incorrectly"
 msgstr ""
 
 #. i18n: file: src/configure-practice/thresholdoptions.ui:152
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_WordTypesInPracticeEnabled)
-#: rc.cpp:984
+#: rc.cpp:1002
 #, fuzzy
 #| msgid "Enter type description:"
 msgid "Enable word type selection"
@@ -3556,7 +3607,7 @@ msgstr "Внесете опис на типот:"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_MultipleChoiceWordTypeConsistancy)
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:290
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_MultipleChoiceWordTypeConsistancy)
-#: rc.cpp:990 rc.cpp:1107
+#: rc.cpp:1008 rc.cpp:1125
 msgid "Use choices of the same word type"
 msgstr ""
 
@@ -3564,7 +3615,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:318
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:993 rc.cpp:1110
+#: rc.cpp:1011 rc.cpp:1128
 msgid "Number of choices"
 msgstr ""
 
@@ -3572,7 +3623,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_IgnoreAccentMistakes)
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:38
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_IgnoreAccentMistakes)
-#: rc.cpp:996 rc.cpp:1026
+#: rc.cpp:1014 rc.cpp:1044
 msgid "Ignore accent mistakes"
 msgstr ""
 
@@ -3580,25 +3631,25 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_IgnoreCapitalizationMistakes)
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:45
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_IgnoreCapitalizationMistakes)
-#: rc.cpp:999 rc.cpp:1029
+#: rc.cpp:1017 rc.cpp:1047
 msgid "Ignore capitalization mistakes"
 msgstr ""
 
 #. i18n: file: src/configure-practice/flashcardsoptionswidget.ui:16
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FlashcardsFrontImage)
-#: rc.cpp:1002
+#: rc.cpp:1020
 msgid "Show images on the front of flashcard"
 msgstr ""
 
 #. i18n: file: src/configure-practice/flashcardsoptionswidget.ui:23
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FlashcardsBackImage)
-#: rc.cpp:1005
+#: rc.cpp:1023
 msgid "Show images on the back of flashcard"
 msgstr ""
 
 #. i18n: file: src/configure-practice/comparisonoptionswidget.ui:16
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ComparisonIncludeAdjective)
-#: rc.cpp:1008
+#: rc.cpp:1026
 #, fuzzy
 #| msgid "Adjective"
 msgid "Include Adjectives"
@@ -3606,13 +3657,13 @@ msgstr "Придавка"
 
 #. i18n: file: src/configure-practice/comparisonoptionswidget.ui:23
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ComparisonIncludeAdverb)
-#: rc.cpp:1011
+#: rc.cpp:1029
 msgid "Include Adverbs"
 msgstr ""
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1014
+#: rc.cpp:1032
 #, fuzzy
 msgid "General Options"
 msgstr "Општи опции"
@@ -3621,7 +3672,7 @@ msgstr "Општи опции"
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AltLearn)
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:26
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AltLearn)
-#: rc.cpp:1017 rc.cpp:1020
+#: rc.cpp:1035 rc.cpp:1038
 msgid ""
 "By checking this, you will use the Leitner method of learning which requires "
 "you to answer correctly to each question 3 times in a row. Wrong answers "
@@ -3630,19 +3681,19 @@ msgstr ""
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:29
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AltLearn)
-#: rc.cpp:1023
+#: rc.cpp:1041
 msgid "Use Leitne&r method (require 3 consecutive correct answers)"
 msgstr ""
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:52
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FlashcardsFrontImage)
-#: rc.cpp:1032
+#: rc.cpp:1050
 msgid "Show images with the question"
 msgstr ""
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:59
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FlashcardsBackImage)
-#: rc.cpp:1035
+#: rc.cpp:1053
 #, fuzzy
 #| msgid "&Show solution"
 msgid "Show images with the solution"
@@ -3650,31 +3701,31 @@ msgstr "&Прикажи решение"
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:66
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowHints)
-#: rc.cpp:1038
+#: rc.cpp:1056
 msgid "Enable Hints"
 msgstr ""
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:73
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PracticeSoundEnabled)
-#: rc.cpp:1041
+#: rc.cpp:1059
 msgid "Enable Sound"
 msgstr ""
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:80
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PracticeImagesEnabled)
-#: rc.cpp:1044
+#: rc.cpp:1062
 msgid "Enable Images"
 msgstr ""
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:87
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_CountSynonymsAsCorrect)
-#: rc.cpp:1047
+#: rc.cpp:1065
 msgid "Accept synonyms as correct"
 msgstr ""
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:94
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_TestOrderLesson)
-#: rc.cpp:1050
+#: rc.cpp:1068
 msgid ""
 "When practicing, new words will be chosen loosely in lesson order if this is "
 "selected.  Otherwise, they will be chosen completely at random."
@@ -3682,7 +3733,7 @@ msgstr ""
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:97
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_TestOrderLesson)
-#: rc.cpp:1053
+#: rc.cpp:1071
 msgid "&Practice in lesson order"
 msgstr ""
 
@@ -3690,7 +3741,7 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QLabel, label)
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:121
 #. i18n: ectx: property (toolTip), widget (KIntSpinBox, kcfg_TestNumberOfEntries)
-#: rc.cpp:1056 rc.cpp:1062
+#: rc.cpp:1074 rc.cpp:1080
 msgid ""
 "The number of times vocabulary will show up repeatedly until it is answered "
 "correctly."
@@ -3698,7 +3749,7 @@ msgstr ""
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:111
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1059
+#: rc.cpp:1077
 msgid "&Active entries during practice:"
 msgstr ""
 
@@ -3706,13 +3757,13 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_ShowSolutionAfterAnswer)
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:167
 #. i18n: ectx: property (toolTip), widget (KIntSpinBox, kcfg_ShowSolutionAfterAnswerTime)
-#: rc.cpp:1065 rc.cpp:1071
+#: rc.cpp:1083 rc.cpp:1089
 msgid "After the answer was given the solution will be shown for this long"
 msgstr ""
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:160
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowSolutionAfterAnswer)
-#: rc.cpp:1068
+#: rc.cpp:1086
 #, fuzzy
 #| msgid "&Show solution"
 msgid "&Show solution after answering:"
@@ -3720,7 +3771,7 @@ msgstr "&Прикажи решение"
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:170
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, kcfg_ShowSolutionAfterAnswerTime)
-#: rc.cpp:1074
+#: rc.cpp:1092
 msgid "unlimited"
 msgstr ""
 
@@ -3728,14 +3779,14 @@ msgstr ""
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_ShowSolutionAfterAnswerTime)
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:266
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_PracticeTimeoutTimePerAnswer)
-#: rc.cpp:1077 rc.cpp:1101
+#: rc.cpp:1095 rc.cpp:1119
 msgctxt "Seconds (suffix)"
 msgid "s"
 msgstr ""
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:204
 #. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_PracticeTimeout)
-#: rc.cpp:1080
+#: rc.cpp:1098
 msgid ""
 "If a time limit is set, an answer has to have been given within the time set "
 "when practicing."
@@ -3743,7 +3794,7 @@ msgstr ""
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:207
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_PracticeTimeout)
-#: rc.cpp:1083
+#: rc.cpp:1101
 #, fuzzy
 #| msgctxt "state of a row"
 #| msgid "Active, Not in Query"
@@ -3752,37 +3803,37 @@ msgstr "Активен, не е за пребарување"
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:231
 #. i18n: ectx: property (text), widget (QRadioButton, ShowSolutionRadio)
-#: rc.cpp:1086
+#: rc.cpp:1104
 msgid "&Show solution"
 msgstr "&Прикажи решение"
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:238
 #. i18n: ectx: property (text), widget (QRadioButton, ContinueRadio)
-#: rc.cpp:1089
+#: rc.cpp:1107
 msgid "&Continue after timeout"
 msgstr "Продол&жи после истекот на време"
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:250
 #. i18n: ectx: property (text), widget (QLabel, label_mqtime)
-#: rc.cpp:1092
+#: rc.cpp:1110
 msgid "Limit:"
 msgstr ""
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:260
 #. i18n: ectx: property (toolTip), widget (KIntSpinBox, kcfg_PracticeTimeoutTimePerAnswer)
-#: rc.cpp:1095
+#: rc.cpp:1113
 msgid "Set the maximum time allowed per answer."
 msgstr ""
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:263
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, kcfg_PracticeTimeoutTimePerAnswer)
-#: rc.cpp:1098
+#: rc.cpp:1116
 msgid "Set here the maximum time you want to allow per answer."
 msgstr ""
 
 #. i18n: file: src/configure-practice/conjugationoptionswidget.ui:59
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1116
+#: rc.cpp:1134
 msgid ""
 "You have not defined any tenses.\n"
 "Use Edit->Languages to configure the tenses in the document and add "
@@ -3791,13 +3842,13 @@ msgstr ""
 
 #. i18n: file: src/parleyui.rc:19
 #. i18n: ectx: Menu (help)
-#: rc.cpp:1120
+#: rc.cpp:1138
 msgid "&Help"
 msgstr ""
 
 #. i18n: file: src/parleyui.rc:24
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:1123
+#: rc.cpp:1141
 msgid "Main Toolbar"
 msgstr ""
 
@@ -3807,7 +3858,7 @@ msgstr ""
 #. i18n: ectx: ToolBar (statisticsToolBar)
 #. i18n: file: src/statistics/statisticsui.rc:18
 #. i18n: ectx: ToolBar (statisticsToolBar)
-#: rc.cpp:1126 rc.cpp:1132 rc.cpp:1177
+#: rc.cpp:1144 rc.cpp:1150 rc.cpp:1195
 #, fuzzy
 msgid "Statistics Toolbar"
 msgstr "Прикажи с&татистика"
@@ -3816,7 +3867,7 @@ msgstr "Прикажи с&татистика"
 #. i18n: ectx: ToolBar (practiceToolBar)
 #. i18n: file: src/practice/practiceui.rc:13
 #. i18n: ectx: ToolBar (practiceToolBar)
-#: rc.cpp:1129 rc.cpp:1268
+#: rc.cpp:1147 rc.cpp:1286
 #, fuzzy
 msgid "Practice Toolbar"
 msgstr "Прикажи с&татистика"
@@ -3825,7 +3876,7 @@ msgstr "Прикажи с&татистика"
 #. i18n: ectx: ToolBar (practiceSummaryToolBar)
 #. i18n: file: src/practice/practicesummaryui.rc:18
 #. i18n: ectx: ToolBar (practiceSummaryToolBar)
-#: rc.cpp:1135 rc.cpp:1262
+#: rc.cpp:1153 rc.cpp:1280
 #, fuzzy
 #| msgid "Article"
 msgid "Practice Summary Toolbar"
@@ -3833,14 +3884,14 @@ msgstr "Член"
 
 #. i18n: file: src/statistics/statisticsmainwindow.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, StatisticsMainWindow)
-#: rc.cpp:1138
+#: rc.cpp:1156
 #, fuzzy
 msgid "Form"
 msgstr "од %1"
 
 #. i18n: file: src/statistics/statisticsmainwindow.ui:59
 #. i18n: ectx: property (text), widget (QRadioButton, mixedLetters)
-#: rc.cpp:1144
+#: rc.cpp:1162
 #, fuzzy
 #| msgid "Article"
 msgid "Mixed Letters"
@@ -3848,13 +3899,13 @@ msgstr "Член"
 
 #. i18n: file: src/statistics/statisticsmainwindow.ui:73
 #. i18n: ectx: property (text), widget (QRadioButton, written)
-#: rc.cpp:1150
+#: rc.cpp:1168
 msgid "Written"
 msgstr ""
 
 #. i18n: file: src/statistics/statisticsmainwindow.ui:83
 #. i18n: ectx: property (text), widget (QRadioButton, exampleSentence)
-#: rc.cpp:1153
+#: rc.cpp:1171
 #, fuzzy
 #| msgid "Example sentence"
 msgid "Example Sentences"
@@ -3862,7 +3913,7 @@ msgstr "Реченица за пример"
 
 #. i18n: file: src/statistics/statisticsmainwindow.ui:93
 #. i18n: ectx: property (text), widget (QRadioButton, gender)
-#: rc.cpp:1156
+#: rc.cpp:1174
 #, fuzzy
 #| msgid "Articles"
 msgid "Gender of Nouns"
@@ -3870,7 +3921,7 @@ msgstr "Членови"
 
 #. i18n: file: src/statistics/statisticsmainwindow.ui:103
 #. i18n: ectx: property (text), widget (QRadioButton, comparisonForms)
-#: rc.cpp:1159
+#: rc.cpp:1177
 #, fuzzy
 #| msgid "&Comparison Forms"
 msgid "Comparison Forms"
@@ -3878,7 +3929,7 @@ msgstr "Форми за &споредба"
 
 #. i18n: file: src/statistics/statisticsmainwindow.ui:113
 #. i18n: ectx: property (text), widget (QRadioButton, conjugations)
-#: rc.cpp:1162
+#: rc.cpp:1180
 #, fuzzy
 #| msgid "Conjugation"
 msgid "Conjugations"
@@ -3886,7 +3937,7 @@ msgstr "Конјугација"
 
 #. i18n: file: src/statistics/statisticsmainwindow.ui:178
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:1165
+#: rc.cpp:1183
 #, fuzzy
 #| msgid "Article"
 msgid "Practice Mode:"
@@ -3894,14 +3945,14 @@ msgstr "Член"
 
 #. i18n: file: src/statistics/statisticsmainwindow.ui:201
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1168
+#: rc.cpp:1186
 #, fuzzy
 msgid "Languages:"
 msgstr "Ја&зик"
 
 #. i18n: file: src/practice/entryfilter.ui:16
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1180
+#: rc.cpp:1198
 msgid ""
 "<p>Your selection of vocabulary for the practice is empty.</p><p>Below you "
 "can choose to ignore some of your configuration settings to start a practice "
@@ -3910,21 +3961,21 @@ msgstr ""
 
 #. i18n: file: src/practice/entryfilter.ui:26
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1183
+#: rc.cpp:1201
 #, fuzzy
 msgid "Ignore Configuration for:"
 msgstr "Го прикажува дијалогот за општите опции"
 
 #. i18n: file: src/practice/entryfilter.ui:32
 #. i18n: ectx: property (text), widget (QCheckBox, lessonCheckBox)
-#: rc.cpp:1186
+#: rc.cpp:1204
 #, fuzzy
 msgid "Ignore Lessons"
 msgstr "&Лекции"
 
 #. i18n: file: src/practice/entryfilter.ui:52
 #. i18n: ectx: property (text), widget (QCheckBox, wordTypeCheckBox)
-#: rc.cpp:1190
+#: rc.cpp:1208
 #, fuzzy
 #| msgid "Word t&ype:"
 msgid "Ignore Word Types"
@@ -3932,14 +3983,14 @@ msgstr "&Тип на збор:"
 
 #. i18n: file: src/practice/entryfilter.ui:72
 #. i18n: ectx: property (text), widget (QCheckBox, blockedCheckBox)
-#: rc.cpp:1194
+#: rc.cpp:1212
 #, fuzzy
 msgid "Ignore Blocked"
 msgstr "Б&локирање"
 
 #. i18n: file: src/practice/entryfilter.ui:92
 #. i18n: ectx: property (text), widget (QCheckBox, timesWrongCheckBox)
-#: rc.cpp:1198
+#: rc.cpp:1216
 #, fuzzy
 #| msgid "Your answer was wrong. %1% done."
 msgid "Ignore Times Answered Incorrectly"
@@ -3947,7 +3998,7 @@ msgstr "Вашиот одговор беше погрешен. %1% заврше�
 
 #. i18n: file: src/practice/entryfilter.ui:112
 #. i18n: ectx: property (text), widget (QCheckBox, timesPracticedCheckBox)
-#: rc.cpp:1202
+#: rc.cpp:1220
 #, fuzzy
 #| msgid "Article"
 msgid "Ignore Times Practiced"
@@ -3955,13 +4006,13 @@ msgstr "Член"
 
 #. i18n: file: src/practice/entryfilter.ui:132
 #. i18n: ectx: property (text), widget (QCheckBox, minMaxGradeCheckBox)
-#: rc.cpp:1206
+#: rc.cpp:1224
 msgid "Ignore Minimum/Maximum Grade"
 msgstr ""
 
 #. i18n: file: src/practice/entryfilter.ui:152
 #. i18n: ectx: property (text), widget (QLabel, lessonLabel_2)
-#: rc.cpp:1210
+#: rc.cpp:1228
 #, fuzzy
 #| msgid "Word t&ype:"
 msgid "Words"
@@ -3969,27 +4020,27 @@ msgstr "&Тип на збор:"
 
 #. i18n: file: src/practice/entryfilter.ui:167
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:1213
+#: rc.cpp:1231
 #, fuzzy
 msgid "Total number of entries:"
 msgstr "Внеси број на елементи во лекција:"
 
 #. i18n: file: src/practice/entryfilter.ui:188
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:1217
+#: rc.cpp:1235
 msgid "Resulting number of words to practice:"
 msgstr ""
 
 #. i18n: file: src/practice/practicesummarywidget.ui:17
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1220
+#: rc.cpp:1238
 #, fuzzy
 msgid "Your practice result:"
 msgstr "Не е барано"
 
 #. i18n: file: src/practice/practicesummarywidget.ui:28
 #. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
-#: rc.cpp:1223
+#: rc.cpp:1241
 #, fuzzy
 #| msgid "Question"
 msgid "Question"
@@ -3999,7 +4050,7 @@ msgstr "Прашање"
 #. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
 #. i18n: file: plasmoid/config.ui:81
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1226 rc.cpp:1283
+#: rc.cpp:1244 rc.cpp:1301
 #, fuzzy
 #| msgid "&Show solution"
 msgid "Solution"
@@ -4007,7 +4058,7 @@ msgstr "&Прикажи решение"
 
 #. i18n: file: src/practice/practicesummarywidget.ui:38
 #. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
-#: rc.cpp:1229
+#: rc.cpp:1247
 #, fuzzy
 #| msgctxt "NAME OF TRANSLATORS"
 #| msgid "Your names"
@@ -4016,19 +4067,19 @@ msgstr "Владимир Стефанов"
 
 #. i18n: file: src/practice/practicesummarywidget.ui:43
 #. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
-#: rc.cpp:1232
+#: rc.cpp:1250
 msgid "Wrong Attempts"
 msgstr ""
 
 #. i18n: file: src/practice/practice_mainwindow.ui:108
 #. i18n: ectx: property (text), widget (QPushButton, answerLaterButton)
-#: rc.cpp:1237
+#: rc.cpp:1255
 msgid "Answer Later"
 msgstr ""
 
 #. i18n: file: src/practice/practice_mainwindow.ui:118
 #. i18n: ectx: property (text), widget (QPushButton, hintButton)
-#: rc.cpp:1240
+#: rc.cpp:1258
 #, fuzzy
 #| msgid "Hindi"
 msgid "Hint"
@@ -4036,7 +4087,7 @@ msgstr "Хинди"
 
 #. i18n: file: src/practice/practice_mainwindow.ui:166
 #. i18n: ectx: property (text), widget (QPushButton, continueButton)
-#: rc.cpp:1243
+#: rc.cpp:1261
 #, fuzzy
 #| msgid "Contained In"
 msgid "Continue"
@@ -4044,7 +4095,7 @@ msgstr "Содржано во"
 
 #. i18n: file: src/practice/practice_mainwindow.ui:183
 #. i18n: ectx: property (text), widget (QPushButton, countAsWrongButton)
-#: rc.cpp:1246
+#: rc.cpp:1264
 #, fuzzy
 #| msgid "I &Know It"
 msgid "I didn't know it"
@@ -4052,7 +4103,7 @@ msgstr "Го &знам"
 
 #. i18n: file: src/practice/practice_mainwindow.ui:190
 #. i18n: ectx: property (text), widget (QPushButton, countAsCorrectButton)
-#: rc.cpp:1249
+#: rc.cpp:1267
 #, fuzzy
 #| msgid "I &Know It"
 msgid "I knew it"
@@ -4060,21 +4111,21 @@ msgstr "Го &знам"
 
 #. i18n: file: src/practice/practice_mainwindow.ui:276
 #. i18n: ectx: property (format), widget (QProgressBar, totalProgress)
-#: rc.cpp:1253
+#: rc.cpp:1271
 #, no-c-format
 msgid "%v/%m"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:18
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:1271
+#: rc.cpp:1289
 #, fuzzy
 msgid "Vocabulary collection:"
 msgstr "Отвори датотека на речник"
 
 #. i18n: file: plasmoid/config.ui:30
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:1274
+#: rc.cpp:1292
 #, fuzzy
 #| msgid "Language Elements"
 msgid "Language Selection"
@@ -4082,26 +4133,26 @@ msgstr "Елементи на јазикот"
 
 #. i18n: file: plasmoid/config.ui:38
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:1277
+#: rc.cpp:1295
 #, fuzzy
 msgid "Top:"
 msgstr "&Машки:"
 
 #. i18n: file: plasmoid/config.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:1280
+#: rc.cpp:1298
 msgid "Bottom:"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:87
 #. i18n: ectx: property (text), widget (QRadioButton, solutionOnHover)
-#: rc.cpp:1286
+#: rc.cpp:1304
 msgid "Reveal solution when mouse cursor is over the widget"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:97
 #. i18n: ectx: property (text), widget (QRadioButton, solutionAlways)
-#: rc.cpp:1289
+#: rc.cpp:1307
 #, fuzzy
 #| msgid "&Show solution"
 msgid "Always show the solution"
@@ -4109,13 +4160,13 @@ msgstr "&Прикажи решение"
 
 #. i18n: file: plasmoid/config.ui:112
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1292
+#: rc.cpp:1310
 msgid "Update interval:"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:153
 #. i18n: ectx: property (text), widget (KPushButton, fontSelectButton)
-#: rc.cpp:1295
+#: rc.cpp:1313
 #, fuzzy
 #| msgid "Selected lessons:"
 msgid "Select Font..."
@@ -4250,6 +4301,10 @@ msgstr ""
 #| msgid "Enter the correct translation:"
 msgid "Fetches an image for the selected translation"
 msgstr "Внеси го точниот превод:"
+
+#, fuzzy
+#~ msgid "Practice theme to use"
+#~ msgstr "Опции за преглед"
 
 #, fuzzy
 #~| msgid "Article"
@@ -4719,11 +4774,6 @@ msgstr "Внеси го точниот превод:"
 #~ msgstr "Несвршено"
 
 #, fuzzy
-#~| msgid "Time:"
-#~ msgid "Theme"
-#~ msgstr "Време:"
-
-#, fuzzy
 #~ msgid "Original Word"
 #~ msgstr "Оригинал"
 
@@ -4840,19 +4890,6 @@ msgstr "Внеси го точниот превод:"
 #~| msgid "&Comparison Forms"
 #~ msgid "Enter Comparison Forms:"
 #~ msgstr "Форми за &споредба"
-
-#, fuzzy
-#~| msgid "Count:"
-#~ msgid "Contact:"
-#~ msgstr "Број:"
-
-#, fuzzy
-#~| msgid "Type Description"
-#~ msgid "Description:"
-#~ msgstr "Опис на типот"
-
-#~ msgid "Author:"
-#~ msgstr "Автор:"
 
 #, fuzzy
 #~ msgid "Total Points:"
