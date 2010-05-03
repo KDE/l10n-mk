@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-02 04:37+0200\n"
+"POT-Creation-Date: 2010-05-03 04:52+0200\n"
 "PO-Revision-Date: 2010-01-29 22:59+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -238,7 +238,7 @@ msgstr "Испрати е-пошта на..."
 msgid "Copy Email Address"
 msgstr "Копирај е-поштенска адреса"
 
-#: HistorySizeDialog.cpp:51 SessionController.cpp:527
+#: HistorySizeDialog.cpp:51 SessionController.cpp:501
 msgid "Scrollback Options"
 msgstr "Опции за историја"
 
@@ -560,40 +560,50 @@ msgstr "Lars Knoll"
 msgid "Thanks to many others.\n"
 msgstr "Благодарност до многу други.\n"
 
-#: MainWindow.cpp:235
+#. i18n: file: ../desktop/konsoleui.rc:45
+#. i18n: ectx: Menu (new-tab)
+#: MainWindow.cpp:233 rc.cpp:882
 msgid "New &Tab"
 msgstr "&Ново ливче"
 
-#: MainWindow.cpp:241
+#: MainWindow.cpp:238
+#, fuzzy
+#| msgid "Delete Profile"
+msgid "&Default Profile"
+msgstr "Избриши профил"
+
+#: MainWindow.cpp:244
 msgid "New &Window"
 msgstr "Нов &прозорец"
 
-#: MainWindow.cpp:246
+#: MainWindow.cpp:249
 msgid "Remote Connection..."
 msgstr "Оддалечено поврзување..."
 
-#: MainWindow.cpp:257
+#: MainWindow.cpp:260
 msgid "&Bookmarks"
 msgstr "О&бележувачи"
 
-#: MainWindow.cpp:268
+#: MainWindow.cpp:271
 msgid "Show Menu Bar"
 msgstr "Прикажи мени"
 
-#: MainWindow.cpp:290 Part.cpp:116
-msgid "Manage Profiles..."
+#: MainWindow.cpp:293 Part.cpp:116
+#, fuzzy
+#| msgid "Manage Profiles..."
+msgid "Configure Profiles..."
 msgstr "Менаџирај профили..."
 
-#: MainWindow.cpp:363
+#: MainWindow.cpp:376
 msgid "You have multiple tabs in this window, are you sure you want to quit?"
 msgstr ""
 "Имате повеќе ливчиња во овој прозорец. Дали навистина сакате да напуштите?"
 
-#: MainWindow.cpp:365 SessionController.cpp:633
+#: MainWindow.cpp:378 SessionController.cpp:608
 msgid "Confirm Close"
 msgstr "Потврда за затворање"
 
-#: MainWindow.cpp:367
+#: MainWindow.cpp:380
 msgid "Close Current Tab"
 msgstr "Затвори го тековното ливче"
 
@@ -1502,19 +1512,19 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "bobibobi@freemail.com.mk"
 
-#. i18n: file: ../desktop/sessionui.rc:14
+#. i18n: file: ../desktop/sessionui.rc:15
 #. i18n: ectx: Menu (edit-copy-input-to)
 #: rc.cpp:849
 msgid "Copy Input To"
 msgstr "Копирај внес во"
 
-#. i18n: file: ../desktop/sessionui.rc:47
+#. i18n: file: ../desktop/sessionui.rc:43
 #. i18n: ectx: Menu (debug)
 #: rc.cpp:852
 msgid "Debug"
 msgstr "Чистење од грешки"
 
-#. i18n: file: ../desktop/sessionui.rc:65
+#. i18n: file: ../desktop/sessionui.rc:62
 #. i18n: ectx: Menu (change-profile)
 #. i18n: file: ../desktop/partui.rc:25
 #. i18n: ectx: Menu (change-profile)
@@ -1534,39 +1544,33 @@ msgstr "Д&вижење наназад"
 msgid "File"
 msgstr "Датотека"
 
-#. i18n: file: ../desktop/konsoleui.rc:15
+#. i18n: file: ../desktop/konsoleui.rc:14
 #. i18n: ectx: Menu (edit)
 #: rc.cpp:867
 msgid "Edit"
 msgstr "Уредување"
 
-#. i18n: file: ../desktop/konsoleui.rc:18
-#. i18n: ectx: Menu (history)
-#: rc.cpp:870
-msgid "Scrollback"
-msgstr "Движење наназад"
-
-#. i18n: file: ../desktop/konsoleui.rc:21
+#. i18n: file: ../desktop/konsoleui.rc:17
 #. i18n: ectx: Menu (view)
-#: rc.cpp:873
+#: rc.cpp:870
 msgid "View"
 msgstr "Приказ"
 
-#. i18n: file: ../desktop/konsoleui.rc:22
+#. i18n: file: ../desktop/konsoleui.rc:18
 #. i18n: ectx: Menu (view-split)
-#: rc.cpp:876
+#: rc.cpp:873
 msgid "Split View"
 msgstr "Подели приказ"
 
-#. i18n: file: ../desktop/konsoleui.rc:40
+#. i18n: file: ../desktop/konsoleui.rc:33
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:879
+#: rc.cpp:876
 msgid "Settings"
 msgstr "Поставувања"
 
-#. i18n: file: ../desktop/konsoleui.rc:47
+#. i18n: file: ../desktop/konsoleui.rc:42
 #. i18n: ectx: Menu (help)
-#: rc.cpp:882
+#: rc.cpp:879
 msgid "Help"
 msgstr "Помош"
 
@@ -1634,103 +1638,88 @@ msgstr "За&твори ливче"
 msgid "Open File Manager"
 msgstr ""
 
-#: SessionController.cpp:408
-msgid "&Copy"
-msgstr "&Копирај"
-
-#: SessionController.cpp:412
-msgid "&Paste"
-msgstr "&Вметни"
-
-#: SessionController.cpp:425
+#: SessionController.cpp:416
 msgid "Paste Selection"
 msgstr "Вметни избор"
 
-#: SessionController.cpp:431
+#: SessionController.cpp:422
 msgid "&Rename Tab..."
 msgstr "П&реименувај ливче..."
 
-#: SessionController.cpp:438
+#: SessionController.cpp:429
 msgid "&All Tabs in Current Window"
 msgstr "Сит&е ливчиња во тековниот прозорец"
 
-#: SessionController.cpp:445
+#: SessionController.cpp:436
 msgid "&Select Tabs..."
 msgstr "Избе&ри ливчиња..."
 
-#: SessionController.cpp:452
+#: SessionController.cpp:443
 msgid "&None"
 msgstr "&Нема"
 
-#: SessionController.cpp:459
+#: SessionController.cpp:450
 #, fuzzy
 #| msgid "Clear && Reset"
 msgid "Clear and Reset"
 msgstr "Исчисти и ресетирај"
 
-#: SessionController.cpp:464
+#: SessionController.cpp:455
 msgid "&ZModem Upload..."
 msgstr ""
 
-#: SessionController.cpp:470
+#: SessionController.cpp:461
 msgid "Monitor for &Activity"
 msgstr "Монитор на &активности"
 
-#: SessionController.cpp:475
+#: SessionController.cpp:466
 msgid "Monitor for &Silence"
 msgstr "Монитор на &тишина"
 
-#: SessionController.cpp:481
+#: SessionController.cpp:472
 msgid "Character Encoding"
 msgstr "Кодирање на знаци"
 
-#: SessionController.cpp:488
-msgid "Increase Text Size"
-msgstr "Зголеми букви"
+#: SessionController.cpp:479
+msgid "Enlarge Font"
+msgstr ""
 
-#: SessionController.cpp:494
-msgid "Decrease Text Size"
-msgstr "Намали букви"
+#: SessionController.cpp:482
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Shrink View"
+msgid "Shrink Font"
+msgstr "Смали приказ"
 
-#: SessionController.cpp:500
-msgid "Search Output..."
-msgstr "Пребарај го излезот..."
-
-#: SessionController.cpp:509
-msgid "Find Next"
-msgstr "Најди следно"
-
-#: SessionController.cpp:516
-msgid "Find Previous"
-msgstr "Најди претходно"
-
-#: SessionController.cpp:522
-msgid "Save Output..."
+#: SessionController.cpp:498
+#, fuzzy
+#| msgid "Save Output..."
+msgid "Save Output As..."
 msgstr "Зачувај го излезот..."
 
-#: SessionController.cpp:532
+#: SessionController.cpp:506
 #, fuzzy
 #| msgid "Clear Scrollback && Reset"
 msgid "Clear Scrollback and Reset"
 msgstr "Исчисти историја и ресетирај"
 
-#: SessionController.cpp:538
+#: SessionController.cpp:513
 msgid "Edit Current Profile..."
 msgstr "Уредување на тековниот профил"
 
-#: SessionController.cpp:542
+#: SessionController.cpp:517
 msgid "Change Profile"
 msgstr "Смени профил"
 
-#: SessionController.cpp:583
+#: SessionController.cpp:558
 msgid "Rename Tab"
 msgstr "Преименување на ливче"
 
-#: SessionController.cpp:584
+#: SessionController.cpp:559
 msgid "Enter new tab text:"
 msgstr "Внесете нов текст за ливчето:"
 
-#: SessionController.cpp:627
+#: SessionController.cpp:602
 msgid ""
 "A program is currently running in this session.  Are you sure you want to "
 "close it?"
@@ -1738,7 +1727,7 @@ msgstr ""
 "Во оваа сесија моментално се извршува програма. Дали навистина сакате да ја "
 "затворите?"
 
-#: SessionController.cpp:630
+#: SessionController.cpp:605
 #, kde-format
 msgid ""
 "The program '%1' is currently running in this session.  Are you sure you "
@@ -1747,43 +1736,43 @@ msgstr ""
 "Во оваа сесија моментално работи програмата „%1“. Дали навистина сакате да "
 "ја затворите?"
 
-#: SessionController.cpp:1188
+#: SessionController.cpp:1163
 msgid "Save ZModem Download to..."
 msgstr ""
 
-#: SessionController.cpp:1197
+#: SessionController.cpp:1172
 msgid ""
 "<p>A ZModem file transfer attempt has been detected, but no suitable ZModem "
 "software was found on this system.</p><p>You may wish to install the 'rzsz' "
 "or 'lrzsz' package.</p>"
 msgstr ""
 
-#: SessionController.cpp:1209
+#: SessionController.cpp:1184
 msgid ""
 "<p>The current session already has a ZModem file transfer in progress.</p>"
 msgstr ""
 
-#: SessionController.cpp:1218
+#: SessionController.cpp:1193
 msgid ""
 "<p>No suitable ZModem software was found on this system.</p><p>You may wish "
 "to install the 'rzsz' or 'lrzsz' package.</p>"
 msgstr ""
 
-#: SessionController.cpp:1224
+#: SessionController.cpp:1199
 msgid "Select Files for ZModem Upload"
 msgstr ""
 
-#: SessionController.cpp:1296
+#: SessionController.cpp:1271
 #, kde-format
 msgid "Save Output From %1"
 msgstr "Зачувување на излезот од %1"
 
-#: SessionController.cpp:1307
+#: SessionController.cpp:1282
 #, kde-format
 msgid "%1 is an invalid URL, the output could not be saved."
 msgstr "%1 е невалидна адреса. Излезот не можеше да биде зачуван."
 
-#: SessionController.cpp:1396
+#: SessionController.cpp:1371
 #, kde-format
 msgid ""
 "A problem occurred when saving the output.\n"
@@ -2006,3 +1995,27 @@ msgstr ""
 #: ZModemDialog.cpp:35
 msgid "&Stop"
 msgstr "&Стоп"
+
+#~ msgid "Scrollback"
+#~ msgstr "Движење наназад"
+
+#~ msgid "&Copy"
+#~ msgstr "&Копирај"
+
+#~ msgid "&Paste"
+#~ msgstr "&Вметни"
+
+#~ msgid "Increase Text Size"
+#~ msgstr "Зголеми букви"
+
+#~ msgid "Decrease Text Size"
+#~ msgstr "Намали букви"
+
+#~ msgid "Search Output..."
+#~ msgstr "Пребарај го излезот..."
+
+#~ msgid "Find Next"
+#~ msgstr "Најди следно"
+
+#~ msgid "Find Previous"
+#~ msgstr "Најди претходно"
