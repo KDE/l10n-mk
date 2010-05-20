@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kvoctrain\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-19 04:48+0200\n"
+"POT-Creation-Date: 2010-05-20 04:49+0200\n"
 "PO-Revision-Date: 2007-02-26 21:36+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -465,7 +465,7 @@ msgstr "Лекција"
 msgid "Number of entries in this lesson."
 msgstr "Внеси број на елементи во лекција:"
 
-#: src/vocabulary/basiccontainermodel.cpp:134
+#: src/vocabulary/basiccontainermodel.cpp:145
 #, fuzzy
 #| msgid "&None"
 msgid "None"
@@ -1533,13 +1533,13 @@ msgstr "&Членови"
 msgid "Stop practicing"
 msgstr "&Членови"
 
-#: src/practice/guifrontend.cpp:125
+#: src/practice/guifrontend.cpp:129
 #, fuzzy, kde-format
 msgctxt "Display of the current lesson during practice"
 msgid "Lesson: %1"
 msgstr "Создава лекции"
 
-#: src/practice/guifrontend.cpp:187
+#: src/practice/guifrontend.cpp:191
 #, kde-format
 msgid ""
 "You answered %2 of a total of %1 word.\n"
@@ -1592,6 +1592,51 @@ msgstr ""
 #, kde-format
 msgid "Not answered during this practice: %1 of %2 (%3 %)"
 msgstr ""
+
+#: src/practice/comparisonmodewidget.cpp:57
+#, fuzzy
+#| msgid "&Comparison Forms"
+msgid "Enter the comparison forms."
+msgstr "Форми за &споредба"
+
+#: src/practice/comparisonbackendmode.cpp:81
+#, fuzzy
+#| msgid "Enter the correct conjugation forms."
+msgid "All comparison forms were right."
+msgstr "Внесете ги точните форми на конјугација."
+
+#: src/practice/comparisonbackendmode.cpp:88
+#, kde-format
+msgctxt ""
+"the user entered the wrong absolute form when practicing comparison forms of "
+"adjectives (the base form of the adjective is wrong)"
+msgid "\"%1\" is the wrong word."
+msgstr ""
+
+#: src/practice/comparisonbackendmode.cpp:92
+msgctxt ""
+"the user entered the wrong comparison forms when practicing comparison forms "
+"of adjectives (good, better, best)"
+msgid "Both comparison forms (comparative and superlative) are wrong."
+msgstr ""
+
+#: src/practice/comparisonbackendmode.cpp:95
+#, fuzzy
+#| msgid "Your answer was wrong. %1% done."
+msgctxt ""
+"the user entered the wrong comparison forms when practicing comparison forms "
+"of adjectives (second form wrong - better)"
+msgid "The comparative is wrong."
+msgstr "Вашиот одговор беше погрешен. %1% завршено."
+
+#: src/practice/comparisonbackendmode.cpp:98
+#, fuzzy
+#| msgid "Your answer was wrong. %1% done."
+msgctxt ""
+"the user entered the wrong comparison forms when practicing comparison forms "
+"of adjectives (third form wrong - best)"
+msgid "The superlative is wrong."
+msgstr "Вашиот одговор беше погрешен. %1% завршено."
 
 #: src/practice/writtenpracticewidget.cpp:119
 #, fuzzy
@@ -2335,7 +2380,7 @@ msgstr ""
 #. i18n: ectx: Menu (file)
 #. i18n: file: src/practice/practiceui.rc:7
 #. i18n: ectx: Menu (file)
-#: rc.cpp:269 rc.cpp:1195 rc.cpp:1282 rc.cpp:1291
+#: rc.cpp:269 rc.cpp:1195 rc.cpp:1282 rc.cpp:1302
 #, fuzzy
 #| msgid "&Fixed"
 msgid "&File"
@@ -2352,7 +2397,7 @@ msgstr "&Истекување"
 #. i18n: ectx: Menu (view)
 #. i18n: file: src/practice/practiceui.rc:12
 #. i18n: ectx: Menu (view)
-#: rc.cpp:275 rc.cpp:1294
+#: rc.cpp:275 rc.cpp:1305
 msgid "&View"
 msgstr ""
 
@@ -4004,7 +4049,7 @@ msgstr ""
 #. i18n: ectx: ToolBar (practiceToolBar)
 #. i18n: file: src/practice/practiceui.rc:18
 #. i18n: ectx: ToolBar (practiceToolBar)
-#: rc.cpp:1156 rc.cpp:1297
+#: rc.cpp:1156 rc.cpp:1308
 #, fuzzy
 msgid "Practice Toolbar"
 msgstr "Прикажи с&татистика"
@@ -4189,7 +4234,7 @@ msgstr "Прашање"
 #. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
 #. i18n: file: plasmoid/config.ui:81
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1250 rc.cpp:1312
+#: rc.cpp:1250 rc.cpp:1323
 #, fuzzy
 #| msgid "&Show solution"
 msgid "Solution"
@@ -4261,16 +4306,38 @@ msgstr "Го &знам"
 msgid "%v/%m"
 msgstr ""
 
+#. i18n: file: src/practice/practice_widget_comparison.ui:42
+#. i18n: ectx: property (text), widget (QLabel, absoluteLabel)
+#: rc.cpp:1291
+#, fuzzy
+msgid "absolute"
+msgstr "Фраза"
+
+#. i18n: file: src/practice/practice_widget_comparison.ui:99
+#. i18n: ectx: property (text), widget (QLabel, comparativeLabel)
+#: rc.cpp:1295
+#, fuzzy
+msgid "comparative"
+msgstr "С&поредба"
+
+#. i18n: file: src/practice/practice_widget_comparison.ui:156
+#. i18n: ectx: property (text), widget (QLabel, superlativeLabel)
+#: rc.cpp:1299
+#, fuzzy
+#| msgid "&Articles"
+msgid "superlative"
+msgstr "&Членови"
+
 #. i18n: file: plasmoid/config.ui:18
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:1300
+#: rc.cpp:1311
 #, fuzzy
 msgid "Vocabulary collection:"
 msgstr "Отвори датотека на речник"
 
 #. i18n: file: plasmoid/config.ui:30
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:1303
+#: rc.cpp:1314
 #, fuzzy
 #| msgid "Language Elements"
 msgid "Language Selection"
@@ -4278,26 +4345,26 @@ msgstr "Елементи на јазикот"
 
 #. i18n: file: plasmoid/config.ui:38
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:1306
+#: rc.cpp:1317
 #, fuzzy
 msgid "Top:"
 msgstr "&Машки:"
 
 #. i18n: file: plasmoid/config.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:1309
+#: rc.cpp:1320
 msgid "Bottom:"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:87
 #. i18n: ectx: property (text), widget (QRadioButton, solutionOnHover)
-#: rc.cpp:1315
+#: rc.cpp:1326
 msgid "Reveal solution when mouse cursor is over the widget"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:97
 #. i18n: ectx: property (text), widget (QRadioButton, solutionAlways)
-#: rc.cpp:1318
+#: rc.cpp:1329
 #, fuzzy
 #| msgid "&Show solution"
 msgid "Always show the solution"
@@ -4305,13 +4372,13 @@ msgstr "&Прикажи решение"
 
 #. i18n: file: plasmoid/config.ui:112
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1321
+#: rc.cpp:1332
 msgid "Update interval:"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:153
 #. i18n: ectx: property (text), widget (KPushButton, fontSelectButton)
-#: rc.cpp:1324
+#: rc.cpp:1335
 #, fuzzy
 #| msgid "Selected lessons:"
 msgid "Select Font..."
@@ -4558,11 +4625,6 @@ msgstr "Внеси го точниот превод:"
 #~| msgid "Article"
 #~ msgid "Written Practice"
 #~ msgstr "Член"
-
-#, fuzzy
-#~| msgid "Your answer was wrong. %1% done."
-#~ msgid "The answer was wrong."
-#~ msgstr "Вашиот одговор беше погрешен. %1% завршено."
 
 #, fuzzy
 #~| msgid "Well done, you knew the correct answer. %1% done."
@@ -5045,11 +5107,6 @@ msgstr "Внеси го точниот превод:"
 #~| msgid "Conjugation"
 #~ msgid "Conjugate:"
 #~ msgstr "Конјугација"
-
-#, fuzzy
-#~| msgid "&Comparison Forms"
-#~ msgid "Enter Comparison Forms:"
-#~ msgstr "Форми за &споредба"
 
 #, fuzzy
 #~ msgid "Total Points:"
