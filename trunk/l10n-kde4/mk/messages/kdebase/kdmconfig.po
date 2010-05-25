@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdmconfig\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-03 04:52+0200\n"
+"POT-Creation-Date: 2010-05-25 05:38+0200\n"
 "PO-Revision-Date: 2009-06-21 20:37+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -251,7 +251,7 @@ msgstr ""
 msgid "Dialog &position:"
 msgstr "Позиција на &дијалогот:"
 
-#: kdm-dlg.cpp:247
+#: kdm-dlg.cpp:221
 #, kde-format
 msgid ""
 "There was an error loading the image:\n"
@@ -262,12 +262,12 @@ msgstr ""
 "%1\n"
 "Таа нема да биде снимена..."
 
-#: kdm-dlg.cpp:282 kdm-dlg.cpp:310
+#: kdm-dlg.cpp:257 kdm-dlg.cpp:285
 #, c-format
 msgid "Welcome to %s at %n"
 msgstr "Добредојдовте во %s на %n"
 
-#: kdm-dlg.cpp:320
+#: kdm-dlg.cpp:295
 msgid ""
 "<h1>KDM - Dialog</h1> Here you can configure the basic appearance of the KDM "
 "login manager in dialog mode, i.e. a greeting string, an icon etc."
@@ -305,7 +305,7 @@ msgstr "&Користи најавување со тема"
 msgid "Enable this if you would like to use a themed Login Manager."
 msgstr "Овозможете го ова ако сакате да користите менаџер на најави со теми."
 
-#: kdm-gen.cpp:77 kdm-gen.cpp:88 kdm-users.cpp:97
+#: kdm-gen.cpp:77 kdm-gen.cpp:88 kdm-users.cpp:114
 msgid "<placeholder>default</placeholder>"
 msgstr "<placeholder>стандардно</placeholder>"
 
@@ -469,17 +469,17 @@ msgstr "Менаџер за подигање:"
 msgid "Enable boot options in the \"Shutdown...\" dialog."
 msgstr "Овозможи ги опциите за подигање во дијалогот „Исклучи...“."
 
-#: kdm-theme.cpp:74
+#: kdm-theme.cpp:98
 msgctxt "@title:column"
 msgid "Theme"
 msgstr "Тема"
 
-#: kdm-theme.cpp:75
+#: kdm-theme.cpp:99
 msgctxt "@title:column"
 msgid "Author"
 msgstr "Автор"
 
-#: kdm-theme.cpp:79
+#: kdm-theme.cpp:103
 msgid ""
 "This is a list of installed themes.\n"
 "Click the one to be used."
@@ -487,62 +487,62 @@ msgstr ""
 "Ова е листа на инсталирани теми.\n"
 "Кликнете на темата што сакате да ја користите."
 
-#: kdm-theme.cpp:87
+#: kdm-theme.cpp:111
 msgid "This is a screen shot of what KDM will look like."
 msgstr "Ова е слика со изгледот на KDM."
 
-#: kdm-theme.cpp:95
+#: kdm-theme.cpp:119
 msgid "This contains information about the selected theme."
 msgstr "Ова содржи информација за избраната тема."
 
-#: kdm-theme.cpp:99
+#: kdm-theme.cpp:123
 msgctxt "@action:button"
 msgid "Install &new theme"
 msgstr "&Инсталирај нова тема"
 
-#: kdm-theme.cpp:100
+#: kdm-theme.cpp:124
 msgid "This will install a theme into the theme directory."
 msgstr "Ова ќе инсталира тема во папката со теми."
 
-#: kdm-theme.cpp:104
+#: kdm-theme.cpp:128
 msgctxt "@action:button"
 msgid "&Remove theme"
 msgstr "Отст&рани тема"
 
-#: kdm-theme.cpp:105
+#: kdm-theme.cpp:129
 msgid "This will remove the selected theme."
 msgstr "Ова ќе ја отстрани избраната тема."
 
-#: kdm-theme.cpp:109
+#: kdm-theme.cpp:133
 msgctxt "@action:button"
 msgid "&Get New Themes"
 msgstr "З&еми нови теми"
 
-#: kdm-theme.cpp:122 kdm-users.cpp:91
-#, kde-format
-msgid "Unable to create folder %1"
-msgstr "Не може да се создаде папката %1"
-
-#: kdm-theme.cpp:204
+#: kdm-theme.cpp:216
 #, kde-format
 msgid "<qt><strong>Copyright:</strong> %1<br/></qt>"
 msgstr "<qt><strong>Авторски права:</strong> %1<br/></qt>"
 
-#: kdm-theme.cpp:207
+#: kdm-theme.cpp:219
 #, kde-format
 msgid "<qt><strong>Description:</strong> %1</qt>"
 msgstr "<qt><strong>Опис:</strong> %1</qt>"
 
-#: kdm-theme.cpp:219
+#: kdm-theme.cpp:236 kdm-users.cpp:339
+#, kde-format
+msgid "Unable to create folder %1"
+msgstr "Не може да се создаде папката %1"
+
+#: kdm-theme.cpp:244
 msgid "Drag or Type Theme URL"
 msgstr "Повлечете или напишете ја адресата на темата"
 
-#: kdm-theme.cpp:238
+#: kdm-theme.cpp:263
 #, kde-format
 msgid "Unable to find the KDM theme archive %1."
 msgstr "Не можам да ја најдам архивата %1 со KDM-тема."
 
-#: kdm-theme.cpp:240
+#: kdm-theme.cpp:265
 #, kde-format
 msgid ""
 "Unable to download the KDM theme archive;\n"
@@ -551,43 +551,69 @@ msgstr ""
 "Не можам да ја симнам архивата со KDM-тема.\n"
 "Проверете дали е правилна адресата %1."
 
-#: kdm-theme.cpp:263
+#: kdm-theme.cpp:288
 msgid "The file is not a valid KDM theme archive."
 msgstr "Датотеката не е валидна архива со KDM-тема."
 
-#: kdm-theme.cpp:266
+#: kdm-theme.cpp:291
 msgctxt "@title:window"
 msgid "Installing KDM themes"
 msgstr "Инсталирам KDM-теми"
 
-#: kdm-theme.cpp:275
-#, kde-format
+#: kdm-theme.cpp:303
+#, fuzzy, kde-format
+#| msgctxt "@info:progress"
+#| msgid "<qt>Installing <strong>%1</strong> theme</qt>"
 msgctxt "@info:progress"
-msgid "<qt>Installing <strong>%1</strong> theme</qt>"
+msgid "<qt>Unpacking <strong>%1</strong> theme</qt>"
 msgstr "<qt>Ја инсталирам темата <strong>%1</strong></qt>"
 
-#: kdm-theme.cpp:316
+#: kdm-theme.cpp:315
+#, fuzzy
+#| msgctxt "@info:progress"
+#| msgid "<qt>Installing <strong>%1</strong> theme</qt>"
+msgctxt "@info:progress"
+msgid "<qt>Installing the themes</qt>"
+msgstr "<qt>Ја инсталирам темата <strong>%1</strong></qt>"
+
+#: kdm-theme.cpp:324
+#, fuzzy
+#| msgid ""
+#| "There was an error saving the image:\n"
+#| "%1"
+msgid "There were errors while installing the following themes:\n"
+msgstr ""
+"Имаше грешка при запишувањето на сликата:\n"
+"%1"
+
+#: kdm-theme.cpp:363
 msgid "Are you sure you want to remove the following themes?"
 msgstr "Дали навистина сакате да ги отстраните следните теми?"
 
-#: kdm-theme.cpp:317
+#: kdm-theme.cpp:364
 msgctxt "@title:window"
 msgid "Remove themes?"
 msgstr "Отстранување теми?"
 
-#: kdm-users.cpp:94
+#: kdm-theme.cpp:377
+#, fuzzy
+#| msgid "Are you sure you want to remove the following themes?"
+msgid "There were errors while deleting the following themes:\n"
+msgstr "Дали навистина сакате да ги отстраните следните теми?"
+
+#: kdm-users.cpp:111
 msgid ""
 "User 'nobody' does not exist. Displaying user images will not work in KDM."
 msgstr ""
 "Корисникот „nobody“ не постои. Прикажувањето на кориснички слики нема да "
 "работи во KDM."
 
-#: kdm-users.cpp:102
+#: kdm-users.cpp:117
 msgctxt "@title:group UIDs belonging to system users like 'cron'"
 msgid "System U&IDs"
 msgstr "Системски U&ID"
 
-#: kdm-users.cpp:104
+#: kdm-users.cpp:119
 msgid ""
 "Users with a UID (numerical user identification) outside this range will not "
 "be listed by KDM and this setup dialog. Note that users with the UID 0 "
@@ -599,27 +625,27 @@ msgstr ""
 "Забележете дека ова не влијае на корисниците со UID 0 (типично root) и дека "
 "тие мора експлицитно да бидат исклучени во режимот „Инверзен избор“."
 
-#: kdm-users.cpp:110
+#: kdm-users.cpp:125
 msgctxt "UIDs"
 msgid "Below:"
 msgstr "Под:"
 
-#: kdm-users.cpp:117
+#: kdm-users.cpp:132
 msgctxt "UIDs"
 msgid "Above:"
 msgstr "Над:"
 
-#: kdm-users.cpp:130
+#: kdm-users.cpp:145
 msgctxt "@title:group"
 msgid "Users"
 msgstr "Корисници"
 
-#: kdm-users.cpp:131
+#: kdm-users.cpp:146
 msgctxt "... of users"
 msgid "Show list"
 msgstr "Прикажи листа"
 
-#: kdm-users.cpp:133
+#: kdm-users.cpp:148
 msgid ""
 "If this option is checked, KDM will show a list of users, so users can click "
 "on their name or image rather than typing in their login."
@@ -628,12 +654,12 @@ msgstr ""
 "можат да кликнат на нивното име или слика наместо да ја куцаат нивната "
 "најава."
 
-#: kdm-users.cpp:135
+#: kdm-users.cpp:150
 msgctxt "user ..."
 msgid "Autocompletion"
 msgstr "Автом. довршување"
 
-#: kdm-users.cpp:137
+#: kdm-users.cpp:152
 msgid ""
 "If this option is checked, KDM will automatically complete user names while "
 "they are typed in the line edit."
@@ -641,12 +667,12 @@ msgstr ""
 "Ако е избрана оваа опција, KDM автоматски ќе ги довршува имињата на "
 "корисниците додека се куцаат на линијата."
 
-#: kdm-users.cpp:140
+#: kdm-users.cpp:155
 msgctxt "@option:check mode of the user selection"
 msgid "Inverse selection"
 msgstr "Инверзен избор"
 
-#: kdm-users.cpp:142
+#: kdm-users.cpp:157
 msgid ""
 "This option specifies how the users for \"Show list\" and \"Autocompletion\" "
 "are selected in the \"Select users and groups\" list: If not checked, select "
@@ -658,11 +684,11 @@ msgstr ""
 "обележано, се избираат само обележаните корисници. Ако е обележано, се "
 "избираат сите корисници кои не се системски, освен обележаните."
 
-#: kdm-users.cpp:146
+#: kdm-users.cpp:161
 msgid "Sor&t users"
 msgstr "Подреди ги корисници&те"
 
-#: kdm-users.cpp:148
+#: kdm-users.cpp:163
 msgid ""
 "If this is checked, KDM will alphabetically sort the user list. Otherwise "
 "users are listed in the order they appear in the password file."
@@ -671,15 +697,15 @@ msgstr ""
 "листата по азбучен редослед. Ако не, тие ќе бидат прикажани како што се "
 "појавуваат во датотеката со лозинки."
 
-#: kdm-users.cpp:165
+#: kdm-users.cpp:180
 msgid "S&elect users and groups:"
 msgstr "Изб&ери корисници и групи:"
 
-#: kdm-users.cpp:169
+#: kdm-users.cpp:184
 msgid "Selected Users"
 msgstr "Избрани корисници"
 
-#: kdm-users.cpp:171
+#: kdm-users.cpp:186
 msgid ""
 "KDM will show all checked users. Entries denoted with '@' are user groups. "
 "Checking a group is like checking all users in that group."
@@ -688,11 +714,11 @@ msgstr ""
 "кориснички групи. Обележувањето на група е како обележување на сите "
 "корисници во таа група."
 
-#: kdm-users.cpp:180
+#: kdm-users.cpp:195
 msgid "Excluded Users"
 msgstr "Исклучени корисници"
 
-#: kdm-users.cpp:182
+#: kdm-users.cpp:197
 msgid ""
 "KDM will show all non-checked non-system users. Entries denoted with '@' are "
 "user groups. Checking a group is like checking all users in that group."
@@ -701,12 +727,12 @@ msgstr ""
 "покажани со '@' се кориснички групи. Обележувањето на група е како "
 "обележување на сите корисници во таа група."
 
-#: kdm-users.cpp:191
+#: kdm-users.cpp:206
 msgctxt "@title:group source for user faces"
 msgid "User Image Source"
 msgstr "Извор на слика за корисниците"
 
-#: kdm-users.cpp:193
+#: kdm-users.cpp:208
 msgid ""
 "Here you can specify where KDM will obtain the images that represent users. "
 "\"System\" represents the global folder; these are the pictures you can set "
@@ -720,44 +746,44 @@ msgstr ""
 "датотеката $HOME/.face.icon која му припаѓа на корисникот. Двата избори во "
 "средината го дефинираат приоритетот ако се достапни и двата извори."
 
-#: kdm-users.cpp:197
+#: kdm-users.cpp:212
 msgctxt "@option:radio image source"
 msgid "System"
 msgstr "Систем"
 
-#: kdm-users.cpp:198
+#: kdm-users.cpp:213
 msgctxt "@option:radio image source"
 msgid "System, user"
 msgstr "Систем, корисник"
 
-#: kdm-users.cpp:199
+#: kdm-users.cpp:214
 msgctxt "@option:radio image source"
 msgid "User, system"
 msgstr "Корисник, систем"
 
-#: kdm-users.cpp:200
+#: kdm-users.cpp:215
 msgctxt "@option:radio image source"
 msgid "User"
 msgstr "Корисник"
 
-#: kdm-users.cpp:215
+#: kdm-users.cpp:230
 msgctxt "@title:group user face assignments"
 msgid "User Images"
 msgstr "Слики за корисникот"
 
-#: kdm-users.cpp:217
+#: kdm-users.cpp:232
 msgid "The user the image below belongs to."
 msgstr "Корисникот на кој му припаѓа долната слика."
 
-#: kdm-users.cpp:220
+#: kdm-users.cpp:235
 msgid "User:"
 msgstr "Корисник:"
 
-#: kdm-users.cpp:229
+#: kdm-users.cpp:244
 msgid "Click or drop an image here"
 msgstr "Кликнете или пуштете слика тука"
 
-#: kdm-users.cpp:231
+#: kdm-users.cpp:246
 msgid ""
 "Here you can see the image assigned to the user selected in the combo box "
 "above. Click on the image button to select from a list of images or drag and "
@@ -767,41 +793,64 @@ msgstr ""
 "горното поле. Кликнете на сликичката за да изберете друга или довлечете си "
 "сопствена сликичка до копчето (на пр. од Konqueror)."
 
-#: kdm-users.cpp:235
+#: kdm-users.cpp:250
 msgctxt "@action:button assign default user face"
 msgid "R&eset"
 msgstr "Р&есетирај"
 
-#: kdm-users.cpp:237
+#: kdm-users.cpp:252
 msgid ""
 "Click this button to make KDM use the default image for the selected user."
 msgstr ""
 "Кликнете на ова копче за KDM да ја користи стандардната слика за избраниот "
 "корисник."
 
-#: kdm-users.cpp:340
+#: kdm-users.cpp:351
 msgid "Save image as default?"
 msgstr "Да ја зачувам сликата како стандардна?"
 
-#: kdm-users.cpp:349
-#, kde-format
+#: kdm-users.cpp:360
+#, fuzzy, kde-format
+#| msgid ""
+#| "There was an error loading the image\n"
+#| "%1"
 msgid ""
-"There was an error loading the image\n"
+"There was an error while loading the image\n"
 "%1"
 msgstr ""
 "Имаше грешка при вчитувањето на сликата:\n"
 "%1"
 
-#: kdm-users.cpp:357
-#, kde-format
+#: kdm-users.cpp:379
+#, fuzzy, kde-format
+#| msgid ""
+#| "There was an error saving the image:\n"
+#| "%1"
 msgid ""
-"There was an error saving the image:\n"
+"There was an error while saving the image:\n"
 "%1"
 msgstr ""
 "Имаше грешка при запишувањето на сликата:\n"
 "%1"
 
-#: main.cpp:76
+#: kdm-users.cpp:408
+#, fuzzy, kde-format
+#| msgid ""
+#| "There was an error loading the image\n"
+#| "%1"
+msgid ""
+"There was an error while removing the image:\n"
+"%1"
+msgstr ""
+"Имаше грешка при вчитувањето на сликата:\n"
+"%1"
+
+#: main.cpp:73
+#, kde-format
+msgid "Unable to authenticate/execute the action: %1 (code %2)"
+msgstr ""
+
+#: main.cpp:96
 #, kde-format
 msgid ""
 "%1 does not appear to be an image file.\n"
@@ -812,39 +861,45 @@ msgstr ""
 "Ве молиме користете датотеки со следниве наставки:\n"
 "%2"
 
-#: main.cpp:97
+#: main.cpp:115
 msgid "KDE Login Manager Config Module"
 msgstr "Модул на KDE за конфигурација на менаџерот на најави"
 
-#: main.cpp:99
-msgid "(c) 1996-2008 The KDM Authors"
+#: main.cpp:117
+#, fuzzy
+#| msgid "(c) 1996-2008 The KDM Authors"
+msgid "(c) 1996-2010 The KDM Authors"
 msgstr "(c) 1996 - 2008 авторите на KDM"
 
-#: main.cpp:102
+#: main.cpp:120
 msgid "Thomas Tanghus"
 msgstr "Thomas Tanghus"
 
-#: main.cpp:102
+#: main.cpp:120
 msgid "Original author"
 msgstr "Оригинален автор"
 
-#: main.cpp:103
+#: main.cpp:121
 msgid "Steffen Hansen"
 msgstr "Steffen Hansen"
 
-#: main.cpp:104
+#: main.cpp:122
 msgid "Oswald Buddenhagen"
 msgstr "Oswald Buddenhagen"
 
-#: main.cpp:104
+#: main.cpp:122
 msgid "Current maintainer"
 msgstr "Тековен одржувач"
 
-#: main.cpp:105
+#: main.cpp:123
 msgid "Stephen Leaf"
 msgstr "Stephen Leaf"
 
-#: main.cpp:108
+#: main.cpp:124
+msgid "Igor Krivenko"
+msgstr ""
+
+#: main.cpp:127
 #, fuzzy
 #| msgid ""
 #| "<h1>Login Manager</h1> In this module you can configure the various "
@@ -911,47 +966,70 @@ msgstr ""
 "Забележете дека овие поставувања по својата природа се безбедносни дупки, "
 "така што треба внимателно да ги користите."
 
-#: main.cpp:193
+#: main.cpp:212
 msgid "&General"
 msgstr "&Општо"
 
-#: main.cpp:199
+#: main.cpp:218
 msgid "&Dialog"
 msgstr "&Дијалог"
 
-#: main.cpp:204
+#: main.cpp:223
 msgid "There is no login dialog window in themed mode."
 msgstr "Во режимот со теми нема прозорец со дијалог за најава."
 
-#: main.cpp:210
+#: main.cpp:229
 msgid "&Background"
 msgstr "П&одлога"
 
-#: main.cpp:215
+#: main.cpp:234
 msgid "The background cannot be configured separately in themed mode."
 msgstr "Подлогата не може да се конфигурира одделно во режим на теми."
 
-#: main.cpp:221
+#: main.cpp:240
 msgid "&Theme"
 msgstr "&Тема"
 
-#: main.cpp:223
+#: main.cpp:242
 msgid "Themed mode is disabled. See \"General\" tab."
 msgstr "Режимот на теми е оневозможен. Погледнете го ливчето „General“."
 
-#: main.cpp:232
+#: main.cpp:251
 msgid "&Shutdown"
 msgstr "&Спуштање"
 
-#: main.cpp:236
+#: main.cpp:255
 msgid "&Users"
 msgstr "Кор&исници"
 
-#: main.cpp:246
+#: main.cpp:265
 msgid "&Convenience"
 msgstr "&Удобност"
 
-#: positioner.cpp:99
+#: main.cpp:361
+#, kde-format
+msgid ""
+"Unable to install new kdmrc file from\n"
+"%1"
+msgstr ""
+
+#: main.cpp:366
+#, kde-format
+msgid ""
+"Unable to install new backgroundrc file from\n"
+"%1"
+msgstr ""
+
+#: main.cpp:371
+#, kde-format
+msgid ""
+"Unable to install new kdmrc file from\n"
+"%1\n"
+"and new backgroundrc file from\n"
+"%2"
+msgstr ""
+
+#: positioner.cpp:98
 msgid ""
 "Drag the anchor to move the center of the dialog to the desired position. "
 "Keyboard control is possible as well: Use the arrow keys or Home to center. "
