@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-23 04:59+0200\n"
+"POT-Creation-Date: 2010-06-29 02:43+0200\n"
 "PO-Revision-Date: 2010-01-21 13:58+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -25,10 +25,9 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: kio/connection.cpp:211
-#, kde-format
-msgid "Unable to create io-slave: %1"
-msgstr "Не можe да се создаде io-slave: %1"
+#: kio/kimageio.cpp:43
+msgid "All Pictures"
+msgstr "Сите слики"
 
 #: kio/kscan.cpp:50
 msgid "Acquire Image"
@@ -37,6 +36,25 @@ msgstr "Преземи слика"
 #: kio/kscan.cpp:99
 msgid "OCR Image"
 msgstr "OCR на слика"
+
+#: kio/connection.cpp:211
+#, kde-format
+msgid "Unable to create io-slave: %1"
+msgstr "Не можe да се создаде io-slave: %1"
+
+#: kio/kfileitemdelegate.cpp:236
+#, kde-format
+msgctxt "Items in a folder"
+msgid "1 item"
+msgid_plural "%1 items"
+msgstr[0] "%1 елемент"
+msgstr[1] "%1 елементи"
+msgstr[2] "%1 елементи"
+
+#: kio/kfileitemdelegate.cpp:292 kio/kfileitemdelegate.cpp:296
+msgctxt "@info mimetype"
+msgid "Unknown"
+msgstr "Непознат"
 
 #: kio/global.cpp:89
 #, kde-format
@@ -982,8 +1000,8 @@ msgstr "Датотеката или папката не постои"
 msgid "The specified file or folder <strong>%1</strong> does not exist."
 msgstr "Зададената датотека или папка <strong>%1</strong> не постои."
 
-#: kio/global.cpp:664 kio/job.cpp:2099 kio/paste.cpp:64 kio/copyjob.cpp:1326
-#: kio/copyjob.cpp:1897
+#: kio/global.cpp:664 kio/job.cpp:2099 kio/copyjob.cpp:1326
+#: kio/copyjob.cpp:1897 kio/paste.cpp:64
 msgid "File Already Exists"
 msgstr "Датотеката веќе постои"
 
@@ -1886,159 +1904,81 @@ msgstr "Изберете друго име за одредишната дато�
 msgid "Undocumented Error"
 msgstr "Недокументирана грешка"
 
-#: kio/renamedialog.cpp:122
-msgid "Appl&y to All"
-msgstr ""
+#: kio/fileundomanager.cpp:116
+msgid "Creating directory"
+msgstr "Креирање папка"
 
-#: kio/renamedialog.cpp:123
-#, fuzzy
-#| msgid ""
-#| "Files and folders will be copied into the existing directory, alongside "
-#| "its existing contents.\n"
-#| "You will be prompted again in case of a conflict with an existing file in "
-#| "the directory."
-msgid ""
-"When this is checked the button pressed will be applied to all subsequent "
-"folder conflicts for the remainder of the current job.\n"
-"Unless you press Skip you will still be prompted in case of a conflict with "
-"an existing file in the directory."
-msgstr ""
-"Датотеките и папките ќе бидат копирани во постојната папка, заедно со "
-"нејзините содржини.\n"
-"Ако има конфликт со постојна датотека во папката, ќе бидете прашани."
+#: kio/fileundomanager.cpp:117 kio/job.cpp:173
+msgid "Directory"
+msgstr "Папка"
 
-#: kio/renamedialog.cpp:124
-msgid ""
-"When this is checked the button pressed will be applied to all subsequent "
-"conflicts for the remainder of the current job."
-msgstr ""
+#: kio/fileundomanager.cpp:119
+msgid "Moving"
+msgstr "Преместување"
 
-#: kio/renamedialog.cpp:129
-msgid "&Rename"
-msgstr "П&реименувај"
-
-#: kio/renamedialog.cpp:131
-msgid "Suggest New &Name"
-msgstr "Предложи &ново име"
-
-#: kio/renamedialog.cpp:137
-msgid "&Skip"
-msgstr "Пре&скокни"
-
-#: kio/renamedialog.cpp:138
-msgid "Do not copy or move this folder, skip to the next item instead"
-msgstr "Не ја копира или преместува папката, туку скока на наредниот елемент"
-
-#: kio/renamedialog.cpp:139
-msgid "Do not copy or move this file, skip to the next item instead"
-msgstr ""
-"Не ја копира или преместува датотеката, туку скока на наредниот елемент"
-
-#: kio/renamedialog.cpp:144
-msgctxt "Write files into an existing folder"
-msgid "&Write Into"
-msgstr "&Запиши во"
-
-#: kio/renamedialog.cpp:144
-msgid "&Overwrite"
-msgstr "П&ребриши"
-
-#: kio/renamedialog.cpp:146
-msgid ""
-"Files and folders will be copied into the existing directory, alongside its "
-"existing contents.\n"
-"You will be prompted again in case of a conflict with an existing file in "
-"the directory."
-msgstr ""
-"Датотеките и папките ќе бидат копирани во постојната папка, заедно со "
-"нејзините содржини.\n"
-"Ако има конфликт со постојна датотека во папката, ќе бидете прашани."
-
-#: kio/renamedialog.cpp:151
-msgid "&Resume"
-msgstr "П&родолжи"
-
-#: kio/renamedialog.cpp:160
-#, kde-format
-msgid ""
-"This action would overwrite '%1' with itself.\n"
-"Please enter a new file name:"
-msgstr ""
-"Со ова дејство, „%1“ ќе се пребрише со себеси.\n"
-"Ве молиме внесете ново име на датотека:"
-
-#: kio/renamedialog.cpp:162
-msgid "C&ontinue"
-msgstr "Пр&одолжи"
-
-#: kio/renamedialog.cpp:234
-#, fuzzy, kde-format
-#| msgid ""
-#| "This action would overwrite '%1' with itself.\n"
-#| "Please enter a new file name:"
-msgid "This action will overwrite '%1' with a newer file '%2'."
-msgstr ""
-"Со ова дејство, „%1“ ќе се пребрише со себеси.\n"
-"Ве молиме внесете ново име на датотека:"
-
-#: kio/renamedialog.cpp:236
-#, fuzzy, kde-format
-#| msgid ""
-#| "This action would overwrite '%1' with itself.\n"
-#| "Please enter a new file name:"
-msgid "This action will overwrite '%1' with a file of the same age '%2'."
-msgstr ""
-"Со ова дејство, „%1“ ќе се пребрише со себеси.\n"
-"Ве молиме внесете ново име на датотека:"
-
-#: kio/renamedialog.cpp:238
-#, fuzzy, kde-format
-#| msgid ""
-#| "This action would overwrite '%1' with itself.\n"
-#| "Please enter a new file name:"
-msgid "This action will overwrite '%1' with an older file '%2'."
-msgstr ""
-"Со ова дејство, „%1“ ќе се пребрише со себеси.\n"
-"Ве молиме внесете ново име на датотека:"
-
-#: kio/renamedialog.cpp:242
-#, fuzzy
-#| msgctxt "The source of a file operation"
-#| msgid "Source"
+#: kio/fileundomanager.cpp:120 kio/job.cpp:159 kio/job.cpp:166 kio/job.cpp:191
+msgctxt "The source of a file operation"
 msgid "Source"
 msgstr "Извор"
 
-#: kio/renamedialog.cpp:243
-#, fuzzy
-#| msgctxt "The destination of a file operation"
-#| msgid "Destination"
+#: kio/fileundomanager.cpp:121 kio/job.cpp:160 kio/job.cpp:167
+msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Одредиште"
 
-#: kio/renamedialog.cpp:261
-#, kde-format
-msgid "An older item named '%1' already exists."
-msgstr "Веќе постои постара ставка со име „%1“."
+#: kio/fileundomanager.cpp:123
+msgid "Deleting"
+msgstr "Бришење"
 
-#: kio/renamedialog.cpp:263
-#, kde-format
-msgid "A similar file named '%1' already exists."
-msgstr "Веќе постои слична датотека со име „%1“."
+#: kio/fileundomanager.cpp:124 kio/job.cpp:179 kio/job.cpp:185
+msgid "File"
+msgstr "Датотека"
 
-#: kio/renamedialog.cpp:265
-#, kde-format
-msgid "A newer item named '%1' already exists."
-msgstr "Веќе постои понова ставка со име „%1“."
+#: kio/fileundomanager.cpp:284
+msgid "Und&o"
+msgstr "&Отповикај"
 
-#: kio/renamedialog.cpp:387 kio/paste.cpp:228 kio/krun.cpp:1095
-#: kio/kdirlister.cpp:329
+#: kio/fileundomanager.cpp:288
+msgid "Und&o: Copy"
+msgstr "&Отповикај: копирање"
+
+#: kio/fileundomanager.cpp:290
+msgid "Und&o: Link"
+msgstr "&Отповикај: поврзување"
+
+#: kio/fileundomanager.cpp:292
+msgid "Und&o: Move"
+msgstr "&Отповикај: преместување"
+
+#: kio/fileundomanager.cpp:294
+msgid "Und&o: Rename"
+msgstr "&Отповикај: преименување"
+
+#: kio/fileundomanager.cpp:296
+msgid "Und&o: Trash"
+msgstr "&Отповикај: фрлање"
+
+#: kio/fileundomanager.cpp:298
+msgid "Und&o: Create Folder"
+msgstr "&Отповикај: креирање папка"
+
+#: kio/fileundomanager.cpp:764
 #, kde-format
 msgid ""
-"Malformed URL\n"
-"%1"
+"The file %1 was copied from %2, but since then it has apparently been "
+"modified at %3.\n"
+"Undoing the copy will delete the file, and all modifications will be lost.\n"
+"Are you sure you want to delete %4?"
 msgstr ""
-"Неправилен URL\n"
-"%1"
+"Датотеката %1 беше копирана од %2, но изгледа дека оттогаш била изменета во %"
+"3.\n"
+"Отповикувањето на копијата ќе ја избрише датотеката и сите измени ќе бидат "
+"загубени.\n"
+"Дали навистина сакате да ја избришете %4?"
+
+#: kio/fileundomanager.cpp:767
+msgid "Undo File Copy Confirmation"
+msgstr "Потврда за отповикување на копирање датотека"
 
 #: kio/kdesktopfileactions.cpp:60
 #, kde-format
@@ -2090,6 +2030,54 @@ msgstr "Извади"
 #: kio/kdesktopfileactions.cpp:214
 msgid "Unmount"
 msgstr "Одмонтирај"
+
+#: kio/job.cpp:158
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Преместувам"
+
+#: kio/job.cpp:165
+msgctxt "@title job"
+msgid "Copying"
+msgstr "Копирам"
+
+#: kio/job.cpp:172
+msgctxt "@title job"
+msgid "Creating directory"
+msgstr "Креирам папка"
+
+#: kio/job.cpp:178
+msgctxt "@title job"
+msgid "Deleting"
+msgstr "Бришам"
+
+#: kio/job.cpp:184
+msgctxt "@title job"
+msgid "Examining"
+msgstr "Испитувам"
+
+#: kio/job.cpp:190
+msgctxt "@title job"
+msgid "Transferring"
+msgstr "Пренесувам"
+
+#: kio/job.cpp:196
+msgctxt "@title job"
+msgid "Mounting"
+msgstr "Монтирам"
+
+#: kio/job.cpp:197
+msgid "Device"
+msgstr "Уред"
+
+#: kio/job.cpp:198 kio/job.cpp:204
+msgid "Mountpoint"
+msgstr "Точка на монтирање"
+
+#: kio/job.cpp:203
+msgctxt "@title job"
+msgid "Unmounting"
+msgstr "Одмонтирам"
 
 #: kio/slave.cpp:432
 #, kde-format
@@ -2234,155 +2222,42 @@ msgstr ""
 "SSL-сертификатот е одбиен според барањето. Ова може да го оневозможите во "
 "системските поставувања на KDE."
 
-#: kio/kfileitemdelegate.cpp:236
-#, kde-format
-msgctxt "Items in a folder"
-msgid "1 item"
-msgid_plural "%1 items"
-msgstr[0] "%1 елемент"
-msgstr[1] "%1 елементи"
-msgstr[2] "%1 елементи"
+#: kio/slavebase.h:266 kio/slavebase.h:286
+msgid "&Yes"
+msgstr "&Да"
 
-#: kio/kfileitemdelegate.cpp:292 kio/kfileitemdelegate.cpp:296
-msgctxt "@info mimetype"
-msgid "Unknown"
-msgstr "Непознат"
+#: kio/slavebase.h:267 kio/slavebase.h:287
+msgid "&No"
+msgstr "&Не"
 
 #: kio/passworddialog.cpp:62
 msgid "Authorization Dialog"
 msgstr "Дијалог за авторизација"
 
-#: kio/job.cpp:158
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Преместувам"
-
-#: kio/job.cpp:159 kio/job.cpp:166 kio/job.cpp:191 kio/fileundomanager.cpp:120
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Извор"
-
-#: kio/job.cpp:160 kio/job.cpp:167 kio/fileundomanager.cpp:121
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Одредиште"
-
-#: kio/job.cpp:165
-msgctxt "@title job"
-msgid "Copying"
-msgstr "Копирам"
-
-#: kio/job.cpp:172
-msgctxt "@title job"
-msgid "Creating directory"
-msgstr "Креирам папка"
-
-#: kio/job.cpp:173 kio/fileundomanager.cpp:117
-msgid "Directory"
-msgstr "Папка"
-
-#: kio/job.cpp:178
-msgctxt "@title job"
-msgid "Deleting"
-msgstr "Бришам"
-
-#: kio/job.cpp:179 kio/job.cpp:185 kio/fileundomanager.cpp:124
-msgid "File"
-msgstr "Датотека"
-
-#: kio/job.cpp:184
-msgctxt "@title job"
-msgid "Examining"
-msgstr "Испитувам"
-
-#: kio/job.cpp:190
-msgctxt "@title job"
-msgid "Transferring"
-msgstr "Пренесувам"
-
-#: kio/job.cpp:196
-msgctxt "@title job"
-msgid "Mounting"
-msgstr "Монтирам"
-
-#: kio/job.cpp:197
-msgid "Device"
-msgstr "Уред"
-
-#: kio/job.cpp:198 kio/job.cpp:204
-msgid "Mountpoint"
-msgstr "Точка на монтирање"
-
-#: kio/job.cpp:203
-msgctxt "@title job"
-msgid "Unmounting"
-msgstr "Одмонтирам"
-
-#: kio/fileundomanager.cpp:116
-msgid "Creating directory"
-msgstr "Креирање папка"
-
-#: kio/fileundomanager.cpp:119
-msgid "Moving"
-msgstr "Преместување"
-
-#: kio/fileundomanager.cpp:123
-msgid "Deleting"
-msgstr "Бришење"
-
-#: kio/fileundomanager.cpp:284
-msgid "Und&o"
-msgstr "&Отповикај"
-
-#: kio/fileundomanager.cpp:288
-msgid "Und&o: Copy"
-msgstr "&Отповикај: копирање"
-
-#: kio/fileundomanager.cpp:290
-msgid "Und&o: Link"
-msgstr "&Отповикај: поврзување"
-
-#: kio/fileundomanager.cpp:292
-msgid "Und&o: Move"
-msgstr "&Отповикај: преместување"
-
-#: kio/fileundomanager.cpp:294
-msgid "Und&o: Rename"
-msgstr "&Отповикај: преименување"
-
-#: kio/fileundomanager.cpp:296
-msgid "Und&o: Trash"
-msgstr "&Отповикај: фрлање"
-
-#: kio/fileundomanager.cpp:298
-msgid "Und&o: Create Folder"
-msgstr "&Отповикај: креирање папка"
-
-#: kio/fileundomanager.cpp:764
-#, kde-format
-msgid ""
-"The file %1 was copied from %2, but since then it has apparently been "
-"modified at %3.\n"
-"Undoing the copy will delete the file, and all modifications will be lost.\n"
-"Are you sure you want to delete %4?"
-msgstr ""
-"Датотеката %1 беше копирана од %2, но изгледа дека оттогаш била изменета во %"
-"3.\n"
-"Отповикувањето на копијата ќе ја избрише датотеката и сите измени ќе бидат "
-"загубени.\n"
-"Дали навистина сакате да ја избришете %4?"
-
-#: kio/fileundomanager.cpp:767
-msgid "Undo File Copy Confirmation"
-msgstr "Потврда за отповикување на копирање датотека"
-
 #: kio/accessmanagerreply_p.cpp:69
 msgid "Blocked request."
 msgstr "Блокирано барање."
 
+#: kio/kemailsettings.cpp:251 kio/kemailsettings.cpp:254
+#: kio/kemailsettings.cpp:261
+msgid "Default"
+msgstr "Стандардно"
+
 #: kio/pastedialog.cpp:55
 msgid "Data format:"
 msgstr "Формат на податоци:"
+
+#: kio/skipdialog.cpp:40
+msgid "Information"
+msgstr "Информација"
+
+#: kio/skipdialog.cpp:47
+msgid "Skip"
+msgstr "Прескокни"
+
+#: kio/skipdialog.cpp:50
+msgid "AutoSkip"
+msgstr "Автом. прескокнување"
 
 #: kio/jobuidelegate.cpp:149 ../kfile/kdiroperator.cpp:815
 #, kde-format
@@ -2469,85 +2344,6 @@ msgstr "Сопственик:"
 msgid "Permissions:"
 msgstr "Дозволи:"
 
-#: kio/paste.cpp:48 kio/paste.cpp:130
-msgid "Filename for clipboard content:"
-msgstr "Датотека за содржина на таблата за исечоци:"
-
-#: kio/paste.cpp:123
-#, kde-format
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: kio/paste.cpp:139
-msgid ""
-"The clipboard has changed since you used 'paste': the chosen data format is "
-"no longer applicable. Please copy again what you wanted to paste."
-msgstr ""
-"Таблата со исечоци се измени откако користевте „вметни“: избраниот формат на "
-"податоци не е повеќе важечки. Копирајте го повторно она што сакавте да го "
-"вметнете."
-
-#: kio/paste.cpp:210 kio/paste.cpp:277
-msgid "The clipboard is empty"
-msgstr "Таблата со исечоци е празна"
-
-#: kio/paste.cpp:324
-#, kde-format
-msgid "&Paste File"
-msgid_plural "&Paste %1 Files"
-msgstr[0] "&Вметни %1 датотека"
-msgstr[1] "&Вметни %1 датотеки"
-msgstr[2] "&Вметни %1 датотеки"
-
-#: kio/paste.cpp:326
-#, kde-format
-msgid "&Paste URL"
-msgid_plural "&Paste %1 URLs"
-msgstr[0] "&Вметни %1 URL"
-msgstr[1] "&Вметни %1 URL"
-msgstr[2] "&Вметни %1 URL"
-
-#: kio/paste.cpp:328
-msgid "&Paste Clipboard Contents"
-msgstr "&Вметни од таблата со исечоци"
-
-#: kio/slavebase.h:266 kio/slavebase.h:286
-msgid "&Yes"
-msgstr "&Да"
-
-#: kio/slavebase.h:267 kio/slavebase.h:287
-msgid "&No"
-msgstr "&Не"
-
-#: kio/kbuildsycocaprogressdialog.cpp:45
-msgid "Updating System Configuration"
-msgstr "Ажурирам системска конфигурација"
-
-#: kio/kbuildsycocaprogressdialog.cpp:46
-msgid "Updating system configuration."
-msgstr "Ажурирам системска конфигурација."
-
-#: kio/kstatusbarofflineindicator.cpp:52
-msgid "The desktop is offline"
-msgstr "Површината е без мрежа"
-
-#: kio/kemailsettings.cpp:251 kio/kemailsettings.cpp:254
-#: kio/kemailsettings.cpp:261
-msgid "Default"
-msgstr "Стандардно"
-
-#: kio/skipdialog.cpp:40
-msgid "Information"
-msgstr "Информација"
-
-#: kio/skipdialog.cpp:47
-msgid "Skip"
-msgstr "Прескокни"
-
-#: kio/skipdialog.cpp:50
-msgid "AutoSkip"
-msgstr "Автом. прескокнување"
-
 #: kio/krun.cpp:126
 #, kde-format
 msgid ""
@@ -2617,6 +2413,16 @@ msgstr "Ако не ѝ верувате на оваа програма, клик
 msgid "Unable to make the service %1 executable, aborting execution"
 msgstr "Не можам да го направам сервисот %1 извршлив, прекинувам извршување"
 
+#: kio/krun.cpp:1095 kio/renamedialog.cpp:387 kio/paste.cpp:228
+#: kio/kdirlister.cpp:329
+#, kde-format
+msgid ""
+"Malformed URL\n"
+"%1"
+msgstr ""
+"Неправилен URL\n"
+"%1"
+
 #: kio/krun.cpp:1128
 #, kde-format
 msgid ""
@@ -2631,14 +2437,207 @@ msgstr ""
 msgid "Could not find the program '%1'"
 msgstr "Не можам да ја најдам програмата „%1“"
 
-#: kio/kimageio.cpp:43
-msgid "All Pictures"
-msgstr "Сите слики"
+#: kio/copyjob.cpp:1326 kio/copyjob.cpp:1897
+msgid "Already Exists as Folder"
+msgstr "Веќе постои како папка"
 
-#: kio/kdbusservicestarter.cpp:76
+#: kio/kbuildsycocaprogressdialog.cpp:45
+msgid "Updating System Configuration"
+msgstr "Ажурирам системска конфигурација"
+
+#: kio/kbuildsycocaprogressdialog.cpp:46
+msgid "Updating system configuration."
+msgstr "Ажурирам системска конфигурација."
+
+#: kio/kstatusbarofflineindicator.cpp:52
+msgid "The desktop is offline"
+msgstr "Површината е без мрежа"
+
+#: kio/renamedialog.cpp:122
+msgid "Appl&y to All"
+msgstr ""
+
+#: kio/renamedialog.cpp:123
+#, fuzzy
+#| msgid ""
+#| "Files and folders will be copied into the existing directory, alongside "
+#| "its existing contents.\n"
+#| "You will be prompted again in case of a conflict with an existing file in "
+#| "the directory."
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"folder conflicts for the remainder of the current job.\n"
+"Unless you press Skip you will still be prompted in case of a conflict with "
+"an existing file in the directory."
+msgstr ""
+"Датотеките и папките ќе бидат копирани во постојната папка, заедно со "
+"нејзините содржини.\n"
+"Ако има конфликт со постојна датотека во папката, ќе бидете прашани."
+
+#: kio/renamedialog.cpp:124
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"conflicts for the remainder of the current job."
+msgstr ""
+
+#: kio/renamedialog.cpp:129
+msgid "&Rename"
+msgstr "П&реименувај"
+
+#: kio/renamedialog.cpp:131
+msgid "Suggest New &Name"
+msgstr "Предложи &ново име"
+
+#: kio/renamedialog.cpp:137
+msgid "&Skip"
+msgstr "Пре&скокни"
+
+#: kio/renamedialog.cpp:138
+msgid "Do not copy or move this folder, skip to the next item instead"
+msgstr "Не ја копира или преместува папката, туку скока на наредниот елемент"
+
+#: kio/renamedialog.cpp:139
+msgid "Do not copy or move this file, skip to the next item instead"
+msgstr ""
+"Не ја копира или преместува датотеката, туку скока на наредниот елемент"
+
+#: kio/renamedialog.cpp:144
+msgctxt "Write files into an existing folder"
+msgid "&Write Into"
+msgstr "&Запиши во"
+
+#: kio/renamedialog.cpp:144
+msgid "&Overwrite"
+msgstr "П&ребриши"
+
+#: kio/renamedialog.cpp:146
+msgid ""
+"Files and folders will be copied into the existing directory, alongside its "
+"existing contents.\n"
+"You will be prompted again in case of a conflict with an existing file in "
+"the directory."
+msgstr ""
+"Датотеките и папките ќе бидат копирани во постојната папка, заедно со "
+"нејзините содржини.\n"
+"Ако има конфликт со постојна датотека во папката, ќе бидете прашани."
+
+#: kio/renamedialog.cpp:151
+msgid "&Resume"
+msgstr "П&родолжи"
+
+#: kio/renamedialog.cpp:160
 #, kde-format
-msgid "No service implementing %1"
-msgstr "Нема сервис кој применува %1"
+msgid ""
+"This action would overwrite '%1' with itself.\n"
+"Please enter a new file name:"
+msgstr ""
+"Со ова дејство, „%1“ ќе се пребрише со себеси.\n"
+"Ве молиме внесете ново име на датотека:"
+
+#: kio/renamedialog.cpp:162
+msgid "C&ontinue"
+msgstr "Пр&одолжи"
+
+#: kio/renamedialog.cpp:234
+#, fuzzy, kde-format
+#| msgid ""
+#| "This action would overwrite '%1' with itself.\n"
+#| "Please enter a new file name:"
+msgid "This action will overwrite '%1' with a newer file '%2'."
+msgstr ""
+"Со ова дејство, „%1“ ќе се пребрише со себеси.\n"
+"Ве молиме внесете ново име на датотека:"
+
+#: kio/renamedialog.cpp:236
+#, fuzzy, kde-format
+#| msgid ""
+#| "This action would overwrite '%1' with itself.\n"
+#| "Please enter a new file name:"
+msgid "This action will overwrite '%1' with a file of the same age '%2'."
+msgstr ""
+"Со ова дејство, „%1“ ќе се пребрише со себеси.\n"
+"Ве молиме внесете ново име на датотека:"
+
+#: kio/renamedialog.cpp:238
+#, fuzzy, kde-format
+#| msgid ""
+#| "This action would overwrite '%1' with itself.\n"
+#| "Please enter a new file name:"
+msgid "This action will overwrite '%1' with an older file '%2'."
+msgstr ""
+"Со ова дејство, „%1“ ќе се пребрише со себеси.\n"
+"Ве молиме внесете ново име на датотека:"
+
+#: kio/renamedialog.cpp:242
+#, fuzzy
+#| msgctxt "The source of a file operation"
+#| msgid "Source"
+msgid "Source"
+msgstr "Извор"
+
+#: kio/renamedialog.cpp:243
+#, fuzzy
+#| msgctxt "The destination of a file operation"
+#| msgid "Destination"
+msgid "Destination"
+msgstr "Одредиште"
+
+#: kio/renamedialog.cpp:261
+#, kde-format
+msgid "An older item named '%1' already exists."
+msgstr "Веќе постои постара ставка со име „%1“."
+
+#: kio/renamedialog.cpp:263
+#, kde-format
+msgid "A similar file named '%1' already exists."
+msgstr "Веќе постои слична датотека со име „%1“."
+
+#: kio/renamedialog.cpp:265
+#, kde-format
+msgid "A newer item named '%1' already exists."
+msgstr "Веќе постои понова ставка со име „%1“."
+
+#: kio/paste.cpp:48 kio/paste.cpp:130
+msgid "Filename for clipboard content:"
+msgstr "Датотека за содржина на таблата за исечоци:"
+
+#: kio/paste.cpp:123
+#, kde-format
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: kio/paste.cpp:139
+msgid ""
+"The clipboard has changed since you used 'paste': the chosen data format is "
+"no longer applicable. Please copy again what you wanted to paste."
+msgstr ""
+"Таблата со исечоци се измени откако користевте „вметни“: избраниот формат на "
+"податоци не е повеќе важечки. Копирајте го повторно она што сакавте да го "
+"вметнете."
+
+#: kio/paste.cpp:210 kio/paste.cpp:277
+msgid "The clipboard is empty"
+msgstr "Таблата со исечоци е празна"
+
+#: kio/paste.cpp:324
+#, kde-format
+msgid "&Paste File"
+msgid_plural "&Paste %1 Files"
+msgstr[0] "&Вметни %1 датотека"
+msgstr[1] "&Вметни %1 датотеки"
+msgstr[2] "&Вметни %1 датотеки"
+
+#: kio/paste.cpp:326
+#, kde-format
+msgid "&Paste URL"
+msgid_plural "&Paste %1 URLs"
+msgstr[0] "&Вметни %1 URL"
+msgstr[1] "&Вметни %1 URL"
+msgstr[2] "&Вметни %1 URL"
+
+#: kio/paste.cpp:328
+msgid "&Paste Clipboard Contents"
+msgstr "&Вметни од таблата со исечоци"
 
 #: kio/kdirlister.cpp:339
 #, kde-format
@@ -2649,9 +2648,10 @@ msgstr ""
 "URL не може да биде прикажано\n"
 "%1"
 
-#: kio/copyjob.cpp:1326 kio/copyjob.cpp:1897
-msgid "Already Exists as Folder"
-msgstr "Веќе постои како папка"
+#: kio/kdbusservicestarter.cpp:76
+#, kde-format
+msgid "No service implementing %1"
+msgstr "Нема сервис кој применува %1"
 
 #: kio/chmodjob.cpp:215
 #, kde-format
@@ -2995,6 +2995,28 @@ msgstr "Отвори во ново ливче"
 msgid "*.adr|Opera Bookmark Files (*.adr)"
 msgstr "*.adr|Датотеки со обележувачи на Opera (*.adr)"
 
+#: kfile/kfilemetadataprovider.cpp:303
+#, fuzzy
+#| msgid "Sorting"
+msgctxt "@label"
+msgid "Rating"
+msgstr "Подредување"
+
+#: kfile/kfilemetadataprovider.cpp:305
+#, fuzzy
+#| msgctxt "KFile System Bookmarks"
+#| msgid "Trash"
+msgctxt "@label"
+msgid "Tags"
+msgstr "Корпа"
+
+#: kfile/kfilemetadataprovider.cpp:307 kfile/knfotranslator.cpp:39
+#, fuzzy
+#| msgid "Comment"
+msgctxt "@label"
+msgid "Comment"
+msgstr "Коментар"
+
 #: kfile/kfiledialog.cpp:129
 msgid "*|All files"
 msgstr "*|Сите датотеки"
@@ -3022,6 +3044,34 @@ msgstr "Зачувување како"
 #: kfile/kurlrequester.cpp:242
 msgid "Open file dialog"
 msgstr "Дијалог за отворање на датотека"
+
+#: kfile/kfilemetainfowidget.cpp:163
+msgid "<Error>"
+msgstr "<Грешка>"
+
+#: kfile/kmetaprops.cpp:57
+msgctxt "@title:window"
+msgid "Configure Shown Data"
+msgstr ""
+
+#: kfile/kmetaprops.cpp:62
+msgctxt "@label::textbox"
+msgid "Configure which data should be shown"
+msgstr ""
+
+#: kfile/kmetaprops.cpp:120
+#, fuzzy
+#| msgid "Calculating..."
+msgctxt "@action:button"
+msgid "Configure..."
+msgstr "Пресметувам..."
+
+#: kfile/kmetaprops.cpp:130
+#, fuzzy
+#| msgid "Information"
+msgctxt "@title:tab"
+msgid "Information"
+msgstr "Информација"
 
 #: kfile/kacleditwidget.cpp:61 kfile/kacleditwidget.cpp:454
 msgid "Owner"
@@ -3120,37 +3170,9 @@ msgstr "и"
 msgid "Effective"
 msgstr "Ефективно"
 
-#: kfile/kmetaprops.cpp:57
-msgctxt "@title:window"
-msgid "Configure Shown Data"
-msgstr ""
-
-#: kfile/kmetaprops.cpp:62
-msgctxt "@label::textbox"
-msgid "Configure which data should be shown"
-msgstr ""
-
-#: kfile/kmetaprops.cpp:120
-#, fuzzy
-#| msgid "Calculating..."
-msgctxt "@action:button"
-msgid "Configure..."
-msgstr "Пресметувам..."
-
-#: kfile/kmetaprops.cpp:130
-#, fuzzy
-#| msgid "Information"
-msgctxt "@title:tab"
-msgid "Information"
-msgstr "Информација"
-
 #: kfile/kdevicelistmodel.cpp:116
 msgid "Device name"
 msgstr "Име на уред"
-
-#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:994
-msgid "Location:"
-msgstr "Локација:"
 
 #: kfile/kfilesharedialog.cpp:59
 msgid "&Share"
@@ -3228,253 +3250,41 @@ msgstr ""
 "Настана грешка при запирањето на делењето на папката „%1“. Осигурете се дека "
 "Perl-скриптата „fileshareset“ е поставена со suid root."
 
+#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:994
+msgid "Location:"
+msgstr "Локација:"
+
 #: kfile/kpreviewprops.cpp:50
 msgid "P&review"
 msgstr "П&реглед"
 
-#: kfile/knfotranslator.cpp:39 kfile/kfilemetadataprovider.cpp:307
+#: kfile/kcommentwidget.cpp:61
+#, fuzzy
+#| msgid "Add Entry..."
+msgctxt "@label"
+msgid "Add Comment..."
+msgstr "Додај елемент..."
+
+#: kfile/kcommentwidget.cpp:67
+#, fuzzy
+#| msgid "Calculating..."
+msgctxt "@label"
+msgid "Change..."
+msgstr "Пресметувам..."
+
+#: kfile/kcommentwidget.cpp:109
 #, fuzzy
 #| msgid "Comment"
-msgctxt "@label"
-msgid "Comment"
+msgctxt "@title:window"
+msgid "Change Comment"
 msgstr "Коментар"
 
-#: kfile/knfotranslator.cpp:40
+#: kfile/kcommentwidget.cpp:110
 #, fuzzy
-#| msgid "Created:"
-msgctxt "@label creation date"
-msgid "Created"
-msgstr "Создадено:"
-
-#: kfile/knfotranslator.cpp:41
-#, fuzzy
-#| msgctxt "@title:column"
-#| msgid "Size"
-msgctxt "@label file content size"
-msgid "Size"
-msgstr "Големина"
-
-#: kfile/knfotranslator.cpp:42
-msgctxt "@label file depends from"
-msgid "Depends"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:43
-#, fuzzy
-#| msgid "Parent Folder"
-msgctxt "@label parent directory"
-msgid "Part of"
-msgstr "Родителска папка"
-
-#: kfile/knfotranslator.cpp:44
-#, fuzzy
-#| msgid "Modified:"
-msgctxt "@label modified date of file"
-msgid "Modified"
-msgstr "Променето:"
-
-#: kfile/knfotranslator.cpp:45
-#, fuzzy
-#| msgid "Mime Type"
-msgctxt "@label"
-msgid "MIME Type"
-msgstr "MIME-тип"
-
-#: kfile/knfotranslator.cpp:46
-#, fuzzy
-#| msgid "Contents:"
-msgctxt "@label"
-msgid "Content"
-msgstr "Содржина:"
-
-#: kfile/knfotranslator.cpp:47
-#, fuzzy
-#| msgid "File"
-msgctxt "@label music title"
-msgid "Title"
-msgstr "Датотека"
-
-#: kfile/knfotranslator.cpp:48
-#, fuzzy
-#| msgid "Location:"
-msgctxt "@label file URL"
-msgid "Location"
-msgstr "Локација:"
-
-#: kfile/knfotranslator.cpp:49
-#, fuzzy
-#| msgid "Created:"
-msgctxt "@label"
-msgid "Creator"
-msgstr "Создадено:"
-
-#: kfile/knfotranslator.cpp:50
-msgctxt "@label"
-msgid "Average Bitrate"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:51
-msgctxt "@label"
-msgid "Channels"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:52
-#, fuzzy
-#| msgid "Categories"
-msgctxt "@label number of characters"
-msgid "Characters"
-msgstr "Категории"
-
-#: kfile/knfotranslator.cpp:53
-#, fuzzy
-#| msgid "C&onnect"
-msgctxt "@label"
-msgid "Codec"
-msgstr "П&оврзи"
-
-#: kfile/knfotranslator.cpp:54
-msgctxt "@label"
-msgid "Color Depth"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:55
-#, fuzzy
-#| msgid "Device name"
-msgctxt "@label"
-msgid "Filename"
-msgstr "Име на уред"
-
-#: kfile/knfotranslator.cpp:56
-msgctxt "@label"
-msgid "Height"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:57
-msgctxt "@label"
-msgid "Interlace Mode"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:58
-#, fuzzy
-#| msgid "Link"
-msgctxt "@label number of lines"
-msgid "Lines"
-msgstr "Врска"
-
-#: kfile/knfotranslator.cpp:59
-msgctxt "@label"
-msgid "Programming Language"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:60
-msgctxt "@label"
-msgid "Sample Rate"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:61
-#, fuzzy
-#| msgid "Write"
-msgctxt "@label"
-msgid "Width"
-msgstr "Запишување"
-
-#: kfile/knfotranslator.cpp:62
-msgctxt "@label number of words"
-msgid "Words"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:63
-msgctxt "@label EXIF aperture value"
-msgid "Aperture"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:64
-msgctxt "@label EXIF"
-msgid "Exposure Bias Value"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:65
-#, fuzzy
-#| msgid "Exposure:"
-msgctxt "@label EXIF"
-msgid "Exposure Time"
-msgstr "Изложеност:"
-
-#: kfile/knfotranslator.cpp:66
-#, fuzzy
-#| msgid "Class"
-msgctxt "@label EXIF"
-msgid "Flash"
-msgstr "Класа"
-
-#: kfile/knfotranslator.cpp:67
-msgctxt "@label EXIF"
-msgid "Focal Length"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:68
-msgctxt "@label EXIF"
-msgid "Focal Length 35 mm"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:69
-msgctxt "@label EXIF"
-msgid "ISO Speed Ratings"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:70
-#, fuzzy
-#| msgid "Mask"
-msgctxt "@label EXIF"
-msgid "Make"
-msgstr "Маска"
-
-#: kfile/knfotranslator.cpp:71
-msgctxt "@label EXIF"
-msgid "Metering Mode"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:72
-msgctxt "@label EXIF"
-msgid "Model"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:73
-#, fuzzy
-#| msgid "Organization:"
-msgctxt "@label EXIF"
-msgid "Orientation"
-msgstr "Организација:"
-
-#: kfile/knfotranslator.cpp:74
-msgctxt "@label EXIF"
-msgid "White Balance"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:75
-#, fuzzy
-#| msgctxt "@title:tab File properties"
-#| msgid "&General"
-msgctxt "@label music genre"
-msgid "Genre"
-msgstr "&Општо"
-
-#: kfile/knfotranslator.cpp:76
-msgctxt "@label music album"
-msgid "Album"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:77
-msgctxt "@label music track number"
-msgid "Track"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:78 kfile/kfilemetadatawidget.cpp:575
-#, fuzzy
-#| msgid "Type"
-msgctxt "@label file type"
-msgid "Type"
-msgstr "Тип"
+#| msgid "Comment"
+msgctxt "@title:window"
+msgid "Add Comment"
+msgstr "Коментар"
 
 #: kfile/kencodingfiledialog.cpp:50
 msgid "Encoding:"
@@ -4061,69 +3871,242 @@ msgstr "Поддржани се само извршни на локалните 
 msgid "Advanced Options for %1"
 msgstr "Напредни опции за %1"
 
-#: kfile/kfilemetadatawidget.cpp:494
+#: kfile/knfotranslator.cpp:40
+#, fuzzy
+#| msgid "Created:"
+msgctxt "@label creation date"
+msgid "Created"
+msgstr "Создадено:"
+
+#: kfile/knfotranslator.cpp:41
 #, fuzzy
 #| msgctxt "@title:column"
 #| msgid "Size"
-msgctxt "@label"
+msgctxt "@label file content size"
 msgid "Size"
 msgstr "Големина"
 
-#: kfile/kfilemetadatawidget.cpp:496
-#, fuzzy
-#| msgid "1 Folder"
-#| msgid_plural "%1 Folders"
-msgctxt "@label"
-msgid "Folder"
-msgstr "%1 папка"
+#: kfile/knfotranslator.cpp:42
+msgctxt "@label file depends from"
+msgid "Depends"
+msgstr ""
 
-#: kfile/kfilemetadatawidget.cpp:512
+#: kfile/knfotranslator.cpp:43
 #, fuzzy
-#| msgid "Size:"
-msgctxt "@label"
-msgid "Total Size"
-msgstr "Големина:"
+#| msgid "Parent Folder"
+msgctxt "@label parent directory"
+msgid "Part of"
+msgstr "Родителска папка"
 
-#: kfile/kfilemetadatawidget.cpp:577
+#: kfile/knfotranslator.cpp:44
 #, fuzzy
 #| msgid "Modified:"
-msgctxt "@label"
+msgctxt "@label modified date of file"
 msgid "Modified"
 msgstr "Променето:"
 
-#: kfile/kfilemetadatawidget.cpp:578
+#: kfile/knfotranslator.cpp:45
 #, fuzzy
-#| msgid "Owner"
+#| msgid "Mime Type"
 msgctxt "@label"
-msgid "Owner"
-msgstr "Сопственик"
+msgid "MIME Type"
+msgstr "MIME-тип"
 
-#: kfile/kfilemetadatawidget.cpp:579
+#: kfile/knfotranslator.cpp:46
 #, fuzzy
-#| msgctxt "@title:column"
-#| msgid "Permissions"
+#| msgid "Contents:"
 msgctxt "@label"
-msgid "Permissions"
-msgstr "Дозволи"
+msgid "Content"
+msgstr "Содржина:"
 
-#: kfile/kfilemetadataprovider.cpp:303
+#: kfile/knfotranslator.cpp:47
 #, fuzzy
-#| msgid "Sorting"
-msgctxt "@label"
-msgid "Rating"
-msgstr "Подредување"
+#| msgid "File"
+msgctxt "@label music title"
+msgid "Title"
+msgstr "Датотека"
 
-#: kfile/kfilemetadataprovider.cpp:305
+#: kfile/knfotranslator.cpp:48
 #, fuzzy
-#| msgctxt "KFile System Bookmarks"
-#| msgid "Trash"
-msgctxt "@label"
-msgid "Tags"
-msgstr "Корпа"
+#| msgid "Location:"
+msgctxt "@label file URL"
+msgid "Location"
+msgstr "Локација:"
 
-#: kfile/kfilemetainfowidget.cpp:163
-msgid "<Error>"
-msgstr "<Грешка>"
+#: kfile/knfotranslator.cpp:49
+#, fuzzy
+#| msgid "Created:"
+msgctxt "@label"
+msgid "Creator"
+msgstr "Создадено:"
+
+#: kfile/knfotranslator.cpp:50
+msgctxt "@label"
+msgid "Average Bitrate"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:51
+msgctxt "@label"
+msgid "Channels"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:52
+#, fuzzy
+#| msgid "Categories"
+msgctxt "@label number of characters"
+msgid "Characters"
+msgstr "Категории"
+
+#: kfile/knfotranslator.cpp:53
+#, fuzzy
+#| msgid "C&onnect"
+msgctxt "@label"
+msgid "Codec"
+msgstr "П&оврзи"
+
+#: kfile/knfotranslator.cpp:54
+msgctxt "@label"
+msgid "Color Depth"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:55
+#, fuzzy
+#| msgid "Device name"
+msgctxt "@label"
+msgid "Filename"
+msgstr "Име на уред"
+
+#: kfile/knfotranslator.cpp:56
+msgctxt "@label"
+msgid "Height"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:57
+msgctxt "@label"
+msgid "Interlace Mode"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:58
+#, fuzzy
+#| msgid "Link"
+msgctxt "@label number of lines"
+msgid "Lines"
+msgstr "Врска"
+
+#: kfile/knfotranslator.cpp:59
+msgctxt "@label"
+msgid "Programming Language"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:60
+msgctxt "@label"
+msgid "Sample Rate"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:61
+#, fuzzy
+#| msgid "Write"
+msgctxt "@label"
+msgid "Width"
+msgstr "Запишување"
+
+#: kfile/knfotranslator.cpp:62
+msgctxt "@label number of words"
+msgid "Words"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:63
+msgctxt "@label EXIF aperture value"
+msgid "Aperture"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:64
+msgctxt "@label EXIF"
+msgid "Exposure Bias Value"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:65
+#, fuzzy
+#| msgid "Exposure:"
+msgctxt "@label EXIF"
+msgid "Exposure Time"
+msgstr "Изложеност:"
+
+#: kfile/knfotranslator.cpp:66
+#, fuzzy
+#| msgid "Class"
+msgctxt "@label EXIF"
+msgid "Flash"
+msgstr "Класа"
+
+#: kfile/knfotranslator.cpp:67
+msgctxt "@label EXIF"
+msgid "Focal Length"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:68
+msgctxt "@label EXIF"
+msgid "Focal Length 35 mm"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:69
+msgctxt "@label EXIF"
+msgid "ISO Speed Ratings"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:70
+#, fuzzy
+#| msgid "Mask"
+msgctxt "@label EXIF"
+msgid "Make"
+msgstr "Маска"
+
+#: kfile/knfotranslator.cpp:71
+msgctxt "@label EXIF"
+msgid "Metering Mode"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:72
+msgctxt "@label EXIF"
+msgid "Model"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:73
+#, fuzzy
+#| msgid "Organization:"
+msgctxt "@label EXIF"
+msgid "Orientation"
+msgstr "Организација:"
+
+#: kfile/knfotranslator.cpp:74
+msgctxt "@label EXIF"
+msgid "White Balance"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:75
+#, fuzzy
+#| msgctxt "@title:tab File properties"
+#| msgid "&General"
+msgctxt "@label music genre"
+msgid "Genre"
+msgstr "&Општо"
+
+#: kfile/knfotranslator.cpp:76
+msgctxt "@label music album"
+msgid "Album"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:77
+msgctxt "@label music track number"
+msgid "Track"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:78 kfile/kfilemetadatawidget.cpp:575
+#, fuzzy
+#| msgid "Type"
+msgctxt "@label file type"
+msgid "Type"
+msgstr "Тип"
 
 #: kfile/kopenwithdialog.cpp:269
 msgid "Known Applications"
@@ -4228,33 +4211,50 @@ msgstr ""
 msgid "'%1' not found, please type a valid program name."
 msgstr "„%1“ не е пронајдена, внесете име на валидна програма."
 
-#: kfile/kcommentwidget.cpp:61
+#: kfile/kfilemetadatawidget.cpp:494
 #, fuzzy
-#| msgid "Add Entry..."
+#| msgctxt "@title:column"
+#| msgid "Size"
 msgctxt "@label"
-msgid "Add Comment..."
-msgstr "Додај елемент..."
+msgid "Size"
+msgstr "Големина"
 
-#: kfile/kcommentwidget.cpp:67
+#: kfile/kfilemetadatawidget.cpp:496
 #, fuzzy
-#| msgid "Calculating..."
+#| msgid "1 Folder"
+#| msgid_plural "%1 Folders"
 msgctxt "@label"
-msgid "Change..."
-msgstr "Пресметувам..."
+msgid "Folder"
+msgstr "%1 папка"
 
-#: kfile/kcommentwidget.cpp:109
+#: kfile/kfilemetadatawidget.cpp:512
 #, fuzzy
-#| msgid "Comment"
-msgctxt "@title:window"
-msgid "Change Comment"
-msgstr "Коментар"
+#| msgid "Size:"
+msgctxt "@label"
+msgid "Total Size"
+msgstr "Големина:"
 
-#: kfile/kcommentwidget.cpp:110
+#: kfile/kfilemetadatawidget.cpp:577
 #, fuzzy
-#| msgid "Comment"
-msgctxt "@title:window"
-msgid "Add Comment"
-msgstr "Коментар"
+#| msgid "Modified:"
+msgctxt "@label"
+msgid "Modified"
+msgstr "Променето:"
+
+#: kfile/kfilemetadatawidget.cpp:578
+#, fuzzy
+#| msgid "Owner"
+msgctxt "@label"
+msgid "Owner"
+msgstr "Сопственик"
+
+#: kfile/kfilemetadatawidget.cpp:579
+#, fuzzy
+#| msgctxt "@title:column"
+#| msgid "Permissions"
+msgctxt "@label"
+msgid "Permissions"
+msgstr "Дозволи"
 
 #: kfile/kfilemetadataconfigurationwidget.cpp:171
 #, fuzzy
@@ -6283,14 +6283,6 @@ msgstr ""
 "специфични за дијалогот за датотеки, но инаку функционираат како обележувачи "
 "во остатокот на KDE.</qt>"
 
-#: ../kfile/kurlnavigatortogglebutton.cpp:90
-msgid "Click for Location Navigation"
-msgstr "Кликнете за навигација до локацијата"
-
-#: ../kfile/kurlnavigatortogglebutton.cpp:92
-msgid "Click to Edit Location"
-msgstr "Кликнете за уредување на локацијата"
-
 #: ../kfile/kdiroperator.cpp:769 ../kfile/kdirselectdialog.cpp:156
 #, kde-format
 msgid "A file or folder named %1 already exists."
@@ -6465,21 +6457,6 @@ msgstr "Дијалог за отворање на датотека"
 msgid "&View"
 msgstr "Пр&еглед"
 
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:164
-msgctxt "@item:inmenu"
-msgid "Devices"
-msgstr "Уреди"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:168
-msgctxt "@item:inmenu"
-msgid "Subversion"
-msgstr "Subversion"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:172
-msgctxt "@item:inmenu"
-msgid "Other"
-msgstr "Други"
-
 #: ../kfile/kdirselectdialog.cpp:128
 msgctxt "folder name"
 msgid "New Folder"
@@ -6526,6 +6503,14 @@ msgstr "Покажи скриени папки"
 msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "Својства"
+
+#: ../kfile/kurlnavigatortogglebutton.cpp:90
+msgid "Click for Location Navigation"
+msgstr "Кликнете за навигација до локацијата"
+
+#: ../kfile/kurlnavigatortogglebutton.cpp:92
+msgid "Click to Edit Location"
+msgstr "Кликнете за уредување на локацијата"
 
 #: ../kfile/kfileplacesview.cpp:569
 msgctxt "@action:inmenu"
@@ -6789,6 +6774,21 @@ msgstr "Се случи грешка при пристапувањето на �
 #: ../kfile/kfiletreeview.cpp:187
 msgid "Show Hidden Folders"
 msgstr "Покажи скриени папки"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:164
+msgctxt "@item:inmenu"
+msgid "Devices"
+msgstr "Уреди"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:168
+msgctxt "@item:inmenu"
+msgid "Subversion"
+msgstr "Subversion"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:172
+msgctxt "@item:inmenu"
+msgid "Other"
+msgstr "Други"
 
 #~ msgid "size %1 (%2)"
 #~ msgstr "големина %1 (%2)"
