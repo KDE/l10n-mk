@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-10 06:11+0200\n"
+"POT-Creation-Date: 2010-08-30 05:27+0200\n"
 "PO-Revision-Date: 2000-10-02 22:00+0100\n"
 "Last-Translator: Damjan Janevski <miopa@usa.net>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -227,7 +227,7 @@ msgstr ""
 
 #. i18n: file: part/dialogs/KWStartupWidget.ui:51
 #. i18n: ectx: attribute (title), widget (QWidget, columnsTab)
-#: rc.cpp:96 part/dialogs/KWPageSettingsDialog.cpp:42
+#: rc.cpp:96 part/dialogs/KWPageSettingsDialog.cpp:40
 #, fuzzy
 msgid "Columns"
 msgstr "Колона:"
@@ -1047,6 +1047,12 @@ msgstr "Поврзи рамки за текст"
 msgid "Geometry"
 msgstr "Геометрија"
 
+#: part/dialogs/KWPageSettingsDialog.cpp:92
+#, fuzzy
+#| msgid "Frame Properties"
+msgid "Change Page Properties"
+msgstr "Параметри на рамка"
+
 #: part/dialogs/KWSelectBookmarkDialog.cpp:79
 #, fuzzy
 msgid "Rename Bookmark"
@@ -1095,12 +1101,6 @@ msgstr "&Создади рамка за текст"
 msgid "Create custom outline"
 msgstr "&Создади табела"
 
-#: part/commands/KWPagePropertiesCommand.cpp:36
-#, fuzzy
-#| msgid "Frame Properties"
-msgid "Page Properties"
-msgstr "Параметри на рамка"
-
 #: part/commands/KWPageRemoveCommand.cpp:32
 #, fuzzy
 msgid "Remove Page"
@@ -1111,31 +1111,42 @@ msgstr "Отстрани внес"
 msgid "Clip Frame"
 msgstr "Преповрзи рамка"
 
-#: part/frames/KWTextFrameSet.cpp:88
+#: part/commands/KWChangePageStyleCommand.cpp:25
+#, fuzzy
+msgid "Set Page Style"
+msgstr "Име на група рамки"
+
+#: part/commands/KWNewPageStyleCommand.cpp:27
+#, fuzzy
+msgid "Insert Page Style"
+msgstr "KWord - Вметни табела"
+
+#: part/commands/KWPageStylePropertiesCommand.cpp:36
+#, fuzzy
+#| msgid "Frame Properties"
+msgid "Page Properties"
+msgstr "Параметри на рамка"
+
+#: part/frames/KWTextFrameSet.cpp:90
 msgid "Odd Pages Header"
 msgstr ""
 
-#: part/frames/KWTextFrameSet.cpp:91
+#: part/frames/KWTextFrameSet.cpp:93
 msgid "Even Pages Header"
 msgstr ""
 
-#: part/frames/KWTextFrameSet.cpp:94
+#: part/frames/KWTextFrameSet.cpp:96
 msgid "Odd Pages Footer"
 msgstr ""
 
-#: part/frames/KWTextFrameSet.cpp:97
+#: part/frames/KWTextFrameSet.cpp:99
 msgid "Even Pages Footer"
 msgstr ""
 
-#: part/frames/KWTextFrameSet.cpp:100
+#: part/frames/KWTextFrameSet.cpp:102
 #, fuzzy
 msgid "Main text"
 msgstr "Уреди &текст"
-
-#: part/frames/KWTextFrameSet.cpp:103
-#, fuzzy
-msgid "Page Background"
-msgstr "Боја на позадина на рамка"
 
 #: part/KWStatusBar.cpp:39
 msgid "Modified"
@@ -1702,6 +1713,10 @@ msgstr ""
 #: part/KWDocument.cpp:835
 msgid "Installation Error"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Page Background"
+#~ msgstr "Боја на позадина на рамка"
 
 #, fuzzy
 #~| msgid "Format"
