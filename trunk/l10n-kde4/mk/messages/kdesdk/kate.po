@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-08 06:59+0200\n"
+"POT-Creation-Date: 2010-09-13 05:54+0200\n"
 "PO-Revision-Date: 2007-02-17 11:32+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1188,14 +1188,14 @@ msgstr ""
 "обележани, се вчитани и ќе бидат повторно вчитани следниот пат кога ќе се "
 "стартува Kate."
 
-#: app/katefilelist.cpp:55 plugins/filetree/katefiletree.cpp:50
+#: app/katefilelist.cpp:55 plugins/filetree/katefiletree.cpp:51
 #, fuzzy
 #| msgid "Clos&e All"
 msgid "Close"
 msgstr "Затвори ги сит&е"
 
 #: app/katefilelist.cpp:58 app/katemainwindow.cpp:327
-#: plugins/filetree/katefiletree.cpp:52
+#: plugins/filetree/katefiletree.cpp:53
 msgid "Close the current document."
 msgstr "Го затвора тековниот документ."
 
@@ -1236,10 +1236,14 @@ msgid "Sort &By"
 msgstr "Подреди с&поред"
 
 #: app/katefilelist.cpp:78 app/katefilelist.cpp:307
+#: plugins/filetree/katefiletree.cpp:76
+#: plugins/filetree/katefiletreeconfigpage.cpp:74
 msgid "Opening Order"
 msgstr "Редослед на отворање"
 
 #: app/katefilelist.cpp:78 app/katefilelist.cpp:308
+#: plugins/filetree/katefiletree.cpp:67
+#: plugins/filetree/katefiletreeconfigpage.cpp:75
 msgid "Document Name"
 msgstr "Име на документ"
 
@@ -1251,27 +1255,27 @@ msgstr "URL"
 msgid "Custom"
 msgstr ""
 
-#: app/katefilelist.cpp:281
+#: app/katefilelist.cpp:281 plugins/filetree/katefiletreeconfigpage.cpp:48
 msgid "Background Shading"
 msgstr "Засенчување на подлогата"
 
-#: app/katefilelist.cpp:288
+#: app/katefilelist.cpp:288 plugins/filetree/katefiletreeconfigpage.cpp:55
 msgid "&Viewed documents' shade:"
 msgstr "Засенчу&вање на прегледуван документ:"
 
-#: app/katefilelist.cpp:294
+#: app/katefilelist.cpp:294 plugins/filetree/katefiletreeconfigpage.cpp:61
 msgid "&Modified documents' shade:"
 msgstr "Засенчување на &модифициран документ:"
 
-#: app/katefilelist.cpp:302
+#: app/katefilelist.cpp:302 plugins/filetree/katefiletreeconfigpage.cpp:69
 msgid "&Sort by:"
 msgstr "Подреди с&поред:"
 
-#: app/katefilelist.cpp:309
+#: app/katefilelist.cpp:309 plugins/filetree/katefiletreeconfigpage.cpp:76
 msgid "Url"
 msgstr ""
 
-#: app/katefilelist.cpp:315
+#: app/katefilelist.cpp:315 plugins/filetree/katefiletreeconfigpage.cpp:93
 msgid ""
 "When background shading is enabled, documents that have been viewed or "
 "edited within the current session will have a shaded background. The most "
@@ -1281,11 +1285,11 @@ msgstr ""
 "прегледувани или уредувани неодамна ќе имаат засенчена подлога. Последните "
 "посетени документи ќе бидат најзасенчени."
 
-#: app/katefilelist.cpp:319
+#: app/katefilelist.cpp:319 plugins/filetree/katefiletreeconfigpage.cpp:97
 msgid "Set the color for shading viewed documents."
 msgstr "Ја поставува бојата за засенчување на прегледуваните документи."
 
-#: app/katefilelist.cpp:321
+#: app/katefilelist.cpp:321 plugins/filetree/katefiletreeconfigpage.cpp:99
 msgid ""
 "Set the color for modified documents. This color is blended into the color "
 "for viewed files. The most recently edited documents get most of this color."
@@ -1797,20 +1801,85 @@ msgstr " ВМЕТ "
 msgid " BLOCK "
 msgstr " БЛОК "
 
-#: plugins/filetree/katefiletreeplugin.cpp:43
-#: plugins/filetree/katefiletreeplugin.cpp:92
+#: plugins/filetree/katefiletreeplugin.cpp:46
+#: plugins/filetree/katefiletreeplugin.cpp:111
 #, fuzzy
 #| msgid "Document Name"
 msgid "Document Tree"
 msgstr "Име на документ"
 
-#: plugins/filetree/katefiletreeplugin.cpp:43
+#: plugins/filetree/katefiletreeplugin.cpp:46
 msgid "Show open documents in a tree"
 msgstr ""
 
-#: plugins/filetree/katefiletreeplugin.cpp:132
+#: plugins/filetree/katefiletreeplugin.cpp:154
 msgid "&Show Active"
 msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:57
+msgid "Tree Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:58
+msgid "Set view style to Tree Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:61
+msgid "List Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:62
+msgid "Set view style to List Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:68
+#, fuzzy
+#| msgid "Document Name"
+msgid "Sort by Document Name"
+msgstr "Име на документ"
+
+#: plugins/filetree/katefiletree.cpp:72
+#, fuzzy
+#| msgid "Document List"
+msgid "Document Path"
+msgstr "Листа со документи"
+
+#: plugins/filetree/katefiletree.cpp:73
+#, fuzzy
+#| msgid "&Show All Documents >>"
+msgid "Sort by Document Path"
+msgstr "&Прикажи ги сите документи >>"
+
+#: plugins/filetree/katefiletree.cpp:77
+#, fuzzy
+#| msgid "Opening Order"
+msgid "Sort by Opening Order"
+msgstr "Редослед на отворање"
+
+#: plugins/filetree/katefiletree.cpp:197
+msgid "View Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:201
+#, fuzzy
+msgid "Sort By"
+msgstr "Подреди с&поред"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:82
+#, fuzzy
+msgid "&View Mode:"
+msgstr "&Нова"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:87
+#, fuzzy
+msgid "Tree View"
+msgstr "Претходен преглед"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:88
+#, fuzzy
+#| msgid "Split Ve&rtical"
+msgid "List View"
+msgstr "Подели &вертикално"
 
 #, fuzzy
 #~ msgid "Tabify Plugin"
@@ -2352,9 +2421,6 @@ msgstr ""
 #~ msgid "Email Files"
 #~ msgstr "Испратете датотеки по е-пошта"
 
-#~ msgid "&Show All Documents >>"
-#~ msgstr "&Прикажи ги сите документи >>"
-
 #~ msgid "&Mail..."
 #~ msgstr "&Испрати..."
 
@@ -2395,16 +2461,8 @@ msgstr ""
 #~ msgid "Selection"
 #~ msgstr "Избрани д&ејства:"
 
-#, fuzzy
-#~ msgid "Preview"
-#~ msgstr "Претходен преглед"
-
 #~ msgid "&Appearance"
 #~ msgstr "&Изглед"
-
-#, fuzzy
-#~ msgid "Sort By"
-#~ msgstr "Подреди с&поред"
 
 #, fuzzy
 #~ msgid "&Top"
