@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:46+0200\n"
+"POT-Creation-Date: 2010-10-24 06:22+0200\n"
 "PO-Revision-Date: 2009-06-21 09:24+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -19,25 +19,21 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: connectioncontroller.cpp:112
-#, kde-format
-msgid "Refused uninvited connection attempt from %1"
-msgstr "Одбиен е обид за непокането поврзување од %1"
+#: abstractrfbserver.cpp:221
+msgid "Address already in use"
+msgstr "Адресата веќе се користи"
 
-#: connectioncontroller.cpp:123
-#, kde-format
-msgid "Accepted uninvited connection from %1"
-msgstr "Прифатено непокането поврзување од %1"
+#: abstractrfbserver.cpp:306
+msgid ""
+"Your X11 Server does not support the required XTest extension version 2.2. "
+"Sharing your desktop is not possible."
+msgstr ""
+"Вашиот X11-сервер не ја подржува бараната екстензија XTest верзија 2.2. "
+"Делењето на вашата работна површина не е можно."
 
-#: connectioncontroller.cpp:131
-#, kde-format
-msgid "Received connection from %1, on hold (waiting for confirmation)"
-msgstr "Примено поврзување од %1, на почек (чека на потврда)"
-
-#: connectioncontroller.cpp:174 connectioncontroller.cpp:178
-#, kde-format
-msgid "Failed login attempt from %1: wrong password"
-msgstr "Неуспешен обид за најава од %1: погрешна лозинка"
+#: abstractrfbserver.cpp:307
+msgid "Desktop Sharing Error"
+msgstr "Грешка на Делење на површина"
 
 #: connectiondialog.cpp:32
 msgid "New Connection"
@@ -51,7 +47,7 @@ msgstr "Прифати поврзување"
 msgid "Refuse Connection"
 msgstr "Одбиј поврзување"
 
-#: invitedialog.cpp:34 manageinvitationsdialog.cpp:57
+#: invitedialog.cpp:34 manageinvitationsdialog.cpp:55
 msgid "Invitation"
 msgstr "Покана"
 
@@ -93,26 +89,30 @@ msgstr ""
 "Ако сакате да создадете трајна лозинка за Делење на работната површина, "
 "дозволете „Непоканети поврзувања“ во кофигурацијата."
 
-#: krfbserver.cpp:194 krfbserver.cpp:214
+#: krfbconnectioncontroller.cpp:97
+#, kde-format
+msgid "Refused uninvited connection attempt from %1"
+msgstr "Одбиен е обид за непокането поврзување од %1"
+
+#: krfbconnectioncontroller.cpp:108
+#, kde-format
+msgid "Accepted uninvited connection from %1"
+msgstr "Прифатено непокането поврзување од %1"
+
+#: krfbconnectioncontroller.cpp:116
+#, kde-format
+msgid "Received connection from %1, on hold (waiting for confirmation)"
+msgstr "Примено поврзување од %1, на почек (чека на потврда)"
+
+#: krfbconnectioncontroller.cpp:159 krfbconnectioncontroller.cpp:163
+#, kde-format
+msgid "Failed login attempt from %1: wrong password"
+msgstr "Неуспешен обид за најава од %1: погрешна лозинка"
+
+#: krfbserver.cpp:60 krfbserver.cpp:65
 #, kde-format
 msgid "%1@%2 (shared desktop)"
 msgstr "%1@%2 (делена работна површина)"
-
-#: krfbserver.cpp:207
-msgid "Address already in use"
-msgstr "Адресата веќе се користи"
-
-#: krfbserver.cpp:302
-msgid ""
-"Your X11 Server does not support the required XTest extension version 2.2. "
-"Sharing your desktop is not possible."
-msgstr ""
-"Вашиот X11-сервер не ја подржува бараната екстензија XTest верзија 2.2. "
-"Делењето на вашата работна површина не е можно."
-
-#: krfbserver.cpp:303
-msgid "Desktop Sharing Error"
-msgstr "Грешка на Делење на површина"
 
 #: main.cpp:40
 msgid "VNC-compatible server to share KDE desktops"
@@ -220,7 +220,7 @@ msgstr "Деактивирање на позадината на KDesktop"
 msgid "Do not show the invitations management dialog at startup"
 msgstr "Не го покажувај на почеток дијалогот за менаџмент на покани"
 
-#: manageinvitationsdialog.cpp:95
+#: manageinvitationsdialog.cpp:93
 msgid ""
 "An invitation creates a one-time password that allows the receiver to "
 "connect to your desktop.\n"
@@ -251,7 +251,7 @@ msgstr ""
 "Ако сакате да создадете трајна лозинка за Делење на работната површина, "
 "дозволете „Непоканети поврзувања“ во кофигурацијата."
 
-#: manageinvitationsdialog.cpp:117
+#: manageinvitationsdialog.cpp:115
 msgid ""
 "When sending an invitation by email, note that everybody who reads this "
 "email will be able to connect to your computer for one hour, or until the "
@@ -265,15 +265,15 @@ msgstr ""
 "Треба или да ја криптирате пораката или да ја испратите само преку сигурна "
 "мрежа, но не преку Интернет."
 
-#: manageinvitationsdialog.cpp:122
+#: manageinvitationsdialog.cpp:120
 msgid "Send Invitation via Email"
 msgstr "Испрати покана преку е-пошта"
 
-#: manageinvitationsdialog.cpp:143
+#: manageinvitationsdialog.cpp:141
 msgid "Desktop Sharing (VNC) invitation"
 msgstr "покана за делење на површина (VNC) "
 
-#: manageinvitationsdialog.cpp:144
+#: manageinvitationsdialog.cpp:142
 #, fuzzy, kde-format
 #| msgid ""
 #| "You have been invited to a VNC session. If you have the KDE Remote "
@@ -313,23 +313,23 @@ msgstr ""
 "\n"
 "Заради безбедносни причини оваа покана ќе истече на %5."
 
-#: manageinvitationsdialog.cpp:182
+#: manageinvitationsdialog.cpp:180
 msgid "Network"
 msgstr "Мрежа"
 
-#: manageinvitationsdialog.cpp:183
+#: manageinvitationsdialog.cpp:181
 msgid "Security"
 msgstr "Безбедност"
 
-#: manageinvitationsdialog.cpp:192
+#: manageinvitationsdialog.cpp:190
 msgid "<qt>Are you sure you want to delete all invitations?</qt>"
 msgstr "<qt>Дали навистина сакате да ги избришете сите покани?</qt>"
 
-#: manageinvitationsdialog.cpp:193 manageinvitationsdialog.cpp:209
+#: manageinvitationsdialog.cpp:191 manageinvitationsdialog.cpp:207
 msgid "Confirm delete Invitations"
 msgstr "Потврда за бришење покани"
 
-#: manageinvitationsdialog.cpp:208
+#: manageinvitationsdialog.cpp:206
 msgid "<qt>Are you sure you want to delete this invitation?</qt>"
 msgstr "<qt>Дали навистина сакате да ја избришете оваа покана?</qt>"
 
@@ -738,30 +738,30 @@ msgstr "Лозинка за непоканети поврзувања."
 msgid "Preferred Frame Buffer Plugin"
 msgstr ""
 
-#: trayicon.cpp:39 trayicon.cpp:91
+#: trayicon.cpp:38 trayicon.cpp:90
 msgid "Desktop Sharing - disconnected"
 msgstr "Делење на површина - одврзано"
 
-#: trayicon.cpp:48
+#: trayicon.cpp:47
 msgid "Enable Remote Control"
 msgstr "Овозможи далечинска контрола"
 
-#: trayicon.cpp:49
+#: trayicon.cpp:48
 msgid "Disable Remote Control"
 msgstr "Оневозможи далечинска контрола"
 
-#: trayicon.cpp:79
+#: trayicon.cpp:78
 #, fuzzy, kde-format
 #| msgid "The remote user has closed the connection."
 msgid "The remote user %1 is now connected."
 msgstr "Оддалечениот корисник го затвори поврзувањето."
 
-#: trayicon.cpp:81
+#: trayicon.cpp:80
 #, kde-format
 msgid "Desktop Sharing - connected with %1"
 msgstr "Делење на површина - поврзан со %1"
 
-#: trayicon.cpp:93
+#: trayicon.cpp:92
 msgid "The remote user has closed the connection."
 msgstr "Оддалечениот корисник го затвори поврзувањето."
 
