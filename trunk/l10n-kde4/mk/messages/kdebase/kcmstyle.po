@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmstyle\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:43+0200\n"
+"POT-Creation-Date: 2010-11-10 06:10+0100\n"
 "PO-Revision-Date: 2009-06-21 20:33+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -88,35 +88,46 @@ msgstr "Ниска резолуција на приказ и многу брз �
 msgid "High display resolution and Very High CPU"
 msgstr "Висока резолуција на приказ и многу брз процесор"
 
-#: kcmstyle.cpp:265
+#: kcmstyle.cpp:266
 msgctxt "@title:tab"
 msgid "&Applications"
 msgstr ""
 
-#: kcmstyle.cpp:266
+#: kcmstyle.cpp:267
 msgctxt "@title:tab"
 msgid "&Fine Tuning"
 msgstr "&Фино нагодување"
 
-#: kcmstyle.cpp:296 kcmstyle.cpp:307
+#: kcmstyle.cpp:297 kcmstyle.cpp:308
 msgid "There was an error loading the configuration dialog for this style."
 msgstr ""
 "Имаше грешка при вчитувањето на дијалогот за конфигурација за овој стил."
 
-#: kcmstyle.cpp:298 kcmstyle.cpp:309
+#: kcmstyle.cpp:299 kcmstyle.cpp:310
 msgid "Unable to Load Dialog"
 msgstr "Не може да се вчита дијалогот"
 
-#: kcmstyle.cpp:530 kcmstyle.cpp:641
+#: kcmstyle.cpp:382
+msgid ""
+"<p>Changes to the visibilty of menu icons will only affect newly started "
+"applications.</p>"
+msgstr ""
+
+#: kcmstyle.cpp:383
+msgctxt "@title:window"
+msgid "Menu Icons Changed"
+msgstr ""
+
+#: kcmstyle.cpp:540 kcmstyle.cpp:651
 msgid "No description available."
 msgstr "Нема достапен опис."
 
-#: kcmstyle.cpp:641
+#: kcmstyle.cpp:651
 #, kde-format
 msgid "Description: %1"
 msgstr "Опис: %1"
 
-#: kcmstyle.cpp:723
+#: kcmstyle.cpp:734
 msgid ""
 "Here you can choose from a list of predefined widget styles (e.g. the way "
 "buttons are drawn) which may or may not be combined with a theme (additional "
@@ -127,7 +138,7 @@ msgstr ""
 "бидат комбинирани со тема (дополнителни информации како мермерна текстура "
 "или градиенти)."
 
-#: kcmstyle.cpp:727
+#: kcmstyle.cpp:738
 msgid ""
 "This area shows a preview of the currently selected style without having to "
 "apply it to the whole desktop."
@@ -135,13 +146,13 @@ msgstr ""
 "Оваа област прикажува преглед на тековно избраниот стил, без да има потреба "
 "тој да се примени на целата површина."
 
-#: kcmstyle.cpp:730
+#: kcmstyle.cpp:741
 msgid "This page allows you to choose details about the widget style options"
 msgstr ""
 "Оваа страница ви овозможува да изберете детали за опциите за стиловите на "
 "графичките контроли"
 
-#: kcmstyle.cpp:731
+#: kcmstyle.cpp:742
 #, fuzzy
 #| msgid ""
 #| "<p><b>Icons only:</b> Shows only icons on toolbar buttons. Best option "
@@ -164,7 +175,7 @@ msgstr ""
 "</p><b>Текст под икони: </b> Прикажува икони и текст на копчиња од алатник. "
 "Текстот е под иконите."
 
-#: kcmstyle.cpp:738
+#: kcmstyle.cpp:749
 msgid ""
 "If you enable this option, KDE Applications will show small icons alongside "
 "some important buttons."
@@ -172,7 +183,19 @@ msgstr ""
 "Ако ја овозможите оваа опција, KDE апликациите ќе покажуваат мали икони "
 "покрај некои важни копчиња."
 
-#: kcmstyle.cpp:740
+#: kcmstyle.cpp:751
+#, fuzzy
+#| msgid ""
+#| "If you enable this option, KDE Applications will show small icons "
+#| "alongside some important buttons."
+msgid ""
+"If you enable this option, KDE Applications will show small icons alongside "
+"most menu items."
+msgstr ""
+"Ако ја овозможите оваа опција, KDE апликациите ќе покажуваат мали икони "
+"покрај некои важни копчиња."
+
+#: kcmstyle.cpp:753
 msgid ""
 "If you enable this option, KDE Applications will run internal animations."
 msgstr ""
@@ -205,68 +228,77 @@ msgid "Show icons on buttons:"
 msgstr "Пр&икажи икони на копчиња"
 
 #. i18n: file: finetuning.ui:63
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:11
+#, fuzzy
+#| msgctxt "@option:check"
+#| msgid "Sho&w icons on buttons"
+msgid "Show icons in menus:"
+msgstr "Пр&икажи икони на копчиња"
+
+#. i18n: file: finetuning.ui:83
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:14
 msgid "Toolbars"
 msgstr ""
 
-#. i18n: file: finetuning.ui:69
+#. i18n: file: finetuning.ui:89
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:14
+#: rc.cpp:17
 msgid "Main toolbar text:"
 msgstr ""
 
-#. i18n: file: finetuning.ui:83
+#. i18n: file: finetuning.ui:103
 #. i18n: ectx: property (text), item, widget (KComboBox, comboToolbarIcons)
-#. i18n: file: finetuning.ui:120
+#. i18n: file: finetuning.ui:140
 #. i18n: ectx: property (text), item, widget (KComboBox, comboSecondaryToolbarIcons)
-#: rc.cpp:17 rc.cpp:32
+#: rc.cpp:20 rc.cpp:35
 msgid "No Text"
 msgstr ""
 
-#. i18n: file: finetuning.ui:88
+#. i18n: file: finetuning.ui:108
 #. i18n: ectx: property (text), item, widget (KComboBox, comboToolbarIcons)
-#. i18n: file: finetuning.ui:125
+#. i18n: file: finetuning.ui:145
 #. i18n: ectx: property (text), item, widget (KComboBox, comboSecondaryToolbarIcons)
-#: rc.cpp:20 rc.cpp:35
+#: rc.cpp:23 rc.cpp:38
 msgid "Text Only"
 msgstr "Само текст"
 
-#. i18n: file: finetuning.ui:93
+#. i18n: file: finetuning.ui:113
 #. i18n: ectx: property (text), item, widget (KComboBox, comboToolbarIcons)
-#. i18n: file: finetuning.ui:130
+#. i18n: file: finetuning.ui:150
 #. i18n: ectx: property (text), item, widget (KComboBox, comboSecondaryToolbarIcons)
-#: rc.cpp:23 rc.cpp:38
+#: rc.cpp:26 rc.cpp:41
 #, fuzzy
 #| msgid "Text Alongside Icons"
 msgid "Text Beside Icons"
 msgstr "Текст покрај иконите"
 
-#. i18n: file: finetuning.ui:98
+#. i18n: file: finetuning.ui:118
 #. i18n: ectx: property (text), item, widget (KComboBox, comboToolbarIcons)
-#. i18n: file: finetuning.ui:135
+#. i18n: file: finetuning.ui:155
 #. i18n: ectx: property (text), item, widget (KComboBox, comboSecondaryToolbarIcons)
-#: rc.cpp:26 rc.cpp:41
+#: rc.cpp:29 rc.cpp:44
 #, fuzzy
 #| msgid "Text Under Icons"
 msgid "Text Below Icons"
 msgstr "Текст под иконите"
 
-#. i18n: file: finetuning.ui:106
+#. i18n: file: finetuning.ui:126
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:29
+#: rc.cpp:32
 msgid "Secondary toolbar text:"
 msgstr ""
 
 #. i18n: file: stylepreview.ui:19
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:44
+#: rc.cpp:47
 msgid "Tab 1"
 msgstr "Ливче 1"
 
 #. i18n: file: stylepreview.ui:29
 #. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
-#: rc.cpp:47
+#: rc.cpp:50
 msgid "Group Box"
 msgstr "Поле за групирање"
 
@@ -274,31 +306,31 @@ msgstr "Поле за групирање"
 #. i18n: ectx: property (text), widget (QRadioButton, RadioButton1)
 #. i18n: file: stylepreview.ui:45
 #. i18n: ectx: property (text), widget (QRadioButton, RadioButton2)
-#: rc.cpp:50 rc.cpp:53
+#: rc.cpp:53 rc.cpp:56
 msgid "Radio button"
 msgstr "Радио копче"
 
 #. i18n: file: stylepreview.ui:62
 #. i18n: ectx: property (text), widget (QCheckBox, CheckBox1)
-#: rc.cpp:56
+#: rc.cpp:59
 msgid "Checkbox"
 msgstr "Поле за избор"
 
 #. i18n: file: stylepreview.ui:115
 #. i18n: ectx: property (text), widget (QPushButton, PushButton1)
-#: rc.cpp:59
+#: rc.cpp:62
 msgid "Button"
 msgstr "Копче"
 
 #. i18n: file: stylepreview.ui:125
 #. i18n: ectx: property (text), item, widget (QComboBox, ComboBox1)
-#: rc.cpp:62
+#: rc.cpp:65
 msgid "Combobox"
 msgstr "Комбо поле"
 
 #. i18n: file: stylepreview.ui:155
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:65
+#: rc.cpp:68
 msgid "Tab 2"
 msgstr "Ливче 2"
 
