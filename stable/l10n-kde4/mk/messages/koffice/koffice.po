@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-02 02:22+0100\n"
+"POT-Creation-Date: 2010-12-04 10:36+0100\n"
 "PO-Revision-Date: 2000-10-02 22:00+0100\n"
 "Last-Translator: Damjan Janevski <miopa@usa.net>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -209,6 +209,11 @@ msgstr ""
 msgid "Separate paths"
 msgstr "Одбери..."
 
+#: flake/commands/KoConnectionShapeTypeCommand.cpp:31
+#, fuzzy
+msgid "Change Connection"
+msgstr "Рабови на страна"
+
 #: flake/commands/KoPathSegmentTypeCommand.cpp:132
 msgid "Change segments to curves"
 msgstr ""
@@ -217,11 +222,6 @@ msgstr ""
 #, fuzzy
 msgid "Change segments to lines"
 msgstr "Колони"
-
-#: flake/commands/KoConnectionShapeTypeCommand.cpp:31
-#, fuzzy
-msgid "Change Connection"
-msgstr "Рабови на страна"
 
 #: flake/commands/KoParameterHandleMoveCommand.cpp:34
 #, fuzzy
@@ -265,18 +265,18 @@ msgstr "Отстрани група"
 msgid "Distribute shapes"
 msgstr ""
 
-#: flake/commands/KoShapeBackgroundCommand.cpp:73
-#: flake/commands/KoShapeBackgroundCommand.cpp:84
-#: flake/commands/KoShapeBackgroundCommand.cpp:99
-msgid "Set background"
+#: flake/commands/KoPathBreakAtPointCommand.cpp:38
+msgid "Break subpath at points"
 msgstr ""
 
 #: flake/commands/KoShapeMoveCommand.cpp:42
 msgid "Move shapes"
 msgstr ""
 
-#: flake/commands/KoPathBreakAtPointCommand.cpp:38
-msgid "Break subpath at points"
+#: flake/commands/KoShapeBackgroundCommand.cpp:73
+#: flake/commands/KoShapeBackgroundCommand.cpp:84
+#: flake/commands/KoShapeBackgroundCommand.cpp:99
+msgid "Set background"
 msgstr ""
 
 #: flake/commands/KoShapeGroupCommand.cpp:93
@@ -328,15 +328,6 @@ msgstr "inch"
 msgid "A connection between two other shapes"
 msgstr ""
 
-#: flake/KoPathShapeFactory.cpp:32
-#, fuzzy
-msgid "Simple path shape"
-msgstr "Создади шаблон"
-
-#: flake/KoPathShapeFactory.cpp:34
-msgid "A simple path shape"
-msgstr ""
-
 #: flake/KoToolBase.cpp:187 flake/KoToolManager.cpp:356
 #, fuzzy
 msgid "Tool Options"
@@ -365,6 +356,15 @@ msgstr "inch"
 msgid "Curve"
 msgstr ""
 
+#: flake/KoPathShapeFactory.cpp:32
+#, fuzzy
+msgid "Simple path shape"
+msgstr "Создади шаблон"
+
+#: flake/KoPathShapeFactory.cpp:34
+msgid "A simple path shape"
+msgstr ""
+
 #: flake/KoShapePaste.cpp:100
 #, fuzzy
 msgid "Paste Shapes"
@@ -385,22 +385,85 @@ msgstr ""
 msgid "Blank"
 msgstr ""
 
-#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:43
-msgid "Calendar Event"
+#: main/rdf/KoRdfCalendarEvent.cpp:201
+msgid "Area"
 msgstr ""
 
-#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:50
+#: main/rdf/KoRdfCalendarEvent.cpp:202
+#, fuzzy
+msgid "Region"
+msgstr "Отстрани приказ"
+
+#: main/rdf/KoRdfCalendarEvent.cpp:453
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not save\n"
+#| "%1"
+msgid ""
+"Could not add entry\n"
+"%1"
+msgstr ""
+"Не може да се сними\n"
+"%1"
+
+#: main/rdf/KoRdfCalendarEvent.cpp:477
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not save\n"
+#| "%1"
+msgid ""
+"Could not save iCal file\n"
+"%1"
+msgstr ""
+"Не може да се сними\n"
+"%1"
+
+#: main/rdf/KoRdfLocationTreeWidgetItem.cpp:43
+#, fuzzy
+#| msgid "Document Information"
+msgid "Location Information"
+msgstr "Информации за документот"
+
+#: main/rdf/KoSemanticStylesheetsEditor.cpp:113
+#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:113
+msgid "System"
+msgstr ""
+
+#: main/rdf/KoSemanticStylesheetsEditor.cpp:129
+#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:122
+#, fuzzy
+msgid "User"
+msgstr "Внесете име"
+
+#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:53
+#, fuzzy
+#| msgid "Document Information"
+msgid "Contact Information"
+msgstr "Информации за документот"
+
 #: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:71
+#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:50
 #, fuzzy
 msgid "Edit..."
 msgstr "&Додади група..."
 
-#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:53
-msgid "Import event to Calendar"
+#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:74
+#, fuzzy
+msgid "Import contact"
+msgstr "&Отвори документ"
+
+#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:77
+msgid "Export as vcard..."
 msgstr ""
 
-#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:56
-msgid "Export event to iCal file..."
+#: main/rdf/KoDocumentRdf.cpp:306 main/KoDocument.cpp:908
+#: main/KoDocument.cpp:927 main/KoDocument.cpp:957 main/KoDocument.cpp:990
+#, kde-format
+msgid "Not able to write '%1'. Partition full?"
+msgstr ""
+
+#: main/rdf/KoDocumentRdf.cpp:851
+msgid "Reference"
 msgstr ""
 
 #: main/rdf/KoSopranoTableModel.cpp:80
@@ -440,36 +503,29 @@ msgstr "Избери..."
 msgid "Stored In"
 msgstr ""
 
-#: main/rdf/KoDocumentRdf.cpp:306 main/KoDocument.cpp:908
-#: main/KoDocument.cpp:927 main/KoDocument.cpp:957 main/KoDocument.cpp:990
-#, kde-format
-msgid "Not able to write '%1'. Partition full?"
-msgstr ""
-
-#: main/rdf/KoDocumentRdf.cpp:851
-msgid "Reference"
-msgstr ""
-
-#: main/rdf/KoRdfLocationTreeWidgetItem.cpp:43
+#: main/rdf/KoRdfSemanticTree.cpp:49
 #, fuzzy
-#| msgid "Document Information"
-msgid "Location Information"
-msgstr "Информации за документот"
+msgid "People"
+msgstr "Отстрани приказ"
+
+#. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:240
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: main/rdf/KoRdfSemanticTree.cpp:52 rc.cpp:182
+msgid "Events"
+msgstr ""
+
+#. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:256
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: main/rdf/KoRdfSemanticTree.cpp:55 rc.cpp:185
+#, fuzzy
+msgid "Locations"
+msgstr ""
+"\n"
+"Ориентација:"
 
 #: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:111
 msgid "Apply Stylesheet"
 msgstr ""
-
-#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:113
-#: main/rdf/KoSemanticStylesheetsEditor.cpp:113
-msgid "System"
-msgstr ""
-
-#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:122
-#: main/rdf/KoSemanticStylesheetsEditor.cpp:129
-#, fuzzy
-msgid "User"
-msgstr "Внесете име"
 
 #: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:136
 msgid "Reapply Current"
@@ -484,72 +540,16 @@ msgstr ""
 msgid "Edit %1"
 msgstr ""
 
-#: main/rdf/KoRdfSemanticTree.cpp:49
-#, fuzzy
-msgid "People"
-msgstr "Отстрани приказ"
-
-#. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:240
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: main/rdf/KoRdfSemanticTree.cpp:52 rc.cpp:167
-msgid "Events"
+#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:43
+msgid "Calendar Event"
 msgstr ""
 
-#. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:256
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: main/rdf/KoRdfSemanticTree.cpp:55 rc.cpp:170
-#, fuzzy
-msgid "Locations"
-msgstr ""
-"\n"
-"Ориентација:"
-
-#: main/rdf/KoRdfCalendarEvent.cpp:201
-msgid "Area"
+#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:53
+msgid "Import event to Calendar"
 msgstr ""
 
-#: main/rdf/KoRdfCalendarEvent.cpp:202
-#, fuzzy
-msgid "Region"
-msgstr "Отстрани приказ"
-
-#: main/rdf/KoRdfCalendarEvent.cpp:453
-#, fuzzy, kde-format
-#| msgid ""
-#| "Could not save\n"
-#| "%1"
-msgid ""
-"Could not add entry\n"
-"%1"
-msgstr ""
-"Не може да се сними\n"
-"%1"
-
-#: main/rdf/KoRdfCalendarEvent.cpp:477
-#, fuzzy, kde-format
-#| msgid ""
-#| "Could not save\n"
-#| "%1"
-msgid ""
-"Could not save iCal file\n"
-"%1"
-msgstr ""
-"Не може да се сними\n"
-"%1"
-
-#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:53
-#, fuzzy
-#| msgid "Document Information"
-msgid "Contact Information"
-msgstr "Информации за документот"
-
-#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:74
-#, fuzzy
-msgid "Import contact"
-msgstr "&Отвори документ"
-
-#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:77
-msgid "Export as vcard..."
+#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:56
+msgid "Export event to iCal file..."
 msgstr ""
 
 #: main/rdf/KoDocumentRdfEditWidget.cpp:272
@@ -682,6 +682,11 @@ msgstr "Насловна линија:"
 
 #: main/KoGridData.cpp:211
 msgid "Shows or hides grid"
+msgstr ""
+
+#: main/KoApplicationAdaptor.cpp:50
+#, kde-format
+msgid "Unknown KOffice MimeType %1. Check your installation."
 msgstr ""
 
 #: main/KoFilterManager_p.cpp:43
@@ -877,8 +882,8 @@ msgstr ""
 "Документот беше променет\n"
 "Дали сакате да го зачувате?"
 
-#: main/KoMainWindow.cpp:1202 main/KoOpenPane.cpp:358 main/KoOpenPane.cpp:362
-#: main/KoExistingDocumentPane.cpp:44
+#: main/KoMainWindow.cpp:1202 main/KoExistingDocumentPane.cpp:44
+#: main/KoOpenPane.cpp:358 main/KoOpenPane.cpp:362
 #, fuzzy
 msgid "Open Document"
 msgstr "&Отвори документ"
@@ -1015,16 +1020,6 @@ msgstr ""
 msgid "Template %1 failed to load."
 msgstr ""
 
-#: main/KoOpenPane.cpp:190
-#, fuzzy
-msgid "Recent Documents"
-msgstr "&Отвори постоечки документ"
-
-#: main/KoOpenPane.cpp:272
-#, fuzzy
-msgid "Custom Document"
-msgstr "&Отвори документ"
-
 #: main/KoPrintingDialog.cpp:140 main/KoPrintingDialog.cpp:326
 #, fuzzy, kde-format
 msgid "Printing page %1"
@@ -1050,11 +1045,6 @@ msgstr ""
 
 #: main/KoPrintingDialog.cpp:208
 msgid "Stop"
-msgstr ""
-
-#: main/KoApplicationAdaptor.cpp:50
-#, kde-format
-msgid "Unknown KOffice MimeType %1. Check your installation."
 msgstr ""
 
 #: main/KoDocument.cpp:503
@@ -1331,6 +1321,16 @@ msgstr "inch"
 msgid "Right indent"
 msgstr "inch"
 
+#: main/KoOpenPane.cpp:190
+#, fuzzy
+msgid "Recent Documents"
+msgstr "&Отвори постоечки документ"
+
+#: main/KoOpenPane.cpp:272
+#, fuzzy
+msgid "Custom Document"
+msgstr "&Отвори документ"
+
 #: main/KoVersionDialog.cpp:48
 msgid "Version"
 msgstr ""
@@ -1376,6 +1376,127 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "Date: %1"
 msgstr "Избери..."
+
+#: main/KoTemplateCreateDia.cpp:117
+#, fuzzy
+msgid "Create Template"
+msgstr "Создади шаблон"
+
+#. i18n: file: main/koDocumentInfoAuthorWidget.ui:16
+#. i18n: ectx: property (text), widget (QLabel, fullNameLabel)
+#: main/KoTemplateCreateDia.cpp:127 rc.cpp:242
+msgid "Name:"
+msgstr "Име :"
+
+#: main/KoTemplateCreateDia.cpp:138
+msgid "Group:"
+msgstr "Група:"
+
+#: main/KoTemplateCreateDia.cpp:153
+#, fuzzy
+msgid "&Add Group..."
+msgstr "&Додади група..."
+
+#: main/KoTemplateCreateDia.cpp:162
+#, fuzzy
+msgid "Picture"
+msgstr "Слика:"
+
+#: main/KoTemplateCreateDia.cpp:169
+#, fuzzy
+msgid "&Default"
+msgstr "Одбери..."
+
+#: main/KoTemplateCreateDia.cpp:175
+msgid "Custom"
+msgstr "По Избор"
+
+#: main/KoTemplateCreateDia.cpp:179
+#, fuzzy
+msgid "&Select..."
+msgstr "Одбери..."
+
+#: main/KoTemplateCreateDia.cpp:184
+msgid "Preview:"
+msgstr "Преглед:"
+
+#: main/KoTemplateCreateDia.cpp:194
+msgid "Use the new template as default"
+msgstr ""
+
+#: main/KoTemplateCreateDia.cpp:196
+#, kde-format
+msgid "Use the new template every time %1 starts"
+msgstr ""
+
+#: main/KoTemplateCreateDia.cpp:306
+#, kde-format
+msgid "Do you really want to overwrite the existing '%1' template?"
+msgstr "Навистина ли сакате да го презапишете постоечкиот '%1' шаблон?"
+
+#: main/KoTemplateCreateDia.cpp:420 main/KoTemplateCreateDia.cpp:426
+#, fuzzy
+msgid "Add Group"
+msgstr "&Додади група..."
+
+#: main/KoTemplateCreateDia.cpp:420
+#, fuzzy
+msgid "Enter group name:"
+msgstr "Внесете име"
+
+#: main/KoTemplateCreateDia.cpp:426
+msgid "This name is already used."
+msgstr ""
+
+#: main/KoTemplateCreateDia.cpp:450
+#, fuzzy
+msgid "Do you really want to remove that group?"
+msgstr "Навистина ли сакате да ја отстраните таа група"
+
+#: main/KoTemplateCreateDia.cpp:451
+#, fuzzy
+msgid "Remove Group"
+msgstr "Отстрани група"
+
+#: main/KoTemplateCreateDia.cpp:453
+#, fuzzy
+msgid "Do you really want to remove that template?"
+msgstr "Навистина ли сакате да го отстраните тој шаблон"
+
+#: main/KoTemplateCreateDia.cpp:454
+#, fuzzy
+msgid "Remove Template"
+msgstr "Отстрани шаблон"
+
+#: main/KoTemplateCreateDia.cpp:458
+#, fuzzy
+msgid "&Delete"
+msgstr "Отстрани шаблон"
+
+#: main/KoTemplateCreateDia.cpp:505
+msgid "Could not load picture."
+msgstr "Не може да се вчита слика."
+
+#: main/KoTemplateCreateDia.cpp:508
+msgid "No picture available."
+msgstr "Нема расположиви слики."
+
+#: main/KoRecentDocumentsPane.cpp:75
+#, fuzzy
+msgid "Open This Document"
+msgstr "&Отвори документ"
+
+#: main/KoRecentDocumentsPane.cpp:148
+#, kde-format
+msgctxt "File modification date and time. %1 is date time"
+msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+msgstr ""
+
+#: main/KoRecentDocumentsPane.cpp:151
+#, kde-format
+msgctxt "File access date and time. %1 is date time"
+msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+msgstr ""
 
 #: main/KoDocumentInfoDlg.cpp:105 main/KoDocumentInfoDlg.cpp:106
 msgid "General"
@@ -1514,127 +1635,6 @@ msgid ""
 "document now?</qt>"
 msgstr ""
 
-#: main/KoTemplateCreateDia.cpp:117
-#, fuzzy
-msgid "Create Template"
-msgstr "Создади шаблон"
-
-#. i18n: file: main/koDocumentInfoAuthorWidget.ui:16
-#. i18n: ectx: property (text), widget (QLabel, fullNameLabel)
-#: main/KoTemplateCreateDia.cpp:127 rc.cpp:242
-msgid "Name:"
-msgstr "Име :"
-
-#: main/KoTemplateCreateDia.cpp:138
-msgid "Group:"
-msgstr "Група:"
-
-#: main/KoTemplateCreateDia.cpp:153
-#, fuzzy
-msgid "&Add Group..."
-msgstr "&Додади група..."
-
-#: main/KoTemplateCreateDia.cpp:162
-#, fuzzy
-msgid "Picture"
-msgstr "Слика:"
-
-#: main/KoTemplateCreateDia.cpp:169
-#, fuzzy
-msgid "&Default"
-msgstr "Одбери..."
-
-#: main/KoTemplateCreateDia.cpp:175
-msgid "Custom"
-msgstr "По Избор"
-
-#: main/KoTemplateCreateDia.cpp:179
-#, fuzzy
-msgid "&Select..."
-msgstr "Одбери..."
-
-#: main/KoTemplateCreateDia.cpp:184
-msgid "Preview:"
-msgstr "Преглед:"
-
-#: main/KoTemplateCreateDia.cpp:194
-msgid "Use the new template as default"
-msgstr ""
-
-#: main/KoTemplateCreateDia.cpp:196
-#, kde-format
-msgid "Use the new template every time %1 starts"
-msgstr ""
-
-#: main/KoTemplateCreateDia.cpp:306
-#, kde-format
-msgid "Do you really want to overwrite the existing '%1' template?"
-msgstr "Навистина ли сакате да го презапишете постоечкиот '%1' шаблон?"
-
-#: main/KoTemplateCreateDia.cpp:420 main/KoTemplateCreateDia.cpp:426
-#, fuzzy
-msgid "Add Group"
-msgstr "&Додади група..."
-
-#: main/KoTemplateCreateDia.cpp:420
-#, fuzzy
-msgid "Enter group name:"
-msgstr "Внесете име"
-
-#: main/KoTemplateCreateDia.cpp:426
-msgid "This name is already used."
-msgstr ""
-
-#: main/KoTemplateCreateDia.cpp:450
-#, fuzzy
-msgid "Do you really want to remove that group?"
-msgstr "Навистина ли сакате да ја отстраните таа група"
-
-#: main/KoTemplateCreateDia.cpp:451
-#, fuzzy
-msgid "Remove Group"
-msgstr "Отстрани група"
-
-#: main/KoTemplateCreateDia.cpp:453
-#, fuzzy
-msgid "Do you really want to remove that template?"
-msgstr "Навистина ли сакате да го отстраните тој шаблон"
-
-#: main/KoTemplateCreateDia.cpp:454
-#, fuzzy
-msgid "Remove Template"
-msgstr "Отстрани шаблон"
-
-#: main/KoTemplateCreateDia.cpp:458
-#, fuzzy
-msgid "&Delete"
-msgstr "Отстрани шаблон"
-
-#: main/KoTemplateCreateDia.cpp:505
-msgid "Could not load picture."
-msgstr "Не може да се вчита слика."
-
-#: main/KoTemplateCreateDia.cpp:508
-msgid "No picture available."
-msgstr "Нема расположиви слики."
-
-#: main/KoRecentDocumentsPane.cpp:75
-#, fuzzy
-msgid "Open This Document"
-msgstr "&Отвори документ"
-
-#: main/KoRecentDocumentsPane.cpp:148
-#, kde-format
-msgctxt "File modification date and time. %1 is date time"
-msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
-msgstr ""
-
-#: main/KoRecentDocumentsPane.cpp:151
-#, kde-format
-msgctxt "File access date and time. %1 is date time"
-msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
-msgstr ""
-
 #: main/KoDocumentInfo.cpp:51
 msgid "Unknown"
 msgstr ""
@@ -1666,7 +1666,7 @@ msgstr ""
 #. i18n: file: widgets/KoEditColorSet.ui:45
 #. i18n: ectx: property (toolTip), widget (QToolButton, add)
 #: kokross/KoScriptManagerAdd.cpp:272 kokross/KoScriptManagerAdd.cpp:275
-#: pigment/compositeops/KoCompositeOpAdd.h:36 rc.cpp:419
+#: pigment/compositeops/KoCompositeOpAdd.h:36 rc.cpp:431
 #, fuzzy
 msgid "Add"
 msgstr "&Додади група..."
@@ -1767,11 +1767,6 @@ msgid ""
 "permissions to delete the folder \"%1\"."
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOpErase.h:40
-#, fuzzy
-msgid "Erase"
-msgstr "Име :"
-
 #: pigment/compositeops/KoCompositeOpMultiply.h:35
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:193
 msgid "Multiply"
@@ -1791,6 +1786,35 @@ msgstr "Насловна линија:"
 msgid "Dodge"
 msgstr "Рабови на страна"
 
+#: pigment/compositeops/KoCompositeOpSubtract.h:37
+#: pigment/colorspaces/KoAlphaColorSpace.cpp:121
+#, fuzzy
+msgid "Subtract"
+msgstr "Кратка содржина :"
+
+#: pigment/compositeops/KoCompositeOpInversedSubtract.h:37
+#, fuzzy
+msgid "Inversed Subtract"
+msgstr "Кратка содржина :"
+
+#: pigment/compositeops/KoCompositeOpCopy2.h:42
+#: pigment/compositeops/KoCompositeOpCopy.h:37
+#: koreport/wrtembed/KoReportDesigner.cpp:832
+#: kopageapp/KoPADocumentStructureDocker.cpp:641
+#, fuzzy
+msgid "Copy"
+msgstr "Фирма :"
+
+#: pigment/compositeops/KoCompositeOpErase.h:40
+#, fuzzy
+msgid "Erase"
+msgstr "Име :"
+
+#: pigment/compositeops/KoCompositeOpSoftlight.h:36
+#, fuzzy
+msgid "Soft light"
+msgstr "inch"
+
 #: pigment/compositeops/KoCompositeOpDivide.h:36
 msgid "Divide"
 msgstr ""
@@ -1799,42 +1823,18 @@ msgstr ""
 msgid "Burn"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOpInversedSubtract.h:37
+#: pigment/compositeops/KoCompositeOpHardlight.h:36
 #, fuzzy
-msgid "Inversed Subtract"
-msgstr "Кратка содржина :"
-
-#: pigment/compositeops/KoCompositeOpSubtract.h:37
-#: pigment/colorspaces/KoAlphaColorSpace.cpp:121
-#, fuzzy
-msgid "Subtract"
-msgstr "Кратка содржина :"
+msgid "Hard light"
+msgstr "Висина:"
 
 #: pigment/compositeops/KoCompositeOpAlphaDarken.h:42
 msgid "Alpha darken"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOpCopy.h:37
-#: pigment/compositeops/KoCompositeOpCopy2.h:42
-#: koreport/wrtembed/KoReportDesigner.cpp:832
-#: kopageapp/KoPADocumentStructureDocker.cpp:641
-#, fuzzy
-msgid "Copy"
-msgstr "Фирма :"
-
 #: pigment/compositeops/KoCompositeOpOver.h:61
 msgid "Normal"
 msgstr ""
-
-#: pigment/compositeops/KoCompositeOpSoftlight.h:36
-#, fuzzy
-msgid "Soft light"
-msgstr "inch"
-
-#: pigment/compositeops/KoCompositeOpHardlight.h:36
-#, fuzzy
-msgid "Hard light"
-msgstr "Висина:"
 
 #: pigment/resources/KoStopGradient.cpp:421
 msgid "SVG Gradient"
@@ -2025,267 +2025,6 @@ msgstr "Колони:"
 msgid "Generic L*a*b* Histogram"
 msgstr ""
 
-#: koreport/common/krpos.cpp:26
-#, fuzzy
-msgid "Position"
-msgstr ""
-"\n"
-"Ориентација:"
-
-#: koreport/common/krsize.cpp:26
-#, fuzzy
-msgid "Size"
-msgstr "Наслов :"
-
-#: koreport/common/krsectiondata.cpp:108
-#, fuzzy
-msgid "Height"
-msgstr "Висина:"
-
-#: koreport/common/krsectiondata.cpp:109
-#: koreport/items/label/KoReportItemLabel.cpp:97
-#: koreport/items/field/KoReportItemField.cpp:95
-#: koreport/items/text/KoReportItemText.cpp:122
-#, fuzzy
-msgid "Background Color"
-msgstr "Отстрани табулатор"
-
-#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:26
-#. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: file: main/rdf/KoRdfLocationEditWidget.ui:17
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#. i18n: file: main/rdf/KoRdfLocationViewWidget.ui:24
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: koreport/common/KoReportItemBase.cpp:28 rc.cpp:188 rc.cpp:200 rc.cpp:203
-#, fuzzy
-#| msgid "Name:"
-msgid "Name"
-msgstr "Име :"
-
-#: koreport/common/KoReportItemBase.cpp:28
-#, fuzzy
-msgid "Object Name"
-msgstr "Полно име :"
-
-#: koreport/common/KoReportItemLine.cpp:67
-#: koreport/items/label/KoReportItemLabel.cpp:104
-#: koreport/items/field/KoReportItemField.cpp:103
-#: koreport/items/text/KoReportItemText.cpp:125
-#: koreport/items/check/KoReportItemCheck.cpp:82
-#, fuzzy
-msgid "Line Weight"
-msgstr "Ширина:"
-
-#: koreport/common/KoReportItemLine.cpp:68
-#: koreport/items/label/KoReportItemLabel.cpp:105
-#: koreport/items/field/KoReportItemField.cpp:104
-#: koreport/items/text/KoReportItemText.cpp:126
-#: koreport/items/check/KoReportItemCheck.cpp:83
-#, fuzzy
-msgid "Line Color"
-msgstr "Колони:"
-
-#: koreport/common/KoReportItemLine.cpp:69
-#: koreport/items/label/KoReportItemLabel.cpp:106
-#: koreport/items/field/KoReportItemField.cpp:105
-#: koreport/items/text/KoReportItemText.cpp:127
-#: koreport/items/check/KoReportItemCheck.cpp:84
-#, fuzzy
-msgid "Line Style"
-msgstr "Наслов :"
-
-#: koreport/wrtembed/reportsection.cpp:97
-#, fuzzy
-msgid "Detail"
-msgstr "Одбери..."
-
-#: koreport/wrtembed/sectioneditor.cpp:283
-msgid "Ascending"
-msgstr ""
-
-#: koreport/wrtembed/sectioneditor.cpp:284
-msgid "Descending"
-msgstr ""
-
-#: koreport/wrtembed/sectioneditor.cpp:306
-#: koreport/wrtembed/sectioneditor.cpp:347
-msgid "Error Encountered"
-msgstr ""
-
-#: koreport/wrtembed/sectioneditor.cpp:307
-#: koreport/wrtembed/sectioneditor.cpp:348
-msgid "Unable to add a new group because its name would not be unique"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:492
-msgid "Page Header (Any)"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:496
-msgid "Page Header (Even)"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:500
-msgid "Page Header (Odd)"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:504
-msgid "Page Header (First)"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:508
-msgid "Page Header (Last)"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:512
-msgid "Page Footer (Any)"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:516
-msgid "Page Footer (Even)"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:520
-msgid "Page Footer (Odd)"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:524
-msgid "Page Footer (First)"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:528
-msgid "Page Footer (Last)"
-msgstr ""
-
-#. i18n: file: koreport/wrtembed/sectioneditor.ui:47
-#. i18n: ectx: property (text), widget (QCheckBox, cbReportHeader)
-#: koreport/wrtembed/KoReportDesigner.cpp:532 rc.cpp:332
-#, fuzzy
-msgid "Report Header"
-msgstr "Заглавје"
-
-#. i18n: file: koreport/wrtembed/sectioneditor.ui:104
-#. i18n: ectx: property (text), widget (QCheckBox, cbReportFooter)
-#: koreport/wrtembed/KoReportDesigner.cpp:536 rc.cpp:353
-#, fuzzy
-msgid "Report Footer"
-msgstr "Подножје"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:608
-#, fuzzy
-msgid "Title"
-msgstr "Наслов :"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:608
-#, fuzzy
-msgid "Report Title"
-msgstr "Автор"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:612
-#, fuzzy
-msgid "Page Size"
-msgstr "Преглед на страна"
-
-#. i18n: file: widgets/KoPageLayoutWidget.ui:115
-#. i18n: ectx: property (text), widget (QRadioButton, portrait)
-#: koreport/wrtembed/KoReportDesigner.cpp:616 rc.cpp:533
-#, fuzzy
-msgid "Portrait"
-msgstr "inch"
-
-#. i18n: file: widgets/KoPageLayoutWidget.ui:122
-#. i18n: ectx: property (text), widget (QRadioButton, landscape)
-#: koreport/wrtembed/KoReportDesigner.cpp:616 rc.cpp:536
-msgid "Landscape"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:617
-#, fuzzy
-msgid "Page Orientation"
-msgstr ""
-"\n"
-"Ориентација:"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:628
-#, fuzzy
-msgid "Page Unit"
-msgstr "Преглед на страна"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:631
-#, fuzzy
-msgid "Grid Snap"
-msgstr "Покажи %1 алатник"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:632
-msgid "Grid Divisions"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:635
-#, fuzzy
-msgid "Left Margin"
-msgstr "inch"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:637
-#, fuzzy
-msgid "Right Margin"
-msgstr "inch"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:639
-msgid "Top Margin"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:641
-msgid "Bottom Margin"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:648
-msgid "Script Interpreter"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:650
-#, fuzzy
-msgid "Object Script"
-msgstr "Скрипта за извршување."
-
-#: koreport/wrtembed/KoReportDesigner.cpp:831
-#: kopageapp/KoPADocumentStructureDocker.cpp:640
-#, fuzzy
-#| msgid "Custom"
-msgid "Cut"
-msgstr "По Избор"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:835
-#: kopageapp/KoPADocumentStructureDocker.cpp:642
-#, fuzzy
-msgid "Paste"
-msgstr "Преглед на страна"
-
-#. i18n: file: koreport/wrtembed/sectioneditor.ui:200
-#. i18n: ectx: property (text), widget (QPushButton, btnRemove)
-#: koreport/wrtembed/KoReportDesigner.cpp:839
-#: widgets/KoResourceItemChooser.cpp:81 kotext/KoTextEditor.cpp:845
-#: kotext/KoTextEditor.cpp:858 rc.cpp:383
-#, fuzzy
-msgid "Delete"
-msgstr "Отстрани шаблон"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:1179
-#, fuzzy
-msgid "Line"
-msgstr "inch"
-
-#: koreport/wrtembed/KoReportDesignerItemBase.cpp:124
-#, kde-format
-msgctxt "<data-source>: <object>"
-msgid "%1: %2"
-msgstr ""
-
-#: koreport/wrtembed/reportpropertiesbutton.cpp:27
-msgid ""
-"A button that allows a report's surface to be selected, allowing its "
-"properties to be seen."
-msgstr ""
-
 #: koreport/items/label/KoReportItemLabel.cpp:82
 #, fuzzy
 msgid "Caption"
@@ -2350,6 +2089,14 @@ msgstr "Внесете име"
 msgid "Font"
 msgstr "inch"
 
+#: koreport/items/label/KoReportItemLabel.cpp:97
+#: koreport/items/field/KoReportItemField.cpp:95
+#: koreport/items/text/KoReportItemText.cpp:122
+#: koreport/common/krsectiondata.cpp:109
+#, fuzzy
+msgid "Background Color"
+msgstr "Отстрани табулатор"
+
 #: koreport/items/label/KoReportItemLabel.cpp:98
 #: koreport/items/field/KoReportItemField.cpp:96
 #: koreport/items/text/KoReportItemText.cpp:123
@@ -2364,6 +2111,33 @@ msgstr "Отстрани табулатор"
 #: widgets/KoColorPopupAction.cpp:85 widgets/KoUniColorChooser.cpp:418
 msgid "Opacity"
 msgstr ""
+
+#: koreport/items/label/KoReportItemLabel.cpp:104
+#: koreport/items/field/KoReportItemField.cpp:103
+#: koreport/items/text/KoReportItemText.cpp:125
+#: koreport/items/check/KoReportItemCheck.cpp:82
+#: koreport/common/KoReportItemLine.cpp:67
+#, fuzzy
+msgid "Line Weight"
+msgstr "Ширина:"
+
+#: koreport/items/label/KoReportItemLabel.cpp:105
+#: koreport/items/field/KoReportItemField.cpp:104
+#: koreport/items/text/KoReportItemText.cpp:126
+#: koreport/items/check/KoReportItemCheck.cpp:83
+#: koreport/common/KoReportItemLine.cpp:68
+#, fuzzy
+msgid "Line Color"
+msgstr "Колони:"
+
+#: koreport/items/label/KoReportItemLabel.cpp:106
+#: koreport/items/field/KoReportItemField.cpp:105
+#: koreport/items/text/KoReportItemText.cpp:127
+#: koreport/items/check/KoReportItemCheck.cpp:84
+#: koreport/common/KoReportItemLine.cpp:69
+#, fuzzy
+msgid "Line Style"
+msgstr "Наслов :"
 
 #: koreport/items/label/KoReportLabelPlugin.cpp:34
 msgid "Label"
@@ -2451,24 +2225,231 @@ msgstr ""
 msgid "Style"
 msgstr "Наслов :"
 
-#: widgets/KoZoomMode.cpp:25 widgets/KoZoomAction.cpp:166
-#: widgets/KoZoomAction.cpp:168 widgets/KoZoomAction.cpp:180
-#: widgets/KoZoomAction.cpp:182
+#: koreport/common/krpos.cpp:26
+#, fuzzy
+msgid "Position"
+msgstr ""
+"\n"
+"Ориентација:"
+
+#: koreport/common/krsize.cpp:26
+#, fuzzy
+msgid "Size"
+msgstr "Наслов :"
+
+#. i18n: file: main/rdf/KoRdfLocationViewWidget.ui:24
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:26
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: main/rdf/KoRdfLocationEditWidget.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: koreport/common/KoReportItemBase.cpp:28 rc.cpp:83 rc.cpp:107 rc.cpp:203
+#, fuzzy
+#| msgid "Name:"
+msgid "Name"
+msgstr "Име :"
+
+#: koreport/common/KoReportItemBase.cpp:28
+#, fuzzy
+msgid "Object Name"
+msgstr "Полно име :"
+
+#: koreport/common/krsectiondata.cpp:108
+#, fuzzy
+msgid "Height"
+msgstr "Висина:"
+
+#: koreport/wrtembed/reportsection.cpp:97
+#, fuzzy
+msgid "Detail"
+msgstr "Одбери..."
+
+#: koreport/wrtembed/KoReportDesignerItemBase.cpp:124
 #, kde-format
-msgid "%1%"
+msgctxt "<data-source>: <object>"
+msgid "%1: %2"
 msgstr ""
 
-#: widgets/KoZoomMode.cpp:26
-msgid "Fit Page Width"
+#: koreport/wrtembed/sectioneditor.cpp:283
+msgid "Ascending"
 msgstr ""
 
-#: widgets/KoZoomMode.cpp:27
-msgid "Fit Page"
+#: koreport/wrtembed/sectioneditor.cpp:284
+msgid "Descending"
 msgstr ""
 
-#: widgets/KoZoomMode.cpp:29
-msgid "Actual Pixels"
+#: koreport/wrtembed/sectioneditor.cpp:306
+#: koreport/wrtembed/sectioneditor.cpp:347
+msgid "Error Encountered"
 msgstr ""
+
+#: koreport/wrtembed/sectioneditor.cpp:307
+#: koreport/wrtembed/sectioneditor.cpp:348
+msgid "Unable to add a new group because its name would not be unique"
+msgstr ""
+
+#: koreport/wrtembed/reportpropertiesbutton.cpp:27
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:492
+msgid "Page Header (Any)"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:496
+msgid "Page Header (Even)"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:500
+msgid "Page Header (Odd)"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:504
+msgid "Page Header (First)"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:508
+msgid "Page Header (Last)"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:512
+msgid "Page Footer (Any)"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:516
+msgid "Page Footer (Even)"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:520
+msgid "Page Footer (Odd)"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:524
+msgid "Page Footer (First)"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:528
+msgid "Page Footer (Last)"
+msgstr ""
+
+#. i18n: file: koreport/wrtembed/sectioneditor.ui:47
+#. i18n: ectx: property (text), widget (QCheckBox, cbReportHeader)
+#: koreport/wrtembed/KoReportDesigner.cpp:532 rc.cpp:332
+#, fuzzy
+msgid "Report Header"
+msgstr "Заглавје"
+
+#. i18n: file: koreport/wrtembed/sectioneditor.ui:104
+#. i18n: ectx: property (text), widget (QCheckBox, cbReportFooter)
+#: koreport/wrtembed/KoReportDesigner.cpp:536 rc.cpp:353
+#, fuzzy
+msgid "Report Footer"
+msgstr "Подножје"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:608
+#, fuzzy
+msgid "Title"
+msgstr "Наслов :"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:608
+#, fuzzy
+msgid "Report Title"
+msgstr "Автор"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:612
+#, fuzzy
+msgid "Page Size"
+msgstr "Преглед на страна"
+
+#. i18n: file: widgets/KoPageLayoutWidget.ui:115
+#. i18n: ectx: property (text), widget (QRadioButton, portrait)
+#: koreport/wrtembed/KoReportDesigner.cpp:616 rc.cpp:545
+#, fuzzy
+msgid "Portrait"
+msgstr "inch"
+
+#. i18n: file: widgets/KoPageLayoutWidget.ui:122
+#. i18n: ectx: property (text), widget (QRadioButton, landscape)
+#: koreport/wrtembed/KoReportDesigner.cpp:616 rc.cpp:548
+msgid "Landscape"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:617
+#, fuzzy
+msgid "Page Orientation"
+msgstr ""
+"\n"
+"Ориентација:"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:628
+#, fuzzy
+msgid "Page Unit"
+msgstr "Преглед на страна"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:631
+#, fuzzy
+msgid "Grid Snap"
+msgstr "Покажи %1 алатник"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:632
+msgid "Grid Divisions"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:635
+#, fuzzy
+msgid "Left Margin"
+msgstr "inch"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:637
+#, fuzzy
+msgid "Right Margin"
+msgstr "inch"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:639
+msgid "Top Margin"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:641
+msgid "Bottom Margin"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:648
+msgid "Script Interpreter"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:650
+#, fuzzy
+msgid "Object Script"
+msgstr "Скрипта за извршување."
+
+#: koreport/wrtembed/KoReportDesigner.cpp:831
+#: kopageapp/KoPADocumentStructureDocker.cpp:640
+#, fuzzy
+#| msgid "Custom"
+msgid "Cut"
+msgstr "По Избор"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:835
+#: kopageapp/KoPADocumentStructureDocker.cpp:642
+#, fuzzy
+msgid "Paste"
+msgstr "Преглед на страна"
+
+#. i18n: file: koreport/wrtembed/sectioneditor.ui:200
+#. i18n: ectx: property (text), widget (QPushButton, btnRemove)
+#: koreport/wrtembed/KoReportDesigner.cpp:839
+#: widgets/KoResourceItemChooser.cpp:81 kotext/KoTextEditor.cpp:845
+#: kotext/KoTextEditor.cpp:858 rc.cpp:383
+#, fuzzy
+msgid "Delete"
+msgstr "Отстрани шаблон"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:1179
+#, fuzzy
+msgid "Line"
+msgstr "inch"
 
 #: widgets/KoCsvImportDialog.cpp:92
 #, fuzzy
@@ -2509,7 +2490,7 @@ msgstr ""
 #. i18n: file: widgets/KoCsvImportDialog.ui:268
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
 #: widgets/KoCsvImportDialog.cpp:222 widgets/KoCsvImportDialog.cpp:575
-#: widgets/KoCsvImportDialog.cpp:682 rc.cpp:485
+#: widgets/KoCsvImportDialog.cpp:682 rc.cpp:497
 msgid "None"
 msgstr ""
 
@@ -2559,7 +2540,7 @@ msgstr ""
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:143
 #. i18n: ectx: property (text), widget (QRadioButton, facingPages)
-#: widgets/KoPageLayoutWidget.cpp:280 rc.cpp:545
+#: widgets/KoPageLayoutWidget.cpp:280 rc.cpp:557
 #, fuzzy
 msgid "Facing pages"
 msgstr "inch"
@@ -2654,6 +2635,25 @@ msgstr ""
 #, fuzzy
 msgid "Opacity:"
 msgstr "Град :"
+
+#: widgets/KoZoomMode.cpp:25 widgets/KoZoomAction.cpp:166
+#: widgets/KoZoomAction.cpp:168 widgets/KoZoomAction.cpp:180
+#: widgets/KoZoomAction.cpp:182
+#, kde-format
+msgid "%1%"
+msgstr ""
+
+#: widgets/KoZoomMode.cpp:26
+msgid "Fit Page Width"
+msgstr ""
+
+#: widgets/KoZoomMode.cpp:27
+msgid "Fit Page"
+msgstr ""
+
+#: widgets/KoZoomMode.cpp:29
+msgid "Actual Pixels"
+msgstr ""
 
 #: widgets/KoZoomAction.cpp:264
 msgid "Use same aspect as pixels"
@@ -2935,7 +2935,7 @@ msgstr "Распоред на страна..."
 
 #. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:63
 #. i18n: ectx: property (text), widget (QTableWidget, variables)
-#: kopageapp/KoPAView.cpp:339 rc.cpp:89
+#: kopageapp/KoPAView.cpp:339 rc.cpp:92
 msgid "Variable"
 msgstr ""
 
@@ -3365,17 +3365,6 @@ msgstr ""
 msgid "Default"
 msgstr "Одбери..."
 
-#: kotext/InsertTextLocator.cpp:29
-msgid "Index Reference"
-msgstr ""
-
-#. i18n: file: widgets/KoCsvImportDialog.ui:147
-#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
-#: kotext/KoTextEditor_p.h:82 kotext/KoTextEditor_p.h:119 rc.cpp:455
-#, fuzzy
-msgid "Format"
-msgstr "Формат на страна"
-
 #: kotext/KoText.cpp:29
 msgctxt "Underline Style"
 msgid "None"
@@ -3391,6 +3380,13 @@ msgstr "inch"
 msgctxt "Underline Style"
 msgid "Double"
 msgstr ""
+
+#. i18n: file: widgets/KoCsvImportDialog.ui:147
+#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
+#: kotext/KoTextEditor_p.h:82 kotext/KoTextEditor_p.h:119 rc.cpp:467
+#, fuzzy
+msgid "Format"
+msgstr "Формат на страна"
 
 #: kotext/KoReplaceStrategy.cpp:56
 msgid ""
@@ -3538,6 +3534,10 @@ msgstr[2] ""
 msgid "Found no match"
 msgstr ""
 
+#: kotext/InsertTextLocator.cpp:29
+msgid "Index Reference"
+msgstr ""
+
 #: kotext/InsertTextReferenceAction.cpp:35
 #: kotext/InsertTextReferenceAction.cpp:63
 msgid "Text Reference"
@@ -3609,8 +3609,8 @@ msgstr ""
 #. i18n: file: widgets/KoEditColorSet.ui:78
 #. i18n: ectx: property (text), widget (QToolButton, save)
 #: rc.cpp:11 rc.cpp:14 rc.cpp:17 rc.cpp:20 rc.cpp:23 rc.cpp:26 rc.cpp:29
-#: rc.cpp:32 rc.cpp:35 rc.cpp:38 rc.cpp:41 rc.cpp:44 rc.cpp:47 rc.cpp:422
-#: rc.cpp:428 rc.cpp:434 rc.cpp:440
+#: rc.cpp:32 rc.cpp:35 rc.cpp:38 rc.cpp:41 rc.cpp:44 rc.cpp:47 rc.cpp:434
+#: rc.cpp:440 rc.cpp:446 rc.cpp:452
 #, fuzzy
 msgid "..."
 msgstr "&Додади група..."
@@ -3622,59 +3622,9 @@ msgstr "&Додади група..."
 msgid "Convert To Path"
 msgstr "Создади шаблон"
 
-#. i18n: file: flake/SnapGuideConfigWidget.ui:33
-#. i18n: ectx: property (toolTip), widget (QCheckBox, nodeSnapGuide)
-#: rc.cpp:53
-#, fuzzy
-msgid "Nodes"
-msgstr "Рабови на страна"
-
-#. i18n: file: flake/SnapGuideConfigWidget.ui:53
-#. i18n: ectx: property (toolTip), widget (QCheckBox, extensionSnapGuide)
-#: rc.cpp:56
-msgid "Extension of lines"
-msgstr ""
-
-#. i18n: file: flake/SnapGuideConfigWidget.ui:73
-#. i18n: ectx: property (toolTip), widget (QCheckBox, boundingBoxSnapGuide)
-#: rc.cpp:59
-msgid "Bounding box of shape"
-msgstr ""
-
-#. i18n: file: flake/SnapGuideConfigWidget.ui:93
-#. i18n: ectx: property (toolTip), widget (QSpinBox, snapDistance)
-#: rc.cpp:62
-msgid "Proximity distance where snapping happens"
-msgstr ""
-
-#. i18n: file: flake/SnapGuideConfigWidget.ui:96
-#. i18n: ectx: property (suffix), widget (QSpinBox, snapDistance)
-#: rc.cpp:65
-msgid " px"
-msgstr ""
-
-#. i18n: file: flake/SnapGuideConfigWidget.ui:109
-#. i18n: ectx: property (toolTip), widget (QCheckBox, orthogonalSnapGuide)
-#: rc.cpp:68
-msgid "Orthogonal"
-msgstr ""
-
-#. i18n: file: flake/SnapGuideConfigWidget.ui:129
-#. i18n: ectx: property (toolTip), widget (QCheckBox, intersectionSnapGuide)
-#: rc.cpp:71
-msgid "Intersection of lines"
-msgstr ""
-
-#. i18n: file: flake/SnapGuideConfigWidget.ui:149
-#. i18n: ectx: property (toolTip), widget (QCheckBox, lineGuideSnapGuide)
-#: rc.cpp:74
-#, fuzzy
-msgid "Guide lines"
-msgstr "Насловна линија:"
-
 #. i18n: file: flake/KoConnectionShapeConfigWidget.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, KoConnectionShapeConfigWidget)
-#: rc.cpp:77
+#: rc.cpp:53
 msgid "Ellipse Shape"
 msgstr ""
 
@@ -3682,26 +3632,76 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: main/koDocumentInfoAboutWidget.ui:109
 #. i18n: ectx: property (text), widget (QLabel, lblTypeDesc)
-#: rc.cpp:80 rc.cpp:302
+#: rc.cpp:56 rc.cpp:302
 #, fuzzy
 msgid "Type:"
 msgstr "Горе:"
 
+#. i18n: file: flake/SnapGuideConfigWidget.ui:33
+#. i18n: ectx: property (toolTip), widget (QCheckBox, nodeSnapGuide)
+#: rc.cpp:59
+#, fuzzy
+msgid "Nodes"
+msgstr "Рабови на страна"
+
+#. i18n: file: flake/SnapGuideConfigWidget.ui:53
+#. i18n: ectx: property (toolTip), widget (QCheckBox, extensionSnapGuide)
+#: rc.cpp:62
+msgid "Extension of lines"
+msgstr ""
+
+#. i18n: file: flake/SnapGuideConfigWidget.ui:73
+#. i18n: ectx: property (toolTip), widget (QCheckBox, boundingBoxSnapGuide)
+#: rc.cpp:65
+msgid "Bounding box of shape"
+msgstr ""
+
+#. i18n: file: flake/SnapGuideConfigWidget.ui:93
+#. i18n: ectx: property (toolTip), widget (QSpinBox, snapDistance)
+#: rc.cpp:68
+msgid "Proximity distance where snapping happens"
+msgstr ""
+
+#. i18n: file: flake/SnapGuideConfigWidget.ui:96
+#. i18n: ectx: property (suffix), widget (QSpinBox, snapDistance)
+#: rc.cpp:71
+msgid " px"
+msgstr ""
+
+#. i18n: file: flake/SnapGuideConfigWidget.ui:109
+#. i18n: ectx: property (toolTip), widget (QCheckBox, orthogonalSnapGuide)
+#: rc.cpp:74
+msgid "Orthogonal"
+msgstr ""
+
+#. i18n: file: flake/SnapGuideConfigWidget.ui:129
+#. i18n: ectx: property (toolTip), widget (QCheckBox, intersectionSnapGuide)
+#: rc.cpp:77
+msgid "Intersection of lines"
+msgstr ""
+
+#. i18n: file: flake/SnapGuideConfigWidget.ui:149
+#. i18n: ectx: property (toolTip), widget (QCheckBox, lineGuideSnapGuide)
+#: rc.cpp:80
+#, fuzzy
+msgid "Guide lines"
+msgstr "Насловна линија:"
+
 #. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:83
+#: rc.cpp:86
 msgid "Stylesheet Definition"
 msgstr ""
 
 #. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:29
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:86
+#: rc.cpp:89
 msgid "Variables Available"
 msgstr ""
 
 #. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:68
 #. i18n: ectx: property (text), widget (QTableWidget, variables)
-#: rc.cpp:92
+#: rc.cpp:95
 #, fuzzy
 msgid "Description"
 msgstr ""
@@ -3714,7 +3714,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, newTripleButton)
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:84
 #. i18n: ectx: property (text), widget (QPushButton, newNamespaceButton)
-#: rc.cpp:95 rc.cpp:107 rc.cpp:119
+#: rc.cpp:98 rc.cpp:122 rc.cpp:134
 msgid "new"
 msgstr ""
 
@@ -3724,66 +3724,86 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, deleteTripleButton)
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:91
 #. i18n: ectx: property (text), widget (QPushButton, deleteNamespaceButton)
-#: rc.cpp:98 rc.cpp:113 rc.cpp:122
+#: rc.cpp:101 rc.cpp:128 rc.cpp:137
 #, fuzzy
 msgid "delete"
 msgstr "Отстрани шаблон"
 
 #. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:113
 #. i18n: ectx: property (text), widget (QTreeWidget, stylesheets)
-#: rc.cpp:101
+#: rc.cpp:104
 msgid "Stylesheet Name"
 msgstr ""
 
+#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:33
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:110
+msgid "Nick"
+msgstr ""
+
+#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:40
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:113
+#, fuzzy
+msgid "Phone Number"
+msgstr "Рабови на страна"
+
+#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:50
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:116
+#, fuzzy
+msgid "Home Page"
+msgstr "Отстрани шаблон"
+
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:21
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:104
+#: rc.cpp:119
 #, fuzzy
 msgid "Triples"
 msgstr "Наслов :"
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:46
 #. i18n: ectx: property (text), widget (QPushButton, copyTripleButton)
-#: rc.cpp:110
+#: rc.cpp:125
 #, fuzzy
 msgid "copy"
 msgstr "Фирма :"
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:76
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: rc.cpp:116
+#: rc.cpp:131
 msgid "Namespaces"
 msgstr ""
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:123
 #. i18n: ectx: property (text), widget (QTreeWidget, m_namespaceView)
-#: rc.cpp:125
+#: rc.cpp:140
 #, fuzzy
 msgid "Prefix"
 msgstr "Преглед:"
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:128
 #. i18n: ectx: property (text), widget (QTreeWidget, m_namespaceView)
-#: rc.cpp:128
+#: rc.cpp:143
 #, fuzzy
 msgid "Namespace"
 msgstr "Отстрани приказ"
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:137
 #. i18n: ectx: attribute (title), widget (QWidget, tab_3)
-#: rc.cpp:131
+#: rc.cpp:146
 msgid "Semantic"
 msgstr ""
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:156
 #. i18n: ectx: attribute (title), widget (QWidget, tab_4)
-#: rc.cpp:135
+#: rc.cpp:150
 msgid "SPARQL"
 msgstr ""
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:182
 #. i18n: ectx: property (html), widget (QTextEdit, m_sparqlQuery)
-#: rc.cpp:138
+#: rc.cpp:153
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -3834,28 +3854,28 @@ msgstr ""
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:191
 #. i18n: ectx: property (text), widget (QPushButton, m_sparqlExecute)
-#: rc.cpp:158
+#: rc.cpp:173
 #, fuzzy
 msgid "Execute"
 msgstr "US Извршно"
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:221
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)
-#: rc.cpp:161
+#: rc.cpp:176
 #, fuzzy
 msgid "Stylesheets"
 msgstr "Наслов :"
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:227
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:164
+#: rc.cpp:179
 #, fuzzy
 msgid "Contacts"
 msgstr "inch"
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:279
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:173
+#: rc.cpp:188
 msgid ""
 "Set the default stylesheet for Semantic objects in this document. New RDF "
 "objects will use this stylesheet automatically. The buttons allow you to set "
@@ -3871,29 +3891,9 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, m_defaultLocationsSheetButton)
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:310
 #. i18n: ectx: property (text), widget (QPushButton, m_setAllStylesheetsButton)
-#: rc.cpp:176 rc.cpp:179 rc.cpp:182 rc.cpp:185
+#: rc.cpp:191 rc.cpp:194 rc.cpp:197 rc.cpp:200
 msgid "Set For All Existing"
 msgstr ""
-
-#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:33
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:191
-msgid "Nick"
-msgstr ""
-
-#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:40
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:194
-#, fuzzy
-msgid "Phone Number"
-msgstr "Рабови на страна"
-
-#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:50
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:197
-#, fuzzy
-msgid "Home Page"
-msgstr "Отстрани шаблон"
 
 #. i18n: file: main/rdf/KoRdfCalendarEventEditWidget.ui:20
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -4313,156 +4313,184 @@ msgstr ""
 msgid "&Cancel"
 msgstr "Рабови на страна"
 
+#. i18n: file: widgets/KoShadowConfigWidget.ui:17
+#. i18n: ectx: property (text), widget (QCheckBox, shadowVisible)
+#: rc.cpp:419
+#, fuzzy
+msgid "Show Shadow"
+msgstr "Рабови на страна"
+
+#. i18n: file: widgets/KoShadowConfigWidget.ui:27
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:422
+#, fuzzy
+msgid "Shadow Angle:"
+msgstr "Рабови на страна"
+
+#. i18n: file: widgets/KoShadowConfigWidget.ui:37
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:425
+#, fuzzy
+msgid "Shadow Offset:"
+msgstr "Рабови на страна"
+
+#. i18n: file: widgets/KoShadowConfigWidget.ui:47
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:428
+#, fuzzy
+msgid "Shadow Color:"
+msgstr "Рабови на страна"
+
 #. i18n: file: widgets/KoEditColorSet.ui:55
 #. i18n: ectx: property (toolTip), widget (QToolButton, remove)
-#: rc.cpp:425
+#: rc.cpp:437
 #, fuzzy
 msgid "Remove"
 msgstr "Отстрани приказ"
 
 #. i18n: file: widgets/KoEditColorSet.ui:65
 #. i18n: ectx: property (toolTip), widget (QToolButton, open)
-#: rc.cpp:431
+#: rc.cpp:443
 msgid "Open palette"
 msgstr ""
 
 #. i18n: file: widgets/KoEditColorSet.ui:75
 #. i18n: ectx: property (toolTip), widget (QToolButton, save)
-#: rc.cpp:437
+#: rc.cpp:449
 msgid "Save palette"
 msgstr ""
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:52
 #. i18n: ectx: attribute (title), widget (QWidget, m_dataTab)
-#: rc.cpp:443
+#: rc.cpp:455
 #, fuzzy
 msgid "Data"
 msgstr "Избери..."
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:66
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
-#: rc.cpp:446
+#: rc.cpp:458
 #, fuzzy
 msgid "E&ncoding:"
 msgstr "Насловна линија:"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:110
 #. i18n: ectx: property (text), widget (QCheckBox, m_firstRowHeader)
-#: rc.cpp:449
+#: rc.cpp:461
 msgid "First row contains headers"
 msgstr ""
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:123
 #. i18n: ectx: property (text), widget (QCheckBox, m_firstColHeader)
-#: rc.cpp:452
+#: rc.cpp:464
 msgid "First column contains headers"
 msgstr ""
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:159
 #. i18n: ectx: property (title), widget (QGroupBox, m_delimiterBox)
-#: rc.cpp:458
+#: rc.cpp:470
 msgid "Delimiter"
 msgstr ""
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:165
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioComma)
-#: rc.cpp:461
+#: rc.cpp:473
 #, fuzzy
 msgid "Comma"
 msgstr "Фирма :"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:175
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioSemicolon)
-#: rc.cpp:464
+#: rc.cpp:476
 msgid "Semicolon"
 msgstr ""
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:182
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioOther)
-#: rc.cpp:467
+#: rc.cpp:479
 #, fuzzy
 msgid "Other"
 msgstr "Коментар"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:189
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioTab)
-#: rc.cpp:470
+#: rc.cpp:482
 #, fuzzy
 msgid "Tabulator"
 msgstr "Табулатор &лево"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:196
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioSpace)
-#: rc.cpp:473
+#: rc.cpp:485
 #, fuzzy
 msgid "Space"
 msgstr "&Додади група..."
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:241
 #. i18n: ectx: property (text), widget (QLabel, label2)
-#: rc.cpp:476
+#: rc.cpp:488
 msgid "Text&quote:"
 msgstr ""
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:258
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: rc.cpp:479
+#: rc.cpp:491
 msgid "\""
 msgstr ""
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:263
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: rc.cpp:482
+#: rc.cpp:494
 msgid "'"
 msgstr ""
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:292
 #. i18n: ectx: property (text), widget (QLabel, label3)
-#: rc.cpp:488
+#: rc.cpp:500
 msgid "Decimal symbol:"
 msgstr ""
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:321
 #. i18n: ectx: property (text), widget (QLabel, label4)
-#: rc.cpp:491
+#: rc.cpp:503
 msgid "Thousands separator:"
 msgstr ""
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:366
 #. i18n: ectx: property (text), widget (QCheckBox, m_ignoreDuplicates)
-#: rc.cpp:494
+#: rc.cpp:506
 msgid "Ignore duplicate delimiters"
 msgstr ""
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:373
 #. i18n: ectx: property (text), widget (QLabel, label1)
-#: rc.cpp:497
+#: rc.cpp:509
 #, fuzzy
 msgid "&Format:"
 msgstr "Формат на страна"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:387
 #. i18n: ectx: attribute (title), widget (QWidget, m_rangesTab)
-#: rc.cpp:500
+#: rc.cpp:512
 msgid "Ranges"
 msgstr ""
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:393
 #. i18n: ectx: property (text), widget (QPushButton, m_updateButton)
-#: rc.cpp:503
+#: rc.cpp:515
 msgid "Update"
 msgstr ""
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:460
 #. i18n: ectx: property (text), widget (QLabel, TextLabel3_2)
-#: rc.cpp:506
+#: rc.cpp:518
 #, fuzzy
 msgid "Import columns:"
 msgstr "&Отвори документ"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:479
 #. i18n: ectx: property (text), widget (QLabel, TextLabel3)
-#: rc.cpp:509
+#: rc.cpp:521
 #, fuzzy
 msgid "Import lines:"
 msgstr "Наслов :"
@@ -4471,40 +4499,40 @@ msgstr "Наслов :"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
 #. i18n: file: widgets/KoCsvImportDialog.ui:512
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:512 rc.cpp:515
+#: rc.cpp:524 rc.cpp:527
 msgid "to"
 msgstr ""
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:17
 #. i18n: ectx: property (text), widget (QLabel, unitsLabel)
-#: rc.cpp:518
+#: rc.cpp:530
 msgid "Unit:"
 msgstr "Единица:"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:53
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:521
+#: rc.cpp:533
 #, fuzzy
 msgid "Size:"
 msgstr "Наслов :"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:66
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:524
+#: rc.cpp:536
 #, fuzzy
 msgid "Width:"
 msgstr "Ширина:"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:93
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:527
+#: rc.cpp:539
 #, fuzzy
 msgid "Height:"
 msgstr "Висина:"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:108
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:530
+#: rc.cpp:542
 #, fuzzy
 msgid "Orientation:"
 msgstr ""
@@ -4513,53 +4541,53 @@ msgstr ""
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:129
 #. i18n: ectx: property (text), widget (QLabel, facingPageLabel)
-#: rc.cpp:539
+#: rc.cpp:551
 msgid "Facing pages:"
 msgstr ""
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:136
 #. i18n: ectx: property (text), widget (QRadioButton, singleSided)
-#: rc.cpp:542
+#: rc.cpp:554
 #, fuzzy
 msgid "Single sided"
 msgstr "inch"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:150
 #. i18n: ectx: property (text), widget (QLabel, directionLabel)
-#: rc.cpp:548
+#: rc.cpp:560
 #, fuzzy
 msgid "Text direction:"
 msgstr "Одбери..."
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:158
 #. i18n: ectx: property (text), item, widget (QComboBox, textDirection)
-#: rc.cpp:551
+#: rc.cpp:563
 #, fuzzy
 msgid "Automatic"
 msgstr "Зачувај документ како"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:163
 #. i18n: ectx: property (text), item, widget (QComboBox, textDirection)
-#: rc.cpp:554
+#: rc.cpp:566
 msgid "Left to right"
 msgstr ""
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:168
 #. i18n: ectx: property (text), item, widget (QComboBox, textDirection)
-#: rc.cpp:557
+#: rc.cpp:569
 #, fuzzy
 msgid "Right to left"
 msgstr "inch"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:176
 #. i18n: ectx: property (title), widget (QGroupBox, margins)
-#: rc.cpp:560
+#: rc.cpp:572
 msgid "Margins"
 msgstr ""
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:204
 #. i18n: ectx: property (text), widget (QLabel, rightLabel)
-#: rc.cpp:563
+#: rc.cpp:575
 #, fuzzy
 #| msgid "Page Preview"
 msgid "Page edge:"
@@ -4567,7 +4595,7 @@ msgstr "Преглед на страна"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:214
 #. i18n: ectx: property (text), widget (QLabel, leftLabel)
-#: rc.cpp:566
+#: rc.cpp:578
 #, fuzzy
 msgid "Binding edge:"
 msgstr ""
@@ -4576,51 +4604,23 @@ msgstr ""
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:224
 #. i18n: ectx: property (text), widget (QLabel, label_12)
-#: rc.cpp:569
+#: rc.cpp:581
 msgid "Bottom:"
 msgstr ""
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:241
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:572
+#: rc.cpp:584
 #, fuzzy
 msgid "Top:"
 msgstr "Горе:"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:288
 #. i18n: ectx: property (text), widget (QLabel, stylesLabel)
-#: rc.cpp:575
+#: rc.cpp:587
 #, fuzzy
 msgid "Follow style:"
 msgstr "Наслов :"
-
-#. i18n: file: widgets/KoShadowConfigWidget.ui:17
-#. i18n: ectx: property (text), widget (QCheckBox, shadowVisible)
-#: rc.cpp:578
-#, fuzzy
-msgid "Show Shadow"
-msgstr "Рабови на страна"
-
-#. i18n: file: widgets/KoShadowConfigWidget.ui:27
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:581
-#, fuzzy
-msgid "Shadow Angle:"
-msgstr "Рабови на страна"
-
-#. i18n: file: widgets/KoShadowConfigWidget.ui:37
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:584
-#, fuzzy
-msgid "Shadow Offset:"
-msgstr "Рабови на страна"
-
-#. i18n: file: widgets/KoShadowConfigWidget.ui:47
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:587
-#, fuzzy
-msgid "Shadow Color:"
-msgstr "Рабови на страна"
 
 #. i18n: file: kopageapp/tools/backgroundTool/BackgroundToolWidget.ui:18
 #. i18n: ectx: property (text), widget (QPushButton, backgroundImage)
