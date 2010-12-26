@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-11-22 06:32+0100\n"
+"POT-Creation-Date: 2010-12-26 03:03+0100\n"
 "PO-Revision-Date: 2006-09-30 17:38+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -222,6 +222,12 @@ msgstr ""
 msgid "Entity Attribute Name Not Unique"
 msgstr "Името на атрибутот на ентитетот не е единствено"
 
+#. i18n: file: dialogs/umlrolepropertiesbase.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, ui_propsGroupBox)
+#: dialogs/umlroledialog.cpp:25 rc.cpp:990
+msgid "Role Properties"
+msgstr "Својства на улогата"
+
 #: dialogs/assocgenpage.cpp:60 dialogs/umlviewdialog.cpp:35
 #: dialogs/classpropdlg.cpp:109 dialogs/activitydialog.cpp:36
 #: dialogs/activitydialog.cpp:146 dialogs/parmpropdlg.cpp:71
@@ -247,9 +253,9 @@ msgstr "&Својства"
 #: dialogs/assocgenpage.cpp:61 dialogs/activitydialog.cpp:200
 #: dialogs/notedialog.cpp:38 dialogs/parmpropdlg.cpp:115
 #: dialogs/classifierlistpage.cpp:218 dialogs/assocrolepage.cpp:80
-#: dialogs/assocrolepage.cpp:81 dialogs/objectnodedialog.cpp:197
-#: dialogs/classgenpage.cpp:225 dialogs/classgenpage.cpp:305
-#: dialogs/classgenpage.cpp:368 dialogs/statedialog.cpp:140 rc.cpp:38
+#: dialogs/assocrolepage.cpp:81 dialogs/classgenpage.cpp:225
+#: dialogs/classgenpage.cpp:305 dialogs/classgenpage.cpp:368
+#: dialogs/objectnodedialog.cpp:197 dialogs/statedialog.cpp:140 rc.cpp:38
 #: rc.cpp:740 rc.cpp:800 rc.cpp:863 rc.cpp:943 rc.cpp:1026
 msgid "Documentation"
 msgstr "Документација"
@@ -265,11 +271,9 @@ msgstr "Име:"
 msgid "Type:"
 msgstr "Тип:"
 
-#. i18n: file: dialogs/umlrolepropertiesbase.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, ui_propsGroupBox)
-#: dialogs/umlroledialog.cpp:25 rc.cpp:990
-msgid "Role Properties"
-msgstr "Својства на улогата"
+#: dialogs/assocpage.cpp:30 dialogs/classpropdlg.cpp:349
+msgid "Associations"
+msgstr "Асоцијации"
 
 #: dialogs/selectopdlg.cpp:37 dialogs/selectopdlg.cpp:49
 #, fuzzy
@@ -288,10 +292,6 @@ msgstr "Класна операција:"
 #: dialogs/selectopdlg.cpp:69
 msgid "Custom operation:"
 msgstr "Сопствена операција:"
-
-#: dialogs/assocpage.cpp:30 dialogs/classpropdlg.cpp:349
-msgid "Associations"
-msgstr "Асоцијации"
 
 #. i18n: file: dialogs/exportallviewsdialogbase.ui:52
 #. i18n: ectx: property (toolTip), widget (QLabel, ui_imageTypeLabel)
@@ -1432,82 +1432,6 @@ msgstr "Преименување активност"
 msgid "Enter the new name of the activity:"
 msgstr "Внесете го името за новата активност:"
 
-#: dialogs/pkgcontentspage.cpp:40
-msgid "Contained Items"
-msgstr "Содржани елементи"
-
-#: dialogs/objectnodedialog.cpp:136
-msgid "Central Buffer"
-msgstr ""
-
-#: dialogs/objectnodedialog.cpp:136
-#, fuzzy
-#| msgid "Datatype"
-msgid "Data Store"
-msgstr "Податочен тип"
-
-#: dialogs/objectnodedialog.cpp:136
-#, fuzzy
-#| msgid "Object"
-msgid "ObjectFlow"
-msgstr "Објект"
-
-#. i18n: file: codegenerators/cpp/cppcodegenerationformbase.ui:51
-#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
-#. i18n: file: codegenwizard/codegenoptionspage.ui:39
-#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
-#: dialogs/objectnodedialog.cpp:140 rc.cpp:95 rc.cpp:1050
-msgid "General"
-msgstr "Општо"
-
-#: dialogs/objectnodedialog.cpp:145
-#, fuzzy
-msgctxt "properties group title"
-msgid "Properties"
-msgstr "&Својства"
-
-#: dialogs/objectnodedialog.cpp:159
-#, fuzzy
-#| msgid "Node name:"
-msgid "Object Node type:"
-msgstr "Име на јазол:"
-
-#: dialogs/objectnodedialog.cpp:164
-#, fuzzy
-#| msgid "Node name:"
-msgid "Object Node name:"
-msgstr "Име на јазол:"
-
-#: dialogs/objectnodedialog.cpp:168
-#, fuzzy
-#| msgid "State"
-msgctxt "enter state label"
-msgid "State :"
-msgstr "Состојба"
-
-#: dialogs/objectnodedialog.cpp:173
-msgid "&Central Buffer"
-msgstr ""
-
-#: dialogs/objectnodedialog.cpp:176
-#, fuzzy
-#| msgid "Datatype"
-msgid "&Data Store "
-msgstr "Податочен тип"
-
-#: dialogs/objectnodedialog.cpp:179
-#, fuzzy
-#| msgid "Object"
-msgid "&Object Flow"
-msgstr "Објект"
-
-#: dialogs/objectnodedialog.cpp:247
-#, fuzzy
-#| msgid "Color"
-msgctxt "color page title"
-msgid "Color"
-msgstr "Боја"
-
 #: dialogs/classgenpage.cpp:60
 msgid "Class &name:"
 msgstr "Име &на класата:"
@@ -1670,6 +1594,82 @@ msgstr ""
 msgid "Name is Not Unique"
 msgstr "Името не е единствено"
 
+#: dialogs/objectnodedialog.cpp:136
+msgid "Central Buffer"
+msgstr ""
+
+#: dialogs/objectnodedialog.cpp:136
+#, fuzzy
+#| msgid "Datatype"
+msgid "Data Store"
+msgstr "Податочен тип"
+
+#: dialogs/objectnodedialog.cpp:136
+#, fuzzy
+#| msgid "Object"
+msgid "ObjectFlow"
+msgstr "Објект"
+
+#. i18n: file: codegenerators/cpp/cppcodegenerationformbase.ui:51
+#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
+#. i18n: file: codegenwizard/codegenoptionspage.ui:39
+#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
+#: dialogs/objectnodedialog.cpp:140 rc.cpp:95 rc.cpp:1050
+msgid "General"
+msgstr "Општо"
+
+#: dialogs/objectnodedialog.cpp:145
+#, fuzzy
+msgctxt "properties group title"
+msgid "Properties"
+msgstr "&Својства"
+
+#: dialogs/objectnodedialog.cpp:159
+#, fuzzy
+#| msgid "Node name:"
+msgid "Object Node type:"
+msgstr "Име на јазол:"
+
+#: dialogs/objectnodedialog.cpp:164
+#, fuzzy
+#| msgid "Node name:"
+msgid "Object Node name:"
+msgstr "Име на јазол:"
+
+#: dialogs/objectnodedialog.cpp:168
+#, fuzzy
+#| msgid "State"
+msgctxt "enter state label"
+msgid "State :"
+msgstr "Состојба"
+
+#: dialogs/objectnodedialog.cpp:173
+msgid "&Central Buffer"
+msgstr ""
+
+#: dialogs/objectnodedialog.cpp:176
+#, fuzzy
+#| msgid "Datatype"
+msgid "&Data Store "
+msgstr "Податочен тип"
+
+#: dialogs/objectnodedialog.cpp:179
+#, fuzzy
+#| msgid "Object"
+msgid "&Object Flow"
+msgstr "Објект"
+
+#: dialogs/objectnodedialog.cpp:247
+#, fuzzy
+#| msgid "Color"
+msgctxt "color page title"
+msgid "Color"
+msgstr "Боја"
+
+#: dialogs/pkgcontentspage.cpp:40
+msgid "Contained Items"
+msgstr "Содржани елементи"
+
 #: dialogs/umloperationdialog.cpp:57
 msgid "Operation Properties"
 msgstr "Својства на операцијата"
@@ -1740,6 +1740,39 @@ msgstr "Операција со тој потпис веќе постои во %
 msgid "Choose a different name or parameter list."
 msgstr "Изберете друго име или листа на параметри."
 
+#: dialogs/overwritedialogue.cpp:29
+msgid "Destination File Already Exists"
+msgstr "Одредишната датотека веќе постои"
+
+#: dialogs/overwritedialogue.cpp:42
+#, kde-format
+msgid ""
+"The file %1 already exists in %2.\n"
+"\n"
+"Umbrello can overwrite the file, generate a similar\n"
+"file name or not generate this file."
+msgstr ""
+"Датотеката %1 веќе постои во %2.\n"
+"\n"
+"Umbrello може да запише врз датотеката, да генерира слично\n"
+"слично име или да не ја генерира датотеката."
+
+#: dialogs/overwritedialogue.cpp:45
+msgid "&Apply to all remaining files"
+msgstr "Примени н&а сите останати датотеки"
+
+#: dialogs/overwritedialogue.cpp:49 umlviewimageexporter.cpp:103
+msgid "&Overwrite"
+msgstr "&Запиши"
+
+#: dialogs/overwritedialogue.cpp:50
+msgid "&Generate Similar File Name"
+msgstr "&Генерирај слично име"
+
+#: dialogs/overwritedialogue.cpp:51
+msgid "&Do Not Generate File"
+msgstr "Не генерирај &датотека"
+
 #: dialogs/statedialog.cpp:114
 #, fuzzy
 #| msgid "Initial state"
@@ -1786,39 +1819,6 @@ msgstr "Боја"
 #: dialogs/statedialog.cpp:181
 msgid "Widget Color"
 msgstr "Боја на графичка контрола"
-
-#: dialogs/overwritedialogue.cpp:29
-msgid "Destination File Already Exists"
-msgstr "Одредишната датотека веќе постои"
-
-#: dialogs/overwritedialogue.cpp:42
-#, kde-format
-msgid ""
-"The file %1 already exists in %2.\n"
-"\n"
-"Umbrello can overwrite the file, generate a similar\n"
-"file name or not generate this file."
-msgstr ""
-"Датотеката %1 веќе постои во %2.\n"
-"\n"
-"Umbrello може да запише врз датотеката, да генерира слично\n"
-"слично име или да не ја генерира датотеката."
-
-#: dialogs/overwritedialogue.cpp:45
-msgid "&Apply to all remaining files"
-msgstr "Примени н&а сите останати датотеки"
-
-#: dialogs/overwritedialogue.cpp:49 umlviewimageexporter.cpp:103
-msgid "&Overwrite"
-msgstr "&Запиши"
-
-#: dialogs/overwritedialogue.cpp:50
-msgid "&Generate Similar File Name"
-msgstr "&Генерирај слично име"
-
-#: dialogs/overwritedialogue.cpp:51
-msgid "&Do Not Generate File"
-msgstr "Не генерирај &датотека"
 
 #: dialogs/assocpropdlg.cpp:43
 msgid "Association Properties"
@@ -2132,16 +2132,6 @@ msgstr "Грешка при креирањето на папката"
 msgid "Please select a valid folder."
 msgstr "Изберете валидна папка."
 
-#: widgets/notewidget.cpp:378
-#, fuzzy
-#| msgid "Note"
-msgid "Note Type"
-msgstr "Забелешка"
-
-#: widgets/notewidget.cpp:378
-msgid "Select the Note Type"
-msgstr ""
-
 #: widgets/activitywidget.cpp:265 toolbarstateother.cpp:227 umlview.cpp:2763
 msgid "Enter Activity Name"
 msgstr "Внесете име на актвност"
@@ -2223,6 +2213,16 @@ msgstr "Преименување на објект"
 msgid "Enter object name:"
 msgstr "Внесете ново име на објектот:"
 
+#: widgets/notewidget.cpp:378
+#, fuzzy
+#| msgid "Note"
+msgid "Note Type"
+msgstr "Забелешка"
+
+#: widgets/notewidget.cpp:378
+msgid "Select the Note Type"
+msgstr ""
+
 #: widgets/combinedfragmentwidget.cpp:253
 #, fuzzy
 #| msgid "Enter the new name of the diagram:"
@@ -2282,6 +2282,18 @@ msgstr "Внесете име на дијаграм"
 #| msgid "Enter the new name of the model:"
 msgid "Enter the guard of the loop:"
 msgstr "Внесете го новото име на моделот:"
+
+#: widgets/associationwidget.cpp:2694
+msgid "Multiplicity"
+msgstr "Повеќекратност"
+
+#: widgets/associationwidget.cpp:2712
+msgid "Association Name"
+msgstr "Име на асоцијацијата"
+
+#: widgets/associationwidget.cpp:2732
+msgid "Role Name"
+msgstr "Име на улога"
 
 #: widgets/objectnodewidget.cpp:200
 #, fuzzy
@@ -2350,18 +2362,6 @@ msgstr "Внесете ново име на објектот:"
 #: widgets/objectnodewidget.cpp:279
 msgid "Enter State (keep '-' if there is no state for the object) "
 msgstr ""
-
-#: widgets/associationwidget.cpp:2694
-msgid "Multiplicity"
-msgstr "Повеќекратност"
-
-#: widgets/associationwidget.cpp:2712
-msgid "Association Name"
-msgstr "Име на асоцијацијата"
-
-#: widgets/associationwidget.cpp:2732
-msgid "Role Name"
-msgstr "Име на улога"
 
 #: widgets/signalwidget.cpp:217
 #, fuzzy
@@ -2458,41 +2458,17 @@ msgstr "Креирај папка"
 msgid "Create class diagram"
 msgstr "Дијаграм на класи"
 
-#: cmds/cmd_create_entityrelationdiag.cpp:25
-#, fuzzy
-#| msgid "entity relationship diagram"
-msgid "Create entity relationship diagram"
-msgstr "Дијаграм на ентитет-релација"
-
-#: cmds/cmd_create_usecasediag.cpp:25
-#, fuzzy
-#| msgid "class diagram"
-msgid "Create use case diagram"
-msgstr "Дијаграм на класи"
-
-#: cmds/cmd_set_visibility.cpp:24
-#, fuzzy
-#| msgid "Show &visibility"
-msgid "Change visibility : "
-msgstr "Прикажи &видливост"
-
-#: cmds/cmd_create_activitydiag.cpp:25
-#, fuzzy
-#| msgid "activity diagram"
-msgid "Create activity diagram"
-msgstr "Дијаграм на активности"
-
-#: cmds/cmd_moveWidget.cpp:26
-#, fuzzy
-#| msgid "Create Folder"
-msgid "Move widget :"
-msgstr "Креирај папка"
-
 #: cmds/cmd_handle_rename.cpp:25
 #, fuzzy
 #| msgid "Change Text"
 msgid "Change text"
 msgstr "Изменете текст"
+
+#: cmds/cmd_create_entityrelationdiag.cpp:25
+#, fuzzy
+#| msgid "entity relationship diagram"
+msgid "Create entity relationship diagram"
+msgstr "Дијаграм на ентитет-релација"
 
 #: cmds/cmd_create_statediag.cpp:25
 #, fuzzy
@@ -2511,10 +2487,28 @@ msgstr "Дијаграм на колаборација"
 msgid "Create sequence diagram"
 msgstr "Дијаграм на секвенци"
 
+#: cmds/cmd_create_usecasediag.cpp:25
+#, fuzzy
+#| msgid "class diagram"
+msgid "Create use case diagram"
+msgstr "Дијаграм на класи"
+
+#: cmds/cmd_set_visibility.cpp:24
+#, fuzzy
+#| msgid "Show &visibility"
+msgid "Change visibility : "
+msgstr "Прикажи &видливост"
+
 #: cmds/cmd_create_deploydiag.cpp:25
 #, fuzzy
 msgid "Create deployment diagram"
 msgstr "Дијаграм на поставување"
+
+#: cmds/cmd_create_activitydiag.cpp:25
+#, fuzzy
+#| msgid "activity diagram"
+msgid "Create activity diagram"
+msgstr "Дијаграм на активности"
 
 #: cmds/cmd_resizeWidget.cpp:25
 msgid "Resizing Widget."
@@ -2525,6 +2519,12 @@ msgstr ""
 #| msgid "component diagram"
 msgid "Create component diagram"
 msgstr "Дијаграм на компоненти"
+
+#: cmds/cmd_moveWidget.cpp:26
+#, fuzzy
+#| msgid "Create Folder"
+msgid "Move widget :"
+msgstr "Креирај папка"
 
 #: refactoring/refactoringassistant.cpp:49
 #, fuzzy
@@ -2874,6 +2874,15 @@ msgstr "Грешка при вчитувањето"
 msgid "The folderfile %1 cannot be opened."
 msgstr "Датотечната папка %1 неможе да се отвори."
 
+#: stereotype.cpp:95 listpopupmenu.cpp:931
+msgid "Stereotype"
+msgstr "Стереотип"
+
+#: stereotype.cpp:95 enumliteral.cpp:105 object_factory.cpp:189
+#: umldoc.cpp:1233 umldoc.cpp:1276 umldoc.cpp:1307 umldoc.cpp:1341
+msgid "Enter name:"
+msgstr "Внесете име:"
+
 #: umlcanvasobject.cpp:191 model_utils.cpp:428
 msgid "new_association"
 msgstr "нова_асоцијација"
@@ -2913,67 +2922,6 @@ msgstr "нов_ентитет"
 #| msgid "new_entity"
 msgid "new_check_constraint"
 msgstr "нов_ентитет"
-
-#: stereotype.cpp:95 listpopupmenu.cpp:931
-msgid "Stereotype"
-msgstr "Стереотип"
-
-#: stereotype.cpp:95 enumliteral.cpp:105 object_factory.cpp:189
-#: umldoc.cpp:1233 umldoc.cpp:1276 umldoc.cpp:1307 umldoc.cpp:1341
-msgid "Enter name:"
-msgstr "Внесете име:"
-
-#: toolbarstateother.cpp:235
-#, fuzzy
-#| msgid "Enter Diagram Name"
-msgid "Enter Signal Name"
-msgstr "Внесете име на дијаграм"
-
-#: toolbarstateother.cpp:236
-#, fuzzy
-#| msgid "Enter name:"
-msgid "Enter Signal"
-msgstr "Внесете име:"
-
-#: toolbarstateother.cpp:236
-msgid "new Signal"
-msgstr ""
-
-#: toolbarstateother.cpp:242
-#, fuzzy
-#| msgid "Enter Activity Name"
-msgid "Enter Time Event Name"
-msgstr "Внесете име на актвност"
-
-#: toolbarstateother.cpp:243
-#, fuzzy
-#| msgid "Enter new text:"
-msgid "Enter Time Event"
-msgstr "Внесете нов текст:"
-
-#: toolbarstateother.cpp:243
-#, fuzzy
-#| msgid "new activity"
-msgid "new time event"
-msgstr "нова активност"
-
-#: toolbarstateother.cpp:249
-#, fuzzy
-#| msgid "Enter Diagram Name"
-msgid "Enter Combined Fragment Name"
-msgstr "Внесете име на дијаграм"
-
-#: toolbarstateother.cpp:250
-msgid "Enter the Combined Fragment"
-msgstr ""
-
-#: toolbarstateother.cpp:250
-msgid "new Combined Fragment"
-msgstr ""
-
-#: toolbarstateother.cpp:257 umlview.cpp:2733
-msgid "new state"
-msgstr "нова состојба"
 
 #: worktoolbar.cpp:300
 msgid "Object"
@@ -3245,6 +3193,58 @@ msgctxt "selection arrow"
 msgid "Select"
 msgstr "Избери"
 
+#: toolbarstateother.cpp:235
+#, fuzzy
+#| msgid "Enter Diagram Name"
+msgid "Enter Signal Name"
+msgstr "Внесете име на дијаграм"
+
+#: toolbarstateother.cpp:236
+#, fuzzy
+#| msgid "Enter name:"
+msgid "Enter Signal"
+msgstr "Внесете име:"
+
+#: toolbarstateother.cpp:236
+msgid "new Signal"
+msgstr ""
+
+#: toolbarstateother.cpp:242
+#, fuzzy
+#| msgid "Enter Activity Name"
+msgid "Enter Time Event Name"
+msgstr "Внесете име на актвност"
+
+#: toolbarstateother.cpp:243
+#, fuzzy
+#| msgid "Enter new text:"
+msgid "Enter Time Event"
+msgstr "Внесете нов текст:"
+
+#: toolbarstateother.cpp:243
+#, fuzzy
+#| msgid "new activity"
+msgid "new time event"
+msgstr "нова активност"
+
+#: toolbarstateother.cpp:249
+#, fuzzy
+#| msgid "Enter Diagram Name"
+msgid "Enter Combined Fragment Name"
+msgstr "Внесете име на дијаграм"
+
+#: toolbarstateother.cpp:250
+msgid "Enter the Combined Fragment"
+msgstr ""
+
+#: toolbarstateother.cpp:250
+msgid "new Combined Fragment"
+msgstr ""
+
+#: toolbarstateother.cpp:257 umlview.cpp:2733
+msgid "new state"
+msgstr "нова состојба"
+
 #: enumliteral.cpp:105
 #, fuzzy
 #| msgid "Name"
@@ -3292,6 +3292,183 @@ msgid ""
 "already exists in the package %2.\n"
 "Please enter a new name:"
 msgstr ""
+
+#: association.cpp:39
+msgid "Generalization"
+msgstr "Генерализација"
+
+#: association.cpp:43
+#, fuzzy
+msgid "Self Association"
+msgstr "Само-асоцијација"
+
+#: association.cpp:44
+#, fuzzy
+msgid "Collaboration Message"
+msgstr "Колаборациска порака"
+
+#: association.cpp:45
+#, fuzzy
+msgid "Sequence Message"
+msgstr "Секвенцна порака"
+
+#: association.cpp:46
+#, fuzzy
+msgid "Collaboration Self Message"
+msgstr "Колаборациска само-порака"
+
+#: association.cpp:47
+#, fuzzy
+msgid "Sequence Self Message"
+msgstr "Секвенцна само-порака"
+
+#: association.cpp:50
+msgid "Realization"
+msgstr "Реализација"
+
+#: association.cpp:51
+#, fuzzy
+msgid "Uni Association"
+msgstr "Уни-Асоцијација"
+
+#: umlviewimageexporterall.cpp:84 uml.cpp:1316 umlviewimageexporter.cpp:77
+#, fuzzy
+#| msgid "Ready."
+msgctxt "reset status bar"
+msgid "Ready."
+msgstr "Подготвен."
+
+#: model_utils.cpp:406
+msgid "new_actor"
+msgstr "нов_актер"
+
+#: model_utils.cpp:408
+msgid "new_usecase"
+msgstr "ново_сценарио_употреба"
+
+#: model_utils.cpp:410
+msgid "new_package"
+msgstr "нов_пакет"
+
+#: model_utils.cpp:412
+msgid "new_component"
+msgstr "нова_компонента"
+
+#: model_utils.cpp:414
+msgid "new_node"
+msgstr "нов_јазол"
+
+#: model_utils.cpp:416
+msgid "new_artifact"
+msgstr "нов_артифакт"
+
+#: model_utils.cpp:418
+msgid "new_interface"
+msgstr "нов_интерфејс"
+
+#: model_utils.cpp:420
+msgid "new_datatype"
+msgstr "нов_тип_податок"
+
+#: model_utils.cpp:422
+msgid "new_enum"
+msgstr "нова_енумерација"
+
+#: model_utils.cpp:424
+msgid "new_entity"
+msgstr "нов_ентитет"
+
+#: model_utils.cpp:426
+#, fuzzy
+msgid "new_folder"
+msgstr "нов_јазол"
+
+#: model_utils.cpp:430
+#, fuzzy
+#| msgid "new_actor"
+msgid "new_category"
+msgstr "нов_актер"
+
+#: model_utils.cpp:432
+msgid "new_object"
+msgstr "нов_објект"
+
+#: model_utils.cpp:833
+msgid "OK"
+msgstr ""
+
+#: model_utils.cpp:833
+#, fuzzy
+#| msgid "Empty"
+msgctxt "parse status"
+msgid "Empty"
+msgstr "Празно"
+
+#: model_utils.cpp:833
+msgid "Malformed argument"
+msgstr "Погрешно формиран аргумент"
+
+#: model_utils.cpp:834
+msgid "Unknown argument type"
+msgstr "Непознат тип на аргумент"
+
+#: model_utils.cpp:834
+msgid "Illegal method name"
+msgstr "Нелегално име на метод"
+
+#: model_utils.cpp:835
+#, fuzzy
+msgid "Unknown return type"
+msgstr "Непознат повратен тип"
+
+#: model_utils.cpp:835
+msgid "Unspecified error"
+msgstr "Неодредена грешка"
+
+#: model_utils.cpp:1707
+msgid "Class Diagram"
+msgstr "Класен дијаграм"
+
+#: model_utils.cpp:1709
+msgid "Use Case Diagram"
+msgstr "Дијаграм за сценарио на употреба"
+
+#: model_utils.cpp:1711
+#, fuzzy
+msgid "Sequence Diagram"
+msgstr "Секвенцен дијаграм"
+
+#: model_utils.cpp:1713
+#, fuzzy
+msgid "Collaboration Diagram"
+msgstr "Колаборациски дијаграм"
+
+#: model_utils.cpp:1715
+msgid "State Diagram"
+msgstr "Дијаграм на состојби"
+
+#: model_utils.cpp:1717
+msgid "Activity Diagram"
+msgstr "Дијаграм на активности"
+
+#: model_utils.cpp:1719
+msgid "Component Diagram"
+msgstr "Дијаграм на компоненти"
+
+#: model_utils.cpp:1721
+#, fuzzy
+msgid "Deployment Diagram"
+msgstr "Дијаграм на поставување"
+
+#: model_utils.cpp:1723
+#, fuzzy
+#| msgid "Entity Relationship Diagram..."
+msgid "Entity Relationship Diagram"
+msgstr "Дијаграм на атрибути..."
+
+#: model_utils.cpp:1725
+msgid "No Diagram"
+msgstr "Без дијаграм"
 
 #: uml.cpp:239
 msgid "&Export model to DocBook"
@@ -3641,13 +3818,6 @@ msgstr ""
 "Umbrello неможе да ја вметни содржината од таблата со исечоци.  Објектите од "
 "таблата со исечоци можат да бидат од погрешен вид и да бидат вметнати овде."
 
-#: uml.cpp:1316 umlviewimageexporterall.cpp:84 umlviewimageexporter.cpp:77
-#, fuzzy
-#| msgid "Ready."
-msgctxt "reset status bar"
-msgid "Ready."
-msgstr "Подготвен."
-
 #: uml.cpp:1854
 msgid "Cannot view code until you generate some first."
 msgstr "Неможе да се прегледа кодот додека не се генерира."
@@ -3699,176 +3869,6 @@ msgstr "Изберете код за внесување"
 msgid "XHTML Generation failed ."
 msgstr ""
 
-#: association.cpp:39
-msgid "Generalization"
-msgstr "Генерализација"
-
-#: association.cpp:43
-#, fuzzy
-msgid "Self Association"
-msgstr "Само-асоцијација"
-
-#: association.cpp:44
-#, fuzzy
-msgid "Collaboration Message"
-msgstr "Колаборациска порака"
-
-#: association.cpp:45
-#, fuzzy
-msgid "Sequence Message"
-msgstr "Секвенцна порака"
-
-#: association.cpp:46
-#, fuzzy
-msgid "Collaboration Self Message"
-msgstr "Колаборациска само-порака"
-
-#: association.cpp:47
-#, fuzzy
-msgid "Sequence Self Message"
-msgstr "Секвенцна само-порака"
-
-#: association.cpp:50
-msgid "Realization"
-msgstr "Реализација"
-
-#: association.cpp:51
-#, fuzzy
-msgid "Uni Association"
-msgstr "Уни-Асоцијација"
-
-#: model_utils.cpp:406
-msgid "new_actor"
-msgstr "нов_актер"
-
-#: model_utils.cpp:408
-msgid "new_usecase"
-msgstr "ново_сценарио_употреба"
-
-#: model_utils.cpp:410
-msgid "new_package"
-msgstr "нов_пакет"
-
-#: model_utils.cpp:412
-msgid "new_component"
-msgstr "нова_компонента"
-
-#: model_utils.cpp:414
-msgid "new_node"
-msgstr "нов_јазол"
-
-#: model_utils.cpp:416
-msgid "new_artifact"
-msgstr "нов_артифакт"
-
-#: model_utils.cpp:418
-msgid "new_interface"
-msgstr "нов_интерфејс"
-
-#: model_utils.cpp:420
-msgid "new_datatype"
-msgstr "нов_тип_податок"
-
-#: model_utils.cpp:422
-msgid "new_enum"
-msgstr "нова_енумерација"
-
-#: model_utils.cpp:424
-msgid "new_entity"
-msgstr "нов_ентитет"
-
-#: model_utils.cpp:426
-#, fuzzy
-msgid "new_folder"
-msgstr "нов_јазол"
-
-#: model_utils.cpp:430
-#, fuzzy
-#| msgid "new_actor"
-msgid "new_category"
-msgstr "нов_актер"
-
-#: model_utils.cpp:432
-msgid "new_object"
-msgstr "нов_објект"
-
-#: model_utils.cpp:833
-msgid "OK"
-msgstr ""
-
-#: model_utils.cpp:833
-#, fuzzy
-#| msgid "Empty"
-msgctxt "parse status"
-msgid "Empty"
-msgstr "Празно"
-
-#: model_utils.cpp:833
-msgid "Malformed argument"
-msgstr "Погрешно формиран аргумент"
-
-#: model_utils.cpp:834
-msgid "Unknown argument type"
-msgstr "Непознат тип на аргумент"
-
-#: model_utils.cpp:834
-msgid "Illegal method name"
-msgstr "Нелегално име на метод"
-
-#: model_utils.cpp:835
-#, fuzzy
-msgid "Unknown return type"
-msgstr "Непознат повратен тип"
-
-#: model_utils.cpp:835
-msgid "Unspecified error"
-msgstr "Неодредена грешка"
-
-#: model_utils.cpp:1707
-msgid "Class Diagram"
-msgstr "Класен дијаграм"
-
-#: model_utils.cpp:1709
-msgid "Use Case Diagram"
-msgstr "Дијаграм за сценарио на употреба"
-
-#: model_utils.cpp:1711
-#, fuzzy
-msgid "Sequence Diagram"
-msgstr "Секвенцен дијаграм"
-
-#: model_utils.cpp:1713
-#, fuzzy
-msgid "Collaboration Diagram"
-msgstr "Колаборациски дијаграм"
-
-#: model_utils.cpp:1715
-msgid "State Diagram"
-msgstr "Дијаграм на состојби"
-
-#: model_utils.cpp:1717
-msgid "Activity Diagram"
-msgstr "Дијаграм на активности"
-
-#: model_utils.cpp:1719
-msgid "Component Diagram"
-msgstr "Дијаграм на компоненти"
-
-#: model_utils.cpp:1721
-#, fuzzy
-msgid "Deployment Diagram"
-msgstr "Дијаграм на поставување"
-
-#: model_utils.cpp:1723
-#, fuzzy
-#| msgid "Entity Relationship Diagram..."
-msgid "Entity Relationship Diagram"
-msgstr "Дијаграм на атрибути..."
-
-#: model_utils.cpp:1725
-msgid "No Diagram"
-msgstr "Без дијаграм"
-
 #: object_factory.cpp:189
 #, fuzzy
 #| msgid "Name"
@@ -3886,47 +3886,6 @@ msgstr ""
 #: object_factory.cpp:201
 msgid "Reserved Keyword"
 msgstr "Резервиран збор"
-
-#: main.cpp:36 main.cpp:68
-#, fuzzy
-msgid "Umbrello UML Modeller"
-msgstr "Umbrello UML моделар"
-
-#: main.cpp:70
-msgid "(c) 2001 Paul Hensgen, (c) 2002-2006 Umbrello UML Modeller Authors"
-msgstr "(c) 2001 Paul Hensgen, (c) 2002-2006 авторите на Umbrello UML Modeller"
-
-#: main.cpp:72
-msgid "Paul Hensgen"
-msgstr ""
-
-#: main.cpp:77
-msgid "File to open"
-msgstr "Датотека за отворање"
-
-#: main.cpp:78
-msgid "export diagrams to extension and exit"
-msgstr "Ги изнесува дијаграмите со наставка „extension“ и напушта"
-
-#: main.cpp:79
-msgid "list available export extensions"
-msgstr ""
-
-#: main.cpp:80
-msgid "the local directory to save the exported diagrams in"
-msgstr "локалната папка за зачувување на изнесените дијаграми"
-
-#: main.cpp:80
-msgid "the directory of the file"
-msgstr "папката на датотеката"
-
-#: main.cpp:81
-msgid ""
-"keep the tree structure used to store the views in the document in the "
-"target directory"
-msgstr ""
-"ја задржува структурата на стебло што се користи за зачувување на прегледите "
-"во документот во одредишната папка"
 
 #: umlviewimageexportermodel.cpp:214
 #, kde-format
@@ -3955,6 +3914,34 @@ msgstr "Неточно употребени асоцијации."
 #: toolbarstateassociation.cpp:181 toolbarstateassociation.cpp:250
 msgid "Association Error"
 msgstr "Грешка при асоцијацијата"
+
+#: umllistviewitem.cpp:525 umllistviewitem.cpp:558 umllistviewitem.cpp:589
+#: umllistviewitem.cpp:616
+msgid "Rename canceled"
+msgstr "Преименувањето е откажано"
+
+#: umllistviewitem.cpp:649
+#, fuzzy, kde-format
+msgid "Renaming an item of listview type %1 is not yet implemented."
+msgstr ""
+"Преименувањето на предметот %1 во листирачки преглед сѐ уште не е "
+"имплементирано."
+
+#: umllistviewitem.cpp:650
+msgid "Function Not Implemented"
+msgstr "Функцијата не е имплементирана"
+
+#: umllistviewitem.cpp:663
+msgid ""
+"The name you entered was invalid.\n"
+"Renaming process has been canceled."
+msgstr ""
+"Името што го внесовте не е валидно.\n"
+"Процесот на преименување е откажан."
+
+#: umllistviewitem.cpp:664 umllistview.cpp:2182
+msgid "Name Not Valid"
+msgstr "Невалидно име"
 
 #: listpopupmenu.cpp:286 listpopupmenu.cpp:601
 msgid "Change Font..."
@@ -4363,33 +4350,46 @@ msgstr ""
 msgid "Union"
 msgstr "Клучка"
 
-#: umllistviewitem.cpp:525 umllistviewitem.cpp:558 umllistviewitem.cpp:589
-#: umllistviewitem.cpp:616
-msgid "Rename canceled"
-msgstr "Преименувањето е откажано"
+#: main.cpp:36 main.cpp:68
+#, fuzzy
+msgid "Umbrello UML Modeller"
+msgstr "Umbrello UML моделар"
 
-#: umllistviewitem.cpp:649
-#, fuzzy, kde-format
-msgid "Renaming an item of listview type %1 is not yet implemented."
+#: main.cpp:70
+msgid "(c) 2001 Paul Hensgen, (c) 2002-2006 Umbrello UML Modeller Authors"
+msgstr "(c) 2001 Paul Hensgen, (c) 2002-2006 авторите на Umbrello UML Modeller"
+
+#: main.cpp:72
+msgid "Paul Hensgen"
 msgstr ""
-"Преименувањето на предметот %1 во листирачки преглед сѐ уште не е "
-"имплементирано."
 
-#: umllistviewitem.cpp:650
-msgid "Function Not Implemented"
-msgstr "Функцијата не е имплементирана"
+#: main.cpp:77
+msgid "File to open"
+msgstr "Датотека за отворање"
 
-#: umllistviewitem.cpp:663
+#: main.cpp:78
+msgid "export diagrams to extension and exit"
+msgstr "Ги изнесува дијаграмите со наставка „extension“ и напушта"
+
+#: main.cpp:79
+msgid "list available export extensions"
+msgstr ""
+
+#: main.cpp:80
+msgid "the local directory to save the exported diagrams in"
+msgstr "локалната папка за зачувување на изнесените дијаграми"
+
+#: main.cpp:80
+msgid "the directory of the file"
+msgstr "папката на датотеката"
+
+#: main.cpp:81
 msgid ""
-"The name you entered was invalid.\n"
-"Renaming process has been canceled."
+"keep the tree structure used to store the views in the document in the "
+"target directory"
 msgstr ""
-"Името што го внесовте не е валидно.\n"
-"Процесот на преименување е откажан."
-
-#: umllistviewitem.cpp:664 umllistview.cpp:2182
-msgid "Name Not Valid"
-msgstr "Невалидно име"
+"ја задржува структурата на стебло што се користи за зачувување на прегледите "
+"во документот во одредишната папка"
 
 #: umllistview.cpp:431
 msgid "Externalize Folder"

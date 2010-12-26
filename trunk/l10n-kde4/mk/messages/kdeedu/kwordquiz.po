@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwordquiz\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-16 02:08+0100\n"
+"POT-Creation-Date: 2010-12-26 02:57+0100\n"
 "PO-Revision-Date: 2006-10-15 23:35+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -20,8 +20,8 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: kwqcleardialog.cpp:27
-msgid "Clear Contents"
+#: kwqtablemodel.cpp:223 kwordquiz.cpp:673 kwordquiz.cpp:730 kwordquiz.cpp:852
+msgid "Untitled"
 msgstr ""
 
 #: kwqtableview.cpp:190
@@ -53,14 +53,6 @@ msgstr ""
 #| msgid "&Select"
 msgid "Select Sound"
 msgstr "&Избери"
-
-#: flashview.cpp:66 multipleview.cpp:112 qaview.cpp:146
-msgid "Your answer was correct!"
-msgstr "Вашиот одговор е точен!"
-
-#: flashview.cpp:71 multipleview.cpp:121 qaview.cpp:157
-msgid "Your answer was incorrect."
-msgstr "Вашиот одговор е неточен."
 
 #: prefcardappearance.cpp:80
 msgctxt "Back of the flashcard"
@@ -150,47 +142,6 @@ msgctxt "@item:inmenu undo link sound"
 msgid "Link Sound"
 msgstr ""
 
-#: kwqtutor.cpp:40
-msgid ""
-"<qt>KWordQuiz Tutor displays flashcards on your screen in a way that allows "
-"you to set a certain time interval at which flashcards will pop up.<br /"
-"><br />The flashcards pop up in a non-intrusive way allowing you to carry on "
-"working without stealing the focus from other programs you might be working "
-"with.<br /><br />Be sure to right-click KWordQuiz Tutor icon on the panel "
-"and select Preferences. There you can assign keyboard shortcuts.</qt>"
-msgstr ""
-
-#: kwqtutor.cpp:46
-msgid "Tutor"
-msgstr ""
-
-#: kwqtutor.cpp:56 kwqtutor.cpp:128
-msgid "Start Exercise"
-msgstr ""
-
-#: kwqtutor.cpp:65
-msgid "Configure KWordQuiz Tutor..."
-msgstr ""
-
-#: kwqtutor.cpp:70
-#, fuzzy
-#| msgid "Flashcard"
-msgid "Close Flash Card"
-msgstr "Флеш-картичка"
-
-#: kwqtutor.cpp:75
-#, fuzzy
-msgid "Flip Flash Card"
-msgstr "Преврти карта"
-
-#: kwqtutor.cpp:120
-msgid "Stop Exercise"
-msgstr ""
-
-#: kwqtutor.cpp:142 kwordquiz.cpp:786
-msgid "Open Vocabulary Document"
-msgstr "Отвори речник"
-
 #: kwordquizprefs.cpp:36
 msgctxt "@title:group general settings"
 msgid "General"
@@ -256,30 +207,9 @@ msgctxt "@title:group special character settings"
 msgid "Special Characters"
 msgstr "Специјални знаци"
 
-#: kwqtutorprefs.cpp:31
-msgctxt "@title:group tutor settings"
-msgid "Tutor"
-msgstr ""
-
-#: kwqtutorprefs.cpp:31
-#, fuzzy
-#| msgid "Editor Settings"
-msgctxt "@title:group tutor settings"
-msgid "Tutor Settings"
-msgstr "Поставувања за уредувач"
-
-#: kwqtutorprefs.cpp:34
-#, fuzzy
-#| msgid "Shortcut"
-msgctxt "Shortcuts Config"
-msgid "Shortcuts"
-msgstr "Кратенка"
-
-#: kwqtutorprefs.cpp:34
-#, fuzzy
-#| msgid "Quiz Settings"
-msgid "Shortcuts Settings"
-msgstr "Поставувања за квизот"
+#: multipleview.cpp:112 qaview.cpp:146 flashview.cpp:66
+msgid "Your answer was correct!"
+msgstr "Вашиот одговор е точен!"
 
 #. i18n: file: multipleviewbase.ui:558
 #. i18n: ectx: property (text), widget (QLabel, lblCorrectHeader)
@@ -292,6 +222,10 @@ msgstr "Поставувања за квизот"
 #: multipleview.cpp:119 qaview.cpp:155 rc.cpp:296 rc.cpp:734
 msgid "Correct Answer"
 msgstr "Точен одговор"
+
+#: multipleview.cpp:121 qaview.cpp:157 flashview.cpp:71
+msgid "Your answer was incorrect."
+msgstr "Вашиот одговор е неточен."
 
 #. i18n: file: multipleviewbase.ui:353
 #. i18n: ectx: property (text), widget (QLabel, lblPreviousQuestionHeader)
@@ -320,6 +254,12 @@ msgstr "Вашиот одговор"
 #: multipleview.cpp:147 qaview.cpp:184
 msgid "Summary"
 msgstr "Збир"
+
+#: dlglanguage.cpp:31
+#, fuzzy
+#| msgid "Quiz Settings"
+msgid "Column Settings"
+msgstr "Поставувања за квизот"
 
 #: kwqcommands.h:106
 #, fuzzy
@@ -727,10 +667,6 @@ msgctxt "@info:status ready"
 msgid "Ready"
 msgstr "Спремно"
 
-#: kwordquiz.cpp:673 kwordquiz.cpp:730 kwordquiz.cpp:852 kwqtablemodel.cpp:223
-msgid "Untitled"
-msgstr ""
-
 #: kwordquiz.cpp:722
 #, fuzzy
 msgid ""
@@ -747,6 +683,10 @@ msgstr "Отворам нов прозорец..."
 #: kwordquiz.cpp:778
 msgid "&Merge selected files with the current document"
 msgstr ""
+
+#: kwordquiz.cpp:786 kwqtutor.cpp:142
+msgid "Open Vocabulary Document"
+msgstr "Отвори речник"
 
 #: kwordquiz.cpp:851
 msgid "Saving file..."
@@ -920,6 +860,68 @@ msgstr "%1 -> %2 Случајно"
 msgid "%1 &lt;-&gt; %2 Randomly"
 msgstr "%1 -> %2 Случајно"
 
+#: kwqtutor.cpp:40
+msgid ""
+"<qt>KWordQuiz Tutor displays flashcards on your screen in a way that allows "
+"you to set a certain time interval at which flashcards will pop up.<br /"
+"><br />The flashcards pop up in a non-intrusive way allowing you to carry on "
+"working without stealing the focus from other programs you might be working "
+"with.<br /><br />Be sure to right-click KWordQuiz Tutor icon on the panel "
+"and select Preferences. There you can assign keyboard shortcuts.</qt>"
+msgstr ""
+
+#: kwqtutor.cpp:46
+msgid "Tutor"
+msgstr ""
+
+#: kwqtutor.cpp:56 kwqtutor.cpp:128
+msgid "Start Exercise"
+msgstr ""
+
+#: kwqtutor.cpp:65
+msgid "Configure KWordQuiz Tutor..."
+msgstr ""
+
+#: kwqtutor.cpp:70
+#, fuzzy
+#| msgid "Flashcard"
+msgid "Close Flash Card"
+msgstr "Флеш-картичка"
+
+#: kwqtutor.cpp:75
+#, fuzzy
+msgid "Flip Flash Card"
+msgstr "Преврти карта"
+
+#: kwqtutor.cpp:120
+msgid "Stop Exercise"
+msgstr ""
+
+#: kwqtutorprefs.cpp:31
+msgctxt "@title:group tutor settings"
+msgid "Tutor"
+msgstr ""
+
+#: kwqtutorprefs.cpp:31
+#, fuzzy
+#| msgid "Editor Settings"
+msgctxt "@title:group tutor settings"
+msgid "Tutor Settings"
+msgstr "Поставувања за уредувач"
+
+#: kwqtutorprefs.cpp:34
+#, fuzzy
+#| msgid "Shortcut"
+msgctxt "Shortcuts Config"
+msgid "Shortcuts"
+msgstr "Кратенка"
+
+#: kwqtutorprefs.cpp:34
+#, fuzzy
+#| msgid "Quiz Settings"
+msgid "Shortcuts Settings"
+msgstr "Поставувања за квизот"
+
 #: prefcharacter.cpp:44
 msgid "Action"
 msgstr "Дејство"
@@ -936,6 +938,27 @@ msgstr "Знак"
 #, fuzzy, kde-format
 msgid "Special Character %1"
 msgstr "Специјален знак 1"
+
+#: dlgspecchar.cpp:24
+#, fuzzy
+#| msgid "Select Character"
+msgctxt "@title:window select character dialog"
+msgid "Select Character"
+msgstr "Изберете знак"
+
+#: dlgspecchar.cpp:31
+#, fuzzy
+#| msgid "&Select"
+msgctxt "@action:button select"
+msgid "&Select"
+msgstr "&Избери"
+
+#: dlgspecchar.cpp:32
+#, fuzzy
+#| msgid "Select this character"
+msgctxt "@info:tooltip select this character"
+msgid "Select this character"
+msgstr "Избери го овој знак"
 
 #: wqprintdialogpage.cpp:30
 msgid "Vocabulary Options"
@@ -1030,32 +1053,9 @@ msgstr ""
 msgid "File to open"
 msgstr "Датотека за отварање"
 
-#: dlglanguage.cpp:31
-#, fuzzy
-#| msgid "Quiz Settings"
-msgid "Column Settings"
-msgstr "Поставувања за квизот"
-
-#: dlgspecchar.cpp:24
-#, fuzzy
-#| msgid "Select Character"
-msgctxt "@title:window select character dialog"
-msgid "Select Character"
-msgstr "Изберете знак"
-
-#: dlgspecchar.cpp:31
-#, fuzzy
-#| msgid "&Select"
-msgctxt "@action:button select"
-msgid "&Select"
-msgstr "&Избери"
-
-#: dlgspecchar.cpp:32
-#, fuzzy
-#| msgid "Select this character"
-msgctxt "@info:tooltip select this character"
-msgid "Select this character"
-msgstr "Избери го овој знак"
+#: kwqcleardialog.cpp:27
+msgid "Clear Contents"
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"

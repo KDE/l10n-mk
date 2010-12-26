@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-11-20 06:30+0100\n"
+"POT-Creation-Date: 2010-12-26 03:00+0100\n"
 "PO-Revision-Date: 2007-02-28 13:59+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -17,40 +17,370 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: printing/ringbinderstyle.cpp:142
+#: aboutdata.cpp:28
+msgid "KAddressBook"
+msgstr "КАдресар"
+
+#: aboutdata.cpp:29
 #, fuzzy
-msgid "Ring Binder Printing Style - Appearance"
-msgstr "Детален стил на печатење - Изглед"
+#| msgid "The KDE Address Book"
+msgid "The KDE Address Book Application"
+msgstr "Адресарот на KDE"
 
-#: printing/ringbinderstyle.cpp:160
-#, fuzzy
-#| msgid "Setting up fonts and colors"
-msgid "Setting up fields"
-msgstr "Поставувам фонтови и бои"
-
-#: printing/ringbinderstyle.cpp:176 printing/detailledstyle.cpp:283
-#: printing/mikesstyle.cpp:126
-#, fuzzy
-#| msgid "Setting up fonts and colors"
-msgid "Setting up document"
-msgstr "Поставувам фонтови и бои"
-
-#: printing/ringbinderstyle.cpp:203 printing/detailledstyle.cpp:290
-#: printing/mikesstyle.cpp:133
-msgid "Printing"
-msgstr "Печатам"
-
-#: printing/ringbinderstyle.cpp:207 printing/detailledstyle.cpp:294
-#: printing/mikesstyle.cpp:137
-#, fuzzy
-#| msgid "Done"
-msgctxt "Finished printing"
-msgid "Done"
-msgstr "Готово"
-
-#: printing/ringbinderstyle.cpp:223
-msgid "Printout for Ring Binders"
+#: aboutdata.cpp:31
+msgid "Copyright © 2007–2010 KAddressBook authors"
 msgstr ""
+
+#: aboutdata.cpp:33
+msgid "Tobias Koenig"
+msgstr ""
+
+#: aboutdata.cpp:33
+msgid "Current maintainer"
+msgstr "Тековен одржувач"
+
+#: aboutdata.cpp:34
+msgid "Laurent Montel"
+msgstr ""
+
+#: aboutdata.cpp:34
+#, fuzzy
+#| msgid "Contact pinning"
+msgid "Kontact integration"
+msgstr "Закачување на контакти"
+
+#: contactfields.cpp:28
+#, fuzzy
+#| msgid "Undefined"
+msgctxt "@item Undefined import field type"
+msgid "Undefined"
+msgstr "Недефинирано"
+
+#: contactfields.cpp:37
+msgid "Anniversary"
+msgstr "Годишнина"
+
+#: contactfields.cpp:60
+#, fuzzy
+#| msgid "Use Preferred"
+msgctxt "Preferred email address"
+msgid "EMail (preferred)"
+msgstr "Користи претпочитани"
+
+#: contactfields.cpp:61
+#, fuzzy
+#| msgid "Email"
+msgctxt "Second email address"
+msgid "EMail (2)"
+msgstr "Е-пошта"
+
+#: contactfields.cpp:62
+#, fuzzy
+#| msgid "Email"
+msgctxt "Third email address"
+msgid "EMail (3)"
+msgstr "Е-пошта"
+
+#: contactfields.cpp:63
+#, fuzzy
+#| msgid "Email"
+msgctxt "Fourth email address"
+msgid "EMail (4)"
+msgstr "Е-пошта"
+
+#: contactfields.cpp:70
+#, fuzzy
+#| msgid "Blog feed:"
+msgid "Blog Feed"
+msgstr "Блог:"
+
+#: contactfields.cpp:71
+msgid "Profession"
+msgstr "Професија"
+
+#: contactfields.cpp:72
+msgid "Office"
+msgstr "Канцеларија"
+
+#: contactfields.cpp:73
+#, fuzzy
+#| msgid "Myanmar"
+msgid "Manager"
+msgstr "Мијанмар"
+
+#: contactfields.cpp:74
+#, fuzzy
+#| msgid "Assistant's Name"
+msgid "Assistant"
+msgstr "Име на асистент"
+
+#: contactfields.cpp:75
+msgid "Spouse"
+msgstr ""
+
+#: contactselectiondialog.cpp:29
+#, fuzzy
+#| msgid "&Selected contacts"
+msgid "Select Contacts"
+msgstr "&Избрани контакти"
+
+#: contactselectionwidget.cpp:95
+#, fuzzy
+#| msgid "&All contacts"
+msgid "All contacts"
+msgstr "&Сите контакти"
+
+#: contactselectionwidget.cpp:96
+#, fuzzy
+#| msgid "&Selected contacts"
+msgid "Selected contacts"
+msgstr "&Избрани контакти"
+
+#: contactselectionwidget.cpp:97
+#, fuzzy
+#| msgid "&All contacts"
+msgid "All contacts from:"
+msgstr "&Сите контакти"
+
+#: contactselectionwidget.cpp:101
+msgid "Include Subfolders"
+msgstr ""
+
+#: contactswitcher.cpp:35
+msgctxt "Previous contact"
+msgid "Previous"
+msgstr ""
+
+#: contactswitcher.cpp:36
+#, fuzzy
+#| msgid "Text"
+msgctxt "Next contact"
+msgid "Next"
+msgstr "Текст"
+
+#: contactswitcher.cpp:111
+#, fuzzy, kde-format
+#| msgctxt "<nickname> on <server>"
+#| msgid "%1 on %2"
+msgid "%1 out of %2"
+msgstr "%1 на %2"
+
+#: grantleecontactformatter.cpp:282
+#, fuzzy
+#| msgid "Types"
+msgctxt "Boolean value"
+msgid "yes"
+msgstr "Типови"
+
+#: grantleecontactformatter.cpp:284
+msgctxt "Boolean value"
+msgid "no"
+msgstr ""
+
+#: mainwidget.cpp:398
+#, fuzzy
+#| msgid "Set the categories for all selected contacts."
+msgid "Print the complete address book or a selected number of contacts."
+msgstr "Ги поставува категориите за сите избрани контакти."
+
+#: mainwidget.cpp:401
+#, fuzzy
+#| msgid "Recursive search"
+msgid "Quick search"
+msgstr "Рекурзивно пребарување"
+
+#: mainwidget.cpp:405
+#, fuzzy
+msgid "Select All"
+msgstr "Одизбери ги сите"
+
+#: mainwidget.cpp:407
+#, fuzzy
+#| msgid "Selects all visible contacts from current view."
+msgid "Select all contacts in the current address book view."
+msgstr "Ги избира сите видливи контакти од тековниот преглед."
+
+#: mainwidget.cpp:411
+msgid "Show Simple View"
+msgstr ""
+
+#: mainwidget.cpp:412
+#, fuzzy
+#| msgid "Please select type of the new address book:"
+msgid "Show a simple mode of the address book view."
+msgstr "Изберете го типот на новиот адресар:"
+
+#: mainwidget.cpp:417
+msgid "Import vCard..."
+msgstr "Внеси vCard-картичка..."
+
+#: mainwidget.cpp:418
+#, fuzzy
+#| msgid "Import Contacts?"
+msgid "Import contacts from a vCard file."
+msgstr "Внесувате контакти?"
+
+#: mainwidget.cpp:422
+#, fuzzy
+#| msgid "Import CSV List..."
+msgid "Import CSV file..."
+msgstr "Внеси CSV-листа..."
+
+#: mainwidget.cpp:423
+msgid "Import contacts from a file in comma separated value format."
+msgstr ""
+
+#: mainwidget.cpp:427
+#, fuzzy
+#| msgid "Import LDIF Addressbook..."
+msgid "Import LDIF file..."
+msgstr "Внеси LDIF-адресар..."
+
+#: mainwidget.cpp:428
+#, fuzzy
+#| msgid "Import Contacts?"
+msgid "Import contacts from an LDIF file."
+msgstr "Внесувате контакти?"
+
+#: mainwidget.cpp:432
+#, fuzzy
+#| msgid "Import From Mobile Phone..."
+msgid "Import from LDAP server..."
+msgstr "Внеси од мобилен телефон..."
+
+#: mainwidget.cpp:433
+#, fuzzy
+#| msgid "Import Contacts?"
+msgid "Import contacts from an LDAP server."
+msgstr "Внесувате контакти?"
+
+#: mainwidget.cpp:437
+#, fuzzy
+#| msgid "Import All..."
+msgid "Import GMX file..."
+msgstr "Внеси ги сите..."
+
+#: mainwidget.cpp:438
+#, fuzzy
+msgid "Import contacts from a GMX address book file."
+msgstr "%1-адресар"
+
+#: mainwidget.cpp:444
+msgid "Export vCard 3.0..."
+msgstr "Изнеси vCard-картичка 3.0..."
+
+#: mainwidget.cpp:445
+#, fuzzy
+#| msgid "Export vCard 3.0..."
+msgid "Export contacts to a vCard 3.0 file."
+msgstr "Изнеси vCard-картичка 3.0..."
+
+#: mainwidget.cpp:449
+msgid "Export vCard 2.1..."
+msgstr "Изнеси vCard-картичка 2.1..."
+
+#: mainwidget.cpp:450
+#, fuzzy
+#| msgid "Export vCard 2.1..."
+msgid "Export contacts to a vCard 2.1 file."
+msgstr "Изнеси vCard-картичка 2.1..."
+
+#: mainwidget.cpp:454
+#, fuzzy
+#| msgid "Export CSV List..."
+msgid "Export CSV file..."
+msgstr "Изнеси CSV-листа..."
+
+#: mainwidget.cpp:455
+msgid "Export contacts to a file in comma separated value format."
+msgstr ""
+
+#: mainwidget.cpp:459
+#, fuzzy
+#| msgid "Export LDIF Addressbook..."
+msgid "Export LDIF file..."
+msgstr "Изнеси LDIF-адресар..."
+
+#: mainwidget.cpp:460
+#, fuzzy
+#| msgid "Export LDIF Addressbook..."
+msgid "Export contacts to an LDIF file."
+msgstr "Изнеси LDIF-адресар..."
+
+#: mainwidget.cpp:464
+#, fuzzy
+msgid "Export GMX file..."
+msgstr "Изнеси LDIF-адресар..."
+
+#: mainwidget.cpp:465
+#, fuzzy
+msgid "Export contacts to a GMX address book file."
+msgstr "%1-адресар"
+
+#: mainwidget.cpp:472
+msgid "Address Book"
+msgstr "Адресар"
+
+#: mainwidget.cpp:478 printing/printingwizard.cpp:53
+#, fuzzy
+#| msgid "Edit Contact"
+msgid "Print Contacts"
+msgstr "Уредете контакт"
+
+#: mainwindow.cpp:60
+#, fuzzy
+#| msgid ""
+#| "You will be presented with a dialog, where you can configure the "
+#| "application wide shortcuts."
+msgid ""
+"You will be presented with a dialog where you can configure the application-"
+"wide shortcuts."
+msgstr ""
+"Ќе ви биде презентиран дијалог каде што можете да ги конфигурирате "
+"кратенките за апликацијата."
+
+#: modelcolumnmanager.cpp:76
+msgid "Full Name"
+msgstr "Целосно име"
+
+#: modelcolumnmanager.cpp:81
+#, fuzzy
+#| msgid "Family names:"
+msgid "Family Name"
+msgstr "Презимиња:"
+
+#: modelcolumnmanager.cpp:85
+#, fuzzy
+#| msgid "Given name:"
+msgid "Given Name"
+msgstr "Име:"
+
+#: modelcolumnmanager.cpp:93 printing/detailledstyle.cpp:152
+msgid "Home Address"
+msgstr "Домашна адреса"
+
+#: modelcolumnmanager.cpp:97
+#, fuzzy
+#| msgid "Business fields"
+msgid "Business Address"
+msgstr "Бизнис полиња"
+
+#: modelcolumnmanager.cpp:101
+#, fuzzy
+msgid "Phone Numbers"
+msgstr "Уредете телефонски број"
+
+#: modelcolumnmanager.cpp:105
+#, fuzzy
+#| msgid "Preferred address"
+msgid "Preferred EMail"
+msgstr "Претпочитана адреса"
+
+#: modelcolumnmanager.cpp:109
+#, fuzzy
+#| msgid "Email"
+msgid "All EMails"
+msgstr "Е-пошта"
 
 #: printing/detailledstyle.cpp:96
 #, fuzzy
@@ -94,10 +424,6 @@ msgstr "Поштенска адреса"
 msgid "Parcel Address"
 msgstr "Адреса на пратка"
 
-#: printing/detailledstyle.cpp:152 modelcolumnmanager.cpp:93
-msgid "Home Address"
-msgstr "Домашна адреса"
-
 #: printing/detailledstyle.cpp:155
 msgid "Work Address"
 msgstr "Адреса на работа"
@@ -114,7 +440,7 @@ msgstr "Белешка:"
 
 #. i18n: file: printing/ds_appearance.ui:49
 #. i18n: ectx: property (text), widget (QLabel, labelHeader)
-#: printing/detailledstyle.cpp:247 rc.cpp:32
+#: printing/detailledstyle.cpp:247 rc.cpp:8
 msgid "Detailed Print Style - Appearance"
 msgstr "Детален стил на печатење - Изглед"
 
@@ -132,15 +458,33 @@ msgstr ""
 msgid "Setting up colors"
 msgstr "Поставувам фонтови и бои"
 
+#: printing/detailledstyle.cpp:283 printing/mikesstyle.cpp:126
+#: printing/ringbinderstyle.cpp:176
+#, fuzzy
+#| msgid "Setting up fonts and colors"
+msgid "Setting up document"
+msgstr "Поставувам фонтови и бои"
+
+#: printing/detailledstyle.cpp:290 printing/mikesstyle.cpp:133
+#: printing/ringbinderstyle.cpp:203
+msgid "Printing"
+msgstr "Печатам"
+
+#: printing/detailledstyle.cpp:294 printing/mikesstyle.cpp:137
+#: printing/ringbinderstyle.cpp:207
+#, fuzzy
+#| msgid "Done"
+msgctxt "Finished printing"
+msgid "Done"
+msgstr "Готово"
+
 #: printing/detailledstyle.cpp:309
 msgid "Detailed Style"
 msgstr "Детален стил"
 
-#: printing/printingwizard.cpp:53 mainwidget.cpp:478
-#, fuzzy
-#| msgid "Edit Contact"
-msgid "Print Contacts"
-msgstr "Уредете контакт"
+#: printing/mikesstyle.cpp:153
+msgid "Mike's Printing Style"
+msgstr "Стилот за печатење на Мајк"
 
 #: printing/printingwizard.cpp:57
 msgid "Which contacts do you want to print?"
@@ -166,9 +510,20 @@ msgstr "Печатење: прогрес"
 msgid "Progress"
 msgstr "Прогрес"
 
-#: printing/mikesstyle.cpp:153
-msgid "Mike's Printing Style"
-msgstr "Стилот за печатење на Мајк"
+#: printing/ringbinderstyle.cpp:142
+#, fuzzy
+msgid "Ring Binder Printing Style - Appearance"
+msgstr "Детален стил на печатење - Изглед"
+
+#: printing/ringbinderstyle.cpp:160
+#, fuzzy
+#| msgid "Setting up fonts and colors"
+msgid "Setting up fields"
+msgstr "Поставувам фонтови и бои"
+
+#: printing/ringbinderstyle.cpp:223
+msgid "Printout for Ring Binders"
+msgstr ""
 
 #: printing/stylepage.cpp:51
 #, fuzzy
@@ -214,106 +569,18 @@ msgstr "Редослед:"
 msgid "Print Style"
 msgstr "Стил за печатење"
 
-#: xxport/vcard/vcard_xxport.cpp:119
-msgid ""
-"You have selected a list of contacts, shall they be exported to several "
-"files?"
-msgstr ""
-"Избравте листа на контакти. Дали тие да бидат изнесени во повеќе датотеки?"
+#: quicksearchwidget.cpp:38
+#, fuzzy
+#| msgid "Search:"
+msgctxt "Search contacts in list"
+msgid "Search"
+msgstr "Барај:"
 
-#: xxport/vcard/vcard_xxport.cpp:122
-msgid "Export to Several Files"
-msgstr "Изнеси во повеќе датотеки"
-
-#: xxport/vcard/vcard_xxport.cpp:123
-msgid "Export to One File"
-msgstr "Изнеси во една датотека"
-
-#: xxport/vcard/vcard_xxport.cpp:175
-msgid "Select vCard to Import"
-msgstr "Изберете vCard-картичка за внесување"
-
-#: xxport/vcard/vcard_xxport.cpp:180
-msgid "vCard Import Failed"
-msgstr "Внесувањето на vCard-картичката не успеа"
-
-#: xxport/vcard/vcard_xxport.cpp:200
-#, fuzzy, kde-format
-#| msgid ""
-#| "<qt>When trying to read the vCard, there was an error opening the file '%"
-#| "1': %2</qt>"
-msgctxt "@info"
-msgid ""
-"<para>When trying to read the vCard, there was an error opening the file "
-"<filename>%1</filename>:</para><para>%2</para>"
-msgstr ""
-"<qt>При обидот за читање на vCard-картичката, имаше грешка при отворањето на "
-"датотеката „%1“: %2</qt>"
-
-#: xxport/vcard/vcard_xxport.cpp:208
-#, fuzzy, kde-format
-#| msgid "<qt>Unable to access vCard: %1</qt>"
-msgctxt "@info"
-msgid "<para>Unable to access vCard:</para><para>%1</para>"
-msgstr "<qt>Не можам да пристапам на vCard-картичката: %1</qt>"
-
-#: xxport/vcard/vcard_xxport.cpp:217
-msgid "No contacts were imported, due to errors with the vCards."
-msgstr "Не беа внесени контакти поради грешки со vCard-картичките."
-
-#: xxport/vcard/vcard_xxport.cpp:219
-msgid "The vCard does not contain any contacts."
-msgstr "vCard-картичката не содржи ниту еден контакт."
-
-#: xxport/vcard/vcard_xxport.cpp:243 xxport/csv/csv_xxport.cpp:48
-#: xxport/gmx/gmx_xxport.cpp:334 xxport/ldif/ldif_xxport.cpp:114
+#: xxport/csv/csv_xxport.cpp:48 xxport/gmx/gmx_xxport.cpp:334
+#: xxport/ldif/ldif_xxport.cpp:114 xxport/vcard/vcard_xxport.cpp:243
 #, kde-format
 msgid "Do you want to overwrite file \"%1\""
 msgstr ""
-
-#: xxport/vcard/vcard_xxport.cpp:407
-msgid "Import vCard"
-msgstr "Внесете vCard-картичка"
-
-#: xxport/vcard/vcard_xxport.cpp:420
-#, fuzzy
-#| msgid "Do you want to import this contact in your address book?"
-msgid "Do you want to import this contact into your address book?"
-msgstr "Дали сакате да го внесете овој контакт во вашиот адресар?"
-
-#: xxport/vcard/vcard_xxport.cpp:429
-msgid "Import All..."
-msgstr "Внеси ги сите..."
-
-#: xxport/vcard/vcard_xxport.cpp:491
-msgid "Select vCard Fields"
-msgstr "Изберете полиња од vCard-картичката"
-
-#: xxport/vcard/vcard_xxport.cpp:504
-msgid "Select the fields which shall be exported in the vCard."
-msgstr "Изберете ги полињата што ќе бидат изнесени во vCard-картичката."
-
-#: xxport/vcard/vcard_xxport.cpp:507
-msgid "Private fields"
-msgstr "Приватни полиња"
-
-#: xxport/vcard/vcard_xxport.cpp:510
-msgid "Business fields"
-msgstr "Бизнис полиња"
-
-#: xxport/vcard/vcard_xxport.cpp:513
-msgid "Other fields"
-msgstr "Други полиња"
-
-#: xxport/vcard/vcard_xxport.cpp:516
-msgid "Encryption keys"
-msgstr "Клучеви за криптирање"
-
-#: xxport/vcard/vcard_xxport.cpp:519
-#, fuzzy
-#| msgid "Picture"
-msgid "Pictures"
-msgstr "Слика"
 
 #: xxport/csv/csv_xxport.cpp:55 xxport/gmx/gmx_xxport.cpp:342
 #: xxport/ldif/ldif_xxport.cpp:101
@@ -326,27 +593,6 @@ msgstr "<qt>Не можам да ја отворам датотеката <b>%1<
 #, kde-format
 msgid "<qt>Unable to open file <b>%1</b>.</qt>"
 msgstr "<qt>Не можам да ја отворам датотеката <b>%1</b>.</qt>"
-
-#: xxport/csv/templateselectiondialog.cpp:171
-#, fuzzy, kde-format
-#| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
-msgctxt "@label"
-msgid "Do you really want to delete template '%1'?"
-msgstr "<qt>Дали навистина сакате да го отстраните адресарот <b>%1</b>?</qt>"
-
-#: xxport/csv/templateselectiondialog.cpp:188
-#, fuzzy
-#| msgid "Template Selection"
-msgctxt "@title:window"
-msgid "Template Selection"
-msgstr "Избор на образци"
-
-#: xxport/csv/templateselectiondialog.cpp:194
-#, fuzzy
-#| msgid "Please select a template, that matches the CSV file:"
-msgctxt "@info"
-msgid "Please select a template, that matches the CSV file:"
-msgstr "Изберете образец што одговара на CSV-датотеката:"
 
 #: xxport/csv/csvimportdialog.cpp:170
 #, fuzzy
@@ -560,6 +806,27 @@ msgctxt "@info:status"
 msgid "Cannot open input file."
 msgstr "Не можам да ја отворам влезната датотека."
 
+#: xxport/csv/templateselectiondialog.cpp:171
+#, fuzzy, kde-format
+#| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
+msgctxt "@label"
+msgid "Do you really want to delete template '%1'?"
+msgstr "<qt>Дали навистина сакате да го отстраните адресарот <b>%1</b>?</qt>"
+
+#: xxport/csv/templateselectiondialog.cpp:188
+#, fuzzy
+#| msgid "Template Selection"
+msgctxt "@title:window"
+msgid "Template Selection"
+msgstr "Избор на образци"
+
+#: xxport/csv/templateselectiondialog.cpp:194
+#, fuzzy
+#| msgid "Please select a template, that matches the CSV file:"
+msgctxt "@info"
+msgid "Please select a template, that matches the CSV file:"
+msgstr "Изберете образец што одговара на CSV-датотеката:"
+
 #: xxport/gmx/gmx_xxport.cpp:98
 #, fuzzy
 msgid "GMX address book file (*.gmxa)"
@@ -574,6 +841,101 @@ msgstr "<qt>Не можам да ја отворам <b>%1</b> за читање
 #, fuzzy, kde-format
 msgid "%1 is not a GMX address book file."
 msgstr "%1-адресар"
+
+#: xxport/vcard/vcard_xxport.cpp:119
+msgid ""
+"You have selected a list of contacts, shall they be exported to several "
+"files?"
+msgstr ""
+"Избравте листа на контакти. Дали тие да бидат изнесени во повеќе датотеки?"
+
+#: xxport/vcard/vcard_xxport.cpp:122
+msgid "Export to Several Files"
+msgstr "Изнеси во повеќе датотеки"
+
+#: xxport/vcard/vcard_xxport.cpp:123
+msgid "Export to One File"
+msgstr "Изнеси во една датотека"
+
+#: xxport/vcard/vcard_xxport.cpp:175
+msgid "Select vCard to Import"
+msgstr "Изберете vCard-картичка за внесување"
+
+#: xxport/vcard/vcard_xxport.cpp:180
+msgid "vCard Import Failed"
+msgstr "Внесувањето на vCard-картичката не успеа"
+
+#: xxport/vcard/vcard_xxport.cpp:200
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>When trying to read the vCard, there was an error opening the file '%"
+#| "1': %2</qt>"
+msgctxt "@info"
+msgid ""
+"<para>When trying to read the vCard, there was an error opening the file "
+"<filename>%1</filename>:</para><para>%2</para>"
+msgstr ""
+"<qt>При обидот за читање на vCard-картичката, имаше грешка при отворањето на "
+"датотеката „%1“: %2</qt>"
+
+#: xxport/vcard/vcard_xxport.cpp:208
+#, fuzzy, kde-format
+#| msgid "<qt>Unable to access vCard: %1</qt>"
+msgctxt "@info"
+msgid "<para>Unable to access vCard:</para><para>%1</para>"
+msgstr "<qt>Не можам да пристапам на vCard-картичката: %1</qt>"
+
+#: xxport/vcard/vcard_xxport.cpp:217
+msgid "No contacts were imported, due to errors with the vCards."
+msgstr "Не беа внесени контакти поради грешки со vCard-картичките."
+
+#: xxport/vcard/vcard_xxport.cpp:219
+msgid "The vCard does not contain any contacts."
+msgstr "vCard-картичката не содржи ниту еден контакт."
+
+#: xxport/vcard/vcard_xxport.cpp:407
+msgid "Import vCard"
+msgstr "Внесете vCard-картичка"
+
+#: xxport/vcard/vcard_xxport.cpp:420
+#, fuzzy
+#| msgid "Do you want to import this contact in your address book?"
+msgid "Do you want to import this contact into your address book?"
+msgstr "Дали сакате да го внесете овој контакт во вашиот адресар?"
+
+#: xxport/vcard/vcard_xxport.cpp:429
+msgid "Import All..."
+msgstr "Внеси ги сите..."
+
+#: xxport/vcard/vcard_xxport.cpp:491
+msgid "Select vCard Fields"
+msgstr "Изберете полиња од vCard-картичката"
+
+#: xxport/vcard/vcard_xxport.cpp:504
+msgid "Select the fields which shall be exported in the vCard."
+msgstr "Изберете ги полињата што ќе бидат изнесени во vCard-картичката."
+
+#: xxport/vcard/vcard_xxport.cpp:507
+msgid "Private fields"
+msgstr "Приватни полиња"
+
+#: xxport/vcard/vcard_xxport.cpp:510
+msgid "Business fields"
+msgstr "Бизнис полиња"
+
+#: xxport/vcard/vcard_xxport.cpp:513
+msgid "Other fields"
+msgstr "Други полиња"
+
+#: xxport/vcard/vcard_xxport.cpp:516
+msgid "Encryption keys"
+msgstr "Клучеви за криптирање"
+
+#: xxport/vcard/vcard_xxport.cpp:519
+#, fuzzy
+#| msgid "Picture"
+msgid "Pictures"
+msgstr "Слика"
 
 #: xxportmanager.cpp:98
 #, fuzzy
@@ -616,368 +978,6 @@ msgstr ""
 "Ги копира тековно избраните контакти на системската табла со исечоци во "
 "форматот vCard."
 
-#: aboutdata.cpp:28
-msgid "KAddressBook"
-msgstr "КАдресар"
-
-#: aboutdata.cpp:29
-#, fuzzy
-#| msgid "The KDE Address Book"
-msgid "The KDE Address Book Application"
-msgstr "Адресарот на KDE"
-
-#: aboutdata.cpp:31
-msgid "Copyright © 2007–2010 KAddressBook authors"
-msgstr ""
-
-#: aboutdata.cpp:33
-msgid "Tobias Koenig"
-msgstr ""
-
-#: aboutdata.cpp:33
-msgid "Current maintainer"
-msgstr "Тековен одржувач"
-
-#: aboutdata.cpp:34
-msgid "Laurent Montel"
-msgstr ""
-
-#: aboutdata.cpp:34
-#, fuzzy
-#| msgid "Contact pinning"
-msgid "Kontact integration"
-msgstr "Закачување на контакти"
-
-#: contactswitcher.cpp:35
-msgctxt "Previous contact"
-msgid "Previous"
-msgstr ""
-
-#: contactswitcher.cpp:36
-#, fuzzy
-#| msgid "Text"
-msgctxt "Next contact"
-msgid "Next"
-msgstr "Текст"
-
-#: contactswitcher.cpp:111
-#, fuzzy, kde-format
-#| msgctxt "<nickname> on <server>"
-#| msgid "%1 on %2"
-msgid "%1 out of %2"
-msgstr "%1 на %2"
-
-#: contactselectionwidget.cpp:95
-#, fuzzy
-#| msgid "&All contacts"
-msgid "All contacts"
-msgstr "&Сите контакти"
-
-#: contactselectionwidget.cpp:96
-#, fuzzy
-#| msgid "&Selected contacts"
-msgid "Selected contacts"
-msgstr "&Избрани контакти"
-
-#: contactselectionwidget.cpp:97
-#, fuzzy
-#| msgid "&All contacts"
-msgid "All contacts from:"
-msgstr "&Сите контакти"
-
-#: contactselectionwidget.cpp:101
-msgid "Include Subfolders"
-msgstr ""
-
-#: mainwidget.cpp:398
-#, fuzzy
-#| msgid "Set the categories for all selected contacts."
-msgid "Print the complete address book or a selected number of contacts."
-msgstr "Ги поставува категориите за сите избрани контакти."
-
-#: mainwidget.cpp:401
-#, fuzzy
-#| msgid "Recursive search"
-msgid "Quick search"
-msgstr "Рекурзивно пребарување"
-
-#: mainwidget.cpp:405
-#, fuzzy
-msgid "Select All"
-msgstr "Одизбери ги сите"
-
-#: mainwidget.cpp:407
-#, fuzzy
-#| msgid "Selects all visible contacts from current view."
-msgid "Select all contacts in the current address book view."
-msgstr "Ги избира сите видливи контакти од тековниот преглед."
-
-#: mainwidget.cpp:411
-msgid "Show Simple View"
-msgstr ""
-
-#: mainwidget.cpp:412
-#, fuzzy
-#| msgid "Please select type of the new address book:"
-msgid "Show a simple mode of the address book view."
-msgstr "Изберете го типот на новиот адресар:"
-
-#: mainwidget.cpp:417
-msgid "Import vCard..."
-msgstr "Внеси vCard-картичка..."
-
-#: mainwidget.cpp:418
-#, fuzzy
-#| msgid "Import Contacts?"
-msgid "Import contacts from a vCard file."
-msgstr "Внесувате контакти?"
-
-#: mainwidget.cpp:422
-#, fuzzy
-#| msgid "Import CSV List..."
-msgid "Import CSV file..."
-msgstr "Внеси CSV-листа..."
-
-#: mainwidget.cpp:423
-msgid "Import contacts from a file in comma separated value format."
-msgstr ""
-
-#: mainwidget.cpp:427
-#, fuzzy
-#| msgid "Import LDIF Addressbook..."
-msgid "Import LDIF file..."
-msgstr "Внеси LDIF-адресар..."
-
-#: mainwidget.cpp:428
-#, fuzzy
-#| msgid "Import Contacts?"
-msgid "Import contacts from an LDIF file."
-msgstr "Внесувате контакти?"
-
-#: mainwidget.cpp:432
-#, fuzzy
-#| msgid "Import From Mobile Phone..."
-msgid "Import from LDAP server..."
-msgstr "Внеси од мобилен телефон..."
-
-#: mainwidget.cpp:433
-#, fuzzy
-#| msgid "Import Contacts?"
-msgid "Import contacts from an LDAP server."
-msgstr "Внесувате контакти?"
-
-#: mainwidget.cpp:437
-#, fuzzy
-#| msgid "Import All..."
-msgid "Import GMX file..."
-msgstr "Внеси ги сите..."
-
-#: mainwidget.cpp:438
-#, fuzzy
-msgid "Import contacts from a GMX address book file."
-msgstr "%1-адресар"
-
-#: mainwidget.cpp:444
-msgid "Export vCard 3.0..."
-msgstr "Изнеси vCard-картичка 3.0..."
-
-#: mainwidget.cpp:445
-#, fuzzy
-#| msgid "Export vCard 3.0..."
-msgid "Export contacts to a vCard 3.0 file."
-msgstr "Изнеси vCard-картичка 3.0..."
-
-#: mainwidget.cpp:449
-msgid "Export vCard 2.1..."
-msgstr "Изнеси vCard-картичка 2.1..."
-
-#: mainwidget.cpp:450
-#, fuzzy
-#| msgid "Export vCard 2.1..."
-msgid "Export contacts to a vCard 2.1 file."
-msgstr "Изнеси vCard-картичка 2.1..."
-
-#: mainwidget.cpp:454
-#, fuzzy
-#| msgid "Export CSV List..."
-msgid "Export CSV file..."
-msgstr "Изнеси CSV-листа..."
-
-#: mainwidget.cpp:455
-msgid "Export contacts to a file in comma separated value format."
-msgstr ""
-
-#: mainwidget.cpp:459
-#, fuzzy
-#| msgid "Export LDIF Addressbook..."
-msgid "Export LDIF file..."
-msgstr "Изнеси LDIF-адресар..."
-
-#: mainwidget.cpp:460
-#, fuzzy
-#| msgid "Export LDIF Addressbook..."
-msgid "Export contacts to an LDIF file."
-msgstr "Изнеси LDIF-адресар..."
-
-#: mainwidget.cpp:464
-#, fuzzy
-msgid "Export GMX file..."
-msgstr "Изнеси LDIF-адресар..."
-
-#: mainwidget.cpp:465
-#, fuzzy
-msgid "Export contacts to a GMX address book file."
-msgstr "%1-адресар"
-
-#: mainwidget.cpp:472
-msgid "Address Book"
-msgstr "Адресар"
-
-#: quicksearchwidget.cpp:38
-#, fuzzy
-#| msgid "Search:"
-msgctxt "Search contacts in list"
-msgid "Search"
-msgstr "Барај:"
-
-#: modelcolumnmanager.cpp:76
-msgid "Full Name"
-msgstr "Целосно име"
-
-#: modelcolumnmanager.cpp:81
-#, fuzzy
-#| msgid "Family names:"
-msgid "Family Name"
-msgstr "Презимиња:"
-
-#: modelcolumnmanager.cpp:85
-#, fuzzy
-#| msgid "Given name:"
-msgid "Given Name"
-msgstr "Име:"
-
-#: modelcolumnmanager.cpp:97
-#, fuzzy
-#| msgid "Business fields"
-msgid "Business Address"
-msgstr "Бизнис полиња"
-
-#: modelcolumnmanager.cpp:101
-#, fuzzy
-msgid "Phone Numbers"
-msgstr "Уредете телефонски број"
-
-#: modelcolumnmanager.cpp:105
-#, fuzzy
-#| msgid "Preferred address"
-msgid "Preferred EMail"
-msgstr "Претпочитана адреса"
-
-#: modelcolumnmanager.cpp:109
-#, fuzzy
-#| msgid "Email"
-msgid "All EMails"
-msgstr "Е-пошта"
-
-#: mainwindow.cpp:60
-#, fuzzy
-#| msgid ""
-#| "You will be presented with a dialog, where you can configure the "
-#| "application wide shortcuts."
-msgid ""
-"You will be presented with a dialog where you can configure the application-"
-"wide shortcuts."
-msgstr ""
-"Ќе ви биде презентиран дијалог каде што можете да ги конфигурирате "
-"кратенките за апликацијата."
-
-#: contactselectiondialog.cpp:29
-#, fuzzy
-#| msgid "&Selected contacts"
-msgid "Select Contacts"
-msgstr "&Избрани контакти"
-
-#: contactfields.cpp:28
-#, fuzzy
-#| msgid "Undefined"
-msgctxt "@item Undefined import field type"
-msgid "Undefined"
-msgstr "Недефинирано"
-
-#: contactfields.cpp:37
-msgid "Anniversary"
-msgstr "Годишнина"
-
-#: contactfields.cpp:60
-#, fuzzy
-#| msgid "Use Preferred"
-msgctxt "Preferred email address"
-msgid "EMail (preferred)"
-msgstr "Користи претпочитани"
-
-#: contactfields.cpp:61
-#, fuzzy
-#| msgid "Email"
-msgctxt "Second email address"
-msgid "EMail (2)"
-msgstr "Е-пошта"
-
-#: contactfields.cpp:62
-#, fuzzy
-#| msgid "Email"
-msgctxt "Third email address"
-msgid "EMail (3)"
-msgstr "Е-пошта"
-
-#: contactfields.cpp:63
-#, fuzzy
-#| msgid "Email"
-msgctxt "Fourth email address"
-msgid "EMail (4)"
-msgstr "Е-пошта"
-
-#: contactfields.cpp:70
-#, fuzzy
-#| msgid "Blog feed:"
-msgid "Blog Feed"
-msgstr "Блог:"
-
-#: contactfields.cpp:71
-msgid "Profession"
-msgstr "Професија"
-
-#: contactfields.cpp:72
-msgid "Office"
-msgstr "Канцеларија"
-
-#: contactfields.cpp:73
-#, fuzzy
-#| msgid "Myanmar"
-msgid "Manager"
-msgstr "Мијанмар"
-
-#: contactfields.cpp:74
-#, fuzzy
-#| msgid "Assistant's Name"
-msgid "Assistant"
-msgstr "Име на асистент"
-
-#: contactfields.cpp:75
-msgid "Spouse"
-msgstr ""
-
-#: grantleecontactformatter.cpp:282
-#, fuzzy
-#| msgid "Types"
-msgctxt "Boolean value"
-msgid "yes"
-msgstr "Типови"
-
-#: grantleecontactformatter.cpp:284
-msgctxt "Boolean value"
-msgid "no"
-msgstr ""
-
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -988,36 +988,60 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "bobibobi@freemail.com.mk"
 
+#. i18n: file: printing/ds_appearance.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
+#: rc.cpp:5
+msgid "Appearance Page"
+msgstr "Страница за изглед"
+
+#. i18n: file: printing/ds_appearance.ui:68
+#. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
+#: rc.cpp:11
+msgid "Contact Headers"
+msgstr "Заглавија на контакт"
+
+#. i18n: file: printing/ds_appearance.ui:106
+#. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
+#: rc.cpp:14
+msgid "Headline background color:"
+msgstr "Боја на подлога за заглавието:"
+
+#. i18n: file: printing/ds_appearance.ui:116
+#. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
+#: rc.cpp:17
+msgid "Headline text color:"
+msgstr "Боја на текст за заглавието:"
+
 #. i18n: file: printing/rbs_appearance.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
-#: rc.cpp:5
+#: rc.cpp:20
 #, fuzzy
 msgid "Appearance"
 msgstr "Страница за изглед"
 
 #. i18n: file: printing/rbs_appearance.ui:26
 #. i18n: ectx: property (title), widget (QGroupBox, GroupBox2)
-#: rc.cpp:8
+#: rc.cpp:23
 msgid "Print Contact's Information"
 msgstr ""
 
 #. i18n: file: printing/rbs_appearance.ui:32
 #. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
-#: rc.cpp:11
+#: rc.cpp:26
 #, fuzzy
 msgid "Phone numbers"
 msgstr "Уредете телефонски број"
 
 #. i18n: file: printing/rbs_appearance.ui:42
 #. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
-#: rc.cpp:14
+#: rc.cpp:29
 #, fuzzy
 msgid "Email addresses"
 msgstr "Е-пошт. адреси:"
 
 #. i18n: file: printing/rbs_appearance.ui:52
 #. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
-#: rc.cpp:17
+#: rc.cpp:32
 #, fuzzy
 #| msgid "Postal Address"
 msgid "Postal addresses"
@@ -1025,48 +1049,24 @@ msgstr "Поштенска адреса"
 
 #. i18n: file: printing/rbs_appearance.ui:62
 #. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
-#: rc.cpp:20
+#: rc.cpp:35
 msgid "Organization"
 msgstr "Организација"
 
 #. i18n: file: printing/rbs_appearance.ui:69
 #. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
-#: rc.cpp:23
+#: rc.cpp:38
 #, fuzzy
 msgid "Birthday"
 msgstr "Роденден:"
 
 #. i18n: file: printing/rbs_appearance.ui:76
 #. i18n: ectx: property (text), widget (QCheckBox, cbNote)
-#: rc.cpp:26
+#: rc.cpp:41
 #, fuzzy
 #| msgid "Note:"
 msgid "Note"
 msgstr "Белешка:"
-
-#. i18n: file: printing/ds_appearance.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
-#: rc.cpp:29
-msgid "Appearance Page"
-msgstr "Страница за изглед"
-
-#. i18n: file: printing/ds_appearance.ui:68
-#. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
-#: rc.cpp:35
-msgid "Contact Headers"
-msgstr "Заглавија на контакт"
-
-#. i18n: file: printing/ds_appearance.ui:106
-#. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
-#: rc.cpp:38
-msgid "Headline background color:"
-msgstr "Боја на подлога за заглавието:"
-
-#. i18n: file: printing/ds_appearance.ui:116
-#. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
-#: rc.cpp:41
-msgid "Headline text color:"
-msgstr "Боја на текст за заглавието:"
 
 #. i18n: file: kaddressbookui.rc:5
 #. i18n: ectx: Menu (file)
