@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-11-03 06:25+0100\n"
+"POT-Creation-Date: 2010-12-28 02:27+0100\n"
 "PO-Revision-Date: 2006-05-08 10:32+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -281,15 +281,19 @@ msgid "Extraction failed because of an unexpected error."
 msgstr ""
 
 #: kerfuffle/cliinterface.cpp:532
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Folder to extract to"
+msgctxt "@info"
 msgid "Failed to locate program <filename>%1</filename> in PATH."
-msgstr ""
+msgstr "Папка во која ќе се отпакува"
 
 #: kerfuffle/cliinterface.cpp:537
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Could not create the folder %1"
+msgctxt "@info"
 msgid ""
 "Found program <filename>%1</filename>, but failed to initialize the process."
-msgstr ""
+msgstr "Не може да се создаде папката %1"
 
 #: kerfuffle/extractiondialog.cpp:60
 #, fuzzy
@@ -311,6 +315,7 @@ msgstr ""
 #: kerfuffle/extractiondialog.cpp:108
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
+msgctxt "@info"
 msgid ""
 "The folder <filename>%1</filename> already exists. Are you sure you want to "
 "extract here?"
@@ -335,13 +340,16 @@ msgstr ""
 #: kerfuffle/extractiondialog.cpp:117 kerfuffle/extractiondialog.cpp:123
 #, fuzzy, kde-format
 #| msgid "The folder could not be created. Please check permissions."
+msgctxt "@info"
 msgid "The folder <filename>%1</filename> could not be created."
 msgstr "Не можеше да се создаде папката. Проверете ги дозволите."
 
 #: kerfuffle/extractiondialog.cpp:118
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Archive already exists. Do you wish to overwrite it?"
+msgctxt "@info"
 msgid "<filename>%1</filename> already exists, but is not a folder."
-msgstr ""
+msgstr "Архивата веќе постои. Дали сакате да запишам врз неа?"
 
 #: kerfuffle/extractiondialog.cpp:124
 msgid "Please check your permissions to create it."
@@ -395,6 +403,7 @@ msgstr "Архивата веќе постои"
 #: kerfuffle/queries.cpp:178
 #, fuzzy, kde-format
 #| msgid "You must enter a password to extract the file:"
+msgctxt "@info"
 msgid ""
 "The archive <filename>%1</filename> is password protected. Please enter the "
 "password to extract the file."
@@ -635,6 +644,7 @@ msgstr ""
 #: part/part.cpp:381
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
+msgctxt "@info"
 msgid ""
 "The archive <filename>%1</filename> already exists. Would you like to open "
 "it instead?"
@@ -674,6 +684,7 @@ msgid "Invalid Archive Type"
 msgstr "Сите валидни архиви\n"
 
 #: part/part.cpp:422
+msgctxt "@info"
 msgid ""
 "Ark cannot create archives of the type you have chosen.<nl/><nl/>Please "
 "choose another archive type below."
@@ -685,20 +696,24 @@ msgid "Unable to Determine Archive Type"
 msgstr ""
 
 #: part/part.cpp:426
+msgctxt "@info"
 msgid ""
 "Ark was unable to determine the archive type of the filename.<nl/><nl/"
 ">Please choose the correct archive type below."
 msgstr ""
 
 #: part/part.cpp:441
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "An error occurred while adding the files to the archive."
+msgctxt "@info"
 msgid ""
 "Ark was not able to open the archive <filename>%1</filename>. No plugin "
 "capable of handling the file was found."
-msgstr ""
+msgstr "Се случи грешка при додавањето на датотеките во архивата."
 
 #: part/part.cpp:477
 #, kde-format
+msgctxt "@info"
 msgid ""
 "Loading the archive <filename>%1</filename> failed with the following error: "
 "<message>%2</message>"
@@ -732,53 +747,63 @@ msgstr "Само избраните датотеки"
 #: part/part.cpp:829
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
+msgctxt "@info"
 msgid ""
 "An archive named <filename>%1</filename> already exists. Are you sure you "
 "want to overwrite it?"
 msgstr "Архивата веќе постои. Дали сакате да запишам врз неа?"
 
 #: part/part.cpp:843
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "You must enter a password to extract the file:"
+msgctxt "@info"
 msgid ""
 "The archive <filename>%1</filename> cannot be copied to the specified "
 "location. The archive does not exist anymore."
-msgstr ""
+msgstr "Мора да внесете лозинка да да ја распакувате датотеката:"
 
 #: part/part.cpp:855
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Last folders used for extraction"
+msgctxt "@info"
 msgid ""
 "The archive could not be saved as <filename>%1</filename>. Try saving it to "
 "another location."
-msgstr ""
+msgstr "Последните папки користени за распакување"
 
 #: plugins/karchiveplugin/karchiveplugin.cpp:64
 #: plugins/karchiveplugin/karchiveplugin.cpp:74
 #, fuzzy, kde-format
 #| msgid "Could not create the folder %1"
+msgctxt "@info"
 msgid "Could not open the archive <filename>%1</filename> for reading"
 msgstr "Не може да се создаде папката %1"
 
 #: plugins/karchiveplugin/karchiveplugin.cpp:82
 #, fuzzy, kde-format
 #| msgid "Could not create the folder %1"
+msgctxt "@info"
 msgid "File <filename>%1</filename> not found in the archive"
 msgstr "Не може да се создаде папката %1"
 
 #: plugins/karchiveplugin/karchiveplugin.cpp:151
 #, fuzzy, kde-format
 #| msgid "Could not create the folder %1"
+msgctxt "@info"
 msgid "Could not open the archive <filename>%1</filename> for writing."
 msgstr "Не може да се создаде папката %1"
 
 #: plugins/karchiveplugin/karchiveplugin.cpp:168
 #, fuzzy, kde-format
 #| msgid "An error occurred while adding the files to the archive."
+msgctxt "@info"
 msgid "Could not add the directory <filename>%1</filename> to the archive"
 msgstr "Се случи грешка при додавањето на датотеките во архивата."
 
 #: plugins/karchiveplugin/karchiveplugin.cpp:176
 #, fuzzy, kde-format
 #| msgid "An error occurred while adding the files to the archive."
+msgctxt "@info"
 msgid "Could not add the file <filename>%1</filename> to the archive."
 msgstr "Се случи грешка при додавањето на датотеките во архивата."
 
@@ -786,6 +811,7 @@ msgstr "Се случи грешка при додавањето на датот
 #: plugins/libarchive/libarchivehandler.cpp:159
 #, fuzzy, kde-format
 #| msgid "An error occurred while adding the files to the archive."
+msgctxt "@info"
 msgid ""
 "Could not open the archive <filename>%1</filename>, libarchive cannot handle "
 "it."
@@ -793,6 +819,7 @@ msgstr "Се случи грешка при додавањето на датот
 
 #: plugins/libarchive/libarchivehandler.cpp:125
 #, kde-format
+msgctxt "@info"
 msgid ""
 "The archive reading failed with the following error: <message>%1</message>"
 msgstr ""
@@ -826,6 +853,7 @@ msgstr "Архивата %1 не постои."
 #: plugins/libarchive/libarchivehandler.cpp:426
 #: plugins/libarchive/libarchivehandler.cpp:571
 #, kde-format
+msgctxt "@info"
 msgid ""
 "Setting the compression method failed with the following error: <message>%1</"
 "message>"
@@ -840,6 +868,7 @@ msgstr ""
 #: plugins/libarchive/libarchivehandler.cpp:433
 #: plugins/libarchive/libarchivehandler.cpp:577
 #, kde-format
+msgctxt "@info"
 msgid ""
 "Opening the archive for writing failed with the following error: <message>%"
 "1</message>"
@@ -854,20 +883,24 @@ msgstr ""
 #: plugins/libsinglefileplugin/singlefileplugin.cpp:69
 #, fuzzy, kde-format
 #| msgid "Folder to extract to"
+msgctxt "@info"
 msgid "Ark could not extract <filename>%1</filename>."
 msgstr "Папка во која ќе се отпакува"
 
 #: plugins/libsinglefileplugin/singlefileplugin.cpp:77
 #, fuzzy, kde-format
 #| msgid "Last folders used for extraction"
+msgctxt "@info"
 msgid "Ark could not open <filename>%1</filename> for extraction."
 msgstr "Последните папки користени за распакување"
 
 #: plugins/libsinglefileplugin/singlefileplugin.cpp:91
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Last folders used for extraction"
+msgctxt "@info"
 msgid ""
 "There was an error while reading <filename>%1</filename> during extraction."
-msgstr ""
+msgstr "Последните папки користени за распакување"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
