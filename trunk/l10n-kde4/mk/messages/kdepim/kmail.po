@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-28 02:23+0100\n"
+"POT-Creation-Date: 2010-12-29 02:30+0100\n"
 "PO-Revision-Date: 2007-02-28 14:08+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -4486,151 +4486,6 @@ msgstr "&Дуплирај го постоечкиот идентитет"
 msgid "&Existing identities:"
 msgstr "Посто&ечки идентитети:"
 
-#: searchwindow.cpp:91
-msgid "Find Messages"
-msgstr "Пронајдете пораки"
-
-#: searchwindow.cpp:94
-#, fuzzy
-msgctxt "@action:button Search for messags"
-msgid "&Search"
-msgstr "&Барај:"
-
-#: searchwindow.cpp:111
-msgid "Search in &all local folders"
-msgstr "Барај во сите локални п&апки"
-
-#: searchwindow.cpp:115
-msgid "Search &only in:"
-msgstr "Барај само в&о:"
-
-#: searchwindow.cpp:124
-msgid "I&nclude sub-folders"
-msgstr "Вклучи &потпапки"
-
-#: searchwindow.cpp:222
-msgid "Search folder &name:"
-msgstr ""
-
-#: searchwindow.cpp:236 searchwindow.cpp:452
-msgid "Last Search"
-msgstr "Последното барање"
-
-#: searchwindow.cpp:246
-#, fuzzy
-#| msgid "Delete Search"
-msgid "Op&en Search Folder"
-msgstr "Бришење на пребарување"
-
-#: searchwindow.cpp:255
-#, fuzzy
-#| msgid "Open Message"
-msgid "Open &Message"
-msgstr "Отворете порака"
-
-#: searchwindow.cpp:266
-msgid "AMiddleLengthText..."
-msgstr ""
-
-#: searchwindow.cpp:267
-#, fuzzy
-#| msgctxt "Permissions"
-#| msgid "Read"
-msgctxt "@info:status finished searching."
-msgid "Ready."
-msgstr "Читање"
-
-#: searchwindow.cpp:303 messageactions.cpp:70
-msgid "&Reply..."
-msgstr "&Одговори..."
-
-#: searchwindow.cpp:307 messageactions.cpp:84
-msgid "Reply to &All..."
-msgstr "Одговори на &сите..."
-
-#: searchwindow.cpp:311 messageactions.cpp:91
-msgid "Reply to Mailing-&List..."
-msgstr "Одговори на поштенската &листа..."
-
-#: searchwindow.cpp:315 messageactions.cpp:146
-msgctxt "Message->"
-msgid "&Forward"
-msgstr "&Препрати"
-
-#: searchwindow.cpp:320
-#, fuzzy
-#| msgid "&Inline..."
-msgctxt "@action:inmenu Forward message inline."
-msgid "&Inline..."
-msgstr "&Внатрешно..."
-
-#: searchwindow.cpp:325
-msgctxt "Message->Forward->"
-msgid "As &Attachment..."
-msgstr "Како &прилог..."
-
-#: searchwindow.cpp:339
-msgid "Save Attachments..."
-msgstr "Зачувај прилози..."
-
-#: searchwindow.cpp:345
-msgid "Clear Selection"
-msgstr ""
-
-#: searchwindow.cpp:405
-#, fuzzy
-msgctxt "Search finished."
-msgid "Done"
-msgstr "Надолу"
-
-#: searchwindow.cpp:406 searchwindow.cpp:413
-#, kde-format
-msgid "%1 match"
-msgid_plural "%1 matches"
-msgstr[0] "%1 совпаѓање"
-msgstr[1] "%1 совпаѓања"
-msgstr[2] "%1 совпаѓања"
-
-#: searchwindow.cpp:408
-#, fuzzy
-msgid "Search canceled"
-msgstr "Пребарувањето е откажано"
-
-#: searchwindow.cpp:409
-#, fuzzy, kde-format
-msgid "%1 match so far"
-msgid_plural "%1 matches so far"
-msgstr[0] "Досега има %1 совпаѓање во %2"
-msgstr[1] "Досега има %1 совпаѓања во %2"
-msgstr[2] "Досега има %1 совпаѓања во %2"
-
-#: searchwindow.cpp:414
-#, fuzzy, kde-format
-msgid "Searching in %1"
-msgstr "Пребарувам во %1 (порака %2)"
-
-#: searchwindow.cpp:642
-msgid ""
-"There was a problem renaming your search folder. A common reason for this is "
-"that another search folder with the same name already exists."
-msgstr ""
-
-#: searchwindow.cpp:748
-#, fuzzy, kde-format
-msgid "Copy Message"
-msgid_plural "Copy %1 Messages"
-msgstr[0] "Отворете порака"
-msgstr[1] "Отворете порака"
-msgstr[2] "Отворете порака"
-
-#: searchwindow.cpp:751
-#, fuzzy, kde-format
-msgid "Cut Message"
-msgid_plural "Cut %1 Messages"
-msgstr[0] "Бришење на пораки"
-msgstr[1] "Бришење на пораки"
-msgstr[2] "Бришење на пораки"
-
 #: simplestringlisteditor.cpp:58
 msgid "New entry:"
 msgstr ""
@@ -4777,9 +4632,21 @@ msgctxt "Message->"
 msgid "&Reply"
 msgstr "&Одговори"
 
+#: messageactions.cpp:70 searchwindow.cpp:303
+msgid "&Reply..."
+msgstr "&Одговори..."
+
 #: messageactions.cpp:77
 msgid "Reply to A&uthor..."
 msgstr "Одговори на а&второт..."
+
+#: messageactions.cpp:84 searchwindow.cpp:307
+msgid "Reply to &All..."
+msgstr "Одговори на &сите..."
+
+#: messageactions.cpp:91 searchwindow.cpp:311
+msgid "Reply to Mailing-&List..."
+msgstr "Одговори на поштенската &листа..."
 
 #: messageactions.cpp:98
 msgid "Reply Without &Quote..."
@@ -4817,6 +4684,11 @@ msgstr "Ур&еди ја пораката"
 #| msgid "Add..."
 msgid "Add Note..."
 msgstr "Додај..."
+
+#: messageactions.cpp:146 searchwindow.cpp:315
+msgctxt "Message->"
+msgid "&Forward"
+msgstr "&Препрати"
 
 #: messageactions.cpp:151
 #, fuzzy
@@ -4905,6 +4777,134 @@ msgstr "Пошта"
 #| msgid "Open With..."
 msgid "Edit Note..."
 msgstr "Отвори со..."
+
+#: searchwindow.cpp:91
+msgid "Find Messages"
+msgstr "Пронајдете пораки"
+
+#: searchwindow.cpp:94
+#, fuzzy
+msgctxt "@action:button Search for messags"
+msgid "&Search"
+msgstr "&Барај:"
+
+#: searchwindow.cpp:111
+msgid "Search in &all local folders"
+msgstr "Барај во сите локални п&апки"
+
+#: searchwindow.cpp:115
+msgid "Search &only in:"
+msgstr "Барај само в&о:"
+
+#: searchwindow.cpp:124
+msgid "I&nclude sub-folders"
+msgstr "Вклучи &потпапки"
+
+#: searchwindow.cpp:222
+msgid "Search folder &name:"
+msgstr ""
+
+#: searchwindow.cpp:236 searchwindow.cpp:452
+msgid "Last Search"
+msgstr "Последното барање"
+
+#: searchwindow.cpp:246
+#, fuzzy
+#| msgid "Delete Search"
+msgid "Op&en Search Folder"
+msgstr "Бришење на пребарување"
+
+#: searchwindow.cpp:255
+#, fuzzy
+#| msgid "Open Message"
+msgid "Open &Message"
+msgstr "Отворете порака"
+
+#: searchwindow.cpp:266
+msgid "AMiddleLengthText..."
+msgstr ""
+
+#: searchwindow.cpp:267
+#, fuzzy
+#| msgctxt "Permissions"
+#| msgid "Read"
+msgctxt "@info:status finished searching."
+msgid "Ready."
+msgstr "Читање"
+
+#: searchwindow.cpp:320
+#, fuzzy
+#| msgid "&Inline..."
+msgctxt "@action:inmenu Forward message inline."
+msgid "&Inline..."
+msgstr "&Внатрешно..."
+
+#: searchwindow.cpp:325
+msgctxt "Message->Forward->"
+msgid "As &Attachment..."
+msgstr "Како &прилог..."
+
+#: searchwindow.cpp:339
+msgid "Save Attachments..."
+msgstr "Зачувај прилози..."
+
+#: searchwindow.cpp:345
+msgid "Clear Selection"
+msgstr ""
+
+#: searchwindow.cpp:405
+#, fuzzy
+msgctxt "Search finished."
+msgid "Done"
+msgstr "Надолу"
+
+#: searchwindow.cpp:406 searchwindow.cpp:413
+#, kde-format
+msgid "%1 match"
+msgid_plural "%1 matches"
+msgstr[0] "%1 совпаѓање"
+msgstr[1] "%1 совпаѓања"
+msgstr[2] "%1 совпаѓања"
+
+#: searchwindow.cpp:408
+#, fuzzy
+msgid "Search canceled"
+msgstr "Пребарувањето е откажано"
+
+#: searchwindow.cpp:409
+#, fuzzy, kde-format
+msgid "%1 match so far"
+msgid_plural "%1 matches so far"
+msgstr[0] "Досега има %1 совпаѓање во %2"
+msgstr[1] "Досега има %1 совпаѓања во %2"
+msgstr[2] "Досега има %1 совпаѓања во %2"
+
+#: searchwindow.cpp:414
+#, fuzzy, kde-format
+msgid "Searching in %1"
+msgstr "Пребарувам во %1 (порака %2)"
+
+#: searchwindow.cpp:651
+msgid ""
+"There was a problem renaming your search folder. A common reason for this is "
+"that another search folder with the same name already exists."
+msgstr ""
+
+#: searchwindow.cpp:757
+#, fuzzy, kde-format
+msgid "Copy Message"
+msgid_plural "Copy %1 Messages"
+msgstr[0] "Отворете порака"
+msgstr[1] "Отворете порака"
+msgstr[2] "Отворете порака"
+
+#: searchwindow.cpp:760
+#, fuzzy, kde-format
+msgid "Cut Message"
+msgid_plural "Cut %1 Messages"
+msgstr[0] "Бришење на пораки"
+msgstr[1] "Бришење на пораки"
+msgstr[2] "Бришење на пораки"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
