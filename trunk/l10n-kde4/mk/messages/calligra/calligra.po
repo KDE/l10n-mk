@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-30 02:59+0100\n"
+"POT-Creation-Date: 2011-01-02 03:00+0100\n"
 "PO-Revision-Date: 2000-10-02 22:00+0100\n"
 "Last-Translator: Damjan Janevski <miopa@usa.net>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -66,6 +66,7 @@ msgid "Paste Shapes"
 msgstr "Создади шаблон"
 
 #: flake/KoToolBase.cpp:175 flake/KoToolManager.cpp:350
+#: main/KoToolDocker.cpp:205
 #, fuzzy
 msgid "Tool Options"
 msgstr "Зачувај документ како"
@@ -432,7 +433,7 @@ msgstr ""
 msgid "Script Manager"
 msgstr ""
 
-#: kokross/KoScriptManager.cpp:299 main/KoMainWindow.cpp:592
+#: kokross/KoScriptManager.cpp:299 main/KoMainWindow.cpp:595
 #, fuzzy
 msgid "Save"
 msgstr "&Додади група..."
@@ -542,7 +543,7 @@ msgstr ""
 msgid "Reparent shapes"
 msgstr "Отстрани шаблон"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:95 main/KoMainWindow.cpp:1687
+#: kopageapp/KoPADocumentStructureDocker.cpp:95 main/KoMainWindow.cpp:1700
 #, fuzzy
 msgid "Document"
 msgstr "&Отвори документ"
@@ -677,111 +678,6 @@ msgid_plural "Paste Pages"
 msgstr[0] "Колони"
 msgstr[1] "Колони"
 msgstr[2] "Колони"
-
-#: kopageapp/KoPAView.cpp:239 main/KoToolBoxFactory.cpp:36
-#, fuzzy
-msgid "Tools"
-msgstr "Одбери..."
-
-#: kopageapp/KoPAView.cpp:276
-#, fuzzy
-msgid "D&elete"
-msgstr "Отстрани шаблон"
-
-#: kopageapp/KoPAView.cpp:287
-msgid "Snap to Grid"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:297
-msgid "Show Master Pages"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:301
-msgid "Show Rulers"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:303
-msgid "Show/hide the view's rulers"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:307
-#, fuzzy
-msgid "Insert Page"
-msgstr "Колони"
-
-#: kopageapp/KoPAView.cpp:309 kopageapp/KoPAView.cpp:310
-msgid "Insert a new page after the current one"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:313
-#, fuzzy
-msgid "Copy Page"
-msgstr "Фирма :"
-
-#: kopageapp/KoPAView.cpp:315 kopageapp/KoPAView.cpp:316
-msgid "Copy the current page"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:319
-#, fuzzy
-msgid "Delete Page"
-msgstr "Отстрани шаблон"
-
-#: kopageapp/KoPAView.cpp:322 kopageapp/KoPAView.cpp:323
-#, fuzzy
-msgid "Delete the current page"
-msgstr "Отстрани шаблон"
-
-#: kopageapp/KoPAView.cpp:326
-#, fuzzy
-msgid "Master Page..."
-msgstr "Колони"
-
-#: kopageapp/KoPAView.cpp:330
-msgid "Page Layout..."
-msgstr "Распоред на страна..."
-
-#. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:63
-#. i18n: ectx: property (text), widget (QTableWidget, variables)
-#: kopageapp/KoPAView.cpp:339 rc.cpp:317
-msgid "Variable"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:344
-#, fuzzy
-msgid "Import Document..."
-msgstr "&Отвори документ"
-
-#: kopageapp/KoPAView.cpp:348
-msgid "Configure..."
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:401
-#, fuzzy
-msgid "Import Slideshow"
-msgstr "Наслов :"
-
-#: kopageapp/KoPAView.cpp:404 main/KoMainWindow.cpp:1204
-#, fuzzy
-msgid "Import Document"
-msgstr "&Отвори документ"
-
-#: kopageapp/KoPAView.cpp:433 kopageapp/KoPAView.cpp:437
-#, fuzzy, kde-format
-#| msgid ""
-#| "Could not open\n"
-#| "%1"
-msgid ""
-"Could not import\n"
-"%1"
-msgstr ""
-"Не може да се отвори\n"
-"%1"
-
-#: kopageapp/KoPAView.cpp:541
-#, fuzzy
-msgid "Change page layout"
-msgstr "Отстрани табулатор"
 
 #: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
 #, fuzzy
@@ -931,6 +827,111 @@ msgstr "Отстрани табулатор"
 #, fuzzy
 msgid "Change background image"
 msgstr "Рабови на страна"
+
+#: kopageapp/KoPAView.cpp:239 main/KoToolBoxFactory.cpp:36
+#, fuzzy
+msgid "Tools"
+msgstr "Одбери..."
+
+#: kopageapp/KoPAView.cpp:276
+#, fuzzy
+msgid "D&elete"
+msgstr "Отстрани шаблон"
+
+#: kopageapp/KoPAView.cpp:287
+msgid "Snap to Grid"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:297
+msgid "Show Master Pages"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:301
+msgid "Show Rulers"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:303
+msgid "Show/hide the view's rulers"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:307
+#, fuzzy
+msgid "Insert Page"
+msgstr "Колони"
+
+#: kopageapp/KoPAView.cpp:309 kopageapp/KoPAView.cpp:310
+msgid "Insert a new page after the current one"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:313
+#, fuzzy
+msgid "Copy Page"
+msgstr "Фирма :"
+
+#: kopageapp/KoPAView.cpp:315 kopageapp/KoPAView.cpp:316
+msgid "Copy the current page"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:319
+#, fuzzy
+msgid "Delete Page"
+msgstr "Отстрани шаблон"
+
+#: kopageapp/KoPAView.cpp:322 kopageapp/KoPAView.cpp:323
+#, fuzzy
+msgid "Delete the current page"
+msgstr "Отстрани шаблон"
+
+#: kopageapp/KoPAView.cpp:326
+#, fuzzy
+msgid "Master Page..."
+msgstr "Колони"
+
+#: kopageapp/KoPAView.cpp:330
+msgid "Page Layout..."
+msgstr "Распоред на страна..."
+
+#. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:63
+#. i18n: ectx: property (text), widget (QTableWidget, variables)
+#: kopageapp/KoPAView.cpp:339 rc.cpp:317
+msgid "Variable"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:344
+#, fuzzy
+msgid "Import Document..."
+msgstr "&Отвори документ"
+
+#: kopageapp/KoPAView.cpp:348
+msgid "Configure..."
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:401
+#, fuzzy
+msgid "Import Slideshow"
+msgstr "Наслов :"
+
+#: kopageapp/KoPAView.cpp:404 main/KoMainWindow.cpp:1211
+#, fuzzy
+msgid "Import Document"
+msgstr "&Отвори документ"
+
+#: kopageapp/KoPAView.cpp:433 kopageapp/KoPAView.cpp:437
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not open\n"
+#| "%1"
+msgid ""
+"Could not import\n"
+"%1"
+msgstr ""
+"Не може да се отвори\n"
+"%1"
+
+#: kopageapp/KoPAView.cpp:541
+#, fuzzy
+msgid "Change page layout"
+msgstr "Отстрани табулатор"
 
 #. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1425,6 +1426,16 @@ msgstr "Формат на страна"
 msgid "Default"
 msgstr "Одбери..."
 
+#: kotext/commands/DeleteTableColumnCommand.cpp:39
+#, fuzzy
+msgid "Delete Column"
+msgstr "Отстрани шаблон"
+
+#: kotext/commands/DeleteTableRowCommand.cpp:39
+#, fuzzy
+msgid "Delete Row"
+msgstr "Отстрани шаблон"
+
 #: kotext/KoTextEditor.cpp:435 kotext/KoTextEditor.cpp:440
 msgid "Bold"
 msgstr ""
@@ -1568,16 +1579,6 @@ msgstr ""
 msgid "Line Break"
 msgstr "Рабови на страна"
 
-#: kotext/commands/DeleteTableColumnCommand.cpp:39
-#, fuzzy
-msgid "Delete Column"
-msgstr "Отстрани шаблон"
-
-#: kotext/commands/DeleteTableRowCommand.cpp:39
-#, fuzzy
-msgid "Delete Row"
-msgstr "Отстрани шаблон"
-
 #: main/KoApplication.cpp:77
 msgid "Only print and exit"
 msgstr ""
@@ -1637,6 +1638,10 @@ msgstr ""
 #: main/KoApplicationAdaptor.cpp:50
 #, kde-format
 msgid "Unknown Calligra MimeType %1. Check your installation."
+msgstr ""
+
+#: main/KoDockerManager.cpp:68
+msgid "Tool Bars Docker"
 msgstr ""
 
 #: main/KoDocument.cpp:503
@@ -1708,7 +1713,7 @@ msgid ""
 "Do you want to open it instead?"
 msgstr ""
 
-#: main/KoDocument.cpp:1279 main/KoDocument.cpp:1546 main/KoMainWindow.cpp:635
+#: main/KoDocument.cpp:1279 main/KoDocument.cpp:1546 main/KoMainWindow.cpp:638
 #, kde-format
 msgid "The file %1 does not exist."
 msgstr ""
@@ -1835,13 +1840,13 @@ msgid ""
 "an old version."
 msgstr ""
 
-#: main/KoDocument.cpp:1924 main/KoMainWindow.cpp:1132
+#: main/KoDocument.cpp:1924 main/KoMainWindow.cpp:1139
 #: pigment/resources/KoColorSet.cpp:214
 #, fuzzy
 msgid "Untitled"
 msgstr "Наслов :"
 
-#: main/KoDocument.cpp:1927 main/KoMainWindow.cpp:1135
+#: main/KoDocument.cpp:1927 main/KoMainWindow.cpp:1142
 #, fuzzy, kde-format
 msgid ""
 "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save it?"
@@ -1920,7 +1925,7 @@ msgstr "Не може да се вчита слика."
 msgid "Unknown"
 msgstr ""
 
-#: main/KoDocumentInfoDlg.cpp:90 main/KoMainWindow.cpp:283
+#: main/KoDocumentInfoDlg.cpp:90 main/KoMainWindow.cpp:287
 msgid "Document Information"
 msgstr "Информации за документот"
 
@@ -2030,7 +2035,7 @@ msgid ""
 "document now?</qt>"
 msgstr ""
 
-#: main/KoDocumentInfoDlg.cpp:489 main/KoMainWindow.cpp:757
+#: main/KoDocumentInfoDlg.cpp:489 main/KoMainWindow.cpp:760
 #, kde-format
 msgid "%1 (unknown file type)"
 msgstr ""
@@ -2080,7 +2085,7 @@ msgstr ""
 msgid "No"
 msgstr "Избери..."
 
-#: main/KoExistingDocumentPane.cpp:44 main/KoMainWindow.cpp:1202
+#: main/KoExistingDocumentPane.cpp:44 main/KoMainWindow.cpp:1209
 #: main/KoOpenPane.cpp:358 main/KoOpenPane.cpp:362
 #, fuzzy
 msgid "Open Document"
@@ -2146,122 +2151,122 @@ msgstr "Насловна линија:"
 msgid "Shows or hides grid"
 msgstr ""
 
-#: main/KoMainWindow.cpp:154
+#: main/KoMainWindow.cpp:158
 #, fuzzy, kde-format
 msgid "%1 unsaved document (%2)"
 msgstr "Зачувај документ како"
 
-#: main/KoMainWindow.cpp:255
+#: main/KoMainWindow.cpp:259
 msgid "Export as PDF..."
 msgstr ""
 
-#: main/KoMainWindow.cpp:265
+#: main/KoMainWindow.cpp:269
 msgid "Reload"
 msgstr ""
 
-#: main/KoMainWindow.cpp:269
+#: main/KoMainWindow.cpp:273
 msgid "Versions..."
 msgstr ""
 
-#: main/KoMainWindow.cpp:273
+#: main/KoMainWindow.cpp:277
 #, fuzzy
 msgid "I&mport..."
 msgstr "Отстрани приказ"
 
-#: main/KoMainWindow.cpp:277
+#: main/KoMainWindow.cpp:281
 msgid "E&xport..."
 msgstr ""
 
-#: main/KoMainWindow.cpp:308
+#: main/KoMainWindow.cpp:312
 msgid "&Close All Views"
 msgstr "Затвори ги сите прикази"
 
-#: main/KoMainWindow.cpp:315
+#: main/KoMainWindow.cpp:319
 msgid "&Split View"
 msgstr "Раздвои приказ"
 
-#: main/KoMainWindow.cpp:320
+#: main/KoMainWindow.cpp:324
 msgid "&Remove View"
 msgstr "Отстрани приказ"
 
-#: main/KoMainWindow.cpp:326
+#: main/KoMainWindow.cpp:330
 msgid "Full Screen Mode"
 msgstr ""
 
-#: main/KoMainWindow.cpp:331
+#: main/KoMainWindow.cpp:335
 msgid "Splitter &Orientation"
 msgstr "Ориентација на раздвојник:"
 
-#: main/KoMainWindow.cpp:335
+#: main/KoMainWindow.cpp:339
 msgid "&Horizontal"
 msgstr "Хоризонтално"
 
-#: main/KoMainWindow.cpp:335
+#: main/KoMainWindow.cpp:339
 msgid "&Vertical"
 msgstr "Вертикално"
 
-#: main/KoMainWindow.cpp:343
+#: main/KoMainWindow.cpp:347
 msgid "Show Dockers"
 msgstr ""
 
-#: main/KoMainWindow.cpp:344
+#: main/KoMainWindow.cpp:348
 #, fuzzy
 msgid "Hide Dockers"
 msgstr "Насловна линија:"
 
-#: main/KoMainWindow.cpp:351
+#: main/KoMainWindow.cpp:355
 msgid "Dockers"
 msgstr ""
 
-#: main/KoMainWindow.cpp:586
+#: main/KoMainWindow.cpp:589
 #, fuzzy
 msgid "(write protected)"
 msgstr ""
 "\n"
 "Ориентација:"
 
-#: main/KoMainWindow.cpp:590
+#: main/KoMainWindow.cpp:593
 #, kde-format
 msgid "Save as %1"
 msgstr ""
 
-#: main/KoMainWindow.cpp:765
+#: main/KoMainWindow.cpp:768
 #, kde-format
 msgid ""
 "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
 "want to save in this format?</qt>"
 msgstr ""
 
-#: main/KoMainWindow.cpp:768
+#: main/KoMainWindow.cpp:771
 msgid "Confirm Save"
 msgstr ""
 
-#: main/KoMainWindow.cpp:777
+#: main/KoMainWindow.cpp:780
 #, kde-format
 msgid ""
 "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you still "
 "want to export to this format?</qt>"
 msgstr ""
 
-#: main/KoMainWindow.cpp:780
+#: main/KoMainWindow.cpp:783
 msgid "Confirm Export"
 msgstr ""
 
-#: main/KoMainWindow.cpp:781
+#: main/KoMainWindow.cpp:784
 msgid "Export"
 msgstr ""
 
-#: main/KoMainWindow.cpp:864
+#: main/KoMainWindow.cpp:867
 #, fuzzy
 msgid "Save Document As"
 msgstr "Зачувај документ како"
 
-#: main/KoMainWindow.cpp:866
+#: main/KoMainWindow.cpp:869
 #, fuzzy
 msgid "Export Document As"
 msgstr "&Отвори документ"
 
-#: main/KoMainWindow.cpp:924 main/KoMainWindow.cpp:1337
+#: main/KoMainWindow.cpp:927 main/KoMainWindow.cpp:1344
 #, fuzzy
 msgid ""
 "A document with this name already exists.\n"
@@ -2270,31 +2275,31 @@ msgstr ""
 "Документ со ова име веќе постои\n"
 "Дали сакате да го презапишете?"
 
-#: main/KoMainWindow.cpp:926 main/KoMainWindow.cpp:1339
-#: main/KoMainWindow.cpp:1727
+#: main/KoMainWindow.cpp:929 main/KoMainWindow.cpp:1346
+#: main/KoMainWindow.cpp:1740
 msgid "Warning"
 msgstr ""
 
-#: main/KoMainWindow.cpp:1331
+#: main/KoMainWindow.cpp:1338
 msgid "Write PDF"
 msgstr ""
 
-#: main/KoMainWindow.cpp:1621
+#: main/KoMainWindow.cpp:1632
 #, kde-format
 msgid "Show %1 Toolbar"
 msgstr "Покажи %1 алатник"
 
-#: main/KoMainWindow.cpp:1623
+#: main/KoMainWindow.cpp:1634
 #, fuzzy, kde-format
 msgid "Hide %1 Toolbar"
 msgstr "Покажи %1 алатник"
 
-#: main/KoMainWindow.cpp:1695
+#: main/KoMainWindow.cpp:1708
 #, fuzzy, kde-format
 msgid "Document - %1"
 msgstr "Зачувај документ како"
 
-#: main/KoMainWindow.cpp:1725
+#: main/KoMainWindow.cpp:1738
 msgid ""
 "You will lose all changes made since your last save\n"
 "Do you want to continue?"
@@ -2495,6 +2500,14 @@ msgstr "Нема расположиви слики."
 #, fuzzy
 msgid "Use This Template"
 msgstr "Создади шаблон"
+
+#: main/KoToolDocker.cpp:232
+msgid "Toggles showing a title bar"
+msgstr ""
+
+#: main/KoToolDocker.cpp:241
+msgid "Toggles organising the options in tabs or not"
+msgstr ""
 
 #: main/KoVersionDialog.cpp:48
 msgid "Version"
