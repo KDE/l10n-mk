@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcron\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-26 02:53+0100\n"
+"POT-Creation-Date: 2011-01-11 02:34+0100\n"
 "PO-Revision-Date: 2006-01-25 19:01+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -35,24 +35,6 @@ msgstr ""
 msgctxt "User login: errorMessage"
 msgid "User %1: %2"
 msgstr "%H:%M"
-
-#: src/crontablib/ctunit.cpp:172
-msgid ","
-msgstr ", "
-
-#: src/crontablib/ctunit.cpp:173 src/crontablib/cttask.cpp:318
-msgid " and "
-msgstr " и "
-
-#: src/crontablib/ctunit.cpp:176 src/crontablib/cttask.cpp:321
-msgid ", "
-msgstr ", "
-
-#: src/crontablib/ctHelper.cpp:22
-#, fuzzy
-#| msgid "Co&mment:"
-msgid "No comment"
-msgstr "Ко&ментар:"
 
 #: src/crontablib/ctdom.cpp:23 src/crontablib/ctdow.cpp:44
 #: src/crontablib/cttask.cpp:266
@@ -183,37 +165,29 @@ msgstr "30"
 msgid "31st"
 msgstr "31"
 
+#: src/crontablib/ctHelper.cpp:22
+#, fuzzy
+#| msgid "Co&mment:"
+msgid "No comment"
+msgstr "Ко&ментар:"
+
+#: src/crontablib/ctunit.cpp:172
+msgid ","
+msgstr ", "
+
+#: src/crontablib/ctunit.cpp:173 src/crontablib/cttask.cpp:318
+msgid " and "
+msgstr " и "
+
+#: src/crontablib/ctunit.cpp:176 src/crontablib/cttask.cpp:321
+msgid ", "
+msgstr ", "
+
 #: src/crontablib/ctGlobalCron.cpp:39
 #, fuzzy
 #| msgid "Print &all users"
 msgid "All users"
 msgstr "Испечати ги &сите корисници"
-
-#: src/crontablib/ctvariable.cpp:126
-msgid "Override default home folder."
-msgstr "Ја прескокнува стандардната домашна папка."
-
-#: src/crontablib/ctvariable.cpp:129
-msgid "Email output to specified account."
-msgstr "Го праќа излезот на наведениот корисник по е-пошта."
-
-#: src/crontablib/ctvariable.cpp:132
-msgid "Override default shell."
-msgstr "Ја прескокнува стандардната школка."
-
-#: src/crontablib/ctvariable.cpp:135
-msgid "Folders to search for program files."
-msgstr "Папки за пребарување на програмски датотеки."
-
-#: src/crontablib/ctvariable.cpp:138
-msgid "Dynamic libraries location."
-msgstr ""
-
-#: src/crontablib/ctvariable.cpp:141
-#, fuzzy
-#| msgid "Variables"
-msgid "Local Variable"
-msgstr "Променливи"
 
 #: src/crontablib/ctmonth.cpp:23
 #, fuzzy
@@ -272,6 +246,32 @@ msgstr "ноември"
 #: src/crontablib/ctmonth.cpp:33
 msgid "December"
 msgstr "декември"
+
+#: src/crontablib/ctvariable.cpp:126
+msgid "Override default home folder."
+msgstr "Ја прескокнува стандардната домашна папка."
+
+#: src/crontablib/ctvariable.cpp:129
+msgid "Email output to specified account."
+msgstr "Го праќа излезот на наведениот корисник по е-пошта."
+
+#: src/crontablib/ctvariable.cpp:132
+msgid "Override default shell."
+msgstr "Ја прескокнува стандардната школка."
+
+#: src/crontablib/ctvariable.cpp:135
+msgid "Folders to search for program files."
+msgstr "Папки за пребарување на програмски датотеки."
+
+#: src/crontablib/ctvariable.cpp:138
+msgid "Dynamic libraries location."
+msgstr ""
+
+#: src/crontablib/ctvariable.cpp:141
+#, fuzzy
+#| msgid "Variables"
+msgid "Local Variable"
+msgstr "Променливи"
 
 #: src/crontablib/ctdow.cpp:56
 msgid "Mon"
@@ -464,6 +464,55 @@ msgstr "Вк&лучено"
 msgid "Disabled"
 msgstr "Исклучено"
 
+#: src/variableEditorDialog.cpp:60
+#, fuzzy
+#| msgid "Modify Variable"
+msgid "Add or modify a variable"
+msgstr "Измени променлива"
+
+#: src/variableEditorDialog.cpp:64
+#, fuzzy
+#| msgid "&Variable:"
+msgctxt "The environmental variable name ie HOME, MAILTO etc"
+msgid "&Variable:"
+msgstr "&Променлива:"
+
+#: src/variableEditorDialog.cpp:93
+msgid "Va&lue:"
+msgstr "Вре&дност:"
+
+#: src/variableEditorDialog.cpp:102 src/taskEditorDialog.cpp:106
+msgid "&Run as:"
+msgstr "&Изврши како:"
+
+#: src/variableEditorDialog.cpp:120 src/taskEditorDialog.cpp:122
+msgid "Co&mment:"
+msgstr "Ко&ментар:"
+
+#: src/variableEditorDialog.cpp:128
+msgid "&Enable this variable"
+msgstr ""
+
+#: src/variableEditorDialog.cpp:156
+msgid "<i>This variable will be used by scheduled tasks.</i>"
+msgstr ""
+
+#: src/variableEditorDialog.cpp:200
+msgid "<i>This variable is disabled.</i>"
+msgstr ""
+
+#: src/variableEditorDialog.cpp:207
+#, fuzzy
+#| msgid "Please enter the variable name."
+msgid "<i>Please enter the variable name...</i>"
+msgstr "Внесете го името на променливата."
+
+#: src/variableEditorDialog.cpp:214
+#, fuzzy
+#| msgid "Please enter the variable value."
+msgid "<i>Please enter the variable value ...</i>"
+msgstr "Внесете ја вредноста на променливата."
+
 #: src/variablesWidget.cpp:48
 #, fuzzy
 #| msgid "Variables"
@@ -538,55 +587,6 @@ msgstr ""
 #| msgid "Delete the selected task or variable."
 msgid "Delete the selected variable."
 msgstr "Ја брише избраната задача или променлива."
-
-#: src/variableEditorDialog.cpp:60
-#, fuzzy
-#| msgid "Modify Variable"
-msgid "Add or modify a variable"
-msgstr "Измени променлива"
-
-#: src/variableEditorDialog.cpp:64
-#, fuzzy
-#| msgid "&Variable:"
-msgctxt "The environmental variable name ie HOME, MAILTO etc"
-msgid "&Variable:"
-msgstr "&Променлива:"
-
-#: src/variableEditorDialog.cpp:93
-msgid "Va&lue:"
-msgstr "Вре&дност:"
-
-#: src/variableEditorDialog.cpp:102 src/taskEditorDialog.cpp:106
-msgid "&Run as:"
-msgstr "&Изврши како:"
-
-#: src/variableEditorDialog.cpp:120 src/taskEditorDialog.cpp:122
-msgid "Co&mment:"
-msgstr "Ко&ментар:"
-
-#: src/variableEditorDialog.cpp:128
-msgid "&Enable this variable"
-msgstr ""
-
-#: src/variableEditorDialog.cpp:156
-msgid "<i>This variable will be used by scheduled tasks.</i>"
-msgstr ""
-
-#: src/variableEditorDialog.cpp:200
-msgid "<i>This variable is disabled.</i>"
-msgstr ""
-
-#: src/variableEditorDialog.cpp:207
-#, fuzzy
-#| msgid "Please enter the variable name."
-msgid "<i>Please enter the variable name...</i>"
-msgstr "Внесете го името на променливата."
-
-#: src/variableEditorDialog.cpp:214
-#, fuzzy
-#| msgid "Please enter the variable value."
-msgid "<i>Please enter the variable value ...</i>"
-msgstr "Внесете ја вредноста на променливата."
 
 #: src/taskEditorDialog.cpp:76
 #, fuzzy
