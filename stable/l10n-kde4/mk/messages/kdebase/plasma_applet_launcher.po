@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_launcher\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-26 02:55+0100\n"
+"POT-Creation-Date: 2011-02-02 12:18+0100\n"
 "PO-Revision-Date: 2010-01-31 23:34+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -18,92 +18,210 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: simpleapplet/simpleapplet.cpp:193 core/favoritesmodel.cpp:49
-#: core/favoritesmodel.cpp:322 ui/launcher.cpp:116 ui/launcher.cpp:175
+#: applet/applet.cpp:84
+msgid "Kickoff Application Launcher"
+msgstr "Извршувач на апликации Kickoff"
+
+#: applet/applet.cpp:85
+msgid ""
+"Favorites, applications, computer places, recently used items and desktop "
+"sessions"
+msgstr ""
+
+#: applet/applet.cpp:108 simpleapplet/simpleapplet.cpp:345
+#, fuzzy
+#| msgid "Applications"
+msgid "Edit Applications..."
+msgstr "Апликации"
+
+#: applet/applet.cpp:114
+msgid "Switch to Classic Menu Style"
+msgstr "Префрли се на класичниот стил на мени"
+
+#: applet/applet.cpp:159
+msgctxt "General configuration page"
+msgid "General"
+msgstr "Општо"
+
+#: core/applicationmodel.cpp:335
+msgid "Games"
+msgstr "Игри"
+
+#: core/applicationmodel.cpp:425 ui/flipscrollview.cpp:138
+msgid "All Applications"
+msgstr "Сите апликации"
+
+#: core/favoritesmodel.cpp:49 core/favoritesmodel.cpp:322
+#: simpleapplet/simpleapplet.cpp:193 ui/launcher.cpp:116 ui/launcher.cpp:175
 msgid "Favorites"
 msgstr "Омилени"
 
-#: simpleapplet/simpleapplet.cpp:194
-msgid "Bookmarks"
-msgstr "Обележувачи"
-
-#: simpleapplet/simpleapplet.cpp:195 core/systemmodel.cpp:84
-#: core/recentlyusedmodel.cpp:120 ui/launcher.cpp:118 ui/launcher.cpp:205
-msgid "Applications"
-msgstr "Апликации"
-
-#: simpleapplet/simpleapplet.cpp:196 core/systemmodel.cpp:327
-#: ui/launcher.cpp:118 ui/launcher.cpp:239
-msgid "Computer"
-msgstr "Компјутер"
-
-#: simpleapplet/simpleapplet.cpp:197 core/recentlyusedmodel.cpp:186
-#: ui/launcher.cpp:119 ui/launcher.cpp:218
-msgid "Recently Used"
-msgstr "Неодамна користени"
-
-#: simpleapplet/simpleapplet.cpp:198 core/recentlyusedmodel.cpp:190
-msgid "Recently Used Applications"
-msgstr "Неодамна користени апликации"
-
-#: simpleapplet/simpleapplet.cpp:199 core/recentlyusedmodel.cpp:188
-msgid "Recently Used Documents"
-msgstr "Неодамна користени документи"
-
-#: simpleapplet/simpleapplet.cpp:200
-msgid "System Settings"
-msgstr "Системски поставувања"
-
-#: simpleapplet/simpleapplet.cpp:201 core/systemmodel.cpp:215
-msgid "Run Command..."
-msgstr "Изврши наредба..."
-
-#: simpleapplet/simpleapplet.cpp:202 core/leavemodel.cpp:56
-msgid "Switch User"
-msgstr "Смени корисник"
-
-#: simpleapplet/simpleapplet.cpp:203 core/leavemodel.cpp:68
-msgid "Save Session"
-msgstr "Зачувај сесија"
-
-#: simpleapplet/simpleapplet.cpp:204 core/leavemodel.cpp:54
-msgid "Lock Screen"
-msgstr "Заклучи го екранот"
-
-#: simpleapplet/simpleapplet.cpp:205 core/leavemodel.cpp:72
-msgctxt "Puts the system on standby"
-msgid "Standby"
-msgstr ""
-
-#: simpleapplet/simpleapplet.cpp:206 core/leavemodel.cpp:76
-msgid "Hibernate"
-msgstr "Хибернирај"
-
-#: simpleapplet/simpleapplet.cpp:207 core/leavemodel.cpp:80
-msgid "Sleep"
-msgstr "Заспиј"
-
-#: simpleapplet/simpleapplet.cpp:208
-msgctxt "Restart Computer"
-msgid "Restart"
-msgstr "Рестартирај"
-
-#: simpleapplet/simpleapplet.cpp:209 core/leavemodel.cpp:60
-#, fuzzy
-#| msgid "Shutdown"
-msgid "Shut down"
-msgstr "Спуштање"
-
-#: simpleapplet/simpleapplet.cpp:210 core/leavemodel.cpp:48
+#: core/leavemodel.cpp:48 simpleapplet/simpleapplet.cpp:210
 #, fuzzy
 #| msgid "Logout"
 msgid "Log out"
 msgstr "Одјавa"
 
-#: simpleapplet/simpleapplet.cpp:211 core/leavemodel.cpp:105
+#: core/leavemodel.cpp:50
+msgid "End session"
+msgstr "Крај на сесија"
+
+#: core/leavemodel.cpp:52
+msgid "Lock"
+msgstr "Заклучи"
+
+#: core/leavemodel.cpp:54 simpleapplet/simpleapplet.cpp:204
+msgid "Lock Screen"
+msgstr "Заклучи го екранот"
+
+#: core/leavemodel.cpp:56 simpleapplet/simpleapplet.cpp:202
+msgid "Switch User"
+msgstr "Смени корисник"
+
+#: core/leavemodel.cpp:58
+msgid "Start a parallel session as a different user"
+msgstr "Изврши паралелна сесија како друг корисник."
+
+#: core/leavemodel.cpp:60 simpleapplet/simpleapplet.cpp:209
+#, fuzzy
+#| msgid "Shutdown"
+msgid "Shut down"
+msgstr "Спуштање"
+
+#: core/leavemodel.cpp:62
+msgid "Turn off computer"
+msgstr "Исклучи го компјутерот"
+
+#: core/leavemodel.cpp:64
+msgctxt "Restart computer"
+msgid "Restart"
+msgstr "Рестартирај"
+
+#: core/leavemodel.cpp:66
+msgid "Restart Computer"
+msgstr "Рестартирај го компјутерот"
+
+#: core/leavemodel.cpp:68 simpleapplet/simpleapplet.cpp:203
+msgid "Save Session"
+msgstr "Зачувај сесија"
+
+#: core/leavemodel.cpp:70
+msgid "Save current session for next login"
+msgstr "Ја зачувува тековната сесија за наредното најавување"
+
+#: core/leavemodel.cpp:72 simpleapplet/simpleapplet.cpp:205
+msgctxt "Puts the system on standby"
+msgid "Standby"
+msgstr ""
+
+#: core/leavemodel.cpp:74
+msgid "Pause without logging out"
+msgstr "Паузирај без да се одјавиш"
+
+#: core/leavemodel.cpp:76 simpleapplet/simpleapplet.cpp:206
+msgid "Hibernate"
+msgstr "Хибернирај"
+
+#: core/leavemodel.cpp:78
+msgid "Suspend to disk"
+msgstr "Суспендирај на диск"
+
+#: core/leavemodel.cpp:80 simpleapplet/simpleapplet.cpp:207
+msgid "Sleep"
+msgstr "Заспиј"
+
+#: core/leavemodel.cpp:82
+msgid "Suspend to RAM"
+msgstr "Суспендирај во RAM"
+
+#: core/leavemodel.cpp:105 simpleapplet/simpleapplet.cpp:211
 #: ui/launcher.cpp:163
 msgid "Leave"
 msgstr "Оди си"
+
+#: core/leavemodel.cpp:117
+msgid "Session"
+msgstr "Сесија"
+
+#: core/leavemodel.cpp:139
+msgid "System"
+msgstr "Систем"
+
+#: core/models.cpp:121
+msgid "Home Folder"
+msgstr "Домашна папка"
+
+#: core/models.cpp:124
+msgid "Network Folders"
+msgstr "Мрежни папки"
+
+#: core/recentlyusedmodel.cpp:109
+msgid "Documents"
+msgstr "Документи"
+
+#: core/recentlyusedmodel.cpp:120 core/systemmodel.cpp:84
+#: simpleapplet/simpleapplet.cpp:195 ui/launcher.cpp:118 ui/launcher.cpp:205
+msgid "Applications"
+msgstr "Апликации"
+
+#: core/recentlyusedmodel.cpp:186 simpleapplet/simpleapplet.cpp:197
+#: ui/launcher.cpp:119 ui/launcher.cpp:218
+msgid "Recently Used"
+msgstr "Неодамна користени"
+
+#: core/recentlyusedmodel.cpp:188 simpleapplet/simpleapplet.cpp:199
+msgid "Recently Used Documents"
+msgstr "Неодамна користени документи"
+
+#: core/recentlyusedmodel.cpp:190 simpleapplet/simpleapplet.cpp:198
+msgid "Recently Used Applications"
+msgstr "Неодамна користени апликации"
+
+#: core/systemmodel.cpp:85
+msgid "Places"
+msgstr "Места"
+
+#: core/systemmodel.cpp:86
+msgid "Removable Storage"
+msgstr "Подвижен носач"
+
+#: core/systemmodel.cpp:87
+msgid "Storage"
+msgstr "Складирање"
+
+#: core/systemmodel.cpp:215 simpleapplet/simpleapplet.cpp:201
+msgid "Run Command..."
+msgstr "Изврши наредба..."
+
+#: core/systemmodel.cpp:219
+msgid "Run a command or a search query"
+msgstr "Извршува наредба или пребарување..."
+
+#: core/systemmodel.cpp:327 simpleapplet/simpleapplet.cpp:196
+#: ui/launcher.cpp:118 ui/launcher.cpp:239
+msgid "Computer"
+msgstr "Компјутер"
+
+#: main.cpp:32
+msgid "Kickoff"
+msgstr "Kickoff"
+
+#: main.cpp:33
+msgid "Application Launcher"
+msgstr "Извршувач на апликации"
+
+#: simpleapplet/simpleapplet.cpp:194
+msgid "Bookmarks"
+msgstr "Обележувачи"
+
+#: simpleapplet/simpleapplet.cpp:200
+msgid "System Settings"
+msgstr "Системски поставувања"
+
+#: simpleapplet/simpleapplet.cpp:208
+msgctxt "Restart Computer"
+msgid "Restart"
+msgstr "Рестартирај"
 
 #: simpleapplet/simpleapplet.cpp:267
 msgid "Application Launcher Menu"
@@ -114,12 +232,6 @@ msgstr "Мени со извршувач на апликации"
 #| msgid "Kickoff Application Launcher"
 msgid "Switch to Application Launcher Style"
 msgstr "Извршувач на апликации Kickoff"
-
-#: simpleapplet/simpleapplet.cpp:345 applet/applet.cpp:108
-#, fuzzy
-#| msgid "Applications"
-msgid "Edit Applications..."
-msgstr "Апликации"
 
 #: simpleapplet/simpleapplet.cpp:445
 msgid "View"
@@ -174,110 +286,6 @@ msgstr "Опции"
 #: simpleapplet/simpleapplet.cpp:621
 msgid "Actions"
 msgstr "Дејства"
-
-#: applet/applet.cpp:84
-msgid "Kickoff Application Launcher"
-msgstr "Извршувач на апликации Kickoff"
-
-#: applet/applet.cpp:85
-msgid ""
-"Favorites, applications, computer places, recently used items and desktop "
-"sessions"
-msgstr ""
-
-#: applet/applet.cpp:114
-msgid "Switch to Classic Menu Style"
-msgstr "Префрли се на класичниот стил на мени"
-
-#: applet/applet.cpp:159
-msgctxt "General configuration page"
-msgid "General"
-msgstr "Општо"
-
-#: core/systemmodel.cpp:85
-msgid "Places"
-msgstr "Места"
-
-#: core/systemmodel.cpp:86
-msgid "Removable Storage"
-msgstr "Подвижен носач"
-
-#: core/systemmodel.cpp:87
-msgid "Storage"
-msgstr "Складирање"
-
-#: core/systemmodel.cpp:219
-msgid "Run a command or a search query"
-msgstr "Извршува наредба или пребарување..."
-
-#: core/leavemodel.cpp:50
-msgid "End session"
-msgstr "Крај на сесија"
-
-#: core/leavemodel.cpp:52
-msgid "Lock"
-msgstr "Заклучи"
-
-#: core/leavemodel.cpp:58
-msgid "Start a parallel session as a different user"
-msgstr "Изврши паралелна сесија како друг корисник."
-
-#: core/leavemodel.cpp:62
-msgid "Turn off computer"
-msgstr "Исклучи го компјутерот"
-
-#: core/leavemodel.cpp:64
-msgctxt "Restart computer"
-msgid "Restart"
-msgstr "Рестартирај"
-
-#: core/leavemodel.cpp:66
-msgid "Restart Computer"
-msgstr "Рестартирај го компјутерот"
-
-#: core/leavemodel.cpp:70
-msgid "Save current session for next login"
-msgstr "Ја зачувува тековната сесија за наредното најавување"
-
-#: core/leavemodel.cpp:74
-msgid "Pause without logging out"
-msgstr "Паузирај без да се одјавиш"
-
-#: core/leavemodel.cpp:78
-msgid "Suspend to disk"
-msgstr "Суспендирај на диск"
-
-#: core/leavemodel.cpp:82
-msgid "Suspend to RAM"
-msgstr "Суспендирај во RAM"
-
-#: core/leavemodel.cpp:117
-msgid "Session"
-msgstr "Сесија"
-
-#: core/leavemodel.cpp:139
-msgid "System"
-msgstr "Систем"
-
-#: core/models.cpp:121
-msgid "Home Folder"
-msgstr "Домашна папка"
-
-#: core/models.cpp:124
-msgid "Network Folders"
-msgstr "Мрежни папки"
-
-#: core/applicationmodel.cpp:335
-msgid "Games"
-msgstr "Игри"
-
-#: core/applicationmodel.cpp:425 ui/flipscrollview.cpp:138
-msgid "All Applications"
-msgstr "Сите апликации"
-
-#: core/recentlyusedmodel.cpp:109
-msgid "Documents"
-msgstr "Документи"
 
 #: ui/contextmenufactory.cpp:83
 msgid "Advanced"
@@ -339,14 +347,6 @@ msgstr "<b>%1 (%2)</b> на <b>%3</b>"
 msgctxt "Label of the search bar textedit"
 msgid "Search:"
 msgstr "Барање:"
-
-#: main.cpp:32
-msgid "Kickoff"
-msgstr "Kickoff"
-
-#: main.cpp:33
-msgid "Application Launcher"
-msgstr "Извршувач на апликации"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
