@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-26 03:29+0100\n"
+"POT-Creation-Date: 2011-02-02 03:38+0100\n"
 "PO-Revision-Date: 2000-10-02 22:00+0100\n"
 "Last-Translator: Damjan Janevski <miopa@usa.net>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -52,11 +52,6 @@ msgstr "Создади шаблон"
 msgid "A simple path shape"
 msgstr ""
 
-#: flake/KoToolBase.cpp:172 flake/KoToolManager.cpp:351
-#, fuzzy
-msgid "Tool Options"
-msgstr "Зачувај документ како"
-
 #: flake/KoShapeController.cpp:64 kotext/InsertTextReferenceAction.cpp:63
 #: kotext/InsertVariableAction.cpp:51
 #: main/rdf/InsertSemanticObjectCreateAction.cpp:59
@@ -65,15 +60,30 @@ msgstr "Зачувај документ како"
 msgid "%1 Options"
 msgstr ""
 
+#: flake/KoShapePaste.cpp:100
+#, fuzzy
+msgid "Paste Shapes"
+msgstr "Создади шаблон"
+
+#: flake/KoToolBase.cpp:172 flake/KoToolManager.cpp:351
+#, fuzzy
+msgid "Tool Options"
+msgstr "Зачувај документ како"
+
 #: flake/KoToolManager.cpp:350
 #, kde-format
 msgid "Active tool: %1"
 msgstr ""
 
-#: flake/KoShapePaste.cpp:100
+#: flake/commands/KoConnectionShapeTypeCommand.cpp:31
 #, fuzzy
-msgid "Paste Shapes"
-msgstr "Создади шаблон"
+msgid "Change Connection"
+msgstr "Рабови на страна"
+
+#: flake/commands/KoParameterHandleMoveCommand.cpp:34
+#, fuzzy
+msgid "Change Parameter"
+msgstr "Отстрани табулатор"
 
 #: flake/commands/KoParameterToPathCommand.cpp:43
 #: flake/commands/KoParameterToPathCommand.cpp:52
@@ -255,15 +265,32 @@ msgstr "По Избор"
 msgid "Remove Subpath"
 msgstr "Отстрани група"
 
-#: flake/commands/KoConnectionShapeTypeCommand.cpp:31
+#: flake/tools/KoCreatePathTool.cpp:369 flake/tools/KoPathTool.cpp:181
+msgid "Snapping"
+msgstr ""
+
+#: flake/tools/KoCreatePathTool.cpp:374
+msgid "Angle snapping delta"
+msgstr ""
+
+#: flake/tools/KoCreatePathTool.cpp:379
 #, fuzzy
-msgid "Change Connection"
+msgid "Angle Constraints"
 msgstr "Рабови на страна"
 
-#: flake/commands/KoParameterHandleMoveCommand.cpp:34
+#: flake/tools/KoCreatePathToolFactory.cpp:33
 #, fuzzy
-msgid "Change Parameter"
-msgstr "Отстрани табулатор"
+msgid "Create Path"
+msgstr "Создади шаблон"
+
+#: flake/tools/KoCreateShapesToolFactory.cpp:33
+#, fuzzy
+msgid "Create object"
+msgstr "&Отвори документ"
+
+#: flake/tools/KoPanToolFactory.cpp:29
+msgid "Pan"
+msgstr ""
 
 #: flake/tools/KoPathSegmentChangeStrategy.cpp:145
 #, fuzzy
@@ -335,10 +362,6 @@ msgstr ""
 msgid "Line/Curve"
 msgstr ""
 
-#: flake/tools/KoPathTool.cpp:181 flake/tools/KoCreatePathTool.cpp:369
-msgid "Snapping"
-msgstr ""
-
 #: flake/tools/KoPathTool.cpp:515
 msgid "Drag to move handle."
 msgstr ""
@@ -361,29 +384,6 @@ msgstr ""
 
 #: flake/tools/KoPathToolFactory.cpp:29
 msgid "Path editing tool"
-msgstr ""
-
-#: flake/tools/KoCreatePathTool.cpp:374
-msgid "Angle snapping delta"
-msgstr ""
-
-#: flake/tools/KoCreatePathTool.cpp:379
-#, fuzzy
-msgid "Angle Constraints"
-msgstr "Рабови на страна"
-
-#: flake/tools/KoCreatePathToolFactory.cpp:33
-#, fuzzy
-msgid "Create Path"
-msgstr "Создади шаблон"
-
-#: flake/tools/KoCreateShapesToolFactory.cpp:33
-#, fuzzy
-msgid "Create object"
-msgstr "&Отвори документ"
-
-#: flake/tools/KoPanToolFactory.cpp:29
-msgid "Pan"
 msgstr ""
 
 #: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:248
@@ -979,6 +979,26 @@ msgstr[2] ""
 msgid "Found no match"
 msgstr ""
 
+#: kotext/KoReplaceStrategy.cpp:58
+msgid ""
+"Found no match\n"
+"\n"
+"No text was replaced"
+msgstr ""
+
+#: kotext/KoReplaceStrategy.cpp:61
+#, kde-format
+msgid "1 replacement made"
+msgid_plural "%1 replacements made"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: kotext/KoReplaceStrategy.cpp:74
+#, fuzzy, kde-format
+msgid "Replace %1 with %2?"
+msgstr "Отстрани приказ"
+
 #: kotext/KoText.cpp:29
 msgctxt "Underline Style"
 msgid "None"
@@ -1128,26 +1148,6 @@ msgstr "Рабови на страна"
 #, fuzzy
 msgid "Format"
 msgstr "Формат на страна"
-
-#: kotext/KoReplaceStrategy.cpp:58
-msgid ""
-"Found no match\n"
-"\n"
-"No text was replaced"
-msgstr ""
-
-#: kotext/KoReplaceStrategy.cpp:61
-#, kde-format
-msgid "1 replacement made"
-msgid_plural "%1 replacements made"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: kotext/KoReplaceStrategy.cpp:74
-#, fuzzy, kde-format
-msgid "Replace %1 with %2?"
-msgstr "Отстрани приказ"
 
 #: main/KoApplication.cpp:77
 msgid "Only print and exit"
@@ -2119,6 +2119,21 @@ msgstr ""
 msgid "Reference"
 msgstr ""
 
+#: main/rdf/KoDocumentRdfEditWidget.cpp:270
+#, kde-format
+msgctxt "statement is an Rdf related term"
+msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
+msgid_plural ""
+"<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: main/rdf/KoDocumentRdfEditWidget.cpp:273
+msgctxt "statement is an Rdf related term"
+msgid "Discard invalid statements?"
+msgstr ""
+
 #: main/rdf/KoRdfCalendarEvent.cpp:201
 msgid "Area"
 msgstr ""
@@ -2289,21 +2304,6 @@ msgstr "Избери..."
 
 #: main/rdf/KoSopranoTableModel.cpp:140
 msgid "Stored In"
-msgstr ""
-
-#: main/rdf/KoDocumentRdfEditWidget.cpp:270
-#, kde-format
-msgctxt "statement is an Rdf related term"
-msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
-msgid_plural ""
-"<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: main/rdf/KoDocumentRdfEditWidget.cpp:273
-msgctxt "statement is an Rdf related term"
-msgid "Discard invalid statements?"
 msgstr ""
 
 #: main/config/KoConfigDocumentPage.cpp:75

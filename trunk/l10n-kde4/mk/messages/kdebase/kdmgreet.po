@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdmgreet\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-11 02:36+0100\n"
+"POT-Creation-Date: 2011-02-02 03:06+0100\n"
 "PO-Revision-Date: 2008-12-24 11:36+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -20,105 +20,78 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: themer/kdmlabel.cpp:247
+#: kchooser.cpp:59
+msgctxt "@action:inmenu"
+msgid "&Local Login"
+msgstr "&Локална најава"
+
+#: kchooser.cpp:63
+msgid "XDMCP Host Menu"
+msgstr "Мени на XDMCP-серверот"
+
+#: kchooser.cpp:73
+msgctxt "@title:column"
+msgid "Hostname"
+msgstr "Име на сервер"
+
+#: kchooser.cpp:74
+msgctxt "@title:column ... of named host"
+msgid "Status"
+msgstr "Статус"
+
+#: kchooser.cpp:82
+msgctxt "XDMCP server"
+msgid "Hos&t:"
+msgstr "Сер&вер:"
+
+#: kchooser.cpp:84
 msgctxt "@action:button"
-msgid "Lan_guage"
-msgstr "_Јазик"
+msgid "A&dd"
+msgstr "&Додај"
 
-#: themer/kdmlabel.cpp:248
+#: kchooser.cpp:93
 msgctxt "@action:button"
-msgid "Session _Type"
-msgstr "_Тип на сесија"
+msgid "&Accept"
+msgstr "Приф&ати"
 
-#: themer/kdmlabel.cpp:249
+#: kchooser.cpp:95
 msgctxt "@action:button"
-msgid "_Menu"
-msgstr "_Мени"
+msgid "&Refresh"
+msgstr "О&свежи"
 
-#. i18n("Actions");
-#: themer/kdmlabel.cpp:250
-msgctxt "@action:button ... from XDMCP server"
-msgid "Disconn_ect"
-msgstr "Отповрз_и"
-
-#: themer/kdmlabel.cpp:251
+#: kchooser.cpp:105 kgreeter.cpp:802
 msgctxt "@action:button"
-msgid "_Quit"
-msgstr "_Напушти"
+msgid "&Menu"
+msgstr "&Мени"
 
-#: themer/kdmlabel.cpp:252
-msgctxt "@action:button"
-msgid "Power o_ff"
-msgstr "И_склучи"
+#: kchooser.cpp:203
+msgctxt "hostname or status"
+msgid "<unknown>"
+msgstr "<непознато>"
 
-#: themer/kdmlabel.cpp:254
-msgctxt "@action:button"
-msgid "Re_boot"
-msgstr "_Рестартирај"
-
-#: themer/kdmlabel.cpp:255
-msgctxt "@action:button"
-msgid "_Remote login"
-msgstr "_Најави се оддалеку"
-
-#: themer/kdmlabel.cpp:256
-msgid "Caps Lock is enabled"
-msgstr "Caps Lock е вклучен"
-
-#: themer/kdmlabel.cpp:257
-msgid "User %u will log in in %t"
-msgstr "Корисникот %u ќе се најави за %t"
-
-#: themer/kdmlabel.cpp:258
-msgid "Welcome to %h"
-msgstr "Добредојдовте на %h"
-
-#: themer/kdmlabel.cpp:259
-msgid "_Domain:"
-msgstr "_Домен:"
-
-#: themer/kdmlabel.cpp:260
-msgid "_Username:"
-msgstr "_Корисник:"
-
-#: themer/kdmlabel.cpp:261
-msgid "_Password:"
-msgstr "_Лозинка:"
-
-#: themer/kdmlabel.cpp:262
-msgctxt "@action:button"
-msgid "_Login"
-msgstr "_Најава"
-
-#: themer/kdmlabel.cpp:293
+#: kchooser.cpp:242
 #, kde-format
-msgctxt "will login in ..."
-msgid "1 second"
-msgid_plural "%1 seconds"
-msgstr[0] "%1 секунда"
-msgstr[1] "%1 секунди"
-msgstr[2] "%1 секунди"
+msgid "Unknown host %1"
+msgstr "Непознат сервер %1"
 
-#: themer/kdmlabel.cpp:301
-#, no-c-format
-msgctxt "date format"
-msgid "%a %d %B"
-msgstr "%d %a %B"
+#: kconsole.cpp:70
+msgid "*** Cannot connect to console log ***"
+msgstr "*** Не можам да се поврзам на дневникот на конзолата ***"
 
-#: themer/kdmthemer.cpp:67
-#, kde-format
-msgid "Cannot open theme file %1"
-msgstr "Не можам да ја отворам датотеката со тема %1"
+#: kconsole.cpp:154
+msgid ""
+"\n"
+"*** Lost connection with console log ***"
+msgstr ""
+"\n"
+"*** Изгубена е врската со дневникот на конзолата ***"
 
-#: themer/kdmthemer.cpp:72
-#, kde-format
-msgid "Cannot parse theme file %1"
-msgstr "Не можам да ја анализирам датотеката со тема %1"
-
-#: themer/kdmthemer.cpp:79
-#, kde-format
-msgid "%1 does not seem to be a correct theme file"
-msgstr "Изгледа дека „%1“ не е исправна датотека со тема"
+#: kdmconfig.cpp:131
+msgctxt ""
+"@item:intext substitution for an undefined %X placeholder wrongly given in "
+"the config file 'kdmrc', telling the user to fix it"
+msgid "[fix kdmrc]"
+msgstr "[поправи го kdmrc]"
 
 #: kdmshutdown.cpp:90
 msgid "Root authorization required."
@@ -347,51 +320,6 @@ msgctxt "session (location)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: utils.cpp:87
-#, kde-format
-msgctxt "user: ..."
-msgid "%2: TTY login"
-msgid_plural "%2: %1 TTY logins"
-msgstr[0] "%2: %1 TTY-најава"
-msgstr[1] "%2: %1 TTY-најави"
-msgstr[2] "%2: %1 TTY-најави"
-
-#: utils.cpp:99
-msgctxt "... session"
-msgid "Unused"
-msgstr "Не е користено"
-
-#: utils.cpp:101
-#, kde-format
-msgctxt "user: session type"
-msgid "%1: %2"
-msgstr "%1: %2"
-
-#: utils.cpp:103
-#, kde-format
-msgctxt "... host"
-msgid "X login on %1"
-msgstr "X-најава на %1"
-
-#: krootimage.cpp:330
-msgid "KRootImage"
-msgstr "KRootImage"
-
-#: krootimage.cpp:331
-msgid "Fancy desktop background for kdm"
-msgstr "Стилизирана подлога за kdm"
-
-#: krootimage.cpp:334
-msgid "Name of the configuration file"
-msgstr "Име на датотеката со конфигурација"
-
-#: kdmconfig.cpp:131
-msgctxt ""
-"@item:intext substitution for an undefined %X placeholder wrongly given in "
-"the config file 'kdmrc', telling the user to fix it"
-msgid "[fix kdmrc]"
-msgstr "[поправи го kdmrc]"
-
 #: kgreeter.cpp:482
 msgctxt "@item:inlistbox session type"
 msgid "Default"
@@ -441,11 +369,6 @@ msgctxt "@action:button"
 msgid "L&ogin"
 msgstr "&Најави се"
 
-#: kgreeter.cpp:802 kchooser.cpp:105
-msgctxt "@action:button"
-msgid "&Menu"
-msgstr "&Мени"
-
 #: kgreeter.cpp:833 kgreeter.cpp:970
 msgctxt "@title:menu"
 msgid "Session &Type"
@@ -464,67 +387,6 @@ msgstr "&Најави се оддалеку"
 #: kgreeter.cpp:921 kgverify.cpp:1085
 msgid "Login failed"
 msgstr "Најавата не успеа"
-
-#: kchooser.cpp:59
-msgctxt "@action:inmenu"
-msgid "&Local Login"
-msgstr "&Локална најава"
-
-#: kchooser.cpp:63
-msgid "XDMCP Host Menu"
-msgstr "Мени на XDMCP-серверот"
-
-#: kchooser.cpp:73
-msgctxt "@title:column"
-msgid "Hostname"
-msgstr "Име на сервер"
-
-#: kchooser.cpp:74
-msgctxt "@title:column ... of named host"
-msgid "Status"
-msgstr "Статус"
-
-#: kchooser.cpp:82
-msgctxt "XDMCP server"
-msgid "Hos&t:"
-msgstr "Сер&вер:"
-
-#: kchooser.cpp:84
-msgctxt "@action:button"
-msgid "A&dd"
-msgstr "&Додај"
-
-#: kchooser.cpp:93
-msgctxt "@action:button"
-msgid "&Accept"
-msgstr "Приф&ати"
-
-#: kchooser.cpp:95
-msgctxt "@action:button"
-msgid "&Refresh"
-msgstr "О&свежи"
-
-#: kchooser.cpp:203
-msgctxt "hostname or status"
-msgid "<unknown>"
-msgstr "<непознато>"
-
-#: kchooser.cpp:242
-#, kde-format
-msgid "Unknown host %1"
-msgstr "Непознат сервер %1"
-
-#: kconsole.cpp:70
-msgid "*** Cannot connect to console log ***"
-msgstr "*** Не можам да се поврзам на дневникот на конзолата ***"
-
-#: kconsole.cpp:154
-msgid ""
-"\n"
-"*** Lost connection with console log ***"
-msgstr ""
-"\n"
-"*** Изгубена е врската со дневникот на конзолата ***"
 
 #: kgverify.cpp:187
 msgid "No greeter widget plugin loaded. Check the configuration."
@@ -648,6 +510,144 @@ msgstr "Темата не е употреблива со методот за п�
 msgctxt "@title:window"
 msgid "<qt><b>Changing authentication token</b></qt>"
 msgstr "<qt><b>Менувам симбол за проверка за автентичност</b></qt>"
+
+#: krootimage.cpp:330
+msgid "KRootImage"
+msgstr "KRootImage"
+
+#: krootimage.cpp:331
+msgid "Fancy desktop background for kdm"
+msgstr "Стилизирана подлога за kdm"
+
+#: krootimage.cpp:334
+msgid "Name of the configuration file"
+msgstr "Име на датотеката со конфигурација"
+
+#: themer/kdmlabel.cpp:247
+msgctxt "@action:button"
+msgid "Lan_guage"
+msgstr "_Јазик"
+
+#: themer/kdmlabel.cpp:248
+msgctxt "@action:button"
+msgid "Session _Type"
+msgstr "_Тип на сесија"
+
+#: themer/kdmlabel.cpp:249
+msgctxt "@action:button"
+msgid "_Menu"
+msgstr "_Мени"
+
+#. i18n("Actions");
+#: themer/kdmlabel.cpp:250
+msgctxt "@action:button ... from XDMCP server"
+msgid "Disconn_ect"
+msgstr "Отповрз_и"
+
+#: themer/kdmlabel.cpp:251
+msgctxt "@action:button"
+msgid "_Quit"
+msgstr "_Напушти"
+
+#: themer/kdmlabel.cpp:252
+msgctxt "@action:button"
+msgid "Power o_ff"
+msgstr "И_склучи"
+
+#: themer/kdmlabel.cpp:254
+msgctxt "@action:button"
+msgid "Re_boot"
+msgstr "_Рестартирај"
+
+#: themer/kdmlabel.cpp:255
+msgctxt "@action:button"
+msgid "_Remote login"
+msgstr "_Најави се оддалеку"
+
+#: themer/kdmlabel.cpp:256
+msgid "Caps Lock is enabled"
+msgstr "Caps Lock е вклучен"
+
+#: themer/kdmlabel.cpp:257
+msgid "User %u will log in in %t"
+msgstr "Корисникот %u ќе се најави за %t"
+
+#: themer/kdmlabel.cpp:258
+msgid "Welcome to %h"
+msgstr "Добредојдовте на %h"
+
+#: themer/kdmlabel.cpp:259
+msgid "_Domain:"
+msgstr "_Домен:"
+
+#: themer/kdmlabel.cpp:260
+msgid "_Username:"
+msgstr "_Корисник:"
+
+#: themer/kdmlabel.cpp:261
+msgid "_Password:"
+msgstr "_Лозинка:"
+
+#: themer/kdmlabel.cpp:262
+msgctxt "@action:button"
+msgid "_Login"
+msgstr "_Најава"
+
+#: themer/kdmlabel.cpp:293
+#, kde-format
+msgctxt "will login in ..."
+msgid "1 second"
+msgid_plural "%1 seconds"
+msgstr[0] "%1 секунда"
+msgstr[1] "%1 секунди"
+msgstr[2] "%1 секунди"
+
+#: themer/kdmlabel.cpp:301
+#, no-c-format
+msgctxt "date format"
+msgid "%a %d %B"
+msgstr "%d %a %B"
+
+#: themer/kdmthemer.cpp:67
+#, kde-format
+msgid "Cannot open theme file %1"
+msgstr "Не можам да ја отворам датотеката со тема %1"
+
+#: themer/kdmthemer.cpp:72
+#, kde-format
+msgid "Cannot parse theme file %1"
+msgstr "Не можам да ја анализирам датотеката со тема %1"
+
+#: themer/kdmthemer.cpp:79
+#, kde-format
+msgid "%1 does not seem to be a correct theme file"
+msgstr "Изгледа дека „%1“ не е исправна датотека со тема"
+
+#: utils.cpp:87
+#, kde-format
+msgctxt "user: ..."
+msgid "%2: TTY login"
+msgid_plural "%2: %1 TTY logins"
+msgstr[0] "%2: %1 TTY-најава"
+msgstr[1] "%2: %1 TTY-најави"
+msgstr[2] "%2: %1 TTY-најави"
+
+#: utils.cpp:99
+msgctxt "... session"
+msgid "Unused"
+msgstr "Не е користено"
+
+#: utils.cpp:101
+#, kde-format
+msgctxt "user: session type"
+msgid "%1: %2"
+msgstr "%1: %2"
+
+#: utils.cpp:103
+#, kde-format
+msgctxt "... host"
+msgid "X login on %1"
+msgstr "X-најава на %1"
 
 #~ msgid "Abort S&ession"
 #~ msgstr "Прекини ја с&есијата"

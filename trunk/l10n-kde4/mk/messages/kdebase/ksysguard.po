@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-11 02:36+0100\n"
+"POT-Creation-Date: 2011-02-02 03:07+0100\n"
 "PO-Revision-Date: 2010-01-30 17:32+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -21,19 +21,322 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
+#: HostConnector.cc:44
+msgid "Connect Host"
+msgstr "Поврзете се со компјутер"
+
+#: HostConnector.cc:55
+msgid "Host:"
+msgstr "Компјутер:"
+
+#: HostConnector.cc:65
+msgid "Enter the name of the host you want to connect to."
+msgstr "Внесете го името на компјутерот со кој сакате да се поврзете."
+
+#: HostConnector.cc:71
+msgid "Connection Type"
+msgstr "Тип на врска"
+
+#: HostConnector.cc:77
+msgid "ssh"
+msgstr "ssh"
+
+#: HostConnector.cc:80
+msgid "Select this to use the secure shell to login to the remote host."
+msgstr ""
+"Изберете го ова за да користите secure shell за да се најавите на "
+"оддалечениот компјутер."
+
+#: HostConnector.cc:83
+msgid "rsh"
+msgstr "rsh"
+
+#: HostConnector.cc:84
+msgid "Select this to use the remote shell to login to the remote host."
+msgstr ""
+"Изберете го ова за да користите remote shell за да се најавите на "
+"оддалечениот компјутер."
+
+#: HostConnector.cc:87
+msgid "Daemon"
+msgstr "Даемон"
+
+#: HostConnector.cc:88
+msgid ""
+"Select this if you want to connect to a ksysguard daemon that is running on "
+"the machine you want to connect to, and is listening for client requests."
+msgstr ""
+"Изберете го ова ако сакате да се поврзете со даемонот ksysguard којшто "
+"работи на машината со која сакате да се поврзете и слуша за барања од "
+"клиенти."
+
+#: HostConnector.cc:91
+msgid "Custom command"
+msgstr "Сопствена команда"
+
+#: HostConnector.cc:92
+msgid ""
+"Select this to use the command you entered below to start ksysguardd on the "
+"remote host."
+msgstr ""
+"Изберете го ова за да го стартувате ksysguardd на оддалечениот компјутер со "
+"командата која сте ја внеле подолу."
+
+#: HostConnector.cc:95
+msgid "Port:"
+msgstr "Порта:"
+
+#: HostConnector.cc:102
+msgid ""
+"Enter the port number on which the ksysguard daemon is listening for "
+"connections."
+msgstr ""
+"Внесете го бројот на портата на којашто даемонот ksysguard слуша за "
+"поврзувања."
+
+#: HostConnector.cc:105
+msgid "e.g.  3112"
+msgstr "пр.  3112"
+
+#: HostConnector.cc:108
+msgid "Command:"
+msgstr "Команда:"
+
+#: HostConnector.cc:117
+msgid "Enter the command that runs ksysguardd on the host you want to monitor."
+msgstr ""
+"Внесете ја командата која ќе го изврши ksysguardd на компјутерот што сакате "
+"да го следите."
+
+#: HostConnector.cc:121
+msgid "e.g. ssh -l root remote.host.org ksysguardd"
+msgstr "пр. ssh -l root remote.host.org ksysguardd"
+
+#: SensorBrowser.cc:117
+msgid "Sensor Browser"
+msgstr "Прелистувач на сензори"
+
+#: SensorBrowser.cc:473
+msgid "Drag sensors to empty cells of a worksheet "
+msgstr "Одвлечете ги сензорите во празни полиња на работниот лист "
+
+#: SensorBrowser.cc:474
+msgid ""
+"The sensor browser lists the connected hosts and the sensors that they "
+"provide. Click and drag sensors into drop zones of a worksheet. A display "
+"will appear that visualizes the values provided by the sensor. Some sensor "
+"displays can display values of multiple sensors. Simply drag other sensors "
+"on to the display to add more sensors."
+msgstr ""
+"Прелистувачот на сензори ги прикажува поврзаните компјутери и сензорите што "
+"тие ги нудат. Кликнете и одвлечете ги сензорите во зоните за испуштање на "
+"работниот лист. Ќе се појави приказ кој ги визуелизира вредностите што се "
+"добиваат од сензорите. Некои прикази на сензори можат да прикажат вредности "
+"од повеќе сензори. Само одвлечете други сензори на приказот за да додадете "
+"нови сензори."
+
+#: SensorDisplayLib/DancingBars.cc:96 SensorDisplayLib/FancyPlotter.cc:281
+msgid "OK"
+msgstr "Во ред"
+
+#: SensorDisplayLib/DancingBars.cc:96 SensorDisplayLib/FancyPlotter.cc:281
+#: SensorDisplayLib/FancyPlotter.cc:515 SensorDisplayLib/FancyPlotter.cc:585
+msgid "Error"
+msgstr "Грешка"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:43
+msgid "Edit BarGraph Preferences"
+msgstr "Уредете ги параметрите за графиците со линии"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:52
+msgid "Range"
+msgstr "Опсег"
+
+#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
+#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
+#: SensorDisplayLib/DancingBarsSettings.cc:57 WorkSheetSettings.cc:50 rc.cpp:5
+#: rc.cpp:116
+msgid "Title"
+msgstr "Наслов"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:35
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, m_title)
+#: SensorDisplayLib/DancingBarsSettings.cc:62
+#: SensorDisplayLib/FancyPlotterSettings.cc:73 rc.cpp:47
+msgid "Enter the title of the display here."
+msgstr "Внесете го тука насловот на приказот."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:67
+msgid "Display Range"
+msgstr "Опсег на приказот"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:72
+#: SensorDisplayLib/FancyPlotterSettings.cc:101
+msgid "Minimum value:"
+msgstr "Минимална вредност:"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:80
+msgid ""
+"Enter the minimum value for the display here. If both values are 0, "
+"automatic range detection is enabled."
+msgstr ""
+"Внесете ја тука минималната вредност на приказот. Ако двете вредности се 0 "
+"се овозможува автоматска детекција на опсегот."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:84
+#: SensorDisplayLib/FancyPlotterSettings.cc:112
+msgid "Maximum value:"
+msgstr "Максимална вредност:"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:92
+msgid ""
+"Enter the maximum value for the display here. If both values are 0, "
+"automatic range detection is enabled."
+msgstr ""
+"Внесете ја тука максималната вредност на приказот. Ако двете вредности се 0 "
+"се овозможува автоматска детекција на опсегот."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:102
+msgid "Alarms"
+msgstr "Аларми"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:59
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
+#: SensorDisplayLib/DancingBarsSettings.cc:107 rc.cpp:92
+msgid "Alarm for Minimum Value"
+msgstr "Аларм за минималната вредност"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:112
+#: SensorDisplayLib/DancingBarsSettings.cc:135
+msgid "Enable alarm"
+msgstr "Овозможи аларм"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:56
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:71
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
+#: SensorDisplayLib/DancingBarsSettings.cc:113 rc.cpp:56 rc.cpp:98
+msgid "Enable the minimum value alarm."
+msgstr "Го овозможува алармот за минималната вредност."
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:97
+#. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
+#: SensorDisplayLib/DancingBarsSettings.cc:116 rc.cpp:101
+msgid "Lower limit:"
+msgstr "Долна граница:"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:123
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1_2)
+#: SensorDisplayLib/DancingBarsSettings.cc:130 rc.cpp:104
+msgid "Alarm for Maximum Value"
+msgstr "Аларм за максималната вредност"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:115
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:135
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
+#: SensorDisplayLib/DancingBarsSettings.cc:136 rc.cpp:65 rc.cpp:110
+msgid "Enable the maximum value alarm."
+msgstr "Го овозможува алармот за максималната вредност."
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:161
+#. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
+#: SensorDisplayLib/DancingBarsSettings.cc:139 rc.cpp:113
+msgid "Upper limit:"
+msgstr "Горна граница:"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:156
+msgctxt "@title:tab Appearance of the bar graph"
+msgid "Look"
+msgstr "Изглед"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:161
+msgid "Normal bar color:"
+msgstr "Боја на нормална линија:"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:168
+msgid "Out-of-range color:"
+msgstr "Боја за „надвор од опсег“:"
+
+#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:77
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#. i18n: file: SensorDisplayLib/LogFileSettings.ui:74
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:228
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
+#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:64
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: SensorDisplayLib/DancingBarsSettings.cc:175 SensorDisplayLib/LogFile.cc:100
+#: rc.cpp:17 rc.cpp:29 rc.cpp:80 rc.cpp:125
+msgid "Background color:"
+msgstr "Боја на подлогата:"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:182
+#: SensorDisplayLib/FancyPlotterSettings.cc:183
+msgid "Font size:"
+msgstr "Големина на фонт:"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:186
+msgid ""
+"This determines the size of the font used to print a label underneath the "
+"bars. Bars are automatically suppressed if text becomes too large, so it is "
+"advisable to use a small font size here."
+msgstr ""
+"Ова ја одредува големината на фонтот што се користи за прикажување на име "
+"под линиите. Линиите автоматски се потиснуваат ако текстот стане преголем и "
+"затоа се препорачува користење на мал фонт."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:194
+#: SensorDisplayLib/FancyPlotterSettings.cc:198
+msgid "Sensors"
+msgstr "Сензори"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:207
+msgid "Edit..."
+msgstr "Уреди..."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:208
+msgid "Push this button to configure the label."
+msgstr "Кликнете на копчево за да го конфигурирате името."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:211
+#: SensorDisplayLib/FancyPlotterSettings.cc:231
+msgid "Delete"
+msgstr "Избриши"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:212
+#: SensorDisplayLib/FancyPlotterSettings.cc:232
+msgid "Push this button to delete the sensor."
+msgstr "Кликнете на копчево за да го избришете сензорот."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:366
+msgid "Label of Bar Graph"
+msgstr "Име на графикот со линии"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:367
+msgid "Enter new label:"
+msgstr "Внесете ново име:"
+
+#: SensorDisplayLib/DummyDisplay.cc:30 SensorDisplayLib/DummyDisplay.cc:38
+msgid "Drop Sensor Here"
+msgstr "Пуштете тука сензор"
+
+#: SensorDisplayLib/DummyDisplay.cc:32
+msgid ""
+"This is an empty space in a worksheet. Drag a sensor from the Sensor Browser "
+"and drop it here. A sensor display will appear that allows you to monitor "
+"the values of the sensor over time."
+msgstr ""
+"Ова е празен простор во работниот лист. Одвлечете сензор од прелистувачот на "
+"сензори и пуштете го тука. Ќе се појави приказ на сензорот кој ќе ви "
+"овозможи да ги надгледувате вредностите на сензорот во тек на времето."
+
 #: SensorDisplayLib/FancyPlotter.cc:178
 msgctxt "Largest axis title"
 msgid "99999 XXXX"
 msgstr "99999 XXXX"
-
-#: SensorDisplayLib/FancyPlotter.cc:281 SensorDisplayLib/DancingBars.cc:96
-msgid "OK"
-msgstr "Во ред"
-
-#: SensorDisplayLib/FancyPlotter.cc:281 SensorDisplayLib/FancyPlotter.cc:515
-#: SensorDisplayLib/FancyPlotter.cc:585 SensorDisplayLib/DancingBars.cc:96
-msgid "Error"
-msgstr "Грешка"
 
 #: SensorDisplayLib/FancyPlotter.cc:511 SensorDisplayLib/FancyPlotter.cc:574
 #: SensorDisplayLib/FancyPlotter.cc:637
@@ -107,49 +410,6 @@ msgctxt "unitless - just a number"
 msgid "%1"
 msgstr "%1"
 
-#: SensorDisplayLib/LogFile.cc:92
-msgid "File logging settings"
-msgstr "Поставувања за водење дневник"
-
-#. i18n: file: SensorDisplayLib/LogFileSettings.ui:61
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: SensorDisplayLib/LogFile.cc:98 rc.cpp:113
-msgid "Foreground color:"
-msgstr "Боја на текст:"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:228
-#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
-#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:77
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:64
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#. i18n: file: SensorDisplayLib/LogFileSettings.ui:74
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: SensorDisplayLib/LogFile.cc:100 SensorDisplayLib/DancingBarsSettings.cc:175
-#: rc.cpp:74 rc.cpp:89 rc.cpp:101 rc.cpp:116
-msgid "Background color:"
-msgstr "Боја на подлогата:"
-
-#: SensorDisplayLib/SensorModel.cc:166
-msgid "Host"
-msgstr "Компјутер"
-
-#: SensorDisplayLib/SensorModel.cc:169
-msgid "Sensor"
-msgstr "Сензор"
-
-#: SensorDisplayLib/SensorModel.cc:172
-msgid "Unit"
-msgstr "Единица"
-
-#: SensorDisplayLib/SensorModel.cc:175
-msgid "Status"
-msgstr "Статус"
-
-#: SensorDisplayLib/SensorModel.cc:178
-msgid "Label"
-msgstr "Име"
-
 #: SensorDisplayLib/FancyPlotterSettings.cc:51
 msgid "Plotter Settings"
 msgstr "Поставувања на цртачот"
@@ -161,13 +421,6 @@ msgstr "Општо"
 #: SensorDisplayLib/FancyPlotterSettings.cc:69
 msgid "Title:"
 msgstr "Наслов:"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:35
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, m_title)
-#: SensorDisplayLib/FancyPlotterSettings.cc:73
-#: SensorDisplayLib/DancingBarsSettings.cc:62 rc.cpp:41
-msgid "Enter the title of the display here."
-msgstr "Внесете го тука насловот на приказот."
 
 #: SensorDisplayLib/FancyPlotterSettings.cc:85
 msgid "Scales"
@@ -191,19 +444,9 @@ msgstr ""
 "прилагодува на прикажаните вредности; ако не го изберете ова, во полињата "
 "подолу треба да го наведете опсегот кој го сакате."
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:101
-#: SensorDisplayLib/DancingBarsSettings.cc:72
-msgid "Minimum value:"
-msgstr "Минимална вредност:"
-
 #: SensorDisplayLib/FancyPlotterSettings.cc:107
 msgid "Enter the minimum value for the display here."
 msgstr "Внесете ја тука минималната вредност за приказот."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:112
-#: SensorDisplayLib/DancingBarsSettings.cc:84
-msgid "Maximum value:"
-msgstr "Максимална вредност:"
 
 #: SensorDisplayLib/FancyPlotterSettings.cc:118
 msgid ""
@@ -276,16 +519,6 @@ msgstr ""
 "Изберете ја оваа опција ако сакате хоризонталните линии да бидат декорирани "
 "со вредноста што ја означуваат."
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:183
-#: SensorDisplayLib/DancingBarsSettings.cc:182
-msgid "Font size:"
-msgstr "Големина на фонт:"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:198
-#: SensorDisplayLib/DancingBarsSettings.cc:194
-msgid "Sensors"
-msgstr "Сензори"
-
 #: SensorDisplayLib/FancyPlotterSettings.cc:223
 msgid "Set Color..."
 msgstr "Постави боја..."
@@ -295,16 +528,6 @@ msgid "Push this button to configure the color of the sensor in the diagram."
 msgstr ""
 "Кликнете на копчето за да ја конфигурирате бојата на сензорот во дијаграмот."
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:231
-#: SensorDisplayLib/DancingBarsSettings.cc:211
-msgid "Delete"
-msgstr "Избриши"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:232
-#: SensorDisplayLib/DancingBarsSettings.cc:212
-msgid "Push this button to delete the sensor."
-msgstr "Кликнете на копчево за да го избришете сензорот."
-
 #: SensorDisplayLib/FancyPlotterSettings.cc:236
 msgid "Move Up"
 msgstr "Помести нагоре"
@@ -313,130 +536,25 @@ msgstr "Помести нагоре"
 msgid "Move Down"
 msgstr "Помести надолу"
 
-#: SensorDisplayLib/DancingBarsSettings.cc:43
-msgid "Edit BarGraph Preferences"
-msgstr "Уредете ги параметрите за графиците со линии"
+#: SensorDisplayLib/ListViewSettings.cc:30
+msgid "List View Settings"
+msgstr "Поставувања на прегледот со листа"
 
-#: SensorDisplayLib/DancingBarsSettings.cc:52
-msgid "Range"
-msgstr "Опсег"
+#: SensorDisplayLib/LogFile.cc:92
+msgid "File logging settings"
+msgstr "Поставувања за водење дневник"
 
-#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
-#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
-#: SensorDisplayLib/DancingBarsSettings.cc:57 WorkSheetSettings.cc:50
-#: rc.cpp:77 rc.cpp:92
-msgid "Title"
-msgstr "Наслов"
+#. i18n: file: SensorDisplayLib/LogFileSettings.ui:61
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: SensorDisplayLib/LogFile.cc:98 rc.cpp:26
+msgid "Foreground color:"
+msgstr "Боја на текст:"
 
-#: SensorDisplayLib/DancingBarsSettings.cc:67
-msgid "Display Range"
-msgstr "Опсег на приказот"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:80
-msgid ""
-"Enter the minimum value for the display here. If both values are 0, "
-"automatic range detection is enabled."
-msgstr ""
-"Внесете ја тука минималната вредност на приказот. Ако двете вредности се 0 "
-"се овозможува автоматска детекција на опсегот."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:92
-msgid ""
-"Enter the maximum value for the display here. If both values are 0, "
-"automatic range detection is enabled."
-msgstr ""
-"Внесете ја тука максималната вредност на приказот. Ако двете вредности се 0 "
-"се овозможува автоматска детекција на опсегот."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:102
-msgid "Alarms"
-msgstr "Аларми"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:59
-#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
-#: SensorDisplayLib/DancingBarsSettings.cc:107 rc.cpp:14
-msgid "Alarm for Minimum Value"
-msgstr "Аларм за минималната вредност"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:112
-#: SensorDisplayLib/DancingBarsSettings.cc:135
-msgid "Enable alarm"
-msgstr "Овозможи аларм"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:71
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:56
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
-#: SensorDisplayLib/DancingBarsSettings.cc:113 rc.cpp:20 rc.cpp:50
-msgid "Enable the minimum value alarm."
-msgstr "Го овозможува алармот за минималната вредност."
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:97
-#. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
-#: SensorDisplayLib/DancingBarsSettings.cc:116 rc.cpp:23
-msgid "Lower limit:"
-msgstr "Долна граница:"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:123
-#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1_2)
-#: SensorDisplayLib/DancingBarsSettings.cc:130 rc.cpp:26
-msgid "Alarm for Maximum Value"
-msgstr "Аларм за максималната вредност"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:135
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:115
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
-#: SensorDisplayLib/DancingBarsSettings.cc:136 rc.cpp:32 rc.cpp:59
-msgid "Enable the maximum value alarm."
-msgstr "Го овозможува алармот за максималната вредност."
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:161
-#. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
-#: SensorDisplayLib/DancingBarsSettings.cc:139 rc.cpp:35
-msgid "Upper limit:"
-msgstr "Горна граница:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:156
-msgctxt "@title:tab Appearance of the bar graph"
-msgid "Look"
-msgstr "Изглед"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:161
-msgid "Normal bar color:"
-msgstr "Боја на нормална линија:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:168
-msgid "Out-of-range color:"
-msgstr "Боја за „надвор од опсег“:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:186
-msgid ""
-"This determines the size of the font used to print a label underneath the "
-"bars. Bars are automatically suppressed if text becomes too large, so it is "
-"advisable to use a small font size here."
-msgstr ""
-"Ова ја одредува големината на фонтот што се користи за прикажување на име "
-"под линиите. Линиите автоматски се потиснуваат ако текстот стане преголем и "
-"затоа се препорачува користење на мал фонт."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:207
-msgid "Edit..."
-msgstr "Уреди..."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:208
-msgid "Push this button to configure the label."
-msgstr "Кликнете на копчево за да го конфигурирате името."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:366
-msgid "Label of Bar Graph"
-msgstr "Име на графикот со линии"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:367
-msgid "Enter new label:"
-msgstr "Внесете ново име:"
+#: SensorDisplayLib/MultiMeterSettings.cc:31
+msgctxt ""
+"Multimeter is a sensor display that mimics 'digital multimeter' aparatus"
+msgid "Multimeter Settings"
+msgstr "Поставувања на мултиметарот"
 
 #: SensorDisplayLib/SensorDisplay.cc:118 SensorDisplayLib/SensorLogger.cc:598
 msgid "&Properties"
@@ -459,23 +577,13 @@ msgstr ""
 "менито што ќе се појави. За да го избришете приказот од работниот лист "
 "изберете <i>Отстрани</i>.</p>%1</qt>"
 
-#: SensorDisplayLib/SensorLoggerDlg.cc:32 SensorDisplayLib/SensorLogger.cc:431
-msgid "Sensor Logger"
-msgstr "Записник на сензори"
-
-#: SensorDisplayLib/MultiMeterSettings.cc:31
-msgctxt ""
-"Multimeter is a sensor display that mimics 'digital multimeter' aparatus"
-msgid "Multimeter Settings"
-msgstr "Поставувања на мултиметарот"
-
 #: SensorDisplayLib/SensorLogger.cc:138
 msgid "Logging"
 msgstr "Следење"
 
 #. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:31
 #. i18n: ectx: property (title), widget (QGroupBox, timerFrame)
-#: SensorDisplayLib/SensorLogger.cc:141 rc.cpp:8
+#: SensorDisplayLib/SensorLogger.cc:141 rc.cpp:86
 msgid "Timer Interval"
 msgstr "Интервал на мерење"
 
@@ -490,6 +598,10 @@ msgstr "Име на компјутерот"
 #: SensorDisplayLib/SensorLogger.cc:150
 msgid "Log File"
 msgstr "Записник"
+
+#: SensorDisplayLib/SensorLogger.cc:431 SensorDisplayLib/SensorLoggerDlg.cc:32
+msgid "Sensor Logger"
+msgstr "Записник на сензори"
 
 #: SensorDisplayLib/SensorLogger.cc:608
 msgid "&Remove Sensor"
@@ -507,61 +619,207 @@ msgstr "Прес&тани да следиш"
 msgid "S&tart Logging"
 msgstr "П&очни да следиш"
 
-#: SensorDisplayLib/DummyDisplay.cc:30 SensorDisplayLib/DummyDisplay.cc:38
-msgid "Drop Sensor Here"
-msgstr "Пуштете тука сензор"
-
-#: SensorDisplayLib/DummyDisplay.cc:32
-msgid ""
-"This is an empty space in a worksheet. Drag a sensor from the Sensor Browser "
-"and drop it here. A sensor display will appear that allows you to monitor "
-"the values of the sensor over time."
-msgstr ""
-"Ова е празен простор во работниот лист. Одвлечете сензор од прелистувачот на "
-"сензори и пуштете го тука. Ќе се појави приказ на сензорот кој ќе ви "
-"овозможи да ги надгледувате вредностите на сензорот во тек на времето."
-
-#: SensorDisplayLib/ListViewSettings.cc:30
-msgid "List View Settings"
-msgstr "Поставувања на прегледот со листа"
-
 #: SensorDisplayLib/SensorLoggerSettings.cc:30
 msgid "Sensor Logger Settings"
 msgstr "Поставувања на записникот на сензори"
 
-#: ksgrd/SensorShellAgent.cc:126
-#, kde-format
-msgid "Could not run daemon program '%1'."
-msgstr "Не можам да ја извршам програмата-даемон „%1“."
+#: SensorDisplayLib/SensorModel.cc:166
+msgid "Host"
+msgstr "Компјутер"
 
-#: ksgrd/SensorShellAgent.cc:133
-#, kde-format
-msgid "The daemon program '%1' failed."
-msgstr "Програмата-даемон „%1“ не успеа."
+#: SensorDisplayLib/SensorModel.cc:169
+msgid "Sensor"
+msgstr "Сензор"
 
-#: ksgrd/SensorSocketAgent.cc:103
-#, kde-format
-msgid "Connection to %1 refused"
-msgstr "Врската со %1 е одбиена"
+#: SensorDisplayLib/SensorModel.cc:172
+msgid "Unit"
+msgstr "Единица"
 
-#: ksgrd/SensorSocketAgent.cc:107
-#, kde-format
-msgid "Host %1 not found"
-msgstr "Компјутерот %1 не е пронајден"
+#: SensorDisplayLib/SensorModel.cc:175
+msgid "Status"
+msgstr "Статус"
 
-#: ksgrd/SensorSocketAgent.cc:111
+#: SensorDisplayLib/SensorModel.cc:178
+msgid "Label"
+msgstr "Име"
+
+#: TimerSettings.cc:38
+msgid "Timer Settings"
+msgstr "Поставувања на мерачот на време"
+
+#: TimerSettings.cc:48
+msgid "Use update interval of worksheet"
+msgstr ""
+"Користи го интервалот на ажурирање\n"
+"на работниот лист"
+
+#: TimerSettings.cc:51 WorkSheetSettings.cc:90
+msgid "Update interval:"
+msgstr "Интервал на ажурирање:"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:49
+#. i18n: ectx: property (suffix), widget (KIntNumInput, m_timerInterval)
+#: TimerSettings.cc:58 WorkSheetSettings.cc:94 rc.cpp:89
+msgid " sec"
+msgstr " сек"
+
+#: TimerSettings.cc:61 WorkSheetSettings.cc:100
+msgid "All displays of the sheet are updated at the rate specified here."
+msgstr "Сите прикази на листот се ажурираат со брзината наведена тука."
+
+#: WorkSheet.cc:88
+#, kde-format
+msgid "Cannot open the file %1."
+msgstr "Не можам да ја отворам датотеката %1."
+
+#: WorkSheet.cc:96
+#, kde-format
+msgid "The file %1 does not contain valid XML."
+msgstr "Датотеката %1 не содржи валиден XML."
+
+#: WorkSheet.cc:103
 #, kde-format
 msgid ""
-"An error occurred with the network (e.g. the network cable was accidentally "
-"unplugged) for host %1."
+"The file %1 does not contain a valid worksheet definition, which must have a "
+"document type 'KSysGuardWorkSheet'."
 msgstr ""
-"Настана грешка во мрежата (на пример мрежниот кабел бил случајно изваден) за "
-"компјутерот %1."
+"Датотеката %1 не содржи валидна дефиниција за работен лист, кој мора да биде "
+"документ од тип „KSysGuardWorkSheet“."
 
-#: ksgrd/SensorSocketAgent.cc:115
+#: WorkSheet.cc:127
 #, kde-format
-msgid "Error for host %1: %2"
-msgstr "Грешка за компјутерот %1: %2"
+msgid "The file %1 has an invalid worksheet size."
+msgstr "Датотеката %1 има невалидна големина на работниот лист."
+
+#: WorkSheet.cc:228
+#, kde-format
+msgid "Cannot save file %1"
+msgstr "Не можам да ја снимам датотеката %1"
+
+#: WorkSheet.cc:274
+msgid "The clipboard does not contain a valid display description."
+msgstr "Таблата за исечоци не содржи валиден опис за приказ."
+
+#: WorkSheet.cc:372
+msgid "Select Display Type"
+msgstr "Изберете тип на приказ"
+
+#: WorkSheet.cc:373
+msgid "&Line graph"
+msgstr "&Линиски графикон"
+
+#: WorkSheet.cc:374
+msgid "&Digital display"
+msgstr "&Дигитален приказ"
+
+#: WorkSheet.cc:375
+msgid "&Bar graph"
+msgstr "&График со линии"
+
+#: WorkSheet.cc:376
+msgid "Log to a &file"
+msgstr "&Евидентирај во датотека"
+
+#: WorkSheet.cc:525
+msgid "Remove this display?"
+msgstr "Да го отстранам приказот?"
+
+#: WorkSheet.cc:526
+msgid "Remove Display"
+msgstr "Отстранување приказ"
+
+#: WorkSheet.cc:567
+msgid "Dummy"
+msgstr "Фиктивно"
+
+#: WorkSheetSettings.cc:40
+msgid "Tab Properties"
+msgstr "Својства на раб. лист"
+
+#: WorkSheetSettings.cc:61
+msgid "Properties"
+msgstr "Својства"
+
+#: WorkSheetSettings.cc:70
+msgid "Rows:"
+msgstr "Редици:"
+
+#: WorkSheetSettings.cc:79
+msgid "Columns:"
+msgstr "Колони:"
+
+#: WorkSheetSettings.cc:87
+msgid "Enter the number of rows the sheet should have."
+msgstr "Внесете го бројот на редици што треба да ги има листот."
+
+#: WorkSheetSettings.cc:88
+msgid "Enter the number of columns the sheet should have."
+msgstr "Внесете го бројот на колони што треба да ги има листот."
+
+#: WorkSheetSettings.cc:101
+msgid "Enter the title of the worksheet here."
+msgstr "Внесете го тука насловот на работниот лист."
+
+#: Workspace.cc:113
+#, kde-format
+msgid "Sheet %1"
+msgstr "Лист %1"
+
+#: Workspace.cc:172
+#, kde-format
+msgid ""
+"The tab '%1' contains unsaved data.\n"
+"Do you want to save the tab?"
+msgstr ""
+"Работниот лист „%1“ содржи незачувани податоци.\n"
+"Дали сакате да го зачувате?"
+
+#: Workspace.cc:187
+msgid "*.sgrd|Sensor Files (*.sgrd)"
+msgstr "*.sgrd|Датотеки со сензори (*.sgrd)"
+
+#: Workspace.cc:187
+msgid "Select Tab File to Import"
+msgstr "Избор на датотека за внесување"
+
+#: Workspace.cc:215 Workspace.cc:236
+msgid "You do not have a tab that could be saved."
+msgstr "Немате работен лист што може да биде зачуван."
+
+#: Workspace.cc:243
+msgid "Export Tab"
+msgstr "Изнесување работен лист"
+
+#: Workspace.cc:261
+msgid "There are no tabs that could be deleted."
+msgstr "Нема работни листови што можат да бидат избришани."
+
+#: Workspace.cc:301
+#, kde-format
+msgid ""
+"<qt>To propose the current custom tab as a new System Monitor tab, email "
+"<br><a href=\"file:%1\">%2</a><br> to <a href=\"mailto:john.tapsell@kde.org?"
+"subject='System Monitor Tab'&attach='file://%2'\">john.tapsell@kde.org</a></"
+"qt>"
+msgstr ""
+"<qt>За да го предложите тековниот сопствен работен лист како нов лист за "
+"Системски монитор, пратете е-пошта <br><a href=\"file:%1\">%2</a><br> на <a "
+"href=\"mailto:john.tapsell@kde.org?subject='System Monitor "
+"Tab'&attach='file://%2'\">john.tapsell@kde.org</a></qt>"
+
+#: Workspace.cc:301
+msgid "Upload custom System Monitor tab"
+msgstr "Качувањ сопствен лист за Системски монитор"
+
+#: ksgrd/SensorAgent.cc:109
+#, kde-format
+msgctxt "%1 is a host name"
+msgid ""
+"Message from %1:\n"
+"%2"
+msgstr ""
+"Порака од %1:\n"
+"%2"
 
 #: ksgrd/SensorManager.cc:60
 msgid "Change"
@@ -1022,183 +1280,39 @@ msgstr "Вредност со цел број"
 msgid "Floating Point Value"
 msgstr "Вредност со подвижна запирка"
 
-#: ksgrd/SensorAgent.cc:109
+#: ksgrd/SensorShellAgent.cc:126
 #, kde-format
-msgctxt "%1 is a host name"
-msgid ""
-"Message from %1:\n"
-"%2"
-msgstr ""
-"Порака од %1:\n"
-"%2"
+msgid "Could not run daemon program '%1'."
+msgstr "Не можам да ја извршам програмата-даемон „%1“."
 
-#: Workspace.cc:113
+#: ksgrd/SensorShellAgent.cc:133
 #, kde-format
-msgid "Sheet %1"
-msgstr "Лист %1"
+msgid "The daemon program '%1' failed."
+msgstr "Програмата-даемон „%1“ не успеа."
 
-#: Workspace.cc:172
+#: ksgrd/SensorSocketAgent.cc:103
 #, kde-format
-msgid ""
-"The tab '%1' contains unsaved data.\n"
-"Do you want to save the tab?"
-msgstr ""
-"Работниот лист „%1“ содржи незачувани податоци.\n"
-"Дали сакате да го зачувате?"
+msgid "Connection to %1 refused"
+msgstr "Врската со %1 е одбиена"
 
-#: Workspace.cc:187
-msgid "*.sgrd|Sensor Files (*.sgrd)"
-msgstr "*.sgrd|Датотеки со сензори (*.sgrd)"
+#: ksgrd/SensorSocketAgent.cc:107
+#, kde-format
+msgid "Host %1 not found"
+msgstr "Компјутерот %1 не е пронајден"
 
-#: Workspace.cc:187
-msgid "Select Tab File to Import"
-msgstr "Избор на датотека за внесување"
-
-#: Workspace.cc:215 Workspace.cc:236
-msgid "You do not have a tab that could be saved."
-msgstr "Немате работен лист што може да биде зачуван."
-
-#: Workspace.cc:243
-msgid "Export Tab"
-msgstr "Изнесување работен лист"
-
-#: Workspace.cc:261
-msgid "There are no tabs that could be deleted."
-msgstr "Нема работни листови што можат да бидат избришани."
-
-#: Workspace.cc:301
+#: ksgrd/SensorSocketAgent.cc:111
 #, kde-format
 msgid ""
-"<qt>To propose the current custom tab as a new System Monitor tab, email "
-"<br><a href=\"file:%1\">%2</a><br> to <a href=\"mailto:john.tapsell@kde.org?"
-"subject='System Monitor Tab'&attach='file://%2'\">john.tapsell@kde.org</a></"
-"qt>"
+"An error occurred with the network (e.g. the network cable was accidentally "
+"unplugged) for host %1."
 msgstr ""
-"<qt>За да го предложите тековниот сопствен работен лист како нов лист за "
-"Системски монитор, пратете е-пошта <br><a href=\"file:%1\">%2</a><br> на <a "
-"href=\"mailto:john.tapsell@kde.org?subject='System Monitor "
-"Tab'&attach='file://%2'\">john.tapsell@kde.org</a></qt>"
+"Настана грешка во мрежата (на пример мрежниот кабел бил случајно изваден) за "
+"компјутерот %1."
 
-#: Workspace.cc:301
-msgid "Upload custom System Monitor tab"
-msgstr "Качувањ сопствен лист за Системски монитор"
-
-#: TimerSettings.cc:38
-msgid "Timer Settings"
-msgstr "Поставувања на мерачот на време"
-
-#: TimerSettings.cc:48
-msgid "Use update interval of worksheet"
-msgstr ""
-"Користи го интервалот на ажурирање\n"
-"на работниот лист"
-
-#: TimerSettings.cc:51 WorkSheetSettings.cc:90
-msgid "Update interval:"
-msgstr "Интервал на ажурирање:"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:49
-#. i18n: ectx: property (suffix), widget (KIntNumInput, m_timerInterval)
-#: TimerSettings.cc:58 WorkSheetSettings.cc:94 rc.cpp:11
-msgid " sec"
-msgstr " сек"
-
-#: TimerSettings.cc:61 WorkSheetSettings.cc:100
-msgid "All displays of the sheet are updated at the rate specified here."
-msgstr "Сите прикази на листот се ажурираат со брзината наведена тука."
-
-#: WorkSheet.cc:88
+#: ksgrd/SensorSocketAgent.cc:115
 #, kde-format
-msgid "Cannot open the file %1."
-msgstr "Не можам да ја отворам датотеката %1."
-
-#: WorkSheet.cc:96
-#, kde-format
-msgid "The file %1 does not contain valid XML."
-msgstr "Датотеката %1 не содржи валиден XML."
-
-#: WorkSheet.cc:103
-#, kde-format
-msgid ""
-"The file %1 does not contain a valid worksheet definition, which must have a "
-"document type 'KSysGuardWorkSheet'."
-msgstr ""
-"Датотеката %1 не содржи валидна дефиниција за работен лист, кој мора да биде "
-"документ од тип „KSysGuardWorkSheet“."
-
-#: WorkSheet.cc:127
-#, kde-format
-msgid "The file %1 has an invalid worksheet size."
-msgstr "Датотеката %1 има невалидна големина на работниот лист."
-
-#: WorkSheet.cc:228
-#, kde-format
-msgid "Cannot save file %1"
-msgstr "Не можам да ја снимам датотеката %1"
-
-#: WorkSheet.cc:274
-msgid "The clipboard does not contain a valid display description."
-msgstr "Таблата за исечоци не содржи валиден опис за приказ."
-
-#: WorkSheet.cc:372
-msgid "Select Display Type"
-msgstr "Изберете тип на приказ"
-
-#: WorkSheet.cc:373
-msgid "&Line graph"
-msgstr "&Линиски графикон"
-
-#: WorkSheet.cc:374
-msgid "&Digital display"
-msgstr "&Дигитален приказ"
-
-#: WorkSheet.cc:375
-msgid "&Bar graph"
-msgstr "&График со линии"
-
-#: WorkSheet.cc:376
-msgid "Log to a &file"
-msgstr "&Евидентирај во датотека"
-
-#: WorkSheet.cc:525
-msgid "Remove this display?"
-msgstr "Да го отстранам приказот?"
-
-#: WorkSheet.cc:526
-msgid "Remove Display"
-msgstr "Отстранување приказ"
-
-#: WorkSheet.cc:567
-msgid "Dummy"
-msgstr "Фиктивно"
-
-#: WorkSheetSettings.cc:40
-msgid "Tab Properties"
-msgstr "Својства на раб. лист"
-
-#: WorkSheetSettings.cc:61
-msgid "Properties"
-msgstr "Својства"
-
-#: WorkSheetSettings.cc:70
-msgid "Rows:"
-msgstr "Редици:"
-
-#: WorkSheetSettings.cc:79
-msgid "Columns:"
-msgstr "Колони:"
-
-#: WorkSheetSettings.cc:87
-msgid "Enter the number of rows the sheet should have."
-msgstr "Внесете го бројот на редици што треба да ги има листот."
-
-#: WorkSheetSettings.cc:88
-msgid "Enter the number of columns the sheet should have."
-msgstr "Внесете го бројот на колони што треба да ги има листот."
-
-#: WorkSheetSettings.cc:101
-msgid "Enter the title of the worksheet here."
-msgstr "Внесете го тука насловот на работниот лист."
+msgid "Error for host %1: %2"
+msgstr "Грешка за компјутерот %1: %2"
 
 #: ksysguard.cc:74
 msgid "KDE System Monitor"
@@ -1339,120 +1453,6 @@ msgstr ""
 msgid "Optional worksheet files to load"
 msgstr "Изборни работни датотеки за вчитување"
 
-#: SensorBrowser.cc:117
-msgid "Sensor Browser"
-msgstr "Прелистувач на сензори"
-
-#: SensorBrowser.cc:473
-msgid "Drag sensors to empty cells of a worksheet "
-msgstr "Одвлечете ги сензорите во празни полиња на работниот лист "
-
-#: SensorBrowser.cc:474
-msgid ""
-"The sensor browser lists the connected hosts and the sensors that they "
-"provide. Click and drag sensors into drop zones of a worksheet. A display "
-"will appear that visualizes the values provided by the sensor. Some sensor "
-"displays can display values of multiple sensors. Simply drag other sensors "
-"on to the display to add more sensors."
-msgstr ""
-"Прелистувачот на сензори ги прикажува поврзаните компјутери и сензорите што "
-"тие ги нудат. Кликнете и одвлечете ги сензорите во зоните за испуштање на "
-"работниот лист. Ќе се појави приказ кој ги визуелизира вредностите што се "
-"добиваат од сензорите. Некои прикази на сензори можат да прикажат вредности "
-"од повеќе сензори. Само одвлечете други сензори на приказот за да додадете "
-"нови сензори."
-
-#: HostConnector.cc:44
-msgid "Connect Host"
-msgstr "Поврзете се со компјутер"
-
-#: HostConnector.cc:55
-msgid "Host:"
-msgstr "Компјутер:"
-
-#: HostConnector.cc:65
-msgid "Enter the name of the host you want to connect to."
-msgstr "Внесете го името на компјутерот со кој сакате да се поврзете."
-
-#: HostConnector.cc:71
-msgid "Connection Type"
-msgstr "Тип на врска"
-
-#: HostConnector.cc:77
-msgid "ssh"
-msgstr "ssh"
-
-#: HostConnector.cc:80
-msgid "Select this to use the secure shell to login to the remote host."
-msgstr ""
-"Изберете го ова за да користите secure shell за да се најавите на "
-"оддалечениот компјутер."
-
-#: HostConnector.cc:83
-msgid "rsh"
-msgstr "rsh"
-
-#: HostConnector.cc:84
-msgid "Select this to use the remote shell to login to the remote host."
-msgstr ""
-"Изберете го ова за да користите remote shell за да се најавите на "
-"оддалечениот компјутер."
-
-#: HostConnector.cc:87
-msgid "Daemon"
-msgstr "Даемон"
-
-#: HostConnector.cc:88
-msgid ""
-"Select this if you want to connect to a ksysguard daemon that is running on "
-"the machine you want to connect to, and is listening for client requests."
-msgstr ""
-"Изберете го ова ако сакате да се поврзете со даемонот ksysguard којшто "
-"работи на машината со која сакате да се поврзете и слуша за барања од "
-"клиенти."
-
-#: HostConnector.cc:91
-msgid "Custom command"
-msgstr "Сопствена команда"
-
-#: HostConnector.cc:92
-msgid ""
-"Select this to use the command you entered below to start ksysguardd on the "
-"remote host."
-msgstr ""
-"Изберете го ова за да го стартувате ksysguardd на оддалечениот компјутер со "
-"командата која сте ја внеле подолу."
-
-#: HostConnector.cc:95
-msgid "Port:"
-msgstr "Порта:"
-
-#: HostConnector.cc:102
-msgid ""
-"Enter the port number on which the ksysguard daemon is listening for "
-"connections."
-msgstr ""
-"Внесете го бројот на портата на којашто даемонот ksysguard слуша за "
-"поврзувања."
-
-#: HostConnector.cc:105
-msgid "e.g.  3112"
-msgstr "пр.  3112"
-
-#: HostConnector.cc:108
-msgid "Command:"
-msgstr "Команда:"
-
-#: HostConnector.cc:117
-msgid "Enter the command that runs ksysguardd on the host you want to monitor."
-msgstr ""
-"Внесете ја командата која ќе го изврши ksysguardd на компјутерот што сакате "
-"да го следите."
-
-#: HostConnector.cc:121
-msgid "e.g. ssh -l root remote.host.org ksysguardd"
-msgstr "пр. ssh -l root remote.host.org ksysguardd"
-
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -1463,75 +1463,11 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "bobibobi@freemail.com.mk"
 
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, fileFrame)
-#: rc.cpp:5
-msgid "File"
-msgstr "Датотека"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:68
-#. i18n: ectx: property (text), widget (QCheckBox, m_lowerLimitActive)
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:59
-#. i18n: ectx: property (text), widget (QCheckBox, m_lowerLimitActive)
-#: rc.cpp:17 rc.cpp:53
-msgid "&Enable alarm"
-msgstr "&Овозможи аларм"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:132
-#. i18n: ectx: property (text), widget (QCheckBox, m_upperLimitActive)
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:118
-#. i18n: ectx: property (text), widget (QCheckBox, m_upperLimitActive)
-#: rc.cpp:29 rc.cpp:62
-msgid "E&nable alarm"
-msgstr "О&возможи аларм"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:25
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:38
-msgid "&Title:"
-msgstr "&Наслов:"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:42
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_showUnit)
-#: rc.cpp:44
-msgid "Enable this to append the unit to the title of the display."
-msgstr "Овозможете го ова за да се додаде единицата до насловот на приказот."
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:45
-#. i18n: ectx: property (text), widget (QCheckBox, m_showUnit)
-#: rc.cpp:47
-msgid "&Show unit"
-msgstr "Прикажи &единица"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:85
-#. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
-#: rc.cpp:56
-msgid "Lo&wer limit:"
-msgstr "&Долна граница:"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:144
-#. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
-#: rc.cpp:65
-msgid "&Upper limit:"
-msgstr "&Горна граница:"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:174
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:68
-msgid "Normal digit color:"
-msgstr "Боја на нормалните бројки:"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:201
-#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
-#: rc.cpp:71
-msgid "Alarm digit color:"
-msgstr "Боја на бројките од алармот:"
-
 #. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:37
 #. i18n: ectx: property (title), widget (QGroupBox, colorFrame)
 #. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:37
 #. i18n: ectx: property (title), widget (QGroupBox, colorFrame)
-#: rc.cpp:80 rc.cpp:95
+#: rc.cpp:8 rc.cpp:119
 msgid "Colors"
 msgstr "Бои"
 
@@ -1539,57 +1475,121 @@ msgstr "Бои"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:51
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:83 rc.cpp:98
+#: rc.cpp:11 rc.cpp:122
 msgid "Text color:"
 msgstr "Боја на текстот:"
 
 #. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:64
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:86
+#: rc.cpp:14
 msgid "Grid color:"
 msgstr "Боја на мрежата:"
 
-#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:77
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:104
-msgid "Alarm color:"
-msgstr "Боја на алармот:"
-
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:28
 #. i18n: ectx: attribute (title), widget (QWidget, textTab)
-#: rc.cpp:107
+#: rc.cpp:20
 msgid "&Text"
 msgstr "&Текст"
 
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:36
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:110
+#: rc.cpp:23
 msgid "T&itle:"
 msgstr "Н&аслов:"
 
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:154
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: rc.cpp:119
+#: rc.cpp:32
 msgid "Fi&lter"
 msgstr "Фи&лтер"
 
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:175
 #. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: rc.cpp:122
+#: rc.cpp:35
 msgid "&Add"
 msgstr "Дод&ај"
 
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:182
 #. i18n: ectx: property (text), widget (QPushButton, deleteButton)
-#: rc.cpp:125
+#: rc.cpp:38
 msgid "&Delete"
 msgstr "&Избриши"
 
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:189
 #. i18n: ectx: property (text), widget (QPushButton, changeButton)
-#: rc.cpp:128
+#: rc.cpp:41
 msgid "&Change"
 msgstr "И&змени"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:25
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:44
+msgid "&Title:"
+msgstr "&Наслов:"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:42
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_showUnit)
+#: rc.cpp:50
+msgid "Enable this to append the unit to the title of the display."
+msgstr "Овозможете го ова за да се додаде единицата до насловот на приказот."
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:45
+#. i18n: ectx: property (text), widget (QCheckBox, m_showUnit)
+#: rc.cpp:53
+msgid "&Show unit"
+msgstr "Прикажи &единица"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:59
+#. i18n: ectx: property (text), widget (QCheckBox, m_lowerLimitActive)
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:68
+#. i18n: ectx: property (text), widget (QCheckBox, m_lowerLimitActive)
+#: rc.cpp:59 rc.cpp:95
+msgid "&Enable alarm"
+msgstr "&Овозможи аларм"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:85
+#. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
+#: rc.cpp:62
+msgid "Lo&wer limit:"
+msgstr "&Долна граница:"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:118
+#. i18n: ectx: property (text), widget (QCheckBox, m_upperLimitActive)
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:132
+#. i18n: ectx: property (text), widget (QCheckBox, m_upperLimitActive)
+#: rc.cpp:68 rc.cpp:107
+msgid "E&nable alarm"
+msgstr "О&возможи аларм"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:144
+#. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
+#: rc.cpp:71
+msgid "&Upper limit:"
+msgstr "&Горна граница:"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:174
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: rc.cpp:74
+msgid "Normal digit color:"
+msgstr "Боја на нормалните бројки:"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:201
+#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
+#: rc.cpp:77
+msgid "Alarm digit color:"
+msgstr "Боја на бројките од алармот:"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, fileFrame)
+#: rc.cpp:83
+msgid "File"
+msgstr "Датотека"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:77
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: rc.cpp:128
+msgid "Alarm color:"
+msgstr "Боја на алармот:"
 
 #. i18n: file: ksysguardui.rc:4
 #. i18n: ectx: Menu (file)
