@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 12:17+0100\n"
+"POT-Creation-Date: 2011-02-04 10:21+0100\n"
 "PO-Revision-Date: 2010-01-30 17:09+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -345,26 +345,6 @@ msgstr "%1/s"
 msgid "Stalled"
 msgstr "Во застој"
 
-#: src/konqguiclients.cpp:66
-#, kde-format
-msgid "Preview &in %1"
-msgstr "Прегл&ед во %1"
-
-#: src/konqguiclients.cpp:135
-#, kde-format
-msgid "Show %1"
-msgstr "Прикажи %1"
-
-#: src/konqhistorydialog.cpp:45
-msgctxt "@title:window"
-msgid "History"
-msgstr "Историја"
-
-#: src/konqhistorydialog.cpp:61 src/konqhistoryview.cpp:143
-msgctxt "@action:inmenu Parent of 'By Name' and 'By Date'"
-msgid "Sort"
-msgstr "Подреди"
-
 #: src/konqhistorymodel.cpp:137
 #, kde-format
 msgid ""
@@ -421,6 +401,11 @@ msgstr "Според &датумот"
 msgid "Search in history"
 msgstr "Пребарувај во историја"
 
+#: src/konqhistoryview.cpp:143 src/konqhistorydialog.cpp:61
+msgctxt "@action:inmenu Parent of 'By Name' and 'By Date'"
+msgid "Sort"
+msgstr "Подреди"
+
 #: src/konqhistoryview.cpp:171 sidebar/history_module/kcmhistory.cpp:254
 msgid "Do you really want to clear the entire history?"
 msgstr "Дали навистина сакате да ја избришете целата историја?"
@@ -428,6 +413,151 @@ msgstr "Дали навистина сакате да ја избришете ц
 #: src/konqhistoryview.cpp:172 sidebar/history_module/kcmhistory.cpp:256
 msgid "Clear History?"
 msgstr "Бришење на историјата?"
+
+#: src/konqprofiledlg.cpp:111
+msgid "Profile Management"
+msgstr "Менаџмент на профили"
+
+#: src/konqprofiledlg.cpp:114
+msgid "&Rename Profile"
+msgstr "П&реименувај го профилот"
+
+#: src/konqprofiledlg.cpp:115
+msgid "&Delete Profile"
+msgstr "&Избриши го профилот"
+
+#: src/konqsessiondlg.cpp:77
+msgid "Manage Sessions"
+msgstr "Менаџирање сесии"
+
+#: src/konqsessiondlg.cpp:81
+msgid "&Open"
+msgstr "&Отвори"
+
+#: src/konqsessiondlg.cpp:175
+msgid "Rename Session"
+msgstr "Преименување сесија"
+
+#: src/konqsessiondlg.cpp:223
+msgid "Save Session"
+msgstr "Зачувување сесија"
+
+#: src/konqsessiondlg.cpp:247
+#, kde-format
+msgid ""
+"A session with the name '%1' already exists, do you want to overwrite it?"
+msgstr "Веќе постои сесија со име „%1“, дали сакате да ја пребришете?"
+
+#: src/konqsessiondlg.cpp:248
+msgid "Session exists. Overwrite?"
+msgstr "Сесијата постои. Пребришување?"
+
+#: src/konqsessionmanager.cpp:330
+msgid ""
+"Konqueror did not close correctly. Would you like to restore the previous "
+"session?"
+msgstr ""
+"Konqueror не се затвори правилно. Дали сакате да ја обновите претходната "
+"сесијата?"
+
+#: src/konqsessionmanager.cpp:332
+msgid "Restore Session?"
+msgstr "Обновување на сесија?"
+
+#: src/konqsessionmanager.cpp:333
+msgid "Restore Session"
+msgstr "Обнови сесија"
+
+#: src/konqsessionmanager.cpp:334
+msgid "Do Not Restore"
+msgstr "Не обновувај"
+
+#: src/konqsessionmanager.cpp:335
+msgid "Ask Me Later"
+msgstr "Прашај ме подоцна"
+
+#: src/konqtabs.cpp:66
+msgid ""
+"This bar contains the list of currently open tabs. Click on a tab to make it "
+"active. You can also use keyboard shortcuts to navigate through tabs. The "
+"text on the tab shows the content currently open in it; place your mouse "
+"over the tab to see the full title, in case it has been shortened to fit the "
+"tab width."
+msgstr ""
+"Оваа лента содржи листа на тековно отворените ливчиња. Кликнете на ливчето "
+"за да го активирате. Исто така може да користите кратенки на тастатурата за "
+"да се движите по ливчињата. Текстот на ливчето е насловот на отворената веб-"
+"страница во него. Поставете го глушецот над ливчето за го видите целосниот "
+"наслов, во случај да бил скратен за да се собере во големината на ливчето."
+
+#: src/konqtabs.cpp:100
+msgid "Open a new tab"
+msgstr "Отвора ново ливче"
+
+#: src/konqtabs.cpp:109
+msgid "Close the current tab"
+msgstr "Го затвора тековното ливче"
+
+#: src/konqtabs.cpp:326 src/konqmainwindow.cpp:3612
+msgid "&Reload All Tabs"
+msgstr "&Превчитај ги сите ливчиња"
+
+#: src/konqtabs.cpp:349 src/konqmainwindow.cpp:2439
+#: src/konqmainwindow.cpp:3550
+msgid "Close &Other Tabs"
+msgstr "Затво&ри ги другите ливчиња"
+
+#: src/konqtabs.cpp:460 src/konqmainwindow.cpp:3523
+msgid "&New Tab"
+msgstr "&Ново ливче"
+
+#: src/konqtabs.cpp:465
+msgid "&Duplicate Tab"
+msgstr "&Удвои ливче"
+
+#: src/konqtabs.cpp:470
+msgid "&Reload Tab"
+msgstr "&Превчитај ливче"
+
+#: src/konqtabs.cpp:477
+msgid "Other Tabs"
+msgstr "Други ливчиња"
+
+#: src/konqtabs.cpp:482
+msgid "D&etach Tab"
+msgstr "Од&вои ливче"
+
+#: src/konqtabs.cpp:488
+msgid "&Close Tab"
+msgstr "За&твори ливче"
+
+#: src/konqundomanager.cpp:110 src/konqundomanager.cpp:266
+msgid "Und&o: Closed Tab"
+msgstr "&Отповикај: затворено ливче"
+
+#: src/konqundomanager.cpp:112 src/konqundomanager.cpp:120
+#: src/konqundomanager.cpp:162
+msgid "Und&o: Closed Window"
+msgstr "&Отповикај: затворен прозорец"
+
+#: src/konqundomanager.cpp:122
+msgid "Und&o"
+msgstr "&Отповикај"
+
+#: src/konqguiclients.cpp:66
+#, kde-format
+msgid "Preview &in %1"
+msgstr "Прегл&ед во %1"
+
+#: src/konqguiclients.cpp:135
+#, kde-format
+msgid "Show %1"
+msgstr "Прикажи %1"
+
+#: src/konqhistorydialog.cpp:45
+msgctxt "@title:window"
+msgid "History"
+msgstr "Историја"
 
 #: src/konqmain.cpp:96
 #, fuzzy
@@ -582,11 +712,6 @@ msgstr "Дали навистина сакате да ги затворите с
 msgid "Close Other Tabs Confirmation"
 msgstr "Потврда за затворање на другите ливчиња"
 
-#: src/konqmainwindow.cpp:2439 src/konqmainwindow.cpp:3550
-#: src/konqtabs.cpp:349
-msgid "Close &Other Tabs"
-msgstr "Затво&ри ги другите ливчиња"
-
 #: src/konqmainwindow.cpp:2454
 msgid ""
 "This tab contains changes that have not been submitted.\n"
@@ -723,10 +848,6 @@ msgstr "Подели го прегледот на &лев/десен"
 msgid "Split View &Top/Bottom"
 msgstr "Подели го прегледот на &горен/долен"
 
-#: src/konqmainwindow.cpp:3523 src/konqtabs.cpp:460
-msgid "&New Tab"
-msgstr "&Ново ливче"
-
 #: src/konqmainwindow.cpp:3529
 msgid "&Duplicate Current Tab"
 msgstr "&Удвои го тековното ливче"
@@ -779,10 +900,6 @@ msgstr "Вчитај про&фил за преглед"
 #: src/konqmainwindow.cpp:3607 sidebar/web_module/web_module.cpp:68
 msgid "&Reload"
 msgstr "П&ревчитај"
-
-#: src/konqmainwindow.cpp:3612 src/konqtabs.cpp:326
-msgid "&Reload All Tabs"
-msgstr "&Превчитај ги сите ливчиња"
 
 #: src/konqmainwindow.cpp:3620
 msgid "&Force Reload"
@@ -1127,123 +1244,6 @@ msgstr ""
 "Се чини дека има грешка во конфигурацијата. Сте го асоцирале Konqueror со %"
 "1, но тој не може да ракува со овој тип на датотека."
 
-#: src/konqprofiledlg.cpp:111
-msgid "Profile Management"
-msgstr "Менаџмент на профили"
-
-#: src/konqprofiledlg.cpp:114
-msgid "&Rename Profile"
-msgstr "П&реименувај го профилот"
-
-#: src/konqprofiledlg.cpp:115
-msgid "&Delete Profile"
-msgstr "&Избриши го профилот"
-
-#: src/konqsessiondlg.cpp:77
-msgid "Manage Sessions"
-msgstr "Менаџирање сесии"
-
-#: src/konqsessiondlg.cpp:81
-msgid "&Open"
-msgstr "&Отвори"
-
-#: src/konqsessiondlg.cpp:175
-msgid "Rename Session"
-msgstr "Преименување сесија"
-
-#: src/konqsessiondlg.cpp:223
-msgid "Save Session"
-msgstr "Зачувување сесија"
-
-#: src/konqsessiondlg.cpp:247
-#, kde-format
-msgid ""
-"A session with the name '%1' already exists, do you want to overwrite it?"
-msgstr "Веќе постои сесија со име „%1“, дали сакате да ја пребришете?"
-
-#: src/konqsessiondlg.cpp:248
-msgid "Session exists. Overwrite?"
-msgstr "Сесијата постои. Пребришување?"
-
-#: src/konqsessionmanager.cpp:330
-msgid ""
-"Konqueror did not close correctly. Would you like to restore the previous "
-"session?"
-msgstr ""
-"Konqueror не се затвори правилно. Дали сакате да ја обновите претходната "
-"сесијата?"
-
-#: src/konqsessionmanager.cpp:332
-msgid "Restore Session?"
-msgstr "Обновување на сесија?"
-
-#: src/konqsessionmanager.cpp:333
-msgid "Restore Session"
-msgstr "Обнови сесија"
-
-#: src/konqsessionmanager.cpp:334
-msgid "Do Not Restore"
-msgstr "Не обновувај"
-
-#: src/konqsessionmanager.cpp:335
-msgid "Ask Me Later"
-msgstr "Прашај ме подоцна"
-
-#: src/konqtabs.cpp:66
-msgid ""
-"This bar contains the list of currently open tabs. Click on a tab to make it "
-"active. You can also use keyboard shortcuts to navigate through tabs. The "
-"text on the tab shows the content currently open in it; place your mouse "
-"over the tab to see the full title, in case it has been shortened to fit the "
-"tab width."
-msgstr ""
-"Оваа лента содржи листа на тековно отворените ливчиња. Кликнете на ливчето "
-"за да го активирате. Исто така може да користите кратенки на тастатурата за "
-"да се движите по ливчињата. Текстот на ливчето е насловот на отворената веб-"
-"страница во него. Поставете го глушецот над ливчето за го видите целосниот "
-"наслов, во случај да бил скратен за да се собере во големината на ливчето."
-
-#: src/konqtabs.cpp:100
-msgid "Open a new tab"
-msgstr "Отвора ново ливче"
-
-#: src/konqtabs.cpp:109
-msgid "Close the current tab"
-msgstr "Го затвора тековното ливче"
-
-#: src/konqtabs.cpp:465
-msgid "&Duplicate Tab"
-msgstr "&Удвои ливче"
-
-#: src/konqtabs.cpp:470
-msgid "&Reload Tab"
-msgstr "&Превчитај ливче"
-
-#: src/konqtabs.cpp:477
-msgid "Other Tabs"
-msgstr "Други ливчиња"
-
-#: src/konqtabs.cpp:482
-msgid "D&etach Tab"
-msgstr "Од&вои ливче"
-
-#: src/konqtabs.cpp:488
-msgid "&Close Tab"
-msgstr "За&твори ливче"
-
-#: src/konqundomanager.cpp:110 src/konqundomanager.cpp:266
-msgid "Und&o: Closed Tab"
-msgstr "&Отповикај: затворено ливче"
-
-#: src/konqundomanager.cpp:112 src/konqundomanager.cpp:120
-#: src/konqundomanager.cpp:162
-msgid "Und&o: Closed Window"
-msgstr "&Отповикај: затворен прозорец"
-
-#: src/konqundomanager.cpp:122
-msgid "Und&o"
-msgstr "&Отповикај"
-
 #: src/konqview.cpp:1199
 msgid ""
 "The page you are trying to view is the result of posted form data. If you "
@@ -1524,6 +1524,23 @@ msgid "Cannot find parent item %1 in the tree. Internal error."
 msgstr ""
 "Не можам да го најдам родителскиот елемент %1 во стеблото. Внатрешна грешка."
 
+#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
+#: sidebar/web_module/web_module.cpp:300
+msgctxt "@label"
+msgid "Name:"
+msgstr "Име:"
+
+#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
+#: sidebar/web_module/web_module.cpp:300
+msgctxt "@label"
+msgid "Path or URL:"
+msgstr "Патека или адреса:"
+
+#: sidebar/trees/konqsidebar_oldtreemodule.cpp:180
+msgctxt "@title:window"
+msgid "Add folder sidebar module"
+msgstr "Додавање на модулот за папки во страничната лента"
+
 #: sidebar/trees/konq_sidebartree.cpp:203
 msgid "&Create New Folder..."
 msgstr "&Создај нова папка..."
@@ -1551,23 +1568,6 @@ msgstr "Создај нова папка"
 #: sidebar/trees/konq_sidebartree.cpp:956
 msgid "Enter folder name:"
 msgstr "Внесете име на папка:"
-
-#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
-#: sidebar/web_module/web_module.cpp:300
-msgctxt "@label"
-msgid "Name:"
-msgstr "Име:"
-
-#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
-#: sidebar/web_module/web_module.cpp:300
-msgctxt "@label"
-msgid "Path or URL:"
-msgstr "Патека или адреса:"
-
-#: sidebar/trees/konqsidebar_oldtreemodule.cpp:180
-msgctxt "@title:window"
-msgid "Add folder sidebar module"
-msgstr "Додавање на модулот за папки во страничната лента"
 
 #: sidebar/web_module/web_module.cpp:57
 msgid "&Open Link"
