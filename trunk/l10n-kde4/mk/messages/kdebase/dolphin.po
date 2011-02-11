@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-10 02:47+0100\n"
+"POT-Creation-Date: 2011-02-11 02:44+0100\n"
 "PO-Revision-Date: 2010-01-28 23:53+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -111,6 +111,14 @@ msgctxt "@label::textbox"
 msgid "Select which data should be shown:"
 msgstr "Конфигурирајте кои податоци да бидат прикажани"
 
+#: panels/information/phononwidget.cpp:139
+msgid "play"
+msgstr "пушти"
+
+#: panels/information/phononwidget.cpp:144
+msgid "stop"
+msgstr "стоп"
+
 #: panels/information/informationpanelcontent.cpp:235
 #, kde-format
 msgctxt "@info"
@@ -139,14 +147,6 @@ msgid "Select which data should be shown in the information panel:"
 msgstr ""
 "Конфигурирајте кои податоци треба да бидат прикажани во Панелот со "
 "информации."
-
-#: panels/information/phononwidget.cpp:139
-msgid "play"
-msgstr "пушти"
-
-#: panels/information/phononwidget.cpp:144
-msgid "stop"
-msgstr "стоп"
 
 #: search/dolphinsearchbox.cpp:105
 #, fuzzy, kde-format
@@ -1368,85 +1368,6 @@ msgctxt "@info:tooltip"
 msgid "Select Item"
 msgstr "Избери елемент"
 
-#: dolphincontextmenu.cpp:169
-msgctxt "@action:inmenu"
-msgid "Empty Trash"
-msgstr "Испразни ја корпата"
-
-#: dolphincontextmenu.cpp:175 dolphincontextmenu.cpp:346
-msgctxt "@action:inmenu Add current folder to places"
-msgid "Add to Places"
-msgstr "Додај во местата"
-
-#: dolphincontextmenu.cpp:191
-msgctxt "@info"
-msgid "Do you really want to empty the Trash? All items will be deleted."
-msgstr ""
-"Дали навистина сакате да ја испразните корпата? Сите елементи ќе бидат "
-"избришани."
-
-#: dolphincontextmenu.cpp:195
-msgctxt "@action:button"
-msgid "Empty Trash"
-msgstr "Испразни ја корпата"
-
-#: dolphincontextmenu.cpp:204
-msgctxt "@label"
-msgid "Trash"
-msgstr "Корпа"
-
-#: dolphincontextmenu.cpp:214
-msgctxt "@action:inmenu"
-msgid "Restore"
-msgstr "Врати"
-
-#: dolphincontextmenu.cpp:253 dolphinmainwindow.cpp:1417
-msgctxt "@title:menu Create new folder, file, link, etc."
-msgid "Create New"
-msgstr "Креирај ново"
-
-#: dolphincontextmenu.cpp:266
-msgctxt "@action:inmenu Add selected folder to places"
-msgid "Add to Places"
-msgstr "Додај во местата"
-
-#: dolphincontextmenu.cpp:273
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Open in New Window"
-msgctxt "@action:inmenu"
-msgid "Open Path in New Window"
-msgstr "Отвори во нов прозорец"
-
-#: dolphincontextmenu.cpp:279
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Open in New Tab"
-msgctxt "@action:inmenu"
-msgid "Open Path in New Tab"
-msgstr "Отвори во ново ливче"
-
-#: dolphincontextmenu.cpp:450
-msgctxt "@action:inmenu"
-msgid "Paste Into Folder"
-msgstr "Вметни во папка"
-
-#: dolphincontextmenu.cpp:562
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Move to Trash"
-msgctxt "@action:inmenu"
-msgid "&Move to Trash"
-msgstr "Премести во корпа"
-
-#: dolphincontextmenu.cpp:565
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Delete"
-msgctxt "@action:inmenu"
-msgid "&Delete"
-msgstr "Избриши"
-
 #: dolphinmainwindow.cpp:227
 msgctxt "@info:status"
 msgid "Successfully copied."
@@ -1529,6 +1450,11 @@ msgstr "Затвори ги другите ливчиња"
 msgctxt "@action:inmenu"
 msgid "Close Tab"
 msgstr "Затвори ливче"
+
+#: dolphinmainwindow.cpp:1417 dolphincontextmenu.cpp:253
+msgctxt "@title:menu Create new folder, file, link, etc."
+msgid "Create New"
+msgstr "Креирај ново"
 
 #: dolphinmainwindow.cpp:1424
 msgctxt "@action:inmenu File"
@@ -1894,6 +1820,80 @@ msgstr ""
 msgctxt "@info:shell"
 msgid "Document to open"
 msgstr "Документ за отвoрање"
+
+#: dolphincontextmenu.cpp:169
+msgctxt "@action:inmenu"
+msgid "Empty Trash"
+msgstr "Испразни ја корпата"
+
+#: dolphincontextmenu.cpp:175 dolphincontextmenu.cpp:346
+msgctxt "@action:inmenu Add current folder to places"
+msgid "Add to Places"
+msgstr "Додај во местата"
+
+#: dolphincontextmenu.cpp:191
+msgctxt "@info"
+msgid "Do you really want to empty the Trash? All items will be deleted."
+msgstr ""
+"Дали навистина сакате да ја испразните корпата? Сите елементи ќе бидат "
+"избришани."
+
+#: dolphincontextmenu.cpp:195
+msgctxt "@action:button"
+msgid "Empty Trash"
+msgstr "Испразни ја корпата"
+
+#: dolphincontextmenu.cpp:204
+msgctxt "@label"
+msgid "Trash"
+msgstr "Корпа"
+
+#: dolphincontextmenu.cpp:214
+msgctxt "@action:inmenu"
+msgid "Restore"
+msgstr "Врати"
+
+#: dolphincontextmenu.cpp:266
+msgctxt "@action:inmenu Add selected folder to places"
+msgid "Add to Places"
+msgstr "Додај во местата"
+
+#: dolphincontextmenu.cpp:273
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Open in New Window"
+msgctxt "@action:inmenu"
+msgid "Open Path in New Window"
+msgstr "Отвори во нов прозорец"
+
+#: dolphincontextmenu.cpp:279
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Open in New Tab"
+msgctxt "@action:inmenu"
+msgid "Open Path in New Tab"
+msgstr "Отвори во ново ливче"
+
+#: dolphincontextmenu.cpp:450
+msgctxt "@action:inmenu"
+msgid "Paste Into Folder"
+msgstr "Вметни во папка"
+
+#: dolphincontextmenu.cpp:562
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Move to Trash"
+msgctxt "@action:inmenu"
+msgid "&Move to Trash"
+msgstr "Премести во корпа"
+
+#: dolphincontextmenu.cpp:565
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Delete"
+msgctxt "@action:inmenu"
+msgid "&Delete"
+msgstr "Избриши"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
