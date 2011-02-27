@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-26 03:41+0100\n"
+"POT-Creation-Date: 2011-02-27 03:40+0100\n"
 "PO-Revision-Date: 2007-02-28 14:08+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -2722,7 +2722,7 @@ msgstr ""
 "КПошта е моментално во режим без мрежа. Вашите пораки ќе бидат задржани во "
 "излезното сандаче додека не се поврзете на мрежа."
 
-#: kmcomposewin.cpp:2385 kmkernel.cpp:964
+#: kmcomposewin.cpp:2385 kmkernel.cpp:988
 msgid "Online/Offline"
 msgstr "На мрежа/без мрежа"
 
@@ -3214,40 +3214,78 @@ msgstr ""
 "Преименувајте го филтерот „%1“ во:\n"
 "(оставете го полето празно за автоматско именување)"
 
-#: kmkernel.cpp:892
+#: kmkernel.cpp:256
+msgid ""
+"<b>Thanks for using KMail2!</b><br/><p>KMail2 uses a new storage technology "
+"that requires migration of your current KMail data and configuration.\n"
+"<p>The conversion process can take a lot of time (depending on the amount of "
+"email you have) and it <emph>must not be interrupted</emph>.</p>\n"
+"<p>You can:</p><ul><li>Migrate now (be prepared to wait)</li><li>Skip the "
+"migration and start with fresh data and configuration</li><li>Cancel and "
+"exit KMail2.</li></ul><p><a href=\"http://userbase.kde.org/Akonadi\">More "
+"Information...</a></p>"
+msgstr ""
+
+#: kmkernel.cpp:265
+#, fuzzy
+#| msgid "KMail Question"
+msgid "KMail Migration"
+msgstr "Прашање на КПошта"
+
+#: kmkernel.cpp:265
+msgid "Migrate Now"
+msgstr ""
+
+#: kmkernel.cpp:265
+msgid "Skip Migration"
+msgstr ""
+
+#: kmkernel.cpp:298
+msgid ""
+"Migration to KMail 2 failed. In case you want to try again, run 'kmail-"
+"migrator --interactive' manually."
+msgstr ""
+
+#: kmkernel.cpp:299
+#, fuzzy
+#| msgid "Migrate Mail Files?"
+msgid "Migration Failed"
+msgstr "Ги пренесувате датотеките со пошта?"
+
+#: kmkernel.cpp:916
 msgid "KMail is set to be offline; all network jobs are suspended"
 msgstr "КПошта е без мрежа; сите мрежни задачи се суспендирани"
 
-#: kmkernel.cpp:911
+#: kmkernel.cpp:935
 msgid "KMail is set to be online; all network jobs resumed"
 msgstr "КПошта е на мрежа; сите мрежни задачи се продолжени"
 
-#: kmkernel.cpp:962
+#: kmkernel.cpp:986
 msgid "KMail is currently in offline mode. How do you want to proceed?"
 msgstr "КПошта е моментално во режим без мрежа. Како сакате да продолжите?"
 
-#: kmkernel.cpp:965 kmmainwidget.cpp:2408
+#: kmkernel.cpp:989 kmmainwidget.cpp:2408
 msgid "Work Online"
 msgstr "Работи на мрежа"
 
-#: kmkernel.cpp:966 kmmainwidget.cpp:2404
+#: kmkernel.cpp:990 kmmainwidget.cpp:2404
 msgid "Work Offline"
 msgstr "Работи без мрежа"
 
-#: kmkernel.cpp:1064
+#: kmkernel.cpp:1088
 #, kde-format
 msgid ""
 "Failed to open autosave file at %1.\n"
 "Reason: %2"
 msgstr ""
 
-#: kmkernel.cpp:1066
+#: kmkernel.cpp:1090
 #, fuzzy
 #| msgid "Autosaving Failed"
 msgid "Opening Autosave File Failed"
 msgstr "Автом. зачувување не успеа"
 
-#: kmkernel.cpp:1562
+#: kmkernel.cpp:1586
 #, kde-format
 msgid "This identity has been changed to use the default transport:"
 msgid_plural ""
@@ -3259,7 +3297,7 @@ msgstr[1] ""
 msgstr[2] ""
 "Овие %1 идентитети беа изменети за да го користат стандардниот транспорт:"
 
-#: kmkernel.cpp:1585
+#: kmkernel.cpp:1609
 #, kde-format
 msgid "This identity has been changed to use the modified transport:"
 msgid_plural ""
@@ -3271,11 +3309,11 @@ msgstr[1] ""
 msgstr[2] ""
 "Овие %1 идентитети беа изменети за да го користат изменетиот транспорт:"
 
-#: kmkernel.cpp:1599
+#: kmkernel.cpp:1623
 msgid "Sending messages"
 msgstr "Испраќам пораки"
 
-#: kmkernel.cpp:1600
+#: kmkernel.cpp:1624
 #, fuzzy
 #| msgid "Initiating sender process..."
 msgid "Initiating sending process..."
@@ -4174,7 +4212,7 @@ msgstr "Својства за папката %1"
 msgid "New &Window"
 msgstr "Нов &прозорец"
 
-#: kmmainwin.cpp:192
+#: kmmainwin.cpp:187
 #, fuzzy
 msgid "Starting..."
 msgstr "&Испраќање"
@@ -8983,9 +9021,6 @@ msgstr ""
 #~ "Делот %1 од пораката е криптиран. Дали сакате да го зачувате криптирањето "
 #~ "при зачувувањето?"
 
-#~ msgid "KMail Question"
-#~ msgstr "Прашање на КПошта"
-
 #~ msgid "Keep Encryption"
 #~ msgstr "Задржи го криптирањето"
 
@@ -12341,9 +12376,6 @@ msgstr ""
 #~ "нејзините пораки. %2 може да ја премести содржината на <i>%6</i> во оваа "
 #~ "папка наместо вас.<p><strong>Дали сакате %3 да ги премести поштенските "
 #~ "пораки сега?</strong></qt>"
-
-#~ msgid "Migrate Mail Files?"
-#~ msgstr "Ги пренесувате датотеките со пошта?"
 
 #~ msgctxt "View->"
 #~ msgid "&Headers"
