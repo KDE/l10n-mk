@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-12 03:43+0200\n"
+"POT-Creation-Date: 2011-04-13 03:25+0200\n"
 "PO-Revision-Date: 2000-10-02 22:00+0100\n"
 "Last-Translator: Damjan Janevski <miopa@usa.net>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -687,7 +687,7 @@ msgstr ""
 
 #: kopageapp/dialogs/KoPAConfigureDialog.cpp:40
 #: kopageapp/dialogs/KoPAConfigureDialog.cpp:41
-#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:43
+#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:39
 msgid "Misc"
 msgstr ""
 
@@ -938,7 +938,7 @@ msgstr "По Избор"
 #: kopageapp/KoPADocumentStructureDocker.cpp:641
 #: koreport/wrtembed/KoReportDesigner.cpp:833
 #: pigment/compositeops/KoCompositeOpCopy.h:37
-#: pigment/compositeops/KoCompositeOpCopy2.h:52
+#: pigment/compositeops/KoCompositeOpCopy2.h:42
 #, fuzzy
 msgid "Copy"
 msgstr "Фирма :"
@@ -3294,37 +3294,20 @@ msgstr ""
 msgid "32 Bits Float"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:27
-msgid "Mix"
-msgstr ""
-
-#: pigment/KoCompositeOp.cpp:31
-#, fuzzy
-msgid "Light"
-msgstr "Десно:"
-
-#: pigment/KoCompositeOp.cpp:35
-#, fuzzy
-msgid "Arithmetic"
-msgstr "Зачувај документ како"
-
-#: pigment/KoCompositeOp.cpp:39
-#, fuzzy
-msgid "Color"
-msgstr "Колони:"
-
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:48
 msgid "Clear"
 msgstr ""
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:121
 #: pigment/compositeops/KoCompositeOpSubtract.h:37
+#: pigment/compositeops/KoCompositeOps.h:87
 #, fuzzy
 msgid "Subtract"
 msgstr "Кратка содржина :"
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:193
 #: pigment/compositeops/KoCompositeOpMultiply.h:35
+#: pigment/compositeops/KoCompositeOps.h:88
 msgid "Multiply"
 msgstr ""
 
@@ -3349,7 +3332,7 @@ msgid "L*a*b* (16-bit integer/channel, unmanaged)"
 msgstr ""
 
 #: pigment/colorspaces/KoLabColorSpace.cpp:42
-#: widgets/KoUniColorChooser.cpp:201
+#: pigment/compositeops/KoCompositeOps.h:152 widgets/KoUniColorChooser.cpp:201
 msgid "Lightness"
 msgstr ""
 
@@ -3404,6 +3387,7 @@ msgid "Alpha darken"
 msgstr ""
 
 #: pigment/compositeops/KoCompositeOpDivide.h:36
+#: pigment/compositeops/KoCompositeOps.h:89
 msgid "Divide"
 msgstr ""
 
@@ -3432,11 +3416,13 @@ msgid "Normal"
 msgstr ""
 
 #: pigment/compositeops/KoCompositeOpOverlay.h:36
+#: pigment/compositeops/KoCompositeOps.h:62
 #, fuzzy
 msgid "Overlay"
 msgstr "Насловна линија:"
 
 #: pigment/compositeops/KoCompositeOpScreen.h:36
+#: pigment/compositeops/KoCompositeOps.h:70
 msgid "Screen"
 msgstr "Екран"
 
@@ -3454,8 +3440,320 @@ msgstr ""
 msgid "Copy Opacy"
 msgstr "Фирма :"
 
+#: pigment/compositeops/KoCompositeOpDissolve.h:61
+msgid "Dissolve"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:63
+#, fuzzy
+msgid "Grain Merge"
+msgstr "Е-пошта :"
+
+#: pigment/compositeops/KoCompositeOps.h:64
+msgid "Grain Extract"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:65
+#, fuzzy
+msgid "Hard Mix"
+msgstr "Висина:"
+
+#: pigment/compositeops/KoCompositeOps.h:66
+msgid "Geometric Mean"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:67
+msgid "Parallel"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:68
+msgid "Allanon"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:71
+#, fuzzy
+msgid "Color Dodge"
+msgstr "Колони:"
+
+#: pigment/compositeops/KoCompositeOps.h:72
+#, fuzzy
+msgid "Linear Dodge"
+msgstr "Рабови на страна"
+
+#: pigment/compositeops/KoCompositeOps.h:73 pigment/KoCompositeOp.cpp:32
+#, fuzzy
+msgid "Lighten"
+msgstr "Десно:"
+
+#: pigment/compositeops/KoCompositeOps.h:74
+#, fuzzy
+msgid "Hard Light"
+msgstr "Висина:"
+
+#: pigment/compositeops/KoCompositeOps.h:75
+#, fuzzy
+msgid "Soft Light"
+msgstr "inch"
+
+#: pigment/compositeops/KoCompositeOps.h:76
+#, fuzzy
+msgid "Gamma Light"
+msgstr "Десно:"
+
+#: pigment/compositeops/KoCompositeOps.h:77
+#, fuzzy
+msgid "Vivid Light"
+msgstr "Десно:"
+
+#: pigment/compositeops/KoCompositeOps.h:78
+#, fuzzy
+msgid "Pin Light"
+msgstr "Десно:"
+
+#: pigment/compositeops/KoCompositeOps.h:79
+#, fuzzy
+msgid "Linear Light"
+msgstr "Ширина:"
+
+#: pigment/compositeops/KoCompositeOps.h:81
+#, fuzzy
+msgid "Color Burn"
+msgstr "Колони:"
+
+#: pigment/compositeops/KoCompositeOps.h:82
+#, fuzzy
+msgid "Linear Burn"
+msgstr "Рабови на страна"
+
+#: pigment/compositeops/KoCompositeOps.h:83 pigment/KoCompositeOp.cpp:33
+#, fuzzy
+msgid "Darken"
+msgstr "Екран"
+
+#: pigment/compositeops/KoCompositeOps.h:84
+msgid "Gamma Dark"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:86
+#, fuzzy
+msgid "Addition"
+msgstr "&Додади група..."
+
+#: pigment/compositeops/KoCompositeOps.h:91
+msgid "Arcus Tangent"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:92
+msgid "Difference"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:93
+msgid "Exclusion"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:94
+msgid "Equivalence"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:95
+#, fuzzy
+msgid "Additive-Substractive"
+msgstr "Кратка содржина :"
+
+#: pigment/compositeops/KoCompositeOps.h:100
+#, fuzzy
+msgid "Copy Alpha"
+msgstr "Фирма :"
+
+#: pigment/compositeops/KoCompositeOps.h:125
+#, fuzzy
+msgid "Copy Red"
+msgstr "Фирма :"
+
+#: pigment/compositeops/KoCompositeOps.h:126
+#, fuzzy
+msgid "Copy Green"
+msgstr "Екран"
+
+#: pigment/compositeops/KoCompositeOps.h:127
+#, fuzzy
+msgid "Copy Blue"
+msgstr "Фирма :"
+
+#: pigment/compositeops/KoCompositeOps.h:129 pigment/KoCompositeOp.cpp:27
+#, fuzzy
+msgid "Color"
+msgstr "Колони:"
+
+#: pigment/compositeops/KoCompositeOps.h:130 widgets/KoUniColorChooser.cpp:116
+msgid "Hue"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:131 widgets/KoUniColorChooser.cpp:125
+msgid "Saturation"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:132
+#, fuzzy
+msgid "Increase Saturation"
+msgstr "Кратка содржина :"
+
+#: pigment/compositeops/KoCompositeOps.h:133
+#, fuzzy
+msgid "Decrease Saturation"
+msgstr ""
+"\n"
+"Ориентација:"
+
+#: pigment/compositeops/KoCompositeOps.h:134
+msgid "Luminosity"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:135
+#, fuzzy
+msgid "Increase Luminosity"
+msgstr "Име :"
+
+#: pigment/compositeops/KoCompositeOps.h:136
+#, fuzzy
+msgid "Decrease Luminosity"
+msgstr "Име :"
+
+#: pigment/compositeops/KoCompositeOps.h:138
+#, fuzzy
+msgid "Color HSI"
+msgstr "Колони:"
+
+#: pigment/compositeops/KoCompositeOps.h:139
+msgid "Hue HSI"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:140
+msgid "Saturation HSI"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:141
+msgid "Increase Saturation HSI"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:142
+msgid "Decrease Saturation HSI"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:143
+#, fuzzy
+msgid "Intensity"
+msgstr "Внесете име"
+
+#: pigment/compositeops/KoCompositeOps.h:144
+#, fuzzy
+msgid "Increase Intensity"
+msgstr "Име :"
+
+#: pigment/compositeops/KoCompositeOps.h:145
+#, fuzzy
+msgid "Decrease Intensity"
+msgstr "Име :"
+
+#: pigment/compositeops/KoCompositeOps.h:147
+#, fuzzy
+msgid "Color HSL"
+msgstr "Колони:"
+
+#: pigment/compositeops/KoCompositeOps.h:148
+msgid "Hue HSL"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:149
+msgid "Saturation HSL"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:150
+msgid "Increase Saturation HSL"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:151
+msgid "Decrease Saturation HSL"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:153
+#, fuzzy
+msgid "Increase Lightness"
+msgstr "Име :"
+
+#: pigment/compositeops/KoCompositeOps.h:154
+#, fuzzy
+msgid "Decrease Lightness"
+msgstr "Име :"
+
+#: pigment/compositeops/KoCompositeOps.h:156
+#, fuzzy
+msgid "Color HSV"
+msgstr "Колони:"
+
+#: pigment/compositeops/KoCompositeOps.h:157
+msgid "Hue HSV"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:158
+msgid "Saturation HSV"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:159
+msgid "Increase Saturation HSV"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:160
+msgid "Decrease Saturation HSV"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:161
+#, fuzzy
+msgid "Value"
+msgstr "Наслов :"
+
+#: pigment/compositeops/KoCompositeOps.h:162
+#, fuzzy
+msgid "Increase Value"
+msgstr "Име :"
+
+#: pigment/compositeops/KoCompositeOps.h:163
+#, fuzzy
+msgid "Decrease Value"
+msgstr "Име :"
+
 #: pigment/resources/KoStopGradient.cpp:421
 msgid "SVG Gradient"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:30
+#, fuzzy
+msgid "Arithmetic"
+msgstr "Зачувај документ како"
+
+#: pigment/KoCompositeOp.cpp:31
+#, fuzzy
+msgid "Negative"
+msgstr "Создади шаблон"
+
+#: pigment/KoCompositeOp.cpp:34
+msgid "HSY"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:35
+msgid "HSI"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:36
+msgid "HSL"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:37
+msgid "HSV"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:38
+msgid "Mix"
 msgstr ""
 
 #: widgets/KoColorSetWidget.cpp:189
@@ -3624,14 +3922,6 @@ msgstr "&Додади група..."
 #, fuzzy
 msgid "Choose File to Add"
 msgstr "Избери"
-
-#: widgets/KoUniColorChooser.cpp:116
-msgid "Hue"
-msgstr ""
-
-#: widgets/KoUniColorChooser.cpp:125
-msgid "Saturation"
-msgstr ""
 
 #: widgets/KoUniColorChooser.cpp:134
 msgid "Value (brightness)"
@@ -4850,6 +5140,10 @@ msgid "Blur radius:"
 msgstr ""
 
 #, fuzzy
+#~ msgid "Light"
+#~ msgstr "Десно:"
+
+#, fuzzy
 #~ msgid "Hide Dockers"
 #~ msgstr "Насловна линија:"
 
@@ -4857,82 +5151,6 @@ msgstr ""
 #~| msgid "Author"
 #~ msgid "Atop"
 #~ msgstr "Автор"
-
-#, fuzzy
-#~ msgid "Grain Merge"
-#~ msgstr "Е-пошта :"
-
-#, fuzzy
-#~ msgid "Hard Mix"
-#~ msgstr "Висина:"
-
-#, fuzzy
-#~ msgid "Color Burn"
-#~ msgstr "Колони:"
-
-#, fuzzy
-#~ msgid "Color Dodge"
-#~ msgstr "Колони:"
-
-#, fuzzy
-#~ msgid "Linear Burn"
-#~ msgstr "Рабови на страна"
-
-#, fuzzy
-#~ msgid "Linear Dodge"
-#~ msgstr "Рабови на страна"
-
-#, fuzzy
-#~ msgid "Darken"
-#~ msgstr "Екран"
-
-#, fuzzy
-#~ msgid "Lighten"
-#~ msgstr "Десно:"
-
-#, fuzzy
-#~ msgid "Hard Light"
-#~ msgstr "Висина:"
-
-#, fuzzy
-#~ msgid "Soft Light"
-#~ msgstr "inch"
-
-#, fuzzy
-#~ msgid "Gamma Light"
-#~ msgstr "Десно:"
-
-#, fuzzy
-#~ msgid "Vivid Light"
-#~ msgstr "Десно:"
-
-#, fuzzy
-#~ msgid "Pin Light"
-#~ msgstr "Десно:"
-
-#, fuzzy
-#~ msgid "Linear Light"
-#~ msgstr "Ширина:"
-
-#, fuzzy
-#~ msgid "Addition"
-#~ msgstr "&Додади група..."
-
-#, fuzzy
-#~ msgid "Additive-Substractive"
-#~ msgstr "Кратка содржина :"
-
-#, fuzzy
-#~ msgid "Copy Red"
-#~ msgstr "Фирма :"
-
-#, fuzzy
-#~ msgid "Copy Green"
-#~ msgstr "Екран"
-
-#, fuzzy
-#~ msgid "Copy Blue"
-#~ msgstr "Фирма :"
 
 #, fuzzy
 #~ msgid "Spread out:"
@@ -5396,10 +5614,6 @@ msgstr ""
 #~ msgstr "По Избор"
 
 #, fuzzy
-#~ msgid "Internet"
-#~ msgstr "Внесете име"
-
-#, fuzzy
 #~ msgid "Internet address:"
 #~ msgstr "Внесете име"
 
@@ -5500,12 +5714,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "New Style Template (%1)"
 #~ msgstr "Создади шаблон"
-
-#, fuzzy
-#~ msgid "Decoration"
-#~ msgstr ""
-#~ "\n"
-#~ "Ориентација:"
 
 #, fuzzy
 #~ msgid "Layout"
@@ -6084,10 +6292,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Font style"
 #~ msgstr "Наслов :"
-
-#, fuzzy
-#~ msgid "Relative"
-#~ msgstr "Создади шаблон"
 
 #, fuzzy
 #~ msgid "Actual Font"
