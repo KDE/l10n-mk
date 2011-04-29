@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-28 04:09+0200\n"
+"POT-Creation-Date: 2011-04-29 04:08+0200\n"
 "PO-Revision-Date: 2010-01-21 13:58+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -66,7 +66,7 @@ msgid "Select Folder"
 msgstr "Избор на папка"
 
 #: bookmarks/kbookmarkdialog.cc:159 ../kfile/kdirselectdialog.cpp:132
-#: ../kfile/knewfilemenu.cpp:1013
+#: ../kfile/knewfilemenu.cpp:1015
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Нова папка"
@@ -4912,19 +4912,6 @@ msgstr "KMailService"
 msgid "Mail service"
 msgstr "Поштенски сервис"
 
-#: misc/kpac/discovery.cpp:121
-msgid "Could not find a usable proxy configuration script"
-msgstr "Не може да се најде употреблива скрипта за конфигурација на проксито"
-
-#: misc/kpac/script.cpp:750
-msgid "Could not find 'FindProxyForURL' or 'FindProxyForURLEx'"
-msgstr ""
-
-#: misc/kpac/script.cpp:761
-#, kde-format
-msgid "Got an invalid reply when calling %1"
-msgstr ""
-
 #: misc/kpac/downloader.cpp:87
 #, kde-format
 msgid ""
@@ -4938,7 +4925,11 @@ msgstr ""
 msgid "Could not download the proxy configuration script"
 msgstr "Не може да се симне скриптата за конфигурација на проксито"
 
-#: misc/kpac/proxyscout.cpp:186
+#: misc/kpac/discovery.cpp:111
+msgid "Could not find a usable proxy configuration script"
+msgstr "Не може да се најде употреблива скрипта за конфигурација на проксито"
+
+#: misc/kpac/proxyscout.cpp:196
 #, kde-format
 msgid ""
 "The proxy configuration script is invalid:\n"
@@ -4947,7 +4938,7 @@ msgstr ""
 "Скриптата за конфигурација на проксито не е валидна:\n"
 "%1"
 
-#: misc/kpac/proxyscout.cpp:287
+#: misc/kpac/proxyscout.cpp:310
 #, kde-format
 msgid ""
 "The proxy configuration script returned an error:\n"
@@ -4955,6 +4946,15 @@ msgid ""
 msgstr ""
 "Скриптата за конфигурација на проксито врати грешка:\n"
 "%1"
+
+#: misc/kpac/script.cpp:752
+msgid "Could not find 'FindProxyForURL' or 'FindProxyForURLEx'"
+msgstr ""
+
+#: misc/kpac/script.cpp:763
+#, kde-format
+msgid "Got an invalid reply when calling %1"
+msgstr ""
 
 #: misc/ksendbugmail/main.cpp:43
 msgid "Error connecting to server."
@@ -5777,7 +5777,7 @@ msgstr "Отворам поврзување со компјутерот %1"
 msgid "Connected to host %1"
 msgstr "Поврзан на компјутерот %1"
 
-#: ../kioslave/ftp/ftp.cpp:402
+#: ../kioslave/ftp/ftp.cpp:425
 #, kde-format
 msgid ""
 "%1.\n"
@@ -5788,11 +5788,11 @@ msgstr ""
 "\n"
 "Причина: %2"
 
-#: ../kioslave/ftp/ftp.cpp:431
+#: ../kioslave/ftp/ftp.cpp:454
 msgid "Sending login information"
 msgstr "Праќање информации за најавување"
 
-#: ../kioslave/ftp/ftp.cpp:484
+#: ../kioslave/ftp/ftp.cpp:516
 #, kde-format
 msgid ""
 "Message sent:\n"
@@ -5809,25 +5809,25 @@ msgstr ""
 "%2\n"
 "\n"
 
-#: ../kioslave/ftp/ftp.cpp:492 ../kioslave/http/http.cpp:3321
+#: ../kioslave/ftp/ftp.cpp:524 ../kioslave/http/http.cpp:3321
 msgid "You need to supply a username and a password to access this site."
 msgstr ""
 "Треба да ги наведете вашето име и лозинка за да пристапите на оваа локација."
 
-#: ../kioslave/ftp/ftp.cpp:494 ../kioslave/http/http.cpp:3323
+#: ../kioslave/ftp/ftp.cpp:526 ../kioslave/http/http.cpp:3323
 msgid "Site:"
 msgstr "Локација:"
 
-#: ../kioslave/ftp/ftp.cpp:495
+#: ../kioslave/ftp/ftp.cpp:527
 #, kde-format
 msgid "<b>%1</b>"
 msgstr "<b>%1</b>"
 
-#: ../kioslave/ftp/ftp.cpp:578
+#: ../kioslave/ftp/ftp.cpp:625
 msgid "Login OK"
 msgstr "Најавата е во ред"
 
-#: ../kioslave/ftp/ftp.cpp:607
+#: ../kioslave/ftp/ftp.cpp:654
 #, kde-format
 msgid "Could not login to %1."
 msgstr "Не можам да се најавам на %1."
@@ -6656,101 +6656,6 @@ msgstr "Кликнете за навигација до локацијата"
 msgid "Click to Edit Location"
 msgstr "Кликнете за уредување на локацијата"
 
-#: ../kfile/knewfilemenu.cpp:368 ../kfile/knewfilemenu.cpp:870
-#, fuzzy
-#| msgid "Store"
-msgid "Sorry"
-msgstr "Зачувај"
-
-#: ../kfile/knewfilemenu.cpp:377
-#, fuzzy, kde-format
-#| msgid ""
-#| "<qt>Unable to run the command specified. The file or folder <b>%1</b> "
-#| "does not exist.</qt>"
-msgid "<qt>The template file <b>%1</b> does not exist.</qt>"
-msgstr ""
-"<qt>Не може да се изврши дадената команда. Датотеката или папката <b>%1</b> "
-"не постои.</qt>"
-
-#: ../kfile/knewfilemenu.cpp:396
-msgctxt "@action:button"
-msgid "Create directory"
-msgstr "Креирај папка"
-
-#: ../kfile/knewfilemenu.cpp:398
-msgctxt "@action:button"
-msgid "Enter a different name"
-msgstr "Внеси друго име"
-
-#: ../kfile/knewfilemenu.cpp:401
-msgid "Create hidden directory?"
-msgstr "Креирање скриена папка?"
-
-#: ../kfile/knewfilemenu.cpp:405
-#, kde-format
-msgid ""
-"The name \"%1\" starts with a dot, so the directory will be hidden by "
-"default."
-msgstr ""
-"Името „%1“ започнува со точка, што значи дека папката стандардно нема да се "
-"гледа."
-
-#: ../kfile/knewfilemenu.cpp:407
-msgid "Do not ask again"
-msgstr ""
-
-#: ../kfile/knewfilemenu.cpp:498 ../kfile/knewfilemenu.cpp:556
-#, fuzzy
-#| msgid "Device name"
-msgid "File name:"
-msgstr "Име на уред"
-
-#: ../kfile/knewfilemenu.cpp:501
-#, fuzzy
-#| msgid "Could Not Create Symbolic Link"
-msgid "Create Symlink"
-msgstr "Не можам да создадам симболичка врска"
-
-#: ../kfile/knewfilemenu.cpp:560
-#, fuzzy
-#| msgid "Created:"
-msgid "Create link to URL"
-msgstr "Создадено:"
-
-#: ../kfile/knewfilemenu.cpp:880
-msgid ""
-"Basic links can only point to local files or directories.\n"
-"Please use \"Link to Location\" for remote URLs."
-msgstr ""
-
-#: ../kfile/knewfilemenu.cpp:945
-#, fuzzy
-#| msgid "Created:"
-msgid "Create New"
-msgstr "Создадено:"
-
-#: ../kfile/knewfilemenu.cpp:958
-#, fuzzy
-#| msgid "Device"
-msgid "Link to Device"
-msgstr "Уред"
-
-#: ../kfile/knewfilemenu.cpp:1003
-#, fuzzy
-#| msgid "New Folder"
-msgctxt "Default name for a new folder"
-msgid "New Folder"
-msgstr "Нова папка"
-
-#: ../kfile/knewfilemenu.cpp:1017
-#, kde-format
-msgid ""
-"Create new folder in:\n"
-"%1"
-msgstr ""
-"Создај нова папка во:\n"
-"%1"
-
 #: ../kfile/kurlnavigator.cpp:429
 msgid "Copy"
 msgstr "Копирај"
@@ -7066,6 +6971,101 @@ msgstr ""
 #| msgid "*|All Files"
 msgid "All Files"
 msgstr "*|Сите датотеки"
+
+#: ../kfile/knewfilemenu.cpp:368 ../kfile/knewfilemenu.cpp:872
+#, fuzzy
+#| msgid "Store"
+msgid "Sorry"
+msgstr "Зачувај"
+
+#: ../kfile/knewfilemenu.cpp:377
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Unable to run the command specified. The file or folder <b>%1</b> "
+#| "does not exist.</qt>"
+msgid "<qt>The template file <b>%1</b> does not exist.</qt>"
+msgstr ""
+"<qt>Не може да се изврши дадената команда. Датотеката или папката <b>%1</b> "
+"не постои.</qt>"
+
+#: ../kfile/knewfilemenu.cpp:396
+msgctxt "@action:button"
+msgid "Create directory"
+msgstr "Креирај папка"
+
+#: ../kfile/knewfilemenu.cpp:398
+msgctxt "@action:button"
+msgid "Enter a different name"
+msgstr "Внеси друго име"
+
+#: ../kfile/knewfilemenu.cpp:401
+msgid "Create hidden directory?"
+msgstr "Креирање скриена папка?"
+
+#: ../kfile/knewfilemenu.cpp:405
+#, kde-format
+msgid ""
+"The name \"%1\" starts with a dot, so the directory will be hidden by "
+"default."
+msgstr ""
+"Името „%1“ започнува со точка, што значи дека папката стандардно нема да се "
+"гледа."
+
+#: ../kfile/knewfilemenu.cpp:407
+msgid "Do not ask again"
+msgstr ""
+
+#: ../kfile/knewfilemenu.cpp:500 ../kfile/knewfilemenu.cpp:558
+#, fuzzy
+#| msgid "Device name"
+msgid "File name:"
+msgstr "Име на уред"
+
+#: ../kfile/knewfilemenu.cpp:503
+#, fuzzy
+#| msgid "Could Not Create Symbolic Link"
+msgid "Create Symlink"
+msgstr "Не можам да создадам симболичка врска"
+
+#: ../kfile/knewfilemenu.cpp:562
+#, fuzzy
+#| msgid "Created:"
+msgid "Create link to URL"
+msgstr "Создадено:"
+
+#: ../kfile/knewfilemenu.cpp:882
+msgid ""
+"Basic links can only point to local files or directories.\n"
+"Please use \"Link to Location\" for remote URLs."
+msgstr ""
+
+#: ../kfile/knewfilemenu.cpp:947
+#, fuzzy
+#| msgid "Created:"
+msgid "Create New"
+msgstr "Создадено:"
+
+#: ../kfile/knewfilemenu.cpp:960
+#, fuzzy
+#| msgid "Device"
+msgid "Link to Device"
+msgstr "Уред"
+
+#: ../kfile/knewfilemenu.cpp:1005
+#, fuzzy
+#| msgid "New Folder"
+msgctxt "Default name for a new folder"
+msgid "New Folder"
+msgstr "Нова папка"
+
+#: ../kfile/knewfilemenu.cpp:1019
+#, kde-format
+msgid ""
+"Create new folder in:\n"
+"%1"
+msgstr ""
+"Создај нова папка во:\n"
+"%1"
 
 #, fuzzy
 #~| msgid "L&abel:"
