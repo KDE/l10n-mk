@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-04 04:04+0200\n"
+"POT-Creation-Date: 2011-05-05 04:04+0200\n"
 "PO-Revision-Date: 2010-01-21 13:58+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -3439,7 +3439,7 @@ msgid "The server was too busy responding to other requests to respond."
 msgstr ""
 "Серверот беше премногу зафатен со одговарање на други барања за да одговори."
 
-#: kio/global.cpp:1094 kio/slavebase.cpp:1300
+#: kio/global.cpp:1094 kio/slavebase.cpp:1302
 msgid "Unknown Error"
 msgstr "Непозната грешка"
 
@@ -4764,9 +4764,77 @@ msgstr "Овој сертификат не е релевантен."
 msgid "The certificate is invalid."
 msgstr "Сертификатот не е валиден."
 
-#: kssl/ksslinfodialog.cpp:73 kssl/ksslkeygen.cpp:125
+#: kssl/ksslkeygen.cpp:83
+msgid "KDE Certificate Request"
+msgstr "Барање за сертификат во KDE "
+
+#: kssl/ksslkeygen.cpp:90
+msgid "KDE Certificate Request - Password"
+msgstr "Барање за сертификат во KDE - лозинка"
+
+#: kssl/ksslkeygen.cpp:125
+msgid "Unsupported key size."
+msgstr "Неподдржана големина на клуч."
+
+#: kssl/ksslkeygen.cpp:125 kssl/ksslinfodialog.cpp:73
 msgid "KDE SSL Information"
 msgstr "Информации за SSL во KDE "
+
+#: kssl/ksslkeygen.cpp:131
+msgid "KDE"
+msgstr "KDE"
+
+#: kssl/ksslkeygen.cpp:132
+msgid "Please wait while the encryption keys are generated..."
+msgstr "Почекајте додека се генерираат клучевите за криптирање..."
+
+#: kssl/ksslkeygen.cpp:145
+msgid "Do you wish to store the passphrase in your wallet file?"
+msgstr "Дали сакате да ја зачувате тајната фраза во вашиот паричник?"
+
+#: kssl/ksslkeygen.cpp:145
+msgid "Store"
+msgstr "Зачувај"
+
+#: kssl/ksslkeygen.cpp:145
+msgid "Do Not Store"
+msgstr "Не зачувувај"
+
+#: kssl/ksslkeygen.cpp:261
+msgid "2048 (High Grade)"
+msgstr "2048 (Висока класа)"
+
+#: kssl/ksslkeygen.cpp:262
+msgid "1024 (Medium Grade)"
+msgstr "1024 (Средна класа)"
+
+#: kssl/ksslkeygen.cpp:263
+msgid "768  (Low Grade)"
+msgstr "768  (Ниска класа)"
+
+#: kssl/ksslkeygen.cpp:264
+msgid "512  (Low Grade)"
+msgstr "512  (Ниска класа)"
+
+#: kssl/ksslkeygen.cpp:266
+msgid "No SSL support."
+msgstr "Нема поддршка за SSL."
+
+#: kssl/ksslpemcallback.cpp:37
+msgid "Certificate password"
+msgstr "Лозинка за сертификатот."
+
+#: kssl/ksslutils.cpp:78
+msgid "GMT"
+msgstr "GMT"
+
+#: kssl/sslui.cpp:52
+msgid ""
+"The remote host did not send any SSL certificates.\n"
+"Aborting because the identity of the host cannot be established."
+msgstr ""
+"Оддалечениот сервер не испрати никакви SSL-сертификати.\n"
+"Прекинувам бидејќи не може да биде установен идентитетот на серверот."
 
 #: kssl/ksslinfodialog.cpp:81
 msgctxt "The receiver of the SSL certificate"
@@ -4836,74 +4904,6 @@ msgstr "НЕ, имаше грешки:"
 msgctxt "The certificate is trusted"
 msgid "Yes"
 msgstr "Да"
-
-#: kssl/ksslkeygen.cpp:83
-msgid "KDE Certificate Request"
-msgstr "Барање за сертификат во KDE "
-
-#: kssl/ksslkeygen.cpp:90
-msgid "KDE Certificate Request - Password"
-msgstr "Барање за сертификат во KDE - лозинка"
-
-#: kssl/ksslkeygen.cpp:125
-msgid "Unsupported key size."
-msgstr "Неподдржана големина на клуч."
-
-#: kssl/ksslkeygen.cpp:131
-msgid "KDE"
-msgstr "KDE"
-
-#: kssl/ksslkeygen.cpp:132
-msgid "Please wait while the encryption keys are generated..."
-msgstr "Почекајте додека се генерираат клучевите за криптирање..."
-
-#: kssl/ksslkeygen.cpp:145
-msgid "Do you wish to store the passphrase in your wallet file?"
-msgstr "Дали сакате да ја зачувате тајната фраза во вашиот паричник?"
-
-#: kssl/ksslkeygen.cpp:145
-msgid "Store"
-msgstr "Зачувај"
-
-#: kssl/ksslkeygen.cpp:145
-msgid "Do Not Store"
-msgstr "Не зачувувај"
-
-#: kssl/ksslkeygen.cpp:261
-msgid "2048 (High Grade)"
-msgstr "2048 (Висока класа)"
-
-#: kssl/ksslkeygen.cpp:262
-msgid "1024 (Medium Grade)"
-msgstr "1024 (Средна класа)"
-
-#: kssl/ksslkeygen.cpp:263
-msgid "768  (Low Grade)"
-msgstr "768  (Ниска класа)"
-
-#: kssl/ksslkeygen.cpp:264
-msgid "512  (Low Grade)"
-msgstr "512  (Ниска класа)"
-
-#: kssl/ksslkeygen.cpp:266
-msgid "No SSL support."
-msgstr "Нема поддршка за SSL."
-
-#: kssl/ksslpemcallback.cpp:37
-msgid "Certificate password"
-msgstr "Лозинка за сертификатот."
-
-#: kssl/ksslutils.cpp:78
-msgid "GMT"
-msgstr "GMT"
-
-#: kssl/sslui.cpp:52
-msgid ""
-"The remote host did not send any SSL certificates.\n"
-"Aborting because the identity of the host cannot be established."
-msgstr ""
-"Оддалечениот сервер не испрати никакви SSL-сертификати.\n"
-"Прекинувам бидејќи не може да биде установен идентитетот на серверот."
 
 #: misc/kmailservice.cpp:30
 msgid "KMailService"
