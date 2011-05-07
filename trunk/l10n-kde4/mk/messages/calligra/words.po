@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-06 03:32+0200\n"
+"POT-Creation-Date: 2011-05-07 03:32+0200\n"
 "PO-Revision-Date: 2000-10-02 22:00+0100\n"
 "Last-Translator: Damjan Janevski <miopa@usa.net>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -699,36 +699,60 @@ msgstr "Проверка на правопис"
 msgid "Change Variable To"
 msgstr "&Променливи по избор..."
 
-#: part/KWDocument.cpp:574
+#: part/KWDLoader.cpp:74
+msgid "Invalid document. No mimetype specified."
+msgstr ""
+
+#: part/KWDLoader.cpp:78
+#, kde-format
+msgid ""
+"Invalid document. Expected mimetype application/x-kword or application/vnd."
+"kde.kword, got %1"
+msgstr ""
+
+#: part/KWDLoader.cpp:104
+#, kde-format
+msgid "Invalid document. Paper size: %1x%2"
+msgstr ""
+
+#: part/KWDLoader.cpp:691
+msgid "Unable to locate footnote text"
+msgstr ""
+
+#: part/KWDLoader.cpp:717
+msgid "Unable to locate note-text"
+msgstr ""
+
+#: part/KWDocument.cpp:573
 #, fuzzy
 msgid "Copy"
 msgstr "&Копирај..."
 
-#: part/KWDocument.cpp:619
+#: part/KWDocument.cpp:618
 #, fuzzy
 msgid "Head 1"
 msgstr "Нумериран список"
 
-#: part/KWDocument.cpp:626
+#: part/KWDocument.cpp:625
 #, fuzzy
 msgid "Head 2"
 msgstr "Нумериран список"
 
-#: part/KWDocument.cpp:633
+#: part/KWDocument.cpp:632
 #, fuzzy
 msgid "Head 3"
 msgstr "Нумериран список"
 
-#: part/KWDocument.cpp:640
+#: part/KWDocument.cpp:639
 #, fuzzy
 msgid "Bullet List"
 msgstr "Список со точки"
 
-#: part/KWDocument.cpp:993
+#: part/KWDocument.cpp:986
 msgid "Can not find needed text component, Words will quit now"
 msgstr ""
 
-#: part/KWDocument.cpp:994
+#: part/KWDocument.cpp:987
 msgid "Installation Error"
 msgstr ""
 
@@ -787,16 +811,16 @@ msgstr "Избриши рамка"
 msgid "Insert Page Style"
 msgstr "KWord - Вметни табела"
 
-#: part/commands/KWPageRemoveCommand.cpp:32
-#, fuzzy
-msgid "Remove Page"
-msgstr "Отстрани внес"
-
 #: part/commands/KWPageStylePropertiesCommand.cpp:36
 #, fuzzy
 #| msgid "Frame Properties"
 msgid "Page Properties"
 msgstr "Параметри на рамка"
+
+#: part/commands/KWPageRemoveCommand.cpp:33
+#, fuzzy
+msgid "Remove Page"
+msgstr "Отстрани внес"
 
 #: part/dialogs/KWFrameDialog.cpp:38 part/dialogs/KWShapeConfigFactory.cpp:94
 msgid "Options"
@@ -1368,30 +1392,6 @@ msgstr "Уреди &текст"
 #, fuzzy
 msgid "Other text"
 msgstr "KWord - Вметни табела"
-
-#: part/KWDLoader.cpp:74
-msgid "Invalid document. No mimetype specified."
-msgstr ""
-
-#: part/KWDLoader.cpp:78
-#, kde-format
-msgid ""
-"Invalid document. Expected mimetype application/x-kword or application/vnd."
-"kde.kword, got %1"
-msgstr ""
-
-#: part/KWDLoader.cpp:104
-#, kde-format
-msgid "Invalid document. Paper size: %1x%2"
-msgstr ""
-
-#: part/KWDLoader.cpp:690
-msgid "Unable to locate footnote text"
-msgstr ""
-
-#: part/KWDLoader.cpp:716
-msgid "Unable to locate note-text"
-msgstr ""
 
 #: part/KWView.cpp:256
 #, fuzzy
