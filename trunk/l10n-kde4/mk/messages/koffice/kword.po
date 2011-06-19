@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-18 04:34+0200\n"
+"POT-Creation-Date: 2011-06-19 04:29+0200\n"
 "PO-Revision-Date: 2000-10-02 22:00+0100\n"
 "Last-Translator: Damjan Janevski <miopa@usa.net>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -883,39 +883,6 @@ msgstr ""
 msgid "Michael Johnson"
 msgstr ""
 
-#: part/KWDocument.cpp:452
-#, fuzzy
-msgid "Copy"
-msgstr "&Копирај..."
-
-#: part/KWDocument.cpp:541
-#, fuzzy
-msgid "Head 1"
-msgstr "Нумериран список"
-
-#: part/KWDocument.cpp:548
-#, fuzzy
-msgid "Head 2"
-msgstr "Нумериран список"
-
-#: part/KWDocument.cpp:555
-#, fuzzy
-msgid "Head 3"
-msgstr "Нумериран список"
-
-#: part/KWDocument.cpp:562
-#, fuzzy
-msgid "Bullet List"
-msgstr "Список со точки"
-
-#: part/KWDocument.cpp:896
-msgid "Can not find needed text component, KWord will quit now"
-msgstr ""
-
-#: part/KWDocument.cpp:897
-msgid "Installation Error"
-msgstr ""
-
 #: part/KWDLoader.cpp:75
 msgid "Invalid document. No mimetype specified."
 msgstr ""
@@ -940,21 +907,6 @@ msgstr ""
 msgid "Unable to locate note-text"
 msgstr ""
 
-#: part/KWOdfLoader.cpp:86
-msgid "Invalid OpenDocument file. No office:body tag found."
-msgstr ""
-
-#: part/KWOdfLoader.cpp:98
-msgid "Invalid OpenDocument file. No tag found inside office:body."
-msgstr ""
-
-#: part/KWOdfLoader.cpp:100
-#, kde-format
-msgid ""
-"This is not a word processing document, but %1. Please try opening it with "
-"the appropriate application."
-msgstr ""
-
 #: part/commands/KWNewPageStyleCommand.cpp:27
 #, fuzzy
 msgid "Insert Page Style"
@@ -964,11 +916,6 @@ msgstr "KWord - Вметни табела"
 #, fuzzy
 msgid "Set Page Style"
 msgstr "Име на група рамки"
-
-#: part/commands/KWClipFrameCommand.cpp:40
-#, fuzzy
-msgid "Clip Frame"
-msgstr "Преповрзи рамка"
 
 #: part/commands/KWCreateOutlineCommand.cpp:30
 #, fuzzy
@@ -984,16 +931,21 @@ msgstr "&Создади рамка за текст"
 msgid "Delete Frame"
 msgstr "Избриши рамка"
 
-#: part/commands/KWPageRemoveCommand.cpp:32
-#, fuzzy
-msgid "Remove Page"
-msgstr "Отстрани внес"
-
 #: part/commands/KWPageStylePropertiesCommand.cpp:36
 #, fuzzy
 #| msgid "Frame Properties"
 msgid "Page Properties"
 msgstr "Параметри на рамка"
+
+#: part/commands/KWClipFrameCommand.cpp:40
+#, fuzzy
+msgid "Clip Frame"
+msgstr "Преповрзи рамка"
+
+#: part/commands/KWPageRemoveCommand.cpp:32
+#, fuzzy
+msgid "Remove Page"
+msgstr "Отстрани внес"
 
 #: part/dialogs/KWStatisticsDialog.cpp:29
 #: part/dockers/KWStatisticsDocker.cpp:35 part/KWView.cpp:385
@@ -1363,35 +1315,19 @@ msgstr "Нумериран список"
 msgid "File to open"
 msgstr "Датотека за отварање"
 
-#: part/KWStatusBar.cpp:38
-msgid "Modified"
+#: part/KWOdfLoader.cpp:86
+msgid "Invalid OpenDocument file. No office:body tag found."
 msgstr ""
 
-#: part/KWStatusBar.cpp:39
-#, fuzzy
-msgid "Saved"
-msgstr "Вовлекување"
-
-#: part/KWStatusBar.cpp:40
-#, fuzzy, kde-format
-#| msgid "Page %1"
-msgid "Page: %1/%2"
-msgstr "Страна %1"
-
-#: part/KWStatusBar.cpp:62
-msgid "Page: current/total"
+#: part/KWOdfLoader.cpp:98
+msgid "Invalid OpenDocument file. No tag found inside office:body."
 msgstr ""
 
-#: part/KWStatusBar.cpp:79
-msgid "State: saved/modified"
-msgstr ""
-
-#: part/KWStatusBar.cpp:93
-msgid "Mouseposition: X:Y"
-msgstr ""
-
-#: part/KWStatusBar.cpp:106
-msgid "Zoom Controller"
+#: part/KWOdfLoader.cpp:100
+#, kde-format
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
 msgstr ""
 
 #: part/KWView.cpp:251
@@ -1746,6 +1682,70 @@ msgstr ""
 #, fuzzy
 msgid "Create outlines"
 msgstr "&Создади табела"
+
+#: part/KWDocument.cpp:452
+#, fuzzy
+msgid "Copy"
+msgstr "&Копирај..."
+
+#: part/KWDocument.cpp:541
+#, fuzzy
+msgid "Head 1"
+msgstr "Нумериран список"
+
+#: part/KWDocument.cpp:548
+#, fuzzy
+msgid "Head 2"
+msgstr "Нумериран список"
+
+#: part/KWDocument.cpp:555
+#, fuzzy
+msgid "Head 3"
+msgstr "Нумериран список"
+
+#: part/KWDocument.cpp:562
+#, fuzzy
+msgid "Bullet List"
+msgstr "Список со точки"
+
+#: part/KWDocument.cpp:896
+msgid "Can not find needed text component, KWord will quit now"
+msgstr ""
+
+#: part/KWDocument.cpp:897
+msgid "Installation Error"
+msgstr ""
+
+#: part/KWStatusBar.cpp:38
+msgid "Modified"
+msgstr ""
+
+#: part/KWStatusBar.cpp:39
+#, fuzzy
+msgid "Saved"
+msgstr "Вовлекување"
+
+#: part/KWStatusBar.cpp:40
+#, fuzzy, kde-format
+#| msgid "Page %1"
+msgid "Page: %1/%2"
+msgstr "Страна %1"
+
+#: part/KWStatusBar.cpp:62
+msgid "Page: current/total"
+msgstr ""
+
+#: part/KWStatusBar.cpp:79
+msgid "State: saved/modified"
+msgstr ""
+
+#: part/KWStatusBar.cpp:93
+msgid "Mouseposition: X:Y"
+msgstr ""
+
+#: part/KWStatusBar.cpp:106
+msgid "Zoom Controller"
+msgstr ""
 
 #, fuzzy
 #~ msgid "Create a new shape list:"
