@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfontinst\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-07-05 04:23+0200\n"
+"POT-Creation-Date: 2011-07-10 14:08+0200\n"
 "PO-Revision-Date: 2010-02-01 00:29+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -34,7 +34,7 @@ msgstr "bobibobi@freemail.com.mk"
 msgid "&Main Toolbar"
 msgstr "Г&лавен алатник"
 
-#: apps/Installer.cpp:54 kcmfontinst/KCmFontInst.cpp:984
+#: apps/Installer.cpp:54 kcmfontinst/KCmFontInst.cpp:985
 msgid ""
 "Do you wish to install the font(s) for personal use (only available to you), "
 "or system-wide (available to all users)?"
@@ -42,7 +42,7 @@ msgstr ""
 "Дали сакате да ги инсталирате фонтовите за лична употреба (само за вас) или "
 "системски (достапни за сите корисници)?"
 
-#: apps/Installer.cpp:57 kcmfontinst/KCmFontInst.cpp:987
+#: apps/Installer.cpp:57 kcmfontinst/KCmFontInst.cpp:988
 msgid "Where to Install"
 msgstr "Каде да се инсталира"
 
@@ -54,11 +54,11 @@ msgstr "Инсталатор на фонтови"
 msgid "Simple font installer"
 msgstr "Едноставен инсталатор на фонтови"
 
-#: apps/Installer.cpp:125 apps/Printer.cpp:354
+#: apps/Installer.cpp:125 apps/Printer.cpp:420
 msgid "(C) Craig Drummond, 2007"
 msgstr "(C) Craig Drummond, 2007"
 
-#: apps/Installer.cpp:132 apps/Printer.cpp:361
+#: apps/Installer.cpp:132 apps/Printer.cpp:427
 msgid "Makes the dialog transient for an X app specified by winid"
 msgstr ""
 "Го прави дијалогот транзиентен за X-апликација зададена со ид. на прозорец."
@@ -67,23 +67,27 @@ msgstr ""
 msgid "URL to install"
 msgstr "Адреса за инсталирање"
 
-#: apps/Printer.cpp:194
+#: apps/Printer.cpp:343
 msgid "Print"
 msgstr "Печатење"
 
-#: apps/Printer.cpp:353
+#: apps/Printer.cpp:408 kcmfontinst/DuplicatesDialog.cpp:250
+msgid "Canceling..."
+msgstr "Откажувам..."
+
+#: apps/Printer.cpp:419
 msgid "Font Printer"
 msgstr "Печатач на фонтови"
 
-#: apps/Printer.cpp:353
+#: apps/Printer.cpp:419
 msgid "Simple font printer"
 msgstr "Едноставен печатач на фонтови"
 
-#: apps/Printer.cpp:362
+#: apps/Printer.cpp:428
 msgid "Size index to print fonts"
 msgstr "Индекс на големина за печатење фонтови"
 
-#: apps/Printer.cpp:363
+#: apps/Printer.cpp:429
 msgid ""
 "Font to print, specified as \"Family,Style\" where Style is a 24-bit decimal "
 "number composed as: <weight><width><slant>"
@@ -91,11 +95,11 @@ msgstr ""
 "Фонтот за печатење, зададен како „Фамилија,Стил“, каде што Стил е 24-битен "
 "децимален број составен како: <тежина><ширина><наклон>"
 
-#: apps/Printer.cpp:364
+#: apps/Printer.cpp:430
 msgid "File containing list of fonts to print"
 msgstr "Датотека со фонтовите за печатење"
 
-#: apps/Printer.cpp:365
+#: apps/Printer.cpp:431
 msgid "Remove file containing list of fonts to print"
 msgstr "Ја отстранува датотеката со фонтовите за печатење"
 
@@ -160,10 +164,6 @@ msgstr "Дали навистина сакате да ги избришете:"
 msgid "Cancel font scan?"
 msgstr "Го прекинувате скенирањето на фонтови?"
 
-#: kcmfontinst/DuplicatesDialog.cpp:250
-msgid "Canceling..."
-msgstr "Откажувам..."
-
 #: kcmfontinst/DuplicatesDialog.cpp:408
 msgid "Font/File"
 msgstr "Фонт/датотека"
@@ -180,23 +180,23 @@ msgstr "Датум"
 msgid "Links To"
 msgstr "Врска до"
 
-#: kcmfontinst/DuplicatesDialog.cpp:424 kcmfontinst/FontList.cpp:1394
+#: kcmfontinst/DuplicatesDialog.cpp:425 kcmfontinst/FontList.cpp:1407
 msgid "Open in Font Viewer"
 msgstr "Отвори во прегледувач на фонтови"
 
-#: kcmfontinst/DuplicatesDialog.cpp:426
+#: kcmfontinst/DuplicatesDialog.cpp:427
 msgid "Properties"
 msgstr "Својства"
 
-#: kcmfontinst/DuplicatesDialog.cpp:429
+#: kcmfontinst/DuplicatesDialog.cpp:430
 msgid "Unmark for Deletion"
 msgstr ""
 
-#: kcmfontinst/DuplicatesDialog.cpp:431
+#: kcmfontinst/DuplicatesDialog.cpp:432
 msgid "Mark for Deletion"
 msgstr ""
 
-#: kcmfontinst/DuplicatesDialog.cpp:531 kcmfontinst/FontList.cpp:1832
+#: kcmfontinst/DuplicatesDialog.cpp:532 kcmfontinst/FontList.cpp:1849
 #, kde-format
 msgid "Open all %1 fonts in font viewer?"
 msgstr "Да ги отвотам сите %1 фонтови во прегледувачот?"
@@ -242,11 +242,11 @@ msgstr "Симбол/друго"
 msgid "Type here to filter on %1"
 msgstr "Пишувајте тука за филтрирање според %1"
 
-#: kcmfontinst/FontList.cpp:602
+#: kcmfontinst/FontList.cpp:614
 msgid "Font"
 msgstr "Фонт"
 
-#: kcmfontinst/FontList.cpp:615
+#: kcmfontinst/FontList.cpp:627
 msgid ""
 "This column shows the status of the font family, and of the individual font "
 "styles."
@@ -254,7 +254,7 @@ msgstr ""
 "Оваа колона го прикажува статусот на фамилијата на фонтот и на "
 "индивидуалните стилови."
 
-#: kcmfontinst/FontList.cpp:721
+#: kcmfontinst/FontList.cpp:733
 msgid ""
 "<p>This list shows your installed fonts. The fonts are grouped by family, "
 "and the number in square brackets represents the number of styles in which "
@@ -266,35 +266,35 @@ msgstr ""
 "достапна фамилијата, на пример</p><ul><li>Times [4]<ul><li>Регуларен</"
 "li><li>Задебелен</li><li>Задебелен курзив</li><li>Курзив</li></ul></li></ul>"
 
-#: kcmfontinst/FontList.cpp:1019 kcmfontinst/FontList.cpp:1043
+#: kcmfontinst/FontList.cpp:1031 kcmfontinst/FontList.cpp:1055
 #, kde-format
 msgid "...plus %1 more"
 msgstr "...плус уште %1"
 
-#: kcmfontinst/FontList.cpp:1071
+#: kcmfontinst/FontList.cpp:1083
 #, kde-format
 msgid "%1 [%2]"
 msgstr "%1 [%2]"
 
-#: kcmfontinst/FontList.cpp:1384 kcmfontinst/KCmFontInst.cpp:301
+#: kcmfontinst/FontList.cpp:1396 kcmfontinst/KCmFontInst.cpp:301
 msgid "Delete"
 msgstr "Избриши"
 
-#: kcmfontinst/FontList.cpp:1387 kcmfontinst/GroupList.cpp:832
-#: kcmfontinst/KCmFontInst.cpp:1165 kcmfontinst/KCmFontInst.cpp:1189
+#: kcmfontinst/FontList.cpp:1399 kcmfontinst/GroupList.cpp:833
+#: kcmfontinst/KCmFontInst.cpp:1166 kcmfontinst/KCmFontInst.cpp:1190
 msgid "Enable"
 msgstr "Овозможи"
 
-#: kcmfontinst/FontList.cpp:1389 kcmfontinst/GroupList.cpp:834
-#: kcmfontinst/KCmFontInst.cpp:1166 kcmfontinst/KCmFontInst.cpp:1190
+#: kcmfontinst/FontList.cpp:1401 kcmfontinst/GroupList.cpp:835
+#: kcmfontinst/KCmFontInst.cpp:1167 kcmfontinst/KCmFontInst.cpp:1191
 msgid "Disable"
 msgstr "Оневозможи"
 
-#: kcmfontinst/FontList.cpp:1392 kcmfontinst/GroupList.cpp:839
+#: kcmfontinst/FontList.cpp:1405 kcmfontinst/GroupList.cpp:844
 msgid "Print..."
 msgstr "Печати..."
 
-#: kcmfontinst/FontList.cpp:1397
+#: kcmfontinst/FontList.cpp:1410
 msgid "Reload"
 msgstr "Превчитај"
 
@@ -382,44 +382,36 @@ msgstr ""
 msgid "<qt>A group named <b>'%1'</b> already exists.</qt>"
 msgstr "<qt>Веќе постои група со име „<b>%1</b>“.</qt>"
 
-#: kcmfontinst/GroupList.cpp:837
+#: kcmfontinst/GroupList.cpp:838
 msgid "Rename..."
 msgstr "Преименувај..."
 
-#: kcmfontinst/GroupList.cpp:842
+#: kcmfontinst/GroupList.cpp:850
 msgid "Export..."
 msgstr "Изнесувам..."
 
-#: kcmfontinst/GroupList.cpp:846
-msgid "Move Here"
-msgstr "Премести тука"
-
-#: kcmfontinst/GroupList.cpp:848
-msgid "Cancel"
-msgstr "Откажи"
-
-#: kcmfontinst/GroupList.cpp:939
+#: kcmfontinst/GroupList.cpp:948
 #, kde-format
 msgid "Add to \"%1\"."
 msgstr "Додај на „%1“."
 
-#: kcmfontinst/GroupList.cpp:941
+#: kcmfontinst/GroupList.cpp:950
 msgid "Remove from current group."
 msgstr "Отстрани од тековната група."
 
-#: kcmfontinst/GroupList.cpp:943
+#: kcmfontinst/GroupList.cpp:952
 msgid "Move to personal folder."
 msgstr "Премести во личната папка."
 
-#: kcmfontinst/GroupList.cpp:945
+#: kcmfontinst/GroupList.cpp:954
 msgid "Move to system folder."
 msgstr "Премести во системската папка."
 
-#: kcmfontinst/JobRunner.cpp:175
+#: kcmfontinst/JobRunner.cpp:187
 msgid "<h3>Cancel?</h3><p>Are you sure you wish to cancel?</p>"
 msgstr "<h3>Откажување?</h3><p>Дали навистина сакате да откажете?</p>"
 
-#: kcmfontinst/JobRunner.cpp:190
+#: kcmfontinst/JobRunner.cpp:202
 msgid ""
 "<h3>Finished</h3><p>Please note that any open applications will need to be "
 "restarted in order for any changes to be noticed.</p>"
@@ -427,79 +419,79 @@ msgstr ""
 "<h3>Готово</h3><p>Забележете дека сите отворени апликации ќе треба повторно "
 "да се стартуваат за да бидат забележани измените.</p>"
 
-#: kcmfontinst/JobRunner.cpp:198
+#: kcmfontinst/JobRunner.cpp:210
 msgid "Do not show this message again"
 msgstr "Не ја покажувај повторно поракава"
 
-#: kcmfontinst/JobRunner.cpp:273
+#: kcmfontinst/JobRunner.cpp:288
 msgid "Installing"
 msgstr "Инсталирам"
 
-#: kcmfontinst/JobRunner.cpp:276
+#: kcmfontinst/JobRunner.cpp:291
 msgid "Uninstalling"
 msgstr "Одинсталирам"
 
-#: kcmfontinst/JobRunner.cpp:279
+#: kcmfontinst/JobRunner.cpp:294
 msgid "Enabling"
 msgstr "Овозможувам"
 
-#: kcmfontinst/JobRunner.cpp:282
+#: kcmfontinst/JobRunner.cpp:297
 msgid "Moving"
 msgstr "Преместувам"
 
-#: kcmfontinst/JobRunner.cpp:285
+#: kcmfontinst/JobRunner.cpp:300
 msgid "Updating"
 msgstr "Ажурирам"
 
-#: kcmfontinst/JobRunner.cpp:288
+#: kcmfontinst/JobRunner.cpp:303
 msgid "Removing"
 msgstr "Отстранувам"
 
-#: kcmfontinst/JobRunner.cpp:292
+#: kcmfontinst/JobRunner.cpp:307
 msgid "Disabling"
 msgstr "Оневозможувам"
 
-#: kcmfontinst/JobRunner.cpp:330
+#: kcmfontinst/JobRunner.cpp:345
 msgid "Updating font configuration. Please wait..."
 msgstr "Ажурирам конфигурација на фонтови. Молам почекајте..."
 
-#: kcmfontinst/JobRunner.cpp:399
+#: kcmfontinst/JobRunner.cpp:414
 msgid "Unable to start backend."
 msgstr "Не можам да стартувам заден крај."
 
-#: kcmfontinst/JobRunner.cpp:409
+#: kcmfontinst/JobRunner.cpp:424
 msgid "Backend died, but has been restarted. Please try again."
 msgstr ""
 
-#: kcmfontinst/JobRunner.cpp:587 kcmfontinst/JobRunner.cpp:593
+#: kcmfontinst/JobRunner.cpp:602 kcmfontinst/JobRunner.cpp:608
 msgid "<h3>Error</h3>"
 msgstr "<h3>Грешка</h3>"
 
-#: kcmfontinst/JobRunner.cpp:589
+#: kcmfontinst/JobRunner.cpp:604
 msgid "Skip"
 msgstr "Прескокни"
 
-#: kcmfontinst/JobRunner.cpp:590
+#: kcmfontinst/JobRunner.cpp:605
 msgid "AutoSkip"
 msgstr "Автом. прескокнување"
 
-#: kcmfontinst/JobRunner.cpp:651
+#: kcmfontinst/JobRunner.cpp:666
 #, kde-format
 msgid "Failed to download <i>%1</i>"
 msgstr "Не успеав да го симнам <i>%1</i>"
 
-#: kcmfontinst/JobRunner.cpp:653
+#: kcmfontinst/JobRunner.cpp:668
 #, kde-format
 msgid "System backend died. Please try again.<br><i>%1</i>"
 msgstr "Системскиот заден крај падна. Обидете се повторно.<br /><i>%1</i>"
 
-#: kcmfontinst/JobRunner.cpp:655
+#: kcmfontinst/JobRunner.cpp:670
 #, kde-format
 msgid ""
 "<i>%1</i> is a bitmap font, and these have been disabled on your system."
 msgstr "<i>%1</i> е битмапиран фонт, а тие се оневозможени на Вашиот систем."
 
-#: kcmfontinst/JobRunner.cpp:657
+#: kcmfontinst/JobRunner.cpp:672
 #, kde-format
 msgid ""
 "<i>%1</i> contains the font <b>%2</b>, which is already installed on your "
@@ -507,47 +499,47 @@ msgid ""
 msgstr ""
 "<i>%1</i> го содржи фонтот <b>%2</b>, што е веќе инсталиран на Вашиот систем."
 
-#: kcmfontinst/JobRunner.cpp:660
+#: kcmfontinst/JobRunner.cpp:675
 #, kde-format
 msgid "<i>%1</i> is not a font."
 msgstr "<i>%1</i> не е фонт."
 
-#: kcmfontinst/JobRunner.cpp:662
+#: kcmfontinst/JobRunner.cpp:677
 #, kde-format
 msgid "Could not remove all files associated with <i>%1</i>"
 msgstr "Не можев да ги избришам сите датотеки поврзани со <i>%1</i>"
 
-#: kcmfontinst/JobRunner.cpp:664
+#: kcmfontinst/JobRunner.cpp:679
 #, kde-format
 msgid "Failed to start the system daemon.<br><i>%1</i>"
 msgstr "Не успеав да го стартувам системскиот даемон.<br /><i>%1</i>"
 
-#: kcmfontinst/JobRunner.cpp:666
+#: kcmfontinst/JobRunner.cpp:684 kio/KioFonts.cpp:809
 #, kde-format
 msgid "<i>%1</i> already exists."
 msgstr "<b>%1</b> веќе постои."
 
-#: kcmfontinst/JobRunner.cpp:668
+#: kcmfontinst/JobRunner.cpp:687
 #, kde-format
 msgid "<i>%1</i> does not exist."
 msgstr "<i>%1</i> не постои."
 
-#: kcmfontinst/JobRunner.cpp:670
+#: kcmfontinst/JobRunner.cpp:689
 #, kde-format
 msgid "Permission denied.<br><i>%1</i>"
 msgstr "Пристапот е одбиен.<br><i>%1</i>"
 
-#: kcmfontinst/JobRunner.cpp:672
+#: kcmfontinst/JobRunner.cpp:691
 #, kde-format
 msgid "Unsupported action.<br><i>%1</i>"
 msgstr "Неподдржано дејство.<br><i>%1</i>"
 
-#: kcmfontinst/JobRunner.cpp:674
+#: kcmfontinst/JobRunner.cpp:693
 #, kde-format
 msgid "Authentication failed.<br><i>%1</i>"
 msgstr "Авторизацијата не успеа.<br><i>%1</i>"
 
-#: kcmfontinst/JobRunner.cpp:676
+#: kcmfontinst/JobRunner.cpp:695
 #, fuzzy, kde-format
 #| msgid "Unexpected error whilst processing: <i>%1</i>"
 msgid "Unexpected error while processing: <i>%1</i>"
@@ -605,11 +597,11 @@ msgstr "Инсталирај фонтови"
 msgid "Delete all selected fonts"
 msgstr "Избриши ги сите избрани фонтови"
 
-#: kcmfontinst/KCmFontInst.cpp:359
+#: kcmfontinst/KCmFontInst.cpp:360
 msgid "Change Preview Text..."
 msgstr "Смени текст за преглед..."
 
-#: kcmfontinst/KCmFontInst.cpp:424
+#: kcmfontinst/KCmFontInst.cpp:427
 msgid ""
 "<h1>Font Installer</h1><p> This module allows you to install TrueType, "
 "Type1, and Bitmap fonts.</p><p>You may also install fonts using Konqueror: "
@@ -622,7 +614,7 @@ msgstr ""
 "на Konqueror и ова ќе ги прикаже вашите инсталирани фонтови. За да "
 "инсталирате фонтови, едноставно ископирајте ги во соодветната папка.</p>"
 
-#: kcmfontinst/KCmFontInst.cpp:430
+#: kcmfontinst/KCmFontInst.cpp:433
 #, kde-format
 msgid ""
 "<h1>Font Installer</h1><p> This module allows you to install TrueType, "
@@ -640,23 +632,19 @@ msgstr ""
 "Ви се достапни само вам или  „%2“ за системски фонтови (достапни на сите).</"
 "p>"
 
-#: kcmfontinst/KCmFontInst.cpp:483
+#: kcmfontinst/KCmFontInst.cpp:492
 msgid "Add Fonts"
 msgstr "Додај фонтови"
 
-#: kcmfontinst/KCmFontInst.cpp:557 viewpart/FontViewPart.cpp:451
-msgid "Failed to locate font printer."
-msgstr "Не успеав да лоцирам печатач на фонтови."
-
-#: kcmfontinst/KCmFontInst.cpp:606
+#: kcmfontinst/KCmFontInst.cpp:609
 msgid "Failed to save list of fonts to print."
 msgstr "Не успеав да ја зачувам листата со фонтови за печатење."
 
-#: kcmfontinst/KCmFontInst.cpp:631
+#: kcmfontinst/KCmFontInst.cpp:634
 msgid "Failed to start font printer."
 msgstr "Не успеав да го стартувам печатачот за фонтови."
 
-#: kcmfontinst/KCmFontInst.cpp:637
+#: kcmfontinst/KCmFontInst.cpp:640
 msgid ""
 "There are no printable fonts.\n"
 "You can only print non-bitmap and enabled fonts."
@@ -664,28 +652,28 @@ msgstr ""
 "Нема фонтови за печатење.\n"
 "Може да печатите само не-битмапирани и овозможени фонтови."
 
-#: kcmfontinst/KCmFontInst.cpp:639
+#: kcmfontinst/KCmFontInst.cpp:642
 msgid "Cannot Print"
 msgstr "Не можам да испечатам"
 
-#: kcmfontinst/KCmFontInst.cpp:654
+#: kcmfontinst/KCmFontInst.cpp:656
 msgid "You did not select anything to delete."
 msgstr "Не избравте ништо за бришење."
 
-#: kcmfontinst/KCmFontInst.cpp:655
+#: kcmfontinst/KCmFontInst.cpp:657
 msgid "Nothing to Delete"
 msgstr "Нема ништо за бришење"
 
-#: kcmfontinst/KCmFontInst.cpp:671
+#: kcmfontinst/KCmFontInst.cpp:673
 #, kde-format
 msgid "<p>Do you really want to delete</p><p>'<b>%1</b>'?</p>"
 msgstr "<p>Дали навистина сакате да го избришете</p><p>„<b>%1</b>“?</p>"
 
-#: kcmfontinst/KCmFontInst.cpp:673
+#: kcmfontinst/KCmFontInst.cpp:675
 msgid "Delete Font"
 msgstr "Избриши фонт"
 
-#: kcmfontinst/KCmFontInst.cpp:677
+#: kcmfontinst/KCmFontInst.cpp:679
 #, kde-format
 msgid "Do you really want to delete this font?"
 msgid_plural "Do you really want to delete these %1 fonts?"
@@ -693,36 +681,36 @@ msgstr[0] "Дали навистина сакате да го избришете
 msgstr[1] "Дали навистина сакате да ги избришете овие %1 фонта?"
 msgstr[2] "Дали навистина сакате да ги избришете овие %1 фонтови?"
 
-#: kcmfontinst/KCmFontInst.cpp:680
+#: kcmfontinst/KCmFontInst.cpp:682
 msgid "Delete Fonts"
 msgstr "Избриши фонтови"
 
-#: kcmfontinst/KCmFontInst.cpp:685
+#: kcmfontinst/KCmFontInst.cpp:687
 msgid "Deleting font(s)..."
 msgstr "Бришам фонтови..."
 
-#: kcmfontinst/KCmFontInst.cpp:700
+#: kcmfontinst/KCmFontInst.cpp:702
 msgid "You did not select anything to move."
 msgstr "Не избравте ништо за преместување."
 
-#: kcmfontinst/KCmFontInst.cpp:701
+#: kcmfontinst/KCmFontInst.cpp:703
 msgid "Nothing to Move"
 msgstr "Нема ништо за преместување"
 
-#: kcmfontinst/KCmFontInst.cpp:712
+#: kcmfontinst/KCmFontInst.cpp:714
 #, kde-format
 msgid "<p>Do you really want to move</p><p>'<b>%1</b>'?</p>"
 msgstr "<p>Дали навистина сакате да го преместите</p><p>„<b>%1</b>“?</p>"
 
-#: kcmfontinst/KCmFontInst.cpp:714
+#: kcmfontinst/KCmFontInst.cpp:716
 msgid "Move Font"
 msgstr "Преместување фонт"
 
-#: kcmfontinst/KCmFontInst.cpp:714 kcmfontinst/KCmFontInst.cpp:721
+#: kcmfontinst/KCmFontInst.cpp:716 kcmfontinst/KCmFontInst.cpp:723
 msgid "Move"
 msgstr "Премести"
 
-#: kcmfontinst/KCmFontInst.cpp:718
+#: kcmfontinst/KCmFontInst.cpp:720
 #, kde-format
 msgid "Do you really want to move this font?"
 msgid_plural "Do you really want to move these %1 fonts?"
@@ -730,56 +718,56 @@ msgstr[0] "Дали навистина сакате да го преместит
 msgstr[1] "Дали навистина сакате да ги преместите овие %1 фонта?"
 msgstr[2] "Дали навистина сакате да ги преместите овие %1 фонтови?"
 
-#: kcmfontinst/KCmFontInst.cpp:721
+#: kcmfontinst/KCmFontInst.cpp:723
 msgid "Move Fonts"
 msgstr "Преместување фонтови"
 
-#: kcmfontinst/KCmFontInst.cpp:726
+#: kcmfontinst/KCmFontInst.cpp:728
 msgid "Moving font(s)..."
 msgstr "Преместувам фонтови..."
 
-#: kcmfontinst/KCmFontInst.cpp:742
+#: kcmfontinst/KCmFontInst.cpp:744
 msgid "Export Group"
 msgstr "Изнеси група"
 
-#: kcmfontinst/KCmFontInst.cpp:766
+#: kcmfontinst/KCmFontInst.cpp:768
 msgid "No files?"
 msgstr "Нема датотеки?"
 
-#: kcmfontinst/KCmFontInst.cpp:769
+#: kcmfontinst/KCmFontInst.cpp:771
 #, kde-format
 msgid "Failed to open %1 for writing"
 msgstr "Не успеав да го отворам %1 за запишување"
 
-#: kcmfontinst/KCmFontInst.cpp:788
+#: kcmfontinst/KCmFontInst.cpp:790
 msgid "Create New Group"
 msgstr "Креирање нова група"
 
-#: kcmfontinst/KCmFontInst.cpp:789
+#: kcmfontinst/KCmFontInst.cpp:791
 msgid "Please enter the name of the new group:"
 msgstr "Внесете го името на новата група:"
 
-#: kcmfontinst/KCmFontInst.cpp:790
+#: kcmfontinst/KCmFontInst.cpp:792
 msgid "New Group"
 msgstr "Нова група"
 
-#: kcmfontinst/KCmFontInst.cpp:817
+#: kcmfontinst/KCmFontInst.cpp:819
 msgid "Preview Text"
 msgstr "Текст за преглед"
 
-#: kcmfontinst/KCmFontInst.cpp:818
+#: kcmfontinst/KCmFontInst.cpp:820
 msgid "Please enter new text:"
 msgstr "Внесете нов текст:"
 
-#: kcmfontinst/KCmFontInst.cpp:858
+#: kcmfontinst/KCmFontInst.cpp:859
 msgid "Scanning font list..."
 msgstr "Скенирам листа на фонтови..."
 
-#: kcmfontinst/KCmFontInst.cpp:924
+#: kcmfontinst/KCmFontInst.cpp:925
 msgid "No fonts"
 msgstr "Нема фонтови"
 
-#: kcmfontinst/KCmFontInst.cpp:930
+#: kcmfontinst/KCmFontInst.cpp:931
 #, kde-format
 msgid "1 Font"
 msgid_plural "%1 Fonts"
@@ -787,12 +775,12 @@ msgstr[0] "%1 фонт"
 msgstr[1] "%1 фонта"
 msgstr[2] "%1 фонтови"
 
-#: kcmfontinst/KCmFontInst.cpp:934
+#: kcmfontinst/KCmFontInst.cpp:935
 #, kde-format
 msgid " (<img src=\"%1\" />%2 <img src=\"%3\" />%4 <img src=\"%5\" />%6)"
 msgstr " (<img src=\"%1\" />%2 <img src=\"%3\" />%4 <img src=\"%5\" />%6)"
 
-#: kcmfontinst/KCmFontInst.cpp:941
+#: kcmfontinst/KCmFontInst.cpp:942
 #, kde-format
 msgid ""
 "<table><tr><td>Enabled fonts:</td><td>%1</td></tr><tr><td>Disabled fonts:</"
@@ -803,54 +791,54 @@ msgstr ""
 "фонтови:</td><td>%2</td></tr><tr><td>Делумно овозможени фонтови:</td><td>%3</"
 "td></tr><tr><td>Сите фонтови:</td><td>%4</td></tr></table>"
 
-#: kcmfontinst/KCmFontInst.cpp:1018
+#: kcmfontinst/KCmFontInst.cpp:1019
 msgid "Looking for any associated files..."
 msgstr "Барам за асоцирани датотеки..."
 
-#: kcmfontinst/KCmFontInst.cpp:1022
+#: kcmfontinst/KCmFontInst.cpp:1023
 msgid "Scanning Files..."
 msgstr "Скенирам датотеки..."
 
-#: kcmfontinst/KCmFontInst.cpp:1023
+#: kcmfontinst/KCmFontInst.cpp:1024
 msgid "Looking for additional files to install..."
 msgstr "Барам за дополнителни датотеки за инсталација..."
 
-#: kcmfontinst/KCmFontInst.cpp:1040
+#: kcmfontinst/KCmFontInst.cpp:1041
 #, kde-format
 msgid "Looking for files associated with %1"
 msgstr "Барам за датотеки асоцирани со %1"
 
-#: kcmfontinst/KCmFontInst.cpp:1067
+#: kcmfontinst/KCmFontInst.cpp:1068
 msgid "Installing font(s)..."
 msgstr "Инсталирам фонтови..."
 
-#: kcmfontinst/KCmFontInst.cpp:1133
+#: kcmfontinst/KCmFontInst.cpp:1134
 msgid "You did not select anything to enable."
 msgstr "Не избравте ништо за овозможување."
 
-#: kcmfontinst/KCmFontInst.cpp:1134
+#: kcmfontinst/KCmFontInst.cpp:1135
 msgid "You did not select anything to disable."
 msgstr "Не избравте ништо за оневозможување."
 
-#: kcmfontinst/KCmFontInst.cpp:1135
+#: kcmfontinst/KCmFontInst.cpp:1136
 msgid "Nothing to Enable"
 msgstr "Нема ништо за овозможување"
 
-#: kcmfontinst/KCmFontInst.cpp:1135
+#: kcmfontinst/KCmFontInst.cpp:1136
 msgid "Nothing to Disable"
 msgstr "Нема ништо за оневозможување"
 
-#: kcmfontinst/KCmFontInst.cpp:1152
+#: kcmfontinst/KCmFontInst.cpp:1153
 #, kde-format
 msgid "<p>Do you really want to enable</p><p>'<b>%1</b>'?</p>"
 msgstr "<p>Дали навистина сакате да го овозможите</p><p>„<b>%1</b>“?</p>"
 
-#: kcmfontinst/KCmFontInst.cpp:1154
+#: kcmfontinst/KCmFontInst.cpp:1155
 #, kde-format
 msgid "<p>Do you really want to disable</p><p>'<b>%1</b>'?</p>"
 msgstr "<p>Дали навистина сакате да го оневозможите</p><p>„<b>%1</b>“?</p>"
 
-#: kcmfontinst/KCmFontInst.cpp:1156
+#: kcmfontinst/KCmFontInst.cpp:1157
 #, kde-format
 msgid ""
 "<p>Do you really want to enable</p><p>'<b>%1</b>', contained within group "
@@ -859,7 +847,7 @@ msgstr ""
 "<p>Дали навистина сакате да го овозможите </p><p>„<b>%1</b>“, што се наоѓа "
 "во групата „<b>%2</b>“?</p>"
 
-#: kcmfontinst/KCmFontInst.cpp:1160
+#: kcmfontinst/KCmFontInst.cpp:1161
 #, kde-format
 msgid ""
 "<p>Do you really want to disable</p><p>'<b>%1</b>', contained within group "
@@ -868,15 +856,15 @@ msgstr ""
 "<p>Дали навистина сакате да го оневозможите </p><p>„<b>%1</b>“, што се наоѓа "
 "во групата „<b>%2</b>“?</p>"
 
-#: kcmfontinst/KCmFontInst.cpp:1164 kcmfontinst/KCmFontInst.cpp:1165
+#: kcmfontinst/KCmFontInst.cpp:1165 kcmfontinst/KCmFontInst.cpp:1166
 msgid "Enable Font"
 msgstr "Овозможување фонт"
 
-#: kcmfontinst/KCmFontInst.cpp:1164 kcmfontinst/KCmFontInst.cpp:1166
+#: kcmfontinst/KCmFontInst.cpp:1165 kcmfontinst/KCmFontInst.cpp:1167
 msgid "Disable Font"
 msgstr "Оневозможување фонт"
 
-#: kcmfontinst/KCmFontInst.cpp:1171
+#: kcmfontinst/KCmFontInst.cpp:1172
 #, kde-format
 msgid "Do you really want to enable this font?"
 msgid_plural "Do you really want to enable these %1 fonts?"
@@ -884,7 +872,7 @@ msgstr[0] "Дали навистина сакате да го овозможит
 msgstr[1] "Дали навистина сакате да ги овозможите овие %1 фонта?"
 msgstr[2] "Дали навистина сакате да ги овозможите овие %1 фонтови?"
 
-#: kcmfontinst/KCmFontInst.cpp:1174
+#: kcmfontinst/KCmFontInst.cpp:1175
 #, kde-format
 msgid "Do you really want to disable this font?"
 msgid_plural "Do you really want to disable these %1 fonts?"
@@ -892,7 +880,7 @@ msgstr[0] "Дали навистина сакате да го оневозмож
 msgstr[1] "Дали навистина сакате да ги оневозможите овие %1 фонта?"
 msgstr[2] "Дали навистина сакате да ги оневозможите овие %1 фонтови?"
 
-#: kcmfontinst/KCmFontInst.cpp:1177
+#: kcmfontinst/KCmFontInst.cpp:1178
 #, kde-format
 msgid ""
 "<p>Do you really want to enable this font contained within group '<b>%2</b>'?"
@@ -910,7 +898,7 @@ msgstr[2] ""
 "<p>Дали навистина сакате да ги овозможите овие %1 фонтови што се содржат во "
 "групата „<b>%2</b>“?</p>"
 
-#: kcmfontinst/KCmFontInst.cpp:1182
+#: kcmfontinst/KCmFontInst.cpp:1183
 #, kde-format
 msgid ""
 "<p>Do you really want to disable this font contained within group '<b>%2</"
@@ -928,19 +916,19 @@ msgstr[2] ""
 "<p>Дали навистина сакате да ги овозможите овие %1 фонтови што се содржат во "
 "групата „<b>%2</b>“?</p>"
 
-#: kcmfontinst/KCmFontInst.cpp:1188 kcmfontinst/KCmFontInst.cpp:1189
+#: kcmfontinst/KCmFontInst.cpp:1189 kcmfontinst/KCmFontInst.cpp:1190
 msgid "Enable Fonts"
 msgstr "Овозможување фонтови"
 
-#: kcmfontinst/KCmFontInst.cpp:1188 kcmfontinst/KCmFontInst.cpp:1190
+#: kcmfontinst/KCmFontInst.cpp:1189 kcmfontinst/KCmFontInst.cpp:1191
 msgid "Disable Fonts"
 msgstr "Оневозможување фонтови"
 
-#: kcmfontinst/KCmFontInst.cpp:1196
+#: kcmfontinst/KCmFontInst.cpp:1197
 msgid "Enabling font(s)..."
 msgstr "Овозможувам фонтови..."
 
-#: kcmfontinst/KCmFontInst.cpp:1198
+#: kcmfontinst/KCmFontInst.cpp:1199
 msgid "Disabling font(s)..."
 msgstr "Оневозможувам фонтови..."
 
@@ -976,12 +964,12 @@ msgstr "36точ"
 msgid "48pt"
 msgstr "48точ"
 
-#: kio/KioFonts.cpp:228
+#: kio/KioFonts.cpp:227
 #, kde-format
 msgid "Can only install fonts to either \"%1\" or \"%2\"."
 msgstr "Можам да инсталирам фонтови само во „%1“ или „%2“."
 
-#: kio/KioFonts.cpp:231
+#: kio/KioFonts.cpp:230
 #, kde-format
 msgid ""
 "You cannot install a fonts package directly.\n"
@@ -990,66 +978,66 @@ msgstr ""
 "Не може директно да инсталирате пакет со фонтови.\n"
 "Отпакувајте ја %1 и инсталирајте ги компонентите индивидуално."
 
-#: kio/KioFonts.cpp:479
+#: kio/KioFonts.cpp:478
 msgid "Cannot copy fonts"
 msgstr "Не можам да копирам фонтови"
 
-#: kio/KioFonts.cpp:484
+#: kio/KioFonts.cpp:483
 msgid "Cannot move fonts"
 msgstr "Не можам да преместам фонтови"
 
-#: kio/KioFonts.cpp:495
+#: kio/KioFonts.cpp:494
 msgid "Only fonts may be deleted."
 msgstr "Може да се бришат само фонтови."
 
-#: kio/KioFonts.cpp:498
+#: kio/KioFonts.cpp:497
 #, kde-format
 msgid "Can only remove fonts from either \"%1\" or \"%2\"."
 msgstr "Можам да бришам фонтови само од „%1“ или „%2“."
 
-#: kio/KioFonts.cpp:528
+#: kio/KioFonts.cpp:527
 #, kde-format
 msgid "Please specify \"%1\" or \"%2\"."
 msgstr "Ве молиме наведете „%1“ или „%2“."
 
-#: kio/KioFonts.cpp:552
+#: kio/KioFonts.cpp:551
 msgid "No special methods supported."
 msgstr "Нема поддржани специјални методи."
 
-#: kio/KioFonts.cpp:632
+#: kio/KioFonts.cpp:631
 msgid "Fonts"
 msgstr "Фонтови"
 
-#: kio/KioFonts.cpp:786
+#: kio/KioFonts.cpp:785
 msgid "Failed to start the system daemon"
 msgstr "Не успеав да го стартувам системскиот даемон."
 
-#: kio/KioFonts.cpp:789
+#: kio/KioFonts.cpp:788
 msgid "Backend died"
 msgstr "Задниот крај падна"
 
-#: kio/KioFonts.cpp:793
+#: kio/KioFonts.cpp:792
 #, kde-format
 msgid "%1 is a bitmap font, and these have been disabled on your system."
 msgstr "%1 е битмапиран фонт, а тие се оневозможени на Вашиот систем."
 
-#: kio/KioFonts.cpp:797
+#: kio/KioFonts.cpp:796
 #, kde-format
 msgid ""
 "%1 contains the font <b>%2</b>, which is already installed on your system."
 msgstr "%1 го содржи фонтот <b>%2</b>, кој е веќе инсталиран на Вашиот систем."
 
-#: kio/KioFonts.cpp:801
+#: kio/KioFonts.cpp:800
 #, kde-format
 msgid "%1 is not a font."
 msgstr "%1 не е фонт."
 
-#: kio/KioFonts.cpp:804
+#: kio/KioFonts.cpp:803
 #, kde-format
 msgid "Could not remove all files associated with %1"
 msgstr "Не можам да ги отстранам сите датотеки што се поврзани со %1"
 
-#: lib/Fc.cpp:421 lib/KfiConstants.h:135
+#: lib/Fc.cpp:421 lib/KfiConstants.h:128
 msgid "Unknown"
 msgstr "Непознато"
 
@@ -1221,23 +1209,23 @@ msgstr "Разделувач, пасус"
 msgid "Separator, Space"
 msgstr "Разделувач, празно место"
 
-#: viewpart/CharTip.cpp:172
+#: viewpart/CharTip.cpp:174
 msgid "Category"
 msgstr "Категорија"
 
-#: viewpart/CharTip.cpp:174
+#: viewpart/CharTip.cpp:176
 msgid "UCS-4"
 msgstr "UCS-4"
 
-#: viewpart/CharTip.cpp:178
+#: viewpart/CharTip.cpp:180
 msgid "UTF-16"
 msgstr "UTF-16"
 
-#: viewpart/CharTip.cpp:189
+#: viewpart/CharTip.cpp:191
 msgid "UTF-8"
 msgstr "UTF-8"
 
-#: viewpart/CharTip.cpp:206
+#: viewpart/CharTip.cpp:208
 msgid "XML Decimal Entity"
 msgstr "XML-декаден ентитет"
 
@@ -1253,19 +1241,19 @@ msgstr "Инсталирај..."
 msgid "Change Text..."
 msgstr "Сменете текст..."
 
-#: viewpart/FontViewPart.cpp:387
+#: viewpart/FontViewPart.cpp:389
 msgid "Could not read font."
 msgstr "Не можев да го прочитам фонтот."
 
-#: viewpart/FontViewPart.cpp:434
+#: viewpart/FontViewPart.cpp:436
 msgid "Preview String"
 msgstr "Низа за преглед"
 
-#: viewpart/FontViewPart.cpp:435
+#: viewpart/FontViewPart.cpp:437
 msgid "Please enter new string:"
 msgstr "Ве молиме внесете нова низа:"
 
-#: viewpart/FontViewPart.cpp:535
+#: viewpart/FontViewPart.cpp:530
 msgid "<p>No information</p>"
 msgstr "<p>Нема информација</p>"
 
@@ -1291,131 +1279,131 @@ msgstr "Уникод-блок: %1"
 msgid "Unicode Script: %1"
 msgstr "Уникод-писмо: %1"
 
-#: lib/KfiConstants.h:47
+#: lib/KfiConstants.h:40
 msgid "Personal"
 msgstr "Лично"
 
-#: lib/KfiConstants.h:48
+#: lib/KfiConstants.h:41
 msgid "System"
 msgstr "Систем"
 
-#: lib/KfiConstants.h:49
+#: lib/KfiConstants.h:42
 msgid "All"
 msgstr "Сите"
 
-#: lib/KfiConstants.h:63
+#: lib/KfiConstants.h:56
 msgid "Administrator"
 msgstr "Администратор"
 
-#: lib/KfiConstants.h:102
+#: lib/KfiConstants.h:95
 msgid "Thin"
 msgstr "Тенок"
 
-#: lib/KfiConstants.h:103
+#: lib/KfiConstants.h:96
 msgid "Extra Light"
 msgstr "Екстра лесен"
 
-#: lib/KfiConstants.h:104
+#: lib/KfiConstants.h:97
 msgid "Ultra Light"
 msgstr "Ултра лесен"
 
-#: lib/KfiConstants.h:105
+#: lib/KfiConstants.h:98
 msgid "Light"
 msgstr "Лесен"
 
-#: lib/KfiConstants.h:106
+#: lib/KfiConstants.h:99
 msgid "Regular"
 msgstr "Регуларен"
 
-#: lib/KfiConstants.h:107 lib/KfiConstants.h:125
+#: lib/KfiConstants.h:100 lib/KfiConstants.h:118
 msgid "Normal"
 msgstr "Нормален"
 
-#: lib/KfiConstants.h:108
+#: lib/KfiConstants.h:101
 msgid "Medium"
 msgstr "Среден"
 
-#: lib/KfiConstants.h:109
+#: lib/KfiConstants.h:102
 msgid "Demi Bold"
 msgstr ""
 
-#: lib/KfiConstants.h:110
+#: lib/KfiConstants.h:103
 msgid "Semi Bold"
 msgstr ""
 
-#: lib/KfiConstants.h:111
+#: lib/KfiConstants.h:104
 msgid "Bold"
 msgstr "Задебелен"
 
-#: lib/KfiConstants.h:112
+#: lib/KfiConstants.h:105
 msgid "Extra Bold"
 msgstr ""
 
-#: lib/KfiConstants.h:113
+#: lib/KfiConstants.h:106
 msgid "Ultra Bold"
 msgstr ""
 
-#: lib/KfiConstants.h:114
+#: lib/KfiConstants.h:107
 msgid "Black"
 msgstr "Црн"
 
-#: lib/KfiConstants.h:115
+#: lib/KfiConstants.h:108
 msgid "Heavy"
 msgstr "Тежок"
 
-#: lib/KfiConstants.h:117
+#: lib/KfiConstants.h:110
 msgid "Roman"
 msgstr ""
 
-#: lib/KfiConstants.h:118
+#: lib/KfiConstants.h:111
 msgid "Italic"
 msgstr "Курзив"
 
-#: lib/KfiConstants.h:119
+#: lib/KfiConstants.h:112
 msgid "Oblique"
 msgstr ""
 
-#: lib/KfiConstants.h:121
+#: lib/KfiConstants.h:114
 msgid "Ultra Condensed"
 msgstr ""
 
-#: lib/KfiConstants.h:122
+#: lib/KfiConstants.h:115
 msgid "Extra Condensed"
 msgstr ""
 
-#: lib/KfiConstants.h:123
+#: lib/KfiConstants.h:116
 msgid "Condensed"
 msgstr ""
 
-#: lib/KfiConstants.h:124
+#: lib/KfiConstants.h:117
 msgid "Semi Condensed"
 msgstr ""
 
-#: lib/KfiConstants.h:126
+#: lib/KfiConstants.h:119
 msgid "Semi Expanded"
 msgstr ""
 
-#: lib/KfiConstants.h:127
+#: lib/KfiConstants.h:120
 msgid "Expanded"
 msgstr ""
 
-#: lib/KfiConstants.h:128
+#: lib/KfiConstants.h:121
 msgid "Extra Expanded"
 msgstr ""
 
-#: lib/KfiConstants.h:129
+#: lib/KfiConstants.h:122
 msgid "Ultra Expanded"
 msgstr ""
 
-#: lib/KfiConstants.h:131
+#: lib/KfiConstants.h:124
 msgid "Monospaced"
 msgstr ""
 
-#: lib/KfiConstants.h:132
+#: lib/KfiConstants.h:125
 msgid "Charcell"
 msgstr "Ќелија со знак"
 
-#: lib/KfiConstants.h:133
+#: lib/KfiConstants.h:126
 msgid "Proportional"
 msgstr "Пропорционален"
 
@@ -2086,3 +2074,12 @@ msgstr "Фагс-па"
 #: viewpart/UnicodeScripts.h:79
 msgid "Yi"
 msgstr "Ји"
+
+#~ msgid "Move Here"
+#~ msgstr "Премести тука"
+
+#~ msgid "Cancel"
+#~ msgstr "Откажи"
+
+#~ msgid "Failed to locate font printer."
+#~ msgstr "Не успеав да лоцирам печатач на фонтови."
