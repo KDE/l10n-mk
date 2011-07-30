@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akregator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-07-06 04:34+0200\n"
+"POT-Creation-Date: 2011-07-30 04:16+0200\n"
 "PO-Revision-Date: 2009-01-18 02:35+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -136,26 +136,6 @@ msgstr ""
 msgid "Didier Hoarau"
 msgstr ""
 
-#: plugins/onlinesync/onlinesyncplugin.cpp:61
-msgid "Synchronize Feeds"
-msgstr ""
-
-#: plugins/onlinesync/onlinesyncplugin.cpp:96
-#, kde-format
-msgid "Get from %1"
-msgstr ""
-
-#: plugins/onlinesync/onlinesyncplugin.cpp:105
-#, kde-format
-msgid "Send to %1"
-msgstr ""
-
-#: plugins/onlinesync/onlinesyncplugin.cpp:114
-#, fuzzy
-#| msgid "Loading..."
-msgid "Manage..."
-msgstr "Вчитувам..."
-
 #: plugins/onlinesync/sync/feedsync.cpp:161
 msgid ""
 "Some categories and feeds have been marked for removal. Do you want to "
@@ -210,6 +190,26 @@ msgstr "Доводи"
 msgid "Ask"
 msgstr ""
 
+#: plugins/onlinesync/onlinesyncplugin.cpp:61
+msgid "Synchronize Feeds"
+msgstr ""
+
+#: plugins/onlinesync/onlinesyncplugin.cpp:96
+#, kde-format
+msgid "Get from %1"
+msgstr ""
+
+#: plugins/onlinesync/onlinesyncplugin.cpp:105
+#, kde-format
+msgid "Send to %1"
+msgstr ""
+
+#: plugins/onlinesync/onlinesyncplugin.cpp:114
+#, fuzzy
+#| msgid "Loading..."
+msgid "Manage..."
+msgstr "Вчитувам..."
+
 #: plugins/sharemicroblog/akregator_config_sharemicroblog.cpp:50
 msgid "kcmakrshareconfig"
 msgstr ""
@@ -251,6 +251,55 @@ msgstr ""
 #: plugins/sharemicroblog/sharemicroblogplugin.cpp:165
 msgid "Error during article share"
 msgstr ""
+
+#: src/feedlist.cpp:177
+msgid "All Feeds"
+msgstr "Сите доводи"
+
+#: src/searchbar.cpp:77
+#, fuzzy
+#| msgid "S&earch:"
+msgctxt "Title of article searchbar"
+msgid "S&earch:"
+msgstr "Пр&ебарај:"
+
+#: src/searchbar.cpp:88
+msgid "Status:"
+msgstr "Состојба:"
+
+#: src/searchbar.cpp:97
+msgid "All Articles"
+msgstr "Сите написи"
+
+#: src/searchbar.cpp:98
+#, fuzzy
+#| msgid "Unread"
+msgctxt "Unread articles filter"
+msgid "Unread"
+msgstr "Непрочитани"
+
+#: src/searchbar.cpp:99
+#, fuzzy
+#| msgid "New"
+msgctxt "New articles filter"
+msgid "New"
+msgstr "Нови"
+
+#: src/searchbar.cpp:100
+#, fuzzy
+#| msgid "Important"
+msgctxt "Important articles filter"
+msgid "Important"
+msgstr "Важни"
+
+#: src/searchbar.cpp:102
+msgid "Enter space-separated terms to filter article list"
+msgstr ""
+"Внесете поими одделени со празно место за да ја филтрирате листата со написи"
+
+#: src/searchbar.cpp:103
+msgid "Choose what kind of articles to show in article list"
+msgstr "Изберете каков вид на написи да се прикажуваат во листата со написи"
 
 #: src/mainwindow.cpp:104
 #, fuzzy, kde-format
@@ -376,33 +425,13 @@ msgstr ""
 msgid "Ask Me Later"
 msgstr ""
 
-#: src/actions.cpp:35 src/pageviewer.cpp:411
-msgid "Open Link in New &Tab"
-msgstr "Отвори ја врската во ново &ливче"
+#: src/tabwidget.cpp:113
+msgid "Close the current tab"
+msgstr "Затвори го тековното ливче"
 
-#: src/actions.cpp:44 src/pageviewer.cpp:413
-msgid "Open Link in External &Browser"
-msgstr "Отвори ја врската во нов &Прелистувач"
-
-#. i18n: file: src/addfeedwidgetbase.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, Akregator::AddFeedWidgetBase)
-#: src/addfeeddialog.cpp:65 rc.cpp:419
-msgid "Add Feed"
-msgstr "Додај довод"
-
-#: src/addfeeddialog.cpp:104
-#, kde-format
-msgid "Downloading %1"
-msgstr "Симнувам %1"
-
-#: src/addfeeddialog.cpp:123
-#, kde-format
-msgid "Feed not found from %1."
-msgstr "Не е пронајден довод од %1"
-
-#: src/addfeeddialog.cpp:129
-msgid "Feed found, downloading..."
-msgstr "Пронајдов довод, симнувам..."
+#: src/articlejobs.cpp:188
+msgid "The feed to be listed was already removed."
+msgstr ""
 
 #: src/akregator_options.h:37 src/akregator_options.h:41
 msgid "Add a feed with the given URL"
@@ -415,6 +444,18 @@ msgstr ""
 #: src/akregator_options.h:40
 msgid "Hide main window on startup"
 msgstr ""
+
+#: src/progressmanager.cpp:177
+msgid "Fetch completed"
+msgstr "Преземањето е завршено"
+
+#: src/progressmanager.cpp:187
+msgid "Fetch error"
+msgstr "Грешка при преземање"
+
+#: src/progressmanager.cpp:197
+msgid "Fetch aborted"
+msgstr "Преземањето прекинато"
 
 #: src/articleviewer.cpp:137
 msgid "Copy &Link Address"
@@ -471,22 +512,6 @@ msgstr "<qt>Дали сте сигурни дека сакате да го из�
 #| msgid "Disable Archiving"
 msgid "Disable Introduction Page"
 msgstr "Оневозможи архивирање"
-
-#: src/progressmanager.cpp:177
-msgid "Fetch completed"
-msgstr "Преземањето е завршено"
-
-#: src/progressmanager.cpp:187
-msgid "Fetch error"
-msgstr "Грешка при преземање"
-
-#: src/progressmanager.cpp:197
-msgid "Fetch aborted"
-msgstr "Преземањето прекинато"
-
-#: src/articlejobs.cpp:188
-msgid "The feed to be listed was already removed."
-msgstr ""
 
 #: src/articlemodel.cpp:106
 #, fuzzy
@@ -574,9 +599,13 @@ msgstr "Избриши довод"
 msgid "No Archive"
 msgstr "Архива"
 
-#: src/feedlist.cpp:177
-msgid "All Feeds"
-msgstr "Сите доводи"
+#: src/actions.cpp:35 src/pageviewer.cpp:411
+msgid "Open Link in New &Tab"
+msgstr "Отвори ја врската во ново &ливче"
+
+#: src/actions.cpp:44 src/pageviewer.cpp:413
+msgid "Open Link in External &Browser"
+msgstr "Отвори ја врската во нов &Прелистувач"
 
 #: src/feedpropertiesdialog.cpp:71 src/feedpropertiesdialog.cpp:96
 #, fuzzy
@@ -934,50 +963,25 @@ msgstr ""
 msgid "Complete Story"
 msgstr "Комплетна приказна"
 
-#: src/searchbar.cpp:77
-#, fuzzy
-#| msgid "S&earch:"
-msgctxt "Title of article searchbar"
-msgid "S&earch:"
-msgstr "Пр&ебарај:"
+#. i18n: file: src/addfeedwidgetbase.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, Akregator::AddFeedWidgetBase)
+#: src/addfeeddialog.cpp:65 rc.cpp:419
+msgid "Add Feed"
+msgstr "Додај довод"
 
-#: src/searchbar.cpp:88
-msgid "Status:"
-msgstr "Состојба:"
+#: src/addfeeddialog.cpp:104
+#, kde-format
+msgid "Downloading %1"
+msgstr "Симнувам %1"
 
-#: src/searchbar.cpp:97
-msgid "All Articles"
-msgstr "Сите написи"
+#: src/addfeeddialog.cpp:123
+#, kde-format
+msgid "Feed not found from %1."
+msgstr "Не е пронајден довод од %1"
 
-#: src/searchbar.cpp:98
-#, fuzzy
-#| msgid "Unread"
-msgctxt "Unread articles filter"
-msgid "Unread"
-msgstr "Непрочитани"
-
-#: src/searchbar.cpp:99
-#, fuzzy
-#| msgid "New"
-msgctxt "New articles filter"
-msgid "New"
-msgstr "Нови"
-
-#: src/searchbar.cpp:100
-#, fuzzy
-#| msgid "Important"
-msgctxt "Important articles filter"
-msgid "Important"
-msgstr "Важни"
-
-#: src/searchbar.cpp:102
-msgid "Enter space-separated terms to filter article list"
-msgstr ""
-"Внесете поими одделени со празно место за да ја филтрирате листата со написи"
-
-#: src/searchbar.cpp:103
-msgid "Choose what kind of articles to show in article list"
-msgstr "Изберете каков вид на написи да се прикажуваат во листата со написи"
+#: src/addfeeddialog.cpp:129
+msgid "Feed found, downloading..."
+msgstr "Пронајдов довод, симнувам..."
 
 #: src/subscriptionlistjobs.cpp:64
 msgid "Feed list was deleted"
@@ -1052,10 +1056,6 @@ msgstr "&Запис"
 #| msgid "Comments"
 msgid "Columns"
 msgstr "Коментари"
-
-#: src/tabwidget.cpp:113
-msgid "Close the current tab"
-msgstr "Затвори го тековното ливче"
 
 #: src/articlelistview.cpp:383
 msgid ""
