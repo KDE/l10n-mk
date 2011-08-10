@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-09 03:44+0200\n"
+"POT-Creation-Date: 2011-08-10 03:22+0200\n"
 "PO-Revision-Date: 2010-01-28 23:53+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -210,61 +210,6 @@ msgctxt "@label:textbox"
 msgid "Find:"
 msgstr ""
 
-#: settings/general/behaviorsettingspage.cpp:56
-msgctxt "@title:group"
-msgid "View Properties"
-msgstr "Својства на приказот"
-
-#: settings/general/behaviorsettingspage.cpp:59
-msgctxt "@option:radio"
-msgid "Remember view properties for each folder"
-msgstr "Запомни ги својствата на приказот за секоја папка"
-
-#: settings/general/behaviorsettingspage.cpp:61
-msgctxt "@option:radio"
-msgid "Use common view properties for all folders"
-msgstr "Користи општи својства на приказот за сите папки"
-
-#: settings/general/behaviorsettingspage.cpp:68
-msgctxt "@title:group"
-msgid "Ask For Confirmation When"
-msgstr "Прашај за потврда при"
-
-#: settings/general/behaviorsettingspage.cpp:71
-msgctxt "@option:check Ask for Confirmation When"
-msgid "Moving files or folders to trash"
-msgstr "преместување датотеки или папки во корпата"
-
-#: settings/general/behaviorsettingspage.cpp:73
-msgctxt "@option:check Ask for Confirmation When"
-msgid "Deleting files or folders"
-msgstr "бришење датотеки или папки во корпата"
-
-#: settings/general/behaviorsettingspage.cpp:75
-msgctxt "@option:check Ask for Confirmation When"
-msgid "Closing windows with multiple tabs"
-msgstr "затворање прозорци со повеќе ливчиња"
-
-#: settings/general/behaviorsettingspage.cpp:83
-msgctxt "@option:check"
-msgid "Rename inline"
-msgstr "Директно преименување"
-
-#: settings/general/behaviorsettingspage.cpp:86
-msgctxt "@option:check"
-msgid "Show tooltips"
-msgstr "Прикажи совети"
-
-#: settings/general/behaviorsettingspage.cpp:89
-msgctxt "@option:check"
-msgid "Show selection marker"
-msgstr "Прикажи маркер за избор"
-
-#: settings/general/behaviorsettingspage.cpp:92
-msgctxt "option:check"
-msgid "Natural sorting of items"
-msgstr "Природно подредување на елементите"
-
 #: settings/general/contextmenusettingspage.cpp:43
 msgctxt "@option:check"
 msgid "Show 'Delete' command"
@@ -342,6 +287,61 @@ msgstr ""
 msgctxt "@label Don't create previews for: <Remote files above:> XX MByte"
 msgid "Remote files above:"
 msgstr "Подреди датотеки според"
+
+#: settings/general/behaviorsettingspage.cpp:56
+msgctxt "@title:group"
+msgid "View Properties"
+msgstr "Својства на приказот"
+
+#: settings/general/behaviorsettingspage.cpp:59
+msgctxt "@option:radio"
+msgid "Remember view properties for each folder"
+msgstr "Запомни ги својствата на приказот за секоја папка"
+
+#: settings/general/behaviorsettingspage.cpp:61
+msgctxt "@option:radio"
+msgid "Use common view properties for all folders"
+msgstr "Користи општи својства на приказот за сите папки"
+
+#: settings/general/behaviorsettingspage.cpp:68
+msgctxt "@title:group"
+msgid "Ask For Confirmation When"
+msgstr "Прашај за потврда при"
+
+#: settings/general/behaviorsettingspage.cpp:71
+msgctxt "@option:check Ask for Confirmation When"
+msgid "Moving files or folders to trash"
+msgstr "преместување датотеки или папки во корпата"
+
+#: settings/general/behaviorsettingspage.cpp:73
+msgctxt "@option:check Ask for Confirmation When"
+msgid "Deleting files or folders"
+msgstr "бришење датотеки или папки во корпата"
+
+#: settings/general/behaviorsettingspage.cpp:75
+msgctxt "@option:check Ask for Confirmation When"
+msgid "Closing windows with multiple tabs"
+msgstr "затворање прозорци со повеќе ливчиња"
+
+#: settings/general/behaviorsettingspage.cpp:83
+msgctxt "@option:check"
+msgid "Rename inline"
+msgstr "Директно преименување"
+
+#: settings/general/behaviorsettingspage.cpp:86
+msgctxt "@option:check"
+msgid "Show tooltips"
+msgstr "Прикажи совети"
+
+#: settings/general/behaviorsettingspage.cpp:89
+msgctxt "@option:check"
+msgid "Show selection marker"
+msgstr "Прикажи маркер за избор"
+
+#: settings/general/behaviorsettingspage.cpp:92
+msgctxt "option:check"
+msgid "Natural sorting of items"
+msgstr "Природно подредување на елементите"
 
 #: settings/kcm/kcmdolphinviewmodes.cpp:58
 #: settings/viewmodes/viewsettingspage.cpp:45
@@ -1031,6 +1031,64 @@ msgctxt "@info:status"
 msgid "Unknown error."
 msgstr "Непозната грешка."
 
+#: views/dolphinview.cpp:466
+#, kde-format
+msgctxt "@info:status"
+msgid "<filename>%1</filename> selected"
+msgstr "Избрано е <filename>%1</filename>"
+
+#: views/dolphinview.cpp:467
+#, kde-format
+msgctxt "@info:status"
+msgid "<filename>%1</filename> selected (%2)"
+msgstr "Избрано е <filename>%1</filename> (%2)"
+
+#: views/dolphinview.cpp:471
+#, kde-format
+msgctxt "@info:status"
+msgid "1 Folder selected"
+msgid_plural "%1 Folders selected"
+msgstr[0] "Избрана е %1 папка."
+msgstr[1] "Избрани се %1 папки."
+msgstr[2] "Избрани се %1 папки."
+
+#: views/dolphinview.cpp:472
+#, kde-format
+msgctxt "@info:status"
+msgid "1 File selected"
+msgid_plural "%1 Files selected"
+msgstr[0] "Избрана е %1 датотека"
+msgstr[1] "Избрани се %1 датотеки"
+msgstr[2] "Избрани се %1 датотеки"
+
+#: views/dolphinview.cpp:474
+#, kde-format
+msgctxt "@info:status folders, files (size)"
+msgid "%1, %2 (%3)"
+msgstr "%1, %2 (%3)"
+
+#: views/dolphinview.cpp:477
+#, kde-format
+msgctxt "@info:status files (size)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: views/dolphinview.cpp:959
+msgctxt "@info:status"
+msgid "Delete operation completed."
+msgstr "Бришењето е завршено."
+
+#: views/dolphinview.cpp:1011
+msgctxt "@info:status"
+msgid "The location is empty."
+msgstr "Локацијата е празна."
+
+#: views/dolphinview.cpp:1013
+#, kde-format
+msgctxt "@info:status"
+msgid "The location '%1' is invalid."
+msgstr "Локацијата „%1“ не е валидна."
+
 #: views/renamedialog.cpp:54
 msgctxt "@title:window"
 msgid "Rename Item"
@@ -1070,64 +1128,6 @@ msgstr[2] "Преименувај ги овие %1 избрани елемент
 msgctxt "@info"
 msgid "(# will be replaced by ascending numbers)"
 msgstr "(# ќе биде заменето со растечки бројки)"
-
-#: views/dolphinview.cpp:472
-#, kde-format
-msgctxt "@info:status"
-msgid "<filename>%1</filename> selected"
-msgstr "Избрано е <filename>%1</filename>"
-
-#: views/dolphinview.cpp:473
-#, kde-format
-msgctxt "@info:status"
-msgid "<filename>%1</filename> selected (%2)"
-msgstr "Избрано е <filename>%1</filename> (%2)"
-
-#: views/dolphinview.cpp:477
-#, kde-format
-msgctxt "@info:status"
-msgid "1 Folder selected"
-msgid_plural "%1 Folders selected"
-msgstr[0] "Избрана е %1 папка."
-msgstr[1] "Избрани се %1 папки."
-msgstr[2] "Избрани се %1 папки."
-
-#: views/dolphinview.cpp:478
-#, kde-format
-msgctxt "@info:status"
-msgid "1 File selected"
-msgid_plural "%1 Files selected"
-msgstr[0] "Избрана е %1 датотека"
-msgstr[1] "Избрани се %1 датотеки"
-msgstr[2] "Избрани се %1 датотеки"
-
-#: views/dolphinview.cpp:480
-#, kde-format
-msgctxt "@info:status folders, files (size)"
-msgid "%1, %2 (%3)"
-msgstr "%1, %2 (%3)"
-
-#: views/dolphinview.cpp:483
-#, kde-format
-msgctxt "@info:status files (size)"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: views/dolphinview.cpp:941
-msgctxt "@info:status"
-msgid "Delete operation completed."
-msgstr "Бришењето е завршено."
-
-#: views/dolphinview.cpp:1059
-msgctxt "@info:status"
-msgid "The location is empty."
-msgstr "Локацијата е празна."
-
-#: views/dolphinview.cpp:1061
-#, kde-format
-msgctxt "@info:status"
-msgid "The location '%1' is invalid."
-msgstr "Локацијата „%1“ не е валидна."
 
 #: dolphinpart.cpp:147
 msgctxt "@action:inmenu Edit"
@@ -1217,15 +1217,7 @@ msgctxt "@item:intable"
 msgid "items"
 msgstr ""
 
-#: kitemviews/kfileitemmodel.cpp:619
-#, fuzzy
-#| msgctxt "@label"
-#| msgid "Description:"
-msgctxt "@item:intable"
-msgid "No destination"
-msgstr "Опис:"
-
-#: kitemviews/kfileitemlistwidget.cpp:634
+#: kitemviews/kfileitemlistwidget.cpp:640
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "%1 item selected"
@@ -1236,6 +1228,14 @@ msgid_plural "%1 items"
 msgstr[0] "Избран е %1 елемент"
 msgstr[1] "Избрани се %1 елементи"
 msgstr[2] "Избрани се %1 елементи"
+
+#: kitemviews/kfileitemmodel.cpp:622
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "Description:"
+msgctxt "@item:intable"
+msgid "No destination"
+msgstr "Опис:"
 
 #: dolphinmainwindow.cpp:339
 msgctxt "@info:status"
