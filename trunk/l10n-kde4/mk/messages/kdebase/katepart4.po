@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-11 03:12+0200\n"
+"POT-Creation-Date: 2011-08-12 03:27+0200\n"
 "PO-Revision-Date: 2009-01-08 12:55+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1792,7 +1792,7 @@ msgstr "&Следно: %1 - „%2“"
 msgid "&Previous: %1 - \"%2\""
 msgstr "&Предходно: %1 - „%2“"
 
-#: utils/kateschema.cpp:207 view/kateviewhelpers.cpp:768
+#: utils/kateschema.cpp:207 view/kateviewhelpers.cpp:776
 msgid "Bookmark"
 msgstr "Обележувач"
 
@@ -1939,7 +1939,7 @@ msgstr ""
 msgid "Exporting colors for single highlighting: %1"
 msgstr ""
 
-#: utils/kateschema.cpp:863 utils/kateprinter.cpp:1075
+#: utils/kateschema.cpp:863 utils/kateprinter.cpp:1122
 msgid "&Schema:"
 msgstr "&Шема:"
 
@@ -2134,32 +2134,32 @@ msgstr[0] "Направена е %1 замена"
 msgstr[1] "Направени се %1 замени"
 msgstr[2] "Направени се %1 замени"
 
-#: utils/kateprinter.cpp:244
+#: utils/kateprinter.cpp:246
 msgid "(Selection of) "
 msgstr "(Избор на) "
 
-#: utils/kateprinter.cpp:526
+#: utils/kateprinter.cpp:528
 #, kde-format
 msgid "Typographical Conventions for %1"
 msgstr "Типографски конвенции за %1"
 
-#: utils/kateprinter.cpp:556
+#: utils/kateprinter.cpp:558
 msgid "text"
 msgstr "текст"
 
-#: utils/kateprinter.cpp:680
+#: utils/kateprinter.cpp:682
 msgid "Te&xt Settings"
 msgstr "Поставувања за те&кст"
 
-#: utils/kateprinter.cpp:687
+#: utils/kateprinter.cpp:686
 msgid "Print line &numbers"
 msgstr "Печати броеви на &редовите"
 
-#: utils/kateprinter.cpp:690
+#: utils/kateprinter.cpp:689
 msgid "Print &legend"
 msgstr "Печати &легенда"
 
-#: utils/kateprinter.cpp:702
+#: utils/kateprinter.cpp:698
 msgid ""
 "<p>If enabled, line numbers will be printed on the left side of the page(s)."
 "</p>"
@@ -2167,7 +2167,7 @@ msgstr ""
 "<p>Ако е овозможено, броевите на линиите ќе бидат испечатени на левата "
 "страна од страницата</p>"
 
-#: utils/kateprinter.cpp:704
+#: utils/kateprinter.cpp:700
 msgid ""
 "<p>Print a box displaying typographical conventions for the document type, "
 "as defined by the syntax highlighting being used.</p>"
@@ -2175,51 +2175,51 @@ msgstr ""
 "<p>Печати поле кое прикажува типографски конвенции за типот на документот, "
 "како што е дефинирано од синтаксичкото означување кое се користи.</p>"
 
-#: utils/kateprinter.cpp:766
+#: utils/kateprinter.cpp:752
 msgid "Hea&der && Footer"
 msgstr "З&аглавие и подножје"
 
-#: utils/kateprinter.cpp:773
+#: utils/kateprinter.cpp:759
 msgid "Pr&int header"
 msgstr "Печати &заглавие"
 
-#: utils/kateprinter.cpp:775
+#: utils/kateprinter.cpp:761
 msgid "Pri&nt footer"
 msgstr "Печати &подножје"
 
-#: utils/kateprinter.cpp:781
+#: utils/kateprinter.cpp:767
 msgid "Header/footer font:"
 msgstr "Фонт на заглавие и подножје:"
 
-#: utils/kateprinter.cpp:786
+#: utils/kateprinter.cpp:772
 msgid "Choo&se Font..."
 msgstr "&Избери фонт..."
 
-#: utils/kateprinter.cpp:792
+#: utils/kateprinter.cpp:778
 msgid "Header Properties"
 msgstr "Својства на заглавието"
 
-#: utils/kateprinter.cpp:796
+#: utils/kateprinter.cpp:782
 msgid "&Format:"
 msgstr "&Формат:"
 
-#: utils/kateprinter.cpp:807 utils/kateprinter.cpp:837
+#: utils/kateprinter.cpp:800 utils/kateprinter.cpp:837
 msgid "Colors:"
 msgstr "Бои:"
 
-#: utils/kateprinter.cpp:813 utils/kateprinter.cpp:843
+#: utils/kateprinter.cpp:806 utils/kateprinter.cpp:843
 msgid "Foreground:"
 msgstr "Текст:"
 
-#: utils/kateprinter.cpp:816
+#: utils/kateprinter.cpp:809
 msgid "Bac&kground"
 msgstr "&Подлога"
 
-#: utils/kateprinter.cpp:820
+#: utils/kateprinter.cpp:813
 msgid "Footer Properties"
 msgstr "Својства на подножјето"
 
-#: utils/kateprinter.cpp:825
+#: utils/kateprinter.cpp:818
 msgid "For&mat:"
 msgstr "Фор&мат:"
 
@@ -2233,13 +2233,21 @@ msgstr ""
 "<p>Формат на заглавието на страницата. Поддржани се следните ознаки:</p>"
 
 #: utils/kateprinter.cpp:875
+#, fuzzy
+#| msgid ""
+#| "<ul><li><tt>%u</tt>: current user name</li><li><tt>%d</tt>: complete date/"
+#| "time in short format</li><li><tt>%D</tt>: complete date/time in long "
+#| "format</li><li><tt>%h</tt>: current time</li><li><tt>%y</tt>: current "
+#| "date in short format</li><li><tt>%Y</tt>: current date in long format</"
+#| "li><li><tt>%f</tt>: file name</li><li><tt>%U</tt>: full URL of the "
+#| "document</li><li><tt>%p</tt>: page number</li></ul><br />"
 msgid ""
 "<ul><li><tt>%u</tt>: current user name</li><li><tt>%d</tt>: complete date/"
 "time in short format</li><li><tt>%D</tt>: complete date/time in long format</"
 "li><li><tt>%h</tt>: current time</li><li><tt>%y</tt>: current date in short "
 "format</li><li><tt>%Y</tt>: current date in long format</li><li><tt>%f</tt>: "
 "file name</li><li><tt>%U</tt>: full URL of the document</li><li><tt>%p</tt>: "
-"page number</li></ul><br />"
+"page number</li><li><tt>%P</tt>: total amount of pages</li></ul><br />"
 msgstr ""
 "<ul><li><tt>%u</tt>: активно корисничко име</li><li><tt>%d</tt>: целосен "
 "датум и време во кратка форма</li><li><tt>%D</tt>: целосен датум и време во "
@@ -2249,43 +2257,93 @@ msgstr ""
 "целосна адреса на документот</li><li><tt>%p</tt>: број на страна</li></"
 "ul><br />"
 
-#: utils/kateprinter.cpp:888
+#: utils/kateprinter.cpp:889
 msgid "<p>Format of the page footer. The following tags are supported:</p>"
 msgstr "<p>Формат на подножјето на страната. Поддржани се следните ознаки:</p>"
 
-#: utils/kateprinter.cpp:1069
+#: utils/kateprinter.cpp:987
+msgid "Add Placeholder..."
+msgstr ""
+
+#: utils/kateprinter.cpp:989
+#, fuzzy
+#| msgid "Current line:"
+msgid "Current User Name"
+msgstr "Активна линија:"
+
+#: utils/kateprinter.cpp:991
+msgid "Complete Date/Time (short format)"
+msgstr ""
+
+#: utils/kateprinter.cpp:993
+msgid "Complete Date/Time (long format)"
+msgstr ""
+
+#: utils/kateprinter.cpp:995
+#, fuzzy
+#| msgid "Current line:"
+msgid "Current Time"
+msgstr "Активна линија:"
+
+#: utils/kateprinter.cpp:997
+msgid "Current Date (short format)"
+msgstr ""
+
+#: utils/kateprinter.cpp:999
+msgid "Current Date (long format)"
+msgstr ""
+
+#: utils/kateprinter.cpp:1001
+#, fuzzy
+#| msgid "Name"
+msgid "File Name"
+msgstr "Име"
+
+#: utils/kateprinter.cpp:1003
+msgid "Full document URL"
+msgstr ""
+
+#: utils/kateprinter.cpp:1005
+msgid "Page Number"
+msgstr ""
+
+#: utils/kateprinter.cpp:1007
+msgid "Total Amount of Pages"
+msgstr ""
+
+#: utils/kateprinter.cpp:1116
 msgid "L&ayout"
 msgstr "&Изглед"
 
-#: utils/kateprinter.cpp:1080
+#: utils/kateprinter.cpp:1127
 msgid "Draw bac&kground color"
 msgstr "Исцртај ја бојата на &подлогата"
 
-#: utils/kateprinter.cpp:1083
+#: utils/kateprinter.cpp:1130
 msgid "Draw &boxes"
 msgstr "Исцртај &полиња"
 
-#: utils/kateprinter.cpp:1087
+#: utils/kateprinter.cpp:1134
 msgid "Box Properties"
 msgstr "Својства на полињата"
 
-#: utils/kateprinter.cpp:1091
+#: utils/kateprinter.cpp:1138
 msgid "W&idth:"
 msgstr "&Ширина:"
 
-#: utils/kateprinter.cpp:1099
+#: utils/kateprinter.cpp:1146
 msgid "&Margin:"
 msgstr "&Маргина:"
 
-#: utils/kateprinter.cpp:1107
+#: utils/kateprinter.cpp:1154
 msgid "Co&lor:"
 msgstr "&Боја:"
 
-#: utils/kateprinter.cpp:1124
+#: utils/kateprinter.cpp:1171
 msgid "Select the color scheme to use for the print."
 msgstr "Изберете ја шемата на бои што ќе се користи при печатење."
 
-#: utils/kateprinter.cpp:1126
+#: utils/kateprinter.cpp:1173
 msgid ""
 "<p>If enabled, the background color of the editor will be used.</p><p>This "
 "may be useful if your color scheme is designed for a dark background.</p>"
@@ -2294,7 +2352,7 @@ msgstr ""
 "<p>Ова може да биде корисно ако вашата шема на бои е дизајнирана за темна "
 "подлога.</p>"
 
-#: utils/kateprinter.cpp:1129
+#: utils/kateprinter.cpp:1176
 msgid ""
 "<p>If enabled, a box as defined in the properties below will be drawn around "
 "the contents of each page. The Header and Footer will be separated from the "
@@ -2304,15 +2362,15 @@ msgstr ""
 "биде нацртано околу содржината на секоја страница. Подножјето и заглавието "
 "ќе бидат исто така одделени од содржината со линија.</p>"
 
-#: utils/kateprinter.cpp:1133
+#: utils/kateprinter.cpp:1180
 msgid "The width of the box outline"
 msgstr "Ширина на надворешната линија на полето"
 
-#: utils/kateprinter.cpp:1135
+#: utils/kateprinter.cpp:1182
 msgid "The margin inside boxes, in pixels"
 msgstr "Маргини внатре во полињата, во пиксели"
 
-#: utils/kateprinter.cpp:1137
+#: utils/kateprinter.cpp:1184
 msgid "The line color to use for boxes"
 msgstr "Боја на линијата која ќе се користи за полиња"
 
@@ -2343,72 +2401,6 @@ msgstr "Движи линија нагоре"
 #| msgid "Scroll Line Down"
 msgid "Move Down"
 msgstr "Движи линија надолу"
-
-#: view/kateviewhelpers.cpp:361
-msgid "Available Commands"
-msgstr "Достапни команди"
-
-#: view/kateviewhelpers.cpp:363
-msgid ""
-"<p>For help on individual commands, do <code>'help &lt;command&gt;'</code></"
-"p>"
-msgstr ""
-"<p>За помош за индивидуалните команди напишете <code>„help &lt;command&gt;“</"
-"code></p>"
-
-#: view/kateviewhelpers.cpp:374
-#, kde-format
-msgid "No help for '%1'"
-msgstr "Нема помош за „%1“"
-
-#: view/kateviewhelpers.cpp:377
-#, kde-format
-msgid "No such command <b>%1</b>"
-msgstr "Нема таква команда <b>%1</b>"
-
-#: view/kateviewhelpers.cpp:382
-msgid ""
-"<p>This is the Katepart <b>command line</b>.<br />Syntax: <code><b>command "
-"[ arguments ]</b></code><br />For a list of available commands, enter "
-"<code><b>help list</b></code><br />For help for individual commands, enter "
-"<code><b>help &lt;command&gt;</b></code></p>"
-msgstr ""
-"<p>Ова е <b>командната линија</b> на Katepart.<br />Синтакса: "
-"<code><b>команда [ аргументи ]</b></code><br />За листа на достапни команди "
-"внесете <code><b>help list</b></code><br />За листа на индивидуални команди "
-"внесете <code><b>help &lt;command&gt;</b></code></p>"
-
-#: view/kateviewhelpers.cpp:511
-#, kde-format
-msgid "Error: No range allowed for command \"%1\"."
-msgstr ""
-
-#: view/kateviewhelpers.cpp:527
-msgid "Success: "
-msgstr "Успех:"
-
-#: view/kateviewhelpers.cpp:542
-#, kde-format
-msgid "Command \"%1\" failed."
-msgstr "Командата „%1“ не успеа."
-
-#: view/kateviewhelpers.cpp:548
-#, kde-format
-msgid "No such command: \"%1\""
-msgstr "Нема таква команда: „%1“"
-
-#: view/kateviewhelpers.cpp:1533 view/kateviewhelpers.cpp:1534
-#, kde-format
-msgid "Mark Type %1"
-msgstr "%1"
-
-#: view/kateviewhelpers.cpp:1553
-msgid "Set Default Mark Type"
-msgstr "Постави почетен тип за обележување"
-
-#: view/kateviewhelpers.cpp:1619
-msgid "Disable Annotation Bar"
-msgstr ""
 
 #: view/kateview.cpp:326
 msgid "Cut the selected text and move it to the clipboard"
@@ -3140,6 +3132,72 @@ msgstr "ВРЗ"
 #: view/kateview.cpp:1034
 msgid "INS"
 msgstr "ВМЕТ"
+
+#: view/kateviewhelpers.cpp:369
+msgid "Available Commands"
+msgstr "Достапни команди"
+
+#: view/kateviewhelpers.cpp:371
+msgid ""
+"<p>For help on individual commands, do <code>'help &lt;command&gt;'</code></"
+"p>"
+msgstr ""
+"<p>За помош за индивидуалните команди напишете <code>„help &lt;command&gt;“</"
+"code></p>"
+
+#: view/kateviewhelpers.cpp:382
+#, kde-format
+msgid "No help for '%1'"
+msgstr "Нема помош за „%1“"
+
+#: view/kateviewhelpers.cpp:385
+#, kde-format
+msgid "No such command <b>%1</b>"
+msgstr "Нема таква команда <b>%1</b>"
+
+#: view/kateviewhelpers.cpp:390
+msgid ""
+"<p>This is the Katepart <b>command line</b>.<br />Syntax: <code><b>command "
+"[ arguments ]</b></code><br />For a list of available commands, enter "
+"<code><b>help list</b></code><br />For help for individual commands, enter "
+"<code><b>help &lt;command&gt;</b></code></p>"
+msgstr ""
+"<p>Ова е <b>командната линија</b> на Katepart.<br />Синтакса: "
+"<code><b>команда [ аргументи ]</b></code><br />За листа на достапни команди "
+"внесете <code><b>help list</b></code><br />За листа на индивидуални команди "
+"внесете <code><b>help &lt;command&gt;</b></code></p>"
+
+#: view/kateviewhelpers.cpp:519
+#, kde-format
+msgid "Error: No range allowed for command \"%1\"."
+msgstr ""
+
+#: view/kateviewhelpers.cpp:535
+msgid "Success: "
+msgstr "Успех:"
+
+#: view/kateviewhelpers.cpp:550
+#, kde-format
+msgid "Command \"%1\" failed."
+msgstr "Командата „%1“ не успеа."
+
+#: view/kateviewhelpers.cpp:556
+#, kde-format
+msgid "No such command: \"%1\""
+msgstr "Нема таква команда: „%1“"
+
+#: view/kateviewhelpers.cpp:1541 view/kateviewhelpers.cpp:1542
+#, kde-format
+msgid "Mark Type %1"
+msgstr "%1"
+
+#: view/kateviewhelpers.cpp:1561
+msgid "Set Default Mark Type"
+msgstr "Постави почетен тип за обележување"
+
+#: view/kateviewhelpers.cpp:1627
+msgid "Disable Annotation Bar"
+msgstr ""
 
 #: vimode/katevimodebar.cpp:125
 msgid "VI: INSERT MODE"
@@ -5591,7 +5649,7 @@ msgstr ""
 #: rc.cpp:1551 rc.cpp:1569 rc.cpp:1575 rc.cpp:1581 rc.cpp:1587 rc.cpp:1593
 #: rc.cpp:1605 rc.cpp:1611 rc.cpp:1623 rc.cpp:1671 rc.cpp:1677 rc.cpp:1695
 #: rc.cpp:1737 rc.cpp:1755 rc.cpp:1761 rc.cpp:1803 rc.cpp:1833 rc.cpp:1845
-#: rc.cpp:1917 rc.cpp:1959 rc.cpp:1971
+#: rc.cpp:1923 rc.cpp:1965 rc.cpp:1977
 msgctxt "Language Section"
 msgid "Sources"
 msgstr "Изворни"
@@ -5677,7 +5735,7 @@ msgstr "AHDL"
 #. i18n: file: syntax/data/verilog.xml:3
 #. i18n: tag language attribute section
 #. i18n: file: syntax/data/vhdl.xml:14
-#: rc.cpp:948 rc.cpp:1809 rc.cpp:1839 rc.cpp:1887 rc.cpp:1893
+#: rc.cpp:948 rc.cpp:1809 rc.cpp:1839 rc.cpp:1893 rc.cpp:1899
 msgctxt "Language Section"
 msgid "Hardware"
 msgstr "Хардвер"
@@ -5755,6 +5813,8 @@ msgstr ""
 #. i18n: tag language attribute section
 #. i18n: file: syntax/data/tcl.xml:29
 #. i18n: tag language attribute section
+#. i18n: file: syntax/data/tcsh.xml:11
+#. i18n: tag language attribute section
 #. i18n: file: syntax/data/uscript.xml:3
 #. i18n: tag language attribute section
 #. i18n: file: syntax/data/velocity.xml:3
@@ -5762,7 +5822,7 @@ msgstr ""
 #: rc.cpp:1347 rc.cpp:1383 rc.cpp:1425 rc.cpp:1461 rc.cpp:1467 rc.cpp:1497
 #: rc.cpp:1629 rc.cpp:1635 rc.cpp:1647 rc.cpp:1683 rc.cpp:1689 rc.cpp:1707
 #: rc.cpp:1743 rc.cpp:1749 rc.cpp:1767 rc.cpp:1779 rc.cpp:1791 rc.cpp:1851
-#: rc.cpp:1875 rc.cpp:1881
+#: rc.cpp:1857 rc.cpp:1881 rc.cpp:1887
 msgctxt "Language Section"
 msgid "Scripts"
 msgstr "Скрипти"
@@ -5802,7 +5862,7 @@ msgstr ""
 #. i18n: tag language attribute section
 #. i18n: file: syntax/data/yacas.xml:3
 #: rc.cpp:978 rc.cpp:1050 rc.cpp:1281 rc.cpp:1293 rc.cpp:1503 rc.cpp:1509
-#: rc.cpp:1599 rc.cpp:1773 rc.cpp:1863 rc.cpp:1953
+#: rc.cpp:1599 rc.cpp:1773 rc.cpp:1869 rc.cpp:1959
 msgctxt "Language Section"
 msgid "Scientific"
 msgstr "Научни"
@@ -5833,7 +5893,7 @@ msgstr "Конфигурација на Апаче"
 #. i18n: tag language attribute section
 #. i18n: file: syntax/data/xorg.xml:3
 #: rc.cpp:984 rc.cpp:1026 rc.cpp:1080 rc.cpp:1167 rc.cpp:1275 rc.cpp:1371
-#: rc.cpp:1521 rc.cpp:1905 rc.cpp:1935
+#: rc.cpp:1521 rc.cpp:1911 rc.cpp:1941
 msgctxt "Language Section"
 msgid "Configuration"
 msgstr "Конфигурација"
@@ -5969,8 +6029,8 @@ msgstr ""
 #: rc.cpp:1185 rc.cpp:1191 rc.cpp:1197 rc.cpp:1299 rc.cpp:1341 rc.cpp:1377
 #: rc.cpp:1395 rc.cpp:1401 rc.cpp:1413 rc.cpp:1479 rc.cpp:1491 rc.cpp:1515
 #: rc.cpp:1527 rc.cpp:1617 rc.cpp:1653 rc.cpp:1701 rc.cpp:1713 rc.cpp:1725
-#: rc.cpp:1785 rc.cpp:1797 rc.cpp:1857 rc.cpp:1869 rc.cpp:1899 rc.cpp:1911
-#: rc.cpp:1923 rc.cpp:1929 rc.cpp:1941 rc.cpp:1947 rc.cpp:1965
+#: rc.cpp:1785 rc.cpp:1797 rc.cpp:1863 rc.cpp:1875 rc.cpp:1905 rc.cpp:1917
+#: rc.cpp:1929 rc.cpp:1935 rc.cpp:1947 rc.cpp:1953 rc.cpp:1971
 msgctxt "Language Section"
 msgid "Markup"
 msgstr "Markup"
@@ -7002,99 +7062,106 @@ msgid "Tcl/Tk"
 msgstr "Tcl/Tk"
 
 #. i18n: tag language attribute name
-#. i18n: file: syntax/data/texinfo.xml:3
+#. i18n: file: syntax/data/tcsh.xml:11
 #: rc.cpp:1854
+msgctxt "Language"
+msgid "Tcsh"
+msgstr ""
+
+#. i18n: tag language attribute name
+#. i18n: file: syntax/data/texinfo.xml:3
+#: rc.cpp:1860
 msgctxt "Language"
 msgid "Texinfo"
 msgstr ""
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/tibasic.xml:3
-#: rc.cpp:1860
+#: rc.cpp:1866
 msgctxt "Language"
 msgid "TI Basic"
 msgstr "TI Basic"
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/txt2tags.xml:6
-#: rc.cpp:1866
+#: rc.cpp:1872
 msgctxt "Language"
 msgid "txt2tags"
 msgstr "txt2tags"
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/uscript.xml:3
-#: rc.cpp:1872
+#: rc.cpp:1878
 msgctxt "Language"
 msgid "UnrealScript"
 msgstr "UnrealScript"
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/velocity.xml:3
-#: rc.cpp:1878
+#: rc.cpp:1884
 msgctxt "Language"
 msgid "Velocity"
 msgstr "Velocity"
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/verilog.xml:3
-#: rc.cpp:1884
+#: rc.cpp:1890
 msgctxt "Language"
 msgid "Verilog"
 msgstr "Verilog"
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/vhdl.xml:14
-#: rc.cpp:1890
+#: rc.cpp:1896
 msgctxt "Language"
 msgid "VHDL"
 msgstr "VHDL"
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/vrml.xml:3
-#: rc.cpp:1896
+#: rc.cpp:1902
 msgctxt "Language"
 msgid "VRML"
 msgstr "VRML"
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/winehq.xml:3
-#: rc.cpp:1902
+#: rc.cpp:1908
 msgctxt "Language"
 msgid "WINE Config"
 msgstr "WINE Config"
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/wml.xml:53
-#: rc.cpp:1908
+#: rc.cpp:1914
 msgctxt "Language"
 msgid "Wesnoth Markup Language"
 msgstr ""
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/xharbour.xml:3
-#: rc.cpp:1914
+#: rc.cpp:1920
 msgctxt "Language"
 msgid "xHarbour"
 msgstr "xHarbour"
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/xmldebug.xml:3
-#: rc.cpp:1920
+#: rc.cpp:1926
 msgctxt "Language"
 msgid "XML (Debug)"
 msgstr "XML (Debug)"
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/xml.xml:9
-#: rc.cpp:1926
+#: rc.cpp:1932
 msgctxt "Language"
 msgid "XML"
 msgstr "XML"
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/xorg.xml:3
-#: rc.cpp:1932
+#: rc.cpp:1938
 #, fuzzy
 msgctxt "Language"
 msgid "x.org Configuration"
@@ -7102,14 +7169,14 @@ msgstr "Конфигурација"
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/xslt.xml:55
-#: rc.cpp:1938
+#: rc.cpp:1944
 msgctxt "Language"
 msgid "xslt"
 msgstr "xslt"
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/xul.xml:7
-#: rc.cpp:1944
+#: rc.cpp:1950
 #, fuzzy
 msgctxt "Language"
 msgid "XUL"
@@ -7117,28 +7184,28 @@ msgstr "XML"
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/yacas.xml:3
-#: rc.cpp:1950
+#: rc.cpp:1956
 msgctxt "Language"
 msgid "yacas"
 msgstr "yacas"
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/yacc.xml:28
-#: rc.cpp:1956
+#: rc.cpp:1962
 msgctxt "Language"
 msgid "Yacc/Bison"
 msgstr "Yacc/Bison"
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/yaml.xml:4
-#: rc.cpp:1962
+#: rc.cpp:1968
 msgctxt "Language"
 msgid "YAML"
 msgstr ""
 
 #. i18n: tag language attribute name
 #. i18n: file: syntax/data/zonnon.xml:3
-#: rc.cpp:1968
+#: rc.cpp:1974
 msgctxt "Language"
 msgid "Zonnon"
 msgstr ""
