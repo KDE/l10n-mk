@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-17 03:22+0200\n"
+"POT-Creation-Date: 2011-08-22 03:42+0200\n"
 "PO-Revision-Date: 2007-02-17 11:32+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -193,7 +193,7 @@ msgstr "&Уреди..."
 #. i18n: ectx: Menu (view)
 #. i18n: file: plugins/filetree/ui.rc:6
 #. i18n: ectx: Menu (view)
-#: rc.cpp:65 rc.cpp:86
+#: rc.cpp:65 rc.cpp:89
 #, fuzzy
 msgid "&View"
 msgstr "&Нова"
@@ -240,10 +240,16 @@ msgstr ""
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: plugins/filetree/ui.rc:14
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:83 rc.cpp:89
+#: rc.cpp:83 rc.cpp:92
 #, fuzzy
 msgid "Main Toolbar"
 msgstr "Алатник"
+
+#. i18n: file: data/kateui.rc:138
+#. i18n: ectx: Menu (viewspace_popup_statusbar)
+#: rc.cpp:86
+msgid "&Status Bar Items"
+msgstr ""
 
 #. i18n: file: tips:2
 #. i18n: ectx: @info:tipoftheday
@@ -1201,27 +1207,6 @@ msgstr ""
 msgid "Session Renaming"
 msgstr "Име на сесија:"
 
-#: app/kateviewspace.cpp:256 app/kateviewspace.cpp:361
-#, kde-format
-msgid " Line: %1 Col: %2 "
-msgstr " Лин: %1 Кол: %2 "
-
-#: app/kateviewspace.cpp:270
-msgid " INS "
-msgstr " ВМЕТ "
-
-#: app/kateviewspace.cpp:275 app/kateviewspace.cpp:370
-#, fuzzy
-#| msgid " INS "
-msgid " LINE "
-msgstr " ВМЕТ "
-
-#: app/kateviewspace.cpp:370
-#, fuzzy
-#| msgid " BLK "
-msgid " BLOCK "
-msgstr " БЛОК "
-
 #: app/kateapp.cpp:226 app/kateapp.cpp:352
 #, kde-format
 msgid ""
@@ -1788,9 +1773,63 @@ msgstr ""
 msgid "Move the splitter of the current view down"
 msgstr "Го прави активен следниот поделен преглед."
 
-#: app/kateviewmanager.cpp:207
+#: app/kateviewmanager.cpp:183
+#, fuzzy
+msgid "Show Cursor Position"
+msgstr "Прикажи &странични ленти"
+
+#: app/kateviewmanager.cpp:188
+msgid "Show Characters Count"
+msgstr ""
+
+#: app/kateviewmanager.cpp:193
+msgid "Show Insertion Mode"
+msgstr ""
+
+#: app/kateviewmanager.cpp:198
+#, fuzzy
+msgid "Show Selection Mode"
+msgstr "Избрани д&ејства:"
+
+#: app/kateviewmanager.cpp:203
+msgid "Show Encoding"
+msgstr ""
+
+#: app/kateviewmanager.cpp:208
+#, fuzzy
+#| msgid "Document Name"
+msgid "Show Document Name"
+msgstr "Име на документ"
+
+#: app/kateviewmanager.cpp:240
 msgid "Open File"
 msgstr "Отворете датотека"
+
+#: app/kateviewspace.cpp:277 app/kateviewspace.cpp:389
+#, kde-format
+msgid " Line: %1 Col: %2 "
+msgstr " Лин: %1 Кол: %2 "
+
+#: app/kateviewspace.cpp:285 app/kateviewspace.cpp:393
+#, kde-format
+msgid " Characters: %1 "
+msgstr ""
+
+#: app/kateviewspace.cpp:298
+msgid " INS "
+msgstr " ВМЕТ "
+
+#: app/kateviewspace.cpp:303 app/kateviewspace.cpp:401
+#, fuzzy
+#| msgid " INS "
+msgid " LINE "
+msgstr " ВМЕТ "
+
+#: app/kateviewspace.cpp:401
+#, fuzzy
+#| msgid " BLK "
+msgid " BLOCK "
+msgstr " БЛОК "
 
 #: plugins/filetree/katefiletreeconfigpage.cpp:60
 msgid "Background Shading"
@@ -2633,10 +2672,6 @@ msgstr "Подреди с&поред"
 #~ msgid "Python Browser"
 #~ msgstr "Разгледување датотеки"
 
-#, fuzzy
-#~ msgid "Selection"
-#~ msgstr "Избрани д&ејства:"
-
 #~ msgid "&Appearance"
 #~ msgstr "&Изглед"
 
@@ -2727,10 +2762,6 @@ msgstr "Подреди с&поред"
 #, fuzzy
 #~ msgid "Templates"
 #~ msgstr "Шаблон:"
-
-#, fuzzy
-#~ msgid "Show Subroutines"
-#~ msgstr "Прикажи &странични ленти"
 
 #, fuzzy
 #~ msgid "Show Modules"
