@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmouth\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:44+0200\n"
+"POT-Creation-Date: 2011-08-23 16:53+0200\n"
 "PO-Revision-Date: 2006-07-15 21:06+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -19,40 +19,287 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: phrasebook/phrasetree.cpp:471
-#, kde-format
+#: configwizard.cpp:38
+msgid "Initial Configuration - KMouth"
+msgstr "Иницијална конфигурација - KMouth"
+
+#: configwizard.cpp:57
+msgid "Text-to-Speech Configuration"
+msgstr "Конфигурација на текст-во-говор"
+
+#: configwizard.cpp:71
+msgid "Initial Phrase Book"
+msgstr "Иницијален разговорник"
+
+#: configwizard.cpp:103 optionsdialog.cpp:145 optionsdialog.cpp:146
+msgid "Word Completion"
+msgstr "Довршување на збор"
+
+#: kmouth.cpp:113
+msgid "&Open as History..."
+msgstr "&Отвори како историја..."
+
+#: kmouth.cpp:116 kmouth.cpp:117
+msgid "Opens an existing file as history"
+msgstr "Отвора постојна датотека како историја"
+
+#: kmouth.cpp:121
+msgid "Save &History As..."
+msgstr "Зачувај &историја како..."
+
+#: kmouth.cpp:124 kmouth.cpp:125
+msgid "Saves the actual history as..."
+msgstr "Ја зачувува историјата како..."
+
+#: kmouth.cpp:129
+msgid "&Print History..."
+msgstr "П&ечати историја..."
+
+#: kmouth.cpp:132 kmouth.cpp:133
+msgid "Prints out the actual history"
+msgstr "Ја печати историјата..."
+
+#: kmouth.cpp:136 kmouth.cpp:137
+msgid "Quits the application"
+msgstr "Ја напушта апликацијата"
+
+#: kmouth.cpp:141
+msgid "Cuts the selected section and puts it to the clipboard"
+msgstr "Го исекува избраниот дел и го става на таблата со исечоци"
+
+#: kmouth.cpp:142
 msgid ""
-"The '%1' key combination has already been allocated to %2.\n"
-"Please choose a unique key combination."
+"Cuts the selected section and puts it to the clipboard. If there is some "
+"text selected in the edit field it is placed it on the clipboard. Otherwise "
+"the selected sentences in the history (if any) are placed on the clipboard."
 msgstr ""
-"Комбинацијата на тастери „%1“ е веќе доделена на %2.\n"
-"Изберете уникатна комбинација на копчиња."
+"Го исекува избраниот дел и го става на таблата со исечоци. Ако има избран "
+"текст во полето за уредување тој се става на таблата со исечоци. Во "
+"спротивно на таблата со исечоци се ставаат избраните реченици во историјата "
+"(ако ги има)."
 
-#: phrasebook/phrasetree.cpp:493
-#, kde-format
-msgid "the standard \"%1\" action"
-msgstr "стандардното дејство „%1“"
+#: kmouth.cpp:145
+msgid "Copies the selected section to the clipboard"
+msgstr "Го копира избраниот дел на таблата со исечоци"
 
-#: phrasebook/phrasetree.cpp:494
-msgid "Conflict with Standard Application Shortcut"
-msgstr "Конфликт со стандардната кратенка на апликација"
+#: kmouth.cpp:146
+msgid ""
+"Copies the selected section to the clipboard. If there is some text selected "
+"in the edit field it is copied to the clipboard. Otherwise the selected "
+"sentences in the history (if any) are copied to the clipboard."
+msgstr ""
+"Го копира избраниот дел на таблата со исечоци. Ако има избран текст во "
+"полето за уредување тој се копира на таблата со исечоци. Во спротивно на "
+"таблата со исечоци се копираат избраните реченици во историјата (ако ги има)."
 
-#: phrasebook/phrasetree.cpp:511
-#, kde-format
-msgid "the global \"%1\" action"
-msgstr "глобалното дејство „%1“"
+#: kmouth.cpp:149 phrasebook/phrasebookdialog.cpp:413
+#, fuzzy
+#| msgid "Pastes the clipboard contents to actual position"
+msgid "Pastes the clipboard contents to current position"
+msgstr "Ја вметнува содржината од таблата со исечоци на тековната позиција"
 
-#: phrasebook/phrasetree.cpp:512
-msgid "Conflict with Global Shortcuts"
-msgstr "Конфликт меѓу глобални кратенки"
+#: kmouth.cpp:150 phrasebook/phrasebookdialog.cpp:414
+msgid ""
+"Pastes the clipboard contents at the current cursor position into the edit "
+"field."
+msgstr ""
+"Ја вметнува содржината од таблата со исечоци на тековната позиција на "
+"покажувачот во полето за уредување."
 
-#: phrasebook/phrasetree.cpp:527
-msgid "an other phrase"
-msgstr "друга фраза"
+#: kmouth.cpp:154
+#, fuzzy
+#| msgid "&Speak"
+msgctxt "Start speaking"
+msgid "&Speak"
+msgstr "&Изговори"
 
-#: phrasebook/phrasetree.cpp:528
-msgid "Key Conflict"
-msgstr "конфликт меѓу копчиња"
+#: kmouth.cpp:156
+msgid "Speaks the currently active sentence(s)"
+msgstr "Ги изговора активните реченици"
+
+#: kmouth.cpp:157 phraselist.cpp:86
+msgid ""
+"Speaks the currently active sentence(s). If there is some text in the edit "
+"field it is spoken. Otherwise the selected sentences in the history (if any) "
+"are spoken."
+msgstr ""
+"Ги изговора активните реченици. Ако има некој текст во полето за уредување "
+"тој ќе биде изговорен. Во спротивно, ќе бидат изговорени избраните реченици "
+"во историјата (ако ги има)."
+
+#: kmouth.cpp:161
+msgid "&Edit..."
+msgstr "&Уреди..."
+
+#: kmouth.cpp:172
+msgid "Show P&hrasebook Bar"
+msgstr "Прикажи &лента за фрази"
+
+#: kmouth.cpp:174 kmouth.cpp:175
+msgid "Enables/disables the phrasebook bar"
+msgstr "Ја овозможува/оневозможува лентата за фрази"
+
+#: kmouth.cpp:178 kmouth.cpp:179
+msgid "Enables/disables the statusbar"
+msgstr "Ја овозможува/оневозможува статусната линија"
+
+#: kmouth.cpp:183
+msgid "&Configure KMouth..."
+msgstr "&Конфигурирај KMouth..."
+
+#: kmouth.cpp:185 kmouth.cpp:186
+msgid "Opens the configuration dialog"
+msgstr "Го отвора дијалогот за конфигурација"
+
+#: kmouth.cpp:194 phraselist.cpp:83
+msgid "&Speak"
+msgstr "&Изговори"
+
+#: kmouth.cpp:195 kmouth.cpp:197
+msgid "Speaks the currently selected phrases in the history"
+msgstr "Ги изговора тековно избраните фрази од историјата"
+
+#: kmouth.cpp:201 phrasebook/phrasebookdialog.cpp:418
+msgid "&Delete"
+msgstr ""
+
+#: kmouth.cpp:203 kmouth.cpp:204
+msgid "Deletes the currently selected phrases from the history"
+msgstr "Ги брише тековно избраните фрази од историјата"
+
+#: kmouth.cpp:208
+msgid "Cu&t"
+msgstr "Ис&ечи"
+
+#: kmouth.cpp:210 kmouth.cpp:211
+msgid ""
+"Cuts the currently selected phrases from the history and puts them to the "
+"clipboard"
+msgstr ""
+"Ги исекува тековно избраните фрази од историјата и ги става на таблата со "
+"исечоци"
+
+#: kmouth.cpp:215
+msgid "&Copy"
+msgstr ""
+
+#: kmouth.cpp:217 kmouth.cpp:218
+msgid "Copies the currently selected phrases from the history to the clipboard"
+msgstr "Ги копира тековно избраните фрази од историјата на таблата со исечоци"
+
+#: kmouth.cpp:221
+msgid "Select &All Entries"
+msgstr "Избери ги &сите елементи"
+
+#: kmouth.cpp:223 kmouth.cpp:224
+msgid "Selects all phrases in the history"
+msgstr "Ги избира сите фрази од историјата"
+
+#: kmouth.cpp:227
+msgid "D&eselect All Entries"
+msgstr "&Одизбери ги сите елементи"
+
+#: kmouth.cpp:229 kmouth.cpp:230
+msgid "Deselects all phrases in the history"
+msgstr "Ги одизбира сите фрази од историјата"
+
+#: kmouth.cpp:244 kmouth.cpp:262 kmouth.cpp:370 kmouth.cpp:378 kmouth.cpp:396
+#: kmouth.cpp:446 kmouth.cpp:463 kmouth.cpp:480 kmouth.cpp:497
+#, fuzzy
+#| msgid "Ready."
+msgctxt "The job is done"
+msgid "Ready."
+msgstr "Подготвен."
+
+#: kmouth.cpp:259 kmouth.cpp:366
+msgid "Opening file..."
+msgstr "Отворам датотека..."
+
+#: kmouth.cpp:374
+msgid "Saving history with a new filename..."
+msgstr "Ја зачувувам историјата со ново име..."
+
+#: kmouth.cpp:383
+msgid "Printing..."
+msgstr "Печатам..."
+
+#: kmouth.cpp:401
+#, fuzzy
+#| msgid "Exiting..."
+msgctxt "Shutting down the application"
+msgid "Exiting..."
+msgstr "Излегувам..."
+
+#: kmouth.cpp:439
+msgid "Toggling menubar..."
+msgstr "Вклучувам/исклучувам мени..."
+
+#: kmouth.cpp:451
+msgid "Toggling toolbar..."
+msgstr "Вклучувам/исклучувам алатник..."
+
+#: kmouth.cpp:468
+msgid "Toggling phrasebook bar..."
+msgstr "Вклучувам/исклучувам лента за фрази..."
+
+#: kmouth.cpp:485
+msgid "Toggle the statusbar..."
+msgstr "Вклучувам/исклучувам статусна линија..."
+
+#: main.cpp:28
+msgid "A type-and-say front end for speech synthesizers"
+msgstr "Преден дел за пишување-и-изговор за синтетизатори за говор"
+
+#: main.cpp:35
+msgid "KMouth"
+msgstr "KMouth"
+
+#: main.cpp:37
+msgid "(c) 2002/2003, Gunnar Schmi Dt"
+msgstr ""
+
+#: main.cpp:38
+msgid "Gunnar Schmi Dt"
+msgstr ""
+
+#: main.cpp:42
+msgid "History file to open"
+msgstr "Датотека со историја за отворање"
+
+#: main.cpp:45
+msgid "Olaf Schmidt"
+msgstr ""
+
+#: main.cpp:45
+msgid "Tips, extended phrase books"
+msgstr "Совети, проширени разговорници"
+
+#: optionsdialog.cpp:120
+#, fuzzy
+msgid "Configuration"
+msgstr "Конфигурација на текст-во-говор"
+
+#: optionsdialog.cpp:133
+msgid "&Preferences"
+msgstr "&Параметри"
+
+#: optionsdialog.cpp:137
+msgid "&Text-to-Speech"
+msgstr "&Текст-во-говор"
+
+#: optionsdialog.cpp:139 optionsdialog.cpp:140
+msgid "General Options"
+msgstr "Општи опции"
+
+#: optionsdialog.cpp:152
+#, fuzzy
+#| msgid "KTTSD Speech Service"
+msgid "Jovie Speech Service"
+msgstr "KTTSD-сервис за говор"
+
+#: optionsdialog.cpp:154
+msgid "KDE Text-to-Speech Daemon Configuration"
+msgstr "конфигурација на KDE-даемонот за текст-во-говор"
 
 #: phrasebook/phrasebook.cpp:263 phrasebook/phrasebookdialog.cpp:790
 msgid ""
@@ -238,24 +485,6 @@ msgid ""
 msgstr ""
 "Го копира тековно избраниот елемент од разговорникот на таблата со исечоци"
 
-#: phrasebook/phrasebookdialog.cpp:413 kmouth.cpp:149
-#, fuzzy
-#| msgid "Pastes the clipboard contents to actual position"
-msgid "Pastes the clipboard contents to current position"
-msgstr "Ја вметнува содржината од таблата со исечоци на тековната позиција"
-
-#: phrasebook/phrasebookdialog.cpp:414 kmouth.cpp:150
-msgid ""
-"Pastes the clipboard contents at the current cursor position into the edit "
-"field."
-msgstr ""
-"Ја вметнува содржината од таблата со исечоци на тековната позиција на "
-"покажувачот во полето за уредување."
-
-#: phrasebook/phrasebookdialog.cpp:418 kmouth.cpp:201
-msgid "&Delete"
-msgstr ""
-
 #: phrasebook/phrasebookdialog.cpp:420 phrasebook/phrasebookdialog.cpp:421
 msgid "Deletes the selected entries from the phrase book"
 msgstr "Ги брише избраните елементи од разговорникот"
@@ -334,379 +563,40 @@ msgstr ""
 "Имаше грешка при зачувување на датотеката\n"
 "%1"
 
-#: wordcompletion/wordlist.cpp:114
-msgid "Creating Word List"
-msgstr "Креирање листа на зборови"
-
-#: wordcompletion/wordlist.cpp:114 wordcompletion/wordlist.cpp:296
-msgid "Parsing the KDE documentation..."
-msgstr "Анализирање на документацијата на KDE..."
-
-#: wordcompletion/wordlist.cpp:243
-msgid "Merging dictionaries..."
-msgstr "Спојувам речници..."
-
-#: wordcompletion/wordlist.cpp:314
-msgid "Parsing file..."
-msgstr "Анализирам датотека..."
-
-#: wordcompletion/wordlist.cpp:325
-msgid "Parsing directory..."
-msgstr "Анализирам папка..."
-
-#: wordcompletion/wordlist.cpp:517
-msgid "Performing spell check..."
-msgstr "Извршувам проверка на правопис..."
-
-#: wordcompletion/wordcompletionwidget.cpp:75
-#: wordcompletion/wordcompletionwidget.cpp:144
-#: wordcompletion/wordcompletionwidget.cpp:208
-msgid "without name"
-msgstr "Без име"
-
-#: wordcompletion/wordcompletionwidget.cpp:254
-msgid "Export Dictionary"
-msgstr "Изнесување речник"
-
-#: wordcompletion/dictionarycreationwizard.cpp:49
-msgid "Source of New Dictionary (1)"
-msgstr "Извор за нов речник (1)"
-
-#: wordcompletion/dictionarycreationwizard.cpp:54
-#: wordcompletion/dictionarycreationwizard.cpp:58
-#: wordcompletion/dictionarycreationwizard.cpp:66
-#: wordcompletion/dictionarycreationwizard.cpp:71
-#: wordcompletion/dictionarycreationwizard.cpp:116
-#: wordcompletion/dictionarycreationwizard.cpp:132
-#: wordcompletion/dictionarycreationwizard.cpp:141
-#: wordcompletion/dictionarycreationwizard.cpp:150
-msgid "Source of New Dictionary (2)"
-msgstr "Извор за нов речник (2)"
-
-#: wordcompletion/dictionarycreationwizard.cpp:59
-#, fuzzy
-#| msgid "&Directory:"
-msgctxt "In which directory is the file located?"
-msgid "&Directory:"
-msgstr "&Папка:"
-
-#: wordcompletion/dictionarycreationwizard.cpp:60
-#: wordcompletion/dictionarycreationwizard.cpp:62
+#: phrasebook/phrasetree.cpp:471
+#, kde-format
 msgid ""
-"With this input field you specify which directory you want to load for "
-"creating the new dictionary."
+"The '%1' key combination has already been allocated to %2.\n"
+"Please choose a unique key combination."
 msgstr ""
-"Со оваа листа за внес наведувате која папка сакате да се вчита за креирање "
-"на новиот речник."
-
-#: wordcompletion/dictionarycreationwizard.cpp:100
-#: texttospeechconfigurationwidget.cpp:48
-#, fuzzy
-#| msgid "Local"
-msgctxt "Local characterset"
-msgid "Local"
-msgstr "Локално"
-
-#: wordcompletion/dictionarycreationwizard.cpp:103
-#, fuzzy
-#| msgid "Latin1"
-msgctxt "Latin characterset"
-msgid "Latin1"
-msgstr "Латиница1"
-
-#: wordcompletion/dictionarycreationwizard.cpp:104
-#: texttospeechconfigurationwidget.cpp:52
-msgid "Unicode"
-msgstr "Уникод"
-
-#: wordcompletion/dictionarycreationwizard.cpp:237
-msgid "Merge result"
-msgstr "Резултат на соединувањето"
-
-#: wordcompletion/dictionarycreationwizard.cpp:240
-msgctxt "In the sense of a blank word list"
-msgid "Empty list"
-msgstr "Празна листа"
-
-#: wordcompletion/dictionarycreationwizard.cpp:249
-msgid "KDE Documentation"
-msgstr "Документација за KDE"
-
-#: wordcompletion/dictionarycreationwizard.cpp:371
-msgctxt "Default dictionary"
-msgid "Default"
-msgstr ""
-
-#: kmouth.cpp:113
-msgid "&Open as History..."
-msgstr "&Отвори како историја..."
-
-#: kmouth.cpp:116 kmouth.cpp:117
-msgid "Opens an existing file as history"
-msgstr "Отвора постојна датотека како историја"
-
-#: kmouth.cpp:121
-msgid "Save &History As..."
-msgstr "Зачувај &историја како..."
-
-#: kmouth.cpp:124 kmouth.cpp:125
-msgid "Saves the actual history as..."
-msgstr "Ја зачувува историјата како..."
-
-#: kmouth.cpp:129
-msgid "&Print History..."
-msgstr "П&ечати историја..."
-
-#: kmouth.cpp:132 kmouth.cpp:133
-msgid "Prints out the actual history"
-msgstr "Ја печати историјата..."
-
-#: kmouth.cpp:136 kmouth.cpp:137
-msgid "Quits the application"
-msgstr "Ја напушта апликацијата"
-
-#: kmouth.cpp:141
-msgid "Cuts the selected section and puts it to the clipboard"
-msgstr "Го исекува избраниот дел и го става на таблата со исечоци"
-
-#: kmouth.cpp:142
-msgid ""
-"Cuts the selected section and puts it to the clipboard. If there is some "
-"text selected in the edit field it is placed it on the clipboard. Otherwise "
-"the selected sentences in the history (if any) are placed on the clipboard."
-msgstr ""
-"Го исекува избраниот дел и го става на таблата со исечоци. Ако има избран "
-"текст во полето за уредување тој се става на таблата со исечоци. Во "
-"спротивно на таблата со исечоци се ставаат избраните реченици во историјата "
-"(ако ги има)."
-
-#: kmouth.cpp:145
-msgid "Copies the selected section to the clipboard"
-msgstr "Го копира избраниот дел на таблата со исечоци"
-
-#: kmouth.cpp:146
-msgid ""
-"Copies the selected section to the clipboard. If there is some text selected "
-"in the edit field it is copied to the clipboard. Otherwise the selected "
-"sentences in the history (if any) are copied to the clipboard."
-msgstr ""
-"Го копира избраниот дел на таблата со исечоци. Ако има избран текст во "
-"полето за уредување тој се копира на таблата со исечоци. Во спротивно на "
-"таблата со исечоци се копираат избраните реченици во историјата (ако ги има)."
-
-#: kmouth.cpp:154
-#, fuzzy
-#| msgid "&Speak"
-msgctxt "Start speaking"
-msgid "&Speak"
-msgstr "&Изговори"
-
-#: kmouth.cpp:156
-msgid "Speaks the currently active sentence(s)"
-msgstr "Ги изговора активните реченици"
-
-#: kmouth.cpp:157 phraselist.cpp:86
-msgid ""
-"Speaks the currently active sentence(s). If there is some text in the edit "
-"field it is spoken. Otherwise the selected sentences in the history (if any) "
-"are spoken."
-msgstr ""
-"Ги изговора активните реченици. Ако има некој текст во полето за уредување "
-"тој ќе биде изговорен. Во спротивно, ќе бидат изговорени избраните реченици "
-"во историјата (ако ги има)."
-
-#: kmouth.cpp:161
-msgid "&Edit..."
-msgstr "&Уреди..."
-
-#: kmouth.cpp:172
-msgid "Show P&hrasebook Bar"
-msgstr "Прикажи &лента за фрази"
-
-#: kmouth.cpp:174 kmouth.cpp:175
-msgid "Enables/disables the phrasebook bar"
-msgstr "Ја овозможува/оневозможува лентата за фрази"
-
-#: kmouth.cpp:178 kmouth.cpp:179
-msgid "Enables/disables the statusbar"
-msgstr "Ја овозможува/оневозможува статусната линија"
-
-#: kmouth.cpp:183
-msgid "&Configure KMouth..."
-msgstr "&Конфигурирај KMouth..."
-
-#: kmouth.cpp:185 kmouth.cpp:186
-msgid "Opens the configuration dialog"
-msgstr "Го отвора дијалогот за конфигурација"
-
-#: kmouth.cpp:194 phraselist.cpp:83
-msgid "&Speak"
-msgstr "&Изговори"
-
-#: kmouth.cpp:195 kmouth.cpp:197
-msgid "Speaks the currently selected phrases in the history"
-msgstr "Ги изговора тековно избраните фрази од историјата"
-
-#: kmouth.cpp:203 kmouth.cpp:204
-msgid "Deletes the currently selected phrases from the history"
-msgstr "Ги брише тековно избраните фрази од историјата"
-
-#: kmouth.cpp:208
-msgid "Cu&t"
-msgstr "Ис&ечи"
-
-#: kmouth.cpp:210 kmouth.cpp:211
-msgid ""
-"Cuts the currently selected phrases from the history and puts them to the "
-"clipboard"
-msgstr ""
-"Ги исекува тековно избраните фрази од историјата и ги става на таблата со "
-"исечоци"
-
-#: kmouth.cpp:215
-msgid "&Copy"
-msgstr ""
-
-#: kmouth.cpp:217 kmouth.cpp:218
-msgid "Copies the currently selected phrases from the history to the clipboard"
-msgstr "Ги копира тековно избраните фрази од историјата на таблата со исечоци"
-
-#: kmouth.cpp:221
-msgid "Select &All Entries"
-msgstr "Избери ги &сите елементи"
-
-#: kmouth.cpp:223 kmouth.cpp:224
-msgid "Selects all phrases in the history"
-msgstr "Ги избира сите фрази од историјата"
-
-#: kmouth.cpp:227
-msgid "D&eselect All Entries"
-msgstr "&Одизбери ги сите елементи"
-
-#: kmouth.cpp:229 kmouth.cpp:230
-msgid "Deselects all phrases in the history"
-msgstr "Ги одизбира сите фрази од историјата"
-
-#: kmouth.cpp:244 kmouth.cpp:262 kmouth.cpp:370 kmouth.cpp:378 kmouth.cpp:396
-#: kmouth.cpp:446 kmouth.cpp:463 kmouth.cpp:480 kmouth.cpp:497
-#, fuzzy
-#| msgid "Ready."
-msgctxt "The job is done"
-msgid "Ready."
-msgstr "Подготвен."
-
-#: kmouth.cpp:259 kmouth.cpp:366
-msgid "Opening file..."
-msgstr "Отворам датотека..."
-
-#: kmouth.cpp:374
-msgid "Saving history with a new filename..."
-msgstr "Ја зачувувам историјата со ново име..."
-
-#: kmouth.cpp:383
-msgid "Printing..."
-msgstr "Печатам..."
-
-#: kmouth.cpp:401
-#, fuzzy
-#| msgid "Exiting..."
-msgctxt "Shutting down the application"
-msgid "Exiting..."
-msgstr "Излегувам..."
-
-#: kmouth.cpp:439
-msgid "Toggling menubar..."
-msgstr "Вклучувам/исклучувам мени..."
-
-#: kmouth.cpp:451
-msgid "Toggling toolbar..."
-msgstr "Вклучувам/исклучувам алатник..."
-
-#: kmouth.cpp:468
-msgid "Toggling phrasebook bar..."
-msgstr "Вклучувам/исклучувам лента за фрази..."
-
-#: kmouth.cpp:485
-msgid "Toggle the statusbar..."
-msgstr "Вклучувам/исклучувам статусна линија..."
-
-#: texttospeechconfigurationwidget.cpp:51
-#, fuzzy
-#| msgid "Latin1"
-msgctxt "Latin1 characterset"
-msgid "Latin1"
-msgstr "Латиница1"
-
-#: optionsdialog.cpp:120
-#, fuzzy
-msgid "Configuration"
-msgstr "Конфигурација на текст-во-говор"
-
-#: optionsdialog.cpp:133
-msgid "&Preferences"
-msgstr "&Параметри"
-
-#: optionsdialog.cpp:137
-msgid "&Text-to-Speech"
-msgstr "&Текст-во-говор"
-
-#: optionsdialog.cpp:139 optionsdialog.cpp:140
-msgid "General Options"
-msgstr "Општи опции"
-
-#: optionsdialog.cpp:145 optionsdialog.cpp:146 configwizard.cpp:103
-msgid "Word Completion"
-msgstr "Довршување на збор"
-
-#: optionsdialog.cpp:152
-#, fuzzy
-#| msgid "KTTSD Speech Service"
-msgid "Jovie Speech Service"
-msgstr "KTTSD-сервис за говор"
-
-#: optionsdialog.cpp:154
-msgid "KDE Text-to-Speech Daemon Configuration"
-msgstr "конфигурација на KDE-даемонот за текст-во-говор"
-
-#: main.cpp:28
-msgid "A type-and-say front end for speech synthesizers"
-msgstr "Преден дел за пишување-и-изговор за синтетизатори за говор"
-
-#: main.cpp:35
-msgid "KMouth"
-msgstr "KMouth"
-
-#: main.cpp:37
-msgid "(c) 2002/2003, Gunnar Schmi Dt"
-msgstr ""
-
-#: main.cpp:38
-msgid "Gunnar Schmi Dt"
-msgstr ""
-
-#: main.cpp:42
-msgid "History file to open"
-msgstr "Датотека со историја за отворање"
-
-#: main.cpp:45
-msgid "Olaf Schmidt"
-msgstr ""
-
-#: main.cpp:45
-msgid "Tips, extended phrase books"
-msgstr "Совети, проширени разговорници"
-
-#: configwizard.cpp:38
-msgid "Initial Configuration - KMouth"
-msgstr "Иницијална конфигурација - KMouth"
-
-#: configwizard.cpp:57
-msgid "Text-to-Speech Configuration"
-msgstr "Конфигурација на текст-во-говор"
-
-#: configwizard.cpp:71
-msgid "Initial Phrase Book"
-msgstr "Иницијален разговорник"
+"Комбинацијата на тастери „%1“ е веќе доделена на %2.\n"
+"Изберете уникатна комбинација на копчиња."
+
+#: phrasebook/phrasetree.cpp:493
+#, kde-format
+msgid "the standard \"%1\" action"
+msgstr "стандардното дејство „%1“"
+
+#: phrasebook/phrasetree.cpp:494
+msgid "Conflict with Standard Application Shortcut"
+msgstr "Конфликт со стандардната кратенка на апликација"
+
+#: phrasebook/phrasetree.cpp:511
+#, kde-format
+msgid "the global \"%1\" action"
+msgstr "глобалното дејство „%1“"
+
+#: phrasebook/phrasetree.cpp:512
+msgid "Conflict with Global Shortcuts"
+msgstr "Конфликт меѓу глобални кратенки"
+
+#: phrasebook/phrasetree.cpp:527
+msgid "an other phrase"
+msgstr "друга фраза"
+
+#: phrasebook/phrasetree.cpp:528
+msgid "Key Conflict"
+msgstr "конфликт меѓу копчиња"
 
 #: phraselist.cpp:60
 msgid ""
@@ -741,6 +631,116 @@ msgstr ""
 #: phraselist.cpp:459
 msgid "Open File as History"
 msgstr "Отворање датотека како историја"
+
+#: texttospeechconfigurationwidget.cpp:48
+#: wordcompletion/dictionarycreationwizard.cpp:100
+#, fuzzy
+#| msgid "Local"
+msgctxt "Local characterset"
+msgid "Local"
+msgstr "Локално"
+
+#: texttospeechconfigurationwidget.cpp:51
+#, fuzzy
+#| msgid "Latin1"
+msgctxt "Latin1 characterset"
+msgid "Latin1"
+msgstr "Латиница1"
+
+#: texttospeechconfigurationwidget.cpp:52
+#: wordcompletion/dictionarycreationwizard.cpp:104
+msgid "Unicode"
+msgstr "Уникод"
+
+#: wordcompletion/dictionarycreationwizard.cpp:49
+msgid "Source of New Dictionary (1)"
+msgstr "Извор за нов речник (1)"
+
+#: wordcompletion/dictionarycreationwizard.cpp:54
+#: wordcompletion/dictionarycreationwizard.cpp:58
+#: wordcompletion/dictionarycreationwizard.cpp:66
+#: wordcompletion/dictionarycreationwizard.cpp:71
+#: wordcompletion/dictionarycreationwizard.cpp:116
+#: wordcompletion/dictionarycreationwizard.cpp:132
+#: wordcompletion/dictionarycreationwizard.cpp:141
+#: wordcompletion/dictionarycreationwizard.cpp:150
+msgid "Source of New Dictionary (2)"
+msgstr "Извор за нов речник (2)"
+
+#: wordcompletion/dictionarycreationwizard.cpp:59
+#, fuzzy
+#| msgid "&Directory:"
+msgctxt "In which directory is the file located?"
+msgid "&Directory:"
+msgstr "&Папка:"
+
+#: wordcompletion/dictionarycreationwizard.cpp:60
+#: wordcompletion/dictionarycreationwizard.cpp:62
+msgid ""
+"With this input field you specify which directory you want to load for "
+"creating the new dictionary."
+msgstr ""
+"Со оваа листа за внес наведувате која папка сакате да се вчита за креирање "
+"на новиот речник."
+
+#: wordcompletion/dictionarycreationwizard.cpp:103
+#, fuzzy
+#| msgid "Latin1"
+msgctxt "Latin characterset"
+msgid "Latin1"
+msgstr "Латиница1"
+
+#: wordcompletion/dictionarycreationwizard.cpp:237
+msgid "Merge result"
+msgstr "Резултат на соединувањето"
+
+#: wordcompletion/dictionarycreationwizard.cpp:240
+msgctxt "In the sense of a blank word list"
+msgid "Empty list"
+msgstr "Празна листа"
+
+#: wordcompletion/dictionarycreationwizard.cpp:249
+msgid "KDE Documentation"
+msgstr "Документација за KDE"
+
+#: wordcompletion/dictionarycreationwizard.cpp:371
+msgctxt "Default dictionary"
+msgid "Default"
+msgstr ""
+
+#: wordcompletion/wordcompletionwidget.cpp:75
+#: wordcompletion/wordcompletionwidget.cpp:144
+#: wordcompletion/wordcompletionwidget.cpp:208
+msgid "without name"
+msgstr "Без име"
+
+#: wordcompletion/wordcompletionwidget.cpp:254
+msgid "Export Dictionary"
+msgstr "Изнесување речник"
+
+#: wordcompletion/wordlist.cpp:114
+msgid "Creating Word List"
+msgstr "Креирање листа на зборови"
+
+#: wordcompletion/wordlist.cpp:114 wordcompletion/wordlist.cpp:296
+msgid "Parsing the KDE documentation..."
+msgstr "Анализирање на документацијата на KDE..."
+
+#: wordcompletion/wordlist.cpp:243
+msgid "Merging dictionaries..."
+msgstr "Спојувам речници..."
+
+#: wordcompletion/wordlist.cpp:314
+msgid "Parsing file..."
+msgstr "Анализирам датотека..."
+
+#: wordcompletion/wordlist.cpp:325
+msgid "Parsing directory..."
+msgstr "Анализирам папка..."
+
+#: wordcompletion/wordlist.cpp:517
+msgid "Performing spell check..."
+msgstr "Извршувам проверка на правопис..."
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
