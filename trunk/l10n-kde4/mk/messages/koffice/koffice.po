@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-13 03:45+0200\n"
+"POT-Creation-Date: 2011-08-29 04:01+0200\n"
 "PO-Revision-Date: 2000-10-02 22:00+0100\n"
 "Last-Translator: Damjan Janevski <miopa@usa.net>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -40,6 +40,18 @@ msgstr ""
 #, fuzzy
 msgid "Paste Shapes"
 msgstr "Создади шаблон"
+
+#: flake/commands/KShapeGroupCommand.cpp:107
+#, fuzzy
+msgid "Group Shapes"
+msgstr ""
+"\n"
+"Ориентација:"
+
+#: flake/commands/KShapeGroupCommand.cpp:109
+#, fuzzy
+msgid "Add Shapes to Group"
+msgstr "&Додади група..."
 
 #: flake/commands/KPathSegmentBreakCommand.cpp:40
 msgid "Break Subpath"
@@ -75,18 +87,6 @@ msgstr "Рабови на страна"
 #, fuzzy
 msgid "Distribute Shapes"
 msgstr "Создади шаблон"
-
-#: flake/commands/KShapeGroupCommand.cpp:107
-#, fuzzy
-msgid "Group Shapes"
-msgstr ""
-"\n"
-"Ориентација:"
-
-#: flake/commands/KShapeGroupCommand.cpp:109
-#, fuzzy
-msgid "Add Shapes to Group"
-msgstr "&Додади група..."
 
 #: flake/commands/KShapeMoveCommand.cpp:42
 #, fuzzy
@@ -244,11 +244,6 @@ msgstr ""
 msgid "Zoom"
 msgstr ""
 
-#: flake/tools/KCreatePathToolFactory.cpp:33
-#, fuzzy
-msgid "Create Path"
-msgstr "Создади шаблон"
-
 #: flake/tools/KCreatePathTool.cpp:370 flake/tools/KPathTool.cpp:181
 msgid "Snapping"
 msgstr ""
@@ -261,6 +256,11 @@ msgstr ""
 #, fuzzy
 msgid "Angle Constraints"
 msgstr "Рабови на страна"
+
+#: flake/tools/KCreatePathToolFactory.cpp:33
+#, fuzzy
+msgid "Create Path"
+msgstr "Создади шаблон"
 
 #: flake/tools/KPathSegmentChangeStrategy.cpp:140
 #, fuzzy
@@ -485,16 +485,6 @@ msgstr "Скрипта за извршување."
 msgid "Collection"
 msgstr "Зачувај документ како"
 
-#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:158
-#, fuzzy, kde-format
-msgid "Slide %1"
-msgstr "Покажи %1 алатник"
-
-#: kopageapp/KoPAPageThumbnailModel.cpp:69
-#, fuzzy, kde-format
-msgid "Page %1"
-msgstr "Избери..."
-
 #: kopageapp/KoPADocumentStructureDocker.cpp:82 main/KoMainWindow.cpp:1710
 #, fuzzy
 msgid "Document"
@@ -612,34 +602,15 @@ msgstr "Фирма :"
 msgid "Paste"
 msgstr "Преглед на страна"
 
-#: kopageapp/KoPADocumentModel.cpp:160
+#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:158
 #, fuzzy, kde-format
-msgid "Page  %1"
+msgid "Slide %1"
+msgstr "Покажи %1 алатник"
+
+#: kopageapp/KoPAPageThumbnailModel.cpp:69
+#, fuzzy, kde-format
+msgid "Page %1"
 msgstr "Избери..."
-
-#: kopageapp/KoPADocumentModel.cpp:167
-#, fuzzy
-#| msgid "Group:"
-msgid "Group"
-msgstr "Група:"
-
-#: kopageapp/KoPADocumentModel.cpp:170
-#, fuzzy
-msgid "Shape"
-msgstr "&Додади група..."
-
-#: kopageapp/KoPADocumentModel.cpp:283
-msgid "Visible"
-msgstr ""
-
-#: kopageapp/KoPADocumentModel.cpp:284
-msgid "Locked"
-msgstr ""
-
-#: kopageapp/KoPADocumentModel.cpp:497 kopageapp/KoPADocumentModel.cpp:518
-#, fuzzy
-msgid "Reparent shapes"
-msgstr "Отстрани шаблон"
 
 #: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
 #, fuzzy
@@ -916,6 +887,35 @@ msgstr[0] "Колони"
 msgstr[1] "Колони"
 msgstr[2] "Колони"
 
+#: kopageapp/KoPADocumentModel.cpp:160
+#, fuzzy, kde-format
+msgid "Page  %1"
+msgstr "Избери..."
+
+#: kopageapp/KoPADocumentModel.cpp:167
+#, fuzzy
+#| msgid "Group:"
+msgid "Group"
+msgstr "Група:"
+
+#: kopageapp/KoPADocumentModel.cpp:170
+#, fuzzy
+msgid "Shape"
+msgstr "&Додади група..."
+
+#: kopageapp/KoPADocumentModel.cpp:283
+msgid "Visible"
+msgstr ""
+
+#: kopageapp/KoPADocumentModel.cpp:284
+msgid "Locked"
+msgstr ""
+
+#: kopageapp/KoPADocumentModel.cpp:497 kopageapp/KoPADocumentModel.cpp:518
+#, fuzzy
+msgid "Reparent shapes"
+msgstr "Отстрани шаблон"
+
 #: kotext/KFindStrategy.cpp:63
 #, kde-format
 msgid "Found 1 match"
@@ -962,22 +962,6 @@ msgstr "Колони"
 msgid "Insert Row Above"
 msgstr "Колони"
 
-#: kotext/KoText.cpp:45
-msgctxt "Underline Style"
-msgid "None"
-msgstr ""
-
-#: kotext/KoText.cpp:46
-#, fuzzy
-msgctxt "Underline Style"
-msgid "Single"
-msgstr "inch"
-
-#: kotext/KoText.cpp:47
-msgctxt "Underline Style"
-msgid "Double"
-msgstr ""
-
 #: kotext/KReplaceStrategy.cpp:58
 msgid ""
 "Found no match\n"
@@ -998,12 +982,21 @@ msgstr[2] ""
 msgid "Replace %1 with %2?"
 msgstr "Отстрани приказ"
 
-#. i18n: file: widgets/KoCsvImportDialog.ui:147
-#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
-#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:440
+#: kotext/KOdfText.cpp:45
+msgctxt "Underline Style"
+msgid "None"
+msgstr ""
+
+#: kotext/KOdfText.cpp:46
 #, fuzzy
-msgid "Format"
-msgstr "Формат на страна"
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "inch"
+
+#: kotext/KOdfText.cpp:47
+msgctxt "Underline Style"
+msgid "Double"
+msgstr ""
 
 #: kotext/InsertTextReferenceAction.cpp:36
 #: kotext/InsertTextReferenceAction.cpp:64
@@ -1024,6 +1017,13 @@ msgstr ""
 #, kde-format
 msgid "%1 Options"
 msgstr ""
+
+#. i18n: file: widgets/KoCsvImportDialog.ui:147
+#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
+#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:440
+#, fuzzy
+msgid "Format"
+msgstr "Формат на страна"
 
 #: kotext/KoTextEditor.cpp:111 kotext/KoTextEditor.cpp:167
 #: kotext/KoTextEditor.cpp:325 widgets/KoCsvImportDialog.cpp:216
@@ -3029,53 +3029,6 @@ msgstr "Преглед на страна"
 msgid "Add/Remove Colors"
 msgstr "Отстрани група"
 
-#: widgets/KoPageLayoutDialog.cpp:47
-msgid "Page Layout"
-msgstr "Распоред на страна"
-
-#: widgets/KoPageLayoutDialog.cpp:113
-#, fuzzy
-msgid "Apply to document"
-msgstr "&Отвори документ"
-
-#: widgets/KoResourceItemChooser.cpp:75
-#, fuzzy
-msgid "Import"
-msgstr "Отстрани приказ"
-
-#: widgets/KoResourceItemChooser.cpp:89
-msgid "Download"
-msgstr ""
-
-#: widgets/KoResourceItemChooser.cpp:97
-#, fuzzy
-msgid "Share"
-msgstr "&Додади група..."
-
-#: widgets/KoResourceItemChooser.cpp:125
-#, fuzzy
-msgid "Choose File to Add"
-msgstr "Избери"
-
-#: widgets/KoZoomAction.cpp:165 widgets/KoZoomAction.cpp:167
-#: widgets/KoZoomAction.cpp:179 widgets/KoZoomAction.cpp:181
-#: widgets/KoZoomMode.cpp:25
-#, kde-format
-msgid "%1%"
-msgstr ""
-
-#: widgets/KoZoomAction.cpp:263
-msgid "Use same aspect as pixels"
-msgstr ""
-
-#: widgets/KoZoomAction.cpp:271
-msgid "Zoom to Selection"
-msgstr ""
-
-#: widgets/KoZoomAction.cpp:279
-msgid "Zoom to All"
-msgstr ""
-
 #: widgets/KoPageLayoutWidget.cpp:178
 #, fuzzy
 #| msgid "Left:"
@@ -3122,6 +3075,53 @@ msgstr "Распоред на страна"
 #| msgid "Page Preview"
 msgid "Page spread"
 msgstr "Преглед на страна"
+
+#: widgets/KoPageLayoutDialog.cpp:47
+msgid "Page Layout"
+msgstr "Распоред на страна"
+
+#: widgets/KoPageLayoutDialog.cpp:113
+#, fuzzy
+msgid "Apply to document"
+msgstr "&Отвори документ"
+
+#: widgets/KoResourceItemChooser.cpp:75
+#, fuzzy
+msgid "Import"
+msgstr "Отстрани приказ"
+
+#: widgets/KoResourceItemChooser.cpp:89
+msgid "Download"
+msgstr ""
+
+#: widgets/KoResourceItemChooser.cpp:97
+#, fuzzy
+msgid "Share"
+msgstr "&Додади група..."
+
+#: widgets/KoResourceItemChooser.cpp:125
+#, fuzzy
+msgid "Choose File to Add"
+msgstr "Избери"
+
+#: widgets/KoZoomAction.cpp:165 widgets/KoZoomAction.cpp:167
+#: widgets/KoZoomAction.cpp:179 widgets/KoZoomAction.cpp:181
+#: widgets/KoZoomMode.cpp:25
+#, kde-format
+msgid "%1%"
+msgstr ""
+
+#: widgets/KoZoomAction.cpp:263
+msgid "Use same aspect as pixels"
+msgstr ""
+
+#: widgets/KoZoomAction.cpp:271
+msgid "Zoom to Selection"
+msgstr ""
+
+#: widgets/KoZoomAction.cpp:279
+msgid "Zoom to All"
+msgstr ""
 
 #: widgets/KoZoomMode.cpp:26
 msgid "Fit Page Width"
