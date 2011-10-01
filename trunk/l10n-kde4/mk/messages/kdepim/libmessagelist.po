@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-23 04:11+0200\n"
+"POT-Creation-Date: 2011-10-01 04:24+0200\n"
 "PO-Revision-Date: 2007-02-28 14:08+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -244,7 +244,250 @@ msgctxt "Sort order for mail groups"
 msgid "Descending"
 msgstr "&Испраќање"
 
-#: core/item.cpp:228 core/messageitem.cpp:611
+#: core/widgetbase.cpp:139
+#, fuzzy
+msgctxt "Search for messages."
+msgid "Search"
+msgstr "&Барај:"
+
+#: core/widgetbase.cpp:160
+#, fuzzy
+#| msgid "Delete Search"
+msgid "Open Full Search"
+msgstr "Бришење на пребарување"
+
+#: core/widgetbase.cpp:234
+msgid "Any Status"
+msgstr "кој било статус"
+
+#: core/widgetbase.cpp:237
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Unread"
+msgctxt "@action:inmenu Status of a message"
+msgid "Unread"
+msgstr "непрочитана"
+
+#: core/widgetbase.cpp:241
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Replied"
+msgctxt "@action:inmenu Status of a message"
+msgid "Replied"
+msgstr "одговорена"
+
+#: core/widgetbase.cpp:245
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Forwarded"
+msgctxt "@action:inmenu Status of a message"
+msgid "Forwarded"
+msgstr "препратена"
+
+#: core/widgetbase.cpp:249
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Important"
+msgctxt "@action:inmenu Status of a message"
+msgid "Important"
+msgstr "важна"
+
+#: core/widgetbase.cpp:253
+#, fuzzy
+#| msgid "Remove &Important Message Mark"
+msgctxt "@action:inmenu Status of a message"
+msgid "Action Item"
+msgstr "Отстрани ја ознаката за &важна порака"
+
+#: core/widgetbase.cpp:257
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Watched"
+msgctxt "@action:inmenu Status of a message"
+msgid "Watched"
+msgstr "следена"
+
+#: core/widgetbase.cpp:261
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Ignored"
+msgctxt "@action:inmenu Status of a message"
+msgid "Ignored"
+msgstr "игнорирана"
+
+#: core/widgetbase.cpp:265
+#, fuzzy
+#| msgid "Has Attachment"
+msgctxt "@action:inmenu Status of a message"
+msgid "Has Attachment"
+msgstr "Има прилог"
+
+#: core/widgetbase.cpp:269
+#, fuzzy
+#| msgid "Advanced Options"
+msgctxt "@action:inmenu Status of a message"
+msgid "Has Invitation"
+msgstr "Напредни опции"
+
+#: core/widgetbase.cpp:273
+msgctxt "@action:inmenu Status of a message"
+msgid "Spam"
+msgstr ""
+
+#: core/widgetbase.cpp:277
+msgctxt "@action:inmenu Status of a message"
+msgid "Ham"
+msgstr ""
+
+#: core/widgetbase.cpp:444 core/view.cpp:1582
+msgid "Theme"
+msgstr ""
+
+#: core/widgetbase.cpp:485 core/widgetbase.cpp:589
+#: utils/aggregationconfigbutton.cpp:45 utils/themeconfigbutton.cpp:46
+#, fuzzy
+#| msgid "Configure KMail..."
+msgid "Configure..."
+msgstr "Конфигурирај КПошта..."
+
+#: core/widgetbase.cpp:548 core/view.cpp:1576
+#, fuzzy
+#| msgid "Suggestions"
+msgid "Aggregation"
+msgstr "Предлози"
+
+#: core/widgetbase.cpp:645
+#, fuzzy
+#| msgid "Message Part Properties"
+msgid "Message Sort Order"
+msgstr "Својства на делот од пораката"
+
+#: core/widgetbase.cpp:672
+#, fuzzy
+msgid "Message Sort Direction"
+msgstr "Листа со пораки"
+
+#: core/widgetbase.cpp:693
+#, fuzzy
+#| msgid "Delete Folder"
+msgid "Group Sort Order"
+msgstr "Бришење на папка"
+
+#: core/widgetbase.cpp:715
+#, fuzzy
+msgid "Group Sort Direction"
+msgstr "Листа со пораки"
+
+#: core/widgetbase.cpp:733
+msgid "Folder Always Uses This Sort Order"
+msgstr ""
+
+#: core/model.cpp:290
+#, fuzzy
+#| msgid " day"
+#| msgid_plural " days"
+msgid "Today"
+msgstr " ден"
+
+#: core/model.cpp:291
+#, fuzzy
+#| msgid "System &Tray"
+msgid "Yesterday"
+msgstr "Сис. лен&та"
+
+#: core/model.cpp:293 core/manager.cpp:98
+#, fuzzy
+msgctxt "Unknown date"
+msgid "Unknown"
+msgstr "&Препрати"
+
+#: core/model.cpp:294
+#, fuzzy
+#| msgid "Last Search"
+msgid "Last Week"
+msgstr "Последното барање"
+
+#: core/model.cpp:295
+msgid "Two Weeks Ago"
+msgstr ""
+
+#: core/model.cpp:296
+msgid "Three Weeks Ago"
+msgstr ""
+
+#: core/model.cpp:297
+msgid "Four Weeks Ago"
+msgstr ""
+
+#: core/model.cpp:298
+msgid "Five Weeks Ago"
+msgstr ""
+
+#: core/model.cpp:524 utils/themeeditor.cpp:204
+#, fuzzy
+#| msgid "Receiver"
+msgid "Receiver"
+msgstr "Примач"
+
+#: core/model.cpp:525 utils/themeeditor.cpp:203
+msgid "Sender"
+msgstr "Испраќач"
+
+#: core/model.cpp:1347
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "%1: name; %2: number appended to it to make it unique among a list of "
+#| "names"
+#| msgid "%1 %2"
+msgctxt "Message Aggregation Group Header: Month name and Year number"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: core/model.cpp:3777
+#, fuzzy, kde-format
+#| msgid "Threaded Message List Options"
+msgid "Processed 1 Message of %2"
+msgid_plural "Processed %1 Messages of %2"
+msgstr[0] "Опции за листата со пораки во нишки"
+msgstr[1] "Опции за листата со пораки во нишки"
+msgstr[2] "Опции за листата со пораки во нишки"
+
+#: core/model.cpp:3783 core/model.cpp:3789
+#, fuzzy, kde-format
+#| msgid "Threaded Message List Options"
+msgid "Threaded 1 Message of %2"
+msgid_plural "Threaded %1 Messages of %2"
+msgstr[0] "Опции за листата со пораки во нишки"
+msgstr[1] "Опции за листата со пораки во нишки"
+msgstr[2] "Опции за листата со пораки во нишки"
+
+#: core/model.cpp:3795
+#, fuzzy, kde-format
+#| msgid "&Reading"
+msgid "Grouped 1 Thread of %2"
+msgid_plural "Grouped %1 Threads of %2"
+msgstr[0] "&Читање"
+msgstr[1] "&Читање"
+msgstr[2] "&Читање"
+
+#: core/model.cpp:3801
+#, fuzzy, kde-format
+#| msgid "&Reading"
+msgid "Updated 1 Group of %2"
+msgid_plural "Updated %1 Groups of %2"
+msgstr[0] "&Читање"
+msgstr[1] "&Читање"
+msgstr[2] "&Читање"
+
+#: core/model.cpp:3897
+#, fuzzy
+#| msgctxt "Permissions"
+#| msgid "Read"
+msgctxt "@info:status Finished view fill"
+msgid "Ready"
+msgstr "Читање"
+
+#: core/item.cpp:228 core/messageitem.cpp:617
 #, fuzzy
 #| msgctxt "Permissions"
 #| msgid "Read"
@@ -252,7 +495,7 @@ msgctxt "Status of an item"
 msgid "Read"
 msgstr "Читање"
 
-#: core/item.cpp:230 core/messageitem.cpp:611
+#: core/item.cpp:230 core/messageitem.cpp:617
 #, fuzzy
 #| msgctxt "msg status"
 #| msgid "Unread"
@@ -267,7 +510,7 @@ msgctxt "Status of an item"
 msgid "Has Attachment"
 msgstr "Има прилог"
 
-#: core/item.cpp:236 core/messageitem.cpp:609
+#: core/item.cpp:236 core/messageitem.cpp:615
 #, fuzzy
 #| msgctxt "msg status"
 #| msgid "Replied"
@@ -331,6 +574,232 @@ msgctxt "Status of an item"
 msgid "Ignored"
 msgstr "игнорирана"
 
+#: core/manager.cpp:319
+msgid "Current Activity, Threaded"
+msgstr ""
+
+#: core/manager.cpp:320
+msgid ""
+"This view uses smart date range groups. Messages are threaded. So for "
+"example, in \"Today\" you will find all the messages arrived today and all "
+"the threads that have been active today."
+msgstr ""
+
+#: core/manager.cpp:336
+msgid "Current Activity, Flat"
+msgstr ""
+
+#: core/manager.cpp:337
+msgid ""
+"This view uses smart date range groups. Messages are not threaded. So for "
+"example, in \"Today\" you will simply find all the messages arrived today."
+msgstr ""
+
+#: core/manager.cpp:352
+msgid "Activity by Date, Threaded"
+msgstr ""
+
+#: core/manager.cpp:353
+msgid ""
+"This view uses day-by-day groups. Messages are threaded. So for example, in "
+"\"Today\" you will find all the messages arrived today and all the threads "
+"that have been active today."
+msgstr ""
+
+#: core/manager.cpp:369
+msgid "Activity by Date, Flat"
+msgstr ""
+
+#: core/manager.cpp:370
+msgid ""
+"This view uses day-by-day groups. Messages are not threaded. So for example, "
+"in \"Today\" you will simply find all the messages arrived today."
+msgstr ""
+
+#: core/manager.cpp:385
+#, fuzzy
+#| msgid "Associated Mailing List"
+msgid "Standard Mailing List"
+msgstr "Придружена пошт. листа"
+
+#: core/manager.cpp:386
+msgid ""
+"This is a plain and old mailing list view: no groups and heavy threading."
+msgstr ""
+
+#: core/manager.cpp:398
+msgid "Flat Date View"
+msgstr ""
+
+#: core/manager.cpp:399
+msgid ""
+"This is a plain and old list of messages sorted by date: no groups and no "
+"threading."
+msgstr ""
+
+#: core/manager.cpp:412
+#, fuzzy
+#| msgid "Sender/Receiver"
+msgid "Senders/Receivers, Flat"
+msgstr "Испраќач/примач"
+
+#: core/manager.cpp:413
+msgid ""
+"This view groups the messages by senders or receivers (depending on the "
+"folder type). Messages are not threaded."
+msgstr ""
+
+#: core/manager.cpp:428
+#, fuzzy
+#| msgid "&Trash folder:"
+msgid "Thread Starters"
+msgstr "&Корпа за отпадоци:"
+
+#: core/manager.cpp:429
+msgid ""
+"This view groups the messages in threads and then groups the threads by the "
+"starting user."
+msgstr ""
+
+#: core/manager.cpp:693
+msgctxt "Default theme name"
+msgid "Classic"
+msgstr ""
+
+#: core/manager.cpp:694
+msgid "A simple, backward compatible, single row theme"
+msgstr ""
+
+#: core/manager.cpp:698
+#, fuzzy
+#| msgid "Subject"
+msgctxt "@title:column Subject of messages"
+msgid "Subject"
+msgstr "Тема"
+
+#: core/manager.cpp:736 core/theme.cpp:87
+#, fuzzy
+#| msgid "Sender/Receiver"
+msgid "Sender/Receiver"
+msgstr "Испраќач/примач"
+
+#: core/manager.cpp:738
+#, fuzzy
+#| msgid "Sender"
+msgctxt "Sender of a message"
+msgid "Sender"
+msgstr "Испраќач"
+
+#: core/manager.cpp:739
+#, fuzzy
+#| msgid "Receiver"
+msgctxt "Receiver of a message"
+msgid "Receiver"
+msgstr "Примач"
+
+#: core/manager.cpp:740
+#, fuzzy
+#| msgid "Date"
+msgctxt "Date of a message"
+msgid "Date"
+msgstr "Датум"
+
+#: core/manager.cpp:741
+#, fuzzy
+#| msgid "Important Message"
+msgid "Most Recent Date"
+msgstr "Важна порака"
+
+#: core/manager.cpp:742
+#, fuzzy
+#| msgid "Size"
+msgctxt "Size of a message"
+msgid "Size"
+msgstr "Големина"
+
+#: core/manager.cpp:743
+#, fuzzy
+#| msgid "Attachment"
+msgctxt "Attachement indication"
+msgid "Attachment"
+msgstr "Прилог"
+
+#: core/manager.cpp:744 core/theme.cpp:617
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Unread"
+msgid "Unread"
+msgstr "непрочитана"
+
+#: core/manager.cpp:745
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Replied"
+msgid "Replied"
+msgstr "одговорена"
+
+#: core/manager.cpp:746
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Important"
+msgctxt "Message importance indication"
+msgid "Important"
+msgstr "важна"
+
+#: core/manager.cpp:747
+#, fuzzy
+#| msgid "Remove &Important Message Mark"
+msgid "Action Item"
+msgstr "Отстрани ја ознаката за &важна порака"
+
+#: core/manager.cpp:748
+msgid "Spam/Ham"
+msgstr ""
+
+#: core/manager.cpp:749
+msgid "Watched/Ignored"
+msgstr "Следена/игнорирана"
+
+#: core/manager.cpp:750
+msgid "Encryption"
+msgstr "Криптирање"
+
+#: core/manager.cpp:751
+msgid "Signature"
+msgstr "Потпис"
+
+#: core/manager.cpp:752
+#, fuzzy
+#| msgid "Save List"
+msgid "Tag List"
+msgstr "Зачувај листа"
+
+#: core/manager.cpp:761
+msgid "Fancy"
+msgstr ""
+
+#: core/manager.cpp:762
+msgid "A fancy multiline and multi item theme"
+msgstr ""
+
+#: core/manager.cpp:766
+#, fuzzy
+#| msgid "&Message"
+msgid "Message"
+msgstr "&Порака"
+
+#: core/manager.cpp:858
+msgid "Fancy with Clickable Status"
+msgstr ""
+
+#: core/manager.cpp:859
+msgid "A fancy multiline and multi item theme with a clickable status column"
+msgstr ""
+
+#: core/manager.cpp:862 core/view.cpp:2350 core/view.cpp:2353
+msgid "Status"
+msgstr "Статус"
+
 #: core/theme.cpp:81
 #, fuzzy
 #| msgid "Subject"
@@ -344,12 +813,6 @@ msgstr "Тема"
 msgctxt "Description of Type Date"
 msgid "Date"
 msgstr "Датум"
-
-#: core/theme.cpp:87 core/manager.cpp:736
-#, fuzzy
-#| msgid "Sender/Receiver"
-msgid "Sender/Receiver"
-msgstr "Испраќач/примач"
 
 #: core/theme.cpp:90
 #, fuzzy
@@ -478,126 +941,105 @@ msgctxt "Description for an Unknown Type"
 msgid "Unknown"
 msgstr "&Препрати"
 
-#: core/theme.cpp:608 core/manager.cpp:744
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Unread"
-msgid "Unread"
-msgstr "непрочитана"
-
-#: core/theme.cpp:758
+#: core/theme.cpp:770
 #, fuzzy
 #| msgid "Receiver"
 msgid "Never Show"
 msgstr "Примач"
 
-#: core/theme.cpp:759
+#: core/theme.cpp:771
 #, fuzzy
 #| msgid "Al&ways send"
 msgid "Always Show"
 msgstr "Испрати &секогаш"
 
-#: core/theme.cpp:766
+#: core/theme.cpp:778
 msgid "Plain Rectangles"
 msgstr ""
 
-#: core/theme.cpp:767
+#: core/theme.cpp:779
 msgid "Plain Joined Rectangle"
 msgstr ""
 
-#: core/theme.cpp:768
+#: core/theme.cpp:780
 msgid "Rounded Rectangles"
 msgstr ""
 
-#: core/theme.cpp:769
+#: core/theme.cpp:781
 msgid "Rounded Joined Rectangle"
 msgstr ""
 
-#: core/theme.cpp:770
+#: core/theme.cpp:782
 msgid "Gradient Rectangles"
 msgstr ""
 
-#: core/theme.cpp:771
+#: core/theme.cpp:783
 msgid "Gradient Joined Rectangle"
 msgstr ""
 
-#: core/theme.cpp:772
+#: core/theme.cpp:784
 msgid "Styled Rectangles"
 msgstr ""
 
-#: core/theme.cpp:773
+#: core/theme.cpp:785
 msgid "Styled Joined Rectangles"
 msgstr ""
 
-#: core/view.cpp:721
+#: core/view.cpp:725
 msgid "Adjust Column Sizes"
 msgstr ""
 
-#: core/view.cpp:724
+#: core/view.cpp:728
 #, fuzzy
 #| msgid "Show alway&s"
 msgid "Show Default Columns"
 msgstr "Покажи &секогаш"
 
-#: core/view.cpp:728
+#: core/view.cpp:732
 #, fuzzy
 msgid "Display Tooltips"
 msgstr "&До"
 
-#: core/view.cpp:1566
+#: core/view.cpp:1570
 #, fuzzy
 #| msgid "Nothin&g"
 msgid "Sorting"
 msgstr "Нем&а"
 
-#: core/view.cpp:1572 core/widgetbase.cpp:548
-#, fuzzy
-#| msgid "Suggestions"
-msgid "Aggregation"
-msgstr "Предлози"
-
-#: core/view.cpp:1578 core/widgetbase.cpp:444
-msgid "Theme"
-msgstr ""
-
-#: core/view.cpp:2327 core/view.cpp:2331
+#: core/view.cpp:2331 core/view.cpp:2335
 #, fuzzy
 #| msgid "&From"
 msgid "From"
 msgstr "&Од"
 
-#: core/view.cpp:2328 core/view.cpp:2332
+#: core/view.cpp:2332 core/view.cpp:2336
 #, fuzzy
 #| msgid "To"
 msgctxt "Receiver of the emial"
 msgid "To"
 msgstr "До"
 
-#: core/view.cpp:2329 core/view.cpp:2333
+#: core/view.cpp:2333 core/view.cpp:2337
 msgid "Date"
 msgstr "Датум"
 
-#: core/view.cpp:2346 core/view.cpp:2349 core/manager.cpp:862
-msgid "Status"
-msgstr "Статус"
-
-#: core/view.cpp:2347 core/view.cpp:2350
+#: core/view.cpp:2351 core/view.cpp:2354
 msgid "Size"
 msgstr "Големина"
 
-#: core/view.cpp:2355 core/view.cpp:2357
+#: core/view.cpp:2359 core/view.cpp:2361
 #, fuzzy
 #| msgid "Notes"
 msgid "Note"
 msgstr "Забелешки"
 
-#: core/view.cpp:2364 core/view.cpp:2366
+#: core/view.cpp:2368 core/view.cpp:2370
 #, fuzzy
 #| msgid "&Previous Card"
 msgid "Preview"
 msgstr "&Претходна картичка"
 
-#: core/view.cpp:2385
+#: core/view.cpp:2389
 #, fuzzy, kde-format
 #| msgid "<b>Bad</b> signature"
 msgid "<b>%1</b> reply"
@@ -606,7 +1048,7 @@ msgstr[0] "<b>Лош</b> потпис"
 msgstr[1] "<b>Лош</b> потпис"
 msgstr[2] "<b>Лош</b> потпис"
 
-#: core/view.cpp:2389
+#: core/view.cpp:2393
 #, kde-format
 msgid "<b>%1</b> message in subtree (<b>%2</b> unread)"
 msgid_plural "<b>%1</b> messages in subtree (<b>%2</b> unread)"
@@ -614,7 +1056,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: core/view.cpp:2434
+#: core/view.cpp:2438
 #, fuzzy, kde-format
 #| msgid "Threads default to o&pen"
 msgctxt ""
@@ -622,27 +1064,27 @@ msgctxt ""
 msgid "Threads started on %1"
 msgstr "Нишките се стандардно &отворени"
 
-#: core/view.cpp:2440
+#: core/view.cpp:2444
 #, fuzzy, kde-format
 #| msgid "Threads default to o&pen"
 msgctxt "@info:tooltip Formats to something like 'Threads started Yesterday'"
 msgid "Threads started %1"
 msgstr "Нишките се стандардно &отворени"
 
-#: core/view.cpp:2445
+#: core/view.cpp:2449
 #, fuzzy, kde-format
 #| msgid "&Threaded message list"
 msgid "Threads with messages dated %1"
 msgstr "Листа со пораки во &нишки"
 
-#: core/view.cpp:2457
+#: core/view.cpp:2461
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgctxt "@info:tooltip Formats to something like 'Messages sent on 2008-12-21'"
 msgid "Messages sent on %1"
 msgstr "Пораката е потпишана од %1."
 
-#: core/view.cpp:2463
+#: core/view.cpp:2467
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgctxt ""
@@ -650,92 +1092,92 @@ msgctxt ""
 msgid "Messages received on %1"
 msgstr "Пораката е потпишана од %1."
 
-#: core/view.cpp:2470
+#: core/view.cpp:2474
 #, fuzzy, kde-format
 msgctxt "@info:tooltip Formats to something like 'Messages sent Yesterday'"
 msgid "Messages sent %1"
 msgstr "Листа со пораки"
 
-#: core/view.cpp:2476
+#: core/view.cpp:2480
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgctxt "@info:tooltip Formats to something like 'Messages received Yesterday'"
 msgid "Messages received %1"
 msgstr "Пораката е потпишана од %1."
 
-#: core/view.cpp:2488
+#: core/view.cpp:2492
 #, fuzzy, kde-format
 #| msgid "Threads default to o&pen"
 msgid "Threads started within %1"
 msgstr "Нишките се стандардно &отворени"
 
-#: core/view.cpp:2491
+#: core/view.cpp:2495
 #, fuzzy, kde-format
 #| msgid "&Threaded message list"
 msgid "Threads containing messages with dates within %1"
 msgstr "Листа со пораки во &нишки"
 
-#: core/view.cpp:2499
+#: core/view.cpp:2503
 #, fuzzy, kde-format
 #| msgid "Message was signed with key %1."
 msgid "Messages sent within %1"
 msgstr "Пораката е потпишана со клучот %1."
 
-#: core/view.cpp:2501
+#: core/view.cpp:2505
 #, fuzzy, kde-format
 #| msgid "Message was signed with key %1."
 msgid "Messages received within %1"
 msgstr "Пораката е потпишана со клучот %1."
 
-#: core/view.cpp:2511
+#: core/view.cpp:2515
 #, fuzzy, kde-format
 #| msgid "Threads default to o&pen"
 msgid "Threads started by %1"
 msgstr "Нишките се стандардно &отворени"
 
-#: core/view.cpp:2514
+#: core/view.cpp:2518
 #, fuzzy, kde-format
 #| msgid "&Threaded message list"
 msgid "Threads with most recent message by %1"
 msgstr "Листа со пораки во &нишки"
 
-#: core/view.cpp:2524 core/view.cpp:2550
+#: core/view.cpp:2528 core/view.cpp:2554
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgid "Messages sent to %1"
 msgstr "Пораката е потпишана од %1."
 
-#: core/view.cpp:2526
+#: core/view.cpp:2530
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgid "Messages sent by %1"
 msgstr "Пораката е потпишана од %1."
 
-#: core/view.cpp:2528
+#: core/view.cpp:2532
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgid "Messages received from %1"
 msgstr "Пораката е потпишана од %1."
 
-#: core/view.cpp:2538
+#: core/view.cpp:2542
 #, fuzzy, kde-format
 #| msgid "Threads default to o&pen"
 msgid "Threads directed to %1"
 msgstr "Нишките се стандардно &отворени"
 
-#: core/view.cpp:2541
+#: core/view.cpp:2545
 #, fuzzy, kde-format
 #| msgid "&Threaded message list"
 msgid "Threads with most recent message directed to %1"
 msgstr "Листа со пораки во &нишки"
 
-#: core/view.cpp:2552
+#: core/view.cpp:2556
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgid "Messages received by %1"
 msgstr "Пораката е потпишана од %1."
 
-#: core/view.cpp:2581
+#: core/view.cpp:2585
 #, fuzzy, kde-format
 #| msgid "<b>Bad</b> signature"
 msgid "<b>%1</b> thread"
@@ -744,455 +1186,13 @@ msgstr[0] "<b>Лош</b> потпис"
 msgstr[1] "<b>Лош</b> потпис"
 msgstr[2] "<b>Лош</b> потпис"
 
-#: core/view.cpp:2586
+#: core/view.cpp:2590
 #, kde-format
 msgid "<b>%1</b> message (<b>%2</b> unread)"
 msgid_plural "<b>%1</b> messages (<b>%2</b> unread)"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
-
-#: core/manager.cpp:98 core/model.cpp:293
-#, fuzzy
-msgctxt "Unknown date"
-msgid "Unknown"
-msgstr "&Препрати"
-
-#: core/manager.cpp:320
-msgid "Current Activity, Threaded"
-msgstr ""
-
-#: core/manager.cpp:321
-msgid ""
-"This view uses smart date range groups. Messages are threaded. So for "
-"example, in \"Today\" you will find all the messages arrived today and all "
-"the threads that have been active today."
-msgstr ""
-
-#: core/manager.cpp:337
-msgid "Current Activity, Flat"
-msgstr ""
-
-#: core/manager.cpp:338
-msgid ""
-"This view uses smart date range groups. Messages are not threaded. So for "
-"example, in \"Today\" you will simply find all the messages arrived today."
-msgstr ""
-
-#: core/manager.cpp:353
-msgid "Activity by Date, Threaded"
-msgstr ""
-
-#: core/manager.cpp:354
-msgid ""
-"This view uses day-by-day groups. Messages are threaded. So for example, in "
-"\"Today\" you will find all the messages arrived today and all the threads "
-"that have been active today."
-msgstr ""
-
-#: core/manager.cpp:370
-msgid "Activity by Date, Flat"
-msgstr ""
-
-#: core/manager.cpp:371
-msgid ""
-"This view uses day-by-day groups. Messages are not threaded. So for example, "
-"in \"Today\" you will simply find all the messages arrived today."
-msgstr ""
-
-#: core/manager.cpp:386
-#, fuzzy
-#| msgid "Associated Mailing List"
-msgid "Standard Mailing List"
-msgstr "Придружена пошт. листа"
-
-#: core/manager.cpp:387
-msgid ""
-"This is a plain and old mailing list view: no groups and heavy threading."
-msgstr ""
-
-#: core/manager.cpp:399
-msgid "Flat Date View"
-msgstr ""
-
-#: core/manager.cpp:400
-msgid ""
-"This is a plain and old list of messages sorted by date: no groups and no "
-"threading."
-msgstr ""
-
-#: core/manager.cpp:413
-#, fuzzy
-#| msgid "Sender/Receiver"
-msgid "Senders/Receivers, Flat"
-msgstr "Испраќач/примач"
-
-#: core/manager.cpp:414
-msgid ""
-"This view groups the messages by senders or receivers (depending on the "
-"folder type). Messages are not threaded."
-msgstr ""
-
-#: core/manager.cpp:429
-#, fuzzy
-#| msgid "&Trash folder:"
-msgid "Thread Starters"
-msgstr "&Корпа за отпадоци:"
-
-#: core/manager.cpp:430
-msgid ""
-"This view groups the messages in threads and then groups the threads by the "
-"starting user."
-msgstr ""
-
-#: core/manager.cpp:693
-msgctxt "Default theme name"
-msgid "Classic"
-msgstr ""
-
-#: core/manager.cpp:694
-msgid "A simple, backward compatible, single row theme"
-msgstr ""
-
-#: core/manager.cpp:698
-#, fuzzy
-#| msgid "Subject"
-msgctxt "@title:column Subject of messages"
-msgid "Subject"
-msgstr "Тема"
-
-#: core/manager.cpp:738
-#, fuzzy
-#| msgid "Sender"
-msgctxt "Sender of a message"
-msgid "Sender"
-msgstr "Испраќач"
-
-#: core/manager.cpp:739
-#, fuzzy
-#| msgid "Receiver"
-msgctxt "Receiver of a message"
-msgid "Receiver"
-msgstr "Примач"
-
-#: core/manager.cpp:740
-#, fuzzy
-#| msgid "Date"
-msgctxt "Date of a message"
-msgid "Date"
-msgstr "Датум"
-
-#: core/manager.cpp:741
-#, fuzzy
-#| msgid "Important Message"
-msgid "Most Recent Date"
-msgstr "Важна порака"
-
-#: core/manager.cpp:742
-#, fuzzy
-#| msgid "Size"
-msgctxt "Size of a message"
-msgid "Size"
-msgstr "Големина"
-
-#: core/manager.cpp:743
-#, fuzzy
-#| msgid "Attachment"
-msgctxt "Attachement indication"
-msgid "Attachment"
-msgstr "Прилог"
-
-#: core/manager.cpp:745
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Replied"
-msgid "Replied"
-msgstr "одговорена"
-
-#: core/manager.cpp:746
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Important"
-msgctxt "Message importance indication"
-msgid "Important"
-msgstr "важна"
-
-#: core/manager.cpp:747
-#, fuzzy
-#| msgid "Remove &Important Message Mark"
-msgid "Action Item"
-msgstr "Отстрани ја ознаката за &важна порака"
-
-#: core/manager.cpp:748
-msgid "Spam/Ham"
-msgstr ""
-
-#: core/manager.cpp:749
-msgid "Watched/Ignored"
-msgstr "Следена/игнорирана"
-
-#: core/manager.cpp:750
-msgid "Encryption"
-msgstr "Криптирање"
-
-#: core/manager.cpp:751
-msgid "Signature"
-msgstr "Потпис"
-
-#: core/manager.cpp:752
-#, fuzzy
-#| msgid "Save List"
-msgid "Tag List"
-msgstr "Зачувај листа"
-
-#: core/manager.cpp:761
-msgid "Fancy"
-msgstr ""
-
-#: core/manager.cpp:762
-msgid "A fancy multiline and multi item theme"
-msgstr ""
-
-#: core/manager.cpp:766
-#, fuzzy
-#| msgid "&Message"
-msgid "Message"
-msgstr "&Порака"
-
-#: core/manager.cpp:858
-msgid "Fancy with Clickable Status"
-msgstr ""
-
-#: core/manager.cpp:859
-msgid "A fancy multiline and multi item theme with a clickable status column"
-msgstr ""
-
-#: core/widgetbase.cpp:139
-#, fuzzy
-msgctxt "Search for messages."
-msgid "Search"
-msgstr "&Барај:"
-
-#: core/widgetbase.cpp:160
-#, fuzzy
-#| msgid "Delete Search"
-msgid "Open Full Search"
-msgstr "Бришење на пребарување"
-
-#: core/widgetbase.cpp:234
-msgid "Any Status"
-msgstr "кој било статус"
-
-#: core/widgetbase.cpp:237
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Unread"
-msgctxt "@action:inmenu Status of a message"
-msgid "Unread"
-msgstr "непрочитана"
-
-#: core/widgetbase.cpp:241
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Replied"
-msgctxt "@action:inmenu Status of a message"
-msgid "Replied"
-msgstr "одговорена"
-
-#: core/widgetbase.cpp:245
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Forwarded"
-msgctxt "@action:inmenu Status of a message"
-msgid "Forwarded"
-msgstr "препратена"
-
-#: core/widgetbase.cpp:249
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Important"
-msgctxt "@action:inmenu Status of a message"
-msgid "Important"
-msgstr "важна"
-
-#: core/widgetbase.cpp:253
-#, fuzzy
-#| msgid "Remove &Important Message Mark"
-msgctxt "@action:inmenu Status of a message"
-msgid "Action Item"
-msgstr "Отстрани ја ознаката за &важна порака"
-
-#: core/widgetbase.cpp:257
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Watched"
-msgctxt "@action:inmenu Status of a message"
-msgid "Watched"
-msgstr "следена"
-
-#: core/widgetbase.cpp:261
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Ignored"
-msgctxt "@action:inmenu Status of a message"
-msgid "Ignored"
-msgstr "игнорирана"
-
-#: core/widgetbase.cpp:265
-#, fuzzy
-#| msgid "Has Attachment"
-msgctxt "@action:inmenu Status of a message"
-msgid "Has Attachment"
-msgstr "Има прилог"
-
-#: core/widgetbase.cpp:269
-#, fuzzy
-#| msgid "Advanced Options"
-msgctxt "@action:inmenu Status of a message"
-msgid "Has Invitation"
-msgstr "Напредни опции"
-
-#: core/widgetbase.cpp:273
-msgctxt "@action:inmenu Status of a message"
-msgid "Spam"
-msgstr ""
-
-#: core/widgetbase.cpp:277
-msgctxt "@action:inmenu Status of a message"
-msgid "Ham"
-msgstr ""
-
-#: core/widgetbase.cpp:485 core/widgetbase.cpp:589
-#: utils/aggregationconfigbutton.cpp:45 utils/themeconfigbutton.cpp:46
-#, fuzzy
-#| msgid "Configure KMail..."
-msgid "Configure..."
-msgstr "Конфигурирај КПошта..."
-
-#: core/widgetbase.cpp:645
-#, fuzzy
-#| msgid "Message Part Properties"
-msgid "Message Sort Order"
-msgstr "Својства на делот од пораката"
-
-#: core/widgetbase.cpp:672
-#, fuzzy
-msgid "Message Sort Direction"
-msgstr "Листа со пораки"
-
-#: core/widgetbase.cpp:693
-#, fuzzy
-#| msgid "Delete Folder"
-msgid "Group Sort Order"
-msgstr "Бришење на папка"
-
-#: core/widgetbase.cpp:715
-#, fuzzy
-msgid "Group Sort Direction"
-msgstr "Листа со пораки"
-
-#: core/widgetbase.cpp:733
-msgid "Folder Always Uses This Sort Order"
-msgstr ""
-
-#: core/model.cpp:290
-#, fuzzy
-#| msgid " day"
-#| msgid_plural " days"
-msgid "Today"
-msgstr " ден"
-
-#: core/model.cpp:291
-#, fuzzy
-#| msgid "System &Tray"
-msgid "Yesterday"
-msgstr "Сис. лен&та"
-
-#: core/model.cpp:294
-#, fuzzy
-#| msgid "Last Search"
-msgid "Last Week"
-msgstr "Последното барање"
-
-#: core/model.cpp:295
-msgid "Two Weeks Ago"
-msgstr ""
-
-#: core/model.cpp:296
-msgid "Three Weeks Ago"
-msgstr ""
-
-#: core/model.cpp:297
-msgid "Four Weeks Ago"
-msgstr ""
-
-#: core/model.cpp:298
-msgid "Five Weeks Ago"
-msgstr ""
-
-#: core/model.cpp:524 utils/themeeditor.cpp:204
-#, fuzzy
-#| msgid "Receiver"
-msgid "Receiver"
-msgstr "Примач"
-
-#: core/model.cpp:525 utils/themeeditor.cpp:203
-msgid "Sender"
-msgstr "Испраќач"
-
-#: core/model.cpp:1347
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "%1: name; %2: number appended to it to make it unique among a list of "
-#| "names"
-#| msgid "%1 %2"
-msgctxt "Message Aggregation Group Header: Month name and Year number"
-msgid "%1 %2"
-msgstr "%1 %2"
-
-#: core/model.cpp:3777
-#, fuzzy, kde-format
-#| msgid "Threaded Message List Options"
-msgid "Processed 1 Message of %2"
-msgid_plural "Processed %1 Messages of %2"
-msgstr[0] "Опции за листата со пораки во нишки"
-msgstr[1] "Опции за листата со пораки во нишки"
-msgstr[2] "Опции за листата со пораки во нишки"
-
-#: core/model.cpp:3783 core/model.cpp:3789
-#, fuzzy, kde-format
-#| msgid "Threaded Message List Options"
-msgid "Threaded 1 Message of %2"
-msgid_plural "Threaded %1 Messages of %2"
-msgstr[0] "Опции за листата со пораки во нишки"
-msgstr[1] "Опции за листата со пораки во нишки"
-msgstr[2] "Опции за листата со пораки во нишки"
-
-#: core/model.cpp:3795
-#, fuzzy, kde-format
-#| msgid "&Reading"
-msgid "Grouped 1 Thread of %2"
-msgid_plural "Grouped %1 Threads of %2"
-msgstr[0] "&Читање"
-msgstr[1] "&Читање"
-msgstr[2] "&Читање"
-
-#: core/model.cpp:3801
-#, fuzzy, kde-format
-#| msgid "&Reading"
-msgid "Updated 1 Group of %2"
-msgid_plural "Updated %1 Groups of %2"
-msgstr[0] "&Читање"
-msgstr[1] "&Читање"
-msgstr[2] "&Читање"
-
-#: core/model.cpp:3897
-#, fuzzy
-#| msgctxt "Permissions"
-#| msgid "Read"
-msgctxt "@info:status Finished view fill"
-msgid "Ready"
-msgstr "Читање"
 
 #: utils/configureaggregationsdialog.cpp:98
 msgid "Customize Message Aggregation Modes"
