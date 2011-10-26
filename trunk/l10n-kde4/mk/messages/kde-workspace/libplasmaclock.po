@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libplasmaclock\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-24 03:53+0200\n"
+"POT-Creation-Date: 2011-10-26 04:36+0200\n"
 "PO-Revision-Date: 2010-01-31 22:05+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -18,6 +18,10 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
+
+#: calendar.cpp:180
+msgid "Select today"
+msgstr ""
 
 #: calendartable.cpp:657
 #, fuzzy, kde-format
@@ -62,7 +66,7 @@ msgctxt "Start and end time and summary for a calendar event"
 msgid "%1 - %2<br>%3"
 msgstr ""
 
-#: calendartable.cpp:886 clockapplet.cpp:605
+#: calendartable.cpp:886 clockapplet.cpp:621
 msgid "Calendar"
 msgstr "Календар"
 
@@ -138,26 +142,72 @@ msgctxt "General configuration page"
 msgid "General"
 msgstr "Општо"
 
-#: clockapplet.cpp:389
+#: clockapplet.cpp:380
+#, fuzzy
+#| msgid "Never"
+msgctxt "@inmenu interval between speaking clock"
+msgid "Never"
+msgstr "Никогаш"
+
+#: clockapplet.cpp:381
+#, fuzzy
+#| msgid "th minute"
+msgctxt "@inmenu interval between speaking clock"
+msgid "Every minute"
+msgstr "-тата минута"
+
+#: clockapplet.cpp:382
+msgctxt "@inmenu interval between speaking clock"
+msgid "Every 2 minutes"
+msgstr ""
+
+#: clockapplet.cpp:383
+msgctxt "@inmenu interval between speaking clock"
+msgid "Every 5 minutes"
+msgstr ""
+
+#: clockapplet.cpp:384
+msgctxt "@inmenu interval between speaking clock"
+msgid "Every 10 minutes"
+msgstr ""
+
+#: clockapplet.cpp:385
+msgctxt "@inmenu interval between speaking clock"
+msgid "Every 15 minutes"
+msgstr ""
+
+#: clockapplet.cpp:386
+msgctxt "@inmenu interval between speaking clock"
+msgid "Every 30 minutes"
+msgstr ""
+
+#: clockapplet.cpp:387
+#, fuzzy
+#| msgid "Every "
+msgctxt "@inmenu interval between speaking clock"
+msgid "Every hour"
+msgstr "Секои "
+
+#: clockapplet.cpp:405
 msgid "Time Zones"
 msgstr "Часовни зони"
 
-#: clockapplet.cpp:520
+#: clockapplet.cpp:536
 msgid "C&opy to Clipboard"
 msgstr "К&опирај на табла со исечоци"
 
-#: clockapplet.cpp:528
+#: clockapplet.cpp:544
 #, fuzzy
 #| msgid "Adjust Date and Time"
 msgid "Adjust Date and Time..."
 msgstr "Местење на датум и време"
 
-#: clockapplet.cpp:682
+#: clockapplet.cpp:698
 msgctxt "Local time zone"
 msgid "Local"
 msgstr "Локална"
 
-#: clockapplet.cpp:731
+#: clockapplet.cpp:747
 #, fuzzy
 #| msgid "Calendar"
 msgctxt "@item:inmenu Submenu for alternative calendar dates"
@@ -202,39 +252,21 @@ msgstr "Текст-во-говор"
 msgid "Speak time:"
 msgstr "Време на изговор:"
 
-#. i18n: file: generalConfig.ui:61
-#. i18n: ectx: property (specialValueText), widget (KIntSpinBox, interval)
-#: rc.cpp:24
-msgid "Never"
-msgstr "Никогаш"
-
-#. i18n: file: generalConfig.ui:64
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, interval)
-#: rc.cpp:27
-msgid "th minute"
-msgstr "-тата минута"
-
-#. i18n: file: generalConfig.ui:67
-#. i18n: ectx: property (prefix), widget (KIntSpinBox, interval)
-#: rc.cpp:30
-msgid "Every "
-msgstr "Секои "
-
 #. i18n: file: timezonesConfig.ui:20
 #. i18n: ectx: property (clickMessage), widget (KTreeWidgetSearchLine, searchLine)
-#: rc.cpp:33
+#: rc.cpp:24
 msgid "Search"
 msgstr "Барање"
 
 #. i18n: file: timezonesConfig.ui:33
 #. i18n: ectx: property (toolTip), widget (KTimeZoneWidget, timeZones)
-#: rc.cpp:36
+#: rc.cpp:27
 msgid "Select one or several time zones."
 msgstr "Изберете една или повеќе часовни зони."
 
 #. i18n: file: timezonesConfig.ui:43
 #. i18n: ectx: property (whatsThis), widget (KTimeZoneWidget, timeZones)
-#: rc.cpp:39
+#: rc.cpp:30
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -294,19 +326,19 @@ msgstr ""
 
 #. i18n: file: timezonesConfig.ui:73
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:49
+#: rc.cpp:40
 msgid "Clock defaults to:"
 msgstr "Стандардна зона:"
 
 #. i18n: file: timezonesConfig.ui:89
 #. i18n: ectx: property (toolTip), widget (QComboBox, clockDefaultsTo)
-#: rc.cpp:52
+#: rc.cpp:43
 msgid "The time the clock will display"
 msgstr "Времето што ќе го прикажува часовникот"
 
 #. i18n: file: timezonesConfig.ui:93
 #. i18n: ectx: property (whatsThis), widget (QComboBox, clockDefaultsTo)
-#: rc.cpp:55
+#: rc.cpp:46
 msgid ""
 "The clock will display the time for the selected default zone.\n"
 "Local is the time you set in System Settings."
