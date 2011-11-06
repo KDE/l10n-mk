@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-29 03:48+0200\n"
+"POT-Creation-Date: 2011-11-06 03:59+0100\n"
 "PO-Revision-Date: 2007-02-26 22:26+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -43,17 +43,17 @@ msgid ""
 "If you have any questions, don't hesitate to ask.\n"
 msgstr ""
 
-#: caff.cpp:262
+#: caff.cpp:259
 msgctxt "Email template placeholder for key id"
 msgid "KEYID"
 msgstr ""
 
-#: caff.cpp:263
+#: caff.cpp:260
 msgctxt "Email template placeholder for key id"
 msgid "UIDNAME"
 msgstr ""
 
-#: caff.cpp:280
+#: caff.cpp:288
 msgid "your key "
 msgstr ""
 
@@ -208,7 +208,7 @@ msgstr[2] "Внеси клуч од сервер на клучеви"
 
 #. i18n: file: keyserver.ui:144
 #. i18n: ectx: property (text), widget (QPushButton, Buttonimport)
-#: keyservers.cpp:217 rc.cpp:341 editor/kgpgtextedit.cpp:317
+#: keyservers.cpp:217 rc.cpp:341 editor/kgpgtextedit.cpp:331
 msgid "&Import"
 msgstr "&Внеси"
 
@@ -1211,19 +1211,19 @@ msgstr "&Внеси"
 msgid "Do Not Import"
 msgstr "Не внесувај"
 
-#: kgpg.cpp:81
+#: kgpg.cpp:78
 msgid ""
 "GnuPG failed to start.<br />You must fix the GnuPG error first before "
 "running KGpg."
 msgstr ""
 
-#: kgpg.cpp:81
+#: kgpg.cpp:78
 #, fuzzy
 #| msgid "GnuPG Home"
 msgid "GnuPG error"
 msgstr "Домашна папка на GnuPG"
 
-#: kgpg.cpp:99
+#: kgpg.cpp:96
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>The use of <b>GnuPG Agent</b> is enabled in GnuPG's configuration "
@@ -1241,7 +1241,7 @@ msgstr ""
 "доведе до проблеми со потпишувањето/декрипцијата.<br>Ве молиме исклучете го "
 "Агентот на GnuPG преку поставувањата на KGpg, или поправете го агентот.</qt>"
 
-#: kgpg.cpp:133
+#: kgpg.cpp:130
 msgid ""
 "Unable to perform requested operation.\n"
 "Please select only one folder, or several files, but do not mix files and "
@@ -1251,15 +1251,15 @@ msgstr ""
 "Изберете само една папка, или неколку датотеки, но не мешајте датотеки и "
 "папки."
 
-#: kgpg.cpp:148
+#: kgpg.cpp:145
 msgid "Cannot decrypt and show folder."
 msgstr "Не можам да ја декриптирам папката и да ја покажам."
 
-#: kgpg.cpp:153
+#: kgpg.cpp:150
 msgid "Cannot sign folder."
 msgstr "Не можам да ја потпишам папката."
 
-#: kgpg.cpp:158
+#: kgpg.cpp:155
 msgid "Cannot verify folder."
 msgstr "Не можам да ја верификувам папката."
 
@@ -1331,7 +1331,7 @@ msgstr[0] "Декрипцијата не успеа."
 msgstr[1] "Декрипцијата не успеа."
 msgstr[2] "Декрипцијата не успеа."
 
-#: kgpgexternalactions.cpp:373 editor/kgpgtextedit.cpp:267
+#: kgpgexternalactions.cpp:373 editor/kgpgtextedit.cpp:276
 msgid "Decryption failed."
 msgstr "Декрипцијата не успеа."
 
@@ -1763,22 +1763,22 @@ msgctxt "Mark default keyserver in GUI"
 msgid "(Default)"
 msgstr "(Основно)"
 
-#: kgpgoptions.cpp:504 kgpgoptions.cpp:506
+#: kgpgoptions.cpp:501 kgpgoptions.cpp:503
 #, fuzzy
 #| msgid "none"
 msgctxt "no key available"
 msgid "none"
 msgstr "ниедно"
 
-#: kgpgoptions.cpp:526
+#: kgpgoptions.cpp:523
 msgid "Decrypt File"
 msgstr "Декриптирај датотека"
 
-#: kgpgoptions.cpp:543 main.cpp:46
+#: kgpgoptions.cpp:540 main.cpp:46
 msgid "Sign File"
 msgstr "Потпиши датотека"
 
-#: kgpgoptions.cpp:588 kgpgoptions.cpp:627
+#: kgpgoptions.cpp:585 kgpgoptions.cpp:624
 #, fuzzy
 #| msgid "(Default)"
 msgctxt "Remove default marker from GUI if it is there"
@@ -1861,12 +1861,12 @@ msgid ""
 "<qt>The signature is valid, and the key is ultimately trusted<br /></qt>"
 msgstr "Потписот е валиден и клучот е крајно доверлив"
 
-#: kgpgtextinterface.cpp:549 editor/kgpgtextedit.cpp:309
+#: kgpgtextinterface.cpp:549 editor/kgpgtextedit.cpp:323
 msgctxt "Caption of message box"
 msgid "Verification Finished"
 msgstr ""
 
-#: kgpgtextinterface.cpp:552 editor/kgpgtextedit.cpp:324
+#: kgpgtextinterface.cpp:552 editor/kgpgtextedit.cpp:338
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -4229,7 +4229,7 @@ msgstr "<b>Исправна контролна сума</b>, датотекат�
 msgid "<b>Wrong checksum, <em>file corrupted</em></b>"
 msgstr ""
 
-#: editor/kgpgtextedit.cpp:89
+#: editor/kgpgtextedit.cpp:90
 #, fuzzy
 #| msgid ""
 #| "<qt><b>Remote file dropped</b>.<br>The remote file will now be copied to "
@@ -4244,11 +4244,11 @@ msgstr ""
 "биде копирана во привремена датотека за да се направи бараната операција. "
 "Привремената датотека ќе биде избришана по операцијата.</qt>"
 
-#: editor/kgpgtextedit.cpp:93
+#: editor/kgpgtextedit.cpp:94
 msgid "Could not download file."
 msgstr "Не може да се симне датотеката."
 
-#: editor/kgpgtextedit.cpp:126
+#: editor/kgpgtextedit.cpp:127
 #, fuzzy
 #| msgid ""
 #| "<p>The file <b>%1</b> is a public key.<br>Do you want to import it ?</p>"
@@ -4258,7 +4258,7 @@ msgid ""
 msgstr ""
 "<p>Датотеката <b>%1</b> е јавен клуч.<br>Дали сакате да го внесете?</p>"
 
-#: editor/kgpgtextedit.cpp:129
+#: editor/kgpgtextedit.cpp:130
 #, fuzzy
 #| msgid ""
 #| "This file is a private key.\n"
@@ -4270,35 +4270,40 @@ msgstr ""
 "Датотекава е приватен клуч.\n"
 "Користете го менаџментот со клучеви на kgpg за да го внесете."
 
-#: editor/kgpgtextedit.cpp:134
+#: editor/kgpgtextedit.cpp:135
 #, fuzzy
 #| msgid "Decrypt & Open in Editor"
 msgid "Key file dropped on Editor"
 msgstr "Декрипт. и отвори во уредувач"
 
-#: editor/kgpgtextedit.cpp:281
+#: editor/kgpgtextedit.cpp:291
+#, kde-format
+msgid "The encryption failed with error code %1"
+msgstr ""
+
+#: editor/kgpgtextedit.cpp:292
 msgid "Encryption failed."
 msgstr "Криптирањето не успеа."
 
-#: editor/kgpgtextedit.cpp:289
+#: editor/kgpgtextedit.cpp:303
 msgid "Signing not possible: bad passphrase or missing key"
 msgstr "Потпишувањето не е можно: лоша тајна фраза или недостига клуч"
 
-#: editor/kgpgtextedit.cpp:318
+#: editor/kgpgtextedit.cpp:332
 #, fuzzy
 msgid "Import key in your list"
 msgstr "Внеси во приврзокот со клучеви"
 
-#: editor/kgpgtextedit.cpp:321
+#: editor/kgpgtextedit.cpp:335
 #, fuzzy
 msgid "Do &Not Import"
 msgstr "Не внесувај"
 
-#: editor/kgpgtextedit.cpp:322
+#: editor/kgpgtextedit.cpp:336
 msgid "Will not import this key in your list"
 msgstr ""
 
-#: editor/kgpgtextedit.cpp:324
+#: editor/kgpgtextedit.cpp:338
 msgid "Missing Key"
 msgstr "Недостасува клуч"
 
@@ -4406,6 +4411,20 @@ msgstr "Декриптирам %1"
 #| msgid "Decrypting %1"
 msgctxt "Status message 'Decrypted <filename>' (operation was completed)"
 msgid "Decrypted %1"
+msgstr "Декриптирам %1"
+
+#: transactions/kgpgencrypt.cpp:104
+#, fuzzy, kde-format
+#| msgid "Decrypting %1"
+msgctxt "Status message 'Encrypting <filename>' (operation starts)"
+msgid "Encrypting %1"
+msgstr "Декриптирам %1"
+
+#: transactions/kgpgencrypt.cpp:107
+#, fuzzy, kde-format
+#| msgid "Decrypting %1"
+msgctxt "Status message 'Encrypted <filename>' (operation was completed)"
+msgid "Encrypted %1"
 msgstr "Декриптирам %1"
 
 #: transactions/kgpggeneratekey.cpp:61
