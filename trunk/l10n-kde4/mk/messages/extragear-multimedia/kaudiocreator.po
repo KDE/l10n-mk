@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaudiocreator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-21 04:31+0100\n"
+"POT-Creation-Date: 2011-12-22 04:04+0100\n"
 "PO-Revision-Date: 2006-09-30 15:27+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -125,6 +125,61 @@ msgctxt "@title:column"
 msgid "Encoder"
 msgstr "Кодер"
 
+#: encoderconfigimp.cpp:101
+msgid "The default encoder has to accept wav as input."
+msgstr ""
+
+#: encoderconfigimp.cpp:101 encoderconfigimp.cpp:194 encoderconfigimp.cpp:235
+msgid "Not Allowed"
+msgstr ""
+
+#: encoderconfigimp.cpp:128
+#, fuzzy
+#| msgid "Encoder"
+msgid "Add Encoder"
+msgstr "Кодер"
+
+#: encoderconfigimp.cpp:150 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
+msgid "Please select an encoder."
+msgstr "Изберете кодер."
+
+#: encoderconfigimp.cpp:150 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
+#: encoder.cpp:76
+msgid "No Encoder Selected"
+msgstr "Нема избран кодер"
+
+#: encoderconfigimp.cpp:173
+#, fuzzy
+#| msgid "Encoder"
+msgid "Copy Encoder"
+msgstr "Кодер"
+
+#: encoderconfigimp.cpp:194
+msgid "WAV is not allowed to be removed."
+msgstr ""
+
+#: encoderconfigimp.cpp:198
+msgid "Delete encoder?"
+msgstr "Го бришете кодерот?"
+
+#: encoderconfigimp.cpp:198
+msgid "Delete Encoder"
+msgstr "Бришење на кодер"
+
+#: encoderconfigimp.cpp:235
+msgid ""
+"WAV is not allowed to be changed.\n"
+"You can copy it to adjust it to your needs."
+msgstr ""
+
+#: encoderconfigimp.cpp:250
+msgid "Configure Encoder"
+msgstr "Конфигурирај го кодерот"
+
+#: encoderconfigimp.cpp:384 kaudiocreator.cpp:426
+msgid "Encoder Configuration"
+msgstr "Конфигурација на кодерот"
+
 #: encoder.cpp:76
 msgid ""
 "No encoder has been selected.\n"
@@ -132,11 +187,6 @@ msgid ""
 msgstr ""
 "Нема избран кодер.\n"
 "Изберете кодер во конфигурацијата."
-
-#: encoder.cpp:76 encoderconfigimp.cpp:150 encoderconfigimp.cpp:189
-#: encoderconfigimp.cpp:230
-msgid "No Encoder Selected"
-msgstr "Нема избран кодер"
 
 #: encoder.cpp:161
 #, kde-format
@@ -191,56 +241,6 @@ msgstr ""
 "Проверете ги опциите на кодерот.\n"
 "Wav-датотеката беше отстранета.\n"
 "Дали сакате да го видите целосниот излез од кодерот?"
-
-#: encoderconfigimp.cpp:101
-msgid "The default encoder has to accept wav as input."
-msgstr ""
-
-#: encoderconfigimp.cpp:101 encoderconfigimp.cpp:194 encoderconfigimp.cpp:235
-msgid "Not Allowed"
-msgstr ""
-
-#: encoderconfigimp.cpp:128
-#, fuzzy
-#| msgid "Encoder"
-msgid "Add Encoder"
-msgstr "Кодер"
-
-#: encoderconfigimp.cpp:150 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
-msgid "Please select an encoder."
-msgstr "Изберете кодер."
-
-#: encoderconfigimp.cpp:173
-#, fuzzy
-#| msgid "Encoder"
-msgid "Copy Encoder"
-msgstr "Кодер"
-
-#: encoderconfigimp.cpp:194
-msgid "WAV is not allowed to be removed."
-msgstr ""
-
-#: encoderconfigimp.cpp:198
-msgid "Delete encoder?"
-msgstr "Го бришете кодерот?"
-
-#: encoderconfigimp.cpp:198
-msgid "Delete Encoder"
-msgstr "Бришење на кодер"
-
-#: encoderconfigimp.cpp:235
-msgid ""
-"WAV is not allowed to be changed.\n"
-"You can copy it to adjust it to your needs."
-msgstr ""
-
-#: encoderconfigimp.cpp:250
-msgid "Configure Encoder"
-msgstr "Конфигурирај го кодерот"
-
-#: encoderconfigimp.cpp:384 kaudiocreator.cpp:426
-msgid "Encoder Configuration"
-msgstr "Конфигурација на кодерот"
 
 #: general.cpp:61
 #, kde-format
@@ -971,7 +971,7 @@ msgstr "&Автоматски отстрани ги задачите по зав
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_promptIfIncompleteInfo)
 #. i18n: file: kaudiocreator.kcfg:24
 #. i18n: ectx: label, entry (promptIfIncompleteInfo), group (CD)
-#: rc.cpp:223 rc.cpp:482
+#: rc.cpp:223 rc.cpp:497
 msgid "Prompt if information is not complete"
 msgstr "Прашај ако информацијата не е целосна"
 
@@ -1216,7 +1216,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_removeRippedWavs)
 #. i18n: file: kaudiocreator.kcfg:34
 #. i18n: ectx: label, entry (removeRippedWavs), group (General)
-#: rc.cpp:369 rc.cpp:488
+#: rc.cpp:369 rc.cpp:503
 msgid "Remove ripped wav files after encoding"
 msgstr ""
 
@@ -1393,21 +1393,51 @@ msgstr "Ко&ментар"
 msgid "Arti&st's Initial"
 msgstr "Изведувач - Наслов"
 
+#. i18n: file: kaudiocreator_encoders.kcfg:12
+#. i18n: ectx: label, entry (encoderName), group ($(encoder))
+#: rc.cpp:473
+msgid "Name of the encoder"
+msgstr "Име на кодерот"
+
+#. i18n: file: kaudiocreator_encoders.kcfg:16
+#. i18n: ectx: label, entry (commandLine), group ($(encoder))
+#: rc.cpp:476
+msgid "Command line to invoke encoder"
+msgstr "Командна линија за повикување на кодерот"
+
+#. i18n: file: kaudiocreator_encoders.kcfg:20
+#. i18n: ectx: label, entry (extension), group ($(encoder))
+#: rc.cpp:479
+msgid "File extension"
+msgstr "Наставка на датотека"
+
+#. i18n: file: kaudiocreator_encoders.kcfg:24
+#. i18n: ectx: label, entry (inputTypes), group ($(encoder))
+#: rc.cpp:482
+msgid "Input Types"
+msgstr ""
+
+#. i18n: file: kaudiocreator_encoders.kcfg:32
+#. i18n: ectx: label, entry (checkOutput), group ($(encoder))
+#: rc.cpp:485
+msgid "Check output files"
+msgstr ""
+
 #. i18n: file: kaudiocreator.kcfg:12
 #. i18n: ectx: label, entry (performCDDBauto), group (CD)
-#: rc.cpp:473
+#: rc.cpp:488
 msgid "Perform automatic CDDB lookups."
 msgstr "Изведи автоматски пребарувања на CDDB."
 
 #. i18n: file: kaudiocreator.kcfg:16
 #. i18n: ectx: label, entry (autoRip), group (CD)
-#: rc.cpp:476
+#: rc.cpp:491
 msgid "Automatically rip all tracks upon a successful CDDB retrieval"
 msgstr ""
 
 #. i18n: file: kaudiocreator.kcfg:20
 #. i18n: ectx: label, entry (lastUsedDevice), group (CD)
-#: rc.cpp:479
+#: rc.cpp:494
 #, fuzzy
 #| msgid "CD device"
 msgid "Last used CD device"
@@ -1415,19 +1445,19 @@ msgstr "CD-уред"
 
 #. i18n: file: kaudiocreator.kcfg:30
 #. i18n: ectx: label, entry (removeCompletedJobs), group (General)
-#: rc.cpp:485
+#: rc.cpp:500
 msgid "Automatically remove jobs when finished"
 msgstr "Автоматски отстрани ја задачата кога ќе заврши"
 
 #. i18n: file: kaudiocreator.kcfg:38
 #. i18n: ectx: label, entry (replaceInput), group (General)
-#: rc.cpp:491
+#: rc.cpp:506
 msgid "Regexp to match file names with"
 msgstr "Рег. израз за споредување имиња не датотеки"
 
 #. i18n: file: kaudiocreator.kcfg:41
 #. i18n: ectx: label, entry (replaceOutput), group (General)
-#: rc.cpp:494
+#: rc.cpp:509
 msgid "String used to replace the parts that match the selection regexp"
 msgstr ""
 "Низа што се користи за замена за деловите што се совпаѓаат со избраниот рег. "
@@ -1435,7 +1465,7 @@ msgstr ""
 
 #. i18n: file: kaudiocreator.kcfg:67
 #. i18n: ectx: label, entry (defaultEncoder), group (Encoder)
-#: rc.cpp:497
+#: rc.cpp:512
 #, fuzzy
 #| msgid "Current encoder:"
 msgid "Current default encoder"
@@ -1443,99 +1473,69 @@ msgstr "Тековен кодер:"
 
 #. i18n: file: kaudiocreator.kcfg:71
 #. i18n: ectx: label, entry (inputTypesList), group (Encoder)
-#: rc.cpp:500
+#: rc.cpp:515
 msgid "List of available input types"
 msgstr ""
 
 #. i18n: file: kaudiocreator.kcfg:74
 #. i18n: ectx: label, entry (numberOfCpus), group (Encoder)
-#: rc.cpp:503
+#: rc.cpp:518
 msgid "Number of files to encode at a time"
 msgstr "Број на датотеки за кодирање во исто време"
 
 #. i18n: file: kaudiocreator.kcfg:78
 #. i18n: ectx: label, entry (fileFormat), group (Encoder)
-#: rc.cpp:506
+#: rc.cpp:521
 msgid "Location pattern for encoded files"
 msgstr "Шаблон за локација за кодираните датотеки"
 
 #. i18n: file: kaudiocreator.kcfg:82
 #. i18n: ectx: label, entry (NiceLevel), group (Encoder)
-#: rc.cpp:509
+#: rc.cpp:524
 msgid "Encoder priority"
 msgstr "Приоритет на кодерот"
 
 #. i18n: file: kaudiocreator.kcfg:88
 #. i18n: ectx: label, entry (FullDecoderDebug), group (Encoder)
-#: rc.cpp:512
+#: rc.cpp:527
 msgid "Enable full decoder debugging"
 msgstr ""
 
 #. i18n: file: kaudiocreator.kcfg:94
 #. i18n: ectx: label, entry (beepAfterRip), group (Ripper)
-#: rc.cpp:515
+#: rc.cpp:530
 #, fuzzy
 msgid "Beep after rip"
 msgstr "Бипни кога ќе заврши секое рипување"
 
 #. i18n: file: kaudiocreator.kcfg:98
 #. i18n: ectx: label, entry (autoEjectAfterRip), group (Ripper)
-#: rc.cpp:518
+#: rc.cpp:533
 #, fuzzy
 msgid "Eject CD after last track is ripped"
 msgstr "Извади го CD-то откако ќе се рипува последната песна"
 
 #. i18n: file: kaudiocreator.kcfg:102
 #. i18n: ectx: label, entry (autoEjectDelay), group (Ripper)
-#: rc.cpp:521
+#: rc.cpp:536
 msgid "Auto-eject delay"
 msgstr "Доцнење на автоматското вадење"
 
 #. i18n: file: kaudiocreator.kcfg:106
 #. i18n: ectx: label, entry (enableTempDir), group (Ripper)
-#: rc.cpp:524
+#: rc.cpp:539
 msgid "Specify temporary directory"
 msgstr "Наведи привремена папка"
 
 #. i18n: file: kaudiocreator.kcfg:110
 #. i18n: ectx: label, entry (tempDir), group (Ripper)
-#: rc.cpp:527
+#: rc.cpp:542
 msgid "Location of temporary directory to use"
 msgstr "Локација на привремената папка за користење"
 
 #. i18n: file: kaudiocreator.kcfg:53
-#: rc.cpp:530
+#: rc.cpp:545
 msgid "Various Artists"
-msgstr ""
-
-#. i18n: file: kaudiocreator_encoders.kcfg:12
-#. i18n: ectx: label, entry (encoderName), group ($(encoder))
-#: rc.cpp:534
-msgid "Name of the encoder"
-msgstr "Име на кодерот"
-
-#. i18n: file: kaudiocreator_encoders.kcfg:16
-#. i18n: ectx: label, entry (commandLine), group ($(encoder))
-#: rc.cpp:537
-msgid "Command line to invoke encoder"
-msgstr "Командна линија за повикување на кодерот"
-
-#. i18n: file: kaudiocreator_encoders.kcfg:20
-#. i18n: ectx: label, entry (extension), group ($(encoder))
-#: rc.cpp:540
-msgid "File extension"
-msgstr "Наставка на датотека"
-
-#. i18n: file: kaudiocreator_encoders.kcfg:24
-#. i18n: ectx: label, entry (inputTypes), group ($(encoder))
-#: rc.cpp:543
-msgid "Input Types"
-msgstr ""
-
-#. i18n: file: kaudiocreator_encoders.kcfg:32
-#. i18n: ectx: label, entry (checkOutput), group ($(encoder))
-#: rc.cpp:546
-msgid "Check output files"
 msgstr ""
 
 #: ripper.cpp:139
