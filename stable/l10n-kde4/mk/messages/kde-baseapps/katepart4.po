@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-01-21 04:22+0100\n"
+"POT-Creation-Date: 2012-01-29 13:27+0100\n"
 "PO-Revision-Date: 2009-01-08 12:55+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -247,7 +247,7 @@ msgstr[2] " знаци"
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:12
 #. i18n: ectx: property (title), widget (QGroupBox, gbViInputMode)
 #: dialogs/katedialogs.cpp:676 dialogs/katedialogs.cpp:753
-#: dialogs/katedialogs.cpp:916 rc.cpp:137 rc.cpp:715
+#: dialogs/katedialogs.cpp:916 rc.cpp:137 rc.cpp:544
 msgid "General"
 msgstr "Општо"
 
@@ -305,7 +305,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:110
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/katedialogs.cpp:917 rc.cpp:694
+#: dialogs/katedialogs.cpp:917 rc.cpp:523
 msgid "Advanced"
 msgstr "Напредно"
 
@@ -694,7 +694,7 @@ msgstr "Својства на %1"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:66
 #. i18n: ectx: property (title), widget (QGroupBox, gbProperties)
-#: mode/katemodeconfigpage.cpp:284 rc.cpp:353
+#: mode/katemodeconfigpage.cpp:284 rc.cpp:659
 msgid "Properties"
 msgstr "Својства"
 
@@ -887,6 +887,15 @@ msgstr "Грешка: %1"
 msgid "Error loading script %1"
 msgstr ""
 
+#: script/katescriptmanager.cpp:339 script/katescriptmanager.cpp:352
+#, fuzzy, kde-format
+msgid "Command not found: %1"
+msgstr "Наредбата не е пронајдена"
+
+#: script/katescriptmanager.cpp:349
+msgid "Reload all JavaScript files (indenters, command line scripts, etc)."
+msgstr ""
+
 #: script/katescriptconsole.cpp:61
 msgid "Error: can't open utils.js"
 msgstr ""
@@ -907,15 +916,6 @@ msgstr "Извршување"
 
 #: script/katescriptconsole.cpp:147
 msgid "There's no code to execute"
-msgstr ""
-
-#: script/katescriptmanager.cpp:339 script/katescriptmanager.cpp:352
-#, fuzzy, kde-format
-msgid "Command not found: %1"
-msgstr "Наредбата не е пронајдена"
-
-#: script/katescriptmanager.cpp:349
-msgid "Reload all JavaScript files (indenters, command line scripts, etc)."
 msgstr ""
 
 #: search/katesearchbar.cpp:76
@@ -1137,66 +1137,6 @@ msgstr "&Секција:"
 msgid "The files are identical."
 msgstr ""
 
-#: syntax/katehighlight.cpp:82
-#, fuzzy
-msgctxt "Syntax highlighting"
-msgid "None"
-msgstr "Ниедно"
-
-#: syntax/katehighlight.cpp:734
-msgid "Normal Text"
-msgstr "Нормален текст"
-
-#: syntax/katehighlight.cpp:896
-#, fuzzy, kde-format
-msgid ""
-"<b>%1</b>: Deprecated syntax. Attribute (%2) not addressed by symbolic "
-"name<br />"
-msgstr ""
-"<b>%1</b>: Непрепорачлива синтакса. Атрибутот (%2) не е адресиран со "
-"симболичкото име<br />"
-
-#: syntax/katehighlight.cpp:1419
-#, fuzzy, kde-format
-msgid "<b>%1</b>: Deprecated syntax. Context %2 has no symbolic name<br />"
-msgstr ""
-"<b>%1</b>: Непрепорачлива синтакса. Контекстот %2 нема симболичко име<br />"
-
-#: syntax/katehighlight.cpp:1505
-#, kde-format
-msgid ""
-"<B>%1</B>:Deprecated syntax. Context %2 not addressed by a symbolic name"
-msgstr ""
-"<b>%1</b>: Непрепорачлива синтакса. Контекстот %2 не е адресиран со "
-"симболичко име<br />"
-
-#: syntax/katehighlight.cpp:1649
-msgid ""
-"There were warning(s) and/or error(s) while parsing the syntax highlighting "
-"configuration."
-msgstr ""
-"Имаше предупредувања и/или грешки додека се анализираше конфигурацијата на "
-"синтаксичкото означување."
-
-#: syntax/katehighlight.cpp:1651
-msgid "Kate Syntax Highlighting Parser"
-msgstr "Kate Анализатор на синтаксички означувања"
-
-#: syntax/katehighlight.cpp:1813
-msgid ""
-"Since there has been an error parsing the highlighting description, this "
-"highlighting will be disabled"
-msgstr ""
-"Бидејки имаше грешка при анализата на описот за означување, ова означување "
-"ќе биде оневозможено."
-
-#: syntax/katehighlight.cpp:2039
-#, kde-format
-msgid ""
-"<b>%1</b>: Specified multiline comment region (%2) could not be resolved<br /"
-">"
-msgstr ""
-
 #: syntax/katesyntaxdocument.cpp:84
 #, fuzzy, kde-format
 msgid ""
@@ -1301,6 +1241,159 @@ msgstr "Маркер на регион"
 msgctxt "@item:intable Text context"
 msgid "Error"
 msgstr "Грешка:"
+
+#: syntax/katehighlight.cpp:82
+#, fuzzy
+msgctxt "Syntax highlighting"
+msgid "None"
+msgstr "Ниедно"
+
+#: syntax/katehighlight.cpp:734
+msgid "Normal Text"
+msgstr "Нормален текст"
+
+#: syntax/katehighlight.cpp:896
+#, fuzzy, kde-format
+msgid ""
+"<b>%1</b>: Deprecated syntax. Attribute (%2) not addressed by symbolic "
+"name<br />"
+msgstr ""
+"<b>%1</b>: Непрепорачлива синтакса. Атрибутот (%2) не е адресиран со "
+"симболичкото име<br />"
+
+#: syntax/katehighlight.cpp:1419
+#, fuzzy, kde-format
+msgid "<b>%1</b>: Deprecated syntax. Context %2 has no symbolic name<br />"
+msgstr ""
+"<b>%1</b>: Непрепорачлива синтакса. Контекстот %2 нема симболичко име<br />"
+
+#: syntax/katehighlight.cpp:1505
+#, kde-format
+msgid ""
+"<B>%1</B>:Deprecated syntax. Context %2 not addressed by a symbolic name"
+msgstr ""
+"<b>%1</b>: Непрепорачлива синтакса. Контекстот %2 не е адресиран со "
+"симболичко име<br />"
+
+#: syntax/katehighlight.cpp:1649
+msgid ""
+"There were warning(s) and/or error(s) while parsing the syntax highlighting "
+"configuration."
+msgstr ""
+"Имаше предупредувања и/или грешки додека се анализираше конфигурацијата на "
+"синтаксичкото означување."
+
+#: syntax/katehighlight.cpp:1651
+msgid "Kate Syntax Highlighting Parser"
+msgstr "Kate Анализатор на синтаксички означувања"
+
+#: syntax/katehighlight.cpp:1813
+msgid ""
+"Since there has been an error parsing the highlighting description, this "
+"highlighting will be disabled"
+msgstr ""
+"Бидејки имаше грешка при анализата на описот за означување, ова означување "
+"ќе биде оневозможено."
+
+#: syntax/katehighlight.cpp:2039
+#, kde-format
+msgid ""
+"<b>%1</b>: Specified multiline comment region (%2) could not be resolved<br /"
+">"
+msgstr ""
+
+#: utils/katestyletreewidget.cpp:132
+msgctxt "@title:column Meaning of text in editor"
+msgid "Context"
+msgstr "Контекст"
+
+#: utils/katestyletreewidget.cpp:132
+msgctxt "@title:column Text style"
+msgid "Normal"
+msgstr "Нормално"
+
+#: utils/katestyletreewidget.cpp:132
+msgctxt "@title:column Text style"
+msgid "Selected"
+msgstr "Избрано"
+
+#: utils/katestyletreewidget.cpp:132
+msgctxt "@title:column Text style"
+msgid "Background"
+msgstr "Подлога"
+
+#: utils/katestyletreewidget.cpp:132
+msgctxt "@title:column Text style"
+msgid "Background Selected"
+msgstr "Подлога на избрано"
+
+#: utils/katestyletreewidget.cpp:134
+msgid "Use Default Style"
+msgstr "Користи почетен стил"
+
+#: utils/katestyletreewidget.cpp:222
+msgid "&Bold"
+msgstr "&Задебелено"
+
+#: utils/katestyletreewidget.cpp:227
+msgid "&Italic"
+msgstr "&Закосено"
+
+#: utils/katestyletreewidget.cpp:232
+msgid "&Underline"
+msgstr "&Подвлечено"
+
+#: utils/katestyletreewidget.cpp:237
+msgid "S&trikeout"
+msgstr "Прецр&тано"
+
+#: utils/katestyletreewidget.cpp:244
+msgid "Normal &Color..."
+msgstr "Нормална &боја..."
+
+#: utils/katestyletreewidget.cpp:247
+msgid "&Selected Color..."
+msgstr "Боја на &избрано..."
+
+#: utils/katestyletreewidget.cpp:250
+msgid "&Background Color..."
+msgstr "Боја на &подлога..."
+
+#: utils/katestyletreewidget.cpp:253
+msgid "S&elected Background Color..."
+msgstr "Боја на подлога на &избрано..."
+
+#: utils/katestyletreewidget.cpp:265
+msgid "Unset Background Color"
+msgstr "Тргни ја бојата на подлога"
+
+#: utils/katestyletreewidget.cpp:269
+msgid "Unset Selected Background Color"
+msgstr "Тргни ја бојата на подлога на избрано"
+
+#: utils/katestyletreewidget.cpp:276
+msgid "Use &Default Style"
+msgstr "Користи &почетен стил"
+
+#: utils/katestyletreewidget.cpp:388
+#, fuzzy
+#| msgctxt "No text or background colour set"
+#| msgid "None set"
+msgctxt "No text or background color set"
+msgid "None set"
+msgstr "Не е поставено"
+
+#: utils/katestyletreewidget.cpp:606
+msgid ""
+"\"Use Default Style\" will be automatically unset when you change any style "
+"properties."
+msgstr ""
+"„Користи почетен стил“ ќе биде автоматски тргнато кога ќе промените било кои "
+"својства на стиловите."
+
+#: utils/katestyletreewidget.cpp:607
+msgid "Kate Styles"
+msgstr "Kate Стилови"
 
 #: utils/kateautoindent.cpp:75
 msgctxt "Autoindent mode"
@@ -1452,6 +1545,347 @@ msgid_plural "%1 replacements done on %2"
 msgstr[0] "Направена е %1 замена"
 msgstr[1] "Направени се %1 замени"
 msgstr[2] "Направени се %1 замени"
+
+#: utils/kateglobal.cpp:64
+msgid "Kate Part"
+msgstr "Kate Part"
+
+#: utils/kateglobal.cpp:65
+msgid "Embeddable editor component"
+msgstr "Вградлива уредувачка компонента"
+
+#: utils/kateglobal.cpp:66
+#, fuzzy
+#| msgid "(c) 2000-2005 The Kate Authors"
+msgid "(c) 2000-2009 The Kate Authors"
+msgstr "(c) 2000-2005 авторите на Kate"
+
+#: utils/kateglobal.cpp:79
+msgid "Christoph Cullmann"
+msgstr "Christoph Cullmann"
+
+#: utils/kateglobal.cpp:79
+msgid "Maintainer"
+msgstr "Одржувач"
+
+#: utils/kateglobal.cpp:80
+msgid "Dominik Haumann"
+msgstr "Dominik Haumann"
+
+#: utils/kateglobal.cpp:80 utils/kateglobal.cpp:81 utils/kateglobal.cpp:84
+#: utils/kateglobal.cpp:87 utils/kateglobal.cpp:92
+msgid "Core Developer"
+msgstr "Развивач на јадрото"
+
+#: utils/kateglobal.cpp:81
+msgid "Joseph Wenninger"
+msgstr "Joseph Wenninger"
+
+#: utils/kateglobal.cpp:82
+msgid "Erlend Hamberg"
+msgstr ""
+
+#: utils/kateglobal.cpp:83
+msgid "Bernhard Beschow"
+msgstr ""
+
+#: utils/kateglobal.cpp:83 utils/kateglobal.cpp:99
+msgid "Developer"
+msgstr "Развивач"
+
+#: utils/kateglobal.cpp:84
+msgid "Anders Lund"
+msgstr "Anders Lund"
+
+#: utils/kateglobal.cpp:85
+msgid "Michel Ludwig"
+msgstr ""
+
+#: utils/kateglobal.cpp:85
+msgid "On-the-fly spell checking"
+msgstr ""
+
+#: utils/kateglobal.cpp:86
+msgid "Pascal Létourneau"
+msgstr ""
+
+#: utils/kateglobal.cpp:86
+msgid "Large scale bug fixing"
+msgstr ""
+
+#: utils/kateglobal.cpp:87
+msgid "Hamish Rodda"
+msgstr "Hamish Rodda"
+
+#: utils/kateglobal.cpp:88
+msgid "Waldo Bastian"
+msgstr "Waldo Bastian"
+
+#: utils/kateglobal.cpp:88
+msgid "The cool buffersystem"
+msgstr "Опасниот бафер-систем"
+
+#: utils/kateglobal.cpp:89
+msgid "Charles Samuels"
+msgstr "Charles Samuels"
+
+#: utils/kateglobal.cpp:89
+msgid "The Editing Commands"
+msgstr "Команди за уредување"
+
+#: utils/kateglobal.cpp:90
+msgid "Matt Newell"
+msgstr "Matt Newell"
+
+#: utils/kateglobal.cpp:90
+msgid "Testing, ..."
+msgstr "Тестирање, ..."
+
+#: utils/kateglobal.cpp:91
+msgid "Michael Bartl"
+msgstr "Michael Bartl"
+
+#: utils/kateglobal.cpp:91
+msgid "Former Core Developer"
+msgstr "Поранешен развивач на јадро"
+
+#: utils/kateglobal.cpp:92
+msgid "Michael McCallum"
+msgstr "Michael McCallum"
+
+#: utils/kateglobal.cpp:93
+msgid "Michael Koch"
+msgstr "Michael Koch"
+
+#: utils/kateglobal.cpp:93
+msgid "KWrite port to KParts"
+msgstr "KWrite порт на KParts"
+
+#: utils/kateglobal.cpp:94
+msgid "Christian Gebauer"
+msgstr "Christian Gebauer"
+
+#: utils/kateglobal.cpp:95
+msgid "Simon Hausmann"
+msgstr "Simon Hausmann"
+
+#: utils/kateglobal.cpp:96
+msgid "Glen Parker"
+msgstr "Glen Parker"
+
+#: utils/kateglobal.cpp:96
+msgid "KWrite Undo History, Kspell integration"
+msgstr "KWrite историја на команди, интеграција со Kspell"
+
+#: utils/kateglobal.cpp:97
+msgid "Scott Manson"
+msgstr "Scott Manson"
+
+#: utils/kateglobal.cpp:97
+msgid "KWrite XML Syntax highlighting support"
+msgstr "Поддршка за означување на XML синтакса во KWrite"
+
+#: utils/kateglobal.cpp:98
+msgid "John Firebaugh"
+msgstr "John Firebaugh"
+
+#: utils/kateglobal.cpp:98
+msgid "Patches and more"
+msgstr "Закрпи и повеќе"
+
+#: utils/kateglobal.cpp:99
+msgid "Andreas Kling"
+msgstr "Andreas Kling"
+
+#: utils/kateglobal.cpp:100
+msgid "Mirko Stocker"
+msgstr "Mirko Stocker"
+
+#: utils/kateglobal.cpp:100
+msgid "Various bugfixes"
+msgstr "Разни поправки на грешки"
+
+#: utils/kateglobal.cpp:101
+msgid "Matthew Woehlke"
+msgstr "Matthew Woehlke"
+
+#: utils/kateglobal.cpp:101
+msgid "Selection, KColorScheme integration"
+msgstr ""
+
+#: utils/kateglobal.cpp:102
+msgid "Sebastian Pipping"
+msgstr "Sebastian Pipping"
+
+#: utils/kateglobal.cpp:102
+msgid "Search bar back- and front-end"
+msgstr ""
+
+#: utils/kateglobal.cpp:103
+#, fuzzy
+#| msgid "Jochen Wilhemly"
+msgid "Jochen Wilhelmy"
+msgstr "Jochen Wilhemly"
+
+#: utils/kateglobal.cpp:103
+#, fuzzy
+#| msgid "KWrite Author"
+msgid "Original KWrite Author"
+msgstr "Автор на КWrite "
+
+#: utils/kateglobal.cpp:105
+msgid "Matteo Merli"
+msgstr "Matteo Merli"
+
+#: utils/kateglobal.cpp:105
+msgid "Highlighting for RPM Spec-Files, Perl, Diff and more"
+msgstr "Означување за RPM spec датотеки, Perl, Diff и повеќе"
+
+#: utils/kateglobal.cpp:106
+msgid "Rocky Scaletta"
+msgstr "Rocky Scaletta"
+
+#: utils/kateglobal.cpp:106
+msgid "Highlighting for VHDL"
+msgstr "Означување за VHDL"
+
+#: utils/kateglobal.cpp:107
+msgid "Yury Lebedev"
+msgstr "Yury Lebedev"
+
+#: utils/kateglobal.cpp:107
+msgid "Highlighting for SQL"
+msgstr "Означување за SQL"
+
+#: utils/kateglobal.cpp:108
+msgid "Chris Ross"
+msgstr "Chris Ross"
+
+#: utils/kateglobal.cpp:108
+msgid "Highlighting for Ferite"
+msgstr "Означување за Ferite"
+
+#: utils/kateglobal.cpp:109
+msgid "Nick Roux"
+msgstr "Nick Roux"
+
+#: utils/kateglobal.cpp:109
+msgid "Highlighting for ILERPG"
+msgstr "Означување за ILERPG"
+
+#: utils/kateglobal.cpp:110
+msgid "Carsten Niehaus"
+msgstr "Carsten Niehaus"
+
+#: utils/kateglobal.cpp:110
+msgid "Highlighting for LaTeX"
+msgstr "Означување за LaTeX"
+
+#: utils/kateglobal.cpp:111
+msgid "Per Wigren"
+msgstr "Per Wigren"
+
+#: utils/kateglobal.cpp:111
+msgid "Highlighting for Makefiles, Python"
+msgstr "Означување за Make датотеки, Python"
+
+#: utils/kateglobal.cpp:112
+msgid "Jan Fritz"
+msgstr "Jan Fritz"
+
+#: utils/kateglobal.cpp:112
+msgid "Highlighting for Python"
+msgstr "Означување за Phyton"
+
+#: utils/kateglobal.cpp:113
+msgid "Daniel Naber"
+msgstr "Daniel Naber"
+
+#: utils/kateglobal.cpp:114
+msgid "Roland Pabel"
+msgstr "Roland Pabel"
+
+#: utils/kateglobal.cpp:114
+msgid "Highlighting for Scheme"
+msgstr "Означување за Scheme"
+
+#: utils/kateglobal.cpp:115
+msgid "Cristi Dumitrescu"
+msgstr "Cristi Dumitrescu"
+
+#: utils/kateglobal.cpp:115
+msgid "PHP Keyword/Datatype list"
+msgstr "Клучен збор од PHP/Листа на податочни типови"
+
+#: utils/kateglobal.cpp:116
+msgid "Carsten Pfeiffer"
+msgstr "Carsten Pfeiffer"
+
+#: utils/kateglobal.cpp:116
+msgid "Very nice help"
+msgstr "Многу убава помош"
+
+#: utils/kateglobal.cpp:117
+msgid "Bruno Massa"
+msgstr "Bruno Massa"
+
+#: utils/kateglobal.cpp:117
+msgid "Highlighting for Lua"
+msgstr "Означување за Lua"
+
+#: utils/kateglobal.cpp:119
+msgid "All people who have contributed and I have forgotten to mention"
+msgstr "Сите луѓе кои помогнаа и кои заборавив да ги спомнам"
+
+#: utils/kateglobal.cpp:121 rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Божидар Проевски"
+
+#: utils/kateglobal.cpp:121 rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "bobibobi@freemail.com.mk"
+
+#: utils/kateglobal.cpp:284
+msgid "Configure"
+msgstr "Конфигурирање"
+
+#: utils/kateglobal.cpp:366 utils/kateglobal.cpp:392
+msgid "Appearance"
+msgstr "Изглед"
+
+#: utils/kateglobal.cpp:369
+msgid "Fonts & Colors"
+msgstr "Фонтови и бои"
+
+#: utils/kateglobal.cpp:372
+msgid "Editing"
+msgstr "Уредување"
+
+#: utils/kateglobal.cpp:375
+msgid "Open/Save"
+msgstr "Отвори/зачувај"
+
+#: utils/kateglobal.cpp:378
+msgid "Extensions"
+msgstr "Екстензии"
+
+#: utils/kateglobal.cpp:395
+msgid "Font & Color Schemas"
+msgstr "Шеми за фонтови и бои"
+
+#: utils/kateglobal.cpp:398
+msgid "Editing Options"
+msgstr "Опции за уредување"
+
+#: utils/kateglobal.cpp:401
+msgid "File Opening & Saving"
+msgstr "Отворање и зачувување на датотеки"
+
+#: utils/kateglobal.cpp:404
+msgid "Extensions Manager"
+msgstr "Менаџер на екстензии"
 
 #: utils/kateprinter.cpp:246
 msgid "(Selection of) "
@@ -1850,7 +2284,7 @@ msgstr "&Нов..."
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:44
 #. i18n: ectx: property (text), widget (QPushButton, btnDelete)
-#: utils/kateschema.cpp:873 rc.cpp:350
+#: utils/kateschema.cpp:873 rc.cpp:656
 msgid "&Delete"
 msgstr "Избриши"
 
@@ -1939,685 +2373,6 @@ msgstr "Име:"
 #: utils/kateschema.cpp:1133
 msgid "New Schema"
 msgstr "Нова шема"
-
-#: utils/katestyletreewidget.cpp:132
-msgctxt "@title:column Meaning of text in editor"
-msgid "Context"
-msgstr "Контекст"
-
-#: utils/katestyletreewidget.cpp:132
-msgctxt "@title:column Text style"
-msgid "Normal"
-msgstr "Нормално"
-
-#: utils/katestyletreewidget.cpp:132
-msgctxt "@title:column Text style"
-msgid "Selected"
-msgstr "Избрано"
-
-#: utils/katestyletreewidget.cpp:132
-msgctxt "@title:column Text style"
-msgid "Background"
-msgstr "Подлога"
-
-#: utils/katestyletreewidget.cpp:132
-msgctxt "@title:column Text style"
-msgid "Background Selected"
-msgstr "Подлога на избрано"
-
-#: utils/katestyletreewidget.cpp:134
-msgid "Use Default Style"
-msgstr "Користи почетен стил"
-
-#: utils/katestyletreewidget.cpp:222
-msgid "&Bold"
-msgstr "&Задебелено"
-
-#: utils/katestyletreewidget.cpp:227
-msgid "&Italic"
-msgstr "&Закосено"
-
-#: utils/katestyletreewidget.cpp:232
-msgid "&Underline"
-msgstr "&Подвлечено"
-
-#: utils/katestyletreewidget.cpp:237
-msgid "S&trikeout"
-msgstr "Прецр&тано"
-
-#: utils/katestyletreewidget.cpp:244
-msgid "Normal &Color..."
-msgstr "Нормална &боја..."
-
-#: utils/katestyletreewidget.cpp:247
-msgid "&Selected Color..."
-msgstr "Боја на &избрано..."
-
-#: utils/katestyletreewidget.cpp:250
-msgid "&Background Color..."
-msgstr "Боја на &подлога..."
-
-#: utils/katestyletreewidget.cpp:253
-msgid "S&elected Background Color..."
-msgstr "Боја на подлога на &избрано..."
-
-#: utils/katestyletreewidget.cpp:265
-msgid "Unset Background Color"
-msgstr "Тргни ја бојата на подлога"
-
-#: utils/katestyletreewidget.cpp:269
-msgid "Unset Selected Background Color"
-msgstr "Тргни ја бојата на подлога на избрано"
-
-#: utils/katestyletreewidget.cpp:276
-msgid "Use &Default Style"
-msgstr "Користи &почетен стил"
-
-#: utils/katestyletreewidget.cpp:388
-#, fuzzy
-#| msgctxt "No text or background colour set"
-#| msgid "None set"
-msgctxt "No text or background color set"
-msgid "None set"
-msgstr "Не е поставено"
-
-#: utils/katestyletreewidget.cpp:606
-msgid ""
-"\"Use Default Style\" will be automatically unset when you change any style "
-"properties."
-msgstr ""
-"„Користи почетен стил“ ќе биде автоматски тргнато кога ќе промените било кои "
-"својства на стиловите."
-
-#: utils/katestyletreewidget.cpp:607
-msgid "Kate Styles"
-msgstr "Kate Стилови"
-
-#: utils/kateglobal.cpp:64
-msgid "Kate Part"
-msgstr "Kate Part"
-
-#: utils/kateglobal.cpp:65
-msgid "Embeddable editor component"
-msgstr "Вградлива уредувачка компонента"
-
-#: utils/kateglobal.cpp:66
-#, fuzzy
-#| msgid "(c) 2000-2005 The Kate Authors"
-msgid "(c) 2000-2009 The Kate Authors"
-msgstr "(c) 2000-2005 авторите на Kate"
-
-#: utils/kateglobal.cpp:79
-msgid "Christoph Cullmann"
-msgstr "Christoph Cullmann"
-
-#: utils/kateglobal.cpp:79
-msgid "Maintainer"
-msgstr "Одржувач"
-
-#: utils/kateglobal.cpp:80
-msgid "Dominik Haumann"
-msgstr "Dominik Haumann"
-
-#: utils/kateglobal.cpp:80 utils/kateglobal.cpp:81 utils/kateglobal.cpp:84
-#: utils/kateglobal.cpp:87 utils/kateglobal.cpp:92
-msgid "Core Developer"
-msgstr "Развивач на јадрото"
-
-#: utils/kateglobal.cpp:81
-msgid "Joseph Wenninger"
-msgstr "Joseph Wenninger"
-
-#: utils/kateglobal.cpp:82
-msgid "Erlend Hamberg"
-msgstr ""
-
-#: utils/kateglobal.cpp:83
-msgid "Bernhard Beschow"
-msgstr ""
-
-#: utils/kateglobal.cpp:83 utils/kateglobal.cpp:99
-msgid "Developer"
-msgstr "Развивач"
-
-#: utils/kateglobal.cpp:84
-msgid "Anders Lund"
-msgstr "Anders Lund"
-
-#: utils/kateglobal.cpp:85
-msgid "Michel Ludwig"
-msgstr ""
-
-#: utils/kateglobal.cpp:85
-msgid "On-the-fly spell checking"
-msgstr ""
-
-#: utils/kateglobal.cpp:86
-msgid "Pascal Létourneau"
-msgstr ""
-
-#: utils/kateglobal.cpp:86
-msgid "Large scale bug fixing"
-msgstr ""
-
-#: utils/kateglobal.cpp:87
-msgid "Hamish Rodda"
-msgstr "Hamish Rodda"
-
-#: utils/kateglobal.cpp:88
-msgid "Waldo Bastian"
-msgstr "Waldo Bastian"
-
-#: utils/kateglobal.cpp:88
-msgid "The cool buffersystem"
-msgstr "Опасниот бафер-систем"
-
-#: utils/kateglobal.cpp:89
-msgid "Charles Samuels"
-msgstr "Charles Samuels"
-
-#: utils/kateglobal.cpp:89
-msgid "The Editing Commands"
-msgstr "Команди за уредување"
-
-#: utils/kateglobal.cpp:90
-msgid "Matt Newell"
-msgstr "Matt Newell"
-
-#: utils/kateglobal.cpp:90
-msgid "Testing, ..."
-msgstr "Тестирање, ..."
-
-#: utils/kateglobal.cpp:91
-msgid "Michael Bartl"
-msgstr "Michael Bartl"
-
-#: utils/kateglobal.cpp:91
-msgid "Former Core Developer"
-msgstr "Поранешен развивач на јадро"
-
-#: utils/kateglobal.cpp:92
-msgid "Michael McCallum"
-msgstr "Michael McCallum"
-
-#: utils/kateglobal.cpp:93
-msgid "Michael Koch"
-msgstr "Michael Koch"
-
-#: utils/kateglobal.cpp:93
-msgid "KWrite port to KParts"
-msgstr "KWrite порт на KParts"
-
-#: utils/kateglobal.cpp:94
-msgid "Christian Gebauer"
-msgstr "Christian Gebauer"
-
-#: utils/kateglobal.cpp:95
-msgid "Simon Hausmann"
-msgstr "Simon Hausmann"
-
-#: utils/kateglobal.cpp:96
-msgid "Glen Parker"
-msgstr "Glen Parker"
-
-#: utils/kateglobal.cpp:96
-msgid "KWrite Undo History, Kspell integration"
-msgstr "KWrite историја на команди, интеграција со Kspell"
-
-#: utils/kateglobal.cpp:97
-msgid "Scott Manson"
-msgstr "Scott Manson"
-
-#: utils/kateglobal.cpp:97
-msgid "KWrite XML Syntax highlighting support"
-msgstr "Поддршка за означување на XML синтакса во KWrite"
-
-#: utils/kateglobal.cpp:98
-msgid "John Firebaugh"
-msgstr "John Firebaugh"
-
-#: utils/kateglobal.cpp:98
-msgid "Patches and more"
-msgstr "Закрпи и повеќе"
-
-#: utils/kateglobal.cpp:99
-msgid "Andreas Kling"
-msgstr "Andreas Kling"
-
-#: utils/kateglobal.cpp:100
-msgid "Mirko Stocker"
-msgstr "Mirko Stocker"
-
-#: utils/kateglobal.cpp:100
-msgid "Various bugfixes"
-msgstr "Разни поправки на грешки"
-
-#: utils/kateglobal.cpp:101
-msgid "Matthew Woehlke"
-msgstr "Matthew Woehlke"
-
-#: utils/kateglobal.cpp:101
-msgid "Selection, KColorScheme integration"
-msgstr ""
-
-#: utils/kateglobal.cpp:102
-msgid "Sebastian Pipping"
-msgstr "Sebastian Pipping"
-
-#: utils/kateglobal.cpp:102
-msgid "Search bar back- and front-end"
-msgstr ""
-
-#: utils/kateglobal.cpp:103
-#, fuzzy
-#| msgid "Jochen Wilhemly"
-msgid "Jochen Wilhelmy"
-msgstr "Jochen Wilhemly"
-
-#: utils/kateglobal.cpp:103
-#, fuzzy
-#| msgid "KWrite Author"
-msgid "Original KWrite Author"
-msgstr "Автор на КWrite "
-
-#: utils/kateglobal.cpp:105
-msgid "Matteo Merli"
-msgstr "Matteo Merli"
-
-#: utils/kateglobal.cpp:105
-msgid "Highlighting for RPM Spec-Files, Perl, Diff and more"
-msgstr "Означување за RPM spec датотеки, Perl, Diff и повеќе"
-
-#: utils/kateglobal.cpp:106
-msgid "Rocky Scaletta"
-msgstr "Rocky Scaletta"
-
-#: utils/kateglobal.cpp:106
-msgid "Highlighting for VHDL"
-msgstr "Означување за VHDL"
-
-#: utils/kateglobal.cpp:107
-msgid "Yury Lebedev"
-msgstr "Yury Lebedev"
-
-#: utils/kateglobal.cpp:107
-msgid "Highlighting for SQL"
-msgstr "Означување за SQL"
-
-#: utils/kateglobal.cpp:108
-msgid "Chris Ross"
-msgstr "Chris Ross"
-
-#: utils/kateglobal.cpp:108
-msgid "Highlighting for Ferite"
-msgstr "Означување за Ferite"
-
-#: utils/kateglobal.cpp:109
-msgid "Nick Roux"
-msgstr "Nick Roux"
-
-#: utils/kateglobal.cpp:109
-msgid "Highlighting for ILERPG"
-msgstr "Означување за ILERPG"
-
-#: utils/kateglobal.cpp:110
-msgid "Carsten Niehaus"
-msgstr "Carsten Niehaus"
-
-#: utils/kateglobal.cpp:110
-msgid "Highlighting for LaTeX"
-msgstr "Означување за LaTeX"
-
-#: utils/kateglobal.cpp:111
-msgid "Per Wigren"
-msgstr "Per Wigren"
-
-#: utils/kateglobal.cpp:111
-msgid "Highlighting for Makefiles, Python"
-msgstr "Означување за Make датотеки, Python"
-
-#: utils/kateglobal.cpp:112
-msgid "Jan Fritz"
-msgstr "Jan Fritz"
-
-#: utils/kateglobal.cpp:112
-msgid "Highlighting for Python"
-msgstr "Означување за Phyton"
-
-#: utils/kateglobal.cpp:113
-msgid "Daniel Naber"
-msgstr "Daniel Naber"
-
-#: utils/kateglobal.cpp:114
-msgid "Roland Pabel"
-msgstr "Roland Pabel"
-
-#: utils/kateglobal.cpp:114
-msgid "Highlighting for Scheme"
-msgstr "Означување за Scheme"
-
-#: utils/kateglobal.cpp:115
-msgid "Cristi Dumitrescu"
-msgstr "Cristi Dumitrescu"
-
-#: utils/kateglobal.cpp:115
-msgid "PHP Keyword/Datatype list"
-msgstr "Клучен збор од PHP/Листа на податочни типови"
-
-#: utils/kateglobal.cpp:116
-msgid "Carsten Pfeiffer"
-msgstr "Carsten Pfeiffer"
-
-#: utils/kateglobal.cpp:116
-msgid "Very nice help"
-msgstr "Многу убава помош"
-
-#: utils/kateglobal.cpp:117
-msgid "Bruno Massa"
-msgstr "Bruno Massa"
-
-#: utils/kateglobal.cpp:117
-msgid "Highlighting for Lua"
-msgstr "Означување за Lua"
-
-#: utils/kateglobal.cpp:119
-msgid "All people who have contributed and I have forgotten to mention"
-msgstr "Сите луѓе кои помогнаа и кои заборавив да ги спомнам"
-
-#: utils/kateglobal.cpp:121 rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Божидар Проевски"
-
-#: utils/kateglobal.cpp:121 rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "bobibobi@freemail.com.mk"
-
-#: utils/kateglobal.cpp:284
-msgid "Configure"
-msgstr "Конфигурирање"
-
-#: utils/kateglobal.cpp:366 utils/kateglobal.cpp:392
-msgid "Appearance"
-msgstr "Изглед"
-
-#: utils/kateglobal.cpp:369
-msgid "Fonts & Colors"
-msgstr "Фонтови и бои"
-
-#: utils/kateglobal.cpp:372
-msgid "Editing"
-msgstr "Уредување"
-
-#: utils/kateglobal.cpp:375
-msgid "Open/Save"
-msgstr "Отвори/зачувај"
-
-#: utils/kateglobal.cpp:378
-msgid "Extensions"
-msgstr "Екстензии"
-
-#: utils/kateglobal.cpp:395
-msgid "Font & Color Schemas"
-msgstr "Шеми за фонтови и бои"
-
-#: utils/kateglobal.cpp:398
-msgid "Editing Options"
-msgstr "Опции за уредување"
-
-#: utils/kateglobal.cpp:401
-msgid "File Opening & Saving"
-msgstr "Отворање и зачувување на датотеки"
-
-#: utils/kateglobal.cpp:404
-msgid "Extensions Manager"
-msgstr "Менаџер на екстензии"
-
-#: variableeditor/katehelpbutton.cpp:32
-msgid "Kate Handbook."
-msgstr ""
-
-#: variableeditor/variableeditor.cpp:194
-#, fuzzy
-#| msgid "Struct"
-msgid "true"
-msgstr "Структура"
-
-#: variableeditor/variableeditor.cpp:195
-msgid "false"
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:59
-msgid "Show list of valid variables."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:140
-msgctxt "short translation please"
-msgid "Set auto insertion of brackets on or off."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:146
-msgctxt "short translation please"
-msgid "Set the number of autocenter lines."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:151
-msgctxt "short translation please"
-msgid "Auto insert asterisk in doxygen comments."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:156
-#, fuzzy
-#| msgid "S&elected Background Color..."
-msgctxt "short translation please"
-msgid "Set the document background color."
-msgstr "Боја на подлога на &избрано..."
-
-#: variableeditor/variablelineedit.cpp:161
-msgctxt "short translation please"
-msgid "Pressing backspace in leading whitespace unindents."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:167
-#, fuzzy
-#| msgid "Bl&ock Selection Mode"
-msgctxt "short translation please"
-msgid "Enable block selection mode."
-msgstr "&Режим избирање на блок"
-
-#: variableeditor/variablelineedit.cpp:172
-msgctxt "short translation please"
-msgid "Enable the byte order marker when saving unicode files."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:177
-#, fuzzy
-#| msgid "Select the color scheme to use for the print."
-msgctxt "short translation please"
-msgid "Set the color for the bracket highlight."
-msgstr "Изберете ја шемата на бои што ќе се користи при печатење."
-
-#: variableeditor/variablelineedit.cpp:182
-#, fuzzy
-#| msgid "<p>Sets the background color of the editing area.</p>"
-msgctxt "short translation please"
-msgid "Set the background color for the current line."
-msgstr "<p>Ја поставува бојата на подлога за областа за уредување.</p>"
-
-#: variableeditor/variablelineedit.cpp:188
-msgctxt "short translation please"
-msgid "Set the default dictionary used for spell checking."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:193
-#, fuzzy
-#| msgid "Enable static &word wrap"
-msgctxt "short translation please"
-msgid "Enable dynamic word wrap of long lines."
-msgstr "Овозможи статичко пренесување на зборови"
-
-#: variableeditor/variablelineedit.cpp:198
-#, fuzzy
-#| msgid "Select to End of Line"
-msgctxt "short translation please"
-msgid "Sets the end of line mode."
-msgstr "Избери до крај од линија"
-
-#: variableeditor/variablelineedit.cpp:203
-msgctxt "short translation please"
-msgid "Enable folding markers in the editor border."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:209
-#, fuzzy
-#| msgid "Select the entire text of the current document."
-msgctxt "short translation please"
-msgid "Set the point size of the document font."
-msgstr "Го избира целиот текст на документот."
-
-#: variableeditor/variablelineedit.cpp:214
-#, fuzzy
-#| msgid "Select the entire text of the current document."
-msgctxt "short translation please"
-msgid "Set the font of the document."
-msgstr "Го избира целиот текст на документот."
-
-#: variableeditor/variablelineedit.cpp:226
-#, fuzzy
-#| msgid "Kate Syntax Highlighting Parser"
-msgctxt "short translation please"
-msgid "Set the syntax highlighting."
-msgstr "Kate Анализатор на синтаксички означувања"
-
-#: variableeditor/variablelineedit.cpp:231
-msgctxt "short translation please"
-msgid "Set the icon bar color."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:236
-msgctxt "short translation please"
-msgid "Enable the icon border in the editor view."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:241
-#, fuzzy
-msgctxt "short translation please"
-msgid "Set the auto indentation style."
-msgstr "Прикажи линии за вовлекување"
-
-#: variableeditor/variablelineedit.cpp:247
-msgctxt "short translation please"
-msgid "Set the indentation depth for each indent level."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:252
-msgctxt "short translation please"
-msgid "Allow odd indentation level (no multiple of indent width)."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:257
-#, fuzzy
-#| msgid "Show &line numbers"
-msgctxt "short translation please"
-msgid "Show line numbers."
-msgstr "Покажи ги &броевите на линиите"
-
-#: variableeditor/variablelineedit.cpp:262
-msgctxt "short translation please"
-msgid "Enable overwrite mode in the document."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:267
-msgctxt "short translation please"
-msgid "Enable persistent text selection."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:272
-#, fuzzy
-msgctxt "short translation please"
-msgid "Remove trailing spaces when editing a line."
-msgstr "Отстрани &празни места од крајот"
-
-#: variableeditor/variablelineedit.cpp:277
-msgctxt "short translation please"
-msgid "Replace tabs with spaces when saving the document."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:282
-#, fuzzy
-#| msgid "Replace all matches"
-msgctxt "short translation please"
-msgid "Replace tabs with spaces."
-msgstr "Ги заменува сите совпаѓања"
-
-#: variableeditor/variablelineedit.cpp:287
-#, fuzzy
-msgctxt "short translation please"
-msgid "Remove trailing spaces when saving the document."
-msgstr "Отстрани &празни места од крајот"
-
-#: variableeditor/variablelineedit.cpp:293
-#, fuzzy
-#| msgid "Font & Color Schemas"
-msgctxt "short translation please"
-msgid "Set the color scheme."
-msgstr "Шеми за фонтови и бои"
-
-#: variableeditor/variablelineedit.cpp:298
-msgctxt "short translation please"
-msgid "Set the text selection color."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:303
-#, fuzzy
-msgctxt "short translation please"
-msgid "Visualize tabs and trailing spaces."
-msgstr "Правила за означување"
-
-#: variableeditor/variablelineedit.cpp:308
-#, fuzzy
-#| msgid "Auto Completion"
-msgctxt "short translation please"
-msgid "Enable smart home navigation."
-msgstr "Довршување на зборови"
-
-#: variableeditor/variablelineedit.cpp:313
-msgctxt "short translation please"
-msgid "Pressing TAB key indents."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:319
-msgctxt "short translation please"
-msgid "Set the tab display width."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:325
-msgctxt "short translation please"
-msgid "Set the number of undo steps to remember (0 equals infinity)."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:331
-msgctxt "short translation please"
-msgid "Set the word wrap column."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:336
-#, fuzzy
-#| msgid "S&elected Background Color..."
-msgctxt "short translation please"
-msgid "Set the word wrap marker color."
-msgstr "Боја на подлога на &избрано..."
-
-#: variableeditor/variablelineedit.cpp:341
-msgctxt "short translation please"
-msgid "Enable word wrap while typing text."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:346
-msgctxt "short translation please"
-msgid "Wrap the text cursor at the end of a line."
-msgstr ""
 
 #: view/kateviewaccessible.h:66
 msgid "Move To..."
@@ -2929,13 +2684,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbWordWrap)
-#: view/kateview.cpp:508 rc.cpp:659
+#: view/kateview.cpp:508 rc.cpp:488
 msgid "&Dynamic Word Wrap"
 msgstr "&Динамичко пренесување на зборови"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:17
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbWordWrap)
-#: view/kateview.cpp:511 rc.cpp:656
+#: view/kateview.cpp:511 rc.cpp:485
 msgid ""
 "If this option is checked, the text lines will be wrapped at the view border "
 "on the screen."
@@ -3448,12 +3203,6 @@ msgstr "Постави почетен тип за обележување"
 msgid "Disable Annotation Bar"
 msgstr ""
 
-#: vimode/kateviinsertmode.cpp:195 vimode/katevimodebase.cpp:860
-#: vimode/katevinormalmode.cpp:1112
-#, kde-format
-msgid "Nothing in register %1"
-msgstr ""
-
 #: vimode/katevimodebar.cpp:125
 msgid "VI: INSERT MODE"
 msgstr ""
@@ -3478,6 +3227,12 @@ msgstr ""
 msgid "VI: REPLACE"
 msgstr ""
 
+#: vimode/kateviinsertmode.cpp:195 vimode/katevimodebase.cpp:860
+#: vimode/katevinormalmode.cpp:1112
+#, kde-format
+msgid "Nothing in register %1"
+msgstr ""
+
 #: vimode/katevinormalmode.cpp:1429
 #, kde-format
 msgid "'%1' %2,  Hex %3,  Octal %4"
@@ -3488,6 +3243,251 @@ msgstr ""
 #| msgid "Mark Type %1"
 msgid "Mark not set: %1"
 msgstr "%1"
+
+#: variableeditor/katehelpbutton.cpp:32
+msgid "Kate Handbook."
+msgstr ""
+
+#: variableeditor/variableeditor.cpp:194
+#, fuzzy
+#| msgid "Struct"
+msgid "true"
+msgstr "Структура"
+
+#: variableeditor/variableeditor.cpp:195
+msgid "false"
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:59
+msgid "Show list of valid variables."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:140
+msgctxt "short translation please"
+msgid "Set auto insertion of brackets on or off."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:146
+msgctxt "short translation please"
+msgid "Set the number of autocenter lines."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:151
+msgctxt "short translation please"
+msgid "Auto insert asterisk in doxygen comments."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:156
+#, fuzzy
+#| msgid "S&elected Background Color..."
+msgctxt "short translation please"
+msgid "Set the document background color."
+msgstr "Боја на подлога на &избрано..."
+
+#: variableeditor/variablelineedit.cpp:161
+msgctxt "short translation please"
+msgid "Pressing backspace in leading whitespace unindents."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:167
+#, fuzzy
+#| msgid "Bl&ock Selection Mode"
+msgctxt "short translation please"
+msgid "Enable block selection mode."
+msgstr "&Режим избирање на блок"
+
+#: variableeditor/variablelineedit.cpp:172
+msgctxt "short translation please"
+msgid "Enable the byte order marker when saving unicode files."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:177
+#, fuzzy
+#| msgid "Select the color scheme to use for the print."
+msgctxt "short translation please"
+msgid "Set the color for the bracket highlight."
+msgstr "Изберете ја шемата на бои што ќе се користи при печатење."
+
+#: variableeditor/variablelineedit.cpp:182
+#, fuzzy
+#| msgid "<p>Sets the background color of the editing area.</p>"
+msgctxt "short translation please"
+msgid "Set the background color for the current line."
+msgstr "<p>Ја поставува бојата на подлога за областа за уредување.</p>"
+
+#: variableeditor/variablelineedit.cpp:188
+msgctxt "short translation please"
+msgid "Set the default dictionary used for spell checking."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:193
+#, fuzzy
+#| msgid "Enable static &word wrap"
+msgctxt "short translation please"
+msgid "Enable dynamic word wrap of long lines."
+msgstr "Овозможи статичко пренесување на зборови"
+
+#: variableeditor/variablelineedit.cpp:198
+#, fuzzy
+#| msgid "Select to End of Line"
+msgctxt "short translation please"
+msgid "Sets the end of line mode."
+msgstr "Избери до крај од линија"
+
+#: variableeditor/variablelineedit.cpp:203
+msgctxt "short translation please"
+msgid "Enable folding markers in the editor border."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:209
+#, fuzzy
+#| msgid "Select the entire text of the current document."
+msgctxt "short translation please"
+msgid "Set the point size of the document font."
+msgstr "Го избира целиот текст на документот."
+
+#: variableeditor/variablelineedit.cpp:214
+#, fuzzy
+#| msgid "Select the entire text of the current document."
+msgctxt "short translation please"
+msgid "Set the font of the document."
+msgstr "Го избира целиот текст на документот."
+
+#: variableeditor/variablelineedit.cpp:226
+#, fuzzy
+#| msgid "Kate Syntax Highlighting Parser"
+msgctxt "short translation please"
+msgid "Set the syntax highlighting."
+msgstr "Kate Анализатор на синтаксички означувања"
+
+#: variableeditor/variablelineedit.cpp:231
+msgctxt "short translation please"
+msgid "Set the icon bar color."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:236
+msgctxt "short translation please"
+msgid "Enable the icon border in the editor view."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:241
+#, fuzzy
+msgctxt "short translation please"
+msgid "Set the auto indentation style."
+msgstr "Прикажи линии за вовлекување"
+
+#: variableeditor/variablelineedit.cpp:247
+msgctxt "short translation please"
+msgid "Set the indentation depth for each indent level."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:252
+msgctxt "short translation please"
+msgid "Allow odd indentation level (no multiple of indent width)."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:257
+#, fuzzy
+#| msgid "Show &line numbers"
+msgctxt "short translation please"
+msgid "Show line numbers."
+msgstr "Покажи ги &броевите на линиите"
+
+#: variableeditor/variablelineedit.cpp:262
+msgctxt "short translation please"
+msgid "Enable overwrite mode in the document."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:267
+msgctxt "short translation please"
+msgid "Enable persistent text selection."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:272
+#, fuzzy
+msgctxt "short translation please"
+msgid "Remove trailing spaces when editing a line."
+msgstr "Отстрани &празни места од крајот"
+
+#: variableeditor/variablelineedit.cpp:277
+msgctxt "short translation please"
+msgid "Replace tabs with spaces when saving the document."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:282
+#, fuzzy
+#| msgid "Replace all matches"
+msgctxt "short translation please"
+msgid "Replace tabs with spaces."
+msgstr "Ги заменува сите совпаѓања"
+
+#: variableeditor/variablelineedit.cpp:287
+#, fuzzy
+msgctxt "short translation please"
+msgid "Remove trailing spaces when saving the document."
+msgstr "Отстрани &празни места од крајот"
+
+#: variableeditor/variablelineedit.cpp:293
+#, fuzzy
+#| msgid "Font & Color Schemas"
+msgctxt "short translation please"
+msgid "Set the color scheme."
+msgstr "Шеми за фонтови и бои"
+
+#: variableeditor/variablelineedit.cpp:298
+msgctxt "short translation please"
+msgid "Set the text selection color."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:303
+#, fuzzy
+msgctxt "short translation please"
+msgid "Visualize tabs and trailing spaces."
+msgstr "Правила за означување"
+
+#: variableeditor/variablelineedit.cpp:308
+#, fuzzy
+#| msgid "Auto Completion"
+msgctxt "short translation please"
+msgid "Enable smart home navigation."
+msgstr "Довршување на зборови"
+
+#: variableeditor/variablelineedit.cpp:313
+msgctxt "short translation please"
+msgid "Pressing TAB key indents."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:319
+msgctxt "short translation please"
+msgid "Set the tab display width."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:325
+msgctxt "short translation please"
+msgid "Set the number of undo steps to remember (0 equals infinity)."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:331
+msgctxt "short translation please"
+msgid "Set the word wrap column."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:336
+#, fuzzy
+#| msgid "S&elected Background Color..."
+msgctxt "short translation please"
+msgid "Set the word wrap marker color."
+msgstr "Боја на подлога на &избрано..."
+
+#: variableeditor/variablelineedit.cpp:341
+msgctxt "short translation please"
+msgid "Enable word wrap while typing text."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:346
+msgctxt "short translation please"
+msgid "Wrap the text cursor at the end of a line."
+msgstr ""
 
 #. i18n: file: data/katepartsimpleui.rc:4
 #. i18n: ectx: Menu (file)
@@ -3681,7 +3681,7 @@ msgstr "По &позиција"
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:90
 #. i18n: ectx: property (text), widget (QTableWidget, tblNormalModeMappings)
-#: rc.cpp:95 rc.cpp:752
+#: rc.cpp:95 rc.cpp:581
 msgid "Command"
 msgstr "Наредба"
 
@@ -3746,7 +3746,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, lblName)
 #. i18n: file: dialogs/filetypeconfigwidget.ui:72
 #. i18n: ectx: property (text), widget (QLabel, lblName)
-#: rc.cpp:122 rc.cpp:356
+#: rc.cpp:122 rc.cpp:662
 msgid "&Name:"
 msgstr "&Име:"
 
@@ -4061,7 +4061,7 @@ msgstr ""
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbAutoCenterCursor)
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:65
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:275 rc.cpp:675
+#: rc.cpp:275 rc.cpp:504
 msgid "Disabled"
 msgstr "Оневозможено"
 
@@ -4099,290 +4099,15 @@ msgstr "Избраното ќе остане и при движење на ку�
 msgid "P&ersistent"
 msgstr "&Траен"
 
-#. i18n: file: dialogs/editconfigwidget.ui:20
-#. i18n: ectx: property (title), widget (QGroupBox, gbStaticWordWrap)
-#: rc.cpp:293
-msgid "Static Word Wrap"
-msgstr "Статичко пренесување на зборови"
-
-#. i18n: file: dialogs/editconfigwidget.ui:26
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkStaticWordWrap)
-#: rc.cpp:296
-#, fuzzy
-msgid ""
-"<p>Automatically start a new line of text when the current line exceeds the "
-"length specified by the <b>Wrap words at:</b> option.</p><p>This option does "
-"not wrap existing lines of text - use the <b>Apply Static Word Wrap</b> "
-"option in the <b>Tools</b> menu for that purpose.</p><p>If you want lines to "
-"be <i>visually wrapped</i> instead, according to the width of the view, "
-"enable <b>Dynamic Word Wrap</b> in the <b>Appearance</b> config page.</p>"
-msgstr ""
-"Автоматски започнува нова линија за текст кога актината линија ќе ја "
-"пречекори големината зададена од можноста <b>Пренеси зборови кај:</b>."
-"<p>Оваа опција не ги пренесува постоечките линии со текст - користете ја "
-"опцијата <b>Примени статичко пренесување на зборови</b> во менито <b>Алатки</"
-"b> за таа цел.<p>Ако пак сакате линиите да бидат <i>визуелно пренесени</i> "
-"соодветно на ширината на погледот, овозможете го <b>Динамичкото пренесување "
-"на зборови</b> во страницата за конфигурација <b>Стандарден приказ</b>."
-
-#. i18n: file: dialogs/editconfigwidget.ui:29
-#. i18n: ectx: property (text), widget (QCheckBox, chkStaticWordWrap)
-#: rc.cpp:299
-msgid "Enable static &word wrap"
-msgstr "Овозможи статичко пренесување на зборови"
-
-#. i18n: file: dialogs/editconfigwidget.ui:36
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowStaticWordWrapMarker)
-#: rc.cpp:302
-#, fuzzy
-msgid ""
-"<p>If this option is checked, a vertical line will be drawn at the word wrap "
-"column as defined in the <strong>Editing</strong> properties.</p><p>Note "
-"that the word wrap marker is only drawn if you use a fixed pitch font.</p>"
-msgstr ""
-"<p>Ако е избрана оваа опција, ќе биде нацртана вертикална линија на колоната "
-"за пренесување на зборови како што е дефинирано во <strong>Уредувачките</"
-"strong> својства.<p>Забележете дека маркерот за пренесување на зборови ќе "
-"биде нацртан само ако користите фиксен фонт."
-
-#. i18n: file: dialogs/editconfigwidget.ui:39
-#. i18n: ectx: property (text), widget (QCheckBox, chkShowStaticWordWrapMarker)
-#: rc.cpp:305
-#, fuzzy
-msgid "Show static word wra&p marker (if applicable)"
-msgstr ""
-"Покажи го маркерот за &статичко пренесување на зборови (ако е применливо)"
-
-#. i18n: file: dialogs/editconfigwidget.ui:51
-#. i18n: ectx: property (text), widget (QLabel, lblWordWrap)
-#: rc.cpp:308
-#, fuzzy
-msgid "W&rap words at:"
-msgstr "Пренеси зборови кај:"
-
-#. i18n: file: dialogs/editconfigwidget.ui:61
-#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbWordWrap)
-#: rc.cpp:311
-msgid ""
-"If the Word Wrap option is selected this entry determines the length (in "
-"characters) at which the editor will automatically start a new line."
-msgstr ""
-"Ако е избрана опцијата Пренеси зборови ова поле ја одредува должината (во "
-"знаци) по која уредувачот автоматски ќе започне нова линија."
-
-#. i18n: file: dialogs/editconfigwidget.ui:95
-#. i18n: ectx: property (title), widget (QGroupBox, gbMisc)
-#: rc.cpp:314
-#, fuzzy
-msgid "Misc"
-msgstr "Cisco"
-
-#. i18n: file: dialogs/editconfigwidget.ui:101
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:317
-#, fuzzy
-#| msgid ""
-#| "If this is enabled, the editor will remove any trailing whitespace on "
-#| "lines when they are left by the insertion cursor."
-msgid ""
-"If this is enabled, the editor will remove any trailing whitespace on lines "
-"that are changed through editing."
-msgstr ""
-"Ако е ова избрано, уредувачот ќе ги отстрани празните места на крајот на "
-"линиите каде што биле оставени од курсорот за вметнување."
-
-#. i18n: file: dialogs/editconfigwidget.ui:104
-#. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:320
-#, fuzzy
-msgid "Remove &trailing spaces while editing"
-msgstr "Отстрани &празни места од крајот"
-
-#. i18n: file: dialogs/editconfigwidget.ui:111
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkAutoBrackets)
-#: rc.cpp:323
-msgid ""
-"When the user types a left bracket ([,(, or {) KateView automatically enters "
-"the right bracket (}, ), or ]) to the right of the cursor."
-msgstr ""
-"Кога корисникот впишува лева заграда ([,(, или {) KateView автоматски ја "
-"внесува десната заграда (}, ), или ]) десно од курсорот."
-
-#. i18n: file: dialogs/editconfigwidget.ui:114
-#. i18n: ectx: property (text), widget (QCheckBox, chkAutoBrackets)
-#: rc.cpp:326
-msgid "Auto &brackets"
-msgstr "Авто&загради"
-
-#. i18n: file: dialogs/editconfigwidget.ui:121
-#. i18n: ectx: property (text), widget (QCheckBox, chkSmartCopyCut)
-#: rc.cpp:329
-msgid "Copy/Cut the current line if no selection"
-msgstr ""
-
-#. i18n: file: dialogs/editconfigwidget.ui:128
-#. i18n: ectx: property (text), widget (QCheckBox, chkScrollPastEnd)
-#: rc.cpp:332
-msgid "Allow scrolling past the end of the document"
-msgstr ""
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:14
-#. i18n: ectx: property (text), widget (QLabel, lblFiletype)
-#: rc.cpp:335
-msgid "&Filetype:"
-msgstr "&Тип на датотека:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:24
-#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbFiletypes)
-#: rc.cpp:338
-msgid "Select the filetype you want to change."
-msgstr "Изберете го типот на датотека што сакате да го измените."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:31
-#. i18n: ectx: property (whatsThis), widget (QPushButton, btnNew)
-#: rc.cpp:341
-msgid "Create a new file type."
-msgstr "Креира нов тип на документ."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:34
-#. i18n: ectx: property (text), widget (QPushButton, btnNew)
-#: rc.cpp:344
-msgid "&New"
-msgstr "&Нов"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:41
-#. i18n: ectx: property (whatsThis), widget (QPushButton, btnDelete)
-#: rc.cpp:347
-msgid "Delete the current file type."
-msgstr "Го брише тековниот тип на документ."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:82
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtName)
-#: rc.cpp:359
-msgid ""
-"The name of the filetype will be the text of the corresponding menu item."
-msgstr ""
-"Името на типот на датотека ќе биде текстот од соодветниот елемент од менито."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:89
-#. i18n: ectx: property (text), widget (QLabel, lblSection)
-#: rc.cpp:362
-msgid "&Section:"
-msgstr "&Секција:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:99
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtSection)
-#: rc.cpp:365
-msgid "The section name is used to organize the file types in menus."
-msgstr ""
-"Името на секцијата се користи за организирање на типовите датотеки во "
-"менијата."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:106
-#. i18n: ectx: property (text), widget (QLabel, lblVariables)
-#: rc.cpp:368
-msgid "&Variables:"
-msgstr "&Променливи:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:116
-#. i18n: ectx: property (whatsThis), widget (VariableLineEdit, edtVariables)
-#: rc.cpp:371
-msgid ""
-"<p>This string allows to configure Kate's settings for the files selected by "
-"this mimetype using Kate variables. Almost any configuration option can be "
-"set, such as highlight, indent-mode, encoding, etc.</p><p>For a full list of "
-"known variables, see the manual.</p>"
-msgstr ""
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:123
-#. i18n: ectx: property (text), widget (QLabel, lblHl)
-#: rc.cpp:374
-msgid "&Highlighting:"
-msgstr "&Означување:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:136
-#. i18n: ectx: property (text), widget (QLabel, lblIndenter)
-#: rc.cpp:377
-#, fuzzy
-#| msgid "&Indentation"
-msgid "&Indentation Mode:"
-msgstr "&Вовлекување"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:149
-#. i18n: ectx: property (text), widget (QLabel, lblExtensions)
-#: rc.cpp:380
-msgid "File e&xtensions:"
-msgstr "Наставки на &датотеки:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:159
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtFileExtensions)
-#: rc.cpp:383
-msgid ""
-"The wildcards mask allows to select files by filename. A typical mask uses "
-"an asterisk and the file extension, for example <code>*.txt; *.text</code>. "
-"The string is a semicolon-separated list of masks."
-msgstr ""
-"Маската со џокер-знаци Ви овозможува да избирате датотеки според име на "
-"датотека. Типичната маска се состои од ѕвезда и наставката на датотеката, на "
-"пример <code>*.txt; *.text</code>. Низата е листа од маски меѓусебно "
-"разделени со точка-запирка."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:166
-#. i18n: ectx: property (text), widget (QLabel, lblMimeTypes)
-#: rc.cpp:386
-msgid "MIME &types:"
-msgstr "MIME &типови:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:181
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtMimeTypes)
-#: rc.cpp:389
-msgid ""
-"The mime type mask allows to select files by mimetype. The string is a "
-"semicolon-separated list of mimetypes, for example <code>text/plain; text/"
-"english</code>."
-msgstr ""
-"Маската за mime-тип ви овозможува да избирате датотеки според mime-типот. "
-"Низата е листа од mime-типови меѓусебно разделени со точка-запирки, на "
-"пример <code>text/plain; text/english</code>."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:188
-#. i18n: ectx: property (whatsThis), widget (QToolButton, btnMimeTypes)
-#: rc.cpp:392
-msgid "Displays a wizard that helps you easily select mimetypes."
-msgstr "Прикажува волшебник што ви помага полесно да изберете mime-типови."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:197
-#. i18n: ectx: property (text), widget (QLabel, lblPriority)
-#: rc.cpp:395
-msgid "P&riority:"
-msgstr "Прио&ритет:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:207
-#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbPriority)
-#: rc.cpp:398
-#, fuzzy
-msgid ""
-"Sets priority for this file type. If more than one file type selects the "
-"same file, the one with the highest priority will be used."
-msgstr ""
-"Поставува приоритет за типот на датотека. Ако повеќе типови датотеки "
-"избираат една иста датотека, ќе биде земен типот со највисок приоритет."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:232
-#. i18n: ectx: property (text), widget (QPushButton, btnDownload)
-#: rc.cpp:401
-msgid "Download Highlighting Files..."
-msgstr "Симни правила за означување..."
-
 #. i18n: file: dialogs/indentationconfigwidget.ui:25
 #. i18n: ectx: property (text), widget (QLabel, lblMode)
-#: rc.cpp:404
+#: rc.cpp:293
 msgid "Default indentation mode:"
 msgstr "Стандарден режим на вовлекување:"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:35
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbMode)
-#: rc.cpp:407
+#: rc.cpp:296
 msgid ""
 "This is a list of available indentation modes. The specified indentation "
 "mode will be used for all new documents. Be aware that it is also possible "
@@ -4392,7 +4117,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:57
 #. i18n: ectx: property (title), widget (QGroupBox, gbIndentationMode)
-#: rc.cpp:410
+#: rc.cpp:299
 #, fuzzy
 #| msgid "Indentation"
 msgid "Indent using"
@@ -4400,7 +4125,7 @@ msgstr "Вовлекување"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:63
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentWithTabs)
-#: rc.cpp:413
+#: rc.cpp:302
 #, fuzzy
 #| msgid "Tabulators"
 msgid "&Tabulators"
@@ -4408,7 +4133,7 @@ msgstr "Табулатори"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:70
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentWithSpaces)
-#: rc.cpp:416
+#: rc.cpp:305
 #, fuzzy
 #| msgid "Replace"
 msgid "&Spaces"
@@ -4416,7 +4141,7 @@ msgstr "Замени"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:77
 #. i18n: ectx: property (text), widget (QLabel, lblIndentWidth)
-#: rc.cpp:419
+#: rc.cpp:308
 #, fuzzy
 #| msgid "Indentation width:"
 msgid "&Indentation width:"
@@ -4424,7 +4149,7 @@ msgstr "Должина на вовлекување:"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:87
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbIndentWidth)
-#: rc.cpp:422
+#: rc.cpp:311
 msgid ""
 "The indentation width is the number of spaces which is used to indent a "
 "line. If the option <b>Insert spaces instead of tabulators</b> in the "
@@ -4434,7 +4159,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:103
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentMixed)
-#: rc.cpp:425
+#: rc.cpp:314
 #, fuzzy
 #| msgid "Tabulators"
 msgid "Tabulators &and Spaces"
@@ -4442,20 +4167,20 @@ msgstr "Табулатори"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:123
 #. i18n: ectx: property (text), widget (QLabel, lblTabWidth)
-#: rc.cpp:428
+#: rc.cpp:317
 #, fuzzy
 msgid "Tab wi&dth:"
 msgstr "Ширина на табулатор:"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:152
 #. i18n: ectx: property (title), widget (QGroupBox, gbProperties)
-#: rc.cpp:431
+#: rc.cpp:320
 msgid "Indentation Properties"
 msgstr "Својства за вовлекување"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:158
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkKeepExtraSpaces)
-#: rc.cpp:434
+#: rc.cpp:323
 msgid ""
 "If this option is disabled, changing the indentation level aligns a line to "
 "a multiple of the width specified in <b>Indentation width</b>."
@@ -4463,7 +4188,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:161
 #. i18n: ectx: property (text), widget (QCheckBox, chkKeepExtraSpaces)
-#: rc.cpp:437
+#: rc.cpp:326
 #, fuzzy
 #| msgid "Keep extra spaces"
 msgid "&Keep extra spaces"
@@ -4471,7 +4196,7 @@ msgstr "Задржи додатни празни места"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:168
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkIndentPaste)
-#: rc.cpp:440
+#: rc.cpp:329
 msgid ""
 "If this option is selected, pasted code from the clipboard is indented. "
 "Triggering the <b>undo</b>-action removes the indentation."
@@ -4479,19 +4204,19 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:171
 #. i18n: ectx: property (text), widget (QCheckBox, chkIndentPaste)
-#: rc.cpp:443
+#: rc.cpp:332
 msgid "Adjust indentation of code &pasted from the clipboard"
 msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:181
 #. i18n: ectx: property (title), widget (QGroupBox, gbKeys)
-#: rc.cpp:446
+#: rc.cpp:335
 msgid "Indentation Actions"
 msgstr "Дејства за вовлекување"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:187
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackspaceUnindents)
-#: rc.cpp:449
+#: rc.cpp:338
 msgid ""
 "If this option is selected, the <b>Backspace</b> key decreases the "
 "indentation level if the cursor is located in the leading blank space of a "
@@ -4500,13 +4225,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:190
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackspaceUnindents)
-#: rc.cpp:452
+#: rc.cpp:341
 msgid "&Backspace key in leading blank space unindents"
 msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:200
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:455
+#: rc.cpp:344
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4520,7 +4245,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:233
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabAdvances)
-#: rc.cpp:461
+#: rc.cpp:350
 msgid ""
 "If this option is selected, the <b>Tab</b> key always inserts white space so "
 "that the next tab position is reached. If the option <b>Insert spaces "
@@ -4530,13 +4255,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:236
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabAdvances)
-#: rc.cpp:464
+#: rc.cpp:353
 msgid "Always advance to the &next tab position"
 msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:243
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabIndents)
-#: rc.cpp:467
+#: rc.cpp:356
 msgid ""
 "If this option is selected, the <b>Tab</b> key always indents the current "
 "line by the number of character positions specified in <b>Indentation width</"
@@ -4545,13 +4270,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:246
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabIndents)
-#: rc.cpp:470
+#: rc.cpp:359
 msgid "Always increase indentation &level"
 msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:253
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabSmart)
-#: rc.cpp:473
+#: rc.cpp:362
 msgid ""
 "If this option is selected, the <b>Tab</b> key either indents the current "
 "line or advances to the next tab position.<p> If the insertion point is at "
@@ -4567,20 +4292,20 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:256
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabSmart)
-#: rc.cpp:476
+#: rc.cpp:365
 msgid "Increase indentation level if in l&eading blank space"
 msgstr ""
 
 #. i18n: file: dialogs/modonhdwidget.ui:22
 #. i18n: ectx: property (text), widget (QCheckBox, chkIgnoreWhiteSpaces)
-#: rc.cpp:479
+#: rc.cpp:368
 #, fuzzy
 msgid "Ignore white space changes"
 msgstr "&Игнорирај измени"
 
 #. i18n: file: dialogs/modonhdwidget.ui:29
 #. i18n: ectx: property (whatsThis), widget (QPushButton, btnDiff)
-#: rc.cpp:482
+#: rc.cpp:371
 msgid ""
 "Calculates the difference between the editor contents and the disk file "
 "using diff(1)."
@@ -4588,26 +4313,26 @@ msgstr ""
 
 #. i18n: file: dialogs/modonhdwidget.ui:32
 #. i18n: ectx: property (text), widget (QPushButton, btnDiff)
-#: rc.cpp:485
+#: rc.cpp:374
 msgid "&View Difference"
 msgstr "&Види разлика"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbConfigFile)
-#: rc.cpp:488
+#: rc.cpp:377
 msgid "Folder Config File"
 msgstr "Датотека за конфигурација на папки"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:31
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:491
+#: rc.cpp:380
 #, fuzzy
 msgid "Search &depth for config file:"
 msgstr "Дл&абочина на барање за датотеката за конфиг.:"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:41
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbConfigFileSearchDepth)
-#: rc.cpp:494
+#: rc.cpp:383
 #, fuzzy
 msgid ""
 "The editor will search the given number of folder levels upwards for a ."
@@ -4618,13 +4343,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:44
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbConfigFileSearchDepth)
-#: rc.cpp:497
+#: rc.cpp:386
 msgid "Do not use config file"
 msgstr "Не користи датотека за конфиг."
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:75
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbBackup)
-#: rc.cpp:500
+#: rc.cpp:389
 #, fuzzy
 msgid ""
 "<p>Backing up on save will cause Kate to copy the disk file to '&lt;"
@@ -4638,13 +4363,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:78
 #. i18n: ectx: property (title), widget (QGroupBox, gbBackup)
-#: rc.cpp:503
+#: rc.cpp:392
 msgid "Backup on Save"
 msgstr "Заштитна копија при зачувување"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:87
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackupLocalFiles)
-#: rc.cpp:506
+#: rc.cpp:395
 #, fuzzy
 msgid ""
 "If this option is enabled, backups for local files will be created when "
@@ -4655,13 +4380,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:90
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackupLocalFiles)
-#: rc.cpp:509
+#: rc.cpp:398
 msgid "&Local files"
 msgstr "&Локални датотеки"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:97
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackupRemoteFiles)
-#: rc.cpp:512
+#: rc.cpp:401
 #, fuzzy
 msgid ""
 "If this option is enabled, backups for remote files will be created when "
@@ -4672,221 +4397,71 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackupRemoteFiles)
-#: rc.cpp:515
+#: rc.cpp:404
 msgid "&Remote files"
 msgstr "&Оддалечени датотеки"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:107
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:518
+#: rc.cpp:407
 #, fuzzy
 msgid "&Prefix:"
 msgstr "&Претставка:"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:117
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtBackupPrefix)
-#: rc.cpp:521
+#: rc.cpp:410
 #, fuzzy
 msgid "Enter the prefix to prepend to the backup file names."
 msgstr "Внесете ја претставката која ќе се додаде пред имињата на зашт. копии"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:524
+#: rc.cpp:413
 msgid "&Suffix:"
 msgstr "&Наставка:"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:134
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtBackupSuffix)
-#: rc.cpp:527
+#: rc.cpp:416
 #, fuzzy
 msgid "Enter the suffix to append to the backup file names."
 msgstr "Внесете ја наставката која ќе се додаде по имињата на зашт. копии"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:167
 #. i18n: ectx: property (text), widget (QCheckBox, chkNoSync)
-#: rc.cpp:530
+#: rc.cpp:419
 msgid "Disable swap files syncing"
 msgstr ""
 
-#. i18n: file: dialogs/opensaveconfigwidget.ui:20
-#. i18n: ectx: property (title), widget (QGroupBox, gbFileFormat)
-#: rc.cpp:533
-msgid "File Format"
-msgstr "Формат на датотека"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:31
-#. i18n: ectx: property (text), widget (QLabel, lblEncoding)
-#: rc.cpp:536
-msgid "&Encoding:"
-msgstr "&Кодирање:"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:41
-#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncoding)
-#: rc.cpp:539
-msgid ""
-"This defines the standard encoding to use to open/save files, if not changed "
-"in the open/save dialog or by using a command line option."
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:48
-#. i18n: ectx: property (text), widget (QLabel, lblEncodingDetection)
-#: rc.cpp:542
-#, fuzzy
-#| msgid "&Encoding:"
-msgid "&Encoding Detection:"
-msgstr "&Кодирање:"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:58
-#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncodingDetection)
-#: rc.cpp:545
-msgid ""
-"if neither the encoding chosen as standard above, nor the encoding specified "
-"in the open/save dialog, nor the encoding specified on command line match "
-"the content of the file, this detection will be run."
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:65
-#. i18n: ectx: property (text), widget (QLabel, lblEncodingDetection2)
-#: rc.cpp:548
-#, fuzzy
-#| msgid "&Encoding:"
-msgid "&Fallback Encoding:"
-msgstr "&Кодирање:"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:75
-#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncodingFallback)
-#: rc.cpp:551
-msgid ""
-"This defines the fallback encoding to try for opening files if neither the "
-"encoding chosen as standard above, nor the encoding specified in the open/"
-"save dialog, nor the encoding specified on command line match the content of "
-"the file.  Before this is used, an attempt will be made to determine the "
-"encoding to use by looking for a byte order marker at start of file: if one "
-"is found, the right unicode encoding will be chosen; otherwise encoding "
-"detection will run, if both fail fallback encoding will be tried."
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:82
-#. i18n: ectx: property (text), widget (QLabel, lblEOL)
-#: rc.cpp:554
-msgid "E&nd of line:"
-msgstr "&Крај на ред:"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:93
-#. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
-#: rc.cpp:557
-msgid "UNIX"
-msgstr "UNIX"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:98
-#. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
-#: rc.cpp:560
-msgid "DOS/Windows"
-msgstr "DOS/Windows"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:103
-#. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
-#: rc.cpp:563
-msgid "Macintosh"
-msgstr "Macintosh"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:113
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkDetectEOL)
-#: rc.cpp:566
-msgid ""
-"If this option is enabled the editor will autodetect the end of line type. "
-"The first found end of line type will be used for the whole file."
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:116
-#. i18n: ectx: property (text), widget (QCheckBox, chkDetectEOL)
-#: rc.cpp:569
-msgid "A&utomatic end of line detection"
-msgstr "&Автоматска детекција на крај на ред"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:123
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkEnableBOM)
-#: rc.cpp:572
-msgid ""
-"The byte order mark is a special sequence at the beginning of unicode "
-"encoded documents. It helps editors to open text documents with the correct "
-"unicode encoding. The byte order mark is not visible in the displayed "
-"document."
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:126
-#. i18n: ectx: property (text), widget (QCheckBox, chkEnableBOM)
-#: rc.cpp:575
-msgid "Enable byte order marker"
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:133
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:578
-msgid "Line Length Limit:"
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:143
-#. i18n: ectx: property (specialValueText), widget (QSpinBox, lineLengthLimit)
-#: rc.cpp:581
-#, fuzzy
-#| msgid "Untitled"
-msgid "Unlimited"
-msgstr "Неименувано"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:159
-#. i18n: ectx: property (title), widget (QGroupBox, gbCleanups)
-#: rc.cpp:584
-msgid "Automatic Cleanups on Load/Save"
-msgstr "Автоматски чистења при вчитување/зачувување"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:165
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:587
-#, fuzzy
-msgid ""
-"The editor will automatically eliminate extra spaces at the ends of lines of "
-"text while loading/saving the file. This change is only visible after a save "
-"if you reload the file."
-msgstr ""
-"Уредувачот автоматски ќе ги елиминира дополнителните празни места на крајот "
-"од линиите на текстот, при вчитување/зачувување на датотеката."
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:168
-#. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:590
-msgid "Re&move trailing spaces"
-msgstr "&Отстрани празни места од крајот"
-
 #. i18n: file: dialogs/schemaconfigcolortab.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:593
+#: rc.cpp:422
 #, fuzzy
 msgid "Text Area Background"
 msgstr "Подлога на областа за текст"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:596
+#: rc.cpp:425
 msgid "Normal text:"
 msgstr "Нормален текст:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:33
 #. i18n: ectx: property (whatsThis), widget (KColorButton, back)
-#: rc.cpp:599
+#: rc.cpp:428
 msgid "<p>Sets the background color of the editing area.</p>"
 msgstr "<p>Ја поставува бојата на подлога за областа за уредување.</p>"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:40
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:602
+#: rc.cpp:431
 msgid "Selected text:"
 msgstr "Избран текст:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:47
 #. i18n: ectx: property (whatsThis), widget (KColorButton, selected)
-#: rc.cpp:605
+#: rc.cpp:434
 msgid ""
 "<p>Sets the background color of the selection.</p><p>To set the text color "
 "for selected text, use the \"<b>Configure Highlighting</b>\" dialog.</p>"
@@ -4897,13 +4472,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:54
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:608
+#: rc.cpp:437
 msgid "Current line:"
 msgstr "Активна линија:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:61
 #. i18n: ectx: property (whatsThis), widget (KColorButton, current)
-#: rc.cpp:611
+#: rc.cpp:440
 msgid ""
 "<p>Sets the background color of the currently active line, which means the "
 "line where your cursor is positioned.</p>"
@@ -4913,13 +4488,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:68
 #. i18n: ectx: property (whatsThis), widget (KComboBox, combobox)
-#: rc.cpp:614
+#: rc.cpp:443
 msgid "<p>Select the marker type you want to change.</p>"
 msgstr "<p>Изберете го типот на маркер што сакате да го измените.</p>"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:75
 #. i18n: ectx: property (whatsThis), widget (KColorButton, markers)
-#: rc.cpp:617
+#: rc.cpp:446
 msgid ""
 "<p>Sets the background color of the selected marker type.</p><p><b>Note</b>: "
 "The marker color is displayed lightly because of transparency.</p>"
@@ -4930,25 +4505,25 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:85
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:620
+#: rc.cpp:449
 msgid "Additional Elements"
 msgstr "Додатни елементи"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:94
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:623
+#: rc.cpp:452
 msgid "Left border background:"
 msgstr "Подлога на лев раб:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:104
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:626
+#: rc.cpp:455
 msgid "Line numbers:"
 msgstr "Броеви на линиите:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:111
 #. i18n: ectx: property (whatsThis), widget (KColorButton, linenumber)
-#: rc.cpp:629
+#: rc.cpp:458
 msgid ""
 "<p>This color will be used to draw the line numbers (if enabled) and the "
 "lines in the code-folding pane.</p>"
@@ -4958,13 +4533,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:118
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:632
+#: rc.cpp:461
 msgid "Bracket highlight:"
 msgstr "Означување на заграда:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:125
 #. i18n: ectx: property (whatsThis), widget (KColorButton, bracket)
-#: rc.cpp:635
+#: rc.cpp:464
 msgid ""
 "<p>Sets the bracket matching color. This means, if you place the cursor e.g. "
 "at a <b>(</b>, the matching <b>)</b> will be highlighted with this color.</p>"
@@ -4975,13 +4550,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:132
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:638
+#: rc.cpp:467
 msgid "Word wrap markers:"
 msgstr "Маркери за пренесување на зборови:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:139
 #. i18n: ectx: property (whatsThis), widget (KColorButton, wwmarker)
-#: rc.cpp:641
+#: rc.cpp:470
 msgid ""
 "<p>Sets the color of Word Wrap-related markers:</p><dl><dt>Static Word Wrap</"
 "dt><dd>A vertical line which shows the column where text is going to be "
@@ -4996,25 +4571,25 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:146
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:644
+#: rc.cpp:473
 msgid "Tab and space markers:"
 msgstr "Маркери за табулатори и празни места"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:153
 #. i18n: ectx: property (whatsThis), widget (KColorButton, tmarker)
-#: rc.cpp:647
+#: rc.cpp:476
 msgid "<p>Sets the color of the tabulator marks.</p>"
 msgstr "<p>Ја поставува бојата на маркерите за табулатори.</p>"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:160
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:650
+#: rc.cpp:479
 msgid "Spelling mistake line:"
 msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:167
 #. i18n: ectx: property (whatsThis), widget (KColorButton, spellingmistakeline)
-#: rc.cpp:653
+#: rc.cpp:482
 #, fuzzy
 #| msgid "<p>Sets the color of the tabulator marks.</p>"
 msgid ""
@@ -5023,14 +4598,14 @@ msgstr "<p>Ја поставува бојата на маркерите за т�
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:29
 #. i18n: ectx: property (text), widget (QLabel, lblDynamicWordWrapIndicators)
-#: rc.cpp:662
+#: rc.cpp:491
 #, fuzzy
 msgid "Dynamic &word wrap indicators (if applicable):"
 msgstr "Индикатори за динамичко пренесување на зборови (ако е применливо):"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:39
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbDynamicWordWrapIndicator)
-#: rc.cpp:665
+#: rc.cpp:494
 #, fuzzy
 msgid "Choose when the Dynamic Word Wrap Indicators should be displayed."
 msgstr ""
@@ -5039,7 +4614,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, lblDynamicWordWrapIndicators_2)
-#: rc.cpp:668
+#: rc.cpp:497
 #, fuzzy
 msgid "Align dynamically wrapped lines to indentation depth:"
 msgstr ""
@@ -5048,7 +4623,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:62
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:672
+#: rc.cpp:501
 #, fuzzy, no-c-format
 msgid ""
 "<p>Enables the start of dynamically wrapped lines to be aligned vertically "
@@ -5070,14 +4645,14 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:68
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:679
+#: rc.cpp:508
 #, no-c-format
 msgid "% of View Width"
 msgstr "% од ширината на погледот"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:84
 #. i18n: ectx: property (title), widget (QGroupBox, gbWhitespaceHighlighting)
-#: rc.cpp:682
+#: rc.cpp:511
 #, fuzzy
 #| msgid "&Highlighting"
 msgid "Whitespace Highlighting"
@@ -5085,7 +4660,7 @@ msgstr "&Означување"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:90
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowTabs)
-#: rc.cpp:685
+#: rc.cpp:514
 msgid ""
 "The editor will display a symbol to indicate the presence of a tab in the "
 "text."
@@ -5095,21 +4670,21 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:93
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowTabs)
-#: rc.cpp:688
+#: rc.cpp:517
 #, fuzzy
 msgid "&Highlight tabulators"
 msgstr "Прикажи &табулатори"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowSpaces)
-#: rc.cpp:691
+#: rc.cpp:520
 #, fuzzy
 msgid "Highlight trailing &spaces"
 msgstr "Правила за означување"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:116
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkDeveloperMode)
-#: rc.cpp:697
+#: rc.cpp:526
 msgid ""
 "Changing this mode affects only newly opened / created documents. In KWrite "
 "a restart is recommended."
@@ -5117,13 +4692,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:119
 #. i18n: ectx: property (text), widget (QCheckBox, chkDeveloperMode)
-#: rc.cpp:700
+#: rc.cpp:529
 msgid "Enable power user mode (KDE 3 mode)"
 msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:126
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowIndentationLines)
-#: rc.cpp:703
+#: rc.cpp:532
 msgid ""
 "If this is enabled, the editor will display vertical lines to help identify "
 "indent lines."
@@ -5133,14 +4708,14 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:129
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowIndentationLines)
-#: rc.cpp:706
+#: rc.cpp:535
 #, fuzzy
 msgid "Show i&ndentation lines"
 msgstr "Прикажи линии за вовлекување"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:136
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowWholeBracketExpression)
-#: rc.cpp:709
+#: rc.cpp:538
 msgid ""
 "If this is enabled, the range between the selected matching brackets will be "
 "highlighted."
@@ -5148,13 +4723,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowWholeBracketExpression)
-#: rc.cpp:712
+#: rc.cpp:541
 msgid "Highlight range between selected brackets"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:18
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViInputModeDefault)
-#: rc.cpp:718
+#: rc.cpp:547
 msgid ""
 "When selected, the vi input mode will be enabled when opening a new view. "
 "You can still toggle the vi input mode on/off for a particular view in the "
@@ -5163,13 +4738,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:21
 #. i18n: ectx: property (text), widget (QCheckBox, chkViInputModeDefault)
-#: rc.cpp:721
+#: rc.cpp:550
 msgid "Use Vi input mode"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:28
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViCommandsOverride)
-#: rc.cpp:724
+#: rc.cpp:553
 msgid ""
 "When selected, vi commands will override Kate's built-in commands. For "
 "example: Ctrl+R will redo, and override the standard action (showing the "
@@ -5178,13 +4753,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:31
 #. i18n: ectx: property (text), widget (QCheckBox, chkViCommandsOverride)
-#: rc.cpp:727
+#: rc.cpp:556
 msgid "Let Vi commands override Kate shortcuts"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:40
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViStatusBarHide)
-#: rc.cpp:730
+#: rc.cpp:559
 msgid ""
 "By default, an extra status bar will be used when the Vi input mode is "
 "enabled. This status bar shows commands while they are being typed and "
@@ -5195,13 +4770,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:43
 #. i18n: ectx: property (text), widget (QCheckBox, chkViStatusBarHide)
-#: rc.cpp:735
+#: rc.cpp:564
 msgid "Hide the Vi mode status bar"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:58
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, groupBox)
-#: rc.cpp:738
+#: rc.cpp:567
 msgid ""
 "Key mapping is used to change the meaning of typed keys. This allows you to "
 "move commands to other keys or make special keypresses for doing a series of "
@@ -5215,13 +4790,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:61
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:746
+#: rc.cpp:575
 msgid "Key Mapping"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:71
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:749
+#: rc.cpp:578
 #, fuzzy
 #| msgid "Normal Text"
 msgid "Normal mode"
@@ -5229,7 +4804,7 @@ msgstr "Нормален текст"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:95
 #. i18n: ectx: property (text), widget (QTableWidget, tblNormalModeMappings)
-#: rc.cpp:755
+#: rc.cpp:584
 #, fuzzy
 #| msgid "Replace"
 msgid "Replacement"
@@ -5237,7 +4812,7 @@ msgstr "Замени"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:105
 #. i18n: ectx: property (text), widget (QPushButton, btnRemoveSelectedNormal)
-#: rc.cpp:758
+#: rc.cpp:587
 #, fuzzy
 #| msgctxt "@title:column Text style"
 #| msgid "Selected"
@@ -5246,13 +4821,13 @@ msgstr "Избрано"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:112
 #. i18n: ectx: property (text), widget (QPushButton, btnAddNewNormal)
-#: rc.cpp:761
+#: rc.cpp:590
 msgid "Add new mapping"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:119
 #. i18n: ectx: property (toolTip), widget (QPushButton, btnImportNormal)
-#: rc.cpp:764
+#: rc.cpp:593
 msgid ""
 "Read a vimrc file and attempt to import mappings specified with the \"[n]"
 "noremap\" command."
@@ -5260,9 +4835,434 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:122
 #. i18n: ectx: property (text), widget (QPushButton, btnImportNormal)
-#: rc.cpp:767
+#: rc.cpp:596
 msgid "Import from vimrc file"
 msgstr ""
+
+#. i18n: file: dialogs/editconfigwidget.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, gbStaticWordWrap)
+#: rc.cpp:599
+msgid "Static Word Wrap"
+msgstr "Статичко пренесување на зборови"
+
+#. i18n: file: dialogs/editconfigwidget.ui:26
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkStaticWordWrap)
+#: rc.cpp:602
+#, fuzzy
+msgid ""
+"<p>Automatically start a new line of text when the current line exceeds the "
+"length specified by the <b>Wrap words at:</b> option.</p><p>This option does "
+"not wrap existing lines of text - use the <b>Apply Static Word Wrap</b> "
+"option in the <b>Tools</b> menu for that purpose.</p><p>If you want lines to "
+"be <i>visually wrapped</i> instead, according to the width of the view, "
+"enable <b>Dynamic Word Wrap</b> in the <b>Appearance</b> config page.</p>"
+msgstr ""
+"Автоматски започнува нова линија за текст кога актината линија ќе ја "
+"пречекори големината зададена од можноста <b>Пренеси зборови кај:</b>."
+"<p>Оваа опција не ги пренесува постоечките линии со текст - користете ја "
+"опцијата <b>Примени статичко пренесување на зборови</b> во менито <b>Алатки</"
+"b> за таа цел.<p>Ако пак сакате линиите да бидат <i>визуелно пренесени</i> "
+"соодветно на ширината на погледот, овозможете го <b>Динамичкото пренесување "
+"на зборови</b> во страницата за конфигурација <b>Стандарден приказ</b>."
+
+#. i18n: file: dialogs/editconfigwidget.ui:29
+#. i18n: ectx: property (text), widget (QCheckBox, chkStaticWordWrap)
+#: rc.cpp:605
+msgid "Enable static &word wrap"
+msgstr "Овозможи статичко пренесување на зборови"
+
+#. i18n: file: dialogs/editconfigwidget.ui:36
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowStaticWordWrapMarker)
+#: rc.cpp:608
+#, fuzzy
+msgid ""
+"<p>If this option is checked, a vertical line will be drawn at the word wrap "
+"column as defined in the <strong>Editing</strong> properties.</p><p>Note "
+"that the word wrap marker is only drawn if you use a fixed pitch font.</p>"
+msgstr ""
+"<p>Ако е избрана оваа опција, ќе биде нацртана вертикална линија на колоната "
+"за пренесување на зборови како што е дефинирано во <strong>Уредувачките</"
+"strong> својства.<p>Забележете дека маркерот за пренесување на зборови ќе "
+"биде нацртан само ако користите фиксен фонт."
+
+#. i18n: file: dialogs/editconfigwidget.ui:39
+#. i18n: ectx: property (text), widget (QCheckBox, chkShowStaticWordWrapMarker)
+#: rc.cpp:611
+#, fuzzy
+msgid "Show static word wra&p marker (if applicable)"
+msgstr ""
+"Покажи го маркерот за &статичко пренесување на зборови (ако е применливо)"
+
+#. i18n: file: dialogs/editconfigwidget.ui:51
+#. i18n: ectx: property (text), widget (QLabel, lblWordWrap)
+#: rc.cpp:614
+#, fuzzy
+msgid "W&rap words at:"
+msgstr "Пренеси зборови кај:"
+
+#. i18n: file: dialogs/editconfigwidget.ui:61
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbWordWrap)
+#: rc.cpp:617
+msgid ""
+"If the Word Wrap option is selected this entry determines the length (in "
+"characters) at which the editor will automatically start a new line."
+msgstr ""
+"Ако е избрана опцијата Пренеси зборови ова поле ја одредува должината (во "
+"знаци) по која уредувачот автоматски ќе започне нова линија."
+
+#. i18n: file: dialogs/editconfigwidget.ui:95
+#. i18n: ectx: property (title), widget (QGroupBox, gbMisc)
+#: rc.cpp:620
+#, fuzzy
+msgid "Misc"
+msgstr "Cisco"
+
+#. i18n: file: dialogs/editconfigwidget.ui:101
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
+#: rc.cpp:623
+#, fuzzy
+#| msgid ""
+#| "If this is enabled, the editor will remove any trailing whitespace on "
+#| "lines when they are left by the insertion cursor."
+msgid ""
+"If this is enabled, the editor will remove any trailing whitespace on lines "
+"that are changed through editing."
+msgstr ""
+"Ако е ова избрано, уредувачот ќе ги отстрани празните места на крајот на "
+"линиите каде што биле оставени од курсорот за вметнување."
+
+#. i18n: file: dialogs/editconfigwidget.ui:104
+#. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
+#: rc.cpp:626
+#, fuzzy
+msgid "Remove &trailing spaces while editing"
+msgstr "Отстрани &празни места од крајот"
+
+#. i18n: file: dialogs/editconfigwidget.ui:111
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkAutoBrackets)
+#: rc.cpp:629
+msgid ""
+"When the user types a left bracket ([,(, or {) KateView automatically enters "
+"the right bracket (}, ), or ]) to the right of the cursor."
+msgstr ""
+"Кога корисникот впишува лева заграда ([,(, или {) KateView автоматски ја "
+"внесува десната заграда (}, ), или ]) десно од курсорот."
+
+#. i18n: file: dialogs/editconfigwidget.ui:114
+#. i18n: ectx: property (text), widget (QCheckBox, chkAutoBrackets)
+#: rc.cpp:632
+msgid "Auto &brackets"
+msgstr "Авто&загради"
+
+#. i18n: file: dialogs/editconfigwidget.ui:121
+#. i18n: ectx: property (text), widget (QCheckBox, chkSmartCopyCut)
+#: rc.cpp:635
+msgid "Copy/Cut the current line if no selection"
+msgstr ""
+
+#. i18n: file: dialogs/editconfigwidget.ui:128
+#. i18n: ectx: property (text), widget (QCheckBox, chkScrollPastEnd)
+#: rc.cpp:638
+msgid "Allow scrolling past the end of the document"
+msgstr ""
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:14
+#. i18n: ectx: property (text), widget (QLabel, lblFiletype)
+#: rc.cpp:641
+msgid "&Filetype:"
+msgstr "&Тип на датотека:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:24
+#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbFiletypes)
+#: rc.cpp:644
+msgid "Select the filetype you want to change."
+msgstr "Изберете го типот на датотека што сакате да го измените."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:31
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnNew)
+#: rc.cpp:647
+msgid "Create a new file type."
+msgstr "Креира нов тип на документ."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:34
+#. i18n: ectx: property (text), widget (QPushButton, btnNew)
+#: rc.cpp:650
+msgid "&New"
+msgstr "&Нов"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:41
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnDelete)
+#: rc.cpp:653
+msgid "Delete the current file type."
+msgstr "Го брише тековниот тип на документ."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:82
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtName)
+#: rc.cpp:665
+msgid ""
+"The name of the filetype will be the text of the corresponding menu item."
+msgstr ""
+"Името на типот на датотека ќе биде текстот од соодветниот елемент од менито."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:89
+#. i18n: ectx: property (text), widget (QLabel, lblSection)
+#: rc.cpp:668
+msgid "&Section:"
+msgstr "&Секција:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:99
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtSection)
+#: rc.cpp:671
+msgid "The section name is used to organize the file types in menus."
+msgstr ""
+"Името на секцијата се користи за организирање на типовите датотеки во "
+"менијата."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:106
+#. i18n: ectx: property (text), widget (QLabel, lblVariables)
+#: rc.cpp:674
+msgid "&Variables:"
+msgstr "&Променливи:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:116
+#. i18n: ectx: property (whatsThis), widget (VariableLineEdit, edtVariables)
+#: rc.cpp:677
+msgid ""
+"<p>This string allows to configure Kate's settings for the files selected by "
+"this mimetype using Kate variables. Almost any configuration option can be "
+"set, such as highlight, indent-mode, encoding, etc.</p><p>For a full list of "
+"known variables, see the manual.</p>"
+msgstr ""
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:123
+#. i18n: ectx: property (text), widget (QLabel, lblHl)
+#: rc.cpp:680
+msgid "&Highlighting:"
+msgstr "&Означување:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:136
+#. i18n: ectx: property (text), widget (QLabel, lblIndenter)
+#: rc.cpp:683
+#, fuzzy
+#| msgid "&Indentation"
+msgid "&Indentation Mode:"
+msgstr "&Вовлекување"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:149
+#. i18n: ectx: property (text), widget (QLabel, lblExtensions)
+#: rc.cpp:686
+msgid "File e&xtensions:"
+msgstr "Наставки на &датотеки:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:159
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtFileExtensions)
+#: rc.cpp:689
+msgid ""
+"The wildcards mask allows to select files by filename. A typical mask uses "
+"an asterisk and the file extension, for example <code>*.txt; *.text</code>. "
+"The string is a semicolon-separated list of masks."
+msgstr ""
+"Маската со џокер-знаци Ви овозможува да избирате датотеки според име на "
+"датотека. Типичната маска се состои од ѕвезда и наставката на датотеката, на "
+"пример <code>*.txt; *.text</code>. Низата е листа од маски меѓусебно "
+"разделени со точка-запирка."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:166
+#. i18n: ectx: property (text), widget (QLabel, lblMimeTypes)
+#: rc.cpp:692
+msgid "MIME &types:"
+msgstr "MIME &типови:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:181
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtMimeTypes)
+#: rc.cpp:695
+msgid ""
+"The mime type mask allows to select files by mimetype. The string is a "
+"semicolon-separated list of mimetypes, for example <code>text/plain; text/"
+"english</code>."
+msgstr ""
+"Маската за mime-тип ви овозможува да избирате датотеки според mime-типот. "
+"Низата е листа од mime-типови меѓусебно разделени со точка-запирки, на "
+"пример <code>text/plain; text/english</code>."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:188
+#. i18n: ectx: property (whatsThis), widget (QToolButton, btnMimeTypes)
+#: rc.cpp:698
+msgid "Displays a wizard that helps you easily select mimetypes."
+msgstr "Прикажува волшебник што ви помага полесно да изберете mime-типови."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:197
+#. i18n: ectx: property (text), widget (QLabel, lblPriority)
+#: rc.cpp:701
+msgid "P&riority:"
+msgstr "Прио&ритет:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:207
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbPriority)
+#: rc.cpp:704
+#, fuzzy
+msgid ""
+"Sets priority for this file type. If more than one file type selects the "
+"same file, the one with the highest priority will be used."
+msgstr ""
+"Поставува приоритет за типот на датотека. Ако повеќе типови датотеки "
+"избираат една иста датотека, ќе биде земен типот со највисок приоритет."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:232
+#. i18n: ectx: property (text), widget (QPushButton, btnDownload)
+#: rc.cpp:707
+msgid "Download Highlighting Files..."
+msgstr "Симни правила за означување..."
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, gbFileFormat)
+#: rc.cpp:710
+msgid "File Format"
+msgstr "Формат на датотека"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:31
+#. i18n: ectx: property (text), widget (QLabel, lblEncoding)
+#: rc.cpp:713
+msgid "&Encoding:"
+msgstr "&Кодирање:"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:41
+#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncoding)
+#: rc.cpp:716
+msgid ""
+"This defines the standard encoding to use to open/save files, if not changed "
+"in the open/save dialog or by using a command line option."
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:48
+#. i18n: ectx: property (text), widget (QLabel, lblEncodingDetection)
+#: rc.cpp:719
+#, fuzzy
+#| msgid "&Encoding:"
+msgid "&Encoding Detection:"
+msgstr "&Кодирање:"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:58
+#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncodingDetection)
+#: rc.cpp:722
+msgid ""
+"if neither the encoding chosen as standard above, nor the encoding specified "
+"in the open/save dialog, nor the encoding specified on command line match "
+"the content of the file, this detection will be run."
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:65
+#. i18n: ectx: property (text), widget (QLabel, lblEncodingDetection2)
+#: rc.cpp:725
+#, fuzzy
+#| msgid "&Encoding:"
+msgid "&Fallback Encoding:"
+msgstr "&Кодирање:"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:75
+#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncodingFallback)
+#: rc.cpp:728
+msgid ""
+"This defines the fallback encoding to try for opening files if neither the "
+"encoding chosen as standard above, nor the encoding specified in the open/"
+"save dialog, nor the encoding specified on command line match the content of "
+"the file.  Before this is used, an attempt will be made to determine the "
+"encoding to use by looking for a byte order marker at start of file: if one "
+"is found, the right unicode encoding will be chosen; otherwise encoding "
+"detection will run, if both fail fallback encoding will be tried."
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:82
+#. i18n: ectx: property (text), widget (QLabel, lblEOL)
+#: rc.cpp:731
+msgid "E&nd of line:"
+msgstr "&Крај на ред:"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:93
+#. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
+#: rc.cpp:734
+msgid "UNIX"
+msgstr "UNIX"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:98
+#. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
+#: rc.cpp:737
+msgid "DOS/Windows"
+msgstr "DOS/Windows"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:103
+#. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
+#: rc.cpp:740
+msgid "Macintosh"
+msgstr "Macintosh"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:113
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkDetectEOL)
+#: rc.cpp:743
+msgid ""
+"If this option is enabled the editor will autodetect the end of line type. "
+"The first found end of line type will be used for the whole file."
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:116
+#. i18n: ectx: property (text), widget (QCheckBox, chkDetectEOL)
+#: rc.cpp:746
+msgid "A&utomatic end of line detection"
+msgstr "&Автоматска детекција на крај на ред"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:123
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkEnableBOM)
+#: rc.cpp:749
+msgid ""
+"The byte order mark is a special sequence at the beginning of unicode "
+"encoded documents. It helps editors to open text documents with the correct "
+"unicode encoding. The byte order mark is not visible in the displayed "
+"document."
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:126
+#. i18n: ectx: property (text), widget (QCheckBox, chkEnableBOM)
+#: rc.cpp:752
+msgid "Enable byte order marker"
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:133
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:755
+msgid "Line Length Limit:"
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:143
+#. i18n: ectx: property (specialValueText), widget (QSpinBox, lineLengthLimit)
+#: rc.cpp:758
+#, fuzzy
+#| msgid "Untitled"
+msgid "Unlimited"
+msgstr "Неименувано"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:159
+#. i18n: ectx: property (title), widget (QGroupBox, gbCleanups)
+#: rc.cpp:761
+msgid "Automatic Cleanups on Load/Save"
+msgstr "Автоматски чистења при вчитување/зачувување"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:165
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
+#: rc.cpp:764
+#, fuzzy
+msgid ""
+"The editor will automatically eliminate extra spaces at the ends of lines of "
+"text while loading/saving the file. This change is only visible after a save "
+"if you reload the file."
+msgstr ""
+"Уредувачот автоматски ќе ги елиминира дополнителните празни места на крајот "
+"од линиите на текстот, при вчитување/зачувување на датотеката."
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:168
+#. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
+#: rc.cpp:767
+msgid "Re&move trailing spaces"
+msgstr "&Отстрани празни места од крајот"
 
 #. i18n: file: search/searchbarincremental.ui:32
 #. i18n: ectx: property (text), widget (QLabel, label)

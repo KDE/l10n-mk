@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-01-28 04:18+0100\n"
+"POT-Creation-Date: 2012-01-29 13:30+0100\n"
 "PO-Revision-Date: 2010-01-27 10:39+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -3258,6 +3258,43 @@ msgstr ""
 "посетете ја Интернет-страницата http://i18n.kde.org</p><p>Информации за "
 "нашата работа може да добиете на страницата http://mkde.sourceforge.net</p>"
 
+#: kdecore/kernel/ktoolinvocation.cpp:79
+msgid "Function must be called from the main thread."
+msgstr "Функцијата мора да се повика од главната нишка."
+
+#: kdecore/kernel/ktoolinvocation.cpp:120
+#, kde-format
+msgid ""
+"Error launching %1. Either KLauncher is not running anymore, or it failed to "
+"start the application."
+msgstr ""
+"Грешка при стартување на %1. Или KLauncher веќе не се извршува, или не успеа "
+"да ја стартува апликацијата."
+
+#: kdecore/kernel/ktoolinvocation.cpp:123
+#, kde-format
+msgid ""
+"KLauncher could not be reached via D-Bus. Error when calling %1:\n"
+"%2\n"
+msgstr ""
+"KLauncher не беше достапен преку D-Bus. Грешка при повикувањето на %1:\n"
+"%2\n"
+
+#: kdecore/kernel/ktoolinvocation.cpp:302
+#, kde-format
+msgid ""
+"Could not launch the KDE Help Center:\n"
+"\n"
+"%1"
+msgstr ""
+"Не може да се стартува Центарот за помош на KDE:\n"
+"\n"
+"%1"
+
+#: kdecore/kernel/ktoolinvocation.cpp:303
+msgid "Could not Launch Help Center"
+msgstr "Не може да се стартува Центарот за помош"
+
 #: kdecore/kernel/kcmdlineargs.cpp:273
 msgid "Use the X-server display 'displayname'"
 msgstr "Користи го екранот „именаекран“ на X-серверот"
@@ -3571,43 +3608,6 @@ msgstr ""
 msgid "KDE-tempfile"
 msgstr "KDE-tempfile"
 
-#: kdecore/kernel/ktoolinvocation.cpp:79
-msgid "Function must be called from the main thread."
-msgstr "Функцијата мора да се повика од главната нишка."
-
-#: kdecore/kernel/ktoolinvocation.cpp:120
-#, kde-format
-msgid ""
-"Error launching %1. Either KLauncher is not running anymore, or it failed to "
-"start the application."
-msgstr ""
-"Грешка при стартување на %1. Или KLauncher веќе не се извршува, или не успеа "
-"да ја стартува апликацијата."
-
-#: kdecore/kernel/ktoolinvocation.cpp:123
-#, kde-format
-msgid ""
-"KLauncher could not be reached via D-Bus. Error when calling %1:\n"
-"%2\n"
-msgstr ""
-"KLauncher не беше достапен преку D-Bus. Грешка при повикувањето на %1:\n"
-"%2\n"
-
-#: kdecore/kernel/ktoolinvocation.cpp:302
-#, kde-format
-msgid ""
-"Could not launch the KDE Help Center:\n"
-"\n"
-"%1"
-msgstr ""
-"Не може да се стартува Центарот за помош на KDE:\n"
-"\n"
-"%1"
-
-#: kdecore/kernel/ktoolinvocation.cpp:303
-msgid "Could not Launch Help Center"
-msgstr "Не може да се стартува Центарот за помош"
-
 #: kdecore/kernel/ktoolinvocation_x11.cpp:281
 #, kde-format
 msgid ""
@@ -3663,159 +3663,125 @@ msgstr ""
 msgid "Could not launch Terminal Client"
 msgstr "Не може да се стартува терминалот"
 
-#: kdecore/localization/kcharsets.cpp:155
-#: kdecore/localization/kencodingdetector.cpp:1149
-#: kdecore/localization/kencodingdetector.cpp:1232
-#: kdecore/localization/kencodingprober.cpp:244
-#: kdecore/localization/kencodingprober.cpp:303
-msgctxt "@item Text character set"
-msgid "Western European"
-msgstr "Западноевропски"
-
-#: kdecore/localization/kcharsets.cpp:161
-#: kdecore/localization/kencodingdetector.cpp:1151
-#: kdecore/localization/kencodingdetector.cpp:1214
-#: kdecore/localization/kencodingprober.cpp:246
-#: kdecore/localization/kencodingprober.cpp:285
-msgctxt "@item Text character set"
-msgid "Central European"
-msgstr "Централноевропски"
-
-#: kdecore/localization/kcharsets.cpp:164
-#: kdecore/localization/kencodingdetector.cpp:1161
-#: kdecore/localization/kencodingdetector.cpp:1211
-#: kdecore/localization/kencodingprober.cpp:256
-#: kdecore/localization/kencodingprober.cpp:282
-msgctxt "@item Text character set"
-msgid "Baltic"
-msgstr "Балтички"
-
-#: kdecore/localization/kcharsets.cpp:167
-msgctxt "@item Text character set"
-msgid "South-Eastern Europe"
-msgstr "Југоисточна Европа"
-
-#: kdecore/localization/kcharsets.cpp:170
-#: kdecore/localization/kencodingdetector.cpp:1157
-#: kdecore/localization/kencodingdetector.cpp:1229
-#: kdecore/localization/kencodingprober.cpp:252
-#: kdecore/localization/kencodingprober.cpp:300
-msgctxt "@item Text character set"
-msgid "Turkish"
-msgstr "Турски"
-
-#: kdecore/localization/kcharsets.cpp:173
-#: kdecore/localization/kencodingdetector.cpp:1147
-#: kdecore/localization/kencodingdetector.cpp:1217
-#: kdecore/localization/kencodingprober.cpp:242
-#: kdecore/localization/kencodingprober.cpp:288
-msgctxt "@item Text character set"
-msgid "Cyrillic"
-msgstr "Кириличен"
-
-#: kdecore/localization/kcharsets.cpp:179
-#: kdecore/localization/kencodingdetector.cpp:1235
-#: kdecore/localization/kencodingprober.cpp:258
-#: kdecore/localization/kencodingprober.cpp:306
-msgctxt "@item Text character set"
-msgid "Chinese Traditional"
-msgstr "Традиционален кинески"
-
-#: kdecore/localization/kcharsets.cpp:182
-#: kdecore/localization/kencodingdetector.cpp:1238
-#: kdecore/localization/kencodingprober.cpp:260
-#: kdecore/localization/kencodingprober.cpp:309
-msgctxt "@item Text character set"
-msgid "Chinese Simplified"
-msgstr "Поедноставен кинески"
-
-#: kdecore/localization/kcharsets.cpp:186
-#: kdecore/localization/kencodingdetector.cpp:1241
-#: kdecore/localization/kencodingprober.cpp:312
-msgctxt "@item Text character set"
-msgid "Korean"
-msgstr "Корејски"
-
-#: kdecore/localization/kcharsets.cpp:188
-#: kdecore/localization/kencodingdetector.cpp:1159
-#: kdecore/localization/kencodingdetector.cpp:1226
-#: kdecore/localization/kencodingprober.cpp:254
-#: kdecore/localization/kencodingprober.cpp:297
-msgctxt "@item Text character set"
-msgid "Japanese"
-msgstr "Јапонски"
-
-#: kdecore/localization/kcharsets.cpp:192
-#: kdecore/localization/kencodingdetector.cpp:1153
-#: kdecore/localization/kencodingdetector.cpp:1220
-#: kdecore/localization/kencodingprober.cpp:248
-#: kdecore/localization/kencodingprober.cpp:291
-msgctxt "@item Text character set"
-msgid "Greek"
-msgstr "Грчки"
-
-#: kdecore/localization/kcharsets.cpp:195
-#: kdecore/localization/kencodingdetector.cpp:1163
-#: kdecore/localization/kencodingdetector.cpp:1208
-#: kdecore/localization/kencodingprober.cpp:262
-#: kdecore/localization/kencodingprober.cpp:279
-msgctxt "@item Text character set"
-msgid "Arabic"
-msgstr "Арапски"
-
-#: kdecore/localization/kcharsets.cpp:198
-#: kdecore/localization/kencodingdetector.cpp:1155
-#: kdecore/localization/kencodingdetector.cpp:1223
-#: kdecore/localization/kencodingprober.cpp:250
-#: kdecore/localization/kencodingprober.cpp:294
-msgctxt "@item Text character set"
-msgid "Hebrew"
-msgstr "Еврејски"
-
-#: kdecore/localization/kcharsets.cpp:203
-#: kdecore/localization/kencodingdetector.cpp:1244
-#: kdecore/localization/kencodingprober.cpp:315
-msgctxt "@item Text character set"
-msgid "Thai"
-msgstr "Тајландски"
-
-#: kdecore/localization/kcharsets.cpp:206
 #: kdecore/localization/kencodingdetector.cpp:1145
 #: kdecore/localization/kencodingdetector.cpp:1247
 #: kdecore/localization/kencodingprober.cpp:240
 #: kdecore/localization/kencodingprober.cpp:318
+#: kdecore/localization/kcharsets.cpp:206
 msgctxt "@item Text character set"
 msgid "Unicode"
 msgstr "Уникод"
 
-#: kdecore/localization/kcharsets.cpp:212
+#: kdecore/localization/kencodingdetector.cpp:1147
+#: kdecore/localization/kencodingdetector.cpp:1217
+#: kdecore/localization/kencodingprober.cpp:242
+#: kdecore/localization/kencodingprober.cpp:288
+#: kdecore/localization/kcharsets.cpp:173
 msgctxt "@item Text character set"
-msgid "Northern Saami"
-msgstr "Северен саами"
+msgid "Cyrillic"
+msgstr "Кириличен"
 
-#: kdecore/localization/kcharsets.cpp:214
-#: kdecore/localization/kcharsets.cpp:619
+#: kdecore/localization/kencodingdetector.cpp:1149
+#: kdecore/localization/kencodingdetector.cpp:1232
+#: kdecore/localization/kencodingprober.cpp:244
+#: kdecore/localization/kencodingprober.cpp:303
+#: kdecore/localization/kcharsets.cpp:155
 msgctxt "@item Text character set"
-msgid "Other"
-msgstr "Друго"
+msgid "Western European"
+msgstr "Западноевропски"
 
-#: kdecore/localization/kcharsets.cpp:629
-#, kde-format
-msgctxt "@item %1 character set, %2 encoding"
-msgid "%1 ( %2 )"
-msgstr "%1 ( %2 )"
+#: kdecore/localization/kencodingdetector.cpp:1151
+#: kdecore/localization/kencodingdetector.cpp:1214
+#: kdecore/localization/kencodingprober.cpp:246
+#: kdecore/localization/kencodingprober.cpp:285
+#: kdecore/localization/kcharsets.cpp:161
+msgctxt "@item Text character set"
+msgid "Central European"
+msgstr "Централноевропски"
 
-#: kdecore/localization/kcharsets.cpp:632
-#, kde-format
-msgctxt "@item"
-msgid "Other encoding (%1)"
-msgstr "Друго кодирање (%1)"
+#: kdecore/localization/kencodingdetector.cpp:1153
+#: kdecore/localization/kencodingdetector.cpp:1220
+#: kdecore/localization/kencodingprober.cpp:248
+#: kdecore/localization/kencodingprober.cpp:291
+#: kdecore/localization/kcharsets.cpp:192
+msgctxt "@item Text character set"
+msgid "Greek"
+msgstr "Грчки"
 
-#: kdecore/localization/kcharsets.cpp:658
-#, kde-format
-msgctxt "@item Text encoding: %1 character set, %2 encoding"
-msgid "%1 ( %2 )"
-msgstr "%1 ( %2 )"
+#: kdecore/localization/kencodingdetector.cpp:1155
+#: kdecore/localization/kencodingdetector.cpp:1223
+#: kdecore/localization/kencodingprober.cpp:250
+#: kdecore/localization/kencodingprober.cpp:294
+#: kdecore/localization/kcharsets.cpp:198
+msgctxt "@item Text character set"
+msgid "Hebrew"
+msgstr "Еврејски"
+
+#: kdecore/localization/kencodingdetector.cpp:1157
+#: kdecore/localization/kencodingdetector.cpp:1229
+#: kdecore/localization/kencodingprober.cpp:252
+#: kdecore/localization/kencodingprober.cpp:300
+#: kdecore/localization/kcharsets.cpp:170
+msgctxt "@item Text character set"
+msgid "Turkish"
+msgstr "Турски"
+
+#: kdecore/localization/kencodingdetector.cpp:1159
+#: kdecore/localization/kencodingdetector.cpp:1226
+#: kdecore/localization/kencodingprober.cpp:254
+#: kdecore/localization/kencodingprober.cpp:297
+#: kdecore/localization/kcharsets.cpp:188
+msgctxt "@item Text character set"
+msgid "Japanese"
+msgstr "Јапонски"
+
+#: kdecore/localization/kencodingdetector.cpp:1161
+#: kdecore/localization/kencodingdetector.cpp:1211
+#: kdecore/localization/kencodingprober.cpp:256
+#: kdecore/localization/kencodingprober.cpp:282
+#: kdecore/localization/kcharsets.cpp:164
+msgctxt "@item Text character set"
+msgid "Baltic"
+msgstr "Балтички"
+
+#: kdecore/localization/kencodingdetector.cpp:1163
+#: kdecore/localization/kencodingdetector.cpp:1208
+#: kdecore/localization/kencodingprober.cpp:262
+#: kdecore/localization/kencodingprober.cpp:279
+#: kdecore/localization/kcharsets.cpp:195
+msgctxt "@item Text character set"
+msgid "Arabic"
+msgstr "Арапски"
+
+#: kdecore/localization/kencodingdetector.cpp:1235
+#: kdecore/localization/kencodingprober.cpp:258
+#: kdecore/localization/kencodingprober.cpp:306
+#: kdecore/localization/kcharsets.cpp:179
+msgctxt "@item Text character set"
+msgid "Chinese Traditional"
+msgstr "Традиционален кинески"
+
+#: kdecore/localization/kencodingdetector.cpp:1238
+#: kdecore/localization/kencodingprober.cpp:260
+#: kdecore/localization/kencodingprober.cpp:309
+#: kdecore/localization/kcharsets.cpp:182
+msgctxt "@item Text character set"
+msgid "Chinese Simplified"
+msgstr "Поедноставен кинески"
+
+#: kdecore/localization/kencodingdetector.cpp:1241
+#: kdecore/localization/kencodingprober.cpp:312
+#: kdecore/localization/kcharsets.cpp:186
+msgctxt "@item Text character set"
+msgid "Korean"
+msgstr "Корејски"
+
+#: kdecore/localization/kencodingdetector.cpp:1244
+#: kdecore/localization/kencodingprober.cpp:315
+#: kdecore/localization/kcharsets.cpp:203
+msgctxt "@item Text character set"
+msgid "Thai"
+msgstr "Тајландски"
 
 #: kdecore/localization/kencodingprober.cpp:236
 #: kdecore/localization/kencodingprober.cpp:273
@@ -4404,6 +4370,40 @@ msgstr "Win"
 msgctxt "keyboard-key-name"
 msgid "F%1"
 msgstr "F%1"
+
+#: kdecore/localization/kcharsets.cpp:167
+msgctxt "@item Text character set"
+msgid "South-Eastern Europe"
+msgstr "Југоисточна Европа"
+
+#: kdecore/localization/kcharsets.cpp:212
+msgctxt "@item Text character set"
+msgid "Northern Saami"
+msgstr "Северен саами"
+
+#: kdecore/localization/kcharsets.cpp:214
+#: kdecore/localization/kcharsets.cpp:619
+msgctxt "@item Text character set"
+msgid "Other"
+msgstr "Друго"
+
+#: kdecore/localization/kcharsets.cpp:629
+#, kde-format
+msgctxt "@item %1 character set, %2 encoding"
+msgid "%1 ( %2 )"
+msgstr "%1 ( %2 )"
+
+#: kdecore/localization/kcharsets.cpp:632
+#, kde-format
+msgctxt "@item"
+msgid "Other encoding (%1)"
+msgstr "Друго кодирање (%1)"
+
+#: kdecore/localization/kcharsets.cpp:658
+#, kde-format
+msgctxt "@item Text encoding: %1 character set, %2 encoding"
+msgid "%1 ( %2 )"
+msgstr "%1 ( %2 )"
 
 #: kdecore/localization/klocale_kde.cpp:1093
 msgctxt "digit set"
@@ -5464,50 +5464,6 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Автом. откривање"
 
-#: kdeui/actions/ktogglefullscreenaction.cpp:48
-#: kdeui/actions/ktogglefullscreenaction.cpp:55
-#: kdeui/actions/ktogglefullscreenaction.cpp:85
-#: kdeui/actions/kstandardaction_p.h:101
-msgid "F&ull Screen Mode"
-msgstr "Преку целиот &екран"
-
-#: kdeui/actions/ktogglefullscreenaction.cpp:51
-#: kdeui/actions/ktogglefullscreenaction.cpp:58
-#: kdeui/actions/ktogglefullscreenaction.cpp:86
-msgid "Full Screen"
-msgstr "Преку целиот екран"
-
-#: kdeui/actions/ktogglefullscreenaction.cpp:81
-msgid "Exit F&ull Screen Mode"
-msgstr "Излез од режимот Преку целиот &екран"
-
-#: kdeui/actions/ktogglefullscreenaction.cpp:82
-msgid "Exit Full Screen"
-msgstr "Излез од режимот Преку целиот екран"
-
-#: kdeui/actions/kaction.cpp:122
-#, kde-format
-msgid ""
-"The key sequence '%1' is ambiguous. Use 'Configure Shortcuts'\n"
-"from the 'Settings' menu to solve the ambiguity.\n"
-"No action will be triggered."
-msgstr ""
-"Секвенцата на тастери „%1“ е двозначна. Користете „Конфигурирај кратенки“\n"
-"од менито „Поставувања“ за да го решите проблемот.\n"
-"Нема да биде активирано ниедно дејство."
-
-#: kdeui/actions/kaction.cpp:126
-msgid "Ambiguous shortcut detected"
-msgstr "Пронајдена е двозначна кратенка"
-
-#: kdeui/actions/krecentfilesaction.cpp:81
-msgid "No Entries"
-msgstr "Нема елементи"
-
-#: kdeui/actions/krecentfilesaction.cpp:85
-msgid "Clear List"
-msgstr "Исчисти листа"
-
 #: kdeui/actions/kstandardaction.cpp:93 kdeui/util/kstandardguiitem.cpp:210
 msgctxt "go back"
 msgid "&Back"
@@ -5551,6 +5507,50 @@ msgid ""
 msgstr ""
 "Прикажи ја статусната линија<br /><br />Ја прикажува статусната линија која "
 "се наоѓа на дното од прозорецот и служи за покажување статусни информации."
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:48
+#: kdeui/actions/ktogglefullscreenaction.cpp:55
+#: kdeui/actions/ktogglefullscreenaction.cpp:85
+#: kdeui/actions/kstandardaction_p.h:101
+msgid "F&ull Screen Mode"
+msgstr "Преку целиот &екран"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:51
+#: kdeui/actions/ktogglefullscreenaction.cpp:58
+#: kdeui/actions/ktogglefullscreenaction.cpp:86
+msgid "Full Screen"
+msgstr "Преку целиот екран"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:81
+msgid "Exit F&ull Screen Mode"
+msgstr "Излез од режимот Преку целиот &екран"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:82
+msgid "Exit Full Screen"
+msgstr "Излез од режимот Преку целиот екран"
+
+#: kdeui/actions/kaction.cpp:122
+#, kde-format
+msgid ""
+"The key sequence '%1' is ambiguous. Use 'Configure Shortcuts'\n"
+"from the 'Settings' menu to solve the ambiguity.\n"
+"No action will be triggered."
+msgstr ""
+"Секвенцата на тастери „%1“ е двозначна. Користете „Конфигурирај кратенки“\n"
+"од менито „Поставувања“ за да го решите проблемот.\n"
+"Нема да биде активирано ниедно дејство."
+
+#: kdeui/actions/kaction.cpp:126
+msgid "Ambiguous shortcut detected"
+msgstr "Пронајдена е двозначна кратенка"
+
+#: kdeui/actions/krecentfilesaction.cpp:81
+msgid "No Entries"
+msgstr "Нема елементи"
+
+#: kdeui/actions/krecentfilesaction.cpp:85
+msgid "Clear List"
+msgstr "Исчисти листа"
 
 #: kdeui/dialogs/kaboutapplicationdialog.cpp:84
 msgid ""
@@ -5757,6 +5757,112 @@ msgstr "&Поддршка на KDE"
 #: kdeui/dialogs/kconfigdialog.cpp:69 kutils/kcmultidialog.cpp:208
 msgid "Configure"
 msgstr "Конфигурација"
+
+#: kdeui/dialogs/kedittoolbar.cpp:58
+msgid "--- separator ---"
+msgstr "--- разделувач ---"
+
+#: kdeui/dialogs/kedittoolbar.cpp:287
+msgid "Change Text"
+msgstr "Менување текст"
+
+#: kdeui/dialogs/kedittoolbar.cpp:298
+#, fuzzy
+#| msgid "Icon Te&xt:"
+msgid "Icon te&xt:"
+msgstr "Т&екст на иконата:"
+
+#: kdeui/dialogs/kedittoolbar.cpp:303
+msgid "&Hide text when toolbar shows text alongside icons"
+msgstr ""
+
+#: kdeui/dialogs/kedittoolbar.cpp:553
+msgid "Configure Toolbars"
+msgstr "Конфигурирање алатки"
+
+#: kdeui/dialogs/kedittoolbar.cpp:602
+msgid ""
+"Do you really want to reset all toolbars of this application to their "
+"default? The changes will be applied immediately."
+msgstr ""
+"Дали навистина сакате да ги ресетирате сите алатници на апликацијата на "
+"нивните стандардни вредности? Промените ќе бидат применети веднаш."
+
+#: kdeui/dialogs/kedittoolbar.cpp:602
+msgid "Reset Toolbars"
+msgstr "Ресетирање алатници"
+
+#: kdeui/dialogs/kedittoolbar.cpp:602 khtml/khtmlview.cpp:2814
+#: khtml/khtmlview.cpp:2847 khtml/html/html_formimpl.cpp:1845
+msgid "Reset"
+msgstr "Ресетирај"
+
+#: kdeui/dialogs/kedittoolbar.cpp:896
+msgid "&Toolbar:"
+msgstr "&Алатки:"
+
+#: kdeui/dialogs/kedittoolbar.cpp:911
+msgid "A&vailable actions:"
+msgstr "&Достапни дејства:"
+
+#: kdeui/dialogs/kedittoolbar.cpp:926 kdeui/dialogs/kedittoolbar.cpp:945
+msgid "Filter"
+msgstr "Филтер"
+
+#: kdeui/dialogs/kedittoolbar.cpp:929
+msgid "Curr&ent actions:"
+msgstr "&Сегашни дејства:"
+
+#: kdeui/dialogs/kedittoolbar.cpp:948
+msgid "Change &Icon..."
+msgstr "Измени &икона..."
+
+#: kdeui/dialogs/kedittoolbar.cpp:958
+msgid "Change Te&xt..."
+msgstr "Измени &текст..."
+
+#: kdeui/dialogs/kedittoolbar.cpp:1109
+#, kde-format
+msgctxt "@item:intable Action name in toolbar editor"
+msgid "%1"
+msgstr "%1"
+
+#: kdeui/dialogs/kedittoolbar.cpp:1130
+msgid ""
+"This element will be replaced with all the elements of an embedded component."
+msgstr "Овој елемент ќе се замени со сите елементи на вгнездената компонента."
+
+#: kdeui/dialogs/kedittoolbar.cpp:1132
+msgid "<Merge>"
+msgstr "<Спои>"
+
+#: kdeui/dialogs/kedittoolbar.cpp:1134
+#, kde-format
+msgid "<Merge %1>"
+msgstr "<Спои %1>"
+
+#: kdeui/dialogs/kedittoolbar.cpp:1140
+msgid ""
+"This is a dynamic list of actions. You can move it, but if you remove it you "
+"will not be able to re-add it."
+msgstr ""
+"Ова е динамичка листа од дејства. Може да ја преместите, но ако ја "
+"отстраните нема да може да ја додадете повторно."
+
+#: kdeui/dialogs/kedittoolbar.cpp:1141
+#, kde-format
+msgid "ActionList: %1"
+msgstr "Листа на акции: %1"
+
+#: kdeui/dialogs/kedittoolbar.cpp:1242 kdeui/dialogs/kedittoolbar.cpp:1272
+#, kde-format
+msgctxt "@label Action tooltip in toolbar editor, below the action list"
+msgid "%1"
+msgstr "%1"
+
+#: kdeui/dialogs/kedittoolbar.cpp:1525
+msgid "Change Icon"
+msgstr "Измена на икона"
 
 #: kdeui/dialogs/kcupsoptionsjobwidget_p.cpp:90
 msgid "Print Immediately"
@@ -6582,112 +6688,6 @@ msgstr "Следно"
 #: knewstuff/knewstuff3/uploaddialog.cpp:370
 msgid "Finish"
 msgstr "Заврши"
-
-#: kdeui/dialogs/kedittoolbar.cpp:58
-msgid "--- separator ---"
-msgstr "--- разделувач ---"
-
-#: kdeui/dialogs/kedittoolbar.cpp:287
-msgid "Change Text"
-msgstr "Менување текст"
-
-#: kdeui/dialogs/kedittoolbar.cpp:298
-#, fuzzy
-#| msgid "Icon Te&xt:"
-msgid "Icon te&xt:"
-msgstr "Т&екст на иконата:"
-
-#: kdeui/dialogs/kedittoolbar.cpp:303
-msgid "&Hide text when toolbar shows text alongside icons"
-msgstr ""
-
-#: kdeui/dialogs/kedittoolbar.cpp:553
-msgid "Configure Toolbars"
-msgstr "Конфигурирање алатки"
-
-#: kdeui/dialogs/kedittoolbar.cpp:602
-msgid ""
-"Do you really want to reset all toolbars of this application to their "
-"default? The changes will be applied immediately."
-msgstr ""
-"Дали навистина сакате да ги ресетирате сите алатници на апликацијата на "
-"нивните стандардни вредности? Промените ќе бидат применети веднаш."
-
-#: kdeui/dialogs/kedittoolbar.cpp:602
-msgid "Reset Toolbars"
-msgstr "Ресетирање алатници"
-
-#: kdeui/dialogs/kedittoolbar.cpp:602 khtml/khtmlview.cpp:2814
-#: khtml/khtmlview.cpp:2847 khtml/html/html_formimpl.cpp:1845
-msgid "Reset"
-msgstr "Ресетирај"
-
-#: kdeui/dialogs/kedittoolbar.cpp:896
-msgid "&Toolbar:"
-msgstr "&Алатки:"
-
-#: kdeui/dialogs/kedittoolbar.cpp:911
-msgid "A&vailable actions:"
-msgstr "&Достапни дејства:"
-
-#: kdeui/dialogs/kedittoolbar.cpp:926 kdeui/dialogs/kedittoolbar.cpp:945
-msgid "Filter"
-msgstr "Филтер"
-
-#: kdeui/dialogs/kedittoolbar.cpp:929
-msgid "Curr&ent actions:"
-msgstr "&Сегашни дејства:"
-
-#: kdeui/dialogs/kedittoolbar.cpp:948
-msgid "Change &Icon..."
-msgstr "Измени &икона..."
-
-#: kdeui/dialogs/kedittoolbar.cpp:958
-msgid "Change Te&xt..."
-msgstr "Измени &текст..."
-
-#: kdeui/dialogs/kedittoolbar.cpp:1109
-#, kde-format
-msgctxt "@item:intable Action name in toolbar editor"
-msgid "%1"
-msgstr "%1"
-
-#: kdeui/dialogs/kedittoolbar.cpp:1130
-msgid ""
-"This element will be replaced with all the elements of an embedded component."
-msgstr "Овој елемент ќе се замени со сите елементи на вгнездената компонента."
-
-#: kdeui/dialogs/kedittoolbar.cpp:1132
-msgid "<Merge>"
-msgstr "<Спои>"
-
-#: kdeui/dialogs/kedittoolbar.cpp:1134
-#, kde-format
-msgid "<Merge %1>"
-msgstr "<Спои %1>"
-
-#: kdeui/dialogs/kedittoolbar.cpp:1140
-msgid ""
-"This is a dynamic list of actions. You can move it, but if you remove it you "
-"will not be able to re-add it."
-msgstr ""
-"Ова е динамичка листа од дејства. Може да ја преместите, но ако ја "
-"отстраните нема да може да ја додадете повторно."
-
-#: kdeui/dialogs/kedittoolbar.cpp:1141
-#, kde-format
-msgid "ActionList: %1"
-msgstr "Листа на акции: %1"
-
-#: kdeui/dialogs/kedittoolbar.cpp:1242 kdeui/dialogs/kedittoolbar.cpp:1272
-#, kde-format
-msgctxt "@label Action tooltip in toolbar editor, below the action list"
-msgid "%1"
-msgstr "%1"
-
-#: kdeui/dialogs/kedittoolbar.cpp:1525
-msgid "Change Icon"
-msgstr "Измена на икона"
 
 #: kdeui/findreplace/kfind.cpp:50
 msgid "Find Next"
@@ -7954,6 +7954,12 @@ msgctxt "@action"
 msgid "About KDE"
 msgstr "За KDE"
 
+#: kdeui/sonnet/configdialog.cpp:51
+#, fuzzy
+#| msgid "Send Confirmation"
+msgid "Spell Checking Configuration"
+msgstr "Испрати потврда"
+
 #: kdeui/sonnet/dialog.cpp:103 kdeui/sonnet/dialog.cpp:224
 #: kdeui/sonnet/dialog.cpp:445
 msgctxt "@title:window"
@@ -7981,12 +7987,6 @@ msgstr "Проверката на правопис е откажана."
 #: kdeui/sonnet/dialog.cpp:441 kdeui/sonnet/dialog.cpp:445
 msgid "Spell check complete."
 msgstr "Проверката на правопис е завршена."
-
-#: kdeui/sonnet/configdialog.cpp:51
-#, fuzzy
-#| msgid "Send Confirmation"
-msgid "Spell Checking Configuration"
-msgstr "Испрати потврда"
 
 #: kdeui/util/kcompletion.cpp:693
 msgid ""
@@ -9487,22 +9487,6 @@ msgstr "Изберете година"
 msgid "Select the current day"
 msgstr "Изберете го денешниот ден"
 
-#: kdeui/widgets/keditlistbox.cpp:326 kdeui/widgets/keditlistwidget.cpp:305
-msgid "&Add"
-msgstr "&Додај"
-
-#: kdeui/widgets/keditlistbox.cpp:338 kdeui/widgets/keditlistwidget.cpp:317
-msgid "&Remove"
-msgstr "О&тстрани"
-
-#: kdeui/widgets/keditlistbox.cpp:350 kdeui/widgets/keditlistwidget.cpp:329
-msgid "Move &Up"
-msgstr "Помести &горе"
-
-#: kdeui/widgets/keditlistbox.cpp:355 kdeui/widgets/keditlistwidget.cpp:334
-msgid "Move &Down"
-msgstr "Помести &долу"
-
 #. i18n: Placeholder text in line edit widgets is the text appearing
 #. before any user input, briefly explaining to the user what to type
 #. (e.g. "Enter search pattern").
@@ -9562,6 +9546,22 @@ msgstr "Паѓачка листа и автоматски"
 msgctxt "@item:inmenu Text Completion"
 msgid "Default"
 msgstr "Стандардно"
+
+#: kdeui/widgets/keditlistbox.cpp:326 kdeui/widgets/keditlistwidget.cpp:305
+msgid "&Add"
+msgstr "&Додај"
+
+#: kdeui/widgets/keditlistbox.cpp:338 kdeui/widgets/keditlistwidget.cpp:317
+msgid "&Remove"
+msgstr "О&тстрани"
+
+#: kdeui/widgets/keditlistbox.cpp:350 kdeui/widgets/keditlistwidget.cpp:329
+msgid "Move &Up"
+msgstr "Помести &горе"
+
+#: kdeui/widgets/keditlistbox.cpp:355 kdeui/widgets/keditlistwidget.cpp:334
+msgid "Move &Down"
+msgstr "Помести &долу"
 
 #: kdeui/widgets/khistorycombobox.cpp:177 khtml/rendering/render_form.cpp:936
 msgid "Clear &History"
@@ -9928,6 +9928,26 @@ msgstr "Горен индекс"
 msgid "&Copy Full Text"
 msgstr "&Копирај цел текст"
 
+#: kdeui/widgets/ktimecombobox.cpp:259
+#, fuzzy
+#| msgctxt "SSL error"
+#| msgid "The certificate is invalid"
+msgctxt "@info"
+msgid "The time you entered is invalid"
+msgstr "Сертификатот не е валиден"
+
+#: kdeui/widgets/ktimecombobox.cpp:262
+#, kde-format
+msgctxt "@info"
+msgid "Time cannot be earlier than %1"
+msgstr ""
+
+#: kdeui/widgets/ktimecombobox.cpp:269
+#, kde-format
+msgctxt "@info"
+msgid "Time cannot be later than %1"
+msgstr ""
+
 #: kdeui/widgets/ktimezonewidget.cpp:66
 msgctxt "Define an area in the time zone, like a town area"
 msgid "Area"
@@ -10155,30 +10175,10 @@ msgctxt "@info"
 msgid "The entered date and time is after the maximum allowed date and time."
 msgstr ""
 
-#: kdeui/widgets/ktimecombobox.cpp:259
-#, fuzzy
-#| msgctxt "SSL error"
-#| msgid "The certificate is invalid"
-msgctxt "@info"
-msgid "The time you entered is invalid"
-msgstr "Сертификатот не е валиден"
-
-#: kdeui/widgets/ktimecombobox.cpp:262
-#, kde-format
-msgctxt "@info"
-msgid "Time cannot be earlier than %1"
-msgstr ""
-
-#: kdeui/widgets/ktimecombobox.cpp:269
-#, kde-format
-msgctxt "@info"
-msgid "Time cannot be later than %1"
-msgstr ""
-
 #: kdeui/windowmanagement/kwindowsystem_mac.cpp:563
 #: kdeui/windowmanagement/kwindowsystem_qws.cpp:176
-#: kdeui/windowmanagement/kwindowsystem_win.cpp:598
 #: kdeui/windowmanagement/kwindowsystem_x11.cpp:896
+#: kdeui/windowmanagement/kwindowsystem_win.cpp:598
 #, kde-format
 msgid "Desktop %1"
 msgstr "Работна површина %1"
@@ -10508,6 +10508,50 @@ msgstr "Зачувај како"
 #: khtml/khtmladaptorpart.cpp:29
 msgid "Inactive"
 msgstr "Неактивно"
+
+#: khtml/khtmlimage.cpp:202
+#, kde-format
+msgid "%1 (%2 - %3x%4 Pixels)"
+msgstr "%1 (%2 - %3x%4 пиксели)"
+
+#: khtml/khtmlimage.cpp:204
+#, kde-format
+msgid "%1 - %2x%3 Pixels"
+msgstr "%1 - %2x%3 пиксели"
+
+#: khtml/khtmlimage.cpp:209
+#, kde-format
+msgid "%1 (%2x%3 Pixels)"
+msgstr "%1 (%2x%3 пиксели)"
+
+#: khtml/khtmlimage.cpp:211
+#, kde-format
+msgid "Image - %1x%2 Pixels"
+msgstr "Слика - %1x%2 пиксели"
+
+#: khtml/khtmlimage.cpp:217
+msgid "Done."
+msgstr "Готово."
+
+#: khtml/test_regression_gui_main.cpp:34
+msgid "TestRegressionGui"
+msgstr "TestRegressionGui"
+
+#: khtml/test_regression_gui_main.cpp:35
+msgid "GUI for the khtml regression tester"
+msgstr "GUI за тестирањето на регресии за khtml"
+
+#: khtml/testkhtml.cpp:39
+msgid "URL to open"
+msgstr "URL за отворање"
+
+#: khtml/testkhtml.cpp:41
+msgid "Testkhtml"
+msgstr "Testkhtml"
+
+#: khtml/testkhtml.cpp:42
+msgid "a basic web browser using the KHTML library"
+msgstr "основен веб-прелистувач што ја користи библиотеката KHTML"
 
 #: khtml/khtml_part.cpp:251
 msgid "View Do&cument Source"
@@ -10975,26 +11019,6 @@ msgstr "Прикажи пасивно скок-&известување за бл
 msgid "&Configure JavaScript New Window Policies..."
 msgstr "&Конфигурирај политики за нов прозорец од JavaScript..."
 
-#: khtml/test_regression_gui_main.cpp:34
-msgid "TestRegressionGui"
-msgstr "TestRegressionGui"
-
-#: khtml/test_regression_gui_main.cpp:35
-msgid "GUI for the khtml regression tester"
-msgstr "GUI за тестирањето на регресии за khtml"
-
-#: khtml/testkhtml.cpp:39
-msgid "URL to open"
-msgstr "URL за отворање"
-
-#: khtml/testkhtml.cpp:41
-msgid "Testkhtml"
-msgstr "Testkhtml"
-
-#: khtml/testkhtml.cpp:42
-msgid "a basic web browser using the KHTML library"
-msgstr "основен веб-прелистувач што ја користи библиотеката KHTML"
-
 #: khtml/khtml_settings.cpp:235
 msgid "Accept"
 msgstr "Прифати"
@@ -11110,30 +11134,6 @@ msgstr "Отстрани од игнорирани..."
 #: khtml/khtmlview.cpp:1842
 msgid "Access Keys activated"
 msgstr "Тастерите за пристап се активирани"
-
-#: khtml/khtmlimage.cpp:202
-#, kde-format
-msgid "%1 (%2 - %3x%4 Pixels)"
-msgstr "%1 (%2 - %3x%4 пиксели)"
-
-#: khtml/khtmlimage.cpp:204
-#, kde-format
-msgid "%1 - %2x%3 Pixels"
-msgstr "%1 - %2x%3 пиксели"
-
-#: khtml/khtmlimage.cpp:209
-#, kde-format
-msgid "%1 (%2x%3 Pixels)"
-msgstr "%1 (%2x%3 пиксели)"
-
-#: khtml/khtmlimage.cpp:211
-#, kde-format
-msgid "Image - %1x%2 Pixels"
-msgstr "Слика - %1x%2 пиксели"
-
-#: khtml/khtmlimage.cpp:217
-msgid "Done."
-msgstr "Готово."
 
 #: khtml/ecma/kjs_binding.cpp:185
 msgid ""
