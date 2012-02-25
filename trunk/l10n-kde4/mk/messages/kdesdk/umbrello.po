@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-22 04:22+0100\n"
+"POT-Creation-Date: 2012-02-25 04:35+0100\n"
 "PO-Revision-Date: 2006-09-30 17:38+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -378,7 +378,7 @@ msgstr ""
 
 #: dialogs/umluniqueconstraintdialog.cpp:114
 #: dialogs/classifierlistpage.cpp:206 dialogs/umloperationdialog.cpp:166
-#: dialogs/umlforeignkeyconstraintdialog.cpp:310 uml.cpp:422 umldoc.cpp:1449
+#: dialogs/umlforeignkeyconstraintdialog.cpp:310 uml.cpp:422 umldoc.cpp:1470
 #: umlview.cpp:3040
 #, fuzzy
 msgid "&Delete"
@@ -456,8 +456,8 @@ msgstr "Името што го внесовте не е валидно."
 
 #: dialogs/umlviewdialog.cpp:217 classifier.cpp:393 classifier.cpp:770
 #: package.cpp:175 object_factory.cpp:197 enum.cpp:107 entity.cpp:125
-#: entity.cpp:178 entity.cpp:228 entity.cpp:277 umldoc.cpp:1287
-#: umldoc.cpp:1328 umldoc.cpp:1358 umldoc.cpp:1392
+#: entity.cpp:178 entity.cpp:228 entity.cpp:277 umldoc.cpp:1284
+#: umldoc.cpp:1349 umldoc.cpp:1379 umldoc.cpp:1413
 msgid "Invalid Name"
 msgstr "Невалидно име"
 
@@ -465,8 +465,8 @@ msgstr "Невалидно име"
 msgid "The name you have entered is not unique."
 msgstr "Името што го внесовте не е единствено."
 
-#: dialogs/umlviewdialog.cpp:227 umllistview.cpp:2310 umllistview.cpp:2317
-#: umllistview.cpp:2582 umldoc.cpp:1398
+#: dialogs/umlviewdialog.cpp:227 umllistview.cpp:2311 umllistview.cpp:2318
+#: umllistview.cpp:2583 umldoc.cpp:1419
 msgid "Name Not Unique"
 msgstr "Името не е единствено"
 
@@ -2551,37 +2551,13 @@ msgstr "Преименување на објект"
 msgid "Create uml object : %1"
 msgstr "Креирај папка"
 
-#: cmds/cmd_create_classdiag.cpp:26
-#, fuzzy, kde-format
-#| msgid "class diagram"
-msgid "Create class diagram : %1"
-msgstr "Дијаграм на класи"
-
-#: cmds/cmd_create_entityrelationdiag.cpp:26
-#, fuzzy, kde-format
-#| msgid "entity relationship diagram"
-msgid "Create entity relationship diagram : %1"
-msgstr "Дијаграм на ентитет-релација"
-
-#: cmds/cmd_create_usecasediag.cpp:26
-#, fuzzy, kde-format
-#| msgid "class diagram"
-msgid "Create use case diagram : %1"
-msgstr "Дијаграм на класи"
-
 #: cmds/cmd_set_visibility.cpp:24
 #, fuzzy, kde-format
 #| msgid "Show &visibility"
 msgid "Change visibility : %1"
 msgstr "Прикажи &видливост"
 
-#: cmds/cmd_create_activitydiag.cpp:26
-#, fuzzy, kde-format
-#| msgid "activity diagram"
-msgid "Create activity diagram : %1"
-msgstr "Дијаграм на активности"
-
-#: cmds/cmd_moveWidget.cpp:26
+#: cmds/cmd_moveWidget.cpp:27
 #, fuzzy, kde-format
 #| msgid "Create Folder"
 msgid "Move widget : %1"
@@ -2598,39 +2574,17 @@ msgstr ""
 msgid "Change text : %1 to %2"
 msgstr "Изменете текст"
 
-#: cmds/cmd_create_statediag.cpp:26
-#, fuzzy, kde-format
-#| msgid "state diagram"
-msgid "Create state diagram : %1"
-msgstr "Дијаграм на состојби"
-
-#: cmds/cmd_create_collaborationdiag.cpp:26
-#, fuzzy, kde-format
-msgid "Create collaboration diagram : %1"
-msgstr "Дијаграм на колаборација"
-
-#: cmds/cmd_create_seqdiag.cpp:26
-#, fuzzy, kde-format
-#| msgid "sequence diagram"
-msgid "Create sequence diagram : %1"
-msgstr "Дијаграм на секвенци"
-
-#: cmds/cmd_create_deploydiag.cpp:26
-#, fuzzy, kde-format
-msgid "Create deployment diagram : %1"
-msgstr "Дијаграм на поставување"
-
-#: cmds/cmd_resizeWidget.cpp:26
+#: cmds/cmd_resizeWidget.cpp:27
 #, fuzzy, kde-format
 #| msgid "Create Folder"
 msgid "Resize widget : %1"
 msgstr "Креирај папка"
 
-#: cmds/cmd_create_componentdiag.cpp:26
+#: cmds/cmd_create_diagram.cpp:29
 #, fuzzy, kde-format
-#| msgid "component diagram"
-msgid "Create component diagram : %1"
-msgstr "Дијаграм на компоненти"
+#| msgid "state diagram"
+msgid "Create diagram %1: %2"
+msgstr "Дијаграм на состојби"
 
 #: refactoring/refactoringassistant.cpp:49
 #, fuzzy
@@ -3036,7 +2990,7 @@ msgid "Stereotype"
 msgstr "Стереотип"
 
 #: stereotype.cpp:112 enumliteral.cpp:104 object_factory.cpp:191
-#: umldoc.cpp:1279 umldoc.cpp:1322 umldoc.cpp:1353 umldoc.cpp:1387
+#: umldoc.cpp:1276 umldoc.cpp:1343 umldoc.cpp:1374 umldoc.cpp:1408
 msgid "Enter name:"
 msgstr "Внесете име:"
 
@@ -3373,19 +3327,19 @@ msgstr ""
 
 #: classifier.cpp:393 classifier.cpp:770 package.cpp:174
 #: object_factory.cpp:196 enum.cpp:107 entity.cpp:125 entity.cpp:178
-#: entity.cpp:228 entity.cpp:277 umldoc.cpp:1358 umldoc.cpp:1392
+#: entity.cpp:228 entity.cpp:277 umldoc.cpp:1379 umldoc.cpp:1413
 msgid "That is an invalid name."
 msgstr "Ова не е валидно име."
 
 #: classifier.cpp:396 classifier.cpp:772 object_factory.cpp:207 entity.cpp:127
-#: entity.cpp:180 entity.cpp:230 entity.cpp:279 umldoc.cpp:1365
-#: umldoc.cpp:1403
+#: entity.cpp:180 entity.cpp:230 entity.cpp:279 umldoc.cpp:1386
+#: umldoc.cpp:1424
 msgid "That name is already being used."
 msgstr "Името е веќе во употреба."
 
 #: classifier.cpp:396 classifier.cpp:772 object_factory.cpp:208 entity.cpp:127
-#: entity.cpp:180 entity.cpp:230 entity.cpp:279 umldoc.cpp:1301
-#: umldoc.cpp:1337 umldoc.cpp:1365 umldoc.cpp:1403
+#: entity.cpp:180 entity.cpp:230 entity.cpp:279 umldoc.cpp:1288
+#: umldoc.cpp:1358 umldoc.cpp:1386 umldoc.cpp:1424
 msgid "Not a Unique Name"
 msgstr "Името не е единствено"
 
@@ -3735,10 +3689,10 @@ msgstr ""
 msgid "Opening file..."
 msgstr "Отворам датотека..."
 
-#: uml.cpp:895 uml.cpp:1189 umldoc.cpp:285 umldoc.cpp:375 umldoc.cpp:425
+#: uml.cpp:895 uml.cpp:1189 umldoc.cpp:284 umldoc.cpp:374 umldoc.cpp:425
 #: umldoc.cpp:447 umldoc.cpp:485 umldoc.cpp:497 umldoc.cpp:511 umldoc.cpp:523
-#: umldoc.cpp:535 umldoc.cpp:701 umldoc.cpp:708 umldoc.cpp:2769
-#: umldoc.cpp:2772
+#: umldoc.cpp:535 umldoc.cpp:701 umldoc.cpp:708 umldoc.cpp:2791
+#: umldoc.cpp:2794
 msgid "Untitled"
 msgstr ""
 
@@ -3858,19 +3812,19 @@ msgctxt "reset status bar"
 msgid "Ready."
 msgstr "Подготвен."
 
-#: uml.cpp:2014
+#: uml.cpp:2024
 msgid "Cannot view code until you generate some first."
 msgstr "Неможе да се прегледа кодот додека не се генерира."
 
-#: uml.cpp:2014 uml.cpp:2017
+#: uml.cpp:2024 uml.cpp:2027
 msgid "Cannot View Code"
 msgstr "Неможе да се прегледа кодот"
 
-#: uml.cpp:2017
+#: uml.cpp:2027
 msgid "Cannot view code from simple code writer."
 msgstr "Неможе да се прегледа кодот од едноставен пишувач на код."
 
-#: uml.cpp:2879
+#: uml.cpp:2889
 msgid "XHTML Generation failed ."
 msgstr ""
 
@@ -7135,7 +7089,7 @@ msgstr ""
 "Името што го внесовте не е валидно.\n"
 "Процесот на преименување е откажан."
 
-#: umllistviewitem.cpp:715 umllistview.cpp:2300
+#: umllistviewitem.cpp:715 umllistview.cpp:2301
 msgid "Name Not Valid"
 msgstr "Невалидно име"
 
@@ -7180,11 +7134,11 @@ msgstr "Внесување име на модел"
 msgid "Enter the new name of the model:"
 msgstr "Внесете го новото име на моделот:"
 
-#: umllistview.cpp:1318
+#: umllistview.cpp:1319
 msgid "Views"
 msgstr "Прегледи"
 
-#: umllistview.cpp:2299
+#: umllistview.cpp:2300
 msgid ""
 "The name you entered was invalid.\n"
 "Creation process has been canceled."
@@ -7192,7 +7146,7 @@ msgstr ""
 "Внесеното име е невалидно\n"
 "Процесот на креирање беше откажан."
 
-#: umllistview.cpp:2309 umldoc.cpp:1397
+#: umllistview.cpp:2310 umldoc.cpp:1418
 msgid ""
 "The name you entered was not unique.\n"
 "Is this what you wanted?"
@@ -7200,15 +7154,15 @@ msgstr ""
 "Внесеното име не е единствено.\n"
 "Дали тоа го сакавте?"
 
-#: umllistview.cpp:2310 umldoc.cpp:1398
+#: umllistview.cpp:2311 umldoc.cpp:1419
 msgid "Use Name"
 msgstr "Користи име"
 
-#: umllistview.cpp:2310 umldoc.cpp:1398
+#: umllistview.cpp:2311 umldoc.cpp:1419
 msgid "Enter New Name"
 msgstr "Внеси ново име"
 
-#: umllistview.cpp:2316 umllistview.cpp:2581
+#: umllistview.cpp:2317 umllistview.cpp:2582
 #, fuzzy
 msgid ""
 "The name you entered was not unique.\n"
@@ -7217,20 +7171,20 @@ msgstr ""
 "Внесеното име не е единствено!\n"
 "Процесот на креирање беше откажан."
 
-#: umllistview.cpp:2539 umllistview.cpp:2556 umllistview.cpp:2571
-#: umllistview.cpp:2601
+#: umllistview.cpp:2540 umllistview.cpp:2557 umllistview.cpp:2572
+#: umllistview.cpp:2602
 msgid "Creation canceled"
 msgstr "Креирањете е откажано"
 
-#: umllistview.cpp:2859
+#: umllistview.cpp:2860
 msgid "Loading listview..."
 msgstr "Вчитување на листа за преглед..."
 
-#: umllistview.cpp:3243
+#: umllistview.cpp:3244
 msgid "The folder must be emptied before it can be deleted."
 msgstr "Папката мора да е празна пред да се избрише."
 
-#: umllistview.cpp:3244
+#: umllistview.cpp:3245
 msgid "Folder Not Empty"
 msgstr "Папката не е празна"
 
@@ -7259,35 +7213,35 @@ msgstr "Датотеката веќе постои"
 msgid "new_parameter"
 msgstr "нов_параметар"
 
-#: umldoc.cpp:82 umldoc.cpp:1921
+#: umldoc.cpp:80 umldoc.cpp:1942
 msgid "UML Model"
 msgstr "UML-Модел"
 
-#: umldoc.cpp:115
+#: umldoc.cpp:113
 msgid "Logical View"
 msgstr "Логички - поглед"
 
-#: umldoc.cpp:116
+#: umldoc.cpp:114
 msgid "Use Case View"
 msgstr "Сценарио на употреба - поглед"
 
-#: umldoc.cpp:117
+#: umldoc.cpp:115
 msgid "Component View"
 msgstr "Компонентен - поглед"
 
-#: umldoc.cpp:118
+#: umldoc.cpp:116
 msgid "Deployment View"
 msgstr "Поставување - поглед"
 
-#: umldoc.cpp:119
+#: umldoc.cpp:117
 msgid "Entity Relationship Model"
 msgstr "Модел на ентитет-релација"
 
-#: umldoc.cpp:142
+#: umldoc.cpp:140
 msgid "Datatypes"
 msgstr "Типови на податоци"
 
-#: umldoc.cpp:280
+#: umldoc.cpp:279
 msgid ""
 "The current file has been modified.\n"
 "Do you want to save it?"
@@ -7295,7 +7249,7 @@ msgstr ""
 "Тековната датотека е сменета.\n"
 "Дали сакате да ја зачувате?"
 
-#: umldoc.cpp:281
+#: umldoc.cpp:280
 #, fuzzy
 msgctxt "warning message"
 msgid "Warning"
@@ -7369,68 +7323,68 @@ msgstr "Дијаграм на поставување"
 msgid "entity relationship diagram"
 msgstr "Дијаграм на ентитет-релација"
 
-#: umldoc.cpp:1279
+#: umldoc.cpp:1276
 #, fuzzy
 #| msgid "Name"
 msgctxt "diagram name"
 msgid "Name"
 msgstr "Име"
 
-#: umldoc.cpp:1287 umldoc.cpp:1328
+#: umldoc.cpp:1284 umldoc.cpp:1349
 msgid "That is an invalid name for a diagram."
 msgstr "Ова е невалидно име за дијаграм."
 
-#: umldoc.cpp:1301 umldoc.cpp:1337
+#: umldoc.cpp:1288 umldoc.cpp:1358
 msgid "A diagram is already using that name."
 msgstr "Веќе постои дијаграм со тоа име."
 
-#: umldoc.cpp:1322
+#: umldoc.cpp:1343
 #, fuzzy
 #| msgid "Name"
 msgctxt "renaming diagram"
 msgid "Name"
 msgstr "Име"
 
-#: umldoc.cpp:1353
+#: umldoc.cpp:1374
 #, fuzzy
 #| msgid "Name"
 msgctxt "renaming uml object"
 msgid "Name"
 msgstr "Име"
 
-#: umldoc.cpp:1387
+#: umldoc.cpp:1408
 #, fuzzy
 #| msgid "Name"
 msgctxt "renaming child uml object"
 msgid "Name"
 msgstr "Име"
 
-#: umldoc.cpp:1447
+#: umldoc.cpp:1468
 #, kde-format
 msgid "Are you sure you want to delete diagram %1?"
 msgstr "Дали навистина сакате да го избришете дијаграмот %1?"
 
-#: umldoc.cpp:1448
+#: umldoc.cpp:1469
 msgid "Delete Diagram"
 msgstr "Бришење дијаграм"
 
-#: umldoc.cpp:1977
+#: umldoc.cpp:1998
 msgid "Setting up the document..."
 msgstr "Го поставувам документот..."
 
-#: umldoc.cpp:2006
+#: umldoc.cpp:2028
 msgid "Resolving object references..."
 msgstr "Разрешувам референци до објекти..."
 
-#: umldoc.cpp:2057
+#: umldoc.cpp:2079
 msgid "Loading UML elements..."
 msgstr "Вчитувам UML-елементи..."
 
-#: umldoc.cpp:2276
+#: umldoc.cpp:2298
 msgid "Loading diagrams..."
 msgstr "Вчитувам дијаграми..."
 
-#: umldoc.cpp:2770
+#: umldoc.cpp:2792
 #, fuzzy, kde-format
 msgid "/autosave%1"
 msgstr "/автоматско зачувување%1"
@@ -7469,6 +7423,44 @@ msgstr "Дали сте сигурни дека сакате да го избр�
 #: umlview.cpp:3040
 msgid "Delete Diagram?"
 msgstr "Отстранете го дијаграмот?"
+
+#, fuzzy
+#~| msgid "class diagram"
+#~ msgid "Create class diagram : %1"
+#~ msgstr "Дијаграм на класи"
+
+#, fuzzy
+#~| msgid "entity relationship diagram"
+#~ msgid "Create entity relationship diagram : %1"
+#~ msgstr "Дијаграм на ентитет-релација"
+
+#, fuzzy
+#~| msgid "class diagram"
+#~ msgid "Create use case diagram : %1"
+#~ msgstr "Дијаграм на класи"
+
+#, fuzzy
+#~| msgid "activity diagram"
+#~ msgid "Create activity diagram : %1"
+#~ msgstr "Дијаграм на активности"
+
+#, fuzzy
+#~ msgid "Create collaboration diagram : %1"
+#~ msgstr "Дијаграм на колаборација"
+
+#, fuzzy
+#~| msgid "sequence diagram"
+#~ msgid "Create sequence diagram : %1"
+#~ msgstr "Дијаграм на секвенци"
+
+#, fuzzy
+#~ msgid "Create deployment diagram : %1"
+#~ msgstr "Дијаграм на поставување"
+
+#, fuzzy
+#~| msgid "component diagram"
+#~ msgid "Create component diagram : %1"
+#~ msgstr "Дијаграм на компоненти"
 
 #, fuzzy
 #~| msgid "Color"
