@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-12 02:43+0100\n"
+"POT-Creation-Date: 2012-02-27 02:59+0100\n"
 "PO-Revision-Date: 2000-10-02 22:00+0100\n"
 "Last-Translator: Damjan Janevski <miopa@usa.net>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -780,6 +780,21 @@ msgstr ""
 msgid "Unable to locate note-text"
 msgstr ""
 
+#: part/KWOdfLoader.cpp:90
+msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgstr ""
+
+#: part/KWOdfLoader.cpp:102
+msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgstr ""
+
+#: part/KWOdfLoader.cpp:104
+#, kde-format
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
+msgstr ""
+
 #: part/KWStatusBar.cpp:48
 msgid "Modified"
 msgstr ""
@@ -993,6 +1008,63 @@ msgstr "Текст заобиколува"
 msgid "Options"
 msgstr ""
 
+#: part/dialogs/KWAnchoringProperties.cpp:432
+#, fuzzy
+msgid "Baseline"
+msgstr "Поставки на рамка"
+
+#: part/dialogs/KWAnchoringProperties.cpp:433
+#: part/dialogs/KWAnchoringProperties.cpp:444
+#, fuzzy
+msgid "Character"
+msgstr "&Создади табела"
+
+#: part/dialogs/KWAnchoringProperties.cpp:436
+#, fuzzy
+msgid "Row"
+msgstr "Ред:"
+
+#: part/dialogs/KWAnchoringProperties.cpp:437
+#: part/dialogs/KWAnchoringProperties.cpp:445
+msgid "Page (entire) area"
+msgstr ""
+
+#: part/dialogs/KWAnchoringProperties.cpp:438
+#: part/dialogs/KWAnchoringProperties.cpp:446
+#, fuzzy
+msgid "Page text area"
+msgstr "&Рабови на рамка"
+
+#: part/dialogs/KWAnchoringProperties.cpp:439
+#: part/dialogs/KWAnchoringProperties.cpp:453
+#, fuzzy
+msgid "Paragraph area"
+msgstr "&Параграф..."
+
+#: part/dialogs/KWAnchoringProperties.cpp:440
+#: part/dialogs/KWAnchoringProperties.cpp:454
+#, fuzzy
+msgid "Paragraph text area"
+msgstr "KWord - Поставки на параграф"
+
+#: part/dialogs/KWAnchoringProperties.cpp:447
+#, fuzzy
+msgid "Left page border"
+msgstr "&Рабови на рамка"
+
+#: part/dialogs/KWAnchoringProperties.cpp:448
+#, fuzzy
+msgid "Right page border"
+msgstr "&Рабови на рамка"
+
+#: part/dialogs/KWAnchoringProperties.cpp:455
+msgid "Right paragraph border"
+msgstr ""
+
+#: part/dialogs/KWAnchoringProperties.cpp:456
+msgid "Left paragraph border"
+msgstr ""
+
 #: part/dialogs/KWFrameDialog.cpp:41
 #, fuzzy
 msgid "General"
@@ -1003,69 +1075,12 @@ msgstr "Интеграл"
 msgid "Smart Positioning"
 msgstr "&Слика..."
 
-#: part/dialogs/KWFrameDialog.cpp:79
+#: part/dialogs/KWFrameDialog.cpp:83
 #, fuzzy
 #| msgid "Frame Properties"
 msgctxt "(qtundo-format)"
 msgid "Change Shape Properties"
 msgstr "Параметри на рамка"
-
-#: part/dialogs/KWAnchoringProperties.cpp:431
-#, fuzzy
-msgid "Baseline"
-msgstr "Поставки на рамка"
-
-#: part/dialogs/KWAnchoringProperties.cpp:432
-#: part/dialogs/KWAnchoringProperties.cpp:443
-#, fuzzy
-msgid "Character"
-msgstr "&Создади табела"
-
-#: part/dialogs/KWAnchoringProperties.cpp:435
-#, fuzzy
-msgid "Row"
-msgstr "Ред:"
-
-#: part/dialogs/KWAnchoringProperties.cpp:436
-#: part/dialogs/KWAnchoringProperties.cpp:444
-msgid "Page (entire) area"
-msgstr ""
-
-#: part/dialogs/KWAnchoringProperties.cpp:437
-#: part/dialogs/KWAnchoringProperties.cpp:445
-#, fuzzy
-msgid "Page text area"
-msgstr "&Рабови на рамка"
-
-#: part/dialogs/KWAnchoringProperties.cpp:438
-#: part/dialogs/KWAnchoringProperties.cpp:452
-#, fuzzy
-msgid "Paragraph area"
-msgstr "&Параграф..."
-
-#: part/dialogs/KWAnchoringProperties.cpp:439
-#: part/dialogs/KWAnchoringProperties.cpp:453
-#, fuzzy
-msgid "Paragraph text area"
-msgstr "KWord - Поставки на параграф"
-
-#: part/dialogs/KWAnchoringProperties.cpp:446
-#, fuzzy
-msgid "Left page border"
-msgstr "&Рабови на рамка"
-
-#: part/dialogs/KWAnchoringProperties.cpp:447
-#, fuzzy
-msgid "Right page border"
-msgstr "&Рабови на рамка"
-
-#: part/dialogs/KWAnchoringProperties.cpp:454
-msgid "Right paragraph border"
-msgstr ""
-
-#: part/dialogs/KWAnchoringProperties.cpp:455
-msgid "Left paragraph border"
-msgstr ""
 
 #: part/dockers/KWRdfDocker.cpp:53
 msgid "RDF"
@@ -1362,19 +1377,37 @@ msgstr "Нумериран список"
 msgid "File to open"
 msgstr "Датотека за отварање"
 
-#: part/KWOdfLoader.cpp:90
-msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+#: part/KWDocument.cpp:518
+#, fuzzy
+msgid "Copy"
+msgstr "&Копирај..."
+
+#: part/KWDocument.cpp:563
+#, fuzzy
+msgid "Head 1"
+msgstr "Нумериран список"
+
+#: part/KWDocument.cpp:569
+#, fuzzy
+msgid "Head 2"
+msgstr "Нумериран список"
+
+#: part/KWDocument.cpp:575
+#, fuzzy
+msgid "Head 3"
+msgstr "Нумериран список"
+
+#: part/KWDocument.cpp:581
+#, fuzzy
+msgid "Bullet List"
+msgstr "Список со точки"
+
+#: part/KWDocument.cpp:806
+msgid "Can not find needed text component, Words will quit now"
 msgstr ""
 
-#: part/KWOdfLoader.cpp:102
-msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
-msgstr ""
-
-#: part/KWOdfLoader.cpp:104
-#, kde-format
-msgid ""
-"This is not a word processing document, but %1. Please try opening it with "
-"the appropriate application."
+#: part/KWDocument.cpp:807
+msgid "Installation Error"
 msgstr ""
 
 #: part/KWGui.cpp:74
@@ -1804,39 +1837,6 @@ msgstr "Спои ќелии"
 #, fuzzy
 msgid "Header & Footer"
 msgstr "Нумериран список"
-
-#: part/KWDocument.cpp:515
-#, fuzzy
-msgid "Copy"
-msgstr "&Копирај..."
-
-#: part/KWDocument.cpp:560
-#, fuzzy
-msgid "Head 1"
-msgstr "Нумериран список"
-
-#: part/KWDocument.cpp:566
-#, fuzzy
-msgid "Head 2"
-msgstr "Нумериран список"
-
-#: part/KWDocument.cpp:572
-#, fuzzy
-msgid "Head 3"
-msgstr "Нумериран список"
-
-#: part/KWDocument.cpp:578
-#, fuzzy
-msgid "Bullet List"
-msgstr "Список со точки"
-
-#: part/KWDocument.cpp:803
-msgid "Can not find needed text component, Words will quit now"
-msgstr ""
-
-#: part/KWDocument.cpp:804
-msgid "Installation Error"
-msgstr ""
 
 #, fuzzy
 #~| msgid "Format"
