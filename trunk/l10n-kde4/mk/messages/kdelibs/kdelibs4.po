@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-23 04:49+0100\n"
+"POT-Creation-Date: 2012-03-06 06:36+0100\n"
 "PO-Revision-Date: 2010-01-27 10:39+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -7948,12 +7948,6 @@ msgstr ""
 msgid "Conflict With Registered Global Shortcut"
 msgstr "Конфликт со регистрирана глобална кратенка"
 
-#: kdeui/sonnet/configdialog.cpp:51
-#, fuzzy
-#| msgid "Send Confirmation"
-msgid "Spell Checking Configuration"
-msgstr "Испрати потврда"
-
 #: kdeui/sonnet/dialog.cpp:103 kdeui/sonnet/dialog.cpp:224
 #: kdeui/sonnet/dialog.cpp:445
 msgctxt "@title:window"
@@ -7981,6 +7975,12 @@ msgstr "Проверката на правопис е откажана."
 #: kdeui/sonnet/dialog.cpp:441 kdeui/sonnet/dialog.cpp:445
 msgid "Spell check complete."
 msgstr "Проверката на правопис е завршена."
+
+#: kdeui/sonnet/configdialog.cpp:51
+#, fuzzy
+#| msgid "Send Confirmation"
+msgid "Spell Checking Configuration"
+msgstr "Испрати потврда"
 
 #: kdeui/util/kcompletion.cpp:693
 msgid ""
@@ -9436,45 +9436,108 @@ msgstr "Раздвојувач, пасус"
 msgid "Separator, Space"
 msgstr "Раздвојувач, празно место"
 
-#. i18n: Placeholder text in text edit widgets is the text appearing
-#. before any user input, briefly explaining to the user what to type
-#. (e.g. "Enter message").
-#. By default the text is set in italic, which may not be appropriate
-#. for some languages and scripts (e.g. for CJK ideographs).
-#. i18n: Placeholder text in line edit widgets is the text appearing
-#. before any user input, briefly explaining to the user what to type
-#. (e.g. "Enter search pattern").
-#. By default the text is set in italic, which may not be appropriate
-#. for some languages and scripts (e.g. for CJK ideographs).
-#: kdeui/widgets/ktextedit.cpp:79 kdeui/widgets/klineedit.cpp:87
-msgctxt "Italic placeholder text in line edits: 0 no, 1 yes"
-msgid "1"
-msgstr "1"
+#: kdeui/widgets/ktoolbar.cpp:292
+#, fuzzy
+#| msgid "Show help"
+msgctxt "@title:menu"
+msgid "Show Text"
+msgstr "Прикажува помош..."
 
-#: kdeui/widgets/ktextedit.cpp:527
-msgid "Speak Text"
-msgstr "Изговори текст"
+#: kdeui/widgets/ktoolbar.cpp:295
+#, fuzzy
+#| msgid "Toolbar Settings"
+msgctxt "@title:menu"
+msgid "Toolbar Settings"
+msgstr "Поставувања за алатник"
 
-#: kdeui/widgets/ktextedit.cpp:542
-msgid "Starting Jovie Text-to-Speech Service Failed"
-msgstr ""
+#: kdeui/widgets/ktoolbar.cpp:297
+msgid "Orientation"
+msgstr "Ориентација"
 
-#: kdeui/widgets/ktextedit.cpp:631
+#: kdeui/widgets/ktoolbar.cpp:299
+msgctxt "toolbar position string"
+msgid "Top"
+msgstr "Горе"
+
+#: kdeui/widgets/ktoolbar.cpp:301
+msgctxt "toolbar position string"
+msgid "Left"
+msgstr "Лево"
+
+#: kdeui/widgets/ktoolbar.cpp:302
+msgctxt "toolbar position string"
+msgid "Right"
+msgstr "Десно"
+
+#: kdeui/widgets/ktoolbar.cpp:303
+msgctxt "toolbar position string"
+msgid "Bottom"
+msgstr "Долу"
+
+#: kdeui/widgets/ktoolbar.cpp:311
+msgid "Text Position"
+msgstr "Позиција на текст"
+
+#: kdeui/widgets/ktoolbar.cpp:313
+msgid "Icons Only"
+msgstr "Само икони"
+
+#: kdeui/widgets/ktoolbar.cpp:314
+msgid "Text Only"
+msgstr "Само текст"
+
+#: kdeui/widgets/ktoolbar.cpp:315
+msgid "Text Alongside Icons"
+msgstr "Текст покрај иконите"
+
+#: kdeui/widgets/ktoolbar.cpp:316
+msgid "Text Under Icons"
+msgstr "Текст под иконите"
+
+#: kdeui/widgets/ktoolbar.cpp:324
+msgid "Icon Size"
+msgstr "Големина на икони"
+
+#: kdeui/widgets/ktoolbar.cpp:326
+msgctxt "@item:inmenu Icon size"
+msgid "Default"
+msgstr "Стандардна"
+
+#: kdeui/widgets/ktoolbar.cpp:343 kdeui/widgets/ktoolbar.cpp:363
 #, kde-format
-msgid "No suggestions for %1"
-msgstr "Нема предлози за %1"
+msgid "Small (%1x%2)"
+msgstr "Мала (%1x%2)"
 
-#: kdeui/widgets/ktextedit.cpp:642
-msgid "Ignore"
-msgstr "Игнорирај"
+#: kdeui/widgets/ktoolbar.cpp:345 kdeui/widgets/ktoolbar.cpp:365
+#, kde-format
+msgid "Medium (%1x%2)"
+msgstr "Средна (%1x%2)"
 
-#: kdeui/widgets/ktextedit.cpp:643
-msgid "Add to Dictionary"
-msgstr "Додај во речник"
+#: kdeui/widgets/ktoolbar.cpp:347 kdeui/widgets/ktoolbar.cpp:367
+#, kde-format
+msgid "Large (%1x%2)"
+msgstr "Голема (%1x%2)"
 
-#: kdeui/widgets/ktextedit.cpp:788
-msgid "Nothing to spell check."
-msgstr "Нема ништо за проверка на правопис."
+#: kdeui/widgets/ktoolbar.cpp:349 kdeui/widgets/ktoolbar.cpp:369
+#, kde-format
+msgid "Huge (%1x%2)"
+msgstr "Огромна (%1x%2)"
+
+#: kdeui/widgets/ktoolbar.cpp:389
+msgid "Lock Toolbar Positions"
+msgstr "Заклучи позиции на алатници"
+
+#: kdeui/widgets/ktoolbar.cpp:1321
+#, kde-format
+msgctxt "@action:intoolbar Text label of toolbar button"
+msgid "%1"
+msgstr "%1"
+
+#: kdeui/widgets/ktoolbar.cpp:1322
+#, kde-format
+msgctxt "@info:tooltip Tooltip of toolbar button"
+msgid "%1"
+msgstr "%1"
 
 #: kdeui/widgets/kdatepicker.cpp:174
 #, kde-format
@@ -9676,6 +9739,21 @@ msgstr ""
 msgid "You are not allowed to save the configuration"
 msgstr "Не ви е дозволено да ја зачувате конфигурацијата"
 
+#. i18n: Placeholder text in line edit widgets is the text appearing
+#. before any user input, briefly explaining to the user what to type
+#. (e.g. "Enter search pattern").
+#. By default the text is set in italic, which may not be appropriate
+#. for some languages and scripts (e.g. for CJK ideographs).
+#. i18n: Placeholder text in text edit widgets is the text appearing
+#. before any user input, briefly explaining to the user what to type
+#. (e.g. "Enter message").
+#. By default the text is set in italic, which may not be appropriate
+#. for some languages and scripts (e.g. for CJK ideographs).
+#: kdeui/widgets/klineedit.cpp:87 kdeui/widgets/ktextedit.cpp:79
+msgctxt "Italic placeholder text in line edits: 0 no, 1 yes"
+msgid "1"
+msgstr "1"
+
 #: kdeui/widgets/klineedit.cpp:296
 msgctxt "@action:button Clear current text in the line edit"
 msgid "Clear text"
@@ -9732,6 +9810,31 @@ msgstr "&Ротирај во насока на час. стрелка"
 #: kdeui/widgets/kpixmapregionselectorwidget.cpp:205
 msgid "Rotate &Counterclockwise"
 msgstr "&Ротирај во насока обратно од час. стрелка"
+
+#: kdeui/widgets/ktextedit.cpp:527
+msgid "Speak Text"
+msgstr "Изговори текст"
+
+#: kdeui/widgets/ktextedit.cpp:542
+msgid "Starting Jovie Text-to-Speech Service Failed"
+msgstr ""
+
+#: kdeui/widgets/ktextedit.cpp:631
+#, kde-format
+msgid "No suggestions for %1"
+msgstr "Нема предлози за %1"
+
+#: kdeui/widgets/ktextedit.cpp:642
+msgid "Ignore"
+msgstr "Игнорирај"
+
+#: kdeui/widgets/ktextedit.cpp:643
+msgid "Add to Dictionary"
+msgstr "Додај во речник"
+
+#: kdeui/widgets/ktextedit.cpp:788
+msgid "Nothing to spell check."
+msgstr "Нема ништо за проверка на правопис."
 
 #: kdeui/widgets/krichtextwidget.cpp:232
 msgctxt "@action"
@@ -9921,109 +10024,6 @@ msgstr "Горен индекс"
 #: kdeui/widgets/ksqueezedtextlabel.cpp:165
 msgid "&Copy Full Text"
 msgstr "&Копирај цел текст"
-
-#: kdeui/widgets/ktoolbar.cpp:292
-#, fuzzy
-#| msgid "Show help"
-msgctxt "@title:menu"
-msgid "Show Text"
-msgstr "Прикажува помош..."
-
-#: kdeui/widgets/ktoolbar.cpp:295
-#, fuzzy
-#| msgid "Toolbar Settings"
-msgctxt "@title:menu"
-msgid "Toolbar Settings"
-msgstr "Поставувања за алатник"
-
-#: kdeui/widgets/ktoolbar.cpp:297
-msgid "Orientation"
-msgstr "Ориентација"
-
-#: kdeui/widgets/ktoolbar.cpp:299
-msgctxt "toolbar position string"
-msgid "Top"
-msgstr "Горе"
-
-#: kdeui/widgets/ktoolbar.cpp:301
-msgctxt "toolbar position string"
-msgid "Left"
-msgstr "Лево"
-
-#: kdeui/widgets/ktoolbar.cpp:302
-msgctxt "toolbar position string"
-msgid "Right"
-msgstr "Десно"
-
-#: kdeui/widgets/ktoolbar.cpp:303
-msgctxt "toolbar position string"
-msgid "Bottom"
-msgstr "Долу"
-
-#: kdeui/widgets/ktoolbar.cpp:311
-msgid "Text Position"
-msgstr "Позиција на текст"
-
-#: kdeui/widgets/ktoolbar.cpp:313
-msgid "Icons Only"
-msgstr "Само икони"
-
-#: kdeui/widgets/ktoolbar.cpp:314
-msgid "Text Only"
-msgstr "Само текст"
-
-#: kdeui/widgets/ktoolbar.cpp:315
-msgid "Text Alongside Icons"
-msgstr "Текст покрај иконите"
-
-#: kdeui/widgets/ktoolbar.cpp:316
-msgid "Text Under Icons"
-msgstr "Текст под иконите"
-
-#: kdeui/widgets/ktoolbar.cpp:324
-msgid "Icon Size"
-msgstr "Големина на икони"
-
-#: kdeui/widgets/ktoolbar.cpp:326
-msgctxt "@item:inmenu Icon size"
-msgid "Default"
-msgstr "Стандардна"
-
-#: kdeui/widgets/ktoolbar.cpp:343 kdeui/widgets/ktoolbar.cpp:363
-#, kde-format
-msgid "Small (%1x%2)"
-msgstr "Мала (%1x%2)"
-
-#: kdeui/widgets/ktoolbar.cpp:345 kdeui/widgets/ktoolbar.cpp:365
-#, kde-format
-msgid "Medium (%1x%2)"
-msgstr "Средна (%1x%2)"
-
-#: kdeui/widgets/ktoolbar.cpp:347 kdeui/widgets/ktoolbar.cpp:367
-#, kde-format
-msgid "Large (%1x%2)"
-msgstr "Голема (%1x%2)"
-
-#: kdeui/widgets/ktoolbar.cpp:349 kdeui/widgets/ktoolbar.cpp:369
-#, kde-format
-msgid "Huge (%1x%2)"
-msgstr "Огромна (%1x%2)"
-
-#: kdeui/widgets/ktoolbar.cpp:389
-msgid "Lock Toolbar Positions"
-msgstr "Заклучи позиции на алатници"
-
-#: kdeui/widgets/ktoolbar.cpp:1319
-#, kde-format
-msgctxt "@action:intoolbar Text label of toolbar button"
-msgid "%1"
-msgstr "%1"
-
-#: kdeui/widgets/ktoolbar.cpp:1320
-#, kde-format
-msgctxt "@info:tooltip Tooltip of toolbar button"
-msgid "%1"
-msgstr "%1"
 
 #: kdeui/widgets/ktimezonewidget.cpp:66
 msgctxt "Define an area in the time zone, like a town area"
@@ -11632,9 +11632,18 @@ msgstr ""
 "Не можам да го најдам „kdemain“ во „%1“.\n"
 "%2"
 
+#: kinit/klauncher_main.cpp:62
+msgid ""
+"klauncher: This program is not supposed to be started manually.\n"
+"klauncher: It is started automatically by kdeinit4.\n"
+msgstr ""
+"klauncher: Оваа програма не би требало да се стартува рачно.\n"
+"klauncher: Таа се стартува автоматски од kdeinit4.\n"
+
 #: kinit/klauncher.cpp:564
-#, kde-format
-msgid "KDEInit could not launch '%1'."
+#, fuzzy, kde-format
+#| msgid "KDEInit could not launch '%1'."
+msgid "KDEInit could not launch '%1'"
 msgstr "KDEInit не можеше да го изврши „%1“"
 
 #: kinit/klauncher.cpp:745 kinit/klauncher.cpp:774 kinit/klauncher.cpp:789
@@ -11666,14 +11675,6 @@ msgstr "Непознат протокол „%1“.\n"
 #, kde-format
 msgid "Error loading '%1'.\n"
 msgstr "Грешка при вчитување на „%1“.\n"
-
-#: kinit/klauncher_main.cpp:62
-msgid ""
-"klauncher: This program is not supposed to be started manually.\n"
-"klauncher: It is started automatically by kdeinit4.\n"
-msgstr ""
-"klauncher: Оваа програма не би требало да се стартува рачно.\n"
-"klauncher: Таа се стартува автоматски од kdeinit4.\n"
 
 #: kjs/object.cpp:554
 msgid "Evaluation error"
