@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-08 04:50+0100\n"
+"POT-Creation-Date: 2012-03-09 04:25+0100\n"
 "PO-Revision-Date: 2007-02-26 22:26+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1522,7 +1522,7 @@ msgid ""
 "versions before 1.4.0 is no longer guaranteed."
 msgstr ""
 
-#: kgpginterface.cpp:454
+#: kgpginterface.cpp:445
 msgid "An error occurred while scanning your keyring"
 msgstr ""
 
@@ -1775,26 +1775,22 @@ msgstr "(Основно)"
 msgid "Create Revocation Certificate"
 msgstr "Создај сертификат за отповикување"
 
-#: kgpgtextinterface.cpp:77
-msgid "Enter passphrase (symmetrical encryption)"
-msgstr "Внесете тајна фраза (симетрично криптирање)"
-
-#: kgpgtextinterface.cpp:91 core/KGpgRefNode.cpp:128
-#: transactions/kgpgtransaction.cpp:426
+#: kgpgtextinterface.cpp:79 core/KGpgRefNode.cpp:128
+#: transactions/kgpgtransaction.cpp:456
 msgid "[No user id found]"
 msgstr "[Не е најден кориснични ид.]"
 
-#: kgpgtextinterface.cpp:93 transactions/kgpgtransaction.cpp:350
+#: kgpgtextinterface.cpp:81 transactions/kgpgtransaction.cpp:377
 msgid " or "
 msgstr " или "
 
-#: kgpgtextinterface.cpp:97
+#: kgpgtextinterface.cpp:85
 #, fuzzy
 #| msgid "<b>No user id found</b>. Trying all secret keys.<br>"
 msgid "<p><b>No user id found</b>. Trying all secret keys.</p>"
 msgstr "<b>Не е најден кориснични ид.</b>. Ги пробувам сите тајни клучеви.<br>"
 
-#: kgpgtextinterface.cpp:99 transactions/kgpgtransaction.cpp:431
+#: kgpgtextinterface.cpp:87 transactions/kgpgtransaction.cpp:461
 #, fuzzy, kde-format
 #| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
 msgid "<p><b>Bad passphrase</b>. You have 1 try left.</p>"
@@ -1803,30 +1799,30 @@ msgstr[0] "<b>Лоша тајна фраза</b>. Ви преостануваа�
 msgstr[1] "<b>Лоша тајна фраза</b>. Ви преостануваат уште %1 обиди.<br>"
 msgstr[2] "<b>Лоша тајна фраза</b>. Ви преостануваат уште %1 обиди.<br>"
 
-#: kgpgtextinterface.cpp:102
+#: kgpgtextinterface.cpp:90
 #, fuzzy
 #| msgid "Bad passphrase"
 msgid "Enter passphrase"
 msgstr "Лоша тајна фраза"
 
-#: kgpgtextinterface.cpp:104 transactions/kgpgtransaction.cpp:433
+#: kgpgtextinterface.cpp:92 transactions/kgpgtransaction.cpp:463
 #, kde-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "Внесете ја тајната фраза за <b>%1</b>"
 
-#: kgpgtextinterface.cpp:172 editor/kgpgeditor.cpp:724
+#: kgpgtextinterface.cpp:160 editor/kgpgeditor.cpp:724
 #: transactions/kgpgverify.cpp:143
 msgid "No signature found."
 msgstr "Не е пронајден потпис."
 
-#: kgpgtextinterface.cpp:175 transactions/kgpgverify.cpp:126
+#: kgpgtextinterface.cpp:163 transactions/kgpgverify.cpp:126
 #: transactions/kgpgverify.cpp:160
 #, fuzzy, kde-format
 #| msgid "<qt>Good signature from:<br><b>%1</b><br>Key ID: %2</qt>"
 msgid "<qt>Good signature from:<br /><b>%1</b><br />Key ID: %2<br /></qt>"
 msgstr "<qt>Добар потпис од:<br><b>%1</b><br>Ид. на клуч: %2</qt>"
 
-#: kgpgtextinterface.cpp:180 transactions/kgpgverify.cpp:176
+#: kgpgtextinterface.cpp:168 transactions/kgpgverify.cpp:176
 #, fuzzy, kde-format
 msgid ""
 "<qt><b>BAD signature</b> from:<br /> %1<br />Key id: %2<br /><br /><b>The "
@@ -1835,13 +1831,13 @@ msgstr ""
 "<qt><b>ЛОШ потпис</b> од:<br> %1<br>Ид. на клуч: %2<br><br><b>Датотеката е "
 "расипана!</b></qt>"
 
-#: kgpgtextinterface.cpp:186 transactions/kgpgverify.cpp:180
+#: kgpgtextinterface.cpp:174 transactions/kgpgverify.cpp:180
 #, fuzzy
 #| msgid "The signature is valid, but the key is untrusted"
 msgid "<qt>The signature is valid, but the key is untrusted<br /></qt>"
 msgstr "Потписот е валиден но клучот не е доверлив"
 
-#: kgpgtextinterface.cpp:188 transactions/kgpgverify.cpp:182
+#: kgpgtextinterface.cpp:176 transactions/kgpgverify.cpp:182
 #, fuzzy
 #| msgid "The signature is valid, and the key is ultimately trusted"
 msgid ""
@@ -4357,12 +4353,12 @@ msgstr "Сепак користи"
 msgid "Do Not Use"
 msgstr "Не користи"
 
-#: transactions/kgpgchangepass.cpp:68
+#: transactions/kgpgchangepass.cpp:75
 #, fuzzy, kde-format
 msgid "Enter old passphrase for <b>%1</b>"
 msgstr "Внесете ја тајната фраза за <b>%1</b>"
 
-#: transactions/kgpgchangepass.cpp:71
+#: transactions/kgpgchangepass.cpp:79
 #, fuzzy, kde-format
 msgid ""
 "<qt>Enter new passphrase for <b>%1</b><br />If you forget this passphrase "
@@ -4371,14 +4367,14 @@ msgstr ""
 "<qt>Внесете нова тајна фраза за <b>%1</b><br>Ако ја заборавите оваа тајна "
 "фраза сите ваши криптирани датотеки и пораки ќе бидат загубени!<br></qt>"
 
-#: transactions/kgpgdecrypt.cpp:117
+#: transactions/kgpgdecrypt.cpp:118
 #, fuzzy, kde-format
 #| msgid "Decrypting %1"
 msgctxt "Status message 'Decrypting <filename>' (operation starts)"
 msgid "Decrypting %1"
 msgstr "Декриптирам %1"
 
-#: transactions/kgpgdecrypt.cpp:120
+#: transactions/kgpgdecrypt.cpp:121
 #, fuzzy, kde-format
 #| msgid "Decrypting %1"
 msgctxt "Status message 'Decrypted <filename>' (operation was completed)"
@@ -4690,7 +4686,7 @@ msgstr "Сервер за клучеви:"
 msgid "<b>Connecting to the server...</b>"
 msgstr "<b>Се поврзувам со серверот...</b>"
 
-#: transactions/kgpgtransaction.cpp:263 transactions/kgpgtransaction.cpp:440
+#: transactions/kgpgtransaction.cpp:281 transactions/kgpgtransaction.cpp:470
 #, fuzzy
 #| msgid "Change Passphrase..."
 msgid "Requesting Passphrase"
@@ -4710,6 +4706,9 @@ msgctxt "Good signature from: NAME <EMAIL>, Key ID: HEXID"
 msgid ""
 "<qt>Good signature from:<br /><b>%1 &lt;%2&gt;</b><br />Key ID: %3<br /></qt>"
 msgstr "<qt>Добар потпис од:<br><b>%1</b><br>Ид. на клуч: %2</qt>"
+
+#~ msgid "Enter passphrase (symmetrical encryption)"
+#~ msgstr "Внесете тајна фраза (симетрично криптирање)"
 
 #~ msgid "GPG groups"
 #~ msgstr "Групи на GPG"
