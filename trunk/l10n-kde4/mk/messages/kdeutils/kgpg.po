@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-21 04:27+0100\n"
+"POT-Creation-Date: 2012-03-22 04:14+0100\n"
 "PO-Revision-Date: 2007-02-26 22:26+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1313,7 +1313,15 @@ msgstr ""
 "Изберете само една папка, или неколку датотеки, но не мешајте датотеки и "
 "папки."
 
-#: kgpgexternalactions.cpp:125
+#: kgpgexternalactions.cpp:126
+msgid "Cannot create temporary file for folder compression."
+msgstr ""
+
+#: kgpgexternalactions.cpp:126 kgpgexternalactions.cpp:132
+msgid "Temporary File Creation"
+msgstr "Создавање на привремена датотека"
+
+#: kgpgexternalactions.cpp:131
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>KGpg will now create a temporary archive file:<br><b>%1</b> to "
@@ -1327,26 +1335,22 @@ msgstr ""
 "<qt>KGpg сега ќе направи привремена архива<br><b>%1</b> за да ја обработи "
 "крипцијата. Датотеката ќе биде избришана откако ќе заврши крипцијата.</qt>"
 
-#: kgpgexternalactions.cpp:126
-msgid "Temporary File Creation"
-msgstr "Создавање на привремена датотека"
-
-#: kgpgexternalactions.cpp:137
+#: kgpgexternalactions.cpp:144
 msgid "Compression method for archive:"
 msgstr "Метод на компресија за архивата:"
 
-#: kgpgexternalactions.cpp:199 kgpgexternalactions.cpp:354
+#: kgpgexternalactions.cpp:206 kgpgexternalactions.cpp:361
 #: editor/kgpgeditor.cpp:521 transactions/kgpgencrypt.cpp:123
 msgid "File Already Exists"
 msgstr "Датотеката веќе постои"
 
-#: kgpgexternalactions.cpp:276 editor/kgpgeditor.cpp:733
+#: kgpgexternalactions.cpp:283 editor/kgpgeditor.cpp:733
 #: editor/kgpgtextedit.cpp:320
 msgctxt "Caption of message box"
 msgid "Verification Finished"
 msgstr ""
 
-#: kgpgexternalactions.cpp:388
+#: kgpgexternalactions.cpp:395
 #, fuzzy
 #| msgid "Decryption failed."
 msgid "Decryption of this file failed:"
@@ -1355,11 +1359,11 @@ msgstr[0] "Декрипцијата не успеа."
 msgstr[1] "Декрипцијата не успеа."
 msgstr[2] "Декрипцијата не успеа."
 
-#: kgpgexternalactions.cpp:390 editor/kgpgtextedit.cpp:257
+#: kgpgexternalactions.cpp:397 editor/kgpgtextedit.cpp:257
 msgid "Decryption failed."
 msgstr "Декрипцијата не успеа."
 
-#: kgpgexternalactions.cpp:415
+#: kgpgexternalactions.cpp:422
 #, fuzzy
 #| msgid ""
 #| "<qt>You have not set a path to your GnuPG config file.<br>This may cause "
@@ -1375,11 +1379,11 @@ msgstr ""
 "<br>Дали сакате да го стартувате Волшебникот на KGpg за да го поправите "
 "проблемот?</qt>"
 
-#: kgpgexternalactions.cpp:416
+#: kgpgexternalactions.cpp:423
 msgid "Start Assistant"
 msgstr ""
 
-#: kgpgexternalactions.cpp:416
+#: kgpgexternalactions.cpp:423
 msgid "Do Not Start"
 msgstr "Не стартувај"
 
@@ -1533,7 +1537,7 @@ msgid ""
 "versions before 1.4.0 is no longer guaranteed."
 msgstr ""
 
-#: kgpginterface.cpp:298
+#: kgpginterface.cpp:292
 msgid "An error occurred while scanning your keyring"
 msgstr ""
 
