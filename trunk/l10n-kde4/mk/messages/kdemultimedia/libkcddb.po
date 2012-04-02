@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkcddb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-02 06:21+0200\n"
+"POT-Creation-Date: 2012-04-02 04:28+0200\n"
 "PO-Revision-Date: 2005-01-31 20:10+0100\n"
 "Last-Translator: Aleksandar Balalovski <aleksandar.balalovski@gmail.com>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -20,703 +20,911 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: categories.cpp:22 genres.cpp:70
-msgid "Blues"
-msgstr "Блуз"
-
-#: categories.cpp:22 genres.cpp:73
-msgid "Classical"
-msgstr "Класика"
-
-#: categories.cpp:22 genres.cpp:75
-msgctxt "music genre"
-msgid "Country"
+#: musicbrainz/musicbrainzlookup.cpp:122
+#, kde-format
+msgid "%1 (disc %2)"
 msgstr ""
 
-#: categories.cpp:23
+#: kcmcddb/cddbconfigwidget.cpp:59
+msgid "Cache Locations"
+msgstr ""
+
+#: kcmcddb/cddbconfigwidget.cpp:98
+msgid "Could not fetch mirror list."
+msgstr ""
+
+#: kcmcddb/cddbconfigwidget.cpp:98
+msgid "Could Not Fetch"
+msgstr ""
+
+#: kcmcddb/cddbconfigwidget.cpp:102
 #, fuzzy
-msgid "Data"
-msgstr "Податоци"
+#| msgid "Server error"
+msgid "Select mirror"
+msgstr "Грешка на серверот"
 
-#: categories.cpp:23 genres.cpp:80
-msgid "Folk"
-msgstr "Фолк"
-
-#: categories.cpp:23 genres.cpp:86
-msgid "Jazz"
-msgstr "Џез"
-
-#: categories.cpp:23
-msgid "Miscellaneous"
+#: kcmcddb/cddbconfigwidget.cpp:103
+msgid "Select one of these mirrors"
 msgstr ""
 
-#: categories.cpp:24 genres.cpp:88
-msgid "New Age"
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:129
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_FreedbLookupTransport)
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:179
+#. i18n: ectx: property (text), widget (QRadioButton, httpButton)
+#: kcmcddb/cddbconfigwidget.cpp:120 rc.cpp:42 rc.cpp:57
+msgid "HTTP"
 msgstr ""
 
-#: categories.cpp:24 genres.cpp:94
-msgid "Reggae"
-msgstr "Реге"
-
-#: categories.cpp:24 genres.cpp:95
-msgid "Rock"
-msgstr "Рок"
-
-#: categories.cpp:24 genres.cpp:98
-msgid "Soundtrack"
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:124
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_FreedbLookupTransport)
+#: kcmcddb/cddbconfigwidget.cpp:122 rc.cpp:39
+msgid "CDDB"
 msgstr ""
 
-#: cdinfodialog.cpp:146
+#: kcmcddb/kcmcddb.cpp:60
+msgid ""
+"CDDB is used to get information like artist, title and song-names in CD's"
+msgstr ""
+
+#: kcmcddb/kcmcddb.cpp:88
+msgid ""
+"freedb has been set to use HTTP for submissions because the email details "
+"you have entered are incomplete. Please review your email settings and try "
+"again."
+msgstr ""
+
+#: kcmcddb/kcmcddb.cpp:91
+msgid "Incorrect Email Settings"
+msgstr ""
+
+#: libkcddb/kcddb.cpp:32
+msgid "Success"
+msgstr "Успех"
+
+#: libkcddb/kcddb.cpp:36
+msgid "Server error"
+msgstr "Грешка на серверот"
+
+#: libkcddb/kcddb.cpp:40
+msgid "Host not found"
+msgstr "Компјутерот не е пронајден"
+
+#: libkcddb/kcddb.cpp:44
+msgid "No response"
+msgstr "Нема одговор"
+
+#: libkcddb/kcddb.cpp:48
+msgid "No record found"
+msgstr "Не е пронајден запис"
+
+#: libkcddb/kcddb.cpp:52
+msgid "Multiple records found"
+msgstr "Пронајдени се повеќекратни записи"
+
+#: libkcddb/kcddb.cpp:56
+msgid "Cannot save"
+msgstr "Не можам да зачувам"
+
+#: libkcddb/kcddb.cpp:60
+msgid "Invalid category"
+msgstr "Невалидна категорија"
+
+#: libkcddb/kcddb.cpp:64
+msgid "Unknown error"
+msgstr "Непозната грешка"
+
+#: libkcddb/cdinfodialog.cpp:146
 msgid "Track"
 msgstr "Песна"
 
-#: cdinfodialog.cpp:146
+#: libkcddb/cdinfodialog.cpp:146
 msgid "Length"
 msgstr "Должина"
 
-#: cdinfodialog.cpp:146
+#: libkcddb/cdinfodialog.cpp:146
 msgid "Title"
 msgstr "Наслов"
 
-#: cdinfodialog.cpp:146
+#: libkcddb/cdinfodialog.cpp:146
 msgid "Artist"
 msgstr "Изведувач"
 
-#: cdinfodialog.cpp:146
+#: libkcddb/cdinfodialog.cpp:146
 msgid "Comment"
 msgstr "Коментар"
 
-#: cdinfodialog.cpp:267
+#: libkcddb/cdinfodialog.cpp:267
 #, fuzzy
 msgid "Change Encoding"
 msgstr "Смени кодирање..."
 
-#: cdinfoencodingwidget.cpp:65
+#: libkcddb/cdinfoencodingwidget.cpp:65
 #, kde-format
 msgctxt "artist - cdtitle"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: genres.cpp:66
+#: libkcddb/genres.cpp:66
 msgid "Unknown"
 msgstr "Непознато"
 
-#: genres.cpp:66
+#: libkcddb/genres.cpp:66
 msgid "A Cappella"
 msgstr "А капела"
 
-#: genres.cpp:66
+#: libkcddb/genres.cpp:66
 msgid "Acid Jazz"
 msgstr "Есид џез"
 
-#: genres.cpp:67
+#: libkcddb/genres.cpp:67
 msgid "Acid Punk"
 msgstr "Есид панк"
 
-#: genres.cpp:67
+#: libkcddb/genres.cpp:67
 msgid "Acid"
 msgstr "Есид"
 
-#: genres.cpp:67
+#: libkcddb/genres.cpp:67
 msgid "Acoustic"
 msgstr "Акустика"
 
-#: genres.cpp:67
+#: libkcddb/genres.cpp:67
 msgid "Alternative"
 msgstr "Алтернатива"
 
-#: genres.cpp:68
+#: libkcddb/genres.cpp:68
 msgid "Alt. Rock"
 msgstr "Алт. рок"
 
-#: genres.cpp:68
+#: libkcddb/genres.cpp:68
 msgid "Ambient"
 msgstr "Амбиентална"
 
-#: genres.cpp:68
+#: libkcddb/genres.cpp:68
 msgid "Anime"
 msgstr ""
 
-#: genres.cpp:68
+#: libkcddb/genres.cpp:68
 msgid "Avantgarde"
 msgstr "Авангарда"
 
-#: genres.cpp:69
+#: libkcddb/genres.cpp:69
 msgid "Ballad"
 msgstr "Балада"
 
-#: genres.cpp:69
+#: libkcddb/genres.cpp:69
 msgid "Bass"
 msgstr "Бас"
 
-#: genres.cpp:69
+#: libkcddb/genres.cpp:69
 msgid "Beat"
 msgstr "Бит"
 
-#: genres.cpp:69
+#: libkcddb/genres.cpp:69
 msgid "Bebop"
 msgstr "Бибоп"
 
-#: genres.cpp:70
+#: libkcddb/genres.cpp:70
 msgid "Big Band"
 msgstr "Биг бенд"
 
-#: genres.cpp:70
+#: libkcddb/genres.cpp:70
 msgid "Black Metal"
 msgstr "Блек метал"
 
-#: genres.cpp:70
+#: libkcddb/genres.cpp:70
 msgid "Bluegrass"
 msgstr "Блуграс"
 
-#: genres.cpp:71
+#: libkcddb/genres.cpp:70 libkcddb/categories.cpp:22
+msgid "Blues"
+msgstr "Блуз"
+
+#: libkcddb/genres.cpp:71
 msgid "Booty Bass"
 msgstr ""
 
-#: genres.cpp:71
+#: libkcddb/genres.cpp:71
 msgid "BritPop"
 msgstr ""
 
-#: genres.cpp:71
+#: libkcddb/genres.cpp:71
 msgid "Cabaret"
 msgstr "Кабаре"
 
-#: genres.cpp:71
+#: libkcddb/genres.cpp:71
 msgid "Celtic"
 msgstr "Келтски"
 
-#: genres.cpp:72
+#: libkcddb/genres.cpp:72
 msgid "Chamber Music"
 msgstr "Камерна музика"
 
-#: genres.cpp:72
+#: libkcddb/genres.cpp:72
 msgid "Chanson"
 msgstr "Шансона"
 
-#: genres.cpp:72
+#: libkcddb/genres.cpp:72
 msgid "Chorus"
 msgstr "Хорски"
 
-#: genres.cpp:72
+#: libkcddb/genres.cpp:72
 msgid "Christian Gangsta Rap"
 msgstr "Христијански уличен рап"
 
-#: genres.cpp:73
+#: libkcddb/genres.cpp:73
 msgid "Christian Rap"
 msgstr "Христијански рап"
 
-#: genres.cpp:73
+#: libkcddb/genres.cpp:73
 msgid "Christian Rock"
 msgstr "Христијански рок"
 
-#: genres.cpp:73
+#: libkcddb/genres.cpp:73 libkcddb/categories.cpp:22
+msgid "Classical"
+msgstr "Класика"
+
+#: libkcddb/genres.cpp:73
 msgid "Classic Rock"
 msgstr "Класичен рок"
 
-#: genres.cpp:74
+#: libkcddb/genres.cpp:74
 msgid "Club-house"
 msgstr "Клубски хаус"
 
-#: genres.cpp:74
+#: libkcddb/genres.cpp:74
 msgid "Club"
 msgstr "Клубска"
 
-#: genres.cpp:74
+#: libkcddb/genres.cpp:74
 msgid "Comedy"
 msgstr "Комедија"
 
-#: genres.cpp:74
+#: libkcddb/genres.cpp:74
 msgid "Contemporary Christian"
 msgstr "Современа христијанска"
 
-#: genres.cpp:75
+#: libkcddb/genres.cpp:75 libkcddb/categories.cpp:22
+msgctxt "music genre"
+msgid "Country"
+msgstr ""
+
+#: libkcddb/genres.cpp:75
 msgid "Crossover"
 msgstr "Кросовер"
 
-#: genres.cpp:75
+#: libkcddb/genres.cpp:75
 msgid "Cult"
 msgstr "Култ"
 
-#: genres.cpp:75
+#: libkcddb/genres.cpp:75
 msgid "Dance Hall"
 msgstr ""
 
-#: genres.cpp:76
+#: libkcddb/genres.cpp:76
 msgid "Dance"
 msgstr "Денс"
 
-#: genres.cpp:76
+#: libkcddb/genres.cpp:76
 msgid "Darkwave"
 msgstr ""
 
-#: genres.cpp:76
+#: libkcddb/genres.cpp:76
 msgid "Death Metal"
 msgstr ""
 
-#: genres.cpp:76
+#: libkcddb/genres.cpp:76
 #, fuzzy
 msgid "Disco"
 msgstr "Диско"
 
-#: genres.cpp:77
+#: libkcddb/genres.cpp:77
 msgid "Dream"
 msgstr ""
 
-#: genres.cpp:77
+#: libkcddb/genres.cpp:77
 msgid "Drum & Bass"
 msgstr ""
 
-#: genres.cpp:77
+#: libkcddb/genres.cpp:77
 msgid "Drum Solo"
 msgstr ""
 
-#: genres.cpp:77
+#: libkcddb/genres.cpp:77
 msgid "Duet"
 msgstr "Дует"
 
-#: genres.cpp:78
+#: libkcddb/genres.cpp:78
 msgid "Easy Listening"
 msgstr "Лесна музика"
 
-#: genres.cpp:78
+#: libkcddb/genres.cpp:78
 msgid "Electronic"
 msgstr "Електроника"
 
-#: genres.cpp:78
+#: libkcddb/genres.cpp:78
 msgid "Ethnic"
 msgstr "Етно"
 
-#: genres.cpp:78
+#: libkcddb/genres.cpp:78
 msgid "Eurodance"
 msgstr "Европски денс"
 
-#: genres.cpp:79
+#: libkcddb/genres.cpp:79
 msgid "Euro-House"
 msgstr "Европски хаус"
 
-#: genres.cpp:79
+#: libkcddb/genres.cpp:79
 msgid "Euro-Techno"
 msgstr "Европско техно"
 
-#: genres.cpp:79
+#: libkcddb/genres.cpp:79
 msgid "Fast-Fusion"
 msgstr ""
 
-#: genres.cpp:79
+#: libkcddb/genres.cpp:79
 msgid "Folklore"
 msgstr "Фолклор"
 
-#: genres.cpp:80
+#: libkcddb/genres.cpp:80
 msgid "Folk/Rock"
 msgstr "Фолк/рок"
 
-#: genres.cpp:80
+#: libkcddb/genres.cpp:80 libkcddb/categories.cpp:23
+msgid "Folk"
+msgstr "Фолк"
+
+#: libkcddb/genres.cpp:80
 msgid "Freestyle"
 msgstr "Слободен стил"
 
-#: genres.cpp:80
+#: libkcddb/genres.cpp:80
 msgid "Funk"
 msgstr "Фанк"
 
-#: genres.cpp:81
+#: libkcddb/genres.cpp:81
 msgid "Fusion"
 msgstr ""
 
-#: genres.cpp:81
+#: libkcddb/genres.cpp:81
 msgid "Game"
 msgstr "Игра"
 
-#: genres.cpp:81
+#: libkcddb/genres.cpp:81
 msgid "Gangsta Rap"
 msgstr "Уличен рап"
 
-#: genres.cpp:81
+#: libkcddb/genres.cpp:81
 msgid "Goa"
 msgstr "Гоа"
 
-#: genres.cpp:82
+#: libkcddb/genres.cpp:82
 msgid "Gospel"
 msgstr ""
 
-#: genres.cpp:82
+#: libkcddb/genres.cpp:82
 msgid "Gothic Rock"
 msgstr ""
 
-#: genres.cpp:82
+#: libkcddb/genres.cpp:82
 msgid "Gothic"
 msgstr "Готика"
 
-#: genres.cpp:82
+#: libkcddb/genres.cpp:82
 msgid "Grunge"
 msgstr "Гранџ"
 
-#: genres.cpp:83
+#: libkcddb/genres.cpp:83
 msgid "Hardcore"
 msgstr "Хардкор"
 
-#: genres.cpp:83
+#: libkcddb/genres.cpp:83
 msgid "Hard Rock"
 msgstr "Хард рок"
 
-#: genres.cpp:83
+#: libkcddb/genres.cpp:83
 msgid "Heavy Metal"
 msgstr "Хеви метал"
 
-#: genres.cpp:83
+#: libkcddb/genres.cpp:83
 msgid "Hip-Hop"
 msgstr "Хип Хоп"
 
-#: genres.cpp:84
+#: libkcddb/genres.cpp:84
 msgid "House"
 msgstr "Хаус"
 
-#: genres.cpp:84
+#: libkcddb/genres.cpp:84
 msgid "Humor"
 msgstr "Хумор"
 
-#: genres.cpp:84
+#: libkcddb/genres.cpp:84
 msgid "Indie"
 msgstr "Инди"
 
-#: genres.cpp:84
+#: libkcddb/genres.cpp:84
 msgid "Industrial"
 msgstr "Индустриал"
 
-#: genres.cpp:85
+#: libkcddb/genres.cpp:85
 msgid "Instrumental Pop"
 msgstr "Инструментален поп"
 
-#: genres.cpp:85
+#: libkcddb/genres.cpp:85
 msgid "Instrumental Rock"
 msgstr "Инструментален рок"
 
-#: genres.cpp:85
+#: libkcddb/genres.cpp:85
 msgid "Instrumental"
 msgstr "Инструментална"
 
-#: genres.cpp:85
+#: libkcddb/genres.cpp:85
 msgid "Jazz+Funk"
 msgstr "Џез+фанк"
 
-#: genres.cpp:86
+#: libkcddb/genres.cpp:86 libkcddb/categories.cpp:23
+msgid "Jazz"
+msgstr "Џез"
+
+#: libkcddb/genres.cpp:86
 msgid "JPop"
 msgstr ""
 
-#: genres.cpp:86
+#: libkcddb/genres.cpp:86
 msgid "Jungle"
 msgstr "Џангл"
 
-#: genres.cpp:86
+#: libkcddb/genres.cpp:86
 msgid "Latin"
 msgstr "Латино"
 
-#: genres.cpp:86
+#: libkcddb/genres.cpp:86
 msgid "Lo-Fi"
 msgstr ""
 
-#: genres.cpp:87
+#: libkcddb/genres.cpp:87
 msgid "Meditative"
 msgstr "Медитативна"
 
-#: genres.cpp:87
+#: libkcddb/genres.cpp:87
 msgid "Merengue"
 msgstr ""
 
-#: genres.cpp:87
+#: libkcddb/genres.cpp:87
 msgid "Metal"
 msgstr "Метал"
 
-#: genres.cpp:87
+#: libkcddb/genres.cpp:87
 msgid "Musical"
 msgstr "Музикална"
 
-#: genres.cpp:88
+#: libkcddb/genres.cpp:88
 msgid "National Folk"
 msgstr ""
 
-#: genres.cpp:88
+#: libkcddb/genres.cpp:88
 msgid "Native American"
 msgstr ""
 
-#: genres.cpp:88
+#: libkcddb/genres.cpp:88
 msgid "Negerpunk"
 msgstr ""
 
-#: genres.cpp:89
+#: libkcddb/genres.cpp:88 libkcddb/categories.cpp:24
+msgid "New Age"
+msgstr ""
+
+#: libkcddb/genres.cpp:89
 msgid "New Wave"
 msgstr ""
 
-#: genres.cpp:89
+#: libkcddb/genres.cpp:89
 #, fuzzy
 msgid "Noise"
 msgstr "Бучава"
 
-#: genres.cpp:89
+#: libkcddb/genres.cpp:89
 msgid "Oldies"
 msgstr "Стари хитови"
 
-#: genres.cpp:89
+#: libkcddb/genres.cpp:89
 msgid "Opera"
 msgstr "Опера"
 
-#: genres.cpp:90
+#: libkcddb/genres.cpp:90
 msgid "Other"
 msgstr "Друго"
 
-#: genres.cpp:90
+#: libkcddb/genres.cpp:90
 msgid "Polka"
 msgstr "Полка"
 
-#: genres.cpp:90
+#: libkcddb/genres.cpp:90
 msgid "Polsk Punk"
 msgstr ""
 
-#: genres.cpp:90
+#: libkcddb/genres.cpp:90
 msgid "Pop-Funk"
 msgstr "Поп-фанк"
 
-#: genres.cpp:91
+#: libkcddb/genres.cpp:91
 msgid "Pop/Funk"
 msgstr "Поп/фанк"
 
-#: genres.cpp:91
+#: libkcddb/genres.cpp:91
 msgid "Pop"
 msgstr "Поп"
 
-#: genres.cpp:91
+#: libkcddb/genres.cpp:91
 msgid "Porn Groove"
 msgstr "Порно грув"
 
-#: genres.cpp:91
+#: libkcddb/genres.cpp:91
 msgid "Power Ballad"
 msgstr ""
 
-#: genres.cpp:92
+#: libkcddb/genres.cpp:92
 msgid "Pranks"
 msgstr ""
 
-#: genres.cpp:92
+#: libkcddb/genres.cpp:92
 msgid "Primus"
 msgstr ""
 
-#: genres.cpp:92
+#: libkcddb/genres.cpp:92
 msgid "Progressive Rock"
 msgstr "Прогресивен рок"
 
-#: genres.cpp:92
+#: libkcddb/genres.cpp:92
 msgid "Psychedelic Rock"
 msgstr "Психоделичен рок"
 
-#: genres.cpp:93
+#: libkcddb/genres.cpp:93
 msgid "Psychedelic"
 msgstr "Психоделична"
 
-#: genres.cpp:93
+#: libkcddb/genres.cpp:93
 msgid "Punk Rock"
 msgstr "Панк рок"
 
-#: genres.cpp:93
+#: libkcddb/genres.cpp:93
 msgid "Punk"
 msgstr "Панк"
 
-#: genres.cpp:93
+#: libkcddb/genres.cpp:93
 msgid "R&B"
 msgstr "R&B"
 
-#: genres.cpp:94
+#: libkcddb/genres.cpp:94
 msgid "Rap"
 msgstr "Рап"
 
-#: genres.cpp:94
+#: libkcddb/genres.cpp:94
 msgid "Rave"
 msgstr "Рејв"
 
-#: genres.cpp:94
+#: libkcddb/genres.cpp:94 libkcddb/categories.cpp:24
+msgid "Reggae"
+msgstr "Реге"
+
+#: libkcddb/genres.cpp:94
 msgid "Retro"
 msgstr "Ретро"
 
-#: genres.cpp:95
+#: libkcddb/genres.cpp:95
 msgid "Revival"
 msgstr ""
 
-#: genres.cpp:95
+#: libkcddb/genres.cpp:95
 msgid "Rhythmic Soul"
 msgstr "Ритмичен соул"
 
-#: genres.cpp:95
+#: libkcddb/genres.cpp:95
 msgid "Rock & Roll"
 msgstr "Рок'ен рол"
 
-#: genres.cpp:96
+#: libkcddb/genres.cpp:95 libkcddb/categories.cpp:24
+msgid "Rock"
+msgstr "Рок"
+
+#: libkcddb/genres.cpp:96
 msgid "Salsa"
 msgstr "Салса"
 
-#: genres.cpp:96
+#: libkcddb/genres.cpp:96
 msgid "Samba"
 msgstr "Самба"
 
-#: genres.cpp:96
+#: libkcddb/genres.cpp:96
 msgid "Satire"
 msgstr "Сатира"
 
-#: genres.cpp:96
+#: libkcddb/genres.cpp:96
 msgid "Showtunes"
 msgstr ""
 
-#: genres.cpp:97
+#: libkcddb/genres.cpp:97
 msgid "Ska"
 msgstr "Ска"
 
-#: genres.cpp:97
+#: libkcddb/genres.cpp:97
 msgid "Slow Jam"
 msgstr ""
 
-#: genres.cpp:97
+#: libkcddb/genres.cpp:97
 msgid "Slow Rock"
 msgstr ""
 
-#: genres.cpp:97
+#: libkcddb/genres.cpp:97
 msgid "Sonata"
 msgstr "Соната"
 
-#: genres.cpp:98
+#: libkcddb/genres.cpp:98
 msgid "Soul"
 msgstr "Соул"
 
-#: genres.cpp:98
+#: libkcddb/genres.cpp:98
 msgid "Sound Clip"
 msgstr ""
 
-#: genres.cpp:98
+#: libkcddb/genres.cpp:98 libkcddb/categories.cpp:24
+msgid "Soundtrack"
+msgstr ""
+
+#: libkcddb/genres.cpp:98
 msgid "Southern Rock"
 msgstr ""
 
-#: genres.cpp:99
+#: libkcddb/genres.cpp:99
 msgid "Space"
 msgstr "Спејс"
 
-#: genres.cpp:99
+#: libkcddb/genres.cpp:99
 msgid "Speech"
 msgstr "Говор"
 
-#: genres.cpp:99
+#: libkcddb/genres.cpp:99
 msgid "Swing"
 msgstr "Свинг"
 
-#: genres.cpp:99
+#: libkcddb/genres.cpp:99
 msgid "Symphonic Rock"
 msgstr "Симфониски рок"
 
-#: genres.cpp:100
+#: libkcddb/genres.cpp:100
 msgid "Symphony"
 msgstr "Симфонија"
 
-#: genres.cpp:100
+#: libkcddb/genres.cpp:100
 msgid "Synthpop"
 msgstr "Синтпоп"
 
-#: genres.cpp:100
+#: libkcddb/genres.cpp:100
 msgid "Tango"
 msgstr "Танго"
 
-#: genres.cpp:100
+#: libkcddb/genres.cpp:100
 msgid "Techno-Industrial"
 msgstr "Техно индустриал"
 
-#: genres.cpp:101
+#: libkcddb/genres.cpp:101
 msgid "Techno"
 msgstr "Техно"
 
-#: genres.cpp:101
+#: libkcddb/genres.cpp:101
 msgid "Terror"
 msgstr "Терор"
 
-#: genres.cpp:101
+#: libkcddb/genres.cpp:101
 msgid "Thrash Metal"
 msgstr "Треш метал"
 
-#: genres.cpp:101
+#: libkcddb/genres.cpp:101
 msgid "Top 40"
 msgstr "Топ 40"
 
-#: genres.cpp:102
+#: libkcddb/genres.cpp:102
 #, fuzzy
 msgid "Trailer"
 msgstr "Наслов"
 
-#: genres.cpp:102
+#: libkcddb/genres.cpp:102
 msgid "Trance"
 msgstr "Транс"
 
-#: genres.cpp:102
+#: libkcddb/genres.cpp:102
 msgid "Tribal"
 msgstr ""
 
-#: genres.cpp:102
+#: libkcddb/genres.cpp:102
 msgid "Trip-Hop"
 msgstr "Трип хоп"
 
-#: genres.cpp:103
+#: libkcddb/genres.cpp:103
 msgid "Vocal"
 msgstr "Вокал"
 
-#: kcddb.cpp:32
-msgid "Success"
-msgstr "Успех"
+#: libkcddb/categories.cpp:23
+#, fuzzy
+msgid "Data"
+msgstr "Податоци"
 
-#: kcddb.cpp:36
-msgid "Server error"
+#: libkcddb/categories.cpp:23
+msgid "Miscellaneous"
+msgstr ""
+
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:7
+#. i18n: ectx: property (windowTitle), widget (QWidget, CDDBConfigWidgetBase)
+#: rc.cpp:3
+msgid "CDDB Settings"
+msgstr ""
+
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:20
+#. i18n: ectx: attribute (title), widget (QWidget, tabLookup)
+#: rc.cpp:6
+msgid "&Lookup"
+msgstr ""
+
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:26
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_MusicBrainzLookupEnabled)
+#: rc.cpp:9
+msgid "Enable MusicBrainz lookup"
+msgstr ""
+
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:33
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_FreedbLookupEnabled)
+#: rc.cpp:12
+msgid "Enable freedb lookup"
+msgstr ""
+
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:40
+#. i18n: ectx: property (title), widget (QGroupBox, freedbServerBox)
+#: rc.cpp:15
+msgid "Freedb Server"
+msgstr ""
+
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:46
+#. i18n: ectx: property (text), widget (QLabel, TextLabel7)
+#: rc.cpp:18
+msgid "Freedb server:"
+msgstr ""
+
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:64
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, kcfg_hostname)
+#: rc.cpp:21
+msgid "Name of CDDB server which will be used to look up CD information."
+msgstr ""
+
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:67
+#. i18n: ectx: property (text), widget (QLineEdit, kcfg_hostname)
+#: rc.cpp:24
+msgid "freedb.freedb.org"
+msgstr ""
+
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:80
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_3)
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:209
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:242
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: rc.cpp:27 rc.cpp:63 rc.cpp:69
+msgid "Port:"
+msgstr ""
+
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:93
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, kcfg_port)
+#: rc.cpp:30
+msgid "Port to connect to on CDDB server."
+msgstr ""
+
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:108
+#. i18n: ectx: property (text), widget (QLabel, TextLabel9)
+#: rc.cpp:33
+msgid "&Transport:"
+msgstr ""
+
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:120
+#. i18n: ectx: property (whatsThis), widget (QComboBox, kcfg_FreedbLookupTransport)
+#: rc.cpp:36
+msgid "Type of lookup which should be tried at the CDDB server."
+msgstr ""
+
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:137
+#. i18n: ectx: property (text), widget (KPushButton, mirrorListButton)
+#: rc.cpp:45
+msgid "Show &Mirror List"
+msgstr ""
+
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:153
+#. i18n: ectx: attribute (title), widget (QWidget, tabSubmit)
+#: rc.cpp:48
+msgid "&Submit"
+msgstr ""
+
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:161
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rc.cpp:51
+msgid "Email address:"
+msgstr ""
+
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:173
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_FreedbSubmitTransport)
+#: rc.cpp:54
+msgid "Submit Method"
+msgstr ""
+
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:189
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: rc.cpp:60
+#, fuzzy
+#| msgid "Server error"
+msgid "Server:"
 msgstr "Грешка на серверот"
 
-#: kcddb.cpp:40
-msgid "Host not found"
-msgstr "Компјутерот не е пронајден"
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:221
+#. i18n: ectx: property (text), widget (QRadioButton, smtpButton)
+#: rc.cpp:66
+msgid "SMTP (Email)"
+msgstr ""
 
-#: kcddb.cpp:44
-msgid "No response"
-msgstr "Нема одговор"
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:267
+#. i18n: ectx: property (text), widget (QCheckBox, needsAuthenticationBox)
+#: rc.cpp:72
+msgid "Server needs authentication"
+msgstr ""
 
-#: kcddb.cpp:48
-msgid "No record found"
-msgstr "Не е пронајден запис"
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:287
+#. i18n: ectx: property (text), widget (QLabel, textLabel9_2)
+#: rc.cpp:75
+msgid "Reply-To:"
+msgstr ""
 
-#: kcddb.cpp:52
-msgid "Multiple records found"
-msgstr "Пронајдени се повеќекратни записи"
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:300
+#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
+#: rc.cpp:78
+msgid "SMTP server:"
+msgstr ""
 
-#: kcddb.cpp:56
-msgid "Cannot save"
-msgstr "Не можам да зачувам"
+#. i18n: file: kcmcddb/cddbconfigwidget.ui:307
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#: rc.cpp:81
+msgid "Username:"
+msgstr ""
 
-#: kcddb.cpp:60
-msgid "Invalid category"
-msgstr "Невалидна категорија"
+#. i18n: file: libkcddb/cdinfoencodingwidget.ui:23
+#. i18n: ectx: property (text), widget (QLabel, encodingLabel)
+#: rc.cpp:85
+#, fuzzy
+msgid "Encoding"
+msgstr "Кодирање:"
 
-#: kcddb.cpp:64
-msgid "Unknown error"
-msgstr "Непозната грешка"
+#. i18n: file: libkcddb/cdinfoencodingwidget.ui:33
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
+#: rc.cpp:88
+msgid "Preview"
+msgstr "Преглед"
 
-#. i18n: file: cdinfodialog.ui:34
+#. i18n: file: libkcddb/cdinfodialog.ui:34
 #. i18n: ectx: property (text), widget (QLabel, lb_revision)
-#: rc.cpp:3
+#: rc.cpp:91
 msgid "Revision:"
 msgstr "Ревизија:"
 
-#. i18n: file: cdinfodialog.ui:41
+#. i18n: file: libkcddb/cdinfodialog.ui:41
 #. i18n: ectx: property (toolTip), widget (KLineEdit, m_title)
-#: rc.cpp:6
+#: rc.cpp:94
 msgid "Use the name of the artist if there is no title."
 msgstr "Користи го името на изведувачот ако нема наслов."
 
-#. i18n: file: cdinfodialog.ui:48
+#. i18n: file: libkcddb/cdinfodialog.ui:48
 #. i18n: ectx: property (text), widget (QLabel, lb_category)
-#: rc.cpp:9
+#: rc.cpp:97
 msgid "&Category:"
 msgstr "&Категорија:"
 
-#. i18n: file: cdinfodialog.ui:65
+#. i18n: file: libkcddb/cdinfodialog.ui:65
 #. i18n: ectx: property (toolTip), widget (KLineEdit, m_artist)
-#: rc.cpp:12
+#: rc.cpp:100
 #, fuzzy
 msgid ""
 "Write names as \"first last\", not \"last, first\". Omit any leading \"The"
@@ -726,97 +934,84 @@ msgstr ""
 "Испуштете ги сите водечки „The“. Користете го зборот „Разновидни“ за "
 "компилации."
 
-#. i18n: file: cdinfodialog.ui:72
+#. i18n: file: libkcddb/cdinfodialog.ui:72
 #. i18n: ectx: property (text), widget (QLabel, lb_artist)
-#: rc.cpp:15
+#: rc.cpp:103
 msgid "&Artist:"
 msgstr "&Изведувач:"
 
-#. i18n: file: cdinfodialog.ui:82
+#. i18n: file: libkcddb/cdinfodialog.ui:82
 #. i18n: ectx: property (text), widget (QLabel, lb_year)
-#: rc.cpp:18
+#: rc.cpp:106
 msgid "&Year:"
 msgstr "&Година:"
 
-#. i18n: file: cdinfodialog.ui:92
+#. i18n: file: libkcddb/cdinfodialog.ui:92
 #. i18n: ectx: property (text), widget (QLabel, lb_genre)
-#: rc.cpp:21
+#: rc.cpp:109
 msgid "&Genre:"
 msgstr "&Жанр:"
 
-#. i18n: file: cdinfodialog.ui:105
+#. i18n: file: libkcddb/cdinfodialog.ui:105
 #. i18n: ectx: property (toolTip), widget (KComboBox, m_category)
-#: rc.cpp:24
+#: rc.cpp:112
 msgid "Disc Id values must be unique within a category."
 msgstr ""
 "Вредностите на ид. на дискот мора да се единствени во рамките на категорија."
 
-#. i18n: file: cdinfodialog.ui:119
+#. i18n: file: libkcddb/cdinfodialog.ui:119
 #. i18n: ectx: property (text), widget (QCheckBox, m_multiple)
-#: rc.cpp:27
+#: rc.cpp:115
 msgid "&Multiple artists"
 msgstr ""
 
-#. i18n: file: cdinfodialog.ui:129
+#. i18n: file: libkcddb/cdinfodialog.ui:129
 #. i18n: ectx: property (text), widget (QLabel, lb_comment)
-#: rc.cpp:30
+#: rc.cpp:118
 msgid "Comment:"
 msgstr "Коментар:"
 
-#. i18n: file: cdinfodialog.ui:139
+#. i18n: file: libkcddb/cdinfodialog.ui:139
 #. i18n: ectx: property (text), widget (QLabel, lb_title)
-#: rc.cpp:33
+#: rc.cpp:121
 msgid "&Title:"
 msgstr "&Наслов:"
 
-#. i18n: file: cdinfodialog.ui:149
+#. i18n: file: libkcddb/cdinfodialog.ui:149
 #. i18n: ectx: property (toolTip), widget (KComboBox, m_genre)
-#: rc.cpp:36
+#: rc.cpp:124
 msgid "Avoid custom values, as they will be written to CDDB as-is."
 msgstr ""
 "Избегнувајте сопствени вредност, бидејќи тие ќе бидат запишани во CDDB какви "
 "што се."
 
-#. i18n: file: cdinfodialog.ui:162
+#. i18n: file: libkcddb/cdinfodialog.ui:162
 #. i18n: ectx: property (text), widget (QLabel, lb_id)
-#: rc.cpp:39
+#: rc.cpp:127
 msgid "Disc Id:"
 msgstr "Ид. на диск:"
 
-#. i18n: file: cdinfodialog.ui:169
+#. i18n: file: libkcddb/cdinfodialog.ui:169
 #. i18n: ectx: property (text), widget (QLabel, lb_length)
-#: rc.cpp:42
+#: rc.cpp:130
 msgid "Length:"
 msgstr "Должина:"
 
-#. i18n: file: cdinfodialog.ui:188
+#. i18n: file: libkcddb/cdinfodialog.ui:188
 #. i18n: ectx: property (toolTip), widget (QTreeView, m_trackList)
-#: rc.cpp:45
+#: rc.cpp:133
 #, fuzzy
 msgid "For a CD-Extra, set title to \"Data\"."
 msgstr "За CD-екстра, поставете го насловот на „Податоци“."
 
-#. i18n: file: cdinfodialog.ui:228
+#. i18n: file: libkcddb/cdinfodialog.ui:228
 #. i18n: ectx: property (text), widget (QPushButton, m_changeEncoding)
-#: rc.cpp:48
+#: rc.cpp:136
 msgid "Change Encoding..."
 msgstr "Смени кодирање..."
 
-#. i18n: file: cdinfodialog.ui:237
+#. i18n: file: libkcddb/cdinfodialog.ui:237
 #. i18n: ectx: property (text), widget (QLabel, lb_playingOrder)
-#: rc.cpp:51
+#: rc.cpp:139
 msgid "Playing order:"
 msgstr "Редослед на изведување:"
-
-#. i18n: file: cdinfoencodingwidget.ui:23
-#. i18n: ectx: property (text), widget (QLabel, encodingLabel)
-#: rc.cpp:54
-#, fuzzy
-msgid "Encoding"
-msgstr "Кодирање:"
-
-#. i18n: file: cdinfoencodingwidget.ui:33
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
-#: rc.cpp:57
-msgid "Preview"
-msgstr "Преглед"
