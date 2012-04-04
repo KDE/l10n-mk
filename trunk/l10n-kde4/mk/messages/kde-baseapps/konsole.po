@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-02 04:21+0200\n"
+"POT-Creation-Date: 2012-04-04 04:27+0200\n"
 "PO-Revision-Date: 2010-01-29 22:59+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -334,17 +334,27 @@ msgstr "Испрати е-пошта на..."
 msgid "Copy Email Address"
 msgstr "Копирај е-поштенска адреса"
 
-#: HistorySizeDialog.cpp:41
+#: HistorySizeDialog.cpp:32
 #, fuzzy
 #| msgid "S&crollback"
+msgctxt "@title:window"
 msgid "Adjust Scrollback"
 msgstr "Д&вижење наназад"
 
-#: HistorySizeDialog.cpp:52
-msgid "<center>The adjustment is only temporary</center>"
+#: HistorySizeDialog.cpp:45
+msgctxt "@info:status"
+msgid "Any adjustments are only temporary to this session."
 msgstr ""
 
-#: HistorySizeWidget.cpp:51
+#: HistorySizeWidget.cpp:44
+msgctxt "@info:status"
+msgid ""
+"When using this option, the scrollback data will be written unencrypted to "
+"temporary files. Those temporary files will be deleted automatically when "
+"quitting Konsole."
+msgstr ""
+
+#: HistorySizeWidget.cpp:60
 #, fuzzy
 #| msgid "lines"
 msgctxt "Unit of scrollback"
@@ -1581,7 +1591,7 @@ msgstr ""
 msgid "&Set as Default"
 msgstr "Постави како стандарден"
 
-#. i18n: file: HistorySizeWidget.ui:23
+#. i18n: file: HistorySizeWidget.ui:29
 #. i18n: ectx: property (toolTip), widget (QRadioButton, noHistoryButton)
 #: rc.cpp:341
 #, fuzzy
@@ -1589,19 +1599,19 @@ msgstr "Постави како стандарден"
 msgid "Do not remember previous output"
 msgstr "Ја оневозможува лентата за движење и не го памети претходниот излез"
 
-#. i18n: file: HistorySizeWidget.ui:26
+#. i18n: file: HistorySizeWidget.ui:32
 #. i18n: ectx: property (text), widget (QRadioButton, noHistoryButton)
 #: rc.cpp:344
 msgid "No scrollback"
 msgstr "Без историја"
 
-#. i18n: file: HistorySizeWidget.ui:41
+#. i18n: file: HistorySizeWidget.ui:50
 #. i18n: ectx: property (toolTip), widget (QRadioButton, fixedSizeHistoryButton)
 #: rc.cpp:347
 msgid "Limit the remembered output to a fixed number of lines"
 msgstr "Го ограничува памтењето на излезот на фиксен број редови"
 
-#. i18n: file: HistorySizeWidget.ui:44
+#. i18n: file: HistorySizeWidget.ui:53
 #. i18n: ectx: property (text), widget (QRadioButton, fixedSizeHistoryButton)
 #: rc.cpp:350
 #, fuzzy
@@ -1609,19 +1619,19 @@ msgstr "Го ограничува памтењето на излезот на ф
 msgid "Fixed size scrollback:"
 msgstr "Историја со фиксна големина: "
 
-#. i18n: file: HistorySizeWidget.ui:51
+#. i18n: file: HistorySizeWidget.ui:60
 #. i18n: ectx: property (toolTip), widget (KIntSpinBox, historyLineSpinner)
 #: rc.cpp:353
 msgid "Number of lines of output to remember"
 msgstr "Колку редови од излезот да се запамтат"
 
-#. i18n: file: HistorySizeWidget.ui:85
+#. i18n: file: HistorySizeWidget.ui:94
 #. i18n: ectx: property (toolTip), widget (QRadioButton, unlimitedHistoryButton)
 #: rc.cpp:356
 msgid "Remember all output produced by the terminal"
 msgstr "Го памти целосниот излез од терминалот"
 
-#. i18n: file: HistorySizeWidget.ui:88
+#. i18n: file: HistorySizeWidget.ui:97
 #. i18n: ectx: property (text), widget (QRadioButton, unlimitedHistoryButton)
 #: rc.cpp:359
 msgid "Unlimited scrollback"
@@ -2061,43 +2071,43 @@ msgstr ""
 "Во оваа сесија моментално работи програмата „%1“. Дали навистина сакате да "
 "ја затворите?"
 
-#: SessionController.cpp:1251
+#: SessionController.cpp:1255
 msgid "Save ZModem Download to..."
 msgstr ""
 
-#: SessionController.cpp:1259
+#: SessionController.cpp:1263
 msgid ""
 "<p>A ZModem file transfer attempt has been detected, but no suitable ZModem "
 "software was found on this system.</p><p>You may wish to install the 'rzsz' "
 "or 'lrzsz' package.</p>"
 msgstr ""
 
-#: SessionController.cpp:1271
+#: SessionController.cpp:1275
 msgid ""
 "<p>The current session already has a ZModem file transfer in progress.</p>"
 msgstr ""
 
-#: SessionController.cpp:1280
+#: SessionController.cpp:1284
 msgid ""
 "<p>No suitable ZModem software was found on this system.</p><p>You may wish "
 "to install the 'rzsz' or 'lrzsz' package.</p>"
 msgstr ""
 
-#: SessionController.cpp:1286
+#: SessionController.cpp:1290
 msgid "Select Files for ZModem Upload"
 msgstr ""
 
-#: SessionController.cpp:1354
+#: SessionController.cpp:1358
 #, kde-format
 msgid "Save Output From %1"
 msgstr "Зачувување на излезот од %1"
 
-#: SessionController.cpp:1365
+#: SessionController.cpp:1369
 #, kde-format
 msgid "%1 is an invalid URL, the output could not be saved."
 msgstr "%1 е невалидна адреса. Излезот не можеше да биде зачуван."
 
-#: SessionController.cpp:1440
+#: SessionController.cpp:1444
 #, kde-format
 msgid ""
 "A problem occurred when saving the output.\n"
@@ -2171,14 +2181,14 @@ msgstr "Програмата „%1“ излезе со статус %2."
 msgid "ZModem Progress"
 msgstr "Прогрес на ZModem"
 
-#: SessionManager.cpp:388
+#: SessionManager.cpp:381
 #, fuzzy
 #| msgid "Number"
 msgctxt "@item:intable The session index"
 msgid "Number"
 msgstr "Број"
 
-#: SessionManager.cpp:390
+#: SessionManager.cpp:383
 #, fuzzy
 #| msgid "Title"
 msgctxt "@item:intable The session title"
