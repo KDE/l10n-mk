@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-06 04:07+0200\n"
+"POT-Creation-Date: 2012-04-11 04:16+0200\n"
 "PO-Revision-Date: 2010-01-29 22:59+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: Application.cpp:420
+#: Application.cpp:426
 msgid "Toggle Background Window"
 msgstr ""
 
@@ -351,7 +351,7 @@ msgctxt "@info:status"
 msgid ""
 "When using this option, the scrollback data will be written unencrypted to "
 "temporary files. Those temporary files will be deleted automatically when "
-"quitting Konsole."
+"Konsole is closed in a normal manner."
 msgstr ""
 
 #: HistorySizeWidget.cpp:60
@@ -821,7 +821,7 @@ msgstr "Нов профил"
 msgid "Manage Profiles..."
 msgstr "Менаџирање профили"
 
-#: Profile.cpp:133
+#: Profile.cpp:135
 msgid "Shell"
 msgstr "Школка"
 
@@ -2116,18 +2116,18 @@ msgstr ""
 "Настана проблем при зачувувањето на излезот.\n"
 "%1"
 
-#: Session.cpp:376
+#: Session.cpp:377
 msgid "Could not find binary: "
 msgstr "Не можев да ја пронајдам бин. датотека: "
 
-#: Session.cpp:385
+#: Session.cpp:386
 #, fuzzy
 #| msgid "Warning: "
 msgctxt "@info:shell Alert the user with red color text"
 msgid "Warning: "
 msgstr "Внимание: "
 
-#: Session.cpp:442
+#: Session.cpp:443
 #, kde-format
 msgid ""
 "Could not find '%1', starting '%2' instead.  Please check your profile "
@@ -2136,59 +2136,59 @@ msgstr ""
 "Не можев да ја најдам „%1“, наместо тоа ја стартувам „%2“. Проверете ги "
 "поставувањата на Вашиот профил."
 
-#: Session.cpp:445
+#: Session.cpp:446
 msgid "Could not find an interactive shell to start."
 msgstr "Не можев да пронајдам интерактивна школка за стартување."
 
-#: Session.cpp:485
+#: Session.cpp:489
 #, kde-format
 msgid "Could not start program '%1' with arguments '%2'."
 msgstr "Не можев да ја стартувам програмата „%1“ со аргументи „%2“."
 
-#: Session.cpp:591
+#: Session.cpp:595
 #, kde-format
 msgid "Silence in session '%1'"
 msgstr "Тишина во сесијата „%1“"
 
-#: Session.cpp:638
+#: Session.cpp:642
 #, kde-format
 msgid "Bell in session '%1'"
 msgstr "Ѕвонче во сесијата „%1“"
 
-#: Session.cpp:641
+#: Session.cpp:645
 #, kde-format
 msgid "Activity in session '%1'"
 msgstr "Активност во сесијата „%1“"
 
-#: Session.cpp:809
+#: Session.cpp:814
 #, fuzzy
 #| msgid "Finished"
 msgctxt "@info:shell This session is done"
 msgid "Finished"
 msgstr "Завршено"
 
-#: Session.cpp:823 Session.cpp:835
+#: Session.cpp:828 Session.cpp:840
 #, kde-format
 msgid "Program '%1' crashed."
 msgstr "Програмата „%1“ падна."
 
-#: Session.cpp:825
+#: Session.cpp:830
 #, kde-format
 msgid "Program '%1' exited with status %2."
 msgstr "Програмата „%1“ излезе со статус %2."
 
-#: Session.cpp:1164
+#: Session.cpp:1169
 msgid "ZModem Progress"
 msgstr "Прогрес на ZModem"
 
-#: SessionManager.cpp:380
+#: SessionManager.cpp:384
 #, fuzzy
 #| msgid "Number"
 msgctxt "@item:intable The session index"
 msgid "Number"
 msgstr "Број"
 
-#: SessionManager.cpp:382
+#: SessionManager.cpp:386
 #, fuzzy
 #| msgid "Title"
 msgctxt "@item:intable The session title"
@@ -2213,47 +2213,51 @@ msgstr "Тековна папка (кратко)"
 msgid "Current Directory (Long): %D"
 msgstr "Тековна папка (долго)"
 
-#: TabTitleFormatButton.cpp:36 TabTitleFormatButton.cpp:47
+#: TabTitleFormatButton.cpp:36 TabTitleFormatButton.cpp:48
 #, fuzzy
 #| msgid "Window Title Set by Shell"
 msgid "Window Title Set by Shell: %w"
 msgstr "Наслов на прозорец, поставен од школката"
 
-#: TabTitleFormatButton.cpp:37 TabTitleFormatButton.cpp:48
+#: TabTitleFormatButton.cpp:37 TabTitleFormatButton.cpp:49
 #, fuzzy
 #| msgid "Session Number"
 msgid "Session Number: %#"
 msgstr "Број на сесија"
 
-#: TabTitleFormatButton.cpp:38 TabTitleFormatButton.cpp:44
+#: TabTitleFormatButton.cpp:38 TabTitleFormatButton.cpp:45
 #, fuzzy, c-format
 #| msgid "User Name"
 msgid "User Name: %u"
 msgstr "Корисничко име"
 
-#: TabTitleFormatButton.cpp:45
+#: TabTitleFormatButton.cpp:39
+msgid "Local Host: %h"
+msgstr ""
+
+#: TabTitleFormatButton.cpp:46
 #, fuzzy
 #| msgid "Remote Host (Short)"
 msgid "Remote Host (Short): %h"
 msgstr "Оддалечен компјутер (кратко)"
 
-#: TabTitleFormatButton.cpp:46
+#: TabTitleFormatButton.cpp:47
 #, fuzzy
 #| msgid "Remote Host (Long)"
 msgid "Remote Host (Long): %H"
 msgstr "Оддалечен компјутер (кратко)"
 
-#: TabTitleFormatButton.cpp:57
+#: TabTitleFormatButton.cpp:58
 msgid "Insert"
 msgstr "Вметни"
 
-#: TabTitleFormatButton.cpp:82
+#: TabTitleFormatButton.cpp:83
 #, fuzzy
 #| msgid "Tab title format:"
 msgid "Insert title format"
 msgstr "Формат на наслов на ливче:"
 
-#: TabTitleFormatButton.cpp:86
+#: TabTitleFormatButton.cpp:87
 #, fuzzy
 #| msgid "Remote tab title format:"
 msgid "Insert remote title format"
