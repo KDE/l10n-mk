@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-16 10:47+0200\n"
+"POT-Creation-Date: 2012-04-17 17:47+0200\n"
 "PO-Revision-Date: 2000-10-02 22:00+0100\n"
 "Last-Translator: Damjan Janevski <miopa@usa.net>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -926,8 +926,8 @@ msgstr ""
 
 #: kopageapp/dialogs/KoPAConfigureDialog.cpp:40
 #: kopageapp/dialogs/KoPAConfigureDialog.cpp:41
-#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:42
-#: pigment/KoCompositeOpRegistry.cpp:36
+#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOpRegistry.cpp:36
+#: pigment/KoCompositeOp.cpp:42
 msgid "Misc"
 msgstr ""
 
@@ -1261,7 +1261,7 @@ msgstr "inch"
 #: koreport/items/field/KoReportItemField.cpp:102
 #: koreport/items/label/KoReportItemLabel.cpp:104
 #: koreport/items/text/KoReportItemText.cpp:129
-#: widgets/KoColorPopupAction.cpp:86 widgets/KoUniColorChooser.cpp:418
+#: widgets/KoUniColorChooser.cpp:418 widgets/KoColorPopupAction.cpp:93
 msgid "Opacity"
 msgstr ""
 
@@ -3569,54 +3569,46 @@ msgstr ""
 msgid "32 Bits Float"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:30 pigment/KoCompositeOpRegistry.cpp:88
-#: pigment/compositeops/KoCompositeOps.h:141
-#, fuzzy
-msgid "Color"
-msgstr "Колони:"
-
-#: pigment/KoCompositeOp.cpp:33 pigment/KoCompositeOpRegistry.cpp:31
+#: pigment/KoCompositeOpRegistry.cpp:31 pigment/KoCompositeOp.cpp:33
 #, fuzzy
 msgid "Arithmetic"
 msgstr "Зачувај документ како"
 
-#: pigment/KoCompositeOp.cpp:34 pigment/KoCompositeOpRegistry.cpp:34
-#, fuzzy
-msgid "Negative"
-msgstr "Создади шаблон"
-
-#: pigment/KoCompositeOp.cpp:35 pigment/KoCompositeOpRegistry.cpp:33
-#: pigment/KoCompositeOpRegistry.cpp:55
-#: pigment/compositeops/KoCompositeOps.h:87
-#, fuzzy
-msgid "Lighten"
-msgstr "Десно:"
-
-#: pigment/KoCompositeOp.cpp:36 pigment/KoCompositeOpRegistry.cpp:32
-#: pigment/KoCompositeOpRegistry.cpp:50
-#: pigment/compositeops/KoCompositeOps.h:97
+#: pigment/KoCompositeOpRegistry.cpp:32 pigment/KoCompositeOpRegistry.cpp:50
+#: pigment/compositeops/KoCompositeOps.h:97 pigment/KoCompositeOp.cpp:36
 #, fuzzy
 msgid "Darken"
 msgstr "Екран"
 
-#: pigment/KoCompositeOp.cpp:37 pigment/KoCompositeOpRegistry.cpp:37
+#: pigment/KoCompositeOpRegistry.cpp:33 pigment/KoCompositeOpRegistry.cpp:55
+#: pigment/compositeops/KoCompositeOps.h:87 pigment/KoCompositeOp.cpp:35
+#, fuzzy
+msgid "Lighten"
+msgstr "Десно:"
+
+#: pigment/KoCompositeOpRegistry.cpp:34 pigment/KoCompositeOp.cpp:34
+#, fuzzy
+msgid "Negative"
+msgstr "Создади шаблон"
+
+#: pigment/KoCompositeOpRegistry.cpp:35 pigment/KoCompositeOp.cpp:41
+msgid "Mix"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:37 pigment/KoCompositeOp.cpp:37
 msgid "HSY"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:38 pigment/KoCompositeOpRegistry.cpp:38
+#: pigment/KoCompositeOpRegistry.cpp:38 pigment/KoCompositeOp.cpp:38
 msgid "HSI"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:39 pigment/KoCompositeOpRegistry.cpp:39
+#: pigment/KoCompositeOpRegistry.cpp:39 pigment/KoCompositeOp.cpp:39
 msgid "HSL"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:40 pigment/KoCompositeOpRegistry.cpp:40
+#: pigment/KoCompositeOpRegistry.cpp:40 pigment/KoCompositeOp.cpp:40
 msgid "HSV"
-msgstr ""
-
-#: pigment/KoCompositeOp.cpp:41 pigment/KoCompositeOpRegistry.cpp:35
-msgid "Mix"
 msgstr ""
 
 #: pigment/KoCompositeOpRegistry.cpp:42
@@ -3824,6 +3816,12 @@ msgstr "Екран"
 #, fuzzy
 msgid "Copy Blue"
 msgstr "Фирма :"
+
+#: pigment/KoCompositeOpRegistry.cpp:88
+#: pigment/compositeops/KoCompositeOps.h:141 pigment/KoCompositeOp.cpp:30
+#, fuzzy
+msgid "Color"
+msgstr "Колони:"
 
 #: pigment/KoCompositeOpRegistry.cpp:89
 #: pigment/compositeops/KoCompositeOps.h:142 widgets/KoUniColorChooser.cpp:116
@@ -4272,16 +4270,12 @@ msgstr ""
 msgid "ArabicAlphabet"
 msgstr ""
 
-#: widgets/KoColorSetWidget.cpp:189
+#: widgets/KoColorSetWidget.cpp:184
 #, fuzzy
 msgid "Recent:"
 msgstr "Отстрани шаблон"
 
-#: widgets/KoColorSetWidget.cpp:196
-msgid "Hide colors with bad contrast"
-msgstr ""
-
-#: widgets/KoColorSetWidget.cpp:207
+#: widgets/KoColorSetWidget.cpp:197
 #, fuzzy
 msgid "Add / Remove Colors..."
 msgstr "Отстрани табулатор"
