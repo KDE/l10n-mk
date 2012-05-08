@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_battery\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-06 07:30+0100\n"
+"POT-Creation-Date: 2012-05-08 06:32+0200\n"
 "PO-Revision-Date: 2010-01-31 22:08+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -19,168 +19,183 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: battery.cpp:182
-#, fuzzy
-#| msgid "<b>Battery:</b> "
-msgid "<b>Battery:</b>"
-msgstr "<b>Батерија:</b> "
+#: contents/ui/PopupDialog.qml:52
+msgid "Battery:"
+msgstr "Батерија:"
 
-#: battery.cpp:189
-#, fuzzy, kde-format
-#| msgid "<b>Battery:</b> "
-msgctxt "tooltip: placeholder is the battery ID"
-msgid "<b>Battery %1:</b>"
-msgstr "<b>Батерија:</b> "
-
-#: battery.cpp:200
+#: contents/ui/PopupDialog.qml:57
 #, fuzzy
 #| msgid "AC Adapter:"
-msgctxt "tooltip"
-msgid "<b>AC Adapter:</b>"
+msgid "AC Adapter:"
 msgstr "AC-адаптер:"
 
-#: battery.cpp:201
-#, fuzzy
-#| msgid "Plugged in "
-msgctxt "tooltip"
-msgid "Plugged in"
-msgstr "Вклучено "
-
-#: battery.cpp:201
-#, fuzzy
-#| msgid "Not plugged in"
-msgctxt "tooltip"
-msgid "Not plugged in"
-msgstr "Не е вклучено"
-
-#: battery.cpp:376
-msgid "General"
-msgstr "Општо"
-
-#: battery.cpp:553
+#: contents/ui/PopupDialog.qml:62
 msgctxt "Label for remaining time"
 msgid "Time Remaining:"
 msgstr ""
 
-#: battery.cpp:560
+#: contents/ui/PopupDialog.qml:68
 #, fuzzy
 #| msgid "Power Management"
 msgctxt "Label for power management inhibition"
 msgid "Power management enabled:"
 msgstr "Менаџмент на енергија"
 
-#: battery.cpp:582
+#: contents/ui/PopupDialog.qml:73
 #, fuzzy
 #| msgid "Screen Brightness"
 msgid "Screen Brightness:"
 msgstr "Осветлување на екран"
 
-#: battery.cpp:603
+#: contents/ui/PopupDialog.qml:88 contents/ui/batterymonitor.qml:74
+msgctxt "Battery is not plugged in"
+msgid "Not present"
+msgstr "Не е присутна"
+
+#: contents/ui/PopupDialog.qml:93
+#, fuzzy
+#| msgid "Plugged in "
+msgid "Plugged in"
+msgstr "Вклучено "
+
+#: contents/ui/PopupDialog.qml:93
+#, fuzzy
+#| msgid "Not plugged in"
+msgid "Not plugged in"
+msgstr "Не е вклучено"
+
+#: contents/ui/PopupDialog.qml:124
+#, kde-format
+msgid "1 hour"
+msgid_plural "%1 hours"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: contents/ui/PopupDialog.qml:125
+#, kde-format
+msgid "1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: contents/ui/PopupDialog.qml:141
 #, fuzzy
 #| msgid "Sleep"
 msgctxt "Suspend the computer to RAM; translation should be short"
 msgid "Sleep"
 msgstr "Спиење"
 
-#: battery.cpp:610
+#: contents/ui/PopupDialog.qml:150
 #, fuzzy
 #| msgid "Hibernate"
 msgctxt "Suspend the computer to disk; translation should be short"
 msgid "Hibernate"
 msgstr "Хибернација"
 
-#: battery.cpp:617
-msgctxt "tooltip on the config button in the popup"
-msgid "Configure Power Management..."
-msgstr "Конфигурирајте го менаџментот на енергија..."
+#: contents/ui/batterymonitor.qml:72
+#, fuzzy
+#| msgid "<b>Battery:</b> "
+msgid "<b>Battery:</b>"
+msgstr "<b>Батерија:</b> "
 
-#: battery.cpp:619
-msgid "Power Settings"
-msgstr ""
+#: contents/ui/batterymonitor.qml:76
+#, fuzzy
+#| msgid "AC Adapter:"
+msgctxt "tooltip"
+msgid "<b>AC Adapter:</b>"
+msgstr "AC-адаптер:"
 
-#: battery.cpp:675
-#, kde-format
-msgid "%1% (charged)"
-msgstr "%1% (наполнето)"
+#: contents/ui/batterymonitor.qml:78
+#, fuzzy
+#| msgid "Plugged in "
+msgctxt "tooltip"
+msgid "Plugged in"
+msgstr "Вклучено "
 
-#: battery.cpp:677
-#, kde-format
-msgid "%1% (discharging)"
-msgstr "%1% (се празни)"
+#: contents/ui/batterymonitor.qml:78
+#, fuzzy
+#| msgid "Not plugged in"
+msgctxt "tooltip"
+msgid "Not plugged in"
+msgstr "Не е вклучено"
 
-#: battery.cpp:679
+#: contents/ui/batterymonitor.qml:94
 #, kde-format
 msgid "%1% (charging)"
 msgstr "%1% (се полни)"
 
-#: battery.cpp:683
-msgctxt "Battery is not plugged in"
-msgid "Not present"
-msgstr "Не е присутна"
-
-#: battery.cpp:699 battery.cpp:732
-msgid "Battery:"
-msgstr "Батерија:"
-
-#: battery.cpp:706
+#: contents/ui/batterymonitor.qml:95
 #, kde-format
-msgctxt "Placeholder is the battery ID"
-msgid "Battery %1:"
-msgstr "Батерија %1:"
+msgid "%1% (charged)"
+msgstr "%1% (наполнето)"
 
-#: battery.cpp:713
-#, fuzzy
-#| msgid "AC Adapter:"
-msgid "AC Adapter:"
-msgstr "AC-адаптер:"
-
-#: battery.cpp:715
-#, fuzzy
-#| msgid "Plugged in "
-msgid "<b>Plugged in</b>"
-msgstr "Вклучено "
-
-#: battery.cpp:717
-#, fuzzy
-#| msgid "Not plugged in"
-msgid "<b>Not plugged in</b>"
-msgstr "Не е вклучено"
-
-#: battery.cpp:733
-#, fuzzy
-#| msgctxt "Battery is not plugged in"
-#| msgid "Not present"
-msgctxt "Battery is not plugged in"
-msgid "<b>Not present</b>"
-msgstr "Не е присутна"
-
-#: battery.cpp:965 battery.cpp:996 battery.cpp:1008
+#: contents/ui/batterymonitor.qml:97
 #, kde-format
-msgctxt "overlay on the battery, needs to be really tiny"
-msgid "%1%"
-msgstr ""
+msgid "%1% (discharging)"
+msgstr "%1% (се празни)"
 
-#: battery.cpp:1080
+#: contents/ui/batterymonitor.qml:144
 msgid "The battery applet has enabled system-wide inhibition"
 msgstr ""
 
-#. i18n: file: batteryConfig.ui:14
+#. i18n: file: contents/ui/config.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, batteryConfig)
 #: rc.cpp:3
 msgid "Configure Battery Monitor"
 msgstr "Конфигурација на мониторот за батерија"
 
-#. i18n: file: batteryConfig.ui:23
-#. i18n: ectx: property (text), widget (QCheckBox, showBatteryStringCheckBox)
+#. i18n: file: contents/ui/config.ui:23
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showMultipleBatteries)
 #: rc.cpp:6
-msgid "Show charge &information"
-msgstr "Прикажи &информација за полнење"
-
-#. i18n: file: batteryConfig.ui:33
-#. i18n: ectx: property (text), widget (QCheckBox, showMultipleBatteriesCheckBox)
-#: rc.cpp:9
 msgid "Show the state for &each battery present"
 msgstr "Прикажи ја состојбата за с&екоја присутна батерија"
+
+#. i18n: file: contents/ui/config.ui:30
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showRemainingTime)
+#: rc.cpp:9
+#, fuzzy
+#| msgid "Show the state for &each battery present"
+msgid "Show remaining time for the battery"
+msgstr "Прикажи ја состојбата за с&екоја присутна батерија"
+
+#, fuzzy
+#~| msgid "<b>Battery:</b> "
+#~ msgctxt "tooltip: placeholder is the battery ID"
+#~ msgid "<b>Battery %1:</b>"
+#~ msgstr "<b>Батерија:</b> "
+
+#~ msgid "General"
+#~ msgstr "Општо"
+
+#~ msgctxt "tooltip on the config button in the popup"
+#~ msgid "Configure Power Management..."
+#~ msgstr "Конфигурирајте го менаџментот на енергија..."
+
+#~ msgctxt "Placeholder is the battery ID"
+#~ msgid "Battery %1:"
+#~ msgstr "Батерија %1:"
+
+#, fuzzy
+#~| msgid "Plugged in "
+#~ msgid "<b>Plugged in</b>"
+#~ msgstr "Вклучено "
+
+#, fuzzy
+#~| msgid "Not plugged in"
+#~ msgid "<b>Not plugged in</b>"
+#~ msgstr "Не е вклучено"
+
+#, fuzzy
+#~| msgctxt "Battery is not plugged in"
+#~| msgid "Not present"
+#~ msgctxt "Battery is not plugged in"
+#~ msgid "<b>Not present</b>"
+#~ msgstr "Не е присутна"
+
+#~ msgid "Show charge &information"
+#~ msgstr "Прикажи &информација за полнење"
 
 #, fuzzy
 #~| msgid "Power Profile"
