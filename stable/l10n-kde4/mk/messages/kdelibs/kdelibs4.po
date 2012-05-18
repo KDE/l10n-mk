@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-16 11:40+0200\n"
+"POT-Creation-Date: 2012-05-18 12:28+0200\n"
 "PO-Revision-Date: 2010-01-27 10:39+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -2661,7 +2661,7 @@ msgctxt "@item Spelling dictionary"
 msgid "<application>Hunspell</application> Default"
 msgstr "<application>ISpell</application> стандарден"
 
-#: kde3support/kdeui/k3wizard.cpp:48
+#: kde3support/kdeui/k3wizard.cpp:48 kdeui/actions/kstandardaction_p.h:90
 msgid "&Back"
 msgstr "&Назад"
 
@@ -5468,27 +5468,6 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Автом. откривање"
 
-#: kdeui/actions/ktogglefullscreenaction.cpp:48
-#: kdeui/actions/ktogglefullscreenaction.cpp:55
-#: kdeui/actions/ktogglefullscreenaction.cpp:85
-#: kdeui/actions/kstandardaction_p.h:101
-msgid "F&ull Screen Mode"
-msgstr "Преку целиот &екран"
-
-#: kdeui/actions/ktogglefullscreenaction.cpp:51
-#: kdeui/actions/ktogglefullscreenaction.cpp:58
-#: kdeui/actions/ktogglefullscreenaction.cpp:86
-msgid "Full Screen"
-msgstr "Преку целиот екран"
-
-#: kdeui/actions/ktogglefullscreenaction.cpp:81
-msgid "Exit F&ull Screen Mode"
-msgstr "Излез од режимот Преку целиот &екран"
-
-#: kdeui/actions/ktogglefullscreenaction.cpp:82
-msgid "Exit Full Screen"
-msgstr "Излез од режимот Преку целиот екран"
-
 #: kdeui/actions/kaction.cpp:122
 #, kde-format
 msgid ""
@@ -5532,19 +5511,19 @@ msgctxt "show help"
 msgid "&Help"
 msgstr "&Помош"
 
-#: kdeui/actions/kstandardaction.cpp:516 kdeui/actions/kstandardaction_p.h:98
+#: kdeui/actions/kstandardaction.cpp:521 kdeui/actions/kstandardaction_p.h:98
 msgid "Show &Menubar"
 msgstr "Покажи &мени"
 
-#: kdeui/actions/kstandardaction.cpp:522
+#: kdeui/actions/kstandardaction.cpp:527
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr "Прикажи мени<p>Повторно го прикажува менито откако било скриено</p>"
 
-#: kdeui/actions/kstandardaction.cpp:539 kdeui/actions/kstandardaction_p.h:100
+#: kdeui/actions/kstandardaction.cpp:544 kdeui/actions/kstandardaction_p.h:100
 msgid "Show St&atusbar"
 msgstr "Покажи ја с&татусната линија"
 
-#: kdeui/actions/kstandardaction.cpp:542
+#: kdeui/actions/kstandardaction.cpp:547
 #, fuzzy
 #| msgid ""
 #| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
@@ -5555,6 +5534,46 @@ msgid ""
 msgstr ""
 "Прикажи ја статусната линија<br /><br />Ја прикажува статусната линија која "
 "се наоѓа на дното од прозорецот и служи за покажување статусни информации."
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:48
+#, fuzzy
+#| msgid "Exit F&ull Screen Mode"
+msgctxt "@action:inmenu"
+msgid "Exit F&ull Screen Mode"
+msgstr "Излез од режимот Преку целиот &екран"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:49
+#, fuzzy
+#| msgid "Exit Full Screen"
+msgctxt "@action:intoolbar"
+msgid "Exit Full Screen"
+msgstr "Излез од режимот Преку целиот екран"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:50
+#, fuzzy
+#| msgid "Exit F&ull Screen Mode"
+msgctxt "@info:tooltip"
+msgid "Exit full screen mode"
+msgstr "Излез од режимот Преку целиот &екран"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:53
+#, fuzzy
+#| msgid "F&ull Screen Mode"
+msgctxt "@action:inmenu"
+msgid "F&ull Screen Mode"
+msgstr "Преку целиот &екран"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:54
+#, fuzzy
+#| msgid "Full Screen"
+msgctxt "@action:intoolbar"
+msgid "Full Screen"
+msgstr "Преку целиот екран"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:55
+msgctxt "@info:tooltip"
+msgid "Display the window in full screen"
+msgstr ""
 
 #: kdeui/dialogs/kaboutapplicationdialog.cpp:84
 msgid ""
@@ -8268,7 +8287,7 @@ msgstr "Отвори датотека"
 msgid "&Quit"
 msgstr "Н&апушти"
 
-#: kdeui/util/kstandardguiitem.cpp:255
+#: kdeui/util/kstandardguiitem.cpp:255 kdeui/actions/kstandardaction_p.h:53
 msgid "Quit application"
 msgstr "Излези од апликацијата"
 
@@ -13760,37 +13779,110 @@ msgstr "Програма на KDE за тестирање"
 msgid "&New"
 msgstr "&Нова"
 
+#: kdeui/actions/kstandardaction_p.h:43
+#, fuzzy
+#| msgid "Create New Tag..."
+msgid "Create new document"
+msgstr "Креирај нова ознака..."
+
+#: kdeui/actions/kstandardaction_p.h:44
+msgid "Open an existing document"
+msgstr ""
+
 #: kdeui/actions/kstandardaction_p.h:45
 msgid "Open &Recent"
 msgstr "Отвори &неодамнешни"
+
+#: kdeui/actions/kstandardaction_p.h:45
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kdeui/actions/kstandardaction_p.h:46
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "Затвори документ"
+
+#: kdeui/actions/kstandardaction_p.h:47
+msgid "Save document under a new name"
+msgstr ""
 
 #: kdeui/actions/kstandardaction_p.h:48
 msgid "Re&vert"
 msgstr "В&рати се"
 
+#: kdeui/actions/kstandardaction_p.h:48
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kdeui/actions/kstandardaction_p.h:49
+#, fuzzy
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "Затвори документ"
+
+#: kdeui/actions/kstandardaction_p.h:50
+#, fuzzy
+#| msgctxt "keyboard-key-name"
+#| msgid "PrintScreen"
+msgid "Print document"
+msgstr "PrintScreen"
+
 #: kdeui/actions/kstandardaction_p.h:51
 msgid "Print Previe&w"
 msgstr "Преглед на п&ечатење"
+
+#: kdeui/actions/kstandardaction_p.h:51
+msgid "Show a print preview of document"
+msgstr ""
 
 #: kdeui/actions/kstandardaction_p.h:52
 msgid "&Mail..."
 msgstr "&Пошта..."
 
+#: kdeui/actions/kstandardaction_p.h:52
+msgid "Send document by mail"
+msgstr ""
+
+#: kdeui/actions/kstandardaction_p.h:55
+msgid "Undo last action"
+msgstr ""
+
 #: kdeui/actions/kstandardaction_p.h:56
 msgid "Re&do"
 msgstr "П&овтори"
+
+#: kdeui/actions/kstandardaction_p.h:56
+#, fuzzy
+#| msgid "HTML documentation"
+msgid "Redo last undone action"
+msgstr "HTML-документација"
 
 #: kdeui/actions/kstandardaction_p.h:57
 msgid "Cu&t"
 msgstr "Исе&чи"
 
+#: kdeui/actions/kstandardaction_p.h:57
+msgid "Cut selection to clipboard"
+msgstr ""
+
 #: kdeui/actions/kstandardaction_p.h:58
 msgid "&Copy"
 msgstr "&Копирај"
 
+#: kdeui/actions/kstandardaction_p.h:58
+msgid "Copy selection to clipboard"
+msgstr ""
+
 #: kdeui/actions/kstandardaction_p.h:59 kdeui/actions/kstandardaction_p.h:60
 msgid "&Paste"
 msgstr "&Вметни"
+
+#: kdeui/actions/kstandardaction_p.h:59 kdeui/actions/kstandardaction_p.h:60
+#, fuzzy
+#| msgid "Uploading content..."
+msgid "Paste clipboard content"
+msgstr "Качувам содржина..."
 
 #: kdeui/actions/kstandardaction_p.h:62
 msgid "Select &All"
@@ -13816,17 +13908,33 @@ msgstr "&Замени..."
 msgid "&Actual Size"
 msgstr "&Вистинска големина"
 
+#: kdeui/actions/kstandardaction_p.h:69
+msgid "View document at its actual size"
+msgstr ""
+
 #: kdeui/actions/kstandardaction_p.h:70
 msgid "&Fit to Page"
 msgstr "&Собери на страницата"
+
+#: kdeui/actions/kstandardaction_p.h:70
+msgid "Zoom to fit page in window"
+msgstr ""
 
 #: kdeui/actions/kstandardaction_p.h:71
 msgid "Fit to Page &Width"
 msgstr "Собери во &широчина"
 
+#: kdeui/actions/kstandardaction_p.h:71
+msgid "Zoom to fit page width in window"
+msgstr ""
+
 #: kdeui/actions/kstandardaction_p.h:72
 msgid "Fit to Page &Height"
 msgstr "Собери во &височина"
+
+#: kdeui/actions/kstandardaction_p.h:72
+msgid "Zoom to fit page height in window"
+msgstr ""
 
 #: kdeui/actions/kstandardaction_p.h:73
 msgid "Zoom &In"
@@ -13840,21 +13948,50 @@ msgstr "&Намали"
 msgid "&Zoom..."
 msgstr "&Размер..."
 
+#: kdeui/actions/kstandardaction_p.h:75
+#, fuzzy
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "Изберете недела"
+
 #: kdeui/actions/kstandardaction_p.h:76
 msgid "&Redisplay"
+msgstr "&Преприкажи"
+
+#: kdeui/actions/kstandardaction_p.h:76
+#, fuzzy
+#| msgid "&Redisplay"
+msgid "Redisplay document"
 msgstr "&Преприкажи"
 
 #: kdeui/actions/kstandardaction_p.h:78
 msgid "&Up"
 msgstr "&Нагоре"
 
+#: kdeui/actions/kstandardaction_p.h:78
+msgid "Go up"
+msgstr ""
+
 #: kdeui/actions/kstandardaction_p.h:83
 msgid "&Previous Page"
+msgstr "П&ретходна страница"
+
+#: kdeui/actions/kstandardaction_p.h:83
+#, fuzzy
+#| msgid "&Previous Page"
+msgid "Go to previous page"
 msgstr "П&ретходна страница"
 
 #: kdeui/actions/kstandardaction_p.h:84
 msgid "&Next Page"
 msgstr "&Следна страница"
+
+#: kdeui/actions/kstandardaction_p.h:84
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "Оди на ред"
 
 #: kdeui/actions/kstandardaction_p.h:85
 msgid "&Go To..."
@@ -13872,16 +14009,40 @@ msgstr "Оди на &линија..."
 msgid "&First Page"
 msgstr "&Прва страница"
 
+#: kdeui/actions/kstandardaction_p.h:88
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "Оди на ред"
+
 #: kdeui/actions/kstandardaction_p.h:89
 msgid "&Last Page"
 msgstr "П&оследна страница"
 
+#: kdeui/actions/kstandardaction_p.h:89
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "Оди на &страница..."
+
 #: kdeui/actions/kstandardaction_p.h:90
-msgid "&Back in the Document"
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Go back in document"
 msgstr "Наза&д во документот"
 
 #: kdeui/actions/kstandardaction_p.h:91
-msgid "&Forward in the Document"
+#, fuzzy
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "&Напред"
+
+#: kdeui/actions/kstandardaction_p.h:91
+#, fuzzy
+#| msgid "&Forward in the Document"
+msgid "Go forward in document"
 msgstr "Напр&ед во документот"
 
 #: kdeui/actions/kstandardaction_p.h:93
@@ -13898,9 +14059,39 @@ msgstr "&Уреди обележувачи"
 msgid "&Spelling..."
 msgstr "&Правопис..."
 
+#: kdeui/actions/kstandardaction_p.h:96
+#, fuzzy
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "Провери правопис"
+
+#: kdeui/actions/kstandardaction_p.h:98
+#, fuzzy
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "Покажи &мени"
+
 #: kdeui/actions/kstandardaction_p.h:99
 msgid "Show &Toolbar"
 msgstr "Покажи &алатки"
+
+#: kdeui/actions/kstandardaction_p.h:99
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Toolbar"
+msgid "Show or hide toolbar"
+msgstr "Прикажи алатник"
+
+#: kdeui/actions/kstandardaction_p.h:100
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Statusbar"
+msgid "Show or hide statusbar"
+msgstr "Прикажи статусна линија"
+
+#: kdeui/actions/kstandardaction_p.h:101
+msgid "F&ull Screen Mode"
+msgstr "Преку целиот &екран"
 
 #: kdeui/actions/kstandardaction_p.h:102
 msgid "&Save Settings"
@@ -13996,12 +14187,6 @@ msgstr "pm"
 #, fuzzy
 #~| msgctxt "@action"
 #~| msgid "Show Statusbar"
-#~ msgid "Show Statusbar"
-#~ msgstr "Прикажи статусна линија"
-
-#, fuzzy
-#~| msgctxt "@action"
-#~| msgid "Show Statusbar"
 #~ msgid "Hide Statusbar"
 #~ msgstr "Прикажи статусна линија"
 
@@ -14021,12 +14206,6 @@ msgstr "pm"
 #~ msgctxt "option:check A filter on file type - media files"
 #~ msgid "Media"
 #~ msgstr "Meta"
-
-#, fuzzy
-#~| msgctxt "@action"
-#~| msgid "Show Toolbar"
-#~ msgid "Show Toolbar"
-#~ msgstr "Прикажи алатник"
 
 #, fuzzy
 #~| msgid "HTML Toolbar"
