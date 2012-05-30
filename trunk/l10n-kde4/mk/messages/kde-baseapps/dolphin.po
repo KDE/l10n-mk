@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-29 05:22+0200\n"
+"POT-Creation-Date: 2012-05-30 04:46+0200\n"
 "PO-Revision-Date: 2010-01-28 23:53+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -488,7 +488,15 @@ msgctxt "@label::textbox"
 msgid "Select which data should be shown:"
 msgstr "Конфигурирајте кои податоци да бидат прикажани"
 
-#: panels/information/informationpanelcontent.cpp:225
+#: panels/information/phononwidget.cpp:126
+msgid "play"
+msgstr "пушти"
+
+#: panels/information/phononwidget.cpp:132
+msgid "stop"
+msgstr "стоп"
+
+#: panels/information/informationpanelcontent.cpp:227
 #, kde-format
 msgctxt "@info"
 msgid "%1 item selected"
@@ -497,17 +505,17 @@ msgstr[0] "Избран е %1 елемент"
 msgstr[1] "Избрани се %1 елементи"
 msgstr[2] "Избрани се %1 елементи"
 
-#: panels/information/informationpanelcontent.cpp:266
+#: panels/information/informationpanelcontent.cpp:268
 msgctxt "@action:inmenu"
 msgid "Preview"
 msgstr "Преглед"
 
-#: panels/information/informationpanelcontent.cpp:271
+#: panels/information/informationpanelcontent.cpp:273
 msgctxt "@action:inmenu"
 msgid "Configure..."
 msgstr "Конфигурирај..."
 
-#: panels/information/informationpanelcontent.cpp:293
+#: panels/information/informationpanelcontent.cpp:295
 #, fuzzy
 #| msgctxt "@label::textbox"
 #| msgid "Configure which data should be shown in the Information Panel."
@@ -516,14 +524,6 @@ msgid "Select which data should be shown in the information panel:"
 msgstr ""
 "Конфигурирајте кои податоци треба да бидат прикажани во Панелот со "
 "информации."
-
-#: panels/information/phononwidget.cpp:126
-msgid "play"
-msgstr "пушти"
-
-#: panels/information/phononwidget.cpp:132
-msgid "stop"
-msgstr "стоп"
 
 #: panels/places/placesitemeditdialog.cpp:127
 msgctxt "@label"
@@ -583,7 +583,7 @@ msgctxt "@item"
 msgid "Devices"
 msgstr "Сервиси"
 
-#: panels/places/placespanel.cpp:160 dolphincontextmenu.cpp:173
+#: panels/places/placespanel.cpp:160 dolphincontextmenu.cpp:172
 msgctxt "@action:inmenu"
 msgid "Empty Trash"
 msgstr "Испразни ја корпата"
@@ -1916,70 +1916,22 @@ msgctxt "@info"
 msgid "Details view mode"
 msgstr "Режим на преглед со детали"
 
-#: dolphinviewcontainer.cpp:366
-msgctxt "@info:progress"
-msgid "Loading folder..."
-msgstr "Вчитувам папка..."
-
-#: dolphinviewcontainer.cpp:374
-#, fuzzy
-#| msgctxt "@label:listbox"
-#| msgid "Sorting:"
-msgctxt "@info:progress"
-msgid "Sorting..."
-msgstr "Подредување:"
-
-#: dolphinviewcontainer.cpp:385
-msgctxt "@info"
-msgid "Searching..."
-msgstr "Пребарување..."
-
-#: dolphinviewcontainer.cpp:405
-msgctxt "@info:status"
-msgid "No items found."
-msgstr "Не се пронајдени ставки."
-
-#: dolphinviewcontainer.cpp:521
-msgctxt "@info:status"
-msgid "Dolphin does not support web pages, the web browser has been launched"
-msgstr "Dolphin не поддржува веб-страници, стартуван е веб-прелистувачот"
-
-#: dolphinviewcontainer.cpp:535
-msgctxt "@info:status"
-msgid "Protocol not supported by Dolphin, Konqueror has been launched"
-msgstr "Протоколот не е поддржан од Dolphin, стартуван е Konqueror"
-
-#: dolphinviewcontainer.cpp:543
-msgctxt "@info:status"
-msgid "Invalid protocol"
-msgstr "Невалиден протокол"
-
-#: dolphincontextmenu.cpp:179 dolphincontextmenu.cpp:341
-msgctxt "@action:inmenu Add current folder to places"
-msgid "Add to Places"
-msgstr "Додај во местата"
-
-#: dolphincontextmenu.cpp:199
-msgctxt "@label"
-msgid "Trash"
-msgstr "Корпа"
-
-#: dolphincontextmenu.cpp:209
+#: dolphincontextmenu.cpp:194
 msgctxt "@action:inmenu"
 msgid "Restore"
 msgstr "Врати"
 
-#: dolphincontextmenu.cpp:248 dolphinmainwindow.cpp:1492
+#: dolphincontextmenu.cpp:233 dolphinmainwindow.cpp:1486
 msgctxt "@title:menu Create new folder, file, link, etc."
 msgid "Create New"
 msgstr "Креирај ново"
 
-#: dolphincontextmenu.cpp:261
+#: dolphincontextmenu.cpp:246
 msgctxt "@action:inmenu Add selected folder to places"
 msgid "Add to Places"
 msgstr "Додај во местата"
 
-#: dolphincontextmenu.cpp:268
+#: dolphincontextmenu.cpp:253
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Open in New Window"
@@ -1987,7 +1939,7 @@ msgctxt "@action:inmenu"
 msgid "Open Path in New Window"
 msgstr "Отвори во нов прозорец"
 
-#: dolphincontextmenu.cpp:274
+#: dolphincontextmenu.cpp:259
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Open in New Tab"
@@ -1995,12 +1947,17 @@ msgctxt "@action:inmenu"
 msgid "Open Path in New Tab"
 msgstr "Отвори во ново ливче"
 
-#: dolphincontextmenu.cpp:440
+#: dolphincontextmenu.cpp:326
+msgctxt "@action:inmenu Add current folder to places"
+msgid "Add to Places"
+msgstr "Додај во местата"
+
+#: dolphincontextmenu.cpp:425
 msgctxt "@action:inmenu"
 msgid "Paste Into Folder"
 msgstr "Вметни во папка"
 
-#: dolphincontextmenu.cpp:551
+#: dolphincontextmenu.cpp:536
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Move to Trash"
@@ -2008,13 +1965,341 @@ msgctxt "@action:inmenu"
 msgid "&Move to Trash"
 msgstr "Премести во корпа"
 
-#: dolphincontextmenu.cpp:554
+#: dolphincontextmenu.cpp:539
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Delete"
 msgctxt "@action:inmenu"
 msgid "&Delete"
 msgstr "Избриши"
+
+#: dolphinmainwindow.cpp:319
+msgctxt "@info:status"
+msgid "Successfully copied."
+msgstr "Успешно е копирано."
+
+#: dolphinmainwindow.cpp:322
+msgctxt "@info:status"
+msgid "Successfully moved."
+msgstr "Успешно е преместено."
+
+#: dolphinmainwindow.cpp:325
+msgctxt "@info:status"
+msgid "Successfully linked."
+msgstr "Успешно е поврзано."
+
+#: dolphinmainwindow.cpp:328
+msgctxt "@info:status"
+msgid "Successfully moved to trash."
+msgstr "Успешно е преместено во корпа."
+
+#: dolphinmainwindow.cpp:331
+msgctxt "@info:status"
+msgid "Successfully renamed."
+msgstr "Успешно е преименувано."
+
+#: dolphinmainwindow.cpp:335
+msgctxt "@info:status"
+msgid "Created folder."
+msgstr "Папката е креирана."
+
+#: dolphinmainwindow.cpp:419
+msgctxt "@info"
+msgid "Go back"
+msgstr "Оди назад"
+
+#: dolphinmainwindow.cpp:425
+msgctxt "@info"
+msgid "Go forward"
+msgstr "Оди напред"
+
+#: dolphinmainwindow.cpp:593
+msgctxt "@title:window"
+msgid "Confirmation"
+msgstr "Потврда"
+
+#: dolphinmainwindow.cpp:597
+msgid "C&lose Current Tab"
+msgstr "Затвори тековно &ливче"
+
+#: dolphinmainwindow.cpp:605
+msgid ""
+"You have multiple tabs open in this window, are you sure you want to quit?"
+msgstr ""
+"Имате повеќе отворени ливчиња во прозорецов, дали навистина сакате да го "
+"напуштите?"
+
+#: dolphinmainwindow.cpp:607
+msgid "Do not ask again"
+msgstr "Не прашувај повторно"
+
+#: dolphinmainwindow.cpp:1183
+msgctxt "@action:inmenu"
+msgid "New Tab"
+msgstr "Ново ливче"
+
+#: dolphinmainwindow.cpp:1186
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Search Bar"
+msgctxt "@action:inmenu"
+msgid "Detach Tab"
+msgstr "Алатник за пребарување"
+
+#: dolphinmainwindow.cpp:1188
+msgctxt "@action:inmenu"
+msgid "Close Other Tabs"
+msgstr "Затвори ги другите ливчиња"
+
+#: dolphinmainwindow.cpp:1190
+msgctxt "@action:inmenu"
+msgid "Close Tab"
+msgstr "Затвори ливче"
+
+#: dolphinmainwindow.cpp:1366
+#, fuzzy
+#| msgctxt "@title:menu"
+#| msgid "Location Bar"
+msgctxt "@action:inmenu"
+msgid "Location Bar"
+msgstr "Лента со локација"
+
+#: dolphinmainwindow.cpp:1374
+#, fuzzy
+#| msgid "&Go"
+msgctxt "@action:inmenu"
+msgid "Go"
+msgstr "О&ди"
+
+#: dolphinmainwindow.cpp:1384
+#, fuzzy
+#| msgctxt "@title:menu"
+#| msgid "Tools"
+msgctxt "@action:inmenu"
+msgid "Tools"
+msgstr "Алатки"
+
+#: dolphinmainwindow.cpp:1398
+msgctxt "@action:inmenu"
+msgid "Help"
+msgstr ""
+
+#: dolphinmainwindow.cpp:1493
+msgctxt "@action:inmenu File"
+msgid "New &Window"
+msgstr "Нов &прозорец"
+
+#: dolphinmainwindow.cpp:1499
+msgctxt "@action:inmenu File"
+msgid "New Tab"
+msgstr "Ново ливче"
+
+#: dolphinmainwindow.cpp:1505
+msgctxt "@action:inmenu File"
+msgid "Close Tab"
+msgstr "Затвори ливче"
+
+#: dolphinmainwindow.cpp:1528
+msgctxt "@action:inmenu Edit"
+msgid "Paste"
+msgstr "Вметни"
+
+#: dolphinmainwindow.cpp:1533
+msgctxt "@action:inmenu Edit"
+msgid "Select All"
+msgstr "Избери ги сите"
+
+#: dolphinmainwindow.cpp:1538 dolphinpart.cpp:164
+msgctxt "@action:inmenu Edit"
+msgid "Invert Selection"
+msgstr "Инверзија на изборот"
+
+#: dolphinmainwindow.cpp:1551
+msgctxt "@action:inmenu View"
+msgid "Reload"
+msgstr "Превчитај"
+
+#: dolphinmainwindow.cpp:1557
+msgctxt "@action:inmenu View"
+msgid "Stop"
+msgstr "Стоп"
+
+#: dolphinmainwindow.cpp:1558
+msgctxt "@info"
+msgid "Stop loading"
+msgstr "Прекини вчитување"
+
+#: dolphinmainwindow.cpp:1563
+msgctxt "@action:inmenu Navigation Bar"
+msgid "Editable Location"
+msgstr "Локација што може да се уредува"
+
+#: dolphinmainwindow.cpp:1568
+msgctxt "@action:inmenu Navigation Bar"
+msgid "Replace Location"
+msgstr "Заменување локација"
+
+#: dolphinmainwindow.cpp:1579
+msgid "Recently Closed Tabs"
+msgstr "Скорешни затворени ливчиња"
+
+#: dolphinmainwindow.cpp:1585
+#, fuzzy
+#| msgid "Recently Closed Tabs"
+msgid "Empty Recently Closed Tabs"
+msgstr "Скорешни затворени ливчиња"
+
+#: dolphinmainwindow.cpp:1603
+msgctxt "@action:inmenu Tools"
+msgid "Show Filter Bar"
+msgstr "Прикажи лента со филтри"
+
+#: dolphinmainwindow.cpp:1609
+msgctxt "@action:inmenu Tools"
+msgid "Compare Files"
+msgstr "Спореди датотеки"
+
+#: dolphinmainwindow.cpp:1615
+msgctxt "@action:inmenu Tools"
+msgid "Open Terminal"
+msgstr "Отвори терминал"
+
+#: dolphinmainwindow.cpp:1636
+msgctxt "@action:inmenu"
+msgid "Activate Next Tab"
+msgstr "Активирај следно ливче"
+
+#: dolphinmainwindow.cpp:1641
+msgctxt "@action:inmenu"
+msgid "Activate Previous Tab"
+msgstr "Активирај претходно ливче"
+
+#: dolphinmainwindow.cpp:1647
+msgctxt "@action:inmenu"
+msgid "Open in New Tab"
+msgstr "Отвори во ново ливче"
+
+#: dolphinmainwindow.cpp:1652
+msgctxt "@action:inmenu"
+msgid "Open in New Window"
+msgstr "Отвори во нов прозорец"
+
+#: dolphinmainwindow.cpp:1662
+#, fuzzy
+#| msgctxt "@title:menu"
+#| msgid "Panels"
+msgctxt "@action:inmenu Panels"
+msgid "Unlock Panels"
+msgstr "Панели"
+
+#: dolphinmainwindow.cpp:1664
+#, fuzzy
+#| msgctxt "@title:menu"
+#| msgid "Panels"
+msgctxt "@action:inmenu Panels"
+msgid "Lock Panels"
+msgstr "Панели"
+
+#: dolphinmainwindow.cpp:1670
+msgctxt "@title:window"
+msgid "Information"
+msgstr "Информација"
+
+#: dolphinmainwindow.cpp:1691
+msgctxt "@title:window"
+msgid "Folders"
+msgstr "Папки"
+
+#: dolphinmainwindow.cpp:1714
+msgctxt "@title:window Shell terminal"
+msgid "Terminal"
+msgstr "Терминал"
+
+#: dolphinmainwindow.cpp:1744
+msgctxt "@title:window"
+msgid "Places"
+msgstr "Места"
+
+#: dolphinmainwindow.cpp:1769
+#, fuzzy
+#| msgctxt "@title:menu"
+#| msgid "Panels"
+msgctxt "@action:inmenu View"
+msgid "Panels"
+msgstr "Панели"
+
+#: dolphinmainwindow.cpp:1840
+msgctxt "@action"
+msgid "Control"
+msgstr ""
+
+#: dolphinmainwindow.cpp:2007
+msgctxt "@action:intoolbar Close right view"
+msgid "Close"
+msgstr "Затвори"
+
+#: dolphinmainwindow.cpp:2008
+msgctxt "@info"
+msgid "Close right view"
+msgstr "Затвори десен преглед"
+
+#: dolphinmainwindow.cpp:2011
+msgctxt "@action:intoolbar Close left view"
+msgid "Close"
+msgstr "Затвори"
+
+#: dolphinmainwindow.cpp:2012
+msgctxt "@info"
+msgid "Close left view"
+msgstr "Затвори лев преглед"
+
+#: dolphinmainwindow.cpp:2016
+msgctxt "@action:intoolbar Split view"
+msgid "Split"
+msgstr "Раздели"
+
+#: dolphinmainwindow.cpp:2017
+msgctxt "@info"
+msgid "Split view"
+msgstr "Подели преглед"
+
+#: dolphinviewcontainer.cpp:365
+msgctxt "@info:progress"
+msgid "Loading folder..."
+msgstr "Вчитувам папка..."
+
+#: dolphinviewcontainer.cpp:373
+#, fuzzy
+#| msgctxt "@label:listbox"
+#| msgid "Sorting:"
+msgctxt "@info:progress"
+msgid "Sorting..."
+msgstr "Подредување:"
+
+#: dolphinviewcontainer.cpp:384
+msgctxt "@info"
+msgid "Searching..."
+msgstr "Пребарување..."
+
+#: dolphinviewcontainer.cpp:404
+msgctxt "@info:status"
+msgid "No items found."
+msgstr "Не се пронајдени ставки."
+
+#: dolphinviewcontainer.cpp:520
+msgctxt "@info:status"
+msgid "Dolphin does not support web pages, the web browser has been launched"
+msgstr "Dolphin не поддржува веб-страници, стартуван е веб-прелистувачот"
+
+#: dolphinviewcontainer.cpp:534
+msgctxt "@info:status"
+msgid "Protocol not supported by Dolphin, Konqueror has been launched"
+msgstr "Протоколот не е поддржан од Dolphin, стартуван е Konqueror"
+
+#: dolphinviewcontainer.cpp:542
+msgctxt "@info:status"
+msgid "Invalid protocol"
+msgstr "Невалиден протокол"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -2660,11 +2945,6 @@ msgctxt "@action:inmenu Edit"
 msgid "Unselect All"
 msgstr "Одизбери ги сите"
 
-#: dolphinpart.cpp:164 dolphinmainwindow.cpp:1544
-msgctxt "@action:inmenu Edit"
-msgid "Invert Selection"
-msgstr "Инверзија на изборот"
-
 #: dolphinpart.cpp:177
 msgctxt "@action:inmenu Go"
 msgid "App&lications"
@@ -2723,290 +3003,9 @@ msgstr "Одизбирање"
 msgid "Unselect all items matching this pattern:"
 msgstr "Одизберете ги сите елементи што одговараат на овој шаблон:"
 
-#: dolphinmainwindow.cpp:325
-msgctxt "@info:status"
-msgid "Successfully copied."
-msgstr "Успешно е копирано."
-
-#: dolphinmainwindow.cpp:328
-msgctxt "@info:status"
-msgid "Successfully moved."
-msgstr "Успешно е преместено."
-
-#: dolphinmainwindow.cpp:331
-msgctxt "@info:status"
-msgid "Successfully linked."
-msgstr "Успешно е поврзано."
-
-#: dolphinmainwindow.cpp:334
-msgctxt "@info:status"
-msgid "Successfully moved to trash."
-msgstr "Успешно е преместено во корпа."
-
-#: dolphinmainwindow.cpp:337
-msgctxt "@info:status"
-msgid "Successfully renamed."
-msgstr "Успешно е преименувано."
-
-#: dolphinmainwindow.cpp:341
-msgctxt "@info:status"
-msgid "Created folder."
-msgstr "Папката е креирана."
-
-#: dolphinmainwindow.cpp:425
-msgctxt "@info"
-msgid "Go back"
-msgstr "Оди назад"
-
-#: dolphinmainwindow.cpp:431
-msgctxt "@info"
-msgid "Go forward"
-msgstr "Оди напред"
-
-#: dolphinmainwindow.cpp:599
-msgctxt "@title:window"
-msgid "Confirmation"
-msgstr "Потврда"
-
-#: dolphinmainwindow.cpp:603
-msgid "C&lose Current Tab"
-msgstr "Затвори тековно &ливче"
-
-#: dolphinmainwindow.cpp:611
-msgid ""
-"You have multiple tabs open in this window, are you sure you want to quit?"
-msgstr ""
-"Имате повеќе отворени ливчиња во прозорецов, дали навистина сакате да го "
-"напуштите?"
-
-#: dolphinmainwindow.cpp:613
-msgid "Do not ask again"
-msgstr "Не прашувај повторно"
-
-#: dolphinmainwindow.cpp:1189
-msgctxt "@action:inmenu"
-msgid "New Tab"
-msgstr "Ново ливче"
-
-#: dolphinmainwindow.cpp:1192
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Search Bar"
-msgctxt "@action:inmenu"
-msgid "Detach Tab"
-msgstr "Алатник за пребарување"
-
-#: dolphinmainwindow.cpp:1194
-msgctxt "@action:inmenu"
-msgid "Close Other Tabs"
-msgstr "Затвори ги другите ливчиња"
-
-#: dolphinmainwindow.cpp:1196
-msgctxt "@action:inmenu"
-msgid "Close Tab"
-msgstr "Затвори ливче"
-
-#: dolphinmainwindow.cpp:1372
-#, fuzzy
-#| msgctxt "@title:menu"
-#| msgid "Location Bar"
-msgctxt "@action:inmenu"
-msgid "Location Bar"
-msgstr "Лента со локација"
-
-#: dolphinmainwindow.cpp:1380
-#, fuzzy
-#| msgid "&Go"
-msgctxt "@action:inmenu"
-msgid "Go"
-msgstr "О&ди"
-
-#: dolphinmainwindow.cpp:1390
-#, fuzzy
-#| msgctxt "@title:menu"
-#| msgid "Tools"
-msgctxt "@action:inmenu"
-msgid "Tools"
-msgstr "Алатки"
-
-#: dolphinmainwindow.cpp:1404
-msgctxt "@action:inmenu"
-msgid "Help"
-msgstr ""
-
-#: dolphinmainwindow.cpp:1499
-msgctxt "@action:inmenu File"
-msgid "New &Window"
-msgstr "Нов &прозорец"
-
-#: dolphinmainwindow.cpp:1505
-msgctxt "@action:inmenu File"
-msgid "New Tab"
-msgstr "Ново ливче"
-
-#: dolphinmainwindow.cpp:1511
-msgctxt "@action:inmenu File"
-msgid "Close Tab"
-msgstr "Затвори ливче"
-
-#: dolphinmainwindow.cpp:1534
-msgctxt "@action:inmenu Edit"
-msgid "Paste"
-msgstr "Вметни"
-
-#: dolphinmainwindow.cpp:1539
-msgctxt "@action:inmenu Edit"
-msgid "Select All"
-msgstr "Избери ги сите"
-
-#: dolphinmainwindow.cpp:1557
-msgctxt "@action:inmenu View"
-msgid "Reload"
-msgstr "Превчитај"
-
-#: dolphinmainwindow.cpp:1563
-msgctxt "@action:inmenu View"
-msgid "Stop"
-msgstr "Стоп"
-
-#: dolphinmainwindow.cpp:1564
-msgctxt "@info"
-msgid "Stop loading"
-msgstr "Прекини вчитување"
-
-#: dolphinmainwindow.cpp:1569
-msgctxt "@action:inmenu Navigation Bar"
-msgid "Editable Location"
-msgstr "Локација што може да се уредува"
-
-#: dolphinmainwindow.cpp:1574
-msgctxt "@action:inmenu Navigation Bar"
-msgid "Replace Location"
-msgstr "Заменување локација"
-
-#: dolphinmainwindow.cpp:1585
-msgid "Recently Closed Tabs"
-msgstr "Скорешни затворени ливчиња"
-
-#: dolphinmainwindow.cpp:1591
-#, fuzzy
-#| msgid "Recently Closed Tabs"
-msgid "Empty Recently Closed Tabs"
-msgstr "Скорешни затворени ливчиња"
-
-#: dolphinmainwindow.cpp:1609
-msgctxt "@action:inmenu Tools"
-msgid "Show Filter Bar"
-msgstr "Прикажи лента со филтри"
-
-#: dolphinmainwindow.cpp:1615
-msgctxt "@action:inmenu Tools"
-msgid "Compare Files"
-msgstr "Спореди датотеки"
-
-#: dolphinmainwindow.cpp:1621
-msgctxt "@action:inmenu Tools"
-msgid "Open Terminal"
-msgstr "Отвори терминал"
-
-#: dolphinmainwindow.cpp:1642
-msgctxt "@action:inmenu"
-msgid "Activate Next Tab"
-msgstr "Активирај следно ливче"
-
-#: dolphinmainwindow.cpp:1647
-msgctxt "@action:inmenu"
-msgid "Activate Previous Tab"
-msgstr "Активирај претходно ливче"
-
-#: dolphinmainwindow.cpp:1653
-msgctxt "@action:inmenu"
-msgid "Open in New Tab"
-msgstr "Отвори во ново ливче"
-
-#: dolphinmainwindow.cpp:1658
-msgctxt "@action:inmenu"
-msgid "Open in New Window"
-msgstr "Отвори во нов прозорец"
-
-#: dolphinmainwindow.cpp:1668
-#, fuzzy
-#| msgctxt "@title:menu"
-#| msgid "Panels"
-msgctxt "@action:inmenu Panels"
-msgid "Unlock Panels"
-msgstr "Панели"
-
-#: dolphinmainwindow.cpp:1670
-#, fuzzy
-#| msgctxt "@title:menu"
-#| msgid "Panels"
-msgctxt "@action:inmenu Panels"
-msgid "Lock Panels"
-msgstr "Панели"
-
-#: dolphinmainwindow.cpp:1676
-msgctxt "@title:window"
-msgid "Information"
-msgstr "Информација"
-
-#: dolphinmainwindow.cpp:1697
-msgctxt "@title:window"
-msgid "Folders"
-msgstr "Папки"
-
-#: dolphinmainwindow.cpp:1720
-msgctxt "@title:window Shell terminal"
-msgid "Terminal"
-msgstr "Терминал"
-
-#: dolphinmainwindow.cpp:1750
-msgctxt "@title:window"
-msgid "Places"
-msgstr "Места"
-
-#: dolphinmainwindow.cpp:1775
-#, fuzzy
-#| msgctxt "@title:menu"
-#| msgid "Panels"
-msgctxt "@action:inmenu View"
-msgid "Panels"
-msgstr "Панели"
-
-#: dolphinmainwindow.cpp:1846
-msgctxt "@action"
-msgid "Control"
-msgstr ""
-
-#: dolphinmainwindow.cpp:2013
-msgctxt "@action:intoolbar Close right view"
-msgid "Close"
-msgstr "Затвори"
-
-#: dolphinmainwindow.cpp:2014
-msgctxt "@info"
-msgid "Close right view"
-msgstr "Затвори десен преглед"
-
-#: dolphinmainwindow.cpp:2017
-msgctxt "@action:intoolbar Close left view"
-msgid "Close"
-msgstr "Затвори"
-
-#: dolphinmainwindow.cpp:2018
-msgctxt "@info"
-msgid "Close left view"
-msgstr "Затвори лев преглед"
-
-#: dolphinmainwindow.cpp:2022
-msgctxt "@action:intoolbar Split view"
-msgid "Split"
-msgstr "Раздели"
-
-#: dolphinmainwindow.cpp:2023
-msgctxt "@info"
-msgid "Split view"
-msgstr "Подели преглед"
+#~ msgctxt "@label"
+#~ msgid "Trash"
+#~ msgstr "Корпа"
 
 #, fuzzy
 #~| msgctxt "@label:slider"
