@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-19 19:42+0200\n"
+"POT-Creation-Date: 2012-06-24 12:03+0200\n"
 "PO-Revision-Date: 2010-01-27 10:39+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -5001,54 +5001,6 @@ msgstr ""
 msgid "Operation not supported"
 msgstr "Операцијата не е поддржана"
 
-#: kdecore/network/netsupp.cpp:891 kdecore/network/k3resolver.cpp:545
-msgid "no error"
-msgstr "нема грешка"
-
-#: kdecore/network/netsupp.cpp:892
-msgid "address family for nodename not supported"
-msgstr "Не е поддржана фамилијата на адреси за име на јазол"
-
-#: kdecore/network/netsupp.cpp:893 kdecore/network/k3resolver.cpp:547
-msgid "temporary failure in name resolution"
-msgstr "привремен неуспех при разрешување на име"
-
-#: kdecore/network/netsupp.cpp:894
-msgid "invalid value for 'ai_flags'"
-msgstr "невалидни вредности за „ai_flags“"
-
-#: kdecore/network/netsupp.cpp:895 kdecore/network/k3resolver.cpp:548
-msgid "non-recoverable failure in name resolution"
-msgstr "неповратен неуспех при разрешување на име"
-
-#: kdecore/network/netsupp.cpp:896
-msgid "'ai_family' not supported"
-msgstr "не е поддржана „ai_family“"
-
-#: kdecore/network/netsupp.cpp:897 kdecore/network/k3resolver.cpp:550
-msgid "memory allocation failure"
-msgstr "неуспех при доделување меморија"
-
-#: kdecore/network/netsupp.cpp:898
-msgid "no address associated with nodename"
-msgstr "нема придружена адреса со име на јазол"
-
-#: kdecore/network/netsupp.cpp:899 kdecore/network/k3resolver.cpp:551
-msgid "name or service not known"
-msgstr "непознато име или сервис"
-
-#: kdecore/network/netsupp.cpp:900
-msgid "servname not supported for ai_socktype"
-msgstr "Не е поддржано servname за ai_socktype"
-
-#: kdecore/network/netsupp.cpp:901
-msgid "'ai_socktype' not supported"
-msgstr "Не е поддржан „ai_socktype“"
-
-#: kdecore/network/netsupp.cpp:902
-msgid "system error"
-msgstr "системска грешка"
-
 #: kdecore/network/k3socks.cpp:137
 msgid "NEC SOCKS client"
 msgstr "Клиент NEC SOCKS"
@@ -5062,13 +5014,33 @@ msgstr "Клиент Dante SOCKS"
 msgid "Timed out trying to connect to remote host"
 msgstr "Истече времето при обидот да се поврзам со оддалечениот компјутер"
 
+#: kdecore/network/k3resolver.cpp:545 kdecore/network/netsupp.cpp:894
+msgid "no error"
+msgstr "нема грешка"
+
 #: kdecore/network/k3resolver.cpp:546
 msgid "requested family not supported for this host name"
 msgstr "бараната фамилија не е поддржана за компјутерот со ова име"
 
+#: kdecore/network/k3resolver.cpp:547 kdecore/network/netsupp.cpp:896
+msgid "temporary failure in name resolution"
+msgstr "привремен неуспех при разрешување на име"
+
+#: kdecore/network/k3resolver.cpp:548 kdecore/network/netsupp.cpp:898
+msgid "non-recoverable failure in name resolution"
+msgstr "неповратен неуспех при разрешување на име"
+
 #: kdecore/network/k3resolver.cpp:549
 msgid "invalid flags"
 msgstr "невалидни знаменца"
+
+#: kdecore/network/k3resolver.cpp:550 kdecore/network/netsupp.cpp:900
+msgid "memory allocation failure"
+msgstr "неуспех при доделување меморија"
+
+#: kdecore/network/k3resolver.cpp:551 kdecore/network/netsupp.cpp:902
+msgid "name or service not known"
+msgstr "непознато име или сервис"
 
 #: kdecore/network/k3resolver.cpp:552
 msgid "requested family not supported"
@@ -5172,6 +5144,34 @@ msgstr "Синџирот со сертификати е премногу дол�
 msgctxt "SSL error"
 msgid "Unknown error"
 msgstr "Непозната грешка"
+
+#: kdecore/network/netsupp.cpp:895
+msgid "address family for nodename not supported"
+msgstr "Не е поддржана фамилијата на адреси за име на јазол"
+
+#: kdecore/network/netsupp.cpp:897
+msgid "invalid value for 'ai_flags'"
+msgstr "невалидни вредности за „ai_flags“"
+
+#: kdecore/network/netsupp.cpp:899
+msgid "'ai_family' not supported"
+msgstr "не е поддржана „ai_family“"
+
+#: kdecore/network/netsupp.cpp:901
+msgid "no address associated with nodename"
+msgstr "нема придружена адреса со име на јазол"
+
+#: kdecore/network/netsupp.cpp:903
+msgid "servname not supported for ai_socktype"
+msgstr "Не е поддржано servname за ai_socktype"
+
+#: kdecore/network/netsupp.cpp:904
+msgid "'ai_socktype' not supported"
+msgstr "Не е поддржан „ai_socktype“"
+
+#: kdecore/network/netsupp.cpp:905
+msgid "system error"
+msgstr "системска грешка"
 
 #: kdecore/services/kmimetyperepository.cpp:611
 #, kde-format
@@ -5468,21 +5468,6 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Автом. откривање"
 
-#: kdeui/actions/kaction.cpp:122
-#, kde-format
-msgid ""
-"The key sequence '%1' is ambiguous. Use 'Configure Shortcuts'\n"
-"from the 'Settings' menu to solve the ambiguity.\n"
-"No action will be triggered."
-msgstr ""
-"Секвенцата на тастери „%1“ е двозначна. Користете „Конфигурирај кратенки“\n"
-"од менито „Поставувања“ за да го решите проблемот.\n"
-"Нема да биде активирано ниедно дејство."
-
-#: kdeui/actions/kaction.cpp:126
-msgid "Ambiguous shortcut detected"
-msgstr "Пронајдена е двозначна кратенка"
-
 #: kdeui/actions/krecentfilesaction.cpp:81
 msgid "No Entries"
 msgstr "Нема елементи"
@@ -5574,6 +5559,21 @@ msgstr "Преку целиот екран"
 msgctxt "@info:tooltip"
 msgid "Display the window in full screen"
 msgstr ""
+
+#: kdeui/actions/kaction.cpp:122
+#, kde-format
+msgid ""
+"The key sequence '%1' is ambiguous. Use 'Configure Shortcuts'\n"
+"from the 'Settings' menu to solve the ambiguity.\n"
+"No action will be triggered."
+msgstr ""
+"Секвенцата на тастери „%1“ е двозначна. Користете „Конфигурирај кратенки“\n"
+"од менито „Поставувања“ за да го решите проблемот.\n"
+"Нема да биде активирано ниедно дејство."
+
+#: kdeui/actions/kaction.cpp:126
+msgid "Ambiguous shortcut detected"
+msgstr "Пронајдена е двозначна кратенка"
 
 #: kdeui/dialogs/kaboutapplicationdialog.cpp:84
 msgid ""
