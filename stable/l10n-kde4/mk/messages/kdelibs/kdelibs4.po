@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-24 12:03+0200\n"
+"POT-Creation-Date: 2012-06-25 12:35+0200\n"
 "PO-Revision-Date: 2010-01-27 10:39+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -10374,30 +10374,6 @@ msgstr "Зачувај како"
 msgid "Inactive"
 msgstr "Неактивно"
 
-#: khtml/khtmlimage.cpp:202
-#, kde-format
-msgid "%1 (%2 - %3x%4 Pixels)"
-msgstr "%1 (%2 - %3x%4 пиксели)"
-
-#: khtml/khtmlimage.cpp:204
-#, kde-format
-msgid "%1 - %2x%3 Pixels"
-msgstr "%1 - %2x%3 пиксели"
-
-#: khtml/khtmlimage.cpp:209
-#, kde-format
-msgid "%1 (%2x%3 Pixels)"
-msgstr "%1 (%2x%3 пиксели)"
-
-#: khtml/khtmlimage.cpp:211
-#, kde-format
-msgid "Image - %1x%2 Pixels"
-msgstr "Слика - %1x%2 пиксели"
-
-#: khtml/khtmlimage.cpp:217
-msgid "Done."
-msgstr "Готово."
-
 #: khtml/khtml_part.cpp:252
 msgid "View Do&cument Source"
 msgstr "Види го изворниот &код на документот"
@@ -10876,6 +10852,30 @@ msgstr "Прикажи пасивно скок-&известување за бл
 msgid "&Configure JavaScript New Window Policies..."
 msgstr "&Конфигурирај политики за нов прозорец од JavaScript..."
 
+#: khtml/khtmlimage.cpp:202
+#, kde-format
+msgid "%1 (%2 - %3x%4 Pixels)"
+msgstr "%1 (%2 - %3x%4 пиксели)"
+
+#: khtml/khtmlimage.cpp:204
+#, kde-format
+msgid "%1 - %2x%3 Pixels"
+msgstr "%1 - %2x%3 пиксели"
+
+#: khtml/khtmlimage.cpp:209
+#, kde-format
+msgid "%1 (%2x%3 Pixels)"
+msgstr "%1 (%2x%3 пиксели)"
+
+#: khtml/khtmlimage.cpp:211
+#, kde-format
+msgid "Image - %1x%2 Pixels"
+msgstr "Слика - %1x%2 пиксели"
+
+#: khtml/khtmlimage.cpp:217
+msgid "Done."
+msgstr "Готово."
+
 #: khtml/test_regression_gui_main.cpp:34
 msgid "TestRegressionGui"
 msgstr "TestRegressionGui"
@@ -11168,38 +11168,9 @@ msgstr "JavaScript"
 msgid "&Stop Script"
 msgstr "&Запри скрипта"
 
-#: khtml/ecma/kjs_html.cpp:2166 khtml/ecma/kjs_window.cpp:1660
+#: khtml/ecma/kjs_window.cpp:1660 khtml/ecma/kjs_html.cpp:2166
 msgid "Confirmation: JavaScript Popup"
 msgstr "Потврда: JavaScript-скок"
-
-#: khtml/ecma/kjs_html.cpp:2168
-msgid ""
-"This site is submitting a form which will open up a new browser window via "
-"JavaScript.\n"
-"Do you want to allow the form to be submitted?"
-msgstr ""
-"Оваа страница предава формулар што ќе отвори нов разгледувач користејќи "
-"JavaScript.\n"
-"Дали дозволувате да биде предаден формуларот?"
-
-#: khtml/ecma/kjs_html.cpp:2171
-#, kde-format
-msgid ""
-"<qt>This site is submitting a form which will open <p>%1</p> in a new "
-"browser window via JavaScript.<br />Do you want to allow the form to be "
-"submitted?</qt>"
-msgstr ""
-"<qt>Оваа страница предава формулар кој ќе го отвори <p>%1</p> во нов "
-"разгледувач користејќи JavaScript.<br />Дали дозволувате да биде предаден "
-"формуларот?</qt>"
-
-#: khtml/ecma/kjs_html.cpp:2173 khtml/ecma/kjs_window.cpp:1668
-msgid "Allow"
-msgstr "Дозволи"
-
-#: khtml/ecma/kjs_html.cpp:2173 khtml/ecma/kjs_window.cpp:1668
-msgid "Do Not Allow"
-msgstr "Не дозволувај"
 
 #: khtml/ecma/kjs_window.cpp:1663
 msgid ""
@@ -11217,6 +11188,14 @@ msgid ""
 msgstr ""
 "<qt>Оваа страница бара да го отвори <p>%1</p>во нов разгледувач користејќи "
 "JavaScript.<br />Дали го дозволувате тоа?</qt>"
+
+#: khtml/ecma/kjs_window.cpp:1668 khtml/ecma/kjs_html.cpp:2173
+msgid "Allow"
+msgstr "Дозволи"
+
+#: khtml/ecma/kjs_window.cpp:1668 khtml/ecma/kjs_html.cpp:2173
+msgid "Do Not Allow"
+msgstr "Не дозволувај"
 
 #: khtml/ecma/kjs_window.cpp:1981
 msgid "Close window?"
@@ -11255,6 +11234,27 @@ msgstr "Вметни"
 #: khtml/ecma/kjs_window.cpp:2899
 msgid "Disallow"
 msgstr "Забрани"
+
+#: khtml/ecma/kjs_html.cpp:2168
+msgid ""
+"This site is submitting a form which will open up a new browser window via "
+"JavaScript.\n"
+"Do you want to allow the form to be submitted?"
+msgstr ""
+"Оваа страница предава формулар што ќе отвори нов разгледувач користејќи "
+"JavaScript.\n"
+"Дали дозволувате да биде предаден формуларот?"
+
+#: khtml/ecma/kjs_html.cpp:2171
+#, kde-format
+msgid ""
+"<qt>This site is submitting a form which will open <p>%1</p> in a new "
+"browser window via JavaScript.<br />Do you want to allow the form to be "
+"submitted?</qt>"
+msgstr ""
+"<qt>Оваа страница предава формулар кој ќе го отвори <p>%1</p> во нов "
+"разгледувач користејќи JavaScript.<br />Дали дозволувате да биде предаден "
+"формуларот?</qt>"
 
 #: khtml/ecma/debugger/consoledock.cpp:220
 msgid "Console"
