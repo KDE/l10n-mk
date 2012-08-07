@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-07-24 12:54+0200\n"
+"POT-Creation-Date: 2012-08-07 08:29+0200\n"
 "PO-Revision-Date: 2007-02-28 14:08+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -239,53 +239,53 @@ msgstr ""
 msgid "Show Raw Message"
 msgstr "Препратена порака"
 
-#: objecttreeparser.cpp:2050 viewer_p.cpp:2879
+#: objecttreeparser.cpp:2050 viewer_p.cpp:2840
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
 msgstr ""
 
-#: objecttreeparser.cpp:2056 viewer_p.cpp:2881 viewer_p.cpp:2886
-#: viewer_p.cpp:2895 viewer_p.cpp:2904 viewer_p.cpp:2922 viewer_p.cpp:2934
-#: viewer_p.cpp:2974
+#: objecttreeparser.cpp:2056 viewer_p.cpp:2842 viewer_p.cpp:2847
+#: viewer_p.cpp:2856 viewer_p.cpp:2865 viewer_p.cpp:2883 viewer_p.cpp:2895
+#: viewer_p.cpp:2935
 msgid "Chiasmus Backend Error"
 msgstr ""
 
-#: objecttreeparser.cpp:2062 viewer_p.cpp:2892
+#: objecttreeparser.cpp:2062 viewer_p.cpp:2853
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
 msgstr ""
 
-#: objecttreeparser.cpp:2070 viewer_p.cpp:2901
+#: objecttreeparser.cpp:2070 viewer_p.cpp:2862
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
 msgstr ""
 
-#: objecttreeparser.cpp:2076 viewer_p.cpp:2908
+#: objecttreeparser.cpp:2076 viewer_p.cpp:2869
 #, fuzzy
 #| msgid "Encryption Key Selection"
 msgid "Chiasmus Decryption Key Selection"
 msgstr "Избор на клуч за криптирање"
 
-#: objecttreeparser.cpp:2089 viewer_p.cpp:2920
+#: objecttreeparser.cpp:2089 viewer_p.cpp:2881
 msgid ""
 "Chiasmus backend does not offer the \"x-decrypt\" function. Please report "
 "this bug."
 msgstr ""
 
-#: objecttreeparser.cpp:2097 viewer_p.cpp:2932
+#: objecttreeparser.cpp:2097 viewer_p.cpp:2893
 msgid ""
 "The \"x-decrypt\" function does not accept the expected parameters. Please "
 "report this bug."
 msgstr ""
 
-#: objecttreeparser.cpp:2103 viewer_p.cpp:2939 viewer_p.cpp:2966
+#: objecttreeparser.cpp:2103 viewer_p.cpp:2900 viewer_p.cpp:2927
 msgid "Chiasmus Decryption Error"
 msgstr ""
 
-#: objecttreeparser.cpp:2109 viewer_p.cpp:2971
+#: objecttreeparser.cpp:2109 viewer_p.cpp:2932
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-decrypt\" function "
 "did not return a byte array. Please report this bug."
@@ -760,7 +760,7 @@ msgid ""
 "be able to work with this.</qt>"
 msgstr ""
 
-#: mailsourceviewer.cpp:112 viewer_p.cpp:1769
+#: mailsourceviewer.cpp:112 viewer_p.cpp:1736
 msgid "Speak Text"
 msgstr ""
 
@@ -785,6 +785,852 @@ msgstr "&Види го изворниот код"
 #: mailsourceviewer.cpp:248
 msgid "HTML code for displaying the message to the user"
 msgstr ""
+
+#: util.cpp:82
+#, kde-format
+msgid ""
+"A file named \"%1\" already exists. Are you sure you want to overwrite it?"
+msgstr ""
+"Датотеката со име „%1“ веќе постои. Дали сте сигурен дека сакате да запишете "
+"врз неа?"
+
+#: util.cpp:84
+msgid "Overwrite File?"
+msgstr "Запишувате врз датотека?"
+
+#: util.cpp:193
+msgid "Save Attachments To"
+msgstr "Зачувајте ги прилозите во"
+
+#: util.cpp:207
+msgctxt "filename for an unnamed attachment"
+msgid "attachment.1"
+msgstr "прилог.1"
+
+#: util.cpp:212
+#, fuzzy
+#| msgid "Save Attachment As"
+msgid "Save Attachment"
+msgstr "Зачувајте прилог како"
+
+#: util.cpp:232
+#, kde-format
+msgctxt "filename for the %1-th unnamed attachment"
+msgid "attachment.%1"
+msgstr "прилог.%1"
+
+#: util.cpp:331
+#, kde-format
+msgid ""
+"The part %1 of the message is encrypted. Do you want to keep the encryption "
+"when saving?"
+msgstr ""
+"Делот %1 од пораката е криптиран. Дали сакате да го зачувате криптирањето "
+"при зачувувањето?"
+
+#: util.cpp:333 util.cpp:342
+msgid "KMail Question"
+msgstr "Прашање на КПошта"
+
+#: util.cpp:333
+msgid "Keep Encryption"
+msgstr "Задржи го криптирањето"
+
+#: util.cpp:333 util.cpp:342
+msgid "Do Not Keep"
+msgstr "Не задржувај"
+
+#: util.cpp:340
+#, kde-format
+msgid ""
+"The part %1 of the message is signed. Do you want to keep the signature when "
+"saving?"
+msgstr ""
+"Делот %1 од пораката е потпишан. Дали сакате да го зачувате потписот при "
+"зачувувањето?"
+
+#: util.cpp:342
+msgid "Keep Signature"
+msgstr "Задржи го потписот"
+
+#: util.cpp:393 util.cpp:417 util.cpp:435
+#, fuzzy, kde-format
+#| msgctxt "%2 is detailed error description"
+#| msgid ""
+#| "Could not write the file %1:\n"
+#| "%2"
+msgctxt "1 = file name, 2 = error string"
+msgid "<qt>Could not write to the file<br><filename>%1</filename><br><br>%2"
+msgstr ""
+"Не можев да ја запишам датотеката %1:\n"
+"%2"
+
+#: util.cpp:396 util.cpp:420 util.cpp:438
+#, fuzzy
+#| msgid "has an attachment"
+msgid "Error saving attachment"
+msgstr "има прилог"
+
+#: util.cpp:466
+msgid "Found no attachments to save."
+msgstr "Не се пронајдени прилози за зачувување."
+
+#: util.cpp:484
+#, fuzzy
+#| msgid "0 messages"
+msgid "message"
+msgstr "0 пораки"
+
+#: util.cpp:489
+msgid ""
+"*.mbox|email messages (*.mbox)\n"
+"*|all files (*)"
+msgstr ""
+
+#: util.cpp:493
+#, fuzzy
+#| msgid " message"
+#| msgid_plural " messages"
+msgid "Save Message"
+msgid_plural "Save Messages"
+msgstr[0] " порака"
+msgstr[1] " порака"
+msgstr[2] " порака"
+
+#: util.cpp:509
+#, fuzzy, kde-format
+#| msgid "OpenPGP Message - Encrypted"
+msgid "File %1 could not be loaded."
+msgstr "OpenPGP-порака - криптирана"
+
+#: util.cpp:509
+#, fuzzy
+#| msgid "Error while copying messages."
+msgid "Error loading message"
+msgstr "Грешка при копирањето на пораки."
+
+#: util.cpp:511
+#, fuzzy, kde-format
+#| msgid "OpenPGP Message - Encrypted"
+msgid "File %1 could not be created."
+msgstr "OpenPGP-порака - криптирана"
+
+#: util.cpp:511 util.cpp:522
+#, fuzzy
+#| msgid "Moving messages"
+msgid "Error saving message"
+msgstr "Преместување на пораки"
+
+#: util.cpp:522
+#, fuzzy
+#| msgid "End of signed message"
+msgid "We can not save message."
+msgstr "Крај на потпишаната порака"
+
+#: util.cpp:540
+msgid "Starting Jovie Text-to-Speech Service Failed"
+msgstr ""
+
+#: util.cpp:553
+#, fuzzy, kde-format
+#| msgid "&Open with '%1'"
+msgid "Open &with %1"
+msgstr "&Отвори со „%1“"
+
+#: util.cpp:555
+#, kde-format
+msgctxt "@item:inmenu Open With, %1 is application name"
+msgid "%1"
+msgstr ""
+
+#: headerstyle.cpp:91
+#, fuzzy
+msgctxt "Unknown date"
+msgid "Unknown"
+msgstr "&Препрати"
+
+#: headerstyle.cpp:109 headerstyle.cpp:113 headerstyle.cpp:124
+msgid "No Subject"
+msgstr "(Без тема)"
+
+#: headerstyle.cpp:189 headerstyle.cpp:285 headerstyle.cpp:646
+#: headerstyle.cpp:840 headerstyle.cpp:987
+msgid "[vCard]"
+msgstr "[vCard]"
+
+#: headerstyle.cpp:194 headerstyle.cpp:299 headerstyle.cpp:669
+#: headerstyle.cpp:865
+msgid "CC: "
+msgstr "CC: "
+
+#: headerstyle.cpp:197 headerstyle.cpp:303 headerstyle.cpp:679
+#: headerstyle.cpp:876
+msgid "BCC: "
+msgstr "BCC: "
+
+#: headerstyle.cpp:274 headerstyle.cpp:685
+msgid "Date: "
+msgstr "Датум:"
+
+#: headerstyle.cpp:281 headerstyle.cpp:638 headerstyle.cpp:845
+msgid "From: "
+msgstr "Од:"
+
+#: headerstyle.cpp:295
+#, fuzzy
+#| msgid "To: "
+msgctxt "To-field of the mailheader."
+msgid "To: "
+msgstr "До:"
+
+#: headerstyle.cpp:307
+msgid "Reply to: "
+msgstr "Одговор на:"
+
+#: headerstyle.cpp:409
+#, kde-format
+msgid ""
+"%1% probability of being spam with confidence %3%.\n"
+"\n"
+"Full report:\n"
+"Probability=%2\n"
+"Confidence=%4"
+msgstr ""
+
+#: headerstyle.cpp:416
+#, kde-format
+msgid ""
+"%1% probability of being spam.\n"
+"\n"
+"Full report:\n"
+"Probability=%2"
+msgstr ""
+
+#: headerstyle.cpp:427
+msgid "No Spam agent"
+msgstr ""
+
+#: headerstyle.cpp:430
+msgid "Spam filter score not a number"
+msgstr ""
+
+#: headerstyle.cpp:433
+msgid "Threshold not a valid number"
+msgstr ""
+
+#: headerstyle.cpp:436
+msgid "Spam filter score could not be extracted from header"
+msgstr ""
+
+#: headerstyle.cpp:439
+msgid "Threshold could not be extracted from header"
+msgstr ""
+
+#: headerstyle.cpp:442
+msgid "Error evaluating spam score"
+msgstr ""
+
+#: headerstyle.cpp:446
+#, kde-format
+msgid ""
+"%1.\n"
+"\n"
+"Full report:\n"
+"%2"
+msgstr ""
+
+#: headerstyle.cpp:641
+#, kde-format
+msgid "(resent from %1)"
+msgstr "(препратено од %1)"
+
+#: headerstyle.cpp:659
+#, fuzzy
+#| msgid "To: "
+msgctxt "To-field of the mail header."
+msgid "To: "
+msgstr "До:"
+
+#: headerstyle.cpp:693
+#, fuzzy
+msgid "User-Agent: "
+msgstr "&Итно"
+
+#: headerstyle.cpp:702
+msgid "X-Mailer: "
+msgstr ""
+
+#: headerstyle.cpp:713
+msgid "Spam Status:"
+msgstr ""
+
+#: headerstyle.cpp:854
+#, fuzzy
+#| msgid "To: "
+msgid "To: "
+msgstr "До:"
+
+#: headerstyle.cpp:1049
+#, fuzzy
+#| msgid "sender: "
+msgid "sent: "
+msgstr "испраќач: "
+
+#: chiasmuskeyselector.cpp:28
+msgid "Please select the Chiasmus key file to use:"
+msgstr ""
+
+#: chiasmuskeyselector.cpp:38
+msgid "Additional arguments for chiasmus:"
+msgstr ""
+
+#: vcardviewer.cpp:45
+msgid "VCard Viewer"
+msgstr "Прегледувач на VCard"
+
+#: vcardviewer.cpp:49
+msgid "&Import"
+msgstr "Внес&и"
+
+#: vcardviewer.cpp:50
+msgid "&Next Card"
+msgstr "След&на картичка"
+
+#: vcardviewer.cpp:51
+msgid "&Previous Card"
+msgstr "&Претходна картичка"
+
+#: urlhandlermanager.cpp:514
+msgid "Turn on HTML rendering for this message."
+msgstr "Го вклучува исцртувањето на HTML за оваа порака."
+
+#: urlhandlermanager.cpp:516
+msgid "Load external references from the Internet for this message."
+msgstr "Вчитува надворешни референци за оваа порака од Интернет"
+
+#: urlhandlermanager.cpp:518
+#, fuzzy
+#| msgid "Work online"
+msgid "Work online."
+msgstr "Работи на мрежа"
+
+#: urlhandlermanager.cpp:520
+#, fuzzy
+#| msgid "&Encrypt Message"
+msgid "Decrypt message."
+msgstr "&Криптирај ја пораката"
+
+#: urlhandlermanager.cpp:522
+#, fuzzy
+#| msgid "No signature found"
+msgid "Show signature details."
+msgstr "Не е пронајден потпис"
+
+#: urlhandlermanager.cpp:524
+#, fuzzy
+#| msgid "&Enable signature"
+msgid "Hide signature details."
+msgstr "Овозможи &потпис"
+
+#: urlhandlermanager.cpp:526
+#, fuzzy
+#| msgid "Show attachment icon"
+msgid "Show attachment list."
+msgstr "Прикажи икона за прилог"
+
+#: urlhandlermanager.cpp:528
+#, fuzzy
+#| msgid "Save Attachment As"
+msgid "Hide attachment list."
+msgstr "Зачувајте прилог како"
+
+#: urlhandlermanager.cpp:530
+#, fuzzy
+#| msgid "Show alway&s"
+msgid "Show full \"To\" list"
+msgstr "Покажи &секогаш"
+
+#: urlhandlermanager.cpp:532
+#, fuzzy
+#| msgid "Show alway&s"
+msgid "Hide full \"To\" list"
+msgstr "Покажи &секогаш"
+
+#: urlhandlermanager.cpp:534
+#, fuzzy
+#| msgid "Show alway&s"
+msgid "Show full \"Cc\" list"
+msgstr "Покажи &секогаш"
+
+#: urlhandlermanager.cpp:536
+#, fuzzy
+#| msgid "Show alway&s"
+msgid "Hide full \"Cc\" list"
+msgstr "Покажи &секогаш"
+
+#: urlhandlermanager.cpp:571
+msgid "Expand all quoted text."
+msgstr ""
+
+#: urlhandlermanager.cpp:574
+msgid "Collapse quoted text."
+msgstr ""
+
+#: urlhandlermanager.cpp:638
+msgid "Could not start certificate manager. Please check your installation."
+msgstr ""
+"Не можев да го стартувам менаџерот на сертификати. Проверете ја вашата "
+"инсталација."
+
+#: urlhandlermanager.cpp:640
+msgid "KMail Error"
+msgstr "Грешка во КПошта"
+
+#: urlhandlermanager.cpp:650
+#, kde-format
+msgid "Show certificate 0x%1"
+msgstr "Прикажан сертификат 0x%1"
+
+#: urlhandlermanager.cpp:713
+#, fuzzy
+#| msgid "Open in Address Book"
+msgid "&Open in Address Book"
+msgstr "Отвори во адресарот"
+
+#: urlhandlermanager.cpp:716
+#, fuzzy
+#| msgid "Email Address"
+msgid "&Copy Email Address"
+msgstr "Е-поштенска адреса"
+
+#: urlhandlermanager.cpp:729 viewer_p.cpp:2699
+msgid "Address copied to clipboard."
+msgstr "Адресата е копирана на таблата со исечоци."
+
+#: urlhandlermanager.cpp:741
+#, fuzzy
+#| msgid "Open in Address Book"
+msgid "Lookup the contact in KAddressbook"
+msgstr "Отвори во адресарот"
+
+#: urlhandlermanager.cpp:849
+#, kde-format
+msgid "Attachment: %1"
+msgstr "Прилог: %1"
+
+#: urlhandlermanager.cpp:852
+#, fuzzy, kde-format
+#| msgid "End of encapsulated message"
+msgid "Encapsulated Message (Subject: %1)"
+msgstr "Крај на енкапсулираната порака"
+
+#: urlhandlermanager.cpp:855
+#, fuzzy
+#| msgid "End of encapsulated message"
+msgid "Encapsulated Message"
+msgstr "Крај на енкапсулираната порака"
+
+#: urlhandlermanager.cpp:858
+#, fuzzy
+#| msgid "Name of the attachment:"
+msgid "Unnamed attachment"
+msgstr "Име на прилогот:"
+
+#: urlhandlermanager.cpp:889
+msgid "Show GnuPG Audit Log for this operation"
+msgstr ""
+
+#: urlhandlermanager.cpp:926
+msgid "Opening URL..."
+msgstr "Отворам URL..."
+
+#: urlhandlermanager.cpp:935
+#, fuzzy, kde-format
+#| msgid "<qt>Do you really want to execute <b>%1</b>?</qt>"
+msgctxt "@info"
+msgid "Do you really want to execute <filename>%1</filename>?"
+msgstr "<qt>Дали навистина сакате да ја извршите <b>%1</b>?</qt>"
+
+#: urlhandlermanager.cpp:936
+msgid "Execute"
+msgstr "Изврши"
+
+#: viewer_p.cpp:408
+msgid ""
+"Deleting an attachment from an encrypted or old-style mailman message is not "
+"supported."
+msgstr ""
+
+#: viewer_p.cpp:409 viewer_p.cpp:415 viewer_p.cpp:626 viewer_p.cpp:1805
+#, fuzzy
+#| msgid "&Remove Attachment"
+msgid "Delete Attachment"
+msgstr "Отст&рани го прилогот"
+
+#: viewer_p.cpp:414
+msgid ""
+"Deleting an attachment might invalidate any digital signature on this "
+"message."
+msgstr ""
+
+#: viewer_p.cpp:478
+msgid ""
+"Modifying an attachment might invalidate any digital signature on this "
+"message."
+msgstr ""
+
+#: viewer_p.cpp:479 viewer_p.cpp:620 viewer_p.cpp:1809
+#, fuzzy
+#| msgid "Attachment"
+msgid "Edit Attachment"
+msgstr "Прилог"
+
+#: viewer_p.cpp:479
+#, fuzzy
+msgid "Edit"
+msgstr "Излези"
+
+#: viewer_p.cpp:516
+#, fuzzy
+#| msgid "&Open With..."
+msgctxt "@title:menu"
+msgid "&Open With"
+msgstr "&Отвори со..."
+
+#: viewer_p.cpp:534
+#, fuzzy
+#| msgid "Other Actio&ns"
+msgctxt "@action:inmenu Open With"
+msgid "&Other..."
+msgstr "Други де&јства"
+
+#: viewer_p.cpp:536 viewer_p.cpp:545
+#, fuzzy
+#| msgid "&Open With..."
+msgctxt "@title:menu"
+msgid "&Open With..."
+msgstr "&Отвори со..."
+
+#: viewer_p.cpp:582 viewer_p.cpp:1782
+msgctxt "to open"
+msgid "Open"
+msgstr "Отвори"
+
+#: viewer_p.cpp:590 viewer_p.cpp:1789
+msgctxt "to view something"
+msgid "View"
+msgstr "Прегледај"
+
+#: viewer_p.cpp:598
+msgid "Scroll To"
+msgstr ""
+
+#: viewer_p.cpp:603
+#, fuzzy
+msgid "Save As..."
+msgstr "З&ачувај како..."
+
+#: viewer_p.cpp:608 viewer_p.cpp:1801
+#, fuzzy
+msgid "Copy"
+msgstr "&Копирај во"
+
+#: viewer_p.cpp:633
+msgid "Decrypt With Chiasmus..."
+msgstr ""
+
+#: viewer_p.cpp:637 viewer_p.cpp:1814
+#, fuzzy
+msgid "Properties"
+msgstr "&Својства"
+
+#: viewer_p.cpp:796
+#, fuzzy
+#| msgid "KDE Email Client"
+msgid "The KDE email client."
+msgstr "Клиентот на KDE за електронска пошта"
+
+#: viewer_p.cpp:1364
+#, kde-format
+msgid "View Attachment: %1"
+msgstr "Преглед на прилогот %1"
+
+#: viewer_p.cpp:1519
+msgctxt "View->"
+msgid "&Headers"
+msgstr "&Заглавија"
+
+#: viewer_p.cpp:1521
+msgid "Choose display style of message headers"
+msgstr "Изберете стил на прикажување на заглавијата на пораките"
+
+#: viewer_p.cpp:1527
+#, fuzzy
+#| msgctxt "View->headers->"
+#| msgid "&Brief Headers"
+msgctxt "View->headers->"
+msgid "&Enterprise Headers"
+msgstr "&Кратки заглавија"
+
+#: viewer_p.cpp:1530
+#, fuzzy
+#| msgid "Show the list of headers in a fancy format"
+msgid "Show the list of headers in Enterprise style"
+msgstr "Ја покажува листата на заглавија во стилизиран формат"
+
+#: viewer_p.cpp:1534
+msgctxt "View->headers->"
+msgid "&Fancy Headers"
+msgstr "&Стилизирани заглавија"
+
+#: viewer_p.cpp:1537
+msgid "Show the list of headers in a fancy format"
+msgstr "Ја покажува листата на заглавија во стилизиран формат"
+
+#: viewer_p.cpp:1541
+msgctxt "View->headers->"
+msgid "&Brief Headers"
+msgstr "&Кратки заглавија"
+
+#: viewer_p.cpp:1544
+msgid "Show brief list of message headers"
+msgstr "Покажува кратка листа на заглавија на пораките"
+
+#: viewer_p.cpp:1548
+msgctxt "View->headers->"
+msgid "&Standard Headers"
+msgstr "&Стандардни заглавија"
+
+#: viewer_p.cpp:1551
+msgid "Show standard list of message headers"
+msgstr "Покажува стандардна листа на заглавија на пораките"
+
+#: viewer_p.cpp:1555
+msgctxt "View->headers->"
+msgid "&Long Headers"
+msgstr "&Долги заглавија"
+
+#: viewer_p.cpp:1558
+msgid "Show long list of message headers"
+msgstr "Покажува долга листа на заглавија на пораките"
+
+#: viewer_p.cpp:1562
+msgctxt "View->headers->"
+msgid "&All Headers"
+msgstr "&Сите заглавија"
+
+#: viewer_p.cpp:1565
+msgid "Show all message headers"
+msgstr "Ги покажува сите заглавија на пораките"
+
+#: viewer_p.cpp:1570
+msgctxt "View->"
+msgid "&Attachments"
+msgstr "&Прилози"
+
+#: viewer_p.cpp:1572
+msgid "Choose display style of attachments"
+msgstr "Изберете стил на прикажување на прилозите"
+
+#: viewer_p.cpp:1577
+msgctxt "View->attachments->"
+msgid "&As Icons"
+msgstr "К&ако икони"
+
+#: viewer_p.cpp:1580
+msgid "Show all attachments as icons. Click to see them."
+msgstr "Ги покажува сите прилози како икони. Кликнете на нив за да ги видите."
+
+#: viewer_p.cpp:1584
+msgctxt "View->attachments->"
+msgid "&Smart"
+msgstr "&Паметно"
+
+#: viewer_p.cpp:1587
+msgid "Show attachments as suggested by sender."
+msgstr "Ги покажува прилозите како што е предложено од испраќачот."
+
+#: viewer_p.cpp:1591
+msgctxt "View->attachments->"
+msgid "&Inline"
+msgstr "&Внатрешно"
+
+#: viewer_p.cpp:1594
+msgid "Show all attachments inline (if possible)"
+msgstr "Ги покажува сите прилози внатрешно (ако е возможно)"
+
+#: viewer_p.cpp:1598
+msgctxt "View->attachments->"
+msgid "&Hide"
+msgstr "&Сокриј"
+
+#: viewer_p.cpp:1601
+msgid "Do not show attachments in the message viewer"
+msgstr "Не ги покажува прилозите во прегледувачот на пораки"
+
+#: viewer_p.cpp:1605
+msgctxt "View->attachments->"
+msgid "In Header Only"
+msgstr ""
+
+#: viewer_p.cpp:1609
+#, fuzzy
+#| msgid "Show all attachments as icons. Click to see them."
+msgid "Show Attachments only in the header of the mail"
+msgstr "Ги покажува сите прилози како икони. Кликнете на нив за да ги видите."
+
+#: viewer_p.cpp:1614
+msgid "&Set Encoding"
+msgstr "По&стави кодирање"
+
+#: viewer_p.cpp:1620 configurewidget.cpp:41 configurewidget.cpp:123
+msgid "Auto"
+msgstr "Автом."
+
+#: viewer_p.cpp:1637
+msgid "Select All Text"
+msgstr "Избери го целиот текст"
+
+#: viewer_p.cpp:1644 viewer_p.cpp:2076
+msgid "Copy Link Address"
+msgstr "Копирај адреса на врска"
+
+#: viewer_p.cpp:1649
+msgid "Open URL"
+msgstr "Отвори URL"
+
+#. i18n: file: messageviewer.kcfg.cmake:242
+#. i18n: ectx: label, entry (UseFixedFont), group (Composer)
+#: viewer_p.cpp:1654 rc.cpp:197
+msgid "Use Fi&xed Font"
+msgstr "Користи фи&ксен фонт"
+
+#: viewer_p.cpp:1661
+msgid "Zoom Text Only"
+msgstr ""
+
+#: viewer_p.cpp:1664
+msgid "&Zoom In"
+msgstr ""
+
+#: viewer_p.cpp:1669
+msgid "Zoom &Out"
+msgstr ""
+
+#: viewer_p.cpp:1674
+#, fuzzy
+msgid "Reset"
+msgstr "Изберете папка"
+
+#: viewer_p.cpp:1681
+#, fuzzy
+#| msgid "Message Structure Viewer"
+msgid "Show Message Structure"
+msgstr "Преглед на структурата на пораката"
+
+#: viewer_p.cpp:1686
+msgid "&View Source"
+msgstr "&Види го изворниот код"
+
+#: viewer_p.cpp:1691
+#, fuzzy
+#| msgid " message"
+#| msgid_plural " messages"
+msgid "&Save message"
+msgstr " порака"
+
+#: viewer_p.cpp:1700
+#, fuzzy
+#| msgid "Select &All Messages"
+msgid "Scroll Message Up"
+msgstr "Избери ги &сите пораки"
+
+#: viewer_p.cpp:1706
+#, fuzzy
+#| msgid "Select &All Messages"
+msgid "Scroll Message Down"
+msgstr "Избери ги &сите пораки"
+
+#: viewer_p.cpp:1712
+msgid "Scroll Message Up (More)"
+msgstr ""
+
+#: viewer_p.cpp:1718
+msgid "Scroll Message Down (More)"
+msgstr ""
+
+#: viewer_p.cpp:1729
+msgid "Toggle HTML Display Mode"
+msgstr ""
+
+#: viewer_p.cpp:1733
+msgid "Toggle display mode between HTML and plain text"
+msgstr ""
+
+#: viewer_p.cpp:1742
+#, fuzzy
+#| msgid "Choose Location"
+msgid "Copy Image Location"
+msgstr "Изберете локација"
+
+#: viewer_p.cpp:1749
+msgid "Translate..."
+msgstr ""
+
+#: viewer_p.cpp:1778
+msgid "Save &As..."
+msgstr "З&ачувај како..."
+
+#: viewer_p.cpp:1788
+msgid "Open With..."
+msgstr "Отвори со..."
+
+#: viewer_p.cpp:1794
+msgid "Save All Attachments..."
+msgstr "Зачувај ги сите прилози..."
+
+#: viewer_p.cpp:2074
+#, fuzzy
+#| msgid "Email Address"
+msgid "Copy Email Address"
+msgstr "Е-поштенска адреса"
+
+#: viewer_p.cpp:2133
+msgid "Message as Plain Text"
+msgstr "Пораката како обичен текст"
+
+#: viewer_p.cpp:2422
+#, fuzzy
+#| msgctxt "Config->Composer->Attachments"
+#| msgid "A&ttachments"
+msgid "Attachments:"
+msgstr "П&рилози"
+
+#: viewer_p.cpp:2704
+msgid "URL copied to clipboard."
+msgstr "URL е копиран на таблата со исечоци."
+
+#: viewer_p.cpp:2994
+msgid "Hide full address list"
+msgstr ""
+
+#: viewer_p.cpp:2998
+#, fuzzy
+#| msgid "Show alway&s"
+msgid "Show full address list"
+msgstr "Покажи &секогаш"
+
+#: viewer_p.cpp:3021
+#, fuzzy, kde-format
+#| msgid "Message was signed by %1."
+msgid "Message loading failed: %1."
+msgstr "Пораката е потпишана од %1."
+
+#: viewer_p.cpp:3026
+#, fuzzy
+#| msgid "Message was signed by %1."
+msgid "Message not found."
+msgstr "Пораката е потпишана од %1."
 
 #. i18n: file: invitationsettings.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
@@ -1237,12 +2083,6 @@ msgid ""
 "will be moved to the Trash folder, once the reply has been successfully sent."
 msgstr ""
 
-#. i18n: file: messageviewer.kcfg.cmake:242
-#. i18n: ectx: label, entry (UseFixedFont), group (Composer)
-#: rc.cpp:197 viewer_p.cpp:1687
-msgid "Use Fi&xed Font"
-msgstr "Користи фи&ксен фонт"
-
 #. i18n: file: settings.ui:31
 #. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
 #: rc.cpp:202
@@ -1308,846 +2148,6 @@ msgstr ""
 #: rc.cpp:229
 msgid "Minimum font size:"
 msgstr ""
-
-#: headerstyle.cpp:91
-#, fuzzy
-msgctxt "Unknown date"
-msgid "Unknown"
-msgstr "&Препрати"
-
-#: headerstyle.cpp:109 headerstyle.cpp:113 headerstyle.cpp:124
-msgid "No Subject"
-msgstr "(Без тема)"
-
-#: headerstyle.cpp:189 headerstyle.cpp:285 headerstyle.cpp:646
-#: headerstyle.cpp:840 headerstyle.cpp:987
-msgid "[vCard]"
-msgstr "[vCard]"
-
-#: headerstyle.cpp:194 headerstyle.cpp:299 headerstyle.cpp:669
-#: headerstyle.cpp:865
-msgid "CC: "
-msgstr "CC: "
-
-#: headerstyle.cpp:197 headerstyle.cpp:303 headerstyle.cpp:679
-#: headerstyle.cpp:876
-msgid "BCC: "
-msgstr "BCC: "
-
-#: headerstyle.cpp:274 headerstyle.cpp:685
-msgid "Date: "
-msgstr "Датум:"
-
-#: headerstyle.cpp:281 headerstyle.cpp:638 headerstyle.cpp:845
-msgid "From: "
-msgstr "Од:"
-
-#: headerstyle.cpp:295
-#, fuzzy
-#| msgid "To: "
-msgctxt "To-field of the mailheader."
-msgid "To: "
-msgstr "До:"
-
-#: headerstyle.cpp:307
-msgid "Reply to: "
-msgstr "Одговор на:"
-
-#: headerstyle.cpp:409
-#, kde-format
-msgid ""
-"%1% probability of being spam with confidence %3%.\n"
-"\n"
-"Full report:\n"
-"Probability=%2\n"
-"Confidence=%4"
-msgstr ""
-
-#: headerstyle.cpp:416
-#, kde-format
-msgid ""
-"%1% probability of being spam.\n"
-"\n"
-"Full report:\n"
-"Probability=%2"
-msgstr ""
-
-#: headerstyle.cpp:427
-msgid "No Spam agent"
-msgstr ""
-
-#: headerstyle.cpp:430
-msgid "Spam filter score not a number"
-msgstr ""
-
-#: headerstyle.cpp:433
-msgid "Threshold not a valid number"
-msgstr ""
-
-#: headerstyle.cpp:436
-msgid "Spam filter score could not be extracted from header"
-msgstr ""
-
-#: headerstyle.cpp:439
-msgid "Threshold could not be extracted from header"
-msgstr ""
-
-#: headerstyle.cpp:442
-msgid "Error evaluating spam score"
-msgstr ""
-
-#: headerstyle.cpp:446
-#, kde-format
-msgid ""
-"%1.\n"
-"\n"
-"Full report:\n"
-"%2"
-msgstr ""
-
-#: headerstyle.cpp:641
-#, kde-format
-msgid "(resent from %1)"
-msgstr "(препратено од %1)"
-
-#: headerstyle.cpp:659
-#, fuzzy
-#| msgid "To: "
-msgctxt "To-field of the mail header."
-msgid "To: "
-msgstr "До:"
-
-#: headerstyle.cpp:693
-#, fuzzy
-msgid "User-Agent: "
-msgstr "&Итно"
-
-#: headerstyle.cpp:702
-msgid "X-Mailer: "
-msgstr ""
-
-#: headerstyle.cpp:713
-msgid "Spam Status:"
-msgstr ""
-
-#: headerstyle.cpp:854
-#, fuzzy
-#| msgid "To: "
-msgid "To: "
-msgstr "До:"
-
-#: headerstyle.cpp:1049
-#, fuzzy
-#| msgid "sender: "
-msgid "sent: "
-msgstr "испраќач: "
-
-#: chiasmuskeyselector.cpp:28
-msgid "Please select the Chiasmus key file to use:"
-msgstr ""
-
-#: chiasmuskeyselector.cpp:38
-msgid "Additional arguments for chiasmus:"
-msgstr ""
-
-#: vcardviewer.cpp:45
-msgid "VCard Viewer"
-msgstr "Прегледувач на VCard"
-
-#: vcardviewer.cpp:49
-msgid "&Import"
-msgstr "Внес&и"
-
-#: vcardviewer.cpp:50
-msgid "&Next Card"
-msgstr "След&на картичка"
-
-#: vcardviewer.cpp:51
-msgid "&Previous Card"
-msgstr "&Претходна картичка"
-
-#: urlhandlermanager.cpp:514
-msgid "Turn on HTML rendering for this message."
-msgstr "Го вклучува исцртувањето на HTML за оваа порака."
-
-#: urlhandlermanager.cpp:516
-msgid "Load external references from the Internet for this message."
-msgstr "Вчитува надворешни референци за оваа порака од Интернет"
-
-#: urlhandlermanager.cpp:518
-#, fuzzy
-#| msgid "Work online"
-msgid "Work online."
-msgstr "Работи на мрежа"
-
-#: urlhandlermanager.cpp:520
-#, fuzzy
-#| msgid "&Encrypt Message"
-msgid "Decrypt message."
-msgstr "&Криптирај ја пораката"
-
-#: urlhandlermanager.cpp:522
-#, fuzzy
-#| msgid "No signature found"
-msgid "Show signature details."
-msgstr "Не е пронајден потпис"
-
-#: urlhandlermanager.cpp:524
-#, fuzzy
-#| msgid "&Enable signature"
-msgid "Hide signature details."
-msgstr "Овозможи &потпис"
-
-#: urlhandlermanager.cpp:526
-#, fuzzy
-#| msgid "Show attachment icon"
-msgid "Show attachment list."
-msgstr "Прикажи икона за прилог"
-
-#: urlhandlermanager.cpp:528
-#, fuzzy
-#| msgid "Save Attachment As"
-msgid "Hide attachment list."
-msgstr "Зачувајте прилог како"
-
-#: urlhandlermanager.cpp:530
-#, fuzzy
-#| msgid "Show alway&s"
-msgid "Show full \"To\" list"
-msgstr "Покажи &секогаш"
-
-#: urlhandlermanager.cpp:532
-#, fuzzy
-#| msgid "Show alway&s"
-msgid "Hide full \"To\" list"
-msgstr "Покажи &секогаш"
-
-#: urlhandlermanager.cpp:534
-#, fuzzy
-#| msgid "Show alway&s"
-msgid "Show full \"Cc\" list"
-msgstr "Покажи &секогаш"
-
-#: urlhandlermanager.cpp:536
-#, fuzzy
-#| msgid "Show alway&s"
-msgid "Hide full \"Cc\" list"
-msgstr "Покажи &секогаш"
-
-#: urlhandlermanager.cpp:571
-msgid "Expand all quoted text."
-msgstr ""
-
-#: urlhandlermanager.cpp:574
-msgid "Collapse quoted text."
-msgstr ""
-
-#: urlhandlermanager.cpp:638
-msgid "Could not start certificate manager. Please check your installation."
-msgstr ""
-"Не можев да го стартувам менаџерот на сертификати. Проверете ја вашата "
-"инсталација."
-
-#: urlhandlermanager.cpp:640
-msgid "KMail Error"
-msgstr "Грешка во КПошта"
-
-#: urlhandlermanager.cpp:650
-#, kde-format
-msgid "Show certificate 0x%1"
-msgstr "Прикажан сертификат 0x%1"
-
-#: urlhandlermanager.cpp:713
-#, fuzzy
-#| msgid "Open in Address Book"
-msgid "&Open in Address Book"
-msgstr "Отвори во адресарот"
-
-#: urlhandlermanager.cpp:716
-#, fuzzy
-#| msgid "Email Address"
-msgid "&Copy Email Address"
-msgstr "Е-поштенска адреса"
-
-#: urlhandlermanager.cpp:729 viewer_p.cpp:2738
-msgid "Address copied to clipboard."
-msgstr "Адресата е копирана на таблата со исечоци."
-
-#: urlhandlermanager.cpp:741
-#, fuzzy
-#| msgid "Open in Address Book"
-msgid "Lookup the contact in KAddressbook"
-msgstr "Отвори во адресарот"
-
-#: urlhandlermanager.cpp:849
-#, kde-format
-msgid "Attachment: %1"
-msgstr "Прилог: %1"
-
-#: urlhandlermanager.cpp:852
-#, fuzzy, kde-format
-#| msgid "End of encapsulated message"
-msgid "Encapsulated Message (Subject: %1)"
-msgstr "Крај на енкапсулираната порака"
-
-#: urlhandlermanager.cpp:855
-#, fuzzy
-#| msgid "End of encapsulated message"
-msgid "Encapsulated Message"
-msgstr "Крај на енкапсулираната порака"
-
-#: urlhandlermanager.cpp:858
-#, fuzzy
-#| msgid "Name of the attachment:"
-msgid "Unnamed attachment"
-msgstr "Име на прилогот:"
-
-#: urlhandlermanager.cpp:889
-msgid "Show GnuPG Audit Log for this operation"
-msgstr ""
-
-#: urlhandlermanager.cpp:926
-msgid "Opening URL..."
-msgstr "Отворам URL..."
-
-#: urlhandlermanager.cpp:935
-#, fuzzy, kde-format
-#| msgid "<qt>Do you really want to execute <b>%1</b>?</qt>"
-msgctxt "@info"
-msgid "Do you really want to execute <filename>%1</filename>?"
-msgstr "<qt>Дали навистина сакате да ја извршите <b>%1</b>?</qt>"
-
-#: urlhandlermanager.cpp:936
-msgid "Execute"
-msgstr "Изврши"
-
-#: util.cpp:80
-#, kde-format
-msgid ""
-"A file named \"%1\" already exists. Are you sure you want to overwrite it?"
-msgstr ""
-"Датотеката со име „%1“ веќе постои. Дали сте сигурен дека сакате да запишете "
-"врз неа?"
-
-#: util.cpp:82
-msgid "Overwrite File?"
-msgstr "Запишувате врз датотека?"
-
-#: util.cpp:191
-msgid "Save Attachments To"
-msgstr "Зачувајте ги прилозите во"
-
-#: util.cpp:205
-msgctxt "filename for an unnamed attachment"
-msgid "attachment.1"
-msgstr "прилог.1"
-
-#: util.cpp:210
-#, fuzzy
-#| msgid "Save Attachment As"
-msgid "Save Attachment"
-msgstr "Зачувајте прилог како"
-
-#: util.cpp:230
-#, kde-format
-msgctxt "filename for the %1-th unnamed attachment"
-msgid "attachment.%1"
-msgstr "прилог.%1"
-
-#: util.cpp:329
-#, kde-format
-msgid ""
-"The part %1 of the message is encrypted. Do you want to keep the encryption "
-"when saving?"
-msgstr ""
-"Делот %1 од пораката е криптиран. Дали сакате да го зачувате криптирањето "
-"при зачувувањето?"
-
-#: util.cpp:331 util.cpp:340
-msgid "KMail Question"
-msgstr "Прашање на КПошта"
-
-#: util.cpp:331
-msgid "Keep Encryption"
-msgstr "Задржи го криптирањето"
-
-#: util.cpp:331 util.cpp:340
-msgid "Do Not Keep"
-msgstr "Не задржувај"
-
-#: util.cpp:338
-#, kde-format
-msgid ""
-"The part %1 of the message is signed. Do you want to keep the signature when "
-"saving?"
-msgstr ""
-"Делот %1 од пораката е потпишан. Дали сакате да го зачувате потписот при "
-"зачувувањето?"
-
-#: util.cpp:340
-msgid "Keep Signature"
-msgstr "Задржи го потписот"
-
-#: util.cpp:391 util.cpp:415 util.cpp:433
-#, fuzzy, kde-format
-#| msgctxt "%2 is detailed error description"
-#| msgid ""
-#| "Could not write the file %1:\n"
-#| "%2"
-msgctxt "1 = file name, 2 = error string"
-msgid "<qt>Could not write to the file<br><filename>%1</filename><br><br>%2"
-msgstr ""
-"Не можев да ја запишам датотеката %1:\n"
-"%2"
-
-#: util.cpp:394 util.cpp:418 util.cpp:436
-#, fuzzy
-#| msgid "has an attachment"
-msgid "Error saving attachment"
-msgstr "има прилог"
-
-#: util.cpp:464
-msgid "Found no attachments to save."
-msgstr "Не се пронајдени прилози за зачувување."
-
-#: util.cpp:482
-#, fuzzy
-#| msgid "0 messages"
-msgid "message"
-msgstr "0 пораки"
-
-#: util.cpp:487
-msgid ""
-"*.mbox|email messages (*.mbox)\n"
-"*|all files (*)"
-msgstr ""
-
-#: util.cpp:491
-#, fuzzy
-#| msgid " message"
-#| msgid_plural " messages"
-msgid "Save Message"
-msgid_plural "Save Messages"
-msgstr[0] " порака"
-msgstr[1] " порака"
-msgstr[2] " порака"
-
-#: util.cpp:507
-#, fuzzy, kde-format
-#| msgid "OpenPGP Message - Encrypted"
-msgid "File %1 could not be loaded."
-msgstr "OpenPGP-порака - криптирана"
-
-#: util.cpp:507
-#, fuzzy
-#| msgid "Error while copying messages."
-msgid "Error loading message"
-msgstr "Грешка при копирањето на пораки."
-
-#: util.cpp:509
-#, fuzzy, kde-format
-#| msgid "OpenPGP Message - Encrypted"
-msgid "File %1 could not be created."
-msgstr "OpenPGP-порака - криптирана"
-
-#: util.cpp:509 util.cpp:520
-#, fuzzy
-#| msgid "Moving messages"
-msgid "Error saving message"
-msgstr "Преместување на пораки"
-
-#: util.cpp:520
-#, fuzzy
-#| msgid "End of signed message"
-msgid "We can not save message."
-msgstr "Крај на потпишаната порака"
-
-#: util.cpp:538
-msgid "Starting Jovie Text-to-Speech Service Failed"
-msgstr ""
-
-#: viewer_p.cpp:408
-msgid ""
-"Deleting an attachment from an encrypted or old-style mailman message is not "
-"supported."
-msgstr ""
-
-#: viewer_p.cpp:409 viewer_p.cpp:415 viewer_p.cpp:642 viewer_p.cpp:1844
-#, fuzzy
-#| msgid "&Remove Attachment"
-msgid "Delete Attachment"
-msgstr "Отст&рани го прилогот"
-
-#: viewer_p.cpp:414
-msgid ""
-"Deleting an attachment might invalidate any digital signature on this "
-"message."
-msgstr ""
-
-#: viewer_p.cpp:478
-msgid ""
-"Modifying an attachment might invalidate any digital signature on this "
-"message."
-msgstr ""
-
-#: viewer_p.cpp:479 viewer_p.cpp:636 viewer_p.cpp:1848
-#, fuzzy
-#| msgid "Attachment"
-msgid "Edit Attachment"
-msgstr "Прилог"
-
-#: viewer_p.cpp:479
-#, fuzzy
-msgid "Edit"
-msgstr "Излези"
-
-#: viewer_p.cpp:516
-#, fuzzy
-#| msgid "&Open With..."
-msgctxt "@title:menu"
-msgid "&Open With"
-msgstr "&Отвори со..."
-
-#: viewer_p.cpp:533
-#, fuzzy
-#| msgid "Other Actio&ns"
-msgctxt "@action:inmenu Open With"
-msgid "&Other..."
-msgstr "Други де&јства"
-
-#: viewer_p.cpp:535 viewer_p.cpp:544
-#, fuzzy
-#| msgid "&Open With..."
-msgctxt "@title:menu"
-msgid "&Open With..."
-msgstr "&Отвори со..."
-
-#: viewer_p.cpp:562
-#, fuzzy, kde-format
-#| msgid "&Open with '%1'"
-msgid "Open &with %1"
-msgstr "&Отвори со „%1“"
-
-#: viewer_p.cpp:564
-#, kde-format
-msgctxt "@item:inmenu Open With, %1 is application name"
-msgid "%1"
-msgstr ""
-
-#: viewer_p.cpp:598 viewer_p.cpp:1815
-msgctxt "to open"
-msgid "Open"
-msgstr "Отвори"
-
-#: viewer_p.cpp:606 viewer_p.cpp:1822
-msgctxt "to view something"
-msgid "View"
-msgstr "Прегледај"
-
-#: viewer_p.cpp:614
-msgid "Scroll To"
-msgstr ""
-
-#: viewer_p.cpp:619
-#, fuzzy
-msgid "Save As..."
-msgstr "З&ачувај како..."
-
-#: viewer_p.cpp:624 viewer_p.cpp:1840
-#, fuzzy
-msgid "Copy"
-msgstr "&Копирај во"
-
-#: viewer_p.cpp:649
-msgid "Decrypt With Chiasmus..."
-msgstr ""
-
-#: viewer_p.cpp:653 viewer_p.cpp:1853
-#, fuzzy
-msgid "Properties"
-msgstr "&Својства"
-
-#: viewer_p.cpp:829
-#, fuzzy
-#| msgid "KDE Email Client"
-msgid "The KDE email client."
-msgstr "Клиентот на KDE за електронска пошта"
-
-#: viewer_p.cpp:1397
-#, kde-format
-msgid "View Attachment: %1"
-msgstr "Преглед на прилогот %1"
-
-#: viewer_p.cpp:1552
-msgctxt "View->"
-msgid "&Headers"
-msgstr "&Заглавија"
-
-#: viewer_p.cpp:1554
-msgid "Choose display style of message headers"
-msgstr "Изберете стил на прикажување на заглавијата на пораките"
-
-#: viewer_p.cpp:1560
-#, fuzzy
-#| msgctxt "View->headers->"
-#| msgid "&Brief Headers"
-msgctxt "View->headers->"
-msgid "&Enterprise Headers"
-msgstr "&Кратки заглавија"
-
-#: viewer_p.cpp:1563
-#, fuzzy
-#| msgid "Show the list of headers in a fancy format"
-msgid "Show the list of headers in Enterprise style"
-msgstr "Ја покажува листата на заглавија во стилизиран формат"
-
-#: viewer_p.cpp:1567
-msgctxt "View->headers->"
-msgid "&Fancy Headers"
-msgstr "&Стилизирани заглавија"
-
-#: viewer_p.cpp:1570
-msgid "Show the list of headers in a fancy format"
-msgstr "Ја покажува листата на заглавија во стилизиран формат"
-
-#: viewer_p.cpp:1574
-msgctxt "View->headers->"
-msgid "&Brief Headers"
-msgstr "&Кратки заглавија"
-
-#: viewer_p.cpp:1577
-msgid "Show brief list of message headers"
-msgstr "Покажува кратка листа на заглавија на пораките"
-
-#: viewer_p.cpp:1581
-msgctxt "View->headers->"
-msgid "&Standard Headers"
-msgstr "&Стандардни заглавија"
-
-#: viewer_p.cpp:1584
-msgid "Show standard list of message headers"
-msgstr "Покажува стандардна листа на заглавија на пораките"
-
-#: viewer_p.cpp:1588
-msgctxt "View->headers->"
-msgid "&Long Headers"
-msgstr "&Долги заглавија"
-
-#: viewer_p.cpp:1591
-msgid "Show long list of message headers"
-msgstr "Покажува долга листа на заглавија на пораките"
-
-#: viewer_p.cpp:1595
-msgctxt "View->headers->"
-msgid "&All Headers"
-msgstr "&Сите заглавија"
-
-#: viewer_p.cpp:1598
-msgid "Show all message headers"
-msgstr "Ги покажува сите заглавија на пораките"
-
-#: viewer_p.cpp:1603
-msgctxt "View->"
-msgid "&Attachments"
-msgstr "&Прилози"
-
-#: viewer_p.cpp:1605
-msgid "Choose display style of attachments"
-msgstr "Изберете стил на прикажување на прилозите"
-
-#: viewer_p.cpp:1610
-msgctxt "View->attachments->"
-msgid "&As Icons"
-msgstr "К&ако икони"
-
-#: viewer_p.cpp:1613
-msgid "Show all attachments as icons. Click to see them."
-msgstr "Ги покажува сите прилози како икони. Кликнете на нив за да ги видите."
-
-#: viewer_p.cpp:1617
-msgctxt "View->attachments->"
-msgid "&Smart"
-msgstr "&Паметно"
-
-#: viewer_p.cpp:1620
-msgid "Show attachments as suggested by sender."
-msgstr "Ги покажува прилозите како што е предложено од испраќачот."
-
-#: viewer_p.cpp:1624
-msgctxt "View->attachments->"
-msgid "&Inline"
-msgstr "&Внатрешно"
-
-#: viewer_p.cpp:1627
-msgid "Show all attachments inline (if possible)"
-msgstr "Ги покажува сите прилози внатрешно (ако е возможно)"
-
-#: viewer_p.cpp:1631
-msgctxt "View->attachments->"
-msgid "&Hide"
-msgstr "&Сокриј"
-
-#: viewer_p.cpp:1634
-msgid "Do not show attachments in the message viewer"
-msgstr "Не ги покажува прилозите во прегледувачот на пораки"
-
-#: viewer_p.cpp:1638
-msgctxt "View->attachments->"
-msgid "In Header Only"
-msgstr ""
-
-#: viewer_p.cpp:1642
-#, fuzzy
-#| msgid "Show all attachments as icons. Click to see them."
-msgid "Show Attachments only in the header of the mail"
-msgstr "Ги покажува сите прилози како икони. Кликнете на нив за да ги видите."
-
-#: viewer_p.cpp:1647
-msgid "&Set Encoding"
-msgstr "По&стави кодирање"
-
-#: viewer_p.cpp:1653 configurewidget.cpp:41 configurewidget.cpp:123
-msgid "Auto"
-msgstr "Автом."
-
-#: viewer_p.cpp:1670
-msgid "Select All Text"
-msgstr "Избери го целиот текст"
-
-#: viewer_p.cpp:1677 viewer_p.cpp:2115
-msgid "Copy Link Address"
-msgstr "Копирај адреса на врска"
-
-#: viewer_p.cpp:1682
-msgid "Open URL"
-msgstr "Отвори URL"
-
-#: viewer_p.cpp:1694
-msgid "Zoom Text Only"
-msgstr ""
-
-#: viewer_p.cpp:1697
-msgid "&Zoom In"
-msgstr ""
-
-#: viewer_p.cpp:1702
-msgid "Zoom &Out"
-msgstr ""
-
-#: viewer_p.cpp:1707
-#, fuzzy
-msgid "Reset"
-msgstr "Изберете папка"
-
-#: viewer_p.cpp:1714
-#, fuzzy
-#| msgid "Message Structure Viewer"
-msgid "Show Message Structure"
-msgstr "Преглед на структурата на пораката"
-
-#: viewer_p.cpp:1719
-msgid "&View Source"
-msgstr "&Види го изворниот код"
-
-#: viewer_p.cpp:1724
-#, fuzzy
-#| msgid " message"
-#| msgid_plural " messages"
-msgid "&Save message"
-msgstr " порака"
-
-#: viewer_p.cpp:1733
-#, fuzzy
-#| msgid "Select &All Messages"
-msgid "Scroll Message Up"
-msgstr "Избери ги &сите пораки"
-
-#: viewer_p.cpp:1739
-#, fuzzy
-#| msgid "Select &All Messages"
-msgid "Scroll Message Down"
-msgstr "Избери ги &сите пораки"
-
-#: viewer_p.cpp:1745
-msgid "Scroll Message Up (More)"
-msgstr ""
-
-#: viewer_p.cpp:1751
-msgid "Scroll Message Down (More)"
-msgstr ""
-
-#: viewer_p.cpp:1762
-msgid "Toggle HTML Display Mode"
-msgstr ""
-
-#: viewer_p.cpp:1766
-msgid "Toggle display mode between HTML and plain text"
-msgstr ""
-
-#: viewer_p.cpp:1775
-#, fuzzy
-#| msgid "Choose Location"
-msgid "Copy Image Location"
-msgstr "Изберете локација"
-
-#: viewer_p.cpp:1782
-msgid "Translate..."
-msgstr ""
-
-#: viewer_p.cpp:1811
-msgid "Save &As..."
-msgstr "З&ачувај како..."
-
-#: viewer_p.cpp:1821
-msgid "Open With..."
-msgstr "Отвори со..."
-
-#: viewer_p.cpp:1833
-msgid "Save All Attachments..."
-msgstr "Зачувај ги сите прилози..."
-
-#: viewer_p.cpp:2113
-#, fuzzy
-#| msgid "Email Address"
-msgid "Copy Email Address"
-msgstr "Е-поштенска адреса"
-
-#: viewer_p.cpp:2172
-msgid "Message as Plain Text"
-msgstr "Пораката како обичен текст"
-
-#: viewer_p.cpp:2461
-#, fuzzy
-#| msgctxt "Config->Composer->Attachments"
-#| msgid "A&ttachments"
-msgid "Attachments:"
-msgstr "П&рилози"
-
-#: viewer_p.cpp:2743
-msgid "URL copied to clipboard."
-msgstr "URL е копиран на таблата со исечоци."
-
-#: viewer_p.cpp:3033
-msgid "Hide full address list"
-msgstr ""
-
-#: viewer_p.cpp:3037
-#, fuzzy
-#| msgid "Show alway&s"
-msgid "Show full address list"
-msgstr "Покажи &секогаш"
-
-#: viewer_p.cpp:3060
-#, fuzzy, kde-format
-#| msgid "Message was signed by %1."
-msgid "Message loading failed: %1."
-msgstr "Пораката е потпишана од %1."
-
-#: viewer_p.cpp:3065
-#, fuzzy
-#| msgid "Message was signed by %1."
-msgid "Message not found."
-msgstr "Пораката е потпишана од %1."
 
 #: renamefiledialog.cpp:49
 msgid "File Already Exists"
