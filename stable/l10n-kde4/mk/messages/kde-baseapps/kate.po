@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-14 06:04+0200\n"
+"POT-Creation-Date: 2012-08-07 21:36+0200\n"
 "PO-Revision-Date: 2007-02-17 11:32+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -948,32 +948,6 @@ msgstr ""
 msgid "Document to open"
 msgstr "Документ за отвoрање"
 
-#: app/kateviewspace.cpp:277 app/kateviewspace.cpp:389
-#, kde-format
-msgid " Line: %1 Col: %2 "
-msgstr " Лин: %1 Кол: %2 "
-
-#: app/kateviewspace.cpp:285 app/kateviewspace.cpp:395
-#, kde-format
-msgid " Characters: %1 "
-msgstr ""
-
-#: app/kateviewspace.cpp:298
-msgid " INS "
-msgstr " ВМЕТ "
-
-#: app/kateviewspace.cpp:303 app/kateviewspace.cpp:404
-#, fuzzy
-#| msgid " INS "
-msgid " LINE "
-msgstr " ВМЕТ "
-
-#: app/kateviewspace.cpp:404
-#, fuzzy
-#| msgid " BLK "
-msgid " BLOCK "
-msgstr " БЛОК "
-
 #: app/katemdi.cpp:122
 msgid "Tool &Views"
 msgstr "&Алатници"
@@ -1044,6 +1018,39 @@ msgstr ""
 "на  страничните ленти активирајте ги преку менито, во <b>Прозорев &gt; "
 "Алатници &gt; прикажи странични ленти</b>. Сѐ уште е можно да се прикажат/"
 "скријат алатниците со доделените кратенки.</qt>"
+
+#: app/kateviewspace.cpp:277 app/kateviewspace.cpp:389
+#, kde-format
+msgid " Line: %1 Col: %2 "
+msgstr " Лин: %1 Кол: %2 "
+
+#: app/kateviewspace.cpp:285 app/kateviewspace.cpp:395
+#, kde-format
+msgid " Characters: %1 "
+msgstr ""
+
+#: app/kateviewspace.cpp:298
+msgid " INS "
+msgstr " ВМЕТ "
+
+#: app/kateviewspace.cpp:303 app/kateviewspace.cpp:404
+#, fuzzy
+#| msgid " INS "
+msgid " LINE "
+msgstr " ВМЕТ "
+
+#: app/kateviewspace.cpp:404
+#, fuzzy
+#| msgid " BLK "
+msgid " BLOCK "
+msgstr " БЛОК "
+
+#: app/kateapp.cpp:226 app/kateapp.cpp:352
+#, kde-format
+msgid ""
+"The file '%1' could not be opened: it is not a normal file, it is a folder."
+msgstr ""
+"Датотеката „%1“ не можеше да биде отворена: не е обична датотека, туку папка."
 
 #: app/kateappcommands.cpp:89
 #, fuzzy
@@ -1164,6 +1171,73 @@ msgid ""
 "b></tt></p><p>Starts <b>e</b>diting the current document again. This is "
 "useful to re-edit the current file, when it has been changed by another "
 "program.</p>"
+msgstr ""
+
+#: app/katedocmanager.cpp:68
+#, fuzzy
+#| msgid ""
+#| "A KDE text-editor component could not be found;\n"
+#| "please check your KDE installation."
+msgid ""
+"A KDE text-editor component could not be found.\n"
+"Please check your KDE installation."
+msgstr ""
+"Не е најдена компонента од KDE за уредување на текст!\n"
+"Проверете ја вашата инсталација на KDE."
+
+#: app/katedocmanager.cpp:308
+#, kde-format
+msgid ""
+"The supposedly temporary file %1 has been modified. Do you want to delete it "
+"anyway?"
+msgstr ""
+
+#: app/katedocmanager.cpp:310
+#, fuzzy
+msgid "Delete File?"
+msgstr "Избришано"
+
+#: app/katedocmanager.cpp:450
+#, fuzzy, kde-format
+#| msgid ""
+#| "<p>The document '%1' has been modified, but not saved.<p>Do you want to "
+#| "save your changes or discard them?"
+msgid ""
+"<p>The document '%1' has been modified, but not saved.</p><p>Do you want to "
+"save your changes or discard them?</p>"
+msgstr ""
+"<p>Документот „%1“ беше изменет, но не и зачуван.<p>Дали сакате да ги "
+"зачувате вашите промени или ќе ги отфрлите?"
+
+#: app/katedocmanager.cpp:452
+msgid "Close Document"
+msgstr "Затворате документ"
+
+#: app/katedocmanager.cpp:459
+#, fuzzy
+msgid "Save As"
+msgstr "З&ачувај како..."
+
+#: app/katedocmanager.cpp:485 app/katemainwindow.cpp:432
+msgid "New file opened while trying to close Kate, closing aborted."
+msgstr ""
+"Отворена е нова датотека за време на затворањето на Kate, затворањето е "
+"прекинато."
+
+#: app/katedocmanager.cpp:486 app/katemainwindow.cpp:433
+msgid "Closing Aborted"
+msgstr "Затворањето е прекинато"
+
+#: app/katedocmanager.cpp:558
+msgid "Starting Up"
+msgstr "Стартување"
+
+#: app/katedocmanager.cpp:559
+msgid "Reopening files from the last session..."
+msgstr "Ги отворам датотеките од последната сесија..."
+
+#: app/katedocmanager.cpp:738
+msgid "Errors/Warnings while opening documents"
 msgstr ""
 
 #: app/katemainwindow.cpp:229
@@ -1351,16 +1425,6 @@ msgstr ""
 msgid "Close all documents"
 msgstr "Ги затвора сите отворени документи."
 
-#: app/katemainwindow.cpp:432 app/katedocmanager.cpp:485
-msgid "New file opened while trying to close Kate, closing aborted."
-msgstr ""
-"Отворена е нова датотека за време на затворањето на Kate, затворањето е "
-"прекинато."
-
-#: app/katemainwindow.cpp:433 app/katedocmanager.cpp:486
-msgid "Closing Aborted"
-msgstr "Затворањето е прекинато"
-
 #: app/katemainwindow.cpp:725
 msgid "&Other..."
 msgstr "&Друг..."
@@ -1375,70 +1439,6 @@ msgstr "Апликацијата „%1“ не е пронајдена!"
 #, fuzzy
 msgid "Application not found"
 msgstr "Апликацијата не е пронајдена!"
-
-#: app/katedocmanager.cpp:68
-#, fuzzy
-#| msgid ""
-#| "A KDE text-editor component could not be found;\n"
-#| "please check your KDE installation."
-msgid ""
-"A KDE text-editor component could not be found.\n"
-"Please check your KDE installation."
-msgstr ""
-"Не е најдена компонента од KDE за уредување на текст!\n"
-"Проверете ја вашата инсталација на KDE."
-
-#: app/katedocmanager.cpp:308
-#, kde-format
-msgid ""
-"The supposedly temporary file %1 has been modified. Do you want to delete it "
-"anyway?"
-msgstr ""
-
-#: app/katedocmanager.cpp:310
-#, fuzzy
-msgid "Delete File?"
-msgstr "Избришано"
-
-#: app/katedocmanager.cpp:450
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p>The document '%1' has been modified, but not saved.<p>Do you want to "
-#| "save your changes or discard them?"
-msgid ""
-"<p>The document '%1' has been modified, but not saved.</p><p>Do you want to "
-"save your changes or discard them?</p>"
-msgstr ""
-"<p>Документот „%1“ беше изменет, но не и зачуван.<p>Дали сакате да ги "
-"зачувате вашите промени или ќе ги отфрлите?"
-
-#: app/katedocmanager.cpp:452
-msgid "Close Document"
-msgstr "Затворате документ"
-
-#: app/katedocmanager.cpp:459
-#, fuzzy
-msgid "Save As"
-msgstr "З&ачувај како..."
-
-#: app/katedocmanager.cpp:558
-msgid "Starting Up"
-msgstr "Стартување"
-
-#: app/katedocmanager.cpp:559
-msgid "Reopening files from the last session..."
-msgstr "Ги отворам датотеките од последната сесија..."
-
-#: app/katedocmanager.cpp:738
-msgid "Errors/Warnings while opening documents"
-msgstr ""
-
-#: app/kateapp.cpp:226 app/kateapp.cpp:352
-#, kde-format
-msgid ""
-"The file '%1' could not be opened: it is not a normal file, it is a folder."
-msgstr ""
-"Датотеката „%1“ не можеше да биде отворена: не е обична датотека, туку папка."
 
 #: app/katemwmodonhddialog.cpp:65
 msgid "Documents Modified on Disk"
