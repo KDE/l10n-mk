@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaudiocreator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-22 04:04+0100\n"
+"POT-Creation-Date: 2012-08-18 03:45+0200\n"
 "PO-Revision-Date: 2006-09-30 15:27+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -69,6 +69,13 @@ msgstr ""
 msgid "Jobs have started"
 msgstr "Задачите се започнати"
 
+#: encodefilemodel.cpp:29 tracksimp.cpp:51 tracksimp.cpp:171 tracksimp.cpp:183
+#: tracksimp.cpp:624
+#, fuzzy
+#| msgid "Artist:"
+msgid "Artist"
+msgstr "Изведувач:"
+
 #: encodefilemodel.cpp:29
 #, fuzzy
 #| msgid "Title"
@@ -79,13 +86,6 @@ msgstr "Наслов"
 #: tracksimp.cpp:624
 msgid "Title"
 msgstr "Наслов"
-
-#: encodefilemodel.cpp:29 tracksimp.cpp:51 tracksimp.cpp:171 tracksimp.cpp:183
-#: tracksimp.cpp:624
-#, fuzzy
-#| msgid "Artist:"
-msgid "Artist"
-msgstr "Изведувач:"
 
 #: encodefilemodel.cpp:30
 #, fuzzy
@@ -107,6 +107,13 @@ msgstr "Коментар:"
 msgid "Genre"
 msgstr "Жанр:"
 
+#: encodefilemodel.cpp:31
+#, fuzzy
+#| msgid "Encoder"
+msgctxt "@title:column"
+msgid "Encoder"
+msgstr "Кодер"
+
 #: encodefilemodel.cpp:31 tracksimp.cpp:51 tracksimp.cpp:171 tracksimp.cpp:183
 #: tracksimp.cpp:624
 msgid "Track"
@@ -118,67 +125,10 @@ msgstr "Песна"
 msgid "Year"
 msgstr "Година:"
 
-#: encodefilemodel.cpp:31
-#, fuzzy
-#| msgid "Encoder"
-msgctxt "@title:column"
-msgid "Encoder"
-msgstr "Кодер"
-
-#: encoderconfigimp.cpp:101
-msgid "The default encoder has to accept wav as input."
-msgstr ""
-
-#: encoderconfigimp.cpp:101 encoderconfigimp.cpp:194 encoderconfigimp.cpp:235
-msgid "Not Allowed"
-msgstr ""
-
-#: encoderconfigimp.cpp:128
-#, fuzzy
-#| msgid "Encoder"
-msgid "Add Encoder"
-msgstr "Кодер"
-
-#: encoderconfigimp.cpp:150 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
-msgid "Please select an encoder."
-msgstr "Изберете кодер."
-
-#: encoderconfigimp.cpp:150 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
-#: encoder.cpp:76
+#: encoder.cpp:76 encoderconfigimp.cpp:150 encoderconfigimp.cpp:189
+#: encoderconfigimp.cpp:230
 msgid "No Encoder Selected"
 msgstr "Нема избран кодер"
-
-#: encoderconfigimp.cpp:173
-#, fuzzy
-#| msgid "Encoder"
-msgid "Copy Encoder"
-msgstr "Кодер"
-
-#: encoderconfigimp.cpp:194
-msgid "WAV is not allowed to be removed."
-msgstr ""
-
-#: encoderconfigimp.cpp:198
-msgid "Delete encoder?"
-msgstr "Го бришете кодерот?"
-
-#: encoderconfigimp.cpp:198
-msgid "Delete Encoder"
-msgstr "Бришење на кодер"
-
-#: encoderconfigimp.cpp:235
-msgid ""
-"WAV is not allowed to be changed.\n"
-"You can copy it to adjust it to your needs."
-msgstr ""
-
-#: encoderconfigimp.cpp:250
-msgid "Configure Encoder"
-msgstr "Конфигурирај го кодерот"
-
-#: encoderconfigimp.cpp:384 kaudiocreator.cpp:426
-msgid "Encoder Configuration"
-msgstr "Конфигурација на кодерот"
 
 #: encoder.cpp:76
 msgid ""
@@ -214,14 +164,6 @@ msgstr ""
 "Избраниот кодер не беше пронајден.\n"
 "Wav-датотеката е отстранета. Наредбата беше: %1"
 
-#: encoder.cpp:327
-msgid ""
-"The encoder exited with a error.  Please check that the file was created.\n"
-"Do you want to see the full encoder output?"
-msgstr ""
-"Кодерот излезе со грешка.  Проверете ја датотеката што беше креирана.\n"
-"Дали сакате да го видите целосниот излез на кодерот?"
-
 #: encoder.cpp:327 encoder.cpp:344
 msgid "Show Output"
 msgstr "Прикажи излез"
@@ -229,6 +171,14 @@ msgstr "Прикажи излез"
 #: encoder.cpp:327 encoder.cpp:344
 msgid "Skip Output"
 msgstr "Прескокни излез"
+
+#: encoder.cpp:327
+msgid ""
+"The encoder exited with a error.  Please check that the file was created.\n"
+"Do you want to see the full encoder output?"
+msgstr ""
+"Кодерот излезе со грешка.  Проверете ја датотеката што беше креирана.\n"
+"Дали сакате да го видите целосниот излез на кодерот?"
 
 #: encoder.cpp:344
 msgid ""
@@ -242,12 +192,66 @@ msgstr ""
 "Wav-датотеката беше отстранета.\n"
 "Дали сакате да го видите целосниот излез од кодерот?"
 
+#: encoderconfigimp.cpp:101 encoderconfigimp.cpp:194 encoderconfigimp.cpp:235
+msgid "Not Allowed"
+msgstr ""
+
+#: encoderconfigimp.cpp:101
+msgid "The default encoder has to accept wav as input."
+msgstr ""
+
+#: encoderconfigimp.cpp:128
+#, fuzzy
+#| msgid "Encoder"
+msgid "Add Encoder"
+msgstr "Кодер"
+
+#: encoderconfigimp.cpp:150 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
+msgid "Please select an encoder."
+msgstr "Изберете кодер."
+
+#: encoderconfigimp.cpp:173
+#, fuzzy
+#| msgid "Encoder"
+msgid "Copy Encoder"
+msgstr "Кодер"
+
+#: encoderconfigimp.cpp:194
+msgid "WAV is not allowed to be removed."
+msgstr ""
+
+#: encoderconfigimp.cpp:198
+msgid "Delete Encoder"
+msgstr "Бришење на кодер"
+
+#: encoderconfigimp.cpp:198
+msgid "Delete encoder?"
+msgstr "Го бришете кодерот?"
+
+#: encoderconfigimp.cpp:235
+msgid ""
+"WAV is not allowed to be changed.\n"
+"You can copy it to adjust it to your needs."
+msgstr ""
+
+#: encoderconfigimp.cpp:250
+msgid "Configure Encoder"
+msgstr "Конфигурирај го кодерот"
+
+#: encoderconfigimp.cpp:384 kaudiocreator.cpp:426
+msgid "Encoder Configuration"
+msgstr "Конфигурација на кодерот"
+
 #: general.cpp:61
 #, kde-format
 msgid ""
 "The replacement string still contains incompatible characters (%1).\n"
 "Copying to FAT32 might not work as expected."
 msgstr ""
+
+#: job.h:35
+msgid "Other"
+msgstr "Останато"
 
 #: jobdelegate.cpp:47
 msgid "Queued"
@@ -266,16 +270,16 @@ msgid "Done"
 msgstr ""
 
 #: jobqueimp.cpp:51
+msgid "Description"
+msgstr "Опис"
+
+#: jobqueimp.cpp:51
 msgid "Job"
 msgstr "Задача"
 
 #: jobqueimp.cpp:51
 msgid "Progress"
 msgstr "Напредок"
-
-#: jobqueimp.cpp:51
-msgid "Description"
-msgstr "Опис"
 
 #: jobqueimp.cpp:84 jobqueimp.cpp:162 jobqueimp.cpp:223
 #, kde-format
@@ -288,12 +292,12 @@ msgid "KAudioCreator has not finished %1. Remove anyway?"
 msgstr "KAudioCreator ја нема завршено %1. Дали сепак да ја отстранам?"
 
 #: jobqueimp.cpp:145 jobqueimp.cpp:197
-msgid "Unfinished Job in Queue"
-msgstr "Недовршена задача во редицата"
-
-#: jobqueimp.cpp:145 jobqueimp.cpp:197
 msgid "Keep"
 msgstr "Задржи"
+
+#: jobqueimp.cpp:145 jobqueimp.cpp:197
+msgid "Unfinished Job in Queue"
+msgstr "Недовршена задача во редицата"
 
 #. i18n: file: jobque.ui:17
 #. i18n: ectx: property (text), widget (QLabel, queLabel)
@@ -1564,15 +1568,15 @@ msgid "Track %1"
 msgstr "Песна"
 
 #: tracksimp.cpp:51 tracksimp.cpp:171 tracksimp.cpp:183 tracksimp.cpp:624
+msgid "Length"
+msgstr "Должина"
+
+#: tracksimp.cpp:51 tracksimp.cpp:171 tracksimp.cpp:183 tracksimp.cpp:624
 #, fuzzy
 #| msgid "Rip"
 msgctxt "@title:column"
 msgid "Rip"
 msgstr "Рипувај"
-
-#: tracksimp.cpp:51 tracksimp.cpp:171 tracksimp.cpp:183 tracksimp.cpp:624
-msgid "Length"
-msgstr "Должина"
 
 #: tracksimp.cpp:116 tracksimp.cpp:273 tracksimp.cpp:288
 #, fuzzy
@@ -1583,13 +1587,13 @@ msgstr "Нема избран кодер"
 #: tracksimp.cpp:167 tracksimp.cpp:179
 #, fuzzy
 #| msgid "Unknown Artist - Unknown Album"
-msgid "Unknown Artist"
+msgid "Unknown Album"
 msgstr "Непознат изведувач - Непознат албум"
 
 #: tracksimp.cpp:167 tracksimp.cpp:179
 #, fuzzy
 #| msgid "Unknown Artist - Unknown Album"
-msgid "Unknown Album"
+msgid "Unknown Artist"
 msgstr "Непознат изведувач - Непознат албум"
 
 #: tracksimp.cpp:299
@@ -1639,6 +1643,10 @@ msgid "Protocol Not Found"
 msgstr ""
 
 #: tracksimp.cpp:523
+msgid "Album Information Incomplete"
+msgstr "Информациите за албумот се нецелосни"
+
+#: tracksimp.cpp:523
 #, fuzzy, kde-format
 msgid ""
 "Part of the album is not set: %1.\n"
@@ -1649,10 +1657,6 @@ msgstr ""
 " (За да ги измените информациите за албумот кликнете го копчето „Уреди "
 "информации“.)\n"
 " Дали сепак сакате да ги рипувате избраните песни?"
-
-#: tracksimp.cpp:523
-msgid "Album Information Incomplete"
-msgstr "Информациите за албумот се нецелосни"
 
 #: tracksimp.cpp:523
 msgid "Rip"
@@ -1666,10 +1670,6 @@ msgstr " - "
 #, kde-format
 msgid "Example: %1"
 msgstr "Пример: %1"
-
-#: job.h:35
-msgid "Other"
-msgstr "Останато"
 
 #, fuzzy
 #~| msgid "Specify temporary directory"

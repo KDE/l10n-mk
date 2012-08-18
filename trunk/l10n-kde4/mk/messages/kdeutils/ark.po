@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-17 04:38+0200\n"
+"POT-Creation-Date: 2012-08-18 04:25+0200\n"
 "PO-Revision-Date: 2006-05-08 10:32+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -283,11 +283,11 @@ msgstr[0] "Папка во која ќе се отпакува"
 msgstr[1] "Папка во која ќе се отпакува"
 msgstr[2] "Папка во која ќе се отпакува"
 
-#: kerfuffle/cliinterface.cpp:519 kerfuffle/cliinterface.cpp:559
+#: kerfuffle/cliinterface.cpp:521 kerfuffle/cliinterface.cpp:561
 msgid "Incorrect password."
 msgstr ""
 
-#: kerfuffle/cliinterface.cpp:526 kerfuffle/cliinterface.cpp:566
+#: kerfuffle/cliinterface.cpp:528 kerfuffle/cliinterface.cpp:568
 msgid "Extraction failed because of an unexpected error."
 msgstr ""
 
@@ -309,19 +309,8 @@ msgid "The subfolder name may not contain the character '/'."
 msgstr ""
 
 #: kerfuffle/extractiondialog.cpp:109
-#, fuzzy, kde-format
-#| msgid "Archive already exists. Do you wish to overwrite it?"
-msgctxt "@info"
-msgid ""
-"The folder <filename>%1</filename> already exists. Are you sure you want to "
-"extract here?"
-msgstr "Архивата веќе постои. Дали сакате да запишам врз неа?"
-
-#: kerfuffle/extractiondialog.cpp:109
-#, fuzzy
-#| msgid "Archive Already Exists"
-msgid "Folder exists"
-msgstr "Архивата веќе постои"
+msgid "Cancel"
+msgstr ""
 
 #: kerfuffle/extractiondialog.cpp:109
 #, fuzzy
@@ -330,12 +319,23 @@ msgid "Extract here"
 msgstr "Отпакување"
 
 #: kerfuffle/extractiondialog.cpp:109
+#, fuzzy
+#| msgid "Archive Already Exists"
+msgid "Folder exists"
+msgstr "Архивата веќе постои"
+
+#: kerfuffle/extractiondialog.cpp:109
 msgid "Retry"
 msgstr ""
 
 #: kerfuffle/extractiondialog.cpp:109
-msgid "Cancel"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Archive already exists. Do you wish to overwrite it?"
+msgctxt "@info"
+msgid ""
+"The folder <filename>%1</filename> already exists. Are you sure you want to "
+"extract here?"
+msgstr "Архивата веќе постои. Дали сакате да запишам врз неа?"
 
 #: kerfuffle/extractiondialog.cpp:119 kerfuffle/extractiondialog.cpp:125
 #, fuzzy, kde-format
@@ -660,15 +660,6 @@ msgid "<filename>%1</filename> is a directory."
 msgstr ""
 
 #: part/part.cpp:384
-#, fuzzy, kde-format
-#| msgid "Archive already exists. Do you wish to overwrite it?"
-msgctxt "@info"
-msgid ""
-"The archive <filename>%1</filename> already exists. Would you like to open "
-"it instead?"
-msgstr "Архивата веќе постои. Дали сакате да запишам врз неа?"
-
-#: part/part.cpp:384
 #, fuzzy
 #| msgid "Archive Already Exists"
 msgctxt "@title:window"
@@ -681,11 +672,14 @@ msgstr "Архивата веќе постои"
 msgid "Open File"
 msgstr "Отвори со:"
 
-#: part/part.cpp:392
-#, kde-format
+#: part/part.cpp:384
+#, fuzzy, kde-format
+#| msgid "Archive already exists. Do you wish to overwrite it?"
 msgctxt "@info"
-msgid "The archive <filename>%1</filename> was not found."
-msgstr ""
+msgid ""
+"The archive <filename>%1</filename> already exists. Would you like to open "
+"it instead?"
+msgstr "Архивата веќе постои. Дали сакате да запишам врз неа?"
 
 #: part/part.cpp:392 part/part.cpp:444 part/part.cpp:480
 #, fuzzy
@@ -693,6 +687,12 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Error Opening Archive"
 msgstr "Отвори „архива“"
+
+#: part/part.cpp:392
+#, kde-format
+msgctxt "@info"
+msgid "The archive <filename>%1</filename> was not found."
+msgstr ""
 
 #: part/part.cpp:424
 #, fuzzy
