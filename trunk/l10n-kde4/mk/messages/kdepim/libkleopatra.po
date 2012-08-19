@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 04:21+0200\n"
+"POT-Creation-Date: 2012-08-19 05:41+0200\n"
 "PO-Revision-Date: 2007-02-28 14:29+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -19,184 +19,137 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: backends/chiasmus/chiasmusbackend.cpp:286
-msgid "General"
-msgstr "Општо"
+#. i18n: file: ui/adddirectoryservicedialog.ui:13
+#. i18n: ectx: property (windowTitle), widget (QDialog, AddDirectoryServiceDialog)
+#: rc.cpp:3
+msgid "Add or Change Directory Service"
+msgstr "Додај или промени сервис за директориум"
 
-#: backends/chiasmus/chiasmusbackend.cpp:341
-#: backends/chiasmus/chiasmusbackend.cpp:440
-msgid "Chiasmus"
-msgstr "Chiasmus"
+#. i18n: file: ui/adddirectoryservicedialog.ui:25
+#. i18n: ectx: property (text), widget (QLabel, serverNameLA)
+#: rc.cpp:6
+msgid "&Server name:"
+msgstr "&Име на сервер:"
 
-#: backends/chiasmus/chiasmusbackend.cpp:386
-msgid "Chiasmus command line tool"
-msgstr "Chiasmus алатка од командната линија"
+#. i18n: file: ui/adddirectoryservicedialog.ui:38
+#. i18n: ectx: property (text), widget (QLineEdit, portED)
+#: rc.cpp:9
+msgid "389"
+msgstr "389"
 
-#: backends/chiasmus/chiasmusbackend.cpp:460
-#: backends/chiasmus/chiasmusbackend.cpp:466
-#: backends/chiasmus/chiasmusbackend.cpp:495
-#: backends/qgpgme/qgpgmebackend.cpp:380
-#, kde-format
-msgid "Unsupported protocol \"%1\""
-msgstr "Неподдржан протокол \"%1\""
+#. i18n: file: ui/adddirectoryservicedialog.ui:48
+#. i18n: ectx: property (text), widget (QLabel, usernameLA)
+#: rc.cpp:12
+msgid "&User name (optional):"
+msgstr "&Име на корисник (незадолжително):"
 
-#: backends/chiasmus/chiasmusbackend.cpp:482
-#, kde-format
-msgid "File \"%1\" does not exist or is not executable."
-msgstr "Датотеката \"%1\" не постои или не може да се изврши."
+#. i18n: file: ui/adddirectoryservicedialog.ui:74
+#. i18n: ectx: property (text), widget (QLabel, passwordLA)
+#: rc.cpp:15
+msgid "Pass&word (optional):"
+msgstr "Лози&нка (незадолжително):"
 
-#: backends/chiasmus/chiasmusjob.cpp:166
-msgid "Output from chiasmus"
-msgstr "Излез од chiasmus"
-
-#: backends/chiasmus/chiasmusjob.cpp:208 ui/messagebox.cpp:234
-#, kde-format
-msgid "Encryption failed: %1"
-msgstr "Криптирањето не успеа:%1"
-
-#: backends/chiasmus/chiasmusjob.cpp:209
-#, kde-format
-msgid "Decryption failed: %1"
-msgstr "Декриптирањето не успеа: %1"
-
-#: backends/chiasmus/chiasmusjob.cpp:211
-#, kde-format
-msgid ""
-"The following was received on stderr:\n"
-"%1"
+#. i18n: file: ui/adddirectoryservicedialog.ui:84
+#. i18n: ectx: property (text), widget (QPushButton, PushButton3)
+#: rc.cpp:18
+msgid "&OK"
 msgstr ""
-"Следнаво беше примено на stderr:\n"
-"%1"
 
-#: backends/chiasmus/chiasmuslibrary.cpp:75
-#: backends/chiasmus/chiasmuslibrary.cpp:86
-#, kde-format
-msgid "Failed to load %1: %2"
-msgstr "Не можам да вчитам %1: %2"
-
-#: backends/chiasmus/chiasmuslibrary.cpp:87
-msgid "Library does not contain the symbol \"Chiasmus\"."
-msgstr "Библиотеката не го содржи симболот \"Chiasmus\"."
-
-#: backends/chiasmus/obtainkeysjob.cpp:95
-#, kde-format
-msgid "Scanning directory %1..."
-msgstr "Скенирам директориум %1..."
-
-#: backends/qgpgme/qgpgmebackend.cpp:89 ui/keyselectiondialog.cpp:256
-#: ui/keyselectiondialog.cpp:258 ui/keyselectiondialog.cpp:265
-#: ui/keyselectiondialog.cpp:267 ui/keyselectiondialog.cpp:268
-msgid "unknown"
-msgstr "непознато"
-
-#: backends/qgpgme/qgpgmebackend.cpp:330
-msgid "GpgME"
-msgstr "GpgME"
-
-#: backends/qgpgme/qgpgmebackend.cpp:354
-#, kde-format
-msgid "GPGME was compiled without support for %1."
-msgstr "GPGME се искомпајлира без поддршка за %1."
-
-#: backends/qgpgme/qgpgmebackend.cpp:356
-#, kde-format
-msgid "Engine %1 is not installed properly."
-msgstr "Машината %1 не е инсталирана правилно"
-
-#: backends/qgpgme/qgpgmebackend.cpp:358
-#, kde-format
-msgid "Engine %1 version %2 installed, but at least version %3 is required."
+#. i18n: file: ui/adddirectoryservicedialog.ui:94
+#. i18n: ectx: property (text), widget (QPushButton, PushButton4)
+#: rc.cpp:21
+msgid "&Cancel"
 msgstr ""
-"Машината %1 верзија %2 е инсталирана, но барем верзијата %3 е потребна."
 
-#: backends/qgpgme/qgpgmebackend.cpp:362
-#, kde-format
-msgid "Unknown problem with engine for protocol %1."
-msgstr "Непознат проблем со моторот за протоколот %1."
+#. i18n: file: ui/adddirectoryservicedialog.ui:140
+#. i18n: ectx: property (text), widget (QLabel, descriptionLA)
+#: rc.cpp:24
+msgid "&Base DN:"
+msgstr "&Основно DN:"
 
-#: backends/qgpgme/qgpgmecryptoconfig.cpp:112
+#. i18n: file: ui/adddirectoryservicedialog.ui:150
+#. i18n: ectx: property (text), widget (QLabel, portLA)
+#: rc.cpp:27
+msgid "&Port:"
+msgstr "&Порта:"
+
+#. i18n: file: ui/directoryserviceswidget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, DirectoryServicesWidget)
+#: rc.cpp:30
+msgid "Directory Services Configuration"
+msgstr "Конфигурација на сервисот на директориуми"
+
+#. i18n: file: ui/directoryserviceswidget.ui:25
+#. i18n: ectx: property (text), widget (QLabel, x500LA)
+#: rc.cpp:33
 #, fuzzy
-#| msgid "program cannot be executed"
-msgid "program terminated unexpectedly"
-msgstr "програмата не може да биде извршена"
+#| msgid "X.&500 directory services:"
+msgid "Directory services:"
+msgstr "X.&500 сервиси за директориуми:"
 
-#: backends/qgpgme/qgpgmecryptoconfig.cpp:114
-#, fuzzy
-#| msgid "program cannot be executed"
-msgid "program not found or cannot be started"
-msgstr "програмата не може да биде извршена"
-
-#: backends/qgpgme/qgpgmecryptoconfig.cpp:117
-#: backends/qgpgme/qgpgmenewcryptoconfig.cpp:97
-#, fuzzy, kde-format
-#| msgid "<qt>Failed to execute gpgconf:<br>%1</qt>"
-msgid "<qt>Failed to execute gpgconf:<p>%1</p></qt>"
-msgstr "<qt>Не можам да го извршам gpgconf:<br>%1</qt>"
-
-#: backends/qgpgme/qgpgmecryptoconfig.cpp:367
-#, fuzzy
-#| msgid ""
-#| "Could not start gpgconf\n"
-#| "Check that gpgconf is in the PATH and that it can be started"
+#. i18n: file: ui/directoryserviceswidget.ui:34
+#. i18n: ectx: property (whatsThis), widget (QTreeView, treeView)
+#: rc.cpp:36
 msgid ""
-"Could not start gpgconf.\n"
-"Check that gpgconf is in the PATH and that it can be started."
+"This is a list of all directory services that are configured for use with "
+"X.509 and OpenPGP."
 msgstr ""
-"Не можам да го започнам gpgconf\n"
-"Провери дали gpgconf е во PATH и дека може да биде извршена"
 
-#: backends/qgpgme/qgpgmecryptoconfig.cpp:373
-#: backends/qgpgme/qgpgmenewcryptoconfig.cpp:210
-#, kde-format
-msgid "Error from gpgconf while saving configuration: %1"
-msgstr "Грешка од gpgconf при зачувувањето на конфигурацијата: %1"
+#. i18n: file: ui/directoryserviceswidget.ui:61
+#. i18n: ectx: property (toolTip), widget (QToolButton, newTB)
+#: rc.cpp:39
+msgid "Click to add a service"
+msgstr "Кликни за додавање на сервис"
 
-#: backends/qgpgme/qgpgmekeylistjob.cpp:152
-#: backends/qgpgme/qgpgmelistallkeysjob.cpp:154 ui/keyrequester.cpp:231
-#: ui/keyselectiondialog.cpp:598
-#, kde-format
+#. i18n: file: ui/directoryserviceswidget.ui:64
+#. i18n: ectx: property (whatsThis), widget (QToolButton, newTB)
+#: rc.cpp:42
 msgid ""
-"<qt><p>An error occurred while fetching the keys from the backend:</p><p><b>"
-"%1</b></p></qt>"
+"Click this button to create a new directory service entry as a clone of the "
+"currently selected one (or with default values, if no other is selected). "
+"You can then configure details in the table on the left hand."
 msgstr ""
-"<qt><p>Се појави грешка при земањето на клучевите од задниот крај:</p><p><b>"
-"%1</b></p></qt>"
 
-#: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:50
-msgid "Generating DSA key..."
-msgstr "Создавам DSA клуч..."
+#. i18n: file: ui/directoryserviceswidget.ui:67
+#. i18n: ectx: property (text), widget (QToolButton, newTB)
+#: rc.cpp:45
+msgid "New"
+msgstr ""
 
-#: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:54
-msgid "Generating ElGamal key..."
-msgstr "Создавам ElGamal клуч..."
+#. i18n: file: ui/directoryserviceswidget.ui:83
+#. i18n: ectx: property (toolTip), widget (QToolButton, deleteTB)
+#: rc.cpp:48
+msgid "Click to remove the currently selected service"
+msgstr "Кликнете за да ги отстраните тековно избраните сервиси"
 
-#: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:59
-msgid "Searching for a large prime number..."
-msgstr "Барам голем прост број..."
-
-#: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:63
-#, fuzzy
-#| msgid ""
-#| "Waiting for new entropy from random number generator (you might want to "
-#| "excercise the harddisks or move the mouse)..."
+#. i18n: file: ui/directoryserviceswidget.ui:86
+#. i18n: ectx: property (whatsThis), widget (QToolButton, deleteTB)
+#: rc.cpp:51
 msgid ""
-"Waiting for new entropy from random number generator (you might want to "
-"exercise the harddisks or move the mouse)..."
+"Click this button to remove the currently selected directory service. The "
+"change will only take effect once you acknowledge the main configuration "
+"dialog."
 msgstr ""
-"Чекам нова ентропија од создавач на произволни броеви (можеби сакате да ги "
-"вежбате тврдите дискови или да го движите глувчето)..."
 
-#: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:67
-msgid "Please wait..."
-msgstr "Почекајте..."
+#. i18n: file: ui/directoryserviceswidget.ui:89
+#. i18n: ectx: property (text), widget (QToolButton, deleteTB)
+#: rc.cpp:54
+msgid "Delete"
+msgstr ""
 
-#: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:71
+#. i18n: file: ui/directoryserviceswidget.ui:119
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, showUserAndPasswordCB)
+#: rc.cpp:57
 msgid ""
-"Starting gpg-agent (you should consider starting a global instance "
-"instead)..."
+"Use this option to switch display of username and password information on or "
+"off in the above table."
 msgstr ""
-"Подигам gpg-agent (треба да размислите за стартување на глобална инстанца во "
-"спротивно)..."
+
+#. i18n: file: ui/directoryserviceswidget.ui:122
+#. i18n: ectx: property (text), widget (QCheckBox, showUserAndPasswordCB)
+#: rc.cpp:60
+msgid "Show user and password information"
+msgstr ""
 
 #: kleo/checksumdefinition.cpp:105
 #, kde-format
@@ -411,138 +364,6 @@ msgstr ""
 msgid "Other Certificates"
 msgstr ""
 
-#. i18n: file: ui/adddirectoryservicedialog.ui:13
-#. i18n: ectx: property (windowTitle), widget (QDialog, AddDirectoryServiceDialog)
-#: rc.cpp:3
-msgid "Add or Change Directory Service"
-msgstr "Додај или промени сервис за директориум"
-
-#. i18n: file: ui/adddirectoryservicedialog.ui:25
-#. i18n: ectx: property (text), widget (QLabel, serverNameLA)
-#: rc.cpp:6
-msgid "&Server name:"
-msgstr "&Име на сервер:"
-
-#. i18n: file: ui/adddirectoryservicedialog.ui:38
-#. i18n: ectx: property (text), widget (QLineEdit, portED)
-#: rc.cpp:9
-msgid "389"
-msgstr "389"
-
-#. i18n: file: ui/adddirectoryservicedialog.ui:48
-#. i18n: ectx: property (text), widget (QLabel, usernameLA)
-#: rc.cpp:12
-msgid "&User name (optional):"
-msgstr "&Име на корисник (незадолжително):"
-
-#. i18n: file: ui/adddirectoryservicedialog.ui:74
-#. i18n: ectx: property (text), widget (QLabel, passwordLA)
-#: rc.cpp:15
-msgid "Pass&word (optional):"
-msgstr "Лози&нка (незадолжително):"
-
-#. i18n: file: ui/adddirectoryservicedialog.ui:84
-#. i18n: ectx: property (text), widget (QPushButton, PushButton3)
-#: rc.cpp:18
-msgid "&OK"
-msgstr ""
-
-#. i18n: file: ui/adddirectoryservicedialog.ui:94
-#. i18n: ectx: property (text), widget (QPushButton, PushButton4)
-#: rc.cpp:21
-msgid "&Cancel"
-msgstr ""
-
-#. i18n: file: ui/adddirectoryservicedialog.ui:140
-#. i18n: ectx: property (text), widget (QLabel, descriptionLA)
-#: rc.cpp:24
-msgid "&Base DN:"
-msgstr "&Основно DN:"
-
-#. i18n: file: ui/adddirectoryservicedialog.ui:150
-#. i18n: ectx: property (text), widget (QLabel, portLA)
-#: rc.cpp:27
-msgid "&Port:"
-msgstr "&Порта:"
-
-#. i18n: file: ui/directoryserviceswidget.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, DirectoryServicesWidget)
-#: rc.cpp:30
-msgid "Directory Services Configuration"
-msgstr "Конфигурација на сервисот на директориуми"
-
-#. i18n: file: ui/directoryserviceswidget.ui:25
-#. i18n: ectx: property (text), widget (QLabel, x500LA)
-#: rc.cpp:33
-#, fuzzy
-#| msgid "X.&500 directory services:"
-msgid "Directory services:"
-msgstr "X.&500 сервиси за директориуми:"
-
-#. i18n: file: ui/directoryserviceswidget.ui:34
-#. i18n: ectx: property (whatsThis), widget (QTreeView, treeView)
-#: rc.cpp:36
-msgid ""
-"This is a list of all directory services that are configured for use with "
-"X.509 and OpenPGP."
-msgstr ""
-
-#. i18n: file: ui/directoryserviceswidget.ui:61
-#. i18n: ectx: property (toolTip), widget (QToolButton, newTB)
-#: rc.cpp:39
-msgid "Click to add a service"
-msgstr "Кликни за додавање на сервис"
-
-#. i18n: file: ui/directoryserviceswidget.ui:64
-#. i18n: ectx: property (whatsThis), widget (QToolButton, newTB)
-#: rc.cpp:42
-msgid ""
-"Click this button to create a new directory service entry as a clone of the "
-"currently selected one (or with default values, if no other is selected). "
-"You can then configure details in the table on the left hand."
-msgstr ""
-
-#. i18n: file: ui/directoryserviceswidget.ui:67
-#. i18n: ectx: property (text), widget (QToolButton, newTB)
-#: rc.cpp:45
-msgid "New"
-msgstr ""
-
-#. i18n: file: ui/directoryserviceswidget.ui:83
-#. i18n: ectx: property (toolTip), widget (QToolButton, deleteTB)
-#: rc.cpp:48
-msgid "Click to remove the currently selected service"
-msgstr "Кликнете за да ги отстраните тековно избраните сервиси"
-
-#. i18n: file: ui/directoryserviceswidget.ui:86
-#. i18n: ectx: property (whatsThis), widget (QToolButton, deleteTB)
-#: rc.cpp:51
-msgid ""
-"Click this button to remove the currently selected directory service. The "
-"change will only take effect once you acknowledge the main configuration "
-"dialog."
-msgstr ""
-
-#. i18n: file: ui/directoryserviceswidget.ui:89
-#. i18n: ectx: property (text), widget (QToolButton, deleteTB)
-#: rc.cpp:54
-msgid "Delete"
-msgstr ""
-
-#. i18n: file: ui/directoryserviceswidget.ui:119
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, showUserAndPasswordCB)
-#: rc.cpp:57
-msgid ""
-"Use this option to switch display of username and password information on or "
-"off in the above table."
-msgstr ""
-
-#. i18n: file: ui/directoryserviceswidget.ui:122
-#. i18n: ectx: property (text), widget (QCheckBox, showUserAndPasswordCB)
-#: rc.cpp:60
-msgid "Show user and password information"
-msgstr ""
-
 #: ui/cryptoconfigdialog.cpp:40
 msgid "Configure GnuPG Backend"
 msgstr ""
@@ -600,13 +421,13 @@ msgstr ""
 msgid "Set the debugging level to"
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:857 ui/cryptoconfigmodule.cpp:926
-msgid "Edit..."
-msgstr "Уреди..."
-
 #: ui/cryptoconfigmodule.cpp:857
 msgid "Show..."
 msgstr ""
+
+#: ui/cryptoconfigmodule.cpp:857 ui/cryptoconfigmodule.cpp:926
+msgid "Edit..."
+msgstr "Уреди..."
 
 #: ui/cryptoconfigmodule.cpp:889
 msgid "Configure LDAP Servers"
@@ -871,6 +692,17 @@ msgstr "Измени..."
 msgid "<placeholder>unknown</placeholder>"
 msgstr ""
 
+#: ui/keyrequester.cpp:231 ui/keyselectiondialog.cpp:598
+#: backends/qgpgme/qgpgmekeylistjob.cpp:152
+#: backends/qgpgme/qgpgmelistallkeysjob.cpp:154
+#, kde-format
+msgid ""
+"<qt><p>An error occurred while fetching the keys from the backend:</p><p><b>"
+"%1</b></p></qt>"
+msgstr ""
+"<qt><p>Се појави грешка при земањето на клучевите од задниот крај:</p><p><b>"
+"%1</b></p></qt>"
+
 #: ui/keyrequester.cpp:236 ui/keyrequester.cpp:265 ui/keyrequester.cpp:289
 #: ui/keyselectiondialog.cpp:571 ui/keyselectiondialog.cpp:603
 msgid "Key Listing Failed"
@@ -925,6 +757,12 @@ msgstr "Ид. на корисник"
 #: ui/keyselectiondialog.cpp:249
 msgid "never"
 msgstr "никогаш"
+
+#: ui/keyselectiondialog.cpp:256 ui/keyselectiondialog.cpp:258
+#: ui/keyselectiondialog.cpp:265 ui/keyselectiondialog.cpp:267
+#: ui/keyselectiondialog.cpp:268 backends/qgpgme/qgpgmebackend.cpp:89
+msgid "unknown"
+msgstr "непознато"
 
 #: ui/keyselectiondialog.cpp:252
 #, kde-format
@@ -1107,6 +945,11 @@ msgstr "Потпишувањето не успеа: %1"
 msgid "Signing successful"
 msgstr ""
 
+#: ui/messagebox.cpp:234 backends/chiasmus/chiasmusjob.cpp:208
+#, kde-format
+msgid "Encryption failed: %1"
+msgstr "Криптирањето не успеа:%1"
+
 #: ui/messagebox.cpp:235
 #, fuzzy
 #| msgid "Encryption keys:"
@@ -1139,6 +982,163 @@ msgstr "Клучеви за криптирање:"
 #, kde-format
 msgid "%1: %2"
 msgstr "%1: %2"
+
+#: backends/chiasmus/chiasmusbackend.cpp:286
+msgid "General"
+msgstr "Општо"
+
+#: backends/chiasmus/chiasmusbackend.cpp:341
+#: backends/chiasmus/chiasmusbackend.cpp:440
+msgid "Chiasmus"
+msgstr "Chiasmus"
+
+#: backends/chiasmus/chiasmusbackend.cpp:386
+msgid "Chiasmus command line tool"
+msgstr "Chiasmus алатка од командната линија"
+
+#: backends/chiasmus/chiasmusbackend.cpp:460
+#: backends/chiasmus/chiasmusbackend.cpp:466
+#: backends/chiasmus/chiasmusbackend.cpp:495
+#: backends/qgpgme/qgpgmebackend.cpp:380
+#, kde-format
+msgid "Unsupported protocol \"%1\""
+msgstr "Неподдржан протокол \"%1\""
+
+#: backends/chiasmus/chiasmusbackend.cpp:482
+#, kde-format
+msgid "File \"%1\" does not exist or is not executable."
+msgstr "Датотеката \"%1\" не постои или не може да се изврши."
+
+#: backends/chiasmus/chiasmusjob.cpp:166
+msgid "Output from chiasmus"
+msgstr "Излез од chiasmus"
+
+#: backends/chiasmus/chiasmusjob.cpp:209
+#, kde-format
+msgid "Decryption failed: %1"
+msgstr "Декриптирањето не успеа: %1"
+
+#: backends/chiasmus/chiasmusjob.cpp:211
+#, kde-format
+msgid ""
+"The following was received on stderr:\n"
+"%1"
+msgstr ""
+"Следнаво беше примено на stderr:\n"
+"%1"
+
+#: backends/chiasmus/chiasmuslibrary.cpp:75
+#: backends/chiasmus/chiasmuslibrary.cpp:86
+#, kde-format
+msgid "Failed to load %1: %2"
+msgstr "Не можам да вчитам %1: %2"
+
+#: backends/chiasmus/chiasmuslibrary.cpp:87
+msgid "Library does not contain the symbol \"Chiasmus\"."
+msgstr "Библиотеката не го содржи симболот \"Chiasmus\"."
+
+#: backends/chiasmus/obtainkeysjob.cpp:95
+#, kde-format
+msgid "Scanning directory %1..."
+msgstr "Скенирам директориум %1..."
+
+#: backends/qgpgme/qgpgmebackend.cpp:330
+msgid "GpgME"
+msgstr "GpgME"
+
+#: backends/qgpgme/qgpgmebackend.cpp:354
+#, kde-format
+msgid "GPGME was compiled without support for %1."
+msgstr "GPGME се искомпајлира без поддршка за %1."
+
+#: backends/qgpgme/qgpgmebackend.cpp:356
+#, kde-format
+msgid "Engine %1 is not installed properly."
+msgstr "Машината %1 не е инсталирана правилно"
+
+#: backends/qgpgme/qgpgmebackend.cpp:358
+#, kde-format
+msgid "Engine %1 version %2 installed, but at least version %3 is required."
+msgstr ""
+"Машината %1 верзија %2 е инсталирана, но барем верзијата %3 е потребна."
+
+#: backends/qgpgme/qgpgmebackend.cpp:362
+#, kde-format
+msgid "Unknown problem with engine for protocol %1."
+msgstr "Непознат проблем со моторот за протоколот %1."
+
+#: backends/qgpgme/qgpgmecryptoconfig.cpp:112
+#, fuzzy
+#| msgid "program cannot be executed"
+msgid "program terminated unexpectedly"
+msgstr "програмата не може да биде извршена"
+
+#: backends/qgpgme/qgpgmecryptoconfig.cpp:114
+#, fuzzy
+#| msgid "program cannot be executed"
+msgid "program not found or cannot be started"
+msgstr "програмата не може да биде извршена"
+
+#: backends/qgpgme/qgpgmecryptoconfig.cpp:117
+#: backends/qgpgme/qgpgmenewcryptoconfig.cpp:97
+#, fuzzy, kde-format
+#| msgid "<qt>Failed to execute gpgconf:<br>%1</qt>"
+msgid "<qt>Failed to execute gpgconf:<p>%1</p></qt>"
+msgstr "<qt>Не можам да го извршам gpgconf:<br>%1</qt>"
+
+#: backends/qgpgme/qgpgmecryptoconfig.cpp:367
+#, fuzzy
+#| msgid ""
+#| "Could not start gpgconf\n"
+#| "Check that gpgconf is in the PATH and that it can be started"
+msgid ""
+"Could not start gpgconf.\n"
+"Check that gpgconf is in the PATH and that it can be started."
+msgstr ""
+"Не можам да го започнам gpgconf\n"
+"Провери дали gpgconf е во PATH и дека може да биде извршена"
+
+#: backends/qgpgme/qgpgmecryptoconfig.cpp:373
+#: backends/qgpgme/qgpgmenewcryptoconfig.cpp:210
+#, kde-format
+msgid "Error from gpgconf while saving configuration: %1"
+msgstr "Грешка од gpgconf при зачувувањето на конфигурацијата: %1"
+
+#: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:50
+msgid "Generating DSA key..."
+msgstr "Создавам DSA клуч..."
+
+#: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:54
+msgid "Generating ElGamal key..."
+msgstr "Создавам ElGamal клуч..."
+
+#: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:59
+msgid "Searching for a large prime number..."
+msgstr "Барам голем прост број..."
+
+#: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:63
+#, fuzzy
+#| msgid ""
+#| "Waiting for new entropy from random number generator (you might want to "
+#| "excercise the harddisks or move the mouse)..."
+msgid ""
+"Waiting for new entropy from random number generator (you might want to "
+"exercise the harddisks or move the mouse)..."
+msgstr ""
+"Чекам нова ентропија од создавач на произволни броеви (можеби сакате да ги "
+"вежбате тврдите дискови или да го движите глувчето)..."
+
+#: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:67
+msgid "Please wait..."
+msgstr "Почекајте..."
+
+#: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:71
+msgid ""
+"Starting gpg-agent (you should consider starting a global instance "
+"instead)..."
+msgstr ""
+"Подигам gpg-agent (треба да размислите за стартување на глобална инстанца во "
+"спротивно)..."
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
