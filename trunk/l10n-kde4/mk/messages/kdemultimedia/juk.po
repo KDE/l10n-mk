@@ -20,6 +20,14 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Жаклина Ѓалевска"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "gjalevska@yahoo.com"
+
 #: advancedsearchdialog.cpp:43
 msgid "Create Search Playlist"
 msgstr "Креирај пребарување на листа со нумери"
@@ -91,6 +99,19 @@ msgstr "<Сите изведувачи>"
 msgid "Remove Cover"
 msgstr "Отстрани насловна слика"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, CoverDialogBase)
+#: coverdialogbase.ui:13 playlistcollection.cpp:900
+msgid "Cover Manager"
+msgstr "Уредувач на обвивки"
+
+#. i18n: ectx: property (text), widget (K3ListView, m_artists)
+#. i18n: ectx: property (text), widget (KLineEdit, m_exampleArtist)
+#. i18n: ectx: property (text), widget (K3ListView, trackList)
+#: coverdialogbase.ui:46 exampleoptionsbase.ui:221 playlist.cpp:1523
+#: tagrenameroptions.cpp:102 trackpickerdialogbase.ui:108
+msgid "Artist"
+msgstr "Изведувач"
+
 #: deletedialog.cpp:54
 #, kde-format
 msgid "<b>1</b> file selected."
@@ -116,6 +137,40 @@ msgstr "&Испрати во ѓубре"
 msgid "About to delete selected files"
 msgstr "Ќе ги бришам избраните датотеки"
 
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: deletedialogbase.ui:61
+msgid "Are you sure that you want to remove these items?"
+msgstr "Дали сте сигурни дека сакате да ги отстраните овие ставки?"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, ddShouldDelete)
+#: deletedialogbase.ui:111
+msgid ""
+"If checked, files will be permanently removed instead of being placed in the "
+"Trash Bin"
+msgstr ""
+"Ако е означено, датотеките ќе бидат трајно отстранети наместо да бидат "
+"ставени во корпата за отпадоци"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, ddShouldDelete)
+#: deletedialogbase.ui:116
+msgid ""
+"<qt><p>If this box is checked, files will be <b>permanently removed</b> "
+"instead of being placed in the Trash Bin.</p>\n"
+"\n"
+"<p><em>Use this option with caution</em>: Most filesystems are unable to "
+"reliably undelete deleted files.</p></qt>"
+msgstr ""
+"<qt><p>Ако ова квадратче е означено, датотеките ќе бидат <b>трајно "
+"отстранети</b> наместо да се стават во корпата за отпадоци.</p>\n"
+"\n"
+"<p><em>Користeте ја оваа опција внимателно</em>: Повеќето датотечни системи "
+"не се способни доверливо да ги вратат избришаните датотеки.</p></qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ddShouldDelete)
+#: deletedialogbase.ui:119
+msgid "&Delete files instead of moving them to the trash"
+msgstr "&Избриши ги датотеките наместо да ги преместиш во корпата"
+
 #: directorylist.cpp:48
 msgid "Folder List"
 msgstr "Листа на папки"
@@ -124,14 +179,114 @@ msgstr "Листа на папки"
 msgid "Music"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QLabel, informationLabel)
+#: directorylistbase.ui:19
+msgid "Please choose the folders where you keep your music:"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QListView, directoryListView)
+#: directorylistbase.ui:34
+msgid "These folders will be scanned on startup for new files."
+msgstr "Овие папки ќе бидат скенирани за нови датотеки при стартување."
+
+#. i18n: ectx: property (text), widget (KPushButton, addDirectoryButton)
+#: directorylistbase.ui:61
+msgid "Add Folder..."
+msgstr "Додај папка..."
+
+#. i18n: ectx: property (text), widget (KPushButton, removeDirectoryButton)
+#: directorylistbase.ui:68
+msgid "Remove Folder"
+msgstr "Отстрани папка"
+
+#. i18n: ectx: property (text), widget (QCheckBox, importPlaylistsCheckBox)
+#: directorylistbase.ui:95
+msgid "Import playlists"
+msgstr "Внеси листи со нумери"
+
 #: exampleoptions.cpp:55 main.cpp:51 playermanager.cpp:539 playlist.cpp:418
 #: systemtray.cpp:495 systemtray.cpp:506
 msgid "JuK"
 msgstr "JuK"
 
-#: filerenamerconfigdlg.cpp:28
-msgid "File Renamer Options"
-msgstr "Опции на преименувачот на датотеки"
+#. i18n: ectx: property (windowTitle), widget (QWidget, ExampleOptionsBase)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: exampleoptionsbase.ui:13 filerenamerbase.ui:176
+msgid "Example"
+msgstr "Пример"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: exampleoptionsbase.ui:37
+msgid "Example Tag Selection"
+msgstr "Избор на ознака за пример"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_fileTagsButton)
+#: exampleoptionsbase.ui:58
+msgid "Get example tags from this file:"
+msgstr "Земи примери за ознаки од оваа датотека:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_manualTagsButton)
+#: exampleoptionsbase.ui:81
+msgid "Enter example tags manually:"
+msgstr "Внеси рачно примери за ознаки:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, m_manualGroup)
+#: exampleoptionsbase.ui:91
+msgid "Example Tags"
+msgstr "Примери за ознаки"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: exampleoptionsbase.ui:135
+#, fuzzy
+#| msgid "Title:"
+msgctxt "song title"
+msgid "Title:"
+msgstr "Наслов:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: exampleoptionsbase.ui:145
+msgid "Artist:"
+msgstr "Изведувач:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: exampleoptionsbase.ui:155
+msgid "Album:"
+msgstr "Албум:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#: exampleoptionsbase.ui:165
+msgid "Genre:"
+msgstr "Жанр:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel5)
+#: exampleoptionsbase.ui:175
+msgid "Track number:"
+msgstr "Број на песна:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel6)
+#: exampleoptionsbase.ui:185
+msgid "Year:"
+msgstr "Година:"
+
+#. i18n: ectx: property (text), widget (KLineEdit, m_exampleTitle)
+#: exampleoptionsbase.ui:214
+#, fuzzy
+#| msgid "Title"
+msgctxt "example song title"
+msgid "Title"
+msgstr "Наслов"
+
+#. i18n: ectx: property (text), widget (KLineEdit, m_exampleAlbum)
+#. i18n: ectx: property (text), widget (K3ListView, trackList)
+#: exampleoptionsbase.ui:228 playlist.cpp:1524 tagrenameroptions.cpp:106
+#: trackpickerdialogbase.ui:119
+msgid "Album"
+msgstr "Албум"
+
+#. i18n: ectx: property (text), widget (KLineEdit, m_exampleGenre)
+#: exampleoptionsbase.ui:235 playlist.cpp:1527 tagrenameroptions.cpp:115
+msgid "Genre"
+msgstr "Жанр"
 
 #: filerenamer.cpp:66
 #, fuzzy
@@ -186,9 +341,8 @@ msgstr "Датотека не е избрана, или избраната да�
 msgid "Hide Renamer Test Dialog"
 msgstr "Скриј пробен дијалог на преименувачот"
 
-#. i18n: file: filerenamerbase.ui:212
 #. i18n: ectx: property (text), widget (KPushButton, m_showExample)
-#: filerenamer.cpp:815 rc.cpp:163
+#: filerenamer.cpp:815 filerenamerbase.ui:212
 msgid "Show Renamer Test Dialog"
 msgstr "Прикажи пробен дијалог на преименувачот"
 
@@ -200,6 +354,65 @@ msgstr "%1 до %2"
 #: filerenamer.cpp:904
 msgid "The following rename operations failed:\n"
 msgstr "Не успеаја следните операции за преименување:\n"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, FileRenamerBase)
+#: filerenamerbase.ui:20
+msgid "File Renamer Configuration"
+msgstr "Конфигурација на преименувачот на датотеки"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_6)
+#: filerenamerbase.ui:47
+msgid "Music folder:"
+msgstr "Музичка папка:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
+#: filerenamerbase.ui:63
+msgid "Album Tag"
+msgstr "Ознака за албум"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
+#: filerenamerbase.ui:68
+msgid "Artist Tag"
+msgstr "Ознака за изведувач"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
+#: filerenamerbase.ui:73
+msgid "Genre Tag"
+msgstr "Ознака за жанр"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
+#: filerenamerbase.ui:78
+msgid "Title Tag"
+msgstr "Ознака за наслов"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
+#: filerenamerbase.ui:83
+msgid "Track Tag"
+msgstr "Ознака за песната"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
+#: filerenamerbase.ui:88
+msgid "Year Tag"
+msgstr "Ознака за година"
+
+#. i18n: ectx: property (text), widget (KPushButton, m_insertCategory)
+#: filerenamerbase.ui:96
+msgid "Insert Category"
+msgstr "Вметни категорија"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: filerenamerbase.ui:108
+msgid "Add category:"
+msgstr "Додај категорија:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_7)
+#: filerenamerbase.ui:118
+msgid "Separator:"
+msgstr "Сепаратор:"
+
+#: filerenamerconfigdlg.cpp:28
+msgid "File Renamer Options"
+msgstr "Опции на преименувачот на датотеки"
 
 #: filerenameroptions.cpp:38
 #, fuzzy, kde-format
@@ -232,6 +445,76 @@ msgstr ""
 #: filerenameroptions.cpp:115
 msgid "File Renamer"
 msgstr "Преименувач на датотеки"
+
+#. i18n: ectx: property (text), widget (QLabel, m_substitution)
+#: filerenameroptionsbase.ui:115
+msgid "Substitution Example"
+msgstr "Пример на замена"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_includeEmptyButton)
+#: filerenameroptionsbase.ui:137
+msgid "Include in the &filename anyways"
+msgstr "&Вклучи во името на датотеката во секој случај"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_ignoreTagButton)
+#: filerenameroptionsbase.ui:144
+msgid "&Ignore this tag when renaming the file"
+msgstr "&Игнорирај ја оваа ознака при преименување на датотеката"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_useValueButton)
+#: filerenameroptionsbase.ui:162
+msgid "Use &this value:"
+msgstr "&Користи ја оваа вредност:"
+
+#. i18n: ectx: property (text), widget (KLineEdit, m_emptyTagValue)
+#: filerenameroptionsbase.ui:172
+#, fuzzy
+#| msgid "Empty"
+msgctxt "value to use in replacement when source tag empty"
+msgid "Empty"
+msgstr "Празна"
+
+#. i18n: ectx: property (title), widget (QGroupBox, m_trackGroup)
+#: filerenameroptionsbase.ui:184
+#, fuzzy
+#| msgid "Track number:"
+msgid "Track numbering"
+msgstr "Број на песна:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel10)
+#: filerenameroptionsbase.ui:196
+msgid ""
+"JuK can force the track used in a file name to have a minimum number of "
+"digits.  You may want to do this for better sorting in file managers."
+msgstr ""
+"JuK може да присили песната употребена во името на датотеката да има "
+"минимален број на цифри. Можеби сакате да го направите ова за подобро "
+"подредување во менаџерите на датотеки."
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel5)
+#: filerenameroptionsbase.ui:228
+msgid "Minimum number of digits:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, m_doubleDigitExample)
+#: filerenameroptionsbase.ui:266
+msgid "014"
+msgstr "014"
+
+#. i18n: ectx: property (text), widget (QLabel, m_singleDigitExample)
+#: filerenameroptionsbase.ui:284
+msgid "003"
+msgstr "003"
+
+#. i18n: ectx: property (text), widget (QLabel, m_singleDigit)
+#: filerenameroptionsbase.ui:291
+msgid "3 ->"
+msgstr "3 ->"
+
+#. i18n: ectx: property (text), widget (QLabel, m_doubleDigit)
+#: filerenameroptionsbase.ui:301
+msgid "14 ->"
+msgstr "14 ->"
 
 #: historyplaylist.cpp:41
 msgid "Time"
@@ -384,6 +667,41 @@ msgstr ""
 #: juk.cpp:531
 msgid "Docking in System Tray"
 msgstr "Вкотвување во системската лента"
+
+#. i18n: ectx: Menu (file)
+#: jukui-rtl.rc:4 jukui.rc:6
+msgid "&File"
+msgstr "&Датотека"
+
+#. i18n: ectx: Menu (view)
+#: jukui-rtl.rc:26 jukui.rc:28
+msgid "&View"
+msgstr ""
+
+#. i18n: ectx: Menu (player)
+#: jukui-rtl.rc:39 jukui.rc:41
+msgid "&Player"
+msgstr "&Изведувач"
+
+#. i18n: ectx: Menu (playlist)
+#: jukui-rtl.rc:57 jukui.rc:59
+msgid "&Tagger"
+msgstr "&Означувач"
+
+#. i18n: ectx: Menu (settings)
+#: jukui-rtl.rc:68 jukui.rc:70
+msgid "&Settings"
+msgstr "По&ставувања"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: jukui-rtl.rc:81 jukui.rc:83
+msgid "Main Toolbar"
+msgstr "Главен алатник"
+
+#. i18n: ectx: ToolBar (playToolBar)
+#: jukui-rtl.rc:99 jukui.rc:101
+msgid "Play Toolbar"
+msgstr "Лента со алатки за пуштање"
 
 #: k3bexporter.cpp:91
 msgid "Add Selected Items to Audio or Data CD"
@@ -673,6 +991,115 @@ msgctxt "%1 is the artist and %2 is the title of the currently playing track."
 msgid "%1 - %2 :: JuK"
 msgstr ""
 
+#: playlist.cpp:561
+#, kde-format
+msgid "Could not save to file %1."
+msgstr "Не можам да зачувам во датотеката %1."
+
+#: playlist.cpp:827
+msgid "Are you sure you want to delete these covers?"
+msgstr "Дали сте сигурни дека сакате да ги бришете овие обвивки?"
+
+#: playlist.cpp:829
+msgid "&Delete Covers"
+msgstr "&Избриши обвивки"
+
+#: playlist.cpp:858
+msgid "Select Cover Image File"
+msgstr "Избери датотека со слика за обвивка"
+
+#: playlist.cpp:1006
+msgid "Could not delete these files"
+msgstr "Не можам да ги избришам овие датотеки"
+
+#: playlist.cpp:1007
+msgid "Could not move these files to the Trash"
+msgstr "Не можам да ги преместам овие датотеки во ѓубрето."
+
+#. i18n: ectx: property (text), widget (K3ListView, trackList)
+#: playlist.cpp:1522 trackpickerdialogbase.ui:97
+msgid "Track Name"
+msgstr "Име на песната"
+
+#: playlist.cpp:1525
+msgid "Cover"
+msgstr "Обвивка"
+
+#. i18n: ectx: property (text), widget (K3ListView, trackList)
+#: playlist.cpp:1526 tagrenameroptions.cpp:110 trackpickerdialogbase.ui:130
+#, fuzzy
+#| msgid "Track"
+msgctxt "cd track number"
+msgid "Track"
+msgstr "Песна"
+
+#. i18n: ectx: property (text), widget (K3ListView, trackList)
+#: playlist.cpp:1528 tagrenameroptions.cpp:119 trackpickerdialogbase.ui:141
+msgid "Year"
+msgstr "Година"
+
+#: playlist.cpp:1529
+msgid "Length"
+msgstr "Должина"
+
+#: playlist.cpp:1530
+msgid "Bitrate"
+msgstr "Брзина на битови"
+
+#: playlist.cpp:1531
+msgid "Comment"
+msgstr "Коментар"
+
+#. i18n: ectx: property (title), widget (QGroupBox, fileInfoGroup)
+#: playlist.cpp:1532 trackpickerdialogbase.ui:21
+msgid "File Name"
+msgstr "Име на датотеката"
+
+#: playlist.cpp:1533
+msgid "File Name (full path)"
+msgstr "Име на датотеката (целосна патека)"
+
+#: playlist.cpp:1702
+msgid "&Show Columns"
+msgstr "&Прикажи колони"
+
+#: playlist.cpp:2135
+msgid "Add to Play Queue"
+msgstr "Додај во редот за изведување"
+
+#: playlist.cpp:2148 playlist.cpp:2298
+msgid "Edit"
+msgstr "Уреди"
+
+#: playlist.cpp:2163
+msgid "Create Playlist From Selected Items..."
+msgstr "Креирај листа на нумери од избраните ставки..."
+
+#: playlist.cpp:2184
+#, kde-format
+msgid "Edit '%1'"
+msgstr "Уреди ја „%1“"
+
+#: playlist.cpp:2296
+msgid "This will edit multiple files. Are you sure?"
+msgstr "Ова ќе уреди повеќе датотеки. Дали сте сигурни?"
+
+#: playlist.cpp:2355 playlistcollection.h:180
+msgid "Create New Playlist"
+msgstr "Креирај нова листа со нумери"
+
+#: playlist.cpp:2364
+msgid ""
+"Manual column widths have been enabled.  You can switch back to automatic "
+"column sizes in the view menu."
+msgstr ""
+"Вклучено е рачно поставување на ширина на колоните.  Можете да вратите на "
+"автоматска големина на колоните во менито за преглед."
+
+#: playlist.cpp:2367
+msgid "Manual Column Widths Enabled"
+msgstr "Вклучено рачно поставување на ширината на колоните"
+
 #: playlistbox.cpp:109
 msgid "View Modes"
 msgstr "Режими на поглед"
@@ -710,9 +1137,8 @@ msgstr ""
 msgid "Remove Items?"
 msgstr "Да ги отстранам ставките?"
 
-#. i18n: file: tagguesserconfigdlgwidget.ui:100
 #. i18n: ectx: property (text), widget (KPushButton, bRemove)
-#: playlistbox.cpp:351 rc.cpp:304
+#: playlistbox.cpp:351 tagguesserconfigdlgwidget.ui:100
 msgid "&Remove"
 msgstr "&Отстрани"
 
@@ -850,12 +1276,6 @@ msgstr "Освежи"
 msgid "&Rename File"
 msgstr "&Преименувај датотека"
 
-#. i18n: file: coverdialogbase.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, CoverDialogBase)
-#: playlistcollection.cpp:900 rc.cpp:47
-msgid "Cover Manager"
-msgstr "Уредувач на обвивки"
-
 #: playlistcollection.cpp:903
 msgid "&View Cover"
 msgstr "&Прикажи обвивка"
@@ -880,142 +1300,9 @@ msgstr "Прикажи уредувач на о&бвивки"
 msgid "Show &Play Queue"
 msgstr "Покажи &редица на пуштање"
 
-#: playlist.cpp:561
-#, kde-format
-msgid "Could not save to file %1."
-msgstr "Не можам да зачувам во датотеката %1."
-
-#: playlist.cpp:827
-msgid "Are you sure you want to delete these covers?"
-msgstr "Дали сте сигурни дека сакате да ги бришете овие обвивки?"
-
-#: playlist.cpp:829
-msgid "&Delete Covers"
-msgstr "&Избриши обвивки"
-
-#: playlist.cpp:858
-msgid "Select Cover Image File"
-msgstr "Избери датотека со слика за обвивка"
-
-#: playlist.cpp:1006
-msgid "Could not delete these files"
-msgstr "Не можам да ги избришам овие датотеки"
-
-#: playlist.cpp:1007
-msgid "Could not move these files to the Trash"
-msgstr "Не можам да ги преместам овие датотеки во ѓубрето."
-
-#. i18n: file: trackpickerdialogbase.ui:97
-#. i18n: ectx: property (text), widget (K3ListView, trackList)
-#: playlist.cpp:1522 rc.cpp:322
-msgid "Track Name"
-msgstr "Име на песната"
-
-#. i18n: file: coverdialogbase.ui:46
-#. i18n: ectx: property (text), widget (K3ListView, m_artists)
-#. i18n: file: exampleoptionsbase.ui:221
-#. i18n: ectx: property (text), widget (KLineEdit, m_exampleArtist)
-#. i18n: file: trackpickerdialogbase.ui:108
-#. i18n: ectx: property (text), widget (K3ListView, trackList)
-#: playlist.cpp:1523 rc.cpp:50 rc.cpp:118 rc.cpp:325 tagrenameroptions.cpp:102
-msgid "Artist"
-msgstr "Изведувач"
-
-#. i18n: file: exampleoptionsbase.ui:228
-#. i18n: ectx: property (text), widget (KLineEdit, m_exampleAlbum)
-#. i18n: file: trackpickerdialogbase.ui:119
-#. i18n: ectx: property (text), widget (K3ListView, trackList)
-#: playlist.cpp:1524 rc.cpp:121 rc.cpp:328 tagrenameroptions.cpp:106
-msgid "Album"
-msgstr "Албум"
-
-#: playlist.cpp:1525
-msgid "Cover"
-msgstr "Обвивка"
-
-#. i18n: file: trackpickerdialogbase.ui:130
-#. i18n: ectx: property (text), widget (K3ListView, trackList)
-#: playlist.cpp:1526 rc.cpp:331 tagrenameroptions.cpp:110
-#, fuzzy
-#| msgid "Track"
-msgctxt "cd track number"
-msgid "Track"
-msgstr "Песна"
-
-#. i18n: file: exampleoptionsbase.ui:235
-#. i18n: ectx: property (text), widget (KLineEdit, m_exampleGenre)
-#: playlist.cpp:1527 rc.cpp:124 tagrenameroptions.cpp:115
-msgid "Genre"
-msgstr "Жанр"
-
-#. i18n: file: trackpickerdialogbase.ui:141
-#. i18n: ectx: property (text), widget (K3ListView, trackList)
-#: playlist.cpp:1528 rc.cpp:334 tagrenameroptions.cpp:119
-msgid "Year"
-msgstr "Година"
-
-#: playlist.cpp:1529
-msgid "Length"
-msgstr "Должина"
-
-#: playlist.cpp:1530
-msgid "Bitrate"
-msgstr "Брзина на битови"
-
-#: playlist.cpp:1531
-msgid "Comment"
-msgstr "Коментар"
-
-#. i18n: file: trackpickerdialogbase.ui:21
-#. i18n: ectx: property (title), widget (QGroupBox, fileInfoGroup)
-#: playlist.cpp:1532 rc.cpp:316
-msgid "File Name"
-msgstr "Име на датотеката"
-
-#: playlist.cpp:1533
-msgid "File Name (full path)"
-msgstr "Име на датотеката (целосна патека)"
-
-#: playlist.cpp:1702
-msgid "&Show Columns"
-msgstr "&Прикажи колони"
-
-#: playlist.cpp:2135
-msgid "Add to Play Queue"
-msgstr "Додај во редот за изведување"
-
-#: playlist.cpp:2148 playlist.cpp:2298
-msgid "Edit"
-msgstr "Уреди"
-
-#: playlist.cpp:2163
-msgid "Create Playlist From Selected Items..."
-msgstr "Креирај листа на нумери од избраните ставки..."
-
-#: playlist.cpp:2184
-#, kde-format
-msgid "Edit '%1'"
-msgstr "Уреди ја „%1“"
-
-#: playlist.cpp:2296
-msgid "This will edit multiple files. Are you sure?"
-msgstr "Ова ќе уреди повеќе датотеки. Дали сте сигурни?"
-
-#: playlist.cpp:2355 playlistcollection.h:180
-msgid "Create New Playlist"
-msgstr "Креирај нова листа со нумери"
-
-#: playlist.cpp:2364
-msgid ""
-"Manual column widths have been enabled.  You can switch back to automatic "
-"column sizes in the view menu."
-msgstr ""
-"Вклучено е рачно поставување на ширина на колоните.  Можете да вратите на "
-"автоматска големина на колоните во менито за преглед."
-
-#: playlist.cpp:2367
-msgid "Manual Column Widths Enabled"
-msgstr "Вклучено рачно поставување на ширината на колоните"
+#: playlistcollection.h:183
+msgid "Playlist"
+msgstr "Листа со нумери"
 
 #: playlistsplitter.cpp:157
 msgid "Show &Search Bar"
@@ -1024,622 +1311,6 @@ msgstr "Покажи &лента за барање"
 #: playlistsplitter.cpp:160
 msgid "Edit Track Search"
 msgstr "Уреди барање на нумери"
-
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Жаклина Ѓалевска"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "gjalevska@yahoo.com"
-
-#. i18n: file: jukui.rc:6
-#. i18n: ectx: Menu (file)
-#. i18n: file: jukui-rtl.rc:4
-#. i18n: ectx: Menu (file)
-#: rc.cpp:5 rc.cpp:26
-msgid "&File"
-msgstr "&Датотека"
-
-#. i18n: file: jukui.rc:28
-#. i18n: ectx: Menu (view)
-#. i18n: file: jukui-rtl.rc:26
-#. i18n: ectx: Menu (view)
-#: rc.cpp:8 rc.cpp:29
-msgid "&View"
-msgstr ""
-
-#. i18n: file: jukui.rc:41
-#. i18n: ectx: Menu (player)
-#. i18n: file: jukui-rtl.rc:39
-#. i18n: ectx: Menu (player)
-#: rc.cpp:11 rc.cpp:32
-msgid "&Player"
-msgstr "&Изведувач"
-
-#. i18n: file: jukui.rc:59
-#. i18n: ectx: Menu (playlist)
-#. i18n: file: jukui-rtl.rc:57
-#. i18n: ectx: Menu (playlist)
-#: rc.cpp:14 rc.cpp:35
-msgid "&Tagger"
-msgstr "&Означувач"
-
-#. i18n: file: jukui.rc:70
-#. i18n: ectx: Menu (settings)
-#. i18n: file: jukui-rtl.rc:68
-#. i18n: ectx: Menu (settings)
-#: rc.cpp:17 rc.cpp:38
-msgid "&Settings"
-msgstr "По&ставувања"
-
-#. i18n: file: jukui.rc:83
-#. i18n: ectx: ToolBar (mainToolBar)
-#. i18n: file: jukui-rtl.rc:81
-#. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:20 rc.cpp:41
-msgid "Main Toolbar"
-msgstr "Главен алатник"
-
-#. i18n: file: jukui.rc:101
-#. i18n: ectx: ToolBar (playToolBar)
-#. i18n: file: jukui-rtl.rc:99
-#. i18n: ectx: ToolBar (playToolBar)
-#: rc.cpp:23 rc.cpp:44
-msgid "Play Toolbar"
-msgstr "Лента со алатки за пуштање"
-
-#. i18n: file: deletedialogbase.ui:61
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:53
-msgid "Are you sure that you want to remove these items?"
-msgstr "Дали сте сигурни дека сакате да ги отстраните овие ставки?"
-
-#. i18n: file: deletedialogbase.ui:111
-#. i18n: ectx: property (toolTip), widget (QCheckBox, ddShouldDelete)
-#: rc.cpp:56
-msgid ""
-"If checked, files will be permanently removed instead of being placed in the "
-"Trash Bin"
-msgstr ""
-"Ако е означено, датотеките ќе бидат трајно отстранети наместо да бидат "
-"ставени во корпата за отпадоци"
-
-#. i18n: file: deletedialogbase.ui:116
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, ddShouldDelete)
-#: rc.cpp:59
-msgid ""
-"<qt><p>If this box is checked, files will be <b>permanently removed</b> "
-"instead of being placed in the Trash Bin.</p>\n"
-"\n"
-"<p><em>Use this option with caution</em>: Most filesystems are unable to "
-"reliably undelete deleted files.</p></qt>"
-msgstr ""
-"<qt><p>Ако ова квадратче е означено, датотеките ќе бидат <b>трајно "
-"отстранети</b> наместо да се стават во корпата за отпадоци.</p>\n"
-"\n"
-"<p><em>Користeте ја оваа опција внимателно</em>: Повеќето датотечни системи "
-"не се способни доверливо да ги вратат избришаните датотеки.</p></qt>"
-
-#. i18n: file: deletedialogbase.ui:119
-#. i18n: ectx: property (text), widget (QCheckBox, ddShouldDelete)
-#: rc.cpp:64
-msgid "&Delete files instead of moving them to the trash"
-msgstr "&Избриши ги датотеките наместо да ги преместиш во корпата"
-
-#. i18n: file: directorylistbase.ui:19
-#. i18n: ectx: property (text), widget (QLabel, informationLabel)
-#: rc.cpp:67
-msgid "Please choose the folders where you keep your music:"
-msgstr ""
-
-#. i18n: file: directorylistbase.ui:34
-#. i18n: ectx: property (toolTip), widget (QListView, directoryListView)
-#: rc.cpp:70
-msgid "These folders will be scanned on startup for new files."
-msgstr "Овие папки ќе бидат скенирани за нови датотеки при стартување."
-
-#. i18n: file: directorylistbase.ui:61
-#. i18n: ectx: property (text), widget (KPushButton, addDirectoryButton)
-#: rc.cpp:73
-msgid "Add Folder..."
-msgstr "Додај папка..."
-
-#. i18n: file: directorylistbase.ui:68
-#. i18n: ectx: property (text), widget (KPushButton, removeDirectoryButton)
-#: rc.cpp:76
-msgid "Remove Folder"
-msgstr "Отстрани папка"
-
-#. i18n: file: directorylistbase.ui:95
-#. i18n: ectx: property (text), widget (QCheckBox, importPlaylistsCheckBox)
-#: rc.cpp:79
-msgid "Import playlists"
-msgstr "Внеси листи со нумери"
-
-#. i18n: file: exampleoptionsbase.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, ExampleOptionsBase)
-#. i18n: file: filerenamerbase.ui:176
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:82 rc.cpp:160
-msgid "Example"
-msgstr "Пример"
-
-#. i18n: file: exampleoptionsbase.ui:37
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:85
-msgid "Example Tag Selection"
-msgstr "Избор на ознака за пример"
-
-#. i18n: file: exampleoptionsbase.ui:58
-#. i18n: ectx: property (text), widget (QRadioButton, m_fileTagsButton)
-#: rc.cpp:88
-msgid "Get example tags from this file:"
-msgstr "Земи примери за ознаки од оваа датотека:"
-
-#. i18n: file: exampleoptionsbase.ui:81
-#. i18n: ectx: property (text), widget (QRadioButton, m_manualTagsButton)
-#: rc.cpp:91
-msgid "Enter example tags manually:"
-msgstr "Внеси рачно примери за ознаки:"
-
-#. i18n: file: exampleoptionsbase.ui:91
-#. i18n: ectx: property (title), widget (QGroupBox, m_manualGroup)
-#: rc.cpp:94
-msgid "Example Tags"
-msgstr "Примери за ознаки"
-
-#. i18n: file: exampleoptionsbase.ui:135
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:97
-#, fuzzy
-#| msgid "Title:"
-msgctxt "song title"
-msgid "Title:"
-msgstr "Наслов:"
-
-#. i18n: file: exampleoptionsbase.ui:145
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:100
-msgid "Artist:"
-msgstr "Изведувач:"
-
-#. i18n: file: exampleoptionsbase.ui:155
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:103
-msgid "Album:"
-msgstr "Албум:"
-
-#. i18n: file: exampleoptionsbase.ui:165
-#. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: rc.cpp:106
-msgid "Genre:"
-msgstr "Жанр:"
-
-#. i18n: file: exampleoptionsbase.ui:175
-#. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: rc.cpp:109
-msgid "Track number:"
-msgstr "Број на песна:"
-
-#. i18n: file: exampleoptionsbase.ui:185
-#. i18n: ectx: property (text), widget (QLabel, textLabel6)
-#: rc.cpp:112
-msgid "Year:"
-msgstr "Година:"
-
-#. i18n: file: exampleoptionsbase.ui:214
-#. i18n: ectx: property (text), widget (KLineEdit, m_exampleTitle)
-#: rc.cpp:115
-#, fuzzy
-#| msgid "Title"
-msgctxt "example song title"
-msgid "Title"
-msgstr "Наслов"
-
-#. i18n: file: filerenamerbase.ui:20
-#. i18n: ectx: property (windowTitle), widget (QWidget, FileRenamerBase)
-#: rc.cpp:127
-msgid "File Renamer Configuration"
-msgstr "Конфигурација на преименувачот на датотеки"
-
-#. i18n: file: filerenamerbase.ui:47
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_6)
-#: rc.cpp:130
-msgid "Music folder:"
-msgstr "Музичка папка:"
-
-#. i18n: file: filerenamerbase.ui:63
-#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
-#: rc.cpp:133
-msgid "Album Tag"
-msgstr "Ознака за албум"
-
-#. i18n: file: filerenamerbase.ui:68
-#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
-#: rc.cpp:136
-msgid "Artist Tag"
-msgstr "Ознака за изведувач"
-
-#. i18n: file: filerenamerbase.ui:73
-#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
-#: rc.cpp:139
-msgid "Genre Tag"
-msgstr "Ознака за жанр"
-
-#. i18n: file: filerenamerbase.ui:78
-#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
-#: rc.cpp:142
-msgid "Title Tag"
-msgstr "Ознака за наслов"
-
-#. i18n: file: filerenamerbase.ui:83
-#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
-#: rc.cpp:145
-msgid "Track Tag"
-msgstr "Ознака за песната"
-
-#. i18n: file: filerenamerbase.ui:88
-#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
-#: rc.cpp:148
-msgid "Year Tag"
-msgstr "Ознака за година"
-
-#. i18n: file: filerenamerbase.ui:96
-#. i18n: ectx: property (text), widget (KPushButton, m_insertCategory)
-#: rc.cpp:151
-msgid "Insert Category"
-msgstr "Вметни категорија"
-
-#. i18n: file: filerenamerbase.ui:108
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:154
-msgid "Add category:"
-msgstr "Додај категорија:"
-
-#. i18n: file: filerenamerbase.ui:118
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_7)
-#: rc.cpp:157
-msgid "Separator:"
-msgstr "Сепаратор:"
-
-#. i18n: file: filerenameroptionsbase.ui:115
-#. i18n: ectx: property (text), widget (QLabel, m_substitution)
-#: rc.cpp:166
-msgid "Substitution Example"
-msgstr "Пример на замена"
-
-#. i18n: file: filerenameroptionsbase.ui:137
-#. i18n: ectx: property (text), widget (QRadioButton, m_includeEmptyButton)
-#: rc.cpp:169
-msgid "Include in the &filename anyways"
-msgstr "&Вклучи во името на датотеката во секој случај"
-
-#. i18n: file: filerenameroptionsbase.ui:144
-#. i18n: ectx: property (text), widget (QRadioButton, m_ignoreTagButton)
-#: rc.cpp:172
-msgid "&Ignore this tag when renaming the file"
-msgstr "&Игнорирај ја оваа ознака при преименување на датотеката"
-
-#. i18n: file: filerenameroptionsbase.ui:162
-#. i18n: ectx: property (text), widget (QRadioButton, m_useValueButton)
-#: rc.cpp:175
-msgid "Use &this value:"
-msgstr "&Користи ја оваа вредност:"
-
-#. i18n: file: filerenameroptionsbase.ui:172
-#. i18n: ectx: property (text), widget (KLineEdit, m_emptyTagValue)
-#: rc.cpp:178
-#, fuzzy
-#| msgid "Empty"
-msgctxt "value to use in replacement when source tag empty"
-msgid "Empty"
-msgstr "Празна"
-
-#. i18n: file: filerenameroptionsbase.ui:184
-#. i18n: ectx: property (title), widget (QGroupBox, m_trackGroup)
-#: rc.cpp:181
-#, fuzzy
-#| msgid "Track number:"
-msgid "Track numbering"
-msgstr "Број на песна:"
-
-#. i18n: file: filerenameroptionsbase.ui:196
-#. i18n: ectx: property (text), widget (QLabel, textLabel10)
-#: rc.cpp:184
-msgid ""
-"JuK can force the track used in a file name to have a minimum number of "
-"digits.  You may want to do this for better sorting in file managers."
-msgstr ""
-"JuK може да присили песната употребена во името на датотеката да има "
-"минимален број на цифри. Можеби сакате да го направите ова за подобро "
-"подредување во менаџерите на датотеки."
-
-#. i18n: file: filerenameroptionsbase.ui:228
-#. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: rc.cpp:187
-msgid "Minimum number of digits:"
-msgstr ""
-
-#. i18n: file: filerenameroptionsbase.ui:266
-#. i18n: ectx: property (text), widget (QLabel, m_doubleDigitExample)
-#: rc.cpp:190
-msgid "014"
-msgstr "014"
-
-#. i18n: file: filerenameroptionsbase.ui:284
-#. i18n: ectx: property (text), widget (QLabel, m_singleDigitExample)
-#: rc.cpp:193
-msgid "003"
-msgstr "003"
-
-#. i18n: file: filerenameroptionsbase.ui:291
-#. i18n: ectx: property (text), widget (QLabel, m_singleDigit)
-#: rc.cpp:196
-msgid "3 ->"
-msgstr "3 ->"
-
-#. i18n: file: filerenameroptionsbase.ui:301
-#. i18n: ectx: property (text), widget (QLabel, m_doubleDigit)
-#: rc.cpp:199
-msgid "14 ->"
-msgstr "14 ->"
-
-#. i18n: file: tageditor.ui:19
-#. i18n: ectx: property (text), widget (QLabel, fileNameLabel)
-#: rc.cpp:202
-#, fuzzy
-#| msgid "&File name:"
-msgid "F&ile name:"
-msgstr "&Име на датотеката:"
-
-#. i18n: file: tageditor.ui:29
-#. i18n: ectx: property (text), widget (QLabel, trackLabel)
-#: rc.cpp:205
-#, fuzzy
-#| msgid "T&rack:"
-msgid "T&rack:"
-msgstr "&Песна:"
-
-#. i18n: file: tageditor.ui:39
-#. i18n: ectx: property (text), widget (QLabel, artistNameLabel)
-#: rc.cpp:208
-msgid "&Artist name:"
-msgstr "Име н&а изведувачот:"
-
-#. i18n: file: tageditor.ui:49
-#. i18n: ectx: property (text), widget (QLabel, albumNameLabel)
-#: rc.cpp:211
-msgid "Album &name:"
-msgstr "Име &на албумот:"
-
-#. i18n: file: tageditor.ui:59
-#. i18n: ectx: property (text), widget (QLabel, genreLabel)
-#: rc.cpp:214
-msgid "&Genre:"
-msgstr "&Жанр:"
-
-#. i18n: file: tageditor.ui:72
-#. i18n: ectx: property (text), widget (QLabel, yearLabel)
-#: rc.cpp:217
-msgid "&Year:"
-msgstr "&Година:"
-
-#. i18n: file: tageditor.ui:88
-#. i18n: ectx: property (text), widget (QLabel, lengthLabel)
-#: rc.cpp:220
-#, fuzzy
-#| msgid "Length:"
-msgid "&Length:"
-msgstr "Должина:"
-
-#. i18n: file: tageditor.ui:98
-#. i18n: ectx: property (text), widget (QLabel, bitrateLabel)
-#: rc.cpp:223
-#, fuzzy
-#| msgid "Bitrate:"
-msgid "&Bitrate:"
-msgstr "Брзина на битови:"
-
-#. i18n: file: tageditor.ui:108
-#. i18n: ectx: property (text), widget (QLabel, commentLabel)
-#: rc.cpp:226
-msgid "&Comment:"
-msgstr "&Коментар:"
-
-#. i18n: file: tageditor.ui:176
-#. i18n: ectx: property (text), widget (QLabel, trackNameLabel)
-#: rc.cpp:229
-#, fuzzy
-#| msgid "&Track name:"
-msgid "Trac&k name:"
-msgstr "Име на песна&та:"
-
-#. i18n: file: tageditor.ui:186
-#. i18n: ectx: property (text), widget (QCheckBox, artistNameEnable)
-#. i18n: file: tageditor.ui:196
-#. i18n: ectx: property (text), widget (QCheckBox, trackNameEnable)
-#. i18n: file: tageditor.ui:203
-#. i18n: ectx: property (text), widget (QCheckBox, albumNameEnable)
-#. i18n: file: tageditor.ui:210
-#. i18n: ectx: property (text), widget (QCheckBox, genreEnable)
-#. i18n: file: tageditor.ui:217
-#. i18n: ectx: property (text), widget (QCheckBox, trackEnable)
-#. i18n: file: tageditor.ui:224
-#. i18n: ectx: property (text), widget (QCheckBox, yearEnable)
-#. i18n: file: tageditor.ui:231
-#. i18n: ectx: property (text), widget (QCheckBox, commentEnable)
-#: rc.cpp:232 rc.cpp:235 rc.cpp:238 rc.cpp:241 rc.cpp:244 rc.cpp:247
-#: rc.cpp:250
-msgid "Enable"
-msgstr "Овозможи"
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:18
-#. i18n: ectx: property (toolTip), widget (QTreeView, lvSchemes)
-#: rc.cpp:253
-msgid "Currently used file name schemes"
-msgstr "Тековно користени шеми за датотечни имиња"
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:29
-#. i18n: ectx: property (whatsThis), widget (QTreeView, lvSchemes)
-#: rc.cpp:257
-#, fuzzy, no-c-format
-#| msgid ""
-#| "Here you can see the currently configured file name schemes which the "
-#| "\"Suggest\" button in the tag editor uses to extract tag information from "
-#| "a file name. Each string may contain one of the following placeholders:"
-#| "<ul>\n"
-#| "<li>%t: Title</li>\n"
-#| "<li>%a: Artist</li>\n"
-#| "<li>%A: Album</li>\n"
-#| "<li>%T: Track</li>\n"
-#| "<li>%c: Comment</li>\n"
-#| "</ul>\n"
-#| "For example, the file name scheme \"[%T] %a - %t\" would match \"[01] "
-#| "Deep Purple - Smoke on the water\" but not \"(Deep Purple) Smoke on the "
-#| "water\". For that second name, you would use the scheme \"(%a) %t\".<p/>\n"
-#| "Note that the order in which the schemes appear in the list is relevant, "
-#| "since the tag guesser will go through the list from the top to the "
-#| "bottom, and use the first matching scheme."
-msgid ""
-"Here you can see the currently configured file name schemes which the "
-"\"Guess Tag Information From File Name\" entry in the song's context menu "
-"uses to extract tag information from a file name. Each string may contain "
-"one of the following placeholders:<ul>\n"
-"<li>%t: Title</li>\n"
-"<li>%a: Artist</li>\n"
-"<li>%A: Album</li>\n"
-"<li>%T: Track</li>\n"
-"<li>%c: Comment</li>\n"
-"</ul>\n"
-"For example, the file name scheme \"[%T] %a - %t\" would match \"[01] Deep "
-"Purple - Smoke on the water\" but not \"(Deep Purple) Smoke on the water\". "
-"For that second name, you would use the scheme \"(%a) %t\".<p/>\n"
-"Note that the order in which the schemes appear in the list is relevant, "
-"since the tag guesser will go through the list from the top to the bottom, "
-"and use the first matching scheme."
-msgstr ""
-"Тука можете да ги видите тековно конфигурираните шеми за датотечно име кои "
-"копчето „Предлог“  ги користи во уредникот на ознаки за да извлече "
-"информација за ознака од името на датотеката. Секоја низа може да содржи "
-"еден од следните држачи на место:<ul>\n"
-"<li>%t: Наслов</li>\n"
-"<li>%a: Изведувач</li>\n"
-"<li>%A: Албум</li>\n"
-"<li>%T: Песна</li>\n"
-"<li>%c: Коментар</li>\n"
-"</ul>\n"
-"На пример, шемата за име на датотека „[%T] %a - %t“ би соодветствувала на "
-"„[01] Deep Purple - Smoke on the water“, но не и на „(Deep Purple) Smoke on "
-"the water“. За второво име би требало да ја употребите шемата „(%a) %t“.<p/"
-">\n"
-"Забележете дека редоследот по кој шемите се појавуваат во листите е битен, "
-"бидејќи погодувачот на ознаки ќе оди низ листата од горе до долу и ќе ја "
-"употреби првата соодветна шема."
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:42
-#. i18n: ectx: property (toolTip), widget (QToolButton, bMoveUp)
-#: rc.cpp:268
-msgid "Move scheme up"
-msgstr "Премести ја шемата нагоре"
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:45
-#. i18n: ectx: property (whatsThis), widget (QToolButton, bMoveUp)
-#: rc.cpp:271
-msgid ""
-"Press this button to move the currently selected scheme one step upwards."
-msgstr ""
-"Притиснете го ова копче да ја преместите тековно избраната шема еден чекор "
-"нагоре."
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:55
-#. i18n: ectx: property (toolTip), widget (QToolButton, bMoveDown)
-#: rc.cpp:274
-msgid "Move scheme down"
-msgstr "Премести ја шемата надолу"
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:58
-#. i18n: ectx: property (whatsThis), widget (QToolButton, bMoveDown)
-#: rc.cpp:277
-msgid ""
-"Press this button to move the currently selected scheme one step downwards."
-msgstr ""
-"Притиснете го ова копче да ја преместите тековно избраната шема еден чекор "
-"надолу."
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:68
-#. i18n: ectx: property (toolTip), widget (KPushButton, bAdd)
-#: rc.cpp:280
-msgid "Add a new scheme"
-msgstr "Додај нова шема"
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:71
-#. i18n: ectx: property (whatsThis), widget (KPushButton, bAdd)
-#: rc.cpp:283
-msgid "Press this button to add a new file name scheme to the end of the list."
-msgstr ""
-"Притиснете го ова копче за да додадете нова шема за име на датотека на "
-"крајот на листата."
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:74
-#. i18n: ectx: property (text), widget (KPushButton, bAdd)
-#: rc.cpp:286
-msgid "&Add"
-msgstr "&Додај"
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:81
-#. i18n: ectx: property (toolTip), widget (KPushButton, bModify)
-#: rc.cpp:289
-msgid "Modify scheme"
-msgstr "Измени ја шемата"
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:84
-#. i18n: ectx: property (whatsThis), widget (KPushButton, bModify)
-#: rc.cpp:292
-msgid "Press this button to modify the currently selected scheme."
-msgstr "Притиснете го ова копче за да ја измените тековно избраната шема."
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:87
-#. i18n: ectx: property (text), widget (KPushButton, bModify)
-#: rc.cpp:295
-msgid "&Modify"
-msgstr "&Измени"
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:94
-#. i18n: ectx: property (toolTip), widget (KPushButton, bRemove)
-#: rc.cpp:298
-msgid "Remove scheme"
-msgstr "Отстрани ја шемата"
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:97
-#. i18n: ectx: property (whatsThis), widget (KPushButton, bRemove)
-#: rc.cpp:301
-msgid ""
-"Press this button to remove the currently selected scheme from the list."
-msgstr ""
-"Притиснете го ова копче за да ја отстраните тековно избраната шема од "
-"листата."
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:128
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:308
-#, no-c-format
-msgid ""
-"You can use the following placeholders:\n"
-"%t: Title\n"
-"%A: Album\n"
-"%a: Artist\n"
-"%T: Track\n"
-"%c: Comment"
-msgstr ""
-
-#. i18n: file: trackpickerdialogbase.ui:64
-#. i18n: ectx: property (title), widget (QGroupBox, trackInfoGroup)
-#: rc.cpp:319
-msgid "Select Best Possible Match"
-msgstr "Избери најдобро можно совпаѓање"
 
 #: scrobbleconfigdlg.cpp:30
 msgid "Configure scrobbling..."
@@ -1696,10 +1367,6 @@ msgstr "Сите видливи"
 msgid "Search:"
 msgstr "Барање:"
 
-#: slideraction.cpp:65
-msgid "Seeking is not supported in this file with your audio settings."
-msgstr ""
-
 #: slider.cpp:235
 msgid "100%"
 msgstr ""
@@ -1722,6 +1389,10 @@ msgstr ""
 
 #: slider.cpp:240
 msgid "0%"
+msgstr ""
+
+#: slideraction.cpp:65
+msgid "Seeking is not supported in this file with your audio settings."
 msgstr ""
 
 #: splashscreen.cpp:34
@@ -1775,9 +1446,225 @@ msgstr "Дали сакате да ги зачувате вашите проме
 msgid "Save Changes"
 msgstr "Зачувај промени"
 
+#. i18n: ectx: property (text), widget (QLabel, fileNameLabel)
+#: tageditor.ui:19
+#, fuzzy
+#| msgid "&File name:"
+msgid "F&ile name:"
+msgstr "&Име на датотеката:"
+
+#. i18n: ectx: property (text), widget (QLabel, trackLabel)
+#: tageditor.ui:29
+#, fuzzy
+#| msgid "T&rack:"
+msgid "T&rack:"
+msgstr "&Песна:"
+
+#. i18n: ectx: property (text), widget (QLabel, artistNameLabel)
+#: tageditor.ui:39
+msgid "&Artist name:"
+msgstr "Име н&а изведувачот:"
+
+#. i18n: ectx: property (text), widget (QLabel, albumNameLabel)
+#: tageditor.ui:49
+msgid "Album &name:"
+msgstr "Име &на албумот:"
+
+#. i18n: ectx: property (text), widget (QLabel, genreLabel)
+#: tageditor.ui:59
+msgid "&Genre:"
+msgstr "&Жанр:"
+
+#. i18n: ectx: property (text), widget (QLabel, yearLabel)
+#: tageditor.ui:72
+msgid "&Year:"
+msgstr "&Година:"
+
+#. i18n: ectx: property (text), widget (QLabel, lengthLabel)
+#: tageditor.ui:88
+#, fuzzy
+#| msgid "Length:"
+msgid "&Length:"
+msgstr "Должина:"
+
+#. i18n: ectx: property (text), widget (QLabel, bitrateLabel)
+#: tageditor.ui:98
+#, fuzzy
+#| msgid "Bitrate:"
+msgid "&Bitrate:"
+msgstr "Брзина на битови:"
+
+#. i18n: ectx: property (text), widget (QLabel, commentLabel)
+#: tageditor.ui:108
+msgid "&Comment:"
+msgstr "&Коментар:"
+
+#. i18n: ectx: property (text), widget (QLabel, trackNameLabel)
+#: tageditor.ui:176
+#, fuzzy
+#| msgid "&Track name:"
+msgid "Trac&k name:"
+msgstr "Име на песна&та:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, artistNameEnable)
+#. i18n: ectx: property (text), widget (QCheckBox, trackNameEnable)
+#. i18n: ectx: property (text), widget (QCheckBox, albumNameEnable)
+#. i18n: ectx: property (text), widget (QCheckBox, genreEnable)
+#. i18n: ectx: property (text), widget (QCheckBox, trackEnable)
+#. i18n: ectx: property (text), widget (QCheckBox, yearEnable)
+#. i18n: ectx: property (text), widget (QCheckBox, commentEnable)
+#: tageditor.ui:186 tageditor.ui:196 tageditor.ui:203 tageditor.ui:210
+#: tageditor.ui:217 tageditor.ui:224 tageditor.ui:231
+msgid "Enable"
+msgstr "Овозможи"
+
 #: tagguesserconfigdlg.cpp:26
 msgid "Tag Guesser Configuration"
 msgstr "Конфигурација на погодувачот на ознаки"
+
+#. i18n: ectx: property (toolTip), widget (QTreeView, lvSchemes)
+#: tagguesserconfigdlgwidget.ui:18
+msgid "Currently used file name schemes"
+msgstr "Тековно користени шеми за датотечни имиња"
+
+#. i18n: ectx: property (whatsThis), widget (QTreeView, lvSchemes)
+#: tagguesserconfigdlgwidget.ui:29
+#, fuzzy, no-c-format
+#| msgid ""
+#| "Here you can see the currently configured file name schemes which the "
+#| "\"Suggest\" button in the tag editor uses to extract tag information from "
+#| "a file name. Each string may contain one of the following placeholders:"
+#| "<ul>\n"
+#| "<li>%t: Title</li>\n"
+#| "<li>%a: Artist</li>\n"
+#| "<li>%A: Album</li>\n"
+#| "<li>%T: Track</li>\n"
+#| "<li>%c: Comment</li>\n"
+#| "</ul>\n"
+#| "For example, the file name scheme \"[%T] %a - %t\" would match \"[01] "
+#| "Deep Purple - Smoke on the water\" but not \"(Deep Purple) Smoke on the "
+#| "water\". For that second name, you would use the scheme \"(%a) %t\".<p/>\n"
+#| "Note that the order in which the schemes appear in the list is relevant, "
+#| "since the tag guesser will go through the list from the top to the "
+#| "bottom, and use the first matching scheme."
+msgid ""
+"Here you can see the currently configured file name schemes which the "
+"\"Guess Tag Information From File Name\" entry in the song's context menu "
+"uses to extract tag information from a file name. Each string may contain "
+"one of the following placeholders:<ul>\n"
+"<li>%t: Title</li>\n"
+"<li>%a: Artist</li>\n"
+"<li>%A: Album</li>\n"
+"<li>%T: Track</li>\n"
+"<li>%c: Comment</li>\n"
+"</ul>\n"
+"For example, the file name scheme \"[%T] %a - %t\" would match \"[01] Deep "
+"Purple - Smoke on the water\" but not \"(Deep Purple) Smoke on the water\". "
+"For that second name, you would use the scheme \"(%a) %t\".<p/>\n"
+"Note that the order in which the schemes appear in the list is relevant, "
+"since the tag guesser will go through the list from the top to the bottom, "
+"and use the first matching scheme."
+msgstr ""
+"Тука можете да ги видите тековно конфигурираните шеми за датотечно име кои "
+"копчето „Предлог“  ги користи во уредникот на ознаки за да извлече "
+"информација за ознака од името на датотеката. Секоја низа може да содржи "
+"еден од следните држачи на место:<ul>\n"
+"<li>%t: Наслов</li>\n"
+"<li>%a: Изведувач</li>\n"
+"<li>%A: Албум</li>\n"
+"<li>%T: Песна</li>\n"
+"<li>%c: Коментар</li>\n"
+"</ul>\n"
+"На пример, шемата за име на датотека „[%T] %a - %t“ би соодветствувала на "
+"„[01] Deep Purple - Smoke on the water“, но не и на „(Deep Purple) Smoke on "
+"the water“. За второво име би требало да ја употребите шемата „(%a) %t“.<p/"
+">\n"
+"Забележете дека редоследот по кој шемите се појавуваат во листите е битен, "
+"бидејќи погодувачот на ознаки ќе оди низ листата од горе до долу и ќе ја "
+"употреби првата соодветна шема."
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, bMoveUp)
+#: tagguesserconfigdlgwidget.ui:42
+msgid "Move scheme up"
+msgstr "Премести ја шемата нагоре"
+
+#. i18n: ectx: property (whatsThis), widget (QToolButton, bMoveUp)
+#: tagguesserconfigdlgwidget.ui:45
+msgid ""
+"Press this button to move the currently selected scheme one step upwards."
+msgstr ""
+"Притиснете го ова копче да ја преместите тековно избраната шема еден чекор "
+"нагоре."
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, bMoveDown)
+#: tagguesserconfigdlgwidget.ui:55
+msgid "Move scheme down"
+msgstr "Премести ја шемата надолу"
+
+#. i18n: ectx: property (whatsThis), widget (QToolButton, bMoveDown)
+#: tagguesserconfigdlgwidget.ui:58
+msgid ""
+"Press this button to move the currently selected scheme one step downwards."
+msgstr ""
+"Притиснете го ова копче да ја преместите тековно избраната шема еден чекор "
+"надолу."
+
+#. i18n: ectx: property (toolTip), widget (KPushButton, bAdd)
+#: tagguesserconfigdlgwidget.ui:68
+msgid "Add a new scheme"
+msgstr "Додај нова шема"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, bAdd)
+#: tagguesserconfigdlgwidget.ui:71
+msgid "Press this button to add a new file name scheme to the end of the list."
+msgstr ""
+"Притиснете го ова копче за да додадете нова шема за име на датотека на "
+"крајот на листата."
+
+#. i18n: ectx: property (text), widget (KPushButton, bAdd)
+#: tagguesserconfigdlgwidget.ui:74
+msgid "&Add"
+msgstr "&Додај"
+
+#. i18n: ectx: property (toolTip), widget (KPushButton, bModify)
+#: tagguesserconfigdlgwidget.ui:81
+msgid "Modify scheme"
+msgstr "Измени ја шемата"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, bModify)
+#: tagguesserconfigdlgwidget.ui:84
+msgid "Press this button to modify the currently selected scheme."
+msgstr "Притиснете го ова копче за да ја измените тековно избраната шема."
+
+#. i18n: ectx: property (text), widget (KPushButton, bModify)
+#: tagguesserconfigdlgwidget.ui:87
+msgid "&Modify"
+msgstr "&Измени"
+
+#. i18n: ectx: property (toolTip), widget (KPushButton, bRemove)
+#: tagguesserconfigdlgwidget.ui:94
+msgid "Remove scheme"
+msgstr "Отстрани ја шемата"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, bRemove)
+#: tagguesserconfigdlgwidget.ui:97
+msgid ""
+"Press this button to remove the currently selected scheme from the list."
+msgstr ""
+"Притиснете го ова копче за да ја отстраните тековно избраната шема од "
+"листата."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: tagguesserconfigdlgwidget.ui:128
+#, no-c-format
+msgid ""
+"You can use the following placeholders:\n"
+"%t: Title\n"
+"%A: Album\n"
+"%a: Artist\n"
+"%T: Track\n"
+"%c: Comment"
+msgstr ""
 
 #: tagrenameroptions.cpp:97
 #, fuzzy
@@ -1820,6 +1707,11 @@ msgstr "Грешка"
 #: trackpickerdialog.cpp:53
 msgid "Internet Tag Guesser"
 msgstr "Интернет погодувач на ознаки"
+
+#. i18n: ectx: property (title), widget (QGroupBox, trackInfoGroup)
+#: trackpickerdialogbase.ui:64
+msgid "Select Best Possible Match"
+msgstr "Избери најдобро можно совпаѓање"
 
 #: treeviewitemplaylist.cpp:47
 msgid "artist"
@@ -1880,15 +1772,15 @@ msgstr "Жанрови"
 msgid "Mute/Unmute"
 msgstr ""
 
-#: volumepopupbutton.cpp:119 volumepopupbutton.cpp:129
-msgid "(muted)"
-msgstr ""
-
 #: volumepopupbutton.cpp:118 volumepopupbutton.cpp:129
 #, fuzzy, kde-format
 #| msgid "Volume Up"
 msgid "Volume: %1% %2"
 msgstr "Зголеми гласност"
+
+#: volumepopupbutton.cpp:119 volumepopupbutton.cpp:129
+msgid "(muted)"
+msgstr ""
 
 #: webimagefetcher.cpp:84
 #, fuzzy
@@ -1909,10 +1801,6 @@ msgstr ""
 #: webimagefetcher.cpp:189
 msgid "Cover fetched from <a href='http://last.fm/'>last.fm</a>."
 msgstr ""
-
-#: playlistcollection.h:183
-msgid "Playlist"
-msgstr "Листа со нумери"
 
 #~ msgid "Cover Downloader"
 #~ msgstr "Симнувач на обвивки"

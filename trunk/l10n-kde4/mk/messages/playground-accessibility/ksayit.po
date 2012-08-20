@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksayit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-19 05:51+0200\n"
+"POT-Creation-Date: 2012-08-20 05:53+0200\n"
 "PO-Revision-Date: 2006-07-15 15:48+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -19,6 +19,14 @@ msgstr ""
 "X-Generator: KBabel 1.11.2\n"
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Ивица Јовановиќ"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "idisaster@gmail.com"
 
 #: contextmenuhandler.cpp:96
 msgid "New"
@@ -36,10 +44,9 @@ msgstr "Избриши..."
 msgid "Overview"
 msgstr "Преглед"
 
-#. i18n: file: DocTreeView.ui:45
 #. i18n: ectx: property (text), widget (K3ListView)
-#: contextmenuhandler.cpp:174 doctreeviewimpl.cpp:49 doctreeviewimpl.cpp:810
-#: doctreeviewimpl.cpp:1629 rc.cpp:14
+#: contextmenuhandler.cpp:174 DocTreeView.ui:45 doctreeviewimpl.cpp:49
+#: doctreeviewimpl.cpp:810 doctreeviewimpl.cpp:1629
 msgid "Chapter"
 msgstr "Поглавје"
 
@@ -119,18 +126,26 @@ msgstr ""
 msgid "XML-Error"
 msgstr ""
 
-#. i18n: file: DocTreeView.ui:56
+#. i18n: ectx: property (windowTitle), widget (QWidget)
+#: DocTreeView.ui:30
+msgid "Document Contents"
+msgstr "Содржина на документот"
+
 #. i18n: ectx: property (text), widget (K3ListView)
-#: doctreeviewimpl.cpp:50 rc.cpp:17
+#: DocTreeView.ui:56 doctreeviewimpl.cpp:50
 msgid "Info"
 msgstr "Информации"
 
-#. i18n: file: DocTreeView.ui:67
 #. i18n: ectx: property (text), widget (K3ListView)
-#: doctreeviewimpl.cpp:51 rc.cpp:20
+#: DocTreeView.ui:67 doctreeviewimpl.cpp:51
 #, fuzzy
 msgid "Page"
 msgstr "Пауза"
+
+#. i18n: ectx: property (text), widget (K3ListView)
+#: DocTreeView.ui:78
+msgid "Hidden"
+msgstr "Скриено"
 
 #: doctreeviewimpl.cpp:110
 msgid "unnamed"
@@ -245,17 +260,30 @@ msgstr "Издание"
 msgid "New Section Title"
 msgstr "Нов наслов на дел"
 
-#: ksayitbookmarkhandler.cpp:59
-msgid "This is not a KSayIt bookmark.\n"
-msgstr "Ова не е обележувач од KSayIt.\n"
+#. i18n: ectx: property (windowTitle), widget (QWidget)
+#: fx_setup.ui:16
+msgid "Effect Stack Setup"
+msgstr "Поставување на синџир со ефекти"
 
-#: ksayitbookmarkhandler.cpp:77
-msgid "Bookmark not found"
-msgstr "Обележувачот не е најден"
+#. i18n: ectx: property (text), widget (QLabel)
+#: fx_setup.ui:46
+msgid "Available:"
+msgstr "Достапно:"
 
-#: ksayitbookmarkhandler.cpp:88
-msgid "untitled"
-msgstr "Неименувано"
+#. i18n: ectx: property (text), widget (QLabel)
+#: fx_setup.ui:153
+msgid "Active:"
+msgstr "Активно:"
+
+#. i18n: ectx: property (toolTip), widget (QListBox)
+#: fx_setup.ui:167
+msgid "Doubleclick opens the setup dialog."
+msgstr "Двоен клинк го отвора дијалогот за поставување."
+
+#. i18n: ectx: property (text), widget (QPushButton)
+#: fx_setup.ui:204
+msgid "Remove All"
+msgstr "Отстрани ги сите"
 
 #: ksayit.cpp:168 ksayitsystemtray.cpp:59
 msgid "Say"
@@ -345,6 +373,28 @@ msgstr "синтетизирање..."
 msgid "Paused..."
 msgstr "Паузирано..."
 
+#: ksayitbookmarkhandler.cpp:59
+msgid "This is not a KSayIt bookmark.\n"
+msgstr "Ова не е обележувач од KSayIt.\n"
+
+#: ksayitbookmarkhandler.cpp:77
+msgid "Bookmark not found"
+msgstr "Обележувачот не е најден"
+
+#: ksayitbookmarkhandler.cpp:88
+msgid "untitled"
+msgstr "Неименувано"
+
+#. i18n: ectx: Menu (action)
+#: ksayitui.rc:14
+msgid "&Action"
+msgstr "&Дејство"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: ksayitui.rc:27
+msgid "Main Toolbar"
+msgstr ""
+
 #: main.cpp:34
 msgid "KSayIt - A Text To Speech frontend for KDE"
 msgstr "KSayIt - преден крај на KDE за текст-во-говор"
@@ -360,70 +410,6 @@ msgstr ""
 #: main.cpp:44
 msgid "Robert Vogl"
 msgstr ""
-
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Ивица Јовановиќ"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "idisaster@gmail.com"
-
-#. i18n: file: ksayitui.rc:14
-#. i18n: ectx: Menu (action)
-#: rc.cpp:5
-msgid "&Action"
-msgstr "&Дејство"
-
-#. i18n: file: ksayitui.rc:27
-#. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:8
-msgid "Main Toolbar"
-msgstr ""
-
-#. i18n: file: DocTreeView.ui:30
-#. i18n: ectx: property (windowTitle), widget (QWidget)
-#: rc.cpp:11
-msgid "Document Contents"
-msgstr "Содржина на документот"
-
-#. i18n: file: DocTreeView.ui:78
-#. i18n: ectx: property (text), widget (K3ListView)
-#: rc.cpp:23
-msgid "Hidden"
-msgstr "Скриено"
-
-#. i18n: file: fx_setup.ui:16
-#. i18n: ectx: property (windowTitle), widget (QWidget)
-#: rc.cpp:26
-msgid "Effect Stack Setup"
-msgstr "Поставување на синџир со ефекти"
-
-#. i18n: file: fx_setup.ui:46
-#. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:29
-msgid "Available:"
-msgstr "Достапно:"
-
-#. i18n: file: fx_setup.ui:153
-#. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:32
-msgid "Active:"
-msgstr "Активно:"
-
-#. i18n: file: fx_setup.ui:167
-#. i18n: ectx: property (toolTip), widget (QListBox)
-#: rc.cpp:35
-msgid "Doubleclick opens the setup dialog."
-msgstr "Двоен клинк го отвора дијалогот за поставување."
-
-#. i18n: file: fx_setup.ui:204
-#. i18n: ectx: property (text), widget (QPushButton)
-#: rc.cpp:38
-msgid "Remove All"
-msgstr "Отстрани ги сите"
 
 #: saxhandler.cpp:129
 msgid "Fatal error while parsing XML-Paragraph:\n"
