@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-20 04:27+0200\n"
+"POT-Creation-Date: 2012-08-23 10:32+0200\n"
 "PO-Revision-Date: 2007-02-28 14:27+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -38,13 +38,14 @@ msgstr ""
 #: filter_evolution_v3.cpp:91 filter_kmail_maildir.cpp:84 filter_oe.cpp:66
 #: filter_opera.cpp:173 filter_plain.cpp:44 filter_pmail.cpp:56
 #: filter_sylpheed.cpp:117 filter_thebat.cpp:81 filter_thunderbird.cpp:143
+#: filterbalsa.cpp:89
 msgid "No directory selected."
 msgstr "Нема избрана папка."
 
 #: filter_evolution.cpp:74 filter_evolution_v2.cpp:96
 #: filter_evolution_v3.cpp:99 filter_kmail_maildir.cpp:92 filter_opera.cpp:181
 #: filter_plain.cpp:54 filter_sylpheed.cpp:125 filter_thebat.cpp:89
-#: filter_thunderbird.cpp:151
+#: filter_thunderbird.cpp:151 filterbalsa.cpp:97
 msgid "No files found for import."
 msgstr "Нема пронајдени папки за внесување."
 
@@ -52,7 +53,7 @@ msgstr "Нема пронајдени папки за внесување."
 #: filter_evolution_v3.cpp:110 filter_kmail_maildir.cpp:102
 #: filter_mailapp.cpp:134 filter_mbox.cpp:137 filter_opera.cpp:138
 #: filter_plain.cpp:83 filter_pmail.cpp:79 filter_sylpheed.cpp:137
-#: filter_thebat.cpp:100 filter_thunderbird.cpp:180
+#: filter_thebat.cpp:100 filter_thunderbird.cpp:180 filterbalsa.cpp:108
 #, kde-format
 msgid "Finished importing emails from %1"
 msgstr "Завршив со внесување е-пораки од %1"
@@ -74,7 +75,7 @@ msgstr "Внесувам е-пораки од %1..."
 #: filter_evolution.cpp:209 filter_evolution_v2.cpp:129
 #: filter_evolution_v3.cpp:113 filter_kmail_maildir.cpp:104
 #: filter_opera.cpp:140 filter_plain.cpp:85 filter_sylpheed.cpp:139
-#: filter_thebat.cpp:102 filter_thunderbird.cpp:182
+#: filter_thebat.cpp:102 filter_thunderbird.cpp:182 filterbalsa.cpp:111
 #, kde-format
 msgid "1 duplicate message not imported"
 msgid_plural "%1 duplicate messages not imported"
@@ -112,6 +113,7 @@ msgstr "Почеток на внесување на датотеката %1..."
 #: filter_kmail_maildir.cpp:108 filter_mailapp.cpp:144 filter_mbox.cpp:144
 #: filter_oe.cpp:112 filter_opera.cpp:199 filter_plain.cpp:88
 #: filter_sylpheed.cpp:143 filter_thebat.cpp:106 filter_thunderbird.cpp:186
+#: filterbalsa.cpp:115
 msgid "Finished import, canceled by user."
 msgstr "Внесувањето е завршено, прекинато од корисникот."
 
@@ -139,13 +141,13 @@ msgstr ""
 "можно да се обнови структурата на папките, тие ќе бидат внесени под "
 "„Evolution-Import“.</p>"
 
-#: filter_evolution_v3.cpp:164
+#: filter_evolution_v3.cpp:164 filterbalsa.cpp:162
 msgctxt "define folder name where we import evolution mails"
 msgid "Evolution-Import"
 msgstr ""
 
 #: filter_evolution_v3.cpp:187 filter_kmail_maildir.cpp:175
-#: filter_sylpheed.cpp:200 filter_thebat.cpp:214
+#: filter_sylpheed.cpp:200 filter_thebat.cpp:214 filterbalsa.cpp:185
 #, kde-format
 msgid "Import folder %1..."
 msgstr "Внесување на папката %1..."
@@ -153,7 +155,7 @@ msgstr "Внесување на папката %1..."
 #: filter_evolution_v3.cpp:196 filter_evolution_v3.cpp:201
 #: filter_kmail_maildir.cpp:183 filter_kmail_maildir.cpp:188
 #: filter_plain.cpp:70 filter_plain.cpp:74 filter_sylpheed.cpp:214
-#: filter_sylpheed.cpp:219
+#: filter_sylpheed.cpp:219 filterbalsa.cpp:194 filterbalsa.cpp:199
 #, kde-format
 msgid "Could not import %1"
 msgstr "Не можев да ја внесам %1"
@@ -596,6 +598,29 @@ msgstr ""
 "папка). Ако изберете, ќе добиете многу нови папки.</p><p>Бидејќи е возможно "
 "да се обнови структурата на папките, тие ќе бидат внесени во „Thunderbird-"
 "Import“.</p>"
+
+#: filterbalsa.cpp:27
+#, fuzzy
+#| msgid "Import Evolution 1.x Local Mails and Folder Structure"
+msgid "Import Balsa Local Mails and Folder Structure"
+msgstr "Внесување на локални пораки и структури на папки од Evolution 1.x"
+
+#: filterbalsa.cpp:29
+#, fuzzy
+#| msgid ""
+#| "<p><b>Evolution 1.x import filter</b></p><p>Select the base directory of "
+#| "Evolution's mails (usually ~/evolution/local).</p><p>Since it is possible "
+#| "to recreate the folder structure, the folders will be stored under: "
+#| "\"Evolution-Import\".</p>"
+msgid ""
+"<p><b>Balsa import filter</b></p><p>Select the base directory of your local "
+"Balsa mailfolder (usually ~/mail/).</p><p>Since it is possible to recreate "
+"the folder structure, the folders will be stored under: \"Balsa-Import\".</p>"
+msgstr ""
+"<p><b>Филтер за внесување од Evolution 1.x</b></p><p>Изберете ја основната "
+"папка за пораки на Evolution (обично ~/evolution/local).</p><p>Бидејќи е "
+"можно да се обнови структурата на папките, тие ќе бидат внесени под "
+"„Evolution-Import“.</p>"
 
 #: filters.cpp:154
 #, fuzzy, kde-format
