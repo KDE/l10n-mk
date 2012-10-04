@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-09-27 04:43+0200\n"
+"POT-Creation-Date: 2012-10-04 04:25+0200\n"
 "PO-Revision-Date: 2007-02-17 11:32+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1017,7 +1017,9 @@ msgid "Documents Modified on Disk"
 msgstr "Документите се изменети на диск"
 
 #: app/katemwmodonhddialog.cpp:67
-msgid "&Ignore"
+#, fuzzy
+#| msgid "&Ignore"
+msgid "&Ignore Changes"
 msgstr "&Игнорирај"
 
 #: app/katemwmodonhddialog.cpp:69
@@ -1025,30 +1027,25 @@ msgid "&Reload"
 msgstr ""
 
 #: app/katemwmodonhddialog.cpp:76
-msgid ""
-"Removes the modified flag from the selected documents and closes the dialog "
-"if there are no more unhandled documents."
+msgid "Remove modified flag from selected documents"
 msgstr ""
-"Ја отстранува ознаката „изменето“ од избраните документи и го затвора "
-"дијалогот ако нема повеќе ракувани документи."
 
-#: app/katemwmodonhddialog.cpp:79
-msgid ""
-"Overwrite selected documents, discarding the disk changes and closes the "
-"dialog if there are no more unhandled documents."
+#: app/katemwmodonhddialog.cpp:78
+#, fuzzy
+#| msgid ""
+#| "Overwrite selected documents, discarding the disk changes and closes the "
+#| "dialog if there are no more unhandled documents."
+msgid "Overwrite selected documents, discarding disk changes"
 msgstr ""
 "Запишува врз избраните документи отфрлајќи ги промените на диск и го затвора "
 "дијалогот ако нема повеќе ракувани документи."
 
-#: app/katemwmodonhddialog.cpp:82
-msgid ""
-"Reloads the selected documents from disk and closes the dialog if there are "
-"no more unhandled documents."
-msgstr ""
-"Ги превчитува избраните документи од диск и го затвора дијалогот ако нема "
-"повеќе ракувани документи."
+#: app/katemwmodonhddialog.cpp:80
+#, fuzzy
+msgid "Reload selected documents from disk"
+msgstr "Ги затвора сите отворени документи."
 
-#: app/katemwmodonhddialog.cpp:96
+#: app/katemwmodonhddialog.cpp:93
 #, fuzzy
 #| msgid ""
 #| "<qt>The documents listed below has changed on disk.<p>Select one or more "
@@ -1061,31 +1058,31 @@ msgstr ""
 "повеќе и притиснете на копче за дејство сѐ додека листата не се испразни.</"
 "qt>"
 
-#: app/katemwmodonhddialog.cpp:103
+#: app/katemwmodonhddialog.cpp:100
 msgid "Filename"
 msgstr "Име на датотека"
 
-#: app/katemwmodonhddialog.cpp:103
+#: app/katemwmodonhddialog.cpp:100
 msgid "Status on Disk"
 msgstr "Статус на диск"
 
-#: app/katemwmodonhddialog.cpp:109
+#: app/katemwmodonhddialog.cpp:106
 msgid "Modified"
 msgstr "Изменето"
 
-#: app/katemwmodonhddialog.cpp:109
+#: app/katemwmodonhddialog.cpp:106
 msgid "Created"
 msgstr "Креирано"
 
-#: app/katemwmodonhddialog.cpp:109
+#: app/katemwmodonhddialog.cpp:106
 msgid "Deleted"
 msgstr "Избришано"
 
-#: app/katemwmodonhddialog.cpp:124
+#: app/katemwmodonhddialog.cpp:121
 msgid "&View Difference"
 msgstr "Пре&гледај разлика"
 
-#: app/katemwmodonhddialog.cpp:127
+#: app/katemwmodonhddialog.cpp:124
 #, fuzzy
 #| msgid ""
 #| "Calculates the difference between the the editor contents and the disk "
@@ -1100,7 +1097,7 @@ msgstr ""
 "за избраниот документ и ја прикажува истата со стандардната апликација. "
 "Потребна е програмата diff(1)."
 
-#: app/katemwmodonhddialog.cpp:187
+#: app/katemwmodonhddialog.cpp:184
 #, kde-format
 msgid ""
 "Could not save the document \n"
@@ -1109,7 +1106,7 @@ msgstr ""
 "Не можев да го зачувам документот \n"
 "„%1“"
 
-#: app/katemwmodonhddialog.cpp:285
+#: app/katemwmodonhddialog.cpp:282
 msgid ""
 "The diff command failed. Please make sure that diff(1) is installed and in "
 "your PATH."
@@ -1117,15 +1114,15 @@ msgstr ""
 "Наредбата diff не успеа. Осигурете се дека diff(1) е инсталиран и се наоѓа "
 "во вашата $PATH."
 
-#: app/katemwmodonhddialog.cpp:287
+#: app/katemwmodonhddialog.cpp:284
 msgid "Error Creating Diff"
 msgstr "Грешка при креирање на разлика"
 
-#: app/katemwmodonhddialog.cpp:296
+#: app/katemwmodonhddialog.cpp:293
 msgid "Besides white space changes, the files are identical."
 msgstr ""
 
-#: app/katemwmodonhddialog.cpp:297
+#: app/katemwmodonhddialog.cpp:294
 msgid "Diff Output"
 msgstr ""
 
@@ -2359,6 +2356,20 @@ msgstr ""
 "преместите\n"
 "на следната/претходната рамка.</p>\n"
 
+#~ msgid ""
+#~ "Removes the modified flag from the selected documents and closes the "
+#~ "dialog if there are no more unhandled documents."
+#~ msgstr ""
+#~ "Ја отстранува ознаката „изменето“ од избраните документи и го затвора "
+#~ "дијалогот ако нема повеќе ракувани документи."
+
+#~ msgid ""
+#~ "Reloads the selected documents from disk and closes the dialog if there "
+#~ "are no more unhandled documents."
+#~ msgstr ""
+#~ "Ги превчитува избраните документи од диск и го затвора дијалогот ако нема "
+#~ "повеќе ракувани документи."
+
 #, fuzzy
 #~| msgid "Create a new document"
 #~ msgid "Cannot go to the document"
@@ -2439,10 +2450,6 @@ msgstr ""
 #~| msgid "&Save Selected"
 #~ msgid "Close Selected"
 #~ msgstr "З&ачувај избрани"
-
-#, fuzzy
-#~ msgid "Close selected open documents."
-#~ msgstr "Ги затвора сите отворени документи."
 
 #, fuzzy
 #~| msgid "&Save Selected"
