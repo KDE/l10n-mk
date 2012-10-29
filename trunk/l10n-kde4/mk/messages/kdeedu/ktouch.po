@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktouch\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-10-26 02:45+0200\n"
+"POT-Creation-Date: 2012-10-29 04:09+0100\n"
 "PO-Revision-Date: 2006-04-25 16:51+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -83,8 +83,11 @@ msgstr ""
 #: src/editor/courseeditor.cpp:342
 #, fuzzy, kde-format
 #| msgid "Characters: "
-msgid "%1 Characters"
-msgstr "Знаци: "
+msgid "%1 Character"
+msgid_plural "%1 Characters"
+msgstr[0] "Знаци: "
+msgstr[1] "Знаци: "
+msgstr[2] "Знаци: "
 
 #: src/editor/keyboardlayouteditor.cpp:84 src/editor/resourceeditor.cpp:195
 #: src/editor/resourceeditor.cpp:277
@@ -181,7 +184,7 @@ msgid "Error while deleting keyboard layout"
 msgstr "неименуван распоред на тастатура"
 
 #: src/editor/resourceeditor.cpp:226
-msgid "The selected file couldn't be imported."
+msgid "The selected file could not be imported."
 msgstr ""
 
 #: src/editor/resourceeditor.cpp:260
@@ -325,79 +328,79 @@ msgstr ""
 msgid "The ID of the last used profile."
 msgstr ""
 
-#: src/main.cpp:26
+#: src/main.cpp:28
 msgid "Learn and practice typewriting"
 msgstr ""
 
-#: src/main.cpp:33
+#: src/main.cpp:35
 #, fuzzy
 #| msgid "Typing line"
 msgid "Typewriting Trainer"
 msgstr "Линија за пишување"
 
-#: src/main.cpp:38
+#: src/main.cpp:40
 msgid ""
 "Copyright (C) 2011-2012 by Sebastian Gottfried\n"
 "Copyright (C) 2000-2007 by Håvard Frøiland and Andreas Nicolai"
 msgstr ""
 
-#: src/main.cpp:45
+#: src/main.cpp:47
 msgid "Sebastian Gottfried"
 msgstr ""
 
-#: src/main.cpp:45
+#: src/main.cpp:47
 #, fuzzy
 #| msgid "Current maintainer and programmer"
 msgid "Current maintainer"
 msgstr "Тековен одржувач и програмер"
 
-#: src/main.cpp:46
+#: src/main.cpp:48
 msgid "Andreas Nicolai"
 msgstr ""
 
-#: src/main.cpp:46
+#: src/main.cpp:48
 #, fuzzy
 #| msgid "Current maintainer and programmer"
 msgid "Former maintainer and programmer"
 msgstr "Тековен одржувач и програмер"
 
-#: src/main.cpp:47
+#: src/main.cpp:49
 msgid "Håvard Frøiland"
 msgstr ""
 
-#: src/main.cpp:47
+#: src/main.cpp:49
 #, fuzzy
 #| msgid "Original author, project admin"
 msgid "Original author"
 msgstr "Оригинален автор, администратор на проектот"
 
-#: src/main.cpp:49
+#: src/main.cpp:51
 msgid "David Vignoni"
 msgstr ""
 
-#: src/main.cpp:49
+#: src/main.cpp:51
 msgid "Creator of the SVG icon"
 msgstr "Креатор на SVG-иконата"
 
-#: src/main.cpp:50
+#: src/main.cpp:52
 msgid "Anne-Marie Mahfouf"
 msgstr ""
 
-#: src/main.cpp:50
+#: src/main.cpp:52
 #, fuzzy
 #| msgid "Lots of patches, fixes, updates"
 msgid "Lots of patches, fixes and updates"
 msgstr "Многу закрпи, поправки, ажурирања"
 
-#: src/main.cpp:51
+#: src/main.cpp:53
 msgid "All the creators of training and keyboard files"
 msgstr ""
 
-#: src/main.cpp:55
+#: src/main.cpp:57
 msgid "use a QGLWidget for the viewport"
 msgstr ""
 
-#: src/main.cpp:56
+#: src/main.cpp:58
 #, fuzzy
 #| msgid "untitled keyboard layout"
 msgid "launch the course and keyboard layout editor"
@@ -409,10 +412,23 @@ msgstr "неименуван распоред на тастатура"
 msgid "Training"
 msgstr "&Вежбање"
 
+#: src/mainwindow.cpp:138
+#, fuzzy
+#| msgid "Training Statistics"
+msgid "Training Settings"
+msgstr "Статистика за вежбите"
+
 #: src/mainwindow.cpp:139
 #, fuzzy
 #| msgid "Color Settings"
 msgid "Colors"
+msgstr ""
+"Поставувања\n"
+"за боите"
+
+#: src/mainwindow.cpp:139
+#, fuzzy
+msgid "Color Settings"
 msgstr ""
 "Поставувања\n"
 "за боите"
@@ -577,7 +593,7 @@ msgid "Lessons are unlocked as your typing skills improve over time."
 msgstr ""
 
 #: src/qml/ProfileForm.qml:97
-msgid "I'm an experienced machine typist and want to improve my skills"
+msgid "I am an experienced machine typist and want to improve my skills"
 msgstr ""
 
 #: src/qml/ProfileForm.qml:113
@@ -650,11 +666,11 @@ msgid "Next Lesson"
 msgstr ""
 
 #: src/qml/ScoreScreen.qml:340
-msgid "Congratulations! You've passed the lesson."
+msgid "Congratulations! You have passed the lesson."
 msgstr ""
 
 #: src/qml/ScoreScreen.qml:341
-msgid "You haven't passed the lesson."
+msgid "You have not passed the lesson."
 msgstr ""
 
 #: src/qml/ScoreScreen.qml:353
@@ -1248,12 +1264,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Поставувања за\n"
 #~ "тастатурата"
-
-#, fuzzy
-#~ msgid "Sound Settings"
-#~ msgstr ""
-#~ "Поставувања\n"
-#~ "за боите"
 
 #~ msgid "Level:  Correct/Total chars: %1/%2  Words: %3"
 #~ msgstr "Ниво:  Точни/вкупно знаци: %1/%2  Зборови: %3"
@@ -1885,9 +1895,6 @@ msgstr ""
 
 #~ msgid "&Remember level for next program start"
 #~ msgstr "Запамти го нивото за следното ста&ртување на програмата"
-
-#~ msgid "Training Statistics"
-#~ msgstr "Статистика за вежбите"
 
 #~ msgid "Current Training Session"
 #~ msgstr "Тековна сесија за вежбање"
