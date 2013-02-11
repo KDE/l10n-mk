@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krandr\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 03:51+0100\n"
+"POT-Creation-Date: 2012-08-20 05:29+0200\n"
 "PO-Revision-Date: 2010-01-30 17:19+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -150,6 +150,93 @@ msgstr[0] "Преостанува %1 секунда:"
 msgstr[1] "Преостануваат %1 секунди:"
 msgstr[2] "Преостануваат %1 секунди:"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, LegacyRandRConfigBase)
+#: legacyrandrconfigbase.ui:14
+msgid "Screen Resize and Rotate Settings"
+msgstr "Поставуања за менување големина и ротација на екранот"
+
+#. i18n: ectx: property (whatsThis), widget (QWidget, LegacyRandRConfigBase)
+#: legacyrandrconfigbase.ui:17
+msgid ""
+"If this option is enabled, options set by the system tray applet will be "
+"saved and loaded when KDE starts instead of being temporary."
+msgstr ""
+"Ако е избрана оваа опција, опциите поставени од аплетот во системската лента "
+"ќе бидат зачувани и вчитани при стартот на KDE, наместо да бидат привремени."
+
+#. i18n: ectx: property (text), widget (QLabel, screenLabel)
+#: legacyrandrconfigbase.ui:25
+msgid "Settings for screen:"
+msgstr "Поставувања за екранот:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, screenCombo)
+#: legacyrandrconfigbase.ui:38
+msgid ""
+"The screen whose settings you would like to change can be selected using "
+"this drop-down list."
+msgstr ""
+"Екранот, чии што поставувања сакате да ги измените, може да го изберете со "
+"оваа паѓачка листа."
+
+#. i18n: ectx: property (text), widget (QLabel, sizeLabel)
+#: legacyrandrconfigbase.ui:49
+msgid "Screen size:"
+msgstr "Големина на екранот:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, sizeCombo)
+#: legacyrandrconfigbase.ui:62
+msgid ""
+"The size, otherwise known as the resolution, of your screen can be selected "
+"from this drop-down list."
+msgstr ""
+"Големината на вашиот екран, попозната како резолуција, може да биде избрана "
+"од оваа паѓачка листа."
+
+#. i18n: ectx: property (text), widget (QLabel, rateLabel)
+#: legacyrandrconfigbase.ui:73
+msgid "Refresh rate:"
+msgstr "Брзина на освежување:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, rateCombo)
+#: legacyrandrconfigbase.ui:83
+msgid ""
+"The refresh rate of your screen can be selected from this drop-down list."
+msgstr ""
+"Од оваа паѓачка листа може да се избере брзината на освежување на вашиот "
+"екран."
+
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, rotationGroup)
+#: legacyrandrconfigbase.ui:98
+msgid ""
+"The options in this section allow you to change the rotation of your screen."
+msgstr ""
+"Опциите во овој дел ви овозможуваат да ја смените ротацијата на вашиот екран."
+
+#. i18n: ectx: property (title), widget (QGroupBox, rotationGroup)
+#: legacyrandrconfigbase.ui:101
+msgid "Orientation (degrees counterclockwise)"
+msgstr "Ориентација (степени обратно од стрелката на часовникот)"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, applyOnStartup)
+#: legacyrandrconfigbase.ui:108
+msgid ""
+"If this option is enabled the size and orientation settings will be used "
+"when KDE starts."
+msgstr ""
+"Ако е избрана оваа опција ќе бидат користени поставувањата за големина и "
+"ориентација кога ќе стартува KDE."
+
+#. i18n: ectx: property (text), widget (QCheckBox, applyOnStartup)
+#: legacyrandrconfigbase.ui:111
+msgid "Apply settings on KDE startup"
+msgstr "Примени поставувања при стартувањето на KDE"
+
+#. i18n: ectx: property (text), widget (QCheckBox, syncTrayApp)
+#: legacyrandrconfigbase.ui:118
+msgid "Allow tray application to change startup settings"
+msgstr ""
+"Дозволи на апликацијата од сис. лента да ги измени стартните поставувања"
+
 #: legacyrandrscreen.cpp:140
 #, kde-format
 msgid ""
@@ -275,6 +362,32 @@ msgctxt "Automatic refresh rate configuration"
 msgid "Auto"
 msgstr "Автоматски"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, OutputConfigBase)
+#: outputconfigbase.ui:26
+msgid "Output Config"
+msgstr "Излезна конфигурација"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: outputconfigbase.ui:32
+msgid "Size:"
+msgstr "Големина:"
+
+#. i18n: ectx: property (text), widget (QLabel, rateLabel)
+#: outputconfigbase.ui:48
+msgid "Refresh:"
+msgstr "Освежување:"
+
+#. i18n: ectx: property (text), widget (QLabel, orientationLabel)
+#: outputconfigbase.ui:64
+msgid "Orientation:"
+msgstr "Ориентација:"
+
+#. i18n: ectx: property (text), widget (QLabel, positionLabel)
+#: outputconfigbase.ui:80
+msgctxt "Position of the screen"
+msgid "Position:"
+msgstr "Позиција:"
+
 #: outputgraphicsitem.cpp:72
 #, kde-format
 msgctxt "Configuration options. Output name, width x height (refresh rate Hz)"
@@ -378,7 +491,8 @@ msgstr ""
 "дали сакате да ја задржите оваа конфигурација. Екранот ќе се врати на "
 "претходните поставувања за 15 секунди."
 
-#: randrconfig.cpp:61
+#. i18n: ectx: property (text), widget (QPushButton, saveAsDefaultButton)
+#: randrconfig.cpp:61 randrconfigbase.ui:81
 msgid "Save as Default"
 msgstr ""
 
@@ -430,101 +544,34 @@ msgstr ""
 "Менувањето на конфигурацијата не успеа. Молам нагодете ја рачно вашата "
 "датотека за конфифурација xorg.conf."
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, RandRConfigBase)
+#: randrconfigbase.ui:14
+msgid "Display Configuration (X11 Resize, Rotate and Reflect)"
+msgstr "Конфигурација на екранот (X11 Resize, Rotate and Reflect)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, unifyOutputs)
+#: randrconfigbase.ui:27
+#, fuzzy
+#| msgid "Unify Outputs"
+msgid "Unify outputs"
+msgstr "Спои ги излезите"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: randrconfigbase.ui:52
+#, fuzzy
+#| msgid "Unify Outputs"
+msgid "Primary output:"
+msgstr "Спои ги излезите"
+
+#. i18n: ectx: property (text), widget (QPushButton, identifyOutputsButton)
+#: randrconfigbase.ui:74
+msgid "Identify Outputs"
+msgstr "Идентификувај ги излезите"
+
 #: randrdisplay.cpp:49
 #, kde-format
 msgid "X Resize and Rotate extension version %1.%2"
 msgstr "X-екстензија за менување на големина и ориентација, верзија %1.%2"
-
-#~ msgid "Screen Resize and Rotate Settings"
-#~ msgstr "Поставуања за менување големина и ротација на екранот"
-
-#~ msgid ""
-#~ "If this option is enabled, options set by the system tray applet will be "
-#~ "saved and loaded when KDE starts instead of being temporary."
-#~ msgstr ""
-#~ "Ако е избрана оваа опција, опциите поставени од аплетот во системската "
-#~ "лента ќе бидат зачувани и вчитани при стартот на KDE, наместо да бидат "
-#~ "привремени."
-
-#~ msgid "Settings for screen:"
-#~ msgstr "Поставувања за екранот:"
-
-#~ msgid ""
-#~ "The screen whose settings you would like to change can be selected using "
-#~ "this drop-down list."
-#~ msgstr ""
-#~ "Екранот, чии што поставувања сакате да ги измените, може да го изберете "
-#~ "со оваа паѓачка листа."
-
-#~ msgid "Screen size:"
-#~ msgstr "Големина на екранот:"
-
-#~ msgid ""
-#~ "The size, otherwise known as the resolution, of your screen can be "
-#~ "selected from this drop-down list."
-#~ msgstr ""
-#~ "Големината на вашиот екран, попозната како резолуција, може да биде "
-#~ "избрана од оваа паѓачка листа."
-
-#~ msgid "Refresh rate:"
-#~ msgstr "Брзина на освежување:"
-
-#~ msgid ""
-#~ "The refresh rate of your screen can be selected from this drop-down list."
-#~ msgstr ""
-#~ "Од оваа паѓачка листа може да се избере брзината на освежување на вашиот "
-#~ "екран."
-
-#~ msgid ""
-#~ "The options in this section allow you to change the rotation of your "
-#~ "screen."
-#~ msgstr ""
-#~ "Опциите во овој дел ви овозможуваат да ја смените ротацијата на вашиот "
-#~ "екран."
-
-#~ msgid "Orientation (degrees counterclockwise)"
-#~ msgstr "Ориентација (степени обратно од стрелката на часовникот)"
-
-#~ msgid ""
-#~ "If this option is enabled the size and orientation settings will be used "
-#~ "when KDE starts."
-#~ msgstr ""
-#~ "Ако е избрана оваа опција ќе бидат користени поставувањата за големина и "
-#~ "ориентација кога ќе стартува KDE."
-
-#~ msgid "Apply settings on KDE startup"
-#~ msgstr "Примени поставувања при стартувањето на KDE"
-
-#~ msgid "Allow tray application to change startup settings"
-#~ msgstr ""
-#~ "Дозволи на апликацијата од сис. лента да ги измени стартните поставувања"
-
-#~ msgid "Output Config"
-#~ msgstr "Излезна конфигурација"
-
-#~ msgid "Size:"
-#~ msgstr "Големина:"
-
-#~ msgid "Refresh:"
-#~ msgstr "Освежување:"
-
-#~ msgid "Orientation:"
-#~ msgstr "Ориентација:"
-
-#~ msgctxt "Position of the screen"
-#~ msgid "Position:"
-#~ msgstr "Позиција:"
-
-#~ msgid "Display Configuration (X11 Resize, Rotate and Reflect)"
-#~ msgstr "Конфигурација на екранот (X11 Resize, Rotate and Reflect)"
-
-#, fuzzy
-#~| msgid "Unify Outputs"
-#~ msgid "Unify outputs"
-#~ msgstr "Спои ги излезите"
-
-#~ msgid "Identify Outputs"
-#~ msgstr "Идентификувај ги излезите"
 
 #~ msgid "Screen Settings"
 #~ msgstr "Поставувања за екранот"

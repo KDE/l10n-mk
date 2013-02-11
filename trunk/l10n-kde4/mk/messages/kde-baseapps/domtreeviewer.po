@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: domtreeviewer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 03:39+0100\n"
+"POT-Creation-Date: 2012-08-20 03:23+0200\n"
 "PO-Revision-Date: 2006-05-16 14:12+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -18,6 +18,16 @@ msgstr ""
 "X-Generator: KBabel 1.10.2\n"
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: attributeeditwidget.ui:24
+msgid "Attribute &name:"
+msgstr "&Име на атрибут:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: attributeeditwidget.ui:42
+msgid "Attribute &value:"
+msgstr "&Вредност на атрибут:"
 
 #: domtreecommands.cpp:33
 msgid "No error"
@@ -239,6 +249,123 @@ msgstr "<Кликнете за да додадете>"
 msgid "Delete Attributes"
 msgstr "Избриши атрибути"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, DOMTreeViewBase)
+#: domtreeviewbase.ui:19
+msgid "DOM Tree Viewer"
+msgstr "Прегледувач на DOM-стебло"
+
+#. i18n: ectx: property (text), widget (KPushButton, messageListBtn)
+#: domtreeviewbase.ui:61
+msgid "&List"
+msgstr "Пре&листај"
+
+#. i18n: ectx: property (text), widget (KPushButton, messageHideBtn)
+#: domtreeviewbase.ui:92
+msgid "H&ide"
+msgstr "С&криј"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, m_listView)
+#: domtreeviewbase.ui:115
+msgid "DOM Tree"
+msgstr "DOM-стебло"
+
+#. i18n: ectx: attribute (title), widget (QWidget, domTab)
+#: domtreeviewbase.ui:127
+#, fuzzy
+#| msgid "DOM Node Info"
+msgid "DOM Node"
+msgstr "Информации за DOM-јазол"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2_3)
+#: domtreeviewbase.ui:138
+msgid "Node &value:"
+msgstr "&Вредност на јазол:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2_2)
+#: domtreeviewbase.ui:151
+msgid "Node &type:"
+msgstr "Тип на &јазол:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: domtreeviewbase.ui:164
+msgid "Namespace &URI:"
+msgstr "URI на &именски простор:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: domtreeviewbase.ui:177
+msgid "Node &name:"
+msgstr "И&ме на јазол:"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, nodeAttributes)
+#: domtreeviewbase.ui:249
+msgid "Name"
+msgstr "Име"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, nodeAttributes)
+#. i18n: ectx: property (text), widget (QTreeWidget, cssProperties)
+#: domtreeviewbase.ui:254 domtreeviewbase.ui:344
+msgid "Value"
+msgstr "Вредност"
+
+#. i18n: ectx: property (text), widget (QPushButton, applyContent)
+#: domtreeviewbase.ui:287
+msgid "Appl&y"
+msgstr "П&римени"
+
+#. i18n: ectx: attribute (title), widget (QWidget, cssTab)
+#: domtreeviewbase.ui:320
+msgid "Computed Style"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QTreeWidget, cssProperties)
+#: domtreeviewbase.ui:339
+msgid "Property"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, styleSheetsTab)
+#: domtreeviewbase.ui:353
+msgid "Stylesheets"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QTreeWidget, styleSheetsTree)
+#: domtreeviewbase.ui:366
+msgid "1"
+msgstr ""
+
+#. i18n: ectx: Menu (file)
+#: domtreeviewerui.rc:4
+#, fuzzy
+msgid "&File"
+msgstr "С&криј"
+
+#. i18n: ectx: Menu (edit)
+#: domtreeviewerui.rc:6
+#, fuzzy
+msgid "&Edit"
+msgstr "Пре&листај"
+
+#. i18n: ectx: Menu (view)
+#: domtreeviewerui.rc:8
+#, fuzzy
+msgid "&View"
+msgstr "С&криј"
+
+#. i18n: ectx: Menu (go)
+#: domtreeviewerui.rc:19
+msgid "&Go"
+msgstr "О&ди"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: domtreeviewerui.rc:23
+#, fuzzy
+msgid "Main Toolbar"
+msgstr "Додатен алатник"
+
+#. i18n: ectx: ToolBar (treeToolBar)
+#: domtreeviewerui.rc:25
+msgid "Tree Toolbar"
+msgstr "Алатник за стебла"
+
 #: domtreewindow.cpp:62
 #, fuzzy
 #| msgid "Message Log"
@@ -309,87 +436,34 @@ msgstr "Нов &текстуален јазол..."
 msgid "Delete attributes"
 msgstr "Брише атрибути"
 
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: elementeditwidget.ui:24
+msgid "Element &name:"
+msgstr "&Име на елементот:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: elementeditwidget.ui:47
+msgid "Element &namespace:"
+msgstr "Име&нски простор на елемент:"
+
 #: plugin_domtreeviewer.cpp:24
 msgid "Show &DOM Tree"
 msgstr "Прикажи DOM-сте&бло"
 
-#~ msgid "Attribute &name:"
-#~ msgstr "&Име на атрибут:"
+#. i18n: ectx: Menu (tools)
+#: plugin_domtreeviewer.rc:4
+msgid "&Tools"
+msgstr ""
 
-#~ msgid "Attribute &value:"
-#~ msgstr "&Вредност на атрибут:"
+#. i18n: ectx: ToolBar (extraToolBar)
+#: plugin_domtreeviewer.rc:8
+msgid "Extra Toolbar"
+msgstr "Додатен алатник"
 
-#~ msgid "DOM Tree Viewer"
-#~ msgstr "Прегледувач на DOM-стебло"
-
-#~ msgid "&List"
-#~ msgstr "Пре&листај"
-
-#~ msgid "H&ide"
-#~ msgstr "С&криј"
-
-#~ msgid "DOM Tree"
-#~ msgstr "DOM-стебло"
-
-#, fuzzy
-#~| msgid "DOM Node Info"
-#~ msgid "DOM Node"
-#~ msgstr "Информации за DOM-јазол"
-
-#~ msgid "Node &value:"
-#~ msgstr "&Вредност на јазол:"
-
-#~ msgid "Node &type:"
-#~ msgstr "Тип на &јазол:"
-
-#~ msgid "Namespace &URI:"
-#~ msgstr "URI на &именски простор:"
-
-#~ msgid "Node &name:"
-#~ msgstr "И&ме на јазол:"
-
-#~ msgid "Name"
-#~ msgstr "Име"
-
-#~ msgid "Value"
-#~ msgstr "Вредност"
-
-#~ msgid "Appl&y"
-#~ msgstr "П&римени"
-
-#, fuzzy
-#~ msgid "&File"
-#~ msgstr "С&криј"
-
-#, fuzzy
-#~ msgid "&Edit"
-#~ msgstr "Пре&листај"
-
-#, fuzzy
-#~ msgid "&View"
-#~ msgstr "С&криј"
-
-#~ msgid "&Go"
-#~ msgstr "О&ди"
-
-#, fuzzy
-#~ msgid "Main Toolbar"
-#~ msgstr "Додатен алатник"
-
-#~ msgid "Tree Toolbar"
-#~ msgstr "Алатник за стебла"
-
-#~ msgid "Element &name:"
-#~ msgstr "&Име на елементот:"
-
-#~ msgid "Element &namespace:"
-#~ msgstr "Име&нски простор на елемент:"
-
-#~ msgid "Extra Toolbar"
-#~ msgstr "Додатен алатник"
-
-#~ msgid "Edit &text for text node:"
-#~ msgstr "У&реди текст за јазолот:"
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: texteditwidget.ui:19
+msgid "Edit &text for text node:"
+msgstr "У&реди текст за јазолот:"
 
 #~ msgid "DOM Tree Options"
 #~ msgstr "Опции на DOM-стебло"

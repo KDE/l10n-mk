@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 03:52+0100\n"
+"POT-Creation-Date: 2012-10-30 05:29+0100\n"
 "PO-Revision-Date: 2000-10-02 22:00+0100\n"
 "Last-Translator: Damjan Janevski <miopa@usa.net>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -54,8 +54,10 @@ msgstr "Избриши рамка"
 msgid "Insert Page Style"
 msgstr "KWord - Вметни табела"
 
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: part/commands/KWPageInsertCommand.cpp:72
 #: part/dialogs/KWInsertPageDialog.cpp:32
+#: part/dialogs/KWInsertPageDialog.ui:20
 #, fuzzy
 msgid "Insert Page"
 msgstr "KWord - Вметни табела"
@@ -75,10 +77,63 @@ msgstr "Параметри на рамка"
 msgid "Move shape to storyline"
 msgstr ""
 
-#: part/dialogs/KWFrameConnectSelector.cpp:85
+#. i18n: ectx: property (text), widget (QLabel, columnsLabel)
+#: part/dialogs/KWDocumentColumns.ui:64
+#, fuzzy
+msgid "Columns:"
+msgstr "Колона:"
+
+#. i18n: ectx: property (text), widget (QLabel, spacingLabel)
+#: part/dialogs/KWDocumentColumns.ui:74
+#, fuzzy
+msgid "Column spacing:"
+msgstr "Избриши колона:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: part/dialogs/KWFrameConnectSelector.cpp:85 part/dialogs/KWStatistics.ui:136
 #, fuzzy
 msgid "Text"
 msgstr "Рамка за текст %1"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: part/dialogs/KWFrameConnectSelector.ui:19
+#, fuzzy
+msgid "Storyline name:"
+msgstr "Менаџер на стил"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: part/dialogs/KWFrameConnectSelector.ui:41
+msgid "Shape connects to:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QTreeWidget, framesList)
+#: part/dialogs/KWFrameConnectSelector.ui:64
+#, fuzzy
+msgid "Storylines"
+msgstr "Форма"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, framesList)
+#: part/dialogs/KWFrameConnectSelector.ui:69
+#, fuzzy
+msgid "Page"
+msgstr "&Број на страна"
+
+#. i18n: ectx: property (toolTip), widget (QTreeWidget, framesList)
+#: part/dialogs/KWFrameConnectSelector.ui:72
+#, fuzzy
+msgid "First page number"
+msgstr "&Број на страна"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, framesList)
+#: part/dialogs/KWFrameConnectSelector.ui:77
+#, fuzzy
+msgid "Count"
+msgstr "Колона:"
+
+#. i18n: ectx: property (toolTip), widget (QTreeWidget, framesList)
+#: part/dialogs/KWFrameConnectSelector.ui:80
+msgid "Number of shapes in this storyline"
+msgstr ""
 
 #: part/dialogs/KWFrameDialog.cpp:38 part/KWView.cpp:249
 #, fuzzy
@@ -110,6 +165,197 @@ msgstr "Геометрија"
 msgid "Frame changes"
 msgstr "Менаџер на стил"
 
+#. i18n: ectx: property (text), widget (QCheckBox, protectSize)
+#: part/dialogs/KWFrameGeometry.ui:17
+msgid "Protect size and position"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, positionGB)
+#: part/dialogs/KWFrameGeometry.ui:24
+#, fuzzy
+msgid "Position"
+msgstr "&Слика..."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: part/dialogs/KWFrameGeometry.ui:30
+msgid "X:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: part/dialogs/KWFrameGeometry.ui:73
+msgid "Y:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: part/dialogs/KWFrameGeometry.ui:93
+msgid "Width:"
+msgstr "Ширина:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: part/dialogs/KWFrameGeometry.ui:119
+msgid "Height:"
+msgstr "Висина:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, marginsGB)
+#: part/dialogs/KWFrameGeometry.ui:142
+#, fuzzy
+msgid "Text Margins"
+msgstr "Матрица"
+
+#. i18n: ectx: property (text), widget (QCheckBox, synchronize)
+#: part/dialogs/KWFrameGeometry.ui:161
+#, fuzzy
+msgid "Synchronize changes"
+msgstr "Менаџер на стил"
+
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: part/dialogs/KWFrameGeometry.ui:168
+msgid "Bottom:"
+msgstr "Долу:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: part/dialogs/KWFrameGeometry.ui:178
+msgid "Top:"
+msgstr "Горе:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: part/dialogs/KWFrameGeometry.ui:188
+msgid "Right:"
+msgstr "Десно:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: part/dialogs/KWFrameGeometry.ui:198
+msgid "Left:"
+msgstr "Лево:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: part/dialogs/KWFrameRunaroundProperties.ui:23
+msgid "Layout of Text in Other Text-shapes"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, runThrough)
+#: part/dialogs/KWFrameRunaroundProperties.ui:35
+#, fuzzy
+msgid "Text will run through this shape"
+msgstr "Низ другите рамки"
+
+#. i18n: ectx: property (text), widget (QRadioButton, runAround)
+#: part/dialogs/KWFrameRunaroundProperties.ui:42
+#, fuzzy
+msgid "Text will run around this shape"
+msgstr "Не заобиколува други рамки"
+
+#. i18n: ectx: property (text), widget (QRadioButton, noRunaround)
+#: part/dialogs/KWFrameRunaroundProperties.ui:49
+#, fuzzy
+msgid "Text will not run around this shape"
+msgstr "Не заобиколува други рамки"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: part/dialogs/KWFrameRunaroundProperties.ui:59
+#, fuzzy
+msgid "Run Around Side"
+msgstr "Текст заобиколува"
+
+#. i18n: ectx: property (text), widget (QRadioButton, left)
+#: part/dialogs/KWFrameRunaroundProperties.ui:71
+#, fuzzy
+msgid "Left"
+msgstr "Лево:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, right)
+#: part/dialogs/KWFrameRunaroundProperties.ui:78
+#, fuzzy
+msgid "Right"
+msgstr "Десно:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, longest)
+#: part/dialogs/KWFrameRunaroundProperties.ui:85
+#, fuzzy
+msgid "Longest side"
+msgstr "Текст заобиколува"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: part/dialogs/KWFrameRunaroundProperties.ui:103
+msgid "Distance Between Shape and Text:"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, textGroupBox)
+#: part/dialogs/KWGeneralFrameProperties.ui:31
+msgid "If Text Overflows"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, createNewPage)
+#: part/dialogs/KWGeneralFrameProperties.ui:46
+msgid "Create a new page"
+msgstr "Создади нова страница"
+
+#. i18n: ectx: property (text), widget (QRadioButton, resizeLastFrame)
+#: part/dialogs/KWGeneralFrameProperties.ui:53
+#, fuzzy
+#| msgid "Resize last frame"
+msgid "Resize last shape"
+msgstr "Промени ја големината на последната рамка"
+
+#. i18n: ectx: property (text), widget (QRadioButton, noExtraText)
+#: part/dialogs/KWGeneralFrameProperties.ui:60
+msgid "Do not show the extra text"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, newPageGroupBox)
+#: part/dialogs/KWGeneralFrameProperties.ui:83
+msgid "When Creating a Page"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, noFollowup)
+#: part/dialogs/KWGeneralFrameProperties.ui:89
+#, fuzzy
+msgid "Do not create a followup shape"
+msgstr "Создади рамка за табела"
+
+#. i18n: ectx: property (text), widget (QRadioButton, reconnect)
+#: part/dialogs/KWGeneralFrameProperties.ui:96
+#, fuzzy
+msgid "Reconnect shape to current flow"
+msgstr "Преповрзи рамка"
+
+#. i18n: ectx: property (text), widget (QRadioButton, placeCopy)
+#: part/dialogs/KWGeneralFrameProperties.ui:103
+#, fuzzy
+msgid "Copy this shape"
+msgstr "Поврзи рамка"
+
+#. i18n: ectx: property (text), widget (QCheckBox, evenOdd)
+#: part/dialogs/KWGeneralFrameProperties.ui:128
+msgid "Only on even/odd pages"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, syncPos)
+#: part/dialogs/KWGeneralFrameProperties.ui:137
+msgid "Keep position in sync"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, mirrorPos)
+#: part/dialogs/KWGeneralFrameProperties.ui:165
+msgid "Mirror position on page"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, protectContent)
+#: part/dialogs/KWGeneralFrameProperties.ui:192
+#, fuzzy
+msgid "Protect content"
+msgstr "Спои ќелии"
+
+#. i18n: ectx: property (text), widget (QCheckBox, isCopyOfPrevious)
+#: part/dialogs/KWGeneralFrameProperties.ui:199
+msgid "Shape is a copy of the previous shape"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, keepAspectRatio)
+#: part/dialogs/KWGeneralFrameProperties.ui:219
+msgid "Retain original aspect ratio"
+msgstr ""
+
 #: part/dialogs/KWHeaderFooter.cpp:114 part/dialogs/KWHeaderFooter.cpp:126
 #, fuzzy
 msgid "Total Size:"
@@ -119,12 +365,71 @@ msgstr "Спои ќелии"
 msgid "Gap:"
 msgstr ""
 
-#: part/dialogs/KWPageSettingsDialog.cpp:42
+#. i18n: ectx: property (title), widget (QGroupBox, headerGB)
+#: part/dialogs/KWHeaderFooter.ui:20
+#, fuzzy
+msgid "Header"
+msgstr "Заглавје"
+
+#. i18n: ectx: property (text), widget (QCheckBox, headerEvenOdd)
+#. i18n: ectx: property (text), widget (QCheckBox, footerEvenOdd)
+#: part/dialogs/KWHeaderFooter.ui:32 part/dialogs/KWHeaderFooter.ui:90
+msgid "Different for even/odd pages"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, headerFixed)
+#: part/dialogs/KWHeaderFooter.ui:39
+msgid "Fixed header size"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: part/dialogs/KWHeaderFooter.ui:46 part/dialogs/KWHeaderFooter.ui:104
+msgid "Minimum Frame Size:"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, footerGB)
+#: part/dialogs/KWHeaderFooter.ui:78
+#, fuzzy
+msgid "Footer"
+msgstr "Подножје"
+
+#. i18n: ectx: property (text), widget (QCheckBox, footerFixed)
+#: part/dialogs/KWHeaderFooter.ui:97
+msgid "Fixed footer size"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, beforeCurrent)
+#: part/dialogs/KWInsertPageDialog.ui:26
+msgid "Before current page"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, afterCurrent)
+#: part/dialogs/KWInsertPageDialog.ui:33
+#, fuzzy
+msgid "After current page"
+msgstr "KWord - Вметни табела"
+
+#. i18n: ectx: property (text), widget (QRadioButton, afterLast)
+#: part/dialogs/KWInsertPageDialog.ui:40
+#, fuzzy
+msgid "After last page"
+msgstr "KWord - Вметни табела"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: part/dialogs/KWInsertPageDialog.ui:58
+#, fuzzy
+msgid "Page style:"
+msgstr "Име на група рамки"
+
+#. i18n: ectx: attribute (title), widget (QWidget, columnsTab)
+#: part/dialogs/KWPageSettingsDialog.cpp:42 part/dialogs/KWStartupWidget.ui:43
 #, fuzzy
 msgid "Columns"
 msgstr "Колона:"
 
-#: part/dialogs/KWPageSettingsDialog.cpp:44
+#. i18n: ectx: attribute (title), widget (QWidget, headerFooter)
+#: part/dialogs/KWPageSettingsDialog.cpp:44 part/dialogs/KWStartupWidget.ui:48
 #, fuzzy
 msgid "Header/Footer"
 msgstr "Конфигурирај крајна-нота"
@@ -135,9 +440,115 @@ msgstr "Конфигурирај крајна-нота"
 msgid "Change Page Properties"
 msgstr "Параметри на рамка"
 
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mainText)
+#: part/dialogs/KWStartupWidget.ui:21
+msgid ""
+"<p><b>Check this option to have a text area created automatically for each "
+"page.</b><br>\n"
+"For letters and notes with one main text, possibly on several pages, you "
+"should keep this checked. You should only uncheck it if you want to define "
+"completely where each text frame should be positioned.</p>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, mainText)
+#: part/dialogs/KWStartupWidget.ui:24
+msgid "Provide main text area"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, sizeTab)
+#: part/dialogs/KWStartupWidget.ui:38
+msgid "Page Size && Margins"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, createButton)
+#: part/dialogs/KWStartupWidget.ui:90 part/KWView.cpp:323
+#, fuzzy
+msgid "Create"
+msgstr "&Создади табела"
+
 #: part/dialogs/KWStatistics.cpp:269
 #, kde-format
 msgid "approximately %1"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: part/dialogs/KWStatistics.ui:24
+#, fuzzy
+msgid "General"
+msgstr "Интеграл"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: part/dialogs/KWStatistics.ui:30
+#, fuzzy
+msgid "Number of pages:"
+msgstr "Број на редови:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: part/dialogs/KWStatistics.ui:53
+#, fuzzy
+msgid "Number of frames:"
+msgstr "Број на редови:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: part/dialogs/KWStatistics.ui:76
+#, fuzzy
+msgid "Number of pictures:"
+msgstr "Број на редови:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: part/dialogs/KWStatistics.ui:99
+#, fuzzy
+msgid "Number of tables:"
+msgstr "Број на редови:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, footEndNotes)
+#: part/dialogs/KWStatistics.ui:142
+msgid "Include text from foot- and endnotes"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_25)
+#: part/dialogs/KWStatistics.ui:149
+#, fuzzy
+msgid "Words:"
+msgstr "KWord"
+
+#. i18n: ectx: property (text), widget (QLabel, label_23)
+#: part/dialogs/KWStatistics.ui:176
+msgid "Sentences:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_15)
+#: part/dialogs/KWStatistics.ui:203
+#, fuzzy
+msgid "Syllables:"
+msgstr "Табели"
+
+#. i18n: ectx: property (text), widget (QLabel, label_17)
+#: part/dialogs/KWStatistics.ui:230
+msgid "Lines:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_19)
+#: part/dialogs/KWStatistics.ui:257
+msgid "Characters including spaces:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_20)
+#: part/dialogs/KWStatistics.ui:284
+msgid "Characters without spaces:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_21)
+#. i18n: ectx: property (text), item, widget (KComboBox, statistics)
+#: part/dialogs/KWStatistics.ui:311 part/dockers/KWStatisticsDocker.ui:51
+#, fuzzy
+#| msgid "&Formatting Characters"
+msgid "East Asian characters"
+msgstr "Знаци за &форматирање"
+
+#. i18n: ectx: property (text), widget (QLabel, label_27)
+#: part/dialogs/KWStatistics.ui:338
+msgid "Flesch reading ease:"
 msgstr ""
 
 #: part/dialogs/KWStatisticsDialog.cpp:29
@@ -148,6 +559,59 @@ msgstr "&Стилист..."
 
 #: part/dockers/KWRdfDocker.cpp:50
 msgid "RDF"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, autoRefresh)
+#: part/dockers/KWRdfDocker.ui:34 part/dockers/KWStatisticsDocker.ui:84
+#, fuzzy
+msgid "Automatically update"
+msgstr "Самопоправање"
+
+#. i18n: ectx: property (text), widget (QToolButton, refresh)
+#: part/dockers/KWRdfDocker.ui:41
+msgid "update"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:21
+#, fuzzy
+msgid "Words"
+msgstr "KWord"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:26
+msgid "Sentences"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:31
+#, fuzzy
+msgid "Syllables"
+msgstr "Табели"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:36
+msgid "Lines"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:41
+msgid "Characters incl. spaces"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:46
+msgid "Characters without spaces"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:56
+msgid "Flesch reading ease"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, footEndNotes)
+#: part/dockers/KWStatisticsDocker.ui:91
+msgid "Only count main text"
 msgstr ""
 
 #: part/frames/KWTextFrameSet.cpp:94
@@ -477,14 +941,15 @@ msgstr ""
 msgid "ODF Support"
 msgstr ""
 
-#: part/KWAboutData.h:43
-msgid "Pierre Stirnweiss"
-msgstr ""
-
-#: part/KWAboutData.h:43 part/KWAboutData.h:44
+#. i18n: ectx: Menu (Changes)
+#: part/KWAboutData.h:43 part/KWAboutData.h:44 part/kword.rc:127
 #, fuzzy
 msgid "Change Tracking"
 msgstr "Проред"
+
+#: part/KWAboutData.h:43
+msgid "Pierre Stirnweiss"
+msgstr ""
 
 #: part/KWAboutData.h:44
 msgid "Ganesh Paramasivam"
@@ -640,6 +1105,139 @@ msgid ""
 "the appropriate application."
 msgstr ""
 
+#. i18n: ectx: Menu (file)
+#: part/kword.rc:3 part/kword_readonly.rc:3
+#, fuzzy
+msgid "&File"
+msgstr "Проверка на правопис"
+
+#. i18n: ectx: Menu (edit)
+#: part/kword.rc:8 part/kword_readonly.rc:6
+#, fuzzy
+msgid "&Edit"
+msgstr "&Крајна-нота"
+
+#. i18n: ectx: Menu (view)
+#: part/kword.rc:25 part/kword_readonly.rc:12
+#, fuzzy
+msgid "&View"
+msgstr "Надолу"
+
+#. i18n: ectx: Menu (view)
+#. i18n: ectx: Menu (view_displaymodes)
+#: part/kword.rc:30 part/kword_readonly.rc:14
+#, fuzzy
+msgid "&Display Mode"
+msgstr "&Број на страна"
+
+#. i18n: ectx: Menu (insert)
+#: part/kword.rc:50
+#, fuzzy
+msgctxt "Insert menu"
+msgid "&Insert"
+msgstr "Вметни ред"
+
+#. i18n: ectx: Menu (semantic_object_menu)
+#: part/kword.rc:63
+msgid "Semantic Object"
+msgstr ""
+
+#. i18n: ectx: Menu (format)
+#: part/kword.rc:79
+msgid "F&ormat"
+msgstr "Формат"
+
+#. i18n: ectx: Menu (shapes)
+#: part/kword.rc:95
+msgid "Shapes"
+msgstr ""
+
+#. i18n: ectx: Menu (tools)
+#: part/kword.rc:117 part/kword_readonly.rc:29
+msgid "&Tools"
+msgstr ""
+
+#. i18n: ectx: Menu (SpellCheck)
+#: part/kword.rc:118
+#, fuzzy
+msgid "Spellcheck"
+msgstr "Проверка на правопис"
+
+#. i18n: ectx: Menu (AutoFormat)
+#: part/kword.rc:123
+msgid "Autocorrection"
+msgstr "Самопоправање"
+
+#. i18n: ectx: Menu (settings)
+#: part/kword.rc:142
+#, fuzzy
+msgid "&Settings"
+msgstr "Поставки на рамка"
+
+#. i18n: ectx: ToolBar (edit_toolbar)
+#: part/kword.rc:154 part/kword_readonly.rc:34
+#, fuzzy
+msgid "Edit"
+msgstr "Уреди &текст"
+
+#. i18n: ectx: ToolBar (table_toolbar)
+#: part/kword.rc:166
+msgid "Table"
+msgstr "Табела"
+
+#. i18n: ectx: ToolBar (insert_toolbar)
+#: part/kword.rc:176
+#, fuzzy
+msgid "Insert"
+msgstr "Вметни ред"
+
+#. i18n: ectx: ToolBar (paragraph_toolbar)
+#: part/kword.rc:185
+#, fuzzy
+msgid "Paragraph"
+msgstr "&Параграф..."
+
+#. i18n: ectx: ToolBar (format_toolbar)
+#: part/kword.rc:199
+#, fuzzy
+msgid "Font"
+msgstr "&Фуснота"
+
+#. i18n: ectx: ToolBar (charformat_toolbar)
+#: part/kword.rc:205
+#, fuzzy
+#| msgid "F&ormat"
+msgid "Format"
+msgstr "Формат"
+
+#. i18n: ectx: ToolBar (border_toolbar)
+#: part/kword.rc:215
+msgid "Borders"
+msgstr "Рабови:"
+
+#. i18n: ectx: ToolBar (mailmerge_toolbar)
+#: part/kword.rc:227
+#, fuzzy
+msgid "MailMerge"
+msgstr "Семејство"
+
+#. i18n: ectx: ToolBar (formula_toolbar)
+#: part/kword.rc:232
+msgid "Formula"
+msgstr "Формула"
+
+#. i18n: ectx: Menu (check_spell_list)
+#: part/kword.rc:309
+#, fuzzy
+msgid "Spell Check Result"
+msgstr "Проверка на правопис"
+
+#. i18n: ectx: Menu (variable_list)
+#: part/kword.rc:338
+#, fuzzy
+msgid "Change Variable To"
+msgstr "&Променливи по избор..."
+
 #: part/KWStatusBar.cpp:38
 msgid "Modified"
 msgstr ""
@@ -792,11 +1390,6 @@ msgstr "Најди наназад"
 #| msgid "&Variable"
 msgid "Variable"
 msgstr "Променлива"
-
-#: part/KWView.cpp:323
-#, fuzzy
-msgid "Create"
-msgstr "&Создади табела"
 
 #: part/KWView.cpp:331
 #, fuzzy
@@ -1028,250 +1621,6 @@ msgstr "&Создади табела"
 #, fuzzy
 msgid "File to open"
 msgstr "Датотека за отварање"
-
-#, fuzzy
-#~ msgid "Columns:"
-#~ msgstr "Колона:"
-
-#, fuzzy
-#~ msgid "Column spacing:"
-#~ msgstr "Избриши колона:"
-
-#, fuzzy
-#~ msgid "Storyline name:"
-#~ msgstr "Менаџер на стил"
-
-#, fuzzy
-#~ msgid "Storylines"
-#~ msgstr "Форма"
-
-#, fuzzy
-#~ msgid "Page"
-#~ msgstr "&Број на страна"
-
-#, fuzzy
-#~ msgid "First page number"
-#~ msgstr "&Број на страна"
-
-#, fuzzy
-#~ msgid "Count"
-#~ msgstr "Колона:"
-
-#, fuzzy
-#~ msgid "Position"
-#~ msgstr "&Слика..."
-
-#~ msgid "Width:"
-#~ msgstr "Ширина:"
-
-#~ msgid "Height:"
-#~ msgstr "Висина:"
-
-#, fuzzy
-#~ msgid "Text Margins"
-#~ msgstr "Матрица"
-
-#~ msgid "Bottom:"
-#~ msgstr "Долу:"
-
-#~ msgid "Top:"
-#~ msgstr "Горе:"
-
-#~ msgid "Right:"
-#~ msgstr "Десно:"
-
-#~ msgid "Left:"
-#~ msgstr "Лево:"
-
-#, fuzzy
-#~ msgid "Text will run through this shape"
-#~ msgstr "Низ другите рамки"
-
-#, fuzzy
-#~ msgid "Text will run around this shape"
-#~ msgstr "Не заобиколува други рамки"
-
-#, fuzzy
-#~ msgid "Text will not run around this shape"
-#~ msgstr "Не заобиколува други рамки"
-
-#, fuzzy
-#~ msgid "Run Around Side"
-#~ msgstr "Текст заобиколува"
-
-#, fuzzy
-#~ msgid "Left"
-#~ msgstr "Лево:"
-
-#, fuzzy
-#~ msgid "Right"
-#~ msgstr "Десно:"
-
-#, fuzzy
-#~ msgid "Longest side"
-#~ msgstr "Текст заобиколува"
-
-#~ msgid "Create a new page"
-#~ msgstr "Создади нова страница"
-
-#, fuzzy
-#~| msgid "Resize last frame"
-#~ msgid "Resize last shape"
-#~ msgstr "Промени ја големината на последната рамка"
-
-#, fuzzy
-#~ msgid "Do not create a followup shape"
-#~ msgstr "Создади рамка за табела"
-
-#, fuzzy
-#~ msgid "Reconnect shape to current flow"
-#~ msgstr "Преповрзи рамка"
-
-#, fuzzy
-#~ msgid "Copy this shape"
-#~ msgstr "Поврзи рамка"
-
-#, fuzzy
-#~ msgid "Protect content"
-#~ msgstr "Спои ќелии"
-
-#, fuzzy
-#~ msgid "Header"
-#~ msgstr "Заглавје"
-
-#, fuzzy
-#~ msgid "Footer"
-#~ msgstr "Подножје"
-
-#, fuzzy
-#~ msgid "After last page"
-#~ msgstr "KWord - Вметни табела"
-
-#, fuzzy
-#~ msgid "Page style:"
-#~ msgstr "Име на група рамки"
-
-#, fuzzy
-#~ msgid "General"
-#~ msgstr "Интеграл"
-
-#, fuzzy
-#~ msgid "Number of pages:"
-#~ msgstr "Број на редови:"
-
-#, fuzzy
-#~ msgid "Number of frames:"
-#~ msgstr "Број на редови:"
-
-#, fuzzy
-#~ msgid "Number of pictures:"
-#~ msgstr "Број на редови:"
-
-#, fuzzy
-#~ msgid "Number of tables:"
-#~ msgstr "Број на редови:"
-
-#, fuzzy
-#~ msgid "Words:"
-#~ msgstr "KWord"
-
-#, fuzzy
-#~ msgid "Syllables:"
-#~ msgstr "Табели"
-
-#, fuzzy
-#~| msgid "&Formatting Characters"
-#~ msgid "East Asian characters"
-#~ msgstr "Знаци за &форматирање"
-
-#, fuzzy
-#~ msgid "Automatically update"
-#~ msgstr "Самопоправање"
-
-#, fuzzy
-#~ msgid "Words"
-#~ msgstr "KWord"
-
-#, fuzzy
-#~ msgid "Syllables"
-#~ msgstr "Табели"
-
-#, fuzzy
-#~ msgid "&File"
-#~ msgstr "Проверка на правопис"
-
-#, fuzzy
-#~ msgid "&Edit"
-#~ msgstr "&Крајна-нота"
-
-#, fuzzy
-#~ msgid "&View"
-#~ msgstr "Надолу"
-
-#, fuzzy
-#~ msgid "&Display Mode"
-#~ msgstr "&Број на страна"
-
-#, fuzzy
-#~ msgctxt "Insert menu"
-#~ msgid "&Insert"
-#~ msgstr "Вметни ред"
-
-#~ msgid "F&ormat"
-#~ msgstr "Формат"
-
-#, fuzzy
-#~ msgid "Spellcheck"
-#~ msgstr "Проверка на правопис"
-
-#~ msgid "Autocorrection"
-#~ msgstr "Самопоправање"
-
-#, fuzzy
-#~ msgid "&Settings"
-#~ msgstr "Поставки на рамка"
-
-#, fuzzy
-#~ msgid "Edit"
-#~ msgstr "Уреди &текст"
-
-#~ msgid "Table"
-#~ msgstr "Табела"
-
-#, fuzzy
-#~ msgid "Insert"
-#~ msgstr "Вметни ред"
-
-#, fuzzy
-#~ msgid "Paragraph"
-#~ msgstr "&Параграф..."
-
-#, fuzzy
-#~ msgid "Font"
-#~ msgstr "&Фуснота"
-
-#, fuzzy
-#~| msgid "F&ormat"
-#~ msgid "Format"
-#~ msgstr "Формат"
-
-#~ msgid "Borders"
-#~ msgstr "Рабови:"
-
-#, fuzzy
-#~ msgid "MailMerge"
-#~ msgstr "Семејство"
-
-#~ msgid "Formula"
-#~ msgstr "Формула"
-
-#, fuzzy
-#~ msgid "Spell Check Result"
-#~ msgstr "Проверка на правопис"
-
-#, fuzzy
-#~ msgid "Change Variable To"
-#~ msgstr "&Променливи по избор..."
 
 #, fuzzy
 #~ msgid "Select All Shapes"
