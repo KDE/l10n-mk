@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-27 03:39+0100\n"
+"POT-Creation-Date: 2013-02-28 03:33+0100\n"
 "PO-Revision-Date: 2006-09-30 17:38+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -212,7 +212,7 @@ msgstr ""
 "Барем еден од објектите во таблата со исечоци неможе да биде вметнат поради "
 "објект со истото име кое постои.  Сите останати објекти беа вметнати."
 
-#: clipboard/umlclipboard.cpp:844 uml.cpp:1457
+#: clipboard/umlclipboard.cpp:844 uml.cpp:1472
 msgid "Paste Error"
 msgstr "Грешка при вметнувањето"
 
@@ -2298,14 +2298,14 @@ msgstr "Н&ов атрибут..."
 #: dialogs/classifierlistpage.cpp:206
 #: dialogs/umlforeignkeyconstraintdialog.cpp:310
 #: dialogs/umloperationdialog.cpp:166
-#: dialogs/umluniqueconstraintdialog.cpp:114 uml.cpp:430 umldoc.cpp:1469
+#: dialogs/umluniqueconstraintdialog.cpp:114 uml.cpp:442 umldoc.cpp:1469
 #: umlscene.cpp:3562
 #, fuzzy
 msgid "&Delete"
 msgstr "&Стандардно"
 
 #: dialogs/classifierlistpage.cpp:208 dialogs/umloperationdialog.cpp:168
-#: uml.cpp:445
+#: uml.cpp:457
 msgid "&Properties"
 msgstr "&Својства"
 
@@ -5687,41 +5687,48 @@ msgstr ""
 msgid "&Edit"
 msgstr ""
 
-#. i18n: ectx: Menu (views)
+#. i18n: ectx: Menu (view)
 #: umbrelloui.rc:13
+#, fuzzy
+#| msgid "Views"
+msgid "&View"
+msgstr "Прегледи"
+
+#. i18n: ectx: Menu (views)
+#: umbrelloui.rc:18
 msgid "&Diagram"
 msgstr "&Дијаграм"
 
 #. i18n: ectx: Menu (new_view)
-#: umbrelloui.rc:14
+#: umbrelloui.rc:19
 msgid "&New"
 msgstr "&Нов"
 
 #. i18n: ectx: Menu (show_view)
-#: umbrelloui.rc:30
+#: umbrelloui.rc:35
 msgid "Sh&ow"
 msgstr "&Прикажи"
 
 #. i18n: ectx: Menu (zoom_menu)
-#: umbrelloui.rc:33
+#: umbrelloui.rc:38
 #, fuzzy
 msgid "&Zoom"
 msgstr "Фокусирање:"
 
 #. i18n: ectx: Menu (align_menu)
-#: umbrelloui.rc:35
+#: umbrelloui.rc:40
 #, fuzzy
 #| msgid "Align Top"
 msgid "&Align"
 msgstr "Порамни на врв"
 
 #. i18n: ectx: Menu (code)
-#: umbrelloui.rc:51
+#: umbrelloui.rc:56
 msgid "&Code"
 msgstr "&Код"
 
 #. i18n: ectx: Menu (active_lang_menu)
-#: umbrelloui.rc:57
+#: umbrelloui.rc:62
 msgid "Active &Language"
 msgstr "&Активен јазик"
 
@@ -5862,118 +5869,126 @@ msgstr "Дијаграм на &поставување..."
 msgid "&Entity Relationship Diagram..."
 msgstr "Дијаграм на а&трибути..."
 
-#: uml.cpp:417
+#: uml.cpp:416 uml.cpp:811
+msgid "&Tree View"
+msgstr "Поглед со &стебло"
+
+#: uml.cpp:420
+msgid "&Documentation"
+msgstr "Документација"
+
+#: uml.cpp:424
+msgid "&Command history"
+msgstr ""
+
+#: uml.cpp:429
 msgid "&Clear Diagram"
 msgstr "Избриши ди&јаграм"
 
-#: uml.cpp:421
+#: uml.cpp:433
 msgid "&Snap to Grid"
 msgstr "Прикачи за &мрежа"
 
-#: uml.cpp:425
+#: uml.cpp:437
 msgid "S&how Grid"
 msgstr "Прикажи м&режа"
 
-#: uml.cpp:435
+#: uml.cpp:447
 msgid "&Export as Picture..."
 msgstr "И&знеси како слика..."
 
-#: uml.cpp:440
+#: uml.cpp:452
 msgid "Export &All Diagrams as Pictures..."
 msgstr "Из&неси ги сите дијаграми како слики..."
 
-#: uml.cpp:460
+#: uml.cpp:472
 msgid "Z&oom to 100%"
 msgstr "Зголеми на &100%"
 
-#: uml.cpp:464
+#: uml.cpp:476
 msgid "Align Right"
 msgstr "Порамни десно"
 
-#: uml.cpp:469
+#: uml.cpp:481
 msgid "Align Left"
 msgstr "Порамни лево"
 
-#: uml.cpp:474
+#: uml.cpp:486
 msgid "Align Top"
 msgstr "Порамни на врв"
 
-#: uml.cpp:479
+#: uml.cpp:491
 msgid "Align Bottom"
 msgstr "Порамни на дно"
 
-#: uml.cpp:484
+#: uml.cpp:496
 msgid "Align Vertical Middle"
 msgstr "Порамни вертикално во средина"
 
-#: uml.cpp:489
+#: uml.cpp:501
 msgid "Align Horizontal Middle"
 msgstr "Порамни хоризонтално во средина"
 
-#: uml.cpp:494
+#: uml.cpp:506
 msgid "Align Vertical Distribute"
 msgstr "Порамни вертикално распределено"
 
-#: uml.cpp:499
+#: uml.cpp:511
 msgid "Align Horizontal Distribute"
 msgstr "Порамни хоризонтално распределено"
 
-#: uml.cpp:503
+#: uml.cpp:515
 msgid "&Move Tab Left"
 msgstr "Премести го ливчето &лево"
 
-#: uml.cpp:504
+#: uml.cpp:516
 msgid "&Move Tab Right"
 msgstr "Премести го ливчето &десно"
 
-#: uml.cpp:519
+#: uml.cpp:531
 msgid "Select Diagram on Left"
 msgstr "Избери го левиот дијаграм"
 
-#: uml.cpp:520
+#: uml.cpp:532
 msgid "Select Diagram on Right"
 msgstr "Избери го десниот дијаграм"
 
-#: uml.cpp:687
+#: uml.cpp:699
 #, fuzzy
 msgctxt "init status bar"
 msgid "Ready"
 msgstr "Подготвен."
 
-#: uml.cpp:752
+#: uml.cpp:764
 msgid "Diagram Toolbar"
 msgstr "Дијаграм на лентата со алатки"
 
-#: uml.cpp:799
-msgid "&Tree View"
-msgstr "Поглед со &стебло"
-
-#: uml.cpp:809
+#: uml.cpp:822
 #, fuzzy
 #| msgid "Documentation"
 msgid "Doc&umentation"
 msgstr "Документација"
 
-#: uml.cpp:819
+#: uml.cpp:833
 msgid "Co&mmand history"
 msgstr ""
 
-#: uml.cpp:841 uml.cpp:1135 uml.cpp:1168
+#: uml.cpp:856 uml.cpp:1150 uml.cpp:1183
 msgid "Opening file..."
 msgstr "Отворам датотека..."
 
-#: uml.cpp:905 uml.cpp:1199 umldoc.cpp:285 umldoc.cpp:374 umldoc.cpp:425
+#: uml.cpp:920 uml.cpp:1214 umldoc.cpp:285 umldoc.cpp:374 umldoc.cpp:425
 #: umldoc.cpp:447 umldoc.cpp:485 umldoc.cpp:497 umldoc.cpp:511 umldoc.cpp:523
 #: umldoc.cpp:535 umldoc.cpp:701 umldoc.cpp:708 umldoc.cpp:2862
 #: umldoc.cpp:2865
 msgid "Untitled"
 msgstr ""
 
-#: uml.cpp:1117
+#: uml.cpp:1132
 msgid "Creating new document..."
 msgstr "Создавам нов документ..."
 
-#: uml.cpp:1143
+#: uml.cpp:1158
 msgid ""
 "*.xmi *.xmi.tgz *.xmi.tar.bz2 *.mdl|All Supported Files (*.xmi, *.xmi.tgz, *."
 "xmi.tar.bz2, *.mdl)\n"
@@ -5989,19 +6004,19 @@ msgstr ""
 "*.xmi.tar.bz2|Bzip2 Компресирани XMI датотеки (*.xmi.tar.bz2)\n"
 "*.mdl|Rose моделарни датотеки"
 
-#: uml.cpp:1147
+#: uml.cpp:1162
 msgid "Open File"
 msgstr "Отвори датотека"
 
-#: uml.cpp:1198
+#: uml.cpp:1213
 msgid "Saving file..."
 msgstr "Зачувувам датотека..."
 
-#: uml.cpp:1214
+#: uml.cpp:1229
 msgid "Saving file with a new filename..."
 msgstr "Зачувувам датотека со ново име..."
 
-#: uml.cpp:1219
+#: uml.cpp:1234
 msgid ""
 "*.xmi|XMI File\n"
 "*.xmi.tgz|Gzip Compressed XMI File\n"
@@ -6013,11 +6028,11 @@ msgstr ""
 "*.xmi.tar.bz2|Bzip2 компресирана XMI датотека\n"
 "*|Сите датотеки"
 
-#: uml.cpp:1219 umlviewimageexporter.cpp:173
+#: uml.cpp:1234 umlviewimageexporter.cpp:173
 msgid "Save As"
 msgstr ""
 
-#: uml.cpp:1237
+#: uml.cpp:1252
 #, kde-format
 msgid ""
 "The file %1 exists.\n"
@@ -6026,51 +6041,51 @@ msgstr ""
 "Датотеката %1 веќе постои.\n"
 "Дали сакате да запишете врз неа."
 
-#: uml.cpp:1238
+#: uml.cpp:1253
 #, fuzzy
 msgid "Warning"
 msgstr "стринг"
 
-#: uml.cpp:1238
+#: uml.cpp:1253
 msgid "Overwrite"
 msgstr "Презапиши"
 
-#: uml.cpp:1272
+#: uml.cpp:1287
 msgid "Closing file..."
 msgstr "Ја затворам датотеката..."
 
-#: uml.cpp:1304
+#: uml.cpp:1319
 #, fuzzy
 #| msgid "Exporting view..."
 msgid "Print Preview..."
 msgstr "Изнесување на погледот..."
 
-#: uml.cpp:1331
+#: uml.cpp:1346
 msgid "Printing..."
 msgstr "Печатам..."
 
-#: uml.cpp:1338
+#: uml.cpp:1353
 #, kde-format
 msgid "Print %1"
 msgstr "Печати %1"
 
-#: uml.cpp:1358
+#: uml.cpp:1373
 msgid "Exiting..."
 msgstr "Излегувам..."
 
-#: uml.cpp:1421
+#: uml.cpp:1436
 msgid "Cutting selection..."
 msgstr "Го сечам избраното..."
 
-#: uml.cpp:1438
+#: uml.cpp:1453
 msgid "Copying selection to clipboard..."
 msgstr "Го копирам избраното во таблата со исечоци..."
 
-#: uml.cpp:1450
+#: uml.cpp:1465
 msgid "Inserting clipboard contents..."
 msgstr "Ја вметнувам содржината на таблата со исечоци..."
 
-#: uml.cpp:1455
+#: uml.cpp:1470
 msgid ""
 "Umbrello could not paste the clipboard contents.  The objects in the "
 "clipboard may be of the wrong type to be pasted here."
@@ -6078,26 +6093,26 @@ msgstr ""
 "Umbrello неможе да ја вметни содржината од таблата со исечоци.  Објектите од "
 "таблата со исечоци можат да бидат од погрешен вид и да бидат вметнати овде."
 
-#: uml.cpp:1481 umlviewimageexporter.cpp:80 umlviewimageexporterall.cpp:84
+#: uml.cpp:1496 umlviewimageexporter.cpp:80 umlviewimageexporterall.cpp:84
 #, fuzzy
 #| msgid "Ready."
 msgctxt "reset status bar"
 msgid "Ready."
 msgstr "Подготвен."
 
-#: uml.cpp:2043
+#: uml.cpp:2058
 msgid "Cannot view code until you generate some first."
 msgstr "Неможе да се прегледа кодот додека не се генерира."
 
-#: uml.cpp:2043 uml.cpp:2046
+#: uml.cpp:2058 uml.cpp:2061
 msgid "Cannot View Code"
 msgstr "Неможе да се прегледа кодот"
 
-#: uml.cpp:2046
+#: uml.cpp:2061
 msgid "Cannot view code from simple code writer."
 msgstr "Неможе да се прегледа кодот од едноставен пишувач на код."
 
-#: uml.cpp:2907
+#: uml.cpp:2940
 msgid "XHTML Generation failed ."
 msgstr ""
 
@@ -7236,9 +7251,6 @@ msgstr "Избери"
 
 #~ msgid "Sta&rtup logo"
 #~ msgstr "Поч&етно лого"
-
-#~ msgid "&Documentation"
-#~ msgstr "Документација"
 
 #~ msgid "UNDEFINED"
 #~ msgstr "НЕДЕФИНИРАНО"
