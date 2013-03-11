@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kbattleship\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-20 03:18+0100\n"
+"POT-Creation-Date: 2013-03-11 03:25+0100\n"
 "PO-Revision-Date: 2006-04-26 00:55+0200\n"
 "Last-Translator: Zaklina Gjalevska <gjalevska@yahoo.com>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -28,7 +28,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "chombium@freemail.com.mk,gjalevska@yahoo.com"
 
-#: controller.cpp:50
+#: controller.cpp:51
 #, fuzzy
 #| msgid "Computer Player"
 msgid "Computer"
@@ -56,8 +56,13 @@ msgstr "П&рекар:"
 msgid "Whether sound effects should be played."
 msgstr ""
 
+#. i18n: ectx: label, entry (AdjacentShips), group (general)
+#: kbattleship.kcfg:26
+msgid "Allow the ships to be adjacent without one empty space between them."
+msgstr ""
+
 #. i18n: ectx: ToolBar (gameToolbar)
-#: kbattleshipui.rc:27
+#: kbattleshipui.rc:28
 msgid "Game Toolbar"
 msgstr ""
 
@@ -242,29 +247,33 @@ msgstr "&Запри ја играта"
 msgid "&Connect to Game..."
 msgstr "&Приклучи се на север..."
 
-#: mainwindow.cpp:71
+#: mainwindow.cpp:72
 #, fuzzy
 #| msgid "&Nick name:"
 msgid "Change &Nickname..."
 msgstr "П&рекар:"
 
-#: mainwindow.cpp:74
+#: mainwindow.cpp:75
 #, fuzzy
 #| msgid "&Play Sounds"
 msgid "&Play Sounds"
 msgstr "&Свири звуци"
 
-#: mainwindow.cpp:78
+#: mainwindow.cpp:79
+msgid "&Adjacent Ships"
+msgstr ""
+
+#: mainwindow.cpp:84
 msgid "Show End-of-Game Message"
 msgstr ""
 
-#: mainwindow.cpp:83
+#: mainwindow.cpp:89
 #, fuzzy
 #| msgid "&Show Grid"
 msgid "Show &Left Grid"
 msgstr "&Прикажи мрежа"
 
-#: mainwindow.cpp:87
+#: mainwindow.cpp:93
 #, fuzzy
 #| msgid "&Show Grid"
 msgid "Show &Right Grid"
@@ -316,6 +325,16 @@ msgstr "Чекам одговор..."
 msgid "Could not connect to host"
 msgstr "Не можам да се поврзам на сервер."
 
+#: networkentity.cpp:213
+#, fuzzy
+#| msgid "You cannot place the ship here."
+msgid "You can place ships adjacent to each other"
+msgstr "Тука не може да поставите брод."
+
+#: networkentity.cpp:216
+msgid "You must leave an space between ships"
+msgstr ""
+
 #: playerentity.cpp:167
 #, kde-format
 msgid "Your opponent is now known as %1"
@@ -365,54 +384,54 @@ msgstr "П&рекар:"
 msgid "Enter new nickname:"
 msgstr ""
 
-#: playfield.cpp:235
+#: playfield.cpp:241
 #, fuzzy
 #| msgid "Restart"
 msgid "Restart game"
 msgstr "Почни повторно"
 
-#: playfield.cpp:236
+#: playfield.cpp:242
 #, fuzzy
 #| msgid "The client is asking to restart the game. Do you accept?"
 msgid "Your opponent has requested to restart the game. Do you accept?"
 msgstr "Клиентот бара играта да се почне одново. Прифаќате?"
 
-#: playfield.cpp:245
+#: playfield.cpp:251
 msgid ""
 "Your opponent is using a pre-KDE4 version of Naval Battle. Note that, "
 "according to the rules enforced by old clients, ships cannot be placed "
 "adjacent to one another."
 msgstr ""
 
-#: playfield.cpp:258
+#: playfield.cpp:264
 #, fuzzy
 #| msgid "Enemy has shot. Shoot now."
 msgid "Enemy has shot. Shoot now!"
 msgstr "Непријателот испука. Пукајте сега."
 
-#: playfield.cpp:262
+#: playfield.cpp:268
 #, fuzzy
 #| msgid "Waiting for enemy to shoot.."
 msgid "Waiting for enemy to shoot..."
 msgstr "Чекам непријателот да пука..."
 
-#: playfield.cpp:271
+#: playfield.cpp:277
 msgid "Ships placed. Now shoot on the enemy field!"
 msgstr ""
 
-#: playfield.cpp:274
+#: playfield.cpp:280
 #, fuzzy
 #| msgid "Waiting for other player to start the match..."
 msgid "Waiting for other player to start the game..."
 msgstr "Чекам другиот играч да ја почне играта..."
 
-#: playfield.cpp:278
+#: playfield.cpp:284
 #, fuzzy
 #| msgid "Waiting for other player to place their ships..."
 msgid "Waiting for other player to place his ships..."
 msgstr "Чекам другиот играч да ги намести бродовите..."
 
-#: playfield.cpp:286
+#: playfield.cpp:292
 #, fuzzy
 #| msgid ""
 #| "Please place your ships. Use the \"Shift\" key to place the ships "
@@ -630,9 +649,6 @@ msgstr "&Еден играч"
 #, fuzzy
 #~ msgid "&Start"
 #~ msgstr "&Стартувај сервер"
-
-#~ msgid "You cannot place the ship here."
-#~ msgstr "Тука не може да поставите брод."
 
 #~ msgid ""
 #~ "URL of server to attach to.  In the form kbattleship://host:port/ or host:"
