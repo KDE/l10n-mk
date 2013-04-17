@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-08 03:27+0100\n"
+"POT-Creation-Date: 2013-04-17 03:47+0200\n"
 "PO-Revision-Date: 2010-01-29 22:42+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1220,8 +1220,98 @@ msgstr "Дејства за насловната лен&та"
 msgid "Maximize Button"
 msgstr "Копче Рашири"
 
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, OverlapSnap)
+#: moving.ui:32
+msgid ""
+"Here you can set that windows will be only snapped if you try to overlap "
+"them, i.e. they will not be snapped if the windows comes only near another "
+"window or border."
+msgstr ""
+"Тука може да поставите прозорците да се залепат само ако се обидувате да ги "
+"преклопите, т.е. нема да се залепат ако еден прозорец се наоѓа само во "
+"близината на друг прозорец или граница."
+
+#. i18n: ectx: property (text), widget (QCheckBox, OverlapSnap)
+#: moving.ui:35
+msgid "Snap windows onl&y when overlapping"
+msgstr "Залеп&и ги прозорците само кога се преклопуваат"
+
+#. i18n: ectx: property (whatsThis), widget (KIntNumInput, centerSnap)
+#: moving.ui:55
+msgid ""
+"Here you can set the snap zone for the screen center, i.e. the 'strength' of "
+"the magnetic field which will make windows snap to the center of the screen "
+"when moved near it."
+msgstr ""
+"Тука може да ја поставите зоната на привлекување на границите на екранот, т."
+"е. „јачината на магнетното поле“ што ќе ги натера прозорците да се залепат "
+"до работ кога ќе се доближат до него."
+
+#. i18n: ectx: property (suffix), widget (KIntNumInput, centerSnap)
+#. i18n: ectx: property (suffix), widget (KIntNumInput, windowSnap)
+#. i18n: ectx: property (suffix), widget (KIntNumInput, borderSnap)
+#: moving.ui:67 moving.ui:134 moving.ui:162
+#, fuzzy
+#| msgid " pixel"
+#| msgid_plural " pixels"
+msgid " pixel"
+msgstr " пиксел"
+
+#. i18n: ectx: property (specialValueText), widget (KIntNumInput, centerSnap)
+#: moving.ui:70
+#, fuzzy
+#| msgid "&Center snap zone:"
+msgid "no center snap zone"
+msgstr "&Централна зона на привлекување:"
+
+#. i18n: ectx: property (text), widget (QLabel, borderSnapLabel)
+#: moving.ui:90
+msgid "&Border snap zone:"
+msgstr "&Гранична зона на привлекување:"
+
+#. i18n: ectx: property (text), widget (QLabel, centerSnapLabel)
+#: moving.ui:103
+msgid "&Center snap zone:"
+msgstr "&Централна зона на привлекување:"
+
+#. i18n: ectx: property (whatsThis), widget (KIntNumInput, windowSnap)
+#: moving.ui:122
+msgid ""
+"Here you can set the snap zone for windows, i.e. the 'strength' of the "
+"magnetic field which will make windows snap to each other when they are "
+"moved near another window."
+msgstr ""
+"Тука може да ја поставите зоната на привлекување на прозорците, т.е. "
+"„јачината на магнетното поле“ што ќе ги натера прозорците да се залепат еден "
+"до друг кога ќе се доближат меѓу себе."
+
+#. i18n: ectx: property (specialValueText), widget (KIntNumInput, windowSnap)
+#: moving.ui:137
+#, fuzzy
+#| msgid "&Window snap zone:"
+msgid "no window snap zone"
+msgstr "Зона на привлекување на п&розорци:"
+
+#. i18n: ectx: property (whatsThis), widget (KIntNumInput, borderSnap)
+#: moving.ui:150
+msgid ""
+"Here you can set the snap zone for screen borders, i.e. the 'strength' of "
+"the magnetic field which will make windows snap to the border when moved "
+"near it."
+msgstr ""
+"Тука може да ја поставите зоната на привлекување на границите на екранот, т."
+"е. „јачината на магнетното поле“ што ќе ги натера прозорците да се залепат "
+"до работ кога ќе се доближат до него."
+
+#. i18n: ectx: property (specialValueText), widget (KIntNumInput, borderSnap)
+#: moving.ui:165
+#, fuzzy
+#| msgid "&Border snap zone:"
+msgid "no border snap zone"
+msgstr "&Гранична зона на привлекување:"
+
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, geometryTipOn)
-#: moving.ui:45
+#: moving.ui:172
 msgid ""
 "Enable this option if you want a window's geometry to be displayed while it "
 "is being moved or resized. The window position relative to the top-left "
@@ -1233,132 +1323,38 @@ msgstr ""
 "димензии."
 
 #. i18n: ectx: property (text), widget (QCheckBox, geometryTipOn)
-#: moving.ui:48
+#: moving.ui:175
 msgid "Display window &geometry when moving or resizing"
 msgstr ""
 "Прикажи ја &геометријата на прозорецот додека се движи или менува големина"
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, moveResizeMaximized)
-#: moving.ui:68
-msgid ""
-"When enabled, this feature activates the border of maximized windows and "
-"allows you to move or resize them, just like for normal windows"
-msgstr ""
-"Кога ова е овозможено, се активира границата на раширените прозорци и имате "
-"можност да ги движите и да им ја менувате големината, исто како и на "
-"обичните прозорци."
-
-#. i18n: ectx: property (text), widget (QCheckBox, moveResizeMaximized)
-#: moving.ui:71
-#, fuzzy
-#| msgid "Display content in &resizing windows"
-msgid "Display borders on &maximized windows"
-msgstr "Прикажи ја содржината на прозорците кога ја &менуваат големината "
-
-#. i18n: ectx: property (text), widget (QLabel, borderSnapLabel)
-#: moving.ui:85
-msgid "&Border snap zone:"
-msgstr "&Гранична зона на привлекување:"
-
-#. i18n: ectx: property (whatsThis), widget (KIntNumInput, borderSnap)
-#: moving.ui:104
-msgid ""
-"Here you can set the snap zone for screen borders, i.e. the 'strength' of "
-"the magnetic field which will make windows snap to the border when moved "
-"near it."
-msgstr ""
-"Тука може да ја поставите зоната на привлекување на границите на екранот, т."
-"е. „јачината на магнетното поле“ што ќе ги натера прозорците да се залепат "
-"до работ кога ќе се доближат до него."
-
-#. i18n: ectx: property (suffix), widget (KIntNumInput, borderSnap)
-#. i18n: ectx: property (suffix), widget (KIntNumInput, windowSnap)
-#. i18n: ectx: property (suffix), widget (KIntNumInput, centerSnap)
-#: moving.ui:116 moving.ui:157 moving.ui:198
-#, fuzzy
-#| msgid " pixel"
-#| msgid_plural " pixels"
-msgid " pixel"
-msgstr " пиксел"
-
-#. i18n: ectx: property (specialValueText), widget (KIntNumInput, borderSnap)
-#: moving.ui:119
-#, fuzzy
-#| msgid "&Border snap zone:"
-msgid "no border snap zone"
-msgstr "&Гранична зона на привлекување:"
-
 #. i18n: ectx: property (text), widget (QLabel, windowSnapLabel)
-#: moving.ui:126
+#: moving.ui:182
 msgid "&Window snap zone:"
 msgstr "Зона на привлекување на п&розорци:"
 
-#. i18n: ectx: property (whatsThis), widget (KIntNumInput, windowSnap)
-#: moving.ui:145
-msgid ""
-"Here you can set the snap zone for windows, i.e. the 'strength' of the "
-"magnetic field which will make windows snap to each other when they are "
-"moved near another window."
-msgstr ""
-"Тука може да ја поставите зоната на привлекување на прозорците, т.е. "
-"„јачината на магнетното поле“ што ќе ги натера прозорците да се залепат еден "
-"до друг кога ќе се доближат меѓу себе."
-
-#. i18n: ectx: property (specialValueText), widget (KIntNumInput, windowSnap)
-#: moving.ui:160
-#, fuzzy
-#| msgid "&Window snap zone:"
-msgid "no window snap zone"
-msgstr "Зона на привлекување на п&розорци:"
-
-#. i18n: ectx: property (text), widget (QLabel, centerSnapLabel)
-#: moving.ui:167
-msgid "&Center snap zone:"
-msgstr "&Централна зона на привлекување:"
-
-#. i18n: ectx: property (whatsThis), widget (KIntNumInput, centerSnap)
-#: moving.ui:186
-msgid ""
-"Here you can set the snap zone for the screen center, i.e. the 'strength' of "
-"the magnetic field which will make windows snap to the center of the screen "
-"when moved near it."
-msgstr ""
-"Тука може да ја поставите зоната на привлекување на границите на екранот, т."
-"е. „јачината на магнетното поле“ што ќе ги натера прозорците да се залепат "
-"до работ кога ќе се доближат до него."
-
-#. i18n: ectx: property (specialValueText), widget (KIntNumInput, centerSnap)
-#: moving.ui:201
-#, fuzzy
-#| msgid "&Center snap zone:"
-msgid "no center snap zone"
-msgstr "&Централна зона на привлекување:"
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, OverlapSnap)
-#: moving.ui:221
-msgid ""
-"Here you can set that windows will be only snapped if you try to overlap "
-"them, i.e. they will not be snapped if the windows comes only near another "
-"window or border."
-msgstr ""
-"Тука може да поставите прозорците да се залепат само ако се обидувате да ги "
-"преклопите, т.е. нема да се залепат ако еден прозорец се наоѓа само во "
-"близината на друг прозорец или граница."
-
-#. i18n: ectx: property (text), widget (QCheckBox, OverlapSnap)
-#: moving.ui:224
-msgid "Snap windows onl&y when overlapping"
-msgstr "Залеп&и ги прозорците само кога се преклопуваат"
-
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: moving.ui:244
+#: moving.ui:221
 msgid "Windows"
 msgstr "Прозорци"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: moving.ui:257
+#: moving.ui:234
 msgid "Snap Zones"
 msgstr "Зони на привлекување"
+
+#~ msgid ""
+#~ "When enabled, this feature activates the border of maximized windows and "
+#~ "allows you to move or resize them, just like for normal windows"
+#~ msgstr ""
+#~ "Кога ова е овозможено, се активира границата на раширените прозорци и "
+#~ "имате можност да ги движите и да им ја менувате големината, исто како и "
+#~ "на обичните прозорци."
+
+#, fuzzy
+#~| msgid "Display content in &resizing windows"
+#~ msgid "Display borders on &maximized windows"
+#~ msgstr "Прикажи ја содржината на прозорците кога ја &менуваат големината "
 
 #, fuzzy
 #~| msgid "Minimize"
