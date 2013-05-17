@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-16 04:18+0200\n"
+"POT-Creation-Date: 2013-05-17 04:15+0200\n"
 "PO-Revision-Date: 2010-01-30 17:37+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -62,9 +62,11 @@ msgstr "GLX/OpenGL и XRender/XFixes не се достапни."
 msgid "KWin: "
 msgstr "KWin: "
 
-#: killer/killer.cpp:43 main.cpp:533
-msgid "KWin"
-msgstr "KWin"
+#: killer/killer.cpp:43
+#, fuzzy
+#| msgid "KDE window manager"
+msgid "Window Manager"
+msgstr "Менаџер на прозорци од KDE"
 
 #: killer/killer.cpp:44
 msgid "KWin helper utility"
@@ -98,24 +100,44 @@ msgstr ""
 msgid "This helper utility is not supposed to be called directly."
 msgstr "Оваа помошна алатка не би требало да се повикува директно."
 
-#: killer/killer.cpp:76
+#: killer/killer.cpp:79
 #, kde-format
-msgid ""
-"<p>The window \"<b>%2</b>\" is not responding. It belongs to the application "
-"<b>%1</b> (Process ID = %3, hostname = %4).</p><p>Do you wish to terminate "
-"the application process <em>including <b>all</b> of its child windows</em>?"
-"<br /><b>Any unsaved data will be lost.</b></p>"
+msgctxt "@info"
+msgid "<b>Application \"%1\" is not responding</b>"
 msgstr ""
-"<p>Прозорецот со наслов „<b>%2</b>“ не враќа одговор. Овој прозорец припаѓа "
-"на апликацијата <b>%1</b> (PID=%3, име на компјутер=%4).</p><p>Дали сакате "
-"да ја прекинете оваа апликација <em>вклучително и <b>сите</b> нејзини "
-"подпрозорци</em>?<br /><b>Сите незачувани податоци во апликацијата ќе бидат "
-"изгубени.</b></p>"
 
-#: killer/killer.cpp:82
+#: killer/killer.cpp:81
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>You tried to close window \"%1\" from application \"%2\" (Process ID: "
+"%3) but the application is not responding.</para>"
+msgstr ""
+
+#: killer/killer.cpp:83
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>You tried to close window \"%1\" from application \"%2\" (Process ID: "
+"%3), running on host \"%4\", but the application is not responding.</para>"
+msgstr ""
+
+#: killer/killer.cpp:86
+msgctxt "@info"
+msgid ""
+"<para>Do you want to terminate this application?</"
+"para><para><warning>Terminating the application will close all of its child "
+"windows. Any unsaved data will be lost.</warning></para>"
+msgstr ""
+
+#: killer/killer.cpp:90
 #, kde-format
 msgid "&Terminate Application %1"
 msgstr "Пре&кини ја апликацијата %1"
+
+#: killer/killer.cpp:91
+msgid "Wait Longer"
+msgstr ""
 
 #. i18n: ectx: label, entry (DesktopMode), group (TabBox)
 #: kwin.kcfg:277
@@ -459,6 +481,10 @@ msgstr ""
 #: main.cpp:452
 msgid "KDE window manager"
 msgstr "Менаџер на прозорци од KDE"
+
+#: main.cpp:533
+msgid "KWin"
+msgstr "KWin"
 
 #: main.cpp:537
 msgid "(c) 1999-2008, The KDE Developers"
@@ -846,6 +872,18 @@ msgid ""
 "paste bin service\n"
 "like http://paste.kde.org instead of pasting into support threads.\n"
 msgstr ""
+
+#~ msgid ""
+#~ "<p>The window \"<b>%2</b>\" is not responding. It belongs to the "
+#~ "application <b>%1</b> (Process ID = %3, hostname = %4).</p><p>Do you wish "
+#~ "to terminate the application process <em>including <b>all</b> of its "
+#~ "child windows</em>?<br /><b>Any unsaved data will be lost.</b></p>"
+#~ msgstr ""
+#~ "<p>Прозорецот со наслов „<b>%2</b>“ не враќа одговор. Овој прозорец "
+#~ "припаѓа на апликацијата <b>%1</b> (PID=%3, име на компјутер=%4).</"
+#~ "p><p>Дали сакате да ја прекинете оваа апликација <em>вклучително и "
+#~ "<b>сите</b> нејзини подпрозорци</em>?<br /><b>Сите незачувани податоци во "
+#~ "апликацијата ќе бидат изгубени.</b></p>"
 
 #~ msgid "Window '%1' demands attention."
 #~ msgstr "Прозорецот „%1“ бара внимание."
