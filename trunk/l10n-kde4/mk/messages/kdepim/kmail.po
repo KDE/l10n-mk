@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-20 03:43+0200\n"
+"POT-Creation-Date: 2013-05-23 01:32+0000\n"
 "PO-Revision-Date: 2007-02-28 14:08+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -5313,7 +5313,7 @@ msgctxt "Message->"
 msgid "&Reply"
 msgstr "&Одговори"
 
-#: messageactions.cpp:83 searchwindow.cpp:297
+#: messageactions.cpp:83 searchwindow.cpp:236
 msgid "&Reply..."
 msgstr "&Одговори..."
 
@@ -5321,11 +5321,11 @@ msgstr "&Одговори..."
 msgid "Reply to A&uthor..."
 msgstr "Одговори на а&второт..."
 
-#: messageactions.cpp:97 searchwindow.cpp:301
+#: messageactions.cpp:97 searchwindow.cpp:240
 msgid "Reply to &All..."
 msgstr "Одговори на &сите..."
 
-#: messageactions.cpp:104 searchwindow.cpp:305
+#: messageactions.cpp:104 searchwindow.cpp:244
 msgid "Reply to Mailing-&List..."
 msgstr "Одговори на поштенската &листа..."
 
@@ -5370,7 +5370,7 @@ msgstr "Ур&еди ја пораката"
 msgid "Add Note..."
 msgstr "Додај..."
 
-#: messageactions.cpp:168 searchwindow.cpp:309
+#: messageactions.cpp:168 searchwindow.cpp:248
 msgctxt "Message->"
 msgid "&Forward"
 msgstr "&Препрати"
@@ -5509,45 +5509,15 @@ msgctxt "@action:button Search for messages"
 msgid "&Search"
 msgstr "&Барај:"
 
-#: searchwindow.cpp:111
-#, fuzzy
-#| msgid "Search in &all local folders"
-msgid "Search in &all folders"
-msgstr "Барај во сите локални п&апки"
-
-#: searchwindow.cpp:115
-msgid "Search &only in:"
-msgstr "Барај само в&о:"
-
-#: searchwindow.cpp:122
-msgid "I&nclude sub-folders"
-msgstr "Вклучи &потпапки"
-
-#: searchwindow.cpp:218
-msgid "Search folder &name:"
-msgstr ""
-
-#: searchwindow.cpp:228 searchwindow.cpp:456
+#: searchwindow.cpp:188 searchwindow.cpp:395
 msgid "Last Search"
 msgstr "Последното барање"
 
-#: searchwindow.cpp:238
-#, fuzzy
-#| msgid "Delete Search"
-msgid "Op&en Search Folder"
-msgstr "Бришење на пребарување"
-
-#: searchwindow.cpp:247
-#, fuzzy
-#| msgid "Open Message"
-msgid "Open &Message"
-msgstr "Отворете порака"
-
-#: searchwindow.cpp:258
+#: searchwindow.cpp:207
 msgid "AMiddleLengthText..."
 msgstr ""
 
-#: searchwindow.cpp:259
+#: searchwindow.cpp:208
 #, fuzzy
 #| msgctxt "Permissions"
 #| msgid "Read"
@@ -5555,27 +5525,27 @@ msgctxt "@info:status finished searching."
 msgid "Ready."
 msgstr "Читање"
 
-#: searchwindow.cpp:314
+#: searchwindow.cpp:253
 #, fuzzy
 #| msgid "&Inline..."
 msgctxt "@action:inmenu Forward message inline."
 msgid "&Inline..."
 msgstr "&Внатрешно..."
 
-#: searchwindow.cpp:319
+#: searchwindow.cpp:258
 msgctxt "Message->Forward->"
 msgid "As &Attachment..."
 msgstr "Како &прилог..."
 
-#: searchwindow.cpp:333
+#: searchwindow.cpp:272
 msgid "Save Attachments..."
 msgstr "Зачувај прилози..."
 
-#: searchwindow.cpp:339
+#: searchwindow.cpp:278
 msgid "Clear Selection"
 msgstr ""
 
-#: searchwindow.cpp:423
+#: searchwindow.cpp:362
 #, kde-format
 msgid "%1 match"
 msgid_plural "%1 matches"
@@ -5583,18 +5553,18 @@ msgstr[0] "%1 совпаѓање"
 msgstr[1] "%1 совпаѓања"
 msgstr[2] "%1 совпаѓања"
 
-#: searchwindow.cpp:524
+#: searchwindow.cpp:463
 #, kde-format
 msgid "Can not get search result. %1"
 msgstr ""
 
-#: searchwindow.cpp:639
+#: searchwindow.cpp:578
 msgid ""
 "There was a problem renaming your search folder. A common reason for this is "
 "that another search folder with the same name already exists."
 msgstr ""
 
-#: searchwindow.cpp:746
+#: searchwindow.cpp:685
 #, fuzzy, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
@@ -5602,7 +5572,7 @@ msgstr[0] "Отворете порака"
 msgstr[1] "Отворете порака"
 msgstr[2] "Отворете порака"
 
-#: searchwindow.cpp:749
+#: searchwindow.cpp:688
 #, fuzzy, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
@@ -6155,6 +6125,44 @@ msgstr "Испразни ја локалната &корпа на излегув
 #: ui/miscpagemaintab.ui:187
 msgid "Print only selected text"
 msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, mChkbxAllFolders)
+#: ui/searchwindow.ui:17
+#, fuzzy
+#| msgid "Search in &all local folders"
+msgid "Search in &all folders"
+msgstr "Барај во сите локални п&апки"
+
+#. i18n: ectx: property (text), widget (QRadioButton, mChkbxSpecificFolders)
+#: ui/searchwindow.ui:26
+msgid "Search &only in:"
+msgstr "Барај само в&о:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mChkSubFolders)
+#: ui/searchwindow.ui:39
+#, fuzzy
+#| msgid "I&nclude sub-folders"
+msgid "&Include sub-folders"
+msgstr "Вклучи &потпапки"
+
+#. i18n: ectx: property (text), widget (QLabel, mSearchFolderLbl)
+#: ui/searchwindow.ui:93
+msgid "Search folder &name:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (KPushButton, mSearchFolderOpenBtn)
+#: ui/searchwindow.ui:113
+#, fuzzy
+#| msgid "Delete Search"
+msgid "Open &Search Folder"
+msgstr "Бришење на пребарување"
+
+#. i18n: ectx: property (text), widget (KPushButton, mSearchResultOpenBtn)
+#: ui/searchwindow.ui:123
+#, fuzzy
+#| msgid "Open Message"
+msgid "Open &Message"
+msgstr "Отворете порака"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: ui/securitypagegeneraltab.ui:17
