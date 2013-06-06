@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nepomuk\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-15 03:54+0200\n"
+"POT-Creation-Date: 2013-06-06 01:32+0000\n"
 "PO-Revision-Date: 2010-01-30 20:43+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -26,6 +26,35 @@ msgstr "Божидар Проевски"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "bobibobi@freemail.com.mk"
+
+#: detailswidget.cpp:36 detailswidget.cpp:59
+#, fuzzy
+#| msgid "Nepomuk Configuration Module"
+msgid "Desktop Search Details"
+msgstr "Модул за конфигурација на Nepomuk"
+
+#: detailswidget.cpp:38
+msgid "Refresh"
+msgstr ""
+
+#: detailswidget.cpp:53
+msgid "Files"
+msgstr ""
+
+#: detailswidget.cpp:54
+msgid "Emails"
+msgstr ""
+
+#: detailswidget.cpp:92 detailswidget.cpp:93
+#, fuzzy
+#| msgid "Calculating..."
+msgid "Calculating"
+msgstr "Пресметувам..."
+
+#: detailswidget.cpp:111 detailswidget.cpp:126
+#, kde-format
+msgid "%1"
+msgstr ""
 
 #: excludefilterselectiondialog.cpp:27
 #, fuzzy
@@ -170,98 +199,105 @@ msgstr ""
 msgid "Enable Nepomuk File Indexer"
 msgstr "Конфигурација на индексирач на датотеки"
 
+#. i18n: ectx: property (text), widget (QPushButton, m_fileIndexerSuspendResumeButtom)
+#. i18n: ectx: property (text), widget (QPushButton, m_emailIndexerSuspendResumeButtom)
+#: nepomukconfigwidget.ui:173 nepomukconfigwidget.ui:249
+#: nepomukserverkcm.cpp:576
+msgid "Suspend"
+msgstr ""
+
 #. i18n: ectx: property (title), widget (QGroupBox, m_emailIndexingBox)
-#: nepomukconfigwidget.ui:181
+#: nepomukconfigwidget.ui:191
 #, fuzzy
 #| msgid "File Indexing"
 msgid "Email Indexing"
 msgstr "Индексирање на датотеки"
 
 #. i18n: ectx: property (text), widget (QLabel, label_12)
-#: nepomukconfigwidget.ui:187
+#: nepomukconfigwidget.ui:197
 msgid "Email indexing allows full text search in email and their attachments."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkEnableEmailIndexer)
-#: nepomukconfigwidget.ui:194
+#: nepomukconfigwidget.ui:204
 #, fuzzy
 #| msgid "Configure File Indexer"
 msgid "Enable Email Indexer"
 msgstr "Конфигурација на индексирач на датотеки"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_4)
-#: nepomukconfigwidget.ui:218
+#: nepomukconfigwidget.ui:278
 #, fuzzy
 #| msgid "File Indexing"
 msgid "Indexing"
 msgstr "Индексирање на датотеки"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_7)
-#: nepomukconfigwidget.ui:224
+#: nepomukconfigwidget.ui:284
 msgid "File Indexing"
 msgstr "Индексирање на датотеки"
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: nepomukconfigwidget.ui:230
+#: nepomukconfigwidget.ui:290
 msgid "Customize the files and folders to be indexed"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkboxDocuments)
-#: nepomukconfigwidget.ui:237
+#: nepomukconfigwidget.ui:297
 #, fuzzy
 #| msgid "Indexed files:"
 msgid "Index Documents"
 msgstr "Индексирани датотеки:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkboxAudio)
-#: nepomukconfigwidget.ui:244
+#: nepomukconfigwidget.ui:304
 msgid "Index Audio"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkboxImage)
-#: nepomukconfigwidget.ui:251
+#: nepomukconfigwidget.ui:311
 #, fuzzy
 #| msgid "Indexed files:"
 msgid "Index Images"
 msgstr "Индексирани датотеки:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkboxVideo)
-#: nepomukconfigwidget.ui:258
+#: nepomukconfigwidget.ui:318
 #, fuzzy
 #| msgid "Indexed files:"
 msgid "Index Videos"
 msgstr "Индексирани датотеки:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkboxSourceCode)
-#: nepomukconfigwidget.ui:265
+#: nepomukconfigwidget.ui:325
 msgid "Index Source Code"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, m_buttonAdvancedFileIndexing)
-#: nepomukconfigwidget.ui:287
+#: nepomukconfigwidget.ui:347
 #, fuzzy
 #| msgid "Advanced Settings"
 msgid "Advanced"
 msgstr "Напредни поставувања"
 
 #. i18n: ectx: property (text), widget (QPushButton, m_buttonCustomizeIndexFolders)
-#: nepomukconfigwidget.ui:294
+#: nepomukconfigwidget.ui:354
 msgid "Customize Folders"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_11)
-#: nepomukconfigwidget.ui:305
+#: nepomukconfigwidget.ui:365
 msgid "Removable media handling:"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (KComboBox, m_comboRemovableMediaHandling)
-#: nepomukconfigwidget.ui:321
+#: nepomukconfigwidget.ui:381
 msgctxt "@info:tooltip"
 msgid "Indexing of files on removable media"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, m_comboRemovableMediaHandling)
-#: nepomukconfigwidget.ui:327
+#: nepomukconfigwidget.ui:387
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>Nepomuk can index files on removable devices like USB keys or external "
@@ -278,32 +314,32 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (KComboBox, m_comboRemovableMediaHandling)
-#: nepomukconfigwidget.ui:331
+#: nepomukconfigwidget.ui:391
 msgid "Ignore all removable media"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (KComboBox, m_comboRemovableMediaHandling)
-#: nepomukconfigwidget.ui:336
+#: nepomukconfigwidget.ui:396
 msgid "Index files on all removable devices"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (KComboBox, m_comboRemovableMediaHandling)
-#: nepomukconfigwidget.ui:341
+#: nepomukconfigwidget.ui:401
 msgid "Ask individually when newly mounted"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: nepomukconfigwidget.ui:368
+#: nepomukconfigwidget.ui:428
 msgid "Backup"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: nepomukconfigwidget.ui:374
+#: nepomukconfigwidget.ui:434
 msgid "Automatic Backups"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: nepomukconfigwidget.ui:380
+#: nepomukconfigwidget.ui:440
 msgctxt "@info"
 msgid ""
 "Nepomuk can perform regular automatic backups of all data that could not be "
@@ -312,62 +348,62 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: nepomukconfigwidget.ui:392
+#: nepomukconfigwidget.ui:452
 msgid "Backup frequency:"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (KComboBox, m_comboBackupFrequency)
-#: nepomukconfigwidget.ui:402
+#: nepomukconfigwidget.ui:462
 msgid "How often should a backup of the Nepomuk database be created"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: nepomukconfigwidget.ui:409
+#: nepomukconfigwidget.ui:469
 msgid "Backup Time:"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QTimeEdit, m_editBackupTime)
-#: nepomukconfigwidget.ui:424
+#: nepomukconfigwidget.ui:484
 msgid "When should the backup be created"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
-#: nepomukconfigwidget.ui:433
+#: nepomukconfigwidget.ui:493
 msgid "Max number of backups:"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QSpinBox, m_spinBackupMax)
-#: nepomukconfigwidget.ui:445
+#: nepomukconfigwidget.ui:505
 msgid "How many previous backups should be kept"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_6)
-#: nepomukconfigwidget.ui:475
+#: nepomukconfigwidget.ui:535
 msgid "Tools"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (KPushButton, m_buttonManualBackup)
-#: nepomukconfigwidget.ui:481
+#: nepomukconfigwidget.ui:541
 msgid "Manual Backup..."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (KPushButton, m_buttonRestoreBackup)
-#: nepomukconfigwidget.ui:488
+#: nepomukconfigwidget.ui:548
 msgid "Restore Backup..."
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_3)
-#: nepomukconfigwidget.ui:525
+#: nepomukconfigwidget.ui:585
 msgid "Advanced Settings"
 msgstr "Напредни поставувања"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: nepomukconfigwidget.ui:531
+#: nepomukconfigwidget.ui:591
 msgid "Memory Usage"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: nepomukconfigwidget.ui:537
+#: nepomukconfigwidget.ui:597
 msgid ""
 "<p>The maximum amount of main memory the Nepomuk system should use for its "
 "database process. The more memory is available to Nepomuk the better will be "
@@ -376,72 +412,65 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, m_editMemoryUsage)
-#: nepomukconfigwidget.ui:565
+#: nepomukconfigwidget.ui:625
 #, fuzzy
 #| msgid " MB"
 msgid " MiB"
 msgstr " MB"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_5)
-#: nepomukconfigwidget.ui:583
+#: nepomukconfigwidget.ui:643
 #, fuzzy
 #| msgid "Actions:"
 msgid "Actions"
 msgstr "Дејства:"
 
 #. i18n: ectx: property (text), widget (QPushButton, m_buttonCheckForNewFiles)
-#: nepomukconfigwidget.ui:604
+#: nepomukconfigwidget.ui:664
 #, fuzzy
 #| msgctxt "@info:status"
 #| msgid "Checking file system for new files"
 msgid "Check for New Files"
 msgstr "Го проверувам датотечниот систем за нови датотеки"
 
-#. i18n: ectx: property (text), widget (QPushButton, m_buttonClearIndexedData)
-#: nepomukconfigwidget.ui:641
-#, fuzzy
-#| msgid "File Indexing"
-msgid "Clear Index"
-msgstr "Индексирање на датотеки"
-
-#: nepomukserverkcm.cpp:102
+#: nepomukserverkcm.cpp:104
 #, fuzzy
 #| msgid "Nepomuk Configuration Module"
 msgid "Desktop Search Configuration Module"
 msgstr "Модул за конфигурација на Nepomuk"
 
-#: nepomukserverkcm.cpp:104
+#: nepomukserverkcm.cpp:106
 #, fuzzy
 #| msgid "Copyright 2007 Sebastian Trüg"
 msgid "Copyright 2007-2010 Sebastian Trüg"
 msgstr "Авторски права 2007 Sebastian Trüg"
 
-#: nepomukserverkcm.cpp:105
+#: nepomukserverkcm.cpp:107
 msgid "Sebastian Trüg"
 msgstr "Sebastian Trüg"
 
-#: nepomukserverkcm.cpp:165
+#: nepomukserverkcm.cpp:170
 msgctxt "@item:inlistbox"
 msgid "Disable Automatic Backups"
 msgstr ""
 
-#: nepomukserverkcm.cpp:166
+#: nepomukserverkcm.cpp:171
 msgctxt "@item:inlistbox"
 msgid "Daily Backup"
 msgstr ""
 
-#: nepomukserverkcm.cpp:167
+#: nepomukserverkcm.cpp:172
 msgctxt "@item:inlistbox"
 msgid "Weekly Backup"
 msgstr ""
 
-#: nepomukserverkcm.cpp:198
+#: nepomukserverkcm.cpp:203
 msgid ""
 "The Nepomuk installation is not complete. No desktop search settings can be "
 "provided."
 msgstr ""
 
-#: nepomukserverkcm.cpp:418
+#: nepomukserverkcm.cpp:425
 #, fuzzy
 #| msgid ""
 #| "The Nepomuk Server is not running. The settings have been saved and will "
@@ -453,24 +482,24 @@ msgstr ""
 "Серверот Непомук не работи. Поставувањата беа зачувани и ќе бидат "
 "искористени наредниот пат кога ќе се"
 
-#: nepomukserverkcm.cpp:420
+#: nepomukserverkcm.cpp:427
 #, fuzzy
 #| msgctxt "@info:status"
 #| msgid "Strigi service not running."
 msgid "Desktop search service not running"
 msgstr "Сервисот Strigi не работи."
 
-#: nepomukserverkcm.cpp:457
+#: nepomukserverkcm.cpp:465
 msgctxt "@info:status"
 msgid "Desktop search services are active"
 msgstr ""
 
-#: nepomukserverkcm.cpp:460
+#: nepomukserverkcm.cpp:468
 msgctxt "@info:status"
 msgid "Desktop search services are disabled"
 msgstr ""
 
-#: nepomukserverkcm.cpp:481
+#: nepomukserverkcm.cpp:489
 #, fuzzy, kde-format
 #| msgctxt "@info:status %1 is an error message returned by a dbus interface."
 #| msgid "Failed to contact Strigi indexer (%1)"
@@ -478,7 +507,7 @@ msgctxt "@info:status %1 is an error message returned by a dbus interface."
 msgid "Failed to contact File Indexer service (%1)"
 msgstr "Не успеав да контактирам со индексирачот Strigi (%1)"
 
-#: nepomukserverkcm.cpp:491
+#: nepomukserverkcm.cpp:500
 #, fuzzy
 #| msgctxt "@info:status"
 #| msgid ""
@@ -492,7 +521,7 @@ msgstr ""
 "Сервисот Strigi не успеа да биде иницијализиран, најверојатно поради проблем "
 "во инсталирањето."
 
-#: nepomukserverkcm.cpp:496
+#: nepomukserverkcm.cpp:505
 #, fuzzy
 #| msgctxt "@info:status"
 #| msgid "Strigi service not running."
@@ -500,7 +529,51 @@ msgctxt "@info:status"
 msgid "File indexing service not running."
 msgstr "Сервисот Strigi не работи."
 
-#: nepomukserverkcm.cpp:507
+#: nepomukserverkcm.cpp:512
+msgctxt "Resumes the Nepomuk file indexing service."
+msgid "Resume"
+msgstr ""
+
+#: nepomukserverkcm.cpp:516
+msgctxt "Suspends the Nepomuk file indexing service."
+msgid "Suspend"
+msgstr ""
+
+#: nepomukserverkcm.cpp:548
+#, kde-format
+msgctxt "<status string> (<percentage>%)"
+msgid "%1 (%2%)"
+msgstr ""
+
+#: nepomukserverkcm.cpp:552
+#, fuzzy, kde-format
+#| msgctxt "@info:status %1 is an error message returned by a dbus interface."
+#| msgid "Failed to contact Strigi indexer (%1)"
+msgctxt "@info:status %1 is an error message returned by a dbus interface."
+msgid "Failed to contact Email Indexer service (%1)"
+msgstr "Не успеав да контактирам со индексирачот Strigi (%1)"
+
+#: nepomukserverkcm.cpp:561
+#, fuzzy
+#| msgctxt "@info:status"
+#| msgid "Strigi service not running."
+msgctxt "@info:status"
+msgid "Email Indexing service is suspended"
+msgstr "Сервисот Strigi не работи."
+
+#: nepomukserverkcm.cpp:565
+#, fuzzy
+#| msgctxt "@info:status"
+#| msgid "Strigi service not running."
+msgctxt "@info:status"
+msgid "Email indexing service not running."
+msgstr "Сервисот Strigi не работи."
+
+#: nepomukserverkcm.cpp:572
+msgid "Resume"
+msgstr ""
+
+#: nepomukserverkcm.cpp:600
 #, kde-format
 msgid "1 existing backup"
 msgid_plural "%1 existing backups"
@@ -508,7 +581,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: nepomukserverkcm.cpp:511
+#: nepomukserverkcm.cpp:604
 #, kde-format
 msgctxt ""
 "@info %1 is the creation date of a backup formatted vi KLocale::"
@@ -516,59 +589,34 @@ msgctxt ""
 msgid "Oldest: %1"
 msgstr ""
 
-#: statuswidget.cpp:128
-#, kde-format
-msgid "1 file in index"
-msgid_plural "%1 files in index"
-msgstr[0] "%1 датотека во индексот"
-msgstr[1] "%1 датотеки во индексот"
-msgstr[2] "%1 датотеки во индексот"
-
-#: statuswidget.cpp:155
 #, fuzzy
-#| msgctxt "@info:status"
-#| msgid "Strigi service not running."
-msgid "File indexing service not running"
-msgstr "Сервисот Strigi не работи."
+#~| msgid "File Indexing"
+#~ msgid "Clear Index"
+#~ msgstr "Индексирање на датотеки"
 
-#: statuswidget.cpp:185
+#~ msgid "1 file in index"
+#~ msgid_plural "%1 files in index"
+#~ msgstr[0] "%1 датотека во индексот"
+#~ msgstr[1] "%1 датотеки во индексот"
+#~ msgstr[2] "%1 датотеки во индексот"
+
 #, fuzzy
-#| msgid "File Indexing"
-msgctxt "Suspends the Nepomuk file indexing service."
-msgid "Suspend File Indexing"
-msgstr "Индексирање на датотеки"
+#~| msgid "File Indexing"
+#~ msgctxt "Suspends the Nepomuk file indexing service."
+#~ msgid "Suspend File Indexing"
+#~ msgstr "Индексирање на датотеки"
 
-#: statuswidget.cpp:189
 #, fuzzy
-#| msgid "File Indexing"
-msgctxt "Resumes the Nepomuk file indexing service."
-msgid "Resume File Indexing"
-msgstr "Индексирање на датотеки"
+#~| msgid "File Indexing"
+#~ msgctxt "Resumes the Nepomuk file indexing service."
+#~ msgid "Resume File Indexing"
+#~ msgstr "Индексирање на датотеки"
 
-#. i18n: ectx: property (text), widget (QLabel, m_labelTitle)
-#: statuswidget.ui:24
-msgid "Nepomuk Repository Details"
-msgstr ""
+#~ msgid "Indexed files:"
+#~ msgstr "Индексирани датотеки:"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: statuswidget.ui:95
-msgid "Indexed files:"
-msgstr "Индексирани датотеки:"
-
-#. i18n: ectx: property (text), widget (QLabel, m_labelFileCount)
-#: statuswidget.ui:108
-msgid "Calculating..."
-msgstr "Пресметувам..."
-
-#. i18n: ectx: property (text), widget (QPushButton, m_configureButton)
-#: statuswidget.ui:164
-msgid "Configure"
-msgstr "Конфигурирај"
-
-#. i18n: ectx: property (text), widget (QPushButton, m_suspendResumeButton)
-#: statuswidget.ui:171
-msgid "Suspend"
-msgstr ""
+#~ msgid "Configure"
+#~ msgstr "Конфигурирај"
 
 #~ msgid "Calculation failed"
 #~ msgstr "Пресметувањето не успеа"
