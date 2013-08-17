@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-08-15 01:39+0000\n"
+"POT-Creation-Date: 2013-08-17 01:40+0000\n"
 "PO-Revision-Date: 2007-02-28 14:08+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -4900,7 +4900,7 @@ msgctxt "Message->"
 msgid "&Reply"
 msgstr "&Одговори"
 
-#: messageactions.cpp:84 searchdialog/searchwindow.cpp:227
+#: messageactions.cpp:84 searchdialog/searchwindow.cpp:231
 msgid "&Reply..."
 msgstr "&Одговори..."
 
@@ -4908,11 +4908,11 @@ msgstr "&Одговори..."
 msgid "Reply to A&uthor..."
 msgstr "Одговори на а&второт..."
 
-#: messageactions.cpp:98 searchdialog/searchwindow.cpp:231
+#: messageactions.cpp:98 searchdialog/searchwindow.cpp:235
 msgid "Reply to &All..."
 msgstr "Одговори на &сите..."
 
-#: messageactions.cpp:105 searchdialog/searchwindow.cpp:235
+#: messageactions.cpp:105 searchdialog/searchwindow.cpp:239
 msgid "Reply to Mailing-&List..."
 msgstr "Одговори на поштенската &листа..."
 
@@ -4957,7 +4957,7 @@ msgstr "Ур&еди ја пораката"
 msgid "Add Note..."
 msgstr "Додај..."
 
-#: messageactions.cpp:174 searchdialog/searchwindow.cpp:239
+#: messageactions.cpp:174 searchdialog/searchwindow.cpp:243
 msgctxt "Message->"
 msgid "&Forward"
 msgstr "&Препрати"
@@ -5117,41 +5117,105 @@ msgctxt "@title:column, folder (e.g. email)"
 msgid "Folder"
 msgstr "Папка"
 
-#: searchdialog/searchwindow.cpp:90
+#: searchdialog/searchdebugdialog.cpp:35
+msgid "Search query debug"
+msgstr ""
+
+#: searchdialog/searchdebugdialog.cpp:37
+#, fuzzy
+msgid "Save As..."
+msgstr "З&ачувај како..."
+
+#: searchdialog/searchdebugdialog.cpp:71
+msgid "all files (*)"
+msgstr ""
+
+#: searchdialog/searchdebugdialog.cpp:81
+#, kde-format
+msgid ""
+"Could not write the file %1:\n"
+"\"%2\" is the detailed error description."
+msgstr ""
+"Не можев да ја запишам датотеката %1:\n"
+"Деталниот опис на грешката е „%2“."
+
+#: searchdialog/searchdebugdialog.cpp:85
+#, fuzzy
+#| msgid "Leave Editor Open"
+msgid "Sieve Editor Error"
+msgstr "Остави го уредувачот отворен"
+
+#: searchdialog/searchdebugwidget.cpp:52
+msgid "UIDS:"
+msgstr ""
+
+#: searchdialog/searchdebugwidget.cpp:53
+#, fuzzy
+#| msgid "&Message"
+msgid "Message:"
+msgstr "&Порака"
+
+#: searchdialog/searchdebugwidget.cpp:57 searchdialog/searchwindow.cpp:410
+#: searchdialog/searchwindow.cpp:438 searchdialog/searchwindow.cpp:441
+#, fuzzy
+msgid "Search"
+msgstr "&Барај:"
+
+#: searchdialog/searchdebugwidget.cpp:176
+#, fuzzy, kde-format
+#| msgid "%1 message"
+#| msgid_plural "%1 messages"
+msgid "1 message found"
+msgid_plural "%1 messages found"
+msgstr[0] "%1 порака"
+msgstr[1] "%1 пораки"
+msgstr[2] "%1 пораки"
+
+#: searchdialog/searchdebugwidget.cpp:195
+#, fuzzy
+#| msgid "Error connecting to server %1"
+msgid "Error on fetching item"
+msgstr "Грешка при поврзувањето со серверот %1"
+
+#: searchdialog/searchwindow.cpp:91
 msgid "Find Messages"
 msgstr "Пронајдете пораки"
 
-#: searchdialog/searchwindow.cpp:102
+#: searchdialog/searchwindow.cpp:103
 #, fuzzy
 msgctxt "@action:button Search for messages"
 msgid "&Search"
 msgstr "&Барај:"
 
-#: searchdialog/searchwindow.cpp:189 searchdialog/searchwindow.cpp:382
+#: searchdialog/searchwindow.cpp:108
+msgid "Debug query"
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:193 searchdialog/searchwindow.cpp:386
 msgid "Last Search"
 msgstr "Последното барање"
 
-#: searchdialog/searchwindow.cpp:244
+#: searchdialog/searchwindow.cpp:248
 #, fuzzy
 #| msgid "&Inline..."
 msgctxt "@action:inmenu Forward message inline."
 msgid "&Inline..."
 msgstr "&Внатрешно..."
 
-#: searchdialog/searchwindow.cpp:249
+#: searchdialog/searchwindow.cpp:253
 msgctxt "Message->Forward->"
 msgid "As &Attachment..."
 msgstr "Како &прилог..."
 
-#: searchdialog/searchwindow.cpp:263
+#: searchdialog/searchwindow.cpp:267
 msgid "Save Attachments..."
 msgstr "Зачувај прилози..."
 
-#: searchdialog/searchwindow.cpp:269
+#: searchdialog/searchwindow.cpp:273
 msgid "Clear Selection"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:353
+#: searchdialog/searchwindow.cpp:357
 #, kde-format
 msgid "%1 match"
 msgid_plural "%1 matches"
@@ -5159,23 +5223,37 @@ msgstr[0] "%1 совпаѓање"
 msgstr[1] "%1 совпаѓања"
 msgstr[2] "%1 совпаѓања"
 
-#: searchdialog/searchwindow.cpp:443
+#: searchdialog/searchwindow.cpp:410
+#, fuzzy
+#| msgid "Could not sync maildir folder."
+msgid "You did not selected a valid folder."
+msgstr "Не можам да ја синхронизирам maildir-папката."
+
+#: searchdialog/searchwindow.cpp:438
+msgid "You forgot to define condition."
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:441
+msgid "All folders selected are empty or were not indexed."
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:463
 #, fuzzy
 msgid "Searching..."
 msgstr "&Испраќање"
 
-#: searchdialog/searchwindow.cpp:451
+#: searchdialog/searchwindow.cpp:471
 #, kde-format
 msgid "Can not get search result. %1"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:562
+#: searchdialog/searchwindow.cpp:582
 msgid ""
 "There was a problem renaming your search folder. A common reason for this is "
 "that another search folder with the same name already exists."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:665
+#: searchdialog/searchwindow.cpp:685
 #, fuzzy, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
@@ -5183,7 +5261,7 @@ msgstr[0] "Отворете порака"
 msgstr[1] "Отворете порака"
 msgstr[2] "Отворете порака"
 
-#: searchdialog/searchwindow.cpp:668
+#: searchdialog/searchwindow.cpp:688
 #, fuzzy, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
@@ -7476,13 +7554,6 @@ msgstr "Надворешен уредувач"
 #~ msgid "unlimited"
 #~ msgstr "неограничено"
 
-#~ msgid ""
-#~ "Could not write the file %1:\n"
-#~ "\"%2\" is the detailed error description."
-#~ msgstr ""
-#~ "Не можев да ја запишам датотеката %1:\n"
-#~ "Деталниот опис на грешката е „%2“."
-
 #~ msgid "Not enough free disk space?"
 #~ msgstr "Нема доволно слободен простор на дискот?"
 
@@ -9645,10 +9716,6 @@ msgstr "Надворешен уредувач"
 #~ msgid "&Save Attachment As..."
 #~ msgstr "За&чувај го прилогот како..."
 
-#, fuzzy
-#~ msgid "Save As..."
-#~ msgstr "З&ачувај како..."
-
 #~ msgid "Attachment Pr&operties"
 #~ msgstr "Својства на прил&огот"
 
@@ -10967,9 +11034,6 @@ msgstr "Надворешен уредувач"
 #~ msgid "Connecting to server %1, please wait..."
 #~ msgstr "Се поврзувам со серверот %1, почекајте..."
 
-#~ msgid "Error connecting to server %1"
-#~ msgstr "Грешка при поврзувањето со серверот %1"
-
 #~ msgid ""
 #~ "This IMAP server does not have support for access control lists (ACL)"
 #~ msgstr ""
@@ -11533,9 +11597,6 @@ msgstr "Надворешен уредувач"
 #~ "Грешка при отворањето на %1. Или ова не е валидна maildir-папка или "
 #~ "немате доволни дозволи за пристап."
 
-#~ msgid "Could not sync maildir folder."
-#~ msgstr "Не можам да ја синхронизирам maildir-папката."
-
 #~ msgid ""
 #~ "Message could not be added to the folder, possibly disk space is low."
 #~ msgstr ""
@@ -11606,11 +11667,6 @@ msgstr "Надворешен уредувач"
 #~ msgctxt "type of folder storage"
 #~ msgid "IMAP"
 #~ msgstr "IMAP"
-
-#, fuzzy
-#~ msgctxt "type of folder storage"
-#~ msgid "Search"
-#~ msgstr "&Барај:"
 
 #, fuzzy
 #~| msgid "Unknown"
@@ -15080,9 +15136,6 @@ msgstr "Надворешен уредувач"
 #~ msgid "Abort Editor"
 #~ msgstr "Прекини го уредувачот"
 
-#~ msgid "Leave Editor Open"
-#~ msgstr "Остави го уредувачот отворен"
-
 #~ msgid " Spell check canceled."
 #~ msgstr " Проверката на правопис е откажана."
 
@@ -15621,9 +15674,3 @@ msgstr "Надворешен уредувач"
 
 #~ msgid "Filtering of incoming mail for online IMAP accounts"
 #~ msgstr "Филтрирање на дојдовната поште за мрежните IMAP-сметки"
-
-#~ msgid "%1 message"
-#~ msgid_plural "%1 messages"
-#~ msgstr[0] "%1 порака"
-#~ msgstr[1] "%1 пораки"
-#~ msgstr[2] "%1 пораки"
