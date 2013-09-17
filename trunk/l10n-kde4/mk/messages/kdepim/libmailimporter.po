@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-08-01 01:38+0000\n"
+"POT-Creation-Date: 2013-09-17 01:46+0000\n"
 "PO-Revision-Date: 2007-02-28 14:27+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -85,9 +85,10 @@ msgstr "Нема пронајдени папки за внесување."
 
 #: filter_evolution.cpp:87 filter_evolution_v2.cpp:129
 #: filter_evolution_v3.cpp:111 filter_kmail_maildir.cpp:104
-#: filter_mailapp.cpp:134 filter_mbox.cpp:141 filter_opera.cpp:139
-#: filter_plain.cpp:83 filter_pmail.cpp:82 filter_sylpheed.cpp:139
-#: filter_thebat.cpp:101 filter_thunderbird.cpp:182 filterbalsa.cpp:113
+#: filter_mailapp.cpp:134 filter_mailmangzip.cpp:143 filter_mbox.cpp:141
+#: filter_opera.cpp:139 filter_plain.cpp:83 filter_pmail.cpp:82
+#: filter_sylpheed.cpp:139 filter_thebat.cpp:101 filter_thunderbird.cpp:182
+#: filterbalsa.cpp:113
 #, kde-format
 msgid "Finished importing emails from %1"
 msgstr "Завршив со внесување е-пораки од %1"
@@ -100,8 +101,8 @@ msgstr "Завршив со внесување е-пораки од %1"
 msgid "Unable to open %1, skipping"
 msgstr "Не можам да го отворам %1, прескокам"
 
-#: filter_evolution.cpp:158 filter_mailapp.cpp:85 filter_mbox.cpp:73
-#: filter_opera.cpp:83
+#: filter_evolution.cpp:158 filter_mailapp.cpp:85 filter_mailmangzip.cpp:73
+#: filter_mbox.cpp:73 filter_opera.cpp:83
 #, kde-format
 msgid "Importing emails from %1..."
 msgstr "Внесувам е-пораки од %1..."
@@ -144,10 +145,10 @@ msgid "Start import file %1..."
 msgstr "Почеток на внесување на датотеката %1..."
 
 #: filter_evolution_v2.cpp:134 filter_evolution_v3.cpp:118
-#: filter_kmail_maildir.cpp:110 filter_mailapp.cpp:144 filter_mbox.cpp:148
-#: filter_oe.cpp:113 filter_opera.cpp:200 filter_plain.cpp:88
-#: filter_sylpheed.cpp:145 filter_thebat.cpp:107 filter_thunderbird.cpp:188
-#: filterbalsa.cpp:120
+#: filter_kmail_maildir.cpp:110 filter_mailapp.cpp:144
+#: filter_mailmangzip.cpp:150 filter_mbox.cpp:148 filter_oe.cpp:113
+#: filter_opera.cpp:200 filter_plain.cpp:88 filter_sylpheed.cpp:145
+#: filter_thebat.cpp:107 filter_thunderbird.cpp:188 filterbalsa.cpp:120
 msgid "Finished import, canceled by user."
 msgstr "Внесувањето е завршено, прекинато од корисникот."
 
@@ -340,7 +341,8 @@ msgstr ""
 msgid "All Files (*)"
 msgstr "Сите датотеки (*)"
 
-#: filter_lnotes.cpp:58 filter_mailapp.cpp:62 filter_mbox.cpp:48
+#: filter_lnotes.cpp:58 filter_mailapp.cpp:62 filter_mailmangzip.cpp:46
+#: filter_mbox.cpp:48
 #, fuzzy
 #| msgid "No directory selected."
 msgid "No files selected."
@@ -373,13 +375,48 @@ msgstr ""
 "<p><b>Филтер за внес на е-пошта од OS X</b></p><p>Овој филтер внесува е-"
 "пошта од клиентот за е-пошта во Apple Mac OS X.</p>"
 
-#: filter_mailapp.cpp:136 filter_mbox.cpp:143
+#: filter_mailapp.cpp:136 filter_mailmangzip.cpp:145 filter_mbox.cpp:143
 #, kde-format
 msgid "1 duplicate message not imported to folder %2 in KMail"
 msgid_plural "%1 duplicate messages not imported to folder %2 in KMail"
 msgstr[0] "Не е внесена %1 порака-дупликат во папката %2 во КПошта"
 msgstr[1] "Не се внесени %1 пораки-дупликати во папката %2 во КПошта"
 msgstr[2] "Не се внесени %1 пораки-дупликати во папката %2 во КПошта"
+
+#: filter_mailmangzip.cpp:29
+#, fuzzy
+#| msgid "Importing new mail files..."
+msgid "Import mailman gzip Files"
+msgstr "Внесувам нови датотеки со пошта..."
+
+#: filter_mailmangzip.cpp:31
+#, fuzzy
+#| msgid ""
+#| "<p><b>mbox import filter</b></p><p>This filter will import mbox files "
+#| "into KMail. Use this filter if you want to import mails from Ximian "
+#| "Evolution or other mailers that use this traditional UNIX format.</"
+#| "p><p><b>Note:</b> Emails will be imported into folders named after the "
+#| "file they came from, prefixed with MBOX-</p>"
+msgid ""
+"<p><b>mailman gzip import filter</b></p><p>This filter will import mailman "
+"gzipped files into KMail.</p><p><b>Note:</b> Emails will be imported into "
+"folders named after the file they came from, prefixed with MAILMAN-</p>"
+msgstr ""
+"<p><b>Филтер за внесување на mbox-датотеки</b></p><p>Овој филтер ќе ги внесе "
+"mbox-датотеките во KMail. Користете го овој филтер ако сакате да внесете "
+"пораки од Ximian Evolution или други програми што го користат овој "
+"традиционален UNIX-формат.</p><p><b>Забелешка:</b> Пораките ќе бидат внесени "
+"во папки именувани според датотеката од која што дошле, со префикс MBOX-</p>"
+
+#: filter_mailmangzip.cpp:44
+msgid "gzip Files (*.txt.gz)"
+msgstr ""
+
+#: filter_mailmangzip.cpp:64
+#, fuzzy, kde-format
+#| msgid "Unable to open mailbox %1"
+msgid "Unable to open archive file '%1', skipping"
+msgstr "Не можам да го отворам пошт. сандаче %1"
 
 #: filter_mbox.cpp:28
 msgid "Import mbox Files (UNIX, Evolution)"
