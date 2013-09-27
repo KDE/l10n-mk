@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-26 01:44+0000\n"
+"POT-Creation-Date: 2013-09-27 01:50+0000\n"
 "PO-Revision-Date: 2007-02-28 14:08+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -22,8 +22,113 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
+#: adblock/adblockmanager.cpp:352
+#, fuzzy
+msgctxt "@title:window"
+msgid "Ad Block Settings"
+msgstr "&Испраќање"
+
+#: adblock/adblocksettingwidget.cpp:53
+msgid ""
+"<qt>Filter expression (e.g. <tt>http://www.example.com/ad/*</tt>, <a href="
+"\"filterhelp\">more information</a>):"
+msgstr ""
+
+#: adblock/adblocksettingwidget.cpp:69
+msgid " day"
+msgid_plural " days"
+msgstr[0] " ден"
+msgstr[1] " дена"
+msgstr[2] " дена"
+
+#: adblock/adblocksettingwidget.cpp:86
+msgid ""
+"<qt><p>Enter an expression to filter. Filters can be defined as either:"
+"<ul><li>a shell-style wildcard, e.g. <tt>http://www.example.com/ads*</tt>, "
+"the wildcards <tt>*?[]</tt> may be used</li><li>a full regular expression by "
+"surrounding the string with '<tt>/</tt>', e.g. <tt>/\\/(ad|banner)\\./</tt></"
+"li></ul><p>Any filter string can be preceded by '<tt>@@</tt>' to whitelist "
+"(allow) any matching URL, which takes priority over any blacklist (blocking) "
+"filter."
+msgstr ""
+
 #: adblock/networkaccessmanager.cpp:51
 msgid "Blocked by ad filter"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, BlockedLabel)
+#: adblock/ui/blocked_elements.ui:17
+msgid ""
+"<html><head/><body><p><span style=\" font-weight:600;\">Blocked elements</"
+"span></p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, HidedLabel)
+#: adblock/ui/blocked_elements.ui:101
+#, fuzzy
+#| msgid "Hidden Recipients"
+msgid "<b>Hidden elements</b>"
+msgstr "Скриени приматели"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: adblock/ui/blocked_elements.ui:108
+msgid "TextLabel"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, checkEnableAdblock)
+#: adblock/ui/settings_adblock.ui:17
+msgid "&Enable Ad Block"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, checkHideAds)
+#: adblock/ui/settings_adblock.ui:24
+msgid "&Hide filtered elements"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_3)
+#: adblock/ui/settings_adblock.ui:38
+#, fuzzy
+#| msgid "Never Automatically"
+msgid "Automatic Filters"
+msgstr "Никогаш автоматски"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: adblock/ui/settings_adblock.ui:49
+msgid "Update enabled automatic filters every:"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: adblock/ui/settings_adblock.ui:88
+#, fuzzy
+#| msgid "Available Filters"
+msgid "Manual Filters"
+msgstr "Достапни филтри"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: adblock/ui/settings_adblock.ui:96
+#, fuzzy
+#| msgid "&Search:"
+msgid "Search:"
+msgstr "&Барај:"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, insertButton)
+#: adblock/ui/settings_adblock.ui:123
+#, fuzzy
+#| msgid "Add Permissions"
+msgid "Add filter expression"
+msgstr "Додајте дозволи"
+
+#. i18n: ectx: property (text), widget (QToolButton, insertButton)
+#. i18n: ectx: property (text), widget (QToolButton, removeButton)
+#: adblock/ui/settings_adblock.ui:126 adblock/ui/settings_adblock.ui:136
+#, fuzzy
+#| msgid "Add..."
+msgid "..."
+msgstr "Додај..."
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, removeButton)
+#: adblock/ui/settings_adblock.ui:133
+msgid "Remove filter expression"
 msgstr ""
 
 #: findbar/findbarbase.cpp:48 findbar/findbarbase.cpp:51
@@ -3985,9 +4090,6 @@ msgstr "&Претходна картичка"
 #~ msgid "Modify Permissions"
 #~ msgstr "Изменете дозволи"
 
-#~ msgid "Add Permissions"
-#~ msgstr "Додајте дозволи"
-
 #~ msgid ""
 #~ "Do you really want to remove your own permissions for this folder? You "
 #~ "will not be able to access it afterwards."
@@ -5575,12 +5677,6 @@ msgstr "&Претходна картичка"
 #~ "Менувањето на глобалното поставување за HTML ќе ги пребрише сите "
 #~ "вредности специфични за папките."
 
-#~ msgid " day"
-#~ msgid_plural " days"
-#~ msgstr[0] " ден"
-#~ msgstr[1] " дена"
-#~ msgstr[2] " дена"
-
 #~ msgid "This option requires dirmngr >= 0.9.0"
 #~ msgstr "Оваа опција побарува dirmngr >= 0.9.0"
 
@@ -6132,11 +6228,6 @@ msgstr "&Претходна картичка"
 #~ msgstr "BCC"
 
 #, fuzzy
-#~| msgid "Available Filters"
-#~ msgid "KMail Filter"
-#~ msgstr "Достапни филтри"
-
-#, fuzzy
 #~| msgid "is in category"
 #~ msgid "with category"
 #~ msgstr "е во категоријата"
@@ -6520,12 +6611,6 @@ msgstr "&Претходна картичка"
 #~| msgid "Search Criteria"
 #~ msgid "Search &Directory Service"
 #~ msgstr "Критериум за пребарување"
-
-#, fuzzy
-#~| msgid "&Search:"
-#~ msgctxt "Search for recipient."
-#~ msgid "Search:"
-#~ msgstr "&Барај:"
 
 #, fuzzy
 #~| msgid "Add as Text"
@@ -7648,11 +7733,6 @@ msgstr "&Претходна картичка"
 #~ msgid "Check inter&val:"
 #~ msgstr "Интер&вал за проверување:"
 
-#, fuzzy
-#~ msgctxt "@title:tab"
-#~ msgid "IMAP Settings"
-#~ msgstr "&Испраќање"
-
 #~ msgid "Automaticall&y compact folders (expunges deleted messages)"
 #~ msgstr ""
 #~ "Компактирај ги папките автоматск&и (ги отстранува избришаните пораки)"
@@ -7706,11 +7786,6 @@ msgstr "&Претходна картичка"
 #~| msgid "Replace:"
 #~ msgid "Namespaces:"
 #~ msgstr "Замени:"
-
-#, fuzzy
-#~| msgid "Add..."
-#~ msgid "..."
-#~ msgstr "Додај..."
 
 #, fuzzy
 #~| msgid "Personal"
@@ -11737,12 +11812,6 @@ msgstr "&Претходна картичка"
 #~ msgstr "Нема"
 
 #, fuzzy
-#~| msgid "Never Automatically"
-#~ msgctxt "@action:inmenu Group header background color setting"
-#~ msgid "Automatic"
-#~ msgstr "Никогаш автоматски"
-
-#, fuzzy
 #~| msgid "Alternative Background Color"
 #~ msgid "Background Color"
 #~ msgstr "Алтернативна боја на подлога"
@@ -12810,9 +12879,6 @@ msgstr "&Претходна картичка"
 
 #~ msgid "&Blind copy to (BCC):"
 #~ msgstr "С&лепа копија до (BCC):"
-
-#~ msgid "Hidden Recipients"
-#~ msgstr "Скриени приматели"
 
 #~ msgid ""
 #~ "<qt>Essentially the same thing as the <b>Copy To:</b> field but differs "
