@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-27 01:50+0000\n"
+"POT-Creation-Date: 2013-09-28 01:40+0000\n"
 "PO-Revision-Date: 2007-02-28 14:08+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -22,26 +22,30 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
 
-#: adblock/adblockmanager.cpp:352
+#: adblock/adblockaddsubscriptiondialog.cpp:31
 #, fuzzy
-msgctxt "@title:window"
-msgid "Ad Block Settings"
-msgstr "&Испраќање"
+msgid "Add subscription"
+msgstr "Опис"
 
-#: adblock/adblocksettingwidget.cpp:53
+#: adblock/adblockaddsubscriptiondialog.cpp:36
+#, fuzzy
+msgid "Select List:"
+msgstr "Изберете папка"
+
+#: adblock/adblocksettingwidget.cpp:58
 msgid ""
 "<qt>Filter expression (e.g. <tt>http://www.example.com/ad/*</tt>, <a href="
 "\"filterhelp\">more information</a>):"
 msgstr ""
 
-#: adblock/adblocksettingwidget.cpp:69
+#: adblock/adblocksettingwidget.cpp:73
 msgid " day"
 msgid_plural " days"
 msgstr[0] " ден"
 msgstr[1] " дена"
 msgstr[2] " дена"
 
-#: adblock/adblocksettingwidget.cpp:86
+#: adblock/adblocksettingwidget.cpp:91
 msgid ""
 "<qt><p>Enter an expression to filter. Filters can be defined as either:"
 "<ul><li>a shell-style wildcard, e.g. <tt>http://www.example.com/ads*</tt>, "
@@ -52,7 +56,17 @@ msgid ""
 "filter."
 msgstr ""
 
-#: adblock/networkaccessmanager.cpp:51
+#: adblock/adblocksettingwidget.cpp:253
+msgid "Do you want to delete current list?"
+msgstr ""
+
+#: adblock/adblocksettingwidget.cpp:253
+#, fuzzy
+#| msgid "&Remove Attachment"
+msgid "Delete current list"
+msgstr "Отст&рани го прилогот"
+
+#: adblock/networkaccessmanager.cpp:52
 msgid "Blocked by ad filter"
 msgstr ""
 
@@ -92,27 +106,39 @@ msgstr ""
 msgid "Automatic Filters"
 msgstr "Никогаш автоматски"
 
+#. i18n: ectx: property (text), widget (QPushButton, addFilters)
+#: adblock/ui/settings_adblock.ui:47
+#, fuzzy
+msgid "Add Filters subscriptions..."
+msgstr "Опис"
+
+#. i18n: ectx: property (text), widget (QPushButton, removeSubscription)
+#: adblock/ui/settings_adblock.ui:54
+#, fuzzy
+msgid "Remove subscrition"
+msgstr "Опис"
+
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: adblock/ui/settings_adblock.ui:49
+#: adblock/ui/settings_adblock.ui:76
 msgid "Update enabled automatic filters every:"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: adblock/ui/settings_adblock.ui:88
+#: adblock/ui/settings_adblock.ui:115
 #, fuzzy
 #| msgid "Available Filters"
 msgid "Manual Filters"
 msgstr "Достапни филтри"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: adblock/ui/settings_adblock.ui:96
+#: adblock/ui/settings_adblock.ui:123
 #, fuzzy
 #| msgid "&Search:"
 msgid "Search:"
 msgstr "&Барај:"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, insertButton)
-#: adblock/ui/settings_adblock.ui:123
+#: adblock/ui/settings_adblock.ui:150
 #, fuzzy
 #| msgid "Add Permissions"
 msgid "Add filter expression"
@@ -120,14 +146,14 @@ msgstr "Додајте дозволи"
 
 #. i18n: ectx: property (text), widget (QToolButton, insertButton)
 #. i18n: ectx: property (text), widget (QToolButton, removeButton)
-#: adblock/ui/settings_adblock.ui:126 adblock/ui/settings_adblock.ui:136
+#: adblock/ui/settings_adblock.ui:153 adblock/ui/settings_adblock.ui:163
 #, fuzzy
 #| msgid "Add..."
 msgid "..."
 msgstr "Додај..."
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, removeButton)
-#: adblock/ui/settings_adblock.ui:133
+#: adblock/ui/settings_adblock.ui:160
 msgid "Remove filter expression"
 msgstr ""
 
@@ -756,32 +782,42 @@ msgstr ""
 msgid "Enabled ad block"
 msgstr ""
 
+#. i18n: ectx: label, entry (HideAdsEnabled), group (Reader)
+#: settings/messageviewer.kcfg.cmake:179
+msgid "Hide advertisement enabled"
+msgstr ""
+
+#. i18n: ectx: label, entry (AdBlockUpdateInterval), group (Reader)
+#: settings/messageviewer.kcfg.cmake:183
+msgid "Update interval list of adblock"
+msgstr ""
+
 #. i18n: ectx: label, entry (notSendWhenEncrypted), group (MDN)
-#: settings/messageviewer.kcfg.cmake:189
+#: settings/messageviewer.kcfg.cmake:204
 msgid "Do not send MDNs in response to encrypted messages"
 msgstr "Не испраќај известувања како одговор на криптирани пораки"
 
 #. i18n: ectx: label, entry (DefaultPolicy), group (MDN)
-#: settings/messageviewer.kcfg.cmake:193
+#: settings/messageviewer.kcfg.cmake:208
 msgid ""
 "Specifies the default policy to use, for the Message Disposition "
 "Notifications (for internal use only)"
 msgstr ""
 
 #. i18n: ectx: label, entry (QuoteMessage), group (MDN)
-#: settings/messageviewer.kcfg.cmake:197
+#: settings/messageviewer.kcfg.cmake:212
 msgid ""
 "Specifies the default quoting action to take, when replying to a message "
 "(for internal use only)"
 msgstr ""
 
 #. i18n: ectx: label, entry (LegacyMangleFromToHeaders), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:213
+#: settings/messageviewer.kcfg.cmake:228
 msgid "Mangle From:/To: headers in replies to replies"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (LegacyMangleFromToHeaders), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:214
+#: settings/messageviewer.kcfg.cmake:229
 msgid ""
 "Microsoft Outlook has a number of shortcomings in its implementation of the "
 "iCalendar standard; this option works around one of them. If you have "
@@ -790,12 +826,12 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (LegacyBodyInvites), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:219
+#: settings/messageviewer.kcfg.cmake:234
 msgid "Send groupware invitations in the mail body"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (LegacyBodyInvites), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:220
+#: settings/messageviewer.kcfg.cmake:235
 msgid ""
 "Microsoft Outlook has a number of shortcomings in its implementation of the "
 "iCalendar standard; this option works around one of them. If you have "
@@ -804,14 +840,14 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (ExchangeCompatibleInvitations), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:225
+#: settings/messageviewer.kcfg.cmake:240
 #, fuzzy
 #| msgid "Outlook-compatible attachment naming"
 msgid "Exchange-compatible invitation naming"
 msgstr "Именување на прилози соодветно на Outlook"
 
 #. i18n: ectx: whatsthis, entry (ExchangeCompatibleInvitations), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:226
+#: settings/messageviewer.kcfg.cmake:241
 msgid ""
 "Microsoft Outlook, when used in combination with a Microsoft Exchange "
 "server, has a problem understanding standards-compliant groupware email. "
@@ -821,14 +857,14 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mOutlookCompatibleInvitationComments)
 #. i18n: ectx: label, entry (OutlookCompatibleInvitationReplyComments), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:231 ui/invitationsettings.ui:58
+#: settings/messageviewer.kcfg.cmake:246 ui/invitationsettings.ui:58
 #, fuzzy
 #| msgid "Outlook-compatible attachment naming"
 msgid "Outlook compatible invitation reply comments"
 msgstr "Именување на прилози соодветно на Outlook"
 
 #. i18n: ectx: whatsthis, entry (OutlookCompatibleInvitationReplyComments), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:232
+#: settings/messageviewer.kcfg.cmake:247
 msgid ""
 "When replying to invitations, send the reply comment in way that Microsoft "
 "Outlook understands."
@@ -836,27 +872,27 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mOutlookCompatibleInvitationComparisons)
 #. i18n: ectx: label, entry (OutlookCompatibleInvitationComparisons), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:237 ui/invitationsettings.ui:71
+#: settings/messageviewer.kcfg.cmake:252 ui/invitationsettings.ui:71
 msgid "Show invitation update differences in the Outlook style"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mOutlookCompatibleInvitationComparisons)
 #. i18n: ectx: whatsthis, entry (OutlookCompatibleInvitationComparisons), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:238 ui/invitationsettings.ui:68
+#: settings/messageviewer.kcfg.cmake:253 ui/invitationsettings.ui:68
 msgid ""
 "When viewing invitation updates, show the differences in the Microsoft "
 "Outlook style."
 msgstr ""
 
 #. i18n: ectx: label, entry (AutomaticSending), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:243
+#: settings/messageviewer.kcfg.cmake:258
 #, fuzzy
 #| msgid "Outlook-compatible attachment naming"
 msgid "Automatic invitation sending"
 msgstr "Именување на прилози соодветно на Outlook"
 
 #. i18n: ectx: whatsthis, entry (AutomaticSending), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:244
+#: settings/messageviewer.kcfg.cmake:259
 msgid ""
 "When this is checked, you will not see the mail composer window. Instead, "
 "all invitation mails are sent automatically. If you want to see the mail "
@@ -867,19 +903,19 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mDeleteInvitations)
 #. i18n: ectx: label, entry (DeleteInvitationEmailsAfterSendingReply), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:249 ui/invitationsettings.ui:100
+#: settings/messageviewer.kcfg.cmake:264 ui/invitationsettings.ui:100
 msgid "Delete invitation emails after the reply to them has been sent"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (DeleteInvitationEmailsAfterSendingReply), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:250
+#: settings/messageviewer.kcfg.cmake:265
 msgid ""
 "When this is checked, received invitation emails that have been replied to "
 "will be moved to the Trash folder, once the reply has been successfully sent."
 msgstr ""
 
 #. i18n: ectx: label, entry (UseFixedFont), group (Composer)
-#: settings/messageviewer.kcfg.cmake:274 viewer/viewer_p.cpp:1707
+#: settings/messageviewer.kcfg.cmake:289 viewer/viewer_p.cpp:1704
 msgid "Use Fi&xed Font"
 msgstr "Користи фи&ксен фонт"
 
@@ -1238,7 +1274,7 @@ msgstr ""
 msgid "Unable to edit attachment"
 msgstr "Име на прилогот:"
 
-#: viewer/mailsourceviewer.cpp:122 viewer/viewer_p.cpp:1806
+#: viewer/mailsourceviewer.cpp:122 viewer/viewer_p.cpp:1803
 msgid "Speak Text"
 msgstr ""
 
@@ -1484,54 +1520,54 @@ msgstr ""
 msgid "Show Raw Message"
 msgstr "Препратена порака"
 
-#: viewer/objecttreeparser.cpp:2067 viewer/viewer_p.cpp:2915
+#: viewer/objecttreeparser.cpp:2067 viewer/viewer_p.cpp:2916
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2073 viewer/viewer_p.cpp:2917
-#: viewer/viewer_p.cpp:2922 viewer/viewer_p.cpp:2931 viewer/viewer_p.cpp:2940
-#: viewer/viewer_p.cpp:2958 viewer/viewer_p.cpp:2970 viewer/viewer_p.cpp:3010
+#: viewer/objecttreeparser.cpp:2073 viewer/viewer_p.cpp:2918
+#: viewer/viewer_p.cpp:2923 viewer/viewer_p.cpp:2932 viewer/viewer_p.cpp:2941
+#: viewer/viewer_p.cpp:2959 viewer/viewer_p.cpp:2971 viewer/viewer_p.cpp:3011
 msgid "Chiasmus Backend Error"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2079 viewer/viewer_p.cpp:2928
+#: viewer/objecttreeparser.cpp:2079 viewer/viewer_p.cpp:2929
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2087 viewer/viewer_p.cpp:2937
+#: viewer/objecttreeparser.cpp:2087 viewer/viewer_p.cpp:2938
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2093 viewer/viewer_p.cpp:2944
+#: viewer/objecttreeparser.cpp:2093 viewer/viewer_p.cpp:2945
 #, fuzzy
 #| msgid "Encryption Key Selection"
 msgid "Chiasmus Decryption Key Selection"
 msgstr "Избор на клуч за криптирање"
 
-#: viewer/objecttreeparser.cpp:2106 viewer/viewer_p.cpp:2956
+#: viewer/objecttreeparser.cpp:2106 viewer/viewer_p.cpp:2957
 msgid ""
 "Chiasmus backend does not offer the \"x-decrypt\" function. Please report "
 "this bug."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2114 viewer/viewer_p.cpp:2968
+#: viewer/objecttreeparser.cpp:2114 viewer/viewer_p.cpp:2969
 msgid ""
 "The \"x-decrypt\" function does not accept the expected parameters. Please "
 "report this bug."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2120 viewer/viewer_p.cpp:2975
-#: viewer/viewer_p.cpp:3002
+#: viewer/objecttreeparser.cpp:2120 viewer/viewer_p.cpp:2976
+#: viewer/viewer_p.cpp:3003
 msgid "Chiasmus Decryption Error"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2126 viewer/viewer_p.cpp:3007
+#: viewer/objecttreeparser.cpp:2126 viewer/viewer_p.cpp:3008
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-decrypt\" function "
 "did not return a byte array. Please report this bug."
@@ -1846,7 +1882,7 @@ msgstr "Не е достапно"
 msgid "Turn on HTML rendering for this message."
 msgstr "Го вклучува исцртувањето на HTML за оваа порака."
 
-#: viewer/urlhandlermanager.cpp:522 viewer/viewer_p.cpp:1803
+#: viewer/urlhandlermanager.cpp:522 viewer/viewer_p.cpp:1800
 msgid "Load external references from the Internet for this message."
 msgstr "Вчитува надворешни референци за оваа порака од Интернет"
 
@@ -1951,7 +1987,7 @@ msgstr "Отвори во адресарот"
 msgid "&Copy Email Address"
 msgstr "Е-поштенска адреса"
 
-#: viewer/urlhandlermanager.cpp:737 viewer/viewer_p.cpp:2772
+#: viewer/urlhandlermanager.cpp:737 viewer/viewer_p.cpp:2773
 msgid "Address copied to clipboard."
 msgstr "Адресата е копирана на таблата со исечоци."
 
@@ -2016,7 +2052,7 @@ msgid ""
 msgstr ""
 
 #: viewer/viewer_p.cpp:417 viewer/viewer_p.cpp:423 viewer/viewer_p.cpp:660
-#: viewer/viewer_p.cpp:1888
+#: viewer/viewer_p.cpp:1889
 #, fuzzy
 #| msgid "&Remove Attachment"
 msgid "Delete Attachment"
@@ -2034,7 +2070,7 @@ msgid ""
 "message."
 msgstr ""
 
-#: viewer/viewer_p.cpp:488 viewer/viewer_p.cpp:654 viewer/viewer_p.cpp:1892
+#: viewer/viewer_p.cpp:488 viewer/viewer_p.cpp:654 viewer/viewer_p.cpp:1893
 #, fuzzy
 #| msgid "Attachment"
 msgid "Edit Attachment"
@@ -2066,12 +2102,12 @@ msgctxt "@title:menu"
 msgid "&Open With..."
 msgstr "&Отвори со..."
 
-#: viewer/viewer_p.cpp:616 viewer/viewer_p.cpp:1865
+#: viewer/viewer_p.cpp:616 viewer/viewer_p.cpp:1866
 msgctxt "to open"
 msgid "Open"
 msgstr "Отвори"
 
-#: viewer/viewer_p.cpp:624 viewer/viewer_p.cpp:1872
+#: viewer/viewer_p.cpp:624 viewer/viewer_p.cpp:1873
 msgctxt "to view something"
 msgid "View"
 msgstr "Прегледај"
@@ -2080,7 +2116,7 @@ msgstr "Прегледај"
 msgid "Scroll To"
 msgstr ""
 
-#: viewer/viewer_p.cpp:642 viewer/viewer_p.cpp:1884
+#: viewer/viewer_p.cpp:642 viewer/viewer_p.cpp:1885
 #, fuzzy
 msgid "Copy"
 msgstr "&Копирај во"
@@ -2089,7 +2125,7 @@ msgstr "&Копирај во"
 msgid "Decrypt With Chiasmus..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:671 viewer/viewer_p.cpp:1897
+#: viewer/viewer_p.cpp:671 viewer/viewer_p.cpp:1898
 #, fuzzy
 msgid "Properties"
 msgstr "&Својства"
@@ -2100,21 +2136,21 @@ msgstr "&Својства"
 msgid "The KDE email client."
 msgstr "Клиентот на KDE за електронска пошта"
 
-#: viewer/viewer_p.cpp:1410
+#: viewer/viewer_p.cpp:1407
 #, kde-format
 msgid "View Attachment: %1"
 msgstr "Преглед на прилогот %1"
 
-#: viewer/viewer_p.cpp:1567
+#: viewer/viewer_p.cpp:1564
 msgctxt "View->"
 msgid "&Headers"
 msgstr "&Заглавија"
 
-#: viewer/viewer_p.cpp:1569
+#: viewer/viewer_p.cpp:1566
 msgid "Choose display style of message headers"
 msgstr "Изберете стил на прикажување на заглавијата на пораките"
 
-#: viewer/viewer_p.cpp:1572
+#: viewer/viewer_p.cpp:1569
 #, fuzzy
 #| msgctxt "View->headers->"
 #| msgid "&Brief Headers"
@@ -2122,58 +2158,58 @@ msgctxt "View->headers->"
 msgid "&Enterprise Headers"
 msgstr "&Кратки заглавија"
 
-#: viewer/viewer_p.cpp:1575
+#: viewer/viewer_p.cpp:1572
 #, fuzzy
 #| msgid "Show the list of headers in a fancy format"
 msgid "Show the list of headers in Enterprise style"
 msgstr "Ја покажува листата на заглавија во стилизиран формат"
 
-#: viewer/viewer_p.cpp:1579
+#: viewer/viewer_p.cpp:1576
 msgctxt "View->headers->"
 msgid "&Fancy Headers"
 msgstr "&Стилизирани заглавија"
 
-#: viewer/viewer_p.cpp:1582
+#: viewer/viewer_p.cpp:1579
 msgid "Show the list of headers in a fancy format"
 msgstr "Ја покажува листата на заглавија во стилизиран формат"
 
-#: viewer/viewer_p.cpp:1586
+#: viewer/viewer_p.cpp:1583
 msgctxt "View->headers->"
 msgid "&Brief Headers"
 msgstr "&Кратки заглавија"
 
-#: viewer/viewer_p.cpp:1589
+#: viewer/viewer_p.cpp:1586
 msgid "Show brief list of message headers"
 msgstr "Покажува кратка листа на заглавија на пораките"
 
-#: viewer/viewer_p.cpp:1593
+#: viewer/viewer_p.cpp:1590
 msgctxt "View->headers->"
 msgid "&Standard Headers"
 msgstr "&Стандардни заглавија"
 
-#: viewer/viewer_p.cpp:1596
+#: viewer/viewer_p.cpp:1593
 msgid "Show standard list of message headers"
 msgstr "Покажува стандардна листа на заглавија на пораките"
 
-#: viewer/viewer_p.cpp:1600
+#: viewer/viewer_p.cpp:1597
 msgctxt "View->headers->"
 msgid "&Long Headers"
 msgstr "&Долги заглавија"
 
-#: viewer/viewer_p.cpp:1603
+#: viewer/viewer_p.cpp:1600
 msgid "Show long list of message headers"
 msgstr "Покажува долга листа на заглавија на пораките"
 
-#: viewer/viewer_p.cpp:1607
+#: viewer/viewer_p.cpp:1604
 msgctxt "View->headers->"
 msgid "&All Headers"
 msgstr "&Сите заглавија"
 
-#: viewer/viewer_p.cpp:1610
+#: viewer/viewer_p.cpp:1607
 msgid "Show all message headers"
 msgstr "Ги покажува сите заглавија на пораките"
 
-#: viewer/viewer_p.cpp:1614
+#: viewer/viewer_p.cpp:1611
 #, fuzzy
 #| msgctxt "View->headers->"
 #| msgid "&Long Headers"
@@ -2181,245 +2217,249 @@ msgctxt "View->headers->"
 msgid "&Custom Headers"
 msgstr "&Долги заглавија"
 
-#: viewer/viewer_p.cpp:1617
+#: viewer/viewer_p.cpp:1614
 #, fuzzy
 #| msgid "Show long list of message headers"
 msgid "Show custom headers"
 msgstr "Покажува долга листа на заглавија на пораките"
 
-#: viewer/viewer_p.cpp:1625
+#: viewer/viewer_p.cpp:1622
 msgctxt "View->"
 msgid "&Attachments"
 msgstr "&Прилози"
 
-#: viewer/viewer_p.cpp:1627
+#: viewer/viewer_p.cpp:1624
 msgid "Choose display style of attachments"
 msgstr "Изберете стил на прикажување на прилозите"
 
-#: viewer/viewer_p.cpp:1630
+#: viewer/viewer_p.cpp:1627
 msgctxt "View->attachments->"
 msgid "&As Icons"
 msgstr "К&ако икони"
 
-#: viewer/viewer_p.cpp:1633
+#: viewer/viewer_p.cpp:1630
 msgid "Show all attachments as icons. Click to see them."
 msgstr "Ги покажува сите прилози како икони. Кликнете на нив за да ги видите."
 
-#: viewer/viewer_p.cpp:1637
+#: viewer/viewer_p.cpp:1634
 msgctxt "View->attachments->"
 msgid "&Smart"
 msgstr "&Паметно"
 
-#: viewer/viewer_p.cpp:1640
+#: viewer/viewer_p.cpp:1637
 msgid "Show attachments as suggested by sender."
 msgstr "Ги покажува прилозите како што е предложено од испраќачот."
 
-#: viewer/viewer_p.cpp:1644
+#: viewer/viewer_p.cpp:1641
 msgctxt "View->attachments->"
 msgid "&Inline"
 msgstr "&Внатрешно"
 
-#: viewer/viewer_p.cpp:1647
+#: viewer/viewer_p.cpp:1644
 msgid "Show all attachments inline (if possible)"
 msgstr "Ги покажува сите прилози внатрешно (ако е возможно)"
 
-#: viewer/viewer_p.cpp:1651
+#: viewer/viewer_p.cpp:1648
 msgctxt "View->attachments->"
 msgid "&Hide"
 msgstr "&Сокриј"
 
-#: viewer/viewer_p.cpp:1654
+#: viewer/viewer_p.cpp:1651
 msgid "Do not show attachments in the message viewer"
 msgstr "Не ги покажува прилозите во прегледувачот на пораки"
 
-#: viewer/viewer_p.cpp:1658
+#: viewer/viewer_p.cpp:1655
 msgctxt "View->attachments->"
 msgid "In Header Only"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1662
+#: viewer/viewer_p.cpp:1659
 #, fuzzy
 #| msgid "Show all attachments as icons. Click to see them."
 msgid "Show Attachments only in the header of the mail"
 msgstr "Ги покажува сите прилози како икони. Кликнете на нив за да ги видите."
 
-#: viewer/viewer_p.cpp:1667
+#: viewer/viewer_p.cpp:1664
 msgid "&Set Encoding"
 msgstr "По&стави кодирање"
 
-#: viewer/viewer_p.cpp:1673 widgets/configurewidget.cpp:45
+#: viewer/viewer_p.cpp:1670 widgets/configurewidget.cpp:45
 #: widgets/configurewidget.cpp:128
 msgid "Auto"
 msgstr "Автом."
 
-#: viewer/viewer_p.cpp:1690
+#: viewer/viewer_p.cpp:1687
 msgid "Select All Text"
 msgstr "Избери го целиот текст"
 
-#: viewer/viewer_p.cpp:1697 viewer/viewer_p.cpp:2162
+#: viewer/viewer_p.cpp:1694 viewer/viewer_p.cpp:2163
 msgid "Copy Link Address"
 msgstr "Копирај адреса на врска"
 
-#: viewer/viewer_p.cpp:1702
+#: viewer/viewer_p.cpp:1699
 msgid "Open URL"
 msgstr "Отвори URL"
 
-#: viewer/viewer_p.cpp:1714
+#: viewer/viewer_p.cpp:1711
 msgid "Zoom Text Only"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1717
+#: viewer/viewer_p.cpp:1714
 msgid "&Zoom In"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1722
+#: viewer/viewer_p.cpp:1719
 msgid "Zoom &Out"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1727
+#: viewer/viewer_p.cpp:1724
 #, fuzzy
 msgid "Reset"
 msgstr "Изберете папка"
 
-#: viewer/viewer_p.cpp:1734
+#: viewer/viewer_p.cpp:1731
 #, fuzzy
 #| msgid "Message Structure Viewer"
 msgid "Show Message Structure"
 msgstr "Преглед на структурата на пораката"
 
-#: viewer/viewer_p.cpp:1739
+#: viewer/viewer_p.cpp:1736
 msgid "&View Source"
 msgstr "&Види го изворниот код"
 
-#: viewer/viewer_p.cpp:1744
+#: viewer/viewer_p.cpp:1741
 #, fuzzy
 #| msgid " message"
 #| msgid_plural " messages"
 msgid "&Save message..."
 msgstr " порака"
 
-#: viewer/viewer_p.cpp:1750
+#: viewer/viewer_p.cpp:1747
 #, fuzzy
 #| msgid "&Save as Draft"
 msgid "&Save Display Format"
 msgstr "&Зачувај како нацрт"
 
-#: viewer/viewer_p.cpp:1754
+#: viewer/viewer_p.cpp:1751
 msgid "&Reset Display Format"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1761
+#: viewer/viewer_p.cpp:1758
 #, fuzzy
 #| msgid "Select &All Messages"
 msgid "Scroll Message Up"
 msgstr "Избери ги &сите пораки"
 
-#: viewer/viewer_p.cpp:1767
+#: viewer/viewer_p.cpp:1764
 #, fuzzy
 #| msgid "Select &All Messages"
 msgid "Scroll Message Down"
 msgstr "Избери ги &сите пораки"
 
-#: viewer/viewer_p.cpp:1773
+#: viewer/viewer_p.cpp:1770
 msgid "Scroll Message Up (More)"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1779
+#: viewer/viewer_p.cpp:1776
 msgid "Scroll Message Down (More)"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1790
+#: viewer/viewer_p.cpp:1787
 msgid "Toggle HTML Display Mode"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1795
+#: viewer/viewer_p.cpp:1792
 msgid "Toggle display mode between HTML and plain text"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1798
+#: viewer/viewer_p.cpp:1795
 #, fuzzy
 #| msgid "Load External References"
 msgid "Load external references"
 msgstr "Вчитај надворешни референции"
 
-#: viewer/viewer_p.cpp:1812
+#: viewer/viewer_p.cpp:1809
 #, fuzzy
 #| msgid "Choose Location"
 msgid "Copy Image Location"
 msgstr "Изберете локација"
 
-#: viewer/viewer_p.cpp:1819
+#: viewer/viewer_p.cpp:1816
 msgid "Translate..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:1826
+#: viewer/viewer_p.cpp:1823
 msgid "&Find in Message..."
 msgstr "Про&најди во порака..."
 
-#: viewer/viewer_p.cpp:1832
+#: viewer/viewer_p.cpp:1829
 msgid "Toggle Caret Browsing"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1861
+#: viewer/viewer_p.cpp:1835
+msgid "Block image"
+msgstr ""
+
+#: viewer/viewer_p.cpp:1862
 msgid "Save &As..."
 msgstr "З&ачувај како..."
 
-#: viewer/viewer_p.cpp:1871
+#: viewer/viewer_p.cpp:1872
 msgid "Open With..."
 msgstr "Отвори со..."
 
-#: viewer/viewer_p.cpp:1877
+#: viewer/viewer_p.cpp:1878
 msgid "Save All Attachments..."
 msgstr "Зачувај ги сите прилози..."
 
-#: viewer/viewer_p.cpp:2160
+#: viewer/viewer_p.cpp:2161
 #, fuzzy
 #| msgid "Email Address"
 msgid "Copy Email Address"
 msgstr "Е-поштенска адреса"
 
-#: viewer/viewer_p.cpp:2226
+#: viewer/viewer_p.cpp:2227
 msgid "Message as Plain Text"
 msgstr "Пораката како обичен текст"
 
-#: viewer/viewer_p.cpp:2493
+#: viewer/viewer_p.cpp:2494
 #, fuzzy
 #| msgctxt "Config->Composer->Attachments"
 #| msgid "A&ttachments"
 msgid "Attachments:"
 msgstr "П&рилози"
 
-#: viewer/viewer_p.cpp:2777
+#: viewer/viewer_p.cpp:2778
 msgid "URL copied to clipboard."
 msgstr "URL е копиран на таблата со исечоци."
 
-#: viewer/viewer_p.cpp:3069
+#: viewer/viewer_p.cpp:3070
 msgid "Hide full address list"
 msgstr ""
 
-#: viewer/viewer_p.cpp:3073
+#: viewer/viewer_p.cpp:3074
 #, fuzzy
 #| msgid "Show alway&s"
 msgid "Show full address list"
 msgstr "Покажи &секогаш"
 
-#: viewer/viewer_p.cpp:3096
+#: viewer/viewer_p.cpp:3097
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgid "Message loading failed: %1."
 msgstr "Пораката е потпишана од %1."
 
-#: viewer/viewer_p.cpp:3101
+#: viewer/viewer_p.cpp:3102
 #, fuzzy
 #| msgid "Message was signed by %1."
 msgid "Message not found."
 msgstr "Пораката е потпишана од %1."
 
-#: viewer/viewer_p.cpp:3225
+#: viewer/viewer_p.cpp:3226
 msgid "Caret Browsing will be activated. Switch off with F7 shortcut."
 msgstr ""
 
-#: viewer/viewer_p.cpp:3226
+#: viewer/viewer_p.cpp:3227
 msgid "Activate Caret Browsing"
 msgstr ""
 
@@ -2521,6 +2561,11 @@ msgstr "След&на картичка"
 #: widgets/vcardviewer.cpp:50
 msgid "&Previous Card"
 msgstr "&Претходна картичка"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Ad Block Settings"
+#~ msgstr "&Испраќање"
 
 #~ msgid ""
 #~ "Could not write the file %1:\n"
@@ -5069,10 +5114,6 @@ msgstr "&Претходна картичка"
 #~ msgid "Filter %1"
 #~ msgstr "Филтер %1"
 
-#, fuzzy
-#~ msgid "Local Subscription"
-#~ msgstr "Опис"
-
 #~ msgid ""
 #~ "<qt><p>This setting has been fixed by your administrator.</p><p>If you "
 #~ "think this is an error, please contact him.</p></qt>"
@@ -6482,10 +6523,6 @@ msgstr "&Претходна картичка"
 #~ msgid "Never"
 #~ msgstr "Примач"
 
-#, fuzzy
-#~ msgid "Serverside Subscription..."
-#~ msgstr "Опис"
-
 #~ msgid "Refresh Folder List"
 #~ msgstr "Освежи ја листата на папки"
 
@@ -7547,10 +7584,6 @@ msgstr "&Претходна картичка"
 #, fuzzy
 #~ msgid "Starting..."
 #~ msgstr "&Испраќање"
-
-#, fuzzy
-#~ msgid "Select Font"
-#~ msgstr "Изберете папка"
 
 #, fuzzy
 #~ msgid "Select Size"
