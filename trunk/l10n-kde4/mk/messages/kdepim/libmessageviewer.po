@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-10-01 01:40+0000\n"
+"POT-Creation-Date: 2013-10-02 01:44+0000\n"
 "PO-Revision-Date: 2007-02-28 14:08+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -36,37 +36,89 @@ msgstr "Изберете папка"
 msgid "Blockable Items"
 msgstr ""
 
-#: adblock/adblockblockableitemswidget.cpp:56 viewer/mimetreemodel.cpp:249
+#: adblock/adblockblockableitemswidget.cpp:57 viewer/mimetreemodel.cpp:249
 msgid "Type"
 msgstr "Тип"
 
-#: adblock/adblockblockableitemswidget.cpp:56
+#: adblock/adblockblockableitemswidget.cpp:57
 #, fuzzy
 #| msgid "Filter %1"
 msgid "Filter"
 msgstr "Филтер %1"
 
-#: adblock/adblockblockableitemswidget.cpp:56
+#: adblock/adblockblockableitemswidget.cpp:57
 #, fuzzy
 #| msgid "&Address Book"
 msgid "Address"
 msgstr "&Адресар"
 
-#: adblock/adblockblockableitemswidget.cpp:90
+#: adblock/adblockblockableitemswidget.cpp:61
+#, fuzzy
+msgid "Search..."
+msgstr "&Барај:"
+
+#: adblock/adblockblockableitemswidget.cpp:88
 msgid "Image"
 msgstr ""
 
-#: adblock/adblockblockableitemswidget.cpp:107
+#: adblock/adblockblockableitemswidget.cpp:91
+#, fuzzy
+#| msgid "New Script..."
+msgid "Script"
+msgstr "Нова скрипта..."
+
+#: adblock/adblockblockableitemswidget.cpp:94
+msgid "Stylesheet"
+msgstr ""
+
+#: adblock/adblockblockableitemswidget.cpp:97
+#, fuzzy
+#| msgid "Contacts"
+msgid "Font"
+msgstr "Контакти"
+
+#: adblock/adblockblockableitemswidget.cpp:100
+msgid "Frame"
+msgstr ""
+
+#: adblock/adblockblockableitemswidget.cpp:103
+msgid "XML Request"
+msgstr ""
+
+#: adblock/adblockblockableitemswidget.cpp:106
+#, fuzzy
+#| msgid "Subject"
+msgid "Object"
+msgstr "Тема"
+
+#: adblock/adblockblockableitemswidget.cpp:110
+#, fuzzy
+msgid "Unknown"
+msgstr "&Препрати"
+
+#: adblock/adblockblockableitemswidget.cpp:174
 #, fuzzy
 #| msgid "&Copy Here"
 msgid "Copy url"
 msgstr "&Копирај тука"
 
-#: adblock/adblockblockableitemswidget.cpp:108
+#: adblock/adblockblockableitemswidget.cpp:176
+#, fuzzy
+msgid "Copy filter"
+msgstr "Копирај во папката"
+
+#: adblock/adblockblockableitemswidget.cpp:177
 msgid "Block item..."
 msgstr ""
 
-#: adblock/adblockblockableitemswidget.cpp:111
+#: adblock/adblockblockableitemswidget.cpp:179
+#, fuzzy
+#| msgctxt "to open"
+#| msgid "Open"
+msgid "Open"
+msgstr "Отвори"
+
+#: adblock/adblockblockableitemswidget.cpp:182
 #, fuzzy
 #| msgid "Rename Filter"
 msgid "Remove filter"
@@ -90,7 +142,7 @@ msgstr[0] " ден"
 msgstr[1] " дена"
 msgstr[2] " дена"
 
-#: adblock/adblocksettingwidget.cpp:103
+#: adblock/adblocksettingwidget.cpp:110
 msgid ""
 "<qt><p>Enter an expression to filter. Filters can be defined as either:"
 "<ul><li>a shell-style wildcard, e.g. <tt>http://www.example.com/ads*</tt>, "
@@ -101,18 +153,18 @@ msgid ""
 "filter."
 msgstr ""
 
-#: adblock/adblocksettingwidget.cpp:306
+#: adblock/adblocksettingwidget.cpp:324
 #, kde-format
 msgid "Do you want to delete list \"%1\"?"
 msgstr ""
 
-#: adblock/adblocksettingwidget.cpp:306
+#: adblock/adblocksettingwidget.cpp:324
 #, fuzzy
 #| msgid "&Remove Attachment"
 msgid "Delete current list"
 msgstr "Отст&рани го прилогот"
 
-#: adblock/adblocksettingwidget.cpp:331 adblock/adblocksettingwidget.cpp:356
+#: adblock/adblocksettingwidget.cpp:349 adblock/adblocksettingwidget.cpp:374
 msgid "*|all files (*)"
 msgstr ""
 
@@ -157,22 +209,52 @@ msgstr "Ја преименувам папката"
 msgid "Exception Filter"
 msgstr "Изнесувањето на клучот не успеа"
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: adblock/ui/adblockcreatefilterwidget.ui:55
-msgid "Accept pattern only:"
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: adblock/ui/adblockcreatefilterwidget.ui:53
+msgid "Accept pattern only"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, atTheBeginning)
-#: adblock/ui/adblockcreatefilterwidget.ui:66
+#: adblock/ui/adblockcreatefilterwidget.ui:59
 msgid "At the beginning of the address"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, atTheEnd)
-#: adblock/ui/adblockcreatefilterwidget.ui:73
+#: adblock/ui/adblockcreatefilterwidget.ui:66
 #, fuzzy
 #| msgid "Send CC: to 'address'"
 msgid "At the end of address"
 msgstr "Испраќа копија (CC:) на „address“"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: adblock/ui/adblockcreatefilterwidget.ui:76 findbar/findbarbase.cpp:77
+#: ui/invitationsettings.ui:94
+#, fuzzy
+msgid "Options"
+msgstr "Општи опции"
+
+#. i18n: ectx: property (text), widget (QCheckBox, firstPartOnly)
+#: adblock/ui/adblockcreatefilterwidget.ui:82
+msgid "First-part only"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, matchCase)
+#: adblock/ui/adblockcreatefilterwidget.ui:89
+msgid "Match case"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, restrictToDomain)
+#: adblock/ui/adblockcreatefilterwidget.ui:98
+msgid "Restrict to domain"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: adblock/ui/adblockcreatefilterwidget.ui:113
+#, fuzzy
+#| msgid "Apply &to:"
+msgid "Apply to:"
+msgstr "Примени &на:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkEnableAdblock)
 #: adblock/ui/settings_adblock.ui:17
@@ -198,53 +280,53 @@ msgid "Add Filters subscriptions..."
 msgstr "Опис"
 
 #. i18n: ectx: property (text), widget (QPushButton, removeSubscription)
-#: adblock/ui/settings_adblock.ui:54
+#: adblock/ui/settings_adblock.ui:64
 #, fuzzy
 msgid "Remove subscription"
 msgstr "Опис"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: adblock/ui/settings_adblock.ui:76
+#: adblock/ui/settings_adblock.ui:86
 msgid "Update enabled automatic filters every:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, showList)
-#: adblock/ui/settings_adblock.ui:114
+#: adblock/ui/settings_adblock.ui:124
 #, fuzzy
 #| msgid "Save List"
 msgid "Show List..."
 msgstr "Зачувај листа"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: adblock/ui/settings_adblock.ui:122
+#: adblock/ui/settings_adblock.ui:132
 #, fuzzy
 #| msgid "Available Filters"
 msgid "Manual Filters"
 msgstr "Достапни филтри"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: adblock/ui/settings_adblock.ui:130
+#: adblock/ui/settings_adblock.ui:140
 #, fuzzy
 #| msgid "&Search:"
 msgid "Search:"
 msgstr "&Барај:"
 
 #. i18n: ectx: property (text), widget (QPushButton, exportFilters)
-#: adblock/ui/settings_adblock.ui:149
+#: adblock/ui/settings_adblock.ui:165
 #, fuzzy
 #| msgid "Key Export Failed"
 msgid "Export filters..."
 msgstr "Изнесувањето на клучот не успеа"
 
 #. i18n: ectx: property (text), widget (QPushButton, importFilters)
-#: adblock/ui/settings_adblock.ui:156
+#: adblock/ui/settings_adblock.ui:172
 #, fuzzy
 #| msgid "vCard Import Failed"
 msgid "Import Filters..."
 msgstr "Внесот на vCard не успеа"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, insertButton)
-#: adblock/ui/settings_adblock.ui:188
+#: adblock/ui/settings_adblock.ui:204
 #, fuzzy
 #| msgid "Add Permissions"
 msgid "Add filter expression"
@@ -252,14 +334,14 @@ msgstr "Додајте дозволи"
 
 #. i18n: ectx: property (text), widget (QToolButton, insertButton)
 #. i18n: ectx: property (text), widget (QToolButton, removeButton)
-#: adblock/ui/settings_adblock.ui:191 adblock/ui/settings_adblock.ui:201
+#: adblock/ui/settings_adblock.ui:207 adblock/ui/settings_adblock.ui:217
 #, fuzzy
 #| msgid "Add..."
 msgid "..."
 msgstr "Додај..."
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, removeButton)
-#: adblock/ui/settings_adblock.ui:198
+#: adblock/ui/settings_adblock.ui:214
 msgid "Remove filter expression"
 msgstr ""
 
@@ -301,12 +383,6 @@ msgstr "&Претходна картичка"
 #| msgid "Go to the previous message"
 msgid "Jump to previous match"
 msgstr "Оди на претходната порака"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: findbar/findbarbase.cpp:77 ui/invitationsettings.ui:94
-#, fuzzy
-msgid "Options"
-msgstr "Општи опции"
 
 #: findbar/findbarbase.cpp:78
 msgid "Modify search behavior"
@@ -4349,12 +4425,6 @@ msgstr "&Претходна картичка"
 #~ msgstr "Вклучи &потпапки"
 
 #, fuzzy
-#~| msgid "Subject"
-#~ msgctxt "@title:column Subject of the found message."
-#~ msgid "Subject"
-#~ msgstr "Тема"
-
-#, fuzzy
 #~| msgid "Sender/Receiver"
 #~ msgctxt "@title:column Sender of the found message."
 #~ msgid "Sender/Receiver"
@@ -4566,12 +4636,6 @@ msgstr "&Претходна картичка"
 #~| msgid "&Folders"
 #~ msgid "Old Folders"
 #~ msgstr "&Папки"
-
-#, fuzzy
-#~ msgctxt ""
-#~ "@info/plain Displayed grayed-out inside the textbox, verb to search"
-#~ msgid "Search"
-#~ msgstr "&Барај:"
 
 #, fuzzy
 #~| msgid "&Folders"
@@ -5013,10 +5077,6 @@ msgstr "&Претходна картичка"
 #~ msgstr "Вчитај над&ворешни референции"
 
 #, fuzzy
-#~ msgid "Copy Folder"
-#~ msgstr "Копирај во папката"
-
-#, fuzzy
 #~ msgid "Cut Folder"
 #~ msgstr "Папка"
 
@@ -5390,9 +5450,6 @@ msgstr "&Претходна картичка"
 
 #~ msgid "&Use custom fonts"
 #~ msgstr "Користи &сопствени фонтови"
-
-#~ msgid "Apply &to:"
-#~ msgstr "Примени &на:"
 
 #~ msgid "Link"
 #~ msgstr "Врска"
@@ -11268,9 +11325,6 @@ msgstr "&Претходна картичка"
 #~ "Не можам да ја отворам датотеката „%1“:\n"
 #~ "%2"
 
-#~ msgid "New Script..."
-#~ msgstr "Нова скрипта..."
-
 #, fuzzy
 #~| msgid "Open in Address Book"
 #~ msgid "Open Address Book"
@@ -11878,11 +11932,6 @@ msgstr "&Претходна картичка"
 #~ msgctxt "@action:inmenu Font setting"
 #~ msgid "Default"
 #~ msgstr "Како почетен"
-
-#, fuzzy
-#~| msgid "Contacts"
-#~ msgid "Font"
-#~ msgstr "Контакти"
 
 #, fuzzy
 #~ msgctxt "@action:inmenu Foreground color setting"
