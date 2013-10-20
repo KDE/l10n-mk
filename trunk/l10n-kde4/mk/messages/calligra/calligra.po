@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-10-19 01:25+0000\n"
+"POT-Creation-Date: 2013-10-20 01:23+0000\n"
 "PO-Revision-Date: 2000-10-02 22:00+0100\n"
 "Last-Translator: Damjan Janevski <miopa@usa.net>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1571,7 +1571,7 @@ msgid ""
 "permissions to delete the folder \"%1\"."
 msgstr ""
 
-#: kokross/KoScriptManager.cpp:301 main/KoMainWindow.cpp:635
+#: kokross/KoScriptManager.cpp:301 main/KoMainWindow.cpp:662
 #, fuzzy
 msgid "Save"
 msgstr "&Додади група..."
@@ -1719,7 +1719,7 @@ msgstr[0] "Отстрани шаблон"
 msgstr[1] "Отстрани шаблон"
 msgstr[2] "Отстрани шаблон"
 
-#: kopageapp/dialogs/KoPAConfigureDialog.cpp:38 main/KoMainWindow.cpp:1392
+#: kopageapp/dialogs/KoPAConfigureDialog.cpp:38
 msgid "Configure"
 msgstr ""
 
@@ -1855,7 +1855,7 @@ msgstr "Екран"
 msgid "C&ancel"
 msgstr "Рабови на страна"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:95 main/KoMainWindow.cpp:1780
+#: kopageapp/KoPADocumentStructureDocker.cpp:95 main/KoMainWindow.cpp:1767
 #, fuzzy
 msgid "Document"
 msgstr "&Отвори документ"
@@ -2075,7 +2075,7 @@ msgstr ""
 msgid "Import Slideshow"
 msgstr "Наслов :"
 
-#: kopageapp/KoPAView.cpp:506 main/KoMainWindow.cpp:1256
+#: kopageapp/KoPAView.cpp:506 main/KoMainWindow.cpp:1279
 #, fuzzy
 msgid "Import Document"
 msgstr "&Отвори документ"
@@ -3119,13 +3119,13 @@ msgctxt "Default text for redo action"
 msgid "Redo"
 msgstr "Отстрани приказ"
 
-#: kundo2/kundo2stack.cpp:1082 main/KoMainWindow.cpp:1518
+#: kundo2/kundo2stack.cpp:1082 main/KoMainWindow.cpp:1505
 #: main/KoUndoStackAction.cpp:46
 #, fuzzy
 msgid "Redo"
 msgstr "Отстрани приказ"
 
-#: kundo2/kundo2stack.cpp:1101 main/KoMainWindow.cpp:1517
+#: kundo2/kundo2stack.cpp:1101 main/KoMainWindow.cpp:1504
 #: main/KoUndoStackAction.cpp:38
 msgid "Undo"
 msgstr ""
@@ -3143,7 +3143,7 @@ msgid "&Settings"
 msgstr "inch"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: main/calligra_shell.rc:45 main/KoMainWindow.cpp:1386
+#: main/calligra_shell.rc:45
 #, fuzzy
 msgid "File"
 msgstr "Полно име :"
@@ -3480,7 +3480,7 @@ msgid ""
 "Do you want to open it instead?"
 msgstr ""
 
-#: main/KoDocument.cpp:1087 main/KoDocument.cpp:1433 main/KoMainWindow.cpp:673
+#: main/KoDocument.cpp:1087 main/KoDocument.cpp:1433 main/KoMainWindow.cpp:700
 #, kde-format
 msgid "The file %1 does not exist."
 msgstr ""
@@ -3634,13 +3634,13 @@ msgid ""
 "an old version."
 msgstr ""
 
-#: main/KoDocument.cpp:1813 main/KoMainWindow.cpp:1178
+#: main/KoDocument.cpp:1813 main/KoMainWindow.cpp:1197
 #: pigment/resources/KoColorSet.cpp:175
 #, fuzzy
 msgid "Untitled"
 msgstr "Наслов :"
 
-#: main/KoDocument.cpp:1816 main/KoMainWindow.cpp:1181
+#: main/KoDocument.cpp:1816 main/KoMainWindow.cpp:1200
 #, fuzzy, kde-format
 msgid ""
 "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save it?"
@@ -3764,7 +3764,7 @@ msgstr "&Да"
 msgid "                Language:"
 msgstr ""
 
-#: main/KoDocumentInfoDlg.cpp:74 main/KoMainWindow.cpp:296
+#: main/KoDocumentInfoDlg.cpp:74 main/KoMainWindow.cpp:315
 msgid "Document Information"
 msgstr "Информации за документот"
 
@@ -3858,7 +3858,7 @@ msgid ""
 "document now?</qt>"
 msgstr ""
 
-#: main/KoDocumentInfoDlg.cpp:374 main/KoMainWindow.cpp:806
+#: main/KoDocumentInfoDlg.cpp:374 main/KoMainWindow.cpp:833
 #, kde-format
 msgid "%1 (unknown file type)"
 msgstr ""
@@ -3908,30 +3908,8 @@ msgstr ""
 msgid "No"
 msgstr "Избери..."
 
-#: main/KoExistingDocumentPane.cpp:44 main/KoMainWindow.cpp:1254
-#: main/KoOpenPane.cpp:382 main/KoOpenPane.cpp:386
-#, fuzzy
-msgid "Open Document"
-msgstr "&Отвори документ"
-
-#: main/KoFileDialog.cpp:98
-#, kde-format
-msgid "%1 (Uncompressed XML Files)"
-msgstr ""
-
-#: main/KoFileDialog.cpp:100
-#, kde-format
-msgid "%1 (Flat XML File)"
-msgstr ""
-
-#: main/KoFileDialog.cpp:102
-#, kde-format
-msgid "%1 (Encrypted)"
-msgstr ""
-
-#: main/KoFileDialog.cpp:120
-#, kde-format
-msgid "%1 (%2 Compatible)"
+#: main/KoFileDialogHelper.cpp:31
+msgid "All supported formats"
 msgstr ""
 
 #: main/KoFilterManager.cpp:230 main/KoFilterManager.cpp:239
@@ -4056,93 +4034,97 @@ msgstr ""
 msgid "Shows or hides grid"
 msgstr ""
 
-#: main/KoMainWindow.cpp:161
+#: main/KoMainWindow.cpp:166
 #, fuzzy, kde-format
 msgid "%1 unsaved document (%2)"
 msgstr "Зачувај документ како"
 
-#: main/KoMainWindow.cpp:268
+#: main/KoMainWindow.cpp:277
 msgid "Export as PDF..."
 msgstr ""
 
-#: main/KoMainWindow.cpp:278
+#: main/KoMainWindow.cpp:287
 msgid "Reload"
 msgstr ""
 
-#: main/KoMainWindow.cpp:282
+#: main/KoMainWindow.cpp:291
 msgid "Versions..."
 msgstr ""
 
-#: main/KoMainWindow.cpp:286
+#: main/KoMainWindow.cpp:295
 #, fuzzy
 msgid "Open ex&isting Document as Untitled Document..."
 msgstr "&Отвори постоечки документ"
 
-#: main/KoMainWindow.cpp:290
+#: main/KoMainWindow.cpp:299
 msgid "E&xport..."
 msgstr ""
 
-#: main/KoMainWindow.cpp:319
+#: main/KoMainWindow.cpp:303
+#, fuzzy
+msgid "En&crypt Document"
+msgstr "&Отвори документ"
+
+#: main/KoMainWindow.cpp:308
+msgid "&Uncompress to Directory"
+msgstr ""
+
+#: main/KoMainWindow.cpp:342
 msgid "&Themes"
 msgstr ""
 
-#: main/KoMainWindow.cpp:326
+#: main/KoMainWindow.cpp:349
 msgid "Show Dockers"
 msgstr ""
 
-#: main/KoMainWindow.cpp:332
+#: main/KoMainWindow.cpp:355
 msgid "Dockers"
 msgstr ""
 
-#: main/KoMainWindow.cpp:629
+#: main/KoMainWindow.cpp:656
 #, fuzzy
 msgid "(write protected)"
 msgstr ""
 "\n"
 "Ориентација:"
 
-#: main/KoMainWindow.cpp:633
+#: main/KoMainWindow.cpp:660
 #, kde-format
 msgid "Save as %1"
 msgstr ""
 
-#: main/KoMainWindow.cpp:814
+#: main/KoMainWindow.cpp:841
 #, kde-format
 msgid ""
 "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
 "want to save in this format?</qt>"
 msgstr ""
 
-#: main/KoMainWindow.cpp:817
+#: main/KoMainWindow.cpp:844
 msgid "Confirm Save"
 msgstr ""
 
-#: main/KoMainWindow.cpp:826
+#: main/KoMainWindow.cpp:853
 #, kde-format
 msgid ""
 "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you still "
 "want to export to this format?</qt>"
 msgstr ""
 
-#: main/KoMainWindow.cpp:829
+#: main/KoMainWindow.cpp:856
 msgid "Confirm Export"
 msgstr ""
 
-#: main/KoMainWindow.cpp:830
+#: main/KoMainWindow.cpp:857
 msgid "Export"
 msgstr ""
 
-#: main/KoMainWindow.cpp:918
+#: main/KoMainWindow.cpp:947
 #, fuzzy
-msgid "Save Document As"
-msgstr "Зачувај документ како"
+msgid "untitled"
+msgstr "Наслов :"
 
-#: main/KoMainWindow.cpp:920
-#, fuzzy
-msgid "Export Document As"
-msgstr "&Отвори документ"
-
-#: main/KoMainWindow.cpp:977 main/KoMainWindow.cpp:1459
+#: main/KoMainWindow.cpp:998 main/KoMainWindow.cpp:1446
 #, fuzzy
 msgid ""
 "A document with this name already exists.\n"
@@ -4151,35 +4133,40 @@ msgstr ""
 "Документ со ова име веќе постои\n"
 "Дали сакате да го презапишете?"
 
-#: main/KoMainWindow.cpp:979 main/KoMainWindow.cpp:1461
-#: main/KoMainWindow.cpp:1820
+#: main/KoMainWindow.cpp:1000 main/KoMainWindow.cpp:1448
+#: main/KoMainWindow.cpp:1807
 msgid "Warning"
 msgstr ""
 
-#: main/KoMainWindow.cpp:1378
-msgid "Export to PDF"
+#: main/KoMainWindow.cpp:1274
+#, fuzzy
+msgid "Open Document"
+msgstr "&Отвори документ"
+
+#: main/KoMainWindow.cpp:1440
+msgid "Export as PDF"
 msgstr ""
 
-#: main/KoMainWindow.cpp:1498
+#: main/KoMainWindow.cpp:1485
 msgid "Cannot export to the specified file"
 msgstr ""
 
-#: main/KoMainWindow.cpp:1708
+#: main/KoMainWindow.cpp:1695
 #, kde-format
 msgid "Show %1 Toolbar"
 msgstr "Покажи %1 алатник"
 
-#: main/KoMainWindow.cpp:1710
+#: main/KoMainWindow.cpp:1697
 #, fuzzy, kde-format
 msgid "Hide %1 Toolbar"
 msgstr "Покажи %1 алатник"
 
-#: main/KoMainWindow.cpp:1788
+#: main/KoMainWindow.cpp:1775
 #, fuzzy, kde-format
 msgid "Document - %1"
 msgstr "Зачувај документ како"
 
-#: main/KoMainWindow.cpp:1818
+#: main/KoMainWindow.cpp:1805
 msgid ""
 "You will lose all changes made since your last save\n"
 "Do you want to continue?"
@@ -4216,15 +4203,25 @@ msgstr "inch"
 msgid "Right side"
 msgstr "inch"
 
-#: main/KoOpenPane.cpp:196
+#: main/KoOpenPane.cpp:138 main/KoOpenPane.cpp:206
+#, fuzzy
+msgid "Open Existing Document"
+msgstr "&Отвори постоечки документ"
+
+#: main/KoOpenPane.cpp:215
 #, fuzzy
 msgid "Recent Documents"
 msgstr "&Отвори постоечки документ"
 
-#: main/KoOpenPane.cpp:296
+#: main/KoOpenPane.cpp:315
 #, fuzzy
 msgid "Custom Document"
 msgstr "&Отвори документ"
+
+#. i18n: ectx: property (text), widget (QPushButton, m_openExistingButton)
+#: main/KoOpenPaneBase.ui:60
+msgid "PushButton"
+msgstr ""
 
 #: main/KoPart.cpp:350
 #, kde-format
@@ -6718,16 +6715,12 @@ msgid "%1"
 msgstr ""
 
 #, fuzzy
-#~ msgid "En&crypt Document"
+#~ msgid "Save Document As"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Export Document As"
 #~ msgstr "&Отвори документ"
-
-#, fuzzy
-#~ msgid "untitled"
-#~ msgstr "Наслов :"
-
-#, fuzzy
-#~ msgid "Open Existing Document"
-#~ msgstr "&Отвори постоечки документ"
 
 #, fuzzy
 #~ msgid "Slide Background"
