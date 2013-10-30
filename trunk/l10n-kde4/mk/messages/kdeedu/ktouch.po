@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktouch\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-21 01:47+0000\n"
+"POT-Creation-Date: 2013-10-30 01:34+0000\n"
 "PO-Revision-Date: 2006-04-25 16:51+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -31,6 +31,16 @@ msgstr "vladoboss@mt.net.mk"
 #: src/core/dbaccess.cpp:109
 #, kde-format
 msgid "Invalid database version '%1'."
+msgstr ""
+
+#: src/core/profiledataaccess.cpp:628
+#, fuzzy
+#| msgid "&Start New Session"
+msgid "Custom Lessons"
+msgstr "&Започни нова сесија"
+
+#: src/core/profiledataaccess.cpp:629
+msgid "A place to store personal lesson texts"
 msgstr ""
 
 #: src/core/userdataaccess.cpp:124
@@ -66,23 +76,14 @@ msgstr ""
 msgid "Bottom right"
 msgstr ""
 
-#: src/editor/courseeditor.cpp:94 src/editor/resourceeditor.cpp:178
+#: src/editor/courseeditor.cpp:91 src/editor/resourceeditor.cpp:178
 #: src/editor/resourceeditor.cpp:258
 msgid "Error while opening course"
 msgstr ""
 
-#: src/editor/courseeditor.cpp:101
+#: src/editor/courseeditor.cpp:98
 msgid "Built-in courses can only be viewed."
 msgstr ""
-
-#: src/editor/courseeditor.cpp:338
-#, fuzzy, kde-format
-#| msgid "Characters: "
-msgid "%1 Character"
-msgid_plural "%1 Characters"
-msgstr[0] "Знаци: "
-msgstr[1] "Знаци: "
-msgstr[2] "Знаци: "
 
 #: src/editor/keyboardlayouteditor.cpp:86 src/editor/resourceeditor.cpp:201
 #: src/editor/resourceeditor.cpp:286
@@ -98,6 +99,19 @@ msgstr ""
 #: src/editor/keyboardlayouteditor.cpp:175
 #, kde-format
 msgid "%1%"
+msgstr ""
+
+#: src/editor/lessontexteditor.cpp:74
+#, fuzzy, kde-format
+#| msgid "Characters: "
+msgid "%1 Character"
+msgid_plural "%1 Characters"
+msgstr[0] "Знаци: "
+msgstr[1] "Знаци: "
+msgstr[2] "Знаци: "
+
+#: src/editor/lessontexteditor.cpp:88
+msgid "The selected file could not be opened"
 msgstr ""
 
 #: src/editor/newkeyboardlayoutwidget.cpp:92
@@ -129,8 +143,9 @@ msgid "Template"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QToolButton, m_deleteKeyToolButton)
-#: src/editor/resourceeditor.cpp:62 src/qml/ProfileDetailsItem.qml:149
-#: src/qml/ProfileDetailsItem.qml:207 src/ui/keyboardlayouteditor.ui:82
+#: src/editor/resourceeditor.cpp:62 src/qml/CustomLessonSelector.qml:177
+#: src/qml/ProfileDetailsItem.qml:149 src/qml/ProfileDetailsItem.qml:207
+#: src/ui/keyboardlayouteditor.ui:82
 msgid "Delete"
 msgstr ""
 
@@ -250,7 +265,7 @@ msgstr ""
 msgid "Restore"
 msgstr ""
 
-#: src/editor/resourceeditorwidget.cpp:30
+#: src/editor/resourceeditorwidget.cpp:30 src/qml/CustomLessonSelector.qml:218
 msgid "Dismiss"
 msgstr ""
 
@@ -405,19 +420,23 @@ msgstr ""
 msgid "Launch the course and keyboard layout editor"
 msgstr "неименуван распоред на тастатура"
 
-#: src/mainwindow.cpp:139
+#: src/mainwindow.cpp:135
+msgid "Edit Custom Lesson"
+msgstr ""
+
+#: src/mainwindow.cpp:161
 #, fuzzy
 #| msgid "T&raining"
 msgid "Training"
 msgstr "&Вежбање"
 
-#: src/mainwindow.cpp:139
+#: src/mainwindow.cpp:161
 #, fuzzy
 #| msgid "Training Statistics"
 msgid "Training Settings"
 msgstr "Статистика за вежбите"
 
-#: src/mainwindow.cpp:140
+#: src/mainwindow.cpp:162
 #, fuzzy
 #| msgid "Color Settings"
 msgid "Colors"
@@ -425,26 +444,26 @@ msgstr ""
 "Поставувања\n"
 "за боите"
 
-#: src/mainwindow.cpp:140
+#: src/mainwindow.cpp:162
 #, fuzzy
 msgid "Color Settings"
 msgstr ""
 "Поставувања\n"
 "за боите"
 
-#: src/mainwindow.cpp:153
+#: src/mainwindow.cpp:175
 #, fuzzy
 #| msgid "Save Keyboard Layout"
 msgid "Configure Keyboard"
 msgstr "Зачувување распоред на тастатура"
 
-#: src/mainwindow.cpp:170
+#: src/mainwindow.cpp:192
 #, fuzzy
 #| msgid "Keyboard Layout Editor"
 msgid "Course and Keyboard Layout Editor..."
 msgstr "Уредувач на распореди на тастатура"
 
-#: src/mainwindow.cpp:180
+#: src/mainwindow.cpp:202
 #, fuzzy
 #| msgid "Open keyboard file ..."
 msgid "Configure Keyboard..."
@@ -508,6 +527,24 @@ msgstr "Прецизност"
 msgid "Characters per Minute"
 msgstr "Знаци во минута"
 
+#: src/qml/CustomLessonSelector.qml:138
+#, fuzzy
+msgid "Create New Custom Lesson"
+msgstr "Креирајте нова тастатура!"
+
+#: src/qml/CustomLessonSelector.qml:171 src/qml/ProfileDetailsItem.qml:144
+msgid "Edit"
+msgstr ""
+
+#: src/qml/CustomLessonSelector.qml:204
+#, kde-format
+msgid "'%1' deleted."
+msgstr ""
+
+#: src/qml/CustomLessonSelector.qml:212
+msgid "Undo"
+msgstr ""
+
 #: src/qml/ElapsedTimeMeter.qml:29
 msgid "Elapsed time"
 msgstr ""
@@ -518,7 +555,7 @@ msgstr ""
 msgid "Welcome to Typewriting Trainer"
 msgstr "Линија за пишување"
 
-#: src/qml/InitialProfileForm.qml:100 src/qml/LessonSelector.qml:149
+#: src/qml/InitialProfileForm.qml:100 src/qml/LessonSelectorBase.qml:70
 #, fuzzy
 #| msgid "T&raining"
 msgid "Start Training"
@@ -570,10 +607,6 @@ msgstr ""
 
 #: src/qml/ProfileDetailsItem.qml:130
 msgid "Never"
-msgstr ""
-
-#: src/qml/ProfileDetailsItem.qml:144
-msgid "Edit"
 msgstr ""
 
 #: src/qml/ProfileDetailsItem.qml:196
@@ -788,6 +821,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, m_lessonTitleLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_keyboardLayouttTitleLabel)
 #: src/ui/courseeditor.ui:40 src/ui/courseeditor.ui:300
+#: src/ui/customlessoneditorwidget.ui:25
 #: src/ui/keyboardlayoutpropertieswidget.ui:59 src/ui/newcoursewidget.ui:25
 #: src/ui/newkeyboardlayoutwidget.ui:51
 msgid "Title:"
@@ -837,13 +871,6 @@ msgstr ""
 #| msgid "new characters"
 msgid "New characters:"
 msgstr "нови знаци"
-
-#. i18n: ectx: property (text), widget (QLabel, m_characterCountLabel)
-#: src/ui/courseeditor.ui:370
-#, fuzzy
-#| msgid "Characters: "
-msgid "0 Characters"
-msgstr "Знаци: "
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, m_newKeyToolButton)
 #: src/ui/keyboardlayouteditor.ui:34
@@ -1077,6 +1104,29 @@ msgstr ""
 #| msgid " (modified)"
 msgid "Modifier ID:"
 msgstr " (променето)"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, LessonTextEditor)
+#: src/ui/lessontexteditor.ui:14
+msgid "Form"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, m_openTextFileButton)
+#: src/ui/lessontexteditor.ui:34
+#, fuzzy
+msgid "Open a text file..."
+msgstr "&Отвори лекција..."
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, m_reformatLessonTextButton)
+#: src/ui/lessontexteditor.ui:49
+msgid "Wrap lines automatically"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, m_characterCountLabel)
+#: src/ui/lessontexteditor.ui:77
+#, fuzzy
+#| msgid "Characters: "
+msgid "0 Characters"
+msgstr "Знаци: "
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, m_pasteCurrentNameButton)
 #: src/ui/newkeyboardlayoutwidget.ui:37
@@ -1316,10 +1366,6 @@ msgstr ""
 
 #~ msgid "Could not find/open the lecture file '%1'."
 #~ msgstr "Не можам да ја најдам/отворам датотеката со лекција „%1“."
-
-#, fuzzy
-#~ msgid "&Open Plain Text File..."
-#~ msgstr "&Отвори лекција..."
 
 #, fuzzy
 #~| msgid "&Open lecture..."
