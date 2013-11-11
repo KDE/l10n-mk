@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-11-07 01:38+0000\n"
+"POT-Creation-Date: 2013-11-11 01:37+0000\n"
 "PO-Revision-Date: 2006-09-30 17:38+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -208,7 +208,7 @@ msgstr "Името е веќе во употреба."
 msgid "Not a Unique Name"
 msgstr "Името не е единствено"
 
-#: clipboard/umlclipboard.cpp:840
+#: clipboard/umlclipboard.cpp:799
 msgid ""
 "At least one of the items in the clipboard could not be pasted because an "
 "item of the same name already exists.  Any other items have been pasted."
@@ -216,7 +216,7 @@ msgstr ""
 "Барем еден од објектите во таблата со исечоци неможе да биде вметнат поради "
 "објект со истото име кое постои.  Сите останати објекти беа вметнати."
 
-#: clipboard/umlclipboard.cpp:844 uml.cpp:1473
+#: clipboard/umlclipboard.cpp:803 uml.cpp:1479
 msgid "Paste Error"
 msgstr "Грешка при вметнувањето"
 
@@ -3706,8 +3706,8 @@ msgstr "Името што го внесовте не е валидно."
 msgid "The name you have entered is not unique."
 msgstr "Името што го внесовте не е единствено."
 
-#: dialogs/umlviewdialog.cpp:240 umldoc.cpp:1416 umllistview.cpp:2325
-#: umllistview.cpp:2332 umllistview.cpp:2597
+#: dialogs/umlviewdialog.cpp:240 umldoc.cpp:1416 umllistview.cpp:2215
+#: umllistview.cpp:2222 umllistview.cpp:2487
 msgid "Name Not Unique"
 msgstr "Името не е единствено"
 
@@ -6180,15 +6180,15 @@ msgstr "Излегувам..."
 msgid "Cutting selection..."
 msgstr "Го сечам избраното..."
 
-#: uml.cpp:1454
+#: uml.cpp:1460
 msgid "Copying selection to clipboard..."
 msgstr "Го копирам избраното во таблата со исечоци..."
 
-#: uml.cpp:1466
+#: uml.cpp:1472
 msgid "Inserting clipboard contents..."
 msgstr "Ја вметнувам содржината на таблата со исечоци..."
 
-#: uml.cpp:1471
+#: uml.cpp:1477
 msgid ""
 "Umbrello could not paste the clipboard contents.  The objects in the "
 "clipboard may be of the wrong type to be pasted here."
@@ -6196,26 +6196,26 @@ msgstr ""
 "Umbrello неможе да ја вметни содржината од таблата со исечоци.  Објектите од "
 "таблата со исечоци можат да бидат од погрешен вид и да бидат вметнати овде."
 
-#: uml.cpp:1497 umlviewimageexporter.cpp:80 umlviewimageexporterall.cpp:84
+#: uml.cpp:1503 umlviewimageexporter.cpp:80 umlviewimageexporterall.cpp:84
 #, fuzzy
 #| msgid "Ready."
 msgctxt "reset status bar"
 msgid "Ready."
 msgstr "Подготвен."
 
-#: uml.cpp:2060
+#: uml.cpp:2072
 msgid "Cannot view code until you generate some first."
 msgstr "Неможе да се прегледа кодот додека не се генерира."
 
-#: uml.cpp:2060 uml.cpp:2063
+#: uml.cpp:2072 uml.cpp:2075
 msgid "Cannot View Code"
 msgstr "Неможе да се прегледа кодот"
 
-#: uml.cpp:2063
+#: uml.cpp:2075
 msgid "Cannot view code from simple code writer."
 msgstr "Неможе да се прегледа кодот од едноставен пишувач на код."
 
-#: uml.cpp:2942
+#: uml.cpp:2954
 msgid "XHTML Generation failed ."
 msgstr ""
 
@@ -6412,7 +6412,7 @@ msgctxt "renaming child uml object"
 msgid "Name"
 msgstr "Име"
 
-#: umldoc.cpp:1415 umllistview.cpp:2324
+#: umldoc.cpp:1415 umllistview.cpp:2214
 msgid ""
 "The name you entered was not unique.\n"
 "Is this what you wanted?"
@@ -6420,11 +6420,11 @@ msgstr ""
 "Внесеното име не е единствено.\n"
 "Дали тоа го сакавте?"
 
-#: umldoc.cpp:1416 umllistview.cpp:2325
+#: umldoc.cpp:1416 umllistview.cpp:2215
 msgid "Use Name"
 msgstr "Користи име"
 
-#: umldoc.cpp:1416 umllistview.cpp:2325
+#: umldoc.cpp:1416 umllistview.cpp:2215
 msgid "Enter New Name"
 msgstr "Внеси ново име"
 
@@ -6498,7 +6498,7 @@ msgstr "Внесете го новото име на моделот:"
 msgid "Views"
 msgstr "Прегледи"
 
-#: umllistview.cpp:2314
+#: umllistview.cpp:2204
 msgid ""
 "The name you entered was invalid.\n"
 "Creation process has been canceled."
@@ -6506,11 +6506,11 @@ msgstr ""
 "Внесеното име е невалидно\n"
 "Процесот на креирање беше откажан."
 
-#: umllistview.cpp:2315 umllistviewitem.cpp:696
+#: umllistview.cpp:2205 umllistviewitem.cpp:696
 msgid "Name Not Valid"
 msgstr "Невалидно име"
 
-#: umllistview.cpp:2331 umllistview.cpp:2596
+#: umllistview.cpp:2221 umllistview.cpp:2486
 #, fuzzy
 msgid ""
 "The name you entered was not unique.\n"
@@ -6519,20 +6519,20 @@ msgstr ""
 "Внесеното име не е единствено!\n"
 "Процесот на креирање беше откажан."
 
-#: umllistview.cpp:2554 umllistview.cpp:2571 umllistview.cpp:2586
-#: umllistview.cpp:2616
+#: umllistview.cpp:2444 umllistview.cpp:2461 umllistview.cpp:2476
+#: umllistview.cpp:2506
 msgid "Creation canceled"
 msgstr "Креирањете е откажано"
 
-#: umllistview.cpp:2874
+#: umllistview.cpp:2764
 msgid "Loading listview..."
 msgstr "Вчитување на листа за преглед..."
 
-#: umllistview.cpp:3258
+#: umllistview.cpp:3148
 msgid "The folder must be emptied before it can be deleted."
 msgstr "Папката мора да е празна пред да се избрише."
 
-#: umllistview.cpp:3259
+#: umllistview.cpp:3149
 msgid "Folder Not Empty"
 msgstr "Папката не е празна"
 

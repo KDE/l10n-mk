@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kvoctrain\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-11-04 01:32+0000\n"
+"POT-Creation-Date: 2013-11-11 01:32+0000\n"
 "PO-Revision-Date: 2007-02-26 21:36+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1615,49 +1615,57 @@ msgid "Change practice settings"
 msgstr "Опции за преглед"
 
 #: src/parleyactions.cpp:151
+msgid "Export results..."
+msgstr ""
+
+#: src/parleyactions.cpp:152
+msgid "Write a file with the results of the practice"
+msgstr ""
+
+#: src/parleyactions.cpp:156
 #, fuzzy
 msgid "Editor"
 msgstr "&Истекување"
 
-#: src/parleyactions.cpp:152
+#: src/parleyactions.cpp:157
 #, fuzzy
 msgid "Switch to vocabulary editor"
 msgstr "Го зачувува тековниот документ"
 
-#: src/parleyactions.cpp:156
+#: src/parleyactions.cpp:161
 #, fuzzy
 msgid "Show Se&arch"
 msgstr "Мудро пребарување"
 
-#: src/parleyactions.cpp:157
+#: src/parleyactions.cpp:162
 msgid "Toggle display of the search bar"
 msgstr ""
 
-#: src/parleyactions.cpp:166
+#: src/parleyactions.cpp:171
 #, fuzzy
 msgid "&Script Manager"
 msgstr "Ја&зик"
 
-#: src/parleyactions.cpp:167
+#: src/parleyactions.cpp:172
 msgid "Enable and disable scripts"
 msgstr ""
 
-#: src/parleyactions.cpp:183
+#: src/parleyactions.cpp:188
 #, fuzzy
 msgid "Download New Vocabularies..."
 msgstr "Спојување на датотека за речник"
 
-#: src/parleyactions.cpp:185
+#: src/parleyactions.cpp:190
 #, fuzzy
 msgid "Downloads new vocabulary collections"
 msgstr "Спојување на датотека за речник"
 
-#: src/parleyactions.cpp:191
+#: src/parleyactions.cpp:196
 #, fuzzy
 msgid "&Upload Vocabulary Document..."
 msgstr "Отвори датотека на речник"
 
-#: src/parleyactions.cpp:192
+#: src/parleyactions.cpp:197
 #, fuzzy
 msgid "Share the current vocabulary collection with other users"
 msgstr "Го зачувува тековниот документ"
@@ -1793,7 +1801,7 @@ msgid "Statistics Toolbar"
 msgstr "Прикажи с&татистика"
 
 #. i18n: ectx: ToolBar (practiceSummaryToolBar)
-#: src/parleyui.rc:43 src/practice/practicesummaryui.rc:19
+#: src/parleyui.rc:43 src/practice/practicesummaryui.rc:20
 #, fuzzy
 #| msgid "Article"
 msgid "Practice Summary Toolbar"
@@ -2095,13 +2103,13 @@ msgid ""
 "This shortcut changes how the answer is counted."
 msgstr ""
 
-#: src/practice/practicesummarycomponent.cpp:60
+#: src/practice/practicesummarycomponent.cpp:66
 #, kde-format
 msgctxt "number of words, minutes, seconds"
 msgid "You practiced %1 in %2 and %3."
 msgstr ""
 
-#: src/practice/practicesummarycomponent.cpp:61
+#: src/practice/practicesummarycomponent.cpp:67
 #, fuzzy, kde-format
 #| msgid "Enter the word:"
 msgid "one word"
@@ -2110,7 +2118,7 @@ msgstr[0] "Внесете го зборот:"
 msgstr[1] "Внесете го зборот:"
 msgstr[2] "Внесете го зборот:"
 
-#: src/practice/practicesummarycomponent.cpp:62
+#: src/practice/practicesummarycomponent.cpp:68
 #, fuzzy, kde-format
 #| msgid "Contained In"
 msgid "one minute"
@@ -2119,7 +2127,7 @@ msgstr[0] "Содржано во"
 msgstr[1] "Содржано во"
 msgstr[2] "Содржано во"
 
-#: src/practice/practicesummarycomponent.cpp:63
+#: src/practice/practicesummarycomponent.cpp:69
 #, fuzzy, kde-format
 #| msgid "&Append Language"
 msgid "one second"
@@ -2128,11 +2136,73 @@ msgstr[0] "&Додај јазик"
 msgstr[1] "&Додај јазик"
 msgstr[2] "&Додај јазик"
 
-#: src/practice/practicesummarycomponent.cpp:79
-#: src/practice/practicesummarycomponent.cpp:80
+#: src/practice/practicesummarycomponent.cpp:86
+#: src/practice/practicesummarycomponent.cpp:87
 #, fuzzy
 msgid "Practice Again"
 msgstr "Опции за преглед"
+
+#: src/practice/practicesummarycomponent.cpp:156
+msgid "HTML Files"
+msgstr ""
+
+#: src/practice/practicesummarycomponent.cpp:156
+#, fuzzy
+#| msgid "Document Properties"
+msgid "OpenDocument text files"
+msgstr "Својства на документот"
+
+#: src/practice/practicesummarycomponent.cpp:164
+#, fuzzy
+msgid "Practice results"
+msgstr "Не е барано"
+
+#: src/practice/practicesummarycomponent.cpp:169
+#, kde-format
+msgid "Answered questions: %1\n"
+msgstr ""
+
+#: src/practice/practicesummarycomponent.cpp:170
+#, fuzzy, kde-format
+#| msgid "Current tense is: %1."
+msgid "Correct answers: %1\n"
+msgstr "Тековното време е: %1."
+
+#: src/practice/practicesummarycomponent.cpp:171
+#, fuzzy, kde-format
+#| msgid "&Wrong:"
+msgid "Wrong answers: %1\n"
+msgstr "&Погрешно:"
+
+#: src/practice/practicesummarycomponent.cpp:178
+msgid "<b>Attempts</b>"
+msgstr ""
+
+#: src/practice/practicesummarycomponent.cpp:179
+#, fuzzy
+#| msgid "Question"
+msgid "<b>Question</b>"
+msgstr "Прашање"
+
+#: src/practice/practicesummarycomponent.cpp:180
+msgid "<b>Correct answer</b>"
+msgstr ""
+
+#: src/practice/practicesummarycomponent.cpp:181
+msgid "<b>Your errors</b>"
+msgstr ""
+
+#: src/practice/practicesummarycomponent.cpp:195
+#, fuzzy, kde-format
+#| msgid "Could not read "
+msgid "Could not write to %1"
+msgstr "Не можам да прочитам "
+
+#: src/practice/practicesummarycomponent.cpp:196
+#, fuzzy
+#| msgid "Could not read "
+msgid "Could not write file"
+msgstr "Не можам да прочитам "
 
 #. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
 #: src/practice/practicesummarywidget.ui:28
@@ -4202,10 +4272,6 @@ msgstr ""
 #~ msgstr[1] "Член"
 #~ msgstr[2] "Член"
 
-#, fuzzy
-#~ msgid "Your practice result:"
-#~ msgstr "Не е барано"
-
 #~ msgid "without name"
 #~ msgstr "без име"
 
@@ -4301,11 +4367,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Verb Training"
 #~ msgstr "Вежби за членови"
-
-#, fuzzy
-#~| msgid "Current tense is: %1."
-#~ msgid "Current tense is: %1"
-#~ msgstr "Тековното време е: %1."
 
 #, fuzzy
 #~| msgid ""
@@ -4412,11 +4473,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Total:"
 #~ msgstr "&Машки:"
-
-#, fuzzy
-#~| msgid "&Wrong:"
-#~ msgid "Wrong answer:"
-#~ msgstr "&Погрешно:"
 
 #, fuzzy
 #~| msgid "S&kip"
@@ -5641,9 +5697,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Delete subtype"
 #~ msgstr "Дод&ај нов запис"
-
-#~ msgid "Document Properties"
-#~ msgstr "Својства на документот"
 
 #, fuzzy
 #~| msgid "&Stop Query"
