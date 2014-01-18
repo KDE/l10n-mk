@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-01-17 01:42+0000\n"
+"POT-Creation-Date: 2014-01-18 01:33+0000\n"
 "PO-Revision-Date: 2007-02-28 14:08+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -913,7 +913,7 @@ msgstr "Листа со пораки - нови пораки"
 
 #. i18n: ectx: label, entry (FolderList), group (Geometry)
 #: configuredialog/configureappearancepage.cpp:140
-#: settings/kmail.kcfg.cmake:376
+#: settings/kmail.kcfg.cmake:382
 msgid "Folder List"
 msgstr "Листа со папки"
 
@@ -1822,11 +1822,15 @@ msgstr "без прокси"
 msgid "(Current system setting: %1)"
 msgstr "(Тековно поставување на системот: %1)"
 
-#: configuredialog/configurestorageservicewidget.cpp:34
+#: configuredialog/configurestorageservicewidget.cpp:35
+msgid "Offer to share for files larger than"
+msgstr ""
+
+#: configuredialog/configurestorageservicewidget.cpp:40
 #, fuzzy
-#| msgid "Save Attachment As"
-msgid "Use Storage Service for Attachments"
-msgstr "Зачувајте прилог како"
+msgctxt "mega bytes"
+msgid " MB"
+msgstr " MB"
 
 #: dialog/addemailtoexistingcontactdialog.cpp:38
 #, fuzzy
@@ -5799,15 +5803,22 @@ msgstr ""
 msgid "Use storage service for big attachment"
 msgstr "Зачувајте прилог како"
 
-#. i18n: ectx: label, entry (AutosaveInterval), group (Composer)
+#. i18n: ectx: label, entry (StorageServiceLimit), group (Composer)
 #: settings/kmail.kcfg.cmake:262
+#, fuzzy
+#| msgid "Save Attachment As"
+msgid "Use storage service when attachment is larger than this limit"
+msgstr "Зачувајте прилог како"
+
+#. i18n: ectx: label, entry (AutosaveInterval), group (Composer)
+#: settings/kmail.kcfg.cmake:268
 #, fuzzy
 #| msgid "Check inter&val:"
 msgid "Autosave interval:"
 msgstr "Интер&вал за проверување:"
 
 #. i18n: ectx: whatsthis, entry (AutosaveInterval), group (Composer)
-#: settings/kmail.kcfg.cmake:263
+#: settings/kmail.kcfg.cmake:269
 msgid ""
 "A backup copy of the text in the composer window can be created regularly. "
 "The interval used to create the backups is set here. You can disable "
@@ -5815,112 +5826,112 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (ShowSnippetManager), group (Composer)
-#: settings/kmail.kcfg.cmake:275
+#: settings/kmail.kcfg.cmake:281
 msgid "Show the Text Snippet Management and Insertion Panel in the composer."
 msgstr ""
 
 #. i18n: ectx: label, entry (CryptoShowEncryptionResult), group (Composer)
-#: settings/kmail.kcfg.cmake:281
+#: settings/kmail.kcfg.cmake:287
 msgid "Show signed/encrypted text after composing"
 msgstr ""
 
 #. i18n: ectx: label, entry (CryptoStoreEncrypted), group (Composer)
-#: settings/kmail.kcfg.cmake:285
+#: settings/kmail.kcfg.cmake:291
 msgid "When check, sent messages will be stored in the encrypted form"
 msgstr ""
 
 #. i18n: ectx: label, entry (RecentUrls), group (Composer)
-#: settings/kmail.kcfg.cmake:289
+#: settings/kmail.kcfg.cmake:295
 msgid "A list of all the recently used URLs"
 msgstr ""
 
 #. i18n: ectx: label, entry (RecentEncodings), group (Composer)
-#: settings/kmail.kcfg.cmake:295
+#: settings/kmail.kcfg.cmake:301
 msgid "A list of all the recently used encodings"
 msgstr ""
 
 #. i18n: ectx: label, entry (FilterDialogSize), group (Geometry)
-#: settings/kmail.kcfg.cmake:314
+#: settings/kmail.kcfg.cmake:320
 msgid "The size of the filter dialog (for internal use only)"
 msgstr ""
 
 #. i18n: ectx: label, entry (IdentityDialogSize), group (Geometry)
-#: settings/kmail.kcfg.cmake:318
+#: settings/kmail.kcfg.cmake:324
 msgid "The size of the identity dialog (for internal use only)"
 msgstr ""
 
 #. i18n: ectx: label, entry (SearchWidgetWidth), group (Geometry)
-#: settings/kmail.kcfg.cmake:322
+#: settings/kmail.kcfg.cmake:328
 msgid "The width of the search window (for internal use only)"
 msgstr ""
 
 #. i18n: ectx: label, entry (SearchWidgetHeight), group (Geometry)
-#: settings/kmail.kcfg.cmake:326
+#: settings/kmail.kcfg.cmake:332
 msgid "The height of the search window (for internal use only)"
 msgstr ""
 
 #. i18n: ectx: label, entry (ConfigureDialogWidth), group (Geometry)
-#: settings/kmail.kcfg.cmake:330
+#: settings/kmail.kcfg.cmake:336
 msgid "The width of the Configure KMail dialog (for internal use only)"
 msgstr ""
 
 #. i18n: ectx: label, entry (ConfigureDialogHeight), group (Geometry)
-#: settings/kmail.kcfg.cmake:334
+#: settings/kmail.kcfg.cmake:340
 msgid "The height of the Configure KMail dialog (for internal use only)"
 msgstr ""
 
 #. i18n: ectx: label, entry (readerWindowMode), group (Geometry)
-#: settings/kmail.kcfg.cmake:360
+#: settings/kmail.kcfg.cmake:366
 msgid "Message Preview Pane"
 msgstr "Прозорец со преглед на пораката"
 
 #. i18n: ectx: label, entry (readerWindowMode), group (Geometry)
-#: settings/kmail.kcfg.cmake:363
+#: settings/kmail.kcfg.cmake:369
 #, fuzzy
 #| msgid "&Do not show a message preview pane"
 msgid "Do not show a message preview pane"
 msgstr "Не покажувај прозорец со прегле&д на пораката"
 
 #. i18n: ectx: label, entry (readerWindowMode), group (Geometry)
-#: settings/kmail.kcfg.cmake:366
+#: settings/kmail.kcfg.cmake:372
 #, fuzzy
 #| msgid "Show the message preview pane belo&w the message list"
 msgid "Show the message preview pane below the message list"
 msgstr "Покажи го прозорецот со преглед на пораката под &листата со пораки"
 
 #. i18n: ectx: label, entry (readerWindowMode), group (Geometry)
-#: settings/kmail.kcfg.cmake:369
+#: settings/kmail.kcfg.cmake:375
 #, fuzzy
 #| msgid "Show the message preview pane ne&xt to the message list"
 msgid "Show the message preview pane next to the message list"
 msgstr "Покажи го прозорецот со преглед на пораката до &листата со пораки"
 
 #. i18n: ectx: label, entry (FolderList), group (Geometry)
-#: settings/kmail.kcfg.cmake:379
+#: settings/kmail.kcfg.cmake:385
 #, fuzzy
 #| msgid "Lon&g folder list"
 msgid "Long folder list"
 msgstr "Дол&га листа со папки"
 
 #. i18n: ectx: label, entry (FolderList), group (Geometry)
-#: settings/kmail.kcfg.cmake:382
+#: settings/kmail.kcfg.cmake:388
 #, fuzzy
 #| msgid "Shor&t folder list"
 msgid "Short folder list"
 msgstr "Кратка лис&та со папки"
 
 #. i18n: ectx: label, entry (CloseAfterReplyOrForward), group (Reader)
-#: settings/kmail.kcfg.cmake:391
+#: settings/kmail.kcfg.cmake:397
 msgid "Close message window after replying or forwarding"
 msgstr ""
 
 #. i18n: ectx: label, entry (SendMDNsWithEmptySender), group (MDN)
-#: settings/kmail.kcfg.cmake:399
+#: settings/kmail.kcfg.cmake:405
 msgid "Send Message Disposition Notifications with an empty sender."
 msgstr "Испрати известување за статусот на пораката со празен испраќач."
 
 #. i18n: ectx: whatsthis, entry (SendMDNsWithEmptySender), group (MDN)
-#: settings/kmail.kcfg.cmake:400
+#: settings/kmail.kcfg.cmake:406
 msgid ""
 "Send Message Disposition Notifications with an empty sender string. Some "
 "servers might be configure to reject such messages, so if you are "
@@ -5931,82 +5942,82 @@ msgstr ""
 "ако имате проблеми со испраќањето на известувањата исклучете ја оваа опција."
 
 #. i18n: ectx: label, entry (TemplateNewMessage), group (GlobalTemplates)
-#: settings/kmail.kcfg.cmake:406
+#: settings/kmail.kcfg.cmake:412
 #, fuzzy
 msgid "Message template for new message"
 msgstr "Листа со пораки - нови пораки"
 
 #. i18n: ectx: label, entry (TemplateReply), group (GlobalTemplates)
-#: settings/kmail.kcfg.cmake:411
+#: settings/kmail.kcfg.cmake:417
 #, fuzzy
 msgid "Message template for reply"
 msgstr "Листа со пораки - нови пораки"
 
 #. i18n: ectx: label, entry (TemplateReplyAll), group (GlobalTemplates)
-#: settings/kmail.kcfg.cmake:416
+#: settings/kmail.kcfg.cmake:422
 #, fuzzy
 msgid "Message template for reply to all"
 msgstr "Листа со пораки - нови пораки"
 
 #. i18n: ectx: label, entry (TemplateForward), group (GlobalTemplates)
-#: settings/kmail.kcfg.cmake:421
+#: settings/kmail.kcfg.cmake:427
 #, fuzzy
 msgid "Message template for forward"
 msgstr "Листа со пораки - нови пораки"
 
 #. i18n: ectx: label, entry (QuoteString), group (GlobalTemplates)
-#: settings/kmail.kcfg.cmake:426
+#: settings/kmail.kcfg.cmake:432
 #, fuzzy
 msgid "Quote characters"
 msgstr "Додај знаци за &цитат"
 
 #. i18n: ectx: label, entry (UpdateLevel), group (Startup)
-#: settings/kmail.kcfg.cmake:441
+#: settings/kmail.kcfg.cmake:447
 msgid "Specifies the number of updates to perform (for internal use only)"
 msgstr ""
 
 #. i18n: ectx: label, entry (ToolTipDisplayPolicy), group (MainFolderView)
-#: settings/kmail.kcfg.cmake:448
+#: settings/kmail.kcfg.cmake:454
 msgid "Specifies the policy used when displaying policy"
 msgstr ""
 
 #. i18n: ectx: label, entry (CollectionWidth), group (SearchDialog)
-#: settings/kmail.kcfg.cmake:456
+#: settings/kmail.kcfg.cmake:462
 msgid ""
 "Specifies the width of the collection field in the Search Window dialog (for "
 "internal use only)"
 msgstr ""
 
 #. i18n: ectx: label, entry (SubjectWidth), group (SearchDialog)
-#: settings/kmail.kcfg.cmake:460
+#: settings/kmail.kcfg.cmake:466
 msgid ""
 "Specifies the width of the subject field in the Search Window dialog (for "
 "internal use only)"
 msgstr ""
 
 #. i18n: ectx: label, entry (SenderWidth), group (SearchDialog)
-#: settings/kmail.kcfg.cmake:464
+#: settings/kmail.kcfg.cmake:470
 msgid ""
 "Specifies the width of the sender field in the Search Window dialog (for "
 "internal use only)"
 msgstr ""
 
 #. i18n: ectx: label, entry (ReceiverWidth), group (SearchDialog)
-#: settings/kmail.kcfg.cmake:468
+#: settings/kmail.kcfg.cmake:474
 msgid ""
 "Specifies the width of the receiver field in the Search Window dialog (for "
 "internal use only)"
 msgstr ""
 
 #. i18n: ectx: label, entry (DateWidth), group (SearchDialog)
-#: settings/kmail.kcfg.cmake:472
+#: settings/kmail.kcfg.cmake:478
 msgid ""
 "Specifies the width of the date field in the Search Window dialog (for "
 "internal use only)"
 msgstr ""
 
 #. i18n: ectx: label, entry (FolderWidth), group (SearchDialog)
-#: settings/kmail.kcfg.cmake:476
+#: settings/kmail.kcfg.cmake:482
 msgid ""
 "Specifies the width of the folder field in the Search Window dialog (for "
 "internal use only)"
@@ -7354,6 +7365,11 @@ msgid_plural "Out of office reply active on servers"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+
+#, fuzzy
+#~| msgid "Save Attachment As"
+#~ msgid "Use Storage Service for Attachments"
+#~ msgstr "Зачувајте прилог како"
 
 #, fuzzy
 #~| msgid "Send Later"
@@ -11982,10 +11998,6 @@ msgstr[2] ""
 
 #~ msgid "<qt>Folder <b>%1</b> is unreadable.</qt>"
 #~ msgstr "<qt>Папката <b>%1</b> не е читлива.</qt>"
-
-#, fuzzy
-#~ msgid "MB"
-#~ msgstr " MB"
 
 #, fuzzy
 #~ msgid ""
