@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-01 01:42+0000\n"
+"POT-Creation-Date: 2014-05-03 01:42+0000\n"
 "PO-Revision-Date: 2007-02-28 13:59+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -57,6 +57,47 @@ msgstr ""
 #| msgid "Current maintainer"
 msgid "Previous maintainer"
 msgstr "Тековен одржувач"
+
+#: categoryselectwidget.cpp:118
+#, fuzzy
+#| msgid "Use last active filter"
+msgctxt "@action:button"
+msgid "Reset category filter"
+msgstr "Користи го последниот активен филтер"
+
+#: categoryselectwidget.cpp:125
+#, fuzzy
+#| msgid "Use last active filter"
+msgctxt "@action:button"
+msgid "Clear category filter"
+msgstr "Користи го последниот активен филтер"
+
+#: categoryselectwidget.cpp:129
+msgid "(Untagged)"
+msgstr ""
+
+#: categoryselectwidget.cpp:134
+msgid "(Groups)"
+msgstr ""
+
+#: categoryselectwidget.cpp:252
+msgid "(All)"
+msgstr ""
+
+#: categoryselectwidget.cpp:255
+#, fuzzy
+#| msgid "None"
+msgid "(None)"
+msgstr "Нема"
+
+#: categoryselectwidget.cpp:260
+msgid ", "
+msgstr ""
+
+#: categoryselectwidget.cpp:260
+#, kde-format
+msgid "<qt>Category filter: %1"
+msgstr ""
 
 #: contactfields.cpp:29
 #, fuzzy
@@ -328,198 +369,204 @@ msgstr "Поставувања за фонтови"
 msgid "Main Toolbar"
 msgstr "Алатник за контакти"
 
-#: mainwidget.cpp:346
+#: mainwidget.cpp:361
 #, fuzzy, kde-format
 #| msgid "Search:"
 msgctxt "@label Search contacts in list"
 msgid "Search...<%1>"
 msgstr "Барај:"
 
-#: mainwidget.cpp:543
+#: mainwidget.cpp:561
 msgid "&Themes"
 msgstr ""
 
-#: mainwidget.cpp:554
+#: mainwidget.cpp:572
 #, fuzzy
 #| msgid "Set the categories for all selected contacts."
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Ги поставува категориите за сите избрани контакти."
 
-#: mainwidget.cpp:560
+#: mainwidget.cpp:578
 #, fuzzy
 #| msgid "Recursive search"
 msgid "Quick search"
 msgstr "Рекурзивно пребарување"
 
-#: mainwidget.cpp:564
+#: mainwidget.cpp:582
+#, fuzzy
+#| msgid "Category"
+msgid "Category filter"
+msgstr "Категорија"
+
+#: mainwidget.cpp:586
 #, fuzzy
 msgid "Select All"
 msgstr "Одизбери ги сите"
 
-#: mainwidget.cpp:566
+#: mainwidget.cpp:588
 #, fuzzy
 #| msgid "Selects all visible contacts from current view."
 msgid "Select all contacts in the current address book view."
 msgstr "Ги избира сите видливи контакти од тековниот преглед."
 
-#: mainwidget.cpp:572
+#: mainwidget.cpp:594
 msgid "Show QR Codes"
 msgstr ""
 
-#: mainwidget.cpp:573
+#: mainwidget.cpp:595
 msgid "Show QR Codes in the contact."
 msgstr ""
 
-#: mainwidget.cpp:579
+#: mainwidget.cpp:601
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr ""
 
-#: mainwidget.cpp:583
+#: mainwidget.cpp:605
 #, fuzzy
 #| msgid "Please select type of the new address book:"
 msgid "Show a simple mode of the address book view."
 msgstr "Изберете го типот на новиот адресар:"
 
-#: mainwidget.cpp:586
+#: mainwidget.cpp:608
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr ""
 
-#: mainwidget.cpp:592
+#: mainwidget.cpp:614
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr ""
 
-#: mainwidget.cpp:602
+#: mainwidget.cpp:624
 msgid "Import vCard..."
 msgstr "Внеси vCard-картичка..."
 
-#: mainwidget.cpp:603
+#: mainwidget.cpp:625
 #, fuzzy
 #| msgid "Import Contacts?"
 msgid "Import contacts from a vCard file."
 msgstr "Внесувате контакти?"
 
-#: mainwidget.cpp:607
+#: mainwidget.cpp:629
 #, fuzzy
 #| msgid "Import CSV List..."
 msgid "Import CSV file..."
 msgstr "Внеси CSV-листа..."
 
-#: mainwidget.cpp:608
+#: mainwidget.cpp:630
 msgid "Import contacts from a file in comma separated value format."
 msgstr ""
 
-#: mainwidget.cpp:612
+#: mainwidget.cpp:634
 #, fuzzy
 #| msgid "Import LDIF Addressbook..."
 msgid "Import LDIF file..."
 msgstr "Внеси LDIF-адресар..."
 
-#: mainwidget.cpp:613
+#: mainwidget.cpp:635
 #, fuzzy
 #| msgid "Import Contacts?"
 msgid "Import contacts from an LDIF file."
 msgstr "Внесувате контакти?"
 
-#: mainwidget.cpp:617
+#: mainwidget.cpp:639
 #, fuzzy
 #| msgid "Import From Mobile Phone..."
 msgid "Import From LDAP server..."
 msgstr "Внеси од мобилен телефон..."
 
-#: mainwidget.cpp:618
+#: mainwidget.cpp:640
 #, fuzzy
 #| msgid "Import Contacts?"
 msgid "Import contacts from an LDAP server."
 msgstr "Внесувате контакти?"
 
-#: mainwidget.cpp:622
+#: mainwidget.cpp:644
 #, fuzzy
 #| msgid "Import All..."
 msgid "Import GMX file..."
 msgstr "Внеси ги сите..."
 
-#: mainwidget.cpp:623
+#: mainwidget.cpp:645
 #, fuzzy
 msgid "Import contacts from a GMX address book file."
 msgstr "%1-адресар"
 
-#: mainwidget.cpp:628
+#: mainwidget.cpp:650
 msgid "Export vCard 3.0..."
 msgstr "Изнеси vCard-картичка 3.0..."
 
-#: mainwidget.cpp:629
+#: mainwidget.cpp:651
 #, fuzzy
 #| msgid "Export vCard 3.0..."
 msgid "Export contacts to a vCard 3.0 file."
 msgstr "Изнеси vCard-картичка 3.0..."
 
-#: mainwidget.cpp:633
+#: mainwidget.cpp:655
 msgid "Export vCard 2.1..."
 msgstr "Изнеси vCard-картичка 2.1..."
 
-#: mainwidget.cpp:634
+#: mainwidget.cpp:656
 #, fuzzy
 #| msgid "Export vCard 2.1..."
 msgid "Export contacts to a vCard 2.1 file."
 msgstr "Изнеси vCard-картичка 2.1..."
 
-#: mainwidget.cpp:638
+#: mainwidget.cpp:660
 #, fuzzy
 #| msgid "Export CSV List..."
 msgid "Export CSV file..."
 msgstr "Изнеси CSV-листа..."
 
-#: mainwidget.cpp:639
+#: mainwidget.cpp:661
 msgid "Export contacts to a file in comma separated value format."
 msgstr ""
 
-#: mainwidget.cpp:643
+#: mainwidget.cpp:665
 #, fuzzy
 #| msgid "Export LDIF Addressbook..."
 msgid "Export LDIF file..."
 msgstr "Изнеси LDIF-адресар..."
 
-#: mainwidget.cpp:644
+#: mainwidget.cpp:666
 #, fuzzy
 #| msgid "Export LDIF Addressbook..."
 msgid "Export contacts to an LDIF file."
 msgstr "Изнеси LDIF-адресар..."
 
-#: mainwidget.cpp:648
+#: mainwidget.cpp:670
 #, fuzzy
 msgid "Export GMX file..."
 msgstr "Изнеси LDIF-адресар..."
 
-#: mainwidget.cpp:649
+#: mainwidget.cpp:671
 #, fuzzy
 msgid "Export contacts to a GMX address book file."
 msgstr "%1-адресар"
 
-#: mainwidget.cpp:657
+#: mainwidget.cpp:679
 #, fuzzy
 #| msgid "&Merge Contacts"
 msgid "Merge Contacts..."
 msgstr "&Спои контакти"
 
-#: mainwidget.cpp:661
+#: mainwidget.cpp:683
 #, fuzzy
 #| msgid "&Selected contacts"
 msgid "Search Duplicate Contacts..."
 msgstr "&Избрани контакти"
 
-#: mainwidget.cpp:664
+#: mainwidget.cpp:686
 msgid "Set Focus to Quick Search"
 msgstr ""
 
-#: mainwidget.cpp:674 mainwidget.cpp:695
+#: mainwidget.cpp:696 mainwidget.cpp:717
 msgid "Address Book"
 msgstr "Адресар"
 
-#: mainwidget.cpp:702 printing/printingwizard.cpp:59
+#: mainwidget.cpp:724 printing/printingwizard.cpp:59
 #, fuzzy
 #| msgid "Edit Contact"
 msgid "Print Contacts"
@@ -3683,9 +3730,6 @@ msgstr ""
 #~ msgid "No default filter"
 #~ msgstr "Нема стандарден филтер"
 
-#~ msgid "Use last active filter"
-#~ msgstr "Користи го последниот активен филтер"
-
 #~ msgid "Use filter:"
 #~ msgstr "Користи филтер:"
 
@@ -5260,9 +5304,6 @@ msgstr ""
 
 #~ msgid "Check the categories whose members you want to export."
 #~ msgstr "Изберете ги категориите чиишто членови сакате да ги изнесете."
-
-#~ msgid "Category"
-#~ msgstr "Категорија"
 
 #~ msgid "Unable to load '%1'."
 #~ msgstr "Не можам да ја вчитам „%1“."
