@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kanagram\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-02 01:43+0000\n"
+"POT-Creation-Date: 2014-05-12 01:47+0000\n"
 "PO-Revision-Date: 2006-06-25 22:51+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -49,50 +49,50 @@ msgstr "Исклучи го Канаграм"
 msgid "start timer"
 msgstr ""
 
-#: kanagram.cpp:253
+#: kanagram.cpp:264
 #, fuzzy
 #| msgid "hint"
 msgid "Show Hint"
 msgstr "помош"
 
-#: kanagram.cpp:259
+#: kanagram.cpp:270
 #, fuzzy
 #| msgid "reveal word"
 msgid "Reveal Anagram"
 msgstr "откриј го зборот"
 
-#: kanagram.cpp:265
+#: kanagram.cpp:276
 msgid "Previous Vocabulary"
 msgstr ""
 
-#: kanagram.cpp:270
+#: kanagram.cpp:281
 #, fuzzy
 #| msgid "Vocabularies"
 msgid "Next Vocabulary"
 msgstr "Речници"
 
-#: kanagram.cpp:464
+#: kanagram.cpp:475
 msgid "About Kanagram"
 msgstr "За Канаграм"
 
-#: kanagram.cpp:479
+#: kanagram.cpp:490
 msgid "About KDE"
 msgstr "За KDE"
 
-#: kanagram.cpp:494
+#: kanagram.cpp:505
 msgid "Kanagram Handbook"
 msgstr "Прирачник за Канаграм"
 
-#: kanagram.cpp:510
+#: kanagram.cpp:521
 msgid "Configure Kanagram"
 msgstr "Конфигурирај Канаграм"
 
-#: kanagram.cpp:514
+#: kanagram.cpp:525
 msgid "Quit Kanagram"
 msgstr "Исклучи го Канаграм"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, MainSettingsWidget)
-#: kanagram.cpp:1011 mainsettingswidget.ui:13
+#: kanagram.cpp:1054 mainsettingswidget.ui:13
 #, fuzzy
 #| msgid "General"
 msgctxt "@title:group main settings page name"
@@ -100,15 +100,15 @@ msgid "General"
 msgstr "Општо"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, VocabSettingsWidget)
-#: kanagram.cpp:1015 vocabsettingswidget.ui:20
+#: kanagram.cpp:1058 vocabsettingswidget.ui:20
 msgid "Vocabularies"
 msgstr "Речници"
 
-#: kanagram.cpp:1019
+#: kanagram.cpp:1062
 msgid "Shortcuts"
 msgstr ""
 
-#: kanagram.cpp:1112
+#: kanagram.cpp:1155
 #, kde-format
 msgid ""
 "File %1 cannot be found.\n"
@@ -117,7 +117,7 @@ msgstr ""
 "Датотеката %1 не може да биде најдена.\n"
 " Осигурете се дали Канаграм е правилно инсталирана."
 
-#: kanagram.cpp:1113
+#: kanagram.cpp:1156
 msgid "Error"
 msgstr ""
 
@@ -240,7 +240,7 @@ msgstr ""
 msgid "Hungarian Data Files"
 msgstr ""
 
-#: mainsettings.cpp:75
+#: mainsettings.cpp:87
 msgctxt "@item:inlistbox no language for that locale"
 msgid "None"
 msgstr ""
@@ -354,35 +354,118 @@ msgstr "Опис"
 msgid "Set timer for scoring purpose:"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QCheckBox, scoringOptions)
+#: mainsettingswidget.ui:166
+msgid "Advanced Settings"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textCorrectAnswer)
+#: mainsettingswidget.ui:173
+msgid "Assign score for correct answer : "
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_correctAnswerScore)
+#: mainsettingswidget.ui:181
+msgid "+5 points"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_correctAnswerScore)
+#: mainsettingswidget.ui:186
+msgid "+10 points"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_correctAnswerScore)
+#: mainsettingswidget.ui:191
+msgid "+15 points"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_correctAnswerScore)
+#: mainsettingswidget.ui:196
+msgid "+20 points"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textIncorrectAnswer)
+#: mainsettingswidget.ui:204
+msgid "Assign score for incorrect answer : "
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_incorrectAnswerScore)
+#: mainsettingswidget.ui:212
+msgid "-1 point"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_incorrectAnswerScore)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_revealAnswerScore)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_skippedWordScore)
+#: mainsettingswidget.ui:217 mainsettingswidget.ui:243
+#: mainsettingswidget.ui:274
+msgid "-2 points"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_incorrectAnswerScore)
+#: mainsettingswidget.ui:222
+msgid "-3 points"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_incorrectAnswerScore)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_revealAnswerScore)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_skippedWordScore)
+#: mainsettingswidget.ui:227 mainsettingswidget.ui:248
+#: mainsettingswidget.ui:279
+msgid "-4 points"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textRevealAnswer)
+#: mainsettingswidget.ui:235
+msgid "Assign score for reveal answer : "
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_revealAnswerScore)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_skippedWordScore)
+#: mainsettingswidget.ui:253 mainsettingswidget.ui:284
+msgid "-6 points"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_revealAnswerScore)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_skippedWordScore)
+#: mainsettingswidget.ui:258 mainsettingswidget.ui:289
+msgid "-8 points"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textSkippedWord)
+#: mainsettingswidget.ui:266
+msgid "Assign score for skipped word : "
+msgstr ""
+
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_useSounds)
-#: mainsettingswidget.ui:169
+#: mainsettingswidget.ui:300
 msgid "Turns sounds on/off."
 msgstr "Ги вклучува/исклучува звуците."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_useSounds)
-#: mainsettingswidget.ui:172
+#: mainsettingswidget.ui:303
 msgid "Use sou&nds"
 msgstr "Користи &звуци"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_uppercaseOnly)
-#: mainsettingswidget.ui:179
+#: mainsettingswidget.ui:310
 msgid "Use only uppercase letters."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_uppercaseOnly)
-#: mainsettingswidget.ui:182
+#: mainsettingswidget.ui:313
 msgid "Only uppercase letters"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_enablePronunciation)
-#: mainsettingswidget.ui:189
+#: mainsettingswidget.ui:320
 #, fuzzy
 #| msgid "Turns sounds on/off."
 msgid "Turn pronunciations on or off."
 msgstr "Ги вклучува/исклучува звуците."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_enablePronunciation)
-#: mainsettingswidget.ui:192
+#: mainsettingswidget.ui:323
 msgid "Say correct words"
 msgstr ""
 
