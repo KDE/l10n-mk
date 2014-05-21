@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-20 01:47+0000\n"
+"POT-Creation-Date: 2014-05-21 01:58+0000\n"
 "PO-Revision-Date: 2006-09-30 17:38+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -194,10 +194,11 @@ msgstr ""
 msgid "That is an invalid name."
 msgstr "Ова не е валидно име."
 
-#: classifier.cpp:407 classifier.cpp:784 dialogs/diagrampropertiespage.cpp:76
-#: entity.cpp:125 entity.cpp:178 entity.cpp:228 entity.cpp:277 enum.cpp:107
-#: object_factory.cpp:212 package.cpp:175 umldoc.cpp:1289 umldoc.cpp:1360
-#: umldoc.cpp:1390 umldoc.cpp:1424
+#: classifier.cpp:407 classifier.cpp:784
+#: dialogs/pages/diagrampropertiespage.cpp:76 entity.cpp:125 entity.cpp:178
+#: entity.cpp:228 entity.cpp:277 enum.cpp:107 object_factory.cpp:212
+#: package.cpp:175 umldoc.cpp:1289 umldoc.cpp:1360 umldoc.cpp:1390
+#: umldoc.cpp:1424
 msgid "Invalid Name"
 msgstr "Невалидно име"
 
@@ -727,13 +728,17 @@ msgstr "Користете ги следните за класи во генер
 #: codegenerators/d/dcodegenerationformbase.ui:261
 #: codegenerators/java/javacodegenerationformbase.ui:261
 #: codegenerators/ruby/rubycodegenerationformbase.ui:52
-#: dialogs/activitydialog.cpp:200 dialogs/assocgenpage.cpp:78
-#: dialogs/assocrolepage.cpp:93 dialogs/assocrolepage.cpp:94
-#: dialogs/classgenpage.cpp:250 dialogs/classgenpage.cpp:342
-#: dialogs/classgenpage.cpp:406 dialogs/classifierlistpage.cpp:218
-#: dialogs/diagrampropertiespage.ui:257 dialogs/objectnodedialog.cpp:195
-#: dialogs/parmpropdlg.cpp:115 dialogs/statedialog.cpp:167
-#: dialogs/umlrolepropertiesbase.ui:140
+#: dialogs/activitydialog.cpp:200 dialogs/objectnodedialog.cpp:195
+#: dialogs/pages/associationgeneralpage.cpp:78
+#: dialogs/pages/associationrolepage.cpp:93
+#: dialogs/pages/associationrolepage.cpp:94
+#: dialogs/pages/classgeneralpage.cpp:250
+#: dialogs/pages/classgeneralpage.cpp:342
+#: dialogs/pages/classgeneralpage.cpp:406
+#: dialogs/pages/classifierlistpage.cpp:218
+#: dialogs/pages/diagrampropertiespage.ui:257
+#: dialogs/pages/umlrolepropertiesbase.ui:140 dialogs/parmpropdialog.cpp:115
+#: dialogs/statedialog.cpp:167
 msgid "Documentation"
 msgstr "Документација"
 
@@ -818,8 +823,9 @@ msgstr "Стандарден атрибут за акцесор ...."
 #: codegenerators/java/javacodegenerationformbase.ui:221
 #: codegenerators/ruby/rubycodegenerationformbase.ui:147
 #: codegenerators/ruby/rubycodegenerationformbase.ui:188
-#: dialogs/classoptionspage.cpp:269 dialogs/classoptionspage.cpp:277
-#: dialogs/umlrolepropertiesbase.ui:73
+#: dialogs/pages/classoptionspage.cpp:269
+#: dialogs/pages/classoptionspage.cpp:277
+#: dialogs/pages/umlrolepropertiesbase.ui:73
 msgid "Public"
 msgstr "Јавно"
 
@@ -832,8 +838,9 @@ msgstr "Јавно"
 #: codegenerators/java/javacodegenerationformbase.ui:226
 #: codegenerators/ruby/rubycodegenerationformbase.ui:152
 #: codegenerators/ruby/rubycodegenerationformbase.ui:193
-#: dialogs/classoptionspage.cpp:270 dialogs/classoptionspage.cpp:278
-#: dialogs/umlrolepropertiesbase.ui:83
+#: dialogs/pages/classoptionspage.cpp:270
+#: dialogs/pages/classoptionspage.cpp:278
+#: dialogs/pages/umlrolepropertiesbase.ui:83
 msgid "Private"
 msgstr "Приватно"
 
@@ -846,8 +853,9 @@ msgstr "Приватно"
 #: codegenerators/java/javacodegenerationformbase.ui:231
 #: codegenerators/ruby/rubycodegenerationformbase.ui:157
 #: codegenerators/ruby/rubycodegenerationformbase.ui:198
-#: dialogs/classoptionspage.cpp:271 dialogs/classoptionspage.cpp:279
-#: dialogs/umlrolepropertiesbase.ui:90
+#: dialogs/pages/classoptionspage.cpp:271
+#: dialogs/pages/classoptionspage.cpp:279
+#: dialogs/pages/umlrolepropertiesbase.ui:90
 msgid "Protected"
 msgstr "Заштитено"
 
@@ -1555,8 +1563,8 @@ msgid "Class Name"
 msgstr "Име на класата"
 
 #: dialogs/activitydialog.cpp:43 dialogs/activitydialog.cpp:146
-#: dialogs/assocgenpage.cpp:77 dialogs/classpropdlg.cpp:128
-#: dialogs/objectnodedialog.cpp:45 dialogs/parmpropdlg.cpp:71
+#: dialogs/classpropdialog.cpp:128 dialogs/objectnodedialog.cpp:45
+#: dialogs/pages/associationgeneralpage.cpp:77 dialogs/parmpropdialog.cpp:71
 #: dialogs/statedialog.cpp:44 dialogs/statedialog.cpp:119
 #: dialogs/umlviewdialog.cpp:41 listpopupmenu.cpp:633
 #: refactoring/refactoringassistant.cpp:460
@@ -1644,724 +1652,167 @@ msgstr "нова_операција"
 msgid "&Parameter activity node"
 msgstr "Името на параметарот не е единствено"
 
-#: dialogs/activitypage.cpp:58 dialogs/statedialog.cpp:190
-#: dialogs/statedialog.cpp:191
-msgid "Activities"
-msgstr "Активности"
-
-#: dialogs/activitypage.cpp:80 dialogs/classifierlistpage.cpp:174
-#, fuzzy
-#| msgid "Copies the selected section to the clipboard"
-msgid "Move selected item to the top"
-msgstr "Ја копира избраната секција на таблата со исечоци"
-
-#: dialogs/activitypage.cpp:86 dialogs/classifierlistpage.cpp:180
-#, fuzzy
-#| msgid "Delete Selected Items"
-msgid "Move selected item up"
-msgstr "Избриши ги избраните елементи"
-
-#: dialogs/activitypage.cpp:92 dialogs/classifierlistpage.cpp:186
-msgid "Move selected item down"
-msgstr ""
-
-#: dialogs/activitypage.cpp:98 dialogs/classifierlistpage.cpp:192
-#, fuzzy
-#| msgid "Copies the selected section to the clipboard"
-msgid "Move selected item to the bottom"
-msgstr "Ја копира избраната секција на таблата со исечоци"
-
-#: dialogs/activitypage.cpp:102
-msgid "New Activity..."
-msgstr "Нова активност..."
-
-#: dialogs/activitypage.cpp:104 listpopupmenu.cpp:642
-#: refactoring/refactoringassistant.cpp:461
-#, fuzzy
-msgid "Delete"
-msgstr "Избери"
-
-#: dialogs/activitypage.cpp:106 widgets/floatingtextwidget.cpp:405
-msgid "Rename"
-msgstr "Преименувај"
-
-#: dialogs/activitypage.cpp:175
-msgid "New Activity"
-msgstr "Нова активност"
-
-#: dialogs/activitypage.cpp:176 toolbarstateother.cpp:251 umlscene.cpp:3096
-#: widgets/activitywidget.cpp:364 widgets/statewidget.cpp:497
-msgid "Enter the name of the new activity:"
-msgstr "Внесете го името за новата активност:"
-
-#: dialogs/activitypage.cpp:176 toolbarstateother.cpp:251 umlscene.cpp:3097
-#: widgets/statewidget.cpp:498
-msgid "new activity"
-msgstr "нова активност"
-
-#: dialogs/activitypage.cpp:198
-msgid "Rename Activity"
-msgstr "Преименување активност"
-
-#: dialogs/activitypage.cpp:198
-msgid "Enter the new name of the activity:"
-msgstr "Внесете го името за новата активност:"
-
-#: dialogs/assocgenpage.cpp:89
-#, fuzzy
-#| msgid "Name:"
-msgctxt "name of association widget"
-msgid "Name:"
-msgstr "Име:"
-
-#: dialogs/assocgenpage.cpp:102
-msgid "Type:"
-msgstr "Тип:"
-
-#: dialogs/assocpage.cpp:44 dialogs/classpropdlg.cpp:367
-msgid "Associations"
-msgstr "Асоцијации"
-
-#: dialogs/assocpropdlg.cpp:54
+#: dialogs/assocpropdialog.cpp:54
 msgid "Association Properties"
 msgstr "Својства на асоцијацијата"
 
-#: dialogs/assocpropdlg.cpp:98 dialogs/classpropdlg.cpp:245
-#: dialogs/classpropdlg.cpp:379 dialogs/settingsdlg.cpp:179
-#: dialogs/umlforeignkeyconstraintdialog.cpp:208 dialogs/umlviewdialog.cpp:93
-msgid "General Settings"
-msgstr "Општи поставувања"
-
-#: dialogs/assocpropdlg.cpp:98
+#: dialogs/assocpropdialog.cpp:98
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings"
 msgid "General"
 msgstr "Општо"
 
-#: dialogs/assocpropdlg.cpp:104
+#: dialogs/assocpropdialog.cpp:98 dialogs/classpropdialog.cpp:245
+#: dialogs/classpropdialog.cpp:379 dialogs/settingsdialog.cpp:179
+#: dialogs/umlforeignkeyconstraintdialog.cpp:208 dialogs/umlviewdialog.cpp:93
+msgid "General Settings"
+msgstr "Општи поставувања"
+
+#: dialogs/assocpropdialog.cpp:104
 #, fuzzy
 #| msgid "Roles"
 msgctxt "role page name"
 msgid "Roles"
 msgstr "Улоги"
 
-#: dialogs/assocpropdlg.cpp:104
+#: dialogs/assocpropdialog.cpp:104
 msgid "Role Settings"
 msgstr "Својства за улога"
 
-#: dialogs/assocpropdlg.cpp:110
+#: dialogs/assocpropdialog.cpp:110
 #, fuzzy
 #| msgid "Style:"
 msgctxt "style page name"
 msgid "Style"
 msgstr "Стил:"
 
-#: dialogs/assocpropdlg.cpp:110
+#: dialogs/assocpropdialog.cpp:110
 #, fuzzy
 #| msgid "Component"
 msgid "Role Style"
 msgstr "Компонента"
 
-#: dialogs/assocpropdlg.cpp:116 dialogs/classpropdlg.cpp:398
-#: dialogs/dialogbase.cpp:90 dialogs/settingsdlg.cpp:234
-#: dialogs/umlviewdialog.cpp:154
-msgid "Font Settings"
-msgstr "Поставувања за фонт"
-
-#: dialogs/assocpropdlg.cpp:116
+#: dialogs/assocpropdialog.cpp:116
 #, fuzzy
 msgctxt "font page name"
 msgid "Font"
 msgstr "Фонт:"
 
-#: dialogs/assocrolepage.cpp:67
-msgid "Role A Properties"
-msgstr "Својства на улогата А"
-
-#: dialogs/assocrolepage.cpp:68
-msgid "Role B Properties"
-msgstr "Својства на улогата Б"
-
-#: dialogs/assocrolepage.cpp:85
-msgid "Role A Visibility"
-msgstr "Видливост на улогата А"
-
-#: dialogs/assocrolepage.cpp:86
-msgid "Role B Visibility"
-msgstr "Видливост на улогата Б"
-
-#: dialogs/assocrolepage.cpp:87
-msgid "Role A Changeability"
-msgstr "Менливост на улогата А"
-
-#: dialogs/assocrolepage.cpp:88
-msgid "Role B Changeability"
-msgstr "Менливост на улогата Б"
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelRoleName)
-#: dialogs/assocrolepage.cpp:113 dialogs/assocrolepage.cpp:190
-#: dialogs/umlrolepropertiesbase.ui:36
-msgid "Rolename:"
-msgstr "Име на улога:"
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelMultiplicity)
-#: dialogs/assocrolepage.cpp:118 dialogs/assocrolepage.cpp:195
-#: dialogs/umlrolepropertiesbase.ui:49
-msgid "Multiplicity:"
-msgstr "Повеќекратност:"
-
-#: dialogs/assocrolepage.cpp:135
-#, fuzzy
-#| msgid "Public"
-msgctxt "scope for A is public"
-msgid "Public"
-msgstr "Јавно"
-
-#: dialogs/assocrolepage.cpp:138
-#, fuzzy
-#| msgid "Private"
-msgctxt "scope for A is private"
-msgid "Private"
-msgstr "Приватно"
-
-#: dialogs/assocrolepage.cpp:141
-#, fuzzy
-#| msgid "Protected"
-msgctxt "scope for A is protected"
-msgid "Protected"
-msgstr "Заштитено"
-
-#: dialogs/assocrolepage.cpp:144
-#, fuzzy
-#| msgid "Implementation"
-msgctxt "scope for A is implementation"
-msgid "Implementation"
-msgstr "Имплементација"
-
-#: dialogs/assocrolepage.cpp:166
-#, fuzzy
-#| msgid "Changeable"
-msgctxt "changeability for A is changeable"
-msgid "Changeable"
-msgstr "Менливо"
-
-#: dialogs/assocrolepage.cpp:169
-#, fuzzy
-#| msgid "Frozen"
-msgctxt "changeability for A is frozen"
-msgid "Frozen"
-msgstr "Замрзнато"
-
-#: dialogs/assocrolepage.cpp:172
-#, fuzzy
-#| msgid "Add only"
-msgctxt "changeability for A is add only"
-msgid "Add only"
-msgstr "Само за додавање"
-
-#: dialogs/assocrolepage.cpp:212
-#, fuzzy
-#| msgid "Public"
-msgctxt "scope for B is public"
-msgid "Public"
-msgstr "Јавно"
-
-#: dialogs/assocrolepage.cpp:215
-#, fuzzy
-#| msgid "Private"
-msgctxt "scope for B is private"
-msgid "Private"
-msgstr "Приватно"
-
-#: dialogs/assocrolepage.cpp:218
-#, fuzzy
-#| msgid "Protected"
-msgctxt "scope for B is protected"
-msgid "Protected"
-msgstr "Заштитено"
-
-#: dialogs/assocrolepage.cpp:221
-#, fuzzy
-#| msgid "Implementation"
-msgctxt "scope for B is implementation"
-msgid "Implementation"
-msgstr "Имплементација"
-
-#: dialogs/assocrolepage.cpp:243
-#, fuzzy
-#| msgid "Changeable"
-msgctxt "changeability for B is changeable"
-msgid "Changeable"
-msgstr "Менливо"
-
-#: dialogs/assocrolepage.cpp:246
-#, fuzzy
-#| msgid "Frozen"
-msgctxt "changeability for B is frozen"
-msgid "Frozen"
-msgstr "Замрзнато"
-
-#: dialogs/assocrolepage.cpp:249
-#, fuzzy
-#| msgid "Add only"
-msgctxt "changeability for B is add only"
-msgid "Add only"
-msgstr "Само за додавање"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/autolayoutoptionpage.ui:17
-#, fuzzy
-msgid "Layout Generator"
-msgstr "Не е генериран"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, m_autoDotPath)
-#: dialogs/autolayoutoptionpage.ui:24
-msgid ""
-"<p>The auto layout feature depends on layout generators provided by the "
-"GraphViz package, which is normally installed aside Umbrello by a package "
-"manager.</p>\n"
-"<p>Umbrello has build in support for detecting the install location of  "
-"these layout generators. For cases where this dependency is not available or "
-"do not fit, a different installation path could be provided.</p>"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_autoDotPath)
-#: dialogs/autolayoutoptionpage.ui:27
-msgid "Auto detect layout generator"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: dialogs/autolayoutoptionpage.ui:37
-msgid "Generator executable path:"
-msgstr ""
-
-#. i18n: ectx: property (title), widget (QGroupBox, Other)
-#: dialogs/autolayoutoptionpage.ui:82
-msgid "Miscellaneous"
-msgstr ""
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, m_showExportLayout)
-#: dialogs/autolayoutoptionpage.ui:88
-msgid ""
-"<p>Dot file export is performed by using the export layout.</p><p>With this "
-"option checked, the export layout is added to the list of available diagram "
-"layouts and enables a quick dot export preview.</p>"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_showExportLayout)
-#: dialogs/autolayoutoptionpage.ui:91
-msgid "Show export layout in diagram context menu"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:68
-msgid "Class &name:"
-msgstr "Име &на класата:"
-
-#: dialogs/classgenpage.cpp:71
-msgid "Actor &name:"
-msgstr "Име &на актерот:"
-
-#: dialogs/classgenpage.cpp:74
-msgid "Package &name:"
-msgstr "Име &на пакетот:"
-
-#: dialogs/classgenpage.cpp:77
-msgid "Use case &name:"
-msgstr "Име &на сценариото на употреба:"
-
-#: dialogs/classgenpage.cpp:80
-msgid "Interface &name:"
-msgstr "Име &на интерфејсот:"
-
-#: dialogs/classgenpage.cpp:83
-msgid "Component &name:"
-msgstr "Име &на компонента:"
-
-#: dialogs/classgenpage.cpp:86
-#, fuzzy
-#| msgid "Node name:"
-msgid "Node &name:"
-msgstr "Име на јазол:"
-
-#: dialogs/classgenpage.cpp:89
-msgid "Artifact &name:"
-msgstr "Име &на артифакт:"
-
-#: dialogs/classgenpage.cpp:92
-msgid "Enum &name:"
-msgstr "Име &на енумератор:"
-
-#: dialogs/classgenpage.cpp:95
-msgid "Datatype &name:"
-msgstr "Име &на типот на податоци:"
-
-#: dialogs/classgenpage.cpp:98
-msgid "Entity &name:"
-msgstr "Име &на ентитет:"
-
-#: dialogs/classgenpage.cpp:122 dialogs/umltemplatedialog.cpp:81
-msgid "&Stereotype name:"
-msgstr "Име на &стереотип:"
-
-#: dialogs/classgenpage.cpp:138
-msgid "Reference:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:146
-#, fuzzy
-#| msgid "Package &name:"
-msgid "Package path:"
-msgstr "Име &на пакетот:"
-
-#: dialogs/classgenpage.cpp:178
-msgid "A&bstract class"
-msgstr "А&пстрактна класа"
-
-#: dialogs/classgenpage.cpp:180
-msgid "A&bstract use case"
-msgstr "А&пстрактно сценарио за употреба"
-
-#: dialogs/classgenpage.cpp:189
-#, fuzzy
-#| msgid "&Executable"
-msgctxt "component is executable"
-msgid "&Executable"
-msgstr "&Извршно"
-
-#: dialogs/classgenpage.cpp:197
-msgid "Draw As"
-msgstr "Нацртај како"
-
-#: dialogs/classgenpage.cpp:201
-#, fuzzy
-#| msgid "&Default"
-msgctxt "draw as default"
-msgid "&Default"
-msgstr "&Стандардно"
-
-#. i18n: ectx: Menu (file)
-#: dialogs/classgenpage.cpp:204 umbrelloui.rc:4
-#, fuzzy
-msgid "&File"
-msgstr "Филтер"
-
-#: dialogs/classgenpage.cpp:207
-msgid "&Library"
-msgstr "Биб&иотека"
-
-#: dialogs/classgenpage.cpp:210
-msgid "&Table"
-msgstr "&Табела"
-
-#: dialogs/classgenpage.cpp:228 dialogs/umlattributedialog.cpp:98
-#: dialogs/umloperationdialog.cpp:123 listpopupmenu.cpp:1084
-#: listpopupmenu.cpp:1129
-msgid "Visibility"
-msgstr "Видливост"
-
-#: dialogs/classgenpage.cpp:232 dialogs/umloperationdialog.cpp:128
-#, fuzzy
-#| msgid "P&ublic"
-msgctxt "public visibility"
-msgid "P&ublic"
-msgstr "&Јавен"
-
-#: dialogs/classgenpage.cpp:235 dialogs/umloperationdialog.cpp:131
-#, fuzzy
-#| msgid "P&rivate"
-msgctxt "private visibility"
-msgid "P&rivate"
-msgstr "П&риватен"
-
-#: dialogs/classgenpage.cpp:238
-#, fuzzy
-#| msgid "Pro&tected"
-msgctxt "protected visibility"
-msgid "Pro&tected"
-msgstr "Заш&титен"
-
-#: dialogs/classgenpage.cpp:242
-msgid "Imple&mentation"
-msgstr "И&мплементација"
-
-#: dialogs/classgenpage.cpp:306
-msgid "Class name:"
-msgstr "Име на класа:"
-
-#: dialogs/classgenpage.cpp:314 dialogs/classgenpage.cpp:394
-msgid "Instance name:"
-msgstr "Име на инстанца:"
-
-#: dialogs/classgenpage.cpp:322
-msgid "Draw as actor"
-msgstr "Нацртај како актер"
-
-#: dialogs/classgenpage.cpp:327
-msgid "Multiple instance"
-msgstr "Повеќекратна инстанца"
-
-#: dialogs/classgenpage.cpp:333
-msgid "Show destruction"
-msgstr "Прикажи уништување"
-
-#: dialogs/classgenpage.cpp:372
-msgid "Component name:"
-msgstr "Име на компонента:"
-
-#: dialogs/classgenpage.cpp:374
-msgid "Node name:"
-msgstr "Име на јазол:"
-
-#: dialogs/classgenpage.cpp:384 dialogs/parmpropdlg.cpp:93
-#: dialogs/umlattributedialog.cpp:89 dialogs/umlentityattributedialog.cpp:91
-#: dialogs/umloperationdialog.cpp:108
-msgid "Stereotype name:"
-msgstr "Име на стереотипот:"
-
-#: dialogs/classgenpage.cpp:481 dialogs/classgenpage.cpp:530
-#: dialogs/classgenpage.cpp:543
-msgid ""
-"The name you have chosen\n"
-"is already being used.\n"
-"The name has been reset."
-msgstr ""
-"Името што го избравте\n"
-"веќе се користи\n"
-"Името беше ресетирано."
-
-#: dialogs/classgenpage.cpp:482 dialogs/classgenpage.cpp:531
-#: dialogs/classgenpage.cpp:544
-msgid "Name is Not Unique"
-msgstr "Името не е единствено"
-
-#: dialogs/classifierlistpage.cpp:115 dialogs/classpropdlg.cpp:283
-#: listpopupmenu.cpp:1077 listpopupmenu.cpp:1113
-#: refactoring/refactoringassistant.cpp:666
-msgid "Attributes"
-msgstr "Атрибути"
-
-#: dialogs/classifierlistpage.cpp:116
-msgid "N&ew Attribute..."
-msgstr "Н&ов атрибут..."
-
-#: dialogs/classifierlistpage.cpp:119 dialogs/classpropdlg.cpp:295
-#: listpopupmenu.cpp:1080 listpopupmenu.cpp:1122
-#: refactoring/refactoringassistant.cpp:682
-msgid "Operations"
-msgstr "Операции"
-
-#: dialogs/classifierlistpage.cpp:120
-msgid "N&ew Operation..."
-msgstr "Н&ова операција..."
-
-#: dialogs/classifierlistpage.cpp:123 dialogs/classpropdlg.cpp:307
-msgid "Templates"
-msgstr "Шаблони"
-
-#: dialogs/classifierlistpage.cpp:124
-msgid "N&ew Template..."
-msgstr "Н&ов шаблон..."
-
-#: dialogs/classifierlistpage.cpp:127 dialogs/classpropdlg.cpp:319
-msgid "Enum Literals"
-msgstr "Нумерирани константи"
-
-#: dialogs/classifierlistpage.cpp:128
-msgid "N&ew Enum Literal..."
-msgstr "Н&ова енумерирана константа..."
-
-#: dialogs/classifierlistpage.cpp:131 dialogs/classpropdlg.cpp:331
-msgid "Entity Attributes"
-msgstr "Атрибути на ентитетот"
-
-#: dialogs/classifierlistpage.cpp:132
-msgid "N&ew Entity Attribute..."
-msgstr "Н&ов атрибут на ентитетот..."
-
-#: dialogs/classifierlistpage.cpp:135
-#, fuzzy
-msgid "Constraints"
-msgstr "Содржател"
-
-#: dialogs/classifierlistpage.cpp:136
-#, fuzzy
-#| msgid "N&ew Attribute..."
-msgid "N&ew Constraint..."
-msgstr "Н&ов атрибут..."
-
-#: dialogs/classifierlistpage.cpp:206
-#: dialogs/umlforeignkeyconstraintdialog.cpp:321
-#: dialogs/umloperationdialog.cpp:166
-#: dialogs/umluniqueconstraintdialog.cpp:122 umldoc.cpp:1486 umlscene.cpp:3311
-#, fuzzy
-msgid "&Delete"
-msgstr "&Стандардно"
-
-#: dialogs/classifierlistpage.cpp:208 dialogs/umloperationdialog.cpp:168
-#: uml.cpp:499
-msgid "&Properties"
-msgstr "&Својства"
-
-#: dialogs/classifierlistpage.cpp:226
-#, fuzzy
-#| msgid "Component"
-msgid "Comment"
-msgstr "Компонента"
-
-#: dialogs/classifierlistpage.cpp:227
-#, fuzzy
-#| msgid "View Code"
-msgid "Source Code"
-msgstr "Види код"
-
-#: dialogs/classoptionspage.cpp:124 dialogs/classoptionspage.cpp:191
-#: dialogs/classoptionspage.cpp:213 dialogs/codeeditor.cpp:791
-#: listpopupmenu.cpp:639 listpopupmenu.cpp:1073 listpopupmenu.cpp:1110
-#: listpopupmenu.cpp:1115 listpopupmenu.cpp:1123 listpopupmenu.cpp:1130
-#: listpopupmenu.cpp:1137 listpopupmenu.cpp:1143
-msgid "Show"
-msgstr "Прикажување"
-
-#: dialogs/classoptionspage.cpp:131 dialogs/classoptionspage.cpp:219
-msgid "Operatio&ns"
-msgstr "Опе&рации"
-
-#: dialogs/classoptionspage.cpp:135 dialogs/classoptionspage.cpp:236
-msgid "&Visibility"
-msgstr "&Видливост"
-
-#: dialogs/classoptionspage.cpp:144 dialogs/classoptionspage.cpp:198
-#: dialogs/classoptionspage.cpp:223
-#, fuzzy
-msgid "O&peration signature"
-msgstr "Потпис на о&перација"
-
-#: dialogs/classoptionspage.cpp:148 dialogs/classoptionspage.cpp:240
-msgid "Pac&kage"
-msgstr "Па&кет"
-
-#: dialogs/classoptionspage.cpp:155 dialogs/classoptionspage.cpp:228
-msgid "Att&ributes"
-msgstr "Ат&рибути"
-
-#: dialogs/classoptionspage.cpp:159 dialogs/classoptionspage.cpp:244
-msgid "Stereot&ype"
-msgstr "Стерео&тип"
-
-#: dialogs/classoptionspage.cpp:163 dialogs/classoptionspage.cpp:232
-#, fuzzy
-msgid "Attr&ibute signature"
-msgstr "Потпис на стер&еотип"
-
-#: dialogs/classoptionspage.cpp:172 dialogs/classoptionspage.cpp:252
-#, fuzzy
-#| msgid "Public Only"
-msgid "&Public Only"
-msgstr "Само јавно"
-
-#: dialogs/classoptionspage.cpp:178
-msgid "Draw as circle"
-msgstr "Нацртај како круг"
-
-#: dialogs/classoptionspage.cpp:248
-#, fuzzy
-#| msgid "Attribute accessor methods"
-msgid "&Attribute associations"
-msgstr "Методи на атрибут акцесор"
-
-#: dialogs/classoptionspage.cpp:257
-msgid "Starting Scope"
-msgstr "Почетен опсег"
-
-#: dialogs/classoptionspage.cpp:262
-msgid "Default attribute scope:"
-msgstr "Стандарден опсег на атрибут:"
-
-#: dialogs/classoptionspage.cpp:265
-msgid "Default operation scope:"
-msgstr "Стандарден опсег на операција:"
-
-#: dialogs/classpropdlg.cpp:245
+#: dialogs/assocpropdialog.cpp:116 dialogs/classpropdialog.cpp:398
+#: dialogs/dialogbase.cpp:90 dialogs/settingsdialog.cpp:234
+#: dialogs/umlviewdialog.cpp:154
+msgid "Font Settings"
+msgstr "Поставувања за фонт"
+
+#: dialogs/classpropdialog.cpp:245
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings page name"
 msgid "General"
 msgstr "Општо"
 
-#: dialogs/classpropdlg.cpp:258
+#: dialogs/classpropdialog.cpp:258
 #, fuzzy
 #| msgid "Style:"
 msgctxt "widget style page name"
 msgid "Style"
 msgstr "Стил:"
 
-#: dialogs/classpropdlg.cpp:258 dialogs/dialogbase.cpp:113
+#: dialogs/classpropdialog.cpp:258 dialogs/dialogbase.cpp:113
 #, fuzzy
 #| msgid "Widget Color"
 msgid "Widget Style"
 msgstr "Боја на графичка контрола"
 
-#: dialogs/classpropdlg.cpp:270
+#: dialogs/classpropdialog.cpp:270
 #, fuzzy
 #| msgid "Display"
 msgctxt "display option page name"
 msgid "Display"
 msgstr "Приказ"
 
-#: dialogs/classpropdlg.cpp:270
+#: dialogs/classpropdialog.cpp:270
 msgid "Display Options"
 msgstr "Опции за приказот"
 
-#: dialogs/classpropdlg.cpp:283
+#: dialogs/classpropdialog.cpp:283 dialogs/pages/classifierlistpage.cpp:115
+#: listpopupmenu.cpp:1077 listpopupmenu.cpp:1113
+#: refactoring/refactoringassistant.cpp:666
+msgid "Attributes"
+msgstr "Атрибути"
+
+#: dialogs/classpropdialog.cpp:283
 #, fuzzy
 #| msgid "Entity Attributes Settings"
 msgid "Attribute Settings"
 msgstr "Својства на атрибутите на ентитетот"
 
-#: dialogs/classpropdlg.cpp:295
+#: dialogs/classpropdialog.cpp:295 dialogs/pages/classifierlistpage.cpp:119
+#: listpopupmenu.cpp:1080 listpopupmenu.cpp:1122
+#: refactoring/refactoringassistant.cpp:682
+msgid "Operations"
+msgstr "Операции"
+
+#: dialogs/classpropdialog.cpp:295
 msgid "Operation Settings"
 msgstr "Својства на операцијата"
 
-#: dialogs/classpropdlg.cpp:307
+#: dialogs/classpropdialog.cpp:307 dialogs/pages/classifierlistpage.cpp:123
+msgid "Templates"
+msgstr "Шаблони"
+
+#: dialogs/classpropdialog.cpp:307
 msgid "Templates Settings"
 msgstr "Својства на шаблонот"
 
-#: dialogs/classpropdlg.cpp:319
+#: dialogs/classpropdialog.cpp:319 dialogs/pages/classifierlistpage.cpp:127
+msgid "Enum Literals"
+msgstr "Нумерирани константи"
+
+#: dialogs/classpropdialog.cpp:319
 msgid "Enum Literals Settings"
 msgstr "Својства на енумерираните константи"
 
-#: dialogs/classpropdlg.cpp:331
+#: dialogs/classpropdialog.cpp:331 dialogs/pages/classifierlistpage.cpp:131
+msgid "Entity Attributes"
+msgstr "Атрибути на ентитетот"
+
+#: dialogs/classpropdialog.cpp:331
 msgid "Entity Attributes Settings"
 msgstr "Својства на атрибутите на ентитетот"
 
-#: dialogs/classpropdlg.cpp:343
+#: dialogs/classpropdialog.cpp:343
 #, fuzzy
 #| msgid "Entity Attributes"
 msgid "Entity Constraints"
 msgstr "Атрибути на ентитетот"
 
-#: dialogs/classpropdlg.cpp:343
+#: dialogs/classpropdialog.cpp:343
 #, fuzzy
 #| msgid "Entity Attributes Settings"
 msgid "Entity Constraints Settings"
 msgstr "Својства на атрибутите на ентитетот"
 
-#: dialogs/classpropdlg.cpp:355
+#: dialogs/classpropdialog.cpp:355
 #, fuzzy
 msgctxt "contents settings page name"
 msgid "Contents"
 msgstr "Содржател"
 
-#: dialogs/classpropdlg.cpp:355
+#: dialogs/classpropdialog.cpp:355
 msgid "Contents Settings"
 msgstr "Својства на содржината"
 
-#: dialogs/classpropdlg.cpp:367
+#: dialogs/classpropdialog.cpp:367 dialogs/pages/classassociationspage.cpp:44
+msgid "Associations"
+msgstr "Асоцијации"
+
+#: dialogs/classpropdialog.cpp:367
 msgid "Class Associations"
 msgstr "Асоцијации на класа"
 
-#: dialogs/classpropdlg.cpp:379
+#: dialogs/classpropdialog.cpp:379
 #, fuzzy
 #| msgid "General"
 msgctxt "instance general settings page name"
@@ -2370,9 +1821,9 @@ msgstr "Општо"
 
 #. i18n: ectx: label, entry (uiFont), group (UI Options)
 #. i18n: ectx: label, entry (codeViewerFont), group (Code Viewer Options)
-#: dialogs/classpropdlg.cpp:397 dialogs/dialogbase.cpp:90
-#: dialogs/settingsdlg.cpp:233 dialogs/umlviewdialog.cpp:153 umbrello.kcfg:160
-#: umbrello.kcfg:270
+#: dialogs/classpropdialog.cpp:397 dialogs/dialogbase.cpp:90
+#: dialogs/settingsdialog.cpp:233 dialogs/umlviewdialog.cpp:153
+#: umbrello.kcfg:160 umbrello.kcfg:270
 #, fuzzy
 msgid "Font"
 msgstr "Фонт:"
@@ -2416,6 +1867,15 @@ msgstr ""
 msgid "Hide"
 msgstr ""
 
+#: dialogs/codeeditor.cpp:791 dialogs/pages/classoptionspage.cpp:124
+#: dialogs/pages/classoptionspage.cpp:191
+#: dialogs/pages/classoptionspage.cpp:213 listpopupmenu.cpp:639
+#: listpopupmenu.cpp:1073 listpopupmenu.cpp:1110 listpopupmenu.cpp:1115
+#: listpopupmenu.cpp:1123 listpopupmenu.cpp:1130 listpopupmenu.cpp:1137
+#: listpopupmenu.cpp:1143
+msgid "Show"
+msgstr "Прикажување"
+
 #: dialogs/codeeditor.cpp:800
 msgid "Hide Comment"
 msgstr ""
@@ -2444,24 +1904,6 @@ msgstr "Приватно"
 #: dialogs/codeeditor.cpp:836 listpopupmenu.cpp:645
 msgid "Cut"
 msgstr ""
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/codeimportoptionspage.ui:17
-#, fuzzy
-msgid "C++- Import"
-msgstr "Не е генериран"
-
-#. i18n: ectx: property (text), widget (QCheckBox, createArtifactCheckBox)
-#: dialogs/codeimportoptionspage.ui:29
-msgid "For each imported file create an artifact in the component view"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, resolveDependenciesCheckBox)
-#: dialogs/codeimportoptionspage.ui:42
-#, fuzzy
-#| msgid "Resolving object references..."
-msgid "Resolve dependencies (reduces import speed)"
-msgstr "Разрешувам референци до објекти..."
 
 #: dialogs/codeviewerdialog.cpp:107
 #, fuzzy, kde-format
@@ -2523,146 +1965,6 @@ msgstr "<p align=\"right\">Неуредувачки текст:</p>"
 #: dialogs/codevieweroptionsbase.ui:278
 msgid "<p align=\"right\">Editable text:</p>"
 msgstr "<p align=\"right\">Уредувачки текст:</p>"
-
-#: dialogs/constraintlistpage.cpp:72 listpopupmenu.cpp:1417
-msgid "Unique Constraint..."
-msgstr ""
-
-#: dialogs/constraintlistpage.cpp:76 listpopupmenu.cpp:1416
-msgid "Primary Key Constraint..."
-msgstr ""
-
-#: dialogs/constraintlistpage.cpp:80 listpopupmenu.cpp:1418
-msgid "Foreign Key Constraint..."
-msgstr ""
-
-#: dialogs/constraintlistpage.cpp:84 listpopupmenu.cpp:1419
-#, fuzzy
-#| msgid "N&ew Attribute..."
-msgid "Check Constraint..."
-msgstr "Н&ов атрибут..."
-
-#: dialogs/defaultcodegenpolicypage.cpp:28
-msgid "<p align=\"center\">No Options Available.</p>"
-msgstr "<p align=\"center\">Нема достапни опции.</p>"
-
-#: dialogs/diagramprintpage.cpp:44
-msgid "&Diagrams"
-msgstr "&Дијаграми"
-
-#: dialogs/diagramprintpage.cpp:49
-msgid "Filter"
-msgstr "Филтер"
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_CurrentDiagram)
-#: dialogs/diagramprintpage.cpp:56 dialogs/finddialog.ui:43
-msgid "&Current diagram"
-msgstr "&Тековен дијаграм"
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_Diagrams)
-#: dialogs/diagramprintpage.cpp:60 dialogs/finddialog.ui:53
-msgid "&All diagrams"
-msgstr "Сите диј&аграми"
-
-#: dialogs/diagramprintpage.cpp:63
-msgid "&Select diagrams"
-msgstr "И&збери дијаграми"
-
-#: dialogs/diagramprintpage.cpp:66
-msgid "&Type of diagram"
-msgstr "&Тип на дијаграм"
-
-#: dialogs/diagramprintpage.cpp:69
-#, fuzzy
-#| msgid "Selection"
-msgctxt "diagram selection for printing"
-msgid "Selection"
-msgstr "Избор"
-
-#: dialogs/diagramprintpage.cpp:160
-msgid "No diagrams selected."
-msgstr "Нема избрани дијаграми."
-
-#: dialogs/diagrampropertiespage.cpp:75
-msgid "The name you have entered is invalid."
-msgstr "Името што го внесовте не е валидно."
-
-#: dialogs/diagrampropertiespage.cpp:85
-msgid "The name you have entered is not unique."
-msgstr "Името што го внесовте не е единствено."
-
-#: dialogs/diagrampropertiespage.cpp:86 umldoc.cpp:1430
-msgid "Name Not Unique"
-msgstr "Името не е единствено"
-
-#. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDiagramProperties)
-#: dialogs/diagrampropertiespage.ui:17
-msgid "Diagram Properties"
-msgstr "Својства на дијаграм"
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelDiagramName)
-#: dialogs/diagrampropertiespage.ui:31
-msgid "Name:"
-msgstr "Име:"
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelZoom)
-#: dialogs/diagrampropertiespage.ui:56
-msgid "Zoom:"
-msgstr "Фокусирање:"
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelZoomUnit)
-#: dialogs/diagrampropertiespage.ui:82
-#, no-c-format
-msgid "%"
-msgstr "%"
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_checkBoxShowGrid)
-#: dialogs/diagrampropertiespage.ui:124
-msgid "Show &grid"
-msgstr "Прикажи &мрежа"
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_snapToGrid)
-#: dialogs/diagrampropertiespage.ui:131
-msgid "Snap &to grid"
-msgstr "&Прикачи за мрежа"
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, ui_snapComponentSizeToGrid)
-#: dialogs/diagrampropertiespage.ui:139
-msgid ""
-"Snap the size of the components to be a multiple of the grid spacing.\n"
-"If 'Snap to Grid' is enabled a component will always be aligned with the "
-"grid on all 4 sides."
-msgstr ""
-"Префрли се на компонентата за да биде поставена во мрежа.\n"
-"Доколку „Прилепи на мрежа“ е овозможено, компонентата секогаш ќе биде "
-"порамнета со мрежата од сите 4 страни."
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_snapComponentSizeToGrid)
-#: dialogs/diagrampropertiespage.ui:142
-msgid "Snap component size"
-msgstr "Префрлисе на големината на компонентата"
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelGridSpacing)
-#: dialogs/diagrampropertiespage.ui:159
-msgid "Grid spacing:  "
-msgstr "Растојание на мрежата:  "
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelX)
-#: dialogs/diagrampropertiespage.ui:182
-msgid "X"
-msgstr "X"
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelY)
-#: dialogs/diagrampropertiespage.ui:218
-msgid "Y"
-msgstr "Y"
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_autoIncrementSequence)
-#: dialogs/diagrampropertiespage.ui:247
-#, fuzzy
-#| msgid "&Auto increment"
-msgid "Autoincrement Sequence "
-msgstr "&Автоматско зголемување"
 
 #: dialogs/dialogbase.cpp:113
 #, fuzzy
@@ -2752,95 +2054,20 @@ msgstr "Филтер"
 msgid "Tree View"
 msgstr "Поглед со &стебло"
 
+#. i18n: ectx: property (text), widget (QRadioButton, ui_CurrentDiagram)
+#: dialogs/finddialog.ui:43 dialogs/pages/diagramprintpage.cpp:56
+msgid "&Current diagram"
+msgstr "&Тековен дијаграм"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_Diagrams)
+#: dialogs/finddialog.ui:53 dialogs/pages/diagramprintpage.cpp:60
+msgid "&All diagrams"
+msgstr "Сите диј&аграми"
+
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: dialogs/finddialog.ui:69
 msgid "Search Term:"
 msgstr ""
-
-#: dialogs/generaloptionpage.cpp:43
-msgctxt "miscellaneous group box"
-msgid "Miscellaneous"
-msgstr ""
-
-#: dialogs/generaloptionpage.cpp:49
-msgid "Enable undo"
-msgstr "Овозможи отповикување"
-
-#: dialogs/generaloptionpage.cpp:53
-msgid "Use tabbed diagrams"
-msgstr "Користи дијаграми со ливчиња"
-
-#: dialogs/generaloptionpage.cpp:57
-msgid "Use new C++/Java/Ruby generators"
-msgstr "Користи ги новите генератори за C++/Java/Ruby"
-
-#: dialogs/generaloptionpage.cpp:61
-msgid "Use angular association lines"
-msgstr "Користи аголни линии за асоцијации"
-
-#: dialogs/generaloptionpage.cpp:65
-msgid "Turn on footer and page numbers when printing"
-msgstr ""
-
-#: dialogs/generaloptionpage.cpp:70
-msgid "Autosave"
-msgstr "Автоматско зачувување"
-
-#: dialogs/generaloptionpage.cpp:76
-msgid "E&nable autosave"
-msgstr "Овозможи а&втоматсо зачувување"
-
-#: dialogs/generaloptionpage.cpp:80
-msgid "Select auto-save time interval (mins):"
-msgstr "Временски интервал за зачувување (минути):"
-
-#: dialogs/generaloptionpage.cpp:89
-msgid "Set autosave suffix:"
-msgstr "Наставка за автом. зачувување:"
-
-#: dialogs/generaloptionpage.cpp:91
-#, fuzzy
-#| msgid ""
-#| "<qt><p>The autosave file will be saved to ~/autosave.xmi if the "
-#| "autosaving occurs before you have manually saved the file.</p><p>If "
-#| "you've already saved it, the autosave file will be saved in the same "
-#| "folder as the file and will be named like the file's name, followed by "
-#| "the suffix specified.</p><p>If the suffix is equal to the suffix of the "
-#| "file you've saved, the autosave will overwrite your file automatically.</"
-#| "p></qt>"
-msgid ""
-"<qt><p>The autosave file will be saved to ~/autosave.xmi if the autosaving "
-"occurs before you have manually saved the file.</p><p>If you have already "
-"saved it, the autosave file will be saved in the same folder as the file and "
-"will be named like the file's name, followed by the suffix specified.</"
-"p><p>If the suffix is equal to the suffix of the file you have saved, the "
-"autosave will overwrite your file automatically.</p></qt>"
-msgstr ""
-"<qt><p>Датотеката за автоматско зачувување ќе биде зачувана во ~/autosave."
-"xmi ако автоматското зачувување се случи пред да ја зачувате Вашата датотека "
-"рачно.</p><p>Ако веќе ја имате зачувано Вашата датотека, датотеката за "
-"автоматско зачувување ќе биде зачувана во истата папка и ќе биде именувана "
-"со истото име и наведената наставка.</p><p>Ако наведената наставка е иста со "
-"наставката од Вашата датотека, автоматското зачувување ќе запише врз Вашата "
-"датотека.</p></qt>"
-
-#: dialogs/generaloptionpage.cpp:101
-msgid "Startup"
-msgstr "Почеток"
-
-#: dialogs/generaloptionpage.cpp:107
-msgid "&Load last project"
-msgstr "Вчитај го пос&ледниот проект"
-
-#: dialogs/generaloptionpage.cpp:111
-msgid "Start new project with:"
-msgstr "Почни нов проект со:"
-
-#: dialogs/generaloptionpage.cpp:129
-#, fuzzy
-#| msgid "&Default value:"
-msgid "Default Language :"
-msgstr "Стан&дардна вредност:"
 
 #: dialogs/objectnodedialog.cpp:134
 msgid "Central Buffer"
@@ -2899,11 +2126,11 @@ msgstr "Податочен тип"
 msgid "&Object Flow"
 msgstr "Објект"
 
-#: dialogs/overwritedialogue.cpp:32
+#: dialogs/overwritedialog.cpp:32
 msgid "Destination File Already Exists"
 msgstr "Одредишната датотека веќе постои"
 
-#: dialogs/overwritedialogue.cpp:45
+#: dialogs/overwritedialog.cpp:45
 #, kde-format
 msgid ""
 "The file %1 already exists in %2.\n"
@@ -2916,48 +2143,976 @@ msgstr ""
 "Umbrello може да запише врз датотеката, да генерира слично\n"
 "слично име или да не ја генерира датотеката."
 
-#: dialogs/overwritedialogue.cpp:48
+#: dialogs/overwritedialog.cpp:48
 msgid "&Apply to all remaining files"
 msgstr "Примени н&а сите останати датотеки"
 
-#: dialogs/overwritedialogue.cpp:52 umlviewimageexporter.cpp:106
+#: dialogs/overwritedialog.cpp:52 umlviewimageexporter.cpp:106
 msgid "&Overwrite"
 msgstr "&Запиши"
 
-#: dialogs/overwritedialogue.cpp:53
+#: dialogs/overwritedialog.cpp:53
 msgid "&Generate Similar File Name"
 msgstr "&Генерирај слично име"
 
-#: dialogs/overwritedialogue.cpp:54
+#: dialogs/overwritedialog.cpp:54
 msgid "&Do Not Generate File"
 msgstr "Не генерирај &датотека"
 
-#: dialogs/parmpropdlg.cpp:47
+#: dialogs/pages/activitypage.cpp:58 dialogs/statedialog.cpp:190
+#: dialogs/statedialog.cpp:191
+msgid "Activities"
+msgstr "Активности"
+
+#: dialogs/pages/activitypage.cpp:80 dialogs/pages/classifierlistpage.cpp:174
+#, fuzzy
+#| msgid "Copies the selected section to the clipboard"
+msgid "Move selected item to the top"
+msgstr "Ја копира избраната секција на таблата со исечоци"
+
+#: dialogs/pages/activitypage.cpp:86 dialogs/pages/classifierlistpage.cpp:180
+#, fuzzy
+#| msgid "Delete Selected Items"
+msgid "Move selected item up"
+msgstr "Избриши ги избраните елементи"
+
+#: dialogs/pages/activitypage.cpp:92 dialogs/pages/classifierlistpage.cpp:186
+msgid "Move selected item down"
+msgstr ""
+
+#: dialogs/pages/activitypage.cpp:98 dialogs/pages/classifierlistpage.cpp:192
+#, fuzzy
+#| msgid "Copies the selected section to the clipboard"
+msgid "Move selected item to the bottom"
+msgstr "Ја копира избраната секција на таблата со исечоци"
+
+#: dialogs/pages/activitypage.cpp:102
+msgid "New Activity..."
+msgstr "Нова активност..."
+
+#: dialogs/pages/activitypage.cpp:104 listpopupmenu.cpp:642
+#: refactoring/refactoringassistant.cpp:461
+#, fuzzy
+msgid "Delete"
+msgstr "Избери"
+
+#: dialogs/pages/activitypage.cpp:106 widgets/floatingtextwidget.cpp:405
+msgid "Rename"
+msgstr "Преименувај"
+
+#: dialogs/pages/activitypage.cpp:175
+msgid "New Activity"
+msgstr "Нова активност"
+
+#: dialogs/pages/activitypage.cpp:176 toolbarstateother.cpp:251
+#: umlscene.cpp:3096 widgets/activitywidget.cpp:364
+#: widgets/statewidget.cpp:497
+msgid "Enter the name of the new activity:"
+msgstr "Внесете го името за новата активност:"
+
+#: dialogs/pages/activitypage.cpp:176 toolbarstateother.cpp:251
+#: umlscene.cpp:3097 widgets/statewidget.cpp:498
+msgid "new activity"
+msgstr "нова активност"
+
+#: dialogs/pages/activitypage.cpp:198
+msgid "Rename Activity"
+msgstr "Преименување активност"
+
+#: dialogs/pages/activitypage.cpp:198
+msgid "Enter the new name of the activity:"
+msgstr "Внесете го името за новата активност:"
+
+#: dialogs/pages/associationgeneralpage.cpp:89
+#, fuzzy
+#| msgid "Name:"
+msgctxt "name of association widget"
+msgid "Name:"
+msgstr "Име:"
+
+#: dialogs/pages/associationgeneralpage.cpp:102
+msgid "Type:"
+msgstr "Тип:"
+
+#: dialogs/pages/associationrolepage.cpp:67
+msgid "Role A Properties"
+msgstr "Својства на улогата А"
+
+#: dialogs/pages/associationrolepage.cpp:68
+msgid "Role B Properties"
+msgstr "Својства на улогата Б"
+
+#: dialogs/pages/associationrolepage.cpp:85
+msgid "Role A Visibility"
+msgstr "Видливост на улогата А"
+
+#: dialogs/pages/associationrolepage.cpp:86
+msgid "Role B Visibility"
+msgstr "Видливост на улогата Б"
+
+#: dialogs/pages/associationrolepage.cpp:87
+msgid "Role A Changeability"
+msgstr "Менливост на улогата А"
+
+#: dialogs/pages/associationrolepage.cpp:88
+msgid "Role B Changeability"
+msgstr "Менливост на улогата Б"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelRoleName)
+#: dialogs/pages/associationrolepage.cpp:113
+#: dialogs/pages/associationrolepage.cpp:190
+#: dialogs/pages/umlrolepropertiesbase.ui:36
+msgid "Rolename:"
+msgstr "Име на улога:"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelMultiplicity)
+#: dialogs/pages/associationrolepage.cpp:118
+#: dialogs/pages/associationrolepage.cpp:195
+#: dialogs/pages/umlrolepropertiesbase.ui:49
+msgid "Multiplicity:"
+msgstr "Повеќекратност:"
+
+#: dialogs/pages/associationrolepage.cpp:135
+#, fuzzy
+#| msgid "Public"
+msgctxt "scope for A is public"
+msgid "Public"
+msgstr "Јавно"
+
+#: dialogs/pages/associationrolepage.cpp:138
+#, fuzzy
+#| msgid "Private"
+msgctxt "scope for A is private"
+msgid "Private"
+msgstr "Приватно"
+
+#: dialogs/pages/associationrolepage.cpp:141
+#, fuzzy
+#| msgid "Protected"
+msgctxt "scope for A is protected"
+msgid "Protected"
+msgstr "Заштитено"
+
+#: dialogs/pages/associationrolepage.cpp:144
+#, fuzzy
+#| msgid "Implementation"
+msgctxt "scope for A is implementation"
+msgid "Implementation"
+msgstr "Имплементација"
+
+#: dialogs/pages/associationrolepage.cpp:166
+#, fuzzy
+#| msgid "Changeable"
+msgctxt "changeability for A is changeable"
+msgid "Changeable"
+msgstr "Менливо"
+
+#: dialogs/pages/associationrolepage.cpp:169
+#, fuzzy
+#| msgid "Frozen"
+msgctxt "changeability for A is frozen"
+msgid "Frozen"
+msgstr "Замрзнато"
+
+#: dialogs/pages/associationrolepage.cpp:172
+#, fuzzy
+#| msgid "Add only"
+msgctxt "changeability for A is add only"
+msgid "Add only"
+msgstr "Само за додавање"
+
+#: dialogs/pages/associationrolepage.cpp:212
+#, fuzzy
+#| msgid "Public"
+msgctxt "scope for B is public"
+msgid "Public"
+msgstr "Јавно"
+
+#: dialogs/pages/associationrolepage.cpp:215
+#, fuzzy
+#| msgid "Private"
+msgctxt "scope for B is private"
+msgid "Private"
+msgstr "Приватно"
+
+#: dialogs/pages/associationrolepage.cpp:218
+#, fuzzy
+#| msgid "Protected"
+msgctxt "scope for B is protected"
+msgid "Protected"
+msgstr "Заштитено"
+
+#: dialogs/pages/associationrolepage.cpp:221
+#, fuzzy
+#| msgid "Implementation"
+msgctxt "scope for B is implementation"
+msgid "Implementation"
+msgstr "Имплементација"
+
+#: dialogs/pages/associationrolepage.cpp:243
+#, fuzzy
+#| msgid "Changeable"
+msgctxt "changeability for B is changeable"
+msgid "Changeable"
+msgstr "Менливо"
+
+#: dialogs/pages/associationrolepage.cpp:246
+#, fuzzy
+#| msgid "Frozen"
+msgctxt "changeability for B is frozen"
+msgid "Frozen"
+msgstr "Замрзнато"
+
+#: dialogs/pages/associationrolepage.cpp:249
+#, fuzzy
+#| msgid "Add only"
+msgctxt "changeability for B is add only"
+msgid "Add only"
+msgstr "Само за додавање"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: dialogs/pages/autolayoutoptionpage.ui:17
+#, fuzzy
+msgid "Layout Generator"
+msgstr "Не е генериран"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, m_autoDotPath)
+#: dialogs/pages/autolayoutoptionpage.ui:24
+msgid ""
+"<p>The auto layout feature depends on layout generators provided by the "
+"GraphViz package, which is normally installed aside Umbrello by a package "
+"manager.</p>\n"
+"<p>Umbrello has build in support for detecting the install location of  "
+"these layout generators. For cases where this dependency is not available or "
+"do not fit, a different installation path could be provided.</p>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoDotPath)
+#: dialogs/pages/autolayoutoptionpage.ui:27
+msgid "Auto detect layout generator"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: dialogs/pages/autolayoutoptionpage.ui:37
+msgid "Generator executable path:"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, Other)
+#: dialogs/pages/autolayoutoptionpage.ui:82
+msgid "Miscellaneous"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, m_showExportLayout)
+#: dialogs/pages/autolayoutoptionpage.ui:88
+msgid ""
+"<p>Dot file export is performed by using the export layout.</p><p>With this "
+"option checked, the export layout is added to the list of available diagram "
+"layouts and enables a quick dot export preview.</p>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_showExportLayout)
+#: dialogs/pages/autolayoutoptionpage.ui:91
+msgid "Show export layout in diagram context menu"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:68
+msgid "Class &name:"
+msgstr "Име &на класата:"
+
+#: dialogs/pages/classgeneralpage.cpp:71
+msgid "Actor &name:"
+msgstr "Име &на актерот:"
+
+#: dialogs/pages/classgeneralpage.cpp:74
+msgid "Package &name:"
+msgstr "Име &на пакетот:"
+
+#: dialogs/pages/classgeneralpage.cpp:77
+msgid "Use case &name:"
+msgstr "Име &на сценариото на употреба:"
+
+#: dialogs/pages/classgeneralpage.cpp:80
+msgid "Interface &name:"
+msgstr "Име &на интерфејсот:"
+
+#: dialogs/pages/classgeneralpage.cpp:83
+msgid "Component &name:"
+msgstr "Име &на компонента:"
+
+#: dialogs/pages/classgeneralpage.cpp:86
+#, fuzzy
+#| msgid "Node name:"
+msgid "Node &name:"
+msgstr "Име на јазол:"
+
+#: dialogs/pages/classgeneralpage.cpp:89
+msgid "Artifact &name:"
+msgstr "Име &на артифакт:"
+
+#: dialogs/pages/classgeneralpage.cpp:92
+msgid "Enum &name:"
+msgstr "Име &на енумератор:"
+
+#: dialogs/pages/classgeneralpage.cpp:95
+msgid "Datatype &name:"
+msgstr "Име &на типот на податоци:"
+
+#: dialogs/pages/classgeneralpage.cpp:98
+msgid "Entity &name:"
+msgstr "Име &на ентитет:"
+
+#: dialogs/pages/classgeneralpage.cpp:122 dialogs/umltemplatedialog.cpp:81
+msgid "&Stereotype name:"
+msgstr "Име на &стереотип:"
+
+#: dialogs/pages/classgeneralpage.cpp:138
+msgid "Reference:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:146
+#, fuzzy
+#| msgid "Package &name:"
+msgid "Package path:"
+msgstr "Име &на пакетот:"
+
+#: dialogs/pages/classgeneralpage.cpp:178
+msgid "A&bstract class"
+msgstr "А&пстрактна класа"
+
+#: dialogs/pages/classgeneralpage.cpp:180
+msgid "A&bstract use case"
+msgstr "А&пстрактно сценарио за употреба"
+
+#: dialogs/pages/classgeneralpage.cpp:189
+#, fuzzy
+#| msgid "&Executable"
+msgctxt "component is executable"
+msgid "&Executable"
+msgstr "&Извршно"
+
+#: dialogs/pages/classgeneralpage.cpp:197
+msgid "Draw As"
+msgstr "Нацртај како"
+
+#: dialogs/pages/classgeneralpage.cpp:201
+#, fuzzy
+#| msgid "&Default"
+msgctxt "draw as default"
+msgid "&Default"
+msgstr "&Стандардно"
+
+#. i18n: ectx: Menu (file)
+#: dialogs/pages/classgeneralpage.cpp:204 umbrelloui.rc:4
+#, fuzzy
+msgid "&File"
+msgstr "Филтер"
+
+#: dialogs/pages/classgeneralpage.cpp:207
+msgid "&Library"
+msgstr "Биб&иотека"
+
+#: dialogs/pages/classgeneralpage.cpp:210
+msgid "&Table"
+msgstr "&Табела"
+
+#: dialogs/pages/classgeneralpage.cpp:228 dialogs/umlattributedialog.cpp:98
+#: dialogs/umloperationdialog.cpp:123 listpopupmenu.cpp:1084
+#: listpopupmenu.cpp:1129
+msgid "Visibility"
+msgstr "Видливост"
+
+#: dialogs/pages/classgeneralpage.cpp:232 dialogs/umloperationdialog.cpp:128
+#, fuzzy
+#| msgid "P&ublic"
+msgctxt "public visibility"
+msgid "P&ublic"
+msgstr "&Јавен"
+
+#: dialogs/pages/classgeneralpage.cpp:235 dialogs/umloperationdialog.cpp:131
+#, fuzzy
+#| msgid "P&rivate"
+msgctxt "private visibility"
+msgid "P&rivate"
+msgstr "П&риватен"
+
+#: dialogs/pages/classgeneralpage.cpp:238
+#, fuzzy
+#| msgid "Pro&tected"
+msgctxt "protected visibility"
+msgid "Pro&tected"
+msgstr "Заш&титен"
+
+#: dialogs/pages/classgeneralpage.cpp:242
+msgid "Imple&mentation"
+msgstr "И&мплементација"
+
+#: dialogs/pages/classgeneralpage.cpp:306
+msgid "Class name:"
+msgstr "Име на класа:"
+
+#: dialogs/pages/classgeneralpage.cpp:314
+#: dialogs/pages/classgeneralpage.cpp:394
+msgid "Instance name:"
+msgstr "Име на инстанца:"
+
+#: dialogs/pages/classgeneralpage.cpp:322
+msgid "Draw as actor"
+msgstr "Нацртај како актер"
+
+#: dialogs/pages/classgeneralpage.cpp:327
+msgid "Multiple instance"
+msgstr "Повеќекратна инстанца"
+
+#: dialogs/pages/classgeneralpage.cpp:333
+msgid "Show destruction"
+msgstr "Прикажи уништување"
+
+#: dialogs/pages/classgeneralpage.cpp:372
+msgid "Component name:"
+msgstr "Име на компонента:"
+
+#: dialogs/pages/classgeneralpage.cpp:374
+msgid "Node name:"
+msgstr "Име на јазол:"
+
+#: dialogs/pages/classgeneralpage.cpp:384 dialogs/parmpropdialog.cpp:93
+#: dialogs/umlattributedialog.cpp:89 dialogs/umlentityattributedialog.cpp:91
+#: dialogs/umloperationdialog.cpp:108
+msgid "Stereotype name:"
+msgstr "Име на стереотипот:"
+
+#: dialogs/pages/classgeneralpage.cpp:481
+#: dialogs/pages/classgeneralpage.cpp:530
+#: dialogs/pages/classgeneralpage.cpp:543
+msgid ""
+"The name you have chosen\n"
+"is already being used.\n"
+"The name has been reset."
+msgstr ""
+"Името што го избравте\n"
+"веќе се користи\n"
+"Името беше ресетирано."
+
+#: dialogs/pages/classgeneralpage.cpp:482
+#: dialogs/pages/classgeneralpage.cpp:531
+#: dialogs/pages/classgeneralpage.cpp:544
+msgid "Name is Not Unique"
+msgstr "Името не е единствено"
+
+#: dialogs/pages/classifierlistpage.cpp:116
+msgid "N&ew Attribute..."
+msgstr "Н&ов атрибут..."
+
+#: dialogs/pages/classifierlistpage.cpp:120
+msgid "N&ew Operation..."
+msgstr "Н&ова операција..."
+
+#: dialogs/pages/classifierlistpage.cpp:124
+msgid "N&ew Template..."
+msgstr "Н&ов шаблон..."
+
+#: dialogs/pages/classifierlistpage.cpp:128
+msgid "N&ew Enum Literal..."
+msgstr "Н&ова енумерирана константа..."
+
+#: dialogs/pages/classifierlistpage.cpp:132
+msgid "N&ew Entity Attribute..."
+msgstr "Н&ов атрибут на ентитетот..."
+
+#: dialogs/pages/classifierlistpage.cpp:135
+#, fuzzy
+msgid "Constraints"
+msgstr "Содржател"
+
+#: dialogs/pages/classifierlistpage.cpp:136
+#, fuzzy
+#| msgid "N&ew Attribute..."
+msgid "N&ew Constraint..."
+msgstr "Н&ов атрибут..."
+
+#: dialogs/pages/classifierlistpage.cpp:206
+#: dialogs/umlforeignkeyconstraintdialog.cpp:321
+#: dialogs/umloperationdialog.cpp:166
+#: dialogs/umluniqueconstraintdialog.cpp:122 umldoc.cpp:1486 umlscene.cpp:3311
+#, fuzzy
+msgid "&Delete"
+msgstr "&Стандардно"
+
+#: dialogs/pages/classifierlistpage.cpp:208 dialogs/umloperationdialog.cpp:168
+#: uml.cpp:499
+msgid "&Properties"
+msgstr "&Својства"
+
+#: dialogs/pages/classifierlistpage.cpp:226
+#, fuzzy
+#| msgid "Component"
+msgid "Comment"
+msgstr "Компонента"
+
+#: dialogs/pages/classifierlistpage.cpp:227
+#, fuzzy
+#| msgid "View Code"
+msgid "Source Code"
+msgstr "Види код"
+
+#: dialogs/pages/classoptionspage.cpp:131
+#: dialogs/pages/classoptionspage.cpp:219
+msgid "Operatio&ns"
+msgstr "Опе&рации"
+
+#: dialogs/pages/classoptionspage.cpp:135
+#: dialogs/pages/classoptionspage.cpp:236
+msgid "&Visibility"
+msgstr "&Видливост"
+
+#: dialogs/pages/classoptionspage.cpp:144
+#: dialogs/pages/classoptionspage.cpp:198
+#: dialogs/pages/classoptionspage.cpp:223
+#, fuzzy
+msgid "O&peration signature"
+msgstr "Потпис на о&перација"
+
+#: dialogs/pages/classoptionspage.cpp:148
+#: dialogs/pages/classoptionspage.cpp:240
+msgid "Pac&kage"
+msgstr "Па&кет"
+
+#: dialogs/pages/classoptionspage.cpp:155
+#: dialogs/pages/classoptionspage.cpp:228
+msgid "Att&ributes"
+msgstr "Ат&рибути"
+
+#: dialogs/pages/classoptionspage.cpp:159
+#: dialogs/pages/classoptionspage.cpp:244
+msgid "Stereot&ype"
+msgstr "Стерео&тип"
+
+#: dialogs/pages/classoptionspage.cpp:163
+#: dialogs/pages/classoptionspage.cpp:232
+#, fuzzy
+msgid "Attr&ibute signature"
+msgstr "Потпис на стер&еотип"
+
+#: dialogs/pages/classoptionspage.cpp:172
+#: dialogs/pages/classoptionspage.cpp:252
+#, fuzzy
+#| msgid "Public Only"
+msgid "&Public Only"
+msgstr "Само јавно"
+
+#: dialogs/pages/classoptionspage.cpp:178
+msgid "Draw as circle"
+msgstr "Нацртај како круг"
+
+#: dialogs/pages/classoptionspage.cpp:248
+#, fuzzy
+#| msgid "Attribute accessor methods"
+msgid "&Attribute associations"
+msgstr "Методи на атрибут акцесор"
+
+#: dialogs/pages/classoptionspage.cpp:257
+msgid "Starting Scope"
+msgstr "Почетен опсег"
+
+#: dialogs/pages/classoptionspage.cpp:262
+msgid "Default attribute scope:"
+msgstr "Стандарден опсег на атрибут:"
+
+#: dialogs/pages/classoptionspage.cpp:265
+msgid "Default operation scope:"
+msgstr "Стандарден опсег на операција:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: dialogs/pages/codeimportoptionspage.ui:17
+#, fuzzy
+msgid "C++- Import"
+msgstr "Не е генериран"
+
+#. i18n: ectx: property (text), widget (QCheckBox, createArtifactCheckBox)
+#: dialogs/pages/codeimportoptionspage.ui:29
+msgid "For each imported file create an artifact in the component view"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, resolveDependenciesCheckBox)
+#: dialogs/pages/codeimportoptionspage.ui:42
+#, fuzzy
+#| msgid "Resolving object references..."
+msgid "Resolve dependencies (reduces import speed)"
+msgstr "Разрешувам референци до објекти..."
+
+#: dialogs/pages/constraintlistpage.cpp:72 listpopupmenu.cpp:1417
+msgid "Unique Constraint..."
+msgstr ""
+
+#: dialogs/pages/constraintlistpage.cpp:76 listpopupmenu.cpp:1416
+msgid "Primary Key Constraint..."
+msgstr ""
+
+#: dialogs/pages/constraintlistpage.cpp:80 listpopupmenu.cpp:1418
+msgid "Foreign Key Constraint..."
+msgstr ""
+
+#: dialogs/pages/constraintlistpage.cpp:84 listpopupmenu.cpp:1419
+#, fuzzy
+#| msgid "N&ew Attribute..."
+msgid "Check Constraint..."
+msgstr "Н&ов атрибут..."
+
+#: dialogs/pages/defaultcodegenpolicypage.cpp:28
+msgid "<p align=\"center\">No Options Available.</p>"
+msgstr "<p align=\"center\">Нема достапни опции.</p>"
+
+#: dialogs/pages/diagramprintpage.cpp:44
+msgid "&Diagrams"
+msgstr "&Дијаграми"
+
+#: dialogs/pages/diagramprintpage.cpp:49
+msgid "Filter"
+msgstr "Филтер"
+
+#: dialogs/pages/diagramprintpage.cpp:63
+msgid "&Select diagrams"
+msgstr "И&збери дијаграми"
+
+#: dialogs/pages/diagramprintpage.cpp:66
+msgid "&Type of diagram"
+msgstr "&Тип на дијаграм"
+
+#: dialogs/pages/diagramprintpage.cpp:69
+#, fuzzy
+#| msgid "Selection"
+msgctxt "diagram selection for printing"
+msgid "Selection"
+msgstr "Избор"
+
+#: dialogs/pages/diagramprintpage.cpp:160
+msgid "No diagrams selected."
+msgstr "Нема избрани дијаграми."
+
+#: dialogs/pages/diagrampropertiespage.cpp:75
+msgid "The name you have entered is invalid."
+msgstr "Името што го внесовте не е валидно."
+
+#: dialogs/pages/diagrampropertiespage.cpp:85
+msgid "The name you have entered is not unique."
+msgstr "Името што го внесовте не е единствено."
+
+#: dialogs/pages/diagrampropertiespage.cpp:86 umldoc.cpp:1430
+msgid "Name Not Unique"
+msgstr "Името не е единствено"
+
+#. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDiagramProperties)
+#: dialogs/pages/diagrampropertiespage.ui:17
+msgid "Diagram Properties"
+msgstr "Својства на дијаграм"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelDiagramName)
+#: dialogs/pages/diagrampropertiespage.ui:31
+msgid "Name:"
+msgstr "Име:"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelZoom)
+#: dialogs/pages/diagrampropertiespage.ui:56
+msgid "Zoom:"
+msgstr "Фокусирање:"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelZoomUnit)
+#: dialogs/pages/diagrampropertiespage.ui:82
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_checkBoxShowGrid)
+#: dialogs/pages/diagrampropertiespage.ui:124
+msgid "Show &grid"
+msgstr "Прикажи &мрежа"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_snapToGrid)
+#: dialogs/pages/diagrampropertiespage.ui:131
+msgid "Snap &to grid"
+msgstr "&Прикачи за мрежа"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, ui_snapComponentSizeToGrid)
+#: dialogs/pages/diagrampropertiespage.ui:139
+msgid ""
+"Snap the size of the components to be a multiple of the grid spacing.\n"
+"If 'Snap to Grid' is enabled a component will always be aligned with the "
+"grid on all 4 sides."
+msgstr ""
+"Префрли се на компонентата за да биде поставена во мрежа.\n"
+"Доколку „Прилепи на мрежа“ е овозможено, компонентата секогаш ќе биде "
+"порамнета со мрежата од сите 4 страни."
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_snapComponentSizeToGrid)
+#: dialogs/pages/diagrampropertiespage.ui:142
+msgid "Snap component size"
+msgstr "Префрлисе на големината на компонентата"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelGridSpacing)
+#: dialogs/pages/diagrampropertiespage.ui:159
+msgid "Grid spacing:  "
+msgstr "Растојание на мрежата:  "
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelX)
+#: dialogs/pages/diagrampropertiespage.ui:182
+msgid "X"
+msgstr "X"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelY)
+#: dialogs/pages/diagrampropertiespage.ui:218
+msgid "Y"
+msgstr "Y"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_autoIncrementSequence)
+#: dialogs/pages/diagrampropertiespage.ui:247
+#, fuzzy
+#| msgid "&Auto increment"
+msgid "Autoincrement Sequence "
+msgstr "&Автоматско зголемување"
+
+#: dialogs/pages/generaloptionpage.cpp:43
+msgctxt "miscellaneous group box"
+msgid "Miscellaneous"
+msgstr ""
+
+#: dialogs/pages/generaloptionpage.cpp:49
+msgid "Enable undo"
+msgstr "Овозможи отповикување"
+
+#: dialogs/pages/generaloptionpage.cpp:53
+msgid "Use tabbed diagrams"
+msgstr "Користи дијаграми со ливчиња"
+
+#: dialogs/pages/generaloptionpage.cpp:57
+msgid "Use new C++/Java/Ruby generators"
+msgstr "Користи ги новите генератори за C++/Java/Ruby"
+
+#: dialogs/pages/generaloptionpage.cpp:61
+msgid "Use angular association lines"
+msgstr "Користи аголни линии за асоцијации"
+
+#: dialogs/pages/generaloptionpage.cpp:65
+msgid "Turn on footer and page numbers when printing"
+msgstr ""
+
+#: dialogs/pages/generaloptionpage.cpp:70
+msgid "Autosave"
+msgstr "Автоматско зачувување"
+
+#: dialogs/pages/generaloptionpage.cpp:76
+msgid "E&nable autosave"
+msgstr "Овозможи а&втоматсо зачувување"
+
+#: dialogs/pages/generaloptionpage.cpp:80
+msgid "Select auto-save time interval (mins):"
+msgstr "Временски интервал за зачувување (минути):"
+
+#: dialogs/pages/generaloptionpage.cpp:89
+msgid "Set autosave suffix:"
+msgstr "Наставка за автом. зачувување:"
+
+#: dialogs/pages/generaloptionpage.cpp:91
+#, fuzzy
+#| msgid ""
+#| "<qt><p>The autosave file will be saved to ~/autosave.xmi if the "
+#| "autosaving occurs before you have manually saved the file.</p><p>If "
+#| "you've already saved it, the autosave file will be saved in the same "
+#| "folder as the file and will be named like the file's name, followed by "
+#| "the suffix specified.</p><p>If the suffix is equal to the suffix of the "
+#| "file you've saved, the autosave will overwrite your file automatically.</"
+#| "p></qt>"
+msgid ""
+"<qt><p>The autosave file will be saved to ~/autosave.xmi if the autosaving "
+"occurs before you have manually saved the file.</p><p>If you have already "
+"saved it, the autosave file will be saved in the same folder as the file and "
+"will be named like the file's name, followed by the suffix specified.</"
+"p><p>If the suffix is equal to the suffix of the file you have saved, the "
+"autosave will overwrite your file automatically.</p></qt>"
+msgstr ""
+"<qt><p>Датотеката за автоматско зачувување ќе биде зачувана во ~/autosave."
+"xmi ако автоматското зачувување се случи пред да ја зачувате Вашата датотека "
+"рачно.</p><p>Ако веќе ја имате зачувано Вашата датотека, датотеката за "
+"автоматско зачувување ќе биде зачувана во истата папка и ќе биде именувана "
+"со истото име и наведената наставка.</p><p>Ако наведената наставка е иста со "
+"наставката од Вашата датотека, автоматското зачувување ќе запише врз Вашата "
+"датотека.</p></qt>"
+
+#: dialogs/pages/generaloptionpage.cpp:101
+msgid "Startup"
+msgstr "Почеток"
+
+#: dialogs/pages/generaloptionpage.cpp:107
+msgid "&Load last project"
+msgstr "Вчитај го пос&ледниот проект"
+
+#: dialogs/pages/generaloptionpage.cpp:111
+msgid "Start new project with:"
+msgstr "Почни нов проект со:"
+
+#: dialogs/pages/generaloptionpage.cpp:129
+#, fuzzy
+#| msgid "&Default value:"
+msgid "Default Language :"
+msgstr "Стан&дардна вредност:"
+
+#: dialogs/pages/pkgcontentspage.cpp:43
+msgid "Contained Items"
+msgstr "Содржани елементи"
+
+#. i18n: ectx: property (title), widget (QGroupBox, ui_propsGroupBox)
+#: dialogs/pages/umlrolepropertiesbase.ui:16 dialogs/umlroledialog.cpp:24
+msgid "Role Properties"
+msgstr "Својства на улогата"
+
+#. i18n: ectx: property (title), widget (KButtonGroup, ui_visibilityButtonGroup)
+#: dialogs/pages/umlrolepropertiesbase.ui:67
+msgid "Role Visibility"
+msgstr "Можност за гледање на улогата"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_pImplementationRB)
+#: dialogs/pages/umlrolepropertiesbase.ui:97
+msgid "Implementation"
+msgstr "Имплементација"
+
+#. i18n: ectx: property (title), widget (KButtonGroup, ui_changeabilityButtonGroup)
+#: dialogs/pages/umlrolepropertiesbase.ui:107
+msgid "Role Changeability"
+msgstr "Можност за променување на улогата"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_pChangeableRB)
+#: dialogs/pages/umlrolepropertiesbase.ui:113
+msgid "Changeable"
+msgstr "Менливо"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_pFrozenRB)
+#: dialogs/pages/umlrolepropertiesbase.ui:123
+msgid "Frozen"
+msgstr "Замрзнато"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_pAddOnlyRB)
+#: dialogs/pages/umlrolepropertiesbase.ui:130
+msgid "Add only"
+msgstr "Само за додавање"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:86
+#, fuzzy
+#| msgid "Color"
+msgctxt "title of color group"
+msgid "Color"
+msgstr "Боја"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:91
+msgctxt "text color"
+msgid "&Text:"
+msgstr ""
+
+#: dialogs/pages/umlwidgetstylepage.cpp:98
+#, fuzzy
+#| msgid "&Default"
+msgctxt "default text color button"
+msgid "Defaul&t"
+msgstr "&Стандардно"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:101
+#, fuzzy
+#| msgid "&Line:"
+msgctxt "line color"
+msgid "&Line:"
+msgstr "&Линија:"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:108
+#, fuzzy
+#| msgid "&Default"
+msgctxt "default line color button"
+msgid "&Default"
+msgstr "&Стандардно"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:111
+msgid "&Fill:"
+msgstr "&Исполни:"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:118
+#, fuzzy
+#| msgid "D&efault"
+msgctxt "default fill color button"
+msgid "D&efault"
+msgstr "Стан&дардно"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:121
+msgid "&Use fill"
+msgstr "&Користи исполнување"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:131
+msgctxt "background color"
+msgid "&Background:"
+msgstr ""
+
+#: dialogs/pages/umlwidgetstylepage.cpp:138
+#, fuzzy
+#| msgid "&Default"
+msgctxt "default background color button"
+msgid "De&fault"
+msgstr "&Стандардно"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:141
+msgctxt "grid dot color"
+msgid "&Grid dot:"
+msgstr ""
+
+#: dialogs/pages/umlwidgetstylepage.cpp:148
+#, fuzzy
+#| msgid "&Default"
+msgctxt "default grid dot color button"
+msgid "Def&ault"
+msgstr "&Стандардно"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:156
+#, fuzzy
+#| msgid "Line width:"
+msgctxt "title of width group"
+msgid "Width"
+msgstr "Дебелина на линија:"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:161
+#, fuzzy
+#| msgid "Line width:  "
+msgctxt "line width"
+msgid "Line &width:"
+msgstr "Ширина на линија:  "
+
+#: dialogs/pages/umlwidgetstylepage.cpp:167
+#, fuzzy
+#| msgid "&Default"
+msgctxt "default line width button"
+msgid "Defa&ult"
+msgstr "&Стандардно"
+
+#: dialogs/parmpropdialog.cpp:47
 msgid "Parameter Properties"
 msgstr "Својства на параметарот"
 
-#: dialogs/parmpropdlg.cpp:78 dialogs/umlattributedialog.cpp:73
+#: dialogs/parmpropdialog.cpp:78 dialogs/umlattributedialog.cpp:73
 #: dialogs/umlentityattributedialog.cpp:75 dialogs/umloperationdialog.cpp:101
 #: dialogs/umltemplatedialog.cpp:69
 msgid "&Type:"
 msgstr "&Тип:"
 
-#: dialogs/parmpropdlg.cpp:86
+#: dialogs/parmpropdialog.cpp:86
 #, fuzzy
 #| msgid "&Name:"
 msgctxt "property name"
 msgid "&Name:"
 msgstr "&Име:"
 
-#: dialogs/parmpropdlg.cpp:90 dialogs/umlattributedialog.cpp:85
+#: dialogs/parmpropdialog.cpp:90 dialogs/umlattributedialog.cpp:85
 msgid "&Initial value:"
 msgstr "&Иницијална вредност:"
 
-#: dialogs/parmpropdlg.cpp:98
+#: dialogs/parmpropdialog.cpp:98
 msgid "Passing Direction"
 msgstr "Насока на поминување"
 
-#: dialogs/parmpropdlg.cpp:99
+#: dialogs/parmpropdialog.cpp:99
 msgid ""
 "\"in\" is a readonly parameter, \"out\" is a writeonly parameter and \"inout"
 "\" is a parameter for reading and writing."
@@ -2965,157 +3120,153 @@ msgstr ""
 "„in“ е параметар само за читање, „out“ е параметар само за запишување и "
 "„inout“ е параметар за читање и запишување."
 
-#: dialogs/parmpropdlg.cpp:264
+#: dialogs/parmpropdialog.cpp:264
 msgid "You have entered an invalid parameter name."
 msgstr "Внесовте погрешно име за параметарот."
 
-#: dialogs/parmpropdlg.cpp:265
+#: dialogs/parmpropdialog.cpp:265
 msgid "Parameter Name Invalid"
 msgstr "Невалидно име на параметар"
 
-#: dialogs/pkgcontentspage.cpp:43
-msgid "Contained Items"
-msgstr "Содржани елементи"
-
-#: dialogs/selectopdlg.cpp:53 dialogs/selectopdlg.cpp:64
+#: dialogs/selectopdialog.cpp:53 dialogs/selectopdialog.cpp:64
 #, fuzzy
 msgid "Select Operation"
 msgstr "Избирање операција"
 
-#: dialogs/selectopdlg.cpp:72
+#: dialogs/selectopdialog.cpp:72
 #, fuzzy
 msgid "Sequence number:"
 msgstr "Број од серијата:"
 
-#: dialogs/selectopdlg.cpp:75
+#: dialogs/selectopdialog.cpp:75
 #, fuzzy
 #| msgid "&Auto increment"
 msgid "Auto increment:"
 msgstr "&Автоматско зголемување"
 
-#: dialogs/selectopdlg.cpp:80
+#: dialogs/selectopdialog.cpp:80
 msgid "Class operation:"
 msgstr "Класна операција:"
 
-#: dialogs/selectopdlg.cpp:89 listpopupmenu.cpp:571 listpopupmenu.cpp:687
+#: dialogs/selectopdialog.cpp:89 listpopupmenu.cpp:571 listpopupmenu.cpp:687
 msgid "New Operation..."
 msgstr "Нова операција..."
 
-#: dialogs/selectopdlg.cpp:93
+#: dialogs/selectopdialog.cpp:93
 msgid "Custom operation:"
 msgstr "Сопствена операција:"
 
-#: dialogs/settingsdlg.cpp:39
+#: dialogs/settingsdialog.cpp:39
 msgid "Umbrello Setup"
 msgstr "Поставување на Umbrello"
 
-#: dialogs/settingsdlg.cpp:72
+#: dialogs/settingsdialog.cpp:72
 msgid "User Interface"
 msgstr "Кориснички интерфејс"
 
-#: dialogs/settingsdlg.cpp:73
+#: dialogs/settingsdialog.cpp:73
 msgid "User Interface Settings"
 msgstr "Поставувања на кориснички интерфејс"
 
-#: dialogs/settingsdlg.cpp:77
+#: dialogs/settingsdialog.cpp:77
 #, fuzzy
 #| msgid "Color"
 msgctxt "color group box"
 msgid "Color"
 msgstr "Боја"
 
-#: dialogs/settingsdlg.cpp:85
+#: dialogs/settingsdialog.cpp:85
 #, fuzzy
 #| msgid "Line color:"
 msgid "Custom text color:"
 msgstr "Боја на линија:"
 
-#: dialogs/settingsdlg.cpp:92
+#: dialogs/settingsdialog.cpp:92
 #, fuzzy
 #| msgid "Line color:"
 msgid "Custom line color:"
 msgstr "Боја на линија:"
 
-#: dialogs/settingsdlg.cpp:102
+#: dialogs/settingsdialog.cpp:102
 #, fuzzy
 #| msgid "&Use fill color"
 msgid "Custom fill color:"
 msgstr "Користи боја на исполн&ување"
 
-#: dialogs/settingsdlg.cpp:108
+#: dialogs/settingsdialog.cpp:108
 #, fuzzy
 #| msgid "Custom operation:"
 msgid "Custom grid color:"
 msgstr "Сопствена операција:"
 
-#: dialogs/settingsdlg.cpp:114
+#: dialogs/settingsdialog.cpp:114
 #, fuzzy
 #| msgid "Color"
 msgid "Custom background color:"
 msgstr "Боја"
 
-#: dialogs/settingsdlg.cpp:120
+#: dialogs/settingsdialog.cpp:120
 #, fuzzy
 #| msgid "Line width:"
 msgid "Custom line width:"
 msgstr "Дебелина на линија:"
 
-#: dialogs/settingsdlg.cpp:126
+#: dialogs/settingsdialog.cpp:126
 msgid "&Use fill color"
 msgstr "Користи боја на исполн&ување"
 
-#: dialogs/settingsdlg.cpp:178 dialogs/umlviewdialog.cpp:92
+#: dialogs/settingsdialog.cpp:178 dialogs/umlviewdialog.cpp:92
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings page"
 msgid "General"
 msgstr "Општо"
 
-#: dialogs/settingsdlg.cpp:189
+#: dialogs/settingsdialog.cpp:189
 #, fuzzy
 #| msgid "Class"
 msgctxt "class settings page"
 msgid "Class"
 msgstr "Класа"
 
-#: dialogs/settingsdlg.cpp:190
+#: dialogs/settingsdialog.cpp:190
 msgid "Class Settings"
 msgstr "Својства на класа"
 
-#: dialogs/settingsdlg.cpp:200
+#: dialogs/settingsdialog.cpp:200
 #, fuzzy
 msgid "Code Importer"
 msgstr "Не е генериран"
 
-#: dialogs/settingsdlg.cpp:201
+#: dialogs/settingsdialog.cpp:201
 #, fuzzy
 #| msgid "Code Viewer Settings"
 msgid "Code Import Settings"
 msgstr "Поставувања за прегледувачот на код"
 
-#: dialogs/settingsdlg.cpp:211
+#: dialogs/settingsdialog.cpp:211
 msgid "Code Generation"
 msgstr "Генерирање код"
 
-#: dialogs/settingsdlg.cpp:212
+#: dialogs/settingsdialog.cpp:212
 msgid "Code Generation Settings"
 msgstr "Поставувања за генерирање код"
 
-#: dialogs/settingsdlg.cpp:223
+#: dialogs/settingsdialog.cpp:223
 msgid "Code Viewer"
 msgstr "Прегледувач за код"
 
-#: dialogs/settingsdlg.cpp:224
+#: dialogs/settingsdialog.cpp:224
 msgid "Code Viewer Settings"
 msgstr "Поставувања за прегледувачот на код"
 
-#: dialogs/settingsdlg.cpp:244
+#: dialogs/settingsdialog.cpp:244
 #, fuzzy
 #| msgid "&Autolayout..."
 msgid "Auto Layout"
 msgstr "&Автоматски распоред..."
 
-#: dialogs/settingsdlg.cpp:245
+#: dialogs/settingsdialog.cpp:245
 #, fuzzy
 #| msgid "Entity Attributes Settings"
 msgid "Auto Layout Settings"
@@ -3529,41 +3680,6 @@ msgstr "Операција со тој потпис веќе постои во %
 msgid "Choose a different name or parameter list."
 msgstr "Изберете друго име или листа на параметри."
 
-#. i18n: ectx: property (title), widget (QGroupBox, ui_propsGroupBox)
-#: dialogs/umlroledialog.cpp:24 dialogs/umlrolepropertiesbase.ui:16
-msgid "Role Properties"
-msgstr "Својства на улогата"
-
-#. i18n: ectx: property (title), widget (KButtonGroup, ui_visibilityButtonGroup)
-#: dialogs/umlrolepropertiesbase.ui:67
-msgid "Role Visibility"
-msgstr "Можност за гледање на улогата"
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_pImplementationRB)
-#: dialogs/umlrolepropertiesbase.ui:97
-msgid "Implementation"
-msgstr "Имплементација"
-
-#. i18n: ectx: property (title), widget (KButtonGroup, ui_changeabilityButtonGroup)
-#: dialogs/umlrolepropertiesbase.ui:107
-msgid "Role Changeability"
-msgstr "Можност за променување на улогата"
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_pChangeableRB)
-#: dialogs/umlrolepropertiesbase.ui:113
-msgid "Changeable"
-msgstr "Менливо"
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_pFrozenRB)
-#: dialogs/umlrolepropertiesbase.ui:123
-msgid "Frozen"
-msgstr "Замрзнато"
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_pAddOnlyRB)
-#: dialogs/umlrolepropertiesbase.ui:130
-msgid "Add only"
-msgstr "Само за додавање"
-
 #: dialogs/umltemplatedialog.cpp:39
 msgid "Template Properties"
 msgstr "Својства на шаблонот"
@@ -3642,99 +3758,6 @@ msgstr "Стил:"
 #| msgid "Enter Diagram Name"
 msgid "Diagram Style"
 msgstr "Внесете име на дијаграм"
-
-#: dialogs/umlwidgetstylepage.cpp:86
-#, fuzzy
-#| msgid "Color"
-msgctxt "title of color group"
-msgid "Color"
-msgstr "Боја"
-
-#: dialogs/umlwidgetstylepage.cpp:91
-msgctxt "text color"
-msgid "&Text:"
-msgstr ""
-
-#: dialogs/umlwidgetstylepage.cpp:98
-#, fuzzy
-#| msgid "&Default"
-msgctxt "default text color button"
-msgid "Defaul&t"
-msgstr "&Стандардно"
-
-#: dialogs/umlwidgetstylepage.cpp:101
-#, fuzzy
-#| msgid "&Line:"
-msgctxt "line color"
-msgid "&Line:"
-msgstr "&Линија:"
-
-#: dialogs/umlwidgetstylepage.cpp:108
-#, fuzzy
-#| msgid "&Default"
-msgctxt "default line color button"
-msgid "&Default"
-msgstr "&Стандардно"
-
-#: dialogs/umlwidgetstylepage.cpp:111
-msgid "&Fill:"
-msgstr "&Исполни:"
-
-#: dialogs/umlwidgetstylepage.cpp:118
-#, fuzzy
-#| msgid "D&efault"
-msgctxt "default fill color button"
-msgid "D&efault"
-msgstr "Стан&дардно"
-
-#: dialogs/umlwidgetstylepage.cpp:121
-msgid "&Use fill"
-msgstr "&Користи исполнување"
-
-#: dialogs/umlwidgetstylepage.cpp:131
-msgctxt "background color"
-msgid "&Background:"
-msgstr ""
-
-#: dialogs/umlwidgetstylepage.cpp:138
-#, fuzzy
-#| msgid "&Default"
-msgctxt "default background color button"
-msgid "De&fault"
-msgstr "&Стандардно"
-
-#: dialogs/umlwidgetstylepage.cpp:141
-msgctxt "grid dot color"
-msgid "&Grid dot:"
-msgstr ""
-
-#: dialogs/umlwidgetstylepage.cpp:148
-#, fuzzy
-#| msgid "&Default"
-msgctxt "default grid dot color button"
-msgid "Def&ault"
-msgstr "&Стандардно"
-
-#: dialogs/umlwidgetstylepage.cpp:156
-#, fuzzy
-#| msgid "Line width:"
-msgctxt "title of width group"
-msgid "Width"
-msgstr "Дебелина на линија:"
-
-#: dialogs/umlwidgetstylepage.cpp:161
-#, fuzzy
-#| msgid "Line width:  "
-msgctxt "line width"
-msgid "Line &width:"
-msgstr "Ширина на линија:  "
-
-#: dialogs/umlwidgetstylepage.cpp:167
-#, fuzzy
-#| msgid "&Default"
-msgctxt "default line width button"
-msgid "Defa&ult"
-msgstr "&Стандардно"
 
 #: docgenerators/docbook2xhtmlgeneratorjob.cpp:56
 #, fuzzy
