@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-24 08:07+0000\n"
+"POT-Creation-Date: 2014-10-29 07:46+0000\n"
 "PO-Revision-Date: 2010-01-21 13:58+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -2031,7 +2031,7 @@ msgstr "Изберете друго име за одредишната дато�
 msgid "Undocumented Error"
 msgstr "Недокументирана грешка"
 
-#: core/kcoredirlister.cpp:397 widgets/krun.cpp:842 widgets/paste.cpp:258
+#: core/kcoredirlister.cpp:397 widgets/krun.cpp:844 widgets/paste.cpp:258
 #: widgets/renamedialog.cpp:410
 #, kde-format
 msgid ""
@@ -3052,7 +3052,8 @@ msgstr "Далечински датотеки не се прифаќаат"
 msgid "*|All Folders"
 msgstr "*|Сите папки"
 
-#: filewidgets/kfilewidget.cpp:2023 widgets/kfileitemactions.cpp:536
+#: filewidgets/kfilewidget.cpp:2023 widgets/executablefileopendialog.cpp:38
+#: widgets/kfileitemactions.cpp:536
 msgid "&Open"
 msgstr "&Отвори"
 
@@ -3168,7 +3169,7 @@ msgstr ""
 "Името „%1“ започнува со точка, што значи дека папката стандардно нема да се "
 "гледа."
 
-#: filewidgets/knewfilemenu.cpp:426
+#: filewidgets/knewfilemenu.cpp:426 widgets/executablefileopendialog.cpp:36
 msgid "Do not ask again"
 msgstr ""
 
@@ -4571,6 +4572,18 @@ msgstr "Град:"
 msgid "Lakeridge Meadows"
 msgstr ""
 
+#: widgets/executablefileopendialog.cpp:33
+#, fuzzy
+#| msgid "Do you wish to store the passphrase in your wallet file?"
+msgid "What do you wish to do with this executable file?"
+msgstr "Дали сакате да ја зачувате тајната фраза во вашиот паричник?"
+
+#: widgets/executablefileopendialog.cpp:39
+#, fuzzy
+#| msgid "Exec"
+msgid "&Execute"
+msgstr "Извршна"
+
 #: widgets/fileundomanager.cpp:125
 msgid "Creating directory"
 msgstr "Креирање папка"
@@ -5898,7 +5911,7 @@ msgstr "Поддржани се само извршни на локалните 
 msgid "Advanced Options for %1"
 msgstr "Напредни опции за %1"
 
-#: widgets/krun.cpp:170
+#: widgets/krun.cpp:171
 #, kde-format
 msgid ""
 "<qt>Unable to enter <b>%1</b>.\n"
@@ -5907,7 +5920,7 @@ msgstr ""
 "<qt>Не можам да влезам во <b>%1</b>.\n"
 "Немате права на пристап за оваа локација.</qt>"
 
-#: widgets/krun.cpp:200
+#: widgets/krun.cpp:201
 #, kde-format
 msgid ""
 "<qt>The file <b>%1</b> is an executable program. For safety it will not be "
@@ -5916,58 +5929,58 @@ msgstr ""
 "<qt>Датотеката <b>%1</b> е извршна програма. Поради безбедност таа нема да "
 "биде извршена.</qt>"
 
-#: widgets/krun.cpp:206
+#: widgets/krun.cpp:207
 #, kde-format
 msgid "<qt>You do not have permission to run <b>%1</b>.</qt>"
 msgstr "<qt>Немате дозвола да ја извршите <b>%1</b>.</qt>"
 
-#: widgets/krun.cpp:236
+#: widgets/krun.cpp:237
 msgid "You are not authorized to select an application to open this file."
 msgstr ""
 "Не сте авторизирани да изберете апликација за да ја отворите оваа датотека."
 
-#: widgets/krun.cpp:247
+#: widgets/krun.cpp:248
 msgid "Open with:"
 msgstr "Отворете со:"
 
-#: widgets/krun.cpp:297
+#: widgets/krun.cpp:298
 msgid "You are not authorized to execute this file."
 msgstr "Не сте авторизирани да ја извршите оваа датотека."
 
-#: widgets/krun.cpp:320
+#: widgets/krun.cpp:321
 #, kde-format
 msgid "Launching %1"
 msgstr "Пуштање на %1"
 
-#: widgets/krun.cpp:425
+#: widgets/krun.cpp:426
 #, kde-format
 msgid "Error processing Exec field in %1"
 msgstr "Грешка при обработка на полето „Exec“ во %1"
 
-#: widgets/krun.cpp:602
+#: widgets/krun.cpp:603
 msgid "You are not authorized to execute this service."
 msgstr "Не сте авторизирани да го извршите овој сервис."
 
-#: widgets/krun.cpp:607
+#: widgets/krun.cpp:608
 msgctxt "Warning about executing unknown .desktop file"
 msgid "Warning"
 msgstr "Внимание"
 
-#: widgets/krun.cpp:624
+#: widgets/krun.cpp:625
 msgctxt "program name follows in a line edit below"
 msgid "This will start the program:"
 msgstr "Ова ќе ја стартува програмата:"
 
-#: widgets/krun.cpp:641
+#: widgets/krun.cpp:642
 msgid "If you do not trust this program, click Cancel"
 msgstr "Ако не ѝ верувате на оваа програма, кликнете „Откажи“"
 
-#: widgets/krun.cpp:684
+#: widgets/krun.cpp:685
 #, kde-format
 msgid "Unable to make the service %1 executable, aborting execution"
 msgstr "Не можам да го направам сервисот %1 извршлив, прекинувам извршување"
 
-#: widgets/krun.cpp:866
+#: widgets/krun.cpp:868
 #, kde-format
 msgid ""
 "<qt>Unable to run the command specified. The file or folder <b>%1</b> does "
@@ -5976,7 +5989,7 @@ msgstr ""
 "<qt>Не може да се изврши дадената команда. Датотеката или папката <b>%1</b> "
 "не постои.</qt>"
 
-#: widgets/krun.cpp:1461
+#: widgets/krun.cpp:1520
 #, kde-format
 msgid "Could not find the program '%1'"
 msgstr "Не можам да ја најдам програмата „%1“"
@@ -7488,9 +7501,6 @@ msgstr ""
 
 #~ msgid "Please wait while the encryption keys are generated..."
 #~ msgstr "Почекајте додека се генерираат клучевите за криптирање..."
-
-#~ msgid "Do you wish to store the passphrase in your wallet file?"
-#~ msgstr "Дали сакате да ја зачувате тајната фраза во вашиот паричник?"
 
 #~ msgid "Store"
 #~ msgstr "Зачувај"
