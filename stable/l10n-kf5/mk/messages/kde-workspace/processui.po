@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: processui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-09-27 09:14+0000\n"
+"POT-Creation-Date: 2014-11-30 09:26+0000\n"
 "PO-Revision-Date: 2007-12-03 11:56+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -629,6 +629,19 @@ msgstr ""
 msgid "<br/>File System Group: %1"
 msgstr "Датотечен систем: %1"
 
+#: ProcessModel.cpp:1144
+#, fuzzy, kde-format
+msgctxt "Short description of a process. PID, name, user"
+msgid "<numid>%1</numid>: %2, owned by user %3"
+msgstr ""
+"Во сопс&твеност\n"
+"на корисникот:"
+
+#: ProcessModel.cpp:1151
+#, fuzzy, kde-format
+msgid "%1 (gid: <numid>%2</numid>)"
+msgstr "%1 (%2)"
+
 #: ProcessModel.cpp:1172
 #, fuzzy, kde-format
 msgid "%1 (uid: %2)"
@@ -676,6 +689,12 @@ msgstr ""
 msgid "%1/s"
 msgstr ""
 
+#: ProcessModel.cpp:1345
+#, kde-format
+msgctxt "tooltip. name,pid "
+msgid "This process is being debugged by %1 (<numid>%2</numid>)"
+msgstr ""
+
 #: ProcessModel.cpp:1366
 msgid ""
 "<b>Init</b> is the parent of all other processes and cannot be killed.<br/>"
@@ -686,6 +705,28 @@ msgid ""
 "<b>KThreadd</b> manages kernel threads. The children processes run in the "
 "kernel, controlling hard disk access, etc.<br/>"
 msgstr ""
+
+#: ProcessModel.cpp:1370
+#, fuzzy, kde-format
+msgctxt "name column tooltip. first item is the name"
+msgid "<b>%1</b><br />Process ID: <numid>%2</numid>"
+msgstr "%1 (%2)"
+
+#: ProcessModel.cpp:1375
+#, fuzzy, kde-format
+msgctxt "name column tooltip. first item is the name"
+msgid ""
+"<b>%1</b><br />Process ID: <numid>%2</numid><br />Parent: %3<br />Parent's "
+"ID: <numid>%4</numid>"
+msgstr "%1 (%2)"
+
+#: ProcessModel.cpp:1377
+#, fuzzy, kde-format
+msgctxt "name column tooltip. first item is the name"
+msgid ""
+"<b>%1</b><br />Process ID: <numid>%2</numid><br />Parent's ID: <numid>%3</"
+"numid>"
+msgstr "%1 (%2)"
 
 #: ProcessModel.cpp:1381 ProcessModel.cpp:1445
 #, kde-format
@@ -1377,36 +1418,6 @@ msgstr "Приоритет"
 #~ "You do not have the permission to kill the process and there was a "
 #~ "problem trying to run as root. %1"
 #~ msgstr "Немате дозволи за да пристапите на протоколот %1."
-
-#, fuzzy
-#~ msgctxt "Short description of a process. PID, name, user"
-#~ msgid "<numid>%1</numid>: %2, owned by user %3"
-#~ msgstr ""
-#~ "Во сопс&твеност\n"
-#~ "на корисникот:"
-
-#, fuzzy
-#~ msgid "%1 (gid: <numid>%2</numid>)"
-#~ msgstr "%1 (%2)"
-
-#, fuzzy
-#~ msgctxt "name column tooltip. first item is the name"
-#~ msgid "<b>%1</b><br />Process ID: <numid>%2</numid>"
-#~ msgstr "%1 (%2)"
-
-#, fuzzy
-#~ msgctxt "name column tooltip. first item is the name"
-#~ msgid ""
-#~ "<b>%1</b><br />Process ID: <numid>%2</numid><br />Parent: %3<br /"
-#~ ">Parent's ID: <numid>%4</numid>"
-#~ msgstr "%1 (%2)"
-
-#, fuzzy
-#~ msgctxt "name column tooltip. first item is the name"
-#~ msgid ""
-#~ "<b>%1</b><br />Process ID: <numid>%2</numid><br />Parent's ID: <numid>%3</"
-#~ "numid>"
-#~ msgstr "%1 (%2)"
 
 #, fuzzy
 #~| msgid "Renice Process..."
