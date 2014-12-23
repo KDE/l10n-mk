@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-22 01:56+0000\n"
+"POT-Creation-Date: 2014-12-23 01:57+0000\n"
 "PO-Revision-Date: 2006-09-30 17:38+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -85,7 +85,7 @@ msgstr "Агрегација"
 msgid "Dependency"
 msgstr "Зависност"
 
-#: basictypes.cpp:335 worktoolbar.cpp:316
+#: basictypes.cpp:335 widgets/widgetbase.cpp:1013 worktoolbar.cpp:316
 msgid "Association"
 msgstr "Поврзување"
 
@@ -145,7 +145,8 @@ msgstr "Сидро"
 msgid "State Transition"
 msgstr "Пренос на состојба"
 
-#: basictypes.cpp:361 dialogs/activitydialog.cpp:137 worktoolbar.cpp:358
+#: basictypes.cpp:361 dialogs/activitydialog.cpp:137
+#: widgets/widgetbase.cpp:1004 worktoolbar.cpp:358
 msgid "Activity"
 msgstr "Активност"
 
@@ -732,9 +733,9 @@ msgstr "Користете ги следните за класи во генер
 #: dialogs/pages/associationgeneralpage.cpp:82
 #: dialogs/pages/associationrolepage.cpp:91
 #: dialogs/pages/associationrolepage.cpp:92
-#: dialogs/pages/classgeneralpage.cpp:186
+#: dialogs/pages/classgeneralpage.cpp:141
+#: dialogs/pages/classgeneralpage.cpp:203
 #: dialogs/pages/classgeneralpage.cpp:248
-#: dialogs/pages/classgeneralpage.cpp:301
 #: dialogs/pages/classifierlistpage.cpp:218
 #: dialogs/pages/diagrampropertiespage.ui:257
 #: dialogs/pages/umlrolepropertiesbase.ui:140
@@ -1285,6 +1286,7 @@ msgstr "Почеток"
 
 #. i18n: ectx: property (text), widget (QTableWidget, ui_tableWidgetStatus)
 #: codegenwizard/codegenstatuspage.ui:40 codeimpwizard/codeimpstatuspage.ui:54
+#: widgets/widgetbase.cpp:1028
 msgid "Class"
 msgstr "Класа"
 
@@ -2321,115 +2323,49 @@ msgstr ""
 msgid "Show export layout in diagram context menu"
 msgstr ""
 
-#: dialogs/pages/classgeneralpage.cpp:74
-msgid "Class &name:"
-msgstr "Име &на класата:"
-
-#: dialogs/pages/classgeneralpage.cpp:77
-msgid "Actor &name:"
-msgstr "Име &на актерот:"
-
-#: dialogs/pages/classgeneralpage.cpp:80
-msgid "Package &name:"
-msgstr "Име &на пакетот:"
-
-#: dialogs/pages/classgeneralpage.cpp:83
-msgid "Use case &name:"
-msgstr "Име &на сценариото на употреба:"
-
-#: dialogs/pages/classgeneralpage.cpp:86
-msgid "Interface &name:"
-msgstr "Име &на интерфејсот:"
-
-#: dialogs/pages/classgeneralpage.cpp:89
-msgid "Component &name:"
-msgstr "Име &на компонента:"
-
-#: dialogs/pages/classgeneralpage.cpp:92
-#, fuzzy
-#| msgid "Actor &name:"
-msgid "Port &name:"
-msgstr "Име &на актерот:"
-
-#: dialogs/pages/classgeneralpage.cpp:95
-#, fuzzy
-#| msgid "Node name:"
-msgid "Node &name:"
-msgstr "Име на јазол:"
-
-#: dialogs/pages/classgeneralpage.cpp:98
-msgid "Artifact &name:"
-msgstr "Име &на артифакт:"
-
-#: dialogs/pages/classgeneralpage.cpp:101
-msgid "Enum &name:"
-msgstr "Име &на енумератор:"
-
-#: dialogs/pages/classgeneralpage.cpp:104
-msgid "Datatype &name:"
-msgstr "Име &на типот на податоци:"
-
-#: dialogs/pages/classgeneralpage.cpp:107
-msgid "Entity &name:"
-msgstr "Име &на ентитет:"
-
-#: dialogs/pages/classgeneralpage.cpp:110
-#, fuzzy
-#| msgid "Stereotype name:"
-msgid "Stereotype &name:"
-msgstr "Име на стереотипот:"
-
-#: dialogs/pages/classgeneralpage.cpp:138
+#: dialogs/pages/classgeneralpage.cpp:93
 msgid "Reference:"
 msgstr ""
 
-#: dialogs/pages/classgeneralpage.cpp:154
+#: dialogs/pages/classgeneralpage.cpp:109
 msgid "A&bstract class"
 msgstr "А&пстрактна класа"
 
-#: dialogs/pages/classgeneralpage.cpp:156
+#: dialogs/pages/classgeneralpage.cpp:111
 msgid "A&bstract use case"
 msgstr "А&пстрактно сценарио за употреба"
 
-#: dialogs/pages/classgeneralpage.cpp:165
+#: dialogs/pages/classgeneralpage.cpp:120
 #, fuzzy
 #| msgid "&Executable"
 msgctxt "component is executable"
 msgid "&Executable"
 msgstr "&Извршно"
 
-#: dialogs/pages/classgeneralpage.cpp:221
+#: dialogs/pages/classgeneralpage.cpp:176
 msgid "Class name:"
 msgstr "Име на класа:"
 
-#: dialogs/pages/classgeneralpage.cpp:224
-#: dialogs/pages/classgeneralpage.cpp:293
+#: dialogs/pages/classgeneralpage.cpp:179
+#: dialogs/pages/classgeneralpage.cpp:240
 msgid "Instance name:"
 msgstr "Име на инстанца:"
 
-#: dialogs/pages/classgeneralpage.cpp:229
+#: dialogs/pages/classgeneralpage.cpp:184
 msgid "Draw as actor"
 msgstr "Нацртај како актер"
 
-#: dialogs/pages/classgeneralpage.cpp:234
+#: dialogs/pages/classgeneralpage.cpp:189
 msgid "Multiple instance"
 msgstr "Повеќекратна инстанца"
 
-#: dialogs/pages/classgeneralpage.cpp:240
+#: dialogs/pages/classgeneralpage.cpp:195
 msgid "Show destruction"
 msgstr "Прикажи уништување"
 
-#: dialogs/pages/classgeneralpage.cpp:280
-msgid "Component name:"
-msgstr "Име на компонента:"
-
-#: dialogs/pages/classgeneralpage.cpp:282
-msgid "Node name:"
-msgstr "Име на јазол:"
-
-#: dialogs/pages/classgeneralpage.cpp:339
-#: dialogs/pages/classgeneralpage.cpp:372
-#: dialogs/pages/classgeneralpage.cpp:385
+#: dialogs/pages/classgeneralpage.cpp:286
+#: dialogs/pages/classgeneralpage.cpp:319
+#: dialogs/pages/classgeneralpage.cpp:332
 msgid ""
 "The name you have chosen\n"
 "is already being used.\n"
@@ -2439,9 +2375,9 @@ msgstr ""
 "веќе се користи\n"
 "Името беше ресетирано."
 
-#: dialogs/pages/classgeneralpage.cpp:340
-#: dialogs/pages/classgeneralpage.cpp:373
-#: dialogs/pages/classgeneralpage.cpp:386
+#: dialogs/pages/classgeneralpage.cpp:287
+#: dialogs/pages/classgeneralpage.cpp:320
+#: dialogs/pages/classgeneralpage.cpp:333
 msgid "Name is Not Unique"
 msgstr "Името не е единствено"
 
@@ -4035,19 +3971,19 @@ msgstr "Изнеси како слика..."
 msgid "Subsystem"
 msgstr "Подсистем"
 
-#: listpopupmenu.cpp:758 worktoolbar.cpp:340
+#: listpopupmenu.cpp:758 widgets/widgetbase.cpp:1025 worktoolbar.cpp:340
 msgid "Component"
 msgstr "Компонента"
 
-#: listpopupmenu.cpp:761
+#: listpopupmenu.cpp:761 widgets/widgetbase.cpp:1070
 msgid "Port"
 msgstr ""
 
-#: listpopupmenu.cpp:764 worktoolbar.cpp:342
+#: listpopupmenu.cpp:764 widgets/widgetbase.cpp:1010 worktoolbar.cpp:342
 msgid "Artifact"
 msgstr "Артифакт"
 
-#: listpopupmenu.cpp:775 worktoolbar.cpp:341
+#: listpopupmenu.cpp:775 widgets/widgetbase.cpp:1052 worktoolbar.cpp:341
 msgid "Node"
 msgstr "Јазол"
 
@@ -4055,15 +3991,15 @@ msgstr "Јазол"
 msgid "Folder"
 msgstr "Папка"
 
-#: listpopupmenu.cpp:791 worktoolbar.cpp:346
+#: listpopupmenu.cpp:791 widgets/widgetbase.cpp:1034 worktoolbar.cpp:346
 msgid "Entity"
 msgstr "Ентитет"
 
-#: listpopupmenu.cpp:801 worktoolbar.cpp:369
+#: listpopupmenu.cpp:801 widgets/widgetbase.cpp:1019 worktoolbar.cpp:369
 msgid "Category"
 msgstr ""
 
-#: listpopupmenu.cpp:804 worktoolbar.cpp:322
+#: listpopupmenu.cpp:804 widgets/widgetbase.cpp:1007 worktoolbar.cpp:322
 msgid "Actor"
 msgstr "Актер"
 
@@ -4089,19 +4025,20 @@ msgctxt "new class menu item"
 msgid "Class"
 msgstr "Класа"
 
-#: listpopupmenu.cpp:926 worktoolbar.cpp:343
+#: listpopupmenu.cpp:926 widgets/widgetbase.cpp:1046 worktoolbar.cpp:343
 msgid "Interface"
 msgstr "Интерфејс"
 
-#: listpopupmenu.cpp:927 worktoolbar.cpp:344
+#: listpopupmenu.cpp:927 widgets/widgetbase.cpp:1031 worktoolbar.cpp:344
 msgid "Datatype"
 msgstr "Податочен тип"
 
-#: listpopupmenu.cpp:928 worktoolbar.cpp:345
+#: listpopupmenu.cpp:928 widgets/widgetbase.cpp:1037 worktoolbar.cpp:345
 msgid "Enum"
 msgstr "Енумерација"
 
-#: listpopupmenu.cpp:929 listpopupmenu.cpp:1138 worktoolbar.cpp:339
+#: listpopupmenu.cpp:929 listpopupmenu.cpp:1138 widgets/widgetbase.cpp:1064
+#: worktoolbar.cpp:339
 msgid "Package"
 msgstr "Пакет"
 
@@ -6606,6 +6543,70 @@ msgstr ""
 msgid "Name Not Valid"
 msgstr "Невалидно име"
 
+#: umlobject.cpp:1092
+msgid "Actor &name:"
+msgstr "Име &на актерот:"
+
+#: umlobject.cpp:1095
+msgid "Artifact &name:"
+msgstr "Име &на артифакт:"
+
+#: umlobject.cpp:1098
+msgid "Class &name:"
+msgstr "Име &на класата:"
+
+#: umlobject.cpp:1101
+msgid "Component &name:"
+msgstr "Име &на компонента:"
+
+#: umlobject.cpp:1104
+msgid "Datatype &name:"
+msgstr "Име &на типот на податоци:"
+
+#: umlobject.cpp:1107
+msgid "Entity &name:"
+msgstr "Име &на ентитет:"
+
+#: umlobject.cpp:1110
+msgid "Enum &name:"
+msgstr "Име &на енумератор:"
+
+#: umlobject.cpp:1113
+#, fuzzy
+#| msgid "Node name:"
+msgid "Folder &name:"
+msgstr "Име на јазол:"
+
+#: umlobject.cpp:1116
+msgid "Interface &name:"
+msgstr "Име &на интерфејсот:"
+
+#: umlobject.cpp:1119
+#, fuzzy
+#| msgid "Node name:"
+msgid "Node &name:"
+msgstr "Име на јазол:"
+
+#: umlobject.cpp:1122
+msgid "Package &name:"
+msgstr "Име &на пакетот:"
+
+#: umlobject.cpp:1125
+#, fuzzy
+#| msgid "Actor &name:"
+msgid "Port &name:"
+msgstr "Име &на актерот:"
+
+#: umlobject.cpp:1128
+#, fuzzy
+#| msgid "Stereotype name:"
+msgid "Stereotype &name:"
+msgstr "Име на стереотипот:"
+
+#: umlobject.cpp:1131
+msgid "Use case &name:"
+msgstr "Име &на сценариото на употреба:"
+
 #: umlscene.cpp:525
 #, kde-format
 msgid "Diagram: %2 Page %1"
@@ -6849,7 +6850,7 @@ msgstr "Име"
 msgid "Enter operation name:"
 msgstr "Внесете име на операција:"
 
-#: widgets/notewidget.cpp:183 worktoolbar.cpp:315
+#: widgets/notewidget.cpp:183 widgets/widgetbase.cpp:1073 worktoolbar.cpp:315
 #, fuzzy
 #| msgid "condition expected"
 msgid "Precondition"
@@ -7051,16 +7052,81 @@ msgid ""
 "axis. Right button click to cancel resize."
 msgstr ""
 
+#: widgets/widgetbase.cpp:1016 worktoolbar.cpp:321
+msgid "Box"
+msgstr "Кутија"
+
+#: widgets/widgetbase.cpp:1022
+#, fuzzy
+#| msgid "Malformed argument"
+msgid "CombinedFragment"
+msgstr "Погрешно формиран аргумент"
+
+#: widgets/widgetbase.cpp:1040
+msgid "FloatingDashLine"
+msgstr ""
+
+#: widgets/widgetbase.cpp:1043
+#, fuzzy
+#| msgid "Fork/Join"
+msgid "ForkJoin"
+msgstr "Разделување/Спојување"
+
+#: widgets/widgetbase.cpp:1049
+msgid "Message"
+msgstr "Порака"
+
+#: widgets/widgetbase.cpp:1055 worktoolbar.cpp:320
+msgid "Note"
+msgstr "Забелешка"
+
+#: widgets/widgetbase.cpp:1058 worktoolbar.cpp:309
+msgid "Object"
+msgstr "Објект"
+
+#: widgets/widgetbase.cpp:1061
+#, fuzzy
+#| msgid "Object"
+msgid "ObjectNode"
+msgstr "Објект"
+
+#: widgets/widgetbase.cpp:1067 worktoolbar.cpp:362
+msgid "Pin"
+msgstr ""
+
+#: widgets/widgetbase.cpp:1076 worktoolbar.cpp:332
+#, fuzzy
+msgid "Region"
+msgstr "Подготвен."
+
+#: widgets/widgetbase.cpp:1079
+#, fuzzy
+#| msgid "Enter name:"
+msgid "Signal"
+msgstr "Внесете име:"
+
+#: widgets/widgetbase.cpp:1082
+#, fuzzy
+#| msgid "State"
+msgid "State"
+msgstr "Состојба"
+
+#: widgets/widgetbase.cpp:1085
+msgid "Text"
+msgstr ""
+
+#: widgets/widgetbase.cpp:1088
+#, fuzzy
+#| msgid "Use Case"
+msgid "UseCase"
+msgstr "Сценарио на употреба"
+
 #: worktoolbar.cpp:308
 #, fuzzy
 #| msgid "Select"
 msgctxt "selection arrow"
 msgid "Select"
 msgstr "Избери"
-
-#: worktoolbar.cpp:309
-msgid "Object"
-msgstr "Објект"
 
 #: worktoolbar.cpp:310 worktoolbar.cpp:364
 msgid "Synchronous Message"
@@ -7092,14 +7158,6 @@ msgstr "Погрешно формиран аргумент"
 msgid "Label"
 msgstr "Натпис"
 
-#: worktoolbar.cpp:320
-msgid "Note"
-msgstr "Забелешка"
-
-#: worktoolbar.cpp:321
-msgid "Box"
-msgstr "Кутија"
-
 #: worktoolbar.cpp:326
 msgid "Directional Association"
 msgstr "Насочена асоцијација"
@@ -7116,11 +7174,6 @@ msgstr "Имплементација"
 msgctxt "UML class"
 msgid "Class"
 msgstr "Класа"
-
-#: worktoolbar.cpp:332
-#, fuzzy
-msgid "Region"
-msgstr "Подготвен."
 
 #: worktoolbar.cpp:335
 msgid "Send signal"
@@ -7175,10 +7228,6 @@ msgstr "Состојба"
 msgid "Final Activity"
 msgstr "Иницијална активност"
 
-#: worktoolbar.cpp:362
-msgid "Pin"
-msgstr ""
-
 #: worktoolbar.cpp:367
 #, fuzzy
 #| msgid "Object"
@@ -7188,6 +7237,12 @@ msgstr "Објект"
 #: worktoolbar.cpp:368
 msgid "Pre/Post condition"
 msgstr ""
+
+#~ msgid "Component name:"
+#~ msgstr "Име на компонента:"
+
+#~ msgid "Node name:"
+#~ msgstr "Име на јазол:"
 
 #, fuzzy
 #~ msgctxt "font page name"
@@ -7252,9 +7307,6 @@ msgstr ""
 #~| msgid "Fork"
 #~ msgid "Form"
 #~ msgstr "Раздели"
-
-#~ msgid "Message"
-#~ msgstr "Порака"
 
 #, fuzzy
 #~| msgid "New"
