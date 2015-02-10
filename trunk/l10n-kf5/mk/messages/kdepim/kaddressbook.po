@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-02-09 10:08+0000\n"
+"POT-Creation-Date: 2015-02-10 10:04+0000\n"
 "PO-Revision-Date: 2007-02-28 13:59+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -162,12 +162,6 @@ msgstr "Име на асистент"
 #: contactfields.cpp:171
 msgid "Spouse"
 msgstr ""
-
-#: contactselectiondialog.cpp:32
-#, fuzzy
-#| msgid "&Selected contacts"
-msgid "Select Contacts"
-msgstr "&Избрани контакти"
 
 #: contactselectionwidget.cpp:111
 #, fuzzy
@@ -626,7 +620,7 @@ msgid "Select Contacts to merge"
 msgstr "&Избрани контакти"
 
 #: merge/manualmerge/mergecontactsdialog.cpp:54
-#: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:66
+#: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:72
 #, fuzzy
 #| msgid "You have to assign at least one column."
 msgid "You must select at least two elements."
@@ -689,10 +683,10 @@ msgstr "&Избрани контакти"
 msgid "No contacts selected."
 msgstr "&Сите контакти"
 
-#: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:58
+#: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:62
 #, fuzzy
 #| msgid "&Selected contacts"
-msgid "No duplicated contact found."
+msgid "No contact duplicated found."
 msgstr "&Избрани контакти"
 
 #: merge/searchduplicate/searchduplicateresultwidget.cpp:59
@@ -1300,6 +1294,12 @@ msgid ""
 "contacts of interest."
 msgstr ""
 
+#: xxport/contactselectiondialog.cpp:34
+#, fuzzy
+#| msgid "&Selected contacts"
+msgid "Select Contacts"
+msgstr "&Избрани контакти"
+
 #: xxport/csv/csv_xxport.cpp:67 xxport/gmx/gmx_xxport.cpp:370
 #: xxport/ldif/ldif_xxport.cpp:105
 #, fuzzy, kde-format
@@ -1796,143 +1796,136 @@ msgctxt "@info"
 msgid "The vCard does not contain any contacts."
 msgstr "vCard-картичката не содржи ниту еден контакт."
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:35
-#, fuzzy
-#| msgid "Select vCard Fields"
-msgctxt "@title:window"
-msgid "Select vCard Fields"
-msgstr "Изберете полиња од vCard-картичката"
-
-#: xxport/vcard/vcardexportselectiondialog.cpp:59
+#: xxport/vcard/vcardexportselectionwidget.cpp:34
 #, fuzzy
 #| msgid "File to import:"
 msgctxt "@title:group"
 msgid "Fields to be exported"
 msgstr "Датотека за внесување:"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:63
+#: xxport/vcard/vcardexportselectionwidget.cpp:38
 #, fuzzy
 #| msgid "Private fields"
 msgctxt "@option:check"
 msgid "Private fields"
 msgstr "Приватни полиња"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:65
+#: xxport/vcard/vcardexportselectionwidget.cpp:40
 #, fuzzy
 #| msgid "Private fields"
 msgctxt "@info:tooltip"
 msgid "Export private fields"
 msgstr "Приватни полиња"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:68
+#: xxport/vcard/vcardexportselectionwidget.cpp:43
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's private fields to the "
 "vCard output file."
 msgstr ""
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:72
+#: xxport/vcard/vcardexportselectionwidget.cpp:47
 #, fuzzy
 #| msgid "Business fields"
 msgctxt "@option:check"
 msgid "Business fields"
 msgstr "Бизнис полиња"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:74
+#: xxport/vcard/vcardexportselectionwidget.cpp:49
 #, fuzzy
 #| msgid "Business fields"
 msgctxt "@info:tooltip"
 msgid "Export business fields"
 msgstr "Бизнис полиња"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:77
+#: xxport/vcard/vcardexportselectionwidget.cpp:52
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's business fields to the "
 "vCard output file."
 msgstr ""
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:81
+#: xxport/vcard/vcardexportselectionwidget.cpp:56
 #, fuzzy
 #| msgid "Other fields"
 msgctxt "@option:check"
 msgid "Other fields"
 msgstr "Други полиња"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:83
+#: xxport/vcard/vcardexportselectionwidget.cpp:58
 #, fuzzy
 #| msgid "Other fields"
 msgctxt "@info:tooltip"
 msgid "Export other fields"
 msgstr "Други полиња"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:86
+#: xxport/vcard/vcardexportselectionwidget.cpp:61
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's other fields to the vCard "
 "output file."
 msgstr ""
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:90
+#: xxport/vcard/vcardexportselectionwidget.cpp:65
 #, fuzzy
 #| msgid "Encryption keys"
 msgctxt "@option:check"
 msgid "Encryption keys"
 msgstr "Клучеви за криптирање"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:92
+#: xxport/vcard/vcardexportselectionwidget.cpp:67
 #, fuzzy
 #| msgid "Encryption keys"
 msgctxt "@info:tooltip"
 msgid "Export encryption keys"
 msgstr "Клучеви за криптирање"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:95
+#: xxport/vcard/vcardexportselectionwidget.cpp:70
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's encryption keys to the "
 "vCard output file."
 msgstr ""
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:99
+#: xxport/vcard/vcardexportselectionwidget.cpp:74
 #, fuzzy
 #| msgid "Picture"
 msgctxt "@option:check"
 msgid "Pictures"
 msgstr "Слика"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:101
+#: xxport/vcard/vcardexportselectionwidget.cpp:76
 #, fuzzy
 #| msgid "Picture"
 msgctxt "@info:tooltip"
 msgid "Export pictures"
 msgstr "Слика"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:104
+#: xxport/vcard/vcardexportselectionwidget.cpp:79
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's picture to the vCard "
 "output file."
 msgstr ""
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:109
+#: xxport/vcard/vcardexportselectionwidget.cpp:84
 #, fuzzy
 #| msgid "Export to One File"
 msgctxt "@title:group"
 msgid "Export options"
 msgstr "Изнеси во една датотека"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:113
+#: xxport/vcard/vcardexportselectionwidget.cpp:88
 msgctxt "@option:check"
 msgid "Display name as full name"
 msgstr ""
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:115
+#: xxport/vcard/vcardexportselectionwidget.cpp:90
 msgctxt "@info:tooltip"
 msgid "Export display name as full name"
 msgstr ""
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:118
+#: xxport/vcard/vcardexportselectionwidget.cpp:93
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's display name in the "
@@ -1940,21 +1933,21 @@ msgid ""
 "correctly in GMail or Android."
 msgstr ""
 
-#: xxport/vcard/vcardviewerdialog.cpp:34
+#: xxport/vcard/vcardviewerdialog.cpp:33
 #, fuzzy
 #| msgid "Import vCard"
 msgctxt "@title:window"
 msgid "Import vCard"
 msgstr "Внесете vCard-картичка"
 
-#: xxport/vcard/vcardviewerdialog.cpp:58
+#: xxport/vcard/vcardviewerdialog.cpp:57
 #, fuzzy
 #| msgid "Do you want to import this contact in your address book?"
 msgctxt "@info"
 msgid "Do you want to import this contact into your address book?"
 msgstr "Дали сакате да го внесете овој контакт во вашиот адресар?"
 
-#: xxport/vcard/vcardviewerdialog.cpp:68
+#: xxport/vcard/vcardviewerdialog.cpp:67
 #, fuzzy
 #| msgid "Import All..."
 msgctxt "@action:button"
@@ -1986,13 +1979,13 @@ msgstr[0] "Внесувам контакти"
 msgstr[1] "Внесувам контакти"
 msgstr[2] "Внесувам контакти"
 
-#: xxport/xxportmanager.cpp:184
+#: xxport/xxportmanager.cpp:185
 #, fuzzy
 #| msgid "Which contacts do you want to export?"
 msgid "Which contact do you want to export?"
 msgstr "Кои контакти сакате да ги изнесете?"
 
-#: xxport/xxportmanager.cpp:195
+#: xxport/xxportmanager.cpp:197
 #, fuzzy
 #| msgid ""
 #| "Copy the currently selected contact(s) to system clipboard in vCard "
@@ -2001,6 +1994,12 @@ msgid "You have not selected any contacts to export."
 msgstr ""
 "Ги копира тековно избраните контакти на системската табла со исечоци во "
 "форматот vCard."
+
+#, fuzzy
+#~| msgid "Select vCard Fields"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard Fields"
+#~ msgstr "Изберете полиња од vCard-картичката"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
