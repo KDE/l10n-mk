@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-03-17 08:32+0000\n"
+"POT-Creation-Date: 2015-03-24 09:09+0000\n"
 "PO-Revision-Date: 2007-02-28 14:08+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -132,7 +132,7 @@ msgid "Multiple encryption keys per address"
 msgstr "повеќекратни клучеви за криптирање по адреса"
 
 #: aboutdata.cpp:240 collectionpage/collectionmailinglistpage.cpp:109
-#: editor/kmcomposewin.cpp:2185 kmsystemtray.cpp:73 kmsystemtray.cpp:120
+#: editor/kmcomposewin.cpp:2144 kmsystemtray.cpp:73 kmsystemtray.cpp:120
 msgid "KMail"
 msgstr "КПошта"
 
@@ -1916,12 +1916,12 @@ msgstr "Зачувајте прилог како"
 msgid "Show attachment list"
 msgstr "Зачувајте прилог како"
 
-#: editor/codecaction.cpp:58
+#: editor/codec/codecaction.cpp:61
 msgctxt "Encodings menu"
 msgid "us-ascii"
 msgstr ""
 
-#: editor/codecaction.cpp:68
+#: editor/codec/codecaction.cpp:71
 #, fuzzy
 #| msgid "Encoding"
 msgctxt "Menu item"
@@ -2051,7 +2051,7 @@ msgid "Send"
 msgstr "Испраќач"
 
 #: editor/kmcomposewin.cpp:1128 editor/kmcomposewin.cpp:1139
-#: editor/kmcomposewin.cpp:2872
+#: editor/kmcomposewin.cpp:2831
 msgid "Send &Later"
 msgstr "Испрати по&доцна"
 
@@ -2297,12 +2297,12 @@ msgstr "Проверувач на правопис"
 msgid "Spellcheck: off"
 msgstr "Проверувач на правопис"
 
-#: editor/kmcomposewin.cpp:1471 editor/kmcomposewin.cpp:3281
+#: editor/kmcomposewin.cpp:1471 editor/kmcomposewin.cpp:3240
 #, kde-format
 msgid " Column: %1 "
 msgstr " Колона: %1 "
 
-#: editor/kmcomposewin.cpp:1473 editor/kmcomposewin.cpp:3279
+#: editor/kmcomposewin.cpp:1473 editor/kmcomposewin.cpp:3238
 #, fuzzy, kde-format
 #| msgid " Line: %1 "
 msgctxt "Shows the linenumber of the cursor position."
@@ -2355,21 +2355,21 @@ msgstr "Автом. зачувување не успеа"
 msgid "Sending Message Failed"
 msgstr "Автом. зачувување не успеа"
 
-#: editor/kmcomposewin.cpp:2168
+#: editor/kmcomposewin.cpp:2127
 msgid "Add as &Inline Image"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2169
+#: editor/kmcomposewin.cpp:2128
 #, fuzzy
 #| msgid "Add as Attachment"
 msgid "Add as &Attachment"
 msgstr "Додај како прилог"
 
-#: editor/kmcomposewin.cpp:2185 editor/kmcomposewin.cpp:2262
+#: editor/kmcomposewin.cpp:2144 editor/kmcomposewin.cpp:2221
 msgid "Name of the attachment:"
 msgstr "Име на прилогот:"
 
-#: editor/kmcomposewin.cpp:2222
+#: editor/kmcomposewin.cpp:2181
 #, fuzzy
 msgid "Add URL into Message"
 msgid_plural "Add URLs into Message"
@@ -2377,7 +2377,7 @@ msgstr[0] "Криптирана порака"
 msgstr[1] "Криптирана порака"
 msgstr[2] "Криптирана порака"
 
-#: editor/kmcomposewin.cpp:2223
+#: editor/kmcomposewin.cpp:2182
 #, fuzzy
 #| msgid "Add as Attachment"
 msgid "Add File as &Attachment"
@@ -2386,17 +2386,17 @@ msgstr[0] "Додај како прилог"
 msgstr[1] "Додај како прилог"
 msgstr[2] "Додај како прилог"
 
-#: editor/kmcomposewin.cpp:2261
+#: editor/kmcomposewin.cpp:2220
 #, fuzzy
 #| msgid "Paste as Attac&hment"
 msgid "Insert clipboard text as attachment"
 msgstr "Вметни како &прилог"
 
-#: editor/kmcomposewin.cpp:2367
+#: editor/kmcomposewin.cpp:2326
 msgid "unnamed"
 msgstr "неименувано"
 
-#: editor/kmcomposewin.cpp:2395
+#: editor/kmcomposewin.cpp:2354
 msgid ""
 "<qt><p>You have requested that messages be encrypted to yourself, but the "
 "currently selected identity does not define an (OpenPGP or S/MIME) "
@@ -2408,11 +2408,11 @@ msgstr ""
 "p><p>Изберете ги клучевите за користење во конфигурацијата на идентитет.</"
 "p></qt>"
 
-#: editor/kmcomposewin.cpp:2402
+#: editor/kmcomposewin.cpp:2361
 msgid "Undefined Encryption Key"
 msgstr "Недефиниран клуч за криптирање"
 
-#: editor/kmcomposewin.cpp:2448
+#: editor/kmcomposewin.cpp:2407
 msgid ""
 "<qt><p>In order to be able to sign this message you first have to define the "
 "(OpenPGP or S/MIME) signing key to use.</p><p>Please select the key to use "
@@ -2423,11 +2423,11 @@ msgstr ""
 "изберете го клучот што ќе се користи во конфигурацијата на идентитет.</p></"
 "qt>"
 
-#: editor/kmcomposewin.cpp:2455
+#: editor/kmcomposewin.cpp:2414
 msgid "Undefined Signing Key"
 msgstr "Недефиниран клуч за потпишување"
 
-#: editor/kmcomposewin.cpp:2585
+#: editor/kmcomposewin.cpp:2544
 #, kde-format
 msgid "There is %1 file upload in progress."
 msgid_plural "There are %1 file uploads in progress."
@@ -2435,7 +2435,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: editor/kmcomposewin.cpp:2606
+#: editor/kmcomposewin.cpp:2565
 msgid ""
 "You must enter your email address in the From: field. You should also set "
 "your email address for all identities, so that you do not have to enter it "
@@ -2445,7 +2445,7 @@ msgstr ""
 "требало да ја поставите вашата е-поштенска адреса за сите идентитети за да "
 "не мора да ја внесувате за секоја порака."
 
-#: editor/kmcomposewin.cpp:2615
+#: editor/kmcomposewin.cpp:2574
 #, fuzzy
 #| msgid ""
 #| "You must specify at least one receiver,either in the To: field or as CC "
@@ -2456,33 +2456,33 @@ msgid ""
 msgstr ""
 "Мора да наведете барем еден примач во полето „До:“ или пак во CC или BCC."
 
-#: editor/kmcomposewin.cpp:2621
+#: editor/kmcomposewin.cpp:2580
 #, fuzzy
 msgid "To: field is empty. Send message anyway?"
 msgstr "Не наведовте тема. Ќе ја испратите ли сепак пораката?"
 
-#: editor/kmcomposewin.cpp:2623
+#: editor/kmcomposewin.cpp:2582
 #, fuzzy
 msgid "No To: specified"
 msgstr "Не е зададено име"
 
-#: editor/kmcomposewin.cpp:2637
+#: editor/kmcomposewin.cpp:2596
 msgid "You did not specify a subject. Send message anyway?"
 msgstr "Не наведовте тема. Ќе ја испратите ли сепак пораката?"
 
-#: editor/kmcomposewin.cpp:2639
+#: editor/kmcomposewin.cpp:2598
 msgid "No Subject Specified"
 msgstr "Не е наведена тема"
 
-#: editor/kmcomposewin.cpp:2640
+#: editor/kmcomposewin.cpp:2599
 msgid "S&end as Is"
 msgstr "Испрати како што &е"
 
-#: editor/kmcomposewin.cpp:2641
+#: editor/kmcomposewin.cpp:2600
 msgid "&Specify the Subject"
 msgstr "Наведете ја &темата"
 
-#: editor/kmcomposewin.cpp:2677
+#: editor/kmcomposewin.cpp:2636
 #, fuzzy
 #| msgid ""
 #| "You must specify at least one receiver,either in the To: field or as CC "
@@ -2493,93 +2493,93 @@ msgid ""
 msgstr ""
 "Мора да наведете барем еден примач во полето „До:“ или пак во CC или BCC."
 
-#: editor/kmcomposewin.cpp:2869
+#: editor/kmcomposewin.cpp:2828
 msgid "About to send email..."
 msgstr "Ја испраќам пораката..."
 
-#: editor/kmcomposewin.cpp:2870
+#: editor/kmcomposewin.cpp:2829
 msgid "Send Confirmation"
 msgstr "Потврда за испраќање"
 
-#: editor/kmcomposewin.cpp:2871
+#: editor/kmcomposewin.cpp:2830
 msgid "&Send Now"
 msgstr "И&спрати сега"
 
-#: editor/kmcomposewin.cpp:2933
+#: editor/kmcomposewin.cpp:2892
 #, kde-format
 msgid ""
 "You are trying to send the mail to more than %1 recipients. Send message "
 "anyway?"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2934
+#: editor/kmcomposewin.cpp:2893
 #, fuzzy
 #| msgid "1 recipient"
 #| msgid_plural "%1 recipients"
 msgid "Too many recipients"
 msgstr "%1 примач"
 
-#: editor/kmcomposewin.cpp:2935
+#: editor/kmcomposewin.cpp:2894
 msgid "&Send as Is"
 msgstr "И&спрати како што е"
 
-#: editor/kmcomposewin.cpp:2936
+#: editor/kmcomposewin.cpp:2895
 #, fuzzy
 #| msgid "Additional Recipients"
 msgid "&Edit Recipients"
 msgstr "Додатни приматели"
 
-#: editor/kmcomposewin.cpp:2979
+#: editor/kmcomposewin.cpp:2938
 msgid ""
 "Turning HTML mode off will cause the text to lose the formatting. Are you "
 "sure?"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2981
+#: editor/kmcomposewin.cpp:2940
 msgid "Lose the formatting?"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2981
+#: editor/kmcomposewin.cpp:2940
 #, fuzzy
 #| msgid "Login Information"
 msgid "Lose Formatting"
 msgstr "Информација за најавата"
 
-#: editor/kmcomposewin.cpp:2981
+#: editor/kmcomposewin.cpp:2940
 #, fuzzy
 #| msgid "Message as Plain Text"
 msgid "Add Markup Plain Text"
 msgstr "Пораката како обичен текст"
 
-#: editor/kmcomposewin.cpp:3327
+#: editor/kmcomposewin.cpp:3286
 #, fuzzy
 #| msgid "Lose Characters"
 msgid "Insert Special Character"
 msgstr "Избриши ги знаците"
 
-#: editor/kmcomposewin.cpp:3328
+#: editor/kmcomposewin.cpp:3287
 #, fuzzy
 msgid "Insert"
 msgstr "Вметнете датотека"
 
-#: editor/kmstorageservice.cpp:53
+#: editor/storageservice/kmstorageservice.cpp:53
 #, fuzzy
 #| msgid "A critical error occurred. Processing stops here."
 msgid "An error occurred while sending the file."
 msgstr "Се случи критична грешка. Обработката завршува."
 
-#: editor/kmstorageservice.cpp:53
+#: editor/storageservice/kmstorageservice.cpp:53
 #, fuzzy
 #| msgid "Load Profile"
 msgid "Upload file"
 msgstr "Вчитајте профил"
 
-#: editor/kmstorageservice.cpp:72
+#: editor/storageservice/kmstorageservice.cpp:72
 #, kde-format
 msgid "%1 return an error '%2'"
 msgstr ""
 
-#: editor/kmstorageservice.cpp:72
+#: editor/storageservice/kmstorageservice.cpp:72
 #, fuzzy
 msgid "Error"
 msgstr "Грешка: %1"
