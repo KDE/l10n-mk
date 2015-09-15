@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-09-14 08:08+0000\n"
+"POT-Creation-Date: 2015-09-15 10:32+0000\n"
 "PO-Revision-Date: 2007-02-28 14:24+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -490,6 +490,93 @@ msgstr "Не можам ја запишам архивската датотек�
 #: eventarchiver.cpp:313
 msgid "Archiving events"
 msgstr ""
+
+#: freebusymodel/freebusycalendar.cpp:133
+#, fuzzy
+#| msgid "Free"
+msgid "Free"
+msgstr "слободен"
+
+#: freebusymodel/freebusycalendar.cpp:136
+#, fuzzy
+#| msgid "Busy"
+msgid "Busy"
+msgstr "зафатен"
+
+#: freebusymodel/freebusycalendar.cpp:139
+msgid "Unavailable"
+msgstr ""
+
+#: freebusymodel/freebusycalendar.cpp:142
+msgid "Tentative"
+msgstr ""
+
+#: freebusymodel/freebusycalendar.cpp:145
+#, fuzzy
+#| msgid "Unknown"
+msgid "Unknown"
+msgstr "Непознато"
+
+#: freebusymodel/freebusyitemmodel.cpp:230
+#, fuzzy
+#| msgid "Atte&ndees"
+msgid "Attendee"
+msgstr "Присут&ни"
+
+#: freebusymodel/freeperiodmodel.cpp:150
+#, fuzzy, kde-format
+#| msgid "%1"
+msgctxt "@label Day of the week name, example: Monday,"
+msgid "%1,"
+msgstr "%1"
+
+#: freebusymodel/freeperiodmodel.cpp:165
+#, fuzzy, kde-format
+#| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
+#| msgid "%1 %2 - %3 %4"
+msgctxt ""
+"@label A time period duration. It is preceded/followed (based on the "
+"orientation) by the name of the week, see the message above. example: 12 "
+"June, 8:00am to 9:30am"
+msgid "%1 %2, %3 to %4"
+msgstr "%2 %1 - %4 %3"
+
+#: freebusymodel/freeperiodmodel.cpp:185
+#, fuzzy, kde-format
+#| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
+#| msgid "%1 %2 - %3 %4"
+msgctxt ""
+"@label A time period duration. KLocale is used to format the components. "
+"example: Monday, 12 June, 8:00am to 9:30am"
+msgid "%1, %2 %3, %4 to %5"
+msgstr "%2 %1 - %4 %3"
+
+#: freebusymodel/freeperiodmodel.cpp:199
+#, fuzzy
+#| msgid "Working Hours"
+msgctxt "@info:tooltip"
+msgid "Free Period"
+msgstr "Работни часови"
+
+#: freebusymodel/freeperiodmodel.cpp:201
+#, fuzzy
+#| msgid "&Start:"
+msgctxt "@info:tooltip period start time"
+msgid "Start:"
+msgstr "&Почеток:"
+
+#: freebusymodel/freeperiodmodel.cpp:204
+#, fuzzy
+msgctxt "@info:tooltip period end time"
+msgid "End:"
+msgstr "&Крај:"
+
+#: freebusymodel/freeperiodmodel.cpp:207
+#, fuzzy
+#| msgid "Duration: "
+msgctxt "@info:tooltip period duration"
+msgid "Duration:"
+msgstr "Траење: "
 
 #: kcalmodel.cpp:128
 #, kde-format
@@ -3858,9 +3945,6 @@ msgstr "П&рилози"
 #~ msgid "%1/%2"
 #~ msgstr "%1/%2"
 
-#~ msgid "%1"
-#~ msgstr "%1"
-
 #, fuzzy
 #~| msgid "To-do:"
 #~ msgid "To-do"
@@ -4074,12 +4158,6 @@ msgstr "П&рилози"
 #~ msgctxt "No holiday region"
 #~ msgid "None"
 #~ msgstr "(Нема)"
-
-#, fuzzy
-#~| msgid "Working Hours"
-#~ msgctxt "@title:group"
-#~ msgid "Working Period"
-#~ msgstr "Работни часови"
 
 #, fuzzy
 #~| msgid ""
@@ -7756,12 +7834,6 @@ msgstr "П&рилози"
 #~ "задача."
 
 #, fuzzy
-#~| msgid "&Start:"
-#~ msgctxt "@label event start time"
-#~ msgid "&Start:"
-#~ msgstr "&Почеток:"
-
-#, fuzzy
 #~ msgctxt "@info:tooltip"
 #~ msgid "Set the start date"
 #~ msgstr "Почетен датум:"
@@ -7779,11 +7851,6 @@ msgstr "П&рилози"
 #~ msgstr "Го поставува почетното време за оваа задача."
 
 #, fuzzy
-#~ msgctxt "@label"
-#~ msgid "&End:"
-#~ msgstr "&Крај:"
-
-#, fuzzy
 #~| msgid "Ti&me associated"
 #~ msgctxt "@option:check"
 #~ msgid "T&ime associated"
@@ -7794,18 +7861,6 @@ msgstr "П&рилози"
 #~ msgctxt "@label"
 #~ msgid "S&how time as:"
 #~ msgstr "П&рикажи време како:"
-
-#, fuzzy
-#~| msgid "Busy"
-#~ msgctxt "@item:inlistbox show event as busy time"
-#~ msgid "Busy"
-#~ msgstr "зафатен"
-
-#, fuzzy
-#~| msgid "Free"
-#~ msgctxt "@item:inlistbox show event as free time"
-#~ msgid "Free"
-#~ msgstr "слободен"
 
 #, fuzzy
 #~| msgid "Accept"
@@ -8151,12 +8206,6 @@ msgstr "П&рилози"
 #~ "Го покажува статусот „слободно/зафатено“ на сите присутни. Двоен клик на "
 #~ "записот за присутниот во листата ќе ви овозможи да ја внесете локацијата "
 #~ "на нивната информација за „слободно/зафатено“."
-
-#, fuzzy
-#~| msgid "Atte&ndees"
-#~ msgctxt "@title:column attendee name"
-#~ msgid "Attendee"
-#~ msgstr "Присут&ни"
 
 #, fuzzy
 #~| msgid "The meeting already has suitable start/end times."
