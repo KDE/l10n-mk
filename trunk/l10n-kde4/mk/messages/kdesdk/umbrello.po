@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-01-20 01:54+0000\n"
+"POT-Creation-Date: 2016-01-23 02:12+0000\n"
 "PO-Revision-Date: 2006-09-30 17:38+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1550,8 +1550,8 @@ msgstr "Општо"
 
 #: dialogs/activitydialog.cpp:143 dialogs/objectnodedialog.cpp:135
 #: dialogs/statedialog.cpp:116 dialogs/umlattributedialog.cpp:67
-#: dialogs/umlentityattributedialog.cpp:65 dialogs/umloperationdialog.cpp:86
-#: dialogs/umltemplatedialog.cpp:60
+#: dialogs/umlentityattributedialog.cpp:65 dialogs/umlenumliteraldialog.cpp:53
+#: dialogs/umloperationdialog.cpp:86 dialogs/umltemplatedialog.cpp:60
 msgid "General Properties"
 msgstr "Општи својства"
 
@@ -3167,20 +3167,21 @@ msgstr "&Име:"
 msgid "Classifier &scope (\"static\")"
 msgstr "Опсег на кла&сификатор („static“)"
 
-#: dialogs/umlattributedialog.cpp:126
+#: dialogs/umlattributedialog.cpp:126 dialogs/umlenumliteraldialog.cpp:86
 msgid "You have entered an invalid attribute name."
 msgstr "Внесовте невалидно име за атрибутот."
 
-#: dialogs/umlattributedialog.cpp:127 refactoring/refactoringassistant.cpp:850
+#: dialogs/umlattributedialog.cpp:127 dialogs/umlenumliteraldialog.cpp:87
+#: refactoring/refactoringassistant.cpp:850
 msgid "Attribute Name Invalid"
 msgstr "Невалидно име за атрибут"
 
-#: dialogs/umlattributedialog.cpp:134
+#: dialogs/umlattributedialog.cpp:134 dialogs/umlenumliteraldialog.cpp:94
 msgid ""
 "The attribute name you have chosen is already being used in this operation."
 msgstr "Името на атрибутот што го избравте веќе се користи од оваа операција."
 
-#: dialogs/umlattributedialog.cpp:135
+#: dialogs/umlattributedialog.cpp:135 dialogs/umlenumliteraldialog.cpp:95
 msgid "Attribute Name Not Unique"
 msgstr "Името на атрибутот не е единствено"
 
@@ -3271,6 +3272,23 @@ msgstr ""
 #: dialogs/umlentityattributedialog.cpp:188
 msgid "Entity Attribute Name Not Unique"
 msgstr "Името на атрибутот на ентитетот не е единствено"
+
+#: dialogs/umlenumliteraldialog.cpp:33
+#, fuzzy
+#| msgid "General Properties"
+msgid "EnumLiteral Properties"
+msgstr "Општи својства"
+
+#: dialogs/umlenumliteraldialog.cpp:59
+#, fuzzy
+#| msgid "&Name:"
+msgctxt "literal name"
+msgid "&Name:"
+msgstr "&Име:"
+
+#: dialogs/umlenumliteraldialog.cpp:63
+msgid "&Value:"
+msgstr ""
 
 #: dialogs/umlfiledialog.cpp:139
 #, fuzzy
@@ -4660,9 +4678,8 @@ msgstr "Име"
 
 #: object_factory.cpp:245 object_factory.cpp:249 umldoc.cpp:1528
 #: umldoc.cpp:1532 umldoc.cpp:1607 umldoc.cpp:1611 umldoc.cpp:1644
-#: umldoc.cpp:1648 umldoc.cpp:1685 umldoc.cpp:1689
-#: umlmodel/enumliteral.cpp:114 umlmodel/enumliteral.cpp:118
-#: umlmodel/stereotype.cpp:120 umlmodel/stereotype.cpp:124
+#: umldoc.cpp:1648 umldoc.cpp:1685 umldoc.cpp:1689 umlmodel/stereotype.cpp:120
+#: umlmodel/stereotype.cpp:124
 msgid "Enter name:"
 msgstr "Внесете име:"
 
@@ -6700,13 +6717,6 @@ msgstr ""
 "Операцијата со истото име и потпис веќе постои. Не можете да го додадете "
 "уште еднаш."
 
-#: umlmodel/enumliteral.cpp:114 umlmodel/enumliteral.cpp:118
-#, fuzzy
-#| msgid "Name"
-msgctxt "enum name"
-msgid "Name"
-msgstr "Име"
-
 #: umlmodel/folder.cpp:419
 #, fuzzy, kde-format
 msgid "The folderfile %1 does not exist."
@@ -6983,7 +6993,7 @@ msgstr "Име на улога"
 msgid "Enter role name:"
 msgstr "Внесете име на улога:"
 
-#: umlwidgets/associationwidget.cpp:3779
+#: umlwidgets/associationwidget.cpp:3795
 msgid "Press Ctrl with left mouse click to delete a point"
 msgstr ""
 
@@ -7485,6 +7495,12 @@ msgstr "Објект"
 #: worktoolbar.cpp:374
 msgid "Pre/Post condition"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "enum name"
+#~ msgid "Name"
+#~ msgstr "Име"
 
 #, fuzzy
 #~| msgid "Filter"
