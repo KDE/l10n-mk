@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-01-21 07:51+0000\n"
+"POT-Creation-Date: 2016-02-12 07:40+0000\n"
 "PO-Revision-Date: 2007-02-28 14:08+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -924,7 +924,7 @@ msgstr "Покажи &секогаш"
 msgid "Display Tooltips"
 msgstr "&До"
 
-#: core/view.cpp:2405 core/view.cpp:2409 core/widgets/quicksearchline.cpp:328
+#: core/view.cpp:2405 core/view.cpp:2409 core/widgets/quicksearchline.cpp:288
 #, fuzzy
 #| msgid "&From"
 msgid "From"
@@ -1155,133 +1155,42 @@ msgstr "Листа со пораки"
 msgid "Folder Always Uses This Sort Order"
 msgstr ""
 
-#: core/widgets/quicksearchline.cpp:64
-#, fuzzy
-#| msgid "Available Filters"
-msgid "Quick Filter:"
-msgstr "Достапни филтри"
-
-#: core/widgets/quicksearchline.cpp:70
+#: core/widgets/quicksearchline.cpp:60
 #, fuzzy
 msgctxt "Search for messages."
 msgid "Search"
 msgstr "&Барај:"
 
-#: core/widgets/quicksearchline.cpp:79
-#, fuzzy
-#| msgid "Configure KMail..."
-msgid "More..."
-msgstr "Конфигурирај КПошта..."
-
-#: core/widgets/quicksearchline.cpp:106
+#: core/widgets/quicksearchline.cpp:89
 #, fuzzy
 msgid "Filter message by:"
 msgstr "Бришење на пораки"
 
-#: core/widgets/quicksearchline.cpp:109
+#: core/widgets/quicksearchline.cpp:92
 #, fuzzy
 #| msgid "&Full message"
 msgid "Full Message"
 msgstr "&Целосна порака"
 
-#: core/widgets/quicksearchline.cpp:117
+#: core/widgets/quicksearchline.cpp:100
 msgid "Body"
 msgstr ""
 
-#: core/widgets/quicksearchline.cpp:124
+#: core/widgets/quicksearchline.cpp:107
 #, fuzzy
 #| msgid "Subject"
 msgid "Subject"
 msgstr "Тема"
 
-#: core/widgets/quicksearchline.cpp:139
+#: core/widgets/quicksearchline.cpp:122
 msgid "Bcc"
 msgstr ""
 
-#: core/widgets/quicksearchline.cpp:326
+#: core/widgets/quicksearchline.cpp:286
 #, fuzzy
 #| msgid "To"
 msgid "To"
 msgstr "До"
-
-#: core/widgets/quicksearchline.cpp:338
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Unread"
-msgctxt "@action:inmenu Status of a message"
-msgid "Unread"
-msgstr "непрочитана"
-
-#: core/widgets/quicksearchline.cpp:341
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Replied"
-msgctxt "@action:inmenu Status of a message"
-msgid "Replied"
-msgstr "одговорена"
-
-#: core/widgets/quicksearchline.cpp:345
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Forwarded"
-msgctxt "@action:inmenu Status of a message"
-msgid "Forwarded"
-msgstr "препратена"
-
-#: core/widgets/quicksearchline.cpp:349
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Important"
-msgctxt "@action:inmenu Status of a message"
-msgid "Important"
-msgstr "важна"
-
-#: core/widgets/quicksearchline.cpp:353
-#, fuzzy
-#| msgid "Remove &Important Message Mark"
-msgctxt "@action:inmenu Status of a message"
-msgid "Action Item"
-msgstr "Отстрани ја ознаката за &важна порака"
-
-#: core/widgets/quicksearchline.cpp:357
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Watched"
-msgctxt "@action:inmenu Status of a message"
-msgid "Watched"
-msgstr "следена"
-
-#: core/widgets/quicksearchline.cpp:361
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Ignored"
-msgctxt "@action:inmenu Status of a message"
-msgid "Ignored"
-msgstr "игнорирана"
-
-#: core/widgets/quicksearchline.cpp:365
-#, fuzzy
-#| msgid "Has Attachment"
-msgctxt "@action:inmenu Status of a message"
-msgid "Has Attachment"
-msgstr "Има прилог"
-
-#: core/widgets/quicksearchline.cpp:369
-#, fuzzy
-#| msgid "Advanced Options"
-msgctxt "@action:inmenu Status of a message"
-msgid "Has Invitation"
-msgstr "Напредни опции"
-
-#: core/widgets/quicksearchline.cpp:373
-msgctxt "@action:inmenu Status of a message"
-msgid "Spam"
-msgstr ""
-
-#: core/widgets/quicksearchline.cpp:377
-msgctxt "@action:inmenu Status of a message"
-msgid "Ham"
-msgstr ""
 
 #: core/widgets/quicksearchwarning.cpp:31
 msgid "The words less than 3 letters are ignored."
@@ -1293,21 +1202,100 @@ msgstr ""
 msgid "Do not show again"
 msgstr "Не покажувај прозорец со прегле&д на пораката"
 
-#: core/widgets/searchlinestatus.cpp:42
+#: core/widgets/searchlinestatus.cpp:51
 msgctxt "@info:tooltip"
 msgid "Prevent the quick search field from being cleared when changing folders"
 msgstr ""
 
-#: core/widgets/searchlinestatus.cpp:45
+#: core/widgets/searchlinestatus.cpp:54
 msgctxt "@info:tooltip"
 msgid "Clear the quick search field when changing folders"
 msgstr ""
 
-#: core/widgets/searchlinestatus.cpp:66
+#: core/widgets/searchlinestatus.cpp:75
 msgctxt "@info:whatsthis"
 msgid ""
 "Toggle this button if you want to keep your quick search locked when moving "
 "to other folders or when narrowing the search by message status."
+msgstr ""
+
+#: core/widgets/searchlinestatus.cpp:138
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Unread"
+msgctxt "@action:inmenu Status of a message"
+msgid "Unread"
+msgstr "непрочитана"
+
+#: core/widgets/searchlinestatus.cpp:142
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Replied"
+msgctxt "@action:inmenu Status of a message"
+msgid "Replied"
+msgstr "одговорена"
+
+#: core/widgets/searchlinestatus.cpp:146
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Forwarded"
+msgctxt "@action:inmenu Status of a message"
+msgid "Forwarded"
+msgstr "препратена"
+
+#: core/widgets/searchlinestatus.cpp:150
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Important"
+msgctxt "@action:inmenu Status of a message"
+msgid "Important"
+msgstr "важна"
+
+#: core/widgets/searchlinestatus.cpp:154
+#, fuzzy
+#| msgid "Remove &Important Message Mark"
+msgctxt "@action:inmenu Status of a message"
+msgid "Action Item"
+msgstr "Отстрани ја ознаката за &важна порака"
+
+#: core/widgets/searchlinestatus.cpp:158
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Watched"
+msgctxt "@action:inmenu Status of a message"
+msgid "Watched"
+msgstr "следена"
+
+#: core/widgets/searchlinestatus.cpp:162
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Ignored"
+msgctxt "@action:inmenu Status of a message"
+msgid "Ignored"
+msgstr "игнорирана"
+
+#: core/widgets/searchlinestatus.cpp:166
+#, fuzzy
+#| msgid "Has Attachment"
+msgctxt "@action:inmenu Status of a message"
+msgid "Has Attachment"
+msgstr "Има прилог"
+
+#: core/widgets/searchlinestatus.cpp:170
+#, fuzzy
+#| msgid "Advanced Options"
+msgctxt "@action:inmenu Status of a message"
+msgid "Has Invitation"
+msgstr "Напредни опции"
+
+#: core/widgets/searchlinestatus.cpp:174
+msgctxt "@action:inmenu Status of a message"
+msgid "Spam"
+msgstr ""
+
+#: core/widgets/searchlinestatus.cpp:178
+msgctxt "@action:inmenu Status of a message"
+msgid "Ham"
 msgstr ""
 
 #: messagelistutil.cpp:119
@@ -1917,6 +1905,16 @@ msgstr "&Копирај тука"
 #: widget.cpp:437
 msgid "C&ancel"
 msgstr "Отк&ажи"
+
+#, fuzzy
+#~| msgid "Available Filters"
+#~ msgid "Quick Filter:"
+#~ msgstr "Достапни филтри"
+
+#, fuzzy
+#~| msgid "Configure KMail..."
+#~ msgid "More..."
+#~ msgstr "Конфигурирај КПошта..."
 
 #, fuzzy
 #~| msgid "Last Search"
