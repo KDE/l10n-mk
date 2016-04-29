@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmahjongg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-04-28 07:56+0000\n"
+"POT-Creation-Date: 2016-04-29 07:41+0000\n"
 "PO-Revision-Date: 2006-04-26 01:21+0200\n"
 "Last-Translator: Zaklina Gjalevska <gjalevska@yahoo.com>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -28,221 +28,445 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "chombium@freemail.com.mk,gjalevska@yahoo.com"
 
-#~ msgid "Edit Board Layout"
-#~ msgstr "Уредете го изгледот на таблата"
+#: src/editor.cpp:81
+msgid "Edit Board Layout"
+msgstr "Уредете го изгледот на таблата"
 
-#~ msgid "New board"
-#~ msgstr "Нова табла"
+#: src/editor.cpp:121
+msgid "New board"
+msgstr "Нова табла"
 
-#~ msgid "Open board"
-#~ msgstr "Отвора табла"
+#: src/editor.cpp:128
+msgid "Open board"
+msgstr "Отвора табла"
 
-#~ msgid "Save board"
-#~ msgstr "Зачувува табла"
+#: src/editor.cpp:135
+msgid "Save board"
+msgstr "Зачувува табла"
 
-#~ msgid "Select"
-#~ msgstr "Изберете"
+#: src/editor.cpp:145
+msgid "Select"
+msgstr "Изберете"
 
-#~ msgid "Move tiles"
-#~ msgstr "Преместува плочки"
+#: src/editor.cpp:150
+msgid "Cut"
+msgstr ""
 
-#~ msgid "Add tiles"
-#~ msgstr "Додава плочки"
+#: src/editor.cpp:155
+msgid "Copy"
+msgstr ""
 
-#~ msgid "Remove tiles"
-#~ msgstr "Отстранува плочки"
+#: src/editor.cpp:160
+msgid "Paste"
+msgstr ""
 
-#~ msgid "Shift left"
-#~ msgstr "Поместува налево"
+#: src/editor.cpp:167
+msgid "Move tiles"
+msgstr "Преместува плочки"
 
-#~ msgid "Shift up"
-#~ msgstr "Поместува нагоре"
+#: src/editor.cpp:171
+msgid "Add tiles"
+msgstr "Додава плочки"
 
-#~ msgid "Shift down"
-#~ msgstr "Поместува надолу"
+#: src/editor.cpp:174
+msgid "Remove tiles"
+msgstr "Отстранува плочки"
 
-#~ msgid "Shift right"
-#~ msgstr "Поместува надесно"
+#: src/editor.cpp:198
+msgid "Shift left"
+msgstr "Поместува налево"
 
-#~ msgid "Tiles: %1 Pos: %2,%3,%4"
-#~ msgstr "Плочки: %1 Поз: %2,%3,%4"
+#: src/editor.cpp:204
+msgid "Shift up"
+msgstr "Поместува нагоре"
 
-#~ msgid "Open Board Layout"
-#~ msgstr "Го отвора изгледот на таблата"
+#: src/editor.cpp:210
+msgid "Shift down"
+msgstr "Поместува надолу"
 
+#: src/editor.cpp:216
+msgid "Shift right"
+msgstr "Поместува надесно"
+
+#: src/editor.cpp:297
+#, kde-format
+msgid "Tiles: %1 Pos: %2,%3,%4"
+msgstr "Плочки: %1 Поз: %2,%3,%4"
+
+#: src/editor.cpp:306
+msgid "Open Board Layout"
+msgstr "Го отвора изгледот на таблата"
+
+#: src/editor.cpp:307 src/editor.cpp:345
 #, fuzzy
-#~| msgid ""
-#~| "*.layout|Board Layout (*.layout)\n"
-#~| "*|All Files"
-#~ msgid "Board Layout (*.layout);;All Files (*)"
-#~ msgstr ""
-#~ "*.layout|Изглед на табла (*.layout)\n"
-#~ "*|Сите датотеки"
+#| msgid ""
+#| "*.layout|Board Layout (*.layout)\n"
+#| "*|All Files"
+msgid "Board Layout (*.layout);;All Files (*)"
+msgstr ""
+"*.layout|Изглед на табла (*.layout)\n"
+"*|Сите датотеки"
 
-#~ msgid "Save Board Layout"
-#~ msgstr "Го зачувува изгледот на таблата"
+#: src/editor.cpp:338
+msgid "You can only save with a even number of tiles."
+msgstr ""
 
-#~ msgid "A file with that name already exists. Do you wish to overwrite it?"
-#~ msgstr "Датотека со тоа име веќе постои. Дали сакате да запишете врз неа?"
+#: src/editor.cpp:344 src/editor.cpp:356
+msgid "Save Board Layout"
+msgstr "Го зачувува изгледот на таблата"
 
-#~ msgid "The board has been modified. Would you like to save the changes?"
-#~ msgstr "Таблата е изменета. Дали сакате да ги зачувате промените?"
+#: src/editor.cpp:355
+msgid "A file with that name already exists. Do you wish to overwrite it?"
+msgstr "Датотека со тоа име веќе постои. Дали сакате да запишете врз неа?"
 
-#~ msgid "Save failed. Aborting operation."
-#~ msgstr "Зачувувањето не успеа. Ја прекинувам операцијата."
+#: src/editor.cpp:384
+msgid "The board has been modified. Would you like to save the changes?"
+msgstr "Таблата е изменета. Дали сакате да ги зачувате промените?"
 
+#: src/editor.cpp:392
+msgid "Save failed. Aborting operation."
+msgstr "Зачувувањето не успеа. Ја прекинувам операцијата."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_RandomLayout)
+#: src/gametype.ui:25
 #, fuzzy
-#~| msgid "Edit Board Layout"
-#~ msgid "Random Layout"
-#~ msgstr "Уредете го изгледот на таблата"
+#| msgid "Edit Board Layout"
+msgid "Random Layout"
+msgstr "Уредете го изгледот на таблата"
 
+#. i18n: ectx: property (text), widget (QPushButton, getNewButton)
+#: src/gametype.ui:51
+msgid "&Get New Layouts"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: src/gametype.ui:60
+msgid "Preview"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: src/gametype.ui:93
 #, fuzzy
-#~| msgctxt "EMAIL OF TRANSLATORS"
-#~| msgid "Your emails"
-#~ msgid "Layout Details"
-#~ msgstr "chombium@freemail.com.mk,gjalevska@yahoo.com"
+#| msgctxt "EMAIL OF TRANSLATORS"
+#| msgid "Your emails"
+msgid "Layout Details"
+msgstr "chombium@freemail.com.mk,gjalevska@yahoo.com"
 
-#~ msgid "Ready. Now it is your turn."
-#~ msgstr "Подготвено. Вие сте на потег."
+#. i18n: ectx: property (text), widget (QLabel, labelAuthor)
+#: src/gametype.ui:113
+msgid "Author:"
+msgstr ""
 
-#~ msgid "Undo operation done successfully."
-#~ msgstr "Операцијата за враќање е успешно извршена."
+#. i18n: ectx: property (text), widget (QLabel, labelContact)
+#: src/gametype.ui:123
+msgid "Contact:"
+msgstr ""
 
-#~ msgid "What do you want to undo? You have done nothing!"
-#~ msgstr "Што сакате да вратите? Не сте направиле ништо!"
+#. i18n: ectx: property (text), widget (QLabel, labelDescription)
+#: src/gametype.ui:133
+msgid "Description:"
+msgstr ""
 
-#~ msgid "Your computer has lost the game."
-#~ msgstr "Вашиот компјутер ја загуби играта."
+#: src/gameview.cpp:118 src/gameview.cpp:212
+msgid "Ready. Now it is your turn."
+msgstr "Подготвено. Вие сте на потег."
 
-#~ msgid "Calculating new game..."
-#~ msgstr "Пресметки за новата игра..."
+#: src/gameview.cpp:137
+msgid "Undo operation done successfully."
+msgstr "Операцијата за враќање е успешно извршена."
 
-#~ msgid "Error generating new game!"
-#~ msgstr "Грешка при генерирање на нова игра!"
+#: src/gameview.cpp:142
+msgid "What do you want to undo? You have done nothing!"
+msgstr "Што сакате да вратите? Не сте направиле ништо!"
 
-#~ msgid "Demo mode. Click mousebutton to stop."
-#~ msgstr "Режим на демонстрација. Кликнете со глувчето за да запре."
+#: src/gameview.cpp:168 src/kmahjongg.cpp:441
+msgid "Your computer has lost the game."
+msgstr "Вашиот компјутер ја загуби играта."
 
-#~ msgid "New Numbered Game..."
-#~ msgstr "Нова нумерирана игра..."
+#: src/gameview.cpp:175
+msgid "Calculating new game..."
+msgstr "Пресметки за новата игра..."
 
-#~ msgid "Shu&ffle"
-#~ msgstr "&Мешај"
+#: src/gameview.cpp:226
+msgid "Error generating new game!"
+msgstr "Грешка при генерирање на нова игра!"
 
-#~ msgid "&Board Editor"
-#~ msgstr "&Уредувач на табли"
+#: src/gameview.cpp:327
+msgid "Demo mode. Click mousebutton to stop."
+msgstr "Режим на демонстрација. Кликнете со глувчето за да запре."
 
+#: src/kmahjongg.cpp:149
+msgid "New Numbered Game..."
+msgstr "Нова нумерирана игра..."
+
+#: src/kmahjongg.cpp:156
+msgid "Shu&ffle"
+msgstr "&Мешај"
+
+#: src/kmahjongg.cpp:161
+msgid "Rotate View Counterclockwise"
+msgstr ""
+
+#: src/kmahjongg.cpp:167
+msgid "Rotate View Clockwise"
+msgstr ""
+
+#: src/kmahjongg.cpp:183
+msgid "&Board Editor"
+msgstr "&Уредувач на табли"
+
+#: src/kmahjongg.cpp:193
 #, fuzzy
-#~ msgid "Time: "
-#~ msgstr "Време"
+msgid "Time: 0:00:00"
+msgstr "Време"
 
+#: src/kmahjongg.cpp:200
+msgid "Removed: 0000/0000"
+msgstr ""
+
+#: src/kmahjongg.cpp:207
+msgid "Game: 000000000000000000000"
+msgstr ""
+
+#: src/kmahjongg.cpp:220
 #, fuzzy
-#~ msgid "New Game"
-#~ msgstr "Зачувај игра"
+msgid "Time: "
+msgstr "Време"
 
-#~ msgid "Enter game number:"
-#~ msgstr "Внесете број на игра:"
-
-#~ msgid "General"
-#~ msgstr "Општо"
-
+#: src/kmahjongg.cpp:226 src/kmahjongg.cpp:385
 #, fuzzy
-#~| msgid "Edit Board Layout"
-#~ msgid "Board Layout"
-#~ msgstr "Уредете го изгледот на таблата"
+msgid "New Game"
+msgstr "Зачувај игра"
 
+#: src/kmahjongg.cpp:226
+msgid "Enter game number:"
+msgstr "Внесете број на игра:"
+
+#: src/kmahjongg.cpp:260
+msgid "General"
+msgstr "Општо"
+
+#: src/kmahjongg.cpp:261
 #, fuzzy
-#~| msgid "Game over: You have no moves left."
-#~ msgid "Game Over: You have no moves left."
-#~ msgstr "Играта заврши. Немате повеќе потези."
+#| msgid "Edit Board Layout"
+msgid "Board Layout"
+msgstr "Уредете го изгледот на таблата"
 
-#~ msgid "You have won!"
-#~ msgstr "Победивте!"
-
-#~ msgid "Game number: %1"
-#~ msgstr "Број на играта: %1"
-
-#~ msgid "Removed: %1/%2  Combinations left: %3"
-#~ msgstr "Отстранети: %1/%2  Преостанати комбинации: %3"
-
-#~ msgid "Load Game"
-#~ msgstr "Вчитај игра"
-
-#~ msgid "Could not read from file. Aborting."
-#~ msgstr "Не можам да вчитам од датотеката. Прекинувам."
-
-#~ msgid "File format not recognized."
-#~ msgstr "Форматот на датотеката не е препознаен."
-
+#: src/kmahjongg.cpp:383
 #, fuzzy
-#~| msgid "Save Theme"
-#~ msgid "Save Game"
-#~ msgstr "Зачувај тема"
+#| msgid "Game over: You have no moves left."
+msgid "Game Over: You have no moves left."
+msgstr "Играта заврши. Немате повеќе потези."
 
+#: src/kmahjongg.cpp:384
+msgid "Game Over"
+msgstr ""
+
+#: src/kmahjongg.cpp:386
+msgid "Restart"
+msgstr ""
+
+#: src/kmahjongg.cpp:476
+msgid "You have won!"
+msgstr "Победивте!"
+
+#: src/kmahjongg.cpp:516
+#, kde-format
+msgid "Game number: %1"
+msgstr "Број на играта: %1"
+
+#: src/kmahjongg.cpp:522
+#, kde-format
+msgid "Removed: %1/%2  Combinations left: %3"
+msgstr "Отстранети: %1/%2  Преостанати комбинации: %3"
+
+#: src/kmahjongg.cpp:572
+msgid "Load Game"
+msgstr "Вчитај игра"
+
+#: src/kmahjongg.cpp:572 src/kmahjongg.cpp:647
+msgid "KMahjongg Game (*.kmgame)"
+msgstr ""
+
+#: src/kmahjongg.cpp:581
+msgid "Could not read from file. Aborting."
+msgstr "Не можам да вчитам од датотеката. Прекинувам."
+
+#: src/kmahjongg.cpp:592
+msgid "File is not a KMahjongg game."
+msgstr ""
+
+#: src/kmahjongg.cpp:605
+msgid "File format not recognized."
+msgstr "Форматот на датотеката не е препознаен."
+
+#: src/kmahjongg.cpp:647
 #, fuzzy
-#~| msgid "Could not write to file. Aborting."
-#~ msgid "Could not open file for saving."
-#~ msgstr "Не можам да запишам во датотеката. Прекинувам."
+#| msgid "Save Theme"
+msgid "Save Game"
+msgstr "Зачувај тема"
 
-#~ msgid "The tile-set to use."
-#~ msgstr "Комплетот на плочки што ќе се користи."
-
-#~ msgid "The background to use."
-#~ msgstr "Подлогата што ќе се користи."
-
-#~ msgid "The layout of the tiles."
-#~ msgstr "Изгледот на плочките."
-
-#~ msgid "Whether all games should be solvable."
-#~ msgstr "Дали сите игри да бидат решливи."
-
-#~ msgid "Whether matching tiles are shown."
-#~ msgstr "Дали да се прикажуваат плочките што меѓусебно одговараат."
-
+#: src/kmahjongg.cpp:657
 #, fuzzy
-#~ msgid "&Game"
-#~ msgstr "Име"
+#| msgid "Could not write to file. Aborting."
+msgid "Could not open file for saving."
+msgstr "Не можам да запишам во датотеката. Прекинувам."
 
-#~ msgid "&Move"
-#~ msgstr "&Премести"
+#. i18n: ectx: label, entry (TileSet), group (General)
+#: src/kmahjongg.kcfg:9
+msgid "The tile-set to use."
+msgstr "Комплетот на плочки што ќе се користи."
 
+#. i18n: ectx: label, entry (Background), group (General)
+#: src/kmahjongg.kcfg:12
+msgid "The background to use."
+msgstr "Подлогата што ќе се користи."
+
+#. i18n: ectx: label, entry (Layout), group (General)
+#: src/kmahjongg.kcfg:15
+msgid "The layout of the tiles."
+msgstr "Изгледот на плочките."
+
+#. i18n: ectx: label, entry (RandomLayout), group (General)
+#: src/kmahjongg.kcfg:21
+msgid "Whether a random layout is chosen on startup."
+msgstr ""
+
+#. i18n: ectx: label, entry (SolvableGames), group (General)
+#: src/kmahjongg.kcfg:25
+msgid "Whether all games should be solvable."
+msgstr "Дали сите игри да бидат решливи."
+
+#. i18n: ectx: label, entry (ShowMatchingTiles), group (General)
+#: src/kmahjongg.kcfg:29
+msgid "Whether matching tiles are shown."
+msgstr "Дали да се прикажуваат плочките што меѓусебно одговараат."
+
+#. i18n: ectx: Menu (game)
+#: src/kmahjonggui.rc:10
 #, fuzzy
-#~ msgid "Mahjongg Solitaire for KDE"
-#~ msgstr "KMahjongg за KDE"
+msgid "&Game"
+msgstr "Име"
 
-#~ msgid "KMahjongg"
-#~ msgstr "KMahjongg"
+#. i18n: ectx: Menu (move)
+#: src/kmahjonggui.rc:14
+msgid "&Move"
+msgstr "&Премести"
 
-#~ msgid "Original Author"
-#~ msgstr "Оригинален автор"
+#. i18n: ectx: Menu (view)
+#: src/kmahjonggui.rc:17
+msgid "&View"
+msgstr ""
 
-#~ msgid "Current maintainer"
-#~ msgstr "Тековен одржувач"
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kmahjonggui.rc:23
+msgid "Main Toolbar"
+msgstr ""
 
+#: src/main.cpp:30
 #, fuzzy
-#~ msgid "KDE 3 rewrite and Extension"
-#~ msgstr "Повторно пишување и проширување"
+msgid "Mahjongg Solitaire for KDE"
+msgstr "KMahjongg за KDE"
 
-#~ msgid ""
-#~ "Solvable game generation\n"
-#~ "based on algorithm by Michael Meeks in GNOME mahjongg"
-#~ msgstr ""
-#~ "Генерирање на решлива игра\n"
-#~ "базирано на алгоритмот на Мајкл Микс (Michael Meeks) во GNOME mahjongg"
+#: src/main.cpp:37
+msgid "KMahjongg"
+msgstr "KMahjongg"
 
+#: src/main.cpp:39
+msgid ""
+"(c) 1997, Mathias Mueller\n"
+"(c) 2006, Mauricio Piacentini\n"
+"(c) 2011, Christian Krippendorf"
+msgstr ""
+
+#: src/main.cpp:41
+msgid "Mathias Mueller"
+msgstr ""
+
+#: src/main.cpp:41
+msgid "Original Author"
+msgstr "Оригинален автор"
+
+#: src/main.cpp:42
+msgid "Christian Krippendorf"
+msgstr ""
+
+#: src/main.cpp:42
+msgid "Current maintainer"
+msgstr "Тековен одржувач"
+
+#: src/main.cpp:43
+msgid "Albert Astals Cid"
+msgstr ""
+
+#: src/main.cpp:43
+msgid "Bug fixes"
+msgstr ""
+
+#: src/main.cpp:44
+msgid "David Black"
+msgstr ""
+
+#: src/main.cpp:44
 #, fuzzy
-#~ msgid "Tile set contributor and current web page maintainer"
-#~ msgstr "Придонесувач за комплетот плочки и одржувач на вебстраницата"
+msgid "KDE 3 rewrite and Extension"
+msgstr "Повторно пишување и проширување"
 
+#: src/main.cpp:45
+msgid "Michael Haertjens"
+msgstr ""
+
+#: src/main.cpp:45
+msgid ""
+"Solvable game generation\n"
+"based on algorithm by Michael Meeks in GNOME mahjongg"
+msgstr ""
+"Генерирање на решлива игра\n"
+"базирано на алгоритмот на Мајкл Микс (Michael Meeks) во GNOME mahjongg"
+
+#: src/main.cpp:46
+msgid "Raquel Ravanini"
+msgstr ""
+
+#: src/main.cpp:46
+msgid "SVG Tileset for KDE4"
+msgstr ""
+
+#: src/main.cpp:47
+msgid "Richard Lohman"
+msgstr ""
+
+#: src/main.cpp:47
 #, fuzzy
-#~ msgid "Tile set contributor and original web page maintainer"
-#~ msgstr "Придонесувач за комплетот плочки и одржувач на вебстраницата"
+msgid "Tile set contributor and current web page maintainer"
+msgstr "Придонесувач за комплетот плочки и одржувач на вебстраницата"
 
-#~ msgid "Code cleanup"
-#~ msgstr "Чистење на кодот"
+#: src/main.cpp:48
+msgid "Osvaldo Stark"
+msgstr ""
 
-#~ msgid "Generate solvable games"
-#~ msgstr "Генерирај решливи игри"
+#: src/main.cpp:48
+#, fuzzy
+msgid "Tile set contributor and original web page maintainer"
+msgstr "Придонесувач за комплетот плочки и одржувач на вебстраницата"
+
+#: src/main.cpp:49
+msgid "Benjamin Meyer"
+msgstr ""
+
+#: src/main.cpp:49
+msgid "Code cleanup"
+msgstr "Чистење на кодот"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowMatchingTiles)
+#: src/settings.ui:22
+msgid "Blink matching tiles when first one is selected"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SolvableGames)
+#: src/settings.ui:29
+msgid "Generate solvable games"
+msgstr "Генерирај решливи игри"
 
 #~ msgid "Sorry, you have lost the game."
 #~ msgstr "Жалам, ја загубивте играта."
