@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-05-15 07:28+0000\n"
+"POT-Creation-Date: 2016-05-16 08:22+0000\n"
 "PO-Revision-Date: 2007-02-26 21:35+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -245,14 +245,14 @@ msgstr ""
 #: dialogs/detaildialog.cpp:618 ekos/capture.cpp:1829 ekos/capture.cpp:2160
 #: ekos/scheduler.cpp:2904 ekos/scheduler.cpp:3184 ekos/scheduler.cpp:3584
 #: ekos/scheduler.cpp:4233 ekos/scheduler.cpp:4262 ekos/scheduler.cpp:4304
-#: indi/drivermanager.cpp:1444 indi/indidriver.cpp:937 kstarsactions.cpp:934
+#: indi/drivermanager.cpp:1444 indi/indidriver.cpp:937 kstarsactions.cpp:947
 #: oal/execute.cpp:314 options/opscolors.cpp:200 tools/modcalcangdist.cpp:133
 #: tools/modcalcapcoord.cpp:150 tools/modcalcdaylength.cpp:247
 #: tools/modcalcgalcoord.cpp:193 tools/modcalcgeodcoord.cpp:232
 #: tools/modcalcjd.cpp:121 tools/modcalcplanets.cpp:208
-#: tools/modcalcsidtime.cpp:200 tools/modcalcvizequinox.cpp:84
-#: tools/modcalcvlsr.cpp:274 tools/observinglist.cpp:754
-#: tools/observinglist.cpp:877 tools/scriptbuilder.cpp:777
+#: tools/modcalcsidtime.cpp:201 tools/modcalcvizequinox.cpp:85
+#: tools/modcalcvlsr.cpp:274 tools/observinglist.cpp:778
+#: tools/observinglist.cpp:901 tools/scriptbuilder.cpp:777
 #: tools/scriptbuilder.cpp:845 tools/scriptbuilder.cpp:917
 msgid "Could Not Open File"
 msgstr "Не можам да ја отворам датотеката"
@@ -330,8 +330,8 @@ msgstr "Не можам да ја избришам датотеката: %1"
 msgid "Error: Unable to save image: %1 "
 msgstr "Не можам да ја отворам датотеката"
 
-#: auxiliary/imageexporter.cpp:233 kstarsactions.cpp:899
-#: printing/foveditordialog.cpp:186 tools/scriptbuilder.cpp:865
+#: auxiliary/imageexporter.cpp:233 printing/foveditordialog.cpp:186
+#: tools/scriptbuilder.cpp:865
 #, fuzzy, kde-format
 msgid "Could not upload image to remote location: %1"
 msgstr "Не можам да ја отворам датотеката"
@@ -341,61 +341,66 @@ msgstr "Не можам да ја отворам датотеката"
 msgid "Could not export image: URL %1 invalid"
 msgstr "Не можам да ја отворам датотеката"
 
-#: auxiliary/imageviewer.cpp:123
+#: auxiliary/imageviewer.cpp:122
 #, fuzzy, kde-format
 msgid "KStars image viewer: %1"
 msgstr "Добредојдовте во KStars "
 
-#: auxiliary/imageviewer.cpp:137 tools/eyepiecefield.cpp:92
+#: auxiliary/imageviewer.cpp:136 tools/eyepiecefield.cpp:92
 msgid "Invert colors"
 msgstr ""
 
-#: auxiliary/imageviewer.cpp:138
+#: auxiliary/imageviewer.cpp:137
 msgid ""
 "Reverse colors of the image. This is useful to enhance contrast at times. "
 "This affects only the display and not the saving."
 msgstr ""
 
-#: auxiliary/imageviewer.cpp:139 ekos/capture.cpp:2129 ekos/scheduler.cpp:3163
+#: auxiliary/imageviewer.cpp:138 ekos/capture.cpp:2129 ekos/scheduler.cpp:3163
 #, fuzzy
 msgid "Save"
 msgstr "Sale"
 
-#: auxiliary/imageviewer.cpp:140
+#: auxiliary/imageviewer.cpp:139
 #, fuzzy
 msgid "Save the image to disk"
 msgstr "Зачувувањето на сликата %1 не успеа!"
 
-#: auxiliary/imageviewer.cpp:225
+#: auxiliary/imageviewer.cpp:219
+#, fuzzy
+msgid "Image Viewer"
+msgstr "Добредојдовте во KStars "
+
+#: auxiliary/imageviewer.cpp:240
 #, fuzzy, kde-format
 msgid "Loading of the image %1 failed."
 msgstr "Вчитувањето на сликата %1 не успеа!"
 
-#: auxiliary/imageviewer.cpp:275 indi/streamwg.cpp:158
+#: auxiliary/imageviewer.cpp:290 indi/streamwg.cpp:158
 #: printing/foveditordialog.cpp:124
 #, fuzzy
 msgid "Save Image"
 msgstr "Зачувај слика"
 
-#: auxiliary/imageviewer.cpp:282 dialogs/addcatdialog.cpp:209
+#: auxiliary/imageviewer.cpp:297 dialogs/addcatdialog.cpp:209
 #: ekos/capture.cpp:2117 ekos/scheduler.cpp:3151 fitsviewer/fitstab.cpp:276
 #: kstarsactions.cpp:820 printing/pwizprint.cpp:88 tools/scriptbuilder.cpp:829
 #, kde-format
 msgid "A file named \"%1\" already exists. Overwrite it?"
 msgstr ""
 
-#: auxiliary/imageviewer.cpp:284 dialogs/addcatdialog.cpp:211
+#: auxiliary/imageviewer.cpp:299 dialogs/addcatdialog.cpp:211
 #: ekos/capture.cpp:2119 ekos/scheduler.cpp:3153 fitsviewer/fitstab.cpp:278
 #: kstarsactions.cpp:821 printing/pwizprint.cpp:89 tools/scriptbuilder.cpp:831
 msgid "Overwrite File?"
 msgstr ""
 
-#: auxiliary/imageviewer.cpp:302
+#: auxiliary/imageviewer.cpp:320
 #, fuzzy, kde-format
 msgid "Saving of the image %1 failed."
 msgstr "Зачувувањето на сликата %1 не успеа!"
 
-#: auxiliary/imageviewer.cpp:306
+#: auxiliary/imageviewer.cpp:324
 #, fuzzy, kde-format
 msgid "Saved image to %1"
 msgstr "Зачувувањето на сликата %1 не успеа!"
@@ -1007,7 +1012,7 @@ msgstr "Општо"
 #: kstarsinit.cpp:675 printing/detailstable.cpp:87
 #: printing/pwizobjectselection.cpp:114 skycomponents/starcomponent.cpp:451
 #: skycomponents/starcomponent.cpp:460 skycomponents/starcomponent.cpp:469
-#: skyobjects/starobject.cpp:417 tools/observinglist.cpp:483
+#: skyobjects/starobject.cpp:417 tools/observinglist.cpp:494
 #: tools/wutdialog.cpp:279
 msgid "star"
 msgstr "ѕвезда"
@@ -1197,7 +1202,7 @@ msgid "Log"
 msgstr "Дневник"
 
 #: dialogs/detaildialog.cpp:684 skyobjects/skyobject.cpp:429
-#: tools/observinglist.cpp:493 tools/observinglist.cpp:718
+#: tools/observinglist.cpp:504 tools/observinglist.cpp:742
 #, kde-format
 msgid "Record here observation logs and/or data on %1."
 msgstr ""
@@ -1219,12 +1224,12 @@ msgstr "Избриши ја потврдата"
 #: dialogs/detaildialog.cpp:1093 dialogs/detaildialog.cpp:1123
 #: fitsviewer/fitsview.cpp:202 fitsviewer/fitsview.cpp:237
 #: tools/flagmanager.cpp:257 tools/flagmanager.cpp:286
-#: tools/observinglist.cpp:583 tools/observinglist.cpp:613
+#: tools/observinglist.cpp:607 tools/observinglist.cpp:637
 msgid "KStars did not find any active telescopes."
 msgstr ""
 
 #: dialogs/detaildialog.cpp:1109 fitsviewer/fitsview.cpp:218
-#: tools/flagmanager.cpp:273 tools/observinglist.cpp:599
+#: tools/flagmanager.cpp:273 tools/observinglist.cpp:623
 #, kde-format
 msgid "Telescope %1 is offline. Please connect and retry again."
 msgstr ""
@@ -1817,7 +1822,7 @@ msgid "Constellations"
 msgstr "Констелации"
 
 #. i18n: ectx: property (text), widget (QPushButton, FindButton)
-#: dialogs/finddialog.cpp:60 tools/observinglist.ui:319
+#: dialogs/finddialog.cpp:60 tools/observinglist.ui:329
 msgid "Find Object"
 msgstr "Најди објект"
 
@@ -3148,7 +3153,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: ekos/align.cpp:877 ekos/capture.cpp:1129 ekos/ekosmanager.cpp:2538
+#: ekos/align.cpp:877 ekos/capture.cpp:1129 ekos/ekosmanager.cpp:2534
 #: ekos/focus.cpp:1638 ekos/guide.cpp:574 ekos/mount.cpp:316
 #: ekos/scheduler.cpp:241
 #, kde-format
@@ -4720,90 +4725,90 @@ msgid "completed"
 msgstr "Пресметај"
 
 #. i18n: ectx: property (title), widget (QGroupBox, setupGroup)
-#: ekos/ekosmanager.cpp:165 ekos/guide/guider.ui:470
+#: ekos/ekosmanager.cpp:161 ekos/guide/guider.ui:470
 msgid "Setup"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_6)
-#: ekos/ekosmanager.cpp:170 ekos/opsekos.ui:93
+#: ekos/ekosmanager.cpp:166 ekos/opsekos.ui:93
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Schuyler"
 msgid "Scheduler"
 msgstr "Schuyler"
 
-#: ekos/ekosmanager.cpp:233
+#: ekos/ekosmanager.cpp:229
 msgid "Cannot switch modes while INDI services are running."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:233
+#: ekos/ekosmanager.cpp:229
 #, fuzzy
 #| msgid "Focused on: "
 msgid "Ekos Mode"
 msgstr "Фокусирано на: "
 
-#: ekos/ekosmanager.cpp:242
+#: ekos/ekosmanager.cpp:238
 msgid ""
 "Please fill the remote server information in Ekos options before switching "
 "to remote mode."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, processINDIB)
-#: ekos/ekosmanager.cpp:844 ekos/ekosmanager.cpp:1718 ekos/ekosmanager.ui:259
+#: ekos/ekosmanager.cpp:840 ekos/ekosmanager.cpp:1714 ekos/ekosmanager.ui:259
 #, fuzzy
 #| msgid "Start"
 msgid "Start INDI"
 msgstr "Започни"
 
-#: ekos/ekosmanager.cpp:1001 ekos/ekosmanager.cpp:1036
+#: ekos/ekosmanager.cpp:997 ekos/ekosmanager.cpp:1032
 msgid "Ekos requires at least one CCD or Guider to operate."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1089
+#: ekos/ekosmanager.cpp:1085
 msgid ""
 "Ekos detected an instance of INDI server running. Do you wish to shut down "
 "the existing instance before starting a new one?"
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1090
+#: ekos/ekosmanager.cpp:1086
 #, fuzzy
 msgid "INDI Server"
 msgstr "St. Peter Port"
 
-#: ekos/ekosmanager.cpp:1099
+#: ekos/ekosmanager.cpp:1095
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Farmington"
 msgid "Starting INDI services..."
 msgstr "Farmington"
 
-#: ekos/ekosmanager.cpp:1110
+#: ekos/ekosmanager.cpp:1106
 #, kde-format
 msgid "INDI services started on port %1. Please connect devices."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1120
+#: ekos/ekosmanager.cpp:1116
 #, fuzzy, kde-format
 msgid "Connecting to remote INDI server at %1 on port %2 ..."
 msgstr "Не можам да стартувам INDI сервер : грешка на портата."
 
-#: ekos/ekosmanager.cpp:1127
+#: ekos/ekosmanager.cpp:1123
 #, fuzzy
 msgid "Failed to connect to remote INDI server!"
 msgstr "Не можам да стартувам INDI сервер : грешка на портата."
 
-#: ekos/ekosmanager.cpp:1139
+#: ekos/ekosmanager.cpp:1135
 msgid "INDI services started. Connection to remote INDI server is successful."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1151
+#: ekos/ekosmanager.cpp:1147
 #, fuzzy
 #| msgctxt "Constellation name (optional)"
 #| msgid "INDUS"
 msgid "Stop INDI"
 msgstr "ИНДУС"
 
-#: ekos/ekosmanager.cpp:1482
+#: ekos/ekosmanager.cpp:1478
 #, kde-format
 msgid ""
 "Unable to establish:\n"
@@ -4811,13 +4816,13 @@ msgid ""
 "Please ensure the device is connected and powered on."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1483 ekos/ekosmanager.cpp:1488
-#: ekos/ekosmanager.cpp:1524 ekos/ekosmanager.cpp:1529
+#: ekos/ekosmanager.cpp:1479 ekos/ekosmanager.cpp:1484
+#: ekos/ekosmanager.cpp:1520 ekos/ekosmanager.cpp:1525
 #, fuzzy
 msgid "Ekos startup error"
 msgstr "Најди објект"
 
-#: ekos/ekosmanager.cpp:1487
+#: ekos/ekosmanager.cpp:1483
 #, kde-format
 msgid ""
 "Unable to establish the following devices:\n"
@@ -4825,7 +4830,7 @@ msgid ""
 "Please ensure each device is connected and powered on."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1523
+#: ekos/ekosmanager.cpp:1519
 #, kde-format
 msgid ""
 "Unable to establish remote device:\n"
@@ -4833,7 +4838,7 @@ msgid ""
 "Please ensure remote device name corresponds to actual device name."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1528
+#: ekos/ekosmanager.cpp:1524
 #, kde-format
 msgid ""
 "Unable to establish remote devices:\n"
@@ -4841,48 +4846,48 @@ msgid ""
 "Please ensure remote device name corresponds to actual device name."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1609
+#: ekos/ekosmanager.cpp:1605
 msgid "Connecting INDI devices..."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1681
+#: ekos/ekosmanager.cpp:1677
 msgid "Disconnecting INDI devices..."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1725
+#: ekos/ekosmanager.cpp:1721
 msgid "INDI services stopped."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1926
+#: ekos/ekosmanager.cpp:1922
 msgid "Remote devices established. Please connect devices."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:2086 ekos/ekosmanager.cpp:2133
-#: ekos/ekosmanager.cpp:2245 ekos/ekosmanager.cpp:2256
-#: ekos/ekosmanager.cpp:2267 ekos/ekosmanager.cpp:2278 indi/indistd.cpp:417
+#: ekos/ekosmanager.cpp:2082 ekos/ekosmanager.cpp:2129
+#: ekos/ekosmanager.cpp:2241 ekos/ekosmanager.cpp:2252
+#: ekos/ekosmanager.cpp:2263 ekos/ekosmanager.cpp:2274 indi/indistd.cpp:417
 #, kde-format
 msgid "%1 is online."
 msgstr "%1 е на линија."
 
-#: ekos/ekosmanager.cpp:2221
+#: ekos/ekosmanager.cpp:2217
 #, fuzzy, kde-format
 #| msgid "%1 is online."
 msgid "%1 filter is online."
 msgstr "%1 е на линија."
 
-#: ekos/ekosmanager.cpp:2309
+#: ekos/ekosmanager.cpp:2305
 #, fuzzy, kde-format
 #| msgid "%1 is online."
 msgid "%1 is offline."
 msgstr "%1 е на линија."
 
-#: ekos/ekosmanager.cpp:2575
+#: ekos/ekosmanager.cpp:2571
 msgctxt "Charge-Coupled Device"
 msgid "CCD"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, alignStepCheck)
-#: ekos/ekosmanager.cpp:2621 ekos/scheduler.ui:131
+#: ekos/ekosmanager.cpp:2617 ekos/scheduler.ui:131
 #, fuzzy
 #| msgid "Focused on: "
 msgid "Align"
@@ -4890,13 +4895,13 @@ msgstr "Фокусирано на: "
 
 #. i18n: ectx: property (text), widget (QCheckBox, focusStepCheck)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FocusLogging)
-#: ekos/ekosmanager.cpp:2651 ekos/scheduler.ui:115
+#: ekos/ekosmanager.cpp:2647 ekos/scheduler.ui:115
 #: fitsviewer/fitsviewer.cpp:298 options/opsadvanced.ui:387
 msgid "Focus"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_MountLogging)
-#: ekos/ekosmanager.cpp:2688 options/opsadvanced.ui:426
+#: ekos/ekosmanager.cpp:2684 options/opsadvanced.ui:426
 #, fuzzy
 msgid "Mount"
 msgstr "Земја:"
@@ -4904,33 +4909,33 @@ msgstr "Земја:"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_7)
 #. i18n: ectx: property (text), widget (QCheckBox, guideStepCheck)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_GuideLogging)
-#: ekos/ekosmanager.cpp:2713 ekos/opsekos.ui:231 ekos/scheduler.ui:147
+#: ekos/ekosmanager.cpp:2709 ekos/opsekos.ui:231 ekos/scheduler.ui:147
 #: fitsviewer/fitsviewer.cpp:302 options/opsadvanced.ui:413
 msgid "Guide"
 msgstr ""
 
-#: ekos/ekosmanager.cpp:2780
+#: ekos/ekosmanager.cpp:2776
 #, kde-format
 msgid "Guider port from %1 is ready."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:3121
+#: ekos/ekosmanager.cpp:3117
 #, fuzzy
 #| msgid "Are you sure you want to remove the %1 client?"
 msgid "Are you sure you want to delete the profile?"
 msgstr "Дали сте сигурни дека сакате да го отстраните клиентот %1?"
 
-#: ekos/ekosmanager.cpp:3121
+#: ekos/ekosmanager.cpp:3117
 #, fuzzy
 msgid "Confirm Delete"
 msgstr "Грешка при бришење на датотеката"
 
-#: ekos/ekosmanager.cpp:3160
+#: ekos/ekosmanager.cpp:3156
 #, kde-format
 msgid "Site location updated to %1."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:3162
+#: ekos/ekosmanager.cpp:3158
 #, kde-format
 msgid "Failed to update site location to %1. City not found."
 msgstr ""
@@ -5906,7 +5911,7 @@ msgstr ""
 msgid "Guiding calibration failed with errors"
 msgstr "Калиенте"
 
-#: ekos/guide/rcalibration.cpp:531 skycomponents/satellitescomponent.cpp:125
+#: ekos/guide/rcalibration.cpp:531 skycomponents/satellitescomponent.cpp:126
 #: tools/conjunctions.cpp:339
 #, fuzzy
 msgid "Abort"
@@ -6196,7 +6201,7 @@ msgstr "Земја:"
 #. i18n: ectx: property (text), widget (QPushButton, updateB)
 #. i18n: ectx: property (text), widget (QPushButton, updateButton)
 #. i18n: ectx: property (text), widget (QPushButton, Update)
-#: ekos/mosaic.ui:573 tools/altvstime.ui:535 tools/observinglist.ui:273
+#: ekos/mosaic.ui:573 tools/altvstime.ui:535 tools/observinglist.ui:283
 #, fuzzy
 msgid "Update"
 msgstr "Датум"
@@ -9797,18 +9802,18 @@ msgstr "Вчитувам Информациони URL-ови"
 msgid "Center Crosshair"
 msgstr "Центрирај и барај"
 
-#: kstars.cpp:199 kstarsactions.cpp:1087 skymap.cpp:406
+#: kstars.cpp:199 kstarsactions.cpp:1100 skymap.cpp:406
 #, fuzzy
 msgid "Stop &Tracking"
 msgstr "Стопирај &Часовник"
 
-#: kstars.cpp:204 kstarsactions.cpp:1195 kstarsinit.cpp:236
+#: kstars.cpp:204 kstarsactions.cpp:1208 kstarsinit.cpp:236
 #, fuzzy
 #| msgid "Horizontal &Coordinates"
 msgid "Switch to horizonal view (Horizontal &Coordinates)"
 msgstr "Хоризонтални &координати"
 
-#: kstars.cpp:204 kstarsactions.cpp:1201 kstarsinit.cpp:236
+#: kstars.cpp:204 kstarsactions.cpp:1214 kstarsinit.cpp:236
 #, fuzzy
 #| msgid "Equatorial &Coordinates"
 msgid "Switch to star globe view (Equatorial &Coordinates)"
@@ -44225,35 +44230,29 @@ msgid "Show HST (Rings and Moons)"
 msgstr "Прикажи HST слика"
 
 #: kstars_i18n.cpp:4377
-#, fuzzy
-msgctxt "Image/info menu item (should be translated)"
-msgid "Show HST/VLT Image"
-msgstr "Прикажи HST слика"
-
-#: kstars_i18n.cpp:4378
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show KPNO AOP Image"
 msgstr "Прикажи KPNO AOP слика"
 
-#: kstars_i18n.cpp:4379
+#: kstars_i18n.cpp:4378
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show Magellan Surface Image"
 msgstr "Прикажи HST слика"
 
-#: kstars_i18n.cpp:4380
+#: kstars_i18n.cpp:4379
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show MGS Image"
 msgstr "Прикажи HST слика"
 
-#: kstars_i18n.cpp:4381
+#: kstars_i18n.cpp:4380
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show NASA Mosaic"
 msgstr "Прикажи NOAO слика"
 
-#: kstars_i18n.cpp:4382
+#: kstars_i18n.cpp:4381
 #, fuzzy
 #| msgctxt "Image/info menu item (should be translated)"
 #| msgid "Show HST Image"
@@ -44261,212 +44260,212 @@ msgctxt "Image/info menu item (should be translated)"
 msgid "Show New Horizons Image"
 msgstr "Прикажи HST слика"
 
-#: kstars_i18n.cpp:4383
+#: kstars_i18n.cpp:4382
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show NOAO Image"
 msgstr "Прикажи NOAO слика"
 
-#: kstars_i18n.cpp:4384
+#: kstars_i18n.cpp:4383
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show NOAO Image (Halpha)"
 msgstr "Прикажи NOAO слика"
 
-#: kstars_i18n.cpp:4385
+#: kstars_i18n.cpp:4384
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show NOAO Image (Optical)"
 msgstr "Прикажи NOAO слика"
 
-#: kstars_i18n.cpp:4386
+#: kstars_i18n.cpp:4385
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show Pathfinder Lander Image"
 msgstr "Прикажи HST слика"
 
-#: kstars_i18n.cpp:4387
+#: kstars_i18n.cpp:4386
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show SEDS Image"
 msgstr "Прикажи SEDS слика"
 
-#: kstars_i18n.cpp:4388
+#: kstars_i18n.cpp:4387
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show Spitzer Image"
 msgstr "Прикажи HST слика"
 
-#: kstars_i18n.cpp:4389
+#: kstars_i18n.cpp:4388
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show Sun Image"
 msgstr "Прикажи HST слика"
 
-#: kstars_i18n.cpp:4390
+#: kstars_i18n.cpp:4389
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show Viking Lander Image"
 msgstr "Прикажи HST слика"
 
-#: kstars_i18n.cpp:4391
+#: kstars_i18n.cpp:4390
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show VLT Image"
 msgstr "Прикажи HST слика"
 
-#: kstars_i18n.cpp:4392
+#: kstars_i18n.cpp:4391
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show Voyager 1 Image"
 msgstr "Прикажи HST слика"
 
-#: kstars_i18n.cpp:4393
+#: kstars_i18n.cpp:4392
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "Total Eclipse Image"
 msgstr "Прикажи SEDS слика"
 
-#: kstars_i18n.cpp:4394
+#: kstars_i18n.cpp:4393
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "Triple Eclipse (HST)"
 msgstr "Прикажи SEDS слика"
 
-#: kstars_i18n.cpp:4395
+#: kstars_i18n.cpp:4394
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "Comet Shoemaker-Levy 9"
 msgstr "Прикажи HST слика"
 
-#: kstars_i18n.cpp:4396
+#: kstars_i18n.cpp:4395
 msgctxt "Image/info menu item (should be translated)"
 msgid "Daily Solar Images"
 msgstr "Дневни Соларни слики"
 
-#: kstars_i18n.cpp:4397
+#: kstars_i18n.cpp:4396
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "Fred Espanek's Eclipse page"
 msgstr "Марс друштво"
 
-#: kstars_i18n.cpp:4398
+#: kstars_i18n.cpp:4397
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "HST Press Release (2002)"
 msgstr "NASA JPL страна"
 
-#: kstars_i18n.cpp:4399
+#: kstars_i18n.cpp:4398
 msgctxt "Image/info menu item (should be translated)"
 msgid "NASA JPL Page"
 msgstr "NASA JPL страна"
 
-#: kstars_i18n.cpp:4400
+#: kstars_i18n.cpp:4399
 msgctxt "Image/info menu item (should be translated)"
 msgid "NASA Mars Missions"
 msgstr "NASA мисии на Марс"
 
-#: kstars_i18n.cpp:4401
+#: kstars_i18n.cpp:4400
 msgctxt "Image/info menu item (should be translated)"
 msgid "SEDS Information Page"
 msgstr "SEDS информациона страна"
 
-#: kstars_i18n.cpp:4402
+#: kstars_i18n.cpp:4401
 msgctxt "Image/info menu item (should be translated)"
 msgid "The Apollo Program"
 msgstr "Аполо програмата"
 
-#: kstars_i18n.cpp:4403
+#: kstars_i18n.cpp:4402
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "The Cassini Mission"
 msgstr "NASA мисии на Марс"
 
-#: kstars_i18n.cpp:4404
+#: kstars_i18n.cpp:4403
 msgctxt "Image/info menu item (should be translated)"
 msgid "The \"face\" on Mars"
 msgstr ""
 
-#: kstars_i18n.cpp:4405
+#: kstars_i18n.cpp:4404
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "The Galileo Mission"
 msgstr "NASA мисии на Марс"
 
-#: kstars_i18n.cpp:4406
+#: kstars_i18n.cpp:4405
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "The Magellan Mission"
 msgstr "NASA мисии на Марс"
 
-#: kstars_i18n.cpp:4407
+#: kstars_i18n.cpp:4406
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "The Mariner 10 Mission"
 msgstr "NASA мисии на Марс"
 
-#: kstars_i18n.cpp:4408
+#: kstars_i18n.cpp:4407
 msgctxt "Image/info menu item (should be translated)"
 msgid "The Mars Society"
 msgstr "Марс друштво"
 
-#: kstars_i18n.cpp:4409
+#: kstars_i18n.cpp:4408
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "The Voyager Missions"
 msgstr "NASA мисии на Марс"
 
-#: kstars_i18n.cpp:4410
+#: kstars_i18n.cpp:4409
 msgctxt "Image/info menu item (should be translated)"
 msgid "The Whole Mars Catalog"
 msgstr "Каталог на целиот Марс"
 
-#: kstars_i18n.cpp:4411
+#: kstars_i18n.cpp:4410
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "Welcome to Mars!"
 msgstr "Марс друштво"
 
-#: kstars_i18n.cpp:4412
+#: kstars_i18n.cpp:4411
 #, fuzzy
 msgctxt "Image/info menu item (should be translated)"
 msgid "Wikipedia Page"
 msgstr "NASA JPL страна"
 
-#: kstars_i18n.cpp:4413
+#: kstars_i18n.cpp:4412
 #, fuzzy
 msgctxt "star name"
 msgid "Sirius"
 msgstr "Syracuse"
 
-#: kstars_i18n.cpp:4414
+#: kstars_i18n.cpp:4413
 #, fuzzy
 msgctxt "star name"
 msgid "Canopus"
 msgstr "Кранстон"
 
-#: kstars_i18n.cpp:4415
+#: kstars_i18n.cpp:4414
 msgctxt "star name"
 msgid "Arcturus"
 msgstr ""
 
-#: kstars_i18n.cpp:4416
+#: kstars_i18n.cpp:4415
 #, fuzzy
 msgctxt "star name"
 msgid "Rigel Kentaurus"
 msgstr "МУСКА"
 
-#: kstars_i18n.cpp:4417
+#: kstars_i18n.cpp:4416
 #, fuzzy
 msgctxt "star name"
 msgid "Vega"
 msgstr "Пресметај"
 
-#: kstars_i18n.cpp:4418
+#: kstars_i18n.cpp:4417
 #, fuzzy
 msgctxt "star name"
 msgid "Capella"
 msgstr "Wallace"
 
-#: kstars_i18n.cpp:4419
+#: kstars_i18n.cpp:4418
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Kiel"
@@ -44474,7 +44473,7 @@ msgctxt "star name"
 msgid "Rigel"
 msgstr "Кил"
 
-#: kstars_i18n.cpp:4420
+#: kstars_i18n.cpp:4419
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Proctor"
@@ -44482,7 +44481,7 @@ msgctxt "star name"
 msgid "Procyon"
 msgstr "Proctor"
 
-#: kstars_i18n.cpp:4421
+#: kstars_i18n.cpp:4420
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Aachen"
@@ -44490,7 +44489,7 @@ msgctxt "star name"
 msgid "Achernar"
 msgstr "Ахен"
 
-#: kstars_i18n.cpp:4422
+#: kstars_i18n.cpp:4421
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Bellevue"
@@ -44498,13 +44497,13 @@ msgctxt "star name"
 msgid "Betelgeuse"
 msgstr "Белви"
 
-#: kstars_i18n.cpp:4423
+#: kstars_i18n.cpp:4422
 #, fuzzy
 msgctxt "star name"
 msgid "Hadar"
 msgstr "Hannibal"
 
-#: kstars_i18n.cpp:4424
+#: kstars_i18n.cpp:4423
 #, fuzzy
 #| msgctxt "Altitude"
 #| msgid "Alt"
@@ -44512,13 +44511,13 @@ msgctxt "star name"
 msgid "Altair"
 msgstr "Вис"
 
-#: kstars_i18n.cpp:4425
+#: kstars_i18n.cpp:4424
 #, fuzzy
 msgctxt "star name"
 msgid "Acrux"
 msgstr "Арика"
 
-#: kstars_i18n.cpp:4426
+#: kstars_i18n.cpp:4425
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Aldermaston"
@@ -44526,25 +44525,25 @@ msgctxt "star name"
 msgid "Aldebaran"
 msgstr "Алдермастон"
 
-#: kstars_i18n.cpp:4427
+#: kstars_i18n.cpp:4426
 #, fuzzy
 msgctxt "star name"
 msgid "Spica"
 msgstr "Syracuse"
 
-#: kstars_i18n.cpp:4428
+#: kstars_i18n.cpp:4427
 #, fuzzy
 #| msgid "Stars"
 msgctxt "star name"
 msgid "Antares"
 msgstr "Ѕвезди"
 
-#: kstars_i18n.cpp:4429
+#: kstars_i18n.cpp:4428
 msgctxt "star name"
 msgid "Pollux"
 msgstr ""
 
-#: kstars_i18n.cpp:4430
+#: kstars_i18n.cpp:4429
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Florala"
@@ -44552,13 +44551,13 @@ msgctxt "star name"
 msgid "Fomalhaut"
 msgstr "Florala"
 
-#: kstars_i18n.cpp:4431
+#: kstars_i18n.cpp:4430
 #, fuzzy
 msgctxt "star name"
 msgid "Mimosa"
 msgstr "Minnesota"
 
-#: kstars_i18n.cpp:4432
+#: kstars_i18n.cpp:4431
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Denver"
@@ -44566,12 +44565,12 @@ msgctxt "star name"
 msgid "Deneb"
 msgstr "Денвер"
 
-#: kstars_i18n.cpp:4433
+#: kstars_i18n.cpp:4432
 msgctxt "star name"
 msgid "Regulus"
 msgstr ""
 
-#: kstars_i18n.cpp:4434
+#: kstars_i18n.cpp:4433
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Alhambra"
@@ -44579,18 +44578,18 @@ msgctxt "star name"
 msgid "Adhara"
 msgstr "Алхамбра"
 
-#: kstars_i18n.cpp:4435
+#: kstars_i18n.cpp:4434
 #, fuzzy
 msgctxt "star name"
 msgid "Castor"
 msgstr "Кранстон"
 
-#: kstars_i18n.cpp:4436
+#: kstars_i18n.cpp:4435
 msgctxt "star name"
 msgid "Gacrux"
 msgstr ""
 
-#: kstars_i18n.cpp:4437
+#: kstars_i18n.cpp:4436
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Hauula"
@@ -44598,13 +44597,13 @@ msgctxt "star name"
 msgid "Shaula"
 msgstr "Hauula"
 
-#: kstars_i18n.cpp:4438
+#: kstars_i18n.cpp:4437
 #, fuzzy
 msgctxt "star name"
 msgid "Bellatrix"
 msgstr "Белви"
 
-#: kstars_i18n.cpp:4439
+#: kstars_i18n.cpp:4438
 #, fuzzy
 #| msgctxt "Altitude"
 #| msgid "Alt"
@@ -44612,7 +44611,7 @@ msgctxt "star name"
 msgid "Alnath"
 msgstr "Вис"
 
-#: kstars_i18n.cpp:4440
+#: kstars_i18n.cpp:4439
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Minneapolis"
@@ -44620,24 +44619,24 @@ msgctxt "star name"
 msgid "Miaplacidus"
 msgstr "Minneapolis"
 
-#: kstars_i18n.cpp:4441
+#: kstars_i18n.cpp:4440
 #, fuzzy
 msgctxt "star name"
 msgid "Alnilam"
 msgstr "Име на ѕвездата"
 
-#: kstars_i18n.cpp:4442
+#: kstars_i18n.cpp:4441
 msgctxt "star name"
 msgid "Al Na'ir"
 msgstr ""
 
-#: kstars_i18n.cpp:4443
+#: kstars_i18n.cpp:4442
 #, fuzzy
 msgctxt "star name"
 msgid "Alnitak"
 msgstr "Име на ѕвездата"
 
-#: kstars_i18n.cpp:4444
+#: kstars_i18n.cpp:4443
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Reno"
@@ -44645,7 +44644,7 @@ msgctxt "star name"
 msgid "Regor"
 msgstr "Reno"
 
-#: kstars_i18n.cpp:4445
+#: kstars_i18n.cpp:4444
 #, fuzzy
 #| msgctxt "Altitude"
 #| msgid "Alt"
@@ -44653,7 +44652,7 @@ msgctxt "star name"
 msgid "Alioth"
 msgstr "Вис"
 
-#: kstars_i18n.cpp:4446
+#: kstars_i18n.cpp:4445
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Fairfax"
@@ -44661,7 +44660,7 @@ msgctxt "star name"
 msgid "Mirfak"
 msgstr "Fairfax"
 
-#: kstars_i18n.cpp:4447
+#: kstars_i18n.cpp:4446
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Australia"
@@ -44669,7 +44668,7 @@ msgctxt "star name"
 msgid "Kaus Australis"
 msgstr "Австралија"
 
-#: kstars_i18n.cpp:4448
+#: kstars_i18n.cpp:4447
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Dubuque"
@@ -44677,7 +44676,7 @@ msgctxt "star name"
 msgid "Dubhe"
 msgstr "Дубук"
 
-#: kstars_i18n.cpp:4449
+#: kstars_i18n.cpp:4448
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Uelzen"
@@ -44685,7 +44684,7 @@ msgctxt "star name"
 msgid "Wezen"
 msgstr "Uelzen"
 
-#: kstars_i18n.cpp:4450
+#: kstars_i18n.cpp:4449
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Adelaide"
@@ -44693,13 +44692,13 @@ msgctxt "star name"
 msgid "Alkaid"
 msgstr "Аделаида"
 
-#: kstars_i18n.cpp:4451
+#: kstars_i18n.cpp:4450
 #, fuzzy
 msgctxt "star name"
 msgid "Sargas"
 msgstr "Sarasota"
 
-#: kstars_i18n.cpp:4452
+#: kstars_i18n.cpp:4451
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Aviano"
@@ -44707,13 +44706,13 @@ msgctxt "star name"
 msgid "Avior"
 msgstr "Авијано"
 
-#: kstars_i18n.cpp:4453
+#: kstars_i18n.cpp:4452
 #, fuzzy
 msgctxt "star name"
 msgid "Menkalinan"
 msgstr "Mena"
 
-#: kstars_i18n.cpp:4454
+#: kstars_i18n.cpp:4453
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Aachen"
@@ -44721,7 +44720,7 @@ msgctxt "star name"
 msgid "Alhena"
 msgstr "Ахен"
 
-#: kstars_i18n.cpp:4455
+#: kstars_i18n.cpp:4454
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Hancock"
@@ -44729,7 +44728,7 @@ msgctxt "star name"
 msgid "Peacock"
 msgstr "Hancock"
 
-#: kstars_i18n.cpp:4456
+#: kstars_i18n.cpp:4455
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Paris"
@@ -44737,7 +44736,7 @@ msgctxt "star name"
 msgid "Polaris"
 msgstr "Paris"
 
-#: kstars_i18n.cpp:4457
+#: kstars_i18n.cpp:4456
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Miramar"
@@ -44745,7 +44744,7 @@ msgctxt "star name"
 msgid "Mirzam"
 msgstr "Miramar"
 
-#: kstars_i18n.cpp:4458
+#: kstars_i18n.cpp:4457
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Alpharetta"
@@ -44753,7 +44752,7 @@ msgctxt "star name"
 msgid "Alphard"
 msgstr "Алфарета"
 
-#: kstars_i18n.cpp:4459
+#: kstars_i18n.cpp:4458
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Haarlem"
@@ -44761,29 +44760,29 @@ msgctxt "star name"
 msgid "Hamal"
 msgstr "Haarlem"
 
-#: kstars_i18n.cpp:4460
+#: kstars_i18n.cpp:4459
 msgctxt "star name"
 msgid "Al Gieba"
 msgstr ""
 
-#: kstars_i18n.cpp:4461
+#: kstars_i18n.cpp:4460
 #, fuzzy
 msgctxt "star name"
 msgid "Diphda"
 msgstr "Прикажи Опции"
 
-#: kstars_i18n.cpp:4462
+#: kstars_i18n.cpp:4461
 msgctxt "star name"
 msgid "Nunki"
 msgstr ""
 
-#: kstars_i18n.cpp:4463
+#: kstars_i18n.cpp:4462
 #, fuzzy
 msgctxt "star name"
 msgid "Menkent"
 msgstr "Meriden"
 
-#: kstars_i18n.cpp:4464
+#: kstars_i18n.cpp:4463
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Alert"
@@ -44791,7 +44790,7 @@ msgctxt "star name"
 msgid "Alpheratz"
 msgstr "Алерт"
 
-#: kstars_i18n.cpp:4465
+#: kstars_i18n.cpp:4464
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Waipahu"
@@ -44799,13 +44798,13 @@ msgctxt "star name"
 msgid "Saiph"
 msgstr "Waipahu"
 
-#: kstars_i18n.cpp:4466
+#: kstars_i18n.cpp:4465
 #, fuzzy
 msgctxt "star name"
 msgid "Mirach"
 msgstr "Miami"
 
-#: kstars_i18n.cpp:4467
+#: kstars_i18n.cpp:4466
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Kona"
@@ -44813,24 +44812,24 @@ msgctxt "star name"
 msgid "Kocab"
 msgstr "Кона"
 
-#: kstars_i18n.cpp:4468
+#: kstars_i18n.cpp:4467
 msgctxt "star name"
 msgid "Rasalhague"
 msgstr ""
 
-#: kstars_i18n.cpp:4469
+#: kstars_i18n.cpp:4468
 #, fuzzy
 msgctxt "star name"
 msgid "Algol"
 msgstr "Полска"
 
-#: kstars_i18n.cpp:4470
+#: kstars_i18n.cpp:4469
 #, fuzzy
 msgctxt "star name"
 msgid "Almach"
 msgstr "Аламеда"
 
-#: kstars_i18n.cpp:4471
+#: kstars_i18n.cpp:4470
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Delta"
@@ -44838,12 +44837,12 @@ msgctxt "star name"
 msgid "Denebola"
 msgstr "Делта"
 
-#: kstars_i18n.cpp:4472
+#: kstars_i18n.cpp:4471
 msgctxt "star name"
 msgid "Tsih"
 msgstr ""
 
-#: kstars_i18n.cpp:4473
+#: kstars_i18n.cpp:4472
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Lagos"
@@ -44851,13 +44850,13 @@ msgctxt "star name"
 msgid "Naos"
 msgstr "Лагос"
 
-#: kstars_i18n.cpp:4474
+#: kstars_i18n.cpp:4473
 #, fuzzy
 msgctxt "star name"
 msgid "Aspidiske"
 msgstr "Ардмор"
 
-#: kstars_i18n.cpp:4475
+#: kstars_i18n.cpp:4474
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Alpharetta"
@@ -44865,21 +44864,21 @@ msgctxt "star name"
 msgid "Alphecca"
 msgstr "Алфарета"
 
-#: kstars_i18n.cpp:4476
+#: kstars_i18n.cpp:4475
 #, fuzzy
 #| msgid "Mars"
 msgctxt "star name"
 msgid "Mizar"
 msgstr "Марс"
 
-#: kstars_i18n.cpp:4477
+#: kstars_i18n.cpp:4476
 #, fuzzy
 #| msgid "Star"
 msgctxt "star name"
 msgid "Sadr"
 msgstr "Ѕвезда"
 
-#: kstars_i18n.cpp:4478
+#: kstars_i18n.cpp:4477
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Southfield"
@@ -44887,7 +44886,7 @@ msgctxt "star name"
 msgid "Suhail"
 msgstr "Southfield"
 
-#: kstars_i18n.cpp:4479
+#: kstars_i18n.cpp:4478
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Schuyler"
@@ -44895,13 +44894,13 @@ msgctxt "star name"
 msgid "Schedar"
 msgstr "Schuyler"
 
-#: kstars_i18n.cpp:4480
+#: kstars_i18n.cpp:4479
 #, fuzzy
 msgctxt "star name"
 msgid "Eltanin"
 msgstr "Елгин"
 
-#: kstars_i18n.cpp:4481
+#: kstars_i18n.cpp:4480
 #, fuzzy
 #| msgctxt "Region/state name (optional, rarely needs a translation)"
 #| msgid "Montana"
@@ -44909,12 +44908,12 @@ msgctxt "star name"
 msgid "Mintaka"
 msgstr "Montana"
 
-#: kstars_i18n.cpp:4482
+#: kstars_i18n.cpp:4481
 msgctxt "star name"
 msgid "Caph"
 msgstr ""
 
-#: kstars_i18n.cpp:4483
+#: kstars_i18n.cpp:4482
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Dubai"
@@ -44922,7 +44921,7 @@ msgctxt "star name"
 msgid "Dschubba"
 msgstr "Дубаи"
 
-#: kstars_i18n.cpp:4484
+#: kstars_i18n.cpp:4483
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Mena"
@@ -44930,7 +44929,7 @@ msgctxt "star name"
 msgid "Men"
 msgstr "Mena"
 
-#: kstars_i18n.cpp:4485
+#: kstars_i18n.cpp:4484
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Merrimack"
@@ -44938,12 +44937,12 @@ msgctxt "star name"
 msgid "Merak"
 msgstr "Merrimack"
 
-#: kstars_i18n.cpp:4486
+#: kstars_i18n.cpp:4485
 msgctxt "star name"
 msgid "Pulcherrima"
 msgstr ""
 
-#: kstars_i18n.cpp:4487
+#: kstars_i18n.cpp:4486
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Enid"
@@ -44951,7 +44950,7 @@ msgctxt "star name"
 msgid "Enif"
 msgstr "Енид"
 
-#: kstars_i18n.cpp:4488
+#: kstars_i18n.cpp:4487
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Ankara"
@@ -44959,19 +44958,19 @@ msgctxt "star name"
 msgid "Ankaa"
 msgstr "Анкара"
 
-#: kstars_i18n.cpp:4489
+#: kstars_i18n.cpp:4488
 #, fuzzy
 msgctxt "star name"
 msgid "Phecda"
 msgstr "Parma"
 
-#: kstars_i18n.cpp:4490
+#: kstars_i18n.cpp:4489
 #, fuzzy
 msgctxt "star name"
 msgid "Scheat"
 msgstr "Сејшели"
 
-#: kstars_i18n.cpp:4491
+#: kstars_i18n.cpp:4490
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Aldermaston"
@@ -44979,7 +44978,7 @@ msgctxt "star name"
 msgid "Aludra"
 msgstr "Алдермастон"
 
-#: kstars_i18n.cpp:4492
+#: kstars_i18n.cpp:4491
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Aldermaston"
@@ -44987,7 +44986,7 @@ msgctxt "star name"
 msgid "Alderamin"
 msgstr "Алдермастон"
 
-#: kstars_i18n.cpp:4493
+#: kstars_i18n.cpp:4492
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Mackay"
@@ -44995,7 +44994,7 @@ msgctxt "star name"
 msgid "Merkab"
 msgstr "Mackay"
 
-#: kstars_i18n.cpp:4494
+#: kstars_i18n.cpp:4493
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Genoa"
@@ -45003,7 +45002,7 @@ msgctxt "star name"
 msgid "Gienah"
 msgstr "Genoa"
 
-#: kstars_i18n.cpp:4495
+#: kstars_i18n.cpp:4494
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Mackay"
@@ -45011,7 +45010,7 @@ msgctxt "star name"
 msgid "Markab"
 msgstr "Mackay"
 
-#: kstars_i18n.cpp:4496
+#: kstars_i18n.cpp:4495
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Mena"
@@ -45019,24 +45018,24 @@ msgctxt "star name"
 msgid "Menkab"
 msgstr "Mena"
 
-#: kstars_i18n.cpp:4497
+#: kstars_i18n.cpp:4496
 #, fuzzy
 msgctxt "star name"
 msgid "Zozma"
 msgstr "Бомбај"
 
-#: kstars_i18n.cpp:4498
+#: kstars_i18n.cpp:4497
 #, fuzzy
 msgctxt "star name"
 msgid "Graffias"
 msgstr "Gera"
 
-#: kstars_i18n.cpp:4499
+#: kstars_i18n.cpp:4498
 msgctxt "star name"
 msgid "Arneb"
 msgstr ""
 
-#: kstars_i18n.cpp:4500
+#: kstars_i18n.cpp:4499
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Genoa"
@@ -45044,17 +45043,17 @@ msgctxt "star name"
 msgid "Gienah Corvi"
 msgstr "Genoa"
 
-#: kstars_i18n.cpp:4501
+#: kstars_i18n.cpp:4500
 msgctxt "star name"
 msgid "Zuben el Chamali"
 msgstr ""
 
-#: kstars_i18n.cpp:4502
+#: kstars_i18n.cpp:4501
 msgctxt "star name"
 msgid "Unukalhai"
 msgstr ""
 
-#: kstars_i18n.cpp:4503
+#: kstars_i18n.cpp:4502
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Sheridan"
@@ -45062,7 +45061,7 @@ msgctxt "star name"
 msgid "Sheratan"
 msgstr "Sheridan"
 
-#: kstars_i18n.cpp:4504
+#: kstars_i18n.cpp:4503
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Phuket"
@@ -45070,18 +45069,18 @@ msgctxt "star name"
 msgid "Phakt"
 msgstr "Phuket"
 
-#: kstars_i18n.cpp:4505
+#: kstars_i18n.cpp:4504
 #, fuzzy
 msgctxt "star name"
 msgid "Kraz"
 msgstr "Квасан"
 
-#: kstars_i18n.cpp:4506
+#: kstars_i18n.cpp:4505
 msgctxt "star name"
 msgid "Ruchbah"
 msgstr ""
 
-#: kstars_i18n.cpp:4507
+#: kstars_i18n.cpp:4506
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Madrid"
@@ -45089,49 +45088,49 @@ msgctxt "star name"
 msgid "Muphrid"
 msgstr "Madrid"
 
-#: kstars_i18n.cpp:4508
+#: kstars_i18n.cpp:4507
 msgctxt "star name"
 msgid "Kabdhilinan"
 msgstr ""
 
-#: kstars_i18n.cpp:4509
+#: kstars_i18n.cpp:4508
 #, fuzzy
 msgctxt "star name"
 msgid "Lesath"
 msgstr "Естонија"
 
-#: kstars_i18n.cpp:4510
+#: kstars_i18n.cpp:4509
 msgctxt "star name"
 msgid "Kaus Media"
 msgstr ""
 
-#: kstars_i18n.cpp:4511
+#: kstars_i18n.cpp:4510
 #, fuzzy
 msgctxt "star name"
 msgid "Tarazed"
 msgstr "Paradise"
 
-#: kstars_i18n.cpp:4512
+#: kstars_i18n.cpp:4511
 msgctxt "star name"
 msgid "Yed Prior"
 msgstr ""
 
-#: kstars_i18n.cpp:4513
+#: kstars_i18n.cpp:4512
 msgctxt "star name"
 msgid "Na'ir al Saif"
 msgstr ""
 
-#: kstars_i18n.cpp:4514
+#: kstars_i18n.cpp:4513
 msgctxt "star name"
 msgid "Zuben El Genubi"
 msgstr ""
 
-#: kstars_i18n.cpp:4515
+#: kstars_i18n.cpp:4514
 msgctxt "star name"
 msgid "Kelb al Rai"
 msgstr ""
 
-#: kstars_i18n.cpp:4516
+#: kstars_i18n.cpp:4515
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Cuba"
@@ -45139,17 +45138,17 @@ msgctxt "star name"
 msgid "Cursa"
 msgstr "Куба"
 
-#: kstars_i18n.cpp:4517
+#: kstars_i18n.cpp:4516
 msgctxt "star name"
 msgid "Kornephoros"
 msgstr ""
 
-#: kstars_i18n.cpp:4518
+#: kstars_i18n.cpp:4517
 msgctxt "star name"
 msgid "Ras Algethi"
 msgstr ""
 
-#: kstars_i18n.cpp:4519
+#: kstars_i18n.cpp:4518
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Casablanca"
@@ -45157,17 +45156,17 @@ msgctxt "star name"
 msgid "Rastaban"
 msgstr "Казабланка"
 
-#: kstars_i18n.cpp:4520
+#: kstars_i18n.cpp:4519
 msgctxt "star name"
 msgid "Nihal"
 msgstr ""
 
-#: kstars_i18n.cpp:4521
+#: kstars_i18n.cpp:4520
 msgctxt "star name"
 msgid "Kaus Borealis"
 msgstr ""
 
-#: kstars_i18n.cpp:4522
+#: kstars_i18n.cpp:4521
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Algeria"
@@ -45175,7 +45174,7 @@ msgctxt "star name"
 msgid "Algenib"
 msgstr "Алжир"
 
-#: kstars_i18n.cpp:4523
+#: kstars_i18n.cpp:4522
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Aiken"
@@ -45183,14 +45182,14 @@ msgctxt "star name"
 msgid "Atik"
 msgstr "Аикен"
 
-#: kstars_i18n.cpp:4524
+#: kstars_i18n.cpp:4523
 #, fuzzy
 #| msgid "hour"
 msgctxt "star name"
 msgid "Tchou"
 msgstr "час"
 
-#: kstars_i18n.cpp:4525
+#: kstars_i18n.cpp:4524
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Alcoa"
@@ -45198,23 +45197,23 @@ msgctxt "star name"
 msgid "Alcyone"
 msgstr "Алкола"
 
-#: kstars_i18n.cpp:4526
+#: kstars_i18n.cpp:4525
 msgctxt "star name"
 msgid "Vindemiatrix"
 msgstr ""
 
-#: kstars_i18n.cpp:4527
+#: kstars_i18n.cpp:4526
 msgctxt "star name"
 msgid "Deneb Algiedi"
 msgstr ""
 
-#: kstars_i18n.cpp:4528
+#: kstars_i18n.cpp:4527
 #, fuzzy
 msgctxt "star name"
 msgid "Tejat"
 msgstr "&Запад"
 
-#: kstars_i18n.cpp:4529
+#: kstars_i18n.cpp:4528
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Lamar"
@@ -45222,7 +45221,7 @@ msgctxt "star name"
 msgid "Acamar"
 msgstr "Ламар"
 
-#: kstars_i18n.cpp:4530
+#: kstars_i18n.cpp:4529
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Geomsan"
@@ -45230,7 +45229,7 @@ msgctxt "star name"
 msgid "Gomeisa"
 msgstr "Geomsan"
 
-#: kstars_i18n.cpp:4531
+#: kstars_i18n.cpp:4530
 #, fuzzy
 #| msgctxt "Region/state name (optional, rarely needs a translation)"
 #| msgid "North Carolina"
@@ -45238,7 +45237,7 @@ msgctxt "star name"
 msgid "Cor Caroli"
 msgstr "North Carolina"
 
-#: kstars_i18n.cpp:4532
+#: kstars_i18n.cpp:4531
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Alicante"
@@ -45246,12 +45245,12 @@ msgctxt "star name"
 msgid "Al Niyat"
 msgstr "Аликанте"
 
-#: kstars_i18n.cpp:4533
+#: kstars_i18n.cpp:4532
 msgctxt "star name"
 msgid "Sadalsud"
 msgstr ""
 
-#: kstars_i18n.cpp:4534
+#: kstars_i18n.cpp:4533
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Malta"
@@ -45259,7 +45258,7 @@ msgctxt "star name"
 msgid "Matar"
 msgstr "Малта"
 
-#: kstars_i18n.cpp:4535
+#: kstars_i18n.cpp:4534
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Algeria"
@@ -45267,12 +45266,12 @@ msgctxt "star name"
 msgid "Algorab"
 msgstr "Алжир"
 
-#: kstars_i18n.cpp:4536
+#: kstars_i18n.cpp:4535
 msgctxt "star name"
 msgid "Sadalmelik"
 msgstr ""
 
-#: kstars_i18n.cpp:4537
+#: kstars_i18n.cpp:4536
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Zamora"
@@ -45280,13 +45279,13 @@ msgctxt "star name"
 msgid "Zaurak"
 msgstr "Zamora"
 
-#: kstars_i18n.cpp:4538
+#: kstars_i18n.cpp:4537
 #, fuzzy
 msgctxt "star name"
 msgid "Al Nasl"
 msgstr "Вис:"
 
-#: kstars_i18n.cpp:4539
+#: kstars_i18n.cpp:4538
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Dekalb"
@@ -45294,7 +45293,7 @@ msgctxt "star name"
 msgid "Pherkab"
 msgstr "Декалб"
 
-#: kstars_i18n.cpp:4540
+#: kstars_i18n.cpp:4539
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Al Manamah"
@@ -45302,19 +45301,19 @@ msgctxt "star name"
 msgid "Al Dhanab"
 msgstr "Ал Манама"
 
-#: kstars_i18n.cpp:4541
+#: kstars_i18n.cpp:4540
 #, fuzzy
 msgctxt "star name"
 msgid "Furud"
 msgstr "Брунеи"
 
-#: kstars_i18n.cpp:4542
+#: kstars_i18n.cpp:4541
 #, fuzzy
 msgctxt "star name"
 msgid "Minkar"
 msgstr "Линија "
 
-#: kstars_i18n.cpp:4543
+#: kstars_i18n.cpp:4542
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Macao"
@@ -45322,19 +45321,19 @@ msgctxt "star name"
 msgid "Maaz"
 msgstr "Macao"
 
-#: kstars_i18n.cpp:4544
+#: kstars_i18n.cpp:4543
 #, fuzzy
 #| msgid "Venus"
 msgctxt "star name"
 msgid "Seginus"
 msgstr "Венера"
 
-#: kstars_i18n.cpp:4545
+#: kstars_i18n.cpp:4544
 msgctxt "star name"
 msgid "Dabih"
 msgstr ""
 
-#: kstars_i18n.cpp:4546
+#: kstars_i18n.cpp:4545
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Albion"
@@ -45342,7 +45341,7 @@ msgctxt "star name"
 msgid "Albireo"
 msgstr "Албион"
 
-#: kstars_i18n.cpp:4547
+#: kstars_i18n.cpp:4546
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Mesa"
@@ -45350,30 +45349,30 @@ msgctxt "star name"
 msgid "Mebsuta"
 msgstr "Mesa"
 
-#: kstars_i18n.cpp:4548
+#: kstars_i18n.cpp:4547
 #, fuzzy
 msgctxt "star name"
 msgid "Tania Australis"
 msgstr "Австралија"
 
-#: kstars_i18n.cpp:4549
+#: kstars_i18n.cpp:4548
 #, fuzzy
 msgctxt "star name"
 msgid "Altais"
 msgstr "Вис:"
 
-#: kstars_i18n.cpp:4550
+#: kstars_i18n.cpp:4549
 #, fuzzy
 msgctxt "star name"
 msgid "Al Nair"
 msgstr "Sugadaira"
 
-#: kstars_i18n.cpp:4551
+#: kstars_i18n.cpp:4550
 msgctxt "star name"
 msgid "Talitha Borealis"
 msgstr ""
 
-#: kstars_i18n.cpp:4552
+#: kstars_i18n.cpp:4551
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Spain"
@@ -45381,69 +45380,69 @@ msgctxt "star name"
 msgid "Sarin"
 msgstr "Шпанија"
 
-#: kstars_i18n.cpp:4553
+#: kstars_i18n.cpp:4552
 #, fuzzy
 msgctxt "star name"
 msgid "Wazn"
 msgstr "Квасан"
 
-#: kstars_i18n.cpp:4554
+#: kstars_i18n.cpp:4553
 msgctxt "star name"
 msgid "Kaou Pih"
 msgstr ""
 
-#: kstars_i18n.cpp:4555
+#: kstars_i18n.cpp:4554
 msgctxt "star name"
 msgid "Er Rai"
 msgstr ""
 
-#: kstars_i18n.cpp:4556
+#: kstars_i18n.cpp:4555
 #, fuzzy
 msgctxt "star name"
 msgid "Yed Posterior"
 msgstr "ништо"
 
-#: kstars_i18n.cpp:4557
+#: kstars_i18n.cpp:4556
 msgctxt "star name"
 msgid "Alphirk"
 msgstr ""
 
-#: kstars_i18n.cpp:4558
+#: kstars_i18n.cpp:4557
 msgctxt "star name"
 msgid "Sulaphat"
 msgstr ""
 
-#: kstars_i18n.cpp:4559
+#: kstars_i18n.cpp:4558
 #, fuzzy
 #| msgid "Start"
 msgctxt "star name"
 msgid "Skat"
 msgstr "Започни"
 
-#: kstars_i18n.cpp:4560
+#: kstars_i18n.cpp:4559
 msgctxt "star name"
 msgid "Edasich"
 msgstr ""
 
-#: kstars_i18n.cpp:4561
+#: kstars_i18n.cpp:4560
 #, fuzzy
 msgctxt "star name"
 msgid "Megrez"
 msgstr "Keene"
 
-#: kstars_i18n.cpp:4562
+#: kstars_i18n.cpp:4561
 #, fuzzy
 msgctxt "star name"
 msgid "Chertan"
 msgstr "DC"
 
-#: kstars_i18n.cpp:4563
+#: kstars_i18n.cpp:4562
 #, fuzzy
 msgctxt "star name"
 msgid "Asmidiske"
 msgstr "Ардмор"
 
-#: kstars_i18n.cpp:4564
+#: kstars_i18n.cpp:4563
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Novi"
@@ -45451,7 +45450,7 @@ msgctxt "star name"
 msgid "Navi"
 msgstr "Novi"
 
-#: kstars_i18n.cpp:4565
+#: kstars_i18n.cpp:4564
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Midas"
@@ -45459,7 +45458,7 @@ msgctxt "star name"
 msgid "Muscida"
 msgstr "Midas"
 
-#: kstars_i18n.cpp:4566
+#: kstars_i18n.cpp:4565
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Herne"
@@ -45467,13 +45466,13 @@ msgctxt "star name"
 msgid "Heze"
 msgstr "Herne"
 
-#: kstars_i18n.cpp:4567
+#: kstars_i18n.cpp:4566
 #, fuzzy
 msgctxt "star name"
 msgid "Auva"
 msgstr "Арика"
 
-#: kstars_i18n.cpp:4568
+#: kstars_i18n.cpp:4567
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Houma"
@@ -45481,7 +45480,7 @@ msgctxt "star name"
 msgid "Homan"
 msgstr "Хоума"
 
-#: kstars_i18n.cpp:4569
+#: kstars_i18n.cpp:4568
 #, fuzzy
 #| msgctxt "Region/state name (optional, rarely needs a translation)"
 #| msgid "Montana"
@@ -45489,7 +45488,7 @@ msgctxt "star name"
 msgid "Mothallah"
 msgstr "Montana"
 
-#: kstars_i18n.cpp:4570
+#: kstars_i18n.cpp:4569
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Aabenraa"
@@ -45497,17 +45496,17 @@ msgctxt "star name"
 msgid "Adhafera"
 msgstr "Аабенраа"
 
-#: kstars_i18n.cpp:4571
+#: kstars_i18n.cpp:4570
 msgctxt "star name"
 msgid "Al Thalimain"
 msgstr ""
 
-#: kstars_i18n.cpp:4572
+#: kstars_i18n.cpp:4571
 msgctxt "star name"
 msgid "Tania Borealis"
 msgstr ""
 
-#: kstars_i18n.cpp:4573
+#: kstars_i18n.cpp:4572
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Newark"
@@ -45515,12 +45514,12 @@ msgctxt "star name"
 msgid "Nekkar"
 msgstr "Newark"
 
-#: kstars_i18n.cpp:4574
+#: kstars_i18n.cpp:4573
 msgctxt "star name"
 msgid "Alula Borealis"
 msgstr ""
 
-#: kstars_i18n.cpp:4575
+#: kstars_i18n.cpp:4574
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Warsaw"
@@ -45528,24 +45527,24 @@ msgctxt "star name"
 msgid "Wasat"
 msgstr "Warsaw"
 
-#: kstars_i18n.cpp:4576
+#: kstars_i18n.cpp:4575
 #, fuzzy
 msgctxt "star name"
 msgid "Sadalbari"
 msgstr "Nassau"
 
-#: kstars_i18n.cpp:4577
+#: kstars_i18n.cpp:4576
 #, fuzzy
 msgctxt "star name"
 msgid "Rana"
 msgstr "Уганда"
 
-#: kstars_i18n.cpp:4578
+#: kstars_i18n.cpp:4577
 msgctxt "star name"
 msgid "Tseen Ke"
 msgstr ""
 
-#: kstars_i18n.cpp:4579
+#: kstars_i18n.cpp:4578
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Selma"
@@ -45553,7 +45552,7 @@ msgctxt "star name"
 msgid "Sheliak"
 msgstr "Selma"
 
-#: kstars_i18n.cpp:4580
+#: kstars_i18n.cpp:4579
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Bahamas"
@@ -45561,7 +45560,7 @@ msgctxt "star name"
 msgid "Baham"
 msgstr "Бахами"
 
-#: kstars_i18n.cpp:4581
+#: kstars_i18n.cpp:4580
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Aiken"
@@ -45569,13 +45568,13 @@ msgctxt "star name"
 msgid "Ain"
 msgstr "Аикен"
 
-#: kstars_i18n.cpp:4582
+#: kstars_i18n.cpp:4581
 #, fuzzy
 msgctxt "star name"
 msgid "Tarf"
 msgstr "Tabriz"
 
-#: kstars_i18n.cpp:4583
+#: kstars_i18n.cpp:4582
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Shemya"
@@ -45583,7 +45582,7 @@ msgctxt "star name"
 msgid "Schemali"
 msgstr "Shemya"
 
-#: kstars_i18n.cpp:4584
+#: kstars_i18n.cpp:4583
 #, fuzzy
 #| msgctxt "Region/state name (optional, rarely needs a translation)"
 #| msgid "South Australia"
@@ -45591,12 +45590,12 @@ msgctxt "star name"
 msgid "Talitha Australis"
 msgstr "South Australia"
 
-#: kstars_i18n.cpp:4585
+#: kstars_i18n.cpp:4584
 msgctxt "star name"
 msgid "Al Giedi"
 msgstr ""
 
-#: kstars_i18n.cpp:4586
+#: kstars_i18n.cpp:4585
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Zambia"
@@ -45604,13 +45603,13 @@ msgctxt "star name"
 msgid "Zawijah"
 msgstr "Замбија"
 
-#: kstars_i18n.cpp:4587
+#: kstars_i18n.cpp:4586
 #, fuzzy
 msgctxt "star name"
 msgid "Atlas"
 msgstr "Вис:"
 
-#: kstars_i18n.cpp:4588
+#: kstars_i18n.cpp:4587
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Roanoke"
@@ -45618,18 +45617,18 @@ msgctxt "star name"
 msgid "Rotanev"
 msgstr "Roanoke"
 
-#: kstars_i18n.cpp:4589
+#: kstars_i18n.cpp:4588
 msgctxt "star name"
 msgid "Primus Hyadum"
 msgstr ""
 
-#: kstars_i18n.cpp:4590
+#: kstars_i18n.cpp:4589
 #, fuzzy
 msgctxt "star name"
 msgid "Chow"
 msgstr "Прикажи име"
 
-#: kstars_i18n.cpp:4591
+#: kstars_i18n.cpp:4590
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Lusaka"
@@ -45637,13 +45636,13 @@ msgctxt "star name"
 msgid "Nusakan"
 msgstr "Lusaka"
 
-#: kstars_i18n.cpp:4592
+#: kstars_i18n.cpp:4591
 #, fuzzy
 msgctxt "star name"
 msgid "Thuban"
 msgstr "Бурбенк"
 
-#: kstars_i18n.cpp:4593
+#: kstars_i18n.cpp:4592
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Nashua"
@@ -45651,7 +45650,7 @@ msgctxt "star name"
 msgid "Nashira"
 msgstr "Nashua"
 
-#: kstars_i18n.cpp:4594
+#: kstars_i18n.cpp:4593
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Saskatoon"
@@ -45659,7 +45658,7 @@ msgctxt "star name"
 msgid "Sadatoni"
 msgstr "Saskatoon"
 
-#: kstars_i18n.cpp:4595
+#: kstars_i18n.cpp:4594
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Madrid"
@@ -45667,7 +45666,7 @@ msgctxt "star name"
 msgid "Marfik"
 msgstr "Madrid"
 
-#: kstars_i18n.cpp:4596
+#: kstars_i18n.cpp:4595
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Ashland"
@@ -45675,7 +45674,7 @@ msgctxt "star name"
 msgid "Alshain"
 msgstr "Ешланд"
 
-#: kstars_i18n.cpp:4597
+#: kstars_i18n.cpp:4596
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Elmira"
@@ -45683,12 +45682,12 @@ msgctxt "star name"
 msgid "Electra"
 msgstr "Елмира"
 
-#: kstars_i18n.cpp:4598
+#: kstars_i18n.cpp:4597
 msgctxt "star name"
 msgid "Prijipati"
 msgstr ""
 
-#: kstars_i18n.cpp:4599
+#: kstars_i18n.cpp:4598
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Gumi"
@@ -45696,7 +45695,7 @@ msgctxt "star name"
 msgid "Grumium"
 msgstr "Gumi"
 
-#: kstars_i18n.cpp:4600
+#: kstars_i18n.cpp:4599
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Barton"
@@ -45704,7 +45703,7 @@ msgctxt "star name"
 msgid "Baten"
 msgstr "Бартон"
 
-#: kstars_i18n.cpp:4601
+#: kstars_i18n.cpp:4600
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Avalon"
@@ -45712,7 +45711,7 @@ msgctxt "star name"
 msgid "Svalocin"
 msgstr "Авалон"
 
-#: kstars_i18n.cpp:4602
+#: kstars_i18n.cpp:4601
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Albany"
@@ -45720,13 +45719,13 @@ msgctxt "star name"
 msgid "Albali"
 msgstr "Албани"
 
-#: kstars_i18n.cpp:4603
+#: kstars_i18n.cpp:4602
 #, fuzzy
 msgctxt "star name"
 msgid "Praecipula"
 msgstr "Име на ѕвездата"
 
-#: kstars_i18n.cpp:4604
+#: kstars_i18n.cpp:4603
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Sugadaira"
@@ -45734,7 +45733,7 @@ msgctxt "star name"
 msgid "Sadachbia"
 msgstr "Sugadaira"
 
-#: kstars_i18n.cpp:4605
+#: kstars_i18n.cpp:4604
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Manila"
@@ -45742,7 +45741,7 @@ msgctxt "star name"
 msgid "Maia"
 msgstr "Manila"
 
-#: kstars_i18n.cpp:4606
+#: kstars_i18n.cpp:4605
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Mesa"
@@ -45750,13 +45749,13 @@ msgctxt "star name"
 msgid "Mesarthim"
 msgstr "Mesa"
 
-#: kstars_i18n.cpp:4607
+#: kstars_i18n.cpp:4606
 #, fuzzy
 msgctxt "star name"
 msgid "Rasalas"
 msgstr "Napa"
 
-#: kstars_i18n.cpp:4608
+#: kstars_i18n.cpp:4607
 #, fuzzy
 #| msgctxt "Azimuth"
 #| msgid "Az"
@@ -45764,12 +45763,12 @@ msgctxt "star name"
 msgid "Azha"
 msgstr "Аз"
 
-#: kstars_i18n.cpp:4609
+#: kstars_i18n.cpp:4608
 msgctxt "star name"
 msgid "Zuben el Hakrabi"
 msgstr ""
 
-#: kstars_i18n.cpp:4610
+#: kstars_i18n.cpp:4609
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Kalapana"
@@ -45777,7 +45776,7 @@ msgctxt "star name"
 msgid "Kitalpha"
 msgstr "Калапана"
 
-#: kstars_i18n.cpp:4611
+#: kstars_i18n.cpp:4610
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Australia"
@@ -45785,7 +45784,7 @@ msgctxt "star name"
 msgid "Asellus Australis"
 msgstr "Австралија"
 
-#: kstars_i18n.cpp:4612
+#: kstars_i18n.cpp:4611
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Moenkopi"
@@ -45793,7 +45792,7 @@ msgctxt "star name"
 msgid "Menkib"
 msgstr "Moenkopi"
 
-#: kstars_i18n.cpp:4613
+#: kstars_i18n.cpp:4612
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Alcoa"
@@ -45801,12 +45800,12 @@ msgctxt "star name"
 msgid "Alcor"
 msgstr "Алкола"
 
-#: kstars_i18n.cpp:4614
+#: kstars_i18n.cpp:4613
 msgctxt "star name"
 msgid "Mekbuda"
 msgstr ""
 
-#: kstars_i18n.cpp:4615
+#: kstars_i18n.cpp:4614
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Dublin"
@@ -45814,7 +45813,7 @@ msgctxt "star name"
 msgid "Dulfim"
 msgstr "Даблин"
 
-#: kstars_i18n.cpp:4616
+#: kstars_i18n.cpp:4615
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Bend"
@@ -45822,7 +45821,7 @@ msgctxt "star name"
 msgid "Beid"
 msgstr "Бенд"
 
-#: kstars_i18n.cpp:4617
+#: kstars_i18n.cpp:4616
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Syria"
@@ -45830,7 +45829,7 @@ msgctxt "star name"
 msgid "Syrma"
 msgstr "Сирија"
 
-#: kstars_i18n.cpp:4618
+#: kstars_i18n.cpp:4617
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Algiers"
@@ -45838,13 +45837,13 @@ msgctxt "star name"
 msgid "Alkes"
 msgstr "Алжир"
 
-#: kstars_i18n.cpp:4619
+#: kstars_i18n.cpp:4618
 #, fuzzy
 msgctxt "star name"
 msgid "Muliphein"
 msgstr "Дарвин"
 
-#: kstars_i18n.cpp:4620
+#: kstars_i18n.cpp:4619
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Meridian"
@@ -45852,7 +45851,7 @@ msgctxt "star name"
 msgid "Alphekka Meridiana"
 msgstr "Meridian"
 
-#: kstars_i18n.cpp:4621
+#: kstars_i18n.cpp:4620
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Monroe"
@@ -45860,7 +45859,7 @@ msgctxt "star name"
 msgid "Merope"
 msgstr "Monroe"
 
-#: kstars_i18n.cpp:4622
+#: kstars_i18n.cpp:4621
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Ancona"
@@ -45868,30 +45867,30 @@ msgctxt "star name"
 msgid "Ancha"
 msgstr "Анкона"
 
-#: kstars_i18n.cpp:4623
+#: kstars_i18n.cpp:4622
 #, fuzzy
 msgctxt "star name"
 msgid "Chara"
 msgstr "Чад"
 
-#: kstars_i18n.cpp:4624
+#: kstars_i18n.cpp:4623
 #, fuzzy
 msgctxt "star name"
 msgid "Acubens"
 msgstr "Quebec"
 
-#: kstars_i18n.cpp:4625
+#: kstars_i18n.cpp:4624
 #, fuzzy
 msgctxt "star name"
 msgid "Taygeta"
 msgstr "Детали"
 
-#: kstars_i18n.cpp:4626
+#: kstars_i18n.cpp:4625
 msgctxt "star name"
 msgid "Alkalurops"
 msgstr ""
 
-#: kstars_i18n.cpp:4627
+#: kstars_i18n.cpp:4626
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Berlin"
@@ -45899,12 +45898,12 @@ msgctxt "star name"
 msgid "Botein"
 msgstr "Берлин"
 
-#: kstars_i18n.cpp:4628
+#: kstars_i18n.cpp:4627
 msgctxt "star name"
 msgid "Minhar al Shuja"
 msgstr ""
 
-#: kstars_i18n.cpp:4629
+#: kstars_i18n.cpp:4628
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Cuba"
@@ -45912,31 +45911,31 @@ msgctxt "star name"
 msgid "Cujam"
 msgstr "Куба"
 
-#: kstars_i18n.cpp:4630
+#: kstars_i18n.cpp:4629
 #, fuzzy
 msgctxt "star name"
 msgid "Dziban"
 msgstr "Бурбенк"
 
-#: kstars_i18n.cpp:4631
+#: kstars_i18n.cpp:4630
 #, fuzzy
 msgctxt "star name"
 msgid "Alya"
 msgstr "Аламеда"
 
-#: kstars_i18n.cpp:4632
+#: kstars_i18n.cpp:4631
 msgctxt "star name"
 msgid "Asellus Borealis"
 msgstr ""
 
-#: kstars_i18n.cpp:4633
+#: kstars_i18n.cpp:4632
 #, fuzzy
 #| msgid "Mars"
 msgctxt "star name"
 msgid "Marsik"
 msgstr "Марс"
 
-#: kstars_i18n.cpp:4634
+#: kstars_i18n.cpp:4633
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Ponce"
@@ -45944,14 +45943,14 @@ msgctxt "star name"
 msgid "Pleione"
 msgstr "Ponce"
 
-#: kstars_i18n.cpp:4635
+#: kstars_i18n.cpp:4634
 #, fuzzy
 #| msgid "Asteroids"
 msgctxt "star name"
 msgid "Asterope"
 msgstr "Астероиди"
 
-#: kstars_i18n.cpp:4636
+#: kstars_i18n.cpp:4635
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Miramar"
@@ -45959,7 +45958,7 @@ msgctxt "star name"
 msgid "Mira"
 msgstr "Miramar"
 
-#: kstars_i18n.cpp:4637
+#: kstars_i18n.cpp:4636
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "East Lansing"
@@ -45967,7 +45966,7 @@ msgctxt "Satellite group name"
 msgid "Last Launches"
 msgstr "Источен Лансинг"
 
-#: kstars_i18n.cpp:4638
+#: kstars_i18n.cpp:4637
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Huntington Station"
@@ -45975,12 +45974,12 @@ msgctxt "Satellite group name"
 msgid "International Space Station"
 msgstr "Хантингтон Стејшн"
 
-#: kstars_i18n.cpp:4639
+#: kstars_i18n.cpp:4638
 msgctxt "Satellite group name"
 msgid "Brightest"
 msgstr ""
 
-#: kstars_i18n.cpp:4640
+#: kstars_i18n.cpp:4639
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Chester"
@@ -45988,157 +45987,157 @@ msgctxt "Satellite group name"
 msgid "Weather"
 msgstr "Честер"
 
-#: kstars_i18n.cpp:4641
+#: kstars_i18n.cpp:4640
 msgctxt "Satellite group name"
 msgid "NOAA"
 msgstr ""
 
-#: kstars_i18n.cpp:4642
+#: kstars_i18n.cpp:4641
 msgctxt "Satellite group name"
 msgid "GOES"
 msgstr ""
 
-#: kstars_i18n.cpp:4643
+#: kstars_i18n.cpp:4642
 #, fuzzy
 msgctxt "Satellite group name"
 msgid "Earth Resources"
 msgstr "Тип на ресурс"
 
-#: kstars_i18n.cpp:4644
+#: kstars_i18n.cpp:4643
 msgctxt "Satellite group name"
 msgid "Search & Rescue (SARSAT)"
 msgstr ""
 
-#: kstars_i18n.cpp:4645
+#: kstars_i18n.cpp:4644
 msgctxt "Satellite group name"
 msgid "Disaster Monitoring"
 msgstr ""
 
-#: kstars_i18n.cpp:4646
+#: kstars_i18n.cpp:4645
 msgctxt "Satellite group name"
 msgid "Tracking and Data Relay Satellite System (TDRSS)"
 msgstr ""
 
-#: kstars_i18n.cpp:4647
+#: kstars_i18n.cpp:4646
 #, fuzzy
 msgctxt "Satellite group name"
 msgid "Geostationary"
 msgstr "ОПЃ:"
 
-#: kstars_i18n.cpp:4648
+#: kstars_i18n.cpp:4647
 #, fuzzy
 msgctxt "Satellite group name"
 msgid "Intelsat"
 msgstr "Земјени координати"
 
-#: kstars_i18n.cpp:4649
+#: kstars_i18n.cpp:4648
 #, fuzzy
 #| msgid "Horizon"
 msgctxt "Satellite group name"
 msgid "Gorizont"
 msgstr "Хоризонт"
 
-#: kstars_i18n.cpp:4650
+#: kstars_i18n.cpp:4649
 msgctxt "Satellite group name"
 msgid "Raduga"
 msgstr ""
 
-#: kstars_i18n.cpp:4651
+#: kstars_i18n.cpp:4650
 msgctxt "Satellite group name"
 msgid "Molniya"
 msgstr ""
 
-#: kstars_i18n.cpp:4652
+#: kstars_i18n.cpp:4651
 msgctxt "Satellite group name"
 msgid "Iridium"
 msgstr ""
 
-#: kstars_i18n.cpp:4653
+#: kstars_i18n.cpp:4652
 msgctxt "Satellite group name"
 msgid "Orbcomm"
 msgstr ""
 
-#: kstars_i18n.cpp:4654
+#: kstars_i18n.cpp:4653
 #, fuzzy
 #| msgid "Globular Cluster"
 msgctxt "Satellite group name"
 msgid "Globalstar"
 msgstr "Глобално јато"
 
-#: kstars_i18n.cpp:4655
+#: kstars_i18n.cpp:4654
 msgctxt "Satellite group name"
 msgid "Amateur Radio"
 msgstr ""
 
-#: kstars_i18n.cpp:4656
+#: kstars_i18n.cpp:4655
 msgctxt "Satellite group name"
 msgid "Experimental"
 msgstr ""
 
-#: kstars_i18n.cpp:4657
+#: kstars_i18n.cpp:4656
 #, fuzzy
 msgctxt "Satellite group name"
 msgid "Other"
 msgstr "Прикажи име"
 
-#: kstars_i18n.cpp:4658
+#: kstars_i18n.cpp:4657
 #, fuzzy
 msgctxt "Satellite group name"
 msgid "GPS Operational"
 msgstr "Trenton"
 
-#: kstars_i18n.cpp:4659
+#: kstars_i18n.cpp:4658
 msgctxt "Satellite group name"
 msgid "Glonass Operational"
 msgstr ""
 
-#: kstars_i18n.cpp:4660
+#: kstars_i18n.cpp:4659
 msgctxt "Satellite group name"
 msgid "Galileo"
 msgstr ""
 
-#: kstars_i18n.cpp:4661
+#: kstars_i18n.cpp:4660
 msgctxt "Satellite group name"
 msgid "Satellite-Based Augmentation System (WAAS/EGNOS/MSAS)"
 msgstr ""
 
-#: kstars_i18n.cpp:4662
+#: kstars_i18n.cpp:4661
 msgctxt "Satellite group name"
 msgid "Navy Navigation Satellite System (NNSS)"
 msgstr ""
 
-#: kstars_i18n.cpp:4663
+#: kstars_i18n.cpp:4662
 msgctxt "Satellite group name"
 msgid "Russian LEO Navigation"
 msgstr ""
 
-#: kstars_i18n.cpp:4664
+#: kstars_i18n.cpp:4663
 msgctxt "Satellite group name"
 msgid "Space & Earth Science"
 msgstr ""
 
-#: kstars_i18n.cpp:4665
+#: kstars_i18n.cpp:4664
 msgctxt "Satellite group name"
 msgid "Geodetic"
 msgstr ""
 
-#: kstars_i18n.cpp:4666
+#: kstars_i18n.cpp:4665
 msgctxt "Satellite group name"
 msgid "Engineering"
 msgstr ""
 
-#: kstars_i18n.cpp:4667
+#: kstars_i18n.cpp:4666
 #, fuzzy
 msgctxt "Satellite group name"
 msgid "Education"
 msgstr "ОПЃ:"
 
-#: kstars_i18n.cpp:4668
+#: kstars_i18n.cpp:4667
 msgctxt "Satellite group name"
 msgid "Miscellaneous Military"
 msgstr ""
 
-#: kstars_i18n.cpp:4669
+#: kstars_i18n.cpp:4668
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Caliente"
@@ -46146,1032 +46145,1032 @@ msgctxt "Satellite group name"
 msgid "Radar Calibration"
 msgstr "Калиенте"
 
-#: kstars_i18n.cpp:4670
+#: kstars_i18n.cpp:4669
 msgctxt "Satellite group name"
 msgid "CubeSats"
 msgstr ""
 
-#: kstars_i18n.cpp:4671
+#: kstars_i18n.cpp:4670
 msgctxt "Satellite group name"
 msgid "Other Miscellaneous"
 msgstr ""
 
-#: kstars_i18n.cpp:4672
+#: kstars_i18n.cpp:4671
 msgctxt "Satellite group name"
 msgid "Supplemental GPS"
 msgstr ""
 
-#: kstars_i18n.cpp:4673
+#: kstars_i18n.cpp:4672
 msgctxt "Satellite group name"
 msgid "Supplemental GLONASS"
 msgstr ""
 
-#: kstars_i18n.cpp:4674
+#: kstars_i18n.cpp:4673
 msgctxt "Satellite group name"
 msgid "Supplemental METEOSAT"
 msgstr ""
 
-#: kstars_i18n.cpp:4675
+#: kstars_i18n.cpp:4674
 msgctxt "Satellite group name"
 msgid "Supplemental INTELSAT"
 msgstr ""
 
-#: kstars_i18n.cpp:4676
+#: kstars_i18n.cpp:4675
 msgctxt "Satellite group name"
 msgid "Supplemental ORBCOMM"
 msgstr ""
 
-#: kstars_i18n.cpp:4677
+#: kstars_i18n.cpp:4676
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "47 Tucanae"
 msgstr "ЦЕТУС"
 
-#: kstars_i18n.cpp:4678
+#: kstars_i18n.cpp:4677
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Andromeda Galaxy"
 msgstr "АУРИГА"
 
-#: kstars_i18n.cpp:4679
+#: kstars_i18n.cpp:4678
 #, fuzzy
 #| msgid "Planetary Nebula"
 msgctxt "object name (optional)"
 msgid "Antares Nebula"
 msgstr "Планетарен облак"
 
-#: kstars_i18n.cpp:4680
+#: kstars_i18n.cpp:4679
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Antennae Galaxies"
 msgstr "АУРИГА"
 
-#: kstars_i18n.cpp:4681
+#: kstars_i18n.cpp:4680
 msgctxt "object name (optional)"
 msgid "Atoms for Peace Galaxy"
 msgstr ""
 
-#: kstars_i18n.cpp:4682
+#: kstars_i18n.cpp:4681
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Barnard's Galaxy"
 msgstr "ГРУС"
 
-#: kstars_i18n.cpp:4683
+#: kstars_i18n.cpp:4682
 msgctxt "object name (optional)"
 msgid "Baxendell's unphotographable nebula (Non-existent)"
 msgstr ""
 
-#: kstars_i18n.cpp:4684
+#: kstars_i18n.cpp:4683
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Bear Claw Galaxy"
 msgstr "ЦИГНУС"
 
-#: kstars_i18n.cpp:4685
+#: kstars_i18n.cpp:4684
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Black-Eye Galaxy"
 msgstr "БУТЕС"
 
-#: kstars_i18n.cpp:4686
+#: kstars_i18n.cpp:4685
 msgctxt "object name (optional)"
 msgid "Blinking Planetary"
 msgstr ""
 
-#: kstars_i18n.cpp:4687
+#: kstars_i18n.cpp:4686
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Blue Flash Nebula"
 msgstr "ФОРНАКС"
 
-#: kstars_i18n.cpp:4688
+#: kstars_i18n.cpp:4687
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Blue Planetary"
 msgstr "ПАВО"
 
-#: kstars_i18n.cpp:4689
+#: kstars_i18n.cpp:4688
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Blue Racquetball"
 msgstr "БУТЕС"
 
-#: kstars_i18n.cpp:4690
+#: kstars_i18n.cpp:4689
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Blue Snowball"
 msgstr "БУТЕС"
 
-#: kstars_i18n.cpp:4691
+#: kstars_i18n.cpp:4690
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Bode's Galaxy"
 msgstr "ГРУС"
 
-#: kstars_i18n.cpp:4692
+#: kstars_i18n.cpp:4691
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Bow-Tie Nebula"
 msgstr "ЛИНКС"
 
-#: kstars_i18n.cpp:4693
+#: kstars_i18n.cpp:4692
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Box Galaxies"
 msgstr "ГРУС"
 
-#: kstars_i18n.cpp:4694
+#: kstars_i18n.cpp:4693
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Box Nebula"
 msgstr "ЛИНКС"
 
-#: kstars_i18n.cpp:4695
+#: kstars_i18n.cpp:4694
 msgctxt "object name (optional)"
 msgid "Brocchi's Cluster, Coathanger Asterism"
 msgstr ""
 
-#: kstars_i18n.cpp:4696
+#: kstars_i18n.cpp:4695
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Bubble Nebula"
 msgstr "ЛИНКС"
 
-#: kstars_i18n.cpp:4697
+#: kstars_i18n.cpp:4696
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Bug Nebula"
 msgstr "ЛИНКС"
 
-#: kstars_i18n.cpp:4698
+#: kstars_i18n.cpp:4697
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Butterfly Cluster"
 msgstr "КРУКС"
 
-#: kstars_i18n.cpp:4699
+#: kstars_i18n.cpp:4698
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "California Nebula"
 msgstr "ТУКАНА"
 
-#: kstars_i18n.cpp:4700
+#: kstars_i18n.cpp:4699
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Camel's Eye Nebula"
 msgstr "ЦЕТУС"
 
-#: kstars_i18n.cpp:4701
+#: kstars_i18n.cpp:4700
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Carafe Group"
 msgstr "ЦИГНУС"
 
-#: kstars_i18n.cpp:4702
+#: kstars_i18n.cpp:4701
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Caroline's Cluster"
 msgstr "РИБИ"
 
-#: kstars_i18n.cpp:4703
+#: kstars_i18n.cpp:4702
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Cat's Eye Nebula"
 msgstr "ЦЕТУС"
 
-#: kstars_i18n.cpp:4704
+#: kstars_i18n.cpp:4703
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Cat's Paw Nebula"
 msgstr "ЦЕТУС"
 
-#: kstars_i18n.cpp:4705
+#: kstars_i18n.cpp:4704
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Centaurus A"
 msgstr "МУСКА"
 
-#: kstars_i18n.cpp:4706
+#: kstars_i18n.cpp:4705
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Centaurus Chain"
 msgstr "МУСКА"
 
-#: kstars_i18n.cpp:4707
+#: kstars_i18n.cpp:4706
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Cetus A"
 msgstr "МУСКА"
 
-#: kstars_i18n.cpp:4708
+#: kstars_i18n.cpp:4707
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Cheerio Nebula"
 msgstr "ОРИОН"
 
-#: kstars_i18n.cpp:4709
+#: kstars_i18n.cpp:4708
 msgctxt "object name (optional)"
 msgid "Chi Persei, Double Cluster"
 msgstr ""
 
-#: kstars_i18n.cpp:4710
+#: kstars_i18n.cpp:4709
 msgctxt "object name (optional)"
 msgid "Christmas Tree Cluster"
 msgstr ""
 
-#: kstars_i18n.cpp:4711
+#: kstars_i18n.cpp:4710
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Cigar Galaxy, Ursa Major A"
 msgstr "ГОЛЕМА МЕЧКА"
 
-#: kstars_i18n.cpp:4712
+#: kstars_i18n.cpp:4711
 msgctxt "object name (optional)"
 msgid "Cleopatra's Eye"
 msgstr ""
 
-#: kstars_i18n.cpp:4713
+#: kstars_i18n.cpp:4712
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Cocoon Galaxy"
 msgstr "РАК"
 
-#: kstars_i18n.cpp:4714
+#: kstars_i18n.cpp:4713
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Cocoon Nebula"
 msgstr "РАК"
 
-#: kstars_i18n.cpp:4715
+#: kstars_i18n.cpp:4714
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Coddington Nebula"
 msgstr "ТУКАНА"
 
-#: kstars_i18n.cpp:4716
+#: kstars_i18n.cpp:4715
 msgctxt "object name (optional)"
 msgid "Cooling Tower"
 msgstr ""
 
-#: kstars_i18n.cpp:4717
+#: kstars_i18n.cpp:4716
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Copeland Septet"
 msgstr "ЦЕТУС"
 
-#: kstars_i18n.cpp:4718
+#: kstars_i18n.cpp:4717
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Crab Nebula"
 msgstr "РАК"
 
-#: kstars_i18n.cpp:4719
+#: kstars_i18n.cpp:4718
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Crescent Nebula"
 msgstr "РАК"
 
-#: kstars_i18n.cpp:4720
+#: kstars_i18n.cpp:4719
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Delle Caustiche"
 msgstr "ДРАКО"
 
-#: kstars_i18n.cpp:4721
+#: kstars_i18n.cpp:4720
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "De Mairan's Nebula"
 msgstr "МЕНСА"
 
-#: kstars_i18n.cpp:4722
+#: kstars_i18n.cpp:4721
 #, fuzzy
 #| msgid "globular cluster"
 msgctxt "object name (optional)"
 msgid "Dragonfly Cluster"
 msgstr "глобално јато"
 
-#: kstars_i18n.cpp:4723
+#: kstars_i18n.cpp:4722
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Dumbbell Nebula"
 msgstr "ЛИНКС"
 
-#: kstars_i18n.cpp:4724
+#: kstars_i18n.cpp:4723
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Eagle Nebula"
 msgstr "МЕНСА"
 
-#: kstars_i18n.cpp:4725
+#: kstars_i18n.cpp:4724
 msgctxt "object name (optional)"
 msgid "Eight-Burst Planetary"
 msgstr ""
 
-#: kstars_i18n.cpp:4726
+#: kstars_i18n.cpp:4725
 #, fuzzy
 #| msgid "Globular Cluster"
 msgctxt "object name (optional)"
 msgid "Electric Guitar Cluster"
 msgstr "Глобално јато"
 
-#: kstars_i18n.cpp:4727
+#: kstars_i18n.cpp:4726
 msgctxt "object name (optional)"
 msgid "Elephant Trunk"
 msgstr ""
 
-#: kstars_i18n.cpp:4728
+#: kstars_i18n.cpp:4727
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Epsilon Orionis Nebula"
 msgstr "МАЛ ЛАВ"
 
-#: kstars_i18n.cpp:4729
+#: kstars_i18n.cpp:4728
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Eskimo Nebula"
 msgstr "МЕНСА"
 
-#: kstars_i18n.cpp:4730
+#: kstars_i18n.cpp:4729
 msgctxt "object name (optional)"
 msgid "Eta Carina, Keyhole Nebula"
 msgstr ""
 
-#: kstars_i18n.cpp:4731
+#: kstars_i18n.cpp:4730
 #, fuzzy
 #| msgid "Gaseous Nebula"
 msgctxt "object name (optional)"
 msgid "Fetus Nebula"
 msgstr "Гасен облак"
 
-#: kstars_i18n.cpp:4732
+#: kstars_i18n.cpp:4731
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Fireworks Galaxy"
 msgstr "САГИТА"
 
-#: kstars_i18n.cpp:4733
+#: kstars_i18n.cpp:4732
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Flame Nebula"
 msgstr "МЕНСА"
 
-#: kstars_i18n.cpp:4734
+#: kstars_i18n.cpp:4733
 msgctxt "object name (optional)"
 msgid "Flaming Star Nebula"
 msgstr ""
 
-#: kstars_i18n.cpp:4735
+#: kstars_i18n.cpp:4734
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Fornax A"
 msgstr "АРА"
 
-#: kstars_i18n.cpp:4736
+#: kstars_i18n.cpp:4735
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Fornax B"
 msgstr "АРА"
 
-#: kstars_i18n.cpp:4737
+#: kstars_i18n.cpp:4736
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Fried-egg Galaxy"
 msgstr "САГИТА"
 
-#: kstars_i18n.cpp:4738
+#: kstars_i18n.cpp:4737
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Gamma Cas Nebula"
 msgstr "ТУКАНА"
 
-#: kstars_i18n.cpp:4739
+#: kstars_i18n.cpp:4738
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Gamma Cyg Nebula"
 msgstr "ТУКАНА"
 
-#: kstars_i18n.cpp:4740
+#: kstars_i18n.cpp:4739
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Gamma Leonis Group"
 msgstr "ЦИГНУС"
 
-#: kstars_i18n.cpp:4741
+#: kstars_i18n.cpp:4740
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Gem Cluster"
 msgstr "КРУКС"
 
-#: kstars_i18n.cpp:4742
+#: kstars_i18n.cpp:4741
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Ghost Head Nebula"
 msgstr "ФЕНИКС"
 
-#: kstars_i18n.cpp:4743
+#: kstars_i18n.cpp:4742
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Ghost of Jupiter"
 msgstr "ГРУС"
 
-#: kstars_i18n.cpp:4744
+#: kstars_i18n.cpp:4743
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Grand Design Galaxy"
 msgstr "ГРУС"
 
-#: kstars_i18n.cpp:4745
+#: kstars_i18n.cpp:4744
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Grus Quartet"
 msgstr "ГРУС"
 
-#: kstars_i18n.cpp:4746
+#: kstars_i18n.cpp:4745
 #, fuzzy
 #| msgid "planetary nebula"
 msgctxt "object name (optional)"
 msgid "Heart Nebula"
 msgstr "планетарна маглина"
 
-#: kstars_i18n.cpp:4747
+#: kstars_i18n.cpp:4746
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Heart-Shaped Cluster"
 msgstr "КРУКС"
 
-#: kstars_i18n.cpp:4748
+#: kstars_i18n.cpp:4747
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Helix"
 msgstr "ХИДРА"
 
-#: kstars_i18n.cpp:4749
+#: kstars_i18n.cpp:4748
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Helix Galaxy"
 msgstr "ГРУС"
 
-#: kstars_i18n.cpp:4750
+#: kstars_i18n.cpp:4749
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Helix Nebula"
 msgstr "ФЕНИКС"
 
-#: kstars_i18n.cpp:4751
+#: kstars_i18n.cpp:4750
 #, fuzzy
 #| msgid "Globular Cluster"
 msgctxt "object name (optional)"
 msgid "Hercules Globular Cluster"
 msgstr "Глобално јато"
 
-#: kstars_i18n.cpp:4752
+#: kstars_i18n.cpp:4751
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Herschel's Ray"
 msgstr "ХИДРА"
 
-#: kstars_i18n.cpp:4753
+#: kstars_i18n.cpp:4752
 msgctxt "object name (optional)"
 msgid "Hind's Variable Nebula"
 msgstr ""
 
-#: kstars_i18n.cpp:4754
+#: kstars_i18n.cpp:4753
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Hockey Stick Galaxies"
 msgstr "САГИТА"
 
-#: kstars_i18n.cpp:4755
+#: kstars_i18n.cpp:4754
 #, fuzzy
 #| msgid "open cluster"
 msgctxt "object name (optional)"
 msgid "Hole in a cluster"
 msgstr "отворено јато"
 
-#: kstars_i18n.cpp:4756
+#: kstars_i18n.cpp:4755
 msgctxt "object name (optional)"
 msgid "Holmberg VI"
 msgstr ""
 
-#: kstars_i18n.cpp:4757
+#: kstars_i18n.cpp:4756
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Horsehead Nebula"
 msgstr "ФЕНИКС"
 
-#: kstars_i18n.cpp:4758
+#: kstars_i18n.cpp:4757
 msgctxt "object name (optional)"
 msgid "H Persei, Double Cluster"
 msgstr ""
 
-#: kstars_i18n.cpp:4759
+#: kstars_i18n.cpp:4758
 msgctxt "object name (optional)"
 msgid "Hubble's Variable Nebula"
 msgstr ""
 
-#: kstars_i18n.cpp:4760
+#: kstars_i18n.cpp:4759
 msgctxt "object name (optional)"
 msgid "Intergalactic Wanderer"
 msgstr ""
 
-#: kstars_i18n.cpp:4761
+#: kstars_i18n.cpp:4760
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Jellyfish Nebula"
 msgstr "ФЕНИКС"
 
-#: kstars_i18n.cpp:4762
+#: kstars_i18n.cpp:4761
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Jewel Box"
 msgstr "ВАГА"
 
-#: kstars_i18n.cpp:4763
+#: kstars_i18n.cpp:4762
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Keenan's System"
 msgstr "АПУС"
 
-#: kstars_i18n.cpp:4764
+#: kstars_i18n.cpp:4763
 msgctxt "object name (optional)"
 msgid "Kidney Bean Galaxy"
 msgstr ""
 
-#: kstars_i18n.cpp:4765
+#: kstars_i18n.cpp:4764
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Lagoon Nebula"
 msgstr "ЛИНКС"
 
-#: kstars_i18n.cpp:4766
+#: kstars_i18n.cpp:4765
 msgctxt "object name (optional)"
 msgid "Large Magellanic Cloud"
 msgstr ""
 
-#: kstars_i18n.cpp:4767
+#: kstars_i18n.cpp:4766
 msgctxt "object name (optional)"
 msgid "Leo Triplet"
 msgstr ""
 
-#: kstars_i18n.cpp:4768
+#: kstars_i18n.cpp:4767
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Little Dumbbell Nebula"
 msgstr "ЛИНКС"
 
-#: kstars_i18n.cpp:4769
+#: kstars_i18n.cpp:4768
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Little Gem"
 msgstr "ЛАВ"
 
-#: kstars_i18n.cpp:4770
+#: kstars_i18n.cpp:4769
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Little Ghost Nebula"
 msgstr "ЛИНКС"
 
-#: kstars_i18n.cpp:4771
+#: kstars_i18n.cpp:4770
 msgctxt "object name (optional)"
 msgid "Lobster Nebula; War and Peace Nebula"
 msgstr ""
 
-#: kstars_i18n.cpp:4772
+#: kstars_i18n.cpp:4771
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Maia Nebula"
 msgstr "МЕНСА"
 
-#: kstars_i18n.cpp:4773
+#: kstars_i18n.cpp:4772
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Markarian Chain"
 msgstr "МУСКА"
 
-#: kstars_i18n.cpp:4774
+#: kstars_i18n.cpp:4773
 #, fuzzy
 #| msgid "Messier objects"
 msgctxt "object name (optional)"
 msgid "McLeish's Object"
 msgstr "Нејасни објекти"
 
-#: kstars_i18n.cpp:4775
+#: kstars_i18n.cpp:4774
 msgctxt "object name (optional)"
 msgid "Melotte 111, Coma Star Cluster"
 msgstr ""
 
-#: kstars_i18n.cpp:4776
+#: kstars_i18n.cpp:4775
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Merope Nebula"
 msgstr "МЕНСА"
 
-#: kstars_i18n.cpp:4777
+#: kstars_i18n.cpp:4776
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Miniature Spiral"
 msgstr "МЕНСА"
 
-#: kstars_i18n.cpp:4778
+#: kstars_i18n.cpp:4777
 msgctxt "object name (optional)"
 msgid "Mirach's Ghost (Galaxy not found :)"
 msgstr ""
 
-#: kstars_i18n.cpp:4779
+#: kstars_i18n.cpp:4778
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Monkey Head Nebula"
 msgstr "ФЕНИКС"
 
-#: kstars_i18n.cpp:4780
+#: kstars_i18n.cpp:4779
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Mu Normae Cluster"
 msgstr "КРУКС"
 
-#: kstars_i18n.cpp:4781
+#: kstars_i18n.cpp:4780
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Needle Galaxy"
 msgstr "САГИТА"
 
-#: kstars_i18n.cpp:4782
+#: kstars_i18n.cpp:4781
 msgctxt "object name (optional)"
 msgid "North American Nebula"
 msgstr ""
 
-#: kstars_i18n.cpp:4783
+#: kstars_i18n.cpp:4782
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Northern Jewel Box"
 msgstr "ВАГА"
 
-#: kstars_i18n.cpp:4784
+#: kstars_i18n.cpp:4783
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Omega Centauri"
 msgstr "ОКТАНС"
 
-#: kstars_i18n.cpp:4785
+#: kstars_i18n.cpp:4784
 msgctxt "object name (optional)"
 msgid "Omicron Velorum Cluster"
 msgstr ""
 
-#: kstars_i18n.cpp:4786
+#: kstars_i18n.cpp:4785
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Orion Nebula"
 msgstr "ОРИОН"
 
-#: kstars_i18n.cpp:4787
+#: kstars_i18n.cpp:4786
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Owl Nebula"
 msgstr "ОРИОН"
 
-#: kstars_i18n.cpp:4788
+#: kstars_i18n.cpp:4787
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Pacman Nebula"
 msgstr "ФЕНИКС"
 
-#: kstars_i18n.cpp:4789
+#: kstars_i18n.cpp:4788
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Papillon Galaxy"
 msgstr "ПЕГАС"
 
-#: kstars_i18n.cpp:4790
+#: kstars_i18n.cpp:4789
 msgctxt "object name (optional)"
 msgid "(part of Rho Ophiuchi complex)"
 msgstr ""
 
-#: kstars_i18n.cpp:4791
+#: kstars_i18n.cpp:4790
 #, fuzzy
 #| msgid "Globular Cluster"
 msgctxt "object name (optional)"
 msgid "Pavo Globular Cluster"
 msgstr "Глобално јато"
 
-#: kstars_i18n.cpp:4792
+#: kstars_i18n.cpp:4791
 #, fuzzy
 #| msgid "Star Clusters"
 msgctxt "object name (optional)"
 msgid "Pearl Cluster"
 msgstr "Ѕвездени јата"
 
-#: kstars_i18n.cpp:4793
+#: kstars_i18n.cpp:4792
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Pelican Nebula"
 msgstr "ФЕНИКС"
 
-#: kstars_i18n.cpp:4794
+#: kstars_i18n.cpp:4793
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Perseus A"
 msgstr "ПАВО"
 
-#: kstars_i18n.cpp:4795
+#: kstars_i18n.cpp:4794
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Pinwheel Galaxy"
 msgstr "ПЕГАС"
 
-#: kstars_i18n.cpp:4796
+#: kstars_i18n.cpp:4795
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Pipe Nebula"
 msgstr "ФЕНИКС"
 
-#: kstars_i18n.cpp:4797
+#: kstars_i18n.cpp:4796
 msgctxt "object name (optional)"
 msgid "Pisces Cloud"
 msgstr ""
 
-#: kstars_i18n.cpp:4798
+#: kstars_i18n.cpp:4797
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Pleiades"
 msgstr "ПАВО"
 
-#: kstars_i18n.cpp:4799
+#: kstars_i18n.cpp:4798
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Polarissima Australis"
 msgstr "Австралија"
 
-#: kstars_i18n.cpp:4800
+#: kstars_i18n.cpp:4799
 msgctxt "object name (optional)"
 msgid "Polarissima Borealis"
 msgstr ""
 
-#: kstars_i18n.cpp:4801
+#: kstars_i18n.cpp:4800
 msgctxt "object name (optional)"
 msgid "Praesepe, Beehive Cluster"
 msgstr ""
 
-#: kstars_i18n.cpp:4802
+#: kstars_i18n.cpp:4801
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Prawn Nebula"
 msgstr "ЛИНКС"
 
-#: kstars_i18n.cpp:4803
+#: kstars_i18n.cpp:4802
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Ptolemy's Cluster"
 msgstr "РИБИ"
 
-#: kstars_i18n.cpp:4804
+#: kstars_i18n.cpp:4803
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Red Spider Nebula"
 msgstr "МЕНСА"
 
-#: kstars_i18n.cpp:4805
+#: kstars_i18n.cpp:4804
 msgctxt "object name (optional)"
 msgid "Reinmuth 80"
 msgstr ""
 
-#: kstars_i18n.cpp:4806
+#: kstars_i18n.cpp:4805
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Retina Nebula"
 msgstr "ОРИОН"
 
-#: kstars_i18n.cpp:4807
+#: kstars_i18n.cpp:4806
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Rho Ophiuchi Nebula"
 msgstr "ОРИОН"
 
-#: kstars_i18n.cpp:4808
+#: kstars_i18n.cpp:4807
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Rim Nebula"
 msgstr "ОРИОН"
 
-#: kstars_i18n.cpp:4809
+#: kstars_i18n.cpp:4808
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Ring Nebula"
 msgstr "ОРИОН"
 
-#: kstars_i18n.cpp:4810
+#: kstars_i18n.cpp:4809
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Rosette Nebula"
 msgstr "ОРИОН"
 
-#: kstars_i18n.cpp:4811
+#: kstars_i18n.cpp:4810
 msgctxt "object name (optional)"
 msgid "Running Chicken Nebula"
 msgstr ""
 
-#: kstars_i18n.cpp:4812
+#: kstars_i18n.cpp:4811
 #, fuzzy
 #| msgid "Globular Cluster"
 msgctxt "object name (optional)"
 msgid "Sailboat Cluster"
 msgstr "Глобално јато"
 
-#: kstars_i18n.cpp:4813
+#: kstars_i18n.cpp:4812
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Satellite Cluster"
 msgstr "Pontevedra"
 
-#: kstars_i18n.cpp:4814
+#: kstars_i18n.cpp:4813
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Saturn Nebula"
 msgstr "МАЛА МЕЧКА"
 
-#: kstars_i18n.cpp:4815
+#: kstars_i18n.cpp:4814
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Sculptor Galaxy, Silver Dollar"
 msgstr "САГИТА"
 
-#: kstars_i18n.cpp:4816
+#: kstars_i18n.cpp:4815
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Seagull Nebula"
 msgstr "ЛИНКС"
 
-#: kstars_i18n.cpp:4817
+#: kstars_i18n.cpp:4816
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Seyfert's Sextet"
 msgstr "САГИТА"
 
-#: kstars_i18n.cpp:4818
+#: kstars_i18n.cpp:4817
 msgctxt "object name (optional)"
 msgid "Shapley-Ames 2"
 msgstr ""
 
-#: kstars_i18n.cpp:4819
+#: kstars_i18n.cpp:4818
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Siamese Twins"
 msgstr "СКУТУМ"
 
-#: kstars_i18n.cpp:4820
+#: kstars_i18n.cpp:4819
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Skull and Crossbones Nebula"
 msgstr "ЛИНКС"
 
-#: kstars_i18n.cpp:4821
+#: kstars_i18n.cpp:4820
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Skull Nebula"
 msgstr "ЛИНКС"
 
-#: kstars_i18n.cpp:4822
+#: kstars_i18n.cpp:4821
 msgctxt "object name (optional)"
 msgid "Small Magellanic Cloud"
 msgstr ""
 
-#: kstars_i18n.cpp:4823
+#: kstars_i18n.cpp:4822
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Sombrero Galaxy"
 msgstr "САГИТА"
 
-#: kstars_i18n.cpp:4824
+#: kstars_i18n.cpp:4823
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Soul Nebula"
 msgstr "ОРИОН"
 
-#: kstars_i18n.cpp:4825
+#: kstars_i18n.cpp:4824
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Southern Integral Galaxy"
 msgstr "Бугарија"
 
-#: kstars_i18n.cpp:4826
+#: kstars_i18n.cpp:4825
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Southern Pinwheel Galaxy"
 msgstr "Бугарија"
 
-#: kstars_i18n.cpp:4827
+#: kstars_i18n.cpp:4826
 msgctxt "object name (optional)"
 msgid "Southern Pleiades; Theta Carinae Cluster"
 msgstr ""
 
-#: kstars_i18n.cpp:4828
+#: kstars_i18n.cpp:4827
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Spindle"
 msgstr "АПУС"
 
-#: kstars_i18n.cpp:4829
+#: kstars_i18n.cpp:4828
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Spindle Galaxy"
 msgstr "САГИТА"
 
-#: kstars_i18n.cpp:4830
+#: kstars_i18n.cpp:4829
 #, fuzzy
 #| msgid "Planetary Nebula"
 msgctxt "object name (optional)"
 msgid "Spiral Planetary Nebula"
 msgstr "Планетарен облак"
 
-#: kstars_i18n.cpp:4831
+#: kstars_i18n.cpp:4830
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Spirograph Nebula"
 msgstr "МЕНСА"
 
-#: kstars_i18n.cpp:4832
+#: kstars_i18n.cpp:4831
 #, fuzzy
 #| msgid "Star Clusters"
 msgctxt "object name (optional)"
 msgid "Starfish Cluster"
 msgstr "Ѕвездени јата"
 
-#: kstars_i18n.cpp:4833
+#: kstars_i18n.cpp:4832
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Star Queen Nebula"
 msgstr "МАЛА МЕЧКА"
 
-#: kstars_i18n.cpp:4834
+#: kstars_i18n.cpp:4833
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Stephan's Quintet"
 msgstr "ГРУС"
 
-#: kstars_i18n.cpp:4835
+#: kstars_i18n.cpp:4834
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Struve's Lost Nebula"
 msgstr "ЛИНКС"
 
-#: kstars_i18n.cpp:4836
+#: kstars_i18n.cpp:4835
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Sunflower Galaxy"
 msgstr "САГИТА"
 
-#: kstars_i18n.cpp:4837
+#: kstars_i18n.cpp:4836
 #, fuzzy
 #| msgid "Supernova Remnant"
 msgctxt "object name (optional)"
 msgid "Supernova Factory"
 msgstr "Остатоци од Супернова"
 
-#: kstars_i18n.cpp:4838
+#: kstars_i18n.cpp:4837
 msgctxt "object name (optional)"
 msgid "Swan Nebula, Omega Nebula"
 msgstr ""
 
-#: kstars_i18n.cpp:4839
+#: kstars_i18n.cpp:4838
 msgctxt "object name (optional)"
 msgid "Tarantula Nebula, 30 Doradus"
 msgstr ""
 
-#: kstars_i18n.cpp:4840
+#: kstars_i18n.cpp:4839
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Tau Canis Majoris Cluster"
 msgstr "РИБИ"
 
-#: kstars_i18n.cpp:4841
+#: kstars_i18n.cpp:4840
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "The 37 Cluster"
 msgstr "КРУКС"
 
-#: kstars_i18n.cpp:4842
+#: kstars_i18n.cpp:4841
 msgctxt "object name (optional)"
 msgid "The Guitar"
 msgstr ""
 
-#: kstars_i18n.cpp:4843
+#: kstars_i18n.cpp:4842
 msgctxt "object name (optional)"
 msgid "The Guitar, has Ambartsumian's Knot"
 msgstr ""
 
-#: kstars_i18n.cpp:4844
+#: kstars_i18n.cpp:4843
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "The Lost Galaxy"
 msgstr "САГИТА"
 
-#: kstars_i18n.cpp:4845
+#: kstars_i18n.cpp:4844
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "The Mice Galaxies"
 msgstr "САГИТА"
 
-#: kstars_i18n.cpp:4846
+#: kstars_i18n.cpp:4845
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "The Pas"
@@ -47179,255 +47178,255 @@ msgctxt "object name (optional)"
 msgid "The Phantom"
 msgstr "The Pas"
 
-#: kstars_i18n.cpp:4847
+#: kstars_i18n.cpp:4846
 msgctxt "object name (optional)"
 msgid "Thor's Helmet"
 msgstr ""
 
-#: kstars_i18n.cpp:4848
+#: kstars_i18n.cpp:4847
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Toby Jug Nebula"
 msgstr "ЛИНКС"
 
-#: kstars_i18n.cpp:4849
+#: kstars_i18n.cpp:4848
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Triangulum Galaxy"
 msgstr "ГРУС"
 
-#: kstars_i18n.cpp:4850
+#: kstars_i18n.cpp:4849
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Trifid Nebula"
 msgstr "ОКТАНС"
 
-#: kstars_i18n.cpp:4851
+#: kstars_i18n.cpp:4850
 #, fuzzy
 #| msgid "Planetary Nebula"
 msgctxt "object name (optional)"
 msgid "Turtle Planetary Nebula"
 msgstr "Планетарен облак"
 
-#: kstars_i18n.cpp:4852
+#: kstars_i18n.cpp:4851
 msgctxt "object name (optional)"
 msgid "Veil Nebula (Network Nebula fragment)"
 msgstr ""
 
-#: kstars_i18n.cpp:4853
+#: kstars_i18n.cpp:4852
 msgctxt "object name (optional)"
 msgid "Veil Nebula (Pickering's Triangle fragment)"
 msgstr ""
 
-#: kstars_i18n.cpp:4854
+#: kstars_i18n.cpp:4853
 msgctxt "object name (optional)"
 msgid "Veil Nebula (Witch's Broom fragment)"
 msgstr ""
 
-#: kstars_i18n.cpp:4855
+#: kstars_i18n.cpp:4854
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Virgo A"
 msgstr "ВЕЛА"
 
-#: kstars_i18n.cpp:4856
+#: kstars_i18n.cpp:4855
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Whale Galaxy"
 msgstr "САГИТА"
 
-#: kstars_i18n.cpp:4857
+#: kstars_i18n.cpp:4856
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Whirlpool Galaxy"
 msgstr "ГРУС"
 
-#: kstars_i18n.cpp:4858
+#: kstars_i18n.cpp:4857
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "White-Eyed Pea"
 msgstr "ЛЕПУС"
 
-#: kstars_i18n.cpp:4859
+#: kstars_i18n.cpp:4858
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Wild Duck Cluster"
 msgstr "ДРАКО"
 
-#: kstars_i18n.cpp:4860
+#: kstars_i18n.cpp:4859
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Witch Head Nebula"
 msgstr "ФЕНИКС"
 
-#: kstars_i18n.cpp:4861
+#: kstars_i18n.cpp:4860
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Wizard Nebula"
 msgstr "МЕНСА"
 
-#: kstars_i18n.cpp:4862
+#: kstars_i18n.cpp:4861
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Zwicky's Triplet"
 msgstr "ЦЕТУС"
 
-#: kstars_i18n.cpp:4863
+#: kstars_i18n.cpp:4862
 msgctxt "Advanced URLs: description or category"
 msgid "Simbad"
 msgstr ""
 
-#: kstars_i18n.cpp:4864
+#: kstars_i18n.cpp:4863
 msgctxt "Advanced URLs: description or category"
 msgid "Aladin"
 msgstr ""
 
-#: kstars_i18n.cpp:4865
+#: kstars_i18n.cpp:4864
 msgctxt "Advanced URLs: description or category"
 msgid "Skyview"
 msgstr ""
 
-#: kstars_i18n.cpp:4866
+#: kstars_i18n.cpp:4865
 msgctxt "Advanced URLs: description or category"
 msgid "Gamma-ray"
 msgstr ""
 
-#: kstars_i18n.cpp:4867
+#: kstars_i18n.cpp:4866
 msgctxt "Advanced URLs: description or category"
 msgid "X-ray"
 msgstr ""
 
-#: kstars_i18n.cpp:4868
+#: kstars_i18n.cpp:4867
 msgctxt "Advanced URLs: description or category"
 msgid "EUV"
 msgstr ""
 
-#: kstars_i18n.cpp:4869
+#: kstars_i18n.cpp:4868
 msgctxt "Advanced URLs: description or category"
 msgid "UV"
 msgstr ""
 
-#: kstars_i18n.cpp:4870
+#: kstars_i18n.cpp:4869
 msgctxt "Advanced URLs: description or category"
 msgid "Optical"
 msgstr ""
 
-#: kstars_i18n.cpp:4871
+#: kstars_i18n.cpp:4870
 msgctxt "Advanced URLs: description or category"
 msgid "Infrared"
 msgstr ""
 
-#: kstars_i18n.cpp:4872
+#: kstars_i18n.cpp:4871
 msgctxt "Advanced URLs: description or category"
 msgid "Radio"
 msgstr ""
 
-#: kstars_i18n.cpp:4873
+#: kstars_i18n.cpp:4872
 msgctxt "Advanced URLs: description or category"
 msgid "High Energy Astrophysical Archive (HEASARC)"
 msgstr ""
 
-#: kstars_i18n.cpp:4874
+#: kstars_i18n.cpp:4873
 msgctxt "Advanced URLs: description or category"
 msgid "Recent X-Ray Missions"
 msgstr ""
 
-#: kstars_i18n.cpp:4875
+#: kstars_i18n.cpp:4874
 msgctxt "Advanced URLs: description or category"
 msgid "Past X-ray Mission"
 msgstr ""
 
-#: kstars_i18n.cpp:4876
+#: kstars_i18n.cpp:4875
 msgctxt "Advanced URLs: description or category"
 msgid "Gamma-Ray Missions"
 msgstr ""
 
-#: kstars_i18n.cpp:4877
+#: kstars_i18n.cpp:4876
 msgctxt "Advanced URLs: description or category"
 msgid "Other Missions"
 msgstr ""
 
-#: kstars_i18n.cpp:4878
+#: kstars_i18n.cpp:4877
 msgctxt "Advanced URLs: description or category"
 msgid "Popular Catalog Choices"
 msgstr ""
 
-#: kstars_i18n.cpp:4879
+#: kstars_i18n.cpp:4878
 msgctxt "Advanced URLs: description or category"
 msgid "Multiwavelength Catalogs"
 msgstr ""
 
-#: kstars_i18n.cpp:4880
+#: kstars_i18n.cpp:4879
 msgctxt "Advanced URLs: description or category"
 msgid "NASA Extragalactic Database (NED)"
 msgstr ""
 
-#: kstars_i18n.cpp:4881
+#: kstars_i18n.cpp:4880
 msgctxt "Advanced URLs: description or category"
 msgid "Positions"
 msgstr ""
 
-#: kstars_i18n.cpp:4882
+#: kstars_i18n.cpp:4881
 msgctxt "Advanced URLs: description or category"
 msgid "NASA Astrophysics Data System (ADS)"
 msgstr ""
 
-#: kstars_i18n.cpp:4883
+#: kstars_i18n.cpp:4882
 msgctxt "Advanced URLs: description or category"
 msgid "Astronomy and Astrophysics"
 msgstr ""
 
-#: kstars_i18n.cpp:4884
+#: kstars_i18n.cpp:4883
 msgctxt "Advanced URLs: description or category"
 msgid "Instrumentation"
 msgstr ""
 
-#: kstars_i18n.cpp:4885
+#: kstars_i18n.cpp:4884
 msgctxt "Advanced URLs: description or category"
 msgid "Physics and Geophysics"
 msgstr ""
 
-#: kstars_i18n.cpp:4886
+#: kstars_i18n.cpp:4885
 msgctxt "Advanced URLs: description or category"
 msgid "Astrophysics preprints"
 msgstr ""
 
-#: kstars_i18n.cpp:4887
+#: kstars_i18n.cpp:4886
 msgctxt "Advanced URLs: description or category"
 msgid "Multimission Archive at Space Telescope (MAST)"
 msgstr ""
 
-#: kstars_i18n.cpp:4888
+#: kstars_i18n.cpp:4887
 msgctxt "Advanced URLs: description or category"
 msgid "HST"
 msgstr ""
 
-#: kstars_i18n.cpp:4889
+#: kstars_i18n.cpp:4888
 msgctxt "Advanced URLs: description or category"
 msgid "ASTRO"
 msgstr ""
 
-#: kstars_i18n.cpp:4890
+#: kstars_i18n.cpp:4889
 msgctxt "Advanced URLs: description or category"
 msgid "ORFEUS"
 msgstr ""
 
-#: kstars_i18n.cpp:4891
+#: kstars_i18n.cpp:4890
 msgctxt "Advanced URLs: description or category"
 msgid "COPERNICUS"
 msgstr ""
 
-#: kstars_i18n.cpp:4892
+#: kstars_i18n.cpp:4891
 msgctxt "Advanced URLs: description or category"
 msgid "Images"
 msgstr ""
 
-#: kstars_i18n.cpp:4893
+#: kstars_i18n.cpp:4892
 msgctxt "Advanced URLs: description or category"
 msgid "Spectra"
 msgstr ""
 
-#: kstars_i18n.cpp:4894
+#: kstars_i18n.cpp:4893
 msgctxt "Advanced URLs: description or category"
 msgid "Other"
 msgstr ""
@@ -47496,77 +47495,23 @@ msgstr "KStars::slotFind() - Нема доволно меморија за ди�
 msgid "Export Image"
 msgstr "Екватор"
 
-#: kstarsactions.cpp:846 kstarsactions.cpp:865 kstarsactions.cpp:873
-#: tools/scriptbuilder.cpp:754 tools/scriptbuilder.cpp:816
+#: kstarsactions.cpp:846 tools/scriptbuilder.cpp:754
+#: tools/scriptbuilder.cpp:816
 msgctxt "Filter by file type: KStars Scripts."
 msgid "KStars Scripts (*.kstars)"
 msgstr ""
 
-#: kstarsactions.cpp:854
-msgid ""
-"Warning:  You are about to execute a remote shell script on your machine. "
-msgstr ""
-
 #: kstarsactions.cpp:855
-msgid ""
-"If you absolutely trust the source of this script, press Continue to execute "
-"the script; "
-msgstr ""
-
-#: kstarsactions.cpp:856
-msgid "to save the file without executing it, press Save; "
-msgstr ""
-
-#: kstarsactions.cpp:857
 #, fuzzy
-msgid "to cancel the download, press Cancel. "
-msgstr "За да се отфрли датотеката, притисни Откажи. "
+msgid "Executing remote scripts is not supported."
+msgstr "Пресметај"
 
-#: kstarsactions.cpp:859
-msgid "Really Execute Remote Script?"
-msgstr ""
-
-#: kstarsactions.cpp:871
-msgid "Save location is invalid. Try another location?"
-msgstr ""
-
-#: kstarsactions.cpp:872
-#, fuzzy
-msgid "Invalid Save Location"
-msgstr "Погрешна географска ширина"
-
-#: kstarsactions.cpp:872
-#, fuzzy
-msgid "Try Another"
-msgstr "&Север"
-
-#: kstarsactions.cpp:872 tools/observinglist.cpp:877
-#, fuzzy
-msgid "Do Not Try"
-msgstr "не изгрева"
-
-#: kstarsactions.cpp:900 printing/foveditordialog.cpp:187
-#: printing/pwizprint.cpp:134 tools/scriptbuilder.cpp:866
-#, fuzzy
-msgid "Could not upload file"
-msgstr "Не можам да ја отворам датотеката"
-
-#: kstarsactions.cpp:905
-#, fuzzy
-msgid "Could not download the file."
-msgstr "Не можам да ја избришам датотеката: %1"
-
-#: kstarsactions.cpp:905 tools/scriptbuilder.cpp:771
-#, fuzzy
-msgid "Download Error"
-msgstr "Вчитувам KStars..."
-
-#: kstarsactions.cpp:933 oal/execute.cpp:313 tools/observinglist.cpp:753
+#: kstarsactions.cpp:946 oal/execute.cpp:313 tools/observinglist.cpp:777
 #, fuzzy, kde-format
 msgid "Could not open file %1"
 msgstr "Не можам да ја отворам датотеката"
 
-#: kstarsactions.cpp:959
+#: kstarsactions.cpp:972
 msgid ""
 "The selected script contains unrecognized elements, indicating that it was "
 "not created using the KStars script builder. This script may not function "
@@ -47574,25 +47519,25 @@ msgid ""
 "it anyway?"
 msgstr ""
 
-#: kstarsactions.cpp:963
+#: kstarsactions.cpp:976
 msgid "Script Validation Failed"
 msgstr ""
 
-#: kstarsactions.cpp:963
+#: kstarsactions.cpp:976
 msgid "Run Nevertheless"
 msgstr ""
 
-#: kstarsactions.cpp:968
+#: kstarsactions.cpp:981
 #, fuzzy, kde-format
 #| msgid "Sunset: %1"
 msgid "Running script: %1"
 msgstr "Залез: %1"
 
-#: kstarsactions.cpp:982
+#: kstarsactions.cpp:995
 msgid "Script finished."
 msgstr ""
 
-#: kstarsactions.cpp:991
+#: kstarsactions.cpp:1004
 #, fuzzy
 msgid ""
 "You can save printer ink by using the \"Star Chart\" color scheme, which "
@@ -47604,62 +47549,62 @@ msgstr ""
 "Star Chart колор шемата за печатење? (Вашите тековни подесувања на боите ќе "
 "бидат повратени кога печатењето ќе заврши)"
 
-#: kstarsactions.cpp:996
+#: kstarsactions.cpp:1009
 msgid "Switch to Star Chart Colors?"
 msgstr "Да се префрлам на Star Chart боите?"
 
-#: kstarsactions.cpp:997
+#: kstarsactions.cpp:1010
 #, fuzzy
 msgid "Switch Color Scheme"
 msgstr "Нова шема на бои"
 
-#: kstarsactions.cpp:997
+#: kstarsactions.cpp:1010
 #, fuzzy
 msgid "Do Not Switch"
 msgstr "не изгрева"
 
-#: kstarsactions.cpp:1069 kstarsinit.cpp:214
+#: kstarsactions.cpp:1082 kstarsinit.cpp:214
 #, fuzzy
 msgid "Engage &Tracking"
 msgstr "Стопирај &Часовник"
 
-#: kstarsactions.cpp:1153
+#: kstarsactions.cpp:1166
 #, kde-format
 msgctxt "approximate field of view"
 msgid "Approximate FOV: %1 degrees"
 msgstr ""
 
-#: kstarsactions.cpp:1156
+#: kstarsactions.cpp:1169
 #, kde-format
 msgctxt "approximate field of view"
 msgid "Approximate FOV: %1 arcminutes"
 msgstr ""
 
-#: kstarsactions.cpp:1160
+#: kstarsactions.cpp:1173
 #, kde-format
 msgctxt "approximate field of view"
 msgid "Approximate FOV: %1 arcseconds"
 msgstr ""
 
-#: kstarsactions.cpp:1174
+#: kstarsactions.cpp:1187
 msgctxt "The user should enter an angle for the field-of-view of the display"
 msgid "Enter Desired Field-of-View Angle"
 msgstr ""
 
-#: kstarsactions.cpp:1175
+#: kstarsactions.cpp:1188
 msgid "Enter a field-of-view angle in degrees: "
 msgstr ""
 
-#: kstarsactions.cpp:1306
+#: kstarsactions.cpp:1319
 msgid "Attempt to determine from image"
 msgstr ""
 
-#: kstarsactions.cpp:1307
+#: kstarsactions.cpp:1320
 #, fuzzy
 msgid "Eyepiece View: Choose a field-of-view"
 msgstr "Вчитувам имиња на соѕвездија"
 
-#: kstarsactions.cpp:1307
+#: kstarsactions.cpp:1320
 msgid "FOV to render eyepiece view for:"
 msgstr ""
 
@@ -51996,7 +51941,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_LogToDefault)
-#: options/opsadvanced.ui:312 skycomponents/flagcomponent.cpp:42
+#: options/opsadvanced.ui:312 skycomponents/flagcomponent.cpp:41
 #, fuzzy
 msgid "Default"
 msgstr "&Предефинирано"
@@ -53618,6 +53563,12 @@ msgstr "Датум && Време"
 msgid "Field of View Snapshot Browser"
 msgstr ""
 
+#: printing/foveditordialog.cpp:187 printing/pwizprint.cpp:134
+#: tools/scriptbuilder.cpp:866
+#, fuzzy
+msgid "Could not upload file"
+msgstr "Не можам да ја отворам датотеката"
+
 #: printing/foveditordialog.cpp:236
 #, kde-format
 msgid "FOV (%1/%2): %3 (%4' x %5')"
@@ -54151,27 +54102,37 @@ msgid ""
 "<p>To get started, press the <b>Next</b> button.</p>"
 msgstr ""
 
-#: skycomponents/asteroidscomponent.cpp:88
+#: skycomponents/asteroidscomponent.cpp:90
 #, fuzzy
 #| msgid "Loading Constellations"
 msgid "Loading asteroids"
 msgstr "Вчитувам соѕвездија"
 
-#: skycomponents/asteroidscomponent.cpp:134
+#: skycomponents/asteroidscomponent.cpp:136
 #, fuzzy
 #| msgid "Asteroids"
 msgid " (Asteroid)"
 msgstr "Астероиди"
+
+#: skycomponents/asteroidscomponent.cpp:289
+#, fuzzy, kde-format
+msgid "Error downloading asteroids data: %1"
+msgstr "Не можам да ја отворам датотеката"
 
 #: skycomponents/catalogcomponent.cpp:53
 #, fuzzy, kde-format
 msgid "Loading custom catalog: %1"
 msgstr "Додај каталог по избор..."
 
-#: skycomponents/cometscomponent.cpp:89
+#: skycomponents/cometscomponent.cpp:88
 #, fuzzy
 msgid "Loading comets"
 msgstr "Најди објект"
+
+#: skycomponents/cometscomponent.cpp:247
+#, fuzzy, kde-format
+msgid "Error downloading comets data: %1"
+msgstr "Не можам да ја отворам датотеката"
 
 #: skycomponents/constellationboundarylines.cpp:45
 #, fuzzy
@@ -54209,7 +54170,7 @@ msgstr "Најди објект"
 msgid "Unnamed Object"
 msgstr "Неименуван објект"
 
-#: skycomponents/flagcomponent.cpp:40
+#: skycomponents/flagcomponent.cpp:39
 msgid "No icon"
 msgstr ""
 
@@ -54324,21 +54285,27 @@ msgstr "Влезен избор"
 msgid "New supernova(e) discovered!"
 msgstr ""
 
-#: skycomponents/satellitescomponent.cpp:42
+#: skycomponents/satellitescomponent.cpp:44
 #, fuzzy
 #| msgid "Loading Constellations"
 msgid "Loading satellites"
 msgstr "Вчитувам соѕвездија"
 
-#: skycomponents/satellitescomponent.cpp:125
+#: skycomponents/satellitescomponent.cpp:126
 #, fuzzy
 msgid "Update TLEs..."
 msgstr "Датум"
 
-#: skycomponents/satellitescomponent.cpp:136
+#: skycomponents/satellitescomponent.cpp:138
 #, fuzzy, kde-format
 #| msgid "Creating Planets"
 msgid "Update %1 satellites"
+msgstr "Создавам планети"
+
+#: skycomponents/satellitescomponent.cpp:139
+#, fuzzy
+#| msgid "Creating Planets"
+msgid "Satellite Orbital Elements Update"
 msgstr "Создавам планети"
 
 #: skycomponents/skymapcomposite.cpp:515
@@ -56655,7 +56622,7 @@ msgstr "Естонија"
 msgid "Preset: "
 msgstr "Арезе"
 
-#: tools/eyepiecefield.cpp:542 tools/observinglist.cpp:1128
+#: tools/eyepiecefield.cpp:542 tools/observinglist.cpp:1154
 #, fuzzy
 msgid "Failed to download DSS/SDSS image!"
 msgstr "Дневни Соларни слики"
@@ -56996,8 +56963,8 @@ msgstr "ништо"
 #: tools/modcalcangdist.cpp:132 tools/modcalcapcoord.cpp:149
 #: tools/modcalcdaylength.cpp:246 tools/modcalcgalcoord.cpp:192
 #: tools/modcalcgeodcoord.cpp:231 tools/modcalcjd.cpp:120
-#: tools/modcalcplanets.cpp:207 tools/modcalcsidtime.cpp:199
-#: tools/modcalcvizequinox.cpp:83 tools/modcalcvlsr.cpp:273
+#: tools/modcalcplanets.cpp:207 tools/modcalcsidtime.cpp:200
+#: tools/modcalcvizequinox.cpp:84 tools/modcalcvlsr.cpp:273
 #: tools/scriptbuilder.cpp:776 tools/scriptbuilder.cpp:844
 #: tools/scriptbuilder.cpp:916
 #, fuzzy, kde-format
@@ -57007,8 +56974,8 @@ msgstr "Не можам да ја отворам датотеката"
 #: tools/modcalcangdist.cpp:144 tools/modcalcapcoord.cpp:161
 #: tools/modcalcdaylength.cpp:257 tools/modcalcgalcoord.cpp:204
 #: tools/modcalcgeodcoord.cpp:243 tools/modcalcjd.cpp:131
-#: tools/modcalcplanets.cpp:217 tools/modcalcsidtime.cpp:212
-#: tools/modcalcvizequinox.cpp:96 tools/modcalcvlsr.cpp:285
+#: tools/modcalcplanets.cpp:217 tools/modcalcsidtime.cpp:213
+#: tools/modcalcvizequinox.cpp:97 tools/modcalcvlsr.cpp:285
 #, fuzzy, kde-format
 msgid "Invalid file: %1"
 msgstr "Погрешно име на датотека"
@@ -57016,8 +56983,8 @@ msgstr "Погрешно име на датотека"
 #: tools/modcalcangdist.cpp:145 tools/modcalcapcoord.cpp:162
 #: tools/modcalcdaylength.cpp:258 tools/modcalcgalcoord.cpp:205
 #: tools/modcalcgeodcoord.cpp:244 tools/modcalcjd.cpp:132
-#: tools/modcalcplanets.cpp:218 tools/modcalcsidtime.cpp:213
-#: tools/modcalcvizequinox.cpp:97 tools/modcalcvlsr.cpp:286
+#: tools/modcalcplanets.cpp:218 tools/modcalcsidtime.cpp:214
+#: tools/modcalcvizequinox.cpp:98 tools/modcalcvlsr.cpp:286
 #, fuzzy
 msgid "Invalid file"
 msgstr "Погрешно име на датотека"
@@ -57626,54 +57593,54 @@ msgstr "Епоха:"
 msgid "Output file:"
 msgstr ""
 
-#: tools/modcalcsidtime.cpp:140
+#: tools/modcalcsidtime.cpp:141
 msgid ""
 "Location strings consist of the comma-separated names of the city, province "
 "and country.  If the string contains spaces, enclose it in quotes so it gets "
 "parsed properly."
 msgstr ""
 
-#: tools/modcalcsidtime.cpp:145
+#: tools/modcalcsidtime.cpp:146
 msgid "Hint for writing location strings"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_XplanetLabelLocalTime)
-#: tools/modcalcsidtime.cpp:153 xplanet/opsxplanet.ui:466
+#: tools/modcalcsidtime.cpp:154 xplanet/opsxplanet.ui:466
 #, fuzzy
 msgid "local time"
 msgstr "Локално време"
 
-#: tools/modcalcsidtime.cpp:155
+#: tools/modcalcsidtime.cpp:156
 #, fuzzy
 msgid "sidereal time"
 msgstr "Ѕвездено време"
 
-#: tools/modcalcsidtime.cpp:158
+#: tools/modcalcsidtime.cpp:159
 #, fuzzy
 msgid "date"
 msgstr "Датум"
 
-#: tools/modcalcsidtime.cpp:161
+#: tools/modcalcsidtime.cpp:162
 #, fuzzy
 msgid "location"
 msgstr "ОПЃ:"
 
-#: tools/modcalcsidtime.cpp:165
+#: tools/modcalcsidtime.cpp:166
 #, kde-format
 msgid "%1 and %2"
 msgstr ""
 
-#: tools/modcalcsidtime.cpp:167
+#: tools/modcalcsidtime.cpp:168
 #, kde-format
 msgid "%1, %2 and %3"
 msgstr ""
 
-#: tools/modcalcsidtime.cpp:169
+#: tools/modcalcsidtime.cpp:170
 #, kde-format
 msgid "Specify %1 in the input file."
 msgstr ""
 
-#: tools/modcalcsidtime.cpp:332 tools/modcalcvizequinox.cpp:149
+#: tools/modcalcsidtime.cpp:333 tools/modcalcvizequinox.cpp:150
 msgid "Results of Sidereal time calculation"
 msgstr ""
 
@@ -57718,23 +57685,23 @@ msgstr ""
 msgid "Specify local time in the input file."
 msgstr ""
 
-#: tools/modcalcvizequinox.cpp:48
+#: tools/modcalcvizequinox.cpp:49
 #, fuzzy
 msgid "Sun's Declination"
 msgstr "Декл"
 
-#: tools/modcalcvizequinox.cpp:110
+#: tools/modcalcvizequinox.cpp:111
 msgid "# Timing of Equinoxes and Solstices\n"
 msgstr ""
 
-#: tools/modcalcvizequinox.cpp:111
+#: tools/modcalcvizequinox.cpp:112
 #, fuzzy
 msgid ""
 "# computed by KStars\n"
 "#\n"
 msgstr "Добредојдовте во KStars "
 
-#: tools/modcalcvizequinox.cpp:112
+#: tools/modcalcvizequinox.cpp:113
 msgid ""
 "# Vernal Equinox\t\tSummer Solstice\t\t\tAutumnal Equinox\t\tWinter "
 "Solstice\n"
@@ -57865,42 +57832,42 @@ msgstr "Име на соѕвездие"
 msgid "Local Time"
 msgstr "Локално време"
 
-#: tools/observinglist.cpp:256
+#: tools/observinglist.cpp:263
 msgid "Unnamed stars are not supported in the observing lists"
 msgstr ""
 
-#: tools/observinglist.cpp:264
+#: tools/observinglist.cpp:271
 #, kde-format
 msgid "%1 is already in your wishlist."
 msgstr ""
 
-#: tools/observinglist.cpp:270
+#: tools/observinglist.cpp:277
 #, fuzzy, kde-format
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Ascension Island"
 msgid "%1 is already in the session plan."
 msgstr "Асценсионско Острово"
 
-#: tools/observinglist.cpp:309
+#: tools/observinglist.cpp:316
 #, fuzzy, kde-format
 msgid "Added %1 to observing list."
 msgstr "Додај во Листа"
 
-#: tools/observinglist.cpp:353
+#: tools/observinglist.cpp:360
 #, fuzzy, kde-format
 msgid "Added %1 to session list."
 msgstr "Додај во Листа"
 
-#: tools/observinglist.cpp:491
+#: tools/observinglist.cpp:502
 #, kde-format
 msgid "observing notes for %1:"
 msgstr ""
 
-#: tools/observinglist.cpp:505
+#: tools/observinglist.cpp:516
 msgid "observing notes (disabled for unnamed star)"
 msgstr ""
 
-#: tools/observinglist.cpp:523
+#: tools/observinglist.cpp:541
 #, kde-format
 msgid ""
 "DSS Image metadata: \n"
@@ -57909,146 +57876,151 @@ msgid ""
 " Version: %4"
 msgstr ""
 
-#: tools/observinglist.cpp:527
+#: tools/observinglist.cpp:545
 msgid "No image info available."
 msgstr ""
 
-#: tools/observinglist.cpp:532
+#: tools/observinglist.cpp:552
 msgid "No image available. Click on the placeholder image to download one."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, NotesLabel)
-#: tools/observinglist.cpp:540 tools/observinglist.cpp:1027
+#: tools/observinglist.cpp:564 tools/observinglist.cpp:1051
 #: tools/observinglist.ui:664
 msgid "Select an object to record notes on it here:"
 msgstr ""
 
-#: tools/observinglist.cpp:553
+#: tools/observinglist.cpp:577
 msgid "Select a single object to record notes on it here:"
 msgstr ""
 
-#: tools/observinglist.cpp:721
+#: tools/observinglist.cpp:745
 msgid "Observing notes for object:"
 msgstr ""
 
-#: tools/observinglist.cpp:728
+#: tools/observinglist.cpp:752
 #, fuzzy
 msgid "Open Observing List"
 msgstr "Кориснички ознаки"
 
-#: tools/observinglist.cpp:783
+#: tools/observinglist.cpp:807
 msgid "The specified file is invalid"
 msgstr ""
 
-#: tools/observinglist.cpp:792
+#: tools/observinglist.cpp:816
 #, fuzzy
 #| msgid "Are you sure you want to remove the %1 client?"
 msgid "Do you want to save the current session?"
 msgstr "Дали сте сигурни дека сакате да го отстраните клиентот %1?"
 
-#: tools/observinglist.cpp:794
+#: tools/observinglist.cpp:818
 #, fuzzy
 msgid "Save Current session?"
 msgstr "Зачувај тековни бои..."
 
-#: tools/observinglist.cpp:801
+#: tools/observinglist.cpp:825
 #, fuzzy
 msgid "Save Observing List"
 msgstr "Кориснички ознаки"
 
-#: tools/observinglist.cpp:876
+#: tools/observinglist.cpp:900
 #, fuzzy, kde-format
 msgid "Could not open file %1.  Try a different filename?"
 msgstr "Не можам да ја отворам датотеката"
 
-#: tools/observinglist.cpp:877
+#: tools/observinglist.cpp:901
 msgid "Try Different"
 msgstr ""
 
-#: tools/observinglist.cpp:950
+#: tools/observinglist.cpp:901
+#, fuzzy
+msgid "Do Not Try"
+msgstr "не изгрева"
+
+#: tools/observinglist.cpp:974
 #, fuzzy
 #| msgid "UT:"
 msgctxt "Abbreviation of What's Up Tonight"
 msgid "WUT"
 msgstr "УТ:"
 
-#: tools/observinglist.cpp:955
+#: tools/observinglist.cpp:979
 msgctxt "Abbreviation for Reference Images:"
 msgid "RefImg:"
 msgstr ""
 
-#: tools/observinglist.cpp:956
+#: tools/observinglist.cpp:980
 msgctxt "Add objects to a list"
 msgid "Add:"
 msgstr ""
 
-#: tools/observinglist.cpp:1002
+#: tools/observinglist.cpp:1026
 #, fuzzy
 #| msgid "Find Object"
 msgid "Find &Object"
 msgstr "Најди објект"
 
 #. i18n: ectx: property (text), widget (QPushButton, saveImages)
-#: tools/observinglist.cpp:1003 tools/observinglist.ui:368
+#: tools/observinglist.cpp:1027 tools/observinglist.ui:378
 #, fuzzy
 msgid "Download all Images"
 msgstr "Влезен избор"
 
 #. i18n: ectx: property (text), widget (QPushButton, DeleteAllImages)
-#: tools/observinglist.cpp:1004 tools/observinglist.ui:378
+#: tools/observinglist.cpp:1028 tools/observinglist.ui:388
 #, fuzzy
 msgid "Delete all Images"
 msgstr "Влезен избор"
 
 #. i18n: ectx: property (text), widget (QPushButton, WUTButton)
-#: tools/observinglist.cpp:1008 tools/observinglist.ui:338
+#: tools/observinglist.cpp:1032 tools/observinglist.ui:348
 msgid "What's up Tonight tool"
 msgstr ""
 
-#: tools/observinglist.cpp:1009
+#: tools/observinglist.cpp:1033
 #, fuzzy
 msgctxt "Abbreviation for Reference Images:"
 msgid "Reference Images:"
 msgstr "Користи анимирано поместување"
 
-#: tools/observinglist.cpp:1010
+#: tools/observinglist.cpp:1034
 #, fuzzy
 #| msgid "Find Object"
 msgctxt "Add objects to a list"
 msgid "Adding Objects:"
 msgstr "Најди објект"
 
-#: tools/observinglist.cpp:1090 tools/observinglist.cpp:1091
-#: tools/observinglist.cpp:1093
+#: tools/observinglist.cpp:1115 tools/observinglist.cpp:1116
+#: tools/observinglist.cpp:1118
 msgid "Customized DSS Download"
 msgstr ""
 
-#: tools/observinglist.cpp:1090
+#: tools/observinglist.cpp:1115
 msgid "Specify image width (arcminutes): "
 msgstr ""
 
-#: tools/observinglist.cpp:1091
+#: tools/observinglist.cpp:1116
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Haines"
 msgid "Specify image height (arcminutes): "
 msgstr "Haines"
 
-#: tools/observinglist.cpp:1093
+#: tools/observinglist.cpp:1118
 #, fuzzy
 msgid "Specify version: "
 msgstr "Зачувај слика"
 
-#: tools/observinglist.cpp:1223
+#: tools/observinglist.cpp:1250
 msgid "This will delete all saved images. Are you sure you want to do this?"
 msgstr ""
 
-#: tools/observinglist.cpp:1223
+#: tools/observinglist.cpp:1250
 #, fuzzy
 msgid "Delete All Images"
 msgstr "Влезен избор"
 
-#: tools/observinglist.cpp:1304
+#: tools/observinglist.cpp:1332
 #, fuzzy
 msgid "Image Chooser"
 msgstr "Датум && Време"
@@ -58124,58 +58096,63 @@ msgstr ""
 msgid "Choose"
 msgstr "Избери Град"
 
-#. i18n: ectx: property (toolTip), widget (QPushButton, Update)
+#. i18n: ectx: property (displayFormat), widget (QDateEdit, DateEdit)
 #: tools/observinglist.ui:270
+msgid "dd/mm/yy"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, Update)
+#: tools/observinglist.ui:280
 msgid "Update the table and the plot for the new date and location."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, addLabel)
-#: tools/observinglist.ui:300
+#: tools/observinglist.ui:310
 #, fuzzy
 #| msgid "Find Object"
 msgid "Adding Objects:"
 msgstr "Најди објект"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, FindButton)
-#: tools/observinglist.ui:313
+#: tools/observinglist.ui:323
 msgid "Open Find Dialog"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QPushButton, FindButton)
-#: tools/observinglist.ui:316
+#: tools/observinglist.ui:326
 msgid "Open the Find Dialog for adding objects to the list"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, WUTButton)
-#: tools/observinglist.ui:332
+#: tools/observinglist.ui:342
 msgid "Open the WUT dialog"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QPushButton, WUTButton)
-#: tools/observinglist.ui:335
+#: tools/observinglist.ui:345
 msgid ""
 "Opens the What's up tonight dialog, from which objects can be added to the "
 "list"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, refLabel)
-#: tools/observinglist.ui:358
+#: tools/observinglist.ui:368
 #, fuzzy
 msgid "Reference Images:"
 msgstr "Користи анимирано поместување"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, saveImages)
-#: tools/observinglist.ui:365
+#: tools/observinglist.ui:375
 msgid "Download the SDSS/DSS images of all the objects in the current list."
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, DeleteAllImages)
-#: tools/observinglist.ui:375
+#: tools/observinglist.ui:385
 msgid "Deletes all the stored DSS/SDSS images"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, WishList)
-#: tools/observinglist.ui:403
+#: tools/observinglist.ui:413
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "H. List"
@@ -58183,7 +58160,7 @@ msgid "Wish List"
 msgstr "H. List"
 
 #. i18n: ectx: attribute (title), widget (QWidget, Session)
-#: tools/observinglist.ui:435
+#: tools/observinglist.ui:445
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Ascension Island"
@@ -58191,16 +58168,22 @@ msgid "Session Plan"
 msgstr "Асценсионско Острово"
 
 #. i18n: ectx: property (text), widget (QLabel, scheduledTimeLabel)
-#: tools/observinglist.ui:475
+#: tools/observinglist.ui:485
 #, fuzzy
 msgid "Scheduled Time"
 msgstr "Го стартирам тајмерот"
 
 #. i18n: ectx: property (text), widget (QPushButton, SetTime)
-#: tools/observinglist.ui:498
+#: tools/observinglist.ui:508
 #, fuzzy
 msgid "Set Time"
 msgstr "Го стартирам тајмерот"
+
+#. i18n: ectx: property (text), widget (QLabel, ImagePreview)
+#: tools/observinglist.ui:592
+#, fuzzy
+msgid "TextLabel"
+msgstr "Г. шир.:"
 
 #. i18n: ectx: property (text), widget (QLabel, dssMetadataLabel)
 #: tools/observinglist.ui:611
@@ -59191,6 +59174,11 @@ msgstr ""
 #, fuzzy
 msgid "Could not download remote file."
 msgstr "Не можам да ја избришам датотеката: %1"
+
+#: tools/scriptbuilder.cpp:771
+#, fuzzy
+msgid "Download Error"
+msgstr "Вчитувам KStars..."
 
 #: tools/scriptbuilder.cpp:887
 #, fuzzy
@@ -60780,6 +60768,27 @@ msgstr "Ѕвезден графикон"
 #, fuzzy
 msgid "Set the color for the background."
 msgstr "Скриј ги објектите додека се движат"
+
+#, fuzzy
+#~ msgctxt "Image/info menu item (should be translated)"
+#~ msgid "Show HST/VLT Image"
+#~ msgstr "Прикажи HST слика"
+
+#, fuzzy
+#~ msgid "to cancel the download, press Cancel. "
+#~ msgstr "За да се отфрли датотеката, притисни Откажи. "
+
+#, fuzzy
+#~ msgid "Invalid Save Location"
+#~ msgstr "Погрешна географска ширина"
+
+#, fuzzy
+#~ msgid "Try Another"
+#~ msgstr "&Север"
+
+#, fuzzy
+#~ msgid "Could not download the file."
+#~ msgstr "Не можам да ја избришам датотеката: %1"
 
 #, fuzzy
 #~ msgid "Model: "
