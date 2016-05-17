@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-05-15 07:17+0000\n"
+"POT-Creation-Date: 2016-05-17 08:29+0000\n"
 "PO-Revision-Date: 2000-10-02 22:00+0100\n"
 "Last-Translator: Damjan Janevski <miopa@usa.net>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1042,7 +1042,7 @@ msgstr ""
 #: krita/crashreporter/mainwindow.cpp:74
 #: krita/crashreporter/mainwindow.cpp:129
 #: libs/ui/dialogs/kis_dlg_preferences.cc:244
-#: libs/ui/input/kis_tablet_debugger.cpp:100 libs/ui/kis_filter_manager.cc:214
+#: libs/ui/input/kis_tablet_debugger.cpp:103 libs/ui/kis_filter_manager.cc:214
 #: libs/ui/kis_filter_manager.cc:223 libs/ui/kis_layer_manager.cc:724
 #: libs/ui/KisApplication.cpp:644 libs/ui/KisApplication.cpp:647
 #: libs/ui/KisApplication.cpp:672 libs/ui/KisApplication.cpp:698
@@ -7641,12 +7641,12 @@ msgstr ""
 msgid "Pencil"
 msgstr ""
 
-#: libs/brush/kis_auto_brush.cpp:352
+#: libs/brush/kis_auto_brush.cpp:372
 msgctxt "PaintOp instant preview limitation"
 msgid "Brush Density recommended value 100.0"
 msgstr ""
 
-#: libs/brush/kis_auto_brush.cpp:356
+#: libs/brush/kis_auto_brush.cpp:376
 msgctxt "PaintOp instant preview limitation"
 msgid "Brush Randomness recommended value 0.0"
 msgstr ""
@@ -8506,7 +8506,7 @@ msgctxt "property of a filter layer, noun"
 msgid "Filter"
 msgstr "Избери"
 
-#: libs/image/kis_base_mask_generator.h:33
+#: libs/image/kis_base_mask_generator.h:35
 #: libs/ui/kis_bookmarked_configurations_model.cc:66
 #: plugins/dockers/shapedockers/shapecollection/ShapeCollectionDocker.cpp:307
 #: plugins/flake/textshape/kotext/styles/KoStyleManager.cpp:106
@@ -8517,7 +8517,7 @@ msgstr "Одбери..."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, editSharpness)
 #. i18n: ectx: property (text), item, widget (QComboBox, editContrast)
-#: libs/image/kis_base_mask_generator.h:34
+#: libs/image/kis_base_mask_generator.h:36
 #: plugins/extensions/metadataeditor/editors/exif.ui:860
 #: plugins/extensions/metadataeditor/editors/exif.ui:892
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:63
@@ -8525,7 +8525,7 @@ msgstr "Одбери..."
 msgid "Soft"
 msgstr ""
 
-#: libs/image/kis_base_mask_generator.h:35
+#: libs/image/kis_base_mask_generator.h:37
 msgid "Gaussian"
 msgstr ""
 
@@ -8739,28 +8739,34 @@ msgstr ""
 msgid "Color Label"
 msgstr "Колони:"
 
-#: libs/image/kis_layer_utils.cpp:256
+#: libs/image/kis_layer_utils.cpp:258
 msgid "Merged"
 msgstr ""
 
-#: libs/image/kis_layer_utils.cpp:671
+#: libs/image/kis_layer_utils.cpp:673
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Merge Down"
 msgstr "Отстрани шаблон"
 
-#: libs/image/kis_layer_utils.cpp:854
+#: libs/image/kis_layer_utils.cpp:856
 #, fuzzy
 msgid "Copy of"
 msgstr "Фирма :"
 
-#: libs/image/kis_layer_utils.cpp:976
+#: libs/image/kis_layer_utils.cpp:918
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Change projection color"
+msgstr "Рабови на страна"
+
+#: libs/image/kis_layer_utils.cpp:994
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Merge Selected Nodes"
 msgstr "&Отвори документ"
 
-#: libs/image/kis_layer_utils.cpp:1055
+#: libs/image/kis_layer_utils.cpp:1073
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Merge Selection Masks"
@@ -8768,13 +8774,13 @@ msgstr ""
 "\n"
 "Ориентација:"
 
-#: libs/image/kis_layer_utils.cpp:1078
+#: libs/image/kis_layer_utils.cpp:1096
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Flatten Layer"
 msgstr "Создади шаблон"
 
-#: libs/image/kis_layer_utils.cpp:1086
+#: libs/image/kis_layer_utils.cpp:1104
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Flatten Image"
@@ -10557,20 +10563,14 @@ msgctxt "@title:window"
 msgid "Filter: %1"
 msgstr "Избери"
 
-#: libs/ui/dialogs/kis_dlg_image_properties.cc:55
+#: libs/ui/dialogs/kis_dlg_image_properties.cc:54
 msgid "Image Properties"
 msgstr ""
 
-#: libs/ui/dialogs/kis_dlg_image_properties.cc:73
+#: libs/ui/dialogs/kis_dlg_image_properties.cc:72
 #: libs/ui/dialogs/kis_dlg_preferences.cc:718
 #, fuzzy
 msgid "Change the background color of the image"
-msgstr "Рабови на страна"
-
-#: libs/ui/dialogs/kis_dlg_image_properties.cc:123
-#, fuzzy
-msgctxt "(qtundo-format)"
-msgid "Change projection color"
 msgstr "Рабови на страна"
 
 #: libs/ui/dialogs/kis_dlg_import_image_sequence.cpp:58
@@ -10881,7 +10881,7 @@ msgstr "Екран"
 
 #: libs/ui/dialogs/kis_dlg_preferences.cc:370
 #: libs/ui/widgets/kis_advanced_color_space_selector.cc:774
-#: libs/ui/widgets/kis_color_space_selector.cc:181
+#: libs/ui/widgets/kis_color_space_selector.cc:185
 msgid "Install Color Profiles"
 msgstr ""
 
@@ -13488,11 +13488,11 @@ msgstr "Покажи %1 алатник"
 msgid "The <i>Show Popup Palette</i> displays the popup palette."
 msgstr ""
 
-#: libs/ui/input/kis_tablet_debugger.cpp:101
+#: libs/ui/input/kis_tablet_debugger.cpp:104
 msgid "Tablet Event Logging Enabled"
 msgstr ""
 
-#: libs/ui/input/kis_tablet_debugger.cpp:102
+#: libs/ui/input/kis_tablet_debugger.cpp:105
 msgid "Tablet Event Logging Disabled"
 msgstr ""
 
@@ -13751,7 +13751,7 @@ msgstr ""
 msgid "Apply Filter Again: %1"
 msgstr ""
 
-#: libs/ui/kis_image_manager.cc:117
+#: libs/ui/kis_image_manager.cc:118
 #, fuzzy
 msgid "Import Image"
 msgstr "Наслов :"
