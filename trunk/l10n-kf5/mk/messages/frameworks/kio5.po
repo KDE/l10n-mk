@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-07-23 08:05+0000\n"
+"POT-Creation-Date: 2016-07-25 07:36+0000\n"
 "PO-Revision-Date: 2009-06-22 11:48+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -3307,7 +3307,7 @@ msgstr ""
 msgid "Do not ask again"
 msgstr ""
 
-#: filewidgets/knewfilemenu.cpp:542 filewidgets/knewfilemenu.cpp:622
+#: filewidgets/knewfilemenu.cpp:542 filewidgets/knewfilemenu.cpp:624
 #, fuzzy
 #| msgid "Device name"
 msgid "File name:"
@@ -3319,13 +3319,13 @@ msgstr "Име на уред"
 msgid "Create Symlink"
 msgstr "Не можам да создадам симболичка врска"
 
-#: filewidgets/knewfilemenu.cpp:626
+#: filewidgets/knewfilemenu.cpp:628
 #, fuzzy
 #| msgid "Created:"
 msgid "Create link to URL"
 msgstr "Создадено:"
 
-#: filewidgets/knewfilemenu.cpp:671 filewidgets/knewfilemenu.cpp:716
+#: filewidgets/knewfilemenu.cpp:673 filewidgets/knewfilemenu.cpp:718
 #, fuzzy, kde-format
 #| msgctxt "@item:inmenu Open With, %1 is application name"
 #| msgid "%1"
@@ -3333,31 +3333,31 @@ msgctxt "@item:inmenu Create New"
 msgid "%1"
 msgstr "%1"
 
-#: filewidgets/knewfilemenu.cpp:1055
+#: filewidgets/knewfilemenu.cpp:1057
 #, fuzzy
 #| msgid "Created:"
 msgid "Create New"
 msgstr "Создадено:"
 
-#: filewidgets/knewfilemenu.cpp:1070
+#: filewidgets/knewfilemenu.cpp:1072
 #, fuzzy
 #| msgid "Device"
 msgid "Link to Device"
 msgstr "Уред"
 
-#: filewidgets/knewfilemenu.cpp:1124
+#: filewidgets/knewfilemenu.cpp:1126
 #, fuzzy
 #| msgid "New Folder"
 msgctxt "Default name for a new folder"
 msgid "New Folder"
 msgstr "Нова папка"
 
-#: filewidgets/knewfilemenu.cpp:1134
+#: filewidgets/knewfilemenu.cpp:1136
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Нова папка"
 
-#: filewidgets/knewfilemenu.cpp:1137
+#: filewidgets/knewfilemenu.cpp:1139
 #, kde-format
 msgid ""
 "Create new folder in:\n"
@@ -3370,11 +3370,16 @@ msgstr ""
 msgid "The desktop is offline"
 msgstr "Површината е без мрежа"
 
-#: filewidgets/kurlnavigator.cpp:450
+#. i18n: ectx: property (text), widget (QPushButton, sha1CopyButton)
+#. i18n: ectx: property (text), widget (QPushButton, sha256CopyButton)
+#. i18n: ectx: property (text), widget (QPushButton, md5CopyButton)
+#: filewidgets/kurlnavigator.cpp:450 widgets/checksumswidget.ui:101
+#: widgets/checksumswidget.ui:146 widgets/checksumswidget.ui:184
 msgid "Copy"
 msgstr "Копирај"
 
-#: filewidgets/kurlnavigator.cpp:454
+#. i18n: ectx: property (text), widget (QPushButton, pasteButton)
+#: filewidgets/kurlnavigator.cpp:454 widgets/checksumswidget.ui:36
 msgid "Paste"
 msgstr "Вметни"
 
@@ -6444,7 +6449,7 @@ msgid "Lakeridge Meadows"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: widgets/checksumswidget.ui:19
+#: widgets/checksumswidget.ui:17
 msgid ""
 "Copy and paste a checksum in the field below.<br/>A checksum is usually "
 "provided by the website you downloaded this file from."
@@ -6456,29 +6461,42 @@ msgstr ""
 msgid "Expected checksum (MD5, SHA1 or SHA256)..."
 msgstr ""
 
+#. i18n: ectx: property (toolTip), widget (QPushButton, pasteButton)
+#: widgets/checksumswidget.ui:33
+msgid "Click to paste the checksum from the clipboard to the input field."
+msgstr ""
+
 #. i18n: MD5 is the hashing algorithm
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: widgets/checksumswidget.ui:48
+#: widgets/checksumswidget.ui:62
 msgid "MD5:"
 msgstr ""
 
 #. i18n: SHA1 is the hashing algorithm
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: widgets/checksumswidget.ui:55
+#: widgets/checksumswidget.ui:69
 msgid "SHA1:"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QPushButton, md5Button)
 #. i18n: ectx: property (text), widget (QPushButton, sha1Button)
 #. i18n: ectx: property (text), widget (QPushButton, sha256Button)
-#: widgets/checksumswidget.ui:62 widgets/checksumswidget.ui:69
-#: widgets/checksumswidget.ui:83 widgets/kpropertiesdialog.cpp:1084
+#. i18n: ectx: property (text), widget (QPushButton, md5Button)
+#: widgets/checksumswidget.ui:78 widgets/checksumswidget.ui:123
+#: widgets/checksumswidget.ui:161 widgets/kpropertiesdialog.cpp:1085
 msgid "Calculate"
 msgstr "Пресметај"
 
+#. i18n: ectx: property (toolTip), widget (QPushButton, sha1CopyButton)
+#. i18n: ectx: property (toolTip), widget (QPushButton, sha256CopyButton)
+#. i18n: ectx: property (toolTip), widget (QPushButton, md5CopyButton)
+#: widgets/checksumswidget.ui:98 widgets/checksumswidget.ui:143
+#: widgets/checksumswidget.ui:181
+msgid "Click to copy the checksum to the clipboard."
+msgstr ""
+
 #. i18n: SHA256 is the hashing algorithm
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: widgets/checksumswidget.ui:76
+#: widgets/checksumswidget.ui:114
 msgid "SHA256:"
 msgstr ""
 
@@ -6630,7 +6648,7 @@ msgid "Owning Group"
 msgstr "Сопственичка група"
 
 #: widgets/kacleditwidget.cpp:61 widgets/kacleditwidget.cpp:458
-#: widgets/kpropertiesdialog.cpp:2017
+#: widgets/kpropertiesdialog.cpp:2018
 msgid "Others"
 msgstr "Останати"
 
@@ -7341,14 +7359,14 @@ msgstr ""
 msgid "Ad&vanced Options"
 msgstr "На&предни опции"
 
-#: widgets/kpropertiesdialog.cpp:213 widgets/kpropertiesdialog.cpp:228
-#: widgets/kpropertiesdialog.cpp:240 widgets/kpropertiesdialog.cpp:256
-#: widgets/kpropertiesdialog.cpp:276 widgets/kpropertiesdialog.cpp:300
+#: widgets/kpropertiesdialog.cpp:214 widgets/kpropertiesdialog.cpp:229
+#: widgets/kpropertiesdialog.cpp:241 widgets/kpropertiesdialog.cpp:257
+#: widgets/kpropertiesdialog.cpp:277 widgets/kpropertiesdialog.cpp:301
 #, kde-format
 msgid "Properties for %1"
 msgstr "Својства за %1"
 
-#: widgets/kpropertiesdialog.cpp:238 widgets/kpropertiesdialog.cpp:274
+#: widgets/kpropertiesdialog.cpp:239 widgets/kpropertiesdialog.cpp:275
 #, kde-format
 msgid "Properties for 1 item"
 msgid_plural "Properties for %1 Selected Items"
@@ -7356,83 +7374,83 @@ msgstr[0] "Својства за %1 избран елемент"
 msgstr[1] "Својства за %1 избрани елементи"
 msgstr[2] "Својства за %1 избрани елементи"
 
-#: widgets/kpropertiesdialog.cpp:830
+#: widgets/kpropertiesdialog.cpp:831
 msgctxt "@title:tab File properties"
 msgid "&General"
 msgstr "&Општо"
 
-#: widgets/kpropertiesdialog.cpp:1013
+#: widgets/kpropertiesdialog.cpp:1014
 msgid "Type:"
 msgstr "Тип:"
 
-#: widgets/kpropertiesdialog.cpp:1032
+#: widgets/kpropertiesdialog.cpp:1033
 #, fuzzy
 #| msgid "Create new file type"
 msgid "Create New File Type"
 msgstr "Создај нов тип на папка"
 
-#: widgets/kpropertiesdialog.cpp:1034
+#: widgets/kpropertiesdialog.cpp:1035
 msgid "File Type Options"
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:1045
+#: widgets/kpropertiesdialog.cpp:1046
 msgid "Contents:"
 msgstr "Содржина:"
 
-#: widgets/kpropertiesdialog.cpp:1053 widgets/kurlrequesterdialog.cpp:57
+#: widgets/kpropertiesdialog.cpp:1054 widgets/kurlrequesterdialog.cpp:57
 msgid "Location:"
 msgstr "Локација:"
 
-#: widgets/kpropertiesdialog.cpp:1068
+#: widgets/kpropertiesdialog.cpp:1069
 msgid "Size:"
 msgstr "Големина:"
 
-#: widgets/kpropertiesdialog.cpp:1085
+#: widgets/kpropertiesdialog.cpp:1086
 msgid "Stop"
 msgstr "Запри"
 
-#: widgets/kpropertiesdialog.cpp:1094 widgets/kpropertiesdialog.cpp:1292
+#: widgets/kpropertiesdialog.cpp:1095 widgets/kpropertiesdialog.cpp:1293
 msgid "Refresh"
 msgstr "Освежи"
 
-#: widgets/kpropertiesdialog.cpp:1102
+#: widgets/kpropertiesdialog.cpp:1103
 msgid "Points to:"
 msgstr "Покажува на:"
 
-#: widgets/kpropertiesdialog.cpp:1113
+#: widgets/kpropertiesdialog.cpp:1114
 msgid "Created:"
 msgstr "Создадено:"
 
-#: widgets/kpropertiesdialog.cpp:1122
+#: widgets/kpropertiesdialog.cpp:1123
 msgid "Modified:"
 msgstr "Променето:"
 
-#: widgets/kpropertiesdialog.cpp:1131
+#: widgets/kpropertiesdialog.cpp:1132
 msgid "Accessed:"
 msgstr "Пристапено:"
 
-#: widgets/kpropertiesdialog.cpp:1147
+#: widgets/kpropertiesdialog.cpp:1148
 msgid "Mounted on:"
 msgstr "Монтирано на:"
 
-#: widgets/kpropertiesdialog.cpp:1156 widgets/kpropertiesdialog.cpp:3167
+#: widgets/kpropertiesdialog.cpp:1157 widgets/kpropertiesdialog.cpp:3192
 msgid "Device usage:"
 msgstr "Користење на уред:"
 
-#: widgets/kpropertiesdialog.cpp:1160 widgets/kpropertiesdialog.cpp:1258
+#: widgets/kpropertiesdialog.cpp:1161 widgets/kpropertiesdialog.cpp:1259
 #, fuzzy
 #| msgid "Unknown Host"
 msgctxt "@info:status"
 msgid "Unknown size"
 msgstr "Непознат компјутер"
 
-#: widgets/kpropertiesdialog.cpp:1251 widgets/kpropertiesdialog.cpp:3299
+#: widgets/kpropertiesdialog.cpp:1252 widgets/kpropertiesdialog.cpp:3324
 #, kde-format
 msgctxt "Available space out of total partition size (percent used)"
 msgid "%1 free of %2 (%3% used)"
 msgstr "слободни се %1 од %2 (искористени се %3%)"
 
-#: widgets/kpropertiesdialog.cpp:1269
+#: widgets/kpropertiesdialog.cpp:1270
 #, kde-format
 msgid ""
 "Calculating... %1 (%2)\n"
@@ -7441,7 +7459,7 @@ msgstr ""
 "Пресметувам... %1 (%2)\n"
 "%3, %4"
 
-#: widgets/kpropertiesdialog.cpp:1272 widgets/kpropertiesdialog.cpp:1287
+#: widgets/kpropertiesdialog.cpp:1273 widgets/kpropertiesdialog.cpp:1288
 #, kde-format
 msgid "1 file"
 msgid_plural "%1 files"
@@ -7449,7 +7467,7 @@ msgstr[0] "%1 датотека"
 msgstr[1] "%1 датотеки"
 msgstr[2] "%1 датотеки"
 
-#: widgets/kpropertiesdialog.cpp:1273 widgets/kpropertiesdialog.cpp:1288
+#: widgets/kpropertiesdialog.cpp:1274 widgets/kpropertiesdialog.cpp:1289
 #, kde-format
 msgid "1 sub-folder"
 msgid_plural "%1 sub-folders"
@@ -7457,21 +7475,21 @@ msgstr[0] "%1 потпапка"
 msgstr[1] "%1 потпапки"
 msgstr[2] "%1 потпапки"
 
-#: widgets/kpropertiesdialog.cpp:1301
+#: widgets/kpropertiesdialog.cpp:1302
 msgid "Calculating..."
 msgstr "Пресметувам..."
 
-#: widgets/kpropertiesdialog.cpp:1326
+#: widgets/kpropertiesdialog.cpp:1327
 #, kde-format
 msgid "At least %1"
 msgstr "Најмалку %1"
 
-#: widgets/kpropertiesdialog.cpp:1364
+#: widgets/kpropertiesdialog.cpp:1365
 msgid "The new file name is empty."
 msgstr "Новото име на датотеката е празно."
 
-#: widgets/kpropertiesdialog.cpp:1547 widgets/kpropertiesdialog.cpp:3044
-#: widgets/kpropertiesdialog.cpp:3344 widgets/kpropertiesdialog.cpp:3598
+#: widgets/kpropertiesdialog.cpp:1548 widgets/kpropertiesdialog.cpp:3069
+#: widgets/kpropertiesdialog.cpp:3369 widgets/kpropertiesdialog.cpp:3623
 #, kde-format
 msgid ""
 "<qt>Could not save properties. You do not have sufficient access to write to "
@@ -7480,75 +7498,75 @@ msgstr ""
 "<qt>Не можеа да се снимат својствата. Немате доволен пристап за да запишете "
 "во <b>%1</b>.</qt>"
 
-#: widgets/kpropertiesdialog.cpp:1623 widgets/kpropertiesdialog.cpp:1629
-#: widgets/kpropertiesdialog.cpp:1636
+#: widgets/kpropertiesdialog.cpp:1624 widgets/kpropertiesdialog.cpp:1630
+#: widgets/kpropertiesdialog.cpp:1637
 msgid "Forbidden"
 msgstr "Забрането"
 
-#: widgets/kpropertiesdialog.cpp:1624
+#: widgets/kpropertiesdialog.cpp:1625
 msgid "Can Read"
 msgstr "Може да чита"
 
-#: widgets/kpropertiesdialog.cpp:1625
+#: widgets/kpropertiesdialog.cpp:1626
 msgid "Can Read & Write"
 msgstr "Може да чита и запишува"
 
-#: widgets/kpropertiesdialog.cpp:1630
+#: widgets/kpropertiesdialog.cpp:1631
 msgid "Can View Content"
 msgstr "Може да гледа содржина"
 
-#: widgets/kpropertiesdialog.cpp:1631
+#: widgets/kpropertiesdialog.cpp:1632
 msgid "Can View & Modify Content"
 msgstr "Може да гледа и менува содржина"
 
-#: widgets/kpropertiesdialog.cpp:1637
+#: widgets/kpropertiesdialog.cpp:1638
 msgid "Can View Content & Read"
 msgstr "Може да гледа содржина и чита"
 
-#: widgets/kpropertiesdialog.cpp:1638
+#: widgets/kpropertiesdialog.cpp:1639
 msgid "Can View/Read & Modify/Write"
 msgstr "Може да гледа/чита и менува/запишува"
 
-#: widgets/kpropertiesdialog.cpp:1735
+#: widgets/kpropertiesdialog.cpp:1736
 msgid "&Permissions"
 msgstr "&Дозволи"
 
-#: widgets/kpropertiesdialog.cpp:1747 widgets/kpropertiesdialog.cpp:1950
+#: widgets/kpropertiesdialog.cpp:1748 widgets/kpropertiesdialog.cpp:1951
 msgid "Access Permissions"
 msgstr "Дозволи за пристап"
 
-#: widgets/kpropertiesdialog.cpp:1755
+#: widgets/kpropertiesdialog.cpp:1756
 msgid "This file is a link and does not have permissions."
 msgid_plural "All files are links and do not have permissions."
 msgstr[0] "Оваа датотека е врска и нема дозволи."
 msgstr[1] "Сите датотеки се врски и немаат дозволи."
 msgstr[2] "Сите датотеки се врски и немаат дозволи."
 
-#: widgets/kpropertiesdialog.cpp:1759
+#: widgets/kpropertiesdialog.cpp:1760
 msgid "Only the owner can change permissions."
 msgstr "Само сопственикот може да ги смени дозволите."
 
-#: widgets/kpropertiesdialog.cpp:1763
+#: widgets/kpropertiesdialog.cpp:1764
 msgid "O&wner:"
 msgstr "&Сопственик:"
 
-#: widgets/kpropertiesdialog.cpp:1769
+#: widgets/kpropertiesdialog.cpp:1770
 msgid "Specifies the actions that the owner is allowed to do."
 msgstr "Ги одредува дејствата кои му се дозволени на сопственикот."
 
-#: widgets/kpropertiesdialog.cpp:1771
+#: widgets/kpropertiesdialog.cpp:1772
 msgid "Gro&up:"
 msgstr "&Група:"
 
-#: widgets/kpropertiesdialog.cpp:1777
+#: widgets/kpropertiesdialog.cpp:1778
 msgid "Specifies the actions that the members of the group are allowed to do."
 msgstr "Ги одредува дејствата кои им се дозволени на членовите на групата."
 
-#: widgets/kpropertiesdialog.cpp:1779
+#: widgets/kpropertiesdialog.cpp:1780
 msgid "O&thers:"
 msgstr "&Останати:"
 
-#: widgets/kpropertiesdialog.cpp:1785
+#: widgets/kpropertiesdialog.cpp:1786
 msgid ""
 "Specifies the actions that all users, who are neither owner nor in the "
 "group, are allowed to do."
@@ -7556,17 +7574,17 @@ msgstr ""
 "Ги одредува дејствата кои им се дозволени на сите корисници, кои не се "
 "сопственици или во групата."
 
-#: widgets/kpropertiesdialog.cpp:1790
+#: widgets/kpropertiesdialog.cpp:1791
 msgid "Only own&er can rename and delete folder content"
 msgstr ""
 "Само сопств&еникот може да преименува или\n"
 "да избрише содржина од папката"
 
-#: widgets/kpropertiesdialog.cpp:1791
+#: widgets/kpropertiesdialog.cpp:1792
 msgid "Is &executable"
 msgstr "&Извршна"
 
-#: widgets/kpropertiesdialog.cpp:1795
+#: widgets/kpropertiesdialog.cpp:1796
 msgid ""
 "Enable this option to allow only the folder's owner to delete or rename the "
 "contained files and folders. Other users can only add new files, which "
@@ -7577,7 +7595,7 @@ msgstr ""
 "можат само да додаваат нови датотеки, за што им е потребна дозвола за "
 "„менување содржина“."
 
-#: widgets/kpropertiesdialog.cpp:1799
+#: widgets/kpropertiesdialog.cpp:1800
 msgid ""
 "Enable this option to mark the file as executable. This only makes sense for "
 "programs and scripts. It is required when you want to execute them."
@@ -7586,35 +7604,35 @@ msgstr ""
 "има смисла само за програми и скрипти. Опцијата е задолжителна ако сакате да "
 "ги извршувате."
 
-#: widgets/kpropertiesdialog.cpp:1806
+#: widgets/kpropertiesdialog.cpp:1807
 msgid "A&dvanced Permissions"
 msgstr "Напре&дни дозволи"
 
-#: widgets/kpropertiesdialog.cpp:1814
+#: widgets/kpropertiesdialog.cpp:1815
 msgid "Ownership"
 msgstr "Сопственост"
 
-#: widgets/kpropertiesdialog.cpp:1821
+#: widgets/kpropertiesdialog.cpp:1822
 msgid "User:"
 msgstr "Корисник:"
 
-#: widgets/kpropertiesdialog.cpp:1865
+#: widgets/kpropertiesdialog.cpp:1866
 msgid "Group:"
 msgstr "Група:"
 
-#: widgets/kpropertiesdialog.cpp:1902
+#: widgets/kpropertiesdialog.cpp:1903
 msgid "Apply changes to all subfolders and their contents"
 msgstr "Примени ги измените на сите потпапки и нивните содржини"
 
-#: widgets/kpropertiesdialog.cpp:1941
+#: widgets/kpropertiesdialog.cpp:1942
 msgid "Advanced Permissions"
 msgstr "Напредни дозволи"
 
-#: widgets/kpropertiesdialog.cpp:1958
+#: widgets/kpropertiesdialog.cpp:1959
 msgid "Class"
 msgstr "Класа"
 
-#: widgets/kpropertiesdialog.cpp:1965
+#: widgets/kpropertiesdialog.cpp:1966
 msgid ""
 "Show\n"
 "Entries"
@@ -7622,19 +7640,19 @@ msgstr ""
 "Покажи\n"
 "елементи"
 
-#: widgets/kpropertiesdialog.cpp:1966
+#: widgets/kpropertiesdialog.cpp:1967
 msgid "This flag allows viewing the content of the folder."
 msgstr "Оваа ознака дозволува преглед на содржината на папката."
 
-#: widgets/kpropertiesdialog.cpp:1968
+#: widgets/kpropertiesdialog.cpp:1969
 msgid "Read"
 msgstr "Читање"
 
-#: widgets/kpropertiesdialog.cpp:1969
+#: widgets/kpropertiesdialog.cpp:1970
 msgid "The Read flag allows viewing the content of the file."
 msgstr "Ознаката Читање дозволува преглед на содржината на датотеката."
 
-#: widgets/kpropertiesdialog.cpp:1975
+#: widgets/kpropertiesdialog.cpp:1976
 msgid ""
 "Write\n"
 "Entries"
@@ -7642,7 +7660,7 @@ msgstr ""
 "Запиши\n"
 "елементи"
 
-#: widgets/kpropertiesdialog.cpp:1976
+#: widgets/kpropertiesdialog.cpp:1977
 msgid ""
 "This flag allows adding, renaming and deleting of files. Note that deleting "
 "and renaming can be limited using the Sticky flag."
@@ -7651,38 +7669,38 @@ msgstr ""
 "Забележете дека бришењето и преименувањето може да биде ограничено со "
 "користење на ознаката Лепливо."
 
-#: widgets/kpropertiesdialog.cpp:1979
+#: widgets/kpropertiesdialog.cpp:1980
 msgid "Write"
 msgstr "Запишување"
 
-#: widgets/kpropertiesdialog.cpp:1980
+#: widgets/kpropertiesdialog.cpp:1981
 msgid "The Write flag allows modifying the content of the file."
 msgstr "Ознаката Запишување дозволува менување на содржината на датотеката."
 
-#: widgets/kpropertiesdialog.cpp:1986
+#: widgets/kpropertiesdialog.cpp:1987
 msgctxt "Enter folder"
 msgid "Enter"
 msgstr "Влез"
 
-#: widgets/kpropertiesdialog.cpp:1987
+#: widgets/kpropertiesdialog.cpp:1988
 msgid "Enable this flag to allow entering the folder."
 msgstr "Овозможете ја оваа ознака за да дозволите влез во папката."
 
-#: widgets/kpropertiesdialog.cpp:1989
+#: widgets/kpropertiesdialog.cpp:1990
 msgid "Exec"
 msgstr "Извршна"
 
-#: widgets/kpropertiesdialog.cpp:1990
+#: widgets/kpropertiesdialog.cpp:1991
 msgid "Enable this flag to allow executing the file as a program."
 msgstr ""
 "Овозможете ја оваа ознака за да дозволите извршување на датотеката како "
 "програма."
 
-#: widgets/kpropertiesdialog.cpp:1998
+#: widgets/kpropertiesdialog.cpp:1999
 msgid "Special"
 msgstr "Специјален"
 
-#: widgets/kpropertiesdialog.cpp:2002
+#: widgets/kpropertiesdialog.cpp:2003
 msgid ""
 "Special flag. Valid for the whole folder, the exact meaning of the flag can "
 "be seen in the right hand column."
@@ -7690,7 +7708,7 @@ msgstr ""
 "Специјална ознака. Важи за целата папка, а конкретното значење на ознаката "
 "може да се види во десната колона."
 
-#: widgets/kpropertiesdialog.cpp:2005
+#: widgets/kpropertiesdialog.cpp:2006
 msgid ""
 "Special flag. The exact meaning of the flag can be seen in the right hand "
 "column."
@@ -7698,15 +7716,15 @@ msgstr ""
 "Специјална ознака. Конкретното значење на ознаката може да се види во "
 "десната колона."
 
-#: widgets/kpropertiesdialog.cpp:2009
+#: widgets/kpropertiesdialog.cpp:2010
 msgid "User"
 msgstr "Корисник"
 
-#: widgets/kpropertiesdialog.cpp:2013
+#: widgets/kpropertiesdialog.cpp:2014
 msgid "Group"
 msgstr "Група"
 
-#: widgets/kpropertiesdialog.cpp:2023
+#: widgets/kpropertiesdialog.cpp:2024
 msgid ""
 "If this flag is set, the owner of this folder will be the owner of all new "
 "files."
@@ -7714,7 +7732,7 @@ msgstr ""
 "Ако е обележана оваа ознака, сопственикот на оваа папка ќе биде сопственик "
 "на сите нови датотеки."
 
-#: widgets/kpropertiesdialog.cpp:2026
+#: widgets/kpropertiesdialog.cpp:2027
 msgid ""
 "If this file is an executable and the flag is set, it will be executed with "
 "the permissions of the owner."
@@ -7722,14 +7740,14 @@ msgstr ""
 "Ако e оваа датотека извршна и е поставена оваа ознака, таа ќе биде извршена "
 "со дозволите на сопственикот."
 
-#: widgets/kpropertiesdialog.cpp:2031
+#: widgets/kpropertiesdialog.cpp:2032
 msgid ""
 "If this flag is set, the group of this folder will be set for all new files."
 msgstr ""
 "Ако е обележана оваа ознака, групата на оваа папка ќе биде поставена на сите "
 "нови датотеки."
 
-#: widgets/kpropertiesdialog.cpp:2034
+#: widgets/kpropertiesdialog.cpp:2035
 msgid ""
 "If this file is an executable and the flag is set, it will be executed with "
 "the permissions of the group."
@@ -7737,7 +7755,7 @@ msgstr ""
 "Ако e оваа датотека извршна и е поставена оваа ознака, таа ќе биде извршена "
 "со дозволите на групата."
 
-#: widgets/kpropertiesdialog.cpp:2039
+#: widgets/kpropertiesdialog.cpp:2040
 msgid ""
 "If the Sticky flag is set on a folder, only the owner and root can delete or "
 "rename files. Otherwise everybody with write permissions can do this."
@@ -7746,7 +7764,7 @@ msgstr ""
 "или root можат да бришат и да преименуваат датотеки. Инаку секој со дозволи "
 "за запишување може да го прави тоа."
 
-#: widgets/kpropertiesdialog.cpp:2043
+#: widgets/kpropertiesdialog.cpp:2044
 msgid ""
 "The Sticky flag on a file is ignored on Linux, but may be used on some "
 "systems"
@@ -7754,149 +7772,149 @@ msgstr ""
 "Ознаката Лепливо, поставена на датотека, не се користи на Линукс, но може да "
 "се користи на некои системи."
 
-#: widgets/kpropertiesdialog.cpp:2108
+#: widgets/kpropertiesdialog.cpp:2109
 msgid "Set UID"
 msgstr "Постави UID"
 
-#: widgets/kpropertiesdialog.cpp:2112
+#: widgets/kpropertiesdialog.cpp:2113
 msgid "Set GID"
 msgstr "Постави GID"
 
-#: widgets/kpropertiesdialog.cpp:2116
+#: widgets/kpropertiesdialog.cpp:2117
 msgctxt "File permission"
 msgid "Sticky"
 msgstr "Лепливо"
 
-#: widgets/kpropertiesdialog.cpp:2236
+#: widgets/kpropertiesdialog.cpp:2237
 msgid "Link"
 msgstr "Врска"
 
-#: widgets/kpropertiesdialog.cpp:2255
+#: widgets/kpropertiesdialog.cpp:2256
 msgid "Varying (No Change)"
 msgstr "Варира (без промени)"
 
-#: widgets/kpropertiesdialog.cpp:2368
+#: widgets/kpropertiesdialog.cpp:2369
 msgid "This file uses advanced permissions"
 msgid_plural "These files use advanced permissions."
 msgstr[0] "Оваа датотека користи напредни дозволи."
 msgstr[1] "Овие датотеки користат напредни дозволи."
 msgstr[2] "Овие датотеки користат напредни дозволи."
 
-#: widgets/kpropertiesdialog.cpp:2389
+#: widgets/kpropertiesdialog.cpp:2390
 msgid "This folder uses advanced permissions."
 msgid_plural "These folders use advanced permissions."
 msgstr[0] "Оваа папка користи напредни дозволи."
 msgstr[1] "Овие папки користат напредни дозволи."
 msgstr[2] "Овие папки користат напредни дозволи."
 
-#: widgets/kpropertiesdialog.cpp:2404
+#: widgets/kpropertiesdialog.cpp:2405
 msgid "These files use advanced permissions."
 msgstr "Овие датотеки користат напредни дозволи."
 
-#: widgets/kpropertiesdialog.cpp:2643
+#: widgets/kpropertiesdialog.cpp:2644
 msgctxt "@title:tab"
 msgid "&Checksums"
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2680 widgets/kpropertiesdialog.cpp:2691
-#: widgets/kpropertiesdialog.cpp:2702
+#: widgets/kpropertiesdialog.cpp:2702 widgets/kpropertiesdialog.cpp:2714
+#: widgets/kpropertiesdialog.cpp:2726
 #, fuzzy
 #| msgid "Calculating..."
 msgctxt "@action:button"
 msgid "Calculating..."
 msgstr "Пресметувам..."
 
-#: widgets/kpropertiesdialog.cpp:2843
+#: widgets/kpropertiesdialog.cpp:2868
 msgid "Invalid checksum."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2846
+#: widgets/kpropertiesdialog.cpp:2871
 msgctxt "@info:tooltip"
 msgid "The given input is not a valid MD5, SHA1 or SHA256 checksum."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2857
+#: widgets/kpropertiesdialog.cpp:2882
 msgid "Checksums match."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2860
+#: widgets/kpropertiesdialog.cpp:2885
 msgctxt "@info:tooltip"
 msgid "The computed checksum and the expected checksum match."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2871
+#: widgets/kpropertiesdialog.cpp:2896
 msgid ""
 "<p>Checksums do not match.</p>This may be due to a faulty download. Try re-"
 "downloading the file.<br/>If the verification still fails, contact the "
 "source of the file."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2876
+#: widgets/kpropertiesdialog.cpp:2901
 msgctxt "@info:tooltip"
 msgid "The computed checksum and the expected checksum differ."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2955
+#: widgets/kpropertiesdialog.cpp:2980
 msgid "U&RL"
 msgstr "U&RL"
 
-#: widgets/kpropertiesdialog.cpp:2962
+#: widgets/kpropertiesdialog.cpp:2987
 msgid "URL:"
 msgstr "URL:"
 
-#: widgets/kpropertiesdialog.cpp:3102
+#: widgets/kpropertiesdialog.cpp:3127
 msgid "De&vice"
 msgstr "&Уред"
 
-#: widgets/kpropertiesdialog.cpp:3131
+#: widgets/kpropertiesdialog.cpp:3156
 msgid "Device (/dev/fd0):"
 msgstr "Уред (/dev/fd0):"
 
-#: widgets/kpropertiesdialog.cpp:3132
+#: widgets/kpropertiesdialog.cpp:3157
 msgid "Device:"
 msgstr "Уред:"
 
-#: widgets/kpropertiesdialog.cpp:3145
+#: widgets/kpropertiesdialog.cpp:3170
 msgid "Read only"
 msgstr "Само за читање"
 
-#: widgets/kpropertiesdialog.cpp:3149
+#: widgets/kpropertiesdialog.cpp:3174
 msgid "File system:"
 msgstr "Датотечен систем:"
 
-#: widgets/kpropertiesdialog.cpp:3157
+#: widgets/kpropertiesdialog.cpp:3182
 msgid "Mount point (/mnt/floppy):"
 msgstr "Точка на монтирање (/mnt/floppy):"
 
-#: widgets/kpropertiesdialog.cpp:3158
+#: widgets/kpropertiesdialog.cpp:3183
 msgid "Mount point:"
 msgstr "Точка на монтирање:"
 
-#: widgets/kpropertiesdialog.cpp:3402
+#: widgets/kpropertiesdialog.cpp:3427
 msgid "&Application"
 msgstr "&Апликација"
 
-#: widgets/kpropertiesdialog.cpp:3528
+#: widgets/kpropertiesdialog.cpp:3553
 #, kde-format
 msgid "Add File Type for %1"
 msgstr "Додај тип на датотека за %1"
 
-#: widgets/kpropertiesdialog.cpp:3529
+#: widgets/kpropertiesdialog.cpp:3554
 msgid "Select one or more file types to add:"
 msgstr "Изберете еден или повеќе типови датотеки за додавање:"
 
-#: widgets/kpropertiesdialog.cpp:3590
+#: widgets/kpropertiesdialog.cpp:3615
 #, fuzzy
 #| msgid "Only executables on local file systems are supported."
 msgid ""
 "Could not save properties. Only entries on local file systems are supported."
 msgstr "Поддржани се само извршни на локалните датотечни системи."
 
-#: widgets/kpropertiesdialog.cpp:3669
+#: widgets/kpropertiesdialog.cpp:3694
 msgid "Only executables on local file systems are supported."
 msgstr "Поддржани се само извршни на локалните датотечни системи."
 
-#: widgets/kpropertiesdialog.cpp:3683
+#: widgets/kpropertiesdialog.cpp:3708
 #, kde-format
 msgid "Advanced Options for %1"
 msgstr "Напредни опции за %1"
