@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-07-25 07:36+0000\n"
+"POT-Creation-Date: 2016-08-01 07:34+0000\n"
 "PO-Revision-Date: 2009-06-22 11:48+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -4318,12 +4318,12 @@ msgid "Disk cache &size:"
 msgstr "Гол&емина на кешот на дискот:"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, sbMaxCacheSize)
-#: kcms/kio/cache.ui:101
+#: kcms/kio/cache.ui:104
 msgid " KiB"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, clearCacheButton)
-#: kcms/kio/cache.ui:111
+#: kcms/kio/cache.ui:114
 msgid "C&lear Cache"
 msgstr "Из&бриши го кешот"
 
@@ -4896,12 +4896,14 @@ msgstr ""
 "постарите FTP сервери може да не поддржуваат пасивен FTP."
 
 #. i18n: ectx: label, entry (MarkPartial), group (DesktopIcons)
-#: kcms/kio/kio_ftprc.kcfg:16
+#. i18n: ectx: label, entry (MarkPartial), group (Global Options)
+#: kcms/kio/kio_ftprc.kcfg:16 kcms/kio/kioslave.kcfg:34
 msgid "Mark partially uploaded files"
 msgstr "Означи ги делумно подигнатите датотеки"
 
 #. i18n: ectx: whatsthis, entry (MarkPartial), group (DesktopIcons)
-#: kcms/kio/kio_ftprc.kcfg:17
+#. i18n: ectx: whatsthis, entry (MarkPartial), group (Global Options)
+#: kcms/kio/kio_ftprc.kcfg:17 kcms/kio/kioslave.kcfg:35
 msgid ""
 "While a file is being uploaded its extension is \".part\". When fully "
 "uploaded it is renamed to its real name."
@@ -5459,14 +5461,40 @@ msgid "&Server response:"
 msgstr "Одгово&р од серверот:"
 
 #: kcms/kio/netpref.cpp:67
+#, fuzzy
+#| msgid "Options"
+msgid "Global Options"
+msgstr "Опции"
+
+#: kcms/kio/netpref.cpp:71 kcms/kio/netpref.cpp:93
+msgid "Mark &partially uploaded files"
+msgstr "Означи ги делумно &подигнатите датотеки"
+
+#: kcms/kio/netpref.cpp:72
+#, fuzzy
+#| msgid ""
+#| "<p>Marks partially uploaded FTP files.</p><p>When this option is enabled, "
+#| "partially uploaded files will have a \".part\" extension. This extension "
+#| "will be removed once the transfer is complete.</p>"
+msgid ""
+"<p>Marks partially uploaded files through SMB, SFTP and other protocols.</"
+"p><p>When this option is enabled, partially uploaded files will have a \"."
+"part\" extension. This extension will be removed once the transfer is "
+"complete.</p>"
+msgstr ""
+"<p>Ги означува делумно подигнатите FTP-датотеки.</p><p>Кога е избрана оваа "
+"опција делумно подигнатите датотеки ќе имаат наставка „.part“. Оваа наставка "
+"ќе биде тргната кога преносот целосно ќе заврши.</p>"
+
+#: kcms/kio/netpref.cpp:82
 msgid "FTP Options"
 msgstr "Опции за FTP"
 
-#: kcms/kio/netpref.cpp:71
+#: kcms/kio/netpref.cpp:86
 msgid "Enable passive &mode (PASV)"
 msgstr "Овозможи пасивен режи&м (PASV)"
 
-#: kcms/kio/netpref.cpp:72
+#: kcms/kio/netpref.cpp:87
 msgid ""
 "Enables FTP's \"passive\" mode. This is required to allow FTP to work from "
 "behind firewalls."
@@ -5474,11 +5502,7 @@ msgstr ""
 "Го овозможува „пасивниот“ режим на FTP. Ова е потребно за да се овозможи FTP "
 "да работи зад огнен ѕид."
 
-#: kcms/kio/netpref.cpp:78
-msgid "Mark &partially uploaded files"
-msgstr "Означи ги делумно &подигнатите датотеки"
-
-#: kcms/kio/netpref.cpp:79
+#: kcms/kio/netpref.cpp:94
 msgid ""
 "<p>Marks partially uploaded FTP files.</p><p>When this option is enabled, "
 "partially uploaded files will have a \".part\" extension. This extension "
@@ -5488,7 +5512,7 @@ msgstr ""
 "опција делумно подигнатите датотеки ќе имаат наставка „.part“. Оваа наставка "
 "ќе биде тргната кога преносот целосно ќе заврши.</p>"
 
-#: kcms/kio/netpref.cpp:147
+#: kcms/kio/netpref.cpp:168
 msgid ""
 "<h1>Network Preferences</h1>Here you can define the behavior of KDE programs "
 "when using Internet and network connections. If you experience timeouts or "
