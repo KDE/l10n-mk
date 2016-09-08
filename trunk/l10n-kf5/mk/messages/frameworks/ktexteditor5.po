@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-09-07 06:59+0000\n"
+"POT-Creation-Date: 2016-09-08 07:30+0000\n"
 "PO-Revision-Date: 2009-01-08 12:55+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -257,28 +257,28 @@ msgid "&Code Folding"
 msgstr "&Склопување на код"
 
 #. i18n: ectx: Menu (tools)
-#: data/katepart5ui.rc:102
+#: data/katepart5ui.rc:94
 msgid "&Tools"
 msgstr "&Алатки"
 
 #. i18n: ectx: Menu (wordcompletion)
-#: data/katepart5ui.rc:115
+#: data/katepart5ui.rc:107
 #, fuzzy
 msgid "Word Completion"
 msgstr "Приклучок за довршување на зборови"
 
 #. i18n: ectx: Menu (spelling)
-#: data/katepart5ui.rc:121 spellcheck/spellingmenu.cpp:97
+#: data/katepart5ui.rc:113 spellcheck/spellingmenu.cpp:97
 msgid "Spelling"
 msgstr ""
 
 #. i18n: ectx: Menu (settings)
-#: data/katepart5ui.rc:144
+#: data/katepart5ui.rc:136
 msgid "&Settings"
 msgstr "По&ставувања"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: data/katepart5ui.rc:166
+#: data/katepart5ui.rc:158
 msgid "Main Toolbar"
 msgstr "Главен алатник"
 
@@ -1347,63 +1347,54 @@ msgstr "Оди"
 msgid "Dictionary:"
 msgstr "&Секција:"
 
-#: dialogs/katedialogs.cpp:1339
-msgid "File Was Deleted on Disk"
-msgstr "Датотеката беше избришана на диск"
+#: dialogs/katedialogs.cpp:1345
+#, fuzzy
+#| msgid "&View Difference"
+msgid "View &Difference"
+msgstr "&Види разлика"
 
-#: dialogs/katedialogs.cpp:1340
-msgid "&Save File As..."
-msgstr "&Зачувај датотека како..."
-
-#: dialogs/katedialogs.cpp:1342
-msgid "Lets you select a location and save the file again."
+#: dialogs/katedialogs.cpp:1346
+msgid "Shows a diff of the changes"
 msgstr ""
-"Ви овозможува да изберете локација и повторно да ја зачувате датотеката."
 
-#: dialogs/katedialogs.cpp:1344
-msgid "File Changed on Disk"
-msgstr "Датотеката беше променета на диск"
+#: dialogs/katedialogs.cpp:1351
+#, fuzzy
+#| msgid "Reloa&d"
+msgid "&Reload"
+msgstr "Пре&вчитај"
 
-#: dialogs/katedialogs.cpp:1345 document/katedocument.cpp:4197
-msgid "&Reload File"
-msgstr "&Превчитај датотека"
-
-#: dialogs/katedialogs.cpp:1347
-msgid ""
-"Reload the file from disk. If you have unsaved changes, they will be lost."
+#: dialogs/katedialogs.cpp:1353
+#, fuzzy
+#| msgid ""
+#| "Reload the file from disk. If you have unsaved changes, they will be lost."
+msgid "Reload the file from disk. Unsaved changes will be lost."
 msgstr ""
 "Ја превчитува датотеката од диск. Ако сте имале незачувани промени тие ќе "
 "бидат загубени."
 
-#: dialogs/katedialogs.cpp:1361 document/katedocument.cpp:4195
-msgid "What do you want to do?"
-msgstr "Што сакате да направите?"
+#: dialogs/katedialogs.cpp:1357
+#, fuzzy
+#| msgid "&Save File As..."
+msgid "&Save As..."
+msgstr "&Зачувај датотека како..."
 
-#: dialogs/katedialogs.cpp:1372 document/katedocument.cpp:4198
-msgid "&Ignore Changes"
-msgstr "&Игнорирај измени"
+#: dialogs/katedialogs.cpp:1359
+msgid "Lets you select a location and save the file again."
+msgstr ""
+"Ви овозможува да изберете локација и повторно да ја зачувате датотеката."
 
-#: dialogs/katedialogs.cpp:1373
-msgid "Ignore the changes. You will not be prompted again."
+#. i18n: ectx: property (text), widget (QPushButton, m_skipBtn)
+#: dialogs/katedialogs.cpp:1364 spellcheck/spellcheckbar.ui:143
+msgid "&Ignore"
+msgstr "&Игнорирај"
+
+#: dialogs/katedialogs.cpp:1365
+#, fuzzy
+#| msgid "Ignore the changes. You will not be prompted again."
+msgid "Ignores the changes on disk without any action."
 msgstr "Ги игнорира промените. Нема да бидете прашани повторно."
 
-#: dialogs/katedialogs.cpp:1379
-msgid ""
-"Do nothing. Next time you focus the file, or try to save it or close it, you "
-"will be prompted again."
-msgstr ""
-
-#: dialogs/katedialogs.cpp:1388
-msgid "Overwrite the disk file with the editor content."
-msgstr "Ја пребришува датотеката на диск со содржината на уредувачот."
-
-#: dialogs/katedialogs.cpp:1399
-#, fuzzy
-#| msgid "&Word Wrap Document"
-msgid "Close the document."
-msgstr "&Пренеси ги зборовите од документот"
-
-#: dialogs/katedialogs.cpp:1468 swapfile/kateswapdiffcreator.cpp:137
+#: dialogs/katedialogs.cpp:1432 swapfile/kateswapdiffcreator.cpp:137
 msgid ""
 "The diff command failed. Please make sure that diff(1) is installed and in "
 "your PATH."
@@ -1411,58 +1402,17 @@ msgstr ""
 "Наредбата diff не успеа. Осигурете се дека е diff(1) инсталирана и се наоѓа "
 "во вашата $PATH."
 
-#: dialogs/katedialogs.cpp:1470 swapfile/kateswapdiffcreator.cpp:139
+#: dialogs/katedialogs.cpp:1434 swapfile/kateswapdiffcreator.cpp:139
 msgid "Error Creating Diff"
 msgstr "Грешка при креирање разлики"
 
-#: dialogs/katedialogs.cpp:1479 swapfile/kateswapdiffcreator.cpp:147
+#: dialogs/katedialogs.cpp:1442 swapfile/kateswapdiffcreator.cpp:147
 msgid "The files are identical."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1480 dialogs/katedialogs.cpp:1484
-#: swapfile/kateswapdiffcreator.cpp:148
+#: dialogs/katedialogs.cpp:1443 swapfile/kateswapdiffcreator.cpp:148
 msgid "Diff Output"
 msgstr "Излез од разликата"
-
-#: dialogs/katedialogs.cpp:1483
-#, fuzzy
-#| msgid "Besides white space changes, the files are identical."
-msgid "Ignoring amount of white space changed, the files are identical."
-msgstr "Освен промени во празните места, датотеките се идентични."
-
-#: dialogs/katedialogs.cpp:1508
-msgid ""
-"Ignoring means that you will not be warned again (unless the disk file "
-"changes once more): if you save the document, you will overwrite the file on "
-"disk; if you do not save then the disk file (if present) is what you have."
-msgstr ""
-"Игнорирањето значи дека нема да бидете предупредени повторно (освен ако "
-"датотеката на дискот не се смени уште еднаш): ако го зачувате документот, ќе "
-"ја пребришете датотеката на дискот; ако не го зачувате тогаш датотеката на "
-"дискот (ако постои) е тоа што го имате."
-
-#: dialogs/katedialogs.cpp:1512
-#, fuzzy
-msgid "You Are on Your Own"
-msgstr "Оставени сте сами на себеси"
-
-#. i18n: ectx: property (text), widget (QCheckBox, chkIgnoreWhiteSpaces)
-#: dialogs/modonhdwidget.ui:23
-#, fuzzy
-msgid "Ignore white space changes"
-msgstr "&Игнорирај измени"
-
-#. i18n: ectx: property (whatsThis), widget (QPushButton, btnDiff)
-#: dialogs/modonhdwidget.ui:30
-msgid ""
-"Calculates the difference between the editor contents and the disk file "
-"using diff(1)."
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QPushButton, btnDiff)
-#: dialogs/modonhdwidget.ui:33
-msgid "&View Difference"
-msgstr "&Види разлика"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbCursorMovement)
 #: dialogs/navigationconfigwidget.ui:12
@@ -1855,7 +1805,7 @@ msgid "Append newline at end of file on save"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbWordWrap)
-#: dialogs/textareaappearanceconfigwidget.ui:9 view/kateview.cpp:692
+#: dialogs/textareaappearanceconfigwidget.ui:9 view/kateview.cpp:693
 msgid ""
 "If this option is checked, the text lines will be wrapped at the view border "
 "on the screen."
@@ -1864,7 +1814,7 @@ msgstr ""
 "на погледот на екранот."
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbWordWrap)
-#: dialogs/textareaappearanceconfigwidget.ui:12 view/kateview.cpp:689
+#: dialogs/textareaappearanceconfigwidget.ui:12 view/kateview.cpp:690
 msgid "&Dynamic Word Wrap"
 msgstr "&Динамичко пренесување на зборови"
 
@@ -2016,7 +1966,7 @@ msgstr "Нов тип на датотека"
 msgid "The file %1 does not exist."
 msgstr ""
 
-#: document/katedocument.cpp:2146
+#: document/katedocument.cpp:2149
 #, fuzzy, kde-format
 #| msgid ""
 #| "The file %1 could not be loaded, as it was not possible to read from it.\n"
@@ -2031,20 +1981,20 @@ msgstr ""
 "\n"
 "Проверете дали имате пристап за читање за оваа датотека."
 
-#: document/katedocument.cpp:2149
+#: document/katedocument.cpp:2152
 msgctxt "translators: you can also translate 'Try Again' with 'Reload'"
 msgid "Try Again"
 msgstr ""
 
-#: document/katedocument.cpp:2152 document/katedocument.cpp:5934
+#: document/katedocument.cpp:2155 document/katedocument.cpp:5926
 msgid "&Close"
 msgstr ""
 
-#: document/katedocument.cpp:2153 document/katedocument.cpp:5935
+#: document/katedocument.cpp:2156 document/katedocument.cpp:5927
 msgid "Close message"
 msgstr ""
 
-#: document/katedocument.cpp:2164
+#: document/katedocument.cpp:2167
 #, kde-format
 msgid ""
 "The file %1 could not be loaded, as it was not possible to read from it.\n"
@@ -2056,7 +2006,7 @@ msgstr ""
 "\n"
 "Проверете дали имате пристап за читање за оваа датотека."
 
-#: document/katedocument.cpp:2280
+#: document/katedocument.cpp:2284
 #, kde-format
 msgid ""
 "The file %1 was opened with %2 encoding but contained invalid characters."
@@ -2065,7 +2015,7 @@ msgid ""
 "write mode again in the tools menu to be able to edit it."
 msgstr ""
 
-#: document/katedocument.cpp:2290
+#: document/katedocument.cpp:2294
 #, kde-format
 msgid ""
 "The file %1 was opened with %2 encoding but contained invalid characters. It "
@@ -2074,7 +2024,7 @@ msgid ""
 "again in the tools menu to be able to edit it."
 msgstr ""
 
-#: document/katedocument.cpp:2301
+#: document/katedocument.cpp:2305
 #, kde-format
 msgid ""
 "The file %1 was opened and contained lines longer than the configured Line "
@@ -2083,15 +2033,15 @@ msgid ""
 "only mode, as saving will modify its content."
 msgstr ""
 
-#: document/katedocument.cpp:2306
+#: document/katedocument.cpp:2310
 msgid "Temporarily raise limit and reload file"
 msgstr ""
 
-#: document/katedocument.cpp:2309
+#: document/katedocument.cpp:2313
 msgid "Close"
 msgstr ""
 
-#: document/katedocument.cpp:2315
+#: document/katedocument.cpp:2319
 #, kde-format
 msgid ""
 "The file %1 was opened and contained lines longer than the configured Line "
@@ -2100,7 +2050,7 @@ msgid ""
 "only mode, as saving will modify its content."
 msgstr ""
 
-#: document/katedocument.cpp:2335
+#: document/katedocument.cpp:2342
 msgid ""
 "Do you really want to save this unmodified file? You could overwrite changed "
 "data in the file on disk."
@@ -2108,16 +2058,16 @@ msgstr ""
 "Дали навистина сакате да ја зачувате неизменетава датотека? Може да "
 "пребришете изменети податоци во датотеката на дискот."
 
-#: document/katedocument.cpp:2335
+#: document/katedocument.cpp:2342
 msgid "Trying to Save Unmodified File"
 msgstr "Обид да се зачува неизменета датотека"
 
-#: document/katedocument.cpp:2335 document/katedocument.cpp:2340
-#: document/katedocument.cpp:2352
+#: document/katedocument.cpp:2342 document/katedocument.cpp:2347
+#: document/katedocument.cpp:2359
 msgid "Save Nevertheless"
 msgstr "Зачувај сепак"
 
-#: document/katedocument.cpp:2340
+#: document/katedocument.cpp:2347
 msgid ""
 "Do you really want to save this file? Both your open file and the file on "
 "disk were changed. There could be some data lost."
@@ -2125,12 +2075,12 @@ msgstr ""
 "Дали навистина сакате да ја зачувате датотекава? Беа изменети и вашата "
 "отворена датотека и датотеката на дискот. Можно е да има губиток на податоци."
 
-#: document/katedocument.cpp:2340 document/katedocument.cpp:2352
-#: document/katedocument.cpp:2633
+#: document/katedocument.cpp:2347 document/katedocument.cpp:2359
+#: document/katedocument.cpp:2643
 msgid "Possible Data Loss"
 msgstr "Можна загуба на податоци"
 
-#: document/katedocument.cpp:2352
+#: document/katedocument.cpp:2359
 msgid ""
 "The selected encoding cannot encode every unicode character in this "
 "document. Do you really want to save it? There could be some data lost."
@@ -2138,7 +2088,7 @@ msgstr ""
 "Избраното кодирање не може да го кодира секој уникод-знак во овој документ. "
 "Дали навистина сакате да го зачувате? Можно е да има губење на податоци."
 
-#: document/katedocument.cpp:2395 document/katedocument.cpp:4319
+#: document/katedocument.cpp:2402 document/katedocument.cpp:4321
 #, kde-format
 msgid ""
 "The document could not be saved, as it was not possible to write to %1.\n"
@@ -2152,7 +2102,7 @@ msgstr ""
 "Проверете дали имате пристап за запис до датотеката или дали има доволно "
 "место на дискот."
 
-#: document/katedocument.cpp:2520
+#: document/katedocument.cpp:2528
 #, kde-format
 msgid ""
 "For file %1 no backup copy could be created before saving. If an error "
@@ -2161,78 +2111,90 @@ msgid ""
 "only for you."
 msgstr ""
 
-#: document/katedocument.cpp:2523
+#: document/katedocument.cpp:2531
 msgid "Failed to create backup copy."
 msgstr ""
 
-#: document/katedocument.cpp:2524
+#: document/katedocument.cpp:2532
 #, fuzzy
 msgid "Try to Save Nevertheless"
 msgstr "Зачувај сепак"
 
-#: document/katedocument.cpp:2632
+#: document/katedocument.cpp:2642
 msgid "Do you really want to continue to close this file? Data loss may occur."
 msgstr ""
 "Дали навистина сакате да продолжите со затворањето на датотекава? Може да се "
 "случи губиток на податоци."
 
-#: document/katedocument.cpp:2633
+#: document/katedocument.cpp:2643
 msgid "Close Nevertheless"
 msgstr "Затвори сепак"
 
-#: document/katedocument.cpp:4080
+#: document/katedocument.cpp:4091
 msgid "Untitled"
 msgstr "Неименувано"
 
-#: document/katedocument.cpp:4115 document/katedocument.cpp:4284
-#: document/katedocument.cpp:4295 document/katedocument.cpp:4992
+#: document/katedocument.cpp:4132 document/katedocument.cpp:4286
+#: document/katedocument.cpp:4297 document/katedocument.cpp:4989
 msgid "Save File"
 msgstr "Зачувај датотека"
 
-#: document/katedocument.cpp:4119
+#: document/katedocument.cpp:4136
 msgid "Save failed"
 msgstr "Зачувувањето не успеа"
 
 #: document/katedocument.cpp:4196
+msgid "What do you want to do?"
+msgstr "Што сакате да направите?"
+
+#: document/katedocument.cpp:4197
 msgid "File Was Changed on Disk"
 msgstr "Датотеката беше променета на диск"
 
-#: document/katedocument.cpp:4307
+#: document/katedocument.cpp:4198
+msgid "&Reload File"
+msgstr "&Превчитај датотека"
+
+#: document/katedocument.cpp:4199
+msgid "&Ignore Changes"
+msgstr "&Игнорирај измени"
+
+#: document/katedocument.cpp:4309
 #, fuzzy
 #| msgid "Save File"
 msgid "Save Copy of File"
 msgstr "Зачувај датотека"
 
-#: document/katedocument.cpp:4533
+#: document/katedocument.cpp:4535
 msgid ""
 "Using deprecated modeline 'remove-trailing-space'. Please replace with "
 "'remove-trailing-spaces modified;', see http://docs.kde.org/stable/en/"
 "applications/kate/config-variables.html#variable-remove-trailing-spaces"
 msgstr ""
 
-#: document/katedocument.cpp:4538
+#: document/katedocument.cpp:4540
 msgid ""
 "Using deprecated modeline 'replace-trailing-space-save'. Please replace with "
 "'remove-trailing-spaces all;', see http://docs.kde.org/stable/en/"
 "applications/kate/config-variables.html#variable-remove-trailing-spaces"
 msgstr ""
 
-#: document/katedocument.cpp:4879
+#: document/katedocument.cpp:4876
 #, kde-format
 msgid "The file '%1' was modified by another program."
 msgstr "Датотеката „%1“ беше изменета од друга програма."
 
-#: document/katedocument.cpp:4882
+#: document/katedocument.cpp:4879
 #, kde-format
 msgid "The file '%1' was created by another program."
 msgstr "Датотеката „%1“ беше создадена од друга програма."
 
-#: document/katedocument.cpp:4885
+#: document/katedocument.cpp:4882
 #, kde-format
 msgid "The file '%1' was deleted by another program."
 msgstr "Датотеката „%1“ беше избришана од друга програма."
 
-#: document/katedocument.cpp:5019
+#: document/katedocument.cpp:5016
 #, kde-format
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
@@ -2240,29 +2202,29 @@ msgstr ""
 "Датотека со име „%1“ веќе постои. Дали сте сигурни дека сакате да ја "
 "пребришете?"
 
-#: document/katedocument.cpp:5021
+#: document/katedocument.cpp:5018
 msgid "Overwrite File?"
 msgstr "Пребриши датотека?"
 
-#: document/katedocument.cpp:5238
+#: document/katedocument.cpp:5230
 #, kde-format
 msgid ""
 "The document \"%1\" has been modified.\n"
 "Do you want to save your changes or discard them?"
 msgstr ""
 
-#: document/katedocument.cpp:5240
+#: document/katedocument.cpp:5232
 #, fuzzy
 #| msgid "&Word Wrap Document"
 msgid "Close Document"
 msgstr "&Пренеси ги зборовите од документот"
 
-#: document/katedocument.cpp:5373
+#: document/katedocument.cpp:5365
 #, kde-format
 msgid "The file <a href=\"%1\">%2</a> is still loading."
 msgstr ""
 
-#: document/katedocument.cpp:5380
+#: document/katedocument.cpp:5372
 msgid "&Abort Loading"
 msgstr ""
 
@@ -4326,11 +4288,6 @@ msgid ""
 "</p>\n"
 "</qt>"
 msgstr ""
-
-#. i18n: ectx: property (text), widget (QPushButton, m_skipBtn)
-#: spellcheck/spellcheckbar.ui:143
-msgid "&Ignore"
-msgstr "&Игнорирај"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel5)
 #. i18n: ectx: property (whatsThis), widget (QComboBox, m_language)
@@ -7737,50 +7694,50 @@ msgstr ""
 msgid "Words %1/%2, Chars %3/%4"
 msgstr ""
 
-#: view/kateview.cpp:471
+#: view/kateview.cpp:472
 msgid "Cut the selected text and move it to the clipboard"
 msgstr "Исечи го избраниот текст и премести го на таблата со исечоци"
 
-#: view/kateview.cpp:474
+#: view/kateview.cpp:475
 msgid "Paste previously copied or cut clipboard contents"
 msgstr "Вметни претходно копирана или исечена содржина од таблата со исечоци"
 
-#: view/kateview.cpp:477
+#: view/kateview.cpp:478
 msgid ""
 "Use this command to copy the currently selected text to the system clipboard."
 msgstr ""
 "Користете ја оваа команда за да го копирате избраниот текст на таблата со "
 "исечоци"
 
-#: view/kateview.cpp:479
+#: view/kateview.cpp:480
 msgid "Clipboard &History"
 msgstr ""
 
-#: view/kateview.cpp:484
+#: view/kateview.cpp:485
 msgid "Save the current document"
 msgstr "Зачувај го активниот документ"
 
-#: view/kateview.cpp:487
+#: view/kateview.cpp:488
 msgid "Revert the most recent editing actions"
 msgstr "Врати ги скорешните уредувачки акции"
 
-#: view/kateview.cpp:490
+#: view/kateview.cpp:491
 msgid "Revert the most recent undo operation"
 msgstr "Врати ги скорешните операции на враќање"
 
-#: view/kateview.cpp:493
+#: view/kateview.cpp:494
 #, fuzzy
 #| msgid "Scripts"
 msgid "&Scripts"
 msgstr "Скрипти"
 
-#: view/kateview.cpp:497
+#: view/kateview.cpp:498
 #, fuzzy
 #| msgid "&Dynamic Word Wrap"
 msgid "Apply &Word Wrap"
 msgstr "&Динамичко пренесување на зборови"
 
-#: view/kateview.cpp:498
+#: view/kateview.cpp:499
 msgid ""
 "Use this command to wrap all lines of the current document which are longer "
 "than the width of the current view, to fit into this view.<br /><br /> This "
@@ -7792,11 +7749,11 @@ msgstr ""
 "зборови, што значи нема да биде ажурирано кога големината на изгледот ќе се "
 "смени."
 
-#: view/kateview.cpp:504
+#: view/kateview.cpp:505
 msgid "&Clean Indentation"
 msgstr "&Исчисти вовлекување"
 
-#: view/kateview.cpp:505
+#: view/kateview.cpp:506
 msgid ""
 "Use this to clean the indentation of a selected block of text (only tabs/"
 "only spaces).<br /><br />You can configure whether tabs should be honored "
@@ -7807,11 +7764,11 @@ msgstr ""
 "можете да  поставите дали ќе се почитуваат табулаторите или ќе се заменат со "
 "празни места."
 
-#: view/kateview.cpp:510
+#: view/kateview.cpp:511
 msgid "&Align"
 msgstr "&Порамни"
 
-#: view/kateview.cpp:511
+#: view/kateview.cpp:512
 msgid ""
 "Use this to align the current line or block of text to its proper indent "
 "level."
@@ -7819,11 +7776,11 @@ msgstr ""
 "Користете го ова за да ги порамните активната линија или блок кон нивното "
 "соодветно ниво на вовлекување."
 
-#: view/kateview.cpp:515
+#: view/kateview.cpp:516
 msgid "C&omment"
 msgstr "&Коментирај"
 
-#: view/kateview.cpp:517
+#: view/kateview.cpp:518
 msgid ""
 "This command comments out the current line or a selected block of text.<br /"
 "><br />The characters for single/multiple line comments are defined within "
@@ -7833,23 +7790,23 @@ msgstr ""
 "> <br />Знаците за коментари на една или повеќе линии се дефинирани во "
 "рамките на означувањето на јазикот."
 
-#: view/kateview.cpp:522
+#: view/kateview.cpp:523
 #, fuzzy
 #| msgid "Move to Previous Line"
 msgid "Go to previous editing line"
 msgstr "Премести на претходната линија"
 
-#: view/kateview.cpp:527
+#: view/kateview.cpp:528
 #, fuzzy
 #| msgid "Select to Next Line"
 msgid "Go to next editing line"
 msgstr "Избери до следната линија"
 
-#: view/kateview.cpp:532
+#: view/kateview.cpp:533
 msgid "Unco&mment"
 msgstr "&Одкоментирај"
 
-#: view/kateview.cpp:534
+#: view/kateview.cpp:535
 msgid ""
 "This command removes comments from the current line or a selected block of "
 "text.<br /><br />The characters for single/multiple line comments are "
@@ -7859,24 +7816,24 @@ msgstr ""
 "текст. <br /> <br />Знаците за коментари на една или повеќе линии се "
 "дефинирани во рамките на означувањето на јазикот."
 
-#: view/kateview.cpp:539
+#: view/kateview.cpp:540
 #, fuzzy
 msgid "Toggle Comment"
 msgstr "Коментар"
 
-#: view/kateview.cpp:542
+#: view/kateview.cpp:543
 msgid "&Read Only Mode"
 msgstr "&Режим само за читање"
 
-#: view/kateview.cpp:543
+#: view/kateview.cpp:544
 msgid "Lock/unlock the document for writing"
 msgstr "Заклучи/Отклучи го документот за запишување"
 
-#: view/kateview.cpp:549
+#: view/kateview.cpp:550
 msgid "Uppercase"
 msgstr "Големи букви"
 
-#: view/kateview.cpp:551
+#: view/kateview.cpp:552
 msgid ""
 "Convert the selection to uppercase, or the character to the right of the "
 "cursor if no text is selected."
@@ -7884,11 +7841,11 @@ msgstr ""
 "Го претвора изборот во големи букви, или го менува знакот десно од курсорот "
 "ако не е избран текст."
 
-#: view/kateview.cpp:556
+#: view/kateview.cpp:557
 msgid "Lowercase"
 msgstr "Мали букви"
 
-#: view/kateview.cpp:558
+#: view/kateview.cpp:559
 msgid ""
 "Convert the selection to lowercase, or the character to the right of the "
 "cursor if no text is selected."
@@ -7896,11 +7853,11 @@ msgstr ""
 "Го претвора изборот во мали букви, или го менува знакот десно од курсорот "
 "ако не е избран текст."
 
-#: view/kateview.cpp:563
+#: view/kateview.cpp:564
 msgid "Capitalize"
 msgstr "Прва буква голема"
 
-#: view/kateview.cpp:565
+#: view/kateview.cpp:566
 msgid ""
 "Capitalize the selection, or the word under the cursor if no text is "
 "selected."
@@ -7908,15 +7865,15 @@ msgstr ""
 "Ги претвора првите букви од изборот во големи, или првата буква од зборот "
 "под курсорот ако не е избран текст."
 
-#: view/kateview.cpp:570
+#: view/kateview.cpp:571
 msgid "Join Lines"
 msgstr "Спои линии"
 
-#: view/kateview.cpp:575
+#: view/kateview.cpp:576
 msgid "Invoke Code Completion"
 msgstr "Повикај довршување на код"
 
-#: view/kateview.cpp:576
+#: view/kateview.cpp:577
 msgid ""
 "Manually invoke command completion, usually by using a shortcut bound to "
 "this action."
@@ -7924,45 +7881,45 @@ msgstr ""
 "Рачно го стартува довршувањето наредби, обично со користење кратенка што е "
 "поврзана со ова дејство."
 
-#: view/kateview.cpp:588
+#: view/kateview.cpp:589
 msgid "Print the current document."
 msgstr "Печати го активниот документ."
 
-#: view/kateview.cpp:591
+#: view/kateview.cpp:592
 #, fuzzy
 #| msgid "Print the current document."
 msgid "Show print preview of current document"
 msgstr "Печати го активниот документ."
 
-#: view/kateview.cpp:595
+#: view/kateview.cpp:596
 msgid "Reloa&d"
 msgstr "Пре&вчитај"
 
-#: view/kateview.cpp:597
+#: view/kateview.cpp:598
 msgid "Reload the current document from disk."
 msgstr "Го превчитува активниот документ од диск."
 
-#: view/kateview.cpp:601
+#: view/kateview.cpp:602
 msgid "Save the current document to disk, with a name of your choice."
 msgstr "Го зачувува активниот документ на диск, со име по ваш избор."
 
-#: view/kateview.cpp:603
+#: view/kateview.cpp:604
 msgid "Save As with Encoding..."
 msgstr ""
 
-#: view/kateview.cpp:609
+#: view/kateview.cpp:610
 #, fuzzy
 #| msgid "&Save File As..."
 msgid "Save &Copy As..."
 msgstr "&Зачувај датотека како..."
 
-#: view/kateview.cpp:610
+#: view/kateview.cpp:611
 #, fuzzy
 #| msgid "Reload the current document from disk."
 msgid "Save a copy of the current document to disk."
 msgstr "Го превчитува активниот документ од диск."
 
-#: view/kateview.cpp:614
+#: view/kateview.cpp:615
 msgid ""
 "This command opens a dialog and lets you choose a line that you want the "
 "cursor to move to."
@@ -7970,94 +7927,94 @@ msgstr ""
 "Оваа команда отвора дијалог и ви овозможува да изберете линија каде што "
 "сакате да се помести курсорот."
 
-#: view/kateview.cpp:617
+#: view/kateview.cpp:618
 #, fuzzy
 #| msgid "Move to Previous Line"
 msgid "Move to Previous Modified Line"
 msgstr "Премести на претходната линија"
 
-#: view/kateview.cpp:618
+#: view/kateview.cpp:619
 #, fuzzy
 #| msgid "Move to Matching Bracket"
 msgid "Move upwards to the previous modified line."
 msgstr "Оди до заградата што одговара"
 
-#: view/kateview.cpp:622
+#: view/kateview.cpp:623
 #, fuzzy
 #| msgid "Move to Next Line"
 msgid "Move to Next Modified Line"
 msgstr "Премести на следната линија"
 
-#: view/kateview.cpp:623
+#: view/kateview.cpp:624
 msgid "Move downwards to the next modified line."
 msgstr ""
 
-#: view/kateview.cpp:627
+#: view/kateview.cpp:628
 msgid "&Configure Editor..."
 msgstr "&Конфигурирај уредувач..."
 
-#: view/kateview.cpp:629
+#: view/kateview.cpp:630
 msgid "Configure various aspects of this editor."
 msgstr "Конфигурирате ги разните аспекти на овој уредувач."
 
-#: view/kateview.cpp:632
+#: view/kateview.cpp:633
 msgid "&Mode"
 msgstr "Режи&м"
 
-#: view/kateview.cpp:634
+#: view/kateview.cpp:635
 msgid ""
 "Here you can choose which mode should be used for the current document. This "
 "will influence the highlighting and folding being used, for example."
 msgstr ""
 
-#: view/kateview.cpp:637
+#: view/kateview.cpp:638
 msgid "&Highlighting"
 msgstr "&Означување"
 
-#: view/kateview.cpp:639
+#: view/kateview.cpp:640
 msgid "Here you can choose how the current document should be highlighted."
 msgstr "Тука можете да одберете како треба да биде означен активниот документ."
 
-#: view/kateview.cpp:642
+#: view/kateview.cpp:643
 msgid "&Schema"
 msgstr "&Шема"
 
-#: view/kateview.cpp:647
+#: view/kateview.cpp:648
 msgid "&Indentation"
 msgstr "&Вовлекување"
 
-#: view/kateview.cpp:651
+#: view/kateview.cpp:652
 msgid "Select the entire text of the current document."
 msgstr "Го избира целиот текст на документот."
 
-#: view/kateview.cpp:654
+#: view/kateview.cpp:655
 msgid ""
 "If you have selected something within the current document, this will no "
 "longer be selected."
 msgstr ""
 "Ако сте избрале нешто во активниот документ, ова нема повеќе да биде избрано."
 
-#: view/kateview.cpp:658
+#: view/kateview.cpp:659
 msgid "Enlarge Font"
 msgstr "Зголеми фонт"
 
-#: view/kateview.cpp:660
+#: view/kateview.cpp:661
 msgid "This increases the display font size."
 msgstr "Ова го зголемува фонтот за приказ."
 
-#: view/kateview.cpp:665
+#: view/kateview.cpp:666
 msgid "Shrink Font"
 msgstr "Намали фонт"
 
-#: view/kateview.cpp:667
+#: view/kateview.cpp:668
 msgid "This decreases the display font size."
 msgstr "Ова го намалува фонтот за приказ."
 
-#: view/kateview.cpp:670
+#: view/kateview.cpp:671
 msgid "Bl&ock Selection Mode"
 msgstr "&Режим избирање на блок"
 
-#: view/kateview.cpp:673
+#: view/kateview.cpp:674
 msgid ""
 "This command allows switching between the normal (line based) selection mode "
 "and the block selection mode."
@@ -8065,21 +8022,21 @@ msgstr ""
 "Оваа команда дозволува преминување помеѓу нормалниот (линијски) режим на "
 "избирање и режимот на избирање на блок."
 
-#: view/kateview.cpp:677
+#: view/kateview.cpp:678
 msgid "Switch to Next Input Mode"
 msgstr ""
 
-#: view/kateview.cpp:679
+#: view/kateview.cpp:680
 #, fuzzy
 #| msgid "Select to End of Line"
 msgid "Switch to the next input mode."
 msgstr "Избери до крај од линија"
 
-#: view/kateview.cpp:682
+#: view/kateview.cpp:683
 msgid "Overwr&ite Mode"
 msgstr "Режим &пребришување"
 
-#: view/kateview.cpp:685
+#: view/kateview.cpp:686
 msgid ""
 "Choose whether you want the text you type to be inserted or to overwrite "
 "existing text."
@@ -8087,33 +8044,33 @@ msgstr ""
 "Изберете дали сакате текстот кој го пишувате да биде внесен или да го "
 "пребрише постоечкиот текст."
 
-#: view/kateview.cpp:695
+#: view/kateview.cpp:696
 msgid "Dynamic Word Wrap Indicators"
 msgstr "Индикатори за динамичко пренесување на зборови"
 
-#: view/kateview.cpp:697
+#: view/kateview.cpp:698
 msgid "Choose when the Dynamic Word Wrap Indicators should be displayed"
 msgstr ""
 "Изберете дали треба да бидат прикажани ознаките за динамичко пренесување на "
 "зборови"
 
-#: view/kateview.cpp:701
+#: view/kateview.cpp:702
 msgid "&Off"
 msgstr "&Исклучено"
 
-#: view/kateview.cpp:702
+#: view/kateview.cpp:703
 msgid "Follow &Line Numbers"
 msgstr "Следи ги броевите на &линиите"
 
-#: view/kateview.cpp:703
+#: view/kateview.cpp:704
 msgid "&Always On"
 msgstr "&Секогаш вклучено"
 
-#: view/kateview.cpp:707
+#: view/kateview.cpp:708
 msgid "Show Folding &Markers"
 msgstr "Покажи &маркери за склопување"
 
-#: view/kateview.cpp:710
+#: view/kateview.cpp:711
 msgid ""
 "You can choose if the codefolding marks should be shown, if codefolding is "
 "possible."
@@ -8121,11 +8078,11 @@ msgstr ""
 "Може да изберете дали ќе бидат покажани маркерите за склопување, ако тоа е "
 "возможно."
 
-#: view/kateview.cpp:713
+#: view/kateview.cpp:714
 msgid "Show &Icon Border"
 msgstr "Покажи граница на &икона"
 
-#: view/kateview.cpp:716
+#: view/kateview.cpp:717
 msgid ""
 "Show/hide the icon border.<br /><br />The icon border shows bookmark "
 "symbols, for instance."
@@ -8133,20 +8090,20 @@ msgstr ""
 "Ја покажува или ја сокрива границата на иконата.<br /><br /> Границата на "
 "иконата може, на пример, да ги покажува симболите на обележувачите."
 
-#: view/kateview.cpp:719
+#: view/kateview.cpp:720
 msgid "Show &Line Numbers"
 msgstr "Покажи ги броевите на &линиите"
 
-#: view/kateview.cpp:722
+#: view/kateview.cpp:723
 msgid "Show/hide the line numbers on the left hand side of the view."
 msgstr ""
 "Ги покажува или ги сокрива броевите на линиите на левата страна од погледот."
 
-#: view/kateview.cpp:725
+#: view/kateview.cpp:726
 msgid "Show Scroll&bar Marks"
 msgstr "Покажи &ознаки на лентите за лизгање"
 
-#: view/kateview.cpp:727
+#: view/kateview.cpp:728
 msgid ""
 "Show/hide the marks on the vertical scrollbar.<br /><br />The marks show "
 "bookmarks, for instance."
@@ -8154,13 +8111,13 @@ msgstr ""
 "Ги покажува или ги сокрива ознаките на вертикалната лента за лизгање.<br /"
 "><br /> Ознаките, на пример, покажуваат обележувачи."
 
-#: view/kateview.cpp:730
+#: view/kateview.cpp:731
 #, fuzzy
 #| msgid "Show Scroll&bar Marks"
 msgid "Show Scrollbar Mini-Map"
 msgstr "Покажи &ознаки на лентите за лизгање"
 
-#: view/kateview.cpp:732
+#: view/kateview.cpp:733
 #, fuzzy
 #| msgid ""
 #| "Show/hide the marks on the vertical scrollbar.<br /><br />The marks show "
@@ -8172,11 +8129,11 @@ msgstr ""
 "Ги покажува или ги сокрива ознаките на вертикалната лента за лизгање.<br /"
 "><br /> Ознаките, на пример, покажуваат обележувачи."
 
-#: view/kateview.cpp:741
+#: view/kateview.cpp:742
 msgid "Show Static &Word Wrap Marker"
 msgstr "Покажи маркер за статичко &пренесување на зборови"
 
-#: view/kateview.cpp:744
+#: view/kateview.cpp:745
 msgid ""
 "Show/hide the Word Wrap Marker, a vertical line drawn at the word wrap "
 "column as defined in the editing properties"
@@ -8185,113 +8142,113 @@ msgstr ""
 "линија нацртана на колоната за пренесување како што е дефинирано во "
 "својствата за уредување"
 
-#: view/kateview.cpp:748
+#: view/kateview.cpp:749
 msgid "Show Non-Printable Spaces"
 msgstr ""
 
-#: view/kateview.cpp:750
+#: view/kateview.cpp:751
 msgid "Show/hide bounding box around non-printable spaces"
 msgstr ""
 
-#: view/kateview.cpp:753
+#: view/kateview.cpp:754
 msgid "Show Word Count"
 msgstr ""
 
-#: view/kateview.cpp:756
+#: view/kateview.cpp:757
 msgid "Show/hide word count in status bar"
 msgstr ""
 
-#: view/kateview.cpp:760
+#: view/kateview.cpp:761
 msgid "Switch to Command Line"
 msgstr "Префрли се на командна линија"
 
-#: view/kateview.cpp:762
+#: view/kateview.cpp:763
 msgid "Show/hide the command line on the bottom of the view."
 msgstr "Ја покажува или ја сокрива командната линија на дното на погледот."
 
-#: view/kateview.cpp:765
+#: view/kateview.cpp:766
 msgid "Input Modes"
 msgstr ""
 
-#: view/kateview.cpp:771
+#: view/kateview.cpp:772
 #, kde-format
 msgid "Activate/deactivate %1"
 msgstr ""
 
-#: view/kateview.cpp:777
+#: view/kateview.cpp:778
 msgid "&End of Line"
 msgstr "&Крај на линија"
 
-#: view/kateview.cpp:779
+#: view/kateview.cpp:780
 msgid "Choose which line endings should be used, when you save the document"
 msgstr ""
 "Изберете какви краеви на линии треба да се користат, кога ќе го зачувате "
 "документот."
 
-#: view/kateview.cpp:781
+#: view/kateview.cpp:782
 #, fuzzy
 #| msgid "UNIX"
 msgctxt "@item:inmenu End of Line"
 msgid "&UNIX"
 msgstr "UNIX"
 
-#: view/kateview.cpp:782
+#: view/kateview.cpp:783
 #, fuzzy
 #| msgid "DOS/Windows"
 msgctxt "@item:inmenu End of Line"
 msgid "&Windows/DOS"
 msgstr "DOS/Windows"
 
-#: view/kateview.cpp:783
+#: view/kateview.cpp:784
 #, fuzzy
 #| msgid "Macintosh"
 msgctxt "@item:inmenu End of Line"
 msgid "&Macintosh"
 msgstr "Macintosh"
 
-#: view/kateview.cpp:788
+#: view/kateview.cpp:789
 msgid "Add &Byte Order Mark (BOM)"
 msgstr ""
 
-#: view/kateview.cpp:791
+#: view/kateview.cpp:792
 msgid ""
 "Enable/disable adding of byte order markers for UTF-8/UTF-16 encoded files "
 "while saving"
 msgstr ""
 
-#: view/kateview.cpp:795
+#: view/kateview.cpp:796
 msgid "E&ncoding"
 msgstr "&Кодирање"
 
-#: view/kateview.cpp:799
+#: view/kateview.cpp:800
 msgid "Look up the first occurrence of a piece of text or regular expression."
 msgstr "Најди го првото појавување на дел од текст или регуларен израз."
 
-#: view/kateview.cpp:803
+#: view/kateview.cpp:804
 msgid "Find Selected"
 msgstr "Пронаоѓање на избрано"
 
-#: view/kateview.cpp:805
+#: view/kateview.cpp:806
 msgid "Finds next occurrence of selected text."
 msgstr "Го пронаоѓа следното појавување на избраниот текст."
 
-#: view/kateview.cpp:809
+#: view/kateview.cpp:810
 msgid "Find Selected Backwards"
 msgstr "Пронаоѓање на избрано наназад"
 
-#: view/kateview.cpp:811
+#: view/kateview.cpp:812
 msgid "Finds previous occurrence of selected text."
 msgstr "Го пронаоѓа претходното појавување на избраниот текст."
 
-#: view/kateview.cpp:815
+#: view/kateview.cpp:816
 msgid "Look up the next occurrence of the search phrase."
 msgstr "Најди го следното појавување на фразата за пребарување."
 
-#: view/kateview.cpp:819
+#: view/kateview.cpp:820
 msgid "Look up the previous occurrence of the search phrase."
 msgstr "Најди го претходното појавување на фразата за пребарување."
 
-#: view/kateview.cpp:823
+#: view/kateview.cpp:824
 msgid ""
 "Look up a piece of text or regular expression and replace the result with "
 "some given text."
@@ -8299,40 +8256,40 @@ msgstr ""
 "Најди дел од текст или регуларен израз и замени го резултатот со некој даден "
 "текст."
 
-#: view/kateview.cpp:826
+#: view/kateview.cpp:827
 #, fuzzy
 #| msgid "A&utomatic end of line detection"
 msgid "Automatic Spell Checking"
 msgstr "&Автоматска детекција на крај на ред"
 
-#: view/kateview.cpp:827
+#: view/kateview.cpp:828
 msgid "Enable/disable automatic spell checking"
 msgstr ""
 
-#: view/kateview.cpp:833
+#: view/kateview.cpp:834
 #, fuzzy
 #| msgid "Choose Editor..."
 msgid "Change Dictionary..."
 msgstr "Избери уредувач..."
 
-#: view/kateview.cpp:834
+#: view/kateview.cpp:835
 msgid "Change the dictionary that is used for spell checking."
 msgstr ""
 
-#: view/kateview.cpp:838
+#: view/kateview.cpp:839
 msgid "Clear Dictionary Ranges"
 msgstr ""
 
-#: view/kateview.cpp:840
+#: view/kateview.cpp:841
 msgid ""
 "Remove all the separate dictionary ranges that were set for spell checking."
 msgstr ""
 
-#: view/kateview.cpp:846
+#: view/kateview.cpp:847
 msgid "Copy as &HTML"
 msgstr "Копирај како &HTML"
 
-#: view/kateview.cpp:847
+#: view/kateview.cpp:848
 msgid ""
 "Use this command to copy the currently selected text as HTML to the system "
 "clipboard."
@@ -8340,13 +8297,13 @@ msgstr ""
 "Користете ја оваа команда за да го копирате избраниот текст на таблата со "
 "исечоци."
 
-#: view/kateview.cpp:850
+#: view/kateview.cpp:851
 #, fuzzy
 #| msgid "Export File as HTML"
 msgid "E&xport as HTML..."
 msgstr "Изнеси датотека како HTML"
 
-#: view/kateview.cpp:851
+#: view/kateview.cpp:852
 msgid ""
 "This command allows you to export the current document with all highlighting "
 "information into a HTML document."
@@ -8354,181 +8311,181 @@ msgstr ""
 "Оваа команда ви овозможува да го изнесете активниот документ со сите "
 "информации за означување во НТМL-документ."
 
-#: view/kateview.cpp:889
+#: view/kateview.cpp:890
 msgid "Move Word Left"
 msgstr "Оди збор налево"
 
-#: view/kateview.cpp:895
+#: view/kateview.cpp:896
 msgid "Select Character Left"
 msgstr "Избери знак налево"
 
-#: view/kateview.cpp:901
+#: view/kateview.cpp:902
 msgid "Select Word Left"
 msgstr "Избери збор налево"
 
-#: view/kateview.cpp:907
+#: view/kateview.cpp:908
 msgid "Move Word Right"
 msgstr "Оди збор надесно"
 
-#: view/kateview.cpp:913
+#: view/kateview.cpp:914
 msgid "Select Character Right"
 msgstr "Избери збор надесно"
 
-#: view/kateview.cpp:919
+#: view/kateview.cpp:920
 msgid "Select Word Right"
 msgstr "Избери збор надесно"
 
-#: view/kateview.cpp:925
+#: view/kateview.cpp:926
 msgid "Move to Beginning of Line"
 msgstr "Оди на почеток на линија"
 
-#: view/kateview.cpp:931
+#: view/kateview.cpp:932
 msgid "Move to Beginning of Document"
 msgstr "Оди на почетокот на документот"
 
-#: view/kateview.cpp:937
+#: view/kateview.cpp:938
 msgid "Select to Beginning of Line"
 msgstr "Избери до почеток на линија"
 
-#: view/kateview.cpp:943
+#: view/kateview.cpp:944
 msgid "Select to Beginning of Document"
 msgstr "Избери до почетокот на документот "
 
-#: view/kateview.cpp:949
+#: view/kateview.cpp:950
 msgid "Move to End of Line"
 msgstr "Оди на крај од линија"
 
-#: view/kateview.cpp:955
+#: view/kateview.cpp:956
 msgid "Move to End of Document"
 msgstr "Оди на крајот од документот"
 
-#: view/kateview.cpp:961
+#: view/kateview.cpp:962
 msgid "Select to End of Line"
 msgstr "Избери до крај од линија"
 
-#: view/kateview.cpp:967
+#: view/kateview.cpp:968
 msgid "Select to End of Document"
 msgstr "Избери до крајот на документот "
 
-#: view/kateview.cpp:973
+#: view/kateview.cpp:974
 msgid "Select to Previous Line"
 msgstr "Избери до предходната линија"
 
-#: view/kateview.cpp:979
+#: view/kateview.cpp:980
 msgid "Scroll Line Up"
 msgstr "Движи линија нагоре"
 
-#: view/kateview.cpp:985
+#: view/kateview.cpp:986
 msgid "Move to Next Line"
 msgstr "Премести на следната линија"
 
-#: view/kateview.cpp:991
+#: view/kateview.cpp:992
 msgid "Move to Previous Line"
 msgstr "Премести на претходната линија"
 
-#: view/kateview.cpp:997
+#: view/kateview.cpp:998
 #, fuzzy
 #| msgid "Move Word Right"
 msgid "Move Cursor Right"
 msgstr "Оди збор надесно"
 
-#: view/kateview.cpp:1003
+#: view/kateview.cpp:1004
 #, fuzzy
 #| msgid "Move Word Left"
 msgid "Move Cursor Left"
 msgstr "Оди збор налево"
 
-#: view/kateview.cpp:1009
+#: view/kateview.cpp:1010
 msgid "Select to Next Line"
 msgstr "Избери до следната линија"
 
-#: view/kateview.cpp:1015
+#: view/kateview.cpp:1016
 msgid "Scroll Line Down"
 msgstr "Движи линија надолу"
 
-#: view/kateview.cpp:1021
+#: view/kateview.cpp:1022
 msgid "Scroll Page Up"
 msgstr "Движи страница нагоре"
 
-#: view/kateview.cpp:1027
+#: view/kateview.cpp:1028
 msgid "Select Page Up"
 msgstr "Избери страница нагоре"
 
-#: view/kateview.cpp:1033
+#: view/kateview.cpp:1034
 msgid "Move to Top of View"
 msgstr "Оди до врвот од погледот"
 
-#: view/kateview.cpp:1039
+#: view/kateview.cpp:1040
 msgid "Select to Top of View"
 msgstr "Избери до врвот од погледот"
 
-#: view/kateview.cpp:1045
+#: view/kateview.cpp:1046
 msgid "Scroll Page Down"
 msgstr "Движи страница надолу"
 
-#: view/kateview.cpp:1051
+#: view/kateview.cpp:1052
 msgid "Select Page Down"
 msgstr "Избери страница надолу"
 
-#: view/kateview.cpp:1057
+#: view/kateview.cpp:1058
 msgid "Move to Bottom of View"
 msgstr "Оди до дното на погледот"
 
-#: view/kateview.cpp:1063
+#: view/kateview.cpp:1064
 msgid "Select to Bottom of View"
 msgstr "Избери до дното на погледот"
 
-#: view/kateview.cpp:1069
+#: view/kateview.cpp:1070
 msgid "Move to Matching Bracket"
 msgstr "Оди до заградата што одговара"
 
-#: view/kateview.cpp:1075
+#: view/kateview.cpp:1076
 msgid "Select to Matching Bracket"
 msgstr "Избери до заградата што одговараат"
 
-#: view/kateview.cpp:1083
+#: view/kateview.cpp:1084
 msgid "Transpose Characters"
 msgstr "Смени места на знаци"
 
-#: view/kateview.cpp:1089
+#: view/kateview.cpp:1090
 msgid "Delete Line"
 msgstr "Избриши линија"
 
-#: view/kateview.cpp:1095
+#: view/kateview.cpp:1096
 msgid "Delete Word Left"
 msgstr "Избриши збор налево"
 
-#: view/kateview.cpp:1101
+#: view/kateview.cpp:1102
 msgid "Delete Word Right"
 msgstr "Избриши збор надесно"
 
-#: view/kateview.cpp:1107
+#: view/kateview.cpp:1108
 msgid "Delete Next Character"
 msgstr "Избриши следен знак"
 
-#: view/kateview.cpp:1113
+#: view/kateview.cpp:1114
 msgid "Backspace"
 msgstr ""
 
-#: view/kateview.cpp:1122
+#: view/kateview.cpp:1123
 msgid "Insert Tab"
 msgstr ""
 
-#: view/kateview.cpp:1127
+#: view/kateview.cpp:1128
 msgid "Insert Smart Newline"
 msgstr ""
 
-#: view/kateview.cpp:1128
+#: view/kateview.cpp:1129
 msgid ""
 "Insert newline including leading characters of the current line which are "
 "not letters or numbers."
 msgstr ""
 
-#: view/kateview.cpp:1138
+#: view/kateview.cpp:1139
 msgid "&Indent"
 msgstr "&Вовлекување"
 
-#: view/kateview.cpp:1139
+#: view/kateview.cpp:1140
 msgid ""
 "Use this to indent a selected block of text.<br /><br />You can configure "
 "whether tabs should be honored and used or replaced with spaces, in the "
@@ -8538,36 +8495,42 @@ msgstr ""
 "дијалогот за конфигурации можете да конфигурирате дали ќе се почитуваат "
 "табулаторите или ќе се заменат со празни места."
 
-#: view/kateview.cpp:1146
+#: view/kateview.cpp:1147
 msgid "&Unindent"
 msgstr "&Одвовлекување"
 
-#: view/kateview.cpp:1147
+#: view/kateview.cpp:1148
 msgid "Use this to unindent a selected block of text."
 msgstr "Користете го ова за да го одвовлечете избраниот блок од текст."
 
-#: view/kateview.cpp:1167
+#: view/kateview.cpp:1166
 #, fuzzy
 #| msgid "Collapse Toplevel"
 msgid "Fold Toplevel Nodes"
 msgstr "Затвори го нивото на врв"
 
-#: view/kateview.cpp:1185
+#: view/kateview.cpp:1171
+#, fuzzy
+#| msgid "Expand Toplevel"
+msgid "Unfold Toplevel Nodes"
+msgstr "Отвори го нивото на врв"
+
+#: view/kateview.cpp:1184
 #, fuzzy
 #| msgid "Current line:"
 msgid "Fold Current Node"
 msgstr "Активна линија:"
 
-#: view/kateview.cpp:1189
+#: view/kateview.cpp:1188
 msgid "Unfold Current Node"
 msgstr ""
 
-#: view/kateview.cpp:1293
+#: view/kateview.cpp:1263
 #, kde-format
 msgid "(R/O) %1"
 msgstr ""
 
-#: view/kateview.cpp:3505
+#: view/kateview.cpp:3475
 msgid "Export File as HTML"
 msgstr "Изнеси датотека како HTML"
 
@@ -8950,6 +8913,44 @@ msgstr ""
 msgid "Mark not set: %1"
 msgstr "%1"
 
+#~ msgid "File Was Deleted on Disk"
+#~ msgstr "Датотеката беше избришана на диск"
+
+#~ msgid "File Changed on Disk"
+#~ msgstr "Датотеката беше променета на диск"
+
+#~ msgid "Overwrite the disk file with the editor content."
+#~ msgstr "Ја пребришува датотеката на диск со содржината на уредувачот."
+
+#, fuzzy
+#~| msgid "&Word Wrap Document"
+#~ msgid "Close the document."
+#~ msgstr "&Пренеси ги зборовите од документот"
+
+#, fuzzy
+#~| msgid "Besides white space changes, the files are identical."
+#~ msgid "Ignoring amount of white space changed, the files are identical."
+#~ msgstr "Освен промени во празните места, датотеките се идентични."
+
+#~ msgid ""
+#~ "Ignoring means that you will not be warned again (unless the disk file "
+#~ "changes once more): if you save the document, you will overwrite the file "
+#~ "on disk; if you do not save then the disk file (if present) is what you "
+#~ "have."
+#~ msgstr ""
+#~ "Игнорирањето значи дека нема да бидете предупредени повторно (освен ако "
+#~ "датотеката на дискот не се смени уште еднаш): ако го зачувате документот, "
+#~ "ќе ја пребришете датотеката на дискот; ако не го зачувате тогаш "
+#~ "датотеката на дискот (ако постои) е тоа што го имате."
+
+#, fuzzy
+#~ msgid "You Are on Your Own"
+#~ msgstr "Оставени сте сами на себеси"
+
+#, fuzzy
+#~ msgid "Ignore white space changes"
+#~ msgstr "&Игнорирај измени"
+
 #~ msgid "KDE Default"
 #~ msgstr "Стандардно за KDE"
 
@@ -9284,11 +9285,6 @@ msgstr "%1"
 
 #~ msgid "R/O"
 #~ msgstr "ЧИТ"
-
-#, fuzzy
-#~| msgid "Expand Toplevel"
-#~ msgid "Unfold Toplevel Nodes"
-#~ msgstr "Отвори го нивото на врв"
 
 #~ msgid "Show &folding markers (if available)"
 #~ msgstr "Покажи ги ознаките за &склопување ако е тоа возможно"
