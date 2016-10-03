@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-10-02 07:16+0000\n"
+"POT-Creation-Date: 2016-10-03 07:18+0000\n"
 "PO-Revision-Date: 2006-05-08 10:32+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -36,25 +36,25 @@ msgstr "bobibobi@freemail.com.mk,vladoboss@mt.net.mk"
 msgid "&Archive"
 msgstr "Отвори „архива“"
 
-#: app/batchextract.cpp:146 app/batchextract.cpp:201
+#: app/batchextract.cpp:118 app/batchextract.cpp:172
 #, fuzzy
 #| msgid "Extract all files"
 msgid "Extracting Files"
 msgstr "Ги распакувам сите датотеки"
 
-#: app/batchextract.cpp:147 app/batchextract.cpp:202
+#: app/batchextract.cpp:119 app/batchextract.cpp:173
 #, fuzzy
 #| msgid "Save Archive?"
 msgid "Source archive"
 msgstr "Да зачувам архива?"
 
-#: app/batchextract.cpp:148 app/batchextract.cpp:203
+#: app/batchextract.cpp:120 app/batchextract.cpp:174
 #, fuzzy
 #| msgid "Destination folder: "
 msgid "Destination"
 msgstr "Одредишна папка: "
 
-#: app/batchextract.cpp:161
+#: app/batchextract.cpp:133
 #, fuzzy
 #| msgid ""
 #| "The following files will not be extracted\n"
@@ -64,7 +64,7 @@ msgstr ""
 "Следните датотеки нема да бидат отпакувани\n"
 "бидејќи тие веќе постојат:"
 
-#: app/batchextract.cpp:179
+#: app/batchextract.cpp:151
 msgid "There was an error during extraction."
 msgstr ""
 
@@ -351,7 +351,7 @@ msgstr "&Додај"
 msgid "Files/Folders to Compress"
 msgstr ""
 
-#: kerfuffle/addtoarchive.cpp:95
+#: kerfuffle/addtoarchive.cpp:97
 #, fuzzy
 #| msgid "Simple Compressed Archive"
 msgid "Compress to Archive"
@@ -361,22 +361,10 @@ msgstr "Едноставна компресирана архива"
 msgid "No input files were given."
 msgstr ""
 
-#: kerfuffle/addtoarchive.cpp:151
+#: kerfuffle/addtoarchive.cpp:147
 msgid ""
 "You need to either supply a filename for the archive or a suffix (such as "
 "rar, tar.gz) with the <command>--autofilename</command> argument."
-msgstr ""
-
-#: kerfuffle/addtoarchive.cpp:182
-msgid "Failed to create the new archive. No suitable plugin found."
-msgstr ""
-
-#: kerfuffle/addtoarchive.cpp:187
-msgid "Failed to create the new archive. Could not load a suitable plugin."
-msgstr ""
-
-#: kerfuffle/addtoarchive.cpp:192
-msgid "It is not possible to create archives of this type."
 msgstr ""
 
 #. i18n: ectx: label, entry (closeAfterExtraction), group (Extraction)
@@ -765,19 +753,33 @@ msgstr ""
 msgid "Extract to a subfolder if the archive has more than one top-level entry"
 msgstr ""
 
-#: kerfuffle/jobs.cpp:190
+#: kerfuffle/jobs.cpp:120
+#, fuzzy
+#| msgid "An error occurred while adding the files to the archive."
+msgid "No suitable plugin found. Ark does not seem to support this file type."
+msgstr "Се случи грешка при додавањето на датотеките во архивата."
+
+#: kerfuffle/jobs.cpp:124
+#, fuzzy
+#| msgid "An error occurred while adding the files to the archive."
+msgid ""
+"Failed to load a suitable plugin. Make sure any executables needed to handle "
+"the archive type are installed."
+msgstr "Се случи грешка при додавањето на датотеките во архивата."
+
+#: kerfuffle/jobs.cpp:251
 #, fuzzy
 #| msgid "Creating archive..."
 msgid "Loading archive..."
 msgstr "Создавам архива..."
 
-#: kerfuffle/jobs.cpp:269
+#: kerfuffle/jobs.cpp:445
 #, fuzzy
 #| msgid "Extract all files"
 msgid "Extracting all files"
 msgstr "Ги распакувам сите датотеки"
 
-#: kerfuffle/jobs.cpp:271 kerfuffle/jobs.cpp:359
+#: kerfuffle/jobs.cpp:447 kerfuffle/jobs.cpp:535
 #, fuzzy, kde-format
 #| msgid "Extract all files"
 msgid "Extracting one file"
@@ -786,14 +788,14 @@ msgstr[0] "Ги распакувам сите датотеки"
 msgstr[1] "Ги распакувам сите датотеки"
 msgstr[2] "Ги распакувам сите датотеки"
 
-#: kerfuffle/jobs.cpp:277
+#: kerfuffle/jobs.cpp:453
 #, kde-format
 msgid ""
 "Could not write to destination <filename>%1</filename>.<nl/>Check whether "
 "you have sufficient permissions."
 msgstr ""
 
-#: kerfuffle/jobs.cpp:434
+#: kerfuffle/jobs.cpp:610
 #, fuzzy, kde-format
 #| msgid "Adding files..."
 msgid "Adding a file"
@@ -802,7 +804,7 @@ msgstr[0] "Додавам датотеки..."
 msgstr[1] "Додавам датотеки..."
 msgstr[2] "Додавам датотеки..."
 
-#: kerfuffle/jobs.cpp:486
+#: kerfuffle/jobs.cpp:662
 #, fuzzy, kde-format
 #| msgid "Adding files..."
 msgid "Moving a file"
@@ -811,7 +813,7 @@ msgstr[0] "Додавам датотеки..."
 msgstr[1] "Додавам датотеки..."
 msgstr[2] "Додавам датотеки..."
 
-#: kerfuffle/jobs.cpp:523
+#: kerfuffle/jobs.cpp:699
 #, fuzzy, kde-format
 #| msgid "Adding files..."
 msgid "Copying a file"
@@ -820,7 +822,7 @@ msgstr[0] "Додавам датотеки..."
 msgstr[1] "Додавам датотеки..."
 msgstr[2] "Додавам датотеки..."
 
-#: kerfuffle/jobs.cpp:554
+#: kerfuffle/jobs.cpp:730
 #, fuzzy, kde-format
 #| msgid "An error occurred while adding the files to the archive."
 msgid "Deleting a file from the archive"
@@ -829,13 +831,13 @@ msgstr[0] "Се случи грешка при додавањето на дат�
 msgstr[1] "Се случи грешка при додавањето на датотеките во архивата."
 msgstr[2] "Се случи грешка при додавањето на датотеките во архивата."
 
-#: kerfuffle/jobs.cpp:577
+#: kerfuffle/jobs.cpp:753
 #, fuzzy
 #| msgid "Adding folder..."
 msgid "Adding comment"
 msgstr "Додавам папка..."
 
-#: kerfuffle/jobs.cpp:602
+#: kerfuffle/jobs.cpp:778
 #, fuzzy
 #| msgid "Creating archive..."
 msgid "Testing archive"
@@ -1063,50 +1065,50 @@ msgstr ""
 msgid "Don't ask again."
 msgstr ""
 
-#: part/archivemodel.cpp:265
+#: part/archivemodel.cpp:263
 msgctxt "Name of a file inside an archive"
 msgid "Name"
 msgstr ""
 
-#: part/archivemodel.cpp:267
+#: part/archivemodel.cpp:265
 #, fuzzy
 #| msgid " Size "
 msgctxt "Uncompressed size of a file inside an archive"
 msgid "Size"
 msgstr " Големина "
 
-#: part/archivemodel.cpp:269
+#: part/archivemodel.cpp:267
 #, fuzzy
 #| msgid "Compressed File"
 msgctxt "Compressed size of a file inside an archive"
 msgid "Compressed"
 msgstr "Компресирана датотека"
 
-#: part/archivemodel.cpp:271
+#: part/archivemodel.cpp:269
 msgctxt "Compression rate of file"
 msgid "Rate"
 msgstr ""
 
-#: part/archivemodel.cpp:273
+#: part/archivemodel.cpp:271
 #, fuzzy
 #| msgid " Owner "
 msgctxt "File's owner username"
 msgid "Owner"
 msgstr " Сопственик "
 
-#: part/archivemodel.cpp:275
+#: part/archivemodel.cpp:273
 #, fuzzy
 #| msgid " Group "
 msgctxt "File's group"
 msgid "Group"
 msgstr "Група"
 
-#: part/archivemodel.cpp:277
+#: part/archivemodel.cpp:275
 msgctxt "File permissions"
 msgid "Mode"
 msgstr ""
 
-#: part/archivemodel.cpp:279
+#: part/archivemodel.cpp:277
 #, fuzzy
 #| msgctxt "acronym for Cyclic Redundancy Check"
 #| msgid " CRC "
@@ -1114,36 +1116,31 @@ msgctxt "CRC hash code"
 msgid "CRC"
 msgstr " CRC "
 
-#: part/archivemodel.cpp:281
+#: part/archivemodel.cpp:279
 #, fuzzy
 #| msgid " Method "
 msgctxt "Compression method"
 msgid "Method"
 msgstr " Метода "
 
-#: part/archivemodel.cpp:284
+#: part/archivemodel.cpp:282
 #, fuzzy
 #| msgid " Version "
 msgctxt "File version"
 msgid "Version"
 msgstr " Верзија "
 
-#: part/archivemodel.cpp:286
+#: part/archivemodel.cpp:284
 msgctxt "Timestamp"
 msgid "Date"
 msgstr ""
 
-#: part/archivemodel.cpp:288
-msgctxt "File comment"
-msgid "Comment"
-msgstr ""
-
-#: part/archivemodel.cpp:290
+#: part/archivemodel.cpp:286
 msgctxt "Unnamed column"
 msgid "??"
 msgstr ""
 
-#: part/archivemodel.cpp:467
+#: part/archivemodel.cpp:462
 #, fuzzy
 #| msgid "An error occurred while adding the files to the archive."
 msgid "Adding files is not supported for this archive."
@@ -1520,61 +1517,42 @@ msgctxt "@action:inmenu mutually exclusive with Edit &Comment"
 msgid "Add &Comment"
 msgstr "Додавам папка..."
 
-#: part/part.cpp:583
+#: part/part.cpp:616
 #, fuzzy
 #| msgid "The archive %1 does not exist."
 msgid "The archive passed the integrity test."
 msgstr "Архивата %1 не постои."
 
-#: part/part.cpp:583 part/part.cpp:585
+#: part/part.cpp:616 part/part.cpp:618
 msgid "Test Results"
 msgstr ""
 
-#: part/part.cpp:585
+#: part/part.cpp:618
 #, fuzzy
 #| msgid "The archive %1 does not exist."
 msgid "The archive failed the integrity test."
 msgstr "Архивата %1 не постои."
 
-#: part/part.cpp:606
+#: part/part.cpp:639
 #, fuzzy
 #| msgid "E&xtract..."
 msgid "Extract To..."
 msgstr "О&тпакувај..."
 
-#: part/part.cpp:620
+#: part/part.cpp:653
 #, fuzzy
 #| msgid "E&xtract..."
 msgid "Quick Extract To..."
 msgstr "О&тпакувај..."
 
-#: part/part.cpp:695
-#, fuzzy, kde-format
-#| msgid "An error occurred while adding the files to the archive."
-msgctxt "@info"
-msgid ""
-"Ark was not able to open <filename>%1</filename>. No suitable plugin found."
-"<nl/>Ark does not seem to support this file type."
-msgstr "Се случи грешка при додавањето на датотеките во архивата."
-
-#: part/part.cpp:702
-#, fuzzy, kde-format
-#| msgid "An error occurred while adding the files to the archive."
-msgctxt "@info"
-msgid ""
-"Ark was not able to open <filename>%1</filename>. Failed to load a suitable "
-"plugin.<nl/>Make sure any executables needed to handle the archive type are "
-"installed."
-msgstr "Се случи грешка при додавањето на датотеките во архивата."
-
-#: part/part.cpp:753
+#: part/part.cpp:752
 #, fuzzy
 #| msgid "Extract Settings"
 msgctxt "@title:tab"
 msgid "Extraction Settings"
 msgstr "Поставувања за отпакување"
 
-#: part/part.cpp:754
+#: part/part.cpp:753
 #, fuzzy
 #| msgctxt "to view something"
 #| msgid "&View"
@@ -1582,13 +1560,13 @@ msgctxt "@title:tab"
 msgid "Preview Settings"
 msgstr "&Преглед"
 
-#: part/part.cpp:767
+#: part/part.cpp:766
 #, kde-format
 msgctxt "@info"
 msgid "<filename>%1</filename> is a directory."
 msgstr ""
 
-#: part/part.cpp:776
+#: part/part.cpp:775
 #, fuzzy, kde-format
 #| msgid "Could not create the folder %1"
 msgctxt "@info"
@@ -1597,7 +1575,7 @@ msgid ""
 "permission."
 msgstr "Не може да се создаде папката %1"
 
-#: part/part.cpp:782
+#: part/part.cpp:781
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
 msgctxt "@info"
@@ -1606,13 +1584,13 @@ msgid ""
 "file."
 msgstr "Архивата веќе постои. Дали сакате да запишам врз неа?"
 
-#: part/part.cpp:785
+#: part/part.cpp:784
 #, kde-format
 msgctxt "@info"
 msgid "The archive <filename>%1</filename> was not found."
 msgstr ""
 
-#: part/part.cpp:790
+#: part/part.cpp:789
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
 msgctxt "@info"
@@ -1621,7 +1599,7 @@ msgid ""
 "possible to read from it."
 msgstr "Архивата веќе постои. Дали сакате да запишам врз неа?"
 
-#: part/part.cpp:803
+#: part/part.cpp:802
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
 msgctxt "@info"
@@ -1630,21 +1608,21 @@ msgid ""
 "it?"
 msgstr "Архивата веќе постои. Дали сакате да запишам врз неа?"
 
-#: part/part.cpp:805
+#: part/part.cpp:804
 #, fuzzy
 #| msgid "Archive Already Exists"
 msgctxt "@title:window"
 msgid "File Exists"
 msgstr "Архивата веќе постои"
 
-#: part/part.cpp:806
+#: part/part.cpp:805
 #, fuzzy
 #| msgid "Overwrite"
 msgctxt "@action:button"
 msgid "Overwrite"
 msgstr "Запиши"
 
-#: part/part.cpp:829
+#: part/part.cpp:828
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1652,23 +1630,23 @@ msgid ""
 "<nl/><message>%2</message>"
 msgstr ""
 
-#: part/part.cpp:873
+#: part/part.cpp:871
 #, fuzzy
 #| msgid "The archive %1 does not exist."
 msgctxt "@info"
 msgid "The archive is empty or Ark could not open its content."
 msgstr "Архивата %1 не постои."
 
-#: part/part.cpp:878
+#: part/part.cpp:876
 msgctxt "@info"
 msgid "Ark does not currently support ISO files with UDF filesystem."
 msgstr ""
 
-#: part/part.cpp:937
+#: part/part.cpp:935
 msgid "Ark cannot open symlinks."
 msgstr ""
 
-#: part/part.cpp:1042
+#: part/part.cpp:1040
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
 msgid ""
@@ -1676,52 +1654,52 @@ msgid ""
 "archive?"
 msgstr "Архивата веќе постои. Дали сакате да запишам врз неа?"
 
-#: part/part.cpp:1044
+#: part/part.cpp:1042
 #, fuzzy
 #| msgid "Files to be added"
 msgctxt "@title:window"
 msgid "File Modified"
 msgstr "Датотеки за додавање"
 
-#: part/part.cpp:1348
+#: part/part.cpp:1346
 #, fuzzy
 #| msgid "All Files"
 msgctxt "@title:window"
 msgid "Add Files"
 msgstr "Сите датотеки"
 
-#: part/part.cpp:1353
+#: part/part.cpp:1351
 #, fuzzy, kde-format
 #| msgid "All Files"
 msgctxt "@title:window"
 msgid "Add Files to %1"
 msgstr "Сите датотеки"
 
-#: part/part.cpp:1428
+#: part/part.cpp:1426
 msgid "Invalid filename"
 msgstr ""
 
-#: part/part.cpp:1429
+#: part/part.cpp:1427
 msgid "Filename can't contain slashes and can't be equal to \".\" or \"..\""
 msgstr ""
 
-#: part/part.cpp:1469
+#: part/part.cpp:1467
 msgid "Moving a folder into itself"
 msgstr ""
 
-#: part/part.cpp:1470
+#: part/part.cpp:1468
 msgid "Folders can't be moved into themselves."
 msgstr ""
 
-#: part/part.cpp:1502
+#: part/part.cpp:1500
 msgid "Pasting entries with the same name"
 msgstr ""
 
-#: part/part.cpp:1503
+#: part/part.cpp:1501
 msgid "Entries with the same names can't be pasted to the same destination."
 msgstr ""
 
-#: part/part.cpp:1603
+#: part/part.cpp:1601
 msgctxt "@info"
 msgid "Deleting this file is not undoable. Are you sure you want to do this?"
 msgid_plural ""
@@ -1730,7 +1708,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: part/part.cpp:1606
+#: part/part.cpp:1604
 #, fuzzy
 #| msgid "Selected files only"
 msgctxt "@title:window"
@@ -1740,14 +1718,14 @@ msgstr[0] "Само избраните датотеки"
 msgstr[1] "Само избраните датотеки"
 msgstr[2] "Само избраните датотеки"
 
-#: part/part.cpp:1649
+#: part/part.cpp:1647
 #, fuzzy
 #| msgid "Save Archive As"
 msgctxt "@title:window"
 msgid "Save Archive As"
 msgstr "Зачувај архива како"
 
-#: part/part.cpp:1656
+#: part/part.cpp:1654
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
 msgctxt "@info"
@@ -1756,7 +1734,7 @@ msgid ""
 "want to overwrite it?"
 msgstr "Архивата веќе постои. Дали сакате да запишам врз неа?"
 
-#: part/part.cpp:1670
+#: part/part.cpp:1668
 #, fuzzy, kde-format
 #| msgid "You must enter a password to extract the file:"
 msgctxt "@info"
@@ -1765,7 +1743,7 @@ msgid ""
 "location. The archive does not exist anymore."
 msgstr "Мора да внесете лозинка да да ја распакувате датотеката:"
 
-#: part/part.cpp:1684
+#: part/part.cpp:1682
 #, fuzzy, kde-format
 #| msgid "Last folders used for extraction"
 msgctxt "@info"
