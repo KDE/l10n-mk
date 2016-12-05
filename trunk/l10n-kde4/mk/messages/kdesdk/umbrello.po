@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-04 01:11+0100\n"
+"POT-Creation-Date: 2016-12-05 01:10+0100\n"
 "PO-Revision-Date: 2006-09-30 17:38+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -167,17 +167,17 @@ msgstr "Пренос на состојба"
 msgid "Activity"
 msgstr "Активност"
 
-#: basictypes.cpp:371 worktoolbar.cpp:372
+#: basictypes.cpp:371 worktoolbar.cpp:373
 #, kde-format
 msgid "Exception"
 msgstr ""
 
-#: basictypes.cpp:373 worktoolbar.cpp:376
+#: basictypes.cpp:373 worktoolbar.cpp:377
 #, kde-format
 msgid "Category to Parent"
 msgstr ""
 
-#: basictypes.cpp:375 worktoolbar.cpp:377
+#: basictypes.cpp:375 worktoolbar.cpp:378
 #, kde-format
 msgid "Child to Category"
 msgstr ""
@@ -2115,7 +2115,7 @@ msgstr "Сите диј&аграми"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: dialogs/finddialog.ui:74 listpopupmenu.cpp:865
-#: umlwidgets/widgetbase.cpp:1055 worktoolbar.cpp:375
+#: umlwidgets/widgetbase.cpp:1055 worktoolbar.cpp:376
 #, kde-format
 msgid "Category"
 msgstr ""
@@ -4453,7 +4453,7 @@ msgstr "Подсистем"
 msgid "Component"
 msgstr "Компонента"
 
-#: listpopupmenu.cpp:829 umlwidgets/widgetbase.cpp:1106
+#: listpopupmenu.cpp:829 umlwidgets/widgetbase.cpp:1106 worktoolbar.cpp:369
 #, kde-format
 msgid "Port"
 msgstr ""
@@ -4807,7 +4807,7 @@ msgstr "Раздели"
 msgid "Join"
 msgstr "Спои"
 
-#: listpopupmenu.cpp:1557 worktoolbar.cpp:369
+#: listpopupmenu.cpp:1557 worktoolbar.cpp:370
 #, kde-format
 msgid "Initial Activity"
 msgstr "Иницијална активност"
@@ -8029,6 +8029,7 @@ msgid "Enter object name:"
 msgstr "Внесете ново име на објектот:"
 
 #: umlwidgets/pinwidget.cpp:75 umlwidgets/pinwidget.cpp:80
+#: umlwidgets/toolbarstateonewidget.cpp:197
 #, fuzzy, kde-format
 #| msgid "Enter name:"
 msgid "Enter Pin Name"
@@ -8041,8 +8042,7 @@ msgid "Enter the pin name :"
 msgstr "Внесете име на операција:"
 
 #: umlwidgets/portwidget.cpp:78 umlwidgets/portwidget.cpp:82
-#: umlwidgets/toolbarstateonewidget.cpp:201
-#: umlwidgets/toolbarstateonewidget.cpp:206
+#: umlwidgets/toolbarstateonewidget.cpp:203
 #, fuzzy, kde-format
 #| msgid "Enter name:"
 msgid "Enter Port Name"
@@ -8055,7 +8055,7 @@ msgid "Enter the port name :"
 msgstr "Внесете име на операција:"
 
 #: umlwidgets/preconditionwidget.cpp:266 umlwidgets/preconditionwidget.cpp:271
-#: umlwidgets/toolbarstateonewidget.cpp:189
+#: umlwidgets/toolbarstateonewidget.cpp:191
 #, fuzzy, kde-format
 #| msgid "Enter association name:"
 msgid "Enter Precondition Name"
@@ -8091,30 +8091,34 @@ msgctxt "@info:tooltip of custom toolbar button"
 msgid "%1"
 msgstr "%"
 
-#: umlwidgets/toolbarstateonewidget.cpp:189
+#: umlwidgets/toolbarstateonewidget.cpp:191
 #, kde-format
 msgid "Enter the precondition"
 msgstr ""
 
-#: umlwidgets/toolbarstateonewidget.cpp:189
+#: umlwidgets/toolbarstateonewidget.cpp:191
 #, fuzzy, kde-format
 #| msgid "new_operation"
 msgid "new precondition"
 msgstr "нова_операција"
 
-#: umlwidgets/toolbarstateonewidget.cpp:201
-#: umlwidgets/toolbarstateonewidget.cpp:206
+#: umlwidgets/toolbarstateonewidget.cpp:196
+#, fuzzy, kde-format
+#| msgid "new_actor"
+msgid "new pin"
+msgstr "нов_актер"
+
+#: umlwidgets/toolbarstateonewidget.cpp:197
+#, fuzzy, kde-format
+#| msgid "Enter operation name:"
+msgid "Enter the Pin"
+msgstr "Внесете име на операција:"
+
+#: umlwidgets/toolbarstateonewidget.cpp:203
 #, fuzzy, kde-format
 #| msgid "Enter operation name:"
 msgid "Enter the port"
 msgstr "Внесете име на операција:"
-
-#: umlwidgets/toolbarstateonewidget.cpp:203
-#: umlwidgets/toolbarstateonewidget.cpp:206
-#, fuzzy, kde-format
-#| msgid "new_actor"
-msgid "new port"
-msgstr "нов_актер"
 
 #: umlwidgets/umlwidget.cpp:475
 #, kde-format
@@ -8219,12 +8223,12 @@ msgctxt "selection arrow"
 msgid "Select"
 msgstr "Избери"
 
-#: worktoolbar.cpp:316 worktoolbar.cpp:370
+#: worktoolbar.cpp:316 worktoolbar.cpp:371
 #, kde-format
 msgid "Synchronous Message"
 msgstr "Синхронa порака"
 
-#: worktoolbar.cpp:317 worktoolbar.cpp:371
+#: worktoolbar.cpp:317 worktoolbar.cpp:372
 #, kde-format
 msgid "Asynchronous Message"
 msgstr "Асинхрона порака"
@@ -8322,13 +8326,13 @@ msgstr "Состојба"
 msgid "Final Activity"
 msgstr "Иницијална активност"
 
-#: worktoolbar.cpp:373
+#: worktoolbar.cpp:374
 #, fuzzy, kde-format
 #| msgid "Object"
 msgid "Object Node"
 msgstr "Објект"
 
-#: worktoolbar.cpp:374
+#: worktoolbar.cpp:375
 #, kde-format
 msgid "Pre/Post condition"
 msgstr ""
