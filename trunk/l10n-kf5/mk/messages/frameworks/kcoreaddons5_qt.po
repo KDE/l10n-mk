@@ -620,10 +620,7 @@ msgstr "%1 секунди"
 #| msgid_plural "%1 milliseconds"
 msgctxt "KFormat|"
 msgid "%n millisecond(s)"
-msgid_plural "%n millisecond(s)"
-msgstr[0] "%1 милисекунда"
-msgstr[1] "%1 милисекунди"
-msgstr[2] "%1 милисекунди"
+msgstr "%1 милисекунда"
 
 #. @item:intext %n is a whole number
 #: lib/util/kformatprivate.cpp:300
@@ -632,10 +629,7 @@ msgstr[2] "%1 милисекунди"
 #| msgid "%1 days"
 msgctxt "KFormat|"
 msgid "%n day(s)"
-msgid_plural "%n day(s)"
-msgstr[0] "%1 дена"
-msgstr[1] "%1 дена"
-msgstr[2] "%1 дена"
+msgstr "%1 дена"
 
 #. @item:intext %n is a whole number
 #: lib/util/kformatprivate.cpp:305
@@ -644,10 +638,7 @@ msgstr[2] "%1 дена"
 #| msgid "%1 hours"
 msgctxt "KFormat|"
 msgid "%n hour(s)"
-msgid_plural "%n hour(s)"
-msgstr[0] "%1 часа"
-msgstr[1] "%1 часа"
-msgstr[2] "%1 часа"
+msgstr "%1 часа"
 
 #. @item:intext %n is a whole number
 #: lib/util/kformatprivate.cpp:310
@@ -656,10 +647,7 @@ msgstr[2] "%1 часа"
 #| msgid "%1 minutes"
 msgctxt "KFormat|"
 msgid "%n minute(s)"
-msgid_plural "%n minute(s)"
-msgstr[0] "%1 минути"
-msgstr[1] "%1 минути"
-msgstr[2] "%1 минути"
+msgstr "%1 минути"
 
 #. @item:intext %n is a whole number
 #: lib/util/kformatprivate.cpp:315
@@ -668,10 +656,7 @@ msgstr[2] "%1 минути"
 #| msgid "%1 seconds"
 msgctxt "KFormat|"
 msgid "%n second(s)"
-msgid_plural "%n second(s)"
-msgstr[0] "%1 секунди"
-msgstr[1] "%1 секунди"
-msgstr[2] "%1 секунди"
+msgstr "%1 секунди"
 
 #. @item:intext days and hours. This uses the previous item:intext messages. If this does not fit the grammar of your language please contact the i18n team to solve the problem
 #. ----------
@@ -690,42 +675,120 @@ msgctxt "KFormat|"
 msgid "%1 and %2"
 msgstr "%1 и %2"
 
-#: lib/util/kformatprivate.cpp:372
+#: lib/util/kformatprivate.cpp:366
+#, fuzzy
+#| msgid "invalid flags"
+msgctxt ""
+"KFormat|used when a relative date string can't be generated because the date "
+"is invalid"
+msgid "Invalid date"
+msgstr "невалидни знаменца"
+
+#: lib/util/kformatprivate.cpp:376
 msgctxt "KFormat|"
 msgid "Tomorrow"
 msgstr ""
 
-#: lib/util/kformatprivate.cpp:374
+#: lib/util/kformatprivate.cpp:378
 #, fuzzy
 #| msgid "Today"
 msgctxt "KFormat|"
 msgid "Today"
 msgstr "Денес"
 
-#: lib/util/kformatprivate.cpp:376
+#: lib/util/kformatprivate.cpp:380
 #, fuzzy
 #| msgid "Yesterday"
 msgctxt "KFormat|"
 msgid "Yesterday"
 msgstr "Вчера"
 
-#: lib/util/kformatprivate.cpp:383
-#, fuzzy, qt-format
-#| msgid "&Last Page"
-msgctxt "KFormat|"
-msgid "Last %1"
-msgstr "П&оследна страница"
+#: lib/util/kformatprivate.cpp:386
+#, fuzzy
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Monday"
+msgstr "Следен месец"
 
 #: lib/util/kformatprivate.cpp:388
-#, fuzzy, qt-format
-#| msgctxt "Opposite to Back"
-#| msgid "Next"
-msgctxt "KFormat|"
-msgid "Next %1"
-msgstr "Следно"
+#, fuzzy
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Tuesday"
+msgstr "П&оследна страница"
+
+#: lib/util/kformatprivate.cpp:390
+#, fuzzy
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Wednesday"
+msgstr "П&оследна страница"
+
+#: lib/util/kformatprivate.cpp:392
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Thursday"
+msgstr ""
+
+#: lib/util/kformatprivate.cpp:394
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Friday"
+msgstr ""
+
+#: lib/util/kformatprivate.cpp:396
+#, fuzzy
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Saturday"
+msgstr "П&оследна страница"
+
+#: lib/util/kformatprivate.cpp:398
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Sunday"
+msgstr ""
+
+#: lib/util/kformatprivate.cpp:403
+#, fuzzy
+msgctxt "KFormat|the next such day after today"
+msgid "Next Monday"
+msgstr "Следен месец"
+
+#: lib/util/kformatprivate.cpp:405
+#, fuzzy
+#| msgid "Next year"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Tuesday"
+msgstr "Следна година"
+
+#: lib/util/kformatprivate.cpp:407
+#, fuzzy
+msgctxt "KFormat|the next such day after today"
+msgid "Next Wednesday"
+msgstr "Следна година"
+
+#: lib/util/kformatprivate.cpp:409
+msgctxt "KFormat|the next such day after today"
+msgid "Next Thursday"
+msgstr ""
+
+#: lib/util/kformatprivate.cpp:411
+#, fuzzy
+#| msgid "Next year"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Friday"
+msgstr "Следна година"
+
+#: lib/util/kformatprivate.cpp:413
+#, fuzzy
+#| msgid "Next year"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Saturday"
+msgstr "Следна година"
+
+#: lib/util/kformatprivate.cpp:415
+#, fuzzy
+#| msgid "Next year"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Sunday"
+msgstr "Следна година"
 
 #. relative datetime with %1 result of formatReleativeDate() and %2 the formatted time If this does not fit the grammar of your language please contact the i18n team to solve the problem
-#: lib/util/kformatprivate.cpp:402
+#: lib/util/kformatprivate.cpp:430
 #, fuzzy, qt-format
 #| msgctxt ""
 #| "%1 is 'the slot asked for foo arguments', %2 is 'but there are only bar "
@@ -734,6 +797,19 @@ msgstr "Следно"
 msgctxt "KFormat|"
 msgid "%1, %2"
 msgstr "%1, %2."
+
+#, fuzzy
+#~| msgid "&Last Page"
+#~ msgctxt "KFormat|"
+#~ msgid "Last %1"
+#~ msgstr "П&оследна страница"
+
+#, fuzzy
+#~| msgctxt "Opposite to Back"
+#~| msgid "Next"
+#~ msgctxt "KFormat|"
+#~ msgid "Next %1"
+#~ msgstr "Следно"
 
 #, fuzzy
 #~ msgctxt "KPluginLoader|"
@@ -2631,9 +2707,6 @@ msgstr "%1, %2."
 
 #~ msgid "non-recoverable failure in name resolution"
 #~ msgstr "неповратен неуспех при разрешување на име"
-
-#~ msgid "invalid flags"
-#~ msgstr "невалидни знаменца"
 
 #~ msgid "memory allocation failure"
 #~ msgstr "неуспех при доделување меморија"
@@ -6479,16 +6552,6 @@ msgstr "%1, %2."
 #~ msgstr "Следна година"
 
 #, fuzzy
-#~ msgctxt "@option next month"
-#~ msgid "Next Month"
-#~ msgstr "Следен месец"
-
-#, fuzzy
-#~ msgctxt "@option next week"
-#~ msgid "Next Week"
-#~ msgstr "Следна година"
-
-#, fuzzy
 #~ msgctxt "@option today"
 #~ msgid "Today"
 #~ msgstr "Денес"
@@ -6497,16 +6560,6 @@ msgstr "%1, %2."
 #~ msgctxt "@option yesterday"
 #~ msgid "Yesterday"
 #~ msgstr "Вчера"
-
-#, fuzzy
-#~ msgctxt "@option last month"
-#~ msgid "Last Month"
-#~ msgstr "Следен месец"
-
-#, fuzzy
-#~ msgctxt "@option last year"
-#~ msgid "Last Year"
-#~ msgstr "П&оследна страница"
 
 #, fuzzy
 #~ msgctxt "@option do not specify a date"
@@ -6520,9 +6573,6 @@ msgstr "%1, %2."
 
 #~ msgid "Week %1"
 #~ msgstr "Недела %1"
-
-#~ msgid "Next year"
-#~ msgstr "Следна година"
 
 #~ msgid "Previous year"
 #~ msgstr "Претходна година"
@@ -9743,13 +9793,6 @@ msgstr "%1, %2."
 #~ "resources"
 #~ msgid "Yesterday"
 #~ msgstr "Вчера"
-
-#, fuzzy
-#~ msgctxt ""
-#~ "referring to a filter on the modification and usage date of files/"
-#~ "resources"
-#~ msgid "Last Week"
-#~ msgstr "П&оследна страница"
 
 #, fuzzy
 #~ msgctxt ""
