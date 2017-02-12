@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_folderview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-02-11 08:15+0100\n"
+"POT-Creation-Date: 2017-02-12 07:49+0100\n"
 "PO-Revision-Date: 2010-01-31 23:06+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -31,7 +31,7 @@ msgstr "Локација"
 
 #: package/contents/config/config.qml:36
 #: package/contents/ui/ConfigIcons.qml:252
-#: package/contents/ui/FolderViewLayer.qml:342
+#: package/contents/ui/FolderViewLayer.qml:340
 msgid "Icons"
 msgstr "Икони"
 
@@ -58,10 +58,6 @@ msgstr ""
 
 #: package/contents/ui/AppletHandle.qml:312
 msgid "Remove"
-msgstr ""
-
-#: package/contents/ui/BackButtonItem.qml:105
-msgid "Back"
 msgstr ""
 
 #: package/contents/ui/ConfigFilter.qml:53
@@ -349,23 +345,29 @@ msgstr "Сопствен наслов:"
 msgid "Enter custom title here"
 msgstr "Внесете сопствен наслов"
 
-#: package/contents/ui/ConfigTweaks.qml:42
+#: package/contents/ui/ConfigTweaks.qml:44
+msgid ""
+"Tweaks are experimental options that may become defaults depending on your "
+"feedback."
+msgstr ""
+
+#: package/contents/ui/ConfigTweaks.qml:50
 #, fuzzy
 #| msgid "Desktop Folder"
 msgid "Desktop Layout"
 msgstr "Папка за раб. површина"
 
-#: package/contents/ui/ConfigTweaks.qml:51
+#: package/contents/ui/ConfigTweaks.qml:59
 #, fuzzy
 #| msgid "Show the Desktop folder"
 msgid "Show the desktop toolbox"
 msgstr "Прикажи ја папката за раб. површина"
 
-#: package/contents/ui/ConfigTweaks.qml:59
+#: package/contents/ui/ConfigTweaks.qml:67
 msgid "Widget Handling"
 msgstr ""
 
-#: package/contents/ui/ConfigTweaks.qml:69
+#: package/contents/ui/ConfigTweaks.qml:77
 msgid "Press and hold widgets to move them and reveal their handles"
 msgstr ""
 
@@ -401,65 +403,166 @@ msgstr ""
 msgid "Configure Desktop"
 msgstr "Освежи &раб. површина"
 
+#: package/contents/ui/UpButtonItem.qml:105
+msgid "Up"
+msgstr ""
+
 #: plugins/folder/directorypicker.cpp:45
 #, fuzzy, kde-format
 #| msgid "Select All"
 msgid "Select Folder"
 msgstr "Избери ги сите"
 
-#: plugins/folder/foldermodel.cpp:254
+#: plugins/folder/foldermodel.cpp:250
 #, kde-format
 msgid "&Refresh Desktop"
 msgstr "Освежи &раб. површина"
 
-#: plugins/folder/foldermodel.cpp:254 plugins/folder/foldermodel.cpp:1239
+#: plugins/folder/foldermodel.cpp:250 plugins/folder/foldermodel.cpp:1195
 #, kde-format
 msgid "&Refresh View"
 msgstr "Освежи п&риказ"
 
-#: plugins/folder/foldermodel.cpp:1236
+#: plugins/folder/foldermodel.cpp:1192
 #, kde-format
 msgid "&Reload"
 msgstr "П&ревчитај"
 
-#: plugins/folder/foldermodel.cpp:1242
+#: plugins/folder/foldermodel.cpp:1198
 #, kde-format
 msgid "&Rename"
 msgstr "П&реименувај"
 
-#: plugins/folder/foldermodel.cpp:1245
+#: plugins/folder/foldermodel.cpp:1201
 #, kde-format
 msgid "&Move to Trash"
 msgstr "Пре&мести во корпата"
 
-#: plugins/folder/foldermodel.cpp:1248
+#: plugins/folder/foldermodel.cpp:1204
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:334
 #, kde-format
 msgid "&Empty Trash Bin"
 msgstr "Испразни ја &корпата"
 
-#: plugins/folder/foldermodel.cpp:1251
-#, fuzzy, kde-format
-#| msgid "&Restore"
-msgctxt "Restore from trash"
-msgid "Restore"
-msgstr "&Врати назад"
-
-#: plugins/folder/foldermodel.cpp:1254
+#: plugins/folder/foldermodel.cpp:1207
 #, kde-format
 msgid "&Delete"
 msgstr "&Избриши"
 
-#: plugins/folder/foldermodel.cpp:1257
-#, kde-format
-msgid "&Open"
-msgstr "&Отвори"
-
-#: plugins/folder/foldermodel.cpp:1327
+#: plugins/folder/foldermodel.cpp:1267
 #, kde-format
 msgid "&Paste"
 msgstr "&Вметни"
 
-#: plugins/folder/foldermodel.cpp:1449
+#: plugins/folder/internallibkonq/konq_copytomenu.cpp:84
+#, kde-format
+msgctxt "@title:menu"
+msgid "Copy To"
+msgstr "Копирај во"
+
+#: plugins/folder/internallibkonq/konq_copytomenu.cpp:90
+#, kde-format
+msgctxt "@title:menu"
+msgid "Move To"
+msgstr "Премести во"
+
+#: plugins/folder/internallibkonq/konq_copytomenu.cpp:114
+#, fuzzy, kde-format
+#| msgid "Desktop Folder"
+msgctxt "@title:menu"
+msgid "Home Folder"
+msgstr "Папка за раб. површина"
+
+#: plugins/folder/internallibkonq/konq_copytomenu.cpp:121
+#, fuzzy, kde-format
+#| msgid "Desktop Folder"
+msgctxt "@title:menu"
+msgid "Root Folder"
+msgstr "Папка за раб. површина"
+
+#: plugins/folder/internallibkonq/konq_copytomenu.cpp:156
+#, kde-format
+msgctxt "@title:menu in Copy To or Move To submenu"
+msgid "Browse..."
+msgstr "Прелистај..."
+
+#: plugins/folder/internallibkonq/konq_copytomenu.cpp:229
+#, kde-format
+msgctxt "@title:menu"
+msgid "Copy Here"
+msgstr "Копирај тука"
+
+#: plugins/folder/internallibkonq/konq_copytomenu.cpp:230
+#, kde-format
+msgctxt "@title:menu"
+msgid "Move Here"
+msgstr "Премести тука"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:241
+#, kde-format
+msgid "&Open"
+msgstr "&Отвори"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:264
+#, kde-format
+msgid "Create &Folder..."
+msgstr "Создај &папка..."
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:275
+#, fuzzy, kde-format
+#| msgid "&Restore"
+msgid "&Restore"
+msgstr "&Врати назад"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:299
+#, kde-format
+msgid "Show Original Directory"
+msgstr "Прикажи ја оригиналната папка"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:299
+#, fuzzy, kde-format
+#| msgid "Show All Files"
+msgid "Show Original File"
+msgstr "Прикажи ги сите датотеки"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:346
+#, fuzzy, kde-format
+#| msgid "&Empty Trash Bin"
+msgid "&Configure Trash Bin"
+msgstr "Испразни ја &корпата"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:370
+#, kde-format
+msgid "&Bookmark This Page"
+msgstr "О&бележи ја страницава"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:372
+#, kde-format
+msgid "&Bookmark This Location"
+msgstr "О&бележи ја локацијава"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:375
+#, kde-format
+msgid "&Bookmark This Folder"
+msgstr "О&бележи ја папкава"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:377
+#, kde-format
+msgid "&Bookmark This Link"
+msgstr "О&бележи ја врскава"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:379
+#, kde-format
+msgid "&Bookmark This File"
+msgstr "О&бележи ја датотекава"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:413
+#, fuzzy, kde-format
+#| msgid "Previews:"
+msgid "Preview In"
+msgstr "Прегледи:"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:448
 #, kde-format
 msgid "&Properties"
 msgstr "Својс&тва"
@@ -526,74 +629,6 @@ msgstr ""
 #, kde-format
 msgid "Locked"
 msgstr ""
-
-#~ msgctxt "@title:menu"
-#~ msgid "Copy To"
-#~ msgstr "Копирај во"
-
-#~ msgctxt "@title:menu"
-#~ msgid "Move To"
-#~ msgstr "Премести во"
-
-#, fuzzy
-#~| msgid "Desktop Folder"
-#~ msgctxt "@title:menu"
-#~ msgid "Home Folder"
-#~ msgstr "Папка за раб. површина"
-
-#, fuzzy
-#~| msgid "Desktop Folder"
-#~ msgctxt "@title:menu"
-#~ msgid "Root Folder"
-#~ msgstr "Папка за раб. површина"
-
-#~ msgctxt "@title:menu in Copy To or Move To submenu"
-#~ msgid "Browse..."
-#~ msgstr "Прелистај..."
-
-#~ msgctxt "@title:menu"
-#~ msgid "Copy Here"
-#~ msgstr "Копирај тука"
-
-#~ msgctxt "@title:menu"
-#~ msgid "Move Here"
-#~ msgstr "Премести тука"
-
-#~ msgid "Create &Folder..."
-#~ msgstr "Создај &папка..."
-
-#~ msgid "Show Original Directory"
-#~ msgstr "Прикажи ја оригиналната папка"
-
-#, fuzzy
-#~| msgid "Show All Files"
-#~ msgid "Show Original File"
-#~ msgstr "Прикажи ги сите датотеки"
-
-#, fuzzy
-#~| msgid "&Empty Trash Bin"
-#~ msgid "&Configure Trash Bin"
-#~ msgstr "Испразни ја &корпата"
-
-#~ msgid "&Bookmark This Page"
-#~ msgstr "О&бележи ја страницава"
-
-#~ msgid "&Bookmark This Location"
-#~ msgstr "О&бележи ја локацијава"
-
-#~ msgid "&Bookmark This Folder"
-#~ msgstr "О&бележи ја папкава"
-
-#~ msgid "&Bookmark This Link"
-#~ msgstr "О&бележи ја врскава"
-
-#~ msgid "&Bookmark This File"
-#~ msgstr "О&бележи ја датотекава"
-
-#, fuzzy
-#~| msgid "Previews:"
-#~ msgid "Preview In"
-#~ msgstr "Прегледи:"
 
 #~ msgid "Share"
 #~ msgstr "Дели"
