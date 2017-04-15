@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-03-14 08:30+0100\n"
+"POT-Creation-Date: 2017-04-15 02:47+0200\n"
 "PO-Revision-Date: 2007-02-28 14:12+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -3250,9 +3250,9 @@ msgstr "Вашата е-пошт. адреса"
 msgctxt "@info:whatsthis"
 msgid ""
 "Your email address, used to identify you as the sender when sending email "
-"alarms. Enter \"@SystemSettings\" to use the email address set in System "
-"Settings, \"@KMail\" to allow choice of KMail identities, or enter the "
-"actual email address otherwise."
+"alarms. Enter \"@SystemSettings\" to use the default email address set in "
+"KMail or System Settings, \"@KMail\" to allow choice of KMail identities, or "
+"enter the actual email address otherwise."
 msgstr ""
 
 #. i18n: ectx: label, entry (Base_EmailBccAddress), group (General)
@@ -3270,8 +3270,8 @@ msgid ""
 "Your email address, used for blind copying email alarms to yourself. If you "
 "want blind copies to be sent to your account on the computer which KAlarm "
 "runs on, you can simply enter your user login name. Enter \"@SystemSettings"
-"\" to use the email address set in System Settings, or enter the actual "
-"email address otherwise."
+"\" to use the default email address set in KMail or System Settings, or "
+"enter the actual email address otherwise."
 msgstr ""
 
 #. i18n: ectx: label, entry (Base_CmdXTermCommand), group (General)
@@ -3997,13 +3997,18 @@ msgid ""
 msgstr ""
 
 #: kamail.cpp:138
-#, kde-kuit-format
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "%1\n"
+#| "Are you sure you want to save your changes?"
 msgctxt "@info"
 msgid ""
-"<para>No 'From' email address is configured.</para><para>Please set it in "
-"the KDE System Settings or in the <application>KAlarm</application> "
-"Configuration dialog.</para>"
+"<para>No 'From' email address is configured.</para><para>Please set a "
+"default address in <application>KMail</application> or KDE System Settings "
+"or in the <application>KAlarm</application> Configuration dialog.</para>"
 msgstr ""
+"%1\n"
+"Дали навистина сакате да ги зачувате Вашите промени?"
 
 #: kamail.cpp:143
 #, fuzzy, kde-kuit-format
@@ -5470,18 +5475,20 @@ msgid ""
 msgstr ""
 
 #: prefdlg.cpp:1067 prefdlg.cpp:1103
-#, fuzzy, kde-format
-#| msgid "&Use address from Control Center"
+#, fuzzy, kde-kuit-format
+#| msgid "Use KMail &identities"
 msgctxt "@option:radio"
-msgid "Use address from System Settings"
-msgstr "&Користи адреса од Контролниот центар"
+msgid ""
+"Use default address from <application>KMail</application> or System Settings"
+msgstr "Користи &идентитети од КПошта"
 
 #: prefdlg.cpp:1070
-#, fuzzy, kde-format
+#, fuzzy, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
-"Check to use the email address set in KDE System Settings, to identify you "
-"as the sender when sending email alarms."
+"Check to use the default email address set in <application>KMail</"
+"application> or KDE System Settings, to identify you as the sender when "
+"sending email alarms."
 msgstr "Стандардното поставување за „%1“ во дијалогот за уредување аларми."
 
 #: prefdlg.cpp:1074
@@ -5521,11 +5528,12 @@ msgid ""
 msgstr ""
 
 #: prefdlg.cpp:1106
-#, fuzzy, kde-format
+#, fuzzy, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
-"Check to use the email address set in KDE System Settings, for blind copying "
-"email alarms to yourself."
+"Check to use the default email address set in <application>KMail</"
+"application> or KDE System Settings, for blind copying email alarms to "
+"yourself."
 msgstr "Стандардното поставување за „%1“ во дијалогот за уредување аларми."
 
 #: prefdlg.cpp:1188
@@ -5547,9 +5555,11 @@ msgstr ""
 "Дали навистина сакате да ги зачувате Вашите промени?"
 
 #: prefdlg.cpp:1201
-#, kde-format
+#, kde-kuit-format
 msgctxt "@info"
-msgid "No email address is currently set in KDE System Settings. %1"
+msgid ""
+"No default email address is currently set in <application>KMail</"
+"application> or KDE System Settings. %1"
 msgstr ""
 
 #: prefdlg.cpp:1206
@@ -7678,6 +7688,12 @@ msgstr ""
 #, kde-format
 msgid "Number of minutes before alarm to wake from suspend"
 msgstr ""
+
+#, fuzzy
+#~| msgid "&Use address from Control Center"
+#~ msgctxt "@option:radio"
+#~ msgid "Use address from System Settings"
+#~ msgstr "&Користи адреса од Контролниот центар"
 
 #, fuzzy
 #~| msgid ""
