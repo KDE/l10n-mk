@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio_smb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-07-13 03:15+0200\n"
+"POT-Creation-Date: 2017-07-19 07:04+0200\n"
 "PO-Revision-Date: 2005-12-16 12:00+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -47,7 +47,7 @@ msgstr "libsmbclient не успеа да креира контекст"
 msgid "libsmbclient failed to initialize context"
 msgstr "libsmbclient не успеа да иницијализира контекст"
 
-#: kio_smb_browse.cpp:68
+#: kio_smb_browse.cpp:67
 #, kde-format
 msgid ""
 "%1:\n"
@@ -56,12 +56,7 @@ msgstr ""
 "%1:\n"
 "Непознат тип на датотека, не е ни именик ни датотека."
 
-#: kio_smb_browse.cpp:157
-#, kde-format
-msgid "File does not exist: %1"
-msgstr "Датотеката не постои: %1"
-
-#: kio_smb_browse.cpp:230
+#: kio_smb_browse.cpp:223
 #, kde-format
 msgid ""
 "Unable to find any workgroups in your local network. This might be caused by "
@@ -70,32 +65,33 @@ msgstr ""
 "Не можам да најдам ниедна работна група во вашата локална мрежа. Ова може да "
 "е предизвикано од вклучен заштитен ѕид."
 
-#: kio_smb_browse.cpp:237
+#: kio_smb_browse.cpp:228
 #, kde-format
 msgid "No media in device for %1"
 msgstr "Нема медиум во уредот за %1"
 
-#: kio_smb_browse.cpp:245
+#: kio_smb_browse.cpp:234
 #, kde-format
 msgid "Could not connect to host for %1"
 msgstr "Не можев да се поврзам со компјутерот за %1"
 
-#: kio_smb_browse.cpp:261
+#: kio_smb_browse.cpp:247
 #, kde-format
 msgid "Error while connecting to server responsible for %1"
 msgstr "Грешка при поврзување со серверот одговорен за %1"
 
-#: kio_smb_browse.cpp:269
+#: kio_smb_browse.cpp:253
 #, kde-format
 msgid "Share could not be found on given server"
 msgstr "Делениот ресурс не беше пронајден на дадениот сервер"
 
-#: kio_smb_browse.cpp:272
-#, kde-format
-msgid "BAD File descriptor"
+#: kio_smb_browse.cpp:255
+#, fuzzy, kde-format
+#| msgid "BAD File descriptor"
+msgid "Bad file descriptor"
 msgstr "ЛОШ дескриптор на датотека"
 
-#: kio_smb_browse.cpp:279
+#: kio_smb_browse.cpp:260
 #, kde-format
 msgid ""
 "The given name could not be resolved to a unique server. Make sure your "
@@ -106,7 +102,7 @@ msgstr ""
 "вашата мрежа е поставена без никакви конфликти меѓу имињата кои се користат "
 "од разрешувањето на имиња на Windows и на UNIX."
 
-#: kio_smb_browse.cpp:285
+#: kio_smb_browse.cpp:265
 #, kde-format
 msgid ""
 "libsmbclient reported an error, but did not specify what the problem is. "
@@ -125,10 +121,15 @@ msgstr ""
 "тој може да содржи приватни податоци, така што не го праќајте ако не сте "
 "сигурни - може да го пратите приватно на развивачите ако го побараат)"
 
-#: kio_smb_browse.cpp:296
+#: kio_smb_browse.cpp:275
 #, kde-format
 msgid "Unknown error condition in stat: %1"
 msgstr "Непозната состојба на грешка во stat: %1"
+
+#: kio_smb_browse.cpp:291
+#, kde-kuit-format
+msgid "Error occurred while trying to access %1<nl/>%2"
+msgstr ""
 
 #: kio_smb_mount.cpp:111 kio_smb_mount.cpp:147
 #, kde-format
@@ -157,6 +158,9 @@ msgid ""
 msgstr ""
 "Демонтирањето на точката за монтирање \"%1\" не успеа.\n"
 "%2"
+
+#~ msgid "File does not exist: %1"
+#~ msgstr "Датотеката не постои: %1"
 
 #~ msgid "libsmbclient failed to initialize"
 #~ msgstr "libsmbclient не успеа да се иницијализира"
