@@ -18,38 +18,80 @@ msgstr ""
 "2;\n"
 "X-Qt-Contexts: true\n"
 
-#: common/KReportDesign.cpp:76
+#: common/KReportDesign.cpp:151
 #, fuzzy
 msgctxt "KReportDesign|"
 msgid "Could not parse XML document."
 msgstr "Не може да се отвори датотеката %1"
 
-#: common/KReportItemBase.cpp:28
+#: common/KReportDesign.cpp:160
+#, fuzzy
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Не може да се отвори датотеката %1"
+
+#: common/KReportItemBase.cpp:75
 #, fuzzy
 #| msgid "Name:"
 msgctxt "KReportItemBase|"
 msgid "Name"
 msgstr "Име :"
 
-#: common/KReportItemBase.cpp:28
+#: common/KReportItemBase.cpp:75
 #, fuzzy
 msgctxt "KReportItemBase|"
 msgid "Object Name"
 msgstr "Полно име :"
 
-#: common/KReportItemLine.cpp:75
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr ""
+"\n"
+"Ориентација:"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Наслов :"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Отстрани шаблон"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr ""
+"\n"
+"Ориентација:"
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr ""
+"\n"
+"Ориентација:"
+
+#: common/KReportItemLine.cpp:83
 #, fuzzy
 msgctxt "KReportItemLine|"
 msgid "Line Weight"
 msgstr "Ширина:"
 
-#: common/KReportItemLine.cpp:78
+#: common/KReportItemLine.cpp:85
 #, fuzzy
 msgctxt "KReportItemLine|"
 msgid "Line Color"
 msgstr "Колони:"
 
-#: common/KReportItemLine.cpp:79
+#: common/KReportItemLine.cpp:86
 #, fuzzy
 msgctxt "KReportItemLine|"
 msgid "Line Style"
@@ -87,32 +129,193 @@ msgstr "US Правно"
 
 #: common/KReportPageSize.cpp:40
 #, fuzzy
-#| msgid "Screen"
+#| msgid "Custom"
 msgctxt "KReportPageFormat|"
-msgid "Screen"
-msgstr "Екран"
+msgid "Custom"
+msgstr "По Избор"
 
-#: common/KReportPosition.cpp:29
-#, fuzzy
-msgctxt "KReportPosition|"
-msgid "Position"
+#: common/KReportPageSize.cpp:41
+msgctxt "KReportPageFormat|"
+msgid "B6"
 msgstr ""
-"\n"
-"Ориентација:"
 
-#: common/KReportSection.cpp:103
+#: common/KReportPageSize.cpp:42
+msgctxt "KReportPageFormat|"
+msgid "B5"
+msgstr ""
+
+#: common/KReportPageSize.cpp:43
+msgctxt "KReportPageFormat|"
+msgid "B4"
+msgstr ""
+
+#: common/KReportPageSize.cpp:44
 #, fuzzy
-msgctxt "KReportSection|"
-msgid "Height"
-msgstr "Висина:"
+msgctxt "KReportPageFormat|"
+msgid "Executive"
+msgstr "US Извршно"
 
-#: common/KReportSection.cpp:104
+#: common/KReportPageSize.cpp:45
+msgctxt "KReportPageFormat|"
+msgid "A0"
+msgstr ""
+
+#: common/KReportPageSize.cpp:46
+msgctxt "KReportPageFormat|"
+msgid "A1"
+msgstr ""
+
+#: common/KReportPageSize.cpp:47
+msgctxt "KReportPageFormat|"
+msgid "A2"
+msgstr ""
+
+#: common/KReportPageSize.cpp:48
+msgctxt "KReportPageFormat|"
+msgid "A6"
+msgstr ""
+
+#: common/KReportPageSize.cpp:49
+msgctxt "KReportPageFormat|"
+msgid "A7"
+msgstr ""
+
+#: common/KReportPageSize.cpp:50
+msgctxt "KReportPageFormat|"
+msgid "A8"
+msgstr ""
+
+#: common/KReportPageSize.cpp:51
+msgctxt "KReportPageFormat|"
+msgid "A9"
+msgstr ""
+
+#: common/KReportPageSize.cpp:52
+msgctxt "KReportPageFormat|"
+msgid "B0"
+msgstr ""
+
+#: common/KReportPageSize.cpp:53
+msgctxt "KReportPageFormat|"
+msgid "B1"
+msgstr ""
+
+#: common/KReportPageSize.cpp:54
 #, fuzzy
-msgctxt "KReportSection|"
-msgid "Background Color"
-msgstr "Отстрани табулатор"
+msgctxt "KReportPageFormat|"
+msgid "B10"
+msgstr "DIN B5"
 
-#: common/KReportSectionData.cpp:103
+#: common/KReportPageSize.cpp:55
+msgctxt "KReportPageFormat|"
+msgid "B2"
+msgstr ""
+
+#: common/KReportPageSize.cpp:56
+msgctxt "KReportPageFormat|"
+msgid "B3"
+msgstr ""
+
+#: common/KReportPageSize.cpp:57
+msgctxt "KReportPageFormat|"
+msgid "C5E"
+msgstr ""
+
+#: common/KReportPageSize.cpp:58
+#, fuzzy
+msgctxt "KReportPageFormat|"
+msgid "Comm10"
+msgstr "Фирма :"
+
+#: common/KReportPageSize.cpp:59
+#, fuzzy
+msgctxt "KReportPageFormat|"
+msgid "ISO DL"
+msgstr "DIN A3"
+
+#: common/KReportPageSize.cpp:60
+msgctxt "KReportPageFormat|"
+msgid "US Folio"
+msgstr ""
+
+#: common/KReportPageSize.cpp:61
+#, fuzzy
+msgctxt "KReportPageFormat|"
+msgid "US Ledger"
+msgstr "US Писмо"
+
+#: common/KReportPageSize.cpp:62
+msgctxt "KReportPageFormat|"
+msgid "US Tabloid"
+msgstr ""
+
+#: common/KReportPageSize.cpp:63
+msgctxt "KReportPageFormat|"
+msgid "DL Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:64
+msgctxt "KReportPageFormat|"
+msgid "C6 Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:65
+msgctxt "KReportPageFormat|"
+msgid "C6/5 Envolope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:66
+msgctxt "KReportPageFormat|"
+msgid "C5 Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:67
+msgctxt "KReportPageFormat|"
+msgid "C4 Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:68
+msgctxt "KReportPageFormat|"
+msgid "Monarch Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:69
+msgctxt "KReportPageFormat|"
+msgid "Personal Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:70
+msgctxt "KReportPageFormat|"
+msgid "9 Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:71
+msgctxt "KReportPageFormat|"
+msgid "10 Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:72
+msgctxt "KReportPageFormat|"
+msgid "11 Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:73
+msgctxt "KReportPageFormat|"
+msgid "12 Envelope"
+msgstr ""
+
+#: common/KReportPageSize.cpp:74
+#, fuzzy
+msgctxt "KReportPageFormat|"
+msgid "Postcard"
+msgstr "Поштенски код :"
+
+#: common/KReportPageSize.cpp:75
+msgctxt "KReportPageFormat|"
+msgid "Double Postcard"
+msgstr ""
+
+#: common/KReportSectionData.cpp:164
 #, fuzzy
 msgctxt "KReportSectionData|Report section"
 msgid "Section"
@@ -120,95 +323,95 @@ msgstr ""
 "\n"
 "Ориентација:"
 
-#: common/KReportSectionData.cpp:105
+#: common/KReportSectionData.cpp:166
 #, fuzzy
 msgctxt "KReportSectionData|"
 msgid "Height"
 msgstr "Висина:"
 
-#: common/KReportSectionData.cpp:106
+#: common/KReportSectionData.cpp:170
 #, fuzzy
 msgctxt "KReportSectionData|"
 msgid "Background Color"
 msgstr "Отстрани табулатор"
 
-#: common/KReportSize.cpp:28
+#: common/KReportUnit.cpp:136
 #, fuzzy
-msgctxt "KReportSize|"
-msgid "Size"
-msgstr "Наслов :"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "&Додади група..."
 
-#: common/KReportUnit.cpp:47
+#: common/KReportUnit.cpp:138
 #, fuzzy
 #| msgid "Millimeters (mm)"
 msgctxt "KReportUnit|"
 msgid "Millimeters (mm)"
 msgstr "Милиметри (mm)"
 
-#: common/KReportUnit.cpp:49
+#: common/KReportUnit.cpp:140
 #, fuzzy
 msgctxt "KReportUnit|"
 msgid "Centimeters (cm)"
 msgstr "Милиметри (mm)"
 
-#: common/KReportUnit.cpp:51
+#: common/KReportUnit.cpp:142
 #, fuzzy
 msgctxt "KReportUnit|"
 msgid "Decimeters (dm)"
 msgstr "Милиметри (mm)"
 
-#: common/KReportUnit.cpp:53
+#: common/KReportUnit.cpp:144
 #, fuzzy
 msgctxt "KReportUnit|"
 msgid "Inches (in)"
 msgstr "Инчи ( in )"
 
-#: common/KReportUnit.cpp:55
+#: common/KReportUnit.cpp:146
 #, fuzzy
 msgctxt "KReportUnit|"
 msgid "Pica (pi)"
 msgstr "Точки (pt)"
 
-#: common/KReportUnit.cpp:57
+#: common/KReportUnit.cpp:148
 msgctxt "KReportUnit|"
 msgid "Cicero (cc)"
 msgstr ""
 
-#: common/KReportUnit.cpp:59
+#: common/KReportUnit.cpp:150
 #, fuzzy
 #| msgid "Points (pt)"
 msgctxt "KReportUnit|"
 msgid "Points (pt)"
 msgstr "Точки (pt)"
 
-#: common/KReportUnit.cpp:61
+#: common/KReportUnit.cpp:152
 #, fuzzy
 msgctxt "KReportUnit|"
 msgid "Pixels (px)"
 msgstr "Точки (pt)"
 
-#: common/KReportUnit.cpp:63
+#: common/KReportUnit.cpp:154
 msgctxt "KReportUnit|"
 msgid "Unsupported unit"
 msgstr ""
 
-#: items/check/KReportItemCheck.cpp:81
+#: items/check/KReportItemCheck.cpp:79
 #, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Cross"
 msgstr "Колони:"
 
-#: items/check/KReportItemCheck.cpp:81
+#: items/check/KReportItemCheck.cpp:79
 msgctxt "KReportItemCheckBox|"
 msgid "Tick"
 msgstr ""
 
-#: items/check/KReportItemCheck.cpp:81
+#: items/check/KReportItemCheck.cpp:79
 msgctxt "KReportItemCheckBox|"
 msgid "Dot"
 msgstr ""
 
-#: items/check/KReportItemCheck.cpp:82
+#: items/check/KReportItemCheck.cpp:80
 #, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Style"
@@ -217,397 +420,384 @@ msgstr "Наслов :"
 #: items/check/KReportItemCheck.cpp:84
 #, fuzzy
 msgctxt "KReportItemCheckBox|"
-msgid "Data Source"
-msgstr "Отстрани шаблон"
-
-#: items/check/KReportItemCheck.cpp:87
-#, fuzzy
-msgctxt "KReportItemCheckBox|"
 msgid "Foreground Color"
 msgstr "Отстрани табулатор"
 
-#: items/check/KReportItemCheck.cpp:89
+#: items/check/KReportItemCheck.cpp:86
 #, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Line Weight"
 msgstr "Ширина:"
 
-#: items/check/KReportItemCheck.cpp:91
+#: items/check/KReportItemCheck.cpp:88
 #, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Line Color"
 msgstr "Колони:"
 
-#: items/check/KReportItemCheck.cpp:92
+#: items/check/KReportItemCheck.cpp:89
 #, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Line Style"
 msgstr "Наслов :"
 
-#: items/check/KReportItemCheck.cpp:93
+#: items/check/KReportItemCheck.cpp:90
 #, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Value"
 msgstr "Наслов :"
 
-#: items/check/KReportItemCheck.cpp:93
+#: items/check/KReportItemCheck.cpp:90
 msgctxt "KReportItemCheckBox|"
 msgid "Value used if not bound to a field"
 msgstr ""
 
-#: items/field/KReportItemField.cpp:93
-#, fuzzy
-msgctxt "KReportItemField|"
-msgid "Data Source"
-msgstr "Отстрани шаблон"
-
-#: items/field/KReportItemField.cpp:96
+#: items/field/KReportItemField.cpp:91
 #, fuzzy
 msgctxt "KReportItemField|"
 msgid "Value"
 msgstr "Наслов :"
 
-#: items/field/KReportItemField.cpp:96
+#: items/field/KReportItemField.cpp:91
 msgctxt "KReportItemField|"
 msgid "Value used if not bound to a field"
 msgstr ""
 
-#: items/field/KReportItemField.cpp:99
+#: items/field/KReportItemField.cpp:95
 #, fuzzy
 #| msgid "Left:"
 msgctxt "KReportItemField|"
 msgid "Left"
 msgstr "Лево:"
 
-#: items/field/KReportItemField.cpp:99 items/field/KReportItemField.cpp:105
+#: items/field/KReportItemField.cpp:95 items/field/KReportItemField.cpp:101
 #, fuzzy
 msgctxt "KReportItemField|"
 msgid "Center"
 msgstr "Коментар"
 
-#: items/field/KReportItemField.cpp:99
+#: items/field/KReportItemField.cpp:95
 #, fuzzy
 msgctxt "KReportItemField|"
 msgid "Right"
 msgstr "Десно:"
 
-#: items/field/KReportItemField.cpp:100
+#: items/field/KReportItemField.cpp:97
 #, fuzzy
 msgctxt "KReportItemField|"
 msgid "Horizontal Alignment"
 msgstr "Хоризонтално"
 
-#: items/field/KReportItemField.cpp:105
+#: items/field/KReportItemField.cpp:101
 #, fuzzy
 msgctxt "KReportItemField|"
 msgid "Top"
 msgstr "Горе:"
 
-#: items/field/KReportItemField.cpp:105
+#: items/field/KReportItemField.cpp:101
 #, fuzzy
 msgctxt "KReportItemField|"
 msgid "Bottom"
 msgstr "inch"
 
-#: items/field/KReportItemField.cpp:106
+#: items/field/KReportItemField.cpp:103
 #, fuzzy
 msgctxt "KReportItemField|"
 msgid "Vertical Alignment"
 msgstr "Внесете име"
 
-#: items/field/KReportItemField.cpp:108
+#: items/field/KReportItemField.cpp:105
 #, fuzzy
 msgctxt "KReportItemField|"
 msgid "Font"
 msgstr "inch"
 
-#: items/field/KReportItemField.cpp:110
+#: items/field/KReportItemField.cpp:107
 #, fuzzy
 msgctxt "KReportItemField|"
 msgid "Background Color"
 msgstr "Отстрани табулатор"
 
-#: items/field/KReportItemField.cpp:111
+#: items/field/KReportItemField.cpp:108
 #, fuzzy
 msgctxt "KReportItemField|"
 msgid "Foreground Color"
 msgstr "Отстрани табулатор"
 
-#: items/field/KReportItemField.cpp:113
+#: items/field/KReportItemField.cpp:110
 #, fuzzy
 msgctxt "KReportItemField|"
 msgid "Background Opacity"
 msgstr "Отстрани табулатор"
 
-#: items/field/KReportItemField.cpp:118
+#: items/field/KReportItemField.cpp:115
 #, fuzzy
 msgctxt "KReportItemField|"
 msgid "Line Weight"
 msgstr "Ширина:"
 
-#: items/field/KReportItemField.cpp:120
+#: items/field/KReportItemField.cpp:117
 #, fuzzy
 msgctxt "KReportItemField|"
 msgid "Line Color"
 msgstr "Колони:"
 
-#: items/field/KReportItemField.cpp:121
+#: items/field/KReportItemField.cpp:118
 #, fuzzy
 msgctxt "KReportItemField|"
 msgid "Line Style"
 msgstr "Наслов :"
 
-#: items/field/KReportItemField.cpp:123
+#: items/field/KReportItemField.cpp:120
 msgctxt "KReportItemField|"
 msgid "Word Wrap"
 msgstr ""
 
-#: items/field/KReportItemField.cpp:124
+#: items/field/KReportItemField.cpp:121
 msgctxt "KReportItemField|"
 msgid "Can Grow"
 msgstr ""
 
-#: items/image/KReportItemImage.cpp:118
-#, fuzzy
-msgctxt "KReportItemImage|"
-msgid "Data Source"
-msgstr "Отстрани шаблон"
-
-#: items/image/KReportItemImage.cpp:122
+#: items/image/KReportItemImage.cpp:119
 msgctxt "KReportItemImage|"
 msgid "Clip"
 msgstr ""
 
-#: items/image/KReportItemImage.cpp:122
+#: items/image/KReportItemImage.cpp:119
 #, fuzzy
 msgctxt "KReportItemImage|"
 msgid "Stretch"
 msgstr "Улица :"
 
-#: items/image/KReportItemImage.cpp:123
+#: items/image/KReportItemImage.cpp:120
 #, fuzzy
 msgctxt "KReportItemImage|"
 msgid "Resize Mode"
 msgstr "&Да"
 
-#: items/image/KReportItemImage.cpp:125
+#: items/image/KReportItemImage.cpp:121
 #, fuzzy
 msgctxt "KReportItemImage|"
 msgid "Value"
 msgstr "Наслов :"
 
-#: items/image/KReportItemImage.cpp:125
+#: items/image/KReportItemImage.cpp:121
 msgctxt "KReportItemImage|"
 msgid "Value used if not bound to a field"
 msgstr ""
 
-#: items/label/KReportItemLabel.cpp:93
+#: items/label/KReportItemLabel.cpp:91
 #, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Caption"
 msgstr "Зачувај документ како"
 
-#: items/label/KReportItemLabel.cpp:97
+#: items/label/KReportItemLabel.cpp:94
 #, fuzzy
 #| msgid "Left:"
 msgctxt "KReportItemLabel|"
 msgid "Left"
 msgstr "Лево:"
 
-#: items/label/KReportItemLabel.cpp:97 items/label/KReportItemLabel.cpp:103
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
 #, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Center"
 msgstr "Коментар"
 
-#: items/label/KReportItemLabel.cpp:97
+#: items/label/KReportItemLabel.cpp:94
 #, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Right"
 msgstr "Десно:"
 
-#: items/label/KReportItemLabel.cpp:98
+#: items/label/KReportItemLabel.cpp:96
 #, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Horizontal Alignment"
 msgstr "Хоризонтално"
 
-#: items/label/KReportItemLabel.cpp:103
+#: items/label/KReportItemLabel.cpp:100
 #, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Top"
 msgstr "Горе:"
 
-#: items/label/KReportItemLabel.cpp:103
+#: items/label/KReportItemLabel.cpp:100
 #, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Bottom"
 msgstr "inch"
 
-#: items/label/KReportItemLabel.cpp:104
+#: items/label/KReportItemLabel.cpp:102
 #, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Vertical Alignment"
 msgstr "Внесете име"
 
-#: items/label/KReportItemLabel.cpp:106
+#: items/label/KReportItemLabel.cpp:104
 #, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Font"
 msgstr "inch"
 
-#: items/label/KReportItemLabel.cpp:108
+#: items/label/KReportItemLabel.cpp:106
 #, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Background Color"
+msgstr "Отстрани табулатор"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
 msgstr "Отстрани табулатор"
 
 #: items/label/KReportItemLabel.cpp:109
 #, fuzzy
 msgctxt "KReportItemLabel|"
-msgid "Foreground Color"
-msgstr "Отстрани табулатор"
-
-#: items/label/KReportItemLabel.cpp:111
-#, fuzzy
-msgctxt "KReportItemLabel|"
 msgid "Background Opacity"
 msgstr "Отстрани табулатор"
 
-#: items/label/KReportItemLabel.cpp:116
+#: items/label/KReportItemLabel.cpp:114
 #, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Line Weight"
 msgstr "Ширина:"
 
-#: items/label/KReportItemLabel.cpp:118
+#: items/label/KReportItemLabel.cpp:116
 #, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Line Color"
 msgstr "Колони:"
 
-#: items/label/KReportItemLabel.cpp:119
+#: items/label/KReportItemLabel.cpp:117
 #, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Line Style"
 msgstr "Наслов :"
 
-#: items/text/KReportItemText.cpp:117
-#, fuzzy
-msgctxt "KReportItemText|"
-msgid "Data Source"
-msgstr "Отстрани шаблон"
-
-#: items/text/KReportItemText.cpp:119
+#: items/text/KReportItemText.cpp:113
 #, fuzzy
 msgctxt "KReportItemText|"
 msgid "Value"
 msgstr "Наслов :"
 
-#: items/text/KReportItemText.cpp:119
+#: items/text/KReportItemText.cpp:113
 msgctxt "KReportItemText|"
 msgid "Value used if not bound to a field"
 msgstr ""
 
-#: items/text/KReportItemText.cpp:122
+#: items/text/KReportItemText.cpp:117
 #, fuzzy
 #| msgid "Left:"
 msgctxt "KReportItemText|"
 msgid "Left"
 msgstr "Лево:"
 
-#: items/text/KReportItemText.cpp:122 items/text/KReportItemText.cpp:128
+#: items/text/KReportItemText.cpp:117 items/text/KReportItemText.cpp:123
 #, fuzzy
 msgctxt "KReportItemText|"
 msgid "Center"
 msgstr "Коментар"
 
-#: items/text/KReportItemText.cpp:122
+#: items/text/KReportItemText.cpp:117
 #, fuzzy
 msgctxt "KReportItemText|"
 msgid "Right"
 msgstr "Десно:"
 
-#: items/text/KReportItemText.cpp:123
+#: items/text/KReportItemText.cpp:119
 #, fuzzy
 msgctxt "KReportItemText|"
 msgid "Horizontal Alignment"
 msgstr "Хоризонтално"
 
-#: items/text/KReportItemText.cpp:128
+#: items/text/KReportItemText.cpp:123
 #, fuzzy
 msgctxt "KReportItemText|"
 msgid "Top"
 msgstr "Горе:"
 
-#: items/text/KReportItemText.cpp:128
+#: items/text/KReportItemText.cpp:123
 #, fuzzy
 msgctxt "KReportItemText|"
 msgid "Bottom"
 msgstr "inch"
 
-#: items/text/KReportItemText.cpp:129
+#: items/text/KReportItemText.cpp:125
 #, fuzzy
 msgctxt "KReportItemText|"
 msgid "Vertical Alignment"
 msgstr "Внесете име"
 
-#: items/text/KReportItemText.cpp:131
+#: items/text/KReportItemText.cpp:127
 #, fuzzy
 msgctxt "KReportItemText|"
 msgid "Font"
 msgstr "inch"
 
-#: items/text/KReportItemText.cpp:133
+#: items/text/KReportItemText.cpp:129
 #, fuzzy
 msgctxt "KReportItemText|"
 msgid "Background Color"
 msgstr "Отстрани табулатор"
 
-#: items/text/KReportItemText.cpp:134
+#: items/text/KReportItemText.cpp:130
 #, fuzzy
 msgctxt "KReportItemText|"
 msgid "Foreground Color"
 msgstr "Отстрани табулатор"
 
-#: items/text/KReportItemText.cpp:136
+#: items/text/KReportItemText.cpp:132
 #, fuzzy
 msgctxt "KReportItemText|"
 msgid "Line Weight"
 msgstr "Ширина:"
 
-#: items/text/KReportItemText.cpp:138
+#: items/text/KReportItemText.cpp:134
 #, fuzzy
 msgctxt "KReportItemText|"
 msgid "Line Color"
 msgstr "Колони:"
 
-#: items/text/KReportItemText.cpp:139
+#: items/text/KReportItemText.cpp:135
 #, fuzzy
 msgctxt "KReportItemText|"
 msgid "Line Style"
 msgstr "Наслов :"
 
-#: items/text/KReportItemText.cpp:140
+#: items/text/KReportItemText.cpp:136
 #, fuzzy
 msgctxt "KReportItemText|"
 msgid "Background Opacity"
 msgstr "Отстрани табулатор"
 
-#: items/text/KReportScriptText.cpp:192
+#: renderer/scripting/KReportScriptHandler.cpp:170
 #, qt-format
-msgctxt "Scripting::Text|"
-msgid "$Unable to read %1"
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
 msgstr ""
 
-#: renderer/scripting/KReportScriptHandler.cpp:147
-#: renderer/scripting/KReportScriptHandler.cpp:156
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "Скрипта за извршување."
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
 #, fuzzy
 msgctxt "KReportScriptHandler|"
 msgid "Script Error"
 msgstr "Внесете име"
 
-#: wrtembed/KReportDesigner.cpp:303
+#: wrtembed/KReportDesigner.cpp:310
 #, qt-format
 msgctxt "KReportDesigner|"
 msgid ""
@@ -616,124 +806,130 @@ msgid ""
 "and content will not be changed unless you change these scripts."
 msgstr ""
 
-#: wrtembed/KReportDesigner.cpp:308
+#: wrtembed/KReportDesigner.cpp:315
 msgctxt "KReportDesigner|"
 msgid "Unsupported Script Type"
 msgstr ""
 
-#: wrtembed/KReportDesigner.cpp:598
+#: wrtembed/KReportDesigner.cpp:675
 #, fuzzy
 #| msgid "Page Preview"
 msgctxt "KReportDesigner|"
 msgid "Page Header (Any)"
 msgstr "Преглед на страна"
 
-#: wrtembed/KReportDesigner.cpp:602
+#: wrtembed/KReportDesigner.cpp:679
 #, fuzzy
 #| msgid "Page Preview"
 msgctxt "KReportDesigner|"
 msgid "Page Header (Even)"
 msgstr "Преглед на страна"
 
-#: wrtembed/KReportDesigner.cpp:606
+#: wrtembed/KReportDesigner.cpp:683
 #, fuzzy
 #| msgid "Page Preview"
 msgctxt "KReportDesigner|"
 msgid "Page Header (Odd)"
 msgstr "Преглед на страна"
 
-#: wrtembed/KReportDesigner.cpp:610
+#: wrtembed/KReportDesigner.cpp:687
 #, fuzzy
 #| msgid "Page Preview"
 msgctxt "KReportDesigner|"
 msgid "Page Header (First)"
 msgstr "Преглед на страна"
 
-#: wrtembed/KReportDesigner.cpp:614
+#: wrtembed/KReportDesigner.cpp:691
 #, fuzzy
 #| msgid "Page Preview"
 msgctxt "KReportDesigner|"
 msgid "Page Header (Last)"
 msgstr "Преглед на страна"
 
-#: wrtembed/KReportDesigner.cpp:618
+#: wrtembed/KReportDesigner.cpp:695
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Any)"
 msgstr "Подножје"
 
-#: wrtembed/KReportDesigner.cpp:622
+#: wrtembed/KReportDesigner.cpp:699
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Even)"
 msgstr "Подножје"
 
-#: wrtembed/KReportDesigner.cpp:626
+#: wrtembed/KReportDesigner.cpp:703
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Odd)"
 msgstr "Подножје"
 
-#: wrtembed/KReportDesigner.cpp:630
+#: wrtembed/KReportDesigner.cpp:707
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Footer (First)"
 msgstr "Подножје"
 
-#: wrtembed/KReportDesigner.cpp:634
+#: wrtembed/KReportDesigner.cpp:711
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Last)"
 msgstr "Подножје"
 
-#: wrtembed/KReportDesigner.cpp:638
+#: wrtembed/KReportDesigner.cpp:715
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Report Header"
 msgstr "Заглавје"
 
-#: wrtembed/KReportDesigner.cpp:642
+#: wrtembed/KReportDesigner.cpp:719
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Report Footer"
 msgstr "Подножје"
 
-#: wrtembed/KReportDesigner.cpp:732
+#: wrtembed/KReportDesigner.cpp:807
 #, fuzzy
 msgctxt "KReportDesigner|Main report element"
 msgid "Report"
 msgstr "Отстрани приказ"
 
-#: wrtembed/KReportDesigner.cpp:737
+#: wrtembed/KReportDesigner.cpp:812
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Title"
 msgstr "Наслов :"
 
-#: wrtembed/KReportDesigner.cpp:737
+#: wrtembed/KReportDesigner.cpp:812
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Report Title"
 msgstr "Автор"
 
-#: wrtembed/KReportDesigner.cpp:743
+#: wrtembed/KReportDesigner.cpp:817
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Size"
 msgstr "Преглед на страна"
 
-#: wrtembed/KReportDesigner.cpp:747
+#: wrtembed/KReportDesigner.cpp:820
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Преглед на страна"
+
+#: wrtembed/KReportDesigner.cpp:824
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Portrait"
 msgstr "inch"
 
-#: wrtembed/KReportDesigner.cpp:747
+#: wrtembed/KReportDesigner.cpp:824
 msgctxt "KReportDesigner|"
 msgid "Landscape"
 msgstr ""
 
-#: wrtembed/KReportDesigner.cpp:748
+#: wrtembed/KReportDesigner.cpp:826
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Orientation"
@@ -741,131 +937,131 @@ msgstr ""
 "\n"
 "Ориентација:"
 
-#: wrtembed/KReportDesigner.cpp:759
+#: wrtembed/KReportDesigner.cpp:831
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Unit"
 msgstr "Преглед на страна"
 
-#: wrtembed/KReportDesigner.cpp:761
+#: wrtembed/KReportDesigner.cpp:832
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Show Grid"
 msgstr "Покажи %1 алатник"
 
-#: wrtembed/KReportDesigner.cpp:762
+#: wrtembed/KReportDesigner.cpp:833
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Snap to Grid"
 msgstr "Насловна линија:"
 
-#: wrtembed/KReportDesigner.cpp:763
+#: wrtembed/KReportDesigner.cpp:834
 msgctxt "KReportDesigner|"
 msgid "Grid Divisions"
 msgstr ""
 
-#: wrtembed/KReportDesigner.cpp:766
+#: wrtembed/KReportDesigner.cpp:840
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Left Margin"
 msgstr "inch"
 
-#: wrtembed/KReportDesigner.cpp:768
+#: wrtembed/KReportDesigner.cpp:842
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Right Margin"
 msgstr "inch"
 
-#: wrtembed/KReportDesigner.cpp:770
+#: wrtembed/KReportDesigner.cpp:844
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Top Margin"
 msgstr "inch"
 
-#: wrtembed/KReportDesigner.cpp:772
+#: wrtembed/KReportDesigner.cpp:846
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Bottom Margin"
 msgstr "inch"
 
-#: wrtembed/KReportDesigner.cpp:791
+#: wrtembed/KReportDesigner.cpp:868
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Object Script"
 msgstr "Скрипта за извршување."
 
-#: wrtembed/KReportDesigner.cpp:945
+#: wrtembed/KReportDesigner.cpp:1066
 #, fuzzy
 #| msgid "Custom"
 msgctxt "KReportDesigner|"
 msgid "Cut"
 msgstr "По Избор"
 
-#: wrtembed/KReportDesigner.cpp:949
+#: wrtembed/KReportDesigner.cpp:1070
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Copy"
 msgstr "Фирма :"
 
-#: wrtembed/KReportDesigner.cpp:954
+#: wrtembed/KReportDesigner.cpp:1075
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Paste"
 msgstr "Преглед на страна"
 
-#: wrtembed/KReportDesigner.cpp:965
+#: wrtembed/KReportDesigner.cpp:1086
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Delete"
 msgstr "Отстрани шаблон"
 
-#: wrtembed/KReportDesigner.cpp:1007
+#: wrtembed/KReportDesigner.cpp:1128
 #, fuzzy
 msgctxt "KReportDesigner|Report line element"
 msgid "Line"
 msgstr "inch"
 
-#: wrtembed/KReportDesigner.cpp:1349
+#: wrtembed/KReportDesigner.cpp:1475
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Line"
 msgstr "inch"
 
-#: wrtembed/KReportDesigner.cpp:1392
+#: wrtembed/KReportDesigner.cpp:1518
 msgctxt "KReportDesigner|"
 msgid "Cu&t"
 msgstr ""
 
-#: wrtembed/KReportDesigner.cpp:1394
+#: wrtembed/KReportDesigner.cpp:1520
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Cut selection to clipboard"
 msgstr "Зачувај документ како"
 
-#: wrtembed/KReportDesigner.cpp:1398
+#: wrtembed/KReportDesigner.cpp:1524
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "&Copy"
 msgstr "Фирма :"
 
-#: wrtembed/KReportDesigner.cpp:1400
+#: wrtembed/KReportDesigner.cpp:1526
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Copy selection to clipboard"
 msgstr "Зачувај документ како"
 
-#: wrtembed/KReportDesigner.cpp:1404
+#: wrtembed/KReportDesigner.cpp:1530
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "&Paste"
 msgstr "Преглед на страна"
 
-#: wrtembed/KReportDesigner.cpp:1406
+#: wrtembed/KReportDesigner.cpp:1532
 msgctxt "KReportDesigner|"
 msgid "Paste clipboard content"
 msgstr ""
 
-#: wrtembed/KReportDesigner.cpp:1417
+#: wrtembed/KReportDesigner.cpp:1543
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Edit Sections"
@@ -873,19 +1069,19 @@ msgstr ""
 "\n"
 "Ориентација:"
 
-#: wrtembed/KReportDesigner.cpp:1420
+#: wrtembed/KReportDesigner.cpp:1546
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Raise"
 msgstr "&Да"
 
-#: wrtembed/KReportDesigner.cpp:1422
+#: wrtembed/KReportDesigner.cpp:1548
 #, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Lower"
 msgstr "Име :"
 
-#: wrtembed/KReportDesignerSection.cpp:124
+#: wrtembed/KReportDesignerSection.cpp:126
 #, fuzzy
 msgctxt "KReportDesignerSection|"
 msgid "Detail"
@@ -941,19 +1137,19 @@ msgid ""
 "properties to be seen."
 msgstr ""
 
-#: wrtembed/KReportRuler.cpp:1267
+#: wrtembed/KReportRuler_p.cpp:1473
 #, fuzzy
 msgctxt "KReportRuler|"
 msgid "First line indent"
 msgstr "Сите датотеки (*.*)"
 
-#: wrtembed/KReportRuler.cpp:1268
+#: wrtembed/KReportRuler_p.cpp:1474
 #, fuzzy
 msgctxt "KReportRuler|"
 msgid "Left indent"
 msgstr "inch"
 
-#: wrtembed/KReportRuler.cpp:1269
+#: wrtembed/KReportRuler_p.cpp:1475
 #, fuzzy
 msgctxt "KReportRuler|"
 msgid "Right indent"
@@ -1061,77 +1257,77 @@ msgstr ""
 "\n"
 "Ориентација:"
 
-#: wrtembed/KReportZoomMode.cpp:27
+#: wrtembed/KReportZoomMode_p.cpp:28
 #, qt-format
 msgctxt "KReportZoomMode|"
 msgid "%1%"
 msgstr ""
 
-#: wrtembed/KReportZoomMode.cpp:28
+#: wrtembed/KReportZoomMode_p.cpp:29
 #, fuzzy
 msgctxt "KReportZoomMode|"
 msgid "Fit Page Width"
 msgstr "Ширина:"
 
-#: wrtembed/KReportZoomMode.cpp:29
+#: wrtembed/KReportZoomMode_p.cpp:30
 #, fuzzy
 msgctxt "KReportZoomMode|"
 msgid "Fit Page"
 msgstr "Преглед на страна"
 
-#: wrtembed/KReportZoomMode.cpp:31
+#: wrtembed/KReportZoomMode_p.cpp:32
 msgctxt "KReportZoomMode|"
 msgid "Actual Pixels"
 msgstr ""
 
-#: wrtembed/KReportZoomMode.cpp:35
+#: wrtembed/KReportZoomMode_p.cpp:36
 #, fuzzy
 msgctxt "KReportZoomMode|"
 msgid "Fit Text Width"
 msgstr "Ширина:"
 
 #, fuzzy
-#~ msgctxt "KReportDesign|"
-#~ msgid "Error in XML document."
-#~ msgstr "Не може да се отвори датотеката %1"
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Екран"
 
 #, fuzzy
-#~ msgctxt "ItemPosition|"
+#~ msgctxt "KReportPosition|"
 #~ msgid "Position"
 #~ msgstr ""
 #~ "\n"
 #~ "Ориентација:"
 
 #, fuzzy
-#~ msgctxt "ItemSize|"
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "Висина:"
+
+#, fuzzy
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgctxt "KReportSize|"
 #~ msgid "Size"
 #~ msgstr "Наслов :"
 
 #, fuzzy
-#~ msgctxt "StartPosition|"
-#~ msgid "Start Position"
-#~ msgstr ""
-#~ "\n"
-#~ "Ориентација:"
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Отстрани шаблон"
 
 #, fuzzy
-#~ msgctxt "EndPosition|"
-#~ msgid "End Position"
-#~ msgstr ""
-#~ "\n"
-#~ "Ориентација:"
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Отстрани шаблон"
 
 #, fuzzy
-#~ msgctxt "KReportUnit|"
-#~ msgid "Invalid"
-#~ msgstr "&Додади група..."
-
-#, fuzzy
-#~ msgctxt "KReportScriptHandler|"
-#~ msgid ""
-#~ "Script code:\n"
-#~ "%1"
-#~ msgstr "Скрипта за извршување."
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Отстрани шаблон"
 
 #, fuzzy
 #~ msgctxt "KReportPageFormat|"
@@ -1147,12 +1343,6 @@ msgstr "Ширина:"
 #~ msgctxt "KReportPageFormat|"
 #~ msgid "ISO A5"
 #~ msgstr "DIN A5"
-
-#, fuzzy
-#~| msgid "Custom"
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "Custom"
-#~ msgstr "По Избор"
 
 #, fuzzy
 #~ msgctxt "KReportPageFormat|"
@@ -1212,11 +1402,6 @@ msgstr "Ширина:"
 
 #, fuzzy
 #~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO B10"
-#~ msgstr "DIN B5"
-
-#, fuzzy
-#~ msgctxt "KReportPageFormat|"
 #~ msgid "ISO B2"
 #~ msgstr "DIN B5"
 
@@ -1239,16 +1424,6 @@ msgstr "Ширина:"
 #~ msgctxt "KReportPageFormat|"
 #~ msgid "ISO C5"
 #~ msgstr "DIN A5"
-
-#, fuzzy
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO DL"
-#~ msgstr "DIN A3"
-
-#, fuzzy
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "US Ledger"
-#~ msgstr "US Писмо"
 
 #, fuzzy
 #~ msgctxt "KRSectionData|"
@@ -3293,10 +3468,6 @@ msgstr "Ширина:"
 #~ msgstr "Отстрани приказ"
 
 #, fuzzy
-#~ msgid "Execute"
-#~ msgstr "US Извршно"
-
-#, fuzzy
 #~ msgid "Stylesheets"
 #~ msgstr "Наслов :"
 
@@ -3410,10 +3581,6 @@ msgstr "Ширина:"
 #, fuzzy
 #~ msgid "Format"
 #~ msgstr "Формат на страна"
-
-#, fuzzy
-#~ msgid "Comma"
-#~ msgstr "Фирма :"
 
 #, fuzzy
 #~ msgid "Other"
@@ -4796,10 +4963,6 @@ msgstr "Ширина:"
 #, fuzzy
 #~ msgid "Country"
 #~ msgstr "Држава :"
-
-#, fuzzy
-#~ msgid "Postal Code"
-#~ msgstr "Поштенски код :"
 
 #, fuzzy
 #~ msgid "City"
