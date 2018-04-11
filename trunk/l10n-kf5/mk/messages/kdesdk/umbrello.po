@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-04-09 03:31+0200\n"
+"POT-Creation-Date: 2018-04-11 03:38+0200\n"
 "PO-Revision-Date: 2006-09-30 17:38+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -102,7 +102,7 @@ msgstr "Агрегација"
 msgid "Dependency"
 msgstr "Зависност"
 
-#: basictypes.cpp:349 umlwidgets/widgetbase.cpp:1079 worktoolbar.cpp:331
+#: basictypes.cpp:349 umlwidgets/widgetbase.cpp:1086 worktoolbar.cpp:331
 #, kde-format
 msgid "Association"
 msgstr "Поврзување"
@@ -168,7 +168,7 @@ msgid "State Transition"
 msgstr "Пренос на состојба"
 
 #: basictypes.cpp:375 dialogs/activitydialog.cpp:136
-#: umlwidgets/widgetbase.cpp:1070 worktoolbar.cpp:373
+#: umlwidgets/widgetbase.cpp:1077 worktoolbar.cpp:373
 #, kde-format
 msgid "Activity"
 msgstr "Активност"
@@ -1373,7 +1373,7 @@ msgstr "Почеток"
 #. i18n: ectx: property (text), widget (QRadioButton, ui_categoryClass)
 #. i18n: ectx: property (text), widget (QTableWidget, ui_tableWidgetStatus)
 #: codegenwizard/codegenstatuspage.ui:40 codeimpwizard/codeimpstatuspage.ui:54
-#: dialogs/finddialog.ui:89 umllistview.cpp:1434 umlwidgets/widgetbase.cpp:1094
+#: dialogs/finddialog.ui:89 umllistview.cpp:1434 umlwidgets/widgetbase.cpp:1101
 #, kde-format
 msgid "Class"
 msgstr "Класа"
@@ -1754,7 +1754,7 @@ msgstr "Општо"
 
 #: dialogs/classpropertiesdialog.cpp:250 dialogs/classpropertiesdialog.cpp:361
 #: dialogs/multipagedialogbase.cpp:372 dialogs/multipagedialogbase.cpp:386
-#: dialogs/multipagedialogbase.cpp:396 dialogs/settingsdialog.cpp:231
+#: dialogs/multipagedialogbase.cpp:396 dialogs/settingsdialog.cpp:233
 #: dialogs/umlforeignkeyconstraintdialog.cpp:205 dialogs/umlviewdialog.cpp:91
 #, kde-format
 msgid "General Settings"
@@ -2038,6 +2038,66 @@ msgstr "<p align=\"right\">Неуредувачки текст:</p>"
 msgid "<p align=\"right\">Editable text:</p>"
 msgstr "<p align=\"right\">Уредувачки текст:</p>"
 
+#: dialogs/dialog_utils.cpp:32
+#, fuzzy, kde-format
+#| msgid "E&nable autosave"
+msgid "Enable all messages"
+msgstr "Овозможи а&втоматсо зачувување"
+
+#: dialogs/dialog_utils.cpp:33
+#, kde-format
+msgid "Enable 'delete association' related messages"
+msgstr ""
+
+#: dialogs/dialog_utils.cpp:34
+#, kde-format
+msgid "Enable 'delete diagram' related messages"
+msgstr ""
+
+#: dialogs/dialog_utils.cpp:114
+#, kde-format
+msgid "You are about to delete an association. Do you really want to continue?"
+msgstr ""
+
+#: dialogs/dialog_utils.cpp:115
+#, fuzzy, kde-format
+msgid "Delete Association"
+msgstr "Само-асоцијација"
+
+#: dialogs/dialog_utils.cpp:129
+#, kde-format
+msgid ""
+"You are about to delete the entire diagram.\n"
+"Are you sure?"
+msgstr "Дали сте сигурни дека сакате да го избришете целиот дијаграм?"
+
+#: dialogs/dialog_utils.cpp:130
+#, kde-format
+msgid "Are you sure you want to delete diagram %1?"
+msgstr "Дали навистина сакате да го избришете дијаграмот %1?"
+
+#: dialogs/dialog_utils.cpp:135
+#, kde-format
+msgid "Delete Diagram?"
+msgstr "Отстранете го дијаграмот?"
+
+#: dialogs/dialog_utils.cpp:136 dialogs/pages/classifierlistpage.cpp:216
+#: dialogs/pages/classifierlistpage.cpp:224
+#: dialogs/umlforeignkeyconstraintdialog.cpp:322
+#: dialogs/umlforeignkeyconstraintdialog.cpp:328
+#: dialogs/umloperationdialog.cpp:159 dialogs/umloperationdialog.cpp:167
+#: dialogs/umluniqueconstraintdialog.cpp:117
+#: dialogs/umluniqueconstraintdialog.cpp:123
+#, fuzzy, kde-format
+msgid "&Delete"
+msgstr "&Стандардно"
+
+#: dialogs/dontaskagain.cpp:66
+#, fuzzy, kde-format
+#| msgid "Associations"
+msgid "Notifications"
+msgstr "Асоцијации"
+
 #: dialogs/exportallviewsdialog.cpp:64 dialogs/widgets/imagetypewidget.cpp:46
 #, kde-format
 msgid "The format that the images will be exported to"
@@ -2128,7 +2188,7 @@ msgstr "Сите диј&аграми"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: dialogs/finddialog.ui:74 listpopupmenu.cpp:879
-#: umlwidgets/widgetbase.cpp:1085 worktoolbar.cpp:385
+#: umlwidgets/widgetbase.cpp:1092 worktoolbar.cpp:385
 #, kde-format
 msgid "Category"
 msgstr ""
@@ -2141,14 +2201,14 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, ui_categoryPackage)
 #: dialogs/finddialog.ui:96 listpopupmenu.cpp:1030 listpopupmenu.cpp:1246
-#: umlwidgets/widgetbase.cpp:1130 worktoolbar.cpp:354
+#: umlwidgets/widgetbase.cpp:1137 worktoolbar.cpp:354
 #, kde-format
 msgid "Package"
 msgstr "Пакет"
 
 #. i18n: ectx: property (text), widget (QRadioButton, ui_categoryInterface)
 #: dialogs/finddialog.ui:103 listpopupmenu.cpp:1026
-#: umlwidgets/widgetbase.cpp:1112 worktoolbar.cpp:358
+#: umlwidgets/widgetbase.cpp:1119 worktoolbar.cpp:358
 #, kde-format
 msgid "Interface"
 msgstr "Интерфејс"
@@ -2379,7 +2439,7 @@ msgid "Rename"
 msgstr "Преименувај"
 
 #: dialogs/pages/activitypage.cpp:189 toolbarstateother.cpp:280
-#: umlscene.cpp:3088 umlwidgets/statewidget.cpp:500
+#: umlscene.cpp:3092 umlwidgets/statewidget.cpp:500
 #, kde-format
 msgid "new activity"
 msgstr "нова активност"
@@ -2390,7 +2450,7 @@ msgid "New Activity"
 msgstr "Нова активност"
 
 #: dialogs/pages/activitypage.cpp:191 toolbarstateother.cpp:280
-#: umlscene.cpp:3090 umlwidgets/activitywidget.cpp:375
+#: umlscene.cpp:3094 umlwidgets/activitywidget.cpp:375
 #: umlwidgets/statewidget.cpp:502
 #, kde-format
 msgid "Enter the name of the new activity:"
@@ -2657,17 +2717,6 @@ msgstr "Атрибути на ентитетот"
 #| msgid "N&ew Entity Attribute..."
 msgid "N&ew Instance Attribute..."
 msgstr "Н&ов атрибут на ентитетот..."
-
-#: dialogs/pages/classifierlistpage.cpp:216
-#: dialogs/pages/classifierlistpage.cpp:224
-#: dialogs/umlforeignkeyconstraintdialog.cpp:322
-#: dialogs/umlforeignkeyconstraintdialog.cpp:328
-#: dialogs/umloperationdialog.cpp:159 dialogs/umloperationdialog.cpp:167
-#: dialogs/umluniqueconstraintdialog.cpp:117
-#: dialogs/umluniqueconstraintdialog.cpp:123 umldoc.cpp:1762 umlscene.cpp:3285
-#, fuzzy, kde-format
-msgid "&Delete"
-msgstr "&Стандардно"
 
 #: dialogs/pages/classifierlistpage.cpp:218
 #: dialogs/pages/classifierlistpage.cpp:226 dialogs/umloperationdialog.cpp:161
@@ -3307,30 +3356,30 @@ msgstr "Невалидно име на параметар"
 msgid "Umbrello Setup"
 msgstr "Поставување на Umbrello"
 
-#: dialogs/settingsdialog.cpp:120 umllistview.cpp:1440
+#: dialogs/settingsdialog.cpp:122 umllistview.cpp:1440
 #, kde-format
 msgid "User Interface"
 msgstr "Кориснички интерфејс"
 
-#: dialogs/settingsdialog.cpp:120
+#: dialogs/settingsdialog.cpp:122
 #, kde-format
 msgid "User Interface Settings"
 msgstr "Поставувања на кориснички интерфејс"
 
-#: dialogs/settingsdialog.cpp:123
+#: dialogs/settingsdialog.cpp:125
 #, fuzzy, kde-format
 #| msgid "Color"
 msgctxt "color group box"
 msgid "Color"
 msgstr "Боја"
 
-#: dialogs/settingsdialog.cpp:131
+#: dialogs/settingsdialog.cpp:133
 #, fuzzy, kde-format
 #| msgid "Line color:"
 msgid "Custom text color:"
 msgstr "Боја на линија:"
 
-#: dialogs/settingsdialog.cpp:138
+#: dialogs/settingsdialog.cpp:140
 #, fuzzy, kde-format
 #| msgid "Line color:"
 msgid "Custom line color:"
@@ -3338,92 +3387,92 @@ msgstr "Боја на линија:"
 
 #. i18n("D&efault Color"), m_UiWidgets.colorGB);
 #. colorLayout->addWidget(m_UiWidgets.lineDefaultB, 0, 2);
-#: dialogs/settingsdialog.cpp:148
+#: dialogs/settingsdialog.cpp:150
 #, fuzzy, kde-format
 #| msgid "&Use fill color"
 msgid "Custom fill color:"
 msgstr "Користи боја на исполн&ување"
 
-#: dialogs/settingsdialog.cpp:154
+#: dialogs/settingsdialog.cpp:156
 #, fuzzy, kde-format
 #| msgid "Custom operation:"
 msgid "Custom grid color:"
 msgstr "Сопствена операција:"
 
-#: dialogs/settingsdialog.cpp:160
+#: dialogs/settingsdialog.cpp:162
 #, fuzzy, kde-format
 #| msgid "Color"
 msgid "Custom background color:"
 msgstr "Боја"
 
-#: dialogs/settingsdialog.cpp:166
+#: dialogs/settingsdialog.cpp:168
 #, fuzzy, kde-format
 #| msgid "Line width:"
 msgid "Custom line width:"
 msgstr "Дебелина на линија:"
 
-#: dialogs/settingsdialog.cpp:180
+#: dialogs/settingsdialog.cpp:182
 #, kde-format
 msgid "&Use fill color"
 msgstr "Користи боја на исполн&ување"
 
-#: dialogs/settingsdialog.cpp:231 dialogs/umlviewdialog.cpp:91
+#: dialogs/settingsdialog.cpp:233 dialogs/umlviewdialog.cpp:91
 #, fuzzy, kde-format
 #| msgid "General"
 msgctxt "general settings page"
 msgid "General"
 msgstr "Општо"
 
-#: dialogs/settingsdialog.cpp:240
+#: dialogs/settingsdialog.cpp:242
 #, fuzzy, kde-format
 #| msgid "Class"
 msgctxt "class settings page"
 msgid "Class"
 msgstr "Класа"
 
-#: dialogs/settingsdialog.cpp:240
+#: dialogs/settingsdialog.cpp:242
 #, kde-format
 msgid "Class Settings"
 msgstr "Својства на класа"
 
-#: dialogs/settingsdialog.cpp:247 umllistview.cpp:1435
+#: dialogs/settingsdialog.cpp:249 umllistview.cpp:1435
 #, fuzzy, kde-format
 msgid "Code Importer"
 msgstr "Не е генериран"
 
-#: dialogs/settingsdialog.cpp:247
+#: dialogs/settingsdialog.cpp:249
 #, fuzzy, kde-format
 #| msgid "Code Viewer Settings"
 msgid "Code Import Settings"
 msgstr "Поставувања за прегледувачот на код"
 
-#: dialogs/settingsdialog.cpp:256 umllistview.cpp:1436
+#: dialogs/settingsdialog.cpp:258 umllistview.cpp:1436
 #, kde-format
 msgid "Code Generation"
 msgstr "Генерирање код"
 
-#: dialogs/settingsdialog.cpp:256
+#: dialogs/settingsdialog.cpp:258
 #, kde-format
 msgid "Code Generation Settings"
 msgstr "Поставувања за генерирање код"
 
-#: dialogs/settingsdialog.cpp:264 umllistview.cpp:1437
+#: dialogs/settingsdialog.cpp:266 umllistview.cpp:1437
 #, kde-format
 msgid "Code Viewer"
 msgstr "Прегледувач за код"
 
-#: dialogs/settingsdialog.cpp:264
+#: dialogs/settingsdialog.cpp:266
 #, kde-format
 msgid "Code Viewer Settings"
 msgstr "Поставувања за прегледувачот на код"
 
-#: dialogs/settingsdialog.cpp:271 umllistview.cpp:1433
+#: dialogs/settingsdialog.cpp:273 umllistview.cpp:1433
 #, fuzzy, kde-format
 #| msgid "&Autolayout..."
 msgid "Auto Layout"
 msgstr "&Автоматски распоред..."
 
-#: dialogs/settingsdialog.cpp:271
+#: dialogs/settingsdialog.cpp:273
 #, fuzzy, kde-format
 #| msgid "Entity Attributes Settings"
 msgid "Auto Layout Settings"
@@ -4540,22 +4589,22 @@ msgstr ""
 msgid "Subsystem"
 msgstr "Подсистем"
 
-#: listpopupmenu.cpp:840 umlwidgets/widgetbase.cpp:1091 worktoolbar.cpp:355
+#: listpopupmenu.cpp:840 umlwidgets/widgetbase.cpp:1098 worktoolbar.cpp:355
 #, kde-format
 msgid "Component"
 msgstr "Компонента"
 
-#: listpopupmenu.cpp:843 umlwidgets/widgetbase.cpp:1136 worktoolbar.cpp:378
+#: listpopupmenu.cpp:843 umlwidgets/widgetbase.cpp:1143 worktoolbar.cpp:378
 #, kde-format
 msgid "Port"
 msgstr ""
 
-#: listpopupmenu.cpp:846 umlwidgets/widgetbase.cpp:1076 worktoolbar.cpp:357
+#: listpopupmenu.cpp:846 umlwidgets/widgetbase.cpp:1083 worktoolbar.cpp:357
 #, kde-format
 msgid "Artifact"
 msgstr "Артифакт"
 
-#: listpopupmenu.cpp:855 umlwidgets/widgetbase.cpp:1118 worktoolbar.cpp:356
+#: listpopupmenu.cpp:855 umlwidgets/widgetbase.cpp:1125 worktoolbar.cpp:356
 #, kde-format
 msgid "Node"
 msgstr "Јазол"
@@ -4566,12 +4615,12 @@ msgstr "Јазол"
 msgid "Folder"
 msgstr "Папка"
 
-#: listpopupmenu.cpp:870 umlwidgets/widgetbase.cpp:1100 worktoolbar.cpp:361
+#: listpopupmenu.cpp:870 umlwidgets/widgetbase.cpp:1107 worktoolbar.cpp:361
 #, kde-format
 msgid "Entity"
 msgstr "Ентитет"
 
-#: listpopupmenu.cpp:882 umlwidgets/widgetbase.cpp:1073 worktoolbar.cpp:337
+#: listpopupmenu.cpp:882 umlwidgets/widgetbase.cpp:1080 worktoolbar.cpp:337
 #, kde-format
 msgid "Actor"
 msgstr "Актер"
@@ -4606,12 +4655,12 @@ msgctxt "new class menu item"
 msgid "Class"
 msgstr "Класа"
 
-#: listpopupmenu.cpp:1027 umlwidgets/widgetbase.cpp:1097 worktoolbar.cpp:359
+#: listpopupmenu.cpp:1027 umlwidgets/widgetbase.cpp:1104 worktoolbar.cpp:359
 #, kde-format
 msgid "Datatype"
 msgstr "Податочен тип"
 
-#: listpopupmenu.cpp:1028 umlwidgets/widgetbase.cpp:1103 worktoolbar.cpp:360
+#: listpopupmenu.cpp:1028 umlwidgets/widgetbase.cpp:1110 worktoolbar.cpp:360
 #, kde-format
 msgid "Enum"
 msgstr "Енумерација"
@@ -5463,7 +5512,7 @@ msgstr "Неточно употребени асоцијации."
 msgid "Association Error"
 msgstr "Грешка при асоцијацијата"
 
-#: toolbarstateother.cpp:279 umlscene.cpp:3089
+#: toolbarstateother.cpp:279 umlscene.cpp:3093
 #: umlwidgets/activitywidget.cpp:374
 #, kde-format
 msgid "Enter Activity Name"
@@ -5520,17 +5569,17 @@ msgstr ""
 msgid "new Combined Fragment"
 msgstr ""
 
-#: toolbarstateother.cpp:308 umlscene.cpp:3054 umlwidgets/statewidget.cpp:487
+#: toolbarstateother.cpp:308 umlscene.cpp:3058 umlwidgets/statewidget.cpp:487
 #, kde-format
 msgid "Enter State Name"
 msgstr "Внесете име на состојба"
 
-#: toolbarstateother.cpp:309 umlscene.cpp:3055 umlwidgets/statewidget.cpp:488
+#: toolbarstateother.cpp:309 umlscene.cpp:3059 umlwidgets/statewidget.cpp:488
 #, kde-format
 msgid "Enter the name of the new state:"
 msgstr "Внесете име на нова состојба:"
 
-#: toolbarstateother.cpp:309 umlscene.cpp:3053
+#: toolbarstateother.cpp:309 umlscene.cpp:3057
 #, kde-format
 msgid "new state"
 msgstr "нова состојба"
@@ -6985,7 +7034,7 @@ msgid "Opening file..."
 msgstr "Отворам датотека..."
 
 #: uml.cpp:1090 uml.cpp:1155 uml.cpp:1340 umldoc.cpp:331 umldoc.cpp:333
-#: umldoc.cpp:357 umldoc.cpp:3312
+#: umldoc.cpp:357 umldoc.cpp:3307
 #, kde-format
 msgid "Untitled"
 msgstr ""
@@ -7386,7 +7435,7 @@ msgstr "Стереотип"
 msgid "Welcome"
 msgstr ""
 
-#: umldoc.cpp:102 umldoc.cpp:2340 umldoc.cpp:2368
+#: umldoc.cpp:102 umldoc.cpp:2335 umldoc.cpp:2363
 #, kde-format
 msgid "UML Model"
 msgstr "UML-Модел"
@@ -7606,37 +7655,27 @@ msgstr "Користи име"
 msgid "Enter New Name"
 msgstr "Внеси ново име"
 
-#: umldoc.cpp:1760
-#, kde-format
-msgid "Are you sure you want to delete diagram %1?"
-msgstr "Дали навистина сакате да го избришете дијаграмот %1?"
-
-#: umldoc.cpp:1761
-#, kde-format
-msgid "Delete Diagram"
-msgstr "Бришење дијаграм"
-
-#: umldoc.cpp:2451
+#: umldoc.cpp:2446
 #, kde-format
 msgid "Setting up the document..."
 msgstr "Го поставувам документот..."
 
-#: umldoc.cpp:2480
+#: umldoc.cpp:2475
 #, kde-format
 msgid "Resolving object references..."
 msgstr "Разрешувам референци до објекти..."
 
-#: umldoc.cpp:2583
+#: umldoc.cpp:2578
 #, kde-format
 msgid "Loading UML elements..."
 msgstr "Вчитувам UML-елементи..."
 
-#: umldoc.cpp:2824
+#: umldoc.cpp:2819
 #, kde-format
 msgid "Loading diagrams..."
 msgstr "Вчитувам дијаграми..."
 
-#: umldoc.cpp:3316
+#: umldoc.cpp:3311
 #, fuzzy, kde-format
 msgid "/autosave%1"
 msgstr "/автоматско зачувување%1"
@@ -7790,38 +7829,26 @@ msgstr "Својства на улогата"
 msgid "Delete widgets"
 msgstr "Избери"
 
-#: umlscene.cpp:1480
+#: umlscene.cpp:1484
 #, fuzzy, kde-format
 #| msgid "Create Folder"
 msgid "Resize widgets"
 msgstr "Креирај папка"
 
-#: umlscene.cpp:3132
+#: umlscene.cpp:3136
 #, kde-format
 msgid "Enter Diagram Name"
 msgstr "Внесете име на дијаграм"
 
-#: umlscene.cpp:3133
+#: umlscene.cpp:3137
 #, kde-format
 msgid "Enter the new name of the diagram:"
 msgstr "Внесете ново име на дијаграмот:"
 
-#: umlscene.cpp:3149
+#: umlscene.cpp:3153
 #, kde-format
 msgid "Failed to import from file."
 msgstr ""
-
-#: umlscene.cpp:3283
-#, kde-format
-msgid ""
-"You are about to delete the entire diagram.\n"
-"Are you sure?"
-msgstr "Дали сте сигурни дека сакате да го избришете целиот дијаграм?"
-
-#: umlscene.cpp:3284
-#, kde-format
-msgid "Delete Diagram?"
-msgstr "Отстранете го дијаграмот?"
 
 #: umlviewimageexporter.cpp:85
 #, kde-format
@@ -7870,37 +7897,37 @@ msgstr "Не можам да зачувам празен дијаграм"
 msgid "A problem occurred while saving diagram in %1"
 msgstr "Се појави проблем при зачувувањето на дијаграмот во %1"
 
-#: umlwidgets/associationwidget.cpp:3055
+#: umlwidgets/associationwidget.cpp:3057
 #, kde-format
 msgid "Multiplicity"
 msgstr "Повеќекратност"
 
-#: umlwidgets/associationwidget.cpp:3056 umlwidgets/floatingtextwidget.cpp:355
+#: umlwidgets/associationwidget.cpp:3058 umlwidgets/floatingtextwidget.cpp:355
 #, kde-format
 msgid "Enter multiplicity:"
 msgstr "Внеси повеќекратност:"
 
-#: umlwidgets/associationwidget.cpp:3074
+#: umlwidgets/associationwidget.cpp:3076
 #, kde-format
 msgid "Association Name"
 msgstr "Име на асоцијацијата"
 
-#: umlwidgets/associationwidget.cpp:3075 umlwidgets/floatingtextwidget.cpp:362
+#: umlwidgets/associationwidget.cpp:3077 umlwidgets/floatingtextwidget.cpp:362
 #, kde-format
 msgid "Enter association name:"
 msgstr "Внесете име на асоцијацијата:"
 
-#: umlwidgets/associationwidget.cpp:3095
+#: umlwidgets/associationwidget.cpp:3097
 #, kde-format
 msgid "Role Name"
 msgstr "Име на улога"
 
-#: umlwidgets/associationwidget.cpp:3096 umlwidgets/floatingtextwidget.cpp:353
+#: umlwidgets/associationwidget.cpp:3098 umlwidgets/floatingtextwidget.cpp:353
 #, kde-format
 msgid "Enter role name:"
 msgstr "Внесете име на улога:"
 
-#: umlwidgets/associationwidget.cpp:3781
+#: umlwidgets/associationwidget.cpp:3783
 #, kde-format
 msgid "Press Ctrl with left mouse click to delete a point"
 msgstr ""
@@ -8006,7 +8033,7 @@ msgstr "Име"
 msgid "Enter operation name:"
 msgstr "Внесете име на операција:"
 
-#: umlwidgets/notewidget.cpp:222 umlwidgets/widgetbase.cpp:1139
+#: umlwidgets/notewidget.cpp:222 umlwidgets/widgetbase.cpp:1146
 #: worktoolbar.cpp:330
 #, fuzzy, kde-format
 #| msgid "condition expected"
@@ -8228,83 +8255,83 @@ msgid ""
 "axis. Right button click to cancel resize."
 msgstr ""
 
-#: umlwidgets/widgetbase.cpp:1082 worktoolbar.cpp:336
+#: umlwidgets/widgetbase.cpp:1089 worktoolbar.cpp:336
 #, kde-format
 msgid "Box"
 msgstr "Кутија"
 
-#: umlwidgets/widgetbase.cpp:1088
+#: umlwidgets/widgetbase.cpp:1095
 #, fuzzy, kde-format
 #| msgid "Malformed argument"
 msgid "CombinedFragment"
 msgstr "Погрешно формиран аргумент"
 
-#: umlwidgets/widgetbase.cpp:1106
+#: umlwidgets/widgetbase.cpp:1113
 #, kde-format
 msgid "FloatingDashLine"
 msgstr ""
 
-#: umlwidgets/widgetbase.cpp:1109
+#: umlwidgets/widgetbase.cpp:1116
 #, fuzzy, kde-format
 #| msgid "Fork/Join"
 msgid "ForkJoin"
 msgstr "Разделување/Спојување"
 
-#: umlwidgets/widgetbase.cpp:1115
+#: umlwidgets/widgetbase.cpp:1122
 #, kde-format
 msgid "Message"
 msgstr "Порака"
 
-#: umlwidgets/widgetbase.cpp:1121 worktoolbar.cpp:335
+#: umlwidgets/widgetbase.cpp:1128 worktoolbar.cpp:335
 #, kde-format
 msgid "Note"
 msgstr "Забелешка"
 
-#: umlwidgets/widgetbase.cpp:1124 worktoolbar.cpp:324
+#: umlwidgets/widgetbase.cpp:1131 worktoolbar.cpp:324
 #, kde-format
 msgid "Object"
 msgstr "Објект"
 
-#: umlwidgets/widgetbase.cpp:1127
+#: umlwidgets/widgetbase.cpp:1134
 #, fuzzy, kde-format
 #| msgid "Object"
 msgid "ObjectNode"
 msgstr "Објект"
 
-#: umlwidgets/widgetbase.cpp:1133 worktoolbar.cpp:377
+#: umlwidgets/widgetbase.cpp:1140 worktoolbar.cpp:377
 #, kde-format
 msgid "Pin"
 msgstr ""
 
-#: umlwidgets/widgetbase.cpp:1142 worktoolbar.cpp:347
+#: umlwidgets/widgetbase.cpp:1149 worktoolbar.cpp:347
 #, fuzzy, kde-format
 msgid "Region"
 msgstr "Подготвен."
 
-#: umlwidgets/widgetbase.cpp:1145
+#: umlwidgets/widgetbase.cpp:1152
 #, fuzzy, kde-format
 #| msgid "Enter name:"
 msgid "Signal"
 msgstr "Внесете име:"
 
-#: umlwidgets/widgetbase.cpp:1148
+#: umlwidgets/widgetbase.cpp:1155
 #, fuzzy, kde-format
 #| msgid "State"
 msgid "State"
 msgstr "Состојба"
 
-#: umlwidgets/widgetbase.cpp:1151
+#: umlwidgets/widgetbase.cpp:1158
 #, kde-format
 msgid "Text"
 msgstr ""
 
-#: umlwidgets/widgetbase.cpp:1154
+#: umlwidgets/widgetbase.cpp:1161
 #, fuzzy, kde-format
 #| msgid "Use Case"
 msgid "UseCase"
 msgstr "Сценарио на употреба"
 
-#: umlwidgets/widgetbase.cpp:1157 worktoolbar.cpp:388
+#: umlwidgets/widgetbase.cpp:1164 worktoolbar.cpp:388
 #, fuzzy, kde-format
 #| msgid "Instance name:"
 msgid "Instance"
@@ -8430,6 +8457,9 @@ msgstr "Објект"
 #, kde-format
 msgid "Pre/Post condition"
 msgstr ""
+
+#~ msgid "Delete Diagram"
+#~ msgstr "Бришење дијаграм"
 
 #, fuzzy
 #~| msgid "Private"
