@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kooka\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-12-16 03:24+0100\n"
+"POT-Creation-Date: 2018-12-17 03:15+0100\n"
 "PO-Revision-Date: 2007-02-26 21:42+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -953,16 +953,36 @@ msgstr "Нова папка"
 msgid "Folder:"
 msgstr "Нова папка"
 
-#: kookaimage.cpp:139
+#: kookaimage.cpp:122
 #, kde-format
 msgid "Loading non-local images is not yet implemented"
 msgstr ""
 
-#: kookaimage.cpp:177
+#: kookaimage.cpp:173
 #, fuzzy, kde-format
 #| msgid "Image Saving"
 msgid "Image loading failed"
 msgstr "Зачувување слики"
+
+#: kookaimage.cpp:195
+#, kde-format
+msgid "Failed to open TIFF file"
+msgstr ""
+
+#: kookaimage.cpp:202
+#, kde-format
+msgid "Failed to read TIFF directory"
+msgstr ""
+
+#: kookaimage.cpp:232
+#, kde-format
+msgid "Failed to read TIFF image"
+msgstr ""
+
+#: kookaimage.cpp:262
+#, kde-format
+msgid "TIFF not supported"
+msgstr ""
 
 #: kookapref.cpp:72
 #, kde-format
@@ -1530,25 +1550,25 @@ msgstr "Креирам нова слика од изборот"
 msgid "Cannot transform, image is read-only"
 msgstr "Не можам да ја зачувам сликата, заштитена е!"
 
-#: kookaview.cpp:1020
+#: kookaview.cpp:1014
 #, fuzzy, kde-format
 #| msgid "Loading %1"
 msgid "Loaded image %1"
 msgstr "Вчитувам %1"
 
-#: kookaview.cpp:1022
+#: kookaview.cpp:1016
 #, fuzzy, kde-format
 #| msgid "&Unload Image"
 msgid "Unloaded image"
 msgstr "О&двчитај слика"
 
-#: kookaview.cpp:1041
+#: kookaview.cpp:1035
 #, fuzzy, kde-format
 #| msgid "Loading %1"
 msgid "Loading %1..."
 msgstr "Вчитувам %1"
 
-#: kookaview.cpp:1253
+#: kookaview.cpp:1247
 #, kde-format
 msgid "Other..."
 msgstr ""
@@ -1861,12 +1881,12 @@ msgstr "Формат"
 msgid "Kooka Gallery"
 msgstr "Галерија на Kooka"
 
-#: scangallery.cpp:408
+#: scangallery.cpp:393
 #, kde-format
 msgid "empty"
 msgstr ""
 
-#: scangallery.cpp:411
+#: scangallery.cpp:396
 #, fuzzy, kde-format
 #| msgid "one item"
 #| msgid_plural "%1 items"
@@ -1876,7 +1896,7 @@ msgstr[0] "%1 елемент"
 msgstr[1] "%1 елементи"
 msgstr[2] "%1 елементи"
 
-#: scangallery.cpp:413
+#: scangallery.cpp:398
 #, fuzzy, kde-format
 #| msgid "one item"
 #| msgid_plural "%1 items"
@@ -1886,7 +1906,7 @@ msgstr[0] "%1 елемент"
 msgstr[1] "%1 елементи"
 msgstr[2] "%1 елементи"
 
-#: scangallery.cpp:419
+#: scangallery.cpp:404
 #, fuzzy, kde-format
 #| msgid "one item"
 #| msgid_plural "%1 items"
@@ -1896,7 +1916,7 @@ msgstr[0] "%1 елемент"
 msgstr[1] "%1 елементи"
 msgstr[2] "%1 елементи"
 
-#: scangallery.cpp:421
+#: scangallery.cpp:406
 #, fuzzy, kde-format
 #| msgid "one item"
 #| msgid_plural "%1 items"
@@ -1906,7 +1926,7 @@ msgstr[0] "%1 елемент"
 msgstr[1] "%1 елементи"
 msgstr[2] "%1 елементи"
 
-#: scangallery.cpp:424
+#: scangallery.cpp:409
 #, fuzzy, kde-format
 #| msgid "New Folder"
 msgid "1 folder"
@@ -1915,13 +1935,13 @@ msgstr[0] "Нова папка"
 msgstr[1] "Нова папка"
 msgstr[2] "Нова папка"
 
-#: scangallery.cpp:479
+#: scangallery.cpp:464
 #, fuzzy, kde-format
 #| msgid "%1 x %2"
 msgid " %1 x %2"
 msgstr "%1 x %2"
 
-#: scangallery.cpp:621
+#: scangallery.cpp:606
 #, kde-format
 msgid ""
 "You entered a file extension that differs from the existing one. That is not "
@@ -1929,70 +1949,70 @@ msgid ""
 "Kooka corrects the extension."
 msgstr ""
 
-#: scangallery.cpp:623
+#: scangallery.cpp:608
 #, kde-format
 msgid "On the Fly Conversion"
 msgstr "Конверзија во лет"
 
-#: scangallery.cpp:722
+#: scangallery.cpp:707
 #, fuzzy, kde-format
 #| msgid "Available image formats:"
-msgid "Not a valid image format"
+msgid "Not a supported image format"
 msgstr "Достапни формати на слики:"
 
-#: scangallery.cpp:775
+#: scangallery.cpp:762
 #, kde-format
 msgid "Sub-image %1"
 msgstr "Подслика %1"
 
-#: scangallery.cpp:829
+#: scangallery.cpp:788
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Unable to load the image <filename>%2</filename><nl/>%1"
 msgstr ""
 
-#: scangallery.cpp:831
+#: scangallery.cpp:790
 #, fuzzy, kde-format
 #| msgid "Save Error"
 msgid "Image Load Error"
 msgstr "Грешка при зачувување"
 
-#: scangallery.cpp:907
+#: scangallery.cpp:861
 #, kde-format
 msgid "Incoming/"
 msgstr ""
 
-#: scangallery.cpp:968
+#: scangallery.cpp:922
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not save the image<nl/><filename>%2</filename><nl/>%1"
 msgstr ""
 
-#: scangallery.cpp:971
+#: scangallery.cpp:925
 #, fuzzy, kde-format
 #| msgid "Save Error"
 msgid "Image Save Error"
 msgstr "Грешка при зачувување"
 
-#: scangallery.cpp:1052
+#: scangallery.cpp:1006
 #, fuzzy, kde-format
 #| msgid "All Files"
 msgid "All Files (*)"
 msgstr "Сите слики"
 
-#: scangallery.cpp:1055
+#: scangallery.cpp:1009
 #, fuzzy, kde-format
 #| msgid "&Import Image..."
 msgctxt "@title:window"
 msgid "Export Image"
 msgstr "Внес&и слика..."
 
-#: scangallery.cpp:1080
+#: scangallery.cpp:1034
 #, kde-format
 msgid "Import Image File to Gallery"
 msgstr "Внесување слика во галеријата"
 
-#: scangallery.cpp:1198
+#: scangallery.cpp:1152
 #, fuzzy, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -2002,7 +2022,7 @@ msgstr ""
 "Дали навистина сакате да ја избришете оваа слика?\n"
 "Нема да може да ја вратите назад!"
 
-#: scangallery.cpp:1203
+#: scangallery.cpp:1157
 #, fuzzy, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -2012,41 +2032,41 @@ msgstr ""
 "Дали навистина сакате да ја избришете оваа слика?\n"
 "Нема да може да ја вратите назад!"
 
-#: scangallery.cpp:1210
+#: scangallery.cpp:1164
 #, fuzzy, kde-format
 #| msgid "Delete Collection Item"
 msgid "Delete Gallery Item"
 msgstr "Бришење ставка од колекција"
 
-#: scangallery.cpp:1222
+#: scangallery.cpp:1176
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not delete the image or folder<nl/><filename>%2</filename><nl/>%1"
 msgstr ""
 
-#: scangallery.cpp:1225
+#: scangallery.cpp:1179
 #, kde-format
 msgid "File Delete Error"
 msgstr ""
 
-#: scangallery.cpp:1256
+#: scangallery.cpp:1210
 #, kde-format
 msgid "New Folder"
 msgstr "Нова папка"
 
-#: scangallery.cpp:1257
+#: scangallery.cpp:1211
 #, fuzzy, kde-format
 #| msgid "Please enter a name for the new folder:"
 msgid "Name for the new folder:"
 msgstr "Внесете име за новата папка:"
 
-#: scangallery.cpp:1280
+#: scangallery.cpp:1234
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not create the folder<nl/><filename>%2</filename><nl/>%1"
 msgstr ""
 
-#: scangallery.cpp:1282
+#: scangallery.cpp:1236
 #, kde-format
 msgid "Folder Create Error"
 msgstr ""
