@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmahjongg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-05 03:29+0200\n"
+"POT-Creation-Date: 2019-05-06 03:22+0200\n"
 "PO-Revision-Date: 2006-04-26 01:21+0200\n"
 "Last-Translator: Zaklina Gjalevska <gjalevska@yahoo.com>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -150,6 +150,12 @@ msgstr "Таблата е изменета. Дали сакате да ги за
 msgid "Save failed. Aborting operation."
 msgstr "Зачувувањето не успеа. Ја прекинувам операцијата."
 
+#: src/gameremovedtiles.cpp:135
+#, fuzzy, kde-format
+#| msgid "Remove tiles"
+msgid "Removed tiles"
+msgstr "Отстранува плочки"
+
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_RandomLayout)
 #: src/gametype.ui:25
 #, fuzzy, kde-format
@@ -195,37 +201,37 @@ msgstr ""
 msgid "Description:"
 msgstr ""
 
-#: src/gameview.cpp:120 src/gameview.cpp:222
+#: src/gameview.cpp:142 src/gameview.cpp:253
 #, kde-format
 msgid "Ready. Now it is your turn."
 msgstr "Подготвено. Вие сте на потег."
 
-#: src/gameview.cpp:139
+#: src/gameview.cpp:164
 #, kde-format
 msgid "Undo operation done successfully."
 msgstr "Операцијата за враќање е успешно извршена."
 
-#: src/gameview.cpp:144
+#: src/gameview.cpp:169
 #, kde-format
 msgid "What do you want to undo? You have done nothing!"
 msgstr "Што сакате да вратите? Не сте направиле ништо!"
 
-#: src/gameview.cpp:178 src/kmahjongg.cpp:456
+#: src/gameview.cpp:203 src/kmahjongg.cpp:459
 #, kde-format
 msgid "Your computer has lost the game."
 msgstr "Вашиот компјутер ја загуби играта."
 
-#: src/gameview.cpp:185
+#: src/gameview.cpp:210
 #, kde-format
 msgid "Calculating new game..."
 msgstr "Пресметки за новата игра..."
 
-#: src/gameview.cpp:236
+#: src/gameview.cpp:267
 #, kde-format
 msgid "Error generating new game!"
 msgstr "Грешка при генерирање на нова игра!"
 
-#: src/gameview.cpp:337
+#: src/gameview.cpp:372
 #, kde-format
 msgid "Demo mode. Click mousebutton to stop."
 msgstr "Режим на демонстрација. Кликнете со глувчето за да запре."
@@ -275,7 +281,7 @@ msgstr ""
 msgid "Time: "
 msgstr "Време"
 
-#: src/kmahjongg.cpp:239 src/kmahjongg.cpp:400
+#: src/kmahjongg.cpp:239 src/kmahjongg.cpp:403
 #, fuzzy, kde-format
 msgid "New Game"
 msgstr "Зачувај игра"
@@ -296,69 +302,69 @@ msgstr "Општо"
 msgid "Board Layout"
 msgstr "Уредете го изгледот на таблата"
 
-#: src/kmahjongg.cpp:398
+#: src/kmahjongg.cpp:401
 #, fuzzy, kde-format
 #| msgid "Game over: You have no moves left."
 msgid "Game Over: You have no moves left."
 msgstr "Играта заврши. Немате повеќе потези."
 
-#: src/kmahjongg.cpp:399
+#: src/kmahjongg.cpp:402
 #, kde-format
 msgid "Game Over"
 msgstr ""
 
-#: src/kmahjongg.cpp:401
+#: src/kmahjongg.cpp:404
 #, kde-format
 msgid "Restart"
 msgstr ""
 
-#: src/kmahjongg.cpp:491
+#: src/kmahjongg.cpp:494
 #, kde-format
 msgid "You have won!"
 msgstr "Победивте!"
 
-#: src/kmahjongg.cpp:531
+#: src/kmahjongg.cpp:534
 #, kde-format
 msgid "Game number: %1"
 msgstr "Број на играта: %1"
 
-#: src/kmahjongg.cpp:537
+#: src/kmahjongg.cpp:540
 #, kde-format
 msgid "Removed: %1/%2  Combinations left: %3"
 msgstr "Отстранети: %1/%2  Преостанати комбинации: %3"
 
-#: src/kmahjongg.cpp:587
+#: src/kmahjongg.cpp:590
 #, kde-format
 msgid "Load Game"
 msgstr "Вчитај игра"
 
-#: src/kmahjongg.cpp:587 src/kmahjongg.cpp:662
+#: src/kmahjongg.cpp:590 src/kmahjongg.cpp:665
 #, kde-format
 msgid "KMahjongg Game (*.kmgame)"
 msgstr ""
 
-#: src/kmahjongg.cpp:596
+#: src/kmahjongg.cpp:599
 #, kde-format
 msgid "Could not read from file. Aborting."
 msgstr "Не можам да вчитам од датотеката. Прекинувам."
 
-#: src/kmahjongg.cpp:607
+#: src/kmahjongg.cpp:610
 #, kde-format
 msgid "File is not a KMahjongg game."
 msgstr ""
 
-#: src/kmahjongg.cpp:620
+#: src/kmahjongg.cpp:623
 #, kde-format
 msgid "File format not recognized."
 msgstr "Форматот на датотеката не е препознаен."
 
-#: src/kmahjongg.cpp:662
+#: src/kmahjongg.cpp:665
 #, fuzzy, kde-format
 #| msgid "Save Theme"
 msgid "Save Game"
 msgstr "Зачувај тема"
 
-#: src/kmahjongg.cpp:672
+#: src/kmahjongg.cpp:675
 #, fuzzy, kde-format
 #| msgid "Could not write to file. Aborting."
 msgid "Could not open file for saving."
@@ -382,20 +388,27 @@ msgstr "Подлогата што ќе се користи."
 msgid "The layout of the tiles."
 msgstr "Изгледот на плочките."
 
-#. i18n: ectx: label, entry (RandomLayout), group (General)
+#. i18n: ectx: label, entry (RemovedTiles), group (General)
 #: src/kmahjongg.kcfg:21
+#, fuzzy, kde-format
+#| msgid "Whether to show removed tiles."
+msgid "Whether the removed tiles will be shown on the board."
+msgstr "Дали да се прикажат отстранетите плочки."
+
+#. i18n: ectx: label, entry (RandomLayout), group (General)
+#: src/kmahjongg.kcfg:25
 #, kde-format
 msgid "Whether a random layout is chosen on startup."
 msgstr ""
 
 #. i18n: ectx: label, entry (SolvableGames), group (General)
-#: src/kmahjongg.kcfg:25
+#: src/kmahjongg.kcfg:29
 #, kde-format
 msgid "Whether all games should be solvable."
 msgstr "Дали сите игри да бидат решливи."
 
 #. i18n: ectx: label, entry (ShowMatchingTiles), group (General)
-#: src/kmahjongg.kcfg:29
+#: src/kmahjongg.kcfg:33
 #, kde-format
 msgid "Whether matching tiles are shown."
 msgstr "Дали да се прикажуваат плочките што меѓусебно одговараат."
@@ -548,6 +561,12 @@ msgstr ""
 msgid "Generate solvable games"
 msgstr "Генерирај решливи игри"
 
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_RemovedTiles)
+#: src/settings.ui:36
+#, kde-format
+msgid "Show removed tiles"
+msgstr "Прикажи ги отстранетите плочки"
+
 #~ msgid "Sorry, you have lost the game."
 #~ msgstr "Жалам, ја загубивте играта."
 
@@ -637,12 +656,6 @@ msgstr "Генерирај решливи игри"
 
 #~ msgid "Hide &Matching Tiles"
 #~ msgstr "С&криј ги плочките што се совпаѓаат"
-
-#~ msgid "Whether to show removed tiles."
-#~ msgstr "Дали да се прикажат отстранетите плочки."
-
-#~ msgid "Show removed tiles"
-#~ msgstr "Прикажи ги отстранетите плочки"
 
 #~ msgid "Pos"
 #~ msgstr "Поз"
