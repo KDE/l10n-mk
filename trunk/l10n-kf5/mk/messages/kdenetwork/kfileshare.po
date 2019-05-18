@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfileshare\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-08-16 09:09+0200\n"
+"POT-Creation-Date: 2019-05-18 03:01+0200\n"
 "PO-Revision-Date: 2004-10-17 21:51+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -51,16 +51,21 @@ msgstr ""
 
 #: samba/filepropertiesplugin/sambausershareplugin.cpp:92
 #, fuzzy, kde-format
-#| msgid "No Samba server installed on this system"
-msgid "Samba is not installed on your system."
-msgstr "Нема инсталиран Samba-сервер на системов"
+#| msgid "Only local folders can be shared."
+msgid "Samba must be installed before folders can be shared."
+msgstr "Само локални папки може да се делат."
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:95
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:97
 #, kde-format
-msgid "Install Samba..."
+msgid "Install Samba"
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:257
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:155
+#, kde-format
+msgid "Installing Samba..."
+msgstr ""
+
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:264
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>There is already a share with the name <strong>%1</strong>.<br> "
@@ -75,22 +80,32 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, sambaChk)
 #: samba/filepropertiesplugin/sambausershareplugin.ui:19
 #, fuzzy, kde-format
-#| msgid "Share with S&amba (Microsoft(R) Windows(R))"
-msgid "Share with S&amba (Microsoft Windows)"
-msgstr "Дели со S&amba (Microsoft(R) Windows(R))"
+#| msgid "S&hare this folder in the local network"
+msgid "Sh&are this folder with other computers on the local network"
+msgstr "&Дели ја папкава во локалната мрежа"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: samba/filepropertiesplugin/sambausershareplugin.ui:36
+#: samba/filepropertiesplugin/sambausershareplugin.ui:39
 #, kde-format
 msgid "Name:"
 msgstr "Име:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, sambaAllowGuestChk)
-#: samba/filepropertiesplugin/sambausershareplugin.ui:56
+#: samba/filepropertiesplugin/sambausershareplugin.ui:59
 #, fuzzy, kde-format
 #| msgid "Allo&w guest logins"
 msgid "Allow Guests"
 msgstr "Дозволи &гостински најави"
+
+#, fuzzy
+#~| msgid "No Samba server installed on this system"
+#~ msgid "Samba is not installed on your system."
+#~ msgstr "Нема инсталиран Samba-сервер на системов"
+
+#, fuzzy
+#~| msgid "Share with S&amba (Microsoft(R) Windows(R))"
+#~ msgid "Share with S&amba (Microsoft Windows)"
+#~ msgstr "Дели со S&amba (Microsoft(R) Windows(R))"
 
 #~ msgid "Select Users"
 #~ msgstr "Изберете корисници"
@@ -1670,9 +1685,6 @@ msgstr "Дозволи &гостински најави"
 #~ msgid "Folder:"
 #~ msgstr "Папка:"
 
-#~ msgid "S&hare this folder in the local network"
-#~ msgstr "&Дели ја папкава во локалната мрежа"
-
 #~ msgid "Share with &NFS (Linux/UNIX)"
 #~ msgstr "Дели со &NFS (Linux/UNIX)"
 
@@ -2026,9 +2038,6 @@ msgstr "Дозволи &гостински најави"
 
 #~ msgid "Please enter a valid path."
 #~ msgstr "Внесете валидна патека."
-
-#~ msgid "Only local folders can be shared."
-#~ msgstr "Само локални папки може да се делат."
 
 #~ msgid "The folder does not exists."
 #~ msgstr "Папката не постои."
