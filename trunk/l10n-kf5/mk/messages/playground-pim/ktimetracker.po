@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: karm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-31 03:12+0200\n"
+"POT-Creation-Date: 2019-06-01 03:13+0200\n"
 "PO-Revision-Date: 2007-02-25 14:51+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -416,7 +416,7 @@ msgstr ""
 msgid "Tasks"
 msgstr "Задача"
 
-#: src/main.cpp:87 src/model/event.cpp:129 src/model/eventsmodel.cpp:132
+#: src/main.cpp:87 src/model/event.cpp:125 src/model/eventsmodel.cpp:132
 #, fuzzy, kde-format
 msgid "KTimeTracker"
 msgstr "KDE Алатка за следење на времето."
@@ -741,44 +741,32 @@ msgstr ""
 "ги сите датотеки за заклучување поврзани со неа од ~/.kde/share/apps/kabc/"
 "lock/"
 
-#: src/taskview.cpp:213
+#: src/taskview.cpp:210
 #, kde-format
 msgid "Your virtual desktop number is too high, desktop tracking will not work"
 msgstr ""
 
-#: src/taskview.cpp:332
-#, fuzzy, kde-format
-#| msgid "Could not open \"%1\"."
-msgid "Could not save. Disk full?"
-msgstr "Не можам да ја отворам „%1“"
-
-#: src/taskview.cpp:334
-#, fuzzy, kde-format
-#| msgid "Could not open \"%1\"."
-msgid "Could not save."
-msgstr "Не можам да ја отворам „%1“"
-
-#: src/taskview.cpp:374
+#: src/taskview.cpp:366
 #, kde-format
 msgid "Stopping timers..."
 msgstr ""
 
-#: src/taskview.cpp:374
+#: src/taskview.cpp:366
 #, kde-format
 msgid "Cancel"
 msgstr ""
 
-#: src/taskview.cpp:466
+#: src/taskview.cpp:458
 #, kde-format
 msgid "New Task"
 msgstr "Нова задача"
 
-#: src/taskview.cpp:476 src/taskview.cpp:555
+#: src/taskview.cpp:468 src/taskview.cpp:547
 #, kde-format
 msgid "Unnamed Task"
 msgstr "Неименувана задача"
 
-#: src/taskview.cpp:495
+#: src/taskview.cpp:487
 #, fuzzy, kde-format
 #| msgid ""
 #| "Error storing new task. Your changes were not saved. Make sure you can "
@@ -796,22 +784,22 @@ msgstr ""
 "ги сите датотеки за заклучување поврзани со неа од ~/.kde/share/apps/kabc/"
 "lock/"
 
-#: src/taskview.cpp:533
+#: src/taskview.cpp:525
 #, kde-format
 msgid "New Sub Task"
 msgstr "Нова подзадача"
 
-#: src/taskview.cpp:550
+#: src/taskview.cpp:542
 #, kde-format
 msgid "Edit Task"
 msgstr "Уреди задача"
 
-#: src/taskview.cpp:586 src/taskview.cpp:628 src/taskview.cpp:649
+#: src/taskview.cpp:578 src/taskview.cpp:620 src/taskview.cpp:641
 #, kde-format
 msgid "No task selected."
 msgstr "Нема избрана задача"
 
-#: src/taskview.cpp:633
+#: src/taskview.cpp:625
 #, fuzzy, kde-format
 msgid ""
 "Are you sure you want to delete the selected task and its entire history?\n"
@@ -821,7 +809,7 @@ msgstr ""
 "\"%1\"\n"
 "ЗАБЕЛЕШКА: сите негови делби ќе бидат исто така избришани!"
 
-#: src/taskview.cpp:637
+#: src/taskview.cpp:629
 #, fuzzy, kde-format
 #| msgid "Deleting Task"
 msgid "Deleting Task"
@@ -831,6 +819,19 @@ msgstr "Задачата се брише"
 #, kde-format
 msgid "Error loading \"%1\": could not find parent (uid=%2)"
 msgstr "Грешка при вчитувањето „%1“: не може да се најде родителот (uid=%2)"
+
+#: src/timetrackerstorage.cpp:255
+#, fuzzy, kde-format
+#| msgid "Could not open \"%1\"."
+msgctxt "%1=lock file path"
+msgid "Could not write lock file %1. Disk full?"
+msgstr "Не можам да ја отворам „%1“"
+
+#: src/timetrackerstorage.cpp:262
+#, kde-format
+msgctxt "%1=destination file path/URL"
+msgid "Failed to save iCalendar file as %1."
+msgstr ""
 
 #: src/timetrackerwidget.cpp:122
 #, kde-format
@@ -1235,6 +1236,11 @@ msgstr ""
 msgctxt "combox entry for lowest priority"
 msgid "9 (lowest)"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Could not open \"%1\"."
+#~ msgid "Could not save."
+#~ msgstr "Не можам да ја отворам „%1“"
 
 #, fuzzy
 #~| msgid "&Export"
