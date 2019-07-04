@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: drkonqi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-07-03 03:25+0200\n"
+"POT-Creation-Date: 2019-07-04 03:09+0200\n"
 "PO-Revision-Date: 2010-01-29 22:14+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -295,11 +295,15 @@ msgstr ""
 "креирате тука: <link>%1</link>"
 
 #: aboutbugreportingdialog.cpp:133
-#, kde-kuit-format
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info/rich"
+#| msgid ""
+#| "Then, enter your username and password and press the Login button. You "
+#| "can use this login to directly access the KDE bug tracking system later."
 msgctxt "@info/rich"
 msgid ""
-"Then, enter your username and password and press the Login button. You can "
-"use this login to directly access the KDE bug tracking system later."
+"Then, enter your e-mail address and password and press the Login button. You "
+"can use this login to directly access the KDE bug tracking system later."
 msgstr ""
 "Потоа, внесете ги вашето корисничко име и лозинка и притиснете го копчето "
 "„Најави се“. Со оваа најава можете подоцна директно да пристапите до "
@@ -800,20 +804,20 @@ msgstr ""
 "Треба да го инсталирате пакетот за откривање грешки (%1) и да кликнете на "
 "копчето <interface>Превчитај инфо за падот</interface>."
 
-#: backtracewidget.cpp:368
+#: backtracewidget.cpp:366
 #, kde-format
 msgctxt "@title:window"
 msgid "Error during the installation of debug symbols"
 msgstr "Грешка при инсталирањето на симболите за барање грешки"
 
-#: backtracewidget.cpp:400
+#: backtracewidget.cpp:398
 #, kde-format
 msgid ""
 "The packages containing debug information for the following application and "
 "libraries are missing:"
 msgstr ""
 
-#: backtracewidget.cpp:409
+#: backtracewidget.cpp:407
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Missing debug symbols"
@@ -1165,11 +1169,15 @@ msgid "Login"
 msgstr "Најави се"
 
 #: bugzillaintegration/reportassistantpages_bugzilla.cpp:83
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid ""
+#| "Use this button to login to the KDE bug tracking system using the "
+#| "provided username and password."
 msgctxt "@info:tooltip"
 msgid ""
-"Use this button to login to the KDE bug tracking system using the provided "
-"username and password."
+"Use this button to login to the KDE bug tracking system using the provided e-"
+"mail address and password."
 msgstr ""
 "Со ова копче може да се најавите на системот за следење грешки на KDE со "
 "зададените корисничко име и лозинка."
@@ -1210,17 +1218,19 @@ msgid "Logged in at the KDE bug tracking system (%1) as: %2."
 msgstr "Најавено на системот за следење грешки на KDE (%1) како: %2."
 
 #: bugzillaintegration/reportassistantpages_bugzilla.cpp:286
-#, kde-format
-msgctxt "@info:status '1' is a url, '2' the username"
+#, fuzzy, kde-format
+#| msgctxt "@info:status '1' is a url, '2' the username"
+#| msgid "Performing login at %1 as %2..."
+msgctxt "@info:status '1' is a url, '2' the e-mail address"
 msgid "Performing login at %1 as %2..."
 msgstr "Се најавувам на %1 како %2..."
 
-#: bugzillaintegration/reportassistantpages_bugzilla.cpp:319
+#: bugzillaintegration/reportassistantpages_bugzilla.cpp:320
 #, fuzzy, kde-format
 #| msgctxt "@info:status/rich"
 #| msgid "<b>Error: Invalid username or password</b>"
 msgctxt "@info:status"
-msgid "<b>Error: Invalid username or password</b>"
+msgid "<b>Error: Invalid e-mail address or password</b>"
 msgstr "<b>Грешка: Невалидно корисничко име или лозинка</b>"
 
 #: bugzillaintegration/reportassistantpages_bugzilla.cpp:368
@@ -1555,13 +1565,13 @@ msgid ""
 "submit a bug against DrKonqi."
 msgstr ""
 
-#: bugzillaintegration/reportassistantpages_bugzilla.cpp:790 drkonqi.cpp:172
+#: bugzillaintegration/reportassistantpages_bugzilla.cpp:790 drkonqi.cpp:163
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Filename"
 msgstr "Избирање име на датотека"
 
-#: bugzillaintegration/reportassistantpages_bugzilla.cpp:813 drkonqi.cpp:198
+#: bugzillaintegration/reportassistantpages_bugzilla.cpp:813 drkonqi.cpp:189
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Cannot open file <filename>%1</filename> for writing."
@@ -2589,9 +2599,9 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, m_userLabel)
 #: bugzillaintegration/ui/assistantpage_bugzilla_login.ui:38
 #, kde-format
-msgctxt "@label:textbox bugzilla account username"
-msgid "Username:"
-msgstr "Корисник:"
+msgctxt "@label:textbox bugzilla account email"
+msgid "E-mail Address:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, m_passwordLabel)
 #: bugzillaintegration/ui/assistantpage_bugzilla_login.ui:45
@@ -2719,13 +2729,13 @@ msgid ""
 msgstr ""
 "Настана грешка при инсталацијата на пакетите со симболи за барање грешки"
 
-#: drkonqi.cpp:162
+#: drkonqi.cpp:153
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Report saved to <filename>%1</filename>."
 msgstr "Извештајот е зачувана во <filename>%1</filename>."
 
-#: drkonqi.cpp:165
+#: drkonqi.cpp:156
 #, kde-format
 msgctxt "@info"
 msgid "Could not create a file in which to save the report."
@@ -2877,11 +2887,6 @@ msgstr "Го затвора дијалогот (ќе ги загубите ин�
 #, kde-format
 msgctxt "@action:inmenu 1 is the debugger name"
 msgid "Debug in %1"
-msgstr ""
-
-#: findconfigdatajob.cpp:62
-#, kde-format
-msgid "Failed to retrieve the config data."
 msgstr ""
 
 #: main.cpp:52
@@ -3065,7 +3070,7 @@ msgctxt "Notification action button, keep short"
 msgid "Report Bug"
 msgstr "Извести за грешката"
 
-#: statusnotifier.cpp:127
+#: statusnotifier.cpp:125
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "Restart Application"
@@ -3080,6 +3085,10 @@ msgstr "Рестартирај апликација"
 #| msgid "Backtrace of the crash I am sending:"
 msgid "Show backtrace content (advanced)"
 msgstr "Трага од падот за кој известувам:"
+
+#~ msgctxt "@label:textbox bugzilla account username"
+#~ msgid "Username:"
+#~ msgstr "Корисник:"
 
 #~ msgctxt "@info"
 #~ msgid "Invalid bug list: corrupted data"
