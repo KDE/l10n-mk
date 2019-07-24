@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-06-20 03:13+0200\n"
+"POT-Creation-Date: 2019-07-24 03:14+0200\n"
 "PO-Revision-Date: 2009-01-08 13:02+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -356,15 +356,16 @@ msgid "Select One or More Checksum Files"
 msgstr ""
 
 #: src/commands/clearcrlcachecommand.cpp:73
-#: src/commands/importcrlcommand.cpp:194
 #, fuzzy, kde-format
 #| msgid "Clear CRL Cache..."
+msgctxt "@title:window"
 msgid "Clear CRL Cache Error"
 msgstr "Исчисти го CLR-кешот..."
 
 #: src/commands/clearcrlcachecommand.cpp:78
 #, fuzzy, kde-format
 #| msgid "Clear CRL Cache..."
+msgctxt "@title:window"
 msgid "Clear CRL Cache Finished"
 msgstr "Исчисти го CLR-кешот..."
 
@@ -518,6 +519,7 @@ msgstr ""
 #: src/commands/dumpcertificatecommand.cpp:293
 #, fuzzy, kde-format
 #| msgid "Certificate Usage"
+msgctxt "@title:window"
 msgid "Certificate Dump"
 msgstr "Употреба на сертификат"
 
@@ -579,6 +581,7 @@ msgstr ""
 #: src/commands/dumpcrlcachecommand.cpp:312
 #, fuzzy, kde-format
 #| msgid "CRL cache dump:"
+msgctxt "@title:window"
 msgid "CRL Cache Dump"
 msgstr "Исфрлок на CRL-кешот:"
 
@@ -769,10 +772,10 @@ msgstr ""
 
 #: src/commands/exportpaperkeycommand.cpp:114
 #, fuzzy, kde-format
-#| msgid "Delete Certificates"
-msgctxt "@title"
-msgid "Print secret key"
-msgstr "Избриши ги сертификатите"
+#| msgid "Export Secret Key..."
+msgctxt "@title:window"
+msgid "Print Secret Key"
+msgstr "Извези таен клуч..."
 
 #: src/commands/exportpaperkeycommand.cpp:131
 #, fuzzy, kde-format
@@ -944,6 +947,7 @@ msgstr ""
 
 #: src/commands/gnupgprocesscommand.cpp:152
 #, kde-format
+msgctxt "@title:window"
 msgid "Subprocess Diagnostics"
 msgstr ""
 
@@ -1281,6 +1285,12 @@ msgstr "Одбери CRL-датотека"
 msgid "Unable to start process dirmngr. Please check your installation."
 msgstr "Не можам да започнам %1 процес. Проверете ја Вашата инсталација."
 
+#: src/commands/importcrlcommand.cpp:194
+#, fuzzy, kde-format
+#| msgid "Clear CRL Cache..."
+msgid "Clear CRL Cache Error"
+msgstr "Исчисти го CLR-кешот..."
+
 #: src/commands/importcrlcommand.cpp:212
 #, fuzzy, kde-format
 #| msgid ""
@@ -1498,11 +1508,13 @@ msgstr "Не можам да создадам сертификат: %1"
 
 #: src/commands/learncardkeyscommand.cpp:80
 #, kde-format
+msgctxt "@title:window"
 msgid "Error Learning SmartCard"
 msgstr ""
 
 #: src/commands/learncardkeyscommand.cpp:85
 #, kde-format
+msgctxt "@title:window"
 msgid "Finished Learning SmartCard"
 msgstr ""
 
@@ -1749,10 +1761,11 @@ msgid "X.509 certificates refreshed successfully."
 msgstr "CRL-кешот се исчисти успешно"
 
 #: src/commands/setinitialpincommand.cpp:77
-#, kde-format
-msgctxt "@title"
+#, fuzzy, kde-format
+#| msgid "Set F&ont..."
+msgctxt "@title:window"
 msgid "Set Initial Pin"
-msgstr ""
+msgstr "Постави Ф&онт..."
 
 #: src/commands/signclipboardcommand.cpp:170
 #: src/commands/signclipboardcommand.cpp:184
@@ -1888,9 +1901,11 @@ msgid "Default Appearance"
 msgstr "Стандарден изглед"
 
 #: src/conf/configuredialog.cpp:63
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Configure &GpgME Backend"
+msgctxt "@title:window"
 msgid "Configure"
-msgstr ""
+msgstr "Конфигурирај го &GpgME задниот крај"
 
 #: src/conf/cryptooperationsconfigwidget.cpp:123
 #: src/conf/cryptooperationsconfigwidget.cpp:216
@@ -2547,9 +2562,11 @@ msgid "User canceled"
 msgstr "Откажано."
 
 #: src/crypto/decryptverifyemailcontroller.cpp:258
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Deleting keys..."
+msgctxt "@title:window"
 msgid "Decrypt/Verify E-Mail"
-msgstr ""
+msgstr "Бришам клучеви..."
 
 #: src/crypto/decryptverifyemailcontroller.cpp:281
 #, kde-format
@@ -2598,9 +2615,11 @@ msgstr ""
 
 #: src/crypto/decryptverifyfilescontroller.cpp:244
 #: src/crypto/gui/decryptverifyfilesdialog.cpp:107
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Deleting keys..."
+msgctxt "@title:window"
 msgid "Decrypt/Verify Files"
-msgstr ""
+msgstr "Бришам клучеви..."
 
 #: src/crypto/decryptverifytask.cpp:208
 #, kde-format
@@ -3120,6 +3139,7 @@ msgstr ""
 #: src/crypto/gui/decryptverifyfilesdialog.cpp:114
 #, fuzzy, kde-format
 #| msgid "Deleting keys..."
+msgctxt "@title:window"
 msgid "Verify Files"
 msgstr "Бришам клучеви..."
 
@@ -3226,9 +3246,11 @@ msgid "&Input file is an archive; unpack with:"
 msgstr ""
 
 #: src/crypto/gui/encryptemailwizard.cpp:53
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Certificate Deletion Failed"
+msgctxt "@title:window"
 msgid "Encrypt Mail Message"
-msgstr ""
+msgstr "Бришењето на сертификатот не успеа"
 
 #: src/crypto/gui/newresultpage.cpp:150 src/crypto/gui/resultpage.cpp:144
 #, kde-format
@@ -3357,9 +3379,11 @@ msgid "You need to select %1 and %2 signing certificates to proceed."
 msgstr ""
 
 #: src/crypto/gui/signemailwizard.cpp:128
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Canceled."
+msgctxt "@title:window"
 msgid "Sign Mail Message"
-msgstr ""
+msgstr "Откажано."
 
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:92
 #, fuzzy, kde-format
@@ -3459,7 +3483,8 @@ msgstr ""
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:417
 #, fuzzy, kde-format
 #| msgid "Select Certificate File"
-msgid "Select Certificates For Message"
+msgctxt "@title:window"
+msgid "Select Certificates for Message"
 msgstr "Одберете сертификат датотека"
 
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:489
@@ -3475,7 +3500,8 @@ msgstr ""
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:542
 #, fuzzy, kde-format
 #| msgid "Select Certificate File"
-msgid "Select Certificates For Message \"%1\""
+msgctxt "@title:window"
+msgid "Select Certificates for Message \"%1\""
 msgstr "Одберете сертификат датотека"
 
 #: src/crypto/gui/signencryptfileswizard.cpp:87
@@ -3718,6 +3744,7 @@ msgstr ""
 #: src/crypto/gui/signingcertificateselectiondialog.cpp:52
 #, fuzzy, kde-format
 #| msgid "Deleting CA Certificates"
+msgctxt "@title:window"
 msgid "Select Signing Certificates"
 msgstr "Бришење на CA-сертификати"
 
@@ -3980,6 +4007,7 @@ msgstr "Е-пошта"
 
 #: src/dialogs/addemaildialog.cpp:107
 #, kde-format
+msgctxt "@title:window"
 msgid "Add New EMail"
 msgstr ""
 
@@ -4190,9 +4218,15 @@ msgctxt "<name> of <company>"
 msgid "%1 of %2"
 msgstr ""
 
+#: src/dialogs/certificatedetailswidget.cpp:583
+#, fuzzy, kde-format
+#| msgid "Certificate Details..."
+msgctxt "@title:window"
+msgid "Certificate Details"
+msgstr "Детали на сертификатот..."
+
 #. i18n: ectx: property (windowTitle), widget (QWidget, CertificateDetailsWidget)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: src/dialogs/certificatedetailswidget.cpp:583
 #: src/dialogs/certificatedetailswidget.ui:14
 #: src/dialogs/certificatedetailswidget.ui:76
 #, fuzzy, kde-format
@@ -4432,6 +4466,7 @@ msgstr "Избриши ги сертификатите"
 #: src/dialogs/certificateselectiondialog.cpp:194
 #, fuzzy, kde-format
 #| msgid "Certificate Deletion Failed"
+msgctxt "@title:window"
 msgid "Certificate Selection"
 msgstr "Бришењето на сертификатот не успеа"
 
@@ -4563,7 +4598,7 @@ msgstr "CRL-кешот се исчисти успешно"
 #: src/dialogs/certifycertificatedialog.cpp:400
 #, fuzzy, kde-format
 #| msgid "Deleting CA Certificates"
-msgctxt "arg is name, email of certificate holder"
+msgctxt "@title:window arg is name, email of certificate holder"
 msgid "Certify Certificate: %1"
 msgstr "Бришење на CA-сертификати"
 
@@ -4634,9 +4669,11 @@ msgid "Secret Key Deletion"
 msgstr "Извези таен клуч"
 
 #: src/dialogs/expirydialog.cpp:156
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Unchanged:"
+msgctxt "@title:window"
 msgid "Change Expiry"
-msgstr ""
+msgstr "Непроменети:"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, Kleo::Dialogs::ExpiryDialog)
 #: src/dialogs/expirydialog.ui:14
@@ -4723,10 +4760,11 @@ msgctxt "%1 is error message"
 msgid "Failed to export: '%1'"
 msgstr "Не можам да создадам сертификат: %1"
 
-#: src/dialogs/exportdialog.cpp:172 src/view/keylistcontroller.cpp:377
+#: src/dialogs/exportdialog.cpp:172
 #, fuzzy, kde-format
 #| msgid "For &encrypting only"
-msgid "Export..."
+msgctxt "@title:window"
+msgid "Export"
 msgstr "Само &за криптографирање"
 
 #: src/dialogs/gencardkeydialog.cpp:77
@@ -4826,7 +4864,7 @@ msgstr "Бришење на CA-сертификати"
 
 #: src/dialogs/ownertrustdialog.cpp:126
 #, kde-format
-msgctxt "@title"
+msgctxt "@title:window"
 msgid "Change Trust Level of %1"
 msgstr ""
 
@@ -5180,7 +5218,8 @@ msgstr ""
 #: src/dialogs/subkeyswidget.cpp:173
 #, fuzzy, kde-format
 #| msgid "New subkeys:"
-msgid "Subkeys details"
+msgctxt "@title:window"
+msgid "Subkeys Details"
 msgstr "Нови потклучеви:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -5255,6 +5294,7 @@ msgstr "Сертификатот на издавачот не може да ви
 #: src/dialogs/trustchainwidget.cpp:98
 #, fuzzy, kde-format
 #| msgid "&Chain"
+msgctxt "@title:window"
 msgid "Trust Chain"
 msgstr "&Сврзи"
 
@@ -5291,7 +5331,8 @@ msgstr ""
 
 #: src/dialogs/updatenotification.cpp:214
 #, kde-format
-msgid "Update available!"
+msgctxt "@title:window"
+msgid "Update Available"
 msgstr ""
 
 #: src/dialogs/updatenotification.cpp:219
@@ -5307,6 +5348,7 @@ msgstr ""
 #: src/dialogs/weboftrustdialog.cpp:41
 #, fuzzy, kde-format
 #| msgid "&Certificates"
+msgctxt "@title:window"
 msgid "Certifications"
 msgstr "&Сертификати"
 
@@ -6331,7 +6373,7 @@ msgstr "Вашето барање за сертификат е подготве�
 #: src/newcertificatewizard/newcertificatewizard.cpp:1211
 #, fuzzy, kde-format
 #| msgid "Certificate Deletion Failed"
-msgctxt "@title"
+msgctxt "@title:window"
 msgid "Key Pair Creation Wizard"
 msgstr "Бришењето на сертификатот не успеа"
 
@@ -7682,6 +7724,12 @@ msgid "New Key Pair..."
 msgstr ""
 
 #: src/view/keylistcontroller.cpp:377
+#, fuzzy, kde-format
+#| msgid "For &encrypting only"
+msgid "Export..."
+msgstr "Само &за криптографирање"
+
+#: src/view/keylistcontroller.cpp:377
 #, kde-format
 msgid "Export the selected certificate (public key) to a file"
 msgstr ""
@@ -8130,9 +8178,11 @@ msgid "not set"
 msgstr "Невнесени:"
 
 #: src/view/pgpcardwidget.cpp:278
-#, kde-format
-msgid "Generating keys"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Stop Operation"
+msgctxt "@title:window"
+msgid "Generating Keys"
+msgstr "Запри ја операцијата"
 
 #: src/view/pgpcardwidget.cpp:279
 #, kde-format
@@ -8467,6 +8517,12 @@ msgid "To import from a public keyserver use \"Lookup on Server\" instead."
 msgstr ""
 
 #, fuzzy
+#~| msgid "Delete Certificates"
+#~ msgctxt "@title"
+#~ msgid "Print secret key"
+#~ msgstr "Избриши ги сертификатите"
+
+#, fuzzy
 #~| msgid "Failed."
 #~ msgctxt "self-check did not pass"
 #~ msgid "Failed"
@@ -8583,11 +8639,6 @@ msgstr ""
 
 #~ msgid "Import Certificates..."
 #~ msgstr "Внеси сертификати..."
-
-#, fuzzy
-#~| msgid "Deleting keys..."
-#~ msgid "Decrypt/Verify Files..."
-#~ msgstr "Бришам клучеви..."
 
 #, fuzzy
 #~| msgid "Save Certificate"
