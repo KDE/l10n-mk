@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-10-07 03:08+0200\n"
+"POT-Creation-Date: 2019-10-08 03:13+0200\n"
 "PO-Revision-Date: 2007-02-28 14:08+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -344,15 +344,31 @@ msgstr "Не е пронајден потпис"
 msgid "End of signed message"
 msgstr "Крај на потпишаната порака"
 
-#: dkim-verify/dkimchecksignaturejob.cpp:231
+#: dkim-verify/dkimchecksignaturejob.cpp:296
 #, fuzzy, kde-format
 #| msgid "The signature has expired."
 msgid "Signature Expired"
 msgstr "Потписот е истечен."
 
-#: dkim-verify/dkimchecksignaturejob.cpp:234
+#: dkim-verify/dkimchecksignaturejob.cpp:299
 #, kde-format
 msgid "Signature created in the future"
+msgstr ""
+
+#: dkim-verify/dkimmanagerkeywidget.cpp:37
+#, kde-format
+msgid "SDID"
+msgstr ""
+
+#: dkim-verify/dkimmanagerkeywidget.cpp:37
+#, fuzzy, kde-format
+#| msgid "Select Folder"
+msgid "Selector"
+msgstr "Изберете папка"
+
+#: dkim-verify/dkimmanagerkeywidget.cpp:37
+#, kde-format
+msgid "DKIM Key"
 msgstr ""
 
 #: header/grantleeheaderformatter.cpp:169
@@ -456,7 +472,7 @@ msgstr "Излез за печатење"
 msgid "[vcard]"
 msgstr "[vCard]"
 
-#: header/grantleeheaderformatter.cpp:455 viewer/viewer_p.cpp:2445
+#: header/grantleeheaderformatter.cpp:455 viewer/viewer_p.cpp:2447
 #, fuzzy, kde-format
 #| msgctxt "Config->Composer->Attachments"
 #| msgid "A&ttachments"
@@ -1098,7 +1114,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (UseFixedFont), group (Composer)
-#: settings/messageviewer.kcfg.cmake:229 viewer/viewer_p.cpp:1658
+#: settings/messageviewer.kcfg.cmake:229 viewer/viewer_p.cpp:1660
 #, kde-format
 msgid "Use Fi&xed Font"
 msgstr "Користи фи&ксен фонт"
@@ -1476,7 +1492,7 @@ msgstr "Големина"
 msgid "Turn on HTML rendering for this message."
 msgstr "Го вклучува исцртувањето на HTML за оваа порака."
 
-#: viewer/urlhandlermanager.cpp:436 viewer/viewer_p.cpp:1741
+#: viewer/urlhandlermanager.cpp:436 viewer/viewer_p.cpp:1743
 #, kde-format
 msgid "Load external references from the Internet for this message."
 msgstr "Вчитува надворешни референци за оваа порака од Интернет"
@@ -1569,7 +1585,7 @@ msgstr "Отвори во адресарот"
 msgid "&Copy Email Address"
 msgstr "Е-поштенска адреса"
 
-#: viewer/urlhandlermanager.cpp:645 viewer/viewer_p.cpp:2769
+#: viewer/urlhandlermanager.cpp:645 viewer/viewer_p.cpp:2771
 #, kde-format
 msgid "Address copied to clipboard."
 msgstr "Адресата е копирана на таблата со исечоци."
@@ -1672,13 +1688,13 @@ msgctxt "@title:menu"
 msgid "&Open With..."
 msgstr "&Отвори со..."
 
-#: viewer/viewer_p.cpp:566 viewer/viewer_p.cpp:1798
+#: viewer/viewer_p.cpp:566 viewer/viewer_p.cpp:1800
 #, kde-format
 msgctxt "to open"
 msgid "Open"
 msgstr "Отвори"
 
-#: viewer/viewer_p.cpp:586 viewer/viewer_p.cpp:1808
+#: viewer/viewer_p.cpp:586 viewer/viewer_p.cpp:1810
 #, kde-format
 msgctxt "to view something"
 msgid "View"
@@ -1694,7 +1710,7 @@ msgstr ""
 msgid "Save As..."
 msgstr "З&ачувај како..."
 
-#: viewer/viewer_p.cpp:606 viewer/viewer_p.cpp:1820
+#: viewer/viewer_p.cpp:606 viewer/viewer_p.cpp:1822
 #, fuzzy, kde-format
 msgid "Copy"
 msgstr "&Копирај во"
@@ -1710,7 +1726,7 @@ msgstr "Одговори на а&второт..."
 msgid "Reply To All"
 msgstr "&Одговори"
 
-#: viewer/viewer_p.cpp:645 viewer/viewer_p.cpp:1826
+#: viewer/viewer_p.cpp:645 viewer/viewer_p.cpp:1828
 #, fuzzy, kde-format
 msgid "Properties"
 msgstr "&Својства"
@@ -1726,271 +1742,271 @@ msgstr "КПошта"
 msgid "The KDE Mail Client"
 msgstr "Клиентот на KDE за електронска пошта"
 
-#: viewer/viewer_p.cpp:1367
+#: viewer/viewer_p.cpp:1369
 #, kde-format
 msgid "View Attachment: %1"
 msgstr "Преглед на прилогот %1"
 
-#: viewer/viewer_p.cpp:1570
+#: viewer/viewer_p.cpp:1572
 #, kde-format
 msgctxt "View->"
 msgid "&Attachments"
 msgstr "&Прилози"
 
-#: viewer/viewer_p.cpp:1572
+#: viewer/viewer_p.cpp:1574
 #, kde-format
 msgid "Choose display style of attachments"
 msgstr "Изберете стил на прикажување на прилозите"
 
-#: viewer/viewer_p.cpp:1575
+#: viewer/viewer_p.cpp:1577
 #, kde-format
 msgctxt "View->attachments->"
 msgid "&As Icons"
 msgstr "К&ако икони"
 
-#: viewer/viewer_p.cpp:1578
+#: viewer/viewer_p.cpp:1580
 #, kde-format
 msgid "Show all attachments as icons. Click to see them."
 msgstr "Ги покажува сите прилози како икони. Кликнете на нив за да ги видите."
 
-#: viewer/viewer_p.cpp:1582
+#: viewer/viewer_p.cpp:1584
 #, kde-format
 msgctxt "View->attachments->"
 msgid "&Smart"
 msgstr "&Паметно"
 
-#: viewer/viewer_p.cpp:1585
+#: viewer/viewer_p.cpp:1587
 #, kde-format
 msgid "Show attachments as suggested by sender."
 msgstr "Ги покажува прилозите како што е предложено од испраќачот."
 
-#: viewer/viewer_p.cpp:1589
+#: viewer/viewer_p.cpp:1591
 #, kde-format
 msgctxt "View->attachments->"
 msgid "&Inline"
 msgstr "&Внатрешно"
 
-#: viewer/viewer_p.cpp:1592
+#: viewer/viewer_p.cpp:1594
 #, kde-format
 msgid "Show all attachments inline (if possible)"
 msgstr "Ги покажува сите прилози внатрешно (ако е возможно)"
 
-#: viewer/viewer_p.cpp:1596
+#: viewer/viewer_p.cpp:1598
 #, kde-format
 msgctxt "View->attachments->"
 msgid "&Hide"
 msgstr "&Сокриј"
 
-#: viewer/viewer_p.cpp:1599
+#: viewer/viewer_p.cpp:1601
 #, kde-format
 msgid "Do not show attachments in the message viewer"
 msgstr "Не ги покажува прилозите во прегледувачот на пораки"
 
-#: viewer/viewer_p.cpp:1604
+#: viewer/viewer_p.cpp:1606
 #, kde-format
 msgctxt "View->attachments->"
 msgid "In Header Only"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1609
+#: viewer/viewer_p.cpp:1611
 #, fuzzy, kde-format
 #| msgid "Show all attachments as icons. Click to see them."
 msgid "Show Attachments only in the header of the mail"
 msgstr "Ги покажува сите прилози како икони. Кликнете на нив за да ги видите."
 
-#: viewer/viewer_p.cpp:1616
+#: viewer/viewer_p.cpp:1618
 #, kde-format
 msgid "&Set Encoding"
 msgstr "По&стави кодирање"
 
-#: viewer/viewer_p.cpp:1622 widgets/configurewidget.cpp:58
+#: viewer/viewer_p.cpp:1624 widgets/configurewidget.cpp:58
 #: widgets/configurewidget.cpp:103
 #, kde-format
 msgid "Auto"
 msgstr "Автом."
 
-#: viewer/viewer_p.cpp:1632
+#: viewer/viewer_p.cpp:1634
 #, fuzzy, kde-format
 #| msgid "&Copy To"
 msgid "Copy Text"
 msgstr "&Копирај во"
 
-#: viewer/viewer_p.cpp:1640
+#: viewer/viewer_p.cpp:1642
 #, kde-format
 msgid "Select All Text"
 msgstr "Избери го целиот текст"
 
-#: viewer/viewer_p.cpp:1647 viewer/viewer_p.cpp:2127
+#: viewer/viewer_p.cpp:1649 viewer/viewer_p.cpp:2129
 #, kde-format
 msgid "Copy Link Address"
 msgstr "Копирај адреса на врска"
 
-#: viewer/viewer_p.cpp:1653
+#: viewer/viewer_p.cpp:1655
 #, kde-format
 msgid "Open URL"
 msgstr "Отвори URL"
 
-#: viewer/viewer_p.cpp:1664
+#: viewer/viewer_p.cpp:1666
 #, fuzzy, kde-format
 #| msgid "Message Structure Viewer"
 msgid "Show Message Structure"
 msgstr "Преглед на структурата на пораката"
 
-#: viewer/viewer_p.cpp:1670
+#: viewer/viewer_p.cpp:1672
 #, kde-format
 msgid "&View Source"
 msgstr "&Види го изворниот код"
 
-#: viewer/viewer_p.cpp:1677
+#: viewer/viewer_p.cpp:1679
 #, fuzzy, kde-format
 #| msgid " message"
 #| msgid_plural " messages"
 msgid "&Save message..."
 msgstr " порака"
 
-#: viewer/viewer_p.cpp:1683
+#: viewer/viewer_p.cpp:1685
 #, fuzzy, kde-format
 #| msgid "&Save as Draft"
 msgid "&Save Display Format"
 msgstr "&Зачувај како нацрт"
 
-#: viewer/viewer_p.cpp:1688
+#: viewer/viewer_p.cpp:1690
 #, fuzzy, kde-format
 #| msgid "&Save as Draft"
 msgid "&Reset Display Format"
 msgstr "&Зачувај како нацрт"
 
-#: viewer/viewer_p.cpp:1696
+#: viewer/viewer_p.cpp:1698
 #, fuzzy, kde-format
 #| msgid "Select &All Messages"
 msgid "Scroll Message Up"
 msgstr "Избери ги &сите пораки"
 
-#: viewer/viewer_p.cpp:1702
+#: viewer/viewer_p.cpp:1704
 #, fuzzy, kde-format
 #| msgid "Select &All Messages"
 msgid "Scroll Message Down"
 msgstr "Избери ги &сите пораки"
 
-#: viewer/viewer_p.cpp:1708
+#: viewer/viewer_p.cpp:1710
 #, fuzzy, kde-format
 #| msgid "Select &All Messages"
 msgid "Scroll Message Up (More)"
 msgstr "Избери ги &сите пораки"
 
-#: viewer/viewer_p.cpp:1714
+#: viewer/viewer_p.cpp:1716
 #, fuzzy, kde-format
 #| msgid "Select &All Messages"
 msgid "Scroll Message Down (More)"
 msgstr "Избери ги &сите пораки"
 
-#: viewer/viewer_p.cpp:1725
+#: viewer/viewer_p.cpp:1727
 #, kde-format
 msgid "Toggle HTML Display Mode"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1731
+#: viewer/viewer_p.cpp:1733
 #, kde-format
 msgid "Toggle display mode between HTML and plain text"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1734
+#: viewer/viewer_p.cpp:1736
 #, fuzzy, kde-format
 #| msgid "Load External References"
 msgid "Load external references"
 msgstr "Вчитај надворешни референции"
 
-#: viewer/viewer_p.cpp:1743 widgets/mailsourceviewtextbrowserwidget.cpp:158
+#: viewer/viewer_p.cpp:1745 widgets/mailsourceviewtextbrowserwidget.cpp:158
 #, kde-format
 msgid "Speak Text"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1749
+#: viewer/viewer_p.cpp:1751
 #, fuzzy, kde-format
 #| msgid "Choose Location"
 msgid "Copy Image Location"
 msgstr "Изберете локација"
 
-#: viewer/viewer_p.cpp:1758
+#: viewer/viewer_p.cpp:1760
 #, kde-format
 msgid "&Find in Message..."
 msgstr "Про&најди во порака..."
 
-#: viewer/viewer_p.cpp:1768
+#: viewer/viewer_p.cpp:1770
 #, kde-format
 msgid "Disable Emoticon"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1793
+#: viewer/viewer_p.cpp:1795
 #, kde-format
 msgid "Save &As..."
 msgstr "З&ачувај како..."
 
-#: viewer/viewer_p.cpp:1805
+#: viewer/viewer_p.cpp:1807
 #, kde-format
 msgid "Open With..."
 msgstr "Отвори со..."
 
-#: viewer/viewer_p.cpp:1813
+#: viewer/viewer_p.cpp:1815
 #, kde-format
 msgid "Save All Attachments..."
 msgstr "Зачувај ги сите прилози..."
 
-#: viewer/viewer_p.cpp:2045
+#: viewer/viewer_p.cpp:2047
 #, kde-format
 msgid "The network is broken."
 msgstr ""
 
-#: viewer/viewer_p.cpp:2045 viewer/viewer_p.cpp:2049
+#: viewer/viewer_p.cpp:2047 viewer/viewer_p.cpp:2051
 #, kde-format
 msgid "Check Phishing URL"
 msgstr ""
 
-#: viewer/viewer_p.cpp:2048
+#: viewer/viewer_p.cpp:2050
 #, fuzzy, kde-format
 #| msgid "The signature file is not valid"
 msgid "The URL %1 is not valid."
 msgstr "Датотеката со потпис не е валидна"
 
-#: viewer/viewer_p.cpp:2070
+#: viewer/viewer_p.cpp:2072
 #, kde-format
 msgid "This web site is a malware, do you want to continue to show it?"
 msgstr ""
 
-#: viewer/viewer_p.cpp:2071
+#: viewer/viewer_p.cpp:2073
 #, kde-format
 msgid "Malware"
 msgstr ""
 
-#: viewer/viewer_p.cpp:2125
+#: viewer/viewer_p.cpp:2127
 #, fuzzy, kde-format
 #| msgid "Email Address"
 msgid "Copy Email Address"
 msgstr "Е-поштенска адреса"
 
-#: viewer/viewer_p.cpp:2219
+#: viewer/viewer_p.cpp:2221
 #, kde-format
 msgid "Message as Plain Text"
 msgstr "Пораката како обичен текст"
 
-#: viewer/viewer_p.cpp:2400
+#: viewer/viewer_p.cpp:2402
 #, fuzzy, kde-format
 #| msgid "Documentation"
 msgid "Print Document"
 msgstr "Документација"
 
-#: viewer/viewer_p.cpp:2775
+#: viewer/viewer_p.cpp:2777
 #, kde-format
 msgid "URL copied to clipboard."
 msgstr "URL е копиран на таблата со исечоци."
 
-#: viewer/viewer_p.cpp:2925
+#: viewer/viewer_p.cpp:2927
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgid "Message loading failed: %1."
 msgstr "Пораката е потпишана од %1."
 
-#: viewer/viewer_p.cpp:2930
+#: viewer/viewer_p.cpp:2932
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgid "Message not found."
@@ -10343,9 +10359,6 @@ msgstr "&Претходна картичка"
 
 #~ msgid "D&elete mail from server"
 #~ msgstr "Избриши ја поштата од с&ерверот"
-
-#~ msgid "Select Folder"
-#~ msgstr "Изберете папка"
 
 #~ msgid "Unknown folder '%1'"
 #~ msgstr "Непозната папка „%1“"
