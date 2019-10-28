@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-10-21 02:26+0200\n"
+"POT-Creation-Date: 2019-10-28 02:27+0100\n"
 "PO-Revision-Date: 2010-01-28 23:53+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -2211,7 +2211,7 @@ msgid ""
 "Size of icons in the Places Panel (-1 means \"use the style's small size\")"
 msgstr ""
 
-#: panels/places/placesitemmodel.cpp:201
+#: panels/places/placesitemmodel.cpp:203
 #, fuzzy, kde-format
 #| msgctxt "@label"
 #| msgid "Add Comment..."
@@ -2219,7 +2219,7 @@ msgctxt "@item"
 msgid "Eject"
 msgstr "Додајте коментар..."
 
-#: panels/places/placesitemmodel.cpp:236
+#: panels/places/placesitemmodel.cpp:238
 #, fuzzy, kde-format
 #| msgctxt "@item::intable"
 #| msgid "Removed"
@@ -2227,7 +2227,7 @@ msgctxt "@item"
 msgid "Release"
 msgstr "Отстрането"
 
-#: panels/places/placesitemmodel.cpp:238
+#: panels/places/placesitemmodel.cpp:240
 #, fuzzy, kde-format
 #| msgctxt "@item::intable"
 #| msgid "Removed"
@@ -2235,7 +2235,7 @@ msgctxt "@item"
 msgid "Safely Remove"
 msgstr "Отстрането"
 
-#: panels/places/placesitemmodel.cpp:241
+#: panels/places/placesitemmodel.cpp:243
 #, fuzzy, kde-format
 #| msgctxt "@item::intable"
 #| msgid "Removed"
@@ -2243,19 +2243,42 @@ msgctxt "@item"
 msgid "Unmount"
 msgstr "Отстрането"
 
-#: panels/places/placesitemmodel.cpp:263
+#: panels/places/placesitemmodel.cpp:265
 #, kde-format
 msgctxt "@info"
 msgid "The device '%1' is not a disk and cannot be ejected."
 msgstr ""
 
-#: panels/places/placesitemmodel.cpp:498
+#: panels/places/placesitemmodel.cpp:485
+#, kde-format
+msgid "One or more files on this device are open within an application."
+msgstr ""
+
+#: panels/places/placesitemmodel.cpp:492
+#, kde-kuit-format
+msgid ""
+"One or more files on this device are opened in application <application>"
+"\"%2\"</application>."
+msgid_plural ""
+"One or more files on this device are opened in following applications: "
+"<application>%2</application>."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: panels/places/placesitemmodel.cpp:494
+#, kde-format
+msgctxt "separator in list of apps blocking device unmount"
+msgid ", "
+msgstr ""
+
+#: panels/places/placesitemmodel.cpp:522
 #, kde-format
 msgctxt "@info"
 msgid "An error occurred while accessing '%1', the system responded: %2"
 msgstr ""
 
-#: panels/places/placesitemmodel.cpp:502
+#: panels/places/placesitemmodel.cpp:526
 #, kde-format
 msgctxt "@info"
 msgid "An error occurred while accessing '%1'"
@@ -2385,133 +2408,135 @@ msgstr "Што"
 msgid "Show facets widget"
 msgstr "Прикажи прво папки"
 
-#: search/dolphinfacetswidget.cpp:52
+#: search/dolphinfacetswidget.cpp:38
 #, fuzzy, kde-format
-#| msgctxt "@label Any (file size)"
-#| msgid "Any"
-msgctxt "@option:check"
-msgid "Any"
-msgstr "Која било"
+#| msgctxt "@item:inlistbox Sort"
+#| msgid "By Type"
+msgctxt "@item:inlistbox"
+msgid "Any Type"
+msgstr "Според типот"
 
-#: search/dolphinfacetswidget.cpp:53
+#: search/dolphinfacetswidget.cpp:39
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Folders"
-msgctxt "@option:check"
+msgctxt "@item:inlistbox"
 msgid "Folders"
 msgstr "Папки"
 
-#: search/dolphinfacetswidget.cpp:54
+#: search/dolphinfacetswidget.cpp:40
 #, fuzzy, kde-format
 #| msgctxt "@info:credit"
 #| msgid "Documentation"
-msgctxt "@option:check"
+msgctxt "@item:inlistbox"
 msgid "Documents"
 msgstr "Документација"
 
-#: search/dolphinfacetswidget.cpp:55
+#: search/dolphinfacetswidget.cpp:41
 #, fuzzy, kde-format
 #| msgctxt "@label"
 #| msgid "Images"
-msgctxt "@option:check"
+msgctxt "@item:inlistbox"
 msgid "Images"
 msgstr "Слики"
 
-#: search/dolphinfacetswidget.cpp:56
-#, kde-format
-msgctxt "@option:check"
+#: search/dolphinfacetswidget.cpp:42
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu View"
+#| msgid "Show Hidden Files"
+msgctxt "@item:inlistbox"
 msgid "Audio Files"
-msgstr ""
+msgstr "Прикажи скриени датотеки"
 
-#: search/dolphinfacetswidget.cpp:57
+#: search/dolphinfacetswidget.cpp:43
 #, kde-format
-msgctxt "@option:check"
+msgctxt "@item:inlistbox"
 msgid "Videos"
 msgstr ""
 
-#: search/dolphinfacetswidget.cpp:70
+#: search/dolphinfacetswidget.cpp:49
 #, fuzzy, kde-format
-#| msgctxt "@label"
-#| msgid "Anytime"
-msgctxt "@option:option"
-msgid "Anytime"
-msgstr "Кое било време"
+#| msgctxt "@item:inlistbox Sort"
+#| msgid "By Date"
+msgctxt "@item:inlistbox"
+msgid "Any Date"
+msgstr "Според датумот"
 
-#: search/dolphinfacetswidget.cpp:71
+#: search/dolphinfacetswidget.cpp:50
 #, fuzzy, kde-format
 #| msgctxt "@title:group Date"
 #| msgid "Today"
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "Today"
 msgstr "Денес"
 
-#: search/dolphinfacetswidget.cpp:72
+#: search/dolphinfacetswidget.cpp:51
 #, fuzzy, kde-format
 #| msgctxt "@title:group Date"
 #| msgid "Yesterday"
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "Yesterday"
 msgstr "Вчера"
 
-#: search/dolphinfacetswidget.cpp:73
+#: search/dolphinfacetswidget.cpp:52
 #, fuzzy, kde-format
 #| msgctxt "@label"
 #| msgid "This Week"
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "This Week"
 msgstr "Оваа недела"
 
-#: search/dolphinfacetswidget.cpp:74
+#: search/dolphinfacetswidget.cpp:53
 #, fuzzy, kde-format
 #| msgctxt "@label"
 #| msgid "This Month"
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "This Month"
 msgstr "Овој месец"
 
-#: search/dolphinfacetswidget.cpp:75
+#: search/dolphinfacetswidget.cpp:54
 #, fuzzy, kde-format
 #| msgctxt "@label"
 #| msgid "This Year"
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "This Year"
 msgstr "Оваа година"
 
-#: search/dolphinfacetswidget.cpp:88
+#: search/dolphinfacetswidget.cpp:58
 #, fuzzy, kde-format
 #| msgctxt "@item::inlistbox"
 #| msgid "Rating"
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "Any Rating"
 msgstr "Рангирање"
 
-#: search/dolphinfacetswidget.cpp:89
+#: search/dolphinfacetswidget.cpp:59
 #, kde-format
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "1 or more"
 msgstr ""
 
-#: search/dolphinfacetswidget.cpp:90
+#: search/dolphinfacetswidget.cpp:60
 #, kde-format
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "2 or more"
 msgstr ""
 
-#: search/dolphinfacetswidget.cpp:91
+#: search/dolphinfacetswidget.cpp:61
 #, kde-format
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "3 or more"
 msgstr ""
 
-#: search/dolphinfacetswidget.cpp:92
+#: search/dolphinfacetswidget.cpp:62
 #, kde-format
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "4 or more"
 msgstr ""
 
-#: search/dolphinfacetswidget.cpp:93
+#: search/dolphinfacetswidget.cpp:63
 #, kde-format
-msgctxt "@option:option"
+msgctxt "@item:inlistbox"
 msgid "Highest Rating"
 msgstr ""
 
@@ -4523,6 +4548,41 @@ msgid "Updating version information..."
 msgstr "Ажурирам информација за верзијата..."
 
 #, fuzzy
+#~| msgctxt "@label Any (file size)"
+#~| msgid "Any"
+#~ msgctxt "@option:check"
+#~ msgid "Any"
+#~ msgstr "Која било"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Folders"
+#~ msgctxt "@option:check"
+#~ msgid "Folders"
+#~ msgstr "Папки"
+
+#, fuzzy
+#~| msgctxt "@label"
+#~| msgid "Anytime"
+#~ msgctxt "@option:option"
+#~ msgid "Anytime"
+#~ msgstr "Кое било време"
+
+#, fuzzy
+#~| msgctxt "@title:group Date"
+#~| msgid "Today"
+#~ msgctxt "@option:option"
+#~ msgid "Today"
+#~ msgstr "Денес"
+
+#, fuzzy
+#~| msgctxt "@title:group Date"
+#~| msgid "Yesterday"
+#~ msgctxt "@option:option"
+#~ msgid "Yesterday"
+#~ msgstr "Вчера"
+
+#, fuzzy
 #~| msgctxt "@title:menu"
 #~| msgid "Location Bar"
 #~ msgctxt "@action:inmenu"
@@ -4552,13 +4612,6 @@ msgstr "Ажурирам информација за верзијата..."
 #~ msgctxt "@action:intoolbar"
 #~ msgid "Preview"
 #~ msgstr "Преглед"
-
-#, fuzzy
-#~| msgctxt "@action:inmenu View"
-#~| msgid "Show Hidden Files"
-#~ msgctxt "@action:inmenu View"
-#~ msgid "Hidden Files"
-#~ msgstr "Прикажи скриени датотеки"
 
 #~ msgid "stop"
 #~ msgstr "стоп"
@@ -5085,10 +5138,6 @@ msgstr "Ажурирам информација за верзијата..."
 #~ msgstr "Според големината"
 
 #~ msgctxt "@item:inlistbox Sort"
-#~ msgid "By Date"
-#~ msgstr "Според датумот"
-
-#~ msgctxt "@item:inlistbox Sort"
 #~ msgid "By Permissions"
 #~ msgstr "Според дозволите"
 
@@ -5099,10 +5148,6 @@ msgstr "Ажурирам информација за верзијата..."
 #~ msgctxt "@item:inlistbox Sort"
 #~ msgid "By Group"
 #~ msgstr "Според групата"
-
-#~ msgctxt "@item:inlistbox Sort"
-#~ msgid "By Type"
-#~ msgstr "Според типот"
 
 #, fuzzy
 #~| msgctxt "@label"
