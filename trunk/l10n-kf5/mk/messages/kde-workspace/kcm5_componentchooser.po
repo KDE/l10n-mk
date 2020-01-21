@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmcomponentchooser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-01-11 03:41+0100\n"
+"POT-Creation-Date: 2020-01-21 03:50+0100\n"
 "PO-Revision-Date: 2009-06-21 13:45+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -29,42 +29,6 @@ msgstr "Божидар Проевски"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "bobibobi@freemail.com.mk"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: browserconfig_ui.ui:29
-#, kde-format
-msgid "<qt>Open <b>http</b> and <b>https</b> URLs</qt>"
-msgstr "<qt>Отвори <b>http</b> и <b>https</b> URL</qt>"
-
-#. i18n: ectx: property (text), widget (QRadioButton, radioKIO)
-#: browserconfig_ui.ui:36
-#, kde-format
-msgid "in an application based on the contents of the URL"
-msgstr "во апликација базирана на содржината на URL"
-
-#. i18n: ectx: property (text), widget (QRadioButton, radioService)
-#: browserconfig_ui.ui:46
-#, fuzzy, kde-format
-#| msgid "in the following browser:"
-msgid "in the following application:"
-msgstr "во следниот прелистувач:"
-
-#. i18n: ectx: property (text), widget (QRadioButton, radioExec)
-#: browserconfig_ui.ui:80
-#, fuzzy, kde-format
-#| msgid "in the following browser:"
-msgid "with the following command:"
-msgstr "во следниот прелистувач:"
-
-#. i18n: ectx: property (text), widget (QToolButton, btnSelectApplication)
-#. i18n: ectx: property (text), widget (QToolButton, btnSelectEmail)
-#. i18n: ectx: property (text), widget (QToolButton, btnSelectFileManager)
-#. i18n: ectx: property (text), widget (QToolButton, btnSelectTerminal)
-#: browserconfig_ui.ui:115 emailclientconfig_ui.ui:69
-#: filemanagerconfig_ui.ui:41 terminalemulatorconfig_ui.ui:60
-#, kde-format
-msgid "..."
-msgstr "..."
 
 #: componentchooser.cpp:145
 #, kde-format
@@ -94,7 +58,7 @@ msgstr ""
 msgid "No description available"
 msgstr "Нема достапен опис"
 
-#. i18n: ectx: property (whatsThis), widget (QGroupBox, GroupBox1)
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, headerGroupBox)
 #: componentchooser_ui.ui:26
 #, kde-format
 msgid ""
@@ -113,7 +77,7 @@ msgstr ""
 "повикуваат истите компоненти. Тука може да изберете кои програми ќе бидат "
 "тие компоненти."
 
-#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
+#. i18n: ectx: property (title), widget (QGroupBox, headerGroupBox)
 #: componentchooser_ui.ui:29
 #, kde-format
 msgid "Default Component"
@@ -146,118 +110,22 @@ msgstr ""
 "програми ќе бидат тие компоненти.</p>\n"
 "</qt>"
 
-#: componentchooserbrowser.cpp:171
+#: componentchooserbrowser.cpp:115 componentchooseremail.cpp:126
+#: componentchooserfilemanager.cpp:119 componentchooserterminal.cpp:97
 #, kde-format
-msgid "Select preferred Web browser application:"
-msgstr "Изберете претпочитана апликација за прелистување на веб:"
+msgid "Other..."
+msgstr ""
 
-#: componentchooseremail.cpp:93
-#, kde-format
-msgid "Select preferred email client:"
+#: componentchooserfilemanager.cpp:58
+#, fuzzy, kde-format
+#| msgid "Select preferred email client:"
+msgid "Select preferred file manager:"
 msgstr "Изберете претпочитан клиент за е-пошта:"
 
-#: componentchooserterminal.cpp:101
+#: componentchooserterminal.cpp:122
 #, kde-format
 msgid "Select preferred terminal application:"
 msgstr "Изберете претпочитана терминалска апликација:"
-
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, kmailCB)
-#: emailclientconfig_ui.ui:12
-#, fuzzy, kde-format
-#| msgid "Kmail is the standard Mail program for the KDE desktop."
-msgid "Kmail is the standard Mail program for the Plasma desktop."
-msgstr "Kmail е стандардната е-поштенска програма за работната околина KDE."
-
-#. i18n: ectx: property (text), widget (QRadioButton, kmailCB)
-#: emailclientconfig_ui.ui:15
-#, kde-format
-msgid "&Use KMail as preferred email client"
-msgstr "&Користи го KMail како претпочитан клиент за е-пошта"
-
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, otherCB)
-#: emailclientconfig_ui.ui:22
-#, kde-format
-msgid "Select this option if you want to use any other mail program."
-msgstr ""
-"Изберете ја оваа опција ако сакате да користите некоја друга е-поштенска "
-"програма."
-
-#. i18n: ectx: property (text), widget (QRadioButton, otherCB)
-#: emailclientconfig_ui.ui:25
-#, kde-format
-msgid "Use a different &email client:"
-msgstr "Користи друг клиент за &е-пошта:"
-
-#. i18n: ectx: property (toolTip), widget (KLineEdit, txtEMailClient)
-#: emailclientconfig_ui.ui:53
-#, fuzzy, no-c-format, kde-format
-#| msgid ""
-#| "<ul> <li>%t: Recipient's address</li> <li>%s: Subject</li> <li>%c: Carbon "
-#| "Copy (CC)</li> <li>%b: Blind Carbon Copy (BCC)</li> <li>%B: Template body "
-#| "text</li> <li>%A: Attachment </li> <li>%u: Full mailto: URL </li></ul>"
-msgid ""
-"Optional placeholders: <ul> <li>%t: Recipient's address</li> <li>%s: "
-"Subject</li> <li>%c: Carbon Copy (CC)</li> <li>%b: Blind Carbon Copy (BCC)</"
-"li> <li>%B: Template body text</li> <li>%A: Attachment </li> <li>%u: Full "
-"mailto: URL </li></ul>"
-msgstr ""
-"<ul> <li>%t: Адреса на примачот</li> <li>%s: Тема</li> <li>%c: Идентична "
-"копија (CC)</li> <li>%b: Слепа идентична копија (BCC)</li> <li>%B: Шаблон за "
-"текст</li> <li>%A: Додаток </li> <li>%u: Целосна поштенска адреса</li></ul>"
-
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, txtEMailClient)
-#: emailclientconfig_ui.ui:56
-#, no-c-format, kde-format
-msgid ""
-"Press this button to select your favorite email client. Please note that the "
-"file you select has to have the executable attribute set in order to be "
-"accepted.<br/> You can also use several placeholders which will be replaced "
-"with the actual values when the email client is called:<ul> <li>%t: "
-"Recipient's address</li> <li>%s: Subject</li> <li>%c: Carbon Copy (CC)</li> "
-"<li>%b: Blind Carbon Copy (BCC)</li> <li>%B: Template body text</li> <li>%A: "
-"Attachment </li> </ul>"
-msgstr ""
-"Притиснете на ова копче за да го изберете вашиот омилен клиент за е-пошта. "
-"Забележете дека датотеката што ќе ја изберете мора да има извршен атрибут за "
-"да биде прифатена.<br /> Исто така може да користите неколку вредности кои "
-"ќе бидат заменети со актуените вредности кога ќе се повика клиентот за е-"
-"пошта:<ul> <li>%t: Адреса на примачот</li> <li>%s: Тема</li> <li>%c: "
-"Идентична копија (CC)</li> <li>%b: Слепа идентична копија (BCC)</li> <li>%B: "
-"Шаблон за текст</li> <li>%A: Додаток </li> </ul>"
-
-#. i18n: ectx: property (whatsThis), widget (QToolButton, btnSelectEmail)
-#: emailclientconfig_ui.ui:66
-#, kde-format
-msgid "Click here to browse for the mail program file."
-msgstr "Кликнете тука за да прелистате за програмската датотеката за е-пошта."
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRunTerminal)
-#: emailclientconfig_ui.ui:99
-#, kde-format
-msgid ""
-"Activate this option if you want the selected email client to be executed in "
-"a terminal (e.g. <em>Konsole</em>)."
-msgstr ""
-"Изберете ја оваа опција ако сакате вашиот клиент за е-пошта да се извршува "
-"во терминал (на пр. <em>Конзола</em>)."
-
-#. i18n: ectx: property (text), widget (QCheckBox, chkRunTerminal)
-#: emailclientconfig_ui.ui:102
-#, kde-format
-msgid "&Run in terminal"
-msgstr "Изв&рши во терминал"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: filemanagerconfig_ui.ui:12
-#, kde-format
-msgid "Browse directories using the following file manager:"
-msgstr "Прелистување на папки со следниот менаџер:"
-
-#. i18n: ectx: property (text), widget (QRadioButton, radioExec)
-#: filemanagerconfig_ui.ui:24
-#, kde-format
-msgid "Other: click Add... in the dialog shown here:"
-msgstr "Други: кликнете на „Додај...“ во дијалогот прикажан тука:"
 
 #: kcm_componentchooser.cpp:43
 #, kde-format
@@ -274,38 +142,119 @@ msgstr "(c), 2002 Joseph Wenninger"
 msgid "Joseph Wenninger"
 msgstr "Joseph Wenninger"
 
-#. i18n: ectx: property (text), widget (QRadioButton, terminalCB)
-#: terminalemulatorconfig_ui.ui:12
-#, kde-format
-msgid "&Use Konsole as terminal application"
-msgstr "&Користи ја Конзолата како терминалска апликација"
+#~ msgid "<qt>Open <b>http</b> and <b>https</b> URLs</qt>"
+#~ msgstr "<qt>Отвори <b>http</b> и <b>https</b> URL</qt>"
 
-#. i18n: ectx: property (text), widget (QRadioButton, otherCB)
-#: terminalemulatorconfig_ui.ui:19
-#, kde-format
-msgid "Use a different &terminal program:"
-msgstr "Користи друга &терминалска програма:"
+#~ msgid "in an application based on the contents of the URL"
+#~ msgstr "во апликација базирана на содржината на URL"
 
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, terminalLE)
-#: terminalemulatorconfig_ui.ui:47
-#, kde-format
-msgid ""
-"Press this button to select your favorite terminal client. Please note that "
-"the file you select has to have the executable attribute set in order to be "
-"accepted.<br/> Also note that some programs that utilize Terminal Emulator "
-"will not work if you add command line arguments (Example: konsole -ls)."
-msgstr ""
-"Притиснете го ова копче за да го изберете вашиот омилен терминалски клиент. "
-"Забележете дека датотеката што ќе ја изберете мора да има извршен атрибут за "
-"да биде прифатена.<br /> Исто така забележете дека некои програми кои го "
-"користат терминалниот емулатор нема да работат ако додатете аргументи на "
-"командната линија (на пример: konsole -ls)."
+#, fuzzy
+#~| msgid "in the following browser:"
+#~ msgid "in the following application:"
+#~ msgstr "во следниот прелистувач:"
 
-#. i18n: ectx: property (whatsThis), widget (QToolButton, btnSelectTerminal)
-#: terminalemulatorconfig_ui.ui:57
-#, kde-format
-msgid "Click here to browse for terminal program."
-msgstr "Кликнете тука за да прелистате за терминалска програма."
+#, fuzzy
+#~| msgid "in the following browser:"
+#~ msgid "with the following command:"
+#~ msgstr "во следниот прелистувач:"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Select preferred Web browser application:"
+#~ msgstr "Изберете претпочитана апликација за прелистување на веб:"
+
+#, fuzzy
+#~| msgid "Kmail is the standard Mail program for the KDE desktop."
+#~ msgid "Kmail is the standard Mail program for the Plasma desktop."
+#~ msgstr "Kmail е стандардната е-поштенска програма за работната околина KDE."
+
+#~ msgid "&Use KMail as preferred email client"
+#~ msgstr "&Користи го KMail како претпочитан клиент за е-пошта"
+
+#~ msgid "Select this option if you want to use any other mail program."
+#~ msgstr ""
+#~ "Изберете ја оваа опција ако сакате да користите некоја друга е-поштенска "
+#~ "програма."
+
+#~ msgid "Use a different &email client:"
+#~ msgstr "Користи друг клиент за &е-пошта:"
+
+#, fuzzy
+#~| msgid ""
+#~| "<ul> <li>%t: Recipient's address</li> <li>%s: Subject</li> <li>%c: "
+#~| "Carbon Copy (CC)</li> <li>%b: Blind Carbon Copy (BCC)</li> <li>%B: "
+#~| "Template body text</li> <li>%A: Attachment </li> <li>%u: Full mailto: "
+#~| "URL </li></ul>"
+#~ msgid ""
+#~ "Optional placeholders: <ul> <li>%t: Recipient's address</li> <li>%s: "
+#~ "Subject</li> <li>%c: Carbon Copy (CC)</li> <li>%b: Blind Carbon Copy "
+#~ "(BCC)</li> <li>%B: Template body text</li> <li>%A: Attachment </li> <li>"
+#~ "%u: Full mailto: URL </li></ul>"
+#~ msgstr ""
+#~ "<ul> <li>%t: Адреса на примачот</li> <li>%s: Тема</li> <li>%c: Идентична "
+#~ "копија (CC)</li> <li>%b: Слепа идентична копија (BCC)</li> <li>%B: Шаблон "
+#~ "за текст</li> <li>%A: Додаток </li> <li>%u: Целосна поштенска адреса</"
+#~ "li></ul>"
+
+#~ msgid ""
+#~ "Press this button to select your favorite email client. Please note that "
+#~ "the file you select has to have the executable attribute set in order to "
+#~ "be accepted.<br/> You can also use several placeholders which will be "
+#~ "replaced with the actual values when the email client is called:<ul> <li>"
+#~ "%t: Recipient's address</li> <li>%s: Subject</li> <li>%c: Carbon Copy "
+#~ "(CC)</li> <li>%b: Blind Carbon Copy (BCC)</li> <li>%B: Template body "
+#~ "text</li> <li>%A: Attachment </li> </ul>"
+#~ msgstr ""
+#~ "Притиснете на ова копче за да го изберете вашиот омилен клиент за е-"
+#~ "пошта. Забележете дека датотеката што ќе ја изберете мора да има извршен "
+#~ "атрибут за да биде прифатена.<br /> Исто така може да користите неколку "
+#~ "вредности кои ќе бидат заменети со актуените вредности кога ќе се повика "
+#~ "клиентот за е-пошта:<ul> <li>%t: Адреса на примачот</li> <li>%s: Тема</"
+#~ "li> <li>%c: Идентична копија (CC)</li> <li>%b: Слепа идентична копија "
+#~ "(BCC)</li> <li>%B: Шаблон за текст</li> <li>%A: Додаток </li> </ul>"
+
+#~ msgid "Click here to browse for the mail program file."
+#~ msgstr ""
+#~ "Кликнете тука за да прелистате за програмската датотеката за е-пошта."
+
+#~ msgid ""
+#~ "Activate this option if you want the selected email client to be executed "
+#~ "in a terminal (e.g. <em>Konsole</em>)."
+#~ msgstr ""
+#~ "Изберете ја оваа опција ако сакате вашиот клиент за е-пошта да се "
+#~ "извршува во терминал (на пр. <em>Конзола</em>)."
+
+#~ msgid "&Run in terminal"
+#~ msgstr "Изв&рши во терминал"
+
+#~ msgid "Browse directories using the following file manager:"
+#~ msgstr "Прелистување на папки со следниот менаџер:"
+
+#~ msgid "Other: click Add... in the dialog shown here:"
+#~ msgstr "Други: кликнете на „Додај...“ во дијалогот прикажан тука:"
+
+#~ msgid "&Use Konsole as terminal application"
+#~ msgstr "&Користи ја Конзолата како терминалска апликација"
+
+#~ msgid "Use a different &terminal program:"
+#~ msgstr "Користи друга &терминалска програма:"
+
+#~ msgid ""
+#~ "Press this button to select your favorite terminal client. Please note "
+#~ "that the file you select has to have the executable attribute set in "
+#~ "order to be accepted.<br/> Also note that some programs that utilize "
+#~ "Terminal Emulator will not work if you add command line arguments "
+#~ "(Example: konsole -ls)."
+#~ msgstr ""
+#~ "Притиснете го ова копче за да го изберете вашиот омилен терминалски "
+#~ "клиент. Забележете дека датотеката што ќе ја изберете мора да има извршен "
+#~ "атрибут за да биде прифатена.<br /> Исто така забележете дека некои "
+#~ "програми кои го користат терминалниот емулатор нема да работат ако "
+#~ "додатете аргументи на командната линија (на пример: konsole -ls)."
+
+#~ msgid "Click here to browse for terminal program."
+#~ msgstr "Кликнете тука за да прелистате за терминалска програма."
 
 #~ msgid "1 second remaining:"
 #~ msgid_plural "%1 seconds remaining:"
