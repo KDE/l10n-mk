@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-03-12 03:37+0100\n"
+"POT-Creation-Date: 2020-03-18 03:29+0100\n"
 "PO-Revision-Date: 2007-02-28 14:24+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -545,13 +545,11 @@ msgid "Configure the view"
 msgstr "Конфигурирај &датум и време..."
 
 #: actionmanager.cpp:552 actionmanager.cpp:1301 actionmanager.cpp:1337
-#: koeventpopupmenu.cpp:55
 #, kde-format
 msgid "&Show"
 msgstr "Пр&икажи"
 
 #: actionmanager.cpp:557 actionmanager.cpp:1304 actionmanager.cpp:1338
-#: koeventpopupmenu.cpp:58
 #, kde-format
 msgid "&Edit..."
 msgstr "&Уреди..."
@@ -1625,53 +1623,58 @@ msgstr "&Наслов:"
 msgid "Text:"
 msgstr "Повтори (%1)"
 
-#: dialog/searchdialog.cpp:54
+#: dialog/searchdialog.cpp:55
 #, fuzzy, kde-format
 #| msgid "New Calendar"
 msgctxt "@title:window"
 msgid "Search Calendar"
 msgstr "Нов календар"
 
-#: dialog/searchdialog.cpp:85
+#: dialog/searchdialog.cpp:86
 #, fuzzy, kde-format
-msgctxt "search in calendar"
+msgctxt "@action:button search in calendar"
 msgid "&Search"
 msgstr "Барај во"
 
-#: dialog/searchdialog.cpp:87
-#, kde-format
-msgid "Start searching"
-msgstr ""
+#: dialog/searchdialog.cpp:88
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Start the search"
+msgstr "Почетен датум:"
 
-#: dialog/searchdialog.cpp:90
+#: dialog/searchdialog.cpp:91
 #, fuzzy, kde-format
 #| msgid "Press this button to define a new filter."
 msgctxt "@info:whatsthis"
 msgid "Press this button to start the search."
 msgstr "Притиснете го ова копче за да дефинирате нов филтер."
 
-#: dialog/searchdialog.cpp:131
+#: dialog/searchdialog.cpp:151
 #, kde-format
+msgctxt "@info"
 msgid ""
 "Invalid search expression, cannot perform the search. Please enter a search "
 "expression using the wildcard characters '*' and '?' where needed."
 msgstr ""
 
-#: dialog/searchdialog.cpp:143
+#: dialog/searchdialog.cpp:163
 #, kde-format
+msgctxt "@info"
 msgid "No items were found that match your search pattern."
 msgstr ""
 
-#: dialog/searchdialog.cpp:144
+#: dialog/searchdialog.cpp:164
 #, fuzzy, kde-format
 #| msgid "Search In"
+msgctxt "@title:window"
 msgid "Search Results"
 msgstr "Барај во"
 
-#: dialog/searchdialog.cpp:147
+#: dialog/searchdialog.cpp:167
 #, fuzzy, kde-format
 #| msgid "1 minute"
 #| msgid_plural "%1 minutes"
+msgctxt "@label"
 msgid "%1 item"
 msgid_plural "%1 items"
 msgstr[0] "%1 минута"
@@ -1876,81 +1879,124 @@ msgstr "&Додај"
 msgid "&Cancel"
 msgstr "И&змени"
 
-#: koeventpopupmenu.cpp:61
+#: koeventpopupmenu.cpp:69
 #, fuzzy, kde-format
-msgid "&Print..."
-msgstr "&Уреди..."
-
-#: koeventpopupmenu.cpp:64
-#, fuzzy, kde-format
-msgid "Print Previe&w..."
-msgstr "&Уреди..."
-
-#: koeventpopupmenu.cpp:70
-#, fuzzy, kde-format
-msgctxt "cut this event"
-msgid "C&ut"
-msgstr "Chukat"
+#| msgid "&Show"
+msgctxt "@action:inmenu"
+msgid "&Show"
+msgstr "Пр&икажи"
 
 #: koeventpopupmenu.cpp:73
 #, fuzzy, kde-format
-msgctxt "copy this event"
-msgid "&Copy"
-msgstr "&Копирај во"
+#| msgid "&Edit..."
+msgctxt "@action:inmenu"
+msgid "&Edit..."
+msgstr "&Уреди..."
 
 #: koeventpopupmenu.cpp:77
 #, fuzzy, kde-format
-#| msgid "&Date:"
-msgid "&Paste"
-msgstr "&Датум:"
-
-#: koeventpopupmenu.cpp:80
-#, fuzzy, kde-format
-msgctxt "delete this incidence"
+msgctxt "@action:inmenu delete this incidence"
 msgid "&Delete"
 msgstr "Избриши %1"
 
-#: koeventpopupmenu.cpp:85
+#: koeventpopupmenu.cpp:83
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
+msgid "&Print..."
+msgstr "&Уреди..."
+
+#: koeventpopupmenu.cpp:87
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
+msgid "Print Previe&w..."
+msgstr "&Уреди..."
+
+#: koeventpopupmenu.cpp:109
+#, fuzzy, kde-format
+msgctxt "@action:inmenu cut this incidence"
+msgid "C&ut"
+msgstr "Chukat"
+
+#: koeventpopupmenu.cpp:112
+#, fuzzy, kde-format
+msgctxt "@action:inmenu copy this incidence"
+msgid "&Copy"
+msgstr "&Копирај во"
+
+#: koeventpopupmenu.cpp:115
+#, fuzzy, kde-format
+#| msgid "&Date:"
+msgctxt "@action:inmenu"
+msgid "&Paste"
+msgstr "&Датум:"
+
+#: koeventpopupmenu.cpp:124
 #, fuzzy, kde-format
 #| msgid "Click to add a new to-do"
-msgid "Create To-do"
+msgctxt "@action:inmenu"
+msgid "Create To-do from Event"
 msgstr "Кликнете да додадете нова задача"
 
-#: koeventpopupmenu.cpp:91
+#: koeventpopupmenu.cpp:128
 #, fuzzy, kde-format
 #| msgid "Click to add a new to-do"
-msgid "Create Event"
+msgctxt "@action:inmenu"
+msgid "Create Note for Event"
 msgstr "Кликнете да додадете нова задача"
 
-#: koeventpopupmenu.cpp:97
-#, fuzzy, kde-format
-#| msgid "Click to add a new to-do"
-msgid "Create Note"
-msgstr "Кликнете да додадете нова задача"
-
-#: koeventpopupmenu.cpp:103
+#: koeventpopupmenu.cpp:137
 #, fuzzy, kde-format
 #| msgctxt "delete completed to-dos"
 #| msgid "Pur&ge Completed"
+msgctxt "@action:inmenu"
 msgid "Togg&le To-do Completed"
 msgstr "Исчисти &ги завршените"
 
-#: koeventpopupmenu.cpp:106
+#: koeventpopupmenu.cpp:141
 #, fuzzy, kde-format
+#| msgid "Click to add a new to-do"
+msgctxt "@action:inmenu"
+msgid "Create Event from To-do"
+msgstr "Кликнете да додадете нова задача"
+
+#: koeventpopupmenu.cpp:145
+#, fuzzy, kde-format
+#| msgid "Click to add a new to-do"
+msgctxt "@action:inmenu"
+msgid "Create Note for To-do"
+msgstr "Кликнете да додадете нова задача"
+
+#: koeventpopupmenu.cpp:154
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
 msgid "&Toggle Reminder"
 msgstr "Смени по&тсетник"
 
-#: koeventpopupmenu.cpp:110
+#: koeventpopupmenu.cpp:163
 #, fuzzy, kde-format
 #| msgid "&Enable recurrence"
+msgctxt "@action:inmenu"
 msgid "&Dissociate From Recurrence..."
 msgstr "Овозможи повторувањ&е"
 
-#: koeventpopupmenu.cpp:116
+#: koeventpopupmenu.cpp:172
 #, fuzzy, kde-format
 #| msgid "&iCalendar..."
-msgid "Send as iCalendar..."
+msgctxt "@action:inmenu"
+msgid "Email as iCalendar..."
 msgstr "&iCalendar..."
+
+#: koeventpopupmenu.cpp:224
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
+msgid "&Toggle Reminder Off"
+msgstr "Смени по&тсетник"
+
+#: koeventpopupmenu.cpp:225
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
+msgid "&Toggle Reminder On"
+msgstr "Смени по&тсетник"
 
 #: kohelper.cpp:75
 #, kde-format
@@ -5596,6 +5642,21 @@ msgid "%1"
 msgstr "%1"
 
 #, fuzzy
+#~ msgctxt "copy this event"
+#~ msgid "&Copy"
+#~ msgstr "&Копирај во"
+
+#, fuzzy
+#~ msgctxt "delete this incidence"
+#~ msgid "&Delete"
+#~ msgstr "Избриши %1"
+
+#, fuzzy
+#~| msgid "Click to add a new to-do"
+#~ msgid "Create Note"
+#~ msgstr "Кликнете да додадете нова задача"
+
+#, fuzzy
 #~| msgid "Change..."
 #~ msgid "searching..."
 #~ msgstr "Измени..."
@@ -6784,10 +6845,6 @@ msgstr "%1"
 #~| msgid "Working hours color"
 #~ msgid "Print in color"
 #~ msgstr "Боја за работни часови"
-
-#, fuzzy
-#~ msgid "Start date: "
-#~ msgstr "Почетен датум:"
 
 #, fuzzy
 #~ msgid "End date: "
