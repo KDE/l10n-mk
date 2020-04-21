@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-04-18 02:48+0200\n"
+"POT-Creation-Date: 2020-04-21 02:50+0200\n"
 "PO-Revision-Date: 2000-10-02 22:00+0100\n"
 "Last-Translator: Damjan Janevski <miopa@usa.net>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -12739,8 +12739,8 @@ msgstr "Отстрани табулатор"
 #: plugins/extensions/animationrenderer/DlgAnimationRenderer.cpp:498
 #: plugins/extensions/animationrenderer/DlgAnimationRenderer.cpp:501
 #: plugins/extensions/animationrenderer/DlgAnimationRenderer.cpp:508
-#: plugins/extensions/imagesplit/imagesplit.cpp:84
 #: plugins/extensions/imagesplit/imagesplit.cpp:86
+#: plugins/extensions/imagesplit/imagesplit.cpp:88
 #: plugins/extensions/qmic/QMic.cpp:126 plugins/extensions/qmic/QMic.cpp:298
 #: plugins/extensions/qmic/QMic.cpp:327
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:285
@@ -18436,7 +18436,7 @@ msgctxt "%1 --- failing file name, %2 --- error message"
 msgid "Error during saving %1: %2"
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:796 plugins/extensions/imagesplit/imagesplit.cpp:86
+#: libs/ui/KisDocument.cpp:796 plugins/extensions/imagesplit/imagesplit.cpp:88
 #, fuzzy, kde-format
 msgid ""
 "Could not save %1\n"
@@ -24866,7 +24866,7 @@ msgstr "Распоред на страна"
 #. i18n: ectx: property (text), widget (QRadioButton, commonColorsAlignVertical)
 #: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:916
 #: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1137
-#: plugins/extensions/imagesplit/wdg_imagesplit.ui:51
+#: plugins/extensions/imagesplit/wdg_imagesplit.ui:93
 #, fuzzy, kde-format
 #| msgid "&Vertical"
 msgid "&Vertical"
@@ -24886,7 +24886,7 @@ msgstr "Колони:"
 #. i18n: ectx: property (text), widget (QRadioButton, commonColorsAlignHorizontal)
 #: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:952
 #: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1170
-#: plugins/extensions/imagesplit/wdg_imagesplit.ui:39
+#: plugins/extensions/imagesplit/wdg_imagesplit.ui:81
 #, fuzzy, kde-format
 msgid "Hori&zontal"
 msgstr "Хоризонтално"
@@ -27722,12 +27722,12 @@ msgstr ""
 msgid "Filter:"
 msgstr "Избери"
 
-#: plugins/extensions/imagesplit/dlg_imagesplit.cpp:36
+#: plugins/extensions/imagesplit/dlg_imagesplit.cpp:46
 #, fuzzy, kde-format
 msgid "Image Split"
 msgstr "Преглед на страна"
 
-#: plugins/extensions/imagesplit/imagesplit.cpp:84
+#: plugins/extensions/imagesplit/imagesplit.cpp:86
 #, kde-format
 msgid ""
 "Could not save\n"
@@ -27736,48 +27736,56 @@ msgstr ""
 "Не може да се сними\n"
 "%1"
 
-#: plugins/extensions/imagesplit/imagesplit.cpp:149
-#: plugins/extensions/imagesplit/imagesplit.cpp:204
+#: plugins/extensions/imagesplit/imagesplit.cpp:180
+#: plugins/extensions/imagesplit/imagesplit.cpp:255
 #, fuzzy, kde-format
 msgid "Save Image on Split"
 msgstr "Преглед на страна"
 
+#. i18n: ectx: property (text), widget (QLabel, lblHorizontalSplitLines)
+#: plugins/extensions/imagesplit/wdg_imagesplit.ui:22
+#, fuzzy, kde-format
+msgid "Horizontal Lines"
+msgstr "Хоризонтално"
+
+#. i18n: ectx: property (text), widget (QCheckBox, chkGuidesHorizontal)
+#. i18n: ectx: property (text), widget (QCheckBox, chkGuidesVertical)
+#: plugins/extensions/imagesplit/wdg_imagesplit.ui:37
+#: plugins/extensions/imagesplit/wdg_imagesplit.ui:61
+#, fuzzy, kde-format
+msgid "Use guides"
+msgstr "Покажи %1 алатник"
+
+#. i18n: ectx: property (text), widget (QLabel, lblVerticalSplitLines)
+#: plugins/extensions/imagesplit/wdg_imagesplit.ui:46
+#, fuzzy, kde-format
+msgid "Vertical Lines"
+msgstr "Внесете име"
+
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: plugins/extensions/imagesplit/wdg_imagesplit.ui:28
+#: plugins/extensions/imagesplit/wdg_imagesplit.ui:70
 #, fuzzy, kde-format
 msgid "Sort Direction:"
 msgstr "Одбери..."
 
 #. i18n: ectx: property (text), widget (QLabel, lblSuffix)
-#: plugins/extensions/imagesplit/wdg_imagesplit.ui:61
+#: plugins/extensions/imagesplit/wdg_imagesplit.ui:103
 #, fuzzy, kde-format
 msgid "Prefix"
 msgstr "Преглед:"
 
 #. i18n: ectx: property (text), widget (QLabel, lblFileType)
-#: plugins/extensions/imagesplit/wdg_imagesplit.ui:81
+#: plugins/extensions/imagesplit/wdg_imagesplit.ui:123
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:75
 #, fuzzy, kde-format
 msgid "File Type"
 msgstr "Полно име :"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkAutoSave)
-#: plugins/extensions/imagesplit/wdg_imagesplit.ui:106
+#: plugins/extensions/imagesplit/wdg_imagesplit.ui:148
 #, fuzzy, kde-format
 msgid "Autosave on Split"
 msgstr "Преглед на страна"
-
-#. i18n: ectx: property (text), widget (QLabel, lblHorizontalSplitLines)
-#: plugins/extensions/imagesplit/wdg_imagesplit.ui:113
-#, fuzzy, kde-format
-msgid "Horizontal Lines"
-msgstr "Хоризонтално"
-
-#. i18n: ectx: property (text), widget (QLabel, lblVerticalSplitLines)
-#: plugins/extensions/imagesplit/wdg_imagesplit.ui:123
-#, fuzzy, kde-format
-msgid "Vertical Lines"
-msgstr "Внесете име"
 
 #: plugins/extensions/layergroupswitcher/layergroupswitcher.cpp:43
 #, fuzzy, kde-format
