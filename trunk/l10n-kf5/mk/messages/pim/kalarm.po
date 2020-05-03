@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-02 03:23+0200\n"
+"POT-Creation-Date: 2020-05-03 03:33+0200\n"
 "PO-Revision-Date: 2007-02-28 14:12+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1697,7 +1697,8 @@ msgctxt "@info:whatsthis"
 msgid "List of scheduled alarms"
 msgstr "Листа на закажани аларми"
 
-#: find.cpp:112
+#. i18n: ectx: property (title), widget (QGroupBox, alarmTypeGroupBox)
+#: find.cpp:112 resources/singlefileresourceconfigdialog.ui:74
 #, fuzzy, kde-format
 #| msgid "Alarm Type"
 msgctxt "@title:group"
@@ -1939,8 +1940,6 @@ msgid "Import Calendar Files"
 msgstr "Датотеки со календари"
 
 #: functions.cpp:787 functions.cpp:839
-#: resources/dirresourceimportdialog.cpp:264
-#: resources/singlefileresourceconfigdialog.cpp:52
 #, fuzzy, kde-format
 #| msgid "Calendar Files"
 msgctxt "@info"
@@ -6205,24 +6204,18 @@ msgid ""
 msgstr ""
 
 #: resources/akonadiresourcemigrator.cpp:269
-#: resources/fileresourcemigrator.cpp:448
-#: resources/resourcedatamodelbase.cpp:88
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Active Alarms"
 msgstr "Активирај КАларм"
 
 #: resources/akonadiresourcemigrator.cpp:277
-#: resources/fileresourcemigrator.cpp:450
-#: resources/resourcedatamodelbase.cpp:90
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Archived Alarms"
 msgstr "Активирај КАларм"
 
 #: resources/akonadiresourcemigrator.cpp:285
-#: resources/fileresourcemigrator.cpp:452
-#: resources/resourcedatamodelbase.cpp:92
 #, fuzzy, kde-format
 #| msgid "Alarm Templates"
 msgctxt "@info"
@@ -6230,7 +6223,6 @@ msgid "Alarm Templates"
 msgstr "Обрасци за аларми"
 
 #: resources/akonadiresourcemigrator.cpp:323
-#: resources/fileresourcemigrator.cpp:472
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Cannot open audio file:\n"
@@ -6255,7 +6247,6 @@ msgstr ""
 "%1"
 
 #: resources/akonadiresourcemigrator.cpp:327
-#: resources/fileresourcemigrator.cpp:473
 #, fuzzy, kde-format
 #| msgid "Action"
 msgctxt "@info File path or URL"
@@ -6263,7 +6254,6 @@ msgid "Location: %1"
 msgstr "Дејство"
 
 #: resources/akonadiresourcemigrator.cpp:328
-#: resources/fileresourcemigrator.cpp:474
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "%1\n"
@@ -6310,6 +6300,7 @@ msgstr ""
 
 #: resources/calendarupdater.cpp:97
 #, kde-kuit-format
+msgctxt "@info"
 msgid ""
 "Calendar <resource>%1</resource> is in an old format (<application>KAlarm</"
 "application> version %2), and will be read-only unless you choose to update "
@@ -6318,6 +6309,7 @@ msgstr ""
 
 #: resources/calendarupdater.cpp:100
 #, kde-kuit-format
+msgctxt "@info"
 msgid ""
 "Some or all of the alarms in calendar <resource>%1</resource> are in an old "
 "<application>KAlarm</application> format, and will be read-only unless you "
@@ -6335,47 +6327,64 @@ msgid ""
 msgstr ""
 
 #: resources/dirresourceimportdialog.cpp:47
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Calendar Files"
+msgctxt "@title:window"
 msgid "Import Directory Resource"
-msgstr ""
+msgstr "Датотеки со календари"
 
 #: resources/dirresourceimportdialog.cpp:52
 #, fuzzy, kde-format
 #| msgid "Calendar Files"
+msgctxt "@title:tab"
 msgid "Import Calendar Directory Resource"
 msgstr "Датотеки со календари"
 
 #: resources/dirresourceimportdialog.cpp:59
 #, fuzzy, kde-format
+msgctxt "@title:tab"
 msgid "Import Active Alarms"
 msgstr "Активирај КАларм"
 
 #: resources/dirresourceimportdialog.cpp:68
 #, fuzzy, kde-format
+msgctxt "@title:tab"
 msgid "Import Archived Alarms"
 msgstr "Активирај КАларм"
 
 #: resources/dirresourceimportdialog.cpp:77
 #, fuzzy, kde-format
 #| msgid "Alarm Templates"
+msgctxt "@title:tab"
 msgid "Import Alarm Templates"
 msgstr "Обрасци за аларми"
 
 #: resources/dirresourceimportdialog.cpp:204
 #, fuzzy, kde-format
+msgctxt "@item:intext"
 msgid "Active alarms"
 msgstr "Активирај КАларм"
 
 #: resources/dirresourceimportdialog.cpp:206
 #, fuzzy, kde-format
+msgctxt "@item:intext"
 msgid "Archived alarms"
 msgstr "Активирај КАларм"
 
 #: resources/dirresourceimportdialog.cpp:208
 #, fuzzy, kde-format
 #| msgid "Alarm Templates"
+msgctxt "@item:intext"
 msgid "Alarm templates"
 msgstr "Обрасци за аларми"
+
+#: resources/dirresourceimportdialog.cpp:264
+#: resources/singlefileresourceconfigdialog.cpp:52
+#, fuzzy, kde-format
+#| msgid "Calendar Files"
+msgctxt "@item:inlistbox"
+msgid "Calendar Files"
+msgstr "Датотеки со календари"
 
 #: resources/dirresourceimportdialog.cpp:410
 #: resources/singlefileresourceconfigdialog.cpp:222
@@ -6393,7 +6402,6 @@ msgstr ""
 
 #: resources/dirresourceimportdialog.cpp:424
 #: resources/dirresourceimportdialog.cpp:475
-#: resources/dirresourceimportdialog.cpp:483
 #, kde-format
 msgctxt "@info:status"
 msgid "Error! Cannot create file (directory does not exist)."
@@ -6401,15 +6409,27 @@ msgstr ""
 
 #: resources/dirresourceimportdialog.cpp:429
 #: resources/dirresourceimportdialog.cpp:477
-#: resources/dirresourceimportdialog.cpp:485
 #, kde-format
 msgctxt "@info:status"
+msgid "Error! Cannot create file (directory is not writable)."
+msgstr ""
+
+#: resources/dirresourceimportdialog.cpp:483
+#, kde-format
+msgctxt "@info"
+msgid "Error! Cannot create file (directory does not exist)."
+msgstr ""
+
+#: resources/dirresourceimportdialog.cpp:485
+#, kde-format
+msgctxt "@info"
 msgid "Error! Cannot create file (directory is not writable)."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, warning1)
 #: resources/dirresourceimportdialog_intro.ui:12
 #, kde-format
+msgctxt "@info"
 msgid ""
 "KAlarm no longer supports calendar directory resources. In order to continue "
 "using the contents of the directory resource below, you must import it into "
@@ -6419,6 +6439,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, warning2)
 #: resources/dirresourceimportdialog_intro.ui:22
 #, kde-format
+msgctxt "@info"
 msgid ""
 "KAlarm no longer supports calendar directory resources. In order to continue "
 "using the contents of the directory resource below, you must import each of "
@@ -6431,6 +6452,7 @@ msgstr ""
 #: resources/dirresourceimportdialog_type.ui:95
 #, fuzzy, kde-format
 #| msgid "Display Alarms"
+msgctxt "@label:textbox"
 msgid "Display name:"
 msgstr "Приказ на аларми"
 
@@ -6438,6 +6460,7 @@ msgstr "Приказ на аларми"
 #: resources/dirresourceimportdialog_intro.ui:43
 #, fuzzy, kde-format
 #| msgid "Calendar Files"
+msgctxt "@label:textbox"
 msgid "Calendar directory:"
 msgstr "Датотеки со календари"
 
@@ -6445,12 +6468,14 @@ msgstr "Датотеки со календари"
 #: resources/dirresourceimportdialog_intro.ui:57
 #, fuzzy, kde-format
 #| msgid "Alarm Type"
+msgctxt "@label:textbox"
 msgid "Alarm types:"
 msgstr "Тип на аларм"
 
 #. i18n: ectx: property (text), widget (QLabel, note)
 #: resources/dirresourceimportdialog_intro.ui:74
 #, kde-format
+msgctxt "@info"
 msgid ""
 "If you prefer, you can import this calendar directory resource later, by "
 "using the Import Alarms menu option to import the calendar files contained "
@@ -6461,12 +6486,14 @@ msgstr ""
 #: resources/dirresourceimportdialog_type.ui:9
 #, fuzzy, kde-format
 #| msgid "Failed to send email"
+msgctxt "@option:radio"
 msgid "Import into existing calendar file resource"
 msgstr "Не успеав да испратам е-пошта"
 
 #. i18n: ectx: property (whatsThis), widget (QComboBox, mergeResource)
 #: resources/dirresourceimportdialog_type.ui:22
 #, kde-format
+msgctxt "@info:whatsthis"
 msgid "Select the resource to import the directory resource's alarms into."
 msgstr ""
 
@@ -6474,6 +6501,7 @@ msgstr ""
 #: resources/dirresourceimportdialog_type.ui:45
 #, fuzzy, kde-format
 #| msgid "Failed to send email"
+msgctxt "@option:radio"
 msgid "Import into new calendar file resource"
 msgstr "Не успеав да испратам е-пошта"
 
@@ -6481,12 +6509,14 @@ msgstr "Не успеав да испратам е-пошта"
 #: resources/dirresourceimportdialog_type.ui:60
 #: resources/singlefileresourceconfigdialog.ui:25
 #, fuzzy, kde-format
+msgctxt "@label:textbox"
 msgid "Filename:"
 msgstr "Датот&ека"
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, pathRequester)
 #: resources/dirresourceimportdialog_type.ui:70
 #, kde-format
+msgctxt "@info:tooltip"
 msgid ""
 "Select the file to contain this resource. The file must not already exist."
 msgstr ""
@@ -6494,6 +6524,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, pathRequester)
 #: resources/dirresourceimportdialog_type.ui:75
 #, kde-format
+msgctxt "@info:whatsthis"
 msgid ""
 "Select the file to contain this resource.\n"
 "The file must not already exist.\n"
@@ -6501,59 +6532,72 @@ msgid ""
 "changes will not work."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, statusLabel)
-#: resources/dirresourceimportdialog_type.ui:88
-#: resources/singlefileresourceconfigdialog.ui:49
-#, kde-format
-msgid "Status:"
-msgstr ""
-
 #. i18n: ectx: property (toolTip), widget (KLineEdit, nameText)
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, nameText)
-#. i18n: ectx: property (html), widget (QTextEdit, nameDescription)
 #: resources/dirresourceimportdialog_type.ui:105
-#: resources/dirresourceimportdialog_type.ui:108
-#: resources/singlefileresourceconfigdialog.ui:218
 #, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Enter the name used to identify this resource in displays."
+msgstr "Внесете го името или адресата на звучната датотека за емитување"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, nameText)
+#: resources/dirresourceimportdialog_type.ui:108
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
 msgid "Enter the name used to identify this resource in displays."
 msgstr "Внесете го името или адресата на звучната датотека за емитување"
 
 #. i18n: ectx: property (text), widget (QRadioButton, noRadio)
 #: resources/dirresourceimportdialog_type.ui:133
 #, fuzzy, kde-format
+msgctxt "@option:radio"
 msgid "Do not import"
 msgstr "&Не повторувај"
 
-#: resources/fileresource.cpp:36
+#: resources/fileresource.cpp:308 resources/fileresource.cpp:425
 #, fuzzy, kde-format
-#| msgid ""
-#| "Cannot upload calendar to\n"
-#| "'%1'"
-msgid "Error loading calendar '%1'."
-msgstr ""
-"Не можам да го подигнам календарот на\n"
-"„%1“"
-
-#: resources/fileresource.cpp:37
-#, fuzzy, kde-format
-#| msgid "Error saving alarm"
-msgid "Error saving calendar '%1'."
-msgstr "Грешка при зачувувањето на алармот"
-
-#: resources/fileresource.cpp:313 resources/fileresource.cpp:430
-#, fuzzy, kde-format
+msgctxt "@info"
 msgid "Resource is not configured."
 msgstr "Конфигурација на аларм"
 
-#: resources/fileresource.cpp:437
+#: resources/fileresource.cpp:337 resources/fileresource.cpp:352
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "Cannot open audio file:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Error loading calendar <resource>%1</resource>."
+msgstr ""
+"Не можам да ја отворам аудиодатотеката:\n"
+"%1"
+
+#: resources/fileresource.cpp:411 resources/fileresource.cpp:442
+#: resources/fileresource.cpp:452
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "Cannot open audio file:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Error saving calendar <resource>%1</resource>."
+msgstr ""
+"Не можам да ја отворам аудиодатотеката:\n"
+"%1"
+
+#: resources/fileresource.cpp:432
 #, fuzzy, kde-format
+msgctxt "@info"
 msgid "Resource is read-only."
 msgstr "Конфигурација на аларм"
 
-#: resources/fileresource.cpp:442
-#, kde-format
-msgid "Calendar file is in wrong format: '%1'."
+#: resources/fileresource.cpp:437
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "Invalid email attachment:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Calendar file is in wrong format: <filename>%1</filename>."
 msgstr ""
+"Невалиден прилог на е-пошта:\n"
+"%1"
 
 #: resources/fileresourcecreator.cpp:66
 #, fuzzy, kde-format
@@ -6564,31 +6608,84 @@ msgstr "Конфигурација на аларм"
 
 #: resources/fileresourcecreator.cpp:67
 #, kde-format
-msgctxt "@info"
+msgctxt "@label:listbox"
 msgid "Select storage type of new calendar:"
 msgstr ""
 
 #: resources/fileresourcecreator.cpp:149
 #, kde-kuit-format
 msgctxt "@info"
-msgid "Error!  The file is already used by an existing resource."
+msgid ""
+"Error!  The file <filename>%1</filename> is already used by an existing "
+"resource."
 msgstr ""
+
+#: resources/fileresourcemigrator.cpp:448
+#, fuzzy, kde-format
+msgctxt "@info/plain Name of a calendar"
+msgid "Active Alarms"
+msgstr "Активирај КАларм"
+
+#: resources/fileresourcemigrator.cpp:450
+#, fuzzy, kde-format
+msgctxt "@info/plain Name of a calendar"
+msgid "Archived Alarms"
+msgstr "Активирај КАларм"
+
+#: resources/fileresourcemigrator.cpp:452
+#, fuzzy, kde-format
+#| msgid "Alarm Templates"
+msgctxt "@info/plain Name of a calendar"
+msgid "Alarm Templates"
+msgstr "Обрасци за аларми"
+
+#: resources/fileresourcemigrator.cpp:472
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "Cannot open audio file:\n"
+#| "%1"
+msgctxt "@info"
+msgid ""
+"<para>Failed to create default calendar <resource>%1</resource></"
+"para><para>Location: <filename>%2</filename></para>"
+msgstr ""
+"Не можам да ја отворам аудиодатотеката:\n"
+"%1"
+
+#: resources/resourcedatamodelbase.cpp:88
+#, fuzzy, kde-format
+msgctxt "@item:intext"
+msgid "Active Alarms"
+msgstr "Активирај КАларм"
+
+#: resources/resourcedatamodelbase.cpp:90
+#, fuzzy, kde-format
+msgctxt "@item:intext"
+msgid "Archived Alarms"
+msgstr "Активирај КАларм"
+
+#: resources/resourcedatamodelbase.cpp:92
+#, fuzzy, kde-format
+#| msgid "Alarm Templates"
+msgctxt "@item:intext"
+msgid "Alarm Templates"
+msgstr "Обрасци за аларми"
 
 #: resources/resourcedatamodelbase.cpp:108
 #, fuzzy, kde-format
-msgctxt "@info"
+msgctxt "@item:intext Calendar status"
 msgid "Read-only"
 msgstr "само за читање"
 
 #: resources/resourcedatamodelbase.cpp:111
 #, kde-format
-msgctxt "@info"
+msgctxt "@item:intext Calendar status"
 msgid "Read-only (old format)"
 msgstr ""
 
 #: resources/resourcedatamodelbase.cpp:114
 #, kde-format
-msgctxt "@info"
+msgctxt "@item:intext Calendar status"
 msgid "Read-only (other format)"
 msgstr ""
 
@@ -6671,9 +6768,9 @@ msgctxt "@info:tooltip"
 msgid "Pre- and post-alarm action execution failed"
 msgstr ""
 
-#: resources/resourcedatamodelbase.cpp:502 resourceselector.cpp:528
+#: resources/resourcedatamodelbase.cpp:502
 #, fuzzy, kde-format
-msgctxt "@info"
+msgctxt "@item:intext Calendar status"
 msgid "Disabled"
 msgstr "О&невозможи"
 
@@ -6814,6 +6911,7 @@ msgstr "Датотеки со календари"
 
 #: resources/resources.cpp:481
 #, kde-kuit-format
+msgctxt "@info"
 msgid ""
 "The calendar <resource>%1</resource> has been made read-only. This was the "
 "default calendar for active alarms."
@@ -6821,6 +6919,7 @@ msgstr ""
 
 #: resources/resources.cpp:486
 #, kde-kuit-format
+msgctxt "@info"
 msgid ""
 "The calendar <resource>%1</resource> has been made read-only. This was the "
 "default calendar for archived alarms."
@@ -6828,6 +6927,7 @@ msgstr ""
 
 #: resources/resources.cpp:491
 #, kde-kuit-format
+msgctxt "@info"
 msgid ""
 "The calendar <resource>%1</resource> has been made read-only. This was the "
 "default calendar for alarm templates."
@@ -6854,99 +6954,122 @@ msgstr ""
 "Дали навистина сакате да ги зачувате Вашите промени?"
 
 #: resources/resourceselectdialog.cpp:48
-#, fuzzy, kde-format
+#, kde-kuit-format
 msgctxt "@info A prompt for user to enter what to search for"
-msgid "Search"
-msgstr "&1 март"
+msgid "<placeholder>Search</placeholder>"
+msgstr ""
 
 #: resources/resourcetype.cpp:337
 #, fuzzy, kde-format
 #| msgid "Calendar Files"
-msgctxt "@info"
+msgctxt "@item:inlistbox"
 msgid "KAlarm Calendar File"
 msgstr "Датотеки со календари"
 
 #: resources/resourcetype.cpp:337
 #, fuzzy, kde-format
 #| msgid "Calendar Files"
-msgctxt "@info"
+msgctxt "@item:inlistbox"
 msgid "KAlarm Calendar Directory"
 msgstr "Датотеки со календари"
 
 #: resources/resourcetype.cpp:338
 #, fuzzy, kde-format
-msgctxt "@info"
+msgctxt "@item:intext What a resource is stored in"
 msgid "File"
 msgstr "Датот&ека"
 
 #: resources/resourcetype.cpp:339
 #, kde-format
-msgctxt "@info"
+msgctxt "@item:intext What a resource is stored in"
 msgid "URL"
 msgstr ""
 
 #: resources/resourcetype.cpp:340
 #, fuzzy, kde-format
 #| msgid "Display Alarms"
-msgctxt "@info Directory in filesystem"
+msgctxt "@item:intext What a resource is stored in (directory in filesystem)"
 msgid "Directory"
 msgstr "Приказ на аларми"
 
-#: resources/singlefileresource.cpp:56
-#, fuzzy, kde-format
-#| msgid "Calendar Files"
-msgid "Calendar '%1' has been reloaded."
-msgstr "Датотеки со календари"
-
-#: resources/singlefileresource.cpp:191 resources/singlefileresource.cpp:347
+#: resources/singlefileresource.cpp:190 resources/singlefileresource.cpp:346
 #, kde-format
+msgctxt "@info"
 msgid "A previous load is still in progress."
 msgstr ""
 
-#: resources/singlefileresource.cpp:197 resources/singlefileresource.cpp:353
+#: resources/singlefileresource.cpp:196 resources/singlefileresource.cpp:352
 #, kde-format
+msgctxt "@info"
 msgid "A previous save is still in progress."
 msgstr ""
 
-#: resources/singlefileresource.cpp:246
-#, fuzzy, kde-format
-#| msgid "Could not load calendar '%1'."
-msgid "Could not create calendar file '%1'."
-msgstr "Не можев да го вчитам календарот „%1“."
+#: resources/singlefileresource.cpp:245
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "Cannot open audio file:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Could not create calendar file <filename>%1</filename>."
+msgstr ""
+"Не можам да ја отворам аудиодатотеката:\n"
+"%1"
 
-#: resources/singlefileresource.cpp:584
-#, fuzzy, kde-format
-#| msgid "Could not load calendar '%1'."
-msgid "Could not load file '%1'."
-msgstr "Не можев да го вчитам календарот „%1“."
+#: resources/singlefileresource.cpp:583
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "Cannot open audio file:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Could not load file <filename>%1</filename>."
+msgstr ""
+"Не можам да ја отворам аудиодатотеката:\n"
+"%1"
 
-#: resources/singlefileresource.cpp:616
+#: resources/singlefileresource.cpp:615
 #, fuzzy, kde-format
 #| msgid "Calendar Files"
+msgctxt "@info"
 msgid "Calendar not open."
 msgstr "Датотеки со календари"
 
-#: resources/singlefileresource.cpp:629
-#, fuzzy, kde-format
-#| msgid "Could not load calendar '%1'."
-msgid "Could not save file '%1'."
-msgstr "Не можев да го вчитам календарот „%1“."
+#: resources/singlefileresource.cpp:628
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "Cannot open audio file:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Could not save file <filename>%1</filename>."
+msgstr ""
+"Не можам да ја отворам аудиодатотеката:\n"
+"%1"
 
-#: resources/singlefileresource.cpp:720
-#, fuzzy, kde-format
-#| msgid "Could not load calendar '%1'."
-msgid "Could not load file '%1'. (%2)"
-msgstr "Не можев да го вчитам календарот „%1“."
+#: resources/singlefileresource.cpp:719
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "Cannot open audio file:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Could not load file <filename>%1</filename>. (%2)"
+msgstr ""
+"Не можам да ја отворам аудиодатотеката:\n"
+"%1"
 
-#: resources/singlefileresource.cpp:760
-#, fuzzy, kde-format
-#| msgid "Could not load calendar '%1'."
-msgid "Could not save file '%1'. (%2)"
-msgstr "Не можев да го вчитам календарот „%1“."
+#: resources/singlefileresource.cpp:759
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "Cannot open audio file:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Could not save file <filename>%1</filename>. (%2)"
+msgstr ""
+"Не можам да ја отворам аудиодатотеката:\n"
+"%1"
 
 #: resources/singlefileresourceconfigdialog.cpp:45
 #, fuzzy, kde-format
 #| msgid "Calendar Files"
+msgctxt "@title:window"
 msgid "Configure Calendar"
 msgstr "Датотеки со календари"
 
@@ -6954,6 +7077,7 @@ msgstr "Датотеки со календари"
 #: resources/singlefileresourceconfigdialog.ui:17
 #, fuzzy, kde-format
 #| msgid "Calendar Files"
+msgctxt "@title:group"
 msgid "Calendar File"
 msgstr "Датотеки со календари"
 
@@ -6967,24 +7091,17 @@ msgid ""
 "in this case."
 msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, alarmTypeGroupBox)
-#: resources/singlefileresourceconfigdialog.ui:74
-#, fuzzy, kde-format
-#| msgid "Alarm Type"
-msgid "Alarm Type"
-msgstr "Тип на аларм"
-
 #. i18n: ectx: property (text), widget (QRadioButton, activeRadio)
 #: resources/singlefileresourceconfigdialog.ui:82
 #, fuzzy, kde-format
+msgctxt "@option:radio"
 msgid "Acti&ve Alarms"
 msgstr "Активирај КАларм"
 
 #. i18n: ectx: property (text), widget (QRadioButton, archivedRadio)
-#. i18n: ectx: property (text), widget (QLineEdit, archivedAlarmsText)
 #: resources/singlefileresourceconfigdialog.ui:95
-#: resources/singlefileresourceconfigdialog.ui:164
 #, fuzzy, kde-format
+msgctxt "@option:radio"
 msgid "Archived Alarms"
 msgstr "Активирај КАларм"
 
@@ -6992,6 +7109,7 @@ msgstr "Активирај КАларм"
 #: resources/singlefileresourceconfigdialog.ui:108
 #, fuzzy, kde-format
 #| msgid "Alarm Templates"
+msgctxt "@option:radio"
 msgid "Alarm &Templates"
 msgstr "Обрасци за аларми"
 
@@ -7005,19 +7123,29 @@ msgstr ""
 #: resources/singlefileresourceconfigdialog.ui:138
 #, fuzzy, kde-format
 #| msgid "Alarm Type"
+msgctxt "@label:textbox"
 msgid "Alarm type:"
 msgstr "Тип на аларм"
 
 #. i18n: ectx: property (text), widget (QLineEdit, activeAlarmsText)
 #: resources/singlefileresourceconfigdialog.ui:151
 #, fuzzy, kde-format
+msgctxt "@item"
 msgid "Active Alarms"
+msgstr "Активирај КАларм"
+
+#. i18n: ectx: property (text), widget (QLineEdit, archivedAlarmsText)
+#: resources/singlefileresourceconfigdialog.ui:164
+#, fuzzy, kde-format
+msgctxt "@item"
+msgid "Archived Alarms"
 msgstr "Активирај КАларм"
 
 #. i18n: ectx: property (text), widget (QLineEdit, templateAlarmsText)
 #: resources/singlefileresourceconfigdialog.ui:177
 #, fuzzy, kde-format
 #| msgid "Alarm Templates"
+msgctxt "@item"
 msgid "Alarm Templates"
 msgstr "Обрасци за аларми"
 
@@ -7025,24 +7153,34 @@ msgstr "Обрасци за аларми"
 #: resources/singlefileresourceconfigdialog.ui:189
 #, fuzzy, kde-format
 #| msgid "Display Alarms"
+msgctxt "@title:group"
 msgid "Display Name"
 msgstr "Приказ на аларми"
 
 #. i18n: ectx: property (text), widget (QLabel, label_1)
 #: resources/singlefileresourceconfigdialog.ui:197
 #, fuzzy, kde-format
+msgctxt "@label:textbox"
 msgid "&Name:"
 msgstr "Име"
+
+#. i18n: ectx: property (html), widget (QTextEdit, nameDescription)
+#: resources/singlefileresourceconfigdialog.ui:218
+#, fuzzy, kde-format
+msgid "Enter the name used to identify this resource in displays."
+msgstr "Внесете го името или адресата на звучната датотека за емитување"
 
 #. i18n: ectx: property (title), widget (QGroupBox, readOnlyGroupBox)
 #: resources/singlefileresourceconfigdialog.ui:228
 #, kde-format
+msgctxt "@title:group"
 msgid "Access Rights"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, readOnlyCheckbox)
 #: resources/singlefileresourceconfigdialog.ui:234
 #, fuzzy, kde-format
+msgctxt "@option:check"
 msgid "Read only"
 msgstr "само за читање"
 
@@ -7305,6 +7443,12 @@ msgstr ""
 msgctxt "@info"
 msgid "Enabled"
 msgstr "Овозможи"
+
+#: resourceselector.cpp:528
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "Disabled"
+msgstr "О&невозможи"
 
 #: resourceselector.cpp:530
 #, kde-format
@@ -8073,6 +8217,65 @@ msgstr ""
 
 #, fuzzy
 #~| msgid ""
+#~| "Cannot upload calendar to\n"
+#~| "'%1'"
+#~ msgid "Error loading calendar '%1'."
+#~ msgstr ""
+#~ "Не можам да го подигнам календарот на\n"
+#~ "„%1“"
+
+#, fuzzy
+#~| msgid "Error saving alarm"
+#~ msgid "Error saving calendar '%1'."
+#~ msgstr "Грешка при зачувувањето на алармот"
+
+#, fuzzy
+#~ msgctxt "@info A prompt for user to enter what to search for"
+#~ msgid "Search"
+#~ msgstr "&1 март"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid "File"
+#~ msgstr "Датот&ека"
+
+#, fuzzy
+#~| msgid "Calendar Files"
+#~ msgid "Calendar '%1' has been reloaded."
+#~ msgstr "Датотеки со календари"
+
+#, fuzzy
+#~| msgid "Could not load calendar '%1'."
+#~ msgid "Could not create calendar file '%1'."
+#~ msgstr "Не можев да го вчитам календарот „%1“."
+
+#, fuzzy
+#~| msgid "Could not load calendar '%1'."
+#~ msgid "Could not load file '%1'."
+#~ msgstr "Не можев да го вчитам календарот „%1“."
+
+#, fuzzy
+#~| msgid "Could not load calendar '%1'."
+#~ msgid "Could not save file '%1'."
+#~ msgstr "Не можев да го вчитам календарот „%1“."
+
+#, fuzzy
+#~| msgid "Could not load calendar '%1'."
+#~ msgid "Could not load file '%1'. (%2)"
+#~ msgstr "Не можев да го вчитам календарот „%1“."
+
+#, fuzzy
+#~| msgid "Could not load calendar '%1'."
+#~ msgid "Could not save file '%1'. (%2)"
+#~ msgstr "Не можев да го вчитам календарот „%1“."
+
+#, fuzzy
+#~| msgid "Alarm Type"
+#~ msgid "Alarm Type"
+#~ msgstr "Тип на аларм"
+
+#, fuzzy
+#~| msgid ""
 #~| "Cannot open audio file:\n"
 #~| "%1"
 #~ msgctxt "@info"
@@ -8109,16 +8312,6 @@ msgstr ""
 #~ "%1\n"
 #~ "(%2)"
 #~ msgstr "%1: %2"
-
-#, fuzzy
-#~| msgid ""
-#~| "Cannot open audio file:\n"
-#~| "%1"
-#~ msgctxt "@info"
-#~ msgid "Failed to remove calendar <resource>%1</resource>."
-#~ msgstr ""
-#~ "Не можам да ја отворам аудиодатотеката:\n"
-#~ "%1"
 
 #, fuzzy
 #~| msgid "Show &Alarm Times"
@@ -8264,16 +8457,6 @@ msgstr ""
 #~ msgctxt "@info/plain"
 #~ msgid "Disabled (wrong alarm type)"
 #~ msgstr "Боја на онево&зможен аларм:"
-
-#, fuzzy
-#~| msgid ""
-#~| "Invalid email attachment:\n"
-#~| "%1"
-#~ msgctxt "@info"
-#~ msgid "%1: invalid calendar file name: <filename>%2</filename>"
-#~ msgstr ""
-#~ "Невалиден прилог на е-пошта:\n"
-#~ "%1"
 
 #, fuzzy
 #~| msgid "%1: file name not permitted: %2"
