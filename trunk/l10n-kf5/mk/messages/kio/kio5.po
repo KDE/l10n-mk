@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-07-25 02:04+0200\n"
+"POT-Creation-Date: 2020-07-26 02:02+0200\n"
 "PO-Revision-Date: 2009-06-22 11:48+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -2382,7 +2382,7 @@ msgid "Undocumented Error"
 msgstr "Недокументирана грешка"
 
 #: core/kcoredirlister.cpp:396 gui/openurljob.cpp:152 widgets/krun.cpp:419
-#: widgets/paste.cpp:278 widgets/renamedialog.cpp:487
+#: widgets/paste.cpp:278 widgets/renamedialog.cpp:595
 #, kde-format
 msgid ""
 "Malformed URL\n"
@@ -9556,24 +9556,24 @@ msgstr "Формат на податоци:"
 msgid "Filename for dropped contents:"
 msgstr "Датотека за содржина на таблата за исечоци:"
 
-#: widgets/renamedialog.cpp:76
+#: widgets/renamedialog.cpp:76 widgets/renamedialog.cpp:392
 #, fuzzy, kde-format
 #| msgid "Drive: %1"
 msgid "Date: %1"
 msgstr "Уред: %1"
 
-#: widgets/renamedialog.cpp:82
+#: widgets/renamedialog.cpp:82 widgets/renamedialog.cpp:410
 #, fuzzy, kde-format
 #| msgid "Size:"
 msgid "Size: %1"
 msgstr "Големина:"
 
-#: widgets/renamedialog.cpp:171
+#: widgets/renamedialog.cpp:245
 #, kde-format
 msgid "Appl&y to All"
 msgstr ""
 
-#: widgets/renamedialog.cpp:172
+#: widgets/renamedialog.cpp:246
 #, fuzzy, kde-format
 #| msgid ""
 #| "Files and folders will be copied into the existing directory, alongside "
@@ -9590,46 +9590,46 @@ msgstr ""
 "нејзините содржини.\n"
 "Ако има конфликт со постојна датотека во папката, ќе бидете прашани."
 
-#: widgets/renamedialog.cpp:173
+#: widgets/renamedialog.cpp:247
 #, kde-format
 msgid ""
 "When this is checked the button pressed will be applied to all subsequent "
 "conflicts for the remainder of the current job."
 msgstr ""
 
-#: widgets/renamedialog.cpp:178
+#: widgets/renamedialog.cpp:252
 #, kde-format
 msgid "&Rename"
 msgstr "П&реименувај"
 
-#: widgets/renamedialog.cpp:180
+#: widgets/renamedialog.cpp:254
 #, kde-format
 msgid "Suggest New &Name"
 msgstr "Предложи &ново име"
 
-#: widgets/renamedialog.cpp:186
+#: widgets/renamedialog.cpp:260
 #, kde-format
 msgid "&Skip"
 msgstr "Пре&скокни"
 
-#: widgets/renamedialog.cpp:187
+#: widgets/renamedialog.cpp:261
 #, kde-format
 msgid "Do not copy or move this folder, skip to the next item instead"
 msgstr "Не ја копира или преместува папката, туку скока на наредниот елемент"
 
-#: widgets/renamedialog.cpp:188
+#: widgets/renamedialog.cpp:262
 #, kde-format
 msgid "Do not copy or move this file, skip to the next item instead"
 msgstr ""
 "Не ја копира или преместува датотеката, туку скока на наредниот елемент"
 
-#: widgets/renamedialog.cpp:197
+#: widgets/renamedialog.cpp:271
 #, kde-format
 msgctxt "Write files into an existing folder"
 msgid "&Write Into"
 msgstr "&Запиши во"
 
-#: widgets/renamedialog.cpp:199
+#: widgets/renamedialog.cpp:273
 #, kde-format
 msgid ""
 "Files and folders will be copied into the existing directory, alongside its "
@@ -9641,12 +9641,12 @@ msgstr ""
 "нејзините содржини.\n"
 "Ако има конфликт со постојна датотека во папката, ќе бидете прашани."
 
-#: widgets/renamedialog.cpp:205
+#: widgets/renamedialog.cpp:279
 #, kde-format
 msgid "&Resume"
 msgstr "П&родолжи"
 
-#: widgets/renamedialog.cpp:214
+#: widgets/renamedialog.cpp:288
 #, kde-format
 msgid ""
 "This action would overwrite '%1' with itself.\n"
@@ -9655,12 +9655,12 @@ msgstr ""
 "Со ова дејство, „%1“ ќе се пребрише со себеси.\n"
 "Ве молиме внесете ново име на датотека:"
 
-#: widgets/renamedialog.cpp:219
+#: widgets/renamedialog.cpp:293
 #, kde-format
 msgid "C&ontinue"
 msgstr "Пр&одолжи"
 
-#: widgets/renamedialog.cpp:279
+#: widgets/renamedialog.cpp:353
 #, fuzzy, kde-format
 #| msgid ""
 #| "This action would overwrite '%1' with itself.\n"
@@ -9670,53 +9670,78 @@ msgstr ""
 "Со ова дејство, „%1“ ќе се пребрише со себеси.\n"
 "Ве молиме внесете ново име на датотека:"
 
-#: widgets/renamedialog.cpp:285
+#: widgets/renamedialog.cpp:359
 #, fuzzy, kde-format
 #| msgctxt "The source of a file operation"
 #| msgid "Source"
 msgid "Source"
 msgstr "Извор"
 
-#: widgets/renamedialog.cpp:287
+#: widgets/renamedialog.cpp:361
 #, fuzzy, kde-format
 #| msgctxt "The destination of a file operation"
 #| msgid "Destination"
 msgid "Destination"
 msgstr "Одредиште"
 
-#: widgets/renamedialog.cpp:314
+#: widgets/renamedialog.cpp:383
 #, kde-format
-msgid "The destination is more recent."
+msgid "Differences"
 msgstr ""
 
-#: widgets/renamedialog.cpp:326
+#: widgets/renamedialog.cpp:403
+#, fuzzy, kde-format
+#| msgid "the extension <b>%1</b>"
+msgid "The destination is <b>smaller by %1</b>"
+msgstr "наставката <b>%1</b>"
+
+#: widgets/renamedialog.cpp:406
+#, fuzzy, kde-format
+#| msgid "the extension <b>%1</b>"
+msgid "The destination is <b>bigger by %1</b>"
+msgstr "наставката <b>%1</b>"
+
+#: widgets/renamedialog.cpp:420
 #, fuzzy, kde-format
 #| msgid "The new file name is empty."
-msgid "The source file is bigger."
+msgid "The files are identical."
 msgstr "Новото име на датотеката е празно."
 
-#: widgets/renamedialog.cpp:328
+#: widgets/renamedialog.cpp:421
 #, kde-format
-msgid "The destination file is bigger."
+msgid "The files seem identical."
 msgstr ""
 
-#: widgets/renamedialog.cpp:340
+#: widgets/renamedialog.cpp:422
+#, fuzzy, kde-format
+#| msgid "The new file name is empty."
+msgid "The files are different."
+msgstr "Новото име на датотеката е празно."
+
+#: widgets/renamedialog.cpp:429
+#, kde-format
+msgid ""
+"The files are likely to be identical: they have the same size and their "
+"contents are the same at the beginning, middle and end."
+msgstr ""
+
+#: widgets/renamedialog.cpp:448
 #, kde-format
 msgid "An older item named '%1' already exists."
 msgstr "Веќе постои постара ставка со име „%1“."
 
-#: widgets/renamedialog.cpp:342
+#: widgets/renamedialog.cpp:450
 #, kde-format
 msgid "A similar file named '%1' already exists."
 msgstr "Веќе постои слична датотека со име „%1“."
 
-#: widgets/renamedialog.cpp:344
+#: widgets/renamedialog.cpp:452
 #, fuzzy, kde-format
 #| msgid "An older item named '%1' already exists."
 msgid "A more recent item named '%1' already exists."
 msgstr "Веќе постои постара ставка со име „%1“."
 
-#: widgets/renamedialog.cpp:357
+#: widgets/renamedialog.cpp:465
 #, fuzzy, kde-format
 #| msgid "&Rename"
 msgid "Rename:"
@@ -9895,6 +9920,11 @@ msgstr "Ова ќе ја стартува програмата:"
 #, kde-format
 msgid "If you do not trust this program, click Cancel"
 msgstr "Ако не ѝ верувате на оваа програма, кликнете „Откажи“"
+
+#, fuzzy
+#~| msgid "The new file name is empty."
+#~ msgid "The source file is bigger."
+#~ msgstr "Новото име на датотеката е празно."
 
 #~ msgid ""
 #~ "The chosen filenames do not\n"
