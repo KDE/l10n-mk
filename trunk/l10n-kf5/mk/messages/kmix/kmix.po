@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmix\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-07-16 02:09+0200\n"
+"POT-Creation-Date: 2020-07-27 02:12+0200\n"
 "PO-Revision-Date: 2009-01-01 22:57+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -88,17 +88,17 @@ msgstr ""
 msgid "Load volume profile 4"
 msgstr ""
 
-#: apps/kmix.cpp:241 gui/mdwslider.cpp:165
+#: apps/kmix.cpp:241
 #, kde-format
 msgid "Increase Volume"
 msgstr "Зголеми гласност"
 
-#: apps/kmix.cpp:248 gui/mdwslider.cpp:172
+#: apps/kmix.cpp:248
 #, kde-format
 msgid "Decrease Volume"
 msgstr "Намали гласност"
 
-#: apps/kmix.cpp:253 gui/mdwslider.cpp:114
+#: apps/kmix.cpp:253 gui/mdwslider.cpp:107
 #, kde-format
 msgid "Mute"
 msgstr "Занеми"
@@ -1062,57 +1062,56 @@ msgstr ""
 msgid "No sound devices are installed or are currently available."
 msgstr ""
 
-#: gui/mdwenum.cpp:55
-#, kde-format
-msgid "&Hide"
-msgstr "&Скриј"
-
-#: gui/mdwenum.cpp:58
-#, kde-format
-msgid "C&onfigure Shortcuts..."
-msgstr "К&онфигурирај кратенки..."
-
 #: gui/mdwslider.cpp:101
 #, fuzzy, kde-format
 #| msgid "&Split Channels"
 msgid "Split Channels"
 msgstr "&Раздели ги каналите"
 
-#: gui/mdwslider.cpp:120 gui/mdwslider.cpp:639
+#: gui/mdwslider.cpp:113 gui/mdwslider.cpp:644
 #, kde-format
 msgid "Capture"
 msgstr ""
 
-#: gui/mdwslider.cpp:125
+#: gui/mdwslider.cpp:118
 #, kde-format
 msgid "Use Device"
 msgstr ""
 
-#: gui/mdwslider.cpp:130
-#, fuzzy, kde-format
-#| msgid "C&onfigure Shortcuts..."
-msgid "Channel Shortcuts..."
-msgstr "К&онфигурирај кратенки..."
-
-#: gui/mdwslider.cpp:179
+#: gui/mdwslider.cpp:163
 #, kde-format
-msgid "Toggle Mute"
-msgstr "Промени гласност"
+msgctxt "1=device name, 2=control name"
+msgid "Mute %2 on %1"
+msgstr ""
 
-#: gui/mdwslider.cpp:338
+#: gui/mdwslider.cpp:175
+#, fuzzy, kde-format
+#| msgid "Increase Volume"
+msgctxt "1=device name, 2=control name"
+msgid "Increase volume of %2 on %1"
+msgstr "Зголеми гласност"
+
+#: gui/mdwslider.cpp:183
+#, fuzzy, kde-format
+#| msgid "Decrease Volume"
+msgctxt "1=device name, 2=control name"
+msgid "Decrease volume of %2 on %1"
+msgstr "Намали гласност"
+
+#: gui/mdwslider.cpp:343
 #, kde-format
 msgctxt "%1=channel"
 msgid "Capture/Uncapture %1"
 msgstr ""
 
-#: gui/mdwslider.cpp:339
+#: gui/mdwslider.cpp:344
 #, fuzzy, kde-format
 #| msgid "Mute/Unmute %1"
 msgctxt "%1=channel"
 msgid "Mute/Unmute %1"
 msgstr "Исклучи/пушти %1"
 
-#: gui/mdwslider.cpp:343 gui/mdwslider.cpp:344 gui/mdwslider.cpp:345
+#: gui/mdwslider.cpp:348 gui/mdwslider.cpp:349 gui/mdwslider.cpp:350
 #, kde-format
 msgctxt "%1=device %2=channel"
 msgid ""
@@ -1120,15 +1119,21 @@ msgid ""
 "%2"
 msgstr ""
 
-#: gui/mdwslider.cpp:673
+#: gui/mdwslider.cpp:678
 #, kde-format
 msgid "%1 (capture)"
 msgstr ""
 
-#: gui/mdwslider.cpp:1195
+#: gui/mdwslider.cpp:1180
 #, kde-format
 msgid "Automatic (according to category)"
 msgstr ""
+
+#: gui/mixdevicewidget.cpp:66
+#, fuzzy, kde-format
+#| msgid "C&onfigure Shortcuts..."
+msgid "Channel Shortcuts..."
+msgstr "К&онфигурирај кратенки..."
 
 #: gui/viewbase.cpp:96
 #, fuzzy, kde-format
@@ -1177,6 +1182,15 @@ msgstr ""
 #, kde-format
 msgid "There are no playback devices."
 msgstr ""
+
+#~ msgid "&Hide"
+#~ msgstr "&Скриј"
+
+#~ msgid "C&onfigure Shortcuts..."
+#~ msgstr "К&онфигурирај кратенки..."
+
+#~ msgid "Toggle Mute"
+#~ msgstr "Промени гласност"
 
 #~ msgid "Hardware &Information"
 #~ msgstr "&Информации за хардверот"
