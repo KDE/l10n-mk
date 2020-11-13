@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-24 02:13+0200\n"
+"POT-Creation-Date: 2020-11-13 02:13+0100\n"
 "PO-Revision-Date: 2010-01-27 10:39+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -905,41 +905,23 @@ msgstr "По&мош"
 msgid "About %1"
 msgstr "За %1"
 
-#: kkeysequencewidget.cpp:117
-#, kde-format
-msgid "Shortcut '%1' in Application %2 for action %3\n"
-msgstr "Кратенка „%1“ во апликација %2 за дејство %3\n"
-
-#: kkeysequencewidget.cpp:127
-#, kde-format
-msgctxt ""
-"%1 is the number of conflicts (hidden), %2 is the key sequence of the "
-"shortcut that is problematic"
-msgid "The shortcut '%2' conflicts with the following key combination:\n"
-msgid_plural ""
-"The shortcut '%2' conflicts with the following key combinations:\n"
-msgstr[0] "Кратенката „%2“ е во конфликт со следната комбинација на тастери:\n"
-msgstr[1] "Кратенката „%2“ е во конфликт со следните комбинации на тастери:\n"
-msgstr[2] "Кратенката „%2“ е во конфликт со следните комбинации на тастери:\n"
-
-#: kkeysequencewidget.cpp:133
-#, kde-format
-msgctxt "%1 is the number of shortcuts with which there is a conflict"
-msgid "Conflict with Registered Global Shortcut"
-msgid_plural "Conflict with Registered Global Shortcuts"
-msgstr[0] "Конфликт со регистрирана глобална кратенка"
-msgstr[1] "Конфликт со регистрирани глобални кратенки"
-msgstr[2] "Конфликт со регистрирани глобални кратенки"
-
-#: kkeysequencewidget.cpp:135 kkeysequencewidget.cpp:223
-#: kkeysequencewidget.cpp:614
+#: kkeysequencewidget.cpp:142
 #, fuzzy, kde-format
-#| msgid "Reassign"
-msgctxt "@action:button"
-msgid "Reassign"
-msgstr "Преповрзи"
+#| msgid ""
+#| "Click on the button, then enter the shortcut like you would in the "
+#| "program.\n"
+#| "Example for Ctrl+a: hold the Ctrl key and press a."
+msgctxt "@info:tooltip"
+msgid ""
+"Click on the button, then enter the shortcut like you would in the program.\n"
+"Example for Ctrl+A: hold the Ctrl key and press A."
+msgstr ""
+"Кликнете на копчето, потоа внесете ја кратенката како што би ја активирале "
+"во некоја програма.\n"
+"На пример за „Ctrl+a“: задржете го притиснато копчето „Ctrl“ и притиснете "
+"„a“."
 
-#: kkeysequencewidget.cpp:204
+#: kkeysequencewidget.cpp:166
 #, kde-format
 msgctxt "%1 is the number of conflicts"
 msgid "Shortcut Conflict"
@@ -948,12 +930,12 @@ msgstr[0] "Конфликт на кратенки"
 msgstr[1] "Конфликти на кратенки"
 msgstr[2] "Конфликти на кратенки"
 
-#: kkeysequencewidget.cpp:208
+#: kkeysequencewidget.cpp:170
 #, kde-format
 msgid "Shortcut '%1' for action '%2'\n"
 msgstr "Кратенка „%1“ за дејство „%2“\n"
 
-#: kkeysequencewidget.cpp:213
+#: kkeysequencewidget.cpp:175
 #, kde-format
 msgctxt "%1 is the number of ambigious shortcut clashes (hidden)"
 msgid ""
@@ -977,14 +959,22 @@ msgstr[2] ""
 "Дали сакате да доделите празна кратенка за овие дејства?\n"
 "%3"
 
-#: kkeysequencewidget.cpp:232
+#: kkeysequencewidget.cpp:185 kkeysequencewidget.cpp:288
+#: kkeysequencewidget.cpp:353
+#, fuzzy, kde-format
+#| msgid "Reassign"
+msgctxt "@action:button"
+msgid "Reassign"
+msgstr "Преповрзи"
+
+#: kkeysequencewidget.cpp:190
 #, fuzzy, kde-format
 #| msgid "Shortcut conflict"
 msgctxt "@title:window"
 msgid "Shortcut conflict"
 msgstr "Конфликт на кратенки"
 
-#: kkeysequencewidget.cpp:233
+#: kkeysequencewidget.cpp:191
 #, kde-format
 msgid ""
 "<qt>The '%1' key combination is already used by the <b>%2</b> action."
@@ -993,28 +983,38 @@ msgstr ""
 "<qt>Комбинацијата на копчиња „%1“ е веќе поврзана со акцијата <b>„%2“</b>."
 "<br>Одберете друга комбинација.</qt>"
 
-#: kkeysequencewidget.cpp:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Click on the button, then enter the shortcut like you would in the "
-#| "program.\n"
-#| "Example for Ctrl+a: hold the Ctrl key and press a."
-msgctxt "@info:tooltip"
-msgid ""
-"Click on the button, then enter the shortcut like you would in the program.\n"
-"Example for Ctrl+A: hold the Ctrl key and press A."
-msgstr ""
-"Кликнете на копчето, потоа внесете ја кратенката како што би ја активирале "
-"во некоја програма.\n"
-"На пример за „Ctrl+a“: задржете го притиснато копчето „Ctrl“ и притиснете "
-"„a“."
+#: kkeysequencewidget.cpp:273
+#, kde-format
+msgid "Shortcut '%1' in Application %2 for action %3\n"
+msgstr "Кратенка „%1“ во апликација %2 за дејство %3\n"
 
-#: kkeysequencewidget.cpp:455
+#: kkeysequencewidget.cpp:280
+#, kde-format
+msgctxt ""
+"%1 is the number of conflicts (hidden), %2 is the key sequence of the "
+"shortcut that is problematic"
+msgid "The shortcut '%2' conflicts with the following key combination:\n"
+msgid_plural ""
+"The shortcut '%2' conflicts with the following key combinations:\n"
+msgstr[0] "Кратенката „%2“ е во конфликт со следната комбинација на тастери:\n"
+msgstr[1] "Кратенката „%2“ е во конфликт со следните комбинации на тастери:\n"
+msgstr[2] "Кратенката „%2“ е во конфликт со следните комбинации на тастери:\n"
+
+#: kkeysequencewidget.cpp:286
+#, kde-format
+msgctxt "%1 is the number of shortcuts with which there is a conflict"
+msgid "Conflict with Registered Global Shortcut"
+msgid_plural "Conflict with Registered Global Shortcuts"
+msgstr[0] "Конфликт со регистрирана глобална кратенка"
+msgstr[1] "Конфликт со регистрирани глобални кратенки"
+msgstr[2] "Конфликт со регистрирани глобални кратенки"
+
+#: kkeysequencewidget.cpp:300
 #, kde-format
 msgid "Reserved Shortcut"
 msgstr "Резервирана кратенка"
 
-#: kkeysequencewidget.cpp:456
+#: kkeysequencewidget.cpp:301
 #, kde-format
 msgid ""
 "The F12 key is reserved on Windows, so cannot be used for a global "
@@ -1025,14 +1025,14 @@ msgstr ""
 "глобална кратенка.\n"
 "Молам изберете друга."
 
-#: kkeysequencewidget.cpp:608
+#: kkeysequencewidget.cpp:347
 #, fuzzy, kde-format
 #| msgid "Conflict with Standard Application Shortcut"
 msgctxt "@title:window"
 msgid "Conflict with Standard Application Shortcut"
 msgstr "Конфликт со стандардна кратенка на апликација"
 
-#: kkeysequencewidget.cpp:609
+#: kkeysequencewidget.cpp:348
 #, kde-format
 msgid ""
 "The '%1' key combination is also used for the standard action \"%2\" that "
@@ -1043,29 +1043,17 @@ msgstr ""
 "“%2“ што го користат некои апликации.\n"
 "Дали навистина сакате да ја користите и како глобална кратенка?"
 
-#: kkeysequencewidget.cpp:657
+#: kkeysequencewidget.cpp:392
 #, kde-format
 msgctxt "What the user inputs now will be taken as the new shortcut"
 msgid "Input"
 msgstr "Внес"
 
-#: kkeysequencewidget.cpp:664 kshortcuteditwidget.cpp:52
+#: kkeysequencewidget.cpp:394 kshortcuteditwidget.cpp:52
 #, kde-format
 msgctxt "No shortcut defined"
 msgid "None"
 msgstr "Нема"
-
-#: kkeysequencewidget.cpp:709
-#, kde-format
-msgid "The key you just pressed is not supported by Qt."
-msgstr "Тастерот што го притиснавте не е поддржан од Qt."
-
-#: kkeysequencewidget.cpp:710
-#, fuzzy, kde-format
-#| msgid "Unsupported Key"
-msgctxt "@title:window"
-msgid "Unsupported Key"
-msgstr "Неподдржан тастер"
 
 #: klicensedialog_p.cpp:34
 #, fuzzy, kde-format
@@ -1716,6 +1704,15 @@ msgstr "По&ставувања"
 #, kde-format
 msgid "Main Toolbar"
 msgstr "Главен алатник"
+
+#~ msgid "The key you just pressed is not supported by Qt."
+#~ msgstr "Тастерот што го притиснавте не е поддржан од Qt."
+
+#, fuzzy
+#~| msgid "Unsupported Key"
+#~ msgctxt "@title:window"
+#~ msgid "Unsupported Key"
+#~ msgstr "Неподдржан тастер"
 
 #, fuzzy
 #~| msgid "Switch Application Language"
