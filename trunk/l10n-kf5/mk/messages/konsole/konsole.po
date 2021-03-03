@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-02-24 02:50+0100\n"
+"POT-Creation-Date: 2021-03-03 03:37+0100\n"
 "PO-Revision-Date: 2010-01-29 22:59+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1148,7 +1148,7 @@ msgctxt "@item"
 msgid "Activate Menu"
 msgstr ""
 
-#: MainWindow.cpp:607 MainWindow.cpp:626
+#: MainWindow.cpp:612 MainWindow.cpp:631
 #, fuzzy, kde-format
 #| msgid ""
 #| "You have multiple tabs in this window, are you sure you want to quit?"
@@ -1163,28 +1163,28 @@ msgstr[1] ""
 msgstr[2] ""
 "Имате повеќе ливчиња во овој прозорец. Дали навистина сакате да напуштите?"
 
-#: MainWindow.cpp:613 MainWindow.cpp:632 MainWindow.cpp:650
+#: MainWindow.cpp:618 MainWindow.cpp:637 MainWindow.cpp:655
 #, fuzzy, kde-format
 #| msgid "Confirm Close"
 msgctxt "@title"
 msgid "Confirm Close"
 msgstr "Потврда за затворање"
 
-#: MainWindow.cpp:615 MainWindow.cpp:634 MainWindow.cpp:651
+#: MainWindow.cpp:620 MainWindow.cpp:639 MainWindow.cpp:656
 #, fuzzy, kde-format
 #| msgid "Konsole"
 msgctxt "@action:button"
 msgid "Close &Window"
 msgstr "Конзола"
 
-#: MainWindow.cpp:637 MainWindow.cpp:654
+#: MainWindow.cpp:642 MainWindow.cpp:659
 #, fuzzy, kde-format
 #| msgid "Close Current Tab"
 msgctxt "@action:button"
 msgid "Close Current &Tab"
 msgstr "Затвори го тековното ливче"
 
-#: MainWindow.cpp:647
+#: MainWindow.cpp:652
 #, fuzzy, kde-format
 #| msgid ""
 #| "You have multiple tabs in this window, are you sure you want to quit?"
@@ -1193,33 +1193,33 @@ msgid "There are %1 open terminals in this window. Do you still want to quit?"
 msgstr ""
 "Имате повеќе ливчиња во овој прозорец. Дали навистина сакате да напуштите?"
 
-#: MainWindow.cpp:769
+#: MainWindow.cpp:774
 #, fuzzy, kde-format
 #| msgid "General"
 msgctxt "@title Preferences page name"
 msgid "General"
 msgstr "Општо"
 
-#: MainWindow.cpp:774 Part.cpp:313
+#: MainWindow.cpp:779 Part.cpp:313
 #, fuzzy, kde-format
 #| msgid "New Profile"
 msgctxt "@title Preferences page name"
 msgid "Profiles"
 msgstr "Нов профил"
 
-#: MainWindow.cpp:779
+#: MainWindow.cpp:784
 #, kde-format
 msgctxt "@title Preferences page name"
 msgid "Tab Bar / Splitters"
 msgstr ""
 
-#: MainWindow.cpp:784
+#: MainWindow.cpp:789
 #, kde-format
 msgctxt "@title Preferences page name"
 msgid "Temporary Files"
 msgstr ""
 
-#: MainWindow.cpp:789
+#: MainWindow.cpp:794
 #, kde-format
 msgctxt "@title Preferences page name"
 msgid "Thumbnails"
@@ -1293,13 +1293,21 @@ msgid "Shortcut"
 msgstr "Кратенка"
 
 #: profile/ProfileModel.cpp:82
+#, kde-format
+msgctxt ""
+"@label:textbox added to the name of the Default/fallback profile, to point "
+"out it's read-only/hardcoded"
+msgid " [Read-only]"
+msgstr ""
+
+#: profile/ProfileModel.cpp:86
 #, fuzzy, kde-format
 #| msgid "Set as Default"
-msgctxt "@label:textbox Name of the current default profile"
-msgid " (Default)"
+msgctxt "@label:textbox added to the name of the current default profile"
+msgid " (default)"
 msgstr "Постави како стандарден"
 
-#: profile/ProfileModel.cpp:100
+#: profile/ProfileModel.cpp:111
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Double click to change shortcut"
@@ -2169,7 +2177,7 @@ msgid ""
 "a change to how these are handled.</body></html>"
 msgstr ""
 
-#: settings/ProfileSettings.cpp:142
+#: settings/ProfileSettings.cpp:138
 #, fuzzy, kde-format
 #| msgid "New Profile..."
 msgctxt "@item This will be used as part of the file name"
@@ -2178,8 +2186,9 @@ msgstr "Нов профил..."
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, newProfileButton)
 #: settings/ProfileSettings.ui:39
-#, kde-format
-msgid "Create a new profile based upon the selected profile"
+#, fuzzy, kde-format
+#| msgid "Create a new profile based upon the selected profile"
+msgid "Create a new profile based on the selected profile"
 msgstr "Креира нов профил врз база на избраниот"
 
 #. i18n: ectx: property (text), widget (QPushButton, newProfileButton)
@@ -2191,9 +2200,12 @@ msgstr "Ново..."
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, editProfileButton)
 #: settings/ProfileSettings.ui:52
-#, kde-format
-msgid "Edit the selected profile(s)"
-msgstr "Ги уредува избраните профили"
+#, fuzzy, kde-format
+#| msgid "Set the selected profile as the default for new terminal sessions"
+msgid ""
+"Edit the selected profile (this button is disabled for read-only profiles)"
+msgstr ""
+"Го поставува избраниот профил како стандарден за новите терминалски сесии"
 
 #. i18n: ectx: property (text), widget (QPushButton, editProfileButton)
 #: settings/ProfileSettings.ui:55
@@ -2204,8 +2216,9 @@ msgstr "Уреди..."
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, deleteProfileButton)
 #: settings/ProfileSettings.ui:65
-#, kde-format
-msgid "Delete the selected profile(s)"
+#, fuzzy, kde-format
+#| msgid "Delete the selected profile(s)"
+msgid "Delete the selected profile"
 msgstr "Ги брише избраните профили"
 
 #. i18n: ectx: property (text), widget (QPushButton, deleteProfileButton)
@@ -4393,6 +4406,15 @@ msgid "Close Tab"
 msgstr "За&твори ливче"
 
 #, fuzzy
+#~| msgid "Set as Default"
+#~ msgctxt "@label:textbox Name of the current default profile"
+#~ msgid " (Default)"
+#~ msgstr "Постави како стандарден"
+
+#~ msgid "Edit the selected profile(s)"
+#~ msgstr "Ги уредува избраните профили"
+
+#, fuzzy
 #~| msgid "New Color Scheme"
 #~ msgid "Color from theme"
 #~ msgstr "Нова шема со бои"
@@ -4415,12 +4437,6 @@ msgstr "За&твори ливче"
 #~ "menu"
 #~ msgid "Show profile in menu"
 #~ msgstr "Прикажи во мени"
-
-#, fuzzy
-#~| msgid "Set as Default"
-#~ msgctxt "@item:intable Default list item's name suffix (with separator)"
-#~ msgid " (default)"
-#~ msgstr "Постави како стандарден"
 
 #, fuzzy
 #~| msgid "Tab Bar"
