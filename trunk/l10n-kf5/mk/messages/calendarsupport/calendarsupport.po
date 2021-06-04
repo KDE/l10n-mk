@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-05-31 00:17+0000\n"
+"POT-Creation-Date: 2021-06-04 00:20+0000\n"
 "PO-Revision-Date: 2007-02-28 14:24+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1221,7 +1221,6 @@ msgstr "Прикажи секунди на линијата со момента�
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeConfidential)
 #: printing/calprintdayconfig_base.ui:271
 #: printing/calprintmonthconfig_base.ui:171
-#: printing/calprinttodoconfig_base.ui:259
 #: printing/calprintweekconfig_base.ui:291
 #, fuzzy, kde-format
 #| msgid "Exclude holidays"
@@ -1310,10 +1309,8 @@ msgid "Check this option if you want to see the item descriptions printed."
 msgstr "Прикажи секунди на линијата со моментално време"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeDescription)
-#. i18n: ectx: property (text), widget (QCheckBox, mDescription)
 #: printing/calprintdayconfig_base.ui:326
 #: printing/calprintmonthconfig_base.ui:206
-#: printing/calprinttodoconfig_base.ui:297
 #: printing/calprintweekconfig_base.ui:323
 #, fuzzy, kde-format
 #| msgid "&Description"
@@ -1324,7 +1321,7 @@ msgstr "&Опис"
 #: printing/calprintdayconfig_base.ui:336
 #: printing/calprintincidenceconfig_base.ui:105
 #: printing/calprintmonthconfig_base.ui:258
-#: printing/calprinttodoconfig_base.ui:410
+#: printing/calprinttodoconfig_base.ui:453
 #: printing/calprintweekconfig_base.ui:356
 #, fuzzy, kde-format
 #| msgid "General"
@@ -1378,7 +1375,7 @@ msgstr "П&рикажи време како:"
 #: printing/calprintdayconfig_base.ui:365
 #: printing/calprintincidenceconfig_base.ui:137
 #: printing/calprintmonthconfig_base.ui:316
-#: printing/calprinttodoconfig_base.ui:436
+#: printing/calprinttodoconfig_base.ui:479
 #: printing/calprintweekconfig_base.ui:398
 #, kde-format
 msgid "Print a datetime footer on each page"
@@ -1388,7 +1385,7 @@ msgstr ""
 #: printing/calprintdayconfig_base.ui:368
 #: printing/calprintincidenceconfig_base.ui:140
 #: printing/calprintmonthconfig_base.ui:319
-#: printing/calprinttodoconfig_base.ui:439
+#: printing/calprinttodoconfig_base.ui:482
 #: printing/calprintweekconfig_base.ui:401
 #, fuzzy, kde-format
 msgid ""
@@ -1400,7 +1397,7 @@ msgstr "Прикажи секунди на линијата со момента�
 #: printing/calprintdayconfig_base.ui:371
 #: printing/calprintincidenceconfig_base.ui:143
 #: printing/calprintmonthconfig_base.ui:322
-#: printing/calprinttodoconfig_base.ui:442
+#: printing/calprinttodoconfig_base.ui:485
 #: printing/calprintweekconfig_base.ui:404
 #, fuzzy, kde-format
 msgid "Print &Footer"
@@ -1809,34 +1806,34 @@ msgctxt "monthname year"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: printing/calprintdefaultplugins.cpp:1439
+#: printing/calprintdefaultplugins.cpp:1443
 #, fuzzy, kde-format
 #| msgid "&Title:"
 msgctxt "@option sort by title"
 msgid "Title"
 msgstr "&Наслов:"
 
-#: printing/calprintdefaultplugins.cpp:1440
+#: printing/calprintdefaultplugins.cpp:1444
 #, fuzzy, kde-format
 #| msgid "Start Date"
 msgctxt "@option sort by start date/time"
 msgid "Start Date"
 msgstr "Почетен датум"
 
-#: printing/calprintdefaultplugins.cpp:1441
+#: printing/calprintdefaultplugins.cpp:1445
 #, fuzzy, kde-format
 msgctxt "@option sort by due date/time"
 msgid "Due Date"
 msgstr "Завршен датум:"
 
-#: printing/calprintdefaultplugins.cpp:1442
+#: printing/calprintdefaultplugins.cpp:1446
 #, fuzzy, kde-format
 #| msgid "Priority"
 msgctxt "@option sort by priority"
 msgid "Priority"
 msgstr "Приоритет"
 
-#: printing/calprintdefaultplugins.cpp:1443
+#: printing/calprintdefaultplugins.cpp:1447
 #, fuzzy, kde-format
 #| msgctxt "delete completed to-dos"
 #| msgid "Pur&ge Completed"
@@ -1844,50 +1841,63 @@ msgctxt "@option sort by percent completed"
 msgid "Percent Complete"
 msgstr "Исчисти &ги завршените"
 
-#: printing/calprintdefaultplugins.cpp:1449
+#: printing/calprintdefaultplugins.cpp:1453
 #, fuzzy, kde-format
 #| msgid "Ascending"
 msgctxt "@option sort in increasing order"
 msgid "Ascending"
 msgstr "Растечки"
 
-#: printing/calprintdefaultplugins.cpp:1450
+#: printing/calprintdefaultplugins.cpp:1454
 #, fuzzy, kde-format
 #| msgid "Descending"
 msgctxt "@option sort in descreasing order"
 msgid "Descending"
 msgstr "Опаѓачки"
 
-#: printing/calprintdefaultplugins.cpp:1462
+#: printing/calprintdefaultplugins.cpp:1466
 #, fuzzy, kde-format
 #| msgid "&To-do List"
 msgid "To-do list"
 msgstr "Лис&та на задачи"
 
-#: printing/calprintdefaultplugins.cpp:1514
-#: printing/calprintpluginbase.cpp:2007
+#: printing/calprintdefaultplugins.cpp:1521
+#: printing/calprintpluginbase.cpp:2024
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: printing/calprintdefaultplugins.cpp:1524
+#: printing/calprintdefaultplugins.cpp:1532
 #, kde-format
 msgid "Priority"
 msgstr "Приоритет"
 
-#: printing/calprintdefaultplugins.cpp:1533
+#: printing/calprintdefaultplugins.cpp:1542
 #, fuzzy, kde-format
 #| msgid "&Due:"
 msgctxt "@label to-do due date"
 msgid "Due"
 msgstr "&Краен рок:"
 
-#: printing/calprintdefaultplugins.cpp:1544
+#: printing/calprintdefaultplugins.cpp:1552
+#, fuzzy, kde-format
+#| msgid "Sta&rt:"
+msgctxt "@label to-do start date"
+msgid "Start"
+msgstr "Поче&ток:"
+
+#: printing/calprintdefaultplugins.cpp:1562
 #, fuzzy, kde-format
 #| msgid "Complete"
 msgctxt "@label to-do percentage complete"
 msgid "Complete"
 msgstr "Завршен"
+
+#: printing/calprintdefaultplugins.cpp:1572
+#, kde-format
+msgctxt "@label to-do categories"
+msgid "Tags"
+msgstr ""
 
 #: printing/calprintdefaultplugins.h:36
 #, fuzzy, kde-format
@@ -2438,24 +2448,24 @@ msgstr "  (Краен рок: %1)"
 msgid "To-do: %1"
 msgstr "Задача:"
 
-#: printing/calprintpluginbase.cpp:2142
+#: printing/calprintpluginbase.cpp:2185
 #, kde-format
 msgctxt "Description - date"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: printing/calprintpluginbase.cpp:2161
+#: printing/calprintpluginbase.cpp:2204
 #, kde-format
 msgid "Person: %1"
 msgstr "Личност: %1"
 
-#: printing/calprintpluginbase.cpp:2182
+#: printing/calprintpluginbase.cpp:2225
 #, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2 - %3"
 msgstr "%2 - %3 %1"
 
-#: printing/calprintpluginbase.cpp:2188
+#: printing/calprintpluginbase.cpp:2231
 #, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2 - %3 %4"
@@ -2517,9 +2527,9 @@ msgstr "Испечати &седмица"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintUnfinished)
 #: printing/calprinttodoconfig_base.ui:90
-#, kde-format
-msgid "Print unfinished to-dos onl&y"
-msgstr ""
+#, fuzzy, kde-format
+msgid "Print &uncompleted to-dos only"
+msgstr "Испечати &седмица"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintDueRange)
 #: printing/calprinttodoconfig_base.ui:100
@@ -2527,55 +2537,149 @@ msgstr ""
 msgid "Print only to-dos due in the &range:"
 msgstr "Прикажи ги само избраните"
 
-#. i18n: ectx: property (text), widget (QCheckBox, mPriority)
+#. i18n: ectx: property (text), widget (QCheckBox, mExcludeConfidential)
+#: printing/calprinttodoconfig_base.ui:259
+#, fuzzy, kde-format
+#| msgid "Exclude holidays"
+msgid "Exclude &confidential"
+msgstr "Исклучи празници"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mDescription)
+#: printing/calprinttodoconfig_base.ui:297
+#, kde-format
+msgid "&Description"
+msgstr "&Опис"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mCategories)
 #: printing/calprinttodoconfig_base.ui:304
+#, fuzzy, kde-format
+#| msgid "Print &week"
+msgid "Print item tags"
+msgstr "Испечати &седмица"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mCategories)
+#: printing/calprinttodoconfig_base.ui:307
+#, fuzzy, kde-format
+msgid "Check this option if you want to see the item tags printed."
+msgstr "Прикажи секунди на линијата со моментално време"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mCategories)
+#: printing/calprinttodoconfig_base.ui:310
+#, kde-format
+msgid "Ta&gs"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mPriority)
+#: printing/calprinttodoconfig_base.ui:317
+#, fuzzy, kde-format
+#| msgid "&Description"
+msgid "Print item priorities"
+msgstr "&Опис"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mPriority)
+#: printing/calprinttodoconfig_base.ui:320
+#, fuzzy, kde-format
+msgid "Check this option if you want to see the item priorities printed."
+msgstr "Прикажи секунди на линијата со моментално време"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mPriority)
+#: printing/calprinttodoconfig_base.ui:323
 #, kde-format
 msgid "&Priority"
 msgstr "&Приоритет"
 
-#. i18n: ectx: property (text), widget (QCheckBox, mDueDate)
-#: printing/calprinttodoconfig_base.ui:314
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mStartDate)
+#: printing/calprinttodoconfig_base.ui:333
 #, fuzzy, kde-format
-msgid "Due date"
+msgid "Print item start dates"
+msgstr "Почетен датум:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mStartDate)
+#: printing/calprinttodoconfig_base.ui:336
+#, fuzzy, kde-format
+msgid ""
+"Check this option if you want to see the item start dates (when work can "
+"begin) printed."
+msgstr "Прикажи секунди на линијата со моментално време"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mStartDate)
+#: printing/calprinttodoconfig_base.ui:339
+#, fuzzy, kde-format
+#| msgid "&Start date:"
+msgid "&Start date"
+msgstr "&Почетен датум:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mDueDate)
+#: printing/calprinttodoconfig_base.ui:346
+#, fuzzy, kde-format
+#| msgid "&Description"
+msgid "Print item due dates"
+msgstr "&Опис"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mDueDate)
+#: printing/calprinttodoconfig_base.ui:349
+#, fuzzy, kde-format
+msgid "Check this option if you want to see the item due dates printed."
+msgstr "Прикажи секунди на линијата со моментално време"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mDueDate)
+#: printing/calprinttodoconfig_base.ui:352
+#, fuzzy, kde-format
+msgid "Du&e date"
 msgstr "Завршен датум:"
 
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mPercentComplete)
+#: printing/calprinttodoconfig_base.ui:362
+#, fuzzy, kde-format
+#| msgid "&Description"
+msgid "Print item completion percentage"
+msgstr "&Опис"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mPercentComplete)
+#: printing/calprinttodoconfig_base.ui:365
+#, fuzzy, kde-format
+msgid ""
+"Check this option if you want to see the item completion percentage printed "
+"as a number and bar graph."
+msgstr "Прикажи секунди на линијата со моментално време"
+
 #. i18n: ectx: property (text), widget (QCheckBox, mPercentComplete)
-#: printing/calprinttodoconfig_base.ui:327
+#: printing/calprinttodoconfig_base.ui:368
 #, fuzzy, kde-format
 #| msgctxt "delete completed to-dos"
 #| msgid "Pur&ge Completed"
-msgid "Per&centage completed"
+msgid "Percentage co&mpleted"
 msgstr "Исчисти &ги завршените"
 
 #. i18n: ectx: property (title), widget (QGroupBox, sortingOptionsBox)
-#: printing/calprinttodoconfig_base.ui:344
+#: printing/calprinttodoconfig_base.ui:387
 #, kde-format
 msgid "Sorting Options"
 msgstr "Опции за подредување"
 
 #. i18n: ectx: property (text), widget (QLabel, sortFieldLabel)
-#: printing/calprinttodoconfig_base.ui:358
+#: printing/calprinttodoconfig_base.ui:401
 #, kde-format
 msgid "Sort field:"
 msgstr "Поле за подредување:"
 
 #. i18n: ectx: property (text), widget (QLabel, sortDirectionLabel)
-#: printing/calprinttodoconfig_base.ui:385
+#: printing/calprinttodoconfig_base.ui:428
 #, kde-format
 msgid "Sort direction:"
 msgstr "Насока на подредување:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mConnectSubTodos)
-#: printing/calprinttodoconfig_base.ui:416
+#: printing/calprinttodoconfig_base.ui:459
 #, kde-format
 msgid "Co&nnect sub-to-dos with its parent"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStrikeOutCompleted)
-#: printing/calprinttodoconfig_base.ui:426
+#: printing/calprinttodoconfig_base.ui:469
 #, fuzzy, kde-format
 #| msgid "Delete all completed to-dos?"
-msgid "Strike &out completed to-do summaries"
+msgid "Stri&ke out completed to-do summaries"
 msgstr "Ги бришете сите довршени задачи?"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -5690,12 +5794,6 @@ msgstr ""
 #~ msgstr "Потсетник"
 
 #, fuzzy
-#~| msgid "Sta&rt:"
-#~ msgctxt "@action:button start the reminder daemon"
-#~ msgid "Start"
-#~ msgstr "Поче&ток:"
-
-#, fuzzy
 #~| msgid "Do Not Send"
 #~ msgctxt "@action:button do not start the reminder daemon"
 #~ msgid "Do Not Start"
@@ -6185,9 +6283,6 @@ msgstr ""
 #~ msgctxt "@label in QuickSearchLine"
 #~ msgid "Search"
 #~ msgstr "Барај во"
-
-#~ msgid "&Description"
-#~ msgstr "&Опис"
 
 #~ msgid "Other Options"
 #~ msgstr "Други опции"
@@ -8101,11 +8196,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Поставува опции за крајните рокови и почетните датуми и времиња за оваа "
 #~ "задача."
-
-#, fuzzy
-#~ msgctxt "@info:tooltip"
-#~ msgid "Set the start date"
-#~ msgstr "Почетен датум:"
 
 #, fuzzy
 #~| msgid "Sets the start time for this to-do."
