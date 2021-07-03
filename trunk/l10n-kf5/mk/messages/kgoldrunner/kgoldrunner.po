@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgoldrunner\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-06-28 00:15+0000\n"
+"POT-Creation-Date: 2021-07-03 00:14+0000\n"
 "PO-Revision-Date: 2007-02-26 22:19+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1613,7 +1613,7 @@ msgctxt ""
 "KGoldrunner game, are sometimes rather complicated, so it may help you to "
 "open the game and display the layout of a level as you translate the hint. "
 "It may also help to play the solution, by pressing H (for Hint) and then "
-"Escape (or click the Show A Solution button). You can move easily from one "
+"Escape (or click the 'Show a Solution' button). You can move easily from one "
 "level to the next by using the Y key and you can prevent a level from "
 "playing by using the Pause key (P or Escape)."
 msgid " "
@@ -2573,7 +2573,7 @@ msgid ""
 "It is best to play the first Gold Rush levels before attempting Gold Rush "
 "II, because you will need many techniques that are easier to learn there. "
 "None of the levels in Gold Rush and Gold Rush II are impossible. If in "
-"doubt, use menu item 'Move->Show A Solution' to watch solutions provided by "
+"doubt, use menu item 'Move->Show a Solution' to watch solutions provided by "
 "the author."
 msgstr ""
 
@@ -6073,7 +6073,7 @@ msgstr ""
 #: src/kgoldrunner.cpp:245 src/kgrgame.cpp:1303
 #, fuzzy, kde-format
 #| msgid "Show Positions"
-msgid "&Show A Solution"
+msgid "&Show a Solution"
 msgstr "Прикажи позиции"
 
 #: src/kgoldrunner.cpp:246
@@ -6854,8 +6854,10 @@ msgid "Edit Toolbar"
 msgstr "Уредник"
 
 #: src/kgrdialog.cpp:34
-#, kde-format
-msgid "Edit Name & Hint"
+#, fuzzy, kde-format
+#| msgid "Edit Name & Hint"
+msgctxt "@title:window"
+msgid "Edit Name or Hint"
 msgstr "Уредување име и сугестија"
 
 #: src/kgrdialog.cpp:56
@@ -6868,9 +6870,10 @@ msgstr "Име на нивото:"
 msgid "Hint for level:"
 msgstr "Сугестија за нивото:"
 
-#: src/kgrdialog.cpp:103 src/kgrdialog.cpp:172 src/kgrselector.cpp:82
-#: src/kgrselector.cpp:278
-#, kde-format
+#: src/kgrdialog.cpp:103 src/kgrdialog.cpp:172
+#, fuzzy, kde-format
+#| msgid "Edit Game Info"
+msgctxt "@title:window"
 msgid "Edit Game Info"
 msgstr "Уреди информации за играта"
 
@@ -6908,7 +6911,9 @@ msgid "About this game:"
 msgstr "За оваа игра:"
 
 #: src/kgrdialog.cpp:169
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Create Game"
+msgctxt "@title:window"
 msgid "Create Game"
 msgstr "Креирање игра"
 
@@ -6928,7 +6933,9 @@ msgid "Save New"
 msgstr "Зачувај нова"
 
 #: src/kgrdialog.cpp:247
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Saved Game"
+msgctxt "@title:window"
 msgid "Select Saved Game"
 msgstr "Избирање зачувана игра"
 
@@ -7227,9 +7234,11 @@ msgid ""
 msgstr ""
 
 #: src/kgrgame.cpp:695
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Getting Started"
+msgctxt "@title:window"
 msgid "Quick Start"
-msgstr ""
+msgstr "Започнувам"
 
 #: src/kgrgame.cpp:712
 #, kde-format
@@ -7299,7 +7308,7 @@ msgstr ""
 #: src/kgrgame.cpp:836
 #, fuzzy, kde-format
 #| msgid "Show Positions"
-msgid "Show A Solution"
+msgid "Show a Solution"
 msgstr "Прикажи позиции"
 
 #: src/kgrgame.cpp:837
@@ -7481,7 +7490,14 @@ msgstr ""
 "внесете го вашето име за да може да се зачува во Холот на славните на "
 "KGoldrunner."
 
-#: src/kgrgame.cpp:1722 src/kgrgame.cpp:1809
+#: src/kgrgame.cpp:1722
+#, fuzzy, kde-format
+#| msgid "Save High Score"
+msgctxt "@title:window"
+msgid "Save High Score"
+msgstr "Зачувај најдобар резултат"
+
+#: src/kgrgame.cpp:1809
 #, kde-format
 msgid "Save High Score"
 msgstr "Зачувај најдобар резултат"
@@ -7547,7 +7563,9 @@ msgid "Date"
 msgstr ""
 
 #: src/kgrgame.cpp:1887
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "High Scores"
+msgctxt "@title:window"
 msgid "High Scores"
 msgstr "Најдобри резултати"
 
@@ -7643,6 +7661,11 @@ msgstr ""
 msgid "Sorry, you can only delete a level from one of your own games."
 msgstr "Жалам, може да избришете ниво само во некоја од вашите сопствени игри."
 
+#: src/kgrselector.cpp:82 src/kgrselector.cpp:278
+#, kde-format
+msgid "Edit Game Info"
+msgstr "Уреди информации за играта"
+
 #: src/kgrselector.cpp:83
 #, kde-format
 msgid "Sorry, you can only edit the game information on your own games."
@@ -7658,7 +7681,9 @@ msgstr ""
 "Не постои ниво %1 во %2, така што не можете да го играте или уредувате."
 
 #: src/kgrselector.cpp:119 src/kgrselector.cpp:174
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Game"
+msgctxt "@title:window"
 msgid "Select Game"
 msgstr "Избирање игра"
 
@@ -7695,7 +7720,9 @@ msgid "Level 1 of the selected game is:"
 msgstr "Ниво 1 за избраната игра е:"
 
 #: src/kgrselector.cpp:180
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Game/Level"
+msgctxt "@title:window"
 msgid "Select Game/Level"
 msgstr "Избирање игра/ниво"
 
@@ -7711,8 +7738,9 @@ msgid "Level number:"
 msgstr "Број на нивото:"
 
 #: src/kgrselector.cpp:207
-#, kde-format
-msgid "Edit Level Name && Hint"
+#, fuzzy, kde-format
+#| msgid "Edit Level Name && Hint"
+msgid "Edit Level Name o&r Hint"
 msgstr "Уреди име на ниво и сугестија"
 
 #: src/kgrselector.cpp:242
