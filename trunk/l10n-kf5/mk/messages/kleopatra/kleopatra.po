@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-02-22 00:45+0000\n"
+"POT-Creation-Date: 2022-02-23 00:46+0000\n"
 "PO-Revision-Date: 2009-01-08 13:02+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1669,7 +1669,7 @@ msgid "Could not open file %1 for reading: %2"
 msgstr "Не можам да создадам сертификат: %1"
 
 #: src/commands/importcertificatefromfilecommand.cpp:148
-#: src/commands/importcertificatescommand.cpp:286
+#: src/commands/importcertificatescommand.cpp:286 src/view/keytreeview.cpp:340
 #, fuzzy, kde-format
 #| msgid "&Certificates"
 msgid "Certificates"
@@ -9722,10 +9722,22 @@ msgstr "Исфрли го CLR-кешот"
 msgid "Import CRL From File..."
 msgstr "Внеси CRL..."
 
-#: src/view/keytreeview.cpp:78
+#: src/view/keytreeview.cpp:79
 #, kde-format
 msgid "View Columns"
 msgstr ""
+
+#: src/view/keytreeview.cpp:341 src/view/keytreeview.cpp:678
+#, fuzzy, kde-format
+#| msgid "Hierarchical Key List"
+msgid "Hierarchical list of certificates"
+msgstr "Хиерархиска листа на клучеви"
+
+#: src/view/keytreeview.cpp:341 src/view/keytreeview.cpp:678
+#, fuzzy, kde-format
+#| msgid "&Certificates"
+msgid "List of certificates"
+msgstr "&Сертификати"
 
 #: src/view/netkeywidget.cpp:80 src/view/p15cardwidget.cpp:77
 #: src/view/pgpcardwidget.cpp:137 src/view/pivcardwidget.cpp:110
@@ -11218,11 +11230,6 @@ msgstr ""
 #~| msgid "Certificate Download Failed"
 #~ msgid "Certificate cache loaded."
 #~ msgstr "Симнувањето на сертификатот не успеа"
-
-#, fuzzy
-#~| msgid "&Certificates"
-#~ msgid "Listing X.509 certificates"
-#~ msgstr "&Сертификати"
 
 #, fuzzy
 #~| msgid "Certificate Manager Error"
