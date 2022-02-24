@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-02-23 00:47+0000\n"
+"POT-Creation-Date: 2022-02-24 00:45+0000\n"
 "PO-Revision-Date: 2010-01-30 20:20+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -65,7 +65,7 @@ msgstr "Прикажи решетка од раб. површина"
 
 #: desktopgrid/desktopgrid_config.cpp:49 invert/invert_config.cpp:35
 #: lookingglass/lookingglass_config.cpp:55 magnifier/magnifier_config.cpp:55
-#: mouseclick/mouseclick_config.cpp:47 mousemark/mousemark_config.cpp:53
+#: mouseclick/mouseclick_config.cpp:47 mousemark/mousemark_config.cpp:51
 #: overview/kcm/overvieweffectkcm.cpp:34
 #: presentwindows/presentwindows_config.cpp:48
 #: showpaint/showpaint_config.cpp:33
@@ -178,19 +178,19 @@ msgstr ""
 msgid "&Layout mode:"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LayoutMode)
 #: desktopgrid/desktopgrid_config.ui:127
 #, kde-format
 msgid "Pager"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LayoutMode)
 #: desktopgrid/desktopgrid_config.ui:132
 #, kde-format
 msgid "Automatic"
 msgstr "Автоматски"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LayoutMode)
 #: desktopgrid/desktopgrid_config.ui:137
 #, kde-format
 msgid "Custom"
@@ -564,12 +564,17 @@ msgstr "Прикажи раб. површина"
 msgid "Clear All Mouse Marks"
 msgstr "Исчисти ги сите траги од глушецот"
 
-#: mousemark/mousemark.cpp:43 mousemark/mousemark_config.cpp:62
+#: mousemark/mousemark.cpp:43 mousemark/mousemark_config.cpp:60
 #, kde-format
 msgid "Clear Last Mouse Mark"
 msgstr "Исчисти последна трага од глушецот"
 
-#: mousemark/mousemark_config.cpp:42
+#: mousemark/mousemark_config.cpp:54
+#, kde-format
+msgid "Clear Mouse Marks"
+msgstr "Исчисти траги од глушецот"
+
+#: mousemark/mousemark_config.cpp:101
 #, fuzzy, kde-format
 #| msgid " pixel"
 #| msgid_plural " pixels"
@@ -579,11 +584,6 @@ msgid_plural " pixels"
 msgstr[0] " пиксел"
 msgstr[1] " пиксели"
 msgstr[2] " пиксели"
-
-#: mousemark/mousemark_config.cpp:56
-#, kde-format
-msgid "Clear Mouse Marks"
-msgstr "Исчисти траги од глушецот"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: mousemark/mousemark_config.ui:23
@@ -623,7 +623,6 @@ msgid "Closest"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LayoutMode)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
 #: overview/kcm/overvieweffectkcm.ui:35
 #: presentwindows/presentwindows_config.ui:441
 #, kde-format
@@ -710,12 +709,12 @@ msgstr "Прозорци"
 msgid "Left button:"
 msgstr "Лево копче:"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonDesktop)
 #: presentwindows/presentwindows_config.ui:139
 #: presentwindows/presentwindows_config.ui:183
 #: presentwindows/presentwindows_config.ui:232
@@ -726,12 +725,12 @@ msgstr "Лево копче:"
 msgid "No action"
 msgstr "Нема дејство"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonDesktop)
 #: presentwindows/presentwindows_config.ui:144
 #: presentwindows/presentwindows_config.ui:188
 #: presentwindows/presentwindows_config.ui:237
@@ -742,12 +741,12 @@ msgstr "Нема дејство"
 msgid "Activate window"
 msgstr "Активирај прозорец"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonDesktop)
 #: presentwindows/presentwindows_config.ui:149
 #: presentwindows/presentwindows_config.ui:193
 #: presentwindows/presentwindows_config.ui:242
@@ -758,9 +757,9 @@ msgstr "Активирај прозорец"
 msgid "End effect"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonWindow)
 #: presentwindows/presentwindows_config.ui:154
 #: presentwindows/presentwindows_config.ui:198
 #: presentwindows/presentwindows_config.ui:247
@@ -768,9 +767,9 @@ msgstr ""
 msgid "Bring window to current desktop"
 msgstr "Донеси прозорец на тековната површина"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonWindow)
 #: presentwindows/presentwindows_config.ui:159
 #: presentwindows/presentwindows_config.ui:203
 #: presentwindows/presentwindows_config.ui:252
@@ -778,9 +777,9 @@ msgstr "Донеси прозорец на тековната површина"
 msgid "Send window to all desktops"
 msgstr "Испрати прозорец на сите површини"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonWindow)
 #: presentwindows/presentwindows_config.ui:164
 #: presentwindows/presentwindows_config.ui:208
 #: presentwindows/presentwindows_config.ui:257
@@ -796,8 +795,8 @@ msgstr ""
 msgid "Middle button:"
 msgstr "Средно копче:"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonWindow)
 #: presentwindows/presentwindows_config.ui:213
 #: presentwindows/presentwindows_config.ui:262
 #, fuzzy, kde-format
@@ -820,9 +819,9 @@ msgctxt "@title:group actions when clicking on desktop"
 msgid "Desktop"
 msgstr "Работна површина"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonDesktop)
 #: presentwindows/presentwindows_config.ui:308
 #: presentwindows/presentwindows_config.ui:342
 #: presentwindows/presentwindows_config.ui:376
@@ -854,13 +853,13 @@ msgstr ""
 msgid "Show &panels"
 msgstr "Прикажи &панели"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LayoutMode)
 #: presentwindows/presentwindows_config.ui:446
 #, kde-format
 msgid "Regular Grid"
 msgstr "Регуларна решетка"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LayoutMode)
 #: presentwindows/presentwindows_config.ui:451
 #, kde-format
 msgid "Flexible Grid"
@@ -925,37 +924,37 @@ msgstr ""
 msgid "Text position:"
 msgstr "Позиција на текст:"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_TextPosition)
 #: showfps/showfps_config.ui:43
 #, kde-format
 msgid "Inside Graph"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_TextPosition)
 #: showfps/showfps_config.ui:48
 #, kde-format
 msgid "Nowhere"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_TextPosition)
 #: showfps/showfps_config.ui:53
 #, kde-format
 msgid "Top Left"
 msgstr "Горе лево"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_TextPosition)
 #: showfps/showfps_config.ui:58
 #, kde-format
 msgid "Top Right"
 msgstr "Горе десно"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_TextPosition)
 #: showfps/showfps_config.ui:63
 #, kde-format
 msgid "Bottom Left"
 msgstr "Долу лево"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_TextPosition)
 #: showfps/showfps_config.ui:68
 #, kde-format
 msgid "Bottom Right"
