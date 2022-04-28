@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-04-27 00:46+0000\n"
+"POT-Creation-Date: 2022-04-28 00:44+0000\n"
 "PO-Revision-Date: 2009-01-08 13:02+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -10199,7 +10199,7 @@ msgstr "Хиерархиска листа на клучеви"
 msgid "List of certificates"
 msgstr "&Сертификати"
 
-#: src/view/netkeywidget.cpp:80 src/view/p15cardwidget.cpp:77
+#: src/view/netkeywidget.cpp:80 src/view/p15cardwidget.cpp:82
 #: src/view/pgpcardwidget.cpp:137 src/view/pivcardwidget.cpp:110
 #, fuzzy, kde-format
 #| msgid "Serial Number"
@@ -10399,34 +10399,59 @@ msgctxt "@info"
 msgid "Sorry, I cannot find the key with fingerprint %1."
 msgstr ""
 
-#: src/view/p15cardwidget.cpp:92
+#: src/view/p15cardwidget.cpp:97
 #, fuzzy, kde-format
 #| msgid "Certificate Manager Error"
 msgid "OpenPGP keys:"
 msgstr "Грешка во менаџерот за сертификати"
 
-#: src/view/p15cardwidget.cpp:113
+#: src/view/p15cardwidget.cpp:110
+#, fuzzy, kde-format
+#| msgid "&Certificates"
+msgid "Load additional certificates"
+msgstr "&Сертификати"
+
+#: src/view/p15cardwidget.cpp:111
+#, kde-format
+msgid ""
+"Search for additional certificates on the card and add them to the list. The "
+"certificates might be usable for S/MIME."
+msgstr ""
+
+#: src/view/p15cardwidget.cpp:125
+#, fuzzy, kde-format
+#| msgid "Exporting certificate..."
+msgid "Loading certificates..."
+msgstr "Извезување на сертификат..."
+
+#: src/view/p15cardwidget.cpp:128
+#, fuzzy, kde-format
+#| msgid "Save Certificate"
+msgid "Certificates added to the certificate list."
+msgstr "Зачувај сертификат"
+
+#: src/view/p15cardwidget.cpp:151
 #, fuzzy, kde-format
 #| msgid "Certificate Download Failed"
 msgid "Searching in directory service..."
 msgstr "Симнувањето на сертификатот не успеа"
 
-#: src/view/p15cardwidget.cpp:128
+#: src/view/p15cardwidget.cpp:166
 #, kde-format
 msgid "Automatic import finished."
 msgstr ""
 
-#: src/view/p15cardwidget.cpp:133
+#: src/view/p15cardwidget.cpp:171
 #, kde-format
 msgid "Error multiple keys found on server."
 msgstr ""
 
-#: src/view/p15cardwidget.cpp:136
+#: src/view/p15cardwidget.cpp:174
 #, kde-format
 msgid "Key not found in directory service."
 msgstr ""
 
-#: src/view/p15cardwidget.cpp:145
+#: src/view/p15cardwidget.cpp:183
 #, kde-format
 msgctxt "%1 is a smartcard manufacturer"
 msgid "%1 PKCS#15 card"
@@ -11557,11 +11582,6 @@ msgstr ""
 #~| msgid "&Overwrite"
 #~ msgid "Overview"
 #~ msgstr "&Запиши над датотеката"
-
-#, fuzzy
-#~| msgid "Save Certificate"
-#~ msgid "Trust Certifications Made by This Certificate..."
-#~ msgstr "Зачувај сертификат"
 
 #, fuzzy
 #~| msgid "&Certificates"
