@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akregator\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-05-08 00:46+0000\n"
+"POT-Creation-Date: 2022-05-11 00:45+0000\n"
 "PO-Revision-Date: 2009-01-18 02:35+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -229,7 +229,7 @@ msgstr ""
 msgid "Webengine Plugins"
 msgstr "Истовремени преземања"
 
-#: configuration/settings_advanced.cpp:43
+#: configuration/settings_advanced.cpp:28
 #, fuzzy, kde-format
 #| msgid " sec"
 msgctxt "Mark selected article read after"
@@ -239,38 +239,20 @@ msgstr[0] " сек"
 msgstr[1] " сек"
 msgstr[2] " сек"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: configuration/ui/settings_advancedbase.ui:30
-#, kde-format
-msgid "Archive"
-msgstr "Архива"
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: configuration/ui/settings_advancedbase.ui:38
-#, kde-format
-msgid "Archive backend:"
-msgstr "Архивирај заден крај:"
-
-#. i18n: ectx: property (text), widget (QPushButton, pbBackendConfigure)
-#: configuration/ui/settings_advancedbase.ui:48
-#, kde-format
-msgid "&Configure..."
-msgstr "&Конфигурирај"
-
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: configuration/ui/settings_advancedbase.ui:73
+#: configuration/ui/settings_advancedbase.ui:30
 #, kde-format
 msgid "Article List"
 msgstr "Листа на написи"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseMarkReadDelay)
-#: configuration/ui/settings_advancedbase.ui:81
+#: configuration/ui/settings_advancedbase.ui:38
 #, kde-format
 msgid "Mar&k selected article read after"
 msgstr "Марк&ирај ги селектираните написи откако ќе бидат прочитани"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ResetQuickFilterOnNodeChange)
-#: configuration/ui/settings_advancedbase.ui:116
+#: configuration/ui/settings_advancedbase.ui:73
 #, kde-format
 msgid "Reset search bar when changing feeds"
 msgstr ""
@@ -622,7 +604,7 @@ msgstr "Користи го кешот на пре&листувачот (пом�
 msgid "Allow feed to load external references from internet."
 msgstr ""
 
-#: export/akregatorstorageexporter.cpp:278
+#: export/akregatorstorageexporter.cpp:275
 #, kde-format
 msgid "Akregator Export for %1"
 msgstr ""
@@ -1045,7 +1027,7 @@ msgid "Resets the quick filter when changing feeds."
 msgstr ""
 
 #: kontactplugin/akregator_plugin.cpp:27 src/aboutdata.cpp:19
-#: src/akregator_part.cpp:155
+#: src/akregator_part.cpp:147
 #: src/articleviewer-ng/webengine/articleviewerwebengine.cpp:149
 #: src/trayicon.cpp:42 src/trayicon.cpp:43 src/trayicon.cpp:55
 #, kde-format
@@ -1069,11 +1051,6 @@ msgstr ""
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "You will be presented with a dialog where you can add a new feed."
-msgstr ""
-
-#: plugins/mk4storage/storagefactorymk4impl.cpp:29
-#, kde-format
-msgid "Metakit"
 msgstr ""
 
 #: src/aboutdata.cpp:21
@@ -1633,53 +1610,43 @@ msgstr ""
 msgid "Lists the available options for user feedback"
 msgstr ""
 
-#: src/akregator_part.cpp:90
+#: src/akregator_part.cpp:85
 #, kde-format
 msgid "Feeds"
 msgstr "Доводи"
 
-#: src/akregator_part.cpp:101
+#: src/akregator_part.cpp:96
 #, kde-format
 msgid "KDE Dot News"
 msgstr "Вести од KDE"
 
-#: src/akregator_part.cpp:106
+#: src/akregator_part.cpp:101
 #, kde-format
 msgid "Linux.com"
 msgstr ""
 
-#: src/akregator_part.cpp:111
+#: src/akregator_part.cpp:106
 #, kde-format
 msgid "Planet KDE"
 msgstr "KDE планета"
 
-#: src/akregator_part.cpp:116
+#: src/akregator_part.cpp:111
 #, kde-format
 msgid "KDE Apps"
 msgstr "Апликации за KDE"
 
-#: src/akregator_part.cpp:122
+#: src/akregator_part.cpp:117
 #, kde-format
 msgid "Spanish feeds"
 msgstr ""
 
-#: src/akregator_part.cpp:126
+#: src/akregator_part.cpp:121
 #, fuzzy, kde-format
 #| msgid "Planet KDE"
 msgid "Planet KDE España"
 msgstr "KDE планета"
 
-#: src/akregator_part.cpp:182
-#, kde-format
-msgid "Unable to load storage backend plugin \"%1\". No feeds are archived."
-msgstr "Невозможно да го вчитам прилучокот „%1“. Нема архивирани доводи"
-
-#: src/akregator_part.cpp:183
-#, kde-format
-msgid "Plugin error"
-msgstr "Грешка во приклучок"
-
-#: src/akregator_part.cpp:482
+#: src/akregator_part.cpp:441
 #, fuzzy, kde-format
 #| msgid "Access denied: cannot save feed list (%1)"
 msgid ""
@@ -1687,22 +1654,22 @@ msgid ""
 "permissions."
 msgstr "Одбиен пристап. Не можам да ја зачувам листата за доводи (%1)"
 
-#: src/akregator_part.cpp:483 src/akregator_part.cpp:534
+#: src/akregator_part.cpp:442 src/akregator_part.cpp:493
 #, kde-format
 msgid "Write Error"
 msgstr "Грешка при запишување"
 
-#: src/akregator_part.cpp:519
+#: src/akregator_part.cpp:478
 #, kde-format
 msgid "Could not import the file %1 (no valid OPML)"
 msgstr "Не можам да ја вметнам датотеката: %1 (невалиден OPML)"
 
-#: src/akregator_part.cpp:519 src/command/loadfeedlistcommand.cpp:72
+#: src/akregator_part.cpp:478 src/command/loadfeedlistcommand.cpp:71
 #, kde-format
 msgid "OPML Parsing Error"
 msgstr "Грешка при анализирање на OPML"
 
-#: src/akregator_part.cpp:523
+#: src/akregator_part.cpp:482
 #, kde-format
 msgid ""
 "The file %1 could not be read, check if it exists or if it is readable for "
@@ -1711,24 +1678,24 @@ msgstr ""
 "Не можам да ја прочитам датотеката %1, проверете дали датотеката е читлива "
 "за тековниот корисник."
 
-#: src/akregator_part.cpp:524 src/command/loadfeedlistcommand.cpp:143
+#: src/akregator_part.cpp:483 src/command/loadfeedlistcommand.cpp:142
 #, kde-format
 msgid "Read Error"
 msgstr "Грешка при читање"
 
-#: src/akregator_part.cpp:534
+#: src/akregator_part.cpp:493
 #, fuzzy, kde-format
 #| msgid "Access denied: cannot write to file %1"
 msgid "Access denied: cannot write to file %1. Please check your permissions."
 msgstr "Одбиен пристап: не можам да запишам во датотека %1"
 
-#: src/akregator_part.cpp:549 src/akregator_part.cpp:558
+#: src/akregator_part.cpp:508 src/akregator_part.cpp:517
 #, fuzzy, kde-format
 #| msgid "OPML Outlines (*.opml, *.xml)"
 msgid "OPML Outlines (%1);;All Files (*)"
 msgstr "OPML Outlines (*.opml, *.xml)"
 
-#: src/akregator_part.cpp:682
+#: src/akregator_part.cpp:641
 #, kde-format
 msgid "Imported Folder"
 msgstr "Вметнати папки"
@@ -1940,7 +1907,7 @@ msgstr "Додај вметната папка"
 msgid "Imported folder name:"
 msgstr "Вметнато име на папка:"
 
-#: src/command/loadfeedlistcommand.cpp:64
+#: src/command/loadfeedlistcommand.cpp:63
 #, fuzzy, kde-format
 msgid ""
 "<qt>The standard feed list is corrupted (invalid OPML). A backup was created:"
@@ -1949,7 +1916,7 @@ msgstr ""
 "<qt>Стандардната листа на доводи е оштетена (невалиден OPML). Беше креирана "
 "заштитна копија:<p><b>%2</b></p></qt>"
 
-#: src/command/loadfeedlistcommand.cpp:68
+#: src/command/loadfeedlistcommand.cpp:67
 #, fuzzy, kde-format
 msgid ""
 "<qt>The standard feed list is corrupted (invalid OPML). Could not create a "
@@ -1958,29 +1925,29 @@ msgstr ""
 "<qt>Стандардната листа на доводи е оштетена (невалиден OPML). Беше креирана "
 "заштитна копија:<p><b>%2</b></p></qt>"
 
-#: src/command/loadfeedlistcommand.cpp:130
+#: src/command/loadfeedlistcommand.cpp:129
 #, kde-format
 msgid "Opening Feed List..."
 msgstr "Ја отворам листата на доводи..."
 
-#: src/command/loadfeedlistcommand.cpp:143
+#: src/command/loadfeedlistcommand.cpp:142
 #, kde-format
 msgid "<qt>Could not open feed list (%1) for reading.</qt>"
 msgstr ""
 
-#: src/command/loadfeedlistcommand.cpp:156
+#: src/command/loadfeedlistcommand.cpp:155
 #, fuzzy, kde-format
 #| msgid "XML Parsing Error"
 msgctxt "error message window caption"
 msgid "XML Parsing Error"
 msgstr "Грешка при анализирање на XML"
 
-#: src/command/loadfeedlistcommand.cpp:158
+#: src/command/loadfeedlistcommand.cpp:157
 #, kde-kuit-format
 msgid "<qt><p>XML parsing error in line %1, column %2 of %3:</p><p>%4</p></qt>"
 msgstr ""
 
-#: src/command/loadfeedlistcommand.cpp:165
+#: src/command/loadfeedlistcommand.cpp:164
 #, fuzzy, kde-format
 msgid ""
 "<qt>The standard feed list is corrupted (invalid XML). A backup was created:"
@@ -1989,7 +1956,7 @@ msgstr ""
 "<qt>Стандардната листа на доводи е оштетена (невалиден OPML). Беше креирана "
 "заштитна копија:<p><b>%2</b></p></qt>"
 
-#: src/command/loadfeedlistcommand.cpp:169
+#: src/command/loadfeedlistcommand.cpp:168
 #, fuzzy, kde-format
 msgid ""
 "<qt>The standard feed list is corrupted (invalid XML). Could not create a "
@@ -2068,12 +2035,6 @@ msgstr "Алатник за говорење"
 #, fuzzy, kde-format
 msgid "&File"
 msgstr "&Запис"
-
-#: src/dummystorage/storagefactorydummyimpl.cpp:28
-#, fuzzy, kde-format
-#| msgid "Archive"
-msgid "No Archive"
-msgstr "Архива"
 
 #: src/feed/feedlist.cpp:160
 #, kde-format
@@ -2723,6 +2684,26 @@ msgstr "&Прочитај"
 msgctxt "Important articles filter"
 msgid "Important"
 msgstr "Важни"
+
+#~ msgid "Archive"
+#~ msgstr "Архива"
+
+#~ msgid "Archive backend:"
+#~ msgstr "Архивирај заден крај:"
+
+#~ msgid "&Configure..."
+#~ msgstr "&Конфигурирај"
+
+#~ msgid "Unable to load storage backend plugin \"%1\". No feeds are archived."
+#~ msgstr "Невозможно да го вчитам прилучокот „%1“. Нема архивирани доводи"
+
+#~ msgid "Plugin error"
+#~ msgstr "Грешка во приклучок"
+
+#, fuzzy
+#~| msgid "Archive"
+#~ msgid "No Archive"
+#~ msgstr "Архива"
 
 #, fuzzy
 #~| msgid "Name"
