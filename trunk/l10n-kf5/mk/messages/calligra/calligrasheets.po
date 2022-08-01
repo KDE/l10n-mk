@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kspread\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-07-25 00:46+0000\n"
+"POT-Creation-Date: 2022-08-01 00:44+0000\n"
 "PO-Revision-Date: 2000-06-08 07:00+0100\n"
 "Last-Translator: Dimitar Indovski <dime@gord.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -3185,7 +3185,7 @@ msgstr ""
 msgid "Invalid document. Sheet name is empty."
 msgstr "Невалидна келија во ПодатокY"
 
-#: core/Map.cpp:242 engine/MapBase.cpp:186
+#: core/Map.cpp:242 engine/MapBase.cpp:187
 #, fuzzy, kde-format
 msgid "Sheet%1"
 msgstr "Избери"
@@ -3344,15 +3344,15 @@ msgstr ""
 msgid "Related Functions"
 msgstr "Функција"
 
-#: engine/Localization.cpp:237
-#, fuzzy, kde-format
-msgid "false"
-msgstr "аке е неточно"
-
-#: engine/Localization.cpp:237
+#: engine/Localization.cpp:413
 #, fuzzy, kde-format
 msgid "true"
 msgstr "ако е точно"
+
+#: engine/Localization.cpp:414
+#, fuzzy, kde-format
+msgid "false"
+msgstr "аке е неточно"
 
 #: engine/SheetBase.cpp:343
 #, kde-format
@@ -16576,10 +16576,9 @@ msgstr "Помести кон лево"
 msgid "All Borders"
 msgstr "Сите граници"
 
-#: ui/CellToolBase.cpp:319 ui/CellToolBase.cpp:546
-#: ui/dialogs/FormulaDialog.cpp:84 ui/dialogs/FormulaDialog.cpp:190
-#: ui/dialogs/FormulaDialog.cpp:722 ui/dialogs/ValidityDialog.cpp:64
-#: ui/FilterPopup.cpp:55
+#: ui/CellToolBase.cpp:319 ui/dialogs/FormulaDialog.cpp:84
+#: ui/dialogs/FormulaDialog.cpp:190 ui/dialogs/FormulaDialog.cpp:722
+#: ui/dialogs/ValidityDialog.cpp:64 ui/FilterPopup.cpp:55
 #, kde-format
 msgid "All"
 msgstr "Сите"
@@ -17018,7 +17017,7 @@ msgstr "Одстрани Келија"
 msgid "Removes the cells from the spreadsheet"
 msgstr "Вметни Табела"
 
-#: ui/CellToolBase.cpp:547
+#: ui/CellToolBase.cpp:546 ui/CellToolBase.cpp:547
 #, fuzzy, kde-format
 msgid "Clear All"
 msgstr "Келија"
@@ -17381,7 +17380,7 @@ msgstr "Формула Избор"
 msgid "Insert a function"
 msgstr "Вметни колона"
 
-#: ui/CellToolBase.cpp:730 ui/CellToolBase.cpp:2931
+#: ui/CellToolBase.cpp:730 ui/CellToolBase.cpp:2930
 #, kde-format
 msgid "Others..."
 msgstr "Останати..."
@@ -17630,20 +17629,20 @@ msgstr "Вметни колона"
 msgid "Edit Link"
 msgstr "Вметни колона"
 
-#: ui/CellToolBase.cpp:2573 ui/CellToolBase.cpp:2585 ui/CellToolBase.cpp:2607
-#: ui/CellToolBase.cpp:2894 ui/CellToolBase.cpp:2906
+#: ui/CellToolBase.cpp:2572 ui/CellToolBase.cpp:2584 ui/CellToolBase.cpp:2606
+#: ui/CellToolBase.cpp:2893 ui/CellToolBase.cpp:2905
 #, fuzzy, kde-format
 msgid "You must select multiple cells."
 msgstr "Стил на Табела..."
 
-#: ui/CellToolBase.cpp:2812
+#: ui/CellToolBase.cpp:2811
 #, kde-format
 msgid ""
 "No database drivers available. To use this feature you need to install the "
 "necessary Qt database drivers."
 msgstr ""
 
-#: ui/CellToolBase.cpp:3395
+#: ui/CellToolBase.cpp:3394
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Replace"
@@ -18045,7 +18044,7 @@ msgctxt "(qtundo-format)"
 msgid "Remove Cells"
 msgstr "Одстрани келија"
 
-#: ui/commands/DeleteCommand.cpp:20
+#: ui/commands/DeleteCommand.cpp:22
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Delete"
@@ -18063,13 +18062,13 @@ msgctxt "(qtundo-format)"
 msgid "Decrease Indentation"
 msgstr "Намали мод"
 
-#: ui/commands/LinkCommand.cpp:25
+#: ui/commands/LinkCommand.cpp:23
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Remove Link"
 msgstr "Одстрани келија"
 
-#: ui/commands/LinkCommand.cpp:25
+#: ui/commands/LinkCommand.cpp:23
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Set Link"
@@ -19861,26 +19860,6 @@ msgstr "Одстрани келија"
 msgid "Cell or Named Area:"
 msgstr "Одстрани келија"
 
-#: ui/dialogs/LinkDialog.cpp:288
-#, fuzzy, kde-format
-msgid "Internet address is empty"
-msgstr "Каматна Стапка"
-
-#: ui/dialogs/LinkDialog.cpp:290
-#, fuzzy, kde-format
-msgid "Mail address is empty"
-msgstr "??Околински Тескт?? е празен!"
-
-#: ui/dialogs/LinkDialog.cpp:292
-#, fuzzy, kde-format
-msgid "File name is empty"
-msgstr "??Околински Тескт?? е празен!"
-
-#: ui/dialogs/LinkDialog.cpp:294
-#, fuzzy, kde-format
-msgid "Destination cell is empty"
-msgstr "Околински Текст или келијата е празна!"
-
 #: ui/dialogs/ListDialog.cpp:47
 #, fuzzy, kde-format
 msgid "Custom Lists"
@@ -21138,6 +21117,22 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "Open Link?"
 msgstr "Вметни колона"
+
+#, fuzzy
+#~ msgid "Internet address is empty"
+#~ msgstr "Каматна Стапка"
+
+#, fuzzy
+#~ msgid "Mail address is empty"
+#~ msgstr "??Околински Тескт?? е празен!"
+
+#, fuzzy
+#~ msgid "File name is empty"
+#~ msgstr "??Околински Тескт?? е празен!"
+
+#, fuzzy
+#~ msgid "Destination cell is empty"
+#~ msgstr "Околински Текст или келијата е празна!"
 
 #, fuzzy
 #~ msgid "You cannot change a protected sheet"
