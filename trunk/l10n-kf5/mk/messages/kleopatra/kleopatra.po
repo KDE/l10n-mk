@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-30 00:47+0000\n"
+"POT-Creation-Date: 2022-09-06 00:46+0000\n"
 "PO-Revision-Date: 2009-01-08 13:02+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1632,8 +1632,8 @@ msgstr ""
 #: src/commands/importcertificatefromfilecommand.cpp:134
 #: src/commands/importcertificatescommand.cpp:493
 #: src/commands/importcertificatescommand.cpp:501
-#: src/commands/importcertificatescommand.cpp:834
-#: src/commands/importcertificatescommand.cpp:885
+#: src/commands/importcertificatescommand.cpp:836
+#: src/commands/importcertificatescommand.cpp:887
 #, kde-format
 msgid "Certificate Import Failed"
 msgstr "Внесувањето на сертификатот не успеа"
@@ -1945,13 +1945,20 @@ msgstr ""
 "<qt><p>Се појави грешка при обидот да се внеси сертификатот %1:</p><p><b>%2</"
 "b></p></qt>"
 
-#: src/commands/importcertificatescommand.cpp:569
+#. i18n(" ") as initializer because initializing with empty string leads to
+#. (I18N_EMPTY_MESSAGE)
+#: src/commands/importcertificatescommand.cpp:570
+#, kde-format
+msgid " "
+msgstr ""
+
+#: src/commands/importcertificatescommand.cpp:571
 #, kde-kuit-format
 msgctxt "@info"
 msgid "%1<item>%2</item>"
 msgstr ""
 
-#: src/commands/importcertificatescommand.cpp:573
+#: src/commands/importcertificatescommand.cpp:575
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1960,14 +1967,14 @@ msgid ""
 "%2</list></para>Is this your own key? (Set trust level to ultimate)"
 msgstr ""
 
-#: src/commands/importcertificatescommand.cpp:585
+#: src/commands/importcertificatescommand.cpp:587
 #, fuzzy, kde-format
 #| msgid "Secret keys imported:"
 msgctxt "@title:window"
 msgid "Secret key imported"
 msgstr "Внесени тајни клучеви:"
 
-#: src/commands/importcertificatescommand.cpp:797
+#: src/commands/importcertificatescommand.cpp:799
 #, fuzzy, kde-format
 #| msgid "Exporting certificate..."
 msgid "Fetching 1 signer key... (this can take a while)"
@@ -1976,8 +1983,8 @@ msgstr[0] "Извезување на сертификат..."
 msgstr[1] "Извезување на сертификат..."
 msgstr[2] "Извезување на сертификат..."
 
-#: src/commands/importcertificatescommand.cpp:832
-#: src/commands/importcertificatescommand.cpp:883
+#: src/commands/importcertificatescommand.cpp:834
+#: src/commands/importcertificatescommand.cpp:885
 #, kde-format
 msgid ""
 "The type of this certificate (%1) is not supported by this Kleopatra "
@@ -4003,7 +4010,7 @@ msgid ""
 msgstr ""
 
 #: src/crypto/createchecksumscontroller.cpp:293
-#: src/dialogs/updatenotification.cpp:74 src/mainwindow.cpp:771
+#: src/dialogs/updatenotification.cpp:74 src/mainwindow.cpp:777
 #, fuzzy, kde-format
 #| msgid "Canceled."
 msgid "Cancel"
@@ -8292,7 +8299,7 @@ msgstr ""
 
 #. i18n: ectx: Menu (certMenu)
 #. i18n: ectx: Menu (listview_popup)
-#: src/kleopatra.rc:44 src/kleopatra.rc:119
+#: src/kleopatra.rc:44 src/kleopatra.rc:120
 #, kde-format
 msgid "&Certificates"
 msgstr "&Сертификати"
@@ -8322,7 +8329,7 @@ msgid "&Help"
 msgstr ""
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: src/kleopatra.rc:104 src/kwatchgnupg/kwatchgnupgui.rc:13
+#: src/kleopatra.rc:105 src/kwatchgnupg/kwatchgnupgui.rc:13
 #, fuzzy, kde-format
 #| msgid "Search Toolbar"
 msgid "Main Toolbar"
@@ -8805,42 +8812,54 @@ msgctxt ""
 msgid "BSI-VSA-10584-ENG_secops-20220207.pdf"
 msgstr ""
 
-#: src/mainwindow.cpp:620
+#: src/mainwindow.cpp:620 src/view/smartcardwidget.cpp:119
+#, kde-format
+msgid "Smartcard Management"
+msgstr ""
+
+#: src/mainwindow.cpp:622
+#, kde-format
+msgctxt ""
+"Only available in German and English. Leave to English for other languages."
+msgid "smartcard_howto_de.pdf"
+msgstr ""
+
+#: src/mainwindow.cpp:626
 #, kde-format
 msgid "GnuPG Manual"
 msgstr ""
 
-#: src/mainwindow.cpp:644
+#: src/mainwindow.cpp:650
 #, kde-format
 msgid ""
 "There are still some background operations ongoing. These will be terminated "
 "when closing the window. Proceed?"
 msgstr ""
 
-#: src/mainwindow.cpp:647
+#: src/mainwindow.cpp:653
 #, kde-format
 msgid "Ongoing Background Tasks"
 msgstr ""
 
-#: src/mainwindow.cpp:755 src/view/keylistcontroller.cpp:398
+#: src/mainwindow.cpp:761 src/view/keylistcontroller.cpp:398
 #, kde-format
 msgid "Sign/Encrypt..."
 msgstr ""
 
-#: src/mainwindow.cpp:756 src/utils/clipboardmenu.cpp:47
+#: src/mainwindow.cpp:762 src/utils/clipboardmenu.cpp:47
 #: src/view/keylistcontroller.cpp:394
 #, fuzzy, kde-format
 #| msgid "Deleting keys..."
 msgid "Decrypt/Verify..."
 msgstr "Бришам клучеви..."
 
-#: src/mainwindow.cpp:761
+#: src/mainwindow.cpp:767
 #, fuzzy, kde-format
 #| msgid "Import Certificates..."
 msgid "Import Certificates"
 msgstr "Внеси сертификати..."
 
-#: src/mainwindow.cpp:762
+#: src/mainwindow.cpp:768
 #, fuzzy, kde-format
 #| msgid "Import CRLs..."
 msgid "Import CRLs"
@@ -10305,7 +10324,7 @@ msgid ""
 "bug."
 msgstr ""
 
-#: src/utils/accessibility.cpp:71
+#: src/utils/accessibility.cpp:94
 #, fuzzy, kde-format
 #| msgid "Description"
 msgctxt ""
@@ -10314,7 +10333,7 @@ msgctxt ""
 msgid "invalid entry"
 msgstr "Опис"
 
-#: src/utils/accessibility.cpp:78
+#: src/utils/accessibility.cpp:101
 #, kde-format
 msgctxt ""
 "text for screen readers to indicate that the associated object, such as a "
@@ -11634,11 +11653,6 @@ msgstr "Избриши ги сертификатите"
 #: src/view/smartcardwidget.cpp:61
 #, kde-format
 msgid "Kleopatra currently supports the following card types:"
-msgstr ""
-
-#: src/view/smartcardwidget.cpp:119
-#, kde-format
-msgid "Smartcard Management"
 msgstr ""
 
 #: src/view/smartcardwidget.cpp:161
