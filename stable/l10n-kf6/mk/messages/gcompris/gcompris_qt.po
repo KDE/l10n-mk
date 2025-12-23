@@ -94,6 +94,54 @@ msgctxt "ActivityInfo|"
 msgid "Find the requested numbers and drag them to the corresponding spot."
 msgstr "Најдете го точниот датум и изберете го на календарот."
 
+#. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
+#: activities/adjacent_numbers/Adjacent_numbers.qml:56
+#, fuzzy, qt-format
+#| msgctxt "ActivityInfo|"
+#| msgid "Division of numbers"
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n previous number(s)."
+msgid_plural "Find the %n previous number(s)."
+msgstr[0] "Делење на броеви"
+msgstr[1] "Делење на броеви"
+msgstr[2] "Делење на броеви"
+
+#. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
+#: activities/adjacent_numbers/Adjacent_numbers.qml:60
+#, fuzzy, qt-format
+#| msgctxt "ActivityInfo|"
+#| msgid "Division of numbers"
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n next number(s)."
+msgid_plural "Find the %n next number(s)."
+msgstr[0] "Делење на броеви"
+msgstr[1] "Делење на броеви"
+msgstr[2] "Делење на броеви"
+
+#. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
+#: activities/adjacent_numbers/Adjacent_numbers.qml:64
+#, fuzzy, qt-format
+#| msgctxt "ActivityInfo|"
+#| msgid "Division of numbers"
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n in-between number(s)"
+msgid_plural "Find the %n in-between number(s)"
+msgstr[0] "Делење на броеви"
+msgstr[1] "Делење на броеви"
+msgstr[2] "Делење на броеви"
+
+#. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
+#: activities/adjacent_numbers/Adjacent_numbers.qml:68
+#, fuzzy, qt-format
+#| msgctxt "ActivityInfo|"
+#| msgid "Division of numbers"
+msgctxt "Adjacent_numbers|"
+msgid "Find the %n missing numbers"
+msgid_plural "Find the %n missing numbers"
+msgstr[0] "Делење на броеви"
+msgstr[1] "Делење на броеви"
+msgstr[2] "Делење на броеви"
+
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 #, fuzzy
 #| msgctxt "Data|"
@@ -117,62 +165,6 @@ msgstr "Броеви помеѓу %1 и %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 100."
 msgstr "Броеви помеѓу %1 и %2."
-
-#: activities/adjacent_numbers/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
-msgctxt "Data|"
-msgid "Find the next number."
-msgstr "Делење на броеви"
-
-#: activities/adjacent_numbers/resource/3/Data.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
-msgctxt "Data|"
-msgid "Find the previous number."
-msgstr "Делење на броеви"
-
-#: activities/adjacent_numbers/resource/3/Data.qml:40
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
-msgctxt "Data|"
-msgid "Find the in-between number."
-msgstr "Делење на броеви"
-
-#: activities/adjacent_numbers/resource/3/Data.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
-msgctxt "Data|"
-msgid "Find the missing numbers."
-msgstr "Делење на броеви"
-
-#: activities/adjacent_numbers/resource/3/Data.qml:66
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
-msgctxt "Data|"
-msgid "Find the next numbers."
-msgstr "Делење на броеви"
-
-#: activities/adjacent_numbers/resource/3/Data.qml:79
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
-msgctxt "Data|"
-msgid "Find the previous numbers."
-msgstr "Делење на броеви"
-
-#: activities/adjacent_numbers/resource/3/Data.qml:105
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
-msgctxt "Data|"
-msgid "Find the in-between numbers."
-msgstr "Делење на броеви"
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
 #, fuzzy
@@ -243,6 +235,7 @@ msgstr ""
 #: activities/colors/ActivityInfo.qml:25
 #: activities/comparator/ActivityInfo.qml:27
 #: activities/crane/ActivityInfo.qml:30
+#: activities/drawing_wheels/ActivityInfo.qml:28
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
@@ -303,6 +296,7 @@ msgstr ""
 #: activities/money_back_cents/ActivityInfo.qml:25
 #: activities/money_cents/ActivityInfo.qml:25
 #: activities/mosaic/ActivityInfo.qml:24
+#: activities/multiple_choice_questions/ActivityInfo.qml:25
 #: activities/numbers-odd-even/ActivityInfo.qml:24
 #: activities/piano_composition/ActivityInfo.qml:33
 #: activities/planegame/ActivityInfo.qml:24
@@ -314,7 +308,7 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:25
 #: activities/roman_numerals/ActivityInfo.qml:25
 #: activities/simplepaint/ActivityInfo.qml:24
-#: activities/sketch/ActivityInfo.qml:23
+#: activities/sketch/ActivityInfo.qml:27
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
@@ -3019,12 +3013,12 @@ msgstr ""
 "Вклучете ги точните светилки за да го претставите дадениот декаден број во "
 "бинарен броен систем. Кога ќе завршите, притиснете ОК."
 
-#: activities/binary_bulb/BinaryBulb.qml:84
+#: activities/binary_bulb/BinaryBulb.qml:95
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr "Оваа активност учи како да претворете декаден во бинарен број."
 
-#: activities/binary_bulb/BinaryBulb.qml:88
+#: activities/binary_bulb/BinaryBulb.qml:99
 msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
@@ -3035,13 +3029,13 @@ msgstr ""
 "состојбати, 0 и 1. Математички, овие состојби се претставени со 0 и 1, што "
 "го сочинува бинарниот систем на нумерирање."
 
-#: activities/binary_bulb/BinaryBulb.qml:92
+#: activities/binary_bulb/BinaryBulb.qml:103
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
 "Во оваа активност 0 и 1 се прикажани со светилки, вклучени или исклучени."
 
-#: activities/binary_bulb/BinaryBulb.qml:96
+#: activities/binary_bulb/BinaryBulb.qml:107
 msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
@@ -3050,7 +3044,7 @@ msgstr ""
 "Бинарниот систем ги користи овие броеви многу ефикасно, овозможувајќи да се "
 "брои од 0 до 255 со само 8 бита."
 
-#: activities/binary_bulb/BinaryBulb.qml:100
+#: activities/binary_bulb/BinaryBulb.qml:111
 msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
@@ -3063,13 +3057,13 @@ msgstr ""
 "бит 4 → 2³ = 8, бит 5 → 2⁴ = 16, бит 6 → 2⁵ = 32, бит 7 → 2⁶ = 64, бит 8 → "
 "2⁷ = 128."
 
-#: activities/binary_bulb/BinaryBulb.qml:104
+#: activities/binary_bulb/BinaryBulb.qml:115
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr ""
 "За претворање на декадниот број 5 во бинарна вредност, се собираат 1 и 4."
 
-#: activities/binary_bulb/BinaryBulb.qml:108
+#: activities/binary_bulb/BinaryBulb.qml:119
 msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
@@ -3078,16 +3072,56 @@ msgstr ""
 "Соодветните битови се поставени на 1, а другите поставени на 0. Декадниот "
 "број 5 е еднаков на бинарниот број 101."
 
-#: activities/binary_bulb/BinaryBulb.qml:112
+#: activities/binary_bulb/BinaryBulb.qml:123
 msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Оваа слика ќе ви помогне да ја пресметате вредноста на битовите."
 
-#: activities/binary_bulb/BinaryBulb.qml:160
+#: activities/binary_bulb/BinaryBulb.qml:171
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
 msgstr "Кој е бинарниот приказ на бројот %1?"
+
+#: activities/binary_bulb/resource/1/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 3 (with counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/2/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 3 (without counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/3/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 15 (with counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/4/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 15 (without counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/5/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 255 (with counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/6/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 255 (without counter and with values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/7/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 15 (without counter and without values visible)."
+msgstr ""
+
+#: activities/binary_bulb/resource/8/Data.qml:13
+msgctxt "Data|"
+msgid "Count up to 255 (without counter and without values visible)."
+msgstr ""
 
 #: activities/binary_bulb/resource/tutorial4.qml:31
 msgctxt "tutorial4|"
@@ -3834,7 +3868,7 @@ msgstr ""
 "Разгледајте ги упатствата и потоа повлечете и испуштете ги елементите како "
 "што е наведено."
 
-#: activities/categorization/Categorization.qml:150
+#: activities/categorization/Categorization.qml:149
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3846,12 +3880,12 @@ msgstr ""
 "демо верзијата или 'Никогаш не го прикажувајте овој дијалог подоцна' ако "
 "сакате никогаш повеќе да не го видите овој дијалог."
 
-#: activities/categorization/Categorization.qml:153
+#: activities/categorization/Categorization.qml:152
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Ажурирајте го множеството слики"
 
-#: activities/categorization/Categorization.qml:154
+#: activities/categorization/Categorization.qml:153
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Никогаш не го прикажувајте овој дијалог подоцна"
@@ -5465,12 +5499,12 @@ msgstr ""
 "Најкратката стрелка ги означува часовите, подолгата покажува минутите,а "
 "најдолгата стрелка ги означува секундите."
 
-#: activities/clockgame/Clockgame.qml:112
+#: activities/clockgame/Clockgame.qml:124
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Поставете го часовникот на:"
 
-#: activities/clockgame/Clockgame.qml:115
+#: activities/clockgame/Clockgame.qml:127
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5479,7 +5513,7 @@ msgstr[0] "%n часот"
 msgstr[1] "%n часот"
 msgstr[2] "%n часот"
 
-#: activities/clockgame/Clockgame.qml:118
+#: activities/clockgame/Clockgame.qml:130
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5488,7 +5522,7 @@ msgstr[0] "%n минута"
 msgstr[1] "%n минути"
 msgstr[2] "%n минути"
 
-#: activities/clockgame/Clockgame.qml:121
+#: activities/clockgame/Clockgame.qml:133
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5903,7 +5937,7 @@ msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
 msgstr ""
 
-#: activities/comparator/resource/1/Data.qml:36
+#: activities/comparator/resource/1/Data.qml:53
 #: activities/tens_complement_find/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
@@ -6232,7 +6266,7 @@ msgstr "Дигитални кола"
 #| msgctxt "ActivityInfo|"
 #| msgid "Create and simulate a digital electric schema."
 msgctxt "ActivityInfo|"
-msgid "Create and simulate a digital logic circuit"
+msgid "Create and simulate a digital logic circuit."
 msgstr "Создадете и симулирајте дигитална електрична шема."
 
 #. Help goal
@@ -6994,6 +7028,278 @@ msgstr ""
 "ќе свети само кога е вклучен првиот прекинувач а вториот прекинувач е "
 "исклучен или првиот прекинувач е исклучен и вториот прекинувач е вклучен."
 
+#: activities/drawing_wheels/ActivityConfig.qml:29
+#: activities/sketch/ActivityConfig.qml:29
+#, fuzzy, qt-format
+#| msgctxt "guessnumber|"
+#| msgid "Number found!"
+msgctxt "ActivityConfig|"
+msgid "Number of undo: %1"
+msgstr "Бројот е пронајден!"
+
+#: activities/drawing_wheels/ActivityConfig.qml:44
+#: activities/sketch/ActivityConfig.qml:44
+msgctxt "ActivityConfig|"
+msgid ""
+"Warning: setting the number of undo too high can make the application crash "
+"if your device doesn't have enough memory."
+msgstr ""
+
+#. Activity title
+#: activities/drawing_wheels/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Draw letters"
+msgctxt "ActivityInfo|"
+msgid "Drawing wheels"
+msgstr "Цртање на букви"
+
+#. Help title
+#: activities/drawing_wheels/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Touch the numbers in the right order."
+msgctxt "ActivityInfo|"
+msgid "Roll the gear in the cogwheel to draw."
+msgstr "Кликнете на броевите по редослед."
+
+#. Help goal
+#: activities/drawing_wheels/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn about multiples and factors."
+msgctxt "ActivityInfo|"
+msgid "Discover hypotrochoids and use them as digital painting tools."
+msgstr "Дознајте повеќе за содржатели и делители."
+
+#. Help manual
+#: activities/drawing_wheels/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid ""
+"Make beautiful drawings by rolling the gear in the cogwheel with the chosen "
+"pen. Select a wheel size, a gear size, pen's settings and color from the "
+"popup panels, and press the play button to roll the gear. You can use the "
+"file menu to save your image, open a previously saved image, or create a new "
+"image with selected background color. Saving an image will save it in an SVG "
+"file (vector format), along with a PNG file (pixel format). Only the SVG "
+"file can be opened again from the activity.<br><br>"
+msgstr ""
+
+#: activities/drawing_wheels/ActivityInfo.qml:29
+#: activities/sketch/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Ctrl + Z: undo"
+msgctxt "ActivityInfo|"
+msgid "Ctrl + Z: undo last action"
+msgstr "Ctrl + Z: врати"
+
+#: activities/drawing_wheels/ActivityInfo.qml:30
+#: activities/sketch/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Ctrl + Y: redo last action"
+msgstr ""
+
+#: activities/drawing_wheels/ActivityInfo.qml:31
+#: activities/sketch/ActivityInfo.qml:30
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Ctrl + A: select all the text"
+msgctxt "ActivityInfo|"
+msgid "Ctrl + S: save the image"
+msgstr "Ctrl + A: одбележување на цел текст"
+
+#: activities/drawing_wheels/ActivityInfo.qml:32
+#: activities/sketch/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Ctrl + O: open an image"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:378
+msgctxt "DrawingWheels|"
+msgid "File menu"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:390
+msgctxt "DrawingWheels|"
+msgid "Wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:414
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Piano composition"
+msgctxt "DrawingWheels|"
+msgid "Pencil size and position"
+msgstr "Пијано композиција"
+
+#: activities/drawing_wheels/DrawingWheels.qml:426
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font selector"
+msgctxt "DrawingWheels|"
+msgid "Color selector"
+msgstr "Селектор на фонт"
+
+#: activities/drawing_wheels/DrawingWheels.qml:453
+#, fuzzy
+#| msgctxt "OptionsRow|"
+#| msgid "Undo"
+msgctxt "DrawingWheels|"
+msgid "Undo"
+msgstr "Врати"
+
+#: activities/drawing_wheels/DrawingWheels.qml:465
+msgctxt "DrawingWheels|"
+msgid "Redo"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:499
+msgctxt "DrawingWheels|"
+msgid "Stop drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:499
+msgctxt "DrawingWheels|"
+msgid "Start drawing"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:532
+msgctxt "DrawingWheels|"
+msgid "Show wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:532
+msgctxt "DrawingWheels|"
+msgid "Hide wheel and gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:691
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Select your mode"
+msgctxt "DrawingWheels|"
+msgid "Save your image"
+msgstr "Изберете го вашиот режим"
+
+#: activities/drawing_wheels/DrawingWheels.qml:706
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Many new images"
+msgctxt "DrawingWheels|"
+msgid "Open an image"
+msgstr "Многу нови слики"
+
+#: activities/drawing_wheels/DrawingWheels.qml:735
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Many new images"
+msgctxt "DrawingWheels|"
+msgid "Create a new image"
+msgstr "Многу нови слики"
+
+#: activities/drawing_wheels/DrawingWheels.qml:754
+#, fuzzy
+#| msgctxt "DownloadDialog|"
+#| msgid "Background"
+msgctxt "DrawingWheels|"
+msgid "Background color"
+msgstr "Позадина"
+
+#: activities/drawing_wheels/DrawingWheels.qml:835
+msgctxt "DrawingWheels|"
+msgid "Wheel"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:902
+msgctxt "DrawingWheels|"
+msgid "Gear"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:965
+#, fuzzy, qt-format
+#| msgctxt "SignalGenerator|"
+#| msgid "%1 s"
+msgctxt "DrawingWheels|"
+msgid "%1 spikes"
+msgstr "%1 s"
+
+#: activities/drawing_wheels/DrawingWheels.qml:983
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Speed"
+msgctxt "DrawingWheels|"
+msgid "Speed"
+msgstr "Брзина"
+
+#: activities/drawing_wheels/DrawingWheels.qml:999
+msgctxt "DrawingWheels|"
+msgid "Slow"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:1019
+msgctxt "DrawingWheels|"
+msgid "Fast"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:1062
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Font size"
+msgctxt "DrawingWheels|"
+msgid "Pen size"
+msgstr "Големина на фонт"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1099
+msgctxt "DrawingWheels|"
+msgid "Opacity"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:1142
+msgctxt "DrawingWheels|"
+msgid "Offset"
+msgstr ""
+
+#: activities/drawing_wheels/DrawingWheels.qml:1180
+#, fuzzy
+#| msgctxt "IntroMessage|"
+#| msgid "Start"
+msgctxt "DrawingWheels|"
+msgid "Start tooth"
+msgstr "Старт"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1360
+#, fuzzy
+#| msgctxt "Piano_composition|"
+#| msgid "You have not selected any note. Do you want to erase all the notes?"
+msgctxt "DrawingWheels|"
+msgid "You did not save this image. Do you want to close this activity?"
+msgstr "Немате одберено ниедна нота. Дали сакате да ги избришате сите ноти?"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1361
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Do you want to download it now?"
+msgctxt "DrawingWheels|"
+msgid "Do you want to erase this image?"
+msgstr "Дали сакате да ја преземете сега?"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1362
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "Yes"
+msgctxt "DrawingWheels|"
+msgid "Yes"
+msgstr "Да"
+
+#: activities/drawing_wheels/DrawingWheels.qml:1363
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "No"
+msgctxt "DrawingWheels|"
+msgid "No"
+msgstr "Не"
+
 #. Activity title
 #: activities/drawletters/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -7605,11 +7911,18 @@ msgid "Chichén Itzá"
 msgstr "Чичен Ица (Chichén Itzá)"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
+#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
+#| "established before the period of Christopher Colombus and probably served "
+#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
 "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
-"established before the period of Christopher Colombus and probably served as "
+"established before the period of Christopher Columbus and probably served as "
 "the religion center of Yucatan for a while."
 msgstr ""
 "Чичен Ица, што значи „на устието на изворот Ица“, е град на Маите на "
@@ -8702,6 +9015,392 @@ msgstr "Египетски пирамиди"
 msgctxt "board6|"
 msgid "Click on the location of the given pyramid."
 msgstr "Кликнете на локацијата каде се наоѓа дадената пирамида."
+
+#: activities/explore_monuments/resource/board/board7.qml:17
+#: activities/explore_monuments/resource/board/board7.qml:20
+msgctxt "board7|"
+msgid "Forbidden City"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:18
+msgctxt "board7|"
+msgid ""
+"The Forbidden City, located in the heart of Beijing, China, is a magnificent "
+"imperial palace complex that served as the home of Chinese emperors and the "
+"political center of the nation for nearly 500 years, from the Ming dynasty "
+"(1368–1644) to the end of the Qing dynasty (1644–1912). Built between 1406 "
+"and 1420, this sprawling architectural masterpiece spans 180 acres and "
+"features over 980 preserved buildings with 8,700 rooms, showcasing "
+"traditional Chinese palatial design. Surrounded by a moat and a massive "
+"wall, the Forbidden City was once inaccessible to the general public, "
+"symbolizing imperial power and exclusivity."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:28
+#: activities/explore_monuments/resource/board/board7.qml:31
+msgctxt "board7|"
+msgid "Leshan Giant Buddha"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:29
+msgctxt "board7|"
+msgid ""
+"The Leshan Giant Buddha, located in Sichuan Province, China, is a colossal "
+"statue carved into a cliff at the confluence of the Min, Dadu, and Qingyi "
+"rivers. Standing at 71 meters (233 feet), it is the tallest pre-modern "
+"statue in the world and a UNESCO World Heritage Site. Built during the Tang "
+"Dynasty (713–803 AD), the statue represents Maitreya, the Buddha of the "
+"future, and was created to calm the turbulent waters threatening local boat "
+"traffic. Ingeniously designed, the statue includes a hidden drainage system "
+"to prevent erosion. Its serene expression and intricate craftsmanship make "
+"it a symbol of spiritual and artistic achievement."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:39
+#: activities/explore_monuments/resource/board/board7.qml:42
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Mysore Palace"
+msgctxt "board7|"
+msgid "Potala Palace"
+msgstr "Палатата Мајсур"
+
+#: activities/explore_monuments/resource/board/board7.qml:40
+msgctxt "board7|"
+msgid ""
+"The Potala Palace, perched on Red Hill in Lhasa, Tibet, is an iconic symbol "
+"of Tibetan culture and a UNESCO World Heritage Site. Originally built in the "
+"7th century and expanded in the 17th century, it served as the winter "
+"residence of the Dalai Lamas and the center of Tibetan governance. Rising 13 "
+"stories high with over 1,000 rooms, the palace combines intricate Tibetan "
+"architecture, vibrant murals, and sacred relics. It is divided into the "
+"White Palace, housing administrative areas, and the Red Palace, dedicated to "
+"religious studies and prayer. The Potala Palace stands as a testament to "
+"Tibet's spiritual and historical legacy."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:50
+#: activities/explore_monuments/resource/board/board7.qml:53
+msgctxt "board7|"
+msgid "Terracotta Army"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:51
+msgctxt "board7|"
+msgid ""
+"The Terracotta Army is a collection of thousands of life-sized clay "
+"soldiers, horses, and chariots buried with China's first emperor, Qin Shi "
+"Huang, to accompany him in the afterlife. Discovered in 1974 near Xi'an, the "
+"figures date back to approximately 210 BCE and are celebrated for their "
+"incredible detail, with each warrior uniquely crafted to represent the "
+"diverse ranks and roles of an ancient Chinese army."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:61
+#: activities/explore_monuments/resource/board/board7.qml:64
+msgctxt "board7|"
+msgid "Sun and Moon Pagodas"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:62
+msgctxt "board7|"
+msgid ""
+"The Sun and Moon Pagodas, located in Guilin, China, are iconic twin towers "
+"that symbolize the city's cultural and spiritual heritage. Originally built "
+"during the Tang Dynasty, they were reconstructed in the 20th century as "
+"striking landmarks on Shanhu Lake. The Sun Pagoda, standing 41 meters tall, "
+"is a bronze structure—the tallest of its kind in the world—while the Moon "
+"Pagoda, at 35 meters, is built of glazed tiles. These pagodas represent the "
+"harmony of yin and yang and are connected by an underwater glass tunnel. "
+"Illuminated at night, they are popular attractions showcasing traditional "
+"Chinese architecture and modern ingenuity."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:72
+#: activities/explore_monuments/resource/board/board7.qml:75
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Eiffel Tower"
+msgctxt "board7|"
+msgid "Diaolou Towers"
+msgstr "Ајфеловата кула"
+
+#: activities/explore_monuments/resource/board/board7.qml:73
+msgctxt "board7|"
+msgid ""
+"The Diaolou Towers, found in Kaiping, Guangdong Province, China, are "
+"fortified multi-story structures built from the late 19th to early 20th "
+"centuries to protect against bandits and floods. Blending Western "
+"architectural styles like Romanesque and Baroque with traditional Chinese "
+"elements, they reflect the wealth and influence of overseas Chinese "
+"emigrants. Constructed with reinforced concrete, these towers symbolize a "
+"period of cultural and economic transition in rural China. Designated a "
+"UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
+"towers remain, offering insight into this unique architectural heritage."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
+msgctxt "board7|"
+msgid "Monuments of China"
+msgstr "Споменици на Индија"
+
+#: activities/explore_monuments/resource/board/board7.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
+msgctxt "board7|"
+msgid "Click on the location of the given monument."
+msgstr "Кликнете на локацијата каде се наоѓа дадениот споменик."
+
+#: activities/explore_monuments/resource/board/board8.qml:17
+#: activities/explore_monuments/resource/board/board8.qml:20
+msgctxt "board8|"
+msgid "The Pantheon"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:18
+msgctxt "board8|"
+msgid ""
+"The Pantheon in Rome, Italy, is an iconic ancient temple built around 126 AD "
+"during Emperor Hadrian's reign, on the site of earlier structures "
+"commissioned by Marcus Agrippa. Renowned for its architectural brilliance, "
+"it features a massive domed roof with a central oculus, symbolizing the "
+"heavens, allowing natural light to illuminate the interior. Originally "
+"dedicated to all Roman gods, it was later converted into a Christian church, "
+"known as the Basilica of St. Mary and the Martyrs (Santa Maria ad Martyres), "
+"in 609 AD. Its dome, the largest unreinforced concrete dome in the world, "
+"showcases remarkable engineering and symmetry, inspiring architects for "
+"centuries. The Pantheon’s harmonious proportions and historical significance "
+"make it a timeless masterpiece of classical architecture."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:28
+#: activities/explore_monuments/resource/board/board8.qml:31
+msgctxt "board8|"
+msgid "Duomo Di Milano"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:29
+msgctxt "board8|"
+msgid ""
+"The Duomo di Milano, also known as the Milan Cathedral, is an iconic Gothic "
+"masterpiece located in the heart of Milan, Italy. Constructed over nearly "
+"six centuries, it is one of the largest cathedrals in the world and a symbol "
+"of Milan's artistic and cultural heritage. Its intricate façade is adorned "
+"with countless statues, spires, and gargoyles, reflecting the grandeur of "
+"Gothic architecture. Visitors can explore its stunning interiors, featuring "
+"beautiful stained glass windows and intricate marble details, or ascend to "
+"the rooftop for breathtaking views of the city and the Alps. The Duomo "
+"stands as a testament to Italy's rich history and architectural brilliance."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:39
+#: activities/explore_monuments/resource/board/board8.qml:42
+#, fuzzy
+#| msgctxt "board4|"
+#| msgid "Worms Cathedral"
+msgctxt "board8|"
+msgid "Florence Cathedral"
+msgstr "Вормска катедрала"
+
+#: activities/explore_monuments/resource/board/board8.qml:40
+msgctxt "board8|"
+msgid ""
+"The Florence Cathedral, officially known as the Cattedrale di Santa Maria "
+"del Fiore, is a renowned masterpiece of Gothic and Renaissance architecture "
+"located in Florence, Italy. Completed in 1436, it is famous for its massive "
+"red-tiled dome designed by Filippo Brunelleschi, which remains an "
+"engineering marvel and a symbol of the city. The cathedral's intricate "
+"marble facade, added in the 19th century, complements its richly decorated "
+"interior and artistic treasures. Together with Giotto’s Campanile and the "
+"Baptistery of St. John, it forms part of a UNESCO World Heritage Site, "
+"drawing millions of visitors annually for its historical, cultural, and "
+"architectural significance."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:50
+#: activities/explore_monuments/resource/board/board8.qml:53
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The Tower of Hanoi"
+msgctxt "board8|"
+msgid "Leaning Tower of Pisa"
+msgstr "Кулата Ханој"
+
+#: activities/explore_monuments/resource/board/board8.qml:51
+msgctxt "board8|"
+msgid ""
+"The Leaning Tower of Pisa, located in the Italian city of Pisa, is a "
+"globally renowned architectural marvel. Constructed as the freestanding bell "
+"tower for the city's cathedral, it is famous for its unintended tilt, caused "
+"by unstable foundation soil. Begun in 1173, the tower's construction spanned "
+"nearly 200 years, during which efforts were made to stabilize its "
+"inclination. Standing at approximately 56 meters (183 feet), the tower's "
+"Romanesque design features eight stories, including a bell chamber, adorned "
+"with intricately carved columns and arches. Recognized as a UNESCO World "
+"Heritage Site, it remains a symbol of resilience and ingenuity."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:61
+#: activities/explore_monuments/resource/board/board8.qml:64
+msgctxt "board8|"
+msgid "St Mark's Basilica"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:62
+msgctxt "board8|"
+msgid ""
+"St. Mark's Basilica, located in Venice, Italy, is an iconic masterpiece of "
+"Byzantine architecture and one of the city's most famous landmarks. "
+"Originally built in 828 to house the relics of St. Mark the Evangelist, it "
+"was rebuilt in its current form in the 11th century. Known for its opulent "
+"design, the basilica features a blend of Eastern and Western influences, "
+"evident in its five domes, intricate mosaics, and ornate facade adorned with "
+"statues and carvings. The interior is richly decorated with gold mosaics and "
+"marble floors, showcasing the wealth and power of the Venetian Republic. "
+"Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
+"cultural, and religious heritage."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:72
+#: activities/explore_monuments/resource/board/board8.qml:75
+msgctxt "board8|"
+msgid "Pompeii"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:73
+msgctxt "board8|"
+msgid ""
+"Pompeii was an ancient Roman city located near modern-day Naples, Italy, "
+"famously preserved after being buried by the eruption of Mount Vesuvius in "
+"79 AD. The eruption unleashed a deadly combination of ash, pumice, and "
+"pyroclastic flows, which engulfed the city and its inhabitants, preserving "
+"buildings, artifacts, and even human remains in incredible detail. "
+"Excavations of Pompeii have provided valuable insights into daily Roman "
+"life, architecture, and society, revealing a city with well-planned streets, "
+"homes, public baths, and temples. The site is now a UNESCO World Heritage "
+"Site and remains one of the most important archaeological discoveries in "
+"history."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
+msgctxt "board8|"
+msgid "Monuments of Italy"
+msgstr "Споменици на Индија"
+
+#: activities/explore_monuments/resource/board/board8.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
+msgctxt "board8|"
+msgid "Click on the location of the given monument."
+msgstr "Кликнете на локацијата каде се наоѓа дадениот споменик."
+
+#: activities/explore_monuments/resource/board/board9.qml:17
+#: activities/explore_monuments/resource/board/board9.qml:20
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Mixed Case"
+msgctxt "board9|"
+msgid "Himeji Castle"
+msgstr "Мешано"
+
+#: activities/explore_monuments/resource/board/board9.qml:18
+msgctxt "board9|"
+msgid ""
+"Himeji-jo is the finest surviving example of early 17th-century Japanese "
+"castle architecture, comprising 83 buildings with highly developed systems "
+"of defence and ingenious protection devices dating from the beginning of the "
+"Shogun period. It is a masterpiece of construction in wood, combining "
+"function with aesthetic appeal, both in its elegant appearance unified by "
+"the white plastered earthen walls and in the subtlety of the relationships "
+"between the building masses and the multiple roof layers."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board9.qml:28
+#: activities/explore_monuments/resource/board/board9.qml:31
+msgctxt "board9|"
+msgid "Hiroshima Peace Memorial Park"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board9.qml:29
+msgctxt "board9|"
+msgid ""
+"Hiroshima Peace Memorial Park is a symbol of peace and a reminder of the "
+"devastating consequences of war. Located in Hiroshima, Japan, the park "
+"commemorates the victims of the atomic bombing on August 6, 1945. The park "
+"features several monuments, including the iconic Atomic Bomb Dome, which was "
+"once a government building and now stands as a UNESCO World Heritage Site. "
+"The park also houses the Hiroshima Peace Memorial Museum, which educates "
+"visitors about the events surrounding the bombing and promotes a message of "
+"peace, nonviolence, and the importance of nuclear disarmament. It serves as "
+"a solemn space for reflection, honoring the lives lost and advocating for "
+"global peace."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board9.qml:39
+#: activities/explore_monuments/resource/board/board9.qml:42
+msgctxt "board9|"
+msgid "Arakura Fuji Sengen Shrine"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board9.qml:40
+msgctxt "board9|"
+msgid ""
+"The shrine was founded in 705 to enshrine the deity of the site. Following "
+"the great eruption of Mt. Fuji in 807, the emperor dispatched an imperial "
+"envoy to this shrine to perform a ritual to halt the eruption. It is said "
+"that during the Warring States Period, when Takeda Nobutora, the father of a "
+"famous warlord Takeda Shingen, battled with the Hojo Family, he set up camp "
+"here, prayed for victory, and won the battle. He then dedicated his sword to "
+"this shrine. Today, locals and those from afar visit the shrine to ward off "
+"evil, to pray for family happiness, and safe childbirth. In the spring, the "
+"cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
+"Mt. Fuji."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board9.qml:50
+#: activities/explore_monuments/resource/board/board9.qml:53
+msgctxt "board9|"
+msgid "Okinawa Shuri Castle"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board9.qml:51
+msgctxt "board9|"
+msgid ""
+"Shuri Castle, located in Naha, Okinawa, Japan, is a UNESCO World Heritage "
+"Site and a symbol of the Ryukyu Kingdom's rich cultural history. Originally "
+"constructed in the 14th century, the castle served as the political, "
+"economic, and cultural hub of the kingdom for centuries. Renowned for its "
+"distinctive fusion of Chinese and Japanese architectural styles, Shuri "
+"Castle features vermilion lacquered structures, ornate decorations, and a "
+"commanding hilltop position. Though destroyed during World War II, it was "
+"meticulously reconstructed and became a key tourist attraction. Tragically, "
+"much of the castle was lost in a fire in 2019, but efforts to restore it are "
+"ongoing, reflecting its enduring importance to Okinawa's heritage."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board9.qml:63
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Monuments of France"
+msgctxt "board9|"
+msgid "Monuments of Japan"
+msgstr "Споменици на Франција"
+
+#: activities/explore_monuments/resource/board/board9.qml:66
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
+msgctxt "board9|"
+msgid "Click on the location of the given monument."
+msgstr "Кликнете на локацијата каде се наоѓа дадениот споменик."
 
 #. Activity title
 #: activities/explore_world_animals/ActivityInfo.qml:19
@@ -9813,7 +10512,7 @@ msgstr ""
 "Повлечете ги соодветните броеви и операторите во квадратите за да го добиете "
 "соодветниот број."
 
-#: activities/fractions_create/fractions_create.js:78
+#: activities/fractions_create/fractions_create.js:80
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Digits representation"
@@ -9826,17 +10525,17 @@ msgctxt "Data|"
 msgid "Simplified fractions with a pie."
 msgstr ""
 
-#: activities/fractions_create/resource/1/Data.qml:18
-#: activities/fractions_create/resource/3/Data.qml:17
-#: activities/fractions_create/resource/3/Data.qml:23
-#: activities/fractions_create/resource/3/Data.qml:29
+#: activities/fractions_create/resource/1/Data.qml:20
+#: activities/fractions_create/resource/3/Data.qml:20
+#: activities/fractions_create/resource/3/Data.qml:26
+#: activities/fractions_create/resource/3/Data.qml:32
 msgctxt "Data|"
 msgid "Select one half of the pie."
 msgstr ""
 
-#: activities/fractions_create/resource/1/Data.qml:24
-#: activities/fractions_create/resource/3/Data.qml:35
-#: activities/fractions_create/resource/3/Data.qml:49
+#: activities/fractions_create/resource/1/Data.qml:26
+#: activities/fractions_create/resource/3/Data.qml:38
+#: activities/fractions_create/resource/3/Data.qml:55
 #, fuzzy
 #| msgctxt "calendar_dataset|"
 #| msgid "Select the fifth Thursday of the given month"
@@ -9844,9 +10543,9 @@ msgctxt "Data|"
 msgid "Select one-third of the pie."
 msgstr "Изберете го петтиот четврток од дадениот месец"
 
-#: activities/fractions_create/resource/1/Data.qml:30
-#: activities/fractions_create/resource/3/Data.qml:41
-#: activities/fractions_create/resource/3/Data.qml:55
+#: activities/fractions_create/resource/1/Data.qml:32
+#: activities/fractions_create/resource/3/Data.qml:44
+#: activities/fractions_create/resource/3/Data.qml:61
 #, fuzzy
 #| msgctxt "calendar_dataset|"
 #| msgid "Select the fourth Sunday of the given month"
@@ -9854,8 +10553,8 @@ msgctxt "Data|"
 msgid "Select two-thirds of the pie."
 msgstr "Изберете го четвртиот ден недела од дадениот месец"
 
-#: activities/fractions_create/resource/1/Data.qml:36
-#: activities/fractions_create/resource/3/Data.qml:61
+#: activities/fractions_create/resource/1/Data.qml:38
+#: activities/fractions_create/resource/3/Data.qml:67
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Select the butterfly of the correct color."
@@ -9863,8 +10562,8 @@ msgctxt "Data|"
 msgid "Select one-quarter of the pie."
 msgstr "Одберете ја пеперутката со точна боја."
 
-#: activities/fractions_create/resource/1/Data.qml:42
-#: activities/fractions_create/resource/3/Data.qml:67
+#: activities/fractions_create/resource/1/Data.qml:44
+#: activities/fractions_create/resource/3/Data.qml:73
 #, fuzzy
 #| msgctxt "calendar_dataset|"
 #| msgid "Select the fifth Thursday of the given month"
@@ -9872,27 +10571,27 @@ msgctxt "Data|"
 msgid "Select two-fifths of the pie."
 msgstr "Изберете го петтиот четврток од дадениот месец"
 
-#: activities/fractions_create/resource/1/Data.qml:50
+#: activities/fractions_create/resource/1/Data.qml:55
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
 msgstr ""
 
-#: activities/fractions_create/resource/1/Data.qml:56
+#: activities/fractions_create/resource/1/Data.qml:61
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
 msgstr ""
 
-#: activities/fractions_create/resource/1/Data.qml:62
+#: activities/fractions_create/resource/1/Data.qml:67
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
 msgstr ""
 
-#: activities/fractions_create/resource/1/Data.qml:68
+#: activities/fractions_create/resource/1/Data.qml:73
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
 msgstr ""
 
-#: activities/fractions_create/resource/1/Data.qml:74
+#: activities/fractions_create/resource/1/Data.qml:79
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
 msgstr ""
@@ -9905,8 +10604,8 @@ msgctxt "Data|"
 msgid "Specific questions with a square."
 msgstr "Одговорете на прашањата со точност од 100%."
 
-#: activities/fractions_create/resource/10/Data.qml:18
-#: activities/fractions_create/resource/10/Data.qml:24
+#: activities/fractions_create/resource/10/Data.qml:20
+#: activities/fractions_create/resource/10/Data.qml:26
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
@@ -9920,10 +10619,10 @@ msgctxt "Data|"
 msgid "Simplified fractions with a square."
 msgstr "Одговорете на прашањата со точност од 100%."
 
-#: activities/fractions_create/resource/2/Data.qml:18
-#: activities/fractions_create/resource/4/Data.qml:17
-#: activities/fractions_create/resource/4/Data.qml:23
-#: activities/fractions_create/resource/4/Data.qml:29
+#: activities/fractions_create/resource/2/Data.qml:20
+#: activities/fractions_create/resource/4/Data.qml:20
+#: activities/fractions_create/resource/4/Data.qml:26
+#: activities/fractions_create/resource/4/Data.qml:32
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Select the butterfly of the correct color."
@@ -9931,9 +10630,9 @@ msgctxt "Data|"
 msgid "Select one half of the square."
 msgstr "Одберете ја пеперутката со точна боја."
 
-#: activities/fractions_create/resource/2/Data.qml:24
-#: activities/fractions_create/resource/4/Data.qml:35
-#: activities/fractions_create/resource/4/Data.qml:49
+#: activities/fractions_create/resource/2/Data.qml:26
+#: activities/fractions_create/resource/4/Data.qml:38
+#: activities/fractions_create/resource/4/Data.qml:55
 #, fuzzy
 #| msgctxt "calendar_dataset|"
 #| msgid "Select the fifth Thursday of the given month"
@@ -9941,9 +10640,9 @@ msgctxt "Data|"
 msgid "Select one-third of the square."
 msgstr "Изберете го петтиот четврток од дадениот месец"
 
-#: activities/fractions_create/resource/2/Data.qml:30
-#: activities/fractions_create/resource/4/Data.qml:41
-#: activities/fractions_create/resource/4/Data.qml:55
+#: activities/fractions_create/resource/2/Data.qml:32
+#: activities/fractions_create/resource/4/Data.qml:44
+#: activities/fractions_create/resource/4/Data.qml:61
 #, fuzzy
 #| msgctxt "calendar_dataset|"
 #| msgid "Select the fourth Sunday of the given month"
@@ -9951,8 +10650,8 @@ msgctxt "Data|"
 msgid "Select two-thirds of the square."
 msgstr "Изберете го четвртиот ден недела од дадениот месец"
 
-#: activities/fractions_create/resource/2/Data.qml:36
-#: activities/fractions_create/resource/4/Data.qml:61
+#: activities/fractions_create/resource/2/Data.qml:38
+#: activities/fractions_create/resource/4/Data.qml:67
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Select the butterfly of the correct color."
@@ -9960,8 +10659,8 @@ msgctxt "Data|"
 msgid "Select one-quarter of the square."
 msgstr "Одберете ја пеперутката со точна боја."
 
-#: activities/fractions_create/resource/2/Data.qml:42
-#: activities/fractions_create/resource/4/Data.qml:67
+#: activities/fractions_create/resource/2/Data.qml:44
+#: activities/fractions_create/resource/4/Data.qml:73
 #, fuzzy
 #| msgctxt "calendar_dataset|"
 #| msgid "Select the fifth Thursday of the given month"
@@ -9969,7 +10668,7 @@ msgctxt "Data|"
 msgid "Select two-fifths of the square."
 msgstr "Изберете го петтиот четврток од дадениот месец"
 
-#: activities/fractions_create/resource/2/Data.qml:50
+#: activities/fractions_create/resource/2/Data.qml:55
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Select the butterfly of the correct color."
@@ -9977,7 +10676,7 @@ msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
 msgstr "Одберете ја пеперутката со точна боја."
 
-#: activities/fractions_create/resource/2/Data.qml:56
+#: activities/fractions_create/resource/2/Data.qml:61
 #, fuzzy
 #| msgctxt "calendar_dataset|"
 #| msgid "Select the fifth Thursday of the given month"
@@ -9985,7 +10684,7 @@ msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
 msgstr "Изберете го петтиот четврток од дадениот месец"
 
-#: activities/fractions_create/resource/2/Data.qml:62
+#: activities/fractions_create/resource/2/Data.qml:67
 #, fuzzy
 #| msgctxt "calendar_dataset|"
 #| msgid "Select the fifth Thursday of the given month"
@@ -9993,7 +10692,7 @@ msgctxt "Data|"
 msgid "Select one square and one-third of a square."
 msgstr "Изберете го петтиот четврток од дадениот месец"
 
-#: activities/fractions_create/resource/2/Data.qml:68
+#: activities/fractions_create/resource/2/Data.qml:73
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Select the butterfly of the correct color."
@@ -10001,7 +10700,7 @@ msgctxt "Data|"
 msgid "Select one square and one half of a square."
 msgstr "Одберете ја пеперутката со точна боја."
 
-#: activities/fractions_create/resource/2/Data.qml:74
+#: activities/fractions_create/resource/2/Data.qml:79
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Select the butterfly of the correct color."
@@ -10014,7 +10713,7 @@ msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
 msgstr ""
 
-#: activities/fractions_create/resource/3/Data.qml:73
+#: activities/fractions_create/resource/3/Data.qml:79
 #, fuzzy
 #| msgctxt "calendar_dataset|"
 #| msgid "Select the fifth Thursday of the given month"
@@ -10027,7 +10726,7 @@ msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
 msgstr ""
 
-#: activities/fractions_create/resource/4/Data.qml:73
+#: activities/fractions_create/resource/4/Data.qml:79
 #, fuzzy
 #| msgctxt "calendar_dataset|"
 #| msgid "Select the fifth Thursday of the given month"
@@ -10043,7 +10742,7 @@ msgctxt "Data|"
 msgid "Decimal numbers with a pie."
 msgstr "Систем на декадни броеви."
 
-#: activities/fractions_create/resource/5/Data.qml:18
+#: activities/fractions_create/resource/5/Data.qml:20
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Selected"
@@ -10051,12 +10750,12 @@ msgctxt "Data|"
 msgid "Select 0.5 pie."
 msgstr "Избрано"
 
-#: activities/fractions_create/resource/5/Data.qml:24
+#: activities/fractions_create/resource/5/Data.qml:26
 msgctxt "Data|"
 msgid "Select 0.25 pie."
 msgstr ""
 
-#: activities/fractions_create/resource/5/Data.qml:30
+#: activities/fractions_create/resource/5/Data.qml:32
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Selected"
@@ -10064,12 +10763,12 @@ msgctxt "Data|"
 msgid "Select 0.4 pie."
 msgstr "Избрано"
 
-#: activities/fractions_create/resource/5/Data.qml:36
+#: activities/fractions_create/resource/5/Data.qml:38
 msgctxt "Data|"
 msgid "Select 0.75 pie."
 msgstr ""
 
-#: activities/fractions_create/resource/5/Data.qml:42
+#: activities/fractions_create/resource/5/Data.qml:44
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Selected"
@@ -10077,23 +10776,23 @@ msgctxt "Data|"
 msgid "Select 0.8 pie."
 msgstr "Избрано"
 
-#: activities/fractions_create/resource/5/Data.qml:50
+#: activities/fractions_create/resource/5/Data.qml:55
 msgctxt "Data|"
 msgid "Select 1.25 pies."
 msgstr ""
 
-#: activities/fractions_create/resource/5/Data.qml:56
+#: activities/fractions_create/resource/5/Data.qml:61
 msgctxt "Data|"
 msgid "Select 1.4 pies."
 msgstr ""
 
-#: activities/fractions_create/resource/5/Data.qml:62
-#: activities/fractions_create/resource/5/Data.qml:68
+#: activities/fractions_create/resource/5/Data.qml:67
+#: activities/fractions_create/resource/5/Data.qml:73
 msgctxt "Data|"
 msgid "Select 1.5 pies."
 msgstr ""
 
-#: activities/fractions_create/resource/5/Data.qml:74
+#: activities/fractions_create/resource/5/Data.qml:79
 msgctxt "Data|"
 msgid "Select 1.75 pies."
 msgstr ""
@@ -10106,7 +10805,7 @@ msgctxt "Data|"
 msgid "Decimal numbers with a square."
 msgstr "Систем на декадни броеви."
 
-#: activities/fractions_create/resource/6/Data.qml:18
+#: activities/fractions_create/resource/6/Data.qml:20
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Selected"
@@ -10114,7 +10813,7 @@ msgctxt "Data|"
 msgid "Select 0.5 square."
 msgstr "Избрано"
 
-#: activities/fractions_create/resource/6/Data.qml:24
+#: activities/fractions_create/resource/6/Data.qml:26
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Selected"
@@ -10122,7 +10821,7 @@ msgctxt "Data|"
 msgid "Select 0.25 square."
 msgstr "Избрано"
 
-#: activities/fractions_create/resource/6/Data.qml:30
+#: activities/fractions_create/resource/6/Data.qml:32
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Selected"
@@ -10130,7 +10829,7 @@ msgctxt "Data|"
 msgid "Select 0.4 square."
 msgstr "Избрано"
 
-#: activities/fractions_create/resource/6/Data.qml:36
+#: activities/fractions_create/resource/6/Data.qml:38
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Selected"
@@ -10138,7 +10837,7 @@ msgctxt "Data|"
 msgid "Select 0.75 square."
 msgstr "Избрано"
 
-#: activities/fractions_create/resource/6/Data.qml:42
+#: activities/fractions_create/resource/6/Data.qml:44
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Selected"
@@ -10146,7 +10845,7 @@ msgctxt "Data|"
 msgid "Select 0.8 square."
 msgstr "Избрано"
 
-#: activities/fractions_create/resource/6/Data.qml:50
+#: activities/fractions_create/resource/6/Data.qml:55
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Selected"
@@ -10154,7 +10853,7 @@ msgctxt "Data|"
 msgid "Select 1.25 squares."
 msgstr "Избрано"
 
-#: activities/fractions_create/resource/6/Data.qml:56
+#: activities/fractions_create/resource/6/Data.qml:61
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Selected"
@@ -10162,8 +10861,8 @@ msgctxt "Data|"
 msgid "Select 1.4 squares."
 msgstr "Избрано"
 
-#: activities/fractions_create/resource/6/Data.qml:62
-#: activities/fractions_create/resource/6/Data.qml:68
+#: activities/fractions_create/resource/6/Data.qml:67
+#: activities/fractions_create/resource/6/Data.qml:73
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Selected"
@@ -10171,7 +10870,7 @@ msgctxt "Data|"
 msgid "Select 1.5 squares."
 msgstr "Избрано"
 
-#: activities/fractions_create/resource/6/Data.qml:74
+#: activities/fractions_create/resource/6/Data.qml:79
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Selected"
@@ -10185,14 +10884,14 @@ msgid "Percentages with a pie."
 msgstr ""
 
 #. Select %1 percent of the pie.
-#: activities/fractions_create/resource/7/Data.qml:19
-#: activities/fractions_create/resource/7/Data.qml:26
-#: activities/fractions_create/resource/7/Data.qml:33
-#: activities/fractions_create/resource/7/Data.qml:40
-#: activities/fractions_create/resource/7/Data.qml:47
-#: activities/fractions_create/resource/7/Data.qml:56
-#: activities/fractions_create/resource/7/Data.qml:63
-#: activities/fractions_create/resource/7/Data.qml:70
+#: activities/fractions_create/resource/7/Data.qml:21
+#: activities/fractions_create/resource/7/Data.qml:28
+#: activities/fractions_create/resource/7/Data.qml:35
+#: activities/fractions_create/resource/7/Data.qml:42
+#: activities/fractions_create/resource/7/Data.qml:49
+#: activities/fractions_create/resource/7/Data.qml:61
+#: activities/fractions_create/resource/7/Data.qml:68
+#: activities/fractions_create/resource/7/Data.qml:75
 #, fuzzy, qt-format
 #| msgctxt "calendar_dataset|"
 #| msgid "Select the 1st"
@@ -10206,12 +10905,12 @@ msgid "Percentages with a square."
 msgstr ""
 
 #. Select %1 percent of the square.
-#: activities/fractions_create/resource/8/Data.qml:19
-#: activities/fractions_create/resource/8/Data.qml:26
-#: activities/fractions_create/resource/8/Data.qml:33
-#: activities/fractions_create/resource/8/Data.qml:42
-#: activities/fractions_create/resource/8/Data.qml:49
-#: activities/fractions_create/resource/8/Data.qml:56
+#: activities/fractions_create/resource/8/Data.qml:21
+#: activities/fractions_create/resource/8/Data.qml:28
+#: activities/fractions_create/resource/8/Data.qml:35
+#: activities/fractions_create/resource/8/Data.qml:47
+#: activities/fractions_create/resource/8/Data.qml:54
+#: activities/fractions_create/resource/8/Data.qml:61
 #, fuzzy, qt-format
 #| msgctxt "calendar_dataset|"
 #| msgid "Select the 1st"
@@ -10224,8 +10923,8 @@ msgctxt "Data|"
 msgid "Specific questions with a pie."
 msgstr ""
 
-#: activities/fractions_create/resource/9/Data.qml:18
-#: activities/fractions_create/resource/9/Data.qml:24
+#: activities/fractions_create/resource/9/Data.qml:20
+#: activities/fractions_create/resource/9/Data.qml:26
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
@@ -14909,7 +15608,7 @@ msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "Празно место или Enter: потврдете го вашиот одговор"
 
-#: activities/graduated_line_read/graduated_line_read.js:115
+#: activities/graduated_line_read/graduated_line_read.js:125
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr ""
@@ -14928,6 +15627,15 @@ msgstr "Најдете ја пеперутката со боја на рѓа - r
 #| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 5."
+msgstr "Броеви помеѓу %1 и %2."
+
+#: activities/graduated_line_read/resource/10/Data.qml:9
+#: activities/graduated_line_use/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Decimal number to find between 0 and 4."
 msgstr "Броеви помеѓу %1 и %2."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
@@ -15169,7 +15877,7 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "Backspace: избришете ја последната цифра во вашиот одговор"
 
-#: activities/grammar_analysis/grammar_analysis.js:398
+#: activities/grammar_analysis/grammar_analysis.js:401
 #, fuzzy
 #| msgctxt "Admin|"
 #| msgid "empty"
@@ -15351,7 +16059,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Лева и десна стрелка: поместете го вселенскиот брод"
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:222
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15364,7 +16072,7 @@ msgstr ""
 "директно зависна од масите на двата предмети и обратно пропорционална на "
 "квадратот од растојанието што ги раздвојува нивните центри."
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:225
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15377,7 +16085,7 @@ msgstr ""
 "било кој предмет, се зголемува и силата на гравитационата привлечност помеѓу "
 "нив."
 
-#: activities/gravity/Gravity.qml:226
+#: activities/gravity/Gravity.qml:228
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15388,7 +16096,7 @@ msgstr ""
 "одвојувањето меѓу двата објекти, поголемо растојание ќе резултира во послаби "
 "гравитациони сили."
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:231
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15400,7 +16108,7 @@ msgstr ""
 "планетите или ќе се урнете во нив. Стрелката ја означува насоката и "
 "интензитетот на гравитацијата на вашиот брод."
 
-#: activities/gravity/Gravity.qml:232
+#: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -15481,7 +16189,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr ""
 
-#: activities/guess24/Guess24.qml:123
+#: activities/guess24/Guess24.qml:135
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr ""
@@ -15519,6 +16227,14 @@ msgstr "Мали мрежи."
 msgctxt "Data|"
 msgid "Division required."
 msgstr "Делење."
+
+#: activities/guess24/resource/6/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "All operations memory game"
+msgctxt "Data|"
+msgid "All operators required."
+msgstr "Сите операции мемориска игра"
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -15648,7 +16364,8 @@ msgstr ""
 "Помогнете му на Тукс да избега од пештерата. Тукс крие број кој треба да го "
 "пронајдете."
 
-#: activities/guessnumber/ActivityInfo.qml:19
+#. Help goal
+#: activities/guessnumber/ActivityInfo.qml:20
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Practice the addition of numbers."
@@ -15794,12 +16511,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Број на обиди: %1"
 
-#: activities/hangman/Hangman.qml:371
+#: activities/hangman/Hangman.qml:370
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Жал ни е, сè уште немаме превод за вашиот јазик."
 
-#: activities/hangman/Hangman.qml:372
+#: activities/hangman/Hangman.qml:371
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15809,7 +16526,7 @@ msgstr ""
 "Жикомпри е развиен од KDE заедницата, можете да го преведете Жикомпри со тоа "
 "што ќе се приклучите на тим за превод на <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:374
+#: activities/hangman/Hangman.qml:373
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16678,117 +17395,117 @@ msgstr ""
 "За оваа активност се префрливме на англиски, но можете да изберете друг "
 "јазик во дијалогот за конфигурација."
 
-#: activities/lang/Lang.qml:195 activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:194 activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "other"
 msgstr "друго"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "action"
 msgstr "акција"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "adjective"
 msgstr "придавки"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "color"
 msgstr "бои"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "number"
 msgstr "броеви"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "people"
 msgstr "луѓе"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "bodyparts"
 msgstr "делови од телото"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "clothes"
 msgstr "облека"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "emotion"
 msgstr "емоции"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "job"
 msgstr "работа"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "sport"
 msgstr "спорт"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "nature"
 msgstr "природа"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "animal"
 msgstr "животни"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "fruit"
 msgstr "овошје"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "plant"
 msgstr "растенија"
 
-#: activities/lang/Lang.qml:204
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "vegetables"
 msgstr "зеленчук"
 
-#: activities/lang/Lang.qml:204
+#: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "object"
 msgstr "предмети"
 
-#: activities/lang/Lang.qml:205
+#: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "construction"
 msgstr "градба"
 
-#: activities/lang/Lang.qml:206
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "furniture"
 msgstr "мебел"
 
-#: activities/lang/Lang.qml:206
+#: activities/lang/Lang.qml:205
 msgctxt "Lang|"
 msgid "houseware"
 msgstr "домаќинство"
 
-#: activities/lang/Lang.qml:207
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "tool"
 msgstr "алатки"
 
-#: activities/lang/Lang.qml:207
+#: activities/lang/Lang.qml:206
 msgctxt "Lang|"
 msgid "food"
 msgstr "храна"
 
-#: activities/lang/Lang.qml:208
+#: activities/lang/Lang.qml:207
 msgctxt "Lang|"
 msgid "transport"
 msgstr "транспорт"
@@ -16929,31 +17646,31 @@ msgstr ""
 "бројот на испуштени ленти не одговара на прикажаниот децимален број. Потоа "
 "кликнете на копчето ОКза да го потврдите вашиот одговор."
 
-#: activities/learn_decimals/Learn_decimals.qml:150
+#: activities/learn_decimals/Learn_decimals.qml:165
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Прикажи го бројот: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:151
+#: activities/learn_decimals/Learn_decimals.qml:166
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Прикажи го резултатот од: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:152
+#: activities/learn_decimals/Learn_decimals.qml:167
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Прикажи го резултатот од: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:153
+#: activities/learn_decimals/Learn_decimals.qml:168
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Претстави ја количината: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:610
+#: activities/learn_decimals/Learn_decimals.qml:185
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -16964,8 +17681,8 @@ msgctxt "Data|"
 msgid "Between 0.1 and 1."
 msgstr "Помеѓу 0.1 и 1."
 
-#: activities/learn_decimals/resource/2/Data.qml:13
-#: activities/learn_quantities/resource/3/Data.qml:13
+#: activities/learn_decimals/resource/2/Data.qml:27
+#: activities/learn_quantities/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Between 1 and 5."
 msgstr "Помеѓу 1 и 5."
@@ -17404,7 +18121,7 @@ msgctxt "Data|"
 msgid "Between 1 and 3."
 msgstr "Помеѓу 1 и 3."
 
-#: activities/learn_quantities/resource/2/Data.qml:13
+#: activities/learn_quantities/resource/2/Data.qml:25
 msgctxt "Data|"
 msgid "Between 1 and 4."
 msgstr "Помеѓу 1 и 4."
@@ -17419,12 +18136,12 @@ msgctxt "Data|"
 msgid "Between 1 and 10."
 msgstr "Помеѓу 1 и 10."
 
-#: activities/learn_quantities/resource/6/Data.qml:13
+#: activities/learn_quantities/resource/6/Data.qml:15
 msgctxt "Data|"
 msgid "Between 10 and 20."
 msgstr "Помеѓу 10 и 20."
 
-#: activities/learn_quantities/resource/7/Data.qml:13
+#: activities/learn_quantities/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Between 20 and 50."
 msgstr "Помеѓу 20 и 50."
@@ -17870,10 +18587,15 @@ msgstr ""
 "тајно го предаваше на институтот."
 
 #: activities/louis-braille/louis_braille_data.js:52
+#, fuzzy
+#| msgctxt "louis_braille_data|"
+#| msgid ""
+#| "He revised and extended braille to include mathematics, symbols, "
+#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
-"He revised and extended braille to include mathematics, symbols, "
-"punctuations and music notations."
+"He revised and extended braille to include mathematics, symbols, punctuation "
+"and music notations."
 msgstr ""
 "Тој го ревидираше и прошири својот систем за да вклучи математика, симболи, "
 "интерпункции и музички ноти."
@@ -17907,9 +18629,11 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#: activities/magic-hat-plus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
-msgid "The magician hat"
+msgid "The magician hat (subtraction)"
 msgstr "Магичната капа"
 
 #. Help title
@@ -17951,7 +18675,7 @@ msgstr ""
 "Кликнете на долниот дел за да го внесете вашиот одговор и на копчето ОК за "
 "да го потврдите вашиот одговор."
 
-#: activities/magic-hat-minus/MagicHat.qml:256
+#: activities/magic-hat-minus/MagicHat.qml:255
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Кликнете на капата за да ја започнете играта"
@@ -18005,6 +18729,15 @@ msgstr "Пресметајте ги преостанатите starsвезди �
 msgctxt "StarsBar|"
 msgid "%1x"
 msgstr "%1%"
+
+#. Activity title
+#: activities/magic-hat-plus/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The magician hat"
+msgctxt "ActivityInfo|"
+msgid "The magician hat (addition)"
+msgstr "Магичната капа"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -19536,7 +20269,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:356
+#: activities/memory/MemoryCommon.qml:362
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19545,12 +20278,12 @@ msgstr ""
 "Оваа активност бара звук, така што ќе репродуцира некои звуци дури и ако е "
 "аудиогласовите или ефектите се оневозможени во главната конфигурација."
 
-#: activities/memory/MemoryCommon.qml:357
+#: activities/memory/MemoryCommon.qml:363
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Исклучи"
 
-#: activities/memory/MemoryCommon.qml:358
+#: activities/memory/MemoryCommon.qml:364
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Продолжи"
@@ -19701,40 +20434,40 @@ msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr "Позадинска музика"
 
-#: activities/menu/BackgroundMusicList.qml:136
+#: activities/menu/BackgroundMusicList.qml:140
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr "Оневозможете ја музиката во позадина ако не сакате да ја слушате."
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:173
+#: activities/menu/BackgroundMusicList.qml:177
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr "Моментално свири:"
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:181
+#: activities/menu/BackgroundMusicList.qml:185
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
 msgstr "Наслов: %1"
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:189
+#: activities/menu/BackgroundMusicList.qml:193
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
 msgstr "Изведувач: %1"
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:197
+#: activities/menu/BackgroundMusicList.qml:201
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
 msgstr "Година: %1"
 
 #. Copyright of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:205
+#: activities/menu/BackgroundMusicList.qml:209
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
@@ -19888,17 +20621,22 @@ msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Растојание на букви"
 
-#: activities/menu/ConfigurationItem.qml:619
+#: activities/menu/ConfigurationItem.qml:445
+msgctxt "ConfigurationItem|"
+msgid "Teacher's server config"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Мешовит случај (стандардно)"
 
-#: activities/menu/ConfigurationItem.qml:623
+#: activities/menu/ConfigurationItem.qml:657
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Сите големи букви"
 
-#: activities/menu/ConfigurationItem.qml:627
+#: activities/menu/ConfigurationItem.qml:661
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Сите мали букви"
@@ -19983,7 +20721,42 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Вокабулар"
 
-#: activities/menu/Menu.qml:662
+#: activities/menu/Menu.qml:211
+msgctxt "Menu|"
+msgid "GCompris is not connected to teacher's server."
+msgstr ""
+
+#: activities/menu/Menu.qml:212
+msgctxt "Menu|"
+msgid ""
+"GCompris is connected to teacher's server, but the password entered for "
+"selected user is wrong."
+msgstr ""
+
+#: activities/menu/Menu.qml:213
+msgctxt "Menu|"
+msgid ""
+"GCompris is connected to teacher's server, and the user is authenticated."
+msgstr ""
+
+#: activities/menu/Menu.qml:214
+msgctxt "Menu|"
+msgid "GCompris has lost the connection to teacher's server."
+msgstr ""
+
+#: activities/menu/Menu.qml:215
+msgctxt "Menu|"
+msgid "GCompris has been disconnected from teacher's server."
+msgstr ""
+
+#: activities/menu/Menu.qml:216
+msgctxt "Menu|"
+msgid ""
+"GCompris is connected to teacher's server, but the user is not yet "
+"authenticated."
+msgstr ""
+
+#: activities/menu/Menu.qml:677
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19992,15 +20765,38 @@ msgstr ""
 "Ставете ја вашата омилена активност овде со клик на сонцето десно горе од "
 "самата активност."
 
-#: activities/menu/Menu.qml:781
+#: activities/menu/Menu.qml:824
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Пребарај активност"
 
-#: activities/menu/Menu.qml:810
+#: activities/menu/Menu.qml:853
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Подесувања на активност"
+
+#: activities/menu/ServerConfigPage.qml:61
+msgctxt "ServerConfigPage|"
+msgid "Teacher's server settings"
+msgstr ""
+
+#: activities/menu/ServerConfigPage.qml:111
+msgctxt "ServerConfigPage|"
+msgid "Teacher's identifier"
+msgstr ""
+
+#: activities/menu/ServerConfigPage.qml:142
+msgctxt "ServerConfigPage|"
+msgid "Server port"
+msgstr ""
+
+#: activities/menu/ServerConfigPage.qml:177
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Guess a number between 1 and %1."
+msgctxt "ServerConfigPage|"
+msgid "Server port must be a number between 0 and 65535."
+msgstr "Погодете го бројот помеѓу 1 и %1."
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -20181,12 +20977,12 @@ msgstr ""
 "Објект е прикажан во главната област, а неполн збор е отпечатен под сликата. "
 "Изберете ја буквата што недостасува за да го завршите зборот."
 
-#: activities/missing-letter/MissingLetter.qml:323
+#: activities/missing-letter/MissingLetter.qml:322
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Жал ни е, сè уште немаме превод за вашиот јазик."
 
-#: activities/missing-letter/MissingLetter.qml:324
+#: activities/missing-letter/MissingLetter.qml:323
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -20196,7 +20992,7 @@ msgstr ""
 "Жикомпри е развиен од KDE заедницата, можете да го преведете Жикомпри со тоа "
 "што ќе се приклучите на тим за превод на <a href=\"%2\">%2</a>"
 
-#: activities/missing-letter/MissingLetter.qml:326
+#: activities/missing-letter/MissingLetter.qml:325
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -20626,6 +21422,100 @@ msgstr "До 16 ставки, на повеќе линии."
 msgctxt "Data|"
 msgid "Up to 24 items, on multiple lines."
 msgstr "До 24 ставки, на повеќе линии."
+
+#. Activity title
+#: activities/multiple_choice_questions/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplications."
+msgctxt "ActivityInfo|"
+msgid "Multiple-choice questions"
+msgstr "Множење."
+
+#. Help title
+#: activities/multiple_choice_questions/ActivityInfo.qml:18
+msgctxt "ActivityInfo|"
+msgid "A generic activity for multiple-choice questions."
+msgstr ""
+
+#. Help goal
+#: activities/multiple_choice_questions/ActivityInfo.qml:21
+msgctxt "ActivityInfo|"
+msgid "Answer questions sent by the teacher."
+msgstr ""
+
+#. Help manual
+#: activities/multiple_choice_questions/ActivityInfo.qml:24
+msgctxt "ActivityInfo|"
+msgid ""
+"Click an answer to select it, then press the OK button to validate. Some "
+"questions require a single answer, other questions require multiple answers. "
+"For some questions, after validating the answer, a feedback text panel will "
+"be displayed: click anywhere to close this panel after reading it."
+msgstr ""
+
+#: activities/multiple_choice_questions/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Arrows: navigate through the answers"
+msgctxt "ActivityInfo|"
+msgid "Up and Down arrows: navigate through the answer list"
+msgstr "Стрелки: навигација низ одговорите"
+
+#: activities/multiple_choice_questions/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space: select or deselect a circle"
+msgctxt "ActivityInfo|"
+msgid "Space: select or deselect the highlighted answer"
+msgstr "Простор (space): селектирај или избриши селектирање на круг"
+
+#: activities/multiple_choice_questions/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer when the OK button is visible"
+msgctxt "ActivityInfo|"
+msgid "Enter: validate your answer, or close the feedback text panel"
+msgstr "Ентер: потврдете го вашиот одговор кога копчето„Во ред“ е видливо"
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:9
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Division of numbers"
+msgctxt "Data|"
+msgid "Find the correct answer."
+msgstr "Делење на броеви"
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:17
+#, fuzzy
+#| msgctxt "advanced_colors|"
+#| msgid "Find the rust butterfly"
+msgctxt "Data|"
+msgid "What is the first number?"
+msgstr "Најдете ја пеперутката со боја на рѓа - rust butterfly"
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:26
+msgctxt "Data|"
+msgid "What is a color?"
+msgstr ""
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:40
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice the addition of numbers."
+msgctxt "Data|"
+msgid "What are the first two numbers?"
+msgstr "Вежбајте собирање на броеви."
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:49
+msgctxt "Data|"
+msgid "What are animals?"
+msgstr ""
+
+#: activities/multiple_choice_questions/resource/1/Data.qml:63
+msgctxt "Data|"
+msgid "Answers always in order, select the first one"
+msgstr ""
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -23351,7 +24241,7 @@ msgstr ""
 "Еден збор е прикажан на таблата. Листа на зборови, прикажани хоризонтално, "
 "ќе се појават и исчезнат. Дали дадениот збор постои во листата?"
 
-#: activities/readingh/Readingh.qml:304
+#: activities/readingh/Readingh.qml:306
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -23361,12 +24251,12 @@ msgstr ""
 "<font color=\"#373737\">Проверете дали зборот<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">е прикажан</font>"
 
-#: activities/readingh/Readingh.qml:364
+#: activities/readingh/Readingh.qml:366
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Да, го видов!"
 
-#: activities/readingh/Readingh.qml:385
+#: activities/readingh/Readingh.qml:387
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Не, не беше таму!"
@@ -23740,8 +24630,8 @@ msgctxt "ActivityInfo|"
 msgid "Letters: type roman numerals (with I, V, X, L, C, D and M)"
 msgstr "Букви: напишете римски броеви (со I, V, X, L, C, D и M)"
 
-#: activities/roman_numerals/RomanNumerals.qml:79
-#: activities/roman_numerals/RomanNumerals.qml:85
+#: activities/roman_numerals/RomanNumerals.qml:80
+#: activities/roman_numerals/RomanNumerals.qml:86
 msgctxt "RomanNumerals|"
 msgid ""
 "The roman numbers are all built out of these 7 numbers:\n"
@@ -23760,32 +24650,32 @@ msgstr ""
 "Интересно набудување овде е дека во римскиот нумерички систем го нема бројот "
 "0."
 
-#: activities/roman_numerals/RomanNumerals.qml:80
-#: activities/roman_numerals/RomanNumerals.qml:92
-#: activities/roman_numerals/RomanNumerals.qml:104
-#: activities/roman_numerals/RomanNumerals.qml:116
-#: activities/roman_numerals/RomanNumerals.qml:128
+#: activities/roman_numerals/RomanNumerals.qml:81
+#: activities/roman_numerals/RomanNumerals.qml:93
+#: activities/roman_numerals/RomanNumerals.qml:105
+#: activities/roman_numerals/RomanNumerals.qml:117
+#: activities/roman_numerals/RomanNumerals.qml:129
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the roman number %1 to arabic."
 msgstr "Претворете го римскиот број %1 во арапски."
 
-#: activities/roman_numerals/RomanNumerals.qml:86
-#: activities/roman_numerals/RomanNumerals.qml:98
-#: activities/roman_numerals/RomanNumerals.qml:110
-#: activities/roman_numerals/RomanNumerals.qml:122
-#: activities/roman_numerals/RomanNumerals.qml:134
-#: activities/roman_numerals/RomanNumerals.qml:140
-#: activities/roman_numerals/RomanNumerals.qml:146
-#: activities/roman_numerals/RomanNumerals.qml:152
-#: activities/roman_numerals/RomanNumerals.qml:158
+#: activities/roman_numerals/RomanNumerals.qml:87
+#: activities/roman_numerals/RomanNumerals.qml:99
+#: activities/roman_numerals/RomanNumerals.qml:111
+#: activities/roman_numerals/RomanNumerals.qml:123
+#: activities/roman_numerals/RomanNumerals.qml:135
+#: activities/roman_numerals/RomanNumerals.qml:141
+#: activities/roman_numerals/RomanNumerals.qml:147
+#: activities/roman_numerals/RomanNumerals.qml:153
+#: activities/roman_numerals/RomanNumerals.qml:159
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the arabic number %1 to roman."
 msgstr "Претворете го арапскиот број %1 во римски."
 
-#: activities/roman_numerals/RomanNumerals.qml:91
-#: activities/roman_numerals/RomanNumerals.qml:97
+#: activities/roman_numerals/RomanNumerals.qml:92
+#: activities/roman_numerals/RomanNumerals.qml:98
 msgctxt "RomanNumerals|"
 msgid ""
 "All the units except 4 and 9 are built using sums of I and V:\n"
@@ -23798,8 +24688,8 @@ msgstr ""
 "  Броевите 4 и 9 се направени со користење на одземање:\n"
 "IV (5 - 1) и IX (10 - 1)."
 
-#: activities/roman_numerals/RomanNumerals.qml:103
-#: activities/roman_numerals/RomanNumerals.qml:109
+#: activities/roman_numerals/RomanNumerals.qml:104
+#: activities/roman_numerals/RomanNumerals.qml:110
 msgctxt "RomanNumerals|"
 msgid ""
 "All the tens except 40 and 90 are built using sums of X and L:\n"
@@ -23812,8 +24702,8 @@ msgstr ""
 "Десетките 40 и 90 се направени со користење на одземање:\n"
 "XL (10 оземено од 50) и XC (10 одземено од 100)."
 
-#: activities/roman_numerals/RomanNumerals.qml:115
-#: activities/roman_numerals/RomanNumerals.qml:121
+#: activities/roman_numerals/RomanNumerals.qml:116
+#: activities/roman_numerals/RomanNumerals.qml:122
 msgctxt "RomanNumerals|"
 msgid ""
 "All the hundreds except 400 and 900 are built using sums of C and D:\n"
@@ -23826,8 +24716,8 @@ msgstr ""
 "Броевите 400 и 900 се направени со користење на одземање:\n"
 "CD (100 одземено од 500) и CM (100 одземено од 1000)."
 
-#: activities/roman_numerals/RomanNumerals.qml:127
-#: activities/roman_numerals/RomanNumerals.qml:133
+#: activities/roman_numerals/RomanNumerals.qml:128
+#: activities/roman_numerals/RomanNumerals.qml:134
 msgctxt "RomanNumerals|"
 msgid ""
 "Sums of M are used for building thousands: M, MM, MMM.\n"
@@ -23843,7 +24733,7 @@ msgstr ""
 "одземање. Од друга страна, ова ги ограничува римските броеви на максимум "
 "3999 (MMMCMXCIX)."
 
-#: activities/roman_numerals/RomanNumerals.qml:139
+#: activities/roman_numerals/RomanNumerals.qml:140
 msgctxt "RomanNumerals|"
 msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
@@ -23851,13 +24741,13 @@ msgstr ""
 "Сега ги знаете правилата, можете да ги читате и запишувате броевите во "
 "римски броеви."
 
-#: activities/roman_numerals/RomanNumerals.qml:385
+#: activities/roman_numerals/RomanNumerals.qml:387
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Римска вредност: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:386
+#: activities/roman_numerals/RomanNumerals.qml:388
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -24961,17 +25851,20 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "Таб(Tab): префрлање помеѓу изборот на бои и зоната за цртање"
 
-#: activities/sketch/ActivityInfo.qml:17
+#. Activity title
+#: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Sketch"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:18
+#. Help title
+#: activities/sketch/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Use the various digital painting tools to draw images."
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:20
+#. Help goal
+#: activities/sketch/ActivityInfo.qml:23
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Learn about multiples and factors."
@@ -24979,49 +25872,24 @@ msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
 msgstr "Дознајте повеќе за содржатели и делители."
 
-#: activities/sketch/ActivityInfo.qml:22
+#. Help manual
+#: activities/sketch/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + Z: undo"
-msgctxt "ActivityInfo|"
-msgid "Ctrl + Z: undo last action"
-msgstr "Ctrl + Z: врати"
-
-#: activities/sketch/ActivityInfo.qml:25
-msgctxt "ActivityInfo|"
-msgid "Ctrl + Y: redo last action"
-msgstr ""
-
-#: activities/sketch/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + A: select all the text"
-msgctxt "ActivityInfo|"
-msgid "Ctrl + S: save the image"
-msgstr "Ctrl + A: одбележување на цел текст"
-
-#: activities/sketch/ActivityInfo.qml:27
-msgctxt "ActivityInfo|"
-msgid "Ctrl + O: open an image"
-msgstr ""
-
-#: activities/sketch/ActivityInfo.qml:28
+#: activities/sketch/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:29
+#: activities/sketch/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:30
+#: activities/sketch/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
 msgstr ""
@@ -25074,7 +25942,7 @@ msgid "Selected Color"
 msgstr "Избрано"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:238
+#: activities/sketch/ColorSelector.qml:239
 #, fuzzy
 #| msgctxt "board14_0|"
 #| msgid "Hubei"
@@ -25083,7 +25951,7 @@ msgid "Hue"
 msgstr "Хубеи"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:265
+#: activities/sketch/ColorSelector.qml:267
 #, fuzzy
 #| msgctxt "Dataset|"
 #| msgid "Saturn"
@@ -25092,7 +25960,7 @@ msgid "Saturation"
 msgstr "Сатурн"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:290
+#: activities/sketch/ColorSelector.qml:293
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Lights off"
@@ -25101,20 +25969,12 @@ msgid "Lightness"
 msgstr "Гасење светилки"
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:326
+#: activities/sketch/ColorSelector.qml:329
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr ""
 
-#: activities/sketch/ColorsPanel.qml:159
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Palestine"
-msgctxt "ColorsPanel|"
-msgid "Palettes"
-msgstr "Палестина"
-
-#: activities/sketch/FilesPanel.qml:47
+#: activities/sketch/FilesPanel.qml:35
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Select your mode"
@@ -25122,7 +25982,7 @@ msgctxt "FilesPanel|"
 msgid "Save your image"
 msgstr "Изберете го вашиот режим"
 
-#: activities/sketch/FilesPanel.qml:86
+#: activities/sketch/FilesPanel.qml:46
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many new images"
@@ -25130,7 +25990,7 @@ msgctxt "FilesPanel|"
 msgid "Open an image"
 msgstr "Многу нови слики"
 
-#: activities/sketch/FilesPanel.qml:117
+#: activities/sketch/FilesPanel.qml:65
 #, fuzzy
 #| msgctxt "DialogChooseLevel|"
 #| msgid "%1 settings"
@@ -25138,7 +25998,7 @@ msgctxt "FilesPanel|"
 msgid "New image settings"
 msgstr "%1 поставки"
 
-#: activities/sketch/FilesPanel.qml:145
+#: activities/sketch/FilesPanel.qml:90
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -25146,7 +26006,7 @@ msgctxt "FilesPanel|"
 msgid "Background color"
 msgstr "Позадина"
 
-#: activities/sketch/FilesPanel.qml:191
+#: activities/sketch/FilesPanel.qml:115
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -25154,7 +26014,7 @@ msgctxt "FilesPanel|"
 msgid "Background image"
 msgstr "Позадина"
 
-#: activities/sketch/FilesPanel.qml:232
+#: activities/sketch/FilesPanel.qml:148
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many new images"
@@ -25183,7 +26043,15 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:670
+#: activities/sketch/PaletteSelector.qml:148
+#, fuzzy
+#| msgctxt "board9_0|"
+#| msgid "Palestine"
+msgctxt "PaletteSelector|"
+msgid "Palettes"
+msgstr "Палестина"
+
+#: activities/sketch/Sketch.qml:677
 #, fuzzy
 #| msgctxt "Piano_composition|"
 #| msgid "You have not selected any note. Do you want to erase all the notes?"
@@ -25191,7 +26059,7 @@ msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Немате одберено ниедна нота. Дали сакате да ги избришате сите ноти?"
 
-#: activities/sketch/Sketch.qml:671
+#: activities/sketch/Sketch.qml:678
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Do you want to download it now?"
@@ -25199,7 +26067,7 @@ msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Дали сакате да ја преземете сега?"
 
-#: activities/sketch/Sketch.qml:672
+#: activities/sketch/Sketch.qml:679
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -25207,7 +26075,7 @@ msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Да"
 
-#: activities/sketch/Sketch.qml:673
+#: activities/sketch/Sketch.qml:680
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -27035,12 +27903,12 @@ msgstr ""
 "избираат во вашите сегашни и идни нагаѓања се додека не ги одштиклирате, "
 "повторно со двојно кликање или допирање."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:167
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Овој предмет е добро поставен."
 
-#: activities/superbrain/Superbrain.qml:150
+#: activities/superbrain/Superbrain.qml:169
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Овој предмет е погрешно поставен."
@@ -27646,7 +28514,7 @@ msgid ""
 "side. The top number is called the minuend: it is the amount that we are "
 "starting with, that another number is being subtracted from to get the "
 "difference. The number below is called the subtrahend: it is the amount to "
-"substract from the minuend to get the difference. The result is written on "
+"subtract from the minuend to get the difference. The result is written on "
 "the bottom line. To solve the subtraction, start by subtracting the bottom "
 "number of the first column from the top number of the first column (on the "
 "right-hand side), and write the result on the bottom line of the same "
@@ -27766,18 +28634,18 @@ msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
 msgstr "Одземање со 1, 2 и 3."
 
-#: activities/vertical_subtraction/subtraction.js:71
+#: activities/vertical_subtraction/subtraction.js:79
 msgctxt "subtraction|"
 msgid "Write:"
 msgstr ""
 
-#: activities/vertical_subtraction/subtraction.js:71
+#: activities/vertical_subtraction/subtraction.js:79
 msgctxt "subtraction|"
 msgid "Solve:"
 msgstr ""
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
-#: activities/vertical_subtraction/subtraction.js:169
+#: activities/vertical_subtraction/subtraction.js:190
 #, fuzzy, qt-format
 #| msgctxt "BackgroundMusicList|"
 #| msgid "Title: %1"
@@ -27785,13 +28653,34 @@ msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr "Наслов: %1"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:379
+#: activities/vertical_subtraction/VerticalSubtraction.qml:99
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Learn subtraction table of 1."
+msgctxt "VerticalSubtraction|"
+msgid "Write your own addition and solve it."
+msgstr "Одземање со 1."
+
+#: activities/vertical_subtraction/VerticalSubtraction.qml:100
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Learn subtraction table of 1."
+msgctxt "VerticalSubtraction|"
+msgid "Write your own subtraction and solve it."
+msgstr "Одземање со 1."
+
+#: activities/vertical_subtraction/VerticalSubtraction.qml:426
 #, fuzzy
 #| msgctxt "ReadyButton|"
 #| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
 msgstr "Спремен сум"
+
+#: activities/vertical_subtraction/VerticalSubtraction.qml:464
+msgctxt "VerticalSubtraction|"
+msgid "The result should not be a negative number."
+msgstr ""
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
@@ -27819,7 +28708,7 @@ msgid ""
 "side. The top number is called the minuend: it is the amount that we are "
 "starting with, that another number is being subtracted from to get the "
 "difference. The number below is called the subtrahend: it is the amount to "
-"substract from the minuend to get the difference. The result is written on "
+"subtract from the minuend to get the difference. The result is written on "
 "the bottom line. To solve the subtraction, start by subtracting the bottom "
 "number of the first column from the top number of the first column (on the "
 "right-hand side), and write the result on the bottom line of the same "
@@ -28024,23 +28913,43 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Внесете го целиот збор додека паѓа, пред истиот да го стигне дното."
 
-#: core/ChangeLog.qml:30 core/ChangeLog.qml:36 core/ChangeLog.qml:45
-#: core/ChangeLog.qml:51 core/ChangeLog.qml:56 core/ChangeLog.qml:62
-#: core/ChangeLog.qml:91 core/ChangeLog.qml:126 core/ChangeLog.qml:129
-#: core/ChangeLog.qml:135
+#: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translation added for Azerbaijani"
+msgctxt "ChangeLog|"
+msgid "Translation added for Kannada and Tamil"
+msgstr "Додаден превод за Азербејџански јазик."
+
+#: core/ChangeLog.qml:31
+msgctxt "ChangeLog|"
+msgid "New command-line option to set the locale (--locale locale)"
+msgstr ""
+
+#: core/ChangeLog.qml:32
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to show/hide the Home button (--hide-home-button/--"
+"show-home-button)"
+msgstr ""
+
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
+#: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
+#: core/ChangeLog.qml:71 core/ChangeLog.qml:100 core/ChangeLog.qml:135
+#: core/ChangeLog.qml:138 core/ChangeLog.qml:144
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Многу подобрувања во употребливоста"
 
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:38 core/ChangeLog.qml:46
-#: core/ChangeLog.qml:52 core/ChangeLog.qml:57 core/ChangeLog.qml:64
-#: core/ChangeLog.qml:73 core/ChangeLog.qml:80 core/ChangeLog.qml:93
-#: core/ChangeLog.qml:131 core/ChangeLog.qml:137
+#: core/ChangeLog.qml:34 core/ChangeLog.qml:40 core/ChangeLog.qml:47
+#: core/ChangeLog.qml:55 core/ChangeLog.qml:61 core/ChangeLog.qml:66
+#: core/ChangeLog.qml:73 core/ChangeLog.qml:82 core/ChangeLog.qml:89
+#: core/ChangeLog.qml:102 core/ChangeLog.qml:140 core/ChangeLog.qml:146
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Многу поправени грешки"
 
-#: core/ChangeLog.qml:35
+#: core/ChangeLog.qml:44
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translation added for Azerbaijani"
@@ -28048,31 +28957,31 @@ msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
 msgstr "Додаден превод за Азербејџански јазик."
 
-#: core/ChangeLog.qml:37 core/ChangeLog.qml:63 core/ChangeLog.qml:72
-#: core/ChangeLog.qml:79 core/ChangeLog.qml:92 core/ChangeLog.qml:110
-#: core/ChangeLog.qml:125 core/ChangeLog.qml:130 core/ChangeLog.qml:136
+#: core/ChangeLog.qml:46 core/ChangeLog.qml:72 core/ChangeLog.qml:81
+#: core/ChangeLog.qml:88 core/ChangeLog.qml:101 core/ChangeLog.qml:119
+#: core/ChangeLog.qml:134 core/ChangeLog.qml:139 core/ChangeLog.qml:145
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Многу нови слики"
 
-#: core/ChangeLog.qml:39
+#: core/ChangeLog.qml:48
 msgctxt "ChangeLog|"
 msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
 
-#: core/ChangeLog.qml:40
+#: core/ChangeLog.qml:49
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
 msgstr ""
 
-#: core/ChangeLog.qml:41
+#: core/ChangeLog.qml:50
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgstr ""
 
-#: core/ChangeLog.qml:50
+#: core/ChangeLog.qml:59
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translation added for Azerbaijani"
@@ -28080,7 +28989,7 @@ msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
 msgstr "Додаден превод за Азербејџански јазик."
 
-#: core/ChangeLog.qml:61
+#: core/ChangeLog.qml:70
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translations added for: Slovenian, German, Galician."
@@ -28088,14 +28997,14 @@ msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "Додадени преводи за: словенечки, германски, галициски."
 
-#: core/ChangeLog.qml:65
+#: core/ChangeLog.qml:74
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
 "start-level level, to be used with --launch activity)"
 msgstr ""
 
-#: core/ChangeLog.qml:70
+#: core/ChangeLog.qml:79
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translation added for Azerbaijani"
@@ -28103,7 +29012,7 @@ msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "Додаден превод за Азербејџански јазик."
 
-#: core/ChangeLog.qml:71 core/ChangeLog.qml:78
+#: core/ChangeLog.qml:80 core/ChangeLog.qml:87
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translation added for Azerbaijani"
@@ -28111,19 +29020,19 @@ msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Додаден превод за Азербејџански јазик."
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr ""
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:97
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "New maps and update of the maps for geography activities"
@@ -28131,26 +29040,26 @@ msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "Нови карти и ажурирање на картите за географија активности"
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr ""
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr ""
 
-#: core/ChangeLog.qml:97
+#: core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr ""
 
-#: core/ChangeLog.qml:98
+#: core/ChangeLog.qml:107
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "New speed setting in several activities."
@@ -28158,28 +29067,28 @@ msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Нови поставки за брзина во неколку активности."
 
-#: core/ChangeLog.qml:99
+#: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 
-#: core/ChangeLog.qml:100
+#: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 
-#: core/ChangeLog.qml:101
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 
-#: core/ChangeLog.qml:105
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr ""
 
-#: core/ChangeLog.qml:109 core/ChangeLog.qml:117
+#: core/ChangeLog.qml:118 core/ChangeLog.qml:126
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many bug fixes"
@@ -28187,7 +29096,7 @@ msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Многу поправени грешки"
 
-#: core/ChangeLog.qml:111
+#: core/ChangeLog.qml:120
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translation added for Azerbaijani"
@@ -28195,7 +29104,7 @@ msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Додаден превод за Азербејџански јазик."
 
-#: core/ChangeLog.qml:112
+#: core/ChangeLog.qml:121
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "New voices for US English."
@@ -28203,7 +29112,7 @@ msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Нови гласови за американски англиски јазик."
 
-#: core/ChangeLog.qml:116
+#: core/ChangeLog.qml:125
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translation added for Macedonian."
@@ -28211,17 +29120,17 @@ msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Додаден превод на македонски јазик."
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Додаден превод за Азербејџански јазик."
 
-#: core/ChangeLog.qml:122
+#: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Нови карти и ажурирање на картите за географија активности"
 
-#: core/ChangeLog.qml:123
+#: core/ChangeLog.qml:132
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -28230,7 +29139,7 @@ msgstr ""
 "Нова база на податоци што содржи операции на јамки за програмирање лавиринт "
 "и преведување на слики за упатства"
 
-#: core/ChangeLog.qml:124
+#: core/ChangeLog.qml:133
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -28239,57 +29148,57 @@ msgstr ""
 "Додавање на ниво за предавање на јамката на изворот на напон во аналогната "
 "електрична активност"
 
-#: core/ChangeLog.qml:134
+#: core/ChangeLog.qml:143
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Ново мени за подесување на активност, со избор на податоци"
 
-#: core/ChangeLog.qml:140
+#: core/ChangeLog.qml:149
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Нови поткатегории за организација на активностите"
 
-#: core/ChangeLog.qml:141
+#: core/ChangeLog.qml:150
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Додаден превод на македонски јазик."
 
-#: core/ChangeLog.qml:142
+#: core/ChangeLog.qml:151
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Нови активности Програмирање лавиринт и Бебе Танграм"
 
-#: core/ChangeLog.qml:143
+#: core/ChangeLog.qml:152
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Нови поставки за музика во позадина и јачина на звук."
 
-#: core/ChangeLog.qml:144
+#: core/ChangeLog.qml:153
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Нови поставки за брзина во неколку активности."
 
-#: core/ChangeLog.qml:145
+#: core/ChangeLog.qml:154
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Нова опција во активноста шах за прикажување на заробени фигури."
 
-#: core/ChangeLog.qml:146
+#: core/ChangeLog.qml:155
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Нови слики во „Бои“, „Напредни бои“ и „Целна игра“."
 
-#: core/ChangeLog.qml:147
+#: core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Нови гласови за американски англиски јазик."
 
-#: core/ChangeLog.qml:148 core/ChangeLog.qml:156
+#: core/ChangeLog.qml:157 core/ChangeLog.qml:165
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Многу мали поправки и подобрувања."
 
-#: core/ChangeLog.qml:149
+#: core/ChangeLog.qml:158
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -28298,18 +29207,18 @@ msgstr ""
 "Преводот е ажуриран за повеќе јазици (бретонски, бразилски, португалски, "
 "фински ...)."
 
-#: core/ChangeLog.qml:150
+#: core/ChangeLog.qml:159
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr ""
 "Додадено руско податочно множество за активноста „Кликнете на буквата“."
 
-#: core/ChangeLog.qml:151
+#: core/ChangeLog.qml:160
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Јазик активноста сега е достапна на холандски јазик."
 
-#: core/ChangeLog.qml:152
+#: core/ChangeLog.qml:161
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -28318,18 +29227,18 @@ msgstr ""
 "Спојување на норвешките земји Норд-Транделаг и Сар-Транделаг во Тренделаг во "
 "гео-земја активност."
 
-#: core/ChangeLog.qml:153
+#: core/ChangeLog.qml:162
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 "Поправки во брајовите активности каде ќелиите започнуваат од 1, а не 0."
 
-#: core/ChangeLog.qml:154
+#: core/ChangeLog.qml:163
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Додаден превод за баскиски, унгарски и малезиски."
 
-#: core/ChangeLog.qml:155
+#: core/ChangeLog.qml:164
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -28338,47 +29247,47 @@ msgstr ""
 "Вчитување/зачувување на креации (Baby Word процесор, Balance Box и Piano "
 "Composition)."
 
-#: core/ChangeLog.qml:156
+#: core/ChangeLog.qml:165
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Додадени преводи за шкотско галски јазик."
 
-#: core/ChangeLog.qml:157
+#: core/ChangeLog.qml:166
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Страницата со лиценци додадена во конфигурацијата."
 
-#: core/ChangeLog.qml:157
+#: core/ChangeLog.qml:166
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Повеќекратни промени во распоредот за подобрување на ергономијата."
 
-#: core/ChangeLog.qml:158
+#: core/ChangeLog.qml:167
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "Јазик активноста сега достапна и на полски, шведски и украински."
 
-#: core/ChangeLog.qml:159
+#: core/ChangeLog.qml:168
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Функционалност за пребарување."
 
-#: core/ChangeLog.qml:160
+#: core/ChangeLog.qml:169
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Дневник на измени."
 
-#: core/ChangeLog.qml:161
+#: core/ChangeLog.qml:170
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Голем број на мали поправки."
 
-#: core/ChangeLog.qml:161
+#: core/ChangeLog.qml:170
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Јазик активноста сега достапна и на француски."
 
-#: core/ChangeLog.qml:162
+#: core/ChangeLog.qml:171
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -28388,7 +29297,7 @@ msgstr ""
 "активности земаат време (на пример, вчитување активност) и може да трае "
 "неколку секунди."
 
-#: core/ChangeLog.qml:162
+#: core/ChangeLog.qml:171
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -28397,12 +29306,12 @@ msgstr ""
 "Додадени преводи за: каталонски (валенсија), кинески традиционален, фински "
 "(92% преведен), руски (98% преведен), словачки (92% преведен), турски."
 
-#: core/ChangeLog.qml:163
+#: core/ChangeLog.qml:172
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Додадени преводи за: словенечки, германски, галициски."
 
-#: core/ChangeLog.qml:217
+#: core/ChangeLog.qml:226
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -28636,33 +29545,33 @@ msgctxt "DialogActivityConfig|"
 msgid "Configuration"
 msgstr "Конфигурација"
 
-#: core/DialogChooseLevel.qml:45
+#: core/DialogChooseLevel.qml:46
 #, qt-format
 msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr "%1 поставки"
 
-#: core/DialogChooseLevel.qml:205
+#: core/DialogChooseLevel.qml:208
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr "Податочно множество"
 
-#: core/DialogChooseLevel.qml:218
+#: core/DialogChooseLevel.qml:221
 msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Опции"
 
-#: core/DialogChooseLevel.qml:348
+#: core/DialogChooseLevel.qml:353
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Откажи"
 
-#: core/DialogChooseLevel.qml:356
+#: core/DialogChooseLevel.qml:361
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Зачувај"
 
-#: core/DialogChooseLevel.qml:370
+#: core/DialogChooseLevel.qml:378
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Зачувај и почни"
@@ -28775,69 +29684,73 @@ msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "Не може да се отвори целната датотека %1"
 
-#: core/DownloadManager.cpp:705
+#: core/DownloadManager.cpp:711
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr "Невалиден формат на содржинската датотека"
 
-#: core/DownloadManager.cpp:727
+#: core/DownloadManager.cpp:733
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr "Линкот %1 не постои."
 
-#: core/DownloadManager.cpp:740
+#: core/DownloadManager.cpp:746
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
 msgstr "Проверка на преземената датотека не одговара: %1"
 
-#: core/DownloadManager.cpp:762
+#: core/DownloadManager.cpp:768
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
 msgstr ""
 
-#: core/DownloadManager.cpp:767
+#: core/DownloadManager.cpp:773
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr ""
 
-#: core/GCCreationHandler.qml:175
-#, qt-format
+#: core/GCCreationHandler.qml:185
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
-msgid "%1 deleted successfully!"
+msgid "File deleted successfully!"
 msgstr "%1 успешно избришан!"
 
-#: core/GCCreationHandler.qml:176 core/GCCreationHandler.qml:181
-#: core/GCCreationHandler.qml:234
+#: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
+#: core/GCCreationHandler.qml:253
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr ""
 
-#: core/GCCreationHandler.qml:180
-#, qt-format
+#: core/GCCreationHandler.qml:193
+#, fuzzy
+#| msgctxt "GCCreationHandler|"
+#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
-msgid "Unable to delete %1!"
+msgid "Unable to delete the file!"
 msgstr "Не можам да избришам %1!"
 
-#: core/GCCreationHandler.qml:214
+#: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "Датотека со ова име веќе постои. Дали сакате да ја заменете?"
 
-#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:231 core/GCCreationHandler.qml:238
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "Да"
 
-#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:231 core/GCCreationHandler.qml:238
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "Не"
 
-#: core/GCCreationHandler.qml:221
+#: core/GCCreationHandler.qml:237
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Do you really want to quit GCompris?"
@@ -28845,35 +29758,40 @@ msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "Дали навистина сакате да го исклучите Жикомпри?"
 
-#: core/GCCreationHandler.qml:233
+#: core/GCCreationHandler.qml:252
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "Успешно зачувано!"
 
-#: core/GCCreationHandler.qml:264
+#: core/GCCreationHandler.qml:283
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "Внесете име на датотека"
 
-#: core/GCCreationHandler.qml:264
+#: core/GCCreationHandler.qml:283
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "Барај"
 
-#: core/GCCreationHandler.qml:278
+#: core/GCCreationHandler.qml:297
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Зачувај"
 
-#: core/GCCreationHandler.qml:384
+#: core/GCCreationHandler.qml:409
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Вчитај"
 
-#: core/GCCreationHandler.qml:394
+#: core/GCCreationHandler.qml:419
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Избриши"
+
+#: core/GCCreationHandler.qml:429
+msgctxt "GCCreationHandler|"
+msgid "Open folder"
+msgstr ""
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
@@ -28905,47 +29823,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Јазик на Жикомпри"
 
-#: core/main.cpp:76
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Стартувајте го Жикомпри со стандардниот покажувач на системот."
 
-#: core/main.cpp:80
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Стартувај го Жикомпри без курсор (режим на екран на допир)"
 
-#: core/main.cpp:84
+#: core/main.cpp:96
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Стартувај го Жикомпри на цел екран."
 
-#: core/main.cpp:88
+#: core/main.cpp:100
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Стартувај го Жикомпри во режим на прозорец."
 
-#: core/main.cpp:92
+#: core/main.cpp:104
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Стартувај го Жикомпри со звук."
 
-#: core/main.cpp:96
+#: core/main.cpp:108
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Стартувај го Жикомпри без звук."
 
-#: core/main.cpp:99
+#: core/main.cpp:111
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Оневозможете го режимот на киоск (стандардно)."
 
-#: core/main.cpp:102
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Овозможете го режимот на киоск."
 
-#: core/main.cpp:106
+#: core/main.cpp:118
 #, fuzzy
 #| msgctxt "QObject|"
 #| msgid ""
@@ -28959,7 +29877,7 @@ msgstr ""
 "Користете софтверски рендерер наместо openGL (побавен, но треба да работи со "
 "која било графичка картичка, потребен е Qt 5,8 минимум)."
 
-#: core/main.cpp:109
+#: core/main.cpp:121
 #, fuzzy
 #| msgctxt "QObject|"
 #| msgid ""
@@ -28973,33 +29891,48 @@ msgstr ""
 "Користете го OpenGL-рендерерот наместо софтверски (побрз, но може да не "
 "работи во зависност од вашата графичка картичка)."
 
-#: core/main.cpp:113
+#: core/main.cpp:125
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
 
-#: core/main.cpp:117
+#: core/main.cpp:129
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr ""
 
-#: core/main.cpp:122
+#: core/main.cpp:134
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr ""
 
-#: core/main.cpp:126
+#: core/main.cpp:138
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
 
-#: core/main.cpp:130
+#: core/main.cpp:142
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
+msgstr ""
+
+#: core/main.cpp:146
+msgctxt "QObject|"
+msgid "Specify the locale when starting GCompris."
+msgstr ""
+
+#: core/main.cpp:150
+msgctxt "QObject|"
+msgid "Hide the Home button in the bar."
+msgstr ""
+
+#: core/main.cpp:154
+msgctxt "QObject|"
+msgid "Show the Home button in the bar (default)."
 msgstr ""
 
 #: core/main.qml:238
@@ -29027,29 +29960,29 @@ msgctxt "main|"
 msgid "Background music"
 msgstr "Позадинска музика"
 
-#: core/main.qml:248
+#: core/main.qml:248 core/main.qml:510
 msgctxt "main|"
 msgid "Yes"
 msgstr "Да"
 
-#: core/main.qml:255
+#: core/main.qml:255 core/main.qml:516
 msgctxt "main|"
 msgid "No"
 msgstr "Не"
 
-#: core/main.qml:277
+#: core/main.qml:273
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
 
-#: core/main.qml:278
+#: core/main.qml:274
 msgctxt "main|"
 msgid "Apply"
 msgstr ""
 
-#: core/main.qml:279
+#: core/main.qml:275 core/main.qml:551 core/main.qml:626
 #, fuzzy
 #| msgctxt "DialogChooseLevel|"
 #| msgid "Cancel"
@@ -29057,17 +29990,17 @@ msgctxt "main|"
 msgid "Cancel"
 msgstr "Откажи"
 
-#: core/main.qml:364
+#: core/main.qml:360
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Добре дојдовте во Жикомпри!"
 
-#: core/main.qml:365
+#: core/main.qml:361
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "За прв пат ja отварате Жикомпри."
 
-#: core/main.qml:366
+#: core/main.qml:362
 #, fuzzy
 #| msgctxt "main|"
 #| msgid ""
@@ -29084,21 +30017,61 @@ msgstr ""
 "специфични за јазикот. Можете да го направите ова во дијалогот за "
 "преференции (Preference Dialog)."
 
-#: core/main.qml:368
+#: core/main.qml:364
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Забавувајте се!"
 
-#: core/main.qml:370
+#: core/main.qml:366
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Вашиот тековен јазик е %1 (%2)."
 
-#: core/main.qml:402
+#: core/main.qml:398
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris е ажуриран! Еве ги новите измени:<br/>"
+
+#: core/main.qml:509
+#, fuzzy, qt-format
+#| msgctxt "main|"
+#| msgid "Do you want to download it now?"
+msgctxt "main|"
+msgid "Do you want to connect to server %1?"
+msgstr "Дали сакате да ја преземете сега?"
+
+#: core/main.qml:530
+#, qt-format
+msgctxt "main|"
+msgid "Password rejected by server %1"
+msgstr ""
+
+#: core/main.qml:531 core/main.qml:550 core/main.qml:625
+msgctxt "main|"
+msgid "OK"
+msgstr ""
+
+#: core/main.qml:546
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Select your mode"
+msgctxt "main|"
+msgid "Select your username"
+msgstr "Изберете го вашиот режим"
+
+#: core/main.qml:556
+msgctxt "main|"
+msgid "Please select your username in the list or cancel."
+msgstr ""
+
+#: core/main.qml:623
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer"
+msgctxt "main|"
+msgid "Enter your password"
+msgstr "Ентер: потврдете го вашиот одговор"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"
@@ -29124,6 +30097,27 @@ msgstr "Прескокни"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Старт"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Division of numbers"
+#~ msgctxt "Data|"
+#~ msgid "Find the previous number."
+#~ msgstr "Делење на броеви"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Division of numbers"
+#~ msgctxt "Data|"
+#~ msgid "Find the in-between number."
+#~ msgstr "Делење на броеви"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Division of numbers"
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers."
+#~ msgstr "Делење на броеви"
 
 #, fuzzy
 #~| msgctxt "BinaryBulb|"
@@ -29466,10 +30460,6 @@ msgstr "Старт"
 #~ "потоа потези за да преместите фигури."
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid "Touch the numbers in the right order."
-#~ msgstr "Кликнете на броевите по редослед."
-
-#~ msgctxt "ActivityInfo|"
 #~ msgid "Can decide chronological order of events."
 #~ msgstr "Може да одлучи хронолошки редослед на настаните."
 
@@ -29640,13 +30630,6 @@ msgstr "Старт"
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Keyboard training."
 #~ msgstr "Вежбање со тастатура."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Division of numbers"
-#~ msgctxt "Data|"
-#~ msgid "Find the missing numbers"
-#~ msgstr "Делење на броеви"
 
 #~ msgctxt "Guesscount|"
 #~ msgid "%1/%2"
@@ -30672,10 +31655,6 @@ msgstr "Старт"
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Numbers from 1 to 1000 for the last level."
 #~ msgstr "Броеви од 1 до 1000 за последно ниво."
-
-#~ msgctxt "guessnumber|"
-#~ msgid "Number found!"
-#~ msgstr "Бројот е пронајден!"
 
 #~ msgctxt "Hangman|"
 #~ msgid "Select your locale"
@@ -31771,7 +32750,3 @@ msgstr "Старт"
 #~ msgctxt "main|"
 #~ msgid "The background music is not yet downloaded. "
 #~ msgstr "Позадинската музика сè уште не е преземена."
-
-#~ msgctxt "main|"
-#~ msgid "Do you want to download it now?"
-#~ msgstr "Дали сакате да ја преземете сега?"
