@@ -1,4 +1,0 @@
-
-TOPLEVEL_LANG = mk
-SUBDIRS = $(AUTODIRS)
-
